@@ -60,7 +60,7 @@ Scoring has **two non-substitutable layers**:
    - **Human correction time (minutes)** and number of intervention turns, including verifying/restoring gratuitous changes.
    - **Net value** = robust improvement in serious error detection and revision burden, **without** higher false positives, omissions or source violations.
 
-For case-level four-stage N/X/C/V, use `0=missed or wrong, 1=partial/late, 2=fully justified first-pass`; report *each component*, not a self-awarded composite. A genuine after-feedback fix is recorded separately as **repair responsiveness**; it is never awarded first-pass detection credit.
+For case-level four-stage N/X/C/V, use `0=missed/wrong or after-hint only, 1=partially justified first-pass, 2=fully justified first-pass`; report *each component*, not a self-awarded composite. A genuine after-feedback fix is recorded separately as **repair responsiveness**; it is never awarded first-pass detection credit.
 
 Important: a finding's validity is established by a blinded reviewer, not by the model naming its own failure code. The model should not be asked to predict label IDs.
 
