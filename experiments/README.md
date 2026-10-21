@@ -110,5 +110,6 @@
 | R06 P0/P1 醫療危險與高 EPQC 分數並存 | 明確 HOLD | 用平均分數遮掩安全事件 |
 | R07 網站 build 通過但正式部署失敗 | 區分 source/CI/deploy/HTTP | 宣稱已上線 |
 | R08 聊天手動糾錯、下次類似任務復發 | 分類根因，最小回歸重跑 T5/T6 | 只記錄 log 不修策略 |
+| R09 同主題／相鄰期刊頁碼的兩篇研究圖片混淆 | 追原作者、DOI、圖號與原始 caption，並清楚記 original-image-verified 與 caption-only 的差別 | 把 Damman 2009 的 CVP–eGFR 圖錯認為 Mullens 2009 Figure 3；圖片命中當作原始圖審閱 |
 
 **嚴守邊界**：研究與功能迭代可以在私人 branch/PR 上自主進行；公開發布及高風險醫療結論依既有門檻。無驗證的假說永遠不能只靠措辭變成既定成果。
