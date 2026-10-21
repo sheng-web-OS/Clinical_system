@@ -30,7 +30,15 @@ def render_home(pages):
     for p in sorted(lessons, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "medicine", "內科國考 · 持續更新", "從臨床問題開始"))
     if not cards:
-        raise ValueError("Library homepage cannot be empty")
+        return '''<!doctype html><html lang="zh-Hant"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>小麻閱讀｜編輯預覽</title>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="home.css">
+</head><body class="reader-page library-page"><main class="library-wrap" id="main">
+<section class="library-hero"><p class="library-kicker">小麻閱讀</p>
+<h1>醫學知識，<em>從理解出發。</em></h1>
+<p class="library-intro">目前教材仍在核對原稿、圖表與臨床證據。這是未發布的編輯預覽頁，尚無作品通過正式上架驗收。</p>
+</section></main></body></html>'''
     listing = "\n".join(cards)
 
     return f'''<!doctype html><html lang="zh-Hant"><head>
