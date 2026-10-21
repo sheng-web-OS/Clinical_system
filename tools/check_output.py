@@ -15,6 +15,8 @@ EXPECTED = {
     "styles.css", "home.css", "index.html",
     "app.js", "site-index.json", "site-index.js", ".nojekyll",
 } | {row["output"] for row in PAGES}
+if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
+    EXPECTED.update(['assets/dcm-pv.webp','assets/dcm-secondary-mr.png','assets/dcm-ischemic-cmr.webp'])
 actual = {p.relative_to(DIST).as_posix() for p in DIST.rglob("*") if p.is_file()} if DIST.is_dir() else set()
 errors = []
 if actual != EXPECTED:
@@ -61,6 +63,7 @@ if not errors:
             if fragment and target is not None and fragment not in target.ids:
                 errors.append(f"{filename}: missing fragment {href}")
     for filename in actual:
+        if filename.startswith("assets/"): continue
         content = (DIST / filename).read_text("utf8")
         for private_token in ("libfile_", "5824859", "Z639", "plan-20261021.md", "七大核心學習檔案"):
             if private_token in content: errors.append(f"{filename}: private plan data in public build: {private_token}")
