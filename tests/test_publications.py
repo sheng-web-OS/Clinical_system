@@ -28,6 +28,12 @@ class PublicationBoundary(unittest.TestCase):
     def test_explicit_content_is_allowed(self):
         self.assertEqual(self.load([self.row])[0]["output"], "example.html")
 
+    def test_system_experiment_is_not_a_public_candidate(self):
+        # A working Clinical OS validation case is not automatically an authored essay.
+        real_root = Path(__file__).resolve().parents[1]
+        public_candidates = load_pages(real_root)
+        self.assertNotIn("content/tamponade.md", {p["source"] for p in public_candidates})
+
     def test_internal_audit_records_are_never_public_pages(self):
         (self.root / "audit/recovery.md").write_text("Private editorial status")
         with self.assertRaisesRegex(ValueError, "reader-facing content"):
