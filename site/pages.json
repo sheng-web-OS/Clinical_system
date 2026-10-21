@@ -170,5 +170,15 @@
     "layout": "reader",
     "navigation": false,
     "section": "臨床推理"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exam-practice.md",
+    "output": "xiaoma-exam-practice.html",
+    "title": "醫學（三）歷屆題目與詳解",
+    "subtitle": "由官方題號與答案回到臨床推理（審查預覽）",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "navigation": false,
+    "section": "國考真題"
   }
 ]
