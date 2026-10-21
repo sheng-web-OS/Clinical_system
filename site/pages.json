@@ -96,5 +96,44 @@
     "layout": "reader",
     "navigation": false,
     "section": "閱讀路線"
+  },
+  {
+    "source": "content/xiaoma-reading/originals/2026-07-12-heart-failure.md",
+    "output": "xiaoma-reading-20260712-heart-failure.html",
+    "title": "Heart Failure：從四象限到診斷與急性失衡",
+    "subtitle": "從 congestion／perfusion 分流，理解 EF、HF syndrome 與急性失衡",
+    "collection": "xiaoma-reading",
+    "kind": "historical_original",
+    "date": "2026-07-12",
+    "navigation": false,
+    "review": "source_recovery_only",
+    "source_sha256": "376b56a6a017d402ea03b6fc231f292fda18ddb3e40d8f0626a8b618152c9be1",
+    "layout": "reading-original"
+  },
+  {
+    "source": "content/xiaoma-reading/originals/2026-07-12-lvedp.md",
+    "output": "xiaoma-reading-20260712-lvedp.html",
+    "title": "從四象限走進 LVEDP",
+    "subtitle": "從 pulmonary congestion 追問 filling pressure 與 pressure–volume mechanism",
+    "collection": "xiaoma-reading",
+    "kind": "historical_original",
+    "date": "2026-07-12",
+    "navigation": false,
+    "review": "source_recovery_only",
+    "source_sha256": "c04644460c5595697b888bd45f3f27f46cdf138aae486d4b173f6876c8215d06",
+    "layout": "reading-original"
+  },
+  {
+    "source": "content/xiaoma-reading/originals/2026-07-20-diuretics.md",
+    "output": "xiaoma-reading-20260720-diuretics.html",
+    "title": "利尿效果不夠，為什麼下一步不一定是加量？",
+    "subtitle": "Loop threshold、ceiling、補償性鈉回收與治療反應的不同層次",
+    "collection": "xiaoma-reading",
+    "kind": "historical_original",
+    "date": "2026-07-20",
+    "navigation": false,
+    "review": "source_recovery_only",
+    "source_sha256": "b338cd047690059d5552d511393f14302e1ba855e2e01fb51131ee3d35e0cd83",
+    "layout": "reading-original"
   }
 ]
