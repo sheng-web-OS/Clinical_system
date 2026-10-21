@@ -105,6 +105,12 @@
 
 **第一組候選：**HCM／LVEDP／HF／diuretics 的機轉與決策脈絡；其餘心律不整、肝病、腸胃與藥物主題應依內容和可回收來源各自分組。這些是待驗證的工作群，不是已通過發布門檻。
 
+## 4B. 心血管群組首次實測（2026-10-21）
+
+已建立[因果連結與反事實稽核](../audit/cardiovascular-causal-validation-20261021.md)，另有**不對外發表**的 [AI 連續敘事研究草稿](../archive/xiaoma-reading/drafts/cardiovascular-causal-bridge-20261021.md)。實際核對 HCM 全文與 2024 AHA/ACC HCM、2025 ASE LV diastolic function、2026 ESC HF 等新證據；17 個條件關係／推論逐項檢視，設計 5 個反事實測試。重點是 LVEDP–LA pressure–PCWP 不可視為同一量測，以及 HCM dynamic obstruction、fluid overload、redistribution、hypoperfusion 不可導向單一利尿決策。
+
+**證據已讀 ≠ 其他原稿已取回。** 除 HCM 外，LVEDP、HF、Diuretics、DCM 四篇只有來源定位／接收清單，尚無本輪可逐段核對的全文；因此群組狀態明確為 **HOLD（不發布）**。本輪用的是臨時／可拋棄的按需因果稽核，不恢復常態全域 Claim Graph 維護。
+
 ## 5. 接下來的實際工作順序與停止條件
 
 1. **回收：**依接收清單及歷史索引追查全文（包括 Facebook 發布全文）；逐字比對、保存日期／來源／SHA；標明未取得者，不能補寫成「舊原稿」。歷史已發布作品以可核對的 Facebook 發布版為作者認可的原文基準。
