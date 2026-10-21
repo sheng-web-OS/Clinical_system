@@ -8,7 +8,9 @@
 
 治療初期，團隊在處理肺部感染與氧合問題之餘，針對阻塞機轉給予 beta-blocker 與審慎恢復容量，SAM 和 LVOTO 消失。之後為處理周邊水腫而使用 torsemide，兩天後呼吸困難再度惡化，心超也再次看到 SAM 與 LVOTO；停止利尿、調整容量後病況改善。[閱讀 Kim 等人 2015 年病例與 Figure 2、3（原期刊）](https://jtd.amegroups.org/article/view/5226/html)。
 
-**[以四個臨床決策逐步閱讀這個病例](lvoto-case-interactive.md)** ／ [閱讀完整連續推論](lvoto-case-static.md)。\n\n這裡最重要的不是「利尿有害」——那是錯誤概括。**病人可能同時有周邊水腫與左心室充盈不足；而高 EF 也不代表前向輸出沒有受到阻礙。** 當 loading condition 令 LV cavity 更小，SAM/LVOTO 可能加劇，於是降低 preload 的治療對特定病人反而適得其反。原病例的治療反應支持此生理解釋，但不能由單一案例推導所有 COPD、水腫或 HF 病人的處方。
+**[以四個臨床決策逐步閱讀這個病例](lvoto-case-interactive.md)** ／ [閱讀完整連續推論](lvoto-case-static.md)。
+
+這裡最重要的不是「利尿有害」——那是錯誤概括。**病人可能同時有周邊水腫與左心室充盈不足；而高 EF 也不代表前向輸出沒有受到阻礙。** 當 loading condition 令 LV cavity 更小，SAM/LVOTO 可能加劇，於是降低 preload 的治療對特定病人反而適得其反。原病例的治療反應支持此生理解釋，但不能由單一案例推導所有 COPD、水腫或 HF 病人的處方。
 
 | 病例帶出的問題 | 接回哪一篇文章 | 應帶走的判斷 |
 |---|---|---|
