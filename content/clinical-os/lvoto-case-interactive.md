@@ -59,7 +59,7 @@
 <div class="case-complete" data-case-complete hidden><p>已完成四次判斷。接下來核對原始病例、圖像與跨篇知識連結。這是自我練習，不代表正式能力測驗。</p><button type="button" data-case-restart>重新推理</button></div>
 </div>
 
-<div class="case-analysis" data-case-analysis>
+<!-- CASE_ANALYSIS_START -->
 
 ## 這個病例改變的不是病名，而是對循環的解釋
 
@@ -98,6 +98,6 @@ Kim S, et al. *Journal of Thoracic Disease*. 2015;7:E365–E369. DOI: [10.3978/j
 
 本頁是教學導讀。病例中的治療反應是個案觀察，未證明其他病人的最佳治療策略。
 
-</div>
+<!-- CASE_ANALYSIS_END -->
 
 <noscript>此頁的逐階段互動需要 JavaScript；停用 JavaScript 時仍可閱讀下方的完整病例解析。</noscript>
