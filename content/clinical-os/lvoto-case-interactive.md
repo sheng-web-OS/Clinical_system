@@ -45,7 +45,7 @@
 </section>
 <section class="case-step" data-case-stage="3" hidden>
 <p class="case-stage-label">04／反事實　·　能不能將概念轉移，而不是只背病例？</p>
-<div class="case-evidence">**假設情境（不是原病例）**：另一位病人同樣水腫又喘，但影像顯示 LV 擴大、升高的左心充盈壓、明確肺鬱血，且沒有 SAM 或 LVOT flow acceleration。</div>
+<div class="case-evidence"><strong>假設情境（不是原病例）</strong>：另一位病人同樣水腫又喘，但影像顯示 LV 擴大、升高的左心充盈壓、明確肺鬱血，且沒有 SAM 或 LVOT flow acceleration。</div>
 <fieldset class="case-choices"><legend>第一個病例對這位新病人的治療有什麼約束？</legend>
 <label class="case-option"><input type="radio" name="case-step-3" value="a"><span>只要病人有水腫，先前病例就證明利尿會使 LVOTO 惡化。</span></label>
 <label class="case-option"><input type="radio" name="case-step-3" value="b"><span>應分別判定兩人的機轉；第一例不構成對這位病人去鬱血治療的禁令。</span></label>
@@ -57,9 +57,7 @@
 <button type="button" class="case-continue" data-case-next hidden>閱讀完整解析</button>
 </section>
 <div class="case-complete" data-case-complete hidden><p>已完成四次判斷。接下來核對原始病例、圖像與跨篇知識連結。這是自我練習，不代表正式能力測驗。</p><button type="button" data-case-restart>重新推理</button></div>
-</div>
-
-<!-- CASE_ANALYSIS_START -->
+<button type="button" class="case-skip" data-case-skip>直接閱讀完整解析 ↓</button>\n</div>\n\n<!-- CASE_ANALYSIS_START -->
 
 ## 這個病例改變的不是病名，而是對循環的解釋
 
