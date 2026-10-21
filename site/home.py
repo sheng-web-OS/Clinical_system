@@ -42,7 +42,7 @@ def render_home(pages):
 <a class="skip-link" href="#main">跳到主要內容</a>
 <header class="library-header">
   <a class="library-logo" href="index.html" aria-label="小麻閱讀首頁"><span class="library-logo-mark" aria-hidden="true">小</span><span>小麻閱讀<small>CLINICAL SYSTEM</small></span></a>
-  <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a><a href="xiaoma-plan.html">學習路線</a></nav>
+  <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a><a href="xiaoma-plan.html">學習路線</a></nav>
   <button class="library-theme" id="theme" aria-label="切換明暗主題" title="切換主題">◐</button>
 </header>
 <main class="library-wrap" id="main">
@@ -58,6 +58,19 @@ def render_home(pages):
     </div>
     <a class="library-resume" href="xiaoma-reading.html" id="resume-reading" hidden><span><small>繼續上次閱讀</small><strong id="resume-title"></strong></span><span aria-hidden="true">→</span></a>
   </section>
+  <section class="library-atlas" aria-labelledby="atlas-heading">
+    <div class="library-atlas-copy"><p class="library-overline">CONNECT THE REASONING</p>
+      <h2 id="atlas-heading">看見文章之間，<br>真正相連的問題。</h2>
+      <p>從 HCM 的 filling 與 LVEDP，到 HF、利尿劑與灌流；從 Tamponade 到氧合、換氣與器官供氧。不同文章可以共享前提，卻不能以相似標題取代因果推導。</p>
+      <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識脈絡 <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="library-atlas-steps" aria-label="知識建構路徑">
+      <div><span>01 / RECOVER</span><strong>回收原稿</strong><small>只有取得全文，才列入典藏</small></div>
+      <div><span>02 / CONNECT</span><strong>追查前提</strong><small>辨認已建立與真正缺少的因果橋接</small></div>
+      <div><span>03 / INTEGRATE</span><strong>重建教材</strong><small>重症與證據融入同一條敘事</small></div>
+      <div><span>04 / VALIDATE</span><strong>驗證理解</strong><small>比較正確性、閱讀成本與臨床遷移</small></div>
+    </div>
+  </section>
   <section class="library-section" id="articles" aria-labelledby="articles-heading">
     <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>已公開的完整教材與文章</p></div>
     <div class="library-filters" role="group" aria-label="篩選文章">
@@ -72,11 +85,12 @@ def render_home(pages):
   <section class="library-section library-paths" aria-labelledby="paths-heading">
     <div class="library-section-heading"><div><p class="library-overline">EXPLORE THE COLLECTIONS</p><h2 id="paths-heading">沿著一條脈絡讀</h2></div></div>
     <div class="library-path-grid">
-      <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">01 / ESSAYS</span><h3>小麻閱讀</h3><p>從精簡的教材與問題，重建定義、機轉與臨床意義。保留作者完整原文。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
-      <a class="library-path" href="xiaoma-internal-medicine.html"><span class="library-path-number">02 / INTERNAL MEDICINE</span><h3>小麻內科國考</h3><p>以臨床問題串連內科主題、必要先備知識與重要判斷，不把學習縮成考點清單。</p><span>進入課程 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL OS</span><h3>知識脈絡</h3><p>先辨認跨篇的共同問題、真正的前提缺口與整合進度，再選擇要讀的完整正文。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">02 / ESSAYS</span><h3>小麻閱讀</h3><p>從精簡的教材與問題，重建定義、機轉與臨床意義。保留作者完整原文。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="xiaoma-internal-medicine.html"><span class="library-path-number">03 / INTERNAL MEDICINE</span><h3>小麻內科國考</h3><p>以臨床問題串連內科主題、必要先備知識與重要判斷，不把學習縮成考點清單。</p><span>進入課程 <span aria-hidden="true">↗</span></span></a>
     </div>
   </section>
-  <footer class="library-footer"><div><strong>小麻閱讀</strong><span>好的醫學閱讀，讓下一個問題更清楚。</span></div><nav aria-label="補充資訊"><a href="xiaoma-plan.html">閱讀路線</a><a href="xiaoma-sources.html">來源與查核</a><a href="audit-log.html">修訂紀錄</a></nav></footer>
+  <footer class="library-footer"><div><strong>小麻閱讀</strong><span>好的醫學閱讀，讓下一個問題更清楚。</span></div><nav aria-label="補充資訊"><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-plan.html">閱讀路線</a><a href="xiaoma-sources.html">來源與查核</a><a href="audit-log.html">修訂紀錄</a></nav></footer>
 </main>
 <script src="site-index.js"></script><script src="app.js" defer></script>
 </body></html>'''

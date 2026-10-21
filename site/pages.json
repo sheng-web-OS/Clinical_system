@@ -6,6 +6,17 @@
     "subtitle": "病例 × 機轉 × ESC 指南 × 決策"
   },
   {
+    "source": "content/clinical-os/index.md",
+    "output": "knowledge-atlas.html",
+    "title": "臨床知識脈絡",
+    "subtitle": "從完整原稿、共同生理前提到跨篇因果推理",
+    "collection": "clinical-os",
+    "layout": "reader",
+    "section": "知識導覽",
+    "references": "xiaoma-reading-recovery.html",
+    "navigation": false
+  },
+  {
     "source": "content/xiaoma-reading/index.md",
     "output": "xiaoma-reading.html",
     "title": "小麻閱讀",
