@@ -1,7 +1,7 @@
 # 同樣是高 filling pressure，究竟哪一個壓力讓心室無法充盈、讓肺與腎臟受累？
 
 > **AI 獨立因果橋接教材｜審查狀態：HOLD（未發布）**  
-> 2026-10-21。此文只補 HF／LVEDP／Diuretics／DCM 原稿尚未充分建立的 C／D 類關係，不取代作者原文，不是患者專屬診療指引。已核對作者四篇 Git 原稿；Pocket Medicine 第九版 PDF pp.31、34–35、177 的相應段落及 Figure 1-2 已目視核對；亦核對原研究與 ACC/JACC 所提供的正文、結果、圖說。其他原研究 Figure 圖像及書內其他相關 Table／註腳仍待逐項補查，且缺乏獨立臨床編輯盲審。**不得加入 site/pages.json。**
+> 2026-10-21。此文只補 HF／LVEDP／Diuretics／DCM 原稿尚未充分建立的 C／D 類關係，不取代作者原文，不是患者專屬診療指引。已核對作者四篇 Git 原稿；Pocket Medicine 第九版 PDF pp.31–32、34–35、37、177 的相關段落，以及 p.35 Figure 1-2 與 p.37 wet/dry × warm/cold 四象限圖的圖像已核對；亦核對原研究與 ACC/JACC 所提供的正文、結果、圖說。其他原研究 Figure 圖像及書內其他相關 Table／註腳仍待逐項補查，且缺乏獨立臨床編輯盲審。**不得加入 site/pages.json。**
 
 ## 從同一個問題開始
 
@@ -99,7 +99,7 @@ Pocket Medicine 第九版 PDF p.34，在急性心因性休克 hemodynamic optimi
 - ［3］Mullens 2009（JACC）：原始正文與 Figure 1 標題／caption 已定位；尚待圖像逐張目視核對。是 observational cohort。
 - ［4］Damman 2009（JACC）：原研究摘要已核對；不得誤將 Damman 的 CVP–eGFR 圖當作 Mullens Figure 1。
 - ［5］Mullens 2009 Reply：已核對作者明示「資料無法證明直接因果」的文字。
-- Pocket Medicine 9E **已核**：PDF 第 35 頁 Figure 1-2（**非四象限原圖**） 的實際圖像（LVEDP→LVEDV 分流、systolic/high-SV/diastolic/pericardial 四支）；PDF p.31 PA cath 代理失效條件與 p.32 transmural-pressure 定義（已讀正文，該頁圖像取得失敗）；PDF p.34 acute cardiogenic shock 的 preload 近似與 CVP/RAP renal congestion（已看頁面）；PDF p.177 cardiorenal syndrome 段落（已讀正文，該頁圖像取得失敗）。本輪未重新完成其餘相關 Table／Figure／footnotes 全部核查。
+- Pocket Medicine 9E **已核**：PDF 第 35 頁 Figure 1-2（**非四象限原圖**）的實際圖像（LVEDP→LVEDV 分流、systolic/high-SV/diastolic/pericardial 四支）；PDF p.37 上方 warm/dry–wet/cold 四象限（真正的 HF bedside congestion/perfusion 原圖，與 p.35 LVEDP 分流圖分開）；PDF p.31 PA cath 代理失效條件與 p.32 transmural-pressure 定義（已讀正文，該頁圖像取得失敗）；PDF p.34 acute cardiogenic shock 的 preload 近似與 CVP/RAP renal congestion（已看頁面）；PDF p.177 cardiorenal syndrome 段落（已讀正文，該頁圖像取得失敗）。本輪未重新完成其餘相關 Table／Figure／footnotes 全部核查。
 - 以上來源並非截至今日的全面 systematic review；單篇稿件仍需對照最新指南、原書與適用條件，才能進入出版審查。
 
 ### 來源
