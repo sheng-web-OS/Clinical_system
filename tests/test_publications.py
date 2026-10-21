@@ -14,7 +14,7 @@ class PublicationBoundary(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        for folder in ("site", "content/lessons", "archive"):
+        for folder in ("site", "content/lessons", "archive", "audit"):
             (self.root / folder).mkdir(parents=True)
         (self.root / "content/example.md").write_text("# Public teaching\n")
         (self.root / "content/lessons/day.md").write_text("# Lesson\n")
@@ -27,6 +27,11 @@ class PublicationBoundary(unittest.TestCase):
 
     def test_explicit_content_is_allowed(self):
         self.assertEqual(self.load([self.row])[0]["output"], "example.html")
+
+    def test_internal_audit_records_are_never_public_pages(self):
+        (self.root / "audit/recovery.md").write_text("Private editorial status")
+        with self.assertRaisesRegex(ValueError, "reader-facing content"):
+            self.load([dict(self.row, source="audit/recovery.md")])
 
     def test_private_archive_is_rejected(self):
         with self.assertRaises(ValueError):
