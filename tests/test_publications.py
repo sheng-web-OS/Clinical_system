@@ -28,6 +28,17 @@ class PublicationBoundary(unittest.TestCase):
     def test_explicit_content_is_allowed(self):
         self.assertEqual(self.load([self.row])[0]["output"], "example.html")
 
+    def test_audit_records_cannot_be_published(self):
+        (self.root / "audit").mkdir(exist_ok=True)
+        (self.root / "audit/editorial.md").write_text("private editorial reasoning")
+        with self.assertRaises(ValueError):
+            self.load([dict(self.row, source="audit/editorial.md")])
+
+    def test_real_manifest_has_no_audit_sources(self):
+        repository = Path(__file__).resolve().parents[1]
+        rows = json.loads((repository / "site/pages.json").read_text(encoding="utf-8"))
+        self.assertFalse(any(row["source"].startswith("audit/") for row in rows))
+
     def test_private_archive_is_rejected(self):
         with self.assertRaises(ValueError):
             self.load([dict(self.row, source="archive/private.md")])
