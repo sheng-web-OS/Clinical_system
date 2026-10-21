@@ -6,7 +6,7 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "site"))
-from catalog import load_pages
+from catalog import load_pages, load_public_pages
 
 
 class PublicationBoundary(unittest.TestCase):
@@ -38,6 +38,40 @@ class PublicationBoundary(unittest.TestCase):
         repository = Path(__file__).resolve().parents[1]
         rows = json.loads((repository / "site/pages.json").read_text(encoding="utf-8"))
         self.assertFalse(any(row["source"].startswith("audit/") for row in rows))
+
+    def test_production_without_evidence_cannot_publish(self):
+        self.load([self.row])
+        (self.root / "site/release.json").write_text(json.dumps({"schema_version": 1, "approved": []}))
+        with self.assertRaisesRegex(ValueError, "PUBLICATION BLOCKED"):
+            load_public_pages(self.root, preview=False)
+        self.assertEqual(
+            [p["output"] for p in load_public_pages(self.root, preview=True)],
+            ["example.html"]
+        )
+
+    def test_forged_release_receipt_fails_closed(self):
+        self.load([self.row])
+        manifest = {"schema_version": 1, "approved": [
+            {"source": "content/example.md", "receipt": "audit/publication/example.json"}]}
+        (self.root / "site/release.json").write_text(json.dumps(manifest))
+        with self.assertRaisesRegex(ValueError, "Missing private publication receipt"):
+            load_public_pages(self.root, preview=False)
+        file = self.root / "audit/publication/example.json"
+        file.write_text(json.dumps({
+            "source": "content/example.md",
+            "source_sha256": "0" * 64,
+            "decision": "publish",
+            "approved_on": "2026-10-21",
+            "checks": {}
+        }))
+        with self.assertRaisesRegex(ValueError, "fingerprint mismatch"):
+            load_public_pages(self.root, preview=False)
+
+    def test_internal_experiment_not_in_reader_catalog(self):
+        source_root = Path(__file__).resolve().parents[1]
+        rows = load_pages(source_root)
+        self.assertFalse(any(p["source"] == "content/tamponade.md" for p in rows))
+        self.assertFalse(any(p["source"].startswith("audit/") for p in rows))
 
     def test_private_archive_is_rejected(self):
         with self.assertRaises(ValueError):
