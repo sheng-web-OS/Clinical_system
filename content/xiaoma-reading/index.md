@@ -4,6 +4,8 @@
 
 <!-- XIAOMA_READING_ORIGINALS -->
 
+[深入閱讀 DCM 的因果模型與原始研究圖表](integrated/2026-10-21-dcm.md)：從 ventricular remodeling、MR、PV relationship 與 CMR 辨別表型與病因。此為新增整合教材，不覆蓋歷史原文。
+
 ## 依臨床問題繼續讀
 
 **有肺水腫，就代表血流一定不足嗎？** [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)把 congestion 與 perfusion 分開；[從四象限走進 LVEDP](originals/2026-07-12-lvedp.md)再問壓力如何由容量、心室性質及外在限制形成；[Diuretics](originals/2026-07-20-diuretics.md)接著檢驗鈉排泄與真正解除鬱血是不是同一個終點。
