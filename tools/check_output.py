@@ -3,11 +3,13 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import sys
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "site"))
-from catalog import load_pages
-PAGES = load_pages(ROOT)
+from catalog import load_public_pages
+PREVIEW = os.environ.get('CF_PAGES_BRANCH','') not in ('','main') or (os.environ.get('CLINICAL_SITE_PREVIEW') == '1' and os.environ.get('CF_PAGES_BRANCH') != 'main')
+PAGES = load_public_pages(ROOT, preview=PREVIEW)
 DIST = ROOT / "dist"
 EXPECTED = {
     "styles.css", "home.css", "index.html",
@@ -86,6 +88,16 @@ if not errors:
     if 'jtd.amegroups.org/article/view/5226/html' not in interactive or 'jtd.amegroups.org/article/view/5226/html' not in static:
         errors.append("Original case and Figure 1–3 link missing")
 
+    if 'tamponade.html' in front or 'tamponade.html' in actual:
+        errors.append("Internal Tamponade pilot exposed")
+    if any(t in front for t in ("RECOVER", "INTEGRATE", "VALIDATE", "audit-log.html")):
+        errors.append("Private editorial workflow leaked to readers")
+    if PREVIEW:
+        if '編輯審查預覽' not in front:
+            errors.append("Preview lacks a truthful editorial status label")
+        for page in actual:
+            if page.endswith(".html") and 'noindex,nofollow' not in (DIST/page).read_text("utf8"):
+                errors.append(page + ": missing noindex,nofollow in preview")
     if 'href="https://github.com/sheng-web-OS/Clinical_system"' in front:
         errors.append("Private repository direct link should not appear in public nav")
 
