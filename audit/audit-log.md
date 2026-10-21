@@ -2,6 +2,8 @@
 
 日期：2026-10-21。範圍：原有 8 單元 + ESC 2025 圖表核對及病例反事實推導（新增第 9、10 章）。
 
+**目前發布狀態：Cloudflare deployment succeeded / public HTTPS verified。** 正式網站：[sheng-clinical-system.pages.dev](https://sheng-clinical-system.pages.dev/)。下列 GitHub Pages 阻擋紀錄是歷史事件；最新驗收見文末「Cloudflare 正式部署與公開驗證」。
+
 ## 基線與版本
 
 - Baseline：\`archive/tamponade_r2_baseline.md\`，原先 399 行主教材。
@@ -37,7 +39,7 @@
 
 **醫學資料審查**：指定來源中的 ESC 主要推薦、Figure 12 原圖與 Table 17 原表已對照；r2 報告先前 AI 獨立脈絡審查曾關閉三項 P2，但本輪沒有重現該獨立受試實驗。尚未有專科醫師的外部醫學審查或學習成效驗證。
 
-**網站結構**：以 CI 檢查內容、連結路徑、Figure 12 核對檔與內容存在；真正網站上線須由 GitHub Pages 服務回報部署成功，並以 HTTPS 存取確認。開發端工具的文字輸出，不足以證明公開站已可閱讀。
+**網站結構**：以 CI 檢查內容、連結路徑、Figure 12 核對檔與內容存在；真正網站上線須由 Cloudflare Pages 服務回報部署成功，並以 HTTPS 存取確認。開發端工具的文字輸出，不足以證明公開站已可閱讀。
 
 **未解問題**：原始 ESC Figure 12 兩種門檻符號的內部差異屬 upstream ambiguity；採明示處理，不臆測修正版。若後續發現 ESC erratum，應重新核對原圖與受影響教學章節。
 
@@ -63,3 +65,25 @@ GitHub Actions run [#1](https://github.com/sheng-web-OS/Clinical_system/actions/
 發布狀態必須分辨：source committed、CI passed、Cloudflare deployment succeeded、public HTTPS verified。GitHub Actions 成功不等於 Cloudflare 已連接或正式站已上線。需擁有者在 Cloudflare 與 GitHub 授權安裝 Pages GitHub App，並確認實際 pages.dev 網址可讀。
 
 安全邊界：僅 dist/ 編譯好的教材 HTML、CSS、JS、索引公開；archive/、原始 Markdown、編輯狀態 JSON 與 Git 歷史仍在私人儲存庫，不當作網站原始檔發布。請注意公開審查頁本身的內容仍可被任何人閱讀，來源的私有 Git 歷史無法由一般訪客查閱。
+
+## Cloudflare 正式部署與公開驗證（2026-10-21）
+
+使用者已授權 Cloudflare Workers and Pages GitHub App，範圍僅限私人 repository `sheng-web-OS/Clinical_system`。建立前以控制台與 API 確認帳號內無既有 Pages 專案；網頁建立流程曾回傳未具體說明的錯誤，重新確認清單為空後，改用已連接的 Cloudflare API 建立，未重複建立專案。
+
+| 驗收層 | 實際證據 | 結果 |
+|---|---|---|
+| 原始碼 | commit `5ddacac531cf68162cb09aa971023a5a34ce89cf`；repository visibility = private | 已確認 |
+| GitHub CI | [run 39526159420](https://github.com/sheng-web-OS/Clinical_system/actions/runs/39526159420)，completed / success | 通過 |
+| Cloudflare | project `sheng-clinical-system`；production deployment `a9afe82b-c08c-40fe-af45-d7206974829a`，clone、build、deploy 均 success | 通過 |
+| 完成時間 | 2026-10-21 11:56:16（Asia/Taipei，平台原始時間 03:56:16 UTC） | 平台回報 |
+| 正式 HTTPS | [正式網站](https://sheng-clinical-system.pages.dev/) 與 [不可變部署網址](https://a9afe82b.sheng-clinical-system.pages.dev/) | 正式站實際存取已通過 |
+| 公開頁面 | 首頁、ESC 審查、審查紀錄均回傳 HTTP 200；.html 路徑正常導向乾淨網址 | 通過 |
+| 站內引用 | 三頁全部 42 個站內連結／資產引用、19 個不重複章節定位；CSS、JS、搜尋索引內容類型正常 | 通過 |
+| 互動 | 章節點擊跳轉；以 tamponade、ESC 搜尋得到三頁結果，並實際開啟審查頁 | 通過 |
+| 私人來源邊界 | 原始 Markdown、archive、.git/config 的探測回應與首頁 HTML 完全相同（Pages fallback），未返回原始檔 | 未洩出來源 |
+
+專案設定：production branch `main`；build command `bash tools/build_site.sh`；output `dist`；根目錄留空；`PYTHON_VERSION=3.12`，首次日誌實際安裝 3.12.12；正式分支自動部署開啟；`preview_deployment_setting=none`；PR 自動留言關閉。網站為純靜態內容，該部署 `uses_functions=false`。
+
+外部連結：ESC 官方指南頁與 Myocarditis Foundation 原指南 PDF 回傳 HTTP 200；DOI 可解析到出版社，但自動化請求最終回傳 HTTP 403，因此記為出版社存取受限，沒有宣稱完整期刊頁可讀。連結存取檢查不等同重新醫學審查；原先指南符號歧異及真人同儕審查限制仍保留。
+
+後續變更已納入版本追蹤：手機初驗發現表格固定最小寬度造成整頁橫向溢出，故修正表格自身的捲動範圍；另依使用者原文新增私人架構原則文件。未修改醫學內容、品質驗證器或公開發行白名單。以上成功部署證據對應所列 commit；紀錄與版面更新會由 main 再觸發自動部署，須以新提交對應的 Cloudflare 狀態及公開頁面另行驗證。

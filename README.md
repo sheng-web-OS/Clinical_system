@@ -4,6 +4,8 @@
 
 此儲存庫是 Master Prompt v5.1 的版本化知識來源；Cardiac Tamponade 是第一個端到端教材驗證案例，不是系統的終點。
 
+系統設計與後續演進遵循 [Master Prompt v5.1 — Capability-Native Architecture Principle](docs/master-prompt-v5.1-architecture.md)：能力原生優先、知識資產最小充分保存、品質契約優先、複雜度須自證價值。
+
 ## 來源與審查
 
 - [Tamponade 完整教材](content/tamponade.md)：既有八個教學單元、2025 ESC 原始圖表對讀、反事實推理。
@@ -25,7 +27,7 @@ GitHub Actions：相同驗證器，獨立 CI 與預覽成品
 
 Cloudflare 先執行 `bash tools/build_site.sh`。若來源檔案檢查、網站編譯或發行白名單檢查失敗，就阻擋當次部署；避免 CI 通過但 Cloudflare 使用不相同的建置邏輯。
 
-**目前交接狀態**：已準備好從 GitHub 自動建站，但 Cloudflare 帳號尚須由使用者完成授權並啟用 Pages 專案。只有成功部署並驗證 HTTPS 後才會有可確認的正式網站網址。
+**目前交接狀態（2026-10-21）**：Cloudflare Pages 正式部署已成功，公開 HTTPS、首頁、ESC 審查頁、審查紀錄、章節導航與全文搜尋已實際驗證。正式網站：[sheng-clinical-system.pages.dev](https://sheng-clinical-system.pages.dev/)。GitHub repository 維持 private；main 自動部署已開啟，預覽分支部署已停用。完整證據與限制見 [發行審查紀錄](audit/audit-log.md)。
 
 ## 一次性部署設定
 
@@ -33,14 +35,16 @@ Cloudflare 先執行 `bash tools/build_site.sh`。若來源檔案檢查、網站
 
 | Cloudflare 欄位 | 設定 |
 |---|---|
-| 產品 | Workers & Pages → Pages → Connect to Git |
+| 產品 | Cloudflare Pages（靜態網站） |
+| Project name | `sheng-clinical-system` |
 | GitHub repository | `sheng-web-OS/Clinical_system`（private） |
 | Production branch | `main` |
 | Framework preset | None |
 | Root directory | 專案根目錄（留空） |
 | Build command | `bash tools/build_site.sh` |
 | Build output directory | `dist` |
-| Python version | `.python-version` 指定 3.12 |
+| Python version | `.python-version` 與 `PYTHON_VERSION` 指定 3.12 |
+| Preview branches | None |
 
 不需要 GitHub Pro、Cloudflare API Token 或 GitHub Secrets。
 
