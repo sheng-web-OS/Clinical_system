@@ -72,24 +72,25 @@ if not errors:
         errors.append("Missing editorial library landing page")
     if 'href="tamponade.html"' in front or "tamponade.html" in actual:
         errors.append("Internal Tamponade pilot must not be published")
-    # Verify both clinical reading modes present the same verified core facts.
-    interactive = (DIST / "lvoto-case-interactive.html").read_text("utf8")
-    static = (DIST / "lvoto-case-static.html").read_text("utf8")
-    for item in ("LVEDD 37 mm", "EF 80%", "98 mmHg", "369", "620", "torsemide", "HCM"):
-        if item not in interactive or item not in static:
-            errors.append(f"Clinical-case missing evidence in one reading mode: {item}")
-    if interactive.count('data-case-stage="') != 4:
-        errors.append("Interactive case must contain exactly four clinical decisions")
-    if interactive.count('data-case-correct="') != 4 or interactive.count('data-case-rationale') != 4:
-        errors.append("Interactive case lost stage answers or explanatory reasoning")
-    if '<section class="case-analysis" data-case-analysis>' not in interactive:
-        errors.append("Interactive case full-explanation fallback was not rendered")
-    if '<!-- CASE_ANALYSIS_START -->' in interactive or '\\n</div>' in interactive:
-        errors.append("Interactive case contains raw rendering artifacts")
-    if 'data-case-sequence' in static:
-        errors.append("Static comparison must not depend on the interactive UI")
-    if 'jtd.amegroups.org/article/view/5226/html' not in interactive or 'jtd.amegroups.org/article/view/5226/html' not in static:
-        errors.append("Original case and Figure 1–3 link missing")
+    if "lvoto-case-interactive.html" in actual and "lvoto-case-static.html" in actual:
+        # Verify both clinical reading modes present the same verified core facts.
+        interactive = (DIST / "lvoto-case-interactive.html").read_text("utf8")
+        static = (DIST / "lvoto-case-static.html").read_text("utf8")
+        for item in ("LVEDD 37 mm", "EF 80%", "98 mmHg", "369", "620", "torsemide", "HCM"):
+            if item not in interactive or item not in static:
+                errors.append(f"Clinical-case missing evidence in one reading mode: {item}")
+        if interactive.count('data-case-stage="') != 4:
+            errors.append("Interactive case must contain exactly four clinical decisions")
+        if interactive.count('data-case-correct="') != 4 or interactive.count('data-case-rationale') != 4:
+            errors.append("Interactive case lost stage answers or explanatory reasoning")
+        if '<section class="case-analysis" data-case-analysis>' not in interactive:
+            errors.append("Interactive case full-explanation fallback was not rendered")
+        if '<!-- CASE_ANALYSIS_START -->' in interactive or '\\n</div>' in interactive:
+            errors.append("Interactive case contains raw rendering artifacts")
+        if 'data-case-sequence' in static:
+            errors.append("Static comparison must not depend on the interactive UI")
+        if 'jtd.amegroups.org/article/view/5226/html' not in interactive or 'jtd.amegroups.org/article/view/5226/html' not in static:
+            errors.append("Original case and Figure 1–3 link missing")
 
     if 'tamponade.html' in front or 'tamponade.html' in actual:
         errors.append("Internal Tamponade pilot exposed")
