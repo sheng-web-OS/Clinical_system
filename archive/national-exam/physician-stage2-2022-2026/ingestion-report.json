@@ -1,0 +1,1579 @@
+{
+  "dataset": "taiwan-physician-stage2",
+  "generated_utc": "2026-10-21T09:20:03.985220+00:00",
+  "requested_pdf_files": 112,
+  "verified_pdf_files": 112,
+  "failed_pdf_files": 0,
+  "verified_question_pdfs": 40,
+  "complete": true,
+  "files": [
+    {
+      "paper_id": "2022-s1-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=11&t=M",
+      "path": "raw/2022-s1-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 48046,
+      "sha256": "86f5439ebbd58b145e322c7a1c66398562fa77e86ad02342d219be4319593c9f",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 646
+      }
+    },
+    {
+      "paper_id": "2022-s1-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=11&t=Q",
+      "path": "raw/2022-s1-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1707655,
+      "sha256": "d5018561d9f32358a8c73977d8af69b93be63fb70c60f42a9653c2d6a4439982",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 15,
+        "chars": 18582
+      }
+    },
+    {
+      "paper_id": "2022-s1-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=11&t=S",
+      "path": "raw/2022-s1-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 45945,
+      "sha256": "dbce3719f27d614e40682caede5afcb1e45943f5a08f471220120768d4852236",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 587
+      }
+    },
+    {
+      "paper_id": "2022-s1-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=22&t=M",
+      "path": "raw/2022-s1-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 48234,
+      "sha256": "d481b9cfa69f79523f5b78f4b392427548e9f7cb51580bb9592a42c769b0a22a",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 631
+      }
+    },
+    {
+      "paper_id": "2022-s1-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=22&t=Q",
+      "path": "raw/2022-s1-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 2167272,
+      "sha256": "ae1aa7158f8f66314b5c67f9c250aa93e35d7a77d52d980ff018047132fb4a14",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 16,
+        "chars": 14868
+      }
+    },
+    {
+      "paper_id": "2022-s1-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=22&t=S",
+      "path": "raw/2022-s1-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46519,
+      "sha256": "b94896b9f9424adc8c1187a4e7816601383e345a5e2e56d6d1fceab35e5e8e82",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 594
+      }
+    },
+    {
+      "paper_id": "2022-s1-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=33&t=M",
+      "path": "raw/2022-s1-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47980,
+      "sha256": "75d35726e13445d4da9f8978785ec9abf4ba762e702491b0b7d4ed22c4fd637e",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 632
+      }
+    },
+    {
+      "paper_id": "2022-s1-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=33&t=Q",
+      "path": "raw/2022-s1-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1703032,
+      "sha256": "b1cd077267656c945317e83ad9de13d8451d98187c13efedf5676236fd3acd3f",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 15,
+        "chars": 16603
+      }
+    },
+    {
+      "paper_id": "2022-s1-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=33&t=S",
+      "path": "raw/2022-s1-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 45938,
+      "sha256": "63834af45689f9972a00a93fb46a7b381fe70d0e52127ccabd00cac39fd0c4c0",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 588
+      }
+    },
+    {
+      "paper_id": "2022-s1-med6",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=44&t=M",
+      "path": "raw/2022-s1-med6/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 49461,
+      "sha256": "eb40d40ff096a6e7c103d68135b335de886eb8ff8af02c1ee3146c08f94741c3",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 650
+      }
+    },
+    {
+      "paper_id": "2022-s1-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=44&t=Q",
+      "path": "raw/2022-s1-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1987743,
+      "sha256": "93117ea130a5f6fd61559fea4faa90df3b27b0205428933dc4471f67379938d4",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 16,
+        "chars": 14002
+      }
+    },
+    {
+      "paper_id": "2022-s1-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=44&t=S",
+      "path": "raw/2022-s1-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47288,
+      "sha256": "94a5e9de201a978ccaca180662b4c0215d6682e53ebfdee1dc270a0cd973c0d7",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 598
+      }
+    },
+    {
+      "paper_id": "2022-s2-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=M",
+      "path": "raw/2022-s2-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 587821,
+      "sha256": "b05754e70f9eb3211cae729ccf8bf9803e36e1c6b3df2de64b7b6cd0b5191c9c",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 627
+      }
+    },
+    {
+      "paper_id": "2022-s2-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=Q",
+      "path": "raw/2022-s2-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 758042,
+      "sha256": "f201bd914fbdc9c885c9e3bfa096163bba7ccff7e7f8609e7d5c8d7691162b96",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 19757
+      }
+    },
+    {
+      "paper_id": "2022-s2-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=S",
+      "path": "raw/2022-s2-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44098,
+      "sha256": "c5608f9bb17b25cb4c8497fdc56e3089003d1fa3c608d06b692bc290b586447e",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 569
+      }
+    },
+    {
+      "paper_id": "2022-s2-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=22&t=M",
+      "path": "raw/2022-s2-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 588479,
+      "sha256": "98c85d7bcf0fab9ff99b908e8c3dd6b03045a00cada342743c2e078e070ac9e2",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 613
+      }
+    },
+    {
+      "paper_id": "2022-s2-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=22&t=Q",
+      "path": "raw/2022-s2-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 905591,
+      "sha256": "66c138d47204bdadd510084e6f86cd45e7a8ca5cd86d5e6dc47fd7bba03d280f",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 17170
+      }
+    },
+    {
+      "paper_id": "2022-s2-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=22&t=S",
+      "path": "raw/2022-s2-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44721,
+      "sha256": "48090e5e51794fe9a7467e5840be49a028dabdeca5af24f9d5f1ee79be9f8199",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 576
+      }
+    },
+    {
+      "paper_id": "2022-s2-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=33&t=M",
+      "path": "raw/2022-s2-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 587932,
+      "sha256": "492f4530e5609d36f3704e9cae0864db0352b8ef3f3b0f3404c084d9483c8122",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 607
+      }
+    },
+    {
+      "paper_id": "2022-s2-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=33&t=Q",
+      "path": "raw/2022-s2-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 523302,
+      "sha256": "0044627cde94516df88db3c4c1afd53ac4b1b6c30856372da89190b980636729",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 13,
+        "chars": 18008
+      }
+    },
+    {
+      "paper_id": "2022-s2-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=33&t=S",
+      "path": "raw/2022-s2-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44170,
+      "sha256": "b694d58f0f6d2f99f29ef700bc80e7039f445f82d6d5d13dd4d313fff6c12072",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 570
+      }
+    },
+    {
+      "paper_id": "2022-s2-med6",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=44&t=M",
+      "path": "raw/2022-s2-med6/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 589704,
+      "sha256": "fa9f0499e1978cf99672f83d92e5785ff1c24886a90eb776423def4ae0547a50",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 655
+      }
+    },
+    {
+      "paper_id": "2022-s2-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=44&t=Q",
+      "path": "raw/2022-s2-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 515389,
+      "sha256": "f11a741c22a2c4c35d844130d74d2e1857dfe473e68600a4f364c70cc5bcc3d5",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 16,
+        "chars": 15627
+      }
+    },
+    {
+      "paper_id": "2022-s2-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=44&t=S",
+      "path": "raw/2022-s2-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 45438,
+      "sha256": "e837f0f21f1157c44070fc6d4b50386ff983adc50a4c86657819b49c032d01e5",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 580
+      }
+    },
+    {
+      "paper_id": "2023-s1-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M",
+      "path": "raw/2023-s1-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47742,
+      "sha256": "4d08ce27c28bf53c32d221278478d358cd32e4f932a4dbd87e25fee2d7adc169",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 624
+      }
+    },
+    {
+      "paper_id": "2023-s1-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q",
+      "path": "raw/2023-s1-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 3118402,
+      "sha256": "05380d657ca90d4f7539c826040afd74f4935d43a97c4ebdee513d3262261166",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 16203
+      }
+    },
+    {
+      "paper_id": "2023-s1-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S",
+      "path": "raw/2023-s1-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46062,
+      "sha256": "db2b24eebf3d5f8cca7eac05414cbc2c7a1fb90aa724662383af0b7448f18459",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 590
+      }
+    },
+    {
+      "paper_id": "2023-s1-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=22&t=Q",
+      "path": "raw/2023-s1-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 2142180,
+      "sha256": "33aa07350c86cf9dc1e552ec8e0409dda0319fc446ec67be7d5e6aa591b53d12",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 19,
+        "chars": 16165
+      }
+    },
+    {
+      "paper_id": "2023-s1-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=22&t=S",
+      "path": "raw/2023-s1-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46639,
+      "sha256": "c4eb29e87b198650d495fcfb257084761079d96aa858cf37bfd8649b75b3604a",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 597
+      }
+    },
+    {
+      "paper_id": "2023-s1-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=33&t=Q",
+      "path": "raw/2023-s1-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1308413,
+      "sha256": "ef9b3c16135cb62833df0fe776c02bd1ab7470b66e91b56882ac7e4812b61200",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 17125
+      }
+    },
+    {
+      "paper_id": "2023-s1-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=33&t=S",
+      "path": "raw/2023-s1-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46066,
+      "sha256": "bf3207b4aa2ef91a992677576bbdcc00708a720d93b5ba94894d97f8450f1d4d",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 591
+      }
+    },
+    {
+      "paper_id": "2023-s1-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=44&t=Q",
+      "path": "raw/2023-s1-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1460140,
+      "sha256": "d6761c2b49b1245b1fd841a9ccdbee052434950ad55c6c92d406e05ca36eeac3",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 16,
+        "chars": 14224
+      }
+    },
+    {
+      "paper_id": "2023-s1-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=44&t=S",
+      "path": "raw/2023-s1-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47405,
+      "sha256": "dcabbc5c693609938aa19a3357de8422a93067fba6d203fdd59273d7bf1ba623",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 601
+      }
+    },
+    {
+      "paper_id": "2023-s2-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M",
+      "path": "raw/2023-s2-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46374,
+      "sha256": "e37e21b49f276f7f45f759341137ac6171042978be6252b04c45e02705e704a4",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 629
+      }
+    },
+    {
+      "paper_id": "2023-s2-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "path": "raw/2023-s2-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1634573,
+      "sha256": "2d61ff8291bc83a3cc5ce3748fd64f2cca6b158a007d1b9e590d7bd049ff3f17",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 17915
+      }
+    },
+    {
+      "paper_id": "2023-s2-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "path": "raw/2023-s2-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44236,
+      "sha256": "68ebc3b2fc4cb8d7c6597e16d13a6192af65a4bcc42de33dee7152c7a4c8dfde",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 572
+      }
+    },
+    {
+      "paper_id": "2023-s2-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=22&t=M",
+      "path": "raw/2023-s2-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47054,
+      "sha256": "5a48ccce0f32c82b5d8f28602a17ab2db21c701159dc18805ec06a81c5664ad2",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 637
+      }
+    },
+    {
+      "paper_id": "2023-s2-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=22&t=Q",
+      "path": "raw/2023-s2-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1539112,
+      "sha256": "bd63ab23ee3a8c1759ee0c6681c0b8b28f909d4400c6777f4d7818d34b0077a7",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 15755
+      }
+    },
+    {
+      "paper_id": "2023-s2-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=22&t=S",
+      "path": "raw/2023-s2-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44847,
+      "sha256": "97b473612e8f4525472f8d1bfbef10cab183210b7cbe6ab81f2282f95d853dad",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 579
+      }
+    },
+    {
+      "paper_id": "2023-s2-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=33&t=M",
+      "path": "raw/2023-s2-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46413,
+      "sha256": "b0ba48821bb91c7b2d074aba764489964f9bea4ea6991b562e4139755c4a8dea",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 653
+      }
+    },
+    {
+      "paper_id": "2023-s2-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=33&t=Q",
+      "path": "raw/2023-s2-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1443448,
+      "sha256": "4164826547c29df44618796b2a5a0d36e36ddbf16b3fdb1d80c9bdb0a1250dc8",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 19,
+        "chars": 16447
+      }
+    },
+    {
+      "paper_id": "2023-s2-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=33&t=S",
+      "path": "raw/2023-s2-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44291,
+      "sha256": "7bfef5de33b0cd2ba08f3382067d48b76b8bf11f8bc2c3a884674e7ebd29628e",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 573
+      }
+    },
+    {
+      "paper_id": "2023-s2-med6",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=44&t=M",
+      "path": "raw/2023-s2-med6/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47783,
+      "sha256": "50b03f8632c77cea7eb73b54af41e4c60b46f5761515bafeb8070af4e11fdace",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 642
+      }
+    },
+    {
+      "paper_id": "2023-s2-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=44&t=Q",
+      "path": "raw/2023-s2-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1191413,
+      "sha256": "7b8aedbcf1d682822f0ae0b83fcf8e62dd8d4106c885f550fd064e872583a226",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 16,
+        "chars": 14617
+      }
+    },
+    {
+      "paper_id": "2023-s2-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=44&t=S",
+      "path": "raw/2023-s2-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 45567,
+      "sha256": "67e4aef0daed9eb8b499d93f5e0846e51369d506374840fcce375a240bc9d910",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 583
+      }
+    },
+    {
+      "paper_id": "2024-s1-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q",
+      "path": "raw/2024-s1-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1401045,
+      "sha256": "a1c234cee02947a892edaae050e900efe6a7b7c1f02e55415d713eabce58e376",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 19,
+        "chars": 18349
+      }
+    },
+    {
+      "paper_id": "2024-s1-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=S",
+      "path": "raw/2024-s1-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46053,
+      "sha256": "94626128191715a384c0147252bb5e578b1962aafc46655c299a2a2b6137874a",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 590
+      }
+    },
+    {
+      "paper_id": "2024-s1-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=22&t=M",
+      "path": "raw/2024-s1-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 48688,
+      "sha256": "e10adce767ee5ab0880e4b9bea80852c649eee8b86a070ccdf0c6bb53e6e7981",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 638
+      }
+    },
+    {
+      "paper_id": "2024-s1-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=22&t=Q",
+      "path": "raw/2024-s1-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1139345,
+      "sha256": "418d34fc343ea4ba2dd014d5ad5a1fabf6d4ae96b76aaf97b4cecffe096ccbf5",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 15429
+      }
+    },
+    {
+      "paper_id": "2024-s1-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=22&t=S",
+      "path": "raw/2024-s1-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46652,
+      "sha256": "59b7a62a06cdc634398d9c3f9e25062a98c294c1c5044b332e3385bc372ed1c5",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 597
+      }
+    },
+    {
+      "paper_id": "2024-s1-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=33&t=M",
+      "path": "raw/2024-s1-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47807,
+      "sha256": "e1b8201c28f520a91f96ea3cf81522e4bb2436a1e1a1945b4000e0b5b1a4b484",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 634
+      }
+    },
+    {
+      "paper_id": "2024-s1-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=33&t=Q",
+      "path": "raw/2024-s1-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 583175,
+      "sha256": "713ca468a6c1d8379db62cc3ff3f6b0699756c046970fc97990d14b741b7b1d6",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 17236
+      }
+    },
+    {
+      "paper_id": "2024-s1-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=33&t=S",
+      "path": "raw/2024-s1-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46065,
+      "sha256": "24d6431453fda92dff1764664e40ce14478985d0fcdb32a4d4ac0b7aa75c66f2",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 591
+      }
+    },
+    {
+      "paper_id": "2024-s1-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=44&t=Q",
+      "path": "raw/2024-s1-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 475334,
+      "sha256": "19dc0811b2d4753c6b781b3cfdf887002a5ee9256c23c67174666831db344447",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 15579
+      }
+    },
+    {
+      "paper_id": "2024-s1-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=44&t=S",
+      "path": "raw/2024-s1-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47425,
+      "sha256": "a065da2a3fdbda7dd316912f39e5ec1b9cfe226712e573e17e560062314e6ec3",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 601
+      }
+    },
+    {
+      "paper_id": "2024-s2-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=M",
+      "path": "raw/2024-s2-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46407,
+      "sha256": "298d34d89d81462597218ea1df4709e907ed6f03976b3f8490ac679e5e4e7adf",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 631
+      }
+    },
+    {
+      "paper_id": "2024-s2-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=Q",
+      "path": "raw/2024-s2-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1293484,
+      "sha256": "19c771f9b4b922b9bb3147179404e2ea2688e730850b9da2db3b9666041e7111",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 17241
+      }
+    },
+    {
+      "paper_id": "2024-s2-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=S",
+      "path": "raw/2024-s2-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44228,
+      "sha256": "796994a98eb203198797fd8a3b0f8938cd92a57d8b733e29c8965849a8cede9c",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 572
+      }
+    },
+    {
+      "paper_id": "2024-s2-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=22&t=M",
+      "path": "raw/2024-s2-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47185,
+      "sha256": "eda82e5f656c536dafb33581100177ba4265750c4188ea436a45eb8a0a15a06d",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 698
+      }
+    },
+    {
+      "paper_id": "2024-s2-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=22&t=Q",
+      "path": "raw/2024-s2-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1745973,
+      "sha256": "00d57846adc5855a44b22b4d8d30815df61f34b7cc103f8752e864111eef45c1",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 14918
+      }
+    },
+    {
+      "paper_id": "2024-s2-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=22&t=S",
+      "path": "raw/2024-s2-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44834,
+      "sha256": "5352357914962287121d9d039d1211548d3f1dc1041d8d34f9f849e01f48810b",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 579
+      }
+    },
+    {
+      "paper_id": "2024-s2-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=33&t=M",
+      "path": "raw/2024-s2-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46516,
+      "sha256": "e5c239d1964703e3d8303f6e6fd3c118f7531c073915bd81d271bc3a42f20a50",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 646
+      }
+    },
+    {
+      "paper_id": "2024-s2-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=33&t=Q",
+      "path": "raw/2024-s2-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 954603,
+      "sha256": "120959ef6ad1edfd3d750daf5f9590182be06ad7e71ad8de53b05713d8af3087",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 15062
+      }
+    },
+    {
+      "paper_id": "2024-s2-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=33&t=S",
+      "path": "raw/2024-s2-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44282,
+      "sha256": "bb994004891a6698f2a2d5632b3d056e605ac9c6257f30a7cdc273532b333da6",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 573
+      }
+    },
+    {
+      "paper_id": "2024-s2-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=44&t=Q",
+      "path": "raw/2024-s2-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1080738,
+      "sha256": "944c01bd93e3a81f558634260c2cea67fffba3d20b872b95c324060c14f91464",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 16,
+        "chars": 14316
+      }
+    },
+    {
+      "paper_id": "2024-s2-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=44&t=S",
+      "path": "raw/2024-s2-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 45567,
+      "sha256": "b70950c8e4069aa47c783cf2ebc7282977297d23a9f5195208ffd0d723ef1dd7",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 583
+      }
+    },
+    {
+      "paper_id": "2025-s1-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M",
+      "path": "raw/2025-s1-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 48161,
+      "sha256": "187d392bc3f8d2b5a4841cdfc7d872daf8a95b7bb49f77f133ff5b2d84cf2343",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 640
+      }
+    },
+    {
+      "paper_id": "2025-s1-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q",
+      "path": "raw/2025-s1-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 727172,
+      "sha256": "8ce6edc3a4cf38837fd4cf37a6573c735cb87e3117d678b617bb1ba6c7340fe2",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 18916
+      }
+    },
+    {
+      "paper_id": "2025-s1-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S",
+      "path": "raw/2025-s1-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46052,
+      "sha256": "4d4033c092847e403383cd9179195bfe9d272599419aefedaec9373c24a05c7f",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 590
+      }
+    },
+    {
+      "paper_id": "2025-s1-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0104&t=M",
+      "path": "raw/2025-s1-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 48815,
+      "sha256": "f218acb1bd1dee0cf7af98e9b354bb6de4bf7aae54ad3da015d509b2bcfeeddc",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 654
+      }
+    },
+    {
+      "paper_id": "2025-s1-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0104&t=Q",
+      "path": "raw/2025-s1-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 924913,
+      "sha256": "533897e2735e7525e3b5344bf116314180f5f77d535ac57634ba79b365bd1b87",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 19,
+        "chars": 16181
+      }
+    },
+    {
+      "paper_id": "2025-s1-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0104&t=S",
+      "path": "raw/2025-s1-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46630,
+      "sha256": "4713eb8f5974d6c4969d168b816a7e329925c0781783e800f5aae5021f4fa9d9",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 597
+      }
+    },
+    {
+      "paper_id": "2025-s1-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0105&t=Q",
+      "path": "raw/2025-s1-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1128698,
+      "sha256": "1ab0608c1bb6ff0525a1bef7772d087fd814f059435a99e690878ebbd88f2f47",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 19,
+        "chars": 14558
+      }
+    },
+    {
+      "paper_id": "2025-s1-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0105&t=S",
+      "path": "raw/2025-s1-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46047,
+      "sha256": "24f11157523351f932c4f37263deb8fa4e4d664f10d0ab7313ea6f3e86e56028",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 591
+      }
+    },
+    {
+      "paper_id": "2025-s1-med6",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0106&t=M",
+      "path": "raw/2025-s1-med6/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 49361,
+      "sha256": "a7db863b6db640b3a2b9849f0cb27e6ac7a6fa0a09f90794c88f38910578b32d",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 660
+      }
+    },
+    {
+      "paper_id": "2025-s1-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0106&t=Q",
+      "path": "raw/2025-s1-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 788669,
+      "sha256": "e28f1b9bc311967046205995f68b88be29e05696d11070edcba35daa0347cbdc",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 13671
+      }
+    },
+    {
+      "paper_id": "2025-s1-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0106&t=S",
+      "path": "raw/2025-s1-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47394,
+      "sha256": "a6ada237b532ca247abb744d73021016e9cb431e28feec23e49da4c3664d7a7b",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 601
+      }
+    },
+    {
+      "paper_id": "2025-s2-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=M",
+      "path": "raw/2025-s2-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47526,
+      "sha256": "230dd7fca311ae8e963e4ac3baadbb15d4f4983d3337a6b47a02d1ba76419d1e",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 691
+      }
+    },
+    {
+      "paper_id": "2025-s2-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=Q",
+      "path": "raw/2025-s2-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 833163,
+      "sha256": "75c0feb8c606028f45162609a39f9b3a35fd763f57f292951a74f29ba22d5c3d",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 19,
+        "chars": 18789
+      }
+    },
+    {
+      "paper_id": "2025-s2-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=S",
+      "path": "raw/2025-s2-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44232,
+      "sha256": "f45e3072bff0ea20b937143230d62e0a293558306882f80d9fe4ce8abccb90d0",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 572
+      }
+    },
+    {
+      "paper_id": "2025-s2-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0102&t=Q",
+      "path": "raw/2025-s2-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 806185,
+      "sha256": "83945df2e4250a7387c02e86d2e65bad4a7ec0ad437ec7e505a3b9d632b202f4",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 16260
+      }
+    },
+    {
+      "paper_id": "2025-s2-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0102&t=S",
+      "path": "raw/2025-s2-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44837,
+      "sha256": "a5dd61ecfd3b39687182f7b2af998669741b5a94510bfcf2b9deb31180e9ff89",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 579
+      }
+    },
+    {
+      "paper_id": "2025-s2-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0103&t=M",
+      "path": "raw/2025-s2-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47018,
+      "sha256": "64ea7253d9f29f200f054394df0d382511694268f937371c1c9dc08571b4a86b",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 655
+      }
+    },
+    {
+      "paper_id": "2025-s2-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0103&t=Q",
+      "path": "raw/2025-s2-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 752501,
+      "sha256": "671c7c54a0befb79a0a8d94be5bc04da8310a0fd0c047f4e773e651c21f7eb98",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 16656
+      }
+    },
+    {
+      "paper_id": "2025-s2-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0103&t=S",
+      "path": "raw/2025-s2-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44268,
+      "sha256": "af92d430febd182509b066092da7cd769602a67e03f37235944804e25fc0fb72",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 573
+      }
+    },
+    {
+      "paper_id": "2025-s2-med6",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0104&t=M",
+      "path": "raw/2025-s2-med6/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47934,
+      "sha256": "47bc9a79c0cfa256d582c4e3c9d024fb185fd1009faf53868f465a88481df82e",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 659
+      }
+    },
+    {
+      "paper_id": "2025-s2-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0104&t=Q",
+      "path": "raw/2025-s2-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 737613,
+      "sha256": "e2d6239cb336e44f70ae52f81df9786f248abf04873931c811ac3b749c37f5ac",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 16,
+        "chars": 14600
+      }
+    },
+    {
+      "paper_id": "2025-s2-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0104&t=S",
+      "path": "raw/2025-s2-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 45551,
+      "sha256": "e6d0fe9bbe96f46df8b4c92d896096cc30a85339b3041bd190f682d4f47cbcd0",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 583
+      }
+    },
+    {
+      "paper_id": "2026-s1-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0103&t=M",
+      "path": "raw/2026-s1-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 48153,
+      "sha256": "d2a9d01c1a8f59bccde810c28fc828b2cd78d78239192a5121442e72a624be68",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 645
+      }
+    },
+    {
+      "paper_id": "2026-s1-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0103&t=Q",
+      "path": "raw/2026-s1-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1280779,
+      "sha256": "639b57ba7ee4bfa7c2d92d4bcab71bd95285d41a9ffdf956b0de24584ab2f091",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 17237
+      }
+    },
+    {
+      "paper_id": "2026-s1-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0103&t=S",
+      "path": "raw/2026-s1-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46049,
+      "sha256": "0bbda41c55075ec49690da0840f7725bf3eb3e9277df76fa588dc6faa60d6100",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 590
+      }
+    },
+    {
+      "paper_id": "2026-s1-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0104&t=M",
+      "path": "raw/2026-s1-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 49236,
+      "sha256": "9ea2a9c2fa54464195370531a266bd59901486c443757d378bf84aa4332310bf",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 659
+      }
+    },
+    {
+      "paper_id": "2026-s1-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0104&t=Q",
+      "path": "raw/2026-s1-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1129468,
+      "sha256": "93b8a819e51dad3f91167b038f7fa75ddf0b7d99a5e4a5af0dad24a88d7febb0",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 16215
+      }
+    },
+    {
+      "paper_id": "2026-s1-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0104&t=S",
+      "path": "raw/2026-s1-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46630,
+      "sha256": "35c86e26d1de256696890fef5196883051f28e248c51446b701b3f130ba0b0af",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 597
+      }
+    },
+    {
+      "paper_id": "2026-s1-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0105&t=M",
+      "path": "raw/2026-s1-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 48268,
+      "sha256": "e5710d9a9c992389ffcbb47e3cb4df0df81b8296d67e36e08b31d6b9850e639b",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 657
+      }
+    },
+    {
+      "paper_id": "2026-s1-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0105&t=Q",
+      "path": "raw/2026-s1-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1158543,
+      "sha256": "b0df70f7befe98da6b8062763f4276b8816a1aeb1980789cbf12ebb61248652a",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 17238
+      }
+    },
+    {
+      "paper_id": "2026-s1-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0105&t=S",
+      "path": "raw/2026-s1-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46052,
+      "sha256": "b968cde13f1f93f8e76d29e26194a8f1e2fe57ca72d3cbd7034ff3a24a065620",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 591
+      }
+    },
+    {
+      "paper_id": "2026-s1-med6",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0106&t=M",
+      "path": "raw/2026-s1-med6/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 49698,
+      "sha256": "eaf5c43e00dd4f33afb7cd76ce430b14ddd8a5af41ec6cdba6f51e4114d2187d",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 701
+      }
+    },
+    {
+      "paper_id": "2026-s1-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0106&t=Q",
+      "path": "raw/2026-s1-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 940975,
+      "sha256": "bc39ffa922ab3cc4782aa7feb5ab20a4ed7fc76372bb171fbfcefab79eefd563",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 14545
+      }
+    },
+    {
+      "paper_id": "2026-s1-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0106&t=S",
+      "path": "raw/2026-s1-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47393,
+      "sha256": "abdb3734e79943d5ce7cabd8a2d3823665230f0c3dd9d9a4cd96ff469b5a6f2a",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 601
+      }
+    },
+    {
+      "paper_id": "2026-s2-med3",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M",
+      "path": "raw/2026-s2-med3/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46668,
+      "sha256": "ee909a0e82c033f586b6a522d2643e23b622fbbf86d871cf2cff3a42b4080e44",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 691
+      }
+    },
+    {
+      "paper_id": "2026-s2-med3",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q",
+      "path": "raw/2026-s2-med3/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 793684,
+      "sha256": "0651f7f4995b982b5a354ca7436420babb767755ace1dd4e82508046b5faf31f",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 17,
+        "chars": 17782
+      }
+    },
+    {
+      "paper_id": "2026-s2-med3",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S",
+      "path": "raw/2026-s2-med3/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44227,
+      "sha256": "69bec2a11efd4c8fe1df9ee2b7a3c6ad3e278b7cc536d6b318c28bfc70e3bad9",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 572
+      }
+    },
+    {
+      "paper_id": "2026-s2-med4",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0102&t=M",
+      "path": "raw/2026-s2-med4/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47049,
+      "sha256": "7aa9a5df1482c7643b8e6ef7b2e9c7675ca6fbfceba31a1ae71f904e4e3e56fe",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 629
+      }
+    },
+    {
+      "paper_id": "2026-s2-med4",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0102&t=Q",
+      "path": "raw/2026-s2-med4/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 768297,
+      "sha256": "4896c10a18930ad14004a5b26ad759aaf797617e6f466b634436b1084b00ea4d",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 18,
+        "chars": 15897
+      }
+    },
+    {
+      "paper_id": "2026-s2-med4",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0102&t=S",
+      "path": "raw/2026-s2-med4/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44823,
+      "sha256": "6cda811bb61c05dca6fe1fc767f677f52ac950fb3b24414f1eb7590601cccf95",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 579
+      }
+    },
+    {
+      "paper_id": "2026-s2-med5",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=M",
+      "path": "raw/2026-s2-med5/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 46665,
+      "sha256": "4d6ca1d4bdd28e17458015714e280da52758706305a03a6bf3c3fc99703982fc",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 664
+      }
+    },
+    {
+      "paper_id": "2026-s2-med5",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=Q",
+      "path": "raw/2026-s2-med5/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 1140012,
+      "sha256": "c8b942cb3793c413632305ccc7e10e45f9766c005b504ed4ede1a4213ec2a62a",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 20,
+        "chars": 17002
+      }
+    },
+    {
+      "paper_id": "2026-s2-med5",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=S",
+      "path": "raw/2026-s2-med5/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 44267,
+      "sha256": "9439a0bb6802e0e912657e7885fb51e49b093cf5485b1ca19ce9e89c7b8e949b",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 573
+      }
+    },
+    {
+      "paper_id": "2026-s2-med6",
+      "kind": "corrected_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0104&t=M",
+      "path": "raw/2026-s2-med6/corrected_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 47793,
+      "sha256": "be6211bad9e0cdf5b7a57e2674f745ca4b8b5ce726926ba14bf873e5e1bdce7e",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 641
+      }
+    },
+    {
+      "paper_id": "2026-s2-med6",
+      "kind": "question",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0104&t=Q",
+      "path": "raw/2026-s2-med6/question.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 805547,
+      "sha256": "0f988a57c2824e23421d1efe20d58928d6a46666381f42f4bbab4abc8a053bf6",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 19,
+        "chars": 13464
+      }
+    },
+    {
+      "paper_id": "2026-s2-med6",
+      "kind": "standard_answer",
+      "official_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0104&t=S",
+      "path": "raw/2026-s2-med6/standard_answer.pdf",
+      "status": "downloaded_pdf",
+      "bytes": 45564,
+      "sha256": "0990e87163a5fe42b169f1c9f62d08c99e4981658be1882acacb480073aca1f6",
+      "extraction": {
+        "status": "extracted_unverified",
+        "pages": 1,
+        "chars": 583
+      }
+    }
+  ]
+}
