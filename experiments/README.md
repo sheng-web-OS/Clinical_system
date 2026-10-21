@@ -18,7 +18,7 @@
 |---|---|---|---|
 | E01 Tamponade 完整生命週期：能否用既有證據自主研究、修訂與查錯？ | content/tamponade.md；archive/tamponade_r2_*；audit/esc2025-figure-check.md；audit/audit-log.md | **Artifact / 部分 Pilot**：圖表與錯誤修復有可查紀錄，網站及工程檢查運作；缺外部專科審稿與學習成效 | 用未看過的多步病例、危險臨床反例與獨立 reviewer 核對；不能以「CI 成功」表示學會 |
 | E02 HCM／ACS 品質基準：能否產生概念解混與連續推理？ | content/xiaoma-reading/originals/2026-07-14-hcm.md；docs/editorial-prose-quality-contract.md；ACS 脈絡在既有衍生資料 | **Artifact**：原創文章與七軸契約建立；未驗證原生 AI 對照 | 同題新文盲評、去除文風偏好、比對是否自動找到有意義的命題 |
-| E03 HF／LVEDP／DCM／Diuretics：哪些關係原作者已建立？ | audit/hf-lvedp-four-manuscript-causal-audit-20261021.md；四篇 content/xiaoma-reading/originals | **Artifact + 強先導審核**：A/B/C/D 分類、Figure 1-2 核對與部分生理證據；研究原圖／補充未全查 | 完成關鍵 Figure、腳註，獨立判斷 C 是否真的新增；盲測只讀原稿 vs 原稿＋新橋樑的推理 |
+| E03 HF／LVEDP／DCM／Diuretics：哪些關係原作者已建立？ | main：audit/hf-lvedp-four-manuscript-causal-audit-20261021.md 及四篇原稿；PR #4 另有 audit/cardiovascular-causal-validation-20261021.md（17 條候選關係、5 個反事實情境） | **Artifact + 強先導審核**：main 已核四篇原文及 Figure 1-2；PR #4 是**較早的 HCM 單篇可得性快照**，不得以舊 1/5 稿件狀態覆蓋現況；其 17 邊可作敵意測試題，尚非正式 A/B | 完成關鍵 Figure、腳註，獨立判斷 C 是否真的新增；用 PR #4 的條件反轉測試盲評只讀原稿 vs 原稿＋新橋樑 |
 | E04 新題 Hyponatremia 能否獨立寫出深刻核心命題？ | draft PR #7：experiments/hyponatremia-20261021/{article-clinical-os-v1.md,evidence-and-epqc-audit.md,comparison-protocol.md} | **Artifact + HOLD**：系統輔助示範；自評 25/28 非獨立；原書已談 AVP reversal，因此「發現原書缺漏」**未證明** | 換完全未曝光新題、同來源／模型 A/B；盲審新增價值與醫學安全；不合併 PR #7 作出版 |
 | E05 Lite vs Full／按需因果重建：是否需要長期保存 Claim Graph？ | 歷史 v5.1 T3/T5/T6 試驗敘述、現有 architecture 原則（本 repo 尚缺可重跑完整對照與統一原始結果） | **Pilot reported / NOT VALIDATED**；雙組曾有共同漏項的記錄，不能宣稱等效或 Full 無用 | 四類敵意案例與完整交接、再修訂重測；比較 Lite、Full、只有字詞搜尋的簡化對照 |
 | E06 相同 GPT-6：Clinical OS 對原生能力是否具淨增益？ | PR #7 comparison-protocol；本檔第三節 | **Design**；尚無同題隨機／獨立上下文的正式 A/B | 固定來源的受控臨床寫作三臂實驗，並另跑真實開放資料的端到端情境 |
@@ -28,6 +28,15 @@
 | E10 國考資料與計畫：能否正確支持提前複習而不輸出錯題？ | archive/national-exam/physician-stage2-2022-2026；structured/qa-report.md；archive/xiaoma-internal-medicine | **Artifact / 資料 QA 進行中**：歷年官方 PDF 已有存檔、解析與修正工具；機器結構檢查不等於每題答案／圖像語意已查 | 高風險題圖文人工 spot check、官方更正答案優先、章節配對；驗證 2027-02 前核心範圍完成的實際可行性 |
 
 以上是**證據存量**，並非證明系統好於原生模型。對任何新的「勝出」主張，必須指出原始評分、真實工作時間、重大錯誤及未觀察到的反例。
+
+## 二之一、既有開放 PR 的處置原則（避免用「合併」製造倒退）
+
+- **PR #1 v5.1 Foundation**：是重要原型與 T0–T6 思想來源，但其分支相較 2026-10-21 main 已落後許多提交，另帶有第二組 knowledge/catalog/evidence 與 site builder。**不應直接整包合併、覆寫現有發布站與工具**；只挑擁有實驗增量價值的測試題與操作規格，保留歷史 PR。
+- **PR #4 Content-first**：有 Facebook 已發表版作歷史 canonical、AI 對新稿自主編審、group-ready／standalone release 等重要選版決策；已納入統一運作契約。其心血管因果稽核執行當時只有 HCM 全文，source-availability 結論已被之後 main 回收四篇原稿的事實超越；**原稽核只作先導候選，不直接當新式來源核對完成**。待逐段重驗後再擇要合併。
+- **PR #7 Hyponatremia**：文章與證據稽核是可再評的系統輔助範例；本身明確承認 HCM 品質錨點曝露、原書已包含 AVP reversal、沒有真正 A/B。**保留 HOLD，不把它當本輪基準組，也不自動發布**。
+- **本整合 PR**：只收斂指令、狀態與評測，不碰醫學正文或網站；合併後仍不代表實驗正式執行。
+
+既有證據**先依時間與當時可得輸入解讀**，保留其歷史研究價值；新 evidence 不得靠改寫舊文把早期未完成變成「當時已完成」。
 
 ## 三、統一 Benchmark：兩條路徑，絕不混算
 
