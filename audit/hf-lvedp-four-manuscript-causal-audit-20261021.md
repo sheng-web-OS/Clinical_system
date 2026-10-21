@@ -88,3 +88,42 @@ A = 作者已說清楚，不重述；B = 已有但跨文需連結；C = 證據�
 - [ ] 將四份 Git 原稿與歷史聊天中作者認可版本逐字比對，釐清 `recovery-status-20261021-verified.md` 與 repository originals 的狀態不一致；不改寫原稿。
 - [ ] 以 2–3 個反例（高 LVEDP 正常 EDV、肺鬱血但 CVP 不高、高 CVP 且 creatinine 上升但未必 low CO）盲測新教材是否比「只閱讀四原稿」提高正確因果推論，而不是單純增加篇幅。
 - [ ] 跨篇材料經審閱後才考慮網站發布；本稽核檔本身不是公開文章。
+
+
+## 6. 續查補遺｜靜脈鬱血、壓力量測與研究年代界限（2026-10-21）
+
+性質：**本次追加原研究正文、Table 與 Figure legend 的來源核對**，不是新醫學整合稿、不是人體盲測、也不宣稱已重新取得全部原圖影像。原稿作者的既有內容仍依本文 §1–2 的 A/B/C/D 分類判讀；不將數值再換句話說冒充新發現。
+
+### Mullens 2009（renal venous congestion）｜來源已核對，Figure 圖像仍待目視
+
+完整作者稿：https://pmc.ncbi.nlm.nih.gov/articles/PMC2856960/
+期刊：https://doi.org/10.1016/j.jacc.2008.05.068
+
+- **研究設計**：145 名 advanced ADHF、接受 PAC 指引密集治療患者的觀察研究，LVEF 20 ± 8%；58 人（40%）發生住院期間 creatinine 上升至少 0.3 mg/dL 的 WRF。不是一般 HFpEF、未篩選 AKI 或隨機分配 CVP 目標的試驗。
+- **Table 2／baseline**：WRF vs non-WRF，CVP 18 ± 7 vs 12 ± 6 mmHg（p<0.001）；CI 2.0 ± 0.8 vs 1.8 ± 0.4 L/min/m²（p=0.008）。不能把「WRF」的必要定義說成 CI 更低；原研究恰恰看見較高 CVP 與較高（非較低）CI。
+- **Figure 1 正文／圖說**：以 admission CVP、CI、SBP、PCWP 分層比較 WRF 發生率；CVP 大於 24 mmHg 的受試者 75% 發生 WRF，須加上樣本大小及群組限制，不可製成普遍的 24 mmHg 臨床硬閾值。
+- **Figure 2 正文／圖說**：baseline CVP 之 ROC AUC 0.734（p<0.0001），baseline CI AUC 0.552（p=0.6）；模型辨識能力不是隨機介入療效，也不是 CVP 測到 0.734 即可單獨決定治療。
+- **Figure 3 正文／圖說**：PAC removal 時比較 CVP 分組（8 mmHg）與 CI 分組（2.4 L/min/m²）對 GFR 的關係，error bar 為 95% CI。隨訪 CVP 持續大於 8 mmHg 者 WRF 發生率 51% vs 18%（p=0.01）；不得推論 8 mmHg 是所有人最適用的固定目標。
+- **C bridge 的真正貢獻**：補上 elevated venous back pressure 與器官充血／腎功能之間被只談 forward CO 的模型忽略的生理軸，並將「肺側充盈壓」與「系統靜脈／腎靜脈充血」分開。觀察性關聯、適用族群及干預效果三者必須獨立。
+- **目視驗證狀態**：本次核對原文、Table 2 與 Figure 1/2/3 標題、圖說及相鄰結果段；尚未將 Figure 1/2/3 的原始像素圖像實際開啟逐圖驗證。不能填成 original-image-verified。
+
+### Hemnes 2018（PAWP 與 LVEDP discordance）｜研究定義的時間外推邊界
+
+完整作者稿：https://pmc.ncbi.nlm.nih.gov/articles/PMC6224703/
+期刊：https://doi.org/10.1016/j.chest.2018.08.1033
+對照正式指南：https://doi.org/10.1093/eurheartj/ehac237
+
+- **Table 2／Results**：2,270 位同時右、左心導管患者之 PAWP 與 LVEDP 差異；整體 42% 相差超過 5 mmHg，不能用兩種壓力都是 filling pressure 就直接寫等號。Figure 2 A–D 提示一致性和相關性不是同一回事；整體 R² = 0.36。
+- **研究族群與時間定義**：該文 PH 亞群使用當年 mPAP 至少 25 mmHg 的分類方式；2022 ESC/ERS 改為 resting mPAP >20 mmHg，前毛細血管 PH 還須 PVR >2 WU、PAWP 不高於 15 mmHg。原研究在其 PH 族群中的分類錯誤比例不能直接當成新定義下的誤判比例；如需此數值，應依最新定義重新分析原始資料。
+- **D qualification 的真正增量**：在測量詞彙相似時，須回答資料來自哪個心腔／波形時間點、mean vs instantaneous 定義、甚麼臨床現象改變兩者差距。把分歧比例直接拿來支持所有 HF、所有 PA catheter 或特定處方會外推過度。
+- **目視驗證狀態**：本次核對原文、Figure 2 圖說及 Table 2 文字數據；Figure 2 原圖尚未逐像素讀取，e-Tables 未完整核對。
+
+### 來源身份錯誤的負例（正式納入 Agent 回歸題）
+
+本次搜尋「CVP vs eGFR figure」所得一張第三方投影片，實際引用的是 **Damman et al., JACC 2009;53:582–588**，並非 **Mullens et al., JACC 2009;53:589–596**。兩篇同屬心腎血行動力學、刊登頁次相鄰，但研究不同。不得因圖片在主題上相符，就誤配成 Mullens Figure 3；要以 DOI、第一作者、正式期刊圖號／圖說或原文 Figure link 核驗 provenance。
+
+此失敗案例並非證明「圖片已查核」，而是說明：**圖像搜尋命中 ≠ 原文圖像身分成立；可讀圖說 ≠ 已親眼看圖；相關機轉一致 ≠ 可互換研究及樣本。**
+
+### 發布與下一次實驗的門檻
+
+原稿與本段只供來源回查；HF 跨篇 C／D 精修仍需完成必要原圖視覺稽核（Mullens Figures 1–3、Hemnes Figure 2、Borlaug 2019 Figures 1–2）及來源適用性檢查後，才可能將此子論點標記為 figure-audited。增量有效性另需以只讀四篇原稿 vs. 原稿加經核對橋樑的反事實題，分開評估：是否真的補上必要解釋、還是延長閱讀而未改變決策。**暫不將此 audit 升格為公開教材。**
