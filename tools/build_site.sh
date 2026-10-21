@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 python -m pip install --disable-pip-version-check -r requirements.txt
+python -m unittest discover -s tests
 python tools/validate.py
 python tools/check_corpus_inventory.py
 python site/build.py
