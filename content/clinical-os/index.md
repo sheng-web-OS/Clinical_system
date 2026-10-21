@@ -1,6 +1,8 @@
-# 臨床知識脈絡｜從作者原文重建共同前提
+# 臨床知識脈絡｜從我的文章追查未說完的前提
 
-這一頁從已提供的文章出發，而不是替作者另造一份主題目錄。2026 年 10 月 21 日的對話已收到 21 篇完整文章；其中 HF、LVEDP、Diuretics、DCM、Acute pancreatitis、Status epilepticus 六篇已寫入原稿庫，另有既存的 HCM 完整原稿。其他十五篇已取得於對話、尚待逐篇原文移轉；以下先用它們的具體論述建立可驗證的跨篇關係，不將文章摘要冒充原作，也不把尚未完成的醫學查核說成已通過。
+我原本為不同的臨床疑問各自寫文章，沒有預期它們會逐漸形成同一套醫學知識體系。重新閱讀這些文章，我想先確認每篇已經建立哪些理解，再找出跨篇真正缺少的因果前提，而不是替自己另造一份專科目錄。2026 年 10 月 21 日的對話已提供 21 篇完整文章，其中 HF、LVEDP、Diuretics、DCM、Acute pancreatitis、Status epilepticus 六篇已寫入原稿庫，另有既存的 HCM 完整原稿；其他十五篇仍待逐篇移轉及核對版本。
+
+**本頁是 Clinical OS 協助整理的跨篇候選脈絡，不是我已逐項審定的新著作。** 以下連結須繼續回查原稿、原始文獻與圖表；不能把 AI 整合推論冒充原文，也不能將尚未完成的醫學查核當成已通過。
 
 ## 先從一個病人的肺水腫開始
 
@@ -16,7 +18,7 @@
 
 ## 下一個已能從原稿看見的問題：診斷尚未完成，什麼可以先做？
 
-作者的〈還不知道是什麼，憑什麼治療〉與〈急性 AF，不一定要立刻結束〉形成一組緊密關係。Wide-complex tachycardia 的 ECG morphology 未必立刻證明 VT／SVT；但若 tachyarrhythmia 正在造成嚴重 hemodynamic instability，處置並不總能等到電生理機轉確診。相反地，AF 已存在也不表示一定要立即恢復 sinus rhythm；先區分 attributable instability、暫時可接受的 ventricular physiology，以及 elective rhythm transition 的 thromboembolic risk。
+我先前寫的〈還不知道是什麼，憑什麼治療〉與〈急性 AF，不一定要立刻結束〉，可以用來檢查一組重要的共同問題。Wide-complex tachycardia 的 ECG morphology 未必立刻證明 VT／SVT；但若 tachyarrhythmia 正在造成嚴重 hemodynamic instability，處置並不總能等到電生理機轉確診。相反地，AF 已存在也不表示一定要立即恢復 sinus rhythm；先區分 attributable instability、暫時可接受的 ventricular physiology，以及 elective rhythm transition 的 thromboembolic risk。
 
 〈Accessory pathway ＆ WPW syndrome〉補上另一層必要條件：AVRT 的 circuit、pre-excited AF 的旁路傳導、以及 AV nodal blockade 在不同 rhythm 中的安全界限。這個系列若只是把 adenosine、cardioversion、procainamide 放在一個「升級用藥表」，便遺失了原文真正建立的決策邊界。
 
@@ -43,7 +45,7 @@ HBV phase 追蹤 virus–host interaction；ALT 僅在某些 injury 形成後才
 - 〈臨床筆記：血管炎〉從血管尺度與器官表現建立初步定位；若有 GCA 視力威脅或 pulmonary–renal syndrome，風險優先順序會先改變，免疫學與組織診斷才逐步補強。此稿屬系列外臨床筆記，來源身分與小麻完稿分開。
 - 〈同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？〉與〈ASD 與 PFO〉可以共同討論：VTE 防的是血栓生成條件，PE／DVT 診斷要定位受累血管，PFO-related stroke 則必須再證明靜脈血栓到體循環的因果路徑；三者不能只憑「有血栓風險」合併推斷。
 
-這些關係來自作者文章的具體推論，**不是按專科標籤自動關聯的知識圖譜**。下一階段逐篇補回原文時，還需分辨哪些連結已被作者充分建立、哪些才是 AI 真正應新增的中介知識。
+這些候選關聯必須回到我的文章逐一核對，**不能只因為同屬一個專科就視為因果相連**。有些關係原稿早已建立，有些是 Clinical OS 提出的新橋接；只有完成來源查核、排除錯誤推論後，後者才有資格成為正式整合教材。
 
 ## 怎樣知道目前真正完成了什麼？
 
@@ -56,4 +58,4 @@ HBV phase 追蹤 virus–host interaction；ALT 僅在某些 injury 形成後才
 
 [原創文章入口](../xiaoma-reading/index.md) · [完整回收狀態](../../audit/xiaoma-reading-recovery.md) · [小麻內科國考](../xiaoma-internal-medicine/index.md)
 
-*這是作者原稿驅動的編輯索引。跨篇觀點由 AI 提出，尚不等於正式文獻審查或個別病人的處置建議。*
+*這一頁以我的歷史原稿為起點，由 Clinical OS 整理候選的跨篇問題與連結。這些 AI 新推論尚不代表我的正式署名認可，也不等於完整文獻審查或個別病人的處置建議。*
