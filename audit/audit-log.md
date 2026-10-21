@@ -18,7 +18,7 @@
 | R3-003 | 病例可能被回溯補造實際穿刺量、RV collapse、引流時間 | Azim 2010 原文與 r2 基線 | 延續原有缺失資料警示；禁止將 ESC 常規倒填個案 | 已核對教材文字 |
 | R3-004 | 3–6 天可能被誤泛化至所有心包填塞 | ESC Recommendation Table 21 | 僅限疑似／確定腫瘤性心包積液，標註 I/B | 已核對 |
 | R3-005 | 圖文版權／不能保證鏡像可用 | ESC 出版使用條款、原有外部圖 | 只連結原文而不在站點直接重製；外部資源不計為已本地保存 | 已納入發布範圍 |
-| R3-006 | 網站能構建 ≠ GitHub Pages 已真正公開／載入 | GitHub Actions/Pages | 將 CI、發布環境、實際站點存取分別驗收 | 需遠端工作流程及站點確認 |
+| R3-006 | 網站能構建 ≠ GitHub Pages 已真正公開／載入 | GitHub Actions/Pages | 將 CI、發布環境、實際站點存取分別驗收 | 首次 Actions 的 build、校驗與 artifact 上傳成功；deploy 遭 GitHub Pages API 404（未啟用 Pages 或未配置可用）。需啟用 Pages 並再次遠端驗收 |
 
 ## 重要主張的 Traceability（最小可重建證據）
 
@@ -40,3 +40,8 @@
 **網站結構**：以 CI 檢查內容、連結路徑、Figure 12 核對檔與內容存在；真正網站上線須由 GitHub Pages 服務回報部署成功，並以 HTTPS 存取確認。開發端工具的文字輸出，不足以證明公開站已可閱讀。
 
 **未解問題**：原始 ESC Figure 12 兩種門檻符號的內部差異屬 upstream ambiguity；採明示處理，不臆測修正版。若後續發現 ESC erratum，應重新核對原圖與受影響教學章節。
+
+
+## 技術驗證補遺（2026-10-21）
+
+GitHub Actions run [#1](https://github.com/sheng-web-OS/Clinical_system/actions/runs/39522812463) 的 build 工作已成功，並產生 `github-pages` 發行檔；然而 deploy 顯示 **404 Not Found / Ensure GitHub Pages has been enabled**。發行狀態因此為 **build passed / deployment blocked**，不是 published。網站採靜態 Markdown 編譯，並已新增產出 HTML 的路徑驗證，以防原先 Markdown 相對連結在 HTML 根目錄失效。Figure 12 與 Table 17 已重新檢視原 PDF 頁面圖像；Table 12／21 僅能宣稱文本核對。

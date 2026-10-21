@@ -2,7 +2,7 @@
 
 資料來源：Schulz-Menger J, et al. 2025 ESC Guidelines for the management of myocarditis and pericarditis. Eur Heart J 2025;46:3952–4041. DOI [10.1093/eurheartj/ehaf192](https://doi.org/10.1093/eurheartj/ehaf192)。
 
-本次方法：閱讀原指南 PDF 的 Figure 12 **原圖**（印刷頁 26），並對照 PDF 所載 Recommendation Table 12（印刷頁 43）、Recommendation Table 21（印刷頁 58）、Table 17（印刷頁 62）和相關 §6.3.2.1、§11.8.3 正文。Figure 12 已實際檢視頁面影像；Table 12／21 已以 PDF 全文擷取與期刊正文交叉核對，並未取得該兩頁的可靠截圖，因此不宣稱完成它們的像素層級核對。
+本次方法：閱讀原指南 PDF 的 Figure 12 **原圖**（印刷頁 26），並對照 PDF 所載 Recommendation Table 12（印刷頁 43）、Recommendation Table 21（印刷頁 58）、Table 17（印刷頁 62）和相關 §6.3.2.1、§11.8.3 正文。Figure 12 與 Table 17 已實際檢視 PDF 原頁影像；Table 12／21 已以 PDF 全文文字擷取和對應欄位交叉核對，並未取得該兩頁的可靠截圖，因此不宣稱完成它們的像素層級核對。
 
 **原始來源**：[ESC 官方指南入口](https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/myocarditis-and-pericarditis) · [期刊 DOI](https://doi.org/10.1093/eurheartj/ehaf192) · [PDF 26 頁](https://www.myocarditisfoundation.org/wp-content/uploads/2025/09/ehaf192.pdf#page=26) · [PDF 43 頁](https://www.myocarditisfoundation.org/wp-content/uploads/2025/09/ehaf192.pdf#page=43) · [PDF 58 頁](https://www.myocarditisfoundation.org/wp-content/uploads/2025/09/ehaf192.pdf#page=58) · [PDF 62 頁](https://www.myocarditisfoundation.org/wp-content/uploads/2025/09/ehaf192.pdf#page=62)。
 
@@ -12,7 +12,7 @@
 | ESC-F12-B | Figure 12，印刷頁 26；§6.3.2.1 | 流程框標示 score ≥6；圖註與正文為 >6；圖註要求至少兩類 | **原指南內部門檻符號不一致**；不得自行消去差異，也不能取代不穩定病人的立即引流判斷 | 已標示來源歧異 |
 | ESC-R12-A | Recommendation Table 12，印刷頁 43 | 經皮引流在 tamponade 等條件為 I/C；無法經皮或膿性積液時外科引流 I/C | 病人族群與手術條件不得省略 | 通過（文字核對） |
 | ESC-R21-A | Recommendation Table 21，印刷頁 58 | 疑似／確定腫瘤性積液 extended drainage 3–6 days：I/B；細胞學、全身性治療 I/C | **不是所有類型的 tamponade 都必須留置 3–6 天** | 通過（文字核對） |
-| ESC-T17-A | Table 17，印刷頁 62 | RA collapse 50–100%／33–100%；RV collapse 48–100%／72–100%；IVC plethora 97%／40% | 檢查效能因族群與定義而異，不應單項替代整體臨床診斷 | 通過（原表文字） |
+| ESC-T17-A | Table 17，印刷頁 62（原頁影像已檢視） | RA collapse 50–100%／33–100%；RV collapse 48–100%／72–100%；IVC plethora 97%／40% | 檢查效能因族群與定義而異，不應單項替代整體臨床診斷 | 通過（原表文字） |
 | ESC-T17-B | Table 17，印刷頁 62 | Mitral、tricuspid Doppler E-wave 各有呼吸變異門檻，但原表未提供 sensitivity／specificity | 不可把 n.a. 推估為零或 100% | 通過 |
 | ESC-118-A | §11.8.3，印刷頁 63 | 不穩定 tamponade 應 without delay 引流；必要時依情境選外科；避免 PPV、利尿，短期補液可能有幫助 | 不能將補液誤寫成 definitive treatment | 通過 |
 

@@ -23,7 +23,7 @@ Actions → Python validators
      ↓
 Markdown 轉靜態 HTML、建立搜尋索引
      ↓
-GitHub Pages 部署（需帳戶支援且 Pages Source 設為 GitHub Actions）
+GitHub Pages 部署（需帳戶支援且 Pages Source 設為 GitHub Actions；目前首次部署 API 404，請開啟 [Settings → Pages](https://github.com/sheng-web-OS/Clinical_system/settings/pages) 啟用）
 \`\`\`
 
 預期 GitHub Pages 路徑：\`https://sheng-web-OS.github.io/Clinical_system/\`。**這只是預期 URL；必須實際部署與 HTTPS 確認，才可宣稱網站可訪問。** 注意此儲存庫目前為 private；是否允許 private repository 啟用 Pages，取決於 GitHub 帳號方案與 Pages 設定，且 Pages 網址本身可能公開。
@@ -40,3 +40,6 @@ python -m http.server --directory dist 8000
 教材編輯時請維持病例事實、指南條件、機轉推理與個別行動建議的清楚區分。改變核心機轉時，才按需檢索相關章節、臨時重建依賴並再審查，不強制持續維護全域主張圖譜。
 
 本網站供專業醫學學習，並非個別病患診療建議；未宣稱已經真人專科審查。
+
+
+**2026-10-21 發布阻擋**：初次 GitHub Actions [#1](https://github.com/sheng-web-OS/Clinical_system/actions/runs/39522812463) 成功產生站點 HTML，但 Pages 部署回傳 404。需由儲存庫擁有者在 [Settings / Pages](https://github.com/sheng-web-OS/Clinical_system/settings/pages) 開啟 Pages 並將 source 選為 GitHub Actions。此私人儲存庫在目前方案是否允許 Pages 需依介面實際顯示確認；不要為了部署擅自改為 public。
