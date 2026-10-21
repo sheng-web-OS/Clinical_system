@@ -116,3 +116,7 @@
 .case-causal-separator{font-size:1.4rem;font-weight:800;color:var(--brand)}
 .case-causal-map figcaption{grid-column:1/-1;color:var(--muted);font-size:.78rem;line-height:1.65;margin-top:.3rem}
 @media(max-width:720px){.case-sequence{padding:1rem;border-radius:13px}.case-step-header{flex-wrap:wrap}.case-causal-map{grid-template-columns:1fr}.case-causal-separator{text-align:center}.case-causal-node{min-height:0}}
+
+/* Editorial preview, never a publication certificate. */
+.preview-ribbon{background:#fff7e9;border:1px solid #e4c58e;color:#67431c;padding:13px 16px;border-radius:10px;font-size:13px;line-height:1.7;margin:16px 0 24px;font-weight:650}
+@media(max-width:640px){.preview-ribbon{padding:11px 12px;margin:12px 0 18px;font-size:12px}}
