@@ -9,7 +9,7 @@
 - 出版目錄：`site/pages.json`，每份新教材新增一項。編譯後入口教材卡片、導覽與全文搜尋自動引用相同清單，無需逐日修改編譯器或發行檔檢查器。
 - 私人原始計畫：`archive/xiaoma-internal-medicine/plan-20261021.md`，與原交付檔案 bytes 相同；包含個人時程與執行紀錄，不可列入公開目錄。後續個人學習回覆同樣只保留在私人來源或對話。
 
-**來源擴展：** 舊文補充與新教材均遵循 [Pocket Medicine × IBCC 按需證據補強](xiaoma-evidence-expansion.md)。IBCC 優先用於對題的 bedside physiology／急重症決策，不替代最新原始證據與適用指引；歷史原稿另存，不默默改寫。
+**涵蓋與來源擴展：** 舊文補充與新教材均遵循 [Pocket Medicine × IBCC 按需證據補強](xiaoma-evidence-expansion.md)。有重要急重症後果的主題，**必須獨立完成重症內容涵蓋檢查**，不論原稿是否已易於理解。IBCC 優先作為對題的 bedside physiology／重症管理來源，不替代現行指引與必要原始證據；教學可理解性另行驗收。歷史原稿另存，不默默改寫。
 
 ## 加入下一篇
 
