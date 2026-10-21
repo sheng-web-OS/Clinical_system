@@ -8,6 +8,7 @@
 
 ## 來源與審查
 
+- [Clinical OS 跨篇知識脈絡](content/clinical-os/index.md)：將實際已典藏原文、已出版教材與待驗證的跨篇因果路線分開呈現，串起 HCM、LVEDP、HF、利尿劑與重症等問題。
 - [Tamponade 完整教材](content/tamponade.md)：既有八個教學單元、2025 ESC 原始圖表對讀、反事實推理。
 - [正文品質契約（EPQC）](docs/editorial-prose-quality-contract.md)：以原創 HCM／ACS 的認知推進作標竿，規範概念解混、機轉推導、審稿退稿與實際對標驗證。
 - [小麻閱讀完稿](content/xiaoma-reading/index.md)：以往文章原文與獨立來源核對；目前完整取回 HCM 一篇，其餘歷史線索尚待全文。
@@ -15,6 +16,8 @@
 - [2025 ESC 圖表核對](audit/esc2025-figure-check.md)：Figure 12、Table 17、Recommendation Tables 12／21。
 - [可追溯審查](audit/audit-log.md)：版本、證據、已知歧義與驗收限制。
 - [歷史原稿](archive/tamponade_r2_baseline.md)：原材料封存，不再當作正式編輯來源。
+
+小麻閱讀原稿目前實際完整回收 **HCM 一篇**；約 21 篇歷史小麻文章是待清查的候選範圍，不以對話摘要、片段或主題線索冒充全文。跨篇知識脈絡頁是可公開的編輯導航，並不表示 LVEDP／HF／利尿劑／DCM 的原文反向驗證已完成。
 
 小麻內科國考的個人時程原檔保留在私人 `archive/xiaoma-internal-medicine/`，公開入口只發布教材與去除個人行程的學習路線。後續新增方式見 [小麻教材發布](docs/xiaoma-publishing.md)；出版目錄為 `site/pages.json`。
 
