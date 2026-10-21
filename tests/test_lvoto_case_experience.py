@@ -25,7 +25,7 @@ class LVOTOCasePilot(unittest.TestCase):
                 self.assertIn(fact, interactive)
                 self.assertIn(fact, static)
         self.assertIn("不是原病例", interactive)
-        self.assertIn("不是原病例", static)
+        self.assertIn("非原病例", static)
 
     def test_case_stages_have_consistent_answer_keys(self):
         text = INTERACTIVE.read_text(encoding="utf-8")
