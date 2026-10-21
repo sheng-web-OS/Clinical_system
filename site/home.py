@@ -17,7 +17,7 @@ def _card(page, collection, label, cue, featured=False):
     </a>'''
 
 
-def render_home(pages):
+def render_home(pages, *, preview=False):
     """Build the discovery view using the same explicit publication whitelist."""
     originals = [p for p in pages if p.get("kind") == "historical_original"]
     lessons = [p for p in pages if p.get("collection") == "xiaoma-internal-medicine" and p.get("date")]
@@ -27,22 +27,24 @@ def render_home(pages):
     for p in sorted(lessons, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "medicine", "內科國考 · 持續更新", "從臨床問題開始"))
     if not cards:
-        raise ValueError("Library homepage cannot be empty")
+        raise ValueError("Reader preview has no article candidates")
     listing = "\n".join(cards)
 
+    preview_meta = '<meta name="robots" content="noindex,nofollow">' if preview else ''
+    preview_banner = '<aside class="preview-ribbon" role="note">編輯審查預覽｜以下作品尚未通過正式公開驗收，僅供審查內容、圖表及閱讀體驗。</aside>' if preview else ''
     return f'''<!doctype html><html lang="zh-Hant"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">{preview_meta}
 <meta name="description" content="小麻閱讀與 Clinical System：把醫學知識連成能用的臨床判斷。">
 <title>小麻閱讀 · Clinical System</title>
 <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="home.css">
 </head><body class="reader-page library-page">
 <a class="skip-link" href="#main">跳到主要內容</a>
 <header class="library-header">
-  <a class="library-logo" href="index.html" aria-label="小麻閱讀首頁"><span class="library-logo-mark" aria-hidden="true">小</span><span>小麻閱讀<small>CLINICAL SYSTEM</small></span></a>
+  <a class="library-logo" href="index.html" aria-label="小麻閱讀首頁"><span class="library-logo-mark" aria-hidden="true">小</span><span>小麻閱讀<small>MEDICAL READING</small></span></a>
   <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a><a href="xiaoma-plan.html">學習路線</a></nav>
   <button class="library-theme" id="theme" aria-label="切換明暗主題" title="切換主題">◐</button>
 </header>
-<main class="library-wrap" id="main">
+<main class="library-wrap" id="main">{preview_banner}
   <section class="library-hero" aria-labelledby="library-title">
     <p class="library-kicker"><span aria-hidden="true" class="library-kicker-mark"></span> 小麻閱讀 <span>／</span> 醫學知識圖書館</p>
     <h1 id="library-title">把醫學，讀成<br><em>能用的判斷。</em></h1>
@@ -69,7 +71,7 @@ def render_home(pages):
     </div>
   </section>
   <section class="library-section" id="articles" aria-labelledby="articles-heading">
-    <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>已公開的完整教材與文章</p></div>
+    <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>候選文章與醫學教材</p></div>
     <div class="library-filters" role="group" aria-label="篩選文章">
        <button class="is-active" data-library-filter="all" aria-pressed="true">全部文章</button>
        <button data-library-filter="original" aria-pressed="false">小麻原稿</button>
