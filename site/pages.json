@@ -13,7 +13,6 @@
     "collection": "clinical-os",
     "layout": "reader",
     "section": "知識導覽",
-    "references": "xiaoma-reading-recovery.html",
     "navigation": false
   },
   {
@@ -38,13 +37,6 @@
     "layout": "reading-original"
   },
   {
-    "source": "audit/xiaoma-reading-recovery.md",
-    "output": "xiaoma-reading-recovery.html",
-    "title": "小麻原稿回收核對",
-    "subtitle": "原文、版本、搜尋範圍與尚未取回的文章",
-    "navigation": false
-  },
-  {
     "source": "content/xiaoma-internal-medicine/index.md",
     "output": "xiaoma-internal-medicine.html",
     "title": "小麻內科國考",
@@ -66,18 +58,6 @@
     "section": "胸腔與重症"
   },
   {
-    "source": "audit/esc2025-figure-check.md",
-    "output": "esc-audit.html",
-    "title": "2025 ESC 原圖對讀",
-    "subtitle": "原始圖表、推薦層級與文件內部歧異"
-  },
-  {
-    "source": "audit/audit-log.md",
-    "output": "audit-log.html",
-    "title": "可追溯審查",
-    "subtitle": "檔案、主張、來源與發布驗收"
-  },
-  {
     "source": "content/xiaoma-internal-medicine/sources.md",
     "output": "xiaoma-sources.html",
     "title": "低血氧：來源與查核",
@@ -88,7 +68,7 @@
     "section": "參考資料"
   },
   {
-    "source": "content/xiaoma-internal-medicine/plan.md",
+    "source": "content/xiaoma-internal-medicine/reading-path.md",
     "output": "xiaoma-plan.html",
     "title": "閱讀路線與章節對照",
     "subtitle": "依重要度推進，依實際理解調整。",
