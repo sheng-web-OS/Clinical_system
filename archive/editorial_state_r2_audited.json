@@ -1,0 +1,1000 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "project_id": "tamponade-sepsis-v5-20261020",
+    "scope": "文獻病例完整導讀＋編輯流程可行性",
+    "revision": "r2",
+    "release_status": "revised",
+    "next_action": "獨立審查者重查R1-001/002/003",
+    "protected": [
+      "原Clinical OS",
+      "既有發布教材",
+      "v4.12來源原檔"
+    ],
+    "draft_sha256": "0066f37e546134d83027ca74469cd233f017b09e39974846c0efa1905cdcadea",
+    "material_path": "03_Tamponade_Learning_Material.md",
+    "snapshot_path": "Tamponade_r1.snapshot.md",
+    "snapshot_original_review_path": "snapshots/Tamponade_r1.md",
+    "material_sha256": "362a8698e33506eb74fa41398ac82fce60384b81d80ad3c11089d48ef434b0ab"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Azim et al. 2010. Cardiac tamponade mimicking septic shock diagnosed by early echocardiography",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2938519/",
+      "version": "Azim et al. 2010. Cardiac tamponade mimicking septic shock diagnosed by early echocardiography",
+      "accessed_at": "2026-10-20",
+      "access_scope": "full_text_xml",
+      "locator": "Europe PMC原文XML /article/body/p[1..11]（含問候語）；References為原文書目",
+      "doi": "10.4103/0974-2700.66534",
+      "limitations": [
+        "原文短報缺患者影像、輸液總量、升壓劑名、穿刺量及精確分鐘"
+      ],
+      "locator_basis": "XPath按原XML body直屬p編號，p[1]為Sir；不使用另編段落分組",
+      "raw_xml_path": "evidence/Source1_Case_Original.xml"
+    },
+    {
+      "id": "S2",
+      "title": "2025 ESC Guidelines for the management of myocarditis and pericarditis",
+      "url": "https://doi.org/10.1093/eurheartj/ehaf192",
+      "version": "2025 ESC Guidelines for the management of myocarditis and pericarditis",
+      "accessed_at": "2026-10-20",
+      "access_scope": "selected_sections_and_visual_tables",
+      "locator": "§6.3.2.1, Recommendation Table 12 (PDF p.42-43); §11.2/Table21 p.58; §11.5 p.60; §11.8/Table17 p.62-63",
+      "doi": "10.1093/eurheartj/ehaf192",
+      "limitations": [
+        "期刊頁面受限；閱讀原指南 PDF 的 Myocarditis Foundation 鏡像；未讀整份90頁或所有證據表"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Surviving Sepsis Campaign Adult Guidelines 2026",
+      "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "version": "Surviving Sepsis Campaign Adult Guidelines 2026",
+      "accessed_at": "2026-10-20",
+      "access_scope": "official_recommendations_selected",
+      "locator": "Fluid resuscitation; Antibiotic initiation; Antimicrobial therapy; Resuscitation; Vasopressors",
+      "doi": "10.1007/s00134-026-08361-1",
+      "limitations": [
+        "未讀期刊完整論證；沒有對本病人給具體劑量"
+      ],
+      "additional_audit_checks": [
+        {
+          "actor": "獨立AI審查者",
+          "url": "https://doi.org/10.1007/s00134-026-08410-9",
+          "scope": "姓名排版更正，未修改本題臨床推薦"
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "ESICM guidelines on circulatory shock and hemodynamic monitoring 2025",
+      "url": "https://doi.org/10.1007/s00134-025-08137-z",
+      "version": "ESICM guidelines on circulatory shock and hemodynamic monitoring 2025",
+      "accessed_at": "2026-10-20",
+      "access_scope": "author_repository_abstract_and_society_visual_abstract",
+      "locator": "UCL abstract; ESICM visual abstract page1",
+      "doi": "10.1007/s00134-025-08137-z",
+      "limitations": [
+        "未讀期刊全文；UCL全文目前明示embargo，未下載"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "Sagristà-Sauleda et al. 2008. Hemodynamic effects of volume expansion in patients with cardiac tamponade",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18332261/",
+      "version": "Sagristà-Sauleda et al. 2008. Hemodynamic effects of volume expansion in patients with cardiac tamponade",
+      "accessed_at": "2026-10-20",
+      "access_scope": "abstract",
+      "locator": "Methods and results; Conclusions",
+      "doi": "10.1161/CIRCULATIONAHA.107.737841",
+      "limitations": [
+        "未取得全文；非隨機存活終點比較；49人只有10人原本低血壓"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "Mercé et al. 1999. Correlation between clinical and Doppler echocardiographic findings",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10502224/",
+      "version": "Mercé et al. 1999. Correlation between clinical and Doppler echocardiographic findings",
+      "accessed_at": "2026-10-20",
+      "access_scope": "abstract",
+      "locator": "Methods; Results; diagnostic standard definition",
+      "doi": "10.1016/S0002-8703(99)70193-6",
+      "limitations": [
+        "未取得全文；臨床表現為比較標準，不能視為完美獨立金標準"
+      ]
+    },
+    {
+      "id": "S7",
+      "title": "Klein et al. 2024. Pericardial Diseases: International Position Statement on Multimodality Cardiac Imaging",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12156183/",
+      "version": "Klein et al. 2024. Pericardial Diseases: International Position Statement on Multimodality Cardiac Imaging",
+      "accessed_at": "2026-10-20",
+      "access_scope": "selected_sections_and_figure",
+      "locator": "Pericardial effusion and cardiac tamponade; Table12-13; Figure20 and caption",
+      "doi": "10.1016/j.jcmg.2024.04.010",
+      "limitations": [
+        "文獻圖不是本例影像；未讀整篇所有主題"
+      ]
+    },
+    {
+      "id": "S8",
+      "title": "Nelson et al. 2023. Pericardial decompression syndrome with acute right ventricular failure: a case series",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319428/",
+      "version": "Nelson et al. 2023. Pericardial decompression syndrome with acute right ventricular failure: a case series",
+      "accessed_at": "2026-10-20",
+      "access_scope": "xml_abstract_introduction_discussion",
+      "locator": "abstract; introduction; discussion",
+      "doi": "10.1093/ehjcr/ytad275",
+      "limitations": [
+        "兩例病例系列，不能估發生率或確立最優引流量／速度"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "kind": "case_fact",
+      "statement": "45歲女性，發燒乾咳，100°F，HR140/min，RR30-32/min，肢冷，最初血壓無法量得。",
+      "source_refs": [
+        {
+          "source_id": "S1",
+          "locator": "/article/body/p[3]–p[4]；We hereby report／On examination"
+        }
+      ],
+      "scope": "原病例初診",
+      "certainty": "source_supported",
+      "risk": "moderate",
+      "status": "verified"
+    },
+    {
+      "id": "C02",
+      "kind": "case_fact",
+      "statement": "ICU invasive BP80/40mmHg、CVP16mmHg，HCO3 9.2mEq/L、ScvO2 55%、lactate9mmol/L；停液開始vasopressors。",
+      "source_refs": [
+        {
+          "source_id": "S1",
+          "locator": "/article/body/p[4]；On examination，含ICU測量及停液／vasopressors"
+        }
+      ],
+      "scope": "原病例ICU；未記總輸液量或藥名",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "C03",
+      "kind": "case_fact",
+      "statement": "TTE估計積液約1000mL；立即穿刺後明顯改善；未報實際抽出量或典型collapse。",
+      "source_refs": [
+        {
+          "source_id": "S1",
+          "locator": "/article/body/p[5]；Chest radiograph，TTE估量及穿刺反應"
+        }
+      ],
+      "scope": "原病例；估量非抽出量",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "C04",
+      "kind": "case_fact",
+      "statement": "血性無菌心包液含惡性細胞；後續卵巢原發；引流後LV正常且殘液8/6/7mm；之後停抗生素。",
+      "source_refs": [
+        {
+          "source_id": "S1",
+          "locator": "/article/body/p[5]–p[6]；Chest radiograph／Repeat TTE；惡性細胞、複查與卵巢原發"
+        }
+      ],
+      "scope": "病因與複查是後續資訊",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "C05",
+      "kind": "unknown",
+      "statement": "原病例未載升壓劑種類／劑量、輸液總量、插管、穿刺量／速度、RA/RVcollapse原始影像。",
+      "source_refs": [
+        {
+          "source_id": "S1",
+          "locator": "/article/body/p[1..11]全文；上述資訊未載"
+        }
+      ],
+      "scope": "缺項限制回溯醫囑／操作評價",
+      "certainty": "explicitly_unreported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "M01",
+      "kind": "mechanism",
+      "statement": "跨壁壓約為腔內壓減心包外壓；CVP高仍可能有效充盈受限。",
+      "source_refs": [
+        {
+          "source_id": "S7",
+          "locator": "PEff and CTP physiology"
+        }
+      ],
+      "scope": "簡化生理模型，不由CVP反推心包壓或總血容量",
+      "certainty": "source_supported",
+      "risk": "moderate",
+      "status": "verified"
+    },
+    {
+      "id": "M02",
+      "kind": "mechanism",
+      "statement": "心包壓容關係非線性；積液速度、分布、順應性影響壓迫，積液量不能獨立定義tamponade。",
+      "source_refs": [
+        {
+          "source_id": "S2",
+          "locator": "§11.8.1"
+        },
+        {
+          "source_id": "S7",
+          "locator": "PEff and CTP physiology"
+        }
+      ],
+      "scope": "一般機轉，不倒推本例累積時間",
+      "certainty": "source_supported",
+      "risk": "moderate",
+      "status": "verified"
+    },
+    {
+      "id": "M03",
+      "kind": "mechanism",
+      "statement": "收縮比例保留仍可能因舒張充盈受限而每搏輸出不足；EF不是充分的休克評估。",
+      "source_refs": [
+        {
+          "source_id": "S7",
+          "locator": "PEff and CTP physiology"
+        },
+        {
+          "source_id": "S4",
+          "locator": "abstract echocardiography"
+        }
+      ],
+      "scope": "生理模型",
+      "certainty": "source_supported",
+      "risk": "moderate",
+      "status": "verified"
+    },
+    {
+      "id": "M04",
+      "kind": "mechanism",
+      "statement": "RA inversion與RVcollapse需辨相位；RA可見於心室收縮早期，RV在舒張期；不能單項確診排除。",
+      "source_refs": [
+        {
+          "source_id": "S7",
+          "locator": "TTE; Figure20"
+        },
+        {
+          "source_id": "S6",
+          "locator": "Results"
+        }
+      ],
+      "scope": "實際ECG及動態影像對時；本例未提供原始徵象",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "M05",
+      "kind": "mechanism",
+      "statement": "Doppler呼吸變異需通氣背景；2024共識mitral>30%/tricuspid>60%；ESC表17分別>25-30%/>40-60%。",
+      "source_refs": [
+        {
+          "source_id": "S7",
+          "locator": "TTE"
+        },
+        {
+          "source_id": "S2",
+          "locator": "Table17 p.62"
+        }
+      ],
+      "scope": "支持徵象，非單獨引流門檻",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "M06",
+      "kind": "editorial_inference",
+      "statement": "Lactate與ScvO2反映灌流／代謝及供需訊號；不能各自確定感染或直接當CO測量。",
+      "source_refs": [
+        {
+          "source_id": "S4",
+          "locator": "abstract and visual abstract"
+        },
+        {
+          "source_id": "S3",
+          "locator": "Biomarkers; Blood lactate"
+        }
+      ],
+      "scope": "本例嚴重度解讀；定性推導",
+      "certainty": "source_supported",
+      "risk": "moderate",
+      "status": "verified"
+    },
+    {
+      "id": "G01",
+      "kind": "guideline",
+      "statement": "Tamponade影像導引pericardiocentesis為ESC2025 ClassI LOEC；不穩定患者不延誤引流。",
+      "source_refs": [
+        {
+          "source_id": "S2",
+          "locator": "Table12; §11.8.3"
+        }
+      ],
+      "scope": "臨床不穩定tamponade，由有能力團隊執行",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "G02",
+      "kind": "guideline",
+      "statement": "Tamponade宜避免正壓機械通氣及利尿；暫時補液可協助等待引流。",
+      "source_refs": [
+        {
+          "source_id": "S2",
+          "locator": "§11.8.3"
+        }
+      ],
+      "scope": "避免不是無法氧合／保護氣道時的絕對禁令；橋接不取代引流",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "G03",
+      "kind": "guideline",
+      "statement": "經皮不可行或膿性積液建議外科引流ClassI LOEC；出血來源／血塊可能改變路徑。",
+      "source_refs": [
+        {
+          "source_id": "S2",
+          "locator": "Table12; §11.8.3"
+        }
+      ],
+      "scope": "不是所有出血性惡性積液均需相同手術",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "G04",
+      "kind": "guideline",
+      "statement": "疑似／確定惡性心包積液延長引流3-6天ClassI LOEB；確認細胞學與抗腫瘤治療各有推薦。",
+      "source_refs": [
+        {
+          "source_id": "S2",
+          "locator": "§11.2; Table21"
+        }
+      ],
+      "scope": "與原病例實際引流天數分開",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "G05",
+      "kind": "guideline",
+      "statement": "Sepsis-induced hypoperfusion或septic shock初3hr至少30mL/kg crystalloid為conditional、low certainty，需個別背景與反覆評估。",
+      "source_refs": [
+        {
+          "source_id": "S3",
+          "locator": "Fluid resuscitation"
+        }
+      ],
+      "scope": "不能把適用對象移植為所有未分型休克的固定程序",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "G06",
+      "kind": "guideline",
+      "statement": "Possible/probable/definite septic shock抗菌藥立即、理想辨識後1hr；strong、very low certainty。",
+      "source_refs": [
+        {
+          "source_id": "S3",
+          "locator": "Antibiotic initiation"
+        }
+      ],
+      "scope": "感染仍可能時並行處理；不等培養才治療",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "G07",
+      "kind": "guideline",
+      "statement": "SSC2026 septic shock：NE優於dopamine為strong/high；優於epinephrine或selepressin為strong/low；優於vasopressin為conditional/low；優於angiotensinII為conditional/very low。",
+      "source_refs": [
+        {
+          "source_id": "S3",
+          "locator": "官方Vasopressors：NE vs dopamine/epinephrine/selepressin；NE vs vasopressin/angiotensinII"
+        }
+      ],
+      "scope": "每個比較保留自己的GRADE強度／certainty；不是tamponade專屬推薦",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified",
+      "recommendation_comparisons": [
+        {
+          "comparator": "dopamine",
+          "strength": "strong",
+          "certainty": "high"
+        },
+        {
+          "comparator": "epinephrine",
+          "strength": "strong",
+          "certainty": "low"
+        },
+        {
+          "comparator": "selepressin",
+          "strength": "strong",
+          "certainty": "low"
+        },
+        {
+          "comparator": "vasopressin",
+          "strength": "conditional",
+          "certainty": "low"
+        },
+        {
+          "comparator": "angiotensin II",
+          "strength": "conditional",
+          "certainty": "very low"
+        }
+      ]
+    },
+    {
+      "id": "G08",
+      "kind": "guideline",
+      "statement": "未確認感染且替代原因證實或強烈懷疑時，重評並停不需要的經驗性抗菌藥。",
+      "source_refs": [
+        {
+          "source_id": "S3",
+          "locator": "Antimicrobial therapy"
+        }
+      ],
+      "scope": "不能以心包液無菌單一結果停藥",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "G09",
+      "kind": "guideline",
+      "statement": "Echocardiography被建議作休克分型第一線影像；CVP不宜預設為單一復甦目標。",
+      "source_refs": [
+        {
+          "source_id": "S4",
+          "locator": "author abstract; society visual abstract"
+        }
+      ],
+      "scope": "成人重症休克；不是以一個CVP門檻決定是否補液",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "E01",
+      "kind": "study_result",
+      "statement": "49人500mL NS/10min後CI>10%增加47%、不變22%、下降31%；只有10人原來低血壓。",
+      "source_refs": [
+        {
+          "source_id": "S5",
+          "locator": "Methods and results"
+        }
+      ],
+      "scope": "研究方案非固定醫囑；非嚴重休克存活比較",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "E02",
+      "kind": "study_result",
+      "statement": "110人前瞻性系列：臨床tamponade10%無collapse；非臨床tamponade34%仍collapse。",
+      "source_refs": [
+        {
+          "source_id": "S6",
+          "locator": "Methods; Results"
+        }
+      ],
+      "scope": "中大量積液族群、臨床比較標準，不外推固定診斷效能",
+      "certainty": "source_supported",
+      "risk": "moderate",
+      "status": "verified"
+    },
+    {
+      "id": "I01",
+      "kind": "editorial_inference",
+      "statement": "感染病因與阻塞機轉可共存；解除壓迫與感染治療可並行。",
+      "source_refs": [
+        {
+          "source_id": "S2",
+          "locator": "§11.5; §11.8"
+        },
+        {
+          "source_id": "S3",
+          "locator": "Antibiotic initiation"
+        }
+      ],
+      "scope": "不是sepsis與tamponade互斥分類",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "I02",
+      "kind": "editorial_inference",
+      "statement": "引流後改善支持壓迫是重要機轉；不能由時間反應證明完全沒有感染或推算CO增量。",
+      "source_refs": [
+        {
+          "source_id": "S1",
+          "locator": "/article/body/p[5]；Immediate pericardiocentesis was followed by clinical improvement"
+        },
+        {
+          "source_id": "S7",
+          "locator": "CTP physiology"
+        }
+      ],
+      "scope": "回溯推導，不是控制性因果試驗",
+      "certainty": "source_supported",
+      "risk": "moderate",
+      "status": "verified"
+    },
+    {
+      "id": "G10",
+      "kind": "guideline",
+      "statement": "ESC提醒控制引流以降低decompression syndrome風險，可留置導管後續引流。",
+      "source_refs": [
+        {
+          "source_id": "S2",
+          "locator": "§6.3.2.1，PDF p.43左欄（原PDF第43頁；非0-based pageno）"
+        }
+      ],
+      "scope": "不延誤緊急解除壓迫；不是本例實際速度",
+      "certainty": "source_supported",
+      "risk": "high",
+      "status": "verified"
+    },
+    {
+      "id": "E03",
+      "kind": "study_result",
+      "statement": "PDS可在引流後以心室衰竭或肺水腫惡化；兩例系列支持RV急性擴張為可能機轉之一。",
+      "source_refs": [
+        {
+          "source_id": "S8",
+          "locator": "abstract; introduction; discussion"
+        }
+      ],
+      "scope": "診斷需排除其他原因；機轉未完全確立，不能估發生率",
+      "certainty": "limited_case_series",
+      "risk": "moderate",
+      "status": "verified"
+    }
+  ],
+  "relations": [
+    {
+      "from": "pericardial_pressure",
+      "type": "causal",
+      "to": "restricted_filling",
+      "supporting_claims": [
+        "M01",
+        "M02"
+      ],
+      "boundary": "概念模型，非患者心包壓測量"
+    },
+    {
+      "from": "restricted_filling",
+      "type": "causal",
+      "to": "low_stroke_volume",
+      "supporting_claims": [
+        "M03"
+      ],
+      "boundary": "收縮比例可保留"
+    },
+    {
+      "from": "venous_pressure",
+      "type": "measurement",
+      "to": "right_atrial_pressure",
+      "supporting_claims": [
+        "M01",
+        "G09"
+      ],
+      "boundary": "不是總血容量或跨壁壓本身"
+    },
+    {
+      "from": "echo_findings",
+      "type": "support",
+      "to": "tamponade_assessment",
+      "supporting_claims": [
+        "M04",
+        "M05",
+        "E02"
+      ],
+      "boundary": "與臨床灌流整合，不能單項確診排除"
+    },
+    {
+      "from": "drainage",
+      "type": "intervention",
+      "to": "reduced_external_constraint",
+      "supporting_claims": [
+        "G01",
+        "I02"
+      ],
+      "boundary": "未解決積液來源；引流有新風險"
+    },
+    {
+      "from": "malignant_cells",
+      "type": "support",
+      "to": "malignant_effusion",
+      "supporting_claims": [
+        "C04"
+      ],
+      "boundary": "本例後續資訊，不回填為初始已知"
+    }
+  ],
+  "units": [
+    {
+      "id": "U01",
+      "heading": "先把整個問題連起來",
+      "question": "病因、循環機轉、急迫行動如何相連？",
+      "requires": [],
+      "claim_ids": [
+        "M01",
+        "M02",
+        "I01"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "U02",
+      "heading": "原始病程",
+      "question": "當時知道什麼，何時必須擴大？",
+      "requires": [
+        "U01"
+      ],
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "M06",
+        "G09"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "U03",
+      "heading": "CVP與受限充盈",
+      "question": "高靜脈壓與低灌流如何同時成立？",
+      "requires": [
+        "U01",
+        "U02"
+      ],
+      "claim_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "G09"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "U04",
+      "heading": "心超把結構接到生理",
+      "question": "有積液如何推進到血流動力學影響？",
+      "requires": [
+        "U03"
+      ],
+      "claim_ids": [
+        "M04",
+        "M05",
+        "E02",
+        "C05"
+      ],
+      "asset_ids": [
+        "A01"
+      ]
+    },
+    {
+      "id": "U05",
+      "heading": "並行處置與引流",
+      "question": "哪些支持治療可橋接，哪些治療解除阻塞？",
+      "requires": [
+        "U02",
+        "U03",
+        "U04"
+      ],
+      "claim_ids": [
+        "G01",
+        "G02",
+        "G03",
+        "G05",
+        "G06",
+        "G07",
+        "E01",
+        "G10",
+        "E03"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "U06",
+      "heading": "引流後剩餘問題",
+      "question": "改善後如何更新機轉、病因與風險？",
+      "requires": [
+        "U05"
+      ],
+      "claim_ids": [
+        "C04",
+        "I02",
+        "I01",
+        "G04",
+        "G08",
+        "G10",
+        "E03"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "U07",
+      "heading": "面試敘事",
+      "question": "如何呈現穩定而有理由的處理？",
+      "requires": [
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06"
+      ],
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "G01",
+        "G02",
+        "G06",
+        "I01"
+      ],
+      "asset_ids": []
+    },
+    {
+      "id": "U08",
+      "heading": "來源與回查",
+      "question": "各來源究竟支持到哪裡？",
+      "requires": [],
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "E01",
+        "E02",
+        "I01",
+        "I02",
+        "G10",
+        "E03"
+      ],
+      "asset_ids": [
+        "A01"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[1]；段首 Sir,",
+      "destination": [
+        "U08"
+      ],
+      "treatment": "excluded_formatting",
+      "reason": "問候語，不增造教學內容"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[2]；段首 Cardiac tamponade is a medical emergency",
+      "destination": [
+        "U01",
+        "U05"
+      ],
+      "treatment": "integrated",
+      "reason": "病例起題與早期echo用途"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[3]；段首 We hereby report",
+      "destination": [
+        "U02"
+      ],
+      "treatment": "retained",
+      "reason": "年齡性別與主訴"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[4]；段首 On examination",
+      "destination": [
+        "U02",
+        "U03",
+        "U05"
+      ],
+      "treatment": "retained",
+      "reason": "初診與ICU原值、停液與升壓時序"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[5]；段首 Chest radiograph",
+      "destination": [
+        "U02",
+        "U04",
+        "U05",
+        "U06"
+      ],
+      "treatment": "retained",
+      "reason": "CXR、TTE估量、穿刺反應及心包液"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[6]；段首 Repeat TTE",
+      "destination": [
+        "U02",
+        "U06"
+      ],
+      "treatment": "retained",
+      "reason": "引流後LV／殘液、停抗生素與卵巢原發"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[7]；段首 Our patient presented",
+      "destination": [
+        "U02",
+        "U03",
+        "U04"
+      ],
+      "treatment": "integrated",
+      "reason": "作者的診斷轉折；保留回溯身分"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[8]；段首 Tachycardia and tachypnea",
+      "destination": [
+        "U02",
+        "U04"
+      ],
+      "treatment": "integrated_with_omission",
+      "reason": "保留非專一體徵；未將原文30%舊引用估計當現行通則"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[9]；段首 Pulsus paradoxus",
+      "destination": [
+        "U03",
+        "U04"
+      ],
+      "treatment": "integrated",
+      "reason": "波形與呼吸對照、床邊評估限制"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[10]；段首 Again, she presented",
+      "destination": [
+        "U06",
+        "U08"
+      ],
+      "treatment": "integrated_with_omission",
+      "reason": "保留惡性病因；不搬用58%肺原發舊比例為現行估計"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/p[11]；段首 This case emphasizes",
+      "destination": [
+        "U01",
+        "U05",
+        "U07"
+      ],
+      "treatment": "integrated",
+      "reason": "結論與臨床並行評估"
+    },
+    {
+      "source_id": "S1",
+      "locator": "/article/body/sec[@id='ref-list1']/sec[@id='ref-list1_sec2']/ref-list/ref；5篇原書目",
+      "destination": [
+        "U08"
+      ],
+      "treatment": "bibliography_function_only",
+      "reason": "保留原論證用途；沒有宣稱逐篇讀過五篇舊引用"
+    },
+    {
+      "source_id": "S2",
+      "locator": "§6.3.2.1, Recommendation Table 12 (PDF p.42-43); §11.2/Table21 p.58; §11.5 p.60; §11.8/Table17 p.62-63",
+      "destination": [
+        "U01",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08"
+      ],
+      "treatment": "selected_scope_only",
+      "reason": "只涵蓋本題使用的已讀範圍；不宣稱全篇導讀"
+    },
+    {
+      "source_id": "S3",
+      "locator": "Fluid resuscitation; Antibiotic initiation; Antimicrobial therapy; Resuscitation; Vasopressors",
+      "destination": [
+        "U01",
+        "U02",
+        "U05",
+        "U06",
+        "U07",
+        "U08"
+      ],
+      "treatment": "selected_scope_only",
+      "reason": "只涵蓋本題使用的已讀範圍；不宣稱全篇導讀"
+    },
+    {
+      "source_id": "S4",
+      "locator": "UCL abstract; ESICM visual abstract page1",
+      "destination": [
+        "U02",
+        "U03",
+        "U08"
+      ],
+      "treatment": "selected_scope_only",
+      "reason": "只涵蓋本題使用的已讀範圍；不宣稱全篇導讀"
+    },
+    {
+      "source_id": "S5",
+      "locator": "Methods and results; Conclusions",
+      "destination": [
+        "U05",
+        "U08"
+      ],
+      "treatment": "selected_scope_only",
+      "reason": "只涵蓋本題使用的已讀範圍；不宣稱全篇導讀"
+    },
+    {
+      "source_id": "S6",
+      "locator": "Methods; Results; diagnostic standard definition",
+      "destination": [
+        "U04",
+        "U08"
+      ],
+      "treatment": "selected_scope_only",
+      "reason": "只涵蓋本題使用的已讀範圍；不宣稱全篇導讀"
+    },
+    {
+      "source_id": "S7",
+      "locator": "Pericardial effusion and cardiac tamponade; Table12-13; Figure20 and caption",
+      "destination": [
+        "U01",
+        "U03",
+        "U04",
+        "U06",
+        "U08"
+      ],
