@@ -128,6 +128,12 @@ def render_reader(page, body, headings):
 def render(md_file, output, page_title, subtitle):
     raw=(BASE/md_file).read_text(encoding="utf-8")
     current=next(row for row in PAGES if row["output"]==output)
+    # Preserve the chat-supplied original bytes on disk; only suppress a
+    # duplicate plain-text first-line title in the rendered HTML, as for # H1.
+    if current.get("kind") == "historical_original":
+        head, _, tail = raw.partition("\n")
+        if head.strip() == current["title"] and tail:
+            raw = tail.lstrip("\n")
     if "<!-- XIAOMA_READING_ORIGINALS -->" in raw:
         originals=sorted((row for row in PAGES if row.get("kind")=="historical_original" and row.get("collection")==current.get("collection")),key=lambda row:row["date"])
         cards='<div class="original-list">'+''.join(
