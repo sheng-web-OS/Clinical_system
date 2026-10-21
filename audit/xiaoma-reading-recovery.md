@@ -67,6 +67,14 @@
 
 此段記錄的是本輪直接貼文**以前**的歷史搜尋結果：當時只有一篇完整原稿已收錄，另十筆文章／主題線索待回收或確認。本輪新增回收與尚待入庫數量以前述 2026-10-21 更新為準。這不是「所有歷史完稿已完整搬遷」的宣稱；尚未找到的文章仍可能存在於未匯出的對話或其他未連結來源。
 
+## 2026-10-21｜HF 原書圖像身分更正（可重現）
+
+已直接開啟上傳的《Pocket Medicine, 9th Edition》PDF **物理第 37 頁**：頁面上方有明確的 **Congestion?（No／Yes）× Low perfusion?（No／Yes）四象限圖**，四格原圖標籤為 **Warm & Dry / Warm & Wet / Cold & Dry / Cold & Wet**；格內有 Optimized／Diuresis／Inotropes／Diuresis, inotropes and/or vasodilators 等簡化處置方向。這是作者〈Heart Failure：從四象限到診斷與急性失衡〉開頭所指的 bedside hemodynamic profile 參照圖，不能把它錯置為另一個流程圖。
+
+相鄰 PDF **第 35 頁**另有 **Figure 1-2「Approach to left-sided heart failure」**，圖上是 elevated LVEDP → ↑LVEDV／normal LVEDV → systolic/high SV/diastolic/pericardial 分流；這**不是**四象限。先前 Agent 誤將 Figure 1-2 當成四象限原圖，已在直接逐頁查圖後修正。失敗原因是依文字索引與相近主題圖號代替完整相關頁面的圖像核查。
+
+本次 p.37 已有原始 PDF 實際頁圖的視覺證據。以上是**來源圖身分核對**，尚不代表四象限各處置提示適用於所有情境、完成 guideline 更新或獨立臨床審稿。原作者文章未修改，AI 新教材及其來源註記應按此核定來源位置。
+
 ## HCM 原稿的本次校讀邊界
 
 本次完成全文閱讀、版本與檔案一致性核對，並打開原稿連結的 [2024 AHA/ACC HCM 官方投影片](https://professional.heart.org/-/media/PHD-Files-2/Science-News/2/2024/2024-Guideline-for-HCM-Slide-Set.pdf?sc_lang=en)，對讀動態 LVOTO 的檢查、症狀與進階介入條件，以及 nonobstructive HCM／advanced HF。可回查 PDF pp.33–34、42、67、70–71。沒有將此窄範圍對讀寫成全篇最新指引或真人專科審查。
