@@ -19,7 +19,7 @@ def load_pages(root):
         if (source.is_absolute() or ".." in source.parts or
                 source.parts[0] != "content" or
                 source.suffix != ".md"):
-            raise ValueError("Public source must be approved content/ or audit/ Markdown")
+            raise ValueError("Public source must be approved content/ Markdown")
         path = (root / row["source"]).resolve()
         if not path.is_relative_to(root.resolve()) or not path.is_file():
             raise ValueError("Missing or escaped publication source: " + row["source"])
