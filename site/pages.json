@@ -37,18 +37,22 @@
     "source": "content/xiaoma-internal-medicine/index.md",
     "output": "xiaoma-internal-medicine.html",
     "title": "小麻內科國考",
-    "subtitle": "從每日一個臨床問題，累積內科推理與國考判斷",
-    "collection": "xiaoma-internal-medicine"
+    "subtitle": "把小麻讀成臨床推理。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "內科閱讀"
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md",
     "output": "xiaoma-20261021-hypoxemia.html",
-    "title": "低血氧：氧合與換氣必須分開判斷",
-    "subtitle": "第一天 · 換氣不足、V/Q mismatch 與 shunt",
+    "title": "血氧回升，為什麼病人仍在惡化？",
+    "subtitle": "把氧合、換氣、攜氧量與血流，放回同一個病人。",
     "collection": "xiaoma-internal-medicine",
     "date": "2026-10-21",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "layout": "reader",
+    "section": "胸腔與重症"
   },
   {
     "source": "audit/esc2025-figure-check.md",
@@ -61,5 +65,25 @@
     "output": "audit-log.html",
     "title": "可追溯審查",
     "subtitle": "檔案、主張、來源與發布驗收"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/sources.md",
+    "output": "xiaoma-sources.html",
+    "title": "低血氧：來源與查核",
+    "subtitle": "指定閱讀、原始證據與正式考題。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "navigation": false,
+    "section": "參考資料"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/plan.md",
+    "output": "xiaoma-plan.html",
+    "title": "閱讀路線與章節對照",
+    "subtitle": "依重要度推進，依實際理解調整。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "navigation": false,
+    "section": "閱讀路線"
   }
 ]
