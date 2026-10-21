@@ -57,7 +57,10 @@
 <button type="button" class="case-continue" data-case-next hidden>閱讀完整解析</button>
 </section>
 <div class="case-complete" data-case-complete hidden><p>已完成四次判斷。接下來核對原始病例、圖像與跨篇知識連結。這是自我練習，不代表正式能力測驗。</p><button type="button" data-case-restart>重新推理</button></div>
-<button type="button" class="case-skip" data-case-skip>直接閱讀完整解析 ↓</button>\n</div>\n\n<!-- CASE_ANALYSIS_START -->
+<button type="button" class="case-skip" data-case-skip>直接閱讀完整解析 ↓</button>
+</div>
+
+<!-- CASE_ANALYSIS_START -->
 
 ## 這個病例改變的不是病名，而是對循環的解釋
 
