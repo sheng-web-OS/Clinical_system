@@ -12,6 +12,16 @@
 
 因此，在討論利尿是否不夠以前，我們還需要先回答更前面的問題：這個壓力究竟是怎樣產生的？
 
+## 重新閱讀 Pocket Medicine 的兩張不同的圖：分類與機轉不是同一件事
+
+這裡需要直接回到《Pocket Medicine》第九版原始 PDF，而不只採用文章中流傳的示意圖。**PDF 物理頁 37 的四象限圖**，橫向問有無 congestion，縱向問有無 low perfusion，給出 warm/dry、warm/wet、cold/dry、cold/wet 四種當下的床邊 profile；**物理頁 35 的 Figure 1-2** 卻回答另一個問題：同樣是 left-sided HF，為何在 LVEDP 升高時，LVEDV 可以升高，也可能並未升高？後者從 systolic dysfunction、high stroke-volume states、diastolic dysfunction 與 pericardial constraint 拆開機轉。不能拿後者冒充四象限原圖，更不能把前者當成四條不同病因的診斷演算法。
+
+原書四象限在每格旁邊放入簡短治療方向，例如 cold/dry 對應 inotropes、warm/wet 對應 diuresis。**這是壓縮的管理提示，不是只看所在格就能開立處方的充分條件。** 臨床上的「dry」代表目前沒有明顯可辨識的 congestion，不保證左室充盈足夠；「cold」是灌流不足的床邊假說，還必須辨認是否確有流量不足及其機轉。因此，cold/dry 病人若同時有低前負荷、動態阻塞、右室限制或其他可逆原因，不能僅從分類名稱推論需要正性肌力藥。這也解釋為何同時存在周邊水腫與 preload-sensitive LVOTO 的真實病例，會迫使我們重新檢查「濕」所指的部位、測量與循環後果，而不是把四象限當成「利尿或不利尿」的二選一。
+
+原書物理頁 34 的 tailored therapy 段落另把 LVEDV、LVEDP、LAP 與 PCWP 作為近似的 preload 指標連在一起。這句高度壓縮的床邊捷徑也要拆解：**LVEDV 是容積，LVEDP／LAP／PCWP 是壓力，量綱不同，不可能直接視為彼此數值相等。** 即使不同壓力之間在特定條件下可能相關，也必須檢查舒張期壓力傳遞、二尖瓣／左心房或肺靜脈病變、心室順應性及外在限制。Figure 1-2 正好從機轉上反證「壓力一高就是容積過多」的過度推論。
+
+**來源核對範圍：**已直接目視使用者提供的 *Pocket Medicine*, 9th ed., 463 頁 PDF 的物理頁 34–37；p.35 為 Figure 1-2，p.37 為四象限圖。本整合稿只標示原書圖表的正確位置並分析其推論界線；未取得可供網站發布的原圖檔，也尚未完成原始作者貼文附件比對、當代指南或外部同行審查。原圖不可因本段文字而視為已正式取得重製授權。
+
 ## 左心 filling pressure 升高，不等於所有左心室都已經裝得過滿
 
 [〈從四象限走進 LVEDP〉](../xiaoma-reading/originals/2026-07-12-lvedp.md)追問的是同一個 pulmonary congestion 背後的 pressure–volume mechanism。它先提醒我們，肺靜脈壓與左心房壓才是肺水腫較直接的上游變項；在沒有顯著 mitral／left atrial／pulmonary venous pathology 妨礙壓力傳遞時，才較適合用 LV filling pressure／LVEDP 解釋。
