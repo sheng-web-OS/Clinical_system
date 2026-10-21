@@ -45,3 +45,12 @@
 ## 技術驗證補遺（2026-10-21）
 
 GitHub Actions run [#1](https://github.com/sheng-web-OS/Clinical_system/actions/runs/39522812463) 的 build 工作已成功，並產生 `github-pages` 發行檔；然而 deploy 顯示 **404 Not Found / Ensure GitHub Pages has been enabled**。發行狀態因此為 **build passed / deployment blocked**，不是 published。網站採靜態 Markdown 編譯，並已新增產出 HTML 的路徑驗證，以防原先 Markdown 相對連結在 HTML 根目錄失效。Figure 12 與 Table 17 已重新檢視原 PDF 頁面圖像；Table 12／21 僅能宣稱文本核對。
+
+
+## 發行驗收：第二輪建置
+
+2026-10-21 GitHub Actions [run #2](https://github.com/sheng-web-OS/Clinical_system/actions/runs/39523560239)（commit \`62e5a1e1ebafb2879a0ce8bb1d1c59d8832c8b08\`）：build、結構稽核、Markdown 編譯及 artifact 上傳全部成功。發行檔內具有首頁、兩份審查頁、CSS、JS、搜尋索引與無 Jekyll 設定。檢查產物確認 8 個原有 U01–U08 定位點、6 張原生因果節點、12 個章節導航，未見原始 Markdown 相對連結殘留，JS 語法檢查通過，HTML 沒有重複 ID。
+
+**部署狀態：阻擋。** 同一次 workflow 的 deploy 仍回傳 GitHub API HTTP 404，訊息明確要求先啟用 [Pages 設定](https://github.com/sheng-web-OS/Clinical_system/settings/pages)。因此不得把目前狀態標示為 published 或 live。驗證成品可作本地單檔／多檔網站預覽，尚未完成公開 HTTPS 網址存取或實際圖形瀏覽器截圖檢查（執行環境的瀏覽器頁面載入被安全限制攔阻）。
+
+**最低人為介入**：由儲存庫管理員在 Pages 設定選擇 GitHub Actions 為發布來源。依 GitHub 官方說明，GitHub Free 帳戶下私人 repo 不支援 Pages；私人 repo 需要 GitHub Pro／Team 等適用方案。是否公開 repo 屬資訊揭露決策，不得由 Agent 自動變更。

@@ -11,7 +11,7 @@ import mistune
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
 FILES = [
-    ("content/tamponade.md", "index.html", "Cardiac Tamponade", "病例 × 機轉 × ESC 指南 × 決策"),
+    ("content/tamponade.md", "index.html", "Cardiac Tamponade Mimicking Sepsis", "病例 × 機轉 × ESC 指南 × 決策"),
     ("audit/esc2025-figure-check.md", "esc-audit.html", "2025 ESC 原圖對讀", "原始圖表、推薦層級與文件內部歧異"),
     ("audit/audit-log.md", "audit-log.html", "可追溯審查", "檔案、主張、來源與發布驗收"),
 ]
@@ -93,6 +93,7 @@ def render(md_file, output, page_title, subtitle):
     rr=Renderer()
     parser=mistune.create_markdown(renderer=rr,plugins=["table","strikethrough","url"])
     body=parser(raw)
+    body=re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)  # accessible single H1 in page hero
     body=re.sub(r'<pre><code class="language-mermaid">([\s\S]*?)</code></pre>',render_mechanism,body)
     body=rewrite_internal_links(body,md_file)
     toc=''.join('<a href="#'+ident+'">'+html.escape(txt)+'</a>' for ident,txt in rr.headings)
