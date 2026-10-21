@@ -1,27 +1,21 @@
 # 小麻閱讀
 
-從小麻的一段定義、一張圖，追問到機轉與臨床判斷。歷史原稿保留原來的推理順序與全文；AI 新教材另行標示，不能冒用原稿身分。
+從一段定義、一張圖或一個臨床疑問開始，往下追問：**眼前的發現究竟支持哪種機轉？哪些資訊仍不足以決定下一步？**
 
 <!-- XIAOMA_READING_ORIGINALS -->
 
-## 從原稿出發，沿著臨床問題跨篇閱讀
+## 依臨床問題繼續讀
 
-這裡不只是按照日期排列文章。[〈Heart Failure：從四象限到診斷與急性失衡〉](originals/2026-07-12-heart-failure.md)先把 **congestion** 與 **perfusion** 分開；[〈從四象限走進 LVEDP〉](originals/2026-07-12-lvedp.md)再把肺鬱血後面的 **pressure** 與 **volume** 分開；[HCM〈Nonobstructive 只回答了一個問題〉](originals/2026-07-14-hcm.md)提醒 **EF、outflow、filling、contraction** 不能互相取代；[〈利尿效果不夠，為什麼下一步不一定是加量？〉](originals/2026-07-20-diuretics.md)則從藥物反應檢查：究竟是曝露、全天負鈉平衡，還是解除鬱血的臨床終點尚未達成？
+**有肺水腫，就代表血流一定不足嗎？** [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)把 congestion 與 perfusion 分開；[從四象限走進 LVEDP](originals/2026-07-12-lvedp.md)再問壓力如何由容量、心室性質及外在限制形成；[Diuretics](originals/2026-07-20-diuretics.md)接著檢驗鈉排泄與真正解除鬱血是不是同一個終點。
 
-這幾篇有不同中心問題，連起來卻會改變對同一個病人的判斷。它們不是同一條必經病程，更不能把 filling、EF、利尿效果變成嚴重度階梯。[〈心肌病變（DCM）〉](originals/2026-07-10-dcm.md)則從疾病的 morphology、contractility 和病因解釋邊界，連回 HF 作為 clinical syndrome 的不同層次。
+**EF 正常，心臟功能就一定正常嗎？** [HCM](originals/2026-07-14-hcm.md)將 filling、outflow、contraction 與 systolic emptying 分開；[DCM](originals/2026-07-10-dcm.md)則提醒，左室擴大與收縮不良只是疾病表型，仍需向上追問病因。
 
-重症視角同樣來自作者自己的文章：[〈Status epilepticus〉](originals/2026-07-28-status-epilepticus.md)將「還在抽」與已充分執行的治療歷史連接到 ICU／cEEG；[〈Acute pancreatitis〉](originals/2026-07-20-pancreatitis.md)則讓 necrosis 與 organ failure 的不同分類條件，直接決定不能等待的器官支持。
+**分類後能不能等？** [Status epilepticus](originals/2026-07-28-status-epilepticus.md)從治療歷史判斷 refractory status；[Acute pancreatitis](originals/2026-07-20-pancreatitis.md)則區分局部壞死與持續器官衰竭。兩篇都說明，臨床支持不能被分類名稱或時間門檻延誤。
 
-[進入跨篇知識脈絡與各專科問題群 →](../clinical-os/index.md)
+## 把文章放回同一個病人
 
-## 原創典藏與整合教材是不同作品
+單篇文章解釋一個核心命題；跨篇閱讀則用病例測試這些命題能否同時成立。例如水腫與高 BNP 不必然等於左心室容量足夠，心臟收縮比例高也可能合併嚴重的動態流出道阻塞。
 
-本次 2026-10-21 對話另提供完整原文 21 篇，包含急重症、心血管、肝膽、腸胃與血管炎。其中六篇已轉存為 HF、LVEDP、Diuretics、DCM、Pancreatitis、Status epilepticus 原稿，另有既存的 HCM 原稿；**目前此區實際登錄七篇原稿**。其他十五篇對話原文是已取得的素材，但尚未逐篇寫入原稿檔案，不列入本頁已典藏篇數。
+[進入病例導向的臨床知識脈絡 →](../clinical-os/index.md)
 
-新教材可以從這些文章逆向找出作者已建立的因果前提與仍欠缺的知識，並整合必要重症醫學及來源查核；原文不因此被默默修訂或覆蓋。當內容具有急重症後果時，重症轉折應自然嵌入連續因果敘事。
-
-[查看收錄與來源核對 →](../../audit/xiaoma-reading-recovery.md)
-
-## 與現在的閱讀接起來
-
-舊文保存當時已經建立的理解；[小麻內科國考](../xiaoma-internal-medicine/index.md)則依目前進度持續新增教材。兩者可在同一個網站閱讀，也能一起全文搜尋。
+原創文章保留其完整論證；病例導讀與後續整合教材是不同的閱讀作品。
