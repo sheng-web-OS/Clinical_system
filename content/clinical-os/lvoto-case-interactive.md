@@ -19,7 +19,7 @@
 </section>
 <section class="case-step" data-case-stage="1" data-case-correct="c" hidden>
 <p class="case-stage-label">02／心超　·　新增證據有沒有推翻初始直覺？</p>
-<div class="case-evidence">TTE：LVEDD 37 mm、LVEF 80%、心室壁厚正常；可見 mitral systolic anterior motion（SAM）、LVOT 彩色血流加速，CW Doppler 呈 late-peaking，最大 LVOT 壓差 98 mmHg。無明顯 RV 擴大或 overt cor pulmonale。</div>
+<div class="case-evidence">TTE：LVEDD 37 mm、LVEF 80%、心室壁厚正常；可見 mitral systolic anterior motion（SAM）、LVOT 彩色血流加速，CW Doppler 呈 late-peaking，最大 LVOT 壓差 98 mmHg。無明顯 RV 擴大或 overt cor pulmonale。<p class="case-figure-link"><a href="https://jtd.amegroups.org/article/view/5226/html" target="_blank" rel="noopener noreferrer">對照原始病例 Figure 2：SAM、LVOT 彩色都卜勒與 late-peaking waveform ↗</a></p></div>
 <fieldset class="case-choices"><legend>哪個修正最符合目前證據？</legend>
 <label class="case-option"><input type="radio" name="case-step-1" value="a"><span>EF 80% 代表循環功能正常，可排除心衰竭表現。</span></label>
 <label class="case-option"><input type="radio" name="case-step-1" value="b"><span>既有 LVOT 壓差 98 mmHg，就能算出病人的 cardiac output 與 LVEDP。</span></label>
