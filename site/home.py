@@ -22,9 +22,12 @@ def render_home(pages):
     feature = next((p for p in pages if p["source"] == "content/tamponade.md"), None)
     originals = [p for p in pages if p.get("kind") == "historical_original"]
     lessons = [p for p in pages if p.get("collection") == "xiaoma-internal-medicine" and p.get("date")]
+    integrations = [p for p in pages if p.get("kind") == "ai_integrated"]
     cards = []
     if feature:
         cards.append(_card(feature, "clinical", "臨床專題 · Clinical reasoning", "從病例進入機轉與決策", True))
+    for p in sorted(integrations, key=lambda row: row["date"], reverse=True):
+        cards.append(_card(p, "integrated", "小麻閱讀 · 整合教材", "從原稿深入臨床推理"))
     for p in sorted(originals, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "original", "小麻閱讀 · 原創文章", "閱讀完整論述"))
     for p in sorted(lessons, key=lambda row: row["date"], reverse=True):
@@ -77,6 +80,7 @@ def render_home(pages):
        <button class="is-active" data-library-filter="all" aria-pressed="true">全部文章</button>
        <button data-library-filter="clinical" aria-pressed="false">臨床專題</button>
        <button data-library-filter="original" aria-pressed="false">小麻原稿</button>
+       <button data-library-filter="integrated" aria-pressed="false">整合教材</button>
        <button data-library-filter="medicine" aria-pressed="false">內科國考</button>
     </div>
     <div class="library-grid" id="library-grid">{listing}</div>

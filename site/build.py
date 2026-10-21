@@ -168,6 +168,9 @@ def main():
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")
     (DIST/"site-index.js").write_text("window.CLINICAL_INDEX = "+searchable+";",encoding="utf-8")
     (DIST/".nojekyll").touch()
+    if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
+        import subprocess
+        subprocess.run([sys.executable, str(BASE / "tools/fetch_dcm_figures.py"), str(DIST)], check=True)
     validate_output_links()
     for path in DIST.iterdir():
         print(path.name,path.stat().st_size)
