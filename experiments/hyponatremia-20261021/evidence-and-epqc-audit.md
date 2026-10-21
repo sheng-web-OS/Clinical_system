@@ -51,6 +51,17 @@ The system uses 0–4 scales. This assessment is **same-agent preliminary**, not
 - Learning gain (time to correct mechanism, counterfactual accuracy, safety-error rate, cognitive burden) has not been measured on humans.
 - No site publish/production deploy; no page registry modifications; no user historical originals altered.
 
+
+## G. Strict originality audit (separates source synthesis from discovery)
+The main clinical observations **were not missing from Pocket Medicine**:
+- PDF p.168 explicitly states: after hypovolemic repletion the stimulus for ADH is removed, free-water excretion occurs and Na may correct rapidly.
+- PDF p.168 directly describes the 0.9% saline vs 3% saline consequences in a highly concentrated-urine SIAD example and provides numerical table.
+- PDF p.166–167 already discusses tonicity before the 3-way volume-flowchart, so calling its approach strictly "volume first" would misrepresent it.
+
+The system's new *editorial contribution*, relative to the textbook, is a **single time-dependent explanatory thread** linking etiology, dynamic reversal, response variability, brain adaptation, and treatment re-evaluation. Its extrapolations include limits on interpreting UOsm alone, and source-specific bolus trial/evidence nuances. These are *syntheses* based on published knowledge, not new scientific findings.
+
+**Strict independent-gap-detection verdict: NOT DEMONSTRATED** on this test. The essay should not be scored as discovering a causal premise absent from the source. Prior self-rating of 25/28 is limited to narrative/pedagogical rubric; it does **not** score innovation or incremental value above the original source. New tests must include a source-overlap/added-value audit, identify substantive claims omitted by the textbook, and verify them against primary evidence.
+
 ## F. Decision
 **Retain as promising system-assisted article draft; HOLD publication and any claim Clinical OS outperforms native AI.**
 
