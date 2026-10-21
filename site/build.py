@@ -88,7 +88,7 @@ def validate_output_links():
 
 def render_reader(page, body, headings):
     """Reader-facing teaching, with routes and editorial records in separate pages."""
-    is_lesson = bool(page.get("date")) or page["source"] == "content/tamponade.md"
+    is_lesson = bool(page.get("date")) or page.get("kind") == "case_lesson" or page["source"] == "content/tamponade.md"
     is_archive = page.get("collection") == "xiaoma-reading"
     is_xiaoma = page.get("collection", "").startswith("xiaoma-")
     home = "xiaoma-reading.html" if is_archive else ("xiaoma-internal-medicine.html" if is_xiaoma else "index.html")
@@ -153,6 +153,11 @@ def render(md_file, output, page_title, subtitle):
     body=parser(raw)
     body=re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)  # accessible single H1 in page hero
     body=re.sub(r'<pre><code class="language-mermaid">([\s\S]*?)</code></pre>',render_mechanism,body)
+    if current.get("kind") == "case_lesson" and output == "lvoto-case-interactive.html":
+        before, after = "<!-- CASE_ANALYSIS_START -->", "<!-- CASE_ANALYSIS_END -->"
+        if body.count(before) != 1 or body.count(after) != 1:
+            raise ValueError("Case analysis delimiters missing: interactive explanation must be retained")
+        body = body.replace(before, '<section class="case-analysis" data-case-analysis>', 1).replace(after, "</section>", 1)
     body=rewrite_internal_links(body,md_file)
     current=next(row for row in PAGES if row["output"]==output)
     website = render_reader(current, body, rr.headings)
