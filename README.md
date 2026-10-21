@@ -1,50 +1,56 @@
-# Clinical System — Medical Knowledge & Editorial Site
+# Clinical System — Agentic Medical Knowledge & Editorial System
 
-**Cardiac Tamponade Mimicking Sepsis** 是首個端到端教材實例；不是整套 Clinical OS 的終點，也不是把既有網站堆疊到一起。
+**GitHub 保持私人；醫學教材網站可免費公開閱讀。**
 
-正式知識來源只有 \`content/*.md\`。GitHub 保存版本差異、來源審查及發布歷史；GitHub Actions 由 Markdown **自動生成 HTML 站點**，無須人工維護平行 HTML 教材。
+此儲存庫是 Master Prompt v5.1 的版本化知識來源；Cardiac Tamponade 是第一個端到端教材驗證案例，不是系統的終點。
 
-## 閱讀與維護
+## 來源與審查
 
-- [Tamponade 深化教材](content/tamponade.md)：原有八單元 + 2025 ESC 原始圖表對讀 + 反事實推導。
-- [ESC 2025 圖表核對](audit/esc2025-figure-check.md)：Figure 12、Recommendation Tables 12／21、Table 17 來源定位及疑義。
-- [可追溯審查](audit/audit-log.md)：資料忠實性、風險與未完成事項。
-- [既有版封存](archive/tamponade_r2_baseline.md)：原材料；不作新的正式內容來源。
-- [歷史編輯狀態檔](archive/editorial_state_r2_audited.json)：只作歷史可驗證快照，非持續全域 Claim Graph。
+- [Tamponade 完整教材](content/tamponade.md)：既有八個教學單元、2025 ESC 原始圖表對讀、反事實推理。
+- [2025 ESC 圖表核對](audit/esc2025-figure-check.md)：Figure 12、Table 17、Recommendation Tables 12／21。
+- [可追溯審查](audit/audit-log.md)：版本、證據、已知歧義與驗收限制。
+- [歷史原稿](archive/tamponade_r2_baseline.md)：原材料封存，不再當作正式編輯來源。
 
-## 自動網站流程
+## 目標工作循環
 
-\`\`\`
-修改 content/*.md 或 audit/*.md
-     ↓
-GitHub push main
-     ↓
-Actions → Python validators
-     ↓
-Markdown 轉靜態 HTML、建立搜尋索引
-     ↓
-GitHub Pages 部署（需帳戶支援且 Pages Source 設為 GitHub Actions；目前首次部署 API 404，請開啟 [Settings → Pages](https://github.com/sheng-web-OS/Clinical_system/settings/pages) 啟用）
-\`\`\`
+```text
+ChatGPT 對話 / Work / Codex：研究、修訂教材、審查
+                 ↓
+GitHub private / main：Markdown 與版本歷史
+                 ↓
+Cloudflare Pages：驗證 → 編譯 → 免費公開網站
+                 ↕
+GitHub Actions：相同驗證器，獨立 CI 與預覽成品
+```
 
-預期 GitHub Pages 路徑：\`https://sheng-web-OS.github.io/Clinical_system/\`。**這只是預期 URL；必須實際部署與 HTTPS 確認，才可宣稱網站可訪問。** 注意此儲存庫目前為 private；是否允許 private repository 啟用 Pages，取決於 GitHub 帳號方案與 Pages 設定，且 Pages 網址本身可能公開。
+Cloudflare 先執行 `bash tools/build_site.sh`。若來源檔案檢查、網站編譯或發行白名單檢查失敗，就阻擋當次部署；避免 CI 通過但 Cloudflare 使用不相同的建置邏輯。
 
-手動重現建置：
+**目前交接狀態**：已準備好從 GitHub 自動建站，但 Cloudflare 帳號尚須由使用者完成授權並啟用 Pages 專案。只有成功部署並驗證 HTTPS 後才會有可確認的正式網站網址。
 
-\`\`\`bash
-python -m pip install -r requirements.txt
-python tools/validate.py
-python site/build.py
+## 一次性部署設定
+
+詳見 [Cloudflare Pages 部署指南](docs/cloudflare-pages.md)。
+
+| Cloudflare 欄位 | 設定 |
+|---|---|
+| 產品 | Workers & Pages → Pages → Connect to Git |
+| GitHub repository | `sheng-web-OS/Clinical_system`（private） |
+| Production branch | `main` |
+| Framework preset | None |
+| Root directory | 專案根目錄（留空） |
+| Build command | `bash tools/build_site.sh` |
+| Build output directory | `dist` |
+| Python version | `.python-version` 指定 3.12 |
+
+不需要 GitHub Pro、Cloudflare API Token 或 GitHub Secrets。
+
+## 可重現測試
+
+```bash
+bash tools/build_site.sh
 python -m http.server --directory dist 8000
-\`\`\`
+```
 
-教材編輯時請維持病例事實、指南條件、機轉推理與個別行動建議的清楚區分。改變核心機轉時，才按需檢索相關章節、臨時重建依賴並再審查，不強制持續維護全域主張圖譜。
+網站只會發布 `dist/` 白名單中的教材 HTML、審查頁、CSS、JavaScript 與搜尋索引；私人 `archive/`、Markdown 來源、編輯狀態 JSON 與 Git 歷史不會被上傳。
 
-本網站供專業醫學學習，並非個別病患診療建議；未宣稱已經真人專科審查。
-
-
-**2026-10-21 發布阻擋**：初次 GitHub Actions [#1](https://github.com/sheng-web-OS/Clinical_system/actions/runs/39522812463) 成功產生站點 HTML，但 Pages 部署回傳 404。需由儲存庫擁有者在 [Settings / Pages](https://github.com/sheng-web-OS/Clinical_system/settings/pages) 開啟 Pages 並將 source 選為 GitHub Actions。此私人儲存庫在目前方案是否允許 Pages 需依介面實際顯示確認；不要為了部署擅自改為 public。
-
-
-## 發行事實（2026-10-21）
-
-[第 2 次 Actions](https://github.com/sheng-web-OS/Clinical_system/actions/runs/39523560239) 已通過網站編譯與建站後的站內相對連結檢查；但 Pages 仍未啟用，deploy 因 404 失敗。請到 [GitHub Pages Settings](https://github.com/sheng-web-OS/Clinical_system/settings/pages) 啟用後，手動 Run workflow 或推送下一次教材更新。預覽可使用當次 Actions 的 github-pages artifact，或會話交付的單檔 HTML／完整網站 ZIP。切勿把可下載 artifact 誤當已發布網址。
+本教材供醫學教育；未經真人專科同儕審查。修改核心機轉時按需重建依賴、驗證影響，不強制永久維護全域 Claim Graph。

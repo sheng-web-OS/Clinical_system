@@ -1,14 +1,14 @@
-name: Validate and publish medical site
+name: Validate and build medical site
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
-  group: pages
+  group: medical-editorial
   cancel-in-progress: true
 jobs:
   build:
@@ -18,23 +18,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install deterministic renderer
-        run: pip install -r requirements.txt
-      - name: Validate medical editorial references and file paths
-        run: python tools/validate.py
-      - name: Compile HTML from source Markdown
-        run: python site/build.py
-      - name: Upload static Pages artifact
-        uses: actions/upload-pages-artifact@v3
+          cache: pip
+      - name: Evidence-gated site build
+        run: bash tools/build_site.sh
+      - name: Save verified static site
+        uses: actions/upload-artifact@v4
         with:
-          path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          name: clinical-system-static-site
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7

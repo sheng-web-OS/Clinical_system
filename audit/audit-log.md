@@ -54,3 +54,12 @@ GitHub Actions run [#1](https://github.com/sheng-web-OS/Clinical_system/actions/
 **部署狀態：阻擋。** 同一次 workflow 的 deploy 仍回傳 GitHub API HTTP 404，訊息明確要求先啟用 [Pages 設定](https://github.com/sheng-web-OS/Clinical_system/settings/pages)。因此不得把目前狀態標示為 published 或 live。驗證成品可作本地單檔／多檔網站預覽，尚未完成公開 HTTPS 網址存取或實際圖形瀏覽器截圖檢查（執行環境的瀏覽器頁面載入被安全限制攔阻）。
 
 **最低人為介入**：由儲存庫管理員在 Pages 設定選擇 GitHub Actions 為發布來源。依 GitHub 官方說明，GitHub Free 帳戶下私人 repo 不支援 Pages；私人 repo 需要 GitHub Pro／Team 等適用方案。是否公開 repo 屬資訊揭露決策，不得由 Agent 自動變更。
+
+
+## 出版平台變更：GitHub 私人原始碼 → Cloudflare Pages 公開閱讀
+
+日期：2026-10-21。方案選定 Cloudflare Pages Free 與 GitHub private repository。原 GitHub Pages API 404 部署流程被移除；GitHub Actions 只做品質檢查及可下載 HTML 產物，不再使用 GitHub Pages API。Cloudflare Pages 連接 main 分支，自行執行相同的驗證與建站腳本，任何檢查失敗皆阻擋本次 Cloudflare 建置。
+
+發布狀態必須分辨：source committed、CI passed、Cloudflare deployment succeeded、public HTTPS verified。GitHub Actions 成功不等於 Cloudflare 已連接或正式站已上線。需擁有者在 Cloudflare 與 GitHub 授權安裝 Pages GitHub App，並確認實際 pages.dev 網址可讀。
+
+安全邊界：僅 dist/ 編譯好的教材 HTML、CSS、JS、索引公開；archive/、原始 Markdown、編輯狀態 JSON 與 Git 歷史仍在私人儲存庫，不當作網站原始檔發布。請注意公開審查頁本身的內容仍可被任何人閱讀，來源的私有 Git 歷史無法由一般訪客查閱。

@@ -105,7 +105,7 @@ def render(md_file, output, page_title, subtitle):
 <a class="brand" href="index.html">CLINICAL / KNOWLEDGE<small>Master Prompt v5.1 · Evidence-Gated Publishing</small></a>
 <label class="side-label" for="search">全文搜尋</label><input id="search" class="searchbox" type="search" placeholder="搜尋教材與審查…"><div class="results" id="results" aria-live="polite"></div>
 <span class="side-label">學習與審查</span><nav class="menu">'''+nav+'''</nav>
-<span class="side-label">正式來源</span><nav class="menu"><a target="_blank" rel="noopener" href="https://github.com/sheng-web-OS/Clinical_system">GitHub repository ↗</a><a href="https://doi.org/10.1093/eurheartj/ehaf192" target="_blank" rel="noopener">2025 ESC Guideline ↗</a></nav></aside>
+<span class="side-label">正式來源</span><nav class="menu"><span class="private-source">內容來源：私人 GitHub</span><a href="https://doi.org/10.1093/eurheartj/ehaf192" target="_blank" rel="noopener">2025 ESC Guideline ↗</a></nav></aside>
 <main class="main"><header class="top"><span>2026.10.21 · Medical education · Source-traceable</span>
 <div class="tools"><button id="fontminus" aria-label="縮小字體">A−</button><button id="fontplus" aria-label="放大字體">A+</button><button id="theme">明暗切換</button></div></header>
 <section class="page"><div class="hero"><span class="eyebrow">Clinical reasoning / Evidence / Review</span><h1>'''+html.escape(page_title)+'''</h1><p class="lede">'''+html.escape(subtitle)+'''。由版本化 Markdown 自動產生，原始資料與推論分離。</p></div>
