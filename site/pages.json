@@ -70,8 +70,8 @@
   {
     "source": "content/xiaoma-internal-medicine/reading-path.md",
     "output": "xiaoma-plan.html",
-    "title": "閱讀路線與章節對照",
-    "subtitle": "依重要度推進，依實際理解調整。",
+    "title": "內科閱讀路線",
+    "subtitle": "用臨床問題串起必要前提、病因與處置",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "navigation": false,
