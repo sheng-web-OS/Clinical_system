@@ -87,6 +87,14 @@ def validate_output_links():
 
 def render(md_file, output, page_title, subtitle):
     raw=(BASE/md_file).read_text(encoding="utf-8")
+    current=next(row for row in PAGES if row["output"]==output)
+    reading=current.get("layout", "").startswith("reading-")
+    original=current.get("kind")=="historical_original"
+    if "<!-- XIAOMA_READING_ORIGINALS -->" in raw:
+        originals=sorted((row for row in PAGES if row.get("kind")=="historical_original" and row.get("collection")==current.get("collection")),key=lambda row:row["date"])
+        cards='<div class="original-list">'+''.join(
+            '<a class="original-card" href="'+html.escape(row["output"],quote=True)+'"><span class="original-date">'+html.escape(row["date"].replace("-","."))+' · 完整原稿</span><strong>'+html.escape(row["title"])+'</strong><span>'+html.escape(row["subtitle"])+'</span><span class="read-link">開始閱讀 <span aria-hidden="true">→</span></span></a>' for row in originals)+'</div>'
+        raw=raw.replace("<!-- XIAOMA_READING_ORIGINALS -->",cards)
     if "<!-- XIAOMA_PUBLISHED_LESSONS -->" in raw:
         lessons = sorted((row for row in PAGES if row.get("collection") == "xiaoma-internal-medicine" and row.get("date")), key=lambda row: row["date"])
         # Links use output paths already, so the public list needs no source-file exposure.
@@ -102,22 +110,31 @@ def render(md_file, output, page_title, subtitle):
     body=re.sub(r'<pre><code class="language-mermaid">([\s\S]*?)</code></pre>',render_mechanism,body)
     body=rewrite_internal_links(body,md_file)
     toc=''.join('<a href="#'+ident+'">'+html.escape(txt)+'</a>' for ident,txt in rr.headings)
-    current=next(row for row in PAGES if row["output"]==output)
     header_stamp=html.escape(current.get("date", "Clinical System"))
+    top_stamp="小麻閱讀" if reading else header_stamp+" · Medical education · Source-traceable"
+    eyebrow="歷史閱讀文章" if original else ("閱讀・理解・再判斷" if reading else "Clinical reasoning / Evidence / Review")
+    description=html.escape(subtitle)+("。" if reading else "。由版本化 Markdown 自動產生，原始資料與推論分離。")
+    if original:
+        toc_markup='<details class="reading-toc"><summary>閱讀段落 <span>'+str(len(rr.headings))+' 節</span></summary><div class="toclinks">'+toc+'</div></details>'
+    elif reading:
+        toc_markup=''
+    else:
+        toc_markup='<div class="toc"><strong>本頁章節</strong><div class="toclinks">'+toc+'</div></div>'
+    end_note=('<div class="reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><details><summary>原稿與本次收錄</summary><p>保留 '+html.escape(current.get("date","").replace("-","."))+' 完整稿。原文與本次編輯註記分開呈現；收錄不代表全篇已完成最新指引重審。</p><a href="xiaoma-reading-recovery.html">來源核對與編輯註記 →</a></details></div>') if original else ''
     nav=''.join('<a class="'+("active" if row["output"]==output or (row.get("collection") and row.get("collection")==current.get("collection")) else "")+'" href="'+row["output"]+'">'+html.escape(row["title"])+'</a>' for row in PAGES if row.get("navigation",True))
     website='''<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'''+html.escape(page_title+' · '+subtitle,quote=True)+'''">
-<title>'''+html.escape(page_title)+''' · Clinical Knowledge</title><link rel="stylesheet" href="styles.css"></head><body>
+<title>'''+html.escape(page_title)+''' · Clinical Knowledge</title><link rel="stylesheet" href="styles.css"></head><body class="'''+('reading-layout' if reading else '')+'''">
 <div class="floating"></div><div class="layout"><aside class="sidebar"><button class="mobile-menu" id="mobilemenu" aria-label="展開導覽">選單</button>
 <a class="brand" href="index.html">CLINICAL / KNOWLEDGE<small>Master Prompt v5.1 · Evidence-Gated Publishing</small></a>
 <label class="side-label" for="search">全文搜尋</label><input id="search" class="searchbox" type="search" placeholder="搜尋教材與審查…"><div class="results" id="results" aria-live="polite"></div>
 <span class="side-label">學習與審查</span><nav class="menu">'''+nav+'''</nav>
 <span class="side-label">正式來源</span><nav class="menu"><span class="private-source">內容來源：私人 GitHub</span><a href="https://doi.org/10.1093/eurheartj/ehaf192" target="_blank" rel="noopener">2025 ESC Guideline ↗</a></nav></aside>
-<main class="main"><header class="top"><span>'''+header_stamp+''' · Medical education · Source-traceable</span>
+<main class="main"><header class="top"><span>'''+top_stamp+'''</span>
 <div class="tools"><button id="fontminus" aria-label="縮小字體">A−</button><button id="fontplus" aria-label="放大字體">A+</button><button id="theme">明暗切換</button></div></header>
-<section class="page"><div class="hero"><span class="eyebrow">Clinical reasoning / Evidence / Review</span><h1>'''+html.escape(page_title)+'''</h1><p class="lede">'''+html.escape(subtitle)+'''。由版本化 Markdown 自動產生，原始資料與推論分離。</p></div>
-<div class="toc"><strong>本頁章節</strong><div class="toclinks">'''+toc+'''</div></div>
-<article class="article">'''+body+'''</article><footer>研究與專業學習用途。未經真人專科醫師審查；請依個別病人狀況與最新來源作臨床判斷。<br>Source of truth: GitHub / Markdown · No third-party analytics</footer></section></main></div><script src="site-index.js"></script><script src="app.js" defer></script></body></html>'''
+<section class="page"><div class="hero"><span class="eyebrow">'''+eyebrow+'''</span><h1>'''+html.escape(page_title)+'''</h1><p class="lede">'''+description+'''</p></div>
+'''+toc_markup+'''
+<article class="article">'''+body+'''</article>'''+end_note+'''<footer>研究與專業學習用途。未經真人專科醫師審查；請依個別病人狀況與最新來源作臨床判斷。<br>Source of truth: GitHub / Markdown · No third-party analytics</footer></section></main></div><script src="site-index.js"></script><script src="app.js" defer></script></body></html>'''
     (DIST/output).write_text(website,encoding="utf-8")
     return {"title":page_title,"url":output,"text":re.sub(r"\s+"," ",re.sub(r"<[^>]*>"," ",body))[:60000]}
 def main():
@@ -134,3 +151,4 @@ def main():
     for path in DIST.iterdir():
         print(path.name,path.stat().st_size)
 if __name__=="__main__":main()
+

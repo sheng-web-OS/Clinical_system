@@ -1,5 +1,6 @@
 """Explicit publication list shared by the compiler and output checks."""
 import json
+import hashlib
 import re
 from datetime import date
 from pathlib import PurePosixPath
@@ -34,4 +35,14 @@ def load_pages(root):
             date.fromisoformat(row.get("date", ""))
             if row.get("review") not in ("author_source_check", "independent_ai_review", "human_review"):
                 raise ValueError("Lesson must disclose its actual review type")
+        if row.get("kind") == "historical_original":
+            date.fromisoformat(row.get("date", ""))
+            if row.get("review") != "source_recovery_only":
+                raise ValueError("Recovered original must disclose the source recovery review")
+            fingerprint = row.get("source_sha256", "")
+            if not re.fullmatch(r"[0-9a-f]{64}", fingerprint):
+                raise ValueError("Recovered original requires its source fingerprint")
+            if hashlib.sha256(path.read_bytes()).hexdigest() != fingerprint:
+                raise ValueError("Recovered original changed: " + row["source"])
     return pages
+

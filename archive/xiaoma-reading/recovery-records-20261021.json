@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "task": "Recover historical Xiaoma reading originals and integrate existing site",
+  "recovered_on": "2026-10-21",
+  "timezone": "Asia/Taipei",
+  "base_commit": "f3b841134f46c96eb0865d919e4cefa413652c93",
+  "scope": {
+    "library_readable_and_archives": 223,
+    "generated_inventory": 162,
+    "pagination_complete": true,
+    "library_paths": [
+      "/小麻閱讀",
+      "/CV",
+      "/"
+    ],
+    "additional_sources": [
+      "historical conversation retrieval",
+      "connected Obsidian notes",
+      "Google Drive",
+      "accessible GitHub repositories"
+    ]
+  },
+  "recovered": [
+    {
+      "id": "hcm-20260714",
+      "title": "Nonobstructive 只回答了一個問題",
+      "aliases": [
+        "從 EF 回到 HCM 的定義",
+        "HCM_從EF回到定義.md"
+      ],
+      "library_file_id": "libfile_ca02ec2fe49c819186d53d41af9e1695",
+      "original_date": "2026-07-14",
+      "source_path": "/CV/HCM_從EF回到定義.md",
+      "canonical_path": "content/xiaoma-reading/originals/2026-07-14-hcm.md",
+      "archived_path": "archive/xiaoma-reading/originals/HCM_從EF回到定義.md",
+      "source_sha256": "86f84012585a689b4954e76b9cce01759df7bb1a7a91be32d2b65101409d142b",
+      "source_bytes": 12268,
+      "review": "source_recovery_only",
+      "status": "recovered_full"
+    }
+  ],
+  "pending": [
+    {
+      "id": "acs",
+      "title": "ACS 的真正脈絡：從辨認心肌梗塞，到決定導管與導管後照護",
+      "located_message_utc": "2026-07-10T12:44:28Z",
+      "status": "conversation_located_no_fulltext"
+    },
+    {
+      "id": "hf",
+      "title": "從四象限理解 Heart Failure",
+      "located_message_utc": "2026-07-12T07:19:45Z",
+      "versions_note": "Long version at 07:13:38Z; later 07:31:02Z revision also mentioned; latest final must be established from original messages",
+      "status": "conversation_located_no_fulltext"
+    },
+    {
+      "id": "lvedp",
+      "title": "從四象限走進 LVEDP",
+      "located_message_utc": "2026-07-12T08:43:37Z",
+      "status": "conversation_located_no_fulltext"
+    },
+    {
+      "id": "syncope-approach",
+      "title": "如何正確閱讀小麻的 Approach to syncope",
+      "located_message_utc": "2026-07-12T23:05:03Z",
+      "status": "conversation_located_no_fulltext"
+    },
+    {
+      "id": "syncope-workup",
+      "title": "Syncope 的 workup：不是檢查清單，而是逐層縮小不確定性",
+      "located_message_utc": "2026-07-12T22:33:42Z",
+      "status": "conversation_located_no_fulltext"
+    },
+    {
+      "id": "syncope-neurologic",
+      "title": "核心答案",
+      "topic": "Why neurologic appears in syncope etiologies",
+      "located_message_utc": "2026-07-12T22:25:22Z",
+      "status": "conversation_located_finality_unconfirmed"
+    },
+    {
+      "id": "dcm",
+      "title": null,
+      "topic": "DCM / dilated cardiomyopathy",
+      "located_message_utc": "2026-07-10T16:18:21Z",
+      "status": "user_manuscript_located_no_fulltext"
+    },
+    {
+      "id": "arrhythmia-ecg",
+      "title": null,
+      "topic": "Arrhythmia / ECG",
+      "located_message_utc": "2026-07-11T02:16:52Z",
+      "status": "draft_candidate_finality_unconfirmed"
+    },
+    {
+      "id": "wpw",
+      "title": null,
+      "topic": "Accessory pathway / WPW",
+      "located_message_utc": "2026-07-12T10:26:59Z",
+      "status": "mention_only"
+    },
+    {
+      "id": "tavr-access",
+      "title": null,
+      "topic": "TAVR access planning",
+      "located_message_utc": "2026-07-12T10:26:59Z",
+      "status": "mention_only"
+    }
+  ],
+  "limitations": [
+    "Conversation retrieval returned summaries and timestamps, never exportable full historical messages in this run.",
+    "Article titles in retrospective model summaries are locators, not authoritatively verified manuscript content.",
+    "No user transcript export is present in connected files.",
+    "Not a complete account-history export; undiscovered articles may still exist."
+  ],
+  "excluded": [
+    "IBCC introductions and resource recommendations",
+    "Study plan topics marked unconfirmed",
+    "Pocket Medicine textbook PDF",
+    "Generic question-and-answer fragments",
+    "DCM, HF, WPW topic nodes as substitutes for manuscripts",
+    "ACS teacher course / website prototype as substitutes for July Xiaoma ACS original",
+    "Unrelated patient records, financial content and administrative documents"
+  ],
+  "evidence": [
+    {
+      "author_role": "tool",
+      "content": "[convo search]\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-07-18T02:02:23Z, -95d: 完整可追溯對話僅有腫瘤學閱讀定位討論，非「小麻閱讀完稿」；涵蓋 Pocket Medicine oncology 章節與 Pocket Oncology 2e 的差異，但沒有文章標題、完成日期或明確最終稿標記。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c1] A@2026-10-21T06:18:33Z, -6m: 已讀到 7 月小麻文章〈Nonobstructive 只回答了一個問題〉；內容逐段拆解 LVOTO、filling、contraction、EF，推導至症狀、檢查與治療；此處僅有標題與摘要，未提供全文或完成日期。\n- [PRIOR_ASSISTANT_OUTPUT] [c1] A@2026-10-21T06:10:53Z, -13m: ACS 被指定為既有成品的深度與敘事基準；其修訂評析強調逐步展開推理、機轉／證據／病人再判斷，但此檢索內容未提供 ACS 完稿標題、日期或全文。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-05-19T00:47:55Z, -155d: 完稿標題「好。IBCC 你可以把它理解成」；完成日期 2026-05-19；可取回全文，內容為 IBCC 架構、用途、章節順序、讀法、限制及與 Pocket Medicine 互補。\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-05-19T02:41:42Z, -155d: 完稿標題「有，而且其實這是很正常的」；完成日期 2026-05-19；可取回全文，主題為 IBCC podcast 英文聽不懂的處理方式。\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-05-19T02:43:15Z, -155d: 完稿標題「對，而且這其實是 IBCC ecosystem 很強的地方」；完成日期 2026-05-19；可取回全文，說明 IBCC podcast 與文章的對應關係。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-05-21T02:55:11Z, -5mo: Pocket Medicine＝病房 workflow/differential/order thinking；IBCC＝physiology/critical-care reasoning/prioritization；曾提出 ARDS、Shock 等問題清單。\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-05-21T02:56:28Z, -5mo: 曾列舉 Frameworks for Internal Medicine、Clinical Problem Solvers、Core IM 等問題庫資源；未提供 Pocket Medicine 閱讀文章完稿。\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-05-21T03:02:41Z, -5mo: 曾提出 OnePagerICU、Frameworks、Clinical Problem Solvers schemas 與 AI 固定問題模板；屬問題庫／學習建議，非小麻閱讀完稿。\n\n- [USER_FACT] [c6] U@2026-07-14T03:44:59Z, -3mo: HCM 主題準備；建議讀 Pocket Medicine 並廣泛理解 HCM，不只聚焦病人類型\n\n- [PRIOR_ASSISTANT_OUTPUT] [c7] A@2026-07-12T23:05:03Z, -101d: 可辨識的小麻閱讀成品：**〈如何正確閱讀小麻的 Approach to syncope〉**；完整長文，含「小麻流程圖的最佳使用時機」及完整重詮釋框架。\n- [PRIOR_ASSISTANT_OUTPUT] [c7] A@2026-07-12T22:33:42Z, -101d: 可辨識的小麻閱讀成品：**〈Syncope 的 workup：不是檢查清單，而是逐層縮小不確定性〉**；完整長文，含 workup 與小麻敘事模式影響。\n- [PRIOR_ASSISTANT_OUTPUT] [c7] A@2026-07-12T22:25:22Z, -101d: 可辨識的小麻閱讀成品：**〈核心答案〉**（主題：為何小麻把 neurologic 放入 Syncope etiologies）；完整長文，含最終課程紀錄版本；對話來源可追溯。\n\n[gmail]\n[g1] Jul 5, 2026 Clinical Learning OS handoff mentions GPT-readable system summaries/attachments, not identifiable 小麻閱讀完稿。\n\n[files]\nSources:\n[f0] HCM_從EF回到定義.md\n[f1] Reduction_Diagnosis.md\n[f2] 貼上的 Markdown (1).md\n[f3] 小麻內科國考_計畫與第一天.md\n[f4] 內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten.pdf\n\nEvidence:\n- [FILE_CONTENT] [f0] 可確認的一篇實際小麻閱讀完稿：〈Nonobstructive 只回答了一個問題〉，日期「2026.07.14 小麻閱讀（9E）」；檔案含文章正文，開頭段落為「閱讀 HCM 時，最容易出現的錯誤，是把心肌肥厚、LVOTO、diastolic dysfunction、EF 與 heart failure 連成同一條病程……」；檢索結果未顯示明確「最終稿」字樣。\n- [FILE_CONTENT] [f1] 僅能確認曾存在／被連結的〈CABG 完整閱讀〉與〈指南完整閱讀〉（檔名 `CABG_Full_v45.md`、`Guideline_2021_Full_v45.md`）；此檔本身是整合與版本說明，未提供兩篇全文、文章完成日期或明確最終稿標記，因此屬對話／文件摘要級證據。\n- [FILE_METADATA] [f2] 是 Pocket Medicine 索引與工程更新紀錄，內容明確描述索引、coverage test、資料庫處理，不是小麻閱讀文章完稿。\n- [FILE_METADATA] [f3] 是內科國考計畫與未確認閱讀目錄；日期代表指定閱讀，不代表完成，不能列為完稿。\n- [FILE_METADATA] [f4] 是 Pocket Medicine 9e 教科書 PDF，屬外部原文，不列為使用者小麻閱讀成品。"
+    },
+    {
+      "author_role": "tool",
+      "content": "[convo search]\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-06-28T04:59:23Z, -115d: Retrieved ACS discussion is general Q&A/Anki guidance, not a completed 小麻閱讀 long-form article; no real article title, completion signal, or file location shown.\n\n- [USER_FACT] [c1] U@2026-07-11T00:23:47Z, -102d: 「心律不整」小麻閱讀內容；涵蓋 arrhythmia 定義、automaticity/triggered activity/reentry，以及 ECG 三層判讀。\n- [PRIOR_ASSISTANT_OUTPUT] [c1] A@2026-07-11T00:26:13Z, -102d: 精煉完稿段落：三列是 ECG 不同判讀層次；例示 normal sinus rhythm 合併 STEMI、sinus rhythm 合併 LBBB/axis deviation/LVH；QRST 須置於傳導與腔室背景解讀。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-07-12T04:36:41Z, -101d: shock 僅見一般問答／資源定位，非「小麻閱讀」完稿；未提供小麻最終長文標題、完稿訊號、全文檔案或原對話位置。\n\n- [USER_FACT] [c3] U@2025-11-07T04:12:01Z, -348d: 已確定內科四大主軸為心（Cardio）、腎（Nephro）、GI（Gastro）、呼吸（Pulmo）。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-07-11T02:16:52Z, -102d: 「心律不整」建議稿已完整撰寫，含標題、定義、ECG approach、bradyarrhythmia 分類；但屬修改／建議稿，未見使用者確認為最終完稿或檔案位置。\n\n- [USER_FACT] [c5] U@2026-07-12T10:26:43Z, +100d: 已明確要求把其他心臟內科筆記一併比較，並放入同一公平評分框架。\n- [PRIOR_ASSISTANT_OUTPUT] [c5] A@2026-07-12T10:26:59Z, +100d: 曾列出心臟 CV 主題：合併 HF、WPW/accessory pathway、LVEDP、DCM、arrhythmia/ECG、TAVR access；SCAI shock、ACS/troponin、冠狀動脈生理標為討論或片段、尚未固定成完整正式文章。\n- [PRIOR_ASSISTANT_OUTPUT] [c5] A@2026-07-12T10:28:13Z, +100d: HF 系列曾被合併視為一篇大型概念文；核心涵蓋四象限 congestion/perfusion、LVEDP/left-sided backward failure、急性誘因與 SCAI shock，評為 9.3/10。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c6] A@2026-10-20T05:18:23Z, -1d: 已核對並列出急重症 CV case reports：Post-MI Papillary Muscle Rupture（Cureus，2021，開放全文）、Cardiac Tamponade Mimicking Sepsis（J Community Hosp Intern Med Perspect，2014，開放全文）、Type A Dissection Mimicking STEMI（Acta Cardiologica Sinica，2014，台灣病例，開放全文）；皆為文獻病例，非「小麻閱讀」完稿證據。\n- [PRIOR_ASSISTANT_OUTPUT] [c6] A@2026-10-20T05:33:27Z, -1d: 對上述三篇的面試準備排序與急症框架；屬一般 case-report 分析，未提供小麻閱讀文章標題、日期、完稿訊號、原對話或實際檔案位置。\n\n- [USER_FACT] [c7] U@2026-05-16T16:43:44Z, +5mo: 比賽是一般內科、限大五 clerk；需聚焦常見、可能快速惡化且需住院的病人，排除外科/ICU/罕病。\n- [USER_PREFERENCE] [c7] U@2026-05-16T16:16:43Z, +5mo: 全員讀基本 ABG、ECG、CXR；分工：許 CV+呼吸、昇 CV+腎臟、駒 GI+infection；共同 Shock、Dyspnea、Sepsis。\n- [PRIOR_ASSISTANT_OUTPUT] [c7] A@2026-05-16T16:43:45Z, +5mo: 建議按住院常見症候群讀：Dyspnea、Chest pain、Fever/sepsis、AMS/metabolic problem；重點是 admission risk、danger、next step。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c8] A@2026-07-10T12:44:28Z, +103d: ACS 完稿〈ACS 的真正脈絡：從辨認心肌梗塞，到決定導管與導管後照護〉；使用者要求整合參考檔案、寫成通順深入淺出文章，內容涵蓋 troponin/MI 分類、ACS 處置、導管時機、PCI 後併發症及二級預防。\n- [USER_CONSTRAINT] [c8] U@2026-07-10T12:44:09Z, +103d: 要求以個人偏好與過去聊天脈絡整理成邏輯清楚、通順的文章，針對學習痛點；此前接受將三篇 ACS 內容合併，且第三篇精煉。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c9] A@2026-07-04T14:54:50Z, -3mo 16d: 完整 HF 惡化/MY HEART FAILS 長文；僅為一般問答整理，未見「小麻閱讀」完稿訊號、文章標題、.md 或可取回檔案位置。\n\n- [USER_FACT] [c10] U@2026-07-12T07:13:31Z, -100d: completed long-form 小麻閱讀 on acute HF: four quadrants, congestion/perfusion, EF/CO, AHF/ADHF, stages.\n- [USER_PREFERENCE] [c10] U@2026-07-12T07:17:16Z, -100d: prefers concise, paragraph-based prose; exclude HF Stage vs SCAI Shock Stage from main flow; treat as optional extension.\n- [PRIOR_ASSISTANT_OUTPUT] [c10] A@2026-07-12T08:40:18Z, -100d: completed second article “從四象限走進 LVEDP,” applying and limiting 小麻’s left-sided HF/LVEDP figure.\n\n- [USER_FACT] [c11] U@2026-07-10T16:18:21Z, -103d: 小麻閱讀〈深入評分：心肌病變〉（2026-07-10）；使用者撰寫 DCM 長文，含完整定義、病因、代償、DCM/HF 邊界與「充分解釋」推理。\n- [USER_FACT] [c11] U@2026-07-10T16:22:01Z, -103d: 使用者明確說明此文只是「解讀這張照片」，定位為閱讀小麻投影片的筆記，非獨立教學文。\n- [PRIOR_ASSISTANT_OUTPUT] [c11] A@2026-07-10T16:18:30Z, -103d: 評為可作社群自我筆記發布；未提供 .md、完稿標記、全文檔案位置或原始對話以外的取回位置。\n\n- [USER_FACT] [c12] U@2026-07-14T13:39:29Z, -98d: 已確認 2026-07-14 HCM〈Nonobstructive 只回答了一個問題〉為完整小麻閱讀長文；全文內容可由原對話取回。\n- [PRIOR_ASSISTANT_OUTPUT] [c12] A@2026-07-14T14:21:39Z, -98d: 文章被評為概念重構型成果：非醫學新發現，但以「nonobstructive 只回答 outflow、不能回答 filling/systolic performance/forward circulation/HF severity」重畫概念邊界，具獨特洞見。\n\n- [USER_FACT] [c13] U@2026-07-10T23:40:32Z, -102d: 小麻閱讀主題為 arrhythmia/ECG，使用 Rate→P→QRS 寬窄→P–QRS relationship；討論過完整 ECG 三項架構，但此段未形成可確認的最終長文完稿。\n- [PRIOR_ASSISTANT_OUTPUT] [c13] A@2026-07-10T23:40:35Z, -102d: 對話曾產出 arrhythmia/ECG 文章架構：Rate/rhythm、intervals-axis-chamber abnormality、QRST changes；來源僅為原對話，未見實際 .md 檔案位置或明確完稿訊號。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c14] A@2026-07-14T12:49:02Z, -98d: 完整 HCM 長文〈從 EF 回到 HCM 的定義〉，後修訂為〈Nonobstructive 只回答了一個問題〉；日期 2026-07-14；全文可取回：sandbox:/workspace/scratch/11f8eab906d6/HCM_從EF回到定義.md。\n- [PRIOR_ASSISTANT_OUTPUT] [c14] A@2026-07-14T12:57:56Z, -98d: 完稿訊號為明確提供完整稿、標示「2026.07.14 小麻閱讀（9E）」並建立／修訂文件；主軸是 LVOTO、diastolic filling、systolic contraction 三者分界。\n\n[gmail]\n[INSUFFICIENT] No matching Gmail emails found.\n\n[files]\nSources:\n[f0] 小麻內科國考_計畫與第一天.md\n[f1] ACS_v4.11_網站評價與修訂規格.md\n[f2] 心外_Orientation_完整導讀.md\n[f3] HCM_從EF回到定義.md\n\nEvidence:\n- [FILE_FACT] [f0] 檢索到的是 2026-10-21 的國考計畫；心臟章節（ECG、ACS、HF、Arrhythmias、Valvular、Syncope、PA catheter 等）均標為「未確認」，並非已完成的小麻閱讀長文。\n- [FILE_FACT] [f0] 計畫中的心臟主題日期是未來指定閱讀／補讀日期（如 ECG 2027-01-11、HF 2026-11-11、Valvular 2026-11-14、Arrhythmias 2026-11-12），不能作為既有完稿證據。\n- [FILE_CONTENT] [f1] ACS 文件明確是「網站評價與修訂規格」，內容稱為公開版單元核對與架構評價；不符合使用者要求的「小麻閱讀最終長文」，應排除。\n- [FILE_CONTENT] [f2] 心外文件中的 shock、valvular、revascularization 等是外部文獻／指南導讀，且多處標示未全文深讀，不是小麻閱讀完稿。\n- [INSUFFICIENT] 除使用者已指定的 2026-07-14 HCM 與 2026-07-12 Syncope 外，本次檢索結果沒有找到可核實的其他心臟 CV 小麻閱讀最終長文、其原對話來源或實際檔案位置；不補造題目。"
+    },
+    {
+      "author_role": "tool",
+      "content": "[convo search]\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-07-18T02:02:23Z, -95d: Retrieved discussion only compares Pocket Medicine oncology chapter with Pocket Oncology; no completed non-cardiac 「小麻閱讀」 article, original text, traceable URL/ID, or file location is present.\n- [USER_FACT] [c0] U@2026-07-18T01:51:59Z, -95d: User owns Pocket Oncology 2nd edition; this is book ownership, not evidence of a completed reading manuscript.\n\n- [PRIOR_ASSISTANT_OUTPUT] [c1] A@2026-10-21T06:18:33Z, -7m: 已辨識一篇過往小麻閱讀完稿：〈Nonobstructive 只回答了一個問題〉（7月）；內容曾被讀回，正文涵蓋 LVOTO、filling、contraction、EF、症狀、檢查與治療，但未提供原對話網址／ID或檔案位置。\n- [PRIOR_ASSISTANT_OUTPUT] [c1] A@2026-10-21T06:06:10Z, -19m: 已知醫學教育網站為 https://sheng-clinical-system.pages.dev；目前僅明確列出「小麻內科國考」路線與〈第一天教材：低血氧〉，非過去小麻閱讀完稿，且後續版本尚在重寫。\n- [USER_CONSTRAINT] [c1] U@2026-10-21T06:16:45Z, -9m: 過往小麻閱讀文章須作為品質與深度基準；本次要求完整搜尋非心臟主題實際完稿、保留原文與可追溯位置，不能以摘要或相近內容湊數。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-05-19T00:47:55Z, -155d: IBCC 完整介紹完稿〈好。IBCC 你可以把它理解成：一本免費、線上、持續更新、偏 ICU/急診重症的臨床決策書。〉，含網站架構、章節與使用法；原文仍在對話 [c2]，未提供可追溯對話網址/檔案位置。\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-05-19T02:41:42Z, -155d: IBCC podcast 英文理解策略完稿，含先讀文章、再聽 podcast、字幕降速等；原文仍在 [c2]，未提供獨立網址/檔案位置。\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-05-19T02:43:15Z, -155d: 文章與 podcast 對應關係說明完稿；原文仍在 [c2]，未提供獨立網址/檔案位置。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c3] A@2026-07-12T04:36:41Z, -101d: 僅見心臟主題 Pocket Medicine 相關內容：無獨立 shock 章；涉及 ACS、PA Catheter and Tailored Therapy、Heart Failure；未見 GI、肝膽、呼吸、腎臟電解質、血液腫瘤、內分泌或感染的實際「小麻閱讀」完稿、日期、原文位置或可追溯對話 ID。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-05-21T02:55:11Z, -5mo: Pocket Medicine（麻州住院醫師手冊）與 IBCC 被描述為使用中的核心資源；未提供「小麻閱讀」完稿、文章標題、日期、原文位置或可取回全文。\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-05-21T03:02:41Z, -5mo: 曾列 Frameworks for Internal Medicine、Clinical Problem Solvers Schemas、OnePagerICU 等問題庫／prompt 資源；屬外部資源建議，非已完成的 Pocket Medicine 閱讀文章。\n- [USER_FACT] [c4] U@2026-05-21T02:55:10Z, -5mo: 使用者表示 Pocket Medicine 與 IBCC 已「看不完」，但該對話未辨識出任何非心臟主題的實際「小麻閱讀」完稿。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c7] A@2026-07-12T23:05:03Z, -100d: 可辨識非心臟完稿：「如何正確閱讀小麻的 Approach to syncope」；2026-07-12；內容為完整 syncope 教學稿，原文在此對話可取回；此組未提供可追溯外部對話網址、ID或檔案位置。\n\n[gmail]\n[INSUFFICIENT] No relevant Gmail context found.\n\n[files]\nSources:\n[f0] 小麻內科國考_計畫與第一天.md\n[f1] 貼上的 Markdown (1).md\n\nEvidence:\n- [FILE_FACT] [f0] 目錄明確註明「日期代表首次指定閱讀或補讀，不代表已完成」且所有項目「初始皆未確認」；因此不能辨識為非心臟主題的實際完稿。\n- [FILE_FACT] [f1] 內容是 Pocket Medicine 索引、evidence pack 與檢索工程紀錄，非 GI、肝膽、呼吸、腎臟電解質、血液腫瘤、內分泌或感染的閱讀完稿。\n- [INSUFFICIENT] [f0] [f1] 本次可檢索檔案中，沒有找到符合條件、可確認已完成且可回傳完整原文的非心臟「小麻閱讀」文章；因此沒有可列的實際標題、完稿日期、原對話網址／ID或文章全文。"
+    },
+    {
+      "author_role": "tool",
+      "content": "[convo search]\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-07-12T07:13:38Z, -100d: 原始完整文章起首：「# 從四象限重新理解 Heart Failure：Congestion、Perfusion、EF、CO 與 ADHF 的完整脈絡」；全文訊息位於該 assistant message。\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-07-12T07:19:45Z, -100d: 後續精煉完稿標題為「# 從四象限理解 Heart Failure」，並改為段落式排版、移除 HF Stage／SCAI Shock Stage 主文比較；全文訊息位於該 assistant message。\n- [USER_CONSTRAINT] [c0] U@2026-07-12T07:13:31Z, -100d: 要求將四象限、congestion/perfusion、EF/CO、AHF/ADHF 等困惑整合成邏輯清楚文章；此 user message 本身僅為寫作指令，非文章全文。\n\n[gmail]\n[INSUFFICIENT] No matching Gmail emails found.\n\n[files]\n[INSUFFICIENT] No relevant file context found."
+    },
+    {
+      "author_role": "tool",
+      "content": "[convo search]\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-07-12T10:26:59Z, +100d: WPW/accessory pathway：曾列為「Accessory pathway & WPW syndrome」，評 9.1；核心為 accessory pathway→AVRT reentry／pre-excited AF；此處沒有實際完整文章標題、日期、使用者原文或最終稿正文／完成訊號。\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-07-12T10:26:59Z, +100d: DCM／心肌病變：僅列為「DCM／心肌病變」，評 8.1；此處沒有提供正式原文標題或原稿正文，故正式標題無法確認。\n- [PRIOR_ASSISTANT_OUTPUT] [c0] A@2026-07-12T10:26:59Z, +100d: TAVR access planning：僅列為比較項目，評 7.8；核心為 route passage × closure × rescue；未取得實際完整文章標題、日期、使用者原文或最後修訂正文／最終稿訊號。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c1] A@2026-07-12T08:34:22Z, -101d: 既有第二篇草稿題為「從四象限走進 LVEDP」；主軸為 pulmonary congestion 後，以 LVEDP→LVEDV、ESV/SV 分辨 systolic、high-output/regurgitant、diastolic、pericardial mechanisms；明確限制：非完整 HF 定義、Stage、ADHF、severity 或 shock 工具。\n- [USER_PREFERENCE] [c1] U@2026-07-12T08:37:18Z, -101d: 要段落文章，僅用必要空行，不要特殊格式。\n- [PRIOR_ASSISTANT_OUTPUT] [c1] A@2026-07-12T08:43:37Z, -101d: 最後修訂正文已改為純段落、保留必要空行；標題仍為「從四象限走進 LVEDP」。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c2] A@2026-07-12T09:36:34Z, -101d: WPW 僅見於既有對話辨識：主題「EP Study／PSVT／AVNRT／WPW：高價值紀錄」；未提供完整文章標題、日期、使用者原文、最後修訂正文或最終稿訊號。\n- [PRIOR_ASSISTANT_OUTPUT] [c5] A@2026-07-12T03:59:44Z, -101d: TAVR 僅見課程題名「Classification of AS and Introduction of TAVR」(2026-07-10，實體)；不是 TAVR access 原稿，僅比較/課程紀錄提及，未取得原稿。\n- [PRIOR_ASSISTANT_OUTPUT] [c2][c5] A@2026-07-12T09:36:34Z, -101d: DCM 原文正式標題：沒有可核實資料；不可依主題自行命名。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c3] A@2026-07-12T07:42:45Z, -101d: 既有 HF 閱讀稿實為「評分：從四象限理解 Heart Failure」；助理評為 94/100，並提出修訂方向，但未提供 WPW、TAVR access 或 DCM 原文標題。\n\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-07-12T07:31:02Z, -101d: DCM 原文未見正式文章標題；僅有正文標題「從四象限理解 Heart Failure」，內容為 HF/DCM 教材草稿，非 DCM 專文。\n- [PRIOR_ASSISTANT_OUTPUT] [c4] A@2026-07-12T07:31:02Z, -101d: WPW/accessory pathway 與 TAVR access 未出現在可見原文或最終修訂正文；僅比較紀錄提及，未取得原稿。\n- [USER_PREFERENCE] [c4] U@2026-07-12T07:30:25Z, -101d: 偏好段落推進、少量標題與空行、幾乎不使用條列；已接受此寫作方向。\n\n[gmail]\n[INSUFFICIENT] No relevant Gmail context found.\n\n[files]\nSources:\n[f0] 內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten.pdf\n\nEvidence:\n- [FILE_CONTENT] WPW/accessory pathway 僅在 Pocket Medicine 內容中作為醫學條目出現；未取得使用者原文、完整文章標題、日期、最後修訂正文或最終稿訊號。[f0]\n- [INSUFFICIENT] WPW：僅比較紀錄提及，未取得原稿。\n- [INSUFFICIENT] TAVR access：僅比較紀錄提及，未取得原稿；未找到實際完整文章標題、日期、使用者原文、最後修訂正文或最終稿訊號。\n- [FILE_CONTENT] DCM 在檢索到的參考文件中正式標題為「DILATED CARDIOMYOPATHY (DCM)」；但未取得可確認為使用者 DCM 原文的獨立稿件。[f0]\n- [INSUFFICIENT] DCM 原文：沒有取得可確認的原文檔案，故不能提供原文正式標題以外的稿件資訊。"
+    }
+  ]
+}

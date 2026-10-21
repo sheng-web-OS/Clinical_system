@@ -1,4 +1,5 @@
 import json
+import hashlib
 from pathlib import Path
 import sys
 import tempfile
@@ -64,6 +65,25 @@ class PublicationBoundary(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.load([dict(self.row, source="content/lessons/day.md", date="2026-02-30", review="author_source_check")])
 
+    def original_row(self):
+        return dict(self.row, kind="historical_original", date="2026-07-14",
+                    review="source_recovery_only",
+                    source_sha256=hashlib.sha256((self.root / self.row["source"]).read_bytes()).hexdigest())
+
+    def test_recovered_original_fingerprint_matches(self):
+        self.assertEqual(self.load([self.original_row()])[0]["kind"], "historical_original")
+
+    def test_recovered_original_changes_are_detected(self):
+        row = self.original_row()
+        (self.root / row["source"]).write_text("A replacement summary is not the original.\n")
+        with self.assertRaisesRegex(ValueError, "Recovered original changed"):
+            self.load([row])
+
+    def test_recovery_is_not_mislabeled_as_medical_review(self):
+        with self.assertRaisesRegex(ValueError, "source recovery review"):
+            self.load([dict(self.original_row(), review="human_review")])
+
 
 if __name__ == "__main__":
     unittest.main()
+

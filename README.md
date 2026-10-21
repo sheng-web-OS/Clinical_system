@@ -9,6 +9,7 @@
 ## 來源與審查
 
 - [Tamponade 完整教材](content/tamponade.md)：既有八個教學單元、2025 ESC 原始圖表對讀、反事實推理。
+- [小麻閱讀完稿](content/xiaoma-reading/index.md)：以往文章原文與獨立來源核對；目前完整取回 HCM 一篇，其餘歷史線索尚待全文。
 - [小麻內科國考](content/xiaoma-internal-medicine/index.md)：82 日核心路線、Pocket 122 個章節項目與持續累積的每日教材。
 - [2025 ESC 圖表核對](audit/esc2025-figure-check.md)：Figure 12、Table 17、Recommendation Tables 12／21。
 - [可追溯審查](audit/audit-log.md)：版本、證據、已知歧義與驗收限制。
@@ -61,3 +62,4 @@ python -m http.server --directory dist 8000
 網站只會發布 `dist/` 白名單中的教材 HTML、審查頁、CSS、JavaScript 與搜尋索引；私人 `archive/`、Markdown 來源、編輯狀態 JSON 與 Git 歷史不會被上傳。
 
 本教材供醫學教育；未經真人專科同儕審查。修改核心機轉時按需重建依賴、驗證影響，不強制永久維護全域 Claim Graph。
+

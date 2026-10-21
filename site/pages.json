@@ -6,6 +6,34 @@
     "subtitle": "病例 × 機轉 × ESC 指南 × 決策"
   },
   {
+    "source": "content/xiaoma-reading/index.md",
+    "output": "xiaoma-reading.html",
+    "title": "小麻閱讀",
+    "subtitle": "從定義與圖像，走到機轉與臨床判斷",
+    "collection": "xiaoma-reading",
+    "layout": "reading-library"
+  },
+  {
+    "source": "content/xiaoma-reading/originals/2026-07-14-hcm.md",
+    "output": "xiaoma-reading-20260714-hcm.html",
+    "title": "Nonobstructive 只回答了一個問題",
+    "subtitle": "HCM 的定義、outflow、filling 與 systolic emptying",
+    "collection": "xiaoma-reading",
+    "kind": "historical_original",
+    "date": "2026-07-14",
+    "navigation": false,
+    "review": "source_recovery_only",
+    "source_sha256": "86f84012585a689b4954e76b9cce01759df7bb1a7a91be32d2b65101409d142b",
+    "layout": "reading-original"
+  },
+  {
+    "source": "audit/xiaoma-reading-recovery.md",
+    "output": "xiaoma-reading-recovery.html",
+    "title": "小麻原稿回收核對",
+    "subtitle": "原文、版本、搜尋範圍與尚未取回的文章",
+    "navigation": false
+  },
+  {
     "source": "content/xiaoma-internal-medicine/index.md",
     "output": "xiaoma-internal-medicine.html",
     "title": "小麻內科國考",

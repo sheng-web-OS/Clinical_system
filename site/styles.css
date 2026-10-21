@@ -3,3 +3,31 @@
 .causal-map{margin:24px auto 30px;background:var(--surface);padding:25px;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);max-width:780px}
 .causal-tier{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.causal-card{border-radius:12px;padding:15px 18px;min-width:185px;flex:1;max-width:325px;text-align:center;font-weight:730;line-height:1.45;background:var(--brand-light);border:1px solid var(--line);color:var(--ink)}.causal-tier:first-child .causal-card{background:var(--brand);color:var(--surface);border-color:var(--brand)}.causal-down{text-align:center;color:var(--brand);font-size:1.8rem;line-height:1.4;font-weight:800}.causal-map figcaption{font-size:.75em;line-height:1.5;color:var(--muted);margin-top:14px;text-align:center}@media(max-width:540px){.causal-tier{display:grid;grid-template-columns:1fr;width:100%}.causal-card{max-width:none;min-width:0}}
 .lesson-list{display:grid;gap:14px;margin:22px 0}.lesson-card{display:grid;gap:8px;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;box-shadow:var(--shadow)}.lesson-card strong{font-size:1.15em;color:var(--ink)}.lesson-card>span:last-child{font-size:.83em;color:var(--muted)}.lesson-date{font-size:.73em;font-weight:800;letter-spacing:.09em;color:var(--brand)}.article details{border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:24px 0;background:var(--surface)}.article summary{cursor:pointer;font-weight:750;color:var(--brand)}.lesson-card:focus-visible,summary:focus-visible{outline:3px solid var(--brand);outline-offset:4px}
+
+/* Long-form originals keep editorial bookkeeping outside the reading flow. */
+.reading-layout .page,.reading-layout .top{max-width:800px}
+.reading-layout .brand small{display:none}
+.reading-layout .hero{margin-bottom:24px}
+.reading-layout .hero h1{font-size:clamp(2rem,4vw,2.85rem);line-height:1.35;letter-spacing:-.025em}
+.reading-layout .hero .lede{font-size:1rem;line-height:1.8}
+.reading-layout .article{line-height:1.95}
+.reading-layout .article h2{font-size:1.3em;border-bottom:0;padding-bottom:0;margin-top:2.8em}
+.reading-layout .article p{margin:1.2em 0}
+.reading-toc{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;margin:24px 0 34px;font-size:.86rem;color:var(--muted)}
+.reading-toc summary,.reading-end summary{cursor:pointer;color:var(--brand)}
+.reading-toc summary span{margin-left:10px;font-size:.77rem;color:var(--muted)}
+.reading-toc .toclinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 20px;padding:18px 0 8px}
+.reading-toc a{text-decoration:none;font-size:.83rem;line-height:1.6}
+.original-list{display:grid;gap:18px;margin:38px 0 48px}
+.original-card{display:grid;gap:12px;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:6px;padding:26px 30px;background:var(--surface);text-decoration:none;transition:box-shadow .18s,transform .18s}
+.original-card:hover{opacity:1;box-shadow:var(--shadow);transform:translateY(-2px)}
+.original-card strong{font-size:1.38em;line-height:1.5;color:var(--ink)}
+.original-card>span{font-size:.85em;color:var(--muted);line-height:1.7}
+.original-card .original-date{font-size:.7em;color:var(--brand);letter-spacing:.06em}
+.original-card .read-link{color:var(--brand);font-weight:700;margin-top:7px}
+.original-card:focus-visible{outline:3px solid var(--brand);outline-offset:4px}
+.reading-end{margin-top:60px;padding-top:26px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+.reading-end details{margin-top:24px;padding:15px 0}
+.reading-end p{max-width:640px;line-height:1.8}
+@media(max-width:760px){.reading-layout .page{margin-top:32px}.reading-layout .hero h1{font-size:2rem}.reading-toc .toclinks{grid-template-columns:1fr}.original-card{padding:22px 20px}.original-card strong{font-size:1.22em}}
+
