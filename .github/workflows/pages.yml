@@ -19,6 +19,8 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+      - name: Run editorial and publication regression tests
+        run: python -m unittest discover -s tests
       - name: Evidence-gated site build
         run: bash tools/build_site.sh
       - name: Save verified static site
