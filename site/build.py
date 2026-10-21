@@ -3,16 +3,18 @@
 from pathlib import Path
 import html
 import json
+import os
 import re
 import shutil
 import sys
 import mistune
-from catalog import load_pages
+from catalog import load_public_pages
 from home import render_home
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
-PAGES = load_pages(BASE)
+PREVIEW = os.environ.get('CF_PAGES_BRANCH', '') not in ('', 'main') or (os.environ.get('CLINICAL_SITE_PREVIEW') == '1' and os.environ.get('CF_PAGES_BRANCH') != 'main')
+PAGES = load_public_pages(BASE, preview=PREVIEW)
 FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row in PAGES]
 class Renderer(mistune.HTMLRenderer):
     def __init__(self):
@@ -161,6 +163,9 @@ def render(md_file, output, page_title, subtitle):
     body=rewrite_internal_links(body,md_file)
     current=next(row for row in PAGES if row["output"]==output)
     website = render_reader(current, body, rr.headings)
+    if PREVIEW:
+        website = website.replace('<head>', '<head><meta name="robots" content="noindex,nofollow">', 1)
+        website = website.replace('<main class="reader-main" id="reading-content">', '<main class="reader-main" id="reading-content"><aside class="preview-ribbon" role="note">編輯審查預覽｜本頁尚未通過正式發布驗收。</aside>', 1)
     (DIST/output).write_text(website,encoding="utf-8")
     return {"title":page_title,"url":output,"text":re.sub(r"\s+"," ",re.sub(r"<[^>]*>"," ",body))[:60000]}
 def main():
@@ -169,7 +174,7 @@ def main():
     for name in ("styles.css","home.css","app.js"):
         shutil.copyfile(BASE/"site"/name,DIST/name)
     rows=[render(*entry) for entry in FILES]
-    (DIST/"index.html").write_text(render_home(PAGES), encoding="utf-8")
+    (DIST/"index.html").write_text(render_home(PAGES, preview=PREVIEW), encoding="utf-8")
     searchable=json.dumps(rows,ensure_ascii=False)
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")
     (DIST/"site-index.js").write_text("window.CLINICAL_INDEX = "+searchable+";",encoding="utf-8")
