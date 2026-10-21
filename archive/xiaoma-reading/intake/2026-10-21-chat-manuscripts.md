@@ -1,19 +1,19 @@
 # 2026-10-21 對話直貼文章｜原稿接收清單
 
-狀態：**對話中已收到原文，尚未逐篇寫入 Git 原稿檔案；未納入公開 site/pages.json。**
+狀態：**本輪對話已收到 21 篇完整文字，其中六篇已寫入 Git 原稿檔案並加入 site/pages.json，另十五篇仍保存在對話中、尚待入庫。** 原稿的網站部署以實際 Cloudflare 成功狀態為準。
 
-本清單是接收及搬遷追蹤，不是已出版、已完成醫學事實查核、已確認最終版本的證明。原文保留在本次 ChatGPT 對話；必須在逐字取回／核對後才可標為 `imported`。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
+本清單是接收及搬遷追蹤，不是已完成醫學事實查核、已確認唯一最終版本的證明。原文保留在本次 ChatGPT 對話；僅已核對確實寫入 Git 原稿檔案者標為 `imported`；不同歷史版本仍可能待比較。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
 
 | 日期（文章自述） | 原始題名 | 系列／來源標籤 | 內容移轉 |
 |---|---|---|---|
-| 2026-07-28 | 同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？ | Status epilepticus 閱讀 | conversation_only |
+| 2026-07-28 | 同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？ | Status epilepticus 閱讀 | imported → `content/xiaoma-reading/originals/2026-07-28-status-epilepticus.md` |
 | 2026-07-26 | 糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？ | 藥物閱讀（Constipation） | conversation_only |
 | 2026-07-24 | 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？ | 小麻閱讀（9E） | conversation_only |
 | 2026-07-23 | 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？ | 小麻閱讀（9E） | conversation_only |
 | 2026-07-21 | 找到腹瀉的類型，為什麼仍然沒有找到病因？ | 小麻閱讀（9E） | conversation_only |
 | 2026-07-21 | 同一顆 octreotide，為什麼既能止瀉又能促動？ | 藥理學精要閱讀 | conversation_only |
-| 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | conversation_only |
-| 2026-07-20 | 胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？ | 小麻閱讀（9E） | conversation_only |
+| 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-diuretics.md` |
+| 2026-07-20 | 胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-pancreatitis.md` |
 | 2026-07-19 | 肝臟被占據，為什麼最突出的卻是 ALP？ | 小麻閱讀（9E）；Cholestasis 續篇 | conversation_only |
 | 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | conversation_only |
 | 2026-07-19 | 我們看見的是病程，還是病程留下的訊號？ | 小麻閱讀（9E）；chronic HBV 續篇 | conversation_only |
@@ -21,10 +21,10 @@
 | 2026-07-17 | 還不知道是什麼，憑什麼治療 | 小麻閱讀（9E）；WCT／ACLS | conversation_only |
 | 2026-07-16 | 急性 AF，不一定要立刻結束 | 小麻閱讀（9E） | conversation_only |
 | 2026-07-16 | Syncope：以機轉定義，卻從現象開始診斷 | 小麻閱讀（9E） | conversation_only |
-| 2026-07-12 | 從四象限走進 LVEDP | 小麻閱讀 | conversation_only |
-| 2026-07-12 | Heart Failure：從四象限到診斷與急性失衡 | 小麻&IBCC 閱讀 | conversation_only |
+| 2026-07-12 | 從四象限走進 LVEDP | 小麻閱讀 | imported → `content/xiaoma-reading/originals/2026-07-12-lvedp.md` |
+| 2026-07-12 | Heart Failure：從四象限到診斷與急性失衡 | 小麻&IBCC 閱讀 | imported → `content/xiaoma-reading/originals/2026-07-12-heart-failure.md` |
 | 2026-07-11 | Accessory pathway ＆ WPW syndrome | 小麻閱讀（9E） | conversation_only |
-| 2026-07-10 | 心肌病變 | 小麻閱讀（9E）；DCM | conversation_only |
+| 2026-07-10 | 心肌病變 | 小麻閱讀（9E）；DCM | imported → `content/xiaoma-reading/originals/2026-07-10-dcm.md` |
 | 2026-07-07 | ASD 與 PFO | 台北榮總心臟科教學紀錄 | conversation_only |
 | 未提供 | 臨床筆記：血管炎 | 臨床筆記／非小麻閱讀 | conversation_only |
 
