@@ -4,20 +4,20 @@
 
 此儲存庫是 Master Prompt v5.1 的版本化知識來源；Cardiac Tamponade 是第一個端到端教材驗證案例，不是系統的終點。
 
-系統設計與後續演進遵循 [Master Prompt v5.1 — Capability-Native Architecture Principle](docs/master-prompt-v5.1-architecture.md)：能力原生優先、知識資產最小充分保存、品質契約優先、複雜度須自證價值。
+系統設計遵循 [Master Prompt v5.1 — Capability-Native Architecture Principle](docs/master-prompt-v5.1-architecture.md)；實際運作與實驗收斂請讀 [統一運作契約](docs/clinical-os-integration-20261021.md)、[實驗登記與驗收](experiments/README.md)。供 Codex／工具 Agent 使用的最小執行入口是 [AGENTS.md](AGENTS.md)，它不是另一套完整 Master Prompt。
 
 ## 來源與審查
 
 - [Clinical OS 跨篇知識脈絡](content/clinical-os/index.md)：將實際已典藏原文、已出版教材與待驗證的跨篇因果路線分開呈現，串起 HCM、LVEDP、HF、利尿劑與重症等問題。
 - [Tamponade 完整教材](content/tamponade.md)：既有八個教學單元、2025 ESC 原始圖表對讀、反事實推理。
 - [正文品質契約（EPQC）](docs/editorial-prose-quality-contract.md)：以原創 HCM／ACS 的認知推進作標竿，規範概念解混、機轉推導、審稿退稿與實際對標驗證。
-- [小麻閱讀完稿](content/xiaoma-reading/index.md)：以往文章原文與獨立來源核對；目前完整回收並列入原稿出版目錄四篇（HCM、HF、LVEDP、利尿劑），其餘歷史線索尚待全文或版本確認。
+- [小麻閱讀原稿](content/xiaoma-reading/index.md)：保存實際已入庫、附原文身分的文章；以該頁及其逐篇來源紀錄為最新清單，勿從舊 checkpoint 的篇數推測現在進度。
 - [小麻內科國考](content/xiaoma-internal-medicine/index.md)：82 日核心路線、Pocket 122 個章節項目與持續累積的每日教材。
 - [2025 ESC 圖表核對](audit/esc2025-figure-check.md)：Figure 12、Table 17、Recommendation Tables 12／21。
 - [可追溯審查](audit/audit-log.md)：版本、證據、已知歧義與驗收限制。
 - [歷史原稿](archive/tamponade_r2_baseline.md)：原材料封存，不再當作正式編輯來源。
 
-小麻閱讀目前已有 **HCM、Heart Failure、LVEDP、利尿劑四篇完整文本**列入原稿出版目錄；后三篇由作者提供對話原文於當日續收。約 21 篇歷史文章仍是待清查的候選範圍，不以摘要、片段或主題線索冒充全文。跨篇知識脈絡頁是公開編輯導航，**原稿已回收不等於關鍵 Figure／Table、最新文獻與各篇因果依賴的反向驗證已完成**。DCM 獨立原稿仍待定位。
+2026-10-21 主分支已收錄 HCM，以及由當日 21 篇對話接收中轉存的 HF、LVEDP、利尿劑、DCM、胰臟炎、癲癇重積六篇，另十五篇仍待逐篇轉存。此數量是**原文 Git 存檔狀態**，並非作者最終發表版本、全篇 Figure／Table 或臨床醫學審查已核實。後續請以[實際原稿目錄](content/xiaoma-reading/index.md)和[接收紀錄](archive/xiaoma-reading/intake/2026-10-21-chat-manuscripts.md)判斷，不從過時的工作清單自動生成進度。跨篇知識脈絡頁僅是編輯導航，不冒充因果依賴已驗證。
 
 小麻內科國考的個人時程原檔保留在私人 `archive/xiaoma-internal-medicine/`，公開入口只發布教材與去除個人行程的學習路線。後續新增方式見 [小麻教材發布](docs/xiaoma-publishing.md)；出版目錄為 `site/pages.json`。
 
