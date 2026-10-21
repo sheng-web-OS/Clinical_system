@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "id": "ESC2025-IMPS",
+      "title": "2025 ESC Guidelines for the management of myocarditis and pericarditis",
+      "url": "https://doi.org/10.1093/eurheartj/ehaf192",
+      "version": "2025",
+      "locator": "Sections 3.3, 4, 5; Table 4, 6, 7 and Figure 9 identified but not fully reviewed",
+      "verified": true,
+      "access_scope": "Guideline metadata, headings, introductory scope and selected searchable excerpts",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "ESC2025-SLIDES",
+      "title": "ESC official 2025 myocarditis/pericarditis guideline slide set",
+      "url": "https://www.escardio.org/static-file/Escardio/Guidelines/Products/Slide%20sets/2025/2025%20official%20slides_MyoPeri.pdf",
+      "version": "2025",
+      "locator": "Recommendations for clinical evaluation of myocarditis and pericarditis (1)",
+      "verified": true,
+      "access_scope": "Recommendation table on initial evaluation, CMR and admission",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "ESC2015-PERICARDIAL",
+      "title": "2015 ESC Guidelines for the diagnosis and management of pericardial diseases",
+      "url": "https://doi.org/10.1093/eurheartj/ehv318",
+      "version": "2015 superseded",
+      "locator": "Section 3.1 Acute pericarditis",
+      "verified": true,
+      "access_scope": "Diagnostic criteria and ECG description",
+      "accessed_at": "2026-10-21"
+    }
+  ]
+}
