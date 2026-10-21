@@ -3,16 +3,17 @@
 from pathlib import Path
 import html
 import json
+import os
 import re
 import shutil
 import sys
 import mistune
-from catalog import load_pages
+from catalog import load_public_pages
 from home import render_home
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
-PAGES = load_pages(BASE)
+PAGES = load_public_pages(BASE, preview=os.environ.get('CLINICAL_SITE_PREVIEW') == '1')
 FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row in PAGES]
 class Renderer(mistune.HTMLRenderer):
     def __init__(self):
