@@ -1,6 +1,6 @@
 # 沿著病例，把分散的醫學觀念接起來
 
-病人的症狀不按教科書章節出現。呼吸困難可以來自肺、心室充盈、流出道阻塞，或心包限制；同樣一個「心衰竭」標籤，也未必指向相同的治療。以下以已發表的真實病例為入口，再回到小麻閱讀，逐一檢查哪些機轉真的成立。
+病人的症狀不按教科書章節出現。呼吸困難可以來自肺、心室充盈或流出道阻塞；同樣一個「心衰竭」標籤，也未必指向相同的治療。以下以已發表的真實病例為入口，再回到小麻閱讀，逐一檢查哪些機轉真的成立。
 
 ## 病例一｜有水腫、BNP 升高，為什麼利尿後反而更喘？
 
@@ -29,14 +29,6 @@
 
 沿著 [HCM 原文](../xiaoma-reading/originals/2026-07-14-hcm.md) → [DCM 原文](../xiaoma-reading/originals/2026-07-10-dcm.md) → [HF：syndrome 與處置](../xiaoma-reading/originals/2026-07-12-heart-failure.md) 閱讀，核心問題是：**一個影像表型，究竟提供了多少病因資訊？**
 
-## 病例三｜心包液抽掉了，為什麼幾個月後仍然有嚴重鬱血？
-
-67 歲男性以呼吸困難、JVP 升高與水腫就醫，起初因 tamponade 接受心包引流，之後又出現復發性心包積液。三個月後再度因鬱血表現就醫，當時未見顯著積液；然而心超、心導管與 MRI 支持 **constrictive pericarditis**，最終在手術病理確認隱匿性惡性腫瘤。[閱讀 Flood 等人 2017 年病例及心超／MRI 圖](https://casereports.bmj.com/content/2017/bcr-2016-216813.long)。
-
-兩次就醫的共同表現是靜脈壓升高與充盈受限，卻不是「同一種 tamponade 一直沒好」。**Tamponade 主要是當下心包壓迫造成的循環受限；constriction 則可在沒有大量積液時，由較不順應的心包限制舒張期充盈。** 這兩種情況可能先後出現，但不能當成必然演變。病例提供了比只背「高 JVP、低血壓」更精確的問題：解除一種外在限制後，有沒有另一種限制仍存在？
-
-原病例中的心包壓迫與低灌流，可以接回 [LVEDP 與心室充盈](../xiaoma-reading/originals/2026-07-12-lvedp.md) 和 [Heart Failure](../xiaoma-reading/originals/2026-07-12-heart-failure.md)。這條路徑與 HCM／DCM **並不是同一個自然病程**，只是在「量測的腔內壓，不等於有效的跨壁充盈條件」這個生理問題上相遇。
-
 ## 哪些東西不能因為相似，就被硬串在一起？
 
 | 表面上相似 | 必須另外證明的事 |
@@ -44,7 +36,6 @@
 | 高 EF 與 HCM | 是否有結構性 HCM？是否存在動態 LVOTO？兩者不可畫等號 |
 | 肺部濕囉音、周邊水腫與容量過多 | 左室充盈、右側靜脈壓、瓣膜逆流、肺病是否各自貢獻症狀？ |
 | DCM-like 形態與不可逆末期心肌病變 | 是否存在心肌炎、頻脈、毒性或其他可處理的上游原因？ |
-| Tamponade 與 constrictive pericarditis | 當下受限的壓力來源與心包性質是什麼？有沒有積液和血流動力學證據？ |
 
 另有兩個適合獨立閱讀的高風險臨床分歧：[Acute pancreatitis：壞死與持續器官衰竭](../xiaoma-reading/originals/2026-07-20-pancreatitis.md)，以及 [Status epilepticus：治療歷史如何決定 refractory 定義](../xiaoma-reading/originals/2026-07-28-status-epilepticus.md)。它們暫不因都涉及 ICU，就被併成同一條病例路徑。
 
