@@ -64,16 +64,12 @@ if not errors:
         for private_token in ("libfile_", "5824859", "Z639", "plan-20261021.md", "七大核心學習檔案"):
             if private_token in content: errors.append(f"{filename}: private plan data in public build: {private_token}")
     front = (DIST/"index.html").read_text("utf8")
-    clinical = (DIST/"tamponade.html").read_text("utf8") if (DIST/"tamponade.html").is_file() else ""
-    if "小麻閱讀" not in front or "library-grid" not in front:
-        errors.append("Missing editorial library landing page")
-    if (DIST/"tamponade.html").is_file():
-        if 'href="tamponade.html"' not in front:
-            errors.append("Approved clinical feature missing from discovery")
-        if "Cardiac Tamponade Mimicking Sepsis" not in clinical:
-            errors.append("Missing case title")
-        for i in range(1,9):
-            if f'id="u{i:02}"' not in clinical: errors.append(f"Missing U{i:02} chapter anchor")
+    if "小麻閱讀" not in front:
+        errors.append("Missing XiaoMa landing page")
+    if PAGES and "library-grid" not in front:
+        errors.append("Approved library must contain article discovery")
+    if not PAGES and "尚無作品通過正式上架驗收" not in front:
+        errors.append("Editorial preview must disclose unpublished state")
     if 'href="https://github.com/sheng-web-OS/Clinical_system"' in front:
         errors.append("Private repository direct link should not appear in public nav")
 
