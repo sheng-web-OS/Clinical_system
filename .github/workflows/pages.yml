@@ -22,6 +22,9 @@ jobs:
       - name: Run editorial and publication regression tests
         run: python -m unittest discover -s tests
       - name: Evidence-gated site build
+        # PRs may preview an empty approved set; production deploy must fail closed.
+        env:
+          CLINICAL_SITE_PREVIEW: ${{ github.event_name == 'pull_request' && '1' || '0' }}
         run: bash tools/build_site.sh
       - name: Save verified static site
         uses: actions/upload-artifact@v4
