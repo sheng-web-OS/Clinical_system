@@ -8,7 +8,7 @@
   "sessions": 10,
   "papers": 40,
   "caveats": [
-    "此檔只屬已確認考試梯次的來源索引，不等於原始 PDF 或逐題資料已下載或校驗。",
+    "此索引中的 URL 曾按官方樣本校驗；下載結果依 ingestion-report.json 為準，不能以索引欄位替代逐題或影像驗證。",
     "下載 PDF 後以 PDF 魔術位元、SHA-256 與實際科目代碼驗證；錯誤或封鎖不應默認成功。",
     "更正答案 t=M 可能包含多選給分與全題給分；不能直接以單一字母取代。",
     "圖像、表格、ECG 與影像題不得以純文字抽取結果視為完整題目。"
@@ -31,9 +31,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=11&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=11&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2022-s1-med4",
@@ -52,9 +53,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=22&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=22&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2022-s1-med5",
@@ -73,9 +75,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=33&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=33&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2022-s1-med6",
@@ -94,9 +97,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=44&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111020&q=1&s=44&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2022-s2-med3",
@@ -115,9 +119,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2022-s2-med4",
@@ -136,9 +141,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=22&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=22&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2022-s2-med5",
@@ -157,9 +163,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=33&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=33&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2022-s2-med6",
@@ -178,9 +185,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=44&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=44&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s1-med3",
@@ -199,9 +207,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s1-med4",
@@ -220,9 +229,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=22&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s1-med5",
@@ -241,9 +251,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=33&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s1-med6",
@@ -262,9 +273,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=44&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s2-med3",
@@ -283,9 +295,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s2-med4",
@@ -304,9 +317,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=22&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=22&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s2-med5",
@@ -325,9 +339,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=33&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=33&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2023-s2-med6",
@@ -346,9 +361,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=44&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=44&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s1-med3",
@@ -367,9 +383,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s1-med4",
@@ -388,9 +405,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=22&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=22&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s1-med5",
@@ -409,9 +427,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=33&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=33&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s1-med6",
@@ -430,9 +449,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=44&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s2-med3",
@@ -451,9 +471,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s2-med4",
@@ -472,9 +493,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=22&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=22&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s2-med5",
@@ -493,9 +515,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=33&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=33&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2024-s2-med6",
@@ -514,9 +537,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=44&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s1-med3",
@@ -535,9 +559,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s1-med4",
@@ -556,9 +581,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0104&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0104&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s1-med5",
@@ -577,9 +603,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0105&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s1-med6",
@@ -598,9 +625,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0106&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0106&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s2-med3",
@@ -619,9 +647,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s2-med4",
@@ -640,9 +669,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0102&t=S",
       "correction_pdf": null,
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s2-med5",
@@ -661,9 +691,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0103&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0103&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2025-s2-med6",
@@ -682,9 +713,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0104&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0104&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s1-med3",
@@ -703,9 +735,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0103&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0103&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s1-med4",
@@ -724,9 +757,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0104&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0104&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s1-med5",
@@ -745,9 +779,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0105&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0105&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s1-med6",
@@ -766,9 +801,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0106&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115020&q=1&s=0106&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s2-med3",
@@ -787,9 +823,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s2-med4",
@@ -808,9 +845,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0102&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0102&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s2-med5",
@@ -829,9 +867,10 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     },
     {
       "id": "2026-s2-med6",
@@ -850,9 +889,18 @@
       "standard_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0104&t=S",
       "correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0104&t=M",
       "source_index_verified": "official_exam_page",
-      "pdf_link_verification": "URL_pattern_checked_for_sample; individual_pdf_pending_import",
-      "ingestion_status": "not_downloaded",
-      "classification_status": "not_tagged"
+      "pdf_link_verification": "downloaded_pdf_confirmed; refer ingestion-report.json",
+      "ingestion_status": "pdf_downloaded_header_and_sha256_verified",
+      "classification_status": "not_tagged",
+      "question_level_verification": "not_yet_issued"
     }
-  ]
+  ],
+  "ingestion_report": "ingestion-report.json",
+  "ingestion_snapshot": {
+    "verified_pdf_files": 112,
+    "verified_question_pdfs": 40,
+    "failed_pdf_files": 0,
+    "generated_utc": "2026-10-21T09:20:03.985220+00:00",
+    "validation_level": "PDF header+SHA256 only; NOT full page/subject or question fidelity audit"
+  }
 }
