@@ -22,8 +22,8 @@
 <div class="case-evidence">TTE：LVEDD 37 mm、LVEF 80%、心室壁厚正常；可見 mitral systolic anterior motion（SAM）、LVOT 彩色血流加速，CW Doppler 呈 late-peaking，最大 LVOT 壓差 98 mmHg。無明顯 RV 擴大或 overt cor pulmonale。</div>
 <fieldset class="case-choices"><legend>哪個修正最符合目前證據？</legend>
 <label class="case-option"><input type="radio" name="case-step-1" value="a"><span>EF 80% 代表循環功能正常，可排除心衰竭表現。</span></label>
-<label class="case-option"><input type="radio" name="case-step-1" value="b"><span>符合動態 LVOTO，且左室較小、收縮亢進；不應單憑 SAM 就診斷結構性 HCM。</span></label>
-<label class="case-option"><input type="radio" name="case-step-1" value="c"><span>既有 LVOT 壓差 98 mmHg，就能算出病人的 cardiac output 與 LVEDP。</span></label>
+<label class="case-option"><input type="radio" name="case-step-1" value="b"><span>既有 LVOT 壓差 98 mmHg，就能算出病人的 cardiac output 與 LVEDP。</span></label>
+<label class="case-option"><input type="radio" name="case-step-1" value="c"><span>符合動態 LVOTO，且左室較小、收縮亢進；不應單憑 SAM 就診斷結構性 HCM。</span></label>
 </fieldset>
 <button type="button" class="case-submit" data-case-submit>確認這一步判斷</button>
 <p class="case-alert" role="status" aria-live="polite" hidden></p>
@@ -34,9 +34,9 @@
 <p class="case-stage-label">03／治療反應　·　治療後的新資料必須能改判</p>
 <div class="case-evidence">接受肺炎/COPD 治療、bisoprolol 與審慎補液後，SAM 消失、pro-BNP 下降至 369。後來因周邊水腫使用 torsemide 10 mg/day，兩天後喘又變嚴重，SAM/LVOTO 再現，pro-BNP 回升 620。</div>
 <fieldset class="case-choices"><legend>如何解釋這次惡化？</legend>
-<label class="case-option"><input type="radio" name="case-step-2" value="a"><span>這證明利尿劑無效，需要直接增加 torsemide。</span></label>
-<label class="case-option"><input type="radio" name="case-step-2" value="b"><span>從此所有有 LVOTO 的病人都不可以使用利尿劑。</span></label>
-<label class="case-option"><input type="radio" name="case-step-2" value="c"><span>優先重估 preload-sensitive LVOTO 與整體容量／灌流，不能把喘加重直接當成利尿抗性。</span></label>
+<label class="case-option"><input type="radio" name="case-step-2" value="a"><span>優先重估 preload-sensitive LVOTO 與整體容量／灌流，不能把喘加重直接當成利尿抗性。</span></label>
+<label class="case-option"><input type="radio" name="case-step-2" value="b"><span>這證明利尿劑無效，需要直接增加 torsemide。</span></label>
+<label class="case-option"><input type="radio" name="case-step-2" value="c"><span>從此所有有 LVOTO 的病人都不可以使用利尿劑。</span></label>
 </fieldset>
 <button type="button" class="case-submit" data-case-submit>確認這一步判斷</button>
 <p class="case-alert" role="status" aria-live="polite" hidden></p>
@@ -47,8 +47,8 @@
 <p class="case-stage-label">04／反事實　·　能不能將概念轉移，而不是只背病例？</p>
 <div class="case-evidence"><strong>假設情境（不是原病例）</strong>：另一位病人同樣水腫又喘，但影像顯示 LV 擴大、升高的左心充盈壓、明確肺鬱血，且沒有 SAM 或 LVOT flow acceleration。</div>
 <fieldset class="case-choices"><legend>第一個病例對這位新病人的治療有什麼約束？</legend>
-<label class="case-option"><input type="radio" name="case-step-3" value="b"><span>應分別判定兩人的機轉；第一例不構成對這位病人去鬱血治療的禁令。</span></label>
 <label class="case-option"><input type="radio" name="case-step-3" value="a"><span>只要病人有水腫，先前病例就證明利尿會使 LVOTO 惡化。</span></label>
+<label class="case-option"><input type="radio" name="case-step-3" value="b"><span>應分別判定兩人的機轉；第一例不構成對這位病人去鬱血治療的禁令。</span></label>
 <label class="case-option"><input type="radio" name="case-step-3" value="c"><span>沒有 SAM 便可不管灌流與腎功能而固定加量利尿。</span></label>
 </fieldset>
 <button type="button" class="case-submit" data-case-submit>確認這一步判斷</button>
