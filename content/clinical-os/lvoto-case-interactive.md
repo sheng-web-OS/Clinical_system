@@ -4,7 +4,7 @@
 
 <div class="case-sequence" data-case-sequence>
 <div class="case-step-header"><span class="case-step-counter" data-case-progress>1 / 4</span><span class="case-step-context">先作判斷，再閱讀新證據</span></div>
-<section class="case-step" data-case-stage="0" data-correct="b" data-case-correct="b" >
+<section class="case-step" data-case-stage="0" data-case-correct="b">
 <p class="case-stage-label">01／初診　·　先不要把表現直接當病因</p>
 <div class="case-evidence">72 歲 COPD 患者，咳膿痰、喘、心跳 110/min，肺部影像有肺炎，雙腳凹陷性水腫、頸靜脈怒張，左胸骨緣有新的 4/6 收縮期雜音，pro-BNP 2,515 pg/mL。</div>
 <fieldset class="case-choices"><legend>此時哪些推論可以成立？</legend>
@@ -17,7 +17,7 @@
 <div class="case-rationale" data-case-rationale hidden><strong>推論關鍵</strong><p>水腫提供的是組織間液體與靜脈端線索，不會直接告訴我們左室容積或流出道情況；pro-BNP 也不能單獨區分所有心臟與肺部貢獻。新的收縮期雜音尤其要求進一步心超。</p></div>
 <button type="button" class="case-continue" data-case-next hidden>接收下一項證據 →</button>
 </section>
-<section class="case-step" data-case-stage="1" data-correct="c" data-case-correct="b" hidden>
+<section class="case-step" data-case-stage="1" data-case-correct="c" hidden>
 <p class="case-stage-label">02／心超　·　新增證據有沒有推翻初始直覺？</p>
 <div class="case-evidence">TTE：LVEDD 37 mm、LVEF 80%、心室壁厚正常；可見 mitral systolic anterior motion（SAM）、LVOT 彩色血流加速，CW Doppler 呈 late-peaking，最大 LVOT 壓差 98 mmHg。無明顯 RV 擴大或 overt cor pulmonale。</div>
 <fieldset class="case-choices"><legend>哪個修正最符合目前證據？</legend>
@@ -30,7 +30,7 @@
 <div class="case-rationale" data-case-rationale hidden><strong>推論關鍵</strong><p>高 EF 是比例，不能取代 stroke volume 或 cardiac output；SAM、late-peaking Doppler 與顯著壓差支持動態阻塞，但 HCM 仍需要獨立的結構與臨床判斷。這個病例沒有直接報告 CO 或 LVEDP。</p></div>
 <button type="button" class="case-continue" data-case-next hidden>接收下一項證據 →</button>
 </section>
-<section class="case-step" data-case-stage="2" data-correct="a" data-case-correct="b" hidden>
+<section class="case-step" data-case-stage="2" data-case-correct="a" hidden>
 <p class="case-stage-label">03／治療反應　·　治療後的新資料必須能改判</p>
 <div class="case-evidence">接受肺炎/COPD 治療、bisoprolol 與審慎補液後，SAM 消失、pro-BNP 下降至 369。後來因周邊水腫使用 torsemide 10 mg/day，兩天後喘又變嚴重，SAM/LVOTO 再現，pro-BNP 回升 620。</div>
 <fieldset class="case-choices"><legend>如何解釋這次惡化？</legend>
@@ -43,7 +43,7 @@
 <div class="case-rationale" data-case-rationale hidden><strong>推論關鍵</strong><p>在這個病人，利尿前後的 SAM/LVOTO 再現為負荷依賴性阻塞提供支持。處置須重新檢查機轉，不可將個案上升為『一律禁用利尿』的法則。</p></div>
 <button type="button" class="case-continue" data-case-next hidden>接收下一項證據 →</button>
 </section>
-<section class="case-step" data-case-stage="3" data-correct="b" data-case-correct="b" hidden>
+<section class="case-step" data-case-stage="3" data-case-correct="b" hidden>
 <p class="case-stage-label">04／反事實　·　能不能將概念轉移，而不是只背病例？</p>
 <div class="case-evidence"><strong>假設情境（不是原病例）</strong>：另一位病人同樣水腫又喘，但影像顯示 LV 擴大、升高的左心充盈壓、明確肺鬱血，且沒有 SAM 或 LVOT flow acceleration。</div>
 <fieldset class="case-choices"><legend>第一個病例對這位新病人的治療有什麼約束？</legend>
