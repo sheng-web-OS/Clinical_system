@@ -20,3 +20,57 @@
   for(const link of links){const heading=document.getElementById(link.getAttribute('href').slice(1));if(heading)ob.observe(heading)}
  }
 })();
+
+/* Library affordances are optional; the complete article and links work without JS. */
+(()=>{
+  const page=document.body;
+  if(page.classList.contains('lesson-page')){
+    const title=document.querySelector('.reader-hero h1')?.textContent?.trim();
+    const path=window.location.pathname.split('/').pop();
+    if(title && path && /^[a-z0-9-]+\.html$/.test(path)){
+      try{localStorage.setItem('clinical-last-read',JSON.stringify({title,url:path}))}catch(e){}
+    }
+  }
+  if(!page.classList.contains('library-page'))return;
+  const buttons=[...document.querySelectorAll('[data-library-filter]')];
+  const cards=[...document.querySelectorAll('.library-card')];
+  const grid=document.querySelector('#library-grid');
+  const empty=document.querySelector('#library-filter-empty');
+  for(const button of buttons){
+    button.addEventListener('click',()=>{
+      const filter=button.dataset.libraryFilter;
+      for(const target of buttons){
+        const active=target===button;
+        target.classList.toggle('is-active',active);
+        target.setAttribute('aria-pressed',String(active));
+      }
+      let visible=0;
+      for(const card of cards){
+        const show=filter==='all'||card.dataset.collection===filter;
+        card.hidden=!show;
+        if(show)visible++;
+      }
+      grid?.classList.toggle('is-filtered',filter!=='all');
+      if(empty)empty.hidden=visible>0;
+    });
+  }
+  const input=document.querySelector('#search');
+  document.addEventListener('keydown',e=>{
+    const t=e.target;
+    if(e.key==='/' && !e.altKey && !e.metaKey && !e.ctrlKey &&
+       !['INPUT','TEXTAREA','SELECT'].includes(t?.tagName) && !t?.isContentEditable){
+      e.preventDefault();input?.focus();
+    }else if(e.key==='Escape' && document.activeElement===input){
+      input.value='';input.dispatchEvent(new Event('input'));input.blur();
+    }
+  });
+  try{
+    const read=JSON.parse(localStorage.getItem('clinical-last-read')||'null');
+    if(read&&typeof read.title==='string'&&typeof read.url==='string'&&
+       /^[a-z0-9-]+\.html$/.test(read.url)&&cards.some(c=>c.getAttribute('href')===read.url)){
+      const link=document.querySelector('#resume-reading');
+      const title=document.querySelector('#resume-title');
+      if(link && title){link.href=read.url;title.textContent=read.title;link.hidden=false}
+    }
+  }catch(e){}
+})();
