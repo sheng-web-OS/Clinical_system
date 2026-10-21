@@ -10,7 +10,7 @@ from catalog import load_pages
 PAGES = load_pages(ROOT)
 DIST = ROOT / "dist"
 EXPECTED = {
-    "styles.css",
+    "styles.css", "home.css", "index.html",
     "app.js", "site-index.json", "site-index.js", ".nojekyll",
 } | {row["output"] for row in PAGES}
 actual = {p.relative_to(DIST).as_posix() for p in DIST.rglob("*") if p.is_file()} if DIST.is_dir() else set()
@@ -63,9 +63,15 @@ if not errors:
         for private_token in ("libfile_", "5824859", "Z639", "plan-20261021.md", "七大核心學習檔案"):
             if private_token in content: errors.append(f"{filename}: private plan data in public build: {private_token}")
     front = (DIST/"index.html").read_text("utf8")
-    if "Cardiac Tamponade Mimicking Sepsis" not in front: errors.append("Missing case title")
+    clinical = (DIST/"tamponade.html").read_text("utf8")
+    if "小麻閱讀" not in front or "library-grid" not in front:
+        errors.append("Missing editorial library landing page")
+    if 'href="tamponade.html"' not in front:
+        errors.append("Missing clinical feature from discovery")
+    if "Cardiac Tamponade Mimicking Sepsis" not in clinical:
+        errors.append("Missing case title")
     for i in range(1,9):
-        if f'id="u{i:02}"' not in front: errors.append(f"Missing U{i:02} chapter anchor")
+        if f'id="u{i:02}"' not in clinical: errors.append(f"Missing U{i:02} chapter anchor")
     if 'href="https://github.com/sheng-web-OS/Clinical_system"' in front:
         errors.append("Private repository direct link should not appear in public nav")
 
