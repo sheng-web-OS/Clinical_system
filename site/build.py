@@ -8,6 +8,7 @@ import shutil
 import sys
 import mistune
 from catalog import load_pages
+from home import render_home
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
@@ -87,7 +88,7 @@ def validate_output_links():
 
 def render_reader(page, body, headings):
     """Reader-facing teaching, with routes and editorial records in separate pages."""
-    is_lesson = bool(page.get("date"))
+    is_lesson = bool(page.get("date")) or page["source"] == "content/tamponade.md"
     is_archive = page.get("collection") == "xiaoma-reading"
     is_xiaoma = page.get("collection", "").startswith("xiaoma-")
     home = "xiaoma-reading.html" if is_archive else ("xiaoma-internal-medicine.html" if is_xiaoma else "index.html")
@@ -100,17 +101,18 @@ def render_reader(page, body, headings):
     title = html.escape(page["title"])
     subtitle = html.escape(page["subtitle"])
     section = html.escape(page.get("section", "小麻閱讀" if is_archive else "臨床推理"))
-    mode = "lesson-page" if is_lesson or page["output"] == "index.html" else "directory-page"
+    mode = "lesson-page" if is_lesson or page["source"] == "content/tamponade.md" else "directory-page"
     if not is_xiaoma:
         mode += " clinical-page"
     active = page["output"]
     references = page.get("references", "xiaoma-reading-recovery.html" if is_archive else ("xiaoma-sources.html" if is_xiaoma else "esc-audit.html"))
     lessons = sorted((row for row in PAGES if row.get("collection") == page.get("collection") and row.get("date")), key=lambda row: (row["date"], row["output"]))
     number = next((str(i).zfill(2) for i, row in enumerate(lessons, 1) if row["output"] == active), "")
-    destinations = [("xiaoma-internal-medicine.html", "教材"), ("xiaoma-reading.html", "舊文"), ("xiaoma-plan.html", "路線"), (references, "來源")] if is_xiaoma else [
-        ("index.html", "臨床教材"), ("xiaoma-internal-medicine.html", "小麻內科"), ("esc-audit.html", "來源對讀"), ("audit-log.html", "修訂紀錄")]
+    destinations = ([("index.html", "首頁"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-plan.html", "閱讀路線")]
+                    if is_archive else
+                    [("index.html", "首頁"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-plan.html", "閱讀路線")])
     top_links = ''.join('<a'+(' aria-current="page"' if active == dest else '')+' href="'+html.escape(dest,quote=True)+'">'+label+'</a>' for dest, label in destinations)
-    brand = '<a class="reader-brand" href="'+home+'"><span class="brand-mark" aria-hidden="true">'+('小' if is_xiaoma else '讀')+'</span>'+('小麻<span>內科國考</span>' if is_xiaoma else '臨床閱讀')+'</a>'
+    brand = '<a class="reader-brand" href="index.html"><span class="brand-mark" aria-hidden="true">小</span>小麻閱讀<span>CLINICAL SYSTEM</span></a>'
     original_note = ('<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><details><summary>原稿與本次收錄</summary><p>保留 '+html.escape(page.get("date", "").replace("-", "."))+' 完整稿。原文與本次編輯註記分開呈現；收錄不代表全篇已完成最新指引重審。</p><a href="xiaoma-reading-recovery.html">來源核對與編輯註記 →</a></details></aside>') if page.get("kind") == "historical_original" else ''
     return '''<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'''+html.escape(page["title"]+' · '+page["subtitle"],quote=True)+'''">
@@ -152,9 +154,10 @@ def render(md_file, output, page_title, subtitle):
 def main():
     if DIST.exists():shutil.rmtree(DIST)
     DIST.mkdir(parents=True)
-    for name in ("styles.css","app.js"):
+    for name in ("styles.css","home.css","app.js"):
         shutil.copyfile(BASE/"site"/name,DIST/name)
     rows=[render(*entry) for entry in FILES]
+    (DIST/"index.html").write_text(render_home(PAGES), encoding="utf-8")
     searchable=json.dumps(rows,ensure_ascii=False)
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")
     (DIST/"site-index.js").write_text("window.CLINICAL_INDEX = "+searchable+";",encoding="utf-8")

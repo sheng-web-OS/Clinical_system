@@ -1,7 +1,7 @@
 [
   {
     "source": "content/tamponade.md",
-    "output": "index.html",
+    "output": "tamponade.html",
     "title": "Cardiac Tamponade Mimicking Sepsis",
     "subtitle": "病例 × 機轉 × ESC 指南 × 決策"
   },
