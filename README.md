@@ -9,9 +9,12 @@
 ## 來源與審查
 
 - [Tamponade 完整教材](content/tamponade.md)：既有八個教學單元、2025 ESC 原始圖表對讀、反事實推理。
+- [小麻內科國考](content/xiaoma-internal-medicine/index.md)：82 日核心路線、Pocket 122 個章節項目與持續累積的每日教材。
 - [2025 ESC 圖表核對](audit/esc2025-figure-check.md)：Figure 12、Table 17、Recommendation Tables 12／21。
 - [可追溯審查](audit/audit-log.md)：版本、證據、已知歧義與驗收限制。
 - [歷史原稿](archive/tamponade_r2_baseline.md)：原材料封存，不再當作正式編輯來源。
+
+小麻內科國考的個人時程原檔保留在私人 `archive/xiaoma-internal-medicine/`，公開入口只發布教材與去除個人行程的學習路線。後續新增方式見 [小麻教材發布](docs/xiaoma-publishing.md)；出版目錄為 `site/pages.json`。
 
 ## 目標工作循環
 

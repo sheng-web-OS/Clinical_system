@@ -7,14 +7,12 @@ import re
 import shutil
 import sys
 import mistune
+from catalog import load_pages
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
-FILES = [
-    ("content/tamponade.md", "index.html", "Cardiac Tamponade Mimicking Sepsis", "病例 × 機轉 × ESC 指南 × 決策"),
-    ("audit/esc2025-figure-check.md", "esc-audit.html", "2025 ESC 原圖對讀", "原始圖表、推薦層級與文件內部歧異"),
-    ("audit/audit-log.md", "audit-log.html", "可追溯審查", "檔案、主張、來源與發布驗收"),
-]
+PAGES = load_pages(BASE)
+FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row in PAGES]
 class Renderer(mistune.HTMLRenderer):
     def __init__(self):
         super().__init__(escape=False)
@@ -89,6 +87,13 @@ def validate_output_links():
 
 def render(md_file, output, page_title, subtitle):
     raw=(BASE/md_file).read_text(encoding="utf-8")
+    if "<!-- XIAOMA_PUBLISHED_LESSONS -->" in raw:
+        lessons = sorted((row for row in PAGES if row.get("collection") == "xiaoma-internal-medicine" and row.get("date")), key=lambda row: row["date"])
+        # Links use output paths already, so the public list needs no source-file exposure.
+        cards = '<div class="lesson-list">' + ''.join(
+            '<a class="lesson-card" href="' + html.escape(row["output"], quote=True) + '"><span class="lesson-date">' + html.escape(row["date"]) + '</span><strong>' + html.escape(row["title"]) + '</strong><span>核心脈絡 · 必讀段落 · 國考題與解析 →</span></a>'
+            for row in lessons) + '</div>'
+        raw = raw.replace("<!-- XIAOMA_PUBLISHED_LESSONS -->", cards)
     raw=re.sub(r'<!-- (U0[1-8]) -->',lambda m:'<a class="chapter-anchor" id="'+m.group(1).lower()+'"></a>',raw)
     rr=Renderer()
     parser=mistune.create_markdown(renderer=rr,plugins=["table","strikethrough","url"])
@@ -97,16 +102,18 @@ def render(md_file, output, page_title, subtitle):
     body=re.sub(r'<pre><code class="language-mermaid">([\s\S]*?)</code></pre>',render_mechanism,body)
     body=rewrite_internal_links(body,md_file)
     toc=''.join('<a href="#'+ident+'">'+html.escape(txt)+'</a>' for ident,txt in rr.headings)
-    nav=''.join('<a class="'+("active" if target==output else "")+'" href="'+target+'">'+html.escape(label)+'</a>' for _,target,label,_ in FILES)
+    current=next(row for row in PAGES if row["output"]==output)
+    header_stamp=html.escape(current.get("date", "Clinical System"))
+    nav=''.join('<a class="'+("active" if row["output"]==output or (row.get("collection") and row.get("collection")==current.get("collection")) else "")+'" href="'+row["output"]+'">'+html.escape(row["title"])+'</a>' for row in PAGES if row.get("navigation",True))
     website='''<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cardiac Tamponade × Evidence-Gated Medical Learning">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'''+html.escape(page_title+' · '+subtitle,quote=True)+'''">
 <title>'''+html.escape(page_title)+''' · Clinical Knowledge</title><link rel="stylesheet" href="styles.css"></head><body>
 <div class="floating"></div><div class="layout"><aside class="sidebar"><button class="mobile-menu" id="mobilemenu" aria-label="展開導覽">選單</button>
 <a class="brand" href="index.html">CLINICAL / KNOWLEDGE<small>Master Prompt v5.1 · Evidence-Gated Publishing</small></a>
 <label class="side-label" for="search">全文搜尋</label><input id="search" class="searchbox" type="search" placeholder="搜尋教材與審查…"><div class="results" id="results" aria-live="polite"></div>
 <span class="side-label">學習與審查</span><nav class="menu">'''+nav+'''</nav>
 <span class="side-label">正式來源</span><nav class="menu"><span class="private-source">內容來源：私人 GitHub</span><a href="https://doi.org/10.1093/eurheartj/ehaf192" target="_blank" rel="noopener">2025 ESC Guideline ↗</a></nav></aside>
-<main class="main"><header class="top"><span>2026.10.21 · Medical education · Source-traceable</span>
+<main class="main"><header class="top"><span>'''+header_stamp+''' · Medical education · Source-traceable</span>
 <div class="tools"><button id="fontminus" aria-label="縮小字體">A−</button><button id="fontplus" aria-label="放大字體">A+</button><button id="theme">明暗切換</button></div></header>
 <section class="page"><div class="hero"><span class="eyebrow">Clinical reasoning / Evidence / Review</span><h1>'''+html.escape(page_title)+'''</h1><p class="lede">'''+html.escape(subtitle)+'''。由版本化 Markdown 自動產生，原始資料與推論分離。</p></div>
 <div class="toc"><strong>本頁章節</strong><div class="toclinks">'''+toc+'''</div></div>

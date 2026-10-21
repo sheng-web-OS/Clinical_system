@@ -4,6 +4,9 @@ from pathlib import Path
 import re
 import sys
 root=Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(root / "site"))
+from catalog import load_pages
+pages=load_pages(root)
 s=(root/"content/tamponade.md").read_text(encoding="utf8")
 e=(root/"audit/esc2025-figure-check.md").read_text(encoding="utf8")
 a=(root/"audit/audit-log.md").read_text(encoding="utf8")
@@ -19,7 +22,7 @@ if re.search(r"!\[[^]]*\]\(assets/[^)]+\)",s):errors.append("Broken local asset 
 for path in ["site/build.py","site/styles.css","site/app.js","audit/audit-log.md","audit/esc2025-figure-check.md","archive/tamponade_r2_baseline.md"]:
     if not (root/path).exists():errors.append("Missing "+path)
 if "2026-10-21" not in a:errors.append("Audit date absent")
-for name in ["content/tamponade.md","audit/esc2025-figure-check.md","audit/audit-log.md"]:
+for name in [row["source"] for row in pages]:
     text=(root/name).read_text(encoding="utf8")
     for target in re.findall(r"\[[^]]*\]\(([^)]+)\)",text):
         if not target.startswith(("http://","https://","#")):

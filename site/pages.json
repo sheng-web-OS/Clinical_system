@@ -1,0 +1,37 @@
+[
+  {
+    "source": "content/tamponade.md",
+    "output": "index.html",
+    "title": "Cardiac Tamponade Mimicking Sepsis",
+    "subtitle": "病例 × 機轉 × ESC 指南 × 決策"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/index.md",
+    "output": "xiaoma-internal-medicine.html",
+    "title": "小麻內科國考",
+    "subtitle": "從每日一個臨床問題，累積內科推理與國考判斷",
+    "collection": "xiaoma-internal-medicine"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md",
+    "output": "xiaoma-20261021-hypoxemia.html",
+    "title": "低血氧：氧合與換氣必須分開判斷",
+    "subtitle": "第一天 · 換氣不足、V/Q mismatch 與 shunt",
+    "collection": "xiaoma-internal-medicine",
+    "date": "2026-10-21",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "audit/esc2025-figure-check.md",
+    "output": "esc-audit.html",
+    "title": "2025 ESC 原圖對讀",
+    "subtitle": "原始圖表、推薦層級與文件內部歧異"
+  },
+  {
+    "source": "audit/audit-log.md",
+    "output": "audit-log.html",
+    "title": "可追溯審查",
+    "subtitle": "檔案、主張、來源與發布驗收"
+  }
+]

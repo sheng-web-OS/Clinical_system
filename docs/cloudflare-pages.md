@@ -27,7 +27,7 @@ Cloudflare build command 會按順序執行：
 
 ## 資訊邊界
 
-可發布：`index.html`、`esc-audit.html`、`audit-log.html`、`styles.css`、`app.js`、`site-index.json`、`site-index.js` 及 `.nojekyll`。
+可發布：`site/pages.json` 明列且通過驗證的教材／審查 HTML，以及固定的 `styles.css`、`app.js`、`site-index.json`、`site-index.js` 與 `.nojekyll`。目前包括原三頁及小麻內科國考入口、第一天教材；不能以通配符發布整個來源目錄。目錄只允許 `content/` 或 `audit/` 內已審查的 Markdown，私人 archive 不可列入。
 
 不應發布：`archive/`、`content/` 原始 Markdown、`tools/`、`.github/`、編輯狀態 JSON、Git 歷史與任何憑證。**公開審查頁本身依然公開**，請在任何教材進版前確認無病人可辨識資訊、私人訊息或未取得散布權限之圖表。
 
