@@ -109,7 +109,7 @@ SALSA randomized trial 比較 3% saline 的 rapid intermittent bolus 與 slow co
 1. *Pocket Medicine*, 9th ed., PDF physical pp. 166–169，特別是 Figure 4-4、IV fluid table、volume repletion 後 ADH suppression 段落。本輪已實讀 p.166–168 文字，目視查核 Figure 4-4 與 p.168 輸液表；p.169 的後續療法目前僅抽取文字。
 2. Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. *Eur J Endocrinol.* 2014;170:G1–G47. https://academic.oup.com/ejendo/article/170/3/G1/6668028
 3. Sterns RH, et al. Treatment Guidelines for Hyponatremia: Stay the Course. *Clin J Am Soc Nephrol.* 2024;19:129–135. https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/
-4. Warren AM, et al. Approach to the Patient: Hyponatremia and the Syndrome of Inappropriate Antidiuresis. *J Clin Endocrinol Metab.* 2022;107:2362–2376. https://academic.oup.com/jcem/article/107/8/2362/6578514
+4. Martin-Grace J, et al. Approach to the Patient: Hyponatremia and the Syndrome of Inappropriate Antidiuresis. *J Clin Endocrinol Metab.* 2022;107:2362–2376. https://academic.oup.com/jcem/article/107/8/2362/6578514
 5. Baek SH, et al. SALSA RCT. *JAMA Intern Med.* 2021;181:81–92. https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2772353
 6. Hyponatraemia—treatment standard 2024. *Nephrol Dial Transplant.* 2024;39:1583–1592. https://academic.oup.com/ndt/article/39/10/1583/7713921
 
