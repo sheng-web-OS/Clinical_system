@@ -154,5 +154,27 @@
     "review": "source_recovery_only",
     "source_sha256": "e0367d5d0b3765c7607ccd3512d98f08ed529070c3d80fc076c7099accfb5452",
     "layout": "reading-original"
+  },
+  {
+    "source": "content/clinical-os/lvoto-case-interactive.md",
+    "output": "lvoto-case-interactive.html",
+    "title": "水腫與高 BNP，為何利尿後更喘？",
+    "subtitle": "循序解讀 COPD 病人的 LVOTO、前負荷與治療回饋",
+    "collection": "clinical-cases",
+    "kind": "case_lesson",
+    "layout": "reader",
+    "navigation": false,
+    "section": "臨床推理"
+  },
+  {
+    "source": "content/clinical-os/lvoto-case-static.md",
+    "output": "lvoto-case-static.html",
+    "title": "水腫與高 BNP，為何利尿後更喘？",
+    "subtitle": "同一病例的完整連續推論",
+    "collection": "clinical-cases",
+    "kind": "case_lesson",
+    "layout": "reader",
+    "navigation": false,
+    "section": "臨床推理"
   }
 ]
