@@ -121,7 +121,7 @@
        status.textContent='請先選一個推論，再檢查下一項證據。';
        return;
      }
-     const correct=['b','b','b','b'][i];
+     const correct=stage.dataset.caseCorrect;
      for(const option of stage.querySelectorAll('.case-option')){
        const radio=option.querySelector('input');
        radio.disabled=true;
