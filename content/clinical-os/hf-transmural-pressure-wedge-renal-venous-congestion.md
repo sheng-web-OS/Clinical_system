@@ -19,7 +19,7 @@ LVEDP 是心室腔內相對參考壓力所測得的 end-diastolic pressure。然
 
 最重要的反事實是：**降低右心的過度擴張與外部約束，可能使 LVEDP 下降而 LVEDV 不減少，甚至讓有效前向輸出改善。** 這不能單靠一條固定的「LVEDP 對 LVEDV」曲線理解，因為改變的是整條 apparent diastolic pressure–volume relationship 的位置，而不必然是 intrinsic myocardial stiffness。Borlaug 與 Reddy 的綜述討論了短暫 RV unloading 的生理實驗、2019 年 Figure 2 的 ventricular interaction，以及 medical unloading 時的效應［1］。
 
-臨床研究中常以 RAP 或 RVEDP 近似反映心包約束，但 **RAP 並非所有病人都能無誤替代 pericardial pressure**，也不能對單一病人的兩個數值作減法後，就宣布已直接測得 myocardial stiffness。呼吸相位、胸腔壓力、右心狀態、量測時間點與病程動態仍是限制。這是 D 類警戒，而非另一項無條件的公式。Pocket Medicine 原書 Figure 1-2（PDF p.35）已明確把「LVEDP 升高但 LVEDV normal」分流至 diastolic dysfunction 與 pericardial disease，因此不得把此分岔本身標成 C。本文的 C 僅在 **measured intracavitary pressure ≠ effective transmural distending pressure**、RV–LV interaction 對表觀 EDPVR 的影響及其反事實推理。
+臨床研究中常以 RAP 或 RVEDP 近似反映心包約束，但 **RAP 並非所有病人都能無誤替代 pericardial pressure**，也不能對單一病人的兩個數值作減法後，就宣布已直接測得 myocardial stiffness。呼吸相位、胸腔壓力、右心狀態、量測時間點與病程動態仍是限制。這是 D 類警戒，而非另一項無條件的公式。Pocket Medicine 原書 **Figure 1-2「Approach to left-sided heart failure」是 LVEDP／LVEDV 的原因分流圖，不是 wet/dry × warm/cold 的四象限圖**。該流程圖（PDF p.35）已明確把「LVEDP 升高但 LVEDV normal」分流至 diastolic dysfunction 與 pericardial disease，因此不得把此分岔本身標成 C。本文的 C 僅在 **RV–LV interaction 對表觀 EDPVR 的影響及其反事實推理**；transmural pressure 的定義也已見於 Pocket p.32，不得視為原書未具備的全新概念。
 
 ## 二、肺部看到的是上游壓力，不是 LVEDP 的直接讀數〔D：壓力定位與代理指標〕
 
@@ -44,6 +44,8 @@ Mullens 等（JACC 2009）研究 145 名進展期 ADHF 患者；住院期間出�
 **這些人類資料支持 venous congestion 是重要而不可忽略的機轉，不直接證明單純降低 CVP 就會改善每一位病人的腎臟結局。** 2009 年原研究作者在回覆質疑時，也明確承認其資料不能建立直接因果［5］。因此不應把「CVP 越高越差」寫成普遍的治療閾值，也不應將 transient creatinine rise 一概判為安全。需要連續看血壓、灌流、尿量、congestion、腎損傷線索與治療時間軸。
 
 ## 四、同一本小麻的兩個敘事，其實不能被當作同一條恆等式〔B／D〕
+
+Pocket Medicine 第九版 PDF p.32 已直接定義 **transmural pressure = measured intracardiac pressure − intrathoracic pressure**，並記載 end-expiration 與 PEEP 的量測限制。這裡的 basic transmural-pressure formula 對原書屬 A，不可認領為新的 C 類發現；本篇只探索 **pericardial restraint／RV interaction 如何跨篇連結到 apparent LV EDPVR**，及其臨床反事實。尤其 intrathoracic pressure 是實務代理量，不能與各個病人的 effective pericardial pressure 無條件畫等號。
 
 Pocket Medicine 第九版 PDF p.34，在急性心因性休克 hemodynamic optimization 部分，以 **LVEDV ≈ LVEDP ≈ LAP ≈ PCWP** 作 bedside preload 的簡化代理鏈；但同書 p.31 的 PA catheter rationale 隨即（在書的物理頁序中實際較前）列出該鏈無法直接成立的數種條件，p.35 Figure 1-2 更把同一高 LVEDP 分成增加與未增加 LVEDV 的兩支。
 
@@ -84,7 +86,7 @@ Pocket Medicine 第九版 PDF p.34，在急性心因性休克 hemodynamic optimi
 |---|---|---|
 | A | LVEDP 與 LVEDV 分開；心肌 diastolic dysfunction／pericardial constraint 分開（LVEDP） | 不冒認此基礎概念 |
 | A | wet／cold 與 volume accumulation／redistribution 分開（HF）；creatinine 須連結病程（Diuretics） | 不重寫其已完成的連續推理 |
-| C | 原文承認 external pressure，但未充分展開其量測物理意義 | intracavitary vs transmural pressure、RV interaction 對 apparent EDPVR 的影響 |
+| A→B／C（限於跨篇應用） | 原文承認 external pressure；Pocket p.32 已有 transmural-pressure 公式 | 補上 RV interaction／pericardial restraint 如何移動 apparent EDPVR，並用反例連結舊稿 |
 | A→B／D | 原文從 LA／pulmonary vein 傳遞到 LV 的條件已有描述；Pocket p.31 已列出 wedge/LVEDP 代理失效情境 | 跨原稿、Pocket 節點建立測量層級橋接；Hemnes 研究量化 AF／mitral／LA 對代理的限制 |
 | A→B／C（僅指作者稿尚未具體展開的中介） | HF／Diuretics 原文已區分低灌流與腎功能變化；Pocket p.177 已直述 renal venous congestion | 連接 CVP/RAP → renal venous pressure → filtration／sodium handling，並校正 association/causation |
 | D | 原文已反對 creatinine 一點定論 | CVP 和 renal dysfunction 的人類研究以 association 為主，不能誤用為個別治療因果保證 |
@@ -97,7 +99,7 @@ Pocket Medicine 第九版 PDF p.34，在急性心因性休克 hemodynamic optimi
 - ［3］Mullens 2009（JACC）：原始正文與 Figure 1 標題／caption 已定位；尚待圖像逐張目視核對。是 observational cohort。
 - ［4］Damman 2009（JACC）：原研究摘要已核對；不得誤將 Damman 的 CVP–eGFR 圖當作 Mullens Figure 1。
 - ［5］Mullens 2009 Reply：已核對作者明示「資料無法證明直接因果」的文字。
-- Pocket Medicine 9E **已核**：PDF 第 35 頁 Figure 1-2 的實際圖像（LVEDP→LVEDV 分流、systolic/high-SV/diastolic/pericardial 四支）；PDF p.31 PA cath 代理失效條件（已讀正文，該頁圖像取得失敗）；PDF p.34 acute cardiogenic shock 的 preload 近似與 CVP/RAP renal congestion（已看頁面）；PDF p.177 cardiorenal syndrome 段落（已讀正文，該頁圖像取得失敗）。本輪未重新完成其餘相關 Table／Figure／footnotes 全部核查。
+- Pocket Medicine 9E **已核**：PDF 第 35 頁 Figure 1-2（**非四象限原圖**） 的實際圖像（LVEDP→LVEDV 分流、systolic/high-SV/diastolic/pericardial 四支）；PDF p.31 PA cath 代理失效條件與 p.32 transmural-pressure 定義（已讀正文，該頁圖像取得失敗）；PDF p.34 acute cardiogenic shock 的 preload 近似與 CVP/RAP renal congestion（已看頁面）；PDF p.177 cardiorenal syndrome 段落（已讀正文，該頁圖像取得失敗）。本輪未重新完成其餘相關 Table／Figure／footnotes 全部核查。
 - 以上來源並非截至今日的全面 systematic review；單篇稿件仍需對照最新指南、原書與適用條件，才能進入出版審查。
 
 ### 來源
