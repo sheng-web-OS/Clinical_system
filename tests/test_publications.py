@@ -14,7 +14,7 @@ class PublicationBoundary(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        for folder in ("site", "content/lessons", "archive"):
+        for folder in ("site", "content/lessons", "archive", "audit/publication"):
             (self.root / folder).mkdir(parents=True)
         (self.root / "content/example.md").write_text("# Public teaching\n")
         (self.root / "content/lessons/day.md").write_text("# Lesson\n")
