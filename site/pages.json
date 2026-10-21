@@ -1,11 +1,5 @@
 [
   {
-    "source": "content/tamponade.md",
-    "output": "tamponade.html",
-    "title": "Cardiac Tamponade Mimicking Sepsis",
-    "subtitle": "病例 × 機轉 × ESC 指南 × 決策"
-  },
-  {
     "source": "content/clinical-os/index.md",
     "output": "knowledge-atlas.html",
     "title": "臨床問題地圖",
