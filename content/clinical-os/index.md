@@ -1,6 +1,6 @@
 # 臨床知識脈絡｜從作者原文重建共同前提
 
-這一頁從已提供的文章出發，而不是替作者另造一份主題目錄。2026 年 10 月 21 日的對話已收到 21 篇完整文章；其中 HF、LVEDP、Diuretics 三篇已寫入原稿庫，另有既存的 HCM 完整原稿。其他稿件已取得於對話、尚待逐篇原文移轉；以下先用它們的具體論述建立可驗證的跨篇關係，不將文章摘要冒充原作，也不把尚未完成的醫學查核說成已通過。
+這一頁從已提供的文章出發，而不是替作者另造一份主題目錄。2026 年 10 月 21 日的對話已收到 21 篇完整文章；其中 HF、LVEDP、Diuretics、DCM、Acute pancreatitis、Status epilepticus 六篇已寫入原稿庫，另有既存的 HCM 完整原稿。其他十五篇已取得於對話、尚待逐篇原文移轉；以下先用它們的具體論述建立可驗證的跨篇關係，不將文章摘要冒充原作，也不把尚未完成的醫學查核說成已通過。
 
 ## 先從一個病人的肺水腫開始
 
@@ -10,7 +10,7 @@
 
 第一篇先提醒讀者：wet 不是 cold，EF 不是 cardiac output，congestion 也不等於全身鈉水一定大量增加。第二篇再追問，在有 pulmonary congestion 的前提下，左心 filling pressure 的上升，是由容量增加、compliance 改變還是 external constraint 形成。第三篇終於把這個模型帶進治療回饋：一次給藥後有沒有 natriuresis、全天有沒有足夠負鈉平衡、病人的 congestion 是否真的改善，是不同問題。
 
-[HCM：Nonobstructive 只回答了一個問題](../xiaoma-reading/originals/2026-07-14-hcm.md)提供重要的反事實：沒有 LVOTO、EF 仍 preserved 的病人，仍可能因 filling failure 出現 congestion。至於 DCM 原稿則從 morphology、contractility 與 upstream causes 切入；它與 HF 的關係不能被縮成「DCM 就是 HFrEF」。這兩篇與 HF／LVEDP 的關聯是由原文的不同問題自然生成，而不是因為都屬於心臟科。
+[HCM：Nonobstructive 只回答了一個問題](../xiaoma-reading/originals/2026-07-14-hcm.md)提供重要的反事實：沒有 LVOTO、EF 仍 preserved 的病人，仍可能因 filling failure 出現 congestion。至於 [DCM 原稿](../xiaoma-reading/originals/2026-07-10-dcm.md)則從 morphology、contractility 與 upstream causes 切入；它與 HF 的關係不能被縮成「DCM 就是 HFrEF」。這兩篇與 HF／LVEDP 的關聯是由原文的不同問題自然生成，而不是因為都屬於心臟科。
 
 *目前已產生 AI 跨篇整合底稿：HF → LVEDP → Diuretics → HCM。它保存在私人 GitHub 的 `content/clinical-os/heart-failure-from-phenotype-to-treatment-response.md`，尚待查回小麻原始圖表及正式醫學來源，因此暫不作為已審查教材對外發布。*
 
@@ -38,8 +38,8 @@ HBV phase 追蹤 virus–host interaction；ALT 僅在某些 injury 形成後才
 
 ## 分類一旦遇上危險，就必須轉成行動
 
-- 〈同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？〉以三次相同的 motor seizure，展示不同的 adequate-treatment history 如何改變 refractory status 的意義；airway、ICU、cEEG 是隨可觀察性與治療單位改變而出現，不是附加的重症段落。
-- 〈胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？〉把 local necrosis 與 persistent organ failure 拆開，最重要的時間張力是：分類可以需要 48 小時，器官支持卻不能等 48 小時。
+- [〈同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？〉](../xiaoma-reading/originals/2026-07-28-status-epilepticus.md)以三次相同的 motor seizure，展示不同的 adequate-treatment history 如何改變 refractory status 的意義；airway、ICU、cEEG 是隨可觀察性與治療單位改變而出現，不是附加的重症段落。
+- [〈胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？〉](../xiaoma-reading/originals/2026-07-20-pancreatitis.md)把 local necrosis 與 persistent organ failure 拆開，最重要的時間張力是：分類可以需要 48 小時，器官支持卻不能等 48 小時。
 - 〈臨床筆記：血管炎〉從血管尺度與器官表現建立初步定位；若有 GCA 視力威脅或 pulmonary–renal syndrome，風險優先順序會先改變，免疫學與組織診斷才逐步補強。此稿屬系列外臨床筆記，來源身分與小麻完稿分開。
 - 〈同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？〉與〈ASD 與 PFO〉可以共同討論：VTE 防的是血栓生成條件，PE／DVT 診斷要定位受累血管，PFO-related stroke 則必須再證明靜脈血栓到體循環的因果路徑；三者不能只憑「有血栓風險」合併推斷。
 
@@ -49,7 +49,7 @@ HBV phase 追蹤 virus–host interaction；ALT 僅在某些 injury 形成後才
 
 | 內容層次 | 已完成 | 尚未完成 |
 |---|---|---|
-| 歷史原稿 | 四篇可讀的 HF／LVEDP／Diuretics／HCM 原稿，前三篇來自本次直貼文字 | 本次對話其餘十八篇逐篇轉存、版本核對 |
+| 歷史原稿 | 七篇可讀的 HF／LVEDP／Diuretics／DCM／Pancreatitis／Status epilepticus／HCM 原稿，六篇來自本次直貼文字 | 本次對話其餘十五篇逐篇轉存、版本核對 |
 | 跨篇理解 | 本頁首次按原稿提出具體跨篇概念關係；HF 群已形成 AI 整合底稿 | 各群正式整合教材的證據反向查核及獨立評閱 |
 | 重症整合 | 已確立必須在原本的因果敘事中處理重症轉折 | 尚未證明各篇的重要重症內容已完整、正確 |
 | 網站 | 閱讀頁、導航、全文搜尋與出版白名單 | 目前跨篇連結的學習效率實驗，及全部稿件公開上線驗收 |
