@@ -19,12 +19,9 @@ def _card(page, collection, label, cue, featured=False):
 
 def render_home(pages):
     """Build the discovery view using the same explicit publication whitelist."""
-    feature = next((p for p in pages if p["source"] == "content/tamponade.md"), None)
     originals = [p for p in pages if p.get("kind") == "historical_original"]
     lessons = [p for p in pages if p.get("collection") == "xiaoma-internal-medicine" and p.get("date")]
     cards = []
-    if feature:
-        cards.append(_card(feature, "clinical", "臨床專題 · Clinical reasoning", "從病例進入機轉與決策", True))
     for p in sorted(originals, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "original", "小麻閱讀 · 原創文章", "閱讀完整論述"))
     for p in sorted(lessons, key=lambda row: row["date"], reverse=True):
@@ -75,7 +72,6 @@ def render_home(pages):
     <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>已公開的完整教材與文章</p></div>
     <div class="library-filters" role="group" aria-label="篩選文章">
        <button class="is-active" data-library-filter="all" aria-pressed="true">全部文章</button>
-       <button data-library-filter="clinical" aria-pressed="false">臨床專題</button>
        <button data-library-filter="original" aria-pressed="false">小麻原稿</button>
        <button data-library-filter="medicine" aria-pressed="false">內科國考</button>
     </div>
@@ -85,7 +81,7 @@ def render_home(pages):
   <section class="library-section library-paths" aria-labelledby="paths-heading">
     <div class="library-section-heading"><div><p class="library-overline">EXPLORE THE COLLECTIONS</p><h2 id="paths-heading">沿著一條脈絡讀</h2></div></div>
     <div class="library-path-grid">
-      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL OS</span><h3>知識脈絡</h3><p>讓一個病例的診斷轉折帶出不同文章共享的生理問題，再回到完整正文。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL REASONING</span><h3>知識脈絡</h3><p>讓一個病例的診斷轉折帶出不同文章共享的生理問題，再回到完整正文。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">02 / ESSAYS</span><h3>小麻閱讀</h3><p>從精簡的教材與問題，重建定義、機轉與臨床意義。保留作者完整原文。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-internal-medicine.html"><span class="library-path-number">03 / INTERNAL MEDICINE</span><h3>小麻內科國考</h3><p>以臨床問題串連內科主題、必要先備知識與重要判斷，不把學習縮成考點清單。</p><span>進入課程 <span aria-hidden="true">↗</span></span></a>
     </div>
