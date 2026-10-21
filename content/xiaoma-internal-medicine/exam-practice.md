@@ -6,24 +6,34 @@
 
 ## 先選題，不必先讀完文章
 
-| 試卷與題號 | 原題測試的問題 | 官方有效答案 | 對應閱讀 |
-|---|---|---|---|
-| 115 年第二次 Q3 | 為何單純低肺泡換氣通常也會改變 PaCO₂？ | C | [低血氧與換氣](lessons/2026-10-21-hypoxemia.md) |
-| 115 年第二次 Q9 | 中心性與周邊發紺的訊號如何不同？ | B | [低血氧與氧輸送](lessons/2026-10-21-hypoxemia.md) |
-| 115 年第二次 Q11 | 前壁 STEMI 的急診選項，何者在給定劑量與血壓下恰當？ | B | ACS、再灌流與急性處置 |
-| 115 年第二次 Q12 | PCI 後哪種「預防心律不整」策略反而不適當？ | C | ACS、再灌流後照護 |
-| 115 年第二次 Q13 | 缺血的功能／ECG／生物標記變化，何者不能畫成必然同步？ | D | ACS、ischemic cascade |
-| 115 年第二次 Q18 | 肝性腦病變的治療機轉，何者正確？ | B | 肝硬化、氨與腸道 |
-| 114 年第二次 Q11 | 惡性心律不整與遺傳性電生理疾病，ICD 的角色如何判斷？ | D | ECG、VT/VF |
-| 113 年第二次 Q6 | MI 第五型的 biomarker 定義，需要哪些附加條件？ | D | ACS、通用定義 |
-| 113 年第二次 Q8 | 哪種冠心病評估工具不能不問事前機率就通用？ | D | 胸痛、檢查選擇 |
-| 112 年第二次 Q8 | HCM／可能的動態流出道阻塞，為何不應機械式增加利尿劑？ | D | [HCM 原創文章](../xiaoma-reading/originals/2026-07-14-hcm.md) |
+| 試卷與題號 | 原題測試的問題 | 對應閱讀 |
+|---|---|---|
+| 115 年第二次 Q3 | 為何單純低肺泡換氣通常也會改變 PaCO₂？ | [低血氧與換氣](lessons/2026-10-21-hypoxemia.md) |
+| 115 年第二次 Q9 | 中心性與周邊發紺的訊號如何不同？ | [低血氧與氧輸送](lessons/2026-10-21-hypoxemia.md) |
+| 115 年第二次 Q11 | 前壁 STEMI 的急診選項，何者在給定劑量與血壓下恰當？ | ACS、再灌流與急性處置 |
+| 115 年第二次 Q12 | PCI 後哪種「預防心律不整」策略反而不適當？ | ACS、再灌流後照護 |
+| 115 年第二次 Q13 | 缺血的功能／ECG／生物標記變化，何者不能畫成必然同步？ | ACS、ischemic cascade |
+| 115 年第二次 Q18 | 肝性腦病變的治療機轉，何者正確？ | 肝硬化、氨與腸道 |
+| 114 年第二次 Q11 | 惡性心律不整與遺傳性電生理疾病，ICD 的角色如何判斷？ | ECG、VT/VF |
+| 113 年第二次 Q6 | MI 第五型的 biomarker 定義，需要哪些附加條件？ | ACS、通用定義 |
+| 113 年第二次 Q8 | 哪種冠心病評估工具不能不問事前機率就通用？ | 胸痛、檢查選擇 |
+| 112 年第二次 Q8 | HCM／可能的動態流出道阻塞，為何不應機械式增加利尿劑？ | [HCM 原創文章](../xiaoma-reading/originals/2026-07-14-hcm.md) |
 
 **原題連結（考選部）：** [115 年第二次](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q) · [114 年第二次](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=Q) · [113 年第二次](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=Q) · [112 年第二次](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q) · [111 年第二次](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=Q)。
 
 ## 問題一｜115 年第二次 Q11 — STEMI 急診處置
 
-官方題目描述有持續胸痛、V1–V4 ST elevation、troponin 升高、收縮壓 160 mmHg 的中年患者。選項以四種具體藥物及劑量競爭；先讀原題後回答：為何「知道 aspirin 與 heparin 有用」仍不足以直接選它們？
+官方題目描述有持續胸痛、V1–V4 ST elevation、troponin 升高、收縮壓 160 mmHg 的中年患者。以下是**依真題縮寫的選項導讀（非原題逐字重刊）**；先回答，再展開理由：
+
+A. Aspirin 600 mg 口服負荷
+
+B. Nitroglycerin 0.4 mg 舌下給藥
+
+C. 速效 nifedipine 5 mg
+
+D. Enoxaparin 5 mg/kg 皮下注射
+
+為什麼「知道 aspirin 與 heparin 有用」仍不足以直接選它們？
 
 <details class="answer"><summary>顯示官方答案及選項背後的判斷</summary>
 
@@ -35,7 +45,17 @@
 
 ## 問題二｜115 年第二次 Q12 — PCI 成功後為何不能「預防性」給 lidocaine？
 
-題目承接上一位前壁 STEMI 患者，成功 PCI 後詢問最不適當的敘述。臨床上，治療急性 VT/VF 與對曾經出現 VT/VF 的患者常規預防給抗心律不整藥，是兩個不同的決策。
+題目承接上一位前壁 STEMI 患者，成功 PCI 後詢問最不適當的敘述。以下為**依原題改寫的判斷選項**：
+
+A. 血流動力學穩定後，評估 ACEi／ARB 治療
+
+B. 確認左心室血栓後，依出血風險評估抗凝治療
+
+C. MI 最初 24 小時發生 VT／VF、恢復後常規預防性給 lidocaine
+
+D. 監測並矯正低血鎂等誘發因素
+
+治療真正發生的 VT/VF，與預防性給抗心律不整藥，是不同的決策。
 
 <details class="answer"><summary>顯示官方答案與決策分界</summary>
 
@@ -45,7 +65,15 @@
 
 ## 問題三｜115 年第二次 Q13 — Ischemic cascade 不等於 troponin 立刻上升
 
-思考三個不同的測量：心肌灌流、壁運動／舒張收縮功能、ECG，與血中 troponin。哪一組先後關係主要來自病理生理，哪一個時間點還依賴組織損傷程度與抽血時間？
+思考灌流、壁運動、ECG 與 troponin。以下四句是**原題選項的重新表述**；何者最不適當？
+
+A. 心肌功能異常可能早於 ECG 變化
+
+B. 灌流下降通常早於局部壁運動變化
+
+C. 舒張功能受影響可能早於收縮功能
+
+D. ECG 一旦異常，血中 troponin 此時必已上升
 
 <details class="answer"><summary>顯示官方答案與診斷陷阱</summary>
 
@@ -55,7 +83,15 @@
 
 ## 問題四｜112 年第二次 Q8 — HCM 與利尿劑的負荷條件
 
-此題包含心電圖、心臟超音波圖及心搏停止後的情境；請務必打開[含原圖的官方試卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q)，不能只看擷取文字。
+此題包含心電圖、心臟超音波圖及心搏停止後的情境；請務必打開[含原圖的官方試卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q)，不能只看擷取文字。以下為**原創簡化選項**，何者最不恰當？
+
+A. 需評估 HCM 的結構表型及致命心律不整風險
+
+B. 復甦後有持續危險的 VT／VF 病史，可考慮 ICD
+
+C. 有症狀且阻塞嚴重者，可依適應症考慮 septal reduction
+
+D. 為預防心衰竭，應增加利尿劑用量，無須重新評估阻塞與前負荷
 
 <details class="answer"><summary>顯示官方答案與機轉</summary>
 
