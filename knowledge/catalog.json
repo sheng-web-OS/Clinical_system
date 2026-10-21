@@ -16,6 +16,18 @@
       "kind": "system",
       "status": "published",
       "sources": []
+    },
+    {
+      "id": "acute-chest-pain-imps",
+      "title": "急性胸痛：ACS 與 IMPS 的機轉鑑別",
+      "file": "knowledge/pages/acute-chest-pain-imps.md",
+      "kind": "clinical",
+      "status": "draft",
+      "sources": [
+        "ESC2025-IMPS",
+        "ESC2025-SLIDES",
+        "ESC2015-PERICARDIAL"
+      ]
     }
   ]
 }
