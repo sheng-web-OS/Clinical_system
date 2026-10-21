@@ -63,15 +63,10 @@ if not errors:
         for private_token in ("libfile_", "5824859", "Z639", "plan-20261021.md", "七大核心學習檔案"):
             if private_token in content: errors.append(f"{filename}: private plan data in public build: {private_token}")
     front = (DIST/"index.html").read_text("utf8")
-    clinical = (DIST/"tamponade.html").read_text("utf8")
     if "小麻閱讀" not in front or "library-grid" not in front:
         errors.append("Missing editorial library landing page")
-    if 'href="tamponade.html"' not in front:
-        errors.append("Missing clinical feature from discovery")
-    if "Cardiac Tamponade Mimicking Sepsis" not in clinical:
-        errors.append("Missing case title")
-    for i in range(1,9):
-        if f'id="u{i:02}"' not in clinical: errors.append(f"Missing U{i:02} chapter anchor")
+    if 'href="tamponade.html"' in front or "tamponade.html" in actual:
+        errors.append("Internal Tamponade pilot must not be published")
     # Verify both clinical reading modes present the same verified core facts.
     interactive = (DIST / "lvoto-case-interactive.html").read_text("utf8")
     static = (DIST / "lvoto-case-static.html").read_text("utf8")
@@ -97,5 +92,5 @@ if not errors:
 if errors:
     print("\n".join("FAIL: "+e for e in errors))
     sys.exit(1)
-print("PASS: static site whitelist, single H1, unique DOM IDs, local assets, eight source anchors, private repo nav boundary.")
+print("PASS: static site whitelist, single H1, unique DOM IDs, local assets, internal-pilot exclusion, private repo nav boundary.")
 print("NOTE: this is structural QA, not full clinical validation or live HTTPS verification.")
