@@ -1,0 +1,3897 @@
+{
+  "paper": "2023-s2-med3",
+  "year": 2023,
+  "session": 2,
+  "questions": [
+    {
+      "id": "2023-s2-med3-q01",
+      "number": 1,
+      "official_pdf_page": 1,
+      "stem_text": "35 歲女性，健檢發現血鈣偏低（ 2.05 mmol/L ，參考值 2.2 ～ 2.5 ），血清肌酸酐（ creatinine, 0.6 mg/dL ）、鈉\n（ 139 mEq/L ）及鉀（ 3.8 mEq/L ）則在正常範圍。對於此病患之低血鈣（ hypocalcemia ）應優先安排下列評\n估，但何者最不適當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "測血中白蛋白（ albumin ）及磷（ phosphorus ）濃度"
+        },
+        {
+          "label": "B",
+          "text": "測血中副甲狀腺素（ PTH ）濃度"
+        },
+        {
+          "label": "C",
+          "text": "測血中 1,25(OH)2D 濃度"
+        },
+        {
+          "label": "D",
+          "text": "測血中鎂（ magnesium ）濃度"
+        }
+      ],
+      "raw_text": "35 歲女性，健檢發現血鈣偏低（ 2.05 mmol/L ，參考值 2.2 ～ 2.5 ），血清肌酸酐（ creatinine, 0.6 mg/dL ）、鈉\n（ 139 mEq/L ）及鉀（ 3.8 mEq/L ）則在正常範圍。對於此病患之低血鈣（ hypocalcemia ）應優先安排下列評\n估，但何者最不適當？\n \nA.測血中白蛋白（ albumin ）及磷（ phosphorus ）濃度\nB.測血中副甲狀腺素（ PTH ）濃度\nC.測血中 1,25(OH)2D 濃度\nD.測血中鎂（ magnesium ）濃度",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "renal_electrolyte",
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q02",
+      "number": 2,
+      "official_pdf_page": 1,
+      "stem_text": "下列那一種情形最可能發生高血鉀（ hyperkalemia ）？",
+      "options": [
+        {
+          "label": "A",
+          "text": "注射胰島素"
+        },
+        {
+          "label": "B",
+          "text": "鎂（ magnesium ）缺乏"
+        },
+        {
+          "label": "C",
+          "text": "使用非類固醇抗發炎藥物（ non-steroidal anti-inflammatory drugs ）"
+        },
+        {
+          "label": "D",
+          "text": "使用 β2-adrenergic agonists 支氣管擴張劑"
+        }
+      ],
+      "raw_text": "下列那一種情形最可能發生高血鉀（ hyperkalemia ）？\n \nA.注射胰島素\nB.鎂（ magnesium ）缺乏\nC.使用非類固醇抗發炎藥物（ non-steroidal anti-inflammatory drugs ）\nD.使用 β2-adrenergic agonists 支氣管擴張劑",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "renal_electrolyte"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q03",
+      "number": 3,
+      "official_pdf_page": 1,
+      "stem_text": "35 歲男性過去無慢性疾病，有飲酒習慣，至門診就醫，主訴疲倦以及尿液顏色變深，下列處置何者最不適當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "抽血檢驗 total 及 direct bilirubin 是否上升"
+        },
+        {
+          "label": "B",
+          "text": "檢驗尿液中 urobilinogen 是否上升"
+        },
+        {
+          "label": "C",
+          "text": "視診鞏膜及舌下黏膜是否變黃"
+        },
+        {
+          "label": "D",
+          "text": "抽血檢驗 creatinine 是否上升"
+        }
+      ],
+      "raw_text": "35 歲男性過去無慢性疾病，有飲酒習慣，至門診就醫，主訴疲倦以及尿液顏色變深，下列處置何者最不適當？\n \nA.抽血檢驗 total 及 direct bilirubin 是否上升\nB.檢驗尿液中 urobilinogen 是否上升\nC.視診鞏膜及舌下黏膜是否變黃\nD.抽血檢驗 creatinine 是否上升",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "renal_electrolyte"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q04",
+      "number": 4,
+      "official_pdf_page": 1,
+      "stem_text": "65 歲女性病人，每日服用 trichlormethiazide 4 mg 控制血壓已 10 年。某日半夜病人因突發左踝劇痛而醒來，發覺\n該處有明顯紅腫現象。醫師自該處抽取關節液化驗，發現有針狀或桿狀、強烈負雙折射性（ negative\nbirefringent ）結晶，並有部分結晶被白血球吞噬。針對此病人急性關節發炎之處置，下列何種藥物治療最不恰\n當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "colchicine"
+        },
+        {
+          "label": "B",
+          "text": "febuxostat"
+        },
+        {
+          "label": "C",
+          "text": "ibuprofen"
+        },
+        {
+          "label": "D",
+          "text": "prednisolone"
+        }
+      ],
+      "raw_text": "65 歲女性病人，每日服用 trichlormethiazide 4 mg 控制血壓已 10 年。某日半夜病人因突發左踝劇痛而醒來，發覺\n該處有明顯紅腫現象。醫師自該處抽取關節液化驗，發現有針狀或桿狀、強烈負雙折射性（ negative\nbirefringent ）結晶，並有部分結晶被白血球吞噬。針對此病人急性關節發炎之處置，下列何種藥物治療最不恰\n當？\n \nA.colchicine\nB.febuxostat\nC.ibuprofen\nD.prednisolone",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q05",
+      "number": 5,
+      "official_pdf_page": 2,
+      "stem_text": "承上題，上述病人 10 年後某日突發右腰劇痛，上廁所發現有血尿現象。急診室醫師以超音波檢查發現病人兩側\n腎臟中皆有結石，最大者直徑約 1.2 公分，但照一般 X 光片卻無法明顯看到結石。有關此病人結石之處置，下列\n何種藥物治療最不恰當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "allopurinol"
+        },
+        {
+          "label": "B",
+          "text": "potassium citrate"
+        },
+        {
+          "label": "C",
+          "text": "probenecid"
+        },
+        {
+          "label": "D",
+          "text": "sodium bicarbonate"
+        }
+      ],
+      "raw_text": "承上題，上述病人 10 年後某日突發右腰劇痛，上廁所發現有血尿現象。急診室醫師以超音波檢查發現病人兩側\n腎臟中皆有結石，最大者直徑約 1.2 公分，但照一般 X 光片卻無法明顯看到結石。有關此病人結石之處置，下列\n何種藥物治療最不恰當？\n \nA.allopurinol\nB.potassium citrate\nC.probenecid\nD.sodium bicarbonate",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q06",
+      "number": 6,
+      "official_pdf_page": 2,
+      "stem_text": "下列有關心導管檢查及冠狀動脈造影之敘述，何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "心導管檢查可用以確診及評估許多心血管疾病，但擇期性（ elective ）心導管仍有可能發生意外，包括＜\n0.1% 心肌梗塞、 0.01% 中風、 0.1% 死亡等風險"
+        },
+        {
+          "label": "B",
+          "text": "檢查中使用之顯影劑可能產生嚴重類過敏（ anaphylactoid ）反應，機率為 0.1 ～ 0.2%"
+        },
+        {
+          "label": "C",
+          "text": "顯影劑可能造成急性腎臟損傷，因此術前均應給與病人足夠輸液及N-acetylcysteine 以降低風險"
+        },
+        {
+          "label": "D",
+          "text": "懷疑冠狀動脈心臟病之病人，於檢查前均應服用 aspirin ，但因心導管屬無菌操作，所以並不需預防性投與抗\n生素"
+        }
+      ],
+      "raw_text": "下列有關心導管檢查及冠狀動脈造影之敘述，何者錯誤？\n \nA.心導管檢查可用以確診及評估許多心血管疾病，但擇期性（ elective ）心導管仍有可能發生意外，包括＜\n0.1% 心肌梗塞、 0.01% 中風、 0.1% 死亡等風險\nB.檢查中使用之顯影劑可能產生嚴重類過敏（ anaphylactoid ）反應，機率為 0.1 ～ 0.2%\nC.顯影劑可能造成急性腎臟損傷，因此術前均應給與病人足夠輸液及N-acetylcysteine 以降低風險\nD.懷疑冠狀動脈心臟病之病人，於檢查前均應服用 aspirin ，但因心導管屬無菌操作，所以並不需預防性投與抗\n生素",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "cardiology",
+        "neurology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q07",
+      "number": 7,
+      "official_pdf_page": 2,
+      "stem_text": "下列有關冠狀動脈心臟病的藥物治療敘述，何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "乙型交感神經阻斷劑（ beta blocker ）可減少心肌耗氧，因此可以減少心絞痛，甚至可以降低心肌梗塞後之死\n亡率"
+        },
+        {
+          "label": "B",
+          "text": "鈣離子阻斷劑（ calcium channel blocker ）可以擴張冠狀動脈、增加心肌供血，因此短效型 dihydropyridine 類\n鈣離子阻斷劑特別適用於無法耐受乙型交感神經阻斷劑（ beta blocker ）副作用的病人"
+        },
+        {
+          "label": "C",
+          "text": "阿斯匹靈（ aspirin ）為可逆性血小板 cyclooxygenase 抑制劑，減低血小板活化能力，冠狀動脈心臟病人常用\n劑量為每日 75 ～ 325 mg"
+        },
+        {
+          "label": "D",
+          "text": "有機硝酸鹽類（ nitrate ）經人體代謝後，可釋放一氧化氮（ NO ）與血管平滑肌 adenylyl cyclase 結合，造成血\n管擴張"
+        }
+      ],
+      "raw_text": "下列有關冠狀動脈心臟病的藥物治療敘述，何者正確？\n \nA.乙型交感神經阻斷劑（ beta blocker ）可減少心肌耗氧，因此可以減少心絞痛，甚至可以降低心肌梗塞後之死\n亡率\nB.鈣離子阻斷劑（ calcium channel blocker ）可以擴張冠狀動脈、增加心肌供血，因此短效型 dihydropyridine 類\n鈣離子阻斷劑特別適用於無法耐受乙型交感神經阻斷劑（ beta blocker ）副作用的病人\nC.阿斯匹靈（ aspirin ）為可逆性血小板 cyclooxygenase 抑制劑，減低血小板活化能力，冠狀動脈心臟病人常用\n劑量為每日 75 ～ 325 mg\nD.有機硝酸鹽類（ nitrate ）經人體代謝後，可釋放一氧化氮（ NO ）與血管平滑肌 adenylyl cyclase 結合，造成血\n管擴張",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "cardiology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q08",
+      "number": 8,
+      "official_pdf_page": 2,
+      "stem_text": "27 歲男性病人與好友熬夜玩電玩，翌日清晨突然倒地急救，經 119 EMT 施行心肺復甦術， 30 分內送抵急診，中\n間多次 VT/VF 並施行 DC shock ，到院後 CPCR 共 50 分及電擊 5 次，除了急救藥物使用之外，並在 50 分鐘內找心臟\n外科醫師放置葉克膜。病況穩定後進行身體檢查，體溫 35.4°C 、 HR ： 80/min 、 RR ： 20/min 、 BP ： 125/68\nmmHg ，聽診呈現心尖及 lower left sternal border （ LLSB ）有 grade 3/6 systolic murmur 。緊急冠狀動脈血管攝影\n顯示無冠狀動脈狹窄或血栓阻塞。心電圖跟心臟超音波如附圖所示。下列何者敘述錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "這位病人的診斷是肥厚型心肌症（ hypertrophic cardiomyopathy ）"
+        },
+        {
+          "label": "B",
+          "text": "因惡性心律不整可能復發，應考慮植入式心律去顫器﹙ implantable cardioverter defibrillator, ICD ﹚的置入"
+        },
+        {
+          "label": "C",
+          "text": "如果病人左心室出口阻塞的症狀嚴重，可以考慮心導管酒精消融（ alcohol ablation ）或是外科手術，要是還\n是無法改善，可以考慮換心"
+        },
+        {
+          "label": "D",
+          "text": "除了考慮乙型交感神經阻斷劑（ beta blocker ），鈣離子阻斷劑（ calcium channel blocker ）等，還要增加利尿\n劑的使用量，避免心臟衰竭"
+        }
+      ],
+      "raw_text": "27 歲男性病人與好友熬夜玩電玩，翌日清晨突然倒地急救，經 119 EMT 施行心肺復甦術， 30 分內送抵急診，中\n間多次 VT/VF 並施行 DC shock ，到院後 CPCR 共 50 分及電擊 5 次，除了急救藥物使用之外，並在 50 分鐘內找心臟\n外科醫師放置葉克膜。病況穩定後進行身體檢查，體溫 35.4°C 、 HR ： 80/min 、 RR ： 20/min 、 BP ： 125/68\nmmHg ，聽診呈現心尖及 lower left sternal border （ LLSB ）有 grade 3/6 systolic murmur 。緊急冠狀動脈血管攝影\n顯示無冠狀動脈狹窄或血栓阻塞。心電圖跟心臟超音波如附圖所示。下列何者敘述錯誤？\n \nA.這位病人的診斷是肥厚型心肌症（ hypertrophic cardiomyopathy ）\nB.因惡性心律不整可能復發，應考慮植入式心律去顫器﹙ implantable cardioverter defibrillator, ICD ﹚的置入\nC.如果病人左心室出口阻塞的症狀嚴重，可以考慮心導管酒精消融（ alcohol ablation ）或是外科手術，要是還\n是無法改善，可以考慮換心\nD.除了考慮乙型交感神經阻斷劑（ beta blocker ），鈣離子阻斷劑（ calcium channel blocker ）等，還要增加利尿\n劑的使用量，避免心臟衰竭",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": true,
+      "topic_candidates_not_verified": [
+        "cardiology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q09",
+      "number": 9,
+      "official_pdf_page": 3,
+      "stem_text": "一位 65 歲男性過去無任何病史，今日早上因突然胸悶合併心悸至急診，心跳每分鐘約 130 下，心電圖如附圖，\n診斷為何？",
+      "options": [
+        {
+          "label": "A",
+          "text": "sinus tachycardia"
+        },
+        {
+          "label": "B",
+          "text": "atrial tachycardia"
+        },
+        {
+          "label": "C",
+          "text": "atrial fibrillation"
+        },
+        {
+          "label": "D",
+          "text": "ventricular tachycardia"
+        }
+      ],
+      "raw_text": "一位 65 歲男性過去無任何病史，今日早上因突然胸悶合併心悸至急診，心跳每分鐘約 130 下，心電圖如附圖，\n診斷為何？\n \nA.sinus tachycardia\nB.atrial tachycardia\nC.atrial fibrillation\nD.ventricular tachycardia",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": true,
+      "topic_candidates_not_verified": [
+        "cardiology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q10",
+      "number": 10,
+      "official_pdf_page": 4,
+      "stem_text": "關於肺高壓的描述，下列何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "病人在疾病初期所表現的症狀常無專一性"
+        },
+        {
+          "label": "B",
+          "text": "當懷疑病人有肺高壓，心臟超音波是優先考量的篩檢工具"
+        },
+        {
+          "label": "C",
+          "text": "本病的確診須靠右側心導管（ right heart catheterization ）檢查"
+        },
+        {
+          "label": "D",
+          "text": "確診的病人常合併有貧血"
+        }
+      ],
+      "raw_text": "關於肺高壓的描述，下列何者錯誤？\n \nA.病人在疾病初期所表現的症狀常無專一性\nB.當懷疑病人有肺高壓，心臟超音波是優先考量的篩檢工具\nC.本病的確診須靠右側心導管（ right heart catheterization ）檢查\nD.確診的病人常合併有貧血",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q11",
+      "number": 11,
+      "official_pdf_page": 4,
+      "stem_text": "關於 Raynaud's phenomenon 的描述，下列何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "常表現於硬皮症（ scleroderma ）的病人"
+        },
+        {
+          "label": "B",
+          "text": "原發性的病人常有較嚴重的症狀"
+        },
+        {
+          "label": "C",
+          "text": "年紀在 50 歲以上，動脈粥狀硬化是 Raynaud's phenomenon 常見的原因"
+        },
+        {
+          "label": "D",
+          "text": "症狀嚴重的病人可以使用 dihydropyridine 鈣離子阻斷劑減輕症狀"
+        }
+      ],
+      "raw_text": "關於 Raynaud's phenomenon 的描述，下列何者錯誤？\n \nA.常表現於硬皮症（ scleroderma ）的病人\nB.原發性的病人常有較嚴重的症狀\nC.年紀在 50 歲以上，動脈粥狀硬化是 Raynaud's phenomenon 常見的原因\nD.症狀嚴重的病人可以使用 dihydropyridine 鈣離子阻斷劑減輕症狀",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q12",
+      "number": 12,
+      "official_pdf_page": 4,
+      "stem_text": "關於心包膜疾病的描述，下列何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "急性心包膜炎的臨床分類主要包括 fibrinous 和 effusive （ serous or sanguineous ）兩大類"
+        },
+        {
+          "label": "B",
+          "text": "急性心包膜炎常見的症狀是以發燒為主，但罕見胸痛"
+        },
+        {
+          "label": "C",
+          "text": "只有不到 10% 急性心包膜炎的病人在疾病過程中可以聽到 friction rub"
+        },
+        {
+          "label": "D",
+          "text": "colchicine 用於治療急性不明原因性心包膜炎（ acute idiopathic pericarditis ）病人的標準治療期程不可超過兩\n週，否則轉變成慢性心包膜炎的機率會增加"
+        }
+      ],
+      "raw_text": "關於心包膜疾病的描述，下列何者正確？\n \nA.急性心包膜炎的臨床分類主要包括 fibrinous 和 effusive （ serous or sanguineous ）兩大類\nB.急性心包膜炎常見的症狀是以發燒為主，但罕見胸痛\nC.只有不到 10% 急性心包膜炎的病人在疾病過程中可以聽到 friction rub\nD.colchicine 用於治療急性不明原因性心包膜炎（ acute idiopathic pericarditis ）病人的標準治療期程不可超過兩\n週，否則轉變成慢性心包膜炎的機率會增加",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q13",
+      "number": 13,
+      "official_pdf_page": 4,
+      "stem_text": "有關心衰竭的 New York Heart Association Classification ，下列何者當下的 functional capacity 是屬於 class II ？",
+      "options": [
+        {
+          "label": "A",
+          "text": "一位 24 歲的大學畢業男性在兵役體檢的時候發現有主動脈瓣二葉畸形（ bicuspid aortic valve ），該位男性表\n示之前在學校的籃球課表現並無異樣"
+        },
+        {
+          "label": "B",
+          "text": "一位 45 歲的魚市場搬運男工平常扛 20 公斤的魚貨從卡車走到倉庫的二樓都不需休息，但是兩週前心律不整發\n生後扛 15 公斤樓梯走到一半就很喘，完全無法走上二樓"
+        },
+        {
+          "label": "C",
+          "text": "一位 75 歲的男性診斷有中度二尖瓣閉鎖不全。平時很少運動，每天頂多走到離家 20 公尺的便利商店買報紙。\n最近 1 個禮拜腳漸漸腫起來，還是可以走到該便利商店買報紙，但是會覺得明顯比之前喘和累"
+        },
+        {
+          "label": "D",
+          "text": "一位 50 歲女性診斷有擴大型心肌症（ dilated cardiomyopathy ），平常可以躺平一覺睡到天亮，最近 2 個禮拜腳\n漸漸腫起來，需要頭部墊兩個枕頭才有辦法躺下來睡"
+        }
+      ],
+      "raw_text": "有關心衰竭的 New York Heart Association Classification ，下列何者當下的 functional capacity 是屬於 class II ？\n \nA.一位 24 歲的大學畢業男性在兵役體檢的時候發現有主動脈瓣二葉畸形（ bicuspid aortic valve ），該位男性表\n示之前在學校的籃球課表現並無異樣\nB.一位 45 歲的魚市場搬運男工平常扛 20 公斤的魚貨從卡車走到倉庫的二樓都不需休息，但是兩週前心律不整發\n生後扛 15 公斤樓梯走到一半就很喘，完全無法走上二樓\nC.一位 75 歲的男性診斷有中度二尖瓣閉鎖不全。平時很少運動，每天頂多走到離家 20 公尺的便利商店買報紙。\n最近 1 個禮拜腳漸漸腫起來，還是可以走到該便利商店買報紙，但是會覺得明顯比之前喘和累\nD.一位 50 歲女性診斷有擴大型心肌症（ dilated cardiomyopathy ），平常可以躺平一覺睡到天亮，最近 2 個禮拜腳\n漸漸腫起來，需要頭部墊兩個枕頭才有辦法躺下來睡",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "cardiology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q14",
+      "number": 14,
+      "official_pdf_page": 5,
+      "stem_text": "一位 78 歲男性病患因心房顫動就診，該心律不整病史已有 1 年以上。過去有高血壓及糖尿病史，最近有呼吸困\n難與腳部水腫；心臟超音波左心射出分率 29% 。無心肌梗塞、中風或周邊血管阻塞疾病病史。估算其\nCHA2DS2-VASc score ，該病患之分數為：",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "raw_text": "一位 78 歲男性病患因心房顫動就診，該心律不整病史已有 1 年以上。過去有高血壓及糖尿病史，最近有呼吸困\n難與腳部水腫；心臟超音波左心射出分率 29% 。無心肌梗塞、中風或周邊血管阻塞疾病病史。估算其\nCHA2DS2-VASc score ，該病患之分數為：\n \nA.2\nB.3\nC.4\nD.5",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "cardiology",
+        "endocrine",
+        "neurology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q15",
+      "number": 15,
+      "official_pdf_page": 5,
+      "stem_text": "44 歲女性，體檢發現 B 型肝炎帶原後有定期追蹤，目前 AST 及 ALT 正常， HBeAg 陰性， anti-HBe 陽性。她的媽\n媽與哥哥也是 B 肝帶原，家族中一位阿姨得到肝細胞癌。下列敘述何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "患者體內已無 B 型肝炎病毒"
+        },
+        {
+          "label": "B",
+          "text": "患者目前處於 B 型肝炎自然病程中之「免疫耐受期（ immune tolerance phase ）」"
+        },
+        {
+          "label": "C",
+          "text": "患者感染 B 型肝炎途徑最有可能是垂直感染"
+        },
+        {
+          "label": "D",
+          "text": "患者無需每半年接受腹部超音波檢查"
+        }
+      ],
+      "raw_text": "44 歲女性，體檢發現 B 型肝炎帶原後有定期追蹤，目前 AST 及 ALT 正常， HBeAg 陰性， anti-HBe 陽性。她的媽\n媽與哥哥也是 B 肝帶原，家族中一位阿姨得到肝細胞癌。下列敘述何者正確？\n \nA.患者體內已無 B 型肝炎病毒\nB.患者目前處於 B 型肝炎自然病程中之「免疫耐受期（ immune tolerance phase ）」\nC.患者感染 B 型肝炎途徑最有可能是垂直感染\nD.患者無需每半年接受腹部超音波檢查",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q16",
+      "number": 16,
+      "official_pdf_page": 5,
+      "stem_text": "曉華健康檢查發現 bilirubin total/direct 為 3.6/2.5 mg/dL ，但 alkaline phosphatase （ ALP ）、  γ-glutamyl\ntranspeptidase （ GGT ）、 aspartate aminotransferase （ AST ）、 alanine aminotransferase （ ALT ）皆正常。下列疾\n病何者最有可能？",
+      "options": [
+        {
+          "label": "A",
+          "text": "Crigler-Najjar syndrome"
+        },
+        {
+          "label": "B",
+          "text": "Gilbert's syndrome"
+        },
+        {
+          "label": "C",
+          "text": "Dubin-Johnson syndrome"
+        },
+        {
+          "label": "D",
+          "text": "G6PD deficiency"
+        }
+      ],
+      "raw_text": "曉華健康檢查發現 bilirubin total/direct 為 3.6/2.5 mg/dL ，但 alkaline phosphatase （ ALP ）、  γ-glutamyl\ntranspeptidase （ GGT ）、 aspartate aminotransferase （ AST ）、 alanine aminotransferase （ ALT ）皆正常。下列疾\n病何者最有可能？\n \nA.Crigler-Najjar syndrome\nB.Gilbert's syndrome\nC.Dubin-Johnson syndrome\nD.G6PD deficiency",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q17",
+      "number": 17,
+      "official_pdf_page": 5,
+      "stem_text": "關於直腸肛門口的疾病，下列敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "生產時骨盆底受傷、失智、腦瘤、中風、重症肌無力或是腸躁症的患者比較容易會有大便失禁"
+        },
+        {
+          "label": "B",
+          "text": "大便失禁的治療可以給與高纖飲食、糞便體積增加劑（ bulking agent ）及止瀉劑。或用生物回饋的方式來做\n復健治療"
+        },
+        {
+          "label": "C",
+          "text": "痔瘡突出需要用手動的方式才能推回去屬於第四級痔瘡，可以給與高纖食物，含類固醇的塞劑以及考慮手術\n治療"
+        },
+        {
+          "label": "D",
+          "text": "肛門直腸膿瘍常發生在免疫低下的患者（如糖尿病、血液疾病及 HIV 陽性的患者）。標準的治療是要切開膿\n瘍引流"
+        }
+      ],
+      "raw_text": "關於直腸肛門口的疾病，下列敘述何者錯誤？\n \nA.生產時骨盆底受傷、失智、腦瘤、中風、重症肌無力或是腸躁症的患者比較容易會有大便失禁\nB.大便失禁的治療可以給與高纖飲食、糞便體積增加劑（ bulking agent ）及止瀉劑。或用生物回饋的方式來做\n復健治療\nC.痔瘡突出需要用手動的方式才能推回去屬於第四級痔瘡，可以給與高纖食物，含類固醇的塞劑以及考慮手術\n治療\nD.肛門直腸膿瘍常發生在免疫低下的患者（如糖尿病、血液疾病及 HIV 陽性的患者）。標準的治療是要切開膿\n瘍引流",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine",
+        "infection",
+        "neurology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q18",
+      "number": 18,
+      "official_pdf_page": 6,
+      "stem_text": "關於急性腹膜炎的敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "當腸道穿孔時，腸道內的細菌會進入腹腔中而導致續發性腹膜炎（ secondary peritonitis ）"
+        },
+        {
+          "label": "B",
+          "text": "血液的白血球過低，是導致自發性細菌性腹膜炎（ spontaneous bacterial peritonitis ）常見的重要因子"
+        },
+        {
+          "label": "C",
+          "text": "身體檢查上，需要注意壓痛的位置，如 McBurney's point 疼痛， Murphy's sign 以及是否有木板樣僵直（ board-\nlike rigidity ）及腹膜炎的反彈痛"
+        },
+        {
+          "label": "D",
+          "text": "X 光檢查要注意腸道外的氣體（ free air ），若有則代表有腸穿孔的可能性，需要緊急手術"
+        }
+      ],
+      "raw_text": "關於急性腹膜炎的敘述何者錯誤？\n \nA.當腸道穿孔時，腸道內的細菌會進入腹腔中而導致續發性腹膜炎（ secondary peritonitis ）\nB.血液的白血球過低，是導致自發性細菌性腹膜炎（ spontaneous bacterial peritonitis ）常見的重要因子\nC.身體檢查上，需要注意壓痛的位置，如 McBurney's point 疼痛， Murphy's sign 以及是否有木板樣僵直（ board-\nlike rigidity ）及腹膜炎的反彈痛\nD.X 光檢查要注意腸道外的氣體（ free air ），若有則代表有腸穿孔的可能性，需要緊急手術",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q19",
+      "number": 19,
+      "official_pdf_page": 6,
+      "stem_text": "一位 78 歲男性，平時抽菸每日兩包已有五十年、每日睡前喜歡喝烈酒才能入睡。最近因吞嚥困難來到診間求\n診，胃鏡檢查及切片診斷為食道鱗狀上皮細胞癌。下列敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "喝酒與抽菸為食道鱗狀上皮細胞癌發生之危險因子"
+        },
+        {
+          "label": "B",
+          "text": "病人同時也是口咽癌的高危險群"
+        },
+        {
+          "label": "C",
+          "text": "釐清病人吞嚥困難的種類（固體、液體）和先後發展時序有助於吞嚥困難的鑑別診斷"
+        },
+        {
+          "label": "D",
+          "text": "食道鱗狀上皮細胞癌產生之高鈣血症不會出現在沒有骨骼轉移的病人"
+        }
+      ],
+      "raw_text": "一位 78 歲男性，平時抽菸每日兩包已有五十年、每日睡前喜歡喝烈酒才能入睡。最近因吞嚥困難來到診間求\n診，胃鏡檢查及切片診斷為食道鱗狀上皮細胞癌。下列敘述何者錯誤？\n \nA.喝酒與抽菸為食道鱗狀上皮細胞癌發生之危險因子\nB.病人同時也是口咽癌的高危險群\nC.釐清病人吞嚥困難的種類（固體、液體）和先後發展時序有助於吞嚥困難的鑑別診斷\nD.食道鱗狀上皮細胞癌產生之高鈣血症不會出現在沒有骨骼轉移的病人",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q20",
+      "number": 20,
+      "official_pdf_page": 6,
+      "stem_text": "一位 67 歲 B 型肝炎及肝硬化之男性病人，因吐血來到急診，內視鏡下可見食道靜脈瘤正在出血。下列敘述何\n者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "食道靜脈瘤出血可以內視鏡結紮術進行止血"
+        },
+        {
+          "label": "B",
+          "text": "靜脈注射血管活性藥物包括 terlipressin 及 octreotide ，對食道靜脈瘤出血之止血有幫助"
+        },
+        {
+          "label": "C",
+          "text": "病人於急性期可使用 nonselective beta blockers 改善急性出血"
+        },
+        {
+          "label": "D",
+          "text": "內視鏡檢查要注意胃靜脈瘤（ gastric varices ）的有無和出血跡象"
+        }
+      ],
+      "raw_text": "一位 67 歲 B 型肝炎及肝硬化之男性病人，因吐血來到急診，內視鏡下可見食道靜脈瘤正在出血。下列敘述何\n者錯誤？\n \nA.食道靜脈瘤出血可以內視鏡結紮術進行止血\nB.靜脈注射血管活性藥物包括 terlipressin 及 octreotide ，對食道靜脈瘤出血之止血有幫助\nC.病人於急性期可使用 nonselective beta blockers 改善急性出血\nD.內視鏡檢查要注意胃靜脈瘤（ gastric varices ）的有無和出血跡象",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q21",
+      "number": 21,
+      "official_pdf_page": 6,
+      "stem_text": "下列關於胰腺癌（ pancreatic adenocarcinoma ）之敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "先天BRCA2基因突變（ germline BRCA2 mutation ）者有較高罹病風險"
+        },
+        {
+          "label": "B",
+          "text": "慢性胰臟炎（ chronic pancreatitis ）是胰腺癌之危險因子"
+        },
+        {
+          "label": "C",
+          "text": "腫瘤若侵犯到上腸繫膜動脈（ superior mesenteric artery ）則無法手術切除"
+        },
+        {
+          "label": "D",
+          "text": "手術切除後進行輔助化學治療（ adjuvant chemotherapy ）無確定療效，並非標準治療方式"
+        }
+      ],
+      "raw_text": "下列關於胰腺癌（ pancreatic adenocarcinoma ）之敘述何者錯誤？\n \nA.先天BRCA2基因突變（ germline BRCA2 mutation ）者有較高罹病風險\nB.慢性胰臟炎（ chronic pancreatitis ）是胰腺癌之危險因子\nC.腫瘤若侵犯到上腸繫膜動脈（ superior mesenteric artery ）則無法手術切除\nD.手術切除後進行輔助化學治療（ adjuvant chemotherapy ）無確定療效，並非標準治療方式",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver",
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q22",
+      "number": 22,
+      "official_pdf_page": 6,
+      "stem_text": "有關肝細胞癌（ hepatocellular carcinoma, HCC ），下列敘述何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "射頻消融術（ radiofrequency ablation, RFA ）並不是一種根除性的治療"
+        },
+        {
+          "label": "B",
+          "text": "經動脈化學栓塞（ transarterial chemoembolization, TACE ）的療效與開刀差不多"
+        },
+        {
+          "label": "C",
+          "text": "由於肝細胞癌併發肝門靜脈主幹侵犯（ main portal vein thrombosis ）對於開刀或栓塞（ TACE ）的效果都不\n佳，因此建議做肝臟移植"
+        },
+        {
+          "label": "D",
+          "text": "對於肝細胞癌的治療，除了腫瘤外，也要考慮到肝臟本身的情況（如：肝硬化、病毒性肝炎）"
+        }
+      ],
+      "raw_text": "有關肝細胞癌（ hepatocellular carcinoma, HCC ），下列敘述何者正確？\n \nA.射頻消融術（ radiofrequency ablation, RFA ）並不是一種根除性的治療\nB.經動脈化學栓塞（ transarterial chemoembolization, TACE ）的療效與開刀差不多\nC.由於肝細胞癌併發肝門靜脈主幹侵犯（ main portal vein thrombosis ）對於開刀或栓塞（ TACE ）的效果都不\n佳，因此建議做肝臟移植\nD.對於肝細胞癌的治療，除了腫瘤外，也要考慮到肝臟本身的情況（如：肝硬化、病毒性肝炎）",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver",
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q23",
+      "number": 23,
+      "official_pdf_page": 7,
+      "stem_text": "下列何種情況，並不是肝硬化常見的併發症？",
+      "options": [
+        {
+          "label": "A",
+          "text": "肝性腦病變（ hepatic encephalopathy ）"
+        },
+        {
+          "label": "B",
+          "text": "腹水（ ascites ）"
+        },
+        {
+          "label": "C",
+          "text": "肝臟局部結節性增生（ focal nodular hyperplasia ）"
+        },
+        {
+          "label": "D",
+          "text": "食道靜脈曲張（ esophageal varices ）"
+        }
+      ],
+      "raw_text": "下列何種情況，並不是肝硬化常見的併發症？\n \nA.肝性腦病變（ hepatic encephalopathy ）\nB.腹水（ ascites ）\nC.肝臟局部結節性增生（ focal nodular hyperplasia ）\nD.食道靜脈曲張（ esophageal varices ）",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q24",
+      "number": 24,
+      "official_pdf_page": 7,
+      "stem_text": "58 歲男性，高血壓已 10 年，無噁心、嘔吐，走路及一般日常生活不喘，下肢無水腫，腎臟功能持續惡化，腎\n絲球過濾率（ eGFR ）降至 11 mL/min/1.73 m2、血色素 11.3 g/dL 、血壓 128/80 mmHg ，使用兩種降壓藥，血\nHCO3- 22 mEq/L 、血 P 3.5 mg/dL 、血 K+ 4.5 mEq/L ，現階段下列何種治療或策略對病人日後的存活率最沒有\n助益？",
+      "options": [
+        {
+          "label": "A",
+          "text": "維持目前血色素濃度"
+        },
+        {
+          "label": "B",
+          "text": "持續控制血壓"
+        },
+        {
+          "label": "C",
+          "text": "開始透析治療"
+        },
+        {
+          "label": "D",
+          "text": "轉介照會腎臟科醫師做進一步處置"
+        }
+      ],
+      "raw_text": "58 歲男性，高血壓已 10 年，無噁心、嘔吐，走路及一般日常生活不喘，下肢無水腫，腎臟功能持續惡化，腎\n絲球過濾率（ eGFR ）降至 11 mL/min/1.73 m2、血色素 11.3 g/dL 、血壓 128/80 mmHg ，使用兩種降壓藥，血\nHCO3- 22 mEq/L 、血 P 3.5 mg/dL 、血 K+ 4.5 mEq/L ，現階段下列何種治療或策略對病人日後的存活率最沒有\n助益？\n \nA.維持目前血色素濃度\nB.持續控制血壓\nC.開始透析治療\nD.轉介照會腎臟科醫師做進一步處置",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "renal_electrolyte"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q25",
+      "number": 25,
+      "official_pdf_page": 7,
+      "stem_text": "48 歲男性，末期腎病病人，無糖尿病病史和家族史，接受血液透析治療 2 年後，接受親屬腎臟移植。術後移植\n腎功能正常，血中 creatinine 下降至 0.8 mg/dL ，但飯前血糖多次檢測皆高於 200 mg/dL ，下列何種藥物與其血糖\n升高最有關係？",
+      "options": [
+        {
+          "label": "A",
+          "text": "cyclosporine"
+        },
+        {
+          "label": "B",
+          "text": "tacrolimus"
+        },
+        {
+          "label": "C",
+          "text": "sirolimus"
+        },
+        {
+          "label": "D",
+          "text": "mycophenolate mofetil"
+        }
+      ],
+      "raw_text": "48 歲男性，末期腎病病人，無糖尿病病史和家族史，接受血液透析治療 2 年後，接受親屬腎臟移植。術後移植\n腎功能正常，血中 creatinine 下降至 0.8 mg/dL ，但飯前血糖多次檢測皆高於 200 mg/dL ，下列何種藥物與其血糖\n升高最有關係？\n \nA.cyclosporine\nB.tacrolimus\nC.sirolimus\nD.mycophenolate mofetil",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "renal_electrolyte",
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q26",
+      "number": 26,
+      "official_pdf_page": 7,
+      "stem_text": "下列何種慢性腎小管間質性病變，其致病機轉尚未被證實與 DNA 損傷有關？",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mesoamerican nephropathy"
+        },
+        {
+          "label": "B",
+          "text": "karyomegalic interstitial nephritis"
+        },
+        {
+          "label": "C",
+          "text": "Chinese herbal nephropathy"
+        },
+        {
+          "label": "D",
+          "text": "Balkan endemic nephropathy"
+        }
+      ],
+      "raw_text": "下列何種慢性腎小管間質性病變，其致病機轉尚未被證實與 DNA 損傷有關？\n \nA.Mesoamerican nephropathy\nB.karyomegalic interstitial nephritis\nC.Chinese herbal nephropathy\nD.Balkan endemic nephropathy",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q27",
+      "number": 27,
+      "official_pdf_page": 7,
+      "stem_text": "下列有關腎結石症（ nephrolithiasis ）的處置敘述，何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "肌肉注射非類固醇抗發炎劑對於腎絞痛（ renal colic ）的療效可比擬甚至優於類鴉片藥物"
+        },
+        {
+          "label": "B",
+          "text": "補充大量體液或投與利尿劑無法促進結石排出"
+        },
+        {
+          "label": "C",
+          "text": "內科排出療法可降低輸尿管痙攣並增加結石自行排出率"
+        },
+        {
+          "label": "D",
+          "text": "統合分析結果顯示體外震波（ extracorporeal shock wave ）是輸尿管結石的治療首選"
+        }
+      ],
+      "raw_text": "下列有關腎結石症（ nephrolithiasis ）的處置敘述，何者錯誤？\n \nA.肌肉注射非類固醇抗發炎劑對於腎絞痛（ renal colic ）的療效可比擬甚至優於類鴉片藥物\nB.補充大量體液或投與利尿劑無法促進結石排出\nC.內科排出療法可降低輸尿管痙攣並增加結石自行排出率\nD.統合分析結果顯示體外震波（ extracorporeal shock wave ）是輸尿管結石的治療首選",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q28",
+      "number": 28,
+      "official_pdf_page": 8,
+      "stem_text": "下列何項處置無助於減緩自體顯性多囊性腎臟病（ autosomal dominant polycystic kidney disease, ADPKD ）病人\n的腎功能惡化？",
+      "options": [
+        {
+          "label": "A",
+          "text": "第一線使用鈣離子阻斷劑，控制血壓在 140/90 mmHg 之下，在腎功能不良下，收縮壓儘量控制小於 110\nmmHg"
+        },
+        {
+          "label": "B",
+          "text": "如果有囊泡感染的狀況，使用 lipid-soluble antibiotics ，如： trimethoprim-sulfamethoxazole 、 quinolones 、\nchloramphenicol ，因為囊泡穿透性較佳，效果較好，常需要使用四星期以上"
+        },
+        {
+          "label": "C",
+          "text": "使用 vasopressin antagonist （ tolvaptan ）來減緩囊泡的形成及腎功能惡化"
+        },
+        {
+          "label": "D",
+          "text": "建議病人限制低鹽（＜ 5 g/day ）飲食"
+        }
+      ],
+      "raw_text": "下列何項處置無助於減緩自體顯性多囊性腎臟病（ autosomal dominant polycystic kidney disease, ADPKD ）病人\n的腎功能惡化？\n \nA.第一線使用鈣離子阻斷劑，控制血壓在 140/90 mmHg 之下，在腎功能不良下，收縮壓儘量控制小於 110\nmmHg\nB.如果有囊泡感染的狀況，使用 lipid-soluble antibiotics ，如： trimethoprim-sulfamethoxazole 、 quinolones 、\nchloramphenicol ，因為囊泡穿透性較佳，效果較好，常需要使用四星期以上\nC.使用 vasopressin antagonist （ tolvaptan ）來減緩囊泡的形成及腎功能惡化\nD.建議病人限制低鹽（＜ 5 g/day ）飲食",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "renal_electrolyte",
+        "infection"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q29",
+      "number": 29,
+      "official_pdf_page": 8,
+      "stem_text": "有關糖尿病腎病變，下列何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "是目前臺灣最常見造成慢性腎臟病的原因"
+        },
+        {
+          "label": "B",
+          "text": "大約有 20% 糖尿病患者產生糖尿病腎病變"
+        },
+        {
+          "label": "C",
+          "text": "產生糖尿病腎病變的危險因子包括 gene polymorphisms affecting the activity of the renin-angiotensin-aldosterone\naxis"
+        },
+        {
+          "label": "D",
+          "text": "糖尿病視網膜病變和病理上的 Kimmelstiel-Wilson nodules 有很強的相關性"
+        }
+      ],
+      "raw_text": "有關糖尿病腎病變，下列何者錯誤？\n \nA.是目前臺灣最常見造成慢性腎臟病的原因\nB.大約有 20% 糖尿病患者產生糖尿病腎病變\nC.產生糖尿病腎病變的危險因子包括 gene polymorphisms affecting the activity of the renin-angiotensin-aldosterone\naxis\nD.糖尿病視網膜病變和病理上的 Kimmelstiel-Wilson nodules 有很強的相關性",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q30",
+      "number": 30,
+      "official_pdf_page": 8,
+      "stem_text": "在哺乳類腎臟的腎絲球 – 腎小管發育時，不同時期有不同的基因調控。在前腎小管聚合期（ pretubular\naggregation ）時，下列那一個基因未參與？",
+      "options": [
+        {
+          "label": "A",
+          "text": "VEGF-A / Kdr"
+        },
+        {
+          "label": "B",
+          "text": "Wnt4"
+        },
+        {
+          "label": "C",
+          "text": "Emx2"
+        },
+        {
+          "label": "D",
+          "text": "Fgf8"
+        }
+      ],
+      "raw_text": "在哺乳類腎臟的腎絲球 – 腎小管發育時，不同時期有不同的基因調控。在前腎小管聚合期（ pretubular\naggregation ）時，下列那一個基因未參與？\n \nA.VEGF-A / Kdr\nB.Wnt4\nC.Emx2\nD.Fgf8",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "renal_electrolyte"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q31",
+      "number": 31,
+      "official_pdf_page": 8,
+      "stem_text": "一位 52 歲女性有多處關節疼痛的症狀，經診斷患有 fibromyalgia ，且未伴隨其他的免疫疾病，其典型的血中 C-\nreactive protein （ CRP ）和 erythrocyte sedimentation rate （ ESR ）的值應為如何？",
+      "options": [
+        {
+          "label": "A",
+          "text": "CRP 和 ESR 皆上升"
+        },
+        {
+          "label": "B",
+          "text": "CRP 上升，但 ESR 正常"
+        },
+        {
+          "label": "C",
+          "text": "CRP 正常，但 ESR 上升"
+        },
+        {
+          "label": "D",
+          "text": "CRP 和 ESR 皆正常"
+        }
+      ],
+      "raw_text": "一位 52 歲女性有多處關節疼痛的症狀，經診斷患有 fibromyalgia ，且未伴隨其他的免疫疾病，其典型的血中 C-\nreactive protein （ CRP ）和 erythrocyte sedimentation rate （ ESR ）的值應為如何？\n \nA.CRP 和 ESR 皆上升\nB.CRP 上升，但 ESR 正常\nC.CRP 正常，但 ESR 上升\nD.CRP 和 ESR 皆正常",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q32",
+      "number": 32,
+      "official_pdf_page": 8,
+      "stem_text": "有關類風濕性關節炎臨床表現，下列何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "通常一開始以左右不對稱、大關節發炎為主，後期才會影響小關節"
+        },
+        {
+          "label": "B",
+          "text": "當遠端指間關節（ distal interphalangeal joint ）也受影響時，通常代表同時也患有退化性關節炎"
+        },
+        {
+          "label": "C",
+          "text": "伸側（ extensor ）肌腱發生肌腱滑膜炎（ tenosynovitis ）的機會比曲側（ flexor ）肌腱常見很多"
+        },
+        {
+          "label": "D",
+          "text": "頸椎發炎雖然少見，但是通常發生在疾病的早期"
+        }
+      ],
+      "raw_text": "有關類風濕性關節炎臨床表現，下列何者正確？\n \nA.通常一開始以左右不對稱、大關節發炎為主，後期才會影響小關節\nB.當遠端指間關節（ distal interphalangeal joint ）也受影響時，通常代表同時也患有退化性關節炎\nC.伸側（ extensor ）肌腱發生肌腱滑膜炎（ tenosynovitis ）的機會比曲側（ flexor ）肌腱常見很多\nD.頸椎發炎雖然少見，但是通常發生在疾病的早期",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "rheumatology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q33",
+      "number": 33,
+      "official_pdf_page": 8,
+      "stem_text": "有關 inflammatory myopathies 的鑑別診斷，下列何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "dermatomyositis 主要以成人為主， polymyositis 則是成人跟幼童都可以發生"
+        },
+        {
+          "label": "B",
+          "text": "inclusion body myositis 主要發生在大於 50 歲病人，且以女性居多"
+        },
+        {
+          "label": "C",
+          "text": "polymyositis 病人的肌肉切片以 endomysial 與 perivascular inflammation 表現，且以 CD8+ T cells 浸潤為主"
+        },
+        {
+          "label": "D",
+          "text": "necrotizing myopathy 與惡性腫瘤較無關"
+        }
+      ],
+      "raw_text": "有關 inflammatory myopathies 的鑑別診斷，下列何者正確？\n A.dermatomyositis 主要以成人為主， polymyositis 則是成人跟幼童都可以發生\nB.inclusion body myositis 主要發生在大於 50 歲病人，且以女性居多\nC.polymyositis 病人的肌肉切片以 endomysial 與 perivascular inflammation 表現，且以 CD8+ T cells 浸潤為主\nD.necrotizing myopathy 與惡性腫瘤較無關",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q34",
+      "number": 34,
+      "official_pdf_page": 9,
+      "stem_text": "病人出現下列何種感染時，最應考慮是否有補體系統的缺損（ complement deficiencies ）？",
+      "options": [
+        {
+          "label": "A",
+          "text": "反覆分枝桿菌（Mycobacteria）感染"
+        },
+        {
+          "label": "B",
+          "text": "反覆奈瑟氏菌（Neisseria）感染"
+        },
+        {
+          "label": "C",
+          "text": "反覆帶狀疱疹（ herpes zoster ）感染"
+        },
+        {
+          "label": "D",
+          "text": "反覆葡萄球菌（Staphylococcus）感染"
+        }
+      ],
+      "raw_text": "病人出現下列何種感染時，最應考慮是否有補體系統的缺損（ complement deficiencies ）？\n \nA.反覆分枝桿菌（Mycobacteria）感染\nB.反覆奈瑟氏菌（Neisseria）感染\nC.反覆帶狀疱疹（ herpes zoster ）感染\nD.反覆葡萄球菌（Staphylococcus）感染",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q35",
+      "number": 35,
+      "official_pdf_page": 9,
+      "stem_text": "下列有關退化性關節炎（ osteoarthritis, OA ）之敘述，何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "手部及髖關節之 OA 與遺傳基因較有關，而膝關節與遺傳基因的相關性較少"
+        },
+        {
+          "label": "B",
+          "text": "關節 type 2 之軟骨主要被 MMPs （ matrix metalloproteinases ）破壞"
+        },
+        {
+          "label": "C",
+          "text": "華人髖關節 OA 較白種人少見"
+        },
+        {
+          "label": "D",
+          "text": "90% 以上 OA 患者必須先行使用非類固醇抗發炎藥物（ NSAID ）"
+        }
+      ],
+      "raw_text": "下列有關退化性關節炎（ osteoarthritis, OA ）之敘述，何者錯誤？\n \nA.手部及髖關節之 OA 與遺傳基因較有關，而膝關節與遺傳基因的相關性較少\nB.關節 type 2 之軟骨主要被 MMPs （ matrix metalloproteinases ）破壞\nC.華人髖關節 OA 較白種人少見\nD.90% 以上 OA 患者必須先行使用非類固醇抗發炎藥物（ NSAID ）",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "#",
+        "official_correction_note": "答B或D或BD者均給分,",
+        "scoring": {
+          "type": "explicit_accepted",
+          "accepted": [
+            "B",
+            "D",
+            "BD"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q36",
+      "number": 36,
+      "official_pdf_page": 9,
+      "stem_text": "一位 35 歲婦女，因右側乳房有一腫塊，後接受切除切片證實為 estrogen receptor （ ER ）陽性、 progesterone\nreceptor （ PR ）陽性、 HER2 陽性（組織免疫染色 3+ ）之侵襲性乳癌，與主治醫師討論後，病人決定接受右側\n乳房保留手術和前哨淋巴結切片手術，其最後病理檢體證實腫瘤為直徑 3 公分，腋下淋巴結 2 顆轉移之侵襲性\n乳癌，下列何者術後輔助治療對降低病人乳癌局部及遠處轉移之效果最好？",
+      "options": [
+        {
+          "label": "A",
+          "text": "anthracycline 為主化學治療，加上抗賀爾蒙治療以及放射線治療"
+        },
+        {
+          "label": "B",
+          "text": "紫杉醇為主化學治療，加上抗賀爾蒙治療和放射線治療"
+        },
+        {
+          "label": "C",
+          "text": "合併化學治療以及卵巢去功能手術"
+        },
+        {
+          "label": "D",
+          "text": "化學治療合併 trastuzumab ，以及抗賀爾蒙治療和放射線治療"
+        }
+      ],
+      "raw_text": "一位 35 歲婦女，因右側乳房有一腫塊，後接受切除切片證實為 estrogen receptor （ ER ）陽性、 progesterone\nreceptor （ PR ）陽性、 HER2 陽性（組織免疫染色 3+ ）之侵襲性乳癌，與主治醫師討論後，病人決定接受右側\n乳房保留手術和前哨淋巴結切片手術，其最後病理檢體證實腫瘤為直徑 3 公分，腋下淋巴結 2 顆轉移之侵襲性\n乳癌，下列何者術後輔助治療對降低病人乳癌局部及遠處轉移之效果最好？\n \nA.anthracycline 為主化學治療，加上抗賀爾蒙治療以及放射線治療\nB.紫杉醇為主化學治療，加上抗賀爾蒙治療和放射線治療\nC.合併化學治療以及卵巢去功能手術\nD.化學治療合併 trastuzumab ，以及抗賀爾蒙治療和放射線治療",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q37",
+      "number": 37,
+      "official_pdf_page": 9,
+      "stem_text": "針對原發部位不明轉移腺癌（ adenocarcinoma of unknown primary ）之病人，臨床醫師可藉由組織學染色之一\n系列流程，來鑑別可能之原發腺癌，下列敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "若 CK （ cytokeratin ） 7+ ， CK20+ ：可以幫助診斷卵巢癌或胰臟癌"
+        },
+        {
+          "label": "B",
+          "text": "若 CK （ cytokeratin ） 7+ ， CK20- ：可以幫助診斷子宮內膜癌或肺癌"
+        },
+        {
+          "label": "C",
+          "text": "若 CK （ cytokeratin ） 7- ， CK20+ ：可以幫助診斷前列腺癌或甲狀腺癌"
+        },
+        {
+          "label": "D",
+          "text": "若 CK （ cytokeratin ） 7- ， CK20- ：可以幫助診斷肝細胞癌或腎細胞癌"
+        }
+      ],
+      "raw_text": "針對原發部位不明轉移腺癌（ adenocarcinoma of unknown primary ）之病人，臨床醫師可藉由組織學染色之一\n系列流程，來鑑別可能之原發腺癌，下列敘述何者錯誤？\n \nA.若 CK （ cytokeratin ） 7+ ， CK20+ ：可以幫助診斷卵巢癌或胰臟癌\nB.若 CK （ cytokeratin ） 7+ ， CK20- ：可以幫助診斷子宮內膜癌或肺癌\nC.若 CK （ cytokeratin ） 7- ， CK20+ ：可以幫助診斷前列腺癌或甲狀腺癌\nD.若 CK （ cytokeratin ） 7- ， CK20- ：可以幫助診斷肝細胞癌或腎細胞癌",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q38",
+      "number": 38,
+      "official_pdf_page": 9,
+      "stem_text": "某些癌症的治療可能與某些 second malignancies 的發生相關。下列有關癌症治療與 second malignancy 的組合，\n何者最不恰當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "topoisomerase inhibitors ； acute lymphoblastic leukemia associated with deletions in chromosome 5 or 7"
+        },
+        {
+          "label": "B",
+          "text": "tamoxifen ； endometrial cancer"
+        },
+        {
+          "label": "C",
+          "text": "異體骨髓移植使用 T-cell depletion ； EBV-associated lymphoproliferative disorder"
+        },
+        {
+          "label": "D",
+          "text": "化學治療； myelodysplastic syndrome"
+        }
+      ],
+      "raw_text": "某些癌症的治療可能與某些 second malignancies 的發生相關。下列有關癌症治療與 second malignancy 的組合，\n何者最不恰當？\n \nA.topoisomerase inhibitors ； acute lymphoblastic leukemia associated with deletions in chromosome 5 or 7\nB.tamoxifen ； endometrial cancer\nC.異體骨髓移植使用 T-cell depletion ； EBV-associated lymphoproliferative disorder\nD.化學治療； myelodysplastic syndrome",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q39",
+      "number": 39,
+      "official_pdf_page": 10,
+      "stem_text": "胃的惡性腫瘤中，腺癌（ adenocarcinoma ）約占 85% 。其餘 15% 非腺癌的胃的惡性腫瘤中，下列敘述何者正\n確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "胃的淋巴瘤（ lymphoma ）中， T-cell origin 遠多於 B-cell origin"
+        },
+        {
+          "label": "B",
+          "text": "局限於胃部的 mucosa-associated lymphoid tissue （ MALT ） lymphoma 第一線治療為清除Helicobacter pylori的抗\n生素治療"
+        },
+        {
+          "label": "C",
+          "text": "局限於胃部的 leiomyosarcoma 治療首選（ treatment of choice ）是化學治療合併放射治療"
+        },
+        {
+          "label": "D",
+          "text": "胃的 gastrointestinal stromal tumor （ GIST ）若轉移至肝臟，應考慮組合式化學治療"
+        }
+      ],
+      "raw_text": "胃的惡性腫瘤中，腺癌（ adenocarcinoma ）約占 85% 。其餘 15% 非腺癌的胃的惡性腫瘤中，下列敘述何者正\n確？\n \nA.胃的淋巴瘤（ lymphoma ）中， T-cell origin 遠多於 B-cell origin\nB.局限於胃部的 mucosa-associated lymphoid tissue （ MALT ） lymphoma 第一線治療為清除Helicobacter pylori的抗\n生素治療\nC.局限於胃部的 leiomyosarcoma 治療首選（ treatment of choice ）是化學治療合併放射治療\nD.胃的 gastrointestinal stromal tumor （ GIST ）若轉移至肝臟，應考慮組合式化學治療",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q40",
+      "number": 40,
+      "official_pdf_page": 10,
+      "stem_text": "下列藥物中何者最常使用於第四期腎細胞癌的全身性藥物治療？",
+      "options": [
+        {
+          "label": "A",
+          "text": "化學治療的 doxorubicin"
+        },
+        {
+          "label": "B",
+          "text": "標靶治療的 axitinib"
+        },
+        {
+          "label": "C",
+          "text": "標靶治療的 trastuzumab"
+        },
+        {
+          "label": "D",
+          "text": "免疫治療的 sipuleucel-T"
+        }
+      ],
+      "raw_text": "下列藥物中何者最常使用於第四期腎細胞癌的全身性藥物治療？\n \nA.化學治療的 doxorubicin\nB.標靶治療的 axitinib\nC.標靶治療的 trastuzumab\nD.免疫治療的 sipuleucel-T",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q41",
+      "number": 41,
+      "official_pdf_page": 10,
+      "stem_text": "關於癌症預防的敘述，下列何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "B 型肝炎疫苗能預防因為慢性 B 型肝炎病毒感染導致的肝炎、肝細胞癌"
+        },
+        {
+          "label": "B",
+          "text": "如果先前未被某一型的人類乳突病毒感染過，接受該型人類乳突病毒疫苗，能預防該型人類乳突病毒感染的\n持續感染"
+        },
+        {
+          "label": "C",
+          "text": "如果先前未被某一型的人類乳突病毒感染過，接受該型人類乳突病毒疫苗，能預防該型人類乳突病毒感染所\n造成的癌前病變"
+        },
+        {
+          "label": "D",
+          "text": "人類乳突病毒疫苗接種過後可有終生免疫效果"
+        }
+      ],
+      "raw_text": "關於癌症預防的敘述，下列何者錯誤？\n \nA.B 型肝炎疫苗能預防因為慢性 B 型肝炎病毒感染導致的肝炎、肝細胞癌\nB.如果先前未被某一型的人類乳突病毒感染過，接受該型人類乳突病毒疫苗，能預防該型人類乳突病毒感染的\n持續感染\nC.如果先前未被某一型的人類乳突病毒感染過，接受該型人類乳突病毒疫苗，能預防該型人類乳突病毒感染所\n造成的癌前病變\nD.人類乳突病毒疫苗接種過後可有終生免疫效果",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver",
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q42",
+      "number": 42,
+      "official_pdf_page": 10,
+      "stem_text": "下列有關血小板（ platelet ）的敘述，何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "血小板無核，也無 RNA ，因此沒有合成蛋白質的能力"
+        },
+        {
+          "label": "B",
+          "text": "正常的血小板之直徑約 1 ～ 5 μm ，平均在血液中的存活期約 7 ～ 10 天"
+        },
+        {
+          "label": "C",
+          "text": "血小板的 GPIb-IX-V 複合體，對血小板之黏附（ adhesion ）與血小板之活化非常重要"
+        },
+        {
+          "label": "D",
+          "text": "在急性冠狀動脈症候群（ acute coronary syndrome ）的病人血液中，其血小板彼此之間，以及血小板與白血\n球之間的交互作用均增強"
+        }
+      ],
+      "raw_text": "下列有關血小板（ platelet ）的敘述，何者錯誤？\n \nA.血小板無核，也無 RNA ，因此沒有合成蛋白質的能力\nB.正常的血小板之直徑約 1 ～ 5 μm ，平均在血液中的存活期約 7 ～ 10 天\nC.血小板的 GPIb-IX-V 複合體，對血小板之黏附（ adhesion ）與血小板之活化非常重要\nD.在急性冠狀動脈症候群（ acute coronary syndrome ）的病人血液中，其血小板彼此之間，以及血小板與白血\n球之間的交互作用均增強",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "cardiology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q43",
+      "number": 43,
+      "official_pdf_page": 10,
+      "stem_text": "下列有關造血幹細胞移植（ hematopoietic stem cell transplantation ）的敘述，何者最不恰當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "一位病人若有 n 個同父同母的兄弟姊妹，則可以找到至少一位 HLA 全合的兄弟姊妹的機率是 1-(0.75)n"
+        },
+        {
+          "label": "B",
+          "text": "進行異體造血幹細胞移植（ allogeneic hematopoietic stem cell transplantation ），若是 ABO 血型不相合，通常\n在移植前的免疫抑制劑的劑量必須增加或是進行 recipient 之脾臟切除"
+        },
+        {
+          "label": "C",
+          "text": "自體造血幹細胞移植（ autologous hematopoietic stem cell transplantation ）並無 graft-versus-host\ndisease （ GVHD ）或是 graft rejection 的風險"
+        },
+        {
+          "label": "D",
+          "text": "周邊血液中，在施打 granulocyte colony-stimulating factor （ G-CSF ）數天之後，也可能收集到足夠的造血幹細\n胞進行移植。若是收集的數量不足，施打 plerixafor （一種 CXCR4 的拮抗劑），可以幫助收集到更多的造血\n幹細胞"
+        }
+      ],
+      "raw_text": "下列有關造血幹細胞移植（ hematopoietic stem cell transplantation ）的敘述，何者最不恰當？\n \nA.一位病人若有 n 個同父同母的兄弟姊妹，則可以找到至少一位 HLA 全合的兄弟姊妹的機率是 1-(0.75)n\nB.進行異體造血幹細胞移植（ allogeneic hematopoietic stem cell transplantation ），若是 ABO 血型不相合，通常\n在移植前的免疫抑制劑的劑量必須增加或是進行 recipient 之脾臟切除\nC.自體造血幹細胞移植（ autologous hematopoietic stem cell transplantation ）並無 graft-versus-host\ndisease （ GVHD ）或是 graft rejection 的風險\nD.周邊血液中，在施打 granulocyte colony-stimulating factor （ G-CSF ）數天之後，也可能收集到足夠的造血幹細\n胞進行移植。若是收集的數量不足，施打 plerixafor （一種 CXCR4 的拮抗劑），可以幫助收集到更多的造血\n幹細胞",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "#",
+        "official_correction_note": "答B或C或BC者均給分",
+        "scoring": {
+          "type": "explicit_accepted",
+          "accepted": [
+            "B",
+            "C",
+            "BC"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q44",
+      "number": 44,
+      "official_pdf_page": 11,
+      "stem_text": "慢性淋巴性白血病（ chronic lymphocytic leukemia, CLL ）的病人，具有下列何種的染色體變異，有較佳的預\n後？",
+      "options": [
+        {
+          "label": "A",
+          "text": "del(13)(q14.3)"
+        },
+        {
+          "label": "B",
+          "text": "del(11)(q22.3)"
+        },
+        {
+          "label": "C",
+          "text": "trisomy 12"
+        },
+        {
+          "label": "D",
+          "text": "del(17)(p13.1)"
+        }
+      ],
+      "raw_text": "慢性淋巴性白血病（ chronic lymphocytic leukemia, CLL ）的病人，具有下列何種的染色體變異，有較佳的預\n後？\n \nA.del(13)(q14.3)\nB.del(11)(q22.3)\nC.trisomy 12\nD.del(17)(p13.1)",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q45",
+      "number": 45,
+      "official_pdf_page": 11,
+      "stem_text": "65 歲男性至門診求診，主訴慢性咳嗽及運動性氣促，過去無心臟病或糖尿病之病史，抽菸史 50 包年，已戒菸 2\n年。最近咳嗽氣促的症狀加劇，下列何者是診斷 COPD 的必要檢查？",
+      "options": [
+        {
+          "label": "A",
+          "text": "胸部電腦斷層"
+        },
+        {
+          "label": "B",
+          "text": "支氣管鏡檢查"
+        },
+        {
+          "label": "C",
+          "text": "支氣管擴張試驗"
+        },
+        {
+          "label": "D",
+          "text": "serum alpha-1 antitrypsin level"
+        }
+      ],
+      "raw_text": "65 歲男性至門診求診，主訴慢性咳嗽及運動性氣促，過去無心臟病或糖尿病之病史，抽菸史 50 包年，已戒菸 2\n年。最近咳嗽氣促的症狀加劇，下列何者是診斷 COPD 的必要檢查？\n \nA.胸部電腦斷層\nB.支氣管鏡檢查\nC.支氣管擴張試驗\nD.serum alpha-1 antitrypsin level",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "respiratory",
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q46",
+      "number": 46,
+      "official_pdf_page": 11,
+      "stem_text": "COPD 病人接受長效型支氣管擴張劑治療 3 個月後症狀仍不穩定，抽血檢查發現 WBC ： 9,500/mm3；\nneutrophil ： 70% ； eosinophil ： 5% ； C-reactive protein ： 1.5 mg/dL ，下列治療何者最為恰當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "add-on theophylline"
+        },
+        {
+          "label": "B",
+          "text": "add-on macrolide"
+        },
+        {
+          "label": "C",
+          "text": "add-on leukotriene modifier"
+        },
+        {
+          "label": "D",
+          "text": "add-on inhaled corticosteroid"
+        }
+      ],
+      "raw_text": "COPD 病人接受長效型支氣管擴張劑治療 3 個月後症狀仍不穩定，抽血檢查發現 WBC ： 9,500/mm3；\nneutrophil ： 70% ； eosinophil ： 5% ； C-reactive protein ： 1.5 mg/dL ，下列治療何者最為恰當？\n \nA.add-on theophylline\nB.add-on macrolide \nC.add-on leukotriene modifier\nD.add-on inhaled corticosteroid",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "respiratory"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q47",
+      "number": 47,
+      "official_pdf_page": 11,
+      "stem_text": "體外胸腔超音波檢查對下列何種情況之診斷，最沒有幫助？",
+      "options": [
+        {
+          "label": "A",
+          "text": "肋膜腔積水"
+        },
+        {
+          "label": "B",
+          "text": "氣胸"
+        },
+        {
+          "label": "C",
+          "text": "橫膈膜麻痺"
+        },
+        {
+          "label": "D",
+          "text": "兩側肺門淋巴腺腫"
+        }
+      ],
+      "raw_text": "體外胸腔超音波檢查對下列何種情況之診斷，最沒有幫助？\n \nA.肋膜腔積水\nB.氣胸\nC.橫膈膜麻痺\nD.兩側肺門淋巴腺腫",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q48",
+      "number": 48,
+      "official_pdf_page": 11,
+      "stem_text": "63 歲男性病人，因運動時呼吸困難前來就診，肺功能檢查顯示 TLC 70% 預測值， FEV1/FVC 80% ，最大吸氣壓\n力（ maximal inspiratory pressure ） 55% 預測值，下列何者為最有可能之診斷？",
+      "options": [
+        {
+          "label": "A",
+          "text": "慢性阻塞性肺病"
+        },
+        {
+          "label": "B",
+          "text": "肥胖症"
+        },
+        {
+          "label": "C",
+          "text": "肺葉切除術後"
+        },
+        {
+          "label": "D",
+          "text": "重症肌無力"
+        }
+      ],
+      "raw_text": "63 歲男性病人，因運動時呼吸困難前來就診，肺功能檢查顯示 TLC 70% 預測值， FEV1/FVC 80% ，最大吸氣壓\n力（ maximal inspiratory pressure ） 55% 預測值，下列何者為最有可能之診斷？\n \nA.慢性阻塞性肺病\nB.肥胖症\nC.肺葉切除術後\nD.重症肌無力",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q49",
+      "number": 49,
+      "official_pdf_page": 12,
+      "stem_text": "因為丈夫罹患 isoniazid 抗藥性的開放性肺結核而接受接觸者檢查的 33 歲女性，她的胸部 X 光檢查正常但丙型干\n擾素血液測驗（ interferon-γ release assay ）為陽性。下列何者為此女性最適合的潛伏結核感染治療處方？",
+      "options": [
+        {
+          "label": "A",
+          "text": "9 個月的每日一次 isoniazid 治療"
+        },
+        {
+          "label": "B",
+          "text": "2 個月的 rifampin 及 pyrazinamide 治療"
+        },
+        {
+          "label": "C",
+          "text": "4 個月的每日一次 rifampin 治療"
+        },
+        {
+          "label": "D",
+          "text": "9 個月的每日一次 levofloxacin 治療"
+        }
+      ],
+      "raw_text": "因為丈夫罹患 isoniazid 抗藥性的開放性肺結核而接受接觸者檢查的 33 歲女性，她的胸部 X 光檢查正常但丙型干\n擾素血液測驗（ interferon-γ release assay ）為陽性。下列何者為此女性最適合的潛伏結核感染治療處方？\n \nA.9 個月的每日一次 isoniazid 治療\nB.2 個月的 rifampin 及 pyrazinamide 治療\nC.4 個月的每日一次 rifampin 治療\nD.9 個月的每日一次 levofloxacin 治療",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "infection"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q50",
+      "number": 50,
+      "official_pdf_page": 12,
+      "stem_text": "關於非結核分枝桿菌（ nontuberculous mycobacteria ），下列敘述何者最適當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "非結核分枝桿菌的肺部感染，幾乎都發生於人類免疫缺陷病毒感染的病人"
+        },
+        {
+          "label": "B",
+          "text": "非結核分枝桿菌中的M. gordonae表現與結核菌相似，容易造成肺部的感染"
+        },
+        {
+          "label": "C",
+          "text": "M. avium complex 是慢速生長菌；此菌引起的肺部感染，治療時間通常需要達 18 個月"
+        },
+        {
+          "label": "D",
+          "text": "M. abscessus是快速生長菌；此菌引成的肺部感染，藥物治療時間與一般肺炎相同，約需 2 個星期"
+        }
+      ],
+      "raw_text": "關於非結核分枝桿菌（ nontuberculous mycobacteria ），下列敘述何者最適當？\n \nA.非結核分枝桿菌的肺部感染，幾乎都發生於人類免疫缺陷病毒感染的病人\nB.非結核分枝桿菌中的M. gordonae表現與結核菌相似，容易造成肺部的感染\nC.M. avium complex 是慢速生長菌；此菌引起的肺部感染，治療時間通常需要達 18 個月\nD.M. abscessus是快速生長菌；此菌引成的肺部感染，藥物治療時間與一般肺炎相同，約需 2 個星期",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "respiratory",
+        "infection"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q51",
+      "number": 51,
+      "official_pdf_page": 12,
+      "stem_text": "下列有關急性肺栓塞（ acute pulmonary embolism ）的敘述，何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "胸痛為 Wells' clinical prediction rule 臨床診斷準則項目之一"
+        },
+        {
+          "label": "B",
+          "text": "plasma D-dimer test 對急性肺栓塞的診斷有極高敏感度（ sensitivity ）與專一性（ specificity ）"
+        },
+        {
+          "label": "C",
+          "text": "經靜脈或皮下注射的抗凝劑，如低分子量肝素（ low-molecular-weight heparin ），應持續使用 5 天以上，並維\n持 international normalized ratio 在 2.0 ～ 3.0 之間至少連續 2 天"
+        },
+        {
+          "label": "D",
+          "text": "嚴重肺栓塞病人最常見的死因為右心室衰竭所導致的心因性休克"
+        }
+      ],
+      "raw_text": "下列有關急性肺栓塞（ acute pulmonary embolism ）的敘述，何者正確？\n \nA.胸痛為 Wells' clinical prediction rule 臨床診斷準則項目之一\nB.plasma D-dimer test 對急性肺栓塞的診斷有極高敏感度（ sensitivity ）與專一性（ specificity ）\nC.經靜脈或皮下注射的抗凝劑，如低分子量肝素（ low-molecular-weight heparin ），應持續使用 5 天以上，並維\n持 international normalized ratio 在 2.0 ～ 3.0 之間至少連續 2 天\nD.嚴重肺栓塞病人最常見的死因為右心室衰竭所導致的心因性休克",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "respiratory"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q52",
+      "number": 52,
+      "official_pdf_page": 12,
+      "stem_text": "下列有關原發性副甲狀腺高能症（ primary hyperparathyroidism ）的敘述，何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "副甲狀腺瘤造成之副甲狀腺高能症，此時副甲狀腺之腫瘤多半是單一腺瘤（ isolated adenoma ）"
+        },
+        {
+          "label": "B",
+          "text": "副甲狀腺瘤可能是多發性內分泌腫瘤（ multiple endocrine neoplasia ）的一種臨床表現"
+        },
+        {
+          "label": "C",
+          "text": "常表現高血鈣、高血磷及低血氯"
+        },
+        {
+          "label": "D",
+          "text": "血鈣濃度高於 14 mg/dL （ 3.5 mmol/L ）時，病理學報告經常是副甲狀腺癌"
+        }
+      ],
+      "raw_text": "下列有關原發性副甲狀腺高能症（ primary hyperparathyroidism ）的敘述，何者錯誤？\n \nA.副甲狀腺瘤造成之副甲狀腺高能症，此時副甲狀腺之腫瘤多半是單一腺瘤（ isolated adenoma ）\nB.副甲狀腺瘤可能是多發性內分泌腫瘤（ multiple endocrine neoplasia ）的一種臨床表現\nC.常表現高血鈣、高血磷及低血氯\nD.血鈣濃度高於 14 mg/dL （ 3.5 mmol/L ）時，病理學報告經常是副甲狀腺癌",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine",
+        "hematology_oncology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q53",
+      "number": 53,
+      "official_pdf_page": 12,
+      "stem_text": "老年男性血中之雄性激素濃度較高時，下列疾病或狀況何者最不可能發生？",
+      "options": [
+        {
+          "label": "A",
+          "text": "性慾較高"
+        },
+        {
+          "label": "B",
+          "text": "罹患冠狀動脈疾病機率較低"
+        },
+        {
+          "label": "C",
+          "text": "罹患糖尿病機率較高"
+        },
+        {
+          "label": "D",
+          "text": "死亡率較低"
+        }
+      ],
+      "raw_text": "老年男性血中之雄性激素濃度較高時，下列疾病或狀況何者最不可能發生？\n \nA.性慾較高\nB.罹患冠狀動脈疾病機率較低\nC.罹患糖尿病機率較高\nD.死亡率較低",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "cardiology",
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q54",
+      "number": 54,
+      "official_pdf_page": 12,
+      "stem_text": "下列有關糖尿病與高血壓的敘述，何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "糖尿病病人的高血壓盛行率較沒有糖尿病者高"
+        },
+        {
+          "label": "B",
+          "text": "糖尿病病人罹患高血壓的首選控制血壓藥物為 angiotensin-converting enzyme inhibitors 或是 angiotensin receptor\nblockers"
+        },
+        {
+          "label": "C",
+          "text": "糖尿病病人的血壓控制目標一般建議比沒有糖尿病的患者來得寬鬆"
+        },
+        {
+          "label": "D",
+          "text": "高血壓會促進糖尿病的大血管與小血管病變的發生及惡化"
+        }
+      ],
+      "raw_text": "下列有關糖尿病與高血壓的敘述，何者錯誤？\n \nA.糖尿病病人的高血壓盛行率較沒有糖尿病者高\nB.糖尿病病人罹患高血壓的首選控制血壓藥物為 angiotensin-converting enzyme inhibitors 或是 angiotensin receptor\nblockers\nC.糖尿病病人的血壓控制目標一般建議比沒有糖尿病的患者來得寬鬆\nD.高血壓會促進糖尿病的大血管與小血管病變的發生及惡化",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q55",
+      "number": 55,
+      "official_pdf_page": 13,
+      "stem_text": "下列何種藥物未曾被核准用來減輕體重？",
+      "options": [
+        {
+          "label": "A",
+          "text": "liraglutide"
+        },
+        {
+          "label": "B",
+          "text": "lorcaserin"
+        },
+        {
+          "label": "C",
+          "text": "orlistat"
+        },
+        {
+          "label": "D",
+          "text": "sitagliptin"
+        }
+      ],
+      "raw_text": "下列何種藥物未曾被核准用來減輕體重？\n \nA.liraglutide\nB.lorcaserin\nC.orlistat\nD.sitagliptin",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q56",
+      "number": 56,
+      "official_pdf_page": 13,
+      "stem_text": "有關血糖的調控，下列敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "胰島素是由胰臟所分泌，會使血液中的葡萄糖濃度降低"
+        },
+        {
+          "label": "B",
+          "text": "一般正常人的血糖會隨著飲食及運動等狀況在一定的範圍內波動"
+        },
+        {
+          "label": "C",
+          "text": "血糖太低可能會導致死亡"
+        },
+        {
+          "label": "D",
+          "text": "metformin 是最常引起低血糖的口服降血糖藥物"
+        }
+      ],
+      "raw_text": "有關血糖的調控，下列敘述何者錯誤？\n \nA.胰島素是由胰臟所分泌，會使血液中的葡萄糖濃度降低\nB.一般正常人的血糖會隨著飲食及運動等狀況在一定的範圍內波動\nC.血糖太低可能會導致死亡\nD.metformin 是最常引起低血糖的口服降血糖藥物",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q57",
+      "number": 57,
+      "official_pdf_page": 13,
+      "stem_text": "下列何者是最常見的甲狀腺癌？",
+      "options": [
+        {
+          "label": "A",
+          "text": "乳突癌（ papillary carcinoma ）"
+        },
+        {
+          "label": "B",
+          "text": "濾泡細胞癌（ follicular carcinoma ）"
+        },
+        {
+          "label": "C",
+          "text": "髓質癌（ medullary carcinoma ）"
+        },
+        {
+          "label": "D",
+          "text": "未分化癌（ anaplastic carcinoma ）"
+        }
+      ],
+      "raw_text": "下列何者是最常見的甲狀腺癌？\n \nA.乳突癌（ papillary carcinoma ）\nB.濾泡細胞癌（ follicular carcinoma ）\nC.髓質癌（ medullary carcinoma ）\nD.未分化癌（ anaplastic carcinoma ）",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q58",
+      "number": 58,
+      "official_pdf_page": 13,
+      "stem_text": "腦下垂體後葉若遭受破壞，最可能出現下列何種疾病？",
+      "options": [
+        {
+          "label": "A",
+          "text": "尿崩症"
+        },
+        {
+          "label": "B",
+          "text": "腎上腺機能不足"
+        },
+        {
+          "label": "C",
+          "text": "甲狀腺功能不足"
+        },
+        {
+          "label": "D",
+          "text": "性功能異常"
+        }
+      ],
+      "raw_text": "腦下垂體後葉若遭受破壞，最可能出現下列何種疾病？\n \nA.尿崩症\nB.腎上腺機能不足\nC.甲狀腺功能不足\nD.性功能異常",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q59",
+      "number": 59,
+      "official_pdf_page": 13,
+      "stem_text": "有關中心靜脈導管相關血流感染之預防措施組合（ bundle ），包括下列那些項目：①參與導管及置放照護人\n員需接受教育訓練   ②中心導管置入時使用最大無菌面防護（ maximal barrier precaution ）  ③皮膚消毒使用\n含有 chlorhexidine 的抗菌液  ④常規每兩週更換中心靜脈導管",
+      "options": [
+        {
+          "label": "A",
+          "text": "①②③④"
+        },
+        {
+          "label": "B",
+          "text": "僅①②③"
+        },
+        {
+          "label": "C",
+          "text": "僅③④"
+        },
+        {
+          "label": "D",
+          "text": "僅①②④"
+        }
+      ],
+      "raw_text": "有關中心靜脈導管相關血流感染之預防措施組合（ bundle ），包括下列那些項目：①參與導管及置放照護人\n員需接受教育訓練   ②中心導管置入時使用最大無菌面防護（ maximal barrier precaution ）  ③皮膚消毒使用\n含有 chlorhexidine 的抗菌液  ④常規每兩週更換中心靜脈導管\n \nA.①②③④\nB.僅①②③\nC.僅③④\nD.僅①②④",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q60",
+      "number": 60,
+      "official_pdf_page": 14,
+      "stem_text": "血液幹細胞移植後使用一年 trimethoprim-sulfamethoxazole （ TMP-SMX ）預防，可以減少的致病原感染，下列\n何者最不適當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "Listeria monocytogenes"
+        },
+        {
+          "label": "B",
+          "text": "Nocardia spp."
+        },
+        {
+          "label": "C",
+          "text": "Streptococcus pneumoniae"
+        },
+        {
+          "label": "D",
+          "text": "Neisseria meningitidis"
+        }
+      ],
+      "raw_text": "血液幹細胞移植後使用一年 trimethoprim-sulfamethoxazole （ TMP-SMX ）預防，可以減少的致病原感染，下列\n何者最不適當？\n \nA.Listeria monocytogenes\nB.Nocardia spp.\nC.Streptococcus pneumoniae\nD.Neisseria meningitidis",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q61",
+      "number": 61,
+      "official_pdf_page": 14,
+      "stem_text": "對於年紀 3 個月以下嬰兒、 55 歲以上民眾及細胞媒介免疫（ cell-mediated immunity ）缺損病人感染細菌性腦膜\n炎時，要考慮針對革蘭氏陽性桿菌Listeria monocytogenes的治療，應以下列何種藥物為首選？",
+      "options": [
+        {
+          "label": "A",
+          "text": "ceftriaxone"
+        },
+        {
+          "label": "B",
+          "text": "ampicillin"
+        },
+        {
+          "label": "C",
+          "text": "vancomycin"
+        },
+        {
+          "label": "D",
+          "text": "ciprofloxacin"
+        }
+      ],
+      "raw_text": "對於年紀 3 個月以下嬰兒、 55 歲以上民眾及細胞媒介免疫（ cell-mediated immunity ）缺損病人感染細菌性腦膜\n炎時，要考慮針對革蘭氏陽性桿菌Listeria monocytogenes的治療，應以下列何種藥物為首選？\n \nA.ceftriaxone\nB.ampicillin\nC.vancomycin\nD.ciprofloxacin",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q62",
+      "number": 62,
+      "official_pdf_page": 14,
+      "stem_text": "35 歲病人因為出現兩天的尿道分泌物與灼熱疼痛感就醫，沒有符合腸胃感染的腹瀉病徵。經檢測診斷為 non-\ngonococcal urethritis ，治癒大約四週後，出現膝、踝和薦椎部等關節炎，同時併有結膜炎（ conjunctivitis ）與\n葡萄膜炎（ uveitis ）、手掌與腳部丘疹。下列敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "病人發生 staphylococcal infective endocarditis 和 septic arthritis"
+        },
+        {
+          "label": "B",
+          "text": "病人發生 reactive arthritis"
+        },
+        {
+          "label": "C",
+          "text": "病人先前的 non-gonococcal urethritis 和後續併發的病症，最有可能和Chlamydia trachomatis感染相關"
+        },
+        {
+          "label": "D",
+          "text": "發生這些併發症的病人，超過 80% 帶有 HLA-B27 表現型（ phenotype ）"
+        }
+      ],
+      "raw_text": "35 歲病人因為出現兩天的尿道分泌物與灼熱疼痛感就醫，沒有符合腸胃感染的腹瀉病徵。經檢測診斷為 non-\ngonococcal urethritis ，治癒大約四週後，出現膝、踝和薦椎部等關節炎，同時併有結膜炎（ conjunctivitis ）與\n葡萄膜炎（ uveitis ）、手掌與腳部丘疹。下列敘述何者錯誤？\n \nA.病人發生 staphylococcal infective endocarditis 和 septic arthritis\nB.病人發生 reactive arthritis\nC.病人先前的 non-gonococcal urethritis 和後續併發的病症，最有可能和Chlamydia trachomatis感染相關\nD.發生這些併發症的病人，超過 80% 帶有 HLA-B27 表現型（ phenotype ）",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q63",
+      "number": 63,
+      "official_pdf_page": 14,
+      "stem_text": "關於細菌性食物中毒與旅行者腹瀉（ traveler's diarrhea ）的敘述，下列何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "潛伏期（ incubation period ）最短的致病菌是Staphylococcus aureus和Bacillus cereus"
+        },
+        {
+          "label": "B",
+          "text": "Shigella spp. 只能藉由污染的飲水和食物傳播，不會由人對人直接傳染"
+        },
+        {
+          "label": "C",
+          "text": "Shigella spp. 、Entamoeba histolytica、Giardia lamblia引起疾病所需感染劑量（ infectious dose ），遠低於\nVibrio cholerae"
+        },
+        {
+          "label": "D",
+          "text": "Vibrio cholerae所致的腹瀉係因產生 enterotoxin ，糞便中鮮少或不會出現白血球"
+        }
+      ],
+      "raw_text": "關於細菌性食物中毒與旅行者腹瀉（ traveler's diarrhea ）的敘述，下列何者錯誤？\n \nA.潛伏期（ incubation period ）最短的致病菌是Staphylococcus aureus和Bacillus cereus\nB.Shigella spp. 只能藉由污染的飲水和食物傳播，不會由人對人直接傳染\nC.Shigella spp. 、Entamoeba histolytica、Giardia lamblia引起疾病所需感染劑量（ infectious dose ），遠低於\nVibrio cholerae\nD.Vibrio cholerae所致的腹瀉係因產生 enterotoxin ，糞便中鮮少或不會出現白血球",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q64",
+      "number": 64,
+      "official_pdf_page": 14,
+      "stem_text": "60 歲男性病患，已接受血液透析治療 10 年。此次因發燒、喘及胸部 X 光發現診斷為肺炎，住院後痰液培養為\nmethicillin-resistant Staphylococcus aureus（ MRSA ），則可能的抗生素治療中，下列何者不宜？",
+      "options": [
+        {
+          "label": "A",
+          "text": "vancomycin"
+        },
+        {
+          "label": "B",
+          "text": "teicoplanin"
+        },
+        {
+          "label": "C",
+          "text": "linezolid"
+        },
+        {
+          "label": "D",
+          "text": "oxacillin"
+        }
+      ],
+      "raw_text": "60 歲男性病患，已接受血液透析治療 10 年。此次因發燒、喘及胸部 X 光發現診斷為肺炎，住院後痰液培養為\nmethicillin-resistant Staphylococcus aureus（ MRSA ），則可能的抗生素治療中，下列何者不宜？\n \nA.vancomycin\nB.teicoplanin\nC.linezolid\nD.oxacillin",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "respiratory",
+        "renal_electrolyte",
+        "infection"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q65",
+      "number": 65,
+      "official_pdf_page": 15,
+      "stem_text": "65 歲男性病人抽菸 30 年，因慢性阻塞性肺病在門診追蹤多年，此次肺炎經抗生素治療後順利出院，則針對肺\n炎的預防治療中，下列何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "戒菸"
+        },
+        {
+          "label": "B",
+          "text": "若之前沒有打疫苗，可建議接種肺炎鏈球菌疫苗"
+        },
+        {
+          "label": "C",
+          "text": "於流感季節前，建議每年施打流感疫苗"
+        },
+        {
+          "label": "D",
+          "text": "預防性抗生素治療"
+        }
+      ],
+      "raw_text": "65 歲男性病人抽菸 30 年，因慢性阻塞性肺病在門診追蹤多年，此次肺炎經抗生素治療後順利出院，則針對肺\n炎的預防治療中，下列何者錯誤？\n \nA.戒菸\nB.若之前沒有打疫苗，可建議接種肺炎鏈球菌疫苗\nC.於流感季節前，建議每年施打流感疫苗\nD.預防性抗生素治療",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "respiratory",
+        "infection"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q66",
+      "number": 66,
+      "official_pdf_page": 15,
+      "stem_text": "臨床上有關生物心理社會模式中的心理因素，可使用人格特質五因素模型（ five-factor model of personality,\nOCEAN ）來探討，下列有關此模型意涵之敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "經驗開放性（ Openness to experience ）：對不同經驗傾向保持好奇和欣賞"
+        },
+        {
+          "label": "B",
+          "text": "盡責性（ Conscientiousness ）：傾向自我訓練，有計畫地達成目標"
+        },
+        {
+          "label": "C",
+          "text": "效能性（ Efficacy ）：傾向能達成任務的能力和信念"
+        },
+        {
+          "label": "D",
+          "text": "親和性（ Agreeableness ）：傾向與其他人合作，較喜歡融洽"
+        }
+      ],
+      "raw_text": "臨床上有關生物心理社會模式中的心理因素，可使用人格特質五因素模型（ five-factor model of personality,\nOCEAN ）來探討，下列有關此模型意涵之敘述何者錯誤？\n \nA.經驗開放性（ Openness to experience ）：對不同經驗傾向保持好奇和欣賞\nB.盡責性（ Conscientiousness ）：傾向自我訓練，有計畫地達成目標\nC.效能性（ Efficacy ）：傾向能達成任務的能力和信念\nD.親和性（ Agreeableness ）：傾向與其他人合作，較喜歡融洽",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q67",
+      "number": 67,
+      "official_pdf_page": 15,
+      "stem_text": "關於老人虐待（ elder abuse ）的敘述，下列何者最正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "老人虐待發生率很低，不必篩檢"
+        },
+        {
+          "label": "B",
+          "text": "虐待的定義範圍僅限於身體及情緒的虐待"
+        },
+        {
+          "label": "C",
+          "text": "下肢水腫是虐待常見的徵候"
+        },
+        {
+          "label": "D",
+          "text": "藥物順從性不佳，也有可能是虐待的徵候"
+        }
+      ],
+      "raw_text": "關於老人虐待（ elder abuse ）的敘述，下列何者最正確？\n \nA.老人虐待發生率很低，不必篩檢\nB.虐待的定義範圍僅限於身體及情緒的虐待\nC.下肢水腫是虐待常見的徵候\nD.藥物順從性不佳，也有可能是虐待的徵候",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q68",
+      "number": 68,
+      "official_pdf_page": 15,
+      "stem_text": "18 歲大一男生因咳嗽來門診就醫，其健康狀況良好且有親密女友，依據美國預防醫學工作小組（ US\nPreventive Services Task Force ）的預防保健建議，下列何者是最不需要的篩檢或諮詢項目？",
+      "options": [
+        {
+          "label": "A",
+          "text": "脊椎側彎（ idiopathic scoliosis ）"
+        },
+        {
+          "label": "B",
+          "text": "肥胖（ obesity ）"
+        },
+        {
+          "label": "C",
+          "text": "性接觸傳染病（ sexually transmitted infection ）"
+        },
+        {
+          "label": "D",
+          "text": "預防菸品使用（ tobacco use ）"
+        }
+      ],
+      "raw_text": "18 歲大一男生因咳嗽來門診就醫，其健康狀況良好且有親密女友，依據美國預防醫學工作小組（ US\nPreventive Services Task Force ）的預防保健建議，下列何者是最不需要的篩檢或諮詢項目？\n \nA.脊椎側彎（ idiopathic scoliosis ）\nB.肥胖（ obesity ）\nC.性接觸傳染病（ sexually transmitted infection ）\nD.預防菸品使用（ tobacco use ）",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q69",
+      "number": 69,
+      "official_pdf_page": 15,
+      "stem_text": "有關旅遊疫苗接種的敘述，下列何者最正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "免疫功能正常者建議於旅遊至少 1 週前接種一劑 A 型肝炎疫苗"
+        },
+        {
+          "label": "B",
+          "text": "免疫功能正常者建議於旅遊至少 1 週前接種一劑 B 型肝炎疫苗"
+        },
+        {
+          "label": "C",
+          "text": "黃熱病（ yellow fever ）疫苗原則上終生有效，然部分國家仍建議每 10 年追加 1 劑"
+        },
+        {
+          "label": "D",
+          "text": "流行性腦脊髓膜炎（ meningococcus ）疫苗為前往沙烏地阿拉伯的旅客所需，建議每 10 年追加 1 劑"
+        }
+      ],
+      "raw_text": "有關旅遊疫苗接種的敘述，下列何者最正確？\n \nA.免疫功能正常者建議於旅遊至少 1 週前接種一劑 A 型肝炎疫苗\nB.免疫功能正常者建議於旅遊至少 1 週前接種一劑 B 型肝炎疫苗\nC.黃熱病（ yellow fever ）疫苗原則上終生有效，然部分國家仍建議每 10 年追加 1 劑\nD.流行性腦脊髓膜炎（ meningococcus ）疫苗為前往沙烏地阿拉伯的旅客所需，建議每 10 年追加 1 劑",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q70",
+      "number": 70,
+      "official_pdf_page": 15,
+      "stem_text": "關於敏感度（ sensitivity ）、特異度（ specificity ）、陽性預測值（ positive predictive value ）及陰性預測值\n（ negative predictive value ）的定義，下列何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "敏感度是「罹患疾病且檢驗為陽性者的比率」"
+        },
+        {
+          "label": "B",
+          "text": "特異度是「罹患疾病且檢驗為陰性者的比率」"
+        },
+        {
+          "label": "C",
+          "text": "陽性預測值是「檢驗陽性且沒有患病的比率」"
+        },
+        {
+          "label": "D",
+          "text": "陰性預測值是「檢驗陰性且有患病的比率」"
+        }
+      ],
+      "raw_text": "關於敏感度（ sensitivity ）、特異度（ specificity ）、陽性預測值（ positive predictive value ）及陰性預測值\n（ negative predictive value ）的定義，下列何者正確？\n \nA.敏感度是「罹患疾病且檢驗為陽性者的比率」\nB.特異度是「罹患疾病且檢驗為陰性者的比率」\nC.陽性預測值是「檢驗陽性且沒有患病的比率」\nD.陰性預測值是「檢驗陰性且有患病的比率」",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q71",
+      "number": 71,
+      "official_pdf_page": 16,
+      "stem_text": "下列有關動機晤談（ motivational interviewing ）的敘述，何者正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "最早是使用於糖尿病飲食衛教"
+        },
+        {
+          "label": "B",
+          "text": "為一種由醫師主導增強病人改變動機之看診模式"
+        },
+        {
+          "label": "C",
+          "text": "行為改變的動機及目標在與病人討論後，由醫師協助決定"
+        },
+        {
+          "label": "D",
+          "text": "溝通時須運用同理心及主動式傾聽（ active listening ）的原則與技巧"
+        }
+      ],
+      "raw_text": "下列有關動機晤談（ motivational interviewing ）的敘述，何者正確？\n \nA.最早是使用於糖尿病飲食衛教\nB.為一種由醫師主導增強病人改變動機之看診模式\nC.行為改變的動機及目標在與病人討論後，由醫師協助決定\nD.溝通時須運用同理心及主動式傾聽（ active listening ）的原則與技巧",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q72",
+      "number": 72,
+      "official_pdf_page": 16,
+      "stem_text": "根據美國 2003 年聯邦醫療保險 Medicare 的統計資料及 Barbara Starfield 針對基層醫療的研究，下列敘述何者最\n不恰當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "專科醫師（ specialists ）所占比例越高，照護品質越高，醫療花費越高"
+        },
+        {
+          "label": "B",
+          "text": "全科醫師（ generalists ）所占比例越高，照護品質越高，醫療花費越低"
+        },
+        {
+          "label": "C",
+          "text": "基層醫療較完善充足的地區，心臟病（ heart disease ）及中風（ stroke ）的發生率減少"
+        },
+        {
+          "label": "D",
+          "text": "基層醫療較完善充足的地區，低出生體重（ low birth weight ）嬰兒比率減少"
+        }
+      ],
+      "raw_text": "根據美國 2003 年聯邦醫療保險 Medicare 的統計資料及 Barbara Starfield 針對基層醫療的研究，下列敘述何者最\n不恰當？\n \nA.專科醫師（ specialists ）所占比例越高，照護品質越高，醫療花費越高\nB.全科醫師（ generalists ）所占比例越高，照護品質越高，醫療花費越低\nC.基層醫療較完善充足的地區，心臟病（ heart disease ）及中風（ stroke ）的發生率減少\nD.基層醫療較完善充足的地區，低出生體重（ low birth weight ）嬰兒比率減少",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "neurology"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q73",
+      "number": 73,
+      "official_pdf_page": 16,
+      "stem_text": "當末期病人呼吸困難（ dyspnea ）時，下列安寧緩和醫療常用方法中，何者最不適當？",
+      "options": [
+        {
+          "label": "A",
+          "text": "給與氧氣"
+        },
+        {
+          "label": "B",
+          "text": "給與低劑量嗎啡"
+        },
+        {
+          "label": "C",
+          "text": "給與鎮定"
+        },
+        {
+          "label": "D",
+          "text": "給與氣管擴張劑"
+        }
+      ],
+      "raw_text": "當末期病人呼吸困難（ dyspnea ）時，下列安寧緩和醫療常用方法中，何者最不適當？\n \nA.給與氧氣\nB.給與低劑量嗎啡\nC.給與鎮定\nD.給與氣管擴張劑",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "ethics_family"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q74",
+      "number": 74,
+      "official_pdf_page": 16,
+      "stem_text": "有關下列疾病所選用的影像學檢查，其中何者最不適宜？",
+      "options": [
+        {
+          "label": "A",
+          "text": "鋇劑吞嚥食道攝影（ barium esophagogram ）可以偵測急性胰臟炎（ acute pancreatitis ）"
+        },
+        {
+          "label": "B",
+          "text": "電腦斷層（ CT ）或超音波（ US ）可以用於胰臟假性囊腫（ pancreatic pseudocyst ）的追蹤"
+        },
+        {
+          "label": "C",
+          "text": "鋇劑吞嚥食道攝影（ barium esophagogram ）可用於偵測食道阻塞或吞嚥困難（ dysphagia ）"
+        },
+        {
+          "label": "D",
+          "text": "注射對比劑的腹部電腦斷層檢查（ CT of abdomen with contrast ）可用於偵測嚴重胰臟炎（ pancreatitis ）"
+        }
+      ],
+      "raw_text": "有關下列疾病所選用的影像學檢查，其中何者最不適宜？\n \nA.鋇劑吞嚥食道攝影（ barium esophagogram ）可以偵測急性胰臟炎（ acute pancreatitis ）\nB.電腦斷層（ CT ）或超音波（ US ）可以用於胰臟假性囊腫（ pancreatic pseudocyst ）的追蹤\nC.鋇劑吞嚥食道攝影（ barium esophagogram ）可用於偵測食道阻塞或吞嚥困難（ dysphagia ）\nD.注射對比劑的腹部電腦斷層檢查（ CT of abdomen with contrast ）可用於偵測嚴重胰臟炎（ pancreatitis ）",
+      "answer": {
+        "standard": "A",
+        "correction_grid": "A",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "A"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "gastro_liver"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q75",
+      "number": 75,
+      "official_pdf_page": 16,
+      "stem_text": "下圖為肝臟超音波掃描，最可能的診斷為：",
+      "options": [
+        {
+          "label": "A",
+          "text": "肝臟之蛔蟲疾病（ hepatic ascariasis ）"
+        },
+        {
+          "label": "B",
+          "text": "原發性肝細胞癌（ hepatocellular carcinoma ）"
+        },
+        {
+          "label": "C",
+          "text": "氣膽（ pneumobilia ）"
+        },
+        {
+          "label": "D",
+          "text": "肝內膽管結石（ intrahepatic bile duct stones ）"
+        }
+      ],
+      "raw_text": "下圖為肝臟超音波掃描，最可能的診斷為：\n\n A.肝臟之蛔蟲疾病（ hepatic ascariasis ）\nB.原發性肝細胞癌（ hepatocellular carcinoma ）\nC.氣膽（ pneumobilia ）\nD.肝內膽管結石（ intrahepatic bile duct stones ）",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": true,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q76",
+      "number": 76,
+      "official_pdf_page": 17,
+      "stem_text": "熱衰竭（ heat exhaustion/heat stress ）不會出現下列何種症狀？",
+      "options": [
+        {
+          "label": "A",
+          "text": "心跳加速（ tachycardia ）"
+        },
+        {
+          "label": "B",
+          "text": "肌肉抽筋（ muscle cramp ）"
+        },
+        {
+          "label": "C",
+          "text": "姿勢性低血壓（ orthostatic hypotension ）"
+        },
+        {
+          "label": "D",
+          "text": "意識混亂（ confusion ）"
+        }
+      ],
+      "raw_text": "熱衰竭（ heat exhaustion/heat stress ）不會出現下列何種症狀？\n \nA.心跳加速（ tachycardia ）\nB.肌肉抽筋（ muscle cramp ）\nC.姿勢性低血壓（ orthostatic hypotension ）\nD.意識混亂（ confusion ）",
+      "answer": {
+        "standard": "D",
+        "correction_grid": "D",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "D"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q77",
+      "number": 77,
+      "official_pdf_page": 17,
+      "stem_text": "下列有關傷寒（ typhoid fever ）的敘述，何者最正確？",
+      "options": [
+        {
+          "label": "A",
+          "text": "常見有多天的發燒、腹瀉及血便為主要的表現"
+        },
+        {
+          "label": "B",
+          "text": "病人可能有白血球下降、肝功能異常及脾腫大"
+        },
+        {
+          "label": "C",
+          "text": "使用抗生素後，最容易培養出細菌的方法是糞便培養"
+        },
+        {
+          "label": "D",
+          "text": "Salmonella typhi菌株對於 fluoroquinolone 類抗生素沒有抗藥性的產生"
+        }
+      ],
+      "raw_text": "下列有關傷寒（ typhoid fever ）的敘述，何者最正確？\n \nA.常見有多天的發燒、腹瀉及血便為主要的表現\nB.病人可能有白血球下降、肝功能異常及脾腫大\nC.使用抗生素後，最容易培養出細菌的方法是糞便培養\nD.Salmonella typhi菌株對於 fluoroquinolone 類抗生素沒有抗藥性的產生",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "infection"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q78",
+      "number": 78,
+      "official_pdf_page": 17,
+      "stem_text": "65 歲陳先生有高血壓、糖尿病之病史。晚上睡到一半忽然覺得胸部劇烈壓迫性疼痛合併有冒冷汗、呼吸急促\n的症狀。家人迅速將他送醫治療，到院時意識清楚，體溫正常，呼吸 24/min ，心跳 72/min ，血壓 80/54\nmmHg ，心電圖顯示 Lead II 、 Lead III 和 aVF 有 ST-segment 上升大於  2 mm 的現象。最可能的診斷為下列何\n者？",
+      "options": [
+        {
+          "label": "A",
+          "text": "肺栓塞（ pulmonary embolism ）"
+        },
+        {
+          "label": "B",
+          "text": "主動脈剝離（ aortic dissection ）"
+        },
+        {
+          "label": "C",
+          "text": "急性心肌梗塞（ acute myocardial infarction ）"
+        },
+        {
+          "label": "D",
+          "text": "急性心肌炎（ acute myocarditis ）"
+        }
+      ],
+      "raw_text": "65 歲陳先生有高血壓、糖尿病之病史。晚上睡到一半忽然覺得胸部劇烈壓迫性疼痛合併有冒冷汗、呼吸急促\n的症狀。家人迅速將他送醫治療，到院時意識清楚，體溫正常，呼吸 24/min ，心跳 72/min ，血壓 80/54\nmmHg ，心電圖顯示 Lead II 、 Lead III 和 aVF 有 ST-segment 上升大於  2 mm 的現象。最可能的診斷為下列何\n者？\n \nA.肺栓塞（ pulmonary embolism ）\nB.主動脈剝離（ aortic dissection ）\nC.急性心肌梗塞（ acute myocardial infarction ）\nD.急性心肌炎（ acute myocarditis ）",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": true,
+      "topic_candidates_not_verified": [
+        "cardiology",
+        "respiratory",
+        "endocrine"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q79",
+      "number": 79,
+      "official_pdf_page": 17,
+      "stem_text": "一位年輕男性發生車禍被救護車送至急診室，醫師判斷必須立即動手術，否則恐有生命危險，但該病人已經\n意識不清，身上亦未攜帶任何證件可證明身分或聯絡家人，醫院應如何處理該狀況？",
+      "options": [
+        {
+          "label": "A",
+          "text": "由手術醫師代理病人簽署手術同意書"
+        },
+        {
+          "label": "B",
+          "text": "由社會工作人員代理病人簽署手術同意書"
+        },
+        {
+          "label": "C",
+          "text": "若情況緊急，可逕行急救手術"
+        },
+        {
+          "label": "D",
+          "text": "在聯絡到病人親屬前不得進行手術"
+        }
+      ],
+      "raw_text": "一位年輕男性發生車禍被救護車送至急診室，醫師判斷必須立即動手術，否則恐有生命危險，但該病人已經\n意識不清，身上亦未攜帶任何證件可證明身分或聯絡家人，醫院應如何處理該狀況？\n \nA.由手術醫師代理病人簽署手術同意書\nB.由社會工作人員代理病人簽署手術同意書\nC.若情況緊急，可逕行急救手術\nD.在聯絡到病人親屬前不得進行手術",
+      "answer": {
+        "standard": "C",
+        "correction_grid": "C",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "C"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    },
+    {
+      "id": "2023-s2-med3-q80",
+      "number": 80,
+      "official_pdf_page": 17,
+      "stem_text": "關於守密義務，下列敘述何者錯誤？",
+      "options": [
+        {
+          "label": "A",
+          "text": "是屬於醫學倫理尊重病人自主原則的內涵"
+        },
+        {
+          "label": "B",
+          "text": "醫師因業務知悉或持有他人的秘密，其保密義務限於執業期間，退休之後可以出書揭露"
+        },
+        {
+          "label": "C",
+          "text": "涉及重大的公益事件，醫師權衡利弊，有時可以違反保密原則，適當的揭露"
+        },
+        {
+          "label": "D",
+          "text": "違反守密義務，涉及民事與刑事責任"
+        }
+      ],
+      "raw_text": "關於守密義務，下列敘述何者錯誤？\n \nA.是屬於醫學倫理尊重病人自主原則的內涵\nB.醫師因業務知悉或持有他人的秘密，其保密義務限於執業期間，退休之後可以出書揭露\nC.涉及重大的公益事件，醫師權衡利弊，有時可以違反保密原則，適當的揭露\nD.違反守密義務，涉及民事與刑事責任",
+      "answer": {
+        "standard": "B",
+        "correction_grid": "B",
+        "official_correction_note": null,
+        "scoring": {
+          "type": "original_single",
+          "accepted": [
+            "B"
+          ],
+          "needs_review": false
+        }
+      },
+      "possible_visual_reference": false,
+      "topic_candidates_not_verified": [
+        "ethics_family"
+      ],
+      "status": "machine_parsed_visual_and_medical_review_pending",
+      "clinical_problem": null,
+      "causal_mechanism": null,
+      "decision_node": null,
+      "linked_lessons": [],
+      "source_question_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q",
+      "source_answer_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S",
+      "source_correction_pdf": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M"
+    }
+  ],
+  "qa_errors": [],
+  "corrected_questions": 2
+}
