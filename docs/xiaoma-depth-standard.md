@@ -2,6 +2,9 @@
 
 2026-10-21 使用者明確修訂：第一版深度不足、閱讀頁醜且 metadata 混在正文；新版必須參考既有 ACS 及以往的小麻閱讀文章，深度與水準不能低於那些文章。本文件補充既有 Clinical System 與 LEC，優先於初始範例的簡短篇幅。
 
+
+> **適用層級：** 本文件是小麻國考的專題補充；整個 Clinical System 的通用正文品質、七軸審稿、硬性退稿與 HCM／ACS 對標方法，以 [Editorial Prose Quality Contract（EPQC）](editorial-prose-quality-contract.md) 為準。本文件不另建立較低的合格標準。
+
 ## 本次實際讀回的比較材料
 
 - ACS 既有正式課程原始碼，project `appgprj_6ad4aa1af35c8191beec3b8a5d350219`，本次來源 commit `0da37651d6a1b1fd41c2a9181fffaa111e89e57d`。實讀 LBBB、anticoagulation、P2Y12 choice、post-MI complications 等單元，並對讀既有 ACS v4.11 修訂評析。
