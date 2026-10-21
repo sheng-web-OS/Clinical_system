@@ -1,59 +1,49 @@
-# 臨床知識脈絡｜從作者原文重建共同前提
+# 沿著病例，把分散的醫學觀念接起來
 
-這一頁從已提供的文章出發，而不是替作者另造一份主題目錄。2026 年 10 月 21 日的對話已收到 21 篇完整文章；其中 HF、LVEDP、Diuretics、DCM、Acute pancreatitis、Status epilepticus 六篇已寫入原稿庫，另有既存的 HCM 完整原稿。其他十五篇已取得於對話、尚待逐篇原文移轉；以下先用它們的具體論述建立可驗證的跨篇關係，不將文章摘要冒充原作，也不把尚未完成的醫學查核說成已通過。
+病人的症狀不按教科書章節出現。呼吸困難可以來自肺、心室充盈、流出道阻塞，或心包限制；同樣一個「心衰竭」標籤，也未必指向相同的治療。以下以已發表的真實病例為入口，再回到小麻閱讀，逐一檢查哪些機轉真的成立。
 
-## 先從一個病人的肺水腫開始
+## 病例一｜有水腫、BNP 升高，為什麼利尿後反而更喘？
 
-[讀 HF：四象限與急性失衡](../xiaoma-reading/originals/2026-07-12-heart-failure.md) → [讀 LVEDP：左心充盈壓怎樣升高](../xiaoma-reading/originals/2026-07-12-lvedp.md) → [讀 Diuretics：怎樣區分治療失敗](../xiaoma-reading/originals/2026-07-20-diuretics.md)
+72 歲男性因 COPD 急性惡化與肺炎就醫，合併呼吸困難、頸靜脈怒張與雙腿水腫，pro-BNP 2,515 pg/mL。直覺容易把這些徵象合併為「容量太多造成 heart failure」，但心超顯示另一個方向：**左心室腔室很小（LVEDD 37 mm），EF 約 80%，mitral valve 發生 systolic anterior motion（SAM），動態 LVOT 壓差達 98 mmHg。**
 
-這三篇的共同命題不是「heart failure 的診斷、病理、治療」三個傳統章節，而是**看見某個異常後，究竟哪一層病理生理已經被證明？**
+治療初期，團隊在處理肺部感染與氧合問題之餘，針對阻塞機轉給予 beta-blocker 與審慎恢復容量，SAM 和 LVOTO 消失。之後為處理周邊水腫而使用 torsemide，兩天後呼吸困難再度惡化，心超也再次看到 SAM 與 LVOTO；停止利尿、調整容量後病況改善。[閱讀 Kim 等人 2015 年病例與 Figure 2、3（原期刊）](https://jtd.amegroups.org/article/view/5226/html)。
 
-第一篇先提醒讀者：wet 不是 cold，EF 不是 cardiac output，congestion 也不等於全身鈉水一定大量增加。第二篇再追問，在有 pulmonary congestion 的前提下，左心 filling pressure 的上升，是由容量增加、compliance 改變還是 external constraint 形成。第三篇終於把這個模型帶進治療回饋：一次給藥後有沒有 natriuresis、全天有沒有足夠負鈉平衡、病人的 congestion 是否真的改善，是不同問題。
+這裡最重要的不是「利尿有害」——那是錯誤概括。**病人可能同時有周邊水腫與左心室充盈不足；而高 EF 也不代表前向輸出沒有受到阻礙。** 當 loading condition 令 LV cavity 更小，SAM/LVOTO 可能加劇，於是降低 preload 的治療對特定病人反而適得其反。原病例的治療反應支持此生理解釋，但不能由單一案例推導所有 COPD、水腫或 HF 病人的處方。
 
-[HCM：Nonobstructive 只回答了一個問題](../xiaoma-reading/originals/2026-07-14-hcm.md)提供重要的反事實：沒有 LVOTO、EF 仍 preserved 的病人，仍可能因 filling failure 出現 congestion。至於 [DCM 原稿](../xiaoma-reading/originals/2026-07-10-dcm.md)則從 morphology、contractility 與 upstream causes 切入；它與 HF 的關係不能被縮成「DCM 就是 HFrEF」。這兩篇與 HF／LVEDP 的關聯是由原文的不同問題自然生成，而不是因為都屬於心臟科。
-
-*目前已產生 AI 跨篇整合底稿：HF → LVEDP → Diuretics → HCM。它保存在私人 GitHub 的 `content/clinical-os/heart-failure-from-phenotype-to-treatment-response.md`，尚待查回小麻原始圖表及正式醫學來源，因此暫不作為已審查教材對外發布。*
-
-## 下一個已能從原稿看見的問題：診斷尚未完成，什麼可以先做？
-
-作者的〈還不知道是什麼，憑什麼治療〉與〈急性 AF，不一定要立刻結束〉形成一組緊密關係。Wide-complex tachycardia 的 ECG morphology 未必立刻證明 VT／SVT；但若 tachyarrhythmia 正在造成嚴重 hemodynamic instability，處置並不總能等到電生理機轉確診。相反地，AF 已存在也不表示一定要立即恢復 sinus rhythm；先區分 attributable instability、暫時可接受的 ventricular physiology，以及 elective rhythm transition 的 thromboembolic risk。
-
-〈Accessory pathway ＆ WPW syndrome〉補上另一層必要條件：AVRT 的 circuit、pre-excited AF 的旁路傳導、以及 AV nodal blockade 在不同 rhythm 中的安全界限。這個系列若只是把 adenosine、cardioversion、procainamide 放在一個「升級用藥表」，便遺失了原文真正建立的決策邊界。
-
-〈Syncope：以機轉定義，卻從現象開始診斷〉則提供相反方向的推理：發作當下通常已消失，醫師只能逆向重建 TLOC 是否符合 global cerebral hypoperfusion。高風險線索可以先改變監測與住院評估，即使病因歸屬尚未完成。兩組文章共同處理的不是同一疾病，而是**診斷確定度與立即行動的可接受風險**。
-
-## 肝病系列：為什麼同一名病人需要數把不同的尺？
-
-7 月 18–23 日連續的 HBV、Cholestasis、ALP 與 Cirrhosis 文章，具有明確的互相依賴關係：
-
-HBV phase 追蹤 virus–host interaction；ALT 僅在某些 injury 形成後才產生血清訊號；cholestatic pattern 描述膽汁處理失敗的 biochemical output，不直接宣告阻塞或病因；infiltrative hypothesis 是在 ALP predominant phenotype 後對 tissue-level mechanism 的追問。到了 cirrhosis，fibrosis stage、portal hypertension、hepatic reserve、clinical decompensation 與短期死亡風險更不能被同一個分數代替。
-
-這幾篇最值得 AI 補上的，不是重複一次肝炎與黃疸定義，而是將「目前何種訊號被看見」與「哪些結構／功能／未來風險尚未被測到」接成連續的病程。若病人進入感染、腎功能惡化或多器官失代償，重症處置的推論就應在原本的循環及器官功能敘事中展開，而不是另加一頁 ICU 藥物清單。
-
-## 腸胃系列：表面症狀改善，不等於病因已經找到
-
-〈找到腹瀉的類型，為什麼仍然沒有找到病因？〉先把 watery、fatty、inflammatory 的糞便表型與病因假說分開；〈同一顆 octreotide，為什麼既能止瀉又能促動？〉再指出分泌量、transit、migrating motor complex 並非同一個「腸子快慢」；〈糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？〉則從 stool hydration、propulsion、distal burden 與 outlet coordination 找出藥物反應究竟改變哪個環節。
-
-三篇合起來形成一個可以反覆使用的判斷：**藥物改變某個可觀察輸出，並不自動證明那個環節就是疾病的起點。** 若出現 obstruction、ileus、impaction 或器官失衡，是否仍允許使用 symptom-directed medication，又會變成新的安全問題。
-
-## 分類一旦遇上危險，就必須轉成行動
-
-- [〈同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？〉](../xiaoma-reading/originals/2026-07-28-status-epilepticus.md)以三次相同的 motor seizure，展示不同的 adequate-treatment history 如何改變 refractory status 的意義；airway、ICU、cEEG 是隨可觀察性與治療單位改變而出現，不是附加的重症段落。
-- [〈胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？〉](../xiaoma-reading/originals/2026-07-20-pancreatitis.md)把 local necrosis 與 persistent organ failure 拆開，最重要的時間張力是：分類可以需要 48 小時，器官支持卻不能等 48 小時。
-- 〈臨床筆記：血管炎〉從血管尺度與器官表現建立初步定位；若有 GCA 視力威脅或 pulmonary–renal syndrome，風險優先順序會先改變，免疫學與組織診斷才逐步補強。此稿屬系列外臨床筆記，來源身分與小麻完稿分開。
-- 〈同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？〉與〈ASD 與 PFO〉可以共同討論：VTE 防的是血栓生成條件，PE／DVT 診斷要定位受累血管，PFO-related stroke 則必須再證明靜脈血栓到體循環的因果路徑；三者不能只憑「有血栓風險」合併推斷。
-
-這些關係來自作者文章的具體推論，**不是按專科標籤自動關聯的知識圖譜**。下一階段逐篇補回原文時，還需分辨哪些連結已被作者充分建立、哪些才是 AI 真正應新增的中介知識。
-
-## 怎樣知道目前真正完成了什麼？
-
-| 內容層次 | 已完成 | 尚未完成 |
+| 病例帶出的問題 | 接回哪一篇文章 | 應帶走的判斷 |
 |---|---|---|
-| 歷史原稿 | 七篇可讀的 HF／LVEDP／Diuretics／DCM／Pancreatitis／Status epilepticus／HCM 原稿，六篇來自本次直貼文字 | 本次對話其餘十五篇逐篇轉存、版本核對 |
-| 跨篇理解 | 本頁首次按原稿提出具體跨篇概念關係；HF 群已形成 AI 整合底稿 | 各群正式整合教材的證據反向查核及獨立評閱 |
-| 重症整合 | 已確立必須在原本的因果敘事中處理重症轉折 | 尚未證明各篇的重要重症內容已完整、正確 |
-| 網站 | 閱讀頁、導航、全文搜尋與出版白名單 | 目前跨篇連結的學習效率實驗，及全部稿件公開上線驗收 |
+| 有水腫，就等於左心室容量過多？ | [Heart Failure：四象限](../xiaoma-reading/originals/2026-07-12-heart-failure.md) | 系統性 congestion、器官灌流和左室有效充盈不能混為一談 |
+| EF 80%，為何依然會出現循環問題？ | [HCM：outflow 與 filling](../xiaoma-reading/originals/2026-07-14-hcm.md) | 收縮比例正常不排除動態阻塞；動態 LVOTO 也不等於必然有 HCM |
+| 如何理解心腔內壓、容量與心室限制？ | [從四象限走進 LVEDP](../xiaoma-reading/originals/2026-07-12-lvedp.md) | filling pressure、LV volume 與阻塞機轉需由不同觀察判定，不能從本例直接補出 LVEDP |
+| 利尿後更喘，能立即說是利尿劑抗性？ | [Diuretics：藥效與治療終點](../xiaoma-reading/originals/2026-07-20-diuretics.md) | 先重估治療目標與當前血流動力學，再談是否加量 |
 
-[原創文章入口](../xiaoma-reading/index.md) · [完整回收狀態](../../audit/xiaoma-reading-recovery.md) · [小麻內科國考](../xiaoma-internal-medicine/index.md)
+<details class="answer"><summary>先自己判斷：只看到雙腿水腫和高 BNP，下一步應增加利尿劑嗎？</summary><p>這些訊號不夠。先辨認肺部疾病、左右心充盈、LVOT 梯度及灌流；在本病例，心超與利尿前後的變化，證明需要重新評估導致呼吸困難的機轉。</p></details>
 
-*這是作者原稿驅動的編輯索引。跨篇觀點由 AI 提出，尚不等於正式文獻審查或個別病人的處置建議。*
+## 病例二｜既有 HCM 突然變成擴張、低 EF，是疾病進入末期嗎？
+
+17 歲女性已有 HCM 與 WPW 病史，之後出現左心室擴張、EF 下降與心衰竭症狀。從形態上看，她已呈現 DCM-like phenotype；但**形態的改變不直接回答病因**。影像與一般檢查未能確立原因，後續心肌切片發現病毒陰性的活動性心肌炎。病例報告記載，接受針對性免疫抑制治療後，約三個月內 EF 與症狀改善。[閱讀 Spillmann 等人 2016 年病例，並對照心臟影像與病理圖](https://pmc.ncbi.nlm.nih.gov/articles/PMC5064744/)。
+
+這個病例迫使我們區分三件事：HCM 是既有的疾病背景；DCM-like 是眼前看到的形態與功能表現；活動性心肌炎才是該次惡化的重要可處理病因。**不能因為「已知 HCM + 新發低 EF」，就跳過對新病因的尋找。** 然而切片與免疫治療的適應症必須依個別情境與現行建議判斷，不能由此個案外推為常規做法。
+
+沿著 [HCM 原文](../xiaoma-reading/originals/2026-07-14-hcm.md) → [DCM 原文](../xiaoma-reading/originals/2026-07-10-dcm.md) → [HF：syndrome 與處置](../xiaoma-reading/originals/2026-07-12-heart-failure.md) 閱讀，核心問題是：**一個影像表型，究竟提供了多少病因資訊？**
+
+## 病例三｜心包液抽掉了，為什麼幾個月後仍然有嚴重鬱血？
+
+67 歲男性以呼吸困難、JVP 升高與水腫就醫，起初因 tamponade 接受心包引流，之後又出現復發性心包積液。三個月後再度因鬱血表現就醫，當時未見顯著積液；然而心超、心導管與 MRI 支持 **constrictive pericarditis**，最終在手術病理確認隱匿性惡性腫瘤。[閱讀 Flood 等人 2017 年病例及心超／MRI 圖](https://casereports.bmj.com/content/2017/bcr-2016-216813.long)。
+
+兩次就醫的共同表現是靜脈壓升高與充盈受限，卻不是「同一種 tamponade 一直沒好」。**Tamponade 主要是當下心包壓迫造成的循環受限；constriction 則可在沒有大量積液時，由較不順應的心包限制舒張期充盈。** 這兩種情況可能先後出現，但不能當成必然演變。病例提供了比只背「高 JVP、低血壓」更精確的問題：解除一種外在限制後，有沒有另一種限制仍存在？
+
+由 [Tamponade 病例教材](../tamponade.md) 理解壓迫與低灌流，再讀 [LVEDP 與心室充盈](../xiaoma-reading/originals/2026-07-12-lvedp.md) 和 [Heart Failure](../xiaoma-reading/originals/2026-07-12-heart-failure.md)。這條路徑與 HCM／DCM **並不是同一個自然病程**，只是在「量測的腔內壓，不等於有效的跨壁充盈條件」這個生理問題上相遇。
+
+## 哪些東西不能因為相似，就被硬串在一起？
+
+| 表面上相似 | 必須另外證明的事 |
+|---|---|
+| 高 EF 與 HCM | 是否有結構性 HCM？是否存在動態 LVOTO？兩者不可畫等號 |
+| 肺部濕囉音、周邊水腫與容量過多 | 左室充盈、右側靜脈壓、瓣膜逆流、肺病是否各自貢獻症狀？ |
+| DCM-like 形態與不可逆末期心肌病變 | 是否存在心肌炎、頻脈、毒性或其他可處理的上游原因？ |
+| Tamponade 與 constrictive pericarditis | 當下受限的壓力來源與心包性質是什麼？有沒有積液和血流動力學證據？ |
+
+另有兩個適合獨立閱讀的高風險臨床分歧：[Acute pancreatitis：壞死與持續器官衰竭](../xiaoma-reading/originals/2026-07-20-pancreatitis.md)，以及 [Status epilepticus：治療歷史如何決定 refractory 定義](../xiaoma-reading/originals/2026-07-28-status-epilepticus.md)。它們暫不因都涉及 ICU，就被併成同一條病例路徑。
+
+以上引用的是公開發表病例；每條臨床敘事皆以原文為準。Case report 用來暴露容易誤判的機轉，不能取代比較研究、指引或個別病人的完整評估。
