@@ -174,5 +174,18 @@
     "review": "source_recovery_only",
     "source_sha256": "e0367d5d0b3765c7607ccd3512d98f08ed529070c3d80fc076c7099accfb5452",
     "layout": "reading-original"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-21-dcm.md",
+    "output": "xiaoma-reading-dcm-integrated.html",
+    "title": "DCM：心室擴張之後，病因診斷才剛開始",
+    "subtitle": "從 PV loop、secondary MR 到診斷解釋力及恢復後風險",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-21",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "心肌病變"
   }
 ]
