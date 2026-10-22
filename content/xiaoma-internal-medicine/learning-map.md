@@ -14,7 +14,9 @@
 
 如果病人肺水腫，下一個問題不是立刻猜 EF，而是先分開 congestion 與 perfusion。[Heart Failure：從四象限到急性失衡](../xiaoma-reading/originals/2026-07-12-heart-failure.md)提供床邊的描述框架；[LVEDP](../xiaoma-reading/originals/2026-07-12-lvedp.md)再解釋壓力與容積的差別；[利尿劑](../xiaoma-reading/originals/2026-07-20-diuretics.md)則追問排鈉、負平衡與症狀改善是否真的同時發生。
 
-[HCM](../xiaoma-reading/originals/2026-07-14-hcm.md)與 [DCM](../xiaoma-reading/originals/2026-07-10-dcm.md)幫助辨認：形態、收縮、充盈與臨床 HF 並不是同一條嚴重度軸線。
+[HCM](../xiaoma-reading/originals/2026-07-14-hcm.md)與[新版 DCM](../xiaoma-reading/integrated/2026-10-21-dcm.md)幫助辨認：形態、收縮、充盈與臨床 HF 並不是同一條嚴重度軸線。
+
+在[108 年第一次醫師二階心臟四題深究](lessons/2026-10-22-108a-cardiac-reasoning.md)把這套推理帶回國考。第 11 題特別適合對讀：站立減少 preload，為何固定 AS 可能變小聲，動態 LVOTO 反而變大聲？第 8 題則讓人重新區分先天分流造成的右心容量負荷，與 DCM 的左心室表型。
 
 同一邏輯也能讀 [主動脈瓣狹窄與逆流](../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md)：分開 EF、flow、gradient、瓣膜負荷與動脈負荷，再判斷治療究竟改善症狀、血流動力學，或真正解除瓣膜問題。
 
