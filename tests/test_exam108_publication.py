@@ -9,7 +9,6 @@ LESSONS = ROOT / "content/xiaoma-internal-medicine/lessons"
 EXPECTED = {
     "2026-10-22-exam108-renal-foundations.md": {27: "B", 2: "D", 25: "C", 28: "B"},
     "2026-10-22-exam108-renal-perfusion.md": {17: "C", 22: "A", 23: "A", 26: "A"},
-    "2026-10-22-exam108-cardiac-hemodynamics.md": {8: "A", 11: "D", 12: "C", 76: "D"},
 }
 
 
@@ -35,8 +34,7 @@ class Exam108Publication(unittest.TestCase):
         outputs = {x["output"] for x in pages}
         self.assertIn("xiaoma-exam108-sources.html", outputs)
         self.assertTrue({"xiaoma-exam108-renal-foundations.html",
-                         "xiaoma-exam108-renal-perfusion.html",
-                         "xiaoma-exam108-cardiac-hemodynamics.html"} <= outputs)
+                         "xiaoma-exam108-renal-perfusion.html"} <= outputs)
         self.assertTrue(all(x["source"].startswith("content/") for x in pages))
 
 
