@@ -164,6 +164,22 @@ def main():
     for name in ("styles.css","home.css","app.js"):
         shutil.copyfile(BASE/"site"/name,DIST/name)
     rows=[render(*entry) for entry in FILES]
+    # Former published DCM link must open the current approved reading, not
+    # silently strand returning readers in the preserved historical manuscript.
+    legacy, current = "xiaoma-reading-20260710-dcm.html", "xiaoma-reading-dcm-integrated.html"
+    if not (DIST/current).is_file() or (DIST/legacy).exists():
+        raise ValueError("DCM reading version targets missing or in conflict")
+    redirect = ('<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">'
+                '<meta name="viewport" content="width=device-width,initial-scale=1">'
+                '<meta http-equiv="refresh" content="0; url='+current+'">'
+                '<meta name="robots" content="noindex,follow">'
+                '<link rel="canonical" href="'+current+'">'
+                '<title>心肌病變｜請閱讀新版</title><link rel="stylesheet" href="styles.css"></head>'
+                '<body class="reader-page"><main style="max-width:42rem;margin:12vh auto;padding:2rem">'
+                '<h1>心肌病變已更新</h1><p>此網址已改為新版文章入口。'
+                '如未自動跳轉，請<a href="'+current+'">閱讀最新整合版</a>。</p>'
+                '</main></body></html>')
+    (DIST/legacy).write_text(redirect, encoding="utf-8")
     (DIST/"index.html").write_text(render_home(PAGES), encoding="utf-8")
     searchable=json.dumps(rows,ensure_ascii=False)
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")

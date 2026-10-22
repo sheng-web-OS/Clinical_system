@@ -18,6 +18,19 @@
     "layout": "reading-library"
   },
   {
+    "source": "content/xiaoma-reading/integrated/2026-10-21-dcm.md",
+    "output": "xiaoma-reading-dcm-integrated.html",
+    "title": "心肌病變：當心臟變大，問題真的只是收縮力下降嗎？",
+    "subtitle": "DCM 的心室擴張與代償、EF 和前向血流、病因解釋力及剩餘風險",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "心肌病變"
+  },
+  {
     "source": "content/xiaoma-reading/originals/2026-07-14-hcm.md",
     "output": "xiaoma-reading-20260714-hcm.html",
     "title": "Nonobstructive 只回答了一個問題",
@@ -112,7 +125,7 @@
   },
   {
     "source": "content/xiaoma-reading/originals/2026-07-10-dcm.md",
-    "output": "xiaoma-reading-20260710-dcm.html",
+    "output": "xiaoma-reading-20260710-dcm-original.html",
     "title": "心肌病變",
     "subtitle": "DCM 的左心室表型、收縮力、代償與病因解釋的邊界",
     "collection": "xiaoma-reading",
@@ -148,19 +161,6 @@
     "review": "source_recovery_only",
     "source_sha256": "e0367d5d0b3765c7607ccd3512d98f08ed529070c3d80fc076c7099accfb5452",
     "layout": "reading-original"
-  },
-  {
-    "source": "content/xiaoma-reading/integrated/2026-10-21-dcm.md",
-    "output": "xiaoma-reading-dcm-integrated.html",
-    "title": "心肌病變：當心臟變大，問題真的只是收縮力下降嗎？",
-    "subtitle": "DCM 的心室擴張與代償、EF 和前向血流、病因解釋力及剩餘風險",
-    "collection": "xiaoma-reading",
-    "kind": "ai_integrated",
-    "date": "2026-10-22",
-    "navigation": false,
-    "review": "ai_editorial_review",
-    "layout": "reader",
-    "section": "心肌病變"
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md",

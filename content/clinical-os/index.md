@@ -22,7 +22,7 @@
 
 [HCM：Nonobstructive 只回答了一個問題](../xiaoma-reading/originals/2026-07-14-hcm.md)把 hypertrophic morphology、LVOTO、filling 與 systolic emptying 分開。即使沒有 outflow obstruction，也可能有高 filling pressure 與 HF syndrome。
 
-[DCM：心肌病變](../xiaoma-reading/originals/2026-07-10-dcm.md)從 chamber geometry、收縮功能與病因解釋出發。DCM 的表型和 HF 的臨床症候群相互關聯，但不能畫上等號。
+[DCM：當心臟變大，問題真的只是收縮力下降嗎？](../xiaoma-reading/integrated/2026-10-21-dcm.md)從 chamber geometry、EF 與有效前向血流、鬱血和病因解釋力出發，建立 DCM phenotype 與 HF syndrome 的區別。[2026 年 7 月原稿](../xiaoma-reading/originals/2026-07-10-dcm.md)另行典藏。
 
 **共通的判斷：**不同的分類名稱，可能在描述不同層次的事實；不能把它們誤認成同一條疾病嚴重度階梯。
 

@@ -23,10 +23,12 @@ def render_home(pages):
     lessons = [p for p in pages if p.get("collection") == "xiaoma-internal-medicine" and p.get("date")]
     integrations = [p for p in pages if p.get("kind") == "ai_integrated"]
     cards = []
-    for p in sorted(originals, key=lambda row: row["date"], reverse=True):
-        cards.append(_card(p, "original", "小麻閱讀 · 原創文章", "閱讀完整論述"))
+    # Current integrated publications lead; preserved historical originals are a
+    # separate, explicitly archived reading path rather than the default version.
     for p in sorted(integrations, key=lambda row: row["date"], reverse=True):
-        cards.append(_card(p, "integrated", "小麻閱讀 · 整合教材", "從證據走向臨床決策"))
+        cards.append(_card(p, "integrated", "小麻閱讀 · 最新整合", "閱讀完整教材"))
+    for p in sorted(originals, key=lambda row: row["date"], reverse=True):
+        cards.append(_card(p, "original", "小麻閱讀 · 歷史原稿", "查閱原稿存檔"))
     for p in sorted(lessons, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "medicine", "內科國考 · 持續更新", "從臨床問題開始"))
     if not cards:
@@ -82,7 +84,7 @@ def render_home(pages):
     <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>已公開的完整教材與文章</p></div>
     <div class="library-filters" role="group" aria-label="篩選文章">
        <button class="is-active" data-library-filter="all" aria-pressed="true">全部文章</button>
-       <button data-library-filter="original" aria-pressed="false">小麻閱讀</button>
+       <button data-library-filter="original" aria-pressed="false">歷史原稿</button>
        <button data-library-filter="integrated" aria-pressed="false">整合教材</button>
        <button data-library-filter="medicine" aria-pressed="false">內科國考</button>
     </div>
