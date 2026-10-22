@@ -2,7 +2,7 @@
 
 病人的症狀不按教科書章節出現。呼吸困難可以來自肺、心室充盈或流出道阻塞；同樣一個「心衰竭」標籤，也未必指向相同的治療。以下以已發表的真實病例為入口，再回到小麻閱讀，逐一檢查哪些機轉真的成立。
 
-**核心整合閱讀：**[〈肺水腫為何不必然等於容量過多？〉](heart-failure-from-phenotype-to-treatment-response.md)。先把四象限、pressure–volume relationship、HCM 與 diuretic response 連成完整因果模型；再用下方真實病例檢驗模型的例外與邊界。這是獨立 AI 整合教材，歷史原文保持不變。
+**核心整合閱讀：**[〈呼吸困難合併水腫，為什麼治療方向可能相反？〉](heart-failure-from-phenotype-to-treatment-response.md)。先把四象限、pressure–volume relationship、HCM 與 diuretic response 連成完整因果模型；再用下方真實病例檢驗模型的例外與邊界。這是獨立 AI 整合教材，歷史原文保持不變。
 
 ## 病例一｜有水腫、BNP 升高，為什麼利尿後反而更喘？
 
