@@ -63,3 +63,9 @@ Goel NN, et al. **Noninvasive respiratory support for adult patients with acute 
 ## 審查界限
 
 本篇為 AI 新編教材，與歷史作者原稿分開保存。已執行原書對讀、關鍵指引／試題核對與反例複讀；未經獨立醫師同儕審查，也未完成讀者學習效果測試。未取得的 2026 指引全文已如實限縮使用，不列作全文審查完成。
+
+## 題解修訂的補讀範圍
+
+2026-10-22 本輪再次目視原書第 107 頁的面罩、氣道、分泌物與壓力模式欄位，並重讀 ERS/ATS 2017 問題 1b 的酸中毒族群及排除條件。第 8 節三題解析與隨文練習同步補足生理、安全前提及條件改變；第 9 節仍使用原自編情境。
+
+第三題另對讀 [ATS OHS 官方說明](https://www.thoracic.org/members/assemblies/assemblies/srn/sleep-matters/2019-09-02.php)，補 BMI 計算、OSA 與清醒高碳酸的分界及排除其他原因。2026 ATS 全文限制維持前述狀態，沒有改稱已完整取得。
