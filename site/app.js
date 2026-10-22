@@ -74,3 +74,95 @@
     }
   }catch(e){}
 })();
+
+
+/* Clinical-case reading: evidence is disclosed only after a reasoned choice.
+   No quiz responses or timings are stored or transmitted. */
+(()=>{
+ const lab=document.querySelector('[data-case-sequence]');
+ const stages=lab?[...lab.querySelectorAll('[data-case-stage]')]:[];
+ const analysis=document.querySelector('[data-case-analysis]');
+ if(!lab||!analysis||stages.length!==4)return;
+ const finish=lab.querySelector('[data-case-complete]');
+ const progress=lab.querySelector('[data-case-progress]');
+ const enabled='case-sequence-enabled',unlocked='case-sequence-complete';
+ document.body.classList.add(enabled);
+ const showAnalysis=()=>{
+   document.body.classList.add(unlocked);
+   if(finish)finish.hidden=false;
+   analysis.scrollIntoView({behavior:'smooth',block:'start'});
+ };
+ const reset=()=>{
+   document.body.classList.remove(unlocked);
+   for(const [i,stage] of stages.entries()){
+     stage.hidden=i!==0;
+     for(const radio of stage.querySelectorAll('input[type=radio]'))radio.checked=false,radio.disabled=false;
+     for(const option of stage.querySelectorAll('.case-option'))option.classList.remove('case-choice-correct','case-choice-wrong');
+     const btn=stage.querySelector('[data-case-submit]'),next=stage.querySelector('[data-case-next]'),
+           status=stage.querySelector('.case-alert'), rationale=stage.querySelector('[data-case-rationale]');
+     if(btn)btn.disabled=false;
+     if(next)next.hidden=true;
+     if(status){status.hidden=true;status.textContent=''}
+     if(rationale)rationale.hidden=true;
+   }
+   if(finish)finish.hidden=true;
+   if(progress)progress.textContent='1 / 4';
+   stages[0].scrollIntoView({behavior:'smooth',block:'start'});
+ };
+ for(const [i,stage] of stages.entries()){
+   const submit=stage.querySelector('[data-case-submit]');
+   const next=stage.querySelector('[data-case-next]');
+   if(!submit||!next)continue;
+   submit.addEventListener('click',()=>{
+     const chosen=stage.querySelector('input[type=radio]:checked');
+     const status=stage.querySelector('.case-alert');
+     if(!chosen){
+       status.hidden=false;
+       status.textContent='請先選一個推論，再檢查下一項證據。';
+       return;
+     }
+     const correct=stage.dataset.caseCorrect;
+     for(const option of stage.querySelectorAll('.case-option')){
+       const radio=option.querySelector('input');
+       radio.disabled=true;
+       option.classList.toggle('case-choice-correct',radio.value===correct);
+       option.classList.toggle('case-choice-wrong',radio.checked&&radio.value!==correct);
+     }
+     status.hidden=false;
+     status.textContent=chosen.value===correct?'這項判斷符合目前證據。':'這項判斷超出了目前證據；核對下方的因果推導。';
+     stage.querySelector('[data-case-rationale]').hidden=false;
+     submit.disabled=true;
+     next.hidden=false;
+     next.focus();
+   });
+   next.addEventListener('click',()=>{
+     stage.hidden=true;
+     if(i===stages.length-1){
+       showAnalysis();
+     }else{
+       stages[i+1].hidden=false;
+       if(progress)progress.textContent=(i+2)+' / 4';
+       stages[i+1].scrollIntoView({behavior:'smooth',block:'start'});
+       stages[i+1].querySelector('input[type=radio]')?.focus({preventScroll:true});
+     }
+   });
+ }
+ lab.querySelector('[data-case-skip]')?.addEventListener('click',showAnalysis);
+ lab.querySelector('[data-case-restart]')?.addEventListener('click',reset);
+})();
+
+
+// Reading quality: convert wide medical comparison tables into mobile cards.
+// The original semantic <table> stays unchanged on desktop and for screen readers.
+(()=>{
+  for(const table of document.querySelectorAll('.reading-prose table')){
+    const labels=[...table.querySelectorAll('thead th')].map(el=>el.textContent.trim());
+    if(labels.length<3 || labels.some(x=>!x) || table.querySelector('td[colspan], th[colspan], td[rowspan]'))continue;
+    const rows=[...table.querySelectorAll('tbody tr')];
+    if(!rows.length || rows.some(tr=>tr.querySelectorAll('td').length!==labels.length))continue;
+    for(const tr of rows){
+      [...tr.querySelectorAll('td')].forEach((cell,index)=>cell.setAttribute('data-label',labels[index]));
+    }
+    table.classList.add('reading-mobile-cards');
+  }
+})();

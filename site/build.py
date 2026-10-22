@@ -3,16 +3,18 @@
 from pathlib import Path
 import html
 import json
+import os
 import re
 import shutil
 import sys
 import mistune
-from catalog import load_pages
+from catalog import load_public_pages
 from home import render_home
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
-PAGES = load_pages(BASE)
+PREVIEW = os.environ.get('CF_PAGES_BRANCH', '') not in ('', 'main') or (os.environ.get('CLINICAL_SITE_PREVIEW') == '1' and os.environ.get('CF_PAGES_BRANCH') != 'main')
+PAGES = load_public_pages(BASE, preview=PREVIEW)
 FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row in PAGES]
 class Renderer(mistune.HTMLRenderer):
     def __init__(self):
@@ -88,7 +90,7 @@ def validate_output_links():
 
 def render_reader(page, body, headings):
     """Reader-facing teaching, with routes and editorial records in separate pages."""
-    is_lesson = bool(page.get("date")) or page["source"] == "content/tamponade.md"
+    is_lesson = bool(page.get("date")) or page.get("kind") == "case_lesson" or page["source"] == "content/tamponade.md"
     is_archive = page.get("collection") == "xiaoma-reading"
     is_xiaoma = page.get("collection", "").startswith("xiaoma-")
     home = "xiaoma-reading.html" if is_archive else ("xiaoma-internal-medicine.html" if is_xiaoma else "index.html")
@@ -105,7 +107,8 @@ def render_reader(page, body, headings):
     if not is_xiaoma:
         mode += " clinical-page"
     active = page["output"]
-    references = page.get("references", "xiaoma-reading-recovery.html" if is_archive else ("xiaoma-sources.html" if is_xiaoma else "esc-audit.html"))
+    references = page.get("references") or ("xiaoma-sources.html" if page.get("collection") == "xiaoma-internal-medicine" else None)
+    reference_link = ('<a href="' + html.escape(references, quote=True) + '">來源與延伸閱讀</a>') if references else ''
     lessons = sorted((row for row in PAGES if row.get("collection") == page.get("collection") and row.get("date")), key=lambda row: (row["date"], row["output"]))
     number = next((str(i).zfill(2) for i, row in enumerate(lessons, 1) if row["output"] == active), "")
     destinations = ([("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-plan.html", "閱讀路線")]
@@ -113,7 +116,7 @@ def render_reader(page, body, headings):
                     [("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-plan.html", "閱讀路線")])
     top_links = ''.join('<a'+(' aria-current="page"' if active == dest else '')+' href="'+html.escape(dest,quote=True)+'">'+label+'</a>' for dest, label in destinations)
     brand = '<a class="reader-brand" href="index.html"><span class="brand-mark" aria-hidden="true">小</span>小麻閱讀<span>CLINICAL SYSTEM</span></a>'
-    original_note = ('<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><details><summary>原稿與本次收錄</summary><p>保留 '+html.escape(page.get("date", "").replace("-", "."))+' 完整稿。原文與本次編輯註記分開呈現；收錄不代表全篇已完成最新指引重審。</p><a href="xiaoma-reading-recovery.html">來源核對與編輯註記 →</a></details></aside>') if page.get("kind") == "historical_original" else ''
+    original_note = '<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a></aside>' if page.get("kind") == "historical_original" else ''
     return '''<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'''+html.escape(page["title"]+' · '+page["subtitle"],quote=True)+'''">
 <title>'''+title+' · '+site_name+'''</title><link rel="stylesheet" href="styles.css"></head><body class="reader-page '''+mode+'''">
@@ -122,7 +125,7 @@ def render_reader(page, body, headings):
 <div class="reader-shell"><aside class="reader-rail"><a class="back-link" href="'''+home+'''">← 教材目錄</a><span class="rail-label">'''+('本篇脈絡' if is_lesson else '本頁導覽')+'''</span><nav class="reader-outline" aria-label="章節導覽">'''+outline+'''</nav><div class="rail-bottom"><a href="xiaoma-reading.html">以往小麻閱讀 ↗</a><a href="xiaoma-plan.html">完整閱讀路線 ↗</a><a href="index.html">其他臨床教材 ↗</a></div></aside>
 <main class="reader-main" id="reading-content"><div class="reader-hero"><p class="reader-kicker">'''+section+('　 /　 '+number if is_lesson else '')+'''</p><h1>'''+title+'''</h1><p class="reader-deck">'''+subtitle+'''</p></div>
 <details class="mobile-outline"><summary>本篇章節</summary><nav aria-label="行動版章節導覽">'''+outline+'''</nav></details>
-<article class="article reading-prose">'''+body+'''</article>'''+original_note+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span><a href="'''+html.escape(references,quote=True)+'''">來源與查核</a></footer></main></div>
+<article class="article reading-prose">'''+body+'''</article>'''+original_note+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
 <script src="site-index.js"></script><script src="app.js" defer></script></body></html>'''
 
 def render(md_file, output, page_title, subtitle):
@@ -152,9 +155,17 @@ def render(md_file, output, page_title, subtitle):
     body=parser(raw)
     body=re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)  # accessible single H1 in page hero
     body=re.sub(r'<pre><code class="language-mermaid">([\s\S]*?)</code></pre>',render_mechanism,body)
+    if current.get("kind") == "case_lesson" and output == "lvoto-case-interactive.html":
+        before, after = "<!-- CASE_ANALYSIS_START -->", "<!-- CASE_ANALYSIS_END -->"
+        if body.count(before) != 1 or body.count(after) != 1:
+            raise ValueError("Case analysis delimiters missing: interactive explanation must be retained")
+        body = body.replace(before, '<section class="case-analysis" data-case-analysis>', 1).replace(after, "</section>", 1)
     body=rewrite_internal_links(body,md_file)
     current=next(row for row in PAGES if row["output"]==output)
     website = render_reader(current, body, rr.headings)
+    if PREVIEW:
+        website = website.replace('<head>', '<head><meta name="robots" content="noindex,nofollow">', 1)
+        website = website.replace('<main class="reader-main" id="reading-content">', '<main class="reader-main" id="reading-content"><aside class="preview-ribbon" role="note">編輯審查預覽｜本頁尚未通過正式發布驗收。</aside>', 1)
     (DIST/output).write_text(website,encoding="utf-8")
     return {"title":page_title,"url":output,"text":re.sub(r"\s+"," ",re.sub(r"<[^>]*>"," ",body))[:60000]}
 def main():
@@ -163,7 +174,7 @@ def main():
     for name in ("styles.css","home.css","app.js"):
         shutil.copyfile(BASE/"site"/name,DIST/name)
     rows=[render(*entry) for entry in FILES]
-    (DIST/"index.html").write_text(render_home(PAGES), encoding="utf-8")
+    (DIST/"index.html").write_text(render_home(PAGES, preview=PREVIEW), encoding="utf-8")
     searchable=json.dumps(rows,ensure_ascii=False)
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")
     (DIST/"site-index.js").write_text("window.CLINICAL_INDEX = "+searchable+";",encoding="utf-8")

@@ -6,7 +6,7 @@
 
 ## 指定閱讀：Pocket Medicine 第九版
 
-使用者提供的《Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine》第九版電子檔，共 464 個 PDF 頁面。本篇為原創解說，未公開原書 PDF、掃描頁或整章轉錄。
+《Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine》第九版，共 464 個 PDF 頁面。本站提供原創解說，不提供原書掃描或整章轉錄。
 
 | 指定電子檔頁序 | 閱讀位置 | 本篇如何使用 |
 |---|---|---|
@@ -57,9 +57,3 @@
 | 更正狀態 | [同次更正清冊](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)：第 3、9 題未列更正。 |
 
 正文保留題號，選項用「導讀改寫」標明；精確原文以官方 PDF 為準。術後病例、A–a 計算例與貧血反事實練習都是自編教學內容，沒有冒充國考真題或真實病歷。
-
-## 本次修訂與審查範圍
-
-2026-10-21：重寫低血氧教材，加入完整機轉、定量對照、病程更新與逐選項推理；閱讀正文、課表與本頁分開呈現。章節推進參考既有 ACS 的問題展開方式，以及小麻 HCM 閱讀文章對定義、功能軸與治療目標的區分；它們是教學比較資料，不充當低血氧醫學證據。
-
-審查類型為作者來源查核（author_source_check）。已對照上述指定段落、原題與答案；未完成獨立真人專科審查或學習成效試驗。技術建置通過只能證明結構與連結等檢查，不代表醫學專家認證。

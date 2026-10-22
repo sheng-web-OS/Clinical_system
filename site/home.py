@@ -17,15 +17,12 @@ def _card(page, collection, label, cue, featured=False):
     </a>'''
 
 
-def render_home(pages):
+def render_home(pages, *, preview=False):
     """Build the discovery view using the same explicit publication whitelist."""
-    feature = next((p for p in pages if p["source"] == "content/tamponade.md"), None)
     originals = [p for p in pages if p.get("kind") == "historical_original"]
-    lessons = [p for p in pages if p.get("collection") == "xiaoma-internal-medicine" and p.get("date")]
     integrations = [p for p in pages if p.get("kind") == "ai_integrated"]
+    lessons = [p for p in pages if p.get("collection") == "xiaoma-internal-medicine" and p.get("date")]
     cards = []
-    if feature:
-        cards.append(_card(feature, "clinical", "臨床專題 · Clinical reasoning", "從病例進入機轉與決策", True))
     for p in sorted(integrations, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "integrated", "小麻閱讀 · 整合教材", "從原稿深入臨床推理"))
     for p in sorted(originals, key=lambda row: row["date"], reverse=True):
@@ -33,22 +30,24 @@ def render_home(pages):
     for p in sorted(lessons, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "medicine", "內科國考 · 持續更新", "從臨床問題開始"))
     if not cards:
-        raise ValueError("Library homepage cannot be empty")
+        raise ValueError("Reader preview has no article candidates")
     listing = "\n".join(cards)
 
+    preview_meta = '<meta name="robots" content="noindex,nofollow">' if preview else ''
+    preview_banner = '<aside class="preview-ribbon" role="note">編輯審查預覽｜以下作品尚未通過正式公開驗收，僅供審查內容、圖表及閱讀體驗。</aside>' if preview else ''
     return f'''<!doctype html><html lang="zh-Hant"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">{preview_meta}
 <meta name="description" content="小麻閱讀與 Clinical System：把醫學知識連成能用的臨床判斷。">
 <title>小麻閱讀 · Clinical System</title>
 <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="home.css">
 </head><body class="reader-page library-page">
 <a class="skip-link" href="#main">跳到主要內容</a>
 <header class="library-header">
-  <a class="library-logo" href="index.html" aria-label="小麻閱讀首頁"><span class="library-logo-mark" aria-hidden="true">小</span><span>小麻閱讀<small>CLINICAL SYSTEM</small></span></a>
+  <a class="library-logo" href="index.html" aria-label="小麻閱讀首頁"><span class="library-logo-mark" aria-hidden="true">小</span><span>小麻閱讀<small>MEDICAL READING</small></span></a>
   <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a><a href="xiaoma-plan.html">學習路線</a></nav>
   <button class="library-theme" id="theme" aria-label="切換明暗主題" title="切換主題">◐</button>
 </header>
-<main class="library-wrap" id="main">
+<main class="library-wrap" id="main">{preview_banner}
   <section class="library-hero" aria-labelledby="library-title">
     <p class="library-kicker"><span aria-hidden="true" class="library-kicker-mark"></span> 小麻閱讀 <span>／</span> 醫學知識圖書館</p>
     <h1 id="library-title">把醫學，讀成<br><em>能用的判斷。</em></h1>
@@ -64,23 +63,22 @@ def render_home(pages):
   <section class="library-atlas" aria-labelledby="atlas-heading">
     <div class="library-atlas-copy"><p class="library-overline">CONNECT THE REASONING</p>
       <h2 id="atlas-heading">看見文章之間，<br>真正相連的問題。</h2>
-      <p>從 HCM 的 filling 與 LVEDP，到 HF、利尿劑與灌流；從 Tamponade 到氧合、換氣與器官供氧。不同文章可以共享前提，卻不能以相似標題取代因果推導。</p>
+      <p>沿著真實病例，辨認為何水腫不代表左室充盈足夠、低 EF 不一定代表不可逆的病程，以及何時應重新檢查原先的診斷。</p>
       <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識脈絡 <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="library-atlas-steps" aria-label="知識建構路徑">
-      <div><span>01 / RECOVER</span><strong>回收原稿</strong><small>只有取得全文，才列入典藏</small></div>
-      <div><span>02 / CONNECT</span><strong>追查前提</strong><small>辨認已建立與真正缺少的因果橋接</small></div>
-      <div><span>03 / INTEGRATE</span><strong>重建教材</strong><small>重症與證據融入同一條敘事</small></div>
-      <div><span>04 / VALIDATE</span><strong>驗證理解</strong><small>比較正確性、閱讀成本與臨床遷移</small></div>
+    <div class="library-atlas-steps" aria-label="臨床問題的閱讀路徑">
+      <div><span>01 / OBSERVE</span><strong>辨認異常</strong><small>哪些資料是真正的危險訊號？</small></div>
+      <div><span>02 / EXPLAIN</span><strong>找到機轉</strong><small>哪一種生理過程能同時解釋？</small></div>
+      <div><span>03 / DISTINGUISH</span><strong>重估診斷</strong><small>哪個新發現會推翻原本的假說？</small></div>
+      <div><span>04 / ACT</span><strong>驗證處置</strong><small>治療後應觀察哪些變化？</small></div>
     </div>
   </section>
   <section class="library-section" id="articles" aria-labelledby="articles-heading">
-    <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>已公開的完整教材與文章</p></div>
+    <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>候選文章與醫學教材</p></div>
     <div class="library-filters" role="group" aria-label="篩選文章">
        <button class="is-active" data-library-filter="all" aria-pressed="true">全部文章</button>
-       <button data-library-filter="clinical" aria-pressed="false">臨床專題</button>
-       <button data-library-filter="original" aria-pressed="false">小麻原稿</button>
        <button data-library-filter="integrated" aria-pressed="false">整合教材</button>
+       <button data-library-filter="original" aria-pressed="false">小麻原稿</button>
        <button data-library-filter="medicine" aria-pressed="false">內科國考</button>
     </div>
     <div class="library-grid" id="library-grid">{listing}</div>
@@ -89,12 +87,12 @@ def render_home(pages):
   <section class="library-section library-paths" aria-labelledby="paths-heading">
     <div class="library-section-heading"><div><p class="library-overline">EXPLORE THE COLLECTIONS</p><h2 id="paths-heading">沿著一條脈絡讀</h2></div></div>
     <div class="library-path-grid">
-      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL OS</span><h3>知識脈絡</h3><p>先辨認跨篇的共同問題、真正的前提缺口與整合進度，再選擇要讀的完整正文。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL REASONING</span><h3>知識脈絡</h3><p>讓一個病例的診斷轉折帶出不同文章共享的生理問題，再回到完整正文。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">02 / ESSAYS</span><h3>小麻閱讀</h3><p>從精簡的教材與問題，重建定義、機轉與臨床意義。保留作者完整原文。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-internal-medicine.html"><span class="library-path-number">03 / INTERNAL MEDICINE</span><h3>小麻內科國考</h3><p>以臨床問題串連內科主題、必要先備知識與重要判斷，不把學習縮成考點清單。</p><span>進入課程 <span aria-hidden="true">↗</span></span></a>
     </div>
   </section>
-  <footer class="library-footer"><div><strong>小麻閱讀</strong><span>好的醫學閱讀，讓下一個問題更清楚。</span></div><nav aria-label="補充資訊"><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-plan.html">閱讀路線</a><a href="xiaoma-sources.html">來源與查核</a><a href="audit-log.html">修訂紀錄</a></nav></footer>
+  <footer class="library-footer"><div><strong>小麻閱讀</strong><span>好的醫學閱讀，讓下一個問題更清楚。</span></div><nav aria-label="補充資訊"><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-plan.html">閱讀路線</a><a href="xiaoma-sources.html">來源與查核</a></nav></footer>
 </main>
 <script src="site-index.js"></script><script src="app.js" defer></script>
 </body></html>'''

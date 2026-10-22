@@ -1,11 +1,5 @@
 [
   {
-    "source": "content/tamponade.md",
-    "output": "tamponade.html",
-    "title": "Cardiac Tamponade Mimicking Sepsis",
-    "subtitle": "病例 × 機轉 × ESC 指南 × 決策"
-  },
-  {
     "source": "content/clinical-os/index.md",
     "output": "knowledge-atlas.html",
     "title": "臨床知識脈絡",
@@ -13,7 +7,6 @@
     "collection": "clinical-os",
     "layout": "reader",
     "section": "知識導覽",
-    "references": "xiaoma-reading-recovery.html",
     "navigation": false
   },
   {
@@ -38,13 +31,6 @@
     "layout": "reading-original"
   },
   {
-    "source": "audit/xiaoma-reading-recovery.md",
-    "output": "xiaoma-reading-recovery.html",
-    "title": "小麻原稿回收核對",
-    "subtitle": "原文、版本、搜尋範圍與尚未取回的文章",
-    "navigation": false
-  },
-  {
     "source": "content/xiaoma-internal-medicine/index.md",
     "output": "xiaoma-internal-medicine.html",
     "title": "小麻內科國考",
@@ -66,18 +52,6 @@
     "section": "胸腔與重症"
   },
   {
-    "source": "audit/esc2025-figure-check.md",
-    "output": "esc-audit.html",
-    "title": "2025 ESC 原圖對讀",
-    "subtitle": "原始圖表、推薦層級與文件內部歧異"
-  },
-  {
-    "source": "audit/audit-log.md",
-    "output": "audit-log.html",
-    "title": "可追溯審查",
-    "subtitle": "檔案、主張、來源與發布驗收"
-  },
-  {
     "source": "content/xiaoma-internal-medicine/sources.md",
     "output": "xiaoma-sources.html",
     "title": "低血氧：來源與查核",
@@ -88,10 +62,10 @@
     "section": "參考資料"
   },
   {
-    "source": "content/xiaoma-internal-medicine/plan.md",
+    "source": "content/xiaoma-internal-medicine/reading-path.md",
     "output": "xiaoma-plan.html",
-    "title": "閱讀路線與章節對照",
-    "subtitle": "依重要度推進，依實際理解調整。",
+    "title": "內科閱讀路線",
+    "subtitle": "用臨床問題串起必要前提、病因與處置",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "navigation": false,
@@ -176,6 +150,38 @@
     "layout": "reading-original"
   },
   {
+    "source": "content/clinical-os/lvoto-case-interactive.md",
+    "output": "lvoto-case-interactive.html",
+    "title": "水腫與高 BNP，為何利尿後更喘？",
+    "subtitle": "循序解讀 COPD 病人的 LVOTO、前負荷與治療回饋",
+    "collection": "clinical-cases",
+    "kind": "case_lesson",
+    "layout": "reader",
+    "navigation": false,
+    "section": "臨床推理"
+  },
+  {
+    "source": "content/clinical-os/lvoto-case-static.md",
+    "output": "lvoto-case-static.html",
+    "title": "水腫與高 BNP，為何利尿後更喘？",
+    "subtitle": "同一病例的完整連續推論",
+    "collection": "clinical-cases",
+    "kind": "case_lesson",
+    "layout": "reader",
+    "navigation": false,
+    "section": "臨床推理"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exam-practice.md",
+    "output": "xiaoma-exam-practice.html",
+    "title": "醫學（三）歷屆題目與詳解",
+    "subtitle": "由官方題號與答案回到臨床推理（審查預覽）",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "navigation": false,
+    "section": "國考真題"
+  },
+  {
     "source": "content/xiaoma-reading/integrated/2026-10-21-dcm.md",
     "output": "xiaoma-reading-dcm-integrated.html",
     "title": "DCM：心室擴張之後，病因診斷才剛開始",
@@ -187,6 +193,19 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "心肌病變"
+  },
+  {
+    "source": "content/clinical-os/heart-failure-from-phenotype-to-treatment-response.md",
+    "output": "hf-pressure-perfusion-diuretic-reasoning.html",
+    "title": "呼吸困難合併水腫，為什麼治療方向可能相反？",
+    "subtitle": "動態 LVOTO 反例 × 已確認肺鬱血的去鬱血路徑",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "心臟與循環"
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md",
