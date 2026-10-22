@@ -8,6 +8,10 @@
 
 ## 依臨床問題繼續讀
 
+**為什麼同樣是 pulmonary congestion，下一步不一定是加利尿劑？** [整合閱讀：從 HF 四象限、LVEDP、HCM 到利尿反應](../clinical-os/heart-failure-from-phenotype-to-treatment-response.md)。先完成一條連續推理，再對照下列各篇原文；此為 AI 整合教材，並不替換歷史原稿。
+
+
+
 **有肺水腫，就代表血流一定不足嗎？** [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)把 congestion 與 perfusion 分開；[從四象限走進 LVEDP](originals/2026-07-12-lvedp.md)再問壓力如何由容量、心室性質及外在限制形成；[Diuretics](originals/2026-07-20-diuretics.md)接著檢驗鈉排泄與真正解除鬱血是不是同一個終點。
 
 **EF 正常，心臟功能就一定正常嗎？** [HCM](originals/2026-07-14-hcm.md)將 filling、outflow、contraction 與 systolic emptying 分開；[DCM](originals/2026-07-10-dcm.md)則提醒，左室擴大與收縮不良只是疾病表型，仍需向上追問病因。

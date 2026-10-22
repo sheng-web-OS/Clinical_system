@@ -193,5 +193,18 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "心肌病變"
+  },
+  {
+    "source": "content/clinical-os/heart-failure-from-phenotype-to-treatment-response.md",
+    "output": "hf-pressure-perfusion-diuretic-reasoning.html",
+    "title": "肺水腫為何不必然等於容量過多？",
+    "subtitle": "HF × LVEDP × HCM × 利尿反應：從血流動力學分類到可驗證的治療決策",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "心臟與循環"
   }
 ]
