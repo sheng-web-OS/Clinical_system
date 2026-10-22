@@ -314,5 +314,30 @@
     "layout": "reader",
     "navigation": false,
     "section": "參考資料"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-22-diuretics-visual.md",
+    "output": "xiaoma-reading-diuretics-visual.html",
+    "title": "利尿效果不夠，為什麼下一步不一定是加量？",
+    "subtitle": "兩張圖看清楚 loop threshold、ceiling、劑間留鈉與反應導向的去鬱血決策",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "腎臟／心衰竭與利尿",
+    "references": "xiaoma-reading-diuretics-sources.html"
+  },
+  {
+    "source": "content/xiaoma-reading/diuretics-sources.md",
+    "output": "xiaoma-reading-diuretics-sources.html",
+    "title": "利尿劑原表與教學圖：來源核對",
+    "subtitle": "Pocket Medicine 9E PDF 第 179–180 頁、ESC Figure 13、DOSE、PUSH-AHF",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "navigation": false,
+    "section": "參考資料",
+    "references": "xiaoma-reading-diuretics-sources.html"
   }
 ]
