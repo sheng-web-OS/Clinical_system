@@ -199,6 +199,29 @@
     "review": "author_source_check"
   },
   {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md",
+    "output": "xiaoma-108a-cardiac-reasoning.html",
+    "title": "四道國考題，重新理解血流動力學",
+    "subtitle": "108（一）醫學（三）第 8、11、12、76 題：ASD、HOCM／AS、差異性發紺、冠痙攣",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環・官方真題深究",
+    "references": "xiaoma-108a-cardiac-sources.html",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/108a-cardiac-sources.md",
+    "output": "xiaoma-108a-cardiac-sources.html",
+    "title": "108（一）心臟國考詳解：來源與核讀範圍",
+    "subtitle": "四題官方答案、Pocket Medicine 原頁及研究與指引的證據邊界",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
+  },
+  {
     "source": "content/xiaoma-internal-medicine/baseline-sources.md",
     "output": "xiaoma-baseline-sources.html",
     "title": "二十題跨系統起點：來源與查核",
