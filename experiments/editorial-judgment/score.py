@@ -30,6 +30,8 @@ def score(cases, evaluations):
                   "contaminated"):
             if type(r[f]) is not bool:
                 raise ValueError("Expected boolean: " + f)
+        if r["over_revision"] and r["correct_decision_and_scope"]:
+            raise ValueError("An over-revision cannot be a correct edit scope")
         if r["tp_major"] > r["tp_material"] or r["fn_major"] > r["fn_material"]:
             raise ValueError("Major issues must be a subset of material issues")
         if r["supported_source_claims"] > r["source_claims"]:
@@ -52,8 +54,15 @@ def score(cases, evaluations):
         fp = summation("false_positives")
         claims, supported = summation("source_claims"), summation("supported_source_claims")
         control = [r for r in independent if allowed[r["id"]]["type"] == "negative-control"]
+        new_major = sum(r["new_p0_p1"] for r in independent)
+        # Aggregates must not conceal major omissions or newly introduced harm.
+        # This is a conservative test gate, not a clinical safety certificate.
+        on_hold = bool(m_fn or new_major)
         report[arm] = {
-            "status": "PILOT_ONLY",
+            "status": "PILOT_HOLD" if on_hold else "PILOT_ONLY",
+            "safety_gate": "HOLD" if on_hold else "NOT_VALIDATED",
+            "hold_reasons": {"missed_major": m_fn, "introduced_p0_p1": new_major},
+            "generalization": "NOT_TESTED_RETROSPECTIVE_SEEDS",
             "cases": total,
             "eligible_replayable_cases": len(allowed),
             "case_coverage": ratio(total, len(allowed)),
@@ -62,8 +71,9 @@ def score(cases, evaluations):
             "finding_precision": ratio(all_tp, all_tp + fp),
             "correct_decision_and_scope": ratio(sum(r["correct_decision_and_scope"] for r in independent), total),
             "negative_control_overrevision": ratio(sum(r["over_revision"] for r in control), len(control)),
+            "all_case_overrevision": ratio(sum(r["over_revision"] for r in independent), total),
             "evidence_claim_support": ratio(supported, claims),
-            "new_p0_p1_cases": sum(r["new_p0_p1"] for r in independent),
+            "new_p0_p1_cases": new_major,
             "human_correction_minutes": summation("human_minutes"),
             "human_intervention_turns": summation("human_turns"),
             "stage_means": {k: ratio(sum(r["stages"][k] for r in independent), total)
