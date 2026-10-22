@@ -129,3 +129,17 @@
 .article .figure-source figcaption{font-size:.79em;line-height:1.7;color:var(--muted);padding:11px 3px 0}
 .article .figure-source figcaption strong{color:var(--ink);font-weight:720}
 @media(max-width:650px){.article .figure-source{margin:1.6rem -5px}.article .figure-source figcaption{font-size:.83em;padding:12px 7px 0}}
+
+
+/* At phone widths, preserve full medical comparisons without squeezing
+   three- or four-column tables into 80px cells. Semantic table is retained. */
+@media (max-width:620px){
+ .reading-prose table.reading-mobile-cards{display:block;width:100%;table-layout:auto;font-size:.85em;line-height:1.7;margin:23px 0}
+ .reading-mobile-cards thead{position:absolute;clip-path:inset(100%);width:1px;height:1px;overflow:hidden}
+ .reading-mobile-cards tbody{display:block}
+ .reading-mobile-cards tbody tr{display:block;margin:0 0 15px;padding:6px 13px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+ .reading-mobile-cards tbody td{display:grid;grid-template-columns:minmax(0,34%) minmax(0,1fr);gap:10px;align-items:start;max-width:100%;padding:11px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere;word-break:normal;vertical-align:top}
+ .reading-mobile-cards tbody td:last-child{border-bottom:0}
+ .reading-mobile-cards tbody td::before{content:attr(data-label);font-size:.87em;line-height:1.55;font-weight:730;color:var(--brand);overflow-wrap:anywhere}
+ .reading-mobile-cards tbody tr:hover td{background:none}
+}

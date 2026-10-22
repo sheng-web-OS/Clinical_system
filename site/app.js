@@ -150,3 +150,19 @@
  lab.querySelector('[data-case-skip]')?.addEventListener('click',showAnalysis);
  lab.querySelector('[data-case-restart]')?.addEventListener('click',reset);
 })();
+
+
+// Reading quality: convert wide medical comparison tables into mobile cards.
+// The original semantic <table> stays unchanged on desktop and for screen readers.
+(()=>{
+  for(const table of document.querySelectorAll('.reading-prose table')){
+    const labels=[...table.querySelectorAll('thead th')].map(el=>el.textContent.trim());
+    if(labels.length<3 || labels.some(x=>!x) || table.querySelector('td[colspan], th[colspan], td[rowspan]'))continue;
+    const rows=[...table.querySelectorAll('tbody tr')];
+    if(!rows.length || rows.some(tr=>tr.querySelectorAll('td').length!==labels.length))continue;
+    for(const tr of rows){
+      [...tr.querySelectorAll('td')].forEach((cell,index)=>cell.setAttribute('data-label',labels[index]));
+    }
+    table.classList.add('reading-mobile-cards');
+  }
+})();
