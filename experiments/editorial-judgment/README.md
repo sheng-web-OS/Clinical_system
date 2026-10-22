@@ -87,6 +87,15 @@ Several seeds are marked `needs_freeze` until actual earlier drafts, Pocket 9E o
 - `score.py` validates and summarizes adjudicated results; it **cannot** automatically decide whether a medical claim is true or whether prose is cognitively effective.
 - Publication release receipts, private source integrity and website QA continue independently. Passing EJE does **not** authorize publication.
 
+## 2026-10-22 integrity correction (no new capability claim)
+
+- J01–J03 retrospective task briefs were neutralized: candidate-facing text no longer directly states the expected answer (e.g., which article must be excluded or that the HCM original should be preserved). This only **reduces** prompt leakage; it does not eliminate model/topic exposure.
+- **J03 must remain a contaminated regression control** for claims of generalization. The HCM article is an explicitly known EPQC benchmark, and the Clinical OS condition may receive that benchmark through its own quality contract. Do not call a J03 win a blind discovery.
+- The pre-feedback website snapshot is Git-pinned, but candidate input must be exported to a clean workspace containing only the listed files and neutral task. Do not let candidate agents access this repository's `labels.json`, this README's historical correction descriptions, later commits, or PR discussion.
+- `score.py` now forces `PILOT_HOLD` for independently adjudicated missed major issues or newly introduced P0/P1 errors. With no such flagged errors it still reports `PILOT_ONLY` and `NOT_VALIDATED`, **not** medical clearance.
+- Scoring regressions are in `tests/test_eje_score_guard.py` and run via the existing CI test discovery. CI validates code behavior only, never the gold labels or the medical truth of a finding.
+- Before measuring Native vs Evidence-only vs Lite, assign at least one **unexposed** negative-control article and one seeded major-error article from a non-HCM/DCM domain, freeze identical sources and reviewer labels, and run each arm in separate contexts. Those new source packs must be prepared without the candidate seeing expected answers.
+
 ## Next independent milestone
 
 Freeze the real baseline snapshot for J01/J02 and run the first one-pass Native vs Evidence-only vs Clinical OS Lite evaluation with labels withheld. Compare not only errors found but the false-positive count and predicted edit size. Before investing in Full governance, see if Lite proves reproducible gains.
