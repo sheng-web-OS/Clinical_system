@@ -8,7 +8,7 @@
 
 - [急性腎問題：AKI、缺水、FENa、MCD；Q27／Q2／Q25／Q28](lessons/2026-10-22-exam108-renal-foundations.md)：文章末段逐一列出 Pocket Medicine 頁次、KDIGO、NSAID 與鈉水治療來源。
 - [腎灌流、CKD、礦物代謝與 eosinophilia；Q17／Q22／Q23／Q26](lessons/2026-10-22-exam108-renal-perfusion.md)：文章末段含 2024 ADQI／ICA HRS、KDIGO CKD-MBD、原書 Table 查核界線。
-- 第 8、11、12、76 題心臟血行動力與理學檢查已另有[正式公開版本](xiaoma-108a-cardiac-reasoning.html)及[獨立來源頁](xiaoma-108a-cardiac-sources.html)，不重複建立文章。
+- 第 8、11、12、76 題心臟血行動力與理學檢查已另有[正式公開版本](lessons/2026-10-22-108a-cardiac-reasoning.md)及[獨立來源頁](108a-cardiac-sources.md)，不重複建立文章。
 
 ## 閱讀與審查界線
 
