@@ -210,5 +210,28 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md",
+    "output": "xiaoma-baseline-twenty.html",
+    "title": "先做二十題，看見內科推理的起點",
+    "subtitle": "心臟、腎臟、消化、感染與內分泌的官方真題，先答再讀解析。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "跨系統練習",
+    "references": "xiaoma-baseline-sources.html",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/baseline-sources.md",
+    "output": "xiaoma-baseline-sources.html",
+    "title": "二十題跨系統起點：來源與查核",
+    "subtitle": "官方題號、更正答案、原書位置及處置邊界。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
