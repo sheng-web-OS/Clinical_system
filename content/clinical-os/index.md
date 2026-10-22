@@ -14,6 +14,14 @@
 
 *目前已產生 AI 跨篇整合底稿：HF → LVEDP → Diuretics → HCM。它保存在私人 GitHub 的 `content/clinical-os/heart-failure-from-phenotype-to-treatment-response.md`，尚待查回小麻原始圖表及正式醫學來源，因此暫不作為已審查教材對外發布。*
 
+### 不喘了之後，瓣膜的問題解決了嗎？
+
+把前面的觀念放進一個明確的教學情境：病人 EF 保留，曾因肺充血而喘，利尿後比較舒服。HF 的四象限提醒我分開評估充血與灌流；LVEDP 解釋症狀改善可以來自充填壓下降；利尿劑文章則提醒我，治療反應只回答它實際改變的環節。若同時已確認重度 AS，這些改善仍沒有回答固定瓣膜阻塞是否需要解除。
+
+新的 [AS／AR 整合教材〈為什麼不喘了，仍可能需要換瓣？〉](../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md)從這裡接下去：EF 保留為何仍可能低流量、低流量為何可能使壓差不高，以及藥物改善症狀後，換瓣時機為何仍須另外判斷。這延續了 HCM 原稿把 outflow、filling 與射出比例分開的思考，但兩種疾病的阻塞機轉與介入方式仍須分別理解。
+
+讀到 AR 時，還要再分開總射出量與淨向前血量：有些血送進主動脈後又逆流回心室。於是，藥物降低血管阻力、減少靜脈回流，或減慢心率，便不能只用「血壓下降」合併解讀。新教材用 AS／AR 在不同灌流狀態下的對照，把這些共同前提帶回用藥判斷；[來源與適用界線](../xiaoma-reading/as-ar-sources.md)另頁列出。
+
 ## 下一個已能從原稿看見的問題：診斷尚未完成，什麼可以先做？
 
 作者的〈還不知道是什麼，憑什麼治療〉與〈急性 AF，不一定要立刻結束〉形成一組緊密關係。Wide-complex tachycardia 的 ECG morphology 未必立刻證明 VT／SVT；但若 tachyarrhythmia 正在造成嚴重 hemodynamic instability，處置並不總能等到電生理機轉確診。相反地，AF 已存在也不表示一定要立即恢復 sinus rhythm；先區分 attributable instability、暫時可接受的 ventricular physiology，以及 elective rhythm transition 的 thromboembolic risk。
