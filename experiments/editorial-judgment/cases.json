@@ -15,7 +15,7 @@
           "README.md"
         ]
       },
-      "task": "審查準備公開的小麻閱讀網站：從現有成果與網站資訊架構，自主找出不應公開的內容與錯誤分類。不要假定已經完成的研發案例必然適合公開。只診斷，暫不修改。",
+      "task": "請獨立審查指定版本的小麻閱讀網站與其文章選輯、頁面定位及發布安排。找出具有實質影響的問題或指出不必修改之處；提出範圍最小的編輯建議。僅診斷，暫不修改。",
       "source_state": "A Git baseline exists; instructions and role must be kept separate from later user feedback."
     },
     {
@@ -31,7 +31,7 @@
           "content/xiaoma-reading/index.md"
         ]
       },
-      "task": "以第一次進站的醫學生為對象，評估網站首頁與導航是否能有效帶讀者進入真正的醫學教材。指出重要而非表面裝飾的問題，選擇最小必要修訂。",
+      "task": "請以第一次進站的醫學生為讀者，評估指定版本首頁、導航與文章入口的實際閱讀體驗。指出實質問題（若無則說明），並判斷是否需要編輯修訂及其範圍。僅診斷，暫不修改。",
       "source_state": "Original site templates and editorial copy are Git-pinned."
     },
     {
@@ -45,7 +45,7 @@
           "docs/editorial-prose-quality-contract.md"
         ]
       },
-      "task": "評估這篇 HCM 原文是否必須大規模重構才能成為可閱讀的專業教材。逐點說明保留或修訂的理由，主動提出支持原稿的最強反方論證。",
+      "task": "請以醫學生及 PGY 專業教材的要求，獨立審查這篇 HCM 原稿的概念、機轉、決策連貫性與來源邊界。判斷是否需要修改、需改到何種程度，並提出對自己判斷最有力的反方論證。僅診斷，暫不修改。",
       "source_state": "HCM text frozen; this task is a control against reflexive maximal rewriting."
     },
     {
