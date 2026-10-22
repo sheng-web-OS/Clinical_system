@@ -13,8 +13,13 @@ DIST = ROOT / "dist"
 EXPECTED = {
     "styles.css", "home.css", "index.html",
     "app.js", "site-index.json", "site-index.js", ".nojekyll",
-    "xiaoma-reading-20260710-dcm.html",  # legacy URL now points to the current approved edition
 } | {row["output"] for row in PAGES}
+HAS_DCM_RELEASE = (
+    any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES)
+    and any(p["output"] == "xiaoma-reading-20260710-dcm-original.html" for p in PAGES)
+)
+if HAS_DCM_RELEASE:
+    EXPECTED.add("xiaoma-reading-20260710-dcm.html")  # legacy reader redirect
 if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
     EXPECTED.update(['assets/dcm-pv.webp','assets/dcm-secondary-mr.png','assets/dcm-ischemic-cmr.webp'])
 actual = {p.relative_to(DIST).as_posix() for p in DIST.rglob("*") if p.is_file()} if DIST.is_dir() else set()
@@ -88,33 +93,34 @@ if not errors:
     if 'href="https://github.com/sheng-web-OS/Clinical_system"' in front:
         errors.append("Private repository direct link should not appear in public nav")
 
-    # Release regression: the old DCM URL, homepage, library index, and
-    # search must lead to the current integrated article by default.
-    latest = "xiaoma-reading-dcm-integrated.html"
-    legacy = "xiaoma-reading-20260710-dcm.html"
-    archive = "xiaoma-reading-20260710-dcm-original.html"
-    if not (DIST / archive).is_file():
-        errors.append("Preserved 2026-07-10 DCM archive is missing")
-    old_route = (DIST / legacy).read_text("utf8")
-    if 'http-equiv="refresh"' not in old_route or 'url=' + latest not in old_route:
-        errors.append("Old public DCM URL must open the current integrated article")
-    if not (DIST / latest).is_file() or "當心臟變大" not in (DIST / latest).read_text("utf8"):
-        errors.append("Current DCM content is missing")
-    if front.find('href="' + latest + '"') < 0:
-        errors.append("Home does not link to the current DCM reading")
-    else:
-        first_card = front.find('<a class="library-card')
-        first_new = front.find('href="' + latest + '"')
-        if first_card < 0 or first_new != front.find('href="', first_card):
-            errors.append("Current reading is not the first homepage card")
-    reading_index = (DIST / "xiaoma-reading.html").read_text("utf8")
-    new_entry = reading_index.find('href="' + latest + '"')
-    archived_entry = reading_index.find('href="' + archive + '"')
-    if new_entry < 0 or archived_entry < 0 or new_entry >= archived_entry:
-        errors.append("Reading library displays archived DCM ahead of current reading")
-    indexed_urls = [row["url"] for row in index] if isinstance(index, list) else []
-    if latest not in indexed_urls or archive not in indexed_urls or indexed_urls.index(latest) >= indexed_urls.index(archive):
-        errors.append("Search results prioritize archived DCM over the current article")
+    if HAS_DCM_RELEASE:
+        # Release regression: the old DCM URL, homepage, library index, and
+        # search must lead to the current integrated article by default.
+        latest = "xiaoma-reading-dcm-integrated.html"
+        legacy = "xiaoma-reading-20260710-dcm.html"
+        archive = "xiaoma-reading-20260710-dcm-original.html"
+        if not (DIST / archive).is_file():
+            errors.append("Preserved 2026-07-10 DCM archive is missing")
+        old_route = (DIST / legacy).read_text("utf8")
+        if 'http-equiv="refresh"' not in old_route or 'url=' + latest not in old_route:
+            errors.append("Old public DCM URL must open the current integrated article")
+        if not (DIST / latest).is_file() or "當心臟變大" not in (DIST / latest).read_text("utf8"):
+            errors.append("Current DCM content is missing")
+        if front.find('href="' + latest + '"') < 0:
+            errors.append("Home does not link to the current DCM reading")
+        else:
+            first_card = front.find('<a class="library-card')
+            first_new = front.find('href="' + latest + '"')
+            if first_card < 0 or first_new != front.find('href="', first_card):
+                errors.append("Current reading is not the first homepage card")
+        reading_index = (DIST / "xiaoma-reading.html").read_text("utf8")
+        new_entry = reading_index.find('href="' + latest + '"')
+        archived_entry = reading_index.find('href="' + archive + '"')
+        if new_entry < 0 or archived_entry < 0 or new_entry >= archived_entry:
+            errors.append("Reading library displays archived DCM ahead of current reading")
+        indexed_urls = [row["url"] for row in index] if isinstance(index, list) else []
+        if latest not in indexed_urls or archive not in indexed_urls or indexed_urls.index(latest) >= indexed_urls.index(archive):
+            errors.append("Search results prioritize archived DCM over the current article")
 
 if errors:
     print("\n".join("FAIL: "+e for e in errors))
