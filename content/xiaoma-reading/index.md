@@ -15,6 +15,15 @@
 
 [〈為什麼不喘了，仍可能需要換瓣？〉](integrated/2026-10-22-as-ar-hemodynamics.md)接著區分 AS 的瓣膜狹窄與動脈負荷，以及 AR 的逆流、淨前向量與心率條件；同樣是血管擴張劑，適用性取決於灌流與病程。
 
+<div class="original-list">
+  <a class="original-card" href="integrated/2026-10-22-diuretics-visual.md">
+    <span class="original-date">附圖整合閱讀 · 2026.10.22</span>
+    <strong>利尿效果不夠，為什麼下一步不一定是加量？</strong>
+    <span>回到小麻第 179–180 頁的原表，利用非線性 dose–response 曲線與反應導向決策圖，區分 threshold、劑間留鈉、遠端代償與停止升級。</span>
+    <span class="read-link">閱讀附圖整合版 →</span>
+  </a>
+</div>
+
 ## 歷史原稿典藏
 
 以下保存原始文章的文字及論述歷史，**不是最新整合版的閱讀入口**。如欲閱讀心肌病變修訂稿，請由上方〈心肌病變〉文章進入。
