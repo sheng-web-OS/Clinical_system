@@ -256,5 +256,30 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md",
+    "output": "xiaoma-reading-as-ar-hemodynamics.html",
+    "title": "為什麼不喘了，仍可能需要換瓣？",
+    "subtitle": "從 AS 的 EF、低流量與換瓣時機，讀到 AS／AR 的血管擴張劑、心率與急性失代償。",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "瓣膜與血流",
+    "references": "xiaoma-reading-as-ar-sources.html"
+  },
+  {
+    "source": "content/xiaoma-reading/as-ar-sources.md",
+    "output": "xiaoma-reading-as-ar-sources.html",
+    "title": "主動脈瓣狹窄與逆流：來源與閱讀界線",
+    "subtitle": "分期、藥物機轉、急性失代償與介入證據。",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "navigation": false,
+    "section": "參考資料",
+    "references": "xiaoma-reading-as-ar-sources.html"
   }
 ]
