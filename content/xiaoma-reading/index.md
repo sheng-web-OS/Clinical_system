@@ -4,7 +4,7 @@
 
 <!-- XIAOMA_READING_ORIGINALS -->
 
-[〈DCM：心室擴張之後，病因診斷才剛開始〉](integrated/2026-10-21-dcm.md)從既有原稿接續討論 PV loop、secondary MR、病因與恢復後風險；這是另行形成的整合教材。
+[〈心肌病變：當心臟變大，問題真的只是收縮力下降嗎？〉](integrated/2026-10-21-dcm.md)從 DCM 的代償性擴張追問 EF 與實際前向血流、congestion 與 perfusion，以及一個病因究竟能解釋多少心肌異常。歷史原稿獨立典藏。
 
 [〈為什麼不喘了，仍可能需要換瓣？〉](integrated/2026-10-22-as-ar-hemodynamics.md)接著區分 AS 的瓣膜狹窄與動脈負荷，以及 AR 的逆流、淨前向量與心率條件；同樣是血管擴張劑，適用性取決於灌流與病程。
 
