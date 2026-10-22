@@ -8,7 +8,7 @@
 
 ## 依臨床問題繼續讀
 
-**為什麼同樣是 pulmonary congestion，下一步不一定是加利尿劑？** [整合閱讀：從 HF 四象限、LVEDP、HCM 到利尿反應](../clinical-os/heart-failure-from-phenotype-to-treatment-response.md)。先完成一條連續推理，再對照下列各篇原文；此為 AI 整合教材，並不替換歷史原稿。
+**有水腫又喘，該先辨認肺病、流出道阻塞，還是真正的心因性肺鬱血？** [整合閱讀：從 HF 四象限、LVEDP、HCM 到利尿反應](../clinical-os/heart-failure-from-phenotype-to-treatment-response.md)。先完成一條連續推理，再對照下列各篇原文；此為 AI 整合教材，並不替換歷史原稿。
 
 
 
