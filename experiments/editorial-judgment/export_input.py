@@ -31,6 +31,8 @@ def export_case(cases, case_id, repo, out):
         raise ValueError("Only frozen replayable cases may be exported")
     if not re.fullmatch(r"[A-Za-z0-9_-]+", case_id):
         raise ValueError("Unsafe case identifier")
+    if out.resolve() == repo.resolve() or repo.resolve() in out.resolve().parents:
+        raise ValueError("Candidate packs must be exported outside the source repository")
     destination = out / case_id
     if destination.exists():
         raise FileExistsError("Refuse to overwrite an existing sealed pack")
