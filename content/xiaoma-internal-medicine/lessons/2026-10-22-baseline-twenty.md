@@ -440,7 +440,7 @@ D. 弓蟲腦炎（Toxoplasma encephalitis）—clindamycin＋pyrimethamine
 
 官方標準答案與更正答案均為 **C**；本題未更正。
 
-**病原分類、生活史與宿主狀態，會一起決定藥物；「都是寄生蟲」並沒有共同處方。**本題錯項是 C：Strongyloides 是線蟲，hyperinfection 以 ivermectin 為核心治療，praziquantel 不能取代。
+**先分清病原分類，再看生活史與宿主狀態。**PJP 屬真菌感染，弓蟲是原蟲，蟯蟲與糞小桿線蟲則是線蟲；這四組配對不能統稱為同一類感染。本題錯項是 C：Strongyloides hyperinfection 以 ivermectin 為核心治療，praziquantel 不能取代。
 
 Strongyloides 的自體感染可使感染長期存在；免疫抑制、尤其類固醇，可能加速自體感染，讓幼蟲負荷大增。此時會從一般感染進入腸肺等器官受損、甚至伴敗血症的重症情境。療程與給藥可靠性因而重要，不能照搬一般短療程；CDC 的重症建議依糞便／痰檢清除持續治療，而非只服一兩天就結案。
 
