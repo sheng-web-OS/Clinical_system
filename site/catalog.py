@@ -17,14 +17,18 @@ def load_pages(root):
                 raise ValueError("Missing publication field: " + key)
         source = PurePosixPath(row["source"])
         if (source.is_absolute() or ".." in source.parts or
-                source.parts[0] not in ("content", "audit") or
+                source.parts[0] != "content" or
                 source.suffix != ".md"):
-            raise ValueError("Public source must be approved content/ or audit/ Markdown")
+            raise ValueError("Public source must be reader-facing content/ Markdown; internal audit/ stays private")
+        if source.as_posix() == "content/tamponade.md":
+            raise ValueError("Internal Tamponade pilot stays private")
         path = (root / row["source"]).resolve()
         if not path.is_relative_to(root.resolve()) or not path.is_file():
             raise ValueError("Missing or escaped publication source: " + row["source"])
-        if path.relative_to(root.resolve()).parts[0] not in ("content", "audit"):
+        if path.relative_to(root.resolve()).parts[0] != "content":
             raise ValueError("Public source resolves into a private directory")
+        if path.relative_to(root.resolve()).as_posix() == "content/tamponade.md":
+            raise ValueError("Internal Tamponade pilot stays private")
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]*\.html", row["output"]):
             raise ValueError("Output must be a flat HTML filename")
         if row["source"] in sources or row["output"] in outputs:
