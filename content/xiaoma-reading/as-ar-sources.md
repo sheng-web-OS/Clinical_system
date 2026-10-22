@@ -67,4 +67,6 @@
 
 文中 100／50 mL 的 EF 比較與 100−40＝60 mL 的 AR 例子，都是協助理解定義的假設數字，不是患者資料或預測模型。冠狀動脈舒張灌流的壓力差為簡化機轉，不是通用治療目標。
 
+正文的四種用藥情境是教學對照，分開改變瓣膜機轉與灌流條件；不是觀察病例、通用處方或經驗證的決策工具。混合 AS／AR、不同病因與其他共病仍須另行評估。
+
 2025 指南全文另參考[學會提供的原文 PDF](https://suc.org.uy/sites/default/files/2025-10/2025-esceacts-guidelines-for-the-management-of-valvular-heart-disease.pdf)；引用內容屬原指南，未重製其圖像。
