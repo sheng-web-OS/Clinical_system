@@ -46,7 +46,7 @@ def export_case(cases, case_id, repo, out):
         + case["task"] + "\n\n"
         + "Review the supplied snapshot only. Do not browse the case registry, "
           "gold labels, later feedback, or later Git versions. "
-          "Report KEEP/local fix/bridge/restructure/HOLD as justified; "
+          "Decide what editorial action, if any, is justified by the evidence; "
           "do not edit the files in this first-pass round.\n",
         encoding="utf-8",
     )
