@@ -52,7 +52,7 @@ def render_home(pages):
   <section class="library-hero" aria-labelledby="library-title">
     <p class="library-kicker"><span aria-hidden="true" class="library-kicker-mark"></span> 小麻閱讀 <span>／</span> 醫學知識圖書館</p>
     <h1 id="library-title">把醫學，讀成<br><em>能用的判斷。</em></h1>
-    <p class="library-intro">從一個值得追問的問題開始，連接生理機轉、臨床證據與決策。保留完整論述，也讓每一次閱讀更有方向。</p>
+    <p class="library-intro">我原本沿著不同的臨床問題，分別寫下小麻閱讀與醫學筆記。現在想把散落在各篇之間的生理前提、證據與決策重新接起來：保留當時的完整原稿，也讓新教材補足過去未能充分展開的理解。</p>
     <div class="library-search-wrap">
       <label for="search">找一個想弄懂的問題</label>
       <div class="library-search-field"><span aria-hidden="true">⌕</span><input id="search" type="search" class="searchbox" placeholder="搜尋疾病、概念或臨床問題…" autocomplete="off" aria-describedby="library-search-help"><kbd>/</kbd></div>
@@ -64,7 +64,7 @@ def render_home(pages):
   <section class="library-atlas" aria-labelledby="atlas-heading">
     <div class="library-atlas-copy"><p class="library-overline">CONNECT THE REASONING</p>
       <h2 id="atlas-heading">看見文章之間，<br>真正相連的問題。</h2>
-      <p>從 HCM 的 filling 與 LVEDP，到 HF、利尿劑與灌流；從 Tamponade 到氧合、換氣與器官供氧。不同文章可以共享前提，卻不能以相似標題取代因果推導。</p>
+      <p>我不希望把文章依專科排成清單，就當作已經建立知識體系。從 HCM 的 filling、LVEDP，到 HF、利尿劑與灌流，我想追問的是：哪些前提原本已經寫清楚，哪些連結仍須查證與補足？跨篇候選推論由 Clinical OS 協助整理，尚未審定的部分不冒充原作。</p>
       <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識脈絡 <span aria-hidden="true">↗</span></a>
     </div>
     <div class="library-atlas-steps" aria-label="知識建構路徑">
@@ -90,7 +90,7 @@ def render_home(pages):
     <div class="library-section-heading"><div><p class="library-overline">EXPLORE THE COLLECTIONS</p><h2 id="paths-heading">沿著一條脈絡讀</h2></div></div>
     <div class="library-path-grid">
       <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL OS</span><h3>知識脈絡</h3><p>先辨認跨篇的共同問題、真正的前提缺口與整合進度，再選擇要讀的完整正文。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
-      <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">02 / ESSAYS</span><h3>小麻閱讀</h3><p>從精簡的教材與問題，重建定義、機轉與臨床意義。保留作者完整原文。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">02 / ESSAYS</span><h3>小麻閱讀</h3><p>從我過去寫下的問題與筆記重新閱讀定義、機轉與臨床意義；原稿原樣保留，AI 新教材另行標示。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-internal-medicine.html"><span class="library-path-number">03 / INTERNAL MEDICINE</span><h3>小麻內科國考</h3><p>以臨床問題串連內科主題、必要先備知識與重要判斷，不把學習縮成考點清單。</p><span>進入課程 <span aria-hidden="true">↗</span></span></a>
     </div>
   </section>
