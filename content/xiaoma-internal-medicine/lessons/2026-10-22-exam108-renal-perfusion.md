@@ -209,20 +209,4 @@ Muriithi 等人的原始研究分析同時有尿中嗜酸性球檢驗與腎切�
 3. 透析病人為何不能見到 PTH 高於一般人正常值就壓低？因為透析下判讀區間不同，而且治療必須合看鈣、磷、連續趨勢與骨轉換風險。
 4. 沒有 eosinophilia 可否排除 NSAID AIN？不能。若有 eosinophilia 可否直接證明膽固醇栓塞？也不能；要與暴露、皮膚及腎臟表現連讀。
 
-## 來源與本次實讀邊界
-
-### 原題與小麻
-
-- [考選部 108 年第一次醫師（二）醫學（三）原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=108030&q=1&s=11&t=Q)、[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=108030&q=1&s=11&t=S)：本批四題題幹與答案均回對；第 23 題鈣與 PTH 由原題補回。
-- *Pocket Medicine, 9th edition*，Pocket Medicine 原書 PDF：第 148、176、178、179、334、336 頁已看原頁；第 177、182、335 頁另讀相關文字。來源定位依本檔 1 起算 PDF 頁次；未重製原書掃描圖。
-
-### 外部補充與用途
-
-1. Nadim MK et al. [ADQI／ICA 肝硬化 AKI 聯合共識，J Hepatol 2024;81:163–183](https://doi.org/10.1016/j.jhep.2024.03.031)。核對公開可檢索之診斷共識條文及相關段落：容量評估、24 小時復甦反應、取消一律 48 小時 albumin 前置要求、HRS 可與其他腎病並存。全文頁面存取受限；不宣稱完成全文與全部補充資料審讀。這是共識更新，不代表所有新門檻都經隨機試驗直接驗證。
-2. [FDA TERLIVAZ 仿單，2026 年 6 月版](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022231s004lbl.pdf)。已讀公開仿單警語、禁忌與容量／呼吸監測相關段落，用於限定第 17 題治療的適用條件；屬美國仿單，未冒稱台灣院內處方規範。
-3. [KDIGO 2017 CKD-MBD Guideline Update](https://kdigo.org/wp-content/uploads/2017/02/2017-KDIGO-CKD-MBD-GL-Update.pdf)。已核對公開全文的建議表及相關說明，重點為 3.2.3、4.1.1–4.1.6、4.2.3–4.2.4：連續整合 Ca/P/PTH、避免高鈣、限制含鈣結合劑、透析液鈣範圍及透析 PTH 的概略區間。建議表包含舊版對照欄，未將每項舊版文字都冒稱新增 2017 建議。
-4. Nussbaum EZ, Perazella MA. [Diagnosing acute interstitial nephritis: considerations for clinicians. CKJ 2019;12:808–813](https://academic.oup.com/ckj/article/12/6/808/5531252)。已讀公開全文的病因、臨床表現、表 2–3、血與尿 eosinophils 及檢驗限制段落；為專家綜述，沒有冒稱原始診斷試驗。
-5. Mérida E, Praga M. [NSAIDs and Nephrotic Syndrome. CJASN 2019;14:1280–1282](https://doi.org/10.2215/CJN.08090719)。本次核對公開可檢索的 NSAID AIN 腎外過敏表現段落；不宣稱本次完整讀到全文。它支持 NSAID AIN 可缺乏 eosinophilia，不能支持四個選項固定排序。
-6. Muriithi AK et al. [Utility of urine eosinophils in the diagnosis of acute interstitial nephritis. CJASN 2013](https://pubmed.ncbi.nlm.nih.gov/24052222/)。核對原始研究公開摘要的樣本數與檢驗效度，另與來源 4 的全文研究討論交叉核對；沒有宣稱已讀原研究全文。研究的是尿中嗜酸性球，不是第 26 題所問的血中發生率。
-
-累計已完成 **8／44 筆**平台紀錄的詳解：27、2、25、28、17、22、23、26。第 33 題官方一律給分的身分維持不變。下一批依原安排處理第 **8、11、12、76** 題，主軸為分流、動態心雜音及藥物的血行動力作用。
+[本篇的官方原卷、原書圖表與外部證據查核 →](../exam108-sources.md)
