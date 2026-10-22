@@ -278,5 +278,41 @@
     "navigation": false,
     "section": "參考資料",
     "references": "xiaoma-reading-as-ar-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md",
+    "output": "xiaoma-exam108-renal-foundations.html",
+    "title": "AKI、缺水與尿液指標：數值能回答什麼？",
+    "subtitle": "108 年醫學（三）Q27／Q2／Q25／Q28，從定義、鈉水分布到腎絲球病理",
+    "collection": "xiaoma-internal-medicine",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check",
+    "layout": "reader",
+    "section": "腎臟與體液",
+    "references": "xiaoma-exam108-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md",
+    "output": "xiaoma-exam108-renal-perfusion.html",
+    "title": "腹水很多，為何腎臟仍會缺灌流？",
+    "subtitle": "108 年醫學（三）Q17／Q22／Q23／Q26，連起 HRS、CKD、礦物代謝與鑑別",
+    "collection": "xiaoma-internal-medicine",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check",
+    "layout": "reader",
+    "section": "腎臟與肝臟",
+    "references": "xiaoma-exam108-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exam108-sources.md",
+    "output": "xiaoma-exam108-sources.html",
+    "title": "108 年醫師二階真題詳解：來源與查核",
+    "subtitle": "官方原卷、更正公告、原書及指南對讀位置",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "navigation": false,
+    "section": "參考資料"
   }
 ]
