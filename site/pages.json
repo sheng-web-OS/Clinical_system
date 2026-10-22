@@ -283,19 +283,6 @@
     "references": "xiaoma-exam108-sources.html"
   },
   {
-    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-cardiac-hemodynamics.md",
-    "output": "xiaoma-exam108-cardiac-hemodynamics.html",
-    "title": "心音與雜音如何指出血流真正改變的位置？",
-    "subtitle": "108 年醫學（三）Q8／Q11／Q12／Q76，ASD、HOCM、分流與急性冠痙攣",
-    "collection": "xiaoma-internal-medicine",
-    "date": "2026-10-22",
-    "navigation": false,
-    "review": "author_source_check",
-    "layout": "reader",
-    "section": "心臟與循環",
-    "references": "xiaoma-exam108-sources.html"
-  },
-  {
     "source": "content/xiaoma-internal-medicine/exam108-sources.md",
     "output": "xiaoma-exam108-sources.html",
     "title": "108 年醫師二階真題詳解：來源與查核",
