@@ -1,5 +1,9 @@
 # 為什麼同樣是肺水腫，下一步不一定是再加利尿劑？
 
+72 歲男性因 COPD 急性惡化合併肺炎就醫：呼吸困難、頸靜脈怒張、雙腿水腫，pro-BNP 2,515 pg/mL。這些訊號容易讓我們先想到「液體太多，所以加利尿」。然而超音波顯示 LVEDD 37 mm、EF 約 80%、systolic anterior motion（SAM），以及 peak LVOT gradient 98 mmHg。**右側靜脈鬱血的線索，居然與極小的左心室和動態流出道阻塞同時存在。**〔[原始病例：Kim et al., 2015](https://jtd.amegroups.org/article/view/5226/html)〕
+
+這個病例不是已證實典型「左心衰竭肺水腫」的案例；它提醒我們，**呼吸困難、周邊水腫、BNP 升高及左心室容量不能互相代換**。究竟應去鬱血、改善有效充盈、解除動態阻塞，還是先處理肺部感染與換氣問題，取決於哪一種機轉被證據支持。以下沿著同一個病例，把 HF 四象限、LVEDP、HCM 與利尿劑接成一段可反覆驗證的臨床推理。
+
 ## 肺水腫已經出現，為什麼還不能直接推論「水太多」？
 
 我們很容易把 heart failure 連成一條自然史：心肌收縮變差，EF 下降，血液無法打出去，接著水分累積，最後肺水腫。這個模型可以解釋一些病人，卻把四個不同的問題混成同一個結論：心臟是什麼疾病、實際輸出夠不夠、上游壓力高不高，以及當前體液總量是否增加。
@@ -10,6 +14,29 @@
 
 因此，在討論利尿是否不夠以前，我們還需要先回答更前面的問題：這個壓力究竟是怎樣產生的？
 
+### 從觀察到決策：必須逐層建立、不能直接跳躍
+
+```mermaid
+flowchart TD
+A["症狀、JVP、水腫、BNP、氧合"]
+B["辨認左肺循環與右側靜脈鬱血"]
+C["同步評估灌流與即時器官風險"]
+D["左心：壓力、容量、順應性、LVOTO"]
+E["右心：肺血管阻力、回流與心室交互作用"]
+F["選擇有機轉根據的治療目標"]
+G["再驗證：症狀、心超、尿鈉、尿量、灌流"]
+A --> B
+A --> C
+B --> D
+B --> E
+C --> F
+D --> F
+E --> F
+F --> G
+```
+
+*圖：本篇依據生理與指南自行整理的推理架構，**並非 Pocket Medicine 原圖**。同一個病人可以同時存在左右心不同的充盈狀態；每一步都需要相應證據。*
+
 ## 重新閱讀 Pocket Medicine 的兩張不同的圖：分類與機轉不是同一件事
 
 這裡需要直接回到《Pocket Medicine》第九版原始 PDF，而不只採用文章中流傳的示意圖。**PDF 物理頁 37 的四象限圖**，橫向問有無 congestion，縱向問有無 low perfusion，給出 warm/dry、warm/wet、cold/dry、cold/wet 四種當下的床邊 profile；**物理頁 35 的 Figure 1-2** 卻回答另一個問題：同樣是 left-sided HF，為何在 LVEDP 升高時，LVEDV 可以升高，也可能並未升高？後者從 systolic dysfunction、high stroke-volume states、diastolic dysfunction 與 pericardial constraint 拆開機轉。不能拿後者冒充四象限原圖，更不能把前者當成四條不同病因的診斷演算法。
@@ -18,7 +45,7 @@
 
 原書物理頁 34 的 tailored therapy 段落另把 LVEDV、LVEDP、LAP 與 PCWP 作為近似的 preload 指標連在一起。這句高度壓縮的床邊捷徑也要拆解：**LVEDV 是容積，LVEDP／LAP／PCWP 是壓力，量綱不同，不可能直接視為彼此數值相等。** 即使不同壓力之間在特定條件下可能相關，也必須檢查舒張期壓力傳遞、二尖瓣／左心房或肺靜脈病變、心室順應性及外在限制。Figure 1-2 正好從機轉上反證「壓力一高就是容積過多」的過度推論。
 
-**來源核對範圍：**已直接目視使用者提供的 *Pocket Medicine*, 9th ed., 463 頁 PDF 的物理頁 34–37；p.35 為 Figure 1-2，p.37 為四象限圖。本整合稿只標示原書圖表的正確位置並分析其推論界線；未取得可供網站發布的原圖檔，也尚未完成原始作者貼文附件比對、當代指南或外部同行審查。原圖不可因本段文字而視為已正式取得重製授權。
+**圖表出處：**《Pocket Medicine》第九版 PDF 物理頁 35（left-sided HF 病因流程）及 37（congestion × perfusion 四象限）。原書原圖未在此重製；上方流程與表格均為本篇新整理。原圖用途不同，不能互相替代。
 
 ### 同一個臨床發現，究竟在回答哪一層問題？
 
@@ -40,6 +67,19 @@
 
 這個區分也回應了 [HCM 原稿〈Nonobstructive 只回答了一個問題〉](../xiaoma-reading/originals/2026-07-14-hcm.md)。沒有 LVOTO，不能證明 filling 沒問題；EF preserved，不能證明 LVEDP 正常，也不能證明 stroke volume 充足。HCM 的 morphology、outflow、filling、contraction 與 electrical risk 本來就不是同一條強度軸。當不同病人出現相似肺水腫時，不能只因 EF、LVOTO 或心臟大小不同，就預先決定誰有真正的 congestion。
 
+### 回到病例：同樣的水腫，為何負荷條件一改，病情就逆轉？
+
+Kim 等人在 2015 年的病例中，除了 LVEDD 37 mm、EF 約 80% 與 LVOTO gradient 98 mmHg，心超還看見 SAM 與典型 late-peaking Doppler。**這證明的是特定時間點的動態流出道阻塞，不證明 HCM，更沒有測到 LVEDP、PCWP 或 cardiac output。**其可能的機轉包括 COPD 惡化時肺血管阻力、肺過度充氣及心室交互作用改變，使左室充盈進一步受限；這是作者提出的生理解釋，而不是每一步都經侵入性壓力測量證實。〔[原始 Figure 2：SAM、color Doppler 與 late-peaking CW Doppler](https://pmc.ncbi.nlm.nih.gov/articles/PMC4598527/)〕
+
+| 病程節點 | 真正觀察到的事 | 推論可以走到哪裡 |
+|---|---|---|
+| 到院 | COPD／肺炎、呼吸困難、頸靜脈怒張、雙腿水腫，pro-BNP 2,515 | 有肺病與靜脈鬱血線索；**尚不能把左室判為 volume overload** |
+| 初次心超 | 小型 LV、EF 高、SAM、LVOT peak gradient 98 mmHg | 有特定的、可能隨負荷改變的動態阻塞；**不等於 HCM 確診或已知 LVEDP** |
+| 針對肺病與負荷調整後 | 感染治療、beta-blocker 與審慎補充容量；SAM／LVOTO 消失、pro-BNP 降低 | 連續影像與病程支持 preload-sensitive obstruction 的解釋；**同時治療多項因素，不能把改善完全歸因單一操作** |
+| 後續因腿腫使用 torsemide 10 mg/day | 兩日後呼吸困難再惡化，SAM／LVOTO 復現；停用利尿並審慎調整液體後改善 | 提供再次挑戰的時間序證據；**不能把單一病例變成所有 HF 禁用利尿的通則** |
+
+這個例子恰好說明：**右心側壓力／靜脈鬱血，並不能替左室的前負荷與流出道幾何狀態作證。**如果把四象限簡單當成用藥表，會錯過這個足以翻轉治療方向的事實。病例本身也不能倒推患者曾有何種確切左心充盈壓，沒有測量就應保留未知。
+
 當這些差異被保留，下一個問題才變得精確：如果當前主要限制確實是需要解除的 congestion，利尿劑究竟應該改變什麼？
 
 ## 同樣是「仍然 wet」，可能是三個截然不同的治療狀態
@@ -53,6 +93,27 @@
 第三種是藥物已經有效、負鈉平衡也逐漸形成，但病人仍有殘餘 congestion。這不等於前面兩種 failure。早期 urine sodium／urine output 回答單次劑量是否開始作用，daily weight 與較長時間的淨平衡較接近累積效果，而 JVP、肺循環／全身靜脈鬱血徵象和症狀才讓人重新判斷目標是否達成。把所有結果縮成「尿多不多」，就無法區分該維持、調整還是終止某種處置。
 
 不只是「有沒有排尿」，連 creatinine 也不能脫離這條病程解讀。去充血過程中的變化，與同時出現 hypotension、progressive oliguria 或 systemic hypoperfusion 的變化，承接不同的上游條件。數值本身不能回答下一步是否繼續去充血；它必須回到當前 congestion、perfusion 與治療反應的組合。
+
+## 生理推理如何真正約束處置？
+
+**先問「這個病人是否適用去鬱血路徑」，再問「利尿劑作用是否足夠」。** 若有持續肺鬱血、臨床證據支持 volume overload，且沒有尚未處理的低灌流或動態阻塞，靜脈 loop diuretic 是住院急性失代償 HF 的核心去鬱血治療；但若顯示的是小左室合併 SAM／LVOTO、可能的右心側負荷與左心 underfilling，機轉已經不同，不能沿用「看到水腫就加量」的慣性。兩條路徑不能用同一個 BNP 或單次 EF 取代血流動力學評估。〔[2022 AHA/ACC/HFSA HF guideline：Section 9](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012)；[2026 ESC HF guideline：Section 7.5](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)〕
+
+| 目前的主導問題 | 先核對的證據 | 需要驗證的治療方向 |
+|---|---|---|
+| 明確左心／肺鬱血，灌流尚可 | JVP、lung US／CXR、血壓與末梢灌流、腎功能；必要時心超 | 去鬱血是否減輕呼吸困難與充盈壓負擔；同時監測鈉水排泄及安全性 |
+| 肺鬱血伴低灌流／shock 風險 | 四肢灌流、意識、尿量、乳酸趨勢、心超與病因；必要時進階血流動力學 | 不能只追求負平衡，須同步處理造成低輸出的機轉及器官支持需求 |
+| 周邊水腫，但 LV 小且有 SAM／LVOTO | LVOT Doppler、SAM、左室大小、右心負荷與負荷條件變化 | 重估減少前負荷／後負荷的風險，針對阻塞與合併肺病作病人特異處置 |
+| 「利尿效果差」，但尚未確定主要問題是 congestion | 與給藥時間對照的尿鈉、尿量、24 小時淨平衡、體重與鬱血徵象 | 先辨認藥效曝露不足、補償性鈉回收或治療目標錯誤，而非把加量當預設答案 |
+
+這張表不是開立藥物、輸液或升壓劑的自動指令；病人可能同時落入多種問題，緊急呼吸衰竭、惡化灌流與急性冠脈症候群等需要同時處理。**真實決策從不只取決於 profile 的名稱，而取決於介入前的條件與介入後能否被證偽。**
+
+### 有 indication 進行去鬱血時，還要區分三種「效果」
+
+2026 ESC HF 指引 Section 7.5.3 提到：對接受 IV loop diuretic 的急性失代償 HF 病人，可在給藥後約 2 小時觀察 spot urinary sodium（例如 ≥70 mEq/L），或在最初 6 小時評估尿量（例如 ≥100 mL/h），作為**早期利尿反應**的實務指標。這些是特定情境的操作參考，不是 HF 診斷條件，更**不適用於尚未確認是否該去鬱血的 LVOTO 病例**。尿鈉濃度與尿量也不等於當日排出的總鈉量；真正的 natriuresis 還要考慮尿量及時間窗。〔[2026 ESC 原始指引 Figure 15](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)〕
+
+接下來必須再問：整天是否真正形成所需的負鈉平衡？第三問才是肺鬱血、JVP、症狀、體重與器官灌流是否朝目標改善。PUSH-AHF、ENACT-HF 等研究支持尿鈉導引可能增加短期 natriuresis，但截至 2026 ESC 指引，**尚未證明降低死亡或 HF 再住院**。把「2 小時尿鈉達標」直接寫成「病人已去鬱血／預後改善」，是把生物標記的時間尺度誤當成臨床終點。
+
+最後需要對照反例：若另一位病人已有明確肺鬱血、左心充盈壓升高、**沒有** SAM／LVOTO，且仍有去鬱血適應症，本病例並不能否定他接受適當 loop diuretic 的必要性。反之，若治療中呼吸窘迫加劇、四肢變冷、尿量驟降或血壓惡化，就不能只追逐更大尿量。creatinine 小幅上升也不能脫離去鬱血成效與灌流一起判讀；2026 ESC 特別提醒，達成去鬱血時短暫、輕微的肌酸酐上升，不等於治療必然有害。〔[2026 ESC HF guideline](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)〕
 
 ## 什麼時候問題已經不再是利尿強度，而是器官能否繼續承受？
 
@@ -76,4 +137,4 @@ HF 四象限告訴我們：病人此刻是否 congested、是否 hypoperfused。
 
 ---
 
-**原始素材與身分：**[HF 原稿](../xiaoma-reading/originals/2026-07-12-heart-failure.md) · [LVEDP 原稿](../xiaoma-reading/originals/2026-07-12-lvedp.md) · [Diuretics 原稿](../xiaoma-reading/originals/2026-07-20-diuretics.md) · [HCM 原稿](../xiaoma-reading/originals/2026-07-14-hcm.md)。本篇是 AI 新整合草稿，尚未逐條完成 IBCC、原圖與現行 guideline 核對；不應讀作原作者於 2026 年 7 月所寫的另一篇舊作。
+**延伸閱讀與文獻：**[HF 原稿](../xiaoma-reading/originals/2026-07-12-heart-failure.md) · [LVEDP 原稿](../xiaoma-reading/originals/2026-07-12-lvedp.md) · [Diuretics 原稿](../xiaoma-reading/originals/2026-07-20-diuretics.md) · [HCM 原稿](../xiaoma-reading/originals/2026-07-14-hcm.md) · [Kim 2015 原病例與圖](https://jtd.amegroups.org/article/view/5226/html) · [2022 AHA/ACC/HFSA 指引](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012) · [2026 ESC 指引](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)。本文是獨立的 AI 跨篇整合教材，保留作者原稿；引用的新指引僅核對本文相關章節，並不代表全篇已通過獨立臨床審查。
