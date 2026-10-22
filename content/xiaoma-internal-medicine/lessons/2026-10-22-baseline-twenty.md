@@ -196,7 +196,7 @@ A 的急性 MI 可造成舒張或收縮異常，甚至在 EF 尚保留時升高�
 
 **C 支持懷疑，仍不是完整診斷。**臨床還需有心衰竭症狀、徵象及支持充盈壓異常的客觀資料。若高血壓長者只有正常 EF 而沒有 HF 證據，不能自動貼 HFpEF；若出現急性肺水腫，也需當下處理氧合、壓力與誘因，不能等 EF 下降才承認危險。
 
-[小麻 HF 定位](../baseline-sources.md#cardiac)；[HCM 原稿：排出比例與 filling 的分界](../../xiaoma-reading/originals/2026-07-14-hcm.md)
+[小麻 HF 定位](../baseline-sources.md#cardiac)；[HCM 原稿：排出比例與 filling 的分界](../../xiaoma-reading/originals/2026-07-14-hcm.md)；[DCM 新版：EF、forward flow 與病因解釋力](../../xiaoma-reading/integrated/2026-10-21-dcm.md)。若還想檢驗「相同 preload 變化，為何不同心雜音反應相反」，可接續[108（一）第 11 題及其餘三題的完整解析](2026-10-22-108a-cardiac-reasoning.md)
 
 </details>
 
