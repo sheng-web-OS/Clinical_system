@@ -98,6 +98,17 @@ Kim 等人在 2015 年的病例中，除了 LVEDD 37 mm、EF 約 80% 與 LVOTO g
 
 ## 生理推理如何真正約束處置？
 
+### 相同症狀，兩條不能混同的臨床路徑
+
+| 必須回答的問題 | A：Kim 2015 真實 LVOTO 病例 | B：假設已確認的急性失代償 HF |
+|---|---|---|
+| 喘的主要證據 | COPD／肺炎與動態 LVOTO，不能把 CT 當成已確認的心因性肺水腫 | 假設 lung ultrasound／心超等支持 cardiogenic pulmonary congestion |
+| 鬱血與充盈 | JVD、腿腫不能直接決定 LVEDV、LVEDP 或 PCWP | 左心高充盈壓成立，仍要區分總鈉水累積與血液重新分布 |
+| 哪個機轉改變處置？ | preload-sensitive SAM／LVOTO、肺病及負荷條件 | 去鬱血適應症、灌流狀態、缺血或瓣膜等誘發因素 |
+| 如何驗證治療？ | 重新檢查 SAM／LVOT Doppler、症狀與器官灌流 | 肺鬱血、尿鈉與尿量、總鈉水平衡及器官灌流的變化 |
+
+**B 是明確標示的假設情境，不是另一篇 case report，也沒有替它虛構血壓、LVEDP 或結局。**A 要防止把所有水腫都當成肺鬱血；B 才是下列尿鈉導引去鬱血建議真正適用的情境。前者的個別治療反應不能推翻後者的適應症。
+
 **先問「這個病人是否適用去鬱血路徑」，再問「利尿劑作用是否足夠」。** 若有持續肺鬱血、臨床證據支持 volume overload，且沒有尚未處理的低灌流或動態阻塞，靜脈 loop diuretic 是住院急性失代償 HF 的核心去鬱血治療；但若顯示的是小左室合併 SAM／LVOTO、可能的右心側負荷與左心 underfilling，機轉已經不同，不能沿用「看到水腫就加量」的慣性。兩條路徑不能用同一個 BNP 或單次 EF 取代血流動力學評估。〔[2022 AHA/ACC/HFSA HF guideline：Section 9](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012)；[2026 ESC HF guideline：Section 7.5](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)〕
 
 | 目前的主導問題 | 先核對的證據 | 需要驗證的治療方向 |
@@ -113,7 +124,7 @@ Kim 等人在 2015 年的病例中，除了 LVEDD 37 mm、EF 約 80% 與 LVOTO g
 
 2026 ESC HF 指引 Section 7.5.3 提到：對接受 IV loop diuretic 的急性失代償 HF 病人，可在給藥後約 2 小時觀察 spot urinary sodium（例如 ≥70 mEq/L），或在最初 6 小時評估尿量（例如 ≥100 mL/h），作為**早期利尿反應**的實務指標。這些是特定情境的操作參考，不是 HF 診斷條件，更**不適用於尚未確認是否該去鬱血的 LVOTO 病例**。尿鈉濃度與尿量也不等於當日排出的總鈉量；真正的 natriuresis 還要考慮尿量及時間窗。〔[2026 ESC 原始指引 Figure 15](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)〕
 
-接下來必須再問：整天是否真正形成所需的負鈉平衡？第三問才是肺鬱血、JVP、症狀、體重與器官灌流是否朝目標改善。PUSH-AHF、ENACT-HF 等研究支持尿鈉導引可能增加短期 natriuresis，但截至 2026 ESC 指引，**尚未證明降低死亡或 HF 再住院**。把「2 小時尿鈉達標」直接寫成「病人已去鬱血／預後改善」，是把生物標記的時間尺度誤當成臨床終點。
+接下來必須再問：整天是否真正形成所需的負鈉平衡？第三問才是肺鬱血、JVP、症狀、體重與器官灌流是否朝目標改善。2026 ESC 將 urinary Na⁺-guided 策略列為 **Class IIb、Level B**，可考慮用來改善短期 natriuresis 與 diuresis。PUSH-AHF、ENACT-HF 等研究觀察到排鈉反應改善，但截至該指引，**尚未證明能降低死亡或 HF 再住院**。把「2 小時尿鈉達標」直接寫成「病人已去鬱血／預後改善」，是把生物標記的時間尺度誤當成臨床終點。
 
 最後需要對照反例：若另一位病人已有明確肺鬱血、左心充盈壓升高、**沒有** SAM／LVOTO，且仍有去鬱血適應症，本病例並不能否定他接受適當 loop diuretic 的必要性。反之，若治療中呼吸窘迫加劇、四肢變冷、尿量驟降或血壓惡化，就不能只追逐更大尿量。creatinine 小幅上升也不能脫離去鬱血成效與灌流一起判讀；2026 ESC 特別提醒，達成去鬱血時短暫、輕微的肌酸酐上升，不等於治療必然有害。〔[2026 ESC HF guideline](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)〕
 
