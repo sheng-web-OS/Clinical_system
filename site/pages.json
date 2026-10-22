@@ -233,5 +233,28 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-respiratory-practice.md",
+    "output": "xiaoma-respiratory-practice.html",
+    "title": "讀完低血氧與 NIV，接著怎麼練？",
+    "subtitle": "五道對題真題、三道遷移練習，沿原文回讀與延遲回想。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症練習",
+    "references": "xiaoma-respiratory-practice-sources.html",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/respiratory-practice-sources.md",
+    "output": "xiaoma-respiratory-practice-sources.html",
+    "title": "低血氧與 NIV 隨文練習：來源與查核",
+    "subtitle": "官方原文、更正答案、原書圖表與自編題計算。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
