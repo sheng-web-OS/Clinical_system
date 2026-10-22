@@ -17,6 +17,7 @@ This is the PRIVATE source-of-truth repository for the Clinical OS / Xiaoma medi
 - For medical content, preserve the causal chain and evidence-to-decision boundaries. Embed ICU/decompensation implications naturally where clinically needed. EPQC and P0/P1 clinical safety failures outrank stylistic scores. Model self-scoring is not independent expert review.
 - Prioritize content and primary source verification over more website components. Interaction must prove better learning than high-quality static presentation, not just become clickable.
 - On errors, independently classify cause, attempt a targeted fix and rerun the smallest relevant regression. Escalate genuine source ambiguity or unavoidable medical uncertainty; avoid endless retries or hidden unsuccessful tool calls.
+- Reconstruct the current deliverable before work and verify that same deliverable at handoff. When an important user decision changes, check affected content, code, tests and publication conditions for conflicting old requirements; use the existing integration contract, not another registry.
 - A user's goal is to keep maintenance and debugging time near zero, then optimize model/computational cost without reducing quality.
 
 ## Git and deployment boundaries

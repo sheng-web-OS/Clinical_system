@@ -1,29 +1,23 @@
 # 小麻閱讀
 
-從小麻的一段定義、一張圖，追問到機轉與臨床判斷。歷史原稿保留原來的推理順序與全文；AI 新教材另行標示，不能冒用原稿身分。
+從 Pocket Medicine 的一句定義、一張表或一個臨床分流，追問它背後的生理前提。每篇文章從一個問題開始，保留完整論述，讓觀察、機轉與決策之間的關係可以被重新推導。
 
 <!-- XIAOMA_READING_ORIGINALS -->
 
-從歷史原稿再往下一層閱讀：[**〈DCM：心室擴張之後，病因診斷才剛開始〉**](integrated/2026-10-21-dcm.md)，以 PV loop、secondary MR 與真實 CMR 圖像重新檢查病因、輸出與恢復後風險。這是獨立的整合教材，不取代 2026 年 7 月原稿。
+[〈DCM：心室擴張之後，病因診斷才剛開始〉](integrated/2026-10-21-dcm.md)從既有原稿接續討論 PV loop、secondary MR、病因與恢復後風險；這是另行形成的整合教材。
 
-## 從原稿出發，沿著臨床問題跨篇閱讀
+## 沿著問題接續閱讀
 
-這裡不只是按照日期排列文章。[〈Heart Failure：從四象限到診斷與急性失衡〉](originals/2026-07-12-heart-failure.md)先把 **congestion** 與 **perfusion** 分開；[〈從四象限走進 LVEDP〉](originals/2026-07-12-lvedp.md)再把肺鬱血後面的 **pressure** 與 **volume** 分開；[HCM〈Nonobstructive 只回答了一個問題〉](originals/2026-07-14-hcm.md)提醒 **EF、outflow、filling、contraction** 不能互相取代；[〈利尿效果不夠，為什麼下一步不一定是加量？〉](originals/2026-07-20-diuretics.md)則從藥物反應檢查：究竟是曝露、全天負鈉平衡，還是解除鬱血的臨床終點尚未達成？
+如果只想挑一條路線開始，可以先讀 [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)，區分 **congestion** 與 **perfusion**；再讀 [LVEDP](originals/2026-07-12-lvedp.md)，區分 **pressure** 與 **volume**；接著讀 [利尿劑](originals/2026-07-20-diuretics.md)，區分排鈉反應與最終的去鬱血效果。
 
-這幾篇有不同中心問題，連起來卻會改變對同一個病人的判斷。它們不是同一條必經病程，更不能把 filling、EF、利尿效果變成嚴重度階梯。[〈心肌病變（DCM）〉](originals/2026-07-10-dcm.md)則從疾病的 morphology、contractility 和病因解釋邊界，連回 HF 作為 clinical syndrome 的不同層次。
+[HCM](originals/2026-07-14-hcm.md)與 [DCM](originals/2026-07-10-dcm.md)提供另一個必要視角：形態、流出道阻塞、充盈與收縮功能，不是同一條自然史。把它們混在一起，會直接改變對心衰竭病人的解釋。
 
-重症視角同樣來自作者自己的文章：[〈Status epilepticus〉](originals/2026-07-28-status-epilepticus.md)將「還在抽」與已充分執行的治療歷史連接到 ICU／cEEG；[〈Acute pancreatitis〉](originals/2026-07-20-pancreatitis.md)則讓 necrosis 與 organ failure 的不同分類條件，直接決定不能等待的器官支持。
+若從急重症開始，[Status epilepticus](originals/2026-07-28-status-epilepticus.md)把持續發作與治療歷史接到照護升級；[Acute pancreatitis](originals/2026-07-20-pancreatitis.md)則說明，局部壞死與器官衰竭必須分別評估。
 
-[進入跨篇知識脈絡與各專科問題群 →](../clinical-os/index.md)
+[前往臨床問題地圖 →](../clinical-os/index.md)
 
-## 原創典藏與整合教材是不同作品
+## 閱讀說明
 
-本次 2026-10-21 對話另提供完整原文 21 篇，包含急重症、心血管、肝膽、腸胃與血管炎。其中六篇已轉存為 HF、LVEDP、Diuretics、DCM、Pancreatitis、Status epilepticus 原稿，另有既存的 HCM 原稿；**目前此區實際登錄七篇原稿**。其他十五篇對話原文是已取得的素材，但尚未逐篇寫入原稿檔案，不列入本頁已典藏篇數。
+本區保存文章原有的論述順序；跨篇整理與新教材分開呈現，不以後續整合稿替換歷史文字。臨床判斷仍應核對原文所附文獻、現行指引及病人當下情境。
 
-新教材可以從這些文章逆向找出作者已建立的因果前提與仍欠缺的知識，並整合必要重症醫學及來源查核；原文不因此被默默修訂或覆蓋。當內容具有急重症後果時，重症轉折應自然嵌入連續因果敘事。
-
-[查看收錄與來源核對 →](../../audit/xiaoma-reading-recovery.md)
-
-## 與現在的閱讀接起來
-
-舊文保存當時已經建立的理解；[小麻內科國考](../xiaoma-internal-medicine/index.md)則依目前進度持續新增教材。兩者可在同一個網站閱讀，也能一起全文搜尋。
+[以臨床問題探索內科教材 →](../xiaoma-internal-medicine/index.md)
