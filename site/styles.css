@@ -86,3 +86,27 @@
 .article .figure-source figcaption{font-size:.79em;line-height:1.7;color:var(--muted);padding:11px 3px 0}
 .article .figure-source figcaption strong{color:var(--ink);font-weight:720}
 @media(max-width:650px){.article .figure-source{margin:1.6rem -5px}.article .figure-source figcaption{font-size:.83em;padding:12px 7px 0}}
+
+
+/* Original, source-grounded diuresis diagrams: readable at desktop and phone widths. */
+.article .diuretic-figure{margin:2.3rem 0;border:1px solid var(--line);background:var(--surface);border-radius:14px;overflow:hidden;box-shadow:0 7px 24px rgba(14,54,48,.04)}
+.article .diuretic-figure-head{display:flex;flex-direction:column;gap:8px;padding:22px 24px 18px;border-bottom:1px solid var(--line)}
+.article .diuretic-figure-head span{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.09em;font-weight:700;color:var(--accent)}
+.article .diuretic-figure-head strong{font-size:1.04em;line-height:1.5;color:var(--ink);font-weight:700}
+.article .diuretic-svg-scroll{overflow-x:auto;overflow-y:hidden;background:#f8fbf9;scrollbar-width:thin;overscroll-behavior-inline:contain}
+.article .diuretic-svg-scroll svg{display:block;width:100%;min-width:710px;height:auto}
+.article .diuretic-figure figcaption{padding:15px 24px 22px;color:var(--muted);font-size:.8em;line-height:1.9;border-top:1px solid var(--line)}
+.article .diuretic-figure figcaption strong{color:var(--ink)}
+.article .diuretic-decision-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line)}
+.article .diuretic-decision-card{background:var(--surface);padding:22px 23px 18px;min-width:0}
+.article .diuretic-decision-card span{font-family:ui-monospace,monospace;color:var(--brand);letter-spacing:.04em;font-size:11px;font-weight:700}
+.article .diuretic-decision-card strong{display:block;margin-top:9px;font-size:.94em;line-height:1.65;color:var(--ink)}
+.article .diuretic-decision-card p{margin:8px 0 0;font-size:.77em;color:var(--muted);line-height:1.85}
+@media(max-width:650px){
+ .article .diuretic-figure{margin:1.6rem -5px;border-radius:8px}
+ .article .diuretic-figure-head{padding:16px 17px 14px}
+ .article .diuretic-figure figcaption{padding:14px 17px 17px;font-size:.82em}
+ .article .diuretic-svg-scroll svg{width:710px;min-width:710px}
+ .article .diuretic-decision-grid{grid-template-columns:1fr}
+ .article .diuretic-decision-card{padding:18px 17px}
+}
