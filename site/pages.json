@@ -187,5 +187,28 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "心肌病變"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md",
+    "output": "xiaoma-20261022-hypercapnic-failure.html",
+    "title": "PaCO₂ 很高，為什麼有些人該用 NIV，有些人必須插管？",
+    "subtitle": "從有效換氣、呼吸負荷與氣道安全，判讀支持是否成功。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-hypercapnia-sources.html",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/hypercapnia-sources.md",
+    "output": "xiaoma-hypercapnia-sources.html",
+    "title": "高碳酸血症與 NIV：來源與查核",
+    "subtitle": "原書表格、pH 門檻衝突、2026 更新與官方真題。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
