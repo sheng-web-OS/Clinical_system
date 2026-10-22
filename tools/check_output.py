@@ -2,6 +2,7 @@
 """Validate the public build whitelist and navigation; does not certify clinical medicine."""
 from pathlib import Path
 from html.parser import HTMLParser
+import json
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -66,20 +67,28 @@ if not errors:
         for private_token in ("libfile_", "5824859", "Z639", "plan-20261021.md", "七大核心學習檔案"):
             if private_token in content: errors.append(f"{filename}: private plan data in public build: {private_token}")
     front = (DIST/"index.html").read_text("utf8")
-    clinical = (DIST/"tamponade.html").read_text("utf8")
     if "小麻閱讀" not in front or "library-grid" not in front:
         errors.append("Missing editorial library landing page")
-    if 'href="tamponade.html"' not in front:
-        errors.append("Missing clinical feature from discovery")
-    if "Cardiac Tamponade Mimicking Sepsis" not in clinical:
-        errors.append("Missing case title")
-    for i in range(1,9):
-        if f'id="u{i:02}"' not in clinical: errors.append(f"Missing U{i:02} chapter anchor")
+    try:
+        index = json.loads((DIST / "site-index.json").read_text("utf8"))
+        if not isinstance(index, list) or not all(isinstance(row, dict) and isinstance(row.get("url"), str) for row in index):
+            raise ValueError("Search index must be a list of page records")
+        urls = [row["url"] for row in index]
+        if len(urls) != len(PAGES) or set(urls) != {row["output"] for row in PAGES}:
+            errors.append("Search index does not match the public catalog")
+        inline = (DIST / "site-index.js").read_text("utf8").strip()
+        prefix = "window.CLINICAL_INDEX = "
+        if not inline.startswith(prefix) or not inline.endswith(";"):
+            raise ValueError("Inline search payload has an unexpected format")
+        if json.loads(inline[len(prefix):-1]) != index:
+            errors.append("Inline search payload differs from the JSON search index")
+    except (ValueError, TypeError) as exc:
+        errors.append("Invalid search index: " + str(exc))
     if 'href="https://github.com/sheng-web-OS/Clinical_system"' in front:
         errors.append("Private repository direct link should not appear in public nav")
 
 if errors:
     print("\n".join("FAIL: "+e for e in errors))
     sys.exit(1)
-print("PASS: static site whitelist, single H1, unique DOM IDs, local assets, eight source anchors, private repo nav boundary.")
+print("PASS: static site whitelist, single H1, unique DOM IDs, local assets, matching search indexes, private repo nav boundary.")
 print("NOTE: this is structural QA, not full clinical validation or live HTTPS verification.")
