@@ -78,3 +78,11 @@
  .reader-brand{font-size:16px}
  .reader-search>summary{padding:8px 0}
 }
+
+/* Original research figures: full-sized, readable, and credited in the article. */
+.article .figure-source{margin:2.3rem 0;padding:0;border:0;background:transparent}
+.article .figure-source>a{display:block;border:1px solid var(--line);background:#fff;border-radius:10px;overflow:hidden;padding:clamp(8px,2vw,18px)}
+.article .figure-source img{display:block;border:0;border-radius:0;width:100%;max-height:780px;height:auto;object-fit:contain;margin:auto}
+.article .figure-source figcaption{font-size:.79em;line-height:1.7;color:var(--muted);padding:11px 3px 0}
+.article .figure-source figcaption strong{color:var(--ink);font-weight:720}
+@media(max-width:650px){.article .figure-source{margin:1.6rem -5px}.article .figure-source figcaption{font-size:.83em;padding:12px 7px 0}}

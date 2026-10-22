@@ -4,6 +4,8 @@
 
 <!-- XIAOMA_READING_ORIGINALS -->
 
+[〈DCM：心室擴張之後，病因診斷才剛開始〉](integrated/2026-10-21-dcm.md)從既有原稿接續討論 PV loop、secondary MR、病因與恢復後風險；這是另行形成的整合教材。
+
 ## 沿著問題接續閱讀
 
 如果只想挑一條路線開始，可以先讀 [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)，區分 **congestion** 與 **perfusion**；再讀 [LVEDP](originals/2026-07-12-lvedp.md)，區分 **pressure** 與 **volume**；接著讀 [利尿劑](originals/2026-07-20-diuretics.md)，區分排鈉反應與最終的去鬱血效果。

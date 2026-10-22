@@ -7,6 +7,7 @@
 - 公開入口來源：`content/xiaoma-internal-medicine/index.md`。
 - 每日原創教材：`content/xiaoma-internal-medicine/lessons/YYYY-MM-DD-topic.md`。
 - 出版目錄：`site/pages.json`，每份新教材新增一項。編譯後入口教材卡片、導覽與全文搜尋自動引用相同清單，無需逐日修改編譯器或發行檔檢查器。
+- `site/pages.json` 維持唯一公開白名單；不另加平行 release 清單或每篇人工簽字要求。私人實驗、audit 與回收紀錄不進產物；讀者需要的醫學來源及適用限制仍保留。
 - 私人原始計畫：`archive/xiaoma-internal-medicine/plan-20261021.md`，與原交付檔案 bytes 相同；包含個人時程與執行紀錄，不可列入公開目錄。後續個人學習回覆同樣只保留在私人來源或對話。
 
 **涵蓋與來源擴展：** 舊文補充與新教材均遵循 [Pocket Medicine × IBCC 按需證據補強](xiaoma-evidence-expansion.md)。有重要急重症後果的主題，**必須獨立完成重症內容涵蓋檢查**，不論原稿是否已易於理解。IBCC 優先作為對題的 bedside physiology／重症管理來源，不替代現行指引與必要原始證據；教學可理解性另行驗收。歷史原稿另存，不默默改寫。
@@ -39,12 +40,12 @@
 
 `review` 必須反映實際完成的審查，欄位本身不是審查。保存未查清的重大醫學衝突為私人草稿，不把它列入出版目錄。任何日期必須為實際日期，不可使用上例佔位符。
 
-教材可連回 `../index.md`；編譯器會改寫為公開入口。答案使用原生 `<details>` 與 `<summary>` 放在原題後面；必要的機轉推導維持連續可讀。來源、版本、查核集中在獨立來源頁，一般課表在 `content/xiaoma-internal-medicine/plan.md`；不要混回閱讀主線。新來源頁同樣須加入 `site/pages.json`。卡片依 manifest 生成，公開後才出現在教材目錄。
+教材可連回 `../index.md`；編譯器會改寫為公開入口。答案使用原生 `<details>` 與 `<summary>` 放在原題後面；必要的機轉推導維持連續可讀。讀者需要的來源、版本及適用限制保留在來源頁；公開學習路線使用 `content/xiaoma-internal-medicine/learning-map.md`。個人課表、答題與日期型計畫留私人來源，舊 `plan.md` 不再列入公開清單。新來源頁同樣須加入 `site/pages.json`。
 
 ## 檢查、提交與驗證
 
 1. 比較實際 diff；保全其他人的變動，不覆蓋舊教材、私人計畫或來源。
-2. 執行 `bash tools/build_site.sh`；它保留原 Tamponade 內容檢查，並驗證目錄、本地連結、所有輸出頁的 DOM 錨點、公開檔案白名單及私人資訊邊界。
+2. 執行 `bash tools/build_site.sh`；它驗證公開來源、本地連結、所有輸出頁的 DOM 錨點、公開檔案白名單、搜尋資料一致性及私人資訊邊界。私人 Tamponade 樣本的既有結構檢查改以 `python tools/validate.py --private-pilot` 按需執行，不再要求公開該樣本或其首頁入口。修改失效舊斷言須有具體衝突與回歸證據，不能刪掉醫學或來源門檻來換取通過。
 3. 需要驗證出版目錄邊界時執行 `python -m unittest discover -s tests`。
 4. 在 GitHub 儲存庫建立基於最新 main 的提交，更新分支時使用 expected head 防止競爭覆蓋，不強制推送。缺少本地工程工具時不能以改掉檢查器代替通過；保留草稿並說明阻擋。
 5. main 提交會觸發既有 Cloudflare Pages。讀回與該 commit 相同的 deployment 狀態，然後以 HTTPS 核對入口、該篇文章及搜尋索引。GitHub CI 成功不等於已上線。

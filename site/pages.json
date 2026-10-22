@@ -3,10 +3,10 @@
     "source": "content/clinical-os/index.md",
     "output": "knowledge-atlas.html",
     "title": "臨床問題地圖",
-    "subtitle": "從症狀、生理到決策，沿著共同問題跨篇閱讀",
+    "subtitle": "從症狀、生理到決策，沿共同問題跨篇閱讀",
     "collection": "clinical-os",
     "layout": "reader",
-    "section": "跨篇閱讀",
+    "section": "知識導覽",
     "navigation": false
   },
   {
@@ -65,7 +65,7 @@
     "source": "content/xiaoma-internal-medicine/learning-map.md",
     "output": "xiaoma-plan.html",
     "title": "內科學習地圖",
-    "subtitle": "按臨床問題探索，而不是依個人日期安排",
+    "subtitle": "依臨床問題連接文章、機轉與練習",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "navigation": false,
@@ -148,5 +148,87 @@
     "review": "source_recovery_only",
     "source_sha256": "e0367d5d0b3765c7607ccd3512d98f08ed529070c3d80fc076c7099accfb5452",
     "layout": "reading-original"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-21-dcm.md",
+    "output": "xiaoma-reading-dcm-integrated.html",
+    "title": "DCM：心室擴張之後，病因診斷才剛開始",
+    "subtitle": "從 PV loop、secondary MR 到診斷解釋力及恢復後風險",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-21",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "心肌病變"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md",
+    "output": "xiaoma-20261022-hypercapnic-failure.html",
+    "title": "PaCO₂ 很高，為什麼有些人該用 NIV，有些人必須插管？",
+    "subtitle": "從有效換氣、呼吸負荷與氣道安全，判讀支持是否成功。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-hypercapnia-sources.html",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/hypercapnia-sources.md",
+    "output": "xiaoma-hypercapnia-sources.html",
+    "title": "高碳酸血症與 NIV：來源與查核",
+    "subtitle": "原書表格、pH 門檻衝突、2026 更新與官方真題。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md",
+    "output": "xiaoma-baseline-twenty.html",
+    "title": "先做二十題，看見內科推理的起點",
+    "subtitle": "心臟、腎臟、消化、感染與內分泌的官方真題，先答再讀解析。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "跨系統練習",
+    "references": "xiaoma-baseline-sources.html",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/baseline-sources.md",
+    "output": "xiaoma-baseline-sources.html",
+    "title": "二十題跨系統起點：來源與查核",
+    "subtitle": "官方題號、更正答案、原書位置及處置邊界。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-respiratory-practice.md",
+    "output": "xiaoma-respiratory-practice.html",
+    "title": "讀完低血氧與 NIV，接著怎麼練？",
+    "subtitle": "五道對題真題、三道遷移練習，沿原文回讀與延遲回想。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症練習",
+    "references": "xiaoma-respiratory-practice-sources.html",
+    "date": "2026-10-22",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/respiratory-practice-sources.md",
+    "output": "xiaoma-respiratory-practice-sources.html",
+    "title": "低血氧與 NIV 隨文練習：來源與查核",
+    "subtitle": "官方原文、更正答案、原書圖表與自編題計算。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]

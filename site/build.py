@@ -3,17 +3,16 @@
 from pathlib import Path
 import html
 import json
-import os
 import re
 import shutil
 import sys
 import mistune
-from catalog import load_public_pages
+from catalog import load_pages
 from home import render_home
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
-PAGES = load_public_pages(BASE, preview=os.environ.get('CLINICAL_SITE_PREVIEW') == '1')
+PAGES = load_pages(BASE)
 FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row in PAGES]
 class Renderer(mistune.HTMLRenderer):
     def __init__(self):
@@ -106,7 +105,8 @@ def render_reader(page, body, headings):
     if not is_xiaoma:
         mode += " clinical-page"
     active = page["output"]
-    references = page.get("references", "xiaoma-sources.html" if page.get("collection") == "xiaoma-internal-medicine" and page.get("date") else "")
+    references = page.get("references") or ("xiaoma-sources.html" if page.get("collection") == "xiaoma-internal-medicine" else None)
+    reference_link = '<a href="'+html.escape(references,quote=True)+'">來源與延伸閱讀</a>' if references else ''
     lessons = sorted((row for row in PAGES if row.get("collection") == page.get("collection") and row.get("date")), key=lambda row: (row["date"], row["output"]))
     number = next((str(i).zfill(2) for i, row in enumerate(lessons, 1) if row["output"] == active), "")
     destinations = ([("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-plan.html", "閱讀路線")]
@@ -114,8 +114,7 @@ def render_reader(page, body, headings):
                     [("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-plan.html", "閱讀路線")])
     top_links = ''.join('<a'+(' aria-current="page"' if active == dest else '')+' href="'+html.escape(dest,quote=True)+'">'+label+'</a>' for dest, label in destinations)
     brand = '<a class="reader-brand" href="index.html"><span class="brand-mark" aria-hidden="true">小</span>小麻閱讀<span>MEDICAL READING</span></a>'
-    original_note = ('<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><p>本文保存原有論述；臨床資訊請依文章附註與現行證據核對。</p></aside>') if page.get("kind") == "historical_original" else ''
-    reference_link = '<a href="'+html.escape(references,quote=True)+'">來源與查核</a>' if references else ''
+    original_note = ('<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><p>本文保留 '+html.escape(page.get("date", "").replace("-", "."))+' 原稿。臨床處置請一併核對所附來源與現行指引。</p></aside>') if page.get("kind") == "historical_original" else ''
     return '''<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'''+html.escape(page["title"]+' · '+page["subtitle"],quote=True)+'''">
 <title>'''+title+' · '+site_name+'''</title><link rel="stylesheet" href="styles.css"></head><body class="reader-page '''+mode+'''">
@@ -170,6 +169,9 @@ def main():
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")
     (DIST/"site-index.js").write_text("window.CLINICAL_INDEX = "+searchable+";",encoding="utf-8")
     (DIST/".nojekyll").touch()
+    if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
+        import subprocess
+        subprocess.run([sys.executable, str(BASE / "tools/fetch_dcm_figures.py"), str(DIST)], check=True)
     validate_output_links()
     for path in DIST.iterdir():
         print(path.name,path.stat().st_size)
