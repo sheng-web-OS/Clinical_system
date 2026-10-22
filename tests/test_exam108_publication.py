@@ -22,8 +22,7 @@ class Exam108Publication(unittest.TestCase):
                 self.assertEqual(headings, set(answers))
                 for q, answer in answers.items():
                     self.assertRegex(text, rf"(?m)^\| {q} \| {answer}(?:\b|（| |\|)")
-                self.assertIn("Pocket Medicine", text)
-                self.assertIn("考選部", text)
+                self.assertIn("exam108-sources.md", text)
                 self.assertNotRegex(text, r"你的選項|你選|個人作答|個人選|原個人|使用者.{0,12}原始|48 頁錯題附件")
                 row = next(x for x in pages if x["source"].endswith(filename))
                 self.assertEqual(row["references"], "xiaoma-exam108-sources.html")
@@ -33,6 +32,9 @@ class Exam108Publication(unittest.TestCase):
         pages = json.loads((ROOT / "site/pages.json").read_text("utf8"))
         outputs = {x["output"] for x in pages}
         self.assertIn("xiaoma-exam108-sources.html", outputs)
+        references = (ROOT / "content/xiaoma-internal-medicine/exam108-sources.md").read_text("utf8")
+        self.assertIn("Pocket Medicine", references)
+        self.assertIn("考選部", references)
         self.assertTrue({"xiaoma-exam108-renal-foundations.html",
                          "xiaoma-exam108-renal-perfusion.html"} <= outputs)
         self.assertTrue(all(x["source"].startswith("content/") for x in pages))
