@@ -4,6 +4,8 @@
 
 **這是反例，不是一般急性失代償 HF 的典型治療病例。**它說明周邊水腫、左室充盈、灌流與心因性肺鬱血不可彼此推定。以下會將這個病例的反向診斷推理，與另一條真正有 cardiogenic pulmonary congestion、應評估去鬱血的路徑並排，避免以單一病人的治療反應推導所有 HF 的用藥規則。
 
+<figure class="figure-source"><a href="https://cdn.amegroups.cn/journals/pbpc/files/journals/2/articles/5226/public/5226-PB4-R1.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.amegroups.cn/journals/pbpc/files/journals/2/articles/5226/public/5226-PB4-R1.png" alt="Kim 2015 Figure 1：胸部 CT 顯示雙肺肺炎與肺氣腫，以及雙腿凹陷性水腫照片" loading="lazy"></a><figcaption><strong>Figure 1｜不要由雙腿水腫自行補出肺水腫。</strong>原文 CT 主要呈現肺炎及肺氣腫；周邊水腫在另外的臨床照片中。 原圖未經修改；來源：Kim S et al., <em>J Thorac Dis</em> 2015, <a href="https://jtd.amegroups.org/article/view/5226/html#figure1">原始圖說與完整版本</a>（AME CC BY-NC-ND 4.0，僅供非商業審查預覽）。</figcaption></figure>
+
 ## 第零步：確認呼吸困難是否真的來自肺循環鬱血
 
 原病例的 CT 異常是肺炎，不能因為肺部聽到 rales 便在原始資料之外補上心因性肺水腫。另一些真正有肺鬱血的病人，肺靜脈壓升高也可能主要來自血液重新分布，而非全身大量增加鈉水。**先辨認病因與鬱血部位，再問造成該壓力的機轉。**
@@ -73,6 +75,8 @@ F --> G
 
 Kim 等人在 2015 年的病例中，除了 LVEDD 37 mm、EF 約 80% 與 LVOTO gradient 98 mmHg，心超還看見 SAM 與典型 late-peaking Doppler。**這證明的是特定時間點的動態流出道阻塞，不證明 HCM，更沒有測到 LVEDP、PCWP 或 cardiac output。**其可能的機轉包括 COPD 惡化時肺血管阻力、肺過度充氣及心室交互作用改變，使左室充盈進一步受限；這是作者提出的生理解釋，而不是每一步都經侵入性壓力測量證實。〔[原始 Figure 2：SAM、color Doppler 與 late-peaking CW Doppler](https://pmc.ncbi.nlm.nih.gov/articles/PMC4598527/)〕
 
+<figure class="figure-source"><a href="https://cdn.amegroups.cn/journals/pbpc/files/journals/2/articles/5226/public/5226-PB5-R1.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.amegroups.cn/journals/pbpc/files/journals/2/articles/5226/public/5226-PB5-R1.png" alt="Kim 2015 Figure 2：SAM、流出道加速、CW Doppler 的 late-peaking 98 mmHg 梯度及小型左心室" loading="lazy"></a><figcaption><strong>Figure 2｜改判的真正證據。</strong>SAM、LVOT color aliasing、late-peaking CW Doppler（peak gradient 98 mmHg）和小 LV 共同支持 dynamic LVOTO；單看 EF 或 BNP 不足以得出這個機轉。 原圖未經修改；來源：Kim S et al., <em>J Thorac Dis</em> 2015, <a href="https://jtd.amegroups.org/article/view/5226/html#figure2">原始圖說與完整版本</a>（AME CC BY-NC-ND 4.0，僅供非商業審查預覽）。</figcaption></figure>
+
 | 病程節點 | 真正觀察到的事 | 推論可以走到哪裡 |
 |---|---|---|
 | 到院 | CT 顯示肺炎／肺氣腫，呼吸困難、JVD、腿腫、冰冷濕黏皮膚，pro-BNP 2,515 | 具有肺病與靜脈／灌流異常線索；**未證實 cardiogenic pulmonary edema** |
@@ -81,6 +85,8 @@ Kim 等人在 2015 年的病例中，除了 LVEDD 37 mm、EF 約 80% 與 LVOTO g
 | 後續因腿腫使用 torsemide 10 mg/day | 兩日後呼吸困難再惡化，SAM／LVOTO 復現；停用利尿並審慎調整液體後改善 | 提供再次挑戰的時間序證據；**不能把單一病例變成所有 HF 禁用利尿的通則** |
 
 這個例子恰好說明：**外周靜脈鬱血徵象，不能替左室前負荷、肺靜脈壓與流出道幾何狀態作證。**如果把四象限簡單當成用藥表，會錯過這個足以翻轉治療方向的事實。病例本身也不能倒推患者曾有何種確切左心充盈壓，沒有測量就應保留未知。
+
+<figure class="figure-source"><a href="https://cdn.amegroups.cn/journals/pbpc/files/journals/2/articles/5226/public/5226-PB6-R1.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.amegroups.cn/journals/pbpc/files/journals/2/articles/5226/public/5226-PB6-R1.png" alt="Kim 2015 Figure 3：beta-blocker 和審慎容量調整後 SAM 消失、LVOT 層流恢復的追蹤超音波" loading="lazy"></a><figcaption><strong>Figure 3｜重新測量才能驗證機轉。</strong>合併肺炎治療、beta-blocker 及容量調整後，SAM 消失、流出道加速解除。這支持病人特異的病理生理解釋，但不代表單一介入已被隨機證明。 原圖未經修改；來源：Kim S et al., <em>J Thorac Dis</em> 2015, <a href="https://jtd.amegroups.org/article/view/5226/html#figure3">原始圖說與完整版本</a>（AME CC BY-NC-ND 4.0，僅供非商業審查預覽）。</figcaption></figure>
 
 當這些差異被保留，下一個問題才變得精確：如果當前主要限制確實是需要解除的 congestion，利尿劑究竟應該改變什麼？
 
@@ -149,5 +155,7 @@ HF 四象限告訴我們：病人此刻是否 congested、是否 hypoperfused。
 **核心結論：沒有哪一個 EF、LVEDP、urine output 或 creatinine 可以獨自代表 HF 病人的完整狀態。真正能改變治療的是這些訊號在同一段病程中，分別證明了什麼、仍然沒有證明什麼。**
 
 ---
+
+**影像授權：**原期刊圖片保留原樣、逐張標示作者、來源與授權。正式公開前仍須確認網站用途符合 [AME CC BY-NC-ND 4.0](https://jtd.amegroups.org/page/about/content-licensing) 的非商業與禁止改作條件；不能將此預覽視為商用發表許可。
 
 **延伸閱讀與文獻：**[HF 原稿](../xiaoma-reading/originals/2026-07-12-heart-failure.md) · [LVEDP 原稿](../xiaoma-reading/originals/2026-07-12-lvedp.md) · [Diuretics 原稿](../xiaoma-reading/originals/2026-07-20-diuretics.md) · [HCM 原稿](../xiaoma-reading/originals/2026-07-14-hcm.md) · [Kim 2015 原病例與圖](https://jtd.amegroups.org/article/view/5226/html) · [2022 AHA/ACC/HFSA 指引](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012) · [2026 ESC 指引](https://academic.oup.com/eurheartj/article/47/38/5346/8766302)。本文是獨立的 AI 跨篇整合教材，保留作者原稿；引用的新指引僅核對本文相關章節，並不代表全篇已通過獨立臨床審查。
