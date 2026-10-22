@@ -52,6 +52,10 @@ class TestSealedExport(unittest.TestCase):
         with self.assertRaises(ValueError):
             export_case(self.cases(status="needs_freeze"), "CASE1", self.repo, self.out)
 
+    def test_refuses_to_write_inside_repository(self):
+        with self.assertRaises(ValueError):
+            export_case(self.cases(), "CASE1", self.repo, self.repo / "dist" / "eje")
+
     def test_does_not_overwrite_pack(self):
         export_case(self.cases(), "CASE1", self.repo, self.out)
         with self.assertRaises(FileExistsError):
