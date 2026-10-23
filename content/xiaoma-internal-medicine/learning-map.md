@@ -10,6 +10,8 @@
 
 接著讀[高碳酸血症與呼吸支持](lessons/2026-10-22-hypercapnic-failure.md)，再以[低血氧與 NIV 隨文練習](lessons/2026-10-22-respiratory-practice.md)檢驗是否能把閱讀中的條件帶入題目。
 
+若卡在「HCO₃⁻ 高是否代表慢性」或「PaCO₂ 正常是否代表足夠」，接[酸鹼判讀](lessons/2026-10-23-acid-base.md)：先分 pH 結果與酸化過程，再用代償和 anion gap 檢查混合障礙，最後追問呼吸支持正在維持什麼。
+
 ## 心衰竭：鬱血、灌流與充盈壓
 
 如果病人肺水腫，下一個問題不是立刻猜 EF，而是先分開 congestion 與 perfusion。[Heart Failure：從四象限到急性失衡](../xiaoma-reading/originals/2026-07-12-heart-failure.md)提供床邊的描述框架；[LVEDP](../xiaoma-reading/originals/2026-07-12-lvedp.md)再解釋壓力與容積的差別；[利尿劑](../xiaoma-reading/originals/2026-07-20-diuretics.md)則追問排鈉、負平衡與症狀改善是否真的同時發生。

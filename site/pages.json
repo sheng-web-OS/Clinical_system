@@ -339,5 +339,28 @@
     "navigation": false,
     "section": "參考資料",
     "references": "xiaoma-reading-diuretics-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md",
+    "output": "xiaoma-20261023-acid-base.html",
+    "title": "pH 正常，為什麼仍可能有兩個酸鹼障礙？",
+    "subtitle": "從代償、anion gap 與混合障礙，判讀維持 pH 的方式是否正在失敗。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "酸鹼與呼吸支持",
+    "references": "xiaoma-acid-base-sources.html",
+    "date": "2026-10-23",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/acid-base-sources.md",
+    "output": "xiaoma-acid-base-sources.html",
+    "title": "酸鹼判讀：原書、公式與官方題源",
+    "subtitle": "Pocket Medicine 原表與 nomogram、代償限制、2026 SSC 與兩道官方真題。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
