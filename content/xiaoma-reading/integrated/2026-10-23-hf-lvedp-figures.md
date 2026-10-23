@@ -6,7 +6,12 @@
 
 <figure class="hemo-figure" id="hf-phenotype-matrix">
 <div class="hemo-figure-title"><span>FIGURE 01 · BEDSIDE PROFILE</span><strong>先確認病人在哪個血行動力學象限</strong></div>
-<div class="hemo-axis-note">水平方向：左 Dry（未見明顯鬱血）→ 右 Wet（有鬱血）　／　垂直方向：上 Warm（灌流大致足夠）→ 下 Cold（低灌流）</div>
+<div class="hemo-axis-note"><span class="hemo-axis-desktop">水平方向：左 Dry（未見明顯鬱血）→ 右 Wet（有鬱血）　／　垂直方向：上 Warm（灌流大致足夠）→ 下 Cold（低灌流）</span><span class="hemo-axis-mobile">兩條獨立觀察軸：<strong>鬱血</strong> Dry → Wet；<strong>灌流</strong> Warm → Cold。</span></div>
+<div class="hemo-mini-map" role="img" aria-label="四象限縮圖：從左至右 Dry、Wet，從上至下 Warm、Cold">
+<span class="hemo-mini-axis">灌流 ↓<br>鬱血 →</span><span class="hemo-mini-axis">DRY</span><span class="hemo-mini-axis">WET</span>
+<span class="hemo-mini-axis">WARM</span><span>Warm · Dry</span><span class="hemo-mini-wet">Warm · Wet</span>
+<span class="hemo-mini-axis">COLD</span><span class="hemo-mini-cold">Cold · Dry</span><span class="hemo-mini-cold hemo-mini-wet">Cold · Wet</span>
+</div>
 <div class="hemo-matrix" role="img" aria-label="兩欄分別為 dry 和 wet、兩列分別為 warm 和 cold 的四象限臨床狀態圖">
 <div class="hemo-cell"><small>WARM · DRY</small><strong>暫無明顯鬱血或低灌流</strong><p>檢查當下是否穩定；此象限本身不能診斷或排除 HF。</p></div>
 <div class="hemo-cell hemo-wet"><small>WARM · WET</small><strong>有鬱血，灌流尚可</strong><p>釐清左／右側鬱血、血液重新分布與實際鈉水累積。</p></div>
