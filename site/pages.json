@@ -362,5 +362,29 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md",
+    "output": "xiaoma-reading-hf-lvedp-figures.html",
+    "title": "從四象限走進 LVEDP：兩張小麻原圖",
+    "subtitle": "HF 四象限及 LVEDP 壓力與容積分流的原創圖文導讀",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-23",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "心衰竭與血行動力學",
+    "references": "xiaoma-reading-hf-lvedp-figure-sources.html"
+  },
+  {
+    "source": "content/xiaoma-reading/hf-lvedp-figure-sources.md",
+    "output": "xiaoma-reading-hf-lvedp-figure-sources.html",
+    "title": "HF／LVEDP 原圖來源與查核邊界",
+    "subtitle": "小麻第九版 PDF 頁次、原始圖表與外部文獻",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "navigation": false,
+    "section": "來源與圖表"
   }
 ]
