@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "purpose": "Mandatory original-figure/table provenance review for new or modified published teaching. Legacy entries are frozen backlog, not visual certification.",
+  "legacy_frozen": {
+    "content/xiaoma-reading/integrated/2026-10-21-dcm.md": "f16eced854467e5c8e43a063ef5d34b93f0d1d15",
+    "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md": "89cb49a9ccc1114b74b5c6cb04b059e8c1c1121a",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md": "67bac856e6cc1ea7ded35c05f95d2f8677a4c320",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md": "8f10c78eb6c9df4b749b853f20baab235417c2ab",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md": "0bb914e54645574201265d57c77ec3bd01d19edb",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-respiratory-practice.md": "acde2c3149553358fc988570574c28dc5c663e11",
+    "content/xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md": "a97f04a0d73c7ff7d1cdaf60f8fa7705e8b94c8c",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md": "60a01d34c5a34ea59cdbbb8b75ecf098da589f97",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md": "5447f02cc4d142d3135893b2757eeeced37afcd4",
+    "content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md": "b4e56064cb5e9551b247c57f661633d1b27e3c68"
+  },
+  "reviews": {
+    "content/xiaoma-reading/integrated/2026-10-22-diuretics-visual.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/diuretics-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine, 9th edition, reader PDF page 179, DIURESIS / loop: sigmoidal dose-response textual explanation",
+          "source_token": "sigmoidal dose–response",
+          "mode": "illustrated",
+          "anchor": "loop-dose-response",
+          "caption_token": "小麻第九版 PDF",
+          "teaching_role": "讓讀者辨識尚未跨越藥效 threshold 時為何應調整有效曝露，以及進入 ceiling 後再提高單次劑量為何效益遞減。",
+          "scope_limit": "定性推理圖，不能據此設定個別病人的 IV furosemide 劑量，也不是原書既有曲線圖片。"
+        },
+        {
+          "locator": "Pocket Medicine, 9th edition, reader PDF page 180, original Table: Approach to Diuresis (five steps)",
+          "source_token": "Approach to Diuresis",
+          "mode": "illustrated",
+          "anchor": "response-pathway",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "補回處置表在不同反應瓶頸下的判斷方向，避免將口服加量、改變頻率、聯合 thiazide、連續輸注讀成單一固定階梯。",
+          "scope_limit": "原創臨床教學分流而非原書五步驟表截圖；其中 AHF 早期尿鈉參考值不能直接推廣至所有水腫患者。"
+        }
+      ]
+    }
+  }
+}

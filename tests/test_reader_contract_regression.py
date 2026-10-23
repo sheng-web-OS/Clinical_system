@@ -17,7 +17,7 @@ class ReaderContractRegression(unittest.TestCase):
         self.root = Path(temp.name)
         for directory in ("site", "tools", "content", "audit", "dist"):
             (self.root / directory).mkdir()
-        for relative in ("site/catalog.py", "tools/check_output.py", "tools/validate.py"):
+        for relative in ("site/catalog.py", "site/figure_gate.py", "tools/check_output.py", "tools/validate.py"):
             shutil.copyfile(SOURCE_ROOT / relative, self.root / relative)
         (self.root / "content/example.md").write_text("# Public engineering fixture\n", encoding="utf8")
         self.page = {"source": "content/example.md", "output": "example.html", "title": "Example", "subtitle": "Teaching"}
