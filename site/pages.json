@@ -209,7 +209,19 @@
     "references": "xiaoma-108a-cardiac-sources.html",
     "date": "2026-10-22",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "exam": {
+      "year_roc": 108,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        8,
+        11,
+        12,
+        76
+      ]
+    }
   },
   {
     "source": "content/xiaoma-internal-medicine/108a-cardiac-sources.md",
@@ -290,7 +302,19 @@
     "review": "author_source_check",
     "layout": "reader",
     "section": "腎臟與體液",
-    "references": "xiaoma-exam108-sources.html"
+    "references": "xiaoma-exam108-sources.html",
+    "exam": {
+      "year_roc": 108,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        27,
+        2,
+        25,
+        28
+      ]
+    }
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md",
@@ -303,7 +327,19 @@
     "review": "author_source_check",
     "layout": "reader",
     "section": "腎臟與肝臟",
-    "references": "xiaoma-exam108-sources.html"
+    "references": "xiaoma-exam108-sources.html",
+    "exam": {
+      "year_roc": 108,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        17,
+        22,
+        23,
+        26
+      ]
+    }
   },
   {
     "source": "content/xiaoma-internal-medicine/exam108-sources.md",
@@ -386,5 +422,13 @@
     "layout": "reader",
     "navigation": false,
     "section": "來源與圖表"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/index.md",
+    "output": "xiaoma-exams.html",
+    "title": "醫師國考歷屆詳解｜依考試年度",
+    "subtitle": "依民國年度、考試梯次、階段與科目查找官方真題；同時保留臨床主題的完整推理文章。",
+    "collection": "xiaoma-internal-medicine",
+    "section": "歷屆國考題"
   }
 ]
