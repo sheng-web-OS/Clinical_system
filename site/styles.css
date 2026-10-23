@@ -65,6 +65,12 @@
 .reader-header{position:relative;gap:30px}.reader-search{margin-left:auto;position:relative;flex:0 0 auto}.reader-search>summary{font-size:12px;color:var(--muted);cursor:pointer;list-style:none;padding:10px 0}.reader-search>summary::-webkit-details-marker{display:none}.reader-search>div{position:absolute;top:42px;right:0;z-index:10;width:340px;max-width:calc(100vw - 46px);background:var(--surface);padding:22px;border:1px solid var(--line);box-shadow:0 15px 45px #14241c15}.reader-search label{display:block;font-size:11px;color:var(--muted);margin-bottom:12px}.reader-search .searchbox{font-size:13px;border-radius:0}.reader-search .result{font-size:12px}.reader-search .results{max-height:55vh;overflow:auto}.reader-tools{margin-left:0}.reader-page .floating{height:2px}
 @media(max-width:760px){.reader-header{gap:16px;flex-wrap:nowrap}.reader-search{margin-left:0}.reader-search>summary{font-size:11px}.reader-search>div{right:-5px;top:39px}.clinical-page .reader-header>nav a:nth-child(n+3){display:none}.clinical-page .reader-brand{font-size:16px}.clinical-page .reader-header>nav{gap:14px}.reader-header>nav{gap:16px}}
 
+/* Tablet header: avoid its 875px min-content width overflowing 761–900px screens. */
+@media(min-width:761px) and (max-width:900px){
+  .reader-brand>span:last-child{display:none}
+  .reader-header{gap:18px}
+}
+
 /* Keep primary reading navigation usable on compact phones without a menu overlay. */
 @media(max-width:760px){
  .reader-header>nav a:nth-child(n+3){display:none}
