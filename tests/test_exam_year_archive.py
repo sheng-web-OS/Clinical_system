@@ -35,7 +35,7 @@ class ExamArchiveContract(unittest.TestCase):
         teaser = render_exam_year_teasers(self.pages)
         self.assertIn('id="year-108"', index)
         self.assertIn("108 年（2019）", index)
-        self.assertIn("醫師第2 階段", index)
+        self.assertIn("醫師第二階段", index)
         self.assertIn("醫學（三）", index)
         self.assertNotIn('id="year-2026"', index)
         self.assertIn('href="xiaoma-exams.html#year-108"', teaser)
