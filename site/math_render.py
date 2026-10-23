@@ -3,7 +3,6 @@
 The site is intentionally usable without a remote renderer or JavaScript.
 Malformed TeX is a build error instead of silently leaking LaTeX commands.
 """
-import html
 import re
 from latex2mathml.converter import convert
 
@@ -16,7 +15,7 @@ DISPLAY_DOLLARS = re.compile(
 )
 INLINE_PARENS = re.compile(r"(?<!\\)\\\((?P<tex>.+?)\\\)")
 FENCED_CODE = re.compile(
-    r"(?m)^[ \t]*(?P<fence>\`{3,}|~{3,})[^\n]*\n[\s\S]*?^[ \t]*(?P=fence)[ \t]*(?=\r?\n|$)"
+    r"(?m)^[ \t]*(?P<fence>`{3,}|~{3,})[^\n]*\n[\s\S]*?^[ \t]*(?P=fence)[ \t]*(?=\r?\n|$)"
 )
 
 
@@ -34,7 +33,7 @@ def _mathml(latex: str, *, block: bool) -> str:
 
 
 def compile_math(raw: str) -> str:
-    """Handle \[...\], $$...$$ and \(...\) while preserving fenced source code.
+    r"""Handle \[...\], $...$ and \(...\) while preserving fenced source code.
 
     Preprocessing must occur BEFORE Markdown parsing: Mistune legitimately turns
     backslash-escaped square brackets into visible brackets, losing TeX delimiters.
@@ -55,13 +54,12 @@ def compile_math(raw: str) -> str:
     text = DISPLAY_BRACKETS.sub(block, text)
     text = DISPLAY_DOLLARS.sub(block, text)
     text = INLINE_PARENS.sub(lambda m: _mathml(m.group("tex"), block=False), text)
-    # Restore unmodified fences only after inline conversion.
+    # Detect unfinished TeX only in prose: literal TeX in fenced code is valid.
+    if re.search(r"(?m)^[ \t]*\\[\[\]][ \t]*$", text):
+        raise ValueError("Unmatched display-math delimiter in article")
+    # Restore protected code after validating the parts that should be rendered.
     for i, chunk in enumerate(fences):
         text = text.replace("@@XIAOMA_CODE_FENCE_" + str(i) + "@@", chunk)
     for i, chunk in enumerate(blocks):
         text = text.replace("@@XIAOMA_MATH_BLOCK_" + str(i) + "@@", chunk)
-
-    # Broken source delimiters should never reappear as unreadable raw commands.
-    if re.search(r"(?m)^[ \t]*\\[\[\]][ \t]*$", text):
-        raise ValueError("Unmatched display-math delimiter in article")
     return text
