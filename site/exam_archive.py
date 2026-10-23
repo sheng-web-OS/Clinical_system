@@ -64,7 +64,7 @@ def render_exam_archive(pages):
             session_label = {1:"第一次",2:"第二次",3:"第三次",4:"第四次"}[sitting]
             rows = groups[year][(sitting, stage, subject)]
             piece += ['<section class="exam-paper">',
-                      '<h3>' + session_label + ' · 醫師第' + str(stage) + ' 階段 · ' + escape(subject) + '</h3>',
+                      '<h3>' + session_label + ' · 醫師' + ('第一階段' if stage == 1 else '第二階段') + ' · ' + escape(subject) + '</h3>',
                       '<div class="exam-lesson-list">']
             for row in sorted(rows, key=lambda p: min(p["exam"]["question_numbers"])):
                 nums = sorted(row["exam"]["question_numbers"])
