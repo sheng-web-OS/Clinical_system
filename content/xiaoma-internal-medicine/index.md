@@ -4,7 +4,11 @@
 
 ## 歷屆國考題｜按照考試年度
 
-<div class="exam-archive-entry"><a href="exams/index.md#year-108"><strong>108 年（2019） · 第一次 · 醫師第二階段 · 醫學（三）</strong><span>已核對 12 題｜依題號查找完整詳解 →</span></a><p>歷屆真題以考試年度為索引；下方「正在讀」則是依臨床問題編排的原創教材與練習，兩者不混用。</p><a href="exams/index.md">查看所有國考年度 →</a></div>
+<!-- XIAOMA_EXAM_YEAR_TEASERS -->
+
+歷屆真題依考試年度查找；下方「正在讀」則是依臨床問題編排的教學與練習，兩者不混用。
+
+[查看完整歷屆國考目錄 →](exams/index.md)
 
 ## 正在讀
 
