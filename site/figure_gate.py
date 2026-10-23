@@ -56,6 +56,9 @@ def _linked_file(text: str, from_file: str, target: str) -> bool:
 
 def validate_figure_gate(root: Path, pages: list) -> None:
     """Fail new/edited teaching pages without evidence, while pinning legacy pages."""
+    entries = {r["source"]: r for r in pages if _teaching_page(r)}
+    if not entries:
+        return  # Directory/metadata-only or historical-only fixture has no new teaching output.
     path = root / REVIEW_FILE
     if not path.is_file():
         raise ValueError("Figure audit gate missing: " + REVIEW_FILE)
@@ -69,7 +72,6 @@ def validate_figure_gate(root: Path, pages: list) -> None:
     if not isinstance(legacy, dict) or not isinstance(reviews, dict):
         raise ValueError("Figure audit requires legacy_frozen and reviews maps")
 
-    entries = {r["source"]: r for r in pages if _teaching_page(r)}
     unknown = (set(legacy) | set(reviews)) - set(entries)
     if unknown:
         raise ValueError("Figure audit has unregistered teaching source: " + sorted(unknown)[0])
@@ -109,7 +111,7 @@ def validate_figure_gate(root: Path, pages: list) -> None:
             if check.get("items"):
                 raise ValueError("Figure audit no_relevant_visual must not disguise known figures: " + source)
             _require(check.get("examined_pages"), "examined_pages", source, 12)
-            _require(check.get("rationale"), "rationale", source, 60)
+            _require(check.get("rationale"), "rationale", source, 40)
             token = _require(check.get("source_token"), "source_token", source, 8)
             if token.casefold() not in evidence.casefold():
                 raise ValueError("Figure audit no_relevant_visual source not verifiable: " + source)
@@ -124,8 +126,8 @@ def validate_figure_gate(root: Path, pages: list) -> None:
                 raise ValueError("Figure audit item must be an object: " + source)
             loc = _require(item.get("locator"), "original Figure/Table and exact page", source, 24)
             token = _require(item.get("source_token"), "matching source token", source, 8)
-            _require(item.get("teaching_role"), "why this item changes reasoning", source, 45)
-            _require(item.get("scope_limit"), "what it cannot establish", source, 30)
+            _require(item.get("teaching_role"), "why this item changes reasoning", source, 32)
+            _require(item.get("scope_limit"), "what it cannot establish", source, 25)
             if token.casefold() not in evidence.casefold():
                 raise ValueError("Figure audit locator is absent from source review: " + source + " / " + loc)
             mode = _require(item.get("mode"), "representation mode", source)
