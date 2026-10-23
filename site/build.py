@@ -10,7 +10,7 @@ import mistune
 from catalog import load_pages
 from home import render_home
 from math_render import compile_math
-from exam_archive import render_exam_archive
+from exam_archive import render_exam_archive, render_exam_year_teasers
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
@@ -26,7 +26,9 @@ class Renderer(mistune.HTMLRenderer):
             self.h2+=1
             ident="part-"+str(self.h2)
             self.headings.append((ident,re.sub(r"<[^>]+>","",text)))
-            return '<h2 id="'+ident+'">'+text+'</h2>'
+            question = re.match(r"^第\\s*(\\d+)\\s*題", re.sub(r"<[^>]+>", "", text))
+            anchor = ('<span class="exam-question-anchor" id="q-' + str(int(question.group(1))) + '"></span>') if question else ''
+            return '<h2 id="'+ident+'">'+anchor+text+'</h2>'
         return '<h'+str(level)+'>'+text+'</h'+str(level)+'>'
 
 OUTPUT_BY_SOURCE = {name: output for name, output, _, _ in FILES}
@@ -147,6 +149,8 @@ def render(md_file, output, page_title, subtitle):
         cards='<div class="original-list">'+''.join(
             '<a class="original-card" href="'+html.escape(row["output"],quote=True)+'"><span class="original-date">'+html.escape(row["date"].replace("-","."))+' · 完整原稿</span><strong>'+html.escape(row["title"])+'</strong><span>'+html.escape(row["subtitle"])+'</span><span class="read-link">開始閱讀 <span aria-hidden="true">→</span></span></a>' for row in originals)+'</div>'
         raw=raw.replace("<!-- XIAOMA_READING_ORIGINALS -->",cards)
+    if "<!-- XIAOMA_EXAM_YEAR_TEASERS -->" in raw:
+        raw = raw.replace("<!-- XIAOMA_EXAM_YEAR_TEASERS -->", render_exam_year_teasers(PAGES))
     if "<!-- XIAOMA_EXAM_ARCHIVE -->" in raw:
         raw = raw.replace("<!-- XIAOMA_EXAM_ARCHIVE -->", render_exam_archive(PAGES))
     if "<!-- XIAOMA_PUBLISHED_LESSONS -->" in raw:
