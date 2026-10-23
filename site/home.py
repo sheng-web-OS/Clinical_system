@@ -25,7 +25,13 @@ def render_home(pages):
     cards = []
     # Current integrated publications lead; preserved historical originals are a
     # separate, explicitly archived reading path rather than the default version.
-    for p in sorted(integrations, key=lambda row: row["date"], reverse=True):
+    # Preserve the explicitly featured current DCM version before newer companion readings.
+    ordered_integrations = sorted(integrations, key=lambda row: row["date"], reverse=True)
+    featured_dcm = next((p for p in ordered_integrations if p["output"] == "xiaoma-reading-dcm-integrated.html"), None)
+    if featured_dcm:
+        ordered_integrations.remove(featured_dcm)
+        ordered_integrations.insert(0, featured_dcm)
+    for p in ordered_integrations:
         cards.append(_card(p, "integrated", "小麻閱讀 · 最新整合", "閱讀完整教材"))
     for p in sorted(originals, key=lambda row: row["date"], reverse=True):
         cards.append(_card(p, "original", "小麻閱讀 · 歷史原稿", "查閱原稿存檔"))
