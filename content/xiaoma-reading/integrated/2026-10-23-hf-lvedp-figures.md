@@ -12,7 +12,7 @@
 <span class="hemo-mini-axis">WARM</span><span>Warm · Dry</span><span class="hemo-mini-wet">Warm · Wet</span>
 <span class="hemo-mini-axis">COLD</span><span class="hemo-mini-cold">Cold · Dry</span><span class="hemo-mini-cold hemo-mini-wet">Cold · Wet</span>
 </div>
-<div class="hemo-matrix" role="img" aria-label="兩欄分別為 dry 和 wet、兩列分別為 warm 和 cold 的四象限臨床狀態圖">
+<div class="hemo-matrix" role="group" aria-label="四種臨床血流動力學狀態，依 Warm–Dry、Warm–Wet、Cold–Dry、Cold–Wet 排列">
 <div class="hemo-cell"><small>WARM · DRY</small><strong>暫無明顯鬱血或低灌流</strong><p>檢查當下是否穩定；此象限本身不能診斷或排除 HF。</p></div>
 <div class="hemo-cell hemo-wet"><small>WARM · WET</small><strong>有鬱血，灌流尚可</strong><p>釐清左／右側鬱血、血液重新分布與實際鈉水累積。</p></div>
 <div class="hemo-cell hemo-cold"><small>COLD · DRY</small><strong>低灌流，卻未見明顯鬱血</strong><p>回查 underfilling、low-output 與其他休克病因；不是自動補液指令。</p></div>
