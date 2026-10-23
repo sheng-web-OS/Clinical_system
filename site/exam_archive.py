@@ -55,7 +55,7 @@ def render_exam_archive(pages):
     if not groups:
         return '<p class="exam-archive-empty">目前尚未收錄完成題號與考選部原卷對應的正式真題詳解。</p>'
     pieces = []
-    for i, year in enumerate(sorted(groups, reverse=True)):
+    for year in sorted(groups, reverse=True):
         total = sum(len(page["exam"]["question_numbers"]) for rows in groups[year].values() for page in rows)
         papers = len(groups[year])
         piece = ['<section class="exam-year" id="year-' + str(year) + '">',
@@ -64,17 +64,32 @@ def render_exam_archive(pages):
             session_label = {1:"第一次",2:"第二次",3:"第三次",4:"第四次"}[sitting]
             rows = groups[year][(sitting, stage, subject)]
             piece += ['<section class="exam-paper">',
-                      '<h3>' + session_label + ' · 醫師第二階段' .replace("第二", "第一" if stage == 1 else "第二") + ' · ' + escape(subject) + '</h3>',
+                      '<h3>' + session_label + ' · 醫師第' + str(stage) + ' 階段 · ' + escape(subject) + '</h3>',
                       '<div class="exam-lesson-list">']
             for row in sorted(rows, key=lambda p: min(p["exam"]["question_numbers"])):
                 nums = sorted(row["exam"]["question_numbers"])
                 ident = "、".join(str(n) for n in nums)
-                piece.append('<a class="exam-lesson" href="' + escape(row["output"], quote=True) + '">'
-                             '<span class="exam-question-nums">Q' + escape(ident) + '</span>'
-                             '<strong>' + escape(row["title"]) + '</strong>'
-                             '<small>' + escape(row["subtitle"]) + '</small>'
-                             '<span class="exam-open">閱讀完整詳解 →</span></a>')
+                links = ''.join('<a href="' + escape(row["output"], quote=True) + '#q-' + str(n) +
+                                '" aria-label="直接閱讀第 ' + str(n) + ' 題">Q' + str(n) + '</a>' for n in nums)
+                piece.append('<article class="exam-lesson"><a class="exam-lesson-title" href="' +
+                             escape(row["output"], quote=True) + '"><strong>' + escape(row["title"]) +
+                             '</strong><small>' + escape(row["subtitle"]) +
+                             '</small></a><nav class="exam-question-links" aria-label="各題直接入口">' +
+                             links + '</nav></article>')
             piece += ['</div>', '</section>']
         piece.append('</section>')
         pieces.extend(piece)
     return '\n'.join(pieces)
+
+
+def render_exam_year_teasers(pages):
+    groups = by_year(pages)
+    if not groups:
+        return '<p>已確認的歷屆考題詳解會依考試年度建立獨立入口。</p>'
+    cards = []
+    for year in sorted(groups, reverse=True):
+        total = sum(len(row["exam"]["question_numbers"]) for rows in groups[year].values() for row in rows)
+        cards.append('<a href="xiaoma-exams.html#year-' + str(year) + '">' +
+                     '<strong>' + str(year) + ' 年（' + str(year + 1911) + '）</strong>' +
+                     '<span>' + str(total) + ' 題已收錄 · 依考試梯次、科目與題號查找 →</span></a>')
+    return '<div class="exam-archive-entry">' + ''.join(cards) + '</div>'
