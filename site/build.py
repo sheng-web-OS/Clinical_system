@@ -107,8 +107,9 @@ def render_reader(page, body, headings):
     section = html.escape(page.get("section", "小麻閱讀" if is_archive else "臨床推理"))
     exam = page.get("exam")
     exam_label = ('<div class="reader-exam-origin"><span>官方歷屆真題</span><a href="xiaoma-exams.html#year-' + str(exam["year_roc"]) + '">' +
-                  str(exam["year_roc"]) + ' 年（' + str(exam["year_roc"] + 1911) + '） · 第' + str(exam["sitting"]) +
-                  ' 次 · 醫師第' + str(exam["stage"]) + ' 階段 · ' + html.escape(exam["subject"]) +
+                  str(exam["year_roc"]) + ' 年（' + str(exam["year_roc"] + 1911) + '） · ' +
+                  {1: '第一次', 2: '第二次', 3: '第三次', 4: '第四次'}[exam["sitting"]] +
+                  ' · 醫師' + ('第一階段' if exam["stage"] == 1 else '第二階段') + ' · ' + html.escape(exam["subject"]) +
                   ' · Q' + '、'.join(str(q) for q in sorted(exam["question_numbers"])) + ' →</a></div>') if exam else ''
     mode = "lesson-page" if is_lesson or page["source"] == "content/tamponade.md" else "directory-page"
     if not is_xiaoma:
