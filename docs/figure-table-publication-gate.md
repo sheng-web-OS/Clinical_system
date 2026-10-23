@@ -23,7 +23,7 @@
 
 ## 舊文轉入門檻的過渡
 
-啟用本規範時現存九篇尚未做完整圖表回收驗收的教學正文，列在 legacy_frozen，使用各篇既有 Git blob SHA 固定原版本。**不是宣稱已查核通過**。它們保持公開可讀；一旦內容變動就會觸發 LEGACY_CHANGED 並拒絕發布，除非補齊完整 reviews 記錄、移出凍結清單。不得只重設 fingerprint 來假裝完成。
+啟用本規範時現存十篇尚未做完整圖表回收驗收的教學正文，列在 legacy_frozen，使用各篇既有 Git blob SHA 固定原版本。**不是宣稱已查核通過**。它們保持公開可讀；一旦內容變動就會觸發 LEGACY_CHANGED 並拒絕發布，除非補齊完整 reviews 記錄、移出凍結清單。不得只重設 fingerprint 來假裝完成。
 
 利尿劑整合版是首件通過新門檻的案例：小麻 PDF 第 179 頁為 sigmoid 曲線的文字敘述；第 180 頁才有 Approach to Diuresis 原書五步驟表。網站 Figure 01／02 是獨立繪製的教學圖，不是翻拍原書。其來源頁為 content/xiaoma-reading/diuretics-sources.md。
 
