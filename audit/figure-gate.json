@@ -10,8 +10,7 @@
     "content/xiaoma-internal-medicine/lessons/2026-10-22-respiratory-practice.md": "acde2c3149553358fc988570574c28dc5c663e11",
     "content/xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md": "a97f04a0d73c7ff7d1cdaf60f8fa7705e8b94c8c",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md": "60a01d34c5a34ea59cdbbb8b75ecf098da589f97",
-    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md": "5447f02cc4d142d3135893b2757eeeced37afcd4",
-    "content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md": "b4e56064cb5e9551b247c57f661633d1b27e3c68"
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md": "5447f02cc4d142d3135893b2757eeeced37afcd4"
   },
   "reviews": {
     "content/xiaoma-reading/integrated/2026-10-22-diuretics-visual.md": {
@@ -35,6 +34,30 @@
           "caption_token": "Pocket Medicine",
           "teaching_role": "補回處置表在不同反應瓶頸下的判斷方向，避免將口服加量、改變頻率、聯合 thiazide、連續輸注讀成單一固定階梯。",
           "scope_limit": "原創臨床教學分流而非原書五步驟表截圖；其中 AHF 早期尿鈉參考值不能直接推廣至所有水腫患者。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/acid-base-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E, reader PDF pages 159–160, Figure 4-1 Acid–base nomogram: pH/HCO3 axes, PaCO2 lines and mixed-process regions",
+          "source_token": "Acid–base nomogram",
+          "mode": "illustrated",
+          "anchor": "same-ph-figure",
+          "caption_token": "Figure 4-1",
+          "teaching_role": "用三組相同 pH 而 HCO3 與 PaCO2 不同的計算，具體呈現原 nomogram 所提示的多變量界限，避免以正常 pH 排除混合酸鹼障礙。",
+          "scope_limit": "只呈現原圖中與本篇命題有關的比值與判讀界限，未複製或宣稱重現原圖全部診斷分區；三組數字均為自編教學，不可單憑圖例判斷病因或插管。"
+        },
+        {
+          "locator": "Pocket Medicine 9E, reader PDF pages 158–159, Compensation for Acid–Base Disorders table: four acute/chronic respiratory rows and metabolic-acidosis Winter relation",
+          "source_token": "Compensation for Acid–Base Disorders",
+          "mode": "illustrated",
+          "anchor": "respiratory-compensation-table",
+          "caption_token": "Pocket Medicine 第九版",
+          "teaching_role": "將已查過原表的急性與慢性反應以時間和生理用途重新比較，說明為何相同 PaCO2 不能由單次 HCO3 判定起病時間或慢性 COPD，並與第 02 節 Winter 推理銜接。",
+          "scope_limit": "僅整理本篇所需的四種呼吸性反應；Winter 在第 02 節說明，代謝性鹼中毒完整評估不在此表。係數為經驗近似，受基線、腎功能與混合障礙影響，不能作呼吸器處方。"
         }
       ]
     }
