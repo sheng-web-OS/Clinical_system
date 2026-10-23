@@ -9,6 +9,7 @@ import sys
 import mistune
 from catalog import load_pages
 from home import render_home
+from math_render import compile_math
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
@@ -148,6 +149,8 @@ def render(md_file, output, page_title, subtitle):
             for row in lessons) + '</div>'
         raw = raw.replace("<!-- XIAOMA_PUBLISHED_LESSONS -->", cards)
     raw=re.sub(r'<!-- (U0[1-8]) -->',lambda m:'<a class="chapter-anchor" id="'+m.group(1).lower()+'"></a>',raw)
+    # Compile MathML from authored TeX before Mistune consumes \\[...\\] as escapes.
+    raw=compile_math(raw)
     rr=Renderer()
     parser=mistune.create_markdown(renderer=rr,plugins=["table","strikethrough","url"])
     body=parser(raw)
