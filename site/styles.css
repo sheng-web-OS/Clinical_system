@@ -110,3 +110,41 @@
  .article .diuretic-decision-grid{grid-template-columns:1fr}
  .article .diuretic-decision-card{padding:18px 17px}
 }
+
+
+/* Source-backed HF phenotype and pressure–volume branching figures. */
+.article .hemo-figure{margin:2.2em 0;border:1px solid var(--line);background:var(--surface);border-radius:14px;overflow:hidden}
+.article .hemo-figure-title{padding:20px 23px 18px;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.article .hemo-figure-title span{color:var(--accent);font:700 11px ui-monospace,monospace;letter-spacing:.07em}
+.article .hemo-figure-title strong{font-size:1.02em;line-height:1.6}
+.article .hemo-axis-note{font-size:.74em;line-height:1.7;color:var(--muted);padding:14px 23px;background:var(--brand-light)}
+.article .hemo-matrix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line)}
+.article .hemo-cell{background:var(--surface);padding:22px 21px;min-width:0;border-left:5px solid transparent}
+.article .hemo-cell.hemo-wet{border-left-color:#a47945}
+.article .hemo-cell.hemo-cold{border-top:4px solid #628398}
+.article .hemo-cell small,.article .hemo-flow-root small,.article .hemo-flow-branchhead small{font-family:ui-monospace,monospace;font-size:.7em;letter-spacing:.04em;color:var(--brand)}
+.article .hemo-cell strong{display:block;margin-top:9px;font-size:.95em;line-height:1.45}
+.article .hemo-cell p,.article .hemo-flow-root p,.article .hemo-flow-branch p,.article .hemo-flow-leaf p{font-size:.77em;line-height:1.8;color:var(--muted);margin:8px 0 0}
+.article .hemo-figure figcaption{padding:17px 23px 21px;border-top:1px solid var(--line);font-size:.78em;line-height:1.85;color:var(--muted)}
+.article .hemo-figure figcaption strong{color:var(--ink)}
+.article .hemo-flow-root{text-align:center;padding:18px 19px;margin:19px auto 3px;max-width:600px;background:var(--brand-light);border:1px solid var(--line)}
+.article .hemo-flow-root strong{display:block;font-size:.93em;margin-top:6px}
+.article .hemo-flow-arrow{text-align:center;color:var(--brand);font-size:24px;line-height:1.5}
+.article .hemo-flow-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;padding:0 18px 22px}
+.article .hemo-flow-branch{border:1px solid var(--line);min-width:0;background:var(--surface)}
+.article .hemo-flow-branchhead{padding:17px 17px 15px;background:var(--brand-light);min-height:128px}
+.article .hemo-flow-branchhead strong{display:block;font-size:.92em;margin-top:6px}
+.article .hemo-flow-leaf{margin:12px;padding:14px 13px;border-left:3px solid var(--brand);background:var(--bg)}
+.article .hemo-flow-leaf strong{font-size:.83em;line-height:1.5}
+@media(max-width:650px){
+.article .hemo-figure{margin:1.5em -5px;border-radius:8px}
+.article .hemo-figure-title{padding:16px}
+.article .hemo-axis-note{padding:12px 16px}
+.article .hemo-cell{padding:16px 12px}
+.article .hemo-cell strong{font-size:.86em}
+.article .hemo-cell p{font-size:.72em}
+.article .hemo-flow-grid{grid-template-columns:1fr;padding:0 12px 17px}
+.article .hemo-flow-branchhead{min-height:0;padding:14px}
+.article .hemo-flow-leaf{margin:9px;padding:12px}
+.article .hemo-figure figcaption{padding:13px 16px}
+}

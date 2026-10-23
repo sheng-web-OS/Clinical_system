@@ -24,6 +24,15 @@
   </a>
 </div>
 
+<div class="original-list">
+  <a class="original-card" href="integrated/2026-10-23-hf-lvedp-figures.md">
+    <span class="original-date">原書圖表回讀 · 2026.10.23</span>
+    <strong>從四象限走進 LVEDP：兩張小麻原圖各在回答什麼？</strong>
+    <span>以第九版 Pocket Medicine 的四象限與 Figure 1-2，接回鬱血／灌流和 filling pressure／volume 的不同問題；歷史原稿完整保留。</span>
+    <span class="read-link">閱讀原創視覺圖解 →</span>
+  </a>
+</div>
+
 ## 歷史原稿典藏
 
 以下保存原始文章的文字及論述歷史，**不是最新整合版的閱讀入口**。如欲閱讀心肌病變修訂稿，請由上方〈心肌病變〉文章進入。
@@ -32,7 +41,7 @@
 
 ## 沿著問題接續閱讀
 
-如果只想挑一條路線開始，可以先讀 [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)，區分 **congestion** 與 **perfusion**；再讀 [LVEDP](originals/2026-07-12-lvedp.md)，區分 **pressure** 與 **volume**；接著讀 [利尿劑](originals/2026-07-20-diuretics.md)，區分排鈉反應與最終的去鬱血效果。
+如果只想挑一條路線開始，可以先讀 [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)，區分 **congestion** 與 **perfusion**；再讀 [LVEDP](originals/2026-07-12-lvedp.md)，區分 **pressure** 與 **volume**；[兩張原書圖的對照導讀](integrated/2026-10-23-hf-lvedp-figures.md)把這兩篇的模型接起來；接著讀 [利尿劑](originals/2026-07-20-diuretics.md)，區分排鈉反應與最終的去鬱血效果。
 
 [HCM 原稿](originals/2026-07-14-hcm.md)與 [DCM 最新整合版](integrated/2026-10-21-dcm.md)提供另一個必要視角：形態、流出道阻塞、充盈與收縮功能，不是同一條自然史。把它們混在一起，會直接改變對心衰竭病人的解釋。
 

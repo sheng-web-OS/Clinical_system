@@ -60,6 +60,30 @@
           "scope_limit": "僅整理本篇所需的四種呼吸性反應；Winter 在第 02 節說明，代謝性鹼中毒完整評估不在此表。係數為經驗近似，受基線、腎功能與混合障礙影響，不能作呼吸器處方。"
         }
       ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/hf-lvedp-figure-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E PDF p37, Warm & Dry / Cold & Wet 2 by 2 congestion and perfusion profile",
+          "source_token": "Warm & Dry",
+          "mode": "illustrated",
+          "anchor": "hf-phenotype-matrix",
+          "caption_token": "小麻第九版 PDF 第 37 頁",
+          "teaching_role": "以雙軸視覺辨認當下的鬱血與灌流是否獨立，避免從 HF 病名、EF 或血壓直接推論 wet 與 cold。",
+          "scope_limit": "四象限是 bedside 表型，不能獨自完成 HF 病因診斷、ACC/AHA stage 或固定用藥劑量決策。"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF p35, Figure 1-2 Approach to left-sided heart failure, LVEDV to ESV/SV branching",
+          "source_token": "Figure 1-2",
+          "mode": "illustrated",
+          "anchor": "lv-filling-branches",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "保留原書 LVEDV 增加或正常的主分支，再區分排空受限、總 SV 增加、心肌順應性下降與心包限制。",
+          "scope_limit": "壓力容量因果示意不可在未排除二尖瓣和左房異常時直接將 PCWP 等同 LVEDP 或有效前向輸出。"
+        }
+      ]
     }
   }
 }
