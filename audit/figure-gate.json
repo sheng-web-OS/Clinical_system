@@ -9,7 +9,6 @@
     "content/xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md": "0bb914e54645574201265d57c77ec3bd01d19edb",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-respiratory-practice.md": "acde2c3149553358fc988570574c28dc5c663e11",
     "content/xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md": "a97f04a0d73c7ff7d1cdaf60f8fa7705e8b94c8c",
-    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md": "60a01d34c5a34ea59cdbbb8b75ecf098da589f97",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md": "5447f02cc4d142d3135893b2757eeeced37afcd4"
   },
   "reviews": {
@@ -82,6 +81,30 @@
           "caption_token": "Pocket Medicine",
           "teaching_role": "保留原書 LVEDV 增加或正常的主分支，再區分排空受限、總 SV 增加、心肌順應性下降與心包限制。",
           "scope_limit": "壓力容量因果示意不可在未排除二尖瓣和左房異常時直接將 PCWP 等同 LVEDP 或有效前向輸出。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/exam108-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E PDF 169 Figure 4-5 Approach to hypernatremia; UOsm and UNa triage",
+          "source_token": "Figure 4-5",
+          "mode": "illustrated",
+          "anchor": "hypernatremia-uosm-branches",
+          "caption_token": "Figure 4-5",
+          "teaching_role": "將血鈉濃度、腎臟濃縮反應及 UNa 和尿量資訊分流，避免只靠 free-water deficit 公式推定病因與輸液處置。",
+          "scope_limit": "UOsm 700–800 和尿鈉參考值非所有 CKD 或利尿劑患者的確診門檻；原圖之外仍需臨床條件、完整病程與持續監測。"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF 164–165 Figure 4-3 Approach to metabolic alkalosis; urine chloride branch",
+          "source_token": "Figure 4-3",
+          "mode": "illustrated",
+          "anchor": "metabolic-alkalosis-ucl-branches",
+          "caption_token": "Figure 4-3",
+          "teaching_role": "可視覺追蹤嘔吐與氯缺乏下，bicarbonaturia 如何使尿鈉失效，以及 UCl、血壓和 UK 在代謝性鹼中毒鑑別中的階層。",
+          "scope_limit": "UCl 濃度門檻不能套到 FECl 分率，正在使用利尿劑的情境也無法單憑尿氯判斷有效循環量或腎小管傷害。"
         }
       ]
     }
