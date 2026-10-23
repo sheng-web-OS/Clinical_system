@@ -37,12 +37,14 @@ class HeartFailureFigureAudit(unittest.TestCase):
         self.assertIn("LVEDV", article)
         self.assertIn("PCWP", article)
 
-    def test_renal_pages_remain_pending_in_legacy_backlog(self):
+    def test_unverified_renal_perfusion_still_pending(self):
         record = json.loads((ROOT/"audit/figure-gate.json").read_text("utf8"))
-        for slug in ("renal-foundations", "renal-perfusion"):
-            source = "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-"+slug+".md"
-            self.assertIn(source, record["legacy_frozen"])
-            self.assertNotIn(source, record["reviews"])
+        pending = "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md"
+        self.assertIn(pending, record["legacy_frozen"])
+        self.assertNotIn(pending, record["reviews"])
+        restored = "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md"
+        self.assertIn(restored, record["reviews"])
+        self.assertNotIn(restored, record["legacy_frozen"])
 
 if __name__ == "__main__":
     unittest.main()

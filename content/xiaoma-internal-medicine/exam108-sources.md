@@ -31,6 +31,12 @@
 | 25 | 164–165：Metabolic alkalosis；Figure 4-3；175–176：AKI 鑑別表 | 接起原書已有的 bicarbonaturia 尿鈉限制與 AKI 典型型態 |
 | 28 | 175–177：AKI、AIN；184–185：IgA nephropathy、Nephrotic syndrome、MCD、Workup | 腎灌流、間質與足細胞的分層；保留成人 AKI 下 UPCR 的限制 |
 
+#### 原書診斷 Figure 在 Q2／Q25 的讀者頁恢復（2026-10-23）
+
+- PDF 第 169 頁 **Figure 4-5** 已對照完整原始頁圖，文章第 2 題新增可見的 UOsm → UNa／腎性失水原創分支圖。該圖承載的是「腎臟在高張環境下的保水反應」，與第 170 頁自由水估算公式功能不同。
+- PDF 第 164–165 頁 **Figure 4-3** 已對照原始頁圖，文章第 25 題新增 UCl → K／血壓脈絡的原創分支圖，並特別區分 **UCl（mEq/L）和 FECl（%）**，避免把尿氯濃度門檻誤用到分率排泄。
+- 兩圖**均非《Pocket Medicine》原圖截圖或翻拍**，只對應本篇必要的臨床分支。Q27 的 AKI etiologies 原書表格，以及 Q28 的腎絲球病理內容，仍依現有正文與表格作個別必要性判斷；本次不宣稱所有可能來源圖片皆已完整回收，也不代表獨立醫師審查。
+
 ### 2. 考選部原題與更正
 
 [108 年第一次醫師（二）醫學（三）原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=108030&q=1&s=11&t=Q)；[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=108030&q=1&s=11&t=S)；[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=108030&q=1&s=11&t=M)。本批四題未在該更正公告中變更。第 27 題完整選項依官方原題核對。

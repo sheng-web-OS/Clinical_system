@@ -135,6 +135,17 @@ TBW=70\times0.6=42\ \mathrm{L}
 
 若在高血鈉的同時，尿量很大、尿液卻很稀，便需要追查 ADH 缺乏／阻抗或其他腎性失水；若尿液已充分濃縮，則應回查腎外水流失、鈉負荷及其餘情境。這些界線仍受 CKD、藥物與滲透性利尿影響。流程圖是在觀察腎臟是否作出合適反應，不能把某個單一尿滲透壓門檻當成所有病人的病因確診。
 
+<figure class="renal-figure" id="hypernatremia-uosm-branches">
+<div class="renal-figure-head"><span>FIGURE 01 · HYPERNATREMIA</span><strong>血鈉高時，腎臟有沒有正確保留水分？</strong></div>
+<div class="renal-top"><strong>Hypernatremia → 同時評估 UOsm、尿量、容量狀態及用藥</strong><small>UOsm 是腎臟濃縮反應的線索，不能獨自完成病因診斷</small></div>
+<div class="renal-down" aria-hidden="true">↓</div>
+<div class="renal-columns">
+<div class="renal-panel"><span>UOsm &gt;700–800 mOsm/kg（約略參考）</span><strong>尿液已有明顯濃縮反應</strong><p>先問水分是否在腎外流失、是否有鈉負荷。原書再用 UNa 與病程線索細分：</p><div class="renal-leaf"><strong>UNa 較低（原書約 &lt;25 mEq/L）</strong><p>考慮腎外失水，例如腸胃道及不顯性流失</p></div><div class="renal-leaf"><strong>UNa 很高（原書約 &gt;100 mEq/L）</strong><p>連同輸液與藥物史，考慮鈉負荷等情境；不能只靠 UNa 下診斷</p></div></div>
+<div class="renal-panel"><span>UOsm &lt;700–800 mOsm/kg（約略參考）</span><strong>高血鈉下濃縮反應相對不足</strong><p>結合多尿、尿溶質及用藥，辨認腎性失水：</p><div class="renal-leaf"><strong>UOsm 很低（原書約 &lt;300）</strong><p>合併明顯多尿時，評估 complete diabetes insipidus</p></div><div class="renal-leaf"><strong>UOsm 約 300–600</strong><p>partial DI、osmotic diuresis、loop diuretics 等都可能；不應直接標為 DI</p></div></div>
+</div>
+<figcaption><strong>圖 1｜獨立整理自《Pocket Medicine》9E PDF 第 169 頁 Figure 4-5「Approach to hypernatremia」。</strong> 本圖非原書截圖，保留 UOsm → UNa／腎性失水的主要分支；切點受 CKD、腎功能、持續失水、藥物與生理適應影響，不是普遍診斷界值。自由水缺損公式仍須與循環灌流、持續流失和複查血鈉分開評估。</figcaption>
+</figure>
+
 **回讀小麻：** PDF 第 169 頁 Figure 4-5 與第 170 頁公式、年齡係數、依發生速度分流及「公式僅為估計」的提醒，一起讀完。第 2 題的可遷移能力，是能從濃度推回水量，再從水量走到可監測、可修正的處方。
 
 ---
@@ -178,6 +189,18 @@ FE_{Na}(\%)=\frac{U_{Na}\times P_{Cr}}{P_{Na}\times U_{Cr}}\times100
 原書以 UCl <25 mEq/L 支持 saline-responsive 型態，以 >40 mEq/L 提示另一組病因與條件；中間數值須保留判斷空間。這些切點是該頁的實用分流，並非 FECl 的百分比門檻。
 
 而且，嘔吐不是永遠伴隨鹼性尿。當容量與鉀缺乏加重，腎臟增加 HCO3⁻ 再吸收並排酸，尿液可以轉酸；先前的 bicarbonaturia 也可能減弱。**病程會改變指標的表現。** 不能再多背一句「嘔吐一定尿鈉高」，取代原先過度簡化的規則。
+
+<figure class="renal-figure" id="metabolic-alkalosis-ucl-branches">
+<div class="renal-figure-head"><span>FIGURE 02 · METABOLIC ALKALOSIS</span><strong>嘔吐時，尿鈉與尿氯為何會指向不同方向？</strong></div>
+<div class="renal-top"><strong>已確認 metabolic alkalosis → 檢查 UCl（尿氯濃度）</strong><small>先看低氯血症、嘔吐／胃液流失、利尿劑、容量狀態與採樣時間</small></div>
+<div class="renal-down" aria-hidden="true">↓</div>
+<div class="renal-columns">
+<div class="renal-panel"><span>UCl &lt;25 mEq/L</span><strong>偏向 chloride-depletion／saline-responsive 生理</strong><p>常見於嘔吐、胃管抽吸、已停用利尿劑後的氯缺乏等。保留氯的反應比單看尿鈉更有用。</p><div class="renal-leaf"><strong>特殊陷阱</strong><p>Bicarbonaturia 可使 Na⁺ 隨 HCO₃⁻ 排出；即使有效循環不足，UNa／FENa 仍可能偏高</p></div></div>
+<div class="renal-panel"><span>UCl &gt;40 mEq/L</span><strong>不能簡化成「病人一定不缺容量」</strong><p>先回查正在使用的 loop／thiazide。若確定持續高尿氯，再合併尿鉀、血鉀與血壓區分：</p><div class="renal-leaf"><strong>血壓偏高</strong><p>考慮礦物皮質素活性增加等高血壓相關原因</p></div><div class="renal-leaf"><strong>血壓正常或偏低</strong><p>考慮目前利尿劑作用、Bartter／Gitelman 等；尿鉀與臨床條件有助分流</p></div></div>
+</div>
+<div class="renal-footnote">原書 UCl 25–40 mEq/L 之間不是已完成分類；<strong>UCl（mEq/L）不等於本題的 FECl（%）</strong>，不能將圖上的濃度門檻直接套到分率排泄。</div>
+<figcaption><strong>圖 2｜依《Pocket Medicine》9E PDF 第 164–165 頁 Figure 4-3「Approach to metabolic alkalosis」獨立重繪主要分流。</strong> 原圖還進一步使用 UK 與 blood pressure；本圖依 Q25 的學習目標保留它們的診斷角色而未照搬全部格子。它是代謝性鹼中毒的原因分流，不是對 prerenal AKI 或 AIN 的確診演算法。</figcaption>
+</figure>
 
 ### 其餘選項為什麼不是本題最適合的選擇？
 
