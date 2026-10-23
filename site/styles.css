@@ -219,3 +219,36 @@
   }
   .reading-prose .math-display math{font-size:1.03em}
 }
+
+
+/* Official exam questions are indexed by ROC exam year, not publication date. */
+.article .exam-archive-entry, .exam-archive-entry {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin:1.4em 0 2em}
+.article .exam-archive-entry a, .exam-archive-entry a {display:flex;flex-direction:column;gap:6px;padding:19px 20px;background:var(--surface);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink)}
+.article .exam-archive-entry a:hover, .exam-archive-entry a:hover{border-color:var(--brand)}
+.article .exam-archive-entry strong, .exam-archive-entry strong{font-size:.94em;line-height:1.45}
+.article .exam-archive-entry span, .exam-archive-entry span{font-size:.76em;color:var(--muted);line-height:1.7}
+.article .exam-year{padding-top:2px;scroll-margin-top:34px}
+.article .exam-year>h2{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:1.35em;line-height:1.35;margin:1.6em 0 .9em}
+.article .exam-year>h2 span{font-size:.53em;color:var(--muted);font-weight:500;white-space:nowrap}
+.article .exam-paper{margin:14px 0 30px;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
+.article .exam-paper h3{margin:0;padding:17px 20px;background:var(--brand-light);border-bottom:1px solid var(--line);font-size:.88em;color:var(--ink);line-height:1.65}
+.article .exam-lesson-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
+.article .exam-lesson{margin:0;padding:18px 20px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);min-width:0}
+.article .exam-lesson-title{display:block;color:var(--ink);text-decoration:none}
+.article .exam-lesson-title strong{display:block;font-size:.94em;line-height:1.55}
+.article .exam-lesson-title small{display:block;font-size:.73em;line-height:1.65;color:var(--muted);margin-top:8px}
+.article .exam-question-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.article .exam-question-links a{display:inline-block;padding:5px 11px;min-height:32px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--brand);font-weight:700;font-size:.77em;line-height:1.55;text-decoration:none}
+.article .exam-question-links a:hover{border-color:var(--brand);background:var(--brand-light)}
+.article .exam-question-anchor{display:block;position:relative;top:-18px;visibility:hidden}
+.reader-exam-origin{margin-top:22px;display:flex;align-items:flex-start;flex-wrap:wrap;gap:8px 12px;font-size:12px;line-height:1.75}
+.reader-exam-origin>span{color:var(--muted);font-size:11px;white-space:nowrap}
+.reader-exam-origin>a{color:var(--brand);text-decoration:none;border-bottom:1px solid var(--line)}
+@media(max-width:650px){
+  .article .exam-year>h2{flex-wrap:wrap;font-size:1.19em;gap:5px;margin:1.55em 0 .7em}
+  .article .exam-paper h3{padding:14px 14px}
+  .article .exam-lesson{padding:15px 15px}
+  .article .exam-lesson-list{grid-template-columns:minmax(0,1fr)}
+  .reader-exam-origin{margin-top:15px;font-size:11px}
+  .article .exam-archive-entry{grid-template-columns:minmax(0,1fr)}
+}
