@@ -48,5 +48,8 @@ def load_pages(root):
                 raise ValueError("Recovered original requires its source fingerprint")
             if hashlib.sha256(path.read_bytes()).hexdigest() != fingerprint:
                 raise ValueError("Recovered original changed: " + row["source"])
+    # Mandatory diagram/table provenance check: new teaching pages must disclose actual source review.
+    from figure_gate import validate_figure_gate
+    validate_figure_gate(root, pages)
     return pages
 
