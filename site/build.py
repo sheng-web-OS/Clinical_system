@@ -26,7 +26,7 @@ class Renderer(mistune.HTMLRenderer):
             self.h2+=1
             ident="part-"+str(self.h2)
             self.headings.append((ident,re.sub(r"<[^>]+>","",text)))
-            question = re.match(r"^第\\s*(\\d+)\\s*題", re.sub(r"<[^>]+>", "", text))
+            question = re.match(r"^第\s*(\d+)\s*題", re.sub(r"<[^>]+>", "", text))
             anchor = ('<span class="exam-question-anchor" id="q-' + str(int(question.group(1))) + '"></span>') if question else ''
             return '<h2 id="'+ident+'">'+anchor+text+'</h2>'
         return '<h'+str(level)+'>'+text+'</h'+str(level)+'>'
