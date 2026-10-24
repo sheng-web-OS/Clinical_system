@@ -36,6 +36,15 @@ class HeartFailureFigureAudit(unittest.TestCase):
         self.assertIn("不是原書圖像截圖", article)
         self.assertIn("LVEDV", article)
         self.assertIn("PCWP", article)
+        # Reading test: the two mechanisms remain visible in semantic HTML on narrow phones.
+        self.assertIn('class="hemo-figure hemo-flow-figure"', article)
+        self.assertIn("LVEDV 是否增加？", article)
+        self.assertIn("路徑 A · LVEDV ↑", article)
+        self.assertIn("路徑 B · LVEDV 未↑", article)
+        self.assertIn("total SV ≠ forward SV", article)
+        css = (ROOT/"site/styles.css").read_text("utf8")
+        self.assertIn("@media(max-width:375px)", css)
+        self.assertIn(".article #lv-filling-branches{font-size:clamp", css)
 
     def test_unverified_renal_perfusion_still_pending(self):
         record = json.loads((ROOT/"audit/figure-gate.json").read_text("utf8"))
