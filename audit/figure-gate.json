@@ -107,6 +107,31 @@
           "scope_limit": "UCl 濃度門檻不能套到 FECl 分率，正在使用利尿劑的情境也無法單憑尿氯判斷有效循環量或腎小管傷害。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-24-asthma-variable-airflow.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/asthma-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E reader PDF pages 79–80, Figure 2-1 Approach to abnormal PFTs; GINA 2026 Summary Guide pages 6–7, Figure 1 and Table 1 with notes a–g",
+          "source_token": "Approach to abnormal PFTs",
+          "mode": "illustrated",
+          "anchor": "asthma-evidence-ladder",
+          "caption_token": "原創重繪，不是原書流程圖",
+          "teaching_role": "分開 obstruction、variable airflow 與 bronchodilator responsiveness，並把一次正常 spirometry 改寫為需要調整取樣條件的診斷問題。",
+          "scope_limit": "原創四步 evidence ladder 並非原書或 GINA 圖的完整重製；成人門檻不能直接套用 6–17 歲兒童，陰性單次測試也不能獨自排除氣喘。"
+        },
+        {
+          "locator": "Pocket Medicine 9E reader PDF pages 82–83, Severity of Asthma Exacerbation table; GINA 2026 Summary Guide pages 34–35, Figure 9 with abbreviations and oxygen-saturation footnote",
+          "source_token": "Severity of Asthma Exacerbation",
+          "mode": "illustrated",
+          "anchor": "asthma-deterioration-loop",
+          "caption_token": "原創因果圖，不是 GINA",
+          "teaching_role": "把氣道阻力、dynamic hyperinflation、低 PaCO2 代償、立即處置與一小時內重評串成時間軌跡，防止把 quiet chest 或正常 PaCO2 誤讀為改善。",
+          "scope_limit": "此圖只用於辨識成人／青少年急性惡化與升級照護，不是插管門檻、兒科 PRAM、呼吸器設定或個別藥物劑量處方。"
+        }
+      ]
     }
   }
 }
+

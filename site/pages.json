@@ -430,5 +430,29 @@
     "subtitle": "依民國年度、考試梯次、階段與科目查找官方真題；同時保留臨床主題的完整推理文章。",
     "collection": "xiaoma-internal-medicine",
     "section": "歷屆國考題"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-24-asthma-variable-airflow.md",
+    "output": "xiaoma-20261024-asthma-variable-airflow.html",
+    "title": "今天沒有喘，為什麼仍不能排除氣喘？",
+    "subtitle": "從可變呼氣氣流、PFT 與 DLCO，走到急性惡化的 silent chest 與通氣疲乏。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-asthma-sources.html",
+    "date": "2026-10-24",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/asthma-sources.md",
+    "output": "xiaoma-asthma-sources.html",
+    "title": "氣喘與可變氣流：原圖表、指南與真題核讀",
+    "subtitle": "Pocket Medicine 9E、GINA 2026、兩道考選部真題與原創重繪邊界。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
+
