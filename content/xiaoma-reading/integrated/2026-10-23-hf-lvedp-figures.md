@@ -29,22 +29,23 @@
 
 原書 Figure 1-2 開始於 left-sided heart failure，但讀者必須補回一個先決條件：肺循環感受到的是肺靜脈／左心房壓力。PCWP 主要反映左房壓力，在沒有顯著肺靜脈、左房或二尖瓣阻塞等干擾時，才可將它與 LV filling pressure 連接；例如 mitral stenosis 或巨大 v wave 時，**平均 PCWP 與 LVEDP 不能無條件畫上等號**。
 
-<figure class="hemo-figure" id="lv-filling-branches">
-<div class="hemo-figure-title"><span>FIGURE 02 · PRESSURE–VOLUME CAUSAL BRANCHING</span><strong>同樣 filling pressure 升高，為何不是同一種心室問題？</strong></div>
-<div class="hemo-flow-root"><small>確認有左側／肺靜脈鬱血</small><strong>檢查是否可歸因於 elevated LV filling pressure</strong><p>先排除不宜把左房／肺靜脈壓直接等同 LVEDP 的瓣膜、肺靜脈與量測條件</p></div>
-<div class="hemo-flow-arrow" aria-hidden="true">↓</div>
-<div class="hemo-flow-grid" role="group" aria-label="左心室舒張末期壓與容量分層：LVEDV 增加時分為排空不足與總搏出量增加，LVEDV 未增加時考慮順應性下降或外部限制">
-<div class="hemo-flow-branch">
-<div class="hemo-flow-branchhead"><small>路徑 A</small><strong>LVEDP ↑ 且 LVEDV ↑</strong><p>壓力升高，且心室內的舒張末期血量確實較多</p></div>
-<div class="hemo-flow-leaf"><strong>ESV ↑ → 排空受限</strong><p>收縮力下降或 afterload 過高等情況，可增加收縮末期殘留量；仍需另評估實際 cardiac output。</p></div>
-<div class="hemo-flow-leaf"><strong>Total SV ↑ → 高流量／逆流等情境</strong><p>高輸出狀態與瓣膜逆流的機轉不同；在逆流／分流時，total SV 不能當作 effective forward SV。</p></div>
+<figure class="hemo-figure hemo-flow-figure" id="lv-filling-branches">
+<div class="hemo-figure-title"><span>FIGURE 02 · LVEDP × LVEDV</span><strong>LVEDP 升高，心室容量也一定增加嗎？</strong></div>
+<div class="hemo-flow-context"><strong>起點｜有左側／肺靜脈鬱血</strong><p>先核對瓣膜、肺靜脈及量測條件：左房壓或平均 PCWP 不必然等於 LVEDP。</p></div>
+<div class="hemo-flow-question"><small>若確認 LVEDP ↑，下一問</small><strong>LVEDV 是否增加？</strong></div>
+<div class="hemo-flow-grid" role="group" aria-label="LVEDP 升高後依 LVEDV 是否增加區分兩條路徑，各路徑內機轉可並存">
+<section class="hemo-flow-path hemo-flow-path-a" aria-label="路徑 A：舒張末期容量增加">
+<div class="hemo-flow-pathhead"><small>路徑 A · LVEDV ↑</small><strong>容量確實增加</strong></div>
+<div class="hemo-flow-leaf"><strong>ESV ↑｜排空不足</strong><p>收縮力下降或 afterload 過高，使收縮末期殘留量增加。</p></div>
+<div class="hemo-flow-leaf"><strong>Total SV ↑｜高流量／逆流</strong><p>兩者機轉不同；逆流時 total SV ≠ forward SV。</p></div>
+</section>
+<section class="hemo-flow-path hemo-flow-path-b" aria-label="路徑 B：舒張末期容量未增加">
+<div class="hemo-flow-pathhead"><small>路徑 B · LVEDV 未↑</small><strong>容量沒變大，壓力仍高</strong></div>
+<div class="hemo-flow-leaf"><strong>心肌變硬／鬆弛受限</strong><p>順應性降低，或舒張期鬆弛不完全。</p></div>
+<div class="hemo-flow-leaf"><strong>心包／外部約束</strong><p>外部壓力限制充盈，不等同心肌本身病變。</p></div>
+</section>
 </div>
-<div class="hemo-flow-branch">
-<div class="hemo-flow-branchhead"><small>路徑 B</small><strong>LVEDP ↑ 但 LVEDV 未↑</strong><p>不是因為心室內血量明顯增多才出現高壓</p></div>
-<div class="hemo-flow-leaf"><strong>Myocardial stiffness／relaxation</strong><p>充盈與順應性異常，使較少的容積變化也可伴隨較高的 filling pressure。</p></div>
-<div class="hemo-flow-leaf"><strong>External／pericardial constraint</strong><p>心包或心室外部限制影響充盈；與心肌本身病變不可視為相同病因。</p></div>
-</div>
-</div>
+<div class="hemo-flow-takeaway"><strong>讀圖重點</strong><span>LVEDP ↑ 不代表 LVEDV 必然↑；total SV ↑ 也不代表有效前向輸出↑。</span></div>
 <figcaption><strong>圖 2｜根據《Pocket Medicine》9E PDF 第 35 頁 Figure 1-2「Approach to left-sided heart failure」獨立整理。</strong> 不複製原圖；以上是為協助區分 elevated pressure、EDV、ESV 與 total/forward flow 的因果重繪。原圖右端的 diastolic／pericardial disease 分支與左端 systolic／high SV failure 分支均保留，診斷前仍須核對瓣膜與左房／肺靜脈病因。</figcaption>
 </figure>
 
