@@ -17,7 +17,9 @@ class ExamArchiveContract(unittest.TestCase):
         cls.pages = load_pages(ROOT)
 
     def test_108_first_stage_two_med3_has_exactly_twelve_distinct_questions(self):
-        rows = [p for p in self.pages if p.get("exam")]
+        rows = [p for p in self.pages if p.get("exam") and
+                (p["exam"]["year_roc"], p["exam"]["sitting"], p["exam"]["stage"], p["exam"]["subject"]) ==
+                (108, 1, 2, "醫學（三）")]
         self.assertEqual(len(rows), 3)
         for p in rows:
             exam = p["exam"]
@@ -26,7 +28,9 @@ class ExamArchiveContract(unittest.TestCase):
             body = (ROOT / p["source"]).read_text("utf8")
             headings = {int(x) for x in re.findall(r"(?m)^## 第 (\d+) 題", body)}
             self.assertEqual(headings, set(exam["question_numbers"]))
-        self.assertEqual(validate_exam_catalog(self.pages),
+        baseline = {key for key in validate_exam_catalog(self.pages)
+                    if key[:4] == (108, 1, 2, "醫學（三）")}
+        self.assertEqual(baseline,
                          {(108, 1, 2, "醫學（三）", q)
                           for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 76)})
 
@@ -39,7 +43,8 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertIn("醫學（三）", index)
         self.assertNotIn('id="year-2026"', index)
         self.assertIn('href="xiaoma-exams.html#year-108"', teaser)
-        self.assertEqual(index.count('class="exam-lesson"'), 3)
+        self.assertEqual(index.count('class="exam-lesson"'),
+                         sum(bool(page.get("exam")) for page in self.pages))
         for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 76):
             self.assertIn("#q-" + str(q) + '"', index)
 

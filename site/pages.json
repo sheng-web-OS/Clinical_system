@@ -453,6 +453,72 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-25-pneumonia-severity.md",
+    "output": "xiaoma-20261025-pneumonia-severity.html",
+    "title": "CURB-65 很低，為什麼病人仍可能需要加護病房？",
+    "subtitle": "分開肺炎診斷、死亡風險、器官支持與抗藥菌風險，再用治療反應重新決定。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與感染",
+    "references": "xiaoma-pneumonia-sources.html",
+    "date": "2026-10-25",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pneumonia-sources.md",
+    "output": "xiaoma-pneumonia-sources.html",
+    "title": "肺炎：原表、嚴重度與正式真題來源",
+    "subtitle": "Pocket 9E 原頁、ATS/IDSA 與 ATS 更新、兩道考選部題目及更正。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/114-2-med3-q45.md",
+    "output": "xiaoma-exam-114-2-med3-q45.html",
+    "title": "CURB-65 沒有心跳，代表心跳不重要嗎？",
+    "subtitle": "114 年第二次・醫師二階・醫學（三）Q45：工具變項與未被量測的生理風險。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與感染・官方真題",
+    "references": "xiaoma-pneumonia-sources.html",
+    "date": "2026-10-25",
+    "navigation": false,
+    "review": "author_source_check",
+    "exam": {
+      "year_roc": 114,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        45
+      ]
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/113-2-med3-q49.md",
+    "output": "xiaoma-exam-113-2-med3-q49.html",
+    "title": "肺炎鏈球菌的線索，為什麼還要看胸膜腔？",
+    "subtitle": "113 年第二次・醫師二階・醫學（三）Q49：病原線索、抗綠膿桿菌依據與胸水評估。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與感染・官方真題",
+    "references": "xiaoma-pneumonia-sources.html",
+    "date": "2026-10-25",
+    "navigation": false,
+    "review": "author_source_check",
+    "exam": {
+      "year_roc": 113,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        49
+      ]
+    }
   }
 ]
-
