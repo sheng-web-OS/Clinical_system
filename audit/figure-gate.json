@@ -203,22 +203,31 @@
       "source_review": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
       "items": [
         {
-          "locator": "Pocket Medicine 9th edition reader PDF p105 Figure 2-5 Workup of acute hypoxemia and A-a branch",
+          "locator": "Pocket Medicine 9E PDF p105 Figure 2-5 Workup of acute hypoxemia; Reddy 2014 A-a 18 and Li 2026 A-a 59.2 case reports",
           "source_token": "Figure 2-5 Workup of acute hypoxemia",
           "mode": "illustrated",
           "anchor": "oxygen-locations",
-          "caption_token": "Pocket Medicine",
-          "teaching_role": "把 PAO2 與 PaO2 定義分開，先定位肺泡氧起點和動脈氧合的不同失敗位置，再開始計算 A-a。",
-          "scope_limit": "原創三欄示意並非原書圖的全分支重製；不以未知 FiO2 或高海拔條件套用海平面值，也不由 A-a 單獨診斷特定疾病。"
+          "caption_token": "Reddy 2014",
+          "teaching_role": "用不同真實病例的同一套肺泡氣體模型繪出 PaO2 和 PAO2 落差，讓讀者先看來源證據再看重算，避免只使用無來歷 ABG。",
+          "scope_limit": "原文 A-a 與海平面近似式重算值不完全相同，明示假設與差值；不能由正常 A-a 排除共病或由擴大 A-a 指定病名。"
         },
         {
-          "locator": "Pocket Medicine 9th edition reader PDF p105 Figure 2-5 shunt versus V/Q mismatch and O2 response branches",
+          "locator": "Pocket Medicine 9E PDF p105 Figure 2-5 100% O2 branch: shunt vs VQ mismatch, original ventilation perfusion teaching diagram",
           "source_token": "100% O₂ branch",
           "mode": "illustrated",
           "anchor": "vq-spectrum",
           "caption_token": "Pocket Medicine",
-          "teaching_role": "把 V/Q zero、low V/Q 與 dead-space physiology 畫成不同區域，解釋真分流為何對增加氧氣反應受限而低 V/Q 尚可改善。",
-          "scope_limit": "生理光譜是獨立重繪，並非原書三分支複製；高濃度氧氣仍能增加正常肺區溶解氧，反應不佳也不是分流的確診試驗。"
+          "teaching_role": "以帶血流與進氣管道的肺泡幾何示意替代文字分類卡，指出 low VQ 尚有氧可進入與 true shunt 無通氣但保留血流。",
+          "scope_limit": "肺單位不是全肺也不是實際比例，true shunt 對 FiO2 並非絕對零反應，不能把試驗當作單一疾病的確診。"
+        },
+        {
+          "locator": "Allaham et al Front Cardiovasc Med 2025 1715242 original Figure 1-3, pulmonary vein oxygen saturation 97 and left atrial saturation 83",
+          "source_token": "Allaham H",
+          "mode": "illustrated",
+          "anchor": "pfo-mixing",
+          "caption_token": "Figure 1–3",
+          "teaching_role": "繪製肺靜脈和右向左心房分流的氧含量流向，從兩處真正採血位置建立缺氧血進左心房的病理機轉。",
+          "scope_limit": "原病例只有兩處氧飽和度，非 PAO2、PaO2 或 Qs/Qt；圖示箭頭未定量血流或壓差，不能代表所有 PFO 的處置適應症。"
         }
       ]
     },
@@ -227,13 +236,40 @@
       "source_review": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
       "items": [
         {
-          "locator": "Pocket Medicine 9th edition reader PDF p106 Etiologies of High PaCO2 table with Won't Breathe and Can't Breathe branches and footnote",
-          "source_token": "Etiologies of High",
+          "locator": "Pocket Medicine 9E PDF p106 Etiologies of High PaCO2 formula RR(VT-VD); original proportions of dead space and effective ventilation",
+          "source_token": "High PaCO₂",
+          "mode": "illustrated",
+          "anchor": "deadspace-example",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "同一分鐘換氣量下用色塊直接顯示快淺呼吸死腔比例增加和有效換氣量減少，令公式中的分母變得可見。",
+          "scope_limit": "此為固定 VD 及 CO2 產生量的自編模型，橫條用比例非絕對呼吸量長度，不得當 MG/OHS 真實患者測值。"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF p106 Etiologies of High PaCO2 four Won't Breathe and Can't Breathe columns",
+          "source_token": "Etiologies of High PaCO₂",
           "mode": "illustrated",
           "anchor": "ventilatory-chain",
           "caption_token": "Pocket Medicine",
-          "teaching_role": "將中樞驅動、神經肌肉與胸壁壓力、肺氣道阻力和 dead space 串成同一個因果鏈，避免將高 PaCO2 與呼吸次數直接等同。",
-          "scope_limit": "原創連續路徑不是原表逐項照搬；MG、OHS、COPD 可以在不同環節同時失敗；呼吸肌檢查與單次 ABG 都不能作單獨插管指令。"
+          "teaching_role": "把中樞驅動、神經肌肉產壓、胸壁及氣道力學和死腔效率連成連續功能圖，讀者可分清失敗位置。",
+          "scope_limit": "疾病可同時影響不同環節，呼吸努力與生理代償會改變表現，這不是單一病名的確診分類圖。"
+        },
+        {
+          "locator": "Kim WH et al KJIM 2010 MG case original serial blood gases, Figure 1-4 and day 1/day 6 descriptions",
+          "source_token": "Kim WH, et al.",
+          "mode": "illustrated",
+          "anchor": "mg-trajectory",
+          "caption_token": "Kim 2010",
+          "teaching_role": "依真實 MG 病例把 RR 上升、PaCO2 增加、pH 降低與不同供氧條件並列，讓讀者識別補氧好轉不等於通氣恢復。",
+          "scope_limit": "原研究未提供同期 VT VD 或 CO2 production，不能從兩次 RR 和 PaCO2 倒算患者 V̇A；不把動態病例當成所有 MG 都會相同。"
+        },
+        {
+          "locator": "Hongo T et al 2024 Extreme Obesity OHS case Table 1 and Figure 3 ventilation time course",
+          "source_token": "Miyoshi Y, et al.",
+          "mode": "illustrated",
+          "anchor": "ohs-trajectory",
+          "caption_token": "Miyoshi et al. 2024",
+          "teaching_role": "以實際 OHS 病例的入院、因不配合而插管、改善後拔管與後續 NIV 轉變，說明介面安全性和治療條件必須動態再評估。",
+          "scope_limit": "秤重達設備上限 BMI 為至少 81.1，且多重治療並行，不能用前後血氣證明 NIV 和插管的普遍比較效果。"
         }
       ]
     }
