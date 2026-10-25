@@ -72,3 +72,16 @@
 - **PDF p108，Ventilator Modes and Principles／Variables on the Ventilator**：核查 FiO₂、PEEP 與壓力支持的功能及可能循環代價；本篇不提供侵襲性呼吸器參數處方。
 
 這是對指定原圖表及正文關係的核對，未逐一驗證原書所有引用研究，也不等於獨立醫師同儕審查、手機閱讀驗收或讀者學習效果試驗。
+
+<a id="case-reports"></a>
+
+## 用真實 Case Report 補足推理缺口：原始紀錄與界線
+
+以下病例皆為不同病人、不同照護情境；只抽取可由原始報告核對的事件與量測，沒有將不同病例資料合併成同一條時間線。章首 RR 8、SpO₂ 88%→96%、pH 7.24、PaCO₂ 68、PaO₂ 90 是自編教學病例，**不是**下列任何論文的實際血氣。此處不複製原論文插圖或監測曲線；需要者可由連結開啟原文。
+
+1. **Lee YH, et al.** *Hypercapnic coma at the postanesthesia care unit: A case report.* Korean J Anesthesiol. 2009;57:403–406. [DOI](https://doi.org/10.4097/kjae.2009.57.3.403)・[原始全文 PDF](https://ekja.org/upload/pdf/kjae-57-403.pdf)・[PubMed 摘要](https://pubmed.ncbi.nlm.nih.gov/30625897/)。摘要核對：59 歲、術前 morphine、PACU 面罩 6 L/min、30 分鐘後無反應但 SpO₂ 98–99%、插管後血氣嚴重高碳酸性酸中毒、通氣後意識恢復；**本文不將自編 ABG 數字套入此病例**。不能由病程單獨排除麻醉殘餘等共同因素，也不可從單一個案推導普遍插管門檻。
+2. **Fleming E, et al.** *Non-invasive respiratory volume monitoring identifies opioid-induced respiratory depression in an orthopedic surgery patient with diagnosed obstructive sleep apnea: a case report.* J Med Case Rep. 2015;9:94. [原文及 Figure 2](https://link.springer.com/article/10.1186/s13256-015-0577-9)・[DOI](https://doi.org/10.1186/s13256-015-0577-9)。正文核對：54 歲 OSA 術後病人、PACU hydromorphone 0.4 mg 前 MV 3.70 L/min、後 2.37 L/min，RR 12–18，SpO₂ 無相應警訊；照護團隊看不到額外監測；病例未報告發生明確 CO₂ 昏迷。原文 Figure 2 E／F 是給藥、分鐘換氣量、RR 與 SpO₂ 的時間對照。**COI**：作者 EF 為監測公司顧問、CV 持股；單案不能建立新裝置的普遍臨床效益。
+3. **Allaham H, et al.** *Patent foramen ovale as a rare cause of sudden refractory hypoxemia: a case report.* Front Cardiovasc Med. 2025;12:1715242. [完整病例與 Figures 1–3](https://pmc.ncbi.nlm.nih.gov/articles/PMC12719297/)・[DOI](https://doi.org/10.3389/fcvm.2025.1715242)。正文核對：80 歲肋骨骨折後、初期懷疑疼痛低換氣、處理疼痛後仍高度依賴氧；100% 高流量氧下 SpO₂ 仍在 80% 後段、CT 未示主要肺病、bubble／ICE 證實大型 PFO 右向左分流；肺靜脈飽和度 97%、左房 83%，封堵後 24 小時內室內空氣 SpO₂ 98%。兩個採血位置不可誤標為 A–a 或 PaO₂；正式姿勢別血氧數字未被記錄，不能自行補出。
+4. **Chai AL, et al.** *Critical iron deficiency anemia with record low hemoglobin: a case report.* J Med Case Rep. 2021;15:472. [完整病例與 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC8439022/)・[DOI](https://doi.org/10.1186/s13256-021-03024-9)。正文核對：42 歲、SpO₂ 100%（room air）、RR 17、Hb 1.4 g/dL、慢性經血過多及代償；住院輸血、補鐵與止血相關評估後 Hb 約 8.1。原報告未提供足以直接計算實際 CO、DO₂、氧萃取率或器官缺血的完整量測，故不能將嚴重貧血直接寫成此人已發生組織缺氧與休克。
+
+**選材目的與侷限：** 四個病例各填一個不可省略的中介：SpO₂ 不代表通氣、RR 不代表潮氣量、補氧無法直接接觸右向左分流血、飽和度不代表 Hb 含量。病例對生理現象有示範性，**不構成治療效益的比較試驗、NIV／插管門檻或輸血處方**。原稿《Pocket Medicine》第九版圖表及既有氧療／NIV 指南，仍由本頁前述段落獨立支撐。
