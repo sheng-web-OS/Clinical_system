@@ -4,6 +4,14 @@
 
 這不是假想題目。**Kim 等人 2010 年的 MG 病例**就是這樣惡化；但如果只把兩次數據貼進「PaCO₂ 與有效肺泡通氣成反比」的公式，仍沒有真正理解患者。這篇依《Pocket Medicine》第九版 PDF 第 106 頁 **Etiologies of High PaCO₂** 原表，從驅動、呼吸肌、胸壁到肺部負荷分層追問，再以另一例真實 OHS 病例檢查：何時需要機械通氣、為何有些人不能安全使用 NIV。
 
+<figure id="pocket-hypercapnia-original" class="pocket-source-shot">
+<div class="pocket-source-head">《Pocket Medicine》第九版原表｜PDF 第 106 頁 Etiologies of High PaCO₂</div>
+<a href="pocket-medicine-9e-high-paco2.png" target="_blank" rel="noopener" aria-label="開啟小麻第九版高碳酸血症病因表與公式，可放大閱讀">
+<img src="pocket-medicine-9e-high-paco2.png" width="1102" height="745" loading="eager" alt="Pocket Medicine 9E 原始 Hypercapnia 公式與 Etiologies of High PaCO2 病因表，Won't Breathe 和 Can't Breathe 四欄、呼吸驅動、神經肌肉、胸壁胸膜、肺氣道疾病" />
+</a>
+<figcaption><strong>小麻原圖表：Etiologies of High PaCO₂。</strong>擷取自你提供的第九版 PDF 第 106 頁，保留上方 V̇CO₂／RR(VT−VD) 公式、Won't Breathe／Can't Breathe 分類與腳註。手機點圖片可開啟原尺寸放大；以下三問將四欄重新串成因果鏈。<a href="../respiratory-deep-dive-sources.md#pocket-hypercapnia">原表來源與限制</a>。</figcaption>
+</figure>
+
 ## 第零問｜高 PaCO₂ 不是「呼吸少」，而是 CO₂ 清除跟不上產生
 
 先把四個不該互換的量講清楚。**V̇CO₂** 是組織每分鐘產生並由肺排出的 CO₂ 量（mL/min）；**VT** 是一口氣的 tidal volume（潮氣量，mL）；**RR** 是每分鐘的呼吸次數；**V̇E = RR × VT** 是每分鐘總共進出呼吸系統的空氣。這些氣體不是全部都參與 CO₂ 清除。
