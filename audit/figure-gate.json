@@ -131,7 +131,39 @@
           "scope_limit": "此圖只用於辨識成人／青少年急性惡化與升級照護，不是插管門檻、兒科 PRAM、呼吸器設定或個別藥物劑量處方。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-pneumonia-severity.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pneumonia-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E reader PDF page 247, Microbiology of Pneumonia table and adjacent definitions; CAP vs HAP/VAP and host context",
+          "source_token": "Microbiology of Pneumonia",
+          "mode": "illustrated",
+          "anchor": "pneumonia-three-decisions",
+          "caption_token": "Pocket Medicine 第九版 PDF",
+          "teaching_role": "把原表病原情境與原頁診斷前提連回三個不同判斷，避免以單一分數或影像直接推定當下支持與抗藥菌範圍。",
+          "scope_limit": "此為本篇重新組織的教學模型，未重製原表全部病原與比例，也不能由任一情境線索確診特定菌種。"
+        },
+        {
+          "locator": "Pocket Medicine 9E reader PDF page 248, Treatment table: CAP outpatient, ward and ICU rows plus risk-factor clauses",
+          "source_token": "Scenario／Regimen",
+          "mode": "illustrated",
+          "anchor": "pneumonia-treatment-branches",
+          "caption_token": "Pocket Medicine 第九版 PDF",
+          "teaching_role": "保留 ward 與 ICU 的用藥情境差異，再把抗藥菌風險、採檢與收窄的出口接起，避免將嚴重度誤當抗藥菌確診。",
+          "scope_limit": "只轉譯本篇成人CAP核心分支，不是原書完整抗菌表或個別病人處方；藥物仍需本地風險、過敏、器官功能及敏感性。"
+        },
+        {
+          "locator": "ATS 2025 CAP guideline Table 2; corroborating IDSA CAP Clinical Pathway PDF page 3 Table 2, severe CAP major and minor criteria",
+          "source_token": "Table 1–2",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf#page=3",
+          "teaching_role": "提供完整severe CAP原表讓讀者對回三項minor criteria與一項major criterion的分流依據，避免把CURB-65當相同用途。",
+          "scope_limit": "條件用於嚴重度與照護評估，不能當固定插管處方，也不得為等待分數齊全而延誤已惡化病人的立即支持。",
+          "why_link_instead": "官方原表以直接PDF頁次連結供讀者核對，本站以新文字解釋與自編病例呈現，不複製出版社圖表像素或版面。"
+        }
+      ]
     }
   }
 }
-
