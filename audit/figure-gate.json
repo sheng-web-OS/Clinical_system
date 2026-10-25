@@ -249,7 +249,7 @@
           "source_token": "Kim et al.",
           "mode": "illustrated",
           "anchor": "mg-trajectory",
-          "caption_token": "Figure 1–4",
+          "caption_token": "Kim 2010",
           "teaching_role": "在同一個真實MG患者身上比對RR和PaCO2逆向變化及意識惡化，把呼吸頻率與有效肺泡換氣的區別接回具體臨床病程。",
           "scope_limit": "兩次PaO2供氧條件不同且未量到同期VT VD VCO2；不得由這張重繪長條圖計算實際肺泡通氣或主張單一MG機轉。"
         },
@@ -258,18 +258,18 @@
           "source_token": "Bohr dead-space",
           "mode": "illustrated",
           "anchor": "deadspace-example",
-          "caption_token": "一分鐘呼吸很多次",
+          "caption_token": "Pocket Medicine",
           "teaching_role": "以兩種相同每分鐘總通氣量但不同呼吸深度的長條分段，顯示相同VT死腔佔比如何使有效肺泡通氣改變。",
           "scope_limit": "這是固定每口VD和穩態VCO2的自編公式模型，不是病人的實測肺泡通氣或血氣，也不是所有病人的適用呼吸器頻率。"
         },
         {
-          "locator": "2026 ATS noninvasive respiratory support guideline plus Pocket Medicine 9E NIV and oxygen delivery chapter comparative pressure concepts",
-          "source_token": "2026 ATS",
+          "locator": "Miyoshi et al 2024 American Journal Case Reports extreme obesity OHS original Table 1 admission ABG and Figure 3 ventilator clinical timeline",
+          "source_token": "Miyoshi et al.",
           "mode": "illustrated",
-          "anchor": "pressure-cycle",
-          "caption_token": "Bilevel 不等於只供氧",
-          "teaching_role": "用吸氣與呼氣壓力的時間序列，說明IPAP-EPAP才是雙壓NIV壓力支持的一個關鍵量，將換氣生理接到治療而不跳過名詞。",
-          "scope_limit": "僅自編IPAP15 EPAP5的定性週期，並非患者實測波形或建議設定，實際潮氣量及安全取決於病人、同步、漏氣及氣道風險。"
+          "anchor": "ohs-trajectory",
+          "caption_token": "Miyoshi et al. 2024",
+          "teaching_role": "把入院時因躁動無法安全試NIV的決策與插管後第15天血氣、拔管後才改用非侵襲性通氣放在同一時間軸，避免將侵襲通氣效果誤歸NIV。",
+          "scope_limit": "圖為不同時間點的原文摘要，供氧條件與處置不同，不能將PaCO2變化全歸功呼吸器，也不把秤上限BMI當成精確重量。"
         }
       ]
     }
