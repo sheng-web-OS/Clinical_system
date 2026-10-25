@@ -89,7 +89,7 @@ CURB-65 的簡潔正是優點：臨床能快速辨識某些高死亡風險患者
 
 如果病人**尚未插管**，但氧氣需求增加、呼吸功持續升高、開始疲乏、出現循環不穩或無法保護氣道，同樣需要立即重新評估呼吸支持與照護層級；不能為了符合「三個 minor」才安排升級。ICU、具備相應呼吸監測能力的高依賴病房或其他單位，實際能提供的支持不同，**需要什麼支持**比床位名稱更重要。
 
-[查看 ATS/IDSA 原始 severe CAP criteria 與建議](https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/)。
+[查看 ATS/IDSA 原始 severe CAP criteria 與建議](https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/)，以及 [IDSA CAP Clinical Pathway 第 3 頁的 severe CAP Table 2](https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf#page=3)。
 
 ## 05　真實病例中，住進 ICU 並沒有回答所有問題
 
