@@ -4,6 +4,14 @@
 
 《Pocket Medicine》第九版 PDF 第 105 頁 **Figure 2-5：Workup of acute hypoxemia**，其實連續進行三項生理判斷：肺泡裡原本可提供多少氧、血液為什麼沒有拿到預期的氧、增加 FiO₂ 為什麼有時不能讓動脈氧合恢復。本篇用三個可追溯的病例和原創機轉圖展開這些判斷；保留病例原始觀察與本篇估算的差別。先閱讀[基礎篇的 SpO₂／PaO₂／CaO₂ 與換氣定義](2026-10-21-hypoxemia.md#part-1)，再進入以下深究也可以。
 
+<figure id="pocket-hypoxemia-original" class="pocket-source-shot">
+<div class="pocket-source-head">《Pocket Medicine》第九版原圖｜PDF 第 105 頁 Figure 2-5</div>
+<a href="pocket-medicine-9e-fig2-5-hypoxemia.png" target="_blank" rel="noopener" aria-label="開啟小麻第九版 Figure 2-5 低血氧原圖，可放大閱讀">
+<img src="pocket-medicine-9e-fig2-5-hypoxemia.png" width="1095" height="654" loading="eager" alt="Pocket Medicine 9E 原始 Figure 2-5 Workup of acute hypoxemia 流程圖：ABG 和 A–a gradient 分支、hypoventilation、true shunt、V/Q mismatch、impaired diffusion" />
+</a>
+<figcaption><strong>小麻原圖：Workup of acute hypoxemia。</strong>擷取自你提供的第九版 PDF 第 105 頁（圖 2-5），保持原書分支與標籤，不以自製圖取代。手機點一下原圖即可開啟原尺寸放大；下方三問及直式圖解負責補足原圖未展開的推理。<a href="../respiratory-deep-dive-sources.md#pocket-hypoxemia">原圖來源與教學界限</a>。</figcaption>
+</figure>
+
 ## 第零問｜A–a gradient 到底比較了哪兩個位置？
 
 肺泡氧分壓 **PAO₂** 通常由吸入氧分壓和 CO₂ 估算；動脈氧分壓 **PaO₂** 由 ABG 實測。兩者的差 **PAO₂ − PaO₂** 回答「動脈血為什麼沒有達到肺泡預期的氧分壓」。它不是擴散速率，也不是血液攜氧量，更不能直接推出哪一個肺區有病。
