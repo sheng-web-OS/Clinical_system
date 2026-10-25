@@ -222,10 +222,10 @@
         },
         {
           "locator": "Allaham et al Front Cardiovasc Med 2025 1715242 original Figure 1-3, pulmonary vein oxygen saturation 97 and left atrial saturation 83",
-          "source_token": "Allaham H",
+          "source_token": "Allaham et al.",
           "mode": "illustrated",
           "anchor": "pfo-mixing",
-          "caption_token": "原病例",
+          "caption_token": "Figure 1–3",
           "teaching_role": "繪製肺靜脈和右向左心房分流的氧含量流向，從兩處真正採血位置建立缺氧血進左心房的病理機轉。",
           "scope_limit": "原病例只有兩處氧飽和度，非 PAO2、PaO2 或 Qs/Qt；圖示箭頭未定量血流或壓差，不能代表所有 PFO 的處置適應症。"
         }
@@ -255,7 +255,7 @@
         },
         {
           "locator": "Kim WH et al KJIM 2010 MG case original serial blood gases, Figure 1-4 and day 1/day 6 descriptions",
-          "source_token": "Kim WH",
+          "source_token": "Kim et al.",
           "mode": "illustrated",
           "anchor": "mg-trajectory",
           "caption_token": "Kim 2010",
@@ -264,10 +264,10 @@
         },
         {
           "locator": "Hongo T et al 2024 Extreme Obesity OHS case Table 1 and Figure 3 ventilation time course",
-          "source_token": "Hongo T",
+          "source_token": "Miyoshi et al.",
           "mode": "illustrated",
           "anchor": "ohs-trajectory",
-          "caption_token": "Hongo 2024",
+          "caption_token": "Miyoshi et al. 2024",
           "teaching_role": "以實際 OHS 病例的入院、因不配合而插管、改善後拔管與後續 NIV 轉變，說明介面安全性和治療條件必須動態再評估。",
           "scope_limit": "秤重達設備上限 BMI 為至少 81.1，且多重治療並行，不能用前後血氣證明 NIV 和插管的普遍比較效果。"
         }
