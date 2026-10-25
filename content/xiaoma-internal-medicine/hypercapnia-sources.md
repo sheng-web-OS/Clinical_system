@@ -16,7 +16,7 @@
 | 107 | Oxygen Delivery Systems、Noninvasive Ventilation | 實際看原頁、兩張表格、氧流量註腳與 pH <7.3 那一列 |
 | 108–110 | Ventilator Modes、Variables、auto-PEEP 與設定調整 | 讀取文字；未完整視覺審核 Figure 2-6 |
 
-本篇的壓力比較與臨床分支表為原創教學整理，不是小麻原表重製。12／5、15／8 是設定關係示例，不能作為個別病人的治療處方。正文主病例改採 2020 年及 2025 年真實發表病例，資料與限制見下文；第九節清楚標明反事實測試，不補造原文病歷。
+本篇的壓力比較與臨床分支表為原創教學整理，不是小麻原表重製。 本輪亦已重新目視比對原 PDF 第 87、107 頁的完整表格：第 87 頁〈COPD Exacerbation Treatment〉非侵襲性通氣與插管的列及備註；第 107 頁〈Noninvasive Ventilation〉列出的 indications、contraindications 與 CPAP／bilevel 分別。正文圖 1、2 為教學重繪、非原書重製。12／5、15／8 是設定關係示例，不能作為個別病人的治療處方。正文主病例改採 2020 年及 2025 年真實發表病例，資料與限制見下文；第九節清楚標明反事實測試，不補造原文病歷。
 
 ## pH 門檻的衝突
 
