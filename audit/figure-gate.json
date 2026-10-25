@@ -140,18 +140,19 @@
           "source_token": "Microbiology of Pneumonia",
           "mode": "illustrated",
           "anchor": "pneumonia-three-decisions",
-          "caption_token": "Pocket Medicine 第九版 PDF",
-          "teaching_role": "把原表病原情境與原頁診斷前提連回三個不同判斷，避免以單一分數或影像直接推定當下支持與抗藥菌範圍。",
-          "scope_limit": "此為本篇重新組織的教學模型，未重製原表全部病原與比例，也不能由任一情境線索確診特定菌種。"
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "以 Pocket Medicine 肺炎診斷、病原分類作參照，提醒讀者病原、器官支持與死亡風險是不同問題，不可把初始分數當作呼吸支持決策。",
+          "scope_limit": "原圖只涉及肺炎診斷、病原情境和相關表格；本篇教學三問圖並非原書全表，也不能依此估算個人死亡率或直接指定菌株。"
         },
         {
-          "locator": "Pocket Medicine 9E reader PDF page 248, Treatment table: CAP outpatient, ward and ICU rows plus risk-factor clauses",
-          "source_token": "Scenario／Regimen",
+          "locator": "Oostwoud et al., Netherlands Journal of Critical Care 2017;25(5):178–182. Official journal PDF Figure 1 p178, Table 1 p178, Figure 2 p179, discussion/PSI-CURB-65 p179, ICU course p179-180. Visual audit completed 2026-10-25.",
+          "source_token": "Oostwoud",
           "mode": "illustrated",
-          "anchor": "pneumonia-treatment-branches",
-          "caption_token": "Pocket Medicine 第九版 PDF",
-          "teaching_role": "保留 ward 與 ICU 的用藥情境差異，再把抗藥菌風險、採檢與收窄的出口接起，避免將嚴重度誤當抗藥菌確診。",
-          "scope_limit": "只轉譯本篇成人CAP核心分支，不是原書完整抗菌表或個別病人處方；藥物仍需本地風險、過敏、器官功能及敏感性。"
+          "anchor": "pneumonia-case-trajectory",
+          "caption_token": "Oostwoud",
+          "teaching_role": "將入院單葉浸潤、翌日 SpO₂ 77% 和 RR 32/min、轉 ICU 插管的病程依時間串接，展示器官支持需求可先於 CURB-65 增分。",
+          "scope_limit": "期刊原 Figure 1／2 僅顯示入院與惡化後的胸片；本教材以作者完整敘述重組的時間線，不由影像自行推算危險程度、氧濃度或個人死亡機率。",
+          "visual_verification": "Official five-page PDF from de-intensivist.nl visually inspected: pages 178-182; source X-rays (Fig 1, Fig 2), ABG Table 1, surrounding captions and notes. Linked without reproducing copyrighted pixels."
         },
         {
           "locator": "ATS 2025 CAP guideline Table 2; corroborating IDSA CAP Clinical Pathway PDF page 3 Table 2, severe CAP major and minor criteria",
