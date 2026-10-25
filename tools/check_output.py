@@ -10,10 +10,10 @@ sys.path.insert(0, str(ROOT / "site"))
 from catalog import load_pages
 PAGES = load_pages(ROOT)
 DIST = ROOT / "dist"
-POCKET_SOURCE_ASSETS = {
+POCKET_SOURCE_ASSETS = ({
     "pocket-medicine-9e-fig2-5-hypoxemia.png",
     "pocket-medicine-9e-high-paco2.png",
-}
+} if any("2026-10-25-hypoxemia-mechanisms.md" in p["source"] for p in PAGES) else set())
 EXPECTED = {
     "styles.css", "home.css", "index.html",
     "app.js", "site-index.json", "site-index.js", ".nojekyll",
