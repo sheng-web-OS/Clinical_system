@@ -219,6 +219,15 @@
           "caption_token": "Pocket Medicine",
           "teaching_role": "把 V/Q zero、low V/Q 與 dead-space physiology 畫成不同區域，解釋真分流為何對增加氧氣反應受限而低 V/Q 尚可改善。",
           "scope_limit": "生理光譜是獨立重繪，並非原書三分支複製；高濃度氧氣仍能增加正常肺區溶解氧，反應不佳也不是分流的確診試驗。"
+        },
+        {
+          "locator": "Allaham et al 2025 Front Cardiovasc Med case report Figure 1-3 ICE bubble study PFO closure and pulmonary vein versus left atrial oxygen samples",
+          "source_token": "Allaham",
+          "mode": "illustrated",
+          "anchor": "pfo-mixing",
+          "caption_token": "97% 和 83%",
+          "teaching_role": "讓讀者看到相同病例中肺靜脈已氧合血與PFO靜脈分流在左房混合的實際採樣位置，解釋為何不能平均氧分壓或將兩處飽和度相減當成A-a。",
+          "scope_limit": "原創血流方向並非原始ICE解剖圖，不能據不同位置飽和度估算分流比例，也沒有測定真實PFO分流通量或複製原研究影像。"
         }
       ]
     },
@@ -234,6 +243,33 @@
           "caption_token": "Pocket Medicine",
           "teaching_role": "將中樞驅動、神經肌肉與胸壁壓力、肺氣道阻力和 dead space 串成同一個因果鏈，避免將高 PaCO2 與呼吸次數直接等同。",
           "scope_limit": "原創連續路徑不是原表逐項照搬；MG、OHS、COPD 可以在不同環節同時失敗；呼吸肌檢查與單次 ABG 都不能作單獨插管指令。"
+        },
+        {
+          "locator": "Kim et al 2010 Korean J Intern Med original Figures 1-4 case course first and sixth day RR and ABG with different oxygen conditions",
+          "source_token": "Kim et al.",
+          "mode": "illustrated",
+          "anchor": "mg-trajectory",
+          "caption_token": "Figure 1–4",
+          "teaching_role": "在同一個真實MG患者身上比對RR和PaCO2逆向變化及意識惡化，把呼吸頻率與有效肺泡換氣的區別接回具體臨床病程。",
+          "scope_limit": "兩次PaO2供氧條件不同且未量到同期VT VD VCO2；不得由這張重繪長條圖計算實際肺泡通氣或主張單一MG機轉。"
+        },
+        {
+          "locator": "Pocket Medicine 9th edition reader PDF page 106 high PaCO2 formula with RR times tidal volume minus dead-space volume",
+          "source_token": "Bohr",
+          "mode": "illustrated",
+          "anchor": "deadspace-example",
+          "caption_token": "快淺呼吸不是",
+          "teaching_role": "以兩種相同每分鐘總通氣量但不同呼吸深度的長條分段，顯示相同VT死腔佔比如何使有效肺泡通氣改變。",
+          "scope_limit": "這是固定每口VD和穩態VCO2的自編公式模型，不是病人的實測肺泡通氣或血氣，也不是所有病人的適用呼吸器頻率。"
+        },
+        {
+          "locator": "2026 ATS noninvasive respiratory support guideline plus Pocket Medicine 9E NIV and oxygen delivery chapter comparative pressure concepts",
+          "source_token": "2026 ATS",
+          "mode": "illustrated",
+          "anchor": "pressure-cycle",
+          "caption_token": "Bilevel 不等於只供氧",
+          "teaching_role": "用吸氣與呼氣壓力的時間序列，說明IPAP-EPAP才是雙壓NIV壓力支持的一個關鍵量，將換氣生理接到治療而不跳過名詞。",
+          "scope_limit": "僅自編IPAP15 EPAP5的定性週期，並非患者實測波形或建議設定，實際潮氣量及安全取決於病人、同步、漏氣及氣道風險。"
         }
       ]
     }
