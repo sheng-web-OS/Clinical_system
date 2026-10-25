@@ -2,12 +2,12 @@
 
 [低血氧三問深入篇](lessons/2026-10-25-hypoxemia-mechanisms.md)・[高碳酸血症三問深入篇](lessons/2026-10-25-hypercapnia-physiology.md)
 
-本站公開的是新編整合教材，不是作者曾發表的歷史原創文章。本文將 **原始患者觀察**、**本次以方程式重算**、**生理模型**、**圖像推論**與**需要獨立醫學審查的概括結論**分開。病例只是可觀察的機轉示範，不是流行病學或介入效果證據。原始 Figure／Table 在合法來源網站閱讀；本站 SVG 是原創重繪，沒有將論文圖片或《Pocket Medicine》原圖直接嵌入。
+本站公開的是新編整合教材，不是作者曾發表的歷史原創文章。本文將 **原始患者觀察**、**本次以方程式重算**、**生理模型**、**圖像推論**與**需要獨立醫學審查的概括結論**分開。病例只是可觀察的機轉示範，不是流行病學或介入效果證據。論文原始 Figure／Table 仍以期刊合法來源連結供讀者核對；本站另外附上**使用者提供之 Pocket Medicine 第九版 PDF 第 105／106 頁兩張原圖裁切截圖**，並永久納入本站靜態圖片資產。本站七張機轉 SVG 另行原創重繪，與原書截圖分開呈現，避免以模型示意偽裝原圖。
 
 <a id="pocket-hypoxemia"></a>
 ## Pocket Medicine 9th edition：Figure 2-5
 
-**來源定位：使用者提供的 Pocket Medicine 9E PDF 第 105 頁，Figure 2-5 Workup of acute hypoxemia；同頁的 A–a gradient 文字與 100% O₂ branch。** 本次實際目視讀者貼出此段原始書頁截圖，包含 A–a 正常／增大分歧、低通氣／吸入氧濃度與大氣壓、true shunt、V/Q mismatch、diffusion and exercise 以及 PNA／CHF／PE 病因重疊。這個觀察範圍是**使用者截圖**，不是完整 PDF 圖片庫與全部版權狀態的重審。
+**來源定位：使用者提供的 Pocket Medicine 9E PDF 第 105 頁，Figure 2-5 Workup of acute hypoxemia；同頁的 A–a gradient 文字與 100% O₂ branch。** 本次實際目視讀者貼出此段原始書頁截圖，包含 A–a 正常／增大分歧、低通氣／吸入氧濃度與大氣壓、true shunt、V/Q mismatch、diffusion and exercise 以及 PNA／CHF／PE 病因重疊。來源在本輪進一步對照 Library 中相同第九版 PDF 第 105 頁的頁面影像，按原書 Figure 2-5 裁切並保存為站內圖檔 `pocket-medicine-9e-fig2-5-hypoxemia.png`。該圖與本站自製 V/Q 圖並列，不得當作作者自行產生的作品；未主張對全書其餘圖完成逐圖審查。
 
 原書將「true shunt 無法被 100% O₂ 克服」壓縮成極端的生理對比。本文以血紅素平台區與**溶解氧仍可增加**補足它的限制；不是要求臨床危急者為診斷而撤去氧氣、進行正式 100% O₂ 反應測試。原圖也以 normal PaCO₂ 與 enlarged A–a 同列，但實際低氧和高碳酸機轉可以同時存在。
 
@@ -30,7 +30,7 @@
 <a id="pocket-hypercapnia"></a>
 ## Pocket Medicine 9th edition：Etiologies of High PaCO₂
 
-**來源定位：使用者提供的 Pocket Medicine 9E PDF 第 106 頁，Etiologies of High PaCO₂ 表與頂部肺泡通氣方程式。** 已目視讀者貼出的整張表，包括 Won't Breathe（respiratory drive）、Can't Breathe（NM system、CW/pleura、lung/airways）、PImax／PEmax／PE／CT／PFT 等欄與腳註 **↑ V̇CO₂ typically transient cause**（exercise、fever、hyperthyroidism、↑ work of breathing、↑ carbohydrates）。這是本次對話已取得的裁切書頁影像，未聲稱全文 PDF 的其餘頁面亦已逐圖重審。
+**來源定位：使用者提供的 Pocket Medicine 9E PDF 第 106 頁，Etiologies of High PaCO₂ 表與頂部肺泡通氣方程式。** 已目視讀者貼出的整張表，包括 Won't Breathe（respiratory drive）、Can't Breathe（NM system、CW/pleura、lung/airways）、PImax／PEmax／PE／CT／PFT 等欄與腳註 **↑ V̇CO₂ typically transient cause**（exercise、fever、hyperthyroidism、↑ work of breathing、↑ carbohydrates）。本輪並核對第九版 PDF 第 106 頁頁面影像，按原書 Etiologies of High PaCO₂ 表（含頂端 V̇CO₂ 公式與腳註）裁切成站內圖檔 `pocket-medicine-9e-high-paco2.png`。這是真正的原表影像，而非由 AI 重新排出的表格。
 
 **原創 Figure 01** 用 RR × (VT − VD) 與固定 V̇E=6 L/min 的數學模型，特別標示與病例實測隔離；其中快淺 30/min、VT 200 mL、VD 150 mL 之 PaCO₂ 約 115 mmHg 是極端模型的穩態結果，不是 MG 的 RR40 或 OHS 的 PaCO₂ 125 的重建。**原創 Figure 02** 將原表四欄改寫為中樞驅動 → 呼吸肌產壓 → 胸壁及氣道力學 → 換氣效率，不暗示表格分類相互排斥。
 
@@ -59,3 +59,7 @@
 | Pocket Won't / Can't Breathe 四欄 | 高碳酸圖 2 | 多個失敗位置導向 V̇A 相對不足 | 分類不是互斥 |
 | Kim 2010 Day 1 / Day 6 | 高碳酸圖 3 | RR ↑ 而 PaCO₂ ↑、pH ↓；給氧條件不同 | 不能倒算 VT、VD |
 | Miyoshi 2024 Table 1、Figure 3 | 高碳酸圖 4 | 面罩治療可行性與氣道支持隨病程改變 | 不證明插管必然優於 NIV |
+
+## 原書截圖與手機呈現
+
+小麻兩張圖像現在作為實際 HTML `<img>` 顯示於相關篇章的第零問前；原圖保留原書標籤，手機直接點擊可開啟約 1100px 的圖片檔自行放大。為避免將 850px SVG 等比縮小造成不可讀，所有七張機轉圖均另備窄螢幕的直式閱讀版本，桌面保留原完整 SVG。原書原圖／手機版重新組織的教學圖必須有明確分別。來源檔案是使用者提供的 Pocket Medicine 9th edition PDF（圖與表頁次已標示）；未把這些圖當成一般可自由再授權素材。

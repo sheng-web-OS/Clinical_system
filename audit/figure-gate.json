@@ -203,6 +203,15 @@
       "source_review": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
       "items": [
         {
+          "locator": "Pocket Medicine 9th edition PDF page 105, original Figure 2-5 Workup of acute hypoxemia, user-provided source screenshot",
+          "source_token": "Figure 2-5",
+          "mode": "illustrated",
+          "anchor": "pocket-hypoxemia-original",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "將小麻 Figure 2-5 的實際分岔呈現在第零問前，讓讀者能直接核對原書問題軸，再閱讀 A-a、shunt、V/Q 及 diffusion 的深入解釋。",
+          "scope_limit": "原圖是來自使用者提供第九版 PDF 的裁切截圖，未對原書其他頁面作圖庫審查，也不能把原圖教學簡化當作單一臨床診斷標準。"
+        },
+        {
           "locator": "Pocket Medicine 9E PDF p105 Figure 2-5 Workup of acute hypoxemia; Reddy 2014 A-a 18 and Li 2026 A-a 59.2 case reports",
           "source_token": "Figure 2-5 Workup of acute hypoxemia",
           "mode": "illustrated",
@@ -235,6 +244,15 @@
       "status": "represented",
       "source_review": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
       "items": [
+        {
+          "locator": "Pocket Medicine 9th edition PDF page 106, original Etiologies of High PaCO2 table with alveolar ventilation formula and Won't/Can't Breathe categories",
+          "source_token": "Etiologies of High PaCO₂",
+          "mode": "illustrated",
+          "anchor": "pocket-hypercapnia-original",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "把小麻原始 PaCO2 方程式、Won't/Can't Breathe 各欄及 VCO2 腳註直接以原圖呈現，作為隨後神經、呼吸肌、胸壁、肺氣道分析的對照。",
+          "scope_limit": "原書印刷表為分類框架，不能從 RR、EtCO2 等單項數據推論確診；圖片是提供之 PDF 截圖，不代表具有自由轉授權權利。"
+        },
         {
           "locator": "Pocket Medicine 9E PDF p106 Etiologies of High PaCO2 formula RR(VT-VD); original proportions of dead space and effective ventilation",
           "source_token": "High PaCO₂",

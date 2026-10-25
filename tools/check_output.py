@@ -10,10 +10,14 @@ sys.path.insert(0, str(ROOT / "site"))
 from catalog import load_pages
 PAGES = load_pages(ROOT)
 DIST = ROOT / "dist"
+POCKET_SOURCE_ASSETS = ({
+    "pocket-medicine-9e-fig2-5-hypoxemia.png",
+    "pocket-medicine-9e-high-paco2.png",
+} if any("2026-10-25-hypoxemia-mechanisms.md" in p["source"] for p in PAGES) else set())
 EXPECTED = {
     "styles.css", "home.css", "index.html",
     "app.js", "site-index.json", "site-index.js", ".nojekyll",
-} | {row["output"] for row in PAGES}
+} | POCKET_SOURCE_ASSETS | {row["output"] for row in PAGES}
 HAS_DCM_RELEASE = (
     any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES)
     and any(p["output"] == "xiaoma-reading-20260710-dcm-original.html" for p in PAGES)
@@ -67,8 +71,12 @@ if not errors:
             target = outlines.get(path or filename)
             if fragment and target is not None and fragment not in target.ids:
                 errors.append(f"{filename}: missing fragment {href}")
+    for filename in POCKET_SOURCE_ASSETS:
+        payload = (DIST / filename).read_bytes()
+        if not payload.startswith(b"\x89PNG\r\n\x1a\n") or len(payload) < 4000:
+            errors.append(f"{filename}: malformed source figure PNG")
     for filename in actual:
-        if filename.startswith("assets/"): continue
+        if filename.startswith("assets/") or filename in POCKET_SOURCE_ASSETS: continue
         content = (DIST / filename).read_text("utf8")
         for private_token in ("libfile_", "5824859", "Z639", "plan-20261021.md", "七大核心學習檔案"):
             if private_token in content: errors.append(f"{filename}: private plan data in public build: {private_token}")

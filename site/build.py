@@ -179,6 +179,13 @@ def main():
     DIST.mkdir(parents=True)
     for name in ("styles.css","home.css","app.js"):
         shutil.copyfile(BASE/"site"/name,DIST/name)
+    # Exact source screenshots are checked-in binary files, not transient CDN URLs.
+    # Copy only the two reviewed Pocket Medicine extracts into the site root.
+    for image_name in ("pocket-medicine-9e-fig2-5-hypoxemia.png", "pocket-medicine-9e-high-paco2.png"):
+        source_image = BASE / "site" / "source_figure_images" / image_name
+        if not source_image.is_file():
+            raise FileNotFoundError("Reviewed source figure missing: " + str(source_image))
+        shutil.copyfile(source_image, DIST / image_name)
     rows=[render(*entry) for entry in FILES]
     # Former published DCM link must open the current approved reading, not
     # silently strand returning readers in the preserved historical manuscript.
