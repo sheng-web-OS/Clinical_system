@@ -1,133 +1,161 @@
 # RR 已經 40/min，為什麼 PaCO₂ 仍然上升？
 
-<div class="opening-question"><span class="small-label">Respiratory Failure｜圖表三問 · 換氣篇</span><p>68 歲女性的 RR 從 24 增至 40/min，但 PaCO₂ 卻從 39.9 上升到 54.9 mmHg；而且給氧後 PaO₂ 看起來比較好。她缺的是呼吸驅動、呼吸肌輸出的 VT，還是肺泡交換效率？在 CO₂ 尚未升高前，有沒有更早的衰竭訊號？</p></div>
+<div class="opening-question"><span class="small-label">Respiratory Failure｜圖表三問 · 通氣篇</span><p>第一天 RR 24/min、PaCO₂ 39.9；第六天 RR 增加到 40/min，PaCO₂ 卻上升至 54.9，而且開始意識混亂。究竟是病人沒有呼吸驅動，還是呼吸肌有努力、卻推不動足夠的潮氣量？補氧讓 PaO₂ 上升，為什麼也沒能阻止呼吸衰竭？</p></div>
 
-2010 年 Kim 等人在 *Korean Journal of Internal Medicine* 報告一名以**孤立性呼吸衰竭作為初期表現**的 myasthenia gravis（MG）病人。這篇文章將她的時間變化作為共同問題，再讓《Pocket Medicine》第九版 PDF 第 106 頁 **Etiologies of High PaCO₂** 表格回答病因定位，最後對照另一位 obesity hypoventilation syndrome（OHS）患者如何跨到氣道介入。與[低血氧的 A–a 深入篇](2026-10-25-hypoxemia-mechanisms.md)是同一個觀察邏輯：**SpO₂／PaO₂ 是氧合結果，PaCO₂ 是 CO₂ 產生與有效肺泡通氣的平衡結果**；前者改善不必然代表後者改善。
+這不是假想題目。**Kim 等人 2010 年的 MG 病例**就是這樣惡化；但如果只把兩次數據貼進「PaCO₂ 與有效肺泡通氣成反比」的公式，仍沒有真正理解患者。這篇依《Pocket Medicine》第九版 PDF 第 106 頁 **Etiologies of High PaCO₂** 原表，從驅動、呼吸肌、胸壁到肺部負荷分層追問，再以另一例真實 OHS 病例檢查：何時需要機械通氣、為何有些人不能安全使用 NIV。
 
-## 第零問｜先看病程：呼吸頻率增加，為什麼呼吸衰竭卻加重？
+## 第零問｜高 PaCO₂ 不是「呼吸少」，而是 CO₂ 清除跟不上產生
 
-**真實病例：68 歲女性。** 入院時主要是喘，沒有典型眼瞼下垂、複視或四肢無力。第一天 RR **24/min**，室內空氣 ABG pH **7.441**、PaCO₂ **39.9**、PaO₂ **64.7**；影像有局部 atelectasis。接下來喘逐漸加劇；第六天 RR **40/min**，呼吸非常費力、意識混亂，在氧氣面罩 **10 L/min** 下 pH **7.324**、PaCO₂ **54.9**、PaO₂ **94.4**。影像肺容積減少，病人轉 ICU 並接受機械通氣。[Kim 2010 原文 Figure 1、2 與第六天的 ABG](https://doi.org/10.3904/kjim.2010.25.1.101)。
+先把四個不該互換的量講清楚。**V̇CO₂** 是組織每分鐘產生並由肺排出的 CO₂ 量（mL/min）；**VT** 是一口氣的 tidal volume（潮氣量，mL）；**RR** 是每分鐘的呼吸次數；**V̇E = RR × VT** 是每分鐘總共進出呼吸系統的空氣。這些氣體不是全部都參與 CO₂ 清除。
 
-<figure id="mg-trajectory" class="diuretic-figure">
-<div class="diuretic-figure-head"><span>FIGURE 01 · ONE PATIENT, TWO MOMENTS</span><strong>RR 加快，但通氣與酸鹼都正在變差</strong></div>
-<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="MG 病例第一天與第六天真實 RR PaCO2 pH 及不同供氧條件比較，可水平捲動">
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="368" viewBox="0 0 760 368" role="img" aria-labelledby="mg-title mg-desc">
-<title id="mg-title">MG病人的呼吸頻率升高但PaCO2也升高</title><desc id="mg-desc">第一天室內空氣RR 24、PaCO2 39.9、pH7.441、PaO2 64.7；第六天面罩氧氣10 L/min RR40、PaCO2 54.9、pH7.324、PaO2 94.4。兩次FiO2不同，不能由PaO2上升判定呼吸泵恢復。</desc>
-<rect width="760" height="368" fill="#f8fbfa"/>
-<g font-family="sans-serif" fill="#28443f"><text x="28" y="36" font-size="21" font-weight="700">實測病例時間點</text><text x="25" y="85" font-size="17" font-weight="700">呼吸頻率</text><text x="25" y="198" font-size="17" font-weight="700">PaCO₂</text><text x="25" y="323" font-size="15">Day 1：室內空氣　→　Day 6：面罩氧氣 10 L/min</text><text x="25" y="346" font-size="13">PaO₂ 64.7 → 94.4 不能當成通氣改善：供氧條件不同。</text></g>
-<rect x="185" y="62" width="228" height="31" fill="#669eb8" rx="3"/><rect x="185" y="108" width="380" height="31" fill="#266b8b" rx="3"/>
-<rect x="185" y="177" width="284" height="31" fill="#d3a873" rx="3"/><rect x="185" y="223" width="391" height="31" fill="#b76d47" rx="3"/>
-<g font-family="sans-serif" font-size="14" fill="#2d4941"><text x="422" y="84">Day 1 · 24/min</text><text x="576" y="130">Day 6 · 40/min</text><text x="478" y="198">Day 1 · 39.9</text><text x="585" y="244">Day 6 · 54.9</text><text x="185" y="285">pH：7.441 → 7.324（酸化）</text></g>
-<line x1="185" x2="624" y1="269" y2="269" stroke="#809b95" stroke-width="1"/>
-</svg></div>
-<figcaption><strong>圖 1｜病人的 RR 與 PaCO₂ 是真實報告，不是模擬值。</strong>顏色及長條是獨立重繪，用來看方向，不把 RR 與 PaCO₂ 當同單位同刻度比較。病例**沒有同期 VT、VD 或 V̇CO₂**，不能倒推她精確的 V̇A，更不能證明是單一機轉造成；不同給氧條件也不能比較 PaO₂ 的改善幅度。[原始 Figure 1–4 及病程](https://www.kjim.org/journal/view.php?number=162386)。</figcaption>
-</figure>
+每次吸氣必須先經過沒有氣體交換的傳導氣道；而某些肺泡即使有空氣，灌流不足，仍沒有有效排除 CO₂。將這些無效通氣在適當模型下合稱每口 **VD（dead-space volume）**，則**V̇A = RR × (VT − VD)** 才是在近似穩態下有助於排除 CO₂ 的有效肺泡通氣量。這裡的 V̇A 是計算用生理量，不是一般呼吸器或脈搏血氧機直接量到的數值。
 
-當時團隊沒有把「RR 高」當成診斷，而是在傳統肺部原因無法充分解釋惡化後，把神經肌肉疾病列入鑑別。後續 repetitive nerve stimulation 的 **decremental response**、藥物試驗的潮氣量反應，以及 AChR antibody 等證據，才讓 MG 成為可支持的病因。原文 Figure 4 最值得看的是**神經肌肉傳遞改善後 VT 的變化**：它比單一 RR 更貼近呼吸肌的輸出。這例不是「先有 COPD、接著插管」的普通病程，而是**原本被忽略的呼吸泵問題**。
+<div class="equation"><strong>PaCO₂ ≈ 0.863 × V̇CO₂ / V̇A</strong><strong>V̇A ≈ RR × (VT − VD)</strong><small>V̇CO₂ 為 mL/min、V̇A 為 L/min、PaCO₂ 為 mmHg；0.863 含氣體條件及單位換算。此為相對穩態的生理關係，不可用病人瞬間 RR、未知的 VT/VD 虛構同期 PaCO₂。</small></div>
 
-## 第一問｜公式如何解釋「RR 多、CO₂ 仍排不出去」？
+**呼吸得快，是增加 RR；換氣真正有效，還要有足夠 VT 以及不太高的 VD/VT。**因此，PaCO₂ 上升既可能由 V̇A 真正降低，也可能 V̇A 沒降低卻已跟不上發燒、感染或呼吸肌活動引起的 V̇CO₂ 增加。健康人通常能增加通氣代償；儲備已接近極限的病人則可能失去這種彈性。
 
-原書列出：
+## 第一問｜呼吸頻率翻倍，為什麼有效換氣反而可能下降？
 
-<div class="equation"><strong>PaCO₂ ≈ 0.863 × V̇CO₂ / V̇A</strong><strong>V̇A ≈ RR × (VT − VD)；V̇E = RR × VT</strong><small>V̇CO₂：每分鐘組織產生並須排出的 CO₂（mL/min）。V̇E：總分鐘換氣量（L/min）。V̇A：有效肺泡換氣量（L/min）。VT：每口 tidal volume；VD：每口未有效參與 CO₂ 排除的 dead space。0.863 已包含上述單位換算。此式以相對穩態及近似平均死腔比例為前提。</small></div>
+先不要代入任何病例；用一個**刻意固定總分鐘換氣量**的數學模型看出公式隱藏的比例關係。假設 V̇E = **6 L/min**、每次 VD = **150 mL**、V̇CO₂ = **200 mL/min**。
 
-不是多打一個 RR 就完成換氣。每口吸入的 VT 中，都有一部分沒有有效排出 CO₂。生理死腔可包含導氣道本來的 anatomical dead space，及通氣相對灌流過高、氣體交換效率很差的肺區。若 VT 下降但 RR 增加，維持的也許只是 **V̇E**，不是 **V̇A**。
+| | 深慢換氣 | 快淺換氣 |
+| --- | ---: | ---: |
+| RR | 12/min | 30/min |
+| VT | 500 mL | 200 mL |
+| V̇E | 6 L/min | 6 L/min |
+| 每口 VD/VT | 30% | 75% |
+| 計算 V̇A | 4.2 L/min | 1.5 L/min |
+| 穩態預測 PaCO₂ | 約 41 mmHg | 約 115 mmHg |
 
 <figure id="deadspace-example" class="diuretic-figure">
-<div class="diuretic-figure-head"><span>FIGURE 02 · SAME V̇E, DIFFERENT V̇A</span><strong>同樣吸進 6 L/min，真正有效排 CO₂ 的容積不同</strong></div>
-<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="深慢呼吸與快淺呼吸的相同分鐘通氣、不同有效容積比較，可水平捲動">
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="346" viewBox="0 0 760 346" role="img" aria-labelledby="vd-title vd-desc">
-<title id="vd-title">固定死腔時快淺呼吸造成有效肺泡通氣下降</title><desc id="vd-desc">每分鐘通氣都為6 L。深慢RR12、VT500，每次死腔150有效350，肺泡通氣4.2 L；快淺RR30、VT200，每次死腔150有效50，肺泡通氣1.5 L。</desc><rect width="760" height="346" fill="#f8fbfa"/>
-<g font-family="sans-serif" fill="#28443f"><text x="26" y="37" font-size="19" font-weight="700">示意：每口 VD 固定 150 mL，總 V̇E 皆為 6 L/min</text><text x="26" y="90" font-size="17" font-weight="700">RR 12 × VT 500</text><text x="26" y="202" font-size="17" font-weight="700">RR 30 × VT 200</text></g>
-<g><rect x="30" y="107" width="165" height="42" fill="#d9a472"/><rect x="195" y="107" width="385" height="42" fill="#328aa2"/><rect x="30" y="218" width="165" height="42" fill="#d9a472"/><rect x="195" y="218" width="55" height="42" fill="#328aa2"/></g>
-<g font-family="sans-serif" fill="#293f3b" font-size="15"><text x="38" y="133">死腔 150</text><text x="264" y="133" fill="white" font-weight="700">每口有效 350 mL</text><text x="38" y="244">死腔 150</text><text x="263" y="244">每口僅 50 mL 有效</text><text x="26" y="177">有效 V̇A = 12 × 350 = 4.2 L/min</text><text x="26" y="289">有效 V̇A = 30 × 50 = 1.5 L/min</text><text x="26" y="319" font-size="13">橘色＝每口無效容積　藍色＝每口參與有效 CO₂ 排除的容積</text></g>
+<div class="diuretic-figure-head"><span>FIGURE 01 · WHERE EACH BREATH GOES</span><strong>同樣 6 L/min，快淺呼吸可把更多比例浪費在 dead space</strong></div>
+<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="兩種潮氣量下每次150毫升死腔所占比例，可水平捲動">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="314" viewBox="0 0 760 314" role="img" aria-labelledby="vd-title vd-desc">
+<title id="vd-title">同樣總分鐘通氣下，潮氣量變小使每口死腔比例上升</title>
+<desc id="vd-desc">深慢呼吸每口500毫升，其中死腔150、有效350；每分鐘12口，總有效換氣4.2升。快淺呼吸每口200毫升，其中死腔150、有效50；每分鐘30口，總有效換氣1.5升。全是模型並非患者測值。</desc>
+<rect width="760" height="314" fill="#f8fbfa"/><g font-family="sans-serif" fill="#28443f">
+<text x="25" y="35" font-size="18" font-weight="700">每口氣各去哪裡？（長度代表 VT 比例）</text>
+<text x="25" y="73" font-size="17">RR 12 · VT 500 mL</text><text x="25" y="190" font-size="17">RR 30 · VT 200 mL</text>
+<text x="25" y="277" font-size="13">橘色＝沒有有效 CO₂ 交換的氣體；藍色＝有效肺泡換氣。</text>
+<text x="25" y="297" font-size="12">固定 VD 150 mL /口及 V̇E 6 L/min 的教學模型，不是 MG 或 OHS 病例數值。</text></g>
+<rect x="25" y="88" width="198" height="62" rx="5" fill="#dc9957"/><rect x="223" y="88" width="462" height="62" rx="5" fill="#3186a6"/>
+<rect x="25" y="205" width="495" height="42" rx="5" fill="#dc9957"/><rect x="520" y="205" width="165" height="42" rx="5" fill="#3186a6"/>
+<g font-family="sans-serif" font-weight="700" text-anchor="middle"><text x="123" y="114" fill="#3d2b1b" font-size="15">VD 150</text><text x="123" y="137" fill="#3d2b1b" font-size="13">30%</text><text x="453" y="114" fill="#fff" font-size="16">有效 350 mL /口</text><text x="453" y="137" fill="#fff" font-size="14">V̇A 4.2 L/min</text><text x="267" y="231" fill="#3d2b1b" font-size="16">VD 150＝75%</text><text x="602" y="231" fill="#fff" font-size="13">有效 50</text></g>
 </svg></div>
-<figcaption><strong>圖 2｜快淺呼吸不是「一分鐘呼吸很多次就一定換氣夠」。</strong>完全自編的**固定 V̇E、每口 VD**生理模型，不是 MG 或 OHS 病例的量測；實際 VD、VT 及 CO₂ 產生可隨疾病改變。若假設 V̇CO₂＝200 mL/min 不變，穩態 PaCO₂ 模型約 41 與 115 mmHg；不能把它們當成病例 ABG。</figcaption>
+<figcaption><strong>圖 1｜比例，而不是呼吸次數，決定了這個模型的有效換氣。</strong>為使兩口氣長度可比較，各橫條刻意畫成同樣寬度代表各自 100% 的 VT，**不以橫條絕對長度代表 500 與 200 mL**。原創計算圖，對照 Pocket Medicine「RR × (VT − VD)」公式。固定 VD 是教學假設，實際死腔與換氣需求會隨疾病及時間改變。</figcaption>
 </figure>
 
-這個模型的意義不是說 MG 女患者的 VD 一定是 150 mL，更不是直接宣稱她的 VT 從 500 掉到 200。它在回答一個**可測量的未知**：RR 升高時，VT 是否隨肌力不足而下降？神經生理測試與呼吸肌測量才進一步支撐這個方向。
+這解釋一種最容易誤判的表現：病人呼吸愈急促，胸廓起伏卻愈小，醫師若只看 RR，可能以為呼吸努力正在提高；但如果 VT 同時下降，有效換氣不一定改善。更重要的是，**原始病例若沒有同期的 VT、VD、V̇CO₂，不能只用 RR 和 PaCO₂ 倒算出患者真正的 V̇A**。下面的 MG 個案只證明通氣代償沒有成功，不提供確切分量。
 
-再推進一步：**V̇A 沒有下降，也不保證 PaCO₂ 正常。**若 V̇CO₂ 因發燒、增加的 respiratory muscle work 或代謝亢進由 200 升到 300 mL/min，V̇A 卻不能從 4.3 L/min 相應增加，穩態模型的 PaCO₂ 可以從約 40 升到 60。健康成人通常會提升通氣量，所以單純 CO₂ 產生增加多為可代償的需求；高風險的是已經接近 ventilatory capacity 上限的病人。
+## 第二問｜Won't Breathe / Can't Breathe 是不同的「故障位置」，怎樣用病人的證據辨識？
 
-這也使 **PE 的 dead space 增加並不必然伴隨 hypercapnia**：它增加排 CO₂ 所需的總通氣量，然而病人若還能提高 V̇E，PaCO₂ 可正常或偏低。高碳酸表示有效 CO₂ 排除相對需求不足，不是「死腔多」這個影像或疾病標籤本身。
-
-## 第二問｜Won't Breathe／Can't Breathe，是哪些功能環節出了問題？
-
-原表看似列四欄，其實是一條串聯的呼吸路徑：**腦幹呼吸驅動 → 運動神經與神經肌肉接點 → 呼吸肌壓力 → 胸壁／肺力學 → 氣體能否到達有效灌流肺泡**。失敗可能同時落在好幾處。
+原表不是把病人分成不想呼吸和不能呼吸兩種人格；它把呼吸作用拆成一條功能路徑：腦幹產生呼吸驅動、周邊神經與神經肌肉接點傳送訊號、橫膈及其他呼吸肌產生力量、胸壁和肺克服彈性與氣道阻力，最後有多少空氣真正參與氣體交換。
 
 <figure id="ventilatory-chain" class="diuretic-figure">
-<div class="diuretic-figure-head"><span>FIGURE 03 · DEMAND × CAPACITY</span><strong>相同 PaCO₂，可能在完全不同的環節失敗</strong></div>
-<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="呼吸驅動經神經肌肉呼吸泵胸壁肺氣道到有效肺泡換氣的因果流程，可水平捲動">
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="275" viewBox="0 0 860 275" role="img" aria-labelledby="chain-title chain-desc">
-<title id="chain-title">呼吸中樞、呼吸泵、胸壁與肺氣道共同決定有效換氣</title><desc id="chain-desc">由中樞驅動、神經肌肉壓力、胸壁負荷、肺氣道的通氣分布，最終得到肺泡通氣。CO2 產生量同時決定維持PaCO2所需要的換氣量；各段障礙可並存。</desc>
-<rect width="860" height="275" fill="#f8fbfa"/>
-<g font-family="sans-serif" text-anchor="middle"><rect x="14" y="55" width="190" height="126" rx="12" fill="#e5edf6" stroke="#79a1c8"/><rect x="226" y="55" width="190" height="126" rx="12" fill="#eee7f3" stroke="#ae90ba"/><rect x="438" y="55" width="190" height="126" rx="12" fill="#f6eee3" stroke="#cca66f"/><rect x="650" y="55" width="196" height="126" rx="12" fill="#e4f2ec" stroke="#7eb09a"/>
-<g fill="#2a433e"><text x="109" y="85" font-size="18" font-weight="700">Respiratory drive</text><text x="321" y="85" font-size="18" font-weight="700">肌肉產壓能力</text><text x="533" y="85" font-size="18" font-weight="700">呼吸力學負荷</text><text x="748" y="85" font-size="18" font-weight="700">有效肺泡通氣</text></g>
-<g fill="#3b5d53" font-size="14"><text x="109" y="119">中樞、鎮靜藥</text><text x="109" y="145">酸鹼代償</text><text x="321" y="119">MG、GBS、橫膈</text><text x="321" y="145">MIP、VC、咳嗽</text><text x="533" y="119">肥胖、胸壁、COPD</text><text x="533" y="145">阻力、auto-PEEP</text><text x="748" y="119">VT、VD、RR</text><text x="748" y="145">相對 V̇CO₂ 是否足夠</text></g>
+<div class="diuretic-figure-head"><span>FIGURE 02 · FROM DRIVE TO CO₂ REMOVAL</span><strong>PaCO₂ 上升，可以是供需鏈的不同環節失效</strong></div>
+<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="由腦幹到肺泡氣體交換的因果圖，可水平捲動">
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="348" viewBox="0 0 850 348" role="img" aria-labelledby="drive-title drive-desc">
+<title id="drive-title">通氣驅動與呼吸機械能力到有效肺泡通氣的路徑</title><desc id="drive-desc">由腦幹神經驅動、周邊神經和橫膈產壓、胸壁與肺力學負荷、肺泡灌流及死腔效率，接到有效肺泡通氣並決定PaCO2；病因可同時影響多個環節。</desc>
+<rect width="850" height="348" fill="#f8fbfa"/>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="18" y="65" width="184" height="113" rx="13" fill="#dfeff4" stroke="#4b93ac" stroke-width="2"/><text x="110" y="94" font-size="19" font-weight="700" fill="#22536d">呼吸中樞</text><text x="110" y="120" font-size="14" fill="#22536d">drive</text><text x="110" y="150" font-size="13" fill="#395e6f">藥物、腦幹、代謝</text>
+<rect x="229" y="65" width="184" height="113" rx="13" fill="#e4f2e9" stroke="#569978" stroke-width="2"/><text x="321" y="94" font-size="19" font-weight="700" fill="#275b43">呼吸肌產壓</text><text x="321" y="120" font-size="14" fill="#275b43">neuromuscular</text><text x="321" y="150" font-size="13" fill="#466a54">MG、GBS、橫膈</text>
+<rect x="440" y="65" width="184" height="113" rx="13" fill="#fff0dc" stroke="#be9253" stroke-width="2"/><text x="532" y="94" font-size="19" font-weight="700" fill="#7a5430">胸壁、氣道</text><text x="532" y="120" font-size="14" fill="#7a5430">mechanical load</text><text x="532" y="150" font-size="13" fill="#805b3d">肥胖、auto-PEEP</text>
+<rect x="650" y="65" width="184" height="113" rx="13" fill="#f0e8f5" stroke="#9371aa" stroke-width="2"/><text x="742" y="94" font-size="19" font-weight="700" fill="#634581">有效交換</text><text x="742" y="120" font-size="14" fill="#634581">V̇A / V̇E</text><text x="742" y="150" font-size="13" fill="#745b86">VD/VT、V/Q</text>
 </g>
-<g stroke="#45665d" stroke-width="3" fill="none"><path d="M204 115 H222"/><path d="M416 115 H434"/><path d="M628 115 H646"/></g><g fill="#45665d"><path d="M222 115 l-10 -7 v14 z"/><path d="M434 115 l-10 -7 v14 z"/><path d="M646 115 l-10 -7 v14 z"/></g>
-<g font-family="sans-serif" fill="#394f48"><text x="15" y="226" font-size="15">Won't breathe → 驅動不足</text><text x="290" y="226" font-size="15">Can't breathe → 壓力不足／負荷過高／效率下降</text><text x="17" y="252" font-size="13">各欄是病理位置，不是必經時間序列；一個人可同時佔數個位置</text></g>
+<g stroke="#6b837e" stroke-width="4" fill="none"><path d="M203 121 H229"/><path d="M414 121 H439"/><path d="M625 121 H649"/></g><g fill="#6b837e"><path d="M222 113 L231 121 L222 129"/><path d="M432 113 L441 121 L432 129"/><path d="M643 113 L652 121 L643 129"/></g>
+<g font-family="sans-serif" fill="#344f48" text-anchor="middle"><text x="425" y="33" font-size="17" font-weight="700">V̇CO₂ ↑ 會提高整條鏈必須負擔的換氣需求</text><text x="425" y="230" font-size="17" font-weight="700">無論失效位置在哪，只要 V̇A 相對 V̇CO₂ 不足 → PaCO₂ ↑</text></g>
+<path d="M110 190 V256 H742 V190" fill="none" stroke="#b18b57" stroke-dasharray="5 6" stroke-width="2"/>
+<text x="425" y="295" text-anchor="middle" font-size="15" font-family="sans-serif" fill="#5d7167">Won't Breathe 主要指第一段；Can't Breathe 可發生在後面三段。</text>
+<text x="425" y="322" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#5d7167">一個病人可同時有多處問題：OHS 不只是胸壁，COPD 也不只是 dead space。</text>
 </svg></div>
-<figcaption><strong>圖 3｜依 Pocket Medicine 9E 第 106 頁 “Etiologies of High PaCO₂” 重新繪出串聯功能。</strong>這是原創因果路徑，不是原表複製，保留原表中 metabolic alkalosis、PImax／PEmax、胸壁與肺氣道等病理位置。圖中分類只定位問題，不能據單一 ABG 自動診斷。</figcaption>
+<figcaption><strong>圖 2｜從神經輸出到有效肺泡換氣的連續功能圖。</strong>依 Pocket Medicine 第九版 PDF 第 106 頁「Etiologies of High PaCO₂」四欄重新繪製，不照搬表格；此圖不把臨床疾病強行限定在互斥分類。<a href="../respiratory-deep-dive-sources.md#pocket-hypercapnia">原表與腳註</a>。</figcaption>
 </figure>
 
-**Won't breathe（驅動不足）。** Opioid、鎮靜藥物、腦幹病變可能降低對 CO₂ 的通氣反應；這裡的「不呼吸」不是主觀不願意。表格的 voluntary hyperventilation 能力、PImax 相對正常及大致正常 A–a 只是定位線索：若患者能按指示顯著增加通氣，說明部分執行能力仍在，但它會受意識和配合度干擾。**Metabolic alkalosis** 也被列入，因為降低通氣、升高 PaCO₂ 可以是對 HCO₃⁻ 上升的酸鹼代償，不能把所有 PaCO₂ 升高都稱為原發通氣衰竭。
+**Won't Breathe：驅動不足或適應性下降。** 鎮靜藥、opioid、部分腦幹病變會減少對 CO₂ 上升的呼吸反應。但原表中的 *metabolic alkalosis* 是另一種性質：高 HCO₃⁻ 和 alkalemia 使呼吸代償性降低，PaCO₂ 相應升高；不能見 PaCO₂ 高就直接診斷原發性呼吸性酸中毒。自願換氣能否增加及 PImax（最大吸氣壓）是否保存，可作定位線索，不能單靠配合意願或一次 PImax 確診中樞問題。
 
-**神經肌肉／呼吸泵。** MG 的 neuromuscular junction 傳遞失效，GBS 是周邊神經障礙，ALS、膈神經病變和 myopathy 又位於不同層次。吸氣肌的 **PImax／MIP（maximal inspiratory pressure）**、肺活量 **VC（vital capacity）**，反映能否產生足夠吸氣輸出；呼氣肌 **PEmax／MEP** 與有效咳嗽、清痰密切相關。球部肌肉無力使**氣道保護**也受威脅。正常 SpO₂ 或 PaCO₂ 不能排除這些能力正快速衰退。
+**Neuromuscular：驅動有了，壓力卻做不出來。** MG 侵犯神經肌肉接點；GBS 及其他神經病變阻礙訊號傳遞；脊髓、橫膈與肌病可影響產壓。這裡的床邊問題不只是「PaCO₂ 到幾了」，還包括 **VC（vital capacity，肺活量）**、**MIP／PImax（最大吸氣壓）**、**MEP／PEmax（最大呼氣壓）**、咳嗽能否有效清痰、是否有球部肌肉無力和吞嚥問題。吸氣肌無力使 VT 下降；呼氣／球部肌肉無力也可能造成分泌物清除與氣道保護失敗。仰臥 VC 相對坐姿明顯下降，是橫膈無力的線索；進展性 GBS 的 VC 和呼吸肌力量危險門檻只能結合惡化速度與臨床狀態使用，不能用單一數字自動決定插管。
 
-對快速進展的神經肌肉疾病，VC 約 <15–20 mL/kg、MIP 絕對值 <30 cmH₂O、MEP <40 cmH₂O 可以作為常見警訊，但不能忽略病種、測量品質、進展速度與吞嚥／咳嗽能力後直接把它們當成機械插管公式。臥位 VC 相較坐姿明顯下降，則是另一個提醒橫膈無力的生理訊號。
+**胸壁／胸膜：能產生壓力，不保證肺能擴張。** 嚴重肥胖、kyphoscoliosis、胸壁限制或胸水，可能讓產生同樣 VT 需要更多呼吸功。胸水能造成肺塌陷和低氧，但本身不是 hypercapnia 的充分條件；只有當有效肺泡通氣追不上需求時，PaCO₂ 才持續上升。
 
-**胸壁／胸膜。** Obesity、kyphoscoliosis、胸壁限制或大量胸水可能增加擴張胸廓需要的壓力。病人即使驅動足夠、肌肉仍有一定力氣，VT 仍可能不足。胸水並非一定會產生 hypercapnia；它也可經 atelectasis 造成單獨或合併的低氧。
+**肺／氣道：阻力與死腔增加。** COPD 或急性嚴重氣喘使呼氣流速受限，尚未吐完下一口就開始，發生 dynamic hyperinflation。患者必須先克服 auto-PEEP 才能吸入下一口，RR 再上升卻可能進一步縮短呼氣時間，造成更多 air trapping。高 V/Q／dead space 使維持相同 V̇A 需要更大 V̇E；若呼吸泵尚有儲備，PaCO₂ 可正常或偏低，像部分 PE 患者。這不是說 PE 的 dead space 自動造成高碳酸血症。
 
-**肺與氣道。** COPD 的呼氣氣流受限，使下一口吸氣可能在上一口尚未吐完時開始，造成 dynamic hyperinflation 與 intrinsic PEEP（auto-PEEP）。因此病人除了克服更高氣道阻力，還需先克服殘留正壓才能觸發吸氣；提高 RR 反而縮短吐氣時間、加重 air trapping。再加上肺部 V/Q 不均提高 VD/VT，就會同時出現**需要更多換氣**與**越努力越費力**的矛盾。這不是 MG 的「肌肉無力」單一路徑，而是 capacity 與 respiratory load 不匹配。
+### 真實病例一：MG 為什麼到 RR 40，反而更需要通氣支持？
 
-### 真實病例｜PaCO₂ 125、RR 22：為什麼沒有直接試 NIV？
+Kim 等人報告的 **68 歲女性**，起初沒有典型眼肌與肢體症狀。第一天她在室內空氣下 RR **24/min**、pH **7.441**、PaCO₂ **39.9**、PaO₂ **64.7**。第六天呼吸困難惡化，**RR 40/min**、意識混亂，在 **10 L/min 氧氣面罩**下 pH **7.324**、PaCO₂ **54.9**、PaO₂ **94.4**。肺影像沒有足以解釋全部衰竭的明顯實質病灶，神經生理檢查的 repetitive stimulation decrement 與 AChR antibody 支持 MG；之後病人轉 ICU 接受機械通氣及相應治療。[原始病例與 Figure 1–4](https://doi.org/10.3904/kjim.2010.25.1.101)。
 
-Miyoshi 等人（2024）報告一位 **39 歲男性**，極重度肥胖；醫院體重秤最多量至 **250 kg**，所以體重只能記為**至少 250 kg、BMI 至少約 81.1 kg/m²**，不能把 81.1 寫成精確值。到院 GCS **8**、RR **22/min**、SpO₂ **87%（已給氧 15 L/min）**；ABG pH **7.103**、PaCO₂ **125**、PaO₂ **80**、HCO₃⁻ **37.3**。影像有雙側肺浸潤與心臟擴大，作者認為肺炎與心衰竭亦可能促成失代償。[原始 Table 1、Figure 1、Figure 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/)。
-
-**真正的臨床轉折不是「PaCO₂ 125 所以一定要插管」。** 原作者明確記載患者躁動、不合作，當下**未使用 NIV**，之後接受氣管插管及侵襲性通氣；肺部與循環因素也同步處理。第 15 天的 ABG 為 pH **7.385**、PaCO₂ **56.9**（當時 FiO₂ 0.5、spontaneous ventilator mode）；拔管後短期使用 noninvasive positive pressure ventilation，之後才轉入夜間的睡眠呼吸支持。這一串處置不能被說成「NIV 降低了最初的 PaCO₂ 125」，因為**第一次矯正發生在插管治療期間**。
-
-病例的生理很重要：重度肥胖提高胸壁／肺負荷，加上通氣驅動與睡眠相關呼吸障礙的可能性，已經使白天 ventilatory capacity 不足。高 HCO₃⁻ 提示可能有先前的腎臟代償，但極低 pH 說明當下嚴重酸血症；感染及鬱血可能增加負荷與氧合問題。OHS 本身須在肥胖、清醒日間 PaCO₂ ≥45 mmHg 且排除其他低通氣病因後診斷，不能用 BMI 加上打呼直接確診。
-
-這個病例也解開 Won't／Can't 的人工二分：同時可能有呼吸控制、機械負荷與肺實質異常；在決定 NIV 或插管時，還需要額外的**病人合作程度、意識與氣道安全**，不在 PaCO₂ 公式內。
-
-## 第三問｜什麼訊號能在 PaCO₂ 明顯升高前提醒我們「快要無法代償」？
-
-**第一，PaCO₂ 與 pH 要一起看時間。** 同樣 PaCO₂ 60，急性呼吸性酸中毒可能 HCO₃⁻ 約 26、pH 約 7.26；慢性經數日腎臟代償可能 HCO₃⁻ 約 32、pH 約 7.35。這兩組是標準近似，不是同一病人必定經過的兩個階段。抽血時若有利尿劑、腎衰竭、嘔吐或混合代謝障礙，HCO₃⁻ 也可能被其他因素改變。
-
-**第二，EtCO₂（end-tidal CO₂）不是 PaCO₂ 的簡單替代品。** EtCO₂ 是呼氣末的 CO₂ 分壓，正常可接近 PaCO₂；若肺血流不足、高 V/Q 或廣泛 V/Q 不均，呼出 CO₂ 未必可靠代表動脈，PaCO₂ − EtCO₂ 差距可擴大。但原表 Lung/Airways 寫「↓ EtCO₂」，並不表示每一名 COPD／肺炎患者的 EtCO₂ 都會下降；單純 hypoventilation 反而常讓 EtCO₂ 隨 PaCO₂ 上升。EtCO₂ 也不等於一整口呼氣混合的平均 PCO₂，不能直接代入 Bohr dead-space equation 當作精確 VD/VT。
-
-**第三，比血氣更早的異常可能是為了維持血氣所付出的呼吸功。** MG 中 VC、MIP、咳嗽效率及球部功能可能先變差；COPD 中呼氣時間不足、胸腹不同步、輔助肌使用與動態過度充氣可能持續惡化。肺炎病人原本 PaCO₂ 25、後來回升至 40 mmHg，也不能只因 40「正常」就放心：在呼吸需求仍增加的背景下，這可能表示代償無法維持。另一方面，代謝需求減少也能使 PaCO₂ 回升，必須把同時的病程及檢查接回來，不能只看兩次 ABG 宣布疲乏。
-
-### 把生理接到 NIV：先定義治療，再問能否安全使用
-
-**NIV（noninvasive ventilation，非侵襲性通氣）** 是透過密合面罩等介面提供機械通氣支持，而不用氣管內管建立人工氣道；在急性高碳酸性呼吸衰竭，臨床常指 **bilevel NIV**。它透過較高吸氣壓 **IPAP**、較低呼氣壓 **EPAP**，形成吸氣壓力支持 **IPAP − EPAP**，在適當同步與漏氣控制下協助增加 VT、減少呼吸肌負荷。EPAP 另影響肺泡開放及呼氣末力學，但過高 EPAP 也可能有害。**給氧提高 FiO₂，不會自動幫病人排 CO₂；CPAP、HFNC 和 bilevel NIV 的機械作用不能混為一談。**
-
-<figure id="pressure-cycle" class="diuretic-figure">
-<div class="diuretic-figure-head"><span>FIGURE 04 · IPAP / EPAP PHYSIOLOGY</span><strong>同一口氣中，吸氣與呼氣為什麼要有壓差？</strong></div>
-<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="Bilevel NIV 在呼氣EPAP及吸氣IPAP間切換的壓力時間示意，可水平捲動">
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="280" viewBox="0 0 760 280" role="img" aria-labelledby="press-title press-desc">
-<title id="press-title">雙壓通氣的一個示意壓力週期</title><desc id="press-desc">呼氣末正壓EPAP低，吸氣壓IPAP高，兩者之差為壓力支持，協助增加潮氣量，但實際潮氣量仍受阻力、順應性、漏氣、病人努力與同步影響。示意數字為IPAP15 EPAP5 cmH2O，非醫囑。</desc>
-<rect width="760" height="280" fill="#f8fbfa"/><g stroke="#9db4ab" stroke-width="1"><line x1="70" y1="65" x2="710" y2="65" stroke-dasharray="4 6"/><line x1="70" y1="190" x2="710" y2="190" stroke-dasharray="4 6"/></g>
-<path d="M80 190 H177 V65 H300 V190 H417 V65 H540 V190 H685" stroke="#327e9e" stroke-width="6" fill="none" stroke-linejoin="round"/>
-<g font-family="sans-serif" fill="#28443f"><text x="15" y="71" font-size="16">IPAP</text><text x="15" y="90" font-size="14">15</text><text x="15" y="192" font-size="16">EPAP</text><text x="15" y="211" font-size="14">5</text><text x="205" y="48" font-size="16">吸氣壓力支持</text><text x="430" y="48" font-size="16">吸氣</text><text x="335" y="214" font-size="15">呼氣</text><text x="65" y="251" font-size="13">時間 →　示意 15/5 cmH₂O，壓差 10；不是推薦個別病人設定</text></g>
-<path d="M322 70 V184" stroke="#ba8154" stroke-width="3"/><path d="M312 81 L322 65 L332 81 M312 174 L322 190 L332 174" stroke="#ba8154" stroke-width="3" fill="none"/>
+<figure id="mg-trajectory" class="diuretic-figure">
+<div class="diuretic-figure-head"><span>FIGURE 03 · OBSERVED CLINICAL TRAJECTORY</span><strong>RR ↑、PaCO₂ ↑、pH ↓：不是病人沒有試著呼吸</strong></div>
+<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="MG真實病例第一天與第六天兩次血氣並列及箭頭，可水平捲動">
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="300" viewBox="0 0 750 300" role="img" aria-labelledby="mg-title mg-desc">
+<title id="mg-title">MG病例住院第一天與第六天的呼吸頻率、二氧化碳與酸鹼變化</title><desc id="mg-desc">第一天室內空氣RR24、PaCO2 39.9、pH7.441、PaO2 64.7；第六天氧氣面罩10升每分鐘RR40、PaCO2 54.9、pH7.324、PaO2 94.4。PaO2因給氧條件不同不能直接視為本身肺功能改善。</desc>
+<rect width="750" height="300" fill="#f8fbfa"/><g font-family="sans-serif" text-anchor="middle">
+<rect x="20" y="47" width="290" height="197" rx="17" fill="#e8f2f7" stroke="#6f9eb2" stroke-width="2"/><rect x="440" y="47" width="290" height="197" rx="17" fill="#f9e8e4" stroke="#c88b7d" stroke-width="2"/>
+<text x="165" y="79" font-size="19" font-weight="700" fill="#294c60">Day 1 · 室內空氣</text><text x="585" y="79" font-size="19" font-weight="700" fill="#7c423b">Day 6 · O₂ 面罩 10 L/min</text>
+<text x="165" y="117" font-size="18" fill="#294c60">RR 24 /min</text><text x="165" y="150" font-size="18" fill="#294c60">PaCO₂ 39.9</text><text x="165" y="183" font-size="18" fill="#294c60">pH 7.441</text><text x="165" y="215" font-size="18" fill="#294c60">PaO₂ 64.7</text>
+<text x="585" y="117" font-size="18" fill="#7c423b">RR 40 /min</text><text x="585" y="150" font-size="18" fill="#7c423b">PaCO₂ 54.9</text><text x="585" y="183" font-size="18" fill="#7c423b">pH 7.324</text><text x="585" y="215" font-size="18" fill="#7c423b">PaO₂ 94.4</text>
+</g>
+<path d="M320 145 H430" stroke="#ae7556" stroke-width="6"/><path d="M415 133 L435 145 L415 157" fill="none" stroke="#ae7556" stroke-width="6"/>
+<text x="375" y="108" font-size="16" font-family="sans-serif" text-anchor="middle" fill="#91604a">惡化</text>
+<text x="375" y="277" font-family="sans-serif" font-size="13" fill="#5f7169" text-anchor="middle">同期 VT、VD 未報告，不以 RR 差額推算患者 V̇A</text>
 </svg></div>
-<figcaption><strong>圖 4｜Bilevel 不等於只供氧。</strong>圖示 IPAP 15、EPAP 5 cmH₂O 為教學設定，不是治療處方，波形並非實測機器輸出；VT 是否增加仍取決於阻力、順應性、漏氣、同步及病人的吸氣努力。完整適應症、禁忌與官方國考詳解請回讀<a href="2026-10-22-hypercapnic-failure.md">NIV 治療篇</a>。</figcaption>
+<figcaption><strong>圖 3｜同一病人不同日期的實測血氣。</strong>完整數據來自 Kim 2010 病例；兩天 FiO₂ 並不相同，**PaO₂ 上升不能當成呼吸泵恢復的證據**。此圖僅重繪原研究報告的數字，沒有插入不存在的 VT、VD 或肺泡換氣量；原文 Figure 1 及後續神經檢查圖請由 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2829406/">PMC 全文</a>核讀。</figcaption>
 </figure>
 
-這個介入決策不可能只由「PaCO₂ 太高」或「pH 低於某值」完成。若患者清醒、能保護氣道、能處理分泌物且沒有立即循環危險，合適的酸中毒性高碳酸呼吸衰竭可以在有監測及救援能力的環境試 NIV；之後需及時看呼吸功、意識、漏氣、pH 與 PaCO₂ 是否改善。若反覆嘔吐、嚴重躁動無法配合、氣道不能保護、呼吸停止或循環瀕危，不能為了讓面罩「成功」而拖延必要的侵襲性氣道處置。OHS 病例正是安全前提改變選擇，不是 PaCO₂ 125 自動等同某種呼吸器。
+這個病例回答了原圖的第二問：**肺能被提高氧分壓，卻不能靠氧氣補足吸氣肌沒有產生的有效 VT。**神經肌肉性呼吸衰竭的危險也不是要等 PaCO₂ 很高才開始；VC、呼吸肌力量、咳嗽／吞嚥與意識的變化，可能比某一次 PaCO₂ 更早讓人決定必須準備氣道支持。
 
-2026 ATS 非侵襲性呼吸支持指引對**成人急性高碳酸呼吸衰竭**強烈推薦適當的 NIV 相較一般氧療，以減少插管及死亡；HFNC 的有條件替代僅限較輕高碳酸、輕微酸血症且能即時升級的情境。此結果不能未經個別疾病與氣道安全評估就外推到所有 MG、OHS 或不能保護氣道的患者。[2026 ATS 正式指引](https://doi.org/10.1093/ajrccm/aamag302)。
+### 真實病例二：OHS PaCO₂ 125，為什麼不是直接「試 NIV 看看」？
 
-| 床邊觀察 | 它真正改變的判斷 | 不能省略的下一步 |
+2024 年 Hongo 等人報告一名 **39 歲男性**，量測設備達上限，只能確定體重**至少 250 kg、BMI 至少約 81.1 kg/m²**；不是量到精確 250 kg。入院 **GCS 8**、RR **22/min**，在 **15 L/min O₂** 下 SpO₂ **87%**。ABG：pH **7.103**、PaCO₂ **125**、PaO₂ **80** mmHg、HCO₃⁻ **37.3** mmol/L。影像同時有肺浸潤、心臟擴大；作者推測可能有感染、心衰因素共同促成 OHS 的急性失代償。[原始 Table 1、Figure 1–3 與完整病程](https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/)。
+
+先解讀時間尺度：HCO₃⁻ 37.3 提示先前已有慢性 CO₂ retention 的腎臟適應可能，但目前 pH 7.103 是嚴重急性酸血症。**這不是慢性 PaCO₂ 高、所以此刻可以安心等待。**
+
+更重要的是，原文特別交代：入 ICU 後患者**躁動且不配合**，因此未施行 NIV，而是經家屬同意進行氣管插管。**NIV（noninvasive ventilation）** 是以貼合口鼻的面罩等介面，在不插入氣管內管的情況下提供正壓通氣；常用 bilevel NIV 以較高的 **IPAP（吸氣期正壓）**與較低的 **EPAP（呼氣期正壓）**形成 pressure support，協助提高 VT、降低部分呼吸肌負荷。它不是只增加 FiO₂，更不能替代病人保護氣道、清理大量分泌物或保證面罩可持續密合。
+
+所以 OHS 病人的決策不在於「PaCO₂ 125 一定不能用 NIV」，而是**他當時能否安全、有效而可持續地接受非侵入介面**。這名個案的意識、躁動與不配合，再加上嚴重呼吸失衡，使經氣管支持更可行。GCS 低與嚴重酸血症是高度警訊，但仍不是所有病因、所有場景的單一絕對排除值。
+
+治療後的資訊也值得一併閱讀。原文在第 **15 天**、FiO₂ **0.5** 的自主呼吸模式下記錄 pH **7.385**、PaCO₂ **56.9**、HCO₃⁻ **33.9**，病人隨後拔管並短期使用非侵入正壓支持；第 **20 天**離開 ICU，第 **60 天**出院。這時 PaCO₂ **仍高於 45 mmHg**，不能因此判定治療失敗；因為當時的酸鹼穩定性、呼吸負荷、氣道與支持需求已經不同。這也說明治療的終點不是所有患者都回到 PaCO₂ 40。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/">原始 ICU 時間線與呼吸器設定</a>。
+
+<figure id="ohs-trajectory" class="diuretic-figure">
+<div class="diuretic-figure-head"><span>FIGURE 04 · SUPPORT DECISION CHANGES WITH THE PATIENT</span><strong>同一個人：入院不能安全配合 NIV，拔管後反而可以使用</strong></div>
+<div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="OHS病例入院、插管、第15天拔管和第20天離開ICU的病程，可水平捲動">
+<svg xmlns="http://www.w3.org/2000/svg" width="805" height="300" viewBox="0 0 805 300" role="img" aria-labelledby="ohs-title ohs-desc">
+<title id="ohs-title">OHS案例治療時間線</title><desc id="ohs-desc">入院GCS8、pH7.103、PaCO2 125，因躁動不配合NIV而插管；第15天pH7.385、PaCO2 56.9、FiO2 0.5，拔管後短期NIV，第20天離開加護病房，第60天出院。</desc>
+<rect width="805" height="300" fill="#f8fbfa"/><line x1="80" x2="723" y1="145" y2="145" stroke="#74918b" stroke-width="6"/>
+<g font-family="sans-serif" text-anchor="middle">
+<circle cx="100" cy="145" r="12" fill="#bd675c"/><circle cx="311" cy="145" r="12" fill="#bd855c"/><circle cx="523" cy="145" r="12" fill="#438da0"/><circle cx="713" cy="145" r="12" fill="#4e9074"/>
+<text x="100" y="42" font-size="19" font-weight="700" fill="#8b443f">入院</text><text x="100" y="66" font-size="15" fill="#8b443f">GCS 8</text><text x="100" y="87" font-size="15" fill="#8b443f">PaCO₂ 125</text><text x="100" y="110" font-size="15" fill="#8b443f">pH 7.103</text>
+<text x="311" y="42" font-size="19" font-weight="700" fill="#895937">氣管插管</text><text x="311" y="66" font-size="15" fill="#895937">躁動、無法配合</text><text x="311" y="87" font-size="15" fill="#895937">不適用當時 NIV</text>
+<text x="523" y="42" font-size="19" font-weight="700" fill="#2a6676">Day 15</text><text x="523" y="66" font-size="15" fill="#2a6676">pH 7.385</text><text x="523" y="87" font-size="15" fill="#2a6676">PaCO₂ 56.9</text><text x="523" y="110" font-size="15" fill="#2a6676">拔管 → NIV</text>
+<text x="713" y="42" font-size="19" font-weight="700" fill="#376d56">Day 20</text><text x="713" y="66" font-size="15" fill="#376d56">離開 ICU</text><text x="713" y="87" font-size="15" fill="#376d56">Day 60 出院</text>
+<text x="402" y="211" font-size="18" font-weight="700" fill="#355a53">支持策略改變，不是因為 PaCO₂ 已降到正常</text>
+<text x="402" y="244" font-size="13" fill="#5e746c">非同 FiO₂ 的連續 ABG；此圖不以 PaCO₂ 下降幅度量化插管單獨效果。</text>
+<text x="402" y="275" font-size="12" fill="#6e7e76">資料據 Hongo 2024 原病例文字與 Table 1、Figure 3；教學重繪非原文影像。</text>
+</g>
+</svg></div>
+<figcaption><strong>圖 4｜支持策略要隨時間重新評估。</strong>取自 Hongo 2024 個案文字與圖表的時間點；插管後同時接受感染、體液負荷、營養及復健介入，不能把病程改善全部歸因於單一呼吸器設定。第 15 天的 ABG 是拔管前後評估脈絡，不是與入院同一 FiO₂ 的直接比較。</figcaption>
+</figure>
+
+這正好接回你的治療問題：**使用 NIV 的條件不是單純「PaCO₂ 偏高且還沒昏迷」**。必須同時問：是否有可逆的通氣不足、面罩能否密合並被接受、能否保護氣道與清痰、是否在最初治療後確實降低呼吸功及改善 pH。若有持續惡化的意識或氣道危險，不能為了延長 NIV 而延誤更可靠的氣道處置。詳見[既有 NIV 決策篇與國考原題](2026-10-22-hypercapnic-failure.md)，以及其後續重寫的審查狀態。
+
+## 第三問｜哪些「看起來變正常」的數字，可能反而掩蓋通氣失代償？
+
+**第一個陷阱：PaCO₂ 正常化。** 患者原本嚴重肺炎，因呼吸刺激而 PaCO₂ 25 mmHg；數小時後若呼吸功更大、VT 更小、意識下降，即使 PaCO₂ 回到 40，也不能自動說恢復。對這名患者而言，原本的低 PaCO₂ 可能是付出極大通氣需求才維持的代償，現在這份能力正在失去。當然，疼痛、發燒或代謝需求下降也可以讓 PaCO₂ 回升，所以**一定要結合前後症狀和 V̇CO₂ 的變動**；這段 25→40 僅是條件式分析，不是另一名被發明的「病例」。
+
+**第二個陷阱：同樣 PaCO₂ 60，卻忽略 pH 和 HCO₃⁻。** 急性呼吸性酸中毒的 HCO₃⁻ 可粗估約 26 mEq/L、pH 約 7.26；慢性 CO₂ retention 在腎臟代償後 HCO₃⁻ 可約 32、pH 約 7.35。這只是典型生理估算，不能代替同時存在的 metabolic alkalosis、利尿劑或腎病評估。因此 OHS 病例入院 HCO₃⁻ 高，和他同時發生極端急性酸血症並不矛盾。
+
+**第三個陷阱：EtCO₂ 的低值。** End-tidal CO₂（EtCO₂）測量**每次呼氣末端**的 CO₂；PaCO₂ 是動脈血氣。肺灌流與 V/Q 分布相對均勻時兩者往往接近，但高 V/Q／dead space、低心輸出量、採樣漏氣或嚴重肺異質性，會讓 EtCO₂ 低估 PaCO₂、兩者差距增大。不能因 Pocket Medicine 表格在 lung/airways 下寫「↓ EtCO₂」，就以為每一種肺病的 EtCO₂ 都下降；單純低通氣反而可使兩者一起升高。
+
+也不要混淆 EtCO₂ 與一整口氣**所有呼出氣混合後的平均 CO₂（mixed expired PCO₂）**。Bohr dead-space equation 使用後者；Enghoff modification 以 PaCO₂ 取代理想肺泡 PCO₂，因此還會受低 V/Q 和 shunt 影響。僅憑 PaCO₂－EtCO₂ gap，不能精確求得 VD/VT 或診斷 PE。
+
+| 床邊觀察 | 最需要重新評估 | 不能直接得出的結論 |
 | --- | --- | --- |
-| RR 40、PaCO₂ 上升 | RR 補償未維持足夠有效 CO₂ 排除 | 問 VT、VD、V̇CO₂、呼吸肌與負荷 |
-| MG 的 MIP／VC 變差，吞嚥清痰差 | 呼吸泵與氣道保護可能先衰竭 | 依進展速度、球部功能決定監測及升級 |
-| OHS PaCO₂ 125、GCS 8 且躁動 | 嚴重酸血症，安全面罩支持前提可能不成立 | 氣道、循環、感染及鬱血同步處理 |
-| NIV 後 SpO₂ 好看卻持續嗜睡 | 氧合不代表有效通氣或氣道安全 | 立即重新評估並準備升級，不等下一次排程 ABG |
-| COPD 提高 RR 後過度充氣 | 強迫提高 V̇E 可能增加 auto-PEEP | 保留呼氣時間，整合 CO₂、機械負荷與循環 |
+| RR 24→40，PaCO₂ 也上升 | VT、呼吸肌儲備、dead-space 與 CO₂ 需求 | 「病人沒有努力呼吸」 |
+| 補氧後 PaO₂ 上升，pH／PaCO₂ 惡化 | 氧合與有效通氣是否分離 | 「肺功能已恢復」 |
+| GCS 下降、無法配合 NIV | 氣道保護、介面可行性與及時插管 | 「PaCO₂ 高的人一定都得插管」 |
+| 插管後 PaCO₂ 仍 56.9，pH 接近正常 | 慢性代償與目前穩定性、能否脫離支持 | 「PaCO₂ 未達 40 表示治療失敗」 |
+| EtCO₂ 偏低、PaCO₂ 偏高 | 死腔／V/Q、肺灌流、儀器與波形 | 「一定是 PE」 |
 
-**結語。** 表格中的 Won't／Can't Breathe 不是兩種病人，而是兩個判斷層次：呼吸中樞給了多少驅動、身體能否把驅動轉化成**相對 CO₂ 產生需求足夠的有效肺泡通氣**。真正需要提前辨識的，不只是 PaCO₂ 上升，而是病人為了維持暫時正常的 PaCO₂，已經用盡多少呼吸儲備。
+**結論。** 這張表不是讓人把病名丟進四欄，而是在呼吸中樞、神經肌肉、胸壁及肺泡換氣效率間，尋找哪個環節讓**ventilatory demand 超過 ventilatory capacity**。當病人仍在提高 RR，真正危險的可能是 VT 已無法再提供足夠有效通氣；當病人已需要 NIV 或插管，真正必須重新評估的是治療能否安全提供所需的通氣，而非追求漂亮的 PaCO₂ 數字。
 
-[前篇：A–a、V/Q 與 shunt](2026-10-25-hypoxemia-mechanisms.md)・[NIV 治療機制／國考題](2026-10-22-hypercapnic-failure.md)・[Pocket 原表、病例與來源界限](../respiratory-deep-dive-sources.md)
+[回到 A–a / shunt 病例篇](2026-10-25-hypoxemia-mechanisms.md)・[NIV 治療篇與國考題](2026-10-22-hypercapnic-failure.md)・[原表、病例與圖說審查範圍](../respiratory-deep-dive-sources.md)
