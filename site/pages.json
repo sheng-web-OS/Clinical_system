@@ -520,5 +520,41 @@
         49
       ]
     }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-25-hypoxemia-mechanisms.md",
+    "output": "xiaoma-20261025-hypoxemia-mechanisms.html",
+    "title": "A–a gradient 變大，為什麼還無法診斷 shunt？",
+    "subtitle": "從肺泡氧分壓、血液氧含量混合，到姿勢性分流與 V/Q 異質性",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症・深入三問",
+    "references": "xiaoma-respiratory-deep-dive-sources.html",
+    "date": "2026-10-25",
+    "navigation": false,
+    "review": "ai_editorial_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-25-hypercapnia-physiology.md",
+    "output": "xiaoma-20261025-hypercapnia-physiology.html",
+    "title": "RR 已經 40/min，為什麼 PaCO₂ 仍然上升？",
+    "subtitle": "從 MG、OHS 真實病例，讀懂驅動、呼吸泵、死腔與通氣儲備",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症・深入三問",
+    "references": "xiaoma-respiratory-deep-dive-sources.html",
+    "date": "2026-10-25",
+    "navigation": false,
+    "review": "ai_editorial_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
+    "output": "xiaoma-respiratory-deep-dive-sources.html",
+    "title": "Respiratory Failure 深化：小麻原圖與病例來源",
+    "subtitle": "Figure 2-5、Etiologies of High PaCO₂、PFO／MG／OHS 真實病例及模型界限",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
