@@ -3,7 +3,6 @@
   "purpose": "Mandatory original-figure/table provenance review for new or modified published teaching. Legacy entries are frozen backlog, not visual certification.",
   "legacy_frozen": {
     "content/xiaoma-reading/integrated/2026-10-21-dcm.md": "f16eced854467e5c8e43a063ef5d34b93f0d1d15",
-    "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md": "89cb49a9ccc1114b74b5c6cb04b059e8c1c1121a",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md": "67bac856e6cc1ea7ded35c05f95d2f8677a4c320",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md": "8f10c78eb6c9df4b749b853f20baab235417c2ab",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md": "0bb914e54645574201265d57c77ec3bd01d19edb",
@@ -162,6 +161,39 @@
           "teaching_role": "提供完整severe CAP原表讓讀者對回三項minor criteria與一項major criterion的分流依據，避免把CURB-65當相同用途。",
           "scope_limit": "條件用於嚴重度與照護評估，不能當固定插管處方，也不得為等待分數齊全而延誤已惡化病人的立即支持。",
           "why_link_instead": "官方原表以直接PDF頁次連結供讀者核對，本站以新文字解釋與自編病例呈現，不複製出版社圖表像素或版面。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E PDF page 105, Figure 2-5 Workup of acute hypoxemia flow diagram",
+          "source_token": "Figure 2-5 Workup of acute hypoxemia",
+          "mode": "illustrated",
+          "anchor": "hypoxemia-workup",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "分開肺泡氧起點不足與額外肺泡動脈差，讓 A–a 的運算只在確實需要定位後才出現。",
+          "scope_limit": "原創雙軸教學圖，非原圖全部診斷分支；不能用未知 FiO₂ 或快速變動的血氣計算假精確診斷。"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF page 106, original Etiologies of High ↑ PaCO2 causes table",
+          "source_token": "Etiologies of High ↑ PaCO2",
+          "mode": "illustrated",
+          "anchor": "hypercapnia-mechanisms",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "追查高 CO₂ 是驅動、泵或肺與氣道負荷問題，讓 RR 快慢與有效換氣的差異回到同一模型。",
+          "scope_limit": "重繪僅用於分類，不包含原表全部病因；不能由單一 PaCO₂ 或用藥時間先後直接確認病因。"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF page 107, original Noninvasive Ventilation (NIV) and Oxygen Delivery Systems tables",
+          "source_token": "Noninvasive Ventilation (NIV)",
+          "mode": "illustrated",
+          "anchor": "support-modalities",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "把補氧、維持肺泡開放、吸氣壓力支持及有創氣道控制的生理工作分離，避免僅看 SpO₂ 判斷治療成功。",
+          "scope_limit": "功能圖非原表重製及固定階梯，不能取代病人的氣道循環安全判斷或詳細呼吸支持處方。"
         }
       ]
     }

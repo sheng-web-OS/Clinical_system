@@ -61,3 +61,14 @@
 ## 來源範圍
 
 來源查核範圍為上述指定段落、原題與答案，未完成獨立真人專科審查或學習成效試驗。臨床應用仍需對照現行指引與病人當下情境。
+
+## 原書圖表的實際目視核對（2026-10-25）
+
+本次以使用者提供的《Pocket Medicine》第九版 PDF 原頁影像（實際 PDF 頁序 105–108）核對原圖、表格欄位及附近說明。網站圖是獨立教學整理，不重製原書像素或全表內容。
+
+- **PDF p105，Figure 2-5 Workup of acute hypoxemia**：先依 A–a gradient 正常／升高分流，分辨低吸入氧或低換氣與 shunt、V/Q mismatch、diffusion limitation。本篇 `#hypoxemia-workup` 保留兩個分類軸；未搬運原圖病名列表。正常 A–a 仍受年齡、FiO₂ 與穩態限制。
+- **PDF p106，Etiologies of High ↑ PaCO2**：原表以 Won't Breathe、Can't Breathe 區分呼吸驅動與神經肌肉、胸壁／胸膜、肺氣道等限制，並提及 CO₂ 產生量增加。本篇 `#hypercapnia-mechanisms` 重組為功能類別，不可由血氣確診藥物或單一肺病。
+- **PDF p107，Noninvasive Ventilation (NIV)** 與 Oxygen Delivery Systems 表：原表描述 CPAP、bilevel 等的不同生理角色及氣道保護、意識與循環安全條件。本篇 `#support-modalities` 是原創比較，非完整處方。原書表中 COPD pH 的壓縮寫法不可直接替代後續正式指南。
+- **PDF p108，Ventilator Modes and Principles／Variables on the Ventilator**：核查 FiO₂、PEEP 與壓力支持的功能及可能循環代價；本篇不提供侵襲性呼吸器參數處方。
+
+這是對指定原圖表及正文關係的核對，未逐一驗證原書所有引用研究，也不等於獨立醫師同儕審查、手機閱讀驗收或讀者學習效果試驗。
