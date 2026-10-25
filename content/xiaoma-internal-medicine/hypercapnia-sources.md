@@ -16,7 +16,23 @@
 | 107 | Oxygen Delivery Systems、Noninvasive Ventilation | 實際看原頁、兩張表格、氧流量註腳與 pH <7.3 那一列 |
 | 108–110 | Ventilator Modes、Variables、auto-PEEP 與設定調整 | 讀取文字；未完整視覺審核 Figure 2-6 |
 
-本篇的壓力比較與臨床分支表為原創教學整理，不是小麻原表重製。12／5、15／8 是設定關係示例，不能作為個別病人的治療處方；病例及其後續血氣均明確標為自編。
+本篇的壓力比較與臨床分支表為原創教學整理，不是小麻原表重製。正文 16／6、16／10 是單純解釋壓力差的設定示例，**不是病例的原始機器設定或治療處方**。本文 71 歲女性與 63 歲男性均引用可追溯的已發表病例資料，另行明確標示反事實問題，禁止將其誤認為原始病程。
+
+## 真實病例優先與數值查核
+
+<span id="case-reports"></span>
+
+**病例 A（敘事主軸）：** Fubini PE, Suppan L. *Prehospital reversal of profound respiratory acidosis and hypercapnic coma by non-invasive ventilation: a report of two cases.* Int J Emerg Med. 2020;13:22. [原始全文](https://link.springer.com/article/10.1186/s12245-020-00284-y)・[DOI](https://doi.org/10.1186/s12245-020-00284-y)。
+
+原文 Case 1：71 歲 GOLD stage 3 COPD，前晚 oxazepam 30 mg；院前 GCS 6、RR >40、SpO₂ 80%（鼻導管 6 L/min），pH 7.17、PaCO₂ 15.6 kPa、HCO₃⁻ 43；bilevel NIV 後 GCS 增至 10，60 分鐘 pH 7.31、PaCO₂ 10.0 kPa、HCO₃⁻ 37。作者指出醫師在場、密切監測及立即救援能力。**資料界限：**作者對 benzodiazepine 作誘因判斷，不能排除其他原因；完整氣道保護反射、嘔吐風險等未逐項記錄，不能腦補。這是小型病例報告，不能估算重度意識障礙時 NIV 的一般成功率。PaCO₂ 單位由 kPa × 7.5006 換算為近似 mmHg。第二個 GCS 3 病例同時有不插管意願，不能抹掉該倫理條件拿來證明所有深昏迷可先 NIV。
+
+**病例 B（NIV 失敗對照）：** Balkan B, et al. *Management Strategies for Hypercapnic Respiratory Failure in Chronic Obstructive Pulmonary Disease (COPD): A Case-Based Discussion.* Cureus. 2025;17:e84717. [原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC12183487/)・[DOI](https://doi.org/10.7759/cureus.84717)。
+
+Case 1：63 歲 COPD 合併 CT 肺炎浸潤，先以 BiPAP／藥物治療，原文報告 pH 7.15、PaCO₂ 141，六小時後改插管，有濃稠分泌物；第八天拔管，第十二天出院。**重大數據限制：**原文並列 HCO₃⁻ 36.1 mmol/L，但依 Henderson–Hasselbalch 關係，若 pH 7.15 與 PaCO₂ 141 mmHg 來自同一血氣標本，對應 HCO₃⁻ 約 47 mmol/L，而非 36.1；其拔管當日 pH 7.36、PaCO₂ 70、HCO₃⁻ 33.9 亦不完全相容。故正文僅保留「作者報告」之 pH／PaCO₂ 及清楚時間事件，不以該組 HCO₃⁻ 推算代償，不重建缺少資料的每小時 NIV 反應，更不將這組病例系列當成可作因果或療效概率推論的比較研究。正文也不引用原文模糊的 ventilator tidal volume 設定。
+
+**支援裝置與圖像：** [A clinical guide to non-invasive respiratory support in acute respiratory failure (Critical Care 2025)](https://doi.org/10.1186/s13054-025-05730-y)，Fig. 1 與 Fig. 5 對照介面與管路；表格與內容支持 bilevel NIV 吸氣壓力差與 HFNC、CPAP 的區分。教材目前只連原文圖像，不擅自嵌入或宣稱原創。
+
+**教學採樣原則：**優先能核查時間線、治療條件與決策反轉的原始 case report／case series；必須明確區分已觀察、作者推論、一般指引與本站反事實教學問題。病例不夠完整時不要補虛構數值，也不能把有趣的單例當作推翻一般指引的證據。
 
 ## pH 門檻的衝突
 
@@ -66,6 +82,6 @@ Goel NN, et al. **Noninvasive respiratory support for adult patients with acute 
 
 ## 題解修訂的補讀範圍
 
-2026-10-22 本輪再次目視原書第 107 頁的面罩、氣道、分泌物與壓力模式欄位，並重讀 ERS/ATS 2017 問題 1b 的酸中毒族群及排除條件。第 8 節三題解析與隨文練習同步補足生理、安全前提及條件改變；第 9 節仍使用原自編情境。
+2026-10-22 本輪再次目視原書第 107 頁的面罩、氣道、分泌物與壓力模式欄位，並重讀 ERS/ATS 2017 問題 1b 的酸中毒族群及排除條件。第 8 節三題官方題目保留；2026-10-25 改寫正文與第 9 節，改以真實病例為主軸，並且將概念定義、介面與壓力支持放在其他深入生理概念之前。
 
 第三題另對讀 [ATS OHS 官方說明](https://www.thoracic.org/members/assemblies/assemblies/srn/sleep-matters/2019-09-02.php)，補 BMI 計算、OSA 與清醒高碳酸的分界及排除其他原因。2026 ATS 全文限制維持前述狀態，沒有改稱已完整取得。
