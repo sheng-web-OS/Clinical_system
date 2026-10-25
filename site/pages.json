@@ -465,7 +465,7 @@
     "references": "xiaoma-pneumonia-sources.html",
     "date": "2026-10-25",
     "navigation": false,
-    "review": "ai_editorial_review"
+    "review": "author_source_check"
   },
   {
     "source": "content/xiaoma-internal-medicine/pneumonia-sources.md",
