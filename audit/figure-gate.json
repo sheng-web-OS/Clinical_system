@@ -145,14 +145,14 @@
           "scope_limit": "原圖只涉及肺炎診斷、病原情境和相關表格；本篇教學三問圖並非原書全表，也不能依此估算個人死亡率或直接指定菌株。"
         },
         {
-          "locator": "Oostwoud et al. Netherlands Journal of Critical Care 2017;25(5):178–182, clinical problem-solving case narrative; Figures 1–2 of radiographic evolution, visual review pending",
+          "locator": "Oostwoud et al., Netherlands Journal of Critical Care 2017;25(5):178–182. Official journal PDF Figure 1 p178, Table 1 p178, Figure 2 p179, discussion/PSI-CURB-65 p179, ICU course p179-180. Visual audit completed 2026-10-25.",
           "source_token": "Oostwoud",
           "mode": "illustrated",
           "anchor": "pneumonia-case-trajectory",
           "caption_token": "Oostwoud",
           "teaching_role": "將入院單葉浸潤、翌日 SpO₂ 77% 和 RR 32/min、轉 ICU 插管的病程依時間串接，展示器官支持需求可先於 CURB-65 增分。",
-          "scope_limit": "原始 case report PDF 本輪無法逐頁目視，特別是 Figure 1／2；本圖僅根據可查原文文字重建時間線，不複製胸片或臆造氧氣流量與血氣數字。",
-          "verification_limit": "Visual inspection of the original case PDF and chest radiographs remains pending and blocks editorial release; passing this automated figure gate is not full source verification."
+          "scope_limit": "期刊原 Figure 1／2 僅顯示入院與惡化後的胸片；本教材以作者完整敘述重組的時間線，不由影像自行推算危險程度、氧濃度或個人死亡機率。",
+          "visual_verification": "Official five-page PDF from de-intensivist.nl visually inspected: pages 178-182; source X-rays (Fig 1, Fig 2), ABG Table 1, surrounding captions and notes. Linked without reproducing copyrighted pixels."
         },
         {
           "locator": "ATS 2025 CAP guideline Table 2; corroborating IDSA CAP Clinical Pathway PDF page 3 Table 2, severe CAP major and minor criteria",
