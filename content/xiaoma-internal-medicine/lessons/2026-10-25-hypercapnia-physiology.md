@@ -106,7 +106,7 @@ Kim 等人報告的 **68 歲女性**，起初沒有典型眼肌與肢體症狀�
 
 ### 真實病例二：OHS PaCO₂ 125，為什麼不是直接「試 NIV 看看」？
 
-2024 年 Hongo 等人報告一名 **39 歲男性**，量測設備達上限，只能確定體重**至少 250 kg、BMI 至少約 81.1 kg/m²**；不是量到精確 250 kg。入院 **GCS 8**、RR **22/min**，在 **15 L/min O₂** 下 SpO₂ **87%**。ABG：pH **7.103**、PaCO₂ **125**、PaO₂ **80** mmHg、HCO₃⁻ **37.3** mmol/L。影像同時有肺浸潤、心臟擴大；作者推測可能有感染、心衰因素共同促成 OHS 的急性失代償。[原始 Table 1、Figure 1–3 與完整病程](https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/)。
+2024 年 Miyoshi 等人報告一名 **39 歲男性**，量測設備達上限，只能確定體重**至少 250 kg、BMI 至少約 81.1 kg/m²**；不是量到精確 250 kg。入院 **GCS 8**、RR **22/min**，在 **15 L/min O₂** 下 SpO₂ **87%**。ABG：pH **7.103**、PaCO₂ **125**、PaO₂ **80** mmHg、HCO₃⁻ **37.3** mmol/L。影像同時有肺浸潤、心臟擴大；作者推測可能有感染、心衰因素共同促成 OHS 的急性失代償。[原始 Table 1、Figure 1–3 與完整病程](https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/)。
 
 先解讀時間尺度：HCO₃⁻ 37.3 提示先前已有慢性 CO₂ retention 的腎臟適應可能，但目前 pH 7.103 是嚴重急性酸血症。**這不是慢性 PaCO₂ 高、所以此刻可以安心等待。**
 
@@ -130,7 +130,7 @@ Kim 等人報告的 **68 歲女性**，起初沒有典型眼肌與肢體症狀�
 <text x="713" y="42" font-size="19" font-weight="700" fill="#376d56">Day 20</text><text x="713" y="66" font-size="15" fill="#376d56">離開 ICU</text><text x="713" y="87" font-size="15" fill="#376d56">Day 60 出院</text>
 <text x="402" y="211" font-size="18" font-weight="700" fill="#355a53">支持策略改變，不是因為 PaCO₂ 已降到正常</text>
 <text x="402" y="244" font-size="13" fill="#5e746c">非同 FiO₂ 的連續 ABG；此圖不以 PaCO₂ 下降幅度量化插管單獨效果。</text>
-<text x="402" y="275" font-size="12" fill="#6e7e76">資料據 Hongo 2024 原病例文字與 Table 1、Figure 3；教學重繪非原文影像。</text>
+<text x="402" y="275" font-size="12" fill="#6e7e76">資料據 Miyoshi 2024 原病例文字與 Table 1、Figure 3；教學重繪非原文影像。</text>
 </g>
 </svg></div>
 <figcaption><strong>圖 4｜支持策略要隨時間重新評估。</strong>取自 Miyoshi et al. 2024 個案文字與圖表的時間點；插管後同時接受感染、體液負荷、營養及復健介入，不能把病程改善全部歸因於單一呼吸器設定。第 15 天的 ABG 是拔管前後評估脈絡，不是與入院同一 FiO₂ 的直接比較。</figcaption>
