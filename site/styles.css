@@ -108,6 +108,14 @@
 .article .diuretic-decision-card span{font-family:ui-monospace,monospace;color:var(--brand);letter-spacing:.04em;font-size:11px;font-weight:700}
 .article .diuretic-decision-card strong{display:block;margin-top:9px;font-size:.94em;line-height:1.65;color:var(--ink)}
 .article .diuretic-decision-card p{margin:8px 0 0;font-size:.77em;color:var(--muted);line-height:1.85}
+/* Numbered diagnostic/treatment sequences share the figure's typography and gutters. */
+.article .diuretic-steps{display:grid;padding:4px 24px 8px}
+.article .diuretic-step{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start;min-width:0;padding:18px 0}
+.article .diuretic-step+.diuretic-step{border-top:1px solid var(--line)}
+.article .diuretic-step>span{display:grid;place-items:center;width:28px;height:28px;margin-top:1px;border-radius:50%;background:var(--brand-light);color:var(--brand);font:700 12px/1 ui-monospace,monospace}
+.article .diuretic-step>div{min-width:0;overflow-wrap:break-word}
+.article .diuretic-step strong{display:block;margin:0;font-size:.94em;line-height:1.55;color:var(--ink)}
+.article .diuretic-step p{margin:6px 0 0;font-size:.86em;line-height:1.75;color:var(--muted)}
 @media(max-width:650px){
  .article .diuretic-figure{margin:1.6rem -5px;border-radius:8px}
  .article .diuretic-figure-head{padding:16px 17px 14px}
@@ -115,6 +123,9 @@
  .article .diuretic-svg-scroll svg{width:710px;min-width:710px}
  .article .diuretic-decision-grid{grid-template-columns:1fr}
  .article .diuretic-decision-card{padding:18px 17px}
+ .article .diuretic-steps{padding:2px 17px 5px}
+ .article .diuretic-step{grid-template-columns:25px minmax(0,1fr);gap:10px;padding:15px 0}
+ .article .diuretic-step>span{width:25px;height:25px;font-size:11px}
 }
 
 
