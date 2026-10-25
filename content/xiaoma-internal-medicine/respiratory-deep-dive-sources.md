@@ -38,7 +38,7 @@
 
 **Kim WH, et al. 2010. Myasthenia gravis presenting as isolated respiratory failure: a case report.** *Korean J Intern Med* 25:101–104. [期刊正式全文、Figure 1–4](https://doi.org/10.3904/kjim.2010.25.1.101)，[PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC2829406/)。第一天 room air：RR 24/min、pH 7.441、PaCO₂ 39.9、PaO₂ 64.7，報告 A–a 36；第六天 O₂ 面罩 10 L/min：RR 40/min、pH 7.324、PaCO₂ 54.9、PaO₂ 94.4、SpO₂ 96.6%。Figure 1–2 記錄肺容積下降與 bibasilar atelectasis；Figure 3 electrophysiology、Figure 4 pharmacological Jolly test 對診斷有意義；AChR 抗體及後續治療依原文敘述。**沒有同時測量 VT/VD，不能把任何計算出來的 V̇A 說成此病人測值。**原論文有 noted atypical increased A–a，不能把此病人當成所有 MG 病人 A–a 都正常的證據。
 
-**Hongo T, et al. 2024. Management of Obesity Hypoventilation Syndrome in Extreme Obesity: A Case Study.** *American Journal of Case Reports* 25:e945112. [PMC 全文、Table 1、Figure 1–3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/)。39 歲男性入院 GCS 8、RR 22、15 L/min O₂ 下 SpO₂ 87%，pH 7.103、PaCO₂ 125、PaO₂ 80、HCO₃⁻ 37.3。體重秤量測上限 250 kg，故體重**至少**250 kg、BMI **至少**約 81.1 kg/m²，不是精確實測。入 ICU 後躁動與不配合，原作者說明未使用 NIV 而進行插管；第 15 天 pH 7.385、PaCO₂ 56.9、HCO₃⁻ 33.9（FiO₂ 0.5），拔管後短期使用非侵入正壓；第 20 天離 ICU，第 60 天出院。原文也同時治療感染、循環負荷與復健，所以不能將 CO₂ 的下降全部歸因於單一模式。
+**Miyoshi Y, et al. 2024. Management of Obesity Hypoventilation Syndrome in Extreme Obesity: A Case Study.** *American Journal of Case Reports* 25:e945112. [PMC 全文、Table 1、Figure 1–3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/)。39 歲男性入院 GCS 8、RR 22、15 L/min O₂ 下 SpO₂ 87%，pH 7.103、PaCO₂ 125、PaO₂ 80、HCO₃⁻ 37.3。體重秤量測上限 250 kg，故體重**至少**250 kg、BMI **至少**約 81.1 kg/m²，不是精確實測。入 ICU 後躁動與不配合，原作者說明未使用 NIV 而進行插管；第 15 天 pH 7.385、PaCO₂ 56.9、HCO₃⁻ 33.9（FiO₂ 0.5），拔管後短期使用非侵入正壓；第 20 天離 ICU，第 60 天出院。原文也同時治療感染、循環負荷與復健，所以不能將 CO₂ 的下降全部歸因於單一模式。
 
 ### 證據限制與醫學解釋
 
@@ -58,4 +58,4 @@
 | Pocket High PaCO₂ 公式 | 高碳酸圖 1 | 同一 V̇E 可對應不同 V̇A | 模型不是原病例 |
 | Pocket Won't / Can't Breathe 四欄 | 高碳酸圖 2 | 多個失敗位置導向 V̇A 相對不足 | 分類不是互斥 |
 | Kim 2010 Day 1 / Day 6 | 高碳酸圖 3 | RR ↑ 而 PaCO₂ ↑、pH ↓；給氧條件不同 | 不能倒算 VT、VD |
-| Hongo 2024 Table 1、Figure 3 | 高碳酸圖 4 | 面罩治療可行性與氣道支持隨病程改變 | 不證明插管必然優於 NIV |
+| Miyoshi 2024 Table 1、Figure 3 | 高碳酸圖 4 | 面罩治療可行性與氣道支持隨病程改變 | 不證明插管必然優於 NIV |
