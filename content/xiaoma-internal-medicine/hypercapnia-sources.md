@@ -16,7 +16,7 @@
 | 107 | Oxygen Delivery Systems、Noninvasive Ventilation | 實際看原頁、兩張表格、氧流量註腳與 pH <7.3 那一列 |
 | 108–110 | Ventilator Modes、Variables、auto-PEEP 與設定調整 | 讀取文字；未完整視覺審核 Figure 2-6 |
 
-本篇的壓力比較與臨床分支表為原創教學整理，不是小麻原表重製。12／5、15／8 是設定關係示例，不能作為個別病人的治療處方；病例及其後續血氣均明確標為自編。
+本篇的壓力比較與臨床分支表為原創教學整理，不是小麻原表重製。 本輪亦已重新目視比對原 PDF 第 87、107 頁的完整表格：第 87 頁〈COPD Exacerbation Treatment〉非侵襲性通氣與插管的列及備註；第 107 頁〈Noninvasive Ventilation〉列出的 indications、contraindications 與 CPAP／bilevel 分別。正文圖 1、2 為教學重繪、非原書重製。12／5、15／8 是設定關係示例，不能作為個別病人的治療處方。正文主病例改採 2020 年及 2025 年真實發表病例，資料與限制見下文；第九節清楚標明反事實測試，不補造原文病歷。
 
 ## pH 門檻的衝突
 
@@ -44,6 +44,33 @@ Goel NN, et al. **Noninvasive respiratory support for adult patients with acute 
 - [IBCC：Respiratory acidosis / hypercapnia](https://emcrit.org/ibcc/hypercapnia/)，頁面標示 2024-07-20。本次讀取急慢性判斷、HCO₃⁻ 混雜因素、病因與 permissive hypercapnia 限制。未重製頁內圖像。
 - [IBCC：Acute exacerbation of COPD](https://emcrit.org/ibcc/aecopd/)，頁面標示 2024-08-19。本次閱讀鑑別診斷、非侵襲性支持、插管後 auto-PEEP 與目標血氣段落；以其生理與失敗模式補強正文，未直接繼承所有用藥、篩檢或檢驗建議。血氣在本篇的角色以酸中毒判定及治療追蹤為準，未採其一般性「多數不需血氣」措辭。
 
+## 真實病例：先核對原始病程再用作教學
+
+<span id="case-fubini"></span>
+
+### 2020｜院前以 NIV 逆轉高碳酸血症意識障礙
+
+Fubini PE, Suppan L. **Prehospital reversal of profound respiratory acidosis and hypercapnic coma by non-invasive ventilation: a report of two cases.** *International Journal of Emergency Medicine.* 2020;13:22. DOI: [10.1186/s12245-020-00284-y](https://doi.org/10.1186/s12245-020-00284-y)・[開放全文（含病例細節）](https://link.springer.com/article/10.1186/s12245-020-00284-y)。
+
+- 本次閱讀：出版社**完整 HTML** 的病例、院前監測條件、作者推論、限制與結論（不僅摘要）。
+- Case 1：71 歲女性，GOLD 3 COPD、長期氧療，前晚 oxazepam 30 mg。救護到場 GCS 6、RR >40/min、SpO₂ 80%（鼻導管 6 L/min），循環穩定。ABG pH 7.17、PaCO₂ 15.6 kPa（約 117 mmHg）、HCO₃⁻ 43 mmol/L。院前醫師選擇 bilevel NIV，持續監測；60 分鐘後 pH 7.31、PaCO₂ 10.0 kPa（約 75 mmHg），GCS 上升至 10。入 ICU 繼續 NIV，未插管，14 天出院。
+- 作者認為可能與 benzodiazepine 所致低通氣有關，屬其病例臨床判斷，不是以毒理檢驗排除其他原因之證據。這是有即時氣道救援能力的高度例外情境；不能由單一成功病例反推一般昏迷病人適合 NIV。
+- 同文 Case 2 有 GCS 3、拒絕插管（DNI）的明確治療意願，因此不能把它當成「原本可以插管的病人常規首選 NIV」的無限制證據。
+
+<span id="case-balkan"></span>
+
+### 2025｜NIV 六小時後仍須插管
+
+Balkan B, Kaya E, Gokoglu G, et al. **Management Strategies for Hypercapnic Respiratory Failure in Chronic Obstructive Pulmonary Disease (COPD): A Case-Based Discussion.** *Cureus.* 2025;17(5):e84717. DOI: [10.7759/cureus.84717](https://doi.org/10.7759/cureus.84717)・[原始開放 PDF](https://assets.cureus.com/uploads/case_report/pdf/368759/20250524-354855-txlcnn.pdf)。
+
+- 本次查核：原始 PDF 第 2–3 頁**文字與原頁截圖／Table 1**，不是只讀二手摘要。Case 1：63 歲男性，COPD、糖尿病、高血壓，有過長時間 ICU 病史。CT 顯示肺炎；先以 NIV、吸入藥與抗生素治療；惡化後約第 6 小時插管，插管時見濃稠分泌物。第 8 天拔管，後用 HFNC／NIV 過渡，第 12 天出院（正文敘述）。
+- **原文數據品質警告**：同一病人 pH 7.15、PaCO₂ 141 mmHg，而本文文字寫 HCO₃⁻ 36.1、Table 1 寫 35.5 mEq/L。依 Henderson–Hasselbalch 關係，數據彼此不相容；原始同一時點、檢體與欄位對應未能核清，故不能將此例當作精密酸鹼公式範例。Table 1 的結果欄也將 Case 1 列成第 8 天出院，與正文記載第 12 天出院不同；正文保留「後來出院」而不把彼此衝突的日期當定論。
+- 這組病例只用來呈現**初始 NIV 可能失敗、分泌物及肺炎會影響支持可行性、插管後可再使用 NIV/HFNC** 的病程。不能依病例系列推導 pH 的硬插管門檻，也不能聲稱濃痰是唯一插管原因。
+
+### 病例使用與圖表界限
+
+兩篇都是真實的已發表病例／病例系列，但不是對照試驗，病例成功、失敗與個別適應症間不能直接推定因果或機率。本文未貼入出版社圖像；公開使用若要加上原始病例圖片需另確認授權、出處標示及出版流程。Pocket Medicine 原書第 87、107 頁的對題表與提示仍由本來源頁保存定位；這一輪新病例審查不等於重新目視原教科書整套圖。
+
 ## 官方題目與答案
 
 題目屬醫師第二階段、醫學（三），不代表已覆蓋其他科。2026-10-22 重新下載考選部原題、標準答案與更正答案 PDF，目視核對題目所在頁與更正答案對應格；三題均無必需影像，並非只依 OCR 索引。
@@ -66,6 +93,6 @@ Goel NN, et al. **Noninvasive respiratory support for adult patients with acute 
 
 ## 題解修訂的補讀範圍
 
-2026-10-22 本輪再次目視原書第 107 頁的面罩、氣道、分泌物與壓力模式欄位，並重讀 ERS/ATS 2017 問題 1b 的酸中毒族群及排除條件。第 8 節三題解析與隨文練習同步補足生理、安全前提及條件改變；第 9 節仍使用原自編情境。
+2026-10-22 本輪再次目視原書第 107 頁的面罩、氣道、分泌物與壓力模式欄位，並重讀 ERS/ATS 2017 問題 1b 的酸中毒族群及排除條件。第 8 節三題解析與隨文練習同步補足生理、安全前提及條件改變；第 9 節已由原自編情境改為兩篇已發表病例的反事實遷移練習。
 
 第三題另對讀 [ATS OHS 官方說明](https://www.thoracic.org/members/assemblies/assemblies/srn/sleep-matters/2019-09-02.php)，補 BMI 計算、OSA 與清醒高碳酸的分界及排除其他原因。2026 ATS 全文限制維持前述狀態，沒有改稱已完整取得。
