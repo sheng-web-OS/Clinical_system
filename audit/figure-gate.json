@@ -3,7 +3,6 @@
   "purpose": "Mandatory original-figure/table provenance review for new or modified published teaching. Legacy entries are frozen backlog, not visual certification.",
   "legacy_frozen": {
     "content/xiaoma-reading/integrated/2026-10-21-dcm.md": "f16eced854467e5c8e43a063ef5d34b93f0d1d15",
-    "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md": "67bac856e6cc1ea7ded35c05f95d2f8677a4c320",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md": "8f10c78eb6c9df4b749b853f20baab235417c2ab",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md": "0bb914e54645574201265d57c77ec3bd01d19edb",
     "content/xiaoma-internal-medicine/lessons/2026-10-22-respiratory-practice.md": "acde2c3149553358fc988570574c28dc5c663e11",
@@ -194,6 +193,30 @@
           "caption_token": "Pocket Medicine",
           "teaching_role": "把補氧、維持肺泡開放、吸氣壓力支持及有創氣道控制的生理工作分離，避免僅看 SpO₂ 判斷治療成功。",
           "scope_limit": "功能圖非原表重製及固定階梯，不能取代病人的氣道循環安全判斷或詳細呼吸支持處方。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/hypercapnia-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine, 9th edition, reader PDF physical page 107, original table: Noninvasive Ventilation (indications, contraindications, CPAP, bilevel positive airway pressure)",
+          "source_token": "Noninvasive Ventilation",
+          "mode": "illustrated",
+          "anchor": "niv-pressure-assist",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "以吸氣及呼氣交替的壓力波形，將 IPAP、EPAP、壓力支持與有效換氣連起來，補上讀者理解面罩治療前缺少的力學中介。",
+          "scope_limit": "原創定性圖僅解釋雙壓模式，不是教科書圖表影本、個案實測波形或可用於開立 NIV 處方的固定數值。"
+        },
+        {
+          "locator": "Pocket Medicine, 9th edition, reader PDF physical page 87, original table: COPD Exacerbation Treatment (noninvasive ventilation and endotracheal intubation rows)",
+          "source_token": "COPD Exacerbation Treatment",
+          "mode": "illustrated",
+          "anchor": "niv-two-gates",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "補上 NIV 有生理適應症、能安全進行與開始後持續有效三道不同判準，避免只依 PaCO₂ 或 pH 選擇插管。",
+          "scope_limit": "這是重新組織原書與後續指引的臨床推理圖，不等於原書的處置流程，也不能忽略病人即時惡化與特殊救援能力。"
         }
       ]
     }
