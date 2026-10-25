@@ -15,7 +15,7 @@
 | PDF 106 | High PaCO₂；Mechanical Ventilation | 中樞驅動、神經肌肉、胸壁／胸膜、肺與氣道等換氣不足原因；支持的目的。 |
 | PDF 107–108 | 呼吸支持與呼吸器原則 | 給氧、非侵入支持、通氣與 PEEP 的不同作用及生理代價。 |
 
-頁碼為實際 PDF 頁序，不是書頁印刷編號。正文的案例、數值對照、混合血含氧量與互動是教學推導，不是書內個案或經驗證的臨床預測工具。
+頁碼為實際 PDF 頁序，不是書頁印刷編號。**本文的 Lee、Fleming、Reddy、Li、Allaham 與 Chai 是六份彼此獨立的真實發表病例**；作者原始的血氣、影像、處置與結果，須與本文公式重算以及互動模型區分。病例不是原書病例，公式互動不是任何原論文實測資料。
 
 含氧量使用常見近似係數 1.34 mL O₂/g Hb 與溶解氧係數 0.003 mL O₂/dL/mmHg；互動固定 SaO₂ 0.98、PaO₂ 100，只改變 Hb 與 CO。它不估算區域灌流、耗氧、微循環或輸血適應症。
 
@@ -56,7 +56,7 @@
 | 標準答案 | [答案 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S)：第 3 題 C、第 9 題 B。 |
 | 更正狀態 | [同次更正清冊](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)：第 3、9 題未列更正。 |
 
-正文保留題號，選項用「導讀改寫」標明；精確原文以官方 PDF 為準。術後病例、A–a 計算例與貧血反事實練習都是自編教學內容，沒有冒充國考真題或真實病歷。
+正文保留題號，選項用「導讀改寫」標明；精確原文以官方 PDF 為準。病例敘事來自文末列出的真實發表病例；PAO₂、CaO₂ 的個別代入計算是明列假設的教學重算，不能誤認為該個案實測值。文章中的國考反事實練習另有標記。
 
 ## 來源範圍
 
@@ -77,11 +77,15 @@
 
 ## 用真實 Case Report 補足推理缺口：原始紀錄與界線
 
-以下病例皆為不同病人、不同照護情境；只抽取可由原始報告核對的事件與量測，沒有將不同病例資料合併成同一條時間線。章首 RR 8、SpO₂ 88%→96%、pH 7.24、PaCO₂ 68、PaO₂ 90 是自編教學病例，**不是**下列任何論文的實際血氣。此處不複製原論文插圖或監測曲線；需要者可由連結開啟原文。
+以下六份原始病例皆屬不同病人、不同照護情境；只使用文獻明載的量測與時間線，並將公式重算標為推估。**早版曾用的「RR 8、SpO₂ 88%→96%、pH 7.24、PaCO₂ 68、PaO₂ 90」全屬自編教學數字，已從新版主文撤下，不可回填成 Lee 的 PACU 病歷。** 下方直接連回原始病例與相關圖表，本站不重製原圖。
 
 1. **Lee YH, et al.** *Hypercapnic coma at the postanesthesia care unit: A case report.* Korean J Anesthesiol. 2009;57:403–406. [DOI](https://doi.org/10.4097/kjae.2009.57.3.403)・[原始全文 PDF](https://ekja.org/upload/pdf/kjae-57-403.pdf)・[PubMed 摘要](https://pubmed.ncbi.nlm.nih.gov/30625897/)。摘要核對：59 歲、術前 morphine、PACU 面罩 6 L/min、30 分鐘後無反應但 SpO₂ 98–99%、插管後血氣嚴重高碳酸性酸中毒、通氣後意識恢復；**本文不將自編 ABG 數字套入此病例**。不能由病程單獨排除麻醉殘餘等共同因素，也不可從單一個案推導普遍插管門檻。
 2. **Fleming E, et al.** *Non-invasive respiratory volume monitoring identifies opioid-induced respiratory depression in an orthopedic surgery patient with diagnosed obstructive sleep apnea: a case report.* J Med Case Rep. 2015;9:94. [原文及 Figure 2](https://link.springer.com/article/10.1186/s13256-015-0577-9)・[DOI](https://doi.org/10.1186/s13256-015-0577-9)。正文核對：54 歲 OSA 術後病人、PACU hydromorphone 0.4 mg 前 MV 3.70 L/min、後 2.37 L/min，RR 12–18，SpO₂ 無相應警訊；照護團隊看不到額外監測；病例未報告發生明確 CO₂ 昏迷。原文 Figure 2 E／F 是給藥、分鐘換氣量、RR 與 SpO₂ 的時間對照。**COI**：作者 EF 為監測公司顧問、CV 持股；單案不能建立新裝置的普遍臨床效益。
 3. **Allaham H, et al.** *Patent foramen ovale as a rare cause of sudden refractory hypoxemia: a case report.* Front Cardiovasc Med. 2025;12:1715242. [完整病例與 Figures 1–3](https://pmc.ncbi.nlm.nih.gov/articles/PMC12719297/)・[DOI](https://doi.org/10.3389/fcvm.2025.1715242)。正文核對：80 歲肋骨骨折後、初期懷疑疼痛低換氣、處理疼痛後仍高度依賴氧；100% 高流量氧下 SpO₂ 仍在 80% 後段、CT 未示主要肺病、bubble／ICE 證實大型 PFO 右向左分流；肺靜脈飽和度 97%、左房 83%，封堵後 24 小時內室內空氣 SpO₂ 98%。兩個採血位置不可誤標為 A–a 或 PaO₂；正式姿勢別血氧數字未被記錄，不能自行補出。
 4. **Chai AL, et al.** *Critical iron deficiency anemia with record low hemoglobin: a case report.* J Med Case Rep. 2021;15:472. [完整病例與 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC8439022/)・[DOI](https://doi.org/10.1186/s13256-021-03024-9)。正文核對：42 歲、SpO₂ 100%（room air）、RR 17、Hb 1.4 g/dL、慢性經血過多及代償；住院輸血、補鐵與止血相關評估後 Hb 約 8.1。原報告未提供足以直接計算實際 CO、DO₂、氧萃取率或器官缺血的完整量測，故不能將嚴重貧血直接寫成此人已發生組織缺氧與休克。
 
-**選材目的與侷限：** 四個病例各填一個不可省略的中介：SpO₂ 不代表通氣、RR 不代表潮氣量、補氧無法直接接觸右向左分流血、飽和度不代表 Hb 含量。病例對生理現象有示範性，**不構成治療效益的比較試驗、NIV／插管門檻或輸血處方**。原稿《Pocket Medicine》第九版圖表及既有氧療／NIV 指南，仍由本頁前述段落獨立支撐。
+5. **Reddy YNV, Josephson RA.** *Osteoarthrosis causing altered mental status: a case report.* J Med Case Rep. 2014;8:401. [完整病例與 Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC4265531/)・[DOI](https://doi.org/10.1186/1752-1947-8-401)。**room air ABG**：pH 7.33、PaCO₂ 53、PaO₂ 64、HCO₃⁻ 28；原文 A–a 18 mmHg。87 歲與室內空氣是解讀是否正常的必要條件；在海平面、R＝0.8 的簡式下自行重算約 20 mmHg，不能偽裝成作者精確公式的結果。原圖除雙側橫膈升高，亦可見**肋膜積液與肺門周圍水腫**。姿勢性 FVC 降 22%、吸吐氣最大壓力低、頸椎 C3–C5 神經孔狹窄與膈神經病變，合併肺水腫時反覆惡化。**教學界線**：原作者稱 A–a 正常，並非排除共存肺病；「單一正常 A–a＝沒有 V/Q mismatch」不成立。
+
+6. **Li X, et al.** *Case Report: Pulmonary alveolar proteinosis and fibrosis associated with indium-tin-oxide exposure.* Front Med. 2026;13:1856204. [原文與 Figures 1–2、Table 1](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1856204/full)・[DOI](https://doi.org/10.3389/fmed.2026.1856204)。**room air ABG**：pH 7.41、PaCO₂ 33、PaO₂ 54、SaO₂ 86.2%；報告的 A–a 59.2 mmHg。海平面、R＝0.8 的**本文標準化重算約 55 mmHg**，與原報數值不同，原文沒有足夠資訊可精確重現計算條件；兩者均明顯超過 35 歲的室內空氣常見年齡參照。診斷依據包括職業暴露、HRCT 毛玻璃及小葉間隔增厚、DLCO 降至預測值約 26%、肺組織 PAS 陽性；灌洗後室內空氣 SpO₂ 93–95% 與影像改善，後續仍進展成纖維化。**教學界線**：不能單靠 A–a 或 DLCO 定量分流比例、推定唯一病因或判斷介入長期效益。
+
+**選材目的與侷限：** 六個病例依序填補：SpO₂ 不代表換氣、RR 不代表潮氣量、A–a 對低肺泡起點與額外交換落差的區辨、氧療對分流的限制，以及飽和度不代表 Hb 攜氧量。真實病例有現象學和病因推理價值，但**不構成治療比較試驗、NIV／插管門檻或輸血處方**。原稿《Pocket Medicine》第九版圖表及既有氧療／NIV 指南，仍由本頁前述段落獨立支撐。
