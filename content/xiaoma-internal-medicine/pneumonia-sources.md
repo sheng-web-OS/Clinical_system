@@ -35,7 +35,13 @@
 
 HFNC、NIV 與 CPAP 的推薦均以相對 standard oxygen 的比較解讀；不跨比較宣稱 HFNC 一定優於 NIV。本文只教生理分類、重評與升級；未提供插管藥物、呼吸器參數或完整 ARDS／shock 處方。
 
-## 5　官方真題、答案與更正
+## 5　感染源控制與類固醇：新增的原始證據
+
+- [British Thoracic Society Pleural Disease Guideline 2023](https://doi.org/10.1136/thorax-2022-219784)：核對 pleural infection 建議與 pH 邊界。已有 frank pus 時應評估引流；非明顯膿液時 pH ≤7.2 且超音波顯示安全可引流量，支持引流；pH >7.2、<7.4 應結合 LDH、glucose、積液量與影像分隔。正文把這些條件當作 source-control 的額外證據，不用「胸水 >1 cm」直接推導必須胸管。
+- [Dequin et al., CAPE COD, NEJM 2023](https://doi.org/10.1056/NEJMoa2215145)：核對 28 日死亡率 hydrocortisone 25/400（6.2%）與 placebo 47/395（11.9%）、絕對差 5.6 個百分點，及第一週較高的 insulin requirement。研究族群是 ICU severe CAP，仍須按 2025 ATS 的建議區分非重症、流感及其他禁忌；沒有將該試驗當成各類肺炎一律使用類固醇的證據。
+- 編輯增量：主文第 04 節新增相同暴露史下不同器官傷害的反事實；第 07 節新增胸膜腔引流條件；第 08 節新增類固醇效益與副作用的原始數值。原本 Figure 01／02 與 Pocket Medicine 第九版原表定位未改，歷史原文未動。
+
+## 6　官方真題、答案與更正
 
 ### 113 年第二次・醫師二階・醫學（三）Q49
 
