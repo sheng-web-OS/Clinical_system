@@ -197,6 +197,45 @@
           "scope_limit": "功能圖非原表重製及固定階梯，不能取代病人的氣道循環安全判斷或詳細呼吸支持處方。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-hypoxemia-mechanisms.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9th edition reader PDF p105 Figure 2-5 Workup of acute hypoxemia and A-a branch",
+          "source_token": "Figure 2-5 Workup of acute hypoxemia",
+          "mode": "illustrated",
+          "anchor": "oxygen-locations",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "把 PAO2 與 PaO2 定義分開，先定位肺泡氧起點和動脈氧合的不同失敗位置，再開始計算 A-a。",
+          "scope_limit": "原創三欄示意並非原書圖的全分支重製；不以未知 FiO2 或高海拔條件套用海平面值，也不由 A-a 單獨診斷特定疾病。"
+        },
+        {
+          "locator": "Pocket Medicine 9th edition reader PDF p105 Figure 2-5 shunt versus V/Q mismatch and O2 response branches",
+          "source_token": "100% O₂ branch",
+          "mode": "illustrated",
+          "anchor": "vq-spectrum",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "把 V/Q zero、low V/Q 與 dead-space physiology 畫成不同區域，解釋真分流為何對增加氧氣反應受限而低 V/Q 尚可改善。",
+          "scope_limit": "生理光譜是獨立重繪，並非原書三分支複製；高濃度氧氣仍能增加正常肺區溶解氧，反應不佳也不是分流的確診試驗。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-hypercapnia-physiology.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9th edition reader PDF p106 Etiologies of High PaCO2 table with Won't Breathe and Can't Breathe branches and footnote",
+          "source_token": "Etiologies of High",
+          "mode": "illustrated",
+          "anchor": "ventilatory-chain",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "將中樞驅動、神經肌肉與胸壁壓力、肺氣道阻力和 dead space 串成同一個因果鏈，避免將高 PaCO2 與呼吸次數直接等同。",
+          "scope_limit": "原創連續路徑不是原表逐項照搬；MG、OHS、COPD 可以在不同環節同時失敗；呼吸肌檢查與單次 ABG 都不能作單獨插管指令。"
+        }
+      ]
     }
   }
 }

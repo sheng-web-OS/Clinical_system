@@ -37,7 +37,7 @@ def load_pages(root):
         outputs.add(row["output"])
         if "/lessons/" in row["source"]:
             date.fromisoformat(row.get("date", ""))
-            if row.get("review") not in ("author_source_check", "independent_ai_review", "human_review"):
+            if row.get("review") not in ("author_source_check", "ai_editorial_review", "independent_ai_review", "human_review"):
                 raise ValueError("Lesson must disclose its actual review type")
         if row.get("kind") == "historical_original":
             date.fromisoformat(row.get("date", ""))

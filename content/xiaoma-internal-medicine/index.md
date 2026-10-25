@@ -10,6 +10,12 @@
 
 [查看完整歷屆國考目錄 →](exams/index.md)
 
+## 深入三問｜Respiratory Failure
+
+[為什麼 A–a gradient 增大，還不能診斷 shunt？](lessons/2026-10-25-hypoxemia-mechanisms.md)　→　[為什麼 RR 40/min，PaCO₂ 還是上升？](lessons/2026-10-25-hypercapnia-physiology.md)
+
+兩篇以《Pocket Medicine》Figure 2-5 與 High PaCO₂ 病因表為骨架，將真實 PFO、MG、OHS 病例接回機轉和失效界線。原有基礎篇與國考題完整保留，新篇負責補足更深的生理推導。
+
 ## 正在讀
 
 <!-- XIAOMA_PUBLISHED_LESSONS -->
