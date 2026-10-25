@@ -222,7 +222,7 @@
         },
         {
           "locator": "Allaham et al Front Cardiovasc Med 2025 1715242 original Figure 1-3, pulmonary vein oxygen saturation 97 and left atrial saturation 83",
-          "source_token": "Allaham et al.",
+          "source_token": "Allaham H",
           "mode": "illustrated",
           "anchor": "pfo-mixing",
           "caption_token": "Figure 1–3",
@@ -255,7 +255,7 @@
         },
         {
           "locator": "Kim WH et al KJIM 2010 MG case original serial blood gases, Figure 1-4 and day 1/day 6 descriptions",
-          "source_token": "Kim et al.",
+          "source_token": "Kim WH, et al.",
           "mode": "illustrated",
           "anchor": "mg-trajectory",
           "caption_token": "Kim 2010",
@@ -264,7 +264,7 @@
         },
         {
           "locator": "Hongo T et al 2024 Extreme Obesity OHS case Table 1 and Figure 3 ventilation time course",
-          "source_token": "Miyoshi et al.",
+          "source_token": "Miyoshi Y, et al.",
           "mode": "illustrated",
           "anchor": "ohs-trajectory",
           "caption_token": "Miyoshi et al. 2024",
