@@ -20,6 +20,31 @@ NIV 是 non-invasive ventilation，**非侵襲性通氣**。它透過密合的�
 
 例如設定 IPAP 15、EPAP 5 cmH₂O，病人呼氣時維持 5，吸氣時升至 15，**壓力支持是 10 cmH₂O**。數字只是解釋模式，並非這位病例病人的實際設定，也不是處方建議。若從 12／5 改成 15／8，兩者的差仍是 7，不能因為 IPAP 增加便斷言通氣支持變多；漏氣、氣道阻力、肺順應性與人機同步都會影響實際潮氣容積。
 
+<figure class="diuretic-figure" id="niv-pressure-assist">
+<div class="diuretic-figure-head"><span>FIGURE 01 · HOW BILEVEL NIV WORKS</span><strong>面罩不是只「給氧」：一次吸氣與呼氣的壓力並不相同</strong></div>
+<div class="diuretic-svg-scroll" role="region" aria-label="雙壓 NIV 吸氣 IPAP 與呼氣 EPAP 壓力差示意圖">
+<svg viewBox="0 0 700 238" width="700" height="238" role="img" aria-labelledby="niv-cycle-title niv-cycle-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="niv-cycle-title">Bilevel NIV pressure cycle</title>
+<desc id="niv-cycle-desc">吸氣期間正壓上升至 IPAP；呼氣降至 EPAP。兩者差為 pressure support，可能協助增加潮氣量。示例壓力為 15 和 5，非病人處方。</desc>
+<rect x="0" y="0" width="700" height="238" rx="10" fill="#f6f9fb"/>
+<rect x="72" y="25" width="596" height="163" fill="#fff" stroke="#c9d6de"/>
+<line x1="72" y1="73" x2="668" y2="73" stroke="#bbcbd4" stroke-dasharray="5 5"/>
+<line x1="72" y1="152" x2="668" y2="152" stroke="#bbcbd4" stroke-dasharray="5 5"/>
+<path d="M76 152 H149 V73 H309 V152 H433 V73 H593 V152 H664" fill="none" stroke="#196c88" stroke-width="5" stroke-linejoin="round"/>
+<text x="20" y="77" font-size="16" fill="#244358">15</text>
+<text x="27" y="157" font-size="16" fill="#244358">5</text>
+<text x="150" y="49" font-size="17" font-weight="bold" fill="#19506c">IPAP 吸氣</text>
+<text x="322" y="137" font-size="17" font-weight="bold" fill="#5d5f66">EPAP 呼氣</text>
+<path d="M616 76 V149" stroke="#c07c48" stroke-width="3"/>
+<path d="M610 85 L616 76 L622 85 M610 140 L616 149 L622 140" stroke="#c07c48" stroke-width="3" fill="none"/>
+<text x="615" y="56" font-size="14" text-anchor="middle" fill="#b46630">Δ10</text>
+<text x="72" y="215" font-size="15" fill="#47606c">縱軸：面罩正壓（cmH₂O）</text>
+<text x="664" y="215" font-size="15" text-anchor="end" fill="#47606c">時間 →（定性，不按比例）</text>
+</svg>
+</div>
+<figcaption><strong>圖 1｜IPAP − EPAP 是吸氣壓力支持。</strong> 以 Pocket Medicine 第九版 PDF 第 107 頁〈Noninvasive Ventilation〉之模式區別為來源，<strong>獨立重繪</strong>的雙壓 NIV 示意，並非原書表格或任何個案的實際呼吸器波形。設定值不等於實際送達的潮氣容積；漏氣、阻力與呼吸同步仍會改變反應。手機可左右滑動。</figcaption>
+</figure>
+
 這裡最重要的區分是：**氧氣濃度 FiO₂ 調整送進去的氧；壓力支持協助病人把空氣吸進去、增加有效換氣。**兩者可能同時使用，改善的生理問題卻不相同。CPAP 在吸氣與呼氣維持大致相同的壓力，沒有 bilevel 的吸氣壓差；HFNC 提供加溫加濕的高流量氧氣，有死腔沖洗與少量壓力效應，但不等同 bilevel 的吸氣輔助。對 COPD 合併急性呼吸性酸中毒，指南支持優先評估 bilevel NIV。[模式及適應症](../hypercapnia-sources.md#ers2017)
 
 ## 02　為什麼面罩能降低 CO₂？先問「努力呼吸」和「有效換氣」差在哪裡
@@ -49,6 +74,17 @@ SpO₂ 是周邊血氧飽和度，反映血紅素的氧合狀況；它不是 CO�
 2017 ERS/ATS 指引建議 COPD 急性惡化且有急性或急性加劇的呼吸性酸中毒（pH ≤ 7.35）時使用 bilevel NIV；常見考慮條件包括 PaCO₂ >45 mmHg、RR >20–24/min 且標準治療後仍有呼吸窘迫。這不是見到 PaCO₂ 超過 45 就一律上 NIV：**必須確認此刻有呼吸負荷與酸中毒等適應症，也必須確認可以安全透過面罩支持。**[ERS/ATS 推薦](../hypercapnia-sources.md#ers2017)
 
 面罩無法取代氣管內管提供的氣道保護。病人必須能清除分泌物，面罩需要合適密合；若反覆嘔吐、痰多到無法清除、無法保護氣道、極度循環不穩或立即惡化，硬撐 NIV 可能導致誤吸、延誤建立氣道。插管也有鎮靜、血壓與呼吸器相關傷害，所以並非沒有代價；但當 NIV 已無法安全維持氣道與有效換氣，這些風險就不能成為拖延插管的理由。
+
+<figure class="diuretic-figure" id="niv-two-gates">
+<div class="diuretic-figure-head"><span>FIGURE 02 · CLINICAL DECISION</span><strong>開始 NIV 與繼續 NIV，分別需要不同的證據</strong></div>
+<div class="diuretic-decision-grid" role="group" aria-label="NIV 適應症、安全性與療效的連續再評估">
+<div class="diuretic-decision-card"><span>01 · INDICATION</span><strong>有需要協助的換氣問題嗎？</strong><p>急性 COPD 呼吸性酸中毒、仍顯著費力，且已並行常規治療；PaCO₂ 本身不是禁忌，也不能單獨成立適應症。</p></div>
+<div class="diuretic-decision-card"><span>02 · SAFETY</span><strong>面罩支持能安全進行嗎？</strong><p>評估氣道保護、嘔吐、分泌物清除、循環與監測／即時插管能力；任一失效都可能改變選擇。</p></div>
+<div class="diuretic-decision-card"><span>03 · RESPONSE</span><strong>開始後是否真有改善？</strong><p>同步觀察呼吸功、意識、pH／PaCO₂、分泌物及血流動力，不用 SpO₂ 上升替代有效換氣的證據。</p></div>
+<div class="diuretic-decision-card"><span>04 · RESCUE</span><strong>何時停止試用並升級？</strong><p>若臨床持續惡化、氣道變得不安全或未建立足夠換氣，立即準備必要的侵襲性支持，不等待固定血氣門檻。</p></div>
+</div>
+<figcaption><strong>圖 2｜NIV 是有條件且需持續驗證的支持策略。</strong> 依 Pocket Medicine 第九版 PDF 第 87 頁〈COPD Exacerbation Treatment〉的 NIV／插管分流及 ERS/ATS 指引，<strong>自行整理而非重製原書處置表</strong>。分流僅呈現必要決策軸，不構成任何患者的插管處方；特殊高碳酸昏迷試用須有高度監測與即時氣道救援能力。</figcaption>
+</figure>
 
 這也讓我們重新理解 71 歲女性 GCS 6 的選擇。**意識不清一般是 NIV 的重要警訊，不是 NIV 的適應症。**她之所以能在院前被選擇性試用，是因醫師全程監測、有救援與立即插管能力，而且很快出現可客觀確認的改善。病例只能告訴我們這種受限例外存在；不能用她的成功，替任何 GCS 6 的病人保證安全。
 
