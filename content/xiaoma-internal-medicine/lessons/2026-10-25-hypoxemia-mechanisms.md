@@ -22,6 +22,7 @@
 
 <figure id="oxygen-locations" class="diuretic-figure">
 <div class="diuretic-figure-head"><span>FIGURE 01 · CASE-BASED A–a</span><strong>PaO₂ 相近，肺泡氧起點卻不同</strong></div>
+<div class="resp-mobile-panel" role="group" aria-label="兩位真實患者的 A–a gradient 比較"><p class="resp-mobile-label">FIG 01｜相近 PaO₂，不同的肺泡氧起點</p><div class="resp-mobile-case"><b>87 歲｜呼吸泵功能不足</b><p>PaCO₂ 53 → 推估 PAO₂ 約 84</p><div class="resp-mobile-meter"><span style="width:76%">實測 PaO₂ 64</span><i style="width:24%">A–a ≈20</i></div><p class="resp-mobile-conclusion">原文 A–a 18，需結合仰臥 VC、橫膈與神經檢查。</p></div><div class="resp-mobile-case"><b>35 歲｜肺泡氧合異常</b><p>PaCO₂ 33 → 推估 PAO₂ 約 109</p><div class="resp-mobile-meter"><span style="width:50%">PaO₂ 54</span><i style="width:50%">A–a ≈55</i></div><p class="resp-mobile-conclusion">原文 A–a 59.2；HRCT、病理與職業暴露才指向 PAP。</p></div><p class="resp-mobile-foot">橘色是估算落差，不是直接測得的肺泡氧。兩組皆依相同海平面假設重算。</p></div>
 <div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="87 歲與 35 歲真實病例的 PaO2 與推估 PAO2 比較，可水平捲動">
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="378" viewBox="0 0 760 378" role="img" aria-labelledby="aagrad-title aagrad-desc">
 <title id="aagrad-title">相近的動脈氧分壓，對應不同的肺泡動脈差距</title>
@@ -56,6 +57,7 @@
 
 <figure id="vq-spectrum" class="diuretic-figure">
 <div class="diuretic-figure-head"><span>FIGURE 02 · VENTILATION × PERFUSION</span><strong>同樣是「異常肺泡」，流過的血並不一樣</strong></div>
+<div class="resp-mobile-panel" role="group" aria-label="三種通氣灌流配對示意"><p class="resp-mobile-label">FIG 02｜先分辨氣體有沒有進來、血液有沒有流過</p><div class="resp-mobile-vq"><span class="resp-mobile-alveolus normal">O₂ ↓<strong>肺泡有氣</strong><small>血流持續 → 氧合充分</small></span><p><b>相對正常</b>｜通氣與灌流大致匹配。</p></div><div class="resp-mobile-vq"><span class="resp-mobile-alveolus low">O₂ ⇣<strong>只有少量氣</strong><small>血流持續 → 低氧血可改善</small></span><p><b>Low V/Q</b>｜仍能接受提高的 FiO₂。</p></div><div class="resp-mobile-vq"><span class="resp-mobile-alveolus shunt">O₂ ×<strong>完全不通氣</strong><small>血流仍持續 → 混入低氧血</small></span><p><b>True shunt</b>｜這股血無法直接接觸肺泡補氧。</p></div></div>
 <div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="三個肺泡與下方血流通道示意，可水平捲動">
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="325" viewBox="0 0 800 325" role="img" aria-labelledby="vq-title vq-desc">
 <title id="vq-title">正常肺區、低 VQ 與完全分流的通氣血流配對</title><desc id="vq-desc">三個肺泡都與血流平行排列，正常肺區通氣多而血流完整，低VQ通氣減少血流完整，true shunt 完全沒有通氣仍有血流。只有低VQ仍可被提高吸入氧濃度直接補到肺泡。</desc>
@@ -90,6 +92,7 @@ Allaham 等人（2025）報告一名 **80 歲男性**，跌倒肋骨骨折後有
 
 <figure id="pfo-mixing" class="diuretic-figure">
 <div class="diuretic-figure-head"><span>FIGURE 03 · SAMPLING LOCATION</span><strong>不是 A–a 97−83；而是同一個人的兩處血氧飽和度</strong></div>
+<div class="resp-mobile-panel" role="group" aria-label="PFO 病例不同位置的血氧與血流"><p class="resp-mobile-label">FIG 03｜左心房為什麼比肺靜脈還缺氧？</p><div class="resp-mobile-route"><div class="resp-mobile-route-node oxygen"><small>肺靜脈採血</small><strong>97%</strong><span>已充分氧合</span></div><div class="resp-mobile-route-arrow">↓ 流入左心房</div><div class="resp-mobile-route-node shunted"><small>右心房靜脈血</small><strong>經 PFO 分流 ↘</strong><span>未經肺循環完成氧合</span></div><div class="resp-mobile-route-arrow">↓ 兩股血液混合</div><div class="resp-mobile-route-node mixed"><small>左心房採血</small><strong>83%</strong><span>封堵後次日室內空氣 SpO₂ 98%</span></div></div><p class="resp-mobile-foot">97% 與 83% 是不同採血位置的飽和度，不是 A–a gradient，也不能直接相減求分流比例。</p></div>
 <div class="diuretic-svg-scroll" role="region" tabindex="0" aria-label="PFO 病例的肺靜脈、右心房與左心房血流路徑，可水平捲動">
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="294" viewBox="0 0 760 294" role="img" aria-labelledby="pfo-title pfo-desc">
 <title id="pfo-title">肺靜脈氧合血與 PFO 分流血混入左心房的路徑</title>
