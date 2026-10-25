@@ -49,3 +49,32 @@
 | 極重度肥胖 PaCO₂ 125 | 2024 真實病例 | 不能排除感染、心衰等共同因素 |
 
 這兩篇用原始 Figure／Table 決定問題分支，沒有將原書內容拆成純術語清單；但來源可取得、圖像審核與臨床結論仍是不同的層次。病例報告用來展示可發生的機轉，不能估計某種病因的盛行率或治療效果。
+
+
+## 本次整合重修的病例圖像追查
+
+**Reddy & Josephson (2014), 87 歲橫膈／膈神經根病例。** [原始全文、影像](https://doi.org/10.1186/1752-1947-8-401)，既有舊教材已核對室內空氣 ABG pH 7.33、PaCO₂ 53、PaO₂ 64、作者 A–a 18、臥位 FVC 降 22%、神經學及影像追查。新圖 1 只顯示前兩個分壓與**海平面模型估計**的 PAO₂ 84、A–a 約 20，不把 20 假稱原文 18。胸片有其他肺部／循環共存問題，不能由 A–a 正常確診純粹神經肌肉病因。
+
+**Li et al. (2026), 35 歲銦相關 secondary PAP。** [Frontiers 原始 Figure 1 timeline、Figure 2 HRCT、Figure 3 病理及 Table 1](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1856204/full)。室內空氣 ABG pH 7.41、PaCO₂ 33、PaO₂ 54、作者 A–a 59.2；DLCO 約 26.16% predicted。影像、暴露史、病理和測得的銦是病因追查，DLCO 不能把 low V/Q、shunt 和擴散個別定量。新圖 1 的 PAO₂ 109 與 A–a 約 55 僅是固定大氣壓／R 的模型重算，與原研究的 59.2 有差異，須保留。
+
+**Allaham et al. (2025), PFO resistant hypoxemia。** [Frontiers 原始 Figure 1 ICE 解剖、Figure 2 bubble study、Figure 3 關閉後與敘述](https://pmc.ncbi.nlm.nih.gov/articles/PMC12719297/)。80 歲、肋骨骨折後難治性低氧，侵入性取樣 pulmonary vein saturation 97%、LA 83%，PFO 封堵後隔天 room-air SpO₂ 98%。圖 3 是根據**採樣位置、右向左分流方向**的原創示意，不能 97−83 算 A–a 或 shunt fraction；未測定 PFO 實際血流量。原文 ICE／bubble study 的影像僅連結，不複製。此病例比只有姿勢別 SpO₂ 的 Kakura 2026 更能建立「已氧合血與靜脈血混合」的中介機轉。
+
+**Kakura et al. (2026), positional POS。** [JACC Case Reports Visual Summary / full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC13154081/)。74 歲，直立 SpO₂ 80–83%，仰臥 95–99%，PFO＋atrial septal aneurysm，aortic elongation 改變心房幾何與靜脈血流方向。是對「shunt 會隨姿勢改變」的**獨立病例**，絕不能將其數字與 Allaham 個案合成同一人。
+
+**Kim et al. (2010), MG isolated respiratory failure。** [Korean J Intern Med 2010;25:101–104 原始病例全文與 Figure 1–4](https://www.kjim.org/journal/view.php?number=162386)。第一天 room air RR 24、pH 7.441、PaCO₂ 39.9、PaO₂ 64.7；第六天氧氣面罩 10 L/min RR 40、pH 7.324、PaCO₂ 54.9、PaO₂ 94.4。Figure 1 胸片變化、Figure 2 CT atelectasis、Figure 3 repetitive nerve stimulation decrement、Figure 4 pharmacologic Jolly test 與 tidal volume response；正文引用圖說與結果，不把 Figure 4 未提供的呼吸量另行估算。新圖 1 為兩時間點趨勢重繪，不用兩個不同 FiO₂ 的 PaO₂ 比較療效。
+
+**Miyoshi et al. (2024), extreme obesity / OHS。** [完整 PMC 正文、Table 1（入院 ABG）、Figure 1 CT、Figure 3 治療時序](https://pmc.ncbi.nlm.nih.gov/articles/PMC11460406/)。39 歲男 GCS 8、RR 22、氧 15 L/min 時 SpO₂ 87%，pH 7.103、PaCO₂ 125、HCO₃⁻ 37.3。體重秤上限是 250 kg，故只能說**體重至少 250 kg、BMI 至少 81.1**。原文清楚記載嚴重喘與躁動不合作，未試 NIV 而改進行 invasive ventilation；第 15 天在 ventilator FiO₂ 0.5 spontaneous mode 的 ABG pH 7.385、PaCO₂ 56.9，隨後拔管及短期 NIPPV。不能聲稱原先以 NIV 成功矯正 125。
+
+## 此次四張原創生理圖的目的與使用界限
+
+- A–a 圖：同一個海平面計算假設下以藍／橘長條拆分兩個真實病例的 PAO₂、PaO₂；橘區為推論，不是原研究計算的 A–a 精確複製。
+- V/Q 肺泡圖：用「通氣管道＋仍存在的血流」說明 low V/Q 和 true shunt 的差別；**不是原書 Figure 2-5 全流程**或真實肺泡幾何，不能按圖定量分流。
+- PFO 流向圖：血液來自肺靜脈與右心分流，在左房匯合；包含原文不同位置飽和度但不虛構 PFO 血流百分比。
+- MG 病程圖：兩次 ABG／RR 的原文觀察，非監測曲線；兩天的 FiO₂ 不相同。
+- Dead space 圖：自編 6 L/min 總分鐘換氣固定、每口 VD 150 mL、RR 12 vs 30 的比例幾何；不得將模型的 VT／VD／PaCO₂ 指派到真實 MG 病人。
+- 呼吸泵路徑圖：把原表 Won't breathe、神經肌肉、胸壁與肺氣道合為因果鏈；不強迫一病一欄。
+- Bilevel 壓力時間圖：IPAP 15 / EPAP 5 的自編單週期示意，不是處方、不等於實際測得的 VT；不代替完整的病人安全判斷。
+
+**外部指引來源：** [2026 ATS acute respiratory failure noninvasive respiratory support guideline](https://doi.org/10.1093/ajrccm/aamag302)：急性高碳酸性呼吸衰竭的 NIV 強推薦，HFNC 僅在較輕高碳酸／輕微酸血症並能密切監測迅速升級下有條件考慮；不能據此說所有 MG 或昏迷病人適用 NIV。肺泡通氣式與 shunt 式是一般生理模型，與任何一篇病例的原始測量不可混淆。
+
+已核對可公開取得的正式病例文字、關鍵 Table、Figure caption 與臨床時序；對完整出版 PDF 的每張圖像**沒有一律進行逐像素目視審查**。本次的圖是獨立原創教學圖，不複製出版商圖像。
