@@ -222,7 +222,7 @@
         },
         {
           "locator": "Allaham et al 2025 Front Cardiovasc Med case report Figure 1-3 ICE bubble study PFO closure and pulmonary vein versus left atrial oxygen samples",
-          "source_token": "Allaham",
+          "source_token": "Allaham et al.",
           "mode": "illustrated",
           "anchor": "pfo-mixing",
           "caption_token": "97% 和 83%",
@@ -255,10 +255,10 @@
         },
         {
           "locator": "Pocket Medicine 9th edition reader PDF page 106 high PaCO2 formula with RR times tidal volume minus dead-space volume",
-          "source_token": "Bohr",
+          "source_token": "Bohr dead-space",
           "mode": "illustrated",
           "anchor": "deadspace-example",
-          "caption_token": "快淺呼吸不是",
+          "caption_token": "一分鐘呼吸很多次",
           "teaching_role": "以兩種相同每分鐘總通氣量但不同呼吸深度的長條分段，顯示相同VT死腔佔比如何使有效肺泡通氣改變。",
           "scope_limit": "這是固定每口VD和穩態VCO2的自編公式模型，不是病人的實測肺泡通氣或血氣，也不是所有病人的適用呼吸器頻率。"
         },
