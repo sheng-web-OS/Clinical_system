@@ -2,7 +2,7 @@
 
 一位 39 歲、懷孕 28 週的女性，發燒、倦怠三天，胸部 X 光起初只有右中肺葉浸潤。她被診斷為社區型肺炎（community-acquired pneumonia, CAP），住院接受抗生素；短暫退燒後，呼吸卻在隔天迅速惡化：呼吸每分鐘 32 次、指尖血氧（SpO₂）降至 77%，再次照 X 光已變成雙側浸潤。她轉進加護病房（ICU），接受氣管內插管與呼吸器治療。
 
-這不是為了湊出分數而設計的情境，而是 Oostwoud 等人在 2017 年發表的真實 [clinical problem-solving case report](https://na.eventscloud.com/file_uploads/4295d8debe37abc78f56aa89960456df_NJCC2017-5Vol25.pdf)。作者回顧病程時指出：她初次住院的 **CURB-65 是 0 分**；到了 ICU，**也只有 1 分**。特別注意：初診醫師當時並沒有正式計算這個分數，0 與 1 是報告作者事後依病歷重建的結果，不能說成醫師「看見 0 分仍堅持出院」。
+這不是為了湊出分數而設計的情境，而是 Oostwoud 等人在 2017 年發表的真實 [clinical problem-solving case report](https://de-intensivist.nl/wp-content/uploads/2022/06/clinical-problem-solving_0.pdf)。作者回顧病程時指出：她初次住院的 **CURB-65 是 0 分**；到了 ICU，**也只有 1 分**。特別注意：初診醫師當時並沒有正式計算這個分數，0 與 1 是報告作者事後依病歷重建的結果，不能說成醫師「看見 0 分仍堅持出院」。
 
 如果分數這麼低，為什麼她已經需要呼吸器？
 
@@ -40,8 +40,10 @@ CURB-65 的簡潔正是優點：臨床能快速辨識某些高死亡風險患者
 <div class="diuretic-step"><span>3</span><div><strong>轉 ICU：CURB-65＝1（作者回算），已需插管與機械通氣</strong><p>決定照護強度的是呼吸衰竭及支持需求，而不是 CURB-65 未達 3 分。</p></div></div>
 <div class="diuretic-step"><span>4</span><div><strong>後續：嚴重低氧、俯臥位通氣；病因確認為 Legionella</strong><p>治療同時處理氧合與病原。後續分數即使重新計算，也不能代替呼吸器上的即時評估。</p></div></div>
 </div>
-<figcaption>依 Oostwoud et al., <i>Netherlands Journal of Critical Care</i> 2017;25:178–182 的病程整理。病歷中的時間順序與分數均取自原作者敘述；圖是本篇原創時間線，並非原文影像或外部驗證工具。原文 <a href="https://na.eventscloud.com/file_uploads/4295d8debe37abc78f56aa89960456df_NJCC2017-5Vol25.pdf">Figure 1、Figure 2</a> 分別為初次單葉浸潤及惡化後雙側浸潤，可在原報告對讀；本站不重製影像。</figcaption>
+<figcaption>依 Oostwoud et al., <i>Netherlands Journal of Critical Care</i> 2017;25:178–182 的病程整理。病歷中的時間順序與分數均取自原作者敘述；圖是本篇原創時間線，並非原文影像或外部驗證工具。原文 <a href="https://de-intensivist.nl/wp-content/uploads/2022/06/clinical-problem-solving_0.pdf">Figure 1、Figure 2</a> 分別為初次單葉浸潤及惡化後雙側浸潤，可在原報告對讀；本站不重製影像。</figcaption>
 </figure>
+
+原文的 **Table 1** 還提供一個容易忽略的細節：最早一次動脈血氣的 PaO₂ 為 **12.7 kPa（約 95 mmHg）**，血氧飽和度 **98%**；之後病人明顯惡化時，才記錄到指尖 SpO₂ **77%**。這是不同時間點、不同測量方法的資料，並非兩項互相矛盾的同步結果。報告沒有提供最初動脈血氣採樣時可靠的 FiO₂，因此**不能替初診自行補算 P/F ratio**。你能從這份真實病歷學到的不是漂亮的數字，而是：看似尚可的早期氣體交換，並不保證肺炎未來數小時不會急遽惡化。[對照原始 Table 1 與 Figure 1–2](https://de-intensivist.nl/wp-content/uploads/2022/06/clinical-problem-solving_0.pdf)。
 
 讀這張時間線時，不要急著背住「年輕人容易被低估」。更值得注意的是 **病人會變，而 CURB-65 是在某個時間點取得的五項測量**。前一天的狀態不能替後一天的呼吸負荷作保證。
 
@@ -65,7 +67,7 @@ CURB-65 的簡潔正是優點：臨床能快速辨識某些高死亡風險患者
 
 這個比值以 **PaO₂（mmHg）除以 FiO₂（0–1 的比例）**。數值越低，一般表示在當時的氧氣與呼吸支持條件下，氧合障礙越重。不過，它仍會受量測時的 FiO₂、呼吸器設定與病人生理狀態影響；不能忽略採血當下的支持條件，也不要在一般低流量鼻導管下，將不確定的實際 FiO₂ 當成精密數字。
 
-回到真實病例，作者報告她在 ICU 呼吸器治療期間曾有 **P/F ratio <100**，因持續嚴重低氧而採取俯臥位通氣（prone positioning）。俯臥位不是讓病原立刻消失，而是重分配肺內通氣與灌流、改善部分肺區的通氣及肺部受力；她仍需要治療肺炎本身。**這個 <100 是原作者記載的治療期數值，不是我們由入院 SpO₂ 77% 反推而來**。病例也不是因為「P/F 小於 100」這個數字才自動插管；她先有臨床呼吸衰竭與快速惡化，才需要器官支持。
+回到真實病例，作者記載她在 ICU 第一天使用 **FiO₂ 1.00（100% 吸入氧濃度）**、**PEEP 20 cmH₂O** 的呼吸器設定下，P/F ratio 仍只有 **132**；轉至醫學中心後，P/F ratio 一度降至 **80**（原文另載當時 PEEP 20 cmH₂O）。PEEP 是呼氣末正壓，用來維持部分肺泡開放，卻不能保證肺內交換障礙立即消失。這些數字顯示，問題不只是「氧氣給得不夠」，而是即使已給予高強度呼吸支持，肺仍難以完成交換。由於持續嚴重低氧，她接受俯臥位通氣（prone positioning）。俯臥位不是讓病原立刻消失，而是重分配肺內通氣與灌流、改善部分肺區的通氣及肺部受力；她仍需要治療肺炎本身。**這些 P/F 數值都是作者記載的插管後支持期資料，不是由入院 SpO₂ 77% 反推而來**。也不能用它們重新拼湊插管前的 severe CAP minor criteria；她先有臨床呼吸衰竭與快速惡化，才需要器官支持。
 
 至此，第一個矛盾已解開：**低 CURB-65 在談預後；極差的氧合和不斷增加的支持需求，則在說肺目前無法勝任氣體交換。** 這兩件事可以同時存在。
 
