@@ -6,7 +6,7 @@
 
 ## 指定閱讀：Pocket Medicine 第九版
 
-參照《Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine》第九版電子檔，共 464 個 PDF 頁面。本篇為原創解說，未公開原書 PDF、掃描頁或整章轉錄。
+參照《Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine》第九版電子檔，以下頁次按所提供 PDF 實際頁序定位。本篇為原創解說，未公開原書 PDF、掃描頁或整章轉錄。
 
 | 指定電子檔頁序 | 閱讀位置 | 本篇如何使用 |
 |---|---|---|
@@ -87,5 +87,7 @@
 5. **Reddy YNV, Josephson RA.** *Osteoarthrosis causing altered mental status: a case report.* J Med Case Rep. 2014;8:401. [完整病例與 Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC4265531/)・[DOI](https://doi.org/10.1186/1752-1947-8-401)。**room air ABG**：pH 7.33、PaCO₂ 53、PaO₂ 64、HCO₃⁻ 28；原文 A–a 18 mmHg。87 歲與室內空氣是解讀是否正常的必要條件；在海平面、R＝0.8 的簡式下自行重算約 20 mmHg，不能偽裝成作者精確公式的結果。原圖除雙側橫膈升高，亦可見**肋膜積液與肺門周圍水腫**。姿勢性 FVC 降 22%、吸吐氣最大壓力低、頸椎 C3–C5 神經孔狹窄與膈神經病變，合併肺水腫時反覆惡化。**教學界線**：原作者稱 A–a 正常，並非排除共存肺病；「單一正常 A–a＝沒有 V/Q mismatch」不成立。
 
 6. **Li X, et al.** *Case Report: Pulmonary alveolar proteinosis and fibrosis associated with indium-tin-oxide exposure.* Front Med. 2026;13:1856204. [原文與 Figures 1–2、Table 1](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1856204/full)・[DOI](https://doi.org/10.3389/fmed.2026.1856204)。**room air ABG**：pH 7.41、PaCO₂ 33、PaO₂ 54、SaO₂ 86.2%；報告的 A–a 59.2 mmHg。海平面、R＝0.8 的**本文標準化重算約 55 mmHg**，與原報數值不同，原文沒有足夠資訊可精確重現計算條件；兩者均明顯超過 35 歲的室內空氣常見年齡參照。診斷依據包括職業暴露、HRCT 毛玻璃及小葉間隔增厚、DLCO 降至預測值約 26%、肺組織 PAS 陽性；灌洗後室內空氣 SpO₂ 93–95% 與影像改善，後續仍進展成纖維化。**教學界線**：不能單靠 A–a 或 DLCO 定量分流比例、推定唯一病因或判斷介入長期效益。
+
+**A–a 算式與年齡參照：** 本文標準化粗算取海平面氣壓 760 mmHg、水蒸氣壓 47 mmHg、FiO₂ 0.21、R 0.8。Reddy 的 PAO₂ 約 84、A–a 約 20；原論文報 18，故本文不假裝精確復現。Li 的 PAO₂ 約 109、A–a 約 55；原論文報 59.2，差距不影響「明顯增大」的定位。依小麻室內空氣粗略參照 4＋年齡/4，87 歲約 25.75、35 歲約 12.75，**這只是年齡估計，不是確診界線**。對已經給氧而 FiO₂ 不明的 PACU 病人不應硬算，也不得為得到 room-air 數值而撤除必要氧療。不同患者的 A–a 不等於某病的直接診斷或重症治療門檻。
 
 **選材目的與侷限：** 六個病例依序填補：SpO₂ 不代表換氣、RR 不代表潮氣量、A–a 對低肺泡起點與額外交換落差的區辨、氧療對分流的限制，以及飽和度不代表 Hb 攜氧量。真實病例有現象學和病因推理價值，但**不構成治療比較試驗、NIV／插管門檻或輸血處方**。原稿《Pocket Medicine》第九版圖表及既有氧療／NIV 指南，仍由本頁前述段落獨立支撐。
