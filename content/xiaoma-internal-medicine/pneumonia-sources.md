@@ -4,9 +4,9 @@
 
 ## 0　主病例：真實 clinical problem-solving report（2026-10-25 修稿）
 
-- **原始報告**：Oostwoud DW, Achterberg S, Savelkoul C, Tjan DHT, de Lange DW. *A severe community-acquired pneumonia during pregnancy*. Netherlands Journal of Critical Care. 2017;25(5):178–182. [原期刊 PDF](https://na.eventscloud.com/file_uploads/4295d8debe37abc78f56aa89960456df_NJCC2017-5Vol25.pdf)；[期刊目錄](https://de-intensivist.nl/volume-25-issue-5-september-2017/)。
+- **原始報告**：Oostwoud DW, Achterberg S, Savelkoul C, Tjan DHT, de Lange DW. *A severe community-acquired pneumonia during pregnancy*. Netherlands Journal of Critical Care. 2017;25(5):178–182. [原期刊 PDF](https://de-intensivist.nl/wp-content/uploads/2022/06/clinical-problem-solving_0.pdf)；[期刊目錄](https://de-intensivist.nl/volume-25-issue-5-september-2017/)。
 - **已交叉比對的原文敘述**：39 歲、妊娠 28 週；初始右中葉浸潤；下一日 RR 32/min、SpO₂ 77%、雙側浸潤、呼吸衰竭需插管；後續 P/F <100、俯臥位通氣；病原確認 Legionella。作者明確回算住院時 CURB-65＝0，ICU 時為 1；初診時未正式計算風險分數（不可扭曲成先前醫師依 0 分決定出院）。據索引內容回查原報告文字，非自行補造血氣或病人數據。
-- **證據取得限制**：原 PDF 的文字與段落可由公開索引檢索，但本輪直接 PDF 閱讀回傳 403，不能聲稱已逐頁目視 Figure 1／2、table、所有註腳。正文只連結原影像，不重製；此缺口阻擋正式視覺來源審查及重新發布，需再取得可完整檢視之合法原件。
+- **證據取得限制**：**已解除原始影像查核阻塞**：原始 eventscloud PDF 回應 403 後，從荷蘭重症醫學會期刊目錄（de-intensivist.nl）取得同一篇五頁正式期刊 PDF；2026-10-25 透過 PDF 檢視逐頁核對 p178–182，包含 p178 Figure 1（初診右中葉浸潤）及 Table 1（ABG）、p179 Figure 2（惡化後雙側浸潤）及回溯 CURB-65 敘述、p180 P/F ratio 與 Legionella 檢測時序，以及 p181–182 病程、討論與參考資料。原圖只連到期刊，沒有重製或複製。此為 AI 來源目視查核，不等於獨立專科醫師審查。
 - **外推邊界**：懷孕改變母體呼吸與治療選擇，個案僅用來示範低 mortality-risk score 與高支持需求可並存；不能把本例的藥物方案、預後或惡化機率直接套用所有成人 CAP。
 - **隊列原始證據**：[Performance of the CURB-65 Score in Predicting Critical Care Interventions](https://pmc.ncbi.nlm.nih.gov/articles/PMC6359992/)。2,322 位**已住院** CAP，0–1 分者 15.6% 於 48 h 內 ICU、6.4% 接受 critical care intervention、0.6% 死亡。研究分母非所有門診 CAP；不是「低分所有病人」的 ICU 機率，也不能推定 ICU 使死亡率降低。
 - **核心 guideline**：[ATS/IDSA 2019 完整文](https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/)。Q6（住院預後工具）與 Q7（ICU 強度）不同；severe CAP 1 major 或至少 3 minor。原病例轉 ICU 已插管，因此符合 major，不需將不同時間點的 RR、CXR、P/F 拼成插管前 3 minor。
@@ -70,4 +70,4 @@ HFNC、NIV 與 CPAP 的推薦均以相對 standard oxygen 的比較解讀；不�
 
 主文兩圖是新的 HTML/CSS 文字結構，未公開教材 PDF、出版社原圖或病人影像。現行 Figure 01 為 Oostwoud 真實病例時間線，Figure 02 為診斷／器官支持／病原三種不同問題的教學整理；原始 severe CAP Table 2 另有官方直接連結。兩張示意圖不具預測效度，也尚未經讀者學習成效驗證。
 
-既有資料曾核讀指南中的病原風險、PCT、抗生素與療程等條件；它們現已退居後續文章的待整合來源。新稿核心數字依真實病例原文的可檢索段落與 2019 ATS/IDSA 原文、critical-care interventions 原研究查核。**新病例 PDF 原頁與 Figure 1／2 在本輪網頁讀取遇 403，尚未完成全頁目視；不得標示 Figure 完成視覺審核**。亦未完成獨立醫師同儕審查或網站實際部署驗證；發布狀態 HOLD。
+既有資料曾核讀指南中的病原風險、PCT、抗生素與療程等條件；它們現已退居後續文章的待整合來源。新稿核心數字依真實病例正式五頁期刊 PDF 全文、Figure 1／2、Table 1，2019 ATS/IDSA 原文及 critical-care interventions 隊列原研究查核。數值嚴守時間點：初次 PaO₂ 12.7 kPa／飽和度 98%，後續 SpO₂ 77%；插管後 ICU 第一天 FiO₂ 100%／PEEP 20、P/F 132，醫學中心 P/F 80。沒有把無法確定的入院 FiO₂ 編成數字。獨立醫師同儕審查及讀者實測尚未完成，不能以 AI 自評替代；網站部署另需獨立確認。
