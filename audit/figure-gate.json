@@ -594,36 +594,36 @@
     "content/xiaoma-reading/integrated/2026-10-26-vte-visual.md": {
       "status": "represented",
       "source_review": "content/xiaoma-reading/vte-sources.md",
-      "reviewed_on": "2026-10-26",
-      "review_type": "ai_editorial_review",
-      "rights_decision": "link_or_original_only",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_editorial_source_trace_only_visual_qa_pending",
+      "rights_decision": "Blausen_CC_BY_3_and_JKMS_CC_BY_NC_4_require_noncommercial_and_external_image_qa",
       "items": [
         {
-          "locator": "Pocket Medicine 9E PDF 第97頁 risk factors 與 Thromboprophylaxis 原表",
-          "source_token": "Thromboprophylaxis",
-          "teaching_role": "分開共同血栓生成條件、不同疾病假說和檢查陰性的停止條件，保留每一分支會改變行動的資訊。",
-          "scope_limit": "不是完整 Wells 計分表或治療流程；不能把常規穩定病人的診斷路徑套用到血流動力學不穩定者。",
+          "locator": "Blausen 2013 DVT anatomical illustration CC BY 3.0; CDC 2025 VTE definitions",
+          "source_token": "Blausen.com",
           "mode": "illustrated",
           "anchor": "vte-shared-substrate",
-          "caption_token": "Pocket Medicine"
+          "caption_token": "Blausen.com",
+          "teaching_role": "修正原平行箭頭的病理機轉錯誤：DVT 血栓可以脫落經靜脈回流右心到肺動脈；清楚分開形成時的共同預防與症狀後的不同診斷。",
+          "scope_limit": "Blausen 原圖只呈現下肢靜脈內血栓，不畫 PE；文字箭頭不是每個 DVT 必經的結局，PE 亦不必然殘留可查下肢 DVT。"
         },
         {
-          "locator": "Pocket Medicine 9E PDF 第98–99頁 Modified Wells DVT／PE 原表",
-          "source_token": "Modified Wells",
-          "teaching_role": "分開共同血栓生成條件、不同疾病假說和檢查陰性的停止條件，保留每一分支會改變行動的資訊。",
-          "scope_limit": "不是完整 Wells 計分表或治療流程；不能把常規穩定病人的診斷路徑套用到血流動力學不穩定者。",
+          "locator": "NICE NG158 2023 two-level Wells DVT and PE clinical probabilities and official visual summary PDF",
+          "source_token": "NICE NG158",
           "mode": "illustrated",
           "anchor": "vte-competing-hypotheses",
-          "caption_token": "原書第九版 PDF"
+          "caption_token": "NICE NG158",
+          "teaching_role": "將 Wells 對照重建為同一風險背景下的兩個假說、兩種前測機率與兩個解剖定位目標，直接連到真正的官方原始流程。",
+          "scope_limit": "僅比較 NICE 二層 Wells 的部分門檻，不是完整評分表或病人處置流程，不可與 Pocket Medicine 其他分層方式混算。"
         },
         {
-          "locator": "Pocket Medicine 9E PDF 第98–99頁 Figure 2-2／2-3 與陰性影像註記",
-          "source_token": "Figure 2-2",
-          "teaching_role": "分開共同血栓生成條件、不同疾病假說和檢查陰性的停止條件，保留每一分支會改變行動的資訊。",
-          "scope_limit": "不是完整 Wells 計分表或治療流程；不能把常規穩定病人的診斷路徑套用到血流動力學不穩定者。",
+          "locator": "An et al. Journal of Korean Medical Science 2022;37:e76 Fig. 5 CTPA, CTV and Doppler images",
+          "source_token": "JKMS 2022",
           "mode": "illustrated",
           "anchor": "vte-diagnostic-stop-rules",
-          "caption_token": "Pocket Medicine"
+          "caption_token": "Journal of Korean Medical Science",
+          "teaching_role": "以同一患者兩個解剖部位的真實影像取代假流程圖，連回官方 NICE 演算法判斷不同前測機率的停止條件。",
+          "scope_limit": "Fig.5 的超音波是 color Doppler，不是壓縮超音波示範；NC 授權、圖像 CDN 和手機細節可讀性尚待正式站驗收。"
         }
       ]
     },
