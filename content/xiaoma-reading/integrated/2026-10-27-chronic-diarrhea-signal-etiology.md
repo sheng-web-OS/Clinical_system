@@ -18,13 +18,13 @@
 
 <figure id="fig-diarrhea-evidence-sequence" class="reasoning-figure">
 <div class="reasoning-title">原創圖 1｜訊號的分流順序，以及每一項結果不能取代的問題</div>
-<table aria-label="慢性腹瀉訊號到後續檢查的分層決策">
+<table aria-label="慢性腹瀉訊號到後續檢查的分層決策" class="release-matrix">
 <thead><tr><th scope="col">先辨認的訊號</th><th scope="col">改變的假說</th><th scope="col">有增量的下一步</th><th scope="col">不能推論</th></tr></thead>
 <tbody>
-<tr><th scope="row">血便／貧血／體重下降／發燒等 alarm 或風險線索</th><td>需要優先排查器質性、發炎性、惡性或感染性原因</td><td>依病況考慮檢驗、內視鏡與必要影像；不等待 osmotic gap</td><td>單一陰性糞便指標就能放心排除器質性病變</td></tr>
-<tr><th scope="row">明顯 fecal fat／steatorrhea 表現</th><td>營養吸收／消化障礙機率提高</td><td>依臨床線索評估 celiac、pancreatic insufficiency、bile acid availability 等</td><td>「脂肪陽性＝胰臟外分泌不足」</td></tr>
-<tr><th scope="row">Inflammatory signals／合宜的 calprotectin、lactoferrin</th><td>發炎性腸病或部分黏膜病變機率調整</td><td>依風險評估感染、IBD、內視鏡與 biopsies</td><td>陰性 calprotectin 排除 microscopic colitis</td></tr>
-<tr><th scope="row">水瀉仍未定位、無上述主導訊號</th><td>才考慮 osmotic／secretory physiology</td><td>綜合禁食、夜間症狀、藥物與選擇性 stool electrolyte testing</td><td>某個 gap cutoff 就等於 IBS-D 或特定腫瘤</td></tr>
+<tr><th scope="row">血便／貧血／體重下降／發燒等 alarm 或風險線索</th><td data-label="改變的假說">需要優先排查器質性、發炎性、惡性或感染性原因</td><td data-label="有增量的下一步">依病況考慮檢驗、內視鏡與必要影像；不等待 osmotic gap</td><td data-label="不能推論">單一陰性糞便指標就能放心排除器質性病變</td></tr>
+<tr><th scope="row">明顯 fecal fat／steatorrhea 表現</th><td data-label="改變的假說">營養吸收／消化障礙機率提高</td><td data-label="有增量的下一步">依臨床線索評估 celiac、pancreatic insufficiency、bile acid availability 等</td><td data-label="不能推論">「脂肪陽性＝胰臟外分泌不足」</td></tr>
+<tr><th scope="row">Inflammatory signals／合宜的 calprotectin、lactoferrin</th><td data-label="改變的假說">發炎性腸病或部分黏膜病變機率調整</td><td data-label="有增量的下一步">依風險評估感染、IBD、內視鏡與 biopsies</td><td data-label="不能推論">陰性 calprotectin 排除 microscopic colitis</td></tr>
+<tr><th scope="row">水瀉仍未定位、無上述主導訊號</th><td data-label="改變的假說">才考慮 osmotic／secretory physiology</td><td data-label="有增量的下一步">綜合禁食、夜間症狀、藥物與選擇性 stool electrolyte testing</td><td data-label="不能推論">某個 gap cutoff 就等於 IBS-D 或特定腫瘤</td></tr>
 </tbody></table>
 <figcaption>自行設計的「優先證據→推論邊界」矩陣，而非重製 Pocket Medicine Figure 3-2。對讀 9E Library PDF pp.124–126：圖題在 p.125 頁末，**實際流程圖在 p.126**。此表非僵化醫囑順序，危急情境需先處置。</figcaption>
 </figure>
@@ -45,12 +45,12 @@ Pocket Medicine 9E Figure 3-2 用 **<100 與 ≥100 mOsm/kg** 作教學分支。
 
 <figure id="fig-diarrhea-gap-interpretation" class="reasoning-figure">
 <div class="reasoning-title">原創圖 2｜同一張原書 cutoff，放回「推論強度」而非確定診斷</div>
-<table aria-label="Stool osmotic gap 區間與臨床推論強度">
+<table aria-label="Stool osmotic gap 區間與臨床推論強度" class="release-matrix">
 <thead><tr><th>估計 gap</th><th>生理機轉線索</th><th>真正可帶往下一步的判斷</th></tr></thead>
 <tbody>
-<tr><th scope="row">&lt;50 mOsm/kg</th><td>較支持 secretory physiology</td><td>核對禁食反應、夜間水瀉、藥物、膽酸與感染風險；不能證明 IBS-D</td></tr>
-<tr><th scope="row">50–100/125 mOsm/kg</th><td>灰區：機轉混合、誤差或模型限制</td><td>增加病史與定向檢查價值；不要硬分病名</td></tr>
-<tr><th scope="row">&gt;100–125 mOsm/kg</th><td>較支持 osmotic physiology</td><td>追查難吸收糖、鎂鹽、瀉藥和禁食反應；仍需排除共存病因</td></tr>
+<tr><th scope="row">&lt;50 mOsm/kg</th><td data-label="生理機轉線索">較支持 secretory physiology</td><td data-label="真正可帶往下一步的判斷">核對禁食反應、夜間水瀉、藥物、膽酸與感染風險；不能證明 IBS-D</td></tr>
+<tr><th scope="row">50–100/125 mOsm/kg</th><td data-label="生理機轉線索">灰區：機轉混合、誤差或模型限制</td><td data-label="真正可帶往下一步的判斷">增加病史與定向檢查價值；不要硬分病名</td></tr>
+<tr><th scope="row">&gt;100–125 mOsm/kg</th><td data-label="生理機轉線索">較支持 osmotic physiology</td><td data-label="真正可帶往下一步的判斷">追查難吸收糖、鎂鹽、瀉藥和禁食反應；仍需排除共存病因</td></tr>
 </tbody></table>
 <figcaption>區間是依不同文獻的解讀示意，非規定所有情境使用的統一 cut point；「50–100/125」標明各文獻的轉折不同，非精確連續範圍。原書使用 &lt;100／≥100，見 Figure 3-2。公式與 cut points 不等於直接測定分泌量。</figcaption>
 </figure>
