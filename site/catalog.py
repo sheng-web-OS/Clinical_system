@@ -48,6 +48,31 @@ def load_pages(root):
                 raise ValueError("Recovered original requires its source fingerprint")
             if hashlib.sha256(path.read_bytes()).hexdigest() != fingerprint:
                 raise ValueError("Recovered original changed: " + row["source"])
+    # Essential source algorithms are part of the visible reader experience, not a buried citation.
+    for row in pages:
+        contract = row.get("required_primary_visual")
+        if contract is None:
+            continue
+        if not isinstance(contract, dict):
+            raise ValueError("Primary visual contract must be an object: " + row["source"])
+        ident, url = contract.get("anchor"), contract.get("official_source_url")
+        if (not isinstance(ident, str) or not re.fullmatch(r"[a-z0-9][a-z0-9-]*", ident)
+                or not isinstance(url, str) or not url.startswith("https://")):
+            raise ValueError("Invalid primary visual contract: " + row["source"])
+        content = (root / row["source"]).read_text(encoding="utf-8")
+        pat = r'<figure\b(?=[^>]*\bid=["\x27]' + re.escape(ident) + r'["\x27])[^>]*>(.*?)</figure>'
+        match = re.search(pat, content, flags=re.IGNORECASE | re.DOTALL)
+        if not match:
+            raise ValueError("PRIMARY_VISUAL_MISSING: " + row["source"] + " #" + ident)
+        figure = match.group(1)
+        if url not in figure or not re.search(r"<figcaption\b", figure, re.IGNORECASE):
+            raise ValueError("PRIMARY_VISUAL_SOURCE_HIDDEN: " + row["source"] + " #" + ident)
+        if not re.search(r"<(?:svg|img|table)\b", figure, re.IGNORECASE):
+            raise ValueError("PRIMARY_VISUAL_IS_TEXT_ONLY: " + row["source"] + " #" + ident)
+        if contract.get("require_desktop_and_mobile_variants"):
+            if ("acls-desktop-graph" not in figure or "acls-mobile-graph" not in figure):
+                raise ValueError("PRIMARY_VISUAL_MOBILE_MISSING: " + row["source"] + " #" + ident)
+
     # Mandatory diagram/table provenance check: new teaching pages must disclose actual source review.
     from figure_gate import validate_figure_gate
     from exam_archive import validate_exam_catalog
