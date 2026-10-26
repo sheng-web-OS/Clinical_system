@@ -2,6 +2,8 @@
 
 **版本 2026-10-26｜AI 整合候選，未公開。** 本頁支援 `integrated/2026-10-26-constipation.md`，不代表已完成獨立專科審稿。
 
+**案例來源確認（作者 2026-10-26 回覆）：完全設計的教學情境。** 病人、醫師對話、護理紀錄、藥物時序及臨床反應都是敘事設計，並非真實病例、去識別化病例或真實 case report。此來源身分已確定，不再要求真實病歷或病人去識別化。教學情境須保持因果一致、反事實合理；情節本身不構成藥效、診斷效能與治療決策的臨床證據。
+
 ## 小麻第九版原文定位
 
 使用者 ChatGPT Library 的 `內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten(1).pdf`：PDF reader p127/463，`Dysmotility & Nutrition > Constipation`。本次以 files.read 核對了原頁的**畫面與完整文字**：包括 Rome IV 六組症狀、secondary causes 4 Ms、DRE/ARM/BET/colonic transit、以及 docusate → bulk/stimulant/osmotic → enema/suppository → prescription agents 的表式排列。
@@ -28,4 +30,4 @@
 - 若 DRE 發現 rectal impaction，需依糞便位置與性質採取清除策略；若腹痛／腹脹／嘔吐／停止排氣，則需考慮 mechanical obstruction、ileus，不能盲目增加刺激藥物、灌腸或 PAMORA。
 - 若新發 saddle anesthesia、膀胱功能異常或漸進性下肢神經缺損，優先處理 spinal emergency，不能等待常規 anorectal tests。
 
-版本狀態：source text archived / textbook page visually inspected / guideline first pass / integrated draft saved / **clinical final gate and publication pending**。
+版本狀態：source text archived / fictional case provenance confirmed / textbook page visually inspected / guideline first pass / integrated draft saved / **clinical final gate and publication pending**。
