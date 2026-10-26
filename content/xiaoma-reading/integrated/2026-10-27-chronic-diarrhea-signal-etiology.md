@@ -29,7 +29,7 @@
 <figcaption>自行設計的「優先證據→推論邊界」矩陣，而非重製 Pocket Medicine Figure 3-2。對讀 9E Library PDF pp.124–126：圖題在 p.125 頁末，**實際流程圖在 p.126**。此表非僵化醫囑順序，危急情境需先處置。</figcaption>
 </figure>
 
-這個模型的診斷價值，是每一條分支都具有不同的「資訊優先權」。沒有 alarm signs 的慢性水瀉患者，不一定人人需要 CT、colonoscopy、SPEP 等大量檢查；但對有不尋常症狀或異常結果者，也不能因符合 Rome symptom criteria 就直接停在 functional diagnosis。[1][2]
+這個模型的診斷價值，是每一條分支都具有不同的「資訊優先權」。沒有 alarm signs 的慢性水瀉患者，不一定人人需要 CT、colonoscopy 等大量檢查；但對有不尋常症狀或異常結果者，也不能因符合 Rome symptom criteria 就直接停在 functional diagnosis。[1][2]
 
 ## Q2｜Stool osmotic gap 是測量、模型，還是診斷？
 
@@ -45,7 +45,7 @@ Pocket Medicine 9E Figure 3-2 用 **<100 與 ≥100 mOsm/kg** 作教學分支。
 
 <figure id="fig-diarrhea-gap-interpretation" class="reasoning-figure">
 <div class="reasoning-title">原創圖 2｜只改變 stool Na＋K，未量測滲透物的估計值如何移動？</div>
-<p>固定同一個假設的 total osmolality <strong>290 mOsm/kg</strong>，下面三筆是<strong>刻意構造的算式練習，不是真實個案或測得糞便滲透壓</strong>。讀圖前先自己算一次：<strong>290 − 2 ×（Na＋K）</strong>。</p>
+<p>採用近似生理假設的糞便水相 osmolality <strong>290 mOsm/kg</strong>，下面三筆是<strong>刻意構造的算式練習，不是真實個案或測得糞便滲透壓</strong>。讀圖前先自己算一次：<strong>290 − 2 ×（Na＋K）</strong>。</p>
 <div class="osm-gap-scale" aria-hidden="true"><span>0</span><span>50</span><span>100</span><span>150</span></div>
 <div class="osm-gap-case">
 <div class="osm-gap-case-head"><strong>例 A：Na 90＋K 50 mmol/L</strong><b>gap 10</b></div>
@@ -73,7 +73,13 @@ Pocket Medicine 9E Figure 3-2 用 **<100 與 ≥100 mOsm/kg** 作教學分支。
 同理，病人若曾切除 terminal ileum，膽酸吸收減少可能使更多膽酸進入大腸、刺激水與電解質分泌；但若 ileal disease 範圍廣、整個 bile acid pool 變得不足，亦可造成脂肪消化吸收障礙。**同一解剖位置的疾病，可以因失去的生理功能不同而同時改變分泌與脂肪吸收。**
 
 診斷流程不是要在第一次分型後永遠留在某個欄位，而是根據新的檢查、病史和反例**重估**。這也是為什麼「找到腹瀉類型」和「找到腹瀉病因」之間仍有一段不能省略的推理。
-\n\n[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#diarrhea)\n\n---\n\n### 來源與驗收驗收身分
+
+
+[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#diarrhea)
+
+---
+
+### 來源與驗收身分
 
 [1] [AGA 2019 laboratory evaluation of functional diarrhea and IBS-D](https://gastro.org/clinical-guidance/laboratory-evaluation-of-functional-diarrhea-and-diarrhea-predominant-irritable-bowel-syndrome-in-adults-ibs-d/)；其指引適用條件不包括所有 alarm cases。  
 [2] [BSG 2018 guideline (3rd ed.) chronic diarrhoea](https://pmc.ncbi.nlm.nih.gov/articles/PMC6204957/)，特別是 microscopic colitis、bile acid diarrhoea 和定向診斷。  
