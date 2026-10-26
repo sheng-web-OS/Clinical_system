@@ -563,6 +563,15 @@
       "rights_decision": "authorized",
       "items": [
         {
+          "locator": "2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm, official 2025 PDF Figure 6, and 2025 ALS rhythm safety recommendations for pVT; 2023 ACC/AHA AF guideline section 10.6 for pre-excited AF",
+          "source_token": "2025 AHA",
+          "mode": "illustrated",
+          "anchor": "wct-acls-flowchart",
+          "caption_token": "2025 AHA",
+          "teaching_role": "Provide a visually connected executable triage algorithm for pulse -> sustained polymorphic VT exception -> tachyarrhythmia-caused instability -> QRS width -> stable regular/monomorphic WCT pharmacologic boundary, including preexcited AF and shock-mode exceptions. This is independent clinical synthesis, not a graphic reproduction of AHA Figure 6.",
+          "scope_limit": "This is a newly authored educational decision flow, not an authorized reproduction or exact copy of the copyrighted official 2025 AHA algorithm; the actual AHA image is linked at its official URL. It does not replace full ACLS training, physician judgment, or interpretation of rhythm during bedside resuscitation."
+        },
+        {
           "locator": "Silverman et al. 2018 Figure 1-2 original CC BY 4.0 irregular WCT and post-cardioversion preexcitation ECG; cross-check 2025 AHA ALS §15–16 / official Adult Tachyarrhythmia With a Pulse Algorithm and Pocket Medicine 9E PDF pp.67–68",
           "source_token": "Figure 1-A1",
           "mode": "illustrated",
@@ -571,7 +580,8 @@
           "teaching_role": "Display the actual rhythm strip and follow-up ECG to ground recognition of irregular WCT and how the specific ECG features constrain medication trials while the exact electrophysiology diagnosis remains unknown.",
           "scope_limit": "Original case ECG serves clinical pattern reading, not a replacement for the 2025 AHA algorithm; ACLS copyrighted algorithm remains an external link and shock mode depends on rhythm and perfusion."
         }
-      ]
+      ],
+      "rights_note": "Original ACLS teaching diagram drawn independently, no AHA copyright flowchart pixels copied; official AHA source is linked. Silverman original ECGs used under CC BY 4.0."
     },
     "content/xiaoma-reading/integrated/2026-10-26-constipation.md": {
       "status": "represented",
