@@ -4,7 +4,7 @@
 
 ## 醫學／原圖對照
 
-已查對官方 [2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf) 的完整單頁圖及其 Doses/Details，並參照 [2025 ALS §15–16](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support) 和 [2023 AF guideline §10.6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/)。
+已查對官方 [2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf) 的完整單頁圖及其 Doses/Details，並參照 [2025 ALS §15–16](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support) 和 [2023 AF guideline §10.6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/)。
 
 | 必須讀到的決策 | 新圖位置 | 限制 |
 |---|---|---|
