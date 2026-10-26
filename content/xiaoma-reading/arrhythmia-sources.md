@@ -39,7 +39,7 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 **2025 AHA 正式主流程**：[Adult Tachyarrhythmia With a Pulse Algorithm，原始 PDF](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)。本文已逐項對照：初始 airway／氧合／監測／12-lead；是否由 persistent tachyarrhythmia **causing** shock、低血壓、意識改變、缺血性胸痛或 acute HF；是則進入 synchronized cardioversion，否則才進入 QRS ≥0.12 秒寬窄判斷；窄 QRS 的規則性限制；寬 QRS 僅 stable regular monomorphic 可考慮 adenosine；持續 refractory 需重新評估病因、能源、藥物及會診。
 
-**正式圖像的權利決策**：AHA [ECC 圖表重製許可規則](https://www.heart.org/en/about-us/statements-and-policies/guidelines-for-use-of-american-heart-association-emergency-cardiac-care) 與 [網站著作權規範](https://www.heart.org/en/about-us/statements-and-policies/copyright-permission-guidelines) 均有單獨重製／授權要求。正式 AHA PDF **只以原始官方連結提供**，不在 Clinical OS 上複製、鏡像、轉譯圖檔或宣稱已取得許可。公開 PDF 可閱讀不等於可重新發布原像素。
+**正式圖像的權利決策（link_or_original_only）**：AHA [ECC 圖表重製許可規則](https://www.heart.org/en/about-us/statements-and-policies/guidelines-for-use-of-american-heart-association-emergency-cardiac-care) 與 [網站著作權規範](https://www.heart.org/en/about-us/statements-and-policies/copyright-permission-guidelines) 均有單獨重製／授權要求。正式 AHA PDF **只以原始官方連結提供**，不在 Clinical OS 上複製、鏡像、轉譯圖檔或宣稱已取得許可。公開 PDF 可閱讀不等於可重新發布原像素。
 
 **本站 Figure「wct-acls-main-algorithm」**：獨立重新構成的教育版 *decision logic*，不是 AHA 圖表的外觀複刻或正式翻譯；將指引主分流用與官方圖不同的視覺配置示出，桌面與手機各自有完整可讀版本。**不可省略的差異及限制**：2025 AHA §15 中，unstable／irregularly irregular／polymorphic WCT 不給 adenosine；sustained polymorphic VT 依 §16 即使仍有 pulse 也需 immediate unsynchronized high-energy shock；pre-excited AF 依 [2023 AF §10.6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/) 禁用 AV nodal blockers 與 IV amiodarone，不能直接套用 stable WCT 類別可考慮的輸注藥物；無脈搏則不適用 tachyarrhythmia-with-a-pulse 流程。
 
