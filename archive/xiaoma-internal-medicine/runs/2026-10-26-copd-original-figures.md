@@ -103,3 +103,43 @@ AI 同脈絡對抗式複讀：A3（同一排空命題，原圖使閱讀負荷增
 
 **尚未完成：** (1) 原 Pocket 四圖的公開使用依據；(2) STARR2 correction 全文與原書 p87 的疑義確認；(3) 本輪 V2 的醫學獨立審查／實體手機閱讀驗收；(4) 重新生成單檔內嵌圖 HTML。本分支現有的 `2026-10-26-copd-originals-integrated.html` 仍是 V1 靜態快照，**不等於 V2 改稿已同步**。不可將這份 V2 Markdown 當成正式網站部署完成或可發佈聲明。
 
+
+## 續修 V2.1｜慢性呼吸力學 → 急性呼吸床邊決策（2026-10-26）
+
+需求：補齊此前 86/100 文章缺少的急性床邊推理；同一 PR #49 延續、不觸及正式部署。
+
+### 編輯實際變更
+
+- 05 重寫：R×C 排空時間常數 → expiratory flow limitation／動態過度充氣 → intrinsic PEEP／吸氣觸發負擔 → VT、VD、V̇E、V̇A 定義 → 酸鹼血氣 → NIV 的機制與評估。
+- 05.2 教學公式：V̇E = VT × f，V̇A ≈（VT−VD）×f；12×500 mL 與 24×250 mL 的 V̇E 同為 6 L/min，設 VD 150 mL，V̇A 為 4.2 與 2.4 L/min。數字僅教學示意，非病例實測。為手機可讀性取消初始 6 欄表，改用上下兩個完整算式文字區塊。
+- 06 重寫：NIV 開始後的臨床／血氣反應（BTS 2 小時內追血氣）、NIV 失敗與氣道保護、插管後仍需排空時間、呼吸器 flow-time／呼氣暫停的解讀、外加與內在 PEEP 的界線，及 pure IET vs true expiratory flow limitation（EFL）的不同反應。
+- 07 自編遷移題由兩題增為三題：肺減容、真實 73 歲 NIV 病例、87 歲實測 auto-PEEP 病例。反事實假設與原文實際事件明確分開。
+- 保留 01–04 舊版結構／同一 Marchand 案例、四張 Pocket Medicine 9E 私人來源圖、既有兩張原創 SVG 和原病例 CT。沒有重繪 Pocket 來源圖、更新圖像公開白名單或更動 site/pages.json。
+
+### 使用的真實病例（不可跨案例串接數值）
+
+1. **Uğurlu AÖ, Ergan B. Pulmonology. 2023;29:144–150，doi:10.1016/j.pulmoe.2022.07.010**，[完整可搜尋文字](https://www.sciencedirect.com/science/article/pii/S2531043722001787)。73F、RR30、HR120、room air SpO₂86、PaO₂54、pH7.29、PaCO₂69；day2 pH7.35、PaCO₂61.6，IPAP/EPAP 20/6。第 2 天的氣體交換改善不可冒稱「NIV 1 小時就改善」；報告 Sat 97.7% 是觀察結果，不是建議的 AECOPD 給氧目標。
+2. **Management Strategies for Hypercapnic Respiratory Failure in COPD: A Case-Based Discussion (2025), Case 1**，[原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC12183487/)。63M 合併肺炎與濃厚分泌物，pH7.15、PaCO₂141，bilevel NIV 約 6 小時後因臨床問題持續而插管。其部分 HCO₃、Table 1 與敘述有不一致，不採用 HCO₃／細節設定／未核定的病程數值來推理。這是**不同病人**，不是成功 NIV 病例的後續。
+3. **Padrao et al., ATS Scholar 2026;7:86–88，doi:10.34197/ats-scholar.2025-0073OT**，[完整文章](https://academic.oup.com/atsscholar/article/7/1/86/8439232)。87F COPD GOLD 3B，插管後 set PEEP 5、auto-PEEP 14、total PEEP 19 cmH₂O；文章解釋 IET vs EFL、波形與相應 PEEP 反應。**不推論本例有實測低血壓**。ATS 原圖有 CC BY-NC-ND 4.0 註記，正文僅連結其圖文，不複製原圖。
+
+### 新指南和實際決策支持
+
+- [ATS 2026 acute noninvasive respiratory support guideline](https://doi.org/10.1093/ajrccm/aamag302)：急性高碳酸呼吸衰竭，面罩 NIV 強推薦；HFNC 只在酸中毒較輕且可迅速升級時為有條件替代。
+- [ERS/ATS 2017 NIV recommendation](https://publications.ersnet.org/content/erj/50/2/1602426)：standard medical management 後持續酸中毒／高 CO₂／呼吸窘迫，bilevel NIV 重要；沒有單一「過低 pH 必須一律不試 NIV」的絕對數字規則。
+- [BTS acute NIV quality standards](https://doi.org/10.1136/bmjresp-2018-000283)：開始 NIV 2 小時內驗血氣；不改善時由具升級決策能力的醫療團隊迅速重評。
+- [Hess, Respir Care 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10208989/)：呼吸器 flow-time 曲線、end-expiratory hold 條件、air-trapping、auto-PEEP 與延長呼氣時間的機轉。
+
+### 數據核查與不能越界的地方
+
+Henderson–Hasselbalch 近似 HCO₃ ≈ 0.03 × PaCO₂ × 10^(pH−6.1)：
+- 73F 第一次 pH7.29／PaCO₂69 算得約 **32.1 mmol/L**，報告 HCO₃28；
+- 73F day2 pH7.35／PaCO₂61.6 算得約 **32.9 mmol/L**，報告 HCO₃29.6；
+- 63M pH7.15／PaCO₂141 算得約 **47.5 mmol/L**，原文敘述 HCO₃36.1（表另見 35.5）。
+
+因此資料限制直接寫進正文：**不能把這些 HCO₃ 當作可信的慢性代償標準或推導混合性酸鹼診斷**；需要對原報告做來源更正／勘誤查核。病例血氣的 pH、PaCO₂ 用於各原文所描述的 clinical decision，不自行編造 1-h ABG 或 PSV response。
+
+### 驗收與仍阻塞正式發布
+
+完成靜態內容完整性核查：七節、四張 Pocket 原圖、兩張原創 SVG、原 CT Figure 1、三道具有解答的轉移題。內文對真正量測值 vs 教學假設、跨病例界線及來源不一致均明確標示。
+
+仍未完成：公開使用 Pocket 原圖的獨立法律依據；Pocket p87 的 STARR2 引文與更正全文；V2.1 版本整份醫學獨立審查；本次 V2.1 手機實機／Safari 版面測試；新版 HTML 單檔重建。原單檔 `2026-10-26-copd-originals-integrated.html` 和其 QA JSON **仍是 V1，不可錯認為最新 V2.1**。GitHub build 成功也只能證明目前 workflow 涵蓋項目，不能驗證這個未公開的草稿之真實手機閱讀或醫學內容。正式稿及部署維持 HOLD。
