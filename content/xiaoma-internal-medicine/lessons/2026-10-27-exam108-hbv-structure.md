@@ -76,6 +76,49 @@ precore precursor p25 → ER 內 signal peptide cleavage → p22 intermediate �
 
 題目把直徑 22、27、42 nm，surface／core／e antigen 放在同一組選項；它的**唯一明確空間錯置**是 C 將 HBsAg 放進 nucleocapsid。但臨床更深一層的問題是：當一位醫師看見 HBsAg、HBeAg、HBV DNA、ALT 和 elastography 時，若沒有先辨認各測量對象，只會製造出一條不存在的「病毒多＝ALT 高＝已硬化」必然路徑。
 
+## 第四問｜Pocket Medicine 9E p.140–141 的 HBV serology／phase 表：究竟能用來解釋 Q15 到哪一步？
+
+本次已直接讀取 Pocket 9E 原 PDF **p.140 的「Hepatitis B—Serologic and virologic tests」段落，及 p.141 的 serology 表與「Phases of Chronic HBV Infection」表**。原書主要處理的不是 22／27／42 nm 病毒粒子顯微結構，而是**表面抗原、核心抗體、e 抗原、HBV DNA 如何映射到感染與疾病活動**。因此它可以核對 Q15 的*臨床外推*，**不能單靠這兩頁充當 22/27/42 nm 空間結構的原圖核對**。後者應由病毒學原始來源提供明確支持。
+
+原書的表用數個組合辨認 acute、window period、resolved、immunized 與 chronic HBV。然而若只看 HBeAg 欄位，很容易產生「e antigen 已陰性 → 病毒必定不複製」的錯誤推理。p.141 的註腳就有關於 **precore mutant 可缺乏 HBeAg，卻仍有 HBV DNA 與疾病活動**的警示。這是 Q15 D 的分子生物學與臨床檢驗間最重要的橋樑：
+
+- **Precore / basal core promoter variants** 可以改變 HBeAg 的產生或表達，而不等於所有複製能力消失。
+- **HBeAg** 是病毒表達與宿主互動狀態的重要線索，並非一定固定嵌在 42 nm 粒子外膜的構件。
+- **HBV DNA、ALT、HBsAg、HBeAg、fibrosis** 所描述的都不是同一個軸；phase 是時間中多次觀察後的臨床分類，而不是把每個化驗值按高低排成必然進展的階梯。
+
+### 原書簡化文字也需要被當代病毒學精確化
+
+小麻 p.140 標示 HBV 為「dsDNA」以和 RNA hepatitis viruses 區分。**精確描述成熟 HBV Dane particle 基因體時，應說它含部分雙股的 relaxed circular DNA（rcDNA）**：其中一股 DNA 完整、另一股不完整；核內 cccDNA 則是感染細胞中的 episomal transcription template，**不能說血液中每個成熟 virion 都直接包裹 cccDNA**。
+
+同理，p.141 的簡化 phase 表有當年引用的 ALT 與 HBV DNA 門檻及按 phase 描述的 cirrhosis 風險；不同版本的專業指引與族群可能採用不同的判讀條件。若做 2026 的診療決策，需要參考 **EASL 2025** 以及實際所在地與病人的專科指引，而不能把一張歷史表格的數字當成跨族群、終身固定的預言。
+
+本次取得的是原書 p.140–141 **段落和表格的 PDF 抽取文字**，但表格原像素的字欄、跨列、caption／footnote 仍未完成全項目高清目視核讀。尤其 p.141 的換行和跨欄存在抽取歧義，不應把抽取文字直接自動轉成「正式原表」。**原圖狀態：文字核讀已完成，表格視覺驗收仍為 PENDING。**
+
+## 第五問｜用一次抽血區分「現在感染」、「複製」、「肝炎活動」與「過去免疫」
+
+這裡先確立定義再讀表：**HBsAg** 是 surface antigen；**anti-HBs** 是宿主對 surface antigen 的抗體；**anti-HBc total** 主要反映曾接觸 core antigen；**HBV DNA** 是病毒核酸；**ALT** 是肝細胞受傷的生化訊號。它們來自不同的生物機轉，不能互為同義詞。
+
+| 假設性的血清組合（非真實病例） | 比較合理的第一層解釋 | 還需要知道什麼？ |
+| --- | --- | --- |
+| HBsAg (+)、anti-HBc total (+)、HBV DNA high、ALT normal | 目前有 HBV 感染與明顯 viremia，但當下 ALT 沒有顯著 injury signal | 感染持續時間、HBeAg、fibrosis、ALT 連續動態、年齡與治療風險 |
+| HBsAg (+)、HBeAg (-)、HBV DNA high、ALT ↑ | 可見 e antigen 陰性且仍有複製與發炎的可能 | 重複 ALT/DNA、其他肝炎病因、肝纖維化與抗病毒治療適應症 |
+| HBsAg (-)、anti-HBs (+)、anti-HBc total (-) | 較符合疫苗後免疫 | 必要時確認疫苗、其他特殊風險及是否有相關檢查疑義 |
+| HBsAg (-)、anti-HBs (+)、anti-HBc total (+) | 較符合自然感染後恢復 | 若將接受高風險免疫抑制，仍須評估 HBV reactivation 風險 |
+| HBsAg (-)、anti-HBc total (+)、anti-HBs (-) | **isolated anti-HBc**，有多種可能 | 可能是既往感染 anti-HBs 衰減、偽陽性、window period 或 occult infection，依情境評估 IgM、HBV DNA、風險背景 |
+
+**最重要的反事實**：接受 anti-CD20（如 rituximab）等免疫抑制的患者，即使 baseline HBsAg (-)、anti-HBc (+) 代表既往感染，也不能將「目前表面抗原陰性」誤判為完全沒有 reactivation risk。這是為何理解 antigen vs antibody，會直接改變病房是否需要預防性處置與追蹤。
+
+但此表只是血清解讀的**初步分支**，不是完整的抗病毒治療決策規範；正式治療尚須整合感染狀態、fibrosis／cirrhosis、免疫抑制風險與當地指引。
+
+## 第六問｜真正的 HBV phase 是推論出的動態狀態，不是五個固定階段
+
+假設在兩次診間追蹤中，患者的 HBeAg 維持陰性、ALT 由正常轉為反覆升高、HBV DNA 上升。應思考的是「**病毒複製與宿主傷害的關係改變了嗎？**」，而不是因為某張 phase 表寫 HBeAg-negative infection 就永久把人關在該類別。需要核實病毒學結果、藥物／酒精／代謝病、其他肝病以及真正的纖維化負擔。
+
+另一位患者接受 nucleos(t)ide analogue 後 HBV DNA 下降，qHBsAg 沒有等比例下降；不能推說藥物完全失敗，因為 qHBsAg 的來源可以包括 integrated HBV DNA-derived antigen production。**抗病毒治療對 polymerase-mediated replication 的效果，與 HBsAg loss（functional cure 相關目標）是兩個不同的終點。**
+
+這就是 Q15 對前一組 HBV phase 文章最重要的「知識前提修補」：如果連 HBV 外膜、核心、分泌性抗原與血中核酸都沒有分清，之後的 ALT／HBV DNA discordance 只能變成記憶矛盾；把測量對象放回正確生物學層次後，才有辦法形成真正可用的 longitudinal disease model。
+
+
 ## 來源與審核邊界
 
 - 108（一）醫學（三）Q15 官方 C；[官方原卷、答案與本批稽核](../exam108-integrated-batch6-sources.md)。
