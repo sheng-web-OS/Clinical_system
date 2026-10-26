@@ -670,6 +670,21 @@
           "scope_limit": "不補造 T6、不把 T0–T5 當等時間間距，ScvO2 T4–T5 缺值標示 N/A；觀察的相關性不證明 epinephrine 或 bicarbonate 的單一因果，不提供個別治療處方。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-chronic-cough.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/exam108-q46-chronic-cough-sources.md",
+      "items": [
+        {
+          "locator": "ERS 2020 guideline, Figure 1: Cough assessment in adults; PMC6942543 author manuscript Figure F1",
+          "source_token": "ERS 2020 FIGURE 1",
+          "mode": "source_link",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6942543/figure/F1/",
+          "teaching_role": "把可逆藥物暴露的病史、初步胸片與肺功能，以及後續 treatable traits 放回同一個條件式診斷流程，避免把問藥與 spirometry 誤認為互斥。",
+          "scope_limit": "原圖是成人慢性咳嗽一般路徑，不能將全部分支當成 Q46 個案必要檢查，也不替代個別患者的藥物適應症、警訊與臨床評估。",
+          "why_link_instead": "直接連結已核實可開啟的期刊作者原圖，保留合法來源及原圖細節；本站自行撰寫因果推理，不重新上傳、裁切或臨摹整張第三方流程圖。"
+        }
+      ]
     }
   }
 }
