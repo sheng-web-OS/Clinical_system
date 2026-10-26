@@ -75,7 +75,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 </section>
 </div>
 <div class="vte-atlas-inference"><strong>共同檢驗 ≠ 共同診斷</strong><span>D-dimer 可用於「適用演算法下的排除」，不能定位血栓；是否能停止追查，仍由各自 pretest probability 與檢查結果決定。</span></div>
-<figcaption>圖｜原創「決策問題分流」示意，**不是解剖圖，也不是 NICE 的完整診斷演算法**。它只對照預防與症狀後定位的判斷層級；不代表每名病人先預防、後出現 DVT、再發生 PE。疑似 PE 且血流動力學不穩定者不可等此穩定流程。DVT 初次 proximal US 陰性不等於 whole-leg 陰性，應依 <a href="https://www.nice.org.uk/guidance/ng158/chapter/recommendations">NICE NG158 §1.1</a> 的個別分支及註腳判讀。</figcaption>
+<figcaption>圖｜原創「決策問題分流」示意，<strong>不是解剖圖，也不是 NICE 的完整診斷演算法</strong>。它只對照預防與症狀後定位的判斷層級；不代表每名病人先預防、後出現 DVT、再發生 PE。疑似 PE 且血流動力學不穩定者不可等此穩定流程。DVT 初次 proximal US 陰性不等於 whole-leg 陰性，應依 <a href="https://www.nice.org.uk/guidance/ng158/chapter/recommendations">NICE NG158 §1.1</a> 的個別分支及註腳判讀。</figcaption>
 </figure>
 
 
