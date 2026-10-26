@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "baseline_ref": "main before 2026-10-27 visual audit",
-  "purpose": "These unchanged shapes are allowed as audited debt, NEVER certified instructional visuals.",
+  "baseline_ref": "main@0d8a9ac89a2279572143b61ef7cc1937857af1f1",
+  "purpose": "All current publicly committed figures at baseline are legacy_unreviewed, not approved; older revision drift was synchronized on 2026-10-27, including already-merged WPW/AF/WCT replacements.",
   "figures": {
     "content/xiaoma-reading/integrated/2026-10-21-dcm.md": [
       {
@@ -321,17 +321,23 @@
     ],
     "content/xiaoma-reading/integrated/2026-10-26-wpw-conduction-mechanism.md": [
       {
+        "id": "wpw-baseline-original",
+        "fingerprint": "61d31042d8c07ca8",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
         "id": "wpw-pathway-figure",
-        "fingerprint": "7ed40c3ffd8a2057",
-        "kind": "svg",
+        "fingerprint": "ff378e5191c8e94d",
+        "kind": "embedded_image",
         "status": "legacy_unreviewed"
       }
     ],
     "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md": [
       {
         "id": "af-ecg-evidence",
-        "fingerprint": "1774011463265394",
-        "kind": "html_css",
+        "fingerprint": "0afa4b6be4c79ce7",
+        "kind": "embedded_image",
         "status": "legacy_unreviewed"
       },
       {
@@ -344,8 +350,8 @@
     "content/xiaoma-reading/integrated/2026-10-26-wct-acls-decision.md": [
       {
         "id": "wct-decision-figure",
-        "fingerprint": "42b86237f58b9b1b",
-        "kind": "html_css",
+        "fingerprint": "011fc8370cf574d9",
+        "kind": "embedded_image",
         "status": "legacy_unreviewed"
       }
     ],
