@@ -44,7 +44,7 @@ ABG（arterial blood gas，動脈血氣）直接測量 **pH、PaCO₂、PaO₂**
 <div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>氧輸送</strong><p style="margin:0.45rem 0 0">Hb × SaO₂ → CaO₂；再結合 CO 推算 DO₂</p></div>
 <div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>組織的結果</strong><p style="margin:0.45rem 0 0">ScvO₂／SvO₂、灌流徵象與器官功能；皆有抽樣及推論限制</p></div>
 </div>
-<figcaption><strong>圖 1｜四個不能互換的觀察層次。</strong>本站原創因果整理，對照《Pocket Medicine》第九版 PDF 第 158–160 頁的 acid–base workup 與 Figure 4-1 <em>Acid–base nomogram</em>，**不是**原書圖表的轉描或完整診斷分區。只有在取得同期檢體與其他床邊證據後，才可連接這四個層次；[原書定位與核讀範圍](../cticu-abg-cabg-sources.md#pocket)。</figcaption>
+<figcaption><strong>圖 1｜四個不能互換的觀察層次。</strong>本站原創因果整理，對照《Pocket Medicine》第九版 PDF 第 158–160 頁的 acid–base workup 與 Figure 4-1 <em>Acid–base nomogram</em>，<strong>不是</strong>原書圖表的轉描或完整診斷分區。只有在取得同期檢體與其他床邊證據後，才可連接這四個層次；<a href="../cticu-abg-cabg-sources.md#pocket">原書定位與核讀範圍</a>。</figcaption>
 </figure>
 
 ## 第二問｜ScvO₂ 95%，為什麼仍不能宣稱 oxygen delivery 足夠？
@@ -138,7 +138,7 @@ ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧下降
 <text x="25" y="714">T3: 12–14 h  ·  T4: 18–20 h  ·  T5: 24–30 h</text>
 </g>
 </svg>
-<figcaption><strong>圖 2｜第三名 CABG 病人的術後 lactate、BE 與 ScvO₂。</strong>獨立按 Wardhana &amp; Kurniawaty 2025 年原始 <a href="https://macc.perdatin.org/index.php/my-journal/article/download/429/365/">Table 1（印刷 p278）</a> 重繪，非原著 Figure 1；原文 T0–T5 間距不相等，所以圖上的橫軸是**分類時點**而非等距時鐘。Lactate 與 BE 使用不同縱軸、不同單位，缺值 N/A 不插補。原著 Figure 1 多標示一個表格未定義的 T6，故沒有移入本站。</figcaption>
+<figcaption><strong>圖 2｜第三名 CABG 病人的術後 lactate、BE 與 ScvO₂。</strong>獨立按 Wardhana &amp; Kurniawaty 2025 年原始 <a href="https://macc.perdatin.org/index.php/my-journal/article/download/429/365/">Table 1（印刷 p278）</a> 重繪，非原著 Figure 1；原文 T0–T5 間距不相等，所以圖上的橫軸是<strong>分類時點</strong>而非等距時鐘。Lactate 與 BE 使用不同縱軸、不同單位，缺值 N/A 不插補。原著 Figure 1 多標示一個表格未定義的 T6，故沒有移入本站。</figcaption>
 </figure>
 
 | ICU 時點 | Lactate（mmol/L） | BE（mEq/L） | ScvO₂ |
