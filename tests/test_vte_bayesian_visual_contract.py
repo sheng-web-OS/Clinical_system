@@ -12,8 +12,11 @@ SOURCES = ROOT / "content/xiaoma-reading/vte-sources.md"
 class VTEDecisionFigureContract(unittest.TestCase):
     def test_only_one_meaningful_editorial_figure(self):
         article = ARTICLE.read_text(encoding="utf-8")
-        self.assertEqual(article.count("<figure"), 1)
+        self.assertEqual(article.count("<figure"), 2)
         self.assertIn('id="vte-d-dimer-bayes"', article)
+        self.assertIn('id="vte-native-diagnostic-pathways"', article)
+        self.assertEqual(article.count('class="vte-branch-svg"'), 2)
+        self.assertEqual(article.count('class="vte-branch-mobile"'), 2)
         self.assertIn("<figcaption>", article)
         for rejected in (
             "vte-shared-substrate",
