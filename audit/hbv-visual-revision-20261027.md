@@ -39,3 +39,7 @@
 - **醫學邊界**：正常 ALT 不排除 histologic activity 或 fibrosis；HBeAg-positive high DNA 不等於已確認 immune tolerance；無 cirrhosis 的 indeterminate 病人需考量指引適用性，而 cirrhosis 另有治療條件。對照 PM9 PDF 140–141 頁與 AASLD／IDSA 2025 指引既有來源頁。
 - **審核狀態**：已以獨立 HTML/CSS 原型在 Chromium 截圖目視 900／390／360px，三種 viewport 均無頁面水平溢出；未驗證 PR 實際站台、深色模式、網站整體 build/CI、真人理解成效或獨立醫師審查，這些狀態不可冒稱通過。保留原稿及第三方圖像的公開引用限制。
 
+
+### 手機比較版型修正
+
+實際 CI 建置的 360／390px 瀏覽器截圖揭露初版「兩張比較卡片」會垂直堆疊，讀者需要跨卡片記憶對照，不符固定 ALT 的反事實目標；在同一 PR 再改為 **HBeAg ± 並排、DNA 不同、ALT 同為正常** 的語義化比較表。此修正不把 HBeAg 陽陰性等同 immune state 或治療指示。修正後仍須重新驗收實際 CI 輸出與深色／手機版，不沿用舊截圖作通過證據。
