@@ -632,6 +632,50 @@
 }
 
 
+/* VTE: two true route-specific decisions. Authored SVG branches for desktop,
+   independent full-width readable paths on mobile, no publisher hotlinks. */
+.reading-prose .vte-native-diagnostic-pathways{margin:2.2rem 0;padding:20px;max-width:100%;min-width:0;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.vte-pathways-heading>span{display:block;font-size:12px;font-weight:800;letter-spacing:.07em;color:var(--brand)}
+.vte-pathways-heading>strong{display:block;font-size:22px;line-height:1.45;margin:8px 0}
+.reading-prose .vte-pathways-heading>p{font-size:14px;line-height:1.7;color:var(--muted);margin:0 0 16px}
+.vte-pathways-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.vte-pathways-panel{min-width:0}
+.vte-pathways-panel svg{display:block;width:100%;height:auto;max-width:850px;margin:0 auto}
+.vte-pathways-panel svg text{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+.vte-branch-mobile{display:none}
+.reading-prose .vte-native-diagnostic-pathways figcaption{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;line-height:1.85;color:var(--muted)}
+.vte-branch-mobile{font-size:14px;line-height:1.5;color:#16333e}
+.vte-m-title{font-size:16px;font-weight:800;line-height:1.5;margin-bottom:12px;padding:13px;border-radius:10px;color:#fff;background:#174f65}
+.vte-m-node{min-width:0;padding:11px 9px;border:1.5px solid #91b4c4;border-radius:8px;background:#eaf2f7;text-align:center;overflow-wrap:anywhere}
+.vte-m-node strong{display:block;font-size:14px;line-height:1.45;color:#18323e}
+.vte-m-node span{display:block;font-size:12px;line-height:1.5;margin-top:5px;color:#315363}
+.vte-m-focus{border-color:#205b78;background:#e5f2f8}
+.vte-m-ok{border-color:#347354;background:#e8f5ed}
+.vte-m-ok strong,.vte-m-ok span{color:#21543c}
+.vte-m-warning{border-color:#bb7e23;background:#fff3dc}
+.vte-m-warning strong,.vte-m-warning span{color:#5b4216}
+.vte-m-arrow{text-align:center;font-weight:750;color:#315368;padding:7px 0 9px}
+.vte-m-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;position:relative;margin:11px 0}
+.vte-m-pair>div{min-width:0}
+.vte-m-pair small{display:block;text-align:center;font-size:12px;line-height:1.5;color:#315368;font-weight:750;margin-bottom:6px}
+.vte-m-pair .vte-m-node{height:100%;box-sizing:border-box}
+.vte-m-branch-foot,.vte-m-other,.vte-m-alert{padding:11px 12px;border-radius:7px;font-size:13px;line-height:1.7;margin-top:10px;background:#f5f6f9;border:1px solid #d7dde4}
+.vte-m-other{border-left:4px solid #31708a}
+.vte-m-alert{background:#fcecea;border-color:#bb7770;color:#6b2d30}
+@media(max-width:850px){
+ .vte-pathways-panel svg{display:none}
+ .vte-branch-mobile{display:block}
+}
+@media(max-width:480px){
+ .reading-prose .vte-native-diagnostic-pathways{margin:1.6rem -4px;padding:12px}
+ .vte-pathways-heading>strong{font-size:18px}
+ .reading-prose .vte-pathways-heading>p{font-size:13px}
+ .vte-m-node{padding:10px 7px}
+ .vte-m-node strong{font-size:13px}
+ .vte-m-node span{font-size:12px}
+ .vte-m-pair{gap:7px}
+}
+
 /* Narrow reading figures: preserve full conceptual comparison rather than
    clipping the 760px desktop SVG. Only these two audited figures are altered. */
 .article .clinical-mobile-diuresis,.article .clinical-mobile-same-ph{display:none}
