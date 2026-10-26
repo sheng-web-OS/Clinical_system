@@ -11,7 +11,7 @@ Figure 1-3 的藥物反應節點是教學壓縮，不能單靠終止反應診斷
 ## 最新急救與 AF 指引
 
 1. [2025 AHA Adult Advanced Life Support](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)，§15 Wide-Complex Tachycardia、§16 Polymorphic VT、§17 Regular Narrow-Complex Tachycardia。核對 stable regular monomorphic WCT 中 adenosine 為 IIb；不穩定／irregularly irregular／polymorphic WCT 為禁忌；不明 WCT 不使用 verapamil／diltiazem；持續 polymorphic VT 需非同步電擊。
-2. [AHA 2025 官方 Tachyarrhythmia With a Pulse PDF](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf?sc_lang=en)。只提供官方連結；不把 2020 圖冒充目前版本。圖上的步驟需和 ALS 正文的 polymorphic／pre-excitation 限制一起讀。
+2. [AHA 2025 官方 Tachyarrhythmia With a Pulse PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf?sc_lang=en)。只提供官方連結；不把 2020 圖冒充目前版本。圖上的步驟需和 ALS 正文的 polymorphic／pre-excitation 限制一起讀。
 3. [2023 ACC/AHA/ACCP/HRS AF guideline](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)，§10.6 WPW and Preexcitation Syndromes；[開放全文副本](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/)。穩定 pre-excited AF 可用 IV ibutilide／procainamide 作為電復律替代；不穩定時電復律；AV nodal blocking agents（包括 amiodarone）列為有害。全文主站／PMC 本輪部分開啟遇網站驗證；已取得的指引推薦段落與小麻原頁一致，不宣稱已逐頁重讀整份 AF 指引。
 4. [2019 ESC SVT guideline](https://academic.oup.com/eurheartj/article/41/5/655/5556821)：accessory pathway、AVRT 方向與風險分類。SPERRI 與旁路有效不應期不是同一項量測；本文不提供個別 EP 風險計分。
 
@@ -37,7 +37,7 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 ## 2026-10-27｜WCT／ACLS 的核心原圖位置與主流程可見性
 
-**2025 AHA 正式主流程**：[Adult Tachyarrhythmia With a Pulse Algorithm，原始 PDF](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)。本文已逐項對照：初始 airway／氧合／監測／12-lead；是否由 persistent tachyarrhythmia **causing** shock、低血壓、意識改變、缺血性胸痛或 acute HF；是則進入 synchronized cardioversion，否則才進入 QRS ≥0.12 秒寬窄判斷；窄 QRS 的規則性限制；寬 QRS 僅 stable regular monomorphic 可考慮 adenosine；持續 refractory 需重新評估病因、能源、藥物及會診。
+**2025 AHA 正式主流程**：[Adult Tachyarrhythmia With a Pulse Algorithm，原始 PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)。本文已逐項對照：初始 airway／氧合／監測／12-lead；是否由 persistent tachyarrhythmia **causing** shock、低血壓、意識改變、缺血性胸痛或 acute HF；是則進入 synchronized cardioversion，否則才進入 QRS ≥0.12 秒寬窄判斷；窄 QRS 的規則性限制；寬 QRS 僅 stable regular monomorphic 可考慮 adenosine；持續 refractory 需重新評估病因、能源、藥物及會診。
 
 **正式圖像的權利決策（link_or_original_only）**：AHA [ECC 圖表重製許可規則](https://www.heart.org/en/about-us/statements-and-policies/guidelines-for-use-of-american-heart-association-emergency-cardiac-care) 與 [網站著作權規範](https://www.heart.org/en/about-us/statements-and-policies/copyright-permission-guidelines) 均有單獨重製／授權要求。正式 AHA PDF **只以原始官方連結提供**，不在 Clinical OS 上複製、鏡像、轉譯圖檔或宣稱已取得許可。公開 PDF 可閱讀不等於可重新發布原像素。
 
