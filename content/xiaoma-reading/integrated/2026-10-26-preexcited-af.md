@@ -82,7 +82,7 @@
 <path d="M36 228 h22 m18 0 h18 m18 0 h36" fill="none" stroke="#3d839a" stroke-width="3"/>
 <path d="M58 218 v20 M112 218 v20" stroke="#3d839a" stroke-width="3"/>
 <text x="92" y="264" text-anchor="middle" font-size="12" fill="#17536a">部分衝動無法下傳</text>
-<text x="268" y="160" text-anchor="middle" font-size="17" font-weight="700" fill="#934824">Accessory pathway</text>
+<text x="268" y="160" text-anchor="middle" font-size="15" font-weight="700" fill="#934824">Accessory pathway</text>
 <text x="268" y="183" text-anchor="middle" font-size="13" fill="#934824">僅當 AP 可順傳</text>
 <text x="268" y="204" text-anchor="middle" font-size="14" fill="#934824">短 ERP 可快速下傳</text>
 <path d="M205 228 h125" fill="none" stroke="#b86b46" stroke-width="2"/>
@@ -95,14 +95,18 @@
 <text x="180" y="388" text-anchor="middle" font-size="13" fill="#28584d">可產生 irregular、寬度不一的 QRS</text>
 <path d="M180 402 V419" fill="none" stroke="#a45539" stroke-width="2.5"/>
 <path d="M175 413 L180 421 L185 413" fill="none" stroke="#a45539" stroke-width="2.5"/>
-<rect x="16" y="425" width="328" height="106" rx="10" fill="#fff1ed" stroke="#b2634b" stroke-width="1.8"/>
-<text x="180" y="449" text-anchor="middle" font-size="17" font-weight="700" fill="#8b3829">若給 AV nodal blocker</text>
-<text x="180" y="473" text-anchor="middle" font-size="13" fill="#8b3829">AV node 受抑制 ≠ AP 同時被封住</text>
-<text x="180" y="496" text-anchor="middle" font-size="14" font-weight="700" fill="#8b3829">高順傳 AP → 極短 RR、VF 風險</text>
-<text x="180" y="517" text-anchor="middle" font-size="11" fill="#8b3829">條件式機轉示意，非定量 ECG 或用藥演算法</text>
+<rect x="16" y="425" width="328" height="112" rx="10" fill="#fff1ed" stroke="#b2634b" stroke-width="1.8"/>
+<text x="180" y="448" text-anchor="middle" font-size="17" font-weight="700" fill="#8b3829">反事實：給予 AV nodal blocker</text>
+<text x="91" y="471" text-anchor="middle" font-size="14" font-weight="700" fill="#17536a">AV node</text>
+<text x="263" y="471" text-anchor="middle" font-size="14" font-weight="700" fill="#934824">Accessory pathway</text>
+<path d="M40 482 H127 M90 474 L104 491 M104 474 L90 491" stroke="#256c86" stroke-width="3" fill="none"/>
+<path d="M211 482 H318 M309 476 L319 482 L309 488" stroke="#b86b46" stroke-width="3" fill="none"/>
+<text x="92" y="506" text-anchor="middle" font-size="13" fill="#17536a">傳導被抑制</text>
+<text x="265" y="506" text-anchor="middle" font-size="13" fill="#934824">仍可能順傳</text>
+<text x="180" y="526" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8b3829">若 AP 高順傳：極短 RR → VF 風險</text>
 </svg>
 </div>
-<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 手機版改成完整可視的雙通道與 AV nodal blockade 反事實，不需左右捲動。 有些 AF impulses 經 AV node，有些經 AP，有些產生 fusion；圖中不假設兩條路每次皆能傳導。危險來自具高順傳能力的 AP，並非所有 WPW pattern 均等風險。</figcaption>
+<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 手機版改成完整可視的雙通道與 AV nodal blockade 反事實，不需左右捲動。 有些 AF impulses 經 AV node，有些經 AP，有些產生 fusion；圖中不假設兩條路每次皆能傳導。危險來自具高順傳能力的 AP，並非所有 WPW pattern 均等風險。手機版反事實以「AV node 傳導被抑制、但 AP 仍可能順傳」的對照箭頭呈現；圖中脈衝數量不代表真實比率，不能替代 ECG 與急救演算法。</figcaption>
 </figure>
 
 ## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
