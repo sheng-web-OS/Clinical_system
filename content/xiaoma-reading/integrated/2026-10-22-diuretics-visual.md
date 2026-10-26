@@ -56,7 +56,28 @@ Threshold 使加倍劑量變得合理；ceiling 則說明為什麼加量不能�
 <text x="690" y="50" font-size="14" fill="#53675f" text-anchor="end">非線性示意 · 無臨床劑量刻度</text>
 </svg>
 </div>
-<figcaption><strong>圖 1｜Threshold 與 ceiling 是兩個不同的限速因素。</strong> 曲線為依小麻第九版 PDF 第 179–180 頁文字獨立繪製的概念示意，<strong>不是原書的截圖或實測數據圖</strong>。CKD、藥物分泌、腸道吸收及其他條件會改變真正抵達管腔的暴露。手機可左右滑動看完整圖。</figcaption>
+<div class="clinical-mobile-diuresis" role="group" aria-label="手機版 loop 劑量反應完整曲線，包含 threshold、有效區與 ceiling">
+<svg viewBox="0 0 360 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="loop-phone-title loop-phone-desc">
+<title id="loop-phone-title">Loop diuretic 劑量反應：跨過 threshold 後上升，接近 ceiling 後變平</title>
+<desc id="loop-phone-desc">橫軸為定性有效管腔暴露，縱軸為瞬時排鈉反應。左側幾乎沒有反應，中段陡峭上升，右側平台。無真實劑量刻度。</desc>
+<rect width="360" height="340" fill="#f8fbf9"/>
+<text x="21" y="29" font-size="16" font-weight="700" fill="#244944">瞬時排鈉反應 ↑</text>
+<path d="M44 57 V266 H337" fill="none" stroke="#2c4543" stroke-width="2.5"/>
+<path d="M53 253 C104 253 120 247 146 211 S198 117 233 98 S282 87 325 87" fill="none" stroke="#0a7770" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M141 62 V266" stroke="#b47e43" stroke-width="1.8" stroke-dasharray="5 5"/>
+<path d="M267 62 V266" stroke="#a46b55" stroke-width="1.8" stroke-dasharray="5 5"/>
+<circle cx="141" cy="217" r="5" fill="#b47e43" stroke="#fff" stroke-width="1.5"/>
+<circle cx="267" cy="89" r="5" fill="#a46b55" stroke="#fff" stroke-width="1.5"/>
+<text x="68" y="229" font-size="14" fill="#385650">反應不足</text>
+<text x="171" y="155" font-size="14" font-weight="700" fill="#0a7770">有效區</text>
+<text x="285" y="75" font-size="13" fill="#385650">平台期</text>
+<text x="141" y="289" text-anchor="middle" font-size="14" font-weight="700" fill="#995e26">Threshold</text>
+<text x="276" y="289" text-anchor="middle" font-size="14" font-weight="700" fill="#8a5743">Ceiling</text>
+<text x="190" y="320" text-anchor="middle" font-size="14" fill="#2c4543">管腔內有效藥物暴露 →</text>
+</svg>
+<p>這是同一條定性 S 型曲線的手機重排版；不是臨床劑量刻度或原書原圖。</p>
+</div>
+<figcaption><strong>圖 1｜Threshold 與 ceiling 是兩個不同的限速因素。</strong> 曲線為依小麻第九版 PDF 第 179–180 頁文字獨立繪製的概念示意，<strong>不是原書的截圖或實測數據圖</strong>。CKD、藥物分泌、腸道吸收及其他條件會改變真正抵達管腔的暴露。手機改用完整可視的定性曲線，無須橫向捲動。</figcaption>
 </figure>
 
 Gut edema 或不穩定的口服吸收，可能使藥物無法可靠地形成足夠 tubular concentration，改成 IV 是讓藥物更確實抵達。Renal insufficiency 則使分泌進入管腔的有效藥量下降，dose–response curve 因而向右移，需要更高劑量才能重新跨過 threshold。
