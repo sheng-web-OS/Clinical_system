@@ -25,7 +25,7 @@
 ### Q3 慢性腹瀉與 celiac disease
 
 - Rubio-Tapia A et al. *ACG Clinical Guideline Update: Diagnosis and Management of Celiac Disease.* 2023. [PMID 36602836](https://pubmed.ncbi.nlm.nih.gov/36602836/)：成人診斷，gluten 暴露與 tTG-IgA／切片前提。
-- [AAFP 整理 ACG 建議](https://www.aafp.org/pubs/afp/issues/2024/0100/practice-guidelines-celiac-disease.html)：total IgA 及 IgA deficiency、初步檢測的應用限制。
+- [AAFP 整理 ACG 建議](https://www.aafp.org/pubs/afp/issues/2024/0100/practice-guidelines-celiac-disease.pdf)：total IgA 及 IgA deficiency、初步檢測的應用限制。
 - Pocket Medicine 9E：**原書具體頁次、圖表、caption／footnote 尚待直接定位及視覺核查（HOLD）**。不可因教材正文寫得完整就宣稱原表已回收。
 - 非病人病歷：官方原題的 Hb 11.5、Ca 2.15 等為公開考題資訊；沒有將它們與任何自造真實患者混淆。
 
