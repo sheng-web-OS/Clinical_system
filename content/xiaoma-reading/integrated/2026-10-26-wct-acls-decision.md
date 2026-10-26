@@ -65,9 +65,9 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 <figure id="wct-decision-figure" class="diuretic-figure" role="group" aria-label="三道急救決策界線原創閱讀圖">
 <div class="diuretic-figure-head"><span>FIGURE 04 · THREE DECISION BOUNDARIES</span><strong>每個分叉都只回答一件事：現在已經知道什麼，還不能假設什麼？</strong></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px">
-<div style="background:#f5f8f7;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>01 · CAUSALITY</small><h3>Rhythm 正在造成失衡嗎？</h3><p>若高度懷疑 arrhythmia causing shock，不等病因全部定案才救援；若是代償性 sinus tachycardia，治 underlying shock。</p></div>
-<div style="background:#f5f8f7;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>02 · SHOCK MODE</small><h3>是哪種需要電擊的節律？</h3><p>有 pulse 且可同步的 unstable tachyarrhythmia：synchronized cardioversion；sustained polymorphic VT：立即 unsynchronized shock；無脈搏走 arrest 流程。</p></div>
-<div style="background:#f5f8f7;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>03 · DRUG BOUNDARY</small><h3>試探本身在這節律安全嗎？</h3><p>Stable、regular monomorphic WCT，adenosine 僅可考慮；若 irregularly irregular／polymorphic／unstable 或疑 pre-excited AF，不得照搬。</p></div>
+<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>01 · CAUSALITY</small><h3>Rhythm 正在造成失衡嗎？</h3><p>若高度懷疑 arrhythmia causing shock，不等病因全部定案才救援；若是代償性 sinus tachycardia，治 underlying shock。</p></div>
+<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>02 · SHOCK MODE</small><h3>是哪種需要電擊的節律？</h3><p>有 pulse 且可同步的 unstable tachyarrhythmia：synchronized cardioversion；sustained polymorphic VT：立即 unsynchronized shock；無脈搏走 arrest 流程。</p></div>
+<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>03 · DRUG BOUNDARY</small><h3>試探本身在這節律安全嗎？</h3><p>Stable、regular monomorphic WCT，adenosine 僅可考慮；若 irregularly irregular／polymorphic／unstable 或疑 pre-excited AF，不得照搬。</p></div>
 </div>
 <figcaption><strong>圖 4｜教學判斷軸，不是 AHA 官方演算法的複製品。</strong> 判斷並非一定按三格依序完成；危急狀況需並行辨認並立即處置。請對照 [AHA 2025 原始 Adult Tachyarrhythmia With a Pulse Algorithm](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf) 與更完整的 [ALS §15–16](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)。</figcaption>
 </figure>
@@ -96,4 +96,4 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 
 ---
 
-*本文以 2026/7/17 作者同名原稿的核心論證為起點，另製 AI 整合稿，未修改私人封存原稿。來源：[Pocket Medicine 9E，私人 PDF 第 67–68 頁](https://shop.lww.com/Pocket-Medicine/p/9781975220621)（書目網頁非私有 PDF）；[2025 AHA ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)；[2023 ACC/AHA/ACCP/HRS AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)；[Silverman et al. 2018 真實病例](https://journals.sagepub.com/doi/10.1177/2324709618802870)。原始 WCT 圖與 ACLS 圖已核讀；公開圖示僅採原創結構或合法來源連結。*
+*本文以 2026/7/17 作者同名原稿的核心論證為起點，另製 AI 整合稿，未修改私人封存原稿。來源：[Pocket Medicine 9E，私人 PDF 第 67–68 頁](https://www.wolterskluwer.com/zh-tw/solutions/ovid/pocket-medicine-15398)（出版社書目，不是私人 PDF）；[2025 AHA ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)；[2023 ACC/AHA/ACCP/HRS AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)；[Silverman et al. 2018 真實病例](https://journals.sagepub.com/doi/10.1177/2324709618802870)。原始 WCT 圖與 ACLS 圖已核讀；公開圖示僅採原創結構或合法來源連結。*
