@@ -56,18 +56,18 @@ class VisualQADiscoveryTest(unittest.TestCase):
 
     @patch("visual_qa_browser.subprocess.run")
     def test_only_modified_public_article_is_rendered(self, git):
-        git.return_value = subprocess.CompletedProcess([], 0, "content/lesson.md\\ncontent/private.md\\n", "")
+        git.return_value = subprocess.CompletedProcess([], 0, "content/lesson.md\ncontent/private.md\n", "")
         self.assertEqual(changed_pages(self.root, "origin/main"), ["reader-lesson"])
         self.assertIn("origin/main...HEAD", git.call_args.args[0])
 
     @patch("visual_qa_browser.subprocess.run")
     def test_unlisted_changes_do_not_trigger_fictitious_public_figures(self, git):
-        git.return_value = subprocess.CompletedProcess([], 0, "content/private.md\\n", "")
+        git.return_value = subprocess.CompletedProcess([], 0, "content/private.md\n", "")
         self.assertEqual(changed_pages(self.root, "origin/main"), [])
 
     @patch("visual_qa_browser.subprocess.run")
     def test_catalog_change_inspects_all_public_figures(self, git):
-        git.return_value = subprocess.CompletedProcess([], 0, "site/pages.json\\n", "")
+        git.return_value = subprocess.CompletedProcess([], 0, "site/pages.json\n", "")
         self.assertEqual(changed_pages(self.root, "origin/main"), ["reader-lesson"])
 
     @patch("visual_qa_browser.subprocess.run")
