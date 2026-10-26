@@ -51,6 +51,36 @@ Tissue transglutaminase（tTG，又稱 TG2）是小腸黏膜疾病相關的自�
 
 最值得保留的不是「麵粉＝celiac」這條記憶捷徑，而是：**腹瀉分類是辨認當下表現的工具；病因診斷必須靠特定暴露、宿主反應與組織疾病之間的證據鏈。**
 
+## 05｜把「檢驗陽性」拆成 Bayesian inference，而不是背 sensitivity
+
+檢驗的 sensitivity、specificity 是在已知疾病狀態下的 test characteristics；臨床卻反過來問 **P(disease | test positive)**。陽性預測值會依受檢族群的 pretest probability 改變。假設（**純數學教學，不是本病人的實際檢驗表現**）某檢測 sensitivity 95%、specificity 95%：
+
+- 在疾病盛行率 1% 的群體中，一萬人有 100 人真正罹病；約 95 位 true positive，而沒有疾病的 9900 人約 495 位 false positive；PPV = 95 / (95+495) ≈ **16.1%**。
+- 在疾病盛行率 10% 的高度懷疑群體中，一萬人有 1000 人罹病；950 位 true positive、450 位 false positive；PPV = 950/(950+450) ≈ **67.9%**。
+
+兩群的 test characteristics 完全相同，陽性測試後的結論卻不同。真實 tTG-IgA 尤其受 assay、抗體效價、取樣時是否吃 gluten 及總 IgA 水平影響，不能將上述假設數字宣稱為本題的診斷率。Q3 因**麩質相關症狀加上其他吸收異常線索**，原本就處於較高懷疑度的情境，tTG-IgA 陽性才特別有力。
+
+進一步說，**tTG-IgA 的倍數（×ULN）** 是重要但原題沒有提供的資訊。弱陽性與大於 10×ULN 在後驗機率上不能一概而論。2025 ESsCD 成人指引提出特定高效價、經適當驗證的臨床情境可考慮 non-biopsy diagnostic pathway；這不表示普通「陽性」兩字就足以直接確診。它也與多數需要組織或整合證據確認的傳統成人診斷路徑不同，須清楚標示版次與條件。
+
+## 06｜組織切片究竟能補足血清抗體的哪一塊？
+
+Celiac disease 的典型病理可包括 **intraepithelial lymphocytosis、crypt hyperplasia、villous atrophy**。這是**組織結構和免疫反應的直接證據**，不是再測一次血中抗體。取樣通常由 upper endoscopy 對 duodenum bulb 與 distal duodenum 取得多點 biopsies；病灶可呈 patchy distribution，因此部位與取樣數足以影響 false-negative risk。
+
+但 villous atrophy 本身仍不是 celiac disease 的唯一病因。對於血清與病理不一致的情境，需考慮免疫缺陷相關腸病、藥物（如 olmesartan-associated enteropathy）、特定感染與其他小腸疾病；不能將「病理可見絨毛萎縮」簡化為排除所有鑑別。**HLA-DQ2/DQ8** 在適當情境有很高的排除價值（陰性使 celiac disease 顯著不可能），但由於在一般人群並不少見，陽性通常不足作為確診證據。
+
+若病人已長期嚴格 gluten-free diet、血清學陰性且組織已恢復，臨床問題不再是「重抽一次是否陽性」，而是能否在風險可接受的條件下進一步做 HLA 排除，或由專科評估必要的 gluten challenge；不能不顧症狀與醫療風險直接要求病人大量食用 gluten。
+
+## 07｜為什麼營養與症狀不一定同步？
+
+絨毛吸收面積減少可能影響鐵、葉酸、脂溶性維生素與鈣代謝，但每項異常都有自己的差異診斷：
+
+- Hb 11.5 g/dL 只能說是貧血；沒有 MCV、reticulocytes、ferritin，不能自動改成 iron deficiency anemia。
+- Total calcium 2.15 mmol/L 需要檢查 **albumin／ionized calcium** 才能判讀實際生理性低鈣，並須留意 vitamin D、PTH、magnesium 等。這個數值是**支持可能有吸收問題的弱訊號**，而不是已診斷骨代謝疾病。
+- 正常 creatinine、Na、K 並不排除慢性小腸 disease。腎功能和電解質是**不同器官／水分平衡的觀察軸**，不應因其正常而否決黏膜疾病的可能。
+
+這解釋為何 Q3 的三種證據權重不同：麵粉相關性提供觸發方向；營養訊號提升器質性疾病疑慮；特異性抗體大幅重新排序鑑別。它們不是等值的「各一分」，也不是三項同時出現就必然無須確認。
+
+
 ## 來源與閱讀銜接
 
 - [考選部原題、官方答案及更正公告](../exam108-integrated-batch6-sources.md)，108（一）醫學（三）Q3，官方 B。
