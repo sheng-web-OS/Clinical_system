@@ -71,6 +71,7 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 </div>
 <div class="acls-m-warning"><strong>主流程之外的高風險界線</strong><span>Irregular／polymorphic WCT 不使用 adenosine；pre-excited AF 不套用一般 AV nodal blockers 或 IV amiodarone。持續 polymorphic VT 需非同步電擊；若無脈搏改走 cardiac-arrest algorithm。</span></div>
 </div>
+<div class="acls-rescue-footer"><strong>若初始介入仍無效：重新評估</strong><span>核對造成 tachyarrhythmia 的因素、是否需要調整下一次電復律能量、增加抗心律不整治療，以及專科協助；病情改變時重新回到最上游判斷。</span></div>
 <figcaption><strong>本站原創流程解讀｜2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm。</strong> 圖上流程為對照本文 WPW／WCT 的教學重構，不是 AHA 正式圖像、完整指引翻譯或個別病人處方。成人有脈搏是適用前提；主流程的藥物選項需連同 2025 ALS 的 WCT 禁忌和 2023 AF guideline 的 pre-excitation 限制閱讀。<a href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">官方 Figure 6 原圖（直接開啟）</a>；<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">2025 ALS 文字建議</a>。</figcaption>
 </figure>
 
