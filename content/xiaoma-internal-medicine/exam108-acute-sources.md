@@ -24,9 +24,9 @@
 
 | PDF 頁碼 | 確實讀取的部分 | 用在第四批的推理 | 已查核／未查核 |
 | --- | --- | --- | --- |
-| p137–138 | Abnormal Liver Tests：AST 不限於肝細胞，skeletal muscle injury 可使 AST 升高；heat stroke 與 rhabdomyolysis 亦列入異常轉氨酶鑑別 | Q61 不把 AST/ALT 升高武斷解讀為單純肝病 | **文字已讀，頁面像素目視待核** |
-| p176 | AKI 分類中「Pigments: Hb, myoglobin」及腎替代治療適應症（refractory electrolyte/acid–base、overload、uremia 等） | Q63 區分 pigment nephropathy 與透析真正目標 | **表格文字已讀；表格原圖、註腳的完整視覺查核待核** |
-| p177 | Rhabdomyolysis：氧化損傷、腎血管收縮、肌紅蛋白沉積；heme+ 卻無 RBC；補液以尿量目標調整；追蹤電解質與 compartment syndrome | Q63 重要生理骨架 | **完整相關文字已讀，頁面像素目視待核** |
+| p137–138 | Abnormal Liver Tests：AST 不限於肝細胞，skeletal muscle injury 可使 AST 升高；heat stroke 與 rhabdomyolysis 亦列入異常轉氨酶鑑別 | Q61 不把 AST/ALT 升高武斷解讀為單純肝病 | **PDF 第 137–138 頁原頁已實際目視；第 137 頁表格列／欄已核讀，Figure 3-3 的圖說亦可見，但不代表已取得公開權利** |
+| p176 | AKI 分類中「Pigments: Hb, myoglobin」及腎替代治療適應症（refractory electrolyte/acid–base、overload、uremia 等） | Q63 區分 pigment nephropathy 與透析真正目標 | **PDF 第 175–176 頁 AKI 病因表、上下列及治療註記已實際目視；只認證與此題相關的欄位，不宣稱全書圖表 QA 完成** |
+| p177 | Rhabdomyolysis：氧化損傷、腎血管收縮、肌紅蛋白沉積；heme+ 卻無 RBC；補液以尿量目標調整；追蹤電解質與 compartment syndrome | Q63 重要生理骨架 | **完整相關文字已讀；這一頁的圖像仍因原始檔渲染限制未取得** |
 
 本次檢索並核讀的 Pocket 9E 段落，**沒有找到足以直接教學 Q75 CPR airway 配合通氣、或 Q78 闌尾炎診斷效度的專章圖表**。在本文使用 AHA 和診斷研究的理由是承認原書覆蓋的邊界，不是假稱小麻對每個國考題都有一頁現成詳解。若後續完整圖像複查辨認出適用原表或圖片，應以原圖對讀為優先，但先遵守授權與手機完整性要求。
 
@@ -38,12 +38,14 @@
 
 ### Heat stroke（Q61）
 
-1. American College of Sports Medicine（ACSM）*Exertional Heat Illness: A Consensus Statement*（2023）。[PubMed／出版資訊](https://pubmed.ncbi.nlm.nih.gov/37036463/)。用於運動型中暑的辨認、核心溫度與快速降溫的原則；不能把一般感染性發燒的退燒處方直接移入。
+1. American College of Sports Medicine（ACSM）*ACSM Expert Consensus Statement on Exertional Heat Illness: Recognition, Management, and Return to Activity*（2023）。[PubMed／出版資訊](https://pubmed.ncbi.nlm.nih.gov/37036463/)。本次可核讀為 PubMed 摘要，支持運動型中暑的快速辨認、停止活動和全身降溫；直腸溫與具體降溫程序仍須依專門臨床資源逐條核對，不以摘要偽稱已全文核讀。
 2. ACSM, *Exertional Heat Stroke* 教育材料（相關臨床概覽與現場降溫）。最重要的是區分運動型中暑與熱衰竭的神經功能變化；臨床不應等待所有檢驗出現才開始冷卻。
 
 ### Rhabdomyolysis（Q63）
 
 3. American Association for the Surgery of Trauma Critical Care Committee. *Rhabdomyolysis: A Clinical Consensus Document*. **Trauma Surgery & Acute Care Open. 2022;7:e000836.** [全文](https://tsaco.bmj.com/content/7/1/e000836)。實際使用內容：LR 或 saline 可以用作輸液；起始 400 mL/hour 為可調整的建議而非固定醫囑；尿量目標約 1–3 mL/kg/hour、上限約 300 mL/hour；不支持例行 bicarbonate／利尿劑預防 AKI；沒有預防性 RRT 角色；若無尿而持續灌液會有容量負擔危險。本文以此限定 2019 原題的 200–300 mL/h，而不否定當年考選部的選擇題答案。
+
+4. Reis F, et al. *Severe rhabdomyolysis after exertional heat stroke treated with a hemoadsorber CytoSorb: lesson for the clinical nephrologist.* **J Nephrol. 2024.** [個案](https://doi.org/10.1007/s40620-024-01918-7)。真實病例 27 歲、熱暴露後下肢疼痛與茶色尿、CK 722,559 U/L、Cr 667 μmol/L、少尿及肌紅蛋白尿；僅作對照不同的肌肉與腎損傷表型，不以病例的血液吸附介入當作標準照護。
 
 ### Cardiac arrest ventilation（Q75）
 
@@ -58,10 +60,10 @@
 
 ## 四、尚未完成的出版驗收（不放進教學正文）
 
-這一批目前寫在**私人 GitHub 草稿分支**，尚未加入 `site/pages.json` 的正式出版清單。PDF p176 AKI table 與 p137 LFT patterns table 在檔案文字層已讀，**原圖像素、完整 caption／footnote 的視覺查驗尚未成功**。合法公開 Pocket 原圖、手機原尺寸可放大、Figure Gate 註冊、網站建置與正式部署皆不得預先宣稱完成。
+這一批目前寫在**私人 GitHub 草稿分支**，尚未加入 `site/pages.json` 的正式出版清單。PDF 第 137 頁 LFT patterns 原表及第 175–176 頁 AKI etiology 原表的**可取得原頁圖像已逐欄目視**；第 177 頁 rhabdomyolysis 段落已逐句文字核讀，但原頁圖像仍不可取得。已取得原圖並不等於獲准將受著作權保護的原表在公開網站複製。合法公開 Pocket 原圖、手機原尺寸可放大、Figure Gate 註冊、網站建置與正式部署皆不得預先宣稱完成。
 
 需要在合併正式網站之前：
-- 取得可目視驗證的 9E 對題原頁圖表／註腳；查明哪些表格對正文的理解不可少，並依法使用原圖或維持待發狀態。
+- 補齊第 177 頁影像（若可取得），並依已驗證的 p137、p175–176 重要原表，查明公開再製權及手機原尺寸閱讀方式；未完成前維持待發狀態。
 - 檢視原始 2019 文字與更正答覆、外部原始指南全文；獨立評估高風險醫學措辭，特別是中暑即刻降溫、輸液上限、bicarbonate 適用條件、進階氣道操作、早期闌尾炎的非典型表現。
 - 通過 EPQC 與原圖出版門檻後，才把三篇 lesson 與本來源頁加入 `site/pages.json`，並設定共同的 `exam` metadata：year_roc=108、sitting=1、stage=2、subject=醫學（三）、question_numbers 分別為 [61,63]、[75]、[78]。
 - 執行 `bash tools/build_site.sh`、單元測試、GitHub CI，最後以 Cloudflare HTTPS 驗證真實公開閱讀頁；草稿存在不等於任何一項驗收通過。
