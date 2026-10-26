@@ -51,3 +51,19 @@ Cloudflare Web Analytics site tag：`fec8c44afd484f3fa4670885ba10dce5`
 ## 後續擴充邊界
 
 追蹤閱讀完成率、跨文章點擊、測驗答題表現屬於事件層，需要額外埋點及相應資料處理。V1 不加入額外資料庫或追蹤識別；不收集姓名、學號、IP、病人／臨床個資，不以任何資料推斷個別讀者。
+
+## v1 數據契約與週報 QA（2026-10-26 補充）
+
+本網站採用最小化的 **Cloudflare GraphQL → 排程週報**，不需要新增瀏覽追蹤資料庫。從 `viewer.accounts.rumPageloadEventsAdaptiveGroups` 讀取資料，至少以 `siteTag=fec8c44afd484f3fa4670885ba10dce5` 及 `requestHost=sheng-clinical-system.pages.dev` 限定正式環境；預覽部署與轉址 alias 不列入正式站統計。
+
+1. 指標契約：`count` 為瀏覽事件數，`sum.visits` 為 Cloudflare 的 visits 指標；兩者均**不可**寫成獨立人數、學習完成率或理解率。維持原始期間與時區，首週（2026-10-26 至 11-01）為部分週，不做不對稱的週對週增幅。
+2. 路徑比對：GraphQL `requestPath` 常省略 `.html`，先以 / 開頭正規化並對照 `site/pages.json` 的 `output`（去掉 .html），再將首頁／導覽／年度詳解索引與單篇文章分開。只用實際的 catalog 對照，不憑猜測組題號。
+3. 來源：`refererHost=sheng-clinical-system.pages.dev` 為**站內導航**，非外部導流；`l.threads.com` 為 Threads 外部 referrer；空來源標註為「來源不明／可能直接開啟」，不宣稱都是 Direct。
+4. 裝置與機器：按 `deviceType` 觀察手機／桌機／平板比例。即使 `bot=0`，也無法排除作者自己打開網站、第三方自動化驗收或其他 JavaScript 瀏覽器；前期不得解讀為自然讀者數。
+5. 缺口揭露：Cloudflare 事件資料可能有抽樣、延遲、缺漏與低樣本風險，週報須標註。有資料不足時寧可回報「暫不可判讀」，也不編造原因或轉換率。不得為追蹤而收集姓名、IP、學號或病人個資。
+
+### 上線初始驗證快照（非正式成效報告）
+
+2026-10-26 正式上線後的 GraphQL 即時快照：**51 pageview events、22 visits**；當中 `/xiaoma-internal-medicine` 目錄入口有 29 次瀏覽（不是 29 名讀者），`/xiaoma-exams` 年度詳解索引有 7 次。依裝置分：mobile 25、desktop 24、tablet 2（分母為 51 個事件）。依 referer 分：本站內跳轉 29、`l.threads.com` 14、來源不明 8（均為事件數）。資料包含可能的驗收與作者自測，**只能驗證收數鏈路、閱讀入口與手機需求的觀察方向**，不能解讀為自然讀者量或文章的教學成效。初期數值隨資料累積而變動。
+
+這組資料顯示：**文章與導覽不能混排**。若只列「前五熱門頁」，會被題庫／目錄入口掩蓋。週報須先報站點入口頁，再獨立列正式教材文章；樣本不足時不給品質高低排名。
