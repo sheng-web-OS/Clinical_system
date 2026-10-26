@@ -41,16 +41,8 @@ jobs:
             FONT=/tmp/NotoSansCJKtc-Regular.otf
             curl --fail --location --silent --show-error --connect-timeout 10 --max-time 65 --retry 2 --retry-delay 2 \
               'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/TraditionalChinese/NotoSansCJKtc-Regular.otf' -o "$FONT"
-            python - <<'PY'
-          import hashlib
-          from pathlib import Path
-          data = Path("/tmp/NotoSansCJKtc-Regular.otf").read_bytes()
-          digest = hashlib.sha1(b"blob " + str(len(data)).encode() + bytes([0]) + data).hexdigest()
-          expected = "f9376bae1d421520f73a3c6c9d50b22f89548301"
-          if digest != expected:
-              raise ValueError(f"Noto CJK font origin checksum mismatch: {digest}")
-          print("PASS: checksum-pinned Noto CJK Traditional Chinese font",len(data))
-          PY
+            test "$(git hash-object "$FONT")" = "f9376bae1d421520f73a3c6c9d50b22f89548301"
+            echo "PASS: checksum-pinned Noto CJK Traditional Chinese font"
             install -d "$HOME/.local/share/fonts"
             cp "$FONT" "$HOME/.local/share/fonts/"
           fi
