@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: read
 concurrency:
   # Distinct pull requests must finish their own QA; only supersede stale
   # runs on the same branch or PR, not unrelated article reviews.
