@@ -55,7 +55,7 @@ Tissue transglutaminase（tTG，又稱 TG2）是小腸黏膜疾病相關的自�
 
 - [考選部原題、官方答案及更正公告](../exam108-integrated-batch6-sources.md)，108（一）醫學（三）Q3，官方 B。
 - Rubio-Tapia A et al. [ACG Guideline Update: Diagnosis and Management of Celiac Disease](https://pubmed.ncbi.nlm.nih.gov/36602836/). *Am J Gastroenterol*. 2023;118:59–76.
-- [AAFP 2024 ACG 指引摘要](https://www.aafp.org/pubs/afp/issues/2024/0100/practice-guidelines-celiac-disease.html)：tTG-IgA、total IgA、gluten 暴露及切片前提。
+- [AAFP 2024 ACG 指引摘要](https://www.aafp.org/pubs/afp/issues/2024/0100/practice-guidelines-celiac-disease.pdf)：tTG-IgA、total IgA、gluten 暴露及切片前提。
 - 對照近期閱讀主題〈找到腹瀉的類型，為什麼仍然沒有找到病因？〉：本文是其**由機轉分類轉入特定病因**的一道驗證題，而不是再寫一份獨立的腹瀉分類表。
 
 **出版狀態：私人草稿。** Pocket Medicine 9E 對題原頁、表格及註腳的逐頁視覺驗收尚待完成；未進公開 manifest。
