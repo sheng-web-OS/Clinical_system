@@ -595,8 +595,8 @@
       "status": "represented",
       "source_review": "content/xiaoma-reading/vte-sources.md",
       "reviewed_on": "2026-10-27",
-      "review_type": "source_trace_complete_visual_effectiveness_gate_requires_editorial_validation",
-      "rights_decision": "all_third_party_figures_linked_to_original_no_embedded_image",
+      "review_type": "ai_source_review_and_explicit_prepublication_editorial_visual_QA",
+      "rights_decision": "original_question-topology_figure_generated_from_medical_references; third_party_figures_are_source_links_only",
       "items": [
         {
           "locator": "American Heart Association What Is a Pulmonary Embolism 2026 source figure PDF p1 (IVC-right heart-pulmonary arteries)",
@@ -624,6 +624,15 @@
           "why_link_instead": "4-panel radiology graphic loses diagnostic detail on narrow mobile view and external hot-link is not verified; link the complete original figure with copyright context rather than displaying tiny unlabeled or missing images.",
           "teaching_role": "原始 Fig 5 的 A/B 肺動脈 CTPA 與 C/D 右側膝窩靜脈影像可放大核查，且和文章的解剖定位問題對位。",
           "scope_limit": "單一病例的共病血栓不能作為病程必然證明；color Doppler 非 compression US；圖片為 CC BY-NC 4.0，僅給原站連結。"
+        },
+        {
+          "locator": "NICE NG158 2023 full DVT/PE 2-level Wells, D-dimer and imaging decision branches; Pocket Medicine 9E p97-99",
+          "source_token": "NICE NG158",
+          "mode": "illustrated",
+          "anchor": "vte-decision-resolution",
+          "caption_token": "NICE NG158",
+          "teaching_role": "以明確分層的 clinical question diagram 在同一畫面比較 prophylaxis 的上游風險判斷、DVT 的腿部特異假說和 PE 的肺循環假說；各自通向不同 Wells 與影像目標，故圖像增量為判斷解析度而非血栓演變時間軸。",
+          "scope_limit": "圖為教學的問題拓樸並非完整診斷演算法，沒有 Wells 門檻或停止節點；必須回到 NICE 原始診斷流程看 D-dimer 陰性、影像陰性及 6-8 天 serial ultrasound 的條件；不適用休克或不穩定疑似 PE。"
         }
       ]
     },
