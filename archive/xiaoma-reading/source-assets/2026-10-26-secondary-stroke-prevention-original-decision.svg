@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1070" role="img" aria-labelledby="t d">
+<title id="t">Secondary stroke prevention：治療適應症與出血風險是兩條平行問題</title>
+<desc id="d">先確認中風與病因證據。已確認 AF 或其他抗凝適應症，進行抗凝評估；符合非心因性中風條件，進行單抗或短期雙抗評估；病因未明時持續搜尋 AF，不以分數經驗性給 DOAC。所有路徑都要同時評估活動出血及 PUD 風險。</desc>
+<style>text{font-family:"Noto Sans TC","PingFang TC",sans-serif;fill:#152540}.h{font-size:28px;font-weight:700}.s{font-size:21px}.b{font-size:23px;font-weight:700}.note{font-size:18px;fill:#45566c}</style>
+<rect width="720" height="1070" rx="22" fill="#f7f9fc"/>
+<text x="35" y="57" class="h">不是「由弱到強」的藥物階梯</text>
+<text x="35" y="90" class="note">原創教學圖｜不是 Pocket Medicine 原圖</text>
+<rect x="36" y="125" width="648" height="104" rx="15" fill="#e7edfa" stroke="#91a7d1"/>
+<text x="64" y="167" class="b">① 確認 ischemic stroke</text>
+<text x="64" y="200" class="s">評估影像、發作時間、神經學缺損</text>
+<path d="M360 230 V274" stroke="#64748b" stroke-width="4"/><path d="M351 264 l9 11 9-11" fill="none" stroke="#64748b" stroke-width="4"/>
+<rect x="36" y="277" width="648" height="108" rx="15" fill="#fff" stroke="#c8d4e6"/>
+<text x="64" y="318" class="b">② 判讀機轉與獨立抗凝適應症</text>
+<text x="64" y="352" class="s">AF、心臟栓塞源、動脈／小血管病變</text>
+<path d="M360 385 V420" stroke="#64748b" stroke-width="4"/><path d="M350 410 l10 11 10-11" fill="none" stroke="#64748b" stroke-width="4"/>
+<rect x="36" y="429" width="648" height="154" rx="15" fill="#eaf5f4" stroke="#87c7bc"/>
+<text x="64" y="469" class="b">證實 AF／其他獨立抗凝適應症</text>
+<text x="64" y="506" class="s">→ 評估 anticoagulation 是否必要</text>
+<text x="64" y="540" class="note">再核對中風大小、出血轉化、藥物適用性</text>
+<rect x="36" y="601" width="648" height="154" rx="15" fill="#e8effa" stroke="#a9bce5"/>
+<text x="64" y="641" class="b">符合 noncardioembolic 路徑</text>
+<text x="64" y="678" class="s">→ antiplatelet：單藥或短期 DAPT</text>
+<text x="64" y="712" class="note">看 NIHSS、onset、IVT、狹窄與出血風險</text>
+<rect x="36" y="773" width="648" height="120" rx="15" fill="#fff2de" stroke="#d8b37a"/>
+<text x="64" y="815" class="b">病因仍未定／AF 只是懷疑</text>
+<text x="64" y="850" class="s">→ 追查機轉、rhythm monitoring</text>
+<text x="64" y="875" class="note">不能用 CHA₂DS₂-VASc 倒推 AF 或直接給 DOAC</text>
+<rect x="36" y="915" width="648" height="112" rx="15" fill="#ffece9" stroke="#d59f98"/>
+<text x="64" y="952" class="b">③ 各路徑平行檢查 bleeding risk</text>
+<text x="64" y="988" class="s">active bleeding？PUD／Hb／用藥／PPI？</text>
+<text x="64" y="1015" class="note">必要時先處理急性出血；不是先做胃鏡才決定病因</text>
+</svg>

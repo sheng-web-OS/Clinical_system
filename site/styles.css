@@ -368,3 +368,29 @@
 .article .atlas-entry a{font-weight:700}
 @media(max-width:780px){.article .atlas-logic-three,.article .atlas-entry{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:580px){.article .atlas-jumps,.article .atlas-logic{grid-template-columns:minmax(0,1fr)}.article .atlas-jumps{gap:8px;margin:1.1em 0 1.8em}.article .atlas-jumps a{padding:13px 14px}.article .atlas-logic>div,.article .atlas-entry>div{padding:13px 14px}.article .atlas-target{top:-40px}}
+
+
+/* Original mechanisms and diagnostic boundaries: responsive semantic figures. */
+.reading-prose .reasoning-figure,.reading-prose .vte-figure{margin:2.2rem 0;padding:1.35rem;border:1px solid var(--line,#d8dedb);border-radius:16px;background:var(--bg,#fbfcfa);overflow-wrap:anywhere;min-width:0;color:inherit}
+.reading-prose .reasoning-title,.vte-figure-heading strong{display:block;font-size:1.15rem;font-weight:600;line-height:1.6;margin-bottom:1rem;color:inherit}
+.reading-prose .reasoning-cards,.vte-branches,.vte-evidence-grid,.vte-image-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;min-width:0}
+.reading-prose .reasoning-cards>section,.vte-branches>section,.vte-evidence-grid>section,.vte-image-columns>div{padding:1rem;border:1px solid var(--line,#d8dedb);border-radius:10px;min-width:0;background:var(--surface,#ffffff)}
+.reading-prose .reasoning-cards p,.reading-prose .vte-figure p{font-size:.98rem;line-height:1.8;margin:.55rem 0 0}
+.reading-prose .reasoning-cards strong{font-size:1.04rem;line-height:1.65;display:block}
+.reading-prose .reasoning-figure figcaption,.reading-prose .vte-figure figcaption{font-size:.84rem;line-height:1.8;margin:1rem 0 0;color:inherit;opacity:.83}
+.conduction-node{margin-top:1rem;padding:.5rem;text-align:center;border:1px solid var(--line,#bdccca);border-radius:6px;font-weight:600}
+.conduction-paths{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;padding:.7rem 0}
+.conduction-paths>div{border-inline:2px solid #6e8c85;padding:.5rem;text-align:center;font-size:.96rem;line-height:1.75}
+.conduction-paths b,.conduction-paths span{display:block}
+.vte-figure-heading>span{display:block;font-size:.72rem;letter-spacing:.06em;margin-bottom:.5rem;opacity:.8}
+.vte-risk-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem}
+.vte-risk-row>div,.vte-center,.vte-common-background,.vte-step{padding:.9rem;border:1px solid var(--line,#d8dedb);border-radius:8px}
+.vte-risk-row span,.vte-center span,.vte-image-columns span{display:block;margin-top:.4rem}
+.vte-center,.vte-common-background,.vte-step{margin:1rem 0}
+.vte-center strong,.vte-common-background strong,.vte-step strong,.vte-image-columns strong{display:block;font-size:1.05rem;line-height:1.6}
+.vte-direction{text-align:center;font-size:1.5rem;line-height:1.2;margin:.5rem 0;color:#477a6d}
+.vte-figure small{display:block;font-size:.78rem;line-height:1.7;margin-bottom:.4rem;opacity:.85}
+.vte-figure-note,.vte-urgent-note{font-size:.93rem;line-height:1.8;margin-top:1rem;padding:.9rem;border-inline-start:3px solid #73978b}
+.vte-urgent-note strong,.vte-urgent-note span{display:block}
+.vte-image-columns{margin-top:.85rem}
+@media(max-width:680px){.reading-prose .reasoning-figure,.reading-prose .vte-figure{padding:1rem;margin:1.5rem 0;border-radius:10px}.reading-prose .reasoning-cards,.vte-branches,.vte-evidence-grid,.vte-image-columns,.vte-risk-row{grid-template-columns:1fr}.vte-flow-diverge{display:none}.reading-prose .reasoning-cards>section{padding:.9rem}}
