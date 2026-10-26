@@ -14,7 +14,7 @@ Q13 與 Q14 應視為同一個臨床問題的兩面：**我們究竟想知道肝
 
 **Grade** 描述炎症活動程度，**stage** 描述纖維化或結構病程，不可把「ALT 升得多」稱為 stage 高；也不可將「有 cirrhosis」推成今天必然有 ascites。
 
-## 第一問｜Q13：為什麼 0.5 cm 組織不是「看到肝臟」就足夠？
+## 第 13 題｜肝切片只有 0.5 cm，為什麼不夠？還能如何安全取樣？
 
 **108（一）Q13 官方答案 A（問錯誤）。** A 說活檢樣本至少 0.5 cm 即足夠；這太短。病理醫師不是只需看見一個肝細胞是否發炎，更需看**完整 portal tracts、lobules、central veins 與跨區域的纖維化橋接關係**。若小段恰好取到較健康或較病變的區域，可能低估／高估整肝的 stage。
 
@@ -34,7 +34,7 @@ Liver acinus 的 **zone 1** 靠近 portal triad（輸入端），**zone 3** 靠�
 
 肝硬化的 INR 也不能等同「真正流血風險指數」：肝臟同時合成 procoagulant 與 anticoagulant proteins，INR 主要表達部分 procoagulant 路徑，忽略 rebalanced hemostasis、platelet、fibrinogen、感染與腎衰竭。AASLD 2024 明確指出單純 INR 不適合當肝硬化的出血預測器，TJLB 和經皮活檢風險不同；**這也不代表所有嚴重 coagulopathy 都能無限制直接穿刺**。必須綜合出血風險、臨床目的、可用路徑、凝血機能及中心經驗。
 
-## 第二問｜Q14：FibroTest、transient elastography、MRE 測到的都叫 fibrosis 嗎？
+## 第 14 題｜FibroTest、VCTE 與 MRE，到底量到了什麼？
 
 **108（一）Q14 官方答案 B（問錯誤）。** B 宣稱像 FibroTest 這樣的血清標誌可對所有病因、所有級別作精準纖維化分期，過度擴張了工具的辨識能力。
 
