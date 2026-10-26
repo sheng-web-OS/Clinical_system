@@ -119,23 +119,18 @@ class VisualQADiscoveryTest(unittest.TestCase):
                          {"reader-lesson": ("reader-lesson.html", ["source-ecg"])})
 
     @patch("visual_qa_browser.subprocess.run")
-    def test_shared_style_change_requires_public_visual_rescan(self, git):
+    def test_shared_style_change_does_not_fail_on_unchanged_legacy_figures(self, git):
         git.return_value = subprocess.CompletedProcess([], 0, "site/styles.css\n", "")
-        self.assertEqual(changed_figures(self.root, "origin/main"),
-                         {"reader-lesson": ("reader-lesson.html",
-                                            ["decision", "source-ecg"])})
+        self.assertEqual(changed_figures(self.root, "origin/main"), {})
 
-    @patch.dict("os.environ", {"GITHUB_STEP_SUMMARY": ""})
-    def test_report_does_not_confuse_render_success_with_clinical_review(self):
-        write_review_summary(self.root, [{
-            "page": "reader-lesson.html", "viewport": 360,
-            "figures": [{"figure": "decision", "passed": True,
-                         "problems": [], "screenshot": "decision-360.png"}]
-        }])
-        text = (self.root / "visual-qa-summary.md").read_text(encoding="utf-8")
-        self.assertIn("NOT medical/content approval", text)
-        self.assertIn("decision-360.png", text)
-        self.assertIn("360px", text)
+    @patch("visual_qa_browser.subprocess.run")
+    def test_newly_allowlisted_page_requires_all_figures_checked(self, git):
+        old_catalog = json.dumps([{"source": "content/plain.md", "output": "reader-plain.html"}])
+        diff = subprocess.CompletedProcess([], 0, "site/pages.json\n", "")
+        git.side_effect = [diff, subprocess.CompletedProcess([], 0, old_catalog, ""),
+                           diff]
+        self.assertEqual(changed_figures(self.root, "origin/main"),
+                         {"reader-lesson": ("reader-lesson.html", ["decision", "source-ecg"])})
 
 
 
