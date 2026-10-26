@@ -27,6 +27,17 @@
 5. **保留完整文獻 ECG**：Silverman 2018 原始 ECG 以驗證過的 CC BY 4.0 原始像素使用，不以自生成 ECG 或缺檔占位圖替代。
 6. **生圖因果界線**：圖只描繪操作前提和流程，不能從「irregular wide QRS」確診特定心律，也不能由暫時 stable 推論排除 VT。
 
+## 2026-10-27 已完成的獨立瀏覽器畫面核驗
+
+GitHub Actions [run 40370585132](https://github.com/sheng-web-OS/Clinical_system/actions/runs/40370585132) 的 `primary-figure-visual-qa` artifact （artifact ID `12672117290`）由安裝 Noto CJK 字型的 Chromium／Playwright 產生，而不是無字型的 CLI 模擬圖。
+
+- Desktop CSS viewport **1440px**：整張 SVG 的條件分岔、YES／NO 箭頭、原圖入口、重症禁忌與 refractory reassessment 可見。首個框內的三段 SVG 文字以實際 `getBBox` 驗證不超框。
+- Mobile CSS viewport **390px**：另一套直式分支，真正 innerWidth=390、document.scrollWidth=390、figureWidth=390。
+- Mobile CSS viewport **360px**：innerWidth=360、document.scrollWidth=360、figureWidth=360，不需要橫向拖動。
+- 三個截圖經實際目視：繁體中文字、指引連結、紅色排除警訊、藥物禁忌及主流程分支可閱讀；沒有空白方框或被水平裁切的圖像內容。
+- 圖像被評價為能回答「從病人仍有脈搏／造成不穩定／QRS 形態到可選擇的急救操作」的遞進問題；若刪除它，讀者會失去跨段落難以直接比較的 YES／NO 操作脈絡。仍不能因此證明真人閱讀成效。
+- **審查類型：AI 圖文／來源對讀 + 自動瀏覽器截圖 + 模型目視**，不是獨立醫師同儕審查。公開時應如實保留此限制。
+
 ## 發布決策邊界
 
 - 單元測試、靜態連結、GitHub CI build 通過分別記錄，不互相代表。
