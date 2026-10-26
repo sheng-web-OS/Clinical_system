@@ -49,6 +49,17 @@ class ACLSPrimaryVisualTests(unittest.TestCase):
                      "pre-excited AF", "無脈搏"):
             self.assertIn(term.lower(), fig.lower())
 
+    def test_source_url_agrees_with_published_visual_audit(self):
+        rows = json.loads(PAGES.read_text(encoding="utf8"))
+        row = next(x for x in rows if x["source"] == SOURCE_KEY)
+        official_url = row["required_primary_visual"]["official_source_url"]
+        audit = json.loads((ROOT / "audit/figure-gate.json").read_text(encoding="utf8"))
+        review = audit["reviews"][SOURCE_KEY]
+        figure = next(x for x in review["items"] if x["anchor"] == "wct-acls-main-algorithm")
+        self.assertEqual(figure["original_source_url"], official_url)
+        self.assertIn(official_url, ARTICLE.read_text(encoding="utf8"))
+        self.assertIn(official_url, SOURCES.read_text(encoding="utf8"))
+
     def test_official_source_and_copyright_boundaries(self):
         s = SOURCES.read_text(encoding="utf8")
         for text in ("Guidelines", "copyright", "AHA", "link_or_original_only"):
