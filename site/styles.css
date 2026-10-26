@@ -508,3 +508,45 @@
  .hbv-signal-link{width:calc((100% - 27px)/2);font-size:12px}
  .hbv-signal-link>small{font-size:11px}
 }
+
+/* VTE replacement: anatomy and source evidence, not synthetic text-box flowcharts. */
+.reading-prose .vte-evidence-figure{max-width:100%;margin:2em 0;padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow-wrap:anywhere}
+.reading-prose .vte-evidence-figure h3{font-size:1.18rem;line-height:1.5;margin:0 0 18px;color:var(--ink)}
+.reading-prose .vte-evidence-figure figcaption{font-size:.78rem;line-height:1.8;color:var(--muted);border-top:1px solid var(--line);margin:20px 0 0;padding-top:13px}
+.vte-path-plate{display:grid;grid-template-columns:minmax(0,42%) minmax(0,1fr);gap:20px;align-items:start}
+.vte-path-plate .vte-anatomy{display:block;max-width:100%;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:white}
+.vte-path-plate img{display:block;max-width:100%;width:100%;height:auto}
+.vte-path-steps{display:flex;flex-direction:column;gap:13px;padding:0 0 0 14px;border-left:3px solid var(--brand)}
+.reading-prose .vte-path-steps p{margin:0;font-size:.89rem;line-height:1.7}
+.vte-path-steps b,.vte-path-steps span{display:block}
+.vte-path-steps b{color:var(--ink)}
+.vte-path-steps span{margin-top:3px;color:var(--muted)}
+.vte-path-noninevitable{display:block;line-height:1.65;font-size:.91rem;border-top:1px solid var(--line);padding-top:12px;color:var(--ink)}
+.reading-prose .vte-reading-contrast{padding:13px 15px;margin:18px 0 0;font-size:.88rem;line-height:1.8;background:var(--brand-light);border-left:3px solid var(--brand);border-radius:2px}
+.reading-prose .vte-guide-pair{margin:15px 0;font-size:.87rem;line-height:1.8}
+.reading-prose .vte-comparison-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.85rem;line-height:1.7;margin:0;max-width:100%}
+.reading-prose .vte-comparison-table th,.reading-prose .vte-comparison-table td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-align:top;overflow-wrap:anywhere;white-space:normal;min-width:0}
+.reading-prose .vte-comparison-table thead th{background:var(--brand-light);color:var(--ink)}
+.reading-prose .vte-comparison-table th:first-child{width:25%}
+.reading-prose .vte-radiology{display:block;max-width:100%;text-align:center}
+.reading-prose .vte-radiology img{display:block;width:100%;max-width:780px;height:auto;margin:0 auto;border-radius:4px}
+.vte-radiology-legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;border-bottom:1px solid var(--line);margin:0;padding-bottom:14px}
+.reading-prose .vte-radiology-legend p{font-size:.84rem;line-height:1.7;margin:12px 0 0}
+@media(max-width:650px){
+ .reading-prose .vte-evidence-figure{margin:1.5em -4px;padding:14px 12px}
+ .reading-prose .vte-evidence-figure h3{font-size:1.06rem;margin-bottom:12px}
+ .vte-path-plate{grid-template-columns:minmax(0,1fr);gap:14px}
+ .vte-path-plate .vte-anatomy{width:min(100%,290px);margin:0 auto}
+ .vte-path-plate img{height:auto}
+ .vte-path-steps{margin-top:2px}
+ .reading-prose .vte-comparison-table,.reading-prose .vte-comparison-table tbody,.reading-prose .vte-comparison-table tr{display:block;width:100%}
+ .reading-prose .vte-comparison-table thead{display:none}
+ .reading-prose .vte-comparison-table tr{margin-bottom:12px;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+ .reading-prose .vte-comparison-table th,.reading-prose .vte-comparison-table td{display:block;width:100%;padding:8px 11px;border:0;font-size:.84rem}
+ .reading-prose .vte-comparison-table th:first-child{width:100%;background:var(--brand-light);font-weight:700}
+ .reading-prose .vte-comparison-table td{display:grid;grid-template-columns:42px minmax(0,1fr);gap:9px}
+ .reading-prose .vte-comparison-table td:nth-child(2):before{content:"DVT";font-weight:700;color:var(--brand)}
+ .reading-prose .vte-comparison-table td:nth-child(3):before{content:"PE";font-weight:700;color:var(--brand)}
+ .vte-radiology-legend{grid-template-columns:1fr;gap:1px}
+ .reading-prose .vte-radiology-legend p{margin:8px 0 0}
+}
