@@ -349,3 +349,22 @@
  .article .pocket-source-shot .pocket-source-head{padding:10px 12px}
  .article .pocket-source-shot img{width:100%}
 }
+
+/* Unified clinical atlas: one problem-first relationship map and embedded reading routes. */
+.article .atlas-jumps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:1.6em 0 2.3em}
+.article .atlas-jumps a{display:flex;flex-direction:column;gap:6px;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:17px 18px;background:var(--surface);color:var(--ink);min-width:0}
+.article .atlas-jumps a:hover,.article .atlas-jumps a:focus-visible{border-color:var(--brand);background:var(--brand-light);outline-offset:3px}
+.article .atlas-jumps small{font-size:.69em;letter-spacing:.05em;color:var(--brand);font-weight:700}
+.article .atlas-jumps strong{font-size:.95em;line-height:1.45}
+.article .atlas-jumps span{font-size:.75em;line-height:1.5;color:var(--muted)}
+.article .atlas-target{display:block;position:relative;top:-75px;height:1px;visibility:hidden}
+.article .atlas-logic,.article .atlas-entry{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:1.45em 0 1.8em}
+.article .atlas-logic-three,.article .atlas-entry{grid-template-columns:repeat(3,minmax(0,1fr))}
+.article .atlas-logic>div,.article .atlas-entry>div{border:1px solid var(--line);border-top:3px solid var(--brand);border-radius:10px;background:var(--surface);padding:14px 15px;min-width:0;overflow-wrap:anywhere}
+.article .atlas-logic>div:nth-child(even){border-top-color:var(--accent)}
+.article .atlas-logic small,.article .atlas-entry small{display:block;color:var(--brand);font-size:.71em;line-height:1.5;letter-spacing:.02em}
+.article .atlas-logic strong,.article .atlas-entry strong{display:block;font-size:.9em;margin-top:6px;line-height:1.45}
+.article .atlas-logic p,.article .atlas-entry p{font-size:.78em;line-height:1.75;margin:8px 0 0;color:var(--muted)}
+.article .atlas-entry a{font-weight:700}
+@media(max-width:780px){.article .atlas-logic-three,.article .atlas-entry{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:580px){.article .atlas-jumps,.article .atlas-logic{grid-template-columns:minmax(0,1fr)}.article .atlas-jumps{gap:8px;margin:1.1em 0 1.8em}.article .atlas-jumps a{padding:13px 14px}.article .atlas-logic>div,.article .atlas-entry>div{padding:13px 14px}.article .atlas-target{top:-40px}}
