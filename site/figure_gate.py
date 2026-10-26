@@ -146,6 +146,37 @@ def validate_figure_gate(root: Path, pages: list) -> None:
                 caption_token = _require(item.get("caption_token"), "caption/source marker", source, 8)
                 if caption_token.casefold() not in caption_text.casefold():
                     raise ValueError("Figure audit caption omits source identity: " + source + " #" + anchor)
+
+                # Source-evidence figures are not fulfilled by prose cards, CSS
+                # illustrations, or synthetic ECG traces. Require checked-in
+                # primary image assets in the visual figure itself.
+                min_images = item.get("minimum_primary_images", 0)
+                if type(min_images) is not int or not 0 <= min_images <= 12:
+                    raise ValueError("Figure audit invalid minimum_primary_images: " + source)
+                if min_images:
+                    images = re.findall(r"<img\\b[^>]*>", match.group(1), re.I | re.S)
+                    primary = []
+                    for img in images:
+                        if not re.search(r'data-primary-evidence=["\\x27]true["\\x27]', img, re.I):
+                            continue
+                        src_match = re.search(r'\\bsrc=["\\x27]([^"\\x27]+)["\\x27]', img, re.I)
+                        alt_match = re.search(r'\\balt=["\\x27]([^"\\x27]+)["\\x27]', img, re.I)
+                        if not src_match or not alt_match or not alt_match.group(1).strip():
+                            raise ValueError("Figure audit primary ECG image lacks src or alt: " + source)
+                        src = src_match.group(1)
+                        # Only explicit, repo-held reader images qualify as verified
+                        # primary assets. Remote hotlinks may break or deny access.
+                        if not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9._-]*\\.(png|jpg|jpeg|webp)", src, re.I):
+                            raise ValueError("Figure audit primary ECG image is not a local asset: " + source)
+                        asset = root / "site" / "source_figure_images" / src
+                        if not asset.is_file() or asset.stat().st_size < 32:
+                            raise ValueError("Figure audit primary ECG image asset missing: " + src)
+                        primary.append(src)
+                    if len(set(primary)) < min_images:
+                        raise ValueError(
+                            "Figure audit PRIMARY_IMAGE_MISSING: " + source + " #" + anchor
+                            + " needs " + str(min_images) + " distinct original images; prose cards do not count"
+                        )
             else:
                 url = _require(item.get("url"), "direct original figure/table URL", source, 18)
                 if not url.startswith("https://"):
