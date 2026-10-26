@@ -24,6 +24,8 @@ HAS_DCM_RELEASE = (
 )
 if HAS_DCM_RELEASE:
     EXPECTED.add("xiaoma-reading-20260710-dcm.html")  # legacy reader redirect
+if any(p["output"] == "knowledge-atlas.html" for p in PAGES):
+    EXPECTED.add("xiaoma-plan.html")  # unindexed legacy alias, not a duplicate map
 if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
     EXPECTED.update(['assets/dcm-pv.webp','assets/dcm-secondary-mr.png','assets/dcm-ischemic-cmr.webp'])
 actual = {p.relative_to(DIST).as_posix() for p in DIST.rglob("*") if p.is_file()} if DIST.is_dir() else set()
@@ -100,6 +102,19 @@ if not errors:
         errors.append("Invalid search index: " + str(exc))
     if 'href="https://github.com/sheng-web-OS/Clinical_system"' in front:
         errors.append("Private repository direct link should not appear in public nav")
+
+    if "knowledge-atlas.html" in {p["output"] for p in PAGES}:
+        legacy_map = (DIST / "xiaoma-plan.html").read_text("utf8")
+        if 'http-equiv="refresh"' not in legacy_map or 'url=knowledge-atlas.html' not in legacy_map:
+            errors.append("Old learning-map route must redirect to the single clinical atlas")
+        if "xiaoma-plan.html" in [p["output"] for p in PAGES] or "xiaoma-plan.html" in (DIST / "site-index.json").read_text("utf8"):
+            errors.append("Retired map must not have a second public search/listing identity")
+        if 'href="xiaoma-plan.html"' in front or 'href="xiaoma-plan.html"' in (DIST / "knowledge-atlas.html").read_text("utf8"):
+            errors.append("Home and atlas may not promote duplicate learning map")
+        atlas_body = (DIST / "knowledge-atlas.html").read_text("utf8")
+        for target in ("dyspnea", "perfusion", "chest", "kidney", "infection", "time"):
+            if 'id="' + target + '"' not in atlas_body:
+                errors.append("Clinical atlas missing problem-first branch " + target)
 
     if HAS_DCM_RELEASE:
         # Release regression: the old DCM URL, homepage, library index, and
