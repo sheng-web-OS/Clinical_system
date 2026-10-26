@@ -713,6 +713,15 @@
           "caption_token": "ASH 2026",
           "teaching_role": "Expose the limits of SPEP, GGT and negative imaging; prevent false exclusion of AL amyloidosis from isolated negative SPEP.",
           "scope_limit": "SIFE/UIFE/sFLC are relevant to clinically suspected AL; these are not universal tests for isolated ALP elevation and do not replace biopsy typing."
+        },
+        {
+          "locator": "Doe-Williams et al. Case Reports in Gastroenterology 2020;14:271-278, PMID 32518538 original case ALP 85 IU/L vs liver biopsy specimen 95% involvement",
+          "source_token": "Massive hepatomegaly",
+          "mode": "illustrated",
+          "anchor": "fig-alp-amyloid-real-case",
+          "caption_token": "Doe-Williams",
+          "teaching_role": "Use a published real case with specimen-confirmed extensive AL amyloidosis and normal measured ALP to falsify the assumption that ALP scales linearly with infiltration burden; disclose sample-versus-whole-organ distinction.",
+          "scope_limit": "Single patient is not a sensitivity estimate; biopsy 95% refers to sampled specimen rather than 95% of the entire liver; medical meaning and typing require original pathologic context."
         }
       ]
     },
