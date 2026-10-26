@@ -37,13 +37,13 @@ class SourceFigurePhoneReading(unittest.TestCase):
         self.assertIn(".article .wpw-mobile-focus{display:grid", css)
         for name in ("wpw-crop-1", "wpw-crop-2", "wpw-crop-3"):
             self.assertIn(name, WPW.read_text(encoding="utf-8"))
-        self.assertIn("aspect-ratio:250 / 446", css)
-        self.assertIn(".article .wpw-crop img{position:absolute;top:0;", css)
+        self.assertIn("aspect-ratio:250 / 310", css)
+        self.assertIn(".article .wpw-crop img{position:absolute;top:-24.194%;", css)
         self.assertIn("translateX(-33.333%)", css)
         self.assertIn("translateX(-66.667%)", css)
         self.assertNotIn(".wpw-crop-1::after", css)
         self.assertNotIn(".wpw-crop-2::before", css)
-        self.assertIn("source annotation clipped vertically in mobile WPW crop",
+        self.assertIn("source teaching ROI is not aligned",
                       BROWSER_QA.read_text(encoding="utf-8"))
         self.assertIn("原始英文標題與條件改由上方標題", WPW.read_text(encoding="utf-8"))
         self.assertIn("max-width:none!important", css)
