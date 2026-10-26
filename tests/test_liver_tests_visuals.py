@@ -34,7 +34,7 @@ class LiverFigureRegressions(unittest.TestCase):
             self.assertAlmostEqual((alt / 40) / (alp / 120), expected)
         source = ARTICLE.read_text(encoding="utf-8")
         for signal in ("15×", "1.5×", "8×", "2×", "3×", "6×",
-                       "R = 10", "R = 4", "R = 0.5", "共用"):
+                       "R = 10", "R = 4", "R = 0.5", "共同使用"):
             self.assertIn(signal, source)
         self.assertIn("非真實病例", source)
 
