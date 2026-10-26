@@ -15,7 +15,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 兩者共享同一組生成條件，卻不一定依序成為同一名病人的兩個階段。
 
 
-**解剖路徑要先想清楚：** 靜脈血栓可能從下肢或骨盆靜脈脫落，經下腔靜脈、右心進入肺動脈，造成 pulmonary embolism。這是其中一種可能的栓塞過程，**不是每一個 DVT 都必然演變成 PE**。未能確認可直接閱讀的原圖入口，這裡不放失效的圖片連結。
+**解剖路徑要先想清楚：** 靜脈血栓可能從下肢或骨盆靜脈脫落，經下腔靜脈、右心進入肺動脈，造成 pulmonary embolism。這是其中一種可能的栓塞過程，**不是每一個 DVT 都必然演變成 PE**。
 
 這也解釋了第一個看似矛盾的地方：
 
@@ -58,7 +58,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 
 小麻第九版的 DVT *modified Wells* 使用三層分組：**≤0 分為 low、1–2 分為 moderate、≥3 分為 high**；小麻 PE 圖採簡化兩層：**≤4 分為 unlikely、>4 分為 likely**。但下方引用的 NICE NG158 對 DVT 採用另一套**兩層**分法：**≤1 分為 unlikely、≥2 分為 likely**；PE 則仍以 **≤4／>4** 分層。這不是哪本書算錯，而是不同版本的臨床決策規則；**不能把小麻 DVT 的「1–2 分 moderate」直接套到 NICE 的 unlikely 分支**，也不能把原書附的觀察機率當成對每位病人都成立的固定百分比。
 
-**可開啟的原始診斷流程：** [NICE NG158 DVT／PE 診斷流程 PDF（由 Thrombosis UK 保存的三頁副本）](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。**第 1 頁是 suspected DVT，第 2 頁是 suspected PE**，均保留 Wells、D-dimer、影像與停止分支及註腳。NICE 官網的直接 PDF 在部分環境會回傳 403，因此正文不再放該直連。**本文的 Bayesian 圖只示範陰性檢驗如何更新機率，不能代替完整診斷演算法**；兩套 Wells 都是疾病特異的 pretest probability，而非住院 thromboprophylaxis 風險分數。
+**可開啟的原始診斷流程：** [NICE NG158 DVT／PE 診斷流程 PDF（由 Thrombosis UK 保存的三頁副本）](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。**第 1 頁是 suspected DVT，第 2 頁是 suspected PE**，均保留 Wells、D-dimer、影像與停止分支及註腳。**本文的 Bayesian 圖只示範陰性檢驗如何更新機率，不能代替完整診斷演算法**；兩套 Wells 都是疾病特異的 pretest probability，而非住院 thromboprophylaxis 風險分數。
 
 所以小麻需要兩張不同的 Wells score。
 
@@ -178,4 +178,4 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 ---
 
-[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站撤回原有三張錯誤示意圖，保留以相同 LR−、不同前測機率說明陰性 D-dimer 殘餘風險的量化圖。原始診斷流程僅提供已確認可開啟的 NICE PDF 副本；AHA、JKMS 無法穩定直達的影像連結已撤除。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
+[來源、原書圖表與診斷例外](../vte-sources.md)。原書 PDF 第 97–100 頁的圖表與正文推理已核對；目前保留 Bayesian D-dimer 量化圖，完整的 DVT／PE 分流可由上方 NICE NG158 原始流程 PDF 閱讀。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
