@@ -4,13 +4,23 @@
 
 想像急救室的一次成人心搏停止。兩名救護者開始胸外按壓並以袋瓣面罩給氣；另一名醫師準備建立 advanced airway。當氣管內管成功置入後，若所有人還習慣性地做「壓三十下、停下來吹兩口」，他們雖然保留了原本熟悉的數字，卻沒有利用氣道已確立的機會減少按壓中斷。第 75 題問：依 **2015 AHA Guidelines**，哪種通氣敘述「較不適當」？官方答案 **C：氣管內管置入後仍維持胸外按壓／通氣 30：2**。
 
-## 先分清三個不同的臨床狀態
+## 第 75 題：先分清三個不同的臨床狀態
 
 呼吸停止與心搏停止不是同義詞。**有脈搏、沒有正常呼吸**的成人，目標是給足通氣並反覆確認是否仍有循環；這時不需要為了通氣而創造胸外按壓週期。**沒有脈搏、正在 CPR、尚無 advanced airway**，袋瓣面罩通氣常須短暫配合按壓間歇，成人急救者使用 30：2。**沒有脈搏、正在 CPR、已建立可用 advanced airway**，即可連續胸外按壓，通氣改以設定間隔獨立進行。
 
 這個分流既不是設備崇拜，也不是「插管比袋瓣面罩更高級」的排名。它處理的是正在發生的生理損失：胸外按壓所建立的冠狀動脈與腦部灌流高度依賴連續性，每一次停頓都需要時間重新建立灌流壓；另一方面，過度頻繁或過大潮氣容積的正壓通氣會升高胸腔內壓、影響靜脈回流，可能使本來已很低的前向血流更差。正確策略要在**足夠氧合與二氧化碳移除**、**不過度充氣**、**維持按壓連續性**之間求平衡。
 
 袋瓣面罩（bag-valve-mask, BVM）是用面罩密合口鼻，再擠壓袋體產生正壓通氣；在 CPR 當下若沒有進階氣道，通氣通常與 30 次壓胸後 2 次呼吸配合。Advanced airway 常指氣管內管或合適聲門上氣道，它改變了通氣與按壓的協作方式，但只有在位置與功能被確認時才成立。氣管內管需藉臨床評估及波形呼氣末二氧化碳監測等方式確認位置，不能因為看似已插入就直接假定通氣成功。
+
+<figure class="diuretic-figure" id="cpr-airway-transition">
+<div class="diuretic-figure-head"><span>FIGURE 01 · AIRWAY AND PERFUSION</span><strong>為什麼建立 advanced airway 後，壓胸節奏會改變？</strong></div>
+<div class="diuretic-steps">
+<div class="diuretic-step"><span>A</span><div><strong>有脈搏、呼吸停止</strong><p>不做胸外按壓；評估通氣、氧合及脈搏，成年人的救援呼吸一般每 6 秒一次</p></div></div>
+<div class="diuretic-step"><span>B</span><div><strong>無脈搏、尚無 advanced airway</strong><p>優先高品質 CPR／必要去顫；成人通常採 30 次胸外按壓配 2 次通氣</p></div></div>
+<div class="diuretic-step"><span>C</span><div><strong>無脈搏、advanced airway 已正確建立</strong><p>胸外按壓不中斷、獨立提供約每 6 秒 1 次通氣，並監測通氣是否有效</p></div></div>
+</div>
+<figcaption>依 2015 與 2025 American Heart Association 成人 CPR／BLS／ALS 建議整理的原創分流圖，**不是 AHA 原始演算法影像**；不能取代正式急救課程或本地實際處置流程。原題問 2015 年版本，不應混為 2025 年新題。</figcaption>
+</figure>
 
 ## 為什麼有 advanced airway 就不再停下來吹兩口？
 
