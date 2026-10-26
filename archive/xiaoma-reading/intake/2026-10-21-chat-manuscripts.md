@@ -1,6 +1,6 @@
 # 2026-10-21 對話直貼文章｜原稿接收清單
 
-狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、兩篇（Constipation、HBV ALT 訊號）已保存完整私人 source snapshot（未出版）、其餘十三篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
+狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、三篇（Constipation、HBV ALT 訊號、Cirrhosis）已保存完整私人 source snapshot（未出版）、其餘十二篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
 
 本清單是接收及搬遷追蹤，不是已完成醫學事實查核、已確認唯一最終版本的證明。原文保留在本次 ChatGPT 對話；僅已核對確實寫入 Git 原稿檔案者標為 `imported`；不同歷史版本仍可能待比較。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
 
@@ -9,7 +9,7 @@
 | 2026-07-28 | 同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？ | Status epilepticus 閱讀 | imported → `content/xiaoma-reading/originals/2026-07-28-status-epilepticus.md` |
 | 2026-07-26 | 糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？ | 藥物閱讀（Constipation） | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`；待版本／醫學／出版審查 |
 | 2026-07-24 | 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？ | 小麻閱讀（9E） | conversation_only |
-| 2026-07-23 | 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？ | 小麻閱讀（9E） | conversation_only |
+| 2026-07-23 | 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？ | 小麻閱讀（9E） | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-23-cirrhosis-user-supplied.md`；附圖文字審查 `2026-07-23-cirrhosis-figure-review.md`；待來源身分、原書完整頁次、臨床及公開授權驗收 |
 | 2026-07-21 | 找到腹瀉的類型，為什麼仍然沒有找到病因？ | 小麻閱讀（9E） | conversation_only |
 | 2026-07-21 | 同一顆 octreotide，為什麼既能止瀉又能促動？ | 藥理學精要閱讀 | conversation_only |
 | 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-diuretics.md` |
@@ -53,3 +53,8 @@
 ### 2026-10-26 增量回收（HBV phase → ALT 訊號）
 
 作者再貼出 2026-07-19 全文與一張〈Phases of Chronic HBV Infection〉表格圖片。**原稿逐字保存**於 `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-user-supplied.md`（首次保存 commit `e3dc0d941456a6473af32e33548f346c478399e7`）。已逐欄閱讀提供的表格截圖、記錄附件 fingerprint 與 2018/2025 指引門檻差異，詳 `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-figure-review.md`。圖片原始像素**仍僅在對話附件，未搬入 Git**，且尚未對回 Pocket Medicine 9E 原 PDF 完整頁次；不得把摘要當原頁驗收。這是 source snapshot，**並非**已公開的歷史原稿、醫學放行或合法原圖重製。系列閱讀順序維持 2026-07-18〈HBV phase，不是在替慢性肝炎分期〉→ 2026-07-19〈我們看見的是病程，還是病程留下的訊號？〉；前一篇仍另行回收，不能冒稱已保存。
+
+
+### 2026-10-26 增量回收（Cirrhosis 結構／臨床多軸）
+
+作者於 2026-10-26 對話提供 2026-07-23〈肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？〉全文，已原文保存到私有 source snapshot：`archive/xiaoma-reading/intake/2026-07-23-cirrhosis-user-supplied.md`。附小麻 CIRRHOSIS 章節截圖（984×1536 JPEG，SHA-256 `f2d6123cbaa9fe2a48789be3c7efd902d626f7cf9071082c83d9c5ee45232c19`）；已目視查讀定義、病因、理學、實驗室、檢查與預後欄位，核讀限制與新指引差異詳 `2026-07-23-cirrhosis-figure-review.md`。**圖片像素尚未存入 Git**。新增查核發現 Baveno VIII（2026-08-19 online）明確區分 histological cirrhosis 與 cACLD、門脈高壓與初次失代償，以及治療後臨床狀態改善與 recompensation；MELD 3.0 變數亦逐項核對。這是 **source_snapshot_archived**，不等於已確認 Facebook canonical 原文、公開文章、獨立醫學專家審查或原圖授權。待前一篇肝膽系列與完整 Pocket Medicine 原頁證據接續整合。
