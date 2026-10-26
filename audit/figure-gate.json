@@ -563,14 +563,14 @@
       "rights_decision": "mixed: Silverman ECG CC BY 4.0; AHA algorithm link_or_original_only; newly authored educational flow",
       "items": [
         {
-          "locator": "AHA 2025 Adult Tachyarrhythmia With a Pulse Algorithm (Figure 6, official PDF, signed source at cpr.heart.org); and 2025 ALS §15–16 plus 2023 AF §10.6 exclusions",
+          "locator": "AHA 2025 Adult Tachyarrhythmia With a Pulse Algorithm (Figure 6, official PDF, official PDF at www.heart.org); and 2025 ALS §15–16 plus 2023 AF §10.6 exclusions",
           "source_token": "Adult Tachyarrhythmia With a Pulse Algorithm",
           "mode": "illustrated",
           "anchor": "wct-acls-main-algorithm",
           "caption_token": "2025 AHA",
           "teaching_role": "Place the complete two-decision tachyarrhythmia-with-a-pulse branching logic immediately before discussing why causality, QRS width and adenosine eligibility are separate questions. Provide desktop flowgraph, mobile independent reading flow and prominent original official PDF, instead of hiding primary source in later ECG caption.",
           "scope_limit": "Original AHA image cannot be mirrored absent a license; reader diagram is new educational layout rather than the AHA original. Polymorphic VT, pre-excited AF, and pulseless arrest require exclusions shown below; stable WCT antiarrhythmic recommendations are not interchangeable with pre-excited AF management. Not a bedside substitute for current protocol.",
-          "original_source_url": "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
+          "original_source_url": "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
           "source_copyright_decision": "link_or_original_only"
         },
         {
