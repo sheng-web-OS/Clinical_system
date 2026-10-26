@@ -50,8 +50,18 @@ GitHub Actions run 40367245047 提供 PR 建置成品 `clinical-system-static-si
 
 這只驗收了 HTML 版面、內容對位、遠端圖片在**測試環境**失敗的退件；不是正式站 Cloudflare HTTPS 的圖像載入驗收，也不是獨立醫師同儕審查。
 
-## 2026-10-27 發布前恢復的唯一原創視覺：判斷問題分流圖
+## 2026-10-27 最終原創視覺：陰性 D-dimer 的 Bayesian 殘餘風險
 
-`vte-decision-resolution` 是自行編輯的 **clinical question topology**（並非病程、解剖或完整處方算法）。上半區只問無定位症狀時 VTE prophylaxis 與 bleeding-risk balance；中間分界是**問題層級切換**，不是「後來一定有症狀」的時間或病因箭頭；下半區把新出現的腿部症狀與心肺症狀分別連到 DVT-specific／PE-specific Wells 及不同的成像目標。各路徑可同時被啟動，不畫成 DVT→PE 必然先後；共享的 D-dimer 僅於適當前測機率下協助排除，不提供解剖定位。圖的角色是**顯示不能沿用相同診斷問題的解析度**，不是重排 Wells 計分表，也沒有偷畫陽性/陰性的停止節點。完整 decision nodes 必須回查 [NICE NG158 原流程](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 或其 [clinical recommendations](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
+**為何沒有採用上一版的判斷問題分流圖？** 獨立桌面與 360／390px 截圖顯示該圖的絕大部分資訊仍為彩色文字框，只是重新排版正文已有的「腿部症狀 → DVT Wells → ultrasound」與「心肺症狀 → PE Wells → CTPA」；尺寸合格但**認知資訊增量失敗**，因此撤回，不列為已通過視覺 QA。
 
-此圖的**可反駁編輯測試**：刪除它後，病理資訊仍可由文字得到，但讀者將不能在同一畫面直接比較「共同的風險介入層級」與「症狀出現後兩個解剖假說」，因此保留作為唯一原創視覺；若手機實際渲染後擁擠，應退件而非加長 caption 說服自己。舊三張卡片圖仍維持 FAIL，不能回退。
+本次保留的 `vte-d-dimer-bayes` 是有真正數量軸的 Bayesian illustration。目的是把「陰性檢驗不能脫離前測機率排除」從抽象敘述轉成可比的殘餘機率。採取**純假設**相同 negative likelihood ratio `LR− = 0.10`，示範兩組起始機率，不代表此 LR 為任何 assay 的已知固定性能：
+
+| 教學假設 | 陰性前機率 | pretest odds × 0.1 | 陰性後機率 |
+|---|---:|---:|---:|
+| A | 5% | (0.05 / 0.95) × 0.10 | 約 0.52356% |
+| B | 50% | (0.50 / 0.50) × 0.10 | 約 9.09091% |
+
+重點不是「0.5% 可停止、9.1% 一定要做某檢查」：**沒有設定通用停止門檻**。真實停止條件由各自 DVT／PE validated pathways、病人情境與 assay/cutoff 決定；NICE NG158 [完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 和 [原始流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 均為本篇核對來源。對沒有適用正式分層的情況或 hemodynamically unstable suspected PE，不能直接套用示意算式作處置決策。
+
+**來源身分：** Bayes odds 定理為通用數學恆等式；`LR− = 0.10` 是為隔離前測差異而自訂的示意條件，**不是從 NICE 讀取的 test accuracy，也不是原書 Figure**。高品質原始醫學圖仍使用 AHA 解剖 PDF、NICE DVT/PE 原始 flowchart、JKMS Fig. 5 真實病例來源定位；公網不重製未獲授權的 AHA/NICE 像素。先前三張不合格圖與新退回的雙分支文字卡均維持撤回，不能以檔案存在或 CI 綠燈重新入庫。
+
