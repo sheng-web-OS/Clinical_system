@@ -57,7 +57,7 @@ class SiteVisualQualityAudit(unittest.TestCase):
             "counterexample_check": "Checked conditions when inference fails.",
         }
         self.save_reviews()
-        with self.assertRaisesRegex(ValueError, "mobile_screenshot"):
+        with self.assertRaisesRegex(ValueError, "desktop_screenshot"):
             audit(self.root)
 
     def test_screenshots_are_not_approvable_by_unrelated_text_files(self):
