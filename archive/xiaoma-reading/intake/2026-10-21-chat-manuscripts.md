@@ -1,6 +1,6 @@
 # 2026-10-21 對話直貼文章｜原稿接收清單
 
-狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、兩篇（Constipation、HBV ALT 訊號）已保存完整私人 source snapshot（未出版）、其餘十三篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
+狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、三篇（Constipation、HBV ALT 訊號、Cholestasis）已保存完整私人 source snapshot（未出版）、其餘十二篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
 
 本清單是接收及搬遷追蹤，不是已完成醫學事實查核、已確認唯一最終版本的證明。原文保留在本次 ChatGPT 對話；僅已核對確實寫入 Git 原稿檔案者標為 `imported`；不同歷史版本仍可能待比較。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
 
@@ -15,7 +15,7 @@
 | 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-diuretics.md` |
 | 2026-07-20 | 胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-pancreatitis.md` |
 | 2026-07-19 | 肝臟被占據，為什麼最突出的卻是 ALP？ | 小麻閱讀（9E）；Cholestasis 續篇 | conversation_only |
-| 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | conversation_only |
+| 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-19-cholestasis-primary-secondary-user-supplied.md`；Figure 3-3 單張截圖已核讀，待全頁／醫學／權利／出版驗收 |
 | 2026-07-19 | 我們看見的是病程，還是病程留下的訊號？ | 小麻閱讀（9E）；chronic HBV 續篇 | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-user-supplied.md`；附表核讀紀錄 `2026-07-19-hbv-signals-figure-review.md`；待原書 PDF 頁次、授權／醫學審查與出版驗證 |
 | 2026-07-18 | HBV phase，不是在替慢性肝炎分期 | 小麻閱讀（9E） | conversation_only |
 | 2026-07-17 | 還不知道是什麼，憑什麼治療 | 小麻閱讀（9E）；WCT／ACLS | conversation_only |
@@ -53,3 +53,8 @@
 ### 2026-10-26 增量回收（HBV phase → ALT 訊號）
 
 作者再貼出 2026-07-19 全文與一張〈Phases of Chronic HBV Infection〉表格圖片。**原稿逐字保存**於 `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-user-supplied.md`（首次保存 commit `e3dc0d941456a6473af32e33548f346c478399e7`）。已逐欄閱讀提供的表格截圖、記錄附件 fingerprint 與 2018/2025 指引門檻差異，詳 `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-figure-review.md`。圖片原始像素**仍僅在對話附件，未搬入 Git**，且尚未對回 Pocket Medicine 9E 原 PDF 完整頁次；不得把摘要當原頁驗收。這是 source snapshot，**並非**已公開的歷史原稿、醫學放行或合法原圖重製。系列閱讀順序維持 2026-07-18〈HBV phase，不是在替慢性肝炎分期〉→ 2026-07-19〈我們看見的是病程，還是病程留下的訊號？〉；前一篇仍另行回收，不能冒稱已保存。
+
+
+### 2026-10-26 增量回收（Cholestasis）
+
+作者於 2026-10-26 對話提供 2026-07-19 全文及《Pocket Medicine》9E Figure 3-3 單張截圖。全文已原樣寫入私人 `archive/xiaoma-reading/intake/2026-07-19-cholestasis-primary-secondary-user-supplied.md`；逐分支與現行指引核對在 `audit/cholestasis-20260719-pocket9e-figure3-3.md`。對話 PNG 已目視核讀，惟**二進位附件尚未入 Git**；圖的全頁正文、印刷頁碼／腳註、權利、Facebook 最終版本與醫學審稿尚待核實。保持 HOLD；未加入 `site/pages.json`，不能宣稱已公開發布。
