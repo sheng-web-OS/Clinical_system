@@ -31,6 +31,12 @@ AI 原創圖可以補原書未展開的因果中介、時間序列或病例比�
 
 `site/visual_quality.py` 讀取公開 `site/pages.json` 所有頁面與每個 `figure`，統計 HTML 卡片／SVG／來源圖，對既有圖留下未驗收註記；若**新增或修改圖像**與 legacy 指紋不符，而 `audit/visual-qa-reviews.json` 沒有版本匹配的獨立審查、認知增量與反例說明、醫學界線及實際桌面／手機截圖，則 **build 直接 HOLD**。單純更換檔名／SVG、或生成圖片後自行說通過，不能當作品質驗收。替換為沒有 `figure` 的普通正文則不需要假裝有視覺增量。
 
+### 新圖的瀏覽器證據：避免舊截圖／錯尺寸冒充通過
+
+針對每張新或修改的公開 `<figure id=...>`，視覺審查除版本對應的醫學與教學反例敘述外，應保留**同一版本**的 360、390、1280px 三張真實瀏覽器 figure 截圖。圖像需與頁面上下文一起審視；截圖必須在瀏覽器完成圖片載入後擷取，不能以 CSS 宣稱響應式取代實際畫面。現行審查欄位為 `mobile_360_screenshot`、`mobile_390_screenshot`、`desktop_screenshot`，皆指向 `audit/visual-evidence/` 下的 PNG。
+
+`site/visual_quality.py` 提供 `screenshot_filename(page_source + "#" + figure_id, figure_fingerprint, viewport)` 產生檔名；檢查包含檔名的頁面／圖 id／版本關聯、PNG 標頭及像素尺寸不超出該 viewport。每張新圖另需 figcaption；原始影像必須有有效 `src` 與非空 `alt`，SVG 必須有 `<title>` 或 ARIA 名稱。這只擋掉**錯版、缺圖、缺標籤與明顯尺寸錯誤**；PNG 檔存在不證明檔案完整可讀，更不證明臨床推理正確。瀏覽器失敗的解碼、overflow、細字、斷裂決策分岔仍由真實視覺 QA 與獨立挑錯裁決。未完成時記 HOLD，不自行填入「approved」。
+
 這個自動 gate 的能力邊界十分清楚：它能阻止「未驗收的新圖上線」，但**不能以正規表示式自己判斷圖像是否科學正確或直觀**；需要專門的視覺審查（讀圖、圖文關係、使用情境）、實際裝置畫面，必要時獨立醫學覆核。已知舊圖可暫留公開頁面供既有讀者閱讀，但不得稱作已合格；修圖時即觸發門檻。
 
 ## 三種狀態及系統行為
