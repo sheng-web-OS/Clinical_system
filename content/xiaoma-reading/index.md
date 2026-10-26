@@ -42,6 +42,10 @@
 <a class="original-card" href="integrated/2026-10-26-constipation.md"><span class="original-date">便祕 · 明示虛構教學情境</span><strong>糞便已軟，未完成的是哪個環節？</strong><span>將內容物、推進、出口與藥物反應分開，再決定下一步。</span><span class="read-link">閱讀便祕 →</span></a>
 </div>
 
+## 從心衰竭走進術後 ICU：新的跨篇銜接
+
+既有[HF 四象限](originals/2026-07-12-heart-failure.md)回答 congestion／perfusion，[LVEDP 圖文整合](integrated/2026-10-23-hf-lvedp-figures.md)解釋壓力不等於容量；但到術後病人，仍要追問循環實際送出了多少氧。[CABG 術後 lactate／ScvO₂ 真實病例](../xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md)將這個問題接到氧輸送、酸鹼與可立即處理的外科危險。這是跨專科推理的下一層，不是另創一份知識地圖；完整先備與改判問題仍見[唯一臨床知識地圖](../clinical-os/index.md#perfusion)。
+
 ## 歷史原稿典藏
 
 以下保存原始文章的文字及論述歷史，**不是最新整合版的閱讀入口**。如欲閱讀心肌病變修訂稿，請由上方〈心肌病變〉文章進入。
