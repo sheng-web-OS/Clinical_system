@@ -30,7 +30,7 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 
 ## 同樣是要電擊，為什麼不能一律 synchronized？
 
-這是原稿需要加入 2025 指引後，最重要的安全限定。
+這是原稿需要加入 2025 指引後，最重要的安全限定。先開啟 [**2025 AHA 成人有脈搏心搏過速官方流程原圖**](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)，注意它適用於 **with a pulse**；再依下文區分 rhythm 是否造成不穩定、是否可同步，以及 polymorphic VT 這個不能照同一套同步電復律處理的例外。原圖由 AHA 官方提供，不在本站未經授權重製。
 
 如果病人 **有 pulse，且 unstable 的 WCT 屬於可同步辨識的單形態節律**，應迅速 synchronized cardioversion，鎮靜在可行時使用，但不能因此耽誤治療。若已是 **sustained polymorphic VT**，AHA 2025 要求 **immediate unsynchronized high-energy shock**：多變 QRS 可能使可靠的 R-wave synchronization 困難，拖延或誤同步增加風險。若失去 pulse，則不再使用「with a pulse」流程，而走 VF／pulseless VT cardiac-arrest／CPR 與 defibrillation 路徑。
 
@@ -64,10 +64,11 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 
 <figure id="wct-decision-figure" class="diuretic-figure" role="group" aria-label="實際病例 irregular WCT 與轉律後預激對照，連結 ACLS 決策界線">
 <div class="diuretic-figure-head"><span>FIGURE 04 · ECG BEFORE THE DIAGNOSIS</span><strong>原始 WCT 長這樣：不能從 QRS 寬度直接開藥</strong></div>
-<a href="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/b2fc7153-320e-4d2b-a28a-0443e25d3345/assets/images/large/10.1177_2324709618802870-fig1.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/b2fc7153-320e-4d2b-a28a-0443e25d3345/assets/images/large/10.1177_2324709618802870-fig1.jpg" alt="Silverman 2018 發作中的 irregular wide-complex tachycardia：RR 間距不規則、QRS 外觀及寬度不同" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig1.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig1.jpg" alt="Silverman 2018 發作中的 irregular wide-complex tachycardia：RR 間距不規則、QRS 外觀及寬度不同" loading="eager" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
 <p><strong>現在的判斷不是猜出 accessory pathway 位置。</strong> 這張 ECG 足以辨認「不規則＋QRS 寬度變異」，因此不能套用 stable regular monomorphic WCT 才可考慮 adenosine 的限定條件。尚未出現明確灌流衰竭時，也不能由 WCT 一詞直接推定一律需要電擊。</p>
 <p><strong>轉律之後才補上的資訊：</strong></p>
-<a href="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/ad05d429-0d11-4942-8d83-53da56dd71c1/assets/images/large/10.1177_2324709618802870-fig2.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/ad05d429-0d11-4942-8d83-53da56dd71c1/assets/images/large/10.1177_2324709618802870-fig2.jpg" alt="Silverman 2018 復律後 ECG：sinus tachycardia 合併 delta wave，支持 manifest pre-excitation" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig2.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig2.jpg" alt="Silverman 2018 復律後 ECG：sinus tachycardia 合併 delta wave，支持 manifest pre-excitation" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/">原始病例 Figure 1–3、圖說與完整臨床過程（PubMed Central）</a>。上圖為當下可得 ECG，下圖只在電復律之後才取得；**不能把事後 delta wave 當成當時必須先完成的診斷條件。**</p>
 <figcaption><strong>圖 4｜先判操作邊界，再補齊病因。</strong> 真實病例：Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB. 2018. <a href="https://doi.org/10.1177/2324709618802870">doi:10.1177/2324709618802870</a>；<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>；圖像未裁切或重繪。 第一張是治療前的證據，第二張是 100 J 同步電復律後的觀察；兩者不可倒置。2025 AHA <a href="https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">成人 tachyarrhythmia 官方演算法原檔</a>和<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">ALS 詳細建議</a>另行對照；原 AHA 圖未複製或冒稱本站重繪。</figcaption>
 </figure>
 
