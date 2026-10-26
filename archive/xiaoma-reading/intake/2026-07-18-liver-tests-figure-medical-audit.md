@@ -1,6 +1,6 @@
 # 肝臟檢驗｜原稿接收與原表逐項對讀（2026-10-26）
 
-**編輯身分**：2026-07-18〈肝臟檢驗，先告訴你病人在哪裡〉的使用者直接提供全文快照。完整原文見 [2026-07-18-liver-tests-user-supplied.md](2026-07-18-liver-tests-user-supplied.md)。**未確認 Facebook 公開發表版本；不可標為作者已發表 canonical 正稿。** 本檔是審查札記，不能覆蓋原文。
+**編輯身分**：2026-07-18〈肝臟檢驗，先告訴你病人在哪裡〉的使用者直接提供全文快照。完整原文見 [2026-07-18-liver-tests-user-supplied.md](2026-07-18-liver-tests-user-supplied.md)，已逐字轉存為 [作者確認的 canonical 原稿](../../../content/xiaoma-reading/originals/2026-07-18-liver-tests.md)。**2026-10-26 作者在對話中明確確認，該全文即當時 Facebook 正式發表最終版本（author-attested）；未取得可獨立核對的 Facebook URL，因此不能標為 externally verified。** 本檔是獨立審查札記，不得更動原文。
 
 **原書證據層級**：使用者在 2026-10-26 對話中另附一張《Pocket Medicine》第九版肝臟檢驗表的**局部截圖**，肉眼確認截圖內容（標題 `Tests of hepatic function`、`Patterns of LFTs` 及 `R-value`）。尚未取得可逐頁查核的完整 9E PDF 頁碼及相鄰腳註；PNG 僅保存在對話附件，**本 Git 分支未封存其原像素**。不可把以下文字對讀稱為已核對完整 Pocket Medicine 原始頁、亦不可公開轉載此截圖。
 
@@ -44,6 +44,6 @@
 - AASLD 2026, *Practice Guideline on adult liver failure*（2026 年版）：https://doi.org/10.1097/hep.0000000000001644 。急性肝衰竭早期辨認、緊急肝移植中心轉介，不宜等到所有定義完全成立才轉介。
 - AASLD 2025, *Defining and Managing Acute Liver Failure*: https://www.aasld.org/liver-fellow-network/core-series/back-basics/defining-and-managing-acute-liver-failure 。
 
-**發布判斷：HOLD。** 原文完成私人回收；尚未核對歷史刊本身分、完整 9E 原頁和圖表權利，也未為新整合稿建立正式 figure-gate evidence、AI medical QA 與網站 build/CI。此分支不修改 `content/xiaoma-reading/originals` 或 `site/pages.json`，不可宣稱公開網站已收錄。
+**發布判斷：HOLD。** 原文已完成私人回收並由作者確認為 Facebook 最終版本，現已逐字存入 `content/xiaoma-reading/originals/2026-07-18-liver-tests.md`。尚未自行對照 Facebook URL、核對完整 9E 原頁及圖表註腳與權利，也未完成公開整合版 figure-gate evidence、醫學 QA 和網站 build/CI。此分支**不修改** `site/pages.json`，不能宣稱公開網站已收錄。
 
 **視覺化構想（僅記意義，不複製原表）**：用兩幅彼此獨立的原創教學圖：① pattern 位置（以 R ratio 比較 normalized ALT vs ALP，另置 bilirubin 分型、非肝源排除）；② 同一病人隨時間變動的 AST/ALT 與 INR／bilirubin 並列圖，展示「injury 下降但 synthetic failure 進展」的不一致。正式繪圖時標示假設／模擬，不杜撰真實案例。
