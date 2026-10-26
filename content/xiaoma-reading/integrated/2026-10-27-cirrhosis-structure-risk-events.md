@@ -32,7 +32,7 @@ Pocket Medicine 第九版先把 cirrhosis 定義為 fibrosis、regenerative nodu
 <figcaption>本圖按不同臨床決策所需的證據自行建立，非 Pocket Medicine 原始表格。對讀 9E Library PDF pp.145–147 及 Baveno VIII／MELD 3.0 文獻；每列不代表疾病必經的發展階段。</figcaption>
 </figure>
 
-Baveno VIII 在 cACLD 特定族群提供 non-invasive criteria。例如 LSM ≤15 kPa 且 platelet ≥150×10^9/L 可在適用情境排除 CSPH（NPV >90%）；LSM ≥25 kPa 用於建立 CSPH 的條件有病因及 obesity 限制（例如 virus／alcohol-related 或 nonobese MASLD），不應跨疾病一律使用。LSM 測量須依共識遵循 fasting 條件，index ≥10 kPa 時應重複或結合其他可靠 NIT。這些界線協助決策，但不是以一組數字在所有個體直接宣告「有或沒有 histologic cirrhosis」。[1]
+Baveno VIII 在 cACLD 特定族群提供 non-invasive criteria。例如 LSM ≤15 kPa 且 platelet ≥150×10^9/L 可在適用情境排除 CSPH（NPV >90%）；LSM ≥25 kPa 用於建立 CSPH 的條件有病因及 obesity 限制（例如 virus／alcohol-related 或 nonobese MASLD），不應跨疾病一律使用。LSM 應在符合測量品質和生理條件下取得；若有活動性肝炎、肝鬱血或 cholestasis 等干擾因素，不能直接將 kPa 視為固定的病理 fibrosis stage。這些界線協助決策，但不是以一組數字在所有個體直接宣告「有或沒有 histologic cirrhosis」。[1]
 
 ## Q2｜兩個病人都有 varices，誰是 decompensated？
 
@@ -55,14 +55,20 @@ Baveno VIII 在 cACLD 特定族群提供 non-invasive criteria。例如 LSM ≤1
 
 Child–Pugh 同時納入 bilirubin、albumin、INR、ascites、encephalopathy；是兼具臨床描述與預後意義的工具，不可以說它「只描述症狀、完全不能預測死亡」。MELD 3.0 設計主要著眼短期死亡風險的預測，含 bilirubin、INR、creatinine、sodium、albumin、sex 與模型交互作用，不是只有三項生化檢驗的加總。[2] 不同評分反映不同終點及變數，不應互換。
 
-更關鍵的是 **recompensation 是臨床狀態的嚴格定義，不是分數下降的同義詞**。Baveno VIII 指出，病因已獲控制、在離開針對 ascites／HE 的治療後症狀仍持續解除、既往 variceal bleeding 無再發、相關條件維持 >6 個月，以及肝功能達 Child–Pugh A5/A6 的條件，必須綜合符合才能判定 recompensation。[1] 即使達成，並非宣稱 histologic cirrhosis 倒轉為正常肝，也不能停止適當的 HCC surveillance。
+更關鍵的是 **recompensation 是臨床狀態的嚴格定義，不是分數下降的同義詞**。依 Baveno VIII 7.4，recompensation 要求**同時**符合：病因已移除／控制；影像上 ascites 消失且不依靠為腹水使用的利尿劑；停用專為 HE 使用的 lactulose／rifaximin 等後仍無臨床 HE；如曾有靜脈曲張出血則沒有再出血（仍可使用 carvedilol／cNSBB）；這些臨床條件持續**超過 6 個月**；且肝功能改善至 Child–Pugh A5/A6 的範圍。這是一組綜合條件，不是單次低分或暫時沒有症狀就可判定。[1] 即使達成，並非宣稱 histologic cirrhosis 倒轉為正常肝，也不能停止適當的 HCC surveillance。
 
 此處最能看出最初原稿的價值：一個由結構定義的疾病，可以同時發生結構、壓力、功能、事件和預後彼此不同速的變化。臨床決策若將它們全部濃縮成「肝硬化比較嚴重了」一句話，就看不見**病人在哪個層次跨過了會改變行動的門檻**。
-\n\n[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#cirrhosis)\n\n---\n\n### 來源與驗收、仍待確認事項
+
+
+[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#cirrhosis)
+
+---
+
+### 來源與仍待確認事項
 
 [1] [Baveno VIII – Advancing consensus in portal hypertension](https://www.journal-of-hepatology.eu/article/S0168-8278%2826%2902778-9/fulltext), J Hepatol, online 2026-08-19；特別是 Panels 1, 3, 7。  
 [2] [Kim et al., MELD 3.0 (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8608337/).  
 [3] Pocket Medicine 9E, CIRRHOSIS, viewer PDF pp.145–147；**Child–Pugh Appendix 原表未完成核對**，未臨摹或宣稱原表全數驗收。  
 [4] 原稿及圖表稽核（私有封存）。
 
-**AI-integrated candidate / publication HOLD**：未取得 Facebook 原帖 canonical 確認、獨立醫學審查或部署批准；前述 Baveno VIII 門檻及 recompensation 須經逐條臨床校對後方可進入發布流程。
+**AI-integrated candidate / publication HOLD**：Facebook canonical 未確認不阻擋這份獨立整合稿，但沒有獨立醫學審查或部署批准；前述 Baveno VIII 門檻及 recompensation 須經逐條臨床校對後方可進入發布流程。
