@@ -681,3 +681,32 @@
 .reading-prose .alp-case-distinct{text-align:center;font-size:1.5rem;font-weight:700;color:var(--muted)}
 .reading-prose .alp-case-clinical-label{display:inline-block;padding:.24rem .45rem;border-radius:4px;border:1px solid var(--line);font-size:.76rem;font-weight:700}
 @media(max-width:680px){.reading-prose .alp-case-compare{grid-template-columns:minmax(0,1fr);gap:.35rem}.reading-prose .alp-case-distinct{font-size:1.25rem;line-height:1.2}.reading-prose .alp-case-compare section{padding:.75rem}.reading-prose .alp-case-compare section>strong{font-size:1.75rem}}
+
+
+/* Cholestasis Q3 evidence-updating bedside pathway: patient sequence, not a
+   clinical decision table. True radiology is linked, not republished. */
+.reading-prose .chol-story-intro{font-size:.92rem;line-height:1.75;padding:.6rem .8rem;background:var(--surface,#fff);border-left:3px solid var(--brand,#356a8d);border-radius:4px;margin:0 0 1rem}
+.reading-prose .chol-story-flow{display:flex;flex-direction:column;gap:0;min-width:0;max-width:100%;margin:1rem 0}
+.reading-prose .chol-story-stage{border:1px solid var(--line,#d8dedb);border-left:5px solid var(--brand,#356a8d);border-radius:12px;background:var(--surface,#fff);padding:1rem 1.1rem;box-sizing:border-box;min-width:0}
+.reading-prose .chol-story-urgent{border-left-color:#a56724;background:var(--surface,#fff)}
+.reading-prose .chol-story-target{border-left-color:#397e67;background:var(--surface,#fff)}
+.reading-prose .chol-story-kicker{color:var(--muted,#52646b);font-size:.77rem;font-weight:800;letter-spacing:.035em;margin-bottom:.3rem}
+.reading-prose .chol-story-stage h4{font-size:1.1rem;line-height:1.35;margin:0 0 .55rem}
+.reading-prose .chol-story-stage p{font-size:.91rem;line-height:1.7;margin:.45rem 0;overflow-wrap:anywhere}
+.reading-prose .chol-story-stage .chol-story-action{padding-top:.65rem;margin-top:.7rem;border-top:1px solid var(--line,#d8dedb)}
+.reading-prose .chol-story-arrow{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0;margin:.1rem 0}
+.reading-prose .chol-story-arrow span{font-size:.78rem;font-weight:800;padding:.32rem .65rem;background:var(--brand-light,#edf3f5);border-radius:6px}
+.reading-prose .chol-story-arrow b{font-size:1.3rem;line-height:1.25;color:var(--muted,#52646b)}
+.reading-prose .chol-story-alternate{border:1px dashed var(--muted,#52646b);border-radius:8px;padding:.75rem .9rem;margin-top:.85rem;font-size:.88rem;line-height:1.7;background:var(--surface,#fff)}
+.reading-prose .chol-real-ct{display:grid;grid-template-columns:minmax(0,1fr) 2rem minmax(0,1fr);gap:.75rem;align-items:center;margin:1rem 0}
+.reading-prose .chol-real-ct section{min-width:0;border:1px solid var(--line,#d8dedb);background:var(--surface,#fff);padding:1rem;border-radius:10px;box-sizing:border-box}
+.reading-prose .chol-real-tag{font-size:.74rem;font-weight:750;display:block;color:var(--muted,#52646b);margin-bottom:.4rem}
+.reading-prose .chol-real-ct section>strong{display:block;font-size:1.04rem;line-height:1.45}
+.reading-prose .chol-real-ct section p{font-size:.86rem;line-height:1.7;margin:.55rem 0 0;overflow-wrap:anywhere}
+.reading-prose .chol-real-divider{text-align:center;font-weight:900;font-size:1.3rem;color:var(--muted,#52646b)}
+.reading-prose .chol-figure-link{font-size:.88rem;line-height:1.65;overflow-wrap:anywhere}
+@media(max-width:620px){
+ .reading-prose .chol-story-stage{padding:.8rem .75rem}
+ .reading-prose .chol-real-ct{grid-template-columns:minmax(0,1fr);gap:.35rem}
+ .reading-prose .chol-real-divider{font-size:1.1rem}
+}
