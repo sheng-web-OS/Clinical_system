@@ -798,7 +798,7 @@
     "references": "xiaoma-reading-arrhythmia-sources.html",
     "required_primary_visual": {
       "anchor": "wct-acls-main-algorithm",
-      "official_source_url": "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
+      "official_source_url": "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
       "require_desktop_and_mobile_variants": true
     }
   },
