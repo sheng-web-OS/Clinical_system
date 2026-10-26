@@ -38,54 +38,94 @@ PBC 可以以 small-duct cholangiopathy 為重要病理主軸；某些 DILI 可�
 
 **PBC、PSC 與其他 intrahepatic causes 也不可用一個陰性檢查一筆勾銷。** AMA、其他自體抗體、IgG4、MRCP 及 biopsy 分別回答不同問題；是否使用及先後取決於臨床懷疑、現有結果與侵入風險，不是所有病人的固定套餐。若懷疑 cholestatic DILI，完整藥物（含中草藥、保健品）暴露時間軸比「有無上升的 GGT」更有病因鑑別力。
 
-## Q3｜何時「辨認類型」必須讓位給即時行動？
+## Q3｜US 沒有擴張、病人卻惡化：何時從尋找病因轉成安排引流？
 
-假設值班時接到一個 call：病人發燒，ALP 與 direct bilirubin 上升，血壓正在下降，護理師說病人「剛剛開始答非所問」。床邊 ultrasound 沒看到明顯膽管擴張。現在要回答的不是「這是哪一種 cholestasis」，而是三個不同問題：**膽道是不是感染源？患者有沒有因感染發生器官功能障礙？如果需要 source control，眼下要減壓到什麼程度、又該在多快的時間內做到？**
+這次不先背 TG18、ASGE 或 sepsis bundle。先把同一個**虛構、僅用來比較決策的值班情境**放在床邊；每次只增加一項資訊，問：**這項資訊改變的是「膽道感染的可能性」、「急救的急迫性」，還是「需要解除的解剖性病灶」？** 下文沒有將這個教學情境冒充為真實病例；真正的影像反例另用 Hong 等人的已發表 CT 個案核對。
 
-### 第一問：發燒＋ALP 升高，憑什麼說是 acute cholangitis？
+### 交班第一幕：ALP 升高、發燒，US 沒有看到膽管擴張
 
-不能。**Sepsis with cholestasis 不等於 biliary sepsis。** 全身感染本身即可產生 sepsis-associated cholestasis；肺炎、泌尿道感染或其他感染源，也可能與原有膽道疾病並存。真正要做的，是先把「發炎」「膽汁鬱積」「膽道影像」三類證據拆開，而不是讓 ALP 替膽管炎下診斷。[5]
+病人原先生命徵象穩定。你接到新的發燒通報，看到 ALP、direct bilirubin 升高；床邊 RUQ ultrasound 未見 ductal dilatation。這裡不應把「cholestatic pattern」直接改名為「ascending cholangitis」，但也不能因 US 陰性就退出膽道評估。
 
-TG18（Tokyo Guidelines 2018）以 **A：systemic inflammation**（發燒／畏寒或 WBC、CRP 等發炎證據）、**B：cholestasis**（黃疸或 abnormal liver tests）、**C：imaging**（膽管擴張，或看到結石、狹窄、膽道支架等致病線索）分類。**A＋（B 或 C）是 suspected；A＋B＋C 才滿足 definite 的診斷組合**。因此，這位病人發燒且 ALP 升高，若暫無 C 證據，可以是 *suspected cholangitis*，但不能冒充已符合 TG18 *definite*。反過來，如果 ultrasound 沒擴張、CT 卻看到 CBD stone，仍然可能有 C 證據：**C 不等於 duct dilation**。[5]
+用 TG18 的語言，**A** 是 fever／發炎反應，**B** 是 jaundice 或異常 liver tests，**C** 是影像上的膽管擴張**或**結石、狹窄、stent 等病因證據。**A＋（B 或 C）支持 suspected cholangitis；A＋B＋C 才符合 definite 診斷組合。**這位病人有 A＋B，尚無 C：臨床懷疑成立，病因尚未確認。[5]
 
-這裡有一個比虛構例子更有力的反證。Hong 等人 2012 年回顧 **93 名接受 CT 的 acute cholangitis 患者**，其中 **17 名沒有膽管擴張**；報告中一名 **54 歲女性**的未增強 CT 看見 distal CBD calcified stone，但 common hepatic duct 並未擴張。[8] 這不是說「17／93 就是所有膽管炎的無擴張盛行率」——這是經選擇的 CT 回顧性樣本；它能證明的是：**真正有膽道結石與膽管炎時，解剖擴張這個訊號仍可能缺席。** 也不能反向將每個 sepsis＋ALP 高的病人診斷為膽管炎。
+現在最有價值的不是把所有膽肝病因一次列完，而是**提高或降低「感染來源在膽道」的前測機率**：是否有右上腹痛、寒顫、黃疸或膽紅素快速變化、膽石及膽道支架史、近期 ERCP？同時是否有咳嗽、泌尿道症狀、腹膜炎徵象、導管感染線索？取得兩組適當血液培養、CBC／CRP、liver tests、腎功能及視情況 lactate；依整體感染嚴重度立即決定經驗性抗菌治療，培養不能成為延誤適時抗生素的理由。[5][6]
 
-問診時，近期 biliary stent／ERCP、膽石史、上腹痛、黃疸時間軸和其他感染症狀會改變膽源性前測機率；血液培養、CBC、bilirubin／ALP／AST／ALT、凝血、腎功能、lactate 和適當影像回答不同問題。培養應盡可能在抗生素前取得，**但不能因等待採檢、MRCP 或「膽道確診」而延後休克復甦與必要抗菌治療**。[5][6]
+**為何非膽道感染也能使 direct bilirubin、ALP 上升？** 在 sepsis-associated cholestasis，發炎介質及 endotoxin 可干擾 hepatocyte 的 NTCP、BSEP、MRP2 等膽酸攝取／排泄運輸，減少膽汁形成與運送；此時不必存在一顆堵住 CBD 的石頭。相反地，真正的 CBD stone／sludge 可形成間歇、局部或尚未出現可見擴張的流出障礙。**抽血看見的是輸送功能受干擾的結果，不能單獨告訴我們「外面有沒有東西堵住」。**[8][9]
 
-### 第二問：沒有看到擴張，為什麼仍需要先判斷 severe？
+所以在這一幕，若患者仍穩定、膽道病因未確認，後續以病史與其他感染源調整可能性，並在持續懷疑時考慮 CT、MRCP 或 EUS。**只有 isolated ALP elevation，沒有膽管炎／高風險結石證據者，不應直接走診斷性 ERCP。**[1][7]
 
-TG18 的 **severity grading 與 diagnosis 是兩張不同的表**。Grade III（severe）不是「bilirubin 最高」或「膽管最粗」，而是**急性膽管炎伴至少一項器官功能障礙**：例如意識改變、需要 norepinephrine 的循環障礙、PaO₂／FiO₂ <300、oliguria 或 creatinine >2.0 mg/dL、INR >1.5、platelet <100,000/µL 等。Grade II（moderate）則需符合五項條件至少兩項，例如異常 WBC、T ≥39°C、年齡 ≥75 歲、total bilirubin ≥5 mg/dL、低 albumin；其餘才是 Grade I。[5] **這些分級只在 acute cholangitis 的診斷情境中使用**，不可見到其他感染源造成的意識改變，就硬把它貼上 Grade III cholangitis。
+### 第二幕：同一個 US 結果，新的資訊是低血壓與意識改變
 
-如果現場病人確實有低灌流或休克，處置已經不能等著完整填完 TG18 表格。依 **Surviving Sepsis Campaign 2026**，對 probable／definite sepsis 或 septic shock 應立即給適當經驗性抗菌治療，理想上在辨認後一小時內；取得培養與測 lactate 應並行。對 sepsis-induced hypoperfusion／shock，初期以 crystalloid 復甦並反覆評估灌流與容量反應；必要時及早使用 norepinephrine 維持灌流。指引提出首三小時至少 30 mL/kg 的一般建議，**但個別心腎功能與容量負荷風險必須持續評估，不能把固定輸液量機械套用於每個病人**。[6] 這些是針對敗血症的急救，不表示已證實膽管為感染源。
+護理師再次來電：血壓下降，病人開始答非所問。**這一次變動的不是膽管影像，而是病人可能正在失去灌流與器官功能。** 下一步不再允許等完整膽道影像後才開始處理可能的 sepsis／shock：立即到床邊重新評估 airway、呼吸、灌流、意識、尿量，重複有意義的生命徵象與檢查；同時取得培養（不延誤治療）、測 lactate，依感染風險給及時的經驗性抗菌藥，評估輸液反應與容量負荷；持續低灌流時及早使用適當 vasopressor，聯絡上級與重症支援。[6]
 
-### 第三問：抗生素給了，何以還需要考慮 biliary drainage？
+此時不能寫成「US 陰性，因此可以等」，**也不能直接寫「severe cholangitis 已確診」**。TG18 的 Grade III 是*在 acute cholangitis 的臨床脈絡中*有器官功能障礙；其中循環標準牽涉升壓藥需求，並非單次低血壓就滿足。這位病人確實可能需要按 septic shock 立即救援，卻仍需同時找肺部、泌尿道、膽道等感染源。**救命處置的啟動門檻，不等於膽道確診門檻。**[5][6]
 
-若膽道受到阻塞、已形成感染性積液或無法充分流出，單靠血液中的抗菌濃度不能保證感染部位得到控制。Obstructed biliary system 可能伴隨管內壓上升、細菌／內毒素進入全身循環；**biliary drainage 是在處理持續的感染源與膽道出口，抗生素是處理感染本身，復甦則支撐已受損的循環**。三者不能互相取代。[2][5][8]
+最關鍵的值班行動是**兩條工作線並行**。第一線處理低灌流；第二線在病情允許時迅速尋找可能需要 source control 的病灶。若膽道史、laboratory trajectory 與臨床狀況使膽道來源高度可疑，要提早聯絡 GI／IR／麻醉團隊討論是否需要及可否安全減壓；不能把這一步誤解為「每個 septic shock＋ALP 高的人都要直接 ERCP」。影像檢查選擇取決於它能否及時改變處置：病人足夠穩定、還需要定位與找其他感染源時 CT 可有資訊增益；相對穩定且仍有 occult CBD stone 疑慮時可考慮 EUS／MRCP；**若已有高度可信的可減壓膽道感染源且病人持續惡化，額外檢查不應無限期阻礙感染源控制。**[2][6][7]
 
-但 **「需要考慮緊急 source control」≠「所有患者立刻做 ERCP」**。必須持續確認膽道來源機率、是否存在可減壓的病灶、患者能否承受 procedure，以及當地可動用的胃腸內視鏡、介入放射與麻醉資源。對明確或高度懷疑的膽道感染且持續惡化，應在急救過程中及早聯絡可執行引流的團隊；若最初 ultrasound 陰性但高度懷疑仍在，視生理穩定度選擇 CT、MRCP、EUS 等增加證據，**不應為等一張「漂亮的膽管擴張圖」而無限期延遲必要的 source control**。[2][5][7]
+### 第三幕：病人仍然不穩，新增影像卻看到 distal CBD stone
 
-<figure id="fig-cholangitis-urgency-clocks" class="reasoning-figure">
-<div class="reasoning-title">臨床決策圖 2｜三種必須並行、卻不能混成一個時間表的任務</div>
-<table class="release-matrix" aria-label="膽管炎疑似患者的診斷確認、敗血症急救與膽道減壓三個平行時間任務">
-<thead><tr><th scope="col">正在回答的問題</th><th scope="col">當下可進行的工作</th><th scope="col">什麼結果會改變下一步？</th></tr></thead>
-<tbody>
-<tr><th scope="row">是膽源性感染嗎？</th><td data-label="當下可進行的工作">TG18 A／B／C、膽石／支架史、評估其他感染源、培養與定向影像</td><td data-label="什麼結果會改變下一步？">影像有結石／狹窄，即使無 dilation，也使膽源性假說更有力；完全缺乏 C 證據時保留「suspected」而非逕稱 definite</td></tr>
-<tr><th scope="row">患者正在失去器官灌流嗎？</th><td data-label="當下可進行的工作">意識、血壓、尿量、氧合、lactate／renal function；必要的早期抗菌、輸液與 vasopressor</td><td data-label="什麼結果會改變下一步？">器官功能障礙與治療反應決定救援強度，不能等 C 證據或 ERCP 室空出才啟動</td></tr>
-<tr><th scope="row">有需要及時減壓的感染源嗎？</th><td data-label="當下可進行的工作">儘早與 GI／IR／麻醉協調可行的 source control；ERCP 通常優先，失敗／不可行時再評估替代路徑</td><td data-label="什麼結果會改變下一步？">休克持續或惡化提高急迫性；若生理不穩，先 drainage／stent，完整取石可待穩定再做</td></tr>
-</tbody>
-</table>
-<figcaption>依 TG18 的診斷／severity 分層、SSC 2026 敗血症處理、ASGE 2021 與 ESGE 2019 引流建議獨立繪製。三列是**並行任務**而非每次必經的串聯檢查單；虛構的臨床 call 不是研究個案。[2][5][6][7]</figcaption>
+假設後續影像在這位**同一個虛構教學病人**身上找到 distal CBD stone，膽管依舊沒有明顯擴張。請注意這次真正的轉折：**新證據是看到了造成阻塞的可能病灶，不是膽管終於變粗。** 如果同時仍有 TG18 的 A、B 證據，影像顯示 CBD stone 便可提供 C 類病因證據，支持 *definite* cholangitis 的診斷組合；但仍需結合全貌判斷這顆石頭是否真正能解釋當下感染。[5]
+
+在這個條件下，「現在應不應協調膽道引流」不再是抽象問題。若膽道感染高度可信、且已出現器官功能障礙或持續休克，應立即和可執行 drainage 的團隊規劃**盡早解除感染性膽道阻塞**。通常優先考慮 ERCP；若不可及、失敗或不適合，則由團隊依 anatomy 與風險評估 percutaneous 或其他替代途徑。[2]
+
+**為何抗生素不能取代引流？** 在阻塞的感染膽道，流出受限可能造成管內壓升高、膽汁與細菌滯留，並促進 cholangiovenous／cholangiolymphatic reflux。抗生素處理感染微生物、輸液與 vasopressor 暫時支撐循環，但它們沒有移除持續造成膽道感染的機械問題。Drainage 所改變的是感染源能否排出與膽道壓力條件；不表示所有 sepsis-associated cholestasis 都需要它。[2][8][9]
+
+若初次 ERCP 時仍生理不穩，還要把「完成減壓」和「完全取石」拆成兩個目標。ASGE 一般建議可承受時於首次 ERCP 合併取石；但對無法耐受較長處置的病人，可先 stent／nasobiliary drainage，之後再完成 definitive clearance。**先解除致命的感染源，不等於必須在休克中一次把所有解剖問題解決。**[2]
+
+<figure id="fig-cholangitis-decision-pivot" class="reasoning-figure">
+<div class="reasoning-title">決策圖 2｜同一位病人：只有「新證據」才應改變下一步</div>
+<p class="chol-story-intro">保持 <strong>ALP ↑、US 無膽管擴張</strong> 不變。往下看，每一幕只增加一項足以改變判斷的資訊。</p>
+<div class="chol-story-flow">
+<section class="chol-story-stage">
+<div class="chol-story-kicker">01 · 定位仍不確定</div>
+<h4>發燒 + ALP ↑，US 無擴張</h4>
+<p><strong>改變的判斷：</strong>TG18 A＋B → suspected；膽道來源仍須和其他感染源競爭。</p>
+<p class="chol-story-action">行動：培養／適當抗菌評估、找其他感染源、依風險選進階影像；不是直接 ERCP。</p>
+</section>
+<div class="chol-story-arrow"><span>新增證據：低血壓、意識改變</span><b aria-hidden="true">↓</b></div>
+<section class="chol-story-stage chol-story-urgent">
+<div class="chol-story-kicker">02 · 生理狀態改變</div>
+<h4>仍無擴張，但出現低灌流</h4>
+<p><strong>改變的判斷：</strong>需要立即處理 sepsis／shock；膽道病因仍未完全確定。</p>
+<p class="chol-story-action">行動：復甦、抗菌、器官支持與感染源搜尋<strong>並行</strong>，提早詢問是否存在可減壓病灶。</p>
+</section>
+<div class="chol-story-arrow"><span>新增證據：影像看到 distal CBD stone</span><b aria-hidden="true">↓</b></div>
+<section class="chol-story-stage chol-story-target">
+<div class="chol-story-kicker">03 · 病因證據改變</div>
+<h4>CBD stone 可見，duct 仍未擴張</h4>
+<p><strong>改變的判斷：</strong>影像提供 TG18 C 病因證據；膽道感染源更具體、可行動。</p>
+<p class="chol-story-action">行動：如果臨床支持膽道感染且仍不穩，協調盡早膽道減壓；是否同次取石依耐受性決定。</p>
+</section>
+</div>
+<div class="chol-story-alternate"><strong>反事實出口：</strong>若後續找不到支持膽道的證據，卻確認另一個感染源（例如泌尿道），則應轉向該感染源及相關處置；<strong>不能因 ALP 持續升高而自動 ERCP</strong>。</div>
+<figcaption>三幕是同一個<strong>明示為虛構</strong>的臨床情境，以 TG18、SSC 2026、ASGE 2021、ESGE 2019 為決策依據。[2][5][6][7] 這張圖刻意讓 US 結果保持不變，呈現「器官功能」與「影像病因」分別改變什麼；不是每位病人都必經這三幕，也不能作為獨立醫囑。</figcaption>
 </figure>
 
-### 第四問：「48 小時內 ERCP」到底是什麼意思？
+### 原始影像的反證：stone 可以存在，duct 卻沒有擴張
 
-這句話若脫離病情，反而很危險。**ASGE 2021** 對 cholangitis 建議 ERCP 優於 percutaneous drainage，並以 ≤48 小時對照 >48 小時作為證據分析與建議；其時間建議是 **conditional、very-low-certainty evidence**，不能讀成「任何患者都可以等到第 48 小時」。**ESGE 2019** 依 TG18 嚴重度提出：septic shock 儘快、建議 **12 小時內**；moderate cholangitis 約 **48–72 小時內**；mild 可按情境安排較非緊急的處置。[2][7] 不同文件的時間界線、比較族群及證據等級不同，**它們不是在比誰的單一數字更正確**。 **SSC 2026** 另外針對需要 source control 的 sepsis／septic shock，條件式建議盡早執行、理想上在辨認需源頭控制後約 **6 小時內**；這是**低確定性、跨感染源的一般建議**，不是「所有疑似膽管炎者六小時內一定要做 ERCP」的專科規則。[6] 因此真正可執行的交班，不是單報「48 小時」，而是說出目前 organ dysfunction、膽源性證據、要聯絡誰、能否引流及不能等的理由。
+上述第三幕是教學推演，但**無擴張不排除實際 CBD stone** 不是靠虛構故事成立的。Hong 等人（2012）回顧 **93 位接受 CT 的 acute cholangitis 患者**，其中 17 人未見膽管擴張。原文 **Figure 1 是一名真實的 54 歲女性**：(a) 未增強 CT 看見 distal CBD calcified stone；(b) 增強 CT 可看到 **common hepatic duct 並未擴張**，同時有 gallbladder stones。[8]
 
-現在再回到「血壓下降、意識變差」的病人。若膽管炎高度可能且存在持續需要減壓的感染源，優先順序是**立即抗菌與復甦，同步連絡急診／重症／內視鏡或介入團隊評估早期 source control**；不能排一張 48 小時後的 elective ERCP 當作完成處置。若初次 ERCP 時病人仍不穩定，**先以 stent 或 nasobiliary drainage 取得感染源控制**，可能比同次完成 sphincterotomy、碎石及結石完全清除更安全；當病況穩定、風險可接受時才考慮 definitive clearance。ASGE 的一般建議偏向在可承受時合併引流與取石，但對 **too unstable to tolerate extensive treatment** 明確保留減壓優先的例外。[2]
+讀原圖時先問：**第一張看到了什麼病因證據？第二張缺少了哪個影像訊號？** 前者是可見的 stone，後者是缺少 dilation；兩者沒有邏輯矛盾。TG18 的 C 可由 stone 支持，不要求一定先看到擴張；但原文**沒有提供這位 54 歲女性的休克數值、抗生素或 ERCP 時間線**，所以不能把她寫成上面那位虛構的不穩定病人。
 
-反過來，只有 ALP elevation、沒有臨床感染或需要膽道減壓之證據的穩定患者，不能因為看到這些急救建議就逕行 ERCP。這也是為什麼讀一張以 abnormal liver tests 為入口的流程圖時，**不能將「診斷上的未確定」當成延後敗血症治療的理由，也不能把「臨床上很危險」直接當成膽道病因已確認**。
+<figure id="fig-cholangitis-real-ct-evidence" class="reasoning-figure">
+<div class="reasoning-title">真實病例證據圖 3｜「病灶存在」與「膽管擴張」不是同一種影像結果</div>
+<div class="chol-real-ct">
+<section><span class="chol-real-tag">Hong 2012 · Figure 1a</span><strong>可見 distal CBD calcified stone</strong><p>未增強 CT 提供的是<strong>病因／部位</strong>證據；不是用膽管直徑猜測 stone 是否存在。</p></section>
+<div class="chol-real-divider" aria-hidden="true">≠</div>
+<section><span class="chol-real-tag">Hong 2012 · Figure 1b</span><strong>Common hepatic duct 未擴張</strong><p>增強 CT 缺少的是<strong>擴張這項徵象</strong>；不能推翻另一張 CT 已辨識到的 stone。</p></section>
+</div>
+<p><strong>研究對照的限制：</strong>無擴張組 n＝17、有擴張組 n＝76；ALP 平均約 316 vs 323 IU/L（p＝0.939），膽紅素平均約 4.58 vs 8.53 mg/dL（p＝0.001）。這是受選擇的回顧性兩組數據，<strong>不是</strong>用 ALP 排除 obstruction 的診斷敏感度，也不能用 p 值證明兩組相等。[8]</p>
+<p class="chol-figure-link"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3611727/">檢視 Hong et al. 原始全文與 Figure 1(a)(b) CT 影像</a></p>
+<figcaption>此圖僅重組作者報告的<strong>兩項不同影像證據</strong>，未重製 © British Institute of Radiology 原始 CT 像素。原論文 Figure 1 可在所連結全文中檢視；年齡、病因、影像描述與組別數據皆以原文為準。[8]</figcaption>
+</figure>
 
-到這裡，Pocket Medicine Figure 3-3 在急性病人身上的真正價值才完整浮現：**biochemical pattern 讓我們知道哪條生理路徑出現訊號；影像讓解剖定位的假說變得強或弱；器官灌流與感染源可否控制，才決定接下來幾分鐘到幾小時不能等待什麼。** 這三個問題需要同時更新，任何一個都不應僭越成另外兩個的確診。
+### 最後才談時鐘：為何不能對所有病人說「48 小時內 ERCP」？
+
+當已辨認或高度懷疑**需要解除的膽道感染源**，才需要討論 source control 的時間與範圍。ASGE 2021 比較的是 ≤48 與 >48 小時，引流時間建議屬 **conditional、very-low-certainty evidence**；不是休克病人可以等滿 48 小時的保證。ESGE 2019 針對 septic shock 建議盡快、**12 小時內**引流；moderate cholangitis 建議 **48–72 小時**。SSC 2026 對*已辨認需要 source control 的 sepsis／septic shock*條件式建議盡早介入、理想上約 **6 小時內**，同樣是 very-low-certainty evidence，**不能變成「所有 sepsis 患者六小時內做 ERCP」**。[2][6][7]
+
+這些建議之所以不能簡單取最小數字，是因為它們回答的族群、介入和證據問題不同。病人在持續休克、膽源性感染高度可信時，醫師應同步決定救援與引流的可行時機；穩定、膽道感染未確立時，反而應先讓檢查提高或降低病因機率，而不是把侵入性 ERCP 當作萬用診斷工具。
+
+**回到這篇 Cholestasis 的最初問題：ALP 告訴我們肝膽系統留下了什麼訊號；US 告訴我們一項解剖徵象有沒有出現；器官低灌流決定能否等待；找到了可減壓的感染源，才讓引流從假說變成具體行動。** 這四個資訊層次可以在同一時間出現，卻不能互相代替。
 下一篇 [肝臟被占據，為什麼最突出的卻是 ALP？](2026-10-27-infiltrative-alp-hypothesis.md) 將把最後那個更困難的問題挑出來：影像沒有顯示 obstruction，是否就能直接跳到 infiltration？答案仍是否定的。
 
 
@@ -105,4 +145,6 @@ TG18 的 **severity grading 與 diagnosis 是兩張不同的表**。Grade III（
 [7] [ESGE guideline, Endoscopic management of common bile duct stones 2019](https://doi.org/10.1055/a-0862-0346), cholangitis drainage timing by TG18 severity, low-certainty evidence.  
 [8] [Hong et al., Br J Radiol 2012, comparison of cholangitis with and without biliary dilatation](https://pmc.ncbi.nlm.nih.gov/articles/PMC3611727/), retrospective CT-selected 93 patients, 17 nondilated; real 54-year-old female distal CBD stone without CHD dilation shown in Figure 1, no made-up sepsis severity or response.
 
-本稿為 **AI-integrated candidate / HOLD**：#66 P0 核心、P1 診斷架構、既有圖 1 雙軸語意先前獲作者局部同意；**Q3 本次大幅重寫及新圖 2 尚待作者重新驗收，整篇尚未核准發布**。未取得外部獨立醫學 reviewer 核准、正式發布決策（Facebook canonical 未確認只影響原稿身分，不阻擋獨立 AI 整合稿）；僅在未合併的 Draft PR 分支登錄預覽；main 的公開 allowlist 尚未納入。新圖獨立建立，不包含 Pocket 原書像素。
+[9] [Ghenu et al., *Pathophysiology of sepsis-induced cholestasis: A review* (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9218521/)，TNF／IL-1β／LPS 與 NTCP、BSEP、MRP2 等肝細胞運輸路徑，支持非機械性阻塞的感染相關膽汁鬱積機轉。
+
+本稿為 **AI-integrated candidate / HOLD**：#66 P0 核心、P1 診斷架構、既有圖 1 雙軸語意先前獲作者局部同意；**Q3 已按作者批評重新改為同一教學病人的連續判斷，新增決策圖 2 與真實病例證據圖 3；新的臨床論述與兩張新圖均待作者驗收，整篇尚未核准發布**。未取得外部獨立醫學 reviewer 核准、正式發布決策（Facebook canonical 未確認只影響原稿身分，不阻擋獨立 AI 整合稿）；僅在未合併的 Draft PR 分支登錄預覽；main 的公開 allowlist 尚未納入。新圖獨立建立，不包含 Pocket 原書像素。
