@@ -540,7 +540,7 @@
           "source_token": "2025 AHA ALS",
           "mode": "illustrated",
           "anchor": "wct-decision-figure",
-          "caption_token": "AHA",
+          "caption_token": "不是 AHA 官方演算法",
           "teaching_role": "Disentangle three independent emergency boundaries: rhythm causality, electrical synchronized-vs-unsynchronized shock mode, and drugs permitted only in stable regular monomorphic WCT.",
           "scope_limit": "Original summary cards, not a recreation of AHA ACLS algorithm. Do not use as standalone acute resuscitation protocol; preexcited AF has additional 2023 guideline contraindications."
         }
