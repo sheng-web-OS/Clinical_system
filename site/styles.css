@@ -462,6 +462,27 @@
 .hbv-signal-link{width:calc((100% - 40px)/2);padding:14px 0;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:13px;line-height:1.7;color:var(--muted)}
 .hbv-signal-link>b{font-size:23px;line-height:1.2;font-weight:400;margin:5px 0}
 .hbv-signal-link>small{font-size:12px;line-height:1.7}
+
+
+/* HBV signal essay: different measured processes; matched ALT, contrasting DNA; inference boundary. */
+.reading-prose .hbv-signal-section-title{font-size:13px;line-height:1.6;font-weight:700;color:var(--muted);letter-spacing:.02em;margin:0 0 14px}
+.hbv-signal-contrast{border-top:1px solid var(--line);padding:22px 24px 24px;background:var(--bg)}
+.reading-prose .hbv-contrast-question{margin:0 0 15px;font-size:15px;line-height:1.7;font-weight:700}
+.reading-prose table.hbv-contrast-table{display:table;width:100%;max-width:100%;table-layout:fixed;border-collapse:collapse;margin:0;font-size:14px;line-height:1.65;overflow:visible}
+.reading-prose .hbv-contrast-table th,.reading-prose .hbv-contrast-table td{padding:12px 10px;border:1px solid var(--line);min-width:0;text-align:center;vertical-align:middle;overflow-wrap:break-word}
+.reading-prose .hbv-contrast-table thead th{background:var(--surface);font-size:14px;font-weight:700}
+.reading-prose .hbv-contrast-table tbody th{background:var(--surface);font-size:13px;color:var(--muted);font-weight:600}
+.reading-prose .hbv-contrast-table tbody td{background:var(--surface);font-weight:700;font-size:17px}
+.reading-prose .hbv-contrast-table .hbv-same-marker td{background:var(--hbv-calm);color:var(--hbv-calm-ink)}
+.reading-prose .hbv-contrast-context{font-size:12px;line-height:1.85;color:var(--muted);margin:11px 0 0}
+.hbv-contrast-result{padding:15px 0 0;text-align:center}
+.hbv-contrast-result strong{display:block;font-size:17px;line-height:1.65}
+.hbv-contrast-result span{display:block;font-size:13px;line-height:1.7;color:var(--muted);margin-top:4px}
+.hbv-inference-step{padding:17px 24px 19px;border-top:1px solid var(--line);background:var(--brand-light)}
+.hbv-inference-step>span{display:block;color:var(--muted);font-size:12px;margin-bottom:4px}
+.hbv-inference-step>strong{display:block;font-size:17px;line-height:1.6}
+.reading-prose .hbv-inference-step>p{margin:7px 0 0;font-size:14px;line-height:1.8}
+
 @media(max-width:600px){
  .reading-prose .hbv-figure{margin:1.7em -6px;border-radius:8px}
  .hbv-figure-head{padding:17px 15px 15px}
@@ -507,4 +528,11 @@
  .hbv-process span,.hbv-measure span{font-size:12px}
  .hbv-signal-link{width:calc((100% - 27px)/2);font-size:12px}
  .hbv-signal-link>small{font-size:11px}
+ .hbv-signal-contrast{padding:18px 13px 19px}
+ .reading-prose .hbv-contrast-table th,.reading-prose .hbv-contrast-table td{padding:10px 5px}
+ .reading-prose .hbv-contrast-table thead th{font-size:13px}
+ .reading-prose .hbv-contrast-table tbody th{font-size:12px}
+ .reading-prose .hbv-contrast-table tbody td{font-size:16px}
+ .hbv-inference-step{padding:16px 14px}
+ .hbv-inference-step>strong,.hbv-contrast-result strong{font-size:15px}
 }

@@ -42,15 +42,22 @@ ALT 正常表示這次量到的血清酵素活性沒有超過採用的正常上�
 
 它也可能漏掉抽血之間的波動，或尚未形成明顯 enzyme release 的低度變化。即使 ALT 持續正常，也只是降低目前存在明顯 necroinflammatory activity 的可能性，不能擴張成完整的安全證明。
 
-<figure id="hbv-observation-inference-action" class="hbv-figure">
-  <div class="hbv-figure-head"><span>從病程到觀察</span><strong>DNA 與 ALT，來自不同的生理環節</strong></div>
+<figure id="hbv-observation-inference-action" class="hbv-figure hbv-inference-figure">
+  <div class="hbv-figure-head"><span>觀察 ≠ 病程 · 圖 01</span><strong>同樣 ALT 正常，為什麼不能推定相同的 HBV 狀態？</strong><p>先辨認 DNA 與 ALT 的生理來源，再比較兩組典型檢驗組合。</p></div>
   <div class="hbv-branch-body">
-    <div class="hbv-signal-row"><div class="hbv-process"><strong>病毒複製</strong><span>產生並釋放病毒</span></div><span class="hbv-measure-arrow" aria-hidden="true">→</span><div class="hbv-measure"><small>血液中可量到</small><strong>HBV DNA</strong><span>病毒量／複製的訊號</span></div></div>
-    <div class="hbv-signal-link"><span>感染肝細胞與宿主免疫互動</span><b>↓</b><small>複製量與受傷程度，不按固定比例連動</small></div>
-    <div class="hbv-signal-row"><div class="hbv-process hbv-active"><strong>肝細胞受傷</strong><span>酵素釋放進入血液</span></div><span class="hbv-measure-arrow" aria-hidden="true">→</span><div class="hbv-measure"><small>血液中可量到</small><strong>ALT</strong><span>受傷的間接訊號</span></div></div>
+    <p class="hbv-signal-section-title">① 不同的生理過程，留下不同的血液訊號</p>
+    <div class="hbv-signal-row"><div class="hbv-process"><strong>病毒複製</strong><span>形成並釋放病毒顆粒</span></div><span class="hbv-measure-arrow" aria-hidden="true">→</span><div class="hbv-measure"><small>血液中測得</small><strong>HBV DNA</strong><span>循環病毒量的指標</span></div></div>
+    <div class="hbv-signal-link"><span>病毒—宿主免疫互動</span><b>↓</b><small>兩個過程不呈固定比例</small></div>
+    <div class="hbv-signal-row"><div class="hbv-process hbv-active"><strong>肝細胞受傷</strong><span>釋放細胞內酵素</span></div><span class="hbv-measure-arrow" aria-hidden="true">→</span><div class="hbv-measure"><small>血液中測得</small><strong>ALT</strong><span>injury 的間接訊號</span></div></div>
   </div>
-  <div class="hbv-key"><strong>高 DNA ＋ 正常 ALT，可以同時成立。</strong><span>它描述兩個量測結果；不能由此直接證明免疫耐受、沒有組織傷害或不需治療。</span></div>
-  <figcaption>原創機轉與量測示意，非原書重製。對讀 Pocket Medicine 9E PDF 第 140–141 頁及 AASLD/IDSA 2025 Core Concepts／Table 1。水平箭頭表示對應的量測，向下關係經宿主互動中介；圖未表示病毒量必然造成等比例受傷。Phase 需合併 HBeAg 與連續數據推論，治療再加入 stage 與風險。</figcaption>
+  <div class="hbv-signal-contrast">
+    <p class="hbv-contrast-question">② 固定 ALT 正常，另外兩項訊號卻可以不同</p>
+    <table class="hbv-contrast-table" aria-label="兩種正常 ALT 的典型 HBV marker 組合比較"><thead><tr><th scope="col">觀察</th><th scope="col">HBeAg +</th><th scope="col">HBeAg −</th></tr></thead><tbody><tr><th scope="row">HBV DNA</th><td>極高</td><td>低</td></tr><tr class="hbv-same-marker"><th scope="row">ALT</th><td>正常</td><td>正常</td></tr></tbody></table>
+    <p class="hbv-contrast-context">典型組合：左為 HBeAg-positive chronic infection；右為 HBeAg-negative chronic infection。不是以單次抽血直接診斷 phase。</p>
+    <div class="hbv-contrast-result"><strong>ALT 相同 ≠ 上游病毒—宿主狀態相同</strong><span>兩個名稱是典型參考組合，不是憑單次檢驗完成的診斷。</span></div>
+  </div>
+  <div class="hbv-inference-step"><span>③ 從觀察走到臨床行動，仍需補足證據</span><strong>Markers → 推論 phase → 另評估結構風險與處置</strong><p>結合 HBeAg、連續 HBV DNA／ALT 及其他病因；另看 fibrosis、cirrhosis 與個別風險，才能決定治療或監測。</p></div>
+  <figcaption>原創概念圖，非 Pocket Medicine 原表或診療演算法。兩組為典型檢驗組合，非真實病例；正常 ALT 不能排除組織發炎或既有 fibrosis，也不表示可停治療／監測。對讀 Pocket Medicine 9E 私人 PDF 第 140–141 頁及 AASLD／IDSA 2025 phase 定義；公開原表重製授權尚未確認。</figcaption>
 </figure>
 
 這正是 phase table 最容易被忽略的限制。
