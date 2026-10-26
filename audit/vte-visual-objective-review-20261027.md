@@ -48,3 +48,20 @@ PR #83 保留 **draft／HOLD**。尚未有對此 PR 最終版本的完整實際 
 **裁決：舊版的站內 JKMS 圖正式拒收**；撤除站內 `<img>` 和整張站內偽教學圖，以高解析原始 Figure 5 連結替代。這是本次專業品質判斷，不需等待任何讀者測試。AHA、NICE 已提供官方原始圖入口，NICE 另補可讀鏡像。修訂版不再有任何必須依賴外部圖片載入的 inline figure。
 
 最終仍保留臨床醫學與知識來源獨立審查的界線；不因 GitHub build 過關直接宣稱正式發布。
+
+
+## 最終四輪：Bayesian 原創圖的事前量化／真實渲染驗收
+
+`vte-decision-resolution` 雖有正確的問診分流，但實際看過 390px 與桌面截圖後仍判定為**文字卡重排、視覺增量不足**，已撤回。替換為 `vte-d-dimer-bayes`，放置在介紹陰性 D-dimer 機率更新與影像定位之間。此圖不是血栓解剖，也不能替代完整 NICE DVT/PE 原演算法。
+
+**數學驗收**：以刻意假設的 LR− = 0.10，前測 5% 得後測 0.5235602%，前測 50% 得後測 9.0909091%。圖中線性 0–100% 機率條與標示值分別四捨五入為 5%、0.52%、50%、9.09%，沒有把 odds 與 probability 混淆；**未宣稱 D-dimer 的 LR− 恒等於 0.10，也未標示安全的停查門檻**。
+
+**實際 Chrome 渲染**：以本 PR GitHub Actions run `40372878603` 的建置 ZIP、相同完整 `styles.css`，於 Chromium `set_content` 內嵌 stylesheet、移除不影響正文的遠端 analytics JS 後擷取 `figure#vte-d-dimer-bayes`：
+- 360px viewport：document width 360px；figure 314px 寬、約 879px 高；無横向溢出，實際兩個百分比比較可見。
+- 390px viewport：document width 390px；figure 344px 寬、約 790px 高；100% 量尺、數值和註解均完整可讀。
+- 1365px viewport：document width 1365px；figure 790px 寬、約 702px 高；數值軸和標籤均可讀，無截斷。
+- 這個測試是本機隔離 Chromium、**不是正式 Cloudflare HTTPS 體驗**；截圖未作為醫學同儕審查證明。
+
+**教學增量**：刪圖後雖仍能口頭說「前測影響停查」，但讀者無法立即比較同一 LR− 下兩個不同 residual probability 的具體量級。圖有真正數量比例及可重新計算的數值；和原本三張文字卡有可驗證的差異。完整 Wells 分層及陰性 CUS／CTPA 例外仍由原始 NICE 流程與正文保留，圖不嘗試替代。
+
+**醫學及出版限度**：本檔屬 AI 編輯與數學／來源查核，**不是獨立醫師同儕審查**，也無使用者學習效果研究。對無治療劑量處方的教學文章，以來源稽核、逐圖語義檢查、各尺寸視覺驗收與機器建置為預發布閘門；發布後如發現醫學錯誤必須回退，而不能以作者提供的資料視為一切都已驗證。
