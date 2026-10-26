@@ -9,12 +9,22 @@ from urllib.request import Request, urlopen
 from urllib.parse import quote
 import sys
 import time
+import hashlib
 
 IMAGES = {
     "dcm-pv.webp": "https://www.frontiersin.org/files/Articles/1212875/xml-images/fcvm-10-1212875-g002.webp",
     "dcm-secondary-mr.png": "https://www.mdpi.com/jcm/jcm-14-04518/article_deploy/html/images/jcm-14-04518-g001.png",
     "dcm-ischemic-cmr.webp": "https://www.frontiersin.org/files/Articles/523242/xml-images/fcvm-07-00097-g0003.webp",
 }
+
+# Original publisher Figure bytes archived unchanged from a successful audited build.
+# SHA-256 prevents silently substituting another patient image or a partial download.
+ARCHIVED_SHA256 = {
+    "dcm-pv.webp": "2ca703dae92a7dff548c705fe2ce2dd7edbca618925aaec1affc939c9e71f718",
+    "dcm-secondary-mr.png": "6f79230df9c1a360fd5b9d835cab54fa7dab9c122c3b393de2e21c00087f1bfe",
+    "dcm-ischemic-cmr.webp": "76a422b4a054803b8d654012a1ad9d5c51fb7bcc383ed48c208248bb83fb15b6",
+}
+ARCHIVE = Path(__file__).resolve().parents[1] / "site/source-assets/dcm"
 
 def is_image(data, suffix):
     if len(data) < 7000 or len(data) > 8_000_000:
@@ -34,6 +44,15 @@ def main():
     directory.mkdir(parents=True, exist_ok=True)
     for name, origin in IMAGES.items():
         target = directory / name
+        archived = ARCHIVE / name
+        if archived.is_file():
+            data = archived.read_bytes()
+            digest = hashlib.sha256(data).hexdigest()
+            if digest != ARCHIVED_SHA256[name] or not is_image(data, target.suffix):
+                raise RuntimeError("Publication BLOCKED: archived original DCM figure modified: " + name)
+            target.write_bytes(data)
+            print(f"Verified DCM original archive {name}: {len(data)} bytes, sha256={digest}", flush=True)
+            continue
         alternatives = [
             origin,
             "https://images.weserv.nl/?url=" + quote(origin.removeprefix("https://"), safe=""),
