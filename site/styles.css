@@ -607,3 +607,29 @@
 @media(max-width:920px){.acls-desktop-graph{display:none}.acls-mobile-graph{display:block}}
 @media(max-width:480px){.reading-prose .acls-core-figure{margin:1.45rem 0;padding:12px}.acls-core-head>strong{font-size:1.04rem}.acls-m-split{grid-template-columns:1fr}.acls-m-split>.acls-m-step:first-child:after{content:"另一條分支 ↓";font-size:.75rem;font-weight:700;color:#31627a;display:block;position:relative;top:16px;padding-bottom:9px}.acls-mobile-graph{font-size:.88rem}}
 
+
+
+/* Narrow reading figures: preserve full conceptual comparison rather than
+   clipping the 760px desktop SVG. Only these two audited figures are altered. */
+.article .clinical-mobile-diuresis,.article .clinical-mobile-same-ph{display:none}
+@media(max-width:650px){
+ .article #loop-dose-response .diuretic-svg-scroll,
+ .article #same-ph-figure .diuretic-svg-scroll{display:none}
+ .article #loop-dose-response .clinical-mobile-diuresis{display:block;background:#f8fbf9;padding:6px 8px 12px}
+ .article #loop-dose-response .clinical-mobile-diuresis svg{display:block;width:100%;max-width:380px;min-width:0;height:auto;margin:0 auto}
+ .article #loop-dose-response .clinical-mobile-diuresis p{font-size:12px;line-height:1.6;margin:3px 8px 0;color:#385650}
+ .article #same-ph-figure .clinical-mobile-same-ph{display:block;padding:13px 10px 17px;background:#f8fbf9;color:#264440}
+ .article #same-ph-figure .clinical-mobile-constant{margin:0 0 12px;text-align:center}
+ .article #same-ph-figure .clinical-mobile-constant strong{display:block;font-size:18px;line-height:1.45}
+ .article #same-ph-figure .clinical-mobile-constant span{display:block;font-size:13px;line-height:1.6}
+ .article #same-ph-figure .clinical-mobile-same-ph table{display:table;table-layout:fixed;overflow:visible;border-collapse:collapse;width:100%;min-width:0;font-size:14px;line-height:1.5}
+ .article #same-ph-figure .clinical-mobile-same-ph th,
+ .article #same-ph-figure .clinical-mobile-same-ph td{padding:10px 5px;text-align:center;border:1px solid #cadbd6;overflow-wrap:anywhere}
+ .article #same-ph-figure .clinical-mobile-same-ph th{background:#e5f2ed;color:#264440;font-size:13px}
+ .article #same-ph-figure .clinical-mobile-same-ph th small{display:block;font-size:11px;font-weight:400}
+ .article #same-ph-figure .clinical-mobile-same-ph tbody td{background:#fff}
+ .article #same-ph-figure .clinical-mobile-same-ph tbody td:first-child,
+ .article #same-ph-figure .clinical-mobile-same-ph tbody td:nth-child(2){font-weight:750;font-variant-numeric:tabular-nums}
+ .article #same-ph-figure .clinical-mobile-formula{font-size:13px;line-height:1.7;margin:12px 0 6px}
+ .article #same-ph-figure .clinical-mobile-same-ph>small{display:block;font-size:11px;color:#53675f}
+}
