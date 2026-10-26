@@ -75,6 +75,52 @@ Liver acinus 的 **zone 1** 靠近 portal triad（輸入端），**zone 3** 靠�
 
 **Q13 的關鍵是「直接證據也會因取樣而失真」；Q14 的關鍵是「間接量測可作分流，不能當作組織真相本身」。** 二者是相互校準的工具，非「gold standard 被取代」的單一路徑。
 
+## 第四問｜Pocket 9E 原書 p.144 與 p.146：為何連原書本身都沒有把 biopsy 和 NIT 排成「真／假」二分？
+
+這次對《Pocket Medicine》第九版原 PDF **p.144（MASLD／MASH）、p.146（cirrhosis 的 lab indices、Workup、Assess fibrosis）**進行段落文字對讀，找到三個能直接反查 Q13、Q14 的位置：
+
+**第一，p.146 的「Assess fibrosis」**將 serum biomarkers（FibroSURE 等）和 ultrasound／MR elastography 放在同一個評估目的下，並指出 biopsy 可採 **percutaneous 或 transjugular**；特別提到有 ascites／coagulopathy 時可考慮 transjugular。這個句子**直接限制** Q13 D 那種「不能做肝穿刺」的絕對化理解。若將 D 收窄為「嚴重腹水／凝血異常下不宜無條件直接採經皮路徑」，便合理；若解成沒有任何可取樣途徑，就會與小麻所提供的例外不符。
+
+**第二，p.146 的「Indirect markers of fibrosis」**列出不同疾病設定中可用的 FibroTest/FibroSURE、FIB-4、APRI 等；這裡**沒有**允許把同一模型的 cutoffs 不分病因、檢測特性或預測族群直接移植。Q14 B 的錯在「精準判定所有纖維化等級」這種近乎無限制的承諾，並非血清 marker 不具有分流用途。
+
+**第三，p.144 MASLD 的討論**將 liver biopsy、FIB-4／NAFLD fibrosis score 及 elastography 並列，但有一個必須防止誤傳的差異：**「有 advanced fibrosis 的風險」不等於「已診斷 MASH 的全部組織學要件」**。FIB-4 主要用於偵測或排除 advanced fibrosis 風險，不能靠 AST、ALT、年齡、platelet 就直接觀察 ballooning 或 lobular inflammation。原書的某些壓縮句須用 2024 EASL-EASD-EASO MASLD 指引補回 intended endpoint，否則讀者容易把預測纖維化、預測 MASH、病理 staging 三個不同任務看作同一項檢查。
+
+目前完成的是**原 PDF 可檢索文字與頁次定位**；p.144–146 的排版圖像未能全部以清晰解析度回傳，所以不能填報「已視覺核對所有圖表註腳」。
+
+## 第五問｜一個數字可能變，病理結構卻還沒變：NIT 的三個反事實實驗
+
+### 實驗 A：急性發炎造成 liver stiffness 增加
+
+固定患者的底層纖維化負荷，改變當下 hepatocellular inflammation。若 ALT 高、組織水腫／發炎增加，LSM 可能升高；急性病況改善後，LSM 可下降，不代表在幾天內大量 collagen 被移除。**時間尺度**是辨認「今天的 injury signal」與「多年累積 architectural fibrosis」的關鍵。
+
+### 實驗 B：右心衰竭造成肝鬱血
+
+固定基礎 fibrosis，增加右心充盈壓與 hepatic venous congestion，肝臟機械性質可變硬；在去鬱血後 stiffness 可能下降。因此出現高肝硬度，還需要看 echocardiography、JVP、下肢水腫、腹水特徵及肝靜脈血流，而不是逕自把 kPa 套入一般 MASLD cutoff 斷言 F4。若病人其實有長期 congestive hepatopathy，也可能真有 fibrosis；這個反例**不是**說鬱血病人都沒有肝纖維化。
+
+### 實驗 C：相同生化檢查，但疾病前測機率不同
+
+把 FIB-4 當成 triage tool 而非直接活檢，重點在於**何時值得接受下一層檢查**。一位糖尿病、肥胖且影像已見 steatosis 的高風險患者，與一位低風險、偶然有單次 AST 波動的患者，即使數值接近，後驗機率也不必相同。再者，FIB-4 公式包含年齡，因此老年族群同樣 AST/ALT/platelet 往往有較高分數，需要年齡情境及 guideline-recommended cutoffs，不能當作所有年齡一致的病理定量尺。
+
+公式的目的只是展示資訊來源：
+
+\[
+\mathrm{FIB\!-\!4}=\frac{\mathrm{age\ (years)}\times\mathrm{AST\ (U/L)}}{\mathrm{platelets\ (10^9/L)}\times\sqrt{\mathrm{ALT\ (U/L)}}}
+\]
+
+這個公式**沒有膠原沉積量、影像、portal pressure 或免疫組織資訊**，其限制部分正由輸入變數所決定。對 ALT 顯著上升的急性病況，不能把 FIB-4 的輸出直接解讀成穩態 fibrosis staging。
+
+## 第六問｜「有沒有必要 biopsy」應由預期資訊增量決定，而不是檢查技術的地位
+
+面對一位疑似慢性肝病病人，可以先問：
+
+1. **目前最重要的未解問題是病因、炎症活動、進階纖維化風險，還是已有 decompensation？** 不同問題的資訊需求不同。
+2. **不侵入性資料是否互相支持？** 如果 FIB-4、LSM、platelet、超音波與門脈高壓徵象高度一致，進一步 biopsy 未必改變管理；若明顯不一致或另懷疑 autoimmune hepatitis、cholestatic disease、infiltrative disease，組織可能改變治療。
+3. **若確實需要組織，經皮與經頸靜脈哪個風險更合理？** Ascites、coagulopathy、腎功能、血小板及醫療技術條件會改變路徑，不能只沿 2019 年題目的絕對文字判斷。
+4. **取得組織後如何處理 discordance？** 重新檢查 sampling adequacy、病理判讀與影像／生化時間點；不能因為 biopsy 被稱為 reference standard 就忽略 sampling error。
+
+這也是 Q13、Q14 應合併閱讀而非拆成兩張記憶卡的原因：**侵入性檢查提供特定組織資訊，但其取樣是一種局部觀察；非侵入性測量的目標是有效分流，卻也有生理雜訊。醫學推理要知道兩者各自在哪個問題上比較可靠。**
+
+
 ## 原題與最新來源（不冒稱 Pocket 原圖已公開）
 
 - 考選部民國 108 年第一次醫師二階醫學（三）Q13（官方 A）、Q14（官方 B）。[原卷、官方答案、更正公告與審核界線](../exam108-integrated-batch6-sources.md)。
