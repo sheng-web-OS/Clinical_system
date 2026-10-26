@@ -18,8 +18,8 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 <defs><marker id="acls-arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0L0 6L8 3Z" fill="#42636e"/></marker></defs>
 <rect x="338" y="19" width="450" height="115" rx="13" fill="#edf4f2" stroke="#426f69" stroke-width="2"/>
 <text x="563" y="54" font-size="23" font-weight="750" fill="#1b3c3c" text-anchor="middle">成人有脈搏 · 持續性 tachyarrhythmia</text>
-<text x="563" y="82" font-size="17" fill="#354d4d" text-anchor="middle">Airway／氧氣（若低氧）／ECG 與 BP 監測</text>
-<text x="563" y="109" font-size="17" fill="#354d4d" text-anchor="middle">IV access · 12-lead ECG（可行時）</text>
+<text x="563" y="82" font-size="17" fill="#354d4d" text-anchor="middle">先判斷心率是否符合病況（tachyarrhythmia 常 ≥150/min）</text>
+<text x="563" y="109" font-size="17" fill="#354d4d" text-anchor="middle">Airway／必要氧氣／監測 · IV · 12-lead ECG</text>
 <path d="M563 134V172" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
 <path d="M563 179L811 278L563 377L315 278Z" fill="#fdf0e6" stroke="#b97543" stroke-width="2.5"/>
 <text x="563" y="262" font-size="22" font-weight="750" text-anchor="middle" fill="#543f2d">是否由 tachyarrhythmia</text>
@@ -58,7 +58,7 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 <text x="62" y="934" font-size="17" fill="#6b3e35">Sustained polymorphic VT → immediate unsynchronized shock；若無脈搏，改用 cardiac-arrest algorithm。</text>
 </svg>
 <div class="acls-mobile-graph" aria-label="有脈搏成人 tachyarrhythmia 手機版完整決策流程">
-<div class="acls-m-step acls-m-entry"><strong>有脈搏的成人 tachyarrhythmia</strong><span>心率常 ≥150/min；Airway／氧氣（若低氧）／ECG、血壓監測／IV／12-lead ECG</span></div>
+<div class="acls-m-step acls-m-entry"><strong>有脈搏的成人 tachyarrhythmia</strong><span>先確認心率與病況是否相符（tachyarrhythmia 常 ≥150/min）；Airway／氧氣（若低氧）／ECG、血壓監測／IV／12-lead ECG</span></div>
 <div class="acls-m-down" aria-hidden="true">↓</div>
 <div class="acls-m-decision"><strong>目前的不穩定，是由 tachyarrhythmia 造成嗎？</strong><span>Hypotension、shock、意識改變、缺血性胸痛、急性 HF</span></div>
 <div class="acls-m-branch-label">YES ↓</div>
@@ -72,7 +72,7 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 <div class="acls-m-warning"><strong>主流程之外的高風險界線</strong><span>Irregular／polymorphic WCT 不使用 adenosine；pre-excited AF 不套用一般 AV nodal blockers 或 IV amiodarone。持續 polymorphic VT 需非同步電擊；若無脈搏改走 cardiac-arrest algorithm。</span></div>
 </div>
 <div class="acls-rescue-footer"><strong>若初始介入仍無效：重新評估</strong><span>核對造成 tachyarrhythmia 的因素、是否需要調整下一次電復律能量、增加抗心律不整治療，以及專科協助；病情改變時重新回到最上游判斷。</span></div>
-<figcaption><strong>本站原創流程解讀｜2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm。</strong> 圖上流程為對照本文 WPW／WCT 的教學重構，不是 AHA 正式圖像、完整指引翻譯或個別病人處方。成人有脈搏是適用前提；主流程的藥物選項需連同 2025 ALS 的 WCT 禁忌和 2023 AF guideline 的 pre-excitation 限制閱讀。<a href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">官方 Figure 6 原圖（直接開啟）</a>；<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">2025 ALS 文字建議</a>。</figcaption>
+<figcaption><strong>本站原創流程解讀｜2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm。</strong> 圖上流程為對照本文 WPW／WCT 的教學重構，不是 AHA 正式圖像、完整指引翻譯或個別病人處方。成人有脈搏是適用前提；本圖為優先決策架構，**劑量與電擊能量需回讀官方原圖**；主流程的藥物選項需連同 2025 ALS 的 WCT 禁忌和 2023 AF guideline 的 pre-excitation 限制閱讀。<a href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">官方 Figure 6 原圖（直接開啟）</a>；<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">2025 ALS 文字建議</a>。</figcaption>
 </figure>
 
 現在才能準確提出後面的問題：ACLS 已經將 **causing instability**、**QRS duration**、**regular／monomorphic** 放在不同判斷層次，但它們沒有一個可以單獨證明「這是 VT、SVT 或 accessory pathway」。流程先定義當下安全的處置空間，病因機轉再決定不能外推哪些藥物選項。
