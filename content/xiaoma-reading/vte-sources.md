@@ -2,6 +2,17 @@
 
 **來源身分。** 本篇初始文章為使用者於 2026-10-26 對話中提供的〈同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？〉，標示 2026.07.24 小麻閱讀（9E）。作者提供原文已獨立保存；未將整合版冒充為歷史 Facebook 原文。網站整合稿是另加圖的編輯版本，不改動私有底稿。
 
+## 2026-10-27 公開原圖連結可用性複查（更正目前有效狀態）
+
+發布後讀者無法直接開啟原圖，因此重新驗證**連到的是否真是可取得的內容**，而非檢查網址字串是否存在：
+
+- **AHA 肺栓塞衛教 PDF**：網頁檢索能讀到原圖，但即時頁面載入並非每個環境都能連上，不能稱為可用的正式原圖入口。**從文章移除外連**，用正確的 IVC → right heart → pulmonary arteries 解剖路徑文字說明。
+- **NICE NG158 官方 visual summary**：部分網頁環境回傳 403，故**不保留官方 PDF 直連**。改連經網頁與文件內容雙重核查的 [Thrombosis UK 保存之三頁 NICE NG158 原始 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)：第 1 頁 DVT，第 2 頁 PE，第 3 頁抗凝治療。此網址是在第三方站點託管的 NICE 文件，**不是自行畫的替代流程圖，也不是 NICE 官網網址**。
+- **JKMS An et al. 2022 Fig. 5 ViewImage.php**：目前實測得到的是「Loading／Cookies must be enabled」阻擋頁面，而不是能放大的 Figure 5。**從正文與圖像入口移除，正文只保留不依賴該圖仍可完整理解的解剖定位比較**。不將其他論文的任意 CTPA／Doppler 圖冒充為同病例原圖。
+- 其他文字層的書目、指南與歷史稽核記錄，不能因在來源表中被記錄，就自動宣稱在正式站「可開啟」。後續若重新恢復原圖連結，必須做即時開啟、定位到正確 figure、手機核讀、權利核對；**失敗即不放連結**。
+
+上述更正取代此檔早期試驗記錄中「可放大 AHA／JKMS 原圖」的描述。原先檔內歷史測試與撤回紀錄僅代表當時過程，不代表目前對外保證。
+
 ## 小麻原書核讀範圍
 
 《Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine》，第九版；使用者上傳之 Flatten PDF 本次核讀 PDF 共 464 頁。2026-10-26 實際目視第 97–100 頁並核對文字：
@@ -28,8 +39,8 @@
 
 專業審查結論：原三張卡片圖均不合格；首次修訂的 Blausen + 文字路徑、Wells 表、CTPA 真實病例也不能直接算通過。**圖 1 只有 DVT 下肢位置，沒有畫出肺循環；圖 2 是重排的文字；圖 3 雖真實，卻被放在 D-dimer 停止條件段落下，圖不答題。**依「圖像能否獨立完成文章此處的認知任務」「刪掉圖是否失去不可替代的證據」做第二輪修正。
 
-- **第一段／解剖機轉：改為原始來源定位**：[American Heart Association, What Is a Pulmonary Embolism?, p1, 2026](https://www.heart.org/-/media/Files/Health-Topics/Pulmonary-Embolism/What-is-a-PE.pdf)。官方原圖實際畫出 IVC → right heart → pulmonary arteries，以及 embolus 的位置。因 AHA 作品著作權保留，網站**只連結原圖**，不以只畫 DVT 的 Blausen 圖取代整段空間機轉；不再暗示 DVT 必然演變為 PE。此前 Blausen [CC BY 3.0 原圖](https://commons.wikimedia.org/wiki/File:Blausen_0290_DeepVeinThrombosis.png) 雖來源與授權可確認，但此篇此處的讀圖任務不符，故移除。
-- **第二段／決策分流：移除 Wells「文字表假圖」**，回到 [NICE NG158 官方 DVT/PE visual summary](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 及 [推薦條文原文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。官方圖具兩套不同 pretest probability/影像分流與停止分支；網站不以自編條件省略版代替。NICE 官方流程頁若因存取限制不能開啟，仍須明確提供條文來源；其可達性待正式站驗收。
+- **第一段／解剖機轉：改為原始來源定位**：American Heart Association《What Is a Pulmonary Embolism?》（2026；直連可達性不穩，公開站已移除）。官方原圖實際畫出 IVC → right heart → pulmonary arteries，以及 embolus 的位置。因 AHA 作品著作權保留，網站**只連結原圖**，不以只畫 DVT 的 Blausen 圖取代整段空間機轉；不再暗示 DVT 必然演變為 PE。此前 Blausen [CC BY 3.0 原圖](https://commons.wikimedia.org/wiki/File:Blausen_0290_DeepVeinThrombosis.png) 雖來源與授權可確認，但此篇此處的讀圖任務不符，故移除。
+- **第二段／決策分流：移除 Wells「文字表假圖」**，回到 [NICE NG158 官方 DVT/PE visual summary](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 及 [推薦條文原文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。官方圖具兩套不同 pretest probability/影像分流與停止分支；網站不以自編條件省略版代替。NICE流程頁若因存取限制不能開啟，仍須明確提供條文來源；其可達性待正式站驗收。
 - **第三段／解剖證據：將真實病例影像原站連結放到影像解剖問題之後**：[An et al., J Korean Med Sci 2022;37:e76, Figure 5](https://doi.org/10.3346/jkms.2022.37.e76)。A/B 是 PE 的 CTPA；C 是 popliteal vein CT venography；D 是 popliteal vein color-Doppler，不是 compression ultrasound。這張圖只解答「檢查到不同部位」，不可假稱呈現 D-dimer 停止條件。授權 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)；本次不在本站重製，提供可直接放大原圖的連結。
 
 **自我審查結果**：與第一次修訂比較，圖文問答對位與原始證據保真有所改善，但不等於正式視覺 QA 通過。公開版本仍須看過 360/390px 和桌面實際截圖、檢驗圖片載入與許可；且截至本紀錄**沒有獨立醫師審查，也沒有實際讀者成效數據**。編輯責任不應交給讀者反饋，詳見 repository 內 `audit/vte-visual-objective-review-20261027.md`。
@@ -38,7 +49,7 @@
 
 ## 圖像與來源界線
 
-舊版三張 HTML/CSS 圖解已撤回；首次修訂的 DVT 單張解剖圖及 Wells 表也因認知任務不符合而從正文移除。現在前兩處使用 AHA/NICE 原始來源圖定位，第三處提供與解剖決策直接對位的 DVT/PE 真實影像原始連結。Pocket Medicine 原書 Figure 2-2、Figure 2-3 與 Thromboprophylaxis 表只作私下核讀，未在本站重製。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
+舊版三張 HTML/CSS 圖解已撤回；首次修訂的 DVT 單張解剖圖及 Wells 表也因認知任務不符合而從正文移除。現在目前正文不保留 AHA、JKMS 無法穩定直達的原圖外連；NICE 完整流程改連 Thrombosis UK 保存的 NICE NG158 原 PDF（第 1 頁 DVT／第 2 頁 PE）。Pocket Medicine 原書 Figure 2-2、Figure 2-3 與 Thromboprophylaxis 表只作私下核讀，未在本站重製。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
 
 完成 AI 來源與安全／編輯審查，未經獨立醫師同儕審查。NICE 原站本輪部分開啟回傳限制；可取得的官方索引推薦與既有查核紀錄均和原書逐項比對，沒有宣稱逐頁重讀整份指南。特別保留「proximal DVT 可以在適當情境支持 VTE 治療，但不等於直接顯示肺動脈血栓」與「影像陰性須結合品質和前測機率」兩項界線。
 
@@ -46,7 +57,7 @@
 
 GitHub Actions run 40367245047 提供 PR 建置成品 `clinical-system-static-site`。下載該 ZIP 並由 Chromium 的 `page.set_content()` 載入內嵌 `styles.css`，依序以寬 360px、390px、1365px 渲染原圖區塊；三尺寸 document scrollWidth 等於 viewport，沒有橫向溢出。然而圖的網路遠端載入在隔離瀏覽器均失敗（`naturalWidth=0`），留下近 600px 的空白影像佔位。這**不能證明正式網站也會破圖**，只能證明無法在該隔離條件驗證載入。更關鍵的是原四面板圖於手機寬約 318px 時每格約 159px，不能驗證箭頭／充盈缺損辨識度。
 
-**專業裁決**：這張圖在 360/390px 作為網站 inline 教學圖 **FAIL**，退件，改連可放大的 [JKMS 原始 Fig.5](https://www.jkms.org/ViewImage.php?Type=F&afn=63_JKMS_37_10_e76&aid=732221&fn=jkms-37-e76-g005_0063JKMS&id=F5)。AHA（p1）和 NICE（p1/2）原始圖也採原始連結；NICE 官網對此測試來源回 403，故補充 [Thrombosis UK 保存的原版 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。不再讓站內圖片的外連穩定性和授權條件影響文章閱讀。
+**專業裁決**：這張圖在 360/390px 作為網站 inline 教學圖 **FAIL**，退件，改連可放大的 JKMS Fig. 5（圖檔站外直連會進入 Cookies 頁面，已從正式站撤除）。AHA 的直連因可達性不一致已撤除；NICE（p1/2）原流程改採可用的保存副本；NICE 官網對此測試來源回 403，故補充 [Thrombosis UK 保存的原版 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。不再讓站內圖片的外連穩定性和授權條件影響文章閱讀。
 
 這只驗收了 HTML 版面、內容對位、遠端圖片在**測試環境**失敗的退件；不是正式站 Cloudflare HTTPS 的圖像載入驗收，也不是獨立醫師同儕審查。
 
@@ -61,9 +72,9 @@ GitHub Actions run 40367245047 提供 PR 建置成品 `clinical-system-static-si
 | A | 5% | (0.05 / 0.95) × 0.10 | 約 0.52356% |
 | B | 50% | (0.50 / 0.50) × 0.10 | 約 9.09091% |
 
-重點不是「0.5% 可停止、9.1% 一定要做某檢查」：**沒有設定通用停止門檻**。真實停止條件由各自 DVT／PE validated pathways、病人情境與 assay/cutoff 決定；NICE NG158 [完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 和 [原始流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 均為本篇核對來源。對沒有適用正式分層的情況或 hemodynamically unstable suspected PE，不能直接套用示意算式作處置決策。
+重點不是「0.5% 可停止、9.1% 一定要做某檢查」：**沒有設定通用停止門檻**。真實停止條件由各自 DVT／PE validated pathways、病人情境與 assay/cutoff 決定；NICE NG158 [完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 和 [原始流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 均為本篇核對來源。對沒有適用正式分層的情況或 hemodynamically unstable suspected PE，不能直接套用示意算式作處置決策。
 
-**來源身分：** Bayes odds 定理為通用數學恆等式；`LR− = 0.10` 是為隔離前測差異而自訂的示意條件，**不是從 NICE 讀取的 test accuracy，也不是原書 Figure**。高品質原始醫學圖仍使用 AHA 解剖 PDF、NICE DVT/PE 原始 flowchart、JKMS Fig. 5 真實病例來源定位；公網不重製未獲授權的 AHA/NICE 像素。先前三張不合格圖與新退回的雙分支文字卡均維持撤回，不能以檔案存在或 CI 綠燈重新入庫。
+**來源身分：** Bayes odds 定理為通用數學恆等式；`LR− = 0.10` 是為隔離前測差異而自訂的示意條件，**不是從 NICE 讀取的 test accuracy，也不是原書 Figure**。高品質原始醫學圖仍使用 AHA 與 JKMS 的文獻身分（不提供無法直達的原圖連結）、NICE DVT／PE 原始流程可用副本；公網不重製未獲授權的 AHA/NICE 像素。先前三張不合格圖與新退回的雙分支文字卡均維持撤回，不能以檔案存在或 CI 綠燈重新入庫。
 
 
 
@@ -75,7 +86,7 @@ GitHub Actions run 40367245047 提供 PR 建置成品 `clinical-system-static-si
 2. **DVT manifestations / DVT Wells / Figure 2-2**：保留「腿部症狀在鑑別替代診斷時才有意義」、書中 DVT *three-level* Wells（≤0 / 1–2 / ≥3）及 proximal-only CUS 的陰性限制。**NICE NG158** 使用另一套 *two-level* DVT Wells（≤1 / ≥2），且對「初次 proximal CUS negative、D-dimer positive」要求重做 **6–8 天**；不得把書中 low/moderate 組直接映射成 NICE unlikely，也不得把陰性 proximal CUS 畫成無條件排除 DVT。Homan's sign 不具可可靠判斷價值，故不作為診斷決策節點。
 3. **PE manifestations / PE Wells / Figure 2-3**：保留書中 PE *two-level* Wells（≤4 / >4）、CTPA 針對肺動脈、影像陰性需比對 pretest suspicion／品質的停止條件，以及 hemodynamically unstable PE 的獨立緊急流程。CXR、ECG、ABG、心超的角色不等於 CTPA；舊文中檢查敏感度／預測值與「≤4 為 13%／>4 為 39%」數字來自特定研究與族群，不當作每位病人的絕對概率或 2026 年普遍指標。
 
-**圖像收錄裁決**：沒有把三張原書截圖整頁貼到正式站，也沒有上架由圖片生成模型產生的 VTE、DVT、PE 三張資訊圖。它們過多重排正文，而原創診斷流程圖在陰性 proximal CUS／CTPA 停查條件、預防情境與 Wells 版本的判斷上可能遺漏關鍵限制。正式文章只保留先前驗收的 Bayesian 數值圖；必要的完整診斷分支依 [NICE 官方 visual summary](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 及 [條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 直接開啟，避免錯誤重繪與原書著作權疑慮。
+**圖像收錄裁決**：沒有把三張原書截圖整頁貼到正式站，也沒有上架由圖片生成模型產生的 VTE、DVT、PE 三張資訊圖。它們過多重排正文，而原創診斷流程圖在陰性 proximal CUS／CTPA 停查條件、預防情境與 Wells 版本的判斷上可能遺漏關鍵限制。正式文章只保留先前驗收的 Bayesian 數值圖；必要的完整診斷分支依 [NICE visual summary](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 及 [條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 直接開啟，避免錯誤重繪與原書著作權疑慮。
 
 **現行獨立交叉核對**：
 - [NICE NG158 recommendation 1.1.1–1.1.21](https://www.nice.org.uk/guidance/ng158/chapter/Recommendations)：DVT／PE 兩套 Wells、影像優先序與 DVT 6–8 日重檢條件。
