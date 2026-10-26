@@ -93,3 +93,42 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/
 7. **後續重測**：在 01／03／05 三種差異夠大的 SICU 任務中，分別記「初稿達標率、人工指出的高階/基礎遺漏、介入次數及分鐘、修後有無新錯」。三篇成功僅屬小型 pilot，不能聲稱較 Native GPT 高品質，後續再做固定來源對照。
 
 **本分支驗收**：已重排 cardiothoracic 系列、取得並目視 CABG 來源 Table 1 和 Figure 1，另將 V1 初稿永久保存於同一 private branch；仍未完成獨立醫學審查、所有 Pocket 原圖重核、正式 Figure Gate、網站手機實機審視、學習效果驗證及正式發布。未來由原系統出版流程決定是否發行，無第二個目錄或新網站。
+
+
+## 5. IBCC research layer — added at user's request (2026-10-26)
+
+The primary care setting is **postoperative cardiac and thoracic surgery**. The user does **not yet know** whether their future ICU routinely uses pulmonary artery catheter, SvO₂, cardiac index or only arterial line / central line / bedside echo. Educational entrypoint must therefore be device-agnostic: symptoms + A-line blood pressure/waveform, rhythm, drain output, urine output, skin perfusion, ABG/chemistry, bedside imaging; explain PAC/ScvO₂/SvO₂/CI/PAWP only when they change a specific decision. Never represent advanced monitoring as a universal prerequisite.
+
+### Source-role contract
+
+**IBCC = high-value expert-written clinical physiology + bedside reasoning resource, not guideline/primary evidence.** Use IBCC to identify the causal model, common postoperative pitfalls, response-to-intervention framework, and which variable is missing. Verify precise clinical claims, threshold values and intervention choices against current specialty guidance, primary studies, and source case reports. Cite primary sources for trial effects or case facts. Preserve uncertainty and surgical-specific caveats. Do not reproduce IBCC figure assets or substantial prose on the public site without license/permissions; use links and original causally useful figures.
+
+2026-10-26 live IBCC navigation checked; relevant pages and published page dates:
+
+1. **Postoperative cardiac surgical patients** (Josh Farkas, 2025-01-05): https://emcrit.org/ibcc/cts/ — directly relevant to cardiac post-op approach, low-output vs hemorrhage vs obstructive causes (tamponade, excessive airway pressure), post-CPB vasoplegia, pacing, A-line/ABG, lactate, SvO₂. **Article suggests approximate hemodynamic targets (e.g. CI ~2.2)**: they are *rough targets* and cannot diagnose safety or trigger treatments in isolation.
+2. **Diagnosis of metabolic acid-base disorders & AGMA (including lactic acidosis)** (2024-06-29): https://emcrit.org/ibcc/agma/ — compare lactate interpretation, ΔAG, low bicarbonate, parallel respiratory assessment and 2026 source case. **IBCC purposely uses an uncorrected AG workflow**. The existing Clinical OS `acid-base-sources.md` documents other endorsed approaches with albumin-corrected AG. Expose the conflict and when hypoalbuminemia makes AG interpretation unsafe; **do not silently treat uncorrected AG as a universal screening rule**.
+3. **Shock & vasoactive medications**: https://emcrit.org/ibcc/shock/ — integrate perfusion phenotype, echocardiography, clinical signs and vasopressors with lactate and blood gas, especially where PAC data are unavailable. General shock framework needs surgery-specific differential.
+4. **Right Ventricular failure** (2025-03-21): https://emcrit.org/ibcc/rv/ — explain effects of oxygenation, hypercapnia, PEEP, intrathoracic pressure, CVP/congestion on RV and systemic perfusion, particularly CABG/valve/aortic patients; RV-specific advice cannot be generalized to all cardiothoracic cases.
+5. **ARDS**: https://emcrit.org/ibcc/ards/ — refractory hypoxemia, driving pressures/ventilation and RV strain as relevant to lung-resection postoperative injury; guideline ARDS criteria must be verified separately and **post-lung-resection low P/F alone is not automatically ARDS**.
+6. **IBCC Table of Contents** (2026-03-07): https://emcrit.org/ibcc/toc/ — route to chapters on ECMO, right heart catheterization, nonanion-gap metabolic acidosis, metabolic alkalosis, respiratory acidosis; follow the precise chapter links when authoring actual lessons.
+
+### Per-article source targeting
+
+| CTICU draft | IBCC primary discussion | Independent verification |
+| --- | --- | --- |
+| 01 CABG lactate/ScvO₂ | cts + agma + shock | 2025 actual CABG series Table 1, CPB 2024 EACTS/EACTAIC/EBCP guideline, lactate physiology research; differentiate *measurement* vs *clinical conclusion* |
+| 02 Hb/DO₂/CO | cts + shock | CaO₂/DO₂ physical units and source measurement timing; evidence-based transfusion threshold (do not adopt IBCC rough Hb suggestion) |
+| 03 CPB acid–base | agma + cts | Pocket 9E p158–162; EACTS CPB acid–base and solution type; track albumin/chloride |
+| 04 alpha-stat vs pH-stat | cts as postoperative context only | Actual CPB guideline/temperature correction primary source; **IBCC is not sufficient** to teach alpha-stat/pH-stat |
+| 05 postoperative hypoxemia after resection | ards + rv | Reconstruct original post-resection case / radiology and ARDS diagnostic definition, isolate edema/atelectasis/aspiration |
+| 06 one-lung ventilation | rv + ards as mechanisms only | Thoracic anesthesia/one-lung ventilation specialty references; do not force IBCC to serve as a one-lung-ventilation guideline |
+| 07 post-extubation hypercapnia | agma (only mixed acid–base check) + rv where relevant | Existing hypercapnia/NIV/COPD articles; anesthesia/reintubation evidence |
+| 08 ventilator pH vs cardiac load | rv + ards + cts | Relevant CPB/postop and lung-protective mechanical ventilation guidelines |
+| 09 normal ABG, still ICU | cts + shock | Surgical complication risk, echocardiography, bleeding/tamponade assessment |
+
+### First-draft quality integration
+
+- For each candidate IBCC mechanism, create an **evidence check with exact claim, IBCC section URL, original patient observation or primary guideline/study, measured vs inferred, context where false**. This is a private reviewer work product, not added UI infrastructure.
+- Before first V1 freeze, source coverage should be sufficient to compose the entire clinical narrative. It must NOT require the user to remind the writer to explain basics (e.g., PAC/ScvO₂, lactate vs BE, FiO₂, V/Q, PEEP). Conversely, avoid dumping the entire IBCC chapter's checklist into one article.
+- **The CABG initial V1 is already immutable** (`b9f5ee1c9ab0719da4f657d7990c1a199c28cf92`). The IBCC research layer is a **post-freeze source addition**; do not retroactively mark that draft as if it had been produced with these sources. Later V2 should state which fixes derive from IBCC, original paper or independent reviewer.
+- Separate clinician-independent clinical QA / artifact score / reader comprehension. IBCC consultation does not satisfy any of these gates by itself.
