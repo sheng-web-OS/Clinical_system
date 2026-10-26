@@ -99,8 +99,8 @@
 <text x="180" y="448" text-anchor="middle" font-size="17" font-weight="700" fill="#8b3829">反事實：給予 AV nodal blocker</text>
 <text x="91" y="471" text-anchor="middle" font-size="14" font-weight="700" fill="#17536a">AV node</text>
 <text x="263" y="471" text-anchor="middle" font-size="14" font-weight="700" fill="#934824">Accessory pathway</text>
-<path d="M40 482 H127 M90 474 L104 491 M104 474 L90 491" stroke="#256c86" stroke-width="3" fill="none"/>
-<path d="M211 482 H318 M309 476 L319 482 L309 488" stroke="#b86b46" stroke-width="3" fill="none"/>
+<path data-qa-flow="av-node-blocked" d="M40 482 H127 M90 474 L104 491 M104 474 L90 491" stroke="#256c86" stroke-width="3" fill="none"/>
+<path data-qa-flow="ap-persists" d="M211 482 H318 M309 476 L319 482 L309 488" stroke="#b86b46" stroke-width="3" fill="none"/>
 <text x="92" y="506" text-anchor="middle" font-size="13" fill="#17536a">傳導被抑制</text>
 <text x="265" y="506" text-anchor="middle" font-size="13" fill="#934824">仍可能順傳</text>
 <text x="180" y="526" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8b3829">若 AP 高順傳：極短 RR → VF 風險</text>
