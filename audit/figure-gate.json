@@ -686,6 +686,15 @@
           "caption_token": "Pocket Medicine 9E Figure 3-3",
           "teaching_role": "Separate cholestatic localization evidence from urgent intervention while making ultrasound-negative obstruction a remaining hypothesis, not an exclusion.",
           "scope_limit": "This is not the publisher figure nor a deterministic biliary diagnosis tree. Patient stability and suspected cholangitis require parallel urgent assessment."
+        },
+        {
+          "locator": "Tokyo Guidelines 2018 A/B/C diagnosis plus grade I/II/III; 2026 SSC sepsis immediate therapy/source-control; ASGE 2021 and ESGE 2019 timing and procedural selection; Hong 2012 real nondilated cholangitis cohort",
+          "source_token": "Tokyo Guidelines 2018",
+          "mode": "illustrated",
+          "anchor": "fig-cholangitis-urgency-clocks",
+          "caption_token": "TG18",
+          "teaching_role": "Teach three PARALLEL rather than sequential tasks: establish biliary-origin suspicion, reverse organ hypoperfusion, and coordinate source control when a drainable biliary infection remains probable. Prevent equating A+B with definite diagnosis or any sepsis with mandatory ERCP.",
+          "scope_limit": "No actual site/source control intervention is automatically indicated from fever+ALP. TG18 C may be a visualized cause without dilatation. Time guidance is differentiated by clinical severity and evidence certainty."
         }
       ]
     },
