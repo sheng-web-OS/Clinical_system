@@ -62,14 +62,13 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 
 這就是 [第二篇](2026-10-26-preexcited-af.md)與 ACLS 真正接合的地方：regular monomorphic 只縮小了嘗試特定操作的風險範圍；當改成 irregular pre-excited AF，**操作本身的安全前提被推翻**。藥物沒有變，變的是被阻斷的 AV node 在當下 rhythm 中到底是迴路必需元件，還是限制心房衝動抵達心室的一道屏障。
 
-<figure id="wct-decision-figure" class="diuretic-figure" role="group" aria-label="三道急救決策界線原創閱讀圖">
-<div class="diuretic-figure-head"><span>FIGURE 04 · THREE DECISION BOUNDARIES</span><strong>每個分叉都只回答一件事：現在已經知道什麼，還不能假設什麼？</strong></div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px">
-<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>01 · CAUSALITY</small><h3>Rhythm 正在造成失衡嗎？</h3><p>若高度懷疑 arrhythmia causing shock，不等病因全部定案才救援；若是代償性 sinus tachycardia，治 underlying shock。</p></div>
-<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>02 · SHOCK MODE</small><h3>是哪種需要電擊的節律？</h3><p>有 pulse 且可同步的 unstable tachyarrhythmia：synchronized cardioversion；sustained polymorphic VT：立即 unsynchronized shock；無脈搏走 arrest 流程。</p></div>
-<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>03 · DRUG BOUNDARY</small><h3>試探本身在這節律安全嗎？</h3><p>Stable、regular monomorphic WCT，adenosine 僅可考慮；若 irregularly irregular／polymorphic／unstable 或疑 pre-excited AF，不得照搬。</p></div>
-</div>
-<figcaption><strong>圖 4｜教學判斷軸，不是 AHA 官方演算法的複製品。</strong> 判斷並非一定按三格依序完成；危急狀況需並行辨認並立即處置。請對照 [AHA 2025 原始 Adult Tachyarrhythmia With a Pulse Algorithm](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf) 與更完整的 [ALS §15–16](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)。</figcaption>
+<figure id="wct-decision-figure" class="diuretic-figure" role="group" aria-label="實際病例 irregular WCT 與轉律後預激對照，連結 ACLS 決策界線">
+<div class="diuretic-figure-head"><span>FIGURE 04 · ECG BEFORE THE DIAGNOSIS</span><strong>原始 WCT 長這樣：不能從 QRS 寬度直接開藥</strong></div>
+<a href="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/b2fc7153-320e-4d2b-a28a-0443e25d3345/assets/images/large/10.1177_2324709618802870-fig1.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/b2fc7153-320e-4d2b-a28a-0443e25d3345/assets/images/large/10.1177_2324709618802870-fig1.jpg" alt="Silverman 2018 發作中的 irregular wide-complex tachycardia：RR 間距不規則、QRS 外觀及寬度不同" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
+<p><strong>現在的判斷不是猜出 accessory pathway 位置。</strong> 這張 ECG 足以辨認「不規則＋QRS 寬度變異」，因此不能套用 stable regular monomorphic WCT 才可考慮 adenosine 的限定條件。尚未出現明確灌流衰竭時，也不能由 WCT 一詞直接推定一律需要電擊。</p>
+<p><strong>轉律之後才補上的資訊：</strong></p>
+<a href="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/ad05d429-0d11-4942-8d83-53da56dd71c1/assets/images/large/10.1177_2324709618802870-fig2.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/ad05d429-0d11-4942-8d83-53da56dd71c1/assets/images/large/10.1177_2324709618802870-fig2.jpg" alt="Silverman 2018 復律後 ECG：sinus tachycardia 合併 delta wave，支持 manifest pre-excitation" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
+<figcaption><strong>圖 4｜先判操作邊界，再補齊病因。</strong> 真實病例：Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB. 2018. <a href="https://doi.org/10.1177/2324709618802870">doi:10.1177/2324709618802870</a>；<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>；圖像未裁切或重繪。 第一張是治療前的證據，第二張是 100 J 同步電復律後的觀察；兩者不可倒置。2025 AHA <a href="https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">成人 tachyarrhythmia 官方演算法原檔</a>和<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">ALS 詳細建議</a>另行對照；原 AHA 圖未複製或冒稱本站重繪。</figcaption>
 </figure>
 
 ## 從真實病例回看：哪些資訊可以等，哪些不能？
@@ -96,7 +95,7 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 
 ---
 
-*本文以 2026/7/17 作者同名原稿的核心論證為起點，另製 AI 整合稿，未修改私人封存原稿。來源：[Pocket Medicine 9E，私人 PDF 第 67–68 頁](https://www.wolterskluwer.com/zh-tw/solutions/ovid/pocket-medicine-15398)（出版社書目，不是私人 PDF）；[2025 AHA ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)；[2023 ACC/AHA/ACCP/HRS AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)；[Silverman et al. 2018 真實病例](https://journals.sagepub.com/doi/10.1177/2324709618802870)。原始 WCT 圖與 ACLS 圖已核讀；公開圖示僅採原創結構或合法來源連結。*
+*本文以 2026/7/17 作者同名原稿的核心論證為起點，另製 AI 整合稿，未修改私人封存原稿。來源：[Pocket Medicine 9E，私人 PDF 第 67–68 頁](https://www.wolterskluwer.com/zh-tw/solutions/ovid/pocket-medicine-15398)（出版社書目，不是私人 PDF）；[2025 AHA ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)；[2023 ACC/AHA/ACCP/HRS AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)；[Silverman et al. 2018 真實病例](https://journals.sagepub.com/doi/10.1177/2324709618802870)。原始 WCT 圖與 ACLS 圖已核讀；本文直接嵌入經確認為 CC BY 4.0 之 2018 病例 ECG 並附完整來源與授權；AHA 2025 完整演算法僅提供原始來源連結，不複製 AHA 授權圖。*
 
 
 [**原圖、病例與 2025 AHA／2023 AF 來源逐項核對**](../arrhythmia-sources.md)。
