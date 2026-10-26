@@ -1,53 +1,10 @@
-# 肝纖維化已經存在，為什麼肝切片與 elastography 都不能直接給出全部答案？
+# 同一個 HBV 感染病人，HBsAg、HBcAg 與 HBV DNA 究竟各代表什麼？
 
-**108 年第一次醫師第二階段・醫學（三）Q13、Q14、Q15｜第六批官方真題深究・私人草稿**
+**108 年第一次醫師第二階段・醫學（三）Q15｜第六批官方真題深究・私人草稿。** 同批 Q13、Q14 的肝切片與非侵入纖維化評估另有[專篇](2026-10-27-exam108-biopsy-fibrosis.md)，此文只處理 HBV 病毒結構及抗原的觀察層，避免重複詳解。
 
-這三題其實沿著不同的「觀察層」接起來：Q13 是**組織取樣能看見多少結構**；Q14 是**沒有組織時，非侵入性訊號能推到什麼程度**；Q15 是**HBV 抗原與病毒粒子各代表什麼**。把三者寫成同一篇，不是因為都屬肝膽，而是它們有同一個推理邊界：**檢驗所測得的東西，不等於疾病真相的全貌**。
+這題不是死記 22／27／42 nm，而是辨認**病毒基因體、核心衣殼、外層包膜與游離病毒蛋白**的解剖位置，才能解釋為什麼血中不同 HBV marker 不會給出同一個臨床答案。
 
-官方歷史答案依序為 **Q13 A、Q14 B、Q15 C**。以下使用原題選項概念解說，不重製官方整份試卷。
-
-## 01｜Q13：切片能看見結構，但樣本不等於整個肝臟
-
-第 13 題問利用 liver biopsy 診斷病毒性肝病相關肝臟疾病時，何者錯誤。A 宣稱切片長度只要至少 0.5 cm 即足夠。官方選 **A**。
-
-為什麼五毫米如此關鍵？纖維化不是均勻地鋪滿肝臟；portal tract、中央靜脈與它們之間的連結、炎症與再生結節具有空間分布。組織切片若太短，可能缺少足量 portal tracts，並因 sampling variability 低估或錯判疾病的分期（stage）與炎症程度（grade）。因此，不能因為「確實抽到肝組織」就認定能代表全肝。
-
-AASLD 對 liver biopsy specimen adequacy 的資料強調切片長度、碎裂程度、portal tract 數量需要一起評估；一般約 1.5–2.5 cm 較能供病理判讀，理想檢體常以更長的組織與足量的完整 portal tracts 為目標。這不是把某個長度當成零風險確診閾值：**切片仍是局部抽樣，病灶分布不均、取樣技術與病理判讀都會影響結果**。[AASLD specimen adequacy 說明](https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/liver-biopsy-importance-and-interpretation)
-
-B 將慢性 C 型肝炎的早期纖維化指向 **portal/periportal region（zone 1）**，符合傳統病毒性肝炎造成 portal-based injury 的典型路徑；C 將代謝相關脂肪性肝炎（題目當年使用 NAFLD 的歷史術語）早期纖維化指向 **zone 3 perisinusoidal/perivenular**，亦符合成人 steatohepatitis 常見的起始型態。兩個疾病都可能進展到 bridging fibrosis／cirrhosis，因此此處的「初始分布」不是一條每位病人都固定的不可逆時間線。
-
-原題 D 的措辭「嚴重腹水或凝血異常時不能肝穿刺」需要特別拆解。**對傳統 percutaneous biopsy，嚴重腹水或重要凝血異常會改變出血風險與操作適宜性；但這不代表現今所有取得肝組織的路徑皆被封閉。** 在適當病人與機構條件下，可以評估 **transjugular liver biopsy（TJLB）** 等替代途徑。考試將 A 判為最明確錯誤選項，不能因此教成「凝血異常絕對不可能切片」。選擇技術仍須依血小板、凝血風險、腹水、病人狀況及醫療團隊能力決定，不可反向宣稱所有高風險病人均可做 TJLB。
-
-| Q13 選項 | 歷史試題判斷 | 今日必須補的界線 |
-| --- | --- | --- |
-| **A 0.5 cm 就足夠** | **官方答案：錯** | 取樣長度／portal tracts／碎裂都影響代表性；5 mm 不足以當通用充分標準 |
-| B HCV 早期 portal/periportal | 典型敘述可接受 | 不是每一塊組織都呈完全同一分布 |
-| C NAFLD/NASH 成人早期 zone 3 | 典型敘述可接受 | 新術語 MASLD/MASH；病程與兒童表型可能不同 |
-| D 嚴重腹水／凝血異常不能肝穿刺 | 反映傳統經皮取樣的風險 | 若理解成所有途徑「絕對不行」就過度概括；TJLB 為可考慮路徑 |
-
-## 02｜Q14：肝臟變硬不等於直接量到了纖維化面積
-
-Q14 說非侵入性肝纖維化檢測逐漸廣泛應用，問何者錯誤。官方答案 **B**：認為 FibroTest 等血清標記能在各種病因的肝病中都「精準判定各等級」纖維化。這個敘述的問題不是血清模型完全沒用，而是**跨病因、跨疾病盛行率及相鄰分期的準確性被過度承諾**。
-
-先把兩種方法所測的物理量拆開：
-
-- **Serum markers / composite scores**：測量蛋白、酵素或其他血清指標，再以統計模型估計進階纖維化的機率。例如某些模型包含 AST、ALT、血小板或專利生物標記。數值會受到病因、年齡、發炎與疾病組成等影響。它測得的是**與疾病有關的一組生物訊號**，不是直接看見纖維隔膜。
-- **Transient elastography（TE, 如 FibroScan）**：以機械波／彈性波傳播估算 liver stiffness，常以 kPa 表示；MRE 則藉 MRI 方式估計更廣範圍的組織機械性質。兩者測到的都是**硬度／力學訊號**，再經研究對照推論纖維化負荷，而不是一台「病理切片掃描器」。
-
-這帶出最關鍵的反事實：**在纖維化未改變時，只讓肝臟發生急性發炎、膽汁鬱積、右心鬱血，或讓受測者剛吃飽，肝硬度就可能改變。** 因此肝臟變硬，不能自動推成幾週內纖維化結構快速增厚。EASL 2021 非侵入性檢測指引明確提醒 inflammation、obstructive cholestasis、meal、exercise、venous congestion 皆可導致 stiffness 高估。[EASL NIT 指引](https://www.sciencedirect.com/science/article/pii/S0168827821003986)
-
-將 Q14 四項分開：
-
-| 選項 | 正確的範圍 | 容易越界的推論 |
-| --- | --- | --- |
-| A 血清標記與儀器測硬度是主要路線 | 可接受；兩者可串接用於風險分層 | 不是已經測得「病理分期」的絕對真值 |
-| **B FibroTest 可精準辨認各病因各纖維化等級** | **官方答案：錯** | 相鄰 staging 區分、不同病因及 cutoffs 的可轉移性有限；NIT 主要強項常在排除或辨認 advanced fibrosis |
-| C TE 快速但肥胖與腹水可能妨礙 | 可接受，需依設備與探頭差異說明 | 技術取得困難與「量到偏高」是兩種不同型態的失誤 |
-| D MRE 對分期整體準確性可優於 TE | 多項研究支持其較佳整體診斷表現 | 較準確不等於必須第一線使用；成本、可近性與研究族群仍重要 |
-
-這不是 NIT vs biopsy 的「假檢查與真檢查」對立，而是**非侵入檢查能反覆追蹤、適合人群分層；病理可以辨認組織型態，但會受樣本代表性與侵入性代價限制**。如果把兩者差異留在眼前，才能理解為何臨床可以先做 FIB-4／TE，再針對不一致或將改變治療的案例考慮其他檢查或切片。
-
-## 03｜Q15：病毒粒子、表面抗原、核心蛋白與 e 抗原不是同一層資訊
+## 第一問｜Q15：病毒粒子、表面抗原、核心蛋白與 e 抗原不是同一層資訊
 
 第 15 題問 HBV 病毒的敘述何者錯誤；**官方答案 C**。題目將約 27 nm 的 nucleocapsid（核心衣殼）描述成具有 HBsAg、DNA 與 DNA polymerase。錯在把 **HBsAg（surface antigen）** 置入核心衣殼的構造。HBsAg 主要與包膜及大量分泌的**非感染性 subviral particles** 相關，HBcAg 則是 nucleocapsid 主要核心蛋白；基因體 DNA 與 polymerase 位於核衣殼內。
 
@@ -64,25 +21,30 @@ A 所提 22 nm 球狀／絲狀顆粒很多，反映血中次病毒粒子非常�
 
 這一題要回接〈HBV phase，不是在替慢性肝炎分期〉及〈我們看見的是病程，還是病程留下的訊號？〉。**病毒粒子結構、血清 HBeAg／HBsAg、HBV DNA、ALT、組織纖維化各是不同層次的觀察。** 尤其 HBV DNA 很高但 ALT 正常時，不是測量矛盾，而是把 replication 與 hepatocyte injury 誤認為同一個量的假設錯了。
 
-## 04｜把三題合併成臨床推理：可觀察量、隱含狀態與決策不可混淆
 
-當病人有 HBV 感染、ALT 波動及 liver stiffness 增高，三道題分別提醒三種不能跳過的邊界：
 
-1. **病毒學標記**回答特定病毒蛋白／核酸與複製訊號，不直接等於目前肝細胞受傷程度。
-2. **肝硬度或血清模型**回答纖維化風險與力學／生物訊號，不直接等於病理的每一級結構分期。
-3. **肝切片**可提供病理資訊，但仍是空間抽樣；檢體長度、portal tracts、碎裂與取樣位置會影響能否得出可信判斷。
+## 第二問｜HBeAg 的 precore signal peptide 是成熟抗原的一部分嗎？
 
-真正能改變下一步的是跨層證據一致性：病毒學與 ALT 時序、血小板及肝功能、纖維化 NIT、影像、門脈高壓表現有沒有支持彼此？若不一致，應檢查量測條件與其他病因，而非強迫把所有數值排成「疾病越嚴重，任何檢查必定越高」的單一路線。
+原題 D 把 precore 產生的 protein 和訊號胜肽連在一起。Core 基因區的不同起始位置可產生 HBcAg 的核心蛋白，或帶有額外 N-terminal precore 序列的前驅蛋白。後者的 signal peptide 將前驅蛋白導入 endoplasmic reticulum（ER）的分泌途徑；之後經 N-terminal signal peptide cleavage 與其他蛋白水解處理，最終產生可分泌的 HBeAg。**所以「前驅蛋白有 signal peptide」為真，不等於「成熟血清 HBeAg 保留那 19 個胺基酸」**。這是學會看懂 D 選項時不可跳過的時間順序。2025 年 HBV nucleocapsid assembly review 的 Figure 2D 提供從 precursor 到 mature HBeAg 的蛋白加工路徑，適合作為圖像驗收的候選公開來源，但並非 Pocket Medicine 原圖。
 
-**最後：切片是局部結構證據，彈性掃描是機械性質推論，血中抗原是病毒／宿主互動的訊號。三者各有高價值，但不能互為替身。**
+## 第三問｜病毒顆粒數量，為何不能直接等同肝細胞損傷？
 
-## 來源、版本與閱讀銜接
+22 nm HBsAg-rich subviral particles 大量出現在血液，卻缺乏完整病毒基因體，因此不是可感染的完整 Dane particle。血清 HBsAg、HBeAg、HBV DNA 的量測分別反映病毒蛋白、分泌產物與核酸複製相關狀態；**ALT 更多代表 hepatocyte injury 的血中訊號**，而肝纖維化 stage 記錄較長時間累積的組織變化。它們有相關性，不能視為同一變項。
 
-- [108（一）醫學（三）Q13／14／15 原題、標準答案及更正](../exam108-integrated-batch6-sources.md)：A／B／C。Q33 更正為一律給分，與本三題無關。
-- [AASLD: The Liver Biopsy — Importance and Interpretation](https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/liver-biopsy-importance-and-interpretation)，2020；切片充分性、transjugular route。
-- [AASLD Liver Biopsy Practice Guidance](https://www.aasld.org/practice-guidelines/liver-biopsy)，2009，作為歷史對照而非現行所有操作的唯一依據。
-- [EASL NIT guideline 2021](https://www.sciencedirect.com/science/article/pii/S0168827821003986)：NIT 應用及 stiffness confounders；不按任意門檻為本病例直接指定 stage。
-- HBV 結構及 HBeAg 的細部分子敘述仍待 Pocket 9E 原頁與病毒學專門一級文獻交叉校對；**Q15 僅完成官方選項與基礎結構一致性核讀，不宣稱已完成最終高風險分子層驗收**。
-- 接續原本〈肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？〉與 HBV phase 兩篇：本批保留官方真題身分，不取代長文的原作者版本。
+這也說明為什麼近期〈HBV phase，不是在替慢性肝炎分期〉與〈我們看見的是病程，還是病程留下的訊號？〉的中心問題，不是 ALT 與 HBV DNA 哪個數字較大，而是**不同生理層次的測量能否被錯誤地串成單向嚴重度階梯**。
 
-**出版狀態：私人草稿。** Pocket Medicine 9E 的對題圖表、caption、footnote 尚未逐圖完整目視；Q15 機轉來源亦待增補，故目前不進公開 manifest、不宣稱完成醫學發布 Gate。
+另有一項必須保留的歷史測量界線：考卷中的 **約 27 nm nucleocapsid** 屬傳統電顯描述；現代 cryo-EM 研究的核心衣殼直徑可能報告為不同數值（例如約 36 nm），因結構及測量條件而異。不能把舊考題的名義尺寸當成所有技術下的恆定物理數值；**本題 C 的明確錯誤仍然是將 HBsAg 放進 nucleocapsid**，不取決於取 27 或 36 nm。
+
+## 逐選項結語
+
+**A**：血中可見大量 22 nm 非感染性表面抗原相關球形／絲狀粒子，概念成立。**B**：具有包膜的約 42 nm 完整 Dane particle 及其與 22 nm 粒子的數量對比，是傳統 HBV 形態學敘述；比例不應被當成每位病人固定常數。**C**：將 **HBsAg** 當成約 27 nm 核心衣殼的結構成分，**官方答案，錯誤**。**D**：precore-derived precursor 具分泌導向的 signal peptide，屬前驅蛋白加工流程，整體方向可接受；成熟 HBeAg 須與 precursor 分開。
+
+## 文獻、原書與驗收邊界
+
+- [考選部官方原卷、標準答案及更正公告](../exam108-integrated-batch6-sources.md)：108（一）醫學（三）Q15，官方 **C**。
+- [Medical Microbiology：Hepatitis Viruses](https://www.ncbi.nlm.nih.gov/sites/books/NBK7864/)：傳統 42/27/22 nm 顆粒及表面抗原定位。
+- [Hepatitis B virus entry, assembly, and egress](https://pmc.ncbi.nlm.nih.gov/articles/PMC11653734/)：HBsAg、HBcAg、precore 的形成及各位置。
+- [Hepatitis B Virus Nucleocapsid Assembly](https://pubmed.ncbi.nlm.nih.gov/40316009/)，2025：圖 2D，前驅蛋白經 ER 與 Golgi 加工形成 HBeAg；PubMed 文獻圖不是小麻原圖。
+- [HBsAg: an evolved perfection and unresolved mysteries](https://doi.org/10.1016/j.virol.2025.110527)，2025：27 nm 為早期歷史測量，近期結構研究的衣殼尺寸可能不同。
+
+**出版狀態：私人草稿。** 官方答案與相關病毒學綜述已核；Pocket Medicine 9E 是否含與此題直接相符的圖表及註腳，仍須實際逐頁核查。尚未註冊 Figure Gate、加入年度公開目錄或完成手機排版與獨立醫學審查。
