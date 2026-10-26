@@ -84,3 +84,16 @@ Marchand E, d’Odemont JP, Dupont MV. *A Patient with GOLD Stage 3 COPD « cure
 **公開版圖像邊界：** Pocket Medicine 9E reader PDF pp79–80、85、86、87 的四張原始圖表已在私人稿擷取、目視並留存，**未取得可證明其在公開網站重製的授權**，因此新版公開正文只保留原書定位、獨立文字解讀與原創機轉／分類圖；現行 GOLD 官方原圖以官方網址連結，不冒稱代替小麻原圖。Marchand 2019 原病例 Figure 1 以 CC BY 4.0 授權的期刊來源圖片連結及署名展示，不重新編修。Pocket p87「eos ≥2%」與其 STARR2 引文不符的疑義尚未完成更正全文驗證；正文不可把該字句作停用全身性類固醇的條件。既有私人完整版不是可供公開存取的頁面。
 
 **驗證界線：** 已完成病例數據的逐項表面一致性核查與編輯核對；不聲稱完成獨立臨床同儕審查、實體 iPhone／Safari 測試或外部出版授權的法律認定。網站 build、GitHub CI、Cloudflare deployment 與 HTTPS 顯示須分別驗證。
+
+
+## 2026-10-26 公開替代圖 V2.2：對應四張 Pocket 原圖與換氣推理
+
+本輪修正公開正文移除 Pocket 原圖後沒有提供足夠實質圖像的發布缺陷。在原 COPD 正文中**新增五張真正的原創 SVG**，並保留既有的 RV/TLC 對比與呼氣流速兩張原創 SVG。原 CT 由 Marchand 2019 期刊授權連結提供。這些新圖不是以原書原圖裁切、描摹、重新上色，而是只以經核讀的醫學概念與資料**獨立建構**。
+
+1. `#copd-definition-boundaries`｜用肺泡氣腔與支氣管黏液的結構簡圖，對比肺氣腫、慢性支氣管炎、COPD 功能確診三種證據；對應 Pocket Medicine 9E PDF p85 `Emphysema vs. Chronic Bronchitis`。示意圖無病人影像。
+2. `#copd-pft-branches`｜以 Post-BD FEV₁/FVC 與獨立的 TLC、RV/TLC、DLCO 測量目標構成判讀流程，顯式保留固定 0.70 與 LLN 的不同目的；對應 Pocket Figure 2-1 reader pp79–80 和 [GOLD 2026 診斷流程](https://goldcopd.org/2026-gold-report-and-pocket-guide/)。不是完整 PFT 鑑別圖。
+3. `#copd-treatment-targets`｜按 [GOLD 2026 Figure 3.8](https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf) 重建「前一年至少一次中／重度惡化即 E、否則症狀分 A/B；維持藥物起始與 follow-up 必須區隔」的教學路徑，並把 ICS 的 eos ≥300 條件標為「可考慮」。小麻 PDF p86 採 GOLD 2024 舊版分流；本站圖非原書或 GOLD 圖重製。
+4. `#copd-effective-ventilation`｜兩條同為每分鐘 6 L 的通氣堆疊條，依**教學假設** VT=500/250 mL、f=12/24、VD=150mL/口 計得 V̇A=4.2/2.4 L/min。綠色表示有效換氣，棕色表示公式中的非有效死腔部分；不可視為患者直接量測或單一 COPD 模型。
+5. `#copd-acute-decision`｜將給氧 SpO₂ 88–92%、高 CO₂ 合併酸中毒且仍能保護氣道時評估 bilevel NIV、NIV 2 小時內的 pH／呼吸功重新評估、氣道保護或循環不穩立即升級處理分別標示；對應 Pocket PDF p87 `COPD Exacerbation Treatment`，並以 GOLD 2026、ERS/ATS NIV、BTS quality standards 核對。三個橫列是**並行風險軸，非氧療→NIV→插管的必要順序**。
+
+**圖像公開權利契約不變：** 四張 Pocket 原截圖仍存私人 archive，不在 public/site/images 發行檔；私人來源定位與原圖摘錄並不構成出版社授權。新的 SVG 完全由本站編輯產生，不引用任何未授權的原圖像素。建置可驗證錨點、圖說與連結，但無法獨立驗證真實手機螢幕的清晰度、影像版權最終法律認定或臨床教學學習效果。修訂後需驗證 SVG 實際公開渲染、三道病例題及外部 CT 圖片仍可訪問，並記錄版本的 PR／main SHA、CI、Cloudflare 部署和 HTTPS 顯示。
