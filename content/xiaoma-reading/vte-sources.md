@@ -24,18 +24,22 @@
 3. European Society of Cardiology / European Respiratory Society 2019 guideline, acute PE: https://academic.oup.com/eurheartj/article/41/4/543/5556136
    - PE 需先分辨 hemodynamically unstable/high-risk pathway 與 stable diagnostic pathway；床邊評估、緊急治療與確診影像的時序依病人狀態決定。
 
-## 新增圖與原書元素的對照
+## 2026-10-27 圖像品質修訂：撤回原創文字流程圖
 
-| 原創圖 | 圖形應傳達的不可省略差異 | 教學來源 | 未能推論 |
+前版 Figure 01 將 venous thrombus formation 後的 DVT 與 PE 畫成平行箭頭，容易錯誤暗示兩個結果沒有 embolization 的解剖連結；Figure 02／03 則把文字卡排列誤作診斷圖，無法呈現真實 Wells 分流與停止條件。原圖 **visual QA 判定不合格，撤回**，不得以「結構存在／響應式／圖說齊全」視為教學驗收。
+
+| 替換段落 | 來源與授權 | 圖中可以讀出的事 | 禁止過度推論 |
 |---|---|---|---|
-| Figure 01 · Shared substrate | Virchow triad → 形成血栓的共同上游 → DVT/PE 可能呈現；不存在 DVT 必然進展 PE 的直線 | PDF p97 definitions / risk factors / prophylaxis table；ASH ppx | 不能以血栓背景判斷目前是否存在 DVT/PE；不給預防劑量 |
-| Figure 02 · Two hypotheses | 同樣 risk factors，腿部與心肺症狀產生不同的 competing diagnoses 和 Wells pretest | PDF p98 DVT Wells、p98–99 PE Wells | 不是可以替代 Wells 原表的完整計分器；不能直接套用住院與特殊族群 |
-| Figure 03 · D-dimer/stop | D-dimer 是定位能力低的纖維蛋白分解訊號；診斷演算法由 pretest probability 決定排除／成像；CUS 與 CTPA 有不同陰性邊界 | PDF p98–99 Fig 2-2/2-3 文字定位；NICE NG158 | 原圖本輪已核對；此原創圖不是完整 algorithms，無法取代臨床判斷 |
+| Figure 01 · 解剖位置與可發生的 embolization | Blausen.com staff (2014), [Deep Vein Thrombosis](https://commons.wikimedia.org/wiki/File:Blausen_0290_DeepVeinThrombosis.png), **CC BY 3.0**，公開使用依原版標註、不裁切。DVT→PE 連結另以 [CDC 2025](https://www.cdc.gov/blood-clots/about/index.html) 與 [NHLBI](https://www.nhlbi.nih.gov/health/venous-thromboembolism) 定義核對 | 下肢靜脈血栓可以脫落並經右心進入肺動脈；預防介入在風險／形成層級 | DVT 並非人人變 PE，PE 也不必然查到殘存下肢 DVT；Blausen 原圖本身只有 DVT |
+| Figure 02 · 疾病假說比較與 NICE 兩路原圖 | [NICE NG158 2023 recommendations](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 及 [官方 visual summary PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893)（只提供原始連結，不複製官方流程圖像素） | Wells DVT vs Wells PE 是不同疾病假說與兩個不同成像目標；採 NICE 二層門檻 | 不將 NICE 的 two-level 與小麻原書的 other-level Wells 切換混算；文字對照表不冒充演算法 |
+| Figure 03 · 單一真實病例的兩個解剖部位 | An et al., [JKMS 2022 Fig.5](https://doi.org/10.3346/jkms.2022.37.e76), **CC BY-NC 4.0**（原圖未改動，注明僅限非商業利用）；[NICE 官方原流程](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 別行引用 | 同一病人 CTPA 可見 PE，CTV/Color Doppler 可見 popliteal DVT；各回答不同解剖問題 | 不是每位 PE 都必有 DVT，也不能把 color Doppler 圖說成 compression ultrasound 的 noncompressibility；病例影像不替代診斷停止流程 |
+
+**法律／工程邊界。** JKMS 圖受 NC 條款限制；僅可在符合非商業性質的發布條件下使用。兩張影像以原網站檔案網址嵌入，有外部站點連線、轉址或熱連結失效風險，必須於預覽／正式站逐一確認實際載入；若不符授權或無法載入，需改成原文連結並 HOLD 圖像發布，不能以破圖正式發布。NICE 圖由官方連結直接核對，不以本站自畫的錯誤縮略版代替。
 
 **醫學需要主動保留的例外：** (a) hemodynamic instability / high-risk PE 優先急救，不等待正常 D-dimer 流程；(b) negative proximal ultrasound ≠ negative whole-leg ultrasound；(c) 若 PE 不能直接做 CTPA，V/Q scan 及有時候確診 proximal DVT 都可能影響是否需要 CTPA，但不能把腿部 US 寫成能顯示肺動脈 filling defect；(d) 若已使用 anticoagulation、症狀持續時間異常或 D-dimer test sensitivity 有限制，陰性解讀需小心。
 
 ## 圖像與來源界線
 
-三張 HTML/CSS 圖解均是原創，分別呈現共同生成條件、不同疾病假說與停止診斷的條件；沒有逐欄複製 Wells 計分表。Pocket Medicine 原書 Figure 2-2、Figure 2-3 與 Thromboprophylaxis 表只作私下核讀，未在本站重製。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
+舊版三張 HTML/CSS 圖解因教學幾何與證據呈現不足已在本次修訂撤回；現分別使用具註明來源的 DVT 解剖圖、依 NICE 的對照表與官方流程連結，以及有明確病例來源的 DVT/PE 影像。Pocket Medicine 原書 Figure 2-2、Figure 2-3 與 Thromboprophylaxis 表只作私下核讀，未在本站重製。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
 
 完成 AI 來源與安全／編輯審查，未經獨立醫師同儕審查。NICE 原站本輪部分開啟回傳限制；可取得的官方索引推薦與既有查核紀錄均和原書逐項比對，沒有宣稱逐頁重讀整份指南。特別保留「proximal DVT 可以在適當情境支持 VTE 治療，但不等於直接顯示肺動脈血栓」與「影像陰性須結合品質和前測機率」兩項界線。
