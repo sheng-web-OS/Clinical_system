@@ -22,7 +22,7 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 本輪取回完整 PDF 文字並核對：24 歲、初始 HR >200、SBP 約130、兩次 IV amiodarone 各150 mg 未終止、同步電復律後見預激、EP 定位 right posteroseptal pathway 並消融。原文與圖說的窄／寬搏動頻率是同一張不規則記錄的描述，不是兩次獨立的穩定性測試。本文不增加原報告沒有的檢查或反應，也不把當年的 amiodarone 使用當成現行建議。
 
-原文標示 CC BY 4.0。先前版本選擇只連回 Figure 1 而未提供 ECG；本次修訂分支已改成透過原始期刊圖片 URL 直接嵌入 Figure 1–3（CC BY 4.0，未裁切／未重畫），WPW 與 WCT 的主要圖示亦已相應更換。讀者可在原始 PDF 核對圖像與數據，原創概念圖不冒充病例 ECG。
+原文標示 CC BY 4.0。先前版本選擇只連回 Figure 1 而未提供 ECG；現行建置稿已將原始期刊 Figure 1–3（CC BY 4.0，未裁切／未重畫）加入網站發行階段的本地資產，而非讀者端的熱連結，WPW 與 WCT 的主要圖示亦已相應更換。讀者可在原始 PDF 核對圖像與數據，原創概念圖不冒充病例 ECG。
 
 ## 原刊 Figure 1–3 的分層證據（第二篇嵌入的 ECG）
 
@@ -33,16 +33,16 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 3. **Figure 2：after 100 J synchronized cardioversion**（原刊 PDF p.2）：sinus ECG 才出現清楚 delta waves，支持 manifest pre-excitation；不能把後驗 ECG 當作轉律前絕對必要的資訊。
 4. **Figure 3：after successful right posteroseptal AP ablation**（原刊 PDF p.3）：delta waves 消失，T-wave memory 表現需結合 EP 檢查解釋，不能單靠 T 波證明已完成消融。
 
-原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870。本站 Figure 02 已透過PMC 對應的原始期刊 Figure 1–3 圖檔入口直接顯示（未裁切）；點圖可放大。期刊 [PDF 第 2 頁](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 亦可對照圖說。遠端圖像的手機瀏覽與跨站存取仍須於發布前驗證。
+原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870。本站 Figure 02 的三張影像來自 PubMed Central 的正式原始 JPEG，由現有網站建置程序下載、驗證 JPEG 與原始尺寸，再打包在本站 `assets/silverman-2018-fig1.jpg`～`fig3.jpg`，點圖可放大；未裁切或重繪。期刊 [PDF 第 2 頁](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 亦可對照圖說。建置成功不等於手機閱讀清晰度合格，發布後仍需真實 viewport 渲染與圖像語意驗收。
 
 ## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（已列入發布清單；圖片更新待合併）
 
 - **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，均標示 CC BY 4.0；原圖未裁切、未重畫。
-- **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，PubMed Central [Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。2026-10-27 生產環境視覺 QA 已證實原 SAGE CDN 連結破圖，已改用 PubMed Central 原始文章圖檔入口。本站仍未將原件存成本地資產；新的公網渲染與手機判讀 QA 必須在部署後獨立執行，不因 URL 替換即宣稱通過。
+- **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，PubMed Central [Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。2026-10-27 生產環境視覺 QA 已證實原 SAGE CDN 連結破圖，已改用 PubMed Central 原始文章圖檔入口。原刊圖仍未以二進位 blob 寫入 Git；現改用 `tools/fetch_arrhythmia_figures.py` 在每次網站建置時驗證原始 JPEG（753×536、753×341、753×343）並產生發行站內的 `assets/` 檔案；任何一張圖下載或校驗失敗時阻擋整次建置。新的公網渲染與手機判讀 QA 仍須獨立執行，不因建置通過即宣稱視覺品質合格。
 - **Figure 04（WCT 臨床證據）**：使用同一 2018 病例 Figure 1/2，表達處置前與處置後證據落差。不要把前後圖說混成兩個 WCT 診斷實驗。
 - **AHA 2025 成人 tachyarrhythmia 原圖**：仍維持[原始 PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)直接引用，不鏡像、不重製完整流程圖；公開可讀不等於自由授權再利用。
 
-**更新狀態**：2026-10-27 讀取現行 `main` 的 `site/pages.json` 後確認，三篇文章已列入正式發布清單（`ai_editorial_review`、`navigation=false`）；先前審查紀錄宣稱「未列入」已過時。此次圖像以 HTML `img` 寫入修訂分支（依原始圖片 URL 遠端載入），改圖提交不等於 Cloudflare 已更新；在合併、部署與公網驗證前不宣稱新圖已上線。原圖目視已透過公開原圖頁核對，整體醫學獨立同儕審稿仍未完成。
+**更新狀態**：2026-10-27 讀取現行 `main` 的 `site/pages.json` 後確認，三篇文章已列入正式發布清單（`ai_editorial_review`、`navigation=false`）；先前審查紀錄宣稱「未列入」已過時。此次圖像由 `tools/fetch_arrhythmia_figures.py` 在建置時收錄，HTML `img` 直接引用站內 `assets/silverman-2018-fig*.jpg`，改圖提交不等於 Cloudflare 已更新；在合併、部署與公網驗證前不宣稱新圖已上線。原圖目視已透過公開原圖頁核對，整體醫學獨立同儕審稿仍未完成。
 
 ## 現行 Figures 對應範圍
 
@@ -55,6 +55,6 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 ## 2026-10-27｜原始 ECG 圖源失效修復與剩餘風險
 
-此前直接使用 SAGE asset CDN 熱連結雖在文章內有 `img` 標籤，正式 Cloudflare 網站於 390px 真實瀏覽器截圖卻顯示破圖而非 ECG，屬於**視覺證據未交付**。現有公開文章改以 PubMed Central 的正式圖檔入口（PMCID [PMC6166305](https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/)）載入 Figure 1–3；對照同病例原始 Figure 1 治療前、Figure 2 電復律後、Figure 3 消融後。這是修復來源交付，不表示案例的治療史可外推為現行指南。
+此前直接使用 SAGE asset CDN 熱連結雖在文章內有 `img` 標籤，正式 Cloudflare 網站於 390px 真實瀏覽器截圖卻顯示破圖而非 ECG，屬於**視覺證據未交付**。新建置稿改為在發布建置階段由 PubMed Central 正式圖檔入口抓取（PMCID [PMC6166305](https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/)）載入 Figure 1–3；對照同病例原始 Figure 1 治療前、Figure 2 電復律後、Figure 3 消融後。這是修復來源交付，不表示案例的治療史可外推為現行指南。
 
-目前方案仍是由公共學術存放庫提供原像素的**外部圖像**，並非本地保存的二進位 ECG。曾被正式記錄為 P0 的本地資產、截圖／naturalWidth 與不同裝置 QA 門檻仍然保留（GitHub Issue #79、PR #78）；若本次實際渲染再度失敗，繼續 HOLD，不可退回文字卡。AHA 成人 tachyarrhythmia 流程圖僅連到 AHA 原始來源，未重製或自行宣稱授權。
+本次方案只在**建置端**連到公共學術存放庫，發行站點由 Cloudflare 提供三張本地 JPEG；Git 儲存可重建的下載規格、預期尺寸、來源與教學契約，非二進位 blob。由 `site/build.py` 在正式建置中執行圖像完整性檢查，搭配既有產出連結驗證。GitHub Issue #79 與 PR #78 的實際 390px／桌面截圖、`naturalWidth`、ECG 醫學判讀與來源授權門檻**仍保留**；不能因圖片改為本站來源就宣稱手機或獨立醫學審查通過。AHA 成人 tachyarrhythmia 流程圖僅連到 AHA 原始來源，未重製或自行宣稱授權。
