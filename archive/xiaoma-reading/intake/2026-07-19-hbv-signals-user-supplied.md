@@ -1,0 +1,79 @@
+我們看見的是病程，還是病程留下的訊號？
+2026.07.19 小麻閱讀（9E）
+—— 從 chronic HBV infection 回看 phase 與 ALT
+
+上一篇將 HBV phase 與 fibrosis stage 分開。Phase 用來描述目前的病毒—宿主互動，stage 記錄過去已經累積的結構結果。
+
+但還有一層沒有拆開：
+
+Phase 也不是我們直接看見的病程。
+
+臨床看見的是 HBeAg、HBV DNA 與 ALT，再根據它們的組合與時間變化，推論病人目前較接近哪一種 phase。
+
+這個差異，在 HBV DNA 極高、ALT 卻正常時變得特別明顯。
+
+病毒明明大量複製，ALT 為什麼可以正常？
+
+最直覺的病程模型是：病毒越多，hepatocyte destruction 越嚴重，ALT 也應該越高。
+
+但 HBV replication 並不會依照 viral load 高低，等比例直接破壞 hepatocyte。Chronic HBV 中可見的 necroinflammatory activity，很大一部分來自宿主免疫系統辨識並攻擊 infected hepatocytes 後產生的 injury。
+
+HBV DNA 比較接近病毒複製；ALT 則必須等到病毒—宿主互動造成 hepatocyte injury，使細胞內酵素釋放進入血液後，才會升高。
+
+因此，高 HBV DNA、正常 ALT，表示 virological activity 很高，卻沒有同步出現明顯的 biochemical injury。反過來，宿主免疫反應增強時，ALT 可以升高，HBV DNA 卻未必以相同比例增加，甚至可能隨病毒受到控制而逐漸下降。
+
+所以「HBV 很 active」並不是一個完整的描述。
+
+它可能指病毒正在大量複製，也可能指宿主正在產生 active hepatitis。前者由 HBV DNA 接近，後者才由 ALT、histology 與其他證據共同推論。
+
+病毒活動與肝炎活動彼此相關，卻不是同一件事。
+
+ALT 沒有升高時，究竟是哪一件事沒有發生？
+
+ALT 正常，最接近的解釋不是 hepatocyte injury 完全不存在，而是目前沒有足以使 serum ALT 跨過 threshold 的 enzyme release。
+
+但這句話不能反向延伸成病毒沒有複製、宿主沒有與病毒互動，或病程沒有繼續。
+
+相同的正常 ALT，可以出現在 HBV DNA 極高的 HBeAg-positive chronic infection，也可以出現在 HBV DNA 很低的 HBeAg-negative chronic infection。兩者表面上都沒有明顯 aminotransferase elevation，上游狀態卻完全不同。
+
+因此，正常 ALT 不能單獨替病人命名 phase。
+
+它也可能漏掉抽血之間的波動，或尚未形成明顯 enzyme release 的低度變化。即使 ALT 持續正常，也只是降低目前存在明顯 necroinflammatory activity 的可能性，不能擴張成完整的安全證明。
+
+這正是 phase table 最容易被忽略的限制。
+
+Phase 並不是藏在病程背後、等待檢驗揭露的生物學實體，而是根據有限 markers 對病毒—宿主互動所建立的臨床模型。當 HBeAg、HBV DNA 與 ALT 沒有形成典型組合，病人便落入 indeterminate phase。這不只是多出一個分類，也暴露出連續而變動的生物學，無法永遠被幾個 thresholds 完整切開。
+
+因此，檢驗沒有變化，不代表病人沒有移動。
+
+它只能表示，病程尚未以這項檢驗能辨識的方式改變。
+
+如果 ALT 只能看見已經浮出的 injury，為什麼治療仍然以它為門檻？
+
+當 HBV DNA 持續高於具有臨床意義的範圍，ALT 也反覆或持續升高時，在排除其他 liver injury causes 後，病毒複製與 hepatocyte injury 兩項證據開始匯合。此時，眼前的 injury 由 HBV-related hepatitis 所造成的可能性更高，抗病毒治療的獲益也更容易確認。
+
+因此，ALT 是重要的治療證據。
+
+但治療門檻不是病程開始的時點。
+
+ALT 從正常跨過 ULN，不表示病毒與宿主直到那一刻才開始互動；達到特定倍數，也不表示肝臟突然切換成另一種本質。Threshold 只是將連續而不完全可見的病程，轉化成可以執行的 action rule。
+
+如果治療目的只是控制已經出現的 active hepatitis，等待 ALT elevation 相對合理。
+
+但 chronic HBV treatment 也在預防未來的 fibrosis progression、cirrhosis 與 HCC。當目標從回應目前可見的 injury，移向避免未來不可逆的結果，ALT 便不能單獨決定何時值得介入。
+
+這不表示所有正常 ALT 的 chronic HBV 都應該立刻治療。
+
+正常 ALT 仍然降低目前存在明顯 active hepatitis 的可能性；對年輕、沒有 significant fibrosis、未來事件風險較低的病人，提早治療能增加多少長期獲益，仍有不確定性。
+
+但正常 ALT 也不能否定其他證據。當年齡、fibrosis stage、family history 或其他進展風險改變時，繼續等待 injury signal 升高的代價也會改變。不同指引以不同方式將這些因素放回治療判斷，正是在補上 ALT 無法單獨回答的部分。
+
+ALT 的限制，不只是它不專一，也不只是它不能反映 fibrosis 或 liver function。
+
+更根本的限制是，它必須等到病程轉化為 hepatocyte injury，才有機會在血液中被看見。
+
+HBeAg、HBV DNA 與 ALT，讓病毒—宿主互動的不同面向得以被觀察；phase 再將這些 markers 的組合與時間變化，壓縮成可使用的臨床模型。Marker 是觀察，phase 是推論，treatment threshold 則把推論轉化成行動。三者都不是病程本身。
+
+因此，正常 ALT 既不是治療的自動否決，也不是提早治療的充分理由。
+
+真正需要判斷的，是在 injury 尚未明顯浮出血液以前，我們已有的其他證據，是否足以使繼續等待的風險，超過現在行動的代價。
