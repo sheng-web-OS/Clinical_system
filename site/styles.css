@@ -394,3 +394,35 @@
 .vte-urgent-note strong,.vte-urgent-note span{display:block}
 .vte-image-columns{margin-top:.85rem}
 @media(max-width:680px){.reading-prose .reasoning-figure,.reading-prose .vte-figure{padding:1rem;margin:1.5rem 0;border-radius:10px}.reading-prose .reasoning-cards,.vte-branches,.vte-evidence-grid,.vte-image-columns,.vte-risk-row{grid-template-columns:1fr}.vte-flow-diverge{display:none}.reading-prose .reasoning-cards>section{padding:.9rem}}
+
+/* Liver-test teaching charts: magnitude/ratio and marker divergence, not text cards. */
+.reading-prose .liver-pattern-figure,.reading-prose .liver-course-figure{background:var(--surface);padding:clamp(1rem,3vw,1.7rem)}
+.reading-prose .liver-figure-intro{font-size:.91rem;line-height:1.7;margin:.2rem 0 1.15rem}
+.liver-scale{display:flex;justify-content:space-between;margin:0 3.55rem .35rem 3rem;font-size:.72rem;font-variant-numeric:tabular-nums;color:var(--muted)}
+.liver-pattern-examples{border-block:1px solid var(--line)}
+.liver-pattern-example{padding:.85rem 0}
+.liver-pattern-example+.liver-pattern-example{border-top:1px solid var(--line)}
+.liver-example-heading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-size:.96rem;line-height:1.55}
+.liver-example-heading>span{font-family:ui-monospace,monospace;font-size:.9rem;font-weight:700;color:var(--ink);white-space:nowrap}
+.reading-prose .liver-pattern-example p{font-size:.76rem;line-height:1.45;margin:.12rem 0 .65rem;color:var(--muted)}
+.liver-measure{display:grid;grid-template-columns:2.4rem minmax(0,1fr) 3.15rem;gap:.5rem;align-items:center;margin:.25rem 0}
+.liver-measure-name,.liver-measure-value{font-size:.79rem;font-weight:650;font-variant-numeric:tabular-nums;line-height:1.5}
+.liver-measure-value{text-align:right}
+.liver-bar-track{position:relative;height:1rem;display:block;border-radius:3px;overflow:hidden;background:repeating-linear-gradient(to right,var(--brand-light) 0,var(--brand-light) calc(33.333% - 1px),var(--line) calc(33.333% - 1px),var(--line) 33.333%)}
+.liver-bar-fill{display:block;height:100%;min-width:3px;border-radius:3px}
+.liver-bar-alt{background:#277999}.liver-bar-alp{background:#ae6d32}
+.liver-figure-inference{margin-top:1rem;border-left:3px solid var(--brand);padding:.65rem .9rem;background:var(--brand-light);font-size:.84rem;line-height:1.75}
+.liver-trend-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.liver-trend{min-width:0;padding:1rem;border:1px solid var(--line);border-radius:9px}
+.liver-trend>strong{display:block;font-size:.9rem;line-height:1.5}
+.liver-trend-reading{display:block;font-size:.82rem;font-weight:750;margin:.1rem 0 .35rem;color:currentColor}
+.liver-trend-injury{color:#26758f}.liver-trend-function{color:#a65b38}
+.liver-trend>strong{color:var(--ink)}
+.liver-trend svg{display:block;width:100%;height:auto;overflow:visible}
+.liver-trend-grid{stroke:var(--line);stroke-width:1.4;fill:none;stroke-dasharray:4 6}
+.liver-trend-line{stroke:currentColor;stroke-width:5;fill:none;stroke-linecap:round}
+.liver-trend circle{fill:currentColor}
+.liver-time-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:.75rem;line-height:1.6}
+.reader-page.dark .liver-bar-alt{background:#69b8d5}.reader-page.dark .liver-bar-alp{background:#eab080}
+.reader-page.dark .liver-trend-injury{color:#83cbe2}.reader-page.dark .liver-trend-function{color:#f1af87}
+@media(max-width:680px){.liver-trend-panels{grid-template-columns:1fr}.liver-trend{padding:.75rem}.liver-scale{margin-right:3.3rem;margin-left:2.85rem;font-size:.68rem}.liver-example-heading{font-size:.86rem}.reading-prose .liver-pattern-example p{font-size:.74rem}.liver-measure{gap:.38rem;grid-template-columns:2.2rem minmax(0,1fr) 2.95rem}}

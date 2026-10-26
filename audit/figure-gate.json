@@ -437,12 +437,21 @@
       "rights_decision": "link_or_original_only",
       "items": [
         {
-          "locator": "Pocket Medicine 9E PDF 第 137 頁 Tests of hepatic function 與 Patterns of LFTs 原表",
+          "locator": "Pocket Medicine 9E PDF 第 137 頁 Patterns of LFTs／R-value（ALT 與 ALP 均以各自 ULN 正規化）",
           "source_token": "Patterns of LFTs",
-          "teaching_role": "將原表中的不同觀察、推論與行動條件連成可追問的因果關係，避免讀者以單一數字或分類直接決定治療。",
-          "scope_limit": "原創概念圖並非完整臨床演算法，不是病人診斷或個別處方，也不表示已取得出版社原圖公開授權。",
+          "teaching_role": "將三組假設 ALT/ALP 數值先標準化為 ×ULN 後，以共用線性刻度繪出 R=10、4、0.5，直接辨別 hepatocellular、mixed、cholestatic 生化定位並對照原始 U/L 不能直接比較的陷阱。",
+          "scope_limit": "三組為教學構造值，非真實病例或病程；需先確認 ALP 肝源性；R 不含 bilirubin，不是診斷、分期、急迫性或合成功能評分。圖未重製原書表格像素。",
           "mode": "illustrated",
-          "anchor": "liver-independent-axes",
+          "anchor": "liver-pattern-map",
+          "caption_token": "Pocket Medicine 9E"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF 第 137 頁 Tests of hepatic function／ALT injury indicators",
+          "source_token": "Tests of hepatic function",
+          "teaching_role": "用共用時間方向、分開的 ALT 與 PT/INR 定性曲線，直接呈現 aminotransferases 下降而凝血功能警訊持續惡化的反常可能性，提醒不可僅以 ALT 下降推論復原。",
+          "scope_limit": "定性曲線無實測值、絕對時間間距，非文獻病例；INR 仍受 vitamin K、DIC、抗凝藥等非肝源因素干擾；上升不等於單獨確診肝衰竭。",
+          "mode": "illustrated",
+          "anchor": "liver-divergent-trajectories",
           "caption_token": "Pocket Medicine 9E"
         }
       ]
