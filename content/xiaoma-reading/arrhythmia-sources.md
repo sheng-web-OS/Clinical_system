@@ -35,14 +35,14 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870。本站 Figure 02 已透過原始 SAGE 圖檔 URL 直接顯示 Figure 1–3（未裁切）；點圖可放大。期刊 [PDF 第 2 頁](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 亦可對照圖說。遠端圖像的手機瀏覽與跨站存取仍須於發布前驗證。
 
-## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（修訂分支，尚未正式發布）
+## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（已列入發布清單；圖片更新待合併）
 
 - **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，均標示 CC BY 4.0；原圖未裁切、未重畫。
 - **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，官方 [Figure 1](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/b2fc7153-320e-4d2b-a28a-0443e25d3345/assets/images/large/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/ad05d429-0d11-4942-8d83-53da56dd71c1/assets/images/large/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/a0dda955-26a2-41fb-bb91-4ae1a19146b6/assets/images/large/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。圖檔在外部 SAGE 主機，並非本站已保存的本地檔，部署及手機實際載入仍待驗證。
 - **Figure 04（WCT 臨床證據）**：使用同一 2018 病例 Figure 1/2，表達處置前與處置後證據落差。不要把前後圖說混成兩個 WCT 診斷實驗。
 - **AHA 2025 成人 tachyarrhythmia 原圖**：仍維持[原始 PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)直接引用，不鏡像、不重製完整流程圖；公開可讀不等於自由授權再利用。
 
-**更新狀態**：三篇整合稿的原圖已以 HTML `img` 寫入專用分支（依原始圖片 URL 遠端載入），但未加 `site/pages.json`、未部署至 Cloudflare；在實際建立／部署前不宣稱網頁已能看到原圖。先前記錄的「僅有導讀卡，無 ECG 嵌入」反映舊版，已由此修訂替代；圖片目視已透過公開原圖頁核對，整體醫學獨立審稿仍未完成。
+**更新狀態**：2026-10-27 讀取現行 `main` 的 `site/pages.json` 後確認，三篇文章已列入正式發布清單（`ai_editorial_review`、`navigation=false`）；先前審查紀錄宣稱「未列入」已過時。此次圖像以 HTML `img` 寫入修訂分支（依原始圖片 URL 遠端載入），改圖提交不等於 Cloudflare 已更新；在合併、部署與公網驗證前不宣稱新圖已上線。原圖目視已透過公開原圖頁核對，整體醫學獨立同儕審稿仍未完成。
 
 ## 現行 Figures 對應範圍
 
@@ -51,4 +51,4 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 - [**Figure 03：pre-excited AF 的 AV node 與 AP 兩條傳導出口**](integrated/2026-10-26-preexcited-af.md#af-two-exits)：保留獨立原創 SVG 解釋傳導機轉，非個案量測的 EP signal。
 - [**Figure 04：WCT 初始 ECG 與轉律後 ECG**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：直接嵌入 Silverman 2018 原圖，強調 irregular WCT 的可觀察操作邊界與後驗 delta wave 的證據時間差；AHA ACLS 官方流程維持原始連結。
 
-**來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，但**尚未經正式公網部署與手機載入驗收**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
+**來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，但**尚未完成本次圖片更新的正式公網部署與手機載入驗收**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
