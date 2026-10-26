@@ -26,12 +26,12 @@ GGT 可幫助來源辨認，不能證明 tissue invasion；相對正常的 bilir
 
 <figure id="fig-infiltrative-alp-update" class="reasoning-figure">
 <div class="reasoning-title">原創圖 1｜證據如何改寫「浸潤」假說，而不是讓 ALP 幫你決定診斷</div>
-<table aria-label="ALP 訊號不同證據下的診斷方向">
+<table aria-label="ALP 訊號不同證據下的診斷方向" class="release-matrix">
 <thead><tr><th scope="col">新證據加入</th><th scope="col">Infiltration 假說</th><th scope="col">尚不能排除的另一條路</th><th scope="col">有資訊增益的檢查</th></tr></thead>
 <tbody>
-<tr><th scope="row">ALP ↑，GGT ↑，但 US 未見質塊</th><td>仍有 diffuse／microscopic disease 的可能；尚不算確診</td><td>PBC、PSC、DILI、small-duct disease、早期 obstruction</td><td>藥物／暴露、AMA 等血清學；視情況進階影像</td></tr>
-<tr><th scope="row">有已知腫瘤、肝大或新影像病灶</th><td>機率依病史與影像而上升</td><td>感染、granulomatous、其他肝病及良性 lesions</td><td>對照既往影像；必要時 MRI／CT、選擇適當取樣路徑</td></tr>
-<tr><th scope="row">全身性沉積疾病線索／蛋白異常</th><td>Amyloid 成為一個具體可檢驗假說</td><td>其他原因的 cholestasis、MGUS 與無關病變共存</td><td>依懷疑類型安排 SIFE、UIFE、sFLC 等及合適的組織診斷</td></tr>
+<tr><th scope="row">ALP ↑，GGT ↑，但 US 未見質塊</th><td data-label="Infiltration 假說">仍有 diffuse／microscopic disease 的可能；尚不算確診</td><td data-label="尚不能排除的另一條路">PBC、PSC、DILI、small-duct disease、早期 obstruction</td><td data-label="有資訊增益的檢查">藥物／暴露、AMA 等血清學；視情況進階影像</td></tr>
+<tr><th scope="row">有已知腫瘤、肝大或新影像病灶</th><td data-label="Infiltration 假說">機率依病史與影像而上升</td><td data-label="尚不能排除的另一條路">感染、granulomatous、其他肝病及良性 lesions</td><td data-label="有資訊增益的檢查">對照既往影像；必要時 MRI／CT、選擇適當取樣路徑</td></tr>
+<tr><th scope="row">全身性沉積疾病線索／蛋白異常</th><td data-label="Infiltration 假說">Amyloid 成為一個具體可檢驗假說</td><td data-label="尚不能排除的另一條路">其他原因的 cholestasis、MGUS 與無關病變共存</td><td data-label="有資訊增益的檢查">依懷疑類型安排 SIFE、UIFE、sFLC 等及合適的組織診斷</td></tr>
 </tbody></table>
 <figcaption>非病例研究數據；三列是以不同新增證據改變病因機率的概念比較。取材自 Pocket Medicine 9E Figure 3-4（Library PDF p.139）、ACG abnormal liver chemistries guideline 及 ASH 2026 AL amyloidosis diagnostic guidance。不是原書表格的臨摹。</figcaption>
 </figure>
@@ -46,13 +46,13 @@ ASH 2026 的 AL amyloidosis 診斷指引強調：若臨床確實懷疑 AL，seru
 
 <figure id="fig-alp-claim-boundary" class="reasoning-figure">
 <div class="reasoning-title">原創圖 2｜檢查結果的推論上限</div>
-<table aria-label="同一項檢驗結果能與不能支持的結論">
+<table aria-label="同一項檢驗結果能與不能支持的結論" class="release-matrix">
 <thead><tr><th>結果</th><th>能回答</th><th>不能宣稱</th></tr></thead>
 <tbody>
-<tr><th scope="row">ALP ↑ ＋ GGT ↑</th><td>肝膽來源較有支持</td><td>浸潤性病變已被證實</td></tr>
-<tr><th scope="row">US／CT 未見 mass</th><td>該影像未發現可辨識病灶</td><td>肝組織沒有 microscopic disease</td></tr>
-<tr><th scope="row">SPEP 陰性</th><td>單一方法未檢出其能辨識的單株蛋白訊號</td><td>已排除 AL amyloidosis</td></tr>
-<tr><th scope="row">組織證實沉積物</th><td>病理性沉積存在</td><td>未做 typing 就確定 AL、ATTR 或其他類型</td></tr>
+<tr><th scope="row">ALP ↑ ＋ GGT ↑</th><td data-label="能回答">肝膽來源較有支持</td><td data-label="不能宣稱">浸潤性病變已被證實</td></tr>
+<tr><th scope="row">US／CT 未見 mass</th><td data-label="能回答">該影像未發現可辨識病灶</td><td data-label="不能宣稱">肝組織沒有 microscopic disease</td></tr>
+<tr><th scope="row">SPEP 陰性</th><td data-label="能回答">單一方法未檢出其能辨識的單株蛋白訊號</td><td data-label="不能宣稱">已排除 AL amyloidosis</td></tr>
+<tr><th scope="row">組織證實沉積物</th><td data-label="能回答">病理性沉積存在</td><td data-label="不能宣稱">未做 typing 就確定 AL、ATTR 或其他類型</td></tr>
 </tbody></table>
 <figcaption>本圖是證據種類的上限比較，不是所有患者都必須循序完成的檢查清單。ASH 2026 AL amyloidosis guideline 的適用範圍應與其他肝病鑑別分開。[2]</figcaption>
 </figure>
