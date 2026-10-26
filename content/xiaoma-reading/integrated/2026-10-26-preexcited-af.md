@@ -43,7 +43,7 @@
 所以 pre-excited AF 的 AP **是傳導入口，不必是維持 AF 的迴路組件**。把它誤認成 antidromic AVRT，會把規則 reentry 的藥物邏輯套進一個不規則、快速的 atrial source。這正是危險起點。
 
 <figure class="diuretic-figure" id="af-two-exits" role="group" aria-label="AF 訊號分別經 AV node 和 AP 抵達心室的原創機轉圖">
-<div class="diuretic-figure-head"><span>FIGURE 03 · WHY NODAL BLOCK CAN HARM</span><strong>心房訊號仍在，阻斷 AV node 並不代表封住所有通往心室的路</strong></div>
+<div class="diuretic-figure-head"><span>FIGURE 03 · WHY NODAL BLOCK CAN HARM</span><strong>阻斷 AV node，為何仍有 VF 風險？</strong></div>
 <div class="af-desktop-conduction" role="region" aria-label="AF 雙通道原創機轉圖，桌面版">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 270" width="780" height="270" role="img" aria-labelledby="afpath-title afpath-desc">
 <title id="afpath-title">AF 經 AV node 與 accessory pathway 雙路徑順傳</title>
@@ -108,7 +108,7 @@
 </g>
 </svg>
 </div>
-<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 危險不在「有 AP」，而在 AP 能否快速順傳。 上：AF 可經 AV node 或具前向傳導能力的 AP 到達心室，出現不同程度的 fusion；下：AV nodal blockade 不會同時封住 AP。若 AP 具有高順傳能力，可能出現極短 RR，增加 VF 風險。<strong>非所有 AP 都具高危性。</strong> 此圖為條件式機轉示意，非實測 ECG；圖中脈衝數量不代表真實比率，也不能替代個案 ECG 判讀與急救流程。</figcaption>
+<figcaption><strong>圖 3｜示意，不是 ECG。</strong> AF 訊號可經 AV node 與具順傳能力的 AP 抵達心室；阻斷 AV node 無法阻斷 AP。<strong>只有 AP 可快速順傳時，才可能出現極短 RR 與 VF 風險。</strong> 圖中脈衝數量不代表真實傳導比例，也不能取代病人 ECG 判讀或急救流程。</figcaption>
 </figure>
 
 ## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
