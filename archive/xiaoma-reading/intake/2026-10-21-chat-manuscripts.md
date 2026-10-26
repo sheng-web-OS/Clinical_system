@@ -48,3 +48,10 @@
 ### 2026-10-26 增量回收（Constipation）
 
 作者於 2026-10-26 對話再次貼出 2026-07-26 全文，已逐字存入私人 `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`（commit `3fa97afb07d50ebdc453033d3efa18fcae0facea`）。這是 **user-supplied source snapshot**，不等於確認 Facebook 已刊版本、`content/xiaoma-reading/originals` 正稿或公開網站頁面。下一步按 EPQC 查核原書圖表及現行 AGA／ACG、ASCRS 來源；特別注意 fecal impaction／mechanical obstruction、defecatory disorder testing 與腰椎骨折相關神經危險徵象。不要依舊的『六篇已入庫、十五篇待移轉』靜態數字判斷新的 source snapshot 數量。
+
+
+### 2026-10-26 增量回收（肝臟檢驗；原 21 篇清單以外）
+
+作者於 2026-10-26 對話提供〈肝臟檢驗，先告訴你病人在哪裡〉（文內日期 2026-07-18，小麻閱讀 9E）完整文本及 `Tests of hepatic function / Patterns of LFTs` 的局部原書表格截圖。正文逐字存入私人 [source snapshot](2026-07-18-liver-tests-user-supplied.md)，圖表實際可見內容及醫學／權利邊界另記於 [figure + medical audit](2026-07-18-liver-tests-figure-medical-audit.md)。
+
+狀態：**source_snapshot_archived / editorial_audit_draft**；**不是** `content/xiaoma-reading/originals` 已核實作者發表稿，也不在 `site/pages.json`，公網未發布。該篇不屬上列 2026-10-21 歷史 21 篇直貼清單，故不修改原有「六篇已入庫／其餘文章」基數。截圖原像素尚未 Git 封存；圖表局部讀取不能冒充完整 9E 原頁校對。
