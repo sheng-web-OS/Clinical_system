@@ -22,7 +22,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 </div>
 <div class="vte-direction" aria-hidden="true">↓</div>
 <div class="vte-center"><small>共同介入層級</small><strong>Venous thrombus formation</strong><span>預防問的是：現在是否該降低形成血栓的風險？</span></div>
-<div class="vte-direction" aria-hidden="true">↙　　↘</div>
+<div class="vte-direction vte-flow-diverge" aria-hidden="true">↙　　↘</div>
 <div class="vte-branches" role="group" aria-label="兩種相關但不是必然先後發生的臨床表現">
 <section><small>臨床表現 A</small><strong>DVT · 深靜脈血栓</strong><p>症狀可來自深靜脈回流受阻：單側腫脹、壓痛、局部水腫。</p></section>
 <section><small>臨床表現 B</small><strong>PE · 肺動脈栓塞</strong><p>栓子進入肺循環：呼吸困難、胸痛、低血氧，嚴重時血流動力學崩潰。</p></section>
