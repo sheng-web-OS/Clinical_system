@@ -522,7 +522,7 @@
           "source_token": "2023 ACC/AHA/ACCP/HRS AF",
           "mode": "illustrated",
           "anchor": "af-two-exits",
-          "caption_token": "圖 3",
+          "caption_token": "圖 3｜示意，不是 ECG。",
           "teaching_role": "Convey AV node decremental conduction alongside accessory pathway access, why an AV node dependent AVRT can respond to adenosine yet preexcited AF must avoid AV nodal blockers.",
           "scope_limit": "Original abstract schematic of possible parallel conduction, no numeric pathway transport fractions or patient-specific EP properties; does not replace preexcited AF guideline or actual ECG."
         }
