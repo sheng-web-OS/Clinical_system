@@ -6,7 +6,7 @@
 
 本輪實際目視 PDF 第 66、67、68 頁，核對 Figure 1-3 Approach to SVT、Treatment of Stable SVT 下方星號註腳、Accessory Pathways 定義／迴路／治療，以及 WCT etiologies 與診斷限制。第 67 頁明列 concealed pathway、orthodromic／antidromic AVRT 和 AF 經旁路下傳；第 68 頁提醒 hemodynamics 不能可靠排除 VT。
 
-Figure 1-3 的藥物反應節點是教學壓縮，不能單靠終止反應診斷 AVRT。其上文也保留 atrial tachycardia 可終止的例外。本系列用獨立原創圖解呈現路徑角色和風險資訊，未複製原書流程圖、ECG 範例或完整治療表。第 67–68 頁與本文無直接關係的 Brugada／VT 長期處置不是本系列範圍。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
+Figure 1-3 的藥物反應節點是教學壓縮，不能單靠終止反應診斷 AVRT。其上文也保留 atrial tachycardia 可終止的例外。本系列改以開放授權、已出版的 WPW 傳導與 ECG 圖、以及 Silverman 2018 病例真實 ECG 呈現路徑角色和風險資訊；未重製 Pocket Medicine 原書流程圖、ECG 範例或完整治療表。第 67–68 頁與本文無直接關係的 Brugada／VT 長期處置不是本系列範圍。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
 
 ## 最新急救與 AF 指引
 
@@ -24,7 +24,7 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 原文標示 CC BY 4.0。先前版本選擇只連回 Figure 1 而未提供 ECG；本次修訂分支已改成透過原始期刊圖片 URL 直接嵌入 Figure 1–3（CC BY 4.0，未裁切／未重畫），WPW 與 WCT 的主要圖示亦已相應更換。讀者可在原始 PDF 核對圖像與數據，原創概念圖不冒充病例 ECG。
 
-## 原刊 Figure 1–3 的分層證據（用於第二篇圖卡）
+## 原刊 Figure 1–3 的分層證據（第二篇嵌入的 ECG）
 
 以下四個節點是**同一名患者**在不同時點可取得的證據，不可誤認為四個獨立病例：
 
@@ -33,7 +33,7 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 3. **Figure 2：after 100 J synchronized cardioversion**（原刊 PDF p.2）：sinus ECG 才出現清楚 delta waves，支持 manifest pre-excitation；不能把後驗 ECG 當作轉律前絕對必要的資訊。
 4. **Figure 3：after successful right posteroseptal AP ablation**（原刊 PDF p.3）：delta waves 消失，T-wave memory 表現需結合 EP 檢查解釋，不能單靠 T 波證明已完成消融。
 
-原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870，請開啟 [**期刊原始 PDF（第 2 頁可直接放大 Figure 1 與 Figure 2）**](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 檢視原始像素。本站 Figure 02 是逐圖證據導讀，**目前不是原始 ECG 圖像的嵌入檢視器**。若日後本地嵌入，必須保存 CC BY 4.0 授權標示與原始 DOI 及是否裁切的說明。
+原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870。本站 Figure 02 已透過原始 SAGE 圖檔 URL 直接顯示 Figure 1–3（未裁切）；點圖可放大。期刊 [PDF 第 2 頁](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 亦可對照圖說。遠端圖像的手機瀏覽與跨站存取仍須於發布前驗證。
 
 ## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（修訂分支，尚未正式發布）
 
@@ -44,11 +44,11 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 **更新狀態**：三篇整合稿的原圖已以 HTML `img` 寫入專用分支（依原始圖片 URL 遠端載入），但未加 `site/pages.json`、未部署至 Cloudflare；在實際建立／部署前不宣稱網頁已能看到原圖。先前記錄的「僅有導讀卡，無 ECG 嵌入」反映舊版，已由此修訂替代；圖片目視已透過公開原圖頁核對，整體醫學獨立審稿仍未完成。
 
-## 新版原創 Figures 的對應範圍
+## 現行 Figures 對應範圍
 
-- [**Figure 01：WPW 三種下行傳導方向**](integrated/2026-10-26-wpw-conduction-mechanism.md#wpw-pathway-figure)：原創三面板 SVG。由 Pocket Medicine 9E p.66–67 Figure 1-3／Accessory Pathways 概念啟發，但不重製原書圖片。
-- [**Figure 02：Silverman ECG 四時點對讀**](integrated/2026-10-26-preexcited-af.md#af-ecg-evidence)：以圖卡說明 real Figure 1-A1／A2、Figure 2、Figure 3 讓判斷如何改變；真正 ECG 影像仍應從原刊 PDF 放大閱讀。
-- [**Figure 03：pre-excited AF 的 AV node 與 AP 兩條傳導出口**](integrated/2026-10-26-preexcited-af.md#af-two-exits)：原創 SVG，對應 2023 ACC/AHA/ACCP/HRS AF §10.6，並非個案量測的 EP 信號圖。
-- [**Figure 04：WCT／ACLS 的 causality、shock mode、drug boundary**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：原創臨床教學概念圖，對照 2025 AHA ALS WCT／pVT 和原始流程圖，不是取代官方 ACLS。
+- [**Figure 01：WPW 傳導路徑與 ECG 原圖**](integrated/2026-10-26-wpw-conduction-mechanism.md#wpw-pathway-figure)：Khan 等人 2024 開放授權的原始學術圖，直接呈現 sinus pre-excitation、orthodromic AVRT 和 antidromic AVRT；另補正常傳導對照原圖。不是 Pocket Medicine 的複製。
+- [**Figure 02：Silverman ECG 四時點真實原圖**](integrated/2026-10-26-preexcited-af.md#af-ecg-evidence)：直接嵌入 Figure 1-A1／A2、Figure 2、Figure 3，連接現場證據與轉律後／消融後資訊。
+- [**Figure 03：pre-excited AF 的 AV node 與 AP 兩條傳導出口**](integrated/2026-10-26-preexcited-af.md#af-two-exits)：保留獨立原創 SVG 解釋傳導機轉，非個案量測的 EP signal。
+- [**Figure 04：WCT 初始 ECG 與轉律後 ECG**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：直接嵌入 Silverman 2018 原圖，強調 irregular WCT 的可觀察操作邊界與後驗 delta wave 的證據時間差；AHA ACLS 官方流程維持原始連結。
 
-**來源使用界線**：Pocket Medicine 原圖是私人原頁對讀，不重製；Silverman 案例已明示 CC BY 4.0，但目前只提供原刊放大連結。已核對的 guideline class 與「圖像有無直接嵌入」是兩項獨立驗收，不可互相取代。
+**來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，但**尚未經正式公網部署與手機載入驗收**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
