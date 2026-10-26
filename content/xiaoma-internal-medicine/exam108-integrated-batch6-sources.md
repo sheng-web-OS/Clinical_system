@@ -14,8 +14,8 @@
 | --- | --- | --- | --- |
 | Q3 | B | 腹瀉、麵粉相關、Hb／Ca／tTG-IgA | [Celiac 與慢性腹瀉](lessons/2026-10-27-exam108-celiac-diarrhea.md) |
 | Q4 | A | MS 風濕性、Marfan/AR、急性逆流血管擴張劑、LVEDP | [瓣膜壓力的位置](lessons/2026-10-27-exam108-valve-hemodynamics.md) |
-| Q13 | A | 肝切片檢體長度、病理分布、腹水／凝血風險 | [肝切片與 NIT](lessons/2026-10-27-exam108-liver-observation.md) |
-| Q14 | B | FibroTest／TE／MRE 與 fibrosis staging 的精準度 | [肝切片與 NIT](lessons/2026-10-27-exam108-liver-observation.md) |
+| Q13 | A | 肝切片檢體長度、病理分布、腹水／凝血風險 | [肝切片與 NIT](lessons/2026-10-27-exam108-biopsy-fibrosis.md) |
+| Q14 | B | FibroTest／TE／MRE 與 fibrosis staging 的精準度 | [肝切片與 NIT](lessons/2026-10-27-exam108-biopsy-fibrosis.md) |
 | Q15 | C | HBV 22/42/27 nm 粒子及 HBsAg/HBcAg/HBeAg 的構造歸屬 | [HBV 的觀察層](lessons/2026-10-27-exam108-liver-observation.md) |
 
 題號唯一識別預定為 (year_roc=108, sitting=1, stage=2, subject=醫學（三）, question_number)，沿用既有年度索引，不建立第二個題庫。此批**尚未**加入 site/pages.json。
@@ -46,7 +46,7 @@
 
 ### Q15 HBV 病毒結構與 HBeAg
 
-- 原題與官方答案已核；現有草稿的 HBsAg vs HBcAg 核心／包膜位置為基礎醫學事實，但 precore/HBeAg 成熟加工、不同形態顆粒數量比例需回到**原始病毒學專門文獻**補證。
+- 原題與官方答案已核。已補 [NCBI Medical Microbiology](https://www.ncbi.nlm.nih.gov/sites/books/NBK7864/)、[2024 HBV assembly review](https://pmc.ncbi.nlm.nih.gov/articles/PMC11653734/) 與 [2025 HBV nucleocapsid assembly review](https://pubmed.ncbi.nlm.nih.gov/40316009/) 支持 HBsAg vs HBcAg 定位及 precore→HBeAg 成熟加工；需完成 Pocket Medicine 原圖定位和醫學出版複核。
 - 必須避免將 HBV 22 nm HBsAg-rich particles 等同具感染性完整 virion，亦不能將 HBeAg status 推成 ALT 或纖維化 stage。
 - Pocket 9E 原圖及病毒結構若非其詳述範圍，應明確記錄 relevant visual 是否存在，不得為通過 Figure Gate 虛構一張。
 - 原作者 HBV phase 系列可用作知識脈絡，但是**不應取代**病毒結構問題的原始文獻查核。
@@ -55,7 +55,7 @@
 
 - 此批新增的表格是作者原創的**臨床資訊比較**：用於解剖壓力位置、檢驗量測對象及對題反事實。它們不是 Pocket Medicine 或正式指引原圖的臨摹，不能因此註記「原圖已回收」。
 - 逐圖要完成：原書 PDF 頁碼 → figure/table/caption/footnote → 預設誤解 → 正文圖表能補上的獨有推理 → 反事實 → 醫學界線 → 手機／暗色顯示驗證。無直接關聯原圖者應有「no_relevant_visual」的實際原頁查核證據。
-- 本輪已核的是**考選部原卷／官方答案**及上述公開臨床來源，**不是 Pocket 9E 原圖完整視覺驗收**。沒有完成來源與醫學、原圖、版面驗收以前，三篇保持 Draft，不註冊 Figure Gate 的 represented、不進發布 allowlist。
+- 本輪已核的是**考選部原卷／官方答案**及上述公開臨床來源，**不是 Pocket 9E 原圖完整視覺驗收**。沒有完成來源與醫學、原圖、版面驗收以前，四篇保持 Draft，不註冊 Figure Gate 的 represented、不進發布 allowlist。
 - 臨床資料為公開考題及公開文獻，不公布私人錯題成績。無獨立醫師同儕審查、無實際學習成效或手機整站驗證證據，相關狀態保持 pending。
 
 ## 下一步整合順序
