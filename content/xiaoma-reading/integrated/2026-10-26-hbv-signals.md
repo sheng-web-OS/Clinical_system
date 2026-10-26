@@ -1,6 +1,6 @@
 # 我們看見的是病程，還是病程留下的訊號？
 
-原文 2026.07.19｜2026.10.26 整合版
+原文 2026.07.19｜2026.10.27 圖文修訂版
 
 從 [HBV phase 與 stage](2026-10-26-hbv-phase-state-vs-stage.md) 接續閱讀：這篇追問的，是我們如何從抽血推論尚未直接看見的病毒—宿主互動。
 
@@ -42,7 +42,16 @@ ALT 正常表示這次量到的血清酵素活性沒有超過採用的正常上�
 
 它也可能漏掉抽血之間的波動，或尚未形成明顯 enzyme release 的低度變化。即使 ALT 持續正常，也只是降低目前存在明顯 necroinflammatory activity 的可能性，不能擴張成完整的安全證明。
 
-<figure id="hbv-observation-inference-action" class="reasoning-figure"><div class="reasoning-title">三個層次，三種不同的確定性</div><div class="reasoning-cards"><section><strong>觀察：Marker</strong><p>HBeAg、HBV DNA、ALT 是各自能量到的訊號；正常結果只約束這項量測的解釋。</p></section><section><strong>推論：Phase</strong><p>合併連續數據，推論目前接近的 virus–host state；非典型組合可長期處於灰區。</p></section><section><strong>行動：治療或追蹤</strong><p>再加入 fibrosis、cirrhosis、年齡與個別風險；門檻是決策條件，不是病程剛開始的證據。</p></section></div><figcaption>原創圖解，非原書重製。對讀 Pocket Medicine 9E PDF 第 141 頁 Phases of Chronic HBV Infection 與 AASLD/IDSA 2025 Recommendation 4；未將 phase 當作直接免疫檢測。</figcaption></figure>
+<figure id="hbv-observation-inference-action" class="hbv-figure">
+  <div class="hbv-figure-head"><span>從病程到觀察</span><strong>DNA 與 ALT，來自不同的生理環節</strong></div>
+  <div class="hbv-branch-body">
+    <div class="hbv-signal-row"><div class="hbv-process"><strong>病毒複製</strong><span>產生並釋放病毒</span></div><span class="hbv-measure-arrow" aria-hidden="true">→</span><div class="hbv-measure"><small>血液中可量到</small><strong>HBV DNA</strong><span>病毒量／複製的訊號</span></div></div>
+    <div class="hbv-signal-link"><span>感染肝細胞與宿主免疫互動</span><b>↓</b><small>複製量與受傷程度，不按固定比例連動</small></div>
+    <div class="hbv-signal-row"><div class="hbv-process hbv-active"><strong>肝細胞受傷</strong><span>酵素釋放進入血液</span></div><span class="hbv-measure-arrow" aria-hidden="true">→</span><div class="hbv-measure"><small>血液中可量到</small><strong>ALT</strong><span>受傷的間接訊號</span></div></div>
+  </div>
+  <div class="hbv-key"><strong>高 DNA ＋ 正常 ALT，可以同時成立。</strong><span>它描述兩個量測結果；不能由此直接證明免疫耐受、沒有組織傷害或不需治療。</span></div>
+  <figcaption>原創機轉與量測示意，非原書重製。對讀 Pocket Medicine 9E PDF 第 140–141 頁及 AASLD/IDSA 2025 Core Concepts／Table 1。水平箭頭表示對應的量測，向下關係經宿主互動中介；圖未表示病毒量必然造成等比例受傷。Phase 需合併 HBeAg 與連續數據推論，治療再加入 stage 與風險。</figcaption>
+</figure>
 
 這正是 phase table 最容易被忽略的限制。
 
