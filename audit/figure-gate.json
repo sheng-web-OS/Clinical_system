@@ -428,6 +428,60 @@
           "scope_limit": "原創定性對照不是文獻 forest plot，不代表任何族群的精確敏感度百分比或 LR。"
         }
       ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-26-wpw-conduction-mechanism.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/wct-acls-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E reader PDF pp.66–67: Figure 1-3 Approach to SVT, Treatment of Stable SVT footnote, ACCESSORY PATHWAYS (WOLFF–PARKINSON–WHITE) definitions and three classic tachycardias",
+          "source_token": "Accessory Pathways (Wolff–Parkinson–White)",
+          "mode": "illustrated",
+          "anchor": "wpw-pathway-figure",
+          "caption_token": "Pocket Medicine 9E",
+          "teaching_role": "Use a three-panel conduction direction diagram to distinguish normal activation and fusion from orthodromic down AV node and antidromic down accessory pathway, showing why QRS width does not name reentry mechanism.",
+          "scope_limit": "Independent directional teaching illustration, not copied textbook figure, not ECG evidence and cannot identify a pathway anatomical location or distinguish VT by QRS appearance alone."
+        }
+      ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/wct-acls-sources.md",
+      "items": [
+        {
+          "locator": "Silverman et al. (2018) official journal PDF p.2 Figure 1 A1/A2, Figure 2, and p.3 Figure 3; real serial preexcited AF ECGs with synchronized conversion and AP ablation",
+          "source_token": "Figure 1-A1",
+          "mode": "illustrated",
+          "anchor": "af-ecg-evidence",
+          "caption_token": "Silverman et al., 2018",
+          "teaching_role": "Map four real ECG time points to what was observable, what raised likelihood of preexcited AF, what post-cardioversion delta wave adds, and what EP ablation can later confirm.",
+          "scope_limit": "Evidence cards are NOT source ECG pixel reproductions. Actual ECG images are opened via original SAGE journal PDF, CC BY 4.0; uncertain diagnosis and retrospective case decisions are not treatment evidence."
+        },
+        {
+          "locator": "Pocket Medicine 9E reader PDF pp.66–67 WPW preexcited AF and AVRT treatment, cross-checked with 2023 ACC/AHA/ACCP/HRS AF Guideline section 10.6",
+          "source_token": "2023 ACC/AHA/ACCP/HRS AF",
+          "mode": "illustrated",
+          "anchor": "af-two-exits",
+          "caption_token": "圖 3",
+          "teaching_role": "Convey AV node decremental conduction alongside accessory pathway access, why an AV node dependent AVRT can respond to adenosine yet preexcited AF must avoid AV nodal blockers.",
+          "scope_limit": "Original abstract schematic of possible parallel conduction, no numeric pathway transport fractions or patient-specific EP properties; does not replace preexcited AF guideline or actual ECG."
+        }
+      ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-26-wct-acls-decision.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/wct-acls-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E PDF pp.67–68 WIDE-COMPLEX TACHYCARDIAS etiology / VT clues and 2025 AHA ALS §15–16 / official Adult Tachyarrhythmia With a Pulse Algorithm",
+          "source_token": "2025 AHA ALS",
+          "mode": "illustrated",
+          "anchor": "wct-decision-figure",
+          "caption_token": "AHA",
+          "teaching_role": "Disentangle three independent emergency boundaries: rhythm causality, electrical synchronized-vs-unsynchronized shock mode, and drugs permitted only in stable regular monomorphic WCT.",
+          "scope_limit": "Original summary cards, not a recreation of AHA ACLS algorithm. Do not use as standalone acute resuscitation protocol; preexcited AF has additional 2023 guideline contraindications."
+        }
+      ]
     }
   }
 }
