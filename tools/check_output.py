@@ -56,6 +56,14 @@ if not errors:
     for filename in sorted(EXPECTED):
         if not filename.endswith(".html"): continue
         html = (DIST / filename).read_text("utf8")
+        # Canonical reading pages must contain one beacon; redirects must contain none.
+        canonical = filename == "index.html" or filename in {page["output"] for page in PAGES}
+        expected = 1 if canonical else 0
+        actual_beacons = html.count("https://static.cloudflareinsights.com/beacon.min.js")
+        if actual_beacons != expected:
+            errors.append(f"{filename}: expected {expected} analytics beacon(s), found {actual_beacons}")
+        if canonical and 'data-cf-beacon=' not in html:
+            errors.append(f"{filename}: analytics site token metadata missing")
         dom = Outline()
         dom.feed(html)
         outlines[filename] = dom

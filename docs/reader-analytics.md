@@ -30,11 +30,11 @@ Cloudflare Web Analytics site tag：`fec8c44afd484f3fa4670885ba10dce5`
 
 ## 實作狀態與驗收
 
-2026-10-26 已透過 Cloudflare API 建立 Web Analytics 站點，並設定 Pages 專案的 `build_config.web_analytics_tag` 與 `web_analytics_token`。Cloudflare Pages 將於**下一次成功部署**將 JS beacon 加入有效 HTML 頁面（參見官方文件：https://developers.cloudflare.com/pages/how-to/web-analytics/）。
+2026-10-26 已透過 Cloudflare API 建立 Web Analytics 站點，並設定 Pages 專案的 `build_config.web_analytics_tag` 與 `web_analytics_token`。由於對正式首頁與 DCM 文章實際瀏覽器檢查發現僅靠 Pages 專案原生設定未注入 beacon，本版改由 `site/build.py` 統一對首頁及正式文章 HTML 添加一次 Cloudflare Web Analytics JS。為避免誤記二次瀏覽量，不在舊版轉址頁安裝；由 `tools/check_output.py` 驗證每個正式 HTML 頁恰好一個 beacon。Web Analytics 站點本身的 auto_install=false，採手動注入；已將 Pages 專案的 `build_config.web_analytics_tag` 與 `web_analytics_token` 清空，確保避免平台與原始碼重複注入。參見官方文件：https://developers.cloudflare.com/web-analytics/get-started/。
 
 - [x] Cloudflare Web Analytics 站點已建立
-- [x] Cloudflare Pages 專案已配置原生 analytics tag/token
-- [ ] 新部署成功且包含追蹤程式（需查 deployment 或頁面 beacon）
+- [x] Cloudflare Pages 曾設定原生 analytics tag/token；經實際 DOM 驗證未生效後已清除，避免重複追蹤
+- [ ] 含手動 beacon 的修正版本部署成功且確認頁面 DOM（需查 deployment 或頁面 beacon）
 - [ ] 讀者端 beacon 回傳成功與 Dashboard／GraphQL 出現有效 pageviews
 - [ ] 至少一週有可比的資料並產生完整週報
 
