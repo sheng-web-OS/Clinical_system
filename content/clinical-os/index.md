@@ -11,6 +11,10 @@
 <a href="#kidney"><small>04 / 腎臟</small><strong>肌酐上升、尿變少？</strong><span>腎灌流、組織傷害、液體反應</span></a>
 <a href="#infection"><small>05 / 感染</small><strong>肺炎有多嚴重？</strong><span>病原、死亡風險與器官支持</span></a>
 <a href="#time"><small>06 / 急症</small><strong>何時不能等待確診？</strong><span>中暑、癲癇、腹痛的時間壓力</span></a>
+<a href="#liver"><small>07 / 肝臟</small><strong>檢驗代表傷害還是功能？</strong><span>量測、病程推論與治療風險</span></a>
+<a href="#rhythm"><small>08 / 心律</small><strong>同一條旁路，為何處置相反？</strong><span>傳導方向、AF 與急救安全界線</span></a>
+<a href="#thrombosis"><small>09 / 血栓</small><strong>共同預防，為何分開診斷？</strong><span>疾病假說、檢查與停止條件</span></a>
+<a href="#bowel"><small>10 / 腸道</small><strong>軟便了，為何仍排不出來？</strong><span>內容物、運送、出口與治療反應</span></a>
 </nav>
 
 ## 病人為什麼喘？
@@ -87,6 +91,42 @@
 **鑑別練習：** [108（一）第 75 題 CPR 通氣](../xiaoma-internal-medicine/lessons/2026-10-26-exam108-cpr-airway.md#q-75)追問建立 advanced airway 後何以不再停下來做 30：2；[第 78 題闌尾炎](../xiaoma-internal-medicine/lessons/2026-10-26-exam108-appendicitis.md#q-78)則練習「敏感度最高」與「應立即處置」其實是不同的判斷。
 
 ---
+
+## 肝臟檢驗，觀察的是傷害、病程還是功能？
+<span id="liver" class="atlas-target"></span>
+
+先分開**量測、推論與行動**。ALT／ALP 的相對升幅指出主要生化型態；連續資料描述訊號如何變化；PT／INR、albumin 與臨床狀態另外限制功能與急迫性的判斷。到了 HBV，這些觀察才和病毒標記共同形成 phase 的推論，仍需另外評估 fibrosis stage。
+
+**建議順序：** [肝臟檢驗：先分開三條軸](../xiaoma-reading/integrated/2026-10-26-liver-tests.md) → [HBV phase 不是 fibrosis stage](../xiaoma-reading/integrated/2026-10-26-hbv-phase-state-vs-stage.md) → [ALT 訊號、phase 推論與治療門檻](../xiaoma-reading/integrated/2026-10-26-hbv-signals.md)。第一篇提供檢驗語言，第二篇拆開當下狀態與累積結構，第三篇追問觀察的不完整性如何改變等待風險。
+
+**改判與驗證：** 保留同一組正常 ALT／低量 HBV DNA，把「無顯著 fibrosis」改成「已有 cirrhosis」，說出哪些結論必須重算。再問：ALT 下降但 INR 與意識惡化時，為何不能等 phase 分類完成才處置？若想看結構性疾病如何影響有效循環，接到既有[腹水、HRS 與腎灌流](../xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md)。
+
+## 同一條 accessory pathway，為何會改變用藥安全性？
+<span id="rhythm" class="atlas-target"></span>
+
+**通道存在、通道在迴路中的角色、目前的心房節律**是三個問題。Orthodromic AVRT 需要 AV node 維持迴路；pre-excited AF 的快速心房活動則可能持續透過旁路下傳。於是同一個 AV nodal blocking drug，會隨節律改變而產生相反風險。最後才回到 ACLS：當病名未知，哪些灌流與節律資訊已足以限制行動？
+
+**建議順序：** [WPW：傳導方向與 QRS](../xiaoma-reading/integrated/2026-10-26-wpw-conduction-mechanism.md) → [真實 pre-excited AF 病例：阻斷 AV node 為何危險](../xiaoma-reading/integrated/2026-10-26-preexcited-af.md) → [WCT／ACLS：不確定下如何行動](../xiaoma-reading/integrated/2026-10-26-wct-acls-decision.md)。三篇共用同一個傳導模型，第二、三篇沿同一個已發表病例更新解釋。
+
+**改判與驗證：** 將穩定規則窄 QRS 的 AVRT 改成極快不規則 WCT，先說明 adenosine 的安全邊界如何改變；再把節律改成持續 polymorphic VT，解釋為何電擊同步設定也必須改變。若心跳快是失血／感染的代償，則回到[灌流分支](#perfusion)，不能只為降低數字而電擊。
+
+## VTE 的共同風險，為何不能共用一條診斷路徑？
+<span id="thrombosis" class="atlas-target"></span>
+
+**生成條件可整合，疾病假說必須指定。** 腿腫與呼吸困難提出不同待解釋的現象；D-dimer 沒有定位能力，只有放回對應前測機率及有效診斷演算法，才可能支持停止追查。下肢超音波與 CTPA 各自回答不同的解剖問題。
+
+**建議閱讀：** [VTE：共同預防，分開診斷](../xiaoma-reading/integrated/2026-10-26-vte-visual.md)。讀到 PE 時可回接[低氧機轉](../xiaoma-internal-medicine/lessons/2026-10-25-hypoxemia-mechanisms.md)；相同低氧表型本身不能證明肺動脈有血栓。
+
+**改判與驗證：** 同樣 D-dimer 陰性，低前測機率與高前測機率能否得到相同結論？若 proximal ultrasound 陰性而懷疑仍高，為何要問受檢範圍與後續流程？血流動力學不穩定時，不把常規排除策略變成延誤救援的程序。
+
+## 糞便變軟，為什麼「治療無效」需要重寫？
+<span id="bowel" class="atlas-target"></span>
+
+**症狀、作用環節與反應終點要相互對準。** 排出軟便和完成排空不同；多種藥物同時介入後的變化，也不能單獨證實其中一顆的效果。先確認急性警訊，再從內容物、運送與遠端排空重定位。
+
+**建議閱讀：** [便祕：排出的糞便已軟，未完成的是什麼？](../xiaoma-reading/integrated/2026-10-26-constipation.md)。此篇為作者確認的虛構教學情境；用來拆解推理，不作病例療效證據。
+
+**改判與驗證：** 糞便同樣較軟，一種情況仍有阻塞感與 manual maneuver，另一種情況出現腹脹、嘔吐與無法排氣。兩者下一步為何不同？DRE、ARM／BET 要補的資訊又各是什麼？
 
 ## 如果不知道從哪裡開始，怎麼選路線？
 

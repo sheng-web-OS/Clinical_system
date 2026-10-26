@@ -33,6 +33,15 @@
   </a>
 </div>
 
+## 新增閱讀：從資料走向判斷
+
+<div class="original-list">
+<a class="original-card" href="../clinical-os/index.md#liver"><span class="original-date">肝臟與 HBV · 三篇連讀</span><strong>檢驗、狀態與結構，為什麼必須分開？</strong><span>從肝臟檢驗走向 phase／stage，再看正常 ALT 與治療門檻的限制。</span><span class="read-link">開啟肝臟閱讀脈絡 →</span></a>
+<a class="original-card" href="../clinical-os/index.md#rhythm"><span class="original-date">心律急症 · 三篇連讀</span><strong>同一條旁路，為什麼藥物處置可能相反？</strong><span>WPW 傳導方向 → 真實 pre-excited AF 病例 → WCT／ACLS 的急救邊界。</span><span class="read-link">開啟心律閱讀脈絡 →</span></a>
+<a class="original-card" href="integrated/2026-10-26-vte-visual.md"><span class="original-date">VTE · 三張原創圖解</span><strong>共同預防的疾病，為什麼診斷必須分流？</strong><span>先驗風險、疾病假說、定位檢查與陰性結果的停止條件。</span><span class="read-link">閱讀 VTE →</span></a>
+<a class="original-card" href="integrated/2026-10-26-constipation.md"><span class="original-date">便祕 · 明示虛構教學情境</span><strong>糞便已軟，未完成的是哪個環節？</strong><span>將內容物、推進、出口與藥物反應分開，再決定下一步。</span><span class="read-link">閱讀便祕 →</span></a>
+</div>
+
 ## 歷史原稿典藏
 
 以下保存原始文章的文字及論述歷史，**不是最新整合版的閱讀入口**。如欲閱讀心肌病變修訂稿，請由上方〈心肌病變〉文章進入。
@@ -41,13 +50,7 @@
 
 ## 沿著問題接續閱讀
 
-如果只想挑一條路線開始，可以先讀 [Heart Failure：四象限](originals/2026-07-12-heart-failure.md)，區分 **congestion** 與 **perfusion**；再讀 [LVEDP](originals/2026-07-12-lvedp.md)，區分 **pressure** 與 **volume**；[兩張原書圖的對照導讀](integrated/2026-10-23-hf-lvedp-figures.md)把這兩篇的模型接起來；接著讀 [利尿劑](originals/2026-07-20-diuretics.md)，區分排鈉反應與最終的去鬱血效果。
-
-[HCM 原稿](originals/2026-07-14-hcm.md)與 [DCM 最新整合版](integrated/2026-10-21-dcm.md)提供另一個必要視角：形態、流出道阻塞、充盈與收縮功能，不是同一條自然史。把它們混在一起，會直接改變對心衰竭病人的解釋。
-
-若從急重症開始，[Status epilepticus](originals/2026-07-28-status-epilepticus.md)把持續發作與治療歷史接到照護升級；[Acute pancreatitis](originals/2026-07-20-pancreatitis.md)則說明，局部壞死與器官衰竭必須分別評估。
-
-[前往臨床問題地圖 →](../clinical-os/index.md)
+[臨床知識地圖](../clinical-os/index.md)統一呈現概念的前提、跨篇關係、閱讀順序與改判練習。心衰竭、呼吸、肝臟、心律、血栓與腸道都由同一張地圖接續；本頁保留文章發現與歷史原稿入口。
 
 ## 閱讀說明
 

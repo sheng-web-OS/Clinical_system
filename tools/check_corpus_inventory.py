@@ -6,6 +6,7 @@ Historical checkpoints are deliberately ignored: they are not live state.
 """
 import argparse
 import json
+import re
 import sys
 from pathlib import Path, PurePosixPath
 
@@ -53,7 +54,7 @@ def inspect_inventory(root):
                  if x.get("kind") == "historical_original"}
     actual = {p.relative_to(root).as_posix()
               for p in (root / ORIGINALS).glob("*.md") if p.is_file()}
-    imported, pending = set(), set()
+    imported, snapshots, pending = set(), set(), set()
     titles = set()
     for row in rows:
         title, status = row["title"], row["status"]
@@ -65,30 +66,34 @@ def inspect_inventory(root):
         if status == "conversation_only":
             pending.add(title)
             continue
-        # Deliberately match exact Markdown code-quoted source link syntax.
-        prefix = "imported → "
-        raw = status[len(prefix):].strip() if status.startswith(prefix) else ""
-        tick = chr(96)
-        if len(raw) < 3 or raw[0] != tick or raw[-1] != tick:
+        # A source snapshot is recovered text, not an approved original or release.
+        # Accept legacy bold status labels and an optional explanatory note after ；.
+        m = re.fullmatch(
+            r"(?:\*\*)?(imported|source_snapshot_archived)(?:\*\*)? → \x60([^\x60]+)\x60(?:；[^|]*)?",
+            status)
+        if not m:
             errors.append("Unknown intake state for " + title + ": " + status)
             continue
-        path_text = raw[1:-1]
+        state, path_text = m.groups()
         source = PurePosixPath(path_text)
+        expected_prefix = (ORIGINALS + "/" if state == "imported"
+                           else "archive/xiaoma-reading/intake/")
         if (source.is_absolute() or ".." in source.parts or
-                source.suffix != ".md" or source.parts[0] not in ("content", "archive")):
+                source.suffix != ".md" or not path_text.startswith(expected_prefix)):
             errors.append("Unsafe source: " + path_text)
             continue
         path = (root / path_text).resolve()
         if not path.is_relative_to(root) or not path.is_file():
             errors.append("Missing or escaped source: " + path_text)
             continue
-        if path_text in imported:
-            errors.append("Duplicate imported path: " + path_text)
-        imported.add(path_text)
+        destination = imported if state == "imported" else snapshots
+        if path_text in imported or path_text in snapshots:
+            errors.append("Duplicate archived source: " + path_text)
+        destination.add(path_text)
 
     outside = sorted(p for p in published if not p.startswith(ORIGINALS + "/"))
     errors.extend("Published historical original outside originals folder: " + p for p in outside)
-    if len(imported) + len(pending) != len(rows):
+    if len(imported) + len(snapshots) + len(pending) != len(rows):
         errors.append("Intake row with unverified/missing status")
 
     result = {
@@ -96,6 +101,8 @@ def inspect_inventory(root):
         "scope": "files + publication manifest; not author canonical or clinical review",
         "intake_total": len(rows),
         "intake_imported": len(imported),
+        "intake_source_snapshots": len(snapshots),
+        "source_snapshot_paths": sorted(snapshots),
         "intake_conversation_only": len(pending),
         "original_files": len(actual),
         "published_originals": len(published),
@@ -105,6 +112,7 @@ def inspect_inventory(root):
         "imported_unpublished_paths": sorted(imported - published),
         "limits": [
             "Conversation-only records are not recovered files.",
+            "Source snapshots preserve conversation-provided text, not verified published originals.",
             "A file and SHA do not prove correspondence to a Facebook published edition.",
             "Manifest inclusion does not prove clinical review or Cloudflare delivery.",
             "Do not derive counts from historical checkpoint snapshots."
@@ -125,6 +133,7 @@ def main():
         print("PASS" if not errors else "FAIL", "Corpus inventory:",
               report["intake_total"], "intake;",
               report["intake_imported"], "imported;",
+              report["intake_source_snapshots"], "source snapshots;",
               report["intake_conversation_only"], "conversation-only;",
               report["original_files"], "source files;",
               report["published_originals"], "published originals.")

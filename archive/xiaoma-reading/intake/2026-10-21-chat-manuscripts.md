@@ -1,26 +1,26 @@
 # 2026-10-21 對話直貼文章｜原稿接收清單
 
-狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、兩篇（Constipation、HBV ALT 訊號）已保存完整私人 source snapshot（未出版）、其餘十三篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
+狀態（截至本輪整併）：**原 21 篇接收清單中，6 篇已轉為 originals、11 篇保存逐字 source snapshot、4 篇仍待取回全文。快照、作者 canonical 原稿與整合版出版是不同狀態。** 本輪 AI 整合稿以公開出版清單和實際部署核對；不把快照計為歷史已刊原文。
 
 本清單是接收及搬遷追蹤，不是已完成醫學事實查核、已確認唯一最終版本的證明。原文保留在本次 ChatGPT 對話；僅已核對確實寫入 Git 原稿檔案者標為 `imported`；不同歷史版本仍可能待比較。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
 
 | 日期（文章自述） | 原始題名 | 系列／來源標籤 | 內容移轉 |
 |---|---|---|---|
 | 2026-07-28 | 同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？ | Status epilepticus 閱讀 | imported → `content/xiaoma-reading/originals/2026-07-28-status-epilepticus.md` |
-| 2026-07-26 | 糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？ | 藥物閱讀（Constipation） | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`；待版本／醫學／出版審查 |
-| 2026-07-24 | 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？ | 小麻閱讀（9E） | conversation_only |
-| 2026-07-23 | 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？ | 小麻閱讀（9E） | conversation_only |
-| 2026-07-21 | 找到腹瀉的類型，為什麼仍然沒有找到病因？ | 小麻閱讀（9E） | conversation_only |
+| 2026-07-26 | 糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？ | 藥物閱讀（Constipation） | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-24 | 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？ | 小麻閱讀（9E） | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-24-vte-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-23 | 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？ | 小麻閱讀（9E） | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-23-cirrhosis-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-21 | 找到腹瀉的類型，為什麼仍然沒有找到病因？ | 小麻閱讀（9E） | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-21-chronic-diarrhea-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
 | 2026-07-21 | 同一顆 octreotide，為什麼既能止瀉又能促動？ | 藥理學精要閱讀 | conversation_only |
 | 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-diuretics.md` |
 | 2026-07-20 | 胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-pancreatitis.md` |
-| 2026-07-19 | 肝臟被占據，為什麼最突出的卻是 ALP？ | 小麻閱讀（9E）；Cholestasis 續篇 | conversation_only |
-| 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | conversation_only |
-| 2026-07-19 | 我們看見的是病程，還是病程留下的訊號？ | 小麻閱讀（9E）；chronic HBV 續篇 | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-user-supplied.md`；附表核讀紀錄 `2026-07-19-hbv-signals-figure-review.md`；待原書 PDF 頁次、授權／醫學審查與出版驗證 |
-| 2026-07-18 | HBV phase，不是在替慢性肝炎分期 | 小麻閱讀（9E） | conversation_only |
-| 2026-07-17 | 還不知道是什麼，憑什麼治療 | 小麻閱讀（9E）；WCT／ACLS | conversation_only |
-| 2026-07-16 | 急性 AF，不一定要立刻結束 | 小麻閱讀（9E） | conversation_only |
-| 2026-07-16 | Syncope：以機轉定義，卻從現象開始診斷 | 小麻閱讀（9E） | conversation_only |
+| 2026-07-19 | 肝臟被占據，為什麼最突出的卻是 ALP？ | 小麻閱讀（9E）；Cholestasis 續篇 | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-19-infiltrative-pattern-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-19-cholestasis-primary-secondary-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-19 | 我們看見的是病程，還是病程留下的訊號？ | 小麻閱讀（9E）；chronic HBV 續篇 | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-18 | HBV phase，不是在替慢性肝炎分期 | 小麻閱讀（9E） | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-10-26-hbv-phase-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-17 | 還不知道是什麼，憑什麼治療 | 小麻閱讀（9E）；WCT／ACLS | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-17-wct-acls-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-16 | 急性 AF，不一定要立刻結束 | 小麻閱讀（9E） | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-16-acute-af-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
+| 2026-07-16 | Syncope：以機轉定義，卻從現象開始診斷 | 小麻閱讀（9E） | source_snapshot_archived → `archive/xiaoma-reading/intake/2026-07-16-syncope-user-supplied.md`；完整原文已保存，整合稿發布狀態另見本輪審查 |
 | 2026-07-12 | 從四象限走進 LVEDP | 小麻閱讀 | imported → `content/xiaoma-reading/originals/2026-07-12-lvedp.md` |
 | 2026-07-12 | Heart Failure：從四象限到診斷與急性失衡 | 小麻&IBCC 閱讀 | imported → `content/xiaoma-reading/originals/2026-07-12-heart-failure.md` |
 | 2026-07-11 | Accessory pathway ＆ WPW syndrome | 小麻閱讀（9E） | conversation_only |
@@ -59,3 +59,9 @@
 作者於 2026-10-26 對話提供〈肝臟檢驗，先告訴你病人在哪裡〉（文內日期 2026-07-18，小麻閱讀 9E）完整文本及 `Tests of hepatic function / Patterns of LFTs` 的局部原書表格截圖。正文逐字存入私人 [source snapshot](2026-07-18-liver-tests-user-supplied.md)，圖表實際可見內容及醫學／權利邊界另記於 [figure + medical audit](2026-07-18-liver-tests-figure-medical-audit.md)。
 
 狀態（2026-10-26 作者新確認）：**author_attested_facebook_final / canonical_original_in_branch / publication_hold**。作者在本次對話明確確認「本次完整貼文就是 2026-07-18 Facebook 正式發布的最終版本」。已將 source snapshot **逐字無變更**納入 `content/xiaoma-reading/originals/2026-07-18-liver-tests.md` 作為作者確認之 canonical 基準；尚未取得 Facebook 貼文 URL／網頁獨立核對，不能說已自行驗證 FB 原帖。此更新屬 PR #65 工作分支，尚未合併 main，亦未加入 `site/pages.json`／公開網站。原篇不屬上列 2026-10-21 歷史 21 篇直貼清單，故不改動原有計數基數。截圖原像素尚未 Git 封存；局部圖表對讀不能冒充完整 9E 原頁核對。作者的原稿身分確認，不代表獨立醫學審查或原書圖像授權通過。
+
+### 本輪統一整併（2026-10-26）
+
+以上數字由實際檔案核對；不同分支曾同時修改此表，本輪逐筆合併，未採用任一分支的舊總數。原21篇之外，另保存作者確認的肝臟檢驗原文、腹水上下篇與中風二次預防模擬教學情境。WPW 原稿仍缺全文，不能以本輪 AI 傳導機轉文章充數。
+
+本輪閱讀／選稿決策及各 HOLD 原因見 `audit/intake-reading-publication-20261026.md`。已發布與否以該檔後續實測記錄為準；歷史段落描述當時狀態，不代表現在仍未回收。
