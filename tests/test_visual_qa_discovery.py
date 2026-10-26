@@ -11,7 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from visual_qa_browser import discover_pages, changed_pages
+from visual_qa_browser import discover_pages, changed_pages, changed_figures, figure_versions
 
 
 class VisualQADiscoveryTest(unittest.TestCase):
@@ -79,6 +79,37 @@ class VisualQADiscoveryTest(unittest.TestCase):
     def test_rejects_unsafe_git_ref(self):
         with self.assertRaisesRegex(ValueError, "Invalid git base"):
             changed_pages(self.root, "main..evil")
+
+    @patch("visual_qa_browser.subprocess.run")
+    def test_prose_only_edit_does_not_recheck_unchanged_figures(self, git):
+        original = (self.root / "content/lesson.md").read_text(encoding="utf-8")
+        (self.root / "content/lesson.md").write_text("New introduction\n" + original, encoding="utf-8")
+        diff = subprocess.CompletedProcess([], 0, "content/lesson.md\n", "")
+        git.side_effect = [diff, diff, subprocess.CompletedProcess([], 0, original, "")]
+        self.assertEqual(changed_figures(self.root, "origin/main"), {})
+
+    @patch("visual_qa_browser.subprocess.run")
+    def test_one_modified_figure_only_rechecks_that_figure(self, git):
+        original = (self.root / "content/lesson.md").read_text(encoding="utf-8")
+        (self.root / "content/lesson.md").write_text(
+            original.replace("<svg></svg>", "<svg><title>changed</title></svg>"),
+            encoding="utf-8")
+        diff = subprocess.CompletedProcess([], 0, "content/lesson.md\n", "")
+        git.side_effect = [diff, diff, subprocess.CompletedProcess([], 0, original, "")]
+        self.assertEqual(changed_figures(self.root, "origin/main"),
+                         {"reader-lesson": ("reader-lesson.html", ["decision"])})
+
+    @patch("visual_qa_browser.subprocess.run")
+    def test_new_article_figures_cannot_skip_when_base_version_missing(self, git):
+        diff = subprocess.CompletedProcess([], 0, "content/lesson.md\n", "")
+        git.side_effect = [diff, diff, subprocess.CompletedProcess([], 128, "", "missing")]
+        self.assertEqual(changed_figures(self.root, "origin/main"),
+                         {"reader-lesson": ("reader-lesson.html", ["decision", "source-ecg"])})
+
+    def test_figure_version_scanner_detects_nested_content_changes(self):
+        self.assertNotEqual(
+            figure_versions('<figure id="decision"><svg></svg></figure>'),
+            figure_versions('<figure id="decision"><svg><title>new</title></svg></figure>'))
 
 
 if __name__ == "__main__":
