@@ -508,3 +508,25 @@
  .hbv-signal-link{width:calc((100% - 27px)/2);font-size:12px}
  .hbv-signal-link>small{font-size:11px}
 }
+
+/* WPW / pre-excited AF: true responsive teaching comparisons, no off-screen SVG panels. */
+.article .wpw-compare{display:grid;gap:0}
+.article .wpw-state{min-width:0;padding:20px 24px 18px}
+.article .wpw-state+.wpw-state{border-top:1px solid var(--line)}
+.article .wpw-state-title{display:grid;gap:3px;margin-bottom:14px;line-height:1.5}
+.article .wpw-state-title span{font:750 12px/1.5 ui-monospace,monospace;color:var(--accent)}
+.article .wpw-state-title strong{font-size:1em;color:var(--ink)}
+.article .wpw-routes,.article .wpw-af-paths{display:grid;gap:10px;min-width:0}
+.article .wpw-route{min-width:0;border-left:4px solid var(--brand);background:var(--bg);padding:11px 13px;overflow-wrap:anywhere}
+.article .wpw-route-ap{border-left-color:var(--accent)}
+.article .wpw-route span{display:block;color:var(--muted);font-size:.74em;font-weight:700;line-height:1.5;margin-bottom:5px}
+.article .wpw-route strong{display:block;color:var(--ink);font-weight:700;font-size:.86em;line-height:1.65}
+.article .wpw-route p{font-size:.8em;line-height:1.6;margin:7px 0 0}
+.article .wpw-outcome{font-size:.83em;line-height:1.7;margin:13px 0 0!important}
+.article .wpw-af{display:grid;gap:13px;padding:22px 24px}
+.article .wpw-af-input{text-align:center;display:grid;gap:2px;border:1px solid var(--line);background:var(--brand-light);padding:12px;line-height:1.6}
+.article .wpw-af-input strong{font-size:.87em}
+.article .wpw-af-input span{font-size:.77em;color:var(--muted)}
+.article .wpw-af-outcome{border-top:1px solid var(--line);padding-top:12px;font-size:.83em;line-height:1.75}
+@media(min-width:700px){.article .wpw-routes,.article .wpw-af-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.article .wpw-state{padding:17px 15px}.article .wpw-af{padding:17px 15px}.article .wpw-state-title strong{font-size:.94em}.article .wpw-route{padding:10px 11px}.article .wpw-route strong{font-size:.84em}.article .wpw-af-input{text-align:left}}

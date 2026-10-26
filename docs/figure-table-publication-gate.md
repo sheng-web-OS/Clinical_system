@@ -2,6 +2,9 @@
 
 適用：site/pages.json 中新發布或修訂的教學正文（現行識別：/lessons/ 或 kind=ai_integrated）。來源頁、系列索引、未經改動的歷史原稿，不當作新稿。執行路徑：site/catalog.py → site/figure_gate.py；網站建置與 unit tests 使用同一規則。
 
+
+> **視覺驗收不是來源驗收**：本 gate 不能偵測手機上被裁切的寬圖、縮小到不可讀的原始 ECG 或缺乏教學功能的示意圖。必須另按 [教材視覺出版驗收](mobile-figure-quality-contract.md) 留下實際手機／桌面 render 和醫學判讀；`represented` 或 `ai_editorial_review` 不代表視覺通過。
+
 ## 出版前必須回答
 
 1. **原頁是否真的查過？** 依《Pocket Medicine》第九版原 PDF 及必要 guideline／original article，核對每張重要 Figure、Table、caption、footnote、版次與頁碼；單靠抽字／搜尋片段不能宣稱已核對原圖。
