@@ -22,6 +22,12 @@ Accessory pathway（AP）是心房與心室之間額外存在的肌性傳導連�
 
 此處先區分：**accessory pathway** 是通道；**WPW pattern** 是 ECG 呈現的 ventricular pre-excitation；**WPW syndrome** 還涉及相關的臨床 tachyarrhythmia。Pattern 不代表當下正在發作 AVRT，也不代表所有發作必須經 AP 順傳。
 
+<figure id="wpw-baseline-original" class="diuretic-figure" role="group" aria-label="正常房室傳導與 WPW 預激的真實公開學術原圖">
+<div class="diuretic-figure-head"><span>REFERENCE ECG · WHY DELTA WAVE APPEARS</span><strong>先比較 normal conduction 和 pre-excitation 的 QRS 起始</strong></div>
+<a href="https://upload.wikimedia.org/wikipedia/commons/f/f5/Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg" alt="正常房室傳導與 WPW pre-excitation 對照，標出 short PR、delta wave 及提早啟動的心室；Khan 2024 開放授權原圖" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
+<figcaption>正常傳導只有 AV node–His–Purkinje 作為心室啟動入口；預激時 AP 提前啟動部分心肌，形成 delta wave，隨後與正常傳導融合。原圖：Khan Z, Khan A, Cureus 2024, <a href="https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg">Wikimedia Commons</a>，<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>。未修改；此圖展示典型 ECG，不代表所有 AP 必然可在 resting ECG 看見。</figcaption>
+</figure>
+
 ## 同一條旁路，在三種情況下做的是三種工作
 
 **AVRT（atrioventricular reciprocating tachycardia）** 是心房、心室與兩條房室傳導途徑形成的 reentry：訊號由其中一條路下行，經另一條路返回心房，使迴路得以重複。它不是「一條旁路自己突然放電」，而是**旁路與正常傳導系統之間出現可持續的循環**。
@@ -30,27 +36,10 @@ Accessory pathway（AP）是心房與心室之間額外存在的肌性傳導連�
 
 在 **antidromic AVRT**，衝動改走 **AP 順向下行**，再經 AV node 或另一條 AP 回到心房。心室大部分由旁路所激發，QRS 因而通常既寬又規則。從表面 ECG 看，它可以與 VT 很相似，不能只靠「年輕、有 WPW history」就宣稱已經區分。
 
-<figure id="wpw-pathway-figure" class="diuretic-figure" role="group" aria-label="三種 accessory pathway 傳導角色的原創示意圖">
-<div class="diuretic-figure-head"><span>FIGURE 01 · CONDUCTION, NOT DIAGNOSIS</span><strong>同一套解剖通道，改變下行路徑就改變 QRS</strong></div>
-<div role="region" aria-label="三種傳導路徑示意圖，手機可水平捲動" tabindex="0" style="max-width:100%;overflow-x:auto">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 366" width="900" height="366" role="img" aria-labelledby="wpwfig-title wpwfig-desc">
-<title id="wpwfig-title">Sinus pre-excitation、orthodromic AVRT、antidromic AVRT 傳導路徑</title>
-<desc id="wpwfig-desc">三個面板共用心房、AV node、心室與 accessory pathway。左：竇性預激沿 AV node 與旁路同時下傳形成 fusion；中：orthodromic AVRT 走 AV node 下行、旁路逆傳，通常窄 QRS；右：antidromic AVRT 走旁路下行、AV node 或其他路逆傳，通常寬 QRS。顏色與箭頭只顯示方向，不代表真實心臟空間位置。</desc>
-<defs><marker id="wblue" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#147b9a"/></marker><marker id="worange" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#bc693e"/></marker></defs>
-<rect width="900" height="366" rx="14" fill="#f7faf9"/>
-<rect x="15" y="18" width="280" height="325" rx="10" fill="white" stroke="#d8e3e0"/><rect x="310" y="18" width="280" height="325" rx="10" fill="white" stroke="#d8e3e0"/><rect x="605" y="18" width="280" height="325" rx="10" fill="white" stroke="#d8e3e0"/>
-<g font-family="sans-serif" text-anchor="middle" fill="#203938">
-<text x="155" y="43" font-size="17" font-weight="bold">Sinus pre-excitation</text><text x="450" y="43" font-size="17" font-weight="bold">Orthodromic AVRT</text><text x="745" y="43" font-size="17" font-weight="bold">Antidromic AVRT</text>
-</g>
-<g fill="#e6eeeb" stroke="#607c74" stroke-width="1.5"><rect x="94" y="73" width="120" height="40" rx="12"/><rect x="94" y="240" width="120" height="40" rx="12"/><rect x="389" y="73" width="120" height="40" rx="12"/><rect x="389" y="240" width="120" height="40" rx="12"/><rect x="684" y="73" width="120" height="40" rx="12"/><rect x="684" y="240" width="120" height="40" rx="12"/></g>
-<g font-family="sans-serif" fill="#203938" font-size="17" text-anchor="middle"><text x="154" y="98">心房 A</text><text x="154" y="266">心室 V</text><text x="449" y="98">心房 A</text><text x="449" y="266">心室 V</text><text x="744" y="98">心房 A</text><text x="744" y="266">心室 V</text></g>
-<g font-family="sans-serif" font-size="13" fill="#36546b" text-anchor="middle"><text x="106" y="184">AV node</text><text x="401" y="184">AV node</text><text x="696" y="184">AV node</text></g>
-<g font-family="sans-serif" font-size="13" fill="#965b34" text-anchor="middle"><text x="246" y="184">AP</text><text x="541" y="184">AP</text><text x="836" y="184">AP</text></g>
-<g stroke="#147b9a" stroke-width="5" fill="none" stroke-linecap="round"><path d="M127 116 L127 224" marker-end="url(#wblue)"/><path d="M422 116 L422 224" marker-end="url(#wblue)"/><path d="M718 230 L718 120" marker-end="url(#wblue)"/></g>
-<g stroke="#bc693e" stroke-width="5" fill="none" stroke-linecap="round"><path d="M199 116 L199 224" marker-end="url(#worange)"/><path d="M493 231 L493 120" marker-end="url(#worange)"/><path d="M792 116 L792 224" marker-end="url(#worange)"/></g>
-<g font-family="sans-serif" font-size="16" text-anchor="middle"><text x="155" y="312" fill="#315a53">fusion → δ wave</text><text x="450" y="312" fill="#315a53">通常窄 QRS</text><text x="745" y="312" fill="#315a53">通常寬 QRS</text></g>
-</svg></div>
-<figcaption><strong>圖 1｜路徑、方向與心室激發是不同層次。</strong> 藍色為 AV node／His–Purkinje 相關路，橘色為 AP；箭頭代表該情況的主要傳導方向。右圖僅示典型 AV node 逆傳情境，亦可能經另一條 AP 逆傳。依 Pocket Medicine 9E 與 ESC 2019 的傳導敘述重新設計，非原圖、非依 ECG 判定實際 pathway 位置。手機可左右滑動，圖後仍提供完整文字推導。</figcaption>
+<figure id="wpw-pathway-figure" class="diuretic-figure" role="group" aria-label="醫學期刊公開授權：pre-excitation、orthodromic AVRT、antidromic AVRT 傳導與 ECG 原圖">
+<div class="diuretic-figure-head"><span>FIGURE 01 · ORIGINAL MEDICAL FIGURE</span><strong>旁路作為「去程」或「回程」，QRS 外觀如何改變</strong></div>
+<a href="https://upload.wikimedia.org/wikipedia/commons/2/26/Electrocardiographic_features_of_pre_excitation%2C_orthrodromic%2C_and_antidromic_AVRT.jpg" target="_blank" rel="noopener noreferrer" aria-label="開啟 ECG 原始大圖"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Electrocardiographic_features_of_pre_excitation%2C_orthrodromic%2C_and_antidromic_AVRT.jpg" alt="Khan 與 Khan 2024 原圖：竇性預激、orthodromic AVRT、antidromic AVRT 的心臟傳導方向與 ECG 對照；可點圖放大" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;max-width:100%;border:1px solid #dde5e3;border-radius:8px;background:white"/></a>
+<figcaption><strong>圖 1｜三種傳導情境不是三個病名階段。</strong> 左：sinus pre-excitation，正常與旁路傳導共同啟動心室；中：orthodromic AVRT 下行走 AV node–His–Purkinje，通常窄 QRS；右：antidromic AVRT 順向經旁路，通常寬 QRS。<strong>讀圖時對照 ECG，不是只記住箭頭顏色。</strong> 原圖：Khan Z, Khan A. Cureus 2024, <a href="https://doi.org/10.7759/cureus.62928">doi:10.7759/cureus.62928</a>，<a href="https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg">Wikimedia Commons 原檔</a>，<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>。未裁切／重繪；點圖可放大。這張圖呈現典型迴路，不足以由單張表面 ECG 證明真正的 AP 位置。</figcaption>
 </figure>
 
 三格圖透露一個差異：sinus pre-excitation 雖同時啟動兩條路，但沒有持續 reentry；orthodromic AVRT 的 AP 是**回程**，antidromic AVRT 的 AP 是**去程**。所以 QRS 描述的是「心室怎麼被啟動」，不是「迴路的所有必要組件」。
