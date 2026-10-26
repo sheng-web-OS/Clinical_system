@@ -1,61 +1,71 @@
-# WPW：同一條旁路，為什麼可以產生窄 QRS，也可以產生寬 QRS？
+# WPW：心室明明只有一個，為什麼同一條旁路能讓 QRS 又窄又寬？
 
-**小麻閱讀整合稿｜第一篇：傳導路徑與電生理機轉（2026-10-26）**
+*小麻閱讀（9E）｜心律急症系列 01／03：從傳導方向開始。*
 
-## 先弄清楚，電流原本怎麼抵達心室
+**系列閱讀：本篇「傳導路徑」 → [02｜Pre-excited AF：被阻斷的是哪一條路？](2026-10-26-preexcited-af.md) → [03｜WCT／ACLS：診斷未定時如何行動？](2026-10-26-wct-acls-decision.md)**
 
-先用一個假設的 ECG 判讀情境：一位曾因心悸就診的年輕病人，平時 ECG 顯示 PR interval 短、QRS 起始有一段模糊斜坡（delta wave）。這時把心電圖寫成「WPW（Wolff–Parkinson–White）」，並沒有告訴我們他下一次心搏過速會是窄 QRS、寬 QRS，甚至是不規則的快速心律。
+讀到 Wolff–Parkinson–White（WPW）時，最容易被三個 ECG 名詞困住：short PR interval、delta wave、wide QRS。它們看似是一組能直接認出病名的訊號；然而，下一次病人心悸發作時，QRS 可能是窄的，也可能又寬又規則，甚至寬度不一、快得驚人。
 
-這是因為 **resting pre-excitation pattern 描述的是某一次心房衝動如何進入心室，不是所有可能發生的心搏過速都使用同一條迴路**。
+如果 WPW 就是「有一條 extra pathway」，為何它產生的 tachycardia 沒有固定的 QRS 形態？
 
-先建立正常傳導：竇房結產生的訊號在心房擴散，經房室結（AV node）、希氏束（His bundle）與浦金氏傳導網（Purkinje network），再讓大範圍心室肌有序去極化。AV node 的傳導速度會隨輸入頻率變化，具有相當的 decremental conduction；這不僅形成正常 PR interval，也使快速心房訊號通常無法毫無節制地 1:1 傳進心室。
+答案必須先把三件事分開：**旁路是否存在、這一搏心室從哪裡被啟動、以及這個 tachycardia 是否依賴某條路徑持續循環**。三個問題彼此相關，卻不是同一件事。
 
-Accessory pathway 是額外的心房與心室肌之間的傳導連結。某些旁路能 **antegrade**（心房→心室）傳導，使部分心室在 His–Purkinje 全部啟動之前先被去極化；這部分較慢的肌肉傳播會形成 delta wave，並和正常傳導融合成 QRS。於是 short PR、delta wave、QRS widening 是同一個提早啟動機轉的不同投影，而不是彼此獨立的三個病徵。
+## QRS 不是路徑的名稱，而是心室如何被啟動的結果
 
-但有些旁路只能 **retrograde**（心室→心房）傳導。正常竇性節律不會經它提前活化心室，所以 resting ECG 可能完全看不到 delta wave；這叫 concealed accessory pathway。**沒有 resting pre-excitation，不能推出不存在能參與 AVRT 的旁路。**
+正常 sinus impulse 先經心房，再通過 AV node、His bundle 與 Purkinje system，最後快速啟動心室。AV node 的生理延遲形成 PR interval 的一部分；它具有 decremental conduction，當心房輸入愈快，傳導常愈慢，因此對心室形成重要的篩選作用。**AV node 不只是一段電線，也是一個會限制傳導速度的節點。**
 
-因此先分清三個名詞：accessory pathway 是解剖／電生理通道；WPW pattern 是 antegrade pre-excitation 在 ECG 留下的表現；WPW syndrome 則涉及 pre-excitation 與症狀性 tachyarrhythmia 的臨床關係。Pattern 不是此刻正在發生 AVRT 的證明。
+Accessory pathway（AP）是心房與心室之間額外存在的肌性傳導連結。典型 AP 的傳導與 AV node 不同：有能力讓心房衝動繞過正常 AV nodal delay，直接提前激發部分心室肌。
 
-## 同一條路，方向一換，QRS 的意義就變了
+在 sinus rhythm，若這條 AP 能順向（atrium → ventricle）傳導，同一個心房衝動可沿 **AV node／His–Purkinje** 與 **AP** 同時抵達心室。AP 先激發的一小部分心室肌，以肌肉間相對緩慢的方式擴散，形成 QRS 開始時鈍化的 *delta wave*；接著由 His–Purkinje 快速到達的波前參與激發，產生 fusion QRS。因此 short PR、delta wave 與 QRS widening 不是三個互不相干的病徵，而是 **部分心室提前啟動** 的不同面向。
 
-AVRT（atrioventricular reciprocating tachycardia）的關鍵是存在一條可以循環的路徑。心房和心室之間除了 AV node，另有 accessory pathway，電流便可能沿其中一條下行、另一條返回，形成持續的 reentry。
+但不是每條 AP 都能順向傳導。有些只准許 ventricle → atrium 逆傳（**concealed AP**），因此 resting sinus ECG 可以完全沒有 delta wave；某些具順傳能力的 AP 也可能因傳導速度、位置與融合程度而沒有明顯的 resting pre-excitation。**沒有 delta wave，不能排除可參與 tachycardia 的 AP。**
 
-在 **orthodromic AVRT**，電流從心房**經 AV node／His–Purkinje 下傳**，啟動心室，再經 accessory pathway **逆行回到心房**。心室大致仍由正常快速傳導系統啟動，所以通常呈 *regular narrow-complex tachycardia*。這可以發生在只具逆傳能力、沒有 resting delta wave 的 concealed pathway。
+此處先區分：**accessory pathway** 是通道；**WPW pattern** 是 ECG 呈現的 ventricular pre-excitation；**WPW syndrome** 還涉及相關的臨床 tachyarrhythmia。Pattern 不代表當下正在發作 AVRT，也不代表所有發作必須經 AP 順傳。
 
-在 **antidromic AVRT**，方向相反：電流**經 accessory pathway 下傳**心室，再由 AV node（有些迴路由另一旁路）返回心房。心室不再從正常 His–Purkinje 的起點同步活化，故通常為 *regular wide-complex tachycardia*。這種節律雖以心房—心室 reentry 維持，從表面 ECG 看卻可能與 ventricular tachycardia 難以區分。
+## 同一條旁路，在三種情況下做的是三種工作
 
-兩個名稱中的「順向／逆向」，說的是相對於正常 AV nodal ventricular activation 的**迴路下行路徑**，不是替病人分出良性或惡性。**Regular wide QRS 並不能因病人年輕或有 WPW history 就直接判定 antidromic AVRT；未知 WCT 仍必須優先考慮 VT。**
+**AVRT（atrioventricular reciprocating tachycardia）** 是心房、心室與兩條房室傳導途徑形成的 reentry：訊號由其中一條路下行，經另一條路返回心房，使迴路得以重複。它不是「一條旁路自己突然放電」，而是**旁路與正常傳導系統之間出現可持續的循環**。
 
-<figure id="wpw-route-directions" class="reasoning-figure">
-<div class="reasoning-title">同一條旁路，改變下行方向就改變心室活化</div>
-<div class="reasoning-cards">
-<section><strong>Orthodromic AVRT</strong><div class="conduction-node">心房</div><div class="conduction-paths"><div><b>↓ 下行</b><span>AV node<br>His–Purkinje</span></div><div><b>↑ 回程</b><span>Accessory<br>pathway</span></div></div><div class="conduction-node">心室：通常窄 QRS</div><p>AV node 是維持迴路所必需的一段；BBB 等情況可使 QRS 變寬。</p></section>
-<section><strong>Antidromic AVRT</strong><div class="conduction-node">心房</div><div class="conduction-paths"><div><b>↓ 下行</b><span>Accessory<br>pathway</span></div><div><b>↑ 回程</b><span>AV node<br>或另一條旁路</span></div></div><div class="conduction-node">心室：通常寬 QRS</div><p>下行先經心室肌活化；未知 WCT 仍需優先考慮 VT，不能由 WPW 病史直接確診。</p></section>
-</div><figcaption>原創機轉圖，非 Pocket Medicine 原圖。對讀 9E PDF 第 66–68 頁 Accessory Pathways 與 Figure 1-3；圖呈現已建立迴路的傳導方向，沒有模擬誘發時序、心電圖波形或個別旁路位置。</figcaption></figure>
+在 **orthodromic AVRT**，衝動經 **AV node／His–Purkinje 下行**，再沿 **AP 逆行回心房**。既然心室仍由 His–Purkinje 系統啟動，通常呈 regular narrow QRS；合併 bundle branch block 等情況仍可能寬 QRS。這也解釋為什麼 concealed AP 雖無 resting delta wave，卻仍能形成 orthodromic AVRT：它只需要逆傳的一段。
 
-### 沿哪條路下去？
+在 **antidromic AVRT**，衝動改走 **AP 順向下行**，再經 AV node 或另一條 AP 回到心房。心室大部分由旁路所激發，QRS 因而通常既寬又規則。從表面 ECG 看，它可以與 VT 很相似，不能只靠「年輕、有 WPW history」就宣稱已經區分。
 
-| 節律 | 下行抵達心室 | 返回心房 | QRS 的主要原因 |
-|---|---|---|---|
-| 正常 sinus rhythm（沒有顯著預激） | AV node → His–Purkinje | 無持續迴路 | 同步、通常窄 |
-| Sinus rhythm + manifest pre-excitation | AV node 與旁路並行，形成 fusion | 無持續迴路 | Delta wave／可能較寬 |
-| Orthodromic AVRT | AV node → His–Purkinje | Accessory pathway | 通常窄；合併 BBB 可寬 |
-| Antidromic AVRT | Accessory pathway | AV node 或另一旁路 | 通常寬，須鑑別 VT |
+<figure id="wpw-pathway-figure" class="diuretic-figure" role="group" aria-label="三種 accessory pathway 傳導角色的原創示意圖">
+<div class="diuretic-figure-head"><span>FIGURE 01 · CONDUCTION, NOT DIAGNOSIS</span><strong>同一套解剖通道，改變下行路徑就改變 QRS</strong></div>
+<div role="region" aria-label="三種傳導路徑示意圖，手機可水平捲動" tabindex="0" style="max-width:100%;overflow-x:auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 366" width="900" height="366" role="img" aria-labelledby="wpwfig-title wpwfig-desc">
+<title id="wpwfig-title">Sinus pre-excitation、orthodromic AVRT、antidromic AVRT 傳導路徑</title>
+<desc id="wpwfig-desc">三個面板共用心房、AV node、心室與 accessory pathway。左：竇性預激沿 AV node 與旁路同時下傳形成 fusion；中：orthodromic AVRT 走 AV node 下行、旁路逆傳，通常窄 QRS；右：antidromic AVRT 走旁路下行、AV node 或其他路逆傳，通常寬 QRS。顏色與箭頭只顯示方向，不代表真實心臟空間位置。</desc>
+<defs><marker id="wblue" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#147b9a"/></marker><marker id="worange" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#bc693e"/></marker></defs>
+<rect width="900" height="366" rx="14" fill="#f7faf9"/>
+<rect x="15" y="18" width="280" height="325" rx="10" fill="white" stroke="#d8e3e0"/><rect x="310" y="18" width="280" height="325" rx="10" fill="white" stroke="#d8e3e0"/><rect x="605" y="18" width="280" height="325" rx="10" fill="white" stroke="#d8e3e0"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#203938">
+<text x="155" y="43" font-size="17" font-weight="bold">Sinus pre-excitation</text><text x="450" y="43" font-size="17" font-weight="bold">Orthodromic AVRT</text><text x="745" y="43" font-size="17" font-weight="bold">Antidromic AVRT</text>
+</g>
+<g fill="#e6eeeb" stroke="#607c74" stroke-width="1.5"><rect x="94" y="73" width="120" height="40" rx="12"/><rect x="94" y="240" width="120" height="40" rx="12"/><rect x="389" y="73" width="120" height="40" rx="12"/><rect x="389" y="240" width="120" height="40" rx="12"/><rect x="684" y="73" width="120" height="40" rx="12"/><rect x="684" y="240" width="120" height="40" rx="12"/></g>
+<g font-family="sans-serif" fill="#203938" font-size="17" text-anchor="middle"><text x="154" y="98">心房 A</text><text x="154" y="266">心室 V</text><text x="449" y="98">心房 A</text><text x="449" y="266">心室 V</text><text x="744" y="98">心房 A</text><text x="744" y="266">心室 V</text></g>
+<g font-family="sans-serif" font-size="13" fill="#36546b" text-anchor="middle"><text x="106" y="184">AV node</text><text x="401" y="184">AV node</text><text x="696" y="184">AV node</text></g>
+<g font-family="sans-serif" font-size="13" fill="#965b34" text-anchor="middle"><text x="246" y="184">AP</text><text x="541" y="184">AP</text><text x="836" y="184">AP</text></g>
+<g stroke="#147b9a" stroke-width="5" fill="none" stroke-linecap="round"><path d="M127 116 L127 224" marker-end="url(#wblue)"/><path d="M422 116 L422 224" marker-end="url(#wblue)"/><path d="M718 230 L718 120" marker-end="url(#wblue)"/></g>
+<g stroke="#bc693e" stroke-width="5" fill="none" stroke-linecap="round"><path d="M199 116 L199 224" marker-end="url(#worange)"/><path d="M493 231 L493 120" marker-end="url(#worange)"/><path d="M792 116 L792 224" marker-end="url(#worange)"/></g>
+<g font-family="sans-serif" font-size="16" text-anchor="middle"><text x="155" y="312" fill="#315a53">fusion → δ wave</text><text x="450" y="312" fill="#315a53">通常窄 QRS</text><text x="745" y="312" fill="#315a53">通常寬 QRS</text></g>
+</svg></div>
+<figcaption><strong>圖 1｜路徑、方向與心室激發是不同層次。</strong> 藍色為 AV node／His–Purkinje 相關路，橘色為 AP；箭頭代表該情況的主要傳導方向。右圖僅示典型 AV node 逆傳情境，亦可能經另一條 AP 逆傳。依 Pocket Medicine 9E 與 ESC 2019 的傳導敘述重新設計，非原圖、非依 ECG 判定實際 pathway 位置。手機可左右滑動，圖後仍提供完整文字推導。</figcaption>
+</figure>
 
-每一格的 QRS 都是 **ventricular activation sequence** 的結果；QRS width 本身沒有告訴你哪一條路維持了 reentry。這也說明為什麼它不能成為後續藥物選擇的唯一依據。
+三格圖透露一個差異：sinus pre-excitation 雖同時啟動兩條路，但沒有持續 reentry；orthodromic AVRT 的 AP 是**回程**，antidromic AVRT 的 AP 是**去程**。所以 QRS 描述的是「心室怎麼被啟動」，不是「迴路的所有必要組件」。
 
-## Adenosine 究竟切斷了什麼？
+## Adenosine 可以中斷 AVRT，為什麼還不能說它一定安全？
 
-Adenosine 的短暫 AV nodal block 能中斷依賴 AV node 才能維持的 reentrant circuit。因此在 hemodynamically stable、**regular narrow-complex** orthodromic AVRT，vagal maneuvers 與適當監測下的 adenosine，才有清楚的 mechanism-based treatment rationale。
+Adenosine 可短暫阻斷 AV nodal conduction。對 hemodynamically stable、regular narrow-complex、機轉支持 AV-node-dependent 的 orthodromic AVRT，AV node 是迴路不可缺的一段；暫時切斷它，迴路便可能終止。這是機轉支持的處置理由，不是僅憑「長得像 SVT」試一顆藥。
 
-然而，**「存在 WPW pathway」不等於「任何心律下都不能使用 adenosine」**。關鍵不是病人的診斷標籤，而是此刻的節律：若是以 AV node 為迴路必要元件的 regular orthodromic AVRT，阻斷 AV node 可以終止迴路；若是 AF 的心房訊號正透過旁路快速下傳，阻斷 AV node 反而可能令心室更依賴未受 AV node 篩選的旁路傳導。即使原先是 narrow AVRT，adenosine 也有誘發 AF 的已發表病例，使用時需持續監測、備妥電復律／去顫能力。
+但 adenosine 反應不會獨立證明 diagnosis：AVNRT 也會因 AV node 被阻斷而終止；某些 atrial tachycardia 和 adenosine-sensitive VT 也可有反應。並且 adenosine 有可能誘發 AF；有 antegrade-conducting AP 的病人一旦轉為 pre-excited AF，風險將截然不同。使用時需監測與準備緊急電復律／去顫能力。
 
-反過來，**adenosine 使心跳停止，不等於「證明它是 AVRT」**：AVNRT 也可終止，部分 atrial tachycardia 或 idiopathic VT 也可能對 adenosine 反應。藥物反應只回答某段電生理機轉是否受影響，不應被提升為唯一的來源診斷。
+這一篇解決了「**旁路在迴路裡的方向**」。但前面偷偷倚賴一項前提：心房訊號是**有組織的 reentry**。若心房改為大量快速、不規則的 AF 衝動，AP 甚至不需要參與任何 AVRT，也能使心室陷入危險。
 
-本篇將通道、方向、心室活化與 AV node 在迴路中的角色分開；下一篇改變的變數不是再增加一條路，而是**心房的節律從單一可循環訊號，變成大量不規則的 AF impulses**。此時不再只是 AVRT 的方向問題，而是 AV node 之外還有誰能把訊號傳給心室。
+[**接續 02｜Pre-excited AF：旁路不再是迴路，為什麼反而更危險？**](2026-10-26-preexcited-af.md)
 
-[接續閱讀：為什麼同樣是 WPW，Adenosine 可能從治療變成危險？](2026-10-26-preexcited-af.md)
+*原始材料：Pocket Medicine 9E，私人 PDF 第 66–67 頁；[ESC 2019 SVT 指引 §11.3](https://academic.oup.com/eurheartj/article/41/5/655/5556821)。本稿為新的 AI 系列整合教材；2026/7/11 歷史 WPW 原稿全文尚未核得，並未冒稱其作者定稿。*
 
----
 
-[完整來源、原表定位與閱讀關係](../arrhythmia-sources.md)。本文為 AI 整合教材；假設情境不是病例報告，歷史 WPW 原文仍另行回收。
+[**原圖、病例與 2025 AHA／2023 AF 來源逐項核對**](../arrhythmia-sources.md)。

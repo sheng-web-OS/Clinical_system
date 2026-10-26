@@ -18,8 +18,28 @@ Figure 1-3 的藥物反應節點是教學壓縮，不能單靠終止反應診斷
 <span id="case"></span>
 ## 24 歲男性：真實病例的 ECG 與治療時間
 
-Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)。[出版社原始四頁 PDF](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870)；Figure 1 位於 PDF 第 2 頁，涵蓋初始不規則寬 QRS、轉律後預激與消融後 ECG，圖說須一併閱讀。
+Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)。[出版社原始四頁 PDF](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870)；**Figure 1（A1、A2）及 Figure 2 位於原刊 PDF 第 2 頁；Figure 3 位於第 3 頁**。Figure 1 是發作中的 ECG；Figure 2 是 100 J 同步電復律後；Figure 3 是次日 accessory-pathway ablation 後，圖說須一併閱讀。
 
 本輪取回完整 PDF 文字並核對：24 歲、初始 HR >200、SBP 約130、兩次 IV amiodarone 各150 mg 未終止、同步電復律後見預激、EP 定位 right posteroseptal pathway 並消融。原文與圖說的窄／寬搏動頻率是同一張不規則記錄的描述，不是兩次獨立的穩定性測試。本文不增加原報告沒有的檢查或反應，也不把當年的 amiodarone 使用當成現行建議。
 
 原文標示 CC BY 4.0。本次公開站選擇連回原始 Figure 1，沒有重製 ECG 圖像；三張教學圖均是獨立原創機轉／決策圖。讀者可在原始 PDF 核對圖像與數據，原創概念圖不冒充病例 ECG。
+
+## 原刊 Figure 1–3 的分層證據（用於第二篇圖卡）
+
+以下四個節點是**同一名患者**在不同時點可取得的證據，不可誤認為四個獨立病例：
+
+1. **Figure 1-A1：prehospital rhythm strip**（原刊 PDF p.2）：irregular WCT、QRS width varying，心室搏動最快約 300/min、部分上升支鈍化；還無法獨立確診 AP 位置，但不宜只當成 regular monomorphic VT。
+2. **Figure 1-A2：first ED 12-lead ECG**（原刊 PDF p.2）：irregularly irregular、wide 與部分較窄的 QRS 同時存在，部分 lateral wide QRS 有 slurred onset、較窄者沒有；**variable pre-excitation／fusion** 是合理解釋，但仍需排除其他 irregular WCT。
+3. **Figure 2：after 100 J synchronized cardioversion**（原刊 PDF p.2）：sinus ECG 才出現清楚 delta waves，支持 manifest pre-excitation；不能把後驗 ECG 當作轉律前絕對必要的資訊。
+4. **Figure 3：after successful right posteroseptal AP ablation**（原刊 PDF p.3）：delta waves 消失，T-wave memory 表現需結合 EP 檢查解釋，不能單靠 T 波證明已完成消融。
+
+原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870，請開啟 [**期刊原始 PDF（第 2 頁可直接放大 Figure 1 與 Figure 2）**](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 檢視原始像素。本站 Figure 02 是逐圖證據導讀，**目前不是原始 ECG 圖像的嵌入檢視器**。若日後本地嵌入，必須保存 CC BY 4.0 授權標示與原始 DOI 及是否裁切的說明。
+
+## 新版原創 Figures 的對應範圍
+
+- [**Figure 01：WPW 三種下行傳導方向**](integrated/2026-10-26-wpw-conduction-mechanism.md#wpw-pathway-figure)：原創三面板 SVG。由 Pocket Medicine 9E p.66–67 Figure 1-3／Accessory Pathways 概念啟發，但不重製原書圖片。
+- [**Figure 02：Silverman ECG 四時點對讀**](integrated/2026-10-26-preexcited-af.md#af-ecg-evidence)：以圖卡說明 real Figure 1-A1／A2、Figure 2、Figure 3 讓判斷如何改變；真正 ECG 影像仍應從原刊 PDF 放大閱讀。
+- [**Figure 03：pre-excited AF 的 AV node 與 AP 兩條傳導出口**](integrated/2026-10-26-preexcited-af.md#af-two-exits)：原創 SVG，對應 2023 ACC/AHA/ACCP/HRS AF §10.6，並非個案量測的 EP 信號圖。
+- [**Figure 04：WCT／ACLS 的 causality、shock mode、drug boundary**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：原創臨床教學概念圖，對照 2025 AHA ALS WCT／pVT 和原始流程圖，不是取代官方 ACLS。
+
+**來源使用界線**：Pocket Medicine 原圖是私人原頁對讀，不重製；Silverman 案例已明示 CC BY 4.0，但目前只提供原刊放大連結。已核對的 guideline class 與「圖像有無直接嵌入」是兩項獨立驗收，不可互相取代。
