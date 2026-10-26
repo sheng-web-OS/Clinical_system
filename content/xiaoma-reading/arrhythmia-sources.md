@@ -44,11 +44,22 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 **更新狀態**：2026-10-27 讀取現行 `main` 的 `site/pages.json` 後確認，三篇文章已列入正式發布清單（`ai_editorial_review`、`navigation=false`）；先前審查紀錄宣稱「未列入」已過時。此次圖像由 `tools/fetch_arrhythmia_figures.py` 在建置時收錄，HTML `img` 直接引用站內 `assets/silverman-2018-fig*.jpg`，改圖提交不等於 Cloudflare 已更新；在合併、部署與公網驗證前不宣稱新圖已上線。原圖目視已透過公開原圖頁核對，整體醫學獨立同儕審稿仍未完成。
 
+## 2026-10-27｜ACLS 決策圖為什麼必須出現在文章裡
+
+先前 WCT／ACLS 教材僅有真實病例 ECG Figure 04，ACLS 2025 核心判斷流程只有外部 PDF 連結。這造成「病人此時能觀察到什麼」有圖，「接下來要怎麼決策」卻沒有圖的閱讀斷裂。
+
+本次新增 [**圖 A：WCT／ACLS 床邊決策流程**](integrated/2026-10-26-wct-acls-decision.md#wct-acls-flowchart)，在主文第一次提到 ACLS 後直接顯示。流程按照可立即影響行動的變數排列：有無脈搏 → sustained polymorphic VT 是否需要立即 unsynchronized shock → 不穩定是否由 tachyarrhythmia 造成 → 穩定時的 QRS width → WCT regularity 與 morphology。各分支均有獨立結果，並特別列出 pre-excited AF 不可套用 adenosine／AV nodal blockade 的例外。它是**本站重新整理的臨床因果分流**，並非把舊文句子上色，也沒有假裝它是 AHA 官方圖。
+
+**授權界線**：2025 [AHA 官方 Adult Tachyarrhythmia With a Pulse Algorithm（PDF）](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf) 可直接在原站閱讀；但 AHA 的 [ECC 圖表再利用規則](https://www.heart.org/en/about-us/statements-and-policies/guidelines-for-use-of-american-heart-association-emergency-cardiac-care) 說明公開重製須取得授權。本站沒有複製官方圖像、官方排版、商標或把官方圖片換色重繪。2025 [AHA Adult ALS §15–16](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support) 與 2023 [AF guideline §10.6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/) 為各分支醫學依據；資料與規則的引用不等於 AHA 認證本圖。
+
+**驗收契約**：新增圖像必須真實渲染在 WCT 文章首個決策問題之前；390px 無水平裁切，YES/NO 不混淆，能從圖直接選出有脈搏 pVT 的 unsynchronized shock、unstable pre-excited AF 的 synchronized cardioversion、stable regular monomorphic WCT 的限定 adenosine IIb，以及 irregular WCT 的禁用界線。僅有 `<figure>`、來源連結與 CI 不等於視覺與獨立醫學審查通過。
+
 ## 現行 Figures 對應範圍
 
 - [**Figure 01：WPW 傳導路徑與 ECG 原圖**](integrated/2026-10-26-wpw-conduction-mechanism.md#wpw-pathway-figure)：Khan 等人 2024 開放授權的原始學術圖，直接呈現 sinus pre-excitation、orthodromic AVRT 和 antidromic AVRT；另補正常傳導對照原圖。不是 Pocket Medicine 的複製。
 - [**Figure 02：Silverman ECG 四時點真實原圖**](integrated/2026-10-26-preexcited-af.md#af-ecg-evidence)：直接嵌入 Figure 1-A1／A2、Figure 2、Figure 3，連接現場證據與轉律後／消融後資訊。
 - [**Figure 03：pre-excited AF 的 AV node 與 AP 兩條傳導出口**](integrated/2026-10-26-preexcited-af.md#af-two-exits)：保留獨立原創 SVG 解釋傳導機轉，非個案量測的 EP signal。
+- [**圖 A：2025 ACLS／2023 AF 臨床決策流程**](integrated/2026-10-26-wct-acls-decision.md#wct-acls-flowchart)：完整床邊分流，由 pulse、polymorphic VT、tachyarrhythmia-caused instability、QRS width、regularity/morphology 依序決定電擊模式與藥物試探界線。為本站獨立整理，2025 AHA 官方圖仍從官方 PDF 開啟。
 - [**Figure 04：WCT 初始 ECG 與轉律後 ECG**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：直接嵌入 Silverman 2018 原圖，強調 irregular WCT 的可觀察操作邊界與後驗 delta wave 的證據時間差；AHA ACLS 官方流程維持原始連結。
 
 **來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，但**尚未完成本次圖片更新的正式公網部署與手機載入驗收**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
