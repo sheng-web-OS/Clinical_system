@@ -63,6 +63,6 @@ Marfan 的因果鏈是**主動脈根部結構異常 → 瓣葉對合失準 → A
 - [考選部原卷、標準答案、更正公告](../exam108-integrated-batch6-sources.md)：108（一）醫學（三）Q4，官方 A。
 - [2020 ACC/AHA Valvular Heart Disease Guideline](https://www.jacc.org/doi/10.1016/j.jacc.2020.11.018)，§4.1 acute AR：降低 afterload 可作短期穩定而不可延誤手術；明示 IABP 不適用 acute severe AR。
 - [2025 ESC/EACTS Valvular Heart Disease Guideline](https://academic.oup.com/eurheartj/article/46/44/4635/8234488)：疾病機轉、介入與藥物條件；不公開轉貼受著作權保護的圖表。
-- 連回現有[〈為什麼不喘了，仍可能需要換瓣？〉](../../../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md)與原本 LVEDP／HF 系列；本題主要補上「MS 的上游 LA 壓力與 LVEDP 不是同一件事」。
+- 連回現有[〈為什麼不喘了，仍可能需要換瓣？〉](../../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md)與原本 LVEDP／HF 系列；本題主要補上「MS 的上游 LA 壓力與 LVEDP 不是同一件事」。
 
 **出版狀態：私人草稿。** Pocket Medicine 9E 原表圖與註腳對讀、Figure Gate 與手機呈現尚待正式驗收。
