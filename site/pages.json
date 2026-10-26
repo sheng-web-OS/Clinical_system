@@ -645,5 +645,82 @@
         46
       ]
     }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-heat-rhabdo.md",
+    "output": "xiaoma-108a-heat-rhabdo.html",
+    "title": "昏倒的馬拉松選手，兩天後為何開始傷腎？",
+    "subtitle": "108（一）醫學（三）Q61／63：熱中暑、肌紅蛋白與腎保護",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "急症與腎臟",
+    "references": "xiaoma-exam108-acute-sources.html",
+    "date": "2026-10-26",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam": {
+      "year_roc": 108,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        61,
+        63
+      ]
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-cpr-airway.md",
+    "output": "xiaoma-108a-cpr-airway.html",
+    "title": "插管後仍做 30：2，究竟錯在哪裡？",
+    "subtitle": "108（一）醫學（三）Q75：心搏停止、advanced airway 與通氣節奏",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "急救與氣道",
+    "references": "xiaoma-exam108-acute-sources.html",
+    "date": "2026-10-26",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam": {
+      "year_roc": 108,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        75
+      ]
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-appendicitis.md",
+    "output": "xiaoma-108a-appendicitis.html",
+    "title": "右下腹痛比腰大肌徵象更敏感，代表更值得相信嗎？",
+    "subtitle": "108（一）醫學（三）Q78：症狀的敏感度與診斷效度",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "腹痛與診斷",
+    "references": "xiaoma-exam108-acute-sources.html",
+    "date": "2026-10-26",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam": {
+      "year_roc": 108,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        78
+      ]
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exam108-acute-sources.md",
+    "output": "xiaoma-exam108-acute-sources.html",
+    "title": "108（一）急症四題：原表與現行證據對讀",
+    "subtitle": "考選部、Pocket Medicine 9E、AAST、AHA、WSES 與逐圖引用方式",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
