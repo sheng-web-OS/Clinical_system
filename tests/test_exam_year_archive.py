@@ -16,11 +16,11 @@ class ExamArchiveContract(unittest.TestCase):
     def setUpClass(cls):
         cls.pages = load_pages(ROOT)
 
-    def test_108_first_stage_two_med3_has_exactly_twelve_distinct_questions(self):
+    def test_108_first_stage_two_med3_includes_fourth_batch_without_duplicates(self):
         rows = [p for p in self.pages if p.get("exam") and
                 (p["exam"]["year_roc"], p["exam"]["sitting"], p["exam"]["stage"], p["exam"]["subject"]) ==
                 (108, 1, 2, "醫學（三）")]
-        self.assertEqual(len(rows), 3)
+        self.assertEqual(len(rows), 6)
         for p in rows:
             exam = p["exam"]
             self.assertEqual((exam["year_roc"], exam["sitting"], exam["stage"], exam["subject"]),
@@ -32,7 +32,7 @@ class ExamArchiveContract(unittest.TestCase):
                     if key[:4] == (108, 1, 2, "醫學（三）")}
         self.assertEqual(baseline,
                          {(108, 1, 2, "醫學（三）", q)
-                          for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 76)})
+                          for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78)})
 
     def test_year_archive_does_not_use_publication_year(self):
         index = render_exam_archive(self.pages)
@@ -45,7 +45,7 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertIn('href="xiaoma-exams.html#year-108"', teaser)
         self.assertEqual(index.count('class="exam-lesson"'),
                          sum(bool(page.get("exam")) for page in self.pages))
-        for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 76):
+        for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78):
             self.assertIn("#q-" + str(q) + '"', index)
 
     def test_future_year_sorts_above_108_automatically(self):
