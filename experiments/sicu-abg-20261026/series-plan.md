@@ -1,4 +1,4 @@
-# Clinical OS｜ABG × Surgical ICU 深度系列：首次成稿品質試驗
+# Clinical OS｜ABG × Cardiothoracic ICU 深度系列：首次成稿品質試驗
 
 日期：2026-10-26（Asia/Taipei）｜狀態：PRIVATE EDITORIAL PLAN / HOLD，不是已完成正文、醫學審查或正式出版。
 執行原則：沿用 Master Prompt v5.1、EPQC、LEC、Figure Gate 與 site/pages.json；不開第二套教材／題庫系統，不修改歷史原稿。本計畫僅在私人實驗分支，不放入公開出版白名單。外科 ICU 情境用於教學案例，不公開私人輪訓、病人資料或任何個人紀錄。
@@ -24,49 +24,61 @@
 
 原則：已有 A（充分說明）則連結；B（跨篇關係）加最短必要橋；C（真正欠缺）才寫新主線；D（必要限制／更新）進行原篇修訂。不可將已寫之原作者／舊教材概念重新命名當新發現。已有「pH 正常仍可能混合障礙」完整主文，不另建同義章。
 
-## 2. 預定八篇：以床邊決策而非課本分類切分
+## 2. 使用者最新臨床場域：心臟、胸腔外科術後為主
 
-| 順序 | 擬題與單一核心張力 | 必須建立的中介與決策 | 既有連結 |
-| --- | --- | --- | --- |
-| 01 / **首次成稿試驗** | **術後 pH 下降，為什麼不一定代表組織缺氧？** | 血氣顯示 acidemia→釐清呼吸／代謝→Na/Cl/HCO₃⁻與校正 AG、lactate、albumin→高氯性酸化 vs 乳酸相關酸化、可共存→液體來源、容量／氣道問題與灌流觀察各自如何處理。Stewart/SID 先建直覺再作進階，不以公式堆砌。 | 既有酸鹼篇、HF／灌流 |
-| 02 | **術後乳酸升高，為什麼不能直接下補液指令？** | 乳酸生成／清除、氧輸送／氧耗、兒茶酚胺與術後背景、Hb與循環；區分「需立即找可逆性低灌流」與「固定只靠乳酸追液」。追蹤灌流與液體反應、出血／感染／低心輸出之條件。 | 氧輸送、HF四象限 |
-| 03 | **嚴重代謝性酸中毒，為什麼插管前後可能更危險？** | Winter 預期通氣 vs 病人實際呼吸負荷、接近極限的 VE、插管短暫 apnea 與 post-intubation minute ventilation 不足；安全與適應症優先，切勿把單一 RR 當通氣保證。 | 既有酸鹼、V̇A、NIV |
-| 04 | **插管後 PaCO₂ 上升，為什麼不一定只要提高 RR？** | 實際呼吸器 VT、RR、dead space、呼出時間、auto-PEEP、氣流波形、Pplat／氣道壓、機械通氣安全；辨認真通氣問題與 CO₂ 產生改變。 | COPD、hypercapnia |
-| 05 | **給了很多氧，術後 PaO₂ 為什麼仍不好？** | FiO₂ 取得方式、A–a / P:F 的不同目的、atelectasis、pulmonary edema、aspiration、ARDS 等分叉；影像、肺超音波、循環與通氣設定聯合判讀。 | 低血氧與 shunt |
-| 06 | **NG drainage／利尿之後 HCO₃⁻ 上升，為什麼不是所有 alkalosis 都一樣？** | 胃酸流失／腎臟 HCO₃⁻ 維持、chloride/K/ECF、尿氯判別前提與利尿劑干擾；依容量與氯狀態辨別可修正原因。 | 利尿、酸鹼 |
-| 07 | **pH 很低且 AKI，為什麼 bicarbonate 不等於救回病人？** | 酸血症的生理後果、CO₂ 負荷、鈉／容量、Ca 與呼吸支持、AKI、RRT 狀況；逐項讀 BICARICU-2 的死亡率與 KRT，不能從次要指標外推存活利益。 | AKI、酸鹼 |
-| 08 | **這張血氣真的可靠嗎？ABG、VBG 與連續抽血的判讀界線** | ABG vs VBG 何者可替代、PaO₂ 不可由 VBG 代替、採血／line flush／air bubble／延遲、FiO₂ 與體溫／時間差、analyzer calculated HCO₃⁻、同時點配對電解質；以有衝突的血氣讀數反推檢體。 | 全系列底層 QA |
+2026-10-26 確認：下一階段 SICU 以心臟、胸腔外科術後為主。因此原本「一般腹部手術 saline absorption」只保留為高氯性酸化的補充比較，不再作主病例，也不成為第一篇。新系列以 CABG、瓣膜、主動脈與 CPB、胸腔鏡／開胸／肺切除術為主要臨床脈絡。原先擬定八篇的未執行計畫仍保存在 Git 歷史中。
 
-閱讀路線：01 + 03 + 05 為 Surgical ICU 最高優先三個臨床情境；02/04/06/07/08 按需要深化。第 08 篇的採檢核查規則必須前置到每一篇，不得等待讀完第 08 篇才知道採檢條件。編輯不以固定日期或固定篇幅強推發布。
+床邊整合順序不變：血氣 sample/setting/time 正確性→即刻氣道／循環危險→氧合與有效換氣→acid-base process→Hb、心輸出與氧輸送／氧耗、代謝、微循環→術式及支持設備條件→再測及反事實。ABG 本身不含 ScvO₂/SvO₂、CI、echo 或 PA catheter 的資訊；需從對應檢體及儀器取得，不能把不同時間點資料偽裝成一張 ABG。
 
-## 3. 第一篇實際案例與可核來源
+### A. 心臟手術後：四篇
 
-**真實 case report 候選（已核讀出版社公開 HTML 正文；Table 1 數值尚須視覺核對後才可抄入正文）**：
-Tabuchi M et al. *Hyperchloremic metabolic acidosis due to saline absorption during laser enucleation of the prostate: a case report.* JA Clinical Reports 8:20 (2022). DOI: 10.1186/s40981-022-00499-3
-https://link.springer.com/article/10.1186/s40981-022-00499-3
+| 次序 | 擬題 | 必須釐清的決策張力 | 舊文定位 |
+|---|---|---|---|
+| **01 / first draft pilot** | **乳酸 14.8、ScvO₂ 卻 95%：CABG 術後，究竟該相信哪一個數字？** | lactate production/clearance、early/late timing、CO×CaO₂、Hb/SaO₂、ScvO₂ 解釋邊界、CPB/epinephrine 與 cardiac tamponade/bleeding/LCOS 的排查；BE≠pH，文獻未提供 pH 必須明說 | acid-base、hypoxemia、HF/LVEDP |
+| 02 | **SpO₂ 100%，為何低 Hb 或低 cardiac output 的心臟術後病人仍缺氧？** | SaO₂ vs CaO₂ vs DO₂、hemodilution、失血、輸血適應症需個別判定，組織氧耗與心輸出動態，ScvO₂ 不能單獨排除局部缺血 | oxygen delivery、HF 四象限 |
+| 03 | **離開 CPB 後 HCO₃⁻ 降低，為什麼不只有 lactic acidosis？** | saline/prime、chloride、albumin 與 AG，Stewart strong ion difference 的方向性；hypothermia/rewarming，將相互獨立的 acidifying/alkalinizing forces 與實際血氣接起來 | 已有酸鹼篇（避免再教一遍 Winter/AG） |
+| 04 | **低溫 CPB 的同一份血氣，alpha-stat 與 pH-stat 為什麼判讀不同？** | 37°C 報告值與體溫校正、CO₂ 管理、不同體溫策略的生理及適用情境；不把兒科、深低溫停循環與一般成人 CPB 隨意互推 | 新增高專一性 CPB 橋樑 |
 
-原文：七十多歲男性手術中約 90 分鐘出現氣道壓上升、ETCO₂ 波形不良、腹脹；更換氣道時發現口咽／頸部水腫。術中經破裂膀胱吸收大量沖洗生理食鹽水，估算未回收正差約 +6400 mL；術後 ABG 顯示明顯高氯性代謝性酸血症，研究者的 simplified Stewart 分析指出 chloride 為主要酸化因素，而低白蛋白有反方向效應、lactate 效應有限。因氣道風險持續插管至術後第一天。不能把單一個案概括為所有術後酸中毒；也不能用表格未核值硬填 ABG 數字。
+### B. 胸腔手術後：三篇
 
-**一般 SICU 背景 cohort（不能捏成一個病人）**：
-Park CM et al. *Factors related to post-operative metabolic acidosis following major abdominal surgery.* PubMed PMID 22985420。172 名術後 SICU 族群，觀察到術後代謝性酸化與大量 saline／高氯及 lactate 的關聯；屬回溯資料，不能直接得出單病人因果或所有補液策略定論。
-https://pubmed.ncbi.nlm.nih.gov/22985420/
+| 次序 | 擬題 | 內容與安全邊界 | 舊文定位 |
+|---|---|---|---|
+| 05 | **肺切除後提高 FiO₂，PaO₂ 為什麼仍持續下降？** | lung resection、atelectasis、分流、液體／心因性與非心因性 pulmonary edema、aspiration、ARDS；PaO₂、FiO₂、P/F、A–a 的不同資訊量與時間、影像、超音波；引用可追溯真實 lung-resection case | 已有 A–a/shunt |
+| 06 | **One-lung ventilation 造成低氧，為什麼不能單靠增加 FiO₂？** | nondependent lung shunt、hypoxic pulmonary vasoconstriction、dependent lung PEEP / VT / positioning、tube malposition、術野與血流動力；術中與 ICU 術後邊界須分開 | 已有 V/Q、shunt |
+| 07 | **拔管後 PaCO₂ 升高，為何不能只認為是 opioid 或 COPD？** | residual anesthetic/analgesia、hypoventilation、pain/splinting、atelectasis、dead-space、呼吸肌疲勞、氧療 masked hypoventilation；NIV / reintubation 依氣道與臨床失代償決定 | 高碳酸、NIV、COPD |
 
-**底層規範**：
-- AARC Blood Gas Analysis and Hemoximetry 2013（非聲稱 2026 新版）：https://doi.org/10.4187/respcare.02786
-- ANZSRS ABG Sampling Position Statement 2024：https://doi.org/10.1111/imj.16439
-- AAFP Acid–Base Interpretation: A Practical Approach 2025（已更正版）：https://www.aafp.org/afp/2025/0200/acid-base-interpretation
-- SCCM Surviving Sepsis Campaign 2026（只在相符的 sepsis context 使用，不外推所有術後病人）：https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
-- BICARICU-2 JAMA 2025：https://doi.org/10.1001/jama.2025.20231 （90日死亡率無顯著差異；KRT 使用較少，注意研究設計與次要終點）。
-- 小麻第 9 版第 158–162 頁已在既有酸鹼來源頁記錄核讀範圍；第一篇正式寫作仍須取回並目視相關原書 Figure 4-1、代償表與相鄰註腳。醫學來源與圖像重製權分開查。
+### C. 兩類術後共同：兩篇＋高階專題
 
-第一篇敘事骨架：
-A. 從真實病例的通氣困難／水腫與術後酸血症進入，先回答氣道／循環是否需要立即支持。
-B. 釐清這份 ABG 哪些是實測、哪些是計算，以及尚缺哪些 electrolytes/albumin/lactate。
-C. 從 chloride 擴張／strong ion difference 的方向性，拆開 HCO₃⁻ 變低與「一定多產酸」的不同意義；用不同來源的 lactate acidemia 對照，指出兩者可共存。
-D. 以原文 Table 1 的時間線與真正臨床調整，辨識哪些關係有直接紀錄、哪些仍是作者推論；不能將單一 case 認定其他治療最佳。
-E. 回到外科 ICU：術後看到低 pH，要同時確認容量、血流、血紅素、氧合、氣道、體液輸入輸出、藥物／輸液與潛在出血或感染。最後用新情境變更 chloride / lactate / albumin 一項以觀察如何改判。
+| 次序 | 擬題 | 內容與邊界 |
+|---|---|---|
+| 08 | **插管後 pH 變好，病人真的更安全了嗎？** | ventilator VE/VA、CO₂ 清除、氣道與氧輸送、肺保護性通氣、胸腔手術殘肺壓力、心臟術後 PEEP 與靜脈回流／RV，校正 pH 可能改變 hemodynamics |
+| 09 | **ABG 正常，為什麼心胸外科術後仍可能需要 ICU？** | 釐清 ABG/VBG/ScvO₂、採樣與 FiO₂、A-line 問題、時間差、乳酸與 hemodynamics、術後出血、低心輸出、tamponade 等未在一張 ABG 出現的危險 |
+| Advanced / 按需 | **VA-ECMO 上半身氧合，為什麼不能只看氧合器之後的血氣？** | mixing point、differential hypoxemia、right radial ABG 与 pre/post-oxygenator sampling；僅設備實際相關時開稿，不以 ECMO 複雜知識排擠常見 ICU 決策 |
 
-圖像最低設計：① H-H / chloride–SID 與 lactate 不同路徑的原創因果圖；② 來自病例 Table 1 的實際可核時間線／圖表（依 CC BY 4.0 及個別 credit 查核標示），並分開「實測／衍生值／作者推論」。兩張圖皆需 375–390 px 真正可閱讀版，不以寬 SVG 橫滑冒充行動版驗收。
+預定先跑 01（心臟）、05（胸腔）、08（呼吸器）三篇不同壓力案例的「首次成稿盲審／人工介入」小型 pilot；不能拿三個稿件當作已證實改善。
+
+## 3. 第一篇：真實病例與來源核對（先准備，初稿另檔凍結）
+
+**Case series：** Wardhana A, Kurniawaty J. *Hyperlactatemia Post-CABG: Case Studies in Three Patients.* MajAnestCriCare. 2025;43(3). DOI 10.55497/majanestcricar.v43i3.429。全文 PDF：https://macc.perdatin.org/index.php/my-journal/article/download/429/365/3106
+
+2026-10-26 已實際取得 10 頁原始 PDF，並目視印刷第 278 頁的 Table 1 與第 279 頁的 Figure 1。Table 1（原始 paper PDF 第 4 頁，zero-index p3）提供三名 CABG 病人 pre/CPB/post/T0–T5：lactate、base excess、ScvO₂、venous–arterial PCO₂ gap、glucose；時間註記 T0 ICU 到院、T1 4h、T2 8–10h、T3 12–14h、T4 18–20h、T5 24–30h。**原表並未完整列出 pH、PaCO₂、PaO₂、HCO₃⁻、Hb**，不能從 BE+Lactate 冒充完整 ABG 或倒算 pH。作者對 epinephrine / type-B 的說法仍屬推論，無單例因果對照。
+
+第三例：69 歲、術前 EF 45%、CPB 108min；術後 TTE CI 3.1 L/min/m² 但臨床不穩且需 temporary pacing 和 catecholamines（含 epinephrine）。T0 ICU lactate 3.6、BE -7.69、ScvO₂ 92.6%；T1 (4h) lactate 14.8、BE -15.7、ScvO₂ 95%；T2 (8–10h) lactate 14.8、BE -7.90、ScvO₂ 92.1%；T3 (12–14h) lactate 8、BE -3.8、ScvO₂ 82%。三名患者不合併為一個病例，不把「CI 正常」說成無低灌流，不把 ScvO₂ 95% 說成每個器官氧供安全。
+
+**當代 guideline（正式來源）：** EACTS/EACTAIC/EBCP 2024 cardiopulmonary bypass guideline，online publication 2025-02-14：
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/
+需對讀 LCOS 及 acid–base homeostasis/alpha-stat/prime 等節，記錄情境限制。其 reference 框架說明 lactate、ScvO₂ 等需合看，normal systemic oxygen delivery 不能排除區域性缺血。
+
+**Review / 補充：**
+- Minton J, Sidebotham DA. *Hyperlactatemia and Cardiac Surgery.* J Extra Corpor Technol 2017，全文 https://pmc.ncbi.nlm.nih.gov/articles/PMC5347225/ 。提供早/晚與 epinephrine mechanisms；舊文所謂 late-onset benign 不可直接當排除 shock 規則。
+- 2026 cohort *Severity and timing of elevated lactate correlates with mortality after cardiac surgery*，PMID 42637069；峰值幅度及晚於24小時的時點和更差結果相關，屬風險關聯，不是特定個案的病因或固定治療門檻：https://pubmed.ncbi.nlm.nih.gov/42637069/
+- 2026 review *Rethinking Lactate in Cardiac Surgery and Intensive Care* DOI 10.1053/j.jvca.2026.03.010；可作機轉補充、不能代替真實病例：https://pubmed.ncbi.nlm.nih.gov/41963151/
+
+**第一篇硬性敘事要求：** 真實病例→術後立即危險分流→逐段解混 ABG vs venous lab and CO、pH vs BE vs lactate、DO₂ vs CO vs ScvO₂→生產/清除、微循環/epinephrine→手術後具體可逆原因（bleeding, LCOS, tamponade, RV dysfunction, ischemia, sepsis）及互斥與共存假說→時間序列哪些變化能和不能推論→反事實改判。不要假裝所有升高 lactate 都安全，也不要說 lactate 增高就必補液。
+
+**第一篇必要圖像：** ①自己從 Table 1 數字重建的 T0–T5 lactate/BE/ScvO₂ 多軸概念與時間視覺，標示不同單位，資料缺失按 N/A；② DO₂ / oxygen extraction / lactate sources／clearance 的平行機轉分支；③ 心臟術後床邊同步檢驗表。初稿可先用文字 table + Mermaid 原創圖表做快照，figure Gate / 真正 mobile 圖視覺仍須單獨驗收，不因 private draft 有圖即聲稱 Figure Gate 通過。
+
+**胸腔第二個病例候選：** *Acute respiratory failure following lung resection*, Thorax 2003：https://thorax.bmj.com/content/58/9/820 （網頁曾回 403，須於正式寫作驗證原文可得）；*Causes of acute respiratory distress syndrome complications after lung resection* 2025 case reports：https://pmc.ncbi.nlm.nih.gov/articles/PMC12696315/ （須查全文和圖，不把術後 pulmonary edema 全推為 transfusion-induced）。
 
 ## 4. 首次成稿品質試驗：先評初稿，再談改稿
 
@@ -80,4 +92,4 @@ E. 回到外科 ICU：術後看到低 pH，要同時確認容量、血流、血�
 6. **暫定門檻**：初稿 90/100 以上、EPQC A–G 均至少 3/4、無未解 P0/P1、重要原圖真實讀回、病例數值可追溯、核心手機版可讀；低於門檻可修稿但初稿結果仍記失敗。一次成功僅是 artifact，不是穩定能力的證明。
 7. **後續重測**：在 01／03／05 三種差異夠大的 SICU 任務中，分別記「初稿達標率、人工指出的高階/基礎遺漏、介入次數及分鐘、修後有無新錯」。三篇成功僅屬小型 pilot，不能聲稱較 Native GPT 高品質，後續再做固定來源對照。
 
-**本分支驗收**：只有計畫與既有內容盤點；尚未完成第一篇、未建立 first-draft snapshot、未實際審閱 Pocket 原圖或出版社 Table 1 像素、未跑醫學實測、未發布。未來由原系統出版流程決定是否發行，無第二個目錄或新網站。
+**本分支驗收**：已重排 cardiothoracic 系列、取得並目視 CABG 來源 Table 1 和 Figure 1，另將 V1 初稿永久保存於同一 private branch；仍未完成獨立醫學審查、所有 Pocket 原圖重核、正式 Figure Gate、網站手機實機審視、學習效果驗證及正式發布。未來由原系統出版流程決定是否發行，無第二個目錄或新網站。
