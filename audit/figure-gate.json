@@ -670,6 +670,114 @@
           "scope_limit": "不補造 T6、不把 T0–T5 當等時間間距，ScvO2 T4–T5 缺值標示 N/A；觀察的相關性不證明 epinephrine 或 bicarbonate 的單一因果，不提供個別治療處方。"
         }
       ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-cholestasis-evidence-to-action.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/liver-gi-source-review-20261027.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_figure_and_editorial_check_not_independent_medical_review",
+      "rights_decision": "link_or_independent_html_original_only; no_book_pixels",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E Library PDF p.139 Figure 3-3 abnormal liver tests with cholestatic pattern; ACG ALP origin / ASGE cholangitis",
+          "source_token": "Figure 3-3",
+          "mode": "illustrated",
+          "anchor": "fig-cholestasis-evidence-action",
+          "caption_token": "Pocket Medicine 9E Figure 3-3",
+          "teaching_role": "Separate cholestatic localization evidence from urgent intervention while making ultrasound-negative obstruction a remaining hypothesis, not an exclusion.",
+          "scope_limit": "This is not the publisher figure nor a deterministic biliary diagnosis tree. Patient stability and suspected cholangitis require parallel urgent assessment."
+        }
+      ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-infiltrative-alp-hypothesis.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/liver-gi-source-review-20261027.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_figure_and_editorial_check_not_independent_medical_review",
+      "rights_decision": "link_or_independent_html_original_only; no_book_pixels",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E Library PDF p.139 Figure 3-4 approach to infiltrative liver tests and differential workup",
+          "source_token": "Figure 3-4",
+          "mode": "illustrated",
+          "anchor": "fig-infiltrative-alp-update",
+          "caption_token": "Pocket Medicine 9E Figure 3-4",
+          "teaching_role": "Compare competing cholestatic etiologies as new history/imaging evidence arrives instead of equating measured ALP with confirmed infiltration.",
+          "scope_limit": "Hypothesis updating does not establish microscopic disease; absence of visible mass and ALP magnitude cannot define infiltration burden."
+        },
+        {
+          "locator": "2026 ASH AL light chain amyloidosis diagnostic good-practice statements compared against Figure 3-4 SPEP line",
+          "source_token": "ASH 2026",
+          "mode": "illustrated",
+          "anchor": "fig-alp-claim-boundary",
+          "caption_token": "ASH 2026",
+          "teaching_role": "Expose the limits of SPEP, GGT and negative imaging; prevent false exclusion of AL amyloidosis from isolated negative SPEP.",
+          "scope_limit": "SIFE/UIFE/sFLC are relevant to clinically suspected AL; these are not universal tests for isolated ALP elevation and do not replace biopsy typing."
+        },
+        {
+          "locator": "Doe-Williams et al. Case Reports in Gastroenterology 2020;14:271-278, PMID 32518538 original case ALP 85 IU/L vs liver biopsy specimen 95% involvement",
+          "source_token": "Massive hepatomegaly",
+          "mode": "illustrated",
+          "anchor": "fig-alp-amyloid-real-case",
+          "caption_token": "Doe-Williams",
+          "teaching_role": "Use a published real case with specimen-confirmed extensive AL amyloidosis and normal measured ALP to falsify the assumption that ALP scales linearly with infiltration burden; disclose sample-versus-whole-organ distinction.",
+          "scope_limit": "Single patient is not a sensitivity estimate; biopsy 95% refers to sampled specimen rather than 95% of the entire liver; medical meaning and typing require original pathologic context."
+        }
+      ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/liver-gi-source-review-20261027.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_figure_and_editorial_check_not_independent_medical_review",
+      "rights_decision": "link_or_independent_html_original_only; no_book_pixels",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E Library PDF pp.124-126 Figure 3-2 workup of chronic diarrhea with actual graph on p.126",
+          "source_token": "Figure 3-2",
+          "mode": "illustrated",
+          "anchor": "fig-diarrhea-evidence-sequence",
+          "caption_token": "Pocket Medicine Figure 3-2",
+          "teaching_role": "Show why alarm signs, inflammatory markers and fat signals redirect evaluation before optionally interpreting a watery-diarrhea osmotic gap.",
+          "scope_limit": "Clinical investigations depend on pretest probability, patient risk and current evidence; these rows are not rigid obligatory workup steps."
+        },
+        {
+          "locator": "Pocket Medicine 9E Figure 3-2 osmotic gap <100 vs ≥100 contrasted with review methodologic uncertainty",
+          "source_token": "osmotic gap",
+          "mode": "illustrated",
+          "anchor": "fig-diarrhea-gap-interpretation",
+          "caption_token": "Figure 3-2",
+          "teaching_role": "Make threshold gray zones visible and distinguish estimated osmotic physiology from a disease-specific diagnosis.",
+          "scope_limit": "The 50 / 100–125 thresholds are rough interpretive patterns, not universally validated diagnostic cutoffs; handling and sampling artifacts matter."
+        }
+      ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/liver-gi-source-review-20261027.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_figure_and_editorial_check_not_independent_medical_review",
+      "rights_decision": "link_or_independent_html_original_only; no_book_pixels",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E Library PDF pp.145-147 CIRRHOSIS Definition Workup Prognosis; Baveno VIII 2026 Panels 1 3 7",
+          "source_token": "CIRRHOSIS",
+          "mode": "illustrated",
+          "anchor": "fig-cirrhosis-five-axes",
+          "caption_token": "Baveno VIII",
+          "teaching_role": "Separate histologic structure, risk of CSPH, liver function, actual decompensating events and prognosis to avoid one-axis severity claims.",
+          "scope_limit": "Noninvasive cutoffs have a restricted population of use and individual outcomes cannot be inferred from a single score or liver stiffness measurement."
+        },
+        {
+          "locator": "Baveno VIII 2026 Panel 3 first decompensation criteria versus varices without bleeding",
+          "source_token": "Baveno VIII",
+          "mode": "illustrated",
+          "anchor": "fig-cirrhosis-event-discrimination",
+          "caption_token": "Baveno VIII",
+          "teaching_role": "Compare patients with identical structural disease but distinct clinical event history and show why first decompensation changes management.",
+          "scope_limit": "The example is hypothetical; varices indicate portal-hypertension risk but without bleeding do not alone meet the definition of clinical decompensation."
+        }
+      ]
     }
   }
 }
