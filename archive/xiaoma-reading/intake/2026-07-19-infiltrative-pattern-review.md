@@ -37,6 +37,7 @@
 5. ATS, *Diagnosis and Detection of Sarcoidosis* (2020): https://academic.oup.com/ajrccm/article/201/8/e26/8496541 — liver involvement 的 ALP screening 與證據限制。
 6. Primary hepatic amyloidosis case (2016): https://pmc.ncbi.nlm.nih.gov/articles/PMC4766262/ — ALP/GGT 升高、normal AST/ALT and bilirubin、biopsy Congo red。
 7. Massive hepatomegaly secondary to amyloidosis with normal liver chemistries (2020): https://pubmed.ncbi.nlm.nih.gov/32518538/ — 重要反例。
+8. ASH, *2026 guidelines on diagnosis of light chain amyloidosis*: https://pubmed.ncbi.nlm.nih.gov/41592868/ — 懷疑 AL 時應整合 serum/urine immunofixation 及 serum free light chains；SPEP 單獨不足以排除。
 
 ## 發布閘門
 
