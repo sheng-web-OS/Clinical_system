@@ -560,3 +560,26 @@
  .article .wpw-focus-case p{font-size:14px;line-height:1.8;margin:12px 0 0!important;color:var(--ink)}
  .article .wpw-source-reading figcaption{padding:15px 14px 19px}
 }
+
+
+/* AF counterfactual figure: no fixed-width SVG and no hidden horizontal panel. */
+.article .af-causal{padding:20px 22px 22px;display:grid;gap:14px;min-width:0}
+.article .af-causal-input{padding:14px 17px;border:1px solid var(--line);background:var(--bg);display:grid;gap:3px;text-align:center;overflow-wrap:anywhere}
+.article .af-causal-input strong{font-size:.92em;line-height:1.6}
+.article .af-causal-input span{font-size:.77em;color:var(--muted)}
+.article .af-causal-branch{text-align:center;font-size:.78em;color:var(--muted);font-weight:650;line-height:1.6}
+.article .af-causal-branch span{display:block;font-size:24px;line-height:1.1;color:var(--accent)}
+.article .af-causal-paths{display:grid;gap:12px;min-width:0}
+.article .af-causal-path{border:1px solid var(--line);border-top:4px solid var(--brand);padding:15px 16px 14px;background:var(--surface);min-width:0;overflow-wrap:anywhere}
+.article .af-causal-path.af-causal-ap{border-top-color:var(--accent)}
+.article .af-causal-path h3{font-size:15px;line-height:1.5;margin:0 0 8px;color:var(--ink)}
+.article .af-causal-property{font-size:13px;line-height:1.65;margin:0 0 11px!important;color:var(--muted)}
+.article .af-causal-result{font-size:14px;line-height:1.65;margin:0!important;font-weight:650;color:var(--ink)}
+.article .af-causal-counterfactual{padding:15px 17px;border:1px solid var(--line);background:var(--bg);min-width:0}
+.article .af-causal-counterfactual>strong{display:block;font-size:15px;line-height:1.6}
+.article .af-causal-change{display:grid;gap:8px;margin:11px 0}
+.article .af-causal-change>span{border-left:4px solid var(--brand);background:var(--surface);padding:9px 12px;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+.article .af-causal-change>span+span{border-left-color:var(--accent)}
+.article .af-causal-counterfactual p{font-size:13px;line-height:1.8;margin:6px 0 0!important}
+@media(min-width:700px){.article .af-causal-paths,.article .af-causal-change{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.article .af-causal{padding:15px 13px 18px;gap:11px}.article .af-causal-input{text-align:left;padding:12px 13px}.article .af-causal-path{padding:12px 13px}.article .af-causal-counterfactual{padding:12px 13px}.article .af-causal-path h3{font-size:14px}}
