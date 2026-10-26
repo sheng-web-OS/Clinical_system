@@ -795,7 +795,12 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "心律急症",
-    "references": "xiaoma-reading-arrhythmia-sources.html"
+    "references": "xiaoma-reading-arrhythmia-sources.html",
+    "required_primary_visual": {
+      "anchor": "wct-acls-main-algorithm",
+      "official_source_url": "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
+      "require_desktop_and_mobile_variants": true
+    }
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-vte-visual.md",

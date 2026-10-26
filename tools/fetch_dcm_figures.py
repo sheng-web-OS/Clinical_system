@@ -12,7 +12,7 @@ import time
 
 IMAGES = {
     "dcm-pv.webp": "https://www.frontiersin.org/files/Articles/1212875/xml-images/fcvm-10-1212875-g002.webp",
-    "dcm-secondary-mr.png": "https://www.mdpi.com/jcm/jcm-14-04518/article_deploy/html/images/jcm-14-04518-g001.png",
+    "dcm-secondary-mr.png": "https://mdpi-res.com/jcm/jcm-14-04518/article_deploy/html/images/jcm-14-04518-g001.png",
     "dcm-ischemic-cmr.webp": "https://www.frontiersin.org/files/Articles/523242/xml-images/fcvm-07-00097-g0003.webp",
 }
 
