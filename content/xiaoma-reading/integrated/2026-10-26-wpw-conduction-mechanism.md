@@ -47,14 +47,14 @@ Accessory pathway（AP）是心房與心室之間額外存在的肌性傳導連�
 <div class="wpw-crop wpw-crop-1" role="img" aria-label="期刊示意圖左側局部：竇性預激、短 PR 和 delta wave">
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Electrocardiographic_features_of_pre_excitation%2C_orthrodromic%2C_and_antidromic_AVRT.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="750" height="446"/>
 </div>
-<p>正常 AV node–His–Purkinje 與可順傳的 AP 共同啟動心室，形成 <b>fusion</b>。Delta wave 是提前局部激發的結果；此時不是 reentry。</p>
+<p>正常 AV node–His–Purkinje 與可順傳的 AP 共同啟動心室，形成 <b>fusion</b>。典型表現包括 <b>short PR、delta wave</b>；此時並沒有持續 reentry。</p>
 </section>
 <section class="wpw-focus-case">
 <header><small>02｜Orthodromic AVRT</small><strong>AV node 下行，AP 逆傳回心房</strong></header>
 <div class="wpw-crop wpw-crop-2" role="img" aria-label="期刊示意圖中間局部：orthodromic AVRT、正常 His Purkinje 心室激發與窄 QRS">
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Electrocardiographic_features_of_pre_excitation%2C_orthrodromic%2C_and_antidromic_AVRT.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="750" height="446"/>
 </div>
-<p>心室主要由 His–Purkinje 啟動，因此通常 <b>regular narrow QRS</b>。若有 bundle branch aberrancy，QRS 仍可變寬。</p>
+<p>心室主要由 His–Purkinje 啟動，因此通常 <b>regular narrow QRS，沒有 delta wave</b>。若有 bundle branch aberrancy，QRS 仍可變寬。</p>
 </section>
 <section class="wpw-focus-case">
 <header><small>03｜Antidromic AVRT</small><strong>AP 下行，正常系統或另一 AP 逆傳</strong></header>
@@ -64,7 +64,7 @@ Accessory pathway（AP）是心房與心室之間額外存在的肌性傳導連�
 <p>心室大部分由 AP 下行激發，因此通常 <b>regular wide QRS</b>；這個外觀<b>不能排除 VT</b>。</p>
 </section>
 </div>
-<figcaption><strong>圖 1｜讀的是心室激發途徑，不是三種病程階段。</strong> 上述為典型機轉與 QRS 的<b>示意</b>，不是 Khan 病例的實測心電圖，也不能用來直接確診 AP 位置或分辨 VT。手機將原有三欄圖以<b>局部裁切顯示</b>來對讀，未變更原始圖片像素；<a href="https://upload.wikimedia.org/wikipedia/commons/2/26/Electrocardiographic_features_of_pre_excitation%2C_orthrodromic%2C_and_antidromic_AVRT.jpg" target="_blank" rel="noopener noreferrer">完整原圖可直接開啟</a>。來源：Khan Z, Khan A. <i>Cureus</i> 2024，<a href="https://doi.org/10.7759/cureus.62928">DOI 10.7759/cureus.62928</a>，<a href="https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg">Wikimedia Commons 檔案</a>（該檔標示 CC BY 4.0）。原論文圖說註明第三方重製許可，公開裁切版的再授權適用性仍須另行確認；目前不視為完成權利驗收。</figcaption>
+<figcaption><strong>圖 1｜讀的是心室激發途徑，不是三種病程階段。</strong> 上述為典型機轉與 QRS 的<b>示意</b>，不是 Khan 病例的實測心電圖，也不能用來直接確診 AP 位置或分辨 VT。手機<b>局部裁切顯示</b>原圖中的傳導解剖與 QRS 波形；原始英文標題與條件改由上方標題、下方可換行段落保留，不讓文字在圖片邊界截斷，未變更原始圖片像素；<a href="https://upload.wikimedia.org/wikipedia/commons/2/26/Electrocardiographic_features_of_pre_excitation%2C_orthrodromic%2C_and_antidromic_AVRT.jpg" target="_blank" rel="noopener noreferrer">完整原圖可直接開啟</a>。來源：Khan Z, Khan A. <i>Cureus</i> 2024，<a href="https://doi.org/10.7759/cureus.62928">DOI 10.7759/cureus.62928</a>，<a href="https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg">Wikimedia Commons 檔案</a>（該檔標示 CC BY 4.0）。原論文圖說註明第三方重製許可，公開裁切版的再授權適用性仍須另行確認；目前不視為完成權利驗收。</figcaption>
 </figure>
 
 三格圖透露一個差異：sinus pre-excitation 雖同時啟動兩條路，但沒有持續 reentry；orthodromic AVRT 的 AP 是**回程**，antidromic AVRT 的 AP 是**去程**。所以 QRS 描述的是「心室怎麼被啟動」，不是「迴路的所有必要組件」。
