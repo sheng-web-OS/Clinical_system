@@ -40,6 +40,18 @@ jobs:
         # maintaining a hand-written figure list. Medical review remains separate.
         if: github.event_name == 'pull_request'
         run: python tools/visual_qa_browser.py --changed-from origin/main --widths 360 390 1280 --output visual-qa-artifacts/changed
+      - name: Inventory all legacy figures after shared layout changes
+        if: github.event_name == 'pull_request'
+        # Pre-existing unreviewed figures must be reported, not mistaken for
+        # new-figure release failures. Focused and changed-figure gates above
+        # remain blocking.
+        continue-on-error: true
+        run: |
+          if ! git diff --quiet origin/main...HEAD -- site/styles.css site/build.py; then
+            python tools/visual_qa_browser.py --all --widths 360 390 1280 --output visual-qa-artifacts/sitewide-legacy-triage
+          else
+            echo "No shared-layout change: skipping costly full-site image scan."
+          fi
       - name: Save source-image visual QA screenshots and failure report
         if: always()
         uses: actions/upload-artifact@v4
