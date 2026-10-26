@@ -28,6 +28,16 @@ def main():
                    if shutil.which(x)), None)
     if not chrome:
         raise RuntimeError("Primary visual QA needs a headless browser; none found")
+    # Fail closed when the CI image can only draw missing-glyph squares for Chinese.
+    if shutil.which("fc-list"):
+        fc = subprocess.run(["fc-list", ":lang=zh-tw", "family"], capture_output=True, text=True, timeout=15)
+        available = fc.stdout.lower()
+        if fc.returncode != 0 or not any(name in available for name in
+                                             ("noto sans cjk", "noto sans tc", "noto serif cjk",
+                                              "wenquanyi", "ar pl", "source han")):
+            raise RuntimeError("Traditional Chinese glyph font unavailable: rendered visual QA would show tofu boxes")
+    else:
+        raise RuntimeError("Fontconfig unavailable; cannot verify Chinese font coverage")
     css = (ROOT / "dist/styles.css").read_text(encoding="utf-8")
     OUTPUT.mkdir(parents=True, exist_ok=True)
     results = []
