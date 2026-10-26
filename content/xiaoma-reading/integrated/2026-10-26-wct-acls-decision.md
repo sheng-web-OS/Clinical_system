@@ -97,3 +97,6 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 ---
 
 *本文以 2026/7/17 作者同名原稿的核心論證為起點，另製 AI 整合稿，未修改私人封存原稿。來源：[Pocket Medicine 9E，私人 PDF 第 67–68 頁](https://www.wolterskluwer.com/zh-tw/solutions/ovid/pocket-medicine-15398)（出版社書目，不是私人 PDF）；[2025 AHA ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)；[2023 ACC/AHA/ACCP/HRS AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)；[Silverman et al. 2018 真實病例](https://journals.sagepub.com/doi/10.1177/2324709618802870)。原始 WCT 圖與 ACLS 圖已核讀；公開圖示僅採原創結構或合法來源連結。*
+
+
+[**原圖、病例與 2025 AHA／2023 AF 來源逐項核對**](../wct-acls-sources.md)。
