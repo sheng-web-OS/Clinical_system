@@ -6,7 +6,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 concurrency:
   # Distinct pull requests must finish their own QA; only supersede stale
   # runs on the same branch or PR, not unrelated article reviews.
@@ -17,6 +17,51 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # One-time audited recovery: publish three CC BY publisher images as immutable git assets.
+      # Restricted to PR #94; removed from workflow before merging.
+      - name: Download prior successful verified publisher figures
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.number == 94 }}
+        uses: actions/download-artifact@v4
+        with:
+          name: clinical-system-static-site
+          run-id: 40373594691
+          github-token: ${{ github.token }}
+          repository: sheng-web-OS/Clinical_system
+          path: .source-recovery
+      - name: Commit checksum-matched original DCM assets once
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.number == 94 }}
+        env:
+          HEAD_BRANCH: ${{ github.event.pull_request.head.ref }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          expected = {
+              "dcm-pv.webp": "2ca703dae92a7dff548c705fe2ce2dd7edbca618925aaec1affc939c9e71f718",
+              "dcm-secondary-mr.png": "6f79230df9c1a360fd5b9d835cab54fa7dab9c122c3b393de2e21c00087f1bfe",
+              "dcm-ischemic-cmr.webp": "76a422b4a054803b8d654012a1ad9d5c51fb7bcc383ed48c208248bb83fb15b6",
+          }
+          output=Path(".staged-dcm-assets")
+          output.mkdir(exist_ok=True)
+          for name, sha in expected.items():
+              data=(Path(".source-recovery/assets")/name).read_bytes()
+              assert hashlib.sha256(data).hexdigest() == sha, name
+              assert data[:8].startswith(bytes.fromhex("89504e47")) if name.endswith(".png") else (data[:4]==b"RIFF" and data[8:12]==b"WEBP"), name
+              (output/name).write_bytes(data)
+              print("Verified",name,len(data),sha)
+          PY
+          git fetch origin "$HEAD_BRANCH"
+          git checkout -B "$HEAD_BRANCH" "origin/$HEAD_BRANCH"
+          mkdir -p site/source-assets/dcm
+          cp .staged-dcm-assets/dcm-* site/source-assets/dcm/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/source-assets/dcm/
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive hash-verified original CC BY DCM figures for deterministic medical builds"
+            git push origin HEAD:"$HEAD_BRANCH"
+          fi
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
