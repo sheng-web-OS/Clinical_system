@@ -111,6 +111,20 @@ class VisualQADiscoveryTest(unittest.TestCase):
             figure_versions('<figure id="decision"><svg></svg></figure>'),
             figure_versions('<figure id="decision"><svg><title>new</title></svg></figure>'))
 
+    @patch("visual_qa_browser.subprocess.run")
+    def test_changed_image_asset_invalidates_unchanged_figure_markup(self, git):
+        changed = subprocess.CompletedProcess([], 0, "site/source_images/ecg.png\n", "")
+        git.side_effect = [changed, changed]
+        self.assertEqual(changed_figures(self.root, "origin/main"),
+                         {"reader-lesson": ("reader-lesson.html", ["source-ecg"])})
+
+    @patch("visual_qa_browser.subprocess.run")
+    def test_shared_style_change_requires_public_visual_rescan(self, git):
+        git.return_value = subprocess.CompletedProcess([], 0, "site/styles.css\n", "")
+        self.assertEqual(changed_figures(self.root, "origin/main"),
+                         {"reader-lesson": ("reader-lesson.html",
+                                            ["decision", "source-ecg"])})
+
 
 if __name__ == "__main__":
     unittest.main()
