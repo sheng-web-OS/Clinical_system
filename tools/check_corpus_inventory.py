@@ -70,12 +70,14 @@ def inspect_inventory(root):
         # notes after a private snapshot never imply publication or author approval.
         is_snapshot = status.startswith("**source_snapshot_archived** → ")
         if is_snapshot:
-            import re
-            matched = re.match(r"^\\*\\*source_snapshot_archived\\*\\* → \\x60([^\\x60]+)\\x60(?:；.*)?$", status)
-            if not matched:
+            prefix = "**source_snapshot_archived** → `"
+            raw = status[len(prefix):]
+            marker = raw.find("`")
+            path_text = raw[:marker] if marker >= 0 else ""
+            remainder = raw[marker + 1:] if marker >= 0 else ""
+            if not path_text or (remainder and not remainder.startswith("；")):
                 errors.append("Malformed private source snapshot: " + title)
                 continue
-            path_text = matched.group(1)
             if not path_text.startswith("archive/xiaoma-reading/intake/"):
                 errors.append("Source snapshot outside private intake folder: " + path_text)
                 continue
