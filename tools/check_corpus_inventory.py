@@ -53,7 +53,7 @@ def inspect_inventory(root):
                  if x.get("kind") == "historical_original"}
     actual = {p.relative_to(root).as_posix()
               for p in (root / ORIGINALS).glob("*.md") if p.is_file()}
-    imported, pending = set(), set()
+    imported, pending, snapshots = set(), set(), set()
     titles = set()
     for row in rows:
         title, status = row["title"], row["status"]
@@ -65,14 +65,28 @@ def inspect_inventory(root):
         if status == "conversation_only":
             pending.add(title)
             continue
-        # Deliberately match exact Markdown code-quoted source link syntax.
-        prefix = "imported → "
-        raw = status[len(prefix):].strip() if status.startswith(prefix) else ""
-        tick = chr(96)
-        if len(raw) < 3 or raw[0] != tick or raw[-1] != tick:
-            errors.append("Unknown intake state for " + title + ": " + status)
-            continue
-        path_text = raw[1:-1]
+        # Accepted live states: imported original, private source snapshot, or conversation_only.
+        # Only the declared exact source path is verified; extra manuscript-review
+        # notes after a private snapshot never imply publication or author approval.
+        is_snapshot = status.startswith("**source_snapshot_archived** → ")
+        if is_snapshot:
+            import re
+            matched = re.match(r"^\\*\\*source_snapshot_archived\\*\\* → \\x60([^\\x60]+)\\x60(?:；.*)?$", status)
+            if not matched:
+                errors.append("Malformed private source snapshot: " + title)
+                continue
+            path_text = matched.group(1)
+            if not path_text.startswith("archive/xiaoma-reading/intake/"):
+                errors.append("Source snapshot outside private intake folder: " + path_text)
+                continue
+        else:
+            prefix = "imported → "
+            raw = status[len(prefix):].strip() if status.startswith(prefix) else ""
+            tick = chr(96)
+            if len(raw) < 3 or raw[0] != tick or raw[-1] != tick:
+                errors.append("Unknown intake state for " + title + ": " + status)
+                continue
+            path_text = raw[1:-1]
         source = PurePosixPath(path_text)
         if (source.is_absolute() or ".." in source.parts or
                 source.suffix != ".md" or source.parts[0] not in ("content", "archive")):
@@ -82,13 +96,13 @@ def inspect_inventory(root):
         if not path.is_relative_to(root) or not path.is_file():
             errors.append("Missing or escaped source: " + path_text)
             continue
-        if path_text in imported:
-            errors.append("Duplicate imported path: " + path_text)
-        imported.add(path_text)
+        if path_text in imported or path_text in snapshots:
+            errors.append("Duplicate source path: " + path_text)
+        (snapshots if is_snapshot else imported).add(path_text)
 
     outside = sorted(p for p in published if not p.startswith(ORIGINALS + "/"))
     errors.extend("Published historical original outside originals folder: " + p for p in outside)
-    if len(imported) + len(pending) != len(rows):
+    if len(imported) + len(pending) + len(snapshots) != len(rows):
         errors.append("Intake row with unverified/missing status")
 
     result = {
@@ -96,6 +110,7 @@ def inspect_inventory(root):
         "scope": "files + publication manifest; not author canonical or clinical review",
         "intake_total": len(rows),
         "intake_imported": len(imported),
+        "intake_source_snapshots": len(snapshots),
         "intake_conversation_only": len(pending),
         "original_files": len(actual),
         "published_originals": len(published),
@@ -103,8 +118,10 @@ def inspect_inventory(root):
         "published_paths": sorted(published),
         "unpublished_original_paths": sorted(actual - published),
         "imported_unpublished_paths": sorted(imported - published),
+        "private_source_snapshot_paths": sorted(snapshots),
         "limits": [
             "Conversation-only records are not recovered files.",
+            "Private source snapshots are preserved manuscript input, not imported author-canonical originals or published pages.",
             "A file and SHA do not prove correspondence to a Facebook published edition.",
             "Manifest inclusion does not prove clinical review or Cloudflare delivery.",
             "Do not derive counts from historical checkpoint snapshots."
@@ -125,6 +142,7 @@ def main():
         print("PASS" if not errors else "FAIL", "Corpus inventory:",
               report["intake_total"], "intake;",
               report["intake_imported"], "imported;",
+              report["intake_source_snapshots"], "private snapshots;",
               report["intake_conversation_only"], "conversation-only;",
               report["original_files"], "source files;",
               report["published_originals"], "published originals.")
