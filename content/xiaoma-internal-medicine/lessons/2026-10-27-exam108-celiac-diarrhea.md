@@ -81,6 +81,46 @@ Celiac disease 的典型病理可包括 **intraepithelial lymphocytosis、crypt 
 這解釋為何 Q3 的三種證據權重不同：麵粉相關性提供觸發方向；營養訊號提升器質性疾病疑慮；特異性抗體大幅重新排序鑑別。它們不是等值的「各一分」，也不是三項同時出現就必然無須確認。
 
 
+## 08｜2025 ESsCD 與 2026 BSG：同樣的檢驗值，為何可能走不同的確認路線？
+
+這是本題最需要與 2019 年考試明確區分的更新。**2025 European Society for the Study of Coeliac Disease（ESsCD）**與**2026 British Society of Gastroenterology（BSG）**皆支持在嚴格選擇條件下的成人 no-biopsy pathway，但細節不同，不能把一個學會的規定錯記到另一個學會。
+
+| 決策條件 | ESsCD 2025 | BSG 2026 |
+| --- | --- | --- |
+| 抗體門檻 | IgA anti-TG2 ≥10×ULN | IgA-tTG ≥10×ULN |
+| 年齡 | 建議限 **<45 歲**成人 | 該路徑的推薦沒有相同的硬性 45 歲界線，但較高齡者要特別評估其他需內視鏡的風險 |
+| 取第二管血複驗 | **需要**另一份血液樣本確認陽性；仍須攝取 gluten | **可考慮**再次確認，並非所有個案的強制前提 |
+| 場所與決策 | 專科照護情境、shared decision-making | **有症狀且於 secondary care 評估**、shared decision-making |
+| 何時仍需切片 | 低於 10×ULN、red flags、不一致或其他需內視鏡鑑別 | 低於 10×ULN、警訊、其他需內視鏡之病況、檢驗適用性不明 |
+
+不能把這兩份文件表達成新指引推翻舊指引：它們是**不同學會在相似證據下的不同實務建議與風險容忍度**。兩者都不是「只要 tTG 陽性就免切片」。
+
+再把原題套入：**35 歲**這個條件符合 ESsCD 的年齡要求；但題目沒有提供 **IgA-tTG 的 ULN 倍數**，也沒有第二次採血、total IgA、警訊查核與專科共同決策。因此只能說 B 是最佳診斷，**不能從 108（一）Q3 宣稱病人已達免切片確診條件**。
+
+如果要做切片，2026 BSG 指引建議至少 **D2 四塊、duodenal bulb（D1）兩塊**，且應分開送病理；原因是 celiac 黏膜病變可能 patchy，檢體數與方向影響 sensitivity。這與 liver biopsy 的 portal tract 代表性問題有相似的認識論結構，但器官取樣方法與疾病機轉完全不同，不可拿兩者的數量門檻直接互換。
+
+### 真正的臨床順序：先定位，再證實，最後才治療
+
+病史（gluten / wheat 相關症狀） → 查核是否仍含 gluten 飲食 → total IgA + IgA-tTG（及必要 IgG-based tests） → 依抗體倍數、臨床先驗機率、年齡／警訊及當地專科流程選擇切片或符合條件的免切片路徑 → 正式診斷後啟動營養評估與長期 gluten-free diet。
+
+在未完成診斷前，不宜只因懷疑而要求患者立即嚴格停吃 gluten，否則會讓後續血清學與病理的診斷能力下降。若存在體重急降、出血、明顯貧血或其他 alarm features，必須同時評估其他原因，不能讓陽性抗體阻止必要的內視鏡。
+
+**反事實：** 假設同一人 tTG-IgA 為 3×ULN，不可使用 10×ULN 的無切片規則；若是 12×ULN，也不能跳過驗證 assay、是否繼續食用 gluten，以及診斷競爭假說。這是條件式決策，不是數值大就免除臨床推理。
+
+資料來源：[ESsCD 2025 Part 1 原指引](https://pmc.ncbi.nlm.nih.gov/articles/PMC12704582/)；[BSG 2026 adult coeliac guideline（2026-07-12 正式發表）](https://gut.bmj.com/content/early/2026/07/09/gutjnl-2025-337747)。
+
+## 09｜Pocket Medicine 9E 原文回讀：症狀分類如何連到 celiac 的鑑別？
+
+**原書 PDF p.124–125：〈CHRONIC DIARRHEA〉與 p.125〈Celiac disease〉、頁末 Figure 3-2 Workup of chronic diarrhea。** 本輪讀取了原始 PDF 的頁面文字：原書先分 watery（osmotic／secretory）、fatty（malabsorption／maldigestion）、inflammatory 與 functional，再把 celiac 放在 **mucosal malabsorption** 的病因下。小麻指出 tTG-IgA、抗體、十二指腸 villous change、crypt hyperplasia 與對 gluten 攝取時機的限制。
+
+這裡應避免兩種誤讀：
+
+1. **原書的分支是診斷用途的資訊層級，不是每位 celiac 病人必須有 steatorrhea。** 原題沒有糞便脂肪檢查，故不能藉原書分類替病人發明 fecal fat positive。
+2. **原書所說 duodenal biopsy「確認」是 9E 當時的主要診斷方式；新指引的有條件 no-biopsy 策略是有時間與對象界線的更新。** 不能悄悄把 2026 BSG 回寫成原書既有內容。
+
+**視覺驗收：** p.125 Figure 3-2 的標題及所在頁文字已確認，但圖形內的每一個箭頭、legend 與註腳尚未全部取得清晰可見的原頁像素，仍為 **FIGURE REVIEW PENDING**。在完成原圖脈絡前，不自製一張冒充原書流程圖的簡陋卡片，也不聲稱該 Figure 已正式回收。
+
+
 ## 來源與閱讀銜接
 
 - [考選部原題、官方答案及更正公告](../exam108-integrated-batch6-sources.md)，108（一）醫學（三）Q3，官方 B。
