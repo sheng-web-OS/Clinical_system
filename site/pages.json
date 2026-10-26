@@ -712,5 +712,28 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md",
+    "output": "xiaoma-20261027-cticu-abg-cabg-lactate.html",
+    "title": "CABG 術後 lactate 14.8、ScvO₂ 95%：為什麼兩個數字都不能回答灌流是否足夠？",
+    "subtitle": "從血氣與乳酸、BE、ScvO₂ 的量測邊界回到心臟術後循環危險與下一步決策",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "references": "xiaoma-cticu-abg-cabg-sources.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",
+    "output": "xiaoma-cticu-abg-cabg-sources.html",
+    "title": "CABG 術後乳酸與 ABG：來源及原圖查核",
+    "subtitle": "真實病例原圖、Pocket Medicine 9E、IBCC 與 CPB guideline 的證據界線",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false
   }
 ]
