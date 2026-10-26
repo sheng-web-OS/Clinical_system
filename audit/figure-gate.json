@@ -590,6 +590,30 @@
           "caption_token": "Pocket Medicine"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine Ninth Edition reader PDF pages 158–160, Figure 4-1 Acid–base nomogram and Compensation for Acid–Base Disorders table with mixed disorders and associated adapted-from footnote",
+          "source_token": "Acid–base nomogram",
+          "mode": "illustrated",
+          "anchor": "cticu-measurement-layers",
+          "caption_token": "Figure 4-1",
+          "teaching_role": "對照原書原先混合障礙的血氣量測架構，增加不在原書 nomogram 的 Hb/CO 及靜脈萃取面向，防止以乳酸或正常 PaO2 作整體灌流宣告。",
+          "scope_limit": "本站圖一是原創四軸對照，並非原書 Figure 4-1 的重畫或原書代償分區的完整再現，不能藉圖診斷個別病例的酸鹼病因。"
+        },
+        {
+          "locator": "Wardhana and Kurniawaty 2025 original publisher PDF print page 278 Table 1 and p279 Figure 1, CABG patient three lactate, base excess and ScvO2 T0 through T5",
+          "source_token": "Wardhana",
+          "mode": "illustrated",
+          "anchor": "cticu-cabg-timeline",
+          "caption_token": "Wardhana",
+          "teaching_role": "將真實同一名 CABG 術後病例的 lactate plateau、BE 改善與高 ScvO2 分軸放在同一時間序列，讓讀者看出各指標測到不同現象及來源 T6 不確定性。",
+          "scope_limit": "不補造 T6、不把 T0–T5 當等時間間距，ScvO2 T4–T5 缺值標示 N/A；觀察的相關性不證明 epinephrine 或 bicarbonate 的單一因果，不提供個別治療處方。"
+        }
+      ]
     }
   }
 }
