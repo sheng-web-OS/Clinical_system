@@ -1,33 +1,5 @@
-# 內科學習地圖
+# 內科學習地圖（舊入口）
 
-臨床問題往往跨越專科。先判斷**目前觀察到什麼**，再追問**哪一段生理失常**，最後評估**哪個風險要求立即行動**；這比依照日期逐章背誦，更能在面對新病例時重新使用已學過的知識。
+本頁內容已整合至 [臨床知識地圖](../clinical-os/index.md)。公開網站的 `xiaoma-plan.html` 只保留相容跳轉，不再是第二份文章清單。
 
-若想先找出需要回讀的地方，可從[二十題跨系統真題](lessons/2026-10-22-baseline-twenty.md)開始；作答後沿解析回到相應的機轉與處置條件。
-
-## 呼吸困難：氧合、換氣與循環
-
-呼吸喘不一定代表肺泡無法交換氧氣，也可能與血紅素含量、心輸出或組織需求有關。先讀 [血氧回升，病人為什麼仍在惡化？](lessons/2026-10-21-hypoxemia.md)，區分 PaO₂、SaO₂、CaO₂ 與 DO₂，再追問血液攜氧量與心輸出下降時，為何正常血氧也無法保證足夠的組織供氧。
-
-接著讀[高碳酸血症與呼吸支持](lessons/2026-10-22-hypercapnic-failure.md)，再以[低血氧與 NIV 隨文練習](lessons/2026-10-22-respiratory-practice.md)檢驗是否能把閱讀中的條件帶入題目。
-
-若卡在「HCO₃⁻ 高是否代表慢性」或「PaCO₂ 正常是否代表足夠」，接[酸鹼判讀](lessons/2026-10-23-acid-base.md)：先分 pH 結果與酸化過程，再用代償和 anion gap 檢查混合障礙，最後追問呼吸支持正在維持什麼。
-
-## 心衰竭：鬱血、灌流與充盈壓
-
-如果病人肺水腫，下一個問題不是立刻猜 EF，而是先分開 congestion 與 perfusion。[Heart Failure：從四象限到急性失衡](../xiaoma-reading/originals/2026-07-12-heart-failure.md)提供床邊的描述框架；[LVEDP](../xiaoma-reading/originals/2026-07-12-lvedp.md)再解釋壓力與容積的差別；[利尿劑](../xiaoma-reading/originals/2026-07-20-diuretics.md)則追問排鈉、負平衡與症狀改善是否真的同時發生。
-
-[HCM](../xiaoma-reading/originals/2026-07-14-hcm.md)與[新版 DCM](../xiaoma-reading/integrated/2026-10-21-dcm.md)幫助辨認：形態、收縮、充盈與臨床 HF 並不是同一條嚴重度軸線。
-
-在[108 年第一次醫師二階心臟四題深究](lessons/2026-10-22-108a-cardiac-reasoning.md)把這套推理帶回國考。第 11 題特別適合對讀：站立減少 preload，為何固定 AS 可能變小聲，動態 LVOTO 反而變大聲？第 8 題則讓人重新區分先天分流造成的右心容量負荷，與 DCM 的左心室表型。
-
-同一邏輯也能讀 [主動脈瓣狹窄與逆流](../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md)：分開 EF、flow、gradient、瓣膜負荷與動脈負荷，再判斷治療究竟改善症狀、血流動力學，或真正解除瓣膜問題。
-
-## 急重症：分類與行動的時間並不相同
-
-[Status epilepticus](../xiaoma-reading/originals/2026-07-28-status-epilepticus.md)說明，治療升級取決於充分處置後仍持續的癲癇活動，不能只看「持續幾分鐘」。[Acute pancreatitis](../xiaoma-reading/originals/2026-07-20-pancreatitis.md)則提醒：局部壞死與器官衰竭是不同軸線，嚴重度分類尚待時間確認時，器官支持不能延後。
-
-## 如何使用這張地圖
-
-從當下最想弄懂的一個臨床問題選擇起點。閱讀後試著說明：哪些觀察支持機轉、哪些證據仍不足、如果病情改變，下一步會如何不同。若文章中的原始圖表、指引或數值門檻關係到臨床處置，應一併核對所附來源。
-
-[前往小麻閱讀](../xiaoma-reading/index.md) · [前往臨床問題地圖](../clinical-os/index.md)
+舊文件不再單獨維護或發布，日期與教材覆蓋規劃依私人編輯計畫處理。

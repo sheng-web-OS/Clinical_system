@@ -32,6 +32,8 @@ class Renderer(mistune.HTMLRenderer):
         return '<h'+str(level)+'>'+text+'</h'+str(level)+'>'
 
 OUTPUT_BY_SOURCE = {name: output for name, output, _, _ in FILES}
+# Old Markdown links resolve to the single public atlas, not to an unpublished twin.
+OUTPUT_BY_SOURCE["content/xiaoma-internal-medicine/learning-map.md"] = "knowledge-atlas.html"
 
 def rewrite_internal_links(markup, source_path):
     """Map source-Markdown links to destination HTML pages; keep external refs unchanged."""
@@ -119,9 +121,9 @@ def render_reader(page, body, headings):
     reference_link = '<a href="'+html.escape(references,quote=True)+'">來源與延伸閱讀</a>' if references else ''
     lessons = sorted((row for row in PAGES if row.get("collection") == page.get("collection") and row.get("date") and not row.get("exam")), key=lambda row: (row["date"], row["output"]))
     number = next((str(i).zfill(2) for i, row in enumerate(lessons, 1) if row["output"] == active), "")
-    destinations = ([("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-plan.html", "閱讀路線")]
+    destinations = ([("index.html", "首頁"), ("knowledge-atlas.html", "知識地圖"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考") ]
                     if is_archive else
-                    [("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-plan.html", "閱讀路線")])
+                    [("index.html", "首頁"), ("knowledge-atlas.html", "知識地圖"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-reading.html", "小麻閱讀") ])
     top_links = ''.join('<a'+(' aria-current="page"' if active == dest else '')+' href="'+html.escape(dest,quote=True)+'">'+label+'</a>' for dest, label in destinations)
     brand = '<a class="reader-brand" href="index.html"><span class="brand-mark" aria-hidden="true">小</span>小麻閱讀<span>MEDICAL READING</span></a>'
     original_note = ('<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><p>本文保留 '+html.escape(page.get("date", "").replace("-", "."))+' 原稿。臨床處置請一併核對所附來源與現行指引。</p></aside>') if page.get("kind") == "historical_original" else ''
@@ -130,7 +132,7 @@ def render_reader(page, body, headings):
 <title>'''+title+' · '+site_name+'''</title><link rel="stylesheet" href="styles.css"></head><body class="reader-page '''+mode+'''">
 <a class="skip-link" href="#reading-content">跳到正文</a><div class="floating" aria-hidden="true"></div>
 <header class="reader-header">'''+brand+'''<nav aria-label="主要導覽">'''+top_links+'''</nav><details class="reader-search"><summary>搜尋</summary><div><label for="search">搜尋教材</label><input id="search" class="searchbox" type="search" placeholder="輸入主題或問題…"><div class="results" id="results" aria-live="polite"></div></div></details><div class="reader-tools"><button id="fontminus" aria-label="縮小字體">A−</button><button id="fontplus" aria-label="放大字體">A+</button><button id="theme" aria-label="切換明暗主題">◐</button></div></header>
-<div class="reader-shell"><aside class="reader-rail"><a class="back-link" href="'''+home+'''">← 教材目錄</a><span class="rail-label">'''+('本篇脈絡' if is_lesson else '本頁導覽')+'''</span><nav class="reader-outline" aria-label="章節導覽">'''+outline+'''</nav><div class="rail-bottom"><a href="xiaoma-reading.html">以往小麻閱讀 ↗</a><a href="xiaoma-plan.html">完整閱讀路線 ↗</a><a href="index.html">其他臨床教材 ↗</a></div></aside>
+<div class="reader-shell"><aside class="reader-rail"><a class="back-link" href="'''+home+'''">← 教材目錄</a><span class="rail-label">'''+('本篇脈絡' if is_lesson else '本頁導覽')+'''</span><nav class="reader-outline" aria-label="章節導覽">'''+outline+'''</nav><div class="rail-bottom"><a href="xiaoma-reading.html">以往小麻閱讀 ↗</a><a href="knowledge-atlas.html">臨床知識地圖 ↗</a><a href="index.html">其他臨床教材 ↗</a></div></aside>
 <main class="reader-main" id="reading-content"><div class="reader-hero"><p class="reader-kicker">'''+section+('　 /　 '+number if is_lesson else '')+'''</p><h1>'''+title+'''</h1><p class="reader-deck">'''+subtitle+'''</p>'''+exam_label+'''</div>
 <details class="mobile-outline"><summary>本篇章節</summary><nav aria-label="行動版章節導覽">'''+outline+'''</nav></details>
 <article class="article reading-prose">'''+body+'''</article>'''+original_note+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
@@ -203,6 +205,22 @@ def main():
                 '如未自動跳轉，請<a href="'+current+'">閱讀最新整合版</a>。</p>'
                 '</main></body></html>')
     (DIST/legacy).write_text(redirect, encoding="utf-8")
+    # Keep returning readers' bookmarks but retire the duplicate reading-map page.
+    # A standalone, non-indexed HTML alias mirrors the existing DCM migration.
+    atlas, old_map = "knowledge-atlas.html", "xiaoma-plan.html"
+    if not (DIST/atlas).is_file() or (DIST/old_map).exists():
+        raise ValueError("Clinical atlas redirect target missing or in conflict")
+    atlas_redirect = ('<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">'
+                      '<meta name="viewport" content="width=device-width,initial-scale=1">'
+                      '<meta http-equiv="refresh" content="0; url='+atlas+'">'
+                      '<meta name="robots" content="noindex,follow">'
+                      '<link rel="canonical" href="'+atlas+'">'
+                      '<title>內科學習地圖已整合</title><link rel="stylesheet" href="styles.css"></head>'
+                      '<body class="reader-page"><main style="max-width:42rem;margin:12vh auto;padding:2rem">'
+                      '<h1>閱讀路線已整合到臨床知識地圖</h1>'
+                      '<p>原有文章與歷屆題目仍保留。如未自動跳轉，請<a href="'+atlas+'">開啟臨床知識地圖</a>。</p>'
+                      '</main></body></html>')
+    (DIST/old_map).write_text(atlas_redirect, encoding="utf-8")
     (DIST/"index.html").write_text(render_home(PAGES), encoding="utf-8")
     searchable=json.dumps(rows,ensure_ascii=False)
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")

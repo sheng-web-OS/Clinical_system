@@ -58,7 +58,7 @@ def render_home(pages):
 <a class="skip-link" href="#main">跳到主要內容</a>
 <header class="library-header">
   <a class="library-logo" href="index.html" aria-label="小麻閱讀首頁"><span class="library-logo-mark" aria-hidden="true">小</span><span>小麻閱讀<small>MEDICAL READING</small></span></a>
-  <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a><a href="xiaoma-plan.html">學習地圖</a></nav>
+  <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="knowledge-atlas.html">知識地圖</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a></nav>
   <button class="library-theme" id="theme" aria-label="切換明暗主題" title="切換主題">◐</button>
 </header>
 <main class="library-wrap" id="main">
@@ -77,8 +77,8 @@ def render_home(pages):
   <section class="library-atlas" aria-labelledby="atlas-heading">
     <div class="library-atlas-copy"><p class="library-overline">CONNECT THE REASONING</p>
       <h2 id="atlas-heading">看見文章之間，<br>真正相連的問題。</h2>
-      <p>例如，呼吸困難可能涉及肺泡換氣、心臟充盈、前向血流或組織供氧。沿著共同的生理問題閱讀不同文章，理解相似症狀背後為何可能需要截然不同的處置。</p>
-      <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識脈絡 <span aria-hidden="true">↗</span></a>
+      <p>例如，呼吸困難可能涉及肺泡換氣、心臟充盈、前向血流或組織供氧。先從症狀選擇一條生理分支，再依先備知識、病例推理與國考驗證找到下一篇；不用在兩份閱讀清單間來回。</p>
+      <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識地圖 <span aria-hidden="true">↗</span></a>
     </div>
     <div class="library-atlas-steps" aria-label="知識建構路徑">
       <div><span>01 / OBSERVE</span><strong>現在看到了什麼？</strong><small>症狀、檢驗與影像各自提供哪些證據</small></div>
@@ -100,12 +100,12 @@ def render_home(pages):
   <section class="library-section library-paths" aria-labelledby="paths-heading">
     <div class="library-section-heading"><div><p class="library-overline">EXPLORE THE COLLECTIONS</p><h2 id="paths-heading">沿著一條脈絡讀</h2></div></div>
     <div class="library-path-grid">
-      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL QUESTIONS</span><h3>知識脈絡</h3><p>依照同一個症狀背後的不同生理機轉，找到值得接續閱讀的文章。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL QUESTIONS</span><h3>知識地圖</h3><p>以臨床問題為起點，同時查看機轉分支、閱讀順序及對應驗證題。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">02 / ESSAYS</span><h3>小麻閱讀</h3><p>從 Pocket Medicine 的定義與圖表出發，展開背後的機轉與臨床判斷。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-internal-medicine.html"><span class="library-path-number">03 / INTERNAL MEDICINE</span><h3>小麻內科國考</h3><p>以臨床問題串連內科主題、先備知識與國考題目。</p><span>進入課程 <span aria-hidden="true">↗</span></span></a>
     </div>
   </section>
-  <footer class="library-footer"><div><strong>小麻閱讀</strong><span>從生理機轉，走到有依據的臨床判斷。</span></div><nav aria-label="補充資訊"><a href="xiaoma-reading.html">原創閱讀</a><a href="knowledge-atlas.html">臨床問題地圖</a><a href="xiaoma-plan.html">內科學習地圖</a></nav></footer>
+  <footer class="library-footer"><div><strong>小麻閱讀</strong><span>從生理機轉，走到有依據的臨床判斷。</span></div><nav aria-label="補充資訊"><a href="xiaoma-reading.html">原創閱讀</a><a href="knowledge-atlas.html">臨床問題地圖</a></nav></footer>
 </main>
 <script src="site-index.js"></script><script src="app.js" defer></script>
 </body></html>'''
