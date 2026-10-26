@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="742" viewBox="0 0 380 742" role="img" aria-labelledby="title desc">
+<title id="title">CABG 術後第三位病人的 lactate、base excess 與 ScvO2 時間序列</title>
+<desc id="desc">T0 至 T5 的乳酸為 3.6、14.8、14.8、8、2.8、1.9 mmol/L；base excess 為負7.69、負15.7、負7.90、負3.8、正2.92、正2.0 mEq/L。ScvO2 T0至T3為92.6%、95%、92.1%、82.0%，T4與T5未提供。時間點實際間隔不等，橫軸為分類座標而非線性時間。資料來自 Wardhana 2025 Table 1 病人3。</desc>
+<rect width="380" height="742" rx="14" fill="#fbfbf8"/>
+<rect x="12" y="12" width="356" height="718" rx="14" fill="none" stroke="#d6e0da"/>
+<text x="25" y="41" font-size="19" font-family="system-ui,Arial,sans-serif" font-weight="750" fill="#183a31">CABG case 3 · ICU trend</text>
+<text x="25" y="62" font-size="12.5" font-family="system-ui,Arial,sans-serif" fill="#53685f">Actual observations, T0–T5 · Source: Table 1</text>
+<text x="25" y="99" font-size="15.5" font-weight="700" fill="#b95832">Lactate</text>
+<text x="98" y="99" font-size="12" fill="#52635f">mmol/L</text>
+<line x1="42" x2="351" y1="253" y2="253" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="257" text-anchor="end" font-size="12" fill="#5e7068">0</text>
+<line x1="42" x2="351" y1="221.5" y2="221.5" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="225.5" text-anchor="end" font-size="12" fill="#5e7068">4</text>
+<line x1="42" x2="351" y1="190" y2="190" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="194" text-anchor="end" font-size="12" fill="#5e7068">8</text>
+<line x1="42" x2="351" y1="158.5" y2="158.5" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="162.5" text-anchor="end" font-size="12" fill="#5e7068">12</text>
+<line x1="42" x2="351" y1="127" y2="127" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="131" text-anchor="end" font-size="12" fill="#5e7068">16</text>
+<polyline points="64,224.7 118,136.4 172,136.4 226,190.0 280,230.9 334,238.0" fill="none" stroke="#b95832" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 3"/>
+<circle cx="64" cy="224.7" r="5" fill="#b95832" stroke="#fff" stroke-width="2"/>
+<circle cx="118" cy="136.4" r="5" fill="#b95832" stroke="#fff" stroke-width="2"/>
+<circle cx="172" cy="136.4" r="5" fill="#b95832" stroke="#fff" stroke-width="2"/>
+<circle cx="226" cy="190.0" r="5" fill="#b95832" stroke="#fff" stroke-width="2"/>
+<circle cx="280" cy="230.9" r="5" fill="#b95832" stroke="#fff" stroke-width="2"/>
+<circle cx="334" cy="238.0" r="5" fill="#b95832" stroke="#fff" stroke-width="2"/>
+<text x="118" y="121.44999999999999" text-anchor="middle" font-size="15" fill="#a54a2b" font-weight="750">14.8</text>
+<text x="25" y="327" font-size="15.5" font-weight="700" fill="#2c6c80">Base excess</text>
+<text x="133" y="327" font-size="12" fill="#52635f">mEq/L</text>
+<line x1="42" x2="351" y1="520" y2="520" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="524" text-anchor="end" font-size="12" fill="#5e7068">-16</text>
+<line x1="42" x2="351" y1="495" y2="495" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="499" text-anchor="end" font-size="12" fill="#5e7068">-12</text>
+<line x1="42" x2="351" y1="470" y2="470" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="474" text-anchor="end" font-size="12" fill="#5e7068">-8</text>
+<line x1="42" x2="351" y1="445" y2="445" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="449" text-anchor="end" font-size="12" fill="#5e7068">-4</text>
+<line x1="42" x2="351" y1="420" y2="420" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="424" text-anchor="end" font-size="12" fill="#5e7068">0</text>
+<line x1="42" x2="351" y1="395" y2="395" stroke="#d9e1dd" stroke-width="1"/><text x="35" y="399" text-anchor="end" font-size="12" fill="#5e7068">+4</text>
+<polyline points="64,468.1 118,518.1 172,469.4 226,443.8 280,401.8 334,407.5" fill="none" stroke="#2c6c80" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 3"/>
+<circle cx="64" cy="468.1" r="5" fill="#2c6c80" stroke="#fff" stroke-width="2"/>
+<circle cx="118" cy="518.1" r="5" fill="#2c6c80" stroke="#fff" stroke-width="2"/>
+<circle cx="172" cy="469.4" r="5" fill="#2c6c80" stroke="#fff" stroke-width="2"/>
+<circle cx="226" cy="443.8" r="5" fill="#2c6c80" stroke="#fff" stroke-width="2"/>
+<circle cx="280" cy="401.8" r="5" fill="#2c6c80" stroke="#fff" stroke-width="2"/>
+<circle cx="334" cy="407.5" r="5" fill="#2c6c80" stroke="#fff" stroke-width="2"/>
+<text x="125" y="508.125" font-size="13.5" fill="#20566a" font-weight="750">−15.7</text>
+<g font-family="system-ui,Arial,sans-serif" fill="#324940">
+<text x="64" y="280" text-anchor="middle" font-size="13" font-weight="600">T0</text><text x="64" y="545" text-anchor="middle" font-size="13" font-weight="600">T0</text>
+<text x="118" y="280" text-anchor="middle" font-size="13" font-weight="600">T1</text><text x="118" y="545" text-anchor="middle" font-size="13" font-weight="600">T1</text>
+<text x="172" y="280" text-anchor="middle" font-size="13" font-weight="600">T2</text><text x="172" y="545" text-anchor="middle" font-size="13" font-weight="600">T2</text>
+<text x="226" y="280" text-anchor="middle" font-size="13" font-weight="600">T3</text><text x="226" y="545" text-anchor="middle" font-size="13" font-weight="600">T3</text>
+<text x="280" y="280" text-anchor="middle" font-size="13" font-weight="600">T4</text><text x="280" y="545" text-anchor="middle" font-size="13" font-weight="600">T4</text>
+<text x="334" y="280" text-anchor="middle" font-size="13" font-weight="600">T5</text><text x="334" y="545" text-anchor="middle" font-size="13" font-weight="600">T5</text>
+</g>
+<text x="25" y="598" font-size="15.5" font-weight="700" fill="#1e594b">ScvO₂</text>
+<text x="85" y="598" font-size="12" fill="#52635f">central venous oxygen saturation</text>
+<rect x="40" y="620" width="48" height="43" rx="8" fill="#f0f3f2"/><text x="64" y="636" text-anchor="middle" font-size="11" fill="#586765">T0</text><text x="64" y="651" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14392f">92.6%</text>
+<rect x="94" y="620" width="48" height="43" rx="8" fill="#dbeeee"/><text x="118" y="636" text-anchor="middle" font-size="11" fill="#586765">T1</text><text x="118" y="651" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14392f">95.0%</text>
+<rect x="148" y="620" width="48" height="43" rx="8" fill="#f0f3f2"/><text x="172" y="636" text-anchor="middle" font-size="11" fill="#586765">T2</text><text x="172" y="651" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14392f">92.1%</text>
+<rect x="202" y="620" width="48" height="43" rx="8" fill="#f0f3f2"/><text x="226" y="636" text-anchor="middle" font-size="11" fill="#586765">T3</text><text x="226" y="651" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14392f">82.0%</text>
+<rect x="256" y="620" width="48" height="43" rx="8" fill="#f0f3f2"/><text x="280" y="636" text-anchor="middle" font-size="11" fill="#586765">T4</text><text x="280" y="651" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14392f">N/A</text>
+<rect x="310" y="620" width="48" height="43" rx="8" fill="#f0f3f2"/><text x="334" y="636" text-anchor="middle" font-size="11" fill="#586765">T5</text><text x="334" y="651" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14392f">N/A</text>
+<line x1="25" y1="679" x2="355" y2="679" stroke="#d9e1dd"/>
+<g font-family="system-ui,Arial,sans-serif" font-size="12" fill="#51665d">
+<text x="25" y="696">T0: ICU arrival  ·  T1: 4 h  ·  T2: 8–10 h</text>
+<text x="25" y="714">T3: 12–14 h  ·  T4: 18–20 h  ·  T5: 24–30 h</text>
+</g>
+</svg>
