@@ -18,7 +18,7 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 <defs><marker id="acls-arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0L0 6L8 3Z" fill="#42636e"/></marker></defs>
 <rect x="338" y="19" width="450" height="115" rx="13" fill="#edf4f2" stroke="#426f69" stroke-width="2"/>
 <text x="563" y="54" font-size="23" font-weight="750" fill="#1b3c3c" text-anchor="middle">成人有脈搏 · 持續性 tachyarrhythmia</text>
-<text x="563" y="82" font-size="17" fill="#354d4d" text-anchor="middle">先判斷心率是否符合病況（tachyarrhythmia 常 ≥150/min）</text>
+<text x="563" y="82" font-size="17" fill="#354d4d" text-anchor="middle">先評估心率與病況（通常 ≥150/min）</text>
 <text x="563" y="109" font-size="17" fill="#354d4d" text-anchor="middle">Airway／必要氧氣／監測 · IV · 12-lead ECG</text>
 <path d="M563 134V172" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
 <path d="M563 179L811 278L563 377L315 278Z" fill="#fdf0e6" stroke="#b97543" stroke-width="2.5"/>
