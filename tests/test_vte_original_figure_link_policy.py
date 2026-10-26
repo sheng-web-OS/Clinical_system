@@ -24,7 +24,7 @@ class VTEOriginalFigureLinkPolicy(unittest.TestCase):
         for bad in BAD_FIGURE_ENDPOINTS:
             self.assertNotIn(bad, article)
         self.assertNotIn("原始四面板影像，可點開放大", article)
-        self.assertEqual(article.count("<figure"), 1)
+        self.assertEqual(article.count("<figure"), 2)
         self.assertIn('id="vte-d-dimer-bayes"', article)
 
     def test_source_and_seo_do_not_claim_unusable_image_links(self):
