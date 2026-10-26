@@ -1,6 +1,6 @@
 # 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？
 
-*原文 2026.07.24｜2026.10.26 AI 附圖整合版；作者提供原稿另行保存。*
+*原文 2026.07.24｜2026.10.27 原圖核對與 Bayesian D-dimer 圖修訂版；作者提供原稿另行保存。*
 
 閱讀 venous thromboembolism，最自然的方式，是把整個章節理解成一條血栓逐漸前進的病程。
 
@@ -15,21 +15,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 兩者共享同一組生成條件，卻不一定依序成為同一名病人的兩個階段。
 
 
-<figure id="vte-shared-substrate" class="vte-figure">
-<div class="vte-figure-heading"><span>FIGURE 01 · SHARED CAUSE, DIFFERENT PRESENTATIONS</span><strong>共同的不是必然經過的兩個階段，而是血栓生成的上游條件</strong></div>
-<div class="vte-risk-row" role="group" aria-label="靜脈血栓生成的共同上游條件">
-<div>Venous stasis<span>血流停滯</span></div><div>Endothelial injury<span>內皮傷害</span></div><div>Hypercoagulability<span>高凝血狀態</span></div>
-</div>
-<div class="vte-direction" aria-hidden="true">↓</div>
-<div class="vte-center"><small>共同介入層級</small><strong>Venous thrombus formation</strong><span>預防問的是：現在是否該降低形成血栓的風險？</span></div>
-<div class="vte-direction vte-flow-diverge" aria-hidden="true">↙　　↘</div>
-<div class="vte-branches" role="group" aria-label="兩種相關但不是必然先後發生的臨床表現">
-<section><small>臨床表現 A</small><strong>DVT · 深靜脈血栓</strong><p>症狀可來自深靜脈回流受阻：單側腫脹、壓痛、局部水腫。</p></section>
-<section><small>臨床表現 B</small><strong>PE · 肺動脈栓塞</strong><p>栓子進入肺循環：呼吸困難、胸痛、低血氧，嚴重時血流動力學崩潰。</p></section>
-</div>
-<div class="vte-figure-note">DVT 可以成為 PE 的來源，但「有 DVT」不代表「必然進展為 PE」；PE 評估時也不一定找得到下肢 DVT。</div>
-<figcaption>圖 1｜依 <em>Pocket Medicine</em> 9E 的 VTE 定義、risk factors 與 thromboprophylaxis 概念獨立繪製，非原書 Figure／Table。圖中兩端是可能的臨床表現，不是依序演化的時間軸。</figcaption>
-</figure>
+**解剖原圖定位。** [American Heart Association《What Is a Pulmonary Embolism?》第 1 頁](https://www.heart.org/-/media/Files/Health-Topics/Pulmonary-Embolism/What-is-a-PE.pdf) 直接畫出栓子經下腔靜脈、右心與肺動脈的可能路徑。圖中箭頭代表一種可能的栓塞過程，**不是所有 DVT 的必然病程**。原圖保留著作權，本站以來源連結供讀者放大閱讀。
 
 這也解釋了第一個看似矛盾的地方：
 
@@ -62,16 +48,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 這次呼吸困難，是否來自肺動脈阻塞？
 
 
-<figure id="vte-competing-hypotheses" class="vte-figure">
-<div class="vte-figure-heading"><span>FIGURE 02 · TWO PRETEST QUESTIONS</span><strong>同一個血栓背景，為什麼需要兩張不同的 Wells？</strong></div>
-<div class="vte-common-background"><small>共同的起點</small><strong>Cancer · Immobility · Surgery · Previous VTE</strong><p>提高血栓疾病的先驗可能性，但尚未解釋這次症狀，更不是陽性診斷。</p></div>
-<div class="vte-branches vte-diagnostic-branches">
-<section><small>假說 A · SUSPECTED DVT</small><strong>這條腿為什麼腫？</strong><p><b>支持證據：</b>單側 pitting edema、腿圍差、沿深靜脈壓痛。</p><p><b>競爭解釋：</b>cellulitis、muscle injury、ruptured Baker cyst。</p><p><b>Wells 的功能：</b>比較 DVT 與替代原因的解釋力，得到 DVT pretest probability。</p></section>
-<section><small>假說 B · SUSPECTED PE</small><strong>這次呼吸困難為什麼發生？</strong><p><b>支持證據：</b>心跳快、hemoptysis、DVT signs、與 PE 相符的心肺表現。</p><p><b>競爭解釋：</b>肺炎、心衰竭、氣胸、ACS 等。</p><p><b>Wells 的功能：</b>比較 PE 與替代原因的解釋力，得到 PE pretest probability。</p></section>
-</div>
-<div class="vte-figure-note">PE Wells 裡出現「clinical signs of DVT」，只是讓 PE 假說更合理；不能用腿部徵象證實肺動脈已有血栓。</div>
-<figcaption>圖 2｜以原書第九版 PDF 第 98–99 頁兩套 Modified Wells 的變項與臨床問題獨立整合；不是 Wells 計分表，也不能用來自行換算分數。住院病人與特殊族群中分數的校準度需另判斷。</figcaption>
-</figure>
+**完整診斷演算法原圖。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**上圖是判斷層級比較，不能取代完整的 DVT／PE 演算法**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
 
 所以小麻需要兩張不同的 Wells score。
 
@@ -126,19 +103,25 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 不是因為 D-dimer 不再反映 fibrin turnover，而是它已經很難改變下一步。陰性結果未必足以把疾病機率降到安全排除的範圍；陽性結果又仍然不能確認或定位血栓，因此直接尋找解剖證據反而更有價值。
 
 
-<figure id="vte-diagnostic-stop-rules" class="vte-figure">
-<div class="vte-figure-heading"><span>FIGURE 03 · ONE TEST, DIFFERENT STOPPING RULES</span><strong>D-dimer 可共用，並不代表診斷路徑重新合併</strong></div>
-<div class="vte-step"><small>先定義目標</small><strong>病人有症狀 → 選擇 DVT 或 PE 的疾病假說 → 判斷各自 pretest probability</strong></div>
-<div class="vte-evidence-grid">
-<section><small>適合使用排除策略時</small><strong>低或適用的中等前測機率</strong><p>依對應的有效診斷演算法使用高敏感度 D-dimer；<b>陰性可協助排除</b>，陽性只代表不能停止，須進入定位檢查。</p></section>
-<section><small>陰性不足以安全排除時</small><strong>高前測機率</strong><p>通常優先進入適當的影像路徑。D-dimer 陰性不能單獨把高風險降到可停止範圍。</p></section>
+
+
+<figure id="vte-d-dimer-bayes" class="vte-bayes-figure" aria-labelledby="vte-bayes-title">
+<div class="vte-bayes-header"><small>QUANTITATIVE THOUGHT EXPERIMENT · 單一陰性檢驗</small><strong id="vte-bayes-title">相同 D-dimer 陰性，為何不能得到相同的「排除許可」？</strong><span>為了隔離前測機率的影響，兩組都<strong>假設</strong>使用 LR− = 0.10 的檢驗；這是示範值，不是任何品牌 D-dimer 的固定性能。</span></div>
+<div class="vte-bayes-body">
+<div class="vte-bayes-math">post-test odds = pre-test odds × LR−</div>
+<div class="vte-bayes-case vte-bayes-low">
+<div class="vte-bayes-case-heading"><strong>假設 A：前測機率較低</strong><small>同樣降低 90% 的疾病 odds</small></div>
+<div class="vte-bayes-measure"><span>檢查前</span><div class="vte-bayes-track" role="img" aria-label="檢查前疾病機率 5%"><i style="width:5%"></i></div><b>5%</b></div>
+<div class="vte-bayes-measure"><span>陰性後</span><div class="vte-bayes-track" role="img" aria-label="陰性後疾病機率約 0.52%"><i style="width:0.52%"></i></div><b>0.52%</b></div>
 </div>
-<div class="vte-image-columns">
-<div><small>定位 DVT</small><strong>Compression ultrasound</strong><span>受檢靜脈是否可壓縮？</span><p>如果只檢查 proximal veins，陰性並不等於全腿沒有 distal DVT；依演算法考慮重複檢查。</p></div>
-<div><small>定位 PE</small><strong>CT pulmonary angiography</strong><span>肺動脈是否有 filling defect？</span><p>陰性須結合影像品質、整體前測機率及臨床一致性，不能脫離脈絡視為絕對。</p></div>
+<div class="vte-bayes-case vte-bayes-high">
+<div class="vte-bayes-case-heading"><strong>假設 B：前測機率較高</strong><small>完全相同的 LR− = 0.10</small></div>
+<div class="vte-bayes-measure"><span>檢查前</span><div class="vte-bayes-track" role="img" aria-label="檢查前疾病機率 50%"><i style="width:50%"></i></div><b>50%</b></div>
+<div class="vte-bayes-measure"><span>陰性後</span><div class="vte-bayes-track" role="img" aria-label="陰性後疾病機率約 9.09%"><i style="width:9.09%"></i></div><b>9.09%</b></div>
 </div>
-<div class="vte-urgent-note"><strong>急重症例外｜懷疑 PE 且血流動力學不穩定</strong><span>先急救與評估是否為高風險 PE，依當下可行性安排床邊評估／影像及治療；不把穩定病人的 Wells → D-dimer 常規路徑套用在休克病人。</span></div>
-<figcaption>圖 3｜依 <em>Pocket Medicine</em> 9E 第 98–99 頁 Figure 2-2／2-3 所列問題，以及 NICE NG158 診斷建議整合的原創概念圖，<strong>非完整臨床醫囑或原書圖重製</strong>。DVT 與 PE 具有各自的適用族群、檢查可得性及陰性影像後續追查條件。</figcaption>
+<p class="vte-bayes-reading"><strong>圖真正改變的判斷：</strong>陰性檢驗降低的是原本的 odds，不能將兩名起始機率差很多的病人變成同樣的殘餘風險；因此「陰性」不是獨立於 pretest probability 的停止條件。</p>
+</div>
+<figcaption>圖｜Bayes odds 定理的<strong>假設數值練習</strong>，非真實患者資料、非 DVT／PE 通用的 LR− 或臨床安全排除門檻；機率條為線性 0–100%（極低值以標籤判讀），不顯示或暗示固定停查閾值。真實檢驗性能受 assay、cutoff、病人族群及病程影響；實際 DVT／PE 應分別依 <a href="https://www.nice.org.uk/guidance/ng158/chapter/recommendations">NICE NG158 的適用流程</a> 決定能否停查，不對不穩定疑似 PE 延遲急救。</figcaption>
 </figure>
 
 影像檢查真正完成的，也不是所有診斷不確定性，而是 DVT 與 PE 的解剖分流。
@@ -152,6 +135,8 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 血栓是否位於下肢深靜脈？
 
 血栓是否位於肺動脈？
+
+**真實影像直接核讀：** [An et al., *Journal of Korean Medical Science* 2022，Figure 5（原始四面板影像，可點開放大）](https://www.jkms.org/ViewImage.php?Type=F&afn=63_JKMS_37_10_e76&aid=732221&fn=jkms-37-e76-g005_0063JKMS&id=F5)。38 歲患者的右後基底肺段動脈 filling defect 由 CTPA（A、B）顯示；右側 popliteal DVT 由 indirect CT venography（C）與 color Doppler（D）顯示。**D 是彩色 Doppler，不能冒稱示範 compression ultrasound 的不可壓縮性。** 這是「不同部位需要不同解剖證據」的病例，不是 Wells／D-dimer 的停止流程，也不能推論每名 PE 病人都能找到下肢 DVT。原圖為 [CC BY-NC 4.0 非商業授權](https://creativecommons.org/licenses/by-nc/4.0/)；網站僅提供原站連結，不重製或熱連結圖片，以保留完整解析度與圖說。
 
 但即使影像結果陰性，也仍須放回原本的 clinical probability、檢查範圍與影像品質解讀。
 
@@ -179,4 +164,4 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 ---
 
-[原表、三張原創圖與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站的三張圖為原創概念圖。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
+[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站撤回原有三張錯誤示意圖；保留一張以相同 LR−、不同前測機率解釋陰性 D-dimer 殘餘風險的量化圖，並附 AHA 解剖機轉、NICE 原始演算法及 JKMS 真實影像的可放大來源入口。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。

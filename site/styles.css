@@ -536,3 +536,42 @@
  .hbv-inference-step{padding:16px 14px}
  .hbv-inference-step>strong,.hbv-contrast-result strong{font-size:15px}
 }
+
+/* VTE: one analytic probability figure with a real numeric axis rather than text-card flow. */
+.reading-prose .vte-bayes-figure{margin:2em 0;max-width:100%;min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);color:var(--ink);font-size:16px;line-height:1.65}
+.vte-bayes-header{padding:22px 24px 19px;border-bottom:1px solid var(--line)}
+.vte-bayes-header>small{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--brand);margin-bottom:7px}
+.vte-bayes-header>strong{display:block;font-size:21px;line-height:1.48;letter-spacing:-.01em}
+.vte-bayes-header>span{display:block;font-size:14px;color:var(--muted);line-height:1.75;margin-top:9px}
+.vte-bayes-body{padding:19px 22px 20px}
+.vte-bayes-math{font-size:15px;text-align:center;font-weight:700;border:1px solid var(--line);border-radius:7px;background:var(--bg);padding:8px 12px;margin-bottom:16px;letter-spacing:.01em}
+.vte-bayes-case{padding:15px 16px;margin:0 0 13px;border:1px solid var(--line);border-radius:8px}
+.vte-bayes-case-heading{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 15px;align-items:baseline;margin-bottom:12px}
+.vte-bayes-case-heading strong{font-size:16px}
+.vte-bayes-case-heading small{font-size:12px;color:var(--muted)}
+.vte-bayes-measure{display:grid;grid-template-columns:60px minmax(0,1fr) 60px;gap:10px;align-items:center;margin-top:10px}
+.vte-bayes-measure>span{font-size:13px;white-space:nowrap}
+.vte-bayes-measure>b{font-size:16px;text-align:right;font-variant-numeric:tabular-nums}
+.vte-bayes-track{height:21px;min-width:0;border:1px solid var(--line);border-radius:4px;position:relative;background:repeating-linear-gradient(90deg,var(--bg),var(--bg) calc(25% - 1px),var(--line) calc(25% - 1px),var(--line) 25%);overflow:hidden}
+.vte-bayes-track i{display:block;height:100%;min-width:2px;background:var(--brand);border-radius:2px}
+.vte-bayes-high .vte-bayes-track i{background:var(--accent)}
+.reading-prose .vte-bayes-reading{font-size:14px;line-height:1.8;border-left:3px solid var(--brand);margin:14px 0 0;padding:11px 14px;background:var(--brand-light)}
+.reading-prose .vte-bayes-figure figcaption{padding:15px 22px 19px;font-size:12px;line-height:1.9;color:var(--muted);border-top:1px solid var(--line);margin:0}
+@media(max-width:640px){
+ .reading-prose .vte-bayes-figure{margin:1.7em -5px;border-radius:8px}
+ .vte-bayes-header{padding:15px 14px 13px}
+ .vte-bayes-header>strong{font-size:18px}
+ .vte-bayes-header>span{font-size:13px}
+ .vte-bayes-header>small{font-size:11px}
+ .vte-bayes-body{padding:13px 11px 15px}
+ .vte-bayes-math{font-size:12px;line-height:1.7;margin-bottom:11px;padding:7px 5px}
+ .vte-bayes-case{padding:12px 11px;margin-bottom:10px}
+ .vte-bayes-case-heading strong{font-size:14px}
+ .vte-bayes-case-heading small{font-size:11px}
+ .vte-bayes-measure{grid-template-columns:43px minmax(0,1fr) 52px;gap:5px;margin-top:8px}
+ .vte-bayes-measure>span{font-size:12px}
+ .vte-bayes-measure>b{font-size:14px}
+ .vte-bayes-track{height:19px}
+ .reading-prose .vte-bayes-reading{padding:9px 11px;font-size:13px}
+ .reading-prose .vte-bayes-figure figcaption{padding:12px 13px;font-size:12px}
+}
