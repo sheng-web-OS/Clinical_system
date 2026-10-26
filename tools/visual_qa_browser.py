@@ -9,6 +9,7 @@ import argparse
 import functools
 import http.server
 import json
+import os
 import re
 import subprocess
 import threading
@@ -194,6 +195,42 @@ def inspect(page, figure_id, result_dir, slug, width):
             "screenshot": image_path.name}
 
 
+def write_review_summary(output: Path, reports: list[dict]) -> None:
+    """Compact GitHub Actions summary, never a medical or pedagogic approval."""
+    total = sum(len(entry.get("figures", [])) for entry in reports)
+    failures = sum(not fig.get("passed") for entry in reports
+                   for fig in entry.get("figures", []))
+    lines = [
+        "### Figure rendering QA — NOT medical/content approval",
+        "",
+        f"Captured figure/viewport pairs: **{total}**; rendering holds: **{failures}**.",
+        "A visually loaded picture may still be medically misleading, unreadable, "
+        "inappropriate for its paragraph, or used without sufficient rights.",
+        "",
+        "| Published page | Width | Figure | Render | Problems | Screenshot |",
+        "|---|---:|---|---|---|---|",
+    ]
+    for entry in reports:
+        page = entry.get("page", "unknown")
+        width = entry.get("viewport", "?")
+        for fig in entry.get("figures", []):
+            msg = "; ".join(fig.get("problems", [])) or "—"
+            shot = fig.get("screenshot", "—")
+            lines.append(f"| {page} | {width}px | {fig.get('figure', '?')} | "
+                         f"{'PASS' if fig.get('passed') else 'HOLD'} | {msg} | {shot} |")
+        if not entry.get("figures"):
+            msg = "; ".join(entry.get("problems", [])) or "No figures"
+            lines.append(f"| {page} | {width}px | — | HOLD | {msg} | — |")
+    if not reports:
+        lines.append("| No changed public figures | — | — | SKIP | — | — |")
+    content = "\n".join(lines) + "\n"
+    (output / "visual-qa-summary.md").write_text(content, encoding="utf-8")
+    gh_summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if gh_summary:
+        with Path(gh_summary).open("a", encoding="utf-8") as stream:
+            stream.write(content + "\n")
+
+
 def run(dist, output, slugs, widths, page_map=None):
     # Local Playwright import keeps lightweight manifest-discovery tests dependency-free.
     from playwright.sync_api import sync_playwright
@@ -245,6 +282,7 @@ def run(dist, output, slugs, widths, page_map=None):
             "certifies_figure_educational_value": False,
             "results": reports,
         }, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_review_summary(output, reports)
     for entry in reports:
         print(("PASS" if entry["passed"] else "HOLD"), entry["page"], entry["viewport"],
               entry["problems"] + [p for f in entry["figures"] for p in f["problems"]])
@@ -282,6 +320,7 @@ if __name__ == "__main__":
                         "certifies_figure_educational_value": False,
                         "results": [], "status": "no_changed_public_figures"},
                        ensure_ascii=False, indent=2), encoding="utf-8")
+        write_review_summary(a.output, [])
         print("SKIP: no modified allowlisted pages containing figure blocks")
         raise SystemExit(0)
     raise SystemExit(run(a.dist, a.output, slugs, a.widths, page_map))
