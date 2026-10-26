@@ -1,6 +1,6 @@
 # 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？
 
-2026.07.23 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。原文於 [私人 source snapshot](../../../archive/xiaoma-reading/intake/2026-07-23-cirrhosis-user-supplied.md) 完整保留；本篇是獨立整合稿，非已核實的 Facebook 正式原文。
+2026.07.23 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。原文於 私人 source snapshot（私有封存） 完整保留；本篇是獨立整合稿，非已核實的 Facebook 正式原文。
 
 Pocket Medicine 第九版先把 cirrhosis 定義為 fibrosis、regenerative nodules 和 hepatic vascular architecture distortion，接著卻從不同角度評估：ultrasound、elastography、platelet、albumin、INR、varices、ascites、encephalopathy、Child–Pugh 與 MELD。這很容易被讀成一條「先結構異常、再檢驗異常、再器官衰竭」的直線。
 
@@ -58,14 +58,11 @@ Child–Pugh 同時納入 bilirubin、albumin、INR、ascites、encephalopathy�
 更關鍵的是 **recompensation 是臨床狀態的嚴格定義，不是分數下降的同義詞**。Baveno VIII 指出，病因已獲控制、在離開針對 ascites／HE 的治療後症狀仍持續解除、既往 variceal bleeding 無再發、相關條件維持 >6 個月，以及肝功能達 Child–Pugh A5/A6 的條件，必須綜合符合才能判定 recompensation。[1] 即使達成，並非宣稱 histologic cirrhosis 倒轉為正常肝，也不能停止適當的 HCC surveillance。
 
 此處最能看出最初原稿的價值：一個由結構定義的疾病，可以同時發生結構、壓力、功能、事件和預後彼此不同速的變化。臨床決策若將它們全部濃縮成「肝硬化比較嚴重了」一句話，就看不見**病人在哪個層次跨過了會改變行動的門檻**。
-
----
-
-### 核心來源、仍待確認事項
+\n\n[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#cirrhosis)\n\n---\n\n### 來源與驗收、仍待確認事項
 
 [1] [Baveno VIII – Advancing consensus in portal hypertension](https://www.journal-of-hepatology.eu/article/S0168-8278%2826%2902778-9/fulltext), J Hepatol, online 2026-08-19；特別是 Panels 1, 3, 7。  
 [2] [Kim et al., MELD 3.0 (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8608337/).  
 [3] Pocket Medicine 9E, CIRRHOSIS, viewer PDF pp.145–147；**Child–Pugh Appendix 原表未完成核對**，未臨摹或宣稱原表全數驗收。  
-[4] [原稿及圖表稽核](../../../archive/xiaoma-reading/intake/2026-07-23-cirrhosis-figure-review.md)。
+[4] 原稿及圖表稽核（私有封存）。
 
 **AI-integrated candidate / publication HOLD**：未取得 Facebook 原帖 canonical 確認、獨立醫學審查或部署批准；前述 Baveno VIII 門檻及 recompensation 須經逐條臨床校對後方可進入發布流程。
