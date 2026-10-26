@@ -607,3 +607,26 @@
 @media(max-width:920px){.acls-desktop-graph{display:none}.acls-mobile-graph{display:block}}
 @media(max-width:480px){.reading-prose .acls-core-figure{margin:1.45rem 0;padding:12px}.acls-core-head>strong{font-size:1.04rem}.acls-m-split{grid-template-columns:1fr}.acls-m-split>.acls-m-step:first-child:after{content:"另一條分支 ↓";font-size:.75rem;font-weight:700;color:#31627a;display:block;position:relative;top:16px;padding-bottom:9px}.acls-mobile-graph{font-size:.88rem}}
 
+
+
+/* Two focused ACLS clinical algorithms, both true vector charts with distinct
+   routable mobile paths; preserve native text sharpness at mobile width. */
+.reading-prose .acls-two-stage{margin:2rem 0;overflow:hidden}
+.acls-two-stage .acls-core-head>strong{font-size:1.26rem;line-height:1.42}
+.acls-two-stage svg text{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+.acls-two-stage .acls-desktop-graph,.acls-two-stage .acls-mobile-graph{max-width:100%;height:auto;border:1px solid #edf0ee;border-radius:9px}
+.acls-two-stage .acls-mobile-graph{width:100%}
+.acls-two-stage .acls-desktop-graph{width:100%}
+.acls-two-stage figcaption{line-height:1.8}
+@media(max-width:920px){
+  .acls-two-stage .acls-desktop-graph{display:none}
+  .acls-two-stage .acls-mobile-graph{display:block}
+}
+@media(min-width:921px){
+  .acls-two-stage .acls-desktop-graph{display:block}
+  .acls-two-stage .acls-mobile-graph{display:none}
+}
+@media(max-width:480px){
+  .reading-prose .acls-two-stage{padding:11px;margin:1.5rem -4px}
+  .acls-two-stage .acls-core-head>strong{font-size:1.08rem}
+}
