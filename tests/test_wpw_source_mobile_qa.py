@@ -70,6 +70,9 @@ class SourceFigurePhoneReading(unittest.TestCase):
         for value in ("naturalWidth", "screenshot", "scrollWidth", "390"):
             self.assertIn(value, script + workflow)
         self.assertIn("python tools/visual_qa_browser.py", workflow)
+        self.assertIn("Render modified published figures automatically", workflow)
+        self.assertIn("Inventory all legacy figures after shared layout changes", workflow)
+        self.assertIn("continue-on-error: true", workflow)
 
 
 if __name__ == "__main__":
