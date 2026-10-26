@@ -185,27 +185,38 @@ def inspect(page, figure_id, result_dir, slug, width):
         focus = figure.locator(".wpw-mobile-focus .wpw-focus-case")
         if focus.count() != 3 or not all(case.is_visible() for case in focus.all()):
             problems.append("all three activation states must be individually visible on phone")
-        for crop in figure.locator(".wpw-crop").all():
+        # The mobile edition deliberately extracts anatomy + ECG waveforms from
+        # source pixels (y=75..385 of 446) while re-typesetting the original
+        # headings/conditions in readable HTML. Geometry guards against the
+        # exact previously passing-but-misleading clipped-label screenshot.
+        for index, crop in enumerate(figure.locator(".wpw-crop").all()):
             if not crop.is_visible():
                 problems.append("source image panel hidden")
                 continue
             rect = crop.bounding_box()
             if rect and rect["width"] < 220:
                 problems.append("source image crop narrower than 220px")
-            # The source contains original titles, ECG strips and lower annotations:
-            # a shortened CSS crop may load perfectly yet hide those teaching clues.
-            crop_geometry = crop.evaluate("""el => {
+            region = crop.evaluate("""el => {
                 const frame = el.getBoundingClientRect();
                 const picture = el.querySelector('img');
-                const img = picture && picture.getBoundingClientRect();
-                return img ? {imageHeight: img.height, frameHeight: frame.height,
-                              verticalOffset: img.top-frame.top} : null;
+                if (!picture || !picture.naturalWidth || !picture.naturalHeight)
+                    return null;
+                const img = picture.getBoundingClientRect();
+                return {
+                    x: (frame.left-img.left)*picture.naturalWidth/img.width,
+                    y: (frame.top-img.top)*picture.naturalHeight/img.height,
+                    width: frame.width*picture.naturalWidth/img.width,
+                    height: frame.height*picture.naturalHeight/img.height
+                };
             }""")
-            if crop_geometry and (
-                abs(crop_geometry["imageHeight"] - crop_geometry["frameHeight"]) > 6
-                or abs(crop_geometry["verticalOffset"]) > 4
+            expected_x = index * 250
+            if not region or (
+                abs(region["x"] - expected_x) > 8
+                or abs(region["y"] - 75) > 8
+                or abs(region["width"] - 250) > 8
+                or abs(region["height"] - 310) > 8
             ):
-                problems.append("source annotation clipped vertically in mobile WPW crop")
+                problems.append("source teaching ROI is not aligned: panel " + str(index + 1))
     figure.scroll_into_view_if_needed()
     image_path = result_dir / (slug + "-" + figure_id + "-" + str(width) + ".png")
     try:
