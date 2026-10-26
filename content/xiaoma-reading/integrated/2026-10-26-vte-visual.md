@@ -1,6 +1,6 @@
 # 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？
 
-*原文 2026.07.24｜2026.10.27 影像與原始指引對照修訂版；作者提供原稿另行保存。*
+*原文 2026.07.24｜2026.10.27 原圖核對與臨床決策圖修訂版；作者提供原稿另行保存。*
 
 閱讀 venous thromboembolism，最自然的方式，是把整個章節理解成一條血栓逐漸前進的病程。
 
@@ -48,7 +48,39 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 這次呼吸困難，是否來自肺動脈阻塞？
 
 
-**原始決策圖定位。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**本段不再用自編的兩欄文字表冒充診斷流程圖**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
+<figure id="vte-decision-resolution" class="vte-decision-atlas" aria-labelledby="vte-decision-title">
+<div class="vte-atlas-head"><span>臨床解析度 · PREVENTION ≠ DIAGNOSIS</span><strong id="vte-decision-title">兩套判斷，不是同一條疾病時間軸</strong></div>
+<section class="vte-atlas-prevent">
+<small>問題 1｜尚未有定位症狀時，是否降低未來 VTE 風險？</small>
+<div class="vte-atlas-risk"><strong>共同的血栓生成風險</strong><span>stasis ／ endothelial injury ／ hypercoagulability</span></div>
+<div class="vte-atlas-route"><span class="vte-atlas-glyph" aria-hidden="true">↓</span><span>評估 VTE risk 與 bleeding risk → 選擇是否預防</span></div>
+</section>
+<div class="vte-atlas-boundary"><strong>臨床問題改變：症狀需要解剖定位</strong><span>下方是「疾病假說」分流，不代表 DVT 必然演變成 PE。</span></div>
+<div class="vte-atlas-paths">
+<section class="vte-atlas-branch vte-atlas-dvt">
+<small>假說 A · SUSPECTED DVT</small>
+<strong>單側腿腫／深靜脈壓痛</strong>
+<div class="vte-atlas-down" aria-hidden="true">↓</div>
+<div class="vte-atlas-node"><b>DVT-specific Wells</b><span>估計腿部 DVT 的 pretest probability</span></div>
+<div class="vte-atlas-down" aria-hidden="true">↓</div>
+<div class="vte-atlas-node vte-atlas-terminal"><b>Proximal compression ultrasound</b><span>這段深部靜脈能否壓縮？</span></div>
+</section>
+<section class="vte-atlas-branch vte-atlas-pe">
+<small>假說 B · SUSPECTED PE</small>
+<strong>新發呼吸困難／pleuritic pain</strong>
+<div class="vte-atlas-down" aria-hidden="true">↓</div>
+<div class="vte-atlas-node"><b>PE-specific Wells</b><span>估計肺動脈栓塞的 pretest probability</span></div>
+<div class="vte-atlas-down" aria-hidden="true">↓</div>
+<div class="vte-atlas-node vte-atlas-terminal"><b>CTPA（或適當 V/Q）</b><span>肺動脈有無充盈缺損？</span></div>
+</section>
+</div>
+<div class="vte-atlas-inference"><strong>共同檢驗 ≠ 共同診斷</strong><span>D-dimer 可用於「適用演算法下的排除」，不能定位血栓；是否能停止追查，仍由各自 pretest probability 與檢查結果決定。</span></div>
+<figcaption>圖｜原創「決策問題分流」示意，**不是解剖圖，也不是 NICE 的完整診斷演算法**。它只對照預防與症狀後定位的判斷層級；不代表每名病人先預防、後出現 DVT、再發生 PE。疑似 PE 且血流動力學不穩定者不可等此穩定流程。DVT 初次 proximal US 陰性不等於 whole-leg 陰性，應依 <a href="https://www.nice.org.uk/guidance/ng158/chapter/recommendations">NICE NG158 §1.1</a> 的個別分支及註腳判讀。</figcaption>
+</figure>
+
+
+
+**完整診斷演算法原圖。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**上圖是判斷層級比較，不能取代完整的 DVT／PE 演算法**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
 
 所以小麻需要兩張不同的 Wells score。
 
@@ -145,4 +177,4 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 ---
 
-[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站撤回原有三張示意文字圖；AHA 解剖機轉、NICE 診斷決策分流、JKMS 真實病例影像均改成指向原始高解析圖表的明確連結，避免不完整的重繪及手機上無法辨識的縮圖。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
+[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站撤回原有三張錯誤示意圖；僅保留一張以「判斷問題」為軸的原創診斷分流圖，並附 AHA 解剖機轉、NICE 原始演算法及 JKMS 真實影像的可放大來源入口。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
