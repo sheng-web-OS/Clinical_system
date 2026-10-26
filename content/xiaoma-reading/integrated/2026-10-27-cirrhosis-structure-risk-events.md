@@ -20,14 +20,14 @@ Pocket Medicine 第九版先把 cirrhosis 定義為 fibrosis、regenerative nodu
 
 <figure id="fig-cirrhosis-five-axes" class="reasoning-figure">
 <div class="reasoning-title">原創圖 1｜五種問題、五種證據：由「確診肝硬化」改問「這一刻要做什麼」</div>
-<table aria-label="Cirrhosis五個獨立且相關的臨床軸線">
+<table aria-label="Cirrhosis五個獨立且相關的臨床軸線" class="release-matrix">
 <thead><tr><th scope="col">臨床問句</th><th scope="col">主要證據</th><th scope="col">能改變的決策</th><th scope="col">不能取代</th></tr></thead>
 <tbody>
-<tr><th scope="row">組織結構發生甚麼改變？</th><td>Histology、病因與非侵入性 fibrosis 評估</td><td>確認型態／排查未解病因</td><td>單獨預測 CSPH 或近期死亡</td></tr>
-<tr><th scope="row">門脈壓風險有多高？</th><td>LSM＋platelet／SSM／必要時 HVPG 與 varices</td><td>CSPH 風險與預防失代償策略</td><td>自動宣告曾發生 decompensation</td></tr>
-<tr><th scope="row">肝功能及全身生理是否受影響？</th><td>Bilirubin、albumin、INR、Na、renal function 和臨床情境</td><td>病情處理與部分預後估計</td><td>用 INR 單獨量化自發性出血率</td></tr>
-<tr><th scope="row">曾否有失代償事件？</th><td>Clinically evident ascites、variceal bleed、overt HE</td><td>事件治療、預後分層與後續監測</td><td>等同 fibrosis 最新數值</td></tr>
-<tr><th scope="row">短期預後／移植評估？</th><td>MELD 3.0、Child–Pugh 及個別臨床因素</td><td>資源與轉介判斷</td><td>保證低分病人沒有嚴重事件或 HCC</td></tr>
+<tr><th scope="row">組織結構發生甚麼改變？</th><td data-label="主要證據">Histology、病因與非侵入性 fibrosis 評估</td><td data-label="能改變的決策">確認型態／排查未解病因</td><td data-label="不能取代">單獨預測 CSPH 或近期死亡</td></tr>
+<tr><th scope="row">門脈壓風險有多高？</th><td data-label="主要證據">LSM＋platelet／SSM／必要時 HVPG 與 varices</td><td data-label="能改變的決策">CSPH 風險與預防失代償策略</td><td data-label="不能取代">自動宣告曾發生 decompensation</td></tr>
+<tr><th scope="row">肝功能及全身生理是否受影響？</th><td data-label="主要證據">Bilirubin、albumin、INR、Na、renal function 和臨床情境</td><td data-label="能改變的決策">病情處理與部分預後估計</td><td data-label="不能取代">用 INR 單獨量化自發性出血率</td></tr>
+<tr><th scope="row">曾否有失代償事件？</th><td data-label="主要證據">Clinically evident ascites、variceal bleed、overt HE</td><td data-label="能改變的決策">事件治療、預後分層與後續監測</td><td data-label="不能取代">等同 fibrosis 最新數值</td></tr>
+<tr><th scope="row">短期預後／移植評估？</th><td data-label="主要證據">MELD 3.0、Child–Pugh 及個別臨床因素</td><td data-label="能改變的決策">資源與轉介判斷</td><td data-label="不能取代">保證低分病人沒有嚴重事件或 HCC</td></tr>
 </tbody></table>
 <figcaption>本圖按不同臨床決策所需的證據自行建立，非 Pocket Medicine 原始表格。對讀 9E Library PDF pp.145–147 及 Baveno VIII／MELD 3.0 文獻；每列不代表疾病必經的發展階段。</figcaption>
 </figure>
@@ -42,11 +42,11 @@ Baveno VIII 在 cACLD 特定族群提供 non-invasive criteria。例如 LSM ≤1
 
 <figure id="fig-cirrhosis-event-discrimination" class="reasoning-figure">
 <div class="reasoning-title">原創圖 2｜固定同一個結構疾病，只改變「事件有沒有發生」</div>
-<table aria-label="Cirrhosis compensated 與 decompensated 比較">
+<table aria-label="Cirrhosis compensated 與 decompensated 比較" class="release-matrix">
 <thead><tr><th>固定條件</th><th>比較 A：沒有失代償事件</th><th>比較 B：已發生失代償事件</th></tr></thead>
 <tbody>
-<tr><th scope="row">已知 chronic liver disease、門脈高壓和 varices</th><td>Varices 尚未出血、無 clinically evident ascites／overt HE → 不因 varices 本身改稱 decompensated</td><td>發生 variceal bleed 或 portal hypertensive ascites／overt HE → 已跨過 clinical event 門檻</td></tr>
-<tr><th scope="row">下一步重點</th><td>預防 first decompensation、病因治療、HCC 監測與適用的門脈高壓處理</td><td>處理事件及再發風險、評估移植與多器官負擔；不只重新計算纖維化</td></tr>
+<tr><th scope="row">已知 chronic liver disease、門脈高壓和 varices</th><td data-label="比較 A：沒有失代償事件">Varices 尚未出血、無 clinically evident ascites／overt HE → 不因 varices 本身改稱 decompensated</td><td data-label="比較 B：已發生失代償事件">發生 variceal bleed 或 portal hypertensive ascites／overt HE → 已跨過 clinical event 門檻</td></tr>
+<tr><th scope="row">下一步重點</th><td data-label="比較 A：沒有失代償事件">預防 first decompensation、病因治療、HCC 監測與適用的門脈高壓處理</td><td data-label="比較 B：已發生失代償事件">處理事件及再發風險、評估移植與多器官負擔；不只重新計算纖維化</td></tr>
 </tbody></table>
 <figcaption>情境為概念對照而非真實病例。Baveno VIII Panel 3 對 first decompensation 有事件定義，並非按 varices 的存在與否單獨分級。</figcaption>
 </figure>
