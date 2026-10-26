@@ -531,6 +531,7 @@
           "source_token": "Figure 1-A1",
           "mode": "illustrated",
           "anchor": "af-ecg-evidence",
+          "minimum_primary_images": 3,
           "caption_token": "Silverman et al., 2018",
           "teaching_role": "Map four real ECG time points to what was observable, what raised likelihood of preexcited AF, what post-cardioversion delta wave adds, and what EP ablation can later confirm.",
           "scope_limit": "Evidence cards are NOT source ECG pixel reproductions. Actual ECG images are opened via original SAGE journal PDF, CC BY 4.0; uncertain diagnosis and retrospective case decisions are not treatment evidence."
