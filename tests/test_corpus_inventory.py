@@ -70,6 +70,26 @@ class CorpusInventoryTest(unittest.TestCase):
         self.assertIsNone(report)
         self.assertTrue(errors)
 
+    def test_private_snapshot_is_preserved_but_not_published(self):
+        snapshot = "archive/xiaoma-reading/intake/2026-07-26-test-source.md"
+        (self.root / snapshot).write_text("# Source snapshot; editorial approval pending",
+                                          encoding="utf8")
+        self.write_ledger("**source_snapshot_archived** → `" + snapshot
+                          + "`；待版本／醫學／出版審查")
+        report, errors = inspect_inventory(self.root)
+        self.assertEqual(errors, [])
+        self.assertEqual(report["intake_source_snapshots"], 1)
+        self.assertEqual(report["intake_imported"], 0)
+        self.assertEqual(report["intake_conversation_only"], 1)
+        self.assertEqual(report["private_source_snapshot_paths"], [snapshot])
+        self.assertEqual(report["imported_published"], 0)
+
+    def test_private_snapshot_missing_file_is_rejected(self):
+        self.write_ledger("**source_snapshot_archived** → `"
+                          + "archive/xiaoma-reading/intake/missing.md`；待審")
+        report, errors = inspect_inventory(self.root)
+        self.assertTrue(any("Missing or escaped source" in err for err in errors))
+
     def test_unknown_status_not_silently_counted(self):
         self.write_ledger("reviewed_by_ai_and_published")
         report, errors = inspect_inventory(self.root)
