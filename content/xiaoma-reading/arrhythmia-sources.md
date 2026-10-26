@@ -33,12 +33,12 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 3. **Figure 2：after 100 J synchronized cardioversion**（原刊 PDF p.2）：sinus ECG 才出現清楚 delta waves，支持 manifest pre-excitation；不能把後驗 ECG 當作轉律前絕對必要的資訊。
 4. **Figure 3：after successful right posteroseptal AP ablation**（原刊 PDF p.3）：delta waves 消失，T-wave memory 表現需結合 EP 檢查解釋，不能單靠 T 波證明已完成消融。
 
-原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870。本站 Figure 02 已透過原始 SAGE 圖檔 URL 直接顯示 Figure 1–3（未裁切）；點圖可放大。期刊 [PDF 第 2 頁](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 亦可對照圖說。遠端圖像的手機瀏覽與跨站存取仍須於發布前驗證。
+原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870。本站 Figure 02 已透過PMC 對應的原始期刊 Figure 1–3 圖檔入口直接顯示（未裁切）；點圖可放大。期刊 [PDF 第 2 頁](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 亦可對照圖說。遠端圖像的手機瀏覽與跨站存取仍須於發布前驗證。
 
 ## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（已列入發布清單；圖片更新待合併）
 
 - **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，均標示 CC BY 4.0；原圖未裁切、未重畫。
-- **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，官方 [Figure 1](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/b2fc7153-320e-4d2b-a28a-0443e25d3345/assets/images/large/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/ad05d429-0d11-4942-8d83-53da56dd71c1/assets/images/large/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/a0dda955-26a2-41fb-bb91-4ae1a19146b6/assets/images/large/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。圖檔在外部 SAGE 主機，並非本站已保存的本地檔，部署及手機實際載入仍待驗證。
+- **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，PubMed Central [Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。2026-10-27 生產環境視覺 QA 已證實原 SAGE CDN 連結破圖，已改用 PubMed Central 原始文章圖檔入口。本站仍未將原件存成本地資產；新的公網渲染與手機判讀 QA 必須在部署後獨立執行，不因 URL 替換即宣稱通過。
 - **Figure 04（WCT 臨床證據）**：使用同一 2018 病例 Figure 1/2，表達處置前與處置後證據落差。不要把前後圖說混成兩個 WCT 診斷實驗。
 - **AHA 2025 成人 tachyarrhythmia 原圖**：仍維持[原始 PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)直接引用，不鏡像、不重製完整流程圖；公開可讀不等於自由授權再利用。
 
@@ -52,3 +52,9 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 - [**Figure 04：WCT 初始 ECG 與轉律後 ECG**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：直接嵌入 Silverman 2018 原圖，強調 irregular WCT 的可觀察操作邊界與後驗 delta wave 的證據時間差；AHA ACLS 官方流程維持原始連結。
 
 **來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，但**尚未完成本次圖片更新的正式公網部署與手機載入驗收**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
+
+## 2026-10-27｜原始 ECG 圖源失效修復與剩餘風險
+
+此前直接使用 SAGE asset CDN 熱連結雖在文章內有 `img` 標籤，正式 Cloudflare 網站於 390px 真實瀏覽器截圖卻顯示破圖而非 ECG，屬於**視覺證據未交付**。現有公開文章改以 PubMed Central 的正式圖檔入口（PMCID [PMC6166305](https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/)）載入 Figure 1–3；對照同病例原始 Figure 1 治療前、Figure 2 電復律後、Figure 3 消融後。這是修復來源交付，不表示案例的治療史可外推為現行指南。
+
+目前方案仍是由公共學術存放庫提供原像素的**外部圖像**，並非本地保存的二進位 ECG。曾被正式記錄為 P0 的本地資產、截圖／naturalWidth 與不同裝置 QA 門檻仍然保留（GitHub Issue #79、PR #78）；若本次實際渲染再度失敗，繼續 HOLD，不可退回文字卡。AHA 成人 tachyarrhythmia 流程圖僅連到 AHA 原始來源，未重製或自行宣稱授權。
