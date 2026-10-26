@@ -1,0 +1,401 @@
+{
+  "schema": 1,
+  "baseline_ref": "main@0d8a9ac89a2279572143b61ef7cc1937857af1f1",
+  "purpose": "All current publicly committed figures at baseline are legacy_unreviewed, not approved; older revision drift was synchronized on 2026-10-27, including already-merged WPW/AF/WCT replacements.",
+  "figures": {
+    "content/xiaoma-reading/integrated/2026-10-21-dcm.md": [
+      {
+        "id": "__unnamed_01",
+        "fingerprint": "321c9cba3a689495",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_02",
+        "fingerprint": "9267a42dc39e019d",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_03",
+        "fingerprint": "43a04fc04ba71fd0",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md": [
+      {
+        "id": "__unnamed_01",
+        "fingerprint": "1ae204c18928dca7",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "hypercapnia-mechanisms",
+        "fingerprint": "074415aa32a84019",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "hypoxemia-workup",
+        "fingerprint": "8a556ecc4de6afbe",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_04",
+        "fingerprint": "faf99f7baf96b7f5",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_05",
+        "fingerprint": "66a19882a6016a64",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "support-modalities",
+        "fingerprint": "33e30d8b64229146",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md": [
+      {
+        "id": "hypernatremia-uosm-branches",
+        "fingerprint": "94f04f528814dcf6",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "metabolic-alkalosis-ucl-branches",
+        "fingerprint": "b216cfd3e6a04a53",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-22-diuretics-visual.md": [
+      {
+        "id": "loop-dose-response",
+        "fingerprint": "b336d88e02363d8e",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "response-pathway",
+        "fingerprint": "f710aa21248d8c72",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md": [
+      {
+        "id": "same-ph-figure",
+        "fingerprint": "0d17fde6c4c98ab7",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "respiratory-compensation-table",
+        "fingerprint": "7eb73743698ba2cb",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md": [
+      {
+        "id": "hf-phenotype-matrix",
+        "fingerprint": "faa15e0e31a1c8ec",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "lv-filling-branches",
+        "fingerprint": "99f1606dbc540bf5",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-24-asthma-variable-airflow.md": [
+      {
+        "id": "asthma-evidence-ladder",
+        "fingerprint": "add7382d912cffd1",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "asthma-deterioration-loop",
+        "fingerprint": "5b2745fa356472af",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-pneumonia-severity.md": [
+      {
+        "id": "pneumonia-case-trajectory",
+        "fingerprint": "53b796a837d86f4b",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "pneumonia-three-decisions",
+        "fingerprint": "18128d65af067827",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-hypoxemia-mechanisms.md": [
+      {
+        "id": "pocket-hypoxemia-original",
+        "fingerprint": "4d0725df0804d993",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "oxygen-locations",
+        "fingerprint": "413a248a4573968a",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "vq-spectrum",
+        "fingerprint": "a87bd84da911ba4b",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "pfo-mixing",
+        "fingerprint": "229000aa1d051ef5",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-hypercapnia-physiology.md": [
+      {
+        "id": "pocket-hypercapnia-original",
+        "fingerprint": "2be59d2e09bf1cba",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "deadspace-example",
+        "fingerprint": "7508825592be67b8",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "ventilatory-chain",
+        "fingerprint": "66e64a08086ef726",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "mg-trajectory",
+        "fingerprint": "6b51a02dfcb12364",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "ohs-trajectory",
+        "fingerprint": "2610ab90510617b4",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-copd-emptying.md": [
+      {
+        "id": "copd-case-ct-2019",
+        "fingerprint": "8e56aa5f37391439",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-definition-boundaries",
+        "fingerprint": "2e10600dda418e38",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-pft-branches",
+        "fingerprint": "11276ede59f621c5",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-volume-change",
+        "fingerprint": "2c7c3c068bda6b28",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-treatment-targets",
+        "fingerprint": "961887f3c9724f36",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-expiratory-time",
+        "fingerprint": "de800631904c7ca8",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-effective-ventilation",
+        "fingerprint": "5964f16b6804d02a",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-acute-decision",
+        "fingerprint": "b1fe283f748423af",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-heat-rhabdo.md": [
+      {
+        "id": "heat-muscle-organ-branches",
+        "fingerprint": "6fbddd6c33d6b5f9",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "rhabdo-kidney-response",
+        "fingerprint": "ff93ffdb72ab4c86",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-cpr-airway.md": [
+      {
+        "id": "cpr-airway-transition",
+        "fingerprint": "0f69d35b975ae4bb",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-appendicitis.md": [
+      {
+        "id": "appendicitis-sensitivity-evidence",
+        "fingerprint": "c688ec796269575d",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-liver-tests.md": [
+      {
+        "id": "liver-independent-axes",
+        "fingerprint": "a3ee78ee45cae043",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-hbv-phase-state-vs-stage.md": [
+      {
+        "id": "fig-hbv-three-questions",
+        "fingerprint": "04d0ec304b403265",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "fig-hbv-seroconversion",
+        "fingerprint": "11331c839ddbbeb8",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "fig-hbv-decision",
+        "fingerprint": "bcd8bcbf23a3fbc0",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-hbv-signals.md": [
+      {
+        "id": "hbv-observation-inference-action",
+        "fingerprint": "16627fc9be6ee3a4",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-wpw-conduction-mechanism.md": [
+      {
+        "id": "wpw-baseline-original",
+        "fingerprint": "61d31042d8c07ca8",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "wpw-pathway-figure",
+        "fingerprint": "ff378e5191c8e94d",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md": [
+      {
+        "id": "af-ecg-evidence",
+        "fingerprint": "0afa4b6be4c79ce7",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "af-two-exits",
+        "fingerprint": "6ef9ff0a1809cc4c",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-wct-acls-decision.md": [
+      {
+        "id": "wct-decision-figure",
+        "fingerprint": "011fc8370cf574d9",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-vte-visual.md": [
+      {
+        "id": "vte-shared-substrate",
+        "fingerprint": "3eb6cfff8e87c64d",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "vte-competing-hypotheses",
+        "fingerprint": "15cd61c2f9c5b6ee",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "vte-diagnostic-stop-rules",
+        "fingerprint": "2f6f61211471d1e8",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-constipation.md": [
+      {
+        "id": "constipation-response-location",
+        "fingerprint": "94f22ebcbff0b8c0",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md": [
+      {
+        "id": "cticu-measurement-layers",
+        "fingerprint": "456e670caf312468",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "cticu-cabg-timeline",
+        "fingerprint": "eb45d931d9eba69b",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ]
+  }
+}
