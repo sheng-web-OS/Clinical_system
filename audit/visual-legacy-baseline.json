@@ -144,6 +144,172 @@
         "kind": "html_css",
         "status": "legacy_unreviewed"
       }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-hypoxemia-mechanisms.md": [
+      {
+        "id": "pocket-hypoxemia-original",
+        "fingerprint": "4d0725df0804d993",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "oxygen-locations",
+        "fingerprint": "413a248a4573968a",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "vq-spectrum",
+        "fingerprint": "a87bd84da911ba4b",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "pfo-mixing",
+        "fingerprint": "229000aa1d051ef5",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-hypercapnia-physiology.md": [
+      {
+        "id": "pocket-hypercapnia-original",
+        "fingerprint": "2be59d2e09bf1cba",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "deadspace-example",
+        "fingerprint": "7508825592be67b8",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "ventilatory-chain",
+        "fingerprint": "66e64a08086ef726",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "mg-trajectory",
+        "fingerprint": "6b51a02dfcb12364",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "ohs-trajectory",
+        "fingerprint": "2610ab90510617b4",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-copd-emptying.md": [
+      {
+        "id": "copd-case-ct-2019",
+        "fingerprint": "8e56aa5f37391439",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-definition-boundaries",
+        "fingerprint": "2e10600dda418e38",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-pft-branches",
+        "fingerprint": "11276ede59f621c5",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-volume-change",
+        "fingerprint": "2c7c3c068bda6b28",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-treatment-targets",
+        "fingerprint": "961887f3c9724f36",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-expiratory-time",
+        "fingerprint": "de800631904c7ca8",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-effective-ventilation",
+        "fingerprint": "5964f16b6804d02a",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "copd-acute-decision",
+        "fingerprint": "b1fe283f748423af",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-heat-rhabdo.md": [
+      {
+        "id": "heat-muscle-organ-branches",
+        "fingerprint": "6fbddd6c33d6b5f9",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "rhabdo-kidney-response",
+        "fingerprint": "ff93ffdb72ab4c86",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-cpr-airway.md": [
+      {
+        "id": "cpr-airway-transition",
+        "fingerprint": "0f69d35b975ae4bb",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-appendicitis.md": [
+      {
+        "id": "appendicitis-sensitivity-evidence",
+        "fingerprint": "c688ec796269575d",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-liver-tests.md": [
+      {
+        "id": "liver-independent-axes",
+        "fingerprint": "a3ee78ee45cae043",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-hbv-phase-state-vs-stage.md": [
+      {
+        "id": "fig-hbv-three-questions",
+        "fingerprint": "04d0ec304b403265",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "fig-hbv-seroconversion",
+        "fingerprint": "11331c839ddbbeb8",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "fig-hbv-decision",
+        "fingerprint": "bcd8bcbf23a3fbc0",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
     ]
   }
 }
