@@ -40,6 +40,22 @@ class SourceFigurePhoneReading(unittest.TestCase):
         self.assertIn("aspect-ratio:250 / 446", css)
         self.assertIn("max-width:none!important", css)
 
+    def test_af_pathway_counterfactual_is_visible_without_scroll_svg(self):
+        af = (ROOT / "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md").read_text(encoding="utf-8")
+        start = af.index('id="af-two-exits"')
+        figure = af[start:af.index("</figure>", start)]
+        self.assertIn('class="af-causal-counterfactual"', figure)
+        self.assertEqual(figure.count("class=\"af-causal-path "), 2)
+        self.assertIn("Decremental conduction", figure)
+        self.assertIn("阻斷 AV node", figure)
+        self.assertIn("圖 3｜示意，不是 ECG。", figure)
+        self.assertNotIn("overflow-x", figure)
+        self.assertNotIn("<svg", figure)
+        css = STYLE.read_text(encoding="utf-8")
+        self.assertIn(".article .af-causal-paths{display:grid", css)
+        self.assertIn("figure hides important content behind horizontal scrolling",
+                      BROWSER_QA.read_text(encoding="utf-8"))
+
     def test_actual_browser_acceptance_is_not_optional_on_pr(self):
         script = BROWSER_QA.read_text(encoding="utf-8")
         workflow = WORKFLOW.read_text(encoding="utf-8")
