@@ -41,29 +41,17 @@
 
 所以 pre-excited AF 的 AP **是傳導入口，不必是維持 AF 的迴路組件**。把它誤認成 antidromic AVRT，會把規則 reentry 的藥物邏輯套進一個不規則、快速的 atrial source。這正是危險起點。
 
-<figure class="diuretic-figure" id="af-two-exits" role="group" aria-label="AF 訊號分別經 AV node 和 AP 抵達心室的原創機轉圖">
-<div class="diuretic-figure-head"><span>FIGURE 03 · WHY NODAL BLOCK CAN HARM</span><strong>心房訊號仍在，阻斷 AV node 並不代表封住所有通往心室的路</strong></div>
-<div role="region" aria-label="AF 雙通道機轉圖，行動版可橫向捲動" tabindex="0" style="max-width:100%;overflow-x:auto">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 270" width="780" height="270" role="img" aria-labelledby="afpath-title afpath-desc">
-<title id="afpath-title">AF 經 AV node 與 accessory pathway 雙路徑順傳</title>
-<desc id="afpath-desc">上方代表大量快速、不規則的心房訊號；左側經 AV node 時部分衝動被篩選；右側若旁路有效不應期短，仍可能大量順傳至心室。阻斷 AV node 不能移除右側旁路。這是機轉示意，不代表所有 AP 都具有高危順傳能力。</desc>
-<rect width="780" height="270" rx="14" fill="#f8fbfa"/>
-<rect x="195" y="22" width="385" height="55" rx="12" fill="#f5e7e1" stroke="#bc693e"/>
-<text x="388" y="44" text-anchor="middle" fill="#793e2a" font-size="18" font-weight="bold">AF：快速、不規則的心房衝動</text>
-<text x="388" y="63" text-anchor="middle" fill="#793e2a" font-size="13">並非一條固定的 AVRT 迴路</text>
-<path d="M300 77 L217 129" stroke="#147b9a" stroke-width="5" fill="none"/><path d="M483 77 L569 129" stroke="#bc693e" stroke-width="5" fill="none"/>
-<rect x="88" y="131" width="260" height="63" rx="10" fill="#e4f1f5" stroke="#147b9a"/>
-<rect x="440" y="131" width="260" height="63" rx="10" fill="#fae9df" stroke="#bc693e"/>
-<text x="218" y="154" fill="#164f68" font-size="18" text-anchor="middle" font-weight="bold">AV node</text>
-<text x="218" y="176" fill="#164f68" font-size="14" text-anchor="middle">decremental／限速</text>
-<text x="570" y="154" fill="#934824" font-size="18" text-anchor="middle" font-weight="bold">Accessory pathway</text>
-<text x="570" y="176" fill="#934824" font-size="14" text-anchor="middle">若順傳很快，風險增加</text>
-<path d="M218 195 L218 223" stroke="#147b9a" stroke-width="3"/><path d="M570 195 L570 223" stroke="#bc693e" stroke-width="5"/>
-<rect x="196" y="224" width="390" height="36" rx="11" fill="#e5efeb" stroke="#75998e"/>
-<text x="390" y="247" text-anchor="middle" font-size="17" font-weight="bold" fill="#264f45">Ventricle：同時承受兩路的傳導結果</text>
-</svg>
+<figure class="diuretic-figure" id="af-two-exits" role="group" aria-label="Pre-excited AF 雙通道路徑與 AV nodal blockade 風險">
+<div class="diuretic-figure-head"><span>FIGURE 03 · TWO ROUTES, DIFFERENT RISKS</span><strong>AV node 被阻斷，並不代表通往心室的路都被阻斷</strong></div>
+<div class="wpw-af">
+<div class="wpw-af-input"><strong>AF：大量快速、無組織的心房衝動</strong><span>不再是 AVRT 的固定 reentry 迴路</span></div>
+<div class="wpw-af-paths">
+<div class="wpw-route wpw-route-normal"><span>路徑 A｜AV node</span><strong>具有 decremental conduction，限制部分心房衝動下傳</strong><p>藥物阻斷這條路，不會消除 AF 來源。</p></div>
+<div class="wpw-route wpw-route-ap"><span>路徑 B｜可順傳的 accessory pathway</span><strong>若有效不應期短，快速心房衝動仍可能抵達心室</strong><p>高危旁路可造成極快、不規則且形態變動的心室激發。</p></div>
 </div>
-<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 有些 AF impulses 經 AV node，有些經 AP，有些產生 fusion；圖中不假設兩條路每次皆能傳導。危險來自具高順傳能力的 AP，並非所有 WPW pattern 均等風險。</figcaption>
+<div class="wpw-af-outcome"><b>臨床邊界：</b>疑似 pre-excited AF 時，不能以常規 AV nodal blockade 當作安全的 rate control；須依病人穩定度及 2023 AF guideline 選擇處置。</div>
+</div>
+<figcaption><strong>圖 3｜機轉示意，不是 ECG，也不是個別病人的電生理量測。</strong> 心室激發可來自正常路徑、AP 或兩者 fusion；不是所有 AP 都具高危順傳能力。此圖只說明「為什麼不能單靠抑制 AV node」；實際 rhythm 判讀請對照同篇的原刊 ECG 來源與 2023 AF guideline。</figcaption>
 </figure>
 
 ## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
