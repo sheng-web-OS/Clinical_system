@@ -509,55 +509,41 @@
  .hbv-signal-link>small{font-size:11px}
 }
 
-/* VTE: one editorially-reviewed decision-resolution figure; question topology, not disease progression. */
-.reading-prose .vte-decision-atlas{margin:2em 0;max-width:100%;min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);color:var(--ink);font-size:16px;line-height:1.55}
-.vte-atlas-head{padding:19px 21px 15px;border-bottom:1px solid var(--line)}
-.vte-atlas-head>span{display:block;font-size:12px;letter-spacing:.045em;font-weight:700;color:var(--brand);margin-bottom:5px}
-.vte-atlas-head>strong{font-size:21px;font-weight:720;line-height:1.4;display:block}
-.vte-atlas-prevent{padding:16px 21px 18px;background:var(--brand-light)}
-.vte-atlas-prevent>small{display:block;font-size:13px;line-height:1.6;color:var(--muted);margin-bottom:10px}
-.vte-atlas-risk{display:flex;align-items:baseline;justify-content:space-between;gap:8px 14px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:12px 15px}
-.vte-atlas-risk strong{font-size:16px}
-.vte-atlas-risk span{font-size:13px;line-height:1.6;color:var(--muted)}
-.vte-atlas-route{display:flex;gap:10px;align-items:center;justify-content:center;font-size:15px;font-weight:650;line-height:1.5;margin-top:11px;text-align:center}
-.vte-atlas-glyph{font-size:22px;line-height:1}
-.vte-atlas-boundary{padding:13px 21px 15px;text-align:center;border-top:2px dashed var(--line);border-bottom:2px dashed var(--line);background:var(--bg)}
-.vte-atlas-boundary strong{display:block;font-size:15px;line-height:1.5}
-.vte-atlas-boundary span{display:block;font-size:12px;color:var(--muted);margin-top:6px;line-height:1.6}
-.vte-atlas-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
-.vte-atlas-branch{min-width:0;padding:18px 20px 20px;display:flex;flex-direction:column;align-items:stretch;gap:0}
-.vte-atlas-branch+section{border-left:1px solid var(--line)}
-.vte-atlas-branch>small{font-size:12px;letter-spacing:.02em;font-weight:700;display:block;margin:0 0 9px;color:var(--brand)}
-.vte-atlas-pe>small{color:var(--accent)}
-.vte-atlas-branch>strong{font-size:16px;line-height:1.5;min-height:48px}
-.vte-atlas-down{text-align:center;font-size:20px;font-weight:600;line-height:1;margin:5px 0;color:var(--muted)}
-.vte-atlas-node{padding:10px 11px;border:1px solid var(--line);border-radius:7px;background:var(--bg);min-height:78px}
-.vte-atlas-node b{display:block;font-size:15px;line-height:1.5}
-.vte-atlas-node span{display:block;font-size:12px;line-height:1.65;margin-top:4px;color:var(--muted)}
-.vte-atlas-terminal{border-left:3px solid var(--brand)}
-.vte-atlas-pe .vte-atlas-terminal{border-left-color:var(--accent)}
-.vte-atlas-inference{border-top:1px solid var(--line);padding:14px 20px;background:var(--brand-light)}
-.vte-atlas-inference strong{display:block;font-size:15px}
-.vte-atlas-inference span{display:block;font-size:13px;line-height:1.7;margin-top:5px}
-.reading-prose .vte-decision-atlas figcaption{font-size:12px;line-height:1.8;padding:14px 20px;border-top:1px solid var(--line);color:var(--muted);margin:0}
+/* VTE: one analytic probability figure with a real numeric axis rather than text-card flow. */
+.reading-prose .vte-bayes-figure{margin:2em 0;max-width:100%;min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);color:var(--ink);font-size:16px;line-height:1.65}
+.vte-bayes-header{padding:22px 24px 19px;border-bottom:1px solid var(--line)}
+.vte-bayes-header>small{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--brand);margin-bottom:7px}
+.vte-bayes-header>strong{display:block;font-size:21px;line-height:1.48;letter-spacing:-.01em}
+.vte-bayes-header>span{display:block;font-size:14px;color:var(--muted);line-height:1.75;margin-top:9px}
+.vte-bayes-body{padding:19px 22px 20px}
+.vte-bayes-math{font-size:15px;text-align:center;font-weight:700;border:1px solid var(--line);border-radius:7px;background:var(--bg);padding:8px 12px;margin-bottom:16px;letter-spacing:.01em}
+.vte-bayes-case{padding:15px 16px;margin:0 0 13px;border:1px solid var(--line);border-radius:8px}
+.vte-bayes-case-heading{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 15px;align-items:baseline;margin-bottom:12px}
+.vte-bayes-case-heading strong{font-size:16px}
+.vte-bayes-case-heading small{font-size:12px;color:var(--muted)}
+.vte-bayes-measure{display:grid;grid-template-columns:60px minmax(0,1fr) 60px;gap:10px;align-items:center;margin-top:10px}
+.vte-bayes-measure>span{font-size:13px;white-space:nowrap}
+.vte-bayes-measure>b{font-size:16px;text-align:right;font-variant-numeric:tabular-nums}
+.vte-bayes-track{height:21px;min-width:0;border:1px solid var(--line);border-radius:4px;position:relative;background:repeating-linear-gradient(90deg,var(--bg),var(--bg) calc(25% - 1px),var(--line) calc(25% - 1px),var(--line) 25%);overflow:hidden}
+.vte-bayes-track i{display:block;height:100%;min-width:2px;background:var(--brand);border-radius:2px}
+.vte-bayes-high .vte-bayes-track i{background:var(--accent)}
+.reading-prose .vte-bayes-reading{font-size:14px;line-height:1.8;border-left:3px solid var(--brand);margin:14px 0 0;padding:11px 14px;background:var(--brand-light)}
+.reading-prose .vte-bayes-figure figcaption{padding:15px 22px 19px;font-size:12px;line-height:1.9;color:var(--muted);border-top:1px solid var(--line);margin:0}
 @media(max-width:640px){
- .reading-prose .vte-decision-atlas{margin:1.6em -5px;border-radius:8px;font-size:15px}
- .vte-atlas-head{padding:15px 13px 13px}
- .vte-atlas-head>strong{font-size:18px}
- .vte-atlas-head>span{font-size:11px}
- .vte-atlas-prevent{padding:13px 12px 14px}
- .vte-atlas-risk{padding:11px 12px;gap:4px}
- .vte-atlas-risk strong{font-size:15px}
- .vte-atlas-risk span{font-size:12px}
- .vte-atlas-route{font-size:13px;gap:6px}
- .vte-atlas-boundary{padding:11px 12px 13px}
- .vte-atlas-boundary strong{font-size:14px}
- .vte-atlas-paths{grid-template-columns:minmax(0,1fr)}
- .vte-atlas-branch{padding:14px 15px 16px}
- .vte-atlas-branch+section{border-left:0;border-top:1px solid var(--line)}
- .vte-atlas-branch>strong{min-height:0;font-size:15px}
- .vte-atlas-down{margin:4px 0}
- .vte-atlas-node{min-height:0;padding:10px 11px}
- .vte-atlas-inference{padding:12px 13px}
- .reading-prose .vte-decision-atlas figcaption{padding:12px 13px;font-size:12px}
+ .reading-prose .vte-bayes-figure{margin:1.7em -5px;border-radius:8px}
+ .vte-bayes-header{padding:15px 14px 13px}
+ .vte-bayes-header>strong{font-size:18px}
+ .vte-bayes-header>span{font-size:13px}
+ .vte-bayes-header>small{font-size:11px}
+ .vte-bayes-body{padding:13px 11px 15px}
+ .vte-bayes-math{font-size:12px;line-height:1.7;margin-bottom:11px;padding:7px 5px}
+ .vte-bayes-case{padding:12px 11px;margin-bottom:10px}
+ .vte-bayes-case-heading strong{font-size:14px}
+ .vte-bayes-case-heading small{font-size:11px}
+ .vte-bayes-measure{grid-template-columns:43px minmax(0,1fr) 52px;gap:5px;margin-top:8px}
+ .vte-bayes-measure>span{font-size:12px}
+ .vte-bayes-measure>b{font-size:14px}
+ .vte-bayes-track{height:19px}
+ .reading-prose .vte-bayes-reading{padding:9px 11px;font-size:13px}
+ .reading-prose .vte-bayes-figure figcaption{padding:12px 13px;font-size:12px}
 }
