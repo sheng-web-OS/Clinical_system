@@ -108,6 +108,41 @@ class FigurePublicationGate(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "LEGACY_CHANGED"):
             load_pages(self.root)
 
+    def test_primary_ecg_evidence_refuses_prose_cards_as_figures(self):
+        self.payload["reviews"][SOURCE]["items"][0]["minimum_primary_images"] = 1
+        self.write_audit()
+        with self.assertRaisesRegex(ValueError, "PRIMARY_IMAGE_MISSING"):
+            load_pages(self.root)
+
+    def test_primary_ecg_evidence_refuses_unverifiable_hotlinked_images(self):
+        self.payload["reviews"][SOURCE]["items"][0]["minimum_primary_images"] = 1
+        self.write_audit()
+        body = BODY.replace(
+            '<svg role="img"><title>模型</title></svg>',
+            '<img data-primary-evidence="true" src="https://example.org/fig1.jpg" alt="Original ECG">'
+        )
+        (self.root / SOURCE).write_text(body, encoding="utf8")
+        with self.assertRaisesRegex(ValueError, "not a local asset"):
+            load_pages(self.root)
+
+    def test_primary_ecg_evidence_requires_real_asset_and_alt_text(self):
+        self.payload["reviews"][SOURCE]["items"][0]["minimum_primary_images"] = 1
+        self.write_audit()
+        body = BODY.replace(
+            '<svg role="img"><title>模型</title></svg>',
+            '<img data-primary-evidence="true" src="original-ecg.jpg" alt="ECG before cardioversion">'
+        )
+        (self.root / SOURCE).write_text(body, encoding="utf8")
+        with self.assertRaisesRegex(ValueError, "asset missing"):
+            load_pages(self.root)
+        target = self.root / "site/source_figure_images"
+        target.mkdir(parents=True)
+        (target / "original-ecg.jpg").write_bytes(b"\\xff\\xd8\\xff" + b"source-image-test-fixture-" * 3)
+        self.assertEqual(load_pages(self.root)[0]["output"], "example.html")
+        (self.root / SOURCE).write_text(body.replace('alt="ECG before cardioversion"', 'alt=""'), encoding="utf8")
+        with self.assertRaisesRegex(ValueError, "lacks src or alt"):
+            load_pages(self.root)
+
     def test_negative_visual_result_requires_evidence_and_reason(self):
         self.payload["reviews"][SOURCE] = {
             "status": "no_relevant_visual", "source_review": EVIDENCE,
