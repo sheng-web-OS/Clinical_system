@@ -47,11 +47,17 @@ ASGE 2021 對 cholangitis 建議優先考慮 endoscopic drainage，並討論一�
 現在回頭讀 Figure 3-3，最重要的不是左右箭頭，而是它提供了三種不同任務：**確認訊號、增加定位證據、判斷行動窗口**。這三個任務不能互相取代。
 
 下一篇 [肝臟被占據，為什麼最突出的卻是 ALP？](2026-10-27-infiltrative-alp-hypothesis.md) 將把最後那個更困難的問題挑出來：影像沒有顯示 obstruction，是否就能直接跳到 infiltration？答案仍是否定的。
-\n\n[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#cholestasis)\n\n---\n\n### 來源與驗收與出版界線
+
+
+[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#cholestasis)
+
+---
+
+### 來源與出版界線
 
 [1] ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries (2017), [official guideline](https://gi.org/guideline/evaluation-of-abnormal-liver-chemistries/).  
 [2] ASGE guideline on the management of cholangitis (2021), [official statement](https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-management-of-cholangitis).  
 [3] *Pocket Medicine*, 9E, Figure 3-3, examined Library PDF pp.137–139; source-file binary fingerprint and printed page not yet cross-verified with repository audit.  
-[4] [原作者快照與 Figure 3-3 醫學稽核](../liver-gi-source-review-20261027.md#cholestasis)（私人來源，不是公開授權的原圖）。
+[4] [原作者快照與 Figure 3-3 醫學稽核](../liver-gi-source-review-20261027.md#cholestasis)（公開的來源核對摘要，不是出版社原圖重製）。
 
-本稿為 **AI-integrated candidate / HOLD**：已自動整合證據，未取得獨立醫學 reviewer 核准、歷史 FB canonical 確認或發布決策；未納入 public allowlist。新圖獨立建立，不包含 Pocket 原書像素。
+本稿為 **AI-integrated candidate / HOLD**：已自動整合證據，未取得獨立醫學 reviewer 核准、獨立發布決策（Facebook canonical 未確認只影響原稿身分，不阻擋獨立 AI 整合稿）；僅在未合併的 Draft PR 分支登錄預覽；main 的公開 allowlist 尚未納入。新圖獨立建立，不包含 Pocket 原書像素。
