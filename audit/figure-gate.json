@@ -595,8 +595,8 @@
       "status": "represented",
       "source_review": "content/xiaoma-reading/vte-sources.md",
       "reviewed_on": "2026-10-27",
-      "review_type": "ai_editorial_structural_review_not_independent_peer_review",
-      "rights_decision": "AHA_and_NICE_source_link_only_JKMS_CC_BY_NC_4_embedding_requires_noncommercial_authorization_check",
+      "review_type": "source_trace_complete_visual_effectiveness_gate_requires_editorial_validation",
+      "rights_decision": "all_third_party_figures_linked_to_original_no_embedded_image",
       "items": [
         {
           "locator": "American Heart Association What Is a Pulmonary Embolism 2026 source figure PDF p1 (IVC-right heart-pulmonary arteries)",
@@ -617,13 +617,13 @@
           "scope_limit": "NICE two-level 不能和 Pocket Medicine 不同 Wells 分層混用；不穩定 PE 的處置需優先緊急評估，而非套用穩定病人例行流程。"
         },
         {
-          "locator": "An et al. Journal of Korean Medical Science 2022;37:e76 Fig. 5 CTPA, CTV and Doppler images",
+          "locator": "An et al. Journal of Korean Medical Science 2022;37:e76 Fig.5 CTPA CTV color-Doppler",
           "source_token": "An et al.",
-          "mode": "illustrated",
-          "anchor": "vte-anatomic-evidence",
-          "caption_token": "Journal of Korean Medical Science",
-          "teaching_role": "圖實際包含同一名患者的 pulmonary arterial filling defect 與 popliteal DVT，移至解剖影像段；清楚對照不同的定位證據。",
-          "scope_limit": "color Doppler 不是 compression ultrasound 的可壓縮性證據；一個同時存在 DVT/PE 的病例不是普遍病程，更不能用此圖決定 D-dimer 陰性停止規則。"
+          "mode": "source_link",
+          "url": "https://www.jkms.org/ViewImage.php?Type=F&afn=63_JKMS_37_10_e76&aid=732221&fn=jkms-37-e76-g005_0063JKMS&id=F5",
+          "why_link_instead": "4-panel radiology graphic loses diagnostic detail on narrow mobile view and external hot-link is not verified; link the complete original figure with copyright context rather than displaying tiny unlabeled or missing images.",
+          "teaching_role": "原始 Fig 5 的 A/B 肺動脈 CTPA 與 C/D 右側膝窩靜脈影像可放大核查，且和文章的解剖定位問題對位。",
+          "scope_limit": "單一病例的共病血栓不能作為病程必然證明；color Doppler 非 compression US；圖片為 CC BY-NC 4.0，僅給原站連結。"
         }
       ]
     },
