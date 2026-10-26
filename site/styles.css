@@ -536,3 +536,33 @@
  .hbv-inference-step{padding:16px 14px}
  .hbv-inference-step>strong,.hbv-contrast-result strong{font-size:15px}
 }
+
+
+/* AHA 2025 tachyarrhythmia: meaningful YES/NO clinical flow rather than three text cards. */
+.reading-prose .acls-core-figure{margin:2.2rem 0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(12px,2.7vw,24px);min-width:0;overflow-wrap:anywhere}
+.acls-core-head>span{display:block;color:var(--muted);font-size:.75rem;letter-spacing:.08em;font-weight:700}
+.acls-core-head>strong{display:block;margin:.35rem 0;font-size:1.15rem;line-height:1.45}
+.reading-prose .acls-core-head>p{margin:.4rem 0 .8rem;font-size:.85rem;line-height:1.6;color:var(--muted)}
+.acls-official-link{display:block;padding:.75rem 1rem;margin:0 0 1.15rem;border:1.5px solid var(--brand);border-radius:8px;text-decoration:none;font-size:.88rem;line-height:1.55;font-weight:700;color:var(--brand);background:var(--brand-light)}
+.acls-official-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.acls-desktop-graph{display:block;width:100%;height:auto;min-width:0;background:#fff;border-radius:7px}
+.acls-mobile-graph{display:none}
+.reading-prose .acls-core-figure figcaption{font-size:.82rem;line-height:1.72;color:var(--muted);border-top:1px solid var(--line);margin-top:1.2rem;padding-top:1rem}
+.acls-mobile-graph{line-height:1.55;font-size:.9rem}
+.acls-mobile-graph strong,.acls-mobile-graph span{display:block}
+.acls-m-step,.acls-m-decision,.acls-m-warning{padding:12px 13px;border-radius:9px;border:1.5px solid #a6bdb5;background:#f4f8f6;color:#223b37}
+.acls-m-entry{border-color:#426f69;background:#edf4f2}
+.acls-m-step strong,.acls-m-decision strong{font-size:1rem;line-height:1.45}
+.acls-m-step span,.acls-m-decision span,.acls-m-warning span{font-size:.87rem;line-height:1.6;margin-top:.35rem}
+.acls-m-decision{background:#fff2e9;border-color:#b97543}
+.acls-m-down{text-align:center;font-size:1.45rem;color:var(--brand);line-height:1.5;font-weight:800}
+.acls-m-branch-label{text-align:center;margin:8px 0 4px;font-weight:800;color:#a34831;font-size:.82rem}
+.acls-m-urgent{background:#fbecea;border-color:#af6654}
+.acls-m-no{margin:17px 0 7px;padding-top:8px;border-top:1px dashed var(--line);color:#31627a}
+.acls-m-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;position:relative;margin-top:8px}
+.acls-m-step small{display:block;font-size:.78rem;letter-spacing:.04em;font-weight:800;margin-bottom:5px;color:#205c70}
+.acls-m-warning{margin-top:15px;background:#fbecea;border-color:#b5634d}
+.acls-m-warning strong{font-size:.95rem}
+@media(max-width:920px){.acls-desktop-graph{display:none}.acls-mobile-graph{display:block}}
+@media(max-width:480px){.reading-prose .acls-core-figure{margin:1.45rem 0;padding:12px}.acls-core-head>strong{font-size:1.04rem}.acls-m-split{grid-template-columns:1fr}.acls-m-split>.acls-m-step:first-child:after{content:"另一條分支 ↓";font-size:.75rem;font-weight:700;color:#31627a;display:block;position:relative;top:16px;padding-bottom:9px}.acls-mobile-graph{font-size:.88rem}}
+
