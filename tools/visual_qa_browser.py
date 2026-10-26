@@ -80,6 +80,23 @@ def inspect(page, figure_id, result_dir, slug, width):
             problems.append("image failed to load: " + info["src"][:180])
         elif info["displayWidth"] < 180 and figure_id == "wpw-pathway-figure":
             problems.append("too-small source image on current viewport")
+    # A figure with an off-screen SVG inside a horizontal scroll region is
+    # not "responsive" just because the document itself fits the viewport.
+    hidden_panels = figure.evaluate("""root => [...root.querySelectorAll('*')]
+        .filter(el => {
+            const style = getComputedStyle(el);
+            return ['auto', 'scroll'].includes(style.overflowX)
+              && el.scrollWidth > el.clientWidth + 3;
+        }).length""")
+    if hidden_panels:
+        problems.append("figure hides important content behind horizontal scrolling")
+    if figure_id == "af-two-exits":
+        if figure.locator("svg[width]").count():
+            problems.append("AF causal figure reverted to fixed-width SVG")
+        if figure.locator(".af-causal-path").count() != 2:
+            problems.append("missing the two competing conduction pathways")
+        if figure.locator(".af-causal-counterfactual").count() != 1:
+            problems.append("missing counterfactual AV-node blockade consequence")
     if figure_id == "wpw-pathway-figure" and width <= 650:
         focus = figure.locator(".wpw-mobile-focus .wpw-focus-case")
         if focus.count() != 3 or not all(case.is_visible() for case in focus.all()):
