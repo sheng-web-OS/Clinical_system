@@ -9,15 +9,13 @@ HYPOX = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md
 COPD = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-26-copd-emptying.md"
 
 class PreviouslyUntrackedVisuals(unittest.TestCase):
-    def test_dcm_figures_have_stable_unique_ids(self):
+    def test_dcm_legacy_figures_are_not_misrepresented_as_approved(self):
+        # Original file is protected by figure_gate's frozen blob fingerprint.
+        # QA discovery assigns synthetic names to its three legacy figures.
+        # Never edit the source just to silence the visual inventory.
         text = DCM.read_text("utf-8")
-        figures = re.findall(r"<figure\b[^>]*>", text)
-        ids = re.findall(r'<figure\b[^>]*\bid="([^"]+)"', text)
-        self.assertEqual(len(figures), len(ids))
-        self.assertEqual(len(ids), len(set(ids)))
-        for fid in ("dcm-literature-pv-loop", "dcm-literature-functional-mr",
-                    "dcm-literature-ischemic-cmr"):
-            self.assertIn(fid, ids)
+        self.assertEqual(len(re.findall(r"<figure\b[^>]*>", text)), 3)
+        self.assertNotIn("dcm-literature-pv-loop", text)
 
     def test_hypoxemia_figures_are_identifiable_not_declared_approved(self):
         text = HYPOX.read_text("utf-8")
