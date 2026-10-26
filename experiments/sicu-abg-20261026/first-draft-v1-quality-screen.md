@@ -19,6 +19,10 @@ QA type: **non-blinded AI editor screening** following first draft; NOT independ
 
 Medical hard gate: no *identified* definite P0/P1 in this non-blinded reading; **NOT VERIFIED** by independent physician. No physician review; no independent clinical case study reader; no source-wide figure QA. A high self-score would never override medical uncertainty.
 
+## Primary-source figure discrepancy discovered during source QA
+
+The paper's **Table 1** lists Pre / CPB / Post / T0 / T1 / T2 / T3 / T4 / T5, with captions explaining through T5 only; its **Figure 1** visually labels a further **T6** point on the x-axis although no T6 row/time definition appears in Table 1. This is a **source-internal inconsistency / unresolved Figure-vs-Table identity issue**. V1 correctly reproduces only the visually verified Table 1 T0–T5 values; it does not use, interpret, or invent Figure 1's T6. Before publication, add an adjacent source note if showing the source figure and do not silently interpolate that unaccounted time point.
+
 ## Most important first-draft misses to preserve as feedback
 
 1. **Central topic is ABG but primary case report lacks complete pH/PaCO₂/PaO₂/ABG time series.** Correctly disclosed missingness, but this limits what the first paper can teach; supplement with a second verified post-cardiac case with complete ABG or narrow the section title to ‘lactate + venous saturation + BE’ and use ABG as a transition. Do NOT fill the CABG case's missing values from another paper.
