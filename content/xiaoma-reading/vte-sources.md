@@ -49,3 +49,9 @@ GitHub Actions run 40367245047 提供 PR 建置成品 `clinical-system-static-si
 **專業裁決**：這張圖在 360/390px 作為網站 inline 教學圖 **FAIL**，退件，改連可放大的 [JKMS 原始 Fig.5](https://www.jkms.org/ViewImage.php?Type=F&afn=63_JKMS_37_10_e76&aid=732221&fn=jkms-37-e76-g005_0063JKMS&id=F5)。AHA（p1）和 NICE（p1/2）原始圖也採原始連結；NICE 官網對此測試來源回 403，故補充 [Thrombosis UK 保存的原版 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。不再讓站內圖片的外連穩定性和授權條件影響文章閱讀。
 
 這只驗收了 HTML 版面、內容對位、遠端圖片在**測試環境**失敗的退件；不是正式站 Cloudflare HTTPS 的圖像載入驗收，也不是獨立醫師同儕審查。
+
+## 2026-10-27 發布前恢復的唯一原創視覺：判斷問題分流圖
+
+`vte-decision-resolution` 是自行編輯的 **clinical question topology**（並非病程、解剖或完整處方算法）。上半區只問無定位症狀時 VTE prophylaxis 與 bleeding-risk balance；中間分界是**問題層級切換**，不是「後來一定有症狀」的時間或病因箭頭；下半區把新出現的腿部症狀與心肺症狀分別連到 DVT-specific／PE-specific Wells 及不同的成像目標。各路徑可同時被啟動，不畫成 DVT→PE 必然先後；共享的 D-dimer 僅於適當前測機率下協助排除，不提供解剖定位。圖的角色是**顯示不能沿用相同診斷問題的解析度**，不是重排 Wells 計分表，也沒有偷畫陽性/陰性的停止節點。完整 decision nodes 必須回查 [NICE NG158 原流程](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 或其 [clinical recommendations](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
+
+此圖的**可反駁編輯測試**：刪除它後，病理資訊仍可由文字得到，但讀者將不能在同一畫面直接比較「共同的風險介入層級」與「症狀出現後兩個解剖假說」，因此保留作為唯一原創視覺；若手機實際渲染後擁擠，應退件而非加長 caption 說服自己。舊三張卡片圖仍維持 FAIL，不能回退。
