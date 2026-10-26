@@ -615,35 +615,17 @@
       "status": "represented",
       "source_review": "content/xiaoma-reading/vte-sources.md",
       "reviewed_on": "2026-10-27",
-      "review_type": "AI_editorial_quantitative_visual_review_prelayout_QA_not_independent_physician_peer_review",
-      "rights_decision": "original_question-topology_figure_generated_from_medical_references; third_party_figures_are_source_links_only",
+      "review_type": "link_accessibility_and_medical_content_editorial_review",
+      "rights_decision": "Bayesian graph original and locally rendered; only a verified hosted copy of source NICE decision flow is externally linked; AHA JKMS figures without dependable image access unlinked",
       "items": [
         {
-          "locator": "American Heart Association What Is a Pulmonary Embolism 2026 source figure PDF p1 (IVC-right heart-pulmonary arteries)",
-          "source_token": "American Heart Association",
-          "mode": "source_link",
-          "url": "https://www.heart.org/-/media/Files/Health-Topics/Pulmonary-Embolism/What-is-a-PE.pdf",
-          "why_link_instead": "此版原圖確實顯示完整靜脈回流、右心及肺循環，但著作權保留，公網不重製；移除只能顯示下肢 DVT 的不對題畫面。",
-          "teaching_role": "在不假裝所有 DVT 都會 embolize 的前提下，連結實際血栓來源與肺動脈阻塞之間的解剖途徑。",
-          "scope_limit": "AHA 是公共衛教圖，不表示每位 PE 都源自可見的下肢血栓或血栓發生率；不能直接用來做治療劑量選擇。"
-        },
-        {
-          "locator": "NICE NG158 2023 updated visual summary (2-level DVT and PE Wells algorithms)",
+          "locator": "NICE NG158 original 2023 DVT/PE visual summary, preserved at Thrombosis UK (p1 DVT / p2 PE)",
           "source_token": "NICE NG158",
           "mode": "source_link",
-          "url": "https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893",
-          "why_link_instead": "NICE 官方原始流程同時保留兩套 Wells、結果對應後續 D-dimer/影像及停止分支；本圖改連至官方完整決策圖，不以沒有分支的自編比較框代替。",
+          "url": "https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf",
+          "why_link_instead": "Original NICE PDF direct address returned 403 in some access environments. This copy was opened and cross-checked at Thrombosis UK; use it only when it remains accessible.",
           "teaching_role": "確認 DVT 與 PE 的診斷假說、pretest probability、陰性停止條件不能共用；與原文限制直接對照。",
           "scope_limit": "NICE two-level 不能和 Pocket Medicine 不同 Wells 分層混用；不穩定 PE 的處置需優先緊急評估，而非套用穩定病人例行流程。"
-        },
-        {
-          "locator": "An et al. Journal of Korean Medical Science 2022;37:e76 Fig.5 CTPA CTV color-Doppler",
-          "source_token": "An et al.",
-          "mode": "source_link",
-          "url": "https://www.jkms.org/ViewImage.php?Type=F&afn=63_JKMS_37_10_e76&aid=732221&fn=jkms-37-e76-g005_0063JKMS&id=F5",
-          "why_link_instead": "4-panel radiology graphic loses diagnostic detail on narrow mobile view and external hot-link is not verified; link the complete original figure with copyright context rather than displaying tiny unlabeled or missing images.",
-          "teaching_role": "原始 Fig 5 的 A/B 肺動脈 CTPA 與 C/D 右側膝窩靜脈影像可放大核查，且和文章的解剖定位問題對位。",
-          "scope_limit": "單一病例的共病血栓不能作為病程必然證明；color Doppler 非 compression US；圖片為 CC BY-NC 4.0，僅給原站連結。"
         },
         {
           "locator": "NICE NG158 recommendations 2023 DVT and PE 2-level pretest probability and D-dimer exclusion conditions; Bayes odds theorem demonstration",
