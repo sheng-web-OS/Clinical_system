@@ -902,5 +902,38 @@
     "layout": "reader",
     "section": "原始來源",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-chronic-cough.md",
+    "output": "xiaoma-exam108-q46-chronic-cough.html",
+    "title": "慢性乾咳三個月，為什麼第一個高價值問題是問藥？",
+    "subtitle": "108（一）醫學（三）Q46：ACEI、咳嗽反射、ERS 初評與四個選項的決策優先序",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症・官方真題",
+    "references": "xiaoma-exam108-q46-chronic-cough-sources.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam": {
+      "year_roc": 108,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        46
+      ]
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exam108-q46-chronic-cough-sources.md",
+    "output": "xiaoma-exam108-q46-chronic-cough-sources.html",
+    "title": "108（一）Q46：慢性咳嗽與 ACEI 原始證據",
+    "subtitle": "Pocket 9E 原書定位、ERS 2020 Figure 1、試題與選項核對",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
