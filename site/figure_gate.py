@@ -154,19 +154,19 @@ def validate_figure_gate(root: Path, pages: list) -> None:
                 if type(min_images) is not int or not 0 <= min_images <= 12:
                     raise ValueError("Figure audit invalid minimum_primary_images: " + source)
                 if min_images:
-                    images = re.findall(r"<img\\b[^>]*>", match.group(1), re.I | re.S)
+                    images = re.findall(r"<img\b[^>]*>", match.group(1), re.I | re.S)
                     primary = []
                     for img in images:
-                        if not re.search(r'data-primary-evidence=["\\x27]true["\\x27]', img, re.I):
+                        if not re.search(r'data-primary-evidence=["\x27]true["\x27]', img, re.I):
                             continue
-                        src_match = re.search(r'\\bsrc=["\\x27]([^"\\x27]+)["\\x27]', img, re.I)
-                        alt_match = re.search(r'\\balt=["\\x27]([^"\\x27]+)["\\x27]', img, re.I)
+                        src_match = re.search(r'\bsrc=["\x27]([^"\x27]+)["\x27]', img, re.I)
+                        alt_match = re.search(r'\balt=["\x27]([^"\x27]+)["\x27]', img, re.I)
                         if not src_match or not alt_match or not alt_match.group(1).strip():
                             raise ValueError("Figure audit primary ECG image lacks src or alt: " + source)
                         src = src_match.group(1)
                         # Only explicit, repo-held reader images qualify as verified
                         # primary assets. Remote hotlinks may break or deny access.
-                        if not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9._-]*\\.(png|jpg|jpeg|webp)", src, re.I):
+                        if not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9._-]*\.(png|jpg|jpeg|webp)", src, re.I):
                             raise ValueError("Figure audit primary ECG image is not a local asset: " + source)
                         asset = root / "site" / "source_figure_images" / src
                         if not asset.is_file() or asset.stat().st_size < 32:
