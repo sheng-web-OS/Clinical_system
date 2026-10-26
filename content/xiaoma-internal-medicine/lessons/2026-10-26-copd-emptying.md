@@ -4,12 +4,7 @@
 
 若氣喘來自「肺功能不夠」，讓一部分肺萎縮，理應更糟。醫師卻決定在右下葉支氣管放入單向瓣膜，讓這個肺葉逐漸縮小。**一個月後，她的肺總量減少，第一秒呼出的氣量反而幾乎翻倍。**<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/">Marchand 等人 2019 年的完整病例、Figure 1 與 Table 1</a>記載了這段病程。這不是 COPD 的一般處置，而是一個適合反過來檢驗「肺功能數值究竟測到了什麼」的病例。
 
-<figure class="case-source-figure" id="copd-case-ct-2019">
-<a href="https://www.mdpi.com/1648-9144/55/3/65#fig_body_display_medicina-55-00065-f001" target="_blank" rel="noopener">
-<img src="https://www.mdpi.com/medicina/medicina-55-00065/article_deploy/html/images/medicina-55-00065-g001.png" style="width:100%;height:auto;max-width:720px;display:block;margin:auto" loading="lazy" alt="Marchand 2019 病例 CT 前後對照四格圖：治療前右下葉嚴重過度充氣、右中葉塌陷與橫膈變平；治療後右下葉部分縮小、鄰近肺葉重新展開。"/>
-</a>
-<figcaption><strong>原病例 Figure 1（不是示意繪圖）。</strong>A／C 是支氣管瓣膜前；B／D 是一個月後。觀察右下葉體積、鄰近肺葉及橫膈位置如何一起改變。圖片：Marchand E, d’Odemont J-P, Dupont MV, <em>Medicina</em> 2019;55:65，<a href="https://doi.org/10.3390/medicina55030065">DOI</a>，依 CC BY 4.0 授權引用；圖像未修改。若外部圖片載入失敗，點來源連結查看原圖。</figcaption>
-</figure>
+**原病例影像定位（Figure 1）**：Marchand、d’Odemont 與 Dupont（*Medicina*, 2019）呈現治療前 A／C 與一個月後 B／D 的胸部 CT。比較重點是右下葉過度充氣與後續部分塌陷、鄰近肺葉重新擴張及右橫膈位置改變。請在 [原始開放取用病例與 Figure 1（PubMed Central）](https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/) 對照影像及完整圖說；亦可由 [原論文 DOI](https://doi.org/10.3390/medicina55030065) 定位出版版本。**本站暫不內嵌此圖**：既有 MDPI 圖檔網址在實際手機與桌面瀏覽器測試中均載入失敗，尚未取得可驗證的穩定替代圖檔。此處不以原創 CT 假圖或無關圖卡代替原始病例證據。
 
 全文只處理一條主線：**呼氣排空受限 → 過度充氣與呼吸負荷 → 症狀和治療目標分離 → 急性惡化時的通氣失敗**。四張小麻原表／流程依此順序帶讀（原書截圖因權利未確認不放於公開頁）；診斷和穩定期決策屬同一個疾病，但不是同一個量尺。
 
