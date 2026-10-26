@@ -23,10 +23,10 @@
 <figure class="diuretic-figure" id="af-ecg-evidence" role="group" aria-label="Silverman 2018 真實病例原圖的循序導讀">
 <div class="diuretic-figure-head"><span>FIGURE 02 · REAL CASE / ECG EVIDENCE</span><strong>同一位病人的四個 ECG 時點，分別提供什麼資訊？</strong></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px">
-<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 1-A1｜救護車節律條</strong><p>很快、RR 不規則，QRS 寬度變動；先排除「單看寬 QRS 就是 VT」的直覺。</p><small>直接觀察：可達 300/min；某些 QRS upstroke 鈍化。</small></div>
-<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 1-A2｜急診十二導程</strong><p>同時有寬與相對窄的 QRS；旁路順傳與正常傳導／fusion 成為有力假說。</p><small>仍不能：由此推算出 AP 的解剖位置。</small></div>
-<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 2｜同步電復律之後</strong><p>Sinus ECG 才顯示明顯 delta wave，支持 manifest ventricular pre-excitation。</p><small>此時是後驗支持，不能當成急救時必先看到的線索。</small></div>
-<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 3｜次日 AP 消融之後</strong><p>Delta wave 消失；電生理定位及消融回應補上機轉證據。</p><small>T-wave memory 不能單獨替代消融成功的完整判定。</small></div>
+<div style="background:#f4f8f7;color:#203938;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 1-A1｜救護車節律條</strong><p>很快、RR 不規則，QRS 寬度變動；先排除「單看寬 QRS 就是 VT」的直覺。</p><small>直接觀察：可達 300/min；某些 QRS upstroke 鈍化。</small></div>
+<div style="background:#f4f8f7;color:#203938;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 1-A2｜急診十二導程</strong><p>同時有寬與相對窄的 QRS；旁路順傳與正常傳導／fusion 成為有力假說。</p><small>仍不能：由此推算出 AP 的解剖位置。</small></div>
+<div style="background:#f4f8f7;color:#203938;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 2｜同步電復律之後</strong><p>Sinus ECG 才顯示明顯 delta wave，支持 manifest ventricular pre-excitation。</p><small>此時是後驗支持，不能當成急救時必先看到的線索。</small></div>
+<div style="background:#f4f8f7;color:#203938;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 3｜次日 AP 消融之後</strong><p>Delta wave 消失；電生理定位及消融回應補上機轉證據。</p><small>T-wave memory 不能單獨替代消融成功的完整判定。</small></div>
 </div>
 <figcaption><strong>圖 2｜這是對真實病例原始四幅 ECG 的證據角色導讀，不是虛構 ECG 或原圖的重畫。</strong> 依 Silverman et al., 2018, *J Investig Med High Impact Case Rep*, [原始公開全文及 Figure 1–3](https://journals.sagepub.com/doi/10.1177/2324709618802870)、[原文 PDF 第 2–3 頁可放大閱讀 ECG](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870)。原論文為 CC BY 4.0；此版沒有裁切／重新嵌入原像素，閱讀原始 ECG 請循來源連結。</figcaption>
 </figure>
