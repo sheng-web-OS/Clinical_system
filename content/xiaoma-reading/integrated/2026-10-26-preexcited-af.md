@@ -108,7 +108,7 @@
 </g>
 </svg>
 </div>
-<figcaption><strong>圖 3｜危險不在「有 AP」，而在 AP 能否快速順傳。</strong> 上：AF 可經 AV node 或具前向傳導能力的 AP 到達心室，出現不同程度的 fusion；下：AV nodal blockade 不會同時封住 AP。若 AP 具有高順傳能力，可能出現極短 RR，增加 VF 風險。<strong>非所有 AP 都具高危性。</strong> 此圖為條件式機轉示意，非實測 ECG；圖中脈衝數量不代表真實比率，也不能替代個案 ECG 判讀與急救流程。</figcaption>
+<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 危險不在「有 AP」，而在 AP 能否快速順傳。 上：AF 可經 AV node 或具前向傳導能力的 AP 到達心室，出現不同程度的 fusion；下：AV nodal blockade 不會同時封住 AP。若 AP 具有高順傳能力，可能出現極短 RR，增加 VF 風險。<strong>非所有 AP 都具高危性。</strong> 此圖為條件式機轉示意，非實測 ECG；圖中脈衝數量不代表真實比率，也不能替代個案 ECG 判讀與急救流程。</figcaption>
 </figure>
 
 ## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
