@@ -95,3 +95,20 @@ GitHub Actions run 40367245047 提供 PR 建置成品 `clinical-system-static-si
 - D-dimer 可用 FEU／DDU 等不同報告方式；讀圖不能把原書的 500 ng/mL 一律套到每種化驗報告或演算法。這是來源與 assay 的解讀界線，不是新訂固定 cutoff。
 
 **發布前品質判斷**：與原版相比，補的是「哪張原圖在哪個決策節點改變下一步」而不是增加圖量。真正影響判斷的三件事是病人情境導向 prophylaxis、不同 Wells 版本不可混用、陰性影像何時需要補檢；其他內容可由外部正式原圖核讀，不另建冗長副章或新增一套圖集。
+
+
+## 2026-10-27 重新建立站內診斷圖：這次不再把外部連結當完成
+
+2026-10-27 用戶退回先前「刪掉錯圖只剩連結」的解法：即使避免版權與 broken links，也沒有替讀者完成站內視覺教學。此次新增一組**真正的內嵌原創向量分支圖** `vte-native-diagnostic-pathways`，圖內 SVG 與手機專用 HTML 都直接編在網站文章裡，不需要開任何外部圖片才能閱讀。早期被拒收的三張方框插圖、兩張網站外鏈示意與生成式三海報，均**沒有回復**。
+
+對應醫學事實與來源（NICE NG158 2023 [完整原始 DVT／PE 決策圖](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)，第 1、2 頁）：
+
+- **DVT：NICE 兩層 Wells likely ≥2** → proximal CUS → positive 可確診 DVT；若 CUS negative，使用/補做 quantitative D-dimer；**negative D-dimer** 可依路徑不再追查並考慮替代診斷；**positive D-dimer** 則在 6–8 天後再做 proximal CUS。重複 CUS 陽性與陰性的停止／確診條件在圖中都有交代。這是特定 NICE 路徑；interim anticoagulation、COVID-19 等停藥例外須依原條文核對。
+- **DVT unlikely ≤1**：以 D-dimer 起始；若陽性進入 proximal CUS，並不是把書中 DVT 三層 low/moderate/high 版本改標成 NICE 的兩層。
+- **PE：NICE 兩層 Wells likely >4** → CTPA（適用時可選 V/Q）；陽性確診；陰性須放回足夠的影像品質與相應的疾病機率檢視，若仍懷疑 DVT，可考慮 proximal leg vein ultrasound。若影像品質不足或高度不一致，須重新評估，不能視為一律已完成排除。因新圖是教學性整理，圖說保留其推論邊界，**不是把 NICE 單一原始圖完整重製**。
+- **PE unlikely ≤4**：依可接受的臨床情境先用 D-dimer，適用路徑下陰性可排除，陽性應影像檢查。**血流動力學不穩定的疑似 PE** 不走相同的例行檢查路徑。
+- 官方 NICE 的 [full written recommendations](https://www.ncbi.nlm.nih.gov/books/NBK556698/) 亦可交叉核對；本文最短出處仍是同一份 [NICE 2023 流程原 PDF 的可用保存版本](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。醫學圖像不複製 NICE 原圖像素或授權不明的 Pocket Medicine 頁面。
+
+事前否決準則：兩圖必須真的顯示陽性／陰性**不同箭頭**、產生不同可操作下一步，且要明顯分辨 DVT ultrasound 與 PE pulmonary imaging；手機版不可因等比例縮小而失去分支字體；即使原始 PDF 失效，這些判斷也必須留在 Clinical OS 文章內。Bayesian 圖 `vte-d-dimer-bayes` 繼續承擔陰性 likelihood ratio 的數量關係，不再添加相同文字的裝飾圖。
+
+已知邊界：本審查是 AI 基於 NICE 原始路徑所做的醫學結構判定與視覺檢查；不聲稱接受獨立醫師同儕審查，不提供病人個別處方。

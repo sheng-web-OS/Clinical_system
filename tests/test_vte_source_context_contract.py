@@ -28,12 +28,13 @@ class VTESourceContext(unittest.TestCase):
     def test_source_recovery_remains_selective(self):
         article = ARTICLE.read_text(encoding="utf-8")
         sources = SOURCES.read_text(encoding="utf-8")
-        self.assertEqual(article.count("<figure"), 1)
+        self.assertEqual(article.count("<figure"), 2)
         self.assertIn('id="vte-d-dimer-bayes"', article)
         self.assertIn("NICE NG158 DVT／PE 診斷流程 PDF", article)
         self.assertIn("Thrombosis UK", article)
         self.assertIn("三張小麻原圖的選擇性脈絡回收", sources)
         self.assertIn("沒有把三張原書截圖整頁貼到正式站", sources)
+        self.assertIn('id="vte-native-diagnostic-pathways"', article)
 
 
 if __name__ == "__main__":
