@@ -62,12 +62,24 @@ ASH 2026 的 AL amyloidosis 診斷指引強調：若臨床確實懷疑 AL，seru
 2020 年 Doe-Williams 等人的**真實病例**提供了一個極具反證力的觀察：50 歲男性因肝腫大、右上腹脹滿及體重減輕接受評估，另有 nephrotic-range proteinuria。肝切片中約 **95% 的受檢組織**有 AL amyloid 沉積（**不是量得整個肝臟的 95%**）；同次血液檢驗卻是 **ALP 85 IU/L、ALT 14 IU/L、AST 24 IU/L、total bilirubin 0.57 mg/dL**，沒有對應的明顯肝臟生化異常。Urine immunofixation 偵測到 monoclonal free lambda light chain，serum immunofixation 當時未偵測到 monoclonal protein，最後由組織染色與 typing 支持診斷。[3]
 
 <figure id="fig-alp-amyloid-real-case" class="reasoning-figure">
-<div class="reasoning-title">真實病例圖｜肝切片浸潤很廣，為何 ALP 仍可能正常？</div>
-<div class="reasoning-cards">
-<section><strong>組織層：切片約 95%</strong><p>amyloid 佔據的是這份 liver biopsy specimen 的範圍；它不是整顆肝臟的直接體積量測。</p></section>
-<section><strong>血液層：ALP 85 IU/L</strong><p>同期 ALT 14、AST 24、bilirubin 0.57；當次化學訊號沒有按切片浸潤面積成比例上升。</p></section>
+<div class="reasoning-title">真實病例圖｜同一個病人，兩種無法互相換算的量測</div>
+<div class="alp-case-compare" role="group" aria-label="2020 年 AL amyloidosis 個案，肝切片受檢組織約百分之九十五被沉積物佔據，血液 ALP 卻為 85 IU/L">
+<section class="alp-case-sample">
+<small>組織病理 · Liver biopsy specimen</small>
+<strong>95% <span>切片受累</span></strong>
+<div class="alp-case-sample-meter" role="img" aria-label="這份受檢肝切片約 95% 組織被 amyloid 沉積物佔據，非全肝百分比"><span style="width:95%"></span></div>
+<p>切片內組織分布的病理觀察；<em>不是</em>整顆肝臟的體積量測。</p>
+</section>
+<div class="alp-case-distinct" aria-hidden="true">≠</div>
+<section class="alp-case-blood">
+<small>血液生化 · Same patient</small>
+<strong>85 <span>IU/L</span></strong>
+<div class="alp-case-clinical-label">ALP：該篇病例報告為正常</div>
+<p>同期 ALT 14、AST 24 U/L，total bilirubin 0.57 mg/dL。</p>
+</section>
 </div>
-<figcaption>據 Doe-Williams et al., <em>Case Reports in Gastroenterology</em> 2020;14:271–278（PMID 32518538）的真實病例數據重新整理，非原文影像複製。此為單一反例，不能用來估計 ALP 對 amyloidosis 的敏感度，也不能推定其他浸潤性疾病均有正常 ALP。<a href="../liver-gi-source-review-20261027.md#infiltrative">來源與限制</a>。</figcaption>
+<p><strong>反例的作用：</strong>切片大量沉積 ≠ ALP 必按比例升高；此例不能拿來推估 ALP 敏感度或肝臟整體受累百分比。</p>
+<figcaption>據 Doe-Williams et al., <em>Case Reports in Gastroenterology</em> 2020;14:271–278（PMID 32518538）原始個案數據獨立製圖；非原文圖像重製。ALP 正常的判讀依原病例報告，沒有假設通用參考值上限。<a href="../liver-gi-source-review-20261027.md#infiltrative">來源與限制</a>。</figcaption>
 </figure>
 
 這個反例反駁的是「ALP 數值能線性反映浸潤負荷」，而不是「ALP 對 infiltrative disease 毫無意義」。組織病變可以造成生化變化；但受檢的組織面積、膽汁流動受影響程度、採血時間與合併病因並不等價。
