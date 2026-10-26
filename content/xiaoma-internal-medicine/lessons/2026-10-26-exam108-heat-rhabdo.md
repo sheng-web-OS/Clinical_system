@@ -38,6 +38,16 @@ AST 110、ALT 123 表示細胞損傷的訊號，卻無法單憑 AST/ALT 就指�
 
 **Cr 從 2.2 到 2.8** 說明腎功能正在惡化，即使尿量尚未明顯下降，也可能是 nonoliguric AKI；尿量沒有減少不能抹去肌酸酐變化。K 5.0 目前是需要連續追蹤的危險趨勢，而不是已符合立即透析的單一閾值。細胞內鉀外流與腎臟排鉀能力下降可能合併，惡化後產生致命心律不整；應評估 ECG、重複電解質、酸鹼與腎功能。鈣下降可能來自受損肌肉的鈣移轉及磷負荷，早期若無症狀不必只為「回到正常值」反射性補鈣，因恢復期可能反轉為高血鈣。雙腿腫脹若疼痛不成比例、被動牽拉劇痛或神經血管異常，須及時評估 **compartment syndrome**；脈搏仍在不能單獨排除。
 
+<figure class="diuretic-figure" id="rhabdo-kidney-response">
+<div class="diuretic-figure-head"><span>FIGURE 02 · RESPONSE NOT INPUT</span><strong>腎臟保護：治療看的是輸出與風險，不是每天灌入幾公升</strong></div>
+<div class="diuretic-steps">
+<div class="diuretic-step"><span>1</span><div><strong>先辨認腎臟是否受到色素性損傷</strong><p>CK、尿液 heme 與沉渣、creatinine、鉀／磷／鈣的趨勢共同判斷</p></div></div>
+<div class="diuretic-step"><span>2</span><div><strong>補液依灌流、尿量及體液耐受度逐次調整</strong><p>不是固定日量；嚴格監測，尿量目標需要體重與容量風險修正</p></div></div>
+<div class="diuretic-step"><span>3</span><div><strong>若持續無尿、過負荷或難治性危急電解質問題</strong><p>停止盲目增加補液，重新評估腎替代治療的實際適應症</p></div></div>
+</div>
+<figcaption>以 Pocket Medicine 9E reader PDF p175–176「Etiologies and Diagnosis of Acute Kidney Injury」原表及 2022 AAST rhabdomyolysis 共識對讀的**新繪臨床分流**；不重製 Pocket 原表，也不代表特定輸液速率處方。</figcaption>
+</figure>
+
 ## 為什麼正解是「尿量」，不是每天固定幾公升？
 
 第 63 題 **A：維持尿量每小時 200–300 mL** 是當年四選一的正解。其要回答的問題，是使用可觀察的生理反應調整復甦，而不是替所有病人開出固定輸液處方。適當靜脈輸液改善循環灌流、增加腎小管流量，嘗試減少 pigment 相關腎傷害；然而液體如果輸入後沒有排出，反而可能造成肺水腫與組織鬱血。
