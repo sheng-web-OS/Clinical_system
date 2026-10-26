@@ -73,7 +73,7 @@ Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性�
 
 ## 同樣是要電擊，為什麼不能一律 synchronized？
 
-這是原稿需要加入 2025 指引後，最重要的安全限定。先開啟 [**2025 AHA 成人有脈搏心搏過速官方流程原圖**](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)，注意它適用於 **with a pulse**；再依下文區分 rhythm 是否造成不穩定、是否可同步，以及 polymorphic VT 這個不能照同一套同步電復律處理的例外。原圖由 AHA 官方提供，不在本站未經授權重製。
+這是原稿需要加入 2025 指引後，最重要的安全限定。**先看上方本站決策圖的第 01–03 個分叉**：有脈搏不等於所有寬 QRS 都可以 synchronized；真正的 sustained polymorphic VT 必須 immediate unsynchronized shock，而 pre-excited AF 因心律不穩定時則採 synchronized cardioversion。完整的 [**2025 AHA 官方原始流程圖**](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf) 可另行對照；本站教學流程是獨立整理，不冒稱官方圖。
 
 如果病人 **有 pulse，且 unstable 的 WCT 屬於可同步辨識的單形態節律**，應迅速 synchronized cardioversion，鎮靜在可行時使用，但不能因此耽誤治療。若已是 **sustained polymorphic VT**，AHA 2025 要求 **immediate unsynchronized high-energy shock**：多變 QRS 可能使可靠的 R-wave synchronization 困難，拖延或誤同步增加風險。若失去 pulse，則不再使用「with a pulse」流程，而走 VF／pulseless VT cardiac-arrest／CPR 與 defibrillation 路徑。
 
