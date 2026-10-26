@@ -28,6 +28,10 @@ if any(p["output"] == "knowledge-atlas.html" for p in PAGES):
     EXPECTED.add("xiaoma-plan.html")  # unindexed legacy alias, not a duplicate map
 if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
     EXPECTED.update(['assets/dcm-pv.webp','assets/dcm-secondary-mr.png','assets/dcm-ischemic-cmr.webp'])
+# Only the three medically source-verified ECGs for the published AF/WCT
+# lessons are allowed; these bytes are fetched, checked and bundled at build.
+if any(p["output"] in ("xiaoma-reading-preexcited-af.html","xiaoma-reading-wct-acls-decision.html") for p in PAGES):
+    EXPECTED.update({f"assets/silverman-2018-fig{n}.jpg" for n in (1, 2, 3)})
 actual = {p.relative_to(DIST).as_posix() for p in DIST.rglob("*") if p.is_file()} if DIST.is_dir() else set()
 errors = []
 if actual != EXPECTED:

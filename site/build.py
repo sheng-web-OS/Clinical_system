@@ -243,6 +243,11 @@ def main():
     if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
         import subprocess
         subprocess.run([sys.executable, str(BASE / "tools/fetch_dcm_figures.py"), str(DIST)], check=True)
+    if any(page["output"] in {"xiaoma-reading-preexcited-af.html", "xiaoma-reading-wct-acls-decision.html"} for page in PAGES):
+        # Download the licensed original ECGs during the build and publish
+        # validated image bytes with the site, never as runtime CDN hotlinks.
+        import subprocess
+        subprocess.run([sys.executable, str(BASE / "tools/fetch_arrhythmia_figures.py"), str(DIST)], check=True)
     install_web_analytics()
     validate_output_links()
     for path in DIST.iterdir():
