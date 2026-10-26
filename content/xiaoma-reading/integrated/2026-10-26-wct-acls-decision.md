@@ -8,6 +8,75 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 
 但讀完小麻的 wide-complex tachycardia（WCT），這條路徑反而變得不再直觀。
 
+## 先看完整流程，再討論流程為何不能直接等於診斷
+
+<figure id="wct-acls-main-algorithm" class="acls-core-figure" role="group" aria-label="2025 AHA 有脈搏成人心搏過速主流程的獨立解讀圖，含是否由心搏過速造成不穩定、QRS 寬窄、規則性與危險例外">
+<div class="acls-core-head"><span>CLINICAL REFERENCE · AHA 2025</span><strong>Adult Tachyarrhythmia With a Pulse：真正的 Yes／No 分支</strong><p>先閱讀官方完整原圖，再將同一套問題對照 WPW／pre-excited AF。以下為本站獨立設計的閱讀路徑，非 AHA 原圖的複製或官方翻譯。</p><a class="acls-official-link" href="https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf" target="_blank" rel="noopener noreferrer">開啟 2025 AHA 官方完整流程圖（原始 PDF，可放大／下載） ↗</a></div>
+<svg class="acls-desktop-graph" viewBox="0 0 1120 995" role="img" aria-labelledby="acls-flow-title acls-flow-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="acls-flow-title">有脈搏成人 tachyarrhythmia：血流動力學決策優先，穩定後再以 QRS 寬窄進入不同分支</title>
+<desc id="acls-flow-desc">成人有脈搏與持續性心搏過速，先同時做初始支持、監測與十二導程心電圖。若目前血流動力學失衡是由心搏過速造成，迅速處理並通常使用同步電復律。若否，判斷 QRS 是否至少 120 毫秒，狹窄者依規則性考慮迷走神經手法與腺苷等；寬大者只有穩定、規則且單形態時才可考慮腺苷，並考慮抗心律不整治療與專科協助。不規則或多形態寬 QRS 不應套用腺苷，且 polymorphic VT 和 pre-excited AF 需要另辨別高風險處置。</desc>
+<defs><marker id="acls-arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0L0 6L8 3Z" fill="#42636e"/></marker></defs>
+<rect x="338" y="19" width="450" height="115" rx="13" fill="#edf4f2" stroke="#426f69" stroke-width="2"/>
+<text x="563" y="54" font-size="23" font-weight="750" fill="#1b3c3c" text-anchor="middle">成人有脈搏 · 持續性 tachyarrhythmia</text>
+<text x="563" y="82" font-size="17" fill="#354d4d" text-anchor="middle">先評估心率與病況（通常 ≥150/min）</text>
+<text x="563" y="109" font-size="17" fill="#354d4d" text-anchor="middle">Airway／必要氧氣／監測 · IV · 12-lead ECG</text>
+<path d="M563 134V172" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
+<path d="M563 179L811 278L563 377L315 278Z" fill="#fdf0e6" stroke="#b97543" stroke-width="2.5"/>
+<text x="563" y="262" font-size="22" font-weight="750" text-anchor="middle" fill="#543f2d">是否由 tachyarrhythmia</text>
+<text x="563" y="290" font-size="22" font-weight="750" text-anchor="middle" fill="#543f2d">造成當下不穩定？</text>
+<text x="563" y="319" font-size="15" text-anchor="middle" fill="#694f38">Shock／低壓／意識改變／缺血／急性 HF</text>
+<path d="M315 278H244V415" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
+<text x="261" y="258" font-size="19" font-weight="800" fill="#985034" text-anchor="middle">YES</text>
+<rect x="40" y="423" width="414" height="174" rx="12" stroke="#a85740" stroke-width="2" fill="#fdf0ed"/>
+<text x="247" y="459" font-size="23" font-weight="750" text-anchor="middle" fill="#783629">迅速處置不穩定節律</text>
+<text x="247" y="495" font-size="20" text-anchor="middle" fill="#543d3b">通常 synchronized cardioversion</text>
+<text x="247" y="524" font-size="16" text-anchor="middle" fill="#543d3b">鎮靜可行時使用，不延誤必要電擊</text>
+<text x="247" y="551" font-size="16" text-anchor="middle" fill="#543d3b">若 regular narrow，可考慮 adenosine</text>
+<text x="247" y="575" font-size="15" text-anchor="middle" fill="#7c3432">polymorphic VT 要另判電擊模式 *</text>
+<path d="M811 278H910V405" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
+<text x="858" y="258" font-size="19" font-weight="800" fill="#315b65" text-anchor="middle">NO</text>
+<path d="M910 414L1080 485L910 556L740 485Z" fill="#e8f2fa" stroke="#397d9a" stroke-width="2.5"/>
+<text x="910" y="477" font-size="22" font-weight="750" text-anchor="middle" fill="#264b60">Wide QRS?</text>
+<text x="910" y="506" font-size="20" font-weight="700" text-anchor="middle" fill="#264b60">≥ 0.12 秒</text>
+<path d="M740 485H652V642" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
+<text x="699" y="466" font-size="18" font-weight="800" text-anchor="middle" fill="#315b65">NO</text>
+<path d="M1080 485H1100V615H960V642" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
+<text x="1081" y="465" font-size="17" font-weight="800" text-anchor="end" fill="#315b65">YES</text>
+<rect x="486" y="650" width="325" height="153" rx="12" stroke="#426f69" stroke-width="2" fill="#eef6ef"/>
+<text x="648" y="686" font-size="22" font-weight="750" text-anchor="middle" fill="#2a534a">NARROW QRS</text>
+<text x="648" y="717" font-size="17" text-anchor="middle" fill="#254e46">規則者：vagal／adenosine</text>
+<text x="648" y="746" font-size="16" text-anchor="middle" fill="#254e46">可考慮 β blocker 或 CCB *</text>
+<text x="648" y="776" font-size="16" text-anchor="middle" fill="#254e46">評估節律與專家協助</text>
+<rect x="822" y="650" width="277" height="153" rx="12" stroke="#426f69" stroke-width="2" fill="#eef6ef"/>
+<text x="960" y="684" font-size="22" font-weight="750" text-anchor="middle" fill="#2a534a">WIDE QRS</text>
+<text x="960" y="712" font-size="15" text-anchor="middle" fill="#254e46">Adenosine：僅穩定＋規則＋單形態</text>
+<text x="960" y="744" font-size="16" text-anchor="middle" fill="#254e46">考慮 antiarrhythmic infusion</text>
+<text x="960" y="771" font-size="16" text-anchor="middle" fill="#254e46">專科協助、隨時再評估</text>
+<rect x="38" y="841" width="1047" height="115" rx="12" fill="#f8ecea" stroke="#b5634d" stroke-width="2"/>
+<text x="62" y="876" font-size="22" font-weight="750" fill="#783629">* 必須另外辨識的例外：不能從主流程的藥物格直接開藥</text>
+<text x="62" y="906" font-size="18" fill="#6b3e35">Irregular／polymorphic WCT → 不給 adenosine；pre-excited AF → 避免 AV nodal blockers／IV amiodarone。</text>
+<text x="62" y="934" font-size="17" fill="#6b3e35">Sustained polymorphic VT → immediate unsynchronized shock；若無脈搏，改用 cardiac-arrest algorithm。</text>
+</svg>
+<div class="acls-mobile-graph" aria-label="有脈搏成人 tachyarrhythmia 手機版完整決策流程">
+<div class="acls-m-step acls-m-entry"><strong>有脈搏的成人 tachyarrhythmia</strong><span>先確認心率與病況是否相符（tachyarrhythmia 常 ≥150/min）；Airway／氧氣（若低氧）／ECG、血壓監測／IV／12-lead ECG</span></div>
+<div class="acls-m-down" aria-hidden="true">↓</div>
+<div class="acls-m-decision"><strong>目前的不穩定，是由 tachyarrhythmia 造成嗎？</strong><span>Hypotension、shock、意識改變、缺血性胸痛、急性 HF</span></div>
+<div class="acls-m-branch-label">YES ↓</div>
+<div class="acls-m-step acls-m-urgent"><strong>迅速處置節律：通常 synchronized cardioversion</strong><span>鎮靜可行時使用，不延誤電擊；sustained polymorphic VT 為非同步電擊的特殊情境。</span></div>
+<div class="acls-m-branch-label acls-m-no">NO ↓（另一條分支，並非接續電復律）</div>
+<div class="acls-m-decision"><strong>QRS ≥ 0.12 秒？</strong></div>
+<div class="acls-m-split">
+<div class="acls-m-step"><small>NO · NARROW</small><strong>依規則性判讀</strong><span>Regular：vagal maneuvers／adenosine；其他降心率藥物仍須核對節律、心功能與禁忌。</span></div>
+<div class="acls-m-step"><small>YES · WIDE</small><strong>先確定 regular 與 monomorphic</strong><span>兩者皆成立且病人穩定時，才可考慮 adenosine；另考慮 antiarrhythmic infusion 與專科協助。</span></div>
+</div>
+<div class="acls-m-warning"><strong>主流程之外的高風險界線</strong><span>Irregular／polymorphic WCT 不使用 adenosine；pre-excited AF 不套用一般 AV nodal blockers 或 IV amiodarone。持續 polymorphic VT 需非同步電擊；若無脈搏改走 cardiac-arrest algorithm。</span></div>
+</div>
+<div class="acls-rescue-footer"><strong>若初始介入仍無效：重新評估</strong><span>核對造成 tachyarrhythmia 的因素、是否需要調整下一次電復律能量、增加抗心律不整治療，以及專科協助；病情改變時重新回到最上游判斷。</span></div>
+<figcaption><strong>本站原創流程解讀｜2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm。</strong> 圖上流程為對照本文 WPW／WCT 的教學重構，不是 AHA 正式圖像、完整指引翻譯或個別病人處方。成人有脈搏是適用前提；本圖為優先決策架構，<strong>劑量與電擊能量需回讀官方原圖</strong>；主流程的藥物選項需連同 2025 ALS 的 WCT 禁忌和 2023 AF guideline 的 pre-excitation 限制閱讀。<a href="https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">官方 Figure 6 原圖（直接開啟）</a>；<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">2025 ALS 文字建議</a>。</figcaption>
+</figure>
+
+現在才能準確提出後面的問題：ACLS 已經將 **causing instability**、**QRS duration**、**regular／monomorphic** 放在不同判斷層次，但它們沒有一個可以單獨證明「這是 VT、SVT 或 accessory pathway」。流程先定義當下安全的處置空間，病因機轉再決定不能外推哪些藥物選項。
+
 Wide QRS 不是診斷。它可能來自 VT、SVT with aberrancy、accessory-pathway conduction，也可能是 ventricular pacing；有時 hyperkalemia 或 sodium-channel blocker toxicity 也讓 ventricular conduction 異常。即使確認是 VT，monomorphic 與 polymorphic 的機轉及立即處置也可能不同。
 
 [第一篇](2026-10-26-wpw-conduction-mechanism.md)進一步說明，同一條 AP 在不同節律可以是迴路的回程、去程，或者根本不是維持節律的組件。[第二篇](2026-10-26-preexcited-af.md)則讓我們看見：同一種 AV nodal block，可能中斷 orthodromic AVRT，卻在 pre-excited AF 造成致命風險。
