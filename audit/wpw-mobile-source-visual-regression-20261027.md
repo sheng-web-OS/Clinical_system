@@ -7,11 +7,13 @@
 - **Regression that CI incorrectly passed:** phone displayed individual source panels but CSS `aspect-ratio:250 / 305; top:-21.312%` omitted original heading and the bottom source ECG annotations, while part of the neighboring figure column could appear at the right edge. Source itself is a 750×446 three-panel teaching diagram with valuable titles and original annotations.
 - Visual judgement: **HOLD**, despite the earlier layout-only CI success. Content was cropped such that viewers could not independently cross-check all source figure labels.
 
-## Targeted correction and regression
+## Second review: a passing screenshot still exposed cut English labels
 
-- For each phone panel, use the complete original source-column aspect ratio `250 / 446`, `top:0`, and true thirds `-33.333%` / `-66.667%`. Remove opaque pseudo-element masks; do not redraw the scientific source.
-- `tests/test_wpw_source_mobile_qa.py` locks these conditions. `tools/visual_qa_browser.py` now compares displayed source-image and crop-frame heights/vertical origin and reports `source annotation clipped vertically in mobile WPW crop` on mismatch.
-- The check guards this *known failure mode*. It cannot itself certify that every original label is visually legible or that CSS percentage translation is scientifically suitable without reviewing the new screenshot.
+- Independently inspected [Actions #40372975065](https://github.com/sheng-web-OS/Clinical_system/actions/runs/40372975065), including both the full desktop source and the 390px phone screenshot. The intermediate full-height `250 / 446` crop retained source bullet points but clipped the left/right margins of English headers, e.g. Orthodromic AVRT, while adjacent column fragments were visible. **This is a visual HOLD despite a green CI result.**
+- Based on the complete original 750×446 image, retain **only the original anatomy and ECG waveform pixel region** in each phone window: source x = `0..250`, `250..500`, `500..750`; common source y = `75..385`. At this position the heart diagram and ECG wave remain visible, while broken English title fragments and original footnote text do not appear in the crop.
+- Preserve actual original source pixel data unchanged and retain a direct full-size original link; separately typeset source-derived PR/delta-wave, P-wave, QRS and reentry caveats as mobile-readable text. The graphic should not be presented as a separate real patient ECG recording.
+- CSS now uses `aspect-ratio:250 / 310`, `top:-24.194%`, and accurate one-/two-column horizontal offsets. Browser QA checks the **exact displayed source rectangle**, failing when ROI boundaries shift, rather than incorrectly insisting that all original source text be compressed within a phone crop.
+- The crop geometry is a structural regression guard, not proof of semantic accuracy, medical review, source-rights clearance or legibility of every small ECG detail. The new actual Chromium screenshots still require visual examination before publication.
 
 ## Remaining gates
 
