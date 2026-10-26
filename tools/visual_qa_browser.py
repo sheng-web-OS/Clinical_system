@@ -74,7 +74,7 @@ def changed_pages(root: Path, base_ref: str, page_map: dict | None = None) -> li
                   if page["source"] in changes and Path(page["output"]).stem in selected)
 
 
-FIGURE_BLOCK = re.compile(r"<figure\\b[^>]*>[\\s\\S]*?</figure>", re.IGNORECASE)
+FIGURE_BLOCK = re.compile(r"<figure\b[^>]*>[\s\S]*?</figure>", re.IGNORECASE)
 
 
 def figure_versions(body: str) -> dict[str, str]:
