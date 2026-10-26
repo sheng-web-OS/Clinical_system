@@ -52,10 +52,8 @@ ALT 正常表示這次量到的血清酵素活性沒有超過採用的正常上�
   </div>
   <div class="hbv-signal-contrast">
     <p class="hbv-contrast-question">② 固定 ALT 正常，另外兩項訊號卻可以不同</p>
-    <div class="hbv-contrast-grid">
-      <section class="hbv-contrast-card"><small>典型組合 A</small><strong>HBeAg-positive chronic infection</strong><dl><div><dt>HBeAg</dt><dd>Positive</dd></div><div><dt>HBV DNA</dt><dd>極高</dd></div><div class="hbv-alt-same"><dt>ALT</dt><dd>正常</dd></div></dl></section>
-      <section class="hbv-contrast-card"><small>典型組合 B</small><strong>HBeAg-negative chronic infection</strong><dl><div><dt>HBeAg</dt><dd>Negative</dd></div><div><dt>HBV DNA</dt><dd>低</dd></div><div class="hbv-alt-same"><dt>ALT</dt><dd>正常</dd></div></dl></section>
-    </div>
+    <table class="hbv-contrast-table" aria-label="兩種正常 ALT 的典型 HBV marker 組合比較"><thead><tr><th scope="col">觀察</th><th scope="col">HBeAg +</th><th scope="col">HBeAg −</th></tr></thead><tbody><tr><th scope="row">HBV DNA</th><td>極高</td><td>低</td></tr><tr class="hbv-same-marker"><th scope="row">ALT</th><td>正常</td><td>正常</td></tr></tbody></table>
+    <p class="hbv-contrast-context">典型組合：左為 HBeAg-positive chronic infection；右為 HBeAg-negative chronic infection。不是以單次抽血直接診斷 phase。</p>
     <div class="hbv-contrast-result"><strong>ALT 相同 ≠ 上游病毒—宿主狀態相同</strong><span>兩個名稱是典型參考組合，不是憑單次檢驗完成的診斷。</span></div>
   </div>
   <div class="hbv-inference-step"><span>③ 從觀察走到臨床行動，仍需補足證據</span><strong>Markers → 推論 phase → 另評估結構風險與處置</strong><p>結合 HBeAg、連續 HBV DNA／ALT 及其他病因；另看 fibrosis、cirrhosis 與個別風險，才能決定治療或監測。</p></div>
