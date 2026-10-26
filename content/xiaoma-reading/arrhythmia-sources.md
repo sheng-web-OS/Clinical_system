@@ -22,7 +22,7 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 本輪取回完整 PDF 文字並核對：24 歲、初始 HR >200、SBP 約130、兩次 IV amiodarone 各150 mg 未終止、同步電復律後見預激、EP 定位 right posteroseptal pathway 並消融。原文與圖說的窄／寬搏動頻率是同一張不規則記錄的描述，不是兩次獨立的穩定性測試。本文不增加原報告沒有的檢查或反應，也不把當年的 amiodarone 使用當成現行建議。
 
-原文標示 CC BY 4.0。本次公開站選擇連回原始 Figure 1，沒有重製 ECG 圖像；三張教學圖均是獨立原創機轉／決策圖。讀者可在原始 PDF 核對圖像與數據，原創概念圖不冒充病例 ECG。
+原文標示 CC BY 4.0。先前版本選擇只連回 Figure 1 而未提供 ECG；本次修訂分支已改成透過原始期刊圖片 URL 直接嵌入 Figure 1–3（CC BY 4.0，未裁切／未重畫），WPW 與 WCT 的主要圖示亦已相應更換。讀者可在原始 PDF 核對圖像與數據，原創概念圖不冒充病例 ECG。
 
 ## 原刊 Figure 1–3 的分層證據（用於第二篇圖卡）
 
@@ -34,6 +34,15 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 4. **Figure 3：after successful right posteroseptal AP ablation**（原刊 PDF p.3）：delta waves 消失，T-wave memory 表現需結合 EP 檢查解釋，不能單靠 T 波證明已完成消融。
 
 原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870，請開啟 [**期刊原始 PDF（第 2 頁可直接放大 Figure 1 與 Figure 2）**](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 檢視原始像素。本站 Figure 02 是逐圖證據導讀，**目前不是原始 ECG 圖像的嵌入檢視器**。若日後本地嵌入，必須保存 CC BY 4.0 授權標示與原始 DOI 及是否裁切的說明。
+
+## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（修訂分支，尚未正式發布）
+
+- **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，均標示 CC BY 4.0；原圖未裁切、未重畫。
+- **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，官方 [Figure 1](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/b2fc7153-320e-4d2b-a28a-0443e25d3345/assets/images/large/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/ad05d429-0d11-4942-8d83-53da56dd71c1/assets/images/large/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://journals.sagepub.com/cms/10.1177/2324709618802870/asset/a0dda955-26a2-41fb-bb91-4ae1a19146b6/assets/images/large/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。圖檔在外部 SAGE 主機，並非本站已保存的本地檔，部署及手機實際載入仍待驗證。
+- **Figure 04（WCT 臨床證據）**：使用同一 2018 病例 Figure 1/2，表達處置前與處置後證據落差。不要把前後圖說混成兩個 WCT 診斷實驗。
+- **AHA 2025 成人 tachyarrhythmia 原圖**：仍維持[原始 PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)直接引用，不鏡像、不重製完整流程圖；公開可讀不等於自由授權再利用。
+
+**更新狀態**：三篇整合稿的原圖已以 HTML `img` 寫入專用分支（依原始圖片 URL 遠端載入），但未加 `site/pages.json`、未部署至 Cloudflare；在實際建立／部署前不宣稱網頁已能看到原圖。先前記錄的「僅有導讀卡，無 ECG 嵌入」反映舊版，已由此修訂替代；圖片目視已透過公開原圖頁核對，整體醫學獨立審稿仍未完成。
 
 ## 新版原創 Figures 的對應範圍
 
