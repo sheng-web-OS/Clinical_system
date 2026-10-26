@@ -47,4 +47,6 @@
 - [ ] 建立原創可讀示意圖並檢查行動版；不得擷取 Pocket 原書圖至公網。
 - [ ] 將審查合格的公開版加入 `site/pages.json`、測試 build、Cloudflare deployment 並 HTTP 驗證。此前**沒有公開連結**。
 
-結論：本輪是**完成來源回收與首次 evidence audit**，不是醫學內容與網站發布全部驗收。
+**後續候選稿（已建立）：** [Draft PR #59](https://github.com/sheng-web-OS/Clinical_system/pull/59) 於獨立 `editorial/constipation-20261026` 分支保存 AI 改判與來源頁，不在 `site/pages.json`，尚未公開。該稿不覆蓋本文封存的原作者原文。
+
+結論：本輪已**完成來源回收、首次 evidence audit 與獨立修訂候選 PR**，不是醫學內容與網站發布全部驗收。
