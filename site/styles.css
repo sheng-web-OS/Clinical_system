@@ -563,6 +563,9 @@
 .acls-m-step small{display:block;font-size:.78rem;letter-spacing:.04em;font-weight:800;margin-bottom:5px;color:#205c70}
 .acls-m-warning{margin-top:15px;background:#fbecea;border-color:#b5634d}
 .acls-m-warning strong{font-size:.95rem}
+.acls-rescue-footer{margin-top:13px;padding:13px 15px;border:1px dashed var(--line);border-left:4px solid var(--brand);border-radius:8px;background:var(--brand-light);line-height:1.6}
+.acls-rescue-footer strong{display:block;font-size:.92rem}
+.acls-rescue-footer span{display:block;font-size:.84rem;margin-top:4px}
 @media(max-width:920px){.acls-desktop-graph{display:none}.acls-mobile-graph{display:block}}
 @media(max-width:480px){.reading-prose .acls-core-figure{margin:1.45rem 0;padding:12px}.acls-core-head>strong{font-size:1.04rem}.acls-m-split{grid-template-columns:1fr}.acls-m-split>.acls-m-step:first-child:after{content:"另一條分支 ↓";font-size:.75rem;font-weight:700;color:#31627a;display:block;position:relative;top:16px;padding-bottom:9px}.acls-mobile-graph{font-size:.88rem}}
 
