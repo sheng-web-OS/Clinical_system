@@ -69,22 +69,42 @@ def original_figure(uri):
     with urlopen(req, timeout=28) as response:
         return response.read(6_000_001)
 
+def verified_original(image, filename, expected):
+    if not 7000 < len(image) < 6_000_000 or not image.endswith(bytes.fromhex("ffd9")):
+        raise ValueError("invalid or incomplete JPEG content: " + str(len(image)))
+    actual = jpeg_dimensions(image)
+    if actual != expected:
+        raise ValueError(f"unverified original ECG dimensions: {actual} != {expected}")
+    digest = hashlib.sha256(image).hexdigest()
+    if digest != EXPECTED_SHA256[filename]:
+        raise ValueError("original ECG source image checksum changed: " + digest)
+    return actual, digest
+
+
 def main():
     destination = Path(sys.argv[1]).resolve() / "assets"
     destination.mkdir(parents=True, exist_ok=True)
+    cache = Path(__file__).resolve().parents[1] / ".figure-cache" / "silverman2018"
+    cache.mkdir(parents=True, exist_ok=True)
     for filename, (uri, expected) in FIGURES.items():
+        cached = cache / filename
+        if cached.exists():
+            try:
+                image = cached.read_bytes()
+                actual, digest = verified_original(image, filename, expected)
+                (destination / filename).write_bytes(image)
+                print(f"PASS {filename}: verified cached original ECG {actual}, sha256={digest}", flush=True)
+                continue
+            except (OSError, ValueError) as exc:
+                print(f"Discarding invalid ECG cache {filename}: {exc}", flush=True)
+                cached.unlink(missing_ok=True)
+
         errors = []
         for attempt in range(3):
             try:
                 image = original_figure(uri)
-                if not 7000 < len(image) < 6_000_000 or not image.endswith(bytes.fromhex("ffd9")):
-                    raise ValueError("invalid or incomplete JPEG content: " + str(len(image)))
-                actual = jpeg_dimensions(image)
-                if actual != expected:
-                    raise ValueError(f"unverified original ECG dimensions: {actual} != {expected}")
-                digest = hashlib.sha256(image).hexdigest()
-                if digest != EXPECTED_SHA256[filename]:
-                    raise ValueError("original ECG source image checksum changed: " + digest)
+                actual, digest = verified_original(image, filename, expected)
+                cached.write_bytes(image)
                 (destination / filename).write_bytes(image)
                 print(f"PASS {filename}: original ECG {actual[0]}x{actual[1]}, {len(image)} bytes, sha256={digest}",flush=True)
                 break
