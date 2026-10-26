@@ -15,15 +15,17 @@
 肝細胞將膽汁成分送入 canaliculi，經 small intrahepatic ducts、較大膽管，最後到腸道。在這條路徑的不同位置出問題，都可能造成 ALP-dominant 表現。疾病也可同時涉及兩個以上層次。
 
 <figure id="fig-cholestasis-evidence-action" class="reasoning-figure">
-<div class="reasoning-title">原創圖 1｜把影像證據與緊急程度分開：同一個 ALP pattern，走向不同決策</div>
-<table aria-label="Cholestatic ALP 的證據與行動矩陣" class="release-matrix">
-<thead><tr><th scope="col">眼前證據</th><th scope="col">目前較支持的假說</th><th scope="col">下一步能改判什麼</th><th scope="col">不能推出</th></tr></thead>
+<div class="reasoning-title">原創圖 1｜雙軸反事實：同一個 ultrasound 結果，為何處置可以完全不同？</div>
+<p><strong>橫向固定影像、縱向改變臨床急迫性。</strong>請先遮住下方表格的處置欄，預測「US 未見膽管擴張，但患者發燒、意識改變且血壓下降」能不能等 elective MRCP。</p>
+<table class="release-matrix chol-crossing" aria-label="膽道超音波解剖證據乘上臨床急迫性的二維決策矩陣">
+<thead><tr><th scope="col">臨床急迫性 × US</th><th scope="col">US：看見 ductal dilation</th><th scope="col">US：未見 ductal dilation</th></tr></thead>
 <tbody>
-<tr><th scope="row">肝源性 ALP ↑；US 顯示膽管擴張</th><td data-label="目前較支持的假說">Large-duct obstruction 機率提高</td><td data-label="下一步能改判什麼">按病史、膽紅素、風險與需要選 MRCP／EUS、CT 或需治療的 ERCP</td><td data-label="不能推出">擴張 ≠ 已知道是石頭、腫瘤還是狹窄</td></tr>
-<tr><th scope="row">肝源性 ALP ↑；US 未見擴張</th><td data-label="目前較支持的假說">Small-duct／intrahepatic cholestasis、DILI、PBC 等；仍保留 occult obstruction</td><td data-label="下一步能改判什麼">藥物與暴露、AMA 等血清學；按懷疑程度選 MRCP／EUS；不明原因再考慮 biopsy</td><td data-label="不能推出">未擴張 ≠ obstruction 已排除；更不等於「肝細胞功能失敗」確診</td></tr>
-<tr><th scope="row">合併發燒、寒顫、黃疸、敗血症或器官功能不穩</th><td data-label="目前較支持的假說">須立即評估 cholangitis／infected obstruction</td><td data-label="下一步能改判什麼">並行復甦、培養、抗生素、感染源控制及緊急膽道引流需求</td><td data-label="不能推出">不能因 US 未見擴張或等待 elective MRCP 而延誤處置</td></tr>
-</tbody></table>
-<figcaption>以 Pocket Medicine 9E Figure 3-3（所核 Library PDF 頁 139，非印刷頁碼）及 ACG／ASGE 指引自行建立的「證據 × 行動」矩陣；不重製原書圖像或分支排列。最後一列是急迫性覆蓋條件，不是疾病嚴重程度隨前兩列逐步升級。完整資料定位見<a href="../liver-gi-source-review-20261027.md#cholestasis">私人稽核</a>。</figcaption>
+<tr><th scope="row">穩定、目前無膽管炎警訊</th><td data-label="US：看見 ductal dilation"><strong>解剖假說提高</strong>：支持 large-duct obstruction，依前測機率與治療必要性選擇 MRCP／EUS、CT 或可能介入的 ERCP；擴張仍無法區分石頭、腫瘤與狹窄。</td><td data-label="US：未見 ductal dilation"><strong>改找其他層次，也不停止</strong>：評估藥物、PBC／PSC、small-duct disease、DILI 等；若懷疑持續，進階影像仍可排查 occult／早期間歇 obstruction。</td></tr>
+<tr class="chol-urgent"><th scope="row">疑似膽管炎、敗血症或器官不穩</th><td data-label="US：看見 ductal dilation"><strong>感染源控制優先</strong>：立即復甦、培養、適當抗菌治療、協調膽道緊急減壓；不因要先定出石頭或腫瘤而延誤。</td><td data-label="US：未見 ductal dilation"><strong>影像陰性不能抵銷危險</strong>：同步處理 sepsis，重新評估 obstruction／感染源與緊急影像或介入需求；不能把「無擴張」當作排除 cholangitis 的充分理由。</td></tr>
+</tbody>
+</table>
+<p><strong>改判核心：</strong>「膽管有無擴張」是解剖定位證據；「是否疑似感染且不穩定」決定可以等待多久。後者在臨床急症時覆蓋前者，而不是兩者沿同一條嚴重度階梯排列。</p>
+<figcaption>以 Pocket Medicine 9E Figure 3-3（Library PDF p.139）提供的 US 解剖證據，以及 ASGE cholangitis source-control 指引，自行重建雙軸臨床決策矩陣；不是原書流程圖重製。此圖描述疑似狀態與行動優先權，不能單憑矩陣替個別病人做確診。<a href="../liver-gi-source-review-20261027.md#cholestasis">核對來源與適用界線</a>。</figcaption>
 </figure>
 
 這也是 ultrasound 在診斷中真正的位置：它不是決定疾病「有或沒有」的法官，而是改變大膽管 obstruction 假說的可信度。患者若具有膽管癌危險因子、反覆膽管炎、IBD／PSC 線索、膽紅素惡化、或與 US 結果不相稱的高度懷疑，進階影像仍可能有價值。[1]
