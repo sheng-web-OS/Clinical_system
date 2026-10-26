@@ -341,6 +341,93 @@
           "scope_limit": "TLC減RV是本站計算而非實測FVC或IC，病例是高度選擇性減容反應，不能證明所有COPD可治癒；未挪用原文不一致CAT數字。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-heat-rhabdo.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/exam108-acute-sources.md",
+      "rights_review": {
+        "evaluation_date": "2026-10-26",
+        "decision": "link_or_original_only",
+        "law": "Taiwan Copyright Act Articles 52, 64, 65; individual use not automatically lawful",
+        "purpose": "Non-commercial educational critical analysis; public website, no publisher-page pixels copied",
+        "nature": "Commercial medical handbook and professional guidelines: original expression in figures protected",
+        "amount": "No third-party table/image pixel or substantial verbatim reproduction; new original teaching diagram",
+        "market": "No book chapter scans, download assets or substitute reference tables; directs to authorized publisher/guideline",
+        "necessity": "Original causal pathways explain only the decision needed for the exam, not duplicating protected figure layout",
+        "reason": "Reviewed Pocket p137 and p175-176 original table images privately. Public page uses independently composed teaching figures only; p177 original page image not claimed reviewed."
+      },
+      "items": [
+        {
+          "locator": "Pocket Medicine 9th edition reader PDF p137, original Table Patterns of LFTs with nonhepatic skeletal-muscle injury row",
+          "source_token": "Patterns of LFTs",
+          "mode": "illustrated",
+          "anchor": "heat-muscle-organ-branches",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "將中暑神經危急狀態與肌肉／肝臟 AST 訊號分開，讓讀者明白為何 ALT/AST 不構成單獨的肝壞死確診。",
+          "scope_limit": "原創三段推理並非原書 Patterns of LFTs 表重製，不能據此推定肝衰竭或器官損傷百分比。"
+        },
+        {
+          "locator": "Pocket Medicine 9th edition reader PDF pp175-176 original Table Etiologies and Diagnosis of Acute Kidney Injury, pigment tubular injury and management",
+          "source_token": "Etiologies and Diagnosis of Acute Kidney Injury",
+          "mode": "illustrated",
+          "anchor": "rhabdo-kidney-response",
+          "caption_token": "Pocket Medicine",
+          "teaching_role": "從 pigment-related renal damage 接到尿量導向的補液與容量風險，在無尿或難治性併發症時轉向重新評估。",
+          "scope_limit": "不是原書 AKI 病因表複製、不是特定病人的每日輸液處方或單一 CK 值透析門檻。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-cpr-airway.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/exam108-acute-sources.md",
+      "rights_review": {
+        "evaluation_date": "2026-10-26",
+        "decision": "link_or_original_only",
+        "law": "Taiwan Copyright Act Articles 52, 64, 65; individual use not automatically lawful",
+        "purpose": "Non-commercial educational critical analysis; public website, no publisher-page pixels copied",
+        "nature": "Commercial medical handbook and professional guidelines: original expression in figures protected",
+        "amount": "No third-party table/image pixel or substantial verbatim reproduction; new original teaching diagram",
+        "market": "No book chapter scans, download assets or substitute reference tables; directs to authorized publisher/guideline",
+        "necessity": "Original causal pathways explain only the decision needed for the exam, not duplicating protected figure layout",
+        "reason": "Pocket 9E pulmonary/critical-care excerpts did not supply equivalent relevant algorithm. AHA guideline rules are interpreted in independently drawn state comparison; publisher algorithm graphics not copied."
+      },
+      "items": [
+        {
+          "locator": "American Heart Association 2015 CPR Guidelines update, 2025 Adult Basic Life Support and advanced airway ventilation algorithm, comparison",
+          "source_token": "American Heart Association",
+          "mode": "illustrated",
+          "anchor": "cpr-airway-transition",
+          "caption_token": "American Heart Association",
+          "teaching_role": "以有無脈搏、有無 advanced airway 為條件，教學區分 30:2 與不中斷按壓／每六秒一次通氣的操作情境。",
+          "scope_limit": "簡化分類只服務原題，並非官方 AHA 成人演算法完整重製，不可當成臨床流程及課程認證替代。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-exam108-appendicitis.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/exam108-acute-sources.md",
+      "rights_review": {
+        "evaluation_date": "2026-10-26",
+        "decision": "link_or_original_only",
+        "law": "Taiwan Copyright Act Articles 52, 64, 65; individual use not automatically lawful",
+        "purpose": "Non-commercial educational critical analysis; public website, no publisher-page pixels copied",
+        "nature": "Commercial medical handbook and professional guidelines: original expression in figures protected",
+        "amount": "No third-party table/image pixel or substantial verbatim reproduction; new original teaching diagram",
+        "market": "No book chapter scans, download assets or substitute reference tables; directs to authorized publisher/guideline",
+        "necessity": "Original causal pathways explain only the decision needed for the exam, not duplicating protected figure layout",
+        "reason": "Uses a new concept diagram inspired by diagnostic test definitions, without copying Andersson meta-analysis figures or WSES diagrams; external papers cited by legal links."
+      },
+      "items": [
+        {
+          "locator": "Andersson RE 2004 Meta-analysis of the clinical and laboratory diagnosis of appendicitis; WSES Jerusalem Guidelines 2025 edition (2026 publication)",
+          "source_token": "Andersson RE",
+          "mode": "illustrated",
+          "anchor": "appendicitis-sensitivity-evidence",
+          "caption_token": "Andersson",
+          "teaching_role": "比較右下腹痛、轉移痛、psoas sign 各自提供的頻率及診斷意義，避免把敏感度當成對病人確診能力。",
+          "scope_limit": "原創定性對照不是文獻 forest plot，不代表任何族群的精確敏感度百分比或 LR。"
+        }
+      ]
     }
   }
 }
