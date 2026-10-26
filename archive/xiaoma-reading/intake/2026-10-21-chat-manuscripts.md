@@ -48,3 +48,12 @@
 ### 2026-10-26 增量回收（Constipation）
 
 作者於 2026-10-26 對話再次貼出 2026-07-26 全文，已逐字存入私人 `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`（commit `3fa97afb07d50ebdc453033d3efa18fcae0facea`）。這是 **user-supplied source snapshot**，不等於確認 Facebook 已刊版本、`content/xiaoma-reading/originals` 正稿或公開網站頁面。下一步按 EPQC 查核原書圖表及現行 AGA／ACG、ASCRS 來源；特別注意 fecal impaction／mechanical obstruction、defecatory disorder testing 與腰椎骨折相關神經危險徵象。不要依舊的『六篇已入庫、十五篇待移轉』靜態數字判斷新的 source snapshot 數量。
+
+### 2026-10-26 增量回收（Ascites 上下篇）
+
+本次對話新增兩篇自述為 2026-07-22／23 的「小麻閱讀（9E）」完整文章，**並不在 2026-10-21 原有 21 篇對話接收計數內**。已依使用者文字分別保存為私人 source snapshots；此入庫不意味著確認 Facebook 作者最終發表版本、醫學同儕審查、原圖公網授權，或 Cloudflare 正式出版。
+
+- 2026-07-22《同一管腹水，為什麼需要被判斷兩次？》 → `archive/xiaoma-reading/intake/2026-07-22-ascites-diagnostic-user-supplied.md`（source_snapshot_archived）。
+- 2026-07-23《腹水明明太多，為什麼治療最怕的卻是循環不夠？》 → `archive/xiaoma-reading/intake/2026-07-23-ascites-treatment-user-supplied.md`（source_snapshot_archived）。
+
+對題《Pocket Medicine》9E 合法持有版本已於 Library 核對 PDF reader 頁 147 及 152–154（尤其 153–154 原表），來源與醫學查核見 `audit/ascites-series-20261026.md`；未存放出版社 PDF 或原像素到儲存庫。正式閱讀版需以「腹水形成機轉／感染事件」接至「排鈉與有效循環的雙軸限制」，補原創決策圖與完整圖說，再依 Figure/Table Gate、EPQC、發行 CI 另行審核。未確認符合發行門檻前不加入 `site/pages.json`。
