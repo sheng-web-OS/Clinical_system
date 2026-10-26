@@ -100,7 +100,7 @@ def render_home(pages):
   <section class="library-section library-paths" aria-labelledby="paths-heading">
     <div class="library-section-heading"><div><p class="library-overline">EXPLORE THE COLLECTIONS</p><h2 id="paths-heading">沿著一條脈絡讀</h2></div></div>
     <div class="library-path-grid">
-      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL QUESTIONS</span><h3>知識脈絡</h3><p>以臨床問題為起點，同時查看機轉分支、閱讀順序及對應驗證題。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
+      <a class="library-path" href="knowledge-atlas.html"><span class="library-path-number">01 / CLINICAL QUESTIONS</span><h3>知識地圖</h3><p>以臨床問題為起點，同時查看機轉分支、閱讀順序及對應驗證題。</p><span>進入脈絡 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-reading.html"><span class="library-path-number">02 / ESSAYS</span><h3>小麻閱讀</h3><p>從 Pocket Medicine 的定義與圖表出發，展開背後的機轉與臨床判斷。</p><span>探索系列 <span aria-hidden="true">↗</span></span></a>
       <a class="library-path" href="xiaoma-internal-medicine.html"><span class="library-path-number">03 / INTERNAL MEDICINE</span><h3>小麻內科國考</h3><p>以臨床問題串連內科主題、先備知識與國考題目。</p><span>進入課程 <span aria-hidden="true">↗</span></span></a>
     </div>
