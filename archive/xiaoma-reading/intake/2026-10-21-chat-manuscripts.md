@@ -1,6 +1,6 @@
 # 2026-10-21 對話直貼文章｜原稿接收清單
 
-狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、兩篇（Constipation、HBV ALT 訊號）已保存完整私人 source snapshot（未出版）、其餘十三篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
+狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、三篇（Constipation、HBV ALT 訊號、Chronic diarrhea）已保存完整私人 source snapshot（未出版）、其餘十二篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
 
 本清單是接收及搬遷追蹤，不是已完成醫學事實查核、已確認唯一最終版本的證明。原文保留在本次 ChatGPT 對話；僅已核對確實寫入 Git 原稿檔案者標為 `imported`；不同歷史版本仍可能待比較。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
 
@@ -10,7 +10,7 @@
 | 2026-07-26 | 糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？ | 藥物閱讀（Constipation） | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`；待版本／醫學／出版審查 |
 | 2026-07-24 | 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？ | 小麻閱讀（9E） | conversation_only |
 | 2026-07-23 | 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？ | 小麻閱讀（9E） | conversation_only |
-| 2026-07-21 | 找到腹瀉的類型，為什麼仍然沒有找到病因？ | 小麻閱讀（9E） | conversation_only |
+| 2026-07-21 | 找到腹瀉的類型，為什麼仍然沒有找到病因？ | 小麻閱讀（9E） | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-21-chronic-diarrhea-user-supplied.md`；原圖／醫學審查見 `audit/chronic-diarrhea-2026-10-26-source-and-clinical-review.md`；待正式刊行版本核對與出版 |
 | 2026-07-21 | 同一顆 octreotide，為什麼既能止瀉又能促動？ | 藥理學精要閱讀 | conversation_only |
 | 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-diuretics.md` |
 | 2026-07-20 | 胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-pancreatitis.md` |
