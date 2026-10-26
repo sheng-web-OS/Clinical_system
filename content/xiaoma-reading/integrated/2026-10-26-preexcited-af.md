@@ -44,7 +44,7 @@
 
 <figure class="diuretic-figure" id="af-two-exits" role="group" aria-label="AF 訊號分別經 AV node 和 AP 抵達心室的原創機轉圖">
 <div class="diuretic-figure-head"><span>FIGURE 03 · WHY NODAL BLOCK CAN HARM</span><strong>心房訊號仍在，阻斷 AV node 並不代表封住所有通往心室的路</strong></div>
-<div role="region" aria-label="AF 雙通道機轉圖，行動版可橫向捲動" tabindex="0" style="max-width:100%;overflow-x:auto">
+<div class="af-desktop-conduction" role="region" aria-label="AF 雙通道原創機轉圖，桌面版">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 270" width="780" height="270" role="img" aria-labelledby="afpath-title afpath-desc">
 <title id="afpath-title">AF 經 AV node 與 accessory pathway 雙路徑順傳</title>
 <desc id="afpath-desc">上方代表大量快速、不規則的心房訊號；左側經 AV node 時部分衝動被篩選；右側若旁路有效不應期短，仍可能大量順傳至心室。阻斷 AV node 不能移除右側旁路。這是機轉示意，不代表所有 AP 都具有高危順傳能力。</desc>
@@ -64,7 +64,45 @@
 <text x="390" y="247" text-anchor="middle" font-size="17" font-weight="bold" fill="#264f45">Ventricle：同時承受兩路的傳導結果</text>
 </svg>
 </div>
-<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 有些 AF impulses 經 AV node，有些經 AP，有些產生 fusion；圖中不假設兩條路每次皆能傳導。危險來自具高順傳能力的 AP，並非所有 WPW pattern 均等風險。</figcaption>
+<div class="af-mobile-conduction" role="group" aria-label="手機版前激發心房顫動雙通道與 AV node 阻斷後的反事實比較">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 550" role="img" aria-labelledby="af-mobile-flow-title af-mobile-flow-desc">
+<title id="af-mobile-flow-title">Pre-excited AF：心房衝動分別經 AV node 與能順傳的 accessory pathway 抵達心室</title>
+<desc id="af-mobile-flow-desc">上方為快速不規則 AF 訊號，中間明確分為 AV node 的遞減傳導限速，以及僅在旁路能順傳時成立的 accessory pathway。兩路可一起形成變動的 QRS。下方的反事實顯示阻斷 AV node 不會同時阻斷 AP，具有高順傳能力的 AP 可能造成危險的極短 RR 與 ventricular fibrillation。此圖不量化衝動數目，也不是病人的 ECG。</desc>
+<rect width="360" height="550" rx="11" fill="#f8fbfa"/>
+<rect x="22" y="18" width="316" height="66" rx="10" fill="#fff3ed" stroke="#b96b48" stroke-width="1.6"/>
+<text x="180" y="43" font-size="19" text-anchor="middle" fill="#783f28" font-weight="700">AF：快速、不規則心房衝動</text>
+<text x="180" y="65" font-size="13" text-anchor="middle" fill="#783f28">不是固定的 AVRT 再入迴路</text>
+<path d="M180 84 V101 M180 101 H93 V126 M180 101 H267 V126" fill="none" stroke="#5b6d6d" stroke-width="3"/>
+<path d="M88 119 L93 128 L98 119 M262 119 L267 128 L272 119" fill="none" stroke="#5b6d6d" stroke-width="2.5"/>
+<rect x="13" y="132" width="158" height="157" rx="11" fill="#eaf4f8" stroke="#3d839a" stroke-width="1.5"/>
+<rect x="189" y="132" width="158" height="157" rx="11" fill="#fff0e6" stroke="#b86b46" stroke-width="1.5"/>
+<text x="92" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#17536a">AV node</text>
+<text x="92" y="183" text-anchor="middle" font-size="13" fill="#17536a">decremental conduction</text>
+<text x="92" y="204" text-anchor="middle" font-size="14" fill="#17536a">限制下傳速率</text>
+<path d="M36 228 h22 m18 0 h18 m18 0 h36" fill="none" stroke="#3d839a" stroke-width="3"/>
+<path d="M58 218 v20 M112 218 v20" stroke="#3d839a" stroke-width="3"/>
+<text x="92" y="264" text-anchor="middle" font-size="12" fill="#17536a">部分衝動無法下傳</text>
+<text x="268" y="160" text-anchor="middle" font-size="17" font-weight="700" fill="#934824">Accessory pathway</text>
+<text x="268" y="183" text-anchor="middle" font-size="13" fill="#934824">僅當 AP 可順傳</text>
+<text x="268" y="204" text-anchor="middle" font-size="14" fill="#934824">短 ERP 可快速下傳</text>
+<path d="M205 228 h125" fill="none" stroke="#b86b46" stroke-width="2"/>
+<path d="M216 217 v22 M239 217 v22 M270 217 v22 M283 217 v22 M316 217 v22" stroke="#b86b46" stroke-width="3"/>
+<text x="268" y="264" text-anchor="middle" font-size="12" fill="#934824">非所有 AP 都具高危性</text>
+<path d="M92 289 V311 H180 V335 M268 289 V311 H180" fill="none" stroke="#58706b" stroke-width="3"/>
+<path d="M175 327 L180 337 L185 327" fill="none" stroke="#58706b" stroke-width="2.5"/>
+<rect x="24" y="339" width="312" height="63" rx="9" fill="#edf4f0" stroke="#608f80" stroke-width="1.4"/>
+<text x="180" y="364" text-anchor="middle" font-size="17" font-weight="700" fill="#28584d">Ventricle：兩路競爭／融合</text>
+<text x="180" y="388" text-anchor="middle" font-size="13" fill="#28584d">可產生 irregular、寬度不一的 QRS</text>
+<path d="M180 402 V419" fill="none" stroke="#a45539" stroke-width="2.5"/>
+<path d="M175 413 L180 421 L185 413" fill="none" stroke="#a45539" stroke-width="2.5"/>
+<rect x="16" y="425" width="328" height="106" rx="10" fill="#fff1ed" stroke="#b2634b" stroke-width="1.8"/>
+<text x="180" y="449" text-anchor="middle" font-size="17" font-weight="700" fill="#8b3829">若給 AV nodal blocker</text>
+<text x="180" y="473" text-anchor="middle" font-size="13" fill="#8b3829">AV node 受抑制 ≠ AP 同時被封住</text>
+<text x="180" y="496" text-anchor="middle" font-size="14" font-weight="700" fill="#8b3829">高順傳 AP → 極短 RR、VF 風險</text>
+<text x="180" y="517" text-anchor="middle" font-size="11" fill="#8b3829">條件式機轉示意，非定量 ECG 或用藥演算法</text>
+</svg>
+</div>
+<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 手機版改成完整可視的雙通道與 AV nodal blockade 反事實，不需左右捲動。 有些 AF impulses 經 AV node，有些經 AP，有些產生 fusion；圖中不假設兩條路每次皆能傳導。危險來自具高順傳能力的 AP，並非所有 WPW pattern 均等風險。</figcaption>
 </figure>
 
 ## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
