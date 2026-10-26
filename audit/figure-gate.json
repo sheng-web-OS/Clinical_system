@@ -563,15 +563,24 @@
       "rights_decision": "mixed: Silverman ECG CC BY 4.0; AHA algorithm link_or_original_only; newly authored educational flow",
       "items": [
         {
-          "locator": "AHA 2025 Adult Tachyarrhythmia With a Pulse Algorithm (Figure 6, official PDF, official PDF at www.heart.org); and 2025 ALS §15–16 plus 2023 AF §10.6 exclusions",
+          "locator": "2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm and adult advanced life support §15–16; 2023 AF guideline §10.6. Diagram A is independent editorial reconstruction, no AHA artwork reproduced.",
           "source_token": "Adult Tachyarrhythmia With a Pulse Algorithm",
           "mode": "illustrated",
           "anchor": "wct-acls-main-algorithm",
           "caption_token": "2025 AHA",
-          "teaching_role": "Place the complete two-decision tachyarrhythmia-with-a-pulse branching logic immediately before discussing why causality, QRS width and adenosine eligibility are separate questions. Provide desktop flowgraph, mobile independent reading flow and prominent original official PDF, instead of hiding primary source in later ECG caption.",
-          "scope_limit": "Original AHA image cannot be mirrored absent a license; reader diagram is new educational layout rather than the AHA original. Polymorphic VT, pre-excited AF, and pulseless arrest require exclusions shown below; stable WCT antiarrhythmic recommendations are not interchangeable with pre-excited AF management. Not a bedside substitute for current protocol.",
+          "teaching_role": "A focused decision flow showing pulse loss, sustained polymorphic VT unsynchronized shock, other unstable tachyarrhythmia synchronized cardioversion, and stable handoff to a separate ECG medication diagram; distinct desktop and mobile SVG connectors with explicit decision branch labels.",
+          "scope_limit": "Original educational diagram, not the AHA official image. Pulseless arrest rhythms can be shockable or nonshockable; sustained polymorphic VT requires immediate unsynchronized shock with a pulse; pre-excited AF attributable instability needs synchronized cardioversion. Does not replace bedside ACLS training.",
           "original_source_url": "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
           "source_copyright_decision": "link_or_original_only"
+        },
+        {
+          "locator": "AHA 2025 Adult ALS §15 WCT (stable regular monomorphic adenosine may be considered IIb; irregular/polymorphic contraindications); 2023 ACC/AHA/ACCP/HRS AF Guideline §10.6 pre-excited AF",
+          "source_token": "2025 AHA",
+          "mode": "illustrated",
+          "anchor": "wct-acls-stable-wct-algorithm",
+          "caption_token": "2025 Adult ALS",
+          "teaching_role": "Figure B stands immediately before regular-monomorphic explanation and shows stable QRS >= 120 ms, narrow vs wide, limited monitored adenosine Class IIb and the irregular/pre-excited AF drug safety exceptions via connected YES/NO branches.",
+          "scope_limit": "Not for unstable arrhythmia; not evidence of SVT diagnosis; does not recommend adenosine in irregular or polymorphic WCT; stable pre-excited AF drug choices require guideline context and physician judgment. No AHA original artwork reused."
         },
         {
           "locator": "Silverman et al. 2018 Figure 1-2 original CC BY 4.0 irregular WCT and post-cardioversion preexcitation ECG; cross-check 2025 AHA ALS §15–16 / official Adult Tachyarrhythmia With a Pulse Algorithm and Pocket Medicine 9E PDF pp.67–68",

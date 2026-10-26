@@ -71,6 +71,18 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 本次方案只在**建置端**連到公共學術存放庫，發行站點由 Cloudflare 提供三張本地 JPEG；Git 儲存可重建的下載規格、預期尺寸、來源與教學契約，非二進位 blob。由 `site/build.py` 在正式建置中執行圖像完整性檢查，搭配既有產出連結驗證。GitHub Issue #79 與 PR #78 的實際 390px／桌面截圖、`naturalWidth`、ECG 醫學判讀與來源授權門檻**仍保留**；不能因圖片改為本站來源就宣稱手機或獨立醫學審查通過。AHA 成人 tachyarrhythmia 的官方原圖僅連到 AHA 原始來源；另行製作的 WCT/ACLS 決策流程已在網站正文內直接顯示，未重製 AHA 圖像或自行宣稱 AHA 認證。
 
+## 2026-10-27｜主流程圖重新設計：從一張資訊牆拆成兩張決策圖
+
+使用者回饋：已公開的第一版主圖雖有 YES／NO 與來源，卻把 pulse、電擊模式、causality、QRS、adenosine、pre-excited AF 同時排在一起；手機版更接近逐段文字卡，而非可追蹤的臨床分岔。原先通過的 DOM／不溢位檢查不代表閱讀理解通過。
+
+此次修訂把教學任務分開：
+- [**圖 A：何時不能等確診？**](integrated/2026-10-26-wct-acls-decision.md#wct-acls-main-algorithm)：pulse → sustained polymorphic VT（立即 unsynchronized shock）→ tachyarrhythmia-caused instability（通常 synchronized cardioversion，含 unstable pre-excited AF）→ stable 轉入圖 B。Arrest 路徑不把 pulseless VT／VF 和非可電擊節律混為一談。
+- [**圖 B：穩定時的藥物試探界線**](integrated/2026-10-26-wct-acls-decision.md#wct-acls-stable-wct-algorithm)：stable → QRS ≥120ms → regular 且 monomorphic 的 WCT 才能考慮 monitored adenosine（2025 AHA Class IIb），其餘 irregular/polymorphic WCT 不應用 adenosine；若為 pre-excited AF，需回到 2023 AF guideline 的 ibutilide／procainamide 與 AV nodal blockade 禁忌。
+
+**圖的身份**：兩張均為本站直接用 SVG/HTML 編排的原創教學決策圖；不是 AHA 官方 Figure 6 的複製、翻譯圖或 AHA 授權商品。<https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf> 為官方原圖入口。指南證據見 <https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support> 及 <https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/>。
+
+**驗收必須分層**：讀者在桌面與 390px 手機上能沿箭頭走完分流、例外沒有被錯放、SVG 中文沒有溢出，是視覺 QA；醫學完整性、來源與治療界線另審；不因 CI PASS 就宣稱已完成獨立醫師 peer review。若此分支未合併／部署，本文只描述候選修訂，不得聲稱正式版已更新。
+
 ## 2026-10-27｜WCT／ACLS 主圖正式發布核對
 
 - **已發布的主圖**：`xiaoma-reading-wct-acls-decision.html#wct-acls-main-algorithm`，由已合併 [PR #96](https://github.com/sheng-web-OS/Clinical_system/pull/96) 建立，含桌面 SVG、手機版直式判斷分支，以及放在圖首的 [AHA 官方流程圖原檔](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)。發布清單 `required_primary_visual` 要求此圖、圖說、來源連結、desktop/mobile 版本同時存在，否則拒絕建置。
