@@ -14,7 +14,7 @@
 | 2026-07-21 | 同一顆 octreotide，為什麼既能止瀉又能促動？ | 藥理學精要閱讀 | conversation_only |
 | 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-diuretics.md` |
 | 2026-07-20 | 胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-pancreatitis.md` |
-| 2026-07-19 | 肝臟被占據，為什麼最突出的卻是 ALP？ | 小麻閱讀（9E）；Cholestasis 續篇 | conversation_only |
+| 2026-07-19 | 肝臟被占據，為什麼最突出的卻是 ALP？ | 小麻閱讀（9E）；Cholestasis 續篇 | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-19-infiltrative-pattern-user-supplied.md`；Figure 3-4 視覺核對與醫學限定見同目錄 `2026-07-19-infiltrative-pattern-review.md`，未公開發布 |
 | 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | conversation_only |
 | 2026-07-19 | 我們看見的是病程，還是病程留下的訊號？ | 小麻閱讀（9E）；chronic HBV 續篇 | conversation_only |
 | 2026-07-18 | HBV phase，不是在替慢性肝炎分期 | 小麻閱讀（9E） | conversation_only |
@@ -48,3 +48,8 @@
 ### 2026-10-26 增量回收（Constipation）
 
 作者於 2026-10-26 對話再次貼出 2026-07-26 全文，已逐字存入私人 `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`（commit `3fa97afb07d50ebdc453033d3efa18fcae0facea`）。這是 **user-supplied source snapshot**，不等於確認 Facebook 已刊版本、`content/xiaoma-reading/originals` 正稿或公開網站頁面。下一步按 EPQC 查核原書圖表及現行 AGA／ACG、ASCRS 來源；特別注意 fecal impaction／mechanical obstruction、defecatory disorder testing 與腰椎骨折相關神經危險徵象。不要依舊的『六篇已入庫、十五篇待移轉』靜態數字判斷新的 source snapshot 數量。
+
+
+### 2026-10-26 增量回收（Infiltrative liver pattern）
+
+使用者於本輪對話提供 2026-07-19〈肝臟被占據，為什麼最突出的卻是 ALP？〉全文及 *Pocket Medicine* 9E Figure 3-4 截圖。正文已原文存入 `archive/xiaoma-reading/intake/2026-07-19-infiltrative-pattern-user-supplied.md`，原圖已目視核對分類與臨床 workup；獨立風險及證據審查請見 `2026-07-19-infiltrative-pattern-review.md`。此狀態**不是 Facebook 正式稿已核對、不是 Git 中已有原圖二進位檔、也不是公開出版或已完成醫學同儕審查**。上游 liver tests 與 cholestasis 文章仍另行回收。
