@@ -50,6 +50,7 @@ AI 原創圖可以補原書未展開的因果中介、時間序列或病例比�
 - 私有機讀清單：audit/figure-gate.json。機器執行器：site/figure_gate.py，由 site/catalog.py 的 load_pages 啟動，因此 unit tests 和 tools/build_site.sh 的正式建置都會檢查。
 - 重要圖表 item 要有：原書頁碼及圖／表身分、可在公開來源頁找到的文字定位、為什麼此圖能改變推理、適用條件、正文對應圖（需真實 figure id 與 figcaption）或原始圖表 URL。來源頁必須在 site/pages.json 公開發布，文章必須有能點到來源頁的連結。
 - 圖片授權、原圖完整像素核對、醫學事實與教學效果屬另外的人工或獨立審查；本 gate 只驗證留下可追蹤的承諾和相應輸出，不能自行判定是否漏了某張尚未被辨識的圖。
+- **實際畫面 QA（2026-10-27）**：在既有 GitHub Actions 的 build 後，以 `tools/visual_qa_browser.py` 與 Chromium 實際渲染 WPW → pre-excited AF → WCT 三篇 390／768／1280px；檢查 document viewport 溢出、每張可見的 `<img>` 自然尺寸、手機三個 WPW 原圖局部視窗，並將 `visual-qa-report.json` 與逐圖 screenshots 留存為 CI artifact。**檢查失敗時 CI 失敗**；通過僅證明可觀測的圖像載入與版面限制，仍需人員依本節醫學與教學語意逐張審查，並另外確認第三方原圖權利。其他既有文章尚未納入這項 browser QA，不得宣稱全站已完成。
 
 ## 舊文轉入門檻的過渡
 

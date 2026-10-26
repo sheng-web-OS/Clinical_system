@@ -536,3 +536,50 @@
  .hbv-inference-step{padding:16px 14px}
  .hbv-inference-step>strong,.hbv-contrast-result strong{font-size:15px}
 }
+
+/* WPW case comparison: source figure remains intact on desktop; phone shows
+   the original three panels individually without tiny text or sideways panning.
+   Crops only affect viewport presentation, not the original image file. */
+.article .wpw-mobile-focus{display:none}
+.article .wpw-original-overview{padding:18px;background:white}
+.article .wpw-original-overview a{display:block;max-width:750px;margin:auto}
+.article .wpw-original-overview img{display:block;width:100%;height:auto;max-width:100%;border:0;border-radius:0}
+@media(max-width:650px){
+ .article .wpw-source-reading{margin-inline:-6px}
+ .article .wpw-original-overview{display:none}
+ .article .wpw-mobile-focus{display:grid;gap:0;min-width:0}
+ .article .wpw-focus-case{display:block;padding:16px 13px 18px;min-width:0;background:var(--surface)}
+ .article .wpw-focus-case+.wpw-focus-case{border-top:1px solid var(--line)}
+ .article .wpw-focus-case header{display:grid;gap:3px;margin-bottom:10px;line-height:1.45}
+ .article .wpw-focus-case header small{font-size:11px;font-weight:760;letter-spacing:.035em;color:var(--accent)}
+ .article .wpw-focus-case header strong{font-size:16px;color:var(--ink)}
+ .article .wpw-crop{position:relative;width:100%;max-width:390px;aspect-ratio:250 / 446;overflow:hidden;background:#fff;margin:auto;border:1px solid #d8dfdb}
+ .article .wpw-crop img{position:absolute;top:0;left:0;display:block;width:300%!important;max-width:none!important;height:auto!important;min-width:0;border:0;border-radius:0}
+ .article .wpw-crop-2 img{transform:translateX(-33.333%)}
+ .article .wpw-crop-3 img{transform:translateX(-66.667%)}
+ .article .wpw-focus-case p{font-size:14px;line-height:1.8;margin:12px 0 0!important;color:var(--ink)}
+ .article .wpw-source-reading figcaption{padding:15px 14px 19px}
+}
+
+
+/* AF counterfactual figure: no fixed-width SVG and no hidden horizontal panel. */
+.article .af-causal{padding:20px 22px 22px;display:grid;gap:14px;min-width:0}
+.article .af-causal-input{padding:14px 17px;border:1px solid var(--line);background:var(--bg);display:grid;gap:3px;text-align:center;overflow-wrap:anywhere}
+.article .af-causal-input strong{font-size:.92em;line-height:1.6}
+.article .af-causal-input span{font-size:.77em;color:var(--muted)}
+.article .af-causal-branch{text-align:center;font-size:.78em;color:var(--muted);font-weight:650;line-height:1.6}
+.article .af-causal-branch span{display:block;font-size:24px;line-height:1.1;color:var(--accent)}
+.article .af-causal-paths{display:grid;gap:12px;min-width:0}
+.article .af-causal-path{border:1px solid var(--line);border-top:4px solid var(--brand);padding:15px 16px 14px;background:var(--surface);min-width:0;overflow-wrap:anywhere}
+.article .af-causal-path.af-causal-ap{border-top-color:var(--accent)}
+.article .af-causal-path h3{font-size:15px;line-height:1.5;margin:0 0 8px;color:var(--ink)}
+.article .af-causal-property{font-size:13px;line-height:1.65;margin:0 0 11px!important;color:var(--muted)}
+.article .af-causal-result{font-size:14px;line-height:1.65;margin:0!important;font-weight:650;color:var(--ink)}
+.article .af-causal-counterfactual{padding:15px 17px;border:1px solid var(--line);background:var(--bg);min-width:0}
+.article .af-causal-counterfactual>strong{display:block;font-size:15px;line-height:1.6}
+.article .af-causal-change{display:grid;gap:8px;margin:11px 0}
+.article .af-causal-change>span{border-left:4px solid var(--brand);background:var(--surface);padding:9px 12px;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+.article .af-causal-change>span+span{border-left-color:var(--accent)}
+.article .af-causal-counterfactual p{font-size:13px;line-height:1.8;margin:6px 0 0!important}
+@media(min-width:700px){.article .af-causal-paths,.article .af-causal-change{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.article .af-causal{padding:15px 13px 18px;gap:11px}.article .af-causal-input{text-align:left;padding:12px 13px}.article .af-causal-path{padding:12px 13px}.article .af-causal-counterfactual{padding:12px 13px}.article .af-causal-path h3{font-size:14px}}
