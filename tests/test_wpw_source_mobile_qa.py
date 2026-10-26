@@ -43,6 +43,8 @@ class SourceFigurePhoneReading(unittest.TestCase):
         self.assertIn("translateX(-66.667%)", css)
         self.assertNotIn(".wpw-crop-1::after", css)
         self.assertNotIn(".wpw-crop-2::before", css)
+        self.assertIn("source annotation clipped vertically in mobile WPW crop",
+                      BROWSER_QA.read_text(encoding="utf-8"))
         self.assertIn("原始英文標題與條件改由上方標題", WPW.read_text(encoding="utf-8"))
         self.assertIn("max-width:none!important", css)
 
