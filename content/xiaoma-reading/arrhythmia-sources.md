@@ -35,6 +35,18 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 原刊 ECG 圖為 CC BY 4.0，作者 Silverman A, Taneja S, Benchetrit L, Makusha P, McNamara RL, Pine AB，DOI 10.1177/2324709618802870。本站 Figure 02 已透過原始 SAGE 圖檔 URL 直接顯示 Figure 1–3（未裁切）；點圖可放大。期刊 [PDF 第 2 頁](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870#page=2) 亦可對照圖說。遠端圖像的手機瀏覽與跨站存取仍須於發布前驗證。
 
+## 2026-10-27｜WCT／ACLS 的核心原圖位置與主流程可見性
+
+**2025 AHA 正式主流程**：[Adult Tachyarrhythmia With a Pulse Algorithm，原始 PDF](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)。本文已逐項對照：初始 airway／氧合／監測／12-lead；是否由 persistent tachyarrhythmia **causing** shock、低血壓、意識改變、缺血性胸痛或 acute HF；是則進入 synchronized cardioversion，否則才進入 QRS ≥0.12 秒寬窄判斷；窄 QRS 的規則性限制；寬 QRS 僅 stable regular monomorphic 可考慮 adenosine；持續 refractory 需重新評估病因、能源、藥物及會診。
+
+**正式圖像的權利決策**：AHA [ECC 圖表重製許可規則](https://www.heart.org/en/about-us/statements-and-policies/guidelines-for-use-of-american-heart-association-emergency-cardiac-care) 與 [網站著作權規範](https://www.heart.org/en/about-us/statements-and-policies/copyright-permission-guidelines) 均有單獨重製／授權要求。正式 AHA PDF **只以原始官方連結提供**，不在 Clinical OS 上複製、鏡像、轉譯圖檔或宣稱已取得許可。公開 PDF 可閱讀不等於可重新發布原像素。
+
+**本站 Figure「wct-acls-main-algorithm」**：獨立重新構成的教育版 *decision logic*，不是 AHA 圖表的外觀複刻或正式翻譯；將指引主分流用與官方圖不同的視覺配置示出，桌面與手機各自有完整可讀版本。**不可省略的差異及限制**：2025 AHA §15 中，unstable／irregularly irregular／polymorphic WCT 不給 adenosine；sustained polymorphic VT 依 §16 即使仍有 pulse 也需 immediate unsynchronized high-energy shock；pre-excited AF 依 [2023 AF §10.6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/) 禁用 AV nodal blockers 與 IV amiodarone，不能直接套用 stable WCT 類別可考慮的輸注藥物；無脈搏則不適用 tachyarrhythmia-with-a-pulse 流程。
+
+**與病例 ECG 的功能分工**：主流程圖先建立安全決策的分岔位置，後面的 Silverman 2018 發作 ECG 則檢驗眼前是否 *irregular WCT*、哪些診斷尚待後續 EP study。這是兩種不同的教學證據，不可用 ECG 代替主流程，也不可用主流程取代 ECG 的機轉辨識。
+
+**QA 邊界**：有來源比對及程式結構驗證不代表頁面手機截圖已目視通過；沒有獨立醫學專科審閱，不得把作者／AI 審核冒充該驗收。
+
 ## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（已列入發布清單；圖片更新待合併）
 
 - **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，均標示 CC BY 4.0；原圖未裁切、未重畫。
