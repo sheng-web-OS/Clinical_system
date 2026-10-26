@@ -2,6 +2,33 @@
 
 從 Pocket Medicine 的一句定義、一張表或一個臨床分流，追問它背後的生理前提。每篇文章從一個問題開始，保留完整論述，讓觀察、機轉與決策之間的關係可以被重新推導。
 
+## 心律急症系列｜由傳導機轉走到 ACLS
+
+三篇共用同一個問題：**AV node 與 accessory pathway 在目前 rhythm 扮演什麼角色？** 由傳導路徑開始理解 QRS，再用真實 pre-excited AF ECG 理解禁藥，最後回到 wide-complex tachycardia 中尚未確診時的安全行動。
+
+<div class="original-list">
+  <a class="original-card" href="integrated/2026-10-26-wpw-conduction-mechanism.md">
+    <span class="original-date">01／03 · 傳導機轉</span>
+    <strong>WPW：同一條旁路，為什麼能讓 QRS 又窄又寬？</strong>
+    <span>原創傳導圖，分開 sinus pre-excitation、orthodromic 與 antidromic AVRT。</span>
+    <span class="read-link">閱讀第一篇 →</span>
+  </a>
+  <a class="original-card" href="integrated/2026-10-26-preexcited-af.md">
+    <span class="original-date">02／03 · 真實 ECG 病例</span>
+    <strong>Pre-excited AF：AV node 原本可以阻斷，為什麼現在卻不能？</strong>
+    <span>依 Silverman 2018 四個 ECG 時點推進鑑別，附原刊 ECG 可放大連結與禁忌機轉。</span>
+    <span class="read-link">閱讀第二篇 →</span>
+  </a>
+  <a class="original-card" href="integrated/2026-10-26-wct-acls-decision.md">
+    <span class="original-date">03／03 · ACLS 決策</span>
+    <strong>還不知道是什麼，憑什麼治療</strong>
+    <span>以作者 2026/7/17 原始論證為核心，對讀 2025 AHA 分流與高危用藥邊界。</span>
+    <span class="read-link">閱讀第三篇 →</span>
+  </a>
+</div>
+
+[本系列原圖、病例與 guideline 來源核對](wct-acls-sources.md)。
+
 ## 最新整合閱讀
 
 <div class="original-list">
