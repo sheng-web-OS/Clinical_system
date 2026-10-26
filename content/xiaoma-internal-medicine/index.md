@@ -16,6 +16,10 @@
 
 兩篇以《Pocket Medicine》Figure 2-5 與 High PaCO₂ 病因表為骨架，將真實 PFO、MG、OHS 病例接回機轉和失效界線。原有基礎篇與國考題完整保留，新篇負責補足更深的生理推導。
 
+## 從呼吸生理走向心臟外科 ICU
+
+[氧合／有效換氣](lessons/2026-10-21-hypoxemia.md)讓我們先分清測量的是什麼；[酸鹼與代償](lessons/2026-10-23-acid-base.md)再解釋 pH 與混合障礙；[CABG 術後 lactate 14.8、ScvO₂ 95%](lessons/2026-10-27-cticu-abg-cabg-lactate.md)則用已發表病例，追問「正常或偏高的單一數字，為何不能保證組織灌流」。**這三篇形成先備 → 病例 → 床邊改判**的路線，卻不代表每位 CABG 病人的乳酸與 ScvO₂ 都有同樣原因。延伸到[唯一臨床知識地圖的循環分支](../clinical-os/index.md#perfusion)。
+
 ## 正在讀
 
 <!-- XIAOMA_PUBLISHED_LESSONS -->
