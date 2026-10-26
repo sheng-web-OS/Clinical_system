@@ -132,3 +132,20 @@ The primary care setting is **postoperative cardiac and thoracic surgery**. The 
 - Before first V1 freeze, source coverage should be sufficient to compose the entire clinical narrative. It must NOT require the user to remind the writer to explain basics (e.g., PAC/ScvO₂, lactate vs BE, FiO₂, V/Q, PEEP). Conversely, avoid dumping the entire IBCC chapter's checklist into one article.
 - **The CABG initial V1 is already immutable** (`b9f5ee1c9ab0719da4f657d7990c1a199c28cf92`). The IBCC research layer is a **post-freeze source addition**; do not retroactively mark that draft as if it had been produced with these sources. Later V2 should state which fixes derive from IBCC, original paper or independent reviewer.
 - Separate clinician-independent clinical QA / artifact score / reader comprehension. IBCC consultation does not satisfy any of these gates by itself.
+
+
+## 6. 2026-10-26 讀者脈絡修訂／持續任務的落地狀態
+
+讀者確認 CTICU ABG 系列方向，要求「按照脈絡修改與建立任務」。本回合已完成第三版 **`cabg-lactate-v3-causal-revision.md`**（commit `58f68a21aee95d354cf4a43b50eefb7a7da65c79`），以一條生理／臨床決策鏈取代 V2 的分散推演：病人不穩／需要立即辨認外科危險 → 檢體與測量身分 → Hb/SaO₂/CO/DO₂ 和靜脈取樣界線 → lactate vs BE 同步性與時間證據 → 不同 CABG euDKA 真實反例 → 新證據如何改判。原始 V1／V2 保留，**V1 81/100 仍是非盲式作者端初始評估；不得改寫為 V3 首稿品質**。V3 不在 public whitelist，不可宣稱上線。
+
+**調度分離**：已另建一個專門做 CTICU ABG 系列來源核對、脈絡修訂與首次成稿 QA 的每週編輯任務；原「小麻內科國考」每日任務與既有週研發報告均保留。此編輯任務只推進 PR #56 及其實質教材／來源驗收，不另外重做內科日更、國考題庫、閱覽週報，亦不將 schedule triggered 視作產物已交付。
+
+**最近阻塞（按優先級）**：
+
+1. 真正回看原始 2025 CABG PDF Table 1 / Fig 1 並就未定義 T6 留下解釋界線：本輪公開 PDF 重取失敗，沿用先前私有已目視的核對紀錄，不能對外宣稱本輪重新完成原圖審查；必要時換合法可讀版核對。
+2. Pocket 9E acid–base p158–162 / Figure 4-1 的當次圖像核讀與正式來源頁定位；不擅自公開原像素。
+3. 對 `cabg-case3-v2-timeline.svg` 做實際 375–390px 裝置檢查、和一位具臨床資格或隔離的對抗式醫學審稿者審查 V3。確認圖中曲線以 category 時點表示，不把不同 T 區間畫成等時距。已有 SVG 靜態結構不等於手機 QA。
+4. 經審核對 V3 進行必要集中改稿，維持單一命題；只要有未解醫學 P0/P1、來源／圖表硬門檻未通過，就 HOLD，不能因單輪自評高分放行。
+5. 第一篇放行或重要阻塞有可追溯處理後，再推進「Hb/CO/DO₂ 與 SpO₂」以及肺切除術後低氧的獨立首次成稿凍結試驗，不延誤既有內科 A/B 考前覆蓋。
+
+每次任務須交付真實的 GitHub 文章／Figure／來源修正（或具可驗證依據的硬阻塞報告），記錄 QA、是否部署與下次優先事項。不得建立獨立常駐 agent、系統性標記庫或第二個課程目錄。
