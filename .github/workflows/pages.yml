@@ -8,7 +8,9 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: medical-editorial
+  # Distinct pull requests must finish their own QA; only supersede stale
+  # runs on the same branch or PR, not unrelated article reviews.
+  group: medical-editorial-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   build:
