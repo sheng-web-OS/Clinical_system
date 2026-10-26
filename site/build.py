@@ -121,9 +121,9 @@ def render_reader(page, body, headings):
     reference_link = '<a href="'+html.escape(references,quote=True)+'">來源與延伸閱讀</a>' if references else ''
     lessons = sorted((row for row in PAGES if row.get("collection") == page.get("collection") and row.get("date") and not row.get("exam")), key=lambda row: (row["date"], row["output"]))
     number = next((str(i).zfill(2) for i, row in enumerate(lessons, 1) if row["output"] == active), "")
-    destinations = ([("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考") ]
+    destinations = ([("index.html", "首頁"), ("knowledge-atlas.html", "知識地圖"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考") ]
                     if is_archive else
-                    [("index.html", "首頁"), ("knowledge-atlas.html", "知識脈絡"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-reading.html", "小麻閱讀") ])
+                    [("index.html", "首頁"), ("knowledge-atlas.html", "知識地圖"), ("xiaoma-internal-medicine.html", "內科國考"), ("xiaoma-reading.html", "小麻閱讀") ])
     top_links = ''.join('<a'+(' aria-current="page"' if active == dest else '')+' href="'+html.escape(dest,quote=True)+'">'+label+'</a>' for dest, label in destinations)
     brand = '<a class="reader-brand" href="index.html"><span class="brand-mark" aria-hidden="true">小</span>小麻閱讀<span>MEDICAL READING</span></a>'
     original_note = ('<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><p>本文保留 '+html.escape(page.get("date", "").replace("-", "."))+' 原稿。臨床處置請一併核對所附來源與現行指引。</p></aside>') if page.get("kind") == "historical_original" else ''
