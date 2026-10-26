@@ -1,6 +1,6 @@
 # 2026-10-21 對話直貼文章｜原稿接收清單
 
-狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、一篇 Constipation 已保存完整私人 source snapshot（未出版）、其餘十四篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
+狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、兩篇（Constipation、Cholestasis）已保存完整私人 source snapshot（未出版）、其餘十三篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
 
 本清單是接收及搬遷追蹤，不是已完成醫學事實查核、已確認唯一最終版本的證明。原文保留在本次 ChatGPT 對話；僅已核對確實寫入 Git 原稿檔案者標為 `imported`；不同歷史版本仍可能待比較。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
 
@@ -15,7 +15,7 @@
 | 2026-07-20 | 利尿效果不夠，為什麼下一步不一定是加量？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-diuretics.md` |
 | 2026-07-20 | 胰臟已經壞死，為什麼還不一定是 severe acute pancreatitis？ | 小麻閱讀（9E） | imported → `content/xiaoma-reading/originals/2026-07-20-pancreatitis.md` |
 | 2026-07-19 | 肝臟被占據，為什麼最突出的卻是 ALP？ | 小麻閱讀（9E）；Cholestasis 續篇 | conversation_only |
-| 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | conversation_only |
+| 2026-07-19 | Cholestasis，是主要病理過程，還是其他肝病的結果？ | 小麻閱讀（9E）；肝臟檢驗續篇 | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-19-cholestasis-primary-secondary-user-supplied.md`；Figure 3-3 已按上傳單張畫面核讀，待全頁／醫學／權利／出版驗收 |
 | 2026-07-19 | 我們看見的是病程，還是病程留下的訊號？ | 小麻閱讀（9E）；chronic HBV 續篇 | conversation_only |
 | 2026-07-18 | HBV phase，不是在替慢性肝炎分期 | 小麻閱讀（9E） | conversation_only |
 | 2026-07-17 | 還不知道是什麼，憑什麼治療 | 小麻閱讀（9E）；WCT／ACLS | conversation_only |
@@ -48,3 +48,8 @@
 ### 2026-10-26 增量回收（Constipation）
 
 作者於 2026-10-26 對話再次貼出 2026-07-26 全文，已逐字存入私人 `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`（commit `3fa97afb07d50ebdc453033d3efa18fcae0facea`）。這是 **user-supplied source snapshot**，不等於確認 Facebook 已刊版本、`content/xiaoma-reading/originals` 正稿或公開網站頁面。下一步按 EPQC 查核原書圖表及現行 AGA／ACG、ASCRS 來源；特別注意 fecal impaction／mechanical obstruction、defecatory disorder testing 與腰椎骨折相關神經危險徵象。不要依舊的『六篇已入庫、十五篇待移轉』靜態數字判斷新的 source snapshot 數量。
+
+
+### 2026-10-26 增量回收（Cholestasis）
+
+作者在本次對話重新提供 2026-07-19 全文與一張《Pocket Medicine》9E Figure 3-3（Approach to abnormal liver tests with cholestatic pattern）的截圖。原文**不改一字**保存在私人 `archive/xiaoma-reading/intake/2026-07-19-cholestasis-primary-secondary-user-supplied.md`；逐分支與現行指引的查核留在 `audit/cholestasis-20260719-pocket9e-figure3-3.md`。上傳圖像已於對話中目視核讀，但因本次 GitHub 寫入管道沒有接收該附件二進位檔，**不可聲稱原圖已入庫**；全頁、圖表註腳、版權、臨床審稿與 Facebook 正式版本仍待確認。此稿保持 HOLD，不加入 `site/pages.json`，也不宣稱 Cloudflare 已發布。
