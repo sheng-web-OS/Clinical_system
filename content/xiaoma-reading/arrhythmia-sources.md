@@ -6,7 +6,7 @@
 
 本輪實際目視 PDF 第 66、67、68 頁，核對 Figure 1-3 Approach to SVT、Treatment of Stable SVT 下方星號註腳、Accessory Pathways 定義／迴路／治療，以及 WCT etiologies 與診斷限制。第 67 頁明列 concealed pathway、orthodromic／antidromic AVRT 和 AF 經旁路下傳；第 68 頁提醒 hemodynamics 不能可靠排除 VT。
 
-Figure 1-3 的藥物反應節點是教學壓縮，不能單靠終止反應診斷 AVRT。其上文也保留 atrial tachycardia 可終止的例外。本系列改以開放授權、已出版的 WPW 傳導與 ECG 圖、以及 Silverman 2018 病例真實 ECG 呈現路徑角色和風險資訊；未重製 Pocket Medicine 原書流程圖、ECG 範例或完整治療表。第 67–68 頁與本文無直接關係的 Brugada／VT 長期處置不是本系列範圍。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
+Figure 1-3 的藥物反應節點是教學壓縮，不能單靠終止反應診斷 AVRT。其上文也保留 atrial tachycardia 可終止的例外。本系列以期刊刊載的 WPW 傳導與 QRS **示意圖**配合 Silverman 2018 病例**實測 ECG** 呈現路徑角色與風險資訊。兩種圖證不能互相冒充；未重製 Pocket Medicine 原書流程圖、ECG 範例或完整治療表。第 67–68 頁與本文無直接關係的 Brugada／VT 長期處置不是本系列範圍。[出版社第九版入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
 
 ## 最新急救與 AF 指引
 
@@ -37,7 +37,7 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 ## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（已列入發布清單；圖片更新待合併）
 
-- **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，均標示 CC BY 4.0；原圖未裁切、未重畫。
+- **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，Wikimedia 頁面均標示 CC BY 4.0；但 Cureus 圖 3／4 原文 caption 指出圖片為取得第三方作者許可後重製，該許可是否涵蓋本站的公開裁切呈現仍需核對。Figure 01 手機版使用原圖分面板視窗而不修改原始檔案像素，圖說已標示此顯示變更。這是期刊教學示意，並非 Khan 病人的實測 ECG。
 - **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，PubMed Central [Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。2026-10-27 生產環境視覺 QA 已證實原 SAGE CDN 連結破圖，已改用 PubMed Central 原始文章圖檔入口。原刊圖仍未以二進位 blob 寫入 Git；現改用 `tools/fetch_arrhythmia_figures.py` 在每次網站建置時驗證原始 JPEG（753×536、753×341、753×343）並產生發行站內的 `assets/` 檔案；任何一張圖下載或校驗失敗時阻擋整次建置。新的公網渲染與手機判讀 QA 仍須獨立執行，不因建置通過即宣稱視覺品質合格。
 - **Figure 04（WCT 臨床證據）**：使用同一 2018 病例 Figure 1/2，表達處置前與處置後證據落差。不要把前後圖說混成兩個 WCT 診斷實驗。
 - **AHA 2025 成人 tachyarrhythmia 原圖**：仍維持[原始 PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)直接引用，不鏡像、不重製完整流程圖；公開可讀不等於自由授權再利用。
@@ -46,12 +46,12 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 ## 現行 Figures 對應範圍
 
-- [**Figure 01：WPW 傳導路徑與 ECG 原圖**](integrated/2026-10-26-wpw-conduction-mechanism.md#wpw-pathway-figure)：Khan 等人 2024 開放授權的原始學術圖，直接呈現 sinus pre-excitation、orthodromic AVRT 和 antidromic AVRT；另補正常傳導對照原圖。不是 Pocket Medicine 的複製。
+- [**Figure 01：WPW 傳導路徑與 ECG 原圖**](integrated/2026-10-26-wpw-conduction-mechanism.md#wpw-pathway-figure)：Khan 等人 2024 刊載的傳導與示意 QRS 圖，對照 sinus pre-excitation、orthodromic AVRT 和 antidromic AVRT；另補正常傳導對照原圖。不是 Pocket Medicine 的複製。
 - [**Figure 02：Silverman ECG 四時點真實原圖**](integrated/2026-10-26-preexcited-af.md#af-ecg-evidence)：直接嵌入 Figure 1-A1／A2、Figure 2、Figure 3，連接現場證據與轉律後／消融後資訊。
 - [**Figure 03：pre-excited AF 的 AV node 與 AP 兩條傳導出口**](integrated/2026-10-26-preexcited-af.md#af-two-exits)：保留獨立原創 SVG 解釋傳導機轉，非個案量測的 EP signal。
 - [**Figure 04：WCT 初始 ECG 與轉律後 ECG**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：直接嵌入 Silverman 2018 原圖，強調 irregular WCT 的可觀察操作邊界與後驗 delta wave 的證據時間差；AHA ACLS 官方流程維持原始連結。
 
-**來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，但**尚未完成本次圖片更新的正式公網部署與手機載入驗收**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
+**來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，且 Silverman ECG 已在 PR #88 改採建置時保存為網站靜態資產；但**手機實際閱讀與影像判讀驗收尚未完成**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
 
 ## 2026-10-27｜原始 ECG 圖源失效修復與剩餘風險
 
