@@ -1,0 +1,648 @@
+{
+  "private_preview": true,
+  "conditions": 8,
+  "overflowFailures": 0,
+  "checks": [
+    {
+      "mode": "default",
+      "width": 320,
+      "documentWidth": 320,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 272,
+          "scroll": 272
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 272,
+          "scroll": 272
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 272,
+          "scroll": 272
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 272,
+          "scroll": 272
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    },
+    {
+      "mode": "large-dark",
+      "width": 320,
+      "documentWidth": 320,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 272,
+          "scroll": 272
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 272,
+          "scroll": 272
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 272,
+          "scroll": 272
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 282,
+          "scroll": 282
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 272,
+          "scroll": 272
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    },
+    {
+      "mode": "default",
+      "width": 390,
+      "documentWidth": 390,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 342,
+          "scroll": 342
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 342,
+          "scroll": 342
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 342,
+          "scroll": 342
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 342,
+          "scroll": 342
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    },
+    {
+      "mode": "large-dark",
+      "width": 390,
+      "documentWidth": 390,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 342,
+          "scroll": 342
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 342,
+          "scroll": 342
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 342,
+          "scroll": 342
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 352,
+          "scroll": 352
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 342,
+          "scroll": 342
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    },
+    {
+      "mode": "default",
+      "width": 768,
+      "documentWidth": 768,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 487,
+          "scroll": 487
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    },
+    {
+      "mode": "large-dark",
+      "width": 768,
+      "documentWidth": 768,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 487,
+          "scroll": 487
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 487,
+          "scroll": 487
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    },
+    {
+      "mode": "default",
+      "width": 1440,
+      "documentWidth": 1440,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 788,
+          "scroll": 788
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    },
+    {
+      "mode": "large-dark",
+      "width": 1440,
+      "documentWidth": 1440,
+      "h1": 1,
+      "figures": [
+        {
+          "id": "pocket-copd-definitions-original",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-definition-boundaries",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "pocket-pft-original",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-volume-change",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-treatment-targets",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "pocket-copd-staging-original",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "copd-expiratory-time",
+          "width": 788,
+          "scroll": 788
+        },
+        {
+          "id": "pocket-copd-exacerbation-original",
+          "width": 788,
+          "scroll": 788
+        }
+      ],
+      "originals": [
+        {
+          "width": 1440,
+          "height": 565,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 840,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 305,
+          "src": "data:image/png;base64,"
+        },
+        {
+          "width": 1440,
+          "height": 1805,
+          "src": "data:image/png;base64,"
+        }
+      ],
+      "badAnchors": []
+    }
+  ],
+  "zooms": [
+    {
+      "id": "pocket-copd-definitions-original",
+      "open": true,
+      "originalWidth": 1440,
+      "scrollLeft": 1068,
+      "scrollTop": 0,
+      "footerReachable": true,
+      "insideDialog": true,
+      "closed": true,
+      "focusReturned": true
+    },
+    {
+      "id": "pocket-pft-original",
+      "open": true,
+      "originalWidth": 1440,
+      "scrollLeft": 1068,
+      "scrollTop": 112,
+      "footerReachable": true,
+      "insideDialog": true,
+      "closed": true,
+      "focusReturned": true
+    },
+    {
+      "id": "pocket-copd-staging-original",
+      "open": true,
+      "originalWidth": 1440,
+      "scrollLeft": 1068,
+      "scrollTop": 0,
+      "footerReachable": true,
+      "insideDialog": true,
+      "closed": true,
+      "focusReturned": true
+    },
+    {
+      "id": "pocket-copd-exacerbation-original",
+      "open": true,
+      "originalWidth": 1440,
+      "scrollLeft": 1068,
+      "scrollTop": 1057,
+      "footerReachable": true,
+      "insideDialog": true,
+      "closed": true,
+      "focusReturned": true
+    }
+  ],
+  "keyboardPan": true,
+  "escapeClose": true,
+  "answerToggles": 2,
+  "imageHashes": [
+    {
+      "path": "archive/xiaoma-internal-medicine/source-figures/copd-20261026/pocket-medicine-9e-copd-definitions.png",
+      "sha256": "28b77d730a1d013deb71c0a9c6258a36fa233779f3d6a961a995f53724dab95e",
+      "exact_match": true
+    },
+    {
+      "path": "archive/xiaoma-internal-medicine/source-figures/copd-20261026/pocket-medicine-9e-fig2-1-pft.png",
+      "sha256": "ba2c8227a38703adcf3e018bb02ed32242bbb0e3f0ff3736d34d44b0307e9795",
+      "exact_match": true
+    },
+    {
+      "path": "archive/xiaoma-internal-medicine/source-figures/copd-20261026/pocket-medicine-9e-copd-gold2024.png",
+      "sha256": "8cfede998cbfb56f8449b798e23f9f4759c10e995d3c1767ba970a314325e05f",
+      "exact_match": true
+    },
+    {
+      "path": "archive/xiaoma-internal-medicine/source-figures/copd-20261026/pocket-medicine-9e-copd-exacerbation.png",
+      "sha256": "62b7fdd002a0bf3e26c125e9187d4c5bfab6fc1a19d484660038e679a5a60806",
+      "exact_match": true
+    }
+  ],
+  "public_deployment": false,
+  "limits": "Local Chromium simulation, not physical iPhone, not independent medical peer review. Large type/dark are CSS simulations."
+}
