@@ -14,6 +14,49 @@ Wide QRS 不是診斷。它可能來自 VT、SVT with aberrancy、accessory-path
 
 然而，ACLS 並沒有等這些分類全部完成，才允許治療。這表示它真正管理的，不是已知病名的清單，而是：**當答案還不完整時，憑什麼開始行動？**
 
+<figure id="wct-acls-flowchart" class="acls-flowchart" role="group" aria-label="成人有脈搏心搏過速之床邊決策流程：脈搏、polymorphic VT、血流動力學不穩定、QRS 寬度與規則性">
+<div class="acls-flowchart-head">
+<span>CLINICAL ALGORITHM · 2025 ACLS + 2023 AF</span>
+<strong>還不知道 WCT 是什麼，現在能做什麼？</strong>
+<p>這是本站依指引重新建立的<strong>急救判斷流程</strong>，不是 AHA 官方流程圖。沿箭頭往下讀；每一個分叉，都必須改變實際治療或禁忌。</p>
+</div>
+<div class="acls-flowchart-body">
+<div class="acls-f-start"><span>START · FIRST MINUTE</span><strong>有 tachyarrhythmia：評估脈搏、灌流與 ECG</strong><small>維持 airway／必要時氧氣、監測 ECG/BP/SpO₂、IV access；有機會再取得 12-lead，不延誤必要電擊。</small></div>
+<div class="acls-f-down" aria-hidden="true">↓</div>
+<div class="acls-f-question"><span>01 · PULSE</span><strong>有脈搏嗎？</strong></div>
+<div class="acls-f-pair">
+<section class="acls-f-option acls-f-danger"><span>NO · 此處離開本流程</span><strong>無脈搏的 VF／VT → cardiac arrest algorithm</strong><p>立即 CPR、依可電擊節律給 unsynchronized defibrillation；不沿「with a pulse」流程開藥。</p></section>
+<section class="acls-f-option acls-f-continue"><span>YES · 繼續往下 <span aria-hidden="true">↓</span></span><strong>仍有脈搏：先檢查不能延誤電擊的例外</strong><p>判斷是否 sustained polymorphic VT；不要把所有不規則寬 QRS 當成 AF。</p></section>
+</div>
+<div class="acls-f-down" aria-hidden="true">↓</div>
+<div class="acls-f-question"><span>02 · RHYTHM SAFETY EXCEPTION</span><strong>是 sustained polymorphic VT 嗎？</strong></div>
+<div class="acls-f-pair">
+<section class="acls-f-option acls-f-danger"><span>YES · 立即治療</span><strong>Unsynchronized high-energy shock</strong><p>持續性 polymorphic VT 不能等完成機轉診斷；R-wave synchronization 可能不可靠。確認是否合併 torsades／可逆誘因並處理。</p></section>
+<section class="acls-f-option acls-f-continue"><span>NO · 繼續往下 <span aria-hidden="true">↓</span></span><strong>其他有脈搏的 tachyarrhythmia</strong><p>再辨認「心律是否正在造成」低灌流，而非僅和低血壓同時存在。</p></section>
+</div>
+<div class="acls-f-down" aria-hidden="true">↓</div>
+<div class="acls-f-question"><span>03 · PERFUSION / CAUSALITY</span><strong>Persistent tachyarrhythmia 正造成不穩定嗎？</strong><small>Hypotension、altered mental status、shock、ischemic chest discomfort、acute heart failure</small></div>
+<div class="acls-f-pair">
+<section class="acls-f-option acls-f-urgent"><span>YES · 不等待病因全明</span><strong>Synchronized cardioversion</strong><p>適用可可靠同步的節律；可行時鎮靜但不可延誤。<strong>Unstable pre-excited AF 亦採 synchronized cardioversion</strong>；polymorphic VT 例外已在上一步分流。</p></section>
+<section class="acls-f-option acls-f-continue"><span>NO · 暫可評估 <span aria-hidden="true">↓</span></span><strong>穩定、有監測的處置空間</strong><p>取得 12-lead、確認 QRS 寬度、regularity、morphology；持續準備電擊與專科協助。</p></section>
+</div>
+<div class="acls-f-down" aria-hidden="true">↓</div>
+<div class="acls-f-question"><span>04 · VENTRICULAR ACTIVATION</span><strong>QRS ≥ 120 ms 嗎？</strong></div>
+<div class="acls-f-pair">
+<section class="acls-f-option acls-f-neutral"><span>NO · NARROW</span><strong>依規則性與 SVT／AF 機轉判斷</strong><p>Regular narrow-complex 可考慮 vagal maneuvers／adenosine；不規則節律須鑑別 AF/flutter，且不能在未排除 pre-excitation 時套用 AV nodal blocker 邏輯。</p></section>
+<section class="acls-f-option acls-f-continue"><span>YES · WCT <span aria-hidden="true">↓</span></span><strong>寬 QRS 只描述活化，不是 VT 的確診</strong><p>對照 RR intervals 與每搏 QRS 形態；不確定時保留 VT、pre-excited AF 等危險鑑別。</p></section>
+</div>
+<div class="acls-f-down" aria-hidden="true">↓</div>
+<div class="acls-f-question"><span>05 · ACTION BOUNDARY</span><strong>Stable WCT：regular 且 monomorphic 嗎？</strong></div>
+<div class="acls-f-pair">
+<section class="acls-f-option acls-f-conditional"><span>YES · 有條件的許可</span><strong>Adenosine 僅「may be considered」</strong><p>須監測與備妥救援；2025 AHA 為 <strong>Class IIb</strong>，不是例行使用，也不能以反應證明 SVT。依病況考慮抗心律不整輸注、專科會診。</p></section>
+<section class="acls-f-option acls-f-danger"><span>NO · 禁止藥物試探</span><strong>Irregular／polymorphic WCT：不要給 adenosine</strong><p>若懷疑 <strong>pre-excited AF</strong>，避免 adenosine、β-blockers、verapamil／diltiazem、digoxin、amiodarone。穩定且確認為 pre-excited AF 時，可在適當監測下考慮 IV procainamide／ibutilide 或電復律與專科協助。</p></section>
+</div>
+</div>
+<div class="acls-flowchart-end"><strong>讀圖驗收：</strong>同樣是 wide QRS，<em>有無脈搏</em>改變 arrest 路徑；<em>polymorphic VT</em>改變同步方式；<em>低灌流是否由心律造成</em>決定是否立即電復律；<em>規則／單形態</em>決定能否有限度考慮 adenosine。</div>
+<figcaption><strong>圖 A｜本站自行整理的成人 tachyarrhythmia 決策圖，不是 AHA 官方圖像，也不是所有心律的完整用藥處方。</strong> 綜合 <a href="https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf" target="_blank" rel="noopener noreferrer">2025 AHA 原始 Adult Tachyarrhythmia With a Pulse Algorithm（官方 PDF）</a>、<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support" target="_blank" rel="noopener noreferrer">2025 AHA Adult ALS 正文</a> 與 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/" target="_blank" rel="noopener noreferrer">2023 ACC/AHA AF guideline §10.6</a>。官方流程預設有脈搏；本圖另外把無脈搏、polymorphic VT 和 pre-excited AF 的跨流程例外放在同一張臨床判斷圖。原圖受 AHA 版權保護，本站沒有複製其圖像。圖下方的病例 ECG 是證據，不是決策演算法。</figcaption>
+</figure>
+
 ## Tachycardia 是不穩定的原因，還是不穩定的反應？
 
 ACLS 2025 的第一個決策點，並不只寫 hypotension、acute altered mental status、shock、ischemic chest discomfort 或 acute heart failure；它寫的是 persistent tachyarrhythmia **causing** 這些表現。
