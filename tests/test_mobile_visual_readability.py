@@ -48,7 +48,7 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertIn('viewBox="0 0 360 550"', body)
         for signal in ("AV node", "Accessory pathway", "decremental conduction",
                        "僅當 AP 可順傳", "Ventricle", "AV nodal blocker",
-                       "極短 RR、VF 風險", "非所有 AP 都具高危性"):
+                       "極短 RR → VF 風險", "非所有 AP 都具高危性"):
             self.assertIn(signal, body)
         self.assertIn("脈衝數量不代表真實比率", body)
         self.assertIn("仍可能順傳", body)
