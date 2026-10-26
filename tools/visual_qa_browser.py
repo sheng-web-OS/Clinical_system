@@ -74,6 +74,54 @@ def changed_pages(root: Path, base_ref: str, page_map: dict | None = None) -> li
                   if page["source"] in changes and Path(page["output"]).stem in selected)
 
 
+FIGURE_BLOCK = re.compile(r"<figure\\b[^>]*>[\\s\\S]*?</figure>", re.IGNORECASE)
+
+
+def figure_versions(body: str) -> dict[str, str]:
+    """Return each figure's complete markup for narrow content-diff QA."""
+    result = {}
+    for index, match in enumerate(FIGURE_BLOCK.finditer(body), 1):
+        opening_tag = match.group(0).split(">", 1)[0]
+        found = FIGURE_ID.search(opening_tag)
+        key = found.group(1) if found else f"__unnamed_{index:02d}"
+        if key in result:
+            raise ValueError("Visual QA duplicate figure id: " + key)
+        result[key] = match.group(0)
+    return result
+
+
+def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> dict:
+    """Render only added/edited figure elements, not unchanged figures in revised prose.
+
+    Catalog edits are conservatively audited across all published figures.
+    Missing prior source files trigger a full scan of the new article.
+    """
+    selected = discover_pages(root) if page_map is None else page_map
+    visible_pages = changed_pages(root, base_ref, selected)
+    if not visible_pages:
+        return {}
+    changed_names = subprocess.run(
+        ["git", "diff", "--name-only", "--diff-filter=ACMR",
+         base_ref + "...HEAD", "--"], cwd=root, capture_output=True,
+        text=True, check=True).stdout.splitlines()
+    if "site/pages.json" in changed_names:
+        return {name: selected[name] for name in visible_pages}
+    catalog = json.loads((root / "site/pages.json").read_text(encoding="utf-8"))
+    source_by_slug = {Path(row["output"]).stem: row["source"] for row in catalog}
+    result = {}
+    for slug in visible_pages:
+        source = source_by_slug[slug]
+        current = figure_versions((root / source).read_text(encoding="utf-8"))
+        old = subprocess.run(["git", "show", base_ref + ":" + source],
+                             cwd=root, capture_output=True, text=True)
+        previous = figure_versions(old.stdout) if old.returncode == 0 else {}
+        selected_ids = [fid for fid, html in current.items()
+                        if previous.get(fid) != html]
+        if selected_ids:
+            result[slug] = (selected[slug][0], selected_ids)
+    return result
+
+
 def inspect(page, figure_id, result_dir, slug, width):
     if figure_id.startswith("__unnamed_"):
         # Index mirrors source-order <figure> tags within the rendered article.
@@ -212,7 +260,8 @@ if __name__ == "__main__":
     if a.pages is not None:
         slugs = a.pages
     elif a.changed_from:
-        slugs = changed_pages(ROOT, a.changed_from, page_map)
+        page_map = changed_figures(ROOT, a.changed_from, page_map)
+        slugs = list(page_map)
     else:
         slugs = list(page_map)
     unknown = sorted(set(slugs) - set(page_map))
