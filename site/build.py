@@ -16,6 +16,20 @@ BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
 PAGES = load_pages(BASE)
 FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row in PAGES]
+# Single source of truth for the privacy-preserving Cloudflare Web Analytics beacon.
+# The token is a public site identifier, not an API credential.
+WEB_ANALYTICS_BEACON = """<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c6bb7055c62648c39f440da91304c99e"}'></script>"""
+
+def install_web_analytics():
+    """Instrument canonical published pages once; never count legacy redirects twice."""
+    published = {"index.html"} | {page["output"] for page in PAGES}
+    for filename in sorted(published):
+        path = DIST / filename
+        document = path.read_text(encoding="utf-8")
+        if document.count("</head>") != 1 or "static.cloudflareinsights.com/beacon.min.js" in document:
+            raise ValueError("Cannot install exactly one analytics beacon into " + filename)
+        path.write_text(document.replace("</head>", WEB_ANALYTICS_BEACON + "</head>", 1), encoding="utf-8")
+
 class Renderer(mistune.HTMLRenderer):
     def __init__(self):
         super().__init__(escape=False)
@@ -229,6 +243,7 @@ def main():
     if any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES):
         import subprocess
         subprocess.run([sys.executable, str(BASE / "tools/fetch_dcm_figures.py"), str(DIST)], check=True)
+    install_web_analytics()
     validate_output_links()
     for path in DIST.iterdir():
         print(path.name,path.stat().st_size)
