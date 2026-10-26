@@ -468,7 +468,7 @@
 .reading-prose .hbv-signal-section-title{font-size:13px;line-height:1.6;font-weight:700;color:var(--muted);letter-spacing:.02em;margin:0 0 14px}
 .hbv-signal-contrast{border-top:1px solid var(--line);padding:22px 24px 24px;background:var(--bg)}
 .reading-prose .hbv-contrast-question{margin:0 0 15px;font-size:15px;line-height:1.7;font-weight:700}
-.reading-prose table.hbv-contrast-table{width:100%;max-width:100%;table-layout:fixed;border-collapse:collapse;margin:0;font-size:14px;line-height:1.65;overflow:visible}
+.reading-prose table.hbv-contrast-table{display:table;width:100%;max-width:100%;table-layout:fixed;border-collapse:collapse;margin:0;font-size:14px;line-height:1.65;overflow:visible}
 .reading-prose .hbv-contrast-table th,.reading-prose .hbv-contrast-table td{padding:12px 10px;border:1px solid var(--line);min-width:0;text-align:center;vertical-align:middle;overflow-wrap:break-word}
 .reading-prose .hbv-contrast-table thead th{background:var(--surface);font-size:14px;font-weight:700}
 .reading-prose .hbv-contrast-table tbody th{background:var(--surface);font-size:13px;color:var(--muted);font-weight:600}
