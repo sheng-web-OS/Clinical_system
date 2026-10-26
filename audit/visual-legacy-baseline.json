@@ -310,6 +310,86 @@
         "kind": "html_css",
         "status": "legacy_unreviewed"
       }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-hbv-signals.md": [
+      {
+        "id": "hbv-observation-inference-action",
+        "fingerprint": "16627fc9be6ee3a4",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-wpw-conduction-mechanism.md": [
+      {
+        "id": "wpw-pathway-figure",
+        "fingerprint": "7ed40c3ffd8a2057",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md": [
+      {
+        "id": "af-ecg-evidence",
+        "fingerprint": "1774011463265394",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "af-two-exits",
+        "fingerprint": "6ef9ff0a1809cc4c",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-wct-acls-decision.md": [
+      {
+        "id": "wct-decision-figure",
+        "fingerprint": "42b86237f58b9b1b",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-vte-visual.md": [
+      {
+        "id": "vte-shared-substrate",
+        "fingerprint": "3eb6cfff8e87c64d",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "vte-competing-hypotheses",
+        "fingerprint": "15cd61c2f9c5b6ee",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "vte-diagnostic-stop-rules",
+        "fingerprint": "2f6f61211471d1e8",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-26-constipation.md": [
+      {
+        "id": "constipation-response-location",
+        "fingerprint": "94f22ebcbff0b8c0",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md": [
+      {
+        "id": "cticu-measurement-layers",
+        "fingerprint": "456e670caf312468",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "cticu-cabg-timeline",
+        "fingerprint": "eb45d931d9eba69b",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      }
     ]
   }
 }
