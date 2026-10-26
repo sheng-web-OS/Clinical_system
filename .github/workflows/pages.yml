@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -33,6 +35,11 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Inspect real 360/390/768/1280px clinical image rendering
         run: python tools/visual_qa_browser.py --pages wpw preexcited-af wct --widths 360 390 768 1280
+      - name: Render modified published figures automatically
+        # A PR changing an article gets real mobile/desktop screenshots without
+        # maintaining a hand-written figure list. Medical review remains separate.
+        if: github.event_name == 'pull_request'
+        run: python tools/visual_qa_browser.py --changed-from origin/main --widths 360 390 1280 --output visual-qa-artifacts/changed
       - name: Save source-image visual QA screenshots and failure report
         if: always()
         uses: actions/upload-artifact@v4
