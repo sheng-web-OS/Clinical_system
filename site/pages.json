@@ -2,8 +2,8 @@
   {
     "source": "content/clinical-os/index.md",
     "output": "knowledge-atlas.html",
-    "title": "臨床問題地圖",
-    "subtitle": "從症狀、生理到決策，沿共同問題跨篇閱讀",
+    "title": "臨床知識地圖",
+    "subtitle": "依症狀找生理分支、先備觀念、閱讀順序與國考驗證",
     "collection": "clinical-os",
     "layout": "reader",
     "section": "知識導覽",
@@ -73,16 +73,6 @@
     "layout": "reader",
     "navigation": false,
     "section": "參考資料"
-  },
-  {
-    "source": "content/xiaoma-internal-medicine/learning-map.md",
-    "output": "xiaoma-plan.html",
-    "title": "內科學習地圖",
-    "subtitle": "依臨床問題連接文章、機轉與練習",
-    "collection": "xiaoma-internal-medicine",
-    "layout": "reader",
-    "navigation": false,
-    "section": "閱讀路線"
   },
   {
     "source": "content/xiaoma-reading/originals/2026-07-12-heart-failure.md",
