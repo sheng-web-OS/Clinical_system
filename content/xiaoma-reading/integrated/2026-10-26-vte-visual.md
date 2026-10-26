@@ -15,7 +15,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 兩者共享同一組生成條件，卻不一定依序成為同一名病人的兩個階段。
 
 
-**解剖原圖定位。** <a href="https://www.heart.org/-/media/Files/Health-Topics/Pulmonary-Embolism/What-is-a-PE.pdf" target="_blank" rel="noopener noreferrer">American Heart Association《What Is a Pulmonary Embolism?》第 1 頁</a>直接畫出栓子沿下腔靜脈、右心、肺動脈移動的方向。這才是本段必須保留的空間關係。原圖著作權保留，網站提供來源連結而不複製圖像。<strong>箭頭代表一種可能的栓塞過程，不是所有 DVT 的必然病程。</strong>
+**解剖原圖定位。** [American Heart Association《What Is a Pulmonary Embolism?》第 1 頁](https://www.heart.org/-/media/Files/Health-Topics/Pulmonary-Embolism/What-is-a-PE.pdf) 直接畫出栓子經下腔靜脈、右心與肺動脈的可能路徑。圖中箭頭代表一種可能的栓塞過程，**不是所有 DVT 的必然病程**。原圖保留著作權，本站以來源連結供讀者放大閱讀。
 
 這也解釋了第一個看似矛盾的地方：
 
@@ -48,7 +48,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 這次呼吸困難，是否來自肺動脈阻塞？
 
 
-**原始決策圖定位。** <a href="https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893" target="_blank" rel="noopener noreferrer">NICE NG158 官方診斷流程 PDF</a>包含 suspected DVT 與 suspected PE 各自的 Wells → D-dimer／影像分支與停止條件，須連同原表與註腳閱讀。<strong>本段不再用兩欄文字表冒充診斷流程圖</strong>；兩套 Wells 都輸出疾病特異的 pretest probability，不是共同的住院 VTE prophylaxis 分數。<a href="https://www.nice.org.uk/guidance/ng158/chapter/recommendations" target="_blank" rel="noopener noreferrer">完整條文及兩層 Wells 原表</a>。
+**原始決策圖定位。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**本段不再用自編的兩欄文字表冒充診斷流程圖**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
 
 所以小麻需要兩張不同的 Wells score。
 
@@ -117,14 +117,7 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 血栓是否位於肺動脈？
 
-<figure id="vte-anatomic-evidence" class="vte-evidence-figure">
-<h3>同一病例、兩個檢查目標：CTPA 證實 PE，CTV／Doppler 顯示 DVT</h3>
-<a class="vte-radiology" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8921210/#Fig5" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://jkms.org/ArticleImage/0063JKMS/jkms-37-e76-g005-l.jpg" alt="Journal of Korean Medical Science 2022 Figure 5：同一名 38 歲病人，A/B 為肺動脈 CTPA 顯示充盈缺損，C 為膝窩靜脈 CT 靜脈攝影充盈缺損，D 為膝窩靜脈彩色都卜勒超音波；面板各自回答不同的解剖問題。" width="1200" height="820"></a>
-<div class="vte-radiology-legend"><p><strong>A／B · 肺循環</strong> CTPA 顯示肺動脈 filling defect，回答 suspected PE。</p><p><strong>C／D · 靜脈系統</strong> CT venography／Doppler ultrasound 顯示 popliteal DVT，回答 suspected DVT。圖 D 是彩色 Doppler，不是壓迫超音波陰陽性範例。</p></div>
-<p class="vte-reading-contrast"><strong>這張影像回答的是「血栓在哪裡」，不是「什麼時候可以停止檢查」。</strong>病例中 CTPA 與下肢檢查各自證明不同部位有血栓；不能把本例中同時存在 DVT 與 PE，推論成所有 PE 都有可查的腿部 DVT。</p>
-<p class="vte-guide-pair"><a href="https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893" target="_blank" rel="noopener noreferrer">完整停止／追查分支請直接看 NICE 官方原圖</a>，而不是把這張病例影像當作診斷演算法。</p>
-<figcaption>圖 3｜An et al., <em>Journal of Korean Medical Science</em> 2022;37:e76, <a href="https://doi.org/10.3346/jkms.2022.37.e76">DOI 原文 Fig. 5</a>（<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>；完整原圖未修改）。這只是<strong>同一病人同時有 DVT 和 PE 的實例</strong>，不是每位 PE 病人都必須先找得到 DVT 的證據；若網站日後商業化，須重新處理此圖的授權。</figcaption>
-</figure>
+**真實影像直接核讀：** [An et al., *Journal of Korean Medical Science* 2022，Figure 5（原始四面板影像，可點開放大）](https://www.jkms.org/ViewImage.php?Type=F&afn=63_JKMS_37_10_e76&aid=732221&fn=jkms-37-e76-g005_0063JKMS&id=F5)。38 歲患者的右後基底肺段動脈 filling defect 由 CTPA（A、B）顯示；右側 popliteal DVT 由 indirect CT venography（C）與 color Doppler（D）顯示。**D 是彩色 Doppler，不能冒稱示範 compression ultrasound 的不可壓縮性。** 這是「不同部位需要不同解剖證據」的病例，不是 Wells／D-dimer 的停止流程，也不能推論每名 PE 病人都能找到下肢 DVT。原圖為 [CC BY-NC 4.0 非商業授權](https://creativecommons.org/licenses/by-nc/4.0/)；網站僅提供原站連結，不重製或熱連結圖片，以保留完整解析度與圖說。
 
 但即使影像結果陰性，也仍須放回原本的 clinical probability、檢查範圍與影像品質解讀。
 
@@ -152,4 +145,4 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 ---
 
-[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站本次撤回原有三張示意文字圖；AHA 解剖機轉與 NICE 診斷停止條件改為原始圖定位，保留一組可直接辨認不同解剖證據的真實病例影像（仍待授權與手機實際檢查）。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
+[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站撤回原有三張示意文字圖；AHA 解剖機轉、NICE 診斷決策分流、JKMS 真實病例影像均改成指向原始高解析圖表的明確連結，避免不完整的重繪及手機上無法辨識的縮圖。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
