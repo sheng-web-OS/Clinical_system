@@ -11,7 +11,7 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 ## 先看完整流程，再討論流程為何不能直接等於診斷
 
 <figure id="wct-acls-main-algorithm" class="acls-core-figure" role="group" aria-label="2025 AHA 有脈搏成人心搏過速主流程的獨立解讀圖，含是否由心搏過速造成不穩定、QRS 寬窄、規則性與危險例外">
-<div class="acls-core-head"><span>CLINICAL REFERENCE · AHA 2025</span><strong>Adult Tachyarrhythmia With a Pulse：真正的 Yes／No 分支</strong><p>先閱讀官方完整原圖，再將同一套問題對照 WPW／pre-excited AF。以下為本站獨立設計的閱讀路徑，非 AHA 原圖的複製或官方翻譯。</p><a class="acls-official-link" href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf" target="_blank" rel="noopener noreferrer">開啟 2025 AHA 官方完整流程圖（原始 PDF，可放大／下載） ↗</a></div>
+<div class="acls-core-head"><span>CLINICAL REFERENCE · AHA 2025</span><strong>Adult Tachyarrhythmia With a Pulse：真正的 Yes／No 分支</strong><p>先閱讀官方完整原圖，再將同一套問題對照 WPW／pre-excited AF。以下為本站獨立設計的閱讀路徑，非 AHA 原圖的複製或官方翻譯。</p><a class="acls-official-link" href="https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf" target="_blank" rel="noopener noreferrer">開啟 2025 AHA 官方完整流程圖（原始 PDF，可放大／下載） ↗</a></div>
 <svg class="acls-desktop-graph" viewBox="0 0 1120 995" role="img" aria-labelledby="acls-flow-title acls-flow-desc" xmlns="http://www.w3.org/2000/svg">
 <title id="acls-flow-title">有脈搏成人 tachyarrhythmia：血流動力學決策優先，穩定後再以 QRS 寬窄進入不同分支</title>
 <desc id="acls-flow-desc">成人有脈搏與持續性心搏過速，先同時做初始支持、監測與十二導程心電圖。若目前血流動力學失衡是由心搏過速造成，迅速處理並通常使用同步電復律。若否，判斷 QRS 是否至少 120 毫秒，狹窄者依規則性考慮迷走神經手法與腺苷等；寬大者只有穩定、規則且單形態時才可考慮腺苷，並考慮抗心律不整治療與專科協助。不規則或多形態寬 QRS 不應套用腺苷，且 polymorphic VT 和 pre-excited AF 需要另辨別高風險處置。</desc>
@@ -72,7 +72,7 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 <div class="acls-m-warning"><strong>主流程之外的高風險界線</strong><span>Irregular／polymorphic WCT 不使用 adenosine；pre-excited AF 不套用一般 AV nodal blockers 或 IV amiodarone。持續 polymorphic VT 需非同步電擊；若無脈搏改走 cardiac-arrest algorithm。</span></div>
 </div>
 <div class="acls-rescue-footer"><strong>若初始介入仍無效：重新評估</strong><span>核對造成 tachyarrhythmia 的因素、是否需要調整下一次電復律能量、增加抗心律不整治療，以及專科協助；病情改變時重新回到最上游判斷。</span></div>
-<figcaption><strong>本站原創流程解讀｜2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm。</strong> 圖上流程為對照本文 WPW／WCT 的教學重構，不是 AHA 正式圖像、完整指引翻譯或個別病人處方。成人有脈搏是適用前提；本圖為優先決策架構，**劑量與電擊能量需回讀官方原圖**；主流程的藥物選項需連同 2025 ALS 的 WCT 禁忌和 2023 AF guideline 的 pre-excitation 限制閱讀。<a href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">官方 Figure 6 原圖（直接開啟）</a>；<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">2025 ALS 文字建議</a>。</figcaption>
+<figcaption><strong>本站原創流程解讀｜2025 AHA Adult Tachyarrhythmia With a Pulse Algorithm。</strong> 圖上流程為對照本文 WPW／WCT 的教學重構，不是 AHA 正式圖像、完整指引翻譯或個別病人處方。成人有脈搏是適用前提；本圖為優先決策架構，**劑量與電擊能量需回讀官方原圖**；主流程的藥物選項需連同 2025 ALS 的 WCT 禁忌和 2023 AF guideline 的 pre-excitation 限制閱讀。<a href="https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf">官方 Figure 6 原圖（直接開啟）</a>；<a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">2025 ALS 文字建議</a>。</figcaption>
 </figure>
 
 現在才能準確提出後面的問題：ACLS 已經將 **causing instability**、**QRS duration**、**regular／monomorphic** 放在不同判斷層次，但它們沒有一個可以單獨證明「這是 VT、SVT 或 accessory pathway」。流程先定義當下安全的處置空間，病因機轉再決定不能外推哪些藥物選項。
