@@ -51,7 +51,7 @@
 </div>
 <div class="wpw-af-outcome"><b>臨床邊界：</b>疑似 pre-excited AF 時，不能以常規 AV nodal blockade 當作安全的 rate control；須依病人穩定度及 2023 AF guideline 選擇處置。</div>
 </div>
-<figcaption><strong>圖 3｜機轉示意，不是 ECG，也不是個別病人的電生理量測。</strong> 心室激發可來自正常路徑、AP 或兩者 fusion；不是所有 AP 都具高危順傳能力。此圖只說明「為什麼不能單靠抑制 AV node」；實際 rhythm 判讀請對照同篇的原刊 ECG 來源與 2023 AF guideline。</figcaption>
+<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 這不是個別病人的電生理量測。 心室激發可來自正常路徑、AP 或兩者 fusion；不是所有 AP 都具高危順傳能力。此圖只說明「為什麼不能單靠抑制 AV node」；實際 rhythm 判讀請對照同篇的原刊 ECG 來源與 2023 AF guideline。</figcaption>
 </figure>
 
 ## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
