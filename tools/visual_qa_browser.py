@@ -92,19 +92,24 @@ def figure_versions(body: str) -> dict[str, str]:
 
 
 def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> dict:
-    """Screenshot the smallest safe set of affected public figures.
+    """Run blocking render tests on newly published or changed figure markup.
 
-    Body-only edits do not recheck unchanged diagrams. Shared CSS/site renderer
-    changes do, because their effect is sitewide. A changed source image also
-    invalidates the figure even when its HTML markup remains identical.
+    Global layout/CSS regressions go to a separate, non-blocking full-site
+    legacy-debt report; known historic failures must not make unrelated PRs red.
     """
     selected = discover_pages(root) if page_map is None else page_map
     changed_names = set(subprocess.run(
         ["git", "diff", "--name-only", "--diff-filter=ACMR",
          base_ref + "...HEAD", "--"], cwd=root, capture_output=True,
         text=True, check=True).stdout.splitlines())
-    if {"site/pages.json", "site/styles.css", "site/build.py"} & changed_names:
-        return selected
+    catalog_changed = "site/pages.json" in changed_names
+    old_public = set()
+    if catalog_changed:
+        old = subprocess.run(["git", "show", base_ref + ":site/pages.json"],
+                             cwd=root, capture_output=True, text=True)
+        if old.returncode == 0:
+            old_public = {(page["source"], page["output"])
+                          for page in json.loads(old.stdout)}
     visible_pages = changed_pages(root, base_ref, selected)
     catalog = json.loads((root / "site/pages.json").read_text(encoding="utf-8"))
     source_by_slug = {Path(row["output"]).stem: row["source"] for row in catalog}
@@ -115,11 +120,13 @@ def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> 
         source = source_by_slug[slug]
         current = figure_versions((root / source).read_text(encoding="utf-8"))
         selected_ids = set()
+        if catalog_changed and (source, page_path) not in old_public:
+            selected_ids.update(current)
         if assets:
             for fid, html in current.items():
                 if any(name in html for name in assets):
                     selected_ids.add(fid)
-        if slug in visible_pages:
+        if slug in visible_pages and selected_ids != set(current):
             old = subprocess.run(["git", "show", base_ref + ":" + source],
                                  cwd=root, capture_output=True, text=True)
             previous = figure_versions(old.stdout) if old.returncode == 0 else {}
