@@ -65,3 +65,22 @@ GitHub Actions run 40367245047 提供 PR 建置成品 `clinical-system-static-si
 
 **來源身分：** Bayes odds 定理為通用數學恆等式；`LR− = 0.10` 是為隔離前測差異而自訂的示意條件，**不是從 NICE 讀取的 test accuracy，也不是原書 Figure**。高品質原始醫學圖仍使用 AHA 解剖 PDF、NICE DVT/PE 原始 flowchart、JKMS Fig. 5 真實病例來源定位；公網不重製未獲授權的 AHA/NICE 像素。先前三張不合格圖與新退回的雙分支文字卡均維持撤回，不能以檔案存在或 CI 綠燈重新入庫。
 
+
+
+## 2026-10-27 三張小麻原圖的選擇性脈絡回收
+
+本輪作者另提供三張 Pocket Medicine 9E VTE 相關原頁截圖：
+
+1. **Definitions / Virchow triad / Thromboprophylaxis**：保留「預防介入共同的上游血栓風險」及「patient/situation、VTE risk、bleeding risk 決定預防手段」的結構；不把原表六列照抄成可直接下醫囑的用藥劑量、術後時程與神經外科規則。其 2018 年前後的引用並非 2026 年所有族群的最新版共通處方。
+2. **DVT manifestations / DVT Wells / Figure 2-2**：保留「腿部症狀在鑑別替代診斷時才有意義」、書中 DVT *three-level* Wells（≤0 / 1–2 / ≥3）及 proximal-only CUS 的陰性限制。**NICE NG158** 使用另一套 *two-level* DVT Wells（≤1 / ≥2），且對「初次 proximal CUS negative、D-dimer positive」要求重做 **6–8 天**；不得把書中 low/moderate 組直接映射成 NICE unlikely，也不得把陰性 proximal CUS 畫成無條件排除 DVT。Homan's sign 不具可可靠判斷價值，故不作為診斷決策節點。
+3. **PE manifestations / PE Wells / Figure 2-3**：保留書中 PE *two-level* Wells（≤4 / >4）、CTPA 針對肺動脈、影像陰性需比對 pretest suspicion／品質的停止條件，以及 hemodynamically unstable PE 的獨立緊急流程。CXR、ECG、ABG、心超的角色不等於 CTPA；舊文中檢查敏感度／預測值與「≤4 為 13%／>4 為 39%」數字來自特定研究與族群，不當作每位病人的絕對概率或 2026 年普遍指標。
+
+**圖像收錄裁決**：沒有把三張原書截圖整頁貼到正式站，也沒有上架由圖片生成模型產生的 VTE、DVT、PE 三張資訊圖。它們過多重排正文，而原創診斷流程圖在陰性 proximal CUS／CTPA 停查條件、預防情境與 Wells 版本的判斷上可能遺漏關鍵限制。正式文章只保留先前驗收的 Bayesian 數值圖；必要的完整診斷分支依 [NICE 官方 visual summary](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 及 [條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 直接開啟，避免錯誤重繪與原書著作權疑慮。
+
+**現行獨立交叉核對**：
+- [NICE NG158 recommendation 1.1.1–1.1.21](https://www.nice.org.uk/guidance/ng158/chapter/Recommendations)：DVT／PE 兩套 Wells、影像優先序與 DVT 6–8 日重檢條件。
+- [ASH 2018 hospitalized medical VTE prevention](https://ashpublications.org/bloodadvances/article/2/22/3198/16115/American-Society-of-Hematology-2018-guidelines-for)：對一般急性或重症內科病人，血栓與出血風險應共同決定是否採藥物或機械預防；組合不是預設，不能外推到每個骨科與腦出血患者。
+- [2026 AHA/ACC 多學會成人急性 PE 指引](https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005)：低／中等 pretest probability 的 age-adjusted D-dimer、YEARS 等 validated 分流方案；本文只用來界定「500 ng/mL 不是脫離檢驗／演算法的通用固定真理」，沒有移植新舊流程混合版。
+- D-dimer 可用 FEU／DDU 等不同報告方式；讀圖不能把原書的 500 ng/mL 一律套到每種化驗報告或演算法。這是來源與 assay 的解讀界線，不是新訂固定 cutoff。
+
+**發布前品質判斷**：與原版相比，補的是「哪張原圖在哪個決策節點改變下一步」而不是增加圖量。真正影響判斷的三件事是病人情境導向 prophylaxis、不同 Wells 版本不可混用、陰性影像何時需要補檢；其他內容可由外部正式原圖核讀，不另建冗長副章或新增一套圖集。

@@ -1,6 +1,6 @@
 # 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？
 
-*原文 2026.07.24｜2026.10.27 原圖核對與 Bayesian D-dimer 圖修訂版；作者提供原稿另行保存。*
+*原文 2026.07.24｜2026.10.27 整合版：對照小麻 VTE／DVT／PE 三頁的決策脈絡；作者提供原稿另行保存。*
 
 閱讀 venous thromboembolism，最自然的方式，是把整個章節理解成一條血栓逐漸前進的病程。
 
@@ -27,7 +27,13 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 
 只要 DVT 與 PE 共同的血栓生成環節，仍是此刻可以介入的位置，就可以先以 VTE 為單位思考預防。
 
+小麻前一頁的 Virchow triad 與 thromboprophylaxis 表，正是在回答這個「血栓尚未出現」的問題。Stasis、endothelial injury 與 hypercoagulability，描述的是不同來源如何提高血栓形成的機會，**不是三項都要出現才算高風險，也不是有其中一項就一定需要抗凝**。例如 immobilization 主要讓我們想到 venous stasis，手術可同時增加組織傷害與活動受限，癌症則可使血栓生成傾向升高；最後仍須按病人整體情境判定。
+
+而那張預防表值得保留的是**患者／情境與預防手段的對應關係**，不是逐列背成固定醫囑。低風險病人可能以早期活動為主；急性住院內科與重症病人要衡量 pharmacologic prophylaxis 的獲益與出血風險；近期手術、骨科手術、急性中風或顱內出血各有不同的用藥時機及禁忌，不能用同一張表的一列互相套用。
+
 當然，是否預防並不只取決於 VTE risk。臨床還必須同時衡量 anticoagulation 所增加的 bleeding risk。出血風險可接受時，可以使用 pharmacologic prophylaxis；暫時不能安全抗凝時，mechanical prophylaxis 主要由減少 venous stasis 介入，不增加同樣的全身抗凝出血負擔；但仍有皮膚、動脈灌流等適用限制，也不是所有低風險病人都需要機械預防。
+
+但「藥物＋機械」也不是所有住院病人的預設組合。以一般急性內科住院病人為例，ASH 對可安全使用藥物者通常偏向 pharmacologic prophylaxis；無法用藥時才考慮 mechanical prophylaxis，而非一律兩者併用。這項建議也不能直接取代骨科手術、神經外科或特定外傷患者的專科流程。
 
 但無論最後選擇哪一種方式，這個階段真正處理的仍是 DVT 與 PE 共同的血栓生成條件，而不是血栓最後呈現為下肢深靜脈阻塞，還是肺動脈阻塞。
 
@@ -47,6 +53,10 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 
 這次呼吸困難，是否來自肺動脈阻塞？
 
+
+**小麻 Figure 2-2 與 2-3 的真正分歧。** 在兩張流程圖的起點，DVT 與 PE 並不是先共用一張「VTE Wells」，再分到兩個檢查。它們從一開始就問不同的問題：一條腿的腫痛像不像 DVT？眼前心肺症狀像不像 PE？因此 **Wells 分層的版本與後續檢查，必須成套使用**。
+
+小麻第九版的 DVT *modified Wells* 使用三層分組：**≤0 分為 low、1–2 分為 moderate、≥3 分為 high**；小麻 PE 圖採簡化兩層：**≤4 分為 unlikely、>4 分為 likely**。但下方引用的 NICE NG158 對 DVT 採用另一套**兩層**分法：**≤1 分為 unlikely、≥2 分為 likely**；PE 則仍以 **≤4／>4** 分層。這不是哪本書算錯，而是不同版本的臨床決策規則；**不能把小麻 DVT 的「1–2 分 moderate」直接套到 NICE 的 unlikely 分支**，也不能把原書附的觀察機率當成對每位病人都成立的固定百分比。
 
 **完整診斷演算法原圖。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**本文的 Bayesian 圖用來示範陰性檢驗如何更新機率，不是完整的 DVT／PE 診斷演算法**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
 
@@ -102,6 +112,8 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 不是因為 D-dimer 不再反映 fibrin turnover，而是它已經很難改變下一步。陰性結果未必足以把疾病機率降到安全排除的範圍；陽性結果又仍然不能確認或定位血栓，因此直接尋找解剖證據反而更有價值。
 
+小麻原圖以 **500 ng/mL** 作為示範分支，但這個數字必須連同 D-dimer 的分析方法與單位讀取（例如 FEU 與 DDU 並不等價），也不能忽略特定方案中的 age-adjusted 或其他 validated cutoff。2026 年 AHA/ACC 多學會成人 PE 指引亦將 **pretest probability 與符合條件的 D-dimer 策略**放在一起評估。**這不是把原圖所有寫著「<500」的箭頭改成另一個固定數字**；真正要遵循的是在相應族群獲驗證的整條診斷路徑。
+
 
 
 
@@ -140,9 +152,11 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 但即使影像結果陰性，也仍須放回原本的 clinical probability、檢查範圍與影像品質解讀。
 
-若 suspected DVT 的病人只接受 proximal compression ultrasound，陰性結果只代表目前在受檢的近端靜脈沒有看見血栓；若前測機率仍高，或整體流程尚未取得排除的許可，可能需要 serial ultrasound，以避免遺漏尚未被涵蓋，或之後才向近端延伸的 distal thrombus。
+若 suspected DVT 的病人只接受 **proximal compression ultrasound**，陰性結果只代表當次受檢的近端靜脈未見符合診斷的血栓，不能偷換成「整條腿與未來數日都沒有 DVT」。尤其在 **NICE NG158 的兩層 DVT 路徑中，初次 proximal ultrasound 陰性、D-dimer 陽性**，要求 **6–8 天後重複 proximal ultrasound**；若是 whole-leg ultrasound 或其他已驗證的檢查策略，其陰性結果應按各自流程判讀，**不是所有陰性超音波都一律六到八天後重做**。這個例外，才是小麻 Figure 2-2 圖下「檢查範圍」註記的重要性。
 
-同樣地，品質充分且與 clinical probability 相符的 negative CTPA，通常足以排除 PE；但若影像品質不足，或結果與整體臨床表現明顯衝突，就不能把 negative CTPA 當成脫離脈絡的絕對答案。
+同樣地，小麻 Figure 2-3 中的 negative CTA／CTPA 之所以不像單純的「陰性即永遠排除」，是因為還要確認**影像品質與 clinical suspicion 是否一致**。在適當風險分層下，品質充分的 negative CTPA 通常支持排除 PE；但如果影像不具診斷品質，或病人持續有極高的臨床懷疑，須重新評估其他診斷、影像限制以及是否需要進一步檢查，而不是把箭頭直接接到「PE excluded」。
+
+這也說明為何「診斷工具」不能當作一張所有檢查地位相同的清單：CXR、ECG 與 ABG 可支持鑑別或判斷疾病嚴重度，**不能單獨排除 PE**；穩定患者的 CTPA 或適當 V/Q imaging 是定位肺血管病變的工具；血流動力學不穩定時，bedside echocardiography 對右心負荷和即時處置可能更重要，但不能把所有心超陽性都當成直接看見血栓。
 
 因此，診斷流程真正判斷的從來不只是某一項檢查寫著 positive 或 negative，而是這個結果放回原本的疾病機率後，是否已將殘餘不確定性降低到足以停止，或提高到足以確認的範圍。
 
