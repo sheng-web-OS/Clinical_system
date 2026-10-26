@@ -45,7 +45,7 @@
 
 3. American Association for the Surgery of Trauma Critical Care Committee. *Rhabdomyolysis: A Clinical Consensus Document*. **Trauma Surgery & Acute Care Open. 2022;7:e000836.** [全文](https://tsaco.bmj.com/content/7/1/e000836)。實際使用內容：LR 或 saline 可以用作輸液；起始 400 mL/hour 為可調整的建議而非固定醫囑；尿量目標約 1–3 mL/kg/hour、上限約 300 mL/hour；不支持例行 bicarbonate／利尿劑預防 AKI；沒有預防性 RRT 角色；若無尿而持續灌液會有容量負擔危險。本文以此限定 2019 原題的 200–300 mL/h，而不否定當年考選部的選擇題答案。
 
-4. Reis F, et al. *Severe rhabdomyolysis after exertional heat stroke treated with a hemoadsorber CytoSorb: lesson for the clinical nephrologist.* **J Nephrol. 2024.** [個案](https://doi.org/10.1007/s40620-024-01918-7)。真實病例 27 歲、熱暴露後下肢疼痛與茶色尿、CK 722,559 U/L、Cr 667 μmol/L、少尿及肌紅蛋白尿；僅作對照不同的肌肉與腎損傷表型，不以病例的血液吸附介入當作標準照護。
+4. Mikacic M, et al. *Severe rhabdomyolysis after exertional heat stroke treated with a hemoadsorber CytoSorb: lesson for the clinical nephrologist.* **J Nephrol. 2024.** [個案](https://doi.org/10.1007/s40620-024-01918-7)。真實病例 27 歲、熱暴露後下肢疼痛與茶色尿、CK 722,559 U/L、Cr 667 μmol/L、少尿及肌紅蛋白尿；僅作對照不同的肌肉與腎損傷表型，不以病例的血液吸附介入當作標準照護。
 
 ### Cardiac arrest ventilation（Q75）
 
