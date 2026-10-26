@@ -40,4 +40,11 @@ Ghany MG, et al. *AASLD/IDSA Practice Guideline on treatment of chronic hepatiti
 
 本頁共同支援 phase／stage 篇與 [ALT 訊號續篇](integrated/2026-10-26-hbv-signals.md)。前者拆開狀態、結構與風險；後者拆開觀察、推論與行動，避免將同一張原表當成完整免疫測量。2026-10-26 再次實際目視 PDF 第 140–141 頁，並取得 AASLD/IDSA 2025 原始推薦文件第 17–18、23 頁（Recommendation 4／6）及末表核對共享決策與 HBsAg loss 後監測條件。完成 AI 來源與安全／編輯審查；未經獨立醫師同儕審稿。
 
-[出版社第九版合法入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。本站兩篇所用三張概念圖皆為原創；不公開重製小麻表格。
+[出版社第九版合法入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。本站兩篇所用四張圖解皆為原創；不公開重製小麻表格。
+
+
+## 2026-10-27 圖文修訂對讀
+
+本輪重新目視使用者 PDF 第 140–141 頁，核對四種典型 phase、HBeAg-negative 的兩種狀態、ALT 註腳與 variable fibrosis。Phase／stage 篇改用四格比較、陰轉後可能路徑、固定當前訊號而改變結構條件的比較；訊號續篇改用病毒複製／肝細胞受傷分別對應 DNA／ALT 的機轉圖。四圖均為獨立教學示意，非原書像素或完整治療演算法。
+
+重新取得 IDSA 官方 AASLD/IDSA 2025 完整文件，讀回 Core Concepts（PDF 第 5 頁）、immune-tolerant 與 indeterminate 的適用條件及 HCC surveillance 說明。EASL 出版社全文本輪回傳 403；其既有治療條件沿用上一輪接受稿的查核，不冒稱本輪完成新的 EASL 圖像驗收。圖中文字沒有新增治療門檻。版面檢查與來源核對不等同獨立醫師審查或真人學習成效驗證。

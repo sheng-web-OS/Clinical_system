@@ -1,6 +1,6 @@
 # HBV phase，不是在替慢性肝炎分期
 
-2026.07.18 小麻閱讀（9E）｜2026.10.26 來源對讀與臨床整合版
+2026.07.18 小麻閱讀（9E）｜2026.10.27 圖文修訂版
 
 《Pocket Medicine》第九版在同一張表內排列 HBeAg-positive infection、HBeAg-positive hepatitis、HBeAg-negative infection 和 HBeAg-negative hepatitis。它們看起來像四個先後發生的階段：病毒先很活躍，肝臟接著發炎，病毒量逐漸下降，最後安靜下來。
 
@@ -16,22 +16,20 @@ HBsAg（B 型肝炎表面抗原）持續至少六個月，辨認的是 chronic H
 
 HBV 相關的肝損傷主要由病毒、被感染的肝細胞和宿主免疫反應相互作用形成，不是血中病毒顆粒愈多就按比例殺死愈多肝細胞。因此，極高 HBV DNA 與正常 ALT 可以同時成立；而 ALT 正常既不能排除當下的組織活動，也不能排除既有 fibrosis。
 
-<figure id="fig-hbv-three-questions">
-  <div class="original-list">
-    <div class="original-card">
-      <strong>問題一：病毒目前如何運作？（Phase）</strong>
-      <span>HBeAg 表現型、HBV DNA、連續 ALT 與發炎證據 → 推定目前的 virus–host state</span>
-    </div>
-    <div class="original-card">
-      <strong>問題二：肝臟累積了多少傷害？（Fibrosis stage）</strong>
-      <span>彈性超音波、適用的非侵入性纖維化指標／必要時組織學 → 描述已形成的結構負荷</span>
-    </div>
-    <div class="original-card">
-      <strong>問題三：未來風險及處置為何？（Prognosis／Decision）</strong>
-      <span>當前病毒與發炎狀態 ＋ fibrosis／cirrhosis ＋ 年齡、家族史、共感染與其他風險 → 決定治療、追蹤與 HCC surveillance</span>
-    </div>
+<figure id="fig-hbv-three-questions" class="hbv-figure">
+  <div class="hbv-figure-head"><span>01 · 辨認當下狀態</span><strong>四種 phase，沿兩個問題交叉閱讀</strong><p>先看 HBeAg，再看肝炎活動；格子的位置不代表先後或嚴重度。</p></div>
+  <div class="hbv-matrix-wrap">
+    <table class="hbv-phase-table" aria-label="HBeAg 表現型與肝炎活動的四種典型組合">
+      <colgroup><col class="hbv-row-col"><col><col></colgroup>
+      <thead><tr><th scope="col">HBeAg</th><th scope="col">Chronic infection<small>相對低肝炎活動</small></th><th scope="col">Chronic hepatitis<small>存在肝炎活動</small></th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="hbv-status">＋</span>陽性</th><td><strong>陽性慢性感染</strong><span class="hbv-marker">DNA 很高</span><span>ALT 可正常</span><small>高複製與低發炎<br>可以同時存在</small></td><td class="hbv-active"><strong>陽性慢性肝炎</strong><span class="hbv-marker">DNA 通常較高</span><span>ALT 常升高</span><small>病毒複製<br>伴隨肝炎活動</small></td></tr>
+        <tr><th scope="row"><span class="hbv-status">−</span>陰性</th><td><strong>陰性慢性感染</strong><span class="hbv-marker">DNA 通常低量</span><span>ALT 持續正常</span><small>目前活動低<br>仍可能有既往 fibrosis</small></td><td class="hbv-active"><strong>陰性慢性肝炎</strong><span class="hbv-marker">DNA 持續或波動</span><span>ALT 可反覆升高</span><small>HBeAg 陰性<br>仍可能有活動性肝炎</small></td></tr>
+      </tbody>
+    </table>
   </div>
-  <figcaption>圖 1．原創概念圖，非 Pocket Medicine 原表重製。三個問題彼此依賴，但任何一項都不能取代另外兩項。小麻 9E 原書「Phases of Chronic HBV Infection」見使用者私人 PDF 第 141 頁；原表未於本站公開重製。</figcaption>
+  <div class="hbv-key"><strong>這張圖還沒有回答 fibrosis stage。</strong><span>肝炎活動描述現在的受傷；纖維化另記錄已累積的結構改變。</span></div>
+  <figcaption>圖 1．原創示意，對讀 Pocket Medicine 原表（9E，PDF 第 141 頁）及 EASL 命名。僅呈現典型組合；phase 需連續數據判讀，ALT 正常不排除組織發炎。數值界線與灰區見<a href="../hbv-phase-sources.md#ref-pocket">來源頁</a>。</figcaption>
 </figure>
 
 這個模型使四個名稱重新取得意義。EASL 的 HBeAg-positive／negative chronic infection 與 chronic hepatitis，著重區分相對缺乏活動性肝炎的感染狀態，以及存在生化或組織發炎活動的狀態；它們並不是四個逐格升級的 stage。真正的 stage 應由 fibrosis 評估。
@@ -44,16 +42,42 @@ HBeAg 消失、anti-HBe 出現，常反映宿主控制與病毒表現型的轉�
 
 這表示 seroconversion 不是「往下一期」的保證，而是一個可能分岔的狀態變化。同一個人也可能隨時間出現 flare、緩解或再活化。因此，單次 ALT 和 HBV DNA 可以描述當下數值，卻不能自動證明持續的 phase。連續資料才有能力辨認長期穩定、暫時波動或 phase transition。
 
+<figure id="fig-hbv-seroconversion" class="hbv-figure">
+  <div class="hbv-figure-head"><span>02 · 追蹤狀態變化</span><strong>HBeAg 陰轉之後，仍有兩種不同走向</strong></div>
+  <div class="hbv-branch-body">
+    <div class="hbv-origin"><strong>HBeAg 消失、anti-HBe 出現</strong><span>Seroconversion 改變的是標記狀態；HBsAg 仍可能陽性。</span></div>
+    <div class="hbv-fork" aria-hidden="true"><span>↓</span><span>↓</span></div>
+    <div class="hbv-pair">
+      <div class="hbv-path"><small>持續控制</small><strong>HBeAg-negative<br>chronic infection</strong><span>DNA 長期低量<br>ALT 穩定正常</span></div>
+      <div class="hbv-path hbv-active"><small>持續或再現肝炎</small><strong>HBeAg-negative<br>chronic hepatitis</strong><span>DNA 仍可複製<br>ALT／肝炎活動持續或波動</span></div>
+    </div>
+    <div class="hbv-revisit"><strong>低活動狀態仍可能再活化 → 需重新判讀</strong><span>用連續 ALT、HBV DNA 和臨床證據辨認變化；一次陰轉不能預告後續路徑。</span></div>
+  </div>
+  <figcaption>圖 2．原創的可能路徑，對讀 Pocket Medicine 9E PDF 第 141 頁及 AASLD/IDSA 2025。分岔不表示必經順序或發生機率；HBeAg 陰轉與 HBsAg loss 分開判讀。</figcaption>
+</figure>
+
+
 ## ALT 正常又 HBV DNA 不高，為什麼仍要問 fibrosis？
 
 回到小麻原表 HBeAg-negative chronic infection 那一列。其 histology 欄位是 **minimal necroinflammation；variable fibrosis**，而不是「沒有 fibrosis」。
 
 這個註記幾乎已經完成全文最重要的反駁：目前活動低，和過去受傷少，是不同的命題。
 
-想像兩種判讀條件（以下是反事實推理，不是病例紀錄）：
+以下固定當前的病毒與 ALT 訊號，只改變結構條件。這是概念比較，不是兩位真實病人：
 
-- **條件 A**：HBeAg-negative、HBV DNA 長期低於 2,000 IU/mL、ALT 穩定正常，且 fibrosis 評估沒有顯著異常。持續監測通常是重要選項；但目前相對低活動不代表不需要定期重新評估。
-- **條件 B**：同樣的 HBeAg、HBV DNA 和 ALT 組合，卻已有 advanced fibrosis 或 cirrhosis。血液檢查沒有變，風險解釋、抗病毒治療適應症及 HCC surveillance 卻可能已改變。
+<figure id="fig-hbv-decision" class="hbv-figure">
+  <div class="hbv-figure-head"><span>03 · 加入累積的結構傷害</span><strong>同一個 phase，為什麼仍可能需要不同處置？</strong></div>
+  <div class="hbv-branch-body">
+    <div class="hbv-origin hbv-shared"><small>兩個條件共用的當前訊號</small><strong>HBeAg 陰性 · DNA 長期低量 · ALT 穩定正常</strong><span>單看這些資料，兩者都可能接近低活動的 chronic infection。</span></div>
+    <div class="hbv-fork" aria-hidden="true"><span>↓</span><span>↓</span></div>
+    <div class="hbv-pair hbv-stage-pair">
+      <div class="hbv-stage"><small>條件 A</small><strong>未見顯著纖維化</strong><p>結構評估沒有顯著異常。</p><div class="hbv-care"><b>持續監測</b><span>追蹤 ALT、DNA 與個別風險；依適應症安排 HCC surveillance。</span></div></div>
+      <div class="hbv-stage hbv-stage-advanced"><small>條件 B</small><strong>已存在肝硬化</strong><p>目前活動低，仍留下結構性疾病。</p><div class="hbv-care"><b>治療與監測條件改變</b><span>若 DNA 仍可測得，EASL 2025 建議治療；仍需 HCC surveillance。</span></div></div>
+    </div>
+  </div>
+  <div class="hbv-key"><strong>Phase ＋ stage ＋ 宿主風險 → 下一步</strong><span>同一組抽血結果，不能消除已存在的 fibrosis／cirrhosis。</span></div>
+  <figcaption>圖 3．原創條件比較，非真實病例。對讀 Pocket Medicine 原表的 variable fibrosis 與 EASL 2025。A 仍需個別化風險評估；B 不能因 DNA 低量或 ALT 正常而延後必要治療。適用條件見<a href="../hbv-phase-sources.md#ref-easl">來源頁</a>。</figcaption>
+</figure>
 
 若只看 phase，這兩個條件可能落在同一格；若加入 stage，它們顯然不是同一種臨床問題。Fibrosis staging 可以使用 transient elastography 等非侵入性評估，必要時依臨床情境選擇其他方法；但 liver stiffness 受肝炎活動等因素影響，不能把單次 kPa 當作無誤差的組織切片。[1](../hbv-phase-sources.md#ref-easl) [2](../hbv-phase-sources.md#ref-aasld)
 
@@ -69,23 +93,7 @@ HBeAg 消失、anti-HBe 出現，常反映宿主控制與病毒表現型的轉�
 
 此處尤其需要保留兩個邊界。第一，**ALT 正常不是不治療的充分理由**：AASLD/IDSA 2025 對部分 HBeAg-positive、過去稱 immune-tolerant 的成年人，特別是年齡較大或有顯著 inflammation／fibrosis 者，提出更積極的個別化治療考量。第二，**grey zone 不是自動治療的同義詞**：HBeAg-negative、無 cirrhosis 的 indeterminate 成人，AASLD/IDSA 是條件式建議在共享決策下考慮抗病毒治療，證據確定性很低，並應在未治療的後續追蹤重新評估。[2](../hbv-phase-sources.md#ref-aasld)
 
-<figure id="fig-hbv-decision">
-  <div class="original-list">
-    <div class="original-card">
-      <strong>先辨認結構性疾病</strong>
-      <span>已有 cirrhosis 且 HBV DNA 可測得 → 2025 EASL 建議治療，無須等待 ALT 達到 2 倍上限或 HBV DNA ≥2,000 IU/mL。</span>
-    </div>
-    <div class="original-card">
-      <strong>再辨認持續傷害與治療獲益</strong>
-      <span>非 cirrhosis：將 HBV DNA、ALT、顯著 fibrosis 與額外 HCC／傳播風險放在一起，依適用指引判斷治療或追蹤。</span>
-    </div>
-    <div class="original-card">
-      <strong>若資料落在 grey zone</strong>
-      <span>重複量測、評估 fibrosis 與其他肝病原因；以可更新的 shared decision-making 處理不確定性，不強迫把人塞進一格。</span>
-    </div>
-  </div>
-  <figcaption>圖 2．原創、非處方性概念導圖，對應 EASL 2025 treatment indications 與 AASLD/IDSA 2025 indeterminate phases。並未完整複製指南演算法；實際治療須核對族群、病毒量、肝纖維化程度與特殊情況。</figcaption>
-</figure>
+將 stage 放回判斷後，治療的前提也會改變。例如 EASL 2025 對已有 cirrhosis、HBV DNA 仍可測得者建議治療，無須等 ALT 達兩倍上限或 DNA 達 2,000 IU/mL。未有 cirrhosis 的人，則仍需合併病毒量、發炎、fibrosis 與其他風險判斷。圖 3 的分岔說明的是加入結構資訊後，原先僅靠 phase 作出的推論為何不再充分。[1](../hbv-phase-sources.md#ref-easl)
 
 ## HBsAg loss，究竟解決了什麼，沒有解決什麼？
 

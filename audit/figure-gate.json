@@ -450,17 +450,35 @@
     "content/xiaoma-reading/integrated/2026-10-26-hbv-phase-state-vs-stage.md": {
       "status": "represented",
       "source_review": "content/xiaoma-reading/hbv-phase-sources.md",
-      "reviewed_on": "2026-10-26",
+      "reviewed_on": "2026-10-27",
       "review_type": "ai_editorial_review",
       "rights_decision": "link_or_original_only",
       "items": [
         {
           "locator": "Pocket Medicine 9E PDF 第 141 頁 Phases of Chronic HBV Infection 完整表與 ALT footnote",
           "source_token": "Phases of Chronic HBV Infection",
-          "teaching_role": "將原表中的不同觀察、推論與行動條件連成可追問的因果關係，避免讀者以單一數字或分類直接決定治療。",
+          "teaching_role": "以 HBeAg 表現型與肝炎活動交叉呈現四種典型 phase；不畫成病程階梯，並明示 fibrosis 需要另外評估。",
           "scope_limit": "原創概念圖並非完整臨床演算法，不是病人診斷或個別處方，也不表示已取得出版社原圖公開授權。",
           "mode": "illustrated",
           "anchor": "fig-hbv-three-questions",
+          "caption_token": "Pocket Medicine 原表"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF 第 141 頁 Phases of Chronic HBV Infection 完整表與 ALT footnote",
+          "source_token": "Phases of Chronic HBV Infection",
+          "teaching_role": "陰轉後仍可低活動或持續／再現肝炎，分岔為可能路徑而非機率或必經階段。",
+          "scope_limit": "原創概念圖並非完整臨床演算法，不是病人診斷或個別處方，也不表示已取得出版社原圖公開授權。",
+          "mode": "illustrated",
+          "anchor": "fig-hbv-seroconversion",
+          "caption_token": "Pocket Medicine 9E"
+        },
+        {
+          "locator": "Pocket Medicine 9E PDF 第 141 頁 Phases of Chronic HBV Infection 完整表與 ALT footnote",
+          "source_token": "Phases of Chronic HBV Infection",
+          "teaching_role": "固定當前 HBeAg、DNA、ALT，只改變有無 cirrhosis，呈現 phase 無法取代 stage 的決策後果。",
+          "scope_limit": "原創概念圖並非完整臨床演算法，不是病人診斷或個別處方，也不表示已取得出版社原圖公開授權。",
+          "mode": "illustrated",
+          "anchor": "fig-hbv-decision",
           "caption_token": "Pocket Medicine 原表"
         }
       ]
@@ -468,14 +486,14 @@
     "content/xiaoma-reading/integrated/2026-10-26-hbv-signals.md": {
       "status": "represented",
       "source_review": "content/xiaoma-reading/hbv-phase-sources.md",
-      "reviewed_on": "2026-10-26",
+      "reviewed_on": "2026-10-27",
       "review_type": "ai_editorial_review",
       "rights_decision": "link_or_original_only",
       "items": [
         {
           "locator": "Pocket Medicine 9E PDF 第 141 頁 Phases of Chronic HBV Infection：DNA／ALT／histology 與註腳",
           "source_token": "Phases of Chronic HBV Infection",
-          "teaching_role": "將原表中的不同觀察、推論與行動條件連成可追問的因果關係，避免讀者以單一數字或分類直接決定治療。",
+          "teaching_role": "把病毒複製、宿主互動、肝細胞受傷及各自的 DNA／ALT 量測分開；箭頭有生理中介，不能把 markers 當直接免疫量測。",
           "scope_limit": "原創概念圖並非完整臨床演算法，不是病人診斷或個別處方，也不表示已取得出版社原圖公開授權。",
           "mode": "illustrated",
           "anchor": "hbv-observation-inference-action",
