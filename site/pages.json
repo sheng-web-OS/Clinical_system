@@ -712,5 +712,57 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-26-wpw-conduction-mechanism.md",
+    "output": "xiaoma-reading-wpw-pathways.html",
+    "title": "WPW：心室明明只有一個，為什麼同一條旁路能讓 QRS 又窄又寬？",
+    "subtitle": "心律急症 01／03：AV node、manifest／concealed pathway 與 AVRT 傳導方向",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "心律急症・機轉",
+    "date": "2026-10-26",
+    "kind": "ai_integrated",
+    "review": "ai_editorial_review",
+    "references": "xiaoma-reading-wct-acls-sources.html",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md",
+    "output": "xiaoma-reading-preexcited-af.html",
+    "title": "Pre-excited AF：AV node 原本可以阻斷，為什麼現在卻不能？",
+    "subtitle": "心律急症 02／03：從真實 ECG 看旁路傳導與 AV nodal blockade 禁忌",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "心律急症・病例與機轉",
+    "date": "2026-10-26",
+    "kind": "ai_integrated",
+    "review": "ai_editorial_review",
+    "references": "xiaoma-reading-wct-acls-sources.html",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-26-wct-acls-decision.md",
+    "output": "xiaoma-reading-wct-acls-decision.html",
+    "title": "還不知道是什麼，憑什麼治療",
+    "subtitle": "心律急症 03／03：從 WPW 與 pre-excited AF 回到 WCT／ACLS 的風險界線",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "心律急症・急救決策",
+    "date": "2026-10-26",
+    "kind": "ai_integrated",
+    "review": "ai_editorial_review",
+    "references": "xiaoma-reading-wct-acls-sources.html",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/wct-acls-sources.md",
+    "output": "xiaoma-reading-wct-acls-sources.html",
+    "title": "WPW、Pre-excited AF、WCT／ACLS：原圖與文獻核對",
+    "subtitle": "Pocket Medicine 9E p66–68、Silverman 2018 ECG、AHA 2025 與 AF 2023",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
