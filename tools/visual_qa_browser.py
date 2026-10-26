@@ -10,6 +10,7 @@ import functools
 import http.server
 import json
 import re
+import subprocess
 import threading
 from pathlib import Path
 
@@ -51,6 +52,26 @@ def discover_pages(root: Path) -> dict:
                 raise ValueError("Visual QA duplicate output slug: " + slug)
             pages[slug] = (entry["output"], ids)
     return pages
+
+
+def changed_pages(root: Path, base_ref: str, page_map: dict | None = None) -> list[str]:
+    """Limit PR visual rendering to changed PUBLIC teaching pages.
+
+    Git errors must not become a false green zero-pages scan. Page CSS/build
+    changes need a separate whole-site visual audit and are reported by CI.
+    """
+    if not re.fullmatch(r"[A-Za-z0-9_./-]+", base_ref) or ".." in base_ref:
+        raise ValueError("Invalid git base ref for visual QA")
+    selected = discover_pages(root) if page_map is None else page_map
+    command = ["git", "diff", "--name-only", "--diff-filter=ACMR", base_ref + "...HEAD", "--"]
+    result = subprocess.run(command, cwd=root, text=True, capture_output=True, check=True)
+    changes = set(result.stdout.splitlines())
+    allowlist = json.loads((root / "site/pages.json").read_text(encoding="utf-8"))
+    if "site/pages.json" in changes:
+        # New entries may point at untouched files. Scan the whole public figure inventory.
+        return sorted(selected)
+    return sorted(Path(page["output"]).stem for page in allowlist
+                  if page["source"] in changes and Path(page["output"]).stem in selected)
 
 
 def inspect(page, figure_id, result_dir, slug, width):
@@ -163,7 +184,12 @@ def run(dist, output, slugs, widths, page_map=None):
     finally:
         httpd.shutdown()
     (output / "visual-qa-report.json").write_text(
-        json.dumps(reports, ensure_ascii=False, indent=2), encoding="utf-8")
+        json.dumps({
+            "scope": "render_and_layout_only",
+            "certifies_medical_correctness": False,
+            "certifies_figure_educational_value": False,
+            "results": reports,
+        }, ensure_ascii=False, indent=2), encoding="utf-8")
     for entry in reports:
         print(("PASS" if entry["passed"] else "HOLD"), entry["page"], entry["viewport"],
               entry["problems"] + [p for f in entry["figures"] for p in f["problems"]])
@@ -175,12 +201,31 @@ if __name__ == "__main__":
     ap.add_argument("--dist", type=Path, default=ROOT / "dist")
     ap.add_argument("--output", type=Path, default=ROOT / "visual-qa-artifacts")
     ap.add_argument("--pages", nargs="+", default=None, help="Page slugs (default: focused arrhythmia set)")
-    ap.add_argument("--all", action="store_true", help="Discover all published <figure> blocks from site/pages.json")
+    mode = ap.add_mutually_exclusive_group()
+    mode.add_argument("--all", action="store_true",
+                      help="Discover all public <figure> blocks; expensive audit")
+    mode.add_argument("--changed-from", default="",
+                      help="Git base ref to auto-render only modified published articles")
     ap.add_argument("--widths", nargs="+", type=int, default=[360, 390, 768, 1280])
     a = ap.parse_args()
-    page_map = discover_pages(ROOT) if a.all else PAGES
-    slugs = a.pages if a.pages is not None else list(page_map)
+    page_map = discover_pages(ROOT) if a.all or a.changed_from else PAGES
+    if a.pages is not None:
+        slugs = a.pages
+    elif a.changed_from:
+        slugs = changed_pages(ROOT, a.changed_from, page_map)
+    else:
+        slugs = list(page_map)
     unknown = sorted(set(slugs) - set(page_map))
     if unknown:
         ap.error("Unknown page slug(s): " + ", ".join(unknown))
+    if not slugs:
+        a.output.mkdir(parents=True, exist_ok=True)
+        (a.output / "visual-qa-report.json").write_text(
+            json.dumps({"scope": "render_and_layout_only",
+                        "certifies_medical_correctness": False,
+                        "certifies_figure_educational_value": False,
+                        "results": [], "status": "no_changed_public_figures"},
+                       ensure_ascii=False, indent=2), encoding="utf-8")
+        print("SKIP: no modified allowlisted pages containing figure blocks")
+        raise SystemExit(0)
     raise SystemExit(run(a.dist, a.output, slugs, a.widths, page_map))
