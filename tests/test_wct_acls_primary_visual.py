@@ -28,6 +28,8 @@ class ACLSPrimaryVisualTests(unittest.TestCase):
         self.assertIsNotNone(match)
         fig = match.group(0)
         self.assertIn("2025 AHA", fig)
+        self.assertIn("先評估心率與病況（通常 ≥150/min）", fig)
+        self.assertIn("若初始介入仍無效", fig)
         self.assertIn("Algorithm-ACLS-Tachycardia-250514.pdf", fig)
         self.assertIn("官方完整原圖", fig)
         self.assertIn("非 AHA 原圖", fig)
