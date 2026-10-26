@@ -11,7 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from visual_qa_browser import discover_pages, changed_pages, changed_figures, figure_versions
+from visual_qa_browser import discover_pages, changed_pages, changed_figures, figure_versions, write_review_summary
 
 
 class VisualQADiscoveryTest(unittest.TestCase):
@@ -124,6 +124,19 @@ class VisualQADiscoveryTest(unittest.TestCase):
         self.assertEqual(changed_figures(self.root, "origin/main"),
                          {"reader-lesson": ("reader-lesson.html",
                                             ["decision", "source-ecg"])})
+
+    @patch.dict("os.environ", {"GITHUB_STEP_SUMMARY": ""})
+    def test_report_does_not_confuse_render_success_with_clinical_review(self):
+        write_review_summary(self.root, [{
+            "page": "reader-lesson.html", "viewport": 360,
+            "figures": [{"figure": "decision", "passed": True,
+                         "problems": [], "screenshot": "decision-360.png"}]
+        }])
+        text = (self.root / "visual-qa-summary.md").read_text(encoding="utf-8")
+        self.assertIn("NOT medical/content approval", text)
+        self.assertIn("decision-360.png", text)
+        self.assertIn("360px", text)
+
 
 
 if __name__ == "__main__":
