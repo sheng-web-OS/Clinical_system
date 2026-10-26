@@ -11,8 +11,8 @@ COPD = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-26-copd-emptying
 class PreviouslyUntrackedVisuals(unittest.TestCase):
     def test_dcm_figures_have_stable_unique_ids(self):
         text = DCM.read_text("utf-8")
-        figures = re.findall(r"<figure\\b[^>]*>", text)
-        ids = re.findall(r'<figure\\b[^>]*\\bid="([^"]+)"', text)
+        figures = re.findall(r"<figure\b[^>]*>", text)
+        ids = re.findall(r'<figure\b[^>]*\bid="([^"]+)"', text)
         self.assertEqual(len(figures), len(ids))
         self.assertEqual(len(ids), len(set(ids)))
         for fid in ("dcm-literature-pv-loop", "dcm-literature-functional-mr",
@@ -21,8 +21,8 @@ class PreviouslyUntrackedVisuals(unittest.TestCase):
 
     def test_hypoxemia_figures_are_identifiable_not_declared_approved(self):
         text = HYPOX.read_text("utf-8")
-        figures = re.findall(r"<figure\\b[^>]*>", text)
-        ids = re.findall(r'<figure\\b[^>]*\\bid="([^"]+)"', text)
+        figures = re.findall(r"<figure\b[^>]*>", text)
+        ids = re.findall(r'<figure\b[^>]*\bid="([^"]+)"', text)
         self.assertEqual(len(figures), len(ids))
         self.assertEqual(len(set(ids)), len(ids))
         for fid in ("hypoxemia-ventilation-dead-space", "hypoxemia-vq-vs-shunt",
