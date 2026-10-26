@@ -12,8 +12,8 @@ class VTENativeBranchFigure(unittest.TestCase):
         self.assertIn('id="vte-native-diagnostic-pathways"', s)
         self.assertEqual(s.count('class="vte-branch-svg"'), 2)
         self.assertEqual(s.count('class="vte-branch-mobile"'), 2)
-        self.assertEqual(s.count('marker-end="url(#arrow-dvt)"'), 4)
-        self.assertEqual(s.count('marker-end="url(#arrow-pe)"'), 4)
+        self.assertEqual(s.count('marker-end="url(#arrow-dvt)"'), 6)
+        self.assertEqual(s.count('marker-end="url(#arrow-pe)"'), 6)
         for token in ("DVT likely：Wells ≥ 2", "PE likely：Wells > 4",
                       "D-dimer 陰性", "D-dimer 陽性", "6–8 天",
                       "重複 proximal ultrasound", "CTPA", "clinical probability",
