@@ -536,3 +536,49 @@
  .hbv-inference-step{padding:16px 14px}
  .hbv-inference-step>strong,.hbv-contrast-result strong{font-size:15px}
 }
+
+/* WCT article: a genuinely branched decision algorithm, not a prose card or
+   a copy of the AHA copyright-controlled 2025 image. */
+.acls-flowchart{margin:2rem 0;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden;box-shadow:0 8px 26px rgba(14,54,48,.07)}
+.acls-flowchart-head{padding:23px 25px 20px;border-bottom:1px solid var(--line)}
+.acls-flowchart-head>span{display:block;color:var(--accent);font:700 .66rem/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.09em}
+.acls-flowchart-head>strong{display:block;margin:.4rem 0 .65rem;font-size:1.17rem;line-height:1.45;color:var(--ink)}
+.acls-flowchart-head>p{font-size:.85rem;line-height:1.75;color:var(--muted);margin:0}
+.acls-flowchart-body{padding:22px 24px 25px;max-width:100%;min-width:0}
+.acls-f-start,.acls-f-question{max-width:680px;margin:0 auto;border:1px solid var(--line);border-radius:10px;padding:15px 19px;text-align:center}
+.acls-f-start{background:color-mix(in srgb,var(--surface) 90%, #67a78f)}
+.acls-f-question{background:color-mix(in srgb,var(--surface) 90%, #e4a05a);border:2px solid #b98555}
+.acls-f-start>span,.acls-f-question>span{display:block;font:700 .69rem/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em;color:var(--muted)}
+.acls-f-start>strong,.acls-f-question>strong{display:block;font-size:1rem;line-height:1.5;color:var(--ink);margin:.26rem auto}
+.acls-f-start>small,.acls-f-question>small{display:block;font-size:.75rem;line-height:1.65;color:var(--muted)}
+.acls-f-down{text-align:center;color:var(--accent);font-size:1.55rem;font-weight:700;line-height:1.4;margin:3px 0}
+.acls-f-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:12px}
+.acls-f-option{min-width:0;padding:16px 17px 17px;border-radius:10px;border:1px solid var(--line);border-left-width:4px;background:var(--surface)}
+.acls-f-option>span{display:block;font:700 .7rem/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.015em;margin-bottom:7px}
+.acls-f-option>strong{font-size:.88rem;line-height:1.48;color:var(--ink);display:block}
+.acls-f-option>p{font-size:.78rem;line-height:1.68;color:var(--muted);margin:9px 0 0}
+.acls-f-option>p strong{color:var(--ink)}
+.acls-f-danger{border-left-color:#bc5f58;background:color-mix(in srgb,var(--surface) 93%,#bd5b5b)}
+.acls-f-danger>span{color:#b6534c}
+.acls-f-urgent{border-left-color:#c88242;background:color-mix(in srgb,var(--surface) 93%,#dfb674)}
+.acls-f-urgent>span{color:#a96425}
+.acls-f-conditional{border-left-color:#3b8c95;background:color-mix(in srgb,var(--surface) 93%,#76bdc6)}
+.acls-f-conditional>span{color:var(--accent)}
+.acls-f-continue{border-left-color:#3f9175;background:color-mix(in srgb,var(--surface) 93%,#71bc94)}
+.acls-f-continue>span{color:var(--accent)}
+.acls-f-neutral{border-left-color:#8a96ac;background:color-mix(in srgb,var(--surface) 95%,#8c9eb4)}
+.acls-f-neutral>span{color:var(--muted)}
+.acls-flowchart-end{border-top:1px solid var(--line);padding:15px 24px;font-size:.84rem;line-height:1.8;background:color-mix(in srgb,var(--surface) 95%,#98a89e);color:var(--ink)}
+.acls-flowchart figcaption{padding:17px 24px 20px;color:var(--muted);font-size:.78rem;line-height:1.8;border-top:1px solid var(--line)}
+.acls-flowchart figcaption strong{color:var(--ink)}
+@media(max-width:680px){
+  .acls-flowchart{margin:1.6rem -5px;border-radius:9px}
+  .acls-flowchart-head{padding:17px 16px}
+  .acls-flowchart-head>strong{font-size:1.05rem}
+  .acls-flowchart-body{padding:16px 12px 20px}
+  .acls-f-pair{grid-template-columns:minmax(0,1fr);gap:9px}
+  .acls-f-start,.acls-f-question{padding:13px 11px}
+  .acls-f-option{padding:13px 12px}
+  .acls-f-down{margin:2px 0;font-size:1.35rem}
+  .acls-flowchart-end,.acls-flowchart figcaption{padding:14px 15px}
+}
