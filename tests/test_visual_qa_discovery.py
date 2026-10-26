@@ -11,7 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from visual_qa_browser import discover_pages, changed_pages, changed_figures, figure_versions, write_review_summary
+from visual_qa_browser import discover_pages, changed_pages, changed_figures, figure_versions, write_review_summary, RESPONSIVE_SENTINELS
 
 
 class VisualQADiscoveryTest(unittest.TestCase):
@@ -117,6 +117,14 @@ class VisualQADiscoveryTest(unittest.TestCase):
         git.side_effect = [changed, changed]
         self.assertEqual(changed_figures(self.root, "origin/main"),
                          {"reader-lesson": ("reader-lesson.html", ["source-ecg"])})
+
+    @patch("visual_qa_browser.subprocess.run")
+    def test_global_css_change_rechecks_monitored_phone_diagrams(self, git):
+        git.return_value = subprocess.CompletedProcess([], 0, "site/styles.css\n", "")
+        # Monitor one proven target without counting every unreviewed old figure as a new change.
+        with patch.dict(RESPONSIVE_SENTINELS, {"reader-lesson": ["decision"]}):
+            self.assertEqual(changed_figures(self.root, "origin/main"),
+                             {"reader-lesson": ("reader-lesson.html", ["decision"])})
 
     @patch("visual_qa_browser.subprocess.run")
     def test_shared_style_change_does_not_fail_on_unchanged_legacy_figures(self, git):
