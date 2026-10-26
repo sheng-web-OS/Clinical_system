@@ -1,6 +1,6 @@
 # 108 年第一次醫師（二）醫學（三）｜急症與診斷效度四題來源
 
-這一份來源頁只服務第四批 **Q61、Q63、Q75、Q78**，公開教學正文不得包含個人作答紀錄。以下分清 **2019 原卷答案、Pocket Medicine 9E 本次實際核讀的文字、當代專業建議及尚未完成的圖像／出版驗收**，不把它們混作同一層已認證資料。
+這一份來源頁只服務第四批 **Q61、Q63、Q75、Q78**，以下分清 **2019 原卷答案、Pocket Medicine 9E 已核讀的原始內容、當代專業建議與圖表對讀範圍**，避免將不同年代的醫學建議混為同一套處置。
 
 ## 一、考題身分及原始答案
 
@@ -24,11 +24,11 @@
 
 | PDF 頁碼 | 確實讀取的部分 | 用在第四批的推理 | 已查核／未查核 |
 | --- | --- | --- | --- |
-| p137–138 | Abnormal Liver Tests：AST 不限於肝細胞，skeletal muscle injury 可使 AST 升高；heat stroke 與 rhabdomyolysis 亦列入異常轉氨酶鑑別 | Q61 不把 AST/ALT 升高武斷解讀為單純肝病 | **PDF 第 137–138 頁原頁已實際目視；第 137 頁表格列／欄已核讀，Figure 3-3 的圖說亦可見，但不代表已取得公開權利** |
-| p176 | AKI 分類中「Pigments: Hb, myoglobin」及腎替代治療適應症（refractory electrolyte/acid–base、overload、uremia 等） | Q63 區分 pigment nephropathy 與透析真正目標 | **PDF 第 175–176 頁 AKI 病因表、上下列及治療註記已實際目視；只認證與此題相關的欄位，不宣稱全書圖表 QA 完成** |
-| p177 | Rhabdomyolysis：氧化損傷、腎血管收縮、肌紅蛋白沉積；heme+ 卻無 RBC；補液以尿量目標調整；追蹤電解質與 compartment syndrome | Q63 重要生理骨架 | **完整相關文字已讀；這一頁的圖像仍因原始檔渲染限制未取得** |
+| p137–138 | Abnormal Liver Tests：AST 不限於肝細胞，skeletal muscle injury 可使 AST 升高；heat stroke 與 rhabdomyolysis 亦列入異常轉氨酶鑑別 | Q61 不把 AST/ALT 升高武斷解讀為單純肝病 | **原書 p137「Patterns of LFTs」已對讀影像欄列，p138 異常肝酵素段落與 Figure 3-3 標題已核；本站使用不同構圖之原創臨床示意，未轉載原表** |
+| p176 | AKI 分類中「Pigments: Hb, myoglobin」及腎替代治療適應症（refractory electrolyte/acid–base、overload、uremia 等） | Q63 區分 pigment nephropathy 與透析真正目標 | **p175–176「Etiologies and Diagnosis of Acute Kidney Injury」病因表及治療註記已對讀；本站只轉述 pigment/AKI 相關判斷，不重製原書表格** |
+| p177 | Rhabdomyolysis：氧化損傷、腎血管收縮、肌紅蛋白沉積；heme+ 卻無 RBC；補液以尿量目標調整；追蹤電解質與 compartment syndrome | Q63 重要生理骨架 | **Rhabdomyolysis 條目的完整相關文字已讀；本次 p177 頁面影像無法取得；該處並未被引用為已核原圖** |
 
-本次檢索並核讀的 Pocket 9E 段落，**沒有找到足以直接教學 Q75 CPR airway 配合通氣、或 Q78 闌尾炎診斷效度的專章圖表**。在本文使用 AHA 和診斷研究的理由是承認原書覆蓋的邊界，不是假稱小麻對每個國考題都有一頁現成詳解。若後續完整圖像複查辨認出適用原表或圖片，應以原圖對讀為優先，但先遵守授權與手機完整性要求。
+在已核讀的 Pocket 9E 範圍內，沒有找到直接討論 Q75 CPR airway 配合通氣或 Q78 闌尾炎敏感度的相關原圖，因此分別使用 AHA 指引與診斷研究。**正文中的三張流程圖全部為自行撰寫的因果導覽，與原教科書／指南圖表可清楚區分。**
 
 ### Pocket 9E 與 2022 共識的關鍵版本差異
 
@@ -49,23 +49,25 @@
 
 ### Cardiac arrest ventilation（Q75）
 
-4. American Heart Association. **2015 Guidelines Update for CPR and ECC**. [Executive summary](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000252)。原題明示 2015 版本：未有 advanced airway 時成人 CPR 30：2；已建立氣管內管等 advanced airway 時，以持續按壓搭配約每 6 秒一口氣，不再做 30：2 的按壓暫停。
-5. American Heart Association. **2025 Guidelines for Adult Basic Life Support**. [官方建議](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support)。用於現行無進階氣道／有脈搏呼吸停止等操作界線，以及通氣量以可見胸廓起伏為原則；不能拿現行成人 BLS 去悄悄修改 2015 年歷史答案。
-6. American Heart Association. **2025 Highlights of the AHA Guidelines for CPR and ECC**. [官方摘要 PDF](https://www.heart.org/en/-/media/CPR-Files/2025-documents-for-cpr-heart-edits-posting/Resuscitation-Science/252500_Hghlghts_2025ECCGuidelines.pdf)。以 2025 版本確認「未建立進階氣道前 30：2」以及避免過度／不足通氣。若需要確認進階氣道建立後的具體頻率，另對讀 AHA 成人心搏停止處置圖，避免把有脈搏呼吸停止的 10 breaths/min 視為同一病況。
+5. American Heart Association. **2015 Guidelines Update for CPR and ECC**. [Executive summary](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000252)。原題明示 2015 版本：未有 advanced airway 時成人 CPR 30：2；已建立氣管內管等 advanced airway 時，以持續按壓搭配約每 6 秒一口氣，不再做 30：2 的按壓暫停。
+6. American Heart Association. **2025 Guidelines for Adult Basic Life Support**. [官方建議](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support)。用於現行無進階氣道／有脈搏呼吸停止等操作界線，以及通氣量以可見胸廓起伏為原則；不能拿現行成人 BLS 去悄悄修改 2015 年歷史答案。
+7. American Heart Association. **2025 Highlights of the AHA Guidelines for CPR and ECC**. [官方摘要 PDF](https://www.heart.org/en/-/media/CPR-Files/2025-documents-for-cpr-heart-edits-posting/Resuscitation-Science/252500_Hghlghts_2025ECCGuidelines.pdf)。以 2025 版本確認「未建立進階氣道前 30：2」以及避免過度／不足通氣。若需要確認進階氣道建立後的具體頻率，另對讀 AHA 成人心搏停止處置圖，避免把有脈搏呼吸停止的 10 breaths/min 視為同一病況。
 
 ### Appendicitis（Q78）
 
-7. Andersson RE. *Meta-analysis of the clinical and laboratory diagnosis of appendicitis*. **Br J Surg. 2004;91:28–37.** [PubMed](https://pubmed.ncbi.nlm.nih.gov/14716790/)。用於解釋單項症狀／理學徵象有限的診斷效度，以及需整合病史與檢查；**並未把特定敏感度數字當成適用所有族群的常數**。
-8. Podda M, et al. *Diagnosis and Treatment of Acute Appendicitis: 2025 Edition of the World Society of Emergency Surgery Jerusalem Guidelines*. **JAMA Surgery. 2026;161:283–295**（2026-01-28 線上刊出；名稱為 2025 edition）。[正式論文](https://doi.org/10.1001/jamasurg.2025.6218)。用於風險分層與影像的現代診斷策略。Q78 是 2019 年敏感度考題，而非 2026 年檢查處方，兩者不同。
+8. Andersson RE. *Meta-analysis of the clinical and laboratory diagnosis of appendicitis*. **Br J Surg. 2004;91:28–37.** [PubMed](https://pubmed.ncbi.nlm.nih.gov/14716790/)。用於解釋單項症狀／理學徵象有限的診斷效度，以及需整合病史與檢查；**並未把特定敏感度數字當成適用所有族群的常數**。
+9. Podda M, et al. *Diagnosis and Treatment of Acute Appendicitis: 2025 Edition of the World Society of Emergency Surgery Jerusalem Guidelines*. **JAMA Surgery. 2026;161:283–295**（2026-01-28 線上刊出；名稱為 2025 edition）。[正式論文](https://doi.org/10.1001/jamasurg.2025.6218)。用於風險分層與影像的現代診斷策略。Q78 是 2019 年敏感度考題，而非 2026 年檢查處方，兩者不同。
 
-## 四、尚未完成的出版驗收（不放進教學正文）
+## 四、原圖與本網站示意圖的對讀方式
 
-這一批目前寫在**私人 GitHub 草稿分支**，尚未加入 `site/pages.json` 的正式出版清單。PDF 第 137 頁 LFT patterns 原表及第 175–176 頁 AKI etiology 原表的**可取得原頁圖像已逐欄目視**；第 177 頁 rhabdomyolysis 段落已逐句文字核讀，但原頁圖像仍不可取得。已取得原圖並不等於獲准將受著作權保護的原表在公開網站複製。合法公開 Pocket 原圖、手機原尺寸可放大、Figure Gate 註冊、網站建置與正式部署皆不得預先宣稱完成。
+*Pocket Medicine* 第九版為受著作權保護的教科書；讀者可循[出版社官方第九版書籍頁](https://shop.lww.com/Pocket-Medicine/p/9781975242978)或圖書館合法取得原書，依上方 PDF 定位自行對照。網站不提供私有 PDF、掃描頁面或整張原表的重製檔。
 
-需要在合併正式網站之前：
-- 補齊第 177 頁影像（若可取得），並依已驗證的 p137、p175–176 重要原表，查明公開再製權及手機原尺寸閱讀方式；未完成前維持待發狀態。
-- 檢視原始 2019 文字與更正答覆、外部原始指南全文；獨立評估高風險醫學措辭，特別是中暑即刻降溫、輸液上限、bicarbonate 適用條件、進階氣道操作、早期闌尾炎的非典型表現。
-- 通過 EPQC 與原圖出版門檻後，才把三篇 lesson 與本來源頁加入 `site/pages.json`，並設定共同的 `exam` metadata：year_roc=108、sitting=1、stage=2、subject=醫學（三）、question_numbers 分別為 [61,63]、[75]、[78]。
-- 執行 `bash tools/build_site.sh`、單元測試、GitHub CI，最後以 Cloudflare HTTPS 驗證真實公開閱讀頁；草稿存在不等於任何一項驗收通過。
+**第 61／63 題的原創 Figure 01** 以已核讀的 p137 LFT pattern 表與 p175–176 AKI 原表作為解釋對象，改以臨床判斷順序呈現「中暑 → 肌肉／肝酵素訊號 → pigment-associated AKI」；它並非小麻原圖，沒有重排或臨摹原表欄位。p177 的 rhabdomyolysis 段落是文字對讀，沒有宣稱該頁原圖像素完成核查。
 
-目前可公開閱讀的既有十二題版本仍不覆蓋、不重寫。原題不全文重刊，使用者私人錯題紀錄不納入公開內容。
+**第 75 題的原創 Figure 01** 將有無脈搏與有無已確認的 advanced airway 作為分類軸，用來讀懂 AHA CPR 操作節奏；並非 [AHA 2025 官方 BLS 演算法](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support) 的重製圖。2015 歷史考題與現行版本分別列明。
+
+**第 78 題的原創 Figure 01** 解釋 sensitivity 與 diagnostic value 不同，非 Andersson 統合分析的森林圖，亦非 WSES 指引的診斷流程原圖。原始論文與指南仍由上方正式連結讀取。
+
+圖表引用遵循台灣《著作權法》第 52、64、65 條的必要性及合理範圍評估：自己的原創分析是主體；他人圖表僅按研究需要定位與合法引用；註明出處**不是**任意重製的授權，也不代表法院已認定合理使用。法律來源見[全國法規資料庫](https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=J0070017)與[智慧財產局研究圖表引用說明](https://www.tipo.gov.tw/tw/tipo1/209-21680.html)。
+
+本系列為 AI 輔助、來源可對讀的教學解析，不是個別患者的醫囑，也不以網站技術驗證代替獨立臨床同儕審查。
