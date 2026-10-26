@@ -58,7 +58,7 @@ def render_home(pages):
 <a class="skip-link" href="#main">跳到主要內容</a>
 <header class="library-header">
   <a class="library-logo" href="index.html" aria-label="小麻閱讀首頁"><span class="library-logo-mark" aria-hidden="true">小</span><span>小麻閱讀<small>MEDICAL READING</small></span></a>
-  <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="knowledge-atlas.html">知識脈絡</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a></nav>
+  <nav aria-label="主要導覽"><a href="index.html" aria-current="page">首頁</a><a href="knowledge-atlas.html">知識地圖</a><a href="xiaoma-reading.html">小麻閱讀</a><a href="xiaoma-internal-medicine.html">內科國考</a></nav>
   <button class="library-theme" id="theme" aria-label="切換明暗主題" title="切換主題">◐</button>
 </header>
 <main class="library-wrap" id="main">
