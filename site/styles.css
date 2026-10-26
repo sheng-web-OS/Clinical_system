@@ -403,3 +403,5 @@
 .vte-urgent-note span{font-size:.88em}
 .vte-figure figcaption{font-size:.78em;line-height:1.65;color:var(--muted);margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
 @media(max-width:680px){.vte-figure{margin:1.5rem -2px;padding:14px;border-radius:13px;font-size:1em}.vte-risk-row{grid-template-columns:1fr;gap:6px}.vte-risk-row>div{padding:9px 12px;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:10px}.vte-risk-row span{margin:0}.vte-branches,.vte-evidence-grid,.vte-image-columns{grid-template-columns:1fr;gap:10px}.vte-branches>section,.vte-evidence-grid>section,.vte-image-columns>div{padding:15px}.vte-figure-heading>strong{font-size:1em}.vte-direction{margin:5px 0;font-size:1.4em}.vte-figure p{line-height:1.6}}
+
+@media(max-width:680px){.vte-flow-diverge{font-size:0}.vte-flow-diverge::after{content:"↓";font-size:25px}}
