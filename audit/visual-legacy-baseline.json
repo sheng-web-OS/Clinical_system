@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "baseline_ref": "main before 2026-10-27 visual audit",
+  "purpose": "These unchanged shapes are allowed as audited debt, NEVER certified instructional visuals.",
+  "figures": {
+    "content/xiaoma-reading/integrated/2026-10-21-dcm.md": [
+      {
+        "id": "__unnamed_01",
+        "fingerprint": "321c9cba3a689495",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_02",
+        "fingerprint": "9267a42dc39e019d",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_03",
+        "fingerprint": "43a04fc04ba71fd0",
+        "kind": "embedded_image",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md": [
+      {
+        "id": "__unnamed_01",
+        "fingerprint": "1ae204c18928dca7",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "hypercapnia-mechanisms",
+        "fingerprint": "074415aa32a84019",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "hypoxemia-workup",
+        "fingerprint": "8a556ecc4de6afbe",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_04",
+        "fingerprint": "faf99f7baf96b7f5",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "__unnamed_05",
+        "fingerprint": "66a19882a6016a64",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "support-modalities",
+        "fingerprint": "33e30d8b64229146",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md": [
+      {
+        "id": "hypernatremia-uosm-branches",
+        "fingerprint": "94f04f528814dcf6",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "metabolic-alkalosis-ucl-branches",
+        "fingerprint": "b216cfd3e6a04a53",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-22-diuretics-visual.md": [
+      {
+        "id": "loop-dose-response",
+        "fingerprint": "b336d88e02363d8e",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "response-pathway",
+        "fingerprint": "f710aa21248d8c72",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md": [
+      {
+        "id": "same-ph-figure",
+        "fingerprint": "0d17fde6c4c98ab7",
+        "kind": "svg",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "respiratory-compensation-table",
+        "fingerprint": "7eb73743698ba2cb",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md": [
+      {
+        "id": "hf-phenotype-matrix",
+        "fingerprint": "faa15e0e31a1c8ec",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "lv-filling-branches",
+        "fingerprint": "99f1606dbc540bf5",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-24-asthma-variable-airflow.md": [
+      {
+        "id": "asthma-evidence-ladder",
+        "fingerprint": "add7382d912cffd1",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "asthma-deterioration-loop",
+        "fingerprint": "5b2745fa356472af",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ],
+    "content/xiaoma-internal-medicine/lessons/2026-10-25-pneumonia-severity.md": [
+      {
+        "id": "pneumonia-case-trajectory",
+        "fingerprint": "53b796a837d86f4b",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      },
+      {
+        "id": "pneumonia-three-decisions",
+        "fingerprint": "18128d65af067827",
+        "kind": "html_css",
+        "status": "legacy_unreviewed"
+      }
+    ]
+  }
+}
