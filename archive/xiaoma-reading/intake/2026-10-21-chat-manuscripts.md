@@ -53,3 +53,9 @@
 ### 2026-10-26 增量回收（HBV phase → ALT 訊號）
 
 作者再貼出 2026-07-19 全文與一張〈Phases of Chronic HBV Infection〉表格圖片。**原稿逐字保存**於 `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-user-supplied.md`（首次保存 commit `e3dc0d941456a6473af32e33548f346c478399e7`）。已逐欄閱讀提供的表格截圖、記錄附件 fingerprint 與 2018/2025 指引門檻差異，詳 `archive/xiaoma-reading/intake/2026-07-19-hbv-signals-figure-review.md`。圖片原始像素**仍僅在對話附件，未搬入 Git**，且尚未對回 Pocket Medicine 9E 原 PDF 完整頁次；不得把摘要當原頁驗收。這是 source snapshot，**並非**已公開的歷史原稿、醫學放行或合法原圖重製。系列閱讀順序維持 2026-07-18〈HBV phase，不是在替慢性肝炎分期〉→ 2026-07-19〈我們看見的是病程，還是病程留下的訊號？〉；前一篇仍另行回收，不能冒稱已保存。
+
+### 2026-10-26 增量回收（肝臟檢驗；原 21 篇清單以外）
+
+作者於 2026-10-26 對話提供〈肝臟檢驗，先告訴你病人在哪裡〉（文內日期 2026-07-18，小麻閱讀 9E）完整文本及 `Tests of hepatic function / Patterns of LFTs` 的局部原書表格截圖。正文逐字存入私人 [source snapshot](2026-07-18-liver-tests-user-supplied.md)，圖表實際可見內容及醫學／權利邊界另記於 [figure + medical audit](2026-07-18-liver-tests-figure-medical-audit.md)。
+
+狀態（2026-10-26 作者新確認）：**author_attested_facebook_final / canonical_original_in_branch / publication_hold**。作者在本次對話明確確認「本次完整貼文就是 2026-07-18 Facebook 正式發布的最終版本」。已將 source snapshot **逐字無變更**納入 `content/xiaoma-reading/originals/2026-07-18-liver-tests.md` 作為作者確認之 canonical 基準；尚未取得 Facebook 貼文 URL／網頁獨立核對，不能說已自行驗證 FB 原帖。此更新屬 PR #65 工作分支，尚未合併 main，亦未加入 `site/pages.json`／公開網站。原篇不屬上列 2026-10-21 歷史 21 篇直貼清單，故不改動原有計數基數。截圖原像素尚未 Git 封存；局部圖表對讀不能冒充完整 9E 原頁核對。作者的原稿身分確認，不代表獨立醫學審查或原書圖像授權通過。
