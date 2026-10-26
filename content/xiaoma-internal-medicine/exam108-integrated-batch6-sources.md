@@ -16,7 +16,7 @@
 | Q4 | A | MS 風濕性、Marfan/AR、急性逆流血管擴張劑、LVEDP | [瓣膜壓力的位置](lessons/2026-10-27-exam108-valve-hemodynamics.md) |
 | Q13 | A | 肝切片檢體長度、病理分布、腹水／凝血風險 | [肝切片與 NIT](lessons/2026-10-27-exam108-biopsy-fibrosis.md) |
 | Q14 | B | FibroTest／TE／MRE 與 fibrosis staging 的精準度 | [肝切片與 NIT](lessons/2026-10-27-exam108-biopsy-fibrosis.md) |
-| Q15 | C | HBV 22/42/27 nm 粒子及 HBsAg/HBcAg/HBeAg 的構造歸屬 | [HBV 的觀察層](lessons/2026-10-27-exam108-liver-observation.md) |
+| Q15 | C | HBV 22/42/27 nm 粒子及 HBsAg/HBcAg/HBeAg 的構造歸屬 | [HBV 的觀察層](lessons/2026-10-27-exam108-hbv-structure.md) |
 
 題號唯一識別預定為 (year_roc=108, sitting=1, stage=2, subject=醫學（三）, question_number)，沿用既有年度索引，不建立第二個題庫。此批**尚未**加入 site/pages.json。
 
