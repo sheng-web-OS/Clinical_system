@@ -595,7 +595,7 @@
       "status": "represented",
       "source_review": "content/xiaoma-reading/vte-sources.md",
       "reviewed_on": "2026-10-27",
-      "review_type": "ai_source_review_and_explicit_prepublication_editorial_visual_QA",
+      "review_type": "AI_editorial_quantitative_visual_review_prelayout_QA_not_independent_physician_peer_review",
       "rights_decision": "original_question-topology_figure_generated_from_medical_references; third_party_figures_are_source_links_only",
       "items": [
         {
@@ -626,13 +626,13 @@
           "scope_limit": "單一病例的共病血栓不能作為病程必然證明；color Doppler 非 compression US；圖片為 CC BY-NC 4.0，僅給原站連結。"
         },
         {
-          "locator": "NICE NG158 2023 full DVT/PE 2-level Wells, D-dimer and imaging decision branches; Pocket Medicine 9E p97-99",
+          "locator": "NICE NG158 recommendations 2023 DVT and PE 2-level pretest probability and D-dimer exclusion conditions; Bayes odds theorem demonstration",
           "source_token": "NICE NG158",
           "mode": "illustrated",
-          "anchor": "vte-decision-resolution",
+          "anchor": "vte-d-dimer-bayes",
           "caption_token": "NICE NG158",
-          "teaching_role": "以明確分層的 clinical question diagram 在同一畫面比較 prophylaxis 的上游風險判斷、DVT 的腿部特異假說和 PE 的肺循環假說；各自通向不同 Wells 與影像目標，故圖像增量為判斷解析度而非血栓演變時間軸。",
-          "scope_limit": "圖為教學的問題拓樸並非完整診斷演算法，沒有 Wells 門檻或停止節點；必須回到 NICE 原始診斷流程看 D-dimer 陰性、影像陰性及 6-8 天 serial ultrasound 的條件；不適用休克或不穩定疑似 PE。"
+          "teaching_role": "量化同一陰性檢驗的似然比在不同前測機率下造成不同陰性後殘餘機率，顯示 D-dimer 陰性不能脫離 pretest probability 作為通用停查理由。",
+          "scope_limit": "LR− 0.10、5%、50% 是刻意假設而非特定 D-dimer assay 敏感度、病人實測或通用停止門檻；DVT／PE 的真實流程需分別依 NICE NG158，尤其不適用血流動力學不穩定疑似 PE。"
         }
       ]
     },
