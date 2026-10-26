@@ -165,6 +165,46 @@ def inspect(page, figure_id, result_dir, slug, width):
         }).length""")
     if hidden_panels:
         problems.append("figure hides important content behind horizontal scrolling")
+    if figure_id == "af-two-exits" and width <= 390:
+        mobile_svg = figure.locator(".af-mobile-conduction svg")
+        if mobile_svg.count() != 1 or not mobile_svg.is_visible():
+            problems.append("AF mobile conduction flow is missing")
+        else:
+            visual = mobile_svg.evaluate("""svg => {
+                const bounds = svg.viewBox.baseVal;
+                const scale = svg.getBoundingClientRect().width / bounds.width;
+                const labels = [...svg.querySelectorAll('text')];
+                const outside = labels.filter(label => {
+                    const b = label.getBBox();
+                    return b.x < -2 || b.y < -2 ||
+                           b.x + b.width > bounds.width + 2 ||
+                           b.y + b.height > bounds.height + 2;
+                }).map(label => label.textContent.trim());
+                const inside = [
+                    {text:'Accessory pathway', left:189, right:347},
+                    {text:'若 AP 高順傳：極短 RR → VF 風險', left:16, right:344}
+                ];
+                const clipped = inside.filter(z => {
+                    const label = labels.find(n => n.textContent.trim() === z.text);
+                    if (!label) return true;
+                    const b = label.getBBox();
+                    const size = parseFloat(getComputedStyle(label).fontSize) * scale;
+                    return b.x < z.left + 4 || b.x + b.width > z.right - 4 ||
+                           size < 11;
+                }).map(x=>x.text);
+                const blocker = svg.querySelector('[data-qa-flow="av-node-blocked"]');
+                const ap = svg.querySelector('[data-qa-flow="ap-persists"]');
+                return {outside, clipped, blocker:!!blocker && blocker.getBBox().width > 15,
+                        ap:!!ap && ap.getBBox().width > 15};
+            }""")
+            if visual["outside"]:
+                problems.append("AF mobile SVG text outside viewBox: " +
+                                ", ".join(visual["outside"][:3]))
+            if visual["clipped"]:
+                problems.append("AF mobile critical labels clipped or too small: " +
+                                ", ".join(visual["clipped"]))
+            if not visual["blocker"] or not visual["ap"]:
+                problems.append("AF mobile counterfactual missing blocked-vs-persisting paths")
     figure.scroll_into_view_if_needed()
     image_path = result_dir / (slug + "-" + figure_id + "-" + str(width) + ".png")
     try:
