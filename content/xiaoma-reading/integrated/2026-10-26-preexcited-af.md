@@ -108,7 +108,7 @@
 </g>
 </svg>
 </div>
-<figcaption><strong>圖 3｜示意，不是 ECG。</strong> AF 訊號可經 AV node 與具順傳能力的 AP 抵達心室；阻斷 AV node 無法阻斷 AP。<strong>只有 AP 可快速順傳時，才可能出現極短 RR 與 VF 風險。</strong> 圖中脈衝數量不代表真實傳導比例，也不能取代病人 ECG 判讀或急救流程。</figcaption>
+<figcaption><strong>圖 3｜示意，不是 ECG。</strong> AF 訊號可經 AV node 與能順傳的 AP 抵達心室；阻斷 AV node 無法同時阻斷 AP。<strong>非所有 AP 都具高危性；若 AP 可快速順傳，才可能出現極短 RR 與 VF。</strong> 脈衝數量不代表真實比率，圖也不能取代個案 ECG 判讀與急救流程。</figcaption>
 </figure>
 
 ## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
