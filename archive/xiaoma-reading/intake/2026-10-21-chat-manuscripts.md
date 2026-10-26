@@ -1,6 +1,6 @@
 # 2026-10-21 對話直貼文章｜原稿接收清單
 
-狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、一篇 Constipation 已保存完整私人 source snapshot（未出版）、其餘十四篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
+狀態（截至 2026-10-26）：**21 篇對話接收稿中，六篇已進入 Git originals 與出版目錄、兩篇（Constipation、Syncope）已保存完整私人 source snapshot（未出版）、其餘十三篇仍是 conversation_only。** 這三種狀態不可混同。原稿的網站部署以實際 Cloudflare 成功狀態為準。
 
 本清單是接收及搬遷追蹤，不是已完成醫學事實查核、已確認唯一最終版本的證明。原文保留在本次 ChatGPT 對話；僅已核對確實寫入 Git 原稿檔案者標為 `imported`；不同歷史版本仍可能待比較。不得根據標題或摘要重寫成所謂原稿。使用者送來的「臨床筆記」不自動當作「小麻閱讀已發表正稿」。
 
@@ -20,7 +20,7 @@
 | 2026-07-18 | HBV phase，不是在替慢性肝炎分期 | 小麻閱讀（9E） | conversation_only |
 | 2026-07-17 | 還不知道是什麼，憑什麼治療 | 小麻閱讀（9E）；WCT／ACLS | conversation_only |
 | 2026-07-16 | 急性 AF，不一定要立刻結束 | 小麻閱讀（9E） | conversation_only |
-| 2026-07-16 | Syncope：以機轉定義，卻從現象開始診斷 | 小麻閱讀（9E） | conversation_only |
+| 2026-07-16 | Syncope：以機轉定義，卻從現象開始診斷 | 小麻閱讀（9E） | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-16-syncope-user-supplied.md`；圖像／醫學／出版審查待完成 |
 | 2026-07-12 | 從四象限走進 LVEDP | 小麻閱讀 | imported → `content/xiaoma-reading/originals/2026-07-12-lvedp.md` |
 | 2026-07-12 | Heart Failure：從四象限到診斷與急性失衡 | 小麻&IBCC 閱讀 | imported → `content/xiaoma-reading/originals/2026-07-12-heart-failure.md` |
 | 2026-07-11 | Accessory pathway ＆ WPW syndrome | 小麻閱讀（9E） | conversation_only |
@@ -48,3 +48,7 @@
 ### 2026-10-26 增量回收（Constipation）
 
 作者於 2026-10-26 對話再次貼出 2026-07-26 全文，已逐字存入私人 `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`（commit `3fa97afb07d50ebdc453033d3efa18fcae0facea`）。這是 **user-supplied source snapshot**，不等於確認 Facebook 已刊版本、`content/xiaoma-reading/originals` 正稿或公開網站頁面。下一步按 EPQC 查核原書圖表及現行 AGA／ACG、ASCRS 來源；特別注意 fecal impaction／mechanical obstruction、defecatory disorder testing 與腰椎骨折相關神經危險徵象。不要依舊的『六篇已入庫、十五篇待移轉』靜態數字判斷新的 source snapshot 數量。
+
+### 2026-10-26 增量回收（Syncope）
+
+作者於 2026-10-26 對話完整提供 2026-07-16 原稿及 Pocket Medicine 9E Syncope 頁 Figure 1-5 畫面；原文已保存至私人 `archive/xiaoma-reading/intake/2026-07-16-syncope-user-supplied.md`。本次保存文字，不將書頁圖片重製到公開網站，亦未確認 Facebook 發表版本。來源與臨床重讀記錄見 `audit/syncope-figure-evidence-20261026.md`；下一步須完成臨床、圖像權利與網站編譯 QA，再由正式出版目錄決定是否發布。
