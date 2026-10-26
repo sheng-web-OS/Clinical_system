@@ -21,10 +21,10 @@
 <thead><tr><th scope="col">臨床急迫性 × US</th><th scope="col">US：看見 ductal dilation</th><th scope="col">US：未見 ductal dilation</th></tr></thead>
 <tbody>
 <tr><th scope="row">穩定、目前無膽管炎警訊</th><td data-label="US：看見 ductal dilation"><strong>解剖假說提高</strong>：支持 large-duct obstruction，依前測機率與治療必要性選擇 MRCP／EUS、CT 或可能介入的 ERCP；擴張仍無法區分石頭、腫瘤與狹窄。</td><td data-label="US：未見 ductal dilation"><strong>改找其他層次，也不停止</strong>：評估藥物、PBC／PSC、small-duct disease、DILI 等；若懷疑持續，進階影像仍可排查 occult／早期間歇 obstruction。</td></tr>
-<tr class="chol-urgent"><th scope="row">疑似膽管炎、敗血症或器官不穩</th><td data-label="US：看見 ductal dilation"><strong>感染源控制優先</strong>：立即復甦、培養、適當抗菌治療、協調膽道緊急減壓；不因要先定出石頭或腫瘤而延誤。</td><td data-label="US：未見 ductal dilation"><strong>影像陰性不能抵銷危險</strong>：同步處理 sepsis，重新評估 obstruction／感染源與緊急影像或介入需求；不能把「無擴張」當作排除 cholangitis 的充分理由。</td></tr>
+<tr class="chol-urgent"><th scope="row">疑似膽管炎，且有敗血症或器官功能不穩</th><td data-label="US：看見 ductal dilation"><strong>感染源控制優先</strong>：立即復甦、培養、適當抗菌治療、協調膽道緊急減壓；不因要先定出石頭或腫瘤而延誤。</td><td data-label="US：未見 ductal dilation"><strong>影像陰性不能抵銷危險</strong>：同步處理 sepsis，重新評估 obstruction／感染源與緊急影像或介入需求；不能把「無擴張」當作排除 cholangitis 的充分理由。</td></tr>
 </tbody>
 </table>
-<p><strong>改判核心：</strong>「膽管有無擴張」是解剖定位證據；「是否疑似感染且不穩定」決定可以等待多久。後者在臨床急症時覆蓋前者，而不是兩者沿同一條嚴重度階梯排列。</p>
+<p><strong>改判核心：</strong>「膽管有無擴張」是解剖定位證據；「是否疑似感染且不穩定」決定可以等待多久。後者在臨床急症時覆蓋前者，而不是兩者沿同一條嚴重度階梯排列。 **進入緊急膽道減壓分支的前提仍是合理懷疑膽源性感染；非膽源性敗血症也可能造成 cholestatic liver tests，不能因有 sepsis 就自動走 ERCP。**</p>
 <figcaption>以 Pocket Medicine 9E Figure 3-3（Library PDF p.139）提供的 US 解剖證據，以及 ASGE cholangitis source-control 指引，自行重建雙軸臨床決策矩陣；不是原書流程圖重製。此圖描述疑似狀態與行動優先權，不能單憑矩陣替個別病人做確診。<a href="../liver-gi-source-review-20261027.md#cholestasis">核對來源與適用界線</a>。</figcaption>
 </figure>
 
