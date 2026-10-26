@@ -34,9 +34,19 @@ Cloudflare Web Analytics site tag：`fec8c44afd484f3fa4670885ba10dce5`
 
 - [x] Cloudflare Web Analytics 站點已建立
 - [x] Cloudflare Pages 曾設定原生 analytics tag/token；經實際 DOM 驗證未生效後已清除，避免重複追蹤
-- [ ] 含手動 beacon 的修正版本部署成功且確認頁面 DOM（需查 deployment 或頁面 beacon）
-- [ ] 讀者端 beacon 回傳成功與 Dashboard／GraphQL 出現有效 pageviews
-- [ ] 至少一週有可比的資料並產生完整週報
+- [x] 手動 beacon 修正版本（main `1f42eeab`）於 2026-10-26 13:55:25 UTC 正式部署成功；Cloudflare Browser Rendering API 確認首頁與 DCM 完整文章各有且僅有一個 beacon，且 token 符合 Web Analytics 站點設定
+- [x] Cloudflare GraphQL Analytics API `viewer.accounts.rumPageloadEventsAdaptiveGroups` 已能讀到正式站的 pageview/visits/路徑/裝置資料；2026-10-26 14:00 UTC 起的查詢出現有效資料（初期混有人工及工具驗收流量，僅作鏈路驗證，非自然訪客成效）
+- [ ] 個別 beacon HTTP POST 的 2xx 網路結果尚未直接逐次核對（GraphQL 已驗證平台實際有事件資料）
+- [x] 已安排 2026-11-02 起每週一台灣時間上午定期分析（首次報告屬啟用後不滿一週資料）
+- [ ] 至少一個完整可比較的自然週已累積且完成正式週對週比較
+
+### 資料查詢與上線基準
+
+- 首次確認部署完成：2026-10-26T13:55:25Z（台灣時間 21:55:25）；不要把部署前 Cloudflare 統計、測試瀏覽或 13:55 五分鐘跨界桶直接當作「新追蹤」的自然讀者數。
+- 2026-10-26 14:00 UTC 之後有回傳的新資料，可作為 post-release analytics ingestion 的證據；但目前不足以證實「使用者完讀」或「學習有效」。
+- GraphQL 資料集：`viewer.accounts.rumPageloadEventsAdaptiveGroups`；以 `siteTag` 指定當前站點，`count` 是 pageview 事件，`sum.visits` 是造訪，`dimensions.requestPath / deviceType / refererHost / datetimeFiveMinutes` 用於摘要。
+- GraphQL 可能有采樣、時間桶與來源歸因限制，數據品質須在每份週報分開註記；路徑需先排除 `/xiaoma-plan.html` 等 alias，避免歸因重複。
+- 初期人工與工具驗證流量無可靠個人標記可完全排除，因此**不得把最初的數字解釋為真實新讀者或其數量**。
 
 ## 後續擴充邊界
 
