@@ -656,3 +656,14 @@
  .article #same-ph-figure .clinical-mobile-formula{font-size:13px;line-height:1.7;margin:12px 0 6px}
  .article #same-ph-figure .clinical-mobile-same-ph>small{display:block;font-size:11px;color:#53675f}
 }
+
+
+/* Pre-excited AF: source-to-ventricle causal topology and conditional blockade
+   remain fully visible at phone width; no compressed 780px horizontal pan. */
+.article .af-mobile-conduction{display:none}
+@media(max-width:650px){
+ .article #af-two-exits .af-desktop-conduction{display:none}
+ .article #af-two-exits .af-mobile-conduction{display:block;max-width:100%;padding:8px 6px 11px;background:#f8fbfa}
+ .article #af-two-exits .af-mobile-conduction svg{display:block;width:100%;min-width:0;max-width:410px;height:auto;margin:0 auto}
+ .article #af-two-exits .diuretic-figure-head{padding:15px 13px 13px}
+}
