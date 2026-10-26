@@ -615,8 +615,8 @@
       "status": "represented",
       "source_review": "content/xiaoma-reading/vte-sources.md",
       "reviewed_on": "2026-10-27",
-      "review_type": "link_accessibility_and_medical_content_editorial_review",
-      "rights_decision": "Bayesian graph original and locally rendered; only a verified hosted copy of source NICE decision flow is externally linked; AHA JKMS figures without dependable image access unlinked",
+      "review_type": "AI_medical_structural_and_source_provenance_review_pending_real_browser_visual_QA",
+      "rights_decision": "Clinical OS original vector selected-branch charts independently structured from NICE clinical recommendations; original publisher figures are not copied or hotlinked; NICE source document preserved as externally linked evidence",
       "items": [
         {
           "locator": "NICE NG158 original 2023 DVT/PE visual summary, preserved at Thrombosis UK (p1 DVT / p2 PE)",
@@ -635,6 +635,15 @@
           "caption_token": "NICE NG158",
           "teaching_role": "量化同一陰性檢驗的似然比在不同前測機率下造成不同陰性後殘餘機率，顯示 D-dimer 陰性不能脫離 pretest probability 作為通用停查理由。",
           "scope_limit": "LR− 0.10、5%、50% 是刻意假設而非特定 D-dimer assay 敏感度、病人實測或通用停止門檻；DVT／PE 的真實流程需分別依 NICE NG158，尤其不適用血流動力學不穩定疑似 PE。"
+        },
+        {
+          "locator": "NICE NG158 2023 diagnostic visual summary p1 DVT and p2 PE, accessed as verified preserved PDF at Thrombosis UK; NICE recommendations 1.1.4-1.1.11 and 1.1.18-1.1.21",
+          "source_token": "NICE NG158",
+          "mode": "illustrated",
+          "anchor": "vte-native-diagnostic-pathways",
+          "caption_token": "NICE NG158",
+          "teaching_role": "頁內自行繪製兩張向量圖：DVT likely CUS 陰性後的 D-dimer 與 6–8 天重檢支線；PE likely CTPA 陰性後須判斷影像品質、臨床一致性，及若仍疑 DVT 時可考慮 proximal leg ultrasound。以實際分支取代無用文字框與失效外部圖。桌面是真 SVG，手機顯示獨立等價分支，皆不需外部圖檔。",
+          "scope_limit": "僅顯示 NICE NG158 two-level Wells 選定的典型 DVT/PE 分支，並非 Pocket Medicine DVT three-level Wells 算法，不涵蓋所有 anticoagulation contraindications、檢查時間限制或所有 V/Q 情況；不穩定 PE 獨立急救。"
         }
       ]
     },
