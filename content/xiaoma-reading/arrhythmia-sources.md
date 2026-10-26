@@ -11,7 +11,7 @@ Figure 1-3 的藥物反應節點是教學壓縮，不能單靠終止反應診斷
 ## 最新急救與 AF 指引
 
 1. [2025 AHA Adult Advanced Life Support](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)，§15 Wide-Complex Tachycardia、§16 Polymorphic VT、§17 Regular Narrow-Complex Tachycardia。核對 stable regular monomorphic WCT 中 adenosine 為 IIb；不穩定／irregularly irregular／polymorphic WCT 為禁忌；不明 WCT 不使用 verapamil／diltiazem；持續 polymorphic VT 需非同步電擊。
-2. [AHA 2025 官方 Tachyarrhythmia With a Pulse PDF](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf?sc_lang=en)。只提供官方連結；不把 2020 圖冒充目前版本。圖上的步驟需和 ALS 正文的 polymorphic／pre-excitation 限制一起讀。
+2. [AHA 2025 官方 Tachyarrhythmia With a Pulse PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf?sc_lang=en)。只提供官方連結；不把 2020 圖冒充目前版本。圖上的步驟需和 ALS 正文的 polymorphic／pre-excitation 限制一起讀。
 3. [2023 ACC/AHA/ACCP/HRS AF guideline](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)，§10.6 WPW and Preexcitation Syndromes；[開放全文副本](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/)。穩定 pre-excited AF 可用 IV ibutilide／procainamide 作為電復律替代；不穩定時電復律；AV nodal blocking agents（包括 amiodarone）列為有害。全文主站／PMC 本輪部分開啟遇網站驗證；已取得的指引推薦段落與小麻原頁一致，不宣稱已逐頁重讀整份 AF 指引。
 4. [2019 ESC SVT guideline](https://academic.oup.com/eurheartj/article/41/5/655/5556821)：accessory pathway、AVRT 方向與風險分類。SPERRI 與旁路有效不應期不是同一項量測；本文不提供個別 EP 風險計分。
 
@@ -47,14 +47,14 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 
 **QA 邊界**：有來源比對及程式結構驗證不代表頁面手機截圖已目視通過；沒有獨立醫學專科審閱，不得把作者／AI 審核冒充該驗收。
 
-## 2026-10-27｜原始 ECG 直接嵌入的圖像清單（已列入發布清單；圖片更新待合併）
+## 2026-10-27｜原始 ECG 與 ACLS 臨床決策主圖：正式發布狀態
 
 - **Figure 01（WPW 傳導／ECG）**：Khan Z, Khan A. *Cureus*. 2024;16:e62928, DOI [10.7759/cureus.62928](https://doi.org/10.7759/cureus.62928)。Wikimedia Commons [AVRT three-way original image](https://commons.wikimedia.org/wiki/File:Electrocardiographic_features_of_pre_excitation,_orthrodromic,_and_antidromic_AVRT.jpg) 及 [normal vs pre-excitation](https://commons.wikimedia.org/wiki/File:Electrocardiographic_findings_during_normal_atrioventricular_conduction_and_during_pre_excitation.jpg)，均標示 CC BY 4.0；原圖未裁切、未重畫。
 - **Figure 02（真實 pre-excited AF ECG）**：Silverman et al. *J Investig Med High Impact Case Rep*. 2018. DOI [10.1177/2324709618802870](https://doi.org/10.1177/2324709618802870)，PubMed Central [Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig1.jpg)、[Figure 2](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig2.jpg)、[Figure 3](https://pmc.ncbi.nlm.nih.gov/articles/instance/6166305/bin/10.1177_2324709618802870-fig3.jpg)。[出版社權利聲明](https://journals.sagepub.com/doi/10.1177/2324709618802870) CC BY 4.0；圖像未裁切／未重畫。2026-10-27 生產環境視覺 QA 已證實原 SAGE CDN 連結破圖，已改用 PubMed Central 原始文章圖檔入口。原刊圖仍未以二進位 blob 寫入 Git；現改用 `tools/fetch_arrhythmia_figures.py` 在每次網站建置時驗證原始 JPEG（753×536、753×341、753×343）並產生發行站內的 `assets/` 檔案；任何一張圖下載或校驗失敗時阻擋整次建置。新的公網渲染與手機判讀 QA 仍須獨立執行，不因建置通過即宣稱視覺品質合格。
 - **Figure 04（WCT 臨床證據）**：使用同一 2018 病例 Figure 1/2，表達處置前與處置後證據落差。不要把前後圖說混成兩個 WCT 診斷實驗。
 - **AHA 2025 成人 tachyarrhythmia 原圖**：仍維持[原始 PDF](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)直接引用，不鏡像、不重製完整流程圖；公開可讀不等於自由授權再利用。
 
-**更新狀態**：2026-10-27 讀取現行 `main` 的 `site/pages.json` 後確認，三篇文章已列入正式發布清單（`ai_editorial_review`、`navigation=false`）；先前審查紀錄宣稱「未列入」已過時。此次圖像由 `tools/fetch_arrhythmia_figures.py` 在建置時收錄，HTML `img` 直接引用站內 `assets/silverman-2018-fig*.jpg`，改圖提交不等於 Cloudflare 已更新；在合併、部署與公網驗證前不宣稱新圖已上線。原圖目視已透過公開原圖頁核對，整體醫學獨立同儕審稿仍未完成。
+**更新狀態**：2026-10-27 讀取現行 `main` 的 `site/pages.json` 後確認，三篇文章已列入正式發布清單（`ai_editorial_review`、`navigation=false`）；先前審查紀錄宣稱「未列入」已過時。此次圖像由 `tools/fetch_arrhythmia_figures.py` 在建置時收錄，HTML `img` 直接引用站內 `assets/silverman-2018-fig*.jpg`，2026-10-27 正式站已部署經驗證的本地 ECG；Cloudflare production 8dcadea 的三張 ECG 圖經瀏覽器以 naturalWidth/naturalHeight 檢查均可載入。原圖目視已透過公開原圖頁核對，整體醫學獨立同儕審稿仍未完成。
 
 ## 現行 Figures 對應範圍
 
@@ -63,10 +63,16 @@ Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*
 - [**Figure 03：pre-excited AF 的 AV node 與 AP 兩條傳導出口**](integrated/2026-10-26-preexcited-af.md#af-two-exits)：保留獨立原創 SVG 解釋傳導機轉，非個案量測的 EP signal。
 - [**Figure 04：WCT 初始 ECG 與轉律後 ECG**](integrated/2026-10-26-wct-acls-decision.md#wct-decision-figure)：直接嵌入 Silverman 2018 原圖，強調 irregular WCT 的可觀察操作邊界與後驗 delta wave 的證據時間差；AHA ACLS 官方流程維持原始連結。
 
-**來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，但**尚未完成本次圖片更新的正式公網部署與手機載入驗收**。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
+**來源使用界線**：Pocket Medicine 原圖為私人原頁對讀，不重製；Khan 與 Silverman 的 CC BY 4.0 圖像在修訂稿內直接引用，且 ECG 的正式公網下載驗收已完成；ACLS 決策主圖已透過 PR #96 發布，並以公網瀏覽器 390px 視窗確認直式圖可見。這不等同已完成獨立醫師同儕審查。AHA 原圖僅連結官方版本。已核對的 guideline class、圖像合法授權和圖像實際可載入是不同的驗收項目。
 
 ## 2026-10-27｜原始 ECG 圖源失效修復與剩餘風險
 
 此前直接使用 SAGE asset CDN 熱連結雖在文章內有 `img` 標籤，正式 Cloudflare 網站於 390px 真實瀏覽器截圖卻顯示破圖而非 ECG，屬於**視覺證據未交付**。新建置稿改為在發布建置階段由 PubMed Central 正式圖檔入口抓取（PMCID [PMC6166305](https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/)）載入 Figure 1–3；對照同病例原始 Figure 1 治療前、Figure 2 電復律後、Figure 3 消融後。這是修復來源交付，不表示案例的治療史可外推為現行指南。
 
-本次方案只在**建置端**連到公共學術存放庫，發行站點由 Cloudflare 提供三張本地 JPEG；Git 儲存可重建的下載規格、預期尺寸、來源與教學契約，非二進位 blob。由 `site/build.py` 在正式建置中執行圖像完整性檢查，搭配既有產出連結驗證。GitHub Issue #79 與 PR #78 的實際 390px／桌面截圖、`naturalWidth`、ECG 醫學判讀與來源授權門檻**仍保留**；不能因圖片改為本站來源就宣稱手機或獨立醫學審查通過。AHA 成人 tachyarrhythmia 流程圖僅連到 AHA 原始來源，未重製或自行宣稱授權。
+本次方案只在**建置端**連到公共學術存放庫，發行站點由 Cloudflare 提供三張本地 JPEG；Git 儲存可重建的下載規格、預期尺寸、來源與教學契約，非二進位 blob。由 `site/build.py` 在正式建置中執行圖像完整性檢查，搭配既有產出連結驗證。GitHub Issue #79 與 PR #78 的實際 390px／桌面截圖、`naturalWidth`、ECG 醫學判讀與來源授權門檻**仍保留**；不能因圖片改為本站來源就宣稱手機或獨立醫學審查通過。AHA 成人 tachyarrhythmia 的官方原圖僅連到 AHA 原始來源；另行製作的 WCT/ACLS 決策流程已在網站正文內直接顯示，未重製 AHA 圖像或自行宣稱 AHA 認證。
+
+## 2026-10-27｜WCT／ACLS 主圖正式發布核對
+
+- **已發布的主圖**：`xiaoma-reading-wct-acls-decision.html#wct-acls-main-algorithm`，由已合併 [PR #96](https://github.com/sheng-web-OS/Clinical_system/pull/96) 建立，含桌面 SVG、手機版直式判斷分支，以及放在圖首的 [AHA 官方流程圖原檔](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf)。發布清單 `required_primary_visual` 要求此圖、圖說、來源連結、desktop/mobile 版本同時存在，否則拒絕建置。
+- **正式站的實際瀏覽器驗收**：Cloudflare production commit `b39373c28f288439fb859243150cac4ddd3e6d7b`，部署狀態 success；以真實 390px CSS viewport 檢查圖表寬 344px、手機分支寬 318px，桌面 1440px 有獨立 SVG。390px 的原始頁面截圖確認中文、分支及官方 PDF 入口顯示。其他 CI 截圖紀錄請見 `audit/wct-acls-visual-review-20261027.md`。
+- **不可混淆的驗收**：實際頁面渲染、結構檢查、ECG 原圖存在及來源授權是各自不同的問題；實際學習成效與獨立人類臨床醫學審查尚未宣稱完成。舊版 PR #84 已關閉以避免把過期工作流覆蓋新版本。
