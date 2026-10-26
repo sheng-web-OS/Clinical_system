@@ -23,7 +23,7 @@ class VTESourceContext(unittest.TestCase):
         self.assertIn("不能直接取代骨科手術", article)
         self.assertIn("FEU 與 DDU 並不等價", article)
         self.assertIn("不是把原圖所有寫著", article)
-        self.assertIn("hemodynamically", article)
+        self.assertIn("obstructive shock", article)
 
     def test_source_recovery_remains_selective(self):
         article = ARTICLE.read_text(encoding="utf-8")
