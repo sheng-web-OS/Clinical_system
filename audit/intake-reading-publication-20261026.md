@@ -43,3 +43,34 @@
 - 深色圖表背景使用既有主題變數；未增加新的導覽框架或出版器。
 
 正式部署及HTTPS狀態待本提交的遠端部署結果，未預先標記已發布。
+
+
+## 2026-10-27 最新發布後再盤點與因果路線校準
+
+本節是對 2026-10-26 選稿決策的**增量更新**，不以舊 PR 的「未發布」文字覆蓋較新的 main 狀態。唯一公開知識地圖仍為 `content/clinical-os/index.md`；接收台帳仍為 `archive/xiaoma-reading/intake/2026-10-21-chat-manuscripts.md`；正式發布白名單仍為 `site/pages.json`。不另建第二套目錄或長期維護圖譜。
+
+### 本輪重新核對的版本事實
+
+- PR #70 已合併八篇整合稿（肝臟檢驗、HBV 兩篇、心律三篇、VTE、便祕）及臨床問題閱讀脈絡；原稿快照與整合稿仍保有不同身分。
+- PR #71 已合併修訂三篇心律敘事、病例與藥物／電擊界線；**當時仍欠缺 ECG 原像素的內嵌**，所以不可把敘事修訂視為圖像驗收完成。
+- PR #72 已合併並於 Cloudflare 正式站同 commit 驗證 CABG 術後 lactate／ScvO₂ 文章與來源頁（詳該 PR 發行紀錄）；其原始病例數據來自兩名不同 CABG 病人，不能互相補造血氣或檢查。
+- PR #74 已合併 HBV phase／stage 與 DNA／ALT 圖解的重新構圖；該 PR 報告手機 360／390px 瀏覽和建置驗收，但不冒稱獨立醫學同儕或真人理解測試。
+- PR #73（肝臟檢驗 R ratio 與 ALT／INR 圖）、PR #75（WPW／pre-excited AF／WCT 期刊 ECG 圖）目前仍是 **Draft / HOLD**。兩者的醫學、圖片載入與視覺理解放行不得由本輪閱讀地圖更新代替；網站目前的舊圖亦不因已公開就視為達到新要求。
+- 原 21 篇接收台帳在 main 記載 6 imported＋11 source snapshots＋4 conversation-only；此為**來源保存狀態**，絕非 17 篇獲得發布核准。Cholestasis、infiltrative ALP、cirrhosis、腹水、慢性腹瀉、急性 AF、Syncope 與中風預防仍不因系列存在而全批發布。
+
+### 因果依賴：已公開者要接得上，未驗收者只保留私人候選關係
+
+1. **氧合 → 氧含量／氧輸送 → 術後灌流**：hypoxemia 先定義 PaO₂、Hb、SaO₂；HF／LVEDP 補入 congestion、filling pressure 與 CO；CTICU CABG lactate／ScvO₂ 把這些量拉回可處置的出血、泵功能、血管張力等術後風險，並接回 acid-base。這是從測量層到決策層的跨篇依賴，**不是同一病例自然史**。
+2. **檢驗訊號 → HBV phase／fibrosis → 當下行動**：main 已有三篇；待公開 cholestasis、infiltrative ALP、cirrhosis、ascites 應補的是「ALP pattern 與病因、疾病活動與累積結構、portal pressure 與有效循環」三處不同推理斷點。不得以「肝膽」同科就直接排在一條確定病程軸上。
+3. **傳導方向 → 危險的 pre-excited AF → 未定 WCT 決策**：因果內文已修；圖像證據尚待 PR #75 把實際 ECG 變化與 clinical action 對齊。期刊 CC BY 4.0 影像須現場確認可載入、完整 attribution、原圖時序與臨床描述一致，並非只在 GitHub 放外部 URL。
+4. **腸道分類 → 藥理介入 → 排空與警訊**：已公開便祕教學情境；慢性腹瀉及 octreotide 尚未獲完整圖表、醫學、原稿版本驗收，不製造兩篇的公開空白連結。
+5. **急迫性與停止條件**：VTE 已有區分 pretest probability／D-dimer／影像的單篇路線。未完成的急性 AF、Syncope、secondary stroke prevention 僅作私人編輯依賴，不宣稱已具備可教學的完整路線。
+
+### 圖像語意驗收（對既有 Figure Gate 的具體執行，不增設第二套發布器）
+
+- **圖的不可取代性**：移除 caption 和文章上下文，只看圖，讀者能否從實際資料、傳導機轉或分支結構推出一項文字難以直接看出的比較或改判？只有三張概念卡轉抄段落者判退。
+- **圖與論述的位置**：每張圖要對應某段具體因果斷點，並能說出「讀圖前尚不知道什麼 → 讀圖後能推算／辨認什麼 → 哪項證據會推翻」。無法回答就移除或重構，不以數量填充。
+- **真實圖證據的優先序**：ECG、影像、時間趨勢等以有適當重製權利且已核實的原始臨床圖優先；不把 AI 自造波形冒充原始 ECG。Pocket Medicine 原圖仍先私下逐圖核對、公開是否引用按逐圖權利判斷。
+- **技術與臨床分離驗收**：360／390px 的實際載入、對比、標記、長文字、fallback 與 attribution 是技術放行；機轉正確、來源限制、行動安全與遮文讀圖理解是醫學／教學放行。任一欠缺則維持圖像改版 HOLD。**沒有橫向溢出並不等於易懂**。
+
+本輪對公開網站只修復已驗證教材之間的連結與推理橋接；**不**提前將 PR #73/#75 或其他未完成醫學稿件合併、發布或標記驗收。
