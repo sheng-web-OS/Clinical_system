@@ -45,7 +45,7 @@ class MobileVisualRegression(unittest.TestCase):
         body = figure(af, "af-two-exits")
         self.assertIn('class="af-desktop-conduction"', body)
         self.assertIn('class="af-mobile-conduction"', body)
-        self.assertIn('viewBox="0 0 360 550"', body)
+        self.assertIn('viewBox="0 0 360 648"', body)
         for signal in ("AV node", "Accessory pathway", "decremental conduction",
                        "僅當 AP 可順傳", "Ventricle", "AV nodal blocker",
                        "極短 RR → VF 風險", "非所有 AP 都具高危性"):
@@ -55,6 +55,10 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertIn("傳導被抑制", body)
         self.assertIn('data-qa-flow="av-node-blocked"', body)
         self.assertIn('data-qa-flow="ap-persists"', body)
+        self.assertIn("01  /  BEFORE NODAL BLOCKADE", body)
+        self.assertIn("02  /  COUNTERFACTUAL", body)
+        self.assertNotIn('width="328" height="112"', body)  # no old mega-card
+        self.assertIn("條件式機轉示意", body)
         browser = (ROOT / "tools/visual_qa_browser.py").read_text("utf-8")
         self.assertIn("AF mobile critical labels clipped or too small", browser)
         self.assertIn("AF mobile counterfactual missing blocked-vs-persisting paths", browser)
