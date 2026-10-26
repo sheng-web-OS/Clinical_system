@@ -82,7 +82,7 @@
 <text x="93" y="207" font-size="17" text-anchor="middle" font-weight="700" fill="#275c72">AV node</text>
 <text x="93" y="230" font-size="13" text-anchor="middle" fill="#275c72">decremental conduction</text>
 <text x="93" y="249" font-size="13" text-anchor="middle" fill="#526e6a">部分衝動被限速</text>
-<text x="267" y="207" font-size="15.5" text-anchor="middle" font-weight="700" fill="#9c4e37">Accessory pathway</text>
+<text x="267" y="207" font-size="14" text-anchor="middle" font-weight="700" fill="#9c4e37">Accessory pathway</text>
 <text x="267" y="230" font-size="14" text-anchor="middle" fill="#9c4e37">僅當 AP 可順傳</text>
 <text x="267" y="249" font-size="13" text-anchor="middle" fill="#526e6a">短 ERP 時可快傳</text>
 <path d="M93 261 V300" fill="none" stroke="#275c72" stroke-width="3" stroke-linecap="round"/>
@@ -99,7 +99,7 @@
 <text x="93" y="522" font-size="15.5" text-anchor="middle" font-weight="700" fill="#275c72">AV node</text>
 <text x="267" y="522" font-size="15" text-anchor="middle" font-weight="700" fill="#9c4e37">Accessory pathway</text>
 <path data-qa-flow="av-node-blocked" d="M93 535 V554 M81 547 L105 563 M105 547 L81 563" fill="none" stroke="#275c72" stroke-width="3" stroke-linecap="round"/>
-<path data-qa-flow="ap-persists" d="M267 535 V564 M260 557 L267 568 L274 557" fill="none" stroke="#b16046" stroke-width="3.5" stroke-linecap="round"/>
+<path data-qa-flow="ap-persists" d="M267 535 V564 M257 556 L267 570 L277 556" fill="none" stroke="#b16046" stroke-width="3.5" stroke-linecap="round"/>
 <text x="93" y="586" font-size="13.5" text-anchor="middle" fill="#275c72">傳導被抑制</text>
 <text x="267" y="586" font-size="13.5" text-anchor="middle" fill="#9c4e37">仍可能順傳</text>
 <line x1="18" y1="601" x2="342" y2="601" stroke="#e0e5e1" stroke-width="1"/>
