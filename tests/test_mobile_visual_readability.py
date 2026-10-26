@@ -50,7 +50,9 @@ class MobileVisualRegression(unittest.TestCase):
                        "僅當 AP 可順傳", "Ventricle", "AV nodal blocker",
                        "極短 RR、VF 風險", "非所有 AP 都具高危性"):
             self.assertIn(signal, body)
-        self.assertIn("非定量 ECG", body)
+        self.assertIn("脈衝數量不代表真實比率", body)
+        self.assertIn("仍可能順傳", body)
+        self.assertIn("傳導被抑制", body)
         css = CSS.read_text("utf-8")
         self.assertIn("#af-two-exits .af-desktop-conduction{display:none}", css)
         self.assertIn("#af-two-exits .af-mobile-conduction{display:block", css)
