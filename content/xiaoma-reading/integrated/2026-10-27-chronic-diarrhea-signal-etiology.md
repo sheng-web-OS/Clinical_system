@@ -44,15 +44,26 @@
 Pocket Medicine 9E Figure 3-2 用 **<100 與 ≥100 mOsm/kg** 作教學分支。然而方法學文獻常用 **<50** 較支持 secretory，**>100–125** 較支持 osmotic，介於其間不確定性較大，且其在現代慢性水瀉診斷中的增量並非每個情境都已良好驗證。[3] 不能在整合教材中把「原書粗略 cut point」悄悄改裝成絕對法則，也不能省略其方法學限制。
 
 <figure id="fig-diarrhea-gap-interpretation" class="reasoning-figure">
-<div class="reasoning-title">原創圖 2｜同一張原書 cutoff，放回「推論強度」而非確定診斷</div>
-<table aria-label="Stool osmotic gap 區間與臨床推論強度" class="release-matrix">
-<thead><tr><th>估計 gap</th><th>生理機轉線索</th><th>真正可帶往下一步的判斷</th></tr></thead>
-<tbody>
-<tr><th scope="row">&lt;50 mOsm/kg</th><td data-label="生理機轉線索">較支持 secretory physiology</td><td data-label="真正可帶往下一步的判斷">核對禁食反應、夜間水瀉、藥物、膽酸與感染風險；不能證明 IBS-D</td></tr>
-<tr><th scope="row">50–100/125 mOsm/kg</th><td data-label="生理機轉線索">灰區：機轉混合、誤差或模型限制</td><td data-label="真正可帶往下一步的判斷">增加病史與定向檢查價值；不要硬分病名</td></tr>
-<tr><th scope="row">&gt;100–125 mOsm/kg</th><td data-label="生理機轉線索">較支持 osmotic physiology</td><td data-label="真正可帶往下一步的判斷">追查難吸收糖、鎂鹽、瀉藥和禁食反應；仍需排除共存病因</td></tr>
-</tbody></table>
-<figcaption>區間是依不同文獻的解讀示意，非規定所有情境使用的統一 cut point；「50–100/125」標明各文獻的轉折不同，非精確連續範圍。原書使用 &lt;100／≥100，見 Figure 3-2。公式與 cut points 不等於直接測定分泌量。</figcaption>
+<div class="reasoning-title">原創圖 2｜只改變 stool Na＋K，未量測滲透物的估計值如何移動？</div>
+<p>固定同一個假設的 total osmolality <strong>290 mOsm/kg</strong>，下面三筆是<strong>刻意構造的算式練習，不是真實個案或測得糞便滲透壓</strong>。讀圖前先自己算一次：<strong>290 − 2 ×（Na＋K）</strong>。</p>
+<div class="osm-gap-scale" aria-hidden="true"><span>0</span><span>50</span><span>100</span><span>150</span></div>
+<div class="osm-gap-case">
+<div class="osm-gap-case-head"><strong>例 A：Na 90＋K 50 mmol/L</strong><b>gap 10</b></div>
+<div class="osm-gap-meter" role="img" aria-label="估計 osmotic gap 10 mOsm/kg，相較 0 至 150 數軸位於極低位置"><span style="width:6.67%"></span></div>
+<p>290 − 2 × 140 ＝ <strong>10</strong>；在適當情境較支持 secretory physiology，但不能確診特定病因。</p>
+</div>
+<div class="osm-gap-case">
+<div class="osm-gap-case-head"><strong>例 B：Na 60＋K 55 mmol/L</strong><b>gap 60</b></div>
+<div class="osm-gap-meter" role="img" aria-label="估計 osmotic gap 60 mOsm/kg，位於灰區"><span style="width:40%"></span></div>
+<p>290 − 2 × 115 ＝ <strong>60</strong>；灰區。若強迫將 60 直接命名為 secretory disease，就超出了模型的解釋力。</p>
+</div>
+<div class="osm-gap-case">
+<div class="osm-gap-case-head"><strong>例 C：Na 40＋K 40 mmol/L</strong><b>gap 130</b></div>
+<div class="osm-gap-meter" role="img" aria-label="估計 osmotic gap 130 mOsm/kg，相較 0 至 150 數軸位於較高位置"><span style="width:86.67%"></span></div>
+<p>290 − 2 × 80 ＝ <strong>130</strong>；在適當情境較支持 osmotic physiology，但還需查飲食、藥物與禁食反應。</p>
+</div>
+<p><strong>最容易誤讀的地方：</strong>原書 Figure 3-2 採 &lt;100／≥100 教學分支；方法學文獻常以 &lt;50、&gt;100–125 作較明顯的支持線索。這些值不是病原或 IBS-D 的確診閾值；檢體保存與多機轉共存也會改變結果。</p>
+<figcaption>三個數值為合成示範，依 Pocket Medicine 9E Figure 3-2、Sweetser 2012 及 Camilleri 2017 公式與限制自行繪製；長條只表示算得的 gap，完全不表示病因機率。<a href="../liver-gi-source-review-20261027.md#diarrhea">原圖與方法學來源</a>。</figcaption>
 </figure>
 
 ## Q3｜哪一項陰性結果不允許你停止？
