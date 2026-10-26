@@ -1,6 +1,6 @@
 # 找到腹瀉的類型，為什麼仍然沒有找到病因？
 
-2026.07.21 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。作者在對話提供的原稿保留於 [私人 source snapshot](../../../archive/xiaoma-reading/intake/2026-07-21-chronic-diarrhea-user-supplied.md)，並非已比對的 Facebook canonical 版本。
+2026.07.21 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。作者在對話提供的原稿保留於 私人 source snapshot（私有封存），並非已比對的 Facebook canonical 版本。
 
 慢性腹瀉（一般指超過四週）可以先用 watery、fatty、inflammatory 等表型整理。Pocket Medicine 9E 在同一頁列出 osmotic、secretory、functional、malabsorption、maldigestion 與 inflammatory。將這六個名詞背起來，卻可能產生一種危險的錯覺：既然知道病人屬於某一「類」，就應該可以直接找出某一疾病。
 
@@ -62,15 +62,12 @@ Pocket Medicine 9E Figure 3-2 用 **<100 與 ≥100 mOsm/kg** 作教學分支。
 同理，病人若曾切除 terminal ileum，膽酸吸收減少可能使更多膽酸進入大腸、刺激水與電解質分泌；但若 ileal disease 範圍廣、整個 bile acid pool 變得不足，亦可造成脂肪消化吸收障礙。**同一解剖位置的疾病，可以因失去的生理功能不同而同時改變分泌與脂肪吸收。**
 
 診斷流程不是要在第一次分型後永遠留在某個欄位，而是根據新的檢查、病史和反例**重估**。這也是為什麼「找到腹瀉類型」和「找到腹瀉病因」之間仍有一段不能省略的推理。
-
----
-
-### 來源與驗收身分
+\n\n[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#diarrhea)\n\n---\n\n### 來源與驗收驗收身分
 
 [1] [AGA 2019 laboratory evaluation of functional diarrhea and IBS-D](https://gastro.org/clinical-guidance/laboratory-evaluation-of-functional-diarrhea-and-diarrhea-predominant-irritable-bowel-syndrome-in-adults-ibs-d/)；其指引適用條件不包括所有 alarm cases。  
 [2] [BSG 2018 guideline (3rd ed.) chronic diarrhoea](https://pmc.ncbi.nlm.nih.gov/articles/PMC6204957/)，特別是 microscopic colitis、bile acid diarrhoea 和定向診斷。  
 [3] [Sweetser 2012 case-based review](https://pmc.ncbi.nlm.nih.gov/articles/PMC3538472/)；[Camilleri et al. 2017 pathophysiology/review](https://pmc.ncbi.nlm.nih.gov/articles/PMC5285476/)；方法學解讀須考慮來源年代與研究限制。  
 [4] Pocket Medicine 9E Figure 3-2，核對 Library PDF pp.124–126（viewer 頁碼；印刷頁及來源 hash 尚待確認）。  
-[5] [已有原書與醫學稽核](../../../audit/chronic-diarrhea-2026-10-26-source-and-clinical-review.md)。
+[5] [已有原書與醫學稽核](../liver-gi-source-review-20261027.md#diarrhea)。
 
 **AI-integrated candidate / HOLD**：不存在已完成的獨立醫師審查或正式發布核准；沒有直接公開原書影像，也沒有把虛構比較當作真實病例。
