@@ -556,5 +556,94 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-26-copd-emptying.md",
+    "output": "xiaoma-20261026-copd-emptying.html",
+    "title": "肺變小，為什麼反而能呼出更多氣？",
+    "subtitle": "從真實減容病例，分開 COPD 的氣流、肺容量、症狀與惡化風險。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-copd-sources.html",
+    "date": "2026-10-26",
+    "navigation": false,
+    "review": "ai_editorial_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/copd-sources.md",
+    "output": "xiaoma-copd-sources.html",
+    "title": "COPD：原表、肺容量病例與三道官方真題",
+    "subtitle": "Pocket 9E、GOLD 2026、原始 CT／Table 及逐題更正查核。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/112-2-med3-q46.md",
+    "output": "xiaoma-exam-112-2-med3-q46.html",
+    "title": "eos 5%，為什麼不能只看百分比就加 ICS？",
+    "subtitle": "112 年第二次・醫師二階・醫學（三）Q46：官方題與適用界線。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症・官方真題",
+    "references": "xiaoma-copd-sources.html",
+    "date": "2026-10-26",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam": {
+      "year_roc": 112,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        46
+      ]
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/113-2-med3-q50.md",
+    "output": "xiaoma-exam-113-2-med3-q50.html",
+    "title": "急性 COPD 惡化，為什麼不是再加靜脈茶鹼？",
+    "subtitle": "113 年第二次・醫師二階・醫學（三）Q50：官方題與適用界線。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症・官方真題",
+    "references": "xiaoma-copd-sources.html",
+    "date": "2026-10-26",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam": {
+      "year_roc": 113,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        50
+      ]
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/115-2-med3-q46.md",
+    "output": "xiaoma-exam-115-2-med3-q46.html",
+    "title": "FEV₁ 描述阻塞，為什麼不能包辦 COPD 治療？",
+    "subtitle": "115 年第二次・醫師二階・醫學（三）Q46：官方題與適用界線。",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症・官方真題",
+    "references": "xiaoma-copd-sources.html",
+    "date": "2026-10-26",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam": {
+      "year_roc": 115,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        46
+      ]
+    }
   }
 ]

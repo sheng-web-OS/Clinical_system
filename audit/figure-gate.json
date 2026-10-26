@@ -290,6 +290,57 @@
           "scope_limit": "秤重達設備上限 BMI 為至少 81.1，且多重治療並行，不能用前後血氣證明 NIV 和插管的普遍比較效果。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-26-copd-emptying.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/copd-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E reader PDF pp79–80 Figure 2-1 Approach to abnormal PFTs; cross-checked GOLD 2026 Pocket PDF p16 Figure 2.6 with volume-response branch",
+          "source_token": "Approach to abnormal PFTs",
+          "mode": "source_link",
+          "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-Pocket-Guide-2026-v1.1-20Nov2025_WMV2.pdf#page=16",
+          "teaching_role": "使讀者可直接核對同一診斷問題的現行原流程，區分 pre/post-bronchodilator、持續氣流阻塞與容積反應，不以支氣管反應單獨判定病名。",
+          "scope_limit": "僅取COPD診斷與不同測量的界線，未重製原書完整PFT流程的限制型及正常DLCO分支；LLN與固定0.70有不同適用目的。",
+          "why_link_instead": "原書圖未取得公開重製授權，正文以原創文字解讀並連到GOLD官方對題原流程，沒有把該連結冒稱Pocket原圖，也未上傳教科書截圖。"
+        },
+        {
+          "locator": "Pocket Medicine 9E reader PDF p85 Emphysema vs. Chronic Bronchitis table, four rows including definitions, physiology, symptoms and examination",
+          "source_token": "Emphysema vs. Chronic Bronchitis",
+          "mode": "illustrated",
+          "anchor": "copd-definition-boundaries",
+          "caption_token": "Pocket Medicine 9E",
+          "teaching_role": "將原表不同層級的定義拆開，避免把病理肺氣腫、臨床咳痰與功能性COPD診斷混成同一件事或互斥的嚴重度階段。",
+          "scope_limit": "只保留有教學價值的定義比較，未重製pink puffer/blue bloater或由表中V/Q簡化敘述直接開氧療、診斷分流及呼吸器處方。"
+        },
+        {
+          "locator": "Pocket Medicine 9E reader PDF p86 COPD Staging and Recommended Therapies by GOLD Criteria with GOLD 2024 note; GOLD 2026 Pocket pp22,30–32 Figures 2.13,3.8–3.10",
+          "source_token": "COPD Staging and Recommended Therapies by GOLD Criteria",
+          "mode": "illustrated",
+          "anchor": "copd-treatment-targets",
+          "caption_token": "Pocket Medicine 9E",
+          "teaching_role": "把每天喘與反覆惡化分開，明示初始分類與follow-up不同用途，再以2026至少一次中重度事件更新E組，不將eos或FEV1變為孤立處方門檻。",
+          "scope_limit": "此為治療目標重組而非完整藥物流程；ICS需合併事件、氣喘與感染風險，未涵蓋所有生物製劑、減容或長期氧療選案。"
+        },
+        {
+          "locator": "Pocket Medicine 9E reader PDF p87 COPD Exacerbation Treatment table including Oxygenation/NIV/intubation rows; GOLD 2026 Pocket pp47–49 Figures 4.3–4.6",
+          "source_token": "COPD Exacerbation Treatment",
+          "mode": "illustrated",
+          "anchor": "copd-expiratory-time",
+          "caption_token": "Pocket Medicine 9E",
+          "teaching_role": "用呼氣流速及下一次吸氣的時間關係補足排空負荷如何使支持失敗，連回氧合、肺泡換氣、氣道與循環的不同監測終點。",
+          "scope_limit": "純定性原創圖並非患者實測波形或自動呼吸器處方，不能由圖量出auto-PEEP，未回零須配合臨床並排查氣胸及其他休克原因。"
+        },
+        {
+          "locator": "Marchand et al Medicina 2019;55:65 Table 1 (journal p4; institutional PDF p5) After PR and 1 Month Post-EBV columns; Figure 1 p3 including all panel captions",
+          "source_token": "Marchand E",
+          "mode": "illustrated",
+          "anchor": "copd-volume-change",
+          "caption_token": "Marchand et al. 2019",
+          "teaching_role": "用同一病人相同兩時間點的RV與TLC按刻度重繪，展示總肺量變小與可用容量差增加可以同時成立，並對回CT的局部過度充氣與再展開。",
+          "scope_limit": "TLC減RV是本站計算而非實測FVC或IC，病例是高度選擇性減容反應，不能證明所有COPD可治癒；未挪用原文不一致CAT數字。"
+        }
+      ]
     }
   }
 }
