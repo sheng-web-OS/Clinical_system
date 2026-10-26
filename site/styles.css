@@ -368,3 +368,38 @@
 .article .atlas-entry a{font-weight:700}
 @media(max-width:780px){.article .atlas-logic-three,.article .atlas-entry{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:580px){.article .atlas-jumps,.article .atlas-logic{grid-template-columns:minmax(0,1fr)}.article .atlas-jumps{gap:8px;margin:1.1em 0 1.8em}.article .atlas-jumps a{padding:13px 14px}.article .atlas-logic>div,.article .atlas-entry>div{padding:13px 14px}.article .atlas-target{top:-40px}}
+
+
+/* VTE prevention vs site-specific diagnosis: mobile-first visual teaching, 2026-10-26. */
+.vte-figure{margin:2.1rem 0 2.3rem;border:1px solid var(--line);border-radius:18px;padding:clamp(14px,3vw,26px);background:var(--surface);box-shadow:var(--shadow);font-size:.91em;line-height:1.6;overflow:hidden}
+.vte-figure-heading{display:grid;gap:.35rem;padding-bottom:.9rem;margin-bottom:1rem;border-bottom:1px solid var(--line)}
+.vte-figure-heading>span{font-size:.76em;letter-spacing:.1em;font-weight:750;color:var(--brand)}
+.vte-figure-heading>strong{font-size:1.08em;line-height:1.45}
+.vte-figure small{display:block;font-size:.74em;letter-spacing:.07em;font-weight:800;color:var(--brand)}
+.vte-figure p{font-size:.91em;line-height:1.65;margin:.5rem 0 0}
+.vte-risk-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.vte-risk-row>div{text-align:center;border:1px solid var(--line);border-radius:11px;padding:12px 6px;font-weight:780;font-size:.83em;overflow-wrap:normal}
+.vte-risk-row span{display:block;color:var(--muted);font-weight:500;margin-top:4px}
+.vte-direction{font-size:1.7em;font-weight:750;line-height:1.2;text-align:center;color:var(--brand);margin:10px 0}
+.vte-center,.vte-common-background,.vte-step{border:1px solid var(--line);border-radius:13px;padding:16px;background:var(--brand-light);text-align:center}
+.vte-center strong,.vte-common-background strong,.vte-step strong{display:block;font-size:1.04em;line-height:1.4}
+.vte-center>span{display:block;font-size:.85em;margin-top:5px}
+.vte-branches,.vte-evidence-grid,.vte-image-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.vte-branches>section,.vte-evidence-grid>section,.vte-image-columns>div{border:1px solid var(--line);border-radius:13px;padding:17px;min-width:0;background:var(--surface)}
+.vte-branches strong,.vte-evidence-grid strong,.vte-image-columns strong{display:block;font-size:1.02em;line-height:1.45}
+.vte-diagnostic-branches{margin-top:12px}
+.vte-diagnostic-branches section:first-child{border-top:4px solid #347d86}
+.vte-diagnostic-branches section:last-child{border-top:4px solid #bb7354}
+.vte-figure-note{margin-top:12px;border-left:3px solid var(--brand);padding:10px 14px;font-size:.89em;color:var(--ink);background:var(--bg)}
+.vte-step{text-align:left;margin-bottom:12px}
+.vte-step strong{font-size:.97em}
+.vte-evidence-grid{margin-bottom:13px}
+.vte-evidence-grid>section:first-child{border-top:3px solid var(--brand)}
+.vte-evidence-grid>section:last-child{border-top:3px solid var(--accent)}
+.vte-image-columns>div{display:grid;align-content:start;gap:3px}
+.vte-image-columns span{font-size:.88em;color:var(--muted)}
+.vte-urgent-note{border:1px solid var(--accent);border-radius:11px;padding:13px 16px;margin-top:13px;display:grid;gap:6px}
+.vte-urgent-note strong{color:var(--accent);font-size:.92em}
+.vte-urgent-note span{font-size:.88em}
+.vte-figure figcaption{font-size:.78em;line-height:1.65;color:var(--muted);margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
+@media(max-width:680px){.vte-figure{margin:1.5rem -2px;padding:14px;border-radius:13px;font-size:1em}.vte-risk-row{grid-template-columns:1fr;gap:6px}.vte-risk-row>div{padding:9px 12px;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:10px}.vte-risk-row span{margin:0}.vte-branches,.vte-evidence-grid,.vte-image-columns{grid-template-columns:1fr;gap:10px}.vte-branches>section,.vte-evidence-grid>section,.vte-image-columns>div{padding:15px}.vte-figure-heading>strong{font-size:1em}.vte-direction{margin:5px 0;font-size:1.4em}.vte-figure p{line-height:1.6}}
