@@ -95,3 +95,6 @@
 [**接續 03｜WCT／ACLS：診斷未定時，治療需要先知道哪一些事？**](2026-10-26-wct-acls-decision.md)
 
 *病例與圖片來源：Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*. 2018. [原始病例與 Figure 1–3](https://journals.sagepub.com/doi/10.1177/2324709618802870)，CC BY 4.0；[ESC 2019 SVT 指引](https://academic.oup.com/eurheartj/article/41/5/655/5556821)；[2023 ACC/AHA AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)。個案事實與依指南提出的今日建議已在文中分開。*
+
+
+[**原圖、病例與 2025 AHA／2023 AF 來源逐項核對**](../wct-acls-sources.md)。
