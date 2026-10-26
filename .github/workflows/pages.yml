@@ -45,7 +45,7 @@ jobs:
           import hashlib
           from pathlib import Path
           data = Path("/tmp/NotoSansCJKtc-Regular.otf").read_bytes()
-          digest = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+          digest = hashlib.sha1(b"blob " + str(len(data)).encode() + bytes([0]) + data).hexdigest()
           expected = "f9376bae1d421520f73a3c6c9d50b22f89548301"
           if digest != expected:
               raise ValueError(f"Noto CJK font origin checksum mismatch: {digest}")
