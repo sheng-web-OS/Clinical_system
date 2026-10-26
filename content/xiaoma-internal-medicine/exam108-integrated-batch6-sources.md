@@ -62,4 +62,14 @@
 
 1. 先完成第五批 PR #51 的 Pocket p91 ILD 工作圖、p92–93、p247–248 及逐題醫學 QA；避免過多已撰寫但缺驗收的稿。
 2. 再完成本第六批三文五題 Pocket 圖表、外部證據、第五題 HBV 分子查核與圖像／連結驗收。
-3. 通過後依題號唯一鍵將三文分別加入 **同一份** site/pages.json（[3]、[4]、[13,14,15]），CI 與 Cloudflare／HTTPS 驗證後才能稱為已發布。
+3. 通過後依題號唯一鍵將四篇分別加入 **同一份** site/pages.json（[3]、[4]、[13,14]、[15]），CI 與 Cloudflare／HTTPS 驗證後才能稱為已發布。
+
+## 2026-10-27 深度審核補記｜新增原始文獻（比對原版差異）
+
+- Q3 新增 [ESsCD 2025 adult celiac diagnosis](https://pmc.ncbi.nlm.nih.gov/articles/PMC12704582/)：anti-TG2 IgA + total IgA 必須同時考慮，應在含 gluten 飲食中檢驗。特定符合條件的高效價成人可探討 non-biopsy pathway，**不能把官方 Q3 的未註明效價「陽性」等同已完全確診**。正文 Bayesian 95%/95% 只作純假設算例，不是原指引給本病人的實測數據。
+- Q13 原始來源升級為 [BSG/RCR/RCP 2020 liver biopsy guideline](https://gut.bmj.com/content/early/2020/06/01/gutjnl-2020-321299.long) 的 adequacy / sampling error / portal tracts；並補 [AASLD 2024 peri-procedural bleeding risk](https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/peri-procedural-management-bleeding-risk-cirrhosis) 區分 TJLB 與 percutaneous、單純 INR 不能作 cirrhosis 出血預測器。原題 D 的「不能」在現代語境需加途徑前提。
+- Q14 補 [2024 EASL-EASD-EASO MASLD guideline](https://pmc.ncbi.nlm.nih.gov/articles/PMC11299976/)：FIB-4 first、VCTE second 的 sequential triage；NIT 不能直接測 ballooning 或 lobular inflammation，不允許把高 AUROC 寫成每一級 fibrosis 的絕對精準。
+- Q15 新增 [J Virol 2021 precore/core antigen processing](https://pmc.ncbi.nlm.nih.gov/articles/PMC7925093/)、[JCI 2022 iDNA contribution to HBsAg](https://pubmed.ncbi.nlm.nih.gov/35797115/) 與 [EASL 2025 HBV guidelines](https://www.hepb.org/assets/Uploads/EASL-guidelines-May-2025.pdf)。**HBeAg precursor 的 ER signal peptide 在成熟過程被切除**；HBeAg-negative 不必然 HBV DNA-negative；qHBsAg 與 HBV DNA 不可互換。EASL PDF p6 Table 5 的文字檢索成功，但截圖開啟遇安全驗證，該頁視覺核對保留 HOLD。
+- 官方題目已由考選部原卷 PDF p1 與 p4 及標準答案、更正公告 p1 **實際截圖目視核對**：Q3 B，Q4 A，Q13 A，Q14 B，Q15 C，Q33 一律給分。原書 Pocket 9E 的 Figure/Table/Footnote 仍另列 HOLD，兩種 PDF 驗收不可混淆。
+
+**發布策略：先完成 #51 的五題驗收，再評估這批四篇／五題。** 已完成的文字審查、官方答案及理論深度不是 Figure Gate PASS、正式建置或真實讀者測試。
