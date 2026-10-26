@@ -33,10 +33,15 @@ jobs:
       - name: Evidence-gated site build
         run: bash tools/build_site.sh
       - name: Install Traditional Chinese fonts for visual QA
+        timeout-minutes: 4
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq fonts-noto-cjk
+          # Hosted Ubuntu already has apt metadata; updating every PR can stall
+          # on mirror connectivity and block otherwise passing medical QA.
+          if ! fc-list :lang=zh-tw family | grep -qi 'Noto Sans CJK'; then
+            sudo env DEBIAN_FRONTEND=noninteractive timeout 180s apt-get install -y -qq fonts-noto-cjk
+          fi
           fc-cache -f
+          fc-list :lang=zh-tw family | grep -qi 'Noto Sans CJK'
       - name: Install isolated browser-QA dependency
         run: python -m pip install --disable-pip-version-check playwright==1.57.0
       - name: Capture required figure in desktop and mobile browsers
