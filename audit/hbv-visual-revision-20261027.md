@@ -27,3 +27,15 @@
 初輪 68 項 unittest 通過，公開來源／目錄／輸出檢查通過。Chrome 已目視桌面四格、390px iframe 四格及 360px iframe 的陰轉／stage 分岔；iframe 扣除捲軸後內容寬分別為 375／345px，已檢查頁面與圖形無水平溢出。同輪已目視 390px 訊號機轉圖與 360px 四格；四圖與頁面均無水平溢出。修正窄螢幕 HBeAg 欄名斷行、刪除無資訊色帶、縮短圖說。深色主題按鈕在 iframe 預覽未產生可確認狀態變更，未將其記為通過。
 
 整合並保全同期 main `13478139a28f720da8f5f0d3d3ec8cac80e70263` 的新稿與心律不整修訂；figure-gate 僅更新兩篇 HBV 的既有記錄，未覆寫其他審查。基於該版重新執行正式 build 成功。正式部署結果另以 GitHub／Cloudflare 狀態及 HTTPS 核實，不在接受前預先標記上線。
+
+
+## 2026-10-27 再修訂：ALT 訊號篇補回反事實檢驗
+
+在 PR #74 已合併的版本，單張圖雖恢復「複製→DNA／傷害→ALT」，讀者仍須自行跨段回憶「ALT 同為正常，可能來自非常不同的 HBV 狀態」。此輪將該比較與後續推論界限放回原圖位置，避免只畫出兩個檢驗名詞的定義。
+
+- **正文問題**：同樣 ALT 正常，能否推定相同 phase、沒有 injury 或不需治療？
+- **圖的不可替代角色**：先以兩條獨立量測鏈解釋 DNA／ALT 非固定比例，再固定 ALT 為正常，並置 HBeAg-positive／高 DNA 與 HBeAg-negative／低 DNA 兩種典型組合。末層將 marker、phase 推論、結構風險與行動分開。
+- **反事實**：ALT 不變，HBeAg 和 DNA 改變；推論不能不變。這是示意檢驗組合，非病歷或 Phase 的單次實驗室分類器。
+- **醫學邊界**：正常 ALT 不排除 histologic activity 或 fibrosis；HBeAg-positive high DNA 不等於已確認 immune tolerance；無 cirrhosis 的 indeterminate 病人需考量指引適用性，而 cirrhosis 另有治療條件。對照 PM9 PDF 140–141 頁與 AASLD／IDSA 2025 指引既有來源頁。
+- **審核狀態**：已以獨立 HTML/CSS 原型在 Chromium 截圖目視 900／390／360px，三種 viewport 均無頁面水平溢出；未驗證 PR 實際站台、深色模式、網站整體 build/CI、真人理解成效或獨立醫師審查，這些狀態不可冒稱通過。保留原稿及第三方圖像的公開引用限制。
+
