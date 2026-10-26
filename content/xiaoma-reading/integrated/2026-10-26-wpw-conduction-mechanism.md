@@ -66,3 +66,6 @@ Adenosine 可短暫阻斷 AV nodal conduction。對 hemodynamically stable、reg
 [**接續 02｜Pre-excited AF：旁路不再是迴路，為什麼反而更危險？**](2026-10-26-preexcited-af.md)
 
 *原始材料：Pocket Medicine 9E，私人 PDF 第 66–67 頁；[ESC 2019 SVT 指引 §11.3](https://academic.oup.com/eurheartj/article/41/5/655/5556821)。本稿為新的 AI 系列整合教材；2026/7/11 歷史 WPW 原稿全文尚未核得，並未冒稱其作者定稿。*
+
+
+[**原圖、病例與 2025 AHA／2023 AF 來源逐項核對**](../wct-acls-sources.md)。
