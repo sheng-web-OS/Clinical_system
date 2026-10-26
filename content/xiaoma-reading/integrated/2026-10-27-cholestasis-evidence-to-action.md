@@ -16,12 +16,12 @@
 
 <figure id="fig-cholestasis-evidence-action" class="reasoning-figure">
 <div class="reasoning-title">原創圖 1｜把影像證據與緊急程度分開：同一個 ALP pattern，走向不同決策</div>
-<table aria-label="Cholestatic ALP 的證據與行動矩陣">
+<table aria-label="Cholestatic ALP 的證據與行動矩陣" class="release-matrix">
 <thead><tr><th scope="col">眼前證據</th><th scope="col">目前較支持的假說</th><th scope="col">下一步能改判什麼</th><th scope="col">不能推出</th></tr></thead>
 <tbody>
-<tr><th scope="row">肝源性 ALP ↑；US 顯示膽管擴張</th><td>Large-duct obstruction 機率提高</td><td>按病史、膽紅素、風險與需要選 MRCP／EUS、CT 或需治療的 ERCP</td><td>擴張 ≠ 已知道是石頭、腫瘤還是狹窄</td></tr>
-<tr><th scope="row">肝源性 ALP ↑；US 未見擴張</th><td>Small-duct／intrahepatic cholestasis、DILI、PBC 等；仍保留 occult obstruction</td><td>藥物與暴露、AMA 等血清學；按懷疑程度選 MRCP／EUS；不明原因再考慮 biopsy</td><td>未擴張 ≠ obstruction 已排除；更不等於「肝細胞功能失敗」確診</td></tr>
-<tr><th scope="row">合併發燒、寒顫、黃疸、敗血症或器官功能不穩</th><td>須立即評估 cholangitis／infected obstruction</td><td>並行復甦、培養、抗生素、感染源控制及緊急膽道引流需求</td><td>不能因 US 未見擴張或等待 elective MRCP 而延誤處置</td></tr>
+<tr><th scope="row">肝源性 ALP ↑；US 顯示膽管擴張</th><td data-label="目前較支持的假說">Large-duct obstruction 機率提高</td><td data-label="下一步能改判什麼">按病史、膽紅素、風險與需要選 MRCP／EUS、CT 或需治療的 ERCP</td><td data-label="不能推出">擴張 ≠ 已知道是石頭、腫瘤還是狹窄</td></tr>
+<tr><th scope="row">肝源性 ALP ↑；US 未見擴張</th><td data-label="目前較支持的假說">Small-duct／intrahepatic cholestasis、DILI、PBC 等；仍保留 occult obstruction</td><td data-label="下一步能改判什麼">藥物與暴露、AMA 等血清學；按懷疑程度選 MRCP／EUS；不明原因再考慮 biopsy</td><td data-label="不能推出">未擴張 ≠ obstruction 已排除；更不等於「肝細胞功能失敗」確診</td></tr>
+<tr><th scope="row">合併發燒、寒顫、黃疸、敗血症或器官功能不穩</th><td data-label="目前較支持的假說">須立即評估 cholangitis／infected obstruction</td><td data-label="下一步能改判什麼">並行復甦、培養、抗生素、感染源控制及緊急膽道引流需求</td><td data-label="不能推出">不能因 US 未見擴張或等待 elective MRCP 而延誤處置</td></tr>
 </tbody></table>
 <figcaption>以 Pocket Medicine 9E Figure 3-3（所核 Library PDF 頁 139，非印刷頁碼）及 ACG／ASGE 指引自行建立的「證據 × 行動」矩陣；不重製原書圖像或分支排列。最後一列是急迫性覆蓋條件，不是疾病嚴重程度隨前兩列逐步升級。完整資料定位見<a href="../../../audit/cholestasis-20260719-pocket9e-figure3-3.md">私人稽核</a>。</figcaption>
 </figure>
