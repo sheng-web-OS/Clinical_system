@@ -37,7 +37,7 @@
 | Pocket Medicine 9E WPW、SVT、WCT | 本次由 Library 原 PDF **逐頁讀取含頁面圖像的 PDF 第 66–68 頁**；含 SVT Figure 1-3、表格註腳及 accessory pathway/WCT 頁面 | 不能公開重製出版社原圖；正式 published edition 別頁碼未比對 |
 | AHA ACLS tachyarrhythmia | **2025 官方流程圖 PDF** 及 HTML ALS 指引 §15–17，並以 web PDF screenshot 視覺核對 | 公開站只合法連結，不直接複製完整圖像 |
 | Pre-excited AF | 2023 ACC/AHA/ACCP/HRS AF guideline §10.6 recommendation table and rationale | 新稿仍待獨立醫學審稿 |
-| 2018 24 歲病人 | Case report https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/（可讀網路摘要與報導內容） | ECG image 不重製；目前個別全文開啟遇網站驗證，圖像未實際目視，因此稿內只轉述已取得的文字描述 |
+| 2018 24 歲病人 | 已讀 SAGE 原刊全文 https://journals.sagepub.com/doi/10.1177/2324709618802870 ，另用 web PDF screenshot **目視檢查 PDF 第 2 頁 Figure 1-A1/A2 與 Figure 2、第 3 頁 Figure 3**；核對率值、形態描述、100 J synchronized cardioversion、次日右後中隔 AP ablation。原文及圖像依刊物標示為 **CC BY 4.0**。 | 新版正文提供逐圖 ECG 推理與原圖官方放大連結，**尚未將 ECG 像素嵌入網站**；若未來本地重製，需保留 Silverman et al 2018 完整標示、原 DOI、CC BY 4.0 與變更說明。 |
 | 2018 adenosine 後 AF 病人 | https://pmc.ncbi.nlm.nih.gov/articles/PMC5840850/ 本次讀到內文、圖說、結果；可作風險反例 | 若公開要附 ECG，仍需逐圖合法性判斷 |
 
 ## 反事實測試（與內容一致）
@@ -56,3 +56,20 @@
 - Source PDF/圖像保存在使用者 Library／本次對話，**不得將私人出版社原 PDF 或頁面直接寫入公開站**。未獲正式授權也不重製原像素。
 
 結論：本輪完成了「從傳導方向經過 AF risk，再走向急救決策」的**完整可閱讀稿件與因果閱讀序列**；目前屬於 GitHub draft，不得以稿件完整或 model 自評冒稱醫學審查與網站發布完成。
+
+## 2026-10-26 本輪全系列實質修訂與驗收（取代先前初稿說明）
+
+- **第一篇機轉先行**：開頭刪除曾經沒有來源的「一位年輕心悸患者」類病例語句；先解釋 AV node 篩選、AP manifest/concealed、sinus pre-excitation 與 AVRT 必需迴路，再以**原創三面板 SVG** 同時描繪 sinus fusion、orthodromic、antidromic。Figure 01 有完整 `<title>`／`<desc>`、可橫向捲動且讀不到圖也能循文字重建。SVG 是教學概念圖，非作者原書圖片。
+- **第二篇真實病例為主幹**：逐張追蹤 Silverman 2018 Figure 1-A1（救護車）、1-A2（急診）、Figure 2（100 J 同步轉律後）、Figure 3（次日 AP 消融後）；對每一張圖標明「觀察」「支持哪一個機轉」「尚不能證明」。另附 Figure 03 原創 AF 雙通道 SVG。沒有把病例中給 IV amiodarone 兩次誤列成當今可選處置；與 2023 AF Class III Harm 分開。
+- **第三篇保留原稿論證**：維持「tachycardia 是否 causing instability → 未診斷的 WCT 怎麼縮小不確定性 → 行動以前真正必須知道什麼」的因果主線；2025 ACLS 補出 unstable monomorphic WCT 的 synchronized cardioversion、sustained polymorphic VT 的 unsynchronized shock、pre-excited AF 的 AV nodal blocker 禁忌。Figure 04 是原創三道決策界線，不冒稱 AHA 原始流程圖。
+- **跨篇關係**：每篇頁首都有 01→02→03，正文中的共同變量始終是 **AV node 與 AP 在不同心律的角色**，避免三篇各寫一次 WPW 定義與所有藥物清單。跨篇 Markdown 相對連結目前已成立於 GitHub worktree，尚未被 site manifest 重寫成公開 HTML。
+- **術語／風險硬閘門**：可順傳的 AP 不是每條都有高危傳導；pre-excited AF 不是 antidromic AVRT；regular monomorphic WCT 不是 SVT 證明；Class IIb adenosine 只在 stable regular monomorphic WCT 可考慮；2025 AHA 的一般 WCT amiodarone 選項，不得覆蓋 2023 AF pre-excited 禁忌；polymorphic VT 與 AF pre-excitation 不能混成同一種電擊設定。
+- **版權**：2018 年病例原刊與其 ECG figure 為 CC BY 4.0（SAGE PDF 首頁與 HTML Rights 均可核對），所以**可在完整標示下另行規畫合法重製**；這一輪沒有把原圖 binary 上傳到 Git，也未以不確定的第三方圖片 URL 嵌入。Pocket Medicine 9E 與 AHA 2025 的授權圖保持來源對讀，不自動視為可公開全文重製。
+- **出版狀態與 QA 區分**：作者歷史原稿持續不可被 AI 改寫稿覆蓋。三篇新整合稿在 PR #61 的 private feature branch；未加入 `site/pages.json`，未能宣稱 Cloudflare 已部署。本輪重新核對臨床高風險文字及圖像來源，但尚無獨立真人專科審查、正式 CI build result、手機視窗真機測試或盲式讀者理解測量；**不把自評或來源查得多稱為已放行**。
+
+### 發布前最小驗收
+
+1. 以 GitHub PR diff 確認三篇不再包含虛構實測病例、錯誤禁藥或版權不明之原書像素。
+2. 用真實手機 viewport 與暗色主題檢查 SVG（900px、780px 橫向可捲動）、讀圖註解與逐圖 evidence cards；若行動版字太小，應改為分卡可閱讀版本，不能僅聲明有 scroll 即通過。
+3. 針對 pre-excited AF、pVT 的急救規範作獨立 P0/P1 clinical QA；醫學高風險錯誤未關閉不得發布。
+4. 若要正式公開三篇，需要先在 manifest 同時加入三篇，現有知識地圖只補一條路線而非另建重複索引；完成 `bash tools/build_site.sh`、`python -m unittest discover -s tests`，再核對 Cloudflare 實際部署與三個 HTTPS 網址。請勿因資料已寫入 Git 就回覆已公開。
