@@ -897,5 +897,67 @@
     "layout": "reader",
     "section": "原始來源",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/liver-gi-source-review-20261027.md",
+    "output": "xiaoma-reading-liver-gi-sources.html",
+    "title": "肝膽與慢性腹瀉：原圖／指南來源查核",
+    "subtitle": "四篇整合教材的 Pocket Medicine 9E Figure 3-2、3-3、3-4 與 Baveno VIII 來源",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-cholestasis-evidence-to-action.md",
+    "output": "xiaoma-reading-cholestasis-evidence-action.html",
+    "title": "Cholestasis：從 ALP 訊號到下一個行動",
+    "subtitle": "把肝膽來源、膽道定位與急性膽管炎的急迫性分開",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-infiltrative-alp-hypothesis.md",
+    "output": "xiaoma-reading-infiltrative-alp-hypothesis.html",
+    "title": "肝臟被占據，為什麼最突出的卻是 ALP？",
+    "subtitle": "生化訊號不是組織診斷；SPEP、影像與浸潤假說的推論上限",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md",
+    "output": "xiaoma-reading-chronic-diarrhea-evidence.html",
+    "title": "找到腹瀉的類型，為什麼仍然沒有找到病因？",
+    "subtitle": "Fecal fat、發炎訊號、osmotic gap 的診斷優先序與界線",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "腸胃"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md",
+    "output": "xiaoma-reading-cirrhosis-structure-risk.html",
+    "title": "肝硬化明明由結構定義，為什麼臨床不能只看結構？",
+    "subtitle": "cACLD、CSPH、功能、失代償事件與預後的不同問題",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽"
   }
 ]
