@@ -25,7 +25,7 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertIn("Threshold", body)
         self.assertIn("Ceiling", body)
         self.assertIn("瞬時排鈉反應", body)
-        self.assertIn("非臨床劑量", body)
+        self.assertIn("不是臨床劑量刻度", body)
         self.assertIn("無須橫向捲動", body)
 
     def test_same_ph_mobile_table_fixes_ph_and_varies_both_terms(self):
