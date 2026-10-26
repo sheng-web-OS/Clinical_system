@@ -86,6 +86,30 @@ Mitral stenosis 病人若出現 atrial fibrillation with rapid ventricular respo
 以上是原題 C 為何不成立的**雙重反例**：有些急性逆流確有短期降低 afterload 的角色，所以「不應使用」太絕對；另一些急性逆流又因休克而不能任意降低 afterload，所以「用 vasodilator 代替手術」同樣不成立。
 
 
+## 09｜直接對讀小麻第九版：為什麼 PCWP 估計 LVEDP 的習慣在 MS 會失效？
+
+**Pocket Medicine 9E PDF p.31** 在 PA catheter 的假設中指出：於合適測量條件下，wedge pressure 可近似 LA pressure，再常被用來推論 LV filling pressure；**但「mean LA pressure > LVEDP（例如 MR、MS）」正是它列出的失效情境之一。** 這不是抽象的統計誤差，而是 MS 在 LA 與 LV 之間製造了真正的舒張期解剖性阻力。前方肺靜脈看到的是左心房端壓力；左心室內測到的 LVEDP 則是狹窄瓣膜下游的壓力，兩者間的 gradient 本來就可能存在。
+
+假設一個**純教學、非真實病例的理想化同時量測**：某患者心房端壓力約 25 mmHg，左心室舒張末壓約 10 mmHg，平均 wedge pressure 接近左心房端。這組數字不是要替患者開利尿劑或選擇手術，而是讓「肺靜脈端壓力高」與「LVEDP 並未升高」可以在同一個心臟同時成立。實際導管波形應比較**同步、正確零點、end-expiration 的壓力與舒張期時相**；LA mean 與 LVEDP 並不是精確相同時間點的測量，不能隨意把上述差值當成一個已正確計算的平均 transmitral gradient。
+
+**Pocket 9E p.51–52 的〈Mitral stenosis〉與〈Stages of Mitral Stenosis〉表**提供三個比單一 murmur 有用的軸線：病因（rheumatic commissural fusion 等）、隨心率／AF 變化的症狀，以及 valve area、pressure gradient、肺動脈壓力。原書特別指出**運動、發燒、貧血、妊娠、tachycardia／AF** 可促發 MS 的症狀，因為同樣的瓣口需要在更短或更快的流動條件下送過血液。
+
+在嚴重 MS 病人，一旦發生 AF with rapid ventricular response，臨床風險不是單純「心率高會增加心肌耗氧」而已；**縮短舒張期＋失去規則心房收縮＋既有跨瓣阻力**，可以迅速提高左心房負擔與肺鬱血。這也是為什麼控制心率、辨認血行動力學失衡、評估瓣膜介入，並不是三個互不相干的議題。
+
+## 10｜四種瓣膜的當下時間尺度不同；不能把急性逆流和慢性逆流寫成同一張圖
+
+**Pocket 9E p.44–48 的 AS、AR、MR 原章節**把狹窄與逆流的區別再推深一層：
+
+- **AS（p.44–46）**：LV 在**收縮期**要克服較高的瓣口壓力障礙；長期壓力負荷與肥厚可改變舒張順應性。原書對 AS 還列出 **low-flow low-gradient** 型態，直接反證「mean gradient 低＝狹窄一定不重」。
+- **AR（p.46–48）**：血由主動脈在**舒張期**回到 LV。急性 AR 因 LV 尚未擴張順應，**LVEDP 快速增加**；慢性 AR 可在長期適應階段靠擴大舒張容量而暫時維持較低 filling pressure。因此同樣 regurgitant volume，不同時間尺度可能導致截然不同的急性危險。
+- **MR（p.48–50）**：血由 LV 在**收縮期**回到 LA。急性 MR 可迅速造成 LA、肺靜脈壓力上升，出現肺水腫；原書的 **PCWP c-v waves 並不具絕對特異性**，不能只看到大 v wave 就無條件排除其他情境。
+- **MS（p.50–52）**：舒張期阻力在 LV 的**上游**，即使肺鬱血，也可以沒有 LVEDP 升高。此項是原題 D 無法成立的最直接生理反例。
+
+對 Q4 C，原書 **AR p.48** 與 **MR p.50** 均描述急性重度逆流在血流動力學條件允許時可以採用 IV afterload reduction，並同時指出**需要緊急評估結構原因與必要手術**。不能把「急性逆流手術通常不可延誤」推成「vasodilator 絕對禁用」。反方向也不能把原書列出 nitroprusside、dobutamine 等例子誤讀成沒有血壓與灌流條件的通用處方。
+
+**這裡對小麻的引用有明確界線：** 目前是 PDF 原文的段落／表題定位與文字核讀；〈Stages of MS〉表內全部欄位、註腳及視覺版面尚未逐欄高解析度對照，**不宣稱原圖已完整審查或可公開轉貼**。等完成原表的語義與版權評估後，才決定應引用原書還是保留原創壓力波形解說。
+
+
 ## 對照與來源
 
 - [考選部原卷、標準答案、更正公告](../exam108-integrated-batch6-sources.md)：108（一）醫學（三）Q4，官方 A。
