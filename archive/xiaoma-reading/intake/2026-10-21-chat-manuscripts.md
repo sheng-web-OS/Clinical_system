@@ -7,7 +7,7 @@
 | 日期（文章自述） | 原始題名 | 系列／來源標籤 | 內容移轉 |
 |---|---|---|---|
 | 2026-07-28 | 同樣都是 seizure 持續，為什麼流程圖每往下一格，改變的不只是下一顆藥？ | Status epilepticus 閱讀 | imported → `content/xiaoma-reading/originals/2026-07-28-status-epilepticus.md` |
-| 2026-07-26 | 糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？ | 藥物閱讀（Constipation） | conversation_only |
+| 2026-07-26 | 糞便已經變軟，為什麼下一步不一定是再加一顆瀉藥？ | 藥物閱讀（Constipation） | **source_snapshot_archived** → `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`；待版本／醫學／出版審查 |
 | 2026-07-24 | 同樣屬於 VTE，為什麼可以一起預防，診斷卻必須分開？ | 小麻閱讀（9E） | conversation_only |
 | 2026-07-23 | 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？ | 小麻閱讀（9E） | conversation_only |
 | 2026-07-21 | 找到腹瀉的類型，為什麼仍然沒有找到病因？ | 小麻閱讀（9E） | conversation_only |
@@ -43,3 +43,8 @@
 ## 編輯風險
 
 原稿不得默默改寫。涉及藥物、心律不整、急重症、GCA 緊急治療等主張，在公開教學前另建逐條醫學核對。風濕免疫筆記結尾「Rheumatologic diseases are clinical diagnoses, supported by positive autoantibodies」應單獨檢查：自體抗體陰性不排除多種臨床血管炎，陽性亦非確診證據。不要將此句直接提升為網站規範。
+
+
+### 2026-10-26 增量回收（Constipation）
+
+作者於 2026-10-26 對話再次貼出 2026-07-26 全文，已逐字存入私人 `archive/xiaoma-reading/intake/2026-07-26-constipation-user-supplied.md`（commit `3fa97afb07d50ebdc453033d3efa18fcae0facea`）。這是 **user-supplied source snapshot**，不等於確認 Facebook 已刊版本、`content/xiaoma-reading/originals` 正稿或公開網站頁面。下一步按 EPQC 查核原書圖表及現行 AGA／ACG、ASCRS 來源；特別注意 fecal impaction／mechanical obstruction、defecatory disorder testing 與腰椎骨折相關神經危險徵象。不要依舊的『六篇已入庫、十五篇待移轉』靜態數字判斷新的 source snapshot 數量。
