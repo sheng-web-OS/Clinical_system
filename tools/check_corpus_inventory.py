@@ -69,7 +69,7 @@ def inspect_inventory(root):
         # A source snapshot is recovered text, not an approved original or release.
         # Accept legacy bold status labels and an optional explanatory note after ；.
         m = re.fullmatch(
-            r"(?:\\*\\*)?(imported|source_snapshot_archived)(?:\\*\\*)? → \\x60([^\\x60]+)\\x60(?:；[^|]*)?",
+            r"(?:\*\*)?(imported|source_snapshot_archived)(?:\*\*)? → \x60([^\x60]+)\x60(?:；[^|]*)?",
             status)
         if not m:
             errors.append("Unknown intake state for " + title + ": " + status)
