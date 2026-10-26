@@ -4,7 +4,7 @@
 
 二十歲的馬拉松選手，在攝氏 37 度的環境跑了約兩小時後昏倒、痙攣。送醫時已昏迷，心跳 120/min、血壓 98/52 mmHg、體溫 40.8°C，肌酸酐 2.2 mg/dL，AST 110、ALT 123 U/L。第 61 題問這是何種熱傷害；兩天後的第 63 題，病人恢復到能抱怨雙腿疼痛、腫脹及茶色尿，CK 42,700 U/L、Cr 2.8 mg/dL、K 5.0 mmol/L、鈣 2.07 mmol/L，尿液潛血 4+，顯微鏡卻無紅血球。這一次問的不是病名，而是**接下來要以什麼生理目標調整治療**。
 
-## 第一個問題：為何熱衰竭已不能解釋這位病人？
+## 第 61 題：為何熱衰竭已不能解釋這位病人？
 
 運動產生的熱量，靠皮膚血流增加與汗液蒸發帶走；當環境、濕度、運動強度及脫水讓散熱追不上產熱，核心溫度持續上升。身體還會把循環血流分給皮膚散熱與運動中的肌肉，造成有效循環量下降、內臟灌流受壓。**熱傷害是溫度調節、循環與細胞損傷同時失控，不只是一支溫度計。**
 
@@ -18,7 +18,17 @@ Heat exhaustion（熱衰竭）常有大量出汗、疲憊、頭暈、噁心、�
 
 AST 110、ALT 123 表示細胞損傷的訊號，卻無法單憑 AST/ALT 就指定全部來自肝臟。AST 也存在於骨骼肌；中暑時同時可能發生肌肉、肝、腎與凝血系統損傷。這是兩天後故事的伏筆。
 
-## 第二個問題：茶色尿揭露的是什麼？不是「尿很多所以腎沒事」
+<figure class="diuretic-figure" id="heat-muscle-organ-branches">
+<div class="diuretic-figure-head"><span>FIGURE 01 · CLINICAL REASONING</span><strong>同一次高熱，兩種不同器官訊號</strong></div>
+<div class="diuretic-steps">
+<div class="diuretic-step"><span>1</span><div><strong>高熱 + 昏迷或抽搐 → 立即辨認運動型中暑</strong><p>不等待 AST/ALT 或 CK 上升才啟動快速降溫與器官支持</p></div></div>
+<div class="diuretic-step"><span>2</span><div><strong>AST/ALT 升高 → 不足以單獨確定肝臟來源</strong><p>骨骼肌亦能釋放 AST；搭配 CK、病程、膽紅素與凝血功能追問來源</p></div></div>
+<div class="diuretic-step"><span>3</span><div><strong>CK 大幅上升 + heme(+)／無 RBC → 追問色素性腎小管傷害</strong><p>以 creatinine、尿量、電解質、循環及容量狀態監測，不能單憑 CK 決定透析</p></div></div>
+</div>
+<figcaption>原創因果導覽，根據 Pocket Medicine 第九版 reader PDF p137「Patterns of LFTs」原表及 p175–176「Etiologies and Diagnosis of Acute Kidney Injury」原表逐欄私下核讀而整理；**不是原書原圖重製**，不可由圖單獨計算肝／腎損傷程度。完整對讀與合法原書入口見本篇來源頁。</figcaption>
+</figure>
+
+## 第 63 題：茶色尿揭露的是什麼？不是「尿很多所以腎沒事」
 
 病人兩天後兩腿腫痛，CK 達 42,700 U/L。CK（creatine kinase）主要是肌細胞內酵素；如此顯著升高，加上受傷背景，支持 **rhabdomyolysis（橫紋肌溶解）**。肌纖維受熱、缺血與劇烈運動損傷後，細胞膜失去完整性，CK、鉀、磷與 myoglobin（肌紅蛋白）進入循環。
 
