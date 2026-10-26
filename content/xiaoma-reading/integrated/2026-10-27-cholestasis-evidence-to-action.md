@@ -79,7 +79,7 @@ TG18 的 **severity grading 與 diagnosis 是兩張不同的表**。Grade III（
 
 ### 第四問：「48 小時內 ERCP」到底是什麼意思？
 
-這句話若脫離病情，反而很危險。**ASGE 2021** 對 cholangitis 建議 ERCP 優於 percutaneous drainage，並以 ≤48 小時對照 >48 小時作為證據分析與建議；其時間建議是 **conditional、very-low-certainty evidence**，不能讀成「任何患者都可以等到第 48 小時」。**ESGE 2019** 依 TG18 嚴重度提出：septic shock 儘快、建議 **12 小時內**；moderate cholangitis 約 **48–72 小時內**；mild 可按情境安排較非緊急的處置。[2][7] 不同文件的時間界線、比較族群及證據等級不同，**它們不是在比誰的單一數字更正確**。
+這句話若脫離病情，反而很危險。**ASGE 2021** 對 cholangitis 建議 ERCP 優於 percutaneous drainage，並以 ≤48 小時對照 >48 小時作為證據分析與建議；其時間建議是 **conditional、very-low-certainty evidence**，不能讀成「任何患者都可以等到第 48 小時」。**ESGE 2019** 依 TG18 嚴重度提出：septic shock 儘快、建議 **12 小時內**；moderate cholangitis 約 **48–72 小時內**；mild 可按情境安排較非緊急的處置。[2][7] 不同文件的時間界線、比較族群及證據等級不同，**它們不是在比誰的單一數字更正確**。 **SSC 2026** 另外針對需要 source control 的 sepsis／septic shock，條件式建議盡早執行、理想上在辨認需源頭控制後約 **6 小時內**；這是**低確定性、跨感染源的一般建議**，不是「所有疑似膽管炎者六小時內一定要做 ERCP」的專科規則。[6] 因此真正可執行的交班，不是單報「48 小時」，而是說出目前 organ dysfunction、膽源性證據、要聯絡誰、能否引流及不能等的理由。
 
 現在再回到「血壓下降、意識變差」的病人。若膽管炎高度可能且存在持續需要減壓的感染源，優先順序是**立即抗菌與復甦，同步連絡急診／重症／內視鏡或介入團隊評估早期 source control**；不能排一張 48 小時後的 elective ERCP 當作完成處置。若初次 ERCP 時病人仍不穩定，**先以 stent 或 nasobiliary drainage 取得感染源控制**，可能比同次完成 sphincterotomy、碎石及結石完全清除更安全；當病況穩定、風險可接受時才考慮 definitive clearance。ASGE 的一般建議偏向在可承受時合併引流與取石，但對 **too unstable to tolerate extensive treatment** 明確保留減壓優先的例外。[2]
 
