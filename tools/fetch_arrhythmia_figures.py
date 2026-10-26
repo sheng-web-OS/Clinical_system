@@ -22,6 +22,13 @@ FIGURES = {
     "silverman-2018-fig2.jpg": (ORIGIN + DOI_FILE + "-fig2.jpg", (753, 341)),
     "silverman-2018-fig3.jpg": (ORIGIN + DOI_FILE + "-fig3.jpg", (753, 343)),
 }
+# Byte-identity pinned from the first successful GitHub Actions source retrieval.
+# A changed image is not silently accepted as the same patient ECG.
+EXPECTED_SHA256 = {
+    "silverman-2018-fig1.jpg": "fe63862dbb8ccb02711d8caac7946102a103f9953c7d3504af3daccef9d2dbeb",
+    "silverman-2018-fig2.jpg": "d1166b7000b5951081f0e268000b86c2f48d21882c03feb1c528dc3ad501686a",
+    "silverman-2018-fig3.jpg": "04aeb13a3309f5b1b66949b325a1c2856c65abc71d1da64d525a6670a870d2e6"
+}
 
 def jpeg_dimensions(data):
     """Read actual SOF pixel dimensions without installing an imaging stack."""
@@ -75,8 +82,10 @@ def main():
                 actual = jpeg_dimensions(image)
                 if actual != expected:
                     raise ValueError(f"unverified original ECG dimensions: {actual} != {expected}")
-                (destination / filename).write_bytes(image)
                 digest = hashlib.sha256(image).hexdigest()
+                if digest != EXPECTED_SHA256[filename]:
+                    raise ValueError("original ECG source image checksum changed: " + digest)
+                (destination / filename).write_bytes(image)
                 print(f"PASS {filename}: original ECG {actual[0]}x{actual[1]}, {len(image)} bytes, sha256={digest}",flush=True)
                 break
             except Exception as exc:
