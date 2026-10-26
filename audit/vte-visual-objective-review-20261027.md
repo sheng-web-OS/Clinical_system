@@ -65,3 +65,24 @@ PR #83 保留 **draft／HOLD**。尚未有對此 PR 最終版本的完整實際 
 **教學增量**：刪圖後雖仍能口頭說「前測影響停查」，但讀者無法立即比較同一 LR− 下兩個不同 residual probability 的具體量級。圖有真正數量比例及可重新計算的數值；和原本三張文字卡有可驗證的差異。完整 Wells 分層及陰性 CUS／CTPA 例外仍由原始 NICE 流程與正文保留，圖不嘗試替代。
 
 **醫學及出版限度**：本檔屬 AI 編輯與數學／來源查核，**不是獨立醫師同儕審查**，也無使用者學習效果研究。對無治療劑量處方的教學文章，以來源稽核、逐圖語義檢查、各尺寸視覺驗收與機器建置為預發布閘門；發布後如發現醫學錯誤必須回退，而不能以作者提供的資料視為一切都已驗證。
+
+
+## 2026-10-27 PR #105：二張站內向量分支圖首次及第二輪真實 QA
+
+檢查對象：`vte-native-diagnostic-pathways`（Desktop 原生兩個 SVG；360/390px 轉為兩套 mobile-native 分支）；同篇 Bayesian 圖仍保留。不再以原始來源連結充當圖像完成。
+
+**首次瀏覽器驗收及實際拒收**：從 GitHub CI 40418562208 產出的 `clinical-system-static-site` ZIP 抽取完整 HTML 與 styles.css，直接以 Chromium render `#vte-native-diagnostic-pathways`：
+- 360px viewport：document scrollWidth 360，figure width 314；只有兩個 mobile diagram 顯示，desktop SVG display:none。
+- 390px：document scrollWidth 390，figure width 344；兩個 mobile diagram 可讀，無 overflow。
+- 1365px：document scrollWidth 1365，figure width 790；兩個有條件分支的 inline SVG 顯示。
+- 第一版 desktop 正負結果標籤壓到 arrowhead，而且 proximal ultrasound 節點英文字接近邊框 → **FAIL**，不得發布。
+
+**明確修復**：將陽性／陰性標籤移到水平分流連線上方，對文字加白色描邊，縮短過長的 Ultrasound node 字串；第二輪在 CI 40418957934 的同尺寸渲染中，上述標籤與箭頭分離且內容可讀，三尺寸 `document.scrollWidth == viewportWidth`。其後把 DVT 第二層結果名改成完整 **「D-dimer 陰性／D-dimer 陽性」**，避免下游「再做 6–8 天超音波」誤被解讀成初次 proximal CUS 的陽性出口。須以最終 CI 生成結果驗證此處修改未造成排版退化。
+
+**編輯醫學檢查**：對照 NICE NG158 原圖 p1/p2 與 recommendation 1.1：
+- DVT likely ≥2 → proximal CUS+ diagnosis；CUS− / quantitative D-dimer+ → repeat proximal US 6–8 days；D-dimer− → alternatives；DVT unlikely ≤1 先 D-dimer。
+- PE likely >4 → CTPA 或適當 V/Q；positive diagnosis；negative 對照臨床與影像品質，若疑 DVT 可考慮 proximal leg ultrasound；PE unlikely ≤4 D-dimer first，unstable suspected PE 不等 routine stable route。
+- 上述僅是**有診斷作用的選定分支**，不是 NICE 2023 完整臨床算法，也不是 Pocket Medicine 三層 DVT Wells 的重新繪圖；不給劑量與未經驗證的固定 D-dimer 截點。
+- 合法性：原創 SVG 與手機 HTML 僅使用公開指南臨床建議的事實，不複製 NICE / Pocket 原流程畫面，無第三方圖片 hotlink。
+- **仍未取得獨立醫師同儕審查**；發布僅按此臨床編輯、來源追溯、CI 與真實多裝置 QA 判斷，不能稱為療效或醫學同儕認證。
+
