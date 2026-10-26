@@ -27,7 +27,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 </div>
 </div>
 <p class="vte-reading-contrast"><strong>預防介入點：</strong>在血栓形成前評估 VTE 與 bleeding risk；不必先預測之後會表現為 DVT 還是 PE。<strong>診斷介入點：</strong>症狀出現後，必須確認當下究竟是哪個解剖部位發生問題。</p>
-<figcaption>圖 1｜下肢 DVT 解剖原圖：Blausen.com staff，<a href="https://commons.wikimedia.org/wiki/File:Blausen_0290_DeepVeinThrombosis.png">Wikimedia Commons</a>，<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>，原圖未裁切或修改。文字因果路徑依 <a href="https://www.cdc.gov/blood-clots/about/index.html">CDC VTE definition</a> 整理；解剖過程亦可核對 <a href="https://www.nhlbi.nih.gov/health/venous-thromboembolism">NIH/NHLBI</a>。圖不表示 PE 必有可見下肢 DVT。</figcaption>
+<figcaption>圖 1｜下肢 DVT 解剖原圖：Blausen.com staff，<a href="https://commons.wikimedia.org/wiki/File:Blausen_0290_DeepVeinThrombosis.png">Wikimedia Commons</a>，<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>，原圖未裁切或修改。文字因果路徑依 <a href="https://www.cdc.gov/blood-clots/about/index.html">CDC VTE definition</a> 整理；解剖過程亦可核對 <a href="https://www.nhlbi.nih.gov/health/venous-thromboembolism">NIH/NHLBI</a>。若要直接查看從 IVC、右心到肺動脈的完整解剖路徑，可另核對 <a href="https://www.stroke.org/-/media/Files/Health-Topics/Pulmonary-Embolism/What-is-a-PE.pdf?sc_lang=en" target="_blank" rel="noopener noreferrer">American Heart Association 2026 原始解剖圖（PDF 第 1 頁）</a>；其圖著作權保留，因此本站只連結不重製。圖不表示 PE 必有可見下肢 DVT。</figcaption>
 </figure>
 
 這也解釋了第一個看似矛盾的地方：
