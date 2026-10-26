@@ -185,6 +185,20 @@ def inspect(page, figure_id, result_dir, slug, width):
             rect = crop.bounding_box()
             if rect and rect["width"] < 220:
                 problems.append("source image crop narrower than 220px")
+            # The source contains original titles, ECG strips and lower annotations:
+            # a shortened CSS crop may load perfectly yet hide those teaching clues.
+            crop_geometry = crop.evaluate("""el => {
+                const frame = el.getBoundingClientRect();
+                const picture = el.querySelector('img');
+                const img = picture && picture.getBoundingClientRect();
+                return img ? {imageHeight: img.height, frameHeight: frame.height,
+                              verticalOffset: img.top-frame.top} : null;
+            }""")
+            if crop_geometry and (
+                abs(crop_geometry["imageHeight"] - crop_geometry["frameHeight"]) > 6
+                or abs(crop_geometry["verticalOffset"]) > 4
+            ):
+                problems.append("source annotation clipped vertically in mobile WPW crop")
     figure.scroll_into_view_if_needed()
     image_path = result_dir / (slug + "-" + figure_id + "-" + str(width) + ".png")
     try:
