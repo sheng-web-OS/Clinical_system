@@ -20,7 +20,7 @@ class ExamArchiveContract(unittest.TestCase):
         rows = [p for p in self.pages if p.get("exam") and
                 (p["exam"]["year_roc"], p["exam"]["sitting"], p["exam"]["stage"], p["exam"]["subject"]) ==
                 (108, 1, 2, "醫學（三）")]
-        self.assertEqual(len(rows), 6)
+        self.assertGreaterEqual(len(rows), 6)
         for p in rows:
             exam = p["exam"]
             self.assertEqual((exam["year_roc"], exam["sitting"], exam["stage"], exam["subject"]),
@@ -30,9 +30,21 @@ class ExamArchiveContract(unittest.TestCase):
             self.assertEqual(headings, set(exam["question_numbers"]))
         baseline = {key for key in validate_exam_catalog(self.pages)
                     if key[:4] == (108, 1, 2, "醫學（三）")}
-        self.assertEqual(baseline,
-                         {(108, 1, 2, "醫學（三）", q)
-                          for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78)})
+        self.assertTrue({(108, 1, 2, "醫學（三）", q)
+                         for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78)}
+                        .issubset(baseline),
+                        "Previously published official question identities must remain")
+
+    def test_all_published_exam_question_headings_match_deep_links(self):
+        """Every official Q anchor must exist exactly once, across every exam year."""
+        for page in self.pages:
+            exam = page.get("exam")
+            if not exam:
+                continue
+            body = (ROOT / page["source"]).read_text("utf8")
+            headings = [int(n) for n in re.findall(r"(?m)^## 第\\s*(\\d+)\\s*題", body)]
+            self.assertCountEqual(headings, exam["question_numbers"],
+                                  "Broken #q-N reader anchors: " + page["source"])
 
     def test_year_archive_does_not_use_publication_year(self):
         index = render_exam_archive(self.pages)
