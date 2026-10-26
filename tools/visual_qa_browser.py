@@ -91,34 +91,41 @@ def figure_versions(body: str) -> dict[str, str]:
 
 
 def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> dict:
-    """Render only added/edited figure elements, not unchanged figures in revised prose.
+    """Screenshot the smallest safe set of affected public figures.
 
-    Catalog edits are conservatively audited across all published figures.
-    Missing prior source files trigger a full scan of the new article.
+    Body-only edits do not recheck unchanged diagrams. Shared CSS/site renderer
+    changes do, because their effect is sitewide. A changed source image also
+    invalidates the figure even when its HTML markup remains identical.
     """
     selected = discover_pages(root) if page_map is None else page_map
-    visible_pages = changed_pages(root, base_ref, selected)
-    if not visible_pages:
-        return {}
-    changed_names = subprocess.run(
+    changed_names = set(subprocess.run(
         ["git", "diff", "--name-only", "--diff-filter=ACMR",
          base_ref + "...HEAD", "--"], cwd=root, capture_output=True,
-        text=True, check=True).stdout.splitlines()
-    if "site/pages.json" in changed_names:
-        return {name: selected[name] for name in visible_pages}
+        text=True, check=True).stdout.splitlines())
+    if {"site/pages.json", "site/styles.css", "site/build.py"} & changed_names:
+        return selected
+    visible_pages = changed_pages(root, base_ref, selected)
     catalog = json.loads((root / "site/pages.json").read_text(encoding="utf-8"))
     source_by_slug = {Path(row["output"]).stem: row["source"] for row in catalog}
+    assets = {Path(path).name for path in changed_names
+              if Path(path).suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif"}}
     result = {}
-    for slug in visible_pages:
+    for slug, (page_path, _) in selected.items():
         source = source_by_slug[slug]
         current = figure_versions((root / source).read_text(encoding="utf-8"))
-        old = subprocess.run(["git", "show", base_ref + ":" + source],
-                             cwd=root, capture_output=True, text=True)
-        previous = figure_versions(old.stdout) if old.returncode == 0 else {}
-        selected_ids = [fid for fid, html in current.items()
-                        if previous.get(fid) != html]
+        selected_ids = set()
+        if assets:
+            for fid, html in current.items():
+                if any(name in html for name in assets):
+                    selected_ids.add(fid)
+        if slug in visible_pages:
+            old = subprocess.run(["git", "show", base_ref + ":" + source],
+                                 cwd=root, capture_output=True, text=True)
+            previous = figure_versions(old.stdout) if old.returncode == 0 else {}
+            selected_ids.update(fid for fid, html in current.items()
+                                if previous.get(fid) != html)
         if selected_ids:
-            result[slug] = (selected[slug][0], selected_ids)
+            result[slug] = (page_path, [fid for fid in current if fid in selected_ids])
     return result
 
 
