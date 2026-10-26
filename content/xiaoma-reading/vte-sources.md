@@ -32,7 +32,7 @@
 - **第二段／決策分流：移除 Wells「文字表假圖」**，回到 [NICE NG158 官方 DVT/PE visual summary](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 及 [推薦條文原文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。官方圖具兩套不同 pretest probability/影像分流與停止分支；網站不以自編條件省略版代替。NICE 官方流程頁若因存取限制不能開啟，仍須明確提供條文來源；其可達性待正式站驗收。
 - **第三段／解剖證據：僅保留一張真實病例影像，並移到影像解剖問題之後**：[An et al., J Korean Med Sci 2022;37:e76, Figure 5](https://doi.org/10.3346/jkms.2022.37.e76)。A/B 是 PE 的 CTPA；C 是 popliteal vein CT venography；D 是 popliteal vein color-Doppler，不是 compression ultrasound。這張圖只解答「檢查到不同部位」，不可假稱呈現 D-dimer 停止條件。授權 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)；若網站發布情境有商業用途，須先取得適當授權或改為原圖連結，不可直接嵌入。
 
-**自我審查結果**：與第一次修訂比較，圖文問答對位與原始證據保真有所改善，但不等於正式視覺 QA 通過。公開版本仍須看過 360/390px 和桌面實際截圖、檢驗圖片載入與許可；且截至本紀錄**沒有獨立醫師審查，也沒有實際讀者成效數據**。編輯責任不應交給讀者反饋，詳見 [VTE 發布前客觀視覺審查](../../audit/vte-visual-objective-review-20261027.md)。
+**自我審查結果**：與第一次修訂比較，圖文問答對位與原始證據保真有所改善，但不等於正式視覺 QA 通過。公開版本仍須看過 360/390px 和桌面實際截圖、檢驗圖片載入與許可；且截至本紀錄**沒有獨立醫師審查，也沒有實際讀者成效數據**。編輯責任不應交給讀者反饋，詳見 repository 內 `audit/vte-visual-objective-review-20261027.md`。
 
 **醫學需要主動保留的例外：** (a) hemodynamic instability / high-risk PE 優先急救，不等待正常 D-dimer 流程；(b) negative proximal ultrasound ≠ negative whole-leg ultrasound；(c) 若 PE 不能直接做 CTPA，V/Q scan 及有時候確診 proximal DVT 都可能影響是否需要 CTPA，但不能把腿部 US 寫成能顯示肺動脈 filling defect；(d) 若已使用 anticoagulation、症狀持續時間異常或 D-dimer test sensitivity 有限制，陰性解讀需小心。
 
