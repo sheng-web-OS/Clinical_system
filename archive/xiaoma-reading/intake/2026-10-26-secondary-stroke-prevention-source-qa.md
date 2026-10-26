@@ -22,7 +22,7 @@
 | 「minor stroke ≠ 一定 DAPT」 | 強化具體門檻：2026 AHA/ASA 對 NIHSS≤3 的 noncardioembolic minor AIS 或 ABCD²≥4 的 high-risk TIA、未接受 IVT、通常 24 小時內起始 clopidogrel＋aspirin **21 天**後單藥（Class 1）。部分推測粥樣硬化（相關狹窄≥50%）且 NIHSS≤5／高風險 TIA，24–72 小時仍有 21 天 DAPT 的 Class 2a 路徑；另有 ticagrelor 選項 30 天的特定條件。「住院第三天」**不等於**「發作後 72 小時」；原文缺 NIHSS 量值、onset、IVT、血管狹窄與影像，不可擅自斷言單藥或 DAPT 哪一個在此個案最佳。 |
 | 「PUD history → clopidogrel」 | 只能說 clopidogrel 是合法單藥選項，不可宣稱有 ulcer history 一律比 aspirin+PPI 安全。對已有 aspirin 相關潰瘍出血且潰瘍癒合的試驗族群，aspirin＋esomeprazole 的再次潰瘍出血風險反而低於 clopidogrel 單藥。這不是將該結果外推為所有 PUD 病人都應用 aspirin＋PPI。|
 | 「先機轉，後出血」 | 是認知拆解，不是可延遲出血評估的絕對時間順序。**active GI bleeding／血流動力學不穩定可立即改變給藥安全性與時機**；indication 和 bleeding risk 實際上須並行權衡，不能因病因未知而放棄急性處理。既往 PUD 單獨不足以要求先作內視鏡，也不足以自動禁止所有抗栓藥。|
-| 「維持原樣」 | 在**模擬個案**中用於教學：合理的不變動需要條件成立，不可將故事的選擇當成已驗證的真實病人醫囑。情境未提供 onset、NIHSS、血管影像與出血狀態，讀者不應推定唯一治療答案；這些是刻意保留、應在延伸決策練習處標明的未定變數。 |
+| 「維持原樣」 | 在**模擬個案**中用於教學：合理的不變動需要條件成立，不可將故事的選擇當成已驗證的真實病人醫囑。情境未提供 onset、NIHSS、血管影像與出血狀態，讀者不應推定唯一治療答案；這些是尚未給定、應在延伸決策練習處標明的未定變數。 |
 
 ## 來源逐項定位／當代更新（2026-10-26）
 
