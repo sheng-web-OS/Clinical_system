@@ -40,7 +40,7 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 <text x="910" y="506" font-size="20" font-weight="700" text-anchor="middle" fill="#264b60">≥ 0.12 秒</text>
 <path d="M740 485H652V642" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
 <text x="699" y="466" font-size="18" font-weight="800" text-anchor="middle" fill="#315b65">NO</text>
-<path d="M1080 485H1091V642" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
+<path d="M1080 485H1100V615H960V642" stroke="#42636e" stroke-width="3" fill="none" marker-end="url(#acls-arrow)"/>
 <text x="1081" y="465" font-size="17" font-weight="800" text-anchor="end" fill="#315b65">YES</text>
 <rect x="486" y="650" width="325" height="153" rx="12" stroke="#426f69" stroke-width="2" fill="#eef6ef"/>
 <text x="648" y="686" font-size="22" font-weight="750" text-anchor="middle" fill="#2a534a">NARROW QRS</text>
@@ -58,12 +58,12 @@ ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardiover
 <text x="62" y="934" font-size="17" fill="#6b3e35">Sustained polymorphic VT → immediate unsynchronized shock；若無脈搏，改用 cardiac-arrest algorithm。</text>
 </svg>
 <div class="acls-mobile-graph" aria-label="有脈搏成人 tachyarrhythmia 手機版完整決策流程">
-<div class="acls-m-step acls-m-entry"><strong>有脈搏的成人 tachyarrhythmia</strong><span>Airway／氧氣（若低氧）／ECG、血壓監測／IV／12-lead ECG</span></div>
+<div class="acls-m-step acls-m-entry"><strong>有脈搏的成人 tachyarrhythmia</strong><span>心率常 ≥150/min；Airway／氧氣（若低氧）／ECG、血壓監測／IV／12-lead ECG</span></div>
 <div class="acls-m-down" aria-hidden="true">↓</div>
 <div class="acls-m-decision"><strong>目前的不穩定，是由 tachyarrhythmia 造成嗎？</strong><span>Hypotension、shock、意識改變、缺血性胸痛、急性 HF</span></div>
 <div class="acls-m-branch-label">YES ↓</div>
 <div class="acls-m-step acls-m-urgent"><strong>迅速處置節律：通常 synchronized cardioversion</strong><span>鎮靜可行時使用，不延誤電擊；sustained polymorphic VT 為非同步電擊的特殊情境。</span></div>
-<div class="acls-m-branch-label acls-m-no">NO ↓（未由 tachyarrhythmia 造成失衡）</div>
+<div class="acls-m-branch-label acls-m-no">NO ↓（另一條分支，並非接續電復律）</div>
 <div class="acls-m-decision"><strong>QRS ≥ 0.12 秒？</strong></div>
 <div class="acls-m-split">
 <div class="acls-m-step"><small>NO · NARROW</small><strong>依規則性判讀</strong><span>Regular：vagal maneuvers／adenosine；其他降心率藥物仍須核對節律、心功能與禁忌。</span></div>
