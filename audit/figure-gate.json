@@ -493,8 +493,8 @@
         {
           "locator": "Pocket Medicine 9E PDF 第 141 頁 Phases of Chronic HBV Infection：DNA／ALT／histology 與註腳",
           "source_token": "Phases of Chronic HBV Infection",
-          "teaching_role": "把病毒複製、宿主互動、肝細胞受傷及各自的 DNA／ALT 量測分開；箭頭有生理中介，不能把 markers 當直接免疫量測。",
-          "scope_limit": "原創概念圖並非完整臨床演算法，不是病人診斷或個別處方，也不表示已取得出版社原圖公開授權。",
+          "teaching_role": "視覺化辨別 DNA 與 ALT 各自對應的生理環節；固定 ALT 正常而改變 HBeAg／DNA，直接展示單一 ALT 無法命名 phase，並將量測、推論、纖維化風險與處置分層。",
+          "scope_limit": "兩個典型檢驗組合非實際個案，也不能以單次測量直接定 phase；正常 ALT 不排除組織活動、既有 fibrosis 或臨床治療適應症。原創圖非完整處置演算法或原書像素，出版社公開重製授權未確認。",
           "mode": "illustrated",
           "anchor": "hbv-observation-inference-action",
           "caption_token": "Pocket Medicine 9E"
