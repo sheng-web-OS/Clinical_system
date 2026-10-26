@@ -48,7 +48,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 這次呼吸困難，是否來自肺動脈阻塞？
 
 
-**完整診斷演算法原圖。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**上圖是判斷層級比較，不能取代完整的 DVT／PE 演算法**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
+**完整診斷演算法原圖。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**本文的 Bayesian 圖用來示範陰性檢驗如何更新機率，不是完整的 DVT／PE 診斷演算法**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
 
 所以小麻需要兩張不同的 Wells score。
 
