@@ -1,6 +1,6 @@
 # Cholestasis：看見 ALP，究竟是找到病因，還是只找到下一個問題？
 
-2026.07.19 原稿衍生之獨立 AI 整合教材｜2026.10.27 候選稿，**未發布／醫學審查待完成**。作者於 2026.10.26 提供的原文完整保留於 [私人來源快照](../../../archive/xiaoma-reading/intake/2026-07-19-cholestasis-primary-secondary-user-supplied.md)，本稿不冒稱 Facebook 原帖修訂版。
+2026.07.19 原稿衍生之獨立 AI 整合教材｜2026.10.27 候選稿，**未發布／醫學審查待完成**。作者於 2026.10.26 提供的原文完整保留於 私人來源快照（私有封存），本稿不冒稱 Facebook 原帖修訂版。
 
 前一篇[肝臟檢驗，先告訴你病人在哪裡](2026-10-26-liver-tests.md)已經建立：AST／ALT、ALP、bilirubin、PT／albumin 不是同一把尺。現在將視角縮到 ALP。難處並不在於背出「ALP 高就是 cholestasis」，而在於區分四個問題：**生化訊號是否真來自肝膽？異常可能位於哪段膽汁路徑？有哪些競爭病因？哪一個風險已經不允許繼續等待檢查？**
 
@@ -23,7 +23,7 @@
 <tr><th scope="row">肝源性 ALP ↑；US 未見擴張</th><td data-label="目前較支持的假說">Small-duct／intrahepatic cholestasis、DILI、PBC 等；仍保留 occult obstruction</td><td data-label="下一步能改判什麼">藥物與暴露、AMA 等血清學；按懷疑程度選 MRCP／EUS；不明原因再考慮 biopsy</td><td data-label="不能推出">未擴張 ≠ obstruction 已排除；更不等於「肝細胞功能失敗」確診</td></tr>
 <tr><th scope="row">合併發燒、寒顫、黃疸、敗血症或器官功能不穩</th><td data-label="目前較支持的假說">須立即評估 cholangitis／infected obstruction</td><td data-label="下一步能改判什麼">並行復甦、培養、抗生素、感染源控制及緊急膽道引流需求</td><td data-label="不能推出">不能因 US 未見擴張或等待 elective MRCP 而延誤處置</td></tr>
 </tbody></table>
-<figcaption>以 Pocket Medicine 9E Figure 3-3（所核 Library PDF 頁 139，非印刷頁碼）及 ACG／ASGE 指引自行建立的「證據 × 行動」矩陣；不重製原書圖像或分支排列。最後一列是急迫性覆蓋條件，不是疾病嚴重程度隨前兩列逐步升級。完整資料定位見<a href="../../../audit/cholestasis-20260719-pocket9e-figure3-3.md">私人稽核</a>。</figcaption>
+<figcaption>以 Pocket Medicine 9E Figure 3-3（所核 Library PDF 頁 139，非印刷頁碼）及 ACG／ASGE 指引自行建立的「證據 × 行動」矩陣；不重製原書圖像或分支排列。最後一列是急迫性覆蓋條件，不是疾病嚴重程度隨前兩列逐步升級。完整資料定位見<a href="../liver-gi-source-review-20261027.md#cholestasis">私人稽核</a>。</figcaption>
 </figure>
 
 這也是 ultrasound 在診斷中真正的位置：它不是決定疾病「有或沒有」的法官，而是改變大膽管 obstruction 假說的可信度。患者若具有膽管癌危險因子、反覆膽管炎、IBD／PSC 線索、膽紅素惡化、或與 US 結果不相稱的高度懷疑，進階影像仍可能有價值。[1]
@@ -45,14 +45,11 @@ ASGE 2021 對 cholangitis 建議優先考慮 endoscopic drainage，並討論一�
 現在回頭讀 Figure 3-3，最重要的不是左右箭頭，而是它提供了三種不同任務：**確認訊號、增加定位證據、判斷行動窗口**。這三個任務不能互相取代。
 
 下一篇 [肝臟被占據，為什麼最突出的卻是 ALP？](2026-10-27-infiltrative-alp-hypothesis.md) 將把最後那個更困難的問題挑出來：影像沒有顯示 obstruction，是否就能直接跳到 infiltration？答案仍是否定的。
-
----
-
-### 已核來源與出版界線
+\n\n[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#cholestasis)\n\n---\n\n### 來源與驗收與出版界線
 
 [1] ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries (2017), [official guideline](https://gi.org/guideline/evaluation-of-abnormal-liver-chemistries/).  
 [2] ASGE guideline on the management of cholangitis (2021), [official statement](https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-management-of-cholangitis).  
 [3] *Pocket Medicine*, 9E, Figure 3-3, examined Library PDF pp.137–139; source-file binary fingerprint and printed page not yet cross-verified with repository audit.  
-[4] [原作者快照與 Figure 3-3 醫學稽核](../../../audit/cholestasis-20260719-pocket9e-figure3-3.md)（私人來源，不是公開授權的原圖）。
+[4] [原作者快照與 Figure 3-3 醫學稽核](../liver-gi-source-review-20261027.md#cholestasis)（私人來源，不是公開授權的原圖）。
 
 本稿為 **AI-integrated candidate / HOLD**：已自動整合證據，未取得獨立醫學 reviewer 核准、歷史 FB canonical 確認或發布決策；未納入 public allowlist。新圖獨立建立，不包含 Pocket 原書像素。
