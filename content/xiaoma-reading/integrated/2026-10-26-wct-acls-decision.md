@@ -1,72 +1,102 @@
-# 還不知道是什麼，憑什麼治療：從 WPW 走到 WCT／ACLS
+# 還不知道是什麼，憑什麼治療
 
-**小麻閱讀整合稿｜第三篇：急救決策（2026-10-26）**
+*小麻閱讀（9E）｜心律急症系列 03／03：從 wide-complex tachycardia 回看 ACLS。以 2026/7/17 作者原稿的核心論證為主幹，另作安全性與跨篇整合。*
 
-[第一篇：WPW 的順向與逆向傳導](2026-10-26-wpw-conduction-mechanism.md) → [第二篇：Pre-excited AF 的 AV node 悖論](2026-10-26-preexcited-af.md)
+**系列閱讀：[01｜WPW：QRS 為何有時寬、有時窄？](2026-10-26-wpw-conduction-mechanism.md) → [02｜Pre-excited AF：何時不能阻斷 AV node？](2026-10-26-preexcited-af.md) → 本篇「診斷未定時的行動理由」**
 
-前兩篇建立了傳導方向與旁路角色。這篇把同一個模型放回急救現場：診斷尚未完整時，哪些已知資訊足以改變行動？
+ACLS tachyarrhythmia algorithm 看起來很直觀：病人不穩定就 cardioversion；若還穩定，再依 QRS 寬窄選擇處置。
 
-## 一開始不該問 QRS 寬不寬，而要問心律正在造成什麼
+但讀完小麻的 wide-complex tachycardia（WCT），這條路徑反而變得不再直觀。
 
-先比較兩種機轉情境：病人心跳 180/min、血壓低，直覺上很想立刻把 ECG 的不正常節律消除。但 tachycardia 與 hypotension 同時發生，不代表前者必然造成後者。
+Wide QRS 不是診斷。它可能來自 VT、SVT with aberrancy、accessory-pathway conduction，也可能是 ventricular pacing；有時 hyperkalemia 或 sodium-channel blocker toxicity 也讓 ventricular conduction 異常。即使確認是 VT，monomorphic 與 polymorphic 的機轉及立即處置也可能不同。
 
-在 septic shock 或失血時，sinus tachycardia 可能是交感活化、維持 cardiac output 的代償；單純「電擊數字 180」既不治療原因，還可能造成傷害。若病人突然發作 sustained ventricular tachycardia（持續性心室頻脈，VT），之後因舒張充盈時間縮短、房室時序改變與心室功能不足而休克，則 rhythm 本身可能是當下灌流失敗的近因，延誤轉律會付出代價。
+[第一篇](2026-10-26-wpw-conduction-mechanism.md)進一步說明，同一條 AP 在不同節律可以是迴路的回程、去程，或者根本不是維持節律的組件。[第二篇](2026-10-26-preexcited-af.md)則讓我們看見：同一種 AV nodal block，可能中斷 orthodromic AVRT，卻在 pre-excited AF 造成致命風險。
 
-所以 2025 AHA 流程寫的是 **persistent tachyarrhythmia *causing* hypotension、shock、altered mental status、ischemic discomfort 或 acute heart failure**。造成的判斷是迅速依情境與時間關係作出高可信度臨床歸因，不是要求在轉律前得到實驗室等級的因果證明。若高度懷疑 arrhythmia 已使病人失去灌流，應即時救援，不能把「先問因果」變成拖延的理由。
+然而，ACLS 並沒有等這些分類全部完成，才允許治療。這表示它真正管理的，不是已知病名的清單，而是：**當答案還不完整時，憑什麼開始行動？**
 
-若是有 pulse、hemodynamically unstable 的 regular monomorphic WCT，應迅速 **synchronized cardioversion**。但 sustained **polymorphic VT** 不應套進這個同步支線，應立即 **unsynchronized high-energy shock**；若無脈搏，改走心跳停止／CPR＋defibrillation 路徑。電擊種類不是依「病人嚴不嚴重」一軸決定，而要考慮 ECG 節律可否可靠同步、是否已屬應除顫之節律。
+## Tachycardia 是不穩定的原因，還是不穩定的反應？
 
-<figure id="wct-action-boundaries" class="reasoning-figure"><div class="reasoning-title">仍不知道病名時，先確定不能失去的三種資訊</div><div class="reasoning-cards"><section><strong>有無脈搏？</strong><p>無脈搏 VT／VF → 立即 CPR 與除顫的心搏停止路徑。</p></section><section><strong>節律是否造成灌流失敗？</strong><p>有脈搏、因持續心搏過速而不穩定 → 迅速電復律；代償性 sinus tachycardia 應處理原因。</p></section><section><strong>電擊與用藥的節律限制</strong><p>規則單形態 WCT 可可靠同步；持續 polymorphic VT 需非同步高能量電擊。穩定、規則、單形態是可考慮 adenosine 的必要限制，非 SVT 診斷。</p></section></div><figcaption>原創風險分層圖，對讀 Pocket Medicine 9E PDF 第 67–68 頁 WCT 與 AHA 2025 ALS §15–16／官方 tachyarrhythmia algorithm；不是完整 ACLS 流程。</figcaption></figure>
+ACLS 2025 的第一個決策點，並不只寫 hypotension、acute altered mental status、shock、ischemic chest discomfort 或 acute heart failure；它寫的是 persistent tachyarrhythmia **causing** 這些表現。
 
-## 2025 ACLS 為什麼先看 QRS width，又不相信 QRS width 是診斷？
+這個 causing 是全篇最重要的字。
 
-QRS ≥0.12 秒描述 ventricular activation 花的時間較長。原因可能是心室本身發出節律（VT）、上心室訊號經 bundle branch block 傳導（SVT with aberrancy）、經 accessory pathway 先活化心室（pre-excitation），或 pacemaker、特定代謝／藥物造成的傳導異常。
+Tachycardia 與 hypotension 同時存在，不能自動建立因果。敗血性休克病人的 sinus tachycardia，可能來自交感活化與維持 cardiac output 的代償；如果急著以電擊消除心跳過快，而沒有處理感染、血管擴張與有效循環問題，就選錯了介入目標。
 
-這些來源在 ECG 都可能表現成 wide-complex tachycardia，治療卻不相同。**Wide QRS 是將處置風險提高的可觀察訊號，不是告訴你「它就是 VT」或「它一定不是 SVT」。** 在未確診的成人 WCT，VT 應被優先嚴肅考慮，尤其有結構性心臟病、過去心肌梗塞者；血壓尚可不能排除 VT。
+相反地，若病人突然發作 sustained monomorphic VT，緊接著出現低血壓、意識改變或肺水腫，心室活化異常、舒張充盈時間縮短、房室同步消失與原有的 myocardial substrate，都可能讓心律本身造成 hemodynamic collapse。此時電復律不是單純追求正常 ECG，而是在移除造成灌流失敗的主要機轉。
 
-而 WPW 正好提供重要反例：**orthodromic AVRT** 往 AV node 下行，通常窄 QRS；**antidromic AVRT** 經 bypass tract 下行，通常規則寬 QRS；**pre-excited AF** 則可呈極快且不規則、寬度可變的 QRS。三者可能涉及同一條旁路，但在不同 rhythm，旁路扮演的角色完全不同。
+所以 unstable 並不是「某一種心律」的固定標籤；它是目前 rhythm、cardiac substrate、代償餘裕共同造成的血流動力學結果。同一個 VT 可以被某位病人短暫承受，在另一位嚴重 cardiomyopathy 病人身上迅速造成 shock；極不穩定的 sinus tachycardia 也仍可能是代償，而不是該被電擊的原因。
 
-更重要的是，**irregular wide QRS 也不等於 pre-excited AF**：AF with aberrancy、polymorphic VT、其他病因都需鑑別；ECG 的不規則性與 morphology 變化提供安全邊界，卻尚不足以自動完成診斷。
+這裡的因果判斷必須**迅速而不僵化**。它不是要求在急救前證明 causality；若臨床已高度懷疑 tachyarrhythmia 正在造成灌流失敗，不可因還缺精確 EP mechanism 而延誤電擊。當原文說「需要先判斷」，指的是找對正在破壞 circulation 的環節，不是延後必要救援。
 
-## Adenosine：此刻的節律是否容許 AV node 阻斷？
+## 同樣是要電擊，為什麼不能一律 synchronized？
 
-2025 AHA 對 **hemodynamically stable、regular、monomorphic WCT，且原因尚不明確**，將 monitored IV adenosine 設為 **may be considered（Class IIb）** 來嘗試治療或輔助鑑別。這是有限授權，不表示規則單形態已排除 VT，也不是允許先給任何 AV nodal blocker 再說。WCT 之中 **verapamil／diltiazem 不應經驗性給予（Class III Harm）**；對 unstable、irregularly irregular 或 polymorphic WCT，**adenosine 也屬 Class III Harm**。
+這是原稿需要加入 2025 指引後，最重要的安全限定。
 
-背後的機轉與第二篇相接：regular orthodromic AVRT 需要 AV node 成為迴路的一部分，阻斷它可能終止 reentry；pre-excited AF 則是 AF 的多個快速心房衝動可能繞過 AV node 經旁路進入心室。切斷 AV node 無法阻止 AF，也不會消除旁路，因而可能促使更快的 ventricular activation 與 VF。
+如果病人 **有 pulse，且 unstable 的 WCT 屬於可同步辨識的單形態節律**，應迅速 synchronized cardioversion，鎮靜在可行時使用，但不能因此耽誤治療。若已是 **sustained polymorphic VT**，AHA 2025 要求 **immediate unsynchronized high-energy shock**：多變 QRS 可能使可靠的 R-wave synchronization 困難，拖延或誤同步增加風險。若失去 pulse，則不再使用「with a pulse」流程，而走 VF／pulseless VT cardiac-arrest／CPR 與 defibrillation 路徑。
 
-所以「stable」只提供取得 12-lead ECG、監測、專科討論與考慮有限藥物介入的時間；**它不等於節律 benign，也不等於輸注藥物必然安全。** 真正需要確認的是，還不知道的部分是否仍在這項介入的可接受風險邊界內。
+**Pre-excited AF 與 sustained polymorphic VT 不能只因看起來都是不規則寬 QRS 就視為同一節律。** 前者若因 AF 造成 hemodynamic instability，依 2023 AF guideline 採 synchronized electrical cardioversion；後者不論是否仍有 pulse，持續性 polymorphic VT 的治療方向是立即 unsynchronized shock。當 ECG 診斷難分，復甦團隊需依實際節律與可否可靠同步迅速作出電擊模式判斷，而不是讓一張簡化的成人 tachycardia algorithm 取代臨床辨識。
 
-### 四個臨床分叉，在每一步改變什麼？
+這並沒有破壞「不能等確診才治療」的原則。它反而更精確：**可以尚未知道 VT 的起源或 AP 位置，但不能不知道某些當下可辨認、會改變電擊類型的危險界線。**
 
-| 當下分支 | 能做的事 | 不能超出此資料推論 |
-|---|---|---|
-| Sinus tachycardia + shock，原因如感染、出血仍在 | 同步處理 underlying illness、補足灌流監測；檢查是否另有 arrhythmia | 不可因 HR 高、BP 低就電擊代償性的 sinus rhythm |
-| Tachyarrhythmia 高度疑似造成 serious instability，regular monomorphic WCT、有 pulse | Prompt synchronized cardioversion，鎮靜不應延誤救援 | 不必等 VT 亞型／旁路位置確診 |
-| Hemodynamically stable、regular monomorphic WCT，病因未明 | 12-lead ECG、監測／貼片備援、專家評估；依 2025 ALS 可考慮 adenosine 或適當 antiarrhythmic | 不能從 regular、monomorphic 或 adenosine 有效推出必為 SVT |
-| Irregularly irregular WCT／高度疑 pre-excited AF | 停止套用一般 AF rate control；依不穩定程度選電復律，穩定時考慮 guideline-supported pathway-directed 藥物 | 不能盲用 AV nodal blockers 或由寬 QRS 一口咬定 VT |
+## 病人暫時 stable，QRS width 究竟替我們回答了什麼？
 
-2025 ALS 對一般 stable WCT 可考慮 IV **amiodarone、procainamide 或 sotalol**；但這並不覆蓋 **pre-excited AF** 的特殊禁忌：2023 AF guideline 明列 amiodarone 等 AV nodal blocking agents 在該情境的 VF 風險，穩定病人應使用 **IV procainamide／ibutilide** 或考慮電復律，並查 QT、心衰竭與血壓限制。**「廣義 WCT 的可選藥」和「特定 pre-excited AF 的禁藥」必須同時讀，不能互相代換。**
+當 tachyarrhythmia 暫時沒有使病人失去灌流，ACLS 才獲得觀察 ECG、嘗試取得 12-lead、建立 IV、持續監測與備妥救援的空間。此時 QRS duration ≥0.12 秒，首先只說明**心室激發的時間變長**。它沒有說明 impulse 從心室起源，還是經正常房室傳導系統以外的路徑進入心室。
 
-## 對照真實病例：同一個人，何時獲得足夠行動理由？
+小麻把 WCT 按 origin、conduction、substrate 分開：VT、SVT with aberrancy、AP pre-excitation、pacing。這些是**病因與機轉分類**，不會因流程圖把它們放在同一格就變成同一疾病。
 
-回到前篇 24 歲的真實病例。初見的是不規則 WCT，某些 pre-excited ventricular beats 快到 300/min；病人血壓一度仍維持。當下尚不一定能辨認哪一條 accessory pathway、是否典型左側或右側，也無法單靠 wide QRS 確診 VT。然而，高速且不規則、形態變化的 WCT 已足以禁止沒有明確適應症的 adenosine 或 AV nodal blocker 試探，並提醒團隊準備電復律／去顫與監測。
+甚至「hemodynamically stable」本身也不能替 VT 除名。過去 MI、LV dysfunction、AV dissociation、capture／fusion beats 等線索有其診斷價值；反過來，沒有這些 finding 或暫時血壓穩定，也不足以將 WCT 宣稱為 benign SVT。以 WCT 存疑處理時，應優先考慮可能的 VT 與危險的 pre-excited AF，而不是任意測試 AV nodal blocker。
 
-原病例曾在不確定機轉下使用 IV amiodarone，後續才 electrical cardioversion，轉律後見 delta wave，EP study 才確定 right posteroseptal accessory pathway。這些後得資訊改變了**最終病因診斷與長期策略（pathway ablation）**；卻不是當下是否必須避免危險藥物的必要前提。這就是 ACLS 所謂 **在不確定下仍能先行動** 的真實意義。
+問題是：如果還不知道它是什麼，為何 2025 ACLS 又允許某些藥物試探？
 
-再把病例條件更改：如果同一張 ECG 其實是 *regular monomorphic* WCT、病人清醒且灌流良好，某些診斷性試探才可能進入容許範圍；如果下一分鐘出現 shock，等待的成本突然增高；如果節律明確為 sustained polymorphic VT，電擊必須改走 unsynchronized shock。**被改變的不是單純 diagnosis，而是診斷仍未知時可以承受的不確定程度。**
+## Regular 與 monomorphic，不是病名，是某一項介入的狹窄許可
 
-## 還需要知道什麼，已足以決定什麼？
+先分辨兩個表面特徵：**regular** 是 RR intervals 大致一致；**monomorphic** 是各搏 ventricular activation 形成相近的 QRS 外觀。兩者都無法證明這是 SVT。Scar-related VT、idiopathic VT、SVT with fixed BBB，以及某些 antidromic AVRT，都可能是 regular monomorphic WCT。
 
-Pocket Medicine 在 WCT 頁面問來源、傳導方向、心肌 substrate，讓我們知道 QRS 並非病名。ACLS 則把尚未查完病因的 rhythm，依當下灌流後果、ECG 可辨認的安全界線與治療延遲代價，暫時納入不同處置範圍。
+但如果病人**確實 hemodynamically stable、regular 且 monomorphic**，2025 AHA 成人 ALS 對原因仍不明的 WCT，允許 **IV adenosine *may be considered*（Class IIb）**，作為治療或幫助診斷；這不是 routine recommendation，也不是宣稱 ECG 排除了所有高風險可能。持續 ECG／BP 監測、救援與專科協助是必要背景，無法安全試探就不試。
 
-兩者不是相反的方法，而是兩個不同時間尺度。機轉研究回答它為何發生；急救決策回答**在資料尚不完整時，哪一個錯誤不能發生**。
+為什麼 adenosine 仍有資訊價值？它能短暫造成 AV nodal block。如果 AV node 是 tachycardia 的必要迴路（例如 orthodromic AVRT、AVNRT），阻斷後可能終止；若 atrial tachyarrhythmia 仍持續，短暫 block 可能揭露原先被 ventricular response 遮蔽的 atrial activity；若機轉不依賴 AV node，可能沒有明顯效果。
 
-同一條 accessory pathway，能成為 reentry 的回程、順程，也能只是 AF 訊號進入心室的危險捷徑。先知道此刻在處理哪一種關係，才能理解為何一顆藥會從治療變成禁忌。
+但治療反應不是 diagnosis 的同義詞。某些 idiopathic outflow-tract VT 也可能對 adenosine 有反應，所以「給了 adenosine，節律停了」不能用來宣稱已確診 SVT。
+
+這條試探邊界也有不能跨過的地方。2025 AHA 明列 **hemodynamically unstable、irregularly irregular 或 polymorphic WCT 不應給 adenosine（Class III: Harm）**；成人 WCT 也不應經驗性給 IV **verapamil／diltiazem（Class III: Harm）**。若 ECG 暗示 **pre-excited AF**，2023 AF guideline 進一步禁止 adenosine、beta blockers、verapamil、diltiazem、digoxin、amiodarone，因為正常 AV nodal conduction 被抑制後，AF impulses 仍可經 AP 快速順傳，造成 VF。**一般 stable WCT 可考慮 amiodarone 的建議，不能外推到 pre-excited AF。**
+
+這就是 [第二篇](2026-10-26-preexcited-af.md)與 ACLS 真正接合的地方：regular monomorphic 只縮小了嘗試特定操作的風險範圍；當改成 irregular pre-excited AF，**操作本身的安全前提被推翻**。藥物沒有變，變的是被阻斷的 AV node 在當下 rhythm 中到底是迴路必需元件，還是限制心房衝動抵達心室的一道屏障。
+
+<figure id="wct-decision-figure" class="diuretic-figure" role="group" aria-label="三道急救決策界線原創閱讀圖">
+<div class="diuretic-figure-head"><span>FIGURE 04 · THREE DECISION BOUNDARIES</span><strong>每個分叉都只回答一件事：現在已經知道什麼，還不能假設什麼？</strong></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px">
+<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>01 · CAUSALITY</small><h3>Rhythm 正在造成失衡嗎？</h3><p>若高度懷疑 arrhythmia causing shock，不等病因全部定案才救援；若是代償性 sinus tachycardia，治 underlying shock。</p></div>
+<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>02 · SHOCK MODE</small><h3>是哪種需要電擊的節律？</h3><p>有 pulse 且可同步的 unstable tachyarrhythmia：synchronized cardioversion；sustained polymorphic VT：立即 unsynchronized shock；無脈搏走 arrest 流程。</p></div>
+<div style="background:#f5f8f7;color:#203938;border:1px solid #d6e2df;border-radius:12px;padding:15px"><small>03 · DRUG BOUNDARY</small><h3>試探本身在這節律安全嗎？</h3><p>Stable、regular monomorphic WCT，adenosine 僅可考慮；若 irregularly irregular／polymorphic／unstable 或疑 pre-excited AF，不得照搬。</p></div>
+</div>
+<figcaption><strong>圖 4｜教學判斷軸，不是 AHA 官方演算法的複製品。</strong> 判斷並非一定按三格依序完成；危急狀況需並行辨認並立即處置。請對照 [AHA 2025 原始 Adult Tachyarrhythmia With a Pulse Algorithm](https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf) 與更完整的 [ALS §15–16](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)。</figcaption>
+</figure>
+
+## 從真實病例回看：哪些資訊可以等，哪些不能？
+
+在[第二篇](2026-10-26-preexcited-af.md)的 Silverman 2018 真實病例中，病人急診收縮壓仍約 130 mmHg，原始 ECG 卻已有快到 300/min 的 irregular WCT，部分搏動的 QRS 寬度不同。轉律後才出現清楚的 delta wave，次日才確定右後中隔 AP 並消融。
+
+這個時間序列最重要的不是「後來知道原來是 WPW」，而是兩種知識有不同的時鐘。
+
+**當下可以不知道的**，包括 AP 位於哪一側、是否是單一通道、EP study 的精確 conduction properties；這些關係到 definitive diagnosis、ablation 與長期風險。**當下不能假裝不知道的**，則是 irregularly irregular、極快且可能 pre-excited 的 WCT 不適合任意 adenosine 或 AV nodal blockade，以及 rhythm 一旦造成 hemodynamic failure 就須迅速選擇正確的 electrical treatment。
+
+原病例曾以 IV amiodarone 治療，當時無效，之後才同步轉律。這段歷史不能回頭當作現行建議；2023 AF guideline 已對 pre-excited AF 明列 amiodarone 為 Class III Harm。**Case report 告訴我們醫師如何在現場形成與修正判斷；guideline 才回答今天應如何選擇安全治療。**
+
+再做兩個**明示的反事實思考，而非病例真實觀察**：如果同樣的 WCT 變得 regular、monomorphic，且灌流穩定，可以討論有限的 ECG-based 診斷與治療；若仍是相同節律卻迅速出現 shock 並可歸因於 tachyarrhythmia，資訊等待的代價改變，應優先電復律。若節律明確是 sustained polymorphic VT，又要改採 immediate unsynchronized shock。**改變的不是「醫師懂得更多」，而是某些仍未知的事情，已不再阻止當下救援。**
+
+## 病名可以尚未完整，行動的理由不能不完整
+
+小麻 WCT 的分類告訴我們：ECG 看起來相似，origin、conduction 和 substrate 可能完全不同。ACLS 則依據當下已知的灌流後果、節律特徵與治療延誤代價，決定哪些情況可以暫時合併處置，哪些風險不能混在一起。
+
+急救中的專業，不是用較少資訊冒險，也不是為了防錯而等到所有病因都明確；而是知道**哪些診斷可以稍後追查，哪些操作前提現在就必須釐清**。
+
+第一篇使我們看見路徑，第二篇讓我們看見路徑在不同節律下的危險角色；回到第三篇，臨床決策終於有了清楚的共同尺度：**不確定的不是行動理由，而是行動之後仍待完成的診斷。**
 
 **病名可以尚未完整，行動的理由不能不完整。**
 
 ---
 
-[完整來源、官方流程圖與界線](../arrhythmia-sources.md) · [從第一篇重新追傳導方向](2026-10-26-wpw-conduction-mechanism.md) · [回到知識地圖](../../clinical-os/index.md#rhythm)。
+*本文以 2026/7/17 作者同名原稿的核心論證為起點，另製 AI 整合稿，未修改私人封存原稿。來源：[Pocket Medicine 9E，私人 PDF 第 67–68 頁](https://www.wolterskluwer.com/zh-tw/solutions/ovid/pocket-medicine-15398)（出版社書目，不是私人 PDF）；[2025 AHA ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)；[2023 ACC/AHA/ACCP/HRS AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)；[Silverman et al. 2018 真實病例](https://journals.sagepub.com/doi/10.1177/2324709618802870)。原始 WCT 圖與 ACLS 圖已核讀；公開圖示僅採原創結構或合法來源連結。*
 
-[AHA 2025 官方有脈搏心搏過速流程圖](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf?sc_lang=en)。
+
+[**原圖、病例與 2025 AHA／2023 AF 來源逐項核對**](../arrhythmia-sources.md)。
