@@ -1,12 +1,14 @@
 """Tests prove that legacy debt is not approved and new/edited visuals fail closed."""
 import json
+import struct
 import sys
+import zlib
 import tempfile
 import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "site"))
-from visual_quality import audit, extract_figures, fingerprint
+from visual_quality import audit, extract_figures, fingerprint, screenshot_filename
 
 SOURCE = "content/lesson.md"
 OLD = '<figure id="map"><section>概念一</section><figcaption>來源</figcaption></figure>'
@@ -57,7 +59,7 @@ class SiteVisualQualityAudit(unittest.TestCase):
             "counterexample_check": "Checked conditions when inference fails.",
         }
         self.save_reviews()
-        with self.assertRaisesRegex(ValueError, "desktop_screenshot"):
+        with self.assertRaisesRegex(ValueError, "mobile_360_screenshot"):
             audit(self.root)
 
     def test_screenshots_are_not_approvable_by_unrelated_text_files(self):
@@ -68,6 +70,88 @@ class SiteVisualQualityAudit(unittest.TestCase):
         r = extract_figures("第一行\n" + OLD)
         self.assertEqual(r[0]["line"], 2)
         self.assertEqual(r[0]["fingerprint"], fingerprint(OLD))
+
+
+    def save_png(self, name, width, height=240):
+        """Create a tiny *valid* PNG; screenshot QA still requires a real visual review."""
+        def chunk(tag, data):
+            return (struct.pack(">I", len(data)) + tag + data +
+                    struct.pack(">I", zlib.crc32(tag + data) & 0xffffffff))
+        raw = (b"\x00" + b"\x52\x86\xa1" * width) * height
+        png = (b"\x89PNG\r\n\x1a\n" +
+               chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0)) +
+               chunk(b"IDAT", zlib.compress(raw)) +
+               chunk(b"tEXt", b"visual-evidence\x00" + b"fixture" * 36) +
+               chunk(b"IEND", b""))
+        (self.root / "audit/visual-evidence" / name).write_bytes(png)
+
+    def approve_fixture(self, markup=NEW):
+        (self.root / SOURCE).write_text(markup, encoding="utf-8")
+        fp = fingerprint(markup)
+        key = SOURCE + "#map"
+        record = {
+            "status": "approved", "fingerprint": fp,
+            "reviewer_type": "independent_ai",
+            "reader_misconception": "The reader may confuse a categorization with a treatment decision.",
+            "unique_visual_insight": "The diagram makes the conditional branching visible in context.",
+            "deletion_test": "Removing this diagram loses the explicit counterfactual decision branch.",
+            "medical_source_and_limits": "This teaching model is a simulation and is not a patient observation or clinical prescription.",
+            "desktop_findings": "Verified the exact figure in context at a desktop width using real rendered pixels.",
+            "mobile_findings": "Verified at both 360 and 390px and inspected readability of the labels.",
+            "counterexample_check": "Changed the condition and verified the decision is different.",
+        }
+        for field, viewport, image_width in (
+            ("mobile_360_screenshot", 360, 320),
+            ("mobile_390_screenshot", 390, 340),
+            ("desktop_screenshot", 1280, 760),
+        ):
+            name = screenshot_filename(key, fp, viewport)
+            self.save_png(name, image_width)
+            record[field] = "audit/visual-evidence/" + name
+        self.reviews["reviews"][key] = record
+        self.save_reviews()
+        return record
+
+    def test_viewport_version_bound_evidence_allows_structural_acceptance(self):
+        self.approve_fixture()
+        result = audit(self.root)
+        self.assertEqual(result["summary"]["approved"], 1)
+        # Not certification of actual pedagogy: this fixture simply proves the gate works.
+
+    def test_same_screenshot_cannot_stand_in_for_two_phone_viewports(self):
+        record = self.approve_fixture()
+        record["mobile_390_screenshot"] = record["mobile_360_screenshot"]
+        self.save_reviews()
+        with self.assertRaisesRegex(ValueError, "mobile_390_screenshot"):
+            audit(self.root)
+
+    def test_mobile_screenshot_larger_than_viewport_fails(self):
+        record = self.approve_fixture()
+        file = self.root / record["mobile_360_screenshot"]
+        self.save_png(file.name, 500)
+        with self.assertRaisesRegex(ValueError, "mobile_360_screenshot"):
+            audit(self.root)
+
+    def test_figure_change_invalidates_screen_capture(self):
+        self.approve_fixture()
+        (self.root / SOURCE).write_text(NEW.replace("方向", "另一種方向"), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "different figure version"):
+            audit(self.root)
+
+    def test_source_image_requires_nonempty_alt(self):
+        markup = ('<figure id="map"><img src="/real-ecg.png" alt="">'
+                  '<figcaption>真實來源心電圖</figcaption></figure>')
+        self.approve_fixture(markup)
+        with self.assertRaisesRegex(ValueError, "nonempty alt text"):
+            audit(self.root)
+
+    def test_role_alone_does_not_name_svg(self):
+        markup = ('<figure id="map"><svg role="img"><path d="M1 1L2 2"/></svg>'
+                  '<figcaption>來源</figcaption></figure>')
+        self.approve_fixture(markup)
+        with self.assertRaisesRegex(ValueError, "SVG lacks"):
+            audit(self.root)
+
 
 
 if __name__ == "__main__":
