@@ -42,7 +42,7 @@ class ExamArchiveContract(unittest.TestCase):
             if not exam:
                 continue
             body = (ROOT / page["source"]).read_text("utf8")
-            headings = [int(n) for n in re.findall(r"(?m)^## 第\\s*(\\d+)\\s*題", body)]
+            headings = [int(n) for n in re.findall(r"(?m)^## 第\s*(\d+)\s*題", body)]
             self.assertCountEqual(headings, exam["question_numbers"],
                                   "Broken #q-N reader anchors: " + page["source"])
 
