@@ -84,6 +84,16 @@ def figure_versions(body: str) -> dict[str, str]:
     return result
 
 
+# Figures with known, screen-reviewed mobile regressions. A future shared CSS or
+# renderer edit must not silently break them while historic unreviewed debt
+# remains separately inventoried. Extend only after inspecting real screenshots.
+RESPONSIVE_SENTINELS = {
+    "xiaoma-reading-diuretics-visual": ["loop-dose-response"],
+    "xiaoma-20261023-acid-base": ["same-ph-figure"],
+    "xiaoma-reading-preexcited-af": ["af-two-exits"],
+}
+
+
 def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> dict:
     """Run blocking render tests on newly published or changed figure markup.
 
@@ -113,6 +123,9 @@ def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> 
         source = source_by_slug[slug]
         current = figure_versions((root / source).read_text(encoding="utf-8"))
         selected_ids = set()
+        if {"site/styles.css", "site/build.py"} & changed_names:
+            selected_ids.update(fid for fid in RESPONSIVE_SENTINELS.get(slug, [])
+                                if fid in current)
         if catalog_changed and (source, page_path) not in old_public:
             selected_ids.update(current)
         if assets:
