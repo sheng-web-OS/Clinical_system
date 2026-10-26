@@ -34,14 +34,14 @@ def extract_figures(text: str) -> list[dict]:
         markup = m.group(0)
         name = ID.search(markup.split(">", 1)[0])
         figure_id = name.group(1) if name else f"__unnamed_{i:02d}"
-        images = re.findall(r"<img\\b[^>]*>", markup, re.I)
-        svgs = re.findall(r"<svg\\b[^>]*>", markup, re.I)
+        images = re.findall(r"<img\b[^>]*>", markup, re.I)
+        svgs = re.findall(r"<svg\b[^>]*>", markup, re.I)
         kind = ("embedded_image" if images else "svg" if svgs else "html_css")
-        image_sources = all(re.search(r"""\\bsrc\\s*=\\s*["']\\S+["']""", tag, re.I) for tag in images)
-        image_descriptions = all(re.search(r"""\\balt\\s*=\\s*["'][^"']+["']""", tag, re.I) for tag in images)
+        image_sources = all(re.search(r"""\bsrc\s*=\s*["']\S+["']""", tag, re.I) for tag in images)
+        image_descriptions = all(re.search(r"""\balt\s*=\s*["'][^"']+["']""", tag, re.I) for tag in images)
         svg_named = bool(svgs) and all(
-            re.search(r"""\\baria-(?:label|labelledby)\\s*=\\s*["'][^"']+["']""", tag, re.I)
-            or re.search(r"<title\\b[^>]*>[^<]+</title>", markup, re.I)
+            re.search(r"""\baria-(?:label|labelledby)\s*=\s*["'][^"']+["']""", tag, re.I)
+            or re.search(r"<title\b[^>]*>[^<]+</title>", markup, re.I)
             for tag in svgs
         )
         rows.append({
@@ -51,7 +51,7 @@ def extract_figures(text: str) -> list[dict]:
             "line": text.count("\n", 0, m.start()) + 1,
             "has_caption": bool(re.search(r"<figcaption\b", markup, re.I)),
             "has_alt": bool(re.search(r"<img\b[^>]*\balt\s*=", markup, re.I)),
-            "has_svg_label": bool(re.search(r"<svg\\b[^>]*(?:aria-label|aria-labelledby|role)\\s*=", markup, re.I)),
+            "has_svg_label": bool(re.search(r"<svg\b[^>]*(?:aria-label|aria-labelledby|role)\s*=", markup, re.I)),
             "images_have_source": image_sources,
             "images_described": image_descriptions,
             "svg_named": svg_named,
@@ -96,7 +96,7 @@ def screenshot_check(root: Path, raw: str, *, key: str | None = None,
     if not path.is_file() or path.stat().st_size < 120:
         return False
     header = path.open("rb").read(24)
-    if not (header.startswith(b"\\x89PNG\\r\\n\\x1a\\n") and header[12:16] == b"IHDR"):
+    if not (header.startswith(b"\x89PNG\r\n\x1a\n") and header[12:16] == b"IHDR"):
         return False
     width, height = struct.unpack(">II", header[16:24])
     if width < 120 or height < 64:
