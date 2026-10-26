@@ -4,7 +4,7 @@
 
 十八歲男性，八小時前開始腹痛，先在臍周圍，逐漸移往右下腹；伴噁心、食慾下降，沒有發燒。檢查見右下腹壓痛、無反彈痛，腰大肌徵象（psoas sign）陽性。題目沒有問哪一個資訊「最像闌尾炎」，而是問 A 腰大肌徵象、B 疼痛移轉、C 右下腹痛、D 發燒，哪一項**敏感度最高**。官方答案為 **C 右下腹痛（RLQ pain）**。
 
-## 第一個分界：從症狀定位，不能直接跳到診斷排除
+## 第 78 題：從症狀定位，不能直接跳到診斷排除
 
 急性闌尾炎常以腔內阻塞、闌尾壁發炎及周圍腹膜反應的過程來理解。早期的內臟痛（visceral pain）定位模糊，可能感到臍周疼痛；隨著發炎刺激到體壁腹膜（parietal peritoneum），疼痛更容易定位於右下腹。這能解釋**典型的 migration of pain**，但不是每位病人都必然走完的固定自然史。闌尾的位置、病程時間、年齡與個人體徵反應都會改變所見。
 
@@ -37,6 +37,16 @@
 有一項題目設計上的細節值得留心：原題病人的 **RLQ tenderness（右下腹壓痛）** 與選項的 **RLQ pain（右下腹痛）** 不是完全相同的診斷變項。一個是體檢者施壓誘發疼痛，一個是病人主訴的疼痛位置。原題問的是選項所列的症狀／徵象敏感度，不能偷偷把兩個變項當成同一項研究測量結果來套精確數字。因此，在沒有指定研究族群與定義時，不應給出一個看似適用於所有成人、兒童、孕婦的固定百分比。
 
 此處還有**頻率與時序**的問題。這位病人只痛了八小時；沒有發燒或反彈痛，不能證明沒有腹膜發炎，也不能保證不會進展。反過來說，單有 RLQ pain 也可能來自腸炎、泌尿結石、腸系膜淋巴結炎及其他右下腹病變。若病人是有生育可能的女性，異位妊娠與婦科急症更必須列入初始安全評估。症狀本身不帶疾病專屬性。
+
+<figure class="diuretic-figure" id="appendicitis-sensitivity-evidence">
+<div class="diuretic-figure-head"><span>FIGURE 01 · DIAGNOSTIC REASONING</span><strong>常出現，不代表足以確診；少出現，也不代表沒有用</strong></div>
+<div class="diuretic-steps">
+<div class="diuretic-step"><span>1</span><div><strong>右下腹痛：較多闌尾炎病人有，偏向敏感度</strong><p>同樣可以由泌尿或腸道等非闌尾原因引起，不足以直接確診</p></div></div>
+<div class="diuretic-step"><span>2</span><div><strong>轉移痛、腰大肌徵象：臨床線索可能較有特徵性</strong><p>但並非每個闌尾位置、每個病程都有，缺少不能用來排除</p></div></div>
+<div class="diuretic-step"><span>3</span><div><strong>是否檢查或手術：回到整體可能性與危險徵象</strong><p>結合病程、理學檢查、適用的風險工具與影像；不要將四選一排序當成臨床診斷規則</p></div></div>
+</div>
+<figcaption>參考 Andersson 2004 闌尾炎臨床診斷統合分析及 2025 edition WSES Jerusalem Guidelines 的原創教學圖；非原研究圖表重製，沒有將特定研究群體的敏感度或 LR 數字無條件外推至本題病人。</figcaption>
+</figure>
 
 ## 真正走到急診決策，這題還差什麼？
 
