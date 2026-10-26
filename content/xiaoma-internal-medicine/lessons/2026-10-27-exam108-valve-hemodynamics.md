@@ -58,6 +58,34 @@ Marfan 的因果鏈是**主動脈根部結構異常 → 瓣葉對合失準 → A
 
 **結論：壓力是沿著血流的阻力與順應性分布的，不能用單一心臟腔室數字替代整條循環。** Q4 的四個選項從表面上講四種不同疾病，實際是在測試能否把壓力障礙、聽診訊號與藥物介入放到正確位置。
 
+## 06｜把瓣膜狹窄還原成「壓差 × 流量 × 時間」，理解為何相同面積不一定相同症狀
+
+**壓差不是病名，流量也不是壓差。** 跨瓣膜壓力梯度受瓣口有效面積、流量與血液通過該瓣膜的時間影響。用定性關係理解：在固定瓣口狹窄下，流量增加或可用通過時間縮短，往往需要更高的瞬時壓差才能輸送血液。
+
+Mitral stenosis 病人若出現 atrial fibrillation with rapid ventricular response，**舒張期縮短**，相同時間需要較快將血液由 LA 送往 LV，mean transmitral gradient 可能增加；失去 atrial contraction 同時可損害部分病人的 LV filling。若只看 echo 報告的瓣膜面積而不看 HR、流量、rhythm、肺靜脈壓，就可能誤判為結構突然惡化。心房壓力上升傳到肺靜脈側，使病人今天喘得更厲害，**但這仍不要求 LVEDP 一定同步變高**。
+
+壓力梯度的簡化 Bernoulli 關係 \(\Delta P \approx 4v^2\)（速度 m/s、壓差 mmHg）可以說明**速度增加對梯度是平方效應**，但不能不區分測量位置、流速與原本流道動態，就把整個 clinical severity 換算成一條公式。在 MS，Doppler mean transmitral gradient 依心率與血流情境解釋；在 AS，mean gradient 與 valve area／stroke volume 也必須整合。低流量、低梯度的嚴重 AS 便是「梯度不高並不一定不嚴重」的反例。
+
+## 07｜直接讀壓力曲線：PCWP、LA pressure、LVEDP 三者不能同義
+
+**Pulmonary capillary wedge pressure（PCWP）** 多在適當測量條件下近似反映左心房壓力，而不是無條件等同 LVEDP；特別是顯著 MS、MR with large v waves 或不正確測量條件時，近似關係會出問題。
+
+- **MS**：舒張期 LA pressure 高於 LV pressure，存在顯著 transmitral gradient。若因 MS 使 wedge pressure 高，不可直接宣稱 LVEDP 一樣高。
+- **Severe MR**：收縮期 LA 接收異常的逆流量，可能看到明顯 **v wave**。但 large v wave 並非 MR 的充分且必要條件；LA compliance、容量與其他因素也會改變波形。
+- **Restrictive / stiff LV**：LV diastolic pressure 增加可能傳向 LA 與肺靜脈；這是心室順應性問題，與原題 MS 的固定瓣口阻力必須鑑別。
+- **Aortic regurgitation**：主動脈在舒張期向 LV 逆流，急性嚴重 AR 時 LV 在短時間承受額外 volume，可能快速增加 LVEDP。若發生急性嚴重 AR，可合併前向心輸出下降及低血壓，但不能以這一個數值直接定義全部病因。
+
+**What changed?** 同樣是肺水腫，可能上游左心房被狹窄瓣膜阻擋，也可能 LV filling pressure 透過左心房傳回，也可能是急性收縮期逆流造成 LA v wave。**What did not change?** 肺毛細血管對壓力負荷的反應可以相似。真正的診斷是阻力與壓差的來源不同，而不是病人喘的名稱不同。
+
+## 08｜「用不用 vasodilator」的實際門檻是灌流與可逆的血行動力學，不是瓣膜病名
+
+若 severe acute MR 病人有 pulmonary edema 但尚能維持灌流，降低 arterial afterload 有可能降低 LV→LA 的反向分流比例並改善 forward output；但若是 papillary muscle rupture 造成結構失效，根本治療通常需要緊急多專科評估與介入，不能靠藥物彌補斷裂的機械結構。
+
+若 acute severe AR 病人同時低血壓、冠灌流不足，雖然概念上降低 systemic resistance 可以改善前向血流，實際卻可能進一步讓 MAP 降到無法維持器官灌流。這時不能從教科書的 afterload 方程式直接輸出固定藥物醫囑。血管擴張劑是**依病人循環條件暫時選用的工具**，不是「所有 AR/MR 應用」或「所有 AR/MR 禁用」的鐵律。
+
+以上是原題 C 為何不成立的**雙重反例**：有些急性逆流確有短期降低 afterload 的角色，所以「不應使用」太絕對；另一些急性逆流又因休克而不能任意降低 afterload，所以「用 vasodilator 代替手術」同樣不成立。
+
+
 ## 對照與來源
 
 - [考選部原卷、標準答案、更正公告](../exam108-integrated-batch6-sources.md)：108（一）醫學（三）Q4，官方 A。
