@@ -59,12 +59,29 @@ ASH 2026 的 AL amyloidosis 診斷指引強調：若臨床確實懷疑 AL，seru
 
 ## Q3｜反例應如何推翻過度簡化的 ALP 機轉？
 
-已發表的 hepatic amyloidosis 報告中，存在肝腫大顯著、組織沉積廣泛但常規 liver chemistries 仍可接近正常的反例。[3] 這個反例不是證明「amyloid 不影響 ALP」，而是反駁「ALP 的絕對數值可直接量化肝內浸潤占據的百分比」。
+2020 年 Doe-Williams 等人的**真實病例**提供了一個極具反證力的觀察：50 歲男性因肝腫大、右上腹脹滿及體重減輕接受評估，另有 nephrotic-range proteinuria。肝切片中約 **95% 的受檢組織**有 AL amyloid 沉積（**不是量得整個肝臟的 95%**）；同次血液檢驗卻是 **ALP 85 IU/L、ALT 14 IU/L、AST 24 IU/L、total bilirubin 0.57 mg/dL**，沒有對應的明顯肝臟生化異常。Urine immunofixation 偵測到 monoclonal free lambda light chain，serum immunofixation 當時未偵測到 monoclonal protein，最後由組織染色與 typing 支持診斷。[3]
+
+<figure id="fig-alp-amyloid-real-case" class="reasoning-figure">
+<div class="reasoning-title">真實病例圖｜肝切片浸潤很廣，為何 ALP 仍可能正常？</div>
+<div class="reasoning-cards">
+<section><strong>組織層：切片約 95%</strong><p>amyloid 佔據的是這份 liver biopsy specimen 的範圍；它不是整顆肝臟的直接體積量測。</p></section>
+<section><strong>血液層：ALP 85 IU/L</strong><p>同期 ALT 14、AST 24、bilirubin 0.57；當次化學訊號沒有按切片浸潤面積成比例上升。</p></section>
+</div>
+<figcaption>據 Doe-Williams et al., <em>Case Reports in Gastroenterology</em> 2020;14:271–278（PMID 32518538）的真實病例數據重新整理，非原文影像複製。此為單一反例，不能用來估計 ALP 對 amyloidosis 的敏感度，也不能推定其他浸潤性疾病均有正常 ALP。<a href="../liver-gi-source-review-20261027.md#infiltrative">來源與限制</a>。</figcaption>
+</figure>
+
+這個反例反駁的是「ALP 數值能線性反映浸潤負荷」，而不是「ALP 對 infiltrative disease 毫無意義」。組織病變可以造成生化變化；但受檢的組織面積、膽汁流動受影響程度、採血時間與合併病因並不等價。
 
 反過來，沒有大型肝腫塊時 ALP 也可能升高。兩個方向加在一起，才能看見 biochemical surrogate 與 microscopic pathological state 為何不能互相取代。
 
 最後保留一條安全界線：有感染、膽道阻塞、黃疸急速惡化或器官功能障礙時，不能因為正在追蹤 chronic infiltrative pattern 而放棄危急病因的處置。**辨認一個合理假說，不意味其他假說已經從病人的身上消失。**
-\n\n[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#infiltrative)\n\n---\n\n### 來源與驗收狀態
+
+
+[回讀原書圖表、指南與適用界線](../liver-gi-source-review-20261027.md#infiltrative)
+
+---
+
+### 來源與驗收狀態
 
 [1] [ACG abnormal liver chemistries guideline](https://gi.org/guideline/evaluation-of-abnormal-liver-chemistries/), ALP hepatic origin／PBC／PSC／infiltrative differential.  
 [2] [ASH 2026 diagnosis of light-chain amyloidosis](https://pmc.ncbi.nlm.nih.gov/articles/PMC13425172/), recommendations and good practice statements for immunofixation and sFLC.  
