@@ -1,68 +1,97 @@
-# 同樣有 accessory pathway，為什麼 adenosine 一次是治療，一次可能致命？
+# Pre-excited AF：AV node 原本可以阻斷，為什麼現在卻不能？
 
-**小麻閱讀整合稿｜第二篇：Pre-excited AF（2026-10-26）**
+*小麻閱讀（9E）｜心律急症系列 02／03：從真實 ECG 重新看傳導機轉。*
 
-[前篇：同一條旁路為什麼有時窄、有時寬？](2026-10-26-wpw-conduction-mechanism.md)
+**系列閱讀：[01｜WPW：心室如何被啟動？](2026-10-26-wpw-conduction-mechanism.md) → 本篇「AF 的旁路風險」 → [03｜WCT／ACLS：如何在不確定中處置？](2026-10-26-wct-acls-decision.md)**
 
-## 一個真實病例，迫使我們重新解釋「心跳太快」
+上一篇說明了 accessory pathway（AP）如何在 orthodromic AVRT 擔任回程、在 antidromic AVRT 擔任去程。兩者都在問：**哪一段傳導維持了同一個 reentry circuit？**
 
-2018 年刊載的 *Atrial Fibrillation in a Patient With an Accessory Pathway* 記錄一位 **24 歲男性**，反覆短暫心悸，這次因心悸、胸痛、呼吸不適及快昏倒感就醫。救護車 ECG 已有 **irregular wide-complex tachycardia**，不同 QRS 的寬度不一；有些心室搏動約 150–200/min，較寬的搏動可達 **300/min**。在急診初期，他仍清醒、收縮壓約 130 mmHg。
+但是當心房本身進入 atrial fibrillation（AF），這個問題就失去了原本的前提。AF 不是一條房室 reentry 往返的固定電路，而是大量快速且不規則的心房電活動；此時 AP 即使不是維持 AF 的一環，仍可能變成讓心室陷入危險的入口。
 
-這組數據有三個不能混成同一句「病人還穩定」的問題：他當下的灌流是否已經失敗？QRS 寬的來源是什麼？以及即使此刻血壓尚可，哪條傳導路徑正在允許心室以極高頻率被啟動？
+2018 年的一篇真實病例，正好將這個差異顯示在連續四個 ECG 畫面中。這次先不從 WPW 病名開始，而從醫師當時看得到、也看不到的訊號開始。
 
-原病例初期曾被當成 VT，使用兩次 IV amiodarone 150 mg 後未能終止節律；接著接受 synchronized cardioversion。**這是病例的實際經過，不是值得照做的建議。** 轉律後的 sinus ECG 才看出 delta wave 與 ventricular pre-excitation；後續心臟電生理檢查找到 **right posteroseptal accessory pathway**，並完成消融。<https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/>
+## 第一張 ECG：還看不到 delta wave，為什麼已經不能按照一般 AF 處理？
 
-這個病例讓診斷順序顛倒：先看到的是令人困惑的 WCT，後來才透過轉律後 ECG 發現解釋它的旁路。**等待確認 WPW pattern 才想到 pre-excited AF，可能已經太晚。**
+2018 年，Silverman 等人發表一位 **24 歲男性**的病例。病人過去有陣發性心悸，這次因突然心悸、胸痛、呼吸不適與幾乎昏厥的感覺求診。救護車節律條（原文 **Figure 1-A1**）看到的是 **irregular wide-complex tachycardia**，心室搏動可快至約 **300/min**；部分 QRS 起始有模糊斜坡。
 
-## AF 不是「另一種方向的 AVRT」
+先看真正拿得到的第一層資訊：**RR 間距不規則，QRS 寬度與形態不完全一致，且存在非常短的心室週期。** 這使單一規則 monomorphic VT 的假說不足以解釋所有現象，但仍不能直接宣布「一定是 WPW」。AF with bundle branch aberrancy、pre-excited AF、某些不規則或 polymorphic ventricular rhythms，仍須比較。
 
-前篇的 orthodromic 與 antidromic AVRT 都是 reentry circuit：單一波前沿著兩條途徑循環，AV node 或旁路是否為迴路的必要一段，決定了切斷某段能否終止 tachycardia。
+第二張 ECG（急診十二導程，原文 **Figure 1-A2**）提供關鍵差異：在很快且不規則的寬 QRS 之間，還看得到部分相對窄、形態較接近正常的 QRS；某些寬 QRS 特別在 lateral leads 有 slurred upstroke，而窄 QRS 沒有同樣特徵。
 
-**Pre-excited AF 的組織方式不同。** AF 是心房的多個快速、不規則波前；心室的危險不來自一條心房—心室的大型循環迴路，而來自這些不規則訊號能否透過 accessory pathway **快速順向下傳**到心室。
+這個差異比「QRS 寬」本身更有資訊量。若不同搏動分別由正常 AV node–His–Purkinje 傳導、AP 預激，以及兩條路徑的 fusion 所形成，**同一位病人便可能在同一次 AF 中出現不同程度的 ventricular pre-excitation**。它把 pre-excited AF 的可能性明顯提高，但表面 ECG 尚不能用來精確定位 AP，也不能憑一個寬搏動完成所有鑑別。
 
-正常 AV node 具有較慢、decremental 的傳導特性，會限制許多快速心房訊號進入心室。若同時有順傳能力強、effective refractory period 很短的 accessory pathway，心房的快速訊號便有了繞過 AV node 的路。某些搏動走正常傳導、某些走旁路，還有些兩路融合，因此病人的 ECG 可能呈現 **irregularly irregular RR、極快 ventricular rate，以及寬度和型態變動的 QRS**；但不應把這些描述誤當成百分之百的鑑別診斷。
+<figure class="diuretic-figure" id="af-ecg-evidence" role="group" aria-label="Silverman 2018 真實病例原圖的循序導讀">
+<div class="diuretic-figure-head"><span>FIGURE 02 · REAL CASE / ECG EVIDENCE</span><strong>同一位病人的四個 ECG 時點，分別提供什麼資訊？</strong></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px">
+<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 1-A1｜救護車節律條</strong><p>很快、RR 不規則，QRS 寬度變動；先排除「單看寬 QRS 就是 VT」的直覺。</p><small>直接觀察：可達 300/min；某些 QRS upstroke 鈍化。</small></div>
+<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 1-A2｜急診十二導程</strong><p>同時有寬與相對窄的 QRS；旁路順傳與正常傳導／fusion 成為有力假說。</p><small>仍不能：由此推算出 AP 的解剖位置。</small></div>
+<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 2｜同步電復律之後</strong><p>Sinus ECG 才顯示明顯 delta wave，支持 manifest ventricular pre-excitation。</p><small>此時是後驗支持，不能當成急救時必先看到的線索。</small></div>
+<div style="background:#f4f8f7;border:1px solid #d5e2de;border-radius:12px;padding:14px"><strong>Figure 3｜次日 AP 消融之後</strong><p>Delta wave 消失；電生理定位及消融回應補上機轉證據。</p><small>T-wave memory 不能單獨替代消融成功的完整判定。</small></div>
+</div>
+<figcaption><strong>圖 2｜這是對真實病例原始四幅 ECG 的證據角色導讀，不是虛構 ECG 或原圖的重畫。</strong> 依 Silverman et al., 2018, *J Investig Med High Impact Case Rep*, [原始公開全文及 Figure 1–3](https://journals.sagepub.com/doi/10.1177/2324709618802870)、[原文 PDF 第 2–3 頁可放大閱讀 ECG](https://journals.sagepub.com/doi/pdf/10.1177/2324709618802870)。原論文為 CC BY 4.0；此版沒有裁切／重新嵌入原像素，閱讀原始 ECG 請循來源連結。</figcaption>
+</figure>
 
-這個區別很關鍵：**antidromic AVRT 中旁路是 reentry circuit 的必要路段；pre-excited AF 中旁路即使不是 AF 的維持迴路，仍可能是危險的心室入口。** 一條旁路是否屬於維持節律的必要組件，與它是否能危險地傳導到心室，是兩個不同問題。
+此處最值得注意的是時間順序。急診初期他仍清醒，systolic BP 約 **130 mmHg**、四肢灌流良好；但這只能描述當時尚可承受的循環，不代表 **300/min 左右的 ventricular activation** 沒有危險。相反地，這正是必須在血壓還沒有崩潰以前辨認 pre-excitation 風險的時候。
 
-## 為什麼 AV node 本來是可以阻斷的，現在卻不能？
+## 為什麼 AF 不是 antidromic AVRT 的另一種名稱？
 
-在 stable、regular narrow orthodromic AVRT，短暫阻斷 AV node 可以切斷維持循環的必要環節，這是 adenosine 的治療理由。
+第一篇的 AVRT 有一個可被中斷的循環：AV node 下行、AP 回程，或反過來。切斷必要的一段，就可能終止 reentry。
 
-但在 **pre-excited AF**，阻斷 AV node 不會消除 AF 產生的不規則心房訊號，也不一定讓 accessory pathway 停止傳導。相反地，正常 AV nodal 路徑對心室的傳導貢獻被抑制，許多心房衝動仍可經旁路下傳；加上部分藥物的其他電生理作用，心室頻率可能進一步增加，最危險的後果是退化為 ventricular fibrillation。
+這次不同。AF 的多個不規則心房衝動已經存在；心室只是在問「這些衝動中有多少可以通過？」AV node 的 decremental conduction 與 refractory properties 讓部分非常快速的心房訊號無法一路下傳。可順傳的 AP 不一定有同等的限速能力，若其 antegrade refractory period 短，便可讓部分 AF impulses 直接進入心室。
 
-因此 2023 ACC/AHA/ACCP/HRS AF 指引把 **adenosine、β-blockers、verapamil、diltiazem、digoxin、IV amiodarone（指引藥物禁忌列表使用 amiodarone）** 列為 pre-excited AF 的 **Class III: Harm**；它不是在宣布所有有 WPW pattern 的人終生不能碰任何 AV nodal drug，而是在指出**此刻 AF 已經能順向經旁路下傳**的致命情境。此處不要從一般 AF with RVR 的 rate control 分支照抄藥物。<https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/>
+所以 pre-excited AF 的 AP **是傳導入口，不必是維持 AF 的迴路組件**。把它誤認成 antidromic AVRT，會把規則 reentry 的藥物邏輯套進一個不規則、快速的 atrial source。這正是危險起點。
 
-這也是為何「Adenosine 對 regular WCT 可以試」不能延伸到 **irregularly irregular WCT**：前者是 2025 AHA 在 stable、regular、monomorphic 的有限條件下 **may be considered**；後者屬於不得使用的風險邊界。藥物本身沒有變，變的是被你阻斷的通道，在這個節律中究竟扮演哪種角色。
+<figure class="diuretic-figure" id="af-two-exits" role="group" aria-label="AF 訊號分別經 AV node 和 AP 抵達心室的原創機轉圖">
+<div class="diuretic-figure-head"><span>FIGURE 03 · WHY NODAL BLOCK CAN HARM</span><strong>心房訊號仍在，阻斷 AV node 並不代表封住所有通往心室的路</strong></div>
+<div role="region" aria-label="AF 雙通道機轉圖，行動版可橫向捲動" tabindex="0" style="max-width:100%;overflow-x:auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 270" width="780" height="270" role="img" aria-labelledby="afpath-title afpath-desc">
+<title id="afpath-title">AF 經 AV node 與 accessory pathway 雙路徑順傳</title>
+<desc id="afpath-desc">上方代表大量快速、不規則的心房訊號；左側經 AV node 時部分衝動被篩選；右側若旁路有效不應期短，仍可能大量順傳至心室。阻斷 AV node 不能移除右側旁路。這是機轉示意，不代表所有 AP 都具有高危順傳能力。</desc>
+<rect width="780" height="270" rx="14" fill="#f8fbfa"/>
+<rect x="195" y="22" width="385" height="55" rx="12" fill="#f5e7e1" stroke="#bc693e"/>
+<text x="388" y="44" text-anchor="middle" fill="#793e2a" font-size="18" font-weight="bold">AF：快速、不規則的心房衝動</text>
+<text x="388" y="63" text-anchor="middle" fill="#793e2a" font-size="13">並非一條固定的 AVRT 迴路</text>
+<path d="M300 77 L217 129" stroke="#147b9a" stroke-width="5" fill="none"/><path d="M483 77 L569 129" stroke="#bc693e" stroke-width="5" fill="none"/>
+<rect x="88" y="131" width="260" height="63" rx="10" fill="#e4f1f5" stroke="#147b9a"/>
+<rect x="440" y="131" width="260" height="63" rx="10" fill="#fae9df" stroke="#bc693e"/>
+<text x="218" y="154" fill="#164f68" font-size="18" text-anchor="middle" font-weight="bold">AV node</text>
+<text x="218" y="176" fill="#164f68" font-size="14" text-anchor="middle">decremental／限速</text>
+<text x="570" y="154" fill="#934824" font-size="18" text-anchor="middle" font-weight="bold">Accessory pathway</text>
+<text x="570" y="176" fill="#934824" font-size="14" text-anchor="middle">若順傳很快，風險增加</text>
+<path d="M218 195 L218 223" stroke="#147b9a" stroke-width="3"/><path d="M570 195 L570 223" stroke="#bc693e" stroke-width="5"/>
+<rect x="196" y="224" width="390" height="36" rx="11" fill="#e5efeb" stroke="#75998e"/>
+<text x="390" y="247" text-anchor="middle" font-size="17" font-weight="bold" fill="#264f45">Ventricle：同時承受兩路的傳導結果</text>
+</svg>
+</div>
+<figcaption><strong>圖 3｜示意，不是 ECG。</strong> 有些 AF impulses 經 AV node，有些經 AP，有些產生 fusion；圖中不假設兩條路每次皆能傳導。危險來自具高順傳能力的 AP，並非所有 WPW pattern 均等風險。</figcaption>
+</figure>
 
-## 危險與否，只看當下心室率夠不夠快嗎？
+## Adenosine 為什麼從「切斷迴路」變成「不能使用」？
 
-在 pre-excited AF，shortest pre-excited RR interval（SPERRI）是在 AF 過程中，兩個確認經旁路預激的相鄰心室搏動間最短的 RR interval。**SPERRI ≤250 ms** 是旁路可快速順傳與較高 VF／猝死風險的重要 EP 指標之一。它關注的不是平均心率，而是 **當大量心房訊號出現時，這條旁路最短可多快再次把訊號送到心室**。
+在 stable、regular orthodromic AVRT，AV node 是 reentry 必需的路，短暫 AV nodal block 可能將 tachycardia 停止。這是[第一篇](2026-10-26-wpw-conduction-mechanism.md)的治療原理。
 
-SPERRI 不是看到一張不規則 ECG 就任選最短 RR 直接量，也不是單一門檻能決定所有病人的預後。是否為 pre-excited complexes、檢查條件、誘發狀態、其他 pathway 特徵，均影響解釋。2023 AF guideline 另指出 antegrade accessory-pathway refractory period <250 ms 亦與較高風險相關；它和 SPERRI 是相關但不同的量測，不可混用。
+但在 **pre-excited AF**，即使你阻斷 AV node，快速不規則的心房活動仍持續，具順傳能力的 AP 也仍存在。部分 AV-nodal-blocking drugs 還可能有加速旁路傳導的其他效果。因此無法保證 ventricular rate 下降，反而可能增加透過 AP 的快速下傳與 **ventricular fibrillation（VF）** 的風險。
 
-回到前述 24 歲病人，急診收縮壓暫時正常，只表示當時尚有血流動力學儲備，不能否定已發生極快旁路傳導。醫療團隊之後找到並消融那條旁路，不只是在減少症狀性心悸，也是移除未來可能發生的高危心室入口。
+所以 2023 ACC/AHA/ACCP/HRS AF 指引 §10.6 對 **AF with anterograde AP conduction** 明列 **adenosine、β-blockers、diltiazem、verapamil、digoxin、amiodarone** 均為 **Class III: Harm**。這是**當下節律的禁忌**，不是說一位曾經有 WPW pattern 的病人，不論任何情境都不能給 adenosine。[原始 AF 指引 §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)
 
-## 實際急救，第一個選擇是什麼？
+對確實 **hemodynamically stable** 的 pre-excited AF，指南提供 **IV procainamide 或 IV ibutilide** 作為 elective electrical cardioversion 的替代方案，並須監測 QT、血壓、心室功能及藥物禁忌；若已因 pre-excited AF 發生 hemodynamic instability，應 **立即 synchronized electrical cardioversion**，不得等藥物完成試驗。**在持續性 polymorphic VT／VF，電擊類型不同，須走 immediate unsynchronized shock／arrest protocol**；這個差異在第三篇完整連結回 ACLS。
 
-必須先判斷 **AF／tachyarrhythmia 是否正在造成血流動力學不穩定**。若 hemodynamically unstable 的 pre-excited AF，依 2023 AF 指引應 **立即 synchronized electrical cardioversion**，不能等確認 pathway 的解剖位置或完成藥物試探。若電擊的同步標記不可靠，必須遵循現場復甦規範處理，不能因追求同步而延誤救命電擊。
+## ECG 很快，究竟快到什麼程度，才暗示旁路有危險？
 
-若病人確實穩定且可持續監測，**IV procainamide 或 IV ibutilide** 是 2023 指引建議的轉律選項，也可考慮 elective electrical cardioversion；藥物仍須依 QT、心室功能、低血壓、藥物交互作用及院內資源審核，不能把「不屬 AV nodal blocker」誤解成可以不看禁忌任意給藥。
+平均心跳不是完整答案。Electrophysiology（EP）風險評估可利用 **shortest pre-excited RR interval（SPERRI）**：AF 期間兩個確認為 pre-excited 的心室搏動之間最短的 RR interval。若 **SPERRI ≤250 ms**，表示 AP 能容許相當快速的順傳，是重要高危線索之一；與之相關、但不相同的是 antegrade AP effective refractory period。兩者都不能當作「任何最短 RR 值」或單一猝死機率計算器。
 
-若節律其實是 **sustained polymorphic VT**，2025 AHA 指引要求**立即 unsynchronized high-energy shock**；若失去脈搏，則進入 VF/pulseless VT cardiac arrest 路徑。不要把「pre-excited AF／不規則 WCT」和「polymorphic VT」混成同一種同步設定。反過來，不能只因 pre-excited AF 的 QRS 看起來多形，就直接替它貼上 polymorphic VT 的病名。
+注意：本病例出現約 300/min 的瞬間快搏，是已記錄的速率描述；**原論文沒有提供可在本文獨立重算的正式 SPERRI**，因此不能自動把該病例標成「實測 SPERRI 為某數值」。臨床決策此刻也不能為了完成風險分級而等待 EP 測量。
 
-### 不同條件，怎樣改變決策？
+## 第三、四張 ECG：為什麼知道真正機轉，並不能倒過來當成當時用藥的理由？
 
-| 目前資訊 | 目前可採取的方向 | 最容易犯的錯 |
-|---|---|---|
-| Stable regular narrow AVRT，機轉支持 AV-node-dependent | 監測下 vagal／adenosine | 因「有 WPW」就一概斷言禁用 |
-| Stable irregular WCT，懷疑 pre-excited AF | 避免 AV nodal blockers；專科評估 procainamide／ibutilide 或電復律 | 直接套用一般 AF RVR rate control |
-| Unstable pre-excited AF | 立即 synchronized cardioversion | 等完整 WPW 診斷才處置 |
-| Sustained polymorphic VT 或 VF/pulseless VT | 立即 defibrillation 與對應復甦路徑 | 把所有「wide-complex 且危險」都叫同步電擊 |
+原病例因為 WCT 一開始被解讀成 VT，曾給予 **IV amiodarone 150 mg 兩次**，未終止節律；後來接受 **100 J synchronized cardioversion**。這是 **2018 年實際發生的病程**，不是本篇推薦的急救順序；依 2023 AF 指引，**pre-excited AF 應避免 IV amiodarone**。
 
-所以，這篇不是要記住一張禁藥表，而是理解**為什麼 AV node 有時是維持 arrhythmia 的關鍵，有時卻是在替心室擋住過快的心房衝動**。同一個藥物選擇，會因為你正在處理的是 reentry circuit，還是大量快速心房訊號經旁路傳導，而出現相反的風險。
+轉律後 **Figure 2** 的 sinus ECG 顯示明顯 delta wave，支持 pre-excitation 存在。次日 EP study 辨認右後中隔 AP 並完成 ablation；**Figure 3** 的 delta wave 隨之消失。這些資料使「哪一條旁路」與「長期如何避免再次發生」得以回答，卻沒有改變急診當時應避免危險 AV nodal blockade 的理由。
 
-[下一篇：Wide QRS 還不知道是什麼，憑什麼治療？](2026-10-26-wct-acls-decision.md)
+這正是整組系列要建立的時間感：**急救當下不必已知道 AP 位於右後中隔，才能辨認這種不規則 WCT 不適合任意試 adenosine；但處理當下危險之後，仍必須追查機轉並決定 definitive ablation。**
 
----
+前兩篇已回答「電流經過哪一條路」與「AP 在不同節律扮演何種角色」。最後一篇把問題再放大一層：**當連節律診斷都還不知道時，ACLS 憑什麼要求立即行動？**
 
-**參考資料（原始來源與法律身分）**：[2018 Case report](https://pmc.ncbi.nlm.nih.gov/articles/PMC6166305/)（原文病例，非自編）；[2023 ACC/AHA AF §10.6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/)；[2025 AHA ALS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support)；Pocket Medicine 9E PDF 第 66–68 頁（私人目視核對，原圖不重製）。本篇為 AI integrative draft，不是作者歷史原稿或公開醫學審查完成版。
+[**接續 03｜WCT／ACLS：診斷未定時，治療需要先知道哪一些事？**](2026-10-26-wct-acls-decision.md)
+
+*病例與圖片來源：Silverman A, et al. *Atrial Fibrillation in a Patient With an Accessory Pathway*. 2018. [原始病例與 Figure 1–3](https://journals.sagepub.com/doi/10.1177/2324709618802870)，CC BY 4.0；[ESC 2019 SVT 指引](https://academic.oup.com/eurheartj/article/41/5/655/5556821)；[2023 ACC/AHA AF §10.6](https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017)。個案事實與依指南提出的今日建議已在文中分開。*
