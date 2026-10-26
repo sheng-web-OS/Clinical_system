@@ -78,7 +78,7 @@ def render_home(pages):
     <div class="library-atlas-copy"><p class="library-overline">CONNECT THE REASONING</p>
       <h2 id="atlas-heading">看見文章之間，<br>真正相連的問題。</h2>
       <p>例如，呼吸困難可能涉及肺泡換氣、心臟充盈、前向血流或組織供氧。先從症狀選擇一條生理分支，再依先備知識、病例推理與國考驗證找到下一篇；不用在兩份閱讀清單間來回。</p>
-      <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識脈絡 <span aria-hidden="true">↗</span></a>
+      <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識地圖 <span aria-hidden="true">↗</span></a>
     </div>
     <div class="library-atlas-steps" aria-label="知識建構路徑">
       <div><span>01 / OBSERVE</span><strong>現在看到了什麼？</strong><small>症狀、檢驗與影像各自提供哪些證據</small></div>
