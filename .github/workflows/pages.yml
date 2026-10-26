@@ -3,7 +3,9 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
+    # TEMPORARY: include feature base for one isolated intake-only smoke PR.
+    # Restore [main] immediately after recording the smoke run.
+    branches: [main, infra/ci-private-intake-isolation-20261027]
   workflow_dispatch:
 permissions:
   contents: read
