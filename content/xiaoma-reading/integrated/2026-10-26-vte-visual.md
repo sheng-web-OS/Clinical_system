@@ -15,7 +15,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 兩者共享同一組生成條件，卻不一定依序成為同一名病人的兩個階段。
 
 
-**解剖原圖定位。** [American Heart Association《What Is a Pulmonary Embolism?》第 1 頁](https://www.heart.org/-/media/Files/Health-Topics/Pulmonary-Embolism/What-is-a-PE.pdf) 直接畫出栓子經下腔靜脈、右心與肺動脈的可能路徑。圖中箭頭代表一種可能的栓塞過程，**不是所有 DVT 的必然病程**。原圖保留著作權，本站以來源連結供讀者放大閱讀。
+**解剖路徑要先想清楚：** 靜脈血栓可能從下肢或骨盆靜脈脫落，經下腔靜脈、右心進入肺動脈，造成 pulmonary embolism。這是其中一種可能的栓塞過程，**不是每一個 DVT 都必然演變成 PE**。未能確認可直接閱讀的原圖入口，這裡不放失效的圖片連結。
 
 這也解釋了第一個看似矛盾的地方：
 
@@ -58,7 +58,7 @@ DVT 與 PE 被共同稱為 VTE，是因為兩者共享同一組靜脈血栓生�
 
 小麻第九版的 DVT *modified Wells* 使用三層分組：**≤0 分為 low、1–2 分為 moderate、≥3 分為 high**；小麻 PE 圖採簡化兩層：**≤4 分為 unlikely、>4 分為 likely**。但下方引用的 NICE NG158 對 DVT 採用另一套**兩層**分法：**≤1 分為 unlikely、≥2 分為 likely**；PE 則仍以 **≤4／>4** 分層。這不是哪本書算錯，而是不同版本的臨床決策規則；**不能把小麻 DVT 的「1–2 分 moderate」直接套到 NICE 的 unlikely 分支**，也不能把原書附的觀察機率當成對每位病人都成立的固定百分比。
 
-**完整診斷演算法原圖。** [NICE NG158 官方診斷流程 PDF](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893) 分別呈現 suspected DVT（第 1 頁）與 suspected PE（第 2 頁）的 Wells → D-dimer／影像／停止條件。[如官方下載受限，可查核 Thrombosis UK 保存的 NICE 原流程 PDF](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。須同時閱讀原表與註腳；**本文的 Bayesian 圖用來示範陰性檢驗如何更新機率，不是完整的 DVT／PE 診斷演算法**。兩套 Wells 輸出的是疾病特異的 pretest probability，並非共同的住院 VTE prophylaxis 風險分數。[NICE 完整條文](https://www.nice.org.uk/guidance/ng158/chapter/recommendations)。
+**可開啟的原始診斷流程：** [NICE NG158 DVT／PE 診斷流程 PDF（由 Thrombosis UK 保存的三頁副本）](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)。**第 1 頁是 suspected DVT，第 2 頁是 suspected PE**，均保留 Wells、D-dimer、影像與停止分支及註腳。NICE 官網的直接 PDF 在部分環境會回傳 403，因此正文不再放該直連。**本文的 Bayesian 圖只示範陰性檢驗如何更新機率，不能代替完整診斷演算法**；兩套 Wells 都是疾病特異的 pretest probability，而非住院 thromboprophylaxis 風險分數。
 
 所以小麻需要兩張不同的 Wells score。
 
@@ -133,7 +133,7 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 </div>
 <p class="vte-bayes-reading"><strong>圖真正改變的判斷：</strong>陰性檢驗降低的是原本的 odds，不能將兩名起始機率差很多的病人變成同樣的殘餘風險；因此「陰性」不是獨立於 pretest probability 的停止條件。</p>
 </div>
-<figcaption>圖｜Bayes odds 定理的<strong>假設數值練習</strong>，非真實患者資料、非 DVT／PE 通用的 LR− 或臨床安全排除門檻；機率條為線性 0–100%（極低值以標籤判讀），不顯示或暗示固定停查閾值。真實檢驗性能受 assay、cutoff、病人族群及病程影響；實際 DVT／PE 應分別依 <a href="https://www.nice.org.uk/guidance/ng158/chapter/recommendations">NICE NG158 的適用流程</a> 決定能否停查，不對不穩定疑似 PE 延遲急救。</figcaption>
+<figcaption>圖｜Bayes odds 定理的<strong>假設數值練習</strong>，非真實患者資料、非 DVT／PE 通用的 LR− 或臨床安全排除門檻；機率條為線性 0–100%（極低值以標籤判讀），不顯示或暗示固定停查閾值。真實檢驗性能受 assay、cutoff、病人族群及病程影響；實際 DVT／PE 應分別依 <a href="https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf">NICE NG158 DVT／PE 原始診斷流程副本</a> 決定能否停查，不對不穩定疑似 PE 延遲急救。</figcaption>
 </figure>
 
 影像檢查真正完成的，也不是所有診斷不確定性，而是 DVT 與 PE 的解剖分流。
@@ -148,7 +148,7 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 血栓是否位於肺動脈？
 
-**真實影像直接核讀：** [An et al., *Journal of Korean Medical Science* 2022，Figure 5（原始四面板影像，可點開放大）](https://www.jkms.org/ViewImage.php?Type=F&afn=63_JKMS_37_10_e76&aid=732221&fn=jkms-37-e76-g005_0063JKMS&id=F5)。38 歲患者的右後基底肺段動脈 filling defect 由 CTPA（A、B）顯示；右側 popliteal DVT 由 indirect CT venography（C）與 color Doppler（D）顯示。**D 是彩色 Doppler，不能冒稱示範 compression ultrasound 的不可壓縮性。** 這是「不同部位需要不同解剖證據」的病例，不是 Wells／D-dimer 的停止流程，也不能推論每名 PE 病人都能找到下肢 DVT。原圖為 [CC BY-NC 4.0 非商業授權](https://creativecommons.org/licenses/by-nc/4.0/)；網站僅提供原站連結，不重製或熱連結圖片，以保留完整解析度與圖說。
+**影像的解剖目標不同：** CTPA 的重點是肺動脈內有無 filling defect；下肢 compression ultrasound 的重點是受檢深靜脈能否壓縮。這兩個檢查各自回答不同部位的診斷問題，不能以其中一項陰性或陽性直接代替另一項的所有判斷。
 
 但即使影像結果陰性，也仍須放回原本的 clinical probability、檢查範圍與影像品質解讀。
 
@@ -178,4 +178,4 @@ PE Wells 中的 clinical signs of DVT，尤其容易讓人混淆。
 
 ---
 
-[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站撤回原有三張錯誤示意圖；保留一張以相同 LR−、不同前測機率解釋陰性 D-dimer 殘餘風險的量化圖，並附 AHA 解剖機轉、NICE 原始演算法及 JKMS 真實影像的可放大來源入口。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
+[原始影像、授權、官方流程與診斷例外的來源](../vte-sources.md)。原書 PDF 第 97–100 頁已私下逐頁對讀，公開站撤回原有三張錯誤示意圖，保留以相同 LR−、不同前測機率說明陰性 D-dimer 殘餘風險的量化圖。原始診斷流程僅提供已確認可開啟的 NICE PDF 副本；AHA、JKMS 無法穩定直達的影像連結已撤除。[沿呼吸困難回看血栓假說](../../clinical-os/index.md#thrombosis)。
