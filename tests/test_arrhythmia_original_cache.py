@@ -58,5 +58,28 @@ class OriginalECGCache(unittest.TestCase):
         self.assertEqual((cache / self.filename).read_bytes(), self.image)
 
 
+    def test_immutable_original_is_accepted_only_with_exact_sha(self):
+        with patch.object(module, "original_figure", return_value=self.image) as network:
+            with patch.object(sys, "argv", ["fetch_arrhythmia_figures.py", str(self.root / "dist")]):
+                module.main()
+        self.assertEqual(network.call_count, 1)
+        self.assertEqual(network.call_args.args[0],
+                         module.VERIFIED_DEPLOYMENT_ASSETS + self.filename)
+        self.assertEqual((self.root / "dist/assets" / self.filename).read_bytes(), self.image)
+
+    def test_failed_prior_deployment_falls_back_to_pmc_only_after_validation(self):
+        corrupt = self.image[:-3] + b"XYZ"
+        calls = []
+        def get(uri):
+            calls.append(uri)
+            return self.image if uri == module.FIGURES[self.filename][0] else corrupt
+        with patch.object(module, "original_figure", side_effect=get):
+            with patch.object(sys, "argv", ["fetch_arrhythmia_figures.py", str(self.root / "dist")]):
+                module.main()
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(calls[-1], module.FIGURES[self.filename][0])
+        self.assertEqual((self.root / "dist/assets" / self.filename).read_bytes(), self.image)
+
+
 if __name__ == "__main__":
     unittest.main()

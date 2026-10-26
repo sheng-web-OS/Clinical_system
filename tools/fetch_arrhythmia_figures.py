@@ -17,6 +17,11 @@ import time
 PMCID = "6166305"
 DOI_FILE = "10.1177_2324709618802870"
 ORIGIN = "https://pmc.ncbi.nlm.nih.gov/articles/instance/" + PMCID + "/bin/"
+# Immutable successful Cloudflare Pages deployment containing ORIGINAL audited ECG bytes.
+# The source was bundled by our prior checksum-pinned build; this is a historical
+# artifact fallback for Cloudflare runners blocked by PMC anti-bot truncated output.
+# Keep hash+pixel+JPEG validation below; never accept a lookalike or a 21KB response.
+VERIFIED_DEPLOYMENT_ASSETS = "https://b4d47291.sheng-clinical-system.pages.dev/assets/"
 FIGURES = {
     "silverman-2018-fig1.jpg": (ORIGIN + DOI_FILE + "-fig1.jpg", (753, 536)),
     "silverman-2018-fig2.jpg": (ORIGIN + DOI_FILE + "-fig2.jpg", (753, 341)),
@@ -100,18 +105,24 @@ def main():
                 cached.unlink(missing_ok=True)
 
         errors = []
-        for attempt in range(3):
-            try:
-                image = original_figure(uri)
-                actual, digest = verified_original(image, filename, expected)
-                cached.write_bytes(image)
-                (destination / filename).write_bytes(image)
-                print(f"PASS {filename}: original ECG {actual[0]}x{actual[1]}, {len(image)} bytes, sha256={digest}",flush=True)
+        # The immutable, previously published, byte-audited originals come first.
+        # Direct PMC is a second chance; never bypass the hard-coded SHA-256 pins.
+        for origin in (VERIFIED_DEPLOYMENT_ASSETS + filename, uri):
+            for attempt in range(2):
+                try:
+                    image = original_figure(origin)
+                    actual, digest = verified_original(image, filename, expected)
+                    cached.write_bytes(image)
+                    (destination / filename).write_bytes(image)
+                    print(f"PASS {filename}: checksum-verified original ECG from {origin}; "
+                          f"{actual[0]}x{actual[1]}, {len(image)} bytes, sha256={digest}", flush=True)
+                    break
+                except Exception as exc:
+                    errors.append(f"{origin} attempt {attempt+1}: {type(exc).__name__}: {exc}")
+                    if attempt < 1:
+                        time.sleep(1)
+            if (destination / filename).is_file():
                 break
-            except Exception as exc:
-                errors.append(f"attempt {attempt+1}: {type(exc).__name__}: {exc}")
-                if attempt < 2:
-                    time.sleep(1)
         else:
             raise RuntimeError(
                 "Publication BLOCKED: actual ECG image unavailable: " + filename + "\n" +
