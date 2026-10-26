@@ -40,6 +40,21 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertIn("非病歷", mobile)
         self.assertIn("不需左右捲動", mobile)
 
+    def test_af_phone_flow_shows_two_antegrade_routes_and_conditional_risk(self):
+        af = (ROOT / "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md").read_text("utf-8")
+        body = figure(af, "af-two-exits")
+        self.assertIn('class="af-desktop-conduction"', body)
+        self.assertIn('class="af-mobile-conduction"', body)
+        self.assertIn('viewBox="0 0 360 550"', body)
+        for signal in ("AV node", "Accessory pathway", "decremental conduction",
+                       "僅當 AP 可順傳", "Ventricle", "AV nodal blocker",
+                       "極短 RR、VF 風險", "非所有 AP 都具高危性"):
+            self.assertIn(signal, body)
+        self.assertIn("非定量 ECG", body)
+        css = CSS.read_text("utf-8")
+        self.assertIn("#af-two-exits .af-desktop-conduction{display:none}", css)
+        self.assertIn("#af-two-exits .af-mobile-conduction{display:block", css)
+
     def test_phone_css_replaces_desktop_scroll_without_affecting_other_figures(self):
         css = CSS.read_text("utf-8")
         for fig in ("loop-dose-response", "same-ph-figure"):
