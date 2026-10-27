@@ -2,7 +2,7 @@
 
 此文件是新獨立候選的唯一驗收入口，承接 [PR #98](https://github.com/sheng-web-OS/Clinical_system/pull/98) 的 AI source/figure audit；**與 #66 Cholestasis 已發布版本及其餘兩篇不共享發布權限**。
 
-- **文章**：`content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md`，來源原稿 PR #98 blob `bae387fcbe7d37379d318e5631d6e5df32585fa2`；本分支文章 blob `c09e3c1b778a8a08a0761afe4438b554a493e27e`（後續變更需重核）。
+- **文章**：`content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md`，來源原稿 PR #98 blob `bae387fcbe7d37379d318e5631d6e5df32585fa2`；目前候選文章 blob `3cc264ca5902c20894eb1e2b8db35bfaf52bddd1`（前版 `c09e3c1b778a8a08a0761afe4438b554a493e27e`；此回合清理了讀者不需看到的內部編輯狀態）（後續變更需重核）。
 - **來源**：`content/xiaoma-reading/chronic-diarrhea-sources-20261027.md`，只含本篇醫學來源；不重製 Pocket 原書 pixels。
 - **P0 安全判斷 [PENDING OWNER]**：正常 colonoscopy 外觀或正常 calprotectin 不能排除 microscopic colitis；有適應症時需左右結腸 biopsies；alarm features 不等待 gap。
 - **P1 臨床推論 [PENDING OWNER]**：290−2(Na+K) 是估計值，不是實測 osmolality。10/60/130 為合成示例；50–100/125 灰區，不能由 cutoff 命名疾病。
@@ -17,3 +17,9 @@
 - Figures：PENDING；逐 ID ACCEPT／REQUEST CHANGES。
 - Whole manuscript：PENDING。
 - Merge / production deploy：NOT AUTHORIZED。
+
+
+## 2026-10-27｜發布候選前的讀者界面清理
+
+- **Agent 編輯稽核（非 owner medical approval）**：本輪將對讀者不具教學價值的 Draft/HOLD、原稿 canonical 與審稿流程說明，移至此 audit；正文和公開來源頁僅保留能追溯原始事實、適用條件與用藥／醫學推論的資訊。臨床 P0/P1 未因排版修訂自動接受。
+- 最新正式文章 blob：`3cc264ca5902c20894eb1e2b8db35bfaf52bddd1`；PR HEAD 此後若移動，需重新取檔案 blob。內部審查狀態仍為 **P0/P1/figure/whole manuscript PENDING，merge/deploy NOT AUTHORIZED**。
