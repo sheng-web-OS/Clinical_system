@@ -48,7 +48,7 @@
 <div><small>介入有無奏效</small><strong>排鈉、負平衡與實際症狀</strong><p>利尿劑劑量增加不保證排鈉改善，更不保證前向流量與腎灌流恢復。</p></div>
 </div>
 
-**建議順序：** [HF 四象限與臨床失衡](../xiaoma-reading/originals/2026-07-12-heart-failure.md) → [HF／LVEDP 圖解整合](../xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md) → [利尿反應與去鬱血](../xiaoma-reading/integrated/2026-10-22-diuretics-visual.md)。
+**建議順序：** [HF：從症候群走到急性失代償](../xiaoma-reading/integrated/2026-10-27-heart-failure-hemodynamics.md) → [LVEDP：肺鬱血的壓力究竟來自哪裡](../xiaoma-reading/integrated/2026-10-27-lvedp-pressure-volume.md) → [利尿反應與去鬱血](../xiaoma-reading/integrated/2026-10-22-diuretics-visual.md)。前篇界定 wet／cold、診斷、壓力重分布與休克急迫性；第二篇才區分 mean PAWP、LVEDP、LVEDV 與心包跨壁壓。原有[雙圖補充](../xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md)保留供對照，非第二份完整主線。
 
 **跨到心臟外科 ICU：** [CABG 後 lactate 14.8、ScvO₂ 95% 的實際病例](../xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md)承接「血壓／CI／EF 並非組織灌流」這個問題。先從 ABG 的酸鹼、lactate 的生成與清除、ScvO₂ 的採樣位置，走到 Hb × SaO₂ 所決定的 CaO₂ 與 CO × CaO₂ 所決定的 DO₂；再分流術後出血、心功能與血管張力等**尚待查證的原因**。出血或 tamponade 是必須優先辨認的危險鑑別，**不是該病例已證實的診斷**。若酸鹼資料彼此矛盾，接續[混合性酸鹼障礙](../xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md)。
 
@@ -151,7 +151,7 @@
 <div><small>準備醫師國考</small><strong>先答題，按缺口回讀</strong><p>用<a href="../xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md">二十題跨系統起點</a>找弱點，再到<a href="../xiaoma-internal-medicine/exams/index.md">依考試年度排列的正式詳解</a>驗證遷移能力；考試題號不由本地圖維護第二份清單。</p></div>
 </div>
 
-**一個新近完成的跨科橋接：** [HF 四象限](../xiaoma-reading/originals/2026-07-12-heart-failure.md)建立 congestion／perfusion → [LVEDP](../xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md)拆解 filling pressure → [氧合與運送](../xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md)區分 PaO₂、CaO₂ 與 DO₂ → [CABG 術後 ABG](../xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md)把抽象生理放回真實病人。這是**概念依賴路線**，不是四篇疾病依次惡化的自然史；後一篇不應將前一篇的個別病例數值拼接進來。
+**一個新近完成的跨科橋接：** [HF 整合](../xiaoma-reading/integrated/2026-10-27-heart-failure-hemodynamics.md)建立 congestion／perfusion → [LVEDP 整合](../xiaoma-reading/integrated/2026-10-27-lvedp-pressure-volume.md)拆解 filling pressure → [氧合與運送](../xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md)區分 PaO₂、CaO₂ 與 DO₂ → [CABG 術後 ABG](../xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md)把抽象生理放回真實病人。這是**概念依賴路線**，不是四篇疾病依次惡化的自然史；後一篇不應將前一篇的個別病例數值拼接進來。
 
 **完成一條路線的標準**，不是點過幾個連結，而是能說出：目前數據直接代表什麼、哪些機轉尚不能區分、下一項資訊可能如何改判，以及什麼情況不能再等。
 
