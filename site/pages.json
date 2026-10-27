@@ -2342,7 +2342,8 @@
         "concept_heading": "113-1 醫學（三）第 48 題｜Sepsis 合併酸中毒，第一個目標是把 pH 調正常嗎？",
         "focus": "官方第 48 題確實為 Sepsis／bicarbonate；與現有 acid-base 原題共用 canonical identity"
       }
-    ]
+    ],
+    "kind": "exam_compilation"
   },
   {
     "source": "content/clinical-os/sepsis-visual-evidence-and-sources.md",
@@ -2353,6 +2354,7 @@
     "layout": "reader",
     "date": "2026-10-27",
     "navigation": false,
-    "section": "參考資料"
+    "section": "參考資料",
+    "kind": "source_reference"
   }
 ]

@@ -22,9 +22,16 @@ def is_reference_page(row):
 
 def is_current_lesson(row):
     """Discovery eligibility is editorial, not implied by a publication date."""
+    collection = row.get("collection")
+    # Editorial articles in Clinical OS are genuine teaching readings too.
+    # Exam question compilations and provenance remain separate discovery paths.
+    eligible_collection = (collection == "xiaoma-internal-medicine"
+                           or (collection == "clinical-os"
+                               and row.get("kind") == "ai_integrated"))
     return (bool(row.get("date"))
-            and row.get("collection") == "xiaoma-internal-medicine"
+            and eligible_collection
             and row.get("kind") not in ("historical_original", "exam_compilation")
+            and "/exams/" not in row.get("source", "")
             and not row.get("exam")
             and not is_reference_page(row)
             and "練習" not in row.get("section", ""))
