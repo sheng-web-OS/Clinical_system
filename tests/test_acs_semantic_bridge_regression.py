@@ -77,5 +77,14 @@ class ACSSemanticBridgeRegressions(unittest.TestCase):
         self.assertIn("數日後", case)
 
 
+    def test_stemi_j_point_thresholds_and_non_exclusion_boundary(self):
+        """2025 ACC/AHA Table 3 / ESC 2023: sex-age-specific STE criteria are not a rule-out."""
+        section = self.body.split("## 三、ECG", 1)[1].split("## 四、Troponin", 1)[0]
+        for cue in ("J-point", "至少兩個相鄰導程", "≥2.5 mm", "≥2 mm",
+                    "≥1.5 mm", "≥1 mm", "LVH", "LBBB",
+                    "不能排除", "2025 ACC/AHA", "2023 ESC"):
+            self.assertIn(cue, section)
+        self.assertLess(section.index("J-point"), section.index("de Winter pattern"))
+
 if __name__ == "__main__":
     unittest.main()
