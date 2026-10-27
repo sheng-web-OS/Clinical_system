@@ -899,7 +899,7 @@
       "items": [
         {
           "locator": "IBCC Pericardial Tamponade, 2024, physiology and CVP versus pericardial pressure; ESC 2025 §11.8",
-          "source_token": "IBCC",
+          "source_token": "Pericardial tamponade",
           "mode": "illustrated",
           "anchor": "tamponade-mechanism",
           "caption_token": "IBCC 2024",
