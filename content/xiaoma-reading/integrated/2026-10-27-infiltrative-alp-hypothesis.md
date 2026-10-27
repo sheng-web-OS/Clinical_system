@@ -24,16 +24,35 @@ GGT 可幫助來源辨認，不能證明 tissue invasion；相對正常的 bilir
 
 假設兩位教學情境病人的 ALP 都明顯升高。第一位有多處已知惡性腫瘤，影像出現肝內多發結節；第二位沒有 known cancer history，影像看不出質塊，卻曾接觸新的藥物，並有慢性搔癢與自身免疫疾病線索。兩人 biochemical pattern 相似，但 pretest probability 根本不同。如果一看到 ALP 就進入 Figure 3-4 的 malignancy 清單，第二位可能被錯置在不適當的 workup 路徑。
 
-<figure id="fig-infiltrative-alp-update" class="reasoning-figure">
-<div class="reasoning-title">原創圖 1｜證據如何改寫「浸潤」假說，而不是讓 ALP 幫你決定診斷</div>
-<table aria-label="ALP 訊號不同證據下的診斷方向" class="release-matrix">
-<thead><tr><th scope="col">新證據加入</th><th scope="col">Infiltration 假說</th><th scope="col">尚不能排除的另一條路</th><th scope="col">有資訊增益的檢查</th></tr></thead>
-<tbody>
-<tr><th scope="row">ALP ↑，GGT ↑，但 US 未見質塊</th><td data-label="Infiltration 假說">仍有 diffuse／microscopic disease 的可能；尚不算確診</td><td data-label="尚不能排除的另一條路">PBC、PSC、DILI、small-duct disease、早期 obstruction</td><td data-label="有資訊增益的檢查">藥物／暴露、AMA 等血清學；視情況進階影像</td></tr>
-<tr><th scope="row">有已知腫瘤、肝大或新影像病灶</th><td data-label="Infiltration 假說">機率依病史與影像而上升</td><td data-label="尚不能排除的另一條路">感染、granulomatous、其他肝病及良性 lesions</td><td data-label="有資訊增益的檢查">對照既往影像；必要時 MRI／CT、選擇適當取樣路徑</td></tr>
-<tr><th scope="row">全身性沉積疾病線索／蛋白異常</th><td data-label="Infiltration 假說">Amyloid 成為一個具體可檢驗假說</td><td data-label="尚不能排除的另一條路">其他原因的 cholestasis、MGUS 與無關病變共存</td><td data-label="有資訊增益的檢查">依懷疑類型安排 SIFE、UIFE、sFLC 等及合適的組織診斷</td></tr>
-</tbody></table>
-<figcaption>非病例研究數據；三列是以不同新增證據改變病因機率的概念比較。取材自 Pocket Medicine 9E Figure 3-4（Library PDF p.139）、ACG abnormal liver chemistries guideline 及 ASH 2026 AL amyloidosis diagnostic guidance。不是原書表格的臨摹。</figcaption>
+<figure id="fig-infiltrative-alp-update" class="reasoning-figure alp-evidence-flow">
+<div class="reasoning-title">原創圖 1｜固定同一個 ALP 訊號，新增證據如何把診斷導向不同方向？</div>
+<div class="alp-evidence-root">
+<strong>共同起點：ALP ↑ ＋ GGT ↑</strong>
+<p>支持肝膽來源的 biochemical pattern；<b>尚未知道有沒有浸潤、梗阻或藥物造成的膽汁鬱積</b>。</p>
+</div>
+<div class="alp-evidence-branch-note">維持同一份抽血結果，只改變病史／影像／全身性線索 ↓</div>
+<div class="alp-evidence-branches">
+<section class="alp-evidence-route">
+<span class="alp-evidence-label">分支 A｜藥物與自體免疫線索</span>
+<h4>新藥、搔癢，US 未見質塊</h4>
+<p><strong>機率改變：</strong>更需要考慮 PBC、DILI、PSC／small-duct disease，而不是逕自診斷 infiltration。</p>
+<p class="alp-evidence-action"><b>下一步：</b>查核用藥與暴露、AMA 等定向血清學；仍須按條件考慮隱匿性膽道阻塞。</p>
+</section>
+<section class="alp-evidence-route">
+<span class="alp-evidence-label">分支 B｜腫瘤及影像線索</span>
+<h4>已知惡性腫瘤＋新肝內病灶</h4>
+<p><strong>機率改變：</strong>惡性浸潤與占位病變的懷疑上升；但感染、肉芽腫或良性病灶仍有競爭可能。</p>
+<p class="alp-evidence-action"><b>下一步：</b>比較舊影像，選擇 CT／MRI；僅在結果會改變處置且風險可接受時考慮取樣。</p>
+</section>
+<section class="alp-evidence-route">
+<span class="alp-evidence-label">分支 C｜全身性沉積疾病線索</span>
+<h4>肝腫大＋無法解釋的蛋白尿</h4>
+<p><strong>機率改變：</strong>系統性 amyloidosis 成為合理、可檢驗的病因；<b>單一 SPEP 陰性不足以排除 AL</b>。</p>
+<p class="alp-evidence-action"><b>下一步：</b>按臨床懷疑結合 SIFE／UIFE／sFLC，若需確診則進行合宜的組織檢查與 validated amyloid typing。</p>
+</section>
+</div>
+<div class="alp-evidence-conclusion"><b>反事實檢驗：</b>三種情境的 ALP 可以相同；改變的是獨立證據、前測機率與檢查的資訊增益，而非 ALP 本身突然變成病理診斷。</div>
+<figcaption>此圖是三個<strong>假設性診斷分支</strong>，不是三個真實病人的檢驗結果，也不是可忽略急症評估的固定演算法。對讀 Pocket Medicine 9E Figure 3-4、ACG abnormal liver chemistries guideline、ASH 2026 AL amyloidosis diagnostic guidance；不重製原書像素。</figcaption>
 </figure>
 
 圖片沒有見到 mass，只能說「這次影像未辨認到可見質塊」。它不會告訴我們 microscopically infiltrative disease 存在或不存在；更不會替 sarcoidosis、amyloidosis、malignancy 排出一個不需證據的優先順序。肝臟超音波和 CT 對 diffuse microscopic pathology 的敏感度不同於組織診斷；biopsy 只有在其增量資訊可能改變處置、且風險可接受時才值得做。
