@@ -53,13 +53,13 @@ jobs:
           fi
       - name: Block newly added or changed figures with broken rendering
         if: github.event_name == 'pull_request'
-        run: python tools/visual_qa_browser.py --changed-from origin/main --widths 360 390 1280 --output visual-qa-artifacts/changed
+        run: python tools/visual_qa_browser.py --changed-from origin/main --widths 360 375 390 1280 --output visual-qa-artifacts/changed
       - name: Audit full legacy visual debt when shared rendering changes
         if: github.event_name == 'pull_request'
         continue-on-error: true
         run: |
           if ! git diff --quiet origin/main...HEAD -- site/styles.css site/build.py tools/visual_qa_browser.py; then
-            python tools/visual_qa_browser.py --all --widths 360 390 1280 --output visual-qa-artifacts/legacy
+            python tools/visual_qa_browser.py --all --widths 360 375 390 1280 --output visual-qa-artifacts/legacy
           fi
       - name: Retain browser visual QA screenshots and reports
         if: always()
