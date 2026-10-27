@@ -31,6 +31,15 @@ class CTICUCABGFigureRegressionTests(unittest.TestCase):
             r'<div aria-hidden="true"[^>]*>↓</div>',
         )
 
+    def test_figure_installer_avoids_unbounded_apt_mirror(self):
+        """Apt mirror stalled and exhausted the bounded Chromium setup window."""
+        workflow = (ROOT / ".github/workflows/pages.yml").read_text("utf-8")
+        installer = workflow.split("- name: Install Chromium for image layout QA", 1)[1]
+        installer = installer.split("\n      - name:", 1)[0]
+        self.assertIn("python -m playwright install chromium", installer)
+        self.assertNotIn("--with-deps chromium", installer,
+                         "Ubuntu runner apt mirror stalled for four minutes in Actions 40483210240")
+
     def test_figure_browser_qa_includes_375px_phone(self):
         """All requested mobile widths must be exercised by the real browser job."""
         workflow = (ROOT / ".github/workflows/pages.yml").read_text("utf-8")
