@@ -4,7 +4,7 @@
 
 - 對象：[ACS｜理解與臨床判斷](https://acs-deep-learning.dreamycarp4.chatgpt.site/)，其首頁目前聲明四章、27 核心＋6 延伸及原講者宋偉廷醫師 150 頁課程對照。本儲存庫原先 `site/pages.json` 無獨立 ACS 入口。
 - 取得公開可讀的 `/data/units.json`，由第三方擷取器轉成 HTML 文字，再以單元 JSON 邊界逐個解析（**不是對原始檔 byte-preserving 的下載**）。已驗 31 個完整 JSON 物件，序號 02–32：建立診斷 5 節、ECG 10 節、治療 11 節、MI 後 5 節。
-- 單元 01 `pathology/diagnosis` 的物件開頭在第一次 HTML 清洗時被截除；單元 33 `postmi-inflammation` 尾端在 HTML 清洗時被截除。雖有部分正文片段，**兩者不當作完整回收；不可補造缺漏來源欄位**。
+- 單元 01（此擷取結果未保留其完整 ID 與標題）的物件開頭在第一次 HTML 清洗時被截除；單元 33 `postmi-inflammation` 尾端在 HTML 清洗時被截除。雖有部分正文片段，**兩者不當作完整回收；不可補造缺漏來源欄位**。
 - 保存四份私有、可逐節閱讀的研究稿在 `archive/acs/site-recovery/`，保留 question / answer / 原始教學段落 / 文獻 URL / PPT 頁碼 / figure caption / cautions / selfCheck / 推理界線。這些是第三方格式轉換後的**研究擷取稿**，不是作者認可定稿或原站程式碼。
 - 新增 Clinical System 的 ACS 因果導航頁 `content/clinical-os/acs.md`，連回原站全 33 單元，以及本站 HF／LVEDP／DCM 與國考練習，不冒充為完整原站本地鏡像；並在唯一知識地圖 `#chest` 加入路徑。
 
