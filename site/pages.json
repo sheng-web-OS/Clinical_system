@@ -926,7 +926,18 @@
     "section": "心臟外科與重症",
     "date": "2026-10-27",
     "navigation": false,
-    "review": "ai_editorial_review"
+    "review": "ai_editorial_review",
+    "references": "xiaoma-cticu-oxygen-delivery-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-oxygen-delivery-sources.md",
+    "output": "xiaoma-cticu-oxygen-delivery-sources.html",
+    "title": "CTICU 氧輸送：原始來源與圖像查核",
+    "subtitle": "CPB Table 2／3、Fick、生理公式與輸血證據的來源定位",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false
   },
   {
     "source": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",
