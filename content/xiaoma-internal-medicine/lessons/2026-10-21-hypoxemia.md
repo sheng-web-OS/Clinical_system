@@ -40,7 +40,7 @@ Lee 的病人發生意識障礙時，氧氣仍透過面罩持續供應；抽血�
 
 為什麼兩個數字不同？因為呼吸時有些空氣只在鼻腔、氣管與傳導支氣管中進出，**沒有直接與肺微血管交換氧和 CO₂**，這叫**解剖死腔（anatomical dead space）**。另外，某些肺泡雖然有空氣到達，卻因附近血流不足，沒有有效的血液可與之交換 CO₂，稱為**肺泡死腔（alveolar dead space）**。兩者合稱**生理死腔（physiological dead space）**。
 
-<figure class="vq-comparison"><div><span class="small-label">V̇E · 所有進出空氣</span><strong>總換氣量</strong><p>呼吸動作造成的全部氣體流量；監測器可以記錄這個量。</p></div><div><span class="small-label">V̇D · 無效交換部分</span><strong>死腔換氣</strong><p>傳導氣道內的空氣，以及通氣但缺乏有效灌流的肺泡所浪費的通氣。</p></div><div><span class="small-label">V̇A · 有效部分</span><strong>肺泡換氣量</strong><p>實際更新有灌流肺泡的新鮮氣體；更直接決定清除 CO₂ 的能力。</p></div><figcaption>原創術語關係圖：V̇E＝V̇D＋V̇A。這是功能分類，不是三個依序通過的解剖腔室；定義可對照肺部死腔與 V/Q 生理文獻。</figcaption></figure>
+<figure id="hypoxemia-ventilation-dead-space" class="vq-comparison"><div><span class="small-label">V̇E · 所有進出空氣</span><strong>總換氣量</strong><p>呼吸動作造成的全部氣體流量；監測器可以記錄這個量。</p></div><div><span class="small-label">V̇D · 無效交換部分</span><strong>死腔換氣</strong><p>傳導氣道內的空氣，以及通氣但缺乏有效灌流的肺泡所浪費的通氣。</p></div><div><span class="small-label">V̇A · 有效部分</span><strong>肺泡換氣量</strong><p>實際更新有灌流肺泡的新鮮氣體；更直接決定清除 CO₂ 的能力。</p></div><figcaption>原創術語關係圖：V̇E＝V̇D＋V̇A。這是功能分類，不是三個依序通過的解剖腔室；定義可對照肺部死腔與 V/Q 生理文獻。</figcaption></figure>
 
 **VD（dead-space volume）**是*每口氣*未有效參與氣體交換的容積；**V̇D（dead-space ventilation）**是*每分鐘*這部分的氣體流量。這兩個也不能混用。在固定呼吸型態的簡化條件下：
 
@@ -132,7 +132,7 @@ Li 等人在 2026 年報告一位 **35 歲男性**，於電子回收工作中長
 
 把肺視為許多並聯的小單位。V（ventilation）是到達該肺區的通氣量，Q（perfusion）是流經該肺區的血流量。**V/Q 不是全肺吸進的空氣量除以全肺血流，就能代表所有肺區的同一個數值**；真正決定動脈結果的是不同肺區流出的血，其氧含量如何混在一起。
 
-<figure class="vq-comparison"><div><span class="small-label">低 V/Q</span><strong>氣少，但還有血流</strong><p>提高 FiO₂ 後，仍有新鮮氧氣進得去，有機會改善這一區的血氧。</p></div><div><span class="small-label">Shunt：V/Q＝0</span><strong>血流經過，卻沒被有效通氣</strong><p>在肺泡完全未通氣或解剖性繞過肺泡時，增加其他肺區的氧無法直接氧合這股血。</p></div><div><span class="small-label">高 V/Q／死腔傾向</span><strong>有氣，卻很少血來交換</strong><p>氣體更新的部分效益被浪費；CO₂ 是否升高仍取決於全身可補償的有效肺泡換氣。</p></div><figcaption>原創生理比較，對照《Pocket Medicine》第九版 PDF 第 105–106 頁；三種是理想化肺單位狀態，真實病人可同時存在。</figcaption></figure>
+<figure id="hypoxemia-vq-vs-shunt" class="vq-comparison"><div><span class="small-label">低 V/Q</span><strong>氣少，但還有血流</strong><p>提高 FiO₂ 後，仍有新鮮氧氣進得去，有機會改善這一區的血氧。</p></div><div><span class="small-label">Shunt：V/Q＝0</span><strong>血流經過，卻沒被有效通氣</strong><p>在肺泡完全未通氣或解剖性繞過肺泡時，增加其他肺區的氧無法直接氧合這股血。</p></div><div><span class="small-label">高 V/Q／死腔傾向</span><strong>有氣，卻很少血來交換</strong><p>氣體更新的部分效益被浪費；CO₂ 是否升高仍取決於全身可補償的有效肺泡換氣。</p></div><figcaption>原創生理比較，對照《Pocket Medicine》第九版 PDF 第 105–106 頁；三種是理想化肺單位狀態，真實病人可同時存在。</figcaption></figure>
 
 肺泡蛋白沉積症可使部分肺泡通氣減少甚至失去有效通氣；因此 Li 病例的氧合障礙可能包含低 V/Q、分流樣生理與擴散異常。它的肺功能 DLCO 明顯偏低，指肺對測試氣體的整體轉移能力下降，**但 DLCO 低不等於已證明低氧全部由單一「膜擴散」機轉造成**。要辨認是低 V/Q、真正分流還是擴散限制，仍須整合影像、病史、氧療反應與其他檢查。
 
@@ -184,7 +184,7 @@ Hb 與氧的結合存在非線性的解離曲線。曲線平台區內，提高 P
 
 這個公式不是說 Chai 病人已經證實 CO 下降；她的報告並未測量 CO，因此**不能算出個案的實際 DO₂**。它是提醒我們，如果 Hb 少、心輸出量又因休克或心臟衰竭而不足，即使 SpO₂ 不變，組織收到的氧可能進一步減少。相反地，組織也可能暫時透過提高血流與氧萃取作代償，但這些儲備有上限。
 
-<figure class="oxygen-path"><div class="path-step"><span>01</span><strong>肺泡得到氧</strong><small>FiO₂、換氣與肺泡氧起點</small></div><div class="path-step"><span>02</span><strong>氧進入動脈</strong><small>V/Q、分流與擴散</small></div><div class="path-step"><span>03</span><strong>血液攜帶氧</strong><small>Hb、SaO₂ 與 CaO₂</small></div><div class="path-step"><span>04</span><strong>血流送達組織</strong><small>CO、區域灌流與細胞利用</small></div><figcaption>原創氧輸送功能圖，非《Pocket Medicine》原圖；四個功能可同時失敗，臨床處置不能依序等待。</figcaption></figure>
+<figure id="hypoxemia-oxygen-delivery-chain" class="oxygen-path"><div class="path-step"><span>01</span><strong>肺泡得到氧</strong><small>FiO₂、換氣與肺泡氧起點</small></div><div class="path-step"><span>02</span><strong>氧進入動脈</strong><small>V/Q、分流與擴散</small></div><div class="path-step"><span>03</span><strong>血液攜帶氧</strong><small>Hb、SaO₂ 與 CaO₂</small></div><div class="path-step"><span>04</span><strong>血流送達組織</strong><small>CO、區域灌流與細胞利用</small></div><figcaption>原創氧輸送功能圖，非《Pocket Medicine》原圖；四個功能可同時失敗，臨床處置不能依序等待。</figcaption></figure>
 
 <div class="physiology-widget" data-oxygen-model><div class="widget-heading"><span class="small-label">生理公式互動，不是任何論文病人的監測資料</span><h3>相同飽和度，改變 Hb 或 CO 會如何？</h3></div><p>為理解變數的影響，模型固定 SaO₂ 98%、PaO₂ 100 mmHg，僅調整 Hb 與 CO。這是有意限制條件的公式練習；不能把設定值回填至 Lee、Reddy、Li、Allaham 或 Chai 的病歷。</p><div class="widget-controls"><label for="hb-slider">Hb <output id="hb-value">15</output> g/dL<input id="hb-slider" type="range" min="5" max="18" step="0.5" value="15"></label><label for="co-slider">CO <output id="co-value">5.0</output> L/min<input id="co-slider" type="range" min="2" max="8" step="0.5" value="5"></label></div><div class="model-readout" aria-live="polite"><div><span>每單位血的氧含量</span><strong id="cao2-value">20.0</strong><small>mL O₂/dL</small></div><div><span>每分鐘的總氧輸送</span><strong id="do2-value">1,000</strong><small>mL O₂/min</small></div></div><p id="oxygen-explanation" class="model-explanation">此例 Hb 15、CO 5.0 時，近似總氧輸送為 1,000 mL/min；飽和度固定 98%。</p><p class="figure-note">純公式模型，不是臨床病例紀錄，也不是補液、輸血或強心藥的治療處方。</p></div>
 

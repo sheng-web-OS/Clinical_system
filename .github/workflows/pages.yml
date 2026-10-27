@@ -14,9 +14,11 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Playwright 1.57 Chromium does not support 26.04 yet
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -32,6 +34,29 @@ jobs:
         run: python -m unittest discover -s tests
       - name: Evidence-gated site build
         run: bash tools/build_site.sh
+      - name: Install Chromium for image layout QA
+        if: github.event_name == 'pull_request'
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.57.0
+          python -m playwright install --with-deps chromium
+      - name: Block newly added or changed figures with broken rendering
+        if: github.event_name == 'pull_request'
+        run: python tools/visual_qa_browser.py --changed-from origin/main --widths 360 390 1280 --output visual-qa-artifacts/changed
+      - name: Audit full legacy visual debt when shared rendering changes
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        run: |
+          if ! git diff --quiet origin/main...HEAD -- site/styles.css site/build.py tools/visual_qa_browser.py; then
+            python tools/visual_qa_browser.py --all --widths 360 390 1280 --output visual-qa-artifacts/legacy
+          fi
+      - name: Retain browser visual QA screenshots and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clinical-figure-browser-qa
+          path: visual-qa-artifacts/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Save verified static site
         uses: actions/upload-artifact@v4
         with:
