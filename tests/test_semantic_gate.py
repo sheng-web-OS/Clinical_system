@@ -27,9 +27,9 @@ def valid_review(text):
         "content_blob": git_blob_sha(data),
         "reviewer_context": "independent_ai_pass",
         "reviewer_reference": "tests/isolated-independent-review-run",
-        "core_reader_question": "血壓為何不能單獨解釋器官灌流變化，以及哪些資訊能真正縮小機轉？",
-        "new_understanding": "分開壓力與有效器官灌流，用其他床邊資料區分低心輸出和血管阻力。",
-        "strongest_counterargument": "此段落或許只是常見重症評估用語，需要確認不是換句話說的重複句。",
+        "core_reader_question": "血壓為何不能單獨解釋器官灌流變化，以及哪些資訊能真正縮小機轉？如果只讀一個數值，會錯過什麼重要的臨床機制與反例？",
+        "new_understanding": "分開壓力與有效器官灌流，用其他床邊資料區分低心輸出和血管阻力，並從資訊更新的方向說明為什麼處置不能只看血壓上升。",
+        "strongest_counterargument": "此段落或許只是常見重症評估用語，需要確認不是換句話說的重複句；若內容沒有明確增量，應刪除，而不是自動給予高分。",
         "epqc_scores": {k: 4 for k in "ABCDEFG"},
         "hard_stops": {k: False for k in (
             "unsafe_claim", "fabricated_evidence", "broken_causal_bridge",
