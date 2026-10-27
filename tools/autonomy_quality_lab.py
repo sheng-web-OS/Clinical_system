@@ -110,6 +110,8 @@ def triage_revision_claims(article, answer):
         ("negated_implication", "不代表", r"沒有關係|不會影響|直接關係"),
         ("minimum_as_maximum", "至少", r"只需要|僅需|只有"),
     )
+    no_findings_declared = not sections and any(
+        cue in answer for cue in ("無需修改", "無需修訂", "沒有需要修改", "未發現需要修改"))
     results = []
     for section in sections:
         original = re.search(r"原文\s*[：:]\s*「([^」]+)」", section)
@@ -150,6 +152,13 @@ def triage_revision_claims(article, answer):
         results.append(result)
     return {
         "evidence_level": "LEXICAL_CONTEXT_CUE_ONLY",
+        "source_sha256_utf8": sha256(article.encode("utf-8")),
+        "answer_sha256_utf8": sha256(answer.encode("utf-8")),
+        "review_parse_status": (
+            "NUMBERED_FINDINGS_FOR_CONTEXT_REVIEW" if results
+            else "NO_FINDINGS_DECLARED_NOT_VALIDATED" if no_findings_declared
+            else "UNPARSEABLE_REVIEW_HOLD"
+        ),
         "finding_count": len(results),
         "located_count": sum(r["source_span_found_ignoring_whitespace"] for r in results),
         "scope_reversal_review_flags": sum(bool(r["risk_signals"]) for r in results),
