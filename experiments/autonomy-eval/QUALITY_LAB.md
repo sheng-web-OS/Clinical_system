@@ -36,7 +36,13 @@ It rejects hash drift, path traversal, private source paths, diagnostic labels i
 
 ## 2. Selective incident memory (single source: #133)
 
-Fetch existing issue #133 text through the authorised read-only connector, save a local ephemeral UTF-8 copy, and run:
+Preferred: retrieve the private canonical issue #133 by a single authenticated GitHub **GET** using a read-only issues token already present in the authorized runtime (do not commit tokens):
+
+```bash
+GITHUB_TOKEN=<provided-by-authorized-runtime> python tools/autonomy_quality_lab.py memory --issue-133 --terms metadata "Draft/HOLD"
+```
+
+For offline reproduction, export the same issue body from the authorised connector to a local ephemeral UTF-8 file and run:
 
 ```bash
 python tools/autonomy_quality_lab.py memory --issue-md /private/issue133.md --terms metadata "Draft/HOLD"
