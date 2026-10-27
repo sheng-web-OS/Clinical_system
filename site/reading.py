@@ -34,7 +34,8 @@ def is_current_lesson(row):
             and "/exams/" not in row.get("source", "")
             and not row.get("exam")
             and not is_reference_page(row)
-            and "練習" not in row.get("section", ""))
+            and "練習" not in row.get("section", "")
+            and "官方真題" not in row.get("section", ""))
 
 
 def render_today_updates(pages, today=None):
