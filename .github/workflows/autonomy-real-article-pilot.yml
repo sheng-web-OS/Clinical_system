@@ -1,0 +1,32 @@
+name: Single-use public-article AI editorial prompt pilot
+on:
+  pull_request:
+    paths:
+      - 'experiments/autonomy-eval/real-model-pilot-20261027.py'
+      - '.github/workflows/autonomy-real-article-pilot.yml'
+permissions:
+  contents: read
+  models: read
+jobs:
+  readonly-model-pair:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Public DCM only — two isolated stateless calls, no write scopes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: python experiments/autonomy-eval/real-model-pilot-20261027.py
+      - name: Save paired model outputs in private CI artifact if available
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: one-time-dcm-real-model-pilot
+          path: real-article-model-pilot.json
+          if-no-files-found: ignore
+          retention-days: 7
