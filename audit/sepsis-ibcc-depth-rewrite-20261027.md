@@ -1,5 +1,8 @@
 # Sepsis IBCC 深度重寫：來源與差距驗收紀錄
 
+> **版本校正（2026-10-27 18:15 台灣）**：以下「67M 教學虛構病例」、「尚未修改 site/pages.json」及早期 71 分自評，均屬本 PR **較早版本的歷史快照**，不得視為當前 head 的狀態。最新主教材已改以 **Jin et al. 2025 Case 1 的真實 78M 阻塞性尿路感染病例**作主線，並明示其他 PHR 監測為反事實；兩篇正文已列入 PR 的 `site/pages.json`，另新增公開來源圖像頁與 Fig 1 provenance audit。這些只表示病例來源與工程索引進度，不是已獲獨立 EPQC／手機／正式發布驗收。正式評估一律以當次 head 與原檔 blob、最新 CI 和獨立審稿 receipt 為準；未驗證仍 HOLD。
+
+
 日期：2026-10-27。僅限 PR #164 的私人審查；此報告不是公開教材，不是獨立審稿通過聲明。
 正式待審正文：`content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md`；最新 blob 必須依 PR head 重新讀取，不可沿用此前版本。
 
