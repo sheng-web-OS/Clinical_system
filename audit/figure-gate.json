@@ -748,6 +748,23 @@
           "scope_limit": "These are clinical risk and site-of-care categories after integrating several clinical variables, not a diagnostic rule for confirming PE or an automatic thrombolytic prescription; no exact D subtype assigned to the presumed PE case solely from lactate."
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/cticu-oxygen-delivery-sources.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_and_figure_scope_check_not_independent_physician_review",
+      "items": [
+        {
+          "locator": "Civelek et al. 2025 Cureus original publisher PDF printed pages 4–5, Table 2 CPB aggregate oxygenation and indexed delivery, Table 3 postoperative Hb, plus narrative CPB events",
+          "source_token": "Civelek 2025",
+          "mode": "illustrated",
+          "anchor": "cticu-do2-two-paths",
+          "caption_token": "Civelek 等人",
+          "teaching_role": "區分 CPB 時回流不足造成的流量變化及 hemodilution 引起的血紅素攜氧容量變化，防止誤把整段平均 SaO2 當事件同步值或將 CPB flow 等同術後 cardiac output。",
+          "scope_limit": "單一病例內存在指標持續時間、Hb 時點及 heparin 劑量不一致；示意圖不代表同步個體時間序列、無法計算術後 DO2，也不能推導固定輸血或升壓門檻。"
+        }
+      ]
     }
   }
 }

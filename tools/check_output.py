@@ -18,6 +18,8 @@ EXPECTED = {
     "styles.css", "home.css", "index.html",
     "app.js", "site-index.json", "site-index.js", "owner-mode.html", ".nojekyll",
 } | POCKET_SOURCE_ASSETS | {row["output"] for row in PAGES}
+if any(page["output"] == "xiaoma-20261027-cticu-oxygen-delivery.html" for page in PAGES):
+    EXPECTED.add("cticu-oxygen-delivery-two-paths.svg")
 HAS_DCM_RELEASE = (
     any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES)
     and any(p["output"] == "xiaoma-reading-20260710-dcm-original.html" for p in PAGES)
