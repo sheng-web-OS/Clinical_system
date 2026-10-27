@@ -11,6 +11,7 @@ ROLES = {"orientation", "definition", "causal_bridge", "case_evidence",
          "evidence_boundary", "decision", "counterfactual", "safety",
          "navigation", "source_context"}
 AXES = tuple("ABCDEFG")
+CONTINUITY_DIMS = ("concept", "causal", "decision", "narrative")
 
 
 def is_teaching_page(row):
@@ -114,12 +115,47 @@ def review_metadata_errors(review, source):
         errors.append(source + ": missing reviewer run/reference")
     stops = review.get("hard_stops")
     required = {"unsafe_claim", "fabricated_evidence", "broken_causal_bridge",
-                "internal_metadata", "unresolved_source_conflict"}
+                "internal_metadata", "unresolved_source_conflict",
+                "broken_narrative_continuity"}
     if not isinstance(stops, dict) or set(stops) != required or any(type(stops[k]) is not bool for k in required):
         errors.append(source + ": missing/invalid EPQC hard-stop decisions")
     elif any(stops.values()):
         errors.append(source + ": unresolved EPQC hard stop")
+    continuity = review.get("continuity_gate")
+    if not isinstance(continuity, dict):
+        errors.append(source + ": CONTINUITY_HOLD missing independent continuity verdict")
+    else:
+        if continuity.get("verdict") != "pass":
+            errors.append(source + ": CONTINUITY_HOLD continuity not approved")
+        if continuity.get("all_transitions_checked") is not True:
+            errors.append(source + ": CONTINUITY_HOLD paragraph handoffs not fully checked")
+        if continuity.get("unresolved_gaps") != []:
+            errors.append(source + ": CONTINUITY_HOLD unresolved narrative gaps")
+        checks = continuity.get("checks")
+        if not isinstance(checks, dict) or set(checks) != set(CONTINUITY_DIMS):
+            errors.append(source + ": CONTINUITY_HOLD requires four independent checks")
+        else:
+            for dim in CONTINUITY_DIMS:
+                entry = checks[dim]
+                if (not isinstance(entry, dict) or entry.get("verdict") != "pass"
+                        or not isinstance(entry.get("evidence"), str)
+                        or len(entry["evidence"].strip()) < 24):
+                    errors.append(source + ": CONTINUITY_HOLD missing supported " + dim + " decision")
     return errors
+
+
+def continuity_handoff_errors(continuity, units, source):
+    """Confirm sample points at a *real* adjacent reader handoff; not a semantic grader."""
+    if len(units) < 2 or not isinstance(continuity, dict):
+        return []
+    handoff = continuity.get("sample_handoff")
+    neighbors = {(a["id"], b["id"]) for a, b in zip(units, units[1:])}
+    if (not isinstance(handoff, dict)
+            or (handoff.get("from_id"), handoff.get("to_id")) not in neighbors
+            or any(not isinstance(handoff.get(k), str) or len(handoff[k].strip()) < 24
+                   for k in ("reader_question", "bridge_justification"))):
+        return [source + ": CONTINUITY_HOLD missing grounded adjacent handoff evidence"]
+    return []
 
 
 def validate_semantic_gate(root, pages):
@@ -151,6 +187,7 @@ def validate_semantic_gate(root, pages):
             continue
         errors.extend(review_metadata_errors(review, path))
         units = reading_units(data.decode("utf-8"))
+        errors.extend(continuity_handoff_errors(review.get("continuity_gate"), units, path))
         if not units:
             errors.append(path + ": SEMANTIC_HOLD no assessable teaching paragraphs")
             continue
@@ -194,7 +231,16 @@ def packet(source, content):
         "epqc_scores": {k: None for k in AXES},
         "hard_stops": {k: None for k in (
             "unsafe_claim", "fabricated_evidence", "broken_causal_bridge",
-            "internal_metadata", "unresolved_source_conflict")},
+            "internal_metadata", "unresolved_source_conflict",
+            "broken_narrative_continuity")},
+        "continuity_gate": {
+            "verdict": "unreviewed", "all_transitions_checked": False,
+            "unresolved_gaps": [],
+            "checks": {k: {"verdict": "unreviewed", "evidence": ""}
+                       for k in CONTINUITY_DIMS},
+            "sample_handoff": {"from_id": "", "to_id": "",
+                               "reader_question": "", "bridge_justification": ""},
+        },
         "paragraphs": {u["id"]: {
             "role": "", "reader_gain": "", "nonredundancy_reason": "",
             "verdict": "review", "excerpt_for_editor": u["excerpt"],

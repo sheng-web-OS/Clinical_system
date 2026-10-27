@@ -33,7 +33,20 @@ def valid_review(text):
         "epqc_scores": {k: 4 for k in "ABCDEFG"},
         "hard_stops": {k: False for k in (
             "unsafe_claim", "fabricated_evidence", "broken_causal_bridge",
-            "internal_metadata", "unresolved_source_conflict")},
+            "internal_metadata", "unresolved_source_conflict",
+            "broken_narrative_continuity")},
+        "continuity_gate": {
+            "verdict": "pass", "all_transitions_checked": True,
+            "unresolved_gaps": [],
+            "checks": {k: {"verdict": "pass", "evidence": f"已確認{k}連續性：本段資訊如何形成下一段必要前提，並排除讀者自行補完推論。"}
+                       for k in ("concept", "causal", "decision", "narrative")},
+            "sample_handoff": {
+                "from_id": reading_units(text)[0]["id"],
+                "to_id": reading_units(text)[1]["id"],
+                "reader_question": "讀者理解低血壓只是線索後，為何仍需要床邊灌流資訊來區分病因？",
+                "bridge_justification": "前段僅否定單一壓力指標的特異性，後段交代額外資料如何縮小 competing mechanisms。",
+            },
+        },
         "paragraphs": {
             u["id"]: {
                 "role": "causal_bridge",
@@ -96,6 +109,34 @@ class SemanticGateContract(unittest.TestCase):
         errors = " ".join(self.errors())
         for signal in ("separate editorial context", "EPQC below", "unresolved EPQC"):
             self.assertIn(signal, errors)
+
+    def test_continuity_is_independent_noncompensable_gate(self):
+        review = valid_review(ARTICLE)
+        review["epqc_scores"] = {k: 4 for k in "ABCDEFG"}
+        review["continuity_gate"]["checks"]["decision"]["verdict"] = "hold"
+        self.reviews[PATH] = review
+        self.assertIn("CONTINUITY_HOLD", " ".join(self.errors()))
+
+    def test_continuity_handoff_must_match_actual_adjacent_units(self):
+        review = valid_review(ARTICLE)
+        review["continuity_gate"]["sample_handoff"]["to_id"] = "invented-unit"
+        self.reviews[PATH] = review
+        self.assertIn("grounded adjacent handoff", " ".join(self.errors()))
+
+    def test_continuity_requires_all_handoffs_and_zero_gaps(self):
+        review = valid_review(ARTICLE)
+        review["continuity_gate"]["all_transitions_checked"] = False
+        review["continuity_gate"]["unresolved_gaps"] = ["尚未說明何以需要下一步"]
+        self.reviews[PATH] = review
+        errors = " ".join(self.errors())
+        self.assertIn("paragraph handoffs", errors)
+        self.assertIn("unresolved narrative gaps", errors)
+
+    def test_missing_continuity_evidence_cannot_pass(self):
+        review = valid_review(ARTICLE)
+        del review["continuity_gate"]
+        self.reviews[PATH] = review
+        self.assertIn("missing independent continuity", " ".join(self.errors()))
 
     def test_duplicate_rationales_rejected(self):
         review = valid_review(ARTICLE)
