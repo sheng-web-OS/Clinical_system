@@ -124,6 +124,18 @@ def run():
         print("Closed pull request; no merge-eligibility status needed.")
         return 0
     head = pr["head"]["sha"]
+    run_link = (
+        "https://github.com/" + repo + "/actions/runs/"
+        + os.environ["GITHUB_RUN_ID"]
+    )
+    # Invalidate an earlier green status BEFORE reading potentially stale or
+    # unavailable comments. A failed API read now leaves required status pending.
+    api(
+        f"{base}/statuses/{head}", token, method="POST",
+        data={"state": "pending", "context": CONTEXT,
+              "description": "Rechecking PR discussion for P0/P1 blockers",
+              "target_url": run_link},
+    )
     rows = (
         tagged(all_pages(f"{base}/issues/{n}/comments", token), "issue")
         + tagged(all_pages(f"{base}/pulls/{n}/reviews", token), "review")
@@ -135,12 +147,7 @@ def run():
         f"Unresolved P0/P1 review: {len(pending)} item(s); see PR discussion"
         if pending else "No unresolved trusted P0/P1 review blockers"
     )
-    run_link = (
-        "https://github.com/" + repo + "/actions/runs/"
-        + os.environ["GITHUB_RUN_ID"]
-    )
-    # Do NOT publish success if any comment endpoint fails: API exception exits
-    # before this POST; an absent required status remains a merge hard stop.
+    # Publish a final SHA-scoped status only after reading all PR evidence.
     api(
         f"{base}/statuses/{head}", token, method="POST",
         data={"state": state, "context": CONTEXT,
