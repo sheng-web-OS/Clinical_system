@@ -78,6 +78,10 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertNotIn("所以第一名病人的 ScvO₂ 95%", lesson,
                          "Wardhana Table 1 values are for the third CABG patient")
         self.assertIn("Wardhana", image)
+        self.assertIn("CaO₂ × CO → DO₂", image)
+        self.assertIn("Hb × SaO₂", image)
+        self.assertNotIn("SaO₂ + Hb + PaO₂", image,
+                         "CaO2 requires hemoglobin-bound oxygen plus a dissolved component")
 
     def test_cticu_oxygen_caption_has_no_raw_markdown_and_stays_secondary_on_phone(self):
         lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md").read_text("utf-8")
