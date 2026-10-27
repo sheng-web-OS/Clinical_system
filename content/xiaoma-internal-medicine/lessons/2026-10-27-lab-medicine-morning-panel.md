@@ -25,7 +25,7 @@
 | Glucose（mg/dL） | 130 | 210 | 190 |
 | Albumin（g/dL） | 3.5 | 2.8 | 2.8 |
 
-＊05:40 生化檢體由實驗室註記 hemolysis；07:00 新採檢沒有溶血註記。各數值和變化速度皆僅為教學設定。表中沒有提供特定實驗室參考範圍；真實照護必須查看當院項目、單位、警戒值、方法與報告備註。
+＊05:40 **生化管**由實驗室註記 hemolysis；07:00 新採生化管沒有溶血註記。CBC、DC 與 serum chemistry 原則上屬不同採檢管及檢驗方法：一支生化管溶血不能直接證明 CBC 的 Hb、platelet 不可信；同樣不能因此推定 CBC 正確。若 Hb 的大幅下降不合臨床，須獨立查核採血來源、管別、標本 ID、是否受輸液稀釋及有無真正失血。各數值和變化速度皆僅為教學設定。表中沒有提供特定實驗室參考範圍；真實照護必須查看當院項目、單位、警戒值、方法與報告備註。
 
 先不要替他貼上「敗血症引起腎衰竭和貧血」這種看似完整的診斷。這張表至少包含三種時間：**病程時間**（低血壓、尿量、感染控制）、**介入時間**（輸液、藥物、氧氣及採檢）和**分析時間**（何時採血、送驗、報告、重驗）。數字相隔十二小時，不代表全是同一條因果鏈；液體變化能改變濃度，腎臟指標可能落後灌流變化，採檢干擾還可能改變結果。
 
@@ -59,9 +59,9 @@ BUN 從 19 到 32 會提供氮代謝、灌流與蛋白分解等線索，卻不�
 
 本例可先用 07:00 **同一時點**的生化算 AG：134 − (102 + 18) = **14 mmol/L**，但不能拿某個固定「正常 AG」把所有實驗室的數值二分。Albumin 為重要未測陰離子，2.8 g/dL 的低白蛋白可能壓低所見 AG；使用常見的經驗性校正，AG + 2.5 × (4 − albumin) ≈ **17 mmol/L**。這是粗略的生理提醒，不能憑修正後 AG 就宣稱已證實乳酸性酸中毒或尿毒性酸中毒。不同儀器的 AG 參考範圍及 albumin 影響，需要與當院檢驗方法一起讀。[7]
 
-假設 06:10 的動脈血氣為 pH 7.33、PaCO₂ 35 mmHg、計算 HCO₃ 約 18 mmol/L，lactate 2.3 mmol/L。若以代謝性酸中毒作為候選原發過程，Winter 預期 PaCO₂ ≈ 1.5 × 18 + 8 ± 2 = 33–37 mmHg；實際 35 落入預期範圍，沒有依此公式發現明顯額外的呼吸性障礙。然而公式不能排除肺炎造成的呼吸功負擔、也不能證明病因已知。血氣中的 bicarbonate 通常是由 pH 與 PaCO₂ 計算，並不是第三項彼此獨立的觀察；血氣和 chemistry 不同採檢時間若發生快速變化，公式比較也應明說限制。
+假設 **07:00 同步採取**的動脈血氣為 pH 7.33、PaCO₂ 35 mmHg、計算 HCO₃ 約 18 mmol/L，lactate 2.3 mmol/L。若以代謝性酸中毒作為候選原發過程，Winter 預期 PaCO₂ ≈ 1.5 × 18 + 8 ± 2 = 33–37 mmHg；實際 35 落入預期範圍，沒有依此公式發現明顯額外的呼吸性障礙。然而公式不能排除肺炎造成的呼吸功負擔、也不能證明病因已知。血氣中的 bicarbonate 通常是由 pH 與 PaCO₂ 計算，並不是第三項彼此獨立的觀察；血氣和 chemistry 不同採檢時間若發生快速變化，公式比較也應明說限制。
 
-Lactate 2.3 是一個可能與疾病嚴重度和代謝壓力相關的觀察，不等於「這個 lactate 完全解釋 AG」、「必然有缺氧性 shock」，或可以獨立替代再評估。對本案真正有價值的，是把它放回低血壓、末梢灌流、感染處置、肝代謝與趨勢；檢驗不能取代病人。
+上述教學情境中的 lactate 2.3 是一個可能與疾病嚴重度和代謝壓力相關的觀察，不等於「這個 lactate 完全解釋 AG」、「必然有缺氧性 shock」，或可以獨立替代再評估。對本案真正有價值的，是把它放回低血壓、末梢灌流、感染處置、肝代謝與趨勢；檢驗不能取代病人。
 
 ## 05　Na 133 與 glucose 210：濃度、張力和體內總量不是一件事
 
@@ -111,6 +111,18 @@ Platelet 154 ×10³/µL 可能落在某些實驗室參考範圍內，但從 232 
 
 如果只記得一個原則：**異常數值不是診斷，診斷不是處置，處置也不是終點；這些步驟之間每一段都必須有病人、方法、時間與證據。**
 
+## 08A　從「驗得到」到「值得再抽」：別讓檢驗把病人帶偏
+
+檢驗項目看似無害，但每管血都有三種成本：抽血造成的失血與不適、假性異常衍生的醫囑和處置、以及為了解讀不適合當下問題的指標而錯失的時間。對不穩定病人，重驗本身可以避免錯誤治療；對已穩定且資料不會改變處置的病人，按慣例每天抽 CBC/DC 或全套 chemistry 未必合理。[10]
+
+若 07:00 的 K 仍偏高且腎功能正在惡化，監測與重驗通常有實質的安全問題要回答；若 Hb 近期大幅下降又有低血壓，繼續追蹤甚至評估出血也有價值。但**不應把「有理由重驗 K／Hb」自動擴大成「每六小時都要全套檢驗」**。安排下一管血時，試著在醫囑前寫下：「這個檢驗的哪個結果會改變我對治療、監測或出院的決定？」
+
+採檢前後也要知道哪些數字是直接測量、哪些是衍生：CBC 的 RBC、Hb、MCV 與 Hct 之間有數學與儀器上的關係；DC 百分比要與 total WBC 轉為絕對數；ABG 的 bicarbonate 通常是由 pH、PCO₂ 計算，而 BMP/CMP 的 total CO₂ 是不同方法的量測；eGFR 由血中 creatinine 加人口統計學變數估算，急速變化的 SCr 使假設失效。這些不是「再多看到幾個獨立證據」，而是提醒我們**同一個訊號可能被不同欄位重複呈現**。
+
+### 延伸國考練習（不複製既有題目）
+
+已收錄的 **115 年第二次醫師二階醫學（三）第 26 題**，以急性腸胃炎與 Na 132 mmol/L，考驗「水分流失造成非滲透性 ADH 刺激，為何會伴隨低血鈉」，其逐選項詳解已在[二十題跨科基線教材](2026-10-22-baseline-twenty.md#baseline-q07)。本篇要再多走一步：即使血鈉低，也不能僅由濃度推論全身鈉總量；若病人又有高血糖、少尿、輸液或腎臟功能變化，應先拆開量測與真正的水分平衡。本題的內部結構化題庫註記「機器擷取、原始視覺與醫學核對待完成」，不得把題庫檔存在等同人工審核完成。
+
 ## 09　病房值班的簡明判讀提醒
 
 | 先看到的變化 | 它提供的資訊 | 最危險的跳躍 | 下一個較有價值的問題 |
@@ -137,6 +149,6 @@ Platelet 154 ×10³/µL 可能落在某些實驗室參考範圍內，但從 232 
 8. European Clinical Practice Guideline on Hyponatraemia, 2014，核對 6.2.1 hyperglycaemia 校正以 2.4 mmol/L per 100 mg/dL 為指引例示，並核對其 2014 correction 對公式單位的勘誤；Katz 1.6 僅作常見不同估算法比較。https://academic.oup.com/ejendo/article/170/3/G1/6668028 ; https://academic.oup.com/ejendo/article/171/1/X1/6661472
 9. MedlinePlus, *Complete Blood Count* 與 *Blood Differential*，用於測量定義及 DC 的臨床非特異性，不作為嗜中性球低下療法門檻來源。https://medlineplus.gov/lab-tests/complete-blood-count-cbc/ ; https://medlineplus.gov/lab-tests/blood-differential/
 10. Choosing Wisely Canada, *Using Labs Wisely*；Washington University Laboratory Utilization CBC/BMP 指引。適用於**臨床與檢驗穩定、缺乏新問題的住院患者**，不是對急重症少抽血的絕對規則。https://choosingwiselycanada.org/hospitals/labs-test/ ; https://sites.wustl.edu/laboratoryutilization/items/complete-blood-count-cbc-without-differential-blood-lab294-basic-metabolic-panel-bmp-lab15-comprehensive-metabolic-panel-cmp-lab17/
-11. KDIGO 2024 CKD Guideline，慢性性與 GFR／albuminuria 共同評估；2027 focused CKD update 仍在公開審查，不提前當作正式更新。https://kdigo.org/guidelines/cKD-Evaluation-and-Management/
+11. KDIGO 2024 CKD Guideline，慢性性與 GFR／albuminuria 共同評估；2027 focused CKD update 仍在公開審查，不提前當作正式更新。https://kdigo.org/guidelines/ckd--evaluation-and-management/
 
 文獻與數值範圍須再依台灣臨床所在醫院的 laboratory reference/critical value policy、formulary、採檢流程及最新指南核對；全文為教學而非個別病人的醫囑。
