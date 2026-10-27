@@ -893,6 +893,25 @@
         }
       ]
     },
+    "content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md": {
+      "status": "represented",
+      "source_review": "content/clinical-os/sepsis-visual-evidence-and-sources.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "AI_original_publisher_Figure_1_visual_inspection_and_source_context_check_not_independent_medical_review",
+      "rights_decision": "link to Springer original Figure 1 only; do not copy or adapt licensed original pixels",
+      "items": [
+        {
+          "locator": "Jin et al. International Journal of Emergency Medicine 2025;18:181, Case 1, original Figure 1a renal POCUS and Figure 1b abdominal CT, publisher Fig 1 page",
+          "source_token": "hydroureter",
+          "mode": "source_link",
+          "url": "https://link.springer.com/article/10.1186/s12245-025-00958-5#Fig1",
+          "why_link_instead": "Original POCUS and CT images belong to the published case series and carry publisher licensing conditions; link directly for enlargement rather than copying, redrawing, or presenting images as the site's own diagnostic measurements.",
+          "teaching_role": "Contrast left renal hydronephrosis on POCUS with distal ureteral stone and hydroureteronephrosis on CT to explain how an atypical presentation led to source localization and urgent decompression.",
+          "scope_limit": "Original Figure 1 is from the 78-year-old male Case 1 only. Hydronephrosis alone does not prove infection or the complete shock mechanism, and this three-case series cannot establish POCUS test sensitivity or treatment causality."
+        }
+      ],
+      "original_site_mermaid_note": "The two Mermaid diagrams in the reader are original qualitative mechanism illustrations, not reproduced publisher figures. Independent medical semantic and mobile render QA remain separate hard stops."
+    },
     "content/xiaoma-internal-medicine/lessons/2026-10-27-pericardial-tamponade.md": {
       "status": "represented",
       "source_review": "content/xiaoma-internal-medicine/pericardial-tamponade-sources.md",

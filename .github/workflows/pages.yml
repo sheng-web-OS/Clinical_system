@@ -54,6 +54,14 @@ jobs:
       - name: Block newly added or changed figures with broken rendering
         if: github.event_name == 'pull_request'
         run: python tools/visual_qa_browser.py --changed-from origin/main --widths 360 375 390 1280 --output visual-qa-artifacts/changed
+      - name: Check Sepsis reader and exam on 360/375/390px private browser
+        if: github.event_name == 'pull_request'
+        run: |
+          if grep -q 'clinical-sepsis-infection-to-shock.html' site/pages.json; then
+            if ! git diff --quiet origin/main...HEAD -- site/pages.json site/styles.css site/build.py tools/qa_sepsis_mobile.py content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md content/clinical-os/sepsis-visual-evidence-and-sources.md; then
+              python tools/qa_sepsis_mobile.py --widths 360 375 390 --output visual-qa-artifacts/sepsis
+            fi
+          fi
       - name: Audit full legacy visual debt when shared rendering changes
         if: github.event_name == 'pull_request'
         continue-on-error: true

@@ -2202,6 +2202,162 @@
     "navigation": false
   },
   {
+    "source": "content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md",
+    "output": "clinical-sepsis-infection-to-shock.html",
+    "title": "Sepsis：感染如何變成器官衰竭？",
+    "subtitle": "以真實阻塞性泌尿道感染病例，理解微循環、源頭控制與個別化休克復甦",
+    "collection": "clinical-os",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "感染與休克",
+    "related_exams": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 33,
+        "concept_heading": "四、病原體如何使全身失去控制：從免疫啟動到內皮、凝血與細胞代謝",
+        "focus": "IL-5 與 IL-1／IL-6／TNF-α 的機轉分別"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 64,
+        "concept_heading": "六、感染在哪裡？診斷與 source control 是「治療」，不是附屬檢查",
+        "focus": "海水、肝硬化、Vibrio vulnificus 與緊急感染來源處置"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 65,
+        "concept_heading": "七、抗生素與源頭控制，為什麼必須和循環復甦一起開始？",
+        "focus": "創傷弧菌感染的抗菌藥選擇與緊急源頭控制"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "concept_heading": "八、現在為什麼血壓低？把「血管張力、回心血量、心肌功能」真正分開",
+        "focus": "分布性與心因性休克之 SVR／CO 反應"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 57,
+        "concept_heading": "十五、持續危險時：酸中毒、類固醇與頑固性休克",
+        "focus": "感染合併 adrenal crisis 的優先診療"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "concept_heading": "十五、持續危險時：酸中毒、類固醇與頑固性休克",
+        "focus": "官方 113-1 Q48：酸中毒矯正不取代感染源與灌流復甦，保留 2026 指南限定例外"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md",
+    "output": "xiaoma-exam-sepsis-112-114-five-questions.html",
+    "title": "Sepsis：從六題國考看循環、感染來源與治療優先序",
+    "subtitle": "112–114 年醫師二階：IL-5、創傷弧菌與抗菌藥、SVR、bicarbonate、adrenal crisis",
+    "collection": "xiaoma-internal-medicine",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "感染與重症・官方真題",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 33,
+        "question_heading": "112-1 醫學（三）第 33 題｜為什麼 IL-5 不是 Sepsis 主要促發炎訊號？",
+        "focus": "IL-5 與 IL-1／IL-6／TNF-α 的機轉分別",
+        "topic": "IL-5 與 IL-1／IL-6／TNF-α 的機轉分別"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 64,
+        "question_heading": "112-1 醫學（三）第 64 題｜海水傷口、紫紅水泡與休克：感染來源的證據不能忽略",
+        "focus": "海水、肝硬化、Vibrio vulnificus 與緊急感染來源處置",
+        "topic": "海水、肝硬化、Vibrio vulnificus 與緊急感染來源處置"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "question_heading": "114-1 醫學（三）第 51 題｜哪一種休克的 SVR 方向不同？",
+        "focus": "分布性與心因性休克之 SVR／CO 反應",
+        "topic": "分布性與心因性休克之 SVR／CO 反應"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 65,
+        "question_heading": "112-1 醫學（三）第 65 題｜已懷疑創傷弧菌，如何把病原辨識轉成抗菌藥選擇？",
+        "focus": "創傷弧菌的抗菌藥組合與必要清創",
+        "topic": "Vibrio vulnificus 抗菌藥選擇"
+      }
+    ],
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 57,
+        "concept_heading": "114-1 醫學（三）第 57 題｜感染合併持續休克，什麼時候不要再等檢驗？",
+        "focus": "同一官方 Q57 的 adrenal crisis 休克鑑別：以既有正規題號連回 Sepsis 詳解，不重複登錄官方真題。"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "concept_heading": "113-1 醫學（三）第 48 題｜Sepsis 合併酸中毒，第一個目標是把 pH 調正常嗎？",
+        "focus": "官方第 48 題確實為 Sepsis／bicarbonate；與現有 acid-base 原題共用 canonical identity"
+      }
+    ],
+    "kind": "exam_compilation"
+  },
+  {
+    "source": "content/clinical-os/sepsis-visual-evidence-and-sources.md",
+    "output": "clinical-sepsis-evidence.html",
+    "title": "Sepsis 原始病例影像與證據來源",
+    "subtitle": "以原始 POCUS／CT 的資訊增量理解源頭控制，不把原圖當成萬能診斷",
+    "collection": "clinical-os",
+    "layout": "reader",
+    "date": "2026-10-27",
+    "navigation": false,
+    "section": "參考資料",
+    "kind": "source_reference"
+  },
+  {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-pericardial-tamponade.md",
     "output": "xiaoma-20261027-pericardial-tamponade.html",
     "title": "Pericardial Tamponade：為什麼 CVP 高，心臟卻充不進血？",
