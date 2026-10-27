@@ -42,6 +42,8 @@
 
 *10/28 06:00 檢體有顯著溶血註記；07:15 為不同採血點、無溶血的新檢體。所有數值都是合成教學資料；「無溶血」不是對其他每項分析物絕對準確的保證。各院 critical value 與單位依檢驗室規範為準。*
 
+**把安全評估的結果放回時間線（本合成病例）**：06:00 通報後，團隊立即評估病人並取得 12-lead ECG，未見新的高鉀危險心電圖變化；病人當時循環暫穩、原管有顯著溶血，因此安排迅速重抽及監測，在 07:15 結果前沒有給予 insulin-glucose。07:15 無溶血 K 4.9 使原管受干擾更可信。這個判斷**不是靠 ECG 正常排除真性高鉀**；若等待期間出現危險心律、循環惡化或其他高度懷疑危及生命的高鉀證據，應立即依急救流程處理，不能等重抽結果。
+
 <figure id="lab-three-clocks" style="max-width:900px;margin:1.5rem auto">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:0.8rem" role="group" aria-label="合成病例的急迫安全、檢體重驗與腎功能病程三條並行證據線">
 <div style="border:1px solid #c8786d;background:#fff6f3;border-radius:9px;padding:1rem">
