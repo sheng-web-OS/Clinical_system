@@ -28,7 +28,27 @@
     "navigation": false,
     "review": "ai_editorial_review",
     "layout": "reader",
-    "section": "心肌病變"
+    "section": "心肌病變",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "比較 DCM 與 HFpEF，分清心肌表型、EF 與心衰竭症候群。",
+        "concept_heading": "四、DCM 的病人為什麼會喘？又為什麼可能灌流不足？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 6,
+        "focus": "心室擴張改變 wall stress；將心肌耗氧與冠脈供血放在同一模型。",
+        "concept_heading": "二、收縮力下降後，為什麼心室反而愈來愈大？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/originals/2026-07-14-hcm.md",
@@ -41,7 +61,18 @@
     "navigation": false,
     "review": "source_recovery_only",
     "source_sha256": "86f84012585a689b4954e76b9cce01759df7bb1a7a91be32d2b65101409d142b",
-    "layout": "reading-original"
+    "layout": "reading-original",
+    "related_exams": [
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 11,
+        "focus": "前負荷下降時，固定瓣口與動態 LVOTO 的雜音為何方向相反？",
+        "concept_heading": "Obstructive／nonobstructive 真正改變的是什麼？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/index.md",
@@ -62,7 +93,38 @@
     "navigation": false,
     "review": "author_source_check",
     "layout": "reader",
-    "section": "胸腔與重症"
+    "section": "胸腔與重症",
+    "exam_questions": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 3,
+        "question_heading": "第 3 題：低血氧的機轉，何者錯誤？",
+        "concept_heading": "02　血氧低，問題出在肺泡本身，還是肺泡到動脈之間？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 9,
+        "question_heading": "第 9 題：發紺的描述，何者正確？",
+        "concept_heading": "04　SpO₂ 100%，為何病人仍會缺少攜氧能力？"
+      }
+    ],
+    "related_exams": [
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "用上下肢發紺差異，驗證是否理解右向左分流的位置。",
+        "concept_heading": "03　A–a 明顯擴大後，如何辨認低 V/Q 與真正的 shunt？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/sources.md",
@@ -85,7 +147,17 @@
     "navigation": false,
     "review": "source_recovery_only",
     "source_sha256": "376b56a6a017d402ea03b6fc231f292fda18ddb3e40d8f0626a8b618152c9be1",
-    "layout": "reading-original"
+    "layout": "reading-original",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "EF 保留仍可能有心衰竭：回到舒張充盈、壓力與臨床症候群。"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/originals/2026-07-12-lvedp.md",
@@ -98,7 +170,17 @@
     "navigation": false,
     "review": "source_recovery_only",
     "source_sha256": "c04644460c5595697b888bd45f3f27f46cdf138aae486d4b173f6876c8215d06",
-    "layout": "reading-original"
+    "layout": "reading-original",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "用 HFpEF 題目回查：射出比例保留，為何充盈壓仍可能升高？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/originals/2026-07-20-diuretics.md",
@@ -111,7 +193,17 @@
     "navigation": false,
     "review": "source_recovery_only",
     "source_sha256": "b338cd047690059d5552d511393f14302e1ba855e2e01fb51131ee3d35e0cd83",
-    "layout": "reading-original"
+    "layout": "reading-original",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 28,
+        "focus": "尿量增加不等於所有問題已解決；比較利尿反應與腎功能恢復。"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/originals/2026-07-10-dcm.md",
@@ -163,7 +255,36 @@
     "references": "xiaoma-hypercapnia-sources.html",
     "date": "2026-10-22",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "exam_questions": [
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "question_heading": "第一題｜111 年第一次・醫學（三）第 51 題",
+        "concept_heading": "03　補氧成功後，為什麼仍需要另一種支持？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "question_heading": "第二題｜114 年第一次・醫學（三）第 49 題",
+        "concept_heading": "04　適合 NIV，必須同時有「可能受益」與「能安全進行」"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 50,
+        "question_heading": "第三題｜114 年第一次・醫學（三）第 50 題",
+        "concept_heading": "02　PaCO₂ 告訴我們結果，還沒有交代時間與病因"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/hypercapnia-sources.md",
@@ -186,7 +307,169 @@
     "references": "xiaoma-baseline-sources.html",
     "date": "2026-10-22",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "exam_questions": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 6,
+        "question_heading": "01｜115 年第二次・醫學（三）第 6 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 25,
+        "question_heading": "02｜115 年第二次・醫學（三）第 25 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 16,
+        "question_heading": "03｜115 年第二次・醫學（三）第 16 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 47,
+        "question_heading": "04｜115 年第二次・醫學（三）第 47 題"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 52,
+        "question_heading": "05｜114 年第一次・醫學（三）第 52 題"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "question_heading": "06｜114 年第一次・醫學（三）第 12 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 26,
+        "question_heading": "07｜115 年第二次・醫學（三）第 26 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 18,
+        "question_heading": "08｜115 年第二次・醫學（三）第 18 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 59,
+        "question_heading": "09｜115 年第二次・醫學（三）第 59 題"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 54,
+        "question_heading": "10｜114 年第一次・醫學（三）第 54 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 11,
+        "question_heading": "11｜115 年第二次・醫學（三）第 11 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 28,
+        "question_heading": "12｜115 年第二次・醫學（三）第 28 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 20,
+        "question_heading": "13｜115 年第二次・醫學（三）第 20 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 60,
+        "question_heading": "14｜115 年第二次・醫學（三）第 60 題"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 56,
+        "question_heading": "15｜114 年第一次・醫學（三）第 56 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 13,
+        "question_heading": "16｜115 年第二次・醫學（三）第 13 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 29,
+        "question_heading": "17｜115 年第二次・醫學（三）第 29 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 23,
+        "question_heading": "18｜115 年第二次・醫學（三）第 23 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 61,
+        "question_heading": "19｜115 年第二次・醫學（三）第 61 題"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 57,
+        "question_heading": "20｜114 年第一次・醫學（三）第 57 題"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md",
@@ -244,7 +527,59 @@
     "references": "xiaoma-respiratory-practice-sources.html",
     "date": "2026-10-22",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 3,
+        "focus": "把同一題接回低血氧機轉、通氣失敗與 NIV 安全條件。",
+        "concept_heading": "第一組｜低血氧、分流與發紺",
+        "question_heading": "真題 01｜115 年第二次・醫學（三）第 3 題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 9,
+        "focus": "把同一題接回低血氧機轉、通氣失敗與 NIV 安全條件。",
+        "concept_heading": "第一組｜低血氧、分流與發紺",
+        "question_heading": "真題 02｜115 年第二次・醫學（三）第 9 題"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "focus": "把同一題接回低血氧機轉、通氣失敗與 NIV 安全條件。",
+        "concept_heading": "第二組｜高碳酸血症與 NIV",
+        "question_heading": "真題 03｜111 年第一次・醫學（三）第 51 題"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "focus": "把同一題接回低血氧機轉、通氣失敗與 NIV 安全條件。",
+        "concept_heading": "第二組｜高碳酸血症與 NIV",
+        "question_heading": "真題 04｜114 年第一次・醫學（三）第 49 題"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 50,
+        "focus": "把同一題接回低血氧機轉、通氣失敗與 NIV 安全條件。",
+        "concept_heading": "第二組｜高碳酸血症與 NIV",
+        "question_heading": "真題 05｜114 年第一次・醫學（三）第 50 題"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/respiratory-practice-sources.md",
@@ -268,7 +603,18 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "瓣膜與血流",
-    "references": "xiaoma-reading-as-ar-sources.html"
+    "references": "xiaoma-reading-as-ar-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 11,
+        "focus": "把固定瓣口的流量依賴性，接到 Valsalva 與站立時的雜音變化。",
+        "concept_heading": "瓣膜真的很窄，為什麼壓差反而可能不高？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/as-ar-sources.md",
@@ -353,7 +699,18 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "腎臟／心衰竭與利尿",
-    "references": "xiaoma-reading-diuretics-sources.html"
+    "references": "xiaoma-reading-diuretics-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 28,
+        "focus": "比較早期利尿反應與腎功能恢復：尿量的意義取決於正在驗證什麼。",
+        "concept_heading": "在急性心衰竭，早期反應能告訴我們什麼、不能告訴我們什麼？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/diuretics-sources.md",
@@ -377,7 +734,47 @@
     "references": "xiaoma-acid-base-sources.html",
     "date": "2026-10-23",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "exam_questions": [
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 25,
+        "question_heading": "真題 01｜114 年第二次・醫學（三）第 25 題",
+        "concept_heading": "04　把血氣、血液 gap 與尿液 gap 放回各自的問題"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "question_heading": "真題 02｜113 年第一次・醫學（三）第 48 題",
+        "concept_heading": "07　當病人不再喘得那麼快，先確認維持 pH 的方式有沒有失敗"
+      }
+    ],
+    "related_exams": [
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 25,
+        "focus": "將嘔吐的鹼化過程接回尿液指標：尿鈉為何可能誤導容量判斷？",
+        "concept_heading": "06　HCO₃⁻ 高，是慢性 CO₂ 的適應，還是另一個鹼化過程？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 56,
+        "focus": "高 AG 酸化找到分類後，仍須回到 DKA 的致病過程與治療。",
+        "concept_heading": "03　Anion gap 找的是未被列入的陰離子，不是「血裡缺了電荷」"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/acid-base-sources.md",
@@ -401,7 +798,18 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "心衰竭與血行動力學",
-    "references": "xiaoma-reading-hf-lvedp-figure-sources.html"
+    "references": "xiaoma-reading-hf-lvedp-figure-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "從壓力—容積關係，理解 EF 保留與高充盈壓如何並存。",
+        "concept_heading": "第二張圖：為什麼 LVEDP 升高不一定代表 LVEDV 增加？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/hf-lvedp-figure-sources.md",
@@ -432,7 +840,27 @@
     "references": "xiaoma-asthma-sources.html",
     "date": "2026-10-24",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "exam_questions": [
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 50,
+        "question_heading": "正式題 01｜113 年第一次・醫師二階・醫學（三）第 50 題",
+        "concept_heading": "02　先分清 obstruction、variability 與 reversibility"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 46,
+        "question_heading": "正式題 02｜114 年第一次・醫師二階・醫學（三）第 46 題",
+        "concept_heading": "04　DLCO 為什麼能把「都是 obstruction」再分一次？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/asthma-sources.md",
@@ -455,7 +883,36 @@
     "references": "xiaoma-pneumonia-sources.html",
     "date": "2026-10-25",
     "navigation": false,
-    "review": "author_source_check"
+    "review": "author_source_check",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 45,
+        "focus": "工具沒列入的心跳與低氧，為何仍可能改變照護層級？",
+        "concept_heading": "01　CURB-65 究竟在測什麼？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "focus": "病原涵蓋與胸膜腔評估回答不同問題；找到細菌仍需處理併發症。",
+        "concept_heading": "05　真實病例中，住進 ICU 並沒有回答所有問題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 47,
+        "focus": "病原檢查的特異性，不能取代病情與感染部位的整體判斷。",
+        "concept_heading": "05　真實病例中，住進 ICU 並沒有回答所有問題"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/pneumonia-sources.md",
@@ -522,7 +979,27 @@
     "references": "xiaoma-respiratory-deep-dive-sources.html",
     "date": "2026-10-25",
     "navigation": false,
-    "review": "ai_editorial_review"
+    "review": "ai_editorial_review",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 3,
+        "focus": "用 A–a 與給氧反應，分清低換氣、low V/Q 與 shunt。",
+        "concept_heading": "第二問｜為什麼給 100% O₂，能改善 low V/Q，卻不一定克服 true shunt？"
+      },
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "將解剖性分流接回發紺分布；低氧血在何處混入體循環？",
+        "concept_heading": "第二問｜為什麼給 100% O₂，能改善 low V/Q，卻不一定克服 true shunt？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-25-hypercapnia-physiology.md",
@@ -535,7 +1012,27 @@
     "references": "xiaoma-respiratory-deep-dive-sources.html",
     "date": "2026-10-25",
     "navigation": false,
-    "review": "ai_editorial_review"
+    "review": "ai_editorial_review",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 50,
+        "focus": "高 PaCO₂ 是清除失衡的結果，不能單憑它診斷 COPD。",
+        "concept_heading": "第二問｜Won't Breathe / Can't Breathe 是不同的「故障位置」，怎樣用病人的證據辨識？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "focus": "從 CO₂ 與意識變化，回查 NIV 的受益條件與氣道安全。",
+        "concept_heading": "第三問｜哪些「看起來變正常」的數字，可能反而掩蓋通氣失代償？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/respiratory-deep-dive-sources.md",
@@ -558,7 +1055,54 @@
     "references": "xiaoma-copd-sources.html",
     "date": "2026-10-26",
     "navigation": false,
-    "review": "ai_editorial_review"
+    "review": "ai_editorial_review",
+    "related_exams": [
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 46,
+        "focus": "分清 eos 比例、絕對值與 ICS 預防惡化的適用條件。",
+        "concept_heading": "04　第三問 A｜持續喘與反覆惡化，為什麼用藥不一樣？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 50,
+        "focus": "急性惡化不能靠無限加藥處理；對照支氣管藥與呼吸支持。",
+        "concept_heading": "05　第三問 B｜病人越喘越快，為什麼 PaCO₂ 反而升高？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 46,
+        "focus": "FEV₁ 描述阻塞程度，症狀與惡化史才參與治療分流。",
+        "concept_heading": "04　第三問 A｜持續喘與反覆惡化，為什麼用藥不一樣？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 46,
+        "focus": "把持續阻塞與低 DLCO 接回肺氣腫的病變位置。",
+        "concept_heading": "02　第一問｜看到阻塞，為什麼還不能直接判 COPD？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "focus": "NIV 的可能效益、氣道保護與治療後重評必須同時成立。",
+        "concept_heading": "06　第三問 C｜NIV 是一次可驗證的治療試驗，不是插管前必走的儀式"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/copd-sources.md",
@@ -823,7 +1367,18 @@
       "anchor": "wct-acls-main-algorithm",
       "official_source_url": "https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Tachycardia-250514.pdf",
       "require_desktop_and_mobile_variants": true
-    }
+    },
+    "related_exams": [
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 75,
+        "focus": "先分有無脈搏與氣道狀態，再理解成人 CPR 的通氣協作。",
+        "concept_heading": "先看完整流程，再討論流程為何不能直接等於診斷"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-vte-visual.md",
@@ -914,7 +1469,27 @@
     "references": "xiaoma-cticu-abg-cabg-sources.html",
     "date": "2026-10-27",
     "navigation": false,
-    "review": "ai_editorial_review"
+    "review": "ai_editorial_review",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 25,
+        "focus": "把酸鹼分析與灌流評估分開：先辨認何種障礙，再追病因。",
+        "concept_heading": "第三問｜Lactate 與 BE 為什麼甚至可以朝不同方向變化？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "focus": "比較數值矯正與處理原因的優先序；本題的敗血症情境另行判讀。",
+        "concept_heading": "第二問｜ScvO₂ 95%，為什麼仍不能宣稱 oxygen delivery 足夠？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",

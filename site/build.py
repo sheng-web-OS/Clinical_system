@@ -10,7 +10,7 @@ import mistune
 from catalog import load_pages
 from home import render_home
 from math_render import compile_math
-from exam_archive import render_exam_archive, render_exam_year_teasers
+from exam_archive import render_exam_archive, render_exam_year_teasers, question_anchor, connect_exam_reading
 
 BASE = Path(__file__).resolve().parents[1]
 DIST = BASE / "dist"
@@ -46,19 +46,23 @@ def install_web_analytics():
         path.write_text(document.replace("</head>", WEB_ANALYTICS_BEACON + "</head>", 1), encoding="utf-8")
 
 class Renderer(mistune.HTMLRenderer):
-    def __init__(self):
+    def __init__(self, question_anchors=None):
         super().__init__(escape=False)
         self.headings=[]
         self.h2=0
+        self.question_anchors = question_anchors or {}
     def heading(self, text, level, **attrs):
+        key = html.unescape(re.sub(r"<[^>]+>", "", text))
+        question_id = self.question_anchors.get(key)
+        embedded_anchor = '<span class="exam-question-anchor" id="' + question_id + '"></span>' if question_id else ''
         if level==2:
             self.h2+=1
             ident="part-"+str(self.h2)
             self.headings.append((ident,re.sub(r"<[^>]+>","",text)))
             question = re.match(r"^第\s*(\d+)\s*題", re.sub(r"<[^>]+>", "", text))
             anchor = ('<span class="exam-question-anchor" id="q-' + str(int(question.group(1))) + '"></span>') if question else ''
-            return '<h2 id="'+ident+'">'+anchor+text+'</h2>'
-        return '<h'+str(level)+'>'+text+'</h'+str(level)+'>'
+            return '<h2 id="'+ident+'">'+anchor+embedded_anchor+text+'</h2>'
+        return '<h'+str(level)+'>'+embedded_anchor+text+'</h'+str(level)+'>'
 
 OUTPUT_BY_SOURCE = {name: output for name, output, _, _ in FILES}
 # Old Markdown links resolve to the single public atlas, not to an unpublished twin.
@@ -121,7 +125,7 @@ def validate_output_links():
             if not (DIST/target).is_file():
                 raise ValueError("Generated HTML broken link: "+path.name+" => "+link)
 
-def render_reader(page, body, headings):
+def render_reader(page, body, headings, related_questions=""):
     """Reader-facing teaching, with routes and editorial records in separate pages."""
     is_lesson = bool(page.get("date")) or page["source"] == "content/tamponade.md"
     is_archive = page.get("collection") == "xiaoma-reading"
@@ -164,10 +168,10 @@ def render_reader(page, body, headings):
 <div class="reader-shell"><aside class="reader-rail"><a class="back-link" href="'''+home+'''">← 教材目錄</a><span class="rail-label">'''+('本篇脈絡' if is_lesson else '本頁導覽')+'''</span><nav class="reader-outline" aria-label="章節導覽">'''+outline+'''</nav><div class="rail-bottom"><a href="xiaoma-reading.html">以往小麻閱讀 ↗</a><a href="knowledge-atlas.html">臨床知識地圖 ↗</a><a href="index.html">其他臨床教材 ↗</a></div></aside>
 <main class="reader-main" id="reading-content"><div class="reader-hero"><p class="reader-kicker">'''+section+('　 /　 '+number if is_lesson else '')+'''</p><h1>'''+title+'''</h1><p class="reader-deck">'''+subtitle+'''</p>'''+exam_label+'''</div>
 <details class="mobile-outline"><summary>本篇章節</summary><nav aria-label="行動版章節導覽">'''+outline+'''</nav></details>
-<article class="article reading-prose">'''+body+'''</article>'''+original_note+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
+<article class="article reading-prose">'''+body+'''</article>'''+original_note+related_questions+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
 <script src="site-index.js"></script><script src="app.js" defer></script></body></html>'''
 
-def render(md_file, output, page_title, subtitle):
+def render(md_file, output, page_title, subtitle, rendered=None):
     raw=(BASE/md_file).read_text(encoding="utf-8")
     current=next(row for row in PAGES if row["output"]==output)
     # Preserve the chat-supplied original bytes on disk; only suppress a
@@ -184,7 +188,7 @@ def render(md_file, output, page_title, subtitle):
     if "<!-- XIAOMA_EXAM_YEAR_TEASERS -->" in raw:
         raw = raw.replace("<!-- XIAOMA_EXAM_YEAR_TEASERS -->", render_exam_year_teasers(PAGES))
     if "<!-- XIAOMA_EXAM_ARCHIVE -->" in raw:
-        raw = raw.replace("<!-- XIAOMA_EXAM_ARCHIVE -->", render_exam_archive(PAGES))
+        raw = raw.replace("<!-- XIAOMA_EXAM_ARCHIVE -->", render_exam_archive(PAGES, BASE))
     if "<!-- XIAOMA_PUBLISHED_LESSONS -->" in raw:
         lessons = sorted((row for row in PAGES if row.get("collection") == "xiaoma-internal-medicine" and row.get("date") and not row.get("exam")), key=lambda row: row["date"])
         # Links use output paths already, so the public list needs no source-file exposure.
@@ -195,12 +199,15 @@ def render(md_file, output, page_title, subtitle):
     raw=re.sub(r'<!-- (U0[1-8]) -->',lambda m:'<a class="chapter-anchor" id="'+m.group(1).lower()+'"></a>',raw)
     # Compile MathML from authored TeX before Mistune consumes \\[...\\] as escapes.
     raw=compile_math(raw)
-    rr=Renderer()
+    question_entries = current.get("exam_questions", []) + current.get("related_exams", [])
+    rr=Renderer({q["question_heading"]: question_anchor(q) for q in question_entries if q.get("question_heading")})
     parser=mistune.create_markdown(renderer=rr,plugins=["table","strikethrough","url"])
     body=parser(raw)
     body=re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)  # accessible single H1 in page hero
     body=re.sub(r'<pre><code class="language-mermaid">([\s\S]*?)</code></pre>',render_mechanism,body)
     body=rewrite_internal_links(body,md_file)
+    if rendered is not None:
+        rendered[output] = {"body": body, "headings": rr.headings}
     current=next(row for row in PAGES if row["output"]==output)
     website = render_reader(current, body, rr.headings)
     (DIST/output).write_text(website,encoding="utf-8")
@@ -217,7 +224,15 @@ def main():
         if not source_image.is_file():
             raise FileNotFoundError("Reviewed source figure missing: " + str(source_image))
         shutil.copyfile(source_image, DIST / image_name)
-    rows=[render(*entry) for entry in FILES]
+    rendered = {}
+    rows=[render(*entry, rendered=rendered) for entry in FILES]
+    connected = connect_exam_reading(PAGES, rendered, BASE)
+    for page in PAGES:
+        if page["output"] not in connected:
+            continue
+        body, supplement = connected[page["output"]]
+        headings = rendered[page["output"]]["headings"] + ([("related-exams", "相關國考題")] if supplement else [])
+        (DIST / page["output"]).write_text(render_reader(page, body, headings, supplement), encoding="utf8")
     # Former published DCM link must open the current approved reading, not
     # silently strand returning readers in the preserved historical manuscript.
     legacy, current = "xiaoma-reading-20260710-dcm.html", "xiaoma-reading-dcm-integrated.html"
