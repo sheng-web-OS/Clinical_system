@@ -4,9 +4,9 @@
 
 若氣喘來自「肺功能不夠」，讓一部分肺萎縮，理應更糟。醫師卻決定在右下葉支氣管放入單向瓣膜，讓這個肺葉逐漸縮小。**一個月後，她的肺總量減少，第一秒呼出的氣量反而幾乎翻倍。**<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/">Marchand 等人 2019 年的完整病例、Figure 1 與 Table 1</a>記載了這段病程。這不是 COPD 的一般處置，而是一個適合反過來檢驗「肺功能數值究竟測到了什麼」的病例。
 
-**原病例影像定位（Figure 1）**：Marchand、d’Odemont 與 Dupont（*Medicina*, 2019）呈現治療前 A／C 與一個月後 B／D 的胸部 CT。比較重點是右下葉過度充氣與後續部分塌陷、鄰近肺葉重新擴張及右橫膈位置改變。請在 [原始開放取用病例與 Figure 1（PubMed Central）](https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/) 對照影像及完整圖說；亦可由 [原論文 DOI](https://doi.org/10.3390/medicina55030065) 定位出版版本。**本站暫不內嵌此圖**：既有 MDPI 圖檔網址在實際手機與桌面瀏覽器測試中均載入失敗，尚未取得可驗證的穩定替代圖檔。此處不以原創 CT 假圖或無關圖卡代替原始病例證據。
+這位病人的胸部 CT 提供了數值背後的空間線索：介入前，右下葉嚴重過度充氣，占據胸腔空間並壓擠鄰近肺葉；瓣膜治療後，該葉部分塌陷，鄰近肺組織得以重新擴張，右側橫膈位置也有所改變。這些是 **Marchand 等人 2019 年病例 Figure 1 的前後觀察**，可對照[原始 CT 圖 A–D 與完整圖說](https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/)；影像本身還不能證明 FEV₁ 改善全由單一機轉造成。
 
-全文只處理一條主線：**呼氣排空受限 → 過度充氣與呼吸負荷 → 症狀和治療目標分離 → 急性惡化時的通氣失敗**。四張小麻原表／流程依此順序帶讀（原書截圖因權利未確認不放於公開頁）；診斷和穩定期決策屬同一個疾病，但不是同一個量尺。
+眼前真正需要解開的，是「肺裡裝了多少空氣」和「用力呼氣時能把多少空氣排出來」之間的差別。**過度充氣的肺葉即使占據大量容積，也不代表那部分空氣能有效排出。**當被困住的氣體與周圍肺區承受的機械限制減少，整體呼氣表現可能改善；但是否真的發生，仍要用介入前後的肺功能量測驗證。所以下一步先分清 FEV₁ 量到的第一秒呼出容積（反映呼氣氣流受限）、RV／TLC 描述的困氣與容積，以及 DLCO 描述的氣體交換，再回來解讀這位病人為何「肺變小，卻更能呼氣」。
 
 ## 01　第零問｜肺功能到底在量什麼？
 
@@ -46,7 +46,7 @@
 <figcaption>由《Pocket Medicine》第九版 Figure 2-1（reader PDF pp79–80）的問題軸**獨立重新設計**，並依 <a href="https://goldcopd.org/2026-gold-report-and-pocket-guide/">GOLD 2026</a>核對 COPD 操作性診斷門檻。圖刻意將「阻塞、限制、困氣、氣體傳遞」分開，不是將原圖重新上色，也不是完整 PFT 鑑別演算法。</figcaption>
 </figure>
 
-圖中使用的 TLC <80% predicted 是教材簡化；臨床解讀應採適用參考式的 **LLN（lower limit of normal，正常下限）**。同樣地，固定 FEV₁/FVC 0.70 對年長者可能過度分類、對較年輕者可能漏掉異常。遇到接近門檻的數字，先查吹氣品質、重複性、臨床脈絡與 LLN，別讓四捨五入取代診斷。
+圖中以適用參考式的 **LLN（lower limit of normal，正常下限）** 判讀 TLC。同樣地，固定 FEV₁/FVC 0.70 對年長者可能過度分類、對較年輕者可能漏掉異常。遇到接近門檻的數字，先查吹氣品質、重複性、臨床脈絡與 LLN，別讓四捨五入取代診斷。
 
 確診後再以支氣管擴張劑後的 **FEV₁ % predicted** 分 GOLD 1–4（≥80%、50–<80%、30–<50%、<30%）。這量化的是**阻塞程度**，不是「還剩幾成肺」、也不是 A／B／E 症狀－惡化分組。[GOLD 2026 官方 Pocket Guide](https://goldcopd.org/2026-gold-report-and-pocket-guide/)將兩個評估軸分開。
 
@@ -99,7 +99,7 @@
 
 GOLD 2026 的 **A／B／E** 是*初始治療*分流：前一年沒有中重度惡化，再按 mMRC 呼吸困難或 CAAT（原 CAT）健康影響區分 A、B；**只要前一年至少一次中度或重度惡化便進 E**。B、E 通常從 LABA＋LAMA 出發；E 且 eos ≥300 可考慮初始三合一。已在治療的人必須走 **follow-up** 路徑，不可每次回診都重新套初始 ABE。所謂惡化要核對真正事件與治療經過，不等於每天多喘了一點。
 
-> **讀舊表的版本限制：** 下方小麻表取自 GOLD 2024 脈絡，保留原列與註腳，但其中事件次數的壓縮寫法**不能直接套用 GOLD 2026**。新版分流及 initial／follow-up 分別對照 [官方 GOLD 2026](https://goldcopd.org/2026-gold-report-and-pocket-guide/)。
+> **讀舊表的版本限制：** 小麻原書表格使用 GOLD 2024 脈絡，其事件次數的壓縮寫法**不能直接套用 GOLD 2026**；本頁提供的是依新版整理的原創分流圖，並未重製該原表。新版分流及 initial／follow-up 分別對照 [官方 GOLD 2026](https://goldcopd.org/2026-gold-report-and-pocket-guide/)。
 
 小麻原表對讀｜9E reader PDF p86，COPD Staging and Recommended Therapies：原表使用 GOLD 2024，與 2026 E 組門檻不同。下圖是本站對症狀與未來惡化風險的**獨立整理，非原書重製**；舊版表與新版流程的差異見[來源頁](../copd-sources.md)。
 
@@ -201,7 +201,9 @@ BTS 的急性 NIV 品質標準要求**開始 NIV 後 2 小時內重新驗血氣*
 
 這不是紙上推論。2026 年 *ATS Scholar* 記錄一名 **87 歲、COPD GOLD 3B**、因急性惡化已插管的女性：當呼吸器**設定 PEEP = 5 cmH₂O** 時，呼氣末量到 **total PEEP = 19 cmH₂O**，換算 **auto-PEEP = 14 cmH₂O**。這證明設定的 5 不等於肺泡呼氣末實際承受的總壓力；不能因此推定這名病人當時一定低血壓，因原病例此處沒有提供血壓下降的因果紀錄。[ATS Scholar 2026 原病例、波形與圖](https://doi.org/10.34197/ats-scholar.2025-0073OT)
 
-**再深入一層：同樣的 auto-PEEP 不一定是同一種阻塞。** 呼氣時間純粹不夠長（insufficient expiratory time, IET）與小氣道因呼氣時壓迫而產生的 expiratory flow limitation（EFL）可同時存在，卻會對外加 PEEP 和改變呼氣時間有不同反應。前者主要需騰出更長排空時間；後者的呼氣流量可能已到達上限，一味加大吐氣力量或機械地降低所有 EPAP／PEEP，不一定能增加流量。2026 年的床邊病例將這兩種機轉放在同一張辨識表；這裡不把其特定 PEEP 滴定方式當成可跨患者複製的處方。[原文 IET vs EFL 辨識](https://doi.org/10.34197/ats-scholar.2025-0073OT)\n\n床邊可先看**flow–time curve**：下一口開始前呼氣流是否回到零？若沒回零，支持呼氣尚未結束；再對照吸氣觸發、潮氣量、設定頻率、吸呼時間、痰液與病人是否主動出力。被動、同步的插管病人可藉呼氣末暫停評估 total PEEP，但不同肺區的關閉與自發努力會讓數字低估或失準；不能把**一條流速曲線的高度**當成已量到 14 cmH₂O。典型處置方向是**處理阻塞與分泌物、確保足夠呼氣時間、避免不必要的過高 minute ventilation**，接受個別化可容忍的 PaCO₂／pH，而不是追求迅速把 PaCO₂ 壓到正常。實際設定需由熟悉呼吸器的人依病人狀態調整，並同步排除氣胸、管路問題及其他休克原因。[Hess 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10208989/)；[ATS ventilator waveform teaching](https://site.thoracic.org/assemblies/cp/ats-quick-hits/dont-hold-your-breath)
+**再深入一層：同樣的 auto-PEEP 不一定是同一種阻塞。** 呼氣時間純粹不夠長（insufficient expiratory time, IET）與小氣道因呼氣時壓迫而產生的 expiratory flow limitation（EFL）可同時存在，卻會對外加 PEEP 和改變呼氣時間有不同反應。前者主要需騰出更長排空時間；後者的呼氣流量可能已到達上限，一味加大吐氣力量或機械地降低所有 EPAP／PEEP，不一定能增加流量。2026 年的床邊病例將這兩種機轉放在同一張辨識表；這裡不把其特定 PEEP 滴定方式當成可跨患者複製的處方。[原文 IET vs EFL 辨識](https://doi.org/10.34197/ats-scholar.2025-0073OT)
+
+床邊可先看**flow–time curve**：下一口開始前呼氣流是否回到零？若沒回零，支持呼氣尚未結束；再對照吸氣觸發、潮氣量、設定頻率、吸呼時間、痰液與病人是否主動出力。被動、同步的插管病人可藉呼氣末暫停評估 total PEEP，但不同肺區的關閉與自發努力會讓數字低估或失準；不能把**一條流速曲線的高度**當成已量到 14 cmH₂O。典型處置方向是**處理阻塞與分泌物、確保足夠呼氣時間、避免不必要的過高 minute ventilation**，接受個別化可容忍的 PaCO₂／pH，而不是追求迅速把 PaCO₂ 壓到正常。實際設定需由熟悉呼吸器的人依病人狀態調整，並同步排除氣胸、管路問題及其他休克原因。[Hess 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10208989/)；[ATS ventilator waveform teaching](https://site.thoracic.org/assemblies/cp/ats-quick-hits/dont-hold-your-breath)
 
 ### 6.4　最後回到小麻急性表：各列是並行目標，而非固定升級次序
 
@@ -280,4 +282,4 @@ D. 任何 auto-PEEP 都證明當下有低血壓。
 
 ---
 
-資料與審核邊界：[Marchand 2019，病例及原始測值](https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/) · [GOLD 2026 Report / Pocket Guide](https://goldcopd.org/2026-gold-report-and-pocket-guide/) · [STARR2 原始試驗](https://pubmed.ncbi.nlm.nih.gov/37924830/) · [四張小麻來源圖對讀及公開權利 HOLD](../copd-sources.md)。本稿為私人閱讀修訂，尚未獲得獨立醫學審查；原書圖表不得據此視為已獲公開重製授權。
+參考來源：[Marchand 2019，病例及原始測值](https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/) · [GOLD 2026 Report / Pocket Guide](https://goldcopd.org/2026-gold-report-and-pocket-guide/) · [STARR2 原始試驗](https://pubmed.ncbi.nlm.nih.gov/37924830/) · [原圖來源與使用限制](../copd-sources.md)。原書圖表未在本站重製；此單一病例不能證明支氣管瓣膜減容對所有 COPD 病人都有效。
