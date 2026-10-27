@@ -107,7 +107,7 @@ def evaluate_manifest(manifest, api):
     results = [evaluate_task(task, api) for task in tasks]
     passed = sum(r['technical_autonomy'] == 'VERIFIED_SHADOW_DELIVERY' for r in results)
     return {'cohort': manifest.get('cohort'), 'denominator': len(tasks),
-            'verified': passed, 'status': 'OBSERVED_TECHNICAL_ONLY', 'results': results,
+            'verified': passed, 'status': ('OBSERVED_TECHNICAL_ONLY' if passed else 'NO_VERIFIED_UNSUPERVISED_RUNS'), 'results': results,
             'owner_time': 'NOT_MEASURED', 'medical_safety': 'NOT_VERIFIED',
             'pedagogy': 'NOT_VERIFIED', 'real_world_unprompted': 'NOT_VERIFIED'}
 
