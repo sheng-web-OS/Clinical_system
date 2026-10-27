@@ -66,6 +66,19 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertIn("#af-two-exits .af-desktop-conduction{display:none}", css)
         self.assertIn("#af-two-exits .af-mobile-conduction{display:block", css)
 
+    def test_cticu_oxygen_caption_has_no_raw_markdown_and_stays_secondary_on_phone(self):
+        lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md").read_text("utf-8")
+        image = figure(lesson, "cticu-do2-two-paths")
+        match = re.search(r"<figcaption>(.*?)</figcaption>", image, re.S)
+        self.assertIsNotNone(match)
+        caption = match.group(1)
+        self.assertNotIn("**", caption, "Raw Markdown is not parsed inside HTML figcaption")
+        self.assertLess(len(caption), 130, "Figure caption should not repeat source-audit prose")
+        self.assertIn("表格平均 SaO₂ 不是事件同期測量值", caption)
+        css = CSS.read_text("utf-8")
+        self.assertIn("#cticu-do2-two-paths figcaption", css)
+        self.assertIn("font-size:clamp(13px,.86rem,17px)", css)
+
     def test_phone_css_replaces_desktop_scroll_without_affecting_other_figures(self):
         css = CSS.read_text("utf-8")
         for fig in ("loop-dose-response", "same-ph-figure"):

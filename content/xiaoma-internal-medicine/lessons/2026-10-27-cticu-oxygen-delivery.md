@@ -19,7 +19,7 @@ Civelek 等人在 2025 年 12 月發表一名 **61 歲、125 kg、BSA 2.23 m²**
 
 <figure id="cticu-do2-two-paths" style="margin:1.6rem auto;max-width:375px">
 <img src="cticu-oxygen-delivery-two-paths.svg" alt="原創直式因果圖：CPB期間 DO2i 下降的兩種路徑；靜脈回流不足時260，Hb下降時275；圖底提醒SaO2是整段平均值，術後流量須改用CO。" width="375" height="940" style="display:block;width:100%;height:auto;border-radius:18px" loading="lazy">
-<figcaption>圖 1｜同一個 DO₂i 下降，分別可能由流量與血紅素容量驅動。依 Civelek 等人 2025 年病例**文字事件**重新設計的本站原創示意圖，**不是原論文圖表的轉描**；兩個事件沒有可公開重建的同步 SaO₂，圖不使用未定義的時間軸。原始論文的時間長度自相矛盾，不能由本圖解決。</figcaption>
+<figcaption>圖 1｜CPB 期間 DO₂i 下降可來自回流／流量不足，或血液稀釋造成的 Hb 攜氧量下降。依 Civelek 等人（2025）的病例事件繪製；表格平均 SaO₂ 不是事件同期測量值。</figcaption>
 </figure>
 
 而且要先守住時間界線：這位病人的兩次事件發生在 **CPB 期間，流量由幫浦決定**；病人離開 CPB 進入 ICU 後，循環流量改由心臟、節律、前後負荷與必要的機械支持決定。不能把 CPB 的 pump flow 或 DO₂i 數字直接當成術後的 cardiac output 目標。
