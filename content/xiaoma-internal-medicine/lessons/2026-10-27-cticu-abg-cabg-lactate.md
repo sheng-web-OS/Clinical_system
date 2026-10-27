@@ -173,7 +173,7 @@ ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧下降
 
 Lactate 並不是缺氧才會出現的代謝廢物。即使細胞氧供充足，glycolysis 仍持續產生 pyruvate，而 lactate dehydrogenase 會讓 pyruvate 與 lactate 相互轉換。血中 lactate 的數字，是各組織**生成、利用與清除**共同作用的結果；低灌流可以增加乳酸，但不代表每一次升高都只有缺氧一個原因。
 
-這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，其中包括 **epinephrine**。Epinephrine 刺激 β₂-adrenergic receptor，可經由 cAMP、glycogenolysis 與 Na⁺/K⁺-ATPase 等路徑提高 glycolytic flux，促進有氧條件下的乳酸生成。同一份原始 Table 1 還記錄：患者血糖在 T0、T1、T2 分別為 **237、340、277**（原文 Glu 欄），與 T1 的乳酸高峰同時出現。
+這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，其中包括 **epinephrine**。一般生理研究顯示，epinephrine 可透過 β₂-adrenergic receptor、cAMP 與 Na⁺/K⁺-ATPase 等機轉促進 glycolysis，增加有氧條件下的乳酸生成；但這個機轉不能單獨證明本例乳酸升高是由 epinephrine 所致。同一份原始 Table 1 還記錄：患者血糖在 T0、T1、T2 分別為 **237、340、277**（原文 Glu 欄），與 T1 的乳酸高峰同時出現。
 
 **因此，病例作者提出 epinephrine 相關代謝反應的假說，並不是憑空猜測**：這位病人確實接受了 epinephrine，而乳酸與血糖在早期術後時段一起升高。但這只能提供**生理合理性與時間相關性**。原始病例沒有能隔離藥物效果的對照，也沒有完整的連續用藥劑量、同期器官灌流與 lactate/pyruvate ratio，不能據此宣稱乳酸一定是 epinephrine 造成，更不能排除出血、低心輸出或局部缺血。所謂 Type A／Type B 是協助思考機轉的分類，不是讓同一位危重病人只能二選一的箱子。
 
@@ -219,7 +219,7 @@ Smyth 等人在 2021 年報告**另一名** 54 歲 CABG 病人，患有 type 2 d
 
 這個臨床整合不需要假設病房一定有 Swan-Ganz catheter。有 PA catheter 時，CI／SvO₂／PA 壓力可以增加判斷資訊；沒有時仍能從 A-line、胸管、心律、血液檢驗、尿量及 bedside echo 建立可用的臨床模型。**CVP、PAWP 等靜態壓力也不是 fluid responsiveness 的直接證明**，不能因高 lactate 就無目的地反覆輸液。
 
-還有一個容易誤用的數字：2024 年 EACTS/EACTAIC/EBCP 指引提出**常溫 CPB 期間**特定的 goal-directed perfusion／DO₂ 門檻，這些門檻是針對手術中 CPB 的灌流管理，**不能不加區分地轉成離開 CPB 後所有 ICU 病人的固定輸液或升壓目標**。IBCC 的術後 hemodynamic rough targets 也只能和症狀、病程及具體原因一起使用。
+還有一個容易誤用的數字：2024 年 EACTS/EACTAIC/EBCP 指引提出**常溫 CPB 期間**特定的 goal-directed perfusion／DO₂ 門檻，這些門檻是針對手術中 CPB 的灌流管理，**不能不加區分地轉成離開 CPB 後所有 ICU 病人的固定輸液或升壓目標**。ICU 仍需依個別患者的 Hb、心輸出、器官灌流與病程，決定是否調整氧輸送與循環支持。IBCC 的術後 hemodynamic rough targets 也只能和症狀、病程及具體原因一起使用。
 
 ## 回到這位 69 歲 CABG 病人
 
