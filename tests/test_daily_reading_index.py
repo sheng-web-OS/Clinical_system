@@ -38,7 +38,17 @@ class DailyReadingIndex(unittest.TestCase):
         self.assertNotIn("xiaoma-reading-20260712-heart-failure.html", links)
         self.assertNotIn("xiaoma-exam108-q46-chronic-cough.html", links)
         self.assertNotIn("xiaoma-reading-cholestasis-evidence-action.html", links)
-        self.assertEqual(len(links), 4)  # Three current lessons and the atlas.
+        # The candidate catalog can add other same-day lessons (e.g. PE).
+        # Derive expected cards from the current published manifest instead of freezing
+        # an obsolete daily count when a release branch adds a real article.
+        expected = {
+            p["output"] for p in self.pages
+            if p.get("date") and p.get("collection") == "xiaoma-internal-medicine"
+            and p.get("kind") != "historical_original" and not p.get("exam")
+            and p.get("updated", p["date"]) == "2026-10-27"
+        }
+        self.assertEqual(set(links) - {"knowledge-atlas.html#article-index"}, expected)
+        self.assertEqual(len(links), len(expected) + 1)
 
     def test_no_updates_does_not_fall_back_to_yesterdays_articles(self):
         markup = render_today_updates(self.pages, "2026-10-28")
