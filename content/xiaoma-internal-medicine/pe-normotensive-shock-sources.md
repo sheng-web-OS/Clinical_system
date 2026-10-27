@@ -6,13 +6,15 @@
 
 Rouleau SG, et al. [Management of Presumed Pulmonary Embolism With Normotensive Shock](https://doi.org/10.1155/crcc/4107549). *Case Reports in Critical Care*. 2026;2026:4107549。
 
-| 病程階段 | 原始病例觀察 | 判讀界線 |
-| --- | --- | --- |
-| 急診初始 | 44 歲女性；HR 147/min、RR 33/min、BP 125/86 mmHg；HFNC 50 L/min、FiO₂ 0.50 下 SpO₂ 98% | 已接受氧療；血壓與飽和度都不能單獨證明足夠的心輸出量 |
-| 初始檢驗 | VBG pH 7.06、pCO₂ 15 mmHg；lactate 13 mmol/L、chemistry HCO₃ 9 mEq/L、AG 29；glucose 493 mg/dL、β-hydroxybutyrate 0.27 mmol/L | 嚴重高 AG 代謝性酸中毒與乳酸升高，但其原因不可僅由乳酸指定為 PE |
-| 診斷受限 | 因呼吸窘迫無法平躺接受 CTPA；床邊心超圖像不具診斷品質；ECG 有 S1Q3T3 | 仍是 presumed PE；不能把不完整 echo 或 ECG 變成確診／排除證據 |
-| 失代償與救援 | SpO₂ 降至 85%、意識改變；再次 VBG pH 6.98／pCO₂ 48；插管後短時間心跳停止；CPR 期間接受 tenecteplase，隨後 VA-ECMO | 時序不證明插管是唯一致停搏原因，也不證明單一治療造成良好結局 |
-| 後續 | CT 顯示右主肺動脈殘餘血栓；機械取栓後逐步脫離 ECMO；合併股部血腫與出血性休克 | 後續確認肺動脈血栓，同時呈現救援治療的出血代價 |
+**急診初始。** 44 歲女性；HR 147/min、RR 33/min、BP 125/86 mmHg；使用 HFNC 50 L/min、FiO₂ 0.50 時 SpO₂ 98%。她已經接受高流量氧療，正常血壓與飽和度都不能單獨證明心輸出量足夠。
+
+**初始檢驗。** VBG pH 7.06、pCO₂ 15 mmHg；lactate 13 mmol/L、chemistry HCO₃ 9 mEq/L、AG 29；glucose 493 mg/dL、β-hydroxybutyrate 0.27 mmol/L。這組資料支持嚴重代謝性酸中毒，但不能僅以乳酸值指定 PE 是唯一原因。
+
+**確診受限。** 因呼吸窘迫無法平躺接受 CTPA；床邊心超圖像不足以判讀；ECG 出現 S1Q3T3。此時仍是 presumed PE；不完整的 echo 與 ECG 不能當成確診或排除證據。
+
+**失代償與救援。** SpO₂ 降至 85%、意識改變；再次 VBG pH 6.98／pCO₂ 48；插管後短時間心跳停止，CPR 期間接受 tenecteplase，隨後使用 VA-ECMO。時間關聯不證明插管是唯一停搏原因，也不證明任何單一介入造成良好結局。
+
+**後續病程。** CT 顯示右主肺動脈殘餘血栓；機械取栓後逐步脫離 ECMO；同時發生股部血腫與出血性休克。後續影像支持肺動脈血栓確實存在，但救援與重大出血代價在同一病例中並存。
 
 **原文內部數據疑義。** 如果初始 VBG pH 7.06 與 pCO₂ 15 mmHg 為同一檢體，按 Henderson–Hasselbalch 近似計算，該血氣的 bicarbonate 約為 **4.1 mEq/L**；這與同段 chemistry HCO₃ **9 mEq/L** 不一致。原報告未提供可證實的抽血時間差或勘誤。兩者皆應按原文保留，**不能自行補造時間點、將靜脈 pCO₂ 代入動脈 Winter 公式，或由此宣稱量化了呼吸代償失敗**。本病例足以呈現臨床惡化的危險訊號，但不是可用來精算混合酸鹼障礙的可靠例題。
 
