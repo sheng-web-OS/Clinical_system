@@ -79,3 +79,17 @@
 - **能確認**：PR 上已保存深度新版與真題詳解，並且有相互 Markdown 連結，官題答案與更正情形已依上述查核。
 - **不能確認**：獨立審稿已完成、正式站題頁可點開、手機版已通過、真實讀者能更快理解。
 - **仍然 HOLD**：E/G 未過內部 EPQC，並無獨立醫學審查；不把自評寫成審稿完成或為了擺放國考題直接改 site/pages.json。
+
+
+## 2026-10-27 18:44+08｜獨立排程上下文：逐段 EPQC 實查（INCOMPLETE；不得作為 PASS receipt）
+
+- **Reviewer context**：與原 Sepsis 撰稿回合分離的排程執行上下文；此輪對一段正文實際提出並寫入修訂，因此**本輪不是該修訂段落的獨立最終驗收者**。未建立 `independent_ai_pass` receipt，未聲稱人類專科審查。
+- **精確起點**：PR #164 head `05e51fcf7cbeb9e107166d3fc151fac72525101f`，main `9321f7bce4288d12f74d5be1dea183edc7e70bc2`。主文 blob `c307f60e872ec7603ce475c414cb875001371449`（350 行），題解 blob `26abad21004a55f3d74999e71f196bc85c9bafe5`（182 行）。以 `site/semantic_gate.py:reading_units` 的同等分段條件盤點：主文 **107** 個有效單元、題解 **37** 個。
+- **實際閱讀／裁定範圍**：已讀兩篇全部 Markdown（350／182 行）以掌握全文結構，但**逐單元批判性評閱只完成主文第 1–35／107 單元**（原稿第 4–121 行，從真實病例、四軸模型、Sepsis-3、宿主反應、血流公式至初始感染診療）；題解 **0／37 單元正式裁定**，其全文閱讀不等於逐段審稿。主文剩餘 72、題解 37 單元均為未完成。不得把初輪閱讀或局部查證換算成七軸整篇通過。
+- **實際缺陷 E/G（原稿 unit 5／第 19 行）**：前文已用**否認發燒**的 Jin 78M 真實病例建立問題，緊接著卻另起「想像病人感染後持續發燒、意識變差」，無必要地更換病例框架、重複前一段四問，造成病例時間序列與敘事焦點跳轉。這不是醫學 P0，卻是具體的 reader continuity / nonredundancy 缺陷。已在**原 PR 分支**以最小編輯將該段接回「沒有發燒、已有 AKI／循環惡化」的真實病例；commit `bbcad5cbebb6c3e4337cce038923b1ce1056de99`，主文新 blob `6116b04c3e7a2ddb77c393ab72bed8db79f06cac`。這是**已提交編輯**，不是已獨立複審或已發布。
+- **待補來源界線（原稿 unit 8／第 47 行）**：Jin Case 1 記載 solitary kidney 與左側 hydronephrosis，但原文 Case 1 未明言唯一腎臟的側別；教材目前只陳述「單腎病史」而未捏造側別。後續審查及圖說**不可擅自補成『左腎是唯一腎』**。這是需維持的來源限制，非現有已證實錯誤。
+- **來源實查**：已對讀 Jin et al. 2025 原始 Case 1 正文及 Fig. 1 caption：78M、weakness/cough、否認發燒與泌尿症狀、HR120、BP96/70、RR25、POCUS plethoric IVC／normal cardiac contractility／左腎積水、WBC24K、lactate6.6、pH7.24、Cr4.8、CT 左遠端輸尿管結石、NE、緊急支架及數日後出院；未讀／目視核實原圖完整像素。另讀 IBCC Septic Shock 2025 的定義、來源、mimics 與復甦索引；讀 SSC 2026 官方推薦，核對 Sepsis 篩檢、初期復甦、source control、bicarbonate 等部分。**並未逐條查完兩篇所有引用與六題官方試卷原像素**，source 全通過 = NOT_VERIFIED。
+- **Q48 防假陽性**：依既有已更正官方查核，113-1 醫學（三）Q48 是 Sepsis／bicarbonate、答案 B；此輪**沒有**重跑舊錯誤 COPD 假陽性，也沒有刪除正確雙向連結。
+- **七軸暫態**：A 主命題可辨；B infection/sepsis/shock 與 source/hemodynamics 的區分在已審範圍可見；C/D 仍須完成後文介入與來源對照；E/G 有上述真實缺陷並已局部修訂、尚未複驗；F 未審後文反事實。**A–G 不給全篇分數**，hard_stops 未完成判定，`audit/editorial-semantic-reviews.json` **不得新增 PASS**。
+- **執行／發布狀態**：`L0_eligible_found=1`（純敘事連續性小補丁）；`L0_attempted=true`；`L0_commit_SHA=bbcad5c`；`RED_failing_fixture=NOT_APPLICABLE`（非機械性規則、屬需獨立語義判斷的 L1 編輯）；`GREEN_CI=PENDING`；`release_gates=SEMANTIC_HOLD`，手機 360/375/390 與 production 均 NOT_VERIFIED。**不合併、不發布**。
+- **下輪精確接續**：重新核對最新 PR head、兩篇 blob 與 CI；先由**另一個**獨立 reviewer 對修後 unit 5 重新裁定，再從主文第 36/107 單元（原第 123 行 SSC 抗生素時機表）逐段審到 107/107，逐項查證 2026 SSC／IBCC／原研究，最後對題解 1–37/37 做真題來源與 EPQC；有 revise/remove 就先修再重新生成 current-blob packet，**兩篇全部 keep 且 hard stops 解決後**才可寫正式 receipt、跑 CI、手機與發布驗收。此處進度不是發布完成。
