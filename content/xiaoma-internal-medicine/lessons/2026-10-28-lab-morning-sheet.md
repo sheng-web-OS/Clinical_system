@@ -16,7 +16,7 @@
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:0.8rem">
 <div style="border:1px solid #c8786d;background:#fff6f3;border-radius:9px;padding:1rem">
 <h3 style="margin:0 0 0.55rem;color:#793b2e">分鐘：會不會先出事？</h3>
-<p>病人生命徵象、意識、出血、心律、呼吸；高鉀與心電圖、嚴重酸中毒等可能立即改變支持與監測。必要的救治**與**驗證可並行。</p>
+<p>病人生命徵象、意識、出血、心律、呼吸；高鉀與心電圖、嚴重酸中毒等可能立即改變支持與監測。必要的救治<strong>與</strong>驗證可並行。</p>
 </div>
 <div style="border:1px solid #b8ac73;background:#fffdf3;border-radius:9px;padding:1rem">
 <h3 style="margin:0 0 0.55rem;color:#635621">小時：數字可信嗎？</h3>
