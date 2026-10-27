@@ -52,17 +52,12 @@ D 的 ALT 主要反映 hepatocyte injury／膜通透性與細胞傷害的生化�
 
 原題給四組血清／腹水 albumin 與腹水 total protein，詢問何者最符合肝硬化相關腹水：
 
-<table class="saag-exam-table" aria-label="四組原題測值及計算所得的 SAAG">
-<thead>
-<tr><th scope="col">選項</th><th scope="col">血清 albumin</th><th scope="col">腹水 albumin</th><th scope="col">腹水 total protein</th><th scope="col">SAAG</th></tr>
-</thead>
-<tbody>
-<tr><th scope="row">A</th><td><span class="saag-mobile-label" aria-hidden="true">血清 albumin</span><span class="saag-value">3.1</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 albumin</span><span class="saag-value">2.1</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 total protein</span><span class="saag-value">2.3</span></td><td><span class="saag-mobile-label" aria-hidden="true">SAAG</span><span class="saag-value">1.0</span></td></tr>
-<tr><th scope="row">B</th><td><span class="saag-mobile-label" aria-hidden="true">血清 albumin</span><span class="saag-value">4.3</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 albumin</span><span class="saag-value">2.6</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 total protein</span><span class="saag-value">3.0</span></td><td><span class="saag-mobile-label" aria-hidden="true">SAAG</span><span class="saag-value">1.7</span></td></tr>
-<tr><th scope="row">C</th><td><span class="saag-mobile-label" aria-hidden="true">血清 albumin</span><span class="saag-value">2.8</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 albumin</span><span class="saag-value">2.0</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 total protein</span><span class="saag-value">2.8</span></td><td><span class="saag-mobile-label" aria-hidden="true">SAAG</span><span class="saag-value">0.8</span></td></tr>
-<tr><th scope="row">D</th><td><span class="saag-mobile-label" aria-hidden="true">血清 albumin</span><span class="saag-value">2.8</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 albumin</span><span class="saag-value">1.2</span></td><td><span class="saag-mobile-label" aria-hidden="true">腹水 total protein</span><span class="saag-value">2.0</span></td><td><span class="saag-mobile-label" aria-hidden="true">SAAG</span><span class="saag-value">1.6</span></td></tr>
-</tbody>
-</table>
+| 選項 | 血清 albumin | 腹水 albumin | 腹水 total protein | SAAG |
+|---|---:|---:|---:|---:|
+| A | 3.1 | 2.1 | 2.3 | 1.0 |
+| B | 4.3 | 2.6 | 3.0 | 1.7 |
+| C | 2.8 | 2.0 | 2.8 | 0.8 |
+| D | 2.8 | 1.2 | 2.0 | 1.6 |
 
 <small>濃度單位皆為 g/dL；最後一欄 SAAG 是依原題數值算出的衍生值，非題目另行提供的實測項。</small>
 
