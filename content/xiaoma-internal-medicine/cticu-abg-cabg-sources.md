@@ -35,7 +35,7 @@ Smyth CC, Collins M, McCarthy J, Galvin S. *The catabolic triad: case report of 
 | p159–160 | **Figure 4-1 Acid–base nomogram**，pH 與 HCO₃⁻ 軸、PaCO₂ 等壓線、mixed-disorder 分區；footnote adapted-from Brenner & Rector's Kidney、Practical Guide to the Care of the Medical Patient | 任何代謝酸化必須考慮 PaCO₂、HCO₃⁻ 與混合障礙；這張原圖**不是**乳酸或組織氧輸送的直接測量 |
 | p160–161 | **Metabolic acidosis / AG / expected AG ≈ albumin × 2.5**；etiologies of AG metabolic acidosis，包含 lactic acidosis Type A/B 與 SGLT2i ketoacidosis | CABG lactate 不確定時，須把 chloride、albumin、ketone 放回獨立可能性；正常未校正 AG 不保證沒有未測酸化 |
 
-出版社的合法書籍取得入口：[Pocket Medicine，第九版出版資訊](https://shop.lww.com/Pocket-Medicine/p/9781975210819)；使用者私有 PDF 不置於公網，本站**沒有公開重製**此書 Figure 4-1 或代償原表，也不以新的 Fig 1 冒稱完整改畫 nomogram。圖像權利模式 `link_or_original_only`；新 Fig 1 是本站原創分層示意，提醒酸鹼量測和 oxygen delivery 的邊界。
+出版社的合法書籍取得入口：[Pocket Medicine，第九版出版資訊](https://shop.lww.com/Pocket-Medicine/p/9781975210819)；使用者私有 PDF 不置於公網，本站**沒有公開重製**此書 Figure 4-1 或代償原表，也不以新的 Fig 1 冒稱完整改畫 nomogram。圖像權利模式 `link_or_original_only`；新 Fig 1 採 Wardhana 與 Kurniawaty（2025）CABG 病人 3、ICU 第四小時 lactate 14.8 mmol/L 與 ScvO₂ 95% 兩項實測作為閱讀起點；CaO₂／DO₂ 是解釋需要補足的生理中介，並非本病例同期已測得的數值。新圖不是《Pocket Medicine》Figure 4-1 的重製。
 
 <a id="guidelines"></a>
 ## 臨床整合與有意限制的外推

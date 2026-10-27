@@ -1,0 +1,484 @@
+{
+  "source_blob": "e0896a65b188a99594f128acd63f23e720af95e8",
+  "model": "@cf/openai/gpt-oss-120b",
+  "published_scope": "CABG Figure 1 minimal replacement plus exact patient 3 correction",
+  "date": "2026-10-27",
+  "batches": [
+    {
+      "start": 0,
+      "id": "chatcmpl-2a97a540-dcde-4f73-ac8a-9c6ba4c02fc9",
+      "usage": {
+        "prompt_tokens": 6361,
+        "completion_tokens": 3918,
+        "total_tokens": 10279,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "neurons": 469.53057861328125
+      },
+      "reviews": [
+        {
+          "i": 1,
+          "verdict": "keep",
+          "role": "orientation",
+          "reader_gain": "提供文章發表日期與主題，讓讀者立即定位內容與領域。",
+          "nonredundancy_reason": "若刪除，讀者將失去對文章時間與焦點的基本認識。",
+          "problem": ""
+        },
+        {
+          "i": 2,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "揭示僅憑乳酸判斷灌流的常見誤解，提醒需多面評估。",
+          "nonredundancy_reason": "刪除會失去對乳酸單一指標局限性的警示，易陷入錯誤判斷。",
+          "problem": ""
+        },
+        {
+          "i": 3,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "明確列出四個獨立的生理問題，幫助讀者區分不同檢測目標。",
+          "nonredundancy_reason": "若省略，讀者難以辨識血酸、乳酸、氧輸送與組織利用的差異。",
+          "problem": ""
+        },
+        {
+          "i": 4,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "說明每個問題所需的檢驗資料，指導臨床上如何取得相關資訊。",
+          "nonredundancy_reason": "刪除會使讀者不清楚各問題對應的測量項目，失去實用指引。",
+          "problem": ""
+        },
+        {
+          "i": 5,
+          "verdict": "revise",
+          "role": "case_evidence",
+          "reader_gain": "呈現第三例患者的手術與術後情況，作為後續討論的臨床案例。",
+          "nonredundancy_reason": "若移除，讀者將缺少具體病例，難以將抽象概念與真實情境連結。",
+          "problem": "「CPB」翻譯為「心肺繞道」不正確，應改為「心肺迴路」或「體外循環」"
+        },
+        {
+          "i": 6,
+          "verdict": "keep",
+          "role": "evidence_boundary",
+          "reader_gain": "指出回聲測值與SVR的解讀限制，提醒不能僅憑數字診斷血管擴張。",
+          "nonredundancy_reason": "刪除會失去對單一指標診斷局限性的提醒，易產生過度解讀。",
+          "problem": ""
+        },
+        {
+          "i": 7,
+          "verdict": "keep",
+          "role": "case_evidence",
+          "reader_gain": "提供乳酸與ScvO₂在四小時內的變化數據，作為案例分析基礎。",
+          "nonredundancy_reason": "若省略，讀者缺少關鍵時間點的實際數值，難以理解後續推論。",
+          "problem": ""
+        },
+        {
+          "i": 8,
+          "verdict": "keep",
+          "role": "decision",
+          "reader_gain": "比較兩種直觀但錯誤的處置想法，強調需先找出更重要的臨床問題。",
+          "nonredundancy_reason": "刪除會失去對常見決策陷阱的提醒，可能導致錯誤治療選擇。",
+          "problem": ""
+        },
+        {
+          "i": 9,
+          "verdict": "keep",
+          "role": "safety",
+          "reader_gain": "列出立即評估的外科與循環危險指標，提供實務檢查清單。",
+          "nonredundancy_reason": "若去除，讀者將缺少具體的危險評估步驟，影響臨床操作。",
+          "problem": ""
+        },
+        {
+          "i": 10,
+          "verdict": "keep",
+          "role": "source_context",
+          "reader_gain": "說明IBCC指南作為起點，區分循環失血與乳酸解釋的時間層面。",
+          "nonredundancy_reason": "刪除會使讀者不明白指南的定位與兩個問題的時間差異。",
+          "problem": ""
+        },
+        {
+          "i": 11,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "闡述ABG三項測量的意義與限制，幫助讀者正確認識血氣檢查。",
+          "nonredundancy_reason": "若省略，讀者可能誤以為ABG能直接反映心輸出或灌流。",
+          "problem": ""
+        },
+        {
+          "i": 12,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "說明BE與乳酸的不同概念，避免將代謝酸鹼與乳酸混為一談。",
+          "nonredundancy_reason": "刪除會失去對BE意義的說明，易產生指標混淆。",
+          "problem": ""
+        },
+        {
+          "i": 13,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "解釋ScvO₂與SvO₂的差異及其局限，提醒不能把單一數值當完整ABG。",
+          "nonredundancy_reason": "若刪除，讀者可能誤用ScvO₂代替混合靜脈飽和度，造成判讀錯誤。",
+          "problem": ""
+        }
+      ]
+    },
+    {
+      "start": 13,
+      "id": "chatcmpl-9f4c2258-93eb-486b-855d-c70b6324c50c",
+      "usage": {
+        "prompt_tokens": 6090,
+        "completion_tokens": 3298,
+        "total_tokens": 9388,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "neurons": 418.63519287109375
+      },
+      "reviews": [
+        {
+          "i": 14,
+          "verdict": "keep",
+          "role": "evidence_boundary",
+          "reader_gain": "說明此病例缺少同步血氣與血液指標，提醒不能自行推算DO₂或AG。",
+          "nonredundancy_reason": "若刪除，讀者會誤以為可以補算缺失的pH、AG等指標。",
+          "problem": ""
+        },
+        {
+          "i": 15,
+          "verdict": "keep",
+          "role": "safety",
+          "reader_gain": "警示在ICU別把未測項目當已測，避免因假設而誤診。",
+          "nonredundancy_reason": "刪除會失去對常見認知錯誤的提醒，增加誤用風險。",
+          "problem": ""
+        },
+        {
+          "i": 16,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "指出僅有動脈氧合不足以判斷氧供，需額外兩項資訊。",
+          "nonredundancy_reason": "若省略，讀者不會明白氧供判斷的完整框架。",
+          "problem": ""
+        },
+        {
+          "i": 17,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "定義CaO₂概念，說明每100 mL動脈血攜氧量。",
+          "nonredundancy_reason": "刪除會失去對氧含量基礎概念的說明。",
+          "problem": ""
+        },
+        {
+          "i": 18,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "提供CaO₂計算公式，讓讀者可自行估算氧含量。",
+          "nonredundancy_reason": "缺少公式會使後續DO₂推算無法操作。",
+          "problem": ""
+        },
+        {
+          "i": 19,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "說明血紅素濃度下降時SpO₂無法補償，強調稀釋危險。",
+          "nonredundancy_reason": "刪除會失去血紅素與氧載量關係的關鍵說明。",
+          "problem": ""
+        },
+        {
+          "i": 20,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "引入DO₂概念，說明需結合心輸出才能評估氧供。",
+          "nonredundancy_reason": "若省略，讀者無法將血氧含量與血流量連結。",
+          "problem": ""
+        },
+        {
+          "i": 21,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "給出DO₂計算式，方便臨床估算系統氧輸送。",
+          "nonredundancy_reason": "缺少公式會使DO₂概念難以實際應用。",
+          "problem": ""
+        },
+        {
+          "i": 22,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "闡明SaO₂、Hb、CO三者獨立，SpO₂不能彌補Hb低。",
+          "nonredundancy_reason": "刪除會失去對氧含量多因素交互的說明。",
+          "problem": ""
+        },
+        {
+          "i": 23,
+          "verdict": "keep",
+          "role": "safety",
+          "reader_gain": "提醒VO₂需用CvO₂計算，避免直接以ScvO₂估算全身耗氧。",
+          "nonredundancy_reason": "若去除，讀者可能誤用ScvO₂推算氧耗，產生錯誤判斷。",
+          "problem": ""
+        },
+        {
+          "i": 24,
+          "verdict": "keep",
+          "role": "safety",
+          "reader_gain": "說明高ScvO₂不等於全身足氧，可能因多種因素造成。",
+          "nonredundancy_reason": "刪除會讓人誤以為ScvO₂高即代表組織無缺氧。",
+          "problem": ""
+        },
+        {
+          "i": 25,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "強調lactate與ScvO₂可同時真實存在，不能二選一。",
+          "nonredundancy_reason": "若省略，讀者可能仍在兩者間做錯誤二元選擇。",
+          "problem": ""
+        },
+        {
+          "i": 26,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "解釋乳酸產生機制多元，非僅缺氧所致，避免簡化分類。",
+          "nonredundancy_reason": "刪除會失去乳酸生成多因素的完整認識，易誤判。",
+          "problem": ""
+        }
+      ]
+    },
+    {
+      "start": 26,
+      "id": "chatcmpl-ae0810ba-7d86-4323-b02c-3dd59666d083",
+      "usage": {
+        "prompt_tokens": 6116,
+        "completion_tokens": 2661,
+        "total_tokens": 8777,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "neurons": 376.0306396484375
+      },
+      "reviews": [
+        {
+          "i": 27,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "提醒讀者單一藥物與乳酸升高的因果關係不確定",
+          "nonredundancy_reason": "此段唯一指出病例解釋的局限性，避免誤以為因果確立",
+          "problem": ""
+        },
+        {
+          "i": 28,
+          "verdict": "keep",
+          "role": "source_context",
+          "reader_gain": "說明圖表時間點非等距，防止誤讀趨勢",
+          "nonredundancy_reason": "提供關鍵資訊避免讀者把未定義的 T6 當作真實資料",
+          "problem": ""
+        },
+        {
+          "i": 29,
+          "verdict": "keep",
+          "role": "evidence_boundary",
+          "reader_gain": "揭示乳酸與 BE 同時變化不一致的臨床意義",
+          "nonredundancy_reason": "唯一說明 T1‑T2 之間的代謝指標差異，不能被其他段落取代",
+          "problem": ""
+        },
+        {
+          "i": 30,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "闡明 BE 受多種離子影響，不能僅歸因於乳酸或單一治療",
+          "nonredundancy_reason": "此說明在文中唯一提醒缺乏同步電解質資料的限制",
+          "problem": ""
+        },
+        {
+          "i": 31,
+          "verdict": "keep",
+          "role": "orientation",
+          "reader_gain": "提醒讀者乳酸升高不等於酸鹼失衡，BE 改善不代表危險解除",
+          "nonredundancy_reason": "提供對本段落核心訊息的總結，其他段落未作同樣概括",
+          "problem": ""
+        },
+        {
+          "i": 32,
+          "verdict": "keep",
+          "role": "case_evidence",
+          "reader_gain": "引入第二位患者的臨床背景，作為對照案例",
+          "nonredundancy_reason": "此段唯一呈現 SGLT2 抑制劑相關的患者資訊",
+          "problem": ""
+        },
+        {
+          "i": 33,
+          "verdict": "keep",
+          "role": "case_evidence",
+          "reader_gain": "列出該患者術後酸鹼與代謝指標的具體數值",
+          "nonredundancy_reason": "提供唯一的原始檢驗資料，支撐後續討論",
+          "problem": ""
+        },
+        {
+          "i": 34,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "明確區分 SvO₂ 與 ScvO₂ 的採樣位置與意義",
+          "nonredundancy_reason": "此說明在全文中唯一提醒兩者不可混用",
+          "problem": ""
+        },
+        {
+          "i": 35,
+          "verdict": "keep",
+          "role": "orientation",
+          "reader_gain": "提出為何低乳酸與低血糖仍會出現代謝性酸中毒的疑問",
+          "nonredundancy_reason": "此問題設定是後續解釋的出發點，無其他段落替代",
+          "problem": ""
+        },
+        {
+          "i": 36,
+          "verdict": "keep",
+          "role": "causal_bridge",
+          "reader_gain": "說明 euDKA 的病因與治療，強調酮體是酸化來源",
+          "nonredundancy_reason": "唯一提供此患者酮症機制與管理的完整說明",
+          "problem": ""
+        },
+        {
+          "i": 37,
+          "verdict": "keep",
+          "role": "safety",
+          "reader_gain": "警示不能把單一病例的結論套用於所有 CABG 病人",
+          "nonredundancy_reason": "此段唯一提醒過度概化的危險，防止臨床誤用",
+          "problem": ""
+        },
+        {
+          "i": 38,
+          "verdict": "keep",
+          "role": "decision",
+          "reader_gain": "糾正「酸血症＝乳酸過高」與「乳酸不高＝無酸中毒」的錯誤觀念",
+          "nonredundancy_reason": "此結論在全文中唯一明確列出兩個相反的誤解",
+          "problem": ""
+        },
+        {
+          "i": 39,
+          "verdict": "keep",
+          "role": "decision",
+          "reader_gain": "提供完整 ABG 解析所需的額外檢驗與 AG 計算指引",
+          "nonredundancy_reason": "此段落唯一說明如何擴展 ABG 評估，避免遺漏關鍵指標",
+          "problem": ""
+        }
+      ]
+    },
+    {
+      "start": 39,
+      "id": "chatcmpl-95316719-da16-45af-8dbf-352c45882bff",
+      "usage": {
+        "prompt_tokens": 6368,
+        "completion_tokens": 6139,
+        "total_tokens": 12507,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "neurons": 621.18505859375
+      },
+      "reviews": [
+        {
+          "i": 40,
+          "verdict": "keep",
+          "role": "orientation",
+          "reader_gain": "提供具體的術後四小時情境，讓讀者立即感受數值與藥物的臨床衝突。",
+          "nonredundancy_reason": "若刪除，缺少生動案例，讀者難以將抽象指標與實際決策連結。",
+          "problem": ""
+        },
+        {
+          "i": 41,
+          "verdict": "keep",
+          "role": "decision",
+          "reader_gain": "提醒不能在缺氧與藥物兩極間二選一，避免簡化思考導致錯誤治療。",
+          "nonredundancy_reason": "刪除會失去對二元思維陷阱的警示，讀者可能仍選擇單一對策而危及患者安全。",
+          "problem": ""
+        },
+        {
+          "i": 42,
+          "verdict": "keep",
+          "role": "safety",
+          "reader_gain": "列舉胸管出血、血壓下降等急迫徵象，教導先行評估循環危機。",
+          "nonredundancy_reason": "若省略，讀者可能忽視即時外科評估的重要性，延誤危險處置。",
+          "problem": ""
+        },
+        {
+          "i": 43,
+          "verdict": "keep",
+          "role": "decision",
+          "reader_gain": "說明在無明顯出血時，如何整合心電、超音波與藥物資訊判斷血流。",
+          "nonredundancy_reason": "刪除會失去對多參數綜合判讀的指導，易陷入單一指標決策而增加錯誤風險。",
+          "problem": ""
+        },
+        {
+          "i": 44,
+          "verdict": "keep",
+          "role": "safety",
+          "reader_gain": "強調同時取得酸鹼、電解質與酮體等資料，避免僅靠乳酸判斷。",
+          "nonredundancy_reason": "若刪除，讀者可能忽略多面向檢查，僅以乳酸變化作治療依據。",
+          "problem": ""
+        },
+        {
+          "i": 45,
+          "verdict": "keep",
+          "role": "evidence_boundary",
+          "reader_gain": "說明無需 Swan‑Ganz，利用簡易監測亦能構建可靠的血流模型以指導臨床決策。",
+          "nonredundancy_reason": "刪除會讓讀者誤以為必須高階導管，限制資源有限單位的實用性。",
+          "problem": ""
+        },
+        {
+          "i": 46,
+          "verdict": "keep",
+          "role": "evidence_boundary",
+          "reader_gain": "提醒讀者勿將手術期 CPB 目標直接套用至 ICU 後的血流管理，以免誤導治療。",
+          "nonredundancy_reason": "若省略，可能導致讀者把手術中指標誤用於術後，產生不當液體或升壓策略。",
+          "problem": ""
+        },
+        {
+          "i": 47,
+          "verdict": "keep",
+          "role": "orientation",
+          "reader_gain": "指出兩個數值本身無錯，強調避免以單一指標替代完整生理判斷。",
+          "nonredundancy_reason": "刪除會失去對指標誤用的警示，讀者易回到簡化思維陷阱。",
+          "problem": ""
+        },
+        {
+          "i": 48,
+          "verdict": "keep",
+          "role": "definition",
+          "reader_gain": "清晰定義 ABG、BE、乳酸、ScvO₂、Hb 與 CO 各自意義，以建立正確的臨床概念。",
+          "nonredundancy_reason": "若刪除，讀者可能混淆各指標含義，導致錯誤解讀與治療決策。",
+          "problem": ""
+        },
+        {
+          "i": 49,
+          "verdict": "keep",
+          "role": "counterfactual",
+          "reader_gain": "以 euDKA 例證說明乳酸正常亦可有嚴重酸中毒，提醒多元代謝評估。",
+          "nonredundancy_reason": "刪除會讓讀者誤以為乳酸正常即排除所有代謝性酸中毒，失去警示。",
+          "problem": ""
+        },
+        {
+          "i": 50,
+          "verdict": "keep",
+          "role": "navigation",
+          "reader_gain": "概述在 ICU 中判斷危險、選擇檢查與補足未測項目的流程指引。",
+          "nonredundancy_reason": "若省略，讀者缺乏整體決策框架，難以系統化處理複雜病情。",
+          "problem": ""
+        },
+        {
+          "i": 51,
+          "verdict": "keep",
+          "role": "navigation",
+          "reader_gain": "預告下一篇探討 SpO₂ 正常下的氧輸送危機，激發讀者持續學習動機。",
+          "nonredundancy_reason": "刪除會失去對後續內容的鋪陳，讀者可能不知後面主題延伸。",
+          "problem": ""
+        },
+        {
+          "i": 52,
+          "verdict": "keep",
+          "role": "source_context",
+          "reader_gain": "說明兩例患者資料不可混合，並提供來源清單，確保資訊透明與可追溯。",
+          "nonredundancy_reason": "若刪除，讀者可能誤以為數據可隨意拼接，降低文章可信度。",
+          "problem": ""
+        }
+      ]
+    }
+  ]
+}
