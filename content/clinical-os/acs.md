@@ -20,6 +20,8 @@ ACS（acute coronary syndrome，急性冠心症）不是一個「驗血陽性」
 
 即使同是 troponin 上升，plaque rupture、肺炎造成的供需失衡與 myocarditis 所需的治療也不同。[第五版原文](https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025)
 
+[對讀 UDMI5 原文 Figure 2（Primary MI 診斷流程）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F2/)：圖像上層是臨床當下的工作診斷，下層是冠脈與心肌影像如何確認最終病因；沒有把 STEMI 的緊急再灌流建立在必須等候 troponin 陽性的前提上。原圖請由出版社頁面開啟，本站不重製原像素。
+
 ## 二、病人抵達時，優先排除的不是「troponin 陰性」，而是不能等的危險
 
 第一個評估是生命徵象、意識、呼吸功、末梢灌流、持續疼痛與心律：正在休克、肺水腫、反覆 VT/VF 或持續缺血的患者，不可能與疼痛已解除且穩定的人共用同一套排程。同步建立監測、靜脈通路，**取得並判讀 12 導程 ECG，目標在初次醫療接觸後 10 分鐘內完成**；胸痛仍持續或症狀變動時重複 ECG，而非把首張正常當作排除證明。[2023 ESC ACS](https://academic.oup.com/eurheartj/article/44/38/3720/7243210)
