@@ -26,6 +26,17 @@ BNP／NT-proBNP 是心臟壓力負荷相關的訊號，在呼吸困難的鑑別�
 
 這時小麻使用兩條軸線：congestion（wet／dry）與 perfusion（warm／cold）。Wet 問的是左側肺循環或右側體循環**有沒有鬱血表現**；cold 問的是有沒有組織低灌流的證據。兩條軸線不是嚴重度階梯，也不是 HF 的診斷條件。四象限圖的原創教學版可在[四象限與 LVEDP 圖解](2026-10-23-hf-lvedp-figures.md#hf-phenotype-matrix)對照；它不能取代床邊反覆再評估。
 
+<figure class="hemo-figure" id="hf-wet-cold-matrix">
+<figcaption><strong>圖 1｜兩條床邊軸線不能互相替代。</strong> 根據 Pocket Medicine 9E 第 35 頁 congestion／perfusion 的理學評估概念重新整理，非原書圖像；下列只是目前表型，不是自動處置演算法。</figcaption>
+<table>
+<thead><tr><th>此刻的表型</th><th>沒有明顯低灌流</th><th>已有低灌流線索</th></tr></thead>
+<tbody>
+<tr><th>未見明顯鬱血（Dry）</th><td>Dry–warm：仍須追病因與風險</td><td>Dry–cold：先查流量、血容量、RV／心包等原因</td></tr>
+<tr><th>已有鬱血（Wet）</th><td>Wet–warm：釐清鈉水累積與壓力重分布</td><td>Wet–cold：並行處理充盈壓與器官灌流危機</td></tr>
+</tbody>
+</table>
+</figure>
+
 Wet 的肺端線索包括呼吸困難、端坐呼吸、肺部 B-lines、肺水腫影像及胸水；系統靜脈端可從 JVP、肝鬱血、腹水、周邊水腫尋找。兩者不總是同步：右心疾病可能以周邊鬱血主導，急性肺水腫卻可能先以肺部呼吸窘迫表現，周邊看不出多少水。單憑濕囉音、CXR 或 JVP 也都有量測限制，並非任一徵象等於直接量到 wedge pressure。
 
 Cold 不是「血壓低」的同義詞。血壓近似於流量與血管阻力共同作用的結果，SVR 代償上升可以在 cardiac output 下降時仍維持 MAP；反過來，血壓偏低也不一定是心臟輸出不足。因此要連同末梢灌流、意識、尿量、脈壓、乳酸與其時間趨勢判斷，必要時由 echo／侵入性監測補足。乳酸升高可以涉及低灌流，卻也可能受腎肝清除、兒茶酚胺或其他疾病影響，不可直接等同 cardiac index。
