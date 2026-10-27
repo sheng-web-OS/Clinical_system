@@ -710,7 +710,8 @@
         "focus": "比較早期利尿反應與腎功能恢復：尿量的意義取決於正在驗證什麼。",
         "concept_heading": "在急性心衰竭，早期反應能告訴我們什麼、不能告訴我們什麼？"
       }
-    ]
+    ],
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/diuretics-sources.md",
@@ -774,7 +775,8 @@
         "focus": "高 AG 酸化找到分類後，仍須回到 DKA 的致病過程與治療。",
         "concept_heading": "03　Anion gap 找的是未被列入的陰離子，不是「血裡缺了電荷」"
       }
-    ]
+    ],
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-internal-medicine/acid-base-sources.md",
@@ -1102,7 +1104,8 @@
         "focus": "NIV 的可能效益、氣道保護與治療後重評必須同時成立。",
         "concept_heading": "06　第三問 C｜NIV 是一次可驗證的治療試驗，不是插管前必走的儀式"
       }
-    ]
+    ],
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-internal-medicine/copd-sources.md",
@@ -1269,7 +1272,8 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "肝臟與 HBV",
-    "references": "xiaoma-reading-liver-tests-sources.html"
+    "references": "xiaoma-reading-liver-tests-sources.html",
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-27-cholestasis-evidence-to-action.md",
@@ -1306,7 +1310,8 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "肝臟與 HBV",
-    "references": "xiaoma-reading-hbv-phase-sources.html"
+    "references": "xiaoma-reading-hbv-phase-sources.html",
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-hbv-signals.md",
@@ -1320,7 +1325,8 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "肝臟與 HBV",
-    "references": "xiaoma-reading-hbv-phase-sources.html"
+    "references": "xiaoma-reading-hbv-phase-sources.html",
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-wpw-conduction-mechanism.md",
@@ -1334,7 +1340,8 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "心律急症",
-    "references": "xiaoma-reading-arrhythmia-sources.html"
+    "references": "xiaoma-reading-arrhythmia-sources.html",
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-preexcited-af.md",
@@ -1348,7 +1355,8 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "心律急症",
-    "references": "xiaoma-reading-arrhythmia-sources.html"
+    "references": "xiaoma-reading-arrhythmia-sources.html",
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-wct-acls-decision.md",
@@ -1378,7 +1386,8 @@
         "focus": "先分有無脈搏與氣道狀態，再理解成人 CPR 的通氣協作。",
         "concept_heading": "先看完整流程，再討論流程為何不能直接等於診斷"
       }
-    ]
+    ],
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-vte-visual.md",
@@ -1392,7 +1401,8 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "血栓與臨床推理",
-    "references": "xiaoma-reading-vte-sources.html"
+    "references": "xiaoma-reading-vte-sources.html",
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-constipation.md",
@@ -1406,7 +1416,8 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "腸道與藥物反應",
-    "references": "xiaoma-reading-constipation-sources.html"
+    "references": "xiaoma-reading-constipation-sources.html",
+    "updated": "2026-10-27"
   },
   {
     "source": "content/xiaoma-reading/liver-tests-sources.md",
