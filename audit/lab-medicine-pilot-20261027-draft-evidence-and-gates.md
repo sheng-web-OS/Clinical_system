@@ -14,7 +14,7 @@ Issue #180。兩篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD*
 - 2026 BMP IV contamination rules study（僅 PubMed abstract）：https://pubmed.ncbi.nlm.nih.gov/42275628/ 。異常告警有真正病理/治療效應造成者，不能視為已驗證本院工具。
 - Choosing Wisely Canada Using Labs Wisely（網頁）：https://choosingwiselycanada.org/hospitals/labs-test/ 。反對穩定患者無理由 routine daily CBC/chemistry；不能外推到不穩定病人。
 - KDIGO 2027 CKD medication focused update 2026-10-15 起公開審查，尚未正式生效：https://kdigo.org/kdigo-2027-ckd-guideline-focused-update-public-review-open/
-- 已讀到本庫 115 年第二次醫師二階醫學（三）Q26：2026-s2-med3-q26，答案欄為 B；內部 record 仍寫 machine_parsed_visual_and_medical_review_pending，**不能把程式擷取誤當已完成官方 PDF 原圖、答案更正的目視查核**。
+- 已讀到本庫 115 年第二次醫師二階醫學（三）Q26：2026-s2-med3-q26，答案欄為 B；本次額外目視查核考選部官方試題 PDF 第 6 頁、標準答案 PDF 及更正答案 PDF：Q26 = B（vasopressin），且更正未涉及 Q26；原始 machine_parsed_visual_and_medical_review_pending 狀態屬資料檔原先 QA 狀態，不可因此聲稱所有題庫已驗證。
 
 ## 自行計算核對（非獨立審稿）
 - UO：170mL/8h/70kg = 0.304 mL/kg/h；SCr 1.0→1.7 mg/dL，已符合 AKI stage 1 的功能條件。
@@ -42,6 +42,6 @@ SCr/BUN/eGFR、尿量、UA/urine sediment、時間滯後：AKI 功能訊號不�
 - KDIGO 2024 CKD 官方摘要與 Ann Intern Med synopsis：eGFRcr/cys 與 chronicity 的適用脈絡，不可將急速變化的 eGFRcr 當作當下直接測量 GFR；2026 AKI 公開草案未升格。
 - Meta-analysis 2024 (PMID 38768779) 與 2026 BMJ Open (DOI 10.1136/bmjopen-2025-100875) 對 FEUrea 的估計與研究選擇不一致；正文明確只稱中等/有限診斷資訊，不能單憑尿電解質決定是否繼續補液。
 - 腎臟數學初驗：SCr 1.0→1.8 為 1.8 倍、1.1→2.0 為 1.82 倍、1.6→1.9 是 48h 上升 0.3，均符合相應功能性 AKI 判準。這些是自編場景，stage 不等於確定 tubular injury。
-- 113-1 醫學（三）Q29 與 115-2 醫學（三）Q28 已在 private structured bank 精確定位：machine-parsed 正確選項欄分別 D 與 A，**原試題與標準答案 PDF 視覺核讀未完成，不可標為正式題解**。
+- 113-1 醫學（三）Q29 已目視核對考選部原題 PDF 第 8 頁、標準答案 PDF Q29=D；該年度更正表尚未成功取得。115-2 醫學（三）Q28 已目視核對原題 PDF 第 6–7 頁、標準答案與更正表 Q28=A，沒有更正；仍不代表醫學逐段獨立審查完成。
 - 內部相對連結到早晨 Lab、既有利尿劑文章已讀回存在；讀者閱讀成效／獨立審查／正式發布仍全數待證。
 - P1：獨立醫學 reviewer 再審可能過度簡化的 AKI staging、urine sediment specificities、FEUrea pooled estimates、動態 eGFR 與心衰去充血；未經放行不得合併。
