@@ -42,7 +42,7 @@ class PublicCopyBoundariesTest(unittest.TestCase):
                 ))
 
     def test_verification_belongs_in_source_page_not_teaching_body(self):
-        provenance = "### 本篇來源與版本界線\\n原始資料使用：考選部官方試卷"
+        provenance = "### 本篇來源與版本界線\n原始資料使用：考選部官方試卷"
         self.assertEqual([], public_copy_leak_errors(
             "content/xiaoma-internal-medicine/exam-gi-liver-three-sources.md", provenance
         ))
