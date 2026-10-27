@@ -74,3 +74,25 @@
     }
   }catch(e){}
 })();
+
+// A cached static page must not keep yesterday's articles under today's label.
+(()=>{
+ const updates=document.querySelector('[data-today-updates]');
+ if(!updates)return;
+ const formatter=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'});
+ const refresh=()=>{
+  const parts=Object.fromEntries(formatter.formatToParts(new Date()).map(p=>[p.type,p.value]));
+  const today=parts.year+'-'+parts.month+'-'+parts.day;
+  updates.querySelector('[data-today-label]').textContent=today;
+  let visible=0;
+  for(const card of updates.querySelectorAll('[data-updated]')){
+   card.hidden=card.dataset.updated!==today;
+   card.style.display=card.hidden?'none':'';
+   if(!card.hidden)visible++;
+  }
+  updates.querySelector('[data-today-empty]').hidden=visible>0;
+ };
+ refresh();
+ document.addEventListener('visibilitychange',refresh);
+ setInterval(refresh,60000);
+})();
