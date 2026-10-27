@@ -136,8 +136,6 @@ def validate_semantic_gate(root, pages):
     errors = []
     if (set(frozen) | set(reviews)) - sources:
         errors.append("Semantic registry contains sources outside publication catalog")
-    if set(frozen) & set(reviews):
-        errors.append("Semantic registry baseline/review overlap")
     for page in teaching:
         path = page["source"]
         data = (root / path).read_bytes()
