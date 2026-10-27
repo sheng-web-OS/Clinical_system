@@ -90,6 +90,39 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertIn("ASD 與 Eisenmenger：官方更正 B 或 D", archive)
         self.assertIn("原圖待核", archive, "Image-dependent questions cannot masquerade as verified figures")
 
+
+    def test_all_heart_sounds_cross_specialty_questions_have_readable_material_links(self):
+        """Both cross-specialty question collections must expose a real topic section from each year-list row."""
+        from exam_archive import question_connections, concept_url, question_key
+
+        sources = {
+            "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md",
+            "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md",
+        }
+        connections = question_connections(self.pages, ROOT)
+        archive = render_exam_archive(self.pages, ROOT)
+        records = {question_key(record["exam"]): record for record in question_records(self.pages)}
+        checked = 0
+        for page in self.pages:
+            if page["source"] not in sources:
+                continue
+            for question in page["exam_questions"]:
+                with self.subTest(source=page["source"], question=question["question_heading"]):
+                    self.assertIn("concept_heading", question, "This question has no linked learning context")
+                    self.assertNotEqual(question["concept_heading"], question["question_heading"])
+                    key = question_key(question)
+                    expected = concept_url(page, question, ROOT)
+                    self.assertTrue(any(link["href"] == expected for link in connections[key]))
+                    marker = '<div class="exam-catalog-question" id="' + archive_anchor(records[key]) + '"'
+                    self.assertIn(marker, archive)
+                    row = archive.split(marker, 1)[1].split("</div>", 1)[0]
+                    self.assertIn('data-materials="', row)
+                    self.assertIn('class="exam-catalog-materials"', row)
+                    self.assertIn('href="' + expected + '"', row)
+                    self.assertNotEqual(expected, page["output"] + "#" + records[key]["anchor"])
+                    checked += 1
+        self.assertEqual(checked, 49)
+
     def test_future_year_sorts_above_108_automatically(self):
         pages = copy.deepcopy(self.pages)
         newer = copy.deepcopy(next(p for p in pages if p.get("exam")))

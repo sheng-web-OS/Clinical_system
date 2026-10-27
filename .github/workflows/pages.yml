@@ -39,21 +39,51 @@ jobs:
         run: |
           python site/build.py
           python tools/check_output.py
-      - name: Cache Chromium browser for image layout QA
+      - name: Install Chromium for image layout QA
+        if: github.event_name == 'pull_request'
+        timeout-minutes: 12  # browser bootstrap stays bounded; apt mirror stalls cannot fail at 4 minutes
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.57.0
+          # Install the browser before touching apt: hosted Ubuntu already provides
+          # most runtime libraries. Avoid downloading nonessential distro font packs
+          # on every PR, which previously stalled at azure.archive.ubuntu.com.
+          python -m playwright install chromium
+          # A real launch is mandatory. If the runner lacks libraries, install
+          # Playwright's official dependencies and retry; never skip visual QA.
+          if ! python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); b=p.chromium.launch(headless=True); b.close(); p.stop()'; then
+            python -m playwright install-deps chromium
+            python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); b=p.chromium.launch(headless=True); b.close(); p.stop()'
+          fi
+      - name: Restore pinned Traditional Chinese browser font
         if: github.event_name == 'pull_request'
         uses: actions/cache@v4
         with:
-          path: ~/.cache/ms-playwright/
-          key: playwright-chromium-1.57.0-${{ runner.os }}-${{ runner.arch }}
-      - name: Install Chromium for image layout QA
+          path: ~/.local/share/fonts/NotoSansTC-VF.ttf
+          key: noto-tc-browser-v2004-523d033d
+      - name: Validate Traditional Chinese glyphs before screenshots
         if: github.event_name == 'pull_request'
-        timeout-minutes: 6  # allow browser download; avoid slow and unnecessary apt font mirror
+        timeout-minutes: 4
         run: |
-          python -m pip install --disable-pip-version-check playwright==1.57.0
-          # Browser screenshots must render Traditional Chinese glyphs, not tofu boxes.
-          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
-          test -n "$(fc-list :lang=zh family)" || { echo 'CJK font unavailable'; exit 1; }
-          python -m playwright install chromium
+          mkdir -p "$HOME/.local/share/fonts"
+          FONT="$HOME/.local/share/fonts/NotoSansTC-VF.ttf"
+          if [ ! -s "$FONT" ]; then
+            # Official Noto CJK, Taiwan subset; source commit pinned, not main.
+            curl --fail --location --silent --show-error --retry 2 \
+              --connect-timeout 15 --max-time 180 \
+              'https://raw.githubusercontent.com/notofonts/noto-cjk/523d033d6cb47f4a80c58a35753646f5c3608a78/Sans/Variable/TTF/Subset/NotoSansTC-VF.ttf' \
+              --output "$FONT"
+          fi
+          test "$(stat -c '%s' "$FONT")" -gt 2000000
+          # Audit the exact official upstream binary, including cache restores.
+          echo "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591  $FONT" | sha256sum --check
+          fc-cache -f "$HOME/.local/share/fonts"
+          fc-match -f '%{family}\\n' 'Noto Sans TC' | grep -F 'Noto Sans TC'
+      - name: Verify official exam study links on 360/375/390px phones
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet origin/main...HEAD -- site/pages.json site/exam_archive.py site/build.py site/styles.css tools/qa_exam_year_mobile.py; then
+            python tools/qa_exam_year_mobile.py --output visual-qa-artifacts/exam-year
+          fi
       - name: Enforce SAAG exam table readability on phone
         if: github.event_name == 'pull_request'
         run: |
