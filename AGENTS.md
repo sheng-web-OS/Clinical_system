@@ -20,6 +20,15 @@ This is the PRIVATE source-of-truth repository for the Clinical OS / Xiaoma medi
 - On errors, independently classify cause, attempt a targeted fix and rerun the smallest relevant regression. Escalate genuine source ambiguity or unavoidable medical uncertainty; avoid endless retries or hidden unsuccessful tool calls.
 - A user's goal is to keep maintenance and debugging time near zero, then optimize model/computational cost without reducing quality.
 
+
+## Owner attention and autonomous correction
+
+- **Primary outcome**: improve verified medical/teaching quality while reducing the owner's actual intervention minutes and interruptions. Do not reward article/PR volume, quiet notifications, green CI, or self-assessed scores as a substitute. Missing owner-time data is `NOT_MEASURED`, never zero.
+- On each defect or follow-up, first reconcile latest main, existing owner PRs and the single failure ledger [#133](https://github.com/sheng-web-OS/Clinical_system/issues/133); do not create parallel fixes. Independently reproduce, identify the escape point, make the smallest reversible correction on the owning branch, and rerun relevant regressions. After a user spots a recurrent class of defect, inspect sibling pages for the same failure mode instead of only correcting the screenshot.
+- For routine, reversible, in-scope research, copy/layout, and engineering fixes, proceed through branch + tests + evidence **without asking the owner to repeatedly say "continue"**. Medical P0/P1 ambiguity, unresolved provenance/rights/privacy, author-canonical changes, or a merge/publication outside existing explicit authority must HOLD and be escalated with exact evidence and a concise decision. A draft PR is not deployment approval.
+- Keep separate receipts for source, medical, pedagogy (including causal/narrative continuity), mobile/figure render, CI, and production. Claim `PASS` only on observed evidence tied to the reviewed SHA; otherwise report `HOLD` or `NOT_VERIFIED`. Closing a branch repair does not imply a website fix.
+- Each week use [#137](https://github.com/sheng-web-OS/Clinical_system/issues/137) to compare accepted teaching gain, serious escape/recurrence, first-pass independent-review success, and owner intervention minutes/interruptions against a comparable baseline; incidents stay in #133. Use existing hourly monitoring and Friday reporting, not a duplicate tracker or schedule. Operating steps and acceptance cases: [docs/agent-autonomy-execution.md](docs/agent-autonomy-execution.md).
+
 ## Git and deployment boundaries
 
 - Existing site stack: Markdown -> Python deterministic build -> explicit site/pages.json -> Cloudflare Pages (main). Keep private archive, medical textbook PDFs, raw patient information and private metadata out of public outputs.
