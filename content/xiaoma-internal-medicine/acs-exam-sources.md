@@ -19,6 +19,15 @@
 - [2025 ACC/AHA ACS Guideline §11.1](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009)：ACS 無高出血風險時預設 DAPT **至少 12 個月**；有高出血風險、合併 OAC 或符合策略條件者可考慮縮短或減藥。114 Q6 選項 B「新世代 DES 使 6 個月後有可能停止」不是對**任何 ACS**均安全適用的規則，不能只因本題官方 C 就把 B 當通用臨床建議。
 - Q9 的症狀與容量負荷／灌流推理應分開：飲水很多是可能加重鬱血的**行為／背景**，不等於 HF 的症狀；下肢水腫、疲乏、夜間陣發性呼吸困難及端坐呼吸則屬可出現的 HF 表現，但仍須綜合臨床判斷，不能用症狀單項作確診。
 
+## 115 年第二次醫師第二階段・醫學（三）第 11、12、13 題（連續官方病例）
+
+- [考選部官方試卷，題號 1302，PDF 第 3–4 頁 Q11–Q13](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q#page=3)：Q11 前壁 V1–V4 STE，初步治療；Q12 LAD 置入 DES 後 VT/VF、LV thrombus 與 ACEi/ARB；Q13 心肌缺血的 perfusion／wall motion／ECG／cTn 時間關係。已核讀題幹、四選項與共同病例條件。三題均無需原卷另附 ECG 影像，只有「V1–V4 ST elevation」文字描述。
+- [考選部更正答案 PDF 第 1 頁](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M#page=1)：**Q11 B、Q12 C、Q13 D**，三題均未更正；該卷另對 Q1、Q8、Q10、Q36、Q38、Q40 有特殊更正。
+- [2025 ACC/AHA ACS guideline §4.1](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009)：SpO₂ ≥90% 不常規補氧；§4.2 nitrate 用於符合血流動力條件的缺血性胸痛，SL 0.3–0.4 mg，不能代替 reperfusion；aspirin loading 162–325 mg 而非考題不適當的 600 mg。
+- [2025 ACC/AHA ACS guideline §9.2](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009)：心律不整應按現行節律、灌流、持續缺血與復發風險判斷，不能把 VT/VF 轉回竇律等同常規 prophylactic lidocaine 有效。
+- [2022 AHA LV thrombus 科學聲明（ACC clinical summary）](https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/09/23/13/56/Management-of-Patients-at-Risk)：post-MI 影像已確診 LV thrombus，通常考慮約三個月 OAC，依影像、出血與合併抗板策略調整；原卷寫可考慮 3–6 個月，不能機械變成每一位 DES 病人的固定處方。
+- **重要邊界：**Q11 在四選項中 B 最適當，不表示選項只有硝酸甘油就足夠，仍須緊急再灌流；Q13 是定性缺血演變模型，不能將 perfusion、mechanical dysfunction、ECG、cTn 的觀察時間誤寫為每個病例必然等秒數出現。
+
 ## 跨篇定位與尚未完成的項目
 
 - [ACS 四章整合入口](../clinical-os/acs.md)：診斷 MI 類別／ECG 證據／抗凝–抗板–PCI 的角色／MI 後心衰。
