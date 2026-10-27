@@ -30,7 +30,7 @@
 | KDIGO 2024 CKD 官網 https://kdigo.org/guidelines/cKD-Evaluation-and-Management/ | 官網頁 + executive summary | GFR/albuminuria 和 chronicity 的共同評估；2027 focused chapter 仍為 public review |
 | AHRQ PSNet, Hemolysis Holdup https://psnet.ahrq.gov/web-mm/hemolysis-holdup | 專家病例文字 | 溶血可使 K 結果不可靠；並不必然造成假性「較高」結果 |
 | *Laboratory Artifacts in Clinical Medicine*, Mayo Clinic Proceedings 2026, DOI 10.1016/j.mayocp.2026.04.009 | PubMed 摘要 + journal 網頁 summary；**未取得完整論文** | pseudohyperkalemia、EDTA platelet clumping 等假性異常的概要 |
-| UKKA Treatment of Acute Hyperkalaemia official page https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0 | 官網版本／更新頁；**未目視核對 July 2026 PDF 算法** | 只能支援臨床風險與本院指引必要性；具體給藥流程與劑量 HOLD |
+| UKKA Treatment of Acute Hyperkalaemia official page https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0 | 官網版本及 July 2026 PDF 印刷 7、14、15 頁已目視；**完整 Appendix 算法仍待核對** | 只能支援臨床風險與本院指引必要性；具體給藥流程與劑量 HOLD |
 | European Hyponatraemia Guideline https://academic.oup.com/ejendo/article/170/3/G1/6668028 and correction https://academic.oup.com/ejendo/article/171/1/X1/6661472 | 官方期刊 HTML 及勘誤 | 2.4 per 100 mg/dL；明確避免原版公式排印／單位錯誤 |
 | MedlinePlus CBC and Differential (official) | 官方臨床教育網頁 | CBC 與 DC 的量測對象，ANC 作臨床運算而非來源直接給定數字 |
 | Choosing Wisely Canada, Using Labs Wisely, https://choosingwiselycanada.org/hospitals/labs-test/ | 現行專業建議頁 | 限定於穩定患者避免無臨床問題的 daily CBC/chemistries |
@@ -39,7 +39,7 @@
 
 - **通過：** 自編病例身分、單位、時間軸、數學、自編反事實、真／假 K 並行檢查、AKI≠病因、輸液後 Hb 下降≠已排除失血、DC 百分比≠ANC、慢性 eGFR 不能套用急性情境、逐項抽血需有目的。
 - **修正：** 源於第一次檔案寫入的酸鹼教材相對路徑錯誤已修復並核實目的檔存在；Na-correction 來源係數不一致已修復。
-- **尚未通過：** 分離寫作與審稿的獨立語義 review、逐段 packet / editorial-semantic-reviews.json、UKKA July 2026 原始 PDF 的完整療法圖核對、外部病例資料可合法展示／對照、手機 360/375/390 視覺 QA、完整 CI。因**尚未列為公開頁面**，以上應在決定發布前按最小必要步驟完成，不應偽稱通過。
+- **尚未通過：** 分離寫作與審稿的獨立語義 review、逐段 packet / editorial-semantic-reviews.json、UKKA July 2026 原始 PDF 未覆蓋的 Appendix 療法圖核對、外部病例資料可合法展示／對照、手機 360/375/390 視覺 QA、完整 CI。因**尚未列為公開頁面**，以上應在決定發布前按最小必要步驟完成，不應偽稱通過。
 - **風險邊界：** 應由當院 critical value 通報與臨床 protocol 決定急性電解質處置；本文沒有提供具體 insulin/calcium/IV K 劑量，不能被拿來取代醫囑或在低血壓情境下自動決定再輸多少液。
 
 ## 下一個最有價值的工作
