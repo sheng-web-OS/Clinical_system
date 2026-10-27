@@ -88,6 +88,84 @@ def audit_generated_finding_quotes(article, answer):
     }
 
 
+
+def triage_revision_claims(article, answer):
+    """High-specificity context-risk triage, NOT an automatic semantic verdict.
+
+    Each candidate keeps an exact original-source neighborhood for independent
+    review. Lexical cues are deliberately only reason-to-review flags; neither
+    flagged nor unflagged content earns automatic approval or rejection.
+    """
+    require(isinstance(article, str) and article.strip()
+            and isinstance(answer, str) and answer.strip(),
+            "complete article and generated review required")
+    sections = re.split(r"(?m)(?=^\s*\d{1,2}\.\s*原文\s*[：:])", answer)
+    sections = [part for part in sections if re.search(r"^\s*\d{1,2}\.\s*原文", part)]
+    raw_compact = [(char, index) for index, char in enumerate(article)
+                   if not char.isspace()]
+    compact_source = "".join(char for char, _ in raw_compact)
+    triggers = (
+        ("universal_scope", "不是所有", r"所有.{0,22}(?:都|必然|會|遵循)"),
+        ("single_test_overreach", "並不是", r"單獨|單憑"),
+        ("negated_implication", "不代表", r"沒有關係|不會影響|直接關係"),
+        ("minimum_as_maximum", "至少", r"只需要|僅需|只有"),
+    )
+    results = []
+    for section in sections:
+        original = re.search(r"原文\s*[：:]\s*「([^」]+)」", section)
+        critique = re.search(r"問題機制\s*[：:]\s*([^\n]+)", section)
+        proposed = re.search(r"最小改法\s*[：:]\s*([^\n]+)", section)
+        quote = original.group(1) if original else ""
+        mechanism = critique.group(1) if critique else ""
+        minimal_edit = proposed.group(1) if proposed else ""
+        key = "".join(quote.split())
+        offset = compact_source.find(key) if key else -1
+        evidence_found = offset >= 0
+        if evidence_found:
+            left = raw_compact[offset][1]
+            right = raw_compact[offset + len(key) - 1][1] + 1
+            context = article[max(0, left - 700):min(len(article), right + 700)]
+        else:
+            left = None
+            right = None
+            context = None
+        reversal = [name for name, source_literal, pattern in triggers
+                    if source_literal in quote and re.search(pattern, mechanism)]
+        result = {
+            "number": len(results) + 1,
+            "quoted_source_text": quote,
+            "source_start_char": left,
+            "source_end_char": right,
+            "source_span_found_ignoring_whitespace": evidence_found,
+            "exact_contiguous_quote": quote in article if quote else False,
+            "critique": mechanism,
+            "proposed_edit": minimal_edit,
+            "source_context_excerpt": context,
+            "risk_signals": reversal,
+            "context_rebuttal_required": bool(reversal) or not evidence_found,
+            "decision": "HOLD_FOR_CONTEXT_REVIEW" if reversal or not evidence_found
+                        else "REVIEW_REQUIRED_NOT_CLEARED",
+            "not_a_medical_or_teaching_truth_verdict": True,
+        }
+        results.append(result)
+    return {
+        "evidence_level": "LEXICAL_CONTEXT_CUE_ONLY",
+        "finding_count": len(results),
+        "located_count": sum(r["source_span_found_ignoring_whitespace"] for r in results),
+        "scope_reversal_review_flags": sum(bool(r["risk_signals"]) for r in results),
+        "context_rebuttal_required_count":
+            sum(r["context_rebuttal_required"] for r in results),
+        "unparseable_or_absent_findings": len(results) == 0,
+        "findings": results,
+        "automatic_accepts": 0,
+        "automatic_rejections": 0,
+        "public_edit_allowed": False,
+        "medical_quality_verified": False,
+        "limitations": "Flags are a post-hoc lexical triage signal, not a validated false-positive classifier; no unflagged finding is approved. Full source and clinical independent review remain necessary.",
+    }
+
+
+
 def anchored_file(root, relative, digest):
     require(isinstance(relative, str) and relative.startswith("content/")
             and not relative.startswith("content//"), "only public teaching-source paths permitted")
@@ -312,6 +390,9 @@ def main():
     q = cmd.add_parser("audit")
     q.add_argument("--article", required=True)
     q.add_argument("--response", required=True)
+    c = cmd.add_parser("context")
+    c.add_argument("--article", required=True)
+    c.add_argument("--response", required=True)
     a = parser.parse_args()
     try:
         if a.cmd == "prepare":
@@ -326,6 +407,9 @@ def main():
         elif a.cmd == "audit":
             result = audit_generated_finding_quotes(Path(a.article).read_text(encoding="utf-8"),
                                                     Path(a.response).read_text(encoding="utf-8"))
+        elif a.cmd == "context":
+            result = triage_revision_claims(Path(a.article).read_text(encoding="utf-8"),
+                                           Path(a.response).read_text(encoding="utf-8"))
         else:
             result = judge_order_calibration(json.loads(Path(a.grades).read_text()))
         print(json.dumps(result, ensure_ascii=False, indent=2))
