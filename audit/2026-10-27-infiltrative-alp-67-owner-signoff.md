@@ -23,4 +23,11 @@
 
 - **Agent 原始來源逐段複核（非 owner approval）**：ASH 2026 Diagnosis of AL amyloidosis 指引 good-practice 明定 electrophoresis 單獨不可作為 AL 篩查／排除工具，疑似 AL 需 serum/urine immunofixation + sFLC；陽性單株蛋白非沉積物確診，診斷需 tissue amyloid + subtyping。Doe-Williams et al., Case Rep Gastroenterol 2020 PMID 32518538 的 50 歲個案原文顯示 SPEP 為 acute inflammatory pattern、serum IFE 陰性、urine IFE 微弱 lambda 陽性；肝切片 **95% of specimen**、ALP **85 IU/L**、ALT 14、AST 24、bilirubin 0.57。用於破除 ALP 與切片受累程度線性關聯，不能外推敏感度。
 - **來源**：[ASH 2026 正式全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC13425172/)、[Karger 2020 原始病例](https://karger.com/crg/article/14/2/271/86741/Massive-Hepatomegaly-Secondary-to-Amyloidosis-with)、[PubMed](https://pubmed.ncbi.nlm.nih.gov/32518538/)。
-- 最新正式文章 blob：`0e0c6e81339ea369e07a26509fa6be68da219812`；PR HEAD 此後若移動，需重新取檔案 blob。內部審查狀態仍為 **P0/P1/figure/whole manuscript PENDING，merge/deploy NOT AUTHORIZED**。
+- 最新正式文章 blob：`1a806cd9a214816e1f3a0f0dd3ba510be494607b`；PR HEAD 此後若移動，需重新取檔案 blob。內部審查狀態仍為 **P0/P1/figure/whole manuscript PENDING，merge/deploy NOT AUTHORIZED**。
+
+
+## Figure 1 semantic revision — author review still PENDING
+
+- New figure ID unchanged: `fig-infiltrative-alp-update`. Earlier 4-column text matrix replaced with three independently-labeled decision branches at the **same ALP/GGT signal**: (A) drug/pruritus/immune evidence → PBC/DILI differential; (B) known tumor + new lesion → increased infiltrative suspicion, imaging +/- tissue; (C) hepatomegaly + otherwise unexplained proteinuria → testable amyloid suspicion with **SPEP alone insufficient**, SIFE/UIFE/sFLC and validated tissue subtype where appropriate. Every branch names the alternative and next diagnostic action.
+- Article blob **`1a806cd9a214816e1f3a0f0dd3ba510be494607b`**, PR current HEAD at audit time `9b94820aa2bc6c96bfb7913adfb1b202a612baf5`; separate scoped responsive CSS and Figure Gate teaching role were updated. Branches are **hypothetical** and do not equate a single lab result with a microscopic diagnosis.
+- This is an Agent revision for *semantic clarity* and must be **reviewed by the owner**, not a claim of figure ACCEPT or whole-article release permission. Re-run same-head CI and 360/390/1280px figure screenshots. Publication **HOLD**.
