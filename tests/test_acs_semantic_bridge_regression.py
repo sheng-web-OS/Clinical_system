@@ -65,5 +65,17 @@ class ACSSemanticBridgeRegressions(unittest.TestCase):
 
 
 
+    def test_post_mi_acute_mr_distinguishes_immediate_dysfunction_from_delayed_rupture(self):
+        """AHA 2021 mechanical complications: immediate MR is not synonymous with rupture."""
+        section = self.body.split("## 十、導管已經成功", 1)[1].split("## 十一、讓歷屆國考", 1)[0]
+        self.assertIn("乳突肌缺血性功能失調", section)
+        self.assertIn("乳突肌破裂通常", section)
+        self.assertIn("數日", section)
+        self.assertLess(section.index("乳突肌缺血性功能失調"), section.index("乳突肌破裂通常"))
+        case = self.body.split("## 十二、三次反事實", 1)[1]
+        self.assertIn("剛完成 PCI", case)
+        self.assertIn("數日後", case)
+
+
 if __name__ == "__main__":
     unittest.main()
