@@ -66,6 +66,19 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertIn("#af-two-exits .af-desktop-conduction{display:none}", css)
         self.assertIn("#af-two-exits .af-mobile-conduction{display:block", css)
 
+    def test_cticu_cabg_figure_reasons_from_observed_data_not_abstract_cards(self):
+        lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md").read_text("utf-8")
+        image = figure(lesson, "cticu-measurement-layers")
+        for visible_cue in ("CABG 病例 3", "14.8", "95%", "實測",
+                            "不能直接推出", "CaO₂", "DO₂", "不能", "床邊"):
+            self.assertIn(visible_cue, image)
+        self.assertIn("minmax(min(100%,235px),1fr)", image,
+                      "Phone-sized figure must be allowed to stack instead of overflowing")
+        self.assertNotIn("四個不能互換的觀察層次", image)
+        self.assertNotIn("所以第一名病人的 ScvO₂ 95%", lesson,
+                         "Wardhana Table 1 values are for the third CABG patient")
+        self.assertIn("Wardhana", image)
+
     def test_cticu_oxygen_caption_has_no_raw_markdown_and_stays_secondary_on_phone(self):
         lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md").read_text("utf-8")
         image = figure(lesson, "cticu-do2-two-paths")
