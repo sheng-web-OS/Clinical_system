@@ -1744,5 +1744,15 @@
       "8": "PE 抗凝停藥與誘發因子（官方更正 C／D）",
       "9": "肺栓塞診斷：影像、D-dimer 與右心負荷"
     }
+  },
+  {
+    "source": "content/clinical-os/acs.md",
+    "output": "acs-reading.html",
+    "title": "ACS：從缺血的證據，讀到治療後留下的風險",
+    "subtitle": "ACS 四章閱讀入口：症狀與損傷、ECG 空間與時間、抗栓與再灌流、MI 後剩餘風險",
+    "collection": "clinical-os",
+    "layout": "reader",
+    "section": "心臟與胸痛",
+    "navigation": false
   }
 ]
