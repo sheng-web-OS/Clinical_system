@@ -83,6 +83,18 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertNotIn("SaO₂ + Hb + PaO₂", image,
                          "CaO2 requires hemoglobin-bound oxygen plus a dissolved component")
 
+    def test_cticu_figure_transition_has_one_directional_arrow(self):
+        """2026-10-27 reader report: two arrows made the figure's causal flow ambiguous."""
+        lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md").read_text("utf-8")
+        visual = figure(lesson, "cticu-measurement-layers")
+        transition = visual.split("共同缺的是因果證據", 1)[1].split(
+            "血液每分鐘能送出多少氧？", 1)[0]
+        self.assertEqual(transition.count("↓"), 1,
+                         "The transition between observed signals and missing evidence has exactly one arrow")
+        self.assertRegex(transition, r'<div aria-hidden="true"[^>]*>↓</div>')
+        self.assertNotIn("↓　兩個數字", visual)
+        self.assertNotIn("共同缺的是因果證據　↓", visual)
+
     def test_cticu_oxygen_caption_has_no_raw_markdown_and_stays_secondary_on_phone(self):
         lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md").read_text("utf-8")
         image = figure(lesson, "cticu-do2-two-paths")
