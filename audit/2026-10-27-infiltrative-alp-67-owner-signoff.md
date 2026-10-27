@@ -1,3 +1,5 @@
+> **LATEST RELEASE VERDICT — OWNER ACCEPTED ALL LISTED #67 GATES; MERGE/DEPLOY AUTHORIZED (2026-10-27 Asia/Taipei).** The owner explicitly replied 「#124 可以發布」 after being informed of P1, all 3 figure meanings, complete article, and deployment authorization. P0, P1, three figures, whole manuscript and #124-only publication all ACCEPTED. Evidence: [PR #124 author release signoff](https://github.com/sheng-web-OS/Clinical_system/pull/124#issuecomment-6432585447). This represents owner medical editorial self-review, **not** independent external physician peer review. Manuscript blob `1a806cd9a214816e1f3a0f0dd3ba510be494607b`; main-eligible prior CI [#40440617933](https://github.com/sheng-web-OS/Clinical_system/actions/runs/40440617933) succeeded. The updated audit metadata requires a same-HEAD check; Cloudflare success/public page readback must be recorded separately after merge. #68 and #69 remain HOLD.
+
 # #67｜單篇醫學驗收與發布閘門（待作者審閱）
 
 此文件是新獨立候選的唯一驗收入口，承接 [PR #98](https://github.com/sheng-web-OS/Clinical_system/pull/98) 的 AI source/figure audit；**與 #66 Cholestasis 已發布版本及其餘兩篇不共享發布權限**。
@@ -5,18 +7,18 @@
 - **文章**：`content/xiaoma-reading/integrated/2026-10-27-infiltrative-alp-hypothesis.md`，來源原稿 PR #98 blob `ea96803cc35b93cd8ab13b8cff52ae34f5970a00`；目前候選文章 blob `1a806cd9a214816e1f3a0f0dd3ba510be494607b`（前版 `1d72b7a089b446aa1c47c5bbdcf9fb8ed3e8b226`；此回合清理了讀者不需看到的內部編輯狀態）（後續變更需重核）。
 - **來源**：`content/xiaoma-reading/infiltrative-alp-sources-20261027.md`，只含本篇醫學來源；不重製 Pocket 原書 pixels。
 - **P0 安全判斷 [OWNER ACCEPT — CORE ONLY, 2026-10-27]**：單一 SPEP 陰性不能排除 AL amyloidosis；SIFE、UIFE、sFLC 只適用於合理懷疑的情境，檢驗陽性仍非組織 typing。
-- **P1 臨床推論 [PENDING OWNER]**：2020 AL hepatic case 95% 僅指受檢切片，不是全肝；同病例 ALP 85 IU/L，不能推算 ALP 敏感度。
-- **關鍵圖像 [PENDING OWNER]**：`fig-infiltrative-alp-update`、`fig-alp-claim-boundary`、`fig-alp-amyloid-real-case`；須判斷「是否傳達必要的反事實與限制」，不只是排版可見。
+- **P1 臨床推論 [OWNER ACCEPTED — 2026-10-27]**：2020 AL hepatic case 95% 僅指受檢切片，不是全肝；同病例 ALP 85 IU/L，不能推算 ALP 敏感度。
+- **關鍵圖像 [OWNER ACCEPTED — 2026-10-27]**：`fig-infiltrative-alp-update`、`fig-alp-claim-boundary`、`fig-alp-amyloid-real-case`；須判斷「是否傳達必要的反事實與限制」，不只是排版可見。
 - **Agent 工程責任**：同 HEAD Figure Gate、靜態建置、回歸測試、360/390/1280 實際渲染、來源與內部連結；AI-source check 不冒稱獨立醫師 peer review。
 - **發布停止條件**：P0/P1/圖像語意或全文未接受，均維持 Draft/HOLD。取得文章明確驗收後**另取得** owner 對本篇合併／正式部署的授權；不能因 CI success 自動發布。
 
 ## 單篇作者簽核（預留，未有決定）
 
 - P0：ACCEPT — ONLY the core safety decision that negative SPEP alone does not rule out AL, with clinically appropriate SIFE/UIFE/sFLC and tissue typing distinction. The acceptance reply was scoped explicitly to P0, not whole article. Evidence: [PR #119 owner-scope comment](https://github.com/sheng-web-OS/Clinical_system/pull/119#issuecomment-6432460860).
-- P1：PENDING；請標明 ACCEPT／REQUEST CHANGES 與具體段落。
-- Figures：PENDING；逐 ID ACCEPT／REQUEST CHANGES。
-- Whole manuscript：PENDING。
-- Merge / production deploy：NOT AUTHORIZED。
+- P1：ACCEPTED — biopsy ~95% is specimen only; single case ALP 85 IU/L not infiltration burden, whole-liver % or sensitivity estimate.
+- Figures：ACCEPTED — all 3 named IDs for their scoped clinical meanings, including the mobile focus-overlay screenshot caveat.
+- Whole manuscript：ACCEPTED — at unchanged blob `1a806cd9a214816e1f3a0f0dd3ba510be494607b`.
+- Merge / production deploy：EXPLICITLY AUTHORIZED — PR #124 / #67 ONLY, see the linked owner decision.
 
 
 ## 2026-10-27｜發布候選前的讀者界面清理
