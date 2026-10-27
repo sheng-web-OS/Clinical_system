@@ -911,6 +911,21 @@
         }
       ],
       "original_site_mermaid_note": "The two Mermaid diagrams in the reader are original qualitative mechanism illustrations, not reproduced publisher figures. Independent medical semantic and mobile render QA remain separate hard stops."
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/heart-sounds-structural-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9th ed. reader PDF pages 41 (HCM LVOTO) and 45 (AS flow/severity), previously visually checked in 108a-cardiac-sources.md",
+          "source_token": "HCM 第 41–42 頁",
+          "mode": "illustrated",
+          "anchor": "as-hcm-preload-compare",
+          "caption_token": "Pocket Medicine 第九版",
+          "teaching_role": "讀者可同時看到站立後相同前負荷下降，為何固定 AS 射出流量變少而動態 LVOTO 反而加劇；分歧點可直接支持 108-1 Q11 與 113-1 Q11。",
+          "scope_limit": "圖為原創、基於已存在原書核讀紀錄，並非 Pocket Medicine 9E 原圖或原書圖表完整複製；聲音反應只是典型模式，不能由動作單獨確診 AS/HCM。"
+        }
+      ]
     }
   }
 }
