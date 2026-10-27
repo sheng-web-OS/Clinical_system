@@ -37,6 +37,7 @@
 
 <div class="original-list">
 <a class="original-card" href="../clinical-os/index.md#liver"><span class="original-date">肝臟與 HBV · 三篇連讀</span><strong>檢驗、狀態與結構，為什麼必須分開？</strong><span>從肝臟檢驗走向 phase／stage，再看正常 ALT 與治療門檻的限制。</span><span class="read-link">開啟肝臟閱讀脈絡 →</span></a>
+<a class="original-card" href="integrated/2026-10-27-cholestasis-evidence-to-action.md"><span class="original-date">肝膽 · 延伸閱讀 · 2026.10.27</span><strong>Cholestasis：看見 ALP，究竟是找到病因，還是只找到下一個問題？</strong><span>接續〈肝臟檢驗〉，從 ALP、膽道影像的定位證據，走到同一位疑似膽管炎病人的感染源、灌流與引流決策。</span><span class="read-link">閱讀 Cholestasis 整合教材 →</span></a>
 <a class="original-card" href="../clinical-os/index.md#rhythm"><span class="original-date">心律急症 · 三篇連讀</span><strong>同一條旁路，為什麼藥物處置可能相反？</strong><span>WPW 傳導方向 → 真實 pre-excited AF 病例 → WCT／ACLS 的急救邊界。</span><span class="read-link">開啟心律閱讀脈絡 →</span></a>
 <a class="original-card" href="integrated/2026-10-26-vte-visual.md"><span class="original-date">VTE · 三張原創圖解</span><strong>共同預防的疾病，為什麼診斷必須分流？</strong><span>先驗風險、疾病假說、定位檢查與陰性結果的停止條件。</span><span class="read-link">閱讀 VTE →</span></a>
 <a class="original-card" href="integrated/2026-10-26-constipation.md"><span class="original-date">便祕 · 明示虛構教學情境</span><strong>糞便已軟，未完成的是哪個環節？</strong><span>將內容物、推進、出口與藥物反應分開，再決定下一步。</span><span class="read-link">閱讀便祕 →</span></a>

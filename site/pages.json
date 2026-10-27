@@ -728,6 +728,29 @@
     "references": "xiaoma-reading-liver-tests-sources.html"
   },
   {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-cholestasis-evidence-to-action.md",
+    "output": "xiaoma-reading-cholestasis-evidence-action.html",
+    "title": "Cholestasis：看見 ALP，究竟是找到病因，還是只找到下一個問題？",
+    "subtitle": "從肝膽生化訊號，走到膽管炎診斷、感染源與引流行動的連續推理",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽"
+  },
+  {
+    "source": "content/xiaoma-reading/cholestasis-sources-20261027.md",
+    "output": "xiaoma-reading-cholestasis-20261027-sources.html",
+    "title": "Cholestasis｜原圖、指南與真實 CT 證據",
+    "subtitle": "Pocket Medicine Figure 3-3、TG18、2026 SSC、Hong CT 與引流決策的來源界線",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
+    "navigation": false
+  },
+  {
     "source": "content/xiaoma-reading/integrated/2026-10-26-hbv-phase-state-vs-stage.md",
     "output": "xiaoma-reading-hbv-phase-state-vs-stage.html",
     "title": "HBV phase，不是在替慢性肝炎分期",
