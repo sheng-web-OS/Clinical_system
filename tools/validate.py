@@ -66,6 +66,8 @@ def main():
     errors=[]
     try:
         pages=load_pages(root)
+        from semantic_gate import validate_semantic_gate
+        errors.extend(validate_semantic_gate(root, pages))
         for row in pages:
             name = row["source"]
             text=(root/name).read_text(encoding="utf8")
