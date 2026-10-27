@@ -131,7 +131,7 @@ SSC 2026 區分三種常被混成「抗生素一小時」的情境：
 
 [2]
 
-「越早越好」不能替代病原與宿主背景判斷。選藥依感染灶、社區或醫院暴露、既往培養、抗藥風險、近期抗菌藥、免疫狀態、腎肝功能及當地 antibiogram 決定。高風險 MDR 才擴大相應覆蓋；沒有厭氧風險不應機械性增加厭氧覆蓋，沒有真菌風險也不常規加抗黴菌藥。IBCC 列出 beta-lactam backbone 與 MRSA、非典型病原的考量，是臨床判斷範例，**不是人人必須用 vancomycin 加 meropenem 的處方套組**。[1,2]
+「越早越好」不能替代病原與宿主背景判斷。選藥依感染灶、社區或醫院暴露、既往培養、抗藥風險、近期抗菌藥、免疫狀態、腎肝功能及當地 antibiogram 決定。高風險 MDR 才擴大相應覆蓋；沒有厭氧風險不應機械性增加厭氧覆蓋，沒有真菌風險也不常規加抗黴菌藥。IBCC 列出 beta-lactam backbone 與 MRSA、非典型病原的考量，是臨床判斷範例，**不是人人必須用 vancomycin 加 meropenem 的處方套組**。[1,2] 同一個臨床決策可由[112-1 醫學（三）第 65 題](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md#q-112-1-65)驗證：辨認創傷弧菌後，還須選擇相符的抗菌藥，並不延誤必要清創。
 
 ### 為什麼在休克病人，選對藥之外還要重視給藥動力學？
 
@@ -259,7 +259,7 @@ IBCC 也提醒 septic cardiomyopathy 尚無單一統一診斷標準；常見描�
 
 ## 十五、持續危險時：酸中毒、類固醇與頑固性休克
 
-**Lactate 高不等於應自動給 sodium bicarbonate**。重症乳酸上升可能包含供氧不足、兒茶酚胺相關有氧糖解與清除下降。若沒有理解原因，單純提高血中 bicarbonate 可能改變 pH 數字，但未必恢復組織灌流。SSC 2026 對以改善血流動力學或減少升壓劑為目的之 septic shock hypoperfusion-induced lactic acidemia，**建議不要常規使用 bicarbonate**；但當有**嚴重代謝性酸血症（pH ≤7.2）合併急性腎損傷（AKI；AKIN 第 2–3 期）**時，另有條件性、確定性極低的支持建議。[2] 這兩個不同適用情境，不能截取其中一個結論套用全部病人。[113-1 醫學（三）第 48 題](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md#q-113-1-48)便是用「bicarbonate 可改善 pH」與「它是不是 Sepsis 的首要目標」的差異，檢查對治療目標的理解。
+**Lactate 高不等於應自動給 sodium bicarbonate**。重症乳酸上升可能包含供氧不足、兒茶酚胺相關有氧糖解與清除下降。若沒有理解原因，單純提高血中 bicarbonate 可能改變 pH 數字，但未必恢復組織灌流。SSC 2026 對以改善血流動力學或減少升壓劑為目的之 septic shock hypoperfusion-induced lactic acidemia，**建議不要常規使用 bicarbonate**；但當有**嚴重代謝性酸血症（pH ≤7.2）合併急性腎損傷（AKI；AKIN 第 2–3 期）**時，另有條件性、確定性極低的支持建議。[2] 這兩個不同適用情境，不能截取其中一個結論套用全部病人。這裡要區分「bicarbonate 可能改善 pH」與「它是不是 Sepsis 的首要治療目標」；這是依 SSC 2026 建立的臨床推理，**不是**將其他主題的官方國考題改寫成敗血症考題。
 
 IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 對成人 septic shock **條件性建議 IV corticosteroids**（low certainty）；臨床上常見 hydrocortisone 200 mg/day（給藥形式依院內規範與 ICU 決定）。它可能縮短 vasopressor 需求時間，但不等於已明確證明所有患者死亡率下降，也不應取代抗菌藥、source control、血流重新評估；應監測高血糖等副作用。[1,2]
 
@@ -311,7 +311,7 @@ IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 �
 | **112-1 醫學（三）Q33** | 哪個 cytokine 和典型 Sepsis 發炎介質較不相關？ | **A：IL-5** | §4 宿主反應與 cytokine |
 | **112-1 醫學（三）Q64** | 肝硬化＋海水傷口＋血性水泡與休克的病原與急迫危險 | **D：V. vulnificus** | §6–7 感染來源、source control |
 | **114-1 醫學（三）Q51** | 不同休克的 SVR 為什麼呈相反趨勢？ | **B：病毒性心肌炎** | §8–11 血管阻力、心輸出與 PHR |
-| **113-1 醫學（三）Q48** | 為何 bicarbonate 不是 Sepsis 酸中毒的一律首要治療？ | **B** | §15 酸鹼與灌流 |
+| **112-1 醫學（三）Q65** | 創傷弧菌重症傷口感染應如何選擇抗菌藥？ | **C：ceftazidime＋tetracycline** | §6–7 感染來源、抗菌藥與源頭控制 |
 | **114-1 醫學（三）Q57** | 感染合併頑固性休克，何時須立即處理 adrenal crisis？ | **C** | §15 refractory shock 鑑別 |
 
 這五題都是考選部正式真題，表內只是概念重述。若要練習考試原始措辭，請使用[附有官方試卷、答案與更正紀錄的完整逐題詳解](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md)；**不要把 2026 指南的細節逆向改寫成 2023–2025 年的原題選項**。
