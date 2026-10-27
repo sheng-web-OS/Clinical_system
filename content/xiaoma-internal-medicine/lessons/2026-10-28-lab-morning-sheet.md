@@ -12,23 +12,7 @@
 
 拿到異常報告時，你不應照「鈉、鉀、氯、二氧化碳、BUN、Cr、WBC、Hb」從上讀到下。臨床需要三個時鐘同時走：
 
-<figure id="lab-three-clocks" style="max-width:760px;margin:1.5rem auto">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:0.8rem">
-<div style="border:1px solid #c8786d;background:#fff6f3;border-radius:9px;padding:1rem">
-<h3 style="margin:0 0 0.55rem;color:#793b2e">分鐘：會不會先出事？</h3>
-<p>病人生命徵象、意識、出血、心律、呼吸；高鉀與心電圖、嚴重酸中毒等可能立即改變支持與監測。必要的救治<strong>與</strong>驗證可並行。</p>
-</div>
-<div style="border:1px solid #b8ac73;background:#fffdf3;border-radius:9px;padding:1rem">
-<h3 style="margin:0 0 0.55rem;color:#635621">小時：數字可信嗎？</h3>
-<p>採檢位置、溶血、輸液、輸血、不同儀器與重驗；再看最近一次及基線。先區分假訊號與確有器官功能變化。</p>
-</div>
-<div style="border:1px solid #78a5aa;background:#f3f9f9;border-radius:9px;padding:1rem">
-<h3 style="margin:0 0 0.55rem;color:#285c61">天：今天的治療對嗎？</h3>
-<p>把數值變化接回利尿、抗菌藥、RAAS 抑制劑、尿量、灌流、鬱血與出血；決定調整、監測及何時停止例行抽血。</p>
-</div>
-</div>
-<figcaption>圖 1｜本站原創「三個時鐘」。這是決策時限分層，不是必須先走完第一格才能處理下一格的單一路徑；概念參照 KDIGO AKI、UK Kidney Association hyperkalaemia 與 AJKD Core Curriculum 2025。<a href="https://pubmed.ncbi.nlm.nih.gov/39396361/">檢體異常原始綜述</a>。</figcaption>
-</figure>
+**分鐘**先判斷生命徵象、心律與急救風險；**小時**查採檢可信度與重驗；**天**將趨勢接回藥物、灌流、鬱血和重測決策。這三條路徑同時運作，不是先把第一個問題答完，才有資格處理第二個。下面先看病例與完整檢驗表，再用圖 1 對照同一張報告為何需要不同的行動。
 
 **交班不是背一張數字表，而是先回覆四個問題**：①現在有沒有不能等的危險？②今天的異常是真是假、變化有多快？③哪個生理過程正在變、哪些尚不能確認？④今天要下什麼指令、多久再看哪項證據？下面讓一位心衰竭病人的抽血報告逼我們實際作答。
 
@@ -57,6 +41,25 @@
 | Mg（mg/dL） | 1.8 | 1.7 | **1.5** | 1.5 |
 
 *10/28 06:00 檢體有顯著溶血註記；07:15 為不同採血點、無溶血的新檢體。所有數值都是合成教學資料；「無溶血」不是對其他每項分析物絕對準確的保證。各院 critical value 與單位依檢驗室規範為準。*
+
+<figure id="lab-three-clocks" style="max-width:900px;margin:1.5rem auto">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:0.8rem" role="group" aria-label="合成病例的急迫安全、檢體重驗與腎功能病程三條並行證據線">
+<div style="border:1px solid #c8786d;background:#fff6f3;border-radius:9px;padding:1rem">
+<h3 style="margin:0 0 0.55rem;color:#793b2e">分鐘｜病人安全</h3>
+<p><strong>06:00 K 6.3 mmol/L（原管溶血）</strong>。立即看病人與 ECG；有危險變化時救治與重抽並行，不能等數字變漂亮。</p>
+</div>
+<div style="border:1px solid #b8ac73;background:#fffdf3;border-radius:9px;padding:1rem">
+<h3 style="margin:0 0 0.55rem;color:#635621">小時｜檢體可靠性</h3>
+<p><strong>06:00 K 6.3 → 07:15 K 4.9 mmol/L</strong>；重抽無溶血、期間未給降鉀藥，較支持首管受干擾。這不是「未來不會真高鉀」的證明。</p>
+</div>
+<div style="border:1px solid #78a5aa;background:#f3f9f9;border-radius:9px;padding:1rem">
+<h3 style="margin:0 0 0.55rem;color:#285c61">天｜器官病程與治療</h3>
+<p><strong>10/27 Cr 1.16 → 10/28 重抽 Cr 1.69 mg/dL</strong>：肌酐 AKI 仍成立。尿量 <strong>240 mL／8 h ≈ 0.4 mL/kg/h</strong>，但收集可靠性<strong>待確認</strong>；不由負平衡直接推論缺水。</p>
+</div>
+</div>
+<p style="margin:0.8rem 0 0"><strong>三條路徑並行</strong>：心電與生命徵象評估、無溶血重抽、AKI／鬱血／尿量核對，不是按順序通關；每格的數字都是本篇合成教學情境。</p>
+<figcaption>圖 1｜本站原創病例證據比較圖：同一早晨的「可能假性高鉀」與「確有肌酐 AKI」並存。箭頭表示兩次採檢的時間比較，不代表藥物造成變化或證實 AKI 病因；臨床風險分流參照 KDIGO AKI、UK Kidney Association hyperkalaemia 及 AJKD Core Curriculum 2025。<a href="https://pubmed.ncbi.nlm.nih.gov/39396361/">檢體異常原始綜述</a>。</figcaption>
+</figure>
 
 先不要做十二個疾病的鑑別。這張時間序列其實先給了三個彼此不同的訊息。
 
