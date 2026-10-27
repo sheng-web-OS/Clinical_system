@@ -19,11 +19,10 @@ class LabMorningSheetRawHtmlTest(unittest.TestCase):
                 "Mistune leaves Markdown **bold** literal inside raw HTML figure; use <strong>.",
             )
 
-
     def test_figure_encodes_case_specific_parallel_decisions(self):
         """Avoid generic three-card figures that hide the case's conflicting signals."""
         article = ARTICLE.read_text(encoding="utf-8")
-        match = re.search(r'<figure id="lab-three-clocks"[\\s\\S]*?</figure>', article)
+        match = re.search(r'<figure id="lab-three-clocks".*?</figure>', article, re.S)
         self.assertIsNotNone(match, "The original figure anchor must remain stable")
         figure = match.group(0)
         for cue in ("6.3", "4.9", "1.16", "1.69", "240", "0.4", "並行", "待確認"):
@@ -31,8 +30,6 @@ class LabMorningSheetRawHtmlTest(unittest.TestCase):
                 self.assertIn(cue, figure, "Figure must encode measured vs uncertain evidence and parallel actions")
         self.assertLess(article.index("| 項目（單位） |"), match.start(),
                         "Introduce the case and measurements before the visual comparison")
-
-
 
 if __name__ == "__main__":
     unittest.main()
