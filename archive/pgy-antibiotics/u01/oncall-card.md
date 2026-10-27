@@ -1,18 +1,19 @@
-# U01｜PGY On-call pocket card（教學版；不可替代本院 SOP）
+# U01｜02:10 值班卡：ESBL 舊尿培＋疑似 urosepsis
 
-**觸發**：發燒／感染疑慮 + 血壓、意識、尿量、呼吸或灌流異常；或疑似 pyelonephritis 合併 hydronephrosis。
+2026-10-28｜教學版；**非當院可直接照抄的處方卡**。
 
-| 時間 | 你要完成的動作 | 別犯的錯 |
-|---|---|---|
-| 0–5 min | 先確認 ABC、血壓/灌流、尿量、意識、危急程度；及早通報總醫師/主治，必要時啟動 sepsis/ICU 支援 | 等檢驗完全出來才升級 |
-| 同步立即 | 確定可能 source；尽早血培（通常兩組）與尿培，核對採檢與先前用藥，記錄首劑前後時序 | 為培養而延誤高風險抗菌治療 |
-| First dose | 嚴重度 → 舊培養/過去用藥及抗藥風險 → 過敏/AKI/interaction → local antibiogram；確認 antibiotic、route、first dose、後續劑量/interval/infusion | 舊 ESBL 必定是這次菌、或固定常規劑量等於安全 |
-| Parallel | 尿路水腫/阻塞？立即泌尿科評估引流（JJ stent vs PCN）；支持療法與動態再評估 | 只給抗生素不解除 infected obstruction |
-| 任何惡化 | 重新評估灌流/給藥/感染源/源控制並升級，不等到 48h | 把 48h time-out 誤當不能更早調整 |
-| 48–72h | 讀 blood/urine culture + AST，診斷是否合理、源控制有無完成、繼續/調窄/停止/IV→PO、療程從 effective day count | 看到「S」就無條件轉口服；所有人一律七天 |
+| 何時 | 要做什麼 | 最危險的誤判 |
+| --- | --- | --- |
+| **現在（0–5 分）** | 到床邊 ABC、反覆 BP/MAP、意識、灌流與尿量；通知上級／急重症，開始病人個別化復甦 | 血壓低又意識變差，仍只在電腦開一支藥 |
+| **與上面同步** | 立即採血培（通常兩套）、尿培、先前藥物/培養；理想首劑前採，不能造成危急病人顯著延誤 | 等當次藥敏、完整檢驗或 CT 才治療 |
+| **第一劑選擇** | 嚴重度 → 近期 resistant isolate / AST → 過敏/AKI/體重/interaction → 最近且相關的**當院** antibiogram → 由上級/藥師確認藥物、劑量、interval、infusion、首劑 | 把舊 ESBL 當本次菌已確定；或把 ceftriaxone 當無條件 UTI 第一劑 |
+| **此合成病例候選** | 危重、近期 ESBL E. coli、可能菌血症／感染性阻塞 → **優先核對 meropenem IV 的適用性** | 用 piperacillin–tazobactam 的一般 broad-spectrum 形象，忽視 2026 IDSA ESBL 危重/菌血症限制 |
+| **源控制（同時）** | Hydronephrosis + systemic infection：緊急 urology 判讀 suspected infected obstruction，評估 ureteral stent / PCN | 給了 active agent 就等隔天才找泌尿科 |
+| **T+6 或任何惡化** | 即時重估器官支持、是否實際給藥、source control 進度、Cr/尿量與 maintenance | 以 48–72h antibiotic timeout 當作不可提前重評 |
+| **T+48/+72** | 若 blood/urine AST 回來，核對 source control、穩定、吸收、腎/K/interaction，才能 narrow/IV→PO/定療程 | 「TMP-SMX-S」單獨就當口服轉換許可 |
 
-**紅旗 CALL NOW**：意識或血壓惡化、需升壓劑、快速 AKI/少尿、呼吸衰竭、無法及時處理可能的 infected obstruction、無可行的活性抗菌藥／嚴重過敏、多重抗藥菌與侵襲性感染。涉及藥物劑量與 renal replacement，與主治／臨床藥師／感染科依本院權責核對。
+**時間與邊界**：2026 SSC：probable/definite sepsis 或疑似 shock 應立即治療、理想 1 小時內；需 source control 的病灶應迅速處理，理想診斷後 6 小時內；兩者不是互相等待。2025 IDSA cUTI 指引四步法是篩選 decision factors，不是同一種藥適用所有病人。2026 IDSA AMR 指明 piperacillin–tazobactam 在非危重、無菌血症 ESBL cUTI 才有 alternative 地位。
 
-**一行交班格式（只作格式示範）**：『疑似尿源性敗血症，合併右 hydronephrosis 與 AKI；過去尿培 ESBL *E. coli*，此次血/尿培已送；已與上級確認 empiric 覆蓋與第一劑；泌尿科評估感染性阻塞減壓中；下一步追血流動力學/尿量、腎功能/K、引流進度與當次培養藥敏，若惡化立即回報。』
+**絕不可直接抄錄**：患者目前藥物劑量、輸注、腎調整與 restricted approval 都仍是 NOT_VERIFIED。看 [完整主文](lesson.md)、[安全處方示範](order-worked-example.md)、[T0/T48 測試](case-test.md)。
 
-**NOT ORDER READY**：本卡**不含**經當院核實的 mg/interval、限制用藥權限或 antibiogram，故不可做為直接複製處方來源。來源及案例正文： [lesson](lesson.md)、[sources](sources-qa.md)。
+來源：[SSC 2026](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026) · [IDSA cUTI 2025](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections) · [IDSA AMR 2026](https://www.idsociety.org/practice-guideline/amr-guidance/) · [EAU Urolithiasis](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)。
