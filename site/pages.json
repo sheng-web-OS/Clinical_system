@@ -2033,5 +2033,65 @@
     "date": "2026-10-27",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-heart-failure-hemodynamics.md",
+    "output": "xiaoma-reading-heart-failure-integrated.html",
+    "title": "Heart Failure：兩位都在喘的病人，為什麼不能沿同一條治療路徑前進？",
+    "subtitle": "症候群、wet／cold、鈉水累積與重分布，從呼吸窘迫走到灌流危機",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "replaces_original": "xiaoma-reading-20260712-heart-failure.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-reading-hf-lvedp-sources.html",
+    "layout": "reader",
+    "section": "心衰竭與血行動力學",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "HFpEF 與 EF 不能代表 filling pressure；先判斷臨床症候群與客觀證據。"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-lvedp-pressure-volume.md",
+    "output": "xiaoma-reading-lvedp-integrated.html",
+    "title": "從四象限走進 LVEDP：肺水腫已經出現，壓力究竟升高在哪裡？",
+    "subtitle": "Mean PAWP、LVEDP、跨壁壓與 LVEDV 的界線，以及 MR、HFpEF、心包限制",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "replaces_original": "xiaoma-reading-20260712-lvedp.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-reading-hf-lvedp-sources.html",
+    "layout": "reader",
+    "section": "心衰竭與血行動力學",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "用壓力與容積分離理解 EF 保留且 filling pressure 升高的機轉。"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-reading/hf-lvedp-integrated-sources.md",
+    "output": "xiaoma-reading-hf-lvedp-sources.html",
+    "title": "HF 與 LVEDP：原稿、指引及血流動力學來源",
+    "subtitle": "Pocket Medicine 9E 原稿定位、2026 ESC／Universal Definition、2025 ASE 與楔壓波形",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
