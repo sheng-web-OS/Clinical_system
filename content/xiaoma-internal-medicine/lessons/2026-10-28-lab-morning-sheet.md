@@ -143,7 +143,7 @@ CBC 是循環血液中血球數量、Hb 和紅血球指標的快照。WBC 是總
 
 ## 專業深究｜這套框架從哪些證據來，在哪裡失效？
 
-1. **檢體可信度**：Takieddine & El-Khoury, *Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025*, AJKD 2025;85:104–114。文章討論 hemolysis、採檢與分析方法造成的假性異常；本篇的三時間點患者數值是原創情境，**不是該文病例**。[PubMed 原文資訊](https://pubmed.ncbi.nlm.nih.gov/39396361/)；[期刊全文](https://www.sciencedirect.com/science/article/pii/S0272638624009211)。
+1. **檢體可信度**：Takieddine & El-Khoury, *Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025*, AJKD 2025;85:104–114。文章討論 hemolysis、採檢與分析方法造成的假性異常；本篇的四時點患者數值是原創情境，**不是該文病例**。[PubMed 原文資訊](https://pubmed.ncbi.nlm.nih.gov/39396361/)；[期刊全文](https://www.sciencedirect.com/science/article/pii/S0272638624009211)。
 2. **AKI 門檻**：KDIGO 2012 AKI 定義，包括 serum Cr ≥0.3 mg/dL/48 h、≥1.5 倍基線/7 天，或 urine output <0.5 mL/kg/h ≥6 h；本篇的尿量分母是示例體重，**尿量資料真偽另需核對**。[KDIGO summary](https://pmc.ncbi.nlm.nih.gov/articles/PMC4057151/)；[ADLM/AACC 檢驗醫學指引](https://academic.oup.com/jalm/article/6/5/1316/6272705)。
 3. **eGFR 邊界**：KDIGO 2024 CKD guideline 與相關臨床解讀指出非穩態 creatinine、肌肉量及藥物可使 eGFR 估計失準；不可拿 AKI 的即時 eGFR 當穩定腎功能的精確量測。[KDIGO 2024 CKD](https://kdigo.org/guidelines/ckd-evaluation-and-management/)；[臨床解讀](https://academic.oup.com/ajhp/article/82/12/660/8107680)。
 4. **危險高鉀**：UK Kidney Association *Treatment of Acute Hyperkalaemia in Adults* 指引（官網顯示 2026-07 更新版供下載），以臨床嚴重度、ECG、重驗、即時治療與追蹤分流；具體用藥劑量須按實際版本及本院急救流程核對，不可把本文情境當個別患者醫囑。[UKKA 官方指引頁](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。
