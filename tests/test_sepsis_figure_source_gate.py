@@ -120,7 +120,7 @@ class SepsisFigureSourceGate(unittest.TestCase):
         # Keep stable q-* links for the Sepsis narrative but never pre-emit exam-*.
         exam = (ROOT / "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md").read_text(encoding="utf-8")
         self.assertNotIn('<a id="exam-', exam)
-        for key in ("q-112-1-33", "q-112-1-64", "q-113-1-48", "q-114-1-51", "q-114-1-57"):
+        for key in ("q-112-1-33", "q-112-1-64", "q-112-1-65", "q-114-1-51", "q-114-1-57"):
             self.assertIn('<a id="' + key + '"></a>', exam)
 
 
