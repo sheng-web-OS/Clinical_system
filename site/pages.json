@@ -1934,15 +1934,31 @@
       "stage": 2,
       "subject": "醫學（三）",
       "question_numbers": [
-        11,
-        12,
-        13
+        12
       ]
     },
     "exam_topics": {
-      "11": "STEMI 急診：硝化甘油不是再灌流",
-      "12": "PCI 後 VT／VF、LV thrombus 與次級預防",
-      "13": "缺血 cascade：ECG 不必與 cTn 同步"
-    }
+      "12": "PCI 後 VT／VF、LV thrombus 與次級預防"
+    },
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 11,
+        "focus": "前壁 STEMI 初始用藥是先排除危險劑量與禁忌，不能以 NTG 取代再灌流。",
+        "concept_heading": "第 11 題｜115 年第二次醫學（三）：前壁 STEMI、SpO₂ 95%，選硝化甘油，是否代表不用立即開通血管？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 13,
+        "focus": "缺血性電位、局部壁運動與血中 cTn 是不同時鐘，不能因單次陰性生物標記延誤危急病況處置。",
+        "concept_heading": "第 13 題｜115 年第二次醫學（三）：ECG 已變，troponin 為什麼不一定跟著升高？"
+      }
+    ]
   }
 ]
