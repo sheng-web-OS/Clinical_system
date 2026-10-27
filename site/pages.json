@@ -1871,7 +1871,8 @@
         "focus": "灌流下降、壁運動、ECG 電位和血中 troponin 訊號的不同時間尺度",
         "concept_heading": "三、ECG 要讀成「哪一區心肌正在求救」，不能只查 ST 有沒有超過門檻"
       }
-    ]
+    ],
+    "kind": "ai_integrated"
   },
   {
     "source": "content/xiaoma-internal-medicine/acs-exam-sources.md",
