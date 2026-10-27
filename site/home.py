@@ -21,7 +21,7 @@ def _card(page, collection, label, cue, featured=False):
 def render_home(pages):
     """Build the discovery view using the same explicit publication whitelist."""
     originals = [p for p in pages if p.get("kind") == "historical_original"]
-    lessons = [p for p in pages if is_current_lesson(p)]
+    lessons = [p for p in pages if is_current_lesson(p) and p.get("kind") != "ai_integrated"]
     integrations = [p for p in pages if p.get("kind") == "ai_integrated"]
     cards = []
     # Current integrated publications lead; preserved historical originals are a
