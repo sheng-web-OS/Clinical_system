@@ -60,6 +60,13 @@ class ACSReadingDiscovery(unittest.TestCase):
                               for q in related}), 7)
         validate_exam_catalog(self.pages, ROOT)
 
+    def test_acs_exam_source_backlink_describes_twelve_chapter_lesson(self):
+        # Regression: the source page must not describe the rewritten 12-section
+        # article as the older four-chapter external course.
+        source = (ROOT / "content/xiaoma-internal-medicine/acs-exam-sources.md").read_text("utf-8")
+        self.assertIn("[ACS 十二章臨床整合教材](../clinical-os/acs.md)", source)
+        self.assertNotIn("[ACS 四章整合入口]", source)
+
 
 if __name__ == "__main__":
     unittest.main()
