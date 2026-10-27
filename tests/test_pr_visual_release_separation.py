@@ -37,7 +37,7 @@ class PrivateVisualBeforeReleaseGate(unittest.TestCase):
         self.assertIn("python tools/check_output.py", step)
         self.assertNotIn("continue-on-error: true", step)
         installer = self.source.split("- name: Install Chromium for image layout QA", 1)[1]
-        installer = installer.split("\\n      - name:", 1)[0]
+        installer = installer.split("\n      - name:", 1)[0]
         self.assertIn("timeout-minutes: 4", installer)
         self.assertNotIn("upload-artifact", step)
 
