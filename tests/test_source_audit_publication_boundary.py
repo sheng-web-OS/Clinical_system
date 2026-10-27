@@ -11,17 +11,24 @@ from catalog import load_pages
 
 
 class SourceAuditPublicationBoundary(unittest.TestCase):
-    def test_gi_liver_audit_worklog_is_private_but_exam_teaching_is_public(self):
+    def test_gi_liver_audit_is_not_published_as_an_article(self):
         pages = json.loads((ROOT / "site/pages.json").read_text("utf8"))
         outputs = {row["output"] for row in pages}
-        self.assertNotIn("xiaoma-exam-gi-liver-three-sources.html", outputs)
+        self.assertIn("xiaoma-exam-gi-liver-three-sources.html", outputs)
+        reference = next(p for p in pages if p["output"] == "xiaoma-exam-gi-liver-three-sources.html")
+        self.assertEqual(reference["review"], "source_audit")
+        self.assertNotIn("date", reference)
+        self.assertEqual(reference["section"], "參考資料")
         self.assertIn("xiaoma-20261027-gi-liver-national-exam-trio.html", outputs)
-        self.assertTrue((ROOT / "content/xiaoma-internal-medicine/exam-gi-liver-three-sources.md").is_file())
+        self.assertTrue((ROOT / "audit/2026-10-27-gi-liver-exam-source-proof-private.md").is_file())
+        reference_text = (ROOT / reference["source"]).read_text("utf8")
+        self.assertNotIn("原卷逐頁核讀", reference_text)
+        self.assertNotIn("圖表核讀的明確界線", reference_text)
 
     def test_readers_retain_official_original_and_corrected_answers(self):
         article = (ROOT / "content/xiaoma-internal-medicine/lessons/"
                    "2026-10-27-gi-liver-exam-trio.md").read_text("utf8")
-        self.assertNotIn("../exam-gi-liver-three-sources.md", article)
+        self.assertIn("../exam-gi-liver-three-sources.md", article)
         for exam_code in ("112020", "114020", "114070"):
             self.assertIn("code=" + exam_code, article)
         self.assertEqual(article.count("t=Q"), 3)
