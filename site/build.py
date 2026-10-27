@@ -51,7 +51,9 @@ class Renderer(mistune.HTMLRenderer):
         super().__init__(escape=False)
         self.headings=[]
         self.h2=0
-        self.question_anchors = question_anchors or {}
+        # Markdown emphasis is absent from rendered heading text; preserve canonical exam IDs.
+        self.question_anchors = {re.sub(r"\\*\\*|__|`", "", name): anchor
+                                 for name, anchor in (question_anchors or {}).items()}
     def heading(self, text, level, **attrs):
         key = html.unescape(re.sub(r"<[^>]+>", "", text))
         question_id = self.question_anchors.get(key)
