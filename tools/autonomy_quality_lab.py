@@ -52,6 +52,42 @@ def validate_model_completion_response(raw, content_type):
             "clinical_validated": False, "release_approval": False}
 
 
+
+def audit_generated_finding_quotes(article, answer):
+    """Evidence locator only. Quote presence is NOT a soundness/quality verdict."""
+    require(isinstance(article, str) and bool(article.strip())
+            and isinstance(answer, str), "article and response text required")
+    quotes = re.findall(r"原文\s*[：:]\s*「([^」]+)」", answer)
+    compact = lambda s: "".join(s.split())
+    source_no_whitespace = compact(article)
+    audited = []
+    for quote in quotes:
+        present_verbatim = quote in article
+        present_spaced = compact(quote) in source_no_whitespace
+        audited.append({
+            "quote": quote,
+            "exact_contiguous_match": present_verbatim,
+            "whitespace_insensitive_match": present_spaced,
+            "qualification_needs_context_review": any(
+                signal in quote for signal in ("不是所有", "並不是", "不代表", "不一定", "至少", "未必")
+            ),
+            "status": "QUOTE_LOCATED_NOT_INDEPENDENTLY_VALIDATED" if present_spaced
+                      else "SOURCE_SPAN_NOT_LOCATED",
+            "auto_edit_allowed": False,
+        })
+    return {
+        "evidence_level": "MECHANICAL_SOURCE_ANCHOR_ONLY",
+        "original_findings": len(quotes),
+        "exact_quotes": sum(q["exact_contiguous_match"] for q in audited),
+        "whitespace_matched_quotes": sum(q["whitespace_insensitive_match"] for q in audited),
+        "needs_qualification_review": sum(q["qualification_needs_context_review"] for q in audited),
+        "findings": audited,
+        "medical_quality_verified": False,
+        "public_edit_allowed": False,
+        "limitations": "Source quote presence and negation flags cannot establish actionable defects; check adjacent paragraphs, source figures and medical validity independently.",
+    }
+
+
 def anchored_file(root, relative, digest):
     require(isinstance(relative, str) and relative.startswith("content/")
             and not relative.startswith("content//"), "only public teaching-source paths permitted")
@@ -273,6 +309,9 @@ def main():
     t.add_argument("--events", required=True)
     j = cmd.add_parser("judge")
     j.add_argument("--grades", required=True)
+    q = cmd.add_parser("audit")
+    q.add_argument("--article", required=True)
+    q.add_argument("--response", required=True)
     a = parser.parse_args()
     try:
         if a.cmd == "prepare":
@@ -284,6 +323,9 @@ def main():
                     json.loads(Path(a.statuses).read_text()) if a.statuses else None)
         elif a.cmd == "trace":
             result = trace_failure(json.loads(Path(a.events).read_text()))
+        elif a.cmd == "audit":
+            result = audit_generated_finding_quotes(Path(a.article).read_text(encoding="utf-8"),
+                                                    Path(a.response).read_text(encoding="utf-8"))
         else:
             result = judge_order_calibration(json.loads(Path(a.grades).read_text()))
         print(json.dumps(result, ensure_ascii=False, indent=2))
