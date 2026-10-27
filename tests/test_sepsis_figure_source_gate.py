@@ -84,6 +84,9 @@ class SepsisFigureSourceGate(unittest.TestCase):
             self.assertTrue(edges, "Diagram %d has no parseable edges" % index)
             self.assertTrue(all(a in nodes and b in nodes for a, b in edges),
                             "Diagram %d has edges to unsupported or undefined nodes" % index)
+            if index == 0:
+                self.assertIn(("A", "J"), edges, "Infection source must visibly connect to source-control intervention")
+                self.assertIn(("F", "K"), edges, "Perfusion deficit must visibly connect to circulation support")
 
 
 if __name__ == "__main__":
