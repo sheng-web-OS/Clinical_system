@@ -1,0 +1,49 @@
+{
+  "study_id": "workers-ai-dcm-20261027-v1",
+  "created_date": "2026-10-27",
+  "phase": "EXPLORATORY_UNBLINDED_DEVELOPMENT",
+  "commit_preregistration": true,
+  "source_commit": "c5898a22636b265da3bc99aec387c346e7f6c386",
+  "article_path": "content/xiaoma-reading/integrated/2026-10-21-dcm.md",
+  "git_blob": "f16eced854467e5c8e43a063ef5d34b93f0d1d15",
+  "source_chars": 11661,
+  "model_requested": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "provider": "Cloudflare Workers AI POST /accounts/{account_id}/ai/run/{model_name}",
+  "actual_model_identity": "Record returned model verbatim; fail evaluation if two arms returned unequal model identities",
+  "temperature": 0.2,
+  "max_tokens": 1400,
+  "calls_per_arm": 2,
+  "max_article_review_calls": 4,
+  "order": [
+    "lite-1",
+    "baseline-1",
+    "baseline-2",
+    "lite-2"
+  ],
+  "common_instruction": "你是醫學教材審稿者。只審核提供的完整原稿；找出會誤導讀者或阻斷臨床推理的內在矛盾、因果／敘事／決策前提缺失與公開正文語境不當。若某一概念或證據已在其他段落說清楚，不可重複指控。不要推定外部文獻、實際圖像、模型及醫學來源已被獨立核實。沒有重大問題可回報無缺陷。每次最多列出四項，每項需給出原文中逐字存在的短句、必要上下文、問題機制、最小改法與信心；勿改動原稿，勿聲稱發布核准。",
+  "baseline_addition": "採用既有的專業醫學教材審查標準，以精簡而嚴格的方式辨識真正影響讀者理解的問題。",
+  "lite_addition": "依序檢查讀者在相鄰段落先知道什麼、為何引入下一個概念、病例時間序列是否先於因果解釋、機轉是否有支持觀察、檢查／治療決策的邊界，以及正文是否混入只屬於作者工作的 metadata。每項缺漏須先反查全文，避免臆測或補寫已存在的前提。",
+  "response_format": "Traditional Chinese; numbered findings, quote <=80 Han characters of original each, explanation, minimum edit, evidence caveat; allow clean result",
+  "primary_metrics": [
+    "valid_nonduplicated_findings_with_original_text_support",
+    "false_claims_or_nonexistent_quotes",
+    "independently adjudicated importance of findings (NOT_MEASURED until independent review)"
+  ],
+  "secondary_metrics": [
+    "per-arm prompt_tokens",
+    "per-arm completion_tokens",
+    "number_of_valid_completions",
+    "number_of_unique_supported_findings",
+    "finish_reason"
+  ],
+  "decision_rules": {
+    "invalid_provider_payload": "DO_NOT_SCORE",
+    "different_reported_models_across_arms": "DO_NOT_COMPARE",
+    "no_independent_clinical_grader": "ENGINEERING_EXPLORATION_ONLY",
+    "lite_more_unique_quote-supported_findings_and_no_more_fabricated_quotes": "KEEP_AS_CANDIDATE_NOT_DEPLOY",
+    "lite_equal_or_worse": "DO_NOT_UPGRADE_LITE",
+    "any_medical_safety_issue": "HOLD"
+  },
+  "privacy": "Only GitHub source already deployed publicly, no user conversations, private agent prompts, credentials or source audit.",
+  "gates": "No merge, production deployment or medical-grade approval; no inference of owner time or reader learning. Four individual requests only."
+}
