@@ -57,7 +57,14 @@ def main():
         print("BEGIN ARM", arm, "model", MODEL, "article_bytes", len(raw), flush=True)
         try:
             with urlopen(request, timeout=110) as response:
-                data = json.load(response)
+                raw_response = response.read()
+                content_type = response.headers.get("Content-Type", "")
+                if not raw_response.lstrip().startswith(b"{"):
+                    print("NON_JSON_PROVIDER_RESPONSE", response.status,
+                          content_type, "bytes", len(raw_response),
+                          "prefix", repr(raw_response[:90]), flush=True)
+                    raise SystemExit(2)
+                data = json.loads(raw_response)
         except HTTPError as exc:
             print("PROVIDER_ERROR", exc.code, exc.read(500).decode("utf-8", errors="replace"), flush=True)
             raise SystemExit(2)
