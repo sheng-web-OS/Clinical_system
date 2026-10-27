@@ -19,6 +19,16 @@
 
 另按 [EPQC 七軸](editorial-prose-quality-contract.md) 做文章層級 A–G 評分（每軸至少 3，平均至少 3.3），附核心讀者問題、本文新增的理解以及對「其實不需要此稿／此段」最有力的反對理由。**任一醫學安全、證據虛構、因果斷裂、metadata 混入正文或重大來源衝突尚未解決，直接 HOLD，不可用平均分數補償。**
 
+## 獨立推理連續性閘門（2026-10-27）
+
+推理連續性不是 EPQC E 軸高分可以概括代替的項目。每個新編／實質修改的長篇教材須另填 `continuity_gate`，審核 **concept／causal／decision／narrative** 四類斷裂；任一類判定 HOLD、未完成審查或存在 `unresolved_gaps`，即使其餘 EPQC 七軸滿分也不能發布。另將 `broken_narrative_continuity` 納入不可補償的 `hard_stops`。
+
+- 審稿者通讀原文，逐一檢視相鄰教學段落的接續，尤其是術語首次出現、圖表與公式引入、從檢查走到處置的位置；標明 `all_transitions_checked`。不得將清單、編輯筆記或空洞過渡詞當作因果橋梁。
+- 四種 `checks` 各自記錄 `verdict=pass` 及**對本稿特定內容的** `evidence`；填入一組真實相鄰單元的 `sample_handoff`（`from_id`／`to_id`／`reader_question`／`bridge_justification`）。`unresolved_gaps` 必須為空，文章版號與獨立 reviewer provenance 仍遵循同一筆 semantic receipt。
+- 本項 gate **只新增精簡的審查證據，不要求逐段複製全套交接文字**；原本 paragraph receipt 仍負責覆蓋每個實質段落。任何重大斷裂必須先回到正文補上推理，再重做版本化審查。
+
+`site/semantic_gate.py` 只能驗證欄位、已宣告的判定與例證 ID 是否真是相鄰段落；**無法證明「全部已讀」或文字真的連貫**。其成功不等於臨床品質、獨立審查的真實性或讀者學習成效已證明。舊版 frozen baseline 不因新增 gate 而宣稱通過，也不可藉修改舊 SHA 規避本規範。
+
 ## Agent 的最短交付流程
 
 1. 撰稿／修訂完成後執行 `python site/semantic_gate.py --packet content/.../article.md`，產出帶有段落 ID、來源位置、摘錄與當前 Git blob 的**未核准草稿封包**；它不會自動填通過。
