@@ -50,6 +50,9 @@ jobs:
         timeout-minutes: 6  # allow browser download; avoid slow and unnecessary apt font mirror
         run: |
           python -m pip install --disable-pip-version-check playwright==1.57.0
+          # Browser screenshots must render Traditional Chinese glyphs, not tofu boxes.
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          test -n "$(fc-list :lang=zh family)" || { echo 'CJK font unavailable'; exit 1; }
           python -m playwright install chromium
       - name: Enforce SAAG exam table readability on phone
         if: github.event_name == 'pull_request'
