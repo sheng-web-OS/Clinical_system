@@ -288,15 +288,15 @@ class ModelFindingSourceChecks(unittest.TestCase):
 
     def test_merged_paragraphs_are_not_fabricated_content(self):
         r = lab.audit_generated_finding_quotes(
-            "DCM 的定義包含兩個層次。\\n\\n第一個是觀察。\\n\\n第二個是病因。",
+            "DCM 的定義包含兩個層次。\n\n第一個是觀察。\n\n第二個是病因。",
             "原文：「DCM 的定義包含兩個層次。第一個是觀察。第二個是病因。」")
         self.assertEqual(r["exact_quotes"], 0)
         self.assertEqual(r["whitespace_matched_quotes"], 1)
         self.assertFalse(r["medical_quality_verified"])
 
     def test_qualified_not_all_and_at_least_need_context_not_auto_edits(self):
-        article = "這不是所有 DCM 都必然遵循的單一病程。\\n\\n治療時至少考慮三個層次。"
-        answer = ("原文：「這不是所有 DCM 都必然遵循的單一病程。」\\n"
+        article = "這不是所有 DCM 都必然遵循的單一病程。\n\n治療時至少考慮三個層次。"
+        answer = ("原文：「這不是所有 DCM 都必然遵循的單一病程。」\n"
                   "原文：「治療時至少考慮三個層次。」")
         r = lab.audit_generated_finding_quotes(article, answer)
         self.assertEqual(r["needs_qualification_review"], 2)
