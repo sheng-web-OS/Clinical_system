@@ -65,3 +65,9 @@ The evaluation directory contains 20 **visible synthetic development seeds**, ba
 
 Next evidence required: genuine unhinted executions with separate adjudication, repeated trials and comparable conditions; then fresh held-out work and a low-friction 3–5-task sample of actual owner time. Use the existing weekly window. Report quality, audited coverage, false positives, severe escapes and time separately. Policy/tooling completion must remain Artifact until those observations exist; do not fill them with test fixtures. An attention-reduction target can be preregistered, but no percentage is an achieved or predicted benefit.
 
+## First isolated prompt pilot: no observed incremental gain
+
+The [2026-10-27 pilot](../experiments/autonomy-eval/ab-20261027/REPORT.md) used six fresh worker contexts and a seventh arm-blinded adjudication context, 24 synthetic cases per batch, three batches per condition. Common policy and full-SOP conditions both classified 72/72 and had 72/72 correction/preservation proposals accepted; full-SOP task JSON character volume was 4.29x. This is not proof of equivalence or actual operating-cost increase: tokens, money, inference latency and owner time were not measured.
+
+Operational decision: preserve the contracts and proven engineering guards, load only task-relevant excerpts/experience by default, and do not upgrade autonomy or claim time savings. Several seeds explicitly described the failure, so the set is a basic development check, not genuine unhinted original-article discovery. Future acceptance must use original passages and adjacent transitions with necessary evidence, matched normal/defective controls, no diagnostic hints in task wording, and separately calibrated adjudication. A saturated set is insufficient evidence; do not tune it after seeing results and call that a preregistered win.
+
