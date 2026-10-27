@@ -1566,6 +1566,29 @@
     ]
   },
   {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md",
+    "output": "xiaoma-20261027-cticu-oxygen-delivery.html",
+    "title": "血氧看起來不差，DO₂i 為什麼仍下降？從 CPB 到心臟術後的 Hb × CO",
+    "subtitle": "以真實 CPB 病例區分血液攜氧容量與流量，釐清術後 DO₂、SvO₂ 和輸血判斷的證據邊界",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-cticu-oxygen-delivery-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-oxygen-delivery-sources.md",
+    "output": "xiaoma-cticu-oxygen-delivery-sources.html",
+    "title": "CTICU 氧輸送：原始來源與圖像查核",
+    "subtitle": "CPB Table 2／3、Fick、生理公式與輸血證據的來源定位",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false
+  },
+  {
     "source": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",
     "output": "xiaoma-cticu-abg-cabg-sources.html",
     "title": "CABG 術後乳酸與 ABG：來源及原圖查核",
@@ -1605,6 +1628,43 @@
     "output": "xiaoma-exam108-q46-chronic-cough-sources.html",
     "title": "108（一）Q46：慢性咳嗽與 ACEI 原始證據",
     "subtitle": "Pocket 9E 原書定位、ERS 2020 Figure 1、試題與選項核對",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-pe-normotensive-shock.md",
+    "output": "xiaoma-20261027-pe-normotensive-shock.html",
+    "title": "血壓還正常，為什麼肺栓塞病人已經不能等下一張 CT？",
+    "subtitle": "從肺動脈血栓診斷不確定、右心低灌流，到抗凝與再灌流利益和出血風險",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-pe-normotensive-shock-sources.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "question_heading": "官方國考對題｜112 年第二次・醫學（三）第 51 題",
+        "concept_heading": "04｜肺動脈阻塞，如何在血壓下降前先讓心輸出量下降？",
+        "focus": "嚴重肺栓塞的右心衰竭、診斷證據與抗凝治療界線",
+        "topic": "肺栓塞與右心衰竭"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pe-normotensive-shock-sources.md",
+    "output": "xiaoma-pe-normotensive-shock-sources.html",
+    "title": "肺栓塞的診斷、右心衰竭及再灌流：原始病例與原圖查核",
+    "subtitle": "Pocket Medicine 9E Figure 2-3、原版抗凝表、2026 AHA/ACC、原始病例與官方 Q51",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "section": "參考資料",
