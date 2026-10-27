@@ -340,6 +340,6 @@ IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 �
 
 [6] **Meyhoff TS, et al.** *Restriction of Intravenous Fluid in ICU Patients with Septic Shock.* N Engl J Med. 2022. <https://doi.org/10.1056/NEJMoa2202707>；**Shapiro NI, et al.** *Early Restrictive or Liberal Fluid Management for Sepsis-Induced Hypotension.* N Engl J Med. 2023. <https://doi.org/10.1056/NEJMoa2212663>。兩項試驗在各自介入時點與研究條件下比較輸液策略，不可逕行延伸成「所有病人零輸液」或否定 SSC 初始復甦。
 
-[7] **Jin A, et al.** *A real pain in the back…or maybe not—a case series of urosepsis due to obstructing calculi identified on ultrasound.* Int J Emerg Med. 2025;18:181. [原始病例系列、第一例及圖 1](https://link.springer.com/article/10.1186/s12245-025-00958-5)。本文保留 78M 第一例的原始入院生命徵象、POCUS、CT、實驗室與支架處置；不把另外兩名患者的量測或後續入住 ICU 資料接到這名患者身上。病例系列不證明治療的比較效果。
+[7] **Jin A, et al.** *A real pain in the back…or maybe not—a case series of urosepsis due to obstructing calculi identified on ultrasound.* Int J Emerg Med. 2025;18:181. [原始病例系列、第一例及圖 1](https://link.springer.com/article/10.1186/s12245-025-00958-5)。本文保留 78M 第一例的原始入院生命徵象、POCUS、CT、實驗室與支架處置；不把另外兩名患者的量測或後續入住 ICU 資料接到這名患者身上。病例系列不證明治療的比較效果。讀者可直接對照[原始 Case 1 Fig. 1（左腎 POCUS 與 CT）](https://link.springer.com/article/10.1186/s12245-025-00958-5#Fig1)，以及[本站的影像解讀與證據界線](sepsis-visual-evidence-and-sources.md)；影像提供阻塞的線索，不能單獨證明所有休克機轉。
 
 **教學範圍與臨床安全：** 本文的 78 歲男性資料出自可回查的真實病例系列；後續反事實中的假設情境數字並非實測；不提供缺少臨床條件的個人處方。病人是否開始、滴定或減少升壓／強心藥，應由臨床團隊根據監測、器官功能與院內規範決定。本篇是 AI 整合醫學教材，尚非真人專科同儕審查或實測學習成效證據。
