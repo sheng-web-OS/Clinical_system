@@ -2023,6 +2023,17 @@
     ]
   },
   {
+    "source": "content/xiaoma-internal-medicine/exam-gi-liver-three-sources.md",
+    "output": "xiaoma-exam-gi-liver-three-sources.html",
+    "title": "肝膽國考三題｜官方試題與更正答案",
+    "subtitle": "112（一）Q1、114（一）Q22、114（二）Q22：考選部原卷與正式給分依據",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
     "source": "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md",
     "output": "xiaoma-reading-chronic-diarrhea-evidence.html",
     "title": "找到腹瀉的類型，為什麼仍然沒有找到病因？",
