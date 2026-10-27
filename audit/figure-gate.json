@@ -779,8 +779,8 @@
           "mode": "illustrated",
           "anchor": "fig-infiltrative-alp-update",
           "caption_token": "Pocket Medicine 9E Figure 3-4",
-          "teaching_role": "Compare competing cholestatic etiologies as new history/imaging evidence arrives instead of equating measured ALP with confirmed infiltration.",
-          "scope_limit": "Hypothesis updating does not establish microscopic disease; absence of visible mass and ALP magnitude cannot define infiltration burden."
+          "teaching_role": "Holding ALP/GGT fixed, compare three independent evidence branches (new medication/immune symptoms, new tumor lesions, systemic amyloid/proteinuria) to make diagnostic probability and next-step choices diverge; no ALP-to-infiltration shortcut.",
+          "scope_limit": "All three scenarios are hypothetical and illustrative rather than a validated algorithm; absence of mass does not exclude microscopic disease, ALP magnitude cannot define infiltration burden, suspected AL requires clinical pretest selection and tissue typing for confirmation."
         },
         {
           "locator": "2026 ASH AL light chain amyloidosis diagnostic good-practice statements compared against Figure 3-4 SPEP line",
