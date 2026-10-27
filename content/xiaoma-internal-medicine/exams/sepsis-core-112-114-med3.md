@@ -135,7 +135,7 @@
 
 **為什麼選 B？** 酸血症可能來自低灌流、發炎相關代謝、腎功能障礙與呼吸代償問題，但 **pH 是生理結果，不等於尚未解除的根本感染或循環瓶頸**。核心救治仍是適當抗感染與必要源頭控制、器官氧送達與灌流支持；不能把「先打 bicarbonate 使 pH 變正常」當成所有 Sepsis 病人的首要目標。
 
-**重要的現行指南例外：** SSC 2026 對單純為了改善 hemodynamics 或降低升壓劑需求而治療 sepsis-induced lactic acidemia，建議**不要常規使用 bicarbonate**；但是對 **pH ≤7.2 且合併 AKI（AKIN 第 2–3 期）** 的嚴重代謝性酸血症患者，則有不同的條件性支持建議。這是要不要在特定高風險情境下使用 bicarbonate 的討論，不會把原題選項 B「首要目標」變成正確。[SSC 2026](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)
+**重要的現行指南例外：** Surviving Sepsis Campaign（SSC）2026 對單純為了改善 hemodynamics 或降低升壓劑需求而治療 sepsis-induced lactic acidemia，建議**不要常規使用 bicarbonate**；但是對 **pH ≤7.2 且合併 AKI（AKIN 第 2–3 期）** 的嚴重代謝性酸血症患者，則有不同的條件性支持建議。這是要不要在特定高風險情境下使用 bicarbonate 的討論，不會把原題選項 B「首要目標」變成正確。[SSC 2026](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)
 
 **其他選項的條件：** A 成立於適當感染可能性／風險的早期治療，但並非所有疑似感染者都須不加辨別立即給最廣譜；C 的液體要看 fluid responsiveness 與 tolerance，不能固定追量；D 不表示一定要**等補滿 30 mL/kg** 才可使用 NE，極度不穩定時升壓可以與必要補液並行。連回 [Sepsis 第九、十與十五章：補液、NE 與酸血症](../../clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md)。
 
