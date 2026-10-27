@@ -19,9 +19,9 @@ Rouleau SG, et al. **Management of Presumed Pulmonary Embolism With Normotensive
 
 原始 Figure 1 是 **S1Q3T3 ECG**；Figure 2 是**機械取栓取出的血栓**，不是原始 CTPA filling defect。圖像目前僅讀取到網站 caption／figure 標題與原文敘述，**尚未完成原像素目視與手機版驗收**，因此不把它們複製到公開稿或宣稱已有可放大的原圖。
 
-**原始病例內部數值一致性 QA：** 若 pH 7.06、pCO₂ 15 mmHg 為同一血氣檢體，Henderson–Hasselbalch 近似反推 HCO₃⁻ ≈ 0.03×15×10^(7.06−6.1) ≈ **4.1 mEq/L**，與另列 chemistry HCO₃ **9 mEq/L** 明顯不一致。原文未交代可確認的抽血時間差或誤植原因，不能私自修正原始資料；主文已將此列為來源疑義並避免用其計算混合酸鹼診斷。後續應向原文作者／期刊或 supplementary data 查證。\n\n## 2. Pocket Medicine 第九版
+**原始病例內部數值一致性 QA：** 若 pH 7.06、pCO₂ 15 mmHg 為同一血氣檢體，Henderson–Hasselbalch 近似反推 HCO₃⁻ ≈ 0.03×15×10^(7.06−6.1) ≈ **4.1 mEq/L**，與另列 chemistry HCO₃ **9 mEq/L** 明顯不一致。原文未交代可確認的抽血時間差或誤植原因，不能私自修正原始資料；主文已將此列為來源疑義並避免用其計算混合酸鹼診斷。V2 已縮減對初始 VBG pCO₂ 的代償推論，後續仍應向原文作者／期刊或 supplementary data 查證。\n\n## 2. Pocket Medicine 第九版
 
-使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次讀到 **p.98–101 的文字解析與圖表位置**，但頁面影像讀取返回 unavailable，原 PDF 原始 bytes 亦未能 materialize。既有 GitHub [VTE 圖表來源紀錄](../xiaoma-reading/vte-sources.md) 曾記錄 2026-10-26/27 目視 p.97–100，**不冒稱本次已重新目視 p.98–101 的像素**。
+使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次讀到 **p.98–101 的文字解析與圖表位置**；V2 重試 p.99–100 的影像回讀，仍顯示 **Image unavailable**（無法逐像素目視）。重試原始 PDF raw-byte materialization 時，系統明確拒絕授權路徑（`This Project file does not have an authorized raw-byte materialization path`）。因此尚未重核 Figure 2-3 與 p.100 原表的完整原圖／caption／footnote。既有 GitHub [VTE 圖表來源紀錄](../xiaoma-reading/vte-sources.md) 曾記錄 2026-10-26/27 目視 p.97–100，**不冒稱本次已重新目視 p.98–101 的像素**。
 
 - **p.97**：Virchow triad 與 *Thromboprophylaxis* 情境表，屬 VTE 共同預防上游問題；本篇不重新抄錄預防藥物表。
 - **p.98**：DVT modified Wells 三層模型、**Figure 2-2 Approach to suspected DVT**，以及 PE Wells 開始；DVT 三層分組不應移植成 NICE 的 DVT 兩層演算法。
@@ -53,6 +53,10 @@ NICE [NG158 recommendations](https://www.nice.org.uk/guidance/ng158/chapter/reco
 
 ## 5. 官方真題、著作權與未完成項
 
-本輪**沒有取得並核對與本篇直接相關的考選部原題、官方答案及更正**；因此正文僅有明示的 T1／T2 自編遷移題，**不計入任何年度正式題號索引**。後續找到官方 PE 真題，須先核實年份／梯次／醫學科目／題號與更正，再在既有按年份頁面建立雙向連結。
+**V2 已完成官方對題查核：112 年第二次專技高考・醫師（二）・醫學（三）（代碼 1302）第 51 題。** 考選部[正式原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q) PDF 第 12 頁記載 A–D 選項；[原標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=S)與[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M)均為 **D**。更正公告僅另列第 35 題（B／D 均給分）與第 43 題（B／C 均給分），**第 51 題未更正**。2026-10-27 已讀原卷第 51 題的完整文字及答案、更正表；更正 PDF 已實際目視，第 51 題所在列為 D。教材逐選項詳解新增於正文，不冒稱曾完成所有 112 年題號審查。
 
-第三方 ECG、血栓照片、Pocket Figure 2-3、JACC 分類原圖均未公開重製。此版本沒有假稱可放大的原圖入口；亦未完成手機 360/390px、深色模式、CI、Cloudflare 或正式 HTTPS 正文讀回。**發布判定 HOLD：原圖像素／註腳未重核、試驗 supplement 未核、官方真題未核、版面及獨立醫學 QA 未驗證。指引 2026-07-14 correction 的文字已核讀，但原圖未完成目視。** 這些是不同缺口，不能以單次 AI 自評或 GitHub 提交取代。
+A：胸痛非 PE Wells 條件；B：高敏 D-dimer 於適當檢前機率可協助排除，但特異度不高；C：VKA 與 parenteral anticoagulant 的重疊療程，不是所有 PE／LMWH 本身需要 INR 的通則，現代 DOAC 路徑另論；D：大量 PE 可經 RV afterload→RV failure→LV filling 下降→低輸出性休克致命。對原題「最常見死因」採國考語境，不外推為所有 PE 病人或所有死亡原因。
+
+**狀態邊界：** 原題及答案核對完成，不代表文章圖像／醫學／手機版 QA 過關；本分支仍未修改 `site/pages.json`，故**沒有建立公開年度索引與真正可用的雙向網頁連結**。等完整文章達發布門檻時，再與年度索引一起加入；不得先將草稿記為上線題數。
+
+第三方 ECG、血栓照片、Pocket Figure 2-3、JACC 分類原圖均未公開重製。此版本沒有假稱可放大的原圖入口；亦未完成手機 360/390px、深色模式、CI、Cloudflare 或正式 HTTPS 正文讀回。**發布判定 HOLD：原圖像素／註腳未重核、試驗 supplement 未核、版面及獨立醫學 QA 未驗證。官方 112（二）Q51 已核題，但尚未註冊公開年份索引，不能拿它抵銷其他門檻。指引 2026-07-14 correction 的文字已核讀，但原圖未完成目視。** 這些是不同缺口，不能以單次 AI 自評或 GitHub 提交取代。
