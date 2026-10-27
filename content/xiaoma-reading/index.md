@@ -4,6 +4,9 @@
 
 ## 最新整合閱讀
 
+**新完成的連續閱讀：** [HF：兩位都在喘，為什麼治療不同？](integrated/2026-10-27-heart-failure-hemodynamics.md) → [LVEDP：肺鬱血的壓力升高在哪裡？](integrated/2026-10-27-lvedp-pressure-volume.md)。第一篇由症候群走到鬱血／灌流與失代償；第二篇深入楔壓、左房與 LV 的充盈壓，並重新核對 2026 ESC 的分類變動。原稿只作版本對照。
+
+
 <div class="original-list">
   <a class="original-card" href="integrated/2026-10-21-dcm.md">
     <span class="original-date">最新修訂 · 2026.10.22</span>
@@ -26,7 +29,7 @@
 
 <div class="original-list">
   <a class="original-card" href="integrated/2026-10-23-hf-lvedp-figures.md">
-    <span class="original-date">原書圖表回讀 · 2026.10.23</span>
+    <span class="original-date">HF／LVEDP 補充圖表 · 2026.10.23</span>
     <strong>從四象限走進 LVEDP：兩張小麻原圖各在回答什麼？</strong>
     <span>以第九版 Pocket Medicine 的四象限與 Figure 1-2，接回鬱血／灌流和 filling pressure／volume 的不同問題；歷史原稿完整保留。</span>
     <span class="read-link">閱讀原創視覺圖解 →</span>
@@ -45,11 +48,11 @@
 
 ## 從心衰竭走進術後 ICU：新的跨篇銜接
 
-既有[HF 四象限](originals/2026-07-12-heart-failure.md)回答 congestion／perfusion，[LVEDP 圖文整合](integrated/2026-10-23-hf-lvedp-figures.md)解釋壓力不等於容量；但到術後病人，仍要追問循環實際送出了多少氧。[CABG 術後 lactate／ScvO₂ 真實病例](../xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md)將這個問題接到氧輸送、酸鹼與可立即處理的外科危險。這是跨專科推理的下一層，不是另創一份知識地圖；完整先備與改判問題仍見[唯一臨床知識地圖](../clinical-os/index.md#perfusion)。
+已更新的[HF 完整整合](integrated/2026-10-27-heart-failure-hemodynamics.md)回答 congestion／perfusion，[LVEDP 完整整合](integrated/2026-10-27-lvedp-pressure-volume.md)解釋壓力位置不等於容量，並搭配既有[雙圖補充](integrated/2026-10-23-hf-lvedp-figures.md)；但到術後病人，仍要追問循環實際送出了多少氧。[CABG 術後 lactate／ScvO₂ 真實病例](../xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md)將這個問題接到氧輸送、酸鹼與可立即處理的外科危險。這是跨專科推理的下一層，不是另創一份知識地圖；完整先備與改判問題仍見[唯一臨床知識地圖](../clinical-os/index.md#perfusion)。
 
 ## 原稿版本對照
 
-原始文字永久保存，不是獨立的醫學分類。已有完整整合版的文章，請先閱讀整合教材；原稿供作者論述與修訂差異對照。尚無完整整合版的原稿仍可直接閱讀。HF／LVEDP 圖表回讀屬補充材料，尚不取代兩篇完整原稿。
+原始文字永久保存，不是獨立的醫學分類。已有完整整合版的文章，請先閱讀整合教材；原稿供作者論述與修訂差異對照。尚無完整整合版的原稿仍可直接閱讀。HF／LVEDP 已另有兩篇完整整合版；2026.10.23 圖表回讀仍是補充，並非第三篇完整主文。
 
 <!-- XIAOMA_READING_ORIGINALS -->
 
