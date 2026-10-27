@@ -36,6 +36,10 @@ Marchand E, d’Odemont JP, Dupont MV. *A Patient with GOLD Stage 3 COPD « cure
 
 權利：期刊列 CC BY 4.0；本次仍只連到原 CT／Table，未搬運整份 PDF 或圖像像素。本站肺容量圖是重新設計的少量數據展示，保留出處與計算限制；不把原書未授權圖片放上站。
 
+### 網站圖檔製作紀錄（不屬臨床正文）
+
+既有網站製作查核記錄：原先嘗試載入的 MDPI 圖檔網址，在當次手機與桌面瀏覽器測試未能穩定呈現。尚未取得可驗證的替代站內像素檔時，正文只保留可直接到期刊全文定位的 Figure 1 A–D 連結，不以自創 CT 假圖或無關圖卡替代真實影像。此處屬圖片可用性／權利維護紀錄，不能當成新的臨床觀察或取代對影像本身的查核。
+
 ## 重症補強的來源邊界
 
 [IBCC AECOPD](https://emcrit.org/ibcc/aecopd/)頁面標示 2026-10-19 更新；已讀 evaluation、steroid、bronchodilator、antibiotic、NIV、intubation／ventilator／auto-PEEP／target blood gas 與 pathophysiologic concepts 段。採用的是排氣時間與呼吸負荷的教學提醒，並以 Pocket 原表及 GOLD 的機轉／支持段落交叉核對；沒有複製 IBCC 圖，也沒有採用其所有高劑量 steroid、PCT 停抗生素、固定 RR／PEEP 或固定插管時間建議。IBCC 是專家教育材料，不當成 guideline 或隨機試驗本身。
