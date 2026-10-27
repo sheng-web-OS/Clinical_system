@@ -124,14 +124,17 @@ PCI 的直接成效是恢復 epicardial coronary flow，但**微血管 no-reflow
 
 考題的價值不是能否記住答案字母，而是題幹改變一個條件後，能不能重新判斷。以下六道題均可連到考選部原卷與本站逐選項詳解；若題目依當年定義作答，**正式答案與 2026 年現行醫學定義要分開保存**。
 
-| 國考題 | 題目真正測的是什麼 | 必須拆掉的錯誤推論 |
-| --- | --- | --- |
-| [113（二）醫學（三）Q6](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6) | CABG 後 cTn 與程序性 MI；當年答案 D | 舊 Type 5 的 10× 門檻不是單憑數字即可確診 MI；2026 UDMI5 已改分類 |
-| [114（二）醫學（三）Q6](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-6) | PCI 的 anticoagulant、P2Y12、GP IIb/IIIa；答案 C | 抑制血小板與抑制凝血因子不是一種藥理動作；DES 不等於人人 6 個月停 DAPT |
-| [115（二）醫學（三）Q11](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-11) | 持續前壁 STE，選項中 SL NTG 0.4 mg 最適當；答案 B | 止痛不是再灌流；600 mg aspirin 與過量 enoxaparin 不因藥名正確就可用 |
-| [115（二）醫學（三）Q12](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-12) | PCI 後 VT/VF、LV thrombus、ACEi／ARB；答案 C | 終止急性 arrhythmia 不表示必須 routine prophylactic lidocaine；LV thrombus 另有抗凝理由 |
-| [115（二）醫學（三）Q13](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-13) | Ischemic cascade 的灌流、壁運動、ECG、cTn；答案 D | ECG 已變不代表血中 biomarker 必定同步升高 |
-| [114（二）醫學（三）Q9](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-9) | MI 後 HF 症狀辨識；答案 A | 飲水很多是可能加重鬱血的行為背景，不是 HF 症狀的同義詞 |
+**113 年第二次醫學（三）第 6 題｜CABG 後 troponin 高，是否就是 MI？** [原卷與逐選項詳解](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6)。這題的答案仍是當年考選部公告的 **D**；它要求辨認舊定義中 CABG-related Type 5 MI 的 biomarker 必要條件，而不是證明「大於 10 倍即可單獨確診」。以今日 UDMI5 重新臨床判讀，還須追術前基線、術後時間、冠脈／移植血管問題與新缺血的客觀證據。**國考行政答案與今天的醫學分類不同步，必須並存，不可偷換。**
+
+**114 年第二次醫學（三）第 6 題｜PCI 時抗凝與抗血小板能互換嗎？** [原卷與逐選項詳解](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-6)。官方答案 **C**。答題首先分辨凝血酶／fibrin 相關的程序性 anticoagulation、ADP receptor P2Y12 inhibition、GP IIb/IIIa 的血小板末端聚集作用，以及 DES 後持續抗血小板保護。其次要小心「新一代 DES 因此所有 ACS 六個月後都停 DAPT」的過度推論：出血與缺血風險須個別化，不能從一道問『錯誤選項』的題目抽出普遍處方。
+
+**115 年第二次醫學（三）第 11 題｜前壁 STEMI 的初始處置。** [同一病例逐選項詳解](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-11)。官方最佳答案 **B：SL nitroglycerin 0.4 mg**，是題目四個實際選項中的相對最佳：aspirin 600 mg 並非建議 loading dose；立即釋放型 nifedipine 不適合此急症；題中 enoxaparin 5 mg/kg 明顯過量。**若改問「此人現在最重要的致因治療是什麼」，答案應回到緊急再灌流**，不能因 NTG 是原題答案，就把止痛當成打開 LAD 的方法。
+
+**115 年第二次醫學（三）第 12 題｜VT/VF 已恢復，能否預防性繼續 lidocaine？** [同病例後續詳解](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-12)。官方答案 **C** 是不適當處置。急性期終止 VT/VF 要急救、電擊或其他合宜處理，但「曾經有效的急性藥」不等於「所有復律病人都應繼續」。若病人有新 LV thrombus，則是另一條避免 systemic embolization 的抗凝理由，必須另外衡量與 DAPT 疊加的出血負擔。
+
+**115 年第二次醫學（三）第 13 題｜心肌缺血先改變 ECG，troponin 就一定高？** [完整選項詳解](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-13)。官方答案 **D**。供血下降後舒張、區域壁運動與電位表現可能先有變化，而 cTn 的釋出與循環血中測得的濃度另有時間延遲。請反向想像：首管尚低但胸痛持續、ECG 危險，就不能以未達 injury definition 否決 urgent reperfusion；但也不能硬背所有病人 ECG 必在固定時間早於 wall motion。
+
+**114 年第二次醫學（三）第 9 題｜MI 後哪個不是典型 HF 症狀？** [原卷與逐選項詳解](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-9)。官方答案 **A**：大量飲水可以是可能加重鬱血的背景行為，但不是病人的主觀病徵。呼吸困難、端坐呼吸、夜間陣發性呼吸困難及疲乏，才要求回查灌流與充血；即使符合典型症狀，也不能只靠一項症狀完成 HF 及其病因診斷。
 
 另外，[115（二）冠脈供需與阻力](../xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md)可以回頭確認 coronary perfusion 與耗氧的基本物理；[108（一）Q76 古柯鹼相關缺血](../xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md)則測試「處理心率／血管張力」與「治療原發冠狀血栓」不能混為一談。這些題目是已核對的特定國考身分，不能宣稱本站已涵蓋歷年所有 ACS 題型。**答題時先辨題目所屬年代**：113 年程序性 MI 題目保留原標準答案，再比對 UDMI5；115 年持續前壁 ST elevation 題目在四個選項中選 nitroglycerin，仍不能把題目中不存在的 PCI 選項視為不需要的治療。[官方原題與更正來源對照](../xiaoma-internal-medicine/acs-exam-sources.md)
 
