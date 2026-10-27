@@ -32,8 +32,13 @@ jobs:
         run: python -m pip install --disable-pip-version-check -r requirements.txt
       - name: Run editorial and publication regression tests
         run: python -m unittest discover -s tests
-      - name: Evidence-gated site build
-        run: bash tools/build_site.sh
+      # Preview artifacts stay PRIVATE in Actions. Never deploy or upload dist here.
+      # Medical/teaching approval remains a separate mandatory release gate below.
+      - name: Render unapproved PR draft for private visual QA only
+        if: github.event_name == 'pull_request'
+        run: |
+          python site/build.py
+          python tools/check_output.py
       - name: Install Chromium for image layout QA
         if: github.event_name == 'pull_request'
         run: |
@@ -63,6 +68,8 @@ jobs:
           path: visual-qa-artifacts/
           if-no-files-found: warn
           retention-days: 14
+      - name: Evidence-gated site build
+        run: bash tools/build_site.sh
       - name: Save verified static site
         uses: actions/upload-artifact@v4
         with:
