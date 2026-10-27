@@ -1466,7 +1466,35 @@
     "review": "ai_editorial_review",
     "layout": "reader",
     "section": "血栓與臨床推理",
-    "references": "xiaoma-reading-vte-sources.html"
+    "references": "xiaoma-reading-vte-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 8,
+        "focus": "將 VTE 發生前的共同預防風險，與一次 PE 完成抗凝後的復發風險分開；原卷 Q8 官方更正 C／D，不能當作 unprovoked 風險低的臨床證據。"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 9,
+        "focus": "D-dimer 提升疑似 PE 的懷疑，但不是定位證據；從檢前機率與官方影像辨認確診角色。",
+        "concept_heading": "D-dimer 共用，停止條件為何不能共用？"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "focus": "Wells 與 D-dimer 的角色分開，並將嚴重 PE 的 RV failure 接回急性風險；該題由已發布 PE 文章保管，不在此重製。",
+        "concept_heading": "D-dimer 共用，停止條件為何不能共用？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-26-constipation.md",
@@ -1658,6 +1686,26 @@
         "focus": "嚴重肺栓塞的右心衰竭、診斷證據與抗凝治療界線",
         "topic": "肺栓塞與右心衰竭"
       }
+    ],
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 8,
+        "focus": "急性救援後進入延長抗凝時，誘因是否消失與出血風險才是停藥決策的起點；注意官方更正 C／D 與現代復發證據不能混同。",
+        "concept_heading": "07｜同一個病人，只改一項條件，下一步為何不同？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 9,
+        "focus": "把原卷多模態 CXR／ECG／CT 與 D-dimer 的角色分開；診斷未完成不表示病人可等待循環救援。",
+        "concept_heading": "02｜沒有 CTPA，是否代表只能等？"
+      }
     ]
   },
   {
@@ -1670,6 +1718,32 @@
     "section": "參考資料",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/115-1-med3-pe-q8-q9.md",
+    "output": "xiaoma-exam1151-pe-diagnosis-recurrence.html",
+    "title": "115（一）肺栓塞 Q8／Q9：找到血栓，為何還要重新決定停藥？",
+    "subtitle": "原卷 CXR／ECG／CT 的確診證據，以及考選部更正 C／D 的抗凝停藥風險題",
+    "collection": "xiaoma-internal-medicine",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "血栓與肺循環・官方真題",
+    "exam": {
+      "year_roc": 115,
+      "sitting": 1,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        8,
+        9
+      ]
+    },
+    "exam_topics": {
+      "8": "PE 抗凝停藥與誘發因子（官方更正 C／D）",
+      "9": "肺栓塞診斷：影像、D-dimer 與右心負荷"
+    }
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md",
