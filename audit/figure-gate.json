@@ -685,6 +685,42 @@
           "why_link_instead": "直接連結已核實可開啟的期刊作者原圖，保留合法來源及原圖細節；本站自行撰寫因果推理，不重新上傳、裁切或臨摹整張第三方流程圖。"
         }
       ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-cholestasis-evidence-to-action.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/cholestasis-sources-20261027.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_figure_and_editorial_check_not_independent_medical_review",
+      "rights_decision": "link_or_independent_html_original_only; no_book_pixels",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E Library PDF p.139 Figure 3-3 abnormal liver tests with cholestatic pattern; ACG ALP origin / ASGE cholangitis",
+          "source_token": "Figure 3-3",
+          "mode": "illustrated",
+          "anchor": "fig-cholestasis-evidence-action",
+          "caption_token": "Pocket Medicine 9E Figure 3-3",
+          "teaching_role": "Separate cholestatic localization evidence from urgent intervention while making ultrasound-negative obstruction a remaining hypothesis, not an exclusion.",
+          "scope_limit": "This is not the publisher figure nor a deterministic biliary diagnosis tree. Patient stability and suspected cholangitis require parallel urgent assessment."
+        },
+        {
+          "locator": "TG18 diagnostic A/B/C; SSC 2026 resuscitation and source control; ASGE 2021 intervention scope; ESGE 2019 risk-based timing",
+          "source_token": "TG18 診斷與嚴重度",
+          "mode": "illustrated",
+          "anchor": "fig-cholangitis-decision-pivot",
+          "caption_token": "SSC 2026",
+          "teaching_role": "Visualize successive conditional changes to a single labeled fictional patient's diagnostic confidence, emergency physiology and drainable source while holding nondilated US fixed. New evidence is the only reason an action changes; alternate extra-biliary diagnosis exits ERCP.",
+          "scope_limit": "Fictional scenario; no claimed real timeline or actual reported lab values; TG18 imaging C can be stone with nondilated ducts. Cannot infer all sepsis with ALP rise merits ERCP."
+        },
+        {
+          "locator": "Hong MJ et al. British Journal of Radiology 2012 DOI 10.1259/bjr/21182091, Fig 1a/1b and Table 4, PMID 23175488; publisher copyright British Institute of Radiology",
+          "source_token": "Hong et al.",
+          "mode": "illustrated",
+          "anchor": "fig-cholangitis-real-ct-evidence",
+          "caption_token": "Hong 2012",
+          "teaching_role": "Contrast two genuine radiological observations in same 54-year-old reported woman (distal CBD calcified stone vs nondilated common hepatic duct), direct reader to original published Figure 1. In cohort assess ALP 316.47 vs 322.77 (p .939), bilirubin 4.58 vs 8.53 (p .001) without inference of diagnostic sensitivity or equivalence.",
+          "scope_limit": "No copying of original CT pixels or pixels from Pocket Medicine; link to primary publisher manuscript/PubMedCentral figure and label photographic rights. Real report does not supply her shock status or later procedure; 17/93 is CT-selected retrospective sample, NOT population prevalence."
+        }
+      ]
     }
   }
 }
