@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "note": "Frozen public teaching blobs before introducing incremental EPQC semantic review. This is a grandfathered baseline, not a retrospective quality certificate. Never refresh to bypass an editorial review.",
+  "note": "Frozen teaching blobs already published before EPQC gate activation (including HF/LVEDP articles merged during rollout); NOT retrospective quality approvals. Never refresh a fingerprint to bypass review.",
   "legacy_blobs": {
     "content/xiaoma-reading/integrated/2026-10-21-dcm.md": "f16eced854467e5c8e43a063ef5d34b93f0d1d15",
     "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md": "be780f1ae3567c60f3a108c8fa489ca8005f39d3",
@@ -48,6 +48,8 @@
     "content/xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md": "4e38de8971920f3415128e5f3ef57a9c930f2d6f",
     "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md": "f1f82f86894d94628efc8c4b7386e55297b543db",
     "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md": "3cc264ca5902c20894eb1e2b8db35bfaf52bddd1",
-    "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md": "e36fb0c2e5404d91e96a1ee4f9ca4f853f0dcf90"
+    "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md": "e36fb0c2e5404d91e96a1ee4f9ca4f853f0dcf90",
+    "content/xiaoma-reading/integrated/2026-10-27-heart-failure-hemodynamics.md": "78f584845c0305c1f140fa208cf364b1faa871e6",
+    "content/xiaoma-reading/integrated/2026-10-27-lvedp-pressure-volume.md": "0e33cb39ecfc0f1e1a505389f12a8480570a7a10"
   }
 }
