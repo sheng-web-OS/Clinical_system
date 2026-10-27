@@ -35,6 +35,10 @@ def load_pages(root):
             raise ValueError("Duplicate publication source or output")
         sources.add(row["source"])
         outputs.add(row["output"])
+        # Source-audit notebooks are not dated teaching chapters. Otherwise they
+        # silently enter today's updates and the knowledge-atlas article index.
+        if row.get("review") == "source_audit" and row.get("date"):
+            raise ValueError("Source audit cannot have article date: " + row["source"])
         if "updated" in row:
             updated = date.fromisoformat(row["updated"])
             if not row.get("date") or updated < date.fromisoformat(row["date"]):
