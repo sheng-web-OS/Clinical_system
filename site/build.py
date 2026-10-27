@@ -20,7 +20,7 @@ FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row i
 # The token is a public site identifier, not an API credential.
 # Owner opt-out is browser-local, applied before the analytics script can load.
 # An inert config tag keeps the token in one location and avoids a beacon for owners.
-WEB_ANALYTICS_BEACON = """<script type="application/json" id="clinical-analytics-config" data-src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c6bb7055c62648c39f440da91304c99e"}'></script>
+WEB_ANALYTICS_BEACON = """<template id="clinical-analytics-config" data-src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c6bb7055c62648c39f440da91304c99e"}'></template>
 <script>
 (function () {
   try {
