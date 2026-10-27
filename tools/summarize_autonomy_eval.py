@@ -26,8 +26,11 @@ def ratio(numerator, denominator):
 
 
 def summarize(suite, run, suite_digest):
-    require(suite.get("schema_version") == 1 and run.get("schema_version") == 1,
+    require(type(suite.get("schema_version")) is int and suite["schema_version"] == 1
+            and type(run.get("schema_version")) is int and run["schema_version"] == 1,
             "unsupported schema version")
+    require(isinstance(suite.get("suite_id"), str) and bool(suite["suite_id"].strip()),
+            "suite_id must be a nonempty identifier")
     require(suite.get("exposure") == "development",
             "this tool only summarizes visible development cases, not held-out validation")
     require(run.get("suite_id") == suite.get("suite_id")
@@ -45,7 +48,7 @@ def summarize(suite, run, suite_digest):
     for case in cases:
         require(isinstance(case, dict), "invalid case")
         ident = case.get("id")
-        require(isinstance(ident, str) and ident and ident not in by_id,
+        require(isinstance(ident, str) and ident and ident == ident.strip() and ident not in by_id,
                 "missing or duplicate case id")
         require(type(case.get("defect_present")) is bool, "invalid defect label")
         by_id[ident] = case
@@ -54,13 +57,14 @@ def summarize(suite, run, suite_digest):
 
     trials = run.get("trial_ids")
     require(isinstance(trials, list) and len(trials) >= 3
-            and all(isinstance(x, str) and x for x in trials)
+            and all(isinstance(x, str) and x and x == x.strip() for x in trials)
             and len(set(trials)) == len(trials),
             "at least three distinct planned trial ids are required")
     expected = {(case_id, trial) for case_id in by_id for trial in trials}
     records = run.get("records")
     require(isinstance(records, list), "missing trial records")
     indexed = {}
+    worker_trials, trace_trials = set(), set()
     for record in records:
         require(isinstance(record, dict), "invalid trial record")
         key = (record.get("case_id"), record.get("trial_id"))
@@ -73,10 +77,18 @@ def summarize(suite, run, suite_digest):
         worker, reviewer = record.get("worker_context"), record.get("reviewer_context")
         require(isinstance(worker, str) and bool(worker.strip())
                 and isinstance(reviewer, str) and bool(reviewer.strip())
-                and worker != reviewer,
+                and worker.strip() != reviewer.strip(),
                 "author and adjudicating reviewer contexts must be declared separately")
         require(isinstance(record.get("trace_ref"), str) and bool(record["trace_ref"].strip()),
                 "missing trace reference")
+        worker_trial = (key[0], worker.strip())
+        trace_trial = (key[0], record["trace_ref"].strip())
+        require(worker_trial not in worker_trials,
+                "independent trials for one case cannot reuse a worker context")
+        require(trace_trial not in trace_trials,
+                "independent trials for one case cannot reuse a trace reference")
+        worker_trials.add(worker_trial)
+        trace_trials.add(trace_trial)
         for field in ("owner_minutes", "owner_interruptions", "hard_failures", "attempts"):
             require(field in record, "missing " + field + "; use null for unmeasured owner cost")
         number_or_none(record["owner_minutes"], "owner_minutes")

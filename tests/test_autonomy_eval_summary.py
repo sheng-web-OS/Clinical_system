@@ -134,6 +134,49 @@ class AutonomySummaryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.summary(suite, run, digest)
 
+    def test_relabelled_worker_or_trace_cannot_create_independent_trials(self):
+        for field in ("worker_context", "trace_ref"):
+            with self.subTest(field=field):
+                suite, run, digest = inputs()
+                for record in run["records"]:
+                    if record["case_id"] == "bad":
+                        record[field] = "one-execution-reused"
+                with self.assertRaises(ValueError):
+                    self.summary(suite, run, digest)
+
+    def test_whitespace_does_not_make_author_and_reviewer_different(self):
+        suite, run, digest = inputs()
+        run["records"][0]["reviewer_context"] = run["records"][0]["worker_context"] + " "
+        with self.assertRaises(ValueError):
+            self.summary(suite, run, digest)
+
+    def test_boolean_schema_and_empty_suite_identity_are_rejected(self):
+        for target in ("suite", "run"):
+            suite, run, digest = inputs()
+            (suite if target == "suite" else run)["schema_version"] = True
+            with self.subTest(target=target), self.assertRaises(ValueError):
+                self.summary(suite, run, digest)
+        for value in ("", " ", None):
+            suite, run, digest = inputs()
+            suite["suite_id"] = run["suite_id"] = value
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                self.summary(suite, run, digest)
+
+    def test_whitespace_in_planned_trial_ids_is_rejected(self):
+        suite, run, digest = inputs()
+        run["trial_ids"][0] = "1 "
+        for record in run["records"]:
+            if record["trial_id"] == "1":
+                record["trial_id"] = "1 "
+        with self.assertRaises(ValueError):
+            self.summary(suite, run, digest)
+
+    def test_distinct_trial_fragments_in_one_trace_container_remain_valid(self):
+        suite, run, digest = inputs()
+        for record in run["records"]:
+            record["trace_ref"] = "one-run.json#" + record["case_id"] + "/" + record["trial_id"]
+        self.assertEqual(self.summary(suite, run, digest)["planned_trials"], 6)
+
     def test_no_normal_controls_or_single_trial_are_rejected(self):
         suite, run, digest = inputs()
         suite["cases"] = suite["cases"][:1]

@@ -15,6 +15,7 @@ development-cases.json 含 10 組正常／缺陷配對，覆蓋 metadata、概�
 3. 先保存未修稿的 finding 與位置，再執行修復，保留 V1、修改、工具結果與最終產物；未找到也要留下失敗紀錄。給定位置的修復診斷可另外做，但不能混入自主發現率。
 4. 由分離上下文的評閱者按既定標準判定 finding 是否正確定位、修復是否成功及是否引入新 P0/P1。不同上下文是必要操作；標記本身不證明獨立性。使用正常反例校準評閱者，避免全部 HOLD；需要時以少量專家判讀校準，不要求使用者逐段常規評閱。
 5. 每個案例事先排定至少 3 個 trial。失敗、逾時或工具存取失敗一樣納入；工具重試計 attempts，不能挑成功重跑或把 V2 寫成 first_pass。
+   同一案例各 trial 必須有不同 worker context 與可區分的 trace locator；不可把同一次執行複製成多個 trial。共用紀錄容器時用不同 case/trial fragment 定位。不同名稱仍不等於已認證獨立，可信執行證據須另外核對。
 6. 真正未曝光的主題／病例與答案，日後由評估執行端隔離保管，不能掛載給工作者或由工作者改寫。本工具只支援 development；**不得把 exposure 改成 heldout 來取得效能聲稱**。
 
 ## 可執行工具
@@ -40,6 +41,8 @@ run 必填：
 退出碼：0＝資料可彙整且未觀察新 hard failure；1＝存在 hard failure、HOLD；2＝資料不完整或矛盾。**0 不代表自主能力、臨床真實性或發布通過**。輸出永遠保留 DEVELOPMENT_ONLY、autonomy_validated=false、learning_effect_validated=false、release_approval=false。
 
 工具只檢查資料與計算，不能驗證 trace 真偽或評閱者真的獨立。真正模型試跑、受控比較、審稿者校準與保護評估權限仍須另外執行；不得用單元測試合成紀錄填補。
+
+2026-10-27 工具前後版本的十項工程對照與剩餘限制見 [資料完整性查核](data-integrity-comparison-20261027.md)。此對照只證明指定輸入防線改善，不是 AI 語義試跑。
 
 ## 變更與維護
 
