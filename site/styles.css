@@ -827,3 +827,12 @@
  .reading-prose .chol-real-ct{grid-template-columns:minmax(0,1fr);gap:.35rem}
  .reading-prose .chol-real-divider{font-size:1.1rem}
 }
+
+/* CTICU oxygen-delivery figure: caption is metadata, not another full-size body paragraph. */
+.reading-prose #cticu-do2-two-paths figcaption{
+  font-size:clamp(13px,.86rem,17px);
+  line-height:1.7;
+  color:var(--muted);
+  margin:12px 3px 0;
+  overflow-wrap:break-word;
+}
