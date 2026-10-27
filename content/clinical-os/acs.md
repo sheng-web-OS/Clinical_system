@@ -36,6 +36,8 @@ ACS（acute coronary syndrome，急性冠心症）不是一個「驗血陽性」
 
 ECG 的每一導程都是從特定方向觀看心臟電位差。局部缺血使受影響區域的去極化與復極化特性改變，所以同一病灶在面向它的導程可見 ST elevation，在相反導程可出現 reciprocal ST depression。它不是一張直接標出血栓位置的解剖圖；梗塞區域、側枝循環、傳導阻滯、舊梗塞與取樣時間都會影響圖形。
 
+**先把「典型 ST elevation」的量測界線說清楚。** 依 [2025 ACC/AHA ACS Table 3](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009) 與 [2023 ESC ACS §3.2.1](https://academic.oup.com/eurheartj/article/44/38/3720/7243210)，在適當的急性缺血情境，J-point 的新 ST elevation 須出現在**至少兩個相鄰導程**：V2–V3 的門檻為男性 <40 歲 **≥2.5 mm**、男性 ≥40 歲 **≥2 mm**、女性不分年齡 **≥1.5 mm**；其餘導程通常為 **≥1 mm**，並須留意 LVH、LBBB 等會改變 ST–T 判讀的背景。這些數字幫助辨識典型 STEMI 的 ECG 工作診斷，**不是排除急性冠脈閉塞的陰性測試**：例如本篇 55 歲男性若只有 V2–V3 各 1.5 mm STE，不能單憑這兩個值宣布已達典型門檻；但若胸痛持續、ECG 演變為 de Winter 或出現後壁缺血鏡像，**未達典型 STE 門檻仍不能排除**需要緊急侵入性評估的冠脈閉塞。反過來，ST elevation 也可能受 early repolarization、心包炎或 LVH 影響，不能不看病程就把每個升高當成血栓。
+
 從定位開始：II、III、aVF 提醒 inferior territory；V1–V4 常涉及前中隔／前壁；I、aVL、V5–V6 可見側壁缺血。Inferior ST elevation 配合對側變化時，要進一步問右冠或迴旋支，以及**右室是否一同受累**；必要時加做 V3R/V4R。V1–V3 的水平 ST depression，尤其合併高 R 波與直立 T 波，在恰當情境下可能是**後壁急性阻塞的鏡像**，應考慮 V7–V9 並立即與心臟團隊討論。這些額外導程是在補足 12 導程的視角，不是「加一張圖才算看過病人」。
 
 再具體一點：假設下壁 STE 是從 II、III、aVF 讀到的病灶投影，I、aVL 的 reciprocal depression 能支持區域性缺血的整體圖像；若同時低血壓且懷疑右室受累，就加看 V4R 與 bedside echo，因為治療上的問題已從「哪個區域缺血」變成「是否存在 preload-sensitive 的 RV dysfunction」。另一位胸痛患者只有 V1–V3 horizontal STD，不能把它草率歸為一般 NSTEMI：若是後壁向量投影的 reciprocal sign，加做後壁導程可能揭露需要緊急再灌流的阻塞。**定位不是為了背 LAD／RCA／LCx 的一對一口訣，而是為了決定下一個必須取得的證據。**
