@@ -35,3 +35,13 @@ Issue #180。兩篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD*
 SCr/BUN/eGFR、尿量、UA/urine sediment、時間滯後：AKI 功能訊號不等於腎小管損傷，對照 CKD 病程與藥物/灌流/阻塞。避免與已存在 acid-base、diuretics 重複。
 
 **最終狀態：HOLD。早期文章版本已有 GitHub Actions build success，但最新版文章／來源審查仍需依 exact SHA 讀回，且無獨立醫學與逐段語義審查、正式發布或讀者學習成效的合格證據。**
+
+## 第三篇 AKI/SCr-urine 前期核對（新增，仍 HOLD）
+- 新篇：content/xiaoma-internal-medicine/lessons/2026-10-27-lab-medicine-aki-creatinine-urine.md，三個病例均標示自編、不混為單一人。
+- NICE NG148 官方完整 HTML：尿試紙、是否做超音波與感染阻塞的 6h、原因不明或阻塞風險 24h；NICE 的資源時間門檻需在台灣按醫療情境評估，不可機械外推。
+- KDIGO 2024 CKD 官方摘要與 Ann Intern Med synopsis：eGFRcr/cys 與 chronicity 的適用脈絡，不可將急速變化的 eGFRcr 當作當下直接測量 GFR；2026 AKI 公開草案未升格。
+- Meta-analysis 2024 (PMID 38768779) 與 2026 BMJ Open (DOI 10.1136/bmjopen-2025-100875) 對 FEUrea 的估計與研究選擇不一致；正文明確只稱中等/有限診斷資訊，不能單憑尿電解質決定是否繼續補液。
+- 腎臟數學初驗：SCr 1.0→1.8 為 1.8 倍、1.1→2.0 為 1.82 倍、1.6→1.9 是 48h 上升 0.3，均符合相應功能性 AKI 判準。這些是自編場景，stage 不等於確定 tubular injury。
+- 113-1 醫學（三）Q29 與 115-2 醫學（三）Q28 已在 private structured bank 精確定位：machine-parsed 正確選項欄分別 D 與 A，**原試題與標準答案 PDF 視覺核讀未完成，不可標為正式題解**。
+- 內部相對連結到早晨 Lab、既有利尿劑文章已讀回存在；讀者閱讀成效／獨立審查／正式發布仍全數待證。
+- P1：獨立醫學 reviewer 再審可能過度簡化的 AKI staging、urine sediment specificities、FEUrea pooled estimates、動態 eGFR 與心衰去充血；未經放行不得合併。
