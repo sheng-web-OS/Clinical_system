@@ -721,23 +721,6 @@
           "scope_limit": "No copying of original CT pixels or pixels from Pocket Medicine; link to primary publisher manuscript/PubMedCentral figure and label photographic rights. Real report does not supply her shock status or later procedure; 17/93 is CT-selected retrospective sample, NOT population prevalence."
         }
       ]
-    },
-    "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md": {
-      "status": "represented",
-      "source_review": "content/xiaoma-internal-medicine/cticu-oxygen-delivery-sources.md",
-      "reviewed_on": "2026-10-27",
-      "review_type": "ai_source_and_figure_scope_check_not_independent_physician_review",
-      "items": [
-        {
-          "locator": "Civelek et al. Cureus 2025 original publisher PDF pages 4–5 Table 2 CPB aggregate oxygenation and DO2i, Table 3 CPB/postoperative sampling, and narrative two CPB episodes",
-          "source_token": "Civelek 2025",
-          "mode": "illustrated",
-          "anchor": "cticu-do2-two-paths",
-          "caption_token": "Civelek 等人",
-          "teaching_role": "把 CPB 氧輸送下降的流量與 Hb 兩種機制分開，讓讀者不把正常平均 SaO2 誤當事件同步數據，也不把 pump flow 當術後 CO。",
-          "scope_limit": "單一病例敘述有持續時間與 Hb 採樣不一致；原創圖非同步時間序列，不能估計術後 CO、組織缺氧或固定輸血門檻。"
-        }
-      ]
     }
   }
 }
