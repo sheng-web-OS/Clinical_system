@@ -54,5 +54,16 @@ class ACSSemanticBridgeRegressions(unittest.TestCase):
         self.assertIn("冠脈程序併發症證據，加上新缺血性區域壁運動異常", intro)
 
 
+    def test_procedure_mi_box5_clinical_entry_precedes_and_or_confirmation(self):
+        """UDMI5 Box 5: clinical/ECG trigger plus acute injury precede confirmatory imaging."""
+        intro = self.body.split("## 一、先弄懂 ACS", 1)[1].split("## 二、病人抵達", 1)[0]
+        paragraph = next(p for p in intro.split("\n\n") if p.startswith("**第三條分岔"))
+        for cue in ("急性心肌傷害", "缺血症狀", "新缺血性 ECG", "鎮靜", "術前基線"):
+            self.assertIn(cue, paragraph)
+        self.assertLess(paragraph.index("急性心肌傷害"), paragraph.index("正式確認需要"))
+        self.assertIn("AND／OR", paragraph)
+
+
+
 if __name__ == "__main__":
     unittest.main()
