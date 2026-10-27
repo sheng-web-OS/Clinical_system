@@ -30,6 +30,8 @@ def is_blocker(item):
     body = item.get("body") or ""
     if BLOCK.search(body):
         return True
+    if item.get("source") == "review" and item.get("state") == "CHANGES_REQUESTED" and SEVERITY.search(body):
+        return True
     return (bool(SEVERITY.search(body[:200]))
             and bool(LEGACY_LEAD.search(body[:200]))
             and bool(STOP_WORDS.search(body)))
@@ -48,7 +50,9 @@ def evaluate(pr, records):
                 continue
             if (item.get("user") or {}).get("login", "").lower() == author:
                 continue  # a PR author cannot self-clear a high-severity blocker
-            if (item.get("created_at") or "") < (blocker.get("created_at") or ""):
+            item_time = item.get("created_at") or item.get("submitted_at") or ""
+            blocker_time = blocker.get("created_at") or blocker.get("submitted_at") or ""
+            if item_time < blocker_time:
                 continue
             for match in RESOLVED.finditer(item.get("body") or ""):
                 source, identifier, sha, _evidence = match.groups()
