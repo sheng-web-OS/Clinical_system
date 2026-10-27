@@ -63,6 +63,8 @@
 
 **建議順序：** [HCM：Nonobstructive 不等於沒有其他功能障礙](../xiaoma-reading/originals/2026-07-14-hcm.md) → [AS／AR：EF、flow 與 gradient](../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md) → [DCM：形態與前向血流不相同](../xiaoma-reading/integrated/2026-10-21-dcm.md)。
 
+**冠狀缺血閱讀路線：** [ACS：從缺血的證據到治療後剩餘風險](acs.md)接回另一種胸痛：症狀、ECG、cTn 是不同層次的證據，不能把「沒有典型 STE」直接解讀為「沒有需要緊急處理的缺血」。沿該入口進入原 ACS 四章課程（診斷 → ECG → 抗栓／再灌流 → MI 後風險），再回本地圖的[灌流分支](#perfusion)理解 post-MI 低血壓、EF、LVEDP 與前向流量的不同意義。這是缺血到心室功能的概念橋，不代表所有缺血都必然造成低 EF。
+
 **交叉驗證：** [108（一）四道心臟官方真題](../xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md)中的第 8、11、12、76 題，分別把先天分流、動態雜音、差異性發紺與冠痙攣帶回床邊。這是不同原因的鑑別練習，不是把它們串成同一條疾病進展。
 
 ## 肌酐上升或尿量下降，先辨認哪一種失效？
