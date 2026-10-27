@@ -9,7 +9,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "site"))
 from catalog import load_pages
-from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers
+from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers, by_year
 
 class ExamArchiveContract(unittest.TestCase):
     @classmethod
@@ -56,7 +56,7 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertNotIn('id="year-2026"', index)
         self.assertIn('href="xiaoma-exams.html#year-108"', teaser)
         self.assertEqual(index.count('class="exam-lesson"'),
-                         sum(bool(page.get("exam")) for page in self.pages))
+                         sum(len(rows) for papers in by_year(self.pages).values() for rows in papers.values()))
         for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78):
             self.assertIn("#q-" + str(q) + '"', index)
 

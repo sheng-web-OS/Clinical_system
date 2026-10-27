@@ -77,6 +77,6 @@ def load_pages(root):
     from figure_gate import validate_figure_gate
     from exam_archive import validate_exam_catalog
     validate_figure_gate(root, pages)
-    validate_exam_catalog(pages)
+    validate_exam_catalog(pages, root)
     return pages
 
