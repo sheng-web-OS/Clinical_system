@@ -117,7 +117,9 @@ Plaque 相關血栓同時有 platelet-rich aggregation 與 coagulation／fibrin 
 
 PCI 的直接成效是恢復 epicardial coronary flow，但**微血管 no-reflow、已壞死的心肌、stunning、出血與新發結構破壞**都不會因一張「支架很漂亮」的造影而消失。即使 culprit artery 恢復接近正常的 epicardial TIMI flow，微血管仍可能因遠端微栓塞、缺血後內皮腫脹、發炎與再灌流損傷而無法有效供應心肌；病人因此仍可能持續 ST elevation、疼痛或有區域壁運動異常。**冠脈造影看到的大血管通暢，不等於每個微血管床都恢復了有效氧氣輸送**；若臨床惡化仍要同時排除再次阻塞、出血和其他競爭性原因。若 PCI 後患者再度胸痛與 ST change，先想再阻塞、支架血栓或持續缺血；若是新喘、肺水腫、休克，不能只把「EF 差」寫成診斷就停住。應即刻 bedside echo 追尋新的 wall motion、瓣膜、室間隔及心包變化，同步看灌流、節律、血紅素與介入通路出血。
 
-**乳突肌／腱索失效造成急性 severe MR**：收縮期血液大量回流至尚未適應高壓的左房，肺靜脈壓驟升而急性肺水腫，前向輸出下降造成休克。這一種機械性併發症**最典型與下壁／側壁梗塞的 posteromedial papillary muscle rupture 有關**：它多仰賴單一主導冠脈（RCA／LCx）的供血；anterolateral papillary muscle 因有 LAD 與 LCx 分支的雙重供血，破裂較少見。因此，不能把主病例的「LAD 前壁梗塞」寫成急性乳突肌破裂最典型的背景：若是 LAD 大面積梗塞後惡化，也要特別注意前中隔破裂、LV 功能惡化、心尖部血栓等可能；實際仍由 bedside echo 的構造與血流證據決定，而非僅由 artery 名稱推斷。因 LV 與 LA 壓力很快接近，雜音可能不大；**沒有響亮的新雜音並不能排除急性 MR**。Echo／必要時 TEE 可以找 flail leaflet、破裂結構與逆流的方向，需緊急外科與循環支持評估。
+**急性 MR 的時間與機轉要分開。** 若**剛完成 PCI**就出現肺水腫，可能涉及持續缺血引起的**乳突肌缺血性功能失調**、局部壁運動異常／瓣葉牽拉（functional MR），也須同時排除再閉塞、no-reflow 等原因；**乳突肌破裂通常**是 MI 後**數日**出現的結構性併發症（典型約 3–5 天，但並非絕對），不能把「PCI 後立刻喘」直接等同於破裂。無論時點，新肺水腫或休克都須立即以 bedside echo 評估 MR 機轉與新結構缺損，不能等典型日期才檢查。[AHA 2021 MI 機械性併發症科學聲明](https://pmc.ncbi.nlm.nih.gov/articles/PMC9364424/)
+
+**乳突肌破裂造成急性 severe MR**：收縮期血液大量回流至尚未適應高壓的左房，肺靜脈壓驟升而急性肺水腫，前向輸出下降造成休克。這一種機械性併發症**最典型與下壁／側壁梗塞的 posteromedial papillary muscle rupture 有關**：它多仰賴單一主導冠脈（RCA／LCx）的供血；anterolateral papillary muscle 因有 LAD 與 LCx 分支的雙重供血，破裂較少見。因此，不能把主病例的「LAD 前壁梗塞」寫成急性乳突肌破裂最典型的背景：若是 LAD 大面積梗塞後惡化，也要特別注意前中隔破裂、LV 功能惡化、心尖部血栓等可能；實際仍由 bedside echo 的構造與血流證據決定，而非僅由 artery 名稱推斷。因 LV 與 LA 壓力很快接近，雜音可能不大；**沒有響亮的新雜音並不能排除急性 MR**。Echo／必要時 TEE 可以找 flail leaflet、破裂結構與逆流的方向，需緊急外科與循環支持評估。
 
 **心室中隔破裂（ventricular septal rupture, VSR）**：高壓 LV 血液進入 RV，產生新的 left-to-right shunt；部分排出的血被送回肺循環而非全身，增加肺負荷且降低有效 systemic output。新雜音／震顫、急性 HF 或休克應以 color Doppler 尋找新分流，並迅速討論修補與支持方式。這不是「心肌收縮力差」就能說明的血流路徑。
 
@@ -151,7 +153,7 @@ PCI 的直接成效是恢復 epicardial coronary flow，但**微血管 no-reflow
 
 **情境 B，cTn 大幅升高。** 病人以肺炎與敗血症住院，血壓偏低、心率 140、cTn 動態升高，卻沒有可支持局部急性缺血的 ECG／影像或其他證據。這足以高度重視 acute myocardial injury，卻不能光靠數值宣布 primary MI，也不應無條件給 full ACS antithrombotics。若新增局部缺血 ECG 或區域壁運動異常，就必須重新調查是否合併 primary coronary pathology 或供需失衡相關 MI。**病情嚴重不等於病因已知**。
 
-**情境 C，PCI 打通 LAD 後突然肺水腫、低血壓。** 原本只想到 LV stunning，但 bedside echo 新看到 severe MR 或 septal shunt，處置立刻由一般泵衰竭藥物調整，改為同步循環支持與緊急結構修補評估；如果沒有新結構異常，才更聚焦 no-reflow、re-infarction、LV failure、arrhythmia 或出血。**一項新證據要能改變決策分岔，才真正完成從機轉到臨床的理解。**
+**情境 C，PCI 打通 LAD 後突然肺水腫、低血壓。** 若**剛完成 PCI**就惡化，須同步排查再阻塞、no-reflow、LV failure、arrhythmia 與出血，並以 bedside echo 檢查是否有急性缺血性 MR；若在梗塞**數日後**惡化，echo 新見 severe MR 合併 flail leaflet／乳突肌破裂，或新的 septal shunt，就應由單純泵衰竭的藥物調整轉為同步循環支持與緊急結構修補評估。這不是以日數直接確診，而是用時間軸決定優先鑑別，再由 echo 的結構與血流證據改變行動。**一項新證據要能改變決策分岔，才真正完成從機轉到臨床的理解。**
 
 ACS 的主線至此閉合：**缺血不等於壞死；一張 ECG 不等於冠脈解剖；冠脈開通不等於心肌恢復；抗栓有效不等於沒有出血代價；高風險的當下決策不能被一次正常檢驗延遲。** 每一次檢驗與介入都只回答病程中的一個問題，下一個問題必須用新證據重新判斷。
 
