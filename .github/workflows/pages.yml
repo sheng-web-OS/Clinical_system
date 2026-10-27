@@ -54,6 +54,29 @@ jobs:
             python -m playwright install-deps chromium
             python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); b=p.chromium.launch(headless=True); b.close(); p.stop()'
           fi
+      - name: Restore pinned Traditional Chinese browser font
+        if: github.event_name == 'pull_request'
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/fonts/NotoSansTC-VF.ttf
+          key: noto-tc-browser-v2004-523d033d
+      - name: Validate Traditional Chinese glyphs before screenshots
+        if: github.event_name == 'pull_request'
+        timeout-minutes: 4
+        run: |
+          mkdir -p "$HOME/.local/share/fonts"
+          FONT="$HOME/.local/share/fonts/NotoSansTC-VF.ttf"
+          if [ ! -s "$FONT" ]; then
+            # Official Noto CJK, Taiwan subset; source commit pinned, not main.
+            curl --fail --location --silent --show-error --retry 2 \
+              --connect-timeout 15 --max-time 180 \
+              'https://raw.githubusercontent.com/notofonts/noto-cjk/523d033d6cb47f4a80c58a35753646f5c3608a78/Sans/Variable/TTF/Subset/NotoSansTC-VF.ttf' \
+              --output "$FONT"
+          fi
+          test "$(stat -c '%s' "$FONT")" -gt 2000000
+          fc-cache -f "$HOME/.local/share/fonts"
+          fc-match -f '%{family}\\n' 'Noto Sans TC' | grep -F 'Noto Sans TC'
+          sha256sum "$FONT"
       - name: Verify official exam study links on 360/375/390px phones
         if: github.event_name == 'pull_request'
         run: |
