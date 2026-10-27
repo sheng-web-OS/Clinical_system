@@ -20,6 +20,8 @@
 | C | TNF-α |
 | D | Interleukin-6（IL-6） |
 
+<details><summary>查看官方答案、理由與臨床遷移</summary>
+
 **官方答案：A**（考選部標準答案；更正答案頁未對第 33 題改動）。[官方試卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q)｜[官方答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S)｜[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M)
 
 **為什麼選 A？** Sepsis 的宿主反應牽涉 innate immune activation。TNF-α、IL-1 和 IL-6 是經常被用來說明發炎、內皮反應及急性期反應的關鍵 cytokines；IL-5 與嗜酸性球分化、第二型免疫反應等關係更顯著。題目問的是**相較之下**，不是「IL-5 在感染中完全沒有作用」。
@@ -29,6 +31,8 @@
 **遷移題：** 如果病人有肺炎、IL-6 上升，是否已足以確立 Sepsis-3？不是，仍需要整合感染與急性器官功能障礙，且 cytokine 數值無法替代病人的灌流評估。
 
 ---
+
+</details>
 
 <a id="q-112-1-64"></a>
 
@@ -43,6 +47,8 @@
 | C | Pseudomonas aeruginosa |
 | D | Vibrio vulnificus |
 
+<details><summary>查看官方答案、理由與臨床遷移</summary>
+
 **官方答案：D**（更正答案未涉及第 64 題）。[官方試卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q)｜[官方答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S)｜[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M)
 
 **為什麼選 D？** 三個資訊一起改變病原體的先驗機率：**海水／海產傷口暴露**、**肝硬化背景**、**快速惡化並出現血性或紫紅水泡與休克**。這組線索非常符合創傷弧菌（Vibrio vulnificus）嚴重軟組織感染與可能的血流感染，具有迅速致命的風險。不是因為「只要有紫紅水泡就一定是 Vibrio」，而是暴露、宿主與病程彼此增強。
@@ -52,6 +58,8 @@
 **遷移題：** 如果同樣是低血壓與高乳酸，但完全沒有海水暴露或皮膚水泡，能否依這題直接使用「創傷弧菌」診斷？不能，必須重新尋找感染來源及病原體證據。
 
 ---
+
+</details>
 
 <a id="q-114-1-51"></a>
 
@@ -66,6 +74,8 @@
 | C | 重度脊髓傷害引起的神經性休克 |
 | D | 金黃色葡萄球菌敗血性休克 |
 
+<details><summary>查看官方答案、理由與臨床遷移</summary>
+
 **官方答案：B**（標準與更正答案均為 B，無該題更正）。[官方試卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q)｜[官方答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S)｜[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M)
 
 **為什麼選 B？** 顯影劑過敏性休克可因介質釋放造成強烈 vasodilation；神經性休克因交感神經張力喪失而 SVR 下降；敗血性休克多以 vasoplegia 為重要機轉。這三項偏向 **distributive physiology**。病毒性心肌炎引起的心因性休克則以心肌泵送功能下降為主，常有代償性 **SVR 上升**，故方向最不同。
@@ -75,6 +85,8 @@
 **遷移題：** 若 septic shock 患者用 NE 後 MAP 回升，但皮膚仍冷、心超顯示低輸出，你還能將其視為「只有 SVR 低」嗎？不能，需要重新辨認心輸出與混合型休克。
 
 ---
+
+</details>
 
 <a id="q-113-1-48"></a>
 
@@ -89,6 +101,8 @@
 | C | 靜脈輸液是維持器官灌流的可能介入之一 |
 | D | 低血壓且適當補液後仍不足，應考慮 vasopressor |
 
+<details><summary>查看官方答案、理由與臨床遷移</summary>
+
 **官方答案：B**（此科目該次無第 48 題更正）。[官方試卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)｜[官方答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=S)
 
 **為什麼選 B？** 酸血症可能來自低灌流、發炎相關代謝、腎功能障礙與呼吸代償問題，但 **pH 是生理結果，不等於尚未解除的根本感染或循環瓶頸**。核心救治仍是適當抗感染與必要源頭控制、器官氧送達與灌流支持；不能把「先打 bicarbonate 使 pH 變正常」當成所有 Sepsis 病人的首要目標。
@@ -100,6 +114,8 @@
 **遷移題：** 若 pH 7.12、AKI stage 3、嚴重休克且 source control 尚未執行，正確方向是只給 bicarbonate 嗎？不是；酸鹼介入可能變得有意義，但不能取代並行的感染源與循環救治。
 
 ---
+
+</details>
 
 <a id="q-114-1-57"></a>
 
@@ -114,6 +130,8 @@
 | C | 若可立即抽 ACTH/cortisol，就先採檢、隨即給 hydrocortisone，不等報告 |
 | D | 先做 cosyntropin stimulation test，等結果才給 hydrocortisone |
 
+<details><summary>查看官方答案、理由與臨床遷移</summary>
+
 **官方答案：C**（更正答案未涉及第 57 題）。[官方試卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q)｜[官方答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S)｜[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M)
 
 **為什麼選 C？** 生產後大量出血可能造成 **Sheehan syndrome（缺血性腦下垂體損傷）**，遺留 ACTH 缺乏與**次發性腎上腺功能不足**。在感染壓力下，所需 cortisol 增加，卻不能適當供應，可能發生低血壓、低血鈉與意識改變。當病人已是高度疑似 adrenal crisis，不適合為了完成 ACTH stimulation test 或等 8 AM 生理時點，延誤立即需要的 stress-dose glucocorticoids。**可以不延誤地抽血就抽；若抽血本身會延誤治療，應先救治。**
@@ -123,6 +141,8 @@
 **遷移題：** 如果抽血結果尚未知、病人仍嚴重不穩定而高度疑似 adrenal crisis，是否應為了較完美的診斷準確率而等待？不應。先採可快速取得的關鍵檢體，但不能延誤救命治療。
 
 ---
+
+</details>
 
 ## 同一套學習架構如何串起五題？
 
