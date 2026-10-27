@@ -34,21 +34,21 @@ PCI 之後出現新的低血壓、肺水腫或心律異常，要重新辨認是�
 
 ## 國考驗證｜同一條病程上的六道正式國考對題
 
-本系列不是把國考題放在文末當附錄，而是讓每題承擔一個明確的理解檢驗。正式原卷題號、答案及更正結果保留在[考選部 ACS 題目來源對照](../xiaoma-internal-medicine/acs-exam-sources.md)；以下六題均已對讀原卷與更正答案，其中 **四題是本次新增獨立題號（113 Q6、114 Q6/Q9、115 Q12）；115 Q11/Q13 原已收錄於基礎二十題，本次提供更深入的完整病例詳解，不重複計數**。六題在[年度題庫](../xiaoma-internal-medicine/exams/index.md)各有唯一正式題號，且可反向返回本教材對應章節。
+這六題對應 ACS 病程中的六個判斷：心肌傷害是否已符合 MI、缺血訊號與 cTn 為何不一定同步、緩解症狀是否等於完成再灌流、PCI 前後抗栓各要處理什麼、惡性心律不整後要找什麼，以及 MI 過後為何仍可能出現心衰竭。讀題時，先問自己：**題幹已提供什麼證據？還不能據此推出什麼結論？**
 
-| ACS 中的判斷位置 | 正式國考題 | 這題真正檢查的關係 |
-| --- | --- | --- |
-| **診斷／病因** | [113（二）醫學（三）Q6：術後 cTn 超過十倍，是否等於 MI？](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6) | cTn injury、MI 證據與 procedure-related coronary complication 的區別；保留當年答案 **D**，對讀 2026 新定義 |
-| **ECG 與採血時序** | [115（二）醫學（三）Q13：ECG 已變，cTn 一定跟著升高？](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-13) | Perfusion／壁運動／電位／傷害標記不必同步；官方 **D** |
-| **STEMI 當下治療** | [115（二）醫學（三）Q11：前壁 STE，為何答案是 SL NTG？](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-11) | 最佳**選項**是緩解缺血症狀，不代表可以延誤 PCI；官方 **B** |
-| **抗凝與 PCI** | [114（二）醫學（三）Q6：抗凝、GP IIb/IIIa 與 DAPT](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-6) | PCI 前 P2Y12、術中抗凝、large thrombus 補救治療及術後療程不能互換；官方 **C** |
-| **PCI 後急性問題** | [115（二）醫學（三）Q12：PCI 後 VT/VF，為何不是預防性 lidocaine？](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-12) | 恢復竇律、LV thrombus、電解質與殘餘心肌問題各有獨立決策；官方 **C** |
-| **MI 後長期殘餘問題** | [114（二）醫學（三）Q9：一年前 MI，現在喘與水腫](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-9) | 飲水行為不是 HF 症狀；水腫、疲勞、夜間端坐呼吸回到鬱血和灌流的不同軸線；官方 **A** |
+- **診斷：cTn 超過門檻就等於 MI 嗎？** [113（二）醫學（三）第 6 題：CABG 後 cTn 超過十倍](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6)。區分 myocardial injury、急性缺血證據及 procedure-related MI；原題依出題當年的定義作答（官方答案 **D**），再對讀現行定義。
+- **證據的時間：ECG 已改變，cTn 一定同步升高？** [115（二）醫學（三）第 13 題](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-13)。灌流、壁運動、電位變化與損傷標記各有觀察時間；不能把缺血與壞死當成同一瞬間的訊號（官方答案 **D**）。
+- **急性處置：緩解胸痛與恢復血流是同一件事嗎？** [115（二）醫學（三）第 11 題：前壁 ST elevation](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-11)。題目最佳選項為舌下硝酸甘油，但症狀改善不能取代緊急再灌流評估（官方答案 **B**）。
+- **PCI 期間：抗血小板與抗凝血各作用在哪個環節？** [114（二）醫學（三）第 6 題](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-6)。P2Y12、術中抗凝、GP IIb/IIIa 補救用藥及術後 DAPT 的目標不同，不能依「抗栓」二字互換（官方答案 **C**）。
+- **介入後：VT/VF 終止後，預防性 lidocaine 就能解決後續風險？** [115（二）醫學（三）第 12 題](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-12)。持續缺血、電解質、左心室血栓與心肌功能問題，需要各自重新評估（官方答案 **C**）。
+- **MI 後：冠脈處理過，為何仍會喘與水腫？** [114（二）醫學（三）第 9 題](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-9)。下肢水腫、疲乏與夜間呼吸困難分別提示鬱血或灌流問題；飲水很多則是行為背景，不是心衰竭症狀本身（官方答案 **A**）。
 
-**原已收錄的橋接題：**[108（一）醫學（三）Q76：古柯鹼相關缺血、冠痙攣與用藥](../xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md)放回供氧需求、冠脈張力與抗缺血處置；[115（二）第 6 題所在的基礎生理練習](../xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md)則由冠脈灌流與阻力協助理解先備條件，**後者尚不是本次新建的獨立 ACS 官方題目**。
+想先回到生理基礎，可以讀[115（二）醫學（三）第 6 題：冠脈供需與阻力](../xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md)；想把冠痙攣與用藥選擇放入同一模型，則接到[108（一）醫學（三）第 76 題：古柯鹼相關缺血](../xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md)。
 
-本次 115（二）Q13 是**缺血與 ECG／cTn 時序的生理選擇題**，原卷沒有提供需要解讀的 12 導程 ECG 圖；它能驗證讀者是否理解訊號角色，**不能冒充已完成 12 導程實際圖形判讀訓練**。原 ACS 網站的 LBBB、posterior MI、de Winter 等真實波形及圖像權利稽核仍待回收，不以自編 ECG 代替原圖。
+115（二）第 13 題考的是缺血訊號出現的相對次序，原卷沒有提供 12 導程波形供判讀。因此，答對這題不等於已能辨認 posterior MI、LBBB 下的缺血或 de Winter pattern；這些仍需實際 ECG 圖形練習。
 
-**返回主線再回答：**當 cTn 已超過十倍，卻沒有足夠證據指認新的冠脈併發症時，為什麼舊 Type 5 門檻或新程序性 MI 都不能只靠這個數字完成診斷？同一位病人接受 PCI 後必須重新定義抗栓目標，而出院一年後即使冠脈通暢，為什麼仍可能需要獨立評估心衰竭？
+**回到同一位病人：** CABG 後 cTn 升高卻沒有新的缺血證據時，為何不能只憑一個門檻宣布 MI？接受 PCI 後，抗栓與心律不整的決策為何要重估？一年後即使冠脈通暢，新出現的呼吸困難又要求補上哪些心衰竭證據？
+
+正式原卷及更正答案可由[ACS 國考來源對照](../xiaoma-internal-medicine/acs-exam-sources.md)核對；也可依[年度題庫](../xiaoma-internal-medicine/exams/index.md)查找各題的完整詳解。
 
 本頁是因果導航，不替代急性 ACS 的當下臨床評估或即時指引。具體處置應依病人是否持續缺血／不穩定、當前試劑流程、再灌流可近性與出血禁忌判斷；[2025 ACC／AHA ACS 指引](https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes)可作進一步臨床對讀。

@@ -135,13 +135,38 @@ if not errors:
             errors.append("Home and atlas may not promote duplicate learning map")
         atlas_body = (DIST / "knowledge-atlas.html").read_text("utf8")
         originals = [row for row in PAGES if row.get("kind") == "historical_original"]
-        from reading import _group
+        from reading import _group, primary_versions
+        primary = primary_versions(PAGES)
         if "<summary>歷史原稿典藏" in atlas_body:
             errors.append("Historical provenance must not be a clinical atlas category")
         if any(not row.get("section") or _group(row) in ("歷史原稿典藏", "其他閱讀") for row in originals):
             errors.append("Every published original must have a clinical topic")
-        if atlas_body.count('class="atlas-origin-note">原稿</small>') != len(originals):
-            errors.append("Original provenance markers missing from clinical atlas index")
+        atlas_index = atlas_body.split('<div class="atlas-article-index">', 1)[-1].split('</div>', 1)[0]
+        if atlas_index.count('class="atlas-origin-note">原稿・尚無完整整合版</small>') != len(originals) - len(primary):
+            errors.append("Original-only articles must remain findable until a full integrated replacement exists")
+        for original_output, current in primary.items():
+            primary_link = 'href="' + current["output"] + '"'
+            old_link = 'href="' + original_output + '"'
+            paired_rows = [item for item in atlas_index.split('<li>')[1:]
+                           if primary_link in item.split('</li>', 1)[0]]
+            if (len(paired_rows) != 1 or
+                    old_link not in paired_rows[0].split('</li>', 1)[0] or
+                    'class="atlas-source-link">版本對照：' not in paired_rows[0]):
+                errors.append("Current reading must own a secondary version link: " + original_output)
+            if any(old_link in item.split('</li>', 1)[0] and primary_link not in item.split('</li>', 1)[0]
+                   for item in atlas_index.split('<li>')[1:]):
+                errors.append("Superseded original appears as a competing atlas article: " + original_output)
+            archive_page = (DIST / original_output).read_text("utf8")
+            if 'class="original-reading-primary"' not in archive_page or primary_link not in archive_page:
+                errors.append("Preserved original does not link back to current reading: " + original_output)
+        original_page = (DIST / "xiaoma-reading.html").read_text("utf8")
+        if 'class="archive-version-list"' not in original_page:
+            errors.append("Preserved originals must have a compact provenance list")
+        indexed_urls = [entry["url"] for entry in index] if isinstance(index, list) else []
+        if any(indexed_urls.index(current["output"]) >= indexed_urls.index(original)
+               for original, current in primary.items()
+               if original in indexed_urls and current["output"] in indexed_urls):
+            errors.append("Full-text search must prioritize canonical reading over preserved original")
         for target in ("dyspnea", "perfusion", "chest", "kidney", "infection", "time"):
             if 'id="' + target + '"' not in atlas_body:
                 errors.append("Clinical atlas missing problem-first branch " + target)

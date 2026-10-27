@@ -47,9 +47,9 @@
 
 既有[HF 四象限](originals/2026-07-12-heart-failure.md)回答 congestion／perfusion，[LVEDP 圖文整合](integrated/2026-10-23-hf-lvedp-figures.md)解釋壓力不等於容量；但到術後病人，仍要追問循環實際送出了多少氧。[CABG 術後 lactate／ScvO₂ 真實病例](../xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md)將這個問題接到氧輸送、酸鹼與可立即處理的外科危險。這是跨專科推理的下一層，不是另創一份知識地圖；完整先備與改判問題仍見[唯一臨床知識地圖](../clinical-os/index.md#perfusion)。
 
-## 歷史原稿典藏
+## 原稿版本對照
 
-以下保存原始文章的文字及論述歷史，**不是最新整合版的閱讀入口**。如欲閱讀心肌病變修訂稿，請由上方〈心肌病變〉文章進入。
+原始文字永久保存，不是獨立的醫學分類。已有完整整合版的文章，請先閱讀整合教材；原稿供作者論述與修訂差異對照。尚無完整整合版的原稿仍可直接閱讀。HF／LVEDP 圖表回讀屬補充材料，尚不取代兩篇完整原稿。
 
 <!-- XIAOMA_READING_ORIGINALS -->
 

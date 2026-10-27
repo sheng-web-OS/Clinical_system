@@ -24,6 +24,7 @@
     "subtitle": "DCM 的心室擴張與代償、EF 和前向血流、病因解釋力及剩餘風險",
     "collection": "xiaoma-reading",
     "kind": "ai_integrated",
+    "replaces_original": "xiaoma-reading-20260710-dcm-original.html",
     "date": "2026-10-22",
     "navigation": false,
     "review": "ai_editorial_review",
@@ -752,6 +753,7 @@
     "subtitle": "兩張圖看清楚 loop threshold、ceiling、劑間留鈉與反應導向的去鬱血決策",
     "collection": "xiaoma-reading",
     "kind": "ai_integrated",
+    "replaces_original": "xiaoma-reading-20260720-diuretics.html",
     "date": "2026-10-22",
     "navigation": false,
     "review": "ai_editorial_review",
@@ -1771,7 +1773,18 @@
     "navigation": false,
     "review": "ai_editorial_review",
     "layout": "reader",
-    "section": "肝膽"
+    "section": "肝膽",
+    "related_exams": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 1,
+        "focus": "相同 ALP 升高有不同病因：低 ceruloplasmin 改變前測機率，並非由 ALP 自行確診 amyloid；對照 SPEP 陰性不足以排除 AL 的另一層推理。",
+        "concept_heading": "Q1｜同一個 ALP，哪三種證據會改變診斷？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/infiltrative-alp-sources-20261027.md",
@@ -1967,6 +1980,59 @@
         "concept_heading": "03｜115（二）Q13 延伸：ECG 已變，troponin 為何不一定升高？"
       }
     ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md",
+    "output": "xiaoma-20261027-gi-liver-national-exam-trio.html",
+    "title": "ALP、Child–Pugh、SAAG：三題跨年度國考，三個不同的肝病判斷軸",
+    "subtitle": "112（一）Q1 × 114（一）Q22 × 114（二）Q22，官方更正答案與臨床推理",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "肝膽與國考",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 1,
+        "question_heading": "112 年第一次・醫學（三）第 1 題｜ALP 升高，為什麼不能直接診斷 amyloidosis？",
+        "topic": "ALP、低 ceruloplasmin 與 Wilson disease"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 22,
+        "question_heading": "114 年第一次・醫學（三）第 22 題｜Child–Pugh 為什麼沒有 ALT？",
+        "topic": "Child–Pugh 不包含 ALT"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 22,
+        "question_heading": "114 年第二次・醫學（三）第 22 題｜SAAG 為何要與腹水總蛋白一起讀？",
+        "topic": "SAAG 與腹水蛋白區分肝硬化腹水"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exam-gi-liver-three-sources.md",
+    "output": "xiaoma-exam-gi-liver-three-sources.html",
+    "title": "肝膽國考三題｜原卷及官方更正答案證據",
+    "subtitle": "112（一）Q1、114（一）Q22、114（二）Q22 的考選部逐頁核讀",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "來源與版本",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "source_audit"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md",
