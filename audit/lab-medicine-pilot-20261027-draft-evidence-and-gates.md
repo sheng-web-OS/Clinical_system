@@ -45,3 +45,11 @@ SCr/BUN/eGFR、尿量、UA/urine sediment、時間滯後：AKI 功能訊號不�
 - 113-1 醫學（三）Q29 已目視核對考選部原題 PDF 第 8 頁、標準答案 PDF Q29=D；該年度更正表尚未成功取得。115-2 醫學（三）Q28 已目視核對原題 PDF 第 6–7 頁、標準答案與更正表 Q28=A，沒有更正；仍不代表醫學逐段獨立審查完成。
 - 內部相對連結到早晨 Lab、既有利尿劑文章已讀回存在；讀者閱讀成效／獨立審查／正式發布仍全數待證。
 - P1：獨立醫學 reviewer 再審可能過度簡化的 AKI staging、urine sediment specificities、FEUrea pooled estimates、動態 eGFR 與心衰去充血；未經放行不得合併。
+
+## 第四篇 CBC/DC 判讀：來源、數學及真題 (新增)
+- 正文：content/xiaoma-internal-medicine/lessons/2026-10-27-lab-medicine-cbc-differential.md；以 2024 年已發表 pseudothrombocytopenia 案例作起點（13-year-old，EDTA 17K、citrate 55K、heparin 175K；PMID39582446，只核 PubMed abstract）；其他教學病例明示自編，不融合病例身份。
+- CBC 的三系列與 reticulocyte/RDW、ANC/AEC 解讀參考開放全文 2026 JMA J CBC practice framework（PMCID PMC13639491），2026 smear-review 實務文（PMCID PMC13555154）與 NCBI StatPearls 可見全文；圖像未取得合法再製／授權，不宣稱已目視核對所有 Figure。
+- 讀數核算：WBC18 × 90%=ANC16.2k/µL；WBC1.2×90%=1.08k；WBC3×10%=0.30k；WBC14,200×25%=AEC3550/µL；retic3%×Hct21/45=1.4%（純示例，不能單以 corrected % 診斷 hemolysis）。
+- 111 年第二次醫學（三）Q46，考選部官方原題第 11 頁、標準答案與更正表**已目視核對**：答案 D（BAL），該題未更正；112 年第一次醫學（三）Q28，官方原題第 6 頁、標準答案與更正表**已目視核對**：答案 C（eculizumab），該題未更正。兩題涉及鑑別與高風險用藥，**本稿僅連結生理判讀，不把舊考題推論為現行治療指南或完整逐項詳解**。
+- 所有四篇的相對內部連結（包含先備教材、利尿舊文及 national-exam anchor）均以 GitHub API 逐一核對存在；這不是網站建置或行動版驗證。
+- **HOLD 持續**：缺獨立醫學／逐段敘事 semantic reviewer、content-specific evidence-to-claim safety review、實際 360/375/390px 手機 screenshot；還未經正式發布授權。要先驗證四篇是否真正提升新情境推理，若沒有增量不應為 26 篇額外擴充架構。
