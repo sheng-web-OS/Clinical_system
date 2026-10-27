@@ -24,6 +24,7 @@
     "subtitle": "DCM 的心室擴張與代償、EF 和前向血流、病因解釋力及剩餘風險",
     "collection": "xiaoma-reading",
     "kind": "ai_integrated",
+    "replaces_original": "xiaoma-reading-20260710-dcm-original.html",
     "date": "2026-10-22",
     "navigation": false,
     "review": "ai_editorial_review",
@@ -57,6 +58,7 @@
     "subtitle": "HCM 的定義、outflow、filling 與 systolic emptying",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心肌病變",
     "date": "2026-07-14",
     "navigation": false,
     "review": "source_recovery_only",
@@ -145,6 +147,7 @@
     "subtitle": "從 congestion／perfusion 分流，理解 EF、HF syndrome 與急性失衡",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心衰竭與血行動力學",
     "date": "2026-07-12",
     "navigation": false,
     "review": "source_recovery_only",
@@ -168,6 +171,7 @@
     "subtitle": "從 pulmonary congestion 追問 filling pressure 與 pressure–volume mechanism",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心衰竭與血行動力學",
     "date": "2026-07-12",
     "navigation": false,
     "review": "source_recovery_only",
@@ -191,6 +195,7 @@
     "subtitle": "Loop threshold、ceiling、補償性鈉回收與治療反應的不同層次",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心衰竭與利尿",
     "date": "2026-07-20",
     "navigation": false,
     "review": "source_recovery_only",
@@ -214,6 +219,7 @@
     "subtitle": "DCM 的左心室表型、收縮力、代償與病因解釋的邊界",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心肌病變",
     "date": "2026-07-10",
     "navigation": false,
     "review": "source_recovery_only",
@@ -227,6 +233,7 @@
     "subtitle": "Necrosis 與 persistent organ failure 的獨立軸線，及何時不能等待",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "消化與胰臟",
     "date": "2026-07-20",
     "navigation": false,
     "review": "source_recovery_only",
@@ -240,6 +247,7 @@
     "subtitle": "不同治療歷史、refractory status 與 ICU 照護系統轉換",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "神經急症",
     "date": "2026-07-28",
     "navigation": false,
     "review": "source_recovery_only",
@@ -745,6 +753,7 @@
     "subtitle": "兩張圖看清楚 loop threshold、ceiling、劑間留鈉與反應導向的去鬱血決策",
     "collection": "xiaoma-reading",
     "kind": "ai_integrated",
+    "replaces_original": "xiaoma-reading-20260720-diuretics.html",
     "date": "2026-10-22",
     "navigation": false,
     "review": "ai_editorial_review",
@@ -1787,6 +1796,190 @@
     "section": "來源與版本",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/clinical-os/acs.md",
+    "output": "acs-reading.html",
+    "title": "ACS：從缺血的證據，讀到治療後留下的風險",
+    "subtitle": "ACS 四章閱讀入口：症狀與損傷、ECG 空間與時間、抗栓與再灌流、MI 後剩餘風險",
+    "collection": "clinical-os",
+    "layout": "reader",
+    "section": "心臟與胸痛",
+    "navigation": false,
+    "date": "2026-10-27",
+    "related_exams": [
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 6,
+        "focus": "以 MI 證據／病因區別舊 Type 5 和 2026 新程序性 MI 的診斷",
+        "concept_heading": "01｜診斷：缺血與心肌傷害，為什麼不能互相取代？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 6,
+        "focus": "把術前 P2Y12、PCI 中抗凝、GP IIb/IIIa 與 DAPT 療程分開",
+        "concept_heading": "03｜治療：藥物、導管與時間，各自要改變哪一段病程？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 9,
+        "focus": "MI 後喘、倦怠和水腫是獨立的心室功能／鬱血／灌流問題",
+        "concept_heading": "04｜MI 之後：血管已通，為什麼還不能說病人恢復了？"
+      },
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 76,
+        "focus": "由古柯鹼誘發缺血釐清血管痙攣、心肌需氧與用藥限制",
+        "concept_heading": "01｜診斷：缺血與心肌傷害，為什麼不能互相取代？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 11,
+        "focus": "從持續胸痛、前壁 STE、SpO₂ 到仍需緊急再灌流的條件判斷",
+        "concept_heading": "03｜治療：藥物、導管與時間，各自要改變哪一段病程？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "從 LAD 打通後的新風險辨別 LV thrombus、VT/VF 和長期次級預防",
+        "concept_heading": "04｜MI 之後：血管已通，為什麼還不能說病人恢復了？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 13,
+        "focus": "灌流下降、壁運動、ECG 電位和血中 troponin 訊號的不同時間尺度",
+        "concept_heading": "02｜ECG：心肌病灶與紙上的波形，隔著一個觀察方向"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/acs-exam-sources.md",
+    "output": "xiaoma-acs-exam-sources.html",
+    "title": "ACS：113、114 年醫師二階原卷與 2026 MI 定義對讀",
+    "subtitle": "考選部正式更正答案、2025 ACC/AHA ACS、2026 Fifth UDMI 與核讀範圍",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md",
+    "output": "xiaoma-exam-113-2-med3-acs-q6.html",
+    "title": "Troponin 超過十倍，為什麼不等於已經診斷心肌梗塞？",
+    "subtitle": "113（二）醫學（三）Q6：舊 Type 5 MI 的正式答案與 2026 Fifth UDMI 分類更新",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與胸痛・官方真題",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-acs-exam-sources.html",
+    "exam": {
+      "year_roc": 113,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        6
+      ]
+    },
+    "exam_topics": {
+      "6": "MI 的 cTn 證據、Type 5 與第五版新分類"
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md",
+    "output": "xiaoma-exam-114-2-med3-acs-q6-q9.html",
+    "title": "PCI 前抗凝、術後 DAPT 與一年後的心衰竭，為何不是同一張醫囑？",
+    "subtitle": "114（二）醫學（三）Q6／Q9：抗血小板、程序性抗凝與 post-MI 剩餘問題",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與胸痛・官方真題",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-acs-exam-sources.html",
+    "exam": {
+      "year_roc": 114,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        6,
+        9
+      ]
+    },
+    "exam_topics": {
+      "6": "PCI 抗凝、抗血小板與 GP IIb/IIIa",
+      "9": "MI 後心衰竭症狀與液體負荷"
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md",
+    "output": "xiaoma-exam-115-2-med3-acs-q11-q13.html",
+    "title": "從胸痛到支架、再回頭問 ECG：三道國考題如何重建一段 STEMI 病程？",
+    "subtitle": "115（二）醫學（三）Q11–Q13：急診抗缺血、PCI 後心律／血栓與 ischemic cascade",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與胸痛・官方真題",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-acs-exam-sources.html",
+    "exam": {
+      "year_roc": 115,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        12
+      ]
+    },
+    "exam_topics": {
+      "12": "PCI 後 VT／VF、LV thrombus 與次級預防"
+    },
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 11,
+        "focus": "前壁 STEMI 初始用藥是先排除危險劑量與禁忌，不能以 NTG 取代再灌流。",
+        "concept_heading": "01｜115（二）Q11 延伸：前壁 STEMI，為何 NTG 不能取代再灌流？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 13,
+        "focus": "缺血性電位、局部壁運動與血中 cTn 是不同時鐘，不能因單次陰性生物標記延誤危急病況處置。",
+        "concept_heading": "03｜115（二）Q13 延伸：ECG 已變，troponin 為何不一定升高？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md",
