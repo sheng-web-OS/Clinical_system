@@ -89,5 +89,14 @@ class SepsisFigureSourceGate(unittest.TestCase):
                 self.assertIn(("F", "K"), edges, "Perfusion deficit must visibly connect to circulation support")
 
 
+    def test_exam_reader_has_no_duplicate_auto_generated_anchor_ids(self):
+        # The site renderer inserts official exam-* IDs for canonical embedded questions.
+        # Keep stable q-* links for the Sepsis narrative but never pre-emit exam-*.
+        exam = (ROOT / "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md").read_text(encoding="utf-8")
+        self.assertNotIn('<a id="exam-', exam)
+        for key in ("q-112-1-33", "q-112-1-64", "q-113-1-48", "q-114-1-51", "q-114-1-57"):
+            self.assertIn('<a id="' + key + '"></a>', exam)
+
+
 if __name__ == "__main__":
     unittest.main()
