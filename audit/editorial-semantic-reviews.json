@@ -1191,11 +1191,11 @@
       }
     },
     "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md": {
-      "content_blob": "2fc0c70dfc0d11b49df1759447070b389706f679",
+      "content_blob": "7bb8bfcda483ea834b85f45ed1028f027a0ff9d2",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "2026-10-27-second-document-content-anchored-editorial-pass-GPT6-not-human-clinician",
+      "reviewer_reference": "2026-10-27-second-document-content-anchored-editorial-pass-GPT6-not-human-clinician:figure-as-hcm-preload-compare-reviewed",
       "core_reader_question": "當歷屆醫師二階同時考心音、姿勢呼吸、瓣膜病、先天性結構、HCM 與重症結構介入，讀者如何從時間與血流機轉作答而非只背部位？",
-      "new_understanding": "以 S1/S2 的血流開閉順序為骨架，完整推導 fixed AS vs dynamic HCM、AR vs Austin Flint、ASD fixed split、MVP click、急性 MR／AR 與 IE 外科指徵，連到十八道正式題號與答案，並對附圖題保留未核限制。",
+      "new_understanding": "以 S1/S2 的血流開閉順序為骨架，完整推導 fixed AS vs dynamic HCM、AR vs Austin Flint、ASD fixed split、MVP click、急性 MR／AR 與 IE 外科指徵，連到十八道正式題號與答案，並對附圖題保留未核限制。 原創對照圖以共同 preload 減少為固定起點，將 AS 射出流量減少與 HCM 動態幾何加重呈現為兩個分支。",
       "strongest_counterargument": "這份初稿的十八題以醫學（三）為主而非歷年全考科全範圍；附圖尚未逐張核對，未逐題逐選項重述所有影像細節，且本次只有分開的 AI 審稿過程而非另一位執業醫師或真人讀者驗證。為避免誤稱全面覆蓋，正文及來源頁明示這些限制。",
       "epqc_scores": {
         "A": 4,
