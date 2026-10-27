@@ -40,7 +40,7 @@ Creager MA, et al. **2026 AHA/ACC/ACCP/ACEP/CHEST/SCAI/SHM/SIR/SVM/SVN Guideline
 - **診斷**：先臨床機率，低機率可在適用條件下使用 PERC；低／中等機率採經驗證 D-dimer／YEARS／age-adjusted 方法，較高機率與陽性者影像。CTPA 優先；echo 是 RV 評估，不是 PE 確診。
 - **分層**：A（incidental）、B（symptomatic low risk）、C（elevated risk）、D（incipient failure）、E（cardiopulmonary failure）；D2/normotensive hypoperfusion 需綜合臨床與器官低灌流證據。JACC 主文對 D2 transient hypotension 與 normotensive shock 的敘述在不同段落存在可能的語義張力；**不將病例機械指定精確 D2 subtype，須再以原始 Figure 與 footnote 核對**。
 - **治療**：2026 指引對 A1–C2 的常規 systemic thrombolysis 有 harm 建議；D1–D2 在適當條件可考慮進階治療；E1 具較強再灌流理由。LMWH/UFH、DOAC/VKA 與出血禁忌依情境判斷，並非所有病人同一藥物。
-- **時序**：此指引 2026-02-19 公布，**不可能已納入 2026 年 3 月 HI-PEITHO 或 2026 年 8 月 PRAGUE-26 的最終結果**。JACC 主頁顯示 correction/erratum；本次尚未核讀 correction 全文，避免宣稱所有表格與數值均為最新勘誤後版本。
+- **時序**：此指引 2026-02-19 公布，**不可能已納入 2026 年 3 月 HI-PEITHO 或 2026 年 8 月 PRAGUE-26 的最終結果**。**2026-07-14 正式勘誤已核讀文字全文**：[Circulation correction DOI 10.1161/CIR.0000000000001462](https://doi.org/10.1161/CIR.0000000000001462) 更正 **Table 4（RV echocardiographic dysfunction assessment methods／thresholds）** 與 §3.1.2 reference 44（ASE 2025 右心超音波指引）。本篇未以舊 Table 4 的個別數值定義 RV dysfunction；未重製原表像素，正式原圖及 360/390px 仍待驗證。
 - **原圖**：JACC Guideline-at-a-Glance 的 clinical categories Figure 1 有原始 footnotes；本次取得文字註腳，未取得可驗證的完整原像素，暫不重製。
 
 NICE [NG158 recommendations](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 與 [原始 DVT／PE visual summary（Thrombosis UK 保存副本）](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 是既有 VTE 篇的診斷流程定位；**不把 NICE 兩層 Wells 與 AHA 三層風險演算法拼成單一流程**。
@@ -55,4 +55,4 @@ NICE [NG158 recommendations](https://www.nice.org.uk/guidance/ng158/chapter/reco
 
 本輪**沒有取得並核對與本篇直接相關的考選部原題、官方答案及更正**；因此正文僅有明示的 T1／T2 自編遷移題，**不計入任何年度正式題號索引**。後續找到官方 PE 真題，須先核實年份／梯次／醫學科目／題號與更正，再在既有按年份頁面建立雙向連結。
 
-第三方 ECG、血栓照片、Pocket Figure 2-3、JACC 分類原圖均未公開重製。此版本沒有假稱可放大的原圖入口；亦未完成手機 360/390px、深色模式、CI、Cloudflare 或正式 HTTPS 正文讀回。**發布判定 HOLD：原圖像素／註腳未重核、試驗 supplement 與指引 correction 未核、真題未核、版面及獨立醫學 QA 未驗證。** 這些是不同缺口，不能以單次 AI 自評或 GitHub 提交取代。
+第三方 ECG、血栓照片、Pocket Figure 2-3、JACC 分類原圖均未公開重製。此版本沒有假稱可放大的原圖入口；亦未完成手機 360/390px、深色模式、CI、Cloudflare 或正式 HTTPS 正文讀回。**發布判定 HOLD：原圖像素／註腳未重核、試驗 supplement 未核、官方真題未核、版面及獨立醫學 QA 未驗證。指引 2026-07-14 correction 的文字已核讀，但原圖未完成目視。** 這些是不同缺口，不能以單次 AI 自評或 GitHub 提交取代。
