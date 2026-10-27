@@ -50,7 +50,7 @@ PE 造成的呼吸問題，不能只用「肺泡缺氧」理解。被阻塞的�
 
 這時血壓可以還沒掉。以簡化關係 **MAP ≈ CO × SVR** 來看，交感神經增加 systemic vascular resistance（SVR）能暫時掩蓋 cardiac output（CO）下降；血壓不是器官灌流的同義詞。少尿、意識變化、乳酸持續升高或急性腎損傷，可能揭露所謂 **normotensive hypoperfusion／normotensive shock**。但每項都需尋找替代病因，不能僅憑乳酸數字把病人機械分類。
 
-2026 AHA/ACC 的 acute PE clinical categories 區分 **A（無症狀）、B（低臨床嚴重度）、C（臨床嚴重度提高）、D（即將發生心肺失代償）與 E（已出現心肺循環衰竭）**；C 再納入心肌損傷與 RV dysfunction 分層，部分類別另有呼吸衰竭修飾碼。指引也提醒應在特定高風險、血壓未下降的 PE 病人評估 *normotensive shock*，但**單一 lactate、腎功能或心超結果仍須放回臨床因果與替代病因判斷**。原始 A–E 分類圖的 footnotes 及適用邊界以[正式指引](https://professional.heart.org/en/science-news/2026-guideline-for-the-evaluation-and-management-of-acute-pulmonary-embolism-in-adults/top-things-to-know)為準；**這是風險與照護分類，不是 PE 的確診工具，更不是「D 類就一律溶栓」的處方。**
+2026 AHA/ACC 的 acute PE clinical categories 區分 **A（無症狀）、B（低臨床嚴重度）、C（臨床嚴重度提高）、D（即將發生心肺失代償）與 E（已出現心肺循環衰竭）**；C 再納入心肌損傷與 RV dysfunction 分層，部分類別另有呼吸衰竭修飾碼。指引也提醒應在特定高風險、血壓未下降的 PE 病人評估 *normotensive shock*，但**單一 lactate、腎功能或心超結果仍須放回臨床因果與替代病因判斷**。AHA/ACC 的[2026 Acute PE Clinical Categories 官方原始圖（PDF，可放大）](https://professional.heart.org/en/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Categories-Figure-Inforgraphic.pdf?sc_lang=en)明確把 **D1 的 transient hypotension** 與 **D2 的 normotensive shock** 分開，並以 **R（respiratory modifier）**補充呼吸負擔；這張圖說明的是臨床風險與照護需求，不替代原書 Figure 2-3 的疑似 PE 診斷流程。其細節與 footnotes 仍須配合[2026 正式指引](https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005)判讀；**這是風險與照護分類，不是 PE 的確診工具，更不是「D 類就一律溶栓」的處方。**
 
 原病例的 troponin T **27 ng/L** 略升、NT-proBNP **74 pg/mL** 正常，床邊心超又無法判讀。不能把正常 BNP 當作排除急性 RV failure，也不能把 ECG 的 S1Q3T3 當作確診；它們只能和臨床時間序列一起改變懷疑程度。
 
