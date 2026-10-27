@@ -44,7 +44,7 @@ jobs:
         timeout-minutes: 4  # fail boundedly on upstream browser/package download stalls
         run: |
           python -m pip install --disable-pip-version-check playwright==1.57.0
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
       - name: Enforce SAAG exam table readability on phone
         if: github.event_name == 'pull_request'
         run: |
