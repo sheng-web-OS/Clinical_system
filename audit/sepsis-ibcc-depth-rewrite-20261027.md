@@ -103,3 +103,15 @@
 - **審查身分**：本輪與原 Sepsis 撰稿脈絡分開，但**本輪親自修改主文與題解**，因此不能對這兩個最新 blob 自稱完全獨立的最終 `independent_ai_pass` reviewer。須由另一個未撰寫這兩份新 blob 的 reviewer 重新逐單元驗證 source、七軸、`reader_gain`、`nonredundancy_reason`、硬性問題；未完成前不寫 `audit/editorial-semantic-reviews.json` PASS，也不得合併。
 - **L0 執行指標**：`L0_eligible_found=2`（兩篇的 reader/editorial metadata 汙染），`L0_attempted=true`，`L0_commit_SHA=a9dd665c,7d4d40d`，`RED_failing_fixture=37b0941`（舊內容命中；CI RED NOT_VERIFIED），`GREEN_CI=PENDING`，`release_gates=SEMANTIC_HOLD`，`mobile=NOT_VERIFIED`，`production=UNCHANGED`。
 - **下輪精確接續**：先核最新 PR head／兩篇 blob、讀取 CI jobs；由未參與本輪兩篇編輯的審稿脈絡逐段驗證 current-blob `reading_units`（主文 107、題解 37，改動可能影響 unit ID，須重算）及全部七軸、sources／figures，退回任何 `revise`；兩篇完整 `keep` 且 hard stops 清零後才可寫有真實 `reviewer_reference` 的 receipt、重跑 required CI、360/375/390px 與 production gate。既有使用者對 #164 的附條件發布授權有效，但尚未達成條件。
+
+## 2026-10-27 18:53+08｜第三輪獨立 EPQC：INCOMPLETE / REVISE
+
+Current head `ceab2c5b724c31c366c9e03b33754f6e0a4050ae`, main `9321f7bce4288d12f74d5be1dea183edc7e70bc2`, article blob `b467ac79ef9d9f0bc62f9b21ce54dfaf1e9431cd`. 新上下文已讀 350 行全文，按 `site/semantic_gate.py:reading_units` 盤點並初審 107/107 主文單元；這是初輪讀者功能審查，不是 107 個 KEEP 或逐來源全部 PASS。題解正式審稿 0/37。
+
+- REVISE unit 5 / line 19：重複 unit 4 / line 12 的四個並行問題，unit 6 / line 21 才提供新資訊；請刪除或補真正因果中介，否則無獨有 reader_gain。
+- REVISE unit 82 / line 272：從真實 Jin Case 1 的敘事轉到幾天後水腫與正平衡，該段起首未直接標明「反事實」，易被誤認成原病例後續 ICU 實測；應在當段第一句註明。Jin Case 1 未記載這些序列。
+- REVISE unit 92 / line 318：重複 unit 91 / line 307 的題解連結與 2026 指南不可回填舊考題的警語；合併保留一次即可。
+
+其餘 104 單元在本輪初審未確立同級缺陷，但來源逐項核對尚未完成，不能簽 KEEP。已重新對讀 Jin 2025 Case 1、IBCC 2025 定義與 PHR、SSC 2026 抗生素時限、液體、升壓、MAP、CRT、bicarbonate、ARDS、去液體等官方建議、JAMA ANDROMEDA-SHOCK-2 結果。CLASSIC/CLOVERS 原始全文逐表未完成（NEJM 403）；來源全 PASS = NOT_VERIFIED。
+
+Head ceab2c5 的 CI run 40491647344（#969）手機 Chromium 360/375/390 px 對三個 Sepsis 頁面回報 PASS，artifact 12727868631；最終 build 仍 FAIL：兩篇缺獨立 EPQC receipt。這不是圖表語義人工驗收。未改主文、題解、gate、baseline、review registry；不合併、不發布。Q48 正確 Sepsis 身分保留。下一輪由不同寫作者先修上述三單元，再由另一獨立 reviewer 對新 blob 複審並完成 A–G 與 source；主文 PASS 後才審題解 37/37。
