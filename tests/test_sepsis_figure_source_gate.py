@@ -38,24 +38,41 @@ class SepsisFigureSourceGate(unittest.TestCase):
         ))
 
 
-    def test_official_q48_copd_mismatch_is_removed_from_sepsis(self):
-        # Official 113-1 醫學（三） Q48 asks about COPD treatment, NOT
-        # bicarbonate in sepsis. A matching answer letter is not provenance.
-        # Official original: https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q
+    def test_official_q48_is_sepsis_with_verified_original_paper_and_canonical_backlinks(self):
+        # Taiwan physician 113-1 med3 Q48 truly asks about Sepsis treatment.
+        # The OFFICIAL paper code=113020, category=1302, Q48 has bicarbonate
+        # as option B. Previous "this is a COPD question" review was false.
+        import json
+        exam_data = json.loads((ROOT / "archive/national-exam/physician-stage2-2022-2026/structured/2024-s1-med3.json").read_text(encoding="utf-8"))
+        original = next(q for q in exam_data["questions"] if q["number"] == 48)
+        self.assertIn("敗血症的治療", original["stem_text"])
+        self.assertIn("碳酸氫鈉", next(o["text"] for o in original["options"] if o["label"] == "B"))
+        self.assertEqual(original["answer"]["standard"], "B")
+        self.assertIn("code=113020", original["source_question_pdf"])
+
         article = (ROOT / ARTICLE).read_text(encoding="utf-8")
         exam = (ROOT / "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md").read_text(encoding="utf-8")
-        self.assertNotIn("113-1 醫學（三）第 48 題", article)
-        self.assertNotIn("113-1 醫學（三）第 48 題", exam)
-        self.assertNotIn('<a id="q-113-1-48"></a>', exam)
+        self.assertIn("113-1 醫學（三）第 48 題", article)
+        self.assertIn("113-1 醫學（三）第 48 題", exam)
+        self.assertIn('<a id="q-113-1-48"></a>', exam)
         self.assertIn('<a id="q-112-1-65"></a>', exam)
+
         pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
+        key = (113, 1, 2, "醫學（三）", 48)
+        canonical = []
+        for page in pages:
+            for q in page.get("exam_questions", []):
+                identity = tuple(q[k] for k in ("year_roc", "sitting", "stage", "subject", "question_number"))
+                if identity == key:
+                    canonical.append(page["source"])
+        self.assertEqual(canonical, ["content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md"])
         for source in (ARTICLE, "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md"):
             page = next(p for p in pages if p["source"] == source)
-            linked = page.get("exam_questions", []) + page.get("related_exams", [])
-            self.assertFalse(any(q.get("year_roc") == 113 and q.get("sitting") == 1
-                                 and q.get("question_number") == 48 for q in linked))
-            self.assertTrue(any(q.get("year_roc") == 112 and q.get("sitting") == 1
-                                and q.get("question_number") == 65 for q in linked))
+            linked = page.get("related_exams", [])
+            self.assertTrue(any(
+                tuple(q[k] for k in ("year_roc", "sitting", "stage", "subject", "question_number")) == key
+                for q in linked
+            ))
 
     def test_q57_is_one_canonical_question_with_sepsis_backlink(self):
         pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
@@ -120,7 +137,7 @@ class SepsisFigureSourceGate(unittest.TestCase):
         # Keep stable q-* links for the Sepsis narrative but never pre-emit exam-*.
         exam = (ROOT / "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md").read_text(encoding="utf-8")
         self.assertNotIn('<a id="exam-', exam)
-        for key in ("q-112-1-33", "q-112-1-64", "q-112-1-65", "q-114-1-51", "q-114-1-57"):
+        for key in ("q-112-1-33", "q-112-1-64", "q-112-1-65", "q-113-1-48", "q-114-1-51", "q-114-1-57"):
             self.assertIn('<a id="' + key + '"></a>', exam)
 
 
