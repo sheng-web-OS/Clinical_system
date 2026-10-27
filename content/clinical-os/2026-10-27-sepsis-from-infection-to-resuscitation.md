@@ -259,7 +259,7 @@ IBCC 也提醒 septic cardiomyopathy 尚無單一統一診斷標準；常見描�
 
 ## 十五、持續危險時：酸中毒、類固醇與頑固性休克
 
-**Lactate 高不等於應自動給 sodium bicarbonate**。重症乳酸上升可能包含供氧不足、兒茶酚胺相關有氧糖解與清除下降。若沒有理解原因，單純提高血中 bicarbonate 可能改變 pH 數字，但未必恢復組織灌流。SSC 2026 對以改善血流動力學或減少升壓劑為目的之 septic shock hypoperfusion-induced lactic acidemia，**建議不要常規使用 bicarbonate**；但當有**嚴重代謝性酸血症（pH ≤7.2）合併急性腎損傷（AKI；AKIN 第 2–3 期）**時，另有條件性、確定性極低的支持建議。[2] 這兩個不同適用情境，不能截取其中一個結論套用全部病人。這裡要區分「bicarbonate 可能改善 pH」與「它是不是 Sepsis 的首要治療目標」；這是依 SSC 2026 建立的臨床推理，**不是**將其他主題的官方國考題改寫成敗血症考題。
+**Lactate 高不等於應自動給 sodium bicarbonate**。重症乳酸上升可能包含供氧不足、兒茶酚胺相關有氧糖解與清除下降。若沒有理解原因，單純提高血中 bicarbonate 可能改變 pH 數字，但未必恢復組織灌流。SSC 2026 對以改善血流動力學或減少升壓劑為目的之 septic shock hypoperfusion-induced lactic acidemia，**建議不要常規使用 bicarbonate**；但當有**嚴重代謝性酸血症（pH ≤7.2）合併急性腎損傷（AKI；AKIN 第 2–3 期）**時，另有條件性、確定性極低的支持建議。[2] 這兩個不同適用情境，不能截取其中一個結論套用全部病人。這裡要區分「bicarbonate 可能改善 pH」與「它是不是 Sepsis 的首要治療目標」。[113-1 醫學（三）第 48 題](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md#q-113-1-48)確實以敗血症治療為題，選項 B 把補充 bicarbonate 說成首要目標；回查考選部原卷與標準答案後，應保留此題作為處置優先序的例子，而非因曾有錯誤審查而刪除。
 
 IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 對成人 septic shock **條件性建議 IV corticosteroids**（low certainty）；臨床上常見 hydrocortisone 200 mg/day（給藥形式依院內規範與 ICU 決定）。它可能縮短 vasopressor 需求時間，但不等於已明確證明所有患者死亡率下降，也不應取代抗菌藥、source control、血流重新評估；應監測高血糖等副作用。[1,2]
 
@@ -304,7 +304,7 @@ IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 �
 
 ## 十九、近五年醫師二階國考：同一個臨床推理如何在不同年份出題？
 
-理解 Sepsis 時不必把真題當成獨立的考古題庫。以下五題的原始身分與官方答案已確認；題幹與選項詳解由 [《Sepsis：由國考真題反推臨床決策》](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md) 統一整理，提供官方原題 PDF 入口，避免在主文複製整份考卷。考題年份仍須與目前 SSC 2026 的新建議區別，因為考選部當年的答案不會隨後續指南自動更改。
+理解 Sepsis 時不必把真題當成獨立的考古題庫。以下六題的原始身分與官方答案已確認；題幹與選項詳解由 [《Sepsis：由國考真題反推臨床決策》](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md) 統一整理，提供官方原題 PDF 入口，避免在主文複製整份考卷。考題年份仍須與目前 SSC 2026 的新建議區別，因為考選部當年的答案不會隨後續指南自動更改。
 
 | 國考來源 | 問題真正考的是什麼？ | 正答 | 本篇應回看的脈絡 |
 | --- | --- | --- | --- |
@@ -312,9 +312,10 @@ IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 �
 | **112-1 醫學（三）Q64** | 肝硬化＋海水傷口＋血性水泡與休克的病原與急迫危險 | **D：V. vulnificus** | §6–7 感染來源、source control |
 | **114-1 醫學（三）Q51** | 不同休克的 SVR 為什麼呈相反趨勢？ | **B：病毒性心肌炎** | §8–11 血管阻力、心輸出與 PHR |
 | **112-1 醫學（三）Q65** | 創傷弧菌重症傷口感染應如何選擇抗菌藥？ | **C：ceftazidime＋tetracycline** | §6–7 感染來源、抗菌藥與源頭控制 |
+| **113-1 醫學（三）Q48** | 為何補 bicarbonate 不是 Sepsis 酸中毒的常規首要目標？ | **B** | §15 酸鹼、灌流與治療優先順序 |
 | **114-1 醫學（三）Q57** | 感染合併頑固性休克，何時須立即處理 adrenal crisis？ | **C** | §15 refractory shock 鑑別 |
 
-這五題都是考選部正式真題，表內只是概念重述。若要練習考試原始措辭，請使用[附有官方試卷、答案與更正紀錄的完整逐題詳解](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md)；**不要把 2026 指南的細節逆向改寫成 2023–2025 年的原題選項**。
+這六題都是考選部正式真題，表內只是概念重述。若要練習考試原始措辭，請使用[附有官方試卷、答案與更正紀錄的完整逐題詳解](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md)；**不要把 2026 指南的細節逆向改寫成 2023–2025 年的原題選項**。
 
 ## 二十、思考練習：不用背藥名也能回答的六問
 
