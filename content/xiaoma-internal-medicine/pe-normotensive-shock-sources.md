@@ -43,7 +43,7 @@ Creager MA, et al. **2026 AHA/ACC/ACCP/ACEP/CHEST/SCAI/SHM/SIR/SVM/SVN Guideline
 - **時序**：此指引 2026-02-19 公布，**不可能已納入 2026 年 3 月 HI-PEITHO 或 2026 年 8 月 PRAGUE-26 的最終結果**。**2026-07-14 正式勘誤已核讀文字全文**：[Circulation correction DOI 10.1161/CIR.0000000000001462](https://doi.org/10.1161/CIR.0000000000001462) 更正 **Table 4（RV echocardiographic dysfunction assessment methods／thresholds）** 與 §3.1.2 reference 44（ASE 2025 右心超音波指引）。本篇未以舊 Table 4 的個別數值定義 RV dysfunction；未重製原表像素，正式原圖及 360/390px 仍待驗證。
 - **原圖**：JACC Guideline-at-a-Glance 的 clinical categories Figure 1 有原始 footnotes；本次取得文字註腳，未取得可驗證的完整原像素，暫不重製。
 
-NICE [NG158 recommendations](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 與 [原始 DVT／PE visual summary（Thrombosis UK 保存副本）](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 是既有 VTE 篇的診斷流程定位；**不把 NICE 兩層 Wells 與 AHA 三層風險演算法拼成單一流程**。
+NICE [NG158 recommendations](https://www.nice.org.uk/guidance/ng158/chapter/recommendations) 與 [原始 DVT／PE visual summary（Thrombosis UK 保存副本）](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 是既有 VTE 篇的診斷流程定位。**本輪已實際開啟 NICE 3 頁 PDF，並目視第 2 頁 suspected PE 原始流程（Wells >4／≤4、D-dimer、CTPA、陰性 CTPA 後 DVT suspected 分支、五項腳註）**；這是可公開點開的原圖，**不是 Pocket Figure 2-3**。**不把 NICE 兩層 Wells 與 AHA 三層風險演算法拼成單一流程**。
 
 ## 4. 介入試驗與證據邊界
 
