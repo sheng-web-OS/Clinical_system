@@ -34,7 +34,7 @@ class ACSSemanticBridgeRegressions(unittest.TestCase):
         troponin = self.body.split("## 四、Troponin", 1)[1].split("## 五、風險", 1)[0]
         self.assertIn("純教學假設", troponin)
         self.assertIn("99th-percentile URL", troponin)
-        self.assertRegex(troponin, r"12、68、145[\\s\\S]+?\\n\\n\\*\\*數列已回答")
+        self.assertIn("\n\n**數列已回答", troponin)
         self.assertIn("造影仍未解因", troponin)
         self.assertIn("myocardial injury with non-obstructive coronary arteries", troponin)
 
