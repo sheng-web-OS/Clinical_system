@@ -9,7 +9,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "site"))
 from catalog import load_pages
-from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers, by_year
+from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers, question_records
 
 class ExamArchiveContract(unittest.TestCase):
     @classmethod
@@ -55,8 +55,7 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertIn("醫學（三）", index)
         self.assertNotIn('id="year-2026"', index)
         self.assertIn('href="xiaoma-exams.html#year-108"', teaser)
-        self.assertEqual(index.count('class="exam-lesson"'),
-                         sum(len(rows) for papers in by_year(self.pages).values() for rows in papers.values()))
+        self.assertEqual(index.count('class="exam-catalog-question"'), len(question_records(self.pages)))
         for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78):
             self.assertIn("#q-" + str(q) + '"', index)
 
@@ -64,6 +63,7 @@ class ExamArchiveContract(unittest.TestCase):
         pages = copy.deepcopy(self.pages)
         newer = copy.deepcopy(next(p for p in pages if p.get("exam")))
         newer["exam"] = {**newer["exam"], "year_roc": 109, "question_numbers": [1]}
+        newer["exam_topics"] = {"1": "未來年度的題目"}
         newer["source"] = "content/example-future.md"
         newer["output"] = "example-future.html"
         pages.append(newer)

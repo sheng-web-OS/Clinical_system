@@ -102,7 +102,8 @@
         "subject": "醫學（三）",
         "question_number": 3,
         "question_heading": "第 3 題：低血氧的機轉，何者錯誤？",
-        "concept_heading": "02　血氧低，問題出在肺泡本身，還是肺泡到動脈之間？"
+        "concept_heading": "02　血氧低，問題出在肺泡本身，還是肺泡到動脈之間？",
+        "topic": "低血氧的機轉"
       },
       {
         "year_roc": 115,
@@ -111,7 +112,8 @@
         "subject": "醫學（三）",
         "question_number": 9,
         "question_heading": "第 9 題：發紺的描述，何者正確？",
-        "concept_heading": "04　SpO₂ 100%，為何病人仍會缺少攜氧能力？"
+        "concept_heading": "04　SpO₂ 100%，為何病人仍會缺少攜氧能力？",
+        "topic": "發紺與血紅素"
       }
     ],
     "related_exams": [
@@ -264,7 +266,8 @@
         "subject": "醫學（三）",
         "question_number": 51,
         "question_heading": "第一題｜111 年第一次・醫學（三）第 51 題",
-        "concept_heading": "03　補氧成功後，為什麼仍需要另一種支持？"
+        "concept_heading": "03　補氧成功後，為什麼仍需要另一種支持？",
+        "topic": "COPD 的控制性給氧"
       },
       {
         "year_roc": 114,
@@ -273,7 +276,8 @@
         "subject": "醫學（三）",
         "question_number": 49,
         "question_heading": "第二題｜114 年第一次・醫學（三）第 49 題",
-        "concept_heading": "04　適合 NIV，必須同時有「可能受益」與「能安全進行」"
+        "concept_heading": "04　適合 NIV，必須同時有「可能受益」與「能安全進行」",
+        "topic": "NIV 的效益與安全"
       },
       {
         "year_roc": 114,
@@ -282,7 +286,8 @@
         "subject": "醫學（三）",
         "question_number": 50,
         "question_heading": "第三題｜114 年第一次・醫學（三）第 50 題",
-        "concept_heading": "02　PaCO₂ 告訴我們結果，還沒有交代時間與病因"
+        "concept_heading": "02　PaCO₂ 告訴我們結果，還沒有交代時間與病因",
+        "topic": "高碳酸與低通氣病因"
       }
     ]
   },
@@ -315,7 +320,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 6,
-        "question_heading": "01｜115 年第二次・醫學（三）第 6 題"
+        "question_heading": "01｜115 年第二次・醫學（三）第 6 題",
+        "topic": "冠脈供需與阻力"
       },
       {
         "year_roc": 115,
@@ -323,7 +329,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 25,
-        "question_heading": "02｜115 年第二次・醫學（三）第 25 題"
+        "question_heading": "02｜115 年第二次・醫學（三）第 25 題",
+        "topic": "CKD：GFR 與白蛋白尿"
       },
       {
         "year_roc": 115,
@@ -331,7 +338,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 16,
-        "question_heading": "03｜115 年第二次・醫學（三）第 16 題"
+        "question_heading": "03｜115 年第二次・醫學（三）第 16 題",
+        "topic": "幽門螺旋桿菌檢查"
       },
       {
         "year_roc": 115,
@@ -339,7 +347,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 47,
-        "question_heading": "04｜115 年第二次・醫學（三）第 47 題"
+        "question_heading": "04｜115 年第二次・醫學（三）第 47 題",
+        "topic": "肺炎病原檢查"
       },
       {
         "year_roc": 114,
@@ -347,7 +356,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 52,
-        "question_heading": "05｜114 年第一次・醫學（三）第 52 題"
+        "question_heading": "05｜114 年第一次・醫學（三）第 52 題",
+        "topic": "甲狀腺結節風險"
       },
       {
         "year_roc": 114,
@@ -355,7 +365,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 12,
-        "question_heading": "06｜114 年第一次・醫學（三）第 12 題"
+        "question_heading": "06｜114 年第一次・醫學（三）第 12 題",
+        "topic": "HFpEF 與充盈壓"
       },
       {
         "year_roc": 115,
@@ -363,7 +374,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 26,
-        "question_heading": "07｜115 年第二次・醫學（三）第 26 題"
+        "question_heading": "07｜115 年第二次・醫學（三）第 26 題",
+        "topic": "低血鈉與 ADH"
       },
       {
         "year_roc": 115,
@@ -371,7 +383,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 18,
-        "question_heading": "08｜115 年第二次・醫學（三）第 18 題"
+        "question_heading": "08｜115 年第二次・醫學（三）第 18 題",
+        "topic": "肝性腦病變治療"
       },
       {
         "year_roc": 115,
@@ -379,7 +392,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 59,
-        "question_heading": "09｜115 年第二次・醫學（三）第 59 題"
+        "question_heading": "09｜115 年第二次・醫學（三）第 59 題",
+        "topic": "感染性腹瀉與食物中毒"
       },
       {
         "year_roc": 114,
@@ -387,7 +401,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 54,
-        "question_heading": "10｜114 年第一次・醫學（三）第 54 題"
+        "question_heading": "10｜114 年第一次・醫學（三）第 54 題",
+        "topic": "降血糖藥物與 glucagon"
       },
       {
         "year_roc": 115,
@@ -395,7 +410,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 11,
-        "question_heading": "11｜115 年第二次・醫學（三）第 11 題"
+        "question_heading": "11｜115 年第二次・醫學（三）第 11 題",
+        "topic": "STEMI 的初始處置"
       },
       {
         "year_roc": 115,
@@ -403,7 +419,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 28,
-        "question_heading": "12｜115 年第二次・醫學（三）第 28 題"
+        "question_heading": "12｜115 年第二次・醫學（三）第 28 題",
+        "topic": "AKI 的恢復監測"
       },
       {
         "year_roc": 115,
@@ -411,7 +428,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 20,
-        "question_heading": "13｜115 年第二次・醫學（三）第 20 題"
+        "question_heading": "13｜115 年第二次・醫學（三）第 20 題",
+        "topic": "IBD 與腸外表現"
       },
       {
         "year_roc": 115,
@@ -419,7 +437,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 60,
-        "question_heading": "14｜115 年第二次・醫學（三）第 60 題"
+        "question_heading": "14｜115 年第二次・醫學（三）第 60 題",
+        "topic": "感染與治療藥物"
       },
       {
         "year_roc": 114,
@@ -427,7 +446,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 56,
-        "question_heading": "15｜114 年第一次・醫學（三）第 56 題"
+        "question_heading": "15｜114 年第一次・醫學（三）第 56 題",
+        "topic": "DKA 的初始治療"
       },
       {
         "year_roc": 115,
@@ -435,7 +455,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 13,
-        "question_heading": "16｜115 年第二次・醫學（三）第 13 題"
+        "question_heading": "16｜115 年第二次・醫學（三）第 13 題",
+        "topic": "缺血訊號與心肌損傷"
       },
       {
         "year_roc": 115,
@@ -443,7 +464,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 29,
-        "question_heading": "17｜115 年第二次・醫學（三）第 29 題"
+        "question_heading": "17｜115 年第二次・醫學（三）第 29 題",
+        "topic": "移植腎與藥物毒性"
       },
       {
         "year_roc": 115,
@@ -451,7 +473,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 23,
-        "question_heading": "18｜115 年第二次・醫學（三）第 23 題"
+        "question_heading": "18｜115 年第二次・醫學（三）第 23 題",
+        "topic": "SIBO 與營養缺乏"
       },
       {
         "year_roc": 115,
@@ -459,7 +482,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 61,
-        "question_heading": "19｜115 年第二次・醫學（三）第 61 題"
+        "question_heading": "19｜115 年第二次・醫學（三）第 61 題",
+        "topic": "MRSA 抗生素"
       },
       {
         "year_roc": 114,
@@ -467,7 +491,8 @@
         "stage": 2,
         "subject": "醫學（三）",
         "question_number": 57,
-        "question_heading": "20｜114 年第一次・醫學（三）第 57 題"
+        "question_heading": "20｜114 年第一次・醫學（三）第 57 題",
+        "topic": "腎上腺危象"
       }
     ]
   },
@@ -494,6 +519,12 @@
         12,
         76
       ]
+    },
+    "exam_topics": {
+      "8": "ASD 的心音與右心負荷",
+      "11": "AS 與 HOCM 的雜音",
+      "12": "發紺、分流與 Marfan",
+      "76": "古柯鹼相關 ACS"
     }
   },
   {
@@ -650,6 +681,12 @@
         25,
         28
       ]
+    },
+    "exam_topics": {
+      "27": "AKI 的定義與時間窗",
+      "2": "高血鈉與缺水估算",
+      "25": "嘔吐、鹼中毒與尿液指標",
+      "28": "大量蛋白尿與 NSAID"
     }
   },
   {
@@ -675,6 +712,12 @@
         23,
         26
       ]
+    },
+    "exam_topics": {
+      "17": "肝腎症候群與灌流",
+      "22": "CKD 的電解質異常",
+      "23": "CKD 的鈣磷與 PTH",
+      "26": "AKI 與嗜酸性球"
     }
   },
   {
@@ -743,7 +786,8 @@
         "subject": "醫學（三）",
         "question_number": 25,
         "question_heading": "真題 01｜114 年第二次・醫學（三）第 25 題",
-        "concept_heading": "04　把血氣、血液 gap 與尿液 gap 放回各自的問題"
+        "concept_heading": "04　把血氣、血液 gap 與尿液 gap 放回各自的問題",
+        "topic": "血液 AG 與呼吸代償"
       },
       {
         "year_roc": 113,
@@ -752,7 +796,8 @@
         "subject": "醫學（三）",
         "question_number": 48,
         "question_heading": "真題 02｜113 年第一次・醫學（三）第 48 題",
-        "concept_heading": "07　當病人不再喘得那麼快，先確認維持 pH 的方式有沒有失敗"
+        "concept_heading": "07　當病人不再喘得那麼快，先確認維持 pH 的方式有沒有失敗",
+        "topic": "敗血症的治療優先序"
       }
     ],
     "related_exams": [
@@ -825,8 +870,8 @@
   {
     "source": "content/xiaoma-internal-medicine/exams/index.md",
     "output": "xiaoma-exams.html",
-    "title": "醫師國考歷屆詳解｜依考試年度",
-    "subtitle": "依民國年度、考試梯次、階段與科目查找官方真題；同時保留臨床主題的完整推理文章。",
+    "title": "歷屆國考詳解",
+    "subtitle": "已收錄的正式真題、完整詳解與對應教材。",
     "collection": "xiaoma-internal-medicine",
     "section": "歷屆國考題"
   },
@@ -850,7 +895,8 @@
         "subject": "醫學（三）",
         "question_number": 50,
         "question_heading": "正式題 01｜113 年第一次・醫師二階・醫學（三）第 50 題",
-        "concept_heading": "02　先分清 obstruction、variability 與 reversibility"
+        "concept_heading": "02　先分清 obstruction、variability 與 reversibility",
+        "topic": "氣喘的診斷證據"
       },
       {
         "year_roc": 114,
@@ -859,7 +905,8 @@
         "subject": "醫學（三）",
         "question_number": 46,
         "question_heading": "正式題 02｜114 年第一次・醫師二階・醫學（三）第 46 題",
-        "concept_heading": "04　DLCO 為什麼能把「都是 obstruction」再分一次？"
+        "concept_heading": "04　DLCO 為什麼能把「都是 obstruction」再分一次？",
+        "topic": "阻塞型 PFT 與 DLCO"
       }
     ]
   },
@@ -945,6 +992,9 @@
       "question_numbers": [
         45
       ]
+    },
+    "exam_topics": {
+      "45": "CURB-65 的用途"
     }
   },
   {
@@ -967,6 +1017,9 @@
       "question_numbers": [
         49
       ]
+    },
+    "exam_topics": {
+      "49": "肺炎與胸膜腔評估"
     }
   },
   {
@@ -1136,6 +1189,9 @@
       "question_numbers": [
         46
       ]
+    },
+    "exam_topics": {
+      "46": "嗜酸性球與 ICS"
     }
   },
   {
@@ -1158,6 +1214,9 @@
       "question_numbers": [
         50
       ]
+    },
+    "exam_topics": {
+      "50": "COPD 急性惡化用藥"
     }
   },
   {
@@ -1180,6 +1239,9 @@
       "question_numbers": [
         46
       ]
+    },
+    "exam_topics": {
+      "46": "COPD 治療的判斷軸"
     }
   },
   {
@@ -1203,6 +1265,10 @@
         61,
         63
       ]
+    },
+    "exam_topics": {
+      "61": "運動型中暑",
+      "63": "橫紋肌溶解與 AKI"
     }
   },
   {
@@ -1225,6 +1291,9 @@
       "question_numbers": [
         75
       ]
+    },
+    "exam_topics": {
+      "75": "CPR 氣道與通氣節奏"
     }
   },
   {
@@ -1247,6 +1316,9 @@
       "question_numbers": [
         78
       ]
+    },
+    "exam_topics": {
+      "78": "闌尾炎的症狀與體徵"
     }
   },
   {
@@ -1546,6 +1618,9 @@
       "question_numbers": [
         46
       ]
+    },
+    "exam_topics": {
+      "46": "慢性咳嗽與用藥史"
     }
   },
   {
@@ -1580,7 +1655,8 @@
         "question_number": 51,
         "question_heading": "官方國考對題｜112 年第二次・醫學（三）第 51 題",
         "concept_heading": "04｜肺動脈阻塞，如何在血壓下降前先讓心輸出量下降？",
-        "focus": "嚴重肺栓塞的右心衰竭、診斷證據與抗凝治療界線"
+        "focus": "嚴重肺栓塞的右心衰竭、診斷證據與抗凝治療界線",
+        "topic": "肺栓塞與右心衰竭"
       }
     ]
   },

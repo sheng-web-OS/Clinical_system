@@ -35,10 +35,12 @@ def question_records(pages):
             for number in exam["question_numbers"]:
                 identity = {k: exam[k] for k in IDENTITY_FIELDS[:-1]}
                 identity["question_number"] = number
-                records.append({"exam": identity, "page": page, "anchor": "q-" + str(number)})
+                records.append({"exam": identity, "page": page, "anchor": "q-" + str(number),
+                                "topic": page.get("exam_topics", {}).get(str(number), page["title"])})
         for question in page.get("exam_questions", []):
             identity = {k: question[k] for k in IDENTITY_FIELDS}
-            records.append({"exam": identity, "page": page, "anchor": question_anchor(identity), "embedded": question})
+            records.append({"exam": identity, "page": page, "anchor": question_anchor(identity), "embedded": question,
+                            "topic": question.get("topic", page["title"])})
     return records
 
 
@@ -111,6 +113,12 @@ def validate_exam_catalog(pages, root=None):
                 raise ValueError("Duplicate exam question identity: " + repr(key))
             seen.add(key)
     for page in pages:
+        topics = page.get("exam_topics")
+        if topics is not None:
+            numbers = page.get("exam", {}).get("question_numbers", [])
+            if (not isinstance(topics, dict) or not numbers or set(topics) - {str(n) for n in numbers}
+                    or any(not isinstance(label, str) or not label.strip() or len(label) > 50 for label in topics.values())):
+                raise ValueError("Exam topics must label existing question numbers with short text")
         embedded = page.get("exam_questions", [])
         if not isinstance(embedded, list):
             raise ValueError("exam_questions must be a list")
@@ -121,14 +129,14 @@ def validate_exam_catalog(pages, root=None):
             heading_names = sum((_headings(root, page, level) for level in range(2, 5)), [])
         for question in embedded:
             required = set(IDENTITY_FIELDS) | {"question_heading"}
-            if not isinstance(question, dict) or not required <= set(question) or set(question) - required - {"concept_heading", "focus"}:
+            if not isinstance(question, dict) or not required <= set(question) or set(question) - required - {"concept_heading", "focus", "topic"}:
                 raise ValueError("Invalid embedded exam question metadata")
             _validate_identity(question)
             heading = question["question_heading"]
             if not isinstance(heading, str) or not heading.strip() or (root is not None and heading_names.count(heading) != 1):
                 raise ValueError("Embedded exam question heading missing or ambiguous: " + page["source"])
             _validate_heading_identity(question)
-            for field in ("concept_heading", "focus"):
+            for field in ("concept_heading", "focus", "topic"):
                 if field in question and (not isinstance(question[field], str) or not question[field].strip()):
                     raise ValueError("Embedded exam " + field + " must be nonempty text")
             if root is not None and question.get("concept_heading"):
@@ -199,9 +207,13 @@ def question_connections(pages, root):
     return links
 
 
-def render_concept_links(connections):
+def render_concept_links(connections, compact=False):
     if not connections:
         return ""
+    if compact:
+        items = ''.join('<li><a href="' + escape(link["href"], quote=True) + '">' + escape(link["page"]["title"]) + '</a></li>' for link in connections)
+        return ('<details class="exam-catalog-materials"><summary>教材 ' + str(len(connections)) +
+                '</summary><nav class="exam-concept-links" aria-label="對應教材"><ul>' + items + '</ul></nav></details>')
     items = ''.join('<li><a href="' + escape(link["href"], quote=True) + '">' + escape(link["page"]["title"]) +
                     '</a><small>' + escape(link["focus"]) + '</small></li>' for link in connections)
     return '<nav class="exam-concept-links" aria-label="對應教材"><span>回讀教材</span><ul>' + items + '</ul></nav>'
@@ -213,7 +225,8 @@ def render_exam_archive(pages, root=None):
     connections = question_connections(pages, root or Path(__file__).resolve().parents[1])
     if not groups:
         return '<p class="exam-archive-empty">目前尚未收錄完成題號與考選部原卷對應的正式真題詳解。</p>'
-    pieces = []
+    pieces = ['<nav class="exam-year-jumps" aria-label="選擇考試年份">' + ''.join(
+        '<a href="#year-' + str(year) + '">' + str(year) + ' 年</a>' for year in sorted(groups, reverse=True)) + '</nav>']
     for year in sorted(groups, reverse=True):
         total = sum(len(page["exam"]["question_numbers"]) for rows in groups[year].values() for page in rows)
         papers = len(groups[year])
@@ -222,21 +235,19 @@ def render_exam_archive(pages, root=None):
         for sitting, stage, subject in sorted(groups[year], key=lambda k:(k[0], k[1], k[2])):
             session_label = {1:"第一次",2:"第二次",3:"第三次",4:"第四次"}[sitting]
             rows = groups[year][(sitting, stage, subject)]
+            stage_label = '醫師第一階段' if stage == 1 else '醫師第二階段'
             piece += ['<section class="exam-paper">',
-                      '<h3>' + session_label + ' · 醫師' + ('第一階段' if stage == 1 else '第二階段') + ' · ' + escape(subject) + '</h3>',
-                      '<div class="exam-lesson-list">']
-            for row in sorted(rows, key=lambda p: min(p["exam"]["question_numbers"])):
-                questions = []
-                for record in sorted(row["questions"], key=lambda r: r["exam"]["question_number"]):
-                    number = record["exam"]["question_number"]
-                    questions.append('<div class="exam-catalog-question" id="' + archive_anchor(record) +
-                                     '"><a class="exam-question-entry" href="' + escape(row["output"], quote=True) + '#' + record["anchor"] +
-                                     '">Q' + str(number) + ' · 題目與詳解 →</a>' +
-                                     render_concept_links(connections.get(question_key(record["exam"]), [])) + '</div>')
-                piece.append('<article class="exam-lesson"><a class="exam-lesson-title" href="' +
-                             escape(row["output"], quote=True) + '"><strong>' + escape(row["title"]) +
-                             '</strong><small>' + escape(row["subtitle"]) +
-                             '</small></a>' + ''.join(questions) + '</article>')
+                      '<h3><span>' + session_label + ' · ' + escape(subject) + '</span><small>' + stage_label + '</small></h3>',
+                      '<div class="exam-question-list">']
+            questions = sorted((record for row in rows for record in row["questions"]), key=lambda r: r["exam"]["question_number"])
+            for record in questions:
+                number = record["exam"]["question_number"]
+                materials = connections.get(question_key(record["exam"]), [])
+                data = ' data-materials="' + str(len(materials)) + '"' if materials else ''
+                piece.append('<div class="exam-catalog-question" id="' + archive_anchor(record) + '"' + data +
+                             '><a class="exam-question-entry" href="' + escape(record["page"]["output"], quote=True) + '#' + record["anchor"] +
+                             '"><span class="exam-question-number">Q' + str(number) + '</span><span class="exam-question-topic">' +
+                             escape(record["topic"]) + '</span></a>' + render_concept_links(materials, compact=True) + '</div>')
             piece += ['</div>', '</section>']
         piece.append('</section>')
         pieces.extend(piece)
