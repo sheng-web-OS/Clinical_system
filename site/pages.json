@@ -246,11 +246,11 @@
     "source_sha256": "e0367d5d0b3765c7607ccd3512d98f08ed529070c3d80fc076c7099accfb5452",
     "layout": "reading-original",
     "inline_source_figure": {
-      "before_text": "流程圖第一次問 Does seizure continue",
+      "before_text": "2026.07.28 Status epilepticus 閱讀",
       "image_url": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/840c75ec-e6b2-4089-95b0-313fa95d0919/Rendition/low-res/Content/Public",
       "official_source_url": "https://www.aesnet.org/docs/default-source/press-releases-assets/cse-treatment-chart-final_rerelease.pdf?sfvrsn=5eda6d28_2",
       "alt": "American Epilepsy Society 2016 年 convulsive status epilepticus 治療流程圖：0–5 分鐘穩定、5–20 分鐘 benzodiazepine、20–40 分鐘第二線治療、40–60 分鐘第三線治療與連續 EEG。",
-      "caption": "American Epilepsy Society (2016), Proposed Algorithm for Convulsive Status Epilepticus。點選圖片可開啟原圖放大；亦可查閱 AES 官方 PDF。",
+      "caption": "American Epilepsy Society (2016), Proposed Algorithm for Convulsive Status Epilepticus。原始完整流程圖；點圖放大或開啟 AES 官方 PDF。",
       "qualification": "此圖用來對照各次「Does seizure continue?」所承接的治療歷史；2016 年劑量與證據分級不應取代現行指引及機構急救流程。"
     }
   },
