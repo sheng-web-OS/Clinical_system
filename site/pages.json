@@ -2233,13 +2233,13 @@
         "focus": "海水、肝硬化、Vibrio vulnificus 與緊急感染來源處置"
       },
       {
-        "year_roc": 113,
+        "year_roc": 112,
         "sitting": 1,
         "stage": 2,
         "subject": "醫學（三）",
-        "question_number": 48,
-        "concept_heading": "十五、持續危險時：酸中毒、類固醇與頑固性休克",
-        "focus": "酸中毒之處置優先序與 bicarbonate 的例外"
+        "question_number": 65,
+        "concept_heading": "七、抗生素與源頭控制，為什麼必須和循環復甦一起開始？",
+        "focus": "創傷弧菌感染的抗菌藥選擇與緊急源頭控制"
       },
       {
         "year_roc": 114,
@@ -2265,7 +2265,7 @@
     "source": "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md",
     "output": "xiaoma-exam-sepsis-112-114-five-questions.html",
     "title": "Sepsis：從五題國考看循環、來源與治療優先序",
-    "subtitle": "112–114 年醫師二階：IL-5、Vibrio、SVR、bicarbonate、adrenal crisis",
+    "subtitle": "112–114 年醫師二階：IL-5、Vibrio 病原與抗菌藥、SVR、adrenal crisis",
     "collection": "xiaoma-internal-medicine",
     "date": "2026-10-27",
     "navigation": false,
@@ -2302,18 +2302,19 @@
         "question_heading": "114-1 醫學（三）第 51 題｜哪一種休克的 SVR 方向不同？",
         "focus": "分布性與心因性休克之 SVR／CO 反應",
         "topic": "分布性與心因性休克之 SVR／CO 反應"
-      }
-    ],
-    "related_exams": [
+      },
       {
-        "year_roc": 113,
+        "year_roc": 112,
         "sitting": 1,
         "stage": 2,
         "subject": "醫學（三）",
-        "question_number": 48,
-        "concept_heading": "113-1 醫學（三）第 48 題｜Sepsis 合併酸中毒，第一個目標是把 pH 調正常嗎？",
-        "focus": "同一官方 Q48 的 Sepsis 酸中毒優先序：與酸鹼主教材的正規題號建立雙向連結，不重複登錄為新題。"
-      },
+        "question_number": 65,
+        "question_heading": "112-1 醫學（三）第 65 題｜已懷疑創傷弧菌，如何把病原辨識轉成抗菌藥選擇？",
+        "focus": "創傷弧菌的抗菌藥組合與必要清創",
+        "topic": "Vibrio vulnificus 抗菌藥選擇"
+      }
+    ],
+    "related_exams": [
       {
         "year_roc": 114,
         "sitting": 1,
