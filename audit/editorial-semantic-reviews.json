@@ -1847,6 +1847,1024 @@
         }
       }
     },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md": {
+      "content_blob": "82a93a6f85d2855ea501e98914194d7088056fd8",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "2026-10-27-cross-discipline-29-question-separate-content-and-correction-audit-same-GPT6-not-physician",
+      "core_reader_question": "讀者能否從心音與結構心臟病的血流動力學，對醫學（四）到（六）的 29 道正式考題逐一辨認四選項，特別是 ASD fixed S2、PDA、TOF、Ross、AS 壓差、Eisenmenger 正式更正？",
+      "new_understanding": "新稿將每題四個選項放回聲音時序、血流通道、固定或動態阻塞及手術／麻醉風險，跨 29 題形成可遷移的因果模型；115-2 醫學五 Q9 的更正 B 或 D 是之前簡單答案表會漏掉的關鍵訊息。",
+      "strongest_counterargument": "兩道帶胸片或 ECG 的題目雖定位官方原卷，截圖因 PDF cache miss 尚未看到原圖關鍵像素，只能提供題幹與官方給分及非影像條件性解析，故不可宣稱完成完整看圖考試能力；來源頁其他題也非醫學（三）至（六）全卷逐圖審查，且僅為同模型第二輪 AI 評估。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 3,
+        "E": 4,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "04240708206eae4476-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "在「心音與結構性心臟病：醫學（四）至（六）跨科真題逐選項解析（111–115 年）」建立「這不是另一份心雜音背誦表。 本篇接續心音與結構性心臟病主教材，直接回答「原題中 A、B、C、D 為什麼分」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 3 行所屬的「心音與結構性心臟病：醫學（四）至（六）跨科真題逐選項解析（111–115 年）」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這不是另一份心雜音背誦表。 本篇接續心音與結構性心臟病主教材，直接回答「原題中 A、B、C、D 為什麼分出勝負」。從兒童心音、先天分流、瓣膜手術一路到麻醉術前風險，考的是同一套「聲音時序 → 血流通道 → 壓力／容量負荷 → 介入風險」模型。本文是官方原題的意義重述與原創解析，不重製考選部",
+          "line_for_editor": 3
+        },
+        "5b4ce05cd76af55e20-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「先釐清三個常被混為一談的「聲音來源」」建立「假設一名學齡兒童在左胸骨上緣聽到收縮期射出性雜音，接著發現 fixed split S2。你不能直接說「」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 7 行所屬的「先釐清三個常被混為一談的「聲音來源」」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "假設一名學齡兒童在左胸骨上緣聽到收縮期射出性雜音，接著發現 fixed split S2。你不能直接說「ASD 孔洞有湍流所以出聲」。ASD 的缺口通常不是高速射流的主要可聽音源；左向右分流增加右室與肺動脈的前向流量，通過相對正常肺動脈瓣時產生收縮期流量性雜音。右室血容量增加使 P2 相對",
+          "line_for_editor": 7
+        },
+        "3c402c1e0ccec7584d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「先釐清三個常被混為一談的「聲音來源」」建立「這是 115 年第二次醫學（四）Q10，官方 A 錯的關鍵。接著所有歷屆相關題，都可問：究竟是通道本身發」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 18 行所屬的「先釐清三個常被混為一談的「聲音來源」」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是 115 年第二次醫學（四）Q10，官方 A 錯的關鍵。接著所有歷屆相關題，都可問：究竟是通道本身發出聲音、下游瓣膜前向流量過多，還是異常瓣葉開關／血液逆流？三種機轉分不開，做再多題也只是背選項。",
+          "line_for_editor": 18
+        },
+        "ea6ebd982ef2895520-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q10｜ASD 四種聲音機轉｜官方 A」的選項 A，以「A（應選）：說收縮聲是大量血直接經心房中隔缺損時產生。錯在把心房間相對低壓的分流通道當主要可聽射流；典型」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 26 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A（應選）：說收縮聲是大量血直接經心房中隔缺損時產生。錯在把心房間相對低壓的分流通道當主要可聽射流；典型聲源為右室出口／肺動脈瓣前向血流增加。",
+          "line_for_editor": 26
+        },
+        "9a6e7a764b8c3740a5-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q10｜ASD 四種聲音機轉｜官方 A」的選項 B，以「B（成立）：收縮期右室出口與肺動脈瓣流量增加，能解釋肺動脈區射出聲。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 27 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B（成立）：收縮期右室出口與肺動脈瓣流量增加，能解釋肺動脈區射出聲。",
+          "line_for_editor": 27
+        },
+        "434cffd3bfabaa7838-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q10｜ASD 四種聲音機轉｜官方 A」的選項 C，以「C（典型模型成立）：右心流量負荷導致肺動脈瓣關閉相對延後，並有 fixed split S2；呼吸性抵銷」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 28 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C（典型模型成立）：右心流量負荷導致肺動脈瓣關閉相對延後，並有 fixed split S2；呼吸性抵銷還是必要中介，不能只寫「血多所以固定」。",
+          "line_for_editor": 28
+        },
+        "090002b9f2c4dffade-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q10｜ASD 四種聲音機轉｜官方 A」的選項 D，以「D（大分流時可能成立）：舒張期經三尖瓣流量增加，可以產生三尖瓣 flow rumble；不是三尖瓣必然狹」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 29 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D（大分流時可能成立）：舒張期經三尖瓣流量增加，可以產生三尖瓣 flow rumble；不是三尖瓣必然狹窄。",
+          "line_for_editor": 29
+        },
+        "da6e45fec96d054d19-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「115（二）醫學（四）Q10｜ASD 四種聲音機轉｜官方 A」建立「改判測試： 若題幹把 ASD 換成小型限制性 VSD，主要出聲機制會轉為 LV→RV 高壓差的全收縮期噴」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 31 行所屬的「115（二）醫學（四）Q10｜ASD 四種聲音機轉｜官方 A」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "改判測試： 若題幹把 ASD 換成小型限制性 VSD，主要出聲機制會轉為 LV→RV 高壓差的全收縮期噴流；聽到很響反而不代表缺損很大。",
+          "line_for_editor": 31
+        },
+        "676423c99f8a2cc3ec-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（四）Q7｜兒童心雜音的真與假｜官方 B」的選項 A，以「A（錯）：innocent／Still murmur 常是低至中等音高、有音樂性、收縮期且姿勢可變；「通」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 35 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A（錯）：innocent／Still murmur 常是低至中等音高、有音樂性、收縮期且姿勢可變；「通常為高頻、3–4 級」過度誇大。若有真正 ≥3 級、thrill、全收縮期或臨床警訊，要先排除病理性。",
+          "line_for_editor": 35
+        },
+        "da03c1b57d6985625b-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（四）Q7｜兒童心雜音的真與假｜官方 B」的選項 B，以「B（正確）：PDA 可在左鎖骨下方聽到連續性 machinery murmur，因為主動脈與肺動脈間的壓」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 36 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B（正確）：PDA 可在左鎖骨下方聽到連續性 machinery murmur，因為主動脈與肺動脈間的壓差可跨收縮與舒張。",
+          "line_for_editor": 36
+        },
+        "bb6312c7362519388e-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（四）Q7｜兒童心雜音的真與假｜官方 B」的選項 C，以「C（錯）：TOF 的典型收縮期射出聲主要來自RVOT／肺動脈出口阻塞，不是大 VSD 本身；缺氧發作時阻」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 37 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C（錯）：TOF 的典型收縮期射出聲主要來自RVOT／肺動脈出口阻塞，不是大 VSD 本身；缺氧發作時阻塞惡化，雜音甚至可能變小。",
+          "line_for_editor": 37
+        },
+        "b2508da046df15ec40-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（四）Q7｜兒童心雜音的真與假｜官方 B」的選項 D，以「D（錯）：ASD 的典型肺動脈區收縮聲是增加的肺動脈瓣前向流量，非直接「血通過心房孔洞」的聲音。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 38 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D（錯）：ASD 的典型肺動脈區收縮聲是增加的肺動脈瓣前向流量，非直接「血通過心房孔洞」的聲音。",
+          "line_for_editor": 38
+        },
+        "21afa756ee24eadc44-1": {
+          "role": "orientation",
+          "reader_gain": "在「114（二）醫學（四）Q7｜兒童心雜音的真與假｜官方 B」建立「反事實： 若一名兒童有連續性心雜音，先分清 PDA、靜脈 hum（壓迫頸靜脈或姿勢可改變）、動靜脈瘻及破」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 40 行所屬的「114（二）醫學（四）Q7｜兒童心雜音的真與假｜官方 B」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "反事實： 若一名兒童有連續性心雜音，先分清 PDA、靜脈 hum（壓迫頸靜脈或姿勢可改變）、動靜脈瘻及破裂竇瘤，不能把「連續」直接當 PDA 特異性。",
+          "line_for_editor": 40
+        },
+        "84cb6c917bf8fd26d8-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（二）醫學（四）Q6｜innocent murmur 的排除特徵｜官方 B」的選項 B，以「B（應選）：第三級全收縮期雜音不是典型 innocent murmur；holosystolic 應想到」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 45 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B（應選）：第三級全收縮期雜音不是典型 innocent murmur；holosystolic 應想到 VSD、MR、TR。",
+          "line_for_editor": 45
+        },
+        "c7a1e74b69d88e819d-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（二）醫學（四）Q6｜innocent murmur 的排除特徵｜官方 B」的選項 C，以「C（可見）：姿勢、呼吸與流量改變，確實可使 innocent murmur 音量改變。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 46 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C（可見）：姿勢、呼吸與流量改變，確實可使 innocent murmur 音量改變。",
+          "line_for_editor": 46
+        },
+        "ad86fe68eae12f5f03-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（二）醫學（四）Q6｜innocent murmur 的排除特徵｜官方 B」的選項 D，以「D（可見於特定良性聲音）：頸靜脈輕壓可減少 venous hum；這是靜脈流動聲，不應把所有 innoc」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 47 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D（可見於特定良性聲音）：頸靜脈輕壓可減少 venous hum；這是靜脈流動聲，不應把所有 innocent murmurs 當成同樣反應。",
+          "line_for_editor": 47
+        },
+        "900f561423e6bea93b-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q33｜PAPVR 的血流動力學像誰？｜官方 B」的選項 A，以「A VSD：高壓心室間噴流可使肺血流增加，但缺損位置及兩側負荷不一樣。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 51 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A VSD：高壓心室間噴流可使肺血流增加，但缺損位置及兩側負荷不一樣。",
+          "line_for_editor": 51
+        },
+        "0de0ad420000da957a-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q33｜PAPVR 的血流動力學像誰？｜官方 B」的選項 B，以「B ASD（正解）：部分肺靜脈錯誤回到體靜脈／右心，額外的肺靜脈回流使右室與肺循環容量負荷增加，最像 A」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 52 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B ASD（正解）：部分肺靜脈錯誤回到體靜脈／右心，額外的肺靜脈回流使右室與肺循環容量負荷增加，最像 ASD。",
+          "line_for_editor": 52
+        },
+        "898222f8ba49607b3c-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q33｜PAPVR 的血流動力學像誰？｜官方 B」的選項 C，以「C Pulmonary stenosis：這是右室壓力負荷，不是肺血流量過多。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 53 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Pulmonary stenosis：這是右室壓力負荷，不是肺血流量過多。",
+          "line_for_editor": 53
+        },
+        "60b5fca6d6c7b3e07b-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q33｜PAPVR 的血流動力學像誰？｜官方 B」的選項 D，以「D PDA：雖同樣增加肺血流，但 PDA 常使左房／左室承受肺靜脈回流增加的容量負荷，不能與 PAPVR」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 54 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D PDA：雖同樣增加肺血流，但 PDA 常使左房／左室承受肺靜脈回流增加的容量負荷，不能與 PAPVR 交換血流解剖。",
+          "line_for_editor": 54
+        },
+        "474d91b7bc3b430221-1": {
+          "role": "orientation",
+          "reader_gain": "在「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」建立「3 個月嬰兒成長緩慢、奶量偏少、心雜音，哪個病變最不容易單獨解釋明顯 HF？」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 58 行所屬的「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "3 個月嬰兒成長緩慢、奶量偏少、心雜音，哪個病變最不容易單獨解釋明顯 HF？",
+          "line_for_editor": 58
+        },
+        "b7ba0c5cb16c380f9a-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」的選項 A，以「A 小型 secundum ASD（正解）：約 5 mm ASD 在嬰兒常尚未造成嚴重症狀；慢性右心容量」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 60 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A 小型 secundum ASD（正解）：約 5 mm ASD 在嬰兒常尚未造成嚴重症狀；慢性右心容量負荷可以很晚才被察覺。",
+          "line_for_editor": 60
+        },
+        "728456ae6c31fdc79d-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」的選項 B，以「B 約 6 mm VSD：出生後數週肺血管阻力下降，左向右分流增加，呼吸急促、冒汗、餵食不足與體重不增較」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 61 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B 約 6 mm VSD：出生後數週肺血管阻力下降，左向右分流增加，呼吸急促、冒汗、餵食不足與體重不增較合理。",
+          "line_for_editor": 61
+        },
+        "9901b2639cb05a749c-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」的選項 C，以「C Complete AVSD：大型心房／心室分流及共同房室瓣異常可造成早期顯著肺血流增加。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 62 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Complete AVSD：大型心房／心室分流及共同房室瓣異常可造成早期顯著肺血流增加。",
+          "line_for_editor": 62
+        },
+        "72709b554d97502726-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」的選項 D，以「D 約 5 mm PDA：主動脈向肺循環的顯著分流可導致 LV 容量負荷與 HF。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 63 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D 約 5 mm PDA：主動脈向肺循環的顯著分流可導致 LV 容量負荷與 HF。",
+          "line_for_editor": 63
+        },
+        "f0fcc0619bb25e3231-1": {
+          "role": "orientation",
+          "reader_gain": "在「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」建立「改判： 大型 ASD 合併其他病灶、肺血管病或嚴重 AV valve regurgitation 時，不」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 65 行所屬的「113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "改判： 大型 ASD 合併其他病灶、肺血管病或嚴重 AV valve regurgitation 時，不能再用「ASD 一律無症狀」的簡化句。",
+          "line_for_editor": 65
+        },
+        "c83cc2473715226ddc-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（四）Q7｜PDA：維持開放還是促進關閉？｜官方 C」的選項 B，以「B（成立）：顯著左向右分流、較低舒張壓可有 wide pulse pressure。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 70 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B（成立）：顯著左向右分流、較低舒張壓可有 wide pulse pressure。",
+          "line_for_editor": 70
+        },
+        "5bd0d0ffc2f4d7980d-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（四）Q7｜PDA：維持開放還是促進關閉？｜官方 C」的選項 C，以「C（應選）：PGE1 維持 ductus 開放，不是讓它閉合；選定的早產兒 PDA 藥物關閉策略常涉及抑」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 71 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C（應選）：PGE1 維持 ductus 開放，不是讓它閉合；選定的早產兒 PDA 藥物關閉策略常涉及抑制 prostaglandin synthesis 的 ibuprofen／indomethacin，或 acetaminophen 等方案。",
+          "line_for_editor": 71
+        },
+        "b6efa77aac21d74a43-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（四）Q7｜PDA：維持開放還是促進關閉？｜官方 C」的選項 D，以「D（成立）：左鎖骨附近可有連續性雜音，因肺血管阻力與壓差狀態改變，也可能只聽到收縮成分。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 72 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D（成立）：左鎖骨附近可有連續性雜音，因肺血管阻力與壓差狀態改變，也可能只聽到收縮成分。",
+          "line_for_editor": 72
+        },
+        "9ae239b0d636fac3bb-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q12｜VSD 的 HF 線索｜官方 A」的選項 A，以「A（正解）：出生 3.5 kg 到一個月僅 4.0 kg，要評估體重增加速度是否不足，配合餵食困難、冒汗」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 76 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A（正解）：出生 3.5 kg 到一個月僅 4.0 kg，要評估體重增加速度是否不足，配合餵食困難、冒汗或呼吸症狀，最能支持 HF 疑慮。",
+          "line_for_editor": 76
+        },
+        "763dc9990f5743a538-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q12｜VSD 的 HF 線索｜官方 A」的選項 B，以「B：安靜 RR 40/min 可以落在正常嬰兒範圍，不能單獨判 HF。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 77 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B：安靜 RR 40/min 可以落在正常嬰兒範圍，不能單獨判 HF。",
+          "line_for_editor": 77
+        },
+        "2d19c90f561c457782-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q12｜VSD 的 HF 線索｜官方 A」的選項 D，以「D：右肋緣下可摸到 1 cm 肝臟並非獨立證明肝鬱血；須看年齡、肝緣位置及其餘 HF 徵象。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 79 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D：右肋緣下可摸到 1 cm 肝臟並非獨立證明肝鬱血；須看年齡、肝緣位置及其餘 HF 徵象。",
+          "line_for_editor": 79
+        },
+        "94fdcdfe2c82b41fec-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「115（二）醫學（四）Q12｜VSD 的 HF 線索｜官方 A」建立「這題提醒：體重軌跡可比單次正常心率、呼吸速率更早暴露嬰兒慢性肺血流過多。」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 81 行所屬的「115（二）醫學（四）Q12｜VSD 的 HF 線索｜官方 A」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這題提醒：體重軌跡可比單次正常心率、呼吸速率更早暴露嬰兒慢性肺血流過多。",
+          "line_for_editor": 81
+        },
+        "739e9cf591bca1ead9-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q6｜哪一個最不像連續性雜音？｜官方 D」的選項 A，以「A Central shunt：系統動脈與肺動脈間持續存在壓差，可有連續分流聲。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 85 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A Central shunt：系統動脈與肺動脈間持續存在壓差，可有連續分流聲。",
+          "line_for_editor": 85
+        },
+        "d44dc933013c99a041-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q6｜哪一個最不像連續性雜音？｜官方 D」的選項 B，以「B Ruptured sinus of Valsalva → RV：主動脈壓在兩期均高於右室壓，可有連續」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 86 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Ruptured sinus of Valsalva → RV：主動脈壓在兩期均高於右室壓，可有連續性聲音。",
+          "line_for_editor": 86
+        },
+        "8165ee38dae61a66e1-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q6｜哪一個最不像連續性雜音？｜官方 D」的選項 C，以「C MAPCAs：系統動脈到肺循環側枝血管也可形成持續血流聲。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 87 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C MAPCAs：系統動脈到肺循環側枝血管也可形成持續血流聲。",
+          "line_for_editor": 87
+        },
+        "f712462535558d75c5-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q6｜哪一個最不像連續性雜音？｜官方 D」的選項 D，以「D Pulmonary arteriovenous fistula（正解）：考題比較下最不典型有連續性心」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 88 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D Pulmonary arteriovenous fistula（正解）：考題比較下最不典型有連續性心前區雜音；此病更重要的是肺內右向左分流造成低氧，部分患者可有局部血管雜音，不能斷言絕不出聲。",
+          "line_for_editor": 88
+        },
+        "092bcbc11e4b3a51a0-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q31｜TOF 何以九個月才顯著發紺？｜官方 D」的選項 A，以「A PDA 持續開放：在某些 duct-dependent 肺血流情況反而維持氧合，不足以解釋逐漸嚴重的」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 94 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A PDA 持續開放：在某些 duct-dependent 肺血流情況反而維持氧合，不足以解釋逐漸嚴重的 TOF 出口阻塞。",
+          "line_for_editor": 94
+        },
+        "b3dd2af4e632fb6450-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q31｜TOF 何以九個月才顯著發紺？｜官方 D」的選項 B，以「B 卵圓孔延遲閉合：不是這題 cyanosis progression 的主要機轉。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 95 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B 卵圓孔延遲閉合：不是這題 cyanosis progression 的主要機轉。",
+          "line_for_editor": 95
+        },
+        "cddb03ad0fb61f902d-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q31｜TOF 何以九個月才顯著發紺？｜官方 D」的選項 C，以「C VSD 造成 HF：大型 VSD 可分流，但 TOF 主要由 RVOT 阻塞與右向左分流決定發紺程度」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 96 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C VSD 造成 HF：大型 VSD 可分流，但 TOF 主要由 RVOT 阻塞與右向左分流決定發紺程度。",
+          "line_for_editor": 96
+        },
+        "21e1bf6121c7f8a85e-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（四）Q31｜TOF 何以九個月才顯著發紺？｜官方 D」的選項 D，以「D（正解）：出口阻塞隨發育與動態變化加重，RV 壓力上升、經 VSD 右向左分流更顯著；題目的「RV 代」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 97 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D（正解）：出口阻塞隨發育與動態變化加重，RV 壓力上升、經 VSD 右向左分流更顯著；題目的「RV 代償肥厚加劇肺動脈狹窄」是其考試表述。實際病人發紺程度仍取決於先天解剖、RVOT 動態收縮與全身血管阻力，不應把所有病程只歸結為肥厚。",
+          "line_for_editor": 97
+        },
+        "8616c12002aa7fbac6-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q8｜TOF hypoxic spell 處置｜官方 D」的選項 A，以「A O₂（有幫助）：支持氧合，但不一定單獨能逆轉嚴重 RVOT 阻塞。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 101 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A O₂（有幫助）：支持氧合，但不一定單獨能逆轉嚴重 RVOT 阻塞。",
+          "line_for_editor": 101
+        },
+        "f79b8c7d939d103f5d-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q8｜TOF hypoxic spell 處置｜官方 D」的選項 B，以「B Knee-chest（有幫助）：提高 SVR，降低右向左分流比例。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 102 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Knee-chest（有幫助）：提高 SVR，降低右向左分流比例。",
+          "line_for_editor": 102
+        },
+        "69420f813e3dd210ea-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q8｜TOF hypoxic spell 處置｜官方 D」的選項 C，以「C 適度鎮靜（有幫助）：減少哭鬧、交感刺激與動態流出道收縮。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 103 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C 適度鎮靜（有幫助）：減少哭鬧、交感刺激與動態流出道收縮。",
+          "line_for_editor": 103
+        },
+        "681bb76769a5d9d961-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q8｜TOF hypoxic spell 處置｜官方 D」的選項 D，以「D β₂ agonist（不適當）：支氣管擴張藥物的交感作用可能使心搏／收縮力增加、RVOT 動態阻塞惡」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 104 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D β₂ agonist（不適當）：支氣管擴張藥物的交感作用可能使心搏／收縮力增加、RVOT 動態阻塞惡化；本題不是在治療氣喘喘鳴。",
+          "line_for_editor": 104
+        },
+        "6065984be7ce5d0280-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（五）Q22｜插管後 TOF 仍 SpO₂ 65%｜官方 C」的選項 A，以「A Beta blocker（可考慮）：有助降低 infundibular spasm。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 108 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A Beta blocker（可考慮）：有助降低 infundibular spasm。",
+          "line_for_editor": 108
+        },
+        "32a1913fcd57eafccc-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（五）Q22｜插管後 TOF 仍 SpO₂ 65%｜官方 C」的選項 B，以「B Hydration（視前負荷可考慮）：若 underfilled，補足 RV preload 有助穩」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 109 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Hydration（視前負荷可考慮）：若 underfilled，補足 RV preload 有助穩定肺血流；不可不看鬱血與血壓無限給液。",
+          "line_for_editor": 109
+        },
+        "8846bcd92f2ebf4aae-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（五）Q22｜插管後 TOF 仍 SpO₂ 65%｜官方 C」的選項 C，以「C Vasodilator（應避免的一般方向）：在 hypoxic spell 降低 SVR 可增加右向」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 110 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Vasodilator（應避免的一般方向）：在 hypoxic spell 降低 SVR 可增加右向左分流，使低氧惡化。",
+          "line_for_editor": 110
+        },
+        "82f4eda87967d6a56f-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（五）Q22｜插管後 TOF 仍 SpO₂ 65%｜官方 C」的選項 D，以「D Sedation（可考慮）：減少交感刺激與 oxygen consumption，仍需監測血流動力學」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 111 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D Sedation（可考慮）：減少交感刺激與 oxygen consumption，仍需監測血流動力學。",
+          "line_for_editor": 111
+        },
+        "c6f07cd310ab326334-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（四）Q7｜PGE1 為何不能救阻塞的 TAPVR？｜官方 D」的選項 A，以「A Severe coarctation：duct-dependent systemic flow 的病」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 115 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A Severe coarctation：duct-dependent systemic flow 的病人可以暫以 PGE1 維持灌流。",
+          "line_for_editor": 115
+        },
+        "9002e2b4158e01a769-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（四）Q7｜PGE1 為何不能救阻塞的 TAPVR？｜官方 D」的選項 B，以「B Tricuspid atresia：部分解剖下肺血流依靠 PDA，維持開放可能有益；不是所有三尖瓣閉」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 116 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Tricuspid atresia：部分解剖下肺血流依靠 PDA，維持開放可能有益；不是所有三尖瓣閉鎖都相同。",
+          "line_for_editor": 116
+        },
+        "440e01e515f30f5569-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（四）Q7｜PGE1 為何不能救阻塞的 TAPVR？｜官方 D」的選項 C，以「C Critical pulmonary stenosis：可依賴 PDA 的肺血流。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 117 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Critical pulmonary stenosis：可依賴 PDA 的肺血流。",
+          "line_for_editor": 117
+        },
+        "2dd3d144c4b962ecec-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（四）Q7｜PGE1 為何不能救阻塞的 TAPVR？｜官方 D」的選項 D，以「D Obstructed TAPVR（正解）：真正瓶頸是肺靜脈回到體循環的路徑遭阻塞；打開動脈導管無法解」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 118 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D Obstructed TAPVR（正解）：真正瓶頸是肺靜脈回到體循環的路徑遭阻塞；打開動脈導管無法解除肺靜脈高壓／肺水腫，須緊急解除 obstruction。",
+          "line_for_editor": 118
+        },
+        "ed5d0a6a280928df14-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q30｜哪一種不能用 PGE1 橋接？｜官方 C」的選項 A，以「A HLHS：ductus 關閉可使 systemic output 崩潰；PGE1 是典型暫時維持通道」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 122 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A HLHS：ductus 關閉可使 systemic output 崩潰；PGE1 是典型暫時維持通道。",
+          "line_for_editor": 122
+        },
+        "d9183ab355fc6af53b-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q30｜哪一種不能用 PGE1 橋接？｜官方 C」的選項 B，以「B Cyanotic TOF：在嚴重肺血流受限且 duct-dependent 時可藉維持 PDA 提供」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 123 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Cyanotic TOF：在嚴重肺血流受限且 duct-dependent 時可藉維持 PDA 提供肺血流。",
+          "line_for_editor": 123
+        },
+        "ce367ce11f87350590-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q30｜哪一種不能用 PGE1 橋接？｜官方 C」的選項 C，以「C Obstructed infracardiac TAPVR（正解）：肺靜脈阻塞不是 PDA 依賴的問」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 124 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Obstructed infracardiac TAPVR（正解）：肺靜脈阻塞不是 PDA 依賴的問題，緊急解剖矯正不能被 PGE1 替代。",
+          "line_for_editor": 124
+        },
+        "27a60303efea7179d5-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q30｜哪一種不能用 PGE1 橋接？｜官方 C」的選項 D，以「D TGA with VSD：mixing 可能依靠多種通道；需評估 PDA／atrial level 」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 125 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D TGA with VSD：mixing 可能依靠多種通道；需評估 PDA／atrial level mixing，選擇性維持 PDA 與 balloon atrial septostomy／arterial switch。",
+          "line_for_editor": 125
+        },
+        "c1cbda1bb02764a78d-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q11｜上肢高血壓＋股動脈弱＋肩胛間雜音｜官方 A」的選項 A，以「A Coarctation of aorta（正解）：高壓主要在狹窄近端，上肢高血壓與下肢脈弱形成解剖性」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 129 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A Coarctation of aorta（正解）：高壓主要在狹窄近端，上肢高血壓與下肢脈弱形成解剖性壓差；背部可聽到流速或側枝雜音。",
+          "line_for_editor": 129
+        },
+        "23c82ca2c00d83caa4-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q11｜上肢高血壓＋股動脈弱＋肩胛間雜音｜官方 A」的選項 B，以「B Aortic valvular stenosis：可有射出性雜音，通常不會造成特徵性的上下肢 pul」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 130 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Aortic valvular stenosis：可有射出性雜音，通常不會造成特徵性的上下肢 pulse differential。",
+          "line_for_editor": 130
+        },
+        "8e23002eeaa7884d83-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q11｜上肢高血壓＋股動脈弱＋肩胛間雜音｜官方 A」的選項 C，以「C Supravalvular AS：位於瓣上，症候與血管變化不同；不能解釋這組典型近端－遠端脈搏差。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 131 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Supravalvular AS：位於瓣上，症候與血管變化不同；不能解釋這組典型近端－遠端脈搏差。",
+          "line_for_editor": 131
+        },
+        "382c8b0a68a5fe3e9b-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（一）醫學（四）Q11｜上肢高血壓＋股動脈弱＋肩胛間雜音｜官方 A」的選項 D，以「D Subaortic stenosis：瓣下 LVOT 阻塞，亦非上下肢壓差首選。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 132 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D Subaortic stenosis：瓣下 LVOT 阻塞，亦非上下肢壓差首選。",
+          "line_for_editor": 132
+        },
+        "e6f3657279f1640ff7-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q11｜Supravalvular AS 加 peripheral PS｜官方 B」的選項 A，以「A Noonan：典型 dysplastic pulmonary valve stenosis、HCM 」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 136 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A Noonan：典型 dysplastic pulmonary valve stenosis、HCM 等更常見；不以 supravalvular AS＋周邊肺動脈狹窄的組合為代表。",
+          "line_for_editor": 136
+        },
+        "c9270a8df1feead785-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q11｜Supravalvular AS 加 peripheral PS｜官方 B」的選項 B，以「B Williams syndrome（正解）：與 elastin 基因區域缺失及血管狹窄表型相關，典型」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 137 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Williams syndrome（正解）：與 elastin 基因區域缺失及血管狹窄表型相關，典型包含 supravalvular AS、peripheral pulmonary stenosis。",
+          "line_for_editor": 137
+        },
+        "aa58e993dbedee0506-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q11｜Supravalvular AS 加 peripheral PS｜官方 B」的選項 C，以「C Turner：較需考慮 coarctation、bicuspid aortic valve。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 138 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Turner：較需考慮 coarctation、bicuspid aortic valve。",
+          "line_for_editor": 138
+        },
+        "17f3a926aa42728a53-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（四）Q11｜Supravalvular AS 加 peripheral PS｜官方 B」的選項 D，以「D CHARGE：可有多種先天心臟病，但不如 Williams 符合這組特徵。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 139 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D CHARGE：可有多種先天心臟病，但不如 Williams 符合這組特徵。",
+          "line_for_editor": 139
+        },
+        "a6ae60477002c65d0f-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（六）Q6｜Vmax 3.5 m/s 的壓差｜官方 D」的選項 D，以「D 50 mmHg（正解）：以簡化 Bernoulli 計算瞬時峰值跨瓣壓差 \\(\\Delta P\\ap」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 148 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D 50 mmHg（正解）：以簡化 Bernoulli 計算瞬時峰值跨瓣壓差 \\(\\Delta P\\approx 4V^2=4(3.5)^2=49\\) mmHg。",
+          "line_for_editor": 148
+        },
+        "2102b36e71e859fc8c-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「111（一）醫學（六）Q6｜Vmax 3.5 m/s 的壓差｜官方 D」建立「破除過度推論： 這是 peak instantaneous gradient 的近似值，不是 mean 」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 150 行所屬的「111（一）醫學（六）Q6｜Vmax 3.5 m/s 的壓差｜官方 D」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "破除過度推論： 這是 peak instantaneous gradient 的近似值，不是 mean gradient，不能看見 49 mmHg 就直接照搬「平均壓差 ≥40 mmHg 的重度 AS」診斷。臨床還需 Doppler 角度、流量、面積、DI 與症狀。",
+          "line_for_editor": 150
+        },
+        "3dd31f0d4131281c33-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（六）Q6｜術前超音波哪項更需暫緩評估？｜官方 C」的選項 A，以「A AV mean gradient 30 mmHg：可能是中等或低流量重度，需要整合判斷；不能只憑這一」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 154 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A AV mean gradient 30 mmHg：可能是中等或低流量重度，需要整合判斷；不能只憑這一個數據說最危險。",
+          "line_for_editor": 154
+        },
+        "e471b28f283e841f59-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（六）Q6｜術前超音波哪項更需暫緩評估？｜官方 C」的選項 C，以「C AVA 0.9 cm²（正解）：落在重度 AS 面積範圍，至少需要進一步確認症狀、流量、梯度與麻醉風」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 156 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C AVA 0.9 cm²（正解）：落在重度 AS 面積範圍，至少需要進一步確認症狀、流量、梯度與麻醉風險，題中最值得先停下評估。",
+          "line_for_editor": 156
+        },
+        "6fb4e710123c419809-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（二）醫學（六）Q6｜術前超音波哪項更需暫緩評估？｜官方 C」的選項 D，以「D MV mean gradient 6 mmHg：受心率與流量影響，尚不足獨立推定最嚴重 MS。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 157 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D MV mean gradient 6 mmHg：受心率與流量影響，尚不足獨立推定最嚴重 MS。",
+          "line_for_editor": 157
+        },
+        "341426b7004bce598f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「114（二）醫學（六）Q6｜術前超音波哪項更需暫緩評估？｜官方 C」建立「臨床邊界： 「暫緩評估」不是只看 AVA 就永久不能手術；急迫度與完整瓣膜分期會改變處理順序。」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 159 行所屬的「114（二）醫學（六）Q6｜術前超音波哪項更需暫緩評估？｜官方 C」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "臨床邊界： 「暫緩評估」不是只看 AVA 就永久不能手術；急迫度與完整瓣膜分期會改變處理順序。",
+          "line_for_editor": 159
+        },
+        "efdd07ee93ef33f402-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（五）Q20｜AVR 適應症何者最不適當？｜官方 D」的選項 B，以「B 中度 AS 合併需要 CABG：同次 AVR 可依手術風險與 Heart Team 評估，並非絕對不」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 164 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B 中度 AS 合併需要 CABG：同次 AVR 可依手術風險與 Heart Team 評估，並非絕對不能。",
+          "line_for_editor": 164
+        },
+        "151ed06a8e9f6f1ef1-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（五）Q20｜AVR 適應症何者最不適當？｜官方 D」的選項 C，以「C 無症狀重度 AS 但 LVEF <50%：可構成介入指徵（須確認非其他主因、整合指南與分期）。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 165 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C 無症狀重度 AS 但 LVEF <50%：可構成介入指徵（須確認非其他主因、整合指南與分期）。",
+          "line_for_editor": 165
+        },
+        "56637d2a7333101e95-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（五）Q20｜AVR 適應症何者最不適當？｜官方 D」的選項 D，以「D（應選）：「只要無症狀重度 AS，為了預防猝死就一律換瓣」是過度概括；當代有特定高風險無症狀族群的介入」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 166 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D（應選）：「只要無症狀重度 AS，為了預防猝死就一律換瓣」是過度概括；當代有特定高風險無症狀族群的介入證據與條件，不能倒讀為每個人都常規 AVR。",
+          "line_for_editor": 166
+        },
+        "023c2dc3e176bbc9b0-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（五）Q23｜AS 和 MS 的經導管技術不是同一回事｜官方 C」的選項 A，以「A：症狀性、確證重度 AS（AVA 約 <1 cm²）需評估置換，符合主要脈絡。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 170 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A：症狀性、確證重度 AS（AVA 約 <1 cm²）需評估置換，符合主要脈絡。",
+          "line_for_editor": 170
+        },
+        "80a694201039acfe06-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（五）Q23｜AS 和 MS 的經導管技術不是同一回事｜官方 C」的選項 B，以「B：顯著 MS 若不適合或氣球治療失敗，依解剖及病況考慮手術，是否適用要看 MR、鈣化等。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 171 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B：顯著 MS 若不適合或氣球治療失敗，依解剖及病況考慮手術，是否適用要看 MR、鈣化等。",
+          "line_for_editor": 171
+        },
+        "ef0b60a0c9bf8de7d3-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（五）Q23｜AS 和 MS 的經導管技術不是同一回事｜官方 C」的選項 C，以「C（應選）：「原生 AS、MS 都已有同樣成熟普遍可用的經導管瓣膜置換技術」不成立。TAVI 已成熟；原」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 172 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C（應選）：「原生 AS、MS 都已有同樣成熟普遍可用的經導管瓣膜置換技術」不成立。TAVI 已成熟；原生 rheumatic MS 常是 balloon commissurotomy／手術策略，不可把 TAVI 經驗直接套到 TMVR。",
+          "line_for_editor": 172
+        },
+        "148c681e0613b35d48-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（五）Q23｜AS 和 MS 的經導管技術不是同一回事｜官方 C」的選項 D，以「D：AS 與 MS 自然病程／猝死風險差異是考題的典型比較，但個人進展速度不只由診斷名稱決定。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 173 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D：AS 與 MS 自然病程／猝死風險差異是考題的典型比較，但個人進展速度不只由診斷名稱決定。",
+          "line_for_editor": 173
+        },
+        "eeddbf58ae799951a6-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q26｜機械瓣、組織瓣與免疫抑制｜官方 D」的選項 A，以「A：機械瓣通常需要終生 VKA（例如 warfarin），個別 INR 目標取決於瓣位與風險。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 177 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A：機械瓣通常需要終生 VKA（例如 warfarin），個別 INR 目標取決於瓣位與風險。",
+          "line_for_editor": 177
+        },
+        "ae7f49adf474d482ab-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q26｜機械瓣、組織瓣與免疫抑制｜官方 D」的選項 B，以「B：機械瓣通常較耐久，但帶來長期抗凝與出血／栓塞權衡。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 178 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B：機械瓣通常較耐久，但帶來長期抗凝與出血／栓塞權衡。",
+          "line_for_editor": 178
+        },
+        "d6ecf953990ab80bcf-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q26｜機械瓣、組織瓣與免疫抑制｜官方 D」的選項 C，以「C：生物瓣術後早期抗凝依瓣位、節律、其他適應症與指引安排，舊題中「術後三個月 warfarin」不可讀成」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 179 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C：生物瓣術後早期抗凝依瓣位、節律、其他適應症與指引安排，舊題中「術後三個月 warfarin」不可讀成 2026 年所有生物瓣一律強制給藥。",
+          "line_for_editor": 179
+        },
+        "fa5204c73ec281d5bf-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（一）醫學（五）Q26｜機械瓣、組織瓣與免疫抑制｜官方 D」的選項 D，以「D（應選）：牛／豬來源的處理後 bioprosthesis 不需要因異種來源而終生服用免疫抑制劑。異種瓣」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 180 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D（應選）：牛／豬來源的處理後 bioprosthesis 不需要因異種來源而終生服用免疫抑制劑。異種瓣組織不等於活體器官移植。",
+          "line_for_editor": 180
+        },
+        "0926de6b95ddca8169-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（五）Q23｜Ross、年齡與 DOAC｜官方 C」的選項 A，以「A：較年長時常偏好生物瓣，但切點並非普遍固定的「65／70 歲」，還應考慮壽命、再介入與抗凝意願。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 184 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A：較年長時常偏好生物瓣，但切點並非普遍固定的「65／70 歲」，還應考慮壽命、再介入與抗凝意願。",
+          "line_for_editor": 184
+        },
+        "83058bded57c0fafde-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（五）Q23｜Ross、年齡與 DOAC｜官方 C」的選項 B，以「B：機械瓣的 warfarin 療效與安全監測常以 PT/INR 追蹤。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 185 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B：機械瓣的 warfarin 療效與安全監測常以 PT/INR 追蹤。",
+          "line_for_editor": 185
+        },
+        "627eb51efd3330cf7a-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（五）Q23｜Ross、年齡與 DOAC｜官方 C」的選項 C，以「C（應選）：Ross 是以自身 pulmonary autograft 取代 aortic valve，」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 186 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C（應選）：Ross 是以自身 pulmonary autograft 取代 aortic valve，適合嚴選較年輕病人與有經驗中心，不是特別適合高齡者。",
+          "line_for_editor": 186
+        },
+        "a325f44430ee110b2e-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（五）Q23｜Ross、年齡與 DOAC｜官方 C」的選項 D，以「D：機械瓣不用 dabigatran／rivaroxaban 代替 VKA；不要從「DOAC 在非瓣膜性」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 187 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D：機械瓣不用 dabigatran／rivaroxaban 代替 VKA；不要從「DOAC 在非瓣膜性 AF 很常用」直接推論可用在機械瓣。",
+          "line_for_editor": 187
+        },
+        "2115f9a6dce8f07e66-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（二）醫學（五）Q24｜八個月大重度 AS，最不適合的瓣膜策略｜官方 C」的選項 A，以「A Balloon valvuloplasty：可為嬰兒先天性瓣膜狹窄的選定處置。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 191 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A Balloon valvuloplasty：可為嬰兒先天性瓣膜狹窄的選定處置。",
+          "line_for_editor": 191
+        },
+        "7cc3a678faed4ecd19-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（二）醫學（五）Q24｜八個月大重度 AS，最不適合的瓣膜策略｜官方 C」的選項 B，以「B Surgical valvotomy：可在特定解剖或導管不合適時考慮。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 192 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Surgical valvotomy：可在特定解剖或導管不合適時考慮。",
+          "line_for_editor": 192
+        },
+        "c026d31043665d646e-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（二）醫學（五）Q24｜八個月大重度 AS，最不適合的瓣膜策略｜官方 C」的選項 C，以「C Mechanical valve replacement（最不適當）：嬰兒瓣環大小、生長、抗凝與再介」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 193 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Mechanical valve replacement（最不適當）：嬰兒瓣環大小、生長、抗凝與再介入風險顯著，是本題最差的常規選擇。",
+          "line_for_editor": 193
+        },
+        "82f8ab4cb325464be0-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（二）醫學（五）Q24｜八個月大重度 AS，最不適合的瓣膜策略｜官方 C」的選項 D，以「D Ross procedure：對部分兒童是外科替代選擇，但不代表每個嬰兒都該直接 Ross；仍需病變」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 194 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D Ross procedure：對部分兒童是外科替代選擇，但不代表每個嬰兒都該直接 Ross；仍需病變形態與中心經驗。",
+          "line_for_editor": 194
+        },
+        "a7c8033fcdc71a5a20-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（五）Q19｜MR 是收縮還是舒張？｜官方 B」的選項 A，以「A：myxomatous、風濕性與 IE 都可造成 MR。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 198 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A：myxomatous、風濕性與 IE 都可造成 MR。",
+          "line_for_editor": 198
+        },
+        "8029e8ce295964967c-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（五）Q19｜MR 是收縮還是舒張？｜官方 B」的選項 B，以「B（應選）：把 MR 稱為 pan-diastolic murmur；典型 MR 是 holosysto」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 199 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B（應選）：把 MR 稱為 pan-diastolic murmur；典型 MR 是 holosystolic／pansystolic，血液在 LV 收縮時回到 LA。",
+          "line_for_editor": 199
+        },
+        "f041bb426320a56c36-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（五）Q19｜MR 是收縮還是舒張？｜官方 B」的選項 C，以「C：慢性 MR 容量負荷可逐步重塑 LV、LA，症狀可能延後。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 200 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C：慢性 MR 容量負荷可逐步重塑 LV、LA，症狀可能延後。",
+          "line_for_editor": 200
+        },
+        "425ae32b47a0786e5a-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（二）醫學（五）Q19｜MR 是收縮還是舒張？｜官方 B」的選項 D，以「D：LA 擴大與肺充血／水腫是合理的慢性或失代償後果，視嚴重度與時間而異。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 201 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D：LA 擴大與肺充血／水腫是合理的慢性或失代償後果，視嚴重度與時間而異。",
+          "line_for_editor": 201
+        },
+        "3a88762bdee94381ca-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（一）醫學（五）Q20｜AMI 的機械性併發症｜官方 A」的選項 A，以「A（正解：不是典型）：急性 AR 並非 MI 最典型的結構性破裂路徑；它應讓你重新考慮 IE、升主動脈剝」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 205 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A（正解：不是典型）：急性 AR 並非 MI 最典型的結構性破裂路徑；它應讓你重新考慮 IE、升主動脈剝離等病因。",
+          "line_for_editor": 205
+        },
+        "fdd261d982d7bdb85b-1": {
+          "role": "decision",
+          "reader_gain": "針對「114（一）醫學（五）Q20｜AMI 的機械性併發症｜官方 A」的選項 D，以「D：LV free-wall rupture → 心包積血、tamponade／猝死。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 208 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D：LV free-wall rupture → 心包積血、tamponade／猝死。",
+          "line_for_editor": 208
+        },
+        "8d6d0355cc045905ab-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（五）Q24｜最容易使主動脈瓣葉脫垂的 VSD｜官方 C」的選項 A，以「A 小 perimembranous：有相關風險，但不是本題最典型組合。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 212 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A 小 perimembranous：有相關風險，但不是本題最典型組合。",
+          "line_for_editor": 212
+        },
+        "85b1159ee31aa979dd-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（五）Q24｜最容易使主動脈瓣葉脫垂的 VSD｜官方 C」的選項 B，以「B 大 perimembranous：也可能伴主動脈瓣改變，缺損大小非最關鍵定位。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 213 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B 大 perimembranous：也可能伴主動脈瓣改變，缺損大小非最關鍵定位。",
+          "line_for_editor": 213
+        },
+        "bdbc9b845d65a1150e-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（五）Q24｜最容易使主動脈瓣葉脫垂的 VSD｜官方 C」的選項 C，以「C Subarterial／doubly committed VSD（正解）：缺少對主動脈瓣葉的正常支持」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 214 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Subarterial／doubly committed VSD（正解）：缺少對主動脈瓣葉的正常支持，易發生 aortic cusp prolapse、進而 AR。",
+          "line_for_editor": 214
+        },
+        "b7f0ccc55f4acacc4a-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（五）Q24｜最容易使主動脈瓣葉脫垂的 VSD｜官方 C」的選項 D，以「D Muscular VSD：瓣葉通常離缺損位置更遠，較不具這個特異機轉。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 215 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D Muscular VSD：瓣葉通常離缺損位置更遠，較不具這個特異機轉。",
+          "line_for_editor": 215
+        },
+        "4e14e90aa4048784f6-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（五）Q20｜心房黏液瘤的病灶在哪裡？｜官方 C」的選項 B，以「B：即使組織學良性，已造成 embolic event／阻塞仍要評估手術切除，不只是抗凝觀察。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 222 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B：即使組織學良性，已造成 embolic event／阻塞仍要評估手術切除，不只是抗凝觀察。",
+          "line_for_editor": 222
+        },
+        "65fa875eeadbb9d237-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（五）Q20｜心房黏液瘤的病灶在哪裡？｜官方 C」的選項 C，以「C（正解）：多數 cardiac myxoma 位於左心房、常附著心房中隔 fossa ovalis 區」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 223 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C（正解）：多數 cardiac myxoma 位於左心房、常附著心房中隔 fossa ovalis 區域。",
+          "line_for_editor": 223
+        },
+        "5eb4da44506fd95377-1": {
+          "role": "decision",
+          "reader_gain": "針對「113（一）醫學（五）Q20｜心房黏液瘤的病灶在哪裡？｜官方 C」的選項 D，以「D：首選重要工具是超音波；CT／MRI 可補解剖，不是單獨唯一「標準」工具。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 224 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D：首選重要工具是超音波；CT／MRI 可補解剖，不是單獨唯一「標準」工具。",
+          "line_for_editor": 224
+        },
+        "9d289fdb32bbb88116-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "在「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」建立「此題必須依官方更正計分：B、D、BD 均給分，不能沿用原始標準答案只寫 D。」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 228 行所屬的「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "此題必須依官方更正計分：B、D、BD 均給分，不能沿用原始標準答案只寫 D。",
+          "line_for_editor": 228
+        },
+        "8a3021cd1d22cf8103-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」的選項 A，以「A 外科 ASD 封堵（不適當）：已固定嚴重肺血管病與右向左／雙向分流時，強行關閉缺損可使右心失去減壓出」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 230 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A 外科 ASD 封堵（不適當）：已固定嚴重肺血管病與右向左／雙向分流時，強行關閉缺損可使右心失去減壓出口、導致嚴重惡化。",
+          "line_for_editor": 230
+        },
+        "683cb05426e9adcbb8-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」的選項 B，以「B Endocarditis prophylaxis（更正後給分）：未修補的發紺型先天性心臟病符合特定高」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 231 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Endocarditis prophylaxis（更正後給分）：未修補的發紺型先天性心臟病符合特定高風險牙科處置 IE 預防性抗生素的適用族群；不是每次日常診療都常規給藥。",
+          "line_for_editor": 231
+        },
+        "84137d92e9bf1c403c-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」的選項 C，以「C 導管 ASD 封堵（不適當）：同樣不能因為導管創傷較小就忽略不可逆 PVR 與右心血流風險。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 232 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C 導管 ASD 封堵（不適當）：同樣不能因為導管創傷較小就忽略不可逆 PVR 與右心血流風險。",
+          "line_for_editor": 232
+        },
+        "a7feeee76e74d8d0db-1": {
+          "role": "decision",
+          "reader_gain": "針對「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」的選項 D，以「D 居家氧氣（更正後給分）：在個別有低氧、症狀和可證實反應的患者可評估支持性氧療；但 Eisenmeng」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 233 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D 居家氧氣（更正後給分）：在個別有低氧、症狀和可證實反應的患者可評估支持性氧療；但 Eisenmenger 的低氧核心是分流與固定肺血管病變，長期氧療不保證改善存活或取代 PAH 專科治療，也不是所有病人一律處方。",
+          "line_for_editor": 233
+        },
+        "8492589d743ed94a8d-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "在「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」建立「這一題是反面教材：舊標準答案、考選部正式更正、當代臨床指引，是三個不同層級的問題。任何自動題庫若忽略官方」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 235 行所屬的「115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這一題是反面教材：舊標準答案、考選部正式更正、當代臨床指引，是三個不同層級的問題。任何自動題庫若忽略官方更正，都會把原本能得分的 B 判錯。",
+          "line_for_editor": 235
+        },
+        "228231d8539027e49c-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（四）Q30｜六個月嬰兒、to-and-fro murmur 與胸片｜官方 B」的選項 A，以「A TOF：典型 RVOT 阻塞引起射出聲，但不典型同時有明顯的肺動脈瓣舒張逆流聲。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 241 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A TOF：典型 RVOT 阻塞引起射出聲，但不典型同時有明顯的肺動脈瓣舒張逆流聲。",
+          "line_for_editor": 241
+        },
+        "1ca833d52b889557d8-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（四）Q30｜六個月嬰兒、to-and-fro murmur 與胸片｜官方 B」的選項 B，以「B Absent pulmonary valve syndrome with VSD（正解）：瓣膜嚴重發」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 242 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Absent pulmonary valve syndrome with VSD（正解）：瓣膜嚴重發育不全可使收縮期肺流出道狹窄與舒張期 PR 同時存在，出現 to-and-fro 雜音；肺動脈顯著擴張可壓迫氣管支氣管、加重呼吸症狀。",
+          "line_for_editor": 242
+        },
+        "adc475b50cb6d46367-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（四）Q30｜六個月嬰兒、to-and-fro murmur 與胸片｜官方 B」的選項 C，以「C Tricuspid atresia：核心是右房－右室入口缺乏連通，並不能直接解釋本題雙期瓣膜聲。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 243 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Tricuspid atresia：核心是右房－右室入口缺乏連通，並不能直接解釋本題雙期瓣膜聲。",
+          "line_for_editor": 243
+        },
+        "be2839ee4c44baa8c0-1": {
+          "role": "decision",
+          "reader_gain": "針對「111（二）醫學（四）Q30｜六個月嬰兒、to-and-fro murmur 與胸片｜官方 B」的選項 D，以「D Obstructed TAPVR：可有嚴重肺靜脈充血與呼吸窘迫，卻不是造成典型肺動脈瓣狹窄＋逆流聲的」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 244 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D Obstructed TAPVR：可有嚴重肺靜脈充血與呼吸窘迫，卻不是造成典型肺動脈瓣狹窄＋逆流聲的首選。",
+          "line_for_editor": 244
+        },
+        "b24752b3e115ffc588-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "在「111（二）醫學（四）Q30｜六個月嬰兒、to-and-fro murmur 與胸片｜官方 B」建立「原圖驗收狀態：待完成。 開啟考選部 111 年第二次醫學（四）原卷，PDF 印刷頁段落 Q30，跨第 6」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 246 行所屬的「111（二）醫學（四）Q30｜六個月嬰兒、to-and-fro murmur 與胸片｜官方 B」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原圖驗收狀態：待完成。 開啟考選部 111 年第二次醫學（四）原卷，PDF 印刷頁段落 Q30，跨第 6–7 PDF 頁。原卷已定位，瀏覽器截圖服務對該頁暫時回報 cache miss；本輪沒有獨立看見胸片肺動脈輪廓、氣道壓迫徵象等像素證據。上面的診斷機轉由題幹、選項與官方答案核對，不冒稱",
+          "line_for_editor": 246
+        },
+        "8249f22ef00512b68f-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q7｜ECG 附圖的先天性心臟病｜官方 C」的選項 A，以「A ASD：右心容量負荷可有 ECG 右軸／不完全 RBBB 等。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 A 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 250 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A ASD：右心容量負荷可有 ECG 右軸／不完全 RBBB 等。",
+          "line_for_editor": 250
+        },
+        "0acd4cb772a2a04835-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q7｜ECG 附圖的先天性心臟病｜官方 C」的選項 B，以「B Pulmonary valve stenosis：右室壓力負荷可使 ECG 呈 RVH。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 B 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 251 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B Pulmonary valve stenosis：右室壓力負荷可使 ECG 呈 RVH。",
+          "line_for_editor": 251
+        },
+        "52dd75a3ef92571d43-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q7｜ECG 附圖的先天性心臟病｜官方 C」的選項 C，以「C Coarctation of aorta（官方「最不可能」）：主要增加狹窄上游 LV 後負荷，不符合」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 C 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 252 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C Coarctation of aorta（官方「最不可能」）：主要增加狹窄上游 LV 後負荷，不符合題目其餘答案所提示的右心負荷分布。",
+          "line_for_editor": 252
+        },
+        "9620dcf433d7228b6d-1": {
+          "role": "decision",
+          "reader_gain": "針對「112（一）醫學（四）Q7｜ECG 附圖的先天性心臟病｜官方 C」的選項 D，以「D TOF：RVOT 阻塞與右室肥厚可有相應 ECG 改變。」核實它成立或不成立的血流條件。",
+          "nonredundancy_reason": "選項 D 與本題其他選項的機制、疾病部位或適應症不同，不能只用正解字母取代這一條辨識理由；第 253 行對應獨立鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D TOF：RVOT 阻塞與右室肥厚可有相應 ECG 改變。",
+          "line_for_editor": 253
+        },
+        "0f71db5637f34911cb-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "在「112（一）醫學（四）Q7｜ECG 附圖的先天性心臟病｜官方 C」建立「原圖驗收狀態：待完成。 開啟考選部 112 年第一次醫學（四）原卷，第 2 PDF 頁 Q7。ECG 圖」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 255 行所屬的「112（一）醫學（四）Q7｜ECG 附圖的先天性心臟病｜官方 C」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原圖驗收狀態：待完成。 開啟考選部 112 年第一次醫學（四）原卷，第 2 PDF 頁 Q7。ECG 圖像的導程、電軸、電位尚未完成直接視覺驗證；因此這段只是根據官方選項 C 和解剖的條件性解釋，不是已核對的 ECG 波形報告，不能用於訓練「看圖即判」直到原圖 QA 完成。",
+          "line_for_editor": 255
+        },
+        "69dd532e3182d87257-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「最後驗收：考題條件改一個，是否還會作答？」建立「壓差數字改變： 原題 AS Vmax=3.5 m/s 算出 49 mmHg 瞬時峰值壓差，不等於 mea」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 259 行所屬的「最後驗收：考題條件改一個，是否還會作答？」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "壓差數字改變： 原題 AS Vmax=3.5 m/s 算出 49 mmHg 瞬時峰值壓差，不等於 mean gradient 49，也不等於自動符合重度 AS。若 Vmax 換成 4.0 m/s，瞬時峰值變 64 mmHg，仍需對照其他 Doppler 指標。",
+          "line_for_editor": 259
+        },
+        "c3a152b7ea67405392-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「最後驗收：考題條件改一個，是否還會作答？」建立「同樣發紺改變通道： TOF hypoxic spell 是 RVOT 動態阻塞＋右向左分流，策略往保留 」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 261 行所屬的「最後驗收：考題條件改一個，是否還會作答？」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣發紺改變通道： TOF hypoxic spell 是 RVOT 動態阻塞＋右向左分流，策略往保留 preload／提高 SVR；obstructed TAPVR 則是肺靜脈端阻塞，打開 PDA 不能解決真正瓶頸。",
+          "line_for_editor": 261
+        },
+        "613a28c3b9fe1dda6f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "在「最後驗收：考題條件改一個，是否還會作答？」建立「同樣心雜音改變心室容積： ASD 的收縮聲經肺動脈瓣流量增加；VSD 小孔的響亮全收縮聲可以是高壓差；M」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 263 行所屬的「最後驗收：考題條件改一個，是否還會作答？」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣心雜音改變心室容積： ASD 的收縮聲經肺動脈瓣流量增加；VSD 小孔的響亮全收縮聲可以是高壓差；MVP 站立時 click 提前；HCM 站立時動態 LVOTO 常加劇——不是一條「血越多，聲音越大」的通則。",
+          "line_for_editor": 263
+        },
+        "954093e29c631d15ea-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "在「最後驗收：考題條件改一個，是否還會作答？」建立「同樣是國考答案，官方更正改變計分： 115（二）醫學（五）Q9 是 B／D 均可，舊答案 D 不能覆蓋正」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 265 行所屬的「最後驗收：考題條件改一個，是否還會作答？」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣是國考答案，官方更正改變計分： 115（二）醫學（五）Q9 是 B／D 均可，舊答案 D 不能覆蓋正式更正。與來源中的附圖核讀狀態一樣，考試的資訊完整度本身也是一道需要檢查的題目。",
+          "line_for_editor": 265
+        },
+        "1514049dd859e7bf69-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "在「最後驗收：考題條件改一個，是否還會作答？」建立「返回：心音／結構性心臟病主教材與各卷官方原始題、標準及更正答案。」的必要前提、來源或改判邊界。",
+          "nonredundancy_reason": "此段回答第 267 行所屬的「最後驗收：考題條件改一個，是否還會作答？」之特定推論缺口，未出現於其他選項的逐項比較中，刪除會失去理解階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "返回：心音／結構性心臟病主教材與各卷官方原始題、標準及更正答案。",
+          "line_for_editor": 267
+        }
+      }
+    },
     "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md": {
       "content_blob": "f69372310fa90c204ee854aff2e2b1056e2ed987",
       "reviewer_context": "independent_ai_pass",
