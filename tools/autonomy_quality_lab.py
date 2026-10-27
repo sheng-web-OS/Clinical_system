@@ -76,6 +76,10 @@ def prepare_packets(root, spec, out):
                           "output_contract": "Locate original actionable findings with verbatim evidence; preserve supported passages. Do not claim original figure or medical verification unless actually performed."}
                 packets.append((f"{ident}-{trial}-{arm}.json", packet))
     out = Path(out)
+    real_out, real_root = out.resolve(), Path(root).resolve()
+    require(not real_out.is_relative_to(real_root)
+            or real_out.is_relative_to(real_root / "experiments/autonomy-eval"),
+            "packet output must stay outside repo or under private experiments/autonomy-eval")
     require(not out.exists(), "output already exists: immutable packet set, do not overwrite")
     out.mkdir(parents=True)
     fingerprints = {}
