@@ -46,6 +46,6 @@
 
 ## 6. 圖表的身分
 
-[主文圖 1](lessons/2026-10-28-lab-morning-sheet.md#lab-three-clocks) 是本站原創的「分鐘／小時／天」時間分層示意圖，**不是** KDIGO AKI staging Table、UKKA hyperkalaemia algorithm、AJKD 原始 Figure 或臨床療效經驗研究。本圖幫助分辨三種決策時限，既不是 validated clinical rule，也不能取代任一份指引的臨床決策條件。
+[主文圖 1](lessons/2026-10-28-lab-morning-sheet.md#lab-three-clocks) 是本站原創的**合成病例證據比較圖**：以 06:00 溶血 K 6.3 → 07:15 無溶血 K 4.9、10/27 Cr 1.16 → 10/28 重抽 Cr 1.69，以及 240 mL／8 h 尿量紀錄待確認，呈現「分鐘／小時／天」三條**並行**決策線。箭頭只表示**採檢時間**的比較，**不是**治療造成 K 下降、AKI 病因已確定或病人實際尿量可靠的證據。此圖不是 KDIGO AKI staging Table、UKKA hyperkalaemia algorithm、AJKD 原始 Figure 或 validated clinical rule；不能取代原指引的臨床條件、原圖註腳及院內處置規範。
 
 若要查核臨床 cutoff、ECG 分支或尿量分級，應返回各指引原始圖表與其 caption／footnotes。
