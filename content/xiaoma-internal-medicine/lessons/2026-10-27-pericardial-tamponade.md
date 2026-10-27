@@ -31,18 +31,33 @@
 心輸出量由每搏輸出和心率共同決定。Tamponade 最初的問題常是**舒張充盈容量不足**，不一定是心肌本身不能收縮；維持 EF 並不能保證 stroke volume 足夠。為補償每搏輸出下降，心跳加快、周邊血管收縮，因此**低血壓可以是較晚期才出現的訊號**。同樣地，ScvO₂ 下降反映氧輸送與消耗關係失衡，不能當成心輸出量的直接量測，也不是 sepsis 專一指標。
 
 <figure id="tamponade-mechanism">
-<svg viewBox="0 0 800 320" role="img" aria-label="原創因果圖：心包外壓上升，使有效跨壁充盈壓下降，導致舒張充盈與每搏輸出減少；CVP 可同時升高。" style="width:100%;height:auto;max-width:800px">
-<rect x="8" y="22" width="225" height="70" rx="10" fill="#ebf2fb" stroke="#315f88"/><text x="120" y="48" font-size="18" text-anchor="middle" fill="#18344d">心包液／血塊累積</text><text x="120" y="73" font-size="16" text-anchor="middle" fill="#18344d">心包外壓 ↑</text>
-<rect x="287" y="22" width="224" height="70" rx="10" fill="#eff5e9" stroke="#456b38"/><text x="399" y="49" font-size="18" text-anchor="middle" fill="#263f20">有效跨壁充盈壓 ↓</text><text x="399" y="72" font-size="15" text-anchor="middle" fill="#263f20">不是「CVP = 前負荷」</text>
-<rect x="568" y="22" width="224" height="70" rx="10" fill="#fdf0ed" stroke="#a44c3f"/><text x="680" y="48" font-size="18" text-anchor="middle" fill="#652e27">舒張充盈量 ↓</text><text x="680" y="72" font-size="16" text-anchor="middle" fill="#652e27">每搏輸出 ↓</text>
-<path d="M233 57 H280 M511 57 H562" fill="none" stroke="currentColor" stroke-width="2"/><path d="M271 51 l9 6 -9 6 M553 51 l9 6 -9 6" fill="currentColor"/>
-<path d="M120 94 V147 H400 V181" fill="none" stroke="#315f88" stroke-width="2"/><path d="M394 172 l6 9 6 -9" fill="#315f88"/>
-<rect x="287" y="182" width="224" height="66" rx="10" fill="#ebf2fb" stroke="#315f88"/><text x="399" y="209" font-size="18" text-anchor="middle" fill="#18344d">右房壓／CVP 可 ↑</text><text x="399" y="233" font-size="15" text-anchor="middle" fill="#18344d">卻不保證有效充盈</text>
-<path d="M680 94 V181" fill="none" stroke="#a44c3f" stroke-width="2"/><path d="M674 172 l6 9 6 -9" fill="#a44c3f"/>
-<rect x="568" y="182" width="224" height="66" rx="10" fill="#fdf0ed" stroke="#a44c3f"/><text x="680" y="209" font-size="18" text-anchor="middle" fill="#652e27">前向血流／DO₂ ↓</text><text x="680" y="233" font-size="15" text-anchor="middle" fill="#652e27">器官低灌流風險 ↑</text>
-<text x="400" y="292" text-anchor="middle" fill="currentColor" font-size="15">兩條現象可並存；並非 CVP 升高直接造成所有低血壓。</text>
+<svg viewBox="0 0 360 500" role="img" aria-label="原創手機可讀的雙分支因果圖：心包壓升高，一條分支是有效跨壁充盈下降、每搏輸出下降及低灌流；平行的另一分支是右房壓和 CVP 可能升高，兩者不能混為因果。由上向下閱讀。" style="width:100%;max-width:390px;height:auto;display:block;margin:0 auto">
+<rect x="18" y="10" width="324" height="72" rx="12" fill="#e6eef8" stroke="#32618a" stroke-width="2"/>
+<text x="180" y="39" font-size="18" text-anchor="middle" fill="#1b3851">心包液／血塊使外壓升高</text>
+<text x="180" y="63" font-size="16" text-anchor="middle" fill="#1b3851">心包伸展儲備被耗盡</text>
+<path d="M180 82 V103 M180 103 H95 V123 M180 103 H269 V123" fill="none" stroke="#49677f" stroke-width="2"/>
+<path d="M89 115 L95 123 L101 115 M263 115 L269 123 L275 115" fill="none" stroke="#49677f" stroke-width="2"/>
+<rect x="10" y="125" width="171" height="98" rx="10" fill="#eff5e9" stroke="#456b38" stroke-width="2"/>
+<text x="95" y="154" font-size="17" text-anchor="middle" fill="#263f20">有效跨壁壓 ↓</text>
+<text x="95" y="180" font-size="17" text-anchor="middle" fill="#263f20">舒張充盈 ↓</text>
+<text x="95" y="204" font-size="14" text-anchor="middle" fill="#263f20">真正的擴張驅動力</text>
+<rect x="189" y="125" width="161" height="98" rx="10" fill="#e6eef8" stroke="#32618a" stroke-width="2"/>
+<text x="269" y="154" font-size="17" text-anchor="middle" fill="#1b3851">CVP 可 ↑</text>
+<text x="269" y="180" font-size="15" text-anchor="middle" fill="#1b3851">≠ 有效前負荷</text>
+<text x="269" y="204" font-size="14" text-anchor="middle" fill="#1b3851">平行結果，非主鏈</text>
+<path d="M95 223 V254 H180 V267" fill="none" stroke="#456b38" stroke-width="2"/>
+<path d="M174 259 L180 267 L186 259" fill="none" stroke="#456b38" stroke-width="2"/>
+<rect x="18" y="270" width="324" height="76" rx="12" fill="#fbeeea" stroke="#ad5140" stroke-width="2"/>
+<text x="180" y="300" font-size="18" text-anchor="middle" fill="#6a3028">每搏輸出 Stroke volume ↓</text>
+<text x="180" y="325" font-size="16" text-anchor="middle" fill="#6a3028">心跳加快只能暫時代償</text>
+<path d="M180 346 V373" fill="none" stroke="#ad5140" stroke-width="2"/>
+<path d="M174 365 L180 373 L186 365" fill="none" stroke="#ad5140" stroke-width="2"/>
+<rect x="18" y="376" width="324" height="76" rx="12" fill="#fbeeea" stroke="#ad5140" stroke-width="2"/>
+<text x="180" y="405" font-size="18" text-anchor="middle" fill="#6a3028">前向血流／氧輸送 ↓</text>
+<text x="180" y="432" font-size="16" text-anchor="middle" fill="#6a3028">器官低灌流風險 ↑</text>
+<text x="180" y="481" font-size="14" text-anchor="middle" fill="currentColor">兩個分支可以同時存在，不能只讀 CVP。</text>
 </svg>
-<figcaption>原創生理示意，依 IBCC 2024 physiology 與 ESC 2025 §11.8 重建；箭頭表示可能的機轉，不是患者實際連續血流量測。低血容量或局限性血塊可能使 CVP 表現不同。[對照原始來源](../pericardial-tamponade-sources.md)。</figcaption>
+<figcaption>原創生理示意，依 IBCC 2024 physiology 與 ESC 2025 §11.8 重建。左側分支才連到每搏輸出下降；右側的 CVP 升高是可能同時出現的平行訊號，不是造成低血壓的必要因果步驟。每一個數值仍需依血容量、呼吸及局部心包壓迫情境解讀。[對照原始來源](../pericardial-tamponade-sources.md)。</figcaption>
 </figure>
 
 積液量為何不是唯一標準？心包壓力—容積曲線有較平坦的適應段，也有接近極限時陡升的一段。**急性少量出血可能迅速造成壓迫；緩慢形成的較大量積液卻可能暫時沒有休克。** 引流少量積液也可能解除陡升區的壓力，不能用「抽了幾 mL」當作唯一療效指標。這個比較針對速度和心包順應性，不能把數字畫成每個病人都相同的閾值。
@@ -51,7 +66,7 @@
 
 Tamponade 使心包內可供兩心室共享的擴張空間變小。自發吸氣改變胸腔壓與兩側回心血流，右室充盈需求增加，卻擠在被限制的總容量裡；室間隔與肺循環充盈的變化一起使左室暫時可輸出的血量下降。這稱為**增強的 ventricular interdependence（心室相互依賴）**。
 
-臨床的 **pulsus paradoxus** 指自發吸氣時收縮壓下降超過約 **10 mmHg**（不同來源對邊界可用 ≥10 mmHg）。「paradoxus」不是脈搏真的消失的必要條件，而是呼吸造成異常擴大的脈壓變化。可以用動脈波形或緩慢放氣的血壓袖帶對照吸氣與呼氣；但阻塞性肺病、嚴重低血容量等也可能出現，機械通氣時不宜直接套用相同直覺。此徵象是**支持生理推論**，不是延遲心超或引流的理由。
+臨床的 **pulsus paradoxus** 指自發吸氣時收縮壓下降超過約 **10 mmHg**（不同來源對邊界可用 ≥10 mmHg）。「paradoxus」不是脈搏真的消失的必要條件，而是吸氣時收縮壓下降的幅度異常增加；這裡量的是收縮壓隨呼吸的變化，不是收縮壓與舒張壓之差的「脈壓」。可以用動脈波形或緩慢放氣的血壓袖帶對照吸氣與呼氣；但阻塞性肺病、嚴重低血容量等也可能出現，機械通氣時不宜直接套用相同直覺。此徵象是**支持生理推論**，不是延遲心超或引流的理由。
 
 **Beck triad（低血壓、頸靜脈怒張、心音低沉）**是重要的傳統提示，尤其對急性出血性 tamponade；在亞急性／低壓填塞中三者常不齊全。ECG 的低電壓或 electrical alternans 也可提供線索，卻不能確認或排除。若要求先湊齊 triad 才做床邊心超，便把典型表現錯當成診斷必要條件。
 
@@ -69,7 +84,7 @@ Tamponade 使心包內可供兩心室共享的擴張空間變小。自發吸氣�
 
 這些不能切割成五個互相獨立的「陽性項目」。RA/RV collapse 提示外壓何時壓過腔內壓；IVC 提供靜脈端結果；Doppler 將兩心室的呼吸耦合呈現出來。讀者應把**同一個受限充盈模型**與血壓、乳酸、皮膚灌流、意識、尿量放在一起，並保留肺栓塞、嚴重右心衰竭、低血容量和混合型休克等競爭解釋。
 
-[閱讀 ESC 2025 Table 17：原始超音波徵象與敏感／特異性範圍](https://academic.oup.com/eurheartj/article/46/40/3952/8234483)；[觀看 ACC 2025 Figure 10 的原始心超圖及圖說](https://www.jacc.org/doi/10.1016/j.jacc.2025.05.023)。兩組來源的 Doppler 門檻寫法不完全相同，**不是本文自擇一個數值宣稱唯一正解**。原像素不重製；來源和圖像使用界線另見[來源頁](../pericardial-tamponade-sources.md)。
+[閱讀 ESC 2025 Table 17：原始超音波徵象與敏感／特異性範圍](https://academic.oup.com/eurheartj/article/46/40/3952/8234483)；[觀看 ACC 2025 Figure 10 的原始心超圖及圖說](https://www.jacc.org/doi/10.1016/j.jacc.2025.05.023)。兩組來源的 Doppler 門檻寫法不完全相同，**不是本文自擇一個數值宣稱唯一正解**。若要自行核對原始動態影像與圖說，可由[來源頁](../pericardial-tamponade-sources.md)開啟相應圖表；靜態判讀不能取代床邊整體血流動力學評估。
 
 ## 五｜三個會推翻直覺的臨床變體
 
