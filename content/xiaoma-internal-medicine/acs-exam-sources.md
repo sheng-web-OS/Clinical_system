@@ -27,6 +27,13 @@
 - [2022 AHA LV thrombus 科學聲明（ACC clinical summary）](https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/09/23/13/56/Management-of-Patients-at-Risk)：post-MI 影像已確診 LV thrombus，通常考慮約三個月 OAC，依影像、出血與合併抗板策略調整；原卷寫可考慮 3–6 個月，不能機械變成每一位 DES 病人的固定處方。
 - **重要邊界：**Q11 在四選項中 B 最適當，不表示選項只有硝酸甘油就足夠，仍須緊急再灌流；Q13 是定性缺血演變模型，不能將 perfusion、mechanical dysfunction、ECG、cTn 的觀察時間誤寫為每個病例必然等秒數出現。
 
+## 2026 年心肌梗塞新定義的原始圖像
+
+- **Figure 2 — Diagnostic pathway for possible primary myocardial infarction**。來源：*Fifth Universal Definition of Myocardial Infarction (2026)*，§7.2.1，圖 2；[直接開啟原始出版圖](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F2/)。圖中明確區分初始 STE 的工作診斷（不能等待 cTn 才開始處置）與 serial cTn、coronary imaging、cardiac imaging 參與最後 MI 病因確認的層次。**此圖不能用來宣稱所有疑似 OMI 都可以溶栓，也不表示每名患者必須做完整侵入影像才有資格急救。**
+- **Figure 4 — Diagnostic pathway for possible secondary myocardial infarction**。同文 §7.2.2，圖 4；[直接開啟原始出版圖](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F4/)。臨床供需失衡＋acute injury 先形成 possible secondary MI，同時保留 alternative acute diagnosis，後續依可行性用冠脈與心肌影像排查原發冠狀病理和缺血性心肌損傷。**此圖不能把敗血症／低血壓造成的所有 troponin 上升直接歸類為 confirmed secondary MI。**
+
+兩幅原圖以原出版社／PMC 的連結供讀者放大核對，本站不重製圖像像素。原文參考：[JACC 2026 DOI 10.1016/j.jacc.2026.07.025](https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025)。圖中臨床判斷仍以具體病例與影像可行性為前提，而非當作替代當地 ACS 急救流程的固定順序。
+
 ## 如何使用來源對照
 
 若想核對題幹及官方答案，可直接開啟上述考選部原卷和更正公告。若想理解每題在 ACS 診斷、處置與長期追蹤中檢查的臨床關係，請返回[ACS 四章整合入口](../clinical-os/acs.md)。
