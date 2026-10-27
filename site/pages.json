@@ -2077,5 +2077,67 @@
     "section": "來源與版本",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md",
+    "output": "xiaoma-reading-cirrhosis-structure-risk.html",
+    "title": "肝硬化明明由結構定義，為什麼臨床不能只看結構？",
+    "subtitle": "Structure、CSPH、function、first decompensation、recompensation",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽",
+    "related_exams": [
+      {
+        "year_roc": 108,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 17,
+        "focus": "以 HRS 的有效動脈循環／腎灌流，連回門脈高壓與腹水，不可由腹水直接推出腎臟血容量充分或 HRS 已確診。",
+        "concept_heading": "Q2｜兩個病人都有 varices，誰是 decompensated？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 18,
+        "focus": "肝性腦病變的 lactulose 治療屬於臨床失代償後的處置，不能用「未出血 varices」取代 overt HE 的事件定義。",
+        "concept_heading": "Q2｜兩個病人都有 varices，誰是 decompensated？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 22,
+        "focus": "Child–Pugh 不包含 ALT；肝細胞傷害訊號與長期肝病功能／臨床失代償，不是同一個測量維度。",
+        "concept_heading": "Q3｜Child–Pugh 變好，為什麼不等於 recompensation？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 22,
+        "focus": "SAAG ≥1.1 代表門脈高壓線索，腹水 total protein 仍有鑑別價值；生理訊號不能直接等於肝硬化病因。",
+        "concept_heading": "Q1｜為什麼嚴重的結構疾病，不一定已發生失代償？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-reading/cirrhosis-sources-20261027.md",
+    "output": "xiaoma-reading-cirrhosis-sources.html",
+    "title": "Cirrhosis｜Baveno VIII、原書與預後證據",
+    "subtitle": "Pocket Medicine 9E 與 Baveno VIII 的來源限制",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
