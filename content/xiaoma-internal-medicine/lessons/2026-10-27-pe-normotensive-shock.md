@@ -24,7 +24,7 @@
 
 對血流動力學尚可、可安全完成檢查的疑似 PE 病人，首先是 **pretest probability**。Wells、revised Geneva 或經驗性評估用來估計檢查前的疾病可能性；PERC 僅適用於本來就極低臨床機率的特定病人。D-dimer 的強項是：在經驗證的低或中等機率演算法下，陰性結果可以將剩餘風險降到可接受範圍。它不是「有沒有血栓」的直接影像，也不是嚴重度或溶栓指標。
 
-小麻第九版 Figure 2-3 以 PE Wells **≤4（unlikely）／>4（likely）** 與 D-dimer、CTPA 分流。2026 AHA/ACC 指引也支持 age-adjusted D-dimer、YEARS 等經驗證策略，但**不同分層模型與不同 assay／FEU、DDU 單位的 cutoff 不能任意拼接**。臨床機率很高，或病人正在急遽惡化時，不能以一張陰性 D-dimer 取代影像或緊急評估。
+小麻第九版 Figure 2-3 以 PE Wells **≤4（unlikely）／>4（likely）** 與 D-dimer、CTPA 分流。可直接開啟的公開原始流程是 [NICE NG158 suspected PE 視覺摘要（PDF 第 2 頁）](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)；已核對它的 Wells、D-dimer、CTPA、陰性結果分支與頁底註腳，**這是 NICE 原圖，不是 Pocket Figure 2-3 的複製品**。2026 AHA/ACC 指引也支持 age-adjusted D-dimer、YEARS 等經驗證策略，但**不同分層模型與不同 assay／FEU、DDU 單位的 cutoff 不能任意拼接**。臨床機率很高，或病人正在急遽惡化時，不能以一張陰性 D-dimer 取代影像或緊急評估。
 
 CTPA 主要顯示肺動脈內的 filling defect；無法使用時，依情境可考慮 V/Q scan 等替代檢查。下肢 proximal compression ultrasound 找到 DVT，可在某些情境支持啟動 VTE 治療，但它並沒有直接看見肺動脈血栓。床邊心超若看到 RV strain，能加速對危險生理狀態的辨認；**正常或無法判讀的心超不等於排除 PE**，RV 擴大也不專屬 PE。
 
