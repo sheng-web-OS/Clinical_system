@@ -280,4 +280,4 @@ D. 任何 auto-PEEP 都證明當下有低血壓。
 
 ---
 
-資料與審核邊界：[Marchand 2019，病例及原始測值](https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/) · [GOLD 2026 Report / Pocket Guide](https://goldcopd.org/2026-gold-report-and-pocket-guide/) · [STARR2 原始試驗](https://pubmed.ncbi.nlm.nih.gov/37924830/) · [四張小麻來源圖對讀及公開權利 HOLD](../copd-sources.md)。本稿為私人閱讀修訂，尚未獲得獨立醫學審查；原書圖表不得據此視為已獲公開重製授權。
+參考來源：[Marchand 2019，病例及原始測值](https://pmc.ncbi.nlm.nih.gov/articles/PMC6473594/) · [GOLD 2026 Report / Pocket Guide](https://goldcopd.org/2026-gold-report-and-pocket-guide/) · [STARR2 原始試驗](https://pubmed.ncbi.nlm.nih.gov/37924830/) · [原圖來源與使用限制](../copd-sources.md)。原書圖表未在本站重製；此單一病例不能證明支氣管瓣膜減容對所有 COPD 病人都有效。
