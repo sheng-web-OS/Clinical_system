@@ -67,3 +67,12 @@ A 命題 3：一篇聚焦診斷／失代償／介入三個層次，後半試驗�
 **驗收／未過**：此輪只完成 connector 原始檔逐段核對、定點文字修訂、跨 PR diff／blob identity 與正式 2026 AHA/ACC 指引、NEJM 研究網頁交叉確認；尚未對 PR #111 的這個新 SHA 跑 CI、真實手機 360／390px 截圖或 Cloudflare 讀回。Pocket 9E p99 Figure 2-3 與 p100 原表的原像素／註腳仍待補，病例初始 VBG／chemistry 數據不一致仍是原文疑義（僅有安全收縮推論），獨立醫學審查也未完成。**維持 Draft/HOLD，不改 main／公開白名單，不宣稱網站已更新。**
 
 後續優先：驗證 Pocket 原圖完整頁與 caption/footnotes；按讀者認知角色決定是否需要合法展示 2026 AHA/ACC original categories 圖；獨立檢查 Q51 與介入試驗描述；完成 360／390px 與 build/CI，再依門檻另行決定正式發布與建立 VTE 反向閱讀入口。
+
+
+## 2026-10-27 限定醫學驗收：真實病例可保留，禁止矛盾血氣的定量推論
+
+- 專案擁有者針對本篇 **Rouleau 2026 normotensive shock 真實病例的安全使用邊界**答覆「可以，繼續推進發布進度」。明確接受：保留匿名真實病例作為肺栓塞疑似診斷、灌流失代償、再灌流淨效益之連續教學骨架；**完全排除**將 pH 7.06／venous pCO₂ 15／chemistry HCO₃ 9 組合做 Winter、混合酸鹼判定、精確代償或氧債定量推算。這是單項醫學編輯自審接受，不是全文、圖像或正式合併部署授權。原接受時主文 Git blob `cdbe475b95157910e541b283532b670b161e679c`，PR 討論證據：[bounded owner acceptance](https://github.com/sheng-web-OS/Clinical_system/pull/111#issuecomment-6431804648)。
+- 新版主文首段明示不同來源檢驗不可拼成單一同步酸鹼樣本；來源頁保留原值及不一致警示，移除讀者可誤作患者 bicarbonate 的衍生算式。病例後續血壓、乳酸、氧氣／心臟停搏時序仍不得冒稱 PE 已於當下確診，亦不把溶栓／ECMO 結果當因果證明。
+- 已透過 File Library 的 **第二份 Pocket Medicine 9E PDF** 實際目視 reader 第 99 頁 Figure 2-3（Wells likely／unlikely → D-dimer／CTA，陰性但高懷疑時追加影像）及第 100 頁原始 Initial Anticoagulation Options 三欄表、caption 與 footnote 附近文字。**圖檔只供私人核讀，未授權嵌入公網**；以已有 VTE 站內診斷圖與 NICE 來源連結代替重製，保留名稱／來源分辨。
+- 發現第 100 頁 rivaroxaban 初始欄位原書寫 **15 mg once daily ×21 days**，與 [DailyMed FDA 標示](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610) 成人 DVT／PE 起始 **15 mg twice daily for 21 days** 不符；來源頁明確標記不能照抄該行開方。其他原表選藥限制也不能脫離指引版本與病人出血風險。
+- 這個階段只屬來源、編輯及原圖**私人核對**，不是對 Figure Gate、同提交 browser screenshots、全篇臨床意義或正式發布的自動放行。維持 Draft/HOLD，禁止直接合併或部署。
