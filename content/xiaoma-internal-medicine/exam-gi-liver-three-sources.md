@@ -38,3 +38,6 @@
 - [Baveno VIII portal hypertension consensus](https://www.journal-of-hepatology.eu/article/S0168-8278%2826%2902778-9/fulltext)：結構、CSPH、失代償與 recompensation 不同軸線。
 
 以上指南用於當代臨床延伸，不回溯變更國考官方答題或給分規則。
+
+- [AASLD 2022 Wilson disease practice guidance](https://onlinelibrary.wiley.com/doi/10.1002/hep.32805)：明確提醒單一 ceruloplasmin 偏低不足以確診，須配合尿銅、眼科 KF ring、ATP7B 與其他資訊。
+- [KASL 2026 肝硬化腹水臨床指引](https://pmc.ncbi.nlm.nih.gov/articles/PMC13430399/)：SAAG ≥1.1 g/dL 支持 portal hypertension，腹水蛋白 ≥2.5 g/dL 更需思考心源性等，低蛋白較常見於 cirrhosis，但均不取代病因與 SBP 評估。
