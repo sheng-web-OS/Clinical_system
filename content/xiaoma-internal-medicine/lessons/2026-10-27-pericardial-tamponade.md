@@ -31,33 +31,31 @@
 心輸出量由每搏輸出和心率共同決定。Tamponade 最初的問題常是**舒張充盈容量不足**，不一定是心肌本身不能收縮；維持 EF 並不能保證 stroke volume 足夠。為補償每搏輸出下降，心跳加快、周邊血管收縮，因此**低血壓可以是較晚期才出現的訊號**。同樣地，ScvO₂ 下降反映氧輸送與消耗關係失衡，不能當成心輸出量的直接量測，也不是 sepsis 專一指標。
 
 <figure id="tamponade-mechanism">
-<svg viewBox="0 0 360 500" role="img" aria-label="原創手機可讀的雙分支因果圖：心包壓升高，一條分支是有效跨壁充盈下降、每搏輸出下降及低灌流；平行的另一分支是右房壓和 CVP 可能升高，兩者不能混為因果。由上向下閱讀。" style="width:100%;max-width:390px;height:auto;display:block;margin:0 auto">
-<rect x="18" y="10" width="324" height="72" rx="12" fill="#e6eef8" stroke="#32618a" stroke-width="2"/>
-<text x="180" y="39" font-size="18" text-anchor="middle" fill="#1b3851">心包液／血塊使外壓升高</text>
-<text x="180" y="63" font-size="16" text-anchor="middle" fill="#1b3851">心包伸展儲備被耗盡</text>
-<path d="M180 82 V103 M180 103 H95 V123 M180 103 H269 V123" fill="none" stroke="#49677f" stroke-width="2"/>
-<path d="M89 115 L95 123 L101 115 M263 115 L269 123 L275 115" fill="none" stroke="#49677f" stroke-width="2"/>
-<rect x="10" y="125" width="171" height="98" rx="10" fill="#eff5e9" stroke="#456b38" stroke-width="2"/>
-<text x="95" y="154" font-size="17" text-anchor="middle" fill="#263f20">有效跨壁壓 ↓</text>
-<text x="95" y="180" font-size="17" text-anchor="middle" fill="#263f20">舒張充盈 ↓</text>
-<text x="95" y="204" font-size="14" text-anchor="middle" fill="#263f20">真正的擴張驅動力</text>
-<rect x="189" y="125" width="161" height="98" rx="10" fill="#e6eef8" stroke="#32618a" stroke-width="2"/>
-<text x="269" y="154" font-size="17" text-anchor="middle" fill="#1b3851">CVP 可 ↑</text>
-<text x="269" y="180" font-size="15" text-anchor="middle" fill="#1b3851">≠ 有效前負荷</text>
-<text x="269" y="204" font-size="14" text-anchor="middle" fill="#1b3851">平行結果，非主鏈</text>
-<path d="M95 223 V254 H180 V267" fill="none" stroke="#456b38" stroke-width="2"/>
-<path d="M174 259 L180 267 L186 259" fill="none" stroke="#456b38" stroke-width="2"/>
-<rect x="18" y="270" width="324" height="76" rx="12" fill="#fbeeea" stroke="#ad5140" stroke-width="2"/>
-<text x="180" y="300" font-size="18" text-anchor="middle" fill="#6a3028">每搏輸出 Stroke volume ↓</text>
-<text x="180" y="325" font-size="16" text-anchor="middle" fill="#6a3028">心跳加快只能暫時代償</text>
-<path d="M180 346 V373" fill="none" stroke="#ad5140" stroke-width="2"/>
-<path d="M174 365 L180 373 L186 365" fill="none" stroke="#ad5140" stroke-width="2"/>
-<rect x="18" y="376" width="324" height="76" rx="12" fill="#fbeeea" stroke="#ad5140" stroke-width="2"/>
-<text x="180" y="405" font-size="18" text-anchor="middle" fill="#6a3028">前向血流／氧輸送 ↓</text>
-<text x="180" y="432" font-size="16" text-anchor="middle" fill="#6a3028">器官低灌流風險 ↑</text>
-<text x="180" y="481" font-size="14" text-anchor="middle" fill="currentColor">兩個分支可以同時存在，不能只讀 CVP。</text>
+<svg viewBox="0 0 240 610" role="img" aria-label="一條由心包外壓升高、有效跨壁充盈降低、每搏輸出降低至低灌流的垂直因果鏈。圖的最下方另標示 CVP 可以同時升高，但 CVP 並不是主因果鏈的下一步。" style="width:100%;max-width:280px;height:auto;display:block;margin:0 auto">
+<rect x="7" y="12" width="226" height="76" rx="10" fill="#e6eef8" stroke="#32618a" stroke-width="1.8"/>
+<text x="120" y="42" font-size="19" text-anchor="middle" fill="#1b3851">心包外壓 ↑</text>
+<text x="120" y="69" font-size="16" text-anchor="middle" fill="#1b3851">心包伸展儲備耗盡</text>
+<path d="M120 89 V124" fill="none" stroke="#456b38" stroke-width="2"/>
+<path d="M114 116 L120 124 L126 116" fill="none" stroke="#456b38" stroke-width="2"/>
+<rect x="7" y="129" width="226" height="80" rx="10" fill="#eff5e9" stroke="#456b38" stroke-width="1.8"/>
+<text x="120" y="161" font-size="18" text-anchor="middle" fill="#263f20">有效跨壁充盈壓 ↓</text>
+<text x="120" y="188" font-size="16" text-anchor="middle" fill="#263f20">真正推動舒張擴張的壓差</text>
+<path d="M120 210 V248" fill="none" stroke="#456b38" stroke-width="2"/>
+<path d="M114 240 L120 248 L126 240" fill="none" stroke="#456b38" stroke-width="2"/>
+<rect x="7" y="253" width="226" height="79" rx="10" fill="#fbeeea" stroke="#ad5140" stroke-width="1.8"/>
+<text x="120" y="282" font-size="19" text-anchor="middle" fill="#6a3028">舒張充盈量 ↓</text>
+<text x="120" y="310" font-size="18" text-anchor="middle" fill="#6a3028">每搏輸出 ↓</text>
+<path d="M120 333 V371" fill="none" stroke="#ad5140" stroke-width="2"/>
+<path d="M114 363 L120 371 L126 363" fill="none" stroke="#ad5140" stroke-width="2"/>
+<rect x="7" y="376" width="226" height="79" rx="10" fill="#fbeeea" stroke="#ad5140" stroke-width="1.8"/>
+<text x="120" y="405" font-size="18" text-anchor="middle" fill="#6a3028">前向血流／氧輸送 ↓</text>
+<text x="120" y="432" font-size="17" text-anchor="middle" fill="#6a3028">器官低灌流風險 ↑</text>
+<text x="120" y="490" text-anchor="middle" font-size="16" fill="currentColor">另一項可能並存的訊號</text>
+<rect x="7" y="505" width="226" height="80" rx="10" fill="#e6eef8" stroke="#32618a" stroke-width="1.8"/>
+<text x="120" y="537" font-size="19" text-anchor="middle" fill="#1b3851">CVP 也可能升高</text>
+<text x="120" y="565" font-size="16" text-anchor="middle" fill="#1b3851">不等於有效充盈足夠</text>
 </svg>
-<figcaption>原創生理示意，依 IBCC 2024 physiology 與 ESC 2025 §11.8 重建。左側分支才連到每搏輸出下降；右側的 CVP 升高是可能同時出現的平行訊號，不是造成低血壓的必要因果步驟。每一個數值仍需依血容量、呼吸及局部心包壓迫情境解讀。[對照原始來源](../pericardial-tamponade-sources.md)。</figcaption>
+<figcaption>心包外壓增加限制有效舒張充盈，使每搏輸出與器官灌流下降；CVP 升高則是可能並存的壓力訊號，不能當成上方箭頭的必然下一步。原創示意依 IBCC 2024 與 ESC 2025 §11.8 建立；不是本病例的逐時血流測量。<a href="../pericardial-tamponade-sources.md">對照原始來源與限制</a>。</figcaption>
 </figure>
 
 積液量為何不是唯一標準？心包壓力—容積曲線有較平坦的適應段，也有接近極限時陡升的一段。**急性少量出血可能迅速造成壓迫；緩慢形成的較大量積液卻可能暫時沒有休克。** 引流少量積液也可能解除陡升區的壓力，不能用「抽了幾 mL」當作唯一療效指標。這個比較針對速度和心包順應性，不能把數字畫成每個病人都相同的閾值。
