@@ -2,7 +2,7 @@
 
 2026.07.19 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。原文在 source snapshot（私有原稿封存） 逐字保留，不作為已核實 Facebook canonical 版本。
 
-上一篇[Cholestasis：看見 ALP，究竟是找到病因，還是只找到下一個問題？](xiaoma-reading-cholestasis-evidence-action.html)建立了一條重要限制：ALP 比 AST／ALT 升得突出，只是一個經確認肝膽來源後的 *biochemical phenotype*；它不能自己指出膽管被堵住、肝細胞輸送失敗，或肝內某種組織正在增加。
+上一篇[Cholestasis：看見 ALP，究竟是找到病因，還是只找到下一個問題？](2026-10-27-cholestasis-evidence-to-action.md)建立了一條重要限制：ALP 比 AST／ALT 升得突出，只是一個經確認肝膽來源後的 *biochemical phenotype*；它不能自己指出膽管被堵住、肝細胞輸送失敗，或肝內某種組織正在增加。
 
 可是 Pocket Medicine 9E 的 Figure 3-4 在另一類「infiltrative pattern」下，卻列出 malignancy、granuloma、abscess、medications 和 amyloid。這些病因互不相同：腫瘤可能佔據組織空間，肉芽腫是免疫細胞聚集，膿瘍是局部感染；藥物可能影響 transport 或造成不同類型 DILI，amyloid 則涉及異常蛋白沉積。
 
