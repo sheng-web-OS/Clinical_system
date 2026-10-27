@@ -38,22 +38,24 @@ class SepsisFigureSourceGate(unittest.TestCase):
         ))
 
 
-    def test_q48_is_one_canonical_question_with_sepsis_backlink(self):
+    def test_official_q48_copd_mismatch_is_removed_from_sepsis(self):
+        # Official 113-1 醫學（三） Q48 asks about COPD treatment, NOT
+        # bicarbonate in sepsis. A matching answer letter is not provenance.
+        # Official original: https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q
+        article = (ROOT / ARTICLE).read_text(encoding="utf-8")
+        exam = (ROOT / "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md").read_text(encoding="utf-8")
+        self.assertNotIn("113-1 醫學（三）第 48 題", article)
+        self.assertNotIn("113-1 醫學（三）第 48 題", exam)
+        self.assertNotIn('<a id="q-113-1-48"></a>', exam)
+        self.assertIn('<a id="q-112-1-65"></a>', exam)
         pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
-        key = (113, 1, 2, "醫學（三）", 48)
-        canonical = []
-        for page in pages:
-            for q in page.get("exam_questions", []):
-                identity = tuple(q[k] for k in ("year_roc", "sitting", "stage", "subject", "question_number"))
-                if identity == key:
-                    canonical.append(page["source"])
-        self.assertEqual(canonical, ["content/xiaoma-internal-medicine/lessons/2026-10-23-acid-base.md"])
-        sepsis_exam = next(p for p in pages if p["source"] == "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md")
-        self.assertTrue(any(
-            tuple(q[k] for k in ("year_roc", "sitting", "stage", "subject", "question_number")) == key
-            for q in sepsis_exam.get("related_exams", [])
-        ))
-
+        for source in (ARTICLE, "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md"):
+            page = next(p for p in pages if p["source"] == source)
+            linked = page.get("exam_questions", []) + page.get("related_exams", [])
+            self.assertFalse(any(q.get("year_roc") == 113 and q.get("sitting") == 1
+                                 and q.get("question_number") == 48 for q in linked))
+            self.assertTrue(any(q.get("year_roc") == 112 and q.get("sitting") == 1
+                                and q.get("question_number") == 65 for q in linked))
 
     def test_q57_is_one_canonical_question_with_sepsis_backlink(self):
         pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
