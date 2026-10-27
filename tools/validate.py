@@ -14,14 +14,14 @@ from catalog import load_pages
 # "review", "source", "not yet", or "updated", which can be clinically essential.
 # The historical author originals are immutable and not subject to this rule.
 _PUBLIC_COPY_LEAK_RULES = (
-    ("PR or issue bookkeeping", re.compile(r"\\b(?:PR|Issue)\\s*#\\d+\\b", re.I)),
+    ("PR or issue bookkeeping", re.compile(r"\b(?:PR|Issue)\s*#\d+\b", re.I)),
     ("question intake accounting", re.compile(
         r"不重複計數|本次新增.{0,24}(?:題|題號)|本輪新增|"
         r"原已收錄於|本次新建.{0,24}(?:題|題號)"
     )),
     ("deployment / workflow log", re.compile(
-        r"GitHub Actions run\\s*\\d+|Cloudflare production commit|"
-        r"\\b(?:Draft\\s*/\\s*HOLD|HOLD\\s*/\\s*Draft)\\b", re.I
+        r"GitHub Actions run\s*\d+|Cloudflare production commit|"
+        r"\b(?:Draft\s*/\s*HOLD|HOLD\s*/\s*Draft)\b", re.I
     )),
 )
 
