@@ -43,6 +43,15 @@ class ACSReadingDiscovery(unittest.TestCase):
             self.assertNotIn('href="' + exam + '"', today)
             self.assertIn('href="' + exam + '"', atlas)
 
+    def test_acs_source_catalog_title_covers_all_recorded_exam_years(self):
+        # Reader-facing source title must not hide the 115-year official cases.
+        source = next(p for p in self.pages
+                      if p["source"] == "content/xiaoma-internal-medicine/acs-exam-sources.md")
+        title = source["title"]
+        for year in ("113", "114", "115"):
+            with self.subTest(year=year):
+                self.assertIn(year, title)
+
     def test_seven_recorded_exam_crosslinks_stay_valid_after_rewriting_h2(self):
         related = self.article.get("related_exams", [])
         self.assertEqual(len(related), 7)  # six new official 113–115 + prior 108 Q76
