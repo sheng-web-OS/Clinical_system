@@ -945,6 +945,36 @@
         }
       ]
     },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/heart-sounds-structural-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9th ed. reader PDF pages 41 (HCM LVOTO) and 45 (AS flow/severity), previously visually checked in 108a-cardiac-sources.md",
+          "source_token": "HCM 第 41–42 頁",
+          "mode": "illustrated",
+          "anchor": "as-hcm-preload-compare",
+          "caption_token": "Pocket Medicine 第九版",
+          "teaching_role": "讀者可同時看到站立後相同前負荷下降，為何固定 AS 射出流量變少而動態 LVOTO 反而加劇；分歧點可直接支持 108-1 Q11 與 113-1 Q11。",
+          "scope_limit": "圖為原創、基於已存在原書核讀紀錄，並非 Pocket Medicine 9E 原圖或原書圖表完整複製；聲音反應只是典型模式，不能由動作單獨確診 AS/HCM。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/heart-sounds-cross-discipline-sources.md",
+      "items": [
+        {
+          "locator": "ASE/SCAI 2015 ASD/PFO Guidelines, original reader PDF pages 23 and 25, Figures 26–27, reviewed in existing 108a-cardiac-sources.md",
+          "source_token": "Figure 26–27",
+          "mode": "illustrated",
+          "anchor": "cross-asd-flow-auscultation",
+          "caption_token": "ASE/SCAI 2015",
+          "teaching_role": "將心房層級的左向右分流與三個不同聽診事件在時間與流向上對齊，讓 115-2 醫學四 Q10 的 A/B/C/D 各有完整因果判準。",
+          "scope_limit": "這是原創概念文字三欄，不是官方 Figures 26–27 的圖像重製；當右心流量、呼吸與肺血管阻力不同時 fixed S2 與 flow rumble 不是所有 ASD 均出現的徵象。"
+        }
+      ]
+    },
     "content/clinical-os/acs.md": {
       "status": "represented",
       "source_review": "content/xiaoma-internal-medicine/acs-exam-sources.md",
