@@ -11,8 +11,8 @@ from pathlib import Path
 
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 GIT_SHA = re.compile(r"^[a-f0-9]{40}$")
-INCIDENT = re.compile(r"^\\|\\s*(F-\\d{3})\\s*\\|")
-EVAL = re.compile(r"^##\\s*(EVAL-\\d+)\\b")
+INCIDENT = re.compile(r"^\|\s*(F-\d{3})\s*\|")
+EVAL = re.compile(r"^##\s*(EVAL-\d+)\b")
 STATUSES = {"PROVISIONAL", "VALIDATED", "INVALIDATED"}
 
 
@@ -40,7 +40,7 @@ def anchored_file(root, relative, digest):
 
 def prepare_packets(root, spec, out):
     """Freeze full-article input packets; deliberately does NOT run any AI trial."""
-    require(spec.get("schema_version") == 1 and spec.get("exposure") == "development",
+    require(type(spec.get("schema_version")) is int and spec["schema_version"] == 1 and spec.get("exposure") == "development",
             "only explicitly visible development cohorts supported")
     require(isinstance(spec.get("source_commit"), str)
             and GIT_SHA.fullmatch(spec["source_commit"]), "exact source commit required")
@@ -71,7 +71,7 @@ def prepare_packets(root, spec, out):
                 packet = {"schema_version": 1, "evidence_level": "DEVELOPMENT_ONLY",
                           "article_id": ident, "trial": trial, "arm": arm,
                           "source_commit": spec["source_commit"], "source_sha256": item["sha256"],
-                          "instructions": spec["common_instruction"] + "\\n" + arms[arm],
+                          "instructions": spec["common_instruction"] + "\n" + arms[arm],
                           "original_full_markdown": article,
                           "output_contract": "Locate original actionable findings with verbatim evidence; preserve supported passages. Do not claim original figure or medical verification unless actually performed."}
                 packets.append((f"{ident}-{trial}-{arm}.json", packet))
@@ -80,7 +80,7 @@ def prepare_packets(root, spec, out):
     out.mkdir(parents=True)
     fingerprints = {}
     for name, packet in packets:
-        raw = (json.dumps(packet, ensure_ascii=False, sort_keys=True, indent=2) + "\\n").encode()
+        raw = (json.dumps(packet, ensure_ascii=False, sort_keys=True, indent=2) + "\n").encode()
         (out / name).write_bytes(raw)
         fingerprints[name] = sha256(raw)
     manifest = {"schema_version": 1, "evidence_level": "DEVELOPMENT_ONLY",
@@ -88,7 +88,7 @@ def prepare_packets(root, spec, out):
                 "source_commit": spec["source_commit"], "article_count": len(cases),
                 "planned_reviews": len(packets), "task_sha256": fingerprints,
                 "limitations": "Packet creation does not prove fresh contexts, fair budget, blinded grading or successful repair."}
-    (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\\n")
+    (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return manifest
 
 
@@ -109,8 +109,8 @@ def select_experiences(issue_markdown, terms, statuses=None, limit=3):
             excerpt = line[:1800]
         else:
             last = next((j for j in range(i + 1, len(lines))
-                         if re.match(r"^##\\s", lines[j])), len(lines))
-            excerpt = "\\n".join(lines[i:min(last, i + 18)])[:1800]
+                         if re.match(r"^##\s", lines[j])), len(lines))
+            excerpt = "\n".join(lines[i:min(last, i + 18)])[:1800]
         entry = statuses.get(ident, {"status": "PROVISIONAL"})
         require(isinstance(entry, dict) and entry.get("status") in STATUSES,
                 "invalid incident memory state")
@@ -229,7 +229,7 @@ def main():
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
     except (ValueError, OSError, TypeError, UnicodeError) as exc:
-        parser.exit(2, "INVALID_EVIDENCE: " + str(exc) + "\\n")
+        parser.exit(2, "INVALID_EVIDENCE: " + str(exc) + "\n")
 
 
 if __name__ == "__main__":
