@@ -683,9 +683,9 @@
       ]
     },
     "exam_topics": {
-      "27": "AKI 的定義與時間窗",
       "2": "高血鈉與缺水估算",
       "25": "嘔吐、鹼中毒與尿液指標",
+      "27": "AKI 的定義與時間窗",
       "28": "大量蛋白尿與 NSAID"
     }
   },
@@ -1668,6 +1668,30 @@
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md",
+    "output": "xiaoma-reading-chronic-diarrhea-evidence.html",
+    "title": "找到腹瀉的類型，為什麼仍然沒有找到病因？",
+    "subtitle": "糞便發炎/脂肪訊號與 osmotic gap 的不同推論角色",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "腸胃"
+  },
+  {
+    "source": "content/xiaoma-reading/chronic-diarrhea-sources-20261027.md",
+    "output": "xiaoma-reading-chronic-diarrhea-sources.html",
+    "title": "Chronic diarrhea｜原始流程與 osmotic gap 的界線",
+    "subtitle": "Pocket Medicine 9E／原始指南與測量推論的來源限制",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
     "navigation": false,
     "review": "source_audit"
   }
