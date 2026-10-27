@@ -1,6 +1,6 @@
 # 找到腹瀉的類型，為什麼仍然沒有找到病因？
 
-2026.07.21 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。作者在對話提供的原稿保留於 私人 source snapshot（私有原稿封存），並非已比對的 Facebook canonical 版本。
+2026.07.21 小麻閱讀（Pocket Medicine 9E）｜整合教材更新：2026.10.27
 
 慢性腹瀉（一般指超過四週）可以先用 watery、fatty、inflammatory 等表型整理。Pocket Medicine 9E 在同一頁列出 osmotic、secretory、functional、malabsorption、maldigestion 與 inflammatory。將這六個名詞背起來，卻可能產生一種危險的錯覺：既然知道病人屬於某一「類」，就應該可以直接找出某一疾病。
 
@@ -79,12 +79,10 @@ Pocket Medicine 9E Figure 3-2 用 **<100 與 ≥100 mOsm/kg** 作教學分支。
 
 ---
 
-### 來源與驗收身分
+### 主要參考來源
 
 [1] [AGA 2019 laboratory evaluation of functional diarrhea and IBS-D](https://gastro.org/clinical-guidance/laboratory-evaluation-of-functional-diarrhea-and-diarrhea-predominant-irritable-bowel-syndrome-in-adults-ibs-d/)；其指引適用條件不包括所有 alarm cases。  
 [2] [BSG 2018 guideline (3rd ed.) chronic diarrhoea](https://pmc.ncbi.nlm.nih.gov/articles/PMC6204957/)，特別是 microscopic colitis、bile acid diarrhoea 和定向診斷。  
 [3] [Sweetser 2012 case-based review](https://pmc.ncbi.nlm.nih.gov/articles/PMC3538472/)；[Camilleri et al. 2017 pathophysiology/review](https://pmc.ncbi.nlm.nih.gov/articles/PMC5285476/)；方法學解讀須考慮來源年代與研究限制。  
 [4] Pocket Medicine 9E Figure 3-2，核對 Library PDF pp.124–126（viewer 頁碼；印刷頁及來源 hash 尚待確認）。  
-[5] [已有原書與醫學稽核](../chronic-diarrhea-sources-20261027.md)。
 
-**AI-integrated candidate / HOLD**：不存在已完成的獨立醫師審查或正式發布核准；沒有直接公開原書影像，也沒有把虛構比較當作真實病例。
