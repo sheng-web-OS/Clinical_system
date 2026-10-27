@@ -11,7 +11,7 @@ from pathlib import Path
 
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 GIT_SHA = re.compile(r"^[a-f0-9]{40}$")
-INCIDENT = re.compile(r"^\|\s*(F-\d{3})\s*\|")
+INCIDENT = re.compile(r"^\|\s*(F-\d{3})(?:[^|]*)\|")
 EVAL = re.compile(r"^##\s*(EVAL-\d+)\b")
 STATUSES = {"PROVISIONAL", "VALIDATED", "INVALIDATED"}
 
