@@ -6,6 +6,7 @@ This catches reworded copies even when titles and explanations differ.
 import json
 import re
 import unittest
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -76,7 +77,8 @@ class HeartSoundsCanonicalRegression(unittest.TestCase):
 
 
     def test_emphasized_question_heading_keeps_canonical_anchor(self):
-        from site.build import Renderer
+        sys.path.insert(0, str(ROOT / 'site'))
+    from build import Renderer
         heading = "115（二）醫學（五）Q9｜Eisenmenger：**標準答案更正為 B 或 D**"
         renderer = Renderer({heading: "exam-test-corrected-answer"})
         html = renderer.heading("115（二）醫學（五）Q9｜Eisenmenger：<strong>標準答案更正為 B 或 D</strong>", 3)
