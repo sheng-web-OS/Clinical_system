@@ -46,10 +46,18 @@
     "content/xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md": "c7aef16edb0b2d24c44c6e64020eea9a2dceae9c",
     "content/xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md": "798f1a6b76d6ab4df6591bdfb25bb7465c1824df",
     "content/xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md": "4e38de8971920f3415128e5f3ef57a9c930f2d6f",
-    "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md": "f1f82f86894d94628efc8c4b7386e55297b543db",
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md": "be675ff5a3d49ba041ab6ab0d4b512bdba6dbebc",
     "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md": "3cc264ca5902c20894eb1e2b8db35bfaf52bddd1",
     "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md": "e36fb0c2e5404d91e96a1ee4f9ca4f853f0dcf90",
     "content/xiaoma-reading/integrated/2026-10-27-heart-failure-hemodynamics.md": "78f584845c0305c1f140fa208cf364b1faa871e6",
     "content/xiaoma-reading/integrated/2026-10-27-lvedp-pressure-volume.md": "0e33cb39ecfc0f1e1a505389f12a8480570a7a10"
+  },
+  "cutover_reconciliation": {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md",
+    "reason": "This exact source revision was already present at gate activation merge commit ef78600; baseline was captured on the earlier feature branch before parallel pre-cutover editorial updates.",
+    "gate_activation_commit": "ef78600c75f689ac3bdebe434ef8613b4301cc1b",
+    "initial_branch_blob": "f1f82f86894d94628efc8c4b7386e55297b543db",
+    "verified_activation_blob": "be675ff5a3d49ba041ab6ab0d4b512bdba6dbebc",
+    "policy": "No future baseline renewal for teaching edits. Updated content after gate activation requires independent paragraph receipt."
   }
 }
