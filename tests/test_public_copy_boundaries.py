@@ -30,6 +30,38 @@ class PublicCopyBoundariesTest(unittest.TestCase):
             with self.subTest(phrase=phrase):
                 self.assertEqual([], public_copy_leak_errors("content/reader.md", phrase))
 
+    def test_source_verification_appendix_stays_out_of_teaching_chapters(self):
+        for phrase in (
+            "### 本篇來源與版本界線",
+            "## 原卷逐頁核對紀錄",
+            "原始資料使用：考選部 112 年第一次醫學（三）",
+        ):
+            with self.subTest(phrase=phrase):
+                self.assertTrue(public_copy_leak_errors(
+                    "content/xiaoma-internal-medicine/lessons/gi-liver.md", phrase
+                ))
+
+    def test_verification_belongs_in_source_page_not_teaching_body(self):
+        provenance = "### 本篇來源與版本界線\n原始資料使用：考選部官方試卷"
+        self.assertEqual([], public_copy_leak_errors(
+            "content/xiaoma-internal-medicine/exam-gi-liver-three-sources.md", provenance
+        ))
+        self.assertEqual([], public_copy_leak_errors(
+            "content/xiaoma-internal-medicine/lessons/gi-liver.md",
+            "官方答案 D（未更正）；單次 ceruloplasmin 低不能確診 Wilson disease。"
+        ))
+
+    def test_published_gi_liver_lesson_excludes_editorial_footer(self):
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        page = root / "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md"
+        content = page.read_text(encoding="utf8")
+        self.assertNotIn("本篇來源與版本界線", content)
+        self.assertEqual([], public_copy_leak_errors(str(page.relative_to(root)), content))
+        self.assertIn("../exam-gi-liver-three-sources.md", content)
+        for topic in ("Wilson disease", "Child–Pugh", "SAAG"):
+            self.assertIn(topic, content)
+
     def test_preserved_author_original_is_unchanged(self):
         text = "使用者原始文章逐字保留，即使內有 PR #17 字樣。"
         self.assertEqual([], public_copy_leak_errors("content/xiaoma-reading/originals/example.md", text))

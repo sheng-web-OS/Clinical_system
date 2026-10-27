@@ -25,14 +25,29 @@ _PUBLIC_COPY_LEAK_RULES = (
     )),
 )
 
+# Teaching chapters must not carry the source-checking editor's notebook.
+# The detailed original-paper verification belongs in a dedicated *-sources.md
+# reference page, while each lesson retains official paper/answer links.
+_READER_EDITORIAL_FOOTER_RULES = (
+    ("source-verification appendix", re.compile(
+        r"^\s*#{2,6}\s*(?:本篇來源與版本界線|原卷逐頁核對紀錄|"
+        r"編輯核讀與版本狀態|來源核對與版本界線)\s*$"
+    )),
+    ("source-verification worklog", re.compile(
+        r"^\s*(?:原始資料使用|逐頁目視核對紀錄)\s*[:：]"
+    )),
+)
+
 
 def public_copy_leak_errors(source, text):
     """Find clear editorial worklog in a published reader page (not medicine)."""
     if "/originals/" in source:
         return []
     errors = []
+    is_teaching_chapter = any(part in source for part in ("/lessons/", "/integrated/", "/exams/"))
+    rules = _PUBLIC_COPY_LEAK_RULES + (_READER_EDITORIAL_FOOTER_RULES if is_teaching_chapter else ())
     for line_no, line in enumerate(text.splitlines(), 1):
-        for reason, expression in _PUBLIC_COPY_LEAK_RULES:
+        for reason, expression in rules:
             if expression.search(line):
                 errors.append(f"{source}:{line_no}: public editorial metadata ({reason})")
                 break
