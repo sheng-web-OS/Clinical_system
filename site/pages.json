@@ -57,6 +57,7 @@
     "subtitle": "HCM 的定義、outflow、filling 與 systolic emptying",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心肌病變",
     "date": "2026-07-14",
     "navigation": false,
     "review": "source_recovery_only",
@@ -145,6 +146,7 @@
     "subtitle": "從 congestion／perfusion 分流，理解 EF、HF syndrome 與急性失衡",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心衰竭與血行動力學",
     "date": "2026-07-12",
     "navigation": false,
     "review": "source_recovery_only",
@@ -168,6 +170,7 @@
     "subtitle": "從 pulmonary congestion 追問 filling pressure 與 pressure–volume mechanism",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心衰竭與血行動力學",
     "date": "2026-07-12",
     "navigation": false,
     "review": "source_recovery_only",
@@ -191,6 +194,7 @@
     "subtitle": "Loop threshold、ceiling、補償性鈉回收與治療反應的不同層次",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心衰竭與利尿",
     "date": "2026-07-20",
     "navigation": false,
     "review": "source_recovery_only",
@@ -214,6 +218,7 @@
     "subtitle": "DCM 的左心室表型、收縮力、代償與病因解釋的邊界",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "心肌病變",
     "date": "2026-07-10",
     "navigation": false,
     "review": "source_recovery_only",
@@ -227,6 +232,7 @@
     "subtitle": "Necrosis 與 persistent organ failure 的獨立軸線，及何時不能等待",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "消化與胰臟",
     "date": "2026-07-20",
     "navigation": false,
     "review": "source_recovery_only",
@@ -240,11 +246,20 @@
     "subtitle": "不同治療歷史、refractory status 與 ICU 照護系統轉換",
     "collection": "xiaoma-reading",
     "kind": "historical_original",
+    "section": "神經急症",
     "date": "2026-07-28",
     "navigation": false,
     "review": "source_recovery_only",
     "source_sha256": "e0367d5d0b3765c7607ccd3512d98f08ed529070c3d80fc076c7099accfb5452",
-    "layout": "reading-original"
+    "layout": "reading-original",
+    "inline_source_figure": {
+      "before_text": "2026.07.28 Status epilepticus 閱讀",
+      "image_url": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/840c75ec-e6b2-4089-95b0-313fa95d0919/Rendition/low-res/Content/Public",
+      "official_source_url": "https://www.aesnet.org/docs/default-source/press-releases-assets/cse-treatment-chart-final_rerelease.pdf?sfvrsn=5eda6d28_2",
+      "alt": "American Epilepsy Society 2016 年 convulsive status epilepticus 治療流程圖：0–5 分鐘穩定、5–20 分鐘 benzodiazepine、20–40 分鐘第二線治療、40–60 分鐘第三線治療與連續 EEG。",
+      "caption": "American Epilepsy Society (2016), Proposed Algorithm for Convulsive Status Epilepticus。原始完整流程圖；點圖放大或開啟 AES 官方 PDF。",
+      "qualification": "此圖用來對照各次「Does seizure continue?」所承接的治療歷史；2016 年劑量與證據分級不應取代現行指引及機構急救流程。"
+    }
   },
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md",
@@ -1744,6 +1759,30 @@
       "8": "PE 抗凝停藥與誘發因子（官方更正 C／D）",
       "9": "肺栓塞診斷：影像、D-dimer 與右心負荷"
     }
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-infiltrative-alp-hypothesis.md",
+    "output": "xiaoma-reading-infiltrative-alp-hypothesis.html",
+    "title": "肝臟被占據，為什麼最突出的卻是 ALP？",
+    "subtitle": "ALP 訊號≠組織診斷；SPEP陰性≠排除 AL amyloidosis",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽"
+  },
+  {
+    "source": "content/xiaoma-reading/infiltrative-alp-sources-20261027.md",
+    "output": "xiaoma-reading-infiltrative-alp-sources.html",
+    "title": "Infiltrative ALP｜原始來源與檢查界線",
+    "subtitle": "Pocket Medicine 9E／原始指南與測量推論的來源限制",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
+    "navigation": false,
+    "review": "source_audit"
   },
   {
     "source": "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md",

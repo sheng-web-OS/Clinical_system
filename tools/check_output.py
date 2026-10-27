@@ -134,6 +134,14 @@ if not errors:
         if 'href="xiaoma-plan.html"' in front or 'href="xiaoma-plan.html"' in (DIST / "knowledge-atlas.html").read_text("utf8"):
             errors.append("Home and atlas may not promote duplicate learning map")
         atlas_body = (DIST / "knowledge-atlas.html").read_text("utf8")
+        originals = [row for row in PAGES if row.get("kind") == "historical_original"]
+        from reading import _group
+        if "<summary>歷史原稿典藏" in atlas_body:
+            errors.append("Historical provenance must not be a clinical atlas category")
+        if any(not row.get("section") or _group(row) in ("歷史原稿典藏", "其他閱讀") for row in originals):
+            errors.append("Every published original must have a clinical topic")
+        if atlas_body.count('class="atlas-origin-note">原稿</small>') != len(originals):
+            errors.append("Original provenance markers missing from clinical atlas index")
         for target in ("dyspnea", "perfusion", "chest", "kidney", "infection", "time"):
             if 'id="' + target + '"' not in atlas_body:
                 errors.append("Clinical atlas missing problem-first branch " + target)
