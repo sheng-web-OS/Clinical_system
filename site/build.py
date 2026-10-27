@@ -9,7 +9,7 @@ import sys
 import mistune
 from catalog import load_pages
 from home import render_home
-from reading import render_today_updates, render_article_index, render_original_versions, primary_versions
+from reading import render_today_updates, render_article_index, render_original_versions, primary_versions, is_current_lesson
 from math_render import compile_math
 from exam_archive import render_exam_archive, render_exam_year_teasers, question_anchor, connect_exam_reading
 
@@ -128,7 +128,7 @@ def validate_output_links():
 
 def render_reader(page, body, headings, related_questions=""):
     """Reader-facing teaching, with routes and editorial records in separate pages."""
-    is_lesson = bool(page.get("date")) or page["source"] == "content/tamponade.md"
+    is_lesson = is_current_lesson(page) or page["source"] == "content/tamponade.md"
     is_archive = page.get("collection") == "xiaoma-reading"
     is_xiaoma = page.get("collection", "").startswith("xiaoma-")
     home = "xiaoma-reading.html" if is_archive else ("xiaoma-internal-medicine.html" if is_xiaoma else "index.html")
@@ -153,7 +153,7 @@ def render_reader(page, body, headings, related_questions=""):
     active = page["output"]
     references = page.get("references") or ("xiaoma-sources.html" if page.get("collection") == "xiaoma-internal-medicine" else None)
     reference_link = '<a href="'+html.escape(references,quote=True)+'">來源與延伸閱讀</a>' if references else ''
-    lessons = sorted((row for row in PAGES if row.get("collection") == page.get("collection") and row.get("date") and not row.get("exam")), key=lambda row: (row["date"], row["output"]))
+    lessons = sorted((row for row in PAGES if row.get("collection") == page.get("collection") and is_current_lesson(row)), key=lambda row: (row["date"], row["output"]))
     number = next((str(i).zfill(2) for i, row in enumerate(lessons, 1) if row["output"] == active), "")
     destinations = ([("index.html", "首頁"), ("knowledge-atlas.html", "知識地圖"), ("xiaoma-reading.html", "小麻閱讀"), ("xiaoma-internal-medicine.html", "內科國考") ]
                     if is_archive else
@@ -171,7 +171,7 @@ def render_reader(page, body, headings, related_questions=""):
 <a class="skip-link" href="#reading-content">跳到正文</a><div class="floating" aria-hidden="true"></div>
 <header class="reader-header">'''+brand+'''<nav aria-label="主要導覽">'''+top_links+'''</nav><details class="reader-search"><summary>搜尋</summary><div><label for="search">搜尋教材</label><input id="search" class="searchbox" type="search" placeholder="輸入主題或問題…"><div class="results" id="results" aria-live="polite"></div></div></details><div class="reader-tools"><button id="fontminus" aria-label="縮小字體">A−</button><button id="fontplus" aria-label="放大字體">A+</button><button id="theme" aria-label="切換明暗主題">◐</button></div></header>
 <div class="reader-shell"><aside class="reader-rail"><a class="back-link" href="'''+home+'''">← 教材目錄</a><span class="rail-label">'''+('本篇脈絡' if is_lesson else '本頁導覽')+'''</span><nav class="reader-outline" aria-label="章節導覽">'''+outline+'''</nav><div class="rail-bottom"><a href="xiaoma-reading.html">以往小麻閱讀 ↗</a><a href="knowledge-atlas.html">臨床知識地圖 ↗</a><a href="index.html">其他臨床教材 ↗</a></div></aside>
-<main class="reader-main" id="reading-content"><div class="reader-hero"><p class="reader-kicker">'''+section+('　 /　 '+number if is_lesson else '')+'''</p><h1>'''+title+'''</h1><p class="reader-deck">'''+subtitle+'''</p>'''+exam_label+'''</div>
+<main class="reader-main" id="reading-content"><div class="reader-hero"><p class="reader-kicker">'''+section+('　 /　 '+number if number else '')+'''</p><h1>'''+title+'''</h1><p class="reader-deck">'''+subtitle+'''</p>'''+exam_label+'''</div>
 <details class="mobile-outline"><summary>本篇章節</summary><nav aria-label="行動版章節導覽">'''+outline+'''</nav></details>
 <div class="article reading-prose">'''+original_primary_note+'''</div><article class="article reading-prose">'''+body+'''</article>'''+original_note+related_questions+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
 <script src="site-index.js"></script><script src="app.js" defer></script></body></html>'''
@@ -223,7 +223,7 @@ def render(md_file, output, page_title, subtitle, rendered=None):
     # Compile MathML from authored TeX before Mistune consumes \\[...\\] as escapes.
     raw=compile_math(raw)
     question_entries = current.get("exam_questions", []) + current.get("related_exams", [])
-    rr=Renderer({q["question_heading"]: question_anchor(q) for q in question_entries if q.get("question_heading")})
+    rr=Renderer({q["question_heading"].replace("**", ""): question_anchor(q) for q in question_entries if q.get("question_heading")})
     parser=mistune.create_markdown(renderer=rr,plugins=["table","strikethrough","url"])
     body=parser(raw)
     body=re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)  # accessible single H1 in page hero

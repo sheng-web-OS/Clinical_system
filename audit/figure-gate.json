@@ -892,6 +892,116 @@
           "scope_limit": "作者自製概念比較表，未複製 JACC 波形原圖；不能由三個概念欄直接推導個別病人的 filling pressure 或 preload。"
         }
       ]
+    },
+    "content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md": {
+      "status": "represented",
+      "source_review": "content/clinical-os/sepsis-visual-evidence-and-sources.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "AI_original_publisher_Figure_1_visual_inspection_and_source_context_check_not_independent_medical_review",
+      "rights_decision": "link to Springer original Figure 1 only; do not copy or adapt licensed original pixels",
+      "items": [
+        {
+          "locator": "Jin et al. International Journal of Emergency Medicine 2025;18:181, Case 1, original Figure 1a renal POCUS and Figure 1b abdominal CT, publisher Fig 1 page",
+          "source_token": "hydroureter",
+          "mode": "source_link",
+          "url": "https://link.springer.com/article/10.1186/s12245-025-00958-5#Fig1",
+          "why_link_instead": "Original POCUS and CT images belong to the published case series and carry publisher licensing conditions; link directly for enlargement rather than copying, redrawing, or presenting images as the site's own diagnostic measurements.",
+          "teaching_role": "Contrast left renal hydronephrosis on POCUS with distal ureteral stone and hydroureteronephrosis on CT to explain how an atypical presentation led to source localization and urgent decompression.",
+          "scope_limit": "Original Figure 1 is from the 78-year-old male Case 1 only. Hydronephrosis alone does not prove infection or the complete shock mechanism, and this three-case series cannot establish POCUS test sensitivity or treatment causality."
+        }
+      ],
+      "original_site_mermaid_note": "The two Mermaid diagrams in the reader are original qualitative mechanism illustrations, not reproduced publisher figures. Independent medical semantic and mobile render QA remain separate hard stops."
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-pericardial-tamponade.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pericardial-tamponade-sources.md",
+      "items": [
+        {
+          "locator": "IBCC Pericardial Tamponade, 2024, physiology and CVP versus pericardial pressure; ESC 2025 §11.8",
+          "source_token": "Pericardial tamponade",
+          "mode": "illustrated",
+          "anchor": "tamponade-mechanism",
+          "caption_token": "IBCC 2024",
+          "teaching_role": "將高 CVP 與降低的有效舒張充盈視覺化為可並存的兩個結果，避免把 CVP 當成心室有效前負荷；圖形對應正文的因果中介。",
+          "scope_limit": "原創定性生理示意，不能推算個別病人的實際心包壓、心輸出量、volume response 或治療適應症。"
+        },
+        {
+          "locator": "2025 ESC Guidelines European Heart Journal 46:3952, Table 17 Echocardiographic signs of cardiac tamponade, §11.8",
+          "source_token": "Table 17",
+          "mode": "source_link",
+          "url": "https://academic.oup.com/eurheartj/article/46/40/3952/8234483",
+          "teaching_role": "逐項校正 RA/RV collapse、IVC 與呼吸血流變異的臨床意義與限制，連回原始敏感與特異性範圍避免單數值確診。",
+          "scope_limit": "來源 HTML 表格非本病例觀察，研究族群異質且部分無可比效能，不能轉換為單一固定穿刺門檻。",
+          "why_link_instead": "原指南影像與表格有出版社著作權，本站導向權利人原頁供核查，不在缺乏重製授權時直接複製原像素。"
+        },
+        {
+          "locator": "JACC 2025 ACC Expert Consensus on Pericarditis, section 4.3.2 and Figure 10 echocardiography signs of tamponade",
+          "source_token": "Figure 10",
+          "mode": "source_link",
+          "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.05.023",
+          "teaching_role": "以原始超音波影像連接積液、RV collapse、流速變化和 IVC，對照 ESC Doppler 門檻寫法差異與不確定性。",
+          "scope_limit": "原 Figure 10 是文獻教學影像、不是 Azim 2010 病例的心超；動態檢查與臨床血流動力學仍不可由靜態圖替代。",
+          "why_link_instead": "ACC Figure 10 原圖授權未核實，提供來源文章的原始圖和 caption 而不嵌入未授權像素，以保留可稽核性。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/heart-sounds-structural-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9th ed. reader PDF pages 41 (HCM LVOTO) and 45 (AS flow/severity), previously visually checked in 108a-cardiac-sources.md",
+          "source_token": "HCM 第 41–42 頁",
+          "mode": "illustrated",
+          "anchor": "as-hcm-preload-compare",
+          "caption_token": "Pocket Medicine 第九版",
+          "teaching_role": "讀者可同時看到站立後相同前負荷下降，為何固定 AS 射出流量變少而動態 LVOTO 反而加劇；分歧點可直接支持 108-1 Q11 與 113-1 Q11。",
+          "scope_limit": "圖為原創、基於已存在原書核讀紀錄，並非 Pocket Medicine 9E 原圖或原書圖表完整複製；聲音反應只是典型模式，不能由動作單獨確診 AS/HCM。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/heart-sounds-cross-discipline-sources.md",
+      "items": [
+        {
+          "locator": "ASE/SCAI 2015 ASD/PFO Guidelines, original reader PDF pages 23 and 25, Figures 26–27, reviewed in existing 108a-cardiac-sources.md",
+          "source_token": "Figure 26–27",
+          "mode": "illustrated",
+          "anchor": "cross-asd-flow-auscultation",
+          "caption_token": "ASE/SCAI 2015",
+          "teaching_role": "將心房層級的左向右分流與三個不同聽診事件在時間與流向上對齊，讓 115-2 醫學四 Q10 的 A/B/C/D 各有完整因果判準。",
+          "scope_limit": "這是原創概念文字三欄，不是官方 Figures 26–27 的圖像重製；當右心流量、呼吸與肺血管阻力不同時 fixed S2 與 flow rumble 不是所有 ASD 均出現的徵象。"
+        }
+      ]
+    },
+    "content/clinical-os/acs.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/acs-exam-sources.md",
+      "items": [
+        {
+          "locator": "Fifth Universal Definition of Myocardial Infarction (2026), Section 7.2.1, original Figure 2: Diagnostic pathway for possible primary MI; PMC Figure F2 original source page/caption located; image pixels not independently inspected",
+          "source_token": "Figure 2 — Diagnostic pathway",
+          "mode": "source_link",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F2/",
+          "why_link_instead": "出版圖像具原始著作權，為提供原有解析度、圖例註腳及原文脈絡，僅連到原始來源，不公開重製原像素。",
+          "teaching_role": "圖分開標示持續 ST elevation 的緊急 working STEMI 與後續造影／心肌影像之病因確認，防止把等候 cTn 錯當為每個急診案例的必要步驟。",
+          "scope_limit": "圖無法替個別病人決定溶栓禁忌、再灌流可近性，也不能單靠一幅流程圖判定所有非典型 ECG 的急性冠脈阻塞。",
+          "pixel_verified": false,
+          "verification_scope": "Published figure identity, caption and source URL were located; no reviewer in this gate has documented a pixel-level inspection of arrows, branches, labels or footnotes. The article links to the publisher and does not reproduce figure pixels."
+        },
+        {
+          "locator": "Fifth Universal Definition of Myocardial Infarction (2026), Section 7.2.2, original Figure 4: Diagnostic pathway for possible secondary MI; PMC Figure F4 original source page/caption located; image pixels not independently inspected",
+          "source_token": "Figure 4 — Diagnostic pathway",
+          "mode": "source_link",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F4/",
+          "why_link_instead": "原始出版流程圖保留完整的影像判定箭頭及圖註；使用原作者官方原圖連結，避免在沒有重製授權時複製出版像素。",
+          "teaching_role": "顯示 acute injury 加供需失衡仍是 possible secondary MI，後續需依冠脈和心肌影像轉向 primary MI 或排除 MI，保留競爭病因。",
+          "scope_limit": "不能據此推論重症病人必須不顧風險立即作侵入性造影，也不能用敗血症加單一 troponin 數字推定已確認 secondary MI。",
+          "pixel_verified": false,
+          "verification_scope": "Published figure identity, caption and source URL were located; no reviewer in this gate has documented a pixel-level inspection of arrows, branches, labels or footnotes. The article links to the publisher and does not reproduce figure pixels."
+        }
+      ]
     }
   }
 }
