@@ -766,6 +766,42 @@
         }
       ]
     },
+    "content/xiaoma-reading/integrated/2026-10-27-infiltrative-alp-hypothesis.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/infiltrative-alp-sources-20261027.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_figure_and_editorial_check_not_independent_medical_review",
+      "rights_decision": "link_or_independent_html_original_only; no_book_pixels",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E Library PDF p.139 Figure 3-4 approach to infiltrative liver tests and differential workup",
+          "source_token": "Figure 3-4",
+          "mode": "illustrated",
+          "anchor": "fig-infiltrative-alp-update",
+          "caption_token": "Pocket Medicine 9E Figure 3-4",
+          "teaching_role": "Holding ALP/GGT fixed, compare three independent evidence branches (new medication/immune symptoms, new tumor lesions, systemic amyloid/proteinuria) to make diagnostic probability and next-step choices diverge; no ALP-to-infiltration shortcut.",
+          "scope_limit": "All three scenarios are hypothetical and illustrative rather than a validated algorithm; absence of mass does not exclude microscopic disease, ALP magnitude cannot define infiltration burden, suspected AL requires clinical pretest selection and tissue typing for confirmation."
+        },
+        {
+          "locator": "2026 ASH AL light chain amyloidosis diagnostic good-practice statements compared against Figure 3-4 SPEP line",
+          "source_token": "ASH 2026",
+          "mode": "illustrated",
+          "anchor": "fig-alp-claim-boundary",
+          "caption_token": "ASH 2026",
+          "teaching_role": "Expose the limits of SPEP, GGT and negative imaging; prevent false exclusion of AL amyloidosis from isolated negative SPEP.",
+          "scope_limit": "SIFE/UIFE/sFLC are relevant to clinically suspected AL; these are not universal tests for isolated ALP elevation and do not replace biopsy typing."
+        },
+        {
+          "locator": "Doe-Williams et al. Case Reports in Gastroenterology 2020;14:271-278, PMID 32518538 original case ALP 85 IU/L vs liver biopsy specimen 95% involvement",
+          "source_token": "Massive hepatomegaly",
+          "mode": "illustrated",
+          "anchor": "fig-alp-amyloid-real-case",
+          "caption_token": "Doe-Williams",
+          "teaching_role": "Use a published real case with specimen-confirmed extensive AL amyloidosis and normal measured ALP to falsify the assumption that ALP scales linearly with infiltration burden; disclose sample-versus-whole-organ distinction.",
+          "scope_limit": "Single patient is not a sensitivity estimate; biopsy 95% refers to sampled specimen rather than 95% of the entire liver; medical meaning and typing require original pathologic context."
+        }
+      ]
+    },
     "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md": {
       "status": "represented",
       "source_review": "content/xiaoma-reading/cirrhosis-sources-20261027.md",
