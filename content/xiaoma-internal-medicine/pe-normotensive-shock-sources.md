@@ -23,17 +23,17 @@ Rouleau SG, et al. **Management of Presumed Pulmonary Embolism With Normotensive
 
 ## 2. Pocket Medicine 第九版
 
-使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次讀到 **p.98–101 的文字解析與圖表位置**；V2 重試 p.99–100 的影像回讀，仍顯示 **Image unavailable**（無法逐像素目視）。重試原始 PDF raw-byte materialization 時，系統明確拒絕授權路徑（`This Project file does not have an authorized raw-byte materialization path`）。因此尚未重核 Figure 2-3 與 p.100 原表的完整原圖／caption／footnote。既有 GitHub [VTE 圖表來源紀錄](../xiaoma-reading/vte-sources.md) 曾記錄 2026-10-26/27 目視 p.97–100，**不冒稱本次已重新目視 p.98–101 的像素**。
+使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次先從第一個 Library PDF 副本讀到 **p.98–101 文字**，但 p.99–100 影像不可顯示；其 raw-byte materialization 亦遭授權路徑拒絕。**再從另一個同書名 Library 副本 `內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten(1).pdf`，成功回讀並直接目視第 99–100 頁的完整頁面影像與相鄰解析文字。**目前 Figure 2-3 與第 100 頁初始抗凝表的可見內容、標題、分支、表頭及可見表下注記已完成 AI 原頁核讀；第 97–98、101 頁並未在本次重新目視，該範圍只沿用既有作者原稿與 VTE 稽核定位。兩個副本的完整 byte hash 因無法 materialize 尚未比對，因此不宣稱版本逐位元一致。
 
 - **p.97**：Virchow triad 與 *Thromboprophylaxis* 情境表，屬 VTE 共同預防上游問題；本篇不重新抄錄預防藥物表。
 - **p.98**：DVT modified Wells 三層模型、**Figure 2-2 Approach to suspected DVT**，以及 PE Wells 開始；DVT 三層分組不應移植成 NICE 的 DVT 兩層演算法。
-- **p.99**：PE Wells 續表、**Figure 2-3 Approach to suspected PE**；注意陰性 CTPA 與 pretest probability 不一致時的限制。這是本篇「診斷證據」的原圖定位；**完整原圖分支／caption／footnote 本次尚未逐像素重核**。
-- **p.100**：sPESI、RV/biomarker 分層、初始抗凝與 reperfusion table；原書的分類主要依 ESC 2019，不能把 2026 AHA/ACC 的 A–E 直接說成原書內容。
+- **p.99**：已目視原頁 **Figure 2-3 Approach to suspected PE**：圖起點為 *Simplified Wells clinical PE probability*；**≤4 unlikely** → D-dimer，**≥500 ng/mL** 再進 CTA、**<500 ng/mL** 走 PE excluded；**>4 likely** 直接 CTA。CTA 陽性 → PE confirmed；CTA 陰性一般走排除，惟圖中央特別保留「高度臨床懷疑且無替代診斷時，考慮追加影像」的例外分支。原圖 caption 為 Figure 2-3 Approach to suspected PE；圖本身無可辨識的獨立編號腳註，例外條件明寫於分支之下。**該 500 cutoff 是原圖特定檢驗與歷史流程，非所有 assay／2026 醫療情境的通用值**。既有公開 VTE 主文提供完整 NICE 診斷分流，不複製原書或在此新增第二套混合演算法。
+- **p.100**：已目視 sPESI、RV/biomarker 分層及 **Initial Anticoagulation Options** 原表（Class／Dose／Comment 三欄），表上引文主要為 ESC 2019、CHEST 2021 等較早證據；列出 LMWH（enoxaparin/dalteparin）、UFH、DOAC（apixaban/rivaroxaban）及 HIT 情境替代藥物。上方文字有「高度懷疑且診斷延遲 ≥4 小時」與 platelets 的簡化提示；此為原書歷史條件，不能當成 2026 年所有可疑 PE 的無條件醫囑。原表對急性不穩定、腎功能、體重及孕期有例外欄，故不從截圖抽出單劑量就直接治療。下方另有 *Reperfusion therapy options* 的 systemic/catheter/surgical 並列摘要，沒有把它們說成同一類治療。**AHA/ACC 2026 A–E 是後來的另一套分類，不是原書原表的標示。**
 - **p.101**：mechanical intervention、IVC filter、抗凝療程與長期後果；本篇只抽取與「抗凝 vs 再灌流」直接相關的概念。
 
 **安全勘誤（不可忽略）**：PDF p.100 *Initial Anticoagulation Options* 將 rivaroxaban 起始療程印為 **15 mg qd ×21 d →20 mg/d**。這與 EINSTEIN-PE 原始 RCT 的 **15 mg twice daily for 3 weeks →20 mg once daily** 不符。核對 [EINSTEIN-PE, NEJM 2012](https://doi.org/10.1056/NEJMoa1113572) 的 methods。主文不給具體抗凝處方，以免錯誤表格被誤當床邊醫囑；實際處方另依藥品仿單、腎肝功能、禁忌與在地指引確認。
 
-圖像權利：Pocket PDF 不進公開站，不以文字圖或 AI 重繪冒稱 Figure 2-3 原圖。若原圖像素未能重核，這份新教材的 Figure/Table Gate 為 **pending**。出版社合法取得入口：[Pocket Medicine 9E](https://shop.lww.com/Pocket-Medicine/p/9781975242978)。
+圖像權利與驗收邊界：**2026-10-27 已完成第 99–100 頁原像素 AI 目視核對（不是獨立醫師審稿）**，但不可據此宣稱出版社允許將圖像像素上架。Pocket PDF 不進公開站，不以 NICE 或生成式圖片冒稱 Figure 2-3 原圖；公網以原書精確定位、[出版社合法取得入口](https://shop.lww.com/Pocket-Medicine/p/9781975242978)、已核對 [NICE NG158 原始 PE 分流圖](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 及獨立醫學推論為主。**原圖核讀缺口已縮小，但授權、病例來源數值一致性及讀者版面 QA 是獨立關卡。**
 
 ## 3. 當代正式指南
 
@@ -69,4 +69,4 @@ A：胸痛非 PE Wells 條件；B：高敏 D-dimer 於適當檢前機率可協�
 
 **狀態邊界：** 原題及答案核對完成，不代表文章圖像／醫學／手機版 QA 過關；本分支仍未修改 `site/pages.json`，故**沒有建立公開年度索引與真正可用的雙向網頁連結**。等完整文章達發布門檻時，再與年度索引一起加入；不得先將草稿記為上線題數。
 
-第三方 ECG、血栓照片、Pocket Figure 2-3、JACC 分類原圖均未公開重製。此版本沒有假稱可放大的原圖入口；亦未完成手機 360/390px、深色模式、CI、Cloudflare 或正式 HTTPS 正文讀回。**發布判定 HOLD：原圖像素／註腳未重核、試驗 supplement 未核、版面及獨立醫學 QA 未驗證。官方 112（二）Q51 已核題，但尚未註冊公開年份索引，不能拿它抵銷其他門檻。指引 2026-07-14 correction 的文字已核讀，但原圖未完成目視。** 這些是不同缺口，不能以單次 AI 自評或 GitHub 提交取代。
+第三方 ECG、血栓照片、Pocket Figure 2-3、JACC 分類原圖均未公開重製。此版本沒有假稱可放大的原圖入口；亦未完成手機 360/390px、深色模式、CI、Cloudflare 或正式 HTTPS 正文讀回。**發布判定 HOLD：Pocket p99–100 影像已經由另一副本 AI 目視核讀，餘下試驗 supplement 取證／病例數值歧義處理／版面及獨立醫學 QA 尚未完成驗證。官方 112（二）Q51 已核題，但尚未註冊公開年份索引，不能拿它抵銷其他門檻。指引 2026-07-14 correction 的文字已核讀，但原圖未完成目視。** 這些是不同缺口，不能以單次 AI 自評或 GitHub 提交取代。
