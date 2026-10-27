@@ -76,11 +76,11 @@ class SepsisFigureSourceGate(unittest.TestCase):
         # Site's native flowchart renderer only recognizes boxed nodes and plain arrows.
         import re
         article = (ROOT / ARTICLE).read_text(encoding="utf-8")
-        blocks = re.findall(r"~~~mermaid\\n([\\s\\S]*?)\\n~~~", article)
+        blocks = re.findall(r"~~~mermaid\n([\s\S]*?)\n~~~", article)
         self.assertGreaterEqual(len(blocks), 2)
         for index, block in enumerate(blocks):
-            nodes = {name for name, _ in re.findall(r'([A-Z])\\["([^"]+)"\\]', block)}
-            edges = re.findall(r'\\b([A-Z])(?:\\["[^"]+"\\])?\\s*-->\\s*([A-Z])', block)
+            nodes = {name for name, _ in re.findall(r'([A-Z])\["([^"]+)"\]', block)}
+            edges = re.findall(r'\b([A-Z])(?:\["[^"]+"\])?\s*-->\s*([A-Z])', block)
             self.assertTrue(edges, "Diagram %d has no parseable edges" % index)
             self.assertTrue(all(a in nodes and b in nodes for a, b in edges),
                             "Diagram %d has edges to unsupported or undefined nodes" % index)
