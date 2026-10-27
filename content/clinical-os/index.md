@@ -137,7 +137,7 @@
 ## 全部文章索引
 <span id="article-index" class="atlas-target"></span>
 
-依主題展開可直接找到全部已公開文章；閱讀先後與跨篇關係見上方各臨床分支。[正式國考題也可按年度查找](../xiaoma-internal-medicine/exams/index.md)。歷史原稿集中於典藏分類，新版整合教材列於各主題。
+依主題展開可直接找到全部已公開文章；閱讀先後與跨篇關係見上方各臨床分支。[正式國考題也可按年度查找](../xiaoma-internal-medicine/exams/index.md)。歷史原稿與新版整合教材同樣按臨床主題排列；「原稿」僅標示版本身分，不是另一個知識分類。
 
 <!-- XIAOMA_ATLAS_ARTICLES -->
 
