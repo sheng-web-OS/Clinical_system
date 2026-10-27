@@ -902,7 +902,7 @@
       "items": [
         {
           "locator": "Jin et al. International Journal of Emergency Medicine 2025;18:181, Case 1, original Figure 1a renal POCUS and Figure 1b abdominal CT, publisher Fig 1 page",
-          "source_token": "Fig 1",
+          "source_token": "hydroureter",
           "mode": "source_link",
           "url": "https://link.springer.com/article/10.1186/s12245-025-00958-5#Fig1",
           "why_link_instead": "Original POCUS and CT images belong to the published case series and carry publisher licensing conditions; link directly for enlargement rather than copying, redrawing, or presenting images as the site's own diagnostic measurements.",
