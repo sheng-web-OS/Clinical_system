@@ -89,6 +89,30 @@ class SepsisFigureSourceGate(unittest.TestCase):
                 self.assertIn(("F", "K"), edges, "Perfusion deficit must visibly connect to circulation support")
 
 
+    def test_first_use_of_critical_abbreviations_is_reader_friendly(self):
+        # First use must define the term before introducing the shorthand.
+        # This is a reader clarity check, not a clinical correctness verdict.
+        article = (ROOT / ARTICLE).read_text(encoding="utf-8")
+        exam = (ROOT / "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md").read_text(encoding="utf-8")
+        for name, text, expansions in (
+            ("Sepsis article", article, {
+                "IBCC": "Internet Book of Critical Care（IBCC）",
+                "SSC": "Surviving Sepsis Campaign（SSC）",
+                "IVC": "inferior vena cava，IVC",
+                "HFNC": "high-flow nasal cannula，HFNC",
+            }),
+            ("Sepsis exam reader", exam, {
+                "SSC": "Surviving Sepsis Campaign（SSC）",
+            }),
+        ):
+            for abbreviation, expansion in expansions.items():
+                with self.subTest(document=name, abbreviation=abbreviation):
+                    first = text.find(abbreviation)
+                    self.assertGreaterEqual(first, 0, "Abbreviation must occur in the reader")
+                    self.assertIn(expansion, text[:first + len(abbreviation) + 2],
+                                  "Expand %s at first use, not in a later source note" % abbreviation)
+
+
     def test_exam_reader_has_no_duplicate_auto_generated_anchor_ids(self):
         # The site renderer inserts official exam-* IDs for canonical embedded questions.
         # Keep stable q-* links for the Sepsis narrative but never pre-emit exam-*.
