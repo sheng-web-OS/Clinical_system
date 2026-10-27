@@ -16,7 +16,7 @@ Rouleau SG, et al. [Management of Presumed Pulmonary Embolism With Normotensive 
 
 **後續病程。** CT 顯示右主肺動脈殘餘血栓；機械取栓後逐步脫離 ECMO；同時發生股部血腫與出血性休克。後續影像支持肺動脈血栓確實存在，但救援與重大出血代價在同一病例中並存。
 
-**原文內部數據疑義。** 如果初始 VBG pH 7.06 與 pCO₂ 15 mmHg 為同一檢體，按 Henderson–Hasselbalch 近似計算，該血氣的 bicarbonate 約為 **4.1 mEq/L**；這與同段 chemistry HCO₃ **9 mEq/L** 不一致。原報告未提供可證實的抽血時間差或勘誤。兩者皆應按原文保留，**不能自行補造時間點、將靜脈 pCO₂ 代入動脈 Winter 公式，或由此宣稱量化了呼吸代償失敗**。本病例足以呈現臨床惡化的危險訊號，但不是可用來精算混合酸鹼障礙的可靠例題。
+**原文內部數據疑義（僅供來源稽核，不作定量酸鹼判讀）。** 原文初始 VBG pH 7.06／pCO₂ 15 mmHg 與另列的 chemistry HCO₃ 9 mEq/L 在假設同時同一酸鹼狀態時互不相容；原報告未說明足以確認的採血時間差或勘誤。保留原作者各別報告值，是為了讓讀者查核來源，而**不是**把它們組成一套可計算的血氣。本文不以這些數字推算 bicarbonate、Winter 代償、混合性酸鹼障礙、精確氧債或 PE 特異性組織缺氧。臨床急迫性依呼吸窘迫、意識與循環變化等連續資訊辨認。數學不一致的內部算式只保留於 PR 稽核紀錄，不當作病人量測結果。
 
 該報告 Figure 1 為 ECG（S1Q3T3），Figure 2 為取出的血栓，不是初始 CTPA filling defect。本文未重製期刊照片；圖像若需直接引用，須另核對原像素、caption 與使用權。
 
@@ -26,7 +26,7 @@ Rouleau SG, et al. [Management of Presumed Pulmonary Embolism With Normotensive 
 
 **第 99 頁 Figure 2-3 — Approach to suspected PE。** 原圖把 simplified Wells PE probability 分為 **≤4 unlikely** 和 **>4 likely**；unlikely 再依 D-dimer 分支，原圖門檻標示 **500 ng/mL**，likely 進 CT angiography。CTA 陽性走 PE confirmed；CTA 陰性通常可排除，但原圖另留有「高度臨床懷疑且沒有替代診斷時，可考慮追加影像」的條件分支。這個例外特別重要：**影像結果必須與檢前機率及影像品質一起解讀**。原圖的數值與流程不應脫離 assay、FEU／DDU 單位及現行驗證演算法，當作所有情境的固定規則。
 
-**第 100 頁 Initial Anticoagulation Options。** 原表將 LMWH、UFH、DOAC 的初始選擇、劑量和例外條件排在 *Class／Dose／Comment* 三欄，並列出腎功能、懷孕、不穩定與考慮介入等限制。須特別警示原書把 rivaroxaban 起始療程寫成 **15 mg once daily × 21 days → 20 mg/day**；這與 [EINSTEIN-PE 隨機試驗](https://doi.org/10.1056/NEJMoa1113572) 的 **15 mg twice daily for 3 weeks → 20 mg once daily** 不符。**原書這一行不應直接用於處方**。實際起始療程仍須回查正式仿單、禁忌、腎肝功能與個別病況。
+**第 100 頁 Initial Anticoagulation Options。** 原表將 LMWH、UFH、DOAC 的初始選擇、劑量和例外條件排在 *Class／Dose／Comment* 三欄，並列出腎功能、懷孕、不穩定與考慮介入等限制。須特別警示原書把 rivaroxaban 起始療程寫成 **15 mg once daily × 21 days → 20 mg/day**；這與 [EINSTEIN-PE 隨機試驗](https://doi.org/10.1056/NEJMoa1113572) 及 [美國 DailyMed 正式 rivaroxaban 標示](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610) 的 **15 mg twice daily for 21 days → 20 mg once daily** 不符。**原書這一行不應直接用於處方**。實際起始療程仍須回查最新在地仿單、禁忌、腎肝功能與個別病況。
 
 同頁另有 sPESI、RV dysfunction／biomarker 和 reperfusion options，分類主要取自早期 ESC 與 CHEST 文獻。**2026 AHA/ACC 的 A–E categories 不是 Pocket Medicine 原圖既有的分類**；不可讓讀者誤認新舊系統完全等價。
 
