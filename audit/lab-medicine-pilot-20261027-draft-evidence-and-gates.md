@@ -6,7 +6,7 @@ Issue #180。兩篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD*
 ## 已核對來源與存取層級
 - NICE AKI NG148（直接讀取建議文字）：https://www.nice.org.uk/guidance/ng148/chapter/Recommendations 。成人 SCr 48h +26 µmol/L、7d +50%、尿量 <0.5 mL/kg/h >6h；尿液 dipstick；超音波不是所有 AKI 都需例行安排。
 - KDIGO AKI 官方頁（已核讀）：https://kdigo.org/guidelines/acute-kidney-injury/ 。2026 AKI/AKD 仍是 public-review draft，未正式出版。
-- UK Kidney Association hyperkalemia 官方頁（已核讀）：https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0 。網頁附 July 2026 update PDF，**尚未逐頁查 PDF 分支與藥物劑量**，稿件因此不提供劑量。
+- UK Kidney Association hyperkalemia 官方頁（已核讀）：https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0 。已開啟 July 2026 官方 PDF 180 頁，目視核對印刷第 7、14、15 頁（viewer pages 6、13、14），包含假性高血鉀 Guideline 15.3 的成對 heparin plasma / clotted serum、16.2-16.6 的重要安全處置與 17.1-17.2 重測及血糖監測；**沒有完成完整 Appendix 原圖分岔與台灣院內劑量審核**，稿件因此不提供固定劑量。
 - BMJ 2026 急性高血鉀診療可見 HTML（已核讀）：https://www.bmj.com/content/394/bmj-2026-100287 。ECG 不能敏感排除，高風險立即處置與確認需並行。
 - AHRQ PSNet 2017 Hemolysis Holdup（真實案例及專家評論全文已核對）：https://psnet.ahrq.gov/web-mm/hemolysis-holdup 。72M，K 7.4（溶血）→重驗 8.4，等待期間惡化與 cardiac arrest；不能用 case report 外推一般發生率或治療效果。
 - Kanjee/Lippi/Freed 2026 Mayo Clin Proc（PubMed abstract/出版商 highlights，未取得訂閱全文逐頁）：https://pubmed.ncbi.nlm.nih.gov/42134749/ 。體外溶血、EDTA clumping、heparin-line 與凝血採樣干擾。
@@ -26,7 +26,7 @@ Issue #180。兩篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD*
 
 ## 獨立發布閘門／待辦
 1. 逐段 reviewer **必須與寫作者分離**，覆蓋每段 reader gain、redundancy、推論界線、EPQC A–G 與危險反例；此文件不能自簽 independent_ai_pass。
-2. 高風險來源補查：2026 UKKA 高血鉀原 PDF 全部算法／2026 KDIGO 草案 vs 正式；Q26 題圖／官方答案 PDF；以及若新增精確治療劑量必須正式逐項審。
+2. 高風險來源補查：2026 UKKA 高血鉀原 PDF 未讀的完整 Appendix 算法／2026 KDIGO 草案 vs 正式；Q26 題圖／官方答案 PDF；以及若新增精確治療劑量必須正式逐項審。
 3. 使用 repo tooling 實際完成 python site/semantic_gate.py --packet、獨立 receipt、python tools/validate.py、bash tools/build_site.sh；手機 360/375/390px 與相互連結，不能只用 Markdown 已寫入假稱驗收。
 4. 所有新公開教材必須先過 site/pages.json allowlist 的編輯發布流程；目前不提交出版 manifest。
 5. Pilot 後以未見病例驗證理解遷移、重大安全錯誤、編輯返工次數與使用者投入；AI 自評不是教學效果。
