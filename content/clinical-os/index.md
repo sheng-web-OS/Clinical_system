@@ -61,6 +61,8 @@
 
 心雜音有「解剖結構」與「當下血流條件」兩個來源。固定瓣膜狹窄、動態流出道阻塞、容量負荷及冠脈缺血也不在同一個分類層。**同樣因站立減少 preload，AS 和 HOCM 雜音的變化可能相反**；不能拿一個聽診名稱代替血流機轉。
 
+**心音與歷年國考整合：** 先讀[從 S1／S2 到結構性心臟病：18 道國考辨識與改判](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md)，建立時序、呼吸與姿勢、AS／AR／MS／MR、先天性分流、HCM、IE 與結構介入的共同解題模型；再把其中不熟的機轉返回下方深度文章。圖像題仍以考選部原卷實際附圖為準。
+
 **建議順序：** [HCM：Nonobstructive 不等於沒有其他功能障礙](../xiaoma-reading/originals/2026-07-14-hcm.md) → [AS／AR：EF、flow 與 gradient](../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md) → [DCM：形態與前向血流不相同](../xiaoma-reading/integrated/2026-10-21-dcm.md)。
 
 **冠狀缺血閱讀路線：** [ACS：從缺血的證據到治療後剩餘風險](acs.md)接回另一種胸痛：症狀、ECG、cTn 是不同層次的證據，不能把「沒有典型 STE」直接解讀為「沒有需要緊急處理的缺血」。沿該入口進入原 ACS 四章課程（診斷 → ECG → 抗栓／再灌流 → MI 後風險），並以 **113（二）Q6、114（二）Q6／Q9、115（二）Q11–13** 六道正式國考題逐段檢驗推理，接回本地圖的[灌流分支](#perfusion)理解 post-MI 低血壓、EF、LVEDP 與前向流量的不同意義。這是缺血到心室功能的概念橋，不代表所有缺血都必然造成低 EF。
