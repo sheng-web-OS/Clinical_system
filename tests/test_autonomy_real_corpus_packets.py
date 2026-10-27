@@ -31,7 +31,7 @@ def snapshot():
     cases = []
     for ident, (path, git_blob) in SOURCES.items():
         raw = (ROOT / path).read_bytes()
-        calculated = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\x00" + raw).hexdigest()
+        calculated = hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
         if calculated != git_blob:
             raise ValueError("source article changed: " + ident)
         cases.append({"id": ident, "path": path, "sha256": hashlib.sha256(raw).hexdigest()})
