@@ -100,7 +100,7 @@ ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 
 
 ### T+72｜療程並非「一律 7 天」或「一定 14 天」
 
-2025 IDSA 對有臨床反應的 cUTI、尤其有效治療後，傾向較短療程：部分 fluoroquinolone 情境約 5–7 天，非 fluoroquinolone 約 7 天；療程以**第一天 effective therapy** 起算，而非任何曾給過但對病原無效的藥。若 source control 延遲、重症、CKD、完全阻塞、腎／攝護腺膿瘍、男性 acute prostatitis 疑慮或臨床反應不佳，研究適用性受到限制，需個別化。指南對可能 acute bacterial prostatitis 的男性 febrile bacteremic UTI 提及可能需要 10–14 天以上的差異評估，不能因男性就自動宣告每位都 14 天。([IDSA cUTI 2025：Duration, Figure 1.3 and exclusions](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections))
+2025 IDSA 對有臨床反應的 cUTI、尤其有效治療後，傾向較短療程：部分 fluoroquinolone 情境約 5–7 天，非 fluoroquinolone 約 7 天；療程以**第一天 effective therapy** 起算，而非任何曾給過但對病原無效的藥。**若當次確定合併 Gram-negative bacteremia**，同一指引另對**臨床改善、已接受有效抗菌治療**者提出 **7 天而非 14 天**的**條件性**短療程建議，證據確定性為**低**；這不等於每位菌血症或阻塞性休克患者都能直接套用 7 天。若 source control 延遲、重症、CKD、完全阻塞、腎／攝護腺膿瘍、男性 acute prostatitis 疑慮或臨床反應不佳，研究適用性受到限制，需個別化。指南對可能 acute bacterial prostatitis 的男性 febrile bacteremic UTI 提及可能需要 10–14 天以上的差異評估，不能因男性就自動宣告每位都 14 天。([IDSA cUTI 2025：Duration, Figure 1.3 and exclusions](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections))
 
 ## 反事實測試：三個改動，醫囑應如何翻轉？
 
