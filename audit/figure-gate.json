@@ -765,6 +765,33 @@
           "scope_limit": "單一病例內存在指標持續時間、Hb 時點及 heparin 劑量不一致；示意圖不代表同步個體時間序列、無法計算術後 DO2，也不能推導固定輸血或升壓門檻。"
         }
       ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/liver-gi-source-review-20261027.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "ai_source_figure_and_editorial_check_not_independent_medical_review",
+      "rights_decision": "link_or_independent_html_original_only; no_book_pixels",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E Library PDF pp.145-147 CIRRHOSIS Definition Workup Prognosis; Baveno VIII 2026 Panels 1 3 7",
+          "source_token": "CIRRHOSIS",
+          "mode": "illustrated",
+          "anchor": "fig-cirrhosis-five-axes",
+          "caption_token": "Baveno VIII",
+          "teaching_role": "Separate histologic structure, risk of CSPH, liver function, actual decompensating events and prognosis to avoid one-axis severity claims.",
+          "scope_limit": "Noninvasive cutoffs have a restricted population of use and individual outcomes cannot be inferred from a single score or liver stiffness measurement."
+        },
+        {
+          "locator": "Baveno VIII 2026 Panel 3 first decompensation criteria versus varices without bleeding",
+          "source_token": "Baveno VIII",
+          "mode": "illustrated",
+          "anchor": "fig-cirrhosis-event-discrimination",
+          "caption_token": "Baveno VIII",
+          "teaching_role": "Compare patients with identical structural disease but distinct clinical event history and show why first decompensation changes management.",
+          "scope_limit": "The example is hypothetical; varices indicate portal-hypertension risk but without bleeding do not alone meet the definition of clinical decompensation."
+        }
+      ]
     }
   }
 }
