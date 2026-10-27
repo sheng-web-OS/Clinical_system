@@ -224,6 +224,12 @@ def main():
         if not source_image.is_file():
             raise FileNotFoundError("Reviewed source figure missing: " + str(source_image))
         shutil.copyfile(source_image, DIST / image_name)
+    # Ship each reviewed locally authored lesson SVG beside the flat generated HTML route.
+    if any(page["output"] == "xiaoma-20261027-cticu-oxygen-delivery.html" for page in PAGES):
+        oxygen_figure = BASE / "content/xiaoma-internal-medicine/lessons/cticu-oxygen-delivery-two-paths.svg"
+        if not oxygen_figure.is_file():
+            raise FileNotFoundError("CTICU oxygen delivery figure missing: " + str(oxygen_figure))
+        shutil.copyfile(oxygen_figure, DIST / oxygen_figure.name)
     rendered = {}
     rows=[render(*entry, rendered=rendered) for entry in FILES]
     connected = connect_exam_reading(PAGES, rendered, BASE)
