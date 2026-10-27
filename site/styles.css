@@ -18,6 +18,13 @@
 .reading-toc summary span{margin-left:10px;font-size:.77rem;color:var(--muted)}
 .reading-toc .toclinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 20px;padding:18px 0 8px}
 .reading-toc a{text-decoration:none;font-size:.83rem;line-height:1.6}
+/* Version provenance is secondary to the current clinical reading route. */
+.article .atlas-source-link,.article .atlas-origin-note{font-size:.72em;color:var(--muted);font-weight:400;margin-left:.45em}
+.article .atlas-source-link a{font-size:inherit}
+.article .archive-version-list{margin:1em 0 2em;padding-left:1.4em}
+.article .archive-version-list li{padding:.25em 0;line-height:1.6}
+.article .archive-version-list small{display:block;color:var(--muted);font-size:.72em}
+.original-reading-primary{font-size:.88em;line-height:1.65;color:var(--muted);margin:1em 0}
 .original-list{display:grid;gap:18px;margin:38px 0 48px}
 .original-card{display:grid;gap:12px;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:6px;padding:26px 30px;background:var(--surface);text-decoration:none;transition:box-shadow .18s,transform .18s}
 .original-card:hover{opacity:1;box-shadow:var(--shadow);transform:translateY(-2px)}
@@ -878,3 +885,19 @@
 .reading-prose .alp-evidence-route .alp-evidence-action{border-top:1px solid var(--line,#d8dedb);margin-top:.75rem;padding-top:.65rem}
 .reading-prose .alp-evidence-conclusion{margin:.85rem 0 .3rem;padding:.8rem .9rem;border-radius:8px;background:var(--brand-light,#edf3f5);font-size:.91rem;line-height:1.72}
 @media(max-width:850px){.reading-prose .alp-evidence-branches{grid-template-columns:1fr}.reading-prose .alp-evidence-route{padding:.8rem}.reading-prose .alp-evidence-conclusion{padding:.7rem}}
+
+
+
+
+/* Clinical osmotic gap: numerical evidence visualization, synthetic data explicitly labeled. */
+.reading-prose .osm-gap-scale{display:flex;justify-content:space-between;padding:0 0 0 .2rem;margin:1.2rem .2rem .4rem;max-width:100%;color:var(--muted);font-size:.77rem}
+.reading-prose .osm-gap-case{margin:0 0 .7rem;padding:.9rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;max-width:100%;box-sizing:border-box}
+.reading-prose .osm-gap-case-head{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.reading-prose .osm-gap-case-head strong{font-size:.95rem}
+.reading-prose .osm-gap-case-head b{font-size:1.05rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.reading-prose .osm-gap-meter{margin:.65rem 0;height:18px;border:1px solid var(--line);background:linear-gradient(to right,var(--surface) 33.3%,var(--brand-light) 33.3%,var(--brand-light) 66.7%,var(--surface) 66.7%);border-radius:5px;overflow:hidden}
+.reading-prose .osm-gap-meter span{display:block;height:100%;min-width:2px;background:var(--brand);border-right:2px solid currentColor}
+.reading-prose .osm-gap-case p{font-size:.9rem;line-height:1.7;margin:.35rem 0 0}
+@media(max-width:680px){.reading-prose .osm-gap-case{padding:.65rem .7rem}.reading-prose .osm-gap-case-head strong{font-size:.9rem}}
+
+

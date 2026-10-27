@@ -8,7 +8,6 @@
 - [考選部更正答案公告，PDF 第 1 頁](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=M#page=1)：第 6 題 **D**；本題沒有更正。第 22、62、78 題有更正，不能因整卷有更正而誤稱 Q6 有更正。
 - **原題依舊版定義**：D 選項的第 5 型 MI、cTn >10× 99th percentile，是 2018 [Fourth UDMI §10，CABG-related MI](https://www.jacc.org/doi/10.1016/j.jacc.2018.08.1038) 的舊制生物標記門檻之一。**門檻本身不能單獨確診 Type 5 MI**，仍須其他新缺血證據、時間及基線條件。原題措辭「應至少有一次升高十倍」是必要而非充分的概念。
 - **時效性重大修訂**：[2026 Fifth UDMI](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/)（2026-08-28 發布，Table 1／§7.2.3／Box 5）已用 primary、secondary、procedure-related 三類取代舊數字型分類，procedure-related MI 涵蓋 30 日內相關冠脈併發症，診斷整合標記、臨床／ECG 與冠脈或心肌影像證據；**不能再將 Type 5 的 10× 規則當作 2026 年現行完整標準**。
-- 尚未額外認證考題來源之外的任何醫學觀察、病例影像或臨床實際處置。
 
 ## 114 年第二次醫師第二階段・醫學（三）第 6、9 題
 
@@ -28,8 +27,8 @@
 - [2022 AHA LV thrombus 科學聲明（ACC clinical summary）](https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/09/23/13/56/Management-of-Patients-at-Risk)：post-MI 影像已確診 LV thrombus，通常考慮約三個月 OAC，依影像、出血與合併抗板策略調整；原卷寫可考慮 3–6 個月，不能機械變成每一位 DES 病人的固定處方。
 - **重要邊界：**Q11 在四選項中 B 最適當，不表示選項只有硝酸甘油就足夠，仍須緊急再灌流；Q13 是定性缺血演變模型，不能將 perfusion、mechanical dysfunction、ECG、cTn 的觀察時間誤寫為每個病例必然等秒數出現。
 
-## 跨篇定位與尚未完成的項目
+## 如何使用來源對照
 
-- [ACS 四章整合入口](../clinical-os/acs.md)：診斷 MI 類別／ECG 證據／抗凝–抗板–PCI 的角色／MI 後心衰。
-- 先保留官方 PDF 連結讓讀者自行放大原卷；不重新上傳試題 PDF、原始 ECG 圖或講者 PPT。這三題不依賴獨立原卷附圖；未聲稱檢查 113／114 年所有其他 ACS 題。
-- 以上是**來源及選項對讀記錄**，不是整套 ACS 33 節全面新指引稽核；原站所有原圖、互動、33 單元正式校訂仍依 PR #123 Draft/HOLD。
+若想核對題幹及官方答案，可直接開啟上述考選部原卷和更正公告。若想理解每題在 ACS 診斷、處置與長期追蹤中檢查的臨床關係，請返回[ACS 四章整合入口](../clinical-os/acs.md)。
+
+這份來源對照聚焦上述題號、其作答年代的標準答案，以及會影響今天臨床解讀的文獻差異；不能據此推論其他國考題或整份 ACS 課程皆已逐項完成同樣的文獻校訂。官方原卷與圖像請透過原站連結閱讀。
