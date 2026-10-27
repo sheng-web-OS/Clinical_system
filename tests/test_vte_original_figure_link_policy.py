@@ -29,7 +29,8 @@ class VTEOriginalFigureLinkPolicy(unittest.TestCase):
 
     def test_source_and_seo_do_not_claim_unusable_image_links(self):
         source = SOURCE.read_text(encoding="utf-8")
-        self.assertIn("連結可用性複查", source)
+        self.assertIn("圖像的原始身分與可閱讀範圍", source)
+        self.assertIn("不以不穩定直連當作圖像已交付", source)
         self.assertIn(VERIFIED_FLOW, source)
         self.assertNotIn("https://www.jkms.org/ViewImage.php", source)
         pages = json.loads(PAGES.read_text(encoding="utf-8"))

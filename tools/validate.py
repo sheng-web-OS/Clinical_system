@@ -8,6 +8,37 @@ root=Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root / "site"))
 from catalog import load_pages
 
+
+# Reader-facing source is not the GitHub editorial changelog. These patterns
+# are intentionally high-confidence rather than generic terms such as
+# "review", "source", "not yet", or "updated", which can be clinically essential.
+# The historical author originals are immutable and not subject to this rule.
+_PUBLIC_COPY_LEAK_RULES = (
+    ("PR or issue bookkeeping", re.compile(r"\b(?:PR|Issue)\s*#\d+\b", re.I)),
+    ("question intake accounting", re.compile(
+        r"不重複計數|本次新增.{0,24}(?:題|題號)|本輪新增|"
+        r"原已收錄於|本次新建.{0,24}(?:題|題號)"
+    )),
+    ("deployment / workflow log", re.compile(
+        r"GitHub Actions run\s*\d+|Cloudflare production commit|"
+        r"\b(?:Draft\s*/\s*HOLD|HOLD\s*/\s*Draft)\b", re.I
+    )),
+)
+
+
+def public_copy_leak_errors(source, text):
+    """Find clear editorial worklog in a published reader page (not medicine)."""
+    if "/originals/" in source:
+        return []
+    errors = []
+    for line_no, line in enumerate(text.splitlines(), 1):
+        for reason, expression in _PUBLIC_COPY_LEAK_RULES:
+            if expression.search(line):
+                errors.append(f"{source}:{line_no}: public editorial metadata ({reason})")
+                break
+    return errors
+
+
 def private_pilot_errors():
     """Preserve the original private sample checks without requiring public output."""
     s=(root/"content/tamponade.md").read_text(encoding="utf8")
@@ -35,8 +66,11 @@ def main():
     errors=[]
     try:
         pages=load_pages(root)
-        for name in [row["source"] for row in pages]:
+        for row in pages:
+            name = row["source"]
             text=(root/name).read_text(encoding="utf8")
+            if row.get("kind") != "historical_original":
+                errors.extend(public_copy_leak_errors(name, text))
             for target in re.findall(r"\[[^]]*\]\(([^)]+)\)",text):
                 if not target.startswith(("http://","https://","#")):
                     p=(root/name).parent/target.split("#")[0]
