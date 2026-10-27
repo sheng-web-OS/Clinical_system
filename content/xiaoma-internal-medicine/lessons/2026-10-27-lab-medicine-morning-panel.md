@@ -133,7 +133,7 @@ Platelet 154 ×10³/µL 可能落在某些實驗室參考範圍內，但從 232 
 4. *Laboratory Artifacts in Clinical Medicine: A Review*, Mayo Clinic Proceedings, 2026. https://doi.org/10.1016/j.mayocp.2026.04.009
 5. KDIGO, *Acute Kidney Injury Clinical Practice Guideline*, 2012，經官方主題頁定位；本篇以 NICE 的 HTML 正文核對現行標準判準。https://kdigo.org/guidelines/acute-kidney-injury/
 6. KDIGO 官方 AKI/AKD 頁記載 2026 **draft for public review / preparing for publication**，此時不可當成已生效新指引。https://kdigo.org/guidelines/acute-kidney-injury/
-7. Clinical_system 已有《pH 正常，為什麼仍可能有兩個酸鹼障礙？》與 Pocket Medicine 9E 對照來源，作為酸鹼延伸的先備教材；本篇只使用同時點生化、AG 與 Winter 檢查，不宣稱直接查核原圖。相應臨床正文：../2026-10-23-acid-base.md
+7. Clinical_system 已有《pH 正常，為什麼仍可能有兩個酸鹼障礙？》與 Pocket Medicine 9E 對照來源，作為酸鹼延伸的先備教材；本篇只使用同時點生化、AG 與 Winter 檢查，不宣稱直接查核原圖。相應臨床正文：2026-10-23-acid-base.md
 8. European Clinical Practice Guideline on Hyponatraemia, 2014，作為電解質章的原始診斷方法索引；本篇的 glucose 校正只是粗估，正式鈉水章需逐段驗證校正與限制。https://academic.oup.com/ejendo/article/170/3/G1/6668028
 9. MedlinePlus, *Complete Blood Count* 與 *Blood Differential*，用於測量定義及 DC 的臨床非特異性，不作為嗜中性球低下療法門檻來源。https://medlineplus.gov/lab-tests/complete-blood-count-cbc/ ; https://medlineplus.gov/lab-tests/blood-differential/
 10. Choosing Wisely Canada, *Using Labs Wisely*；Washington University Laboratory Utilization CBC/BMP 指引。適用於**臨床與檢驗穩定、缺乏新問題的住院患者**，不是對急重症少抽血的絕對規則。https://choosingwiselycanada.org/hospitals/labs-test/ ; https://sites.wustl.edu/laboratoryutilization/items/complete-blood-count-cbc-without-differential-blood-lab294-basic-metabolic-panel-bmp-lab15-comprehensive-metabolic-panel-cmp-lab17/
