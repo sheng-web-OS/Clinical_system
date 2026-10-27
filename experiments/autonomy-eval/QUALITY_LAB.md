@@ -68,7 +68,19 @@ python tools/autonomy_quality_lab.py judge --grades /private/blind-grades.json
 
 Provide at most two ratings per item, with opaque candidate IDs, opposite candidate order, `choice=left|right|tie` and distinct reviewer contexts. The checker normalizes winner identity and reports `STABLE`, `ORDER_SENSITIVE`, or `INCOMPLETE`. Stable means only that *this narrow order effect was not observed in two ratings*, not that an answer is medically sound. The grader must never see the arm mapping during grading. Expert calibration, content validity and serious-error HOLD remain separate; no success from this check authorizes publication.
 
-## 5. The missing autonomy runtime
+## 5. Source-context rebuttal gate (development only)
+
+Use the original complete **unmodified** source and a generated response file:
+
+```bash
+python tools/autonomy_quality_lab.py context --article content/xiaoma-reading/integrated/2026-10-21-dcm.md --response /private/model-review.txt
+```
+
+The command finds each `原文` quote in the original, ignoring paragraph whitespace only, captures its source location plus nearby text, and flags the narrow cases where a critique reverses a caveat (e.g. `不是所有` mistakenly treated as "all", `至少` as "only"). Flagged claims require the Agent to **re-read and rebut from the actual context** before proposing a correction. Unflagged claims remain unverified. **Never auto-accept, auto-reject, publish, or solicit owner approval from this lexical signal alone.**
+
+**Retrospective result:** 7/16 known real Workers AI DCM suggestions were flagged (Baseline 3/8, Lite 4/8); 10 engineered regression/negative-control tests passed in the full CI. This is not a hidden or independently medical-graded benchmark. [Experiment and decisions](CONTEXT_REBUTTAL_RETROSPECTIVE_20261027.md). Do not deploy this rule as a production release gate or infer a reduction in owner attention until unseen articles, clean controls and human-calibrated adjudication are measured.
+
+## 6. The missing autonomy runtime
 
 PR #159's read-only verifier is an **attestation gate**, not an autonomous worker; U001 remains 0/1. This quality lab neither starts scheduled LLM work nor grants write permissions. A minimal future runtime must run under allowlisted, short-lived permission, originate in the trusted scheduled workflow, record trusted run/PR/content-SHA lineage, commit only reversible `tools/` or `tests/` changes to a Draft PR, run independent review, and leave owner minutes unmeasured unless independently captured. Do not install such a runner or set a provider token without a separate credential/operational security review.
 
