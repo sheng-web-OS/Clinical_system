@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "note": "Private per-paragraph review receipts keyed to exact Git blob SHA. Must be authored after a distinct EPQC assessment; scores are evidence-of-review, not proof of clinical truth or reader performance.",
+  "reviews": {}
+}
