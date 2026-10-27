@@ -1,3 +1,5 @@
+> **CURRENT OWNER RELEASE DECISION — ACCEPTED, 2026-10-27 Asia/Taipei.** The owner explicitly replied 「發佈」 to the publication of PRs #129/#120/#121. In PR #129 this means P0/P1, all figure semantics, complete manuscript, official exam link semantics and PR-only merge/production deploy **AUTHORIZED**, scoped to article blob `f1f82f86894d94628efc8c4b7386e55297b543db` at review. [Decision evidence](https://github.com/sheng-web-OS/Clinical_system/pull/129#issuecomment-6433081794). This is author/editor clinical signoff, NOT independent peer review. The historical PENDING/HOLD snapshots below are superseded for this PR and date, but the technical CI and production readback must still be verified separately. 原卷答案 D/D/D、Wilson 單項 ceruloplasmin 非確診、CTP 不含 ALT、SAAG + 腹水總蛋白並讀；不宣稱獨立醫師同儕審查。
+
 # 2026-10-27｜肝膽國考三題來源驗證／醫學編輯驗收
 
 ## 核對範圍
