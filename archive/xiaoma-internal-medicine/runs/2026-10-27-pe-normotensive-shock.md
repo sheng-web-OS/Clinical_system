@@ -41,3 +41,15 @@ A 命題 3：一篇聚焦診斷／失代償／介入三個層次，後半試驗�
 ## 下一步與停止條件
 
 先修 P0（原病例血氣／chemistry 來源一致性，或撤除不能支持的精確酸鹼推論），取得可驗證 Pocket Figure 2-3 與 p100 原表像素／caption／footnote；NICE 原圖已目視並有可點入的 PDF，但不能代替 Pocket 原圖核對；再決定真正需要的原圖引用與手機閱讀方式。之後補一題可核實的官方 PE 真題與更正、按年份雙向連結，做獨立 V2 醫學複讀、圖像 QA、build/CI、main 與 Cloudflare 同 SHA 讀回。**上述完成前 HOLD，不自動合併或發布。**
+
+
+## 2026-10-27 接續 V2｜官方真題與來源對抗式修訂
+
+此節是**V1 首次交付之後的獨立第二次提交**；原始 V1 版本保留於 `6cd612d69306ea5f3791bb63d31e038699f01aea`，原本 3.43/4 的初次自評、原始 P0 疑義及未過圖像 gate 沒有被追溯改寫。
+
+- **V2 改動**：主文 `§03` 以 chemistry HCO₃／AG／lactate 作高陰離子間隙酸中毒判斷基礎，保留初次 VBG 7.06/15 作「來源待核」而不是自動判定精確呼吸代償；`§05` 撤回「兩次 VBG pCO₂ 可證明代償喪失」的過強因果敘述，改以臨床意識與呼吸狀態惡化支持急救升級。這是收縮推論範圍，**不是解決原論文的採檢時間／誤植**。
+- **官方真題**：考選部 112（二）醫師（二）醫學（三）第 51 題，原卷 PDF（p.12/18）、標準答案與更正公告逐項核對。正式正解 D；更正表 35、43 更動但**51 未更正**；新增 A–D 逐項深入解析。原卷 https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=Q ；更正 https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112080&q=1&s=11&t=M 。尚未公開年份索引，因整篇文章仍 HOLD；不能計入發布國考題數。
+- **Pocket 9E 再取證**：Library `內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten.pdf` p.99–100 的解析文字可以回讀，但影像本次顯示 `Image unavailable`，原 bytes materialization 再次被拒（`This Project file does not have an authorized raw-byte materialization path`）。因此 Figure 2-3、p100 anticoagulation table 完整原圖／caption／footnote **仍未完成重新目視**。不要使用其他機構的 PE 流程圖冒稱 Pocket 原圖。原書 rivaroxaban 15 mg qd ×21d 疑似藥物劑量錯誤仍標示，不按原表開立。
+- **外部核查**：重新核對 2026 AHA/ACC Table 7：A1–C2 systemic lysis 3:Harm、D1–D2 2b may be considered、E1 2a reasonable，C3 不確定；NEJM HI-PEITHO 544 人、4.0%/10.3%、重大出血 4.1%/2.2%；PRAGUE-26 558 人、0.7%/6.8%、ICH 2/0。試驗族群／技術各異，不能互相替代，也不能將 2026 年後續新試驗倒灌進 2 月指南。
+- **QA 狀態**：稿件 P0 原文矛盾仍存在，V2 已消除錯誤定量推論；Pocket Figure/Table 實際像素仍待核，因此醫學／圖像綜合發布 gate = **HOLD**。本輪未進行獨立真人醫師審查、正式手機 360/390 Chromium 頁面驗收、主分支部署或 Cloudflare HTTPS 讀回。沒有更改 `site/pages.json`。工程 CI 是否通過須依最新 V2 SHA 個別查核。
+- **V2 commit**：主文 `daf08826617bb04605aae52a5aee88f544a5be36`；來源頁 `9c2def63f85f4b4a44ea4fa76cff1dc8b0a921f4`。未新增重複排程。
