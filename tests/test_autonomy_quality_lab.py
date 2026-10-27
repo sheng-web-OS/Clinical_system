@@ -255,5 +255,28 @@ class JudgeOrderCalibration(unittest.TestCase):
             lab.judge_order_calibration(rows)
 
 
+
+class ProviderResponseSafety(unittest.TestCase):
+    def test_http_200_plain_ok_is_not_model_execution(self):
+        with self.assertRaisesRegex(ValueError, "no verifiable model JSON"):
+            lab.validate_model_completion_response(b"OK\\r\\n", "text/plain")
+
+    def test_http_json_success_without_actual_choices_is_not_model_execution(self):
+        with self.assertRaisesRegex(ValueError, "missing provider model identity"):
+            lab.validate_model_completion_response(b'{"status":"OK"}', "application/json")
+
+    def test_structured_real_completion_is_still_not_clinical_acceptance(self):
+        payload = {"model": "actual-model-reported", "choices": [
+            {"message": {"content": "An answer"}, "finish_reason": "stop"}],
+            "usage": {"prompt_tokens": 100, "completion_tokens": 20}}
+        record = lab.validate_model_completion_response(
+            json.dumps(payload).encode(), "application/json")
+        self.assertEqual(record["answer"], "An answer")
+        self.assertEqual(record["model_returned"], "actual-model-reported")
+        self.assertFalse(record["clinical_validated"])
+        self.assertFalse(record["release_approval"])
+
+
+
 if __name__ == "__main__":
     unittest.main()
