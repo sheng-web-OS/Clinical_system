@@ -31,5 +31,15 @@ class LabMorningSheetRawHtmlTest(unittest.TestCase):
         self.assertLess(article.index("| 項目（單位） |"), match.start(),
                         "Introduce the case and measurements before the visual comparison")
 
+    def test_source_page_describes_case_figure_not_generic_cards(self):
+        """Figure provenance must match the exact reader-facing case comparison."""
+        source = (ROOT / "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md").read_text(encoding="utf-8")
+        section = source.split("## 6. 圖表的身分", 1)[1]
+        for cue in ("6.3", "4.9", "1.69", "並行", "合成", "採檢"):
+            with self.subTest(cue=cue):
+                self.assertIn(cue, section, "Source locator must explain the actual figure and its inference limit")
+
+
+
 if __name__ == "__main__":
     unittest.main()
