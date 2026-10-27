@@ -1,6 +1,6 @@
 # 肝硬化明明由結構定義，為什麼臨床判斷不能只沿著結構前進？
 
-2026.07.23 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。原文於 私人 source snapshot（私有原稿封存） 完整保留；本篇是獨立整合稿，非已核實的 Facebook 正式原文。
+2026.07.23 小麻閱讀（Pocket Medicine 9E）｜整合教材更新：2026.10.27
 
 Pocket Medicine 第九版先把 cirrhosis 定義為 fibrosis、regenerative nodules 和 hepatic vascular architecture distortion，接著卻從不同角度評估：ultrasound、elastography、platelet、albumin、INR、varices、ascites、encephalopathy、Child–Pugh 與 MELD。這很容易被讀成一條「先結構異常、再檢驗異常、再器官衰竭」的直線。
 
@@ -64,11 +64,9 @@ Child–Pugh 同時納入 bilirubin、albumin、INR、ascites、encephalopathy�
 
 ---
 
-### 來源與仍待確認事項
+### 主要參考來源
 
 [1] [Baveno VIII – Advancing consensus in portal hypertension](https://www.journal-of-hepatology.eu/article/S0168-8278%2826%2902778-9/fulltext), J Hepatol, online 2026-08-19；特別是 Panels 1, 3, 7。  
 [2] [Kim et al., MELD 3.0 (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8608337/).  
 [3] Pocket Medicine 9E, CIRRHOSIS, viewer PDF pp.145–147；**Child–Pugh Appendix 原表未完成核對**，未臨摹或宣稱原表全數驗收。  
-[4] 原稿及圖表稽核（私有原稿封存）。
 
-**AI-integrated candidate / publication HOLD**：Facebook canonical 未確認不阻擋這份獨立整合稿，但沒有獨立醫學審查或部署批准；前述 Baveno VIII 門檻及 recompensation 須經逐條臨床校對後方可進入發布流程。
