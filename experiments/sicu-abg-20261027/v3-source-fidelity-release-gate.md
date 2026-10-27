@@ -11,15 +11,20 @@ Status: HOLD. This is an additive QA record; V1 79/100 and V2 85/100 remain immu
 5. CPB DO2i target 280–300 mL/min/m2 in the 2024 EACTS/EACTAIC/EBCP guideline is context-specific to normothermic CPB; it is not a universal postoperative ICU transfusion or inotrope trigger.
 6. The 2004 retracted study must remain excluded from positive evidence. Okamoto 2026 retrospective CVICU SvO2 study does not establish transfusion benefit or a 69% threshold.
 
-## Required before publication
+## Verified during 2026-10-27 release preparation
 
-- Original publisher PDF Table 2/3: a previous conversation turn reported visual inspection of pages 4–5 and confirmed the displayed table values; this QA record does not independently reproduce that inspection. Preserve unresolved narrative/table sampling and duration inconsistencies; original visual proof must be attached to the release audit before marking this gate PASS.
-- Pocket Medicine 9E p32/p374 original-page inspection and 2024 PBM Table 11 captions/footnotes; public figures remain original/link-only.
-- Render original SVG at 375 and 390 CSS px in the actual site, inspect text, clipping, and captions.
-- Separate medical review evidence from AI editorial screening; complete EPQC/Figure Gate and actual CI, production Cloudflare deployment, HTTPS readback.
-- No site/pages.json inclusion, merge, or publication before these checks pass. PR #56 is obsolete; preserve PR #72 on main.
+- **Publisher PDF visual source check completed**: original Cureus 7-page publisher PDF, page 4 Table 2 and page 5 Tables 3–4 were directly inspected at full-page image resolution. CPB SaO2 and DO2i aggregates, CPB/12-hour Hb, and the separate Table 4 heparin-dose inconsistency were verified. The 8.5-minute vs <5-minute and Hb 8.2 vs 10.4 differences remain **unresolved source-internal contradictions**, not errors to silently correct.
+- **2024 EACTS/EACTAIC PBM Table 11 original PDF visually inspected** (printed page 32 / PDF one-index page 32): restrictive <=75 g/L vs <=90 g/L only if the patient's clinical condition permits (Class I, A); HCT 18–24% with inadequate oxygenation during CPB may warrant consideration of PRBC after evaluating DO2 and cerebral oximetry (IIb, B). Footnotes a, b, c identify class, evidence level and references; no universal postoperative SvO2 transfusion threshold.
+- **2024 CPB guideline Table 43 and 45 checked** in published full text: DO2i 280–300 only for normothermic CPB (IIa, B); Table 45 d footnote adds DO2 >273 mL/min/m2 with satisfactory cerebral oximetry in the CPB Hct decision context.
+- **Pocket Medicine 9E PDF text verified** for page 32 Fick cardiac-output paragraph and page 374 formula; the original book uses oxygen binding factor 1.36 versus the article's common 1.34 approximation. PDF p33 visual preview available. Full original p32/p374 *page-image* verification remains unavailable: the library image service did not return those pixels and a raw PDF materialization attempt failed. Do not claim pixel-complete book review.
+- **SVG 375/390px external raster smoke check completed** with CairoSVG on a byte-identical local copy of the latest committed SVG: initial 375/390px captures exposed tofu for Unicode subscript ₂; the local SVG and committed source were corrected to ASCII DO2i/SaO2. After fix, both sizes displayed all text without observed clipping in inspected captures. The local copy without final newline matched Git blob SHA `aaf1d5ddaf073b8b69d74f84ca5129e82989e2f4` byte-for-byte. This is **static asset validation**, not a full-site Chromium render.
 
-Human interventions: no user correction during this QA step; elapsed human minutes not observed (unknown, not zero). No independent physician review has been performed.
+## Remaining before production release
+
+- Independent medical quality review / acceptance distinct from authoring and AI self-check; source-internal inconsistencies retained.
+- Full site build with **new CTICU lesson actually registered** in `site/pages.json` and its SVG copied into flat distribution; specifically preserve current main's official national-exam interlinks. A HOLD-only branch CI pass is *not* evidence the new lesson builds.
+- 375/390px **actual browser rendering** in reader layout: compare heading/figure, enlarged text, captions, horizontal overflow and clickable source link. Confirm the original source visual-access requirements or clearly scope them as reference-text checks.
+- Merge and production deployment only after release gates, followed by HTTPS readback. PR #56 obsolete and PR #72 published content must not regress. No user intervention counted as zero if not measured.
 
 ## 2026-10-27 subsequent gate audit
 
