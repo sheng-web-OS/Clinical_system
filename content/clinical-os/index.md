@@ -121,7 +121,7 @@
 
 **生成條件可整合，疾病假說必須指定。** 腿腫與呼吸困難提出不同待解釋的現象；D-dimer 沒有定位能力，只有放回對應前測機率及有效診斷演算法，才可能支持停止追查。下肢超音波與 CTPA 各自回答不同的解剖問題。
 
-**建議閱讀：** [VTE：共同預防，分開診斷](../xiaoma-reading/integrated/2026-10-26-vte-visual.md)。讀到 PE 時可回接[低氧機轉](../xiaoma-internal-medicine/lessons/2026-10-25-hypoxemia-mechanisms.md)；相同低氧表型本身不能證明肺動脈有血栓。
+**建議閱讀（共同風險 → 分開診斷 → 失代償決策）：** [VTE：共同預防，分開診斷](../xiaoma-reading/integrated/2026-10-26-vte-visual.md) → [血壓正常下的肺栓塞：何時不能等 CT？](../xiaoma-internal-medicine/lessons/2026-10-27-pe-normotensive-shock.md)。前篇處理 Wells、D-dimer 與陰性檢查的停止條件；後篇追問**影像尚未確診，但灌流代償可能正在失敗**時，診斷、器官支持及再灌流風險為何必須並行。若 SpO₂ 很好卻仍有高乳酸，可回讀[低氧機轉](../xiaoma-internal-medicine/lessons/2026-10-25-hypoxemia-mechanisms.md)，避免把補氧後飽和度當作足夠的全身氧輸送。
 
 **改判與驗證：** 同樣 D-dimer 陰性，低前測機率與高前測機率能否得到相同結論？若 proximal ultrasound 陰性而懷疑仍高，為何要問受檢範圍與後續流程？血流動力學不穩定時，不把常規排除策略變成延誤救援的程序。
 
