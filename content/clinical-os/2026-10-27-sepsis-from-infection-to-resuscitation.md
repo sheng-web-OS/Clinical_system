@@ -259,7 +259,7 @@ IBCC 也提醒 septic cardiomyopathy 尚無單一統一診斷標準；常見描�
 
 ## 十五、持續危險時：酸中毒、類固醇與頑固性休克
 
-**Lactate 高不等於應自動給 sodium bicarbonate**。重症乳酸上升可能包含供氧不足、兒茶酚胺相關有氧糖解與清除下降。若沒有理解原因，單純提高血中 bicarbonate 可能改變 pH 數字，但未必恢復組織灌流。SSC 2026 對以改善血流動力學或減少升壓劑為目的之 septic shock hypoperfusion-induced lactic acidemia，**建議不要常規使用 bicarbonate**；但當有**嚴重代謝性酸血症（pH ≤7.2）合併急性腎損傷（AKI；AKIN 第 2–3 期）**時，另有條件性、確定性極低的支持建議。[2] 這兩個不同適用情境，不能截取其中一個結論套用全部病人。這裡要區分「bicarbonate 可能改善 pH」與「它是不是 Sepsis 的首要治療目標」。[113-1 醫學（三）第 48 題](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md#q-113-1-48)確實以敗血症治療為題，選項 B 把補充 bicarbonate 說成首要目標；回查考選部原卷與標準答案後，應保留此題作為處置優先序的例子，而非因曾有錯誤審查而刪除。
+**Lactate 高不等於應自動給 sodium bicarbonate**。重症乳酸上升可能包含供氧不足、兒茶酚胺相關有氧糖解與清除下降。若沒有理解原因，單純提高血中 bicarbonate 可能改變 pH 數字，但未必恢復組織灌流。SSC 2026 對以改善血流動力學或減少升壓劑為目的之 septic shock hypoperfusion-induced lactic acidemia，**建議不要常規使用 bicarbonate**；但當有**嚴重代謝性酸血症（pH ≤7.2）合併急性腎損傷（AKI；AKIN 第 2–3 期）**時，另有條件性、確定性極低的支持建議。[2] 這兩個不同適用情境，不能截取其中一個結論套用全部病人。這裡要區分「bicarbonate 可能改善 pH」與「它是不是 Sepsis 的首要治療目標」。[113-1 醫學（三）第 48 題](../xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md#q-113-1-48)確實以敗血症治療為題，選項 B 把補充 bicarbonate 說成首要目標；它要區分的是**逆轉感染與恢復灌流**，以及**校正酸鹼檢驗數字**這兩種不同層次的介入。
 
 IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 對成人 septic shock **條件性建議 IV corticosteroids**（low certainty）；臨床上常見 hydrocortisone 200 mg/day（給藥形式依院內規範與 ICU 決定）。它可能縮短 vasopressor 需求時間，但不等於已明確證明所有患者死亡率下降，也不應取代抗菌藥、source control、血流重新評估；應監測高血糖等副作用。[1,2]
 
@@ -346,4 +346,4 @@ IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 �
 
 [7] **Jin A, et al.** *A real pain in the back…or maybe not—a case series of urosepsis due to obstructing calculi identified on ultrasound.* Int J Emerg Med. 2025;18:181. [原始病例系列、第一例及圖 1](https://link.springer.com/article/10.1186/s12245-025-00958-5)。本文保留 78M 第一例的原始入院生命徵象、POCUS、CT、實驗室與支架處置；不把另外兩名患者的量測或後續入住 ICU 資料接到這名患者身上。病例系列不證明治療的比較效果。讀者可直接對照[原始 Case 1 Fig. 1（左腎 POCUS 與 CT）](https://link.springer.com/article/10.1186/s12245-025-00958-5#Fig1)，以及[本站的影像解讀與證據界線](sepsis-visual-evidence-and-sources.md)；影像提供阻塞的線索，不能單獨證明所有休克機轉。
 
-**教學範圍與臨床安全：** 本文的 78 歲男性資料出自可回查的真實病例系列；後續反事實中的假設情境數字並非實測；不提供缺少臨床條件的個人處方。病人是否開始、滴定或減少升壓／強心藥，應由臨床團隊根據監測、器官功能與院內規範決定。本篇是 AI 整合醫學教材，尚非真人專科同儕審查或實測學習成效證據。
+**教學範圍與臨床安全：** 本文的 78 歲男性資料出自可回查的真實病例系列；後續反事實中的假設情境數字並非實測；不提供缺少臨床條件的個人處方。病人是否開始、滴定或減少升壓／強心藥，應由臨床團隊根據監測、器官功能與院內規範決定。本文是醫學教育整理，不取代個別病人的診斷、監測與治療決策。
