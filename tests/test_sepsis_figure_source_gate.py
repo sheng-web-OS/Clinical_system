@@ -55,5 +55,22 @@ class SepsisFigureSourceGate(unittest.TestCase):
         ))
 
 
+    def test_q57_is_one_canonical_question_with_sepsis_backlink(self):
+        pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
+        key = (114, 1, 2, "醫學（三）", 57)
+        canonical = []
+        for page in pages:
+            for q in page.get("exam_questions", []):
+                identity = tuple(q[k] for k in ("year_roc", "sitting", "stage", "subject", "question_number"))
+                if identity == key:
+                    canonical.append(page["source"])
+        self.assertEqual(canonical, ["content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md"])
+        sepsis_exam = next(p for p in pages if p["source"] == "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md")
+        self.assertTrue(any(
+            tuple(q[k] for k in ("year_roc", "sitting", "stage", "subject", "question_number")) == key
+            for q in sepsis_exam.get("related_exams", [])
+        ))
+
+
 if __name__ == "__main__":
     unittest.main()
