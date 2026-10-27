@@ -18,6 +18,8 @@ ACS（acute coronary syndrome，急性冠心症）不是一個「驗血陽性」
 
 2026 年第五版 Universal Definition of MI（UDMI5）進一步把「心肌受傷」與「梗塞病因」拆開：**acute myocardial injury**要求 cTn 有上升／下降，且至少一次超過該試劑對應的**性別特異第 99 百分位上限**；**MI**還需要與急性缺血相符的症狀、ECG、心肌或冠脈影像等證據。若尚無 serial cTn 或確認的證據，應描述為「疑似急性冠狀缺血／STEMI 工作診斷」，不能把立即再灌流的工作決策，倒推為已完成 Universal Definition 的最終診斷。確認 MI 後，再依病因分為 **primary MI**（急性原發冠脈病理）、**secondary MI**（其他急性狀態造成供需失衡）與 **procedure-related MI**（心臟程序相關併發症）。舊版 Type 1–5 數字分類是歷史考題語境，不能當作今日唯一分類。**primary MI 不限 plaque rupture**：冠狀動脈痙攣、SCAD、冠狀栓塞等原發性急性冠脈病理也屬其涵蓋範圍。2026 新定義尤其區分「考慮」、「可能」與「確認」 secondary MI：有急性疾病、cTn 動態變化與缺血線索，還不能自動當成已確認的供需失衡 MI；可行且適當時，需要冠脈／心肌影像判斷是否存在無急性冠脈病灶的阻塞性 CAD，或缺血性新壁運動／存活心肌喪失等客觀證據。重要的是，一個敗血症病例也**可能同時觸發 plaque rupture**，因此「有感染」不能用來排除 primary MI。
 
+[對讀 UDMI5 原文 Figure 4（Secondary MI 診斷流程）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F4/)：在「possible secondary MI」旁，原圖刻意保留「alternative acute diagnosis」；當後續影像揭示急性冠脈病灶時，病因會改判 primary MI。單憑敗血症與 troponin 動態上升，不足以把它當作已確認的 secondary MI。此連結指向出版原圖，並未重製原像素。
+
 即使同是 troponin 上升，plaque rupture、肺炎造成的供需失衡與 myocarditis 所需的治療也不同。[第五版原文](https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025)
 
 [對讀 UDMI5 原文 Figure 2（Primary MI 診斷流程）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F2/)：圖像上層是臨床當下的工作診斷，下層是冠脈與心肌影像如何確認最終病因；沒有把 STEMI 的緊急再灌流建立在必須等候 troponin 陽性的前提上。原圖請由出版社頁面開啟，本站不重製原像素。
