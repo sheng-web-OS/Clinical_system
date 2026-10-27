@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DCM = ROOT / "content/xiaoma-reading/integrated/2026-10-21-dcm.md"
 HYPOX = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md"
 COPD = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-26-copd-emptying.md"
+COPD_SOURCES = ROOT / "content/xiaoma-internal-medicine/copd-sources.md"
 
 class PreviouslyUntrackedVisuals(unittest.TestCase):
     def test_dcm_legacy_figures_are_not_misrepresented_as_approved(self):
@@ -32,7 +33,11 @@ class PreviouslyUntrackedVisuals(unittest.TestCase):
         self.assertNotIn("medicina-55-00065-g001.png", content)
         self.assertNotIn('id="copd-case-ct-2019"', content)
         self.assertIn("PMC6473594", content)
-        self.assertIn("本站暫不內嵌此圖", content)
+        self.assertIn("原始 CT 圖 A–D 與完整圖說", content)
+        self.assertNotIn("本站暫不內嵌此圖", content)
+        sources = COPD_SOURCES.read_text("utf-8")
+        self.assertIn("網站圖檔製作紀錄", sources)
+        self.assertIn("未能穩定呈現", sources)
 
 if __name__ == "__main__":
     unittest.main()
