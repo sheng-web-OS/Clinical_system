@@ -16,7 +16,7 @@ POCKET_SOURCE_ASSETS = ({
 } if any("2026-10-25-hypoxemia-mechanisms.md" in p["source"] for p in PAGES) else set())
 EXPECTED = {
     "styles.css", "home.css", "index.html",
-    "app.js", "site-index.json", "site-index.js", ".nojekyll",
+    "app.js", "site-index.json", "site-index.js", "owner-mode.html", ".nojekyll",
 } | POCKET_SOURCE_ASSETS | {row["output"] for row in PAGES}
 HAS_DCM_RELEASE = (
     any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES)
@@ -68,6 +68,14 @@ if not errors:
             errors.append(f"{filename}: expected {expected} analytics beacon(s), found {actual_beacons}")
         if canonical and 'data-cf-beacon=' not in html:
             errors.append(f"{filename}: analytics site token metadata missing")
+        if canonical:
+            if 'id="clinical-analytics-config"' not in html or 'clinical-analytics-owner-v1' not in html:
+                errors.append(f"{filename}: owner opt-out guard missing")
+            if '<script defer src="https://static.cloudflareinsights.com/beacon.min.js"' in html:
+                errors.append(f"{filename}: unguarded static analytics beacon detected")
+        if filename == "owner-mode.html":
+            if 'name="robots" content="noindex,nofollow"' not in html or 'localStorage.setItem(key, "1")' not in html:
+                errors.append("Owner-mode activation is missing or publicly indexable")
         dom = Outline()
         dom.feed(html)
         outlines[filename] = dom
