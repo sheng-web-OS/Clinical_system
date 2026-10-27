@@ -16,13 +16,13 @@ ACS（acute coronary syndrome，急性冠心症）不是一個「驗血陽性」
 
 在這條病理路線上，**unstable angina（UA）**是臨床上高度懷疑急性冠脈缺血，卻尚不符合急性心肌梗塞的傷害標記條件；**NSTEMI**代表有符合 MI 定義的缺血性急性心肌傷害，但沒有持續的 ST elevation／相應的緊急再灌流 ECG 表現；**STEMI**則是急診最需要迅速辨識的 ECG 工作診斷，通常代表需立即再灌流的重大缺血。這不是依序從 UA「長成」NSTEMI 再「長成」STEMI 的固定嚴重度階梯；三者反映**不同的電生理、傷害證據與處置入口**，冠脈閉塞也可能藏在沒有典型 ST elevation 的 ECG 裡。
 
-2026 年第五版 Universal Definition of MI（UDMI5）進一步把「心肌受傷」與「梗塞病因」拆開：**acute myocardial injury**要求 cTn 有上升／下降，且至少一次超過該試劑對應的**性別特異第 99 百分位上限**；**MI**還需要與急性缺血相符的症狀、ECG、心肌或冠脈影像等證據。若尚無 serial cTn 或確認的證據，應描述為「疑似急性冠狀缺血／STEMI 工作診斷」，不能把立即再灌流的工作決策，倒推為已完成 Universal Definition 的最終診斷。確認 MI 後，再依病因分為 **primary MI**（急性原發冠脈病理）、**secondary MI**（其他急性狀態造成供需失衡）與 **procedure-related MI**（心臟程序相關併發症）。舊版 Type 1–5 數字分類是歷史考題語境，不能當作今日唯一分類。**primary MI 不限 plaque rupture**：冠狀動脈痙攣、SCAD、冠狀栓塞等原發性急性冠脈病理也屬其涵蓋範圍。2026 新定義尤其區分「考慮」、「可能」與「確認」 secondary MI：有急性疾病、cTn 動態變化與缺血線索，還不能自動當成已確認的供需失衡 MI；可行且適當時，需要冠脈／心肌影像判斷是否存在無急性冠脈病灶的阻塞性 CAD，或缺血性新壁運動／存活心肌喪失等客觀證據。重要的是，一個敗血症病例也**可能同時觸發 plaque rupture**，因此「有感染」不能用來排除 primary MI。
+2026 年第五版 Universal Definition of MI（UDMI5）進一步把「心肌受傷」與「梗塞病因」拆開：**acute myocardial injury**要求 cTn 有上升／下降，且至少一次超過該試劑對應的**性別特異第 99 百分位上限**；**MI**還需要與急性缺血相符的症狀、ECG、心肌或冠脈影像等證據。若尚無 serial cTn 或確認的證據，應描述為「疑似急性冠狀缺血／STEMI 工作診斷」，不能把立即再灌流的工作決策，倒推為已完成 Universal Definition 的最終診斷。確認 MI 後，再依病因分為 **primary MI**（急性原發冠脈病理）、**secondary MI**（其他急性狀態造成供需失衡）與 **procedure-related MI**（與心臟介入或手術後 **30 日內**的程序併發症相關；其確認條件又取決於事件發生時機）。舊版 Type 1–5 數字分類是歷史考題語境，不能當作今日唯一分類。**primary MI 不限 plaque rupture**：冠狀動脈痙攣、SCAD、冠狀栓塞等原發性急性冠脈病理也屬其涵蓋範圍。2026 新定義尤其區分「考慮」、「可能」與「確認」 secondary MI：有急性疾病、cTn 動態變化與缺血線索，還不能自動當成已確認的供需失衡 MI；可行且適當時，需要冠脈／心肌影像判斷是否存在無急性冠脈病灶的阻塞性 CAD，或缺血性新壁運動／存活心肌喪失等客觀證據。重要的是，一個敗血症病例也**可能同時觸發 plaque rupture**，因此「有感染」不能用來排除 primary MI。
 
-[對讀 UDMI5 原文 Figure 4（Secondary MI 診斷流程）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F4/)：在「possible secondary MI」旁，原圖刻意保留「alternative acute diagnosis」；當後續影像揭示急性冠脈病灶時，病因會改判 primary MI。單憑敗血症與 troponin 動態上升，不足以把它當作已確認的 secondary MI。此連結指向出版原圖，並未重製原像素。
+**第一條分岔：沒有感染等急性供需失衡背景，卻突然出現缺血症狀或急性缺血 ECG，該如何從工作診斷走向 primary MI 的病因確認？** [對讀 2026 UDMI5 原文 Figure 2（Primary MI 診斷流程）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F2/)。圖中把 STEMI 的緊急工作決策，與後續冠脈／心肌影像確認病因的層次分開；不能因仍在等待 cTn 動態，就拖延高危險患者的即時處置。
 
-即使同是 troponin 上升，plaque rupture、肺炎造成的供需失衡與 myocarditis 所需的治療也不同。[第五版原文](https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025)
+**第二條分岔：若患者同時有敗血症、嚴重貧血或快速心律等供需失衡原因，是否可以立刻稱為 secondary MI？** [對讀原文 Figure 4（Secondary MI 診斷流程）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F4/)。圖中保留 alternative acute diagnosis，顯示動態 troponin 不會自動揭示血管病因；要依冠脈及心肌影像與病況，分辨 confirmed secondary MI、其實是 primary MI，或非缺血性 injury。**順序應是先建立疑似病因，再用新證據改判，而不是先用兩張圖替 troponin 數字貼標籤。**以上均連結原出版圖，本站不重製原像素。 [UDMI5 原始定義全文](https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025)
 
-[對讀 UDMI5 原文 Figure 2（Primary MI 診斷流程）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F2/)：圖像上層是臨床當下的工作診斷，下層是冠脈與心肌影像如何確認最終病因；沒有把 STEMI 的緊急再灌流建立在必須等候 troponin 陽性的前提上。原圖請由出版社頁面開啟，本站不重製原像素。
+**第三條分岔：如果受傷發生在 PCI／CABG 等心臟程序附近，還要追問「何時、與哪個血管或程序是否相關」。** 2026 UDMI5 的 procedure-related MI 以心臟程序後 **30 日內的相關併發症**為範圍；當併發症**發生於 index procedure 期間**，或**該程序本來就是為治療急性 MI 而進行**時，正式確認需要**冠脈程序併發症證據，加上新缺血性區域壁運動異常／新存活心肌喪失，兩者都要有**。若程序最初順利、之後 30 日內才出現與原治療血管／區域相關的新缺血事件，則依其他必要臨床與急性傷害證據，**冠脈併發症證據或新的缺血性心肌影像證據任一項**可支持確認。這些是不同情境的 AND／OR 條件，不能合併成一個通用的 troponin 倍數規則。**反事實：** CABG 後第 1 天只有 cTn 高但沒有相應客觀證據，尚不足以確認程序相關 MI；第 40 天新發支架血栓則須重新評估 primary MI，不能因有過 PCI 史就永遠稱為 procedure-related MI。[UDMI5 §7.2.3、Box 5](https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025)
 
 ## 二、病人抵達時，優先排除的不是「troponin 陰性」，而是不能等的危險
 
@@ -61,7 +61,10 @@ ECG 的每一導程都是從特定方向觀看心臟電位差。局部缺血使�
 例如敗血症患者高燒、心率 145、血壓低，hs-cTn 上升：可能存在供需失衡相關 MI，但也可能是與冠脈急性缺血證據不足的 **non-ischemic myocardial injury**。不應因「有敗血症」便自動宣告 secondary MI，更不能因 troponin 陽性便不分原因給 DAPT、heparin、安排 PCI。要重新尋找局部缺血症狀／ECG／區域壁運動、先前 CAD 的可能性與其他心肌傷害來源。
 
 一個可檢驗的例子：**純教學假設**同一種 hs-cTn 試劑對此患者的性別特異 99th-percentile URL 是 **20 ng/L**（這不是任何品牌的實際門檻），三次測值依序為 12、68、145 ng/L。此時至少一次高於假設上限，又有升高變化，可支持 **acute myocardial injury**，卻仍不能只憑數字證明原發冠脈血栓。另一位長期 CKD 患者在同一假設試劑下，穩定時三次為 80、83、81 ng/L，則較符合**慢性心肌傷害的可能性**；但不能在急性病況時只看微小變化就排除新的缺血。這些 URL 與數列都是自編、用來說明定義的數字，**不是實際檢測法的 rule-in/rule-out cutoffs**；真正決策必須查當地 assay 驗證的閾值與抽血時間。若懷疑發病太早、復發梗塞、腎功能改變或採血時間不可靠，更須配合當地 assay 的時間演算法與臨床重估。
-同樣地，冠狀動脈造影若無明顯阻塞，這仍是**診斷工作的起點**。2026 UDMI5 把 **MINOCA** 的原本名稱由 *myocardial infarction with non-obstructive coronary arteries* 更新為 *myocardial injury with non-obstructive coronary arteries*，強調它是**工作診斷，不是已確認的 MI 病因**；冠狀造影沒有 ≥50% 狹窄，並不足以排除 plaque disruption、spasm、SCAD、microvascular pathology，更不足以排除 myocarditis、Takotsubo 或 PE 等非冠脈性原因。依病程、CMR、冠脈內影像或進一步功能測試，才能將工作診斷轉化為 final etiology；若最終確認 MI，仍應歸到 primary、secondary 或 procedure-related 的適當類別，而不是把 MINOCA 當成第四種確定病因。[IBCC：myocardial injury vs ischemia](https://emcrit.org/ibcc/troponin/)
+
+**數列已回答有沒有急性傷害，卻仍沒回答病因。接下來該不該看冠狀動脈？** 對持續缺血的高危險患者，冠脈評估是為了尋找可處理的急性病灶；但即使造影未見明顯阻塞，也還有一個關鍵資訊缺口：這次 injury 到底是冠脈性缺血，還是心肌炎、壓力性心肌病變或其他非缺血病因？所以「有 injury → 去找可能的 ischemia 和冠脈解剖 → 造影仍未解因 → 追下一層病因」才是以下概念的必要順序。
+
+若冠狀動脈造影沒有 ≥50% 狹窄，這仍是**診斷工作的起點**。2026 UDMI5 把 **MINOCA** 的原本名稱由 *myocardial infarction with non-obstructive coronary arteries* 更新為 *myocardial injury with non-obstructive coronary arteries*，強調它是**工作診斷，不是已確認的 MI 病因**；冠狀造影沒有 ≥50% 狹窄，並不足以排除 plaque disruption、spasm、SCAD、microvascular pathology，更不足以排除 myocarditis、Takotsubo 或 PE 等非冠脈性原因。依病程、CMR、冠脈內影像或進一步功能測試，才能將工作診斷轉化為 final etiology；若最終確認 MI，仍應歸到 primary、secondary 或 procedure-related 的適當類別，而不是把 MINOCA 當成第四種確定病因。[IBCC：myocardial injury vs ischemia](https://emcrit.org/ibcc/troponin/)
 
 ## 五、風險分層真正決定的是：哪一個人不能等到明天？
 
@@ -128,7 +131,7 @@ PCI 的直接成效是恢復 epicardial coronary flow，但**微血管 no-reflow
 
 考題的價值不是能否記住答案字母，而是題幹改變一個條件後，能不能重新判斷。以下六道題均可連到考選部原卷與本站逐選項詳解；若題目依當年定義作答，**正式答案與 2026 年現行醫學定義要分開保存**。
 
-**113 年第二次醫學（三）第 6 題｜CABG 後 troponin 高，是否就是 MI？** [原卷與逐選項詳解](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6)。這題的答案仍是當年考選部公告的 **D**；它要求辨認舊定義中 CABG-related Type 5 MI 的 biomarker 必要條件，而不是證明「大於 10 倍即可單獨確診」。以今日 UDMI5 重新臨床判讀，還須追術前基線、術後時間、冠脈／移植血管問題與新缺血的客觀證據。**國考行政答案與今天的醫學分類不同步，必須並存，不可偷換。**
+**113 年第二次醫學（三）第 6 題｜CABG 後 troponin 高，是否就是 MI？** [原卷與逐選項詳解](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6)。這題的答案仍是當年考選部公告的 **D**；它要求辨認舊定義中 CABG-related Type 5 MI 的 biomarker 必要條件，而不是證明「大於 10 倍即可單獨確診」。以今日 UDMI5 重新臨床判讀，還須追術前基線、術後時間、冠脈／移植血管問題與新缺血的客觀證據。**2026 新定義看的是 30 日內與程序有關的缺血性併發症，以及因發生時機而不同的確認證據組合**：index procedure 期間發生、或該程序原本是治療 acute MI 時，需要**程序冠脈併發症 AND 新缺血性心肌影像異常**；原本順利而在 30 日內出現同一治療區域相關的新事件，確認條件則依脈絡採相應的 **OR** 判準。若只有術後 cTn 上升，還不能直接推定 confirmed procedure-related MI；若是 40 日後的新支架血栓，就須評估 primary MI。**113 年正式答案 D 不改；新舊定義不能偷換。**
 
 **114 年第二次醫學（三）第 6 題｜PCI 時抗凝與抗血小板能互換嗎？** [原卷與逐選項詳解](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-6)。官方答案 **C**。答題首先分辨凝血酶／fibrin 相關的程序性 anticoagulation、ADP receptor P2Y12 inhibition、GP IIb/IIIa 的血小板末端聚集作用，以及 DES 後持續抗血小板保護。其次要小心「新一代 DES 因此所有 ACS 六個月後都停 DAPT」的過度推論：出血與缺血風險須個別化，不能從一道問『錯誤選項』的題目抽出普遍處方。
 
