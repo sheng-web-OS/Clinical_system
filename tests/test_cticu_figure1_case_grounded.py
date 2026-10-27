@@ -37,6 +37,11 @@ class CABGFigureOneContract(unittest.TestCase):
         self.assertIn("minmax(min(100%,235px),1fr)", fig)
         self.assertNotIn("↓　兩個數字", fig)
 
+    def test_published_reader_names_correct_cabg_patient(self):
+        document = ARTICLE.read_text(encoding="utf-8")
+        self.assertIn("所以第三名病人的 ScvO₂ 95%", document)
+        self.assertNotIn("所以第一名病人的 ScvO₂ 95%", document)
+
     def test_table_one_source_and_missing_data_disclosed(self):
         fig = figure_one()
         self.assertIn("Wardhana", fig)
