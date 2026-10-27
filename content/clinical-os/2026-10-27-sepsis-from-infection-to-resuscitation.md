@@ -312,7 +312,7 @@ IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 �
 
 [3] **Singer M, et al.** *The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3).* JAMA. 2016;315:801–810. <https://doi.org/10.1001/jama.2016.0287>。用於定義、SOFA 與 septic shock 操作性條件，並與現行治療立即啟動的時間界線分開。
 
-[4] **Hernández G, et al.** *Personalized Hemodynamic Resuscitation Targeting Capillary Refill Time in Early Septic Shock: The ANDROMEDA-SHOCK-2 Randomized Clinical Trial.* JAMA. 2025. <https://pmc.ncbi.nlm.nih.gov/articles/PMC12573117/>。此研究納入 1,467 名患者；複合階層式終點的 win ratio 1.16（95% CI 1.02–1.33），不等於單獨證實 28 天死亡率下降（26.5% vs 26.6%）。
+[4] **The ANDROMEDA-SHOCK-2 Investigators, et al.** *Personalized Hemodynamic Resuscitation Targeting Capillary Refill Time in Early Septic Shock: The ANDROMEDA-SHOCK-2 Randomized Clinical Trial.* JAMA. 2025. <https://pmc.ncbi.nlm.nih.gov/articles/PMC12573117/>。此研究納入 1,467 名患者；複合階層式終點的 win ratio 1.16（95% CI 1.02–1.33），不等於單獨證實 28 天死亡率下降（26.5% vs 26.6%）。
 
 [5] **van der Poll T, et al.** *The immunopathology of sepsis and potential therapeutic targets.* Nat Rev Immunol. 2017. <https://doi.org/10.1038/nri.2017.36>。用於宿主反應、內皮、微循環與免疫失調機轉；本篇不把單一分子路徑推導成對所有患者都適用的藥物療效。
 
