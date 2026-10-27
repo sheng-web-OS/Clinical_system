@@ -40,6 +40,8 @@ Pocket Figure 2-3 的原始像素沒有放上本站，也不把其他流程圖�
 
 Creager MA, et al. [2026 AHA/ACC/ACCP/ACEP/CHEST/SCAI/SHM/SIR/SVM/SVN acute PE guideline](https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005)；[AHA 官方要點](https://professional.heart.org/en/science-news/2026-guideline-for-the-evaluation-and-management-of-acute-pulmonary-embolism-in-adults/top-things-to-know)。
 
+已直接開啟並目視 [AHA/ACC 官方 2026 Acute PE Clinical Categories 原始圖（單頁 PDF）](https://professional.heart.org/en/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Categories-Figure-Inforgraphic.pdf?sc_lang=en)：從 A subclinical、B symptomatic low severity、C elevated clinical severity 到 D incipient cardiopulmonary failure、E cardiopulmonary failure；D1 = transient hypotension，D2 = normotensive shock，E1 = recurrent or persistent hypotension with cardiogenic shock，E2 = refractory cardiogenic shock or cardiac arrest；C/D/E 另可用 respiratory modifier R 表示相應呼吸負擔。該圖是 AHA/ACC 的正式風險分類**原圖外連**，不是 Pocket Medicine Figure 2-3，也不是本網站重新繪製的圖。圖片著作權歸來源機構，本站不複製圖像像素。詳盡適用範圍以正式 guideline 定義與註腳為準。
+
 現行臨床分類的任務是判斷風險與照護層級，不是替代確診。Category D 涉及 impending cardiopulmonary failure，包括需要辨認的 normotensive hypoperfusion；Category E 代表已發生顯著心肺循環衰竭。原指引文字對 D2 與 transient hypotension、沒有低血壓的 hypoperfusion 使用了不同描述，故本篇**不依單一乳酸或暫時正常的 BP 將真實病例機械指定精確 D2 子類別**。
 
 對 A–C2 不應常規全身溶栓；C3 效益仍不確定；D1–D2 在出血風險適當時可考慮特定 advanced therapies；E1 應更積極評估再灌流。這些是不同推薦等級，**不是所有 RV strain、正常血壓或 D 類 PE 都必須溶栓**。2026-07-14 官方 correction 修正 RV echo assessment Table 4 與一條參考文獻；正文不使用未重新核定的表中數值作硬門檻。
