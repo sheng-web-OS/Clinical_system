@@ -39,7 +39,7 @@ class PrivateVisualBeforeReleaseGate(unittest.TestCase):
         self.assertNotIn("continue-on-error: true", step)
         installer = self.source.split("- name: Install Chromium for image layout QA", 1)[1]
         installer = installer.split("\n      - name:", 1)[0]
-        timeout = re.search(r"(?m)^\\s*timeout-minutes:\\s*(\\d+)\\b", installer)
+        timeout = re.search(r"(?m)^\s*timeout-minutes:\s*(\d+)\b", installer)
         self.assertIsNotNone(timeout, "Browser bootstrap must stay time-bounded")
         self.assertLessEqual(int(timeout.group(1)), 12, "Do not allow unbounded package downloads")
         self.assertGreaterEqual(int(timeout.group(1)), 4, "Allow enough time for a cold browser install")
