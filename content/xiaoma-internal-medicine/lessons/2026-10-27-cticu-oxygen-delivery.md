@@ -97,14 +97,14 @@ Civelek 等人在 2025 年 12 月發表一名 **61 歲、125 kg、BSA 2.23 m²**
 
 更重要的是原文存在尚待釐清的**內部不一致**：敘述稱 DO₂i <280 持續 8.5 分鐘，卻又稱低於 300 的時間少於 5 分鐘；兩者在相同時間定義下不可能同時成立。敘述中 CPB 起始 Hb 8.2、後來 7.9，與 Table 3 的「CPB (Pump)」Hb 10.4 也無法僅靠公開資訊確認是否同時點。本文**不引用衝突的持續時間推算缺氧債，也不補造時間序列**。這是來源品質 P1，不能用漂亮的圖掩蓋。
 
-### 來源定位（待獨立核圖）
+### 參考資料與證據限制
 
-1. Civelek A, Soltanzadeh A, Alizadegan M. *Advanced Metabolic-Guided Perfusion Concepts in an Obese Patient Undergoing Cardiac Surgery: A Case Report.* Cureus. 2025;17:e99447. DOI 10.7759/cureus.99447. [原始期刊頁](https://www.cureus.com/articles/446799-advanced-metabolic-guided-perfusion-concepts-in-an-obese-patient-undergoing-cardiac-surgery-a-case-report)；[期刊 PDF](https://www.cureus.com/articles/446799-advanced-metabolic-guided-perfusion-concepts-in-an-obese-patient-undergoing-cardiac-surgery-a-case-report.pdf)。本輪核對可檢索正文與 Table 2、Table 3 文字，**尚未完成 PDF 原圖逐像素／caption／footnote 視覺驗收**。
-2. *Pocket Medicine*, 9E，使用者私人 PDF reader p31–33（PA catheter / Fick）及 p373–374（hemodynamic formulae）。本輪確實核讀上述原書文字，但 File Library 原 PDF raw-byte materialization 失敗、頁面影像未成功提供；**不宣稱重新目視原書圖表**，亦不將原書影像公開。
-3. [2024 EACTS/EACTAIC/EBCP Guidelines on patient blood management in adult cardiac surgery](https://pmc.ncbi.nlm.nih.gov/articles/PMC12257489/)：section on transfusion triggers、Recommendation Table 11（表格影像與 footnotes 待逐項目視）。
+1. Civelek A, Soltanzadeh A, Alizadegan M. *Advanced Metabolic-Guided Perfusion Concepts in an Obese Patient Undergoing Cardiac Surgery: A Case Report.* Cureus. 2025;17:e99447. DOI 10.7759/cureus.99447. [原始期刊頁](https://www.cureus.com/articles/446799-advanced-metabolic-guided-perfusion-concepts-in-an-obese-patient-undergoing-cardiac-surgery-a-case-report)；[期刊 PDF](https://www.cureus.com/articles/446799-advanced-metabolic-guided-perfusion-concepts-in-an-obese-patient-undergoing-cardiac-surgery-a-case-report.pdf)。本文僅使用可確認的表格摘要與病例敘述；原文持續時間及 Hb 採樣時點的不一致，已於上文說明。
+2. *Pocket Medicine*, 9E，PA catheter／Fick 與 hemodynamic formulae 相關章節（讀者 PDF p31–33、p373–374）；原書圖表不在本站重製。
+3. [2024 EACTS/EACTAIC/EBCP Guidelines on patient blood management in adult cardiac surgery](https://pmc.ncbi.nlm.nih.gov/articles/PMC12257489/)：transfusion triggers 與 Recommendation Table 11；臨床應以原指引全文及註腳為準。
 4. Mazer CD et al. [TRICS III](https://pubmed.ncbi.nlm.nih.gov/29130845/). *NEJM*. 2017;377:2133–2144.
 5. Carson JL et al. [2023 AABB RBC transfusion guideline](https://doi.org/10.1001/jama.2023.12914). *JAMA*. 2023.
 6. [IBCC — postoperative cardiac surgical patients](https://emcrit.org/ibcc/cts/) 與 [Shock & vasoactive medications](https://emcrit.org/ibcc/shock/)：作床邊分流框架，不取代正式輸血指引。
 7. Okamoto K et al. [*SvO₂ response to red blood cell transfusion in cardiovascular surgical ICU patients: a retrospective observational study.*](https://link.springer.com/article/10.1186/s13054-026-06149-9) *Critical Care*. 2026;30:341. DOI 10.1186/s13054-026-06149-9。**1,352 名術後 CVICU 病人的群體資料**，不是 2025 個案，亦不能用 69% 作為輸血 trigger。
-8. **撤稿來源排除記錄**：Suttner et al., 2004; PMID 15281492 已於 2011 年被撤稿，**V2 不以其結果作為任何醫學證據**。參見同目錄 `retraction-alert-and-v2-correction.md`，保留原始 V1 引用錯誤以供可追溯評測。
+8. **文獻完整性**：Suttner et al., 2004（PMID 15281492）已撤稿，本文不採用其結果作為證據。
 
