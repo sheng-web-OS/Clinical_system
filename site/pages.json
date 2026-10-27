@@ -2258,6 +2258,15 @@
         "question_number": 57,
         "concept_heading": "十五、持續危險時：酸中毒、類固醇與頑固性休克",
         "focus": "感染合併 adrenal crisis 的優先診療"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "concept_heading": "十五、持續危險時：酸中毒、類固醇與頑固性休克",
+        "focus": "官方 113-1 Q48：酸中毒矯正不取代感染源與灌流復甦，保留 2026 指南限定例外"
       }
     ]
   },
@@ -2323,6 +2332,15 @@
         "question_number": 57,
         "concept_heading": "114-1 醫學（三）第 57 題｜感染合併持續休克，什麼時候不要再等檢驗？",
         "focus": "同一官方 Q57 的 adrenal crisis 休克鑑別：以既有正規題號連回 Sepsis 詳解，不重複登錄官方真題。"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "concept_heading": "113-1 醫學（三）第 48 題｜Sepsis 合併酸中毒，第一個目標是把 pH 調正常嗎？",
+        "focus": "官方第 48 題確實為 Sepsis／bicarbonate；與現有 acid-base 原題共用 canonical identity"
       }
     ]
   },
