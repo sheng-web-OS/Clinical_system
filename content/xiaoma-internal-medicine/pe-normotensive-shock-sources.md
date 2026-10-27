@@ -21,7 +21,7 @@ Rouleau SG, et al. **Management of Presumed Pulmonary Embolism With Normotensive
 
 ## 2. Pocket Medicine 第九版
 
-使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次讀到 **p.98–101 的文字解析與圖表位置**，但頁面影像讀取返回 unavailable，原 PDF 原始 bytes 亦未能 materialize。既有 GitHub [VTE 圖表來源紀錄](../../xiaoma-reading/vte-sources.md) 曾記錄 2026-10-26/27 目視 p.97–100，**不冒稱本次已重新目視 p.98–101 的像素**。
+使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次讀到 **p.98–101 的文字解析與圖表位置**，但頁面影像讀取返回 unavailable，原 PDF 原始 bytes 亦未能 materialize。既有 GitHub [VTE 圖表來源紀錄](../xiaoma-reading/vte-sources.md) 曾記錄 2026-10-26/27 目視 p.97–100，**不冒稱本次已重新目視 p.98–101 的像素**。
 
 - **p.97**：Virchow triad 與 *Thromboprophylaxis* 情境表，屬 VTE 共同預防上游問題；本篇不重新抄錄預防藥物表。
 - **p.98**：DVT modified Wells 三層模型、**Figure 2-2 Approach to suspected DVT**，以及 PE Wells 開始；DVT 三層分組不應移植成 NICE 的 DVT 兩層演算法。
