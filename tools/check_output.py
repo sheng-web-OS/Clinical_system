@@ -112,8 +112,9 @@ if not errors:
         if not isinstance(index, list) or not all(isinstance(row, dict) and isinstance(row.get("url"), str) for row in index):
             raise ValueError("Search index must be a list of page records")
         urls = [row["url"] for row in index]
-        if len(urls) != len(PAGES) or set(urls) != {row["output"] for row in PAGES}:
-            errors.append("Search index does not match the public catalog")
+        teaching_search_pages = [row for row in PAGES if row.get("review") != "source_audit"]
+        if len(urls) != len(teaching_search_pages) or set(urls) != {row["output"] for row in teaching_search_pages}:
+            errors.append("Search index contains audit metadata or misses public reading pages")
         inline = (DIST / "site-index.js").read_text("utf8").strip()
         prefix = "window.CLINICAL_INDEX = "
         if not inline.startswith(prefix) or not inline.endswith(";"):
