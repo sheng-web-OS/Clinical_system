@@ -99,6 +99,8 @@ Civelek 等人在 2025 年 12 月發表一名 **61 歲、125 kg、BSA 2.23 m²**
 
 ### 參考資料與證據限制
 
+[原始來源、圖像角色與證據限制查核](../cticu-oxygen-delivery-sources.md)
+
 1. Civelek A, Soltanzadeh A, Alizadegan M. *Advanced Metabolic-Guided Perfusion Concepts in an Obese Patient Undergoing Cardiac Surgery: A Case Report.* Cureus. 2025;17:e99447. DOI 10.7759/cureus.99447. [原始期刊頁](https://www.cureus.com/articles/446799-advanced-metabolic-guided-perfusion-concepts-in-an-obese-patient-undergoing-cardiac-surgery-a-case-report)；[期刊 PDF](https://www.cureus.com/articles/446799-advanced-metabolic-guided-perfusion-concepts-in-an-obese-patient-undergoing-cardiac-surgery-a-case-report.pdf)。本文僅使用可確認的表格摘要與病例敘述；原文持續時間及 Hb 採樣時點的不一致，已於上文說明。
 2. *Pocket Medicine*, 9E，PA catheter／Fick 與 hemodynamic formulae 相關章節（讀者 PDF p31–33、p373–374）；原書圖表不在本站重製。
 3. [2024 EACTS/EACTAIC/EBCP Guidelines on patient blood management in adult cardiac surgery](https://pmc.ncbi.nlm.nih.gov/articles/PMC12257489/)：transfusion triggers 與 Recommendation Table 11；臨床應以原指引全文及註腳為準。
