@@ -76,3 +76,15 @@ A 命題 3：一篇聚焦診斷／失代償／介入三個層次，後半試驗�
 - 已透過 File Library 的 **第二份 Pocket Medicine 9E PDF** 實際目視 reader 第 99 頁 Figure 2-3（Wells likely／unlikely → D-dimer／CTA，陰性但高懷疑時追加影像）及第 100 頁原始 Initial Anticoagulation Options 三欄表、caption 與 footnote 附近文字。**圖檔只供私人核讀，未授權嵌入公網**；以已有 VTE 站內診斷圖與 NICE 來源連結代替重製，保留名稱／來源分辨。
 - 發現第 100 頁 rivaroxaban 初始欄位原書寫 **15 mg once daily ×21 days**，與 [DailyMed FDA 標示](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610) 成人 DVT／PE 起始 **15 mg twice daily for 21 days** 不符；來源頁明確標記不能照抄該行開方。其他原表選藥限制也不能脫離指引版本與病人出血風險。
 - 這個階段只屬來源、編輯及原圖**私人核對**，不是對 Figure Gate、同提交 browser screenshots、全篇臨床意義或正式發布的自動放行。維持 Draft/HOLD，禁止直接合併或部署。
+
+
+## 發布候選：原書查核與手機實測（2026-10-27，增量）
+
+- **原書 Figure/Table 來源阻塞已解**：第一份 Pocket 9E Library 檔案 p99–100 影像無法顯示；同書第二副本 `內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten(1).pdf` 使用 `files.read(mode=pages, include_images=true)` 可見 p99 Figure 2-3 的兩層 Wells → D-dimer／CTPA 分支、CTA 陰性但高懷疑時考慮加做影像的原圖文字，以及 p100 Class/Dose/Comment 抗凝原表與可見註記；兩頁圖像已 AI 目視。仍無 raw bytes 校驗，不推定跨副本 SHA 同一。p100 rivaroxaban 15 mg qd ×21d 與原始 EINSTEIN-PE 15 mg BID ×21d 不符，公網來源頁顯著標示且未轉成醫囑。原書原像素 **不公開重製**。
+- **連結與索引不複製**：沿用 2026-10-27 main `994102094fc6b1ad0cf16f1a4cd395f53839328a` 的 year-first 自動嵌入題目機制（PR #113），在既有 PE 長篇中註冊 112（二）醫學（三）Q51。主文中形成 `exam-112-2-2-8c5ac4fc8d-q-51` 錨點，年度 `xiaoma-exams.html` 連到此錨點並回連正文機轉段落；不另外新建題解文章、不修改已發布 VTE 原創主文。
+- **Figure Gate**：在 `audit/figure-gate.json` 註冊 Pocket p99–100 私下圖表核讀與公開的 NICE NG158 原始 PE 流程 PDF 第 2 頁來源連結。URL 已能讀到 PDF 3 頁與文字內容；外部快取的 screenshot 接口曾失敗，但過往 NICE 原圖已有獨立來源目視稽核，不把本次 403／cache miss 誤稱公網壞連結。Figure Gate 結構檢查不等於法律與醫學認證。
+- **公開文案**：來源頁重寫為讀者可閱讀的原始病例、圖表、指引、RCT 和真題證據頁，去除所有私人 PR、Draft/HOLD、內部編輯台帳及尚未發布的臨時描述；原始運行證據只留本私人檔案。
+- **工程驗收**：候選 `e00a5aef5f3eccabbb045d241508f96e4dcbf4d6` GitHub Actions #40434271318 build SUCCESS。隨後手機治療三欄表改為三段 clinical conditional prose，來源頁多欄病例表亦改段落；更新後的 head `6ab4fee12f7e8948911b691903f5cee441748f6a` GitHub Actions #40435288316 build SUCCESS，獲得約 4 MB `clinical-system-static-site` 完整 ZIP 產物。
+- **真實瀏覽器 CSS/HTML 渲染**：下載與當次 SHA 對應的靜態 ZIP，離線使用 Chromium + 實際生成 `styles.css` 渲染正文、來源頁、歷屆年份頁各 **360／390／1280px**；9/9 結果 `documentElement.scrollWidth == viewport`，無 heading/table/figure 版面超出。實際另看了 360px 主文首屏、原三欄治療表、國考 Q51 區塊，發現治療表雖未溢出但字體僅約 13px，故修訂移除；第二次渲染確認全文已無正文表格。這是 Chromium 的真實 HTML/CSS 渲染，**不是遠端正式站瀏覽、JS 全流程、真人手機或真人讀者的理解測試**。所有公開頁並無私人考期、作者身份與內部研究紀錄字串。
+- **醫學對抗性再審（AI 自查，非真人獨立醫師複審）**：病例仍為 presumed PE until later CT；不將 S1Q3T3／乳酸單獨作確診；VBG pH/pCO₂／chemistry HCO₃ 時點矛盾保留且**不作 Winter／定量代償或將插管判為唯一停搏病因**；2026 AHA/ACC A–E 風險分類不等同 diagnostic pathway，C3 不確定、D1–D2 需出血風險判斷；PEITHO/HI-PEITHO/PRAGUE-26 對象與介入技術分開、複合終點不冒稱死亡率收益；高危情境不忽略顱內出血。上述核心誤導在現行正文均有處理。正式仍需持續評估臨床真實世界變異與最新證據。
+- **發布最終關**：以上支持 AI 教材進入合併／部署候選。是否已成功 Cloudflare production 以及實際 HTTPS 讀回必須用 main merge SHA **事後獨立查證**，不能以本段或 PR CI 替代。此任務不修改個人學習完成度。
