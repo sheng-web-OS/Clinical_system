@@ -57,8 +57,8 @@ ABG（arterial blood gas，動脈血氣）直接測量 **pH、PaCO₂、PaO₂**
 </div>
 <div style="text-align:center;margin:0.65rem 0;font-size:0.94rem;line-height:1.5;font-weight:750;color:#305449">↓　兩個數字不互相否定；共同缺的是因果證據　↓</div>
 <div style="background:#e6f0eb;border:1px solid #a9c6b9;border-radius:8px;padding:0.8rem 1rem">
-<div style="font-size:0.95rem;font-weight:800;margin-bottom:0.35rem">要知道氧真的送到了嗎？</div>
-<div style="font-size:0.96rem;line-height:1.7"><strong>SaO₂ + Hb + PaO₂ → CaO₂</strong>（每單位血能帶多少氧）<div style="margin-left:1rem">↓ 加上 <strong>CO</strong>（每分鐘輸出多少血）</div><strong>DO₂</strong>（全身氧輸送量）　≠　每個器官實際取得或利用的氧</div>
+<div style="font-size:0.95rem;font-weight:800;margin-bottom:0.35rem">血液每分鐘能送出多少氧？</div>
+<div style="font-size:0.96rem;line-height:1.7"><strong>Hb × SaO₂</strong>（主要攜氧）＋<strong>溶解氧</strong>（少量，與 PaO₂ 有關）<div style="margin:0.35rem 0 0.35rem 1rem">↓ 合計為 <strong>CaO₂</strong>：每單位血液所含的氧</div><strong>CaO₂ × CO → DO₂</strong>：全身每分鐘送出的氧<div style="margin-top:0.35rem">但 <strong>DO₂ ≠ 每個器官實際利用的氧</strong>；還需考慮血流分布及氧萃取。</div></div>
 <p style="margin:0.45rem 0 0;font-size:0.88rem;color:#405b51">本病例 T1 沒有同期完整 Hb、血氣及 CO，以上是生理關係，<strong>不是</strong>已算出的病人數值。</p>
 </div>
 <p style="margin:0.75rem 0 0;font-size:0.95rem;line-height:1.7"><strong>床邊真正改判的證據：</strong>先排查出血、心包／縱膈壓迫與心功能惡化；同步評估心律、血壓／藥物需求、胸管、床邊心超、Hb、尿量、器官灌流與乳酸趨勢。再判斷 catecholamine 相關生成或清除因素的貢獻。</p>
