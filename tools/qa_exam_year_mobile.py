@@ -7,6 +7,7 @@ import argparse
 import functools
 import http.server
 import json
+import subprocess
 from pathlib import Path
 import sys
 import threading
@@ -28,6 +29,13 @@ EXPECTED = [
 
 def run(dist: Path, out: Path) -> int:
     from playwright.sync_api import sync_playwright
+
+    # Headless layout passing with tofu glyphs is a false green. Confirm the
+    # Linux runner has genuine Taiwan Traditional Chinese glyph coverage.
+    font = subprocess.run(["fc-match", "-f", "%{family}", "Noto Sans TC"],
+                          text=True, capture_output=True, check=True)
+    if "Noto Sans TC" not in font.stdout:
+        raise RuntimeError("HOLD: no readable Traditional Chinese font installed for phone screenshots")
 
     out.mkdir(parents=True, exist_ok=True)
     records = {question_key(record["exam"]): record for record in question_records(load_pages(ROOT))}
