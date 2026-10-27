@@ -837,6 +837,15 @@
   overflow-wrap:break-word;
 }
 
+/* Inline primary-source algorithm: keep the published image uncropped; open full-size on tap. */
+.article .inline-source-figure{margin:2rem 0;padding:clamp(.65rem,2vw,1.2rem);border:1px solid var(--line,#d8dedb);border-radius:12px;max-width:100%;box-sizing:border-box}
+.article .inline-source-image{display:block;max-width:100%;background:#fff}
+.article .inline-source-image img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+.article .inline-source-figure figcaption{margin:.85rem 0 0;font-size:.86rem;line-height:1.7;color:var(--muted,#52646b)}
+.article .inline-source-figure figcaption span{display:block}
+.article .inline-source-figure figcaption a{display:inline-block;margin:.3rem 0}
+.article .inline-source-figure figcaption small{display:block;font-size:.82rem;line-height:1.7}
+
 
 /* True measured contrast in a single published case: biopsy-area estimate is
    deliberately not plotted on the same quantitative axis as serum ALP. */

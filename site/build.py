@@ -172,6 +172,29 @@ def render_reader(page, body, headings, related_questions=""):
 <article class="article reading-prose">'''+body+'''</article>'''+original_note+related_questions+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
 <script src="site-index.js"></script><script src="app.js" defer></script></body></html>'''
 
+
+def embed_inline_source_figure(body, page):
+    """Insert a sourced visual in the rendered page; never mutate archived author text."""
+    figure = page.get("inline_source_figure")
+    if not figure:
+        return body
+    marker = "<p>" + html.escape(figure["before_text"], quote=False)
+    if body.count(marker) != 1:
+        raise ValueError("Inline source figure insertion point missing/ambiguous: " + page["output"])
+    image_url = html.escape(figure["image_url"], quote=True)
+    source_url = html.escape(figure["official_source_url"], quote=True)
+    alt = html.escape(figure["alt"], quote=True)
+    caption = html.escape(figure["caption"])
+    qualification = html.escape(figure["qualification"])
+    block = ('<figure class="inline-source-figure" id="aes-cse-2016-figure">'
+             '<a class="inline-source-image" href="' + image_url + '" target="_blank" rel="noopener noreferrer" '
+             'aria-label="開啟完整 AES 2016 status epilepticus 流程圖">'
+             '<img src="' + image_url + '" width="753" height="998" loading="lazy" decoding="async" alt="' + alt + '"></a>'
+             '<figcaption><span>' + caption + '</span> '
+             '<a href="' + source_url + '" target="_blank" rel="noopener noreferrer">AES 官方完整 PDF</a>'
+             '<small>' + qualification + '</small></figcaption></figure>')
+    return body.replace(marker, block + marker, 1)
+
 def render(md_file, output, page_title, subtitle, rendered=None):
     raw=(BASE/md_file).read_text(encoding="utf-8")
     current=next(row for row in PAGES if row["output"]==output)
@@ -204,6 +227,7 @@ def render(md_file, output, page_title, subtitle, rendered=None):
     body=re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)  # accessible single H1 in page hero
     body=re.sub(r'<pre><code class="language-mermaid">([\s\S]*?)</code></pre>',render_mechanism,body)
     body=rewrite_internal_links(body,md_file)
+    body=embed_inline_source_figure(body,current)
     if rendered is not None:
         rendered[output] = {"body": body, "headings": rr.headings}
     current=next(row for row in PAGES if row["output"]==output)
