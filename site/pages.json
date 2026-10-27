@@ -2033,5 +2033,49 @@
     "date": "2026-10-27",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-chronic-diarrhea-signal-etiology.md",
+    "output": "xiaoma-reading-chronic-diarrhea-evidence.html",
+    "title": "找到腹瀉的類型，為什麼仍然沒有找到病因？",
+    "subtitle": "糞便發炎/脂肪訊號與 osmotic gap 的不同推論角色",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "腸胃",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 20,
+        "focus": "以 IBD／Crohn colitis 的慢性結腸發炎與癌症監測，反證「inflammatory stool signal 就等於特定病因」；與 microscopic colitis 的組織證據分開。",
+        "concept_heading": "Q1｜Figure 3-2 為什麼先看兩種訊號，才算 osmotic gap？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 23,
+        "focus": "SIBO 可以同時帶來 steatorrhea 與 B12 缺乏；脂肪便先定位吸收失衡，仍需追溯膽鹽去結合、停滯等病因。",
+        "concept_heading": "Q1｜Figure 3-2 為什麼先看兩種訊號，才算 osmotic gap？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-reading/chronic-diarrhea-sources-20261027.md",
+    "output": "xiaoma-reading-chronic-diarrhea-sources.html",
+    "title": "Chronic diarrhea｜原始流程與 osmotic gap 的界線",
+    "subtitle": "Pocket Medicine 9E／原始指南與測量推論的來源限制",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
