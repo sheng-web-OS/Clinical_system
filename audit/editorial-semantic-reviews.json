@@ -1189,6 +1189,277 @@
           "line_for_editor": 181
         }
       }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-pericardial-tamponade.md": {
+      "content_blob": "9dd31602b300c9a6ca92f7541f52895988353e4b",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/166#issuecomment-6441158002",
+      "core_reader_question": "感染疑慮的休克病人 CVP 已升高，為何仍可因心包填塞而嚴重低灌流？何時影像與生理足以優先解除壓迫？",
+      "new_understanding": "以真實病例的兩條診斷時間線、跨壁壓與心室相互依賴串接 RA/RV/IVC/Doppler，並藉急慢積液、低壓填塞及術後局部血塊轉換診斷與處置策略。",
+      "strongest_counterargument": "既有私人 Tamponade 教材與 IBCC 原文已詳述機轉，因此一篇新文章若只是搬運概念便沒有讀者收益；本篇新增的是連續可追溯的病例—機轉—床邊證據—不同引流分支，且已由本輪重新查對原始來源及手機圖。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "871f44d5e634018c83-1": {
+          "role": "case_evidence",
+          "reader_gain": "以原病例的低壓、高乳酸與偏高 CVP 建立真正需要重新定位的循環問題。",
+          "nonredundancy_reason": "若刪去患者當下的血壓、CVP 及乳酸，後續心包跨壁壓推論便失去臨床發動點。",
+          "verdict": "keep",
+          "line_for_editor": 3
+        },
+        "71e22be5fdefecb021-1": {
+          "role": "case_evidence",
+          "reader_gain": "明確區分心超估計積液量、立即引流改善及後續惡性細胞病因確認三種資料。",
+          "nonredundancy_reason": "此段是唯一交代實際診療轉折及未記載 RA/RV 徵象的時序，不可被後面理論替代。",
+          "verdict": "keep",
+          "line_for_editor": 5
+        },
+        "20076ff554dbcb9fa4-1": {
+          "role": "orientation",
+          "reader_gain": "把高 CVP、保留收縮能力與是否解除壓迫串成三個待回答的床邊問題。",
+          "nonredundancy_reason": "若只保留下一段定義，讀者不會知道為何現在必須引入跨壁壓和心超。",
+          "verdict": "keep",
+          "line_for_editor": 7
+        },
+        "1571554e979ea2ef35-1": {
+          "role": "definition",
+          "reader_gain": "釐清影像上的積液、灌流受阻的 tamponade 與造成積液的病因所屬層級。",
+          "nonredundancy_reason": "此處避免把影像量或腫瘤診斷直接等同機械性休克，屬必要解混。",
+          "verdict": "keep",
+          "line_for_editor": 11
+        },
+        "7e103f4dc8494562fa-1": {
+          "role": "decision",
+          "reader_gain": "指出引流急迫性來自灌流受損而非積液單純大量，病因可平行檢驗。",
+          "nonredundancy_reason": "本段將上面的三層定義轉為急救時間順序，不能由定義自行推出。",
+          "verdict": "keep",
+          "line_for_editor": 13
+        },
+        "c75f957407d776d754-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "告訴讀者病例證據表不是 tamponade 的普遍診斷檢查清單，須按當時事實解讀。",
+          "nonredundancy_reason": "它使緊接的觀察、支持程度及不可推論欄位有必要的個案界線。",
+          "verdict": "keep",
+          "line_for_editor": 15
+        },
+        "618826d72643ccda05-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以腔內壓和心包外壓的差解釋高 CVP 與有效舒張充盈不足並存。",
+          "nonredundancy_reason": "沒有跨壁壓這個中介，高 CVP 和低輸出看起來矛盾且易導致補液錯誤。",
+          "verdict": "keep",
+          "line_for_editor": 27
+        },
+        "fd90d218ab573270cb-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將 CVP 與容量、有效前負荷及 fluid responsiveness 嚴格分開並回扣患者數據。",
+          "nonredundancy_reason": "這段把生理機轉變成不能依單點 CVP 無限輸液的臨床限制。",
+          "verdict": "keep",
+          "line_for_editor": 29
+        },
+        "93fe0215a458361266-1": {
+          "role": "causal_bridge",
+          "reader_gain": "補上每搏輸出、EF、代償心跳與 ScvO2 各自代表的生理量而非同義詞。",
+          "nonredundancy_reason": "它回答血壓或 EF 尚可時仍可能灌流不良，與上一段 CVP 解混不同。",
+          "verdict": "keep",
+          "line_for_editor": 31
+        },
+        "b6027f788861ed77bb-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用非線性壓力容積關係解釋急性少量與慢性大量積液的不同風險。",
+          "nonredundancy_reason": "這是進入積液速度反事實推理不可缺的機制，不會由跨壁壓定義自動得出。",
+          "verdict": "keep",
+          "line_for_editor": 61
+        },
+        "1d0ece4da3bd382164-1": {
+          "role": "causal_bridge",
+          "reader_gain": "由受限總心室容積推導自發吸氣時的左右心室相互依賴。",
+          "nonredundancy_reason": "沒有這段，下一個 pulsus paradoxus 的呼吸變化就只剩死背十毫米汞柱。",
+          "verdict": "keep",
+          "line_for_editor": 65
+        },
+        "b98530d41903d18a66-1": {
+          "role": "definition",
+          "reader_gain": "核對 pulsus paradoxus 是吸氣引起收縮壓下降，不是 SBP 減 DBP 的脈壓。",
+          "nonredundancy_reason": "前一版把脈壓誤稱為本項測量，本段已明確更正定義及測量限制。",
+          "verdict": "keep",
+          "line_for_editor": 67
+        },
+        "f1d6712a7524ff2faa-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將 Beck triad 與 ECG 訊號定位為提示而非執行床邊超音波的必要條件。",
+          "nonredundancy_reason": "移除此段易讓讀者要求三聯徵完整才檢查，造成高風險延誤。",
+          "verdict": "keep",
+          "line_for_editor": 69
+        },
+        "1a0403a02df436589e-1": {
+          "role": "decision",
+          "reader_gain": "由患者 CXR 與 CVP 的非特異線索轉向真正要回答的心包壓迫心超問題。",
+          "nonredundancy_reason": "這是病人資料跨到 echo 章節的臨床資訊增量，不只是轉換章名。",
+          "verdict": "keep",
+          "line_for_editor": 73
+        },
+        "4e752525d3b6507e53-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "把 RA/RV 相位、IVC 和 Doppler 串回同一受限充盈模型並保留其他休克鑑別。",
+          "nonredundancy_reason": "獨立陽性清單不足以解釋血流動力學，這段阻斷看到積液就停止診斷。",
+          "verdict": "keep",
+          "line_for_editor": 83
+        },
+        "580c2bdcfa1188ba25-1": {
+          "role": "source_context",
+          "reader_gain": "將 ESC Table17 與 ACC Figure10 的不同 Doppler 範圍定位至原始材料而非單一決策閾值。",
+          "nonredundancy_reason": "移除此段會把兩套圖表的語境和來源邊界藏起來，也無法追溯原影像。",
+          "verdict": "keep",
+          "line_for_editor": 85
+        },
+        "8746031d2eb6d37098-1": {
+          "role": "counterfactual",
+          "reader_gain": "比較急性少量出血與慢性大量積液，讓處置依累積速度及灌流改判。",
+          "nonredundancy_reason": "這是相同診斷標籤下第一個能改變引流時機的反例，非重述定義。",
+          "verdict": "keep",
+          "line_for_editor": 89
+        },
+        "6e1a2cfda8851e4d54-1": {
+          "role": "counterfactual",
+          "reader_gain": "釐清 low-pressure tamponade 的 IVC 可不擴張，避免一個陰性徵象誤排除。",
+          "nonredundancy_reason": "上一個反例只修改積液速度，本段測試容量狀態改變如何使典型靜脈壓訊號失效。",
+          "verdict": "keep",
+          "line_for_editor": 91
+        },
+        "b05e1475c2c71f0db8-1": {
+          "role": "counterfactual",
+          "reader_gain": "說明術後局部血塊可缺乏環周積液而需要 TEE 甚至外科再探查。",
+          "nonredundancy_reason": "此情境改變的不只是診斷信心，還包括經皮抽液與外科清除的介入選項。",
+          "verdict": "keep",
+          "line_for_editor": 93
+        },
+        "12f4073006546745c9-1": {
+          "role": "decision",
+          "reader_gain": "把感染疑慮的治療與床邊 echo 搜尋機械阻塞安排為同步的急救行動。",
+          "nonredundancy_reason": "若僅保留穿刺建議，會遺漏尚未確診時如何兼顧感染與正在惡化的循環。",
+          "verdict": "keep",
+          "line_for_editor": 97
+        },
+        "dcf80be32c57abff4e-1": {
+          "role": "safety",
+          "reader_gain": "根據灌流與影像確認不穩定 tamponade 需立即處置並辨識解剖性手術例外。",
+          "nonredundancy_reason": "這一段才具體標示不能等檢驗的治療門檻，以及破裂和血塊並非例行穿刺。",
+          "verdict": "keep",
+          "line_for_editor": 99
+        },
+        "9188f8d3f3418bc144-1": {
+          "role": "safety",
+          "reader_gain": "界定短暫補液及升壓藥僅橋接引流，血壓回升不代表外部壓迫解除。",
+          "nonredundancy_reason": "上一段指向減壓，這段特別防止以暫時血壓改善取代病因治療。",
+          "verdict": "keep",
+          "line_for_editor": 101
+        },
+        "b1ee70e4d2c9f64f7e-1": {
+          "role": "safety",
+          "reader_gain": "指出麻醉誘導和正壓通氣可能削弱代償回流，但不絕對禁止救命氣道處置。",
+          "nonredundancy_reason": "刪去這段會讓讀者忽略在插管瞬間可能產生的血流動力學坍塌風險。",
+          "verdict": "keep",
+          "line_for_editor": 103
+        },
+        "8e581b77b743f488b5-1": {
+          "role": "decision",
+          "reader_gain": "把引流後的灌流重評、再積液、病因與減壓症候群追蹤視為不同終點。",
+          "nonredundancy_reason": "若以引流完成作為故事結束，就無法解釋控制排液及後續惡性積液病因處理。",
+          "verdict": "keep",
+          "line_for_editor": 105
+        },
+        "3a7ebfdf5152b8476c-1": {
+          "role": "counterfactual",
+          "reader_gain": "以血壓穩定但大量積液的條件，測試單憑體積是否足以立即穿刺。",
+          "nonredundancy_reason": "它把先前的壓力容積原理轉為可自行回答的治療門檻判斷。",
+          "verdict": "keep",
+          "line_for_editor": 109
+        },
+        "b128a854b7e9c7ba02-1": {
+          "role": "decision",
+          "reader_gain": "回答大積液無低灌流者應按病因和進展評估而非一律緊急抽液。",
+          "nonredundancy_reason": "題目只給問題，這段補上比較穩定與不穩定病人的必要行動邊界。",
+          "verdict": "keep",
+          "line_for_editor": 111
+        },
+        "c63e3f7623eee03ff6-1": {
+          "role": "counterfactual",
+          "reader_gain": "故意加入小而可塌陷 IVC 但仍休克的反例以測陰性訊號可靠度。",
+          "nonredundancy_reason": "這個輸入條件不同於第一題的穩定大積液，測試 low-pressure 例外。",
+          "verdict": "keep",
+          "line_for_editor": 115
+        },
+        "88fffa1dea7addb71b-1": {
+          "role": "decision",
+          "reader_gain": "以脫水和透析等低容量情境解釋不能只靠 IVC 排除，並重評支持與減壓。",
+          "nonredundancy_reason": "題目若只有否定答案，仍缺乏導致判斷改變的容量與心包限制機制。",
+          "verdict": "keep",
+          "line_for_editor": 117
+        },
+        "257b1f631081ece15c-1": {
+          "role": "counterfactual",
+          "reader_gain": "以穿刺後血壓回升但感染未證實的狀態測試病因歸因的界線。",
+          "nonredundancy_reason": "它直接檢驗病例後見之明而不是再次背誦心包壓生理。",
+          "verdict": "keep",
+          "line_for_editor": 121
+        },
+        "6822f0648dac856641-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "解釋改善只支持阻塞性休克成分，不足以反證合併感染或確認最終病因。",
+          "nonredundancy_reason": "回扣前面的感染鑑別，避免治療反應被錯誤當作排除性診斷測試。",
+          "verdict": "keep",
+          "line_for_editor": 123
+        },
+        "3379f42fd4eb1d4623-1": {
+          "role": "counterfactual",
+          "reader_gain": "以術後 CABG 且 TTE 未見環周積液的病例考驗是否應停止鑑別。",
+          "nonredundancy_reason": "第一、二反例沒有涉及術後局部血塊與有限 TTE 視窗，問題具獨立性。",
+          "verdict": "keep",
+          "line_for_editor": 127
+        },
+        "05d58e885126bd5084-1": {
+          "role": "decision",
+          "reader_gain": "指出可用 TEE 與外科評估局部血塊且介入不必然是針抽液。",
+          "nonredundancy_reason": "這段讓術後情境真正改變下一個檢查及處置，而非只說不能排除。",
+          "verdict": "keep",
+          "line_for_editor": 129
+        },
+        "73482d07df26cfdee1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "分開急性心超減壓和後來心包細胞學確立病因的兩條診斷時間線。",
+          "nonredundancy_reason": "這是防止用腫瘤事後資訊回填急救決策的整篇整合性結論。",
+          "verdict": "keep",
+          "line_for_editor": 135
+        },
+        "eeb67975d8418abfdd-1": {
+          "role": "navigation",
+          "reader_gain": "將核心問題濃縮為有效充盈、器官灌流與解除壓迫的優先次序。",
+          "nonredundancy_reason": "刪除後四種變體難以收束為床邊可遷移的共同判斷尺度。",
+          "verdict": "keep",
+          "line_for_editor": 137
+        },
+        "53205eea9ac2dd0282-1": {
+          "role": "source_context",
+          "reader_gain": "提供原病例、IBCC、ESC Table17、ACC Figure10 及術後 TEE 的明確驗證入口。",
+          "nonredundancy_reason": "此來源導航保留 reader 必要查證路徑及 AI 教學身分，不把內部審稿 metadata 放回正文。",
+          "verdict": "keep",
+          "line_for_editor": 139
+        }
+      }
     }
   }
 }

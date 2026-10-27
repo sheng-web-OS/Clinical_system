@@ -911,6 +911,39 @@
         }
       ],
       "original_site_mermaid_note": "The two Mermaid diagrams in the reader are original qualitative mechanism illustrations, not reproduced publisher figures. Independent medical semantic and mobile render QA remain separate hard stops."
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-pericardial-tamponade.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pericardial-tamponade-sources.md",
+      "items": [
+        {
+          "locator": "IBCC Pericardial Tamponade, 2024, physiology and CVP versus pericardial pressure; ESC 2025 §11.8",
+          "source_token": "Pericardial tamponade",
+          "mode": "illustrated",
+          "anchor": "tamponade-mechanism",
+          "caption_token": "IBCC 2024",
+          "teaching_role": "將高 CVP 與降低的有效舒張充盈視覺化為可並存的兩個結果，避免把 CVP 當成心室有效前負荷；圖形對應正文的因果中介。",
+          "scope_limit": "原創定性生理示意，不能推算個別病人的實際心包壓、心輸出量、volume response 或治療適應症。"
+        },
+        {
+          "locator": "2025 ESC Guidelines European Heart Journal 46:3952, Table 17 Echocardiographic signs of cardiac tamponade, §11.8",
+          "source_token": "Table 17",
+          "mode": "source_link",
+          "url": "https://academic.oup.com/eurheartj/article/46/40/3952/8234483",
+          "teaching_role": "逐項校正 RA/RV collapse、IVC 與呼吸血流變異的臨床意義與限制，連回原始敏感與特異性範圍避免單數值確診。",
+          "scope_limit": "來源 HTML 表格非本病例觀察，研究族群異質且部分無可比效能，不能轉換為單一固定穿刺門檻。",
+          "why_link_instead": "原指南影像與表格有出版社著作權，本站導向權利人原頁供核查，不在缺乏重製授權時直接複製原像素。"
+        },
+        {
+          "locator": "JACC 2025 ACC Expert Consensus on Pericarditis, section 4.3.2 and Figure 10 echocardiography signs of tamponade",
+          "source_token": "Figure 10",
+          "mode": "source_link",
+          "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.05.023",
+          "teaching_role": "以原始超音波影像連接積液、RV collapse、流速變化和 IVC，對照 ESC Doppler 門檻寫法差異與不確定性。",
+          "scope_limit": "原 Figure 10 是文獻教學影像、不是 Azim 2010 病例的心超；動態檢查與臨床血流動力學仍不可由靜態圖替代。",
+          "why_link_instead": "ACC Figure 10 原圖授權未核實，提供來源文章的原始圖和 caption 而不嵌入未授權像素，以保留可稽核性。"
+        }
+      ]
     }
   }
 }

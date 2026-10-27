@@ -2356,5 +2356,29 @@
     "navigation": false,
     "section": "參考資料",
     "kind": "source_reference"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-pericardial-tamponade.md",
+    "output": "xiaoma-20261027-pericardial-tamponade.html",
+    "title": "Pericardial Tamponade：為什麼 CVP 高，心臟卻充不進血？",
+    "subtitle": "真實休克病例 × 心包跨壁壓 × Echo 改判 × 引流時機與三種反例",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環急症",
+    "references": "xiaoma-pericardial-tamponade-sources.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pericardial-tamponade-sources.md",
+    "output": "xiaoma-pericardial-tamponade-sources.html",
+    "title": "Pericardial Tamponade：病例、IBCC 與 ESC 原始來源",
+    "subtitle": "原始病例證據、ESC Table 17／ACC Figure 10 及引流與術後超音波限制",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
