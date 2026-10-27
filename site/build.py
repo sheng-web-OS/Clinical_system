@@ -223,7 +223,7 @@ def render(md_file, output, page_title, subtitle, rendered=None):
     # Compile MathML from authored TeX before Mistune consumes \\[...\\] as escapes.
     raw=compile_math(raw)
     question_entries = current.get("exam_questions", []) + current.get("related_exams", [])
-    rr=Renderer({re.sub(r"\\*\\*", "", q["question_heading"]): question_anchor(q) for q in question_entries if q.get("question_heading")})
+    rr=Renderer({q["question_heading"].replace("**", ""): question_anchor(q) for q in question_entries if q.get("question_heading")})
     parser=mistune.create_markdown(renderer=rr,plugins=["table","strikethrough","url"])
     body=parser(raw)
     body=re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)  # accessible single H1 in page hero
