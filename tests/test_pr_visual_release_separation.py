@@ -41,6 +41,14 @@ class PrivateVisualBeforeReleaseGate(unittest.TestCase):
         self.assertRegex(installer, r"timeout-minutes: [4-6]\b")
         self.assertNotIn("upload-artifact", step)
 
+    def test_cjk_glyphs_are_available_for_visual_qa(self):
+        # Chromium can render DOM text while showing tofu squares when the
+        # runner lacks CJK fonts. Screenshot and font-size checks miss this.
+        installer = self.source.split("- name: Install Chromium for image layout QA", 1)[1]
+        installer = installer.split("\n      - name:", 1)[0]
+        self.assertIn("fonts-noto-cjk", installer)
+        self.assertIn("fc-list :lang=zh", installer)
+
     def test_semantic_gate_still_unconditional_before_verified_site_artifact(self):
         gate = "- name: Evidence-gated site build\n        run: bash tools/build_site.sh"
         self.assertIn(gate, self.source)
