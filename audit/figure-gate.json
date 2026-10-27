@@ -808,6 +808,36 @@
       "examined_pages": "MOEX original text-only items: 112-1 med3 PDF viewer p.1; 114-1 med3 PDF p.6; 114-2 med3 PDF p.6; all three original corrected-answer PDFs p.1.",
       "rationale": "這三道官方原題均為文字與數值的單選題，沒有原始照片、CT、ECG 或必要重製的出版社流程圖。本文 SAAG 四列為讀者根據原題數字自行運算的原創對照表，保留考選部原卷連結以核對而不複製來源圖像。",
       "source_token": "MOEX original text-only items"
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-heart-failure-hemodynamics.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/hf-lvedp-integrated-sources.md",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9th edition, original PDF page 35, Physical examination: congestion (dry/wet) and perfusion (warm/cold) bedside profile",
+          "source_token": "Pocket Medicine, 9th edition",
+          "mode": "illustrated",
+          "anchor": "hf-wet-cold-matrix",
+          "caption_token": "Pocket Medicine 9E",
+          "teaching_role": "以四象限矩陣把鬱血和器官灌流的兩條判斷軸放在同一個視野，使讀者辨識症候群表型不是休克機轉診斷，也不是四條固定處方。",
+          "scope_limit": "原創教學表格，不是受版權保護的原書截圖；未重新視覺驗證原圖，表格不能取代 TTE、血流動力學或急症個別處置。"
+        }
+      ]
+    },
+    "content/xiaoma-reading/integrated/2026-10-27-lvedp-pressure-volume.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-reading/hf-lvedp-integrated-sources.md",
+      "items": [
+        {
+          "locator": "Practical Guidance for Hemodynamic Assessment by Right Heart Catheterization in Management of HF, JACC Heart Failure 2024, hemodynamic waveforms and pressure interpretation",
+          "source_token": "Practical Guidance for Hemodynamic Assessment",
+          "mode": "illustrated",
+          "anchor": "lvedp-pressure-compartments",
+          "caption_token": "2024 JACC Heart Failure",
+          "teaching_role": "以實際測壓腔室及時間窗為軸線，防止把 mean PCWP、左心室舒張末期壓與跨壁壓當作單一參數，並說明各指標不能直接推論的治療假設。",
+          "scope_limit": "作者自製概念比較表，未複製 JACC 波形原圖；不能由三個概念欄直接推導個別病人的 filling pressure 或 preload。"
+        }
+      ]
     }
   }
 }
