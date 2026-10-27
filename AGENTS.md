@@ -20,6 +20,13 @@ This is the PRIVATE source-of-truth repository for the Clinical OS / Xiaoma medi
 - On errors, independently classify cause, attempt a targeted fix and rerun the smallest relevant regression. Escalate genuine source ambiguity or unavoidable medical uncertainty; avoid endless retries or hidden unsuccessful tool calls.
 - A user's goal is to keep maintenance and debugging time near zero, then optimize model/computational cost without reducing quality.
 
+## Owner control and security invariants
+
+- The user is the final human owner and authorization authority for the Xiaoma / Clinical_system core. Agents may propose but may NOT autonomously change repository visibility or ownership, grant access, rotate/export secrets, broaden GitHub App or Cloudflare permissions, change account recovery or MFA, delete backups, or modify production deployment authority.
+- Any operation affecting the above control plane requires explicit case-specific owner approval, never inferred from general editorial or publication authorization. Keep credentials, recovery data, private prompts, and audit evidence out of public pages and issue/PR comments.
+- Autonomous agents may implement narrowly scoped, reversible security tests and documentation in feature branches and submit draft PRs; passing security CI is necessary but does not authorize merge, deployment, or medical release. Do not silently weaken or bypass security gates. If a safety control fails, stop affected publishing and provide sanitized evidence.
+- Preserve model/provider portability and an independently restorable encrypted off-platform backup; report backup and account-control checks as **unverified** until an actual test succeeds.
+
 ## Git and deployment boundaries
 
 - Existing site stack: Markdown -> Python deterministic build -> explicit site/pages.json -> Cloudflare Pages (main). Keep private archive, medical textbook PDFs, raw patient information and private metadata out of public outputs.
