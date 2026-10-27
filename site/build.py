@@ -18,7 +18,22 @@ PAGES = load_pages(BASE)
 FILES = [(row["source"], row["output"], row["title"], row["subtitle"]) for row in PAGES]
 # Single source of truth for the privacy-preserving Cloudflare Web Analytics beacon.
 # The token is a public site identifier, not an API credential.
-WEB_ANALYTICS_BEACON = """<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c6bb7055c62648c39f440da91304c99e"}'></script>"""
+# Owner opt-out is browser-local, applied before the analytics script can load.
+# An inert config tag keeps the token in one location and avoids a beacon for owners.
+WEB_ANALYTICS_BEACON = """<template id="clinical-analytics-config" data-src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c6bb7055c62648c39f440da91304c99e"}'></template>
+<script>
+(function () {
+  try {
+    if (localStorage.getItem("clinical-analytics-owner-v1") === "1") return;
+  } catch (error) { /* Private browsing or disabled storage: retain normal analytics. */ }
+  var config = document.getElementById("clinical-analytics-config");
+  var beacon = document.createElement("script");
+  beacon.src = config.getAttribute("data-src");
+  beacon.setAttribute("data-cf-beacon", config.getAttribute("data-cf-beacon"));
+  beacon.async = true;
+  document.head.appendChild(beacon);
+}());
+</script>"""
 
 def install_web_analytics():
     """Instrument canonical published pages once; never count legacy redirects twice."""
@@ -193,7 +208,7 @@ def render(md_file, output, page_title, subtitle):
 def main():
     if DIST.exists():shutil.rmtree(DIST)
     DIST.mkdir(parents=True)
-    for name in ("styles.css","home.css","app.js"):
+    for name in ("styles.css","home.css","app.js","owner-mode.html"):
         shutil.copyfile(BASE/"site"/name,DIST/name)
     # Exact source screenshots are checked-in binary files, not transient CDN URLs.
     # Copy only the two reviewed Pocket Medicine extracts into the site root.

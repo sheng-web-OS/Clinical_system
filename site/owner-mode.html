@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>站長瀏覽標記｜Clinical System</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.owner-panel{max-width:37rem;margin:12vh auto;padding:1.5rem}
+.owner-panel h1{line-height:1.4}
+.owner-panel p{line-height:1.8}
+.owner-state{font-weight:700;padding:1rem;border:1px solid currentColor;border-radius:.7rem}
+.owner-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0}
+.owner-actions button{font:inherit;cursor:pointer;padding:.65rem 1rem;border-radius:.55rem}
+</style>
+</head>
+<body class="reader-page">
+<main class="owner-panel" id="main">
+<p>Clinical System · 僅供站長</p>
+<h1>這個瀏覽器的流量標記</h1>
+<p id="owner-status" class="owner-state" role="status" aria-live="polite">正在檢查標記狀態……</p>
+<p>本頁會在目前瀏覽器儲存「站長」標記。標記成功後，此瀏覽器再開啟本站文章時，不會載入 Cloudflare Web Analytics 追蹤程式；歷史資料不受影響。</p>
+<p>Safari、Threads 與 ChatGPT 的內建瀏覽器可能彼此隔離，請分別在實際閱讀的環境開啟本頁。私密瀏覽、清除網站資料或更換瀏覽器後，可能需要重新標記。</p>
+<div class="owner-actions">
+<button type="button" id="owner-enable">重新啟用站長模式</button>
+<button type="button" id="owner-disable">取消標記，恢復一般統計</button>
+</div>
+<p><a href="index.html">回到網站首頁</a></p>
+<p><small>此頁不列入教材目錄、搜尋索引或 Cloudflare Web Analytics，並不識別個人姓名、帳號或裝置 ID。</small></p>
+</main>
+<script>
+(function () {
+  "use strict";
+  var key = "clinical-analytics-owner-v1";
+  var status = document.getElementById("owner-status");
+  function setOwner(enabled) {
+    try {
+      if (enabled) localStorage.setItem(key, "1");
+      else localStorage.removeItem(key);
+      var saved = localStorage.getItem(key) === "1";
+      if (saved !== enabled) throw new Error("storage unavailable");
+      status.textContent = enabled
+        ? "已啟用站長模式：此瀏覽器之後的頁面瀏覽不會傳送 Cloudflare Web Analytics。"
+        : "已取消站長標記：此瀏覽器之後將恢復一般統計。";
+    } catch (error) {
+      status.textContent = "無法儲存標記：請確認未停用網站儲存空間，或改用一般瀏覽模式。";
+    }
+  }
+  document.getElementById("owner-enable").addEventListener("click", function () { setOwner(true); });
+  document.getElementById("owner-disable").addEventListener("click", function () { setOwner(false); });
+  setOwner(true);
+}());
+</script>
+</body>
+</html>
