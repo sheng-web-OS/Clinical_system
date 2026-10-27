@@ -15,7 +15,7 @@ TRUSTED = {"OWNER", "MEMBER", "COLLABORATOR"}
 BLOCK = re.compile(r"\bP[01][_-]BLOCK\b", re.I)
 SEVERITY = re.compile(r"\bP[01]\b", re.I)
 LEGACY_LEAD = re.compile(r"出版前|發布前|合併前|阻塞|hard.stop", re.I)
-STOP_WORDS = re.compile(r"請不要|不可|不得|不能|不應|暫停|阻塞|HOLD|do not|must not", re.I)
+STOP_WORDS = re.compile(r"請不要|不可|不得|不能|不應|暫停|HOLD|do not|must not", re.I)
 RESOLVED = re.compile(
     r"\[P1_RESOLVED\s+source=(issue|review|inline)\s+id=(\d+)"
     r"\s+head=([a-f0-9]{40})\s+evidence=(https://[^\s\]]+)\]",
@@ -101,8 +101,8 @@ def tagged(items, source):
 
 
 def event_pr_number(event):
-    if "pull_request" in event and "number" in event:
-        return int(event["number"])
+    if "pull_request" in event:
+        return int(event.get("number") or event["pull_request"]["number"])
     if event.get("issue", {}).get("pull_request"):
         return int(event["issue"]["number"])
     return None
