@@ -2302,16 +2302,6 @@
         "question_heading": "114-1 醫學（三）第 51 題｜哪一種休克的 SVR 方向不同？",
         "focus": "分布性與心因性休克之 SVR／CO 反應",
         "topic": "分布性與心因性休克之 SVR／CO 反應"
-      },
-      {
-        "year_roc": 114,
-        "sitting": 1,
-        "stage": 2,
-        "subject": "醫學（三）",
-        "question_number": 57,
-        "question_heading": "114-1 醫學（三）第 57 題｜感染合併持續休克，什麼時候不要再等檢驗？",
-        "focus": "感染合併 adrenal crisis 的優先診療",
-        "topic": "感染合併 adrenal crisis 的優先診療"
       }
     ],
     "related_exams": [
@@ -2323,6 +2313,15 @@
         "question_number": 48,
         "concept_heading": "113-1 醫學（三）第 48 題｜Sepsis 合併酸中毒，第一個目標是把 pH 調正常嗎？",
         "focus": "同一官方 Q48 的 Sepsis 酸中毒優先序：與酸鹼主教材的正規題號建立雙向連結，不重複登錄為新題。"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 57,
+        "concept_heading": "114-1 醫學（三）第 57 題｜感染合併持續休克，什麼時候不要再等檢驗？",
+        "focus": "同一官方 Q57 的 adrenal crisis 休克鑑別：以既有正規題號連回 Sepsis 詳解，不重複登錄官方真題。"
       }
     ]
   },
