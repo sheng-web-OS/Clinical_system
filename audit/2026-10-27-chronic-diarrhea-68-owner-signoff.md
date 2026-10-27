@@ -1,3 +1,5 @@
+> **CURRENT OWNER RELEASE DECISION — ACCEPTED, 2026-10-27 Asia/Taipei.** The owner explicitly replied 「發佈」 to the publication of PRs #129/#120/#121. In PR #120 this means P0/P1, all figure semantics, complete manuscript, official exam link semantics and PR-only merge/production deploy **AUTHORIZED**, scoped to article blob `3cc264ca5902c20894eb1e2b8db35bfaf52bddd1` at review. [Decision evidence](https://github.com/sheng-web-OS/Clinical_system/pull/120#issuecomment-6433082974). This is author/editor clinical signoff, NOT independent peer review. The historical PENDING/HOLD snapshots below are superseded for this PR and date, but the technical CI and production readback must still be verified separately. P0：外觀正常大腸鏡／低 calprotectin 不排除 microscopic colitis、需要適當 biopsy；P1：stool osmotic gap 是估算，不是病因標籤，合成示例非真實病例。
+
 # #68｜單篇醫學驗收與發布閘門（待作者審閱）
 
 此文件是新獨立候選的唯一驗收入口，承接 [PR #98](https://github.com/sheng-web-OS/Clinical_system/pull/98) 的 AI source/figure audit；**與 #66 Cholestasis 已發布版本及其餘兩篇不共享發布權限**。
