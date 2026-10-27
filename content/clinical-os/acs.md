@@ -108,7 +108,7 @@ Plaque 相關血栓同時有 platelet-rich aggregation 與 coagulation／fibrin 
 
 但 inferior MI 合併**右室梗塞**是另一種危險：右室無法把足夠血送進肺循環，左室接不到血，最後同樣低血壓、低 cardiac output；若右室順應性受損與高右側充盈壓並存，典型的「JVP 高、肺部清晰」只是一個提示，並非每例都有。應以右側 ECG、bedside echo 評估 RV size/function 及其他原因。**不應一概大量輸液，也不可不分血流動力給 nitrate 或積極利尿**；有明顯 volume responsiveness 才可審慎試探液體，若存在肺充血或 RV volume overload，盲目補液反而有害。關鍵治療仍是及時解除 culprit coronary occlusion。
 
-對確定的 ACS-related shock，須在循環／呼吸支持與快速 revascularization 之間**同步**推進。2025 ACC/AHA 建議緊急處理 culprit artery；在休克患者常規同步 PCI 所有 nonculprit lesion 可能增加傷害，不應把「影像看到好幾條窄」理解成「現在全部擴張才更積極」。嚴重或難治 shock 可由 shock team 評估機械性循環支持，但 **IABP、VA-ECMO 不是人人常規改善存活的裝置**；microaxial pump 在部分精選 AMI-CS 患者可能有死亡率益處，必須同時承擔出血、肢體缺血與腎損傷風險。[2025 ACC/AHA Shock 章節](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009)
+對確定的 ACS-related shock，須在循環／呼吸支持與快速 revascularization 之間**同步**推進。2025 ACC/AHA 建議緊急處理 culprit artery；在休克患者常規同步 PCI 所有 nonculprit lesion 可能增加傷害，不應把「影像看到好幾條窄」理解成「現在全部擴張才更積極」。嚴重或難治 shock 可由 shock team 評估機械性循環支持，但 **IABP、VA-ECMO 並非所有 AMI-CS 都應常規使用的存活改善策略**。2025 ACC/AHA 對 microaxial pump 的有利建議限於**精選 STEMI 合併嚴重或難治性 cardiogenic shock**：其關鍵隨機試驗 DanGer-SHOCK 並未直接涵蓋所有 NSTEMI、心跳停止後昏迷或明顯右室衰竭患者，因此不能把特定族群的死亡率結果外推成「AMI-CS 人人裝泵」。團隊還必須獨立衡量出血、肢體缺血、腎損傷、血管通路及撤機風險。[2025 ACC/AHA Shock 章節](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009)
 
 ## 十、導管已經成功，病人突然喘、休克或心律不整，怎麼辦？
 
