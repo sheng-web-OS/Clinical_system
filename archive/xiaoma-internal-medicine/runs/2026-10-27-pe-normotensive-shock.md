@@ -53,3 +53,17 @@ A 命題 3：一篇聚焦診斷／失代償／介入三個層次，後半試驗�
 - **外部核查**：重新核對 2026 AHA/ACC Table 7：A1–C2 systemic lysis 3:Harm、D1–D2 2b may be considered、E1 2a reasonable，C3 不確定；NEJM HI-PEITHO 544 人、4.0%/10.3%、重大出血 4.1%/2.2%；PRAGUE-26 558 人、0.7%/6.8%、ICH 2/0。試驗族群／技術各異，不能互相替代，也不能將 2026 年後續新試驗倒灌進 2 月指南。
 - **QA 狀態**：稿件 P0 原文矛盾仍存在，V2 已消除錯誤定量推論；Pocket Figure/Table 實際像素仍待核，因此醫學／圖像綜合發布 gate = **HOLD**。本輪未進行獨立真人醫師審查、正式手機 360/390 Chromium 頁面驗收、主分支部署或 Cloudflare HTTPS 讀回。沒有更改 `site/pages.json`。工程 CI 是否通過須依最新 V2 SHA 個別查核。
 - **V2 commit**：主文 `daf08826617bb04605aae52a5aee88f544a5be36`；來源頁 `9c2def63f85f4b4a44ea4fa76cff1dc8b0a921f4`。未新增重複排程。
+
+## 2026-10-27 V3｜去重、臨床因果補橋與跨 PR 衝突排除
+
+**版本身分**：V1 `6cd612d69306ea5f3791bb63d31e038699f01aea` 與其原始評分永久保留；V2 的官方 112（二）Q51 查核與資料矛盾警示亦保留，不得被本次自評回填取代。以下是增量編輯，沒有改動過往原稿或公開 VTE 正文。
+
+- **主文 V3**：以 2026-10-26 已上線的 VTE 文章作為 Wells、D-dimer、陰性 CUS／CTPA 停止條件唯一基準；`§01–02` 取消第二套診斷演算法，保留「影像無法安全取得時，診斷和循環支持必須並行」及不能把未確診 PE 寫成已確診的關鍵分歧。
+- **深度新增**：`§04` 將 RV afterload → RV dilatation／septal shift → LV filling／CO 下降，進一步接到 RV 壁張力增加、冠狀灌流可能下降、RV ischemia 形成回饋惡化；`§05` 增加 metabolic acidosis 對有效肺泡換氣的要求與 PE dead space 的疊加，但不假稱原病例量到了 dead-space fraction／cardiac index。
+- **介入證據辨識**：HI-PEITHO 的 ultrasound-facilitated catheter-directed fibrinolysis 與 PRAGUE-26 的 catheter-directed alteplase 不可和單純 mechanical thrombectomy 混成同一組隨機試驗。保留相對風險、出血及試驗時間界線，不宣稱 mortality benefit 或無出血風險。
+- **來源一致性**：主文／來源頁均有考選部官方原卷、標準答案、更正公告核對的 112（二）醫學（三）Q51：D，未更正；先前 V1「尚未官方核題」是**歷史當時狀態**，不可當作 V3 現況。V3 修來源檔內誤呈現的跳脫換行，增加清楚的跨篇責任分界。年度索引因未公開仍沒有新增 Q51。
+- **並行分支風險**：PR #60 舊 VTE 整合稿仍開著、來源與新 VTE 正式頁覆寫風險高。比對原始作者 snapshot 與 main：原始全文的 blob SHA 同為 `9a6d2ff41ab48b6fd4800ac44f45cc2613f577a2`，證明原文已保存於 main；舊 PR 特定 CSS／插圖不是不可重建的合格資產。建議不合併 PR #60，保留閉合 PR 的 git history 作稽核。PR #110 CTICU 氧輸送是獨立生理主線，不與本稿併稿。
+
+**驗收／未過**：此輪只完成 connector 原始檔逐段核對、定點文字修訂、跨 PR diff／blob identity 與正式 2026 AHA/ACC 指引、NEJM 研究網頁交叉確認；尚未對 PR #111 的這個新 SHA 跑 CI、真實手機 360／390px 截圖或 Cloudflare 讀回。Pocket 9E p99 Figure 2-3 與 p100 原表的原像素／註腳仍待補，病例初始 VBG／chemistry 數據不一致仍是原文疑義（僅有安全收縮推論），獨立醫學審查也未完成。**維持 Draft/HOLD，不改 main／公開白名單，不宣稱網站已更新。**
+
+後續優先：驗證 Pocket 原圖完整頁與 caption/footnotes；按讀者認知角色決定是否需要合法展示 2026 AHA/ACC original categories 圖；獨立檢查 Q51 與介入試驗描述；完成 360／390px 與 build/CI，再依門檻另行決定正式發布與建立 VTE 反向閱讀入口。
