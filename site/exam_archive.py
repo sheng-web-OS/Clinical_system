@@ -214,8 +214,10 @@ def render_concept_links(connections, compact=False):
         items = ''.join('<li><a href="' + escape(link["href"], quote=True) + '">' + escape(link["page"]["title"]) + '</a></li>' for link in connections)
         return ('<details class="exam-catalog-materials"><summary>教材 ' + str(len(connections)) +
                 '</summary><nav class="exam-concept-links" aria-label="對應教材"><ul>' + items + '</ul></nav></details>')
+    # Editorial relation focus informs research and authorship; it is not reader copy.
+    # The public reverse link is navigation only, not a substitute for a written bridge.
     items = ''.join('<li><a href="' + escape(link["href"], quote=True) + '">' + escape(link["page"]["title"]) +
-                    '</a><small>' + escape(link["focus"]) + '</small></li>' for link in connections)
+                    '</a></li>' for link in connections)
     return '<nav class="exam-concept-links" aria-label="對應教材"><span>回讀教材</span><ul>' + items + '</ul></nav>'
 
 
@@ -321,8 +323,9 @@ def render_related_questions(page, records, rendered):
         label = '{} 年 · 第{}次 · 醫師第{}階段 · {} · Q{}'.format(exam["year_roc"], "一二三四"[exam["sitting"]-1], "一二"[exam["stage"]-1], exam["subject"], exam["question_number"])
         source = origin.get("references")
         source_link = ('<a href="' + escape(source, quote=True) + '">官方原卷、答案與來源</a>') if source else ''
+        # Keep question identity, official explanation and wayfinding; do not print
+        # pages.json's authoring-time focus as if it were an integrated explanation.
         cards.append('<section class="related-exam-card"><p class="related-exam-label">' + escape(label) +
-                     '</p><p class="related-exam-focus">' + escape(link["focus"]) +
                      '</p><details class="related-exam-content"><summary>展開題目導讀與詳解</summary><div class="embedded-exam-body">' + question +
                      '<p class="exam-source-notice">' + EXAM_NOTICE + '</p></div></details><nav class="related-exam-actions" aria-label="題目導覽"><a href="' +
                      escape(origin["output"] + '#' + record["anchor"], quote=True) + '">開啟原詳解頁 →</a><a href="xiaoma-exams.html#' +
