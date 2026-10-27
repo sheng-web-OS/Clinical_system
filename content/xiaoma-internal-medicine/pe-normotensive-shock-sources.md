@@ -19,7 +19,9 @@ Rouleau SG, et al. **Management of Presumed Pulmonary Embolism With Normotensive
 
 原始 Figure 1 是 **S1Q3T3 ECG**；Figure 2 是**機械取栓取出的血栓**，不是原始 CTPA filling defect。圖像目前僅讀取到網站 caption／figure 標題與原文敘述，**尚未完成原像素目視與手機版驗收**，因此不把它們複製到公開稿或宣稱已有可放大的原圖。
 
-**原始病例內部數值一致性 QA：** 若 pH 7.06、pCO₂ 15 mmHg 為同一血氣檢體，Henderson–Hasselbalch 近似反推 HCO₃⁻ ≈ 0.03×15×10^(7.06−6.1) ≈ **4.1 mEq/L**，與另列 chemistry HCO₃ **9 mEq/L** 明顯不一致。原文未交代可確認的抽血時間差或誤植原因，不能私自修正原始資料；主文已將此列為來源疑義並避免用其計算混合酸鹼診斷。V2 已縮減對初始 VBG pCO₂ 的代償推論，後續仍應向原文作者／期刊或 supplementary data 查證。\n\n## 2. Pocket Medicine 第九版
+**原始病例內部數值一致性 QA：** 若 pH 7.06、pCO₂ 15 mmHg 為同一血氣檢體，Henderson–Hasselbalch 近似反推 HCO₃⁻ ≈ 0.03×15×10^(7.06−6.1) ≈ **4.1 mEq/L**，與另列 chemistry HCO₃ **9 mEq/L** 明顯不一致。原文未交代可確認的抽血時間差或誤植原因，不能私自修正原始資料；主文已將此列為來源疑義並避免用其計算混合酸鹼診斷。V2 已縮減對初始 VBG pCO₂ 的代償推論，後續仍應向原文作者／期刊或 supplementary data 查證。
+
+## 2. Pocket Medicine 第九版
 
 使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次讀到 **p.98–101 的文字解析與圖表位置**；V2 重試 p.99–100 的影像回讀，仍顯示 **Image unavailable**（無法逐像素目視）。重試原始 PDF raw-byte materialization 時，系統明確拒絕授權路徑（`This Project file does not have an authorized raw-byte materialization path`）。因此尚未重核 Figure 2-3 與 p.100 原表的完整原圖／caption／footnote。既有 GitHub [VTE 圖表來源紀錄](../xiaoma-reading/vte-sources.md) 曾記錄 2026-10-26/27 目視 p.97–100，**不冒稱本次已重新目視 p.98–101 的像素**。
 
@@ -50,6 +52,14 @@ NICE [NG158 recommendations](https://www.nice.org.uk/guidance/ng158/chapter/reco
 1. **PEITHO 2014**：Meyer G, et al., *NEJM*. [10.1056/NEJMoa1302097](https://doi.org/10.1056/NEJMoa1302097)。有 RV dysfunction 與 troponin elevation、但未持續低血壓的 PE；全身溶栓降低 hemodynamic decompensation，卻增加 major bleeding／hemorrhagic stroke，未證明死亡率改善。未本次逐讀 supplement。
 2. **HI-PEITHO 2026**：*NEJM*. [10.1056/NEJMoa2516567](https://doi.org/10.1056/NEJMoa2516567)；[ACC 同步發布摘要](https://www.acc.org/Latest-in-Cardiology/Articles/2026/03/25/21/27/sat-930am-hipeitho-acc-2026) 與 [ACC 詳解](https://www.acc.org/Latest-in-Cardiology/Articles/2026/09/08/14/17/HI-PEITHO-and-the-Evolution-of-Reperfusion-Strategies-in-Pulmonary-Embolism)。n=544；主要七日複合事件 4.0% vs 10.3%，重大出血 4.1% vs 2.2%（未顯著）；非死亡率已證實改善，也非出血等效。
 3. **PRAGUE-26 2026**：*NEJM*. [10.1056/NEJMoa2608012](https://doi.org/10.1056/NEJMoa2608012)。n=558；七日複合事件 0.7% vs 6.8%，主要由較少心肺惡化驅動；導管組 ICH 2/280 vs 0/278。全文摘要與結果可讀，**supplement 未逐表核讀**。此試驗為 catheter-directed alteplase，不能等同機械取栓或 HI-PEITHO 的 ultrasound-assisted 方案。
+
+## 4A. 跨篇邊界與編輯繼承（2026-10-27 V3）
+
+本篇的**唯一主敘事**為「疑似／確診 PE → 急性 RV afterload 上升 → forward flow 與 LV filling 受限 → normotensive hypoperfusion → 再灌流淨效益」。[已公開 VTE 主文](../xiaoma-reading/integrated/2026-10-26-vte-visual.md)專責上游 prophylaxis、DVT/PE 不同 Wells、D-dimer Bayesian 殘餘機率、NICE 陰性 CUS／CTPA 分支。本篇不另建第二份 DVT/PE 診斷流程，也不重製既有兩張站內分流圖。新稿保留必要的 high-probability／不能安全取得 CTPA 的臨床例外與原始診斷來源入口。
+
+**新增的因果中介**：右心室急性後負荷增加不只造成 RV dilatation 和 septal shift，還可因右冠灌流減少、壁張力與耗氧上升形成 RV ischemia → RV failure 的回授。插管段落補足「重度代謝性酸中毒所需肺泡換氣增加 × PE 生理死腔增加」的雙重呼吸負荷；這是機轉推導，不冒充原病例同時量到的 cardiac output、dead-space fraction 或 RV coronary flow。
+
+官方 **112（二）醫學（三）Q51** 的原卷、答案與更正已於 V2 完成，主文四選項解析應保留；此頁的「尚未公開年度索引」僅指**網站發布尚未進行**，不能再誤寫成「原題未核」。當前 VTE 正式主文不得由過時 PR #60 的舊圖、CSS 與文字覆蓋。延遲建立主文→VTE 的反向閱讀連結，直到本篇真正可發布，不用把 Draft 當作已上線的頁面。
 
 ## 5. 官方真題、著作權與未完成項
 
