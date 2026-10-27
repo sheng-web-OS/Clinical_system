@@ -1981,6 +1981,7 @@
     "date": "2026-10-27",
     "navigation": false,
     "review": "ai_editorial_review",
+    "references": "xiaoma-reading-hf-lvedp-sources.html",
     "layout": "reader",
     "section": "心衰竭與血行動力學",
     "related_exams": [
@@ -2005,6 +2006,7 @@
     "date": "2026-10-27",
     "navigation": false,
     "review": "ai_editorial_review",
+    "references": "xiaoma-reading-hf-lvedp-sources.html",
     "layout": "reader",
     "section": "心衰竭與血行動力學",
     "related_exams": [
