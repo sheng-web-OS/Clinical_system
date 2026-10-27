@@ -683,9 +683,9 @@
       ]
     },
     "exam_topics": {
-      "27": "AKI 的定義與時間窗",
       "2": "高血鈉與缺水估算",
       "25": "嘔吐、鹼中毒與尿液指標",
+      "27": "AKI 的定義與時間窗",
       "28": "大量蛋白尿與 NSAID"
     }
   },
@@ -1668,6 +1668,30 @@
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-cirrhosis-structure-risk-events.md",
+    "output": "xiaoma-reading-cirrhosis-structure-risk.html",
+    "title": "肝硬化明明由結構定義，為什麼臨床不能只看結構？",
+    "subtitle": "Structure、CSPH、function、first decompensation、recompensation",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽"
+  },
+  {
+    "source": "content/xiaoma-reading/cirrhosis-sources-20261027.md",
+    "output": "xiaoma-reading-cirrhosis-sources.html",
+    "title": "Cirrhosis｜Baveno VIII、原書與預後證據",
+    "subtitle": "Pocket Medicine 9E 與 Baveno VIII 的來源限制",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
     "navigation": false,
     "review": "source_audit"
   }
