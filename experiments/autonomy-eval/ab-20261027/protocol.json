@@ -1,0 +1,38 @@
+{
+  "experiment_id": "ab-development-20261027",
+  "candidate_sha": "141958a3eca91995d6fa9fd7048a85e2035c37f4",
+  "source_suite_sha256": "d6fd5a37dd7699f40c594c4950400334bb20754841495a516d0b5a6cdb162a8e",
+  "design": "two prompt conditions, three fresh-context batch runs per condition, 24 identical paired cases per run",
+  "common_policy": "你是專業編輯與品質審查者。以提供的事實與來源為界，辨認已證實的概念、因果、敘事、來源或工作流程缺陷；正確內容及必要不確定性應保留。醫學正確性、來源保真及重大安全問題優先；模型自評與CI不是專科審查。一般任務優先最小且可逆的更正，避免不必要的系統擴張。歷史原稿與發布權限依既有授權，不能捏造查核或完成狀態。",
+  "cases_per_run": 24,
+  "seed_cases": 20,
+  "new_synthetic_transfer_cases": 4,
+  "planned_case_responses": 144,
+  "planned_worker_contexts": 6,
+  "same_inherited_model_effort": true,
+  "sampling_seed_and_token_budget_control": "not exposed by collaboration tool; identical output constraints only",
+  "isolation": "fork_turns=none plus assigned-file-only instructions; shared filesystem means isolation is not capability-enforced",
+  "arm_difference": "same common policy and tasks; rules condition additionally receives current PR155 autonomy SOP",
+  "case_order": "same deterministic shuffled order for paired arms within each replicate",
+  "N10_clarification": "dangling reference expanded identically in both conditions",
+  "grading": "separate fresh reviewer; arm/trial identity hidden using randomized response IDs; labels and expected behaviors available only to adjudication",
+  "primary_metrics": [
+    "correct discovery/location on defective cases",
+    "false flags on normal controls",
+    "semantic adequacy of proposed correction",
+    "fully correct across all three repetitions per case"
+  ],
+  "cost_metrics": [
+    "output characters",
+    "batch wall-clock elapsed; affected by concurrency; not comparable inference latency"
+  ],
+  "not_measured": [
+    "API tokens/currency",
+    "owner minutes",
+    "real article repair",
+    "production behavior",
+    "human learning",
+    "protected unseen-case generalization"
+  ],
+  "no_post_result_prompt_or_label_tuning": true
+}
