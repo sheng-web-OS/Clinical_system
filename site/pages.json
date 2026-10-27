@@ -1535,5 +1535,41 @@
     "section": "參考資料",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-pe-normotensive-shock.md",
+    "output": "xiaoma-20261027-pe-normotensive-shock.html",
+    "title": "血壓還正常，為什麼肺栓塞病人已經不能等下一張 CT？",
+    "subtitle": "從肺動脈血栓診斷不確定、右心低灌流，到抗凝與再灌流利益和出血風險",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-pe-normotensive-shock-sources.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "question_heading": "官方國考對題｜112 年第二次・醫學（三）第 51 題",
+        "concept_heading": "04｜肺動脈阻塞，如何在血壓下降前先讓心輸出量下降？",
+        "focus": "嚴重肺栓塞的右心衰竭、診斷證據與抗凝治療界線"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pe-normotensive-shock-sources.md",
+    "output": "xiaoma-pe-normotensive-shock-sources.html",
+    "title": "肺栓塞的診斷、右心衰竭及再灌流：原始病例與原圖查核",
+    "subtitle": "Pocket Medicine 9E Figure 2-3、原版抗凝表、2026 AHA/ACC、原始病例與官方 Q51",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
