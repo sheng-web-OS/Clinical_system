@@ -1,0 +1,278 @@
+{
+  "_capture_note": "RECONSTRUCTED BROWSER AGENT OUTPUT, NOT VERBATIM ORIGINAL JSON. Preserve discrepancy flags; do not promote to author-canonical or medical-approved content.",
+  "_captured_on": "2026-10-27",
+  "_source_url": "https://acs-deep-learning.dreamycarp4.chatgpt.site/data/units.json",
+  "_known_differences": [
+    "unit 01 block 2 contains abnormal string 追文字列 cTn; source extraction previously reads 序列 cTn",
+    "unit 33 context.next claims PPT p.151–154; source course states 150 pages and previous text gave course end; not trustworthy",
+    "unit 33 blocks condensed HTML table; original unit includes full table; verify against source"
+  ],
+  "unit_count_claimed_by_browser": 33,
+  "units": [
+    {
+      "id": "acs-language",
+      "order": 1,
+      "pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "title": "心肌損傷與 MI：先分開三個診斷層次",
+      "answer": "cTn 升高先確認心肌損傷；有急性變化，再加相符的缺血證據，才進入 MI 診斷。病因必須另外判斷。",
+      "blocks": [
+        {
+          "html": "急性冠狀病理可使供血驟減；低氧、貧血、低血壓或需求增加也可能造成供需失衡。缺血會影響電位、收縮與症狀，持續且足夠嚴重時可造成細胞損傷。症狀、ECG、cTn 與影像各量到這條關係的不同部分，因此不必同時陽性，也不會永遠一一對應。再灌流恢復血流，抗栓抑制繼續成栓，支持治療處理氧合與循環。事件處理後仍可能留下壞死、功能不全與全身斑塊風險；這些剩餘問題，就是後三章出場的理由。非缺血性疾病也能直接造成心肌損傷，不能把每次 cTn 高都塞進同一路徑。",
+          "refs": [],
+          "pages": [],
+          "heading": "先把整個 ACS 放回一個模型",
+          "privateAddition": true
+        },
+        {
+          "html": "胸痛讓我們懷疑缺血，ECG 幫忙判斷急迫性，cTn 則確認心肌損傷。三項資料各有用途，回報時間也可能不同。如果 ECG 與病況已要求緊急再灌流，就一邊處理、一邊追文字列 cTn，讓後續檢驗補齊診斷。",
+          "refs": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10691881/",
+              "label": "2022 ACC 胸痛急診共識：§5.2、§5.7"
+            }
+          ],
+          "pages": [
+            3,
+            4,
+            6
+          ],
+          "heading": "病人正在胸痛，現在能不能等？"
+        },
+        {
+          "html": "冠狀血流與血液攜氧量影響供氧，心肌耗氧決定需求；兩端失衡時，即使沒有冠狀動脈血栓，也可能發生缺血。短暫缺血可能還沒造成壞死；cTn 升高雖顯示受損，原因也可能不是血栓。檢驗與分型要分清這次發生哪一種情況，治療才有具體目標。",
+          "refs": [],
+          "pages": [
+            4,
+            6
+          ],
+          "heading": "供氧與耗氧在哪裡失衡？"
+        },
+        {
+          "html": "Class 表達一項治療的獲益與傷害如何形成推薦；LOE 表達證據有多充分。兩者分開，因此強推薦也可能沒有大型 RCT。Class III 還要區分「沒有獲益」與「增加傷害」，兩者的理由不同。",
+          "refs": [
+            {
+              "url": "https://professional.heart.org/en/science-news/-/media/dec633637f414ad5bd6937b3059ecab9",
+              "label": "2021 AHA/ACC Chest Pain Guideline，Class of Recommendation／Level of Evidence"
+            }
+          ],
+          "pages": [
+            5
+          ],
+          "heading": "看到推薦等級，怎麼知道建議有多強？",
+          "deepDive": true
+        }
+      ],
+      "chapter": "definition",
+      "context": {
+        "now": "原文先列 2023 ESC 與 2025 ACC/AHA ACS 指引，再說明推薦等級，接著提出症狀、ECG、cardiac enzymes 三種資料。脈絡重建：先交代知識來源與閱讀規則，再建立診斷共同語言。",
+        "next": "三種資料各回答不同問題，因此課程先從病人能描述的症狀開始，再接到 ECG 與生物標記。",
+        "before": "原課程進入 Definition；尚未開始用 ECG 分流，也還沒有建立藥物與再灌流的條件。"
+      },
+      "figures": [
+        {
+          "page": 5,
+          "caption": "Class III 可能是沒有獲益，也可能是有害；Benefit／Risk 符號表達方向，沒有給出可計算的比例。",
+          "supplementary": true
+        },
+        {
+          "page": 6,
+          "caption": "症狀、ECG 與 cTn 各補上一部分資訊，變化的時間也可能不同。",
+          "supplementary": true
+        }
+      ],
+      "related": [
+        "troponin-time",
+        "mi-types"
+      ],
+      "sources": [
+        {
+          "url": "https://academic.oup.com/eurheartj/article/44/38/3720/7243210",
+          "label": "原課程引用：2023 ESC ACS guideline"
+        },
+        {
+          "url": "https://professional.heart.org/en/science-news/-/media/dec633637f414ad5bd6937b3059ecab9",
+          "label": "2021 AHA/ACC Chest Pain Guideline，Class of Recommendation／Level of Evidence"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10691881/",
+          "label": "2022 ACC 胸痛急診共識：§5.2、§5.7"
+        }
+      ],
+      "boundary": {
+        "change": "若找到非冠狀動脈原因，就改按那個病因處理；已發生的心肌損傷與血流動力不穩定仍在眼前。",
+        "limits": "cTn 高了，還不知道損傷原因；ECG 有變，還要結合症狀與檢驗確認是否 MI。",
+        "established": "症狀、ECG 與 cTn 各自補上缺血、急迫性與損傷的資訊。"
+      },
+      "cautions": [
+        {
+          "url": "https://professional.heart.org/en/science-news/-/media/dec633637f414ad5bd6937b3059ecab9",
+          "page": 5,
+          "status": "已核對",
+          "original": "Class III 以 Benefit = Risk 或 Risk > Benefit 示意",
+          "clarification": "保留講者的方向性教學；Class III 應分辨 no benefit 與 harm，圖中的大小關係不是可計算的定量臨床規則。"
+        }
+      ],
+      "question": "胸痛、ECG 與 cTn 各自告訴我們什麼？",
+      "subtitle": "症狀、缺血、損傷與病因各自回答什麼。",
+      "selfCheck": {
+        "answer": "啟動緊急再灌流評估，同時繼續抽血。第二次 cTn 補充急性損傷的確認，不作為開始處理的等待條件。",
+        "question": "第一次 cTn 還沒升高，ECG 已經很危險，要等第二次抽血嗎？"
+      },
+      "connection": "cTn 指向傷害，缺血證據把傷害接到 MI。",
+      "readingTier": "core",
+      "sourceOrder": 1,
+      "nextQuestion": "同樣是胸痛，先看此刻是否穩定，再決定資料可以怎麼補。"
+    },
+    {
+      "id": "postmi-inflammation",
+      "order": 33,
+      "pages": [
+        148,
+        149,
+        150
+      ],
+      "title": "發炎治療延伸：CRP 與臨床結局分開",
+      "answer": "Colchicine是條件性選項，急性MI後常規使用的臨床獲益並不一致。CRP下降本身，不能替代再MI、死亡或其他臨床終點。",
+      "blocks": [
+        {
+          "html": "Colchicine影響微管與多種發炎過程，可能減少斑塊相關事件。CRP反映發炎變化；死亡或MI是否減少，則由臨床試驗確認。",
+          "refs": [],
+          "pages": [
+            148
+          ],
+          "heading": "發炎指標與臨床事件"
+        },
+        {
+          "html": "ESC2023列0.5mg/day，供最佳治療下風險仍未充分控制或反覆事件者考慮；美國2025也列低劑量IIb選項。加藥時評估腎肝功能、耐受與交互作用；statin、抗血栓與復健仍各有適應症。",
+          "refs": [],
+          "pages": [
+            148
+          ],
+          "heading": "什麼患者會考慮這個IIb選項？"
+        },
+        {
+          "html": "MI後30天內4,745位患者使用0.5mg/day或placebo，中位22.6個月，主要複合終點為5.5%對7.1%，HR0.77（95% CI 0.61–0.96）。複合終點下降，未證明死亡、MI每項都下降；研究另有肺炎安全訊號。",
+          "refs": [
+            {
+              "url": "https://www.nejm.org/doi/10.1056/NEJMoa1912388",
+              "label": "COLCOT原研究"
+            }
+          ],
+          "pages": [
+            148
+          ],
+          "heading": "COLCOT看到的是哪個好處？",
+          "deepDive": true
+        },
+        {
+          "html": "急性MI後較早開始colchicine，中位約3年，未降低CV death、recurrent MI、stroke或unplanned ischemia-driven revascularization複合終點。若是慢性冠病或不同啟動情境，則回到那類患者的研究，先確認到底比較了什麼。",
+          "refs": [
+            {
+              "url": "https://www.nejm.org/doi/10.1056/NEJMoa2405922",
+              "label": "CLEAR SYNERGY colchicine原研究；NEJM2025"
+            }
+          ],
+          "pages": [
+            148
+          ],
+          "heading": "CLEAR SYNERGY早期開始，沒有看到同樣結果"
+        },
+        {
+          "html": "Beta-blocker看缺血、心律或低EF；statin處理粥樣硬化事件風險；RAAS用藥找相應高風險條件；colchicine再看是否符合條件性選項。",
+          "refs": [],
+          "pages": [
+            149
+          ],
+          "heading": "每次續藥，說清楚要處理哪個問題"
+        },
+        {
+          "html": "Post-MI常用藥物劑量表（見原文p.149完整表格）：Beta-blocker（Carvedilol 3.125mg BID；metoprolol 25mg QD；bisoprolol 1.25mg QD）；Statin（Atorvastatin 40–80mg QD；rosuvastatin 20–40mg QD）；ACEi（Ramipril 1.25mg QD；enalapril 2.5mg QD；captopril 6.25mg BID）；Colchicine（0.5mg QD）。這些是講者列舉的療程。先確認適應症與劑型，再決定起始／目標量、如何調整及監測。",
+          "refs": [],
+          "pages": [
+            149
+          ],
+          "heading": "把目的放回劑量表",
+          "deepDive": true
+        }
+      ],
+      "chapter": "postmi",
+      "context": {
+        "now": "p.148新增抗發炎策略，p.149用一頁常見劑量收束beta-blocker、statin、RAAS與colchicine，p.150為2026 Thank You結尾圖。這個安排是先提出行動問題，再提供預後分層工具。",
+        "next": "p.151–154將回到急性處理選項：STEMI的溶栓。",
+        "before": "p.145–147以RAAS與MRA示範特定族群、研究藥物及地方意見的界線。"
+      },
+      "figures": [
+        {
+          "page": 148,
+          "caption": "低劑量colchicine列IIb，先看患者與啟動時點，再比較試驗結果。",
+          "afterBlock": 0
+        },
+        {
+          "page": 149,
+          "caption": "先確認每類藥的用途，再讀相應起始量、強度與調整條件。",
+          "afterBlock": 4
+        },
+        {
+          "page": 150,
+          "caption": "課程結尾圖。",
+          "afterBlock": null,
+          "supplementary": true
+        }
+      ],
+      "related": [
+        "postmi-raas",
+        "postmi-prevention"
+      ],
+      "sources": [
+        {
+          "url": "https://academic.oup.com/ehjacc/article/13/1/55/7280662",
+          "label": "ESC2023 post-MI prevention"
+        },
+        {
+          "url": "https://www.nejm.org/doi/10.1056/NEJMoa1912388",
+          "label": "COLCOT原研究"
+        },
+        {
+          "url": "https://www.nejm.org/doi/10.1056/NEJMoa2405922",
+          "label": "CLEAR SYNERGY colchicine原研究；NEJM2025"
+        }
+      ],
+      "boundary": {
+        "change": "若出現感染或身體不適，就重評colchicine；其餘藥物與生活方式調整，仍要遵照各自指引。",
+        "limits": "急性MI後常規使用的臨床獲益並不一致；CRP下降本身，不能替代再MI、死亡或其他臨床終點。",
+        "established": "Colchicine可以列入特定患者的討論，但COLCOT與CLEAR SYNERGY的結果不同，要連患者與啟動情境看。"
+      },
+      "cautions": [
+        {
+          "url": "https://www.nejm.org/doi/10.1056/NEJMoa2405922",
+          "page": 148,
+          "status": "原課程核對＋較新原研究摘要",
+          "original": "Colchicine 0.5mg QD；IIb",
+          "clarification": "必須保留條件與不一致試驗；CLEAR SYNERGY不支持所有急性MI後常規加入。"
+        },
+        {
+          "url": "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes",
+          "page": 149,
+          "status": "來源特定示例",
+          "original": "Post-MI常用劑量清單",
+          "clarification": "每列具不同對象、劑型、目的及調整條件，不能直接轉成通用order set。"
+        }
+      ],
+      "question": "MI後加colchicine，預期能少哪些事件？",
+      "subtitle": "機轉合理，仍須由對題試驗決定用在誰身上。",
+      "selfCheck": {
+        "answer": "藥物改變了CRP，但尚未證明預防研究中的MI或死亡。",
+        "question": "CRP下降了，但大型試驗沒有少掉指定事件，該怎麼解讀？"
+      },
+      "connection": "CRP的變化，不直接等於臨床事件的改變。",
+      "readingTier": "extension",
+      "sourceOrder": 33,
+      "nextQuestion": "回到選擇性用藥：治療對誰有益、代價多少、何時重評。"
+    }
+  ]
+}
