@@ -16,7 +16,8 @@ def articles(pages):
 def render_today_updates(pages, today=None):
     today = today or taipei_day()
     rows = [p for p in articles(pages)
-            if p.get("kind") != "historical_original" and not p.get("exam")
+            if p.get("collection") == "xiaoma-internal-medicine"
+            and p.get("kind") != "historical_original" and not p.get("exam")
             and p.get("updated", p["date"]) == today]
     cards = []
     for row in sorted(rows, key=lambda p: (p.get("section", ""), p["title"])):

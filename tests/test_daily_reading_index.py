@@ -37,6 +37,8 @@ class DailyReadingIndex(unittest.TestCase):
         self.assertNotIn("xiaoma-20261021-hypoxemia.html", links)
         self.assertNotIn("xiaoma-reading-20260712-heart-failure.html", links)
         self.assertNotIn("xiaoma-exam108-q46-chronic-cough.html", links)
+        self.assertNotIn("xiaoma-reading-cholestasis-evidence-action.html", links)
+        self.assertEqual(len(links), 4)  # Three current lessons and the atlas.
 
     def test_no_updates_does_not_fall_back_to_yesterdays_articles(self):
         markup = render_today_updates(self.pages, "2026-10-28")
