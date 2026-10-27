@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="840" viewBox="0 0 440 840" role="img" aria-labelledby="title desc">
+<title id="title">心肺繞道時氧輸送下降的兩條不同路徑</title>
+<desc id="desc">根據2025年一位redo mitral valve replacement和tricuspid repair病人之病例敘述，分別展示靜脈回流不足導致DO2i降至260，和血液稀釋時Hb 7.9導致DO2i約275。CPB時段SaO2 98正負0.5是整段摘要值，不是事件同時點。術後則需使用心輸出量而非幫浦流量。</desc>
+<rect width="440" height="840" rx="22" fill="#f6f9fb"/>
+<rect x="18" y="18" width="404" height="98" rx="17" fill="#12344b"/>
+<text x="36" y="52" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="23" font-weight="700" fill="white">氧輸送下降，有兩條路</text>
+<text x="36" y="83" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="17" fill="#d7e9f0">真實 redo valve 手術病例・CPB 期間</text>
+<text x="36" y="103" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="13" fill="#b4d1dc">不是術後 ICU 的心輸出量時序圖</text>
+<rect x="18" y="132" width="404" height="245" rx="17" fill="#e9f4f3" stroke="#8bb8b4" stroke-width="1.5"/>
+<rect x="35" y="149" width="111" height="31" rx="10" fill="#126f6c"/>
+<text x="49" y="170" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="18" font-weight="700" fill="white">路徑 A</text>
+<text x="35" y="210" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="22" font-weight="700" fill="#124d4c">靜脈回流／流量不足</text>
+<text x="35" y="246" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="19" fill="#153f45">DO₂i 下降至</text>
+<text x="193" y="249" font-family="Noto Sans, sans-serif" font-size="32" font-weight="700" fill="#116d67">260</text>
+<text x="271" y="245" font-family="Noto Sans, sans-serif" font-size="14" fill="#466d6d">mL/min/m²</text>
+<path d="M220 263 v25" stroke="#168780" stroke-width="3" stroke-linecap="round"/><path d="M211 282 l9 11 9-11" fill="none" stroke="#168780" stroke-width="3"/>
+<text x="35" y="320" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="18" fill="#124d4c">改善回流／管路與 pump flow</text>
+<text x="35" y="352" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="19" font-weight="700" fill="#124d4c">回升約 290–300</text>
+<rect x="18" y="392" width="404" height="245" rx="17" fill="#fff2e7" stroke="#e6b98d" stroke-width="1.5"/>
+<rect x="35" y="409" width="111" height="31" rx="10" fill="#ae5d24"/>
+<text x="49" y="430" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="18" font-weight="700" fill="white">路徑 B</text>
+<text x="35" y="469" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="22" font-weight="700" fill="#84471e">血液稀釋／Hb 下降</text>
+<text x="35" y="501" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="18" fill="#84471e">敘述事件 Hb 7.9 g/dL</text>
+<text x="35" y="535" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="19" fill="#84471e">DO₂i 約</text>
+<text x="149" y="540" font-family="Noto Sans, sans-serif" font-size="32" font-weight="700" fill="#ae5d24">275</text>
+<text x="228" y="534" font-family="Noto Sans, sans-serif" font-size="14" fill="#9c714e">mL/min/m²</text>
+<path d="M220 549 v25" stroke="#c17b3e" stroke-width="3" stroke-linecap="round"/><path d="M211 569 l9 11 9-11" fill="none" stroke="#c17b3e" stroke-width="3"/>
+<text x="35" y="600" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="18" fill="#84471e">增加 pump flow 後</text>
+<text x="35" y="625" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="19" font-weight="700" fill="#84471e">回升約 310–320</text>
+<rect x="18" y="652" width="404" height="166" rx="17" fill="#ffffff" stroke="#d6e2ea"/>
+<text x="35" y="683" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="19" font-weight="700" fill="#183a50">不能錯接的三件事</text>
+<text x="35" y="710" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="16" fill="#38596c">① SaO₂ 98 ± 0.5% 是 CPB 平均值</text>
+<text x="35" y="737" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="16" fill="#38596c">② 兩事件數字不是同期血氣</text>
+<text x="35" y="764" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="16" fill="#38596c">③ 離開 CPB：用病人的 CO 判斷</text>
+<text x="35" y="797" font-family="Noto Sans CJK TC, Noto Sans, sans-serif" font-size="12" fill="#607b8c">原創重組｜Civelek et al., Cureus 2025；非原圖重製</text>
+</svg>
