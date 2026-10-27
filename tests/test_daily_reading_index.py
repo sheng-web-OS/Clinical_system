@@ -8,7 +8,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "site"))
-from reading import render_article_index, render_today_updates, taipei_day
+from reading import render_article_index, render_today_updates, taipei_day, is_current_lesson, is_reference_page
 
 
 class Links(HTMLParser):
@@ -43,12 +43,38 @@ class DailyReadingIndex(unittest.TestCase):
         # an obsolete daily count when a release branch adds a real article.
         expected = {
             p["output"] for p in self.pages
-            if p.get("date") and p.get("collection") == "xiaoma-internal-medicine"
-            and p.get("kind") != "historical_original" and not p.get("exam")
+            if is_current_lesson(p)
             and p.get("updated", p["date"]) == "2026-10-27"
         }
         self.assertEqual(set(links) - {"knowledge-atlas.html#article-index"}, expected)
         self.assertEqual(len(links), len(expected) + 1)
+
+    def test_exam_compilation_and_source_reference_are_not_reading_cards(self):
+        daily = Links(render_today_updates(self.pages, "2026-10-27")).links
+        full_home = __import__("home").render_home(self.pages)
+        exam_url = "xiaoma-20261027-gi-liver-national-exam-trio.html"
+        source_url = "xiaoma-exam-gi-liver-three-sources.html"
+        for url in (exam_url, source_url):
+            with self.subTest(url=url):
+                self.assertNotIn(url, daily)
+                self.assertNotIn('href="' + url + '"', full_home)
+        # Clinical lessons WITH linked practice questions must still be surfaced.
+        self.assertIn("xiaoma-20261023-acid-base.html", daily)
+        self.assertIn("xiaoma-20261027-pe-normotensive-shock.html", daily)
+        atlas = render_article_index(self.pages)
+        self.assertIn('href="' + exam_url + '"', atlas)
+        self.assertIn("國考詳解與練習", atlas)
+        self.assertNotIn('href="' + source_url + '"', atlas)
+        # The source stays published and reachable from the teaching page.
+        self.assertIn(source_url, {p["output"] for p in self.pages})
+
+    def test_classification_comes_from_content_role_not_number_of_exam_links(self):
+        normal = next(p for p in self.pages if p["output"] == "xiaoma-20261023-acid-base.html")
+        exam_collection = next(p for p in self.pages if p["output"] == "xiaoma-20261027-gi-liver-national-exam-trio.html")
+        self.assertTrue(normal.get("exam_questions"))
+        self.assertTrue(is_current_lesson(normal))
+        self.assertEqual("exam_compilation", exam_collection["kind"])
+        self.assertFalse(is_current_lesson(exam_collection))
 
     def test_no_updates_does_not_fall_back_to_yesterdays_articles(self):
         markup = render_today_updates(self.pages, "2026-10-28")
@@ -58,7 +84,7 @@ class DailyReadingIndex(unittest.TestCase):
 
     def test_every_published_article_has_exactly_one_index_entry(self):
         links = Links(render_article_index(self.pages)).links
-        expected = {p["output"] for p in self.pages if p.get("date")}
+        expected = {p["output"] for p in self.pages if p.get("date") and not is_reference_page(p)}
         self.assertEqual(set(links), expected)
         self.assertEqual(len(links), len(expected))
         self.assertNotIn("xiaoma-sources.html", links)
