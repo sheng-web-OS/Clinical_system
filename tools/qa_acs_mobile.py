@@ -35,7 +35,29 @@ def verify(page, width):
       const links = [...(article?.querySelectorAll('a[href]') || [])]
           .map(a => a.getAttribute('href'));
       const table = article?.querySelector('table');
+      // Catch missing Traditional Chinese fallback fonts: two different Hanzi
+      // must not rasterize into the same generic missing-glyph box.
+      const canvas = document.createElement('canvas');
+      canvas.width = 90;
+      canvas.height = 72;
+      const ctx = canvas.getContext('2d');
+      const fontFamily = getComputedStyle(article).fontFamily;
+      function glyphPixels(c) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.font = '40px ' + fontFamily;
+        ctx.textBaseline = 'top';
+        ctx.fillStyle = '#000';
+        ctx.fillText(c, 8, 8);
+        return new Uint8ClampedArray(ctx.getImageData(0, 0, 90, 72).data);
+      }
+      const glyphA = glyphPixels('中');
+      const glyphB = glyphPixels('醫');
+      let glyphDifferences = 0;
+      for (let i = 0; i < glyphA.length; i++) {
+        if (glyphA[i] !== glyphB[i]) glyphDifferences++;
+      }
       return {
+        cjkGlyphRasterDifference: glyphDifferences,
         viewport: innerWidth,
         documentWidth: document.documentElement.scrollWidth,
         bodyWidth: document.body.scrollWidth,
@@ -51,6 +73,8 @@ def verify(page, width):
       };
     }""")
     issues = []
+    if report["cjkGlyphRasterDifference"] < 100:
+        issues.append("Traditional Chinese appears as identical missing-glyph tofu boxes")
     if report["documentWidth"] > width + 3 or report["bodyWidth"] > width + 3:
         issues.append("document extends past the viewport")
     if report["characters"] < 5000 or report["paragraphs"] < 24:
