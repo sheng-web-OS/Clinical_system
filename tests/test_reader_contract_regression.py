@@ -24,9 +24,14 @@ class ReaderContractRegression(unittest.TestCase):
         self.set_catalog([self.page])
         for name in ("styles.css", "home.css", "app.js", ".nojekyll"):
             (self.root / "dist" / name).write_text("", encoding="utf8")
-        beacon = """<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"fixture"}'></script>"""
+        # Canonical pages carry an inert beacon config; runtime JS loads it
+        # only for non-owners, after checking the local browser marker.
+        beacon = """<template id="clinical-analytics-config" data-src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"fixture"}'></template>
+<script>if (localStorage.getItem("clinical-analytics-owner-v1") === "1") return;
+document.head.appendChild(beacon);</script>"""
         (self.root / "dist/index.html").write_text('<h1>小麻閱讀</h1><div class="library-grid"></div>' + beacon, encoding="utf8")
         (self.root / "dist/example.html").write_text("<h1>Public engineering fixture</h1>" + beacon, encoding="utf8")
+        shutil.copyfile(SOURCE_ROOT / "site/owner-mode.html", self.root / "dist/owner-mode.html")
         self.index = [{"title": "Example", "url": "example.html", "text": "Public engineering fixture"}]
         self.set_search(self.index)
 
@@ -56,7 +61,7 @@ class ReaderContractRegression(unittest.TestCase):
     def test_duplicate_analytics_beacon_is_blocked(self):
         path = self.root / "dist/example.html"
         document = path.read_text("utf8")
-        beacon = document[document.index("<script"):]
+        beacon = document[document.index("<template"):]
         path.write_text(document + beacon, encoding="utf8")
         self.assert_blocked("expected 1 analytics beacon(s), found 2")
 
