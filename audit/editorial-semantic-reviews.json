@@ -867,6 +867,328 @@
           "line_for_editor": 345
         }
       }
+    },
+    "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md": {
+      "content_blob": "47c52ede0fc7a6411b8e2e5722c8239e46cccd56",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "clinical-os-hourly-automation:6adf8de52d4481918316f2e420c40b3b:turn10:2026-10-27T18:59:09+08:00:second-document",
+      "core_reader_question": "六題官方醫師二階真題如何分別測試免疫、病原來源、抗菌藥、SVR、酸中毒與感染以外的危急休克診斷，並將題目答案轉回臨床因果決策？",
+      "new_understanding": "112Q33區分IL-5與發炎cytokines；112Q64與Q65把海水傷口Vibrio辨識接到ceftazidime加tetracycline及清創；114Q51區分低SVR與心肌炎；113Q48確證Sepsis/bicarbonate並保留AKI例外；114Q57辨認Sheehan相關adrenal crisis需立即給類固醇。六題均核對官方原卷、科目代碼1302、標準答案與勘誤。",
+      "strongest_counterargument": "題解重述而非逐字轉錄可能遺失限定詞，且2026指南不能覆蓋當年選項；本輪對六題逐題回查考選部原卷及標準答案、更正頁，保留Q48原始Sepsis身份、Q64與Q65不同答案、CDC現行Vibrio藥物與舊題tetracycline措辭差異。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 4,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "9add6faba7f0937a6f-1": {
+          "role": "orientation",
+          "reader_gain": "以免疫、暴露、血流、用藥和替代診斷五個面向說明六題不是同一類知識。",
+          "nonredundancy_reason": "這段建立題庫的概念差異，不會被任何一題的個別解析取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣是 Sepsis 的問題，國考可能問的是完全不同的層次：發炎訊號是哪一種？看到特殊感染暴露史會想到哪個感染源？遇到低血壓應先辨認 SVR 或心輸出？辨認特殊病原後，應如何選擇適當抗菌藥？如果原先推測的敗血性休克治療效果不好，還有哪些不能等待的鑑別？",
+          "line_for_editor": 4
+        },
+        "8ed10d9a5c3a5e980b-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "交代六題的官方科目與題號、重述而非逐字複製及先答後解的閱讀順序。",
+          "nonredundancy_reason": "第一段只是問題地圖，此段新增來源身分與教學操作方式。",
+          "verdict": "keep",
+          "excerpt_for_editor": "以下六題為考選部醫師第二階段醫學（三）歷屆真題，題幹及選項以原題意思整理，保留年份、梯次、題號及官方標準答案，並提供官方試卷連結。請先閱讀題目自己選答案，再展開解析；每題都從現有證據→病理機轉→臨床決策→反事實界線延伸，將考試所需的辨識能力轉回真實病人的診斷。",
+          "line_for_editor": 6
+        },
+        "15dfd54087f4c4f79b-1": {
+          "role": "navigation",
+          "reader_gain": "把題解連回主文並建議依個人錯誤的因果步驟反向閱讀。",
+          "nonredundancy_reason": "它提供跨文件的實際閱讀策略，而非再列考題分類。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這份題解與 《Sepsis：感染如何變成器官衰竭？》 可以雙向閱讀，不需要依年份順序讀；建議先做題再看想錯的那一個因果步驟。",
+          "line_for_editor": 8
+        },
+        "d2a7e17cd7c5c88925-1": {
+          "role": "source_context",
+          "reader_gain": "精確標示112-1醫學三第33題比較IL-5與其他cytokine的題幹。",
+          "nonredundancy_reason": "此段讓免疫題能回到特定官方題號，而不是泛泛介紹炎症。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方身分： 民國 112 年第 1 次（2023），醫師（二）醫學（三）第 33 題。原題問：哪一種 cytokine 與敗血症的關聯相對不密切？",
+          "line_for_editor": 15
+        },
+        "2513c03db899082945-1": {
+          "role": "source_context",
+          "reader_gain": "給出112Q33官方答案A及原卷、標準和更正答案入口。",
+          "nonredundancy_reason": "答案身分和勘誤查核獨立於後續機轉說明，不可由推論代替。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方答案：A（考選部標準答案；更正答案頁未對第 33 題改動）。官方試卷｜官方答案｜更正答案",
+          "line_for_editor": 26
+        },
+        "30323ec105cd59a7bc-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明IL-5偏向嗜酸性球和第二型免疫而TNF、IL-1、IL-6較典型。",
+          "nonredundancy_reason": "這段才提供選A的免疫學差異，不是前段答案重述。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼選 A？ Sepsis 的宿主反應牽涉 innate immune activation。TNF-α、IL-1 和 IL-6 是經常被用來說明發炎、內皮反應及急性期反應的關鍵 cytokines；IL-5 與嗜酸性球分化、第二型免疫反應等關係更顯著。題目問的是相較之下，不是「IL-5",
+          "line_for_editor": 28
+        },
+        "a532d984ad530037a4-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制cytokine參與疾病不代表單獨阻斷IL-6可改善所有Sepsis結局。",
+          "nonredundancy_reason": "它處理機轉到治療療效的過度外推，與選擇IL-5的基礎辨識不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "錯誤的延伸推論： 知道 IL-6 參與病理生理，不代表臨床上單獨阻斷 IL-6 就成為所有敗血症的標準療法。多條免疫與代謝路徑、不同宿主與時間點，使「參與疾病機轉」和「藥物介入改善死亡率」成為兩種不同證據問題。連回 Sepsis 第四章：PAMP／DAMP → 內皮、凝血與細胞代謝。",
+          "line_for_editor": 30
+        },
+        "5314da14a61f7c6222-1": {
+          "role": "counterfactual",
+          "reader_gain": "以肺炎合併IL-6升高反問是否足以符合Sepsis-3。",
+          "nonredundancy_reason": "這段讓讀者練習由免疫指標回到器官功能障礙的診斷門檻。",
+          "verdict": "keep",
+          "excerpt_for_editor": "遷移題： 如果病人有肺炎、IL-6 上升，是否已足以確立 Sepsis-3？不是，仍需要整合感染與急性器官功能障礙，且 cytokine 數值無法替代病人的灌流評估。",
+          "line_for_editor": 32
+        },
+        "b11fbf2e7d07fc5655-1": {
+          "role": "source_context",
+          "reader_gain": "完整定位112Q64肝硬化、海邊魚刺、紫紅水泡與休克的題目身分。",
+          "nonredundancy_reason": "它首次建立創傷弧菌題的暴露與宿主條件，不能由cytokine題推得。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方身分： 民國 112 年第 1 次（2023），醫師（二）醫學（三）第 64 題。原題：40 歲肝硬化男性，在海邊釣魚被魚刺刺傷，翌日腿部感染伴紫紅色水泡與休克，最可能病原體為何？",
+          "line_for_editor": 42
+        },
+        "926015adf99a3b38a9-1": {
+          "role": "source_context",
+          "reader_gain": "保留112Q64官方答案D與考選部三種原始查核入口。",
+          "nonredundancy_reason": "此段確保Vibrio選項的正式答案不被後續112Q65的C混淆。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方答案：D（更正答案未涉及第 64 題）。官方試卷｜官方答案｜更正答案",
+          "line_for_editor": 53
+        },
+        "44d74f1976f7ac65ce-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以海水暴露、肝硬化與快速壞死性皮膚變化的聯合機率解釋創傷弧菌。",
+          "nonredundancy_reason": "答案行只列菌名，此段交代多條證據如何共同提升先驗機率。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼選 D？ 三個資訊一起改變病原體的先驗機率：海水／海產傷口暴露、肝硬化背景、快速惡化並出現血性或紫紅水泡與休克。這組線索非常符合創傷弧菌（Vibrio vulnificus）嚴重軟組織感染與可能的血流感染，具有迅速致命的風險。不是因為「只要有紫紅水泡就一定是 Vibrio」，而是暴露",
+          "line_for_editor": 55
+        },
+        "71efc6577d1b84dd43-1": {
+          "role": "decision",
+          "reader_gain": "從辨認Vibrio推進到立即抗菌藥、外科清創與source control評估。",
+          "nonredundancy_reason": "它把考試病原辨識轉為時間敏感的救命行動，並限制非處方性教學。",
+          "verdict": "keep",
+          "excerpt_for_editor": "從選菌名走到救命： 若臨床高度懷疑，必須立即協調適當抗菌藥與外科評估可能需要的清創／source control，不能等待血培證實才處理壞死性感染風險。抗菌藥的實際組合要依當地可用藥、感染科／外科團隊及最新適用建議決定；本題的官方答案並不是特定抗菌藥處方。連回 Sepsis 第六、七章：感",
+          "line_for_editor": 57
+        },
+        "30e3f3df32f309f326-1": {
+          "role": "counterfactual",
+          "reader_gain": "移除海水與水泡線索後要求重新搜尋病原而非機械套用Vibrio。",
+          "nonredundancy_reason": "這段測試外推邊界，與原題陽性證據的歸納不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "遷移題： 如果同樣是低血壓與高乳酸，但完全沒有海水暴露或皮膚水泡，能否依這題直接使用「創傷弧菌」診斷？不能，必須重新尋找感染來源及病原體證據。",
+          "line_for_editor": 59
+        },
+        "70574d9def4f591439-1": {
+          "role": "source_context",
+          "reader_gain": "精確定位114Q51比較四種休克SVR方向的原題與年份。",
+          "nonredundancy_reason": "它引入與感染源無關的血流表型題，建立新的測量軸。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方身分： 民國 114 年第 1 次（2025），醫師（二）醫學（三）第 51 題。原題問四種休克狀況，哪一項的 systemic vascular resistance（SVR）改變方向最不同？",
+          "line_for_editor": 69
+        },
+        "45d363626d8451fe01-1": {
+          "role": "source_context",
+          "reader_gain": "核對114Q51官方答案B及無該題更正的考選部紀錄。",
+          "nonredundancy_reason": "此段是官方答題身分證據，與下一段心肌炎生理推理功能不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方答案：B（標準與更正答案均為 B，無該題更正）。官方試卷｜官方答案｜更正答案",
+          "line_for_editor": 80
+        },
+        "ea6b34e0a95088d8d1-1": {
+          "role": "causal_bridge",
+          "reader_gain": "比較過敏、神經性、敗血性低SVR與心肌炎低CO伴代償高SVR。",
+          "nonredundancy_reason": "它讓讀者知道為何B不同，並非只記住四種休克的名字。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼選 B？ 顯影劑過敏性休克可因介質釋放造成強烈 vasodilation；神經性休克因交感神經張力喪失而 SVR 下降；敗血性休克多以 vasoplegia 為重要機轉。這三項偏向 distributive physiology。病毒性心肌炎引起的心因性休克則以心肌泵送功能下降為主，",
+          "line_for_editor": 82
+        },
+        "84ba9819e2f23885ba-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用MAP與CO、SVR關係限制典型分類在混合性休克中的適用性。",
+          "nonredundancy_reason": "前段比較標準題型，此段補上臨床非固定的反例及afterload風險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這題的真正價值： MAP 大致與 CO × SVR 有關。當 SVR 下降，增加前負荷未必能解決血管張力；當心肌不能送出足夠 CO，盲目提高 afterload 也未必能改善器官血流。混合性休克時 SVR 可以隨病程、發炎和藥物改變，試題的分類是典型機轉比較，不是臨床上永不例外的公式。 連",
+          "line_for_editor": 84
+        },
+        "9df0a5ed6a787be869-1": {
+          "role": "counterfactual",
+          "reader_gain": "以NE升壓後皮膚仍冷且Echo低輸出要求重新分型。",
+          "nonredundancy_reason": "它測試能否將SVR知識轉成動態床邊推理，而非重複靜態選項。",
+          "verdict": "keep",
+          "excerpt_for_editor": "遷移題： 若 septic shock 患者用 NE 後 MAP 回升，但皮膚仍冷、心超顯示低輸出，你還能將其視為「只有 SVR 低」嗎？不能，需要重新辨認心輸出與混合型休克。",
+          "line_for_editor": 86
+        },
+        "23d764ea0058a61681-1": {
+          "role": "source_context",
+          "reader_gain": "指出112Q65緊接112Q64，是同一創傷弧菌病例的抗菌藥延續題。",
+          "nonredundancy_reason": "這段建立題與題的因果順序，避免將同病人兩題誤當獨立病例。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方身分： 民國 112 年第 1 次（2023），醫師（二）醫學（三）第 65 題。這是緊接第 64 題的延續題：同一名肝硬化男性因海邊魚刺傷口迅速出現紫紅水泡與休克，已高度懷疑創傷弧菌，問最適合的抗菌藥組合。",
+          "line_for_editor": 96
+        },
+        "06d5e7d998f7a0e004-1": {
+          "role": "source_context",
+          "reader_gain": "核對112Q65官方答案C並特別區分前題Q64答案D。",
+          "nonredundancy_reason": "它阻止相鄰題號和答案錯配，是前段病例身分之外的獨立驗證。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方答案：C（考選部 112-1 醫學（三）第 65 題；須與前一題第 64 題的 D 分開核對）。官方試卷｜官方答案｜更正答案",
+          "line_for_editor": 107
+        },
+        "b8060a57c72a1b11e7-1": {
+          "role": "decision",
+          "reader_gain": "說明ceftazidime加tetracycline是四個原選項中最符合Vibrio覆蓋者。",
+          "nonredundancy_reason": "這段把病原識別轉為選項比較，並補上仍須清創的處置限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼選 C？ 第 64 題辨認的是感染來源與病原體；第 65 題要求把這個判斷轉成能涵蓋 Vibrio vulnificus 的抗菌策略。四組中，第三代 cephalosporin ceftazidime 搭配 tetracycline 類藥物符合本題考查的典型組合。不能把「已選出菌名」",
+          "line_for_editor": 109
+        },
+        "37abc641d2ef3ff591-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分2023原題tetracycline措辭與CDC現行doxycycline加第三代頭孢建議。",
+          "nonredundancy_reason": "它防止用新指南改寫舊答案或把同類抗菌藥無條件等量互換。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當年考題與現行實務的界線： 考題原選項寫的是 tetracycline；CDC 現行 Vibrio 臨床建議具體列出 doxycycline 加第三代 cephalosporin（例如 ceftazidime），並列出替代方案。這不表示任何 tetracycline 類藥都可無條件等量替換",
+          "line_for_editor": 111
+        },
+        "c0f7f19c09891371f8-1": {
+          "role": "counterfactual",
+          "reader_gain": "以一般皮膚抗菌藥無效的快速惡化病例要求重查Vibrio覆蓋與壞死感染。",
+          "nonredundancy_reason": "這是抗菌失敗的臨床再評估，與原題正確藥物組合不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "臨床遷移： 如果患者有海水暴露、血性水泡與休克，但初期已使用一般皮膚感染抗生素仍迅速惡化，應立即重新核對是否涵蓋創傷弧菌，並評估是否存在需清創的壞死性感染，而不是只提高升壓劑。連回Sepsis 第六至七章：感染來源、抗菌藥與源頭控制。",
+          "line_for_editor": 113
+        },
+        "1c418a54247c1f7525-1": {
+          "role": "source_context",
+          "reader_gain": "精確標示113Q48為Sepsis治療最不適當選項而非COPD題。",
+          "nonredundancy_reason": "此段直接防止曾發生的錯誤科目身分假陽性，保留原題問題方向。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方身分： 民國 113 年第 1 次（2024），醫師（二）醫學（三）第 48 題。原題問以下 Sepsis 治療原則哪一項最不適當：",
+          "line_for_editor": 123
+        },
+        "6f2e274d5103f27174-1": {
+          "role": "source_context",
+          "reader_gain": "依考選部113-1醫學三原卷和答案核對Q48選B且無該題勘誤。",
+          "nonredundancy_reason": "它是與後續臨床解釋獨立的官方答案證據，不可由二手reviewer claim替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方答案：B（此科目該次無第 48 題更正）。官方試卷｜官方答案",
+          "line_for_editor": 134
+        },
+        "e8824357f952e79371-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋pH是病理結果，先以bicarbonate矯正數字不能解除感染或灌流瓶頸。",
+          "nonredundancy_reason": "答案B的臨床因果理由獨立於前段考選部答案身份。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼選 B？ 酸血症可能來自低灌流、發炎相關代謝、腎功能障礙與呼吸代償問題，但 pH 是生理結果，不等於尚未解除的根本感染或循環瓶頸。核心救治仍是適當抗感染與必要源頭控制、器官氧送達與灌流支持；不能把「先打 bicarbonate 使 pH 變正常」當成所有 Sepsis 病人的首要目標",
+          "line_for_editor": 136
+        },
+        "50e63a68602b2a162a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "列出SSC2026不常規用bicarbonate與pH低合併AKIN2至3的特定例外。",
+          "nonredundancy_reason": "它阻止把錯誤的首要目標誤讀成任何情境都禁止碳酸氫鈉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "重要的現行指南例外： Surviving Sepsis Campaign（SSC）2026 對單純為了改善 hemodynamics 或降低升壓劑需求而治療 sepsis-induced lactic acidemia，建議不要常規使用 bicarbonate；但是對 pH ≤7.2 且合",
+          "line_for_editor": 138
+        },
+        "dff206defab438fe6e-1": {
+          "role": "decision",
+          "reader_gain": "逐項交代抗菌藥、液體與NE選項成立的條件及不必等滿30mL/kg。",
+          "nonredundancy_reason": "這段審核其他三個選項的決策界線，不是重複說明B為何錯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "其他選項的條件： A 成立於適當感染可能性／風險的早期治療，但並非所有疑似感染者都須不加辨別立即給最廣譜；C 的液體要看 fluid responsiveness 與 tolerance，不能固定追量；D 不表示一定要等補滿 30 mL/kg 才可使用 NE，極度不穩定時升壓可以與必要補液",
+          "line_for_editor": 140
+        },
+        "d19ce9b5e93f05d943-1": {
+          "role": "counterfactual",
+          "reader_gain": "以pH7.12與AKI3的高風險病例測試bicarbonate不能取代source control。",
+          "nonredundancy_reason": "它將指南例外與原題優先順序整合成新的臨床情境。",
+          "verdict": "keep",
+          "excerpt_for_editor": "遷移題： 若 pH 7.12、AKI stage 3、嚴重休克且 source control 尚未執行，正確方向是只給 bicarbonate 嗎？不是；酸鹼介入可能變得有意義，但不能取代並行的感染源與循環救治。",
+          "line_for_editor": 142
+        },
+        "8a478fdb521a15cf7e-1": {
+          "role": "source_context",
+          "reader_gain": "定位114Q57產後大出血史、感染、難治休克及低鈉的adrenal crisis原題。",
+          "nonredundancy_reason": "這題新增另一種可與Sepsis共存的休克原因，非前面血流或酸鹼題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方身分： 民國 114 年第 1 次（2025），醫師（二）醫學（三）第 57 題。原題：65 歲女性曾於生產時大量出血；現在泌尿道感染、意識不清、BP 85/45、HR 125/min、低血鈉，對大量輸液與升壓劑反應差，懷疑 adrenal crisis。應如何診治？",
+          "line_for_editor": 152
+        },
+        "89d077a78adbb6a3bd-1": {
+          "role": "source_context",
+          "reader_gain": "核對114Q57官方答案C及更正表未涉及此題的原始紀錄。",
+          "nonredundancy_reason": "這是可查核的正式答案身分，與後續Sheehan機轉分開。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方答案：C（更正答案未涉及第 57 題）。官方試卷｜官方答案｜更正答案",
+          "line_for_editor": 163
+        },
+        "511bd234491706b187-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以產後出血可能傷害腦下垂體、ACTH不足和感染壓力解釋危象。",
+          "nonredundancy_reason": "它建立為何立即給hydrocortisone而非等刺激試驗的因果鏈。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼選 C？ 生產後大量出血可能造成 Sheehan syndrome（缺血性腦下垂體損傷），遺留 ACTH 缺乏與次發性腎上腺功能不足。在感染壓力下，所需 cortisol 增加，卻不能適當供應，可能發生低血壓、低血鈉與意識改變。當病人已是高度疑似 adrenal crisis，不適合",
+          "line_for_editor": 165
+        },
+        "6e775c6e7f3c19bc1a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分感染誘發adrenal crisis的替代治療與SSC對septic shock的輔助類固醇。",
+          "nonredundancy_reason": "同藥不同適應症是此題獨特臨床陷阱，前段只說明內分泌機轉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼它屬於 Sepsis 系列？ 病人可能真的有泌尿道感染，卻不表示目前全部休克都來自 Sepsis 的 vasoplegia。腎上腺危象可能由感染誘發，與 Sepsis 共存，且需要不同的關鍵介入。此題也要區分兩種同名藥物情境：Surviving Sepsis Campaign（SSC",
+          "line_for_editor": 167
+        },
+        "db571db06bea3eab08-1": {
+          "role": "counterfactual",
+          "reader_gain": "要求高度疑似危象且不穩定時不可為了等檢驗而延誤救命類固醇。",
+          "nonredundancy_reason": "這段將原題的診療選擇轉為時間敏感的床邊優先順序測試。",
+          "verdict": "keep",
+          "excerpt_for_editor": "遷移題： 如果抽血結果尚未知、病人仍嚴重不穩定而高度疑似 adrenal crisis，是否應為了較完美的診斷準確率而等待？不應。先採可快速取得的關鍵檢體，但不能延誤救命治療。",
+          "line_for_editor": 169
+        },
+        "68d0b35086f461851b-1": {
+          "role": "navigation",
+          "reader_gain": "將六題分別映射到免疫、來源、SVR、酸鹼、抗菌藥與替代診斷。",
+          "nonredundancy_reason": "前面逐題解析，此段首次把六種不同能力整合成跨年概念索引。",
+          "verdict": "keep",
+          "excerpt_for_editor": "112-1 Q33 問宿主免疫反應；112-1 Q64 問病原與感染來源；114-1 Q51 問休克的血管阻力機轉；113-1 Q48 問 bicarbonate 與 Sepsis 治療優先順序；112-1 Q65 問病原辨認如何轉成抗菌藥與必要外科處置；114-1 Q57 問原先的「Se",
+          "line_for_editor": 177
+        },
+        "03a67efcc9d3efb47b-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用病原來源到器官、循環、介入、重新分類的順序串起題庫與主教材。",
+          "nonredundancy_reason": "它提供可遷移的共同推理骨架，而非再依題號羅列答案。",
+          "verdict": "keep",
+          "excerpt_for_editor": "回答它們不需要一套隨題號排列的硬背口訣：必須反覆回到病原／來源→宿主與器官障礙→循環瓶頸→介入與回饋→重新分類。這也是 Sepsis 深度主教材 的共同模型。",
+          "line_for_editor": 179
+        },
+        "e8623ba2d2e01f2cf3-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明示所有選項是教學重述，官方原卷與當年答案不可被2026指南覆寫。",
+          "nonredundancy_reason": "最後補上來源忠實及時代差異的使用邊界，防止讀者把摘要當逐字原卷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "來源邊界： 各題附有考選部官方試卷、標準答案與更正紀錄的入口；選項是教學重述，不能取代原卷逐字措辭。官方考試當年的答案與 2026 SSC 對特殊族群的建議須分開理解。",
+          "line_for_editor": 181
+        }
+      }
     }
   }
 }
