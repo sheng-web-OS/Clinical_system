@@ -53,6 +53,14 @@ class RealArticlePackets(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "already exists"):
                 lab.prepare_packets(root, sp, out)
 
+    def test_never_write_review_packets_to_public_site(self):
+        with tempfile.TemporaryDirectory() as root:
+            sp = fixture(root)
+            for directory in ("site", "dist", "content/reviews"):
+                with self.subTest(directory=directory), self.assertRaisesRegex(ValueError, "private experiments"):
+                    lab.prepare_packets(root, sp, Path(root)/directory/"packets")
+                self.assertFalse((Path(root)/directory/"packets").exists())
+
     def test_reject_changed_article_before_any_packets_written(self):
         with tempfile.TemporaryDirectory() as root:
             sp = fixture(root)
