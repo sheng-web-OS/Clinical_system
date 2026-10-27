@@ -2324,5 +2324,16 @@
         "topic": "感染合併 adrenal crisis 的優先診療"
       }
     ]
+  },
+  {
+    "source": "content/clinical-os/sepsis-visual-evidence-and-sources.md",
+    "output": "clinical-sepsis-evidence.html",
+    "title": "Sepsis 原始病例影像與證據來源",
+    "subtitle": "以原始 POCUS／CT 的資訊增量理解源頭控制，不把原圖當成萬能診斷",
+    "collection": "clinical-os",
+    "layout": "reader",
+    "date": "2026-10-27",
+    "navigation": false,
+    "section": "參考資料"
   }
 ]
