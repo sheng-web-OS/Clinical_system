@@ -2,11 +2,23 @@
 
 這是[三道肝膽國考題整合解析](lessons/2026-10-27-gi-liver-exam-trio.md)的**官方試題參考頁**，提供原題與答案表的查閱入口。題目推理、逐選項比較和臨床應用請閱讀主教材。
 
-| 考試與題號 | 原始試題 | 官方更正答案表 | 正式答案 |
-|---|---|---|---|
-| 112 年第一次・醫學（三）Q1：年輕肝病與 Wilson disease | [考選部試題 PDF，第 1 頁](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q) | [考選部答案 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M) | D |
-| 114 年第一次・醫學（三）Q22：Child–Pugh 與 ALT | [考選部試題 PDF，第 6 頁](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q) | [考選部答案 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M) | D |
-| 114 年第二次・醫學（三）Q22：SAAG 與腹水總蛋白 | [考選部試題 PDF，第 6 頁](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=Q) | [考選部答案 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=M) | D |
+### 112 年第一次・醫學（三）第 1 題
+
+**考點：** 年輕肝病、低 ceruloplasmin 與 Wilson disease。**官方答案：D。**
+
+[查看考選部原題 PDF（第 1 頁）](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q) · [查看官方更正答案表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M)
+
+### 114 年第一次・醫學（三）第 22 題
+
+**考點：** Child–Pugh 的組成與 ALT。**官方答案：D。**
+
+[查看考選部原題 PDF（第 6 頁）](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q) · [查看官方更正答案表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M)
+
+### 114 年第二次・醫學（三）第 22 題
+
+**考點：** SAAG、腹水 total protein 與肝硬化腹水。**官方答案：D。**
+
+[查看考選部原題 PDF（第 6 頁）](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=Q) · [查看官方更正答案表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=M)
 
 以上皆依**官方更正答案表**，三題所列題號均未更正。考試最適選項不等於真實患者的確診；跨年度的臨床理解請回到[三題整合教材](lessons/2026-10-27-gi-liver-exam-trio.md)。
 
