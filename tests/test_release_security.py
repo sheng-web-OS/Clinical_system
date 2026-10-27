@@ -33,6 +33,10 @@ class ReleaseSecurityGateTest(unittest.TestCase):
         self.page.write_text("sk-proj-" + "A" * 32, encoding="utf8")
         self.assertTrue(any("OpenAI credential" in error for error in scan_dist(self.dist)))
 
+    def test_fake_private_key_header_is_blocked(self):
+        self.page.write_text("-----BEGIN OPENSSH PRIVATE KEY-----\\nnot-a-real-key", encoding="utf8")
+        self.assertTrue(any("private key header" in error for error in scan_dist(self.dist)))
+
     def test_fake_api_assignment_is_blocked(self):
         self.page.write_text("CF_API_TOKEN=" + "T" * 32, encoding="utf8")
         self.assertTrue(any("API credential assignment" in error for error in scan_dist(self.dist)))
