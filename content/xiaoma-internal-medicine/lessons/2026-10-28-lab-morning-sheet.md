@@ -146,3 +146,6 @@ CBC 是循環血液中血球數量、Hb 和紅血球指標的快照。WBC 是總
 6. **檢驗選擇**：Society of Hospital Medicine / Choosing Wisely 主張臨床與檢驗穩定時避免無目的重複 CBC/chemistry，屬對過度抽血的 stewardship 提醒，**不適用正在急變或有明確藥物監測需求的病人**。[原始共識](https://pubmed.ncbi.nlm.nih.gov/23956231/)；[Choosing Wisely Canada](https://choosingwiselycanada.org/hospitals/labs-test/)。
 
 **下一篇要補上的缺口**：本篇證明「檢體可不可靠」與「病人是否危險」必須分開；但還沒教會你看到溶血、EDTA contamination、從輸液管採血、platelet clumping 時如何設計最小且不延誤救治的確認流程。那是《假性異常與採檢干擾》的獨立主題。腎功能機轉與尿沉渣另交給 AKI 專文；本文不以大拼盤取代它們。
+
+
+[閱讀本篇原始證據、臨床適用界線與圖表身分](../lab-morning-sheet-sources.md)。
