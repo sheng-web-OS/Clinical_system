@@ -298,7 +298,10 @@ def main():
     (DIST/"index.html").write_text(render_home(PAGES), encoding="utf-8")
     # Searching full source text remains possible, but current integrated lessons are presented first.
     originals = {p["output"] for p in PAGES if p.get("kind") == "historical_original"}
-    search_rows = sorted(rows, key=lambda row: row["url"] in originals)
+    # Reference/audit pages stay reachable from articles but are not teaching search hits.
+    source_audit_outputs = {p["output"] for p in PAGES if p.get("review") == "source_audit"}
+    search_rows = sorted((row for row in rows if row["url"] not in source_audit_outputs),
+                         key=lambda row: row["url"] in originals)
     searchable=json.dumps(search_rows,ensure_ascii=False)
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")
     (DIST/"site-index.js").write_text("window.CLINICAL_INDEX = "+searchable+";",encoding="utf-8")
