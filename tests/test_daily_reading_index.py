@@ -34,11 +34,13 @@ class DailyReadingIndex(unittest.TestCase):
         links = Links(render_today_updates(self.pages, "2026-10-27")).links
         self.assertIn("xiaoma-20261023-acid-base.html", links)
         self.assertIn("xiaoma-20261027-cticu-abg-cabg-lactate.html", links)
+        self.assertIn("xiaoma-20261027-cticu-oxygen-delivery.html", links)
         self.assertNotIn("xiaoma-20261021-hypoxemia.html", links)
         self.assertNotIn("xiaoma-reading-20260712-heart-failure.html", links)
         self.assertNotIn("xiaoma-exam108-q46-chronic-cough.html", links)
         self.assertNotIn("xiaoma-reading-cholestasis-evidence-action.html", links)
-        self.assertEqual(len(links), 4)  # Three current lessons and the atlas.
+        expected_today = sum(1 for p in self.pages if p.get("date") and p.get("collection") == "xiaoma-internal-medicine" and p.get("kind") != "historical_original" and not p.get("exam") and p.get("updated", p["date"]) == "2026-10-27")
+        self.assertEqual(len(links), expected_today + 1)  # Daily cards plus atlas navigation.
 
     def test_no_updates_does_not_fall_back_to_yesterdays_articles(self):
         markup = render_today_updates(self.pages, "2026-10-28")
