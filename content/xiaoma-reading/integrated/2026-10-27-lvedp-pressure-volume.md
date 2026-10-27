@@ -18,6 +18,18 @@
 - **左心房平均壓（mean LAP）**：跨整個心動週期的左房平均負荷，對肺靜脈循環所承受的壓力尤其相關。
 - **肺動脈楔壓（PAWP／PCWP）**：在適當 wedge 位置、呼吸與量測條件下，間接反映肺靜脈／左房壓的侵入性數值；它不是把導管直接放進左心室所得的 LVEDP。
 
+<figure class="hemo-figure" id="lvedp-pressure-compartments">
+<figcaption><strong>圖 1｜三個壓力位置，不能當成一個讀值。</strong> 依 2024 JACC Heart Failure 右心導管血流動力學解讀與 2025 ASE diastology 的量測界線所整理，非原研究的波形截圖。比較對象是壓力位置與時間窗，不是宣稱存在固定的正常換算係數。</figcaption>
+<table>
+<thead><tr><th>量測</th><th>最直接描述</th><th>單一數值尚不能證明</th></tr></thead>
+<tbody>
+<tr><th>Mean PAWP</th><td>肺靜脈／左房整個週期的平均壓力負荷</td><td>不能直接等同 LVEDP；注意大 v wave／MR</td></tr>
+<tr><th>LVEDP</th><td>LV 舒張末期的腔內壓</td><td>不能直接換算 LVEDV 或全身體液量</td></tr>
+<tr><th>Transmural filling pressure</th><td>LV 腔內壓相對於外部約束的淨壓力</td><td>不能只由 LVEDP 高低判定充盈是否足夠</td></tr>
+</tbody>
+</table>
+</figure>
+
 在沒有顯著瓣膜或肺靜脈障礙、波形條件適當時，end-diastolic wedge pressure 可以接近 LVEDP。但**mean PAWP 不應無條件等同 LVEDP**。尤其有 large v wave、AF、明顯 MR、左房順應性異常或某些心包／胸腔壓力變化時，平均值與舒張末期值可能相差很大。
 
 這不是文字上的挑剔。你可能以為自己在治療「左心室舒張壓過高」，實際上真正需要迅速辨認的是二尖瓣病變、左房壓力負荷、肺靜脈阻塞或量測錯誤。
