@@ -55,7 +55,7 @@ ABG（arterial blood gas，動脈血氣）直接測量 **pH、PaCO₂、PaO₂**
 <p style="font-size:0.91rem;margin:0.4rem 0 0;padding-top:0.4rem;border-top:1px solid #d7e7e6;color:#245861"><strong>不能直接推出：</strong>全身氧輸送足夠、各器官沒有缺血</p>
 </div>
 </div>
-<div style="text-align:center;margin:0.65rem 0;font-size:0.94rem;line-height:1.5;font-weight:750;color:#305449">↓　兩個數字不互相否定；共同缺的是因果證據　↓</div>
+<div style="text-align:center;margin:0.65rem 0;font-size:0.94rem;line-height:1.5;font-weight:750;color:#305449">兩個數字不互相否定；共同缺的是因果證據<div aria-hidden="true" style="margin-top:0.2rem;font-size:1.2rem;line-height:1">↓</div></div>
 <div style="background:#e6f0eb;border:1px solid #a9c6b9;border-radius:8px;padding:0.8rem 1rem">
 <div style="font-size:0.95rem;font-weight:800;margin-bottom:0.35rem">血液每分鐘能送出多少氧？</div>
 <div style="font-size:0.96rem;line-height:1.7"><strong>Hb × SaO₂</strong>（主要攜氧）＋<strong>溶解氧</strong>（少量，與 PaO₂ 有關）<div style="margin:0.35rem 0 0.35rem 1rem">↓ 合計為 <strong>CaO₂</strong>：每單位血液所含的氧</div><strong>CaO₂ × CO → DO₂</strong>：全身每分鐘送出的氧<div style="margin-top:0.35rem">但 <strong>DO₂ ≠ 每個器官實際利用的氧</strong>；還需考慮血流分布及氧萃取。</div></div>
