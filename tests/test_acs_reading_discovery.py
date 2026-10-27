@@ -48,9 +48,10 @@ class ACSReadingDiscovery(unittest.TestCase):
         source = next(p for p in self.pages
                       if p["source"] == "content/xiaoma-internal-medicine/acs-exam-sources.md")
         title = source["title"]
-        for year in ("113", "114", "115"):
-            with self.subTest(year=year):
-                self.assertIn(year, title)
+        self.assertTrue(
+            "113–115" in title or all(y in title for y in ("113", "114", "115")),
+            "Source-page title must cover 113, 114, and 115 official exam years",
+        )
 
     def test_seven_recorded_exam_crosslinks_stay_valid_after_rewriting_h2(self):
         related = self.article.get("related_exams", [])
