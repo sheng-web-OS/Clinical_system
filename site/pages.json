@@ -2428,5 +2428,491 @@
     "section": "心臟與循環",
     "navigation": false,
     "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md",
+    "output": "xiaoma-exam-heart-sounds-structural-cross-specialty-111-115.html",
+    "title": "心音與結構心臟病：46 道跨科國考逐選項解題",
+    "subtitle": "111–115 年小兒科、心外、麻醉：心雜音、先天分流、瓣膜介入、缺氧性發作",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環・官方真題",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "kind": "exam_compilation",
+    "references": "xiaoma-exam-heart-sounds-cross-specialty-sources.html",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "112 年第二次・醫學（四）Q6｜Innocent murmur 還是病理性雜音？",
+        "focus": "Innocent murmur 還是病理性雜音？",
+        "topic": "Innocent murmur 還是病理性雜音？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "question_heading": "114 年第二次・醫學（四）Q7｜把 murmurs 的實際聲源配回去",
+        "focus": "把 murmurs 的實際聲源配回去",
+        "topic": "把 murmurs 的實際聲源配回去"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 10,
+        "question_heading": "115 年第二次・醫學（四）Q10｜ASD 的三種「聽得到」到底是哪裡發聲？",
+        "focus": "ASD 的三種「聽得到」到底是哪裡發聲？",
+        "topic": "ASD 的三種「聽得到」到底是哪裡發聲？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "115 年第一次・醫學（四）Q6｜哪些異常血管連接會造成連續雜音？",
+        "focus": "哪些異常血管連接會造成連續雜音？",
+        "topic": "哪些異常血管連接會造成連續雜音？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 2,
+        "question_heading": "111 年第二次・醫學（五）Q2｜心音低沉能不能區分張力性氣胸與心包膜積血？",
+        "focus": "心音低沉能不能區分張力性氣胸與心包膜積血？",
+        "topic": "心音低沉能不能區分張力性氣胸與心包膜積血？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "question_heading": "111 年第一次・醫學（六）Q6｜Bernoulli 壓差不是把速度乘四",
+        "focus": "Bernoulli 壓差不是把速度乘四",
+        "topic": "Bernoulli 壓差不是把速度乘四"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "question_heading": "114 年第二次・醫學（六）Q6｜一個 AVA 0.9 能否決定延後非心臟手術？",
+        "focus": "一個 AVA 0.9 能否決定延後非心臟手術？",
+        "topic": "一個 AVA 0.9 能否決定延後非心臟手術？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "question_heading": "111 年第二次・醫學（五）Q20｜AS 置換的「症狀、EF、同台 CABG」三種情境",
+        "focus": "AS 置換的「症狀、EF、同台 CABG」三種情境",
+        "topic": "AS 置換的「症狀、EF、同台 CABG」三種情境"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "111 年第二次・醫學（五）Q23｜為何「都可以經導管換瓣」不是 2022 年的標準答案？",
+        "focus": "為何「都可以經導管換瓣」不是 2022 年的標準答案？",
+        "topic": "為何「都可以經導管換瓣」不是 2022 年的標準答案？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 7,
+        "question_heading": "111 年第二次・醫學（六）Q7｜TEE 能看見什麼，不能看見什麼？",
+        "focus": "TEE 能看見什麼，不能看見什麼？",
+        "topic": "TEE 能看見什麼，不能看見什麼？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 33,
+        "question_heading": "111 年第一次・醫學（四）Q33｜PAPVR 為什麼和 ASD 同一類血流負擔？",
+        "focus": "PAPVR 為什麼和 ASD 同一類血流負擔？",
+        "topic": "PAPVR 為什麼和 ASD 同一類血流負擔？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "113 年第二次・醫學（四）Q6｜三個月體重不增，四種缺損哪個最不可能？",
+        "focus": "三個月體重不增，四種缺損哪個最不可能？",
+        "topic": "三個月體重不增，四種缺損哪個最不可能？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 12,
+        "question_heading": "115 年第二次・醫學（四）Q12｜VSD 病童：不要只看心跳呼吸，體重是時間序列",
+        "focus": "VSD 病童：不要只看心跳呼吸，體重是時間序列",
+        "topic": "VSD 病童：不要只看心跳呼吸，體重是時間序列"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "112 年第二次・醫學（五）Q23｜ASD 的介入何時反而危險？",
+        "focus": "ASD 的介入何時反而危險？",
+        "topic": "ASD 的介入何時反而危險？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 9,
+        "question_heading": "115 年第二次・醫學（五）Q9｜Eisenmenger：為何不能再把洞封起來？",
+        "focus": "Eisenmenger：為何不能再把洞封起來？",
+        "topic": "Eisenmenger：為何不能再把洞封起來？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 31,
+        "question_heading": "111 年第一次・醫學（四）Q31｜TOF 為何幾個月大才更發紺？",
+        "focus": "TOF 為何幾個月大才更發紺？",
+        "topic": "TOF 為何幾個月大才更發紺？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 32,
+        "question_heading": "111 年第一次・醫學（四）Q32｜出生第二天無明顯症狀卻血氧偏低，何時想到 TGA？",
+        "focus": "出生第二天無明顯症狀卻血氧偏低，何時想到 TGA？",
+        "topic": "出生第二天無明顯症狀卻血氧偏低，何時想到 TGA？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 30,
+        "question_heading": "111 年第一次・醫學（五）Q30｜哪一種發紺無法靠 PGE₁ 暫時緩解？",
+        "focus": "哪一種發紺無法靠 PGE₁ 暫時緩解？",
+        "topic": "哪一種發紺無法靠 PGE₁ 暫時緩解？"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "112 年第一次・醫學（四）Q8｜TOF 的 hypercyanotic spell，為何不能給 β₂ agonist？",
+        "focus": "TOF 的 hypercyanotic spell，為何不能給 β₂ agonist？",
+        "topic": "TOF 的 hypercyanotic spell，為何不能給 β₂ agonist？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "question_heading": "113 年第一次・醫學（四）Q7｜PGE₁ 無助於哪種阻塞？",
+        "focus": "PGE₁ 無助於哪種阻塞？",
+        "topic": "PGE₁ 無助於哪種阻塞？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "113 年第一次・醫學（四）Q8｜上下肢血氧差 10%：先判斷導管與主動脈位置",
+        "focus": "上下肢血氧差 10%：先判斷導管與主動脈位置",
+        "topic": "上下肢血氧差 10%：先判斷導管與主動脈位置"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "112 年第二次・醫學（四）Q8｜發紺合併肺充血：更正答案優先於原始答案欄",
+        "focus": "發紺合併肺充血：更正答案優先於原始答案欄",
+        "topic": "發紺合併肺充血：更正答案優先於原始答案欄"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 22,
+        "question_heading": "114 年第二次・醫學（五）Q22｜急性 TOF spell 為何「給血管擴張劑」最不合適？",
+        "focus": "急性 TOF spell 為何「給血管擴張劑」最不合適？",
+        "topic": "急性 TOF spell 為何「給血管擴張劑」最不合適？"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "112 年第一次・醫學（五）Q24｜哪個 VSD 最容易牽動主動脈瓣？",
+        "focus": "哪個 VSD 最容易牽動主動脈瓣？",
+        "topic": "哪個 VSD 最容易牽動主動脈瓣？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 32,
+        "question_heading": "111 年第二次・醫學（四）Q32｜Noonan 與 Williams 的狹窄位置有何差別？",
+        "focus": "Noonan 與 Williams 的狹窄位置有何差別？",
+        "topic": "Noonan 與 Williams 的狹窄位置有何差別？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 11,
+        "question_heading": "115 年第二次・醫學（四）Q11｜Supravalvular AS + peripheral PS 指向哪個 syndrome？",
+        "focus": "Supravalvular AS + peripheral PS 指向哪個 syndrome？",
+        "topic": "Supravalvular AS + peripheral PS 指向哪個 syndrome？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 11,
+        "question_heading": "115 年第一次・醫學（四）Q11｜手臂高血壓、股動脈摸不到不是「主動脈瓣狹窄」",
+        "focus": "手臂高血壓、股動脈摸不到不是「主動脈瓣狹窄」",
+        "topic": "手臂高血壓、股動脈摸不到不是「主動脈瓣狹窄」"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "112 年第二次・醫學（五）Q24｜8 個月重度 AS，為何不先植入機械瓣？",
+        "focus": "8 個月重度 AS，為何不先植入機械瓣？",
+        "topic": "8 個月重度 AS，為何不先植入機械瓣？"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 26,
+        "question_heading": "111 年第一次・醫學（五）Q26｜機械瓣 vs 生物瓣：最明顯錯在哪？",
+        "focus": "機械瓣 vs 生物瓣：最明顯錯在哪？",
+        "topic": "機械瓣 vs 生物瓣：最明顯錯在哪？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "113 年第一次・醫學（五）Q23｜Ross 術式的適用族群",
+        "focus": "Ross 術式的適用族群",
+        "topic": "Ross 術式的適用族群"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "113 年第一次・醫學（五）Q24｜一日齡 simple TGA，為何不能停 PGE₁ 等兩週？",
+        "focus": "一日齡 simple TGA，為何不能停 PGE₁ 等兩週？",
+        "topic": "一日齡 simple TGA，為何不能停 PGE₁ 等兩週？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 19,
+        "question_heading": "113 年第二次・醫學（五）Q19｜MR 不會變成 pan-diastolic murmur",
+        "focus": "MR 不會變成 pan-diastolic murmur",
+        "topic": "MR 不會變成 pan-diastolic murmur"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "113 年第二次・醫學（五）Q23｜Complete AVSD：手術後也可能留瓣膜問題",
+        "focus": "Complete AVSD：手術後也可能留瓣膜問題",
+        "topic": "Complete AVSD：手術後也可能留瓣膜問題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 4,
+        "question_heading": "115 年第一次・醫學（五）Q4｜腱索斷裂算哪一型 Carpentier dysfunction？",
+        "focus": "腱索斷裂算哪一型 Carpentier dysfunction？",
+        "topic": "腱索斷裂算哪一型 Carpentier dysfunction？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "question_heading": "114 年第一次・醫學（五）Q20｜MI 後機械性併發症排除題",
+        "focus": "MI 後機械性併發症排除題",
+        "topic": "MI 後機械性併發症排除題"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "question_heading": "113 年第一次・醫學（五）Q20｜左房黏液瘤：良性不代表可以只抗凝",
+        "focus": "左房黏液瘤：良性不代表可以只抗凝",
+        "topic": "左房黏液瘤：良性不代表可以只抗凝"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "114 年第二次・醫學（五）Q23｜BAV 與升主動脈瘤：不要套下降主動脈支架邏輯",
+        "focus": "BAV 與升主動脈瘤：不要套下降主動脈支架邏輯",
+        "topic": "BAV 與升主動脈瘤：不要套下降主動脈支架邏輯"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 46,
+        "question_heading": "111 年第二次・醫學（四）Q46｜IE 的栓塞與 AF／機械瓣血栓不同",
+        "focus": "IE 的栓塞與 AF／機械瓣血栓不同",
+        "topic": "IE 的栓塞與 AF／機械瓣血栓不同"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "113 年第一次・醫學（四）Q6｜先天心臟病＝所有牙科操作都要 IE prophylaxis？",
+        "focus": "先天心臟病＝所有牙科操作都要 IE prophylaxis？",
+        "topic": "先天心臟病＝所有牙科操作都要 IE prophylaxis？"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "112 年第一次・醫學（四）Q6｜先天心臟病是否 90% 出生一月內都會診斷？",
+        "focus": "先天心臟病是否 90% 出生一月內都會診斷？",
+        "topic": "先天心臟病是否 90% 出生一月內都會診斷？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 5,
+        "question_heading": "113 年第二次・醫學（四）Q5｜母體糖尿病與新生兒中隔肥厚：不一定是 HCM 遺傳病",
+        "focus": "母體糖尿病與新生兒中隔肥厚：不一定是 HCM 遺傳病",
+        "topic": "母體糖尿病與新生兒中隔肥厚：不一定是 HCM 遺傳病"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "114 年第一次・醫學（四）Q8｜出生前就可能心衰的瓣膜逆流",
+        "focus": "出生前就可能心衰的瓣膜逆流",
+        "topic": "出生前就可能心衰的瓣膜逆流"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 5,
+        "question_heading": "114 年第二次・醫學（四）Q5｜早產兒 PDA：PGE₁ 不是閉合藥",
+        "focus": "早產兒 PDA：PGE₁ 不是閉合藥",
+        "topic": "早產兒 PDA：PGE₁ 不是閉合藥"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "114 年第二次・醫學（四）Q8｜MVP 是否是兒童猝死主要原因？",
+        "focus": "MVP 是否是兒童猝死主要原因？",
+        "topic": "MVP 是否是兒童猝死主要原因？"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 21,
+        "question_heading": "114 年第二次・醫學（五）Q21｜MS + AF 為何造成急性下肢缺血？",
+        "focus": "MS + AF 為何造成急性下肢缺血？",
+        "topic": "MS + AF 為何造成急性下肢缺血？"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "113 年第二次・醫學（五）Q24｜建立心肺機體外循環時，哪條血管不是常規引流位置？",
+        "focus": "建立心肺機體外循環時，哪條血管不是常規引流位置？",
+        "topic": "建立心肺機體外循環時，哪條血管不是常規引流位置？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-sources.md",
+    "output": "xiaoma-exam-heart-sounds-cross-specialty-sources.html",
+    "title": "跨科心音與結構心臟病真題：考選部原卷來源",
+    "subtitle": "111–115 年醫學（四）至（六）46 題與更正公告、3 道待核附圖",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
