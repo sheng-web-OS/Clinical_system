@@ -38,3 +38,11 @@
 - ECG 必要波形尚未有新的**同時完成原圖目視、正式題號／答案核對、影像公開合法性**的官方題，因此本次不假造一題作為已收錄的 ECG 真題。網站來源圖的補救仍需另行完成。
 
 **工作邊界：** 上述為可由 CI 測試的官方題目**出版候選**與循環閱讀，並非已對 33 節原課完成圖像、臨床、互動或公開可讀驗收；在 PR #123 Draft 狀態不自動發布。
+
+### 115（二）三題連續 STEMI 病例（最新增量）
+
+- [x] 考選部 115 年第二次醫學（三）[原卷 Q11–13](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q#page=3) 與[更正答案公告](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M#page=1)對讀：**11 B、12 C、13 D**，均未更正。
+- [x] 三題為同一 STEMI 病程：前壁 STE、急診 nitrates 與不可延誤的再灌流 → LAD PCI 後 LV thrombus／VT/VF／藥物風險 → 缺血 mechanical／ECG／cTn 不同步。完整正文為 `content/xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md`。
+- [x] 2025 ACC/AHA ACS §4.1–4.2 氧療、NTG、aspirin loading；§9.2 VT/VF，及 2022 AHA LV thrombus 科學聲明交叉查核。來源頁 `content/xiaoma-internal-medicine/acs-exam-sources.md`。
+- [x] 既有 `related_exams` 自動映射年度題庫到 ACS 01／02／03／04 章節，現在共**六道本次新增（113 Q6、114 Q6/Q9、115 Q11/Q12/Q13）＋一題舊 108 Q76**；沒有增加另一張考題表。
+- [ ] 渲染後所有題目的 `#q-XX` anchor、手機閱讀與 Cloudflare preview 須由最新 CI／HTTP 證據確認；不將未驗證之新頁稱正式已上線。
