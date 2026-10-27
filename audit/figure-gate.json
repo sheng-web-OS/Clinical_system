@@ -722,6 +722,33 @@
         }
       ]
     },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-pe-normotensive-shock.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pe-normotensive-shock-sources.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "AI_private_original_Pocket_pp99_100_pixel_review_and_official_NICE_AHA_original_PDF_visual_read_not_human_peer_review",
+      "rights_decision": "Pocket 9E original copyright art not reproduced; public reader links to independently verified NICE PE diagnosis original and AHA/ACC 2026 clinical severity categories original PDFs",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E reader PDF p99 Figure 2-3 Approach to suspected PE; original pixels privately viewed in second Library PDF copy. NICE NG158 suspected PE official visual summary, page 2.",
+          "source_token": "Figure 2-3",
+          "mode": "source_link",
+          "url": "https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf",
+          "why_link_instead": "The complete original NICE PE diagnostic chart is available at the linked PDF, while the copyrighted Pocket 9E artwork was checked privately but is not reproduced without accepted public reuse rights. The existing VTE lesson supplies readable site-native branches.",
+          "teaching_role": "Preserve the original PE diagnostic-test stop/continue branches and conditional additional imaging after a negative CTA when clinical probability remains high; distinguish those diagnostic conditions from circulatory rescue urgency.",
+          "scope_limit": "NICE two-level PE Wells and Pocket 9E Figure 2-3 have different provenance; this linked diagram is not the Pocket original, and a high-risk or deteriorating patient cannot be forced into a stable diagnostic pathway."
+        },
+        {
+          "locator": "2026 AHA/ACC official Acute PE Clinical Categories Infographic PDF, single page, visually verified risk classes A-E, D1 transient hypotension, D2 normotensive shock, E1/E2, respiratory modifier R.",
+          "source_token": "Acute PE Clinical Categories",
+          "mode": "source_link",
+          "url": "https://professional.heart.org/en/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Categories-Figure-Inforgraphic.pdf?sc_lang=en",
+          "why_link_instead": "The original graphic is copyright protected by AHA/ACC and is linked in an authoritative official single-page PDF for enlargement, without embedding or representing it as a Pocket Medicine figure.",
+          "teaching_role": "Visually separates normotensive shock D2 from transient hypotension D1 and persistent/refractory circulatory failure E, preventing normal blood pressure from falsely reassuring clinicians and keeping diagnosis distinct from severity.",
+          "scope_limit": "These are clinical risk and site-of-care categories after integrating several clinical variables, not a diagnostic rule for confirming PE or an automatic thrombolytic prescription; no exact D subtype assigned to the presumed PE case solely from lactate."
+        }
+      ]
+    },
     "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md": {
       "status": "represented",
       "source_review": "content/xiaoma-internal-medicine/cticu-oxygen-delivery-sources.md",

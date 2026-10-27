@@ -222,7 +222,7 @@ def main():
         if not source_image.is_file():
             raise FileNotFoundError("Reviewed source figure missing: " + str(source_image))
         shutil.copyfile(source_image, DIST / image_name)
-    # Bundle the locally authored oxygen-delivery SVG at its flat HTML-relative URL.
+    # Bundle reviewed CTICU SVG alongside its generated flat reader route.
     if any(page["output"] == "xiaoma-20261027-cticu-oxygen-delivery.html" for page in PAGES):
         oxygen_figure = BASE / "content/xiaoma-internal-medicine/lessons/cticu-oxygen-delivery-two-paths.svg"
         if not oxygen_figure.is_file():
