@@ -135,7 +135,7 @@
 
 **為什麼選 C？** 生產後大量出血可能造成 **Sheehan syndrome（缺血性腦下垂體損傷）**，遺留 ACTH 缺乏與**次發性腎上腺功能不足**。在感染壓力下，所需 cortisol 增加，卻不能適當供應，可能發生低血壓、低血鈉與意識改變。當病人已是高度疑似 adrenal crisis，不適合為了完成 ACTH stimulation test 或等 8 AM 生理時點，延誤立即需要的 stress-dose glucocorticoids。**可以不延誤地抽血就抽；若抽血本身會延誤治療，應先救治。**
 
-**為什麼它屬於 Sepsis 系列？** 病人可能真的有泌尿道感染，**卻不表示目前全部休克都來自 Sepsis 的 vasoplegia**。腎上腺危象可能由感染誘發，與 Sepsis 共存，且需要不同的關鍵介入。此題也要區分兩種同名藥物情境：SSC 2026 對 refractory septic shock 的 hydrocortisone 是**敗血性休克輔助治療**；adrenal crisis 則是缺乏必要 glucocorticoids 的**立即替代治療**，不是同一個診斷或治療理由。連回 [Sepsis 第十三與十五章：休克持續的鑑別和類固醇](../../clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md)。
+**為什麼它屬於 Sepsis 系列？** 病人可能真的有泌尿道感染，**卻不表示目前全部休克都來自 Sepsis 的 vasoplegia**。腎上腺危象可能由感染誘發，與 Sepsis 共存，且需要不同的關鍵介入。此題也要區分兩種同名藥物情境：Surviving Sepsis Campaign（SSC）2026 對 refractory septic shock 的 hydrocortisone 是**敗血性休克輔助治療**；adrenal crisis 則是缺乏必要 glucocorticoids 的**立即替代治療**，不是同一個診斷或治療理由。連回 [Sepsis 第十三與十五章：休克持續的鑑別和類固醇](../../clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md)。
 
 **遷移題：** 如果抽血結果尚未知、病人仍嚴重不穩定而高度疑似 adrenal crisis，是否應為了較完美的診斷準確率而等待？不應。先採可快速取得的關鍵檢體，但不能延誤救命治療。
 
