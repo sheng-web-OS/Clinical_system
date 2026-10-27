@@ -1,0 +1,90 @@
+# 找到腹瀉的類型，為什麼仍然沒有找到病因？
+
+2026.07.21 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。作者在對話提供的原稿保留於 私人 source snapshot（私有原稿封存），並非已比對的 Facebook canonical 版本。
+
+慢性腹瀉（一般指超過四週）可以先用 watery、fatty、inflammatory 等表型整理。Pocket Medicine 9E 在同一頁列出 osmotic、secretory、functional、malabsorption、maldigestion 與 inflammatory。將這六個名詞背起來，卻可能產生一種危險的錯覺：既然知道病人屬於某一「類」，就應該可以直接找出某一疾病。
+
+然而 Figure 3-2 的流程不是六種病因分類的單純並排。它先以 **fecal fat 和 inflammatory markers** 判斷有哪些訊號已足以改變評估方向，才在部分 watery diarrhea 的情境中考慮 stool osmotic gap。這是**資訊取得的優先順序**，不是每個病人由 watery 逐步進展成 inflammatory 的病程圖。
+
+## Q0｜先定義正在量的東西
+
+腹瀉可以來自腸腔中的滲透性粒子、水與電解質主動運輸、黏膜受傷與免疫發炎、脂肪消化吸收障礙、腸道運動以及多種機轉重疊。病人帶來的是排便次數、含水量、夜間發作、禁食反應、體重下降、出血、油脂便、藥物與手術史；糞便檢驗是從這些現象中選擇更有辨識力的訊號。
+
+**機轉是對腸道發生何事的描述，不是病原體名稱，也不是器官定位完成。** 「脂肪便」無法單獨分清 pancreatic enzyme deficiency、膽酸供應不足和 small intestinal mucosal disease；「inflammation」也不能只靠 fecal calprotectin 命名為 IBD。病人可能同時有 bile acid diarrhea 和 microscopic colitis，或新藥引起的水瀉與原有功能性症狀。
+
+## Q1｜Figure 3-2 為什麼先看兩種訊號，才算 osmotic gap？
+
+如果先用 stool osmotic gap 把所有病人排成 osmotic／secretory，會讓有 alarm features、感染風險、發炎、脂肪吸收障礙者在不必要的第一步停留。從病史就應先注意發燒、血便、貧血、體重減輕、夜間症狀、家族性大腸癌或 IBD、免疫低下與用藥；這些會調整前測機率與檢查急迫性，不能由某個 stool marker 取代。
+
+<figure id="fig-diarrhea-evidence-sequence" class="reasoning-figure">
+<div class="reasoning-title">原創圖 1｜訊號的分流順序，以及每一項結果不能取代的問題</div>
+<table aria-label="慢性腹瀉訊號到後續檢查的分層決策" class="release-matrix">
+<thead><tr><th scope="col">先辨認的訊號</th><th scope="col">改變的假說</th><th scope="col">有增量的下一步</th><th scope="col">不能推論</th></tr></thead>
+<tbody>
+<tr><th scope="row">血便／貧血／體重下降／發燒等 alarm 或風險線索</th><td data-label="改變的假說">需要優先排查器質性、發炎性、惡性或感染性原因</td><td data-label="有增量的下一步">依病況考慮檢驗、內視鏡與必要影像；不等待 osmotic gap</td><td data-label="不能推論">單一陰性糞便指標就能放心排除器質性病變</td></tr>
+<tr><th scope="row">明顯 fecal fat／steatorrhea 表現</th><td data-label="改變的假說">營養吸收／消化障礙機率提高</td><td data-label="有增量的下一步">依臨床線索評估 celiac、pancreatic insufficiency、bile acid availability 等</td><td data-label="不能推論">「脂肪陽性＝胰臟外分泌不足」</td></tr>
+<tr><th scope="row">Inflammatory signals／合宜的 calprotectin、lactoferrin</th><td data-label="改變的假說">發炎性腸病或部分黏膜病變機率調整</td><td data-label="有增量的下一步">依風險評估感染、IBD、內視鏡與 biopsies</td><td data-label="不能推論">陰性 calprotectin 排除 microscopic colitis</td></tr>
+<tr><th scope="row">水瀉仍未定位、無上述主導訊號</th><td data-label="改變的假說">才考慮 osmotic／secretory physiology</td><td data-label="有增量的下一步">綜合禁食、夜間症狀、藥物與選擇性 stool electrolyte testing</td><td data-label="不能推論">某個 gap cutoff 就等於 IBS-D 或特定腫瘤</td></tr>
+</tbody></table>
+<figcaption>自行設計的「優先證據→推論邊界」矩陣，而非重製 Pocket Medicine Figure 3-2。對讀 9E Library PDF pp.124–126：圖題在 p.125 頁末，**實際流程圖在 p.126**。此表非僵化醫囑順序，危急情境需先處置。</figcaption>
+</figure>
+
+這個模型的診斷價值，是每一條分支都具有不同的「資訊優先權」。沒有 alarm signs 的慢性水瀉患者，不一定人人需要 CT、colonoscopy 等大量檢查；但對有不尋常症狀或異常結果者，也不能因符合 Rome symptom criteria 就直接停在 functional diagnosis。[1][2]
+
+## Q2｜Stool osmotic gap 是測量、模型，還是診斷？
+
+常用估計式為：
+
+\[
+\mathrm{stool\ osmotic\ gap}=290-2([Na^+]_{stool}+[K^+]_{stool})
+\]
+
+它是假設糞便腔內水相近似等滲，再扣除主要已量得的電解質對滲透壓的貢獻；**290 不是每份糞便直接測到的值**。檢體延遲保存、細菌發酵、污染或採樣情境都可能改變解釋力。它不是用來單獨確診「functional」的檢驗。
+
+Pocket Medicine 9E Figure 3-2 用 **<100 與 ≥100 mOsm/kg** 作教學分支。然而方法學文獻常用 **<50** 較支持 secretory，**>100–125** 較支持 osmotic，介於其間不確定性較大，且其在現代慢性水瀉診斷中的增量並非每個情境都已良好驗證。[3] 不能在整合教材中把「原書粗略 cut point」悄悄改裝成絕對法則，也不能省略其方法學限制。
+
+<figure id="fig-diarrhea-gap-interpretation" class="reasoning-figure">
+<div class="reasoning-title">原創圖 2｜只改變 stool Na＋K，未量測滲透物的估計值如何移動？</div>
+<p>採用近似生理假設的糞便水相 osmolality <strong>290 mOsm/kg</strong>，下面三筆是<strong>刻意構造的算式練習，不是真實個案或測得糞便滲透壓</strong>。讀圖前先自己算一次：<strong>290 − 2 ×（Na＋K）</strong>。</p>
+<div class="osm-gap-scale" aria-hidden="true"><span>0</span><span>50</span><span>100</span><span>150</span></div>
+<div class="osm-gap-case">
+<div class="osm-gap-case-head"><strong>例 A：Na 90＋K 50 mmol/L</strong><b>gap 10</b></div>
+<div class="osm-gap-meter" role="img" aria-label="估計 osmotic gap 10 mOsm/kg，相較 0 至 150 數軸位於極低位置"><span style="width:6.67%"></span></div>
+<p>290 − 2 × 140 ＝ <strong>10</strong>；在適當情境較支持 secretory physiology，但不能確診特定病因。</p>
+</div>
+<div class="osm-gap-case">
+<div class="osm-gap-case-head"><strong>例 B：Na 60＋K 55 mmol/L</strong><b>gap 60</b></div>
+<div class="osm-gap-meter" role="img" aria-label="估計 osmotic gap 60 mOsm/kg，位於灰區"><span style="width:40%"></span></div>
+<p>290 − 2 × 115 ＝ <strong>60</strong>；灰區。若強迫將 60 直接命名為 secretory disease，就超出了模型的解釋力。</p>
+</div>
+<div class="osm-gap-case">
+<div class="osm-gap-case-head"><strong>例 C：Na 40＋K 40 mmol/L</strong><b>gap 130</b></div>
+<div class="osm-gap-meter" role="img" aria-label="估計 osmotic gap 130 mOsm/kg，相較 0 至 150 數軸位於較高位置"><span style="width:86.67%"></span></div>
+<p>290 − 2 × 80 ＝ <strong>130</strong>；在適當情境較支持 osmotic physiology，但還需查飲食、藥物與禁食反應。</p>
+</div>
+<p><strong>最容易誤讀的地方：</strong>原書 Figure 3-2 採 &lt;100／≥100 教學分支；方法學文獻常以 &lt;50、&gt;100–125 作較明顯的支持線索。這些值不是病原或 IBS-D 的確診閾值；檢體保存與多機轉共存也會改變結果。</p>
+<figcaption>三個數值為合成示範，依 Pocket Medicine 9E Figure 3-2、Sweetser 2012 及 Camilleri 2017 公式與限制自行繪製；長條只表示算得的 gap，完全不表示病因機率。<a href="../chronic-diarrhea-sources-20261027.md">原圖與方法學來源</a>。</figcaption>
+</figure>
+
+## Q3｜哪一項陰性結果不允許你停止？
+
+**Calprotectin 正常不排除 microscopic colitis**。此病的 colonoscopy 肉眼可近乎正常，但病理檢查見 lymphocytic 或 collagenous colitis；對相應的慢性水瀉情境，依 BSG 指引可在左右側結腸取得 biopsies。[2] 反過來，calprotectin 升高本身也不是 IBD 的最後確診。
+
+同理，病人若曾切除 terminal ileum，膽酸吸收減少可能使更多膽酸進入大腸、刺激水與電解質分泌；但若 ileal disease 範圍廣、整個 bile acid pool 變得不足，亦可造成脂肪消化吸收障礙。**同一解剖位置的疾病，可以因失去的生理功能不同而同時改變分泌與脂肪吸收。**
+
+診斷流程不是要在第一次分型後永遠留在某個欄位，而是根據新的檢查、病史和反例**重估**。這也是為什麼「找到腹瀉類型」和「找到腹瀉病因」之間仍有一段不能省略的推理。
+
+
+[回讀原書圖表、指南與適用界線](../chronic-diarrhea-sources-20261027.md)
+
+---
+
+### 來源與驗收身分
+
+[1] [AGA 2019 laboratory evaluation of functional diarrhea and IBS-D](https://gastro.org/clinical-guidance/laboratory-evaluation-of-functional-diarrhea-and-diarrhea-predominant-irritable-bowel-syndrome-in-adults-ibs-d/)；其指引適用條件不包括所有 alarm cases。  
+[2] [BSG 2018 guideline (3rd ed.) chronic diarrhoea](https://pmc.ncbi.nlm.nih.gov/articles/PMC6204957/)，特別是 microscopic colitis、bile acid diarrhoea 和定向診斷。  
+[3] [Sweetser 2012 case-based review](https://pmc.ncbi.nlm.nih.gov/articles/PMC3538472/)；[Camilleri et al. 2017 pathophysiology/review](https://pmc.ncbi.nlm.nih.gov/articles/PMC5285476/)；方法學解讀須考慮來源年代與研究限制。  
+[4] Pocket Medicine 9E Figure 3-2，核對 Library PDF pp.124–126（viewer 頁碼；印刷頁及來源 hash 尚待確認）。  
+[5] [已有原書與醫學稽核](../chronic-diarrhea-sources-20261027.md)。
+
+**AI-integrated candidate / HOLD**：不存在已完成的獨立醫師審查或正式發布核准；沒有直接公開原書影像，也沒有把虛構比較當作真實病例。
