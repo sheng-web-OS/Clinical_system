@@ -711,3 +711,78 @@
  .article #af-two-exits .af-mobile-conduction svg{display:block;width:100%;min-width:0;max-width:410px;height:auto;margin:0 auto}
  .article #af-two-exits .diuretic-figure-head{padding:15px 13px 13px}
 }
+
+/* Candidate release matrices: preserve evidence/decision column comparisons on desktop,
+   but render each clinical scenario as a fully labelled reading unit on narrow screens.
+   This only affects tables intentionally annotated with .release-matrix. */
+.reading-prose .reasoning-figure table.release-matrix{
+  display:table;width:100%;max-width:100%;table-layout:auto;
+  border-collapse:collapse;overflow-wrap:anywhere;
+}
+.reading-prose .reasoning-figure table.release-matrix th,
+.reading-prose .reasoning-figure table.release-matrix td{
+  min-width:0;white-space:normal;vertical-align:top;line-height:1.65;
+  padding:.75rem .65rem;
+}
+@media (max-width: 680px){
+  .reading-prose .reasoning-figure{padding:.8rem;margin:1.4rem 0}
+  .reading-prose .reasoning-figure table.release-matrix{
+    display:block;overflow:visible;width:100%;font-size:.96rem;
+  }
+  .reading-prose .reasoning-figure table.release-matrix thead{
+    position:absolute!important;width:1px!important;height:1px!important;
+    padding:0!important;margin:-1px!important;overflow:hidden!important;
+    clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important;
+  }
+  .reading-prose .reasoning-figure table.release-matrix tbody,
+  .reading-prose .reasoning-figure table.release-matrix tr,
+  .reading-prose .reasoning-figure table.release-matrix th[scope="row"],
+  .reading-prose .reasoning-figure table.release-matrix td{
+    display:block;width:100%;box-sizing:border-box;max-width:100%;
+  }
+  .reading-prose .reasoning-figure table.release-matrix tr{
+    margin:0 0 .8rem;padding:.7rem .8rem;
+    border:1px solid var(--line,#d8dedb);border-radius:10px;
+    background:var(--surface,#fff);
+  }
+  .reading-prose .reasoning-figure table.release-matrix th[scope="row"]{
+    padding:0 0 .7rem;border:0;border-bottom:1px solid var(--line,#d8dedb);
+    background:transparent;font-weight:750;
+  }
+  .reading-prose .reasoning-figure table.release-matrix td{
+    padding:.7rem 0 0;border:0;background:transparent;
+  }
+  .reading-prose .reasoning-figure table.release-matrix td::before{
+    content:attr(data-label);display:block;font-size:.78rem;
+    font-weight:700;letter-spacing:.015em;color:var(--muted,#52646b);
+    margin:0 0 .15rem;
+  }
+}
+
+/* Cholestasis Q3 evidence-updating bedside pathway: patient sequence, not a
+   clinical decision table. True radiology is linked, not republished. */
+.reading-prose .chol-story-intro{font-size:.92rem;line-height:1.75;padding:.6rem .8rem;background:var(--surface,#fff);border-left:3px solid var(--brand,#356a8d);border-radius:4px;margin:0 0 1rem}
+.reading-prose .chol-story-flow{display:flex;flex-direction:column;gap:0;min-width:0;max-width:100%;margin:1rem 0}
+.reading-prose .chol-story-stage{border:1px solid var(--line,#d8dedb);border-left:5px solid var(--brand,#356a8d);border-radius:12px;background:var(--surface,#fff);padding:1rem 1.1rem;box-sizing:border-box;min-width:0}
+.reading-prose .chol-story-urgent{border-left-color:#a56724;background:var(--surface,#fff)}
+.reading-prose .chol-story-target{border-left-color:#397e67;background:var(--surface,#fff)}
+.reading-prose .chol-story-kicker{color:var(--muted,#52646b);font-size:.77rem;font-weight:800;letter-spacing:.035em;margin-bottom:.3rem}
+.reading-prose .chol-story-stage h4{font-size:1.1rem;line-height:1.35;margin:0 0 .55rem}
+.reading-prose .chol-story-stage p{font-size:.91rem;line-height:1.7;margin:.45rem 0;overflow-wrap:anywhere}
+.reading-prose .chol-story-stage .chol-story-action{padding-top:.65rem;margin-top:.7rem;border-top:1px solid var(--line,#d8dedb)}
+.reading-prose .chol-story-arrow{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0;margin:.1rem 0}
+.reading-prose .chol-story-arrow span{font-size:.78rem;font-weight:800;padding:.32rem .65rem;background:var(--brand-light,#edf3f5);border-radius:6px}
+.reading-prose .chol-story-arrow b{font-size:1.3rem;line-height:1.25;color:var(--muted,#52646b)}
+.reading-prose .chol-story-alternate{border:1px dashed var(--muted,#52646b);border-radius:8px;padding:.75rem .9rem;margin-top:.85rem;font-size:.88rem;line-height:1.7;background:var(--surface,#fff)}
+.reading-prose .chol-real-ct{display:grid;grid-template-columns:minmax(0,1fr) 2rem minmax(0,1fr);gap:.75rem;align-items:center;margin:1rem 0}
+.reading-prose .chol-real-ct section{min-width:0;border:1px solid var(--line,#d8dedb);background:var(--surface,#fff);padding:1rem;border-radius:10px;box-sizing:border-box}
+.reading-prose .chol-real-tag{font-size:.74rem;font-weight:750;display:block;color:var(--muted,#52646b);margin-bottom:.4rem}
+.reading-prose .chol-real-ct section>strong{display:block;font-size:1.04rem;line-height:1.45}
+.reading-prose .chol-real-ct section p{font-size:.86rem;line-height:1.7;margin:.55rem 0 0;overflow-wrap:anywhere}
+.reading-prose .chol-real-divider{text-align:center;font-weight:900;font-size:1.3rem;color:var(--muted,#52646b)}
+.reading-prose .chol-figure-link{font-size:.88rem;line-height:1.65;overflow-wrap:anywhere}
+@media(max-width:620px){
+ .reading-prose .chol-story-stage{padding:.8rem .75rem}
+ .reading-prose .chol-real-ct{grid-template-columns:minmax(0,1fr);gap:.35rem}
+ .reading-prose .chol-real-divider{font-size:1.1rem}
+}
