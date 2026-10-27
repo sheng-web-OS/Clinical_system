@@ -18,7 +18,7 @@ SECRET_PATTERNS = {
     "GitHub credential": re.compile(r"\b(?:github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z0-9]{30,})\b"),
     "OpenAI credential": re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{24,}\b"),
     "Slack credential": re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{20,}\b"),
-    "private key header": re.compile(r"-----BEGIN (?:OPENSSH|RSA|EC|DSA|ENCRYPTED )?PRIVATE KEY-----"),
+    "private key header": re.compile(r"-----BEGIN (?:(?:OPENSSH|RSA|EC|DSA|ENCRYPTED)\\s+)?PRIVATE KEY-----"),
     "API credential assignment": re.compile(
         r"\b(?:OPENAI_API_KEY|GITHUB_TOKEN|GH_TOKEN|CF_API_TOKEN|CLOUDFLARE_API_TOKEN)"
         r"\s*[:=]\s*[\"']?[A-Za-z0-9_-]{20,}\b", re.IGNORECASE
