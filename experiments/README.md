@@ -113,3 +113,7 @@
 | R09 同主題／相鄰期刊頁碼的兩篇研究圖片混淆 | 追原作者、DOI、圖號與原始 caption，並清楚記 original-image-verified 與 caption-only 的差別 | 把 Damman 2009 的 CVP–eGFR 圖錯認為 Mullens 2009 Figure 3；圖片命中當作原始圖審閱 |
 
 **嚴守邊界**：研究與功能迭代可以在私人 branch/PR 上自主進行；公開發布及高風險醫療結論依既有門檻。無驗證的假說永遠不能只靠措辭變成既定成果。
+
+## 七、PGY 心血管講義編輯校準（2026-10-23；開發回歸／非盲測）
+
+第三方講義的值班情境、分流、流程表、禁忌與復評設計，只作**編輯參考**；不取代小麻原稿的因果敘事、EPQC 與來源原圖核對。核對六個**已曝光的**開發案例（四個局部修訂、兩個 keep／boundary 對照），見 [PGY-CV 編輯試跑](pgy-cv-editorial-20261023/README.md) 與 [development cases](pgy-cv-editorial-20261023/development-cases.jsonl)。先前以「Blind／Heldout」命名的同組檔案已有答案曝光，**不得列入 E06 獨立盲測或聲稱新能力已驗證**。目前狀態 **Artifact + exploratory pilot / NOT VALIDATED / HOLD for publication**；未更動作者原稿或讀者網站。正式獨立比較必須另取未曝光題、三臂隔離上下文與獨立醫學審核。
