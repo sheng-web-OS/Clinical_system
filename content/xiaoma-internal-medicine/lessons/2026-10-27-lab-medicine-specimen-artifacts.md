@@ -84,7 +84,7 @@ CBC 通常用 EDTA 抗凝血。部分患者血小板在 EDTA 管中發生**體�
 
 [2] Kanjee Z, Lippi G, Freed JA. *Laboratory Artifacts in Clinical Medicine: A Review*. Mayo Clin Proc. 2026;101(10):1818–1836. PMID: 42134749. 本篇檢視 PubMed abstract 與可見的出版商重點，**未宣稱逐頁閱讀訂閱全文**。https://pubmed.ncbi.nlm.nih.gov/42134749/
 
-[3] *Diagnosis and management of acute hyperkalaemia*. BMJ, 2026；以及 UK Kidney Association 成人急性高血鉀處理（官方網頁提供 July 2026 updated PDF）。急救藥物劑量與算法未經本篇逐條原圖驗證，不在本文教固定劑量。https://www.bmj.com/content/394/bmj-2026-100287 ; https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0
+[3] *Diagnosis and management of acute hyperkalaemia*. BMJ, 2026；以及 UK Kidney Association 成人急性高血鉀處理（官方網頁提供 July 2026 updated PDF）。已目視核對 2026 July 原始 PDF 的第 7、14、15 頁（PDF zero-index 6、13、14），包括 15.3 偽性高血鉀 paired samples、16.2 ECG changes 時 calcium 的情境分流、16.3 insulin–glucose、17.1 與 17.2 重驗/血糖監測；**完整 Appendix 治療流程圖、院內適用藥物劑量仍未逐項驗收**，故本文不給固定劑量。https://www.bmj.com/content/394/bmj-2026-100287 ; https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0
 
 [4] Lippi et al. *Erroneous potassium results: preanalytical causes, detection, and corrective actions*. 2023，PubMed 摘要。https://pubmed.ncbi.nlm.nih.gov/37042478/
 
