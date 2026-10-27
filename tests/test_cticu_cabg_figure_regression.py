@@ -31,6 +31,15 @@ class CTICUCABGFigureRegressionTests(unittest.TestCase):
             r'<div aria-hidden="true"[^>]*>↓</div>',
         )
 
+    def test_figure_browser_qa_includes_375px_phone(self):
+        """All requested mobile widths must be exercised by the real browser job."""
+        workflow = (ROOT / ".github/workflows/pages.yml").read_text("utf-8")
+        self.assertIn(
+            "visual_qa_browser.py --changed-from origin/main --widths 360 375 390 1280",
+            workflow,
+            "375px phone viewport must not be silently skipped by CI",
+        )
+
     def test_distinguish_observation_from_inference(self):
         self.assertIn("血中乳酸濃度｜實測", self.figure)
         self.assertIn("中心靜脈血氧飽和度｜實測", self.figure)
