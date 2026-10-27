@@ -1,5 +1,872 @@
 {
   "schema_version": 1,
   "note": "Private per-paragraph review receipts keyed to exact Git blob SHA. Must be authored after a distinct EPQC assessment; scores are evidence-of-review, not proof of clinical truth or reader performance.",
-  "reviews": {}
+  "reviews": {
+    "content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md": {
+      "content_blob": "34065336f9a3c5bcf36662d7de606490725b62fd",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "clinical-os-hourly-automation:6adf8de52d4481918316f2e420c40b3b:turn10:2026-10-27T18:59:09+08:00",
+      "core_reader_question": "對感染造成器官功能障礙的患者，如何從真實病歷辨認感染來源、血流瓶頸與可解除的解剖阻塞，並在每個治療階段用可觀察證據修正復甦策略？",
+      "new_understanding": "透過Jin第一例的無典型尿路症狀、POCUS水腎、CT阻塞、NE與支架，讀者能分清感染源控制和循環支持；再以MAP/CO/DO2、PLR反應性與耐受性、CRT-PHR、ARDS/AKI及反事實去復甦建立時間性改判。",
+      "strongest_counterargument": "文章有大量重複概念的風險，特別是開頭四問、機轉圖、五項誤解與六道練習；逐段審視後其功能分別是即時臨床提問、因果機轉、常見誤推論回收與主動提取，若再增加相同清單則應退稿。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "fa83937794a09038c8-1": {
+          "role": "case_evidence",
+          "reader_gain": "以78歲男性非典型主訴、乳酸與腎損傷建立感染源不明的急症入口。",
+          "nonredundancy_reason": "刪去這個真實病程起點，後文POCUS與支架處置便失去可追溯的患者基準。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一位 78 歲男性因虛弱與咳嗽來到急診，沒有發燒、排尿痛或腹痛，血壓卻只有 96/70 mmHg，心跳 120/min。白血球 24,000/μL、lactate 6.6 mmol/L、pH 7.24、creatinine 4.8 mg/dL。這些數字告訴我們病人病得很重，卻沒有一個數字能",
+          "line_for_editor": 4
+        },
+        "377bbc9e22c2a4f9c8-1": {
+          "role": "orientation",
+          "reader_gain": "把抗生素與循環支持無法解除尿路阻塞的張力設為全篇主命題。",
+          "nonredundancy_reason": "前段只有病歷事實，此段首次提出各種治療究竟作用於哪個病理環節。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這名患者讓「Sepsis 要早點給抗生素」變成一個更精確的臨床疑問：若真正的感染來源仍被阻塞，補液和升壓劑究竟處理了哪個部分、又留下什麼沒解決？ 從這個問題往下走，才能理解為什麼 Sepsis 可以同時造成血管失張、器官低灌流、腎損傷與需要手術解除的感染來源。",
+          "line_for_editor": 6
+        },
+        "2f263744cb91a67453-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "先隔離Jin實測病歷與後續CRT、容量和心肌反事實，並標明證據層級。",
+          "nonredundancy_reason": "若省略這項身分界線，後續假設的監測結果可能被讀者誤認為病例觀察。",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文以這名可追溯的真實病例貫穿主線；後文為說明 fluid responsiveness、CRT、心肌功能或恢復期所提出的條件變化均是反事實教學情境，不冒稱原病例量測或治療結果。床邊生理脈絡對照 IBCC《Septic Shock》（2025）；臨床建議與證據等級以 Surviving S",
+          "line_for_editor": 8
+        },
+        "a531404cd3a24de42f-1": {
+          "role": "orientation",
+          "reader_gain": "要求第一眼並行確認感染、器官傷害、血流瓶頸與需解除的感染源。",
+          "nonredundancy_reason": "此段給的是急診當下的四個行動問題，不是下一段的機轉分類敘述。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣是「病人很虛弱、血壓偏低」，我們至少需要回答：（1）有沒有感染？（2）器官是否已受損？（3）血流為何不足？（4）感染源是否需要解除？ 四題要並行，不能等一題完全確診才救下一題。後面的每項檢查與處置都必須交代它回答了哪一題、還不能回答什麼。",
+          "line_for_editor": 12
+        },
+        "8f9403f8e43334986f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將床邊四問展開成來源、宿主反應、循環機轉與時間回饋的治療模型。",
+          "nonredundancy_reason": "它補上隨病程重新評估的第四維度，並將來源問題連到抗菌藥及引流選擇。",
+          "verdict": "keep",
+          "excerpt_for_editor": "首先是感染來源（source）：到底是肺、泌尿道、膽道、腹腔，還是被忽略的血管導管？病原體與感染病灶會決定檢查、抗菌藥及是否需要引流。第二是宿主反應與器官傷害：感染導致免疫、內皮及凝血失調，讓肺、腎、腦、血液與循環失去正常功能。第三是血流動力學與組織灌流：低血壓可能主要是血管失張，也可能合",
+          "line_for_editor": 19
+        },
+        "1b0ba7b84597caeb6c-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制機轉圖為可能並行的因果支線，避免將MAP改善等同全身痊癒。",
+          "nonredundancy_reason": "圖像本身不會說明箭頭不是每人必經，此段阻止把示意圖讀成固定自然史。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是機轉關係圖，不是說每名患者都必經所有箭頭，也不是臨床療效預測。它要防止一個核心錯誤：血壓回升只是在循環那條支線出現改善，不代表感染灶已控制，更不等於器官功能已恢復。",
+          "line_for_editor": 41
+        },
+        "b1f6d0072b0b5d567d-1": {
+          "role": "case_evidence",
+          "reader_gain": "重建初診無尿路症狀、生命徵象異常與來源不明的診斷起點。",
+          "nonredundancy_reason": "開頭摘要沒有交代單腎、BPH、體溫及腹部陰性發現的鑑別價值。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一個時點：病人看起來像哪一種感染？ 這位 78 歲男性有單腎與良性攝護腺肥大病史，來急診是因全身虛弱與咳嗽。他否認發燒、排尿痛及腹痛；急診測得 HR 120/min、BP 96/70 mmHg、RR 25/min、直腸溫 37.8°C。腹部柔軟、沒有明顯壓痛。這些資訊構成「有危險循環異常",
+          "line_for_editor": 45
+        },
+        "9878f515b1bd0a6f9c-1": {
+          "role": "case_evidence",
+          "reader_gain": "說明POCUS由循環評估意外轉向左側水腎與阻塞感染假說。",
+          "nonredundancy_reason": "與初診不同，這段新增能實際改變CT和泌尿科會診方向的影像訊息。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二個時點：床邊超音波多發現了什麼？ 團隊開始經驗性抗生素及靜脈輸液，急診醫師以 POCUS 評估循環，看到下腔靜脈（inferior vena cava，IVC）擴張、心臟收縮看起來正常，腹部沒有游離液；掃描過程中卻看見左腎中度積水。心臟收縮尚可不是證明 cardiac output 一",
+          "line_for_editor": 47
+        },
+        "87adacd47394064c80-1": {
+          "role": "case_evidence",
+          "reader_gain": "把尿液、乳酸、肌酐與CT阻塞結石整合成器官傷害加可解除病灶。",
+          "nonredundancy_reason": "POCUS僅提出水腎假說，此段才補上實驗室與CT的互相支持及推論限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三個時點：CT 與實驗室資料把什麼連起來？ 病人 WBC 24,000/μL、lactate 6.6 mmol/L、pH 7.24、creatinine 4.8 mg/dL（文獻敘述基線腎功能正常），尿液檢查支持感染。CT 證實左側遠端輸尿管阻塞性結石、輸尿管擴張與腎積水。此時不只是高乳",
+          "line_for_editor": 49
+        },
+        "32e6632002144ea88f-1": {
+          "role": "case_evidence",
+          "reader_gain": "區分NE維持當下灌流壓與輸尿管支架解除上游阻塞的不同任務。",
+          "nonredundancy_reason": "前段確認診斷，這段新增介入順序、出院結果與缺乏serial CRT的證據邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第四個時點：為什麼還要升壓與緊急引流？ 在輸液後仍逐漸低血壓，團隊開始 norepinephrine，並緊急會診泌尿科；病人接受膀胱鏡與左輸尿管支架置放，持續靜脈抗生素，幾天後穩定出院。[7] NE 是支持當下循環壓力，支架則解除了感染持續存在的上游阻塞；兩者作用在不同病理環節，不能互相取",
+          "line_for_editor": 51
+        },
+        "c09bc599766a336bae-1": {
+          "role": "navigation",
+          "reader_gain": "從病例轉向定義、低灌流、監測與停液四條後續學習路徑。",
+          "nonredundancy_reason": "此處還提供原始圖說入口及水腎影像不能獨立證明全部休克機轉的限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個故事先留下四個問題：Sepsis 究竟如何定義？為什麼感染造成低灌流？血壓已經被提高但器官仍受傷時該看什麼？什麼情況下要停止補液或另找原因？後文依這些問題往下推導，不是把這名真實患者的病程任意延長。如要對照影像的實際證據角色和限制，可延伸閱讀病例原圖與來源解讀。原始腎超音波與 CT 圖",
+          "line_for_editor": 53
+        },
+        "6302b6443611f58733-1": {
+          "role": "definition",
+          "reader_gain": "將感染狀態與非特異性SIRS分開，防止以炎症徵象直接命名Sepsis。",
+          "nonredundancy_reason": "前面只有臨床危險線索，這段才建立非感染性胰臟炎等反例的定義邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Infection 是病原體引起的感染狀態。SIRS 是體溫、心率、呼吸、白血球等全身炎症反應的非特異組合；胰臟炎、手術、創傷也可以出現 SIRS。兩者常重疊，但互不等價。",
+          "line_for_editor": 57
+        },
+        "f0ffa7415b386f2900-1": {
+          "role": "definition",
+          "reader_gain": "以失調宿主反應和急性SOFA變化定義Sepsis，同時否定等分數才治療。",
+          "nonredundancy_reason": "與SIRS的辨析不同，此段把器官功能障礙接到治療時點而非單一發炎指標。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Sepsis 按 2016 Sepsis-3 定義，是宿主對感染的反應失調，引發危及生命的器官功能障礙。實務上「疑似／確定感染＋與感染相關的急性 SOFA 增加至少 2 分」是有用的操作性識別方式；但SOFA 分數不是治療許可證。當病人正在發生呼吸衰竭、休克或意識改變，不能等所有檢驗完成、",
+          "line_for_editor": 59
+        },
+        "d5fac710e5ee5feacb-1": {
+          "role": "definition",
+          "reader_gain": "逐一交代SOFA六個器官量測及慢性基線對急性判讀的影響。",
+          "nonredundancy_reason": "只知道SOFA增加兩分仍不會知道其測量內容，故此段不可由定義句替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "SOFA 的六個器官系統各在觀察不同損傷：呼吸看氧合；凝血看血小板；肝臟看 bilirubin；循環看 MAP 與升壓劑需求；中樞神經看 GCS；腎臟看 creatinine／尿量。它們幫助描述器官功能變化，不會告訴你是哪一隻菌，更不會區分此刻的低灌流是單純 vasoplegia，還是合併",
+          "line_for_editor": 61
+        },
+        "086b8b58d23dfb991f-1": {
+          "role": "definition",
+          "reader_gain": "明確區分Sepsis-3 septic shock研究識別條件與立即升壓的臨床時機。",
+          "nonredundancy_reason": "這是乳酸與升壓需求的聯合操作定義，不重述Sepsis本身的SOFA條件。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Septic shock 是 Sepsis 中循環、細胞與代謝異常更嚴重的群體。Sepsis-3 的常用操作條件為：經充分／適當容量復甦後，仍需升壓劑使 MAP 維持 ≥65 mmHg，而且 lactate >2 mmol/L。這個組合辨認預後較差的研究群體，不意味著：尚未測到乳酸便沒有休",
+          "line_for_editor": 63
+        },
+        "bea18b7a101572658a-1": {
+          "role": "definition",
+          "reader_gain": "辨別severe sepsis舊名、qSOFA高風險提示與2026篩檢工具選擇。",
+          "nonredundancy_reason": "若刪除，讀者容易把qSOFA陰性錯用為排除感染性器官障礙的依據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "舊式 severe sepsis 一詞在歷史文章仍會看到，並不是 Sepsis-3 獨立保留的現行階段名稱。qSOFA（呼吸率 ≥22/min、SBP ≤100 mmHg、意識異常）可在病床邊提示高風險，但敏感度不足以作單一篩檢或排除工具；SSC 2026 對急性病住院者建議以 NEWS／",
+          "line_for_editor": 65
+        },
+        "5c18b3e1edb87ec408-1": {
+          "role": "decision",
+          "reader_gain": "示範培養未回報仍須處理危險感染，同時保留非感染性休克修正能力。",
+          "nonredundancy_reason": "前文定義與篩檢是分類，本段將不確定性轉化成及時治療和重新診斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，即使像這位患者一樣尚未取得細菌培養結果，只要存在強烈疑似感染及急性器官功能障礙，也應立即當作重大感染風險處置；反過來，若後來顯示低血壓來自出血或心包壓迫，必須有能力修正最初診斷。",
+          "line_for_editor": 67
+        },
+        "cce3c9dea00b4489a1-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以PAMP、DAMP與辨識受體建立宿主免疫反應的起始機轉。",
+          "nonredundancy_reason": "這是從臨床定義走到內皮失能的必要分子中介，並非再列Sepsis症狀。",
+          "verdict": "keep",
+          "excerpt_for_editor": "細菌、病毒及真菌有可供免疫系統辨認的結構與成分，常統稱 PAMPs（病原體相關分子模式）；受傷的宿主細胞也釋出 DAMPs（損傷相關分子模式）。免疫細胞透過 pattern-recognition receptors（例如 TLR 家族）辨識這些訊號，啟動細胞激素、吞噬作用、補體與凝血反應",
+          "line_for_editor": 73
+        },
+        "8d1d8a4d217be9bad7-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋免疫反應的時間與空間失調及發炎和免疫抑制可以同時存在。",
+          "nonredundancy_reason": "它修正上一段正常免疫防禦的單向敘事，並連接IL-5國考辨識。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真正的難題出現在：這些反應的時間、位置、強度與終止機制失去協調。局部有益的血管擴張與白血球募集，若擴散成全身性內皮活化、通透性升高，原本保護性機制便可能犧牲健康器官的功能。Sepsis 不是只有「免疫風暴」一條路；同一患者可能同時有高發炎訊號與免疫麻痺，後續甚至容易發生院內感染。病程不必按",
+          "line_for_editor": 75
+        },
+        "41805bbdd294ac8f47-1": {
+          "role": "causal_bridge",
+          "reader_gain": "透過糖萼和內皮連結受損解釋血管內有效容量下降與間質水腫並存。",
+          "nonredundancy_reason": "只有說血管擴張無法解釋漏液，此段提供毛細血管屏障的獨立機轉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "正常血管內皮不只是水管內襯。內皮表面的 glycocalyx（糖萼）、細胞間連結、糖胺聚醣與局部調控因子參與維持血管通透性、白血球黏附及微血管功能。發炎與酵素反應損傷這套界面後，血漿液體更容易由血管內移到間質，造成capillary leak。這不是「血液憑空消失」，而是同樣的總液體分布在",
+          "line_for_editor": 79
+        },
+        "199ae99b2e95c422fc-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將NO與血管平滑肌反應改變接到vasoplegia及需要升壓的理由。",
+          "nonredundancy_reason": "它解釋低SVR而非前段的capillary leak，兩個不同病理瓶頸不可互換。",
+          "verdict": "keep",
+          "excerpt_for_editor": "血管平滑肌對交感神經與血管活性物質的反應也會改變。發炎介導的 NO 訊號、受體與離子通道改變可造成 vasoplegia：即使心輸出尚能維持，血管阻力也可能太低，血壓難以提供穩定的器官灌流壓。這解釋為什麼 septic shock 治療不只要「補回流失的水」，還要處理血管張力。[1,5]",
+          "line_for_editor": 81
+        },
+        "96f12eec3804f7a7ce-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用灌流過快與停滯的毛細血管反例說明微循環異質性及DIC非必然。",
+          "nonredundancy_reason": "前兩段只處理血管張力和滲漏，此段新增微血栓與分配不均的組織層次。",
+          "verdict": "keep",
+          "excerpt_for_editor": "內皮受損同時改變白血球與血小板附著、凝血—纖溶平衡，可出現異常微血栓與毛細血管灌流的空間不均。假設兩條毛細血管，一條灌流過快、另一條近乎停滯，整體流量可能沒有大幅下降，但後者所供應組織仍面臨缺氧與代謝失衡。這就是 microcirculatory heterogeneity。嚴重時可能發展",
+          "line_for_editor": 85
+        },
+        "3f80a3d5c2c9eacf25-1": {
+          "role": "causal_bridge",
+          "reader_gain": "連結粒線體與氧利用障礙，解釋MAP正常仍可能少尿且少尿不全是低灌流。",
+          "nonredundancy_reason": "微循環流量分配與細胞代謝是不同層級，此段阻止以MAP直接代替器官功能。",
+          "verdict": "keep",
+          "excerpt_for_editor": "接著還有細胞層次：粒線體功能、能量使用與氧利用可能因發炎與代謝重新分配而失調。這使宏觀循環（MAP、CO）與微循環／細胞功能可能脫鉤。量到 MAP 70 mmHg 不代表每個器官灌流都恢復，病人可以持續少尿或意識障礙；但也不能反過來把所有少尿都歸因於灌流不足，因為已發生的腎小管損傷也可能造",
+          "line_for_editor": 87
+        },
+        "697f1b2350030a8b52-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把分布性、有效容量不足、心肌抑制及右心負荷並列為混合休克成分。",
+          "nonredundancy_reason": "這段將前述機轉轉成可同時存在的床邊表型，避免將Sepsis視為單一血流型態。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Septic shock 的主導型態常是 distributive shock，但還可能同時有：因發燒、進食減少、腹瀉與血管滲漏造成的相對或絕對有效血量不足；因 sepsis-associated myocardial dysfunction 造成的前向心輸出下降；以及因急性呼吸窘迫症候群",
+          "line_for_editor": 91
+        },
+        "5c18853c0f7c1fbfe2-1": {
+          "role": "causal_bridge",
+          "reader_gain": "先交代CO及MAP-CVP與SVR關係，提供解釋壓力和流量差異的簡化模型。",
+          "nonredundancy_reason": "此前是定性血管機轉，此段才提供量測語言並限制公式不等於器官血流。",
+          "verdict": "keep",
+          "excerpt_for_editor": "現在才需要公式。心輸出 CO = HR × SV：心率 HR 和每搏輸出量 SV 相乘，決定每分鐘心臟向前送出多少血。若 Sepsis 中血管阻力（SVR）下降，可近似用 MAP − CVP ≈ CO × SVR 理解壓力關係。它是簡化的平均穩態模型，不是說測到 MAP、CVP 就能完整算",
+          "line_for_editor": 95
+        },
+        "8915e7ceef88e64607-1": {
+          "role": "counterfactual",
+          "reader_gain": "用高SVR低CO與低SVR高CO兩種表型反駁暖冷休克的固定時序。",
+          "nonredundancy_reason": "公式本身沒有顯示相同壓力可伴隨不同輸出，這段給出臨床遷移的對照。",
+          "verdict": "keep",
+          "excerpt_for_editor": "臨床上常先以 MAP 確保足夠動脈壓，但這不能省略心輸出。舉例說，SVR 很高、CO 很低的病人可能有不錯的 MAP，末梢卻冰冷；SVR 很低、CO 很高的患者則可能有溫暖四肢、寬脈壓，仍因低灌流壓和微循環異常而危險。暖休克與冷休克是生理表型，不是固定的早期／晚期階段診斷。",
+          "line_for_editor": 97
+        },
+        "8354700e6e046c8404-1": {
+          "role": "causal_bridge",
+          "reader_gain": "透過DO2等於CO乘動脈氧含量，拆開SpO2正常與組織氧送達充分。",
+          "nonredundancy_reason": "它新增血紅素與前向流量兩個變數，不是上一段的血壓阻力關係。",
+          "verdict": "keep",
+          "excerpt_for_editor": "氧送達量 DO₂ = CO × CaO₂，CaO₂ 是動脈血氧含量，主要與 hemoglobin、SaO₂ 相關。病人即使 SpO₂ 98%，若心輸出顯著減少或 Hb 很低，器官每分鐘實際取得的氧仍可能不足。反過來，氧送達改善也不能保證細胞代謝已完全正常。這是為什麼 SpO₂、MAP、CO",
+          "line_for_editor": 99
+        },
+        "3b6868fee866463184-1": {
+          "role": "causal_bridge",
+          "reader_gain": "引入高CVP與腹壓造成腎臟回流阻礙，預告晚期液體負擔的代價。",
+          "nonredundancy_reason": "前面聚焦動脈輸入與氧送達，此段補上靜脈出口和時間轉折。",
+          "verdict": "keep",
+          "excerpt_for_editor": "腎臟灌流還取決於血流出口能否排出。CVP 很高或腹內壓上升，可能減少腎臟有效的灌流壓差。因此脫離急性危險之後，持續補液所增加的靜脈鬱血，有時反而傷害腎功能。這也預告了為什麼 Sepsis 復甦會從最初補液轉向停止給液，最後需要時主動移除多餘液體。[1,2]",
+          "line_for_editor": 101
+        },
+        "a8c4aa2b32d5644f12-1": {
+          "role": "orientation",
+          "reader_gain": "把不明感染源診療拆成微生物識別與需解除解剖病灶的平行任務。",
+          "nonredundancy_reason": "回到Jin水腎的目的在於建立source control問題，並非重述初診病歷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到那名因咳嗽與虛弱入院、卻意外查到左腎積水的患者。臨床工作至少有兩條平行軸：一邊回答是否感染、可能哪類病原體，另一邊回答感染是否來自必須解除的解剖性病灶。",
+          "line_for_editor": 105
+        },
+        "fe279b358d13094d2c-1": {
+          "role": "decision",
+          "reader_gain": "對比肺炎影像、尿液定植與感染性阻塞，指出哪種資訊真正改變介入。",
+          "nonredundancy_reason": "它讓來源搜尋不只是部位清單，還展示陽性尿液不能直接指定感染病因。",
+          "verdict": "keep",
+          "excerpt_for_editor": "肺炎的主要定位資料是症狀、肺部檢查與胸部影像；對不明感染灶不能把一小塊可疑浸潤當成既定結論。泌尿道感染則要看排尿症狀、尿液檢查與培養，但尿液陽性本身也可能只是定植。對泌尿道症狀合併休克、明顯腰痛或腎積水的患者，最改變處置的資訊可能是阻塞；有阻塞又感染，單靠抗生素未必能快速清除上游病灶。",
+          "line_for_editor": 107
+        },
+        "076675c28e4f04467c-1": {
+          "role": "decision",
+          "reader_gain": "以膽管炎、膿瘍與壞死感染延伸源頭控制，並限定SSC六小時建議適用族群。",
+          "nonredundancy_reason": "上一段只有泌尿道例子，此段提供跨器官類比及時間建議的低確定性界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣機轉延伸到膽管炎需要 ERCP 等減壓、膿瘍需要引流、壞死性筋膜炎需要緊急清創、感染的導管或人工物可能需要移除。Source control（源頭控制）是移除持續供應感染的原因，不是單純「把抗生素換更強」。這個概念也讓112-1 醫學（三）第 64 題的海水傷口／休克病例不再只是背創傷",
+          "line_for_editor": 109
+        },
+        "9e78764f97d20b9b68-1": {
+          "role": "decision",
+          "reader_gain": "區分培養、器官檢驗與影像各自的資訊角色，並強調不能延誤抗生素。",
+          "nonredundancy_reason": "若省略此段，來源檢查可能被誤解成必須等待培養才能開始治療。",
+          "verdict": "keep",
+          "excerpt_for_editor": "血液培養及對應病灶的檢體能協助之後確立菌種與狹窄用藥，應儘可能在給抗生素前快速取得；但不能為了等採血或培養回報而延誤高危疑似 septic shock 的抗生素。CBC（全血球計數）、腎肝功能、血氣、lactate、血小板與凝血資料告訴你生理影響、器官功能與用藥安全；影像則回答感染源與可否",
+          "line_for_editor": 113
+        },
+        "f71224c58821b09ddf-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出血培陰性不排除感染，但強非感染證據應促使停用經驗抗菌藥。",
+          "nonredundancy_reason": "此段新增診斷可撤回性和抗菌藥停止條件，並非前段的採檢流程。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果兩組血培陰性，這不一定代表沒有感染；若找到更強的非感染解釋，就必須重新評估是否應停止經驗性抗生素。兩件事都比「一開始開了藥就一路開到底」更符合臨床推理。",
+          "line_for_editor": 115
+        },
+        "64ad9adcbced83eb9a-1": {
+          "role": "decision",
+          "reader_gain": "把氣道循環評估、採檢、抗菌藥、感染源處理與團隊支援安排為並行。",
+          "nonredundancy_reason": "它首次整合初期時間優先順序，避免讀者誤認必須先完成診斷才復甦。",
+          "verdict": "keep",
+          "excerpt_for_editor": "病人處於循環危險時，先確認呼吸、氧合、意識與灌流，建立監測與可用的靜脈通路、及早召集資深／重症團隊；同時採檢、開立及送達抗菌藥、評估解剖感染源、準備個別化循環支持。這些事情不應被排成一條必須「做完 A 才能做 B」的隊伍。",
+          "line_for_editor": 119
+        },
+        "2909396f5cf45f5334-1": {
+          "role": "orientation",
+          "reader_gain": "先界定抗生素時限表依感染機率與是否休克分層，不存在單一一小時規則。",
+          "nonredundancy_reason": "沒有這段的分層前提，緊接的表格容易被讀成所有疑似感染都一樣急迫。",
+          "verdict": "keep",
+          "excerpt_for_editor": "SSC 2026 區分三種常被混成「抗生素一小時」的情境：",
+          "line_for_editor": 121
+        },
+        "bd1831b989631c97a0-1": {
+          "role": "decision",
+          "reader_gain": "說明抗菌藥選擇取決於病灶、抗藥及宿主風險而非固定廣效套組。",
+          "nonredundancy_reason": "時限表只決定何時治療，這段新增覆蓋範圍及創傷弧菌題的臨床決策。",
+          "verdict": "keep",
+          "excerpt_for_editor": "「越早越好」不能替代病原與宿主背景判斷。選藥依感染灶、社區或醫院暴露、既往培養、抗藥風險、近期抗菌藥、免疫狀態、腎肝功能及當地 antibiogram 決定。高風險 MDR 才擴大相應覆蓋；沒有厭氧風險不應機械性增加厭氧覆蓋，沒有真菌風險也不常規加抗黴菌藥。IBCC 列出 beta-lac",
+          "line_for_editor": 132
+        },
+        "f65c5abfd699ca1c98-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以分布容積、腎清除和MIC時間依賴性解釋beta-lactam負荷及延長輸注。",
+          "nonredundancy_reason": "前段選的是哪種藥，此段回答重症病人為何給藥方式也影響有效暴露。",
+          "verdict": "keep",
+          "excerpt_for_editor": "重症患者的毛細血管漏出與大量復甦，可能擴大水溶性抗菌藥的分布容積；腎功能可能變差，也可能出現 augmented renal clearance。Beta-lactam 多屬 time-dependent killing，重點在游離藥物濃度高於 MIC 的足夠時間；MIC 是 minimu",
+          "line_for_editor": 136
+        },
+        "4e51651d1013b3a3ce-1": {
+          "role": "decision",
+          "reader_gain": "將培養與病灶確立後的去升級、短療程及診斷撤回連成抗菌藥收斂策略。",
+          "nonredundancy_reason": "它補上治療終點和停藥判斷，避免前兩段只教及早擴大而不教縮小。",
+          "verdict": "keep",
+          "excerpt_for_editor": "等菌種、藥敏與真正病灶逐漸明朗，就從廣泛經驗性治療去升級（de-escalation）、避免沒有證據的持續加藥。若源頭已控制、病程改善，評估較短療程；若後來確立根本不是感染，抗生素停止也是診斷更正的一部分。治療開始得快，與治療能夠及時收斂，同樣重要。",
+          "line_for_editor": 138
+        },
+        "962362bbca9004b122-1": {
+          "role": "orientation",
+          "reader_gain": "用血流表型而非背升壓藥名引出下一節的循環診斷問題。",
+          "nonredundancy_reason": "前段結束抗菌藥決策，此句負責轉場到低血壓的三種不同機轉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "IBCC 的高價值起點不是背下第一線升壓劑，而是看病人有哪一種 hemodynamic phenotype。[1]",
+          "line_for_editor": 142
+        },
+        "bbe6c30f997e185e74-1": {
+          "role": "definition",
+          "reader_gain": "並列血管失張、有效血量不足和低心輸出的表型與床邊線索。",
+          "nonredundancy_reason": "此段才把前面微循環理論轉成可檢驗的循環鑑別，不是單純再說低血壓。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一種是vasoplegia 為主：心率快，收縮壓與舒張壓差距拉大，DBP 偏低，四肢可能偏暖，Echo 顯示心臟收縮活躍。這提示 SVR 可能不足；補液未必能解決血管失張。第二種是有效循環容量不足：感染使血管容積分布改變、液體漏至間質，可能有脫水或持續流失；適當補液可增加回心血量、SV ",
+          "line_for_editor": 144
+        },
+        "7fa80a5b8b901a031f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用stressed與unstressed volume解釋NE除了升動脈壓也可能改善回心血量。",
+          "nonredundancy_reason": "三種表型的清單不能說明靜脈容量庫，這是補液與升壓共同作用的中介。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這裡需理解一個常被省略的中介：靜脈血管具有很大的容量庫，血管擴張可能使一部分血量轉入不產生有效回流壓差的 unstressed volume，有效產生推動靜脈回流壓差的 stressed volume 相對下降。給液可能增加 stressed volume；但 NE 也可藉 venocon",
+          "line_for_editor": 146
+        },
+        "df85125d2d7db2a893-1": {
+          "role": "decision",
+          "reader_gain": "將SVR、回流和SV三個瓶頸映射到補液、升壓、強心與另找病因。",
+          "nonredundancy_reason": "它是由前述機轉走向行動選擇的收束，並連到休克SVR國考題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，遇到「血壓低」，要問的是哪個瓶頸佔主導：低 SVR？回心血量不足？心臟無法送出足夠 SV？還是數個同時存在？ 這三問會決定下一步是補液、升壓、強心、治療另一個休克原因，或立即處理感染源。114-1 醫學（三）第 51 題恰好利用心肌炎、神經性休克、過敏性休克與敗血性休克的 SVR 方",
+          "line_for_editor": 148
+        },
+        "8d494243a5d946c91f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以Frank-Starling曲線平坦化解釋額外前負荷收益遞減與鬱血代價。",
+          "nonredundancy_reason": "前面說容量可能不足，這段才建立為何不能無限制補液的生理前提。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在病人低灌流時，輸液不是完全不可逆的錯，但也不是無風險的預設答案。要了解補液真正做了什麼，必須回到 Frank–Starling relationship：在一定條件下，增加舒張末期容量會增加每搏輸出；若心室已在曲線較平坦的區域，更多前負荷不能有效增加 SV，卻容易增加腔內／靜脈壓與組織水",
+          "line_for_editor": 152
+        },
+        "fbc708e11ccdbcb64c-1": {
+          "role": "definition",
+          "reader_gain": "明確區分液體反應性、可耐受性及臨床必要性三個互不蘊含的概念。",
+          "nonredundancy_reason": "曲線只預測SV是否上升，這段增加病人是否需要及能承受輸液的決策層。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Fluid responsiveness 是「在特定測試下，增加前負荷能否提高 SV／CO」；Fluid tolerance 是「額外液體會不會帶來不能接受的肺、右心、腎臟或組織鬱血」；fluid requirement 則還要加問「病人目前是否真的缺灌流、而且輸液是最合適的介入」。三者不",
+          "line_for_editor": 166
+        },
+        "aecdcc88343556adca-1": {
+          "role": "decision",
+          "reader_gain": "交代PLR是可逆前負荷測試且須同步量測SV或CO，並限定PPV使用條件。",
+          "nonredundancy_reason": "它把抽象反應性轉成可靠床邊測試，避免只用抬腿後SBP判斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Passive leg raising（PLR） 是把部分靜脈血由下肢與腹部回流至胸腔，造成短暫可逆的 preload challenge；最有價值的是同時量測前向 SV／CO 的變化。它不是只看腿抬起來後 SBP 變多少；若病人有嚴重腹內壓問題、姿勢限制或監測不可靠，也要保留不確定性。P",
+          "line_for_editor": 168
+        },
+        "7adb3c34c2835edb3e-1": {
+          "role": "decision",
+          "reader_gain": "核對SSC初始30mL/kg條件性建議、適用族群及平衡晶體液的優先性。",
+          "nonredundancy_reason": "前段討論測試方法，此段補上實際初期復甦指南及個別化重評。",
+          "verdict": "keep",
+          "excerpt_for_editor": "SSC 2026 對 sepsis-induced hypoperfusion 或 septic shock 的初始復甦，仍以 3 小時內至少 30 mL/kg IV crystalloid 作條件性推薦（證據 low），同時強調患者個別背景和持續重評。這不是所有發燒或未分型休克患者的固定",
+          "line_for_editor": 170
+        },
+        "6675e4f8b1d399a61c-1": {
+          "role": "causal_bridge",
+          "reader_gain": "指出初期復甦完成後液體邊際收益下降，為兩個RCT的介入時點鋪路。",
+          "nonredundancy_reason": "它明確標示由急性救命轉向後續液體策略，避免將不同時段混為一談。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當初期復甦完成後，繼續追加液體的邊際收益往往遞減、傷害可能累積。這不是只有生理理論，還能從隨機試驗看出外推的邊界：",
+          "line_for_editor": 172
+        },
+        "fde7494b597194dbf3-1": {
+          "role": "source_context",
+          "reader_gain": "呈現CLASSIC與CLOVERS各自族群、死亡率和已接受初始液體的限制。",
+          "nonredundancy_reason": "這段提供真正試驗比較的數據，不能用單一生理推論取代研究結果。",
+          "verdict": "keep",
+          "excerpt_for_editor": "CLASSIC（2022） 在 ICU septic shock 患者比較限制性與標準輸液，90 天死亡率約 42.3% vs 42.1%，沒有證實限制性策略降低死亡；兩組患者在隨機分派前已接受一定的復甦液體。CLOVERS（2023） 在完成早期約 1–3 L 輸液後仍有 sepsis-",
+          "line_for_editor": 174
+        },
+        "46b849687e544d5e35-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "總結RCT未證明一律少液體改善存活，也不推翻SSC的初始補液建議。",
+          "nonredundancy_reason": "前段列數字，這段專門限制其外推範圍並消解指南與試驗的表面衝突。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這兩個試驗的精要是：初期復甦之後，不能預設「再加液體」一定有收益，也不能把「越少液體必然越長壽」當成已證明的結論。 2026 SSC 保留對適用族群的初期液體建議，亦強調個別化重評；兩者並不互相抵觸。[2]",
+          "line_for_editor": 176
+        },
+        "9e14ed6ce40bcc5444-1": {
+          "role": "decision",
+          "reader_gain": "交代NE的動靜脈作用及適當周邊通路不應延誤早期升壓。",
+          "nonredundancy_reason": "前面著重輸液策略，這段開始處理低血管張力時另一種即時介入。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當血管張力太低，單靠輸液不足以提供穩定灌流壓。Norepinephrine（NE，正腎上腺素）主要透過 α₁ 血管收縮提高 SVR，也具有一定 β₁ 效應；在適當背景下還可增加 stressed volume、改善靜脈回流。因此在高度懷疑 septic shock 且明顯低血壓時，不應因尚",
+          "line_for_editor": 180
+        },
+        "b43fa26ec5c80490f9-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "拆開NE對不同比較藥物的推薦強度與證據確定性。",
+          "nonredundancy_reason": "上一段是NE作用機轉，此段避免把所有藥物比較誤說成高品質一致證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "SSC 2026 的 NE 第一線推薦，對不同比較藥物有不同證據確定性：相對 dopamine、epinephrine 或 selepressin 是 strong（證據 high／low／low）；相對 vasopressin 與 angiotensin II 則是 conditiona",
+          "line_for_editor": 182
+        },
+        "13c070f659465ceb06-1": {
+          "role": "decision",
+          "reader_gain": "提供一般MAP65及高齡者60至65的起始目標與個別化限制。",
+          "nonredundancy_reason": "這是具體壓力目標的患者分層，不重複NE第一線藥物選擇。",
+          "verdict": "keep",
+          "excerpt_for_editor": "多數病人初始 MAP 約 65 mmHg 是合理起點；2026 SSC 對 65 歲以上 septic shock 另提出可考慮初始 60–65 mmHg、而不是更高目標（conditional／low）。這不表示每個老人都只需要 MAP 60，也不表示年輕患者一律要維持 80；在已控制立",
+          "line_for_editor": 184
+        },
+        "d12b028a2c37437934-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "解釋DBP偏低提示vasoplegia但非通用SSC治療切點。",
+          "nonredundancy_reason": "MAP目標無法回答舒張壓的訊息，此段保留IBCC專家解讀的量測限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "DBP 受周邊血管張力、心率與主動脈等因素影響。心率很快、DBP 很低且脈壓很寬，常提示血管失張；在某些嚴重 vasoplegic 狀態，DBP 的低落也可能影響冠狀動脈舒張期灌流。IBCC 把 DBP 加進床邊決策，是在回答「低 MAP 主要從哪來」。但 IBCC 所討論的 DBP <4",
+          "line_for_editor": 188
+        },
+        "eb7d80e16af07fea27-1": {
+          "role": "counterfactual",
+          "reader_gain": "以NE升壓後末梢更冷的反例要求重看心輸出與微循環而非繼續追MAP。",
+          "nonredundancy_reason": "前面提供血壓目標，此段展示達標後仍需改判的具體臨床情境。",
+          "verdict": "keep",
+          "excerpt_for_editor": "可能是血管壓力恢復但前向流量不足，可能是過度血管收縮，也可能是微循環與器官傷害未隨宏觀壓力改善。你必須回頭看心超、脈壓、CRT、末梢溫度、尿量與其他病程，而不是把「升到 MAP 75」當成唯一答案。這是個別化復甦的起點，不是任由初階醫師自行加減升壓劑的許可。[1,2]",
+          "line_for_editor": 192
+        },
+        "9b5ce681b06022d1bb-1": {
+          "role": "definition",
+          "reader_gain": "定義PHR為反覆提出並測試生理假說，而不是只把MAP換成CRT。",
+          "nonredundancy_reason": "這段先排除對PHR的簡化誤解，才能理解下一段的完整循環流程。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Personalized Hemodynamic Resuscitation（PHR） 不只是把 MAP 目標換成 CRT 目標。它是一個反覆提出可驗證生理假說的流程：",
+          "line_for_editor": 196
+        },
+        "d954f3e58c9221ba71-1": {
+          "role": "decision",
+          "reader_gain": "呈現觀察、分型、介入、測效及撤回的五步回饋邏輯。",
+          "nonredundancy_reason": "前段說明PHR是什麼，此段才讓讀者可操作地重建推理順序。",
+          "verdict": "keep",
+          "excerpt_for_editor": "先觀察灌流是否仍有問題 → 依表型判斷主要瓶頸 → 選擇能對應瓶頸的可監測介入 → 量測患者是否真有收益與代價 → 不有效就收回、改問別的問題。",
+          "line_for_editor": 198
+        },
+        "00e0d17f75b744e3f5-1": {
+          "role": "counterfactual",
+          "reader_gain": "用同MAP但不同CRT、尿量及氧合的兩名假設患者示範不同後續決策。",
+          "nonredundancy_reason": "它使抽象PHR流程有可反駁的臨床分支，而不只是再列監測項目。",
+          "verdict": "keep",
+          "excerpt_for_editor": "假設病人 A、B 都 MAP 68 mmHg。A 的指尖回紅迅速、意識改善、尿量開始回升、肺部氧合正常；此時即使 lactate 尚未歸零，反覆補液不一定帶來好處。B 的 CRT 5 秒、皮膚斑駁、尿量下降，仍需要評估是哪一種血流瓶頸；但也不意味著應立刻無條件追加一袋水。[1,4]",
+          "line_for_editor": 200
+        },
+        "ea653cd51c883ef0b6-1": {
+          "role": "definition",
+          "reader_gain": "具體描述CRT測量手法、約三秒參考與觀察者變異限制。",
+          "nonredundancy_reason": "前面表格比較多個端點，這段補足讀者實際理解CRT所需的操作前提。",
+          "verdict": "keep",
+          "excerpt_for_editor": "CRT 要先知道量測方法：在同一指尖施壓使指腹變白，放開後計時回到原本顏色的時間；IBCC 提及約 3 秒的判讀參考，但有觀察者變異，灰色區間需要趨勢與其他證據，不能以 2.9 秒與 3.1 秒當成兩種截然不同的疾病。[1]",
+          "line_for_editor": 214
+        },
+        "5094fcf9416c5e04cf-1": {
+          "role": "source_context",
+          "reader_gain": "核對ANDROMEDA-SHOCK-2複合終點win ratio與死亡率未下降的區別。",
+          "nonredundancy_reason": "它提供PHR整套策略的原始RCT結果，不能用單一CRT正常化宣稱降低死亡。",
+          "verdict": "keep",
+          "excerpt_for_editor": "ANDROMEDA-SHOCK-2（2025） 是最重要的實證進展之一：1,467 名早期 septic shock 患者，86 個 ICU、19 個國家；CRT 引導的整套個別化血流動力學復甦，結合脈壓、DBP、fluid responsiveness、床邊心超及針對性液體／升壓／強心選",
+          "line_for_editor": 216
+        },
+        "a6798e80508bbaf5f3-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "並列SSC對CRT與serial lactate的條件性建議及IBCC較強的乳酸解釋。",
+          "nonredundancy_reason": "上一段是特定試驗，這段專門處理指南與專家觀點不完全相同的證據邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "SSC 2026 支持使用 CRT 作為其他灌流指標的輔助工具（conditional／low），也支持 serial lactate 作為追蹤之一（conditional／low）。IBCC 對 lactate 有更強烈的批判態度，將其高度視為 catecholamine／stress ",
+          "line_for_editor": 218
+        },
+        "ac30025d24e2df3a39-1": {
+          "role": "safety",
+          "reader_gain": "說明IBCC四種hemodynamic challenge都需假說、監測、停損與資深團隊。",
+          "nonredundancy_reason": "這是避免將教學操作照抄為醫囑的總安全門檻，不能由後續各挑戰例子取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "IBCC 介紹 vasopressor reduction challenge、norepinephrine challenge、inotrope challenge、fluid challenge。它們不是要求醫師隨機升降藥量，更不是病人一低灌流就做一輪「四種挑戰」。每一個試驗都必須先有",
+          "line_for_editor": 222
+        },
+        "4c1fe951e6ac27760d-1": {
+          "role": "decision",
+          "reader_gain": "分析低DBP與疑似vasoplegia時提高NE需同時觀察灌流及後負荷代價。",
+          "nonredundancy_reason": "此段是針對血管張力不足的特定挑戰，與其他三種介入的機轉不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果懷疑 vasoplegia 未改善：例如明顯低 DBP（diastolic blood pressure，舒張壓）、寬脈壓、皮膚仍低灌流，而且心輸出可能尚可。提高血管張力可能改善灌流壓；但若心臟無法承受增加的後負荷，灌流也可能變差。提高 NE 後該看的不只是 MAP 是否上升，而是 C",
+          "line_for_editor": 224
+        },
+        "a1e61f8fc81d0ebc2b-1": {
+          "role": "counterfactual",
+          "reader_gain": "分析MAP好看卻低輸出時降低過高升壓目標的專家試驗界線。",
+          "nonredundancy_reason": "它展示與前段提高NE相反的分支，並明言不是普遍低MAP處方。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果懷疑過度升壓／後負荷太高：MAP 看似好看、但脈壓變窄、末梢更冷、心超顯示低前向輸出，就需要重新評估目前的血壓目標是否超過對此病人的收益。IBCC 討論在特定患者、適當監測下審慎降低升壓目標的生理試驗；它不是 SSC 2026 對所有 septic shock 的常規低 MAP 醫囑。",
+          "line_for_editor": 226
+        },
+        "b82e96e2ef3a57df32-1": {
+          "role": "decision",
+          "reader_gain": "在充分容量與血壓支持後仍低灌流且心功能差時界定inotrope考量。",
+          "nonredundancy_reason": "這段處理低心輸出瓶頸，與純vasoplegia或過度升壓不能混用。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果懷疑 septic myocardial dysfunction：充分處理灌流壓與容量問題後，患者仍低灌流，心超又支持收縮／前向輸出不足，可與重症團隊考慮 inotrope。在接受必要 vasopressor 支持時，SSC 2026 條件性建議可加 dobutamine 或依情境選用",
+          "line_for_editor": 228
+        },
+        "8267bb2088c514936e-1": {
+          "role": "decision",
+          "reader_gain": "以PLR及有限度fluid challenge辨認可修正容量缺口並停止追逐反應性。",
+          "nonredundancy_reason": "它把第四種挑戰的收益與肺鬱血代價對照，完成前述不同介入分層。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果懷疑容量仍有可修正缺口：PLR 搭配 SV／CO，或者有邊界的 fluid challenge，測試是否能得到值得付出液體代價的前向血流改善。測到 fluid responsive 不代表該一直輸液；如果氧合與靜脈鬱血已惡化，就應停止追逐反應性。",
+          "line_for_editor": 230
+        },
+        "367bd502d95c178041-1": {
+          "role": "safety",
+          "reader_gain": "再次把個別化藥物挑戰限定在有監測與資深支援的情境。",
+          "nonredundancy_reason": "它是四個示例後的實作邊界，防止讀者誤將IBCC等同正式通用指南。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這些個別化試驗不應僅靠單一住院醫師在缺少連續監測及資深支援下操作。IBCC 是專家臨床教育資源；SSC 才是正式的多學科指南。",
+          "line_for_editor": 232
+        },
+        "6ec4714dc2f645a0d0-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋低afterload可掩蓋心肌收縮障礙，並要求鑑別缺血、PE與心包壓迫。",
+          "nonredundancy_reason": "前段是介入選擇，這段新增Sepsis相關心肌障礙的時序和競爭病因。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在最初強烈血管舒張時，SVR 下降，使 LV afterload 降低，LVEF 可能看起來正常甚至偏高。若幾小時或一兩天後 NE 需求增加、病人變冷、心超表現改變，有可能是 Sepsis 相關心肌功能障礙，但不能跳過心肌缺血、心律不整、心包壓迫、PE、Takotsubo 或原有心衰的鑑別",
+          "line_for_editor": 236
+        },
+        "79d0793cc0ca8e1382-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以EF等於SV除EDV拆開收縮比例、前向流量及負荷依賴性。",
+          "nonredundancy_reason": "上一段提出心肌功能可能被掩蓋，此段才用公式解釋EF正常仍不保證CO。",
+          "verdict": "keep",
+          "excerpt_for_editor": "EF = SV / EDV。它是比例，受心臟前負荷與後負荷影響；當 afterload 很低時，即使內在心肌功能受到影響，EF 仍可能看起來保留。因此EF 65% 不排除心輸出量不足，也不完全排除 sepsis 相關心肌功能異常。病人使用較高劑量升壓劑後，後負荷增加，原先隱藏的收縮功能缺陷",
+          "line_for_editor": 238
+        },
+        "1045a47ab163092c47-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明septic cardiomyopathy缺乏單一定義，troponin與LVEF不能直接指派病因。",
+          "nonredundancy_reason": "公式只能解釋EF限制，這段補上診斷效度與可逆性的不確定性。",
+          "verdict": "keep",
+          "excerpt_for_editor": "IBCC 也提醒 septic cardiomyopathy 尚無單一統一診斷標準；常見描述是急性、可逆、可能涉及雙心室的心肌功能異常。不能僅靠 troponin 上升下結論，也不能以單次 LVEF 低落便認定「這就是 Sepsis 的原因」。心肌損傷的 biomarker、心室功能表型與",
+          "line_for_editor": 240
+        },
+        "b2f59737ceb868da19-1": {
+          "role": "counterfactual",
+          "reader_gain": "用MAP已達標但CRT差且Echo低輸出的假設患者展示重分型。",
+          "nonredundancy_reason": "這個情境把心肌概念連回實際下一步，並清楚不冒充Jin病例後續。",
+          "verdict": "keep",
+          "excerpt_for_editor": "作為與原病例分開的反事實推演：如果另一名患者經適當液體與 NE 後 MAP 66，但 CRT 依舊很差、皮膚冰冷，Echo 新見 LV 輸出減少，下一步要考慮的是前向血流是否不足；不是把尚未恢復的尿量當成單純需要更多液體的證據。另一方面，若 Echo 顯示充盈及輸出尚可，則更要查感染源、持",
+          "line_for_editor": 242
+        },
+        "bbb1f753e3704f74cd-1": {
+          "role": "decision",
+          "reader_gain": "區分感染肺炎、ARDS與液體肺水腫，接到HFNC與保護性通氣條件。",
+          "nonredundancy_reason": "前面專注循環與心肌，此段加入呼吸器官支持及PBW而非只列器官名稱。",
+          "verdict": "keep",
+          "excerpt_for_editor": "感染造成全身器官障礙，不能只聚焦升壓藥。呼吸衰竭可能來自感染肺炎、ARDS、液體過量引起肺水腫或呼吸肌疲勞。這些原因的適當支持不同。當患者氧合下降、呼吸功增加時，除確認感染和血流外，也要判斷是否需要高流量鼻導管（high-flow nasal cannula，HFNC）或插管、是否已進入 ",
+          "line_for_editor": 246
+        },
+        "86349fd19c6d0604c9-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明鎮靜與正壓通氣會改變回心血量及右心負荷。",
+          "nonredundancy_reason": "前段討論氧合策略，這段補上插管可能反過來惡化血流動力學的中介。",
+          "verdict": "keep",
+          "excerpt_for_editor": "插管本身會改變循環：鎮靜藥降低交感代償，正壓通氣與 PEEP 改變回心血量、右心後負荷及肺血管阻力。對已低血壓的 Sepsis 患者，氣道與循環支持必須一起預作計畫，不能以為插管只處理氧合、與 MAP 無關。",
+          "line_for_editor": 248
+        },
+        "837fec38f35a135b1d-1": {
+          "role": "decision",
+          "reader_gain": "將Sepsis AKI的低灌流、鬱血與腎毒性拆開並限定RRT真正適應症。",
+          "nonredundancy_reason": "呼吸支持不能涵蓋腎臟決策，此段反駁少尿即補液或即洗腎。",
+          "verdict": "keep",
+          "excerpt_for_editor": "腎臟障礙可能是低灌流、發炎微循環、靜脈鬱血、腎毒性藥物和原先 CKD 共同作用。少尿是重要危險訊號，但少尿不等於「每次加水都能讓尿回來」。若出現 AKI，先確認導尿管通暢、有效循環與靜脈回壓，檢查藥物及其他病因；需要腎替代治療（renal replacement therapy, RRT）",
+          "line_for_editor": 250
+        },
+        "11e770b98f90357ce9-1": {
+          "role": "decision",
+          "reader_gain": "辨認Sepsis腦病變與中風、腦膜炎及非抽搐重積的競爭診斷。",
+          "nonredundancy_reason": "這段補上意識異常不能全歸感染的安全分岔，不與AKI段重複。",
+          "verdict": "keep",
+          "excerpt_for_editor": "腦功能障礙可表現為譫妄、嗜睡與反應變慢，部分是全身性發炎及灌流問題，也可能受鎮靜、血糖、肝腎功能影響。不能把任何意識變化都塞入「septic encephalopathy」，尤其是局部神經徵象、抽搐、明顯持續昏迷，仍須考慮腦中風、出血、腦膜腦炎或非抽搐性癲癇重積。",
+          "line_for_editor": 252
+        },
+        "9023046370360f95de-1": {
+          "role": "decision",
+          "reader_gain": "連結血小板與凝血變化到DIC、侵入處置及VTE預防。",
+          "nonredundancy_reason": "它是血液器官的獨立處置風險，前面的腎腦段落沒有涵蓋。",
+          "verdict": "keep",
+          "excerpt_for_editor": "凝血異常可能從血小板下降、INR 變化一路到 DIC，帶來出血與微血栓的雙重風險。這些變化既代表疾病嚴重度，也可能改變侵入性處置與抗凝策略；同時重症住院及不動增加 VTE 風險，SSC 2026 對無禁忌者建議藥物性 VTE prophylaxis。[2]",
+          "line_for_editor": 254
+        },
+        "d6b47efc03e8ea508a-1": {
+          "role": "safety",
+          "reader_gain": "強調器官支持急迫時不能等待Sepsis分類完全確定才轉介ICU。",
+          "nonredundancy_reason": "此處是呼吸腎腦凝血支持的時間收束，不是重複初診採檢先後。",
+          "verdict": "keep",
+          "excerpt_for_editor": "上述器官支持的核心順序，是「問題已構成急迫傷害時先救」，不是等 Sepsis 診斷分類百分之百完成才啟動 ICU 轉介。",
+          "line_for_editor": 256
+        },
+        "69fea79459fa3c4f4a-1": {
+          "role": "decision",
+          "reader_gain": "拆開乳酸酸中毒常規不用bicarbonate與pH低合併AKIN2至3的例外。",
+          "nonredundancy_reason": "它提供精確SSC適用條件並連回113年Q48，不是單純再說乳酸不特異。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Lactate 高不等於應自動給 sodium bicarbonate。重症乳酸上升可能包含供氧不足、兒茶酚胺相關有氧糖解與清除下降。若沒有理解原因，單純提高血中 bicarbonate 可能改變 pH 數字，但未必恢復組織灌流。SSC 2026 對以改善血流動力學或減少升壓劑為目的之 s",
+          "line_for_editor": 260
+        },
+        "113ce3ab5b1753339d-1": {
+          "role": "decision",
+          "reader_gain": "比較IBCC較早類固醇思路與SSC條件性推薦、常見劑量和副作用。",
+          "nonredundancy_reason": "上一段處理酸鹼例外，此段獨立處理持續升壓需求的輔助治療。",
+          "verdict": "keep",
+          "excerpt_for_editor": "IBCC 強調較早考慮 stress-dose steroids 的 ICU 邏輯。正式 SSC 2026 對成人 septic shock 條件性建議 IV corticosteroids（low certainty）；臨床上常見 hydrocortisone 200 mg/day（給藥",
+          "line_for_editor": 262
+        },
+        "2bc5ec92c1526646ac-1": {
+          "role": "decision",
+          "reader_gain": "對多重升壓劑或頑固休克重新搜尋感染失控、混合型休克及adrenal crisis。",
+          "nonredundancy_reason": "它新增治療失敗時的再診斷路徑，避免把NE劑量上升當作唯一答案。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果需要兩種以上升壓劑、NE 劑量不斷增加，必須重整原因：感染源尚未解除、抗菌藥錯誤或抗藥、持續出血、腹內壓問題、心肌功能障礙、心包填塞、重大 PE、adrenal crisis、藥物及酸鹼問題。這正是 IBCC 把 sepsis mimics 放在前面、把 refractory shoc",
+          "line_for_editor": 264
+        },
+        "993d8cff7ca2999cd9-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "把潰瘍、VTE、血糖與營養支持和無證據的維生素套組分開。",
+          "nonredundancy_reason": "前面是休克特定藥物，此段界定一般ICU支持及機轉合理不等於結局有效。",
+          "verdict": "keep",
+          "excerpt_for_editor": "其他 ICU 支持同樣不能從藥物名字倒推必要性：有 GI 出血風險者考慮 stress ulcer prophylaxis；無 VTE 禁忌者預防血栓；血糖需要監測但不應追求過低；營養與感染控制並行。IBCC 對 thiamine 的特殊情境有討論，但不是所有 Sepsis 病人固定打一套",
+          "line_for_editor": 266
+        },
+        "0ecd7bdd5d7a3c72ba-1": {
+          "role": "counterfactual",
+          "reader_gain": "明示另名假設患者在感染控制後出現正液體平衡、水腫與氧合惡化。",
+          "nonredundancy_reason": "這段開頭直接隔離Jin真實病程，並首次提出復甦後風險反轉的時間情境。",
+          "verdict": "keep",
+          "excerpt_for_editor": "以下是另一名患者的反事實情境，並非 Jin 病例的實際後續。假設病人最初需要液體、升壓、抗生素與器官支持；幾天後感染源得到控制、NE 減量、器官灌流穩定，但呼吸越來越依賴氧氣、全身水腫，累積的液體正平衡也持續增加。現在病人的主要風險已經轉向過多的液體負荷。你若只因最初診斷是 Septic ",
+          "line_for_editor": 270
+        },
+        "9d94127848c78d83c7-1": {
+          "role": "decision",
+          "reader_gain": "在穩定後以灌流、肺氧合與鬱血決定是否主動去液體並排除仍在急性期者。",
+          "nonredundancy_reason": "前段只描述假設病程，這段新增SSC去復甦適用時點和不可貿然利尿的限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這時應重新評估血管內有效循環、末梢灌流、肺部氧合與影像、靜脈鬱血、尿量與累積淨出入量。適當病人可在血流動力學允許時透過利尿或其他方式主動移除多餘液體。SSC 2026 對 septic shock 急性復甦期之後的主動去液體提出條件性建議（very low）；但定義上仍在持續升壓、需要持續",
+          "line_for_editor": 272
+        },
+        "ab2be8eee19a86320a-1": {
+          "role": "causal_bridge",
+          "reader_gain": "概括同一液體或升壓介入的收益與傷害會隨病程反轉。",
+          "nonredundancy_reason": "此段將去液體案例提升成時間依賴的治療原則，而非再列監測項目。",
+          "verdict": "keep",
+          "excerpt_for_editor": "它揭示一個重要的時間性：同一個處置並沒有永遠正確的身分。液體在某一刻可能救命，數小時後可能成為阻礙肺與腎恢復的來源；升壓劑最初必要，過高的後負荷卻可能限制低輸出的心室。 治療策略必須隨病人重新定義，而不是把入院診斷當成永遠不變的操作說明。",
+          "line_for_editor": 274
+        },
+        "8804faf00f41cee944-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明病例與三個反事實在表格中分列，禁止將假設ICU數據接回原患者。",
+          "nonredundancy_reason": "表格單靠欄位不會保證來源身分清楚，此段明示其教學及證據用途。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這張表刻意把公開病例已測量的事實和為教學設計的條件改變分行，目的是讓讀者在「來源辨識→循環支持→源頭控制→重新評估」的因果鏈中練習遷移，而不會把作者沒有記錄的 ICU 後續當成原始證據。",
+          "line_for_editor": 287
+        },
+        "c6b86dd45a026b9a14-1": {
+          "role": "safety",
+          "reader_gain": "用乳酸高不等於septic shock作第一個自我檢查反例。",
+          "nonredundancy_reason": "此處是可獨立檢索的常見錯誤測試，功能不同於前文完整定義推導。",
+          "verdict": "keep",
+          "excerpt_for_editor": "錯誤一：Lactate 高，所以就是 septic shock。 Lactate 可以在許多高壓力與缺氧或非缺氧狀態升高；感染、器官障礙及休克血流機轉須各自確認。",
+          "line_for_editor": 291
+        },
+        "3d4d7839a32aae69a6-1": {
+          "role": "safety",
+          "reader_gain": "用MAP65不等於完成復甦測試讀者是否區分宏觀壓力與器官灌流。",
+          "nonredundancy_reason": "與前一題乳酸診斷不同，這題針對治療終點的過度推論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "錯誤二：血壓達到 MAP 65，代表 resuscitation complete。 MAP 是進入安全區的初始條件之一，不等於 CRT、腎灌流、腦功能、心輸出和微循環全恢復。",
+          "line_for_editor": 293
+        },
+        "643bfbb2a326e8b589-1": {
+          "role": "safety",
+          "reader_gain": "用PLR陽性仍不必然持續輸液測試反應性與耐受性概念。",
+          "nonredundancy_reason": "它專門對照容量決策，不能被乳酸或MAP兩個錯誤範例取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "錯誤三：PLR 讓 CO 增加，所以應該持續灌液。 反應性是「如果增加前負荷，SV 可能上升」，不是「必須增加前負荷」；還需要 fluid tolerance 與臨床必要性。",
+          "line_for_editor": 295
+        },
+        "ea909d084c41b71a7a-1": {
+          "role": "safety",
+          "reader_gain": "用高CO暖休克刻板印象檢查混合型與心肌功能變化。",
+          "nonredundancy_reason": "此題的辨識目標是休克表型，不重複前面的容量或灌流終點。",
+          "verdict": "keep",
+          "excerpt_for_editor": "錯誤四：Sepsis 一定是高心輸出、暖四肢、EF 正常。 心輸出與 SVR 會隨時間和治療改變，可能發生 septic cardiomyopathy 或混合性休克。",
+          "line_for_editor": 297
+        },
+        "71d2731bd96fe85e5e-1": {
+          "role": "safety",
+          "reader_gain": "用已給廣效抗菌藥仍可能需引流提醒源頭控制與重新鑑別。",
+          "nonredundancy_reason": "它以原病例上游病灶收束五種誤解，並非另一個單純抗菌藥時限提醒。",
+          "verdict": "keep",
+          "excerpt_for_editor": "錯誤五：感染已使用廣效抗生素，就只需等它發揮效果。 解剖性阻塞、膿瘍與壞死組織可能需要立即 source control；持續惡化也可能來自根本不同的 shock mechanism。",
+          "line_for_editor": 299
+        },
+        "ab517a20a0073a7911-1": {
+          "role": "navigation",
+          "reader_gain": "提供六題官方國考的年份答案與跨段落對照，並提醒不能以2026指南改寫舊答案。",
+          "nonredundancy_reason": "這段和其後表格建立主文到完整題解的導航，不重複題幹或教學論證。",
+          "verdict": "keep",
+          "excerpt_for_editor": "理解 Sepsis 時不必把真題當成獨立的考古題庫。以下六題的原始身分與官方答案已確認；題幹與選項詳解由 《Sepsis：由國考真題反推臨床決策》 統一整理，提供官方原題 PDF 入口，避免在主文複製整份考卷。考題年份仍須與目前 SSC 2026 的新建議區別，因為考選部當年的答案不會隨後",
+          "line_for_editor": 305
+        },
+        "87dbcd96efd8cfa692-1": {
+          "role": "counterfactual",
+          "reader_gain": "要求辨別只有SIRS但無器官障礙的肺炎患者與Sepsis。",
+          "nonredundancy_reason": "這是第一個主動回憶題，測試定義邊界而非提供新的考題索引。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一名肺炎患者符合 SIRS，但沒有急性器官功能障礙。為什麼不能直接稱為 Sepsis？哪些新證據會改變判斷？",
+          "line_for_editor": 318
+        },
+        "4cb5fe0635f147dcf0-1": {
+          "role": "counterfactual",
+          "reader_gain": "用SpO2與MAP正常但CRT延長的情境檢查氧合、壓力和灌流的拆分。",
+          "nonredundancy_reason": "這題針對多指標衝突，不與SIRS定義題重複。",
+          "verdict": "keep",
+          "excerpt_for_editor": "病人 SpO₂ 98%、MAP 70，卻有 CRT 6 秒與意識障礙；血氧、壓力、血流與細胞代謝之間少了哪些連結？",
+          "line_for_editor": 319
+        },
+        "dfbdeb55a2f7fa99b9-1": {
+          "role": "counterfactual",
+          "reader_gain": "要求說明感染性尿路阻塞時NE、抗生素與支架無法互相替代。",
+          "nonredundancy_reason": "這題回到Jin真實機轉並測試介入因果位置，不是前題的監測解釋。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果腎結石阻塞感染引起 shock，為什麼 NE 與抗生素都不能取代尿路減壓？",
+          "line_for_editor": 320
+        },
+        "d944d70005b0ced703-1": {
+          "role": "counterfactual",
+          "reader_gain": "用PLR後CO升高但B-lines與呼吸惡化測試fluid tolerance。",
+          "nonredundancy_reason": "這題加入新的肺鬱血反例，迫使讀者修正只看fluid responsiveness的策略。",
+          "verdict": "keep",
+          "excerpt_for_editor": "PLR 後 CO 增加，但肺部 B-lines 增加且呼吸困難惡化；為什麼「有反應」仍不代表應再補液？",
+          "line_for_editor": 321
+        },
+        "132e0203bb167c94f4-1": {
+          "role": "counterfactual",
+          "reader_gain": "用NE升壓後持續少尿要求分辨低CO、靜脈鬱血與既有AKI。",
+          "nonredundancy_reason": "這題測試升壓成功後的腎臟重新分型，與補液耐受題不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一名患者開始 NE 後血壓增加、尿量卻持續下降，你會如何分別尋找 vasoplegia、低 CO、靜脈鬱血及已存在的 AKI？",
+          "line_for_editor": 322
+        },
+        "5b101008326a19dd25-1": {
+          "role": "counterfactual",
+          "reader_gain": "要求辨認ANDROMEDA複合終點改善不能被說成單獨CRT降低死亡。",
+          "nonredundancy_reason": "這題測試研究設計與因果外推，而非單一患者的處置選擇。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼 ANDROMEDA-SHOCK-2 支持 CRT 引導的整套 PHR，卻不能解讀為單獨證明 CRT 能降低死亡率？",
+          "line_for_editor": 323
+        },
+        "b4554bec9e6a31877b-1": {
+          "role": "navigation",
+          "reader_gain": "提供六個練習題共用的證據到反例回答格式，要求重建因果而非背藥。",
+          "nonredundancy_reason": "它給出評量時的推理品質標準，不是另一道重複臨床問題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "每題都嘗試講出：現有證據 → 可能機轉 → 尚缺的資訊 → 新介入作用在哪 → 哪個反例會使策略改變。如果只能背出藥物與數值，但說不清中間的因果，就還沒有真正掌握 Sepsis。",
+          "line_for_editor": 325
+        },
+        "24942f49406944a69f-1": {
+          "role": "source_context",
+          "reader_gain": "標示IBCC更新日期與PHR專家挑戰的適用邊界。",
+          "nonredundancy_reason": "此來源說明可讓讀者辨識哪些建議只是專家實作，非SSC普遍推薦。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[1] Farkas J. Septic Shock. Internet Book of Critical Care (IBCC / EMCrit), updated November 11, 2025. 。本文對照其原始完整正文主要範圍：Definitions / Clinical Pr",
+          "line_for_editor": 331
+        },
+        "e45346d129e36468b0-1": {
+          "role": "source_context",
+          "reader_gain": "提供SSC2026正式推薦來源及各治療領域的證據核查角色。",
+          "nonredundancy_reason": "與IBCC不同，這項引用是指南強度和適用族群的正式依據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[2] Prescott HC, et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2026. Society of Critical C",
+          "line_for_editor": 333
+        },
+        "6d2a9c6963bdff2158-1": {
+          "role": "source_context",
+          "reader_gain": "連回Sepsis-3原始共識，區分診斷操作定義與急救啟動時點。",
+          "nonredundancy_reason": "它支撐SOFA與septic shock的概念來源，不可由2026治療指南取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[3] Singer M, et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA. 2016;315:801–810. 。用於定義、SOFA 與 s",
+          "line_for_editor": 335
+        },
+        "e42a3127411c5878f0-1": {
+          "role": "source_context",
+          "reader_gain": "列出ANDROMEDA原始研究的樣本與複合結果限制。",
+          "nonredundancy_reason": "它支撐PHR研究結局而非一般診斷或處置推薦，保留獨立證據入口。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[4] The ANDROMEDA-SHOCK-2 Investigators, et al. Personalized Hemodynamic Resuscitation Targeting Capillary Refill Time in Early Septic Shock: The",
+          "line_for_editor": 337
+        },
+        "5cb3eaf7d340b7908a-1": {
+          "role": "source_context",
+          "reader_gain": "標明van der Poll綜述只支撐免疫、內皮與微循環機轉。",
+          "nonredundancy_reason": "它限定機轉性文獻不能直接推出普遍藥物療效，與RCT來源用途不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[5] van der Poll T, et al. The immunopathology of sepsis and potential therapeutic targets. Nat Rev Immunol. 2017. 。用於宿主反應、內皮、微循環與免疫失調機轉；本篇不把單一分子",
+          "line_for_editor": 339
+        },
+        "e2f40094434f513971-1": {
+          "role": "source_context",
+          "reader_gain": "分別指向CLASSIC與CLOVERS原試驗並強調介入時點不可外推為零輸液。",
+          "nonredundancy_reason": "這是輸液比較證據的雙研究來源，不能被PHR試驗或SSC取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[6] Meyhoff TS, et al. Restriction of Intravenous Fluid in ICU Patients with Septic Shock. N Engl J Med. 2022. ；Shapiro NI, et al. Early Restrict",
+          "line_for_editor": 341
+        },
+        "09b6e765c52076e5f7-1": {
+          "role": "source_context",
+          "reader_gain": "保留Jin病例系列第一例、原始圖一與本站圖說的查核入口。",
+          "nonredundancy_reason": "它讓讀者能回到病歷與影像核對真實數字，避免混入其他兩名患者資料。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[7] Jin A, et al. A real pain in the back…or maybe not—a case series of urosepsis due to obstructing calculi identified on ultrasound. Int J Emer",
+          "line_for_editor": 343
+        },
+        "c8e398e056c86683ac-1": {
+          "role": "safety",
+          "reader_gain": "最後再次明確區分真實病例、反事實數字與個人升壓藥處方責任。",
+          "nonredundancy_reason": "來源段落只標示研究，這段補上教學用途和臨床團隊決策的安全邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "教學範圍與臨床安全： 本文的 78 歲男性資料出自可回查的真實病例系列；後續反事實中的假設情境數字並非實測；不提供缺少臨床條件的個人處方。病人是否開始、滴定或減少升壓／強心藥，應由臨床團隊根據監測、器官功能與院內規範決定。本文是醫學教育整理，不取代個別病人的診斷、監測與治療決策。",
+          "line_for_editor": 345
+        }
+      }
+    }
+  }
 }
