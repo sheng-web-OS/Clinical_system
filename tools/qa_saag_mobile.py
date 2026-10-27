@@ -55,9 +55,7 @@ def run(dist: Path, out: Path) -> int:
                             return {bodyScroll: document.documentElement.scrollWidth, vw: innerWidth,
                                 tableWidth: t.clientWidth, tableScroll: t.scrollWidth,
                                 rowDisplay: getComputedStyle(rows[0]).display,
-                                headVisible: [...t.querySelectorAll('thead th')].some(th => {
-                                    const r=th.getBoundingClientRect(); return r.width > 15 && r.height > 15;
-                                }), cells,
+                                headVisible: getComputedStyle(t.querySelector('thead')).clipPath === 'none', cells,
                                 sourceLink: !!document.querySelector('article a[href="xiaoma-exam-gi-liver-three-sources.html"]'),
                                 metadataLeak: document.querySelector('main').innerText.includes('本篇來源與版本界線')
                                     || document.querySelector('main').innerText.includes('原始資料使用：考選部')};
