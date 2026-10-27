@@ -95,6 +95,19 @@ class P1ReviewHardStopTests(unittest.TestCase):
             comment("approved routine proofread", cid=4, source="review"),
         ]), [])
 
+    def test_formal_changes_requested_p1_review_blocks_even_without_marker(self):
+        record = comment("P1 official answer conflict", source="review")
+        record["state"] = "CHANGES_REQUESTED"
+        self.assertEqual(len(gate.evaluate(PR, [record])), 1)
+
+    def test_review_clearance_uses_submitted_at_timestamp(self):
+        blocker = comment(LEGACY_171)
+        resolution = f"[P1_RESOLVED source=issue id=6442587535 head={SHA} evidence=https://github.com/example/repo/pull/171]"
+        record = comment(resolution, cid=15, source="review", who="reviewer")
+        del record["created_at"]
+        record["submitted_at"] = "2026-10-27T15:00:00Z"
+        self.assertEqual(gate.evaluate(PR, [blocker, record]), [])
+
     def test_issue_comment_event_uses_its_pr_number(self):
         self.assertEqual(gate.event_pr_number({
             "issue": {"number": 171, "pull_request": {"url": "https://api.github.com/pulls/171"}}
