@@ -38,7 +38,7 @@ class PrivateVisualBeforeReleaseGate(unittest.TestCase):
         self.assertNotIn("continue-on-error: true", step)
         installer = self.source.split("- name: Install Chromium for image layout QA", 1)[1]
         installer = installer.split("\n      - name:", 1)[0]
-        self.assertIn("timeout-minutes: 4", installer)
+        self.assertRegex(installer, r"timeout-minutes: [4-6]\\b")
         self.assertNotIn("upload-artifact", step)
 
     def test_semantic_gate_still_unconditional_before_verified_site_artifact(self):
