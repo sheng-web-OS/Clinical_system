@@ -9,7 +9,7 @@
 <rect x="12" y="140" width="351" height="236" rx="14" fill="#e7f4f0" stroke="#81ada4"/>
 <text x="28" y="173" font-family="Noto Sans CJK TC, sans-serif" font-size="20" font-weight="700" fill="#12534c">A｜靜脈回流不足</text>
 <text x="28" y="205" font-family="Noto Sans CJK TC, sans-serif" font-size="17" fill="#174c48">有效 pump flow 受限</text>
-<text x="28" y="246" font-family="Noto Sans CJK TC, sans-serif" font-size="19" fill="#174c48">DO₂i 下降至</text>
+<text x="28" y="246" font-family="Noto Sans CJK TC, sans-serif" font-size="19" fill="#174c48">DO2i 下降至</text>
 <text x="28" y="293" font-family="Noto Sans, sans-serif" font-size="37" font-weight="700" fill="#0e746b">260</text>
 <text x="118" y="290" font-family="Noto Sans, sans-serif" font-size="17" fill="#174c48">mL/min/m²</text>
 <path d="M184 300 v24 m-8 -8 l8 9 8 -9" stroke="#0e746b" fill="none" stroke-width="3"/>
@@ -18,13 +18,13 @@
 <text x="28" y="425" font-family="Noto Sans CJK TC, sans-serif" font-size="20" font-weight="700" fill="#86491d">B｜血液稀釋</text>
 <text x="28" y="459" font-family="Noto Sans CJK TC, sans-serif" font-size="17" fill="#86491d">Hb 下降，攜氧容量減少</text>
 <text x="28" y="494" font-family="Noto Sans CJK TC, sans-serif" font-size="17" fill="#86491d">病例敘述：Hb 7.9 g/dL</text>
-<text x="28" y="536" font-family="Noto Sans CJK TC, sans-serif" font-size="19" fill="#86491d">DO₂i 約</text>
+<text x="28" y="536" font-family="Noto Sans CJK TC, sans-serif" font-size="19" fill="#86491d">DO2i 約</text>
 <text x="28" y="582" font-family="Noto Sans, sans-serif" font-size="37" font-weight="700" fill="#a85623">275</text>
 <text x="118" y="578" font-family="Noto Sans, sans-serif" font-size="17" fill="#86491d">mL/min/m²</text>
 <text x="28" y="613" font-family="Noto Sans CJK TC, sans-serif" font-size="17" fill="#86491d">增加 pump flow 後回升</text>
 <rect x="12" y="650" width="351" height="272" rx="14" fill="#fff" stroke="#c8d9e2"/>
 <text x="28" y="684" font-family="Noto Sans CJK TC, sans-serif" font-size="20" font-weight="700" fill="#18394c">讀圖時不可錯接</text>
-<text x="28" y="720" font-family="Noto Sans CJK TC, sans-serif" font-size="16" fill="#29485a">① SaO₂ 98 ± 0.5% 是 CPB 平均</text>
+<text x="28" y="720" font-family="Noto Sans CJK TC, sans-serif" font-size="16" fill="#29485a">① SaO2 98 ± 0.5% 是 CPB 平均</text>
 <text x="28" y="752" font-family="Noto Sans CJK TC, sans-serif" font-size="16" fill="#29485a">② 並非事件當下的同步血氣</text>
 <text x="28" y="784" font-family="Noto Sans CJK TC, sans-serif" font-size="16" fill="#29485a">③ 不重建矛盾的事件時間軸</text>
 <text x="28" y="816" font-family="Noto Sans CJK TC, sans-serif" font-size="16" fill="#29485a">④ 術後流量來源改為 CO</text>
