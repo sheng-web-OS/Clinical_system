@@ -44,6 +44,36 @@ class ExamReadingConnections(unittest.TestCase):
             for link in values:
                 self.assertIn('href="' + link["href"] + '"', archive)
 
+    def test_relation_focus_is_private_authoring_input_not_reader_copy(self):
+        from unittest.mock import patch
+        from exam_archive import render_concept_links, render_related_questions
+
+        private_focus = "INTERNAL_RELATION_MARKER: concept edge awaiting prose synthesis"
+        url = "clinical-concept.html#part-1"
+        links = [{"href": url, "page": {"title": "完整臨床教材"}, "focus": private_focus}]
+        reader_nav = render_concept_links(links)
+        self.assertIn('href="' + url + '"', reader_nav)
+        self.assertNotIn(private_focus, reader_nav)
+
+        exam = {"year_roc": 114, "sitting": 2, "stage": 2,
+                "subject": "醫學（三）", "question_number": 3}
+        page = {"related_exams": [{**exam, "focus": private_focus}]}
+        record = {"exam": exam,
+                  "page": {"output": "exam-example.html", "references": "sources.html"},
+                  "anchor": "q-3"}
+        body = "<h2>題目</h2><p>完整詳解</p>"
+        with patch("exam_archive.question_bounds", return_value=(0, len(body))):
+            with patch("exam_archive.scope_embedded_question", side_effect=lambda text, _: text):
+                reader_card = render_related_questions(
+                    page, {question_key(exam): record},
+                    {"exam-example.html": {"body": body}}
+                )
+        self.assertIn("Q3", reader_card)
+        self.assertIn("完整詳解", reader_card)
+        self.assertIn("開啟原詳解頁", reader_card)
+        self.assertNotIn(private_focus, reader_card)
+        self.assertNotIn("related-exam-focus", reader_card)
+
     def test_unknown_or_unpublished_question_cannot_be_linked(self):
         pages = copy.deepcopy(self.pages)
         page = next(p for p in pages if p.get("related_exams"))
