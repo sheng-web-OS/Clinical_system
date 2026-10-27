@@ -3,6 +3,7 @@
 This tests workflow ordering and trust boundaries, NOT image readability or
 clinical correctness. Keep deployment/medical gates mandatory and independent.
 """
+import re
 import unittest
 from pathlib import Path
 
@@ -38,7 +39,12 @@ class PrivateVisualBeforeReleaseGate(unittest.TestCase):
         self.assertNotIn("continue-on-error: true", step)
         installer = self.source.split("- name: Install Chromium for image layout QA", 1)[1]
         installer = installer.split("\n      - name:", 1)[0]
-        self.assertIn("timeout-minutes: 4", installer)
+        timeout = re.search(r"(?m)^\s*timeout-minutes:\s*(\d+)\b", installer)
+        self.assertIsNotNone(timeout, "Browser bootstrap must stay time-bounded")
+        self.assertLessEqual(int(timeout.group(1)), 12, "Do not allow unbounded package downloads")
+        self.assertGreaterEqual(int(timeout.group(1)), 4, "Allow enough time for a cold browser install")
+        self.assertIn("python -m playwright install chromium", installer)
+        self.assertIn("p.chromium.launch(headless=True)", installer)
         self.assertNotIn("upload-artifact", step)
 
     def test_semantic_gate_still_unconditional_before_verified_site_artifact(self):
