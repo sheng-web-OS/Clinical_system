@@ -27,6 +27,31 @@ def sha256(data):
     return hashlib.sha256(data).hexdigest()
 
 
+
+def validate_model_completion_response(raw, content_type):
+    """Treat HTTP success as transport evidence, never as model-completion proof."""
+    require(isinstance(raw, bytes) and raw and len(raw) <= 2000000,
+            "model provider response missing/oversized")
+    require(isinstance(content_type, str) and "application/json" in content_type.lower()
+            and raw.lstrip().startswith(b"{"), "no verifiable model JSON despite HTTP success")
+    try:
+        obj = json.loads(raw)
+    except (UnicodeDecodeError, ValueError) as exc:
+        raise ValueError("malformed model response JSON") from exc
+    require(isinstance(obj, dict) and isinstance(obj.get("model"), str)
+            and obj["model"].strip(), "missing provider model identity")
+    choices = obj.get("choices")
+    require(isinstance(choices, list) and len(choices) == 1
+            and isinstance(choices[0], dict), "missing or unexpected response choices")
+    message = choices[0].get("message")
+    require(isinstance(message, dict) and isinstance(message.get("content"), str)
+            and message["content"].strip(), "missing actual model output")
+    return {"model_returned": obj["model"], "answer": message["content"],
+            "finish_reason": choices[0].get("finish_reason"),
+            "usage": obj.get("usage"), "evidence_level": "MODEL_OUTPUT_SHAPE_ONLY",
+            "clinical_validated": False, "release_approval": False}
+
+
 def anchored_file(root, relative, digest):
     require(isinstance(relative, str) and relative.startswith("content/")
             and not relative.startswith("content//"), "only public teaching-source paths permitted")
