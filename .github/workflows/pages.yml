@@ -62,6 +62,12 @@ jobs:
               python tools/qa_sepsis_mobile.py --widths 360 375 390 --output visual-qa-artifacts/sepsis
             fi
           fi
+      - name: Check ACS deep reader on 360/375/390px and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet origin/main...HEAD -- content/clinical-os/acs.md site/pages.json site/styles.css site/build.py tools/qa_acs_mobile.py; then
+            python tools/qa_acs_mobile.py --widths 360 375 390 1280 --output visual-qa-artifacts/acs
+          fi
       - name: Audit full legacy visual debt when shared rendering changes
         if: github.event_name == 'pull_request'
         continue-on-error: true
