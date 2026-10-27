@@ -11,7 +11,7 @@ Rouleau SG, et al. **Management of Presumed Pulmonary Embolism With Normotensive
 | 原文時間點 | 真實記錄 | 教學可推出／不可推出 |
 | --- | --- | --- |
 | 急診初始 | 44F、BMI 54、近期 COVID-19、右下肢不適；HR 147、RR 33、BP 125/86、HFNC 50 L/min FiO₂ 0.50 時 SpO₂ 98% | 仍需氧療與高呼吸功；正常 BP／補氧後 SpO₂ 不保證 CO 正常 |
-| 初始檢驗 | **VBG** pH 7.06、pCO₂ 15；lactate 13、HCO₃ 9、AG 29、glucose 493、β-hydroxybutyrate 0.27；hs-TnT 27、NT-proBNP 74 | 高 AG 代謝性酸中毒與極高乳酸；不可把靜脈 pCO₂ 當 PaCO₂ 精確代入 Winter；乳酸不能單獨證明 PE |
+| 初始檢驗 | **VBG** pH 7.06、pCO₂ 15；lactate 13、chemistry HCO₃ 9、AG 29、glucose 493、β-hydroxybutyrate 0.27；hs-TnT 27、NT-proBNP 74 | 高 AG 代謝性酸中毒與極高乳酸；**初始 pH/pCO₂ 與 chemistry HCO₃ 不相容，不能當同一時間點計算補償**；乳酸不能單獨證明 PE |
 | 診斷障礙 | 不能平躺接受 CTPA；POCUS views limited/nondiagnostic；ECG S1Q3T3 | 影像未證實前是 presumed PE；ECG 與 RV 線索非確診 |
 | 惡化 | HFNC 下 SpO₂ 85%、意識混亂；repeat **VBG** pH 6.98、pCO₂ 48；仍 normotensive | 呼吸代償與氣道安全正在失敗，不以 SpO₂ 或 BP 單獨評估 |
 | 插管後 | 先給 norepinephrine；插管後 SpO₂ 100%，約 10 分鐘後 arrest；CPR 中 tenecteplase 後 ROSC，VA-ECMO | 不能將「插管造成 arrest」或「tenecteplase 單獨造成存活」寫成已證實因果 |
@@ -19,7 +19,7 @@ Rouleau SG, et al. **Management of Presumed Pulmonary Embolism With Normotensive
 
 原始 Figure 1 是 **S1Q3T3 ECG**；Figure 2 是**機械取栓取出的血栓**，不是原始 CTPA filling defect。圖像目前僅讀取到網站 caption／figure 標題與原文敘述，**尚未完成原像素目視與手機版驗收**，因此不把它們複製到公開稿或宣稱已有可放大的原圖。
 
-## 2. Pocket Medicine 第九版
+**原始病例內部數值一致性 QA：** 若 pH 7.06、pCO₂ 15 mmHg 為同一血氣檢體，Henderson–Hasselbalch 近似反推 HCO₃⁻ ≈ 0.03×15×10^(7.06−6.1) ≈ **4.1 mEq/L**，與另列 chemistry HCO₃ **9 mEq/L** 明顯不一致。原文未交代可確認的抽血時間差或誤植原因，不能私自修正原始資料；主文已將此列為來源疑義並避免用其計算混合酸鹼診斷。後續應向原文作者／期刊或 supplementary data 查證。\n\n## 2. Pocket Medicine 第九版
 
 使用者 Library：*Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine*, 9th ed., Flatten PDF，**reader PDF p.97–101**（檔案解析共 463 頁；既有 VTE 來源紀錄曾以 464 頁表示，頁數 metadata 尚需核對）。本次讀到 **p.98–101 的文字解析與圖表位置**，但頁面影像讀取返回 unavailable，原 PDF 原始 bytes 亦未能 materialize。既有 GitHub [VTE 圖表來源紀錄](../xiaoma-reading/vte-sources.md) 曾記錄 2026-10-26/27 目視 p.97–100，**不冒稱本次已重新目視 p.98–101 的像素**。
 
