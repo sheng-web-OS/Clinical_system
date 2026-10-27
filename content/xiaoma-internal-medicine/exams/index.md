@@ -4,7 +4,7 @@
 
 <!-- XIAOMA_EXAM_ARCHIVE -->
 
-**心音與結構性心臟病跨科歷年詳解：** [46 道小兒、心外及麻醉國考逐選項解題](heart-sounds-cross-specialty-expanded-111-115.md)。另有三道必須查看原卷附圖的題目，會在完成圖像驗證後再補入。
+**心音與結構心臟病跨科真題：** 先讀[29 道原有跨科詳解](../lessons/2026-10-27-heart-sounds-cross-discipline-exams.md)，再讀[20 道不重複新增題](heart-sounds-cross-specialty-expanded-111-115.md)。部分舊題附圖仍需回看考選部原卷，兩篇不重複收錄同一年度／科目／題號。
 
 ## 跨年度怎麼讀？
 
