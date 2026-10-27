@@ -60,7 +60,7 @@ ECG 的每一導程都是從特定方向觀看心臟電位差。局部缺血使�
 
 例如敗血症患者高燒、心率 145、血壓低，hs-cTn 上升：可能存在供需失衡相關 MI，但也可能是與冠脈急性缺血證據不足的 **non-ischemic myocardial injury**。不應因「有敗血症」便自動宣告 secondary MI，更不能因 troponin 陽性便不分原因給 DAPT、heparin、安排 PCI。要重新尋找局部缺血症狀／ECG／區域壁運動、先前 CAD 的可能性與其他心肌傷害來源。
 
-一個可檢驗的例子：假設同一個試劑（單位 ng/L）在三個時間點測得 12、68、145，這是清楚的**動態傷害訊號**，但沒有症狀、ECG 或影像就不能從數字推定原發冠脈血栓；另一位長期 CKD 患者三次測得 80、83、81，可能反映相對穩定的慢性傷害，也不能在急性臨床變化時只看比例而忽略其他證據。這些是假設數列，**不是任何品牌試劑的通用 rule-in/rule-out cutoffs**。若懷疑發病太早、復發梗塞、腎功能改變或採血時間不可靠，更須配合當地 assay 的時間演算法與臨床重估。
+一個可檢驗的例子：**純教學假設**同一種 hs-cTn 試劑對此患者的性別特異 99th-percentile URL 是 **20 ng/L**（這不是任何品牌的實際門檻），三次測值依序為 12、68、145 ng/L。此時至少一次高於假設上限，又有升高變化，可支持 **acute myocardial injury**，卻仍不能只憑數字證明原發冠脈血栓。另一位長期 CKD 患者在同一假設試劑下，穩定時三次為 80、83、81 ng/L，則較符合**慢性心肌傷害的可能性**；但不能在急性病況時只看微小變化就排除新的缺血。這些 URL 與數列都是自編、用來說明定義的數字，**不是實際檢測法的 rule-in/rule-out cutoffs**；真正決策必須查當地 assay 驗證的閾值與抽血時間。若懷疑發病太早、復發梗塞、腎功能改變或採血時間不可靠，更須配合當地 assay 的時間演算法與臨床重估。
 同樣地，冠狀動脈造影若無明顯阻塞，這仍是**診斷工作的起點**。2026 UDMI5 把 **MINOCA** 的原本名稱由 *myocardial infarction with non-obstructive coronary arteries* 更新為 *myocardial injury with non-obstructive coronary arteries*，強調它是**工作診斷，不是已確認的 MI 病因**；冠狀造影沒有 ≥50% 狹窄，並不足以排除 plaque disruption、spasm、SCAD、microvascular pathology，更不足以排除 myocarditis、Takotsubo 或 PE 等非冠脈性原因。依病程、CMR、冠脈內影像或進一步功能測試，才能將工作診斷轉化為 final etiology；若最終確認 MI，仍應歸到 primary、secondary 或 procedure-related 的適當類別，而不是把 MINOCA 當成第四種確定病因。[IBCC：myocardial injury vs ischemia](https://emcrit.org/ibcc/troponin/)
 
 ## 五、風險分層真正決定的是：哪一個人不能等到明天？
