@@ -917,6 +917,18 @@
     "review": "ai_editorial_review"
   },
   {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md",
+    "output": "xiaoma-20261027-cticu-oxygen-delivery.html",
+    "title": "血氧看起來不差，DO₂i 為什麼仍下降？從 CPB 到心臟術後的 Hb × CO",
+    "subtitle": "以真實 CPB 病例區分血液攜氧容量與流量，釐清術後 DO₂、SvO₂ 和輸血判斷的證據邊界",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review"
+  },
+  {
     "source": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",
     "output": "xiaoma-cticu-abg-cabg-sources.html",
     "title": "CABG 術後乳酸與 ABG：來源及原圖查核",
