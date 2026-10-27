@@ -853,3 +853,19 @@
 @media(max-width:680px){.reading-prose .alp-case-compare{grid-template-columns:minmax(0,1fr);gap:.35rem}.reading-prose .alp-case-distinct{font-size:1.25rem;line-height:1.2}.reading-prose .alp-case-compare section{padding:.75rem}.reading-prose .alp-case-compare section>strong{font-size:1.75rem}}
 
 
+
+
+/* #67 independent ALP evidence-update figure: contrast hypothesis shifts,
+   not decorative boxes or a fake linear diagnostic algorithm. */
+.reading-prose .alp-evidence-root{border:1px solid var(--line,#d8dedb);border-left:4px solid var(--brand,#356a8d);border-radius:8px;padding:.9rem 1rem;background:var(--surface,#fff);margin:.8rem 0 .3rem}
+.reading-prose .alp-evidence-root strong{display:block;line-height:1.55}
+.reading-prose .alp-evidence-root p{font-size:.9rem;line-height:1.7;margin:.35rem 0 0}
+.reading-prose .alp-evidence-branch-note{text-align:center;font-size:.83rem;font-weight:700;line-height:1.7;margin:.7rem 0 .8rem;color:var(--muted,#52646b)}
+.reading-prose .alp-evidence-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;max-width:100%}
+.reading-prose .alp-evidence-route{border:1px solid var(--line,#d8dedb);border-radius:10px;padding:.9rem;min-width:0;overflow-wrap:anywhere;background:var(--surface,#fff)}
+.reading-prose .alp-evidence-label{display:block;font-size:.76rem;font-weight:800;line-height:1.6;color:var(--muted,#52646b);margin-bottom:.4rem}
+.reading-prose .alp-evidence-route h4{font-size:1.01rem;line-height:1.45;margin:0 0 .6rem}
+.reading-prose .alp-evidence-route p{font-size:.88rem;line-height:1.72;margin:.4rem 0}
+.reading-prose .alp-evidence-route .alp-evidence-action{border-top:1px solid var(--line,#d8dedb);margin-top:.75rem;padding-top:.65rem}
+.reading-prose .alp-evidence-conclusion{margin:.85rem 0 .3rem;padding:.8rem .9rem;border-radius:8px;background:var(--brand-light,#edf3f5);font-size:.91rem;line-height:1.72}
+@media(max-width:850px){.reading-prose .alp-evidence-branches{grid-template-columns:1fr}.reading-prose .alp-evidence-route{padding:.8rem}.reading-prose .alp-evidence-conclusion{padding:.7rem}}
