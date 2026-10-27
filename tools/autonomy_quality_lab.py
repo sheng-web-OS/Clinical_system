@@ -6,7 +6,9 @@ All verdicts describe the supplied evidence only. Private experiments only.
 import argparse
 import hashlib
 import json
+import os
 import re
+from urllib.request import Request, urlopen
 from pathlib import Path
 
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
@@ -94,6 +96,21 @@ def prepare_packets(root, spec, out):
                 "limitations": "Packet creation does not prove fresh contexts, fair budget, blinded grading or successful repair."}
     (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return manifest
+
+
+def fetch_canonical_issue_133(token):
+    """Read existing single-source failure ledger using only an authenticated GET."""
+    require(isinstance(token, str) and bool(token.strip()),
+            "GitHub read-only token needed to fetch private issue #133")
+    request = Request("https://api.github.com/repos/sheng-web-OS/Clinical_system/issues/133",
+                      headers={"Accept": "application/vnd.github+json",
+                               "X-GitHub-Api-Version": "2022-11-28",
+                               "Authorization": "Bearer " + token,
+                               "User-Agent": "clinical-os-selective-experience"})
+    with urlopen(request, timeout=15) as response:
+        data = json.load(response)
+    require(isinstance(data.get("body"), str), "issue #133 missing canonical body")
+    return data["body"]
 
 
 def select_experiences(issue_markdown, terms, statuses=None, limit=3):
@@ -212,7 +229,9 @@ def main():
     p.add_argument("--spec", required=True)
     p.add_argument("--out", required=True)
     m = cmd.add_parser("memory")
-    m.add_argument("--issue-md", required=True)
+    source = m.add_mutually_exclusive_group(required=True)
+    source.add_argument("--issue-md")
+    source.add_argument("--issue-133", action="store_true")
     m.add_argument("--terms", nargs="+", required=True)
     m.add_argument("--statuses")
     t = cmd.add_parser("trace")
@@ -224,7 +243,9 @@ def main():
         if a.cmd == "prepare":
             result = prepare_packets(a.root, json.loads(Path(a.spec).read_text()), a.out)
         elif a.cmd == "memory":
-            result = select_experiences(Path(a.issue_md).read_text(), a.terms,
+            issue_text = (fetch_canonical_issue_133(os.environ.get("GITHUB_TOKEN", ""))
+                          if a.issue_133 else Path(a.issue_md).read_text())
+            result = select_experiences(issue_text, a.terms,
                     json.loads(Path(a.statuses).read_text()) if a.statuses else None)
         elif a.cmd == "trace":
             result = trace_failure(json.loads(Path(a.events).read_text()))
