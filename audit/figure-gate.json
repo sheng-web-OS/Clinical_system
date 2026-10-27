@@ -721,6 +721,24 @@
           "scope_limit": "No copying of original CT pixels or pixels from Pocket Medicine; link to primary publisher manuscript/PubMedCentral figure and label photographic rights. Real report does not supply her shock status or later procedure; 17/93 is CT-selected retrospective sample, NOT population prevalence."
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-pe-normotensive-shock.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pe-normotensive-shock-sources.md",
+      "reviewed_on": "2026-10-27",
+      "review_type": "AI_original_Pocket_page_99_100_image_inspection_and_original_NICE_PE_flow_review_NOT_independent_physician_review",
+      "rights_decision": "Pocket Medicine 9E original pixels not republished; NICE flow source-linked as external preserved PDF",
+      "items": [
+        {
+          "locator": "Pocket Medicine 9E reader PDF p99 Figure 2-3 Approach to suspected PE; original pixels privately viewed in second Library PDF copy. NICE NG158 suspected PE official visual summary, page 2.",
+          "source_token": "Figure 2-3",
+          "mode": "source_link",
+          "url": "https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf",
+          "why_link_instead": "The complete original NICE PE diagnostic chart is available at the linked PDF, while the copyrighted Pocket 9E artwork was checked privately but is not reproduced without accepted public reuse rights. The existing VTE lesson supplies readable site-native branches.",
+          "teaching_role": "Preserve the original PE diagnostic-test stop/continue branches and conditional additional imaging after a negative CTA when clinical probability remains high; distinguish those diagnostic conditions from circulatory rescue urgency.",
+          "scope_limit": "NICE two-level PE Wells and Pocket 9E Figure 2-3 have different provenance; this linked diagram is not the Pocket original, and a high-risk or deteriorating patient cannot be forced into a stable diagnostic pathway."
+        }
+      ]
     }
   }
 }
