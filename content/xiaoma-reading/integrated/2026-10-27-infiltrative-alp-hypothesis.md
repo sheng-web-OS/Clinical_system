@@ -1,6 +1,6 @@
 # 肝臟被占據，為什麼最突出的卻是 ALP？
 
-2026.07.19 原稿衍生 AI 整合閱讀稿｜2026.10.27 候選稿，**未發布**。原文在 source snapshot（私有原稿封存） 逐字保留，不作為已核實 Facebook canonical 版本。
+2026.07.19 小麻閱讀（Pocket Medicine 9E）｜整合教材更新：2026.10.27
 
 上一篇[Cholestasis：看見 ALP，究竟是找到病因，還是只找到下一個問題？](2026-10-27-cholestasis-evidence-to-action.md)建立了一條重要限制：ALP 比 AST／ALT 升得突出，只是一個經確認肝膽來源後的 *biochemical phenotype*；它不能自己指出膽管被堵住、肝細胞輸送失敗，或肝內某種組織正在增加。
 
@@ -59,7 +59,7 @@ ASH 2026 的 AL amyloidosis 診斷指引強調：若臨床確實懷疑 AL，seru
 
 ## Q3｜反例應如何推翻過度簡化的 ALP 機轉？
 
-2020 年 Doe-Williams 等人的**真實病例**提供了一個極具反證力的觀察：50 歲男性因肝腫大、右上腹脹滿及體重減輕接受評估，另有 nephrotic-range proteinuria。肝切片中約 **95% 的受檢組織**有 AL amyloid 沉積（**不是量得整個肝臟的 95%**）；同次血液檢驗卻是 **ALP 85 IU/L、ALT 14 IU/L、AST 24 IU/L、total bilirubin 0.57 mg/dL**，沒有對應的明顯肝臟生化異常。Urine immunofixation 偵測到 monoclonal free lambda light chain，serum immunofixation 當時未偵測到 monoclonal protein，最後由組織染色與 typing 支持診斷。[3]
+2020 年 Doe-Williams 等人的**真實病例**提供了一個極具反證力的觀察：50 歲男性因肝腫大、右上腹脹滿及體重減輕接受評估，另有 nephrotic-range proteinuria。肝切片中約 **95% 的受檢組織**有 AL amyloid 沉積（**不是量得整個肝臟的 95%**）；同次血液檢驗卻是 **ALP 85 IU/L、ALT 14 IU/L、AST 24 IU/L、total bilirubin 0.57 mg/dL**，沒有對應的明顯肝臟生化異常。原始報告中，**SPEP 只顯示急性發炎型態，serum immunofixation 未檢出 monoclonal protein，但 urine immunofixation 找到微量 free lambda light chain**。這些結果並不是各自一個「有／沒有 amyloid」的答案：尿液線索使單株蛋白相關疾病值得追查，卻仍不能單獨證實沉積物種類；最後是肝組織 Congo red 染色及 lambda 免疫球蛋白輕鏈證據支持 AL amyloidosis 的診斷。[3]
 
 <figure id="fig-alp-amyloid-real-case" class="reasoning-figure">
 <div class="reasoning-title">真實病例圖｜同一個病人，兩種無法互相換算的量測</div>
@@ -93,12 +93,9 @@ ASH 2026 的 AL amyloidosis 診斷指引強調：若臨床確實懷疑 AL，seru
 
 ---
 
-### 來源與驗收狀態
+### 主要參考來源
 
 [1] [ACG abnormal liver chemistries guideline](https://gi.org/guideline/evaluation-of-abnormal-liver-chemistries/), ALP hepatic origin／PBC／PSC／infiltrative differential.  
 [2] [ASH 2026 diagnosis of light-chain amyloidosis](https://pmc.ncbi.nlm.nih.gov/articles/PMC13425172/), recommendations and good practice statements for immunofixation and sFLC.  
-[3] [Massive hepatomegaly secondary to amyloidosis with normal liver chemistries](https://pubmed.ncbi.nlm.nih.gov/32518538/) (2020); counterexample only; independently confirm full report before case-based redrawing.  
-[4] Pocket Medicine, 9E, Figure 3-4, examined Library PDF p.139; adjacent text pp.137–140. Book print page and cross-copy raw hash still pending.  
-[5] 私有原稿／圖表稽核（私有原稿封存）。
-
-**AI-integrated candidate / publication HOLD**：不能以本文的指南彙整冒稱獨立醫師 reviewer；原書像素與原表版式均未重製，作者 Facebook canonical 尚未確認。
+[3] [Massive hepatomegaly secondary to amyloidosis with normal liver chemistries](https://pubmed.ncbi.nlm.nih.gov/32518538/) (2020)；僅作為無法以 ALP 定量推估組織受累的單例反證。  
+[4] Pocket Medicine, 9E, Figure 3-4（原書圖表供核讀，本站未重製出版社圖像）。
