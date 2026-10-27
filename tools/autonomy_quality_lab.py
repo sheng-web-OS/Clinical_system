@@ -147,9 +147,19 @@ def select_experiences(issue_markdown, terms, statuses=None, limit=3):
                             "matched_terms": hits, "source": "GitHub issue #133",
                             "evidence_excerpt": excerpt, "score": len(hits)})
     entries.sort(key=lambda x: (-x["score"], x["incident_id"]))
+    # The real #133 pilot showed that a generic match like "PR" can displace
+    # the true incident when a meaningful term has no lexical hit. A narrow
+    # preview is permitted only with one complete exact-term candidate.
+    # Otherwise demand the canonical issue as context; do not silently
+    # certify retrieval completeness or fabricate semantic synonym matching.
+    complete = [e for e in entries if len(e["matched_terms"]) == len(terms)]
+    requires_full_issue_review = len(complete) != 1
+    preview = entries[:limit] if requires_full_issue_review else complete
     return {"evidence_level": "ISSUE_TEXT_RETRIEVAL_ONLY",
-            "selected": entries[:limit],
-            "limitations": "Verified state is declared by a separate evaluator; never treat excerpts as ground truth or medical orders."}
+            "selected": preview,
+            "requires_full_issue_review": requires_full_issue_review,
+            "memory_adequacy_verified": False,
+            "limitations": "Exact-term overlap is not semantic recall or reviewer authentication; ambiguous/no matches require the full canonical issue, and even a unique match cannot certify medical completeness."}
 
 
 def trace_failure(events):
