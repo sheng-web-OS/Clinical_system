@@ -57,7 +57,28 @@ class ContextRebuttalSafety(unittest.TestCase):
         res = lab.triage_revision_claims("沒有編輯問題的普通段落。", "無需修改。")
         self.assertEqual(res["finding_count"], 0)
         self.assertTrue(res["unparseable_or_absent_findings"])
+        self.assertEqual(res["review_parse_status"], "NO_FINDINGS_DECLARED_NOT_VALIDATED")
         self.assertFalse(res["public_edit_allowed"])
+
+    def test_unparseable_model_text_cannot_masquerade_as_clean(self):
+        res = lab.triage_revision_claims("有待檢視的教材。", "1. Probably a flaw here, but no source quote.")
+        self.assertEqual(res["finding_count"], 0)
+        self.assertEqual(res["review_parse_status"], "UNPARSEABLE_REVIEW_HOLD")
+        self.assertFalse(res["medical_quality_verified"])
+
+    def test_preflight_records_full_exact_source_and_answer_hashes(self):
+        import hashlib
+        source = "病例 A 原文。"
+        answer = review("病例 A 原文。", "文內未交代必要機制。")
+        found = lab.triage_revision_claims(source, answer)
+        self.assertEqual(found["source_sha256_utf8"],
+                         hashlib.sha256(source.encode("utf-8")).hexdigest())
+        self.assertEqual(found["answer_sha256_utf8"],
+                         hashlib.sha256(answer.encode("utf-8")).hexdigest())
+        self.assertEqual(found["review_parse_status"], "NUMBERED_FINDINGS_FOR_CONTEXT_REVIEW")
+        altered = lab.triage_revision_claims(source + " 後續增補。", answer)
+        self.assertNotEqual(found["source_sha256_utf8"], altered["source_sha256_utf8"])
+        self.assertEqual(found["automatic_accepts"], 0)
 
     def test_causal_context_is_returned_even_if_quote_looks_unqualified(self):
         source = "首先 EF 並非血流量。\n\n" + "X" * 70 + "EF 降低不一定立刻代表 SV 下降。\n\n因為 EDV 上升可以暫時代償。"
