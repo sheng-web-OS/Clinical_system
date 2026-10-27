@@ -9,6 +9,7 @@ import sys
 import mistune
 from catalog import load_pages
 from home import render_home
+from reading import render_today_updates, render_article_index
 from math_render import compile_math
 from exam_archive import render_exam_archive, render_exam_year_teasers, question_anchor, connect_exam_reading
 
@@ -189,13 +190,10 @@ def render(md_file, output, page_title, subtitle, rendered=None):
         raw = raw.replace("<!-- XIAOMA_EXAM_YEAR_TEASERS -->", render_exam_year_teasers(PAGES))
     if "<!-- XIAOMA_EXAM_ARCHIVE -->" in raw:
         raw = raw.replace("<!-- XIAOMA_EXAM_ARCHIVE -->", render_exam_archive(PAGES, BASE))
-    if "<!-- XIAOMA_PUBLISHED_LESSONS -->" in raw:
-        lessons = sorted((row for row in PAGES if row.get("collection") == "xiaoma-internal-medicine" and row.get("date") and not row.get("exam")), key=lambda row: row["date"])
-        # Links use output paths already, so the public list needs no source-file exposure.
-        cards = '<div class="lesson-list">' + ''.join(
-            '<a class="lesson-card" href="' + html.escape(row["output"], quote=True) + '"><span class="lesson-date">' + html.escape(row.get("section", "內科閱讀")) + '　 /　 ' + html.escape(row["date"]) + '</span><strong>' + html.escape(row["title"]) + '</strong><p>' + html.escape(row["subtitle"]) + '</p><span class="lesson-card-end">進入閱讀 <span aria-hidden="true">↗</span></span></a>'
-            for row in lessons) + '</div>'
-        raw = raw.replace("<!-- XIAOMA_PUBLISHED_LESSONS -->", cards)
+    if "<!-- XIAOMA_TODAY_UPDATES -->" in raw:
+        raw = raw.replace("<!-- XIAOMA_TODAY_UPDATES -->", render_today_updates(PAGES))
+    if "<!-- XIAOMA_ATLAS_ARTICLES -->" in raw:
+        raw = raw.replace("<!-- XIAOMA_ATLAS_ARTICLES -->", render_article_index(PAGES))
     raw=re.sub(r'<!-- (U0[1-8]) -->',lambda m:'<a class="chapter-anchor" id="'+m.group(1).lower()+'"></a>',raw)
     # Compile MathML from authored TeX before Mistune consumes \\[...\\] as escapes.
     raw=compile_math(raw)
@@ -224,7 +222,7 @@ def main():
         if not source_image.is_file():
             raise FileNotFoundError("Reviewed source figure missing: " + str(source_image))
         shutil.copyfile(source_image, DIST / image_name)
-    # Ship each reviewed locally authored lesson SVG beside the flat generated HTML route.
+    # Bundle the locally authored oxygen-delivery SVG at its flat HTML-relative URL.
     if any(page["output"] == "xiaoma-20261027-cticu-oxygen-delivery.html" for page in PAGES):
         oxygen_figure = BASE / "content/xiaoma-internal-medicine/lessons/cticu-oxygen-delivery-two-paths.svg"
         if not oxygen_figure.is_file():
