@@ -33,21 +33,21 @@ def render_today_updates(pages, today=None):
 
 
 def _group(row):
-    if row.get("kind") == "historical_original":
-        return "歷史原稿典藏"
     if row.get("exam") or "練習" in row.get("section", ""):
         return "國考詳解與練習"
     section = row.get("section", "")
     if any(key in section for key in ("胸腔", "呼吸", "酸鹼", "重症")):
         return "呼吸、酸鹼與重症"
+    if any(key in section for key in ("神經", "癲癇")):
+        return "神經與急症"
     if "心律" in section:
         return "心律與急救"
     if "血栓" in section:
         return "血栓與診斷"
     if any(key in section for key in ("心", "瓣膜", "利尿")):
         return "心臟、循環與利尿"
-    if any(key in section for key in ("肝", "膽", "腸")):
-        return "肝膽與腸道"
+    if any(key in section for key in ("肝", "膽", "腸", "消化", "胰")):
+        return "消化與肝膽"
     return section or "其他閱讀"
 
 
@@ -56,12 +56,14 @@ def render_article_index(pages):
     for row in articles(pages):
         groups[_group(row)].append(row)
     result = ['<div class="atlas-article-index">']
-    for label in sorted(groups, key=lambda s: (s == "歷史原稿典藏", s)):
+    for label in sorted(groups):
         rows = groups[label]
         result.append('<details><summary>' + escape(label) + ' · ' + str(len(rows)) + ' 篇</summary><ul>')
         for row in sorted(rows, key=lambda p: (p["date"], p["title"])):
             result.append('<li><a href="' + escape(row["output"], quote=True) + '">' +
-                          escape(row["title"]) + '</a></li>')
+                          escape(row["title"]) + '</a>' +
+                          (' <small class="atlas-origin-note">原稿</small>' if row.get("kind") == "historical_original" else '') +
+                          '</li>')
         result.append('</ul></details>')
     result.append('</div>')
     return ''.join(result)
