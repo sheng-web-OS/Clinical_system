@@ -13,10 +13,16 @@ Status: HOLD. This is an additive QA record; V1 79/100 and V2 85/100 remain immu
 
 ## Required before publication
 
-- Direct original publisher PDF Table 2/3 visual read, including captions/footnotes; verify source inconsistencies without guessing.
+- Original publisher PDF Table 2/3: a previous conversation turn reported visual inspection of pages 4–5 and confirmed the displayed table values; this QA record does not independently reproduce that inspection. Preserve unresolved narrative/table sampling and duration inconsistencies; original visual proof must be attached to the release audit before marking this gate PASS.
 - Pocket Medicine 9E p32/p374 original-page inspection and 2024 PBM Table 11 captions/footnotes; public figures remain original/link-only.
 - Render original SVG at 375 and 390 CSS px in the actual site, inspect text, clipping, and captions.
 - Separate medical review evidence from AI editorial screening; complete EPQC/Figure Gate and actual CI, production Cloudflare deployment, HTTPS readback.
 - No site/pages.json inclusion, merge, or publication before these checks pass. PR #56 is obsolete; preserve PR #72 on main.
 
 Human interventions: no user correction during this QA step; elapsed human minutes not observed (unknown, not zero). No independent physician review has been performed.
+
+## 2026-10-27 subsequent gate audit
+
+- V2 SVG source inspected directly: viewBox 440×840; two separate CPB episodes; explicit average-versus-event caveat; no invented duration or postoperative CO. Static SVG markup alone does **not** establish 375/390px rendered legibility or absence of clipping.
+- Figure text at native width includes 12–14px caveats; at 375px responsive width these scale to approximately 10.2–11.9px. This is a potential mobile legibility failure and warrants a redesign or verified larger-format presentation before release.
+- Distinguish direct evidence checked in this audit (GitHub V2 text/SVG) from previous-turn reported PDF visual inspection. No false PASS for unobserved browser tests.
