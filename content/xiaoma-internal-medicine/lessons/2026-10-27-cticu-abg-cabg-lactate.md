@@ -37,14 +37,34 @@ ABG（arterial blood gas，動脈血氣）直接測量 **pH、PaCO₂、PaO₂**
 
 在 ICU 最容易犯的錯，往往不是忘記公式，而是把未量到的內容當成已經知道。
 
-<figure id="cticu-measurement-layers" style="margin:1.6rem 0">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr));gap:0.65rem">
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>動脈血氣</strong><p style="margin:0.45rem 0 0">pH、PaCO₂、PaO₂：酸鹼、換氣、氧合</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>代謝與酸鹼</strong><p style="margin:0.45rem 0 0">Lactate、BE、Na/Cl/albumin：代謝狀態與候選原因</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>氧輸送</strong><p style="margin:0.45rem 0 0">Hb × SaO₂ → CaO₂；再結合 CO 推算 DO₂</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>組織的結果</strong><p style="margin:0.45rem 0 0">ScvO₂／SvO₂、灌流徵象與器官功能；皆有抽樣及推論限制</p></div>
+<figure id="cticu-measurement-layers" style="max-width:760px;margin:1.5rem auto">
+<div style="border:1px solid #ceded6;border-radius:14px;padding:clamp(0.85rem,3vw,1.4rem);background:#f8faf8">
+<p style="font-size:0.9rem;font-weight:700;color:#355d50;margin:0 0 0.35rem">同一位 CABG 術後病人｜ICU 第 4 小時（T1）</p>
+<h3 style="margin:0 0 0.85rem;font-size:1.15rem">乳酸很高，靜脈氧飽和度也很高，哪個數字錯了？</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:0.65rem">
+<div style="border-left:4px solid #b35f3d;background:#fff;padding:0.75rem 0.9rem;border-radius:6px">
+<div style="font-size:0.8rem;color:#644d43">血中的代謝訊號｜實測</div>
+<div style="font-size:1.55rem;font-weight:800;color:#873e26;margin:0.12rem 0">Lactate 14.8 <span style="font-size:0.75rem;font-weight:500">mmol/L</span></div>
+<p style="margin:0;font-size:0.93rem">濃度受<strong>生成與清除</strong>共同影響；低灌流、腎上腺素相關代謝等都需評估。</p>
 </div>
-<figcaption><strong>圖 1｜四個不能互換的觀察層次。</strong>本站原創因果整理，對照《Pocket Medicine》第九版 PDF 第 158–160 頁的 acid–base workup 與 Figure 4-1 <em>Acid–base nomogram</em>，<strong>不是</strong>原書圖表的轉描或完整診斷分區。只有在取得同期檢體與其他床邊證據後，才可連接這四個層次；<a href="../cticu-abg-cabg-sources.md#pocket">原書定位與核讀範圍</a>。</figcaption>
+<div style="border-left:4px solid #397a86;background:#fff;padding:0.75rem 0.9rem;border-radius:6px">
+<div style="font-size:0.8rem;color:#345e65">中心靜脈回流訊號｜實測</div>
+<div style="font-size:1.55rem;font-weight:800;color:#245c66;margin:0.12rem 0">ScvO₂ 95%</div>
+<p style="margin:0;font-size:0.93rem">取樣位置的血仍高度飽和；不等於每個器官都有足夠的供氧或氧萃取。</p>
+</div>
+</div>
+<div style="text-align:center;margin:0.55rem 0;font-size:0.88rem;font-weight:700;color:#7b4b37">兩個觀察可以同時成立，不能任選一個當成灌流答案</div>
+<div style="border:1px dashed #a7bdb5;background:#edf3ef;border-radius:9px;padding:0.8rem 0.9rem">
+<strong style="display:block;margin-bottom:0.35rem">真正缺少的生理橋樑：氧送出多少？組織又用了多少？</strong>
+<p style="margin:0 0 0.4rem;font-size:0.92rem"><strong>供應端：</strong>Hb、SaO₂、PaO₂ 決定動脈氧含量 CaO₂；再結合心輸出量 CO，才能估算氧輸送 DO₂。</p>
+<p style="margin:0;font-size:0.92rem"><strong>利用端：</strong>組織耗氧 VO₂、區域血流與微循環氧萃取會影響靜脈剩餘氧量；ScvO₂ 只反映特定採樣位置。</p>
+</div>
+<p style="margin:0.65rem 0 0;font-size:0.9rem"><strong>此例仍未知：</strong>T1 缺乏可配對的完整 ABG、Hb 與 CO，不能替病人算出當時 DO₂，也不能用 95% 排除局部缺血。</p>
+<div style="margin-top:0.7rem;padding:0.72rem 0.85rem;background:#fff;border-radius:8px;border:1px solid #d7e0dc">
+<strong>床邊下一步：</strong>優先查出血／胸管趨勢、血壓與升壓藥需求、心律、心超及器官灌流；再把同步 Hb、血氣與連續 lactate 變化接回來。<strong>不能直接以高 lactate 下令補液，也不能因 ScvO₂ 高就放心。</strong>
+</div>
+</div>
+<figcaption><strong>圖 1｜同時存在的兩個訊號，為何仍不能宣稱組織灌流足夠。</strong>數值為 Wardhana 與 Kurniawaty（2025）CABG 病例系列之病人 3、T1 實測；供應與耗氧段落是用來解釋「缺少什麼資料」的生理關係，非該病人已測得的 DO₂ 或 VO₂。<a href="https://macc.perdatin.org/index.php/my-journal/article/download/429/365/">原始 Table 1</a>。</figcaption>
 </figure>
 
 ## 第二問｜ScvO₂ 95%，為什麼仍不能宣稱 oxygen delivery 足夠？
