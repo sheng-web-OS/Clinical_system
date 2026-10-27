@@ -19,6 +19,8 @@
 
 只在既有 `site/pages.json` 維護關係；不新增題庫、另一份答案或主題登記檔。
 
+年度目錄按每份試卷的實際題號逐列排序，預設只顯示題號、短考點與收合的教材入口。隨文題目的短考點填在 `exam_questions.topic`；舊式單卷詳解填 `exam_topics`（題號字串對短標籤）。這些是顯示標籤，不改變正式題目、答案或身分。
+
 - **既有獨立詳解**：維持 `exam` 欄位。
 - **概念文章已包含正式真題**：在該文章加入 `exam_questions`。每筆包含 `year_roc`、`sitting`、`stage`、`subject`、`question_number` 與精確的 `question_heading`。可用 `concept_heading` 指定同篇應回讀的二級標題，`focus` 描述考點。由建置器產生含完整考試身分的穩定錨點，避免不同年份的同題號互撞；文章仍保留概念教材身分與既有章節。
 - **文章連到別處已發布的真題**：在 `related_exams` 中填同一組五欄身分、`focus` 與可選的 `concept_heading`。年份頁和真題頁的反向連結由這一筆自動生成；同一題可以對應多篇文章，但每篇只登記一次。

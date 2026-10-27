@@ -269,12 +269,11 @@
 .article .exam-year>h2{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:1.35em;line-height:1.35;margin:1.6em 0 .9em}
 .article .exam-year>h2 span{font-size:.53em;color:var(--muted);font-weight:500;white-space:nowrap}
 .article .exam-paper{margin:14px 0 30px;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
-.article .exam-paper h3{margin:0;padding:17px 20px;background:var(--brand-light);border-bottom:1px solid var(--line);font-size:.88em;color:var(--ink);line-height:1.65}
-.article .exam-lesson-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
-.article .exam-lesson{margin:0;padding:18px 20px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);min-width:0}
-.article .exam-lesson-title{display:block;color:var(--ink);text-decoration:none}
-.article .exam-lesson-title strong{display:block;font-size:.94em;line-height:1.55}
-.article .exam-lesson-title small{display:block;font-size:.73em;line-height:1.65;color:var(--muted);margin-top:8px}
+.article .exam-paper h3{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0;padding:12px 16px;background:var(--brand-light);border-bottom:1px solid var(--line);font-size:.82em;color:var(--ink);line-height:1.6}
+.article .exam-paper h3 small{font-size:.8em;color:var(--muted);font-weight:500;white-space:nowrap}
+.article .exam-year-jumps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;max-width:480px;margin:1.2em 0 1.5em;padding:0 0 12px;border-bottom:1px solid var(--line)}
+.article .exam-year-jumps a{font-size:.78em;line-height:1.5;min-height:44px;display:inline-flex;align-items:center;text-decoration:none;font-weight:700}
+.reader-page:has(.exam-year-jumps) .mobile-outline{display:none}
 .article .exam-question-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
 .article .exam-question-links a{display:inline-block;padding:5px 11px;min-height:32px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--brand);font-weight:700;font-size:.77em;line-height:1.55;text-decoration:none}
 .article .exam-question-links a:hover{border-color:var(--brand);background:var(--brand-light)}
@@ -284,16 +283,28 @@
 .reader-exam-origin>a{color:var(--brand);text-decoration:none;border-bottom:1px solid var(--line)}
 @media(max-width:650px){
   .article .exam-year>h2{flex-wrap:wrap;font-size:1.19em;gap:5px;margin:1.55em 0 .7em}
-  .article .exam-paper h3{padding:14px 14px}
-  .article .exam-lesson{padding:15px 15px}
-  .article .exam-lesson-list{grid-template-columns:minmax(0,1fr)}
+  .article .exam-paper h3{padding:12px 14px}
   .reader-exam-origin{margin-top:15px;font-size:11px}
   .article .exam-archive-entry{grid-template-columns:minmax(0,1fr)}
 }
 
 /* One official question can serve several readings without a second answer source. */
-.article .exam-catalog-question{padding:16px 0 0;margin-top:16px;border-top:1px solid var(--line);scroll-margin-top:100px;min-width:0}
-.article .exam-question-entry{display:inline-block;min-height:44px;line-height:1.65;font-size:.82em;font-weight:700;text-decoration:none;padding:8px 0}
+.article .exam-catalog-question{position:relative;margin:0;padding:0;border-top:1px solid var(--line);scroll-margin-top:100px;min-width:0}
+.article .exam-catalog-question:first-child{border-top:0}
+.article .exam-question-entry{display:grid;grid-template-columns:2.8em minmax(0,1fr);align-items:start;gap:10px;box-sizing:border-box;min-height:62px;padding:17px 16px;color:var(--ink);font-size:.84em;line-height:1.65;text-decoration:none}
+.article .exam-catalog-question[data-materials] .exam-question-entry{padding-right:90px}
+.article .exam-question-number{color:var(--brand);font-weight:700;font-variant-numeric:tabular-nums}
+.article .exam-question-topic{min-width:0;overflow-wrap:anywhere;font-weight:500}
+.article .exam-question-entry:hover .exam-question-topic{text-decoration:underline;text-underline-offset:4px}
+.article details.exam-catalog-materials{margin:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.article .exam-catalog-materials>summary{position:absolute;right:10px;top:8px;display:flex;align-items:center;gap:5px;min-height:44px;margin:0;padding:0 8px;color:var(--muted);font-size:.72em;font-weight:500;line-height:1.5;cursor:pointer;list-style:none;background:transparent;border:0}
+.article .exam-catalog-materials>summary::-webkit-details-marker{display:none}
+.article .exam-catalog-materials>summary::after{content:'⌄';font-size:1.1em}
+.article .exam-catalog-materials[open]>summary{color:var(--brand)}
+.article .exam-catalog-materials[open]>summary::after{content:'⌃'}
+.article .exam-catalog-materials .exam-concept-links{margin:0 16px 16px 22px;padding:0 0 0 14px;border-left:2px solid var(--line);font-size:.76em}
+.article .exam-catalog-materials .exam-concept-links li{margin-bottom:5px}
+.article .exam-catalog-materials .exam-concept-links li>a{padding:8px 0;line-height:1.7}
 .article .exam-concept-links{font-size:.78em;line-height:1.7;min-width:0}
 .article .exam-concept-links>span{display:block;font-size:.88em;color:var(--muted);margin-bottom:5px}
 .article .exam-concept-links ul{list-style:none;margin:0;padding:0}
