@@ -845,3 +845,36 @@
 .article .inline-source-figure figcaption span{display:block}
 .article .inline-source-figure figcaption a{display:inline-block;margin:.3rem 0}
 .article .inline-source-figure figcaption small{display:block;font-size:.82rem;line-height:1.7}
+
+
+/* True measured contrast in a single published case: biopsy-area estimate is
+   deliberately not plotted on the same quantitative axis as serum ALP. */
+.reading-prose .alp-case-compare{display:grid;grid-template-columns:minmax(0,1fr) 2rem minmax(0,1fr);gap:.65rem;align-items:center;margin:1.2rem 0;max-width:100%}
+.reading-prose .alp-case-compare section{padding:1rem;min-width:0;border-radius:10px;border:1px solid var(--line);background:var(--surface);box-sizing:border-box}
+.reading-prose .alp-case-compare section>small{display:block;font-size:.74rem;letter-spacing:.02em;color:var(--muted);line-height:1.6}
+.reading-prose .alp-case-compare section>strong{font-size:2rem;display:block;font-variant-numeric:tabular-nums;line-height:1.5;white-space:normal}
+.reading-prose .alp-case-compare section>strong span{font-size:.75rem;font-weight:600;white-space:nowrap}
+.reading-prose .alp-case-compare p{font-size:.84rem;line-height:1.65;margin:.55rem 0 0}
+.reading-prose .alp-case-sample-meter{width:100%;height:22px;background:var(--brand-light);border-radius:5px;overflow:hidden;border:1px solid var(--line)}
+.reading-prose .alp-case-sample-meter span{height:100%;display:block;background:var(--brand);border-right:2px solid currentColor;box-sizing:border-box}
+.reading-prose .alp-case-distinct{text-align:center;font-size:1.5rem;font-weight:700;color:var(--muted)}
+.reading-prose .alp-case-clinical-label{display:inline-block;padding:.24rem .45rem;border-radius:4px;border:1px solid var(--line);font-size:.76rem;font-weight:700}
+@media(max-width:680px){.reading-prose .alp-case-compare{grid-template-columns:minmax(0,1fr);gap:.35rem}.reading-prose .alp-case-distinct{font-size:1.25rem;line-height:1.2}.reading-prose .alp-case-compare section{padding:.75rem}.reading-prose .alp-case-compare section>strong{font-size:1.75rem}}
+
+
+
+
+/* #67 independent ALP evidence-update figure: contrast hypothesis shifts,
+   not decorative boxes or a fake linear diagnostic algorithm. */
+.reading-prose .alp-evidence-root{border:1px solid var(--line,#d8dedb);border-left:4px solid var(--brand,#356a8d);border-radius:8px;padding:.9rem 1rem;background:var(--surface,#fff);margin:.8rem 0 .3rem}
+.reading-prose .alp-evidence-root strong{display:block;line-height:1.55}
+.reading-prose .alp-evidence-root p{font-size:.9rem;line-height:1.7;margin:.35rem 0 0}
+.reading-prose .alp-evidence-branch-note{text-align:center;font-size:.83rem;font-weight:700;line-height:1.7;margin:.7rem 0 .8rem;color:var(--muted,#52646b)}
+.reading-prose .alp-evidence-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;max-width:100%}
+.reading-prose .alp-evidence-route{border:1px solid var(--line,#d8dedb);border-radius:10px;padding:.9rem;min-width:0;overflow-wrap:anywhere;background:var(--surface,#fff)}
+.reading-prose .alp-evidence-label{display:block;font-size:.76rem;font-weight:800;line-height:1.6;color:var(--muted,#52646b);margin-bottom:.4rem}
+.reading-prose .alp-evidence-route h4{font-size:1.01rem;line-height:1.45;margin:0 0 .6rem}
+.reading-prose .alp-evidence-route p{font-size:.88rem;line-height:1.72;margin:.4rem 0}
+.reading-prose .alp-evidence-route .alp-evidence-action{border-top:1px solid var(--line,#d8dedb);margin-top:.75rem;padding-top:.65rem}
+.reading-prose .alp-evidence-conclusion{margin:.85rem 0 .3rem;padding:.8rem .9rem;border-radius:8px;background:var(--brand-light,#edf3f5);font-size:.91rem;line-height:1.72}
+@media(max-width:850px){.reading-prose .alp-evidence-branches{grid-template-columns:1fr}.reading-prose .alp-evidence-route{padding:.8rem}.reading-prose .alp-evidence-conclusion{padding:.7rem}}

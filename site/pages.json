@@ -1752,5 +1752,29 @@
       "8": "PE 抗凝停藥與誘發因子（官方更正 C／D）",
       "9": "肺栓塞診斷：影像、D-dimer 與右心負荷"
     }
+  },
+  {
+    "source": "content/xiaoma-reading/integrated/2026-10-27-infiltrative-alp-hypothesis.md",
+    "output": "xiaoma-reading-infiltrative-alp-hypothesis.html",
+    "title": "肝臟被占據，為什麼最突出的卻是 ALP？",
+    "subtitle": "ALP 訊號≠組織診斷；SPEP陰性≠排除 AL amyloidosis",
+    "collection": "xiaoma-reading",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "肝膽"
+  },
+  {
+    "source": "content/xiaoma-reading/infiltrative-alp-sources-20261027.md",
+    "output": "xiaoma-reading-infiltrative-alp-sources.html",
+    "title": "Infiltrative ALP｜原始來源與檢查界線",
+    "subtitle": "Pocket Medicine 9E／原始指南與測量推論的來源限制",
+    "collection": "xiaoma-reading",
+    "layout": "reader",
+    "section": "來源與版本",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
