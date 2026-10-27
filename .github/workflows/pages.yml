@@ -54,6 +54,12 @@ jobs:
             python -m playwright install-deps chromium
             python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); b=p.chromium.launch(headless=True); b.close(); p.stop()'
           fi
+      - name: Verify official exam study links on 360/375/390px phones
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet origin/main...HEAD -- site/pages.json site/exam_archive.py site/build.py site/styles.css tools/qa_exam_year_mobile.py; then
+            python tools/qa_exam_year_mobile.py --output visual-qa-artifacts/exam-year
+          fi
       - name: Enforce SAAG exam table readability on phone
         if: github.event_name == 'pull_request'
         run: |
