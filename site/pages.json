@@ -1791,6 +1791,33 @@
         "question_number": 76,
         "focus": "由古柯鹼誘發缺血釐清血管痙攣、心肌需氧與用藥限制",
         "concept_heading": "01｜診斷：缺血與心肌傷害，為什麼不能互相取代？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 11,
+        "focus": "從持續胸痛、前壁 STE、SpO₂ 到仍需緊急再灌流的條件判斷",
+        "concept_heading": "03｜治療：藥物、導管與時間，各自要改變哪一段病程？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 12,
+        "focus": "從 LAD 打通後的新風險辨別 LV thrombus、VT/VF 和長期次級預防",
+        "concept_heading": "04｜MI 之後：血管已通，為什麼還不能說病人恢復了？"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 13,
+        "focus": "灌流下降、壁運動、ECG 電位和血中 troponin 訊號的不同時間尺度",
+        "concept_heading": "02｜ECG：心肌病灶與紙上的波形，隔著一個觀察方向"
       }
     ]
   },
@@ -1855,6 +1882,35 @@
     "exam_topics": {
       "6": "PCI 抗凝、抗血小板與 GP IIb/IIIa",
       "9": "MI 後心衰竭症狀與液體負荷"
+    }
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md",
+    "output": "xiaoma-exam-115-2-med3-acs-q11-q13.html",
+    "title": "從胸痛到支架、再回頭問 ECG：三道國考題如何重建一段 STEMI 病程？",
+    "subtitle": "115（二）醫學（三）Q11–Q13：急診抗缺血、PCI 後心律／血栓與 ischemic cascade",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與胸痛・官方真題",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-acs-exam-sources.html",
+    "exam": {
+      "year_roc": 115,
+      "sitting": 2,
+      "stage": 2,
+      "subject": "醫學（三）",
+      "question_numbers": [
+        11,
+        12,
+        13
+      ]
+    },
+    "exam_topics": {
+      "11": "STEMI 急診：硝化甘油不是再灌流",
+      "12": "PCI 後 VT／VF、LV thrombus 與次級預防",
+      "13": "缺血 cascade：ECG 不必與 cTn 同步"
     }
   }
 ]
