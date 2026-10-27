@@ -4,6 +4,8 @@
 
 疾病名稱方便檢索，卻不是床邊第一個問題。病人帶來的是呼吸困難、胸痛、低血壓、尿量減少或腹痛；每個表現都可能來自數條不同的機轉。這張地圖按照**臨床問題 → 生理分歧 → 改判證據 → 閱讀次序 → 驗證題目**安排已發布教材。它不是診療演算法；處置仍須依病人的當下風險與正式指引。
 
+[查找全部文章索引](#article-index) · 下方依臨床問題安排先備觀念與閱讀順序。
+
 <nav class="atlas-jumps" aria-label="以臨床問題尋找閱讀起點">
 <a href="#dyspnea"><small>01 / 呼吸</small><strong>病人為什麼喘？</strong><span>氧合、換氣、攜氧量與流量</span></a>
 <a href="#perfusion"><small>02 / 循環</small><strong>血壓在，灌流足夠嗎？</strong><span>鬱血、充盈壓與前向血流</span></a>
@@ -101,6 +103,8 @@
 
 **建議順序：** [肝臟檢驗：先分開三條軸](../xiaoma-reading/integrated/2026-10-26-liver-tests.md) → [HBV phase 不是 fibrosis stage](../xiaoma-reading/integrated/2026-10-26-hbv-phase-state-vs-stage.md) → [ALT 訊號、phase 推論與治療門檻](../xiaoma-reading/integrated/2026-10-26-hbv-signals.md)。第一篇提供檢驗語言，第二篇拆開當下狀態與累積結構，第三篇追問觀察的不完整性如何改變等待風險。
 
+**膽汁排泄分支：** 接續[Cholestasis：從 ALP 與影像走到下一步行動](../xiaoma-reading/integrated/2026-10-27-cholestasis-evidence-to-action.md)，再回看本節的傷害、型態與功能三條軸。
+
 **改判與驗證：** 保留同一組正常 ALT／低量 HBV DNA，把「無顯著 fibrosis」改成「已有 cirrhosis」，說出哪些結論必須重算。再問：ALT 下降但 INR 與意識惡化時，為何不能等 phase 分類完成才處置？若想看結構性疾病如何影響有效循環，接到既有[腹水、HRS 與腎灌流](../xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-perfusion.md)。
 
 ## 同一條 accessory pathway，為何會改變用藥安全性？
@@ -129,6 +133,13 @@
 **建議閱讀：** [便祕：排出的糞便已軟，未完成的是什麼？](../xiaoma-reading/integrated/2026-10-26-constipation.md)。此篇為作者確認的虛構教學情境；用來拆解推理，不作病例療效證據。
 
 **改判與驗證：** 糞便同樣較軟，一種情況仍有阻塞感與 manual maneuver，另一種情況出現腹脹、嘔吐與無法排氣。兩者下一步為何不同？DRE、ARM／BET 要補的資訊又各是什麼？
+
+## 全部文章索引
+<span id="article-index" class="atlas-target"></span>
+
+依主題展開可直接找到全部已公開文章；閱讀先後與跨篇關係見上方各臨床分支。[正式國考題也可按年度查找](../xiaoma-internal-medicine/exams/index.md)。歷史原稿集中於典藏分類，新版整合教材列於各主題。
+
+<!-- XIAOMA_ATLAS_ARTICLES -->
 
 ## 如果不知道從哪裡開始，怎麼選路線？
 

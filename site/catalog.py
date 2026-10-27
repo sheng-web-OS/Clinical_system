@@ -35,6 +35,10 @@ def load_pages(root):
             raise ValueError("Duplicate publication source or output")
         sources.add(row["source"])
         outputs.add(row["output"])
+        if "updated" in row:
+            updated = date.fromisoformat(row["updated"])
+            if not row.get("date") or updated < date.fromisoformat(row["date"]):
+                raise ValueError("Updated date must not precede article date")
         if "/lessons/" in row["source"]:
             date.fromisoformat(row.get("date", ""))
             if row.get("review") not in ("author_source_check", "ai_editorial_review", "independent_ai_review", "human_review"):
@@ -77,6 +81,6 @@ def load_pages(root):
     from figure_gate import validate_figure_gate
     from exam_archive import validate_exam_catalog
     validate_figure_gate(root, pages)
-    validate_exam_catalog(pages)
+    validate_exam_catalog(pages, root)
     return pages
 
