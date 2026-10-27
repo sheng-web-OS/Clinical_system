@@ -65,7 +65,7 @@ Lactate 2.3 是一個可能與疾病嚴重度和代謝壓力相關的觀察，�
 
 ## 05　Na 133 與 glucose 210：濃度、張力和體內總量不是一件事
 
-血鈉是**血漿水中鈉與其他滲透相關溶質分布的濃度表現**，不等於體內鈉總量或「缺鹽的公斤數」。高血糖可使水分由細胞內移到細胞外而降低測得的 Na。若用常見的粗估方式，以 glucose 每超過 100 mg/dL 一百單位，Na 修正約增加 1.6 mmol/L，本例 05:40 測得 Na 133、glucose 210，粗估修正約 135。這個估算不是病因診斷，而且校正因子在較極端血糖與不同情境下可能不同。[8]
+血鈉是**血漿水中鈉與其他滲透相關溶質分布的濃度表現**，不等於體內鈉總量或「缺鹽的公斤數」。高血糖可使水分由細胞內移到細胞外而降低測得的 Na。若依歐洲 2014 年低血鈉指引的經驗校正式，每當 glucose 比 100 mg/dL 高出 100 mg/dL，將 measured Na 加上約 2.4 mmol/L。本例 05:40 Na 133、glucose 210，估算 corrected Na = 133 + 2.4 × (210 − 100) / 100 ≈ **135.6 mmol/L**。若使用另一種常見的 Katz 係數 1.6，則約 **134.8 mmol/L**；兩種都是特定假設下的近似值，不應把小數點差異當作真實體液變化。[8] 這個估算不是病因診斷，也不能取代血清滲透壓與病人症狀；原指引的公式曾發表單位勘誤，計算須明確維持 glucose 的 mg/dL 單位。[8]
 
 因此不能一見 133 就開高張食鹽水，或因修正後接近正常便宣布沒事。若低鈉持續、症狀相符或需治療，下一步取決於實際低張性是否成立、變化速度、症狀、尿液滲透壓與尿鈉、輸入輸出及病人容量狀態。即便血鈉低，病人仍可處於總鈉過多且水過多的情境。系列後文才會完整推導 osmolality、tonicity、ADH、free-water clearance 與矯正速率；本篇先把「血鈉」與「容量」拆開。
 
@@ -134,7 +134,7 @@ Platelet 154 ×10³/µL 可能落在某些實驗室參考範圍內，但從 232 
 5. KDIGO, *Acute Kidney Injury Clinical Practice Guideline*, 2012，經官方主題頁定位；本篇以 NICE 的 HTML 正文核對現行標準判準。https://kdigo.org/guidelines/acute-kidney-injury/
 6. KDIGO 官方 AKI/AKD 頁記載 2026 **draft for public review / preparing for publication**，此時不可當成已生效新指引。https://kdigo.org/guidelines/acute-kidney-injury/
 7. Clinical_system 已有《pH 正常，為什麼仍可能有兩個酸鹼障礙？》與 Pocket Medicine 9E 對照來源，作為酸鹼延伸的先備教材；本篇只使用同時點生化、AG 與 Winter 檢查，不宣稱直接查核原圖。相應臨床正文：2026-10-23-acid-base.md
-8. European Clinical Practice Guideline on Hyponatraemia, 2014，作為電解質章的原始診斷方法索引；本篇的 glucose 校正只是粗估，正式鈉水章需逐段驗證校正與限制。https://academic.oup.com/ejendo/article/170/3/G1/6668028
+8. European Clinical Practice Guideline on Hyponatraemia, 2014，核對 6.2.1 hyperglycaemia 校正以 2.4 mmol/L per 100 mg/dL 為指引例示，並核對其 2014 correction 對公式單位的勘誤；Katz 1.6 僅作常見不同估算法比較。https://academic.oup.com/ejendo/article/170/3/G1/6668028 ; https://academic.oup.com/ejendo/article/171/1/X1/6661472
 9. MedlinePlus, *Complete Blood Count* 與 *Blood Differential*，用於測量定義及 DC 的臨床非特異性，不作為嗜中性球低下療法門檻來源。https://medlineplus.gov/lab-tests/complete-blood-count-cbc/ ; https://medlineplus.gov/lab-tests/blood-differential/
 10. Choosing Wisely Canada, *Using Labs Wisely*；Washington University Laboratory Utilization CBC/BMP 指引。適用於**臨床與檢驗穩定、缺乏新問題的住院患者**，不是對急重症少抽血的絕對規則。https://choosingwiselycanada.org/hospitals/labs-test/ ; https://sites.wustl.edu/laboratoryutilization/items/complete-blood-count-cbc-without-differential-blood-lab294-basic-metabolic-panel-bmp-lab15-comprehensive-metabolic-panel-cmp-lab17/
 11. KDIGO 2024 CKD Guideline，慢性性與 GFR／albuminuria 共同評估；2027 focused CKD update 仍在公開審查，不提前當作正式更新。https://kdigo.org/guidelines/cKD-Evaluation-and-Management/
