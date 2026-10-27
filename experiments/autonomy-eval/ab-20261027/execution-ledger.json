@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-10-27T07:12:18.371738+00:00",
+  "start_monotonic": 2811.480339591,
+  "runs": {
+    "baseline-1": {
+      "response_sha256": "d03e332be8b0de240995105a63ebe4f504e8c94920f7f2bc24d7d0d30cbeaf62",
+      "file_completed_at": "2026-10-27T07:13:43.436007+00:00",
+      "response_count": 24,
+      "worker_context": "/root/trial_p1",
+      "fork_turns": "none",
+      "model_override": null
+    },
+    "baseline-2": {
+      "response_sha256": "160acdce716d8d1e655a7ad74a0fe5363f1d51def3f83b45c1c1e52a4df75e9e",
+      "file_completed_at": "2026-10-27T07:14:16.108752+00:00",
+      "response_count": 24,
+      "worker_context": "/root/trial_p5",
+      "fork_turns": "none",
+      "model_override": null
+    },
+    "baseline-3": {
+      "response_sha256": "5479cb4588e6cf429ec6733b16ca339d5beaf31ec0489c898958f5e045e1a7ce",
+      "file_completed_at": "2026-10-27T07:13:57.271301+00:00",
+      "response_count": 24,
+      "worker_context": "/root/trial_p3",
+      "fork_turns": "none",
+      "model_override": null
+    },
+    "rules-1": {
+      "response_sha256": "c751afd7e2d41b4c10f5c805d8a532b23ac2afbd72474091f503702602b21a67",
+      "file_completed_at": "2026-10-27T07:14:17.032773+00:00",
+      "response_count": 24,
+      "worker_context": "/root/trial_p4",
+      "fork_turns": "none",
+      "model_override": null
+    },
+    "rules-2": {
+      "response_sha256": "6138ed0fc1bfd5980a0d2e83a5d78b63e109cc46008262cbabda9cee379cac5c",
+      "file_completed_at": "2026-10-27T07:13:58.048341+00:00",
+      "response_count": 24,
+      "worker_context": "/root/trial_p2",
+      "fork_turns": "none",
+      "model_override": null
+    },
+    "rules-3": {
+      "response_sha256": "e946bd7db77a45819fce3699d6b4a9d24dfa6618977d69578715ba9559ffe96f",
+      "file_completed_at": "2026-10-27T07:14:30.153076+00:00",
+      "response_count": 24,
+      "worker_context": "/root/trial_p6",
+      "fork_turns": "none",
+      "model_override": null
+    }
+  },
+  "worker_phase_complete_at": "2026-10-27T07:16:55.460279+00:00",
+  "wall_clock_note": "File timestamps and root observation only; no inference-latency comparison.",
+  "model_version": "Same inherited configuration; exact provider/model version not returned by collaboration tools.",
+  "adjudication": {
+    "context": "/root/blinded_adjudication",
+    "fork_turns": "none",
+    "graded_responses": 144,
+    "grades_sha256": "e28c10ffbc53e6396a1667e9611e210405b675352fb6c3a6f65c1728decb1350",
+    "observed_complete_at": "2026-10-27T07:22:15.182363+00:00"
+  }
+}
