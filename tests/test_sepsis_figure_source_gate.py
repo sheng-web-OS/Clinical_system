@@ -8,17 +8,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLE = "content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md"
-SOURCE = "content/clinical-os/sepsis-sources-20261027.md"
-ORIGINAL_FIGURE = "https://link.springer.com/article/10.1186/s12245-025-00958-5/figures/1"
+SOURCE = "content/clinical-os/sepsis-visual-evidence-and-sources.md"
+ORIGINAL_FIGURE = "https://link.springer.com/article/10.1186/s12245-025-00958-5#Fig1"
 
 
 class SepsisFigureSourceGate(unittest.TestCase):
     def test_original_figure_and_public_source_are_linked(self):
         article = (ROOT / ARTICLE).read_text(encoding="utf-8")
         self.assertIn(ORIGINAL_FIGURE, article)
-        self.assertIn("sepsis-sources-20261027.md", article)
+        self.assertIn("sepsis-visual-evidence-and-sources.md", article)
         source = (ROOT / SOURCE).read_text(encoding="utf-8")
-        self.assertIn("Fig. 1", source)
+        self.assertIn("Fig 1", source)
         self.assertIn(ORIGINAL_FIGURE, source)
         self.assertIn("Case 1", source)
 
