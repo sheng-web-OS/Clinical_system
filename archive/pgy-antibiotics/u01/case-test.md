@@ -1,47 +1,45 @@
-# U01｜兩站 PGY 臨床決策演練（請先答題，後看標準）
+# U01｜兩站未知決策考核＋對抗性反事實
 
-> 完全合成情境；預計 10 分鐘完成 T0，再以 5 分鐘完成 T48。正式成績需**實際使用者作答**，AI 自行產出標準答案不等於人已通過。
+2026-10-28｜合成病例測驗 v0.2；先回答，後回完整主文。**題目成立不代表使用者已作答或通過。**
 
-## Station A｜02:10 來電（10 分）
-68M CKD G3、DM、BPH，T39.1、HR124、BP92/56、RR26、較平日嗜睡，Cr2.0（2 週前1.3）、lactate3.8、pyuria、右 hydronephrosis，2 個月前 urine ESBL *E. coli*；目前無本次培養或完整藥敏。
+## Station A｜02:10，第一劑之前（10 分鐘）
 
-**作答**：
-1. 前 5 分鐘你做哪三件並行事項？需要 call 誰？
-2. 哪些檢體要拿、何時拿？哪些結果不應等到才用藥？
-3. 請選「偏向 meropenem IV／常規 ceftriaxone IV／先等尿培」的一個初始治療策略，給出**本個案的證據與仍需核對**；若選錯你在冒什麼風險？
-4. 請填完整安全醫囑欄位（缺必要資料時寫待確認，不要猜 mg/interval），並指出 AKI first-dose/maintenance 的不同。
-5. 為何尿路超音波會讓你立即找泌尿科？若已用上 active agent 是否可等明天？
+68M DM、BPH、CKD，T39.1、HR124、RR26、BP92/56，平日清楚、今天嗜睡，Cr2.0（baseline 1.3），lactate3.8，右側 CVA tenderness／hydronephrosis、pyuria；兩個月前 urine ESBL E. coli；penicillin allergy 未明；本次沒有培養或完整 AST，沒有現院 antibiogram，也尚不知體重。
 
-### Station A rubric（10 分，合格 ≥8 且 Critical error=0）
-- 2：不穩定/可能 sepsis 訊號和即時上級／復甦處置；
-- 2：blood/urine cultures 及不能延誤高危病人的 first dose；
-- 2：合理 empiric strategy 並正確賦予近期 ESBL 與當院 antibiogram 權重；
-- 2：過敏、腎功能動態、drug–drug、loading/maintenance、劑量與給藥流程待核證；
-- 2：疑似 infected obstruction 時 source control/urology 並行。
+**請在不看主文下回答**：
+1. 0–5 min 的三個**並行**行動是什麼？哪些危險要立即叫總醫師/主治/ICU／urology？
+2. 血/尿培要何時取得？如果等待會延誤第一劑怎麼辦？
+3. 在「meropenem IV／ceftriaxone IV／piperacillin–tazobactam IV／ertapenem IV／等尿培」之間，為本例挑優先核對策略，解釋 ESBL prior、sepsis severity、菌血症疑慮、Pseudomonas、各藥限制與未知項；為何不是單一 ESBL 標籤決策？
+4. 開立前要完成什麼過敏與 AKI first dose/maintenance 核藥？未知 mg/interval 要怎樣註記？
+5. 什麼條件使 right hydronephrosis 成為緊急 source control 議題？有哪幾個結論**現在還不能宣稱**？
 
-**Critical errors**：重病仍等待培養回報才決定給抗生素；忽視已知可能感染性阻塞而完全不找泌尿科；以未經核證之劑量直接當作病人可用醫囑；未辨認血流動力／意識惡化需要升級。
+**Rubric 10 分**：危急升級與復甦 2；培養/時序 2；2026 ESBL empiric differentiation 2；過敏/腎功能與非虛構醫囑 2；引流與適用邊界 2。**≥8 且 critical errors 0** 是模擬達標門檻，但目前無真實成績。
 
-## Station B｜T48/T72 再評估（5 分）
-此次 blood+urine ESBL *E. coli*；ceftriaxone-R、meropenem-S、TMP-SMX-S（模擬），以及三種情況：
+**Critical errors**：高危時等 AST 才給藥；以 pyuria 單獨診斷 sepsis；無評估便把 ceftriaxone 當作近期 ESBL 患者可靠首選；未排除嚴重過敏/AKI 就抄固定劑量；忽略疑似 infected obstruction；把 BP+lactate 當成完整 septic shock 診斷。
 
-**分支 I**：需升壓劑、hydro 未解除，病人無法吞藥。你會因 TMP-SMX-S 換 PO 嗎？核心缺口是什麼？
+## Station B｜T48 的藥敏還不等於出院條件（10 分鐘）
 
-**分支 II**：T24 已置支架/完成引流，現在退燒、BP 穩、可吞藥、K4.3、藥物交互作用待核對。什麼資料還需要，才能合理考慮口服 active agent？療程如何起算？
+合成血尿培 ESBL E. coli，ceftriaxone-R, meropenem-S, TMP-SMX-S。**三個分支**各答實際下一步與邊界：
 
-**分支 III**：長期 Foley 患者沒有發燒、沒有任何局部/系統症狀、血流動力學穩定，只有 pyuria、尿培 ESBL *E. coli*。是否立即給藥？有何例外？
+1. **B1：**需要升壓劑＋尿路還沒減壓＋無法口服。為何 TMP-SMX-S 不能決定立即 IV-to-PO？先找什麼？
+2. **B2：**T24 已減壓，T48 血流動力與精神恢復、可吞藥；K4.3，CKD/AKI 與交互作用完整資料待查。符合什麼條件才可轉 susceptible oral agent？何時開始計療程，是否必然七天？
+3. **B3：**長期 Foley，尿培 ESBL E. coli 與 pyuria 但無症狀、無 systemic illness。要不要立刻上 carbapenem？例外是什麼？
 
-### Station B rubric（10 分，合格 ≥8 且 Critical error=0）
-- 2：分清 AST-S 與臨床可 PO 的必要前提；
-- 2：在未控制感染源或不穩定時不誤用 de-escalation；
-- 2：知道符合條件下可由 IV carbapenem 轉 active PO，與禁忌／monitoring；
-- 2：療程由第一天 effective therapy 計算，能指出 CKD/obstruction/prostatitis 等個別化界線；
-- 2：辨識 asymptomatic catheter bacteriuria，避免無指徵抗菌藥，並說明特殊例外。
+**Rubric 10 分**：正確詮釋 AST 2；臨床穩定/source control 2；適當降階/口服與毒性 2；有效治療起算與療程納排 2；ASB 反例與例外 2。**Critical errors**：未 source control 就因 S 換 PO；不分有效/無效藥物起算；無症狀菌尿一律治療。
 
-**Critical errors**：不看 clinical stability/source control 就換 PO；把第一次無效抗菌藥當有效療程第 1 天；將無症狀尿培陽性一律治療（不評估例外）。
+## Adversarial transfer test（未見過情境）
 
-## 教學版答案的最低必要推理
-**A**：危急先支援及上級評估、同時採檢與 early active empirical therapy；近期 ESBL 增加 ceftriaxone inactive 機會，危重病人可考慮 meropenem IV，但要即刻核院內 policy／真正過敏／腎功能與輸注；hydronephrosis + infection 要查 infected obstruction 並緊急 source control。
+- **T1：**把先前菌種換成 CRE Klebsiella 並增加 carbapenem-R，meropenem 還能當可預期 active 的預設嗎？請指出需要機轉/MIC/AST 與哪些專家。
+- **T2：**完全沒有休克、無菌血症、這次確認 ESBL cUTI 對 piperacillin–tazobactam 為 S；怎樣處理 2026 AMR 的替代方案定位與 susceptible oral 選項？
+- **T3：**尿液培養 ESBL，但新血培卻是 S. aureus，病人尿路無阻塞，改找什麼 source，不能有什麼 anchoring error？
+- **T4：**病人昏沉且 allergy 記錄為「penicillin」，查到過去疑似 SJS/TEN；能否以「carbapenem 交叉率低」直接開立？應急診如何共同決策？
 
-**B-I**：不可；藥敏單一 S 不能越過灌流、吸收、source control，須急處理未解除阻塞。**B-II**：若各項條件符合且無危險禁忌，susceptible TMP-SMX 可成合理 targeted/oral 候選；療程始於 first active day，長度不可因表面改善直接套用七天，需看 CKD/構造異常與其他感染灶。**B-III**：通常不給抗菌藥；懷孕及某些 urologic mucosal-trauma procedure 等例外另評估。
+## 參考答案（限評分後閱讀）
 
-**狀態**：標準答案為教材範本，尚無讀者正式作答；不計任何通過率。來源：[IDSA cUTI 2025](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)、[IDSA AMR 2026](https://www.idsociety.org/practice-guideline/amr-guidance/)、[EAU urolithiasis](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)、[IDSA ASB](https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/)。
+A：立即床邊 resuscitation／求援＋適當培養（不因抽不到而顯著延誤）＋盡速核對可能 ESBL-active IV 首劑，與泌尿科 source-control 並行；本危重情境傾向核對 meropenem，重點是處方完成而非藥名猜對。過敏、體重、renal kinetics、CrCl method、RRT、infusion、本院 restricted approval 不明均須明示 PENDING，而非填假的 mg/qh。尚無法只靠 lactate 及 BP 定義 septic shock，亦不能以 hydronephrosis 當已確診 obstructing stone。
+
+B1：先確認灌流、持續有效 IV 曝露及必要引流，不以 S 代替 source control。B2：實際 susceptibility、血/尿/組織濃度、可靠 PO absorption、穩定、source control、K/renal/interaction、專科疑似 prostatitis，才能個別化。2025 cUTI 有反應者對 FQ 5–7 天、非 FQ 7 天支持，但 CKD、重症、阻塞、男性攝護腺炎疑慮是外推限制；從第一個有效抗生素日算。B3：無症狀菌尿通常不治；懷孕與特定黏膜損傷的泌尿處置前等例外需另評估。
+
+T1：不可假定活性，先看 CRE phenotype/mechanism、AST、local options 與 ID consult。T2：可以討論 alternative 但不等於最佳，依病人情境/口服有效選項縮窄。T3：重定位來源與 S. aureus bacteremia 完整流程，勿用初始尿源假說掩蓋。T4：嚴重遲發過敏高風險，絕不可簡化為一般 penicillin rash，需上級/ID/藥師即刻制定安全 active regimen。
+
+來源：[SSC 2026](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)、[IDSA 2025 cUTI](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)、[IDSA 2026 AMR](https://www.idsociety.org/practice-guideline/amr-guidance/)、[EAU Urolithiasis](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)、[IDSA 2019 ASB](https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/)。
