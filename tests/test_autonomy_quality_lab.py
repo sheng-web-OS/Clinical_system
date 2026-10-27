@@ -19,7 +19,7 @@ spec.loader.exec_module(lab)
 def fixture(tmp):
     root = Path(tmp)
     content = root / "content"
-    content.mkdir()
+    content.mkdir(exist_ok=True)
     cases = []
     for ident in ("article-a", "normal-b"):
         path = content / (ident + ".md")
@@ -110,6 +110,11 @@ Important: invalid repeated trial attribution; repair independent trace.
 
 
 class SelectiveMemory(unittest.TestCase):
+    def test_real_issue133_incident_cell_with_severity_is_parsed(self):
+        text = "| F-001（P0, V/P/G） | Mobile broken diagram image and source |"
+        r = lab.select_experiences(text, ["diagram"])
+        self.assertEqual(r["selected"][0]["incident_id"], "F-001")
+
     def test_retrieve_only_relevant_existing_incident(self):
         r = lab.select_experiences(ISSUE, ["Metadata", "Draft/HOLD"])
         self.assertEqual([x["incident_id"] for x in r["selected"]], ["F-002"])
