@@ -44,3 +44,13 @@
 5. 未有 #169 針對性發布核准不得 merge/main/production；即使全部 QA 通過，仍將可核驗 HEAD/CI/真正醫學審查供 L2 核准。
 
 **下一輪不是重述這份 TODO，而是獨立 reviewer 找到具體退修段落後實際提交修正，重審新 blob，再跑發布 gate。**
+
+## 2026-10-27 21:23 起補查｜考選部原卷及正式更正答案的 PDF 實際頁面
+
+這是**本輪直接開啟考選部原始 PDF，並檢視目標頁面截圖**所得的限定範圍查核；不是只根據先前 `acs-exam-sources.md` 的「已核對」標記推論。本次核對範圍：
+
+- **113 年二階醫學（三）代號 1302**：考選部 113070 原卷 PDF 第 **2 頁**（PDF zero-based p1），實際目視 Q6 題幹與 A–D，D 的確寫「第五型心肌梗塞……cTn……參考值上限之十倍」；正式更正答案 PDF 第 **1 頁**（p0）Q6 **D**，更正備註涉及 Q22、Q62、Q78，非 Q6。原卷：https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=Q；答案：https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113070&q=1&s=11&t=M。
+- **114 年二階醫學（三）代號 1302**：原卷 PDF 第 **2 頁**（p1）Q6 四選項確為 PCI 術前／中／後的抗板與抗凝藥，C 以「傳統肝素、低分子肝素或 fibrinogen 抑制劑」做不適當混合；第 **2–3 頁**（p1–2）Q9 是飲水、下肢腫、疲倦、夜間端坐呼吸的 HF 症狀辨認；正式更正答案 PDF 第 **1 頁** Q6 **C**、Q9 **A**；當卷特殊更正 Q8、Q13、Q20、Q54、Q55、Q73，並非本兩題。原卷：https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=Q；答案：https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114070&q=1&s=0101&t=M。
+- **115 年二階醫學（三）代號 1302**：原卷 PDF 第 **3–4 頁**（p2–3）目視 Q11–Q13：45M V1–V4 STE、SpO₂ 95% 、血壓 160/80 的四項急診處置；同病例 LAD 置入 DES 後不適當的預防性 lidocaine；以及 ischemic cascade 四個敘述；官方更正答案 PDF 第 **1 頁** Q11 **B**、Q12 **C**、Q13 **D**，三題皆非更正題。原卷：https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q；答案：https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M。
+
+**結論界線**：六道既有題的**正式原卷身分、關鍵選項、官方答案和更正狀態**在上述原始頁面再次核實，沒有發現答案漂移。未檢查三份整卷所有 80 題，沒有將考卷 PDF、考題圖或原始像素重製到公網；現行治療正確性仍需與各年度 guideline 獨立比對。此次查核是來源的 PDF 頁面驗證，**不等於最新版 ACS 全文逐段 EPQC PASS，也不解除 semantic HOLD**。
