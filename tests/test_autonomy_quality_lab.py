@@ -4,6 +4,8 @@ import hashlib
 import importlib.util
 import json
 import subprocess
+from io import BytesIO
+from unittest.mock import patch
 import sys
 import tempfile
 import unittest
@@ -122,6 +124,19 @@ class SelectiveMemory(unittest.TestCase):
         text = "| F-001（P0, V/P/G） | Mobile broken diagram image and source |"
         r = lab.select_experiences(text, ["diagram"])
         self.assertEqual(r["selected"][0]["incident_id"], "F-001")
+
+    def test_fetches_only_canonical_issue_133_via_readonly_get(self):
+        payload = BytesIO(json.dumps({"body": ISSUE}).encode("utf8"))
+        with patch.object(lab, "urlopen", return_value=payload) as client:
+            body = lab.fetch_canonical_issue_133("synthetic-test-token")
+        request = client.call_args.args[0]
+        self.assertEqual(request.get_method(), "GET")
+        self.assertEqual(request.full_url, "https://api.github.com/repos/sheng-web-OS/Clinical_system/issues/133")
+        self.assertIn("F-002", body)
+
+    def test_missing_readonly_token_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "read-only token"):
+            lab.fetch_canonical_issue_133("")
 
     def test_retrieve_only_relevant_existing_incident(self):
         r = lab.select_experiences(ISSUE, ["Metadata", "Draft/HOLD"])
