@@ -12,6 +12,12 @@
 - **Additional caution:** PDF describes CPB at 30°C with both 37°C-referenced and temperature-corrected DO2i; it is not clear which displayed DO2i series underlies every narrative event. Do not directly compare temperature-corrected event figures with normothermic CPB guideline thresholds as though identical definitions.
 - The case report's claim that lactate and favorable recovery prove absence of tissue oxygen debt or efficacy of a DO2-guided strategy is a causal overinterpretation of one uncontrolled case. Retain observed outcomes, not causal proof.
 
-## Publication gate
+## Verified source evidence and remaining gates
 
-Publisher source verified in text/PDF extraction; do not misrepresent this audit as visual inspection of every caption/footnote. Separate visual screenshot inspection of Tables 2–4, Pocket 9E original pages, PBM Table 11, original SVG at 375/390 CSS px, independent medical review, CI, Cloudflare production deployment and HTTPS readback remain required. No merge or site/pages.json modification until complete. Human time unknown, not 0.
+**Publisher PDF visual verification complete (2026-10-27):** original Cureus source PDF pages 4 and 5 were opened as full-page images. Tables 2, 3 and 4 were checked visually rather than relying on extracted text alone. Numerical inconsistencies recorded above remain source limitations, not repaired source data.
+
+**Other source checks completed:** 2024 EACTS/EACTAIC PBM original PDF printed page 32 Table 11 and a/b/c footnotes visually inspected. The contemporaneous CPB guideline Tables 43 and 45 were checked in full-text publication; CPB context must not be used as a universal postoperative ICU transfusion rule. Pocket Medicine 9E PDF parsed pages 32 and 374 checked for Fick and 1.36 O2/g Hb; original book page-images 32/374 remain unavailable, although p33 image preview is visible.
+
+**SVG check completed in a different renderer, not the website:** at 375 and 390px CairoSVG previews exposed a missing-glyph box for Unicode subscript ₂. Commit `b3229de5` replaced that unsupported literal in the SVG. Byte-identical corrected source (blob `aaf1d5ddaf073b8b69d74f84ca5129e82989e2f4`) rendered at both sizes without observed clipping. Actual Chromium reader-layout QA is still required.
+
+**Release still HOLD** until an independent medical review, the page-included full-site CI and browser visual checks, production merge/deployment and HTTPS readback. A green CI result for a draft branch that does *not* register this teaching page is insufficient. Human intervention time is unobserved, not zero.
