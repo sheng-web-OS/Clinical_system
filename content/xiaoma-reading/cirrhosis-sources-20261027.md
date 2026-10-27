@@ -1,6 +1,6 @@
 # 肝硬化明明由結構定義，為什麼臨床不能只看結構？｜原始證據與 Pocket Medicine 圖表核讀
 
-本頁僅供 #69 AI 整合教學候選的原始證據與限制查核；非歷史 Facebook canonical、非獨立同儕醫學驗收，也不授權公開重製 Pocket Medicine 原圖。
+本頁整理正文使用的原始指南、病例研究及 Pocket Medicine 9E 圖表定位；書籍與第三方原圖未在本站重製。
 
 ## CIRRHOSIS｜原書段落／Child–Pugh／MELD
 
@@ -10,11 +10,5 @@
 
 - [Baveno VIII (2026)](https://www.journal-of-hepatology.eu/article/S0168-8278%2826%2902778-9/fulltext), especially Panels 1, 3 and 7：cACLD / CSPH diagnostic limits, first decompensation and stringent recompensation.
 - [Kim et al., MELD 3.0 (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8608337/)：variables and 90-day mortality modeling.
-- 既有私人稽核 `archive/xiaoma-reading/intake/2026-07-23-cirrhosis-figure-review.md`。
 
 
-## 尚未完成的醫學／發布閘門
-
-- #69 的 P0、P1、高風險例外條件與關鍵教學圖需作者明確 ACCEPT 或 REQUEST CHANGES，記錄文章 Git blob SHA。
-- 新增／修改的圖像需在 360、390、1280px Chromium 與來源連結檢查，Figure Gate 必須與同 SHA 靜態建置一致。
-- 此候選若未取得獨立的合併／部署授權，不得發布；其他兩篇仍 HOLD。
