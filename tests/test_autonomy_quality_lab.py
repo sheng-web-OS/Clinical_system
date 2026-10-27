@@ -144,6 +144,22 @@ class SelectiveMemory(unittest.TestCase):
         self.assertEqual(r["selected"][0]["status"], "PROVISIONAL")
         self.assertEqual(r["evidence_level"], "ISSUE_TEXT_RETRIEVAL_ONLY")
 
+    def test_unique_complete_terms_reduce_extraneous_memory(self):
+        result = lab.select_experiences(ISSUE, ["Metadata", "Draft/HOLD"])
+        self.assertFalse(result["requires_full_issue_review"])
+        self.assertFalse(result["memory_adequacy_verified"])
+        self.assertEqual([r["incident_id"] for r in result["selected"]], ["F-002"])
+
+    def test_partial_generic_matches_trigger_full_canonical_review(self):
+        result = lab.select_experiences(ISSUE, ["並行", "PR"])
+        self.assertTrue(result["requires_full_issue_review"])
+        self.assertFalse(result["memory_adequacy_verified"])
+
+    def test_empty_match_cannot_silently_claim_full_coverage(self):
+        result = lab.select_experiences(ISSUE, ["unrelated-medical-topic"])
+        self.assertEqual(result["selected"], [])
+        self.assertTrue(result["requires_full_issue_review"])
+
     def test_invalidated_experience_never_reused(self):
         state = {"F-002": {"status": "INVALIDATED"}}
         self.assertEqual(lab.select_experiences(ISSUE, ["Metadata"], state)["selected"], [])
