@@ -6,7 +6,7 @@
 
 <!-- XIAOMA_EXAM_YEAR_TEASERS -->
 
-歷屆真題依考試年度查找；下方「正在讀」則是依臨床問題編排的教學與練習，兩者不混用。
+歷屆真題依考試年度查找；「正在讀」只列今日更新文章。其他教材可到[知識地圖的文章索引](../clinical-os/index.md#article-index)查找，再沿先備觀念與閱讀順序接續。
 
 [查看完整歷屆國考目錄 →](exams/index.md)
 
@@ -22,7 +22,7 @@
 
 ## 正在讀
 
-<!-- XIAOMA_PUBLISHED_LESSONS -->
+<!-- XIAOMA_TODAY_UPDATES -->
 
 ## 內科，沿著問題讀
 
