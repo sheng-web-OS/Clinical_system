@@ -62,12 +62,12 @@ class ExamReadingConnections(unittest.TestCase):
                   "page": {"output": "exam-example.html", "references": "sources.html"},
                   "anchor": "q-3"}
         body = "<h2>題目</h2><p>完整詳解</p>"
-        with patch("exam_archive.question_bounds", return_value=(0, len(body))), \\
-                patch("exam_archive.scope_embedded_question", side_effect=lambda text, _: text):
-            reader_card = render_related_questions(
-                page, {question_key(exam): record},
-                {"exam-example.html": {"body": body}}
-            )
+        with patch("exam_archive.question_bounds", return_value=(0, len(body))):
+            with patch("exam_archive.scope_embedded_question", side_effect=lambda text, _: text):
+                reader_card = render_related_questions(
+                    page, {question_key(exam): record},
+                    {"exam-example.html": {"body": body}}
+                )
         self.assertIn("Q3", reader_card)
         self.assertIn("完整詳解", reader_card)
         self.assertIn("開啟原詳解頁", reader_card)
