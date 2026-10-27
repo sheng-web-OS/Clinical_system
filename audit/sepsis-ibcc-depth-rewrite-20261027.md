@@ -115,3 +115,15 @@ Current head `ceab2c5b724c31c366c9e03b33754f6e0a4050ae`, main `9321f7bce4288d12f
 其餘 104 單元在本輪初審未確立同級缺陷，但來源逐項核對尚未完成，不能簽 KEEP。已重新對讀 Jin 2025 Case 1、IBCC 2025 定義與 PHR、SSC 2026 抗生素時限、液體、升壓、MAP、CRT、bicarbonate、ARDS、去液體等官方建議、JAMA ANDROMEDA-SHOCK-2 結果。CLASSIC/CLOVERS 原始全文逐表未完成（NEJM 403）；來源全 PASS = NOT_VERIFIED。
 
 Head ceab2c5 的 CI run 40491647344（#969）手機 Chromium 360/375/390 px 對三個 Sepsis 頁面回報 PASS，artifact 12727868631；最終 build 仍 FAIL：兩篇缺獨立 EPQC receipt。這不是圖表語義人工驗收。未改主文、題解、gate、baseline、review registry；不合併、不發布。Q48 正確 Sepsis 身分保留。下一輪由不同寫作者先修上述三單元，再由另一獨立 reviewer 對新 blob 複審並完成 A–G 與 source；主文 PASS 後才審題解 37/37。
+
+## 2026-10-27 18:59+08｜第四輪獨立 EPQC：主文 CURRENT BLOB PASS（題解仍 HOLD）
+
+- **獨立脈絡**：Clinical OS 每小時排程第四輪，task `6adf8de52d4481918316f2e420c40b3b`、turn 10、起始本地時間 2026-10-27T18:59:09+08:00；本輪未修改任何主文或題解，與先前撰稿／修訂上下文分離。這是 **independent AI editorial pass**，不是人類專科同儕審查或讀者成效實驗。
+- **版本**：審查前 PR #164 head `8a8597b1bf524a316af92b903a7b37db0a55049a`、main `9321f7bce4288d12f74d5be1dea183edc7e70bc2`、主文精確 Git blob `34065336f9a3c5bcf36662d7de606490725b62fd`。按 `site/semantic_gate.py:reading_units` 的逐段／實質列表規則，**現版為 105/105 個單元，不是舊版的 107**；兩段因撰稿補丁合併／刪除，舊計數不可硬套新 blob。
+- **逐段實查**：完整閱讀 346 行主文，重新逐一檢視 105 個有效單元（包含病例、定義、免疫／微循環、抗菌藥、液體／NE、PHR、器官支持、去復甦、真題導航、練習及來源）。每個單元在私有 `audit/editorial-semantic-reviews.json` 有精確 packet ID、實質獨有 `reader_gain`、`nonredundancy_reason`、角色與 `keep`；未沿用舊 blob 的 ID，也未為未審的題解簽票。
+- **三個前輪退稿處回查**：舊 unit 5 的四問重複已縮減；現 unit 4（急診四個並行提問）與現 unit 5（來源／宿主／循環／時間回饋的治療模型）分別承擔臨床問題與因果架構。舊 unit 82 的去復甦情境現在位於現 unit 81／line 270，第一句即明言「另一名患者的反事實情境，並非 Jin 病例的實際後續」。舊 unit 92 的重複國考入口已移除；現 unit 90／line 305 僅有一次六題題庫入口，現 unit 91–96 是不同認知功能的主動練習，不再重複題解連結。
+- **來源實查**：逐段回對 Jin 2025 原文 Case 1 與 Fig.1 caption（未冒稱左腎必為唯一腎）、IBCC 2025 Septic Shock 的 definitions／source／PHR／mimics、SSC 2026 官方完整推薦（抗菌藥、source control、30 mL/kg、NE、MAP、高齡目標、CRT、類固醇、ARDS、bicarbonate、AKI／RRT、active fluid removal）、Sepsis-3 原始共識、van der Poll 2017 綜述要點、ANDROMEDA-SHOCK-2 JAMA 原始結果表，以及 CLASSIC／CLOVERS NEJM 原研究結果。未重製受版權限制的原圖；原圖像素層級與真人專科審查不在本輪通過聲稱內。Q48 已確認是 Sepsis/bicarbonate，未重判 COPD。
+- **EPQC**：A=4、B=4、C=4、D=4、E=3、F=4、G=3（平均 3.71/4）；五項 hard stops 均未發現未解阻塞。這是此獨立 AI 脈絡對**主文**的編輯裁定，非全站醫學安全或讀者學習成效的證明。
+- **實際寫入**：僅私有 review registry，commit `5366fc0673c7e16f095b3eccf41cd5dfbc4c286e`；主文仍為原 blob。新 head CI 在核驗時尚未列出，不能以舊 head #972 的結果宣稱新 head PASS。
+- **工程證據與發布邊界**：前一個 head #972／run `40492549762` 已有 Chromium 360／375／390 px × 三個 Sepsis 頁面共九個 PASS，當時 build 失敗原因是**兩篇均缺 receipt**。本輪僅解除主文語義 HOLD；**題解 `content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md` 仍 0/37 最終獨立裁定，SEMANTIC_HOLD 不得解除，PR 不可合併、production 未發布**。
+- **下輪精確工作**：在不改題解正文的獨立審稿上下文，按 current blob `47c52ede0fc7a6411b8e2e5722c8239e46cccd56` 完整逐單元核對 37/37、六題官方題目／答案／勘誤、A–G 與 hard stops；全部 `keep` 才寫第二份 receipt。隨後核最新 head CI、360／375／390 Chromium 與 Cloudflare 正式部署，不能因已有特定授權跳過 gate。
