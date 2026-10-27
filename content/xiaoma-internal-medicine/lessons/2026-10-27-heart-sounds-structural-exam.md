@@ -39,6 +39,15 @@ Mitral stenosis 的 opening snap 是 S2 後狹窄但仍有活動度的二尖瓣�
 
 AS 的瓣口在數秒內相對固定；回心血量與前向流量下降後，通過瓣口的射流能量減少，所以雜音可變弱。但 HCM 的 LVOT 是**動態幾何阻塞**：左心室因前負荷下降而變小時，室間隔與二尖瓣前葉的接近、SAM 及阻塞可加劇，使壓差／雜音增強。要避免單靠「Venturi 吸引」解釋 SAM；瓣膜與乳突肌構造、流向及血流推力也重要。**聲音變大不代表心輸出改善。**
 
+<figure id="as-hcm-preload-compare" role="group" aria-label="站立時前負荷下降：固定主動脈瓣狹窄和 HCM 動態流出道阻塞的相反血流反應">
+<div class="atlas-logic atlas-logic-three">
+<div><small>共同改變｜站立／Valsalva 用力期</small><strong>Preload 降低，左室充盈量下降</strong><p>操作者相同，先固定改變的生理條件；不能只看到「回心量下降」就替所有雜音指定同方向。</p></div>
+<div><small>固定瓣口｜Aortic stenosis</small><strong>瓣口未在數秒內放大，射出流量減少</strong><p>Forward flow ↓ → 穿瓣射流能量 ↓ → 收縮期雜音通常變弱。聲音變小不等於瓣膜狹窄改善。</p></div>
+<div><small>動態出口｜Obstructive HCM</small><strong>心室縮小，SAM 與 LVOTO 可加劇</strong><p>LV cavity ↓ → 動態阻塞加劇 → 收縮期雜音通常變強。聲音變大不等於 cardiac output 變好。</p></div>
+</div>
+<figcaption>原創雙機轉比較圖：左室充盈降低是共同起點，分歧點為「固定瓣口流量減少」與「動態出口幾何改變」。依既有 Pocket Medicine 第九版 HCM 第 41 頁與 AS 第 45 頁的原書核對定位重建，不是原書 Figure 截圖；實際反應仍受收縮力、血壓和合併 MR 影響。</figcaption>
+</figure>
+
 這能直接回答 108 年第一次 Q11 與 113 年第一次 Q11。後者問哪一項心雜音描述錯誤：**官方 B**，因為聲稱 TR 在**吐氣**會變大聲；典型 TR 的 Carvallo sign 是**吸氣**增強。題中 AS 在 Valsalva 變短變弱、站立 MR 減弱、蹲下 HOCM 減弱，彼此並不矛盾。測試時若選項把 Valsalva 全過程視為同一階段，也要特別釐清「用力」與「放鬆後」；後者右心血流先回升，左心稍晚回升。
 
 另一個高價值陷阱是 113 年第一次 Q6 的 Brockenbrough–Braunwald–Morrow sign。PVC 後下一次收縮通常更有力：**動態 LVOTO** 的壓差上升、但主動脈脈搏壓反而縮小；這是固定 AS 所不典型具有的反常組合。題中把它直接歸給 AS 的 A 選項錯，但原題問「何者正確」，官方選的是 **C：constrictive pericarditis 的典型右室 square-root sign 等敘述**。別把某個錯選項看懂，就漏了題目到底要找正確還是錯誤。
