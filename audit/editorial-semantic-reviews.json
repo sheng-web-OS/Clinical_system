@@ -3370,6 +3370,80 @@
           "line_for_editor": 185
         }
       }
+    },
+    "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-sources.md": {
+      "content_blob": "95c1c22a035f4c917dd9b2246840420fe9e3385e",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "2026-10-27-second-pass-evidence-index-six-units-no-human-peer-review",
+      "core_reader_question": "跨科 46 題逐選項解題究竟從哪些考選部原卷與更正資料取得，哪些只是機器文字抽取、哪些原始附圖尚未獨立核驗？",
+      "new_understanding": "來源頁逐考別列出試卷與標準答案的合法官方 URL、每道納入本文的標準答案，以及一一二年第二次醫學四 Q8 的 A 或 C 更正給分；未視讀原圖的三道題目被隔離於私有待核清單。",
+      "strongest_counterargument": "這是書目／證據導覽而非深度醫學論證。網站的語義閘門目前對所有 exams 目錄的 Markdown 均須保留逐段審稿票據，因此本頁僅審來源身分、錯誤追索及限制，並不假裝完成所有 PDF 圖像與醫師同儕審稿。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 3,
+        "E": 4,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "3a91b93fe5f622a039-1": {
+          "role": "source_context",
+          "reader_gain": "明確指向四十六道已納入主文的考題身分與考選部標準答案及更正優先級",
+          "nonredundancy_reason": "若移除此段，讀者將無法確認「明確指向四十六道已納入主文的考題身分與考選部標準答案及更正優先級」的來源或使用限制；其他列出的 PDF 原卷 URL 不能替代該項說明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "此頁對應46 道已完成文字解題的跨科教材。題號、試卷與標準答案來源是考選部。解說是獨立教材，不是考選部官方解題。部分年份有更正答案，請將更正內容優先於初始答案。",
+          "line_for_editor": 3
+        },
+        "3342f3f41a2f4d567d-1": {
+          "role": "source_context",
+          "reader_gain": "指出一一二年第二次醫學四第八題初始 C 與更正 A 或 C 可給分，避免只載初始表誤導",
+          "nonredundancy_reason": "若移除此段，讀者將無法確認「指出一一二年第二次醫學四第八題初始 C 與更正 A 或 C 可給分，避免」的來源或使用限制；其他列出的 PDF 原卷 URL 不能替代該項說明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "112 年第二次醫學（四）Q8：初始標準答案是 C；後續考選部更正為 A 或 C 均給分。因此主文不得把 C 稱為唯一接受答案。",
+          "line_for_editor": 33
+        },
+        "0442d1db6a56b65304-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "隔離三道未核對原始 ECG 胸片和眼底影像的題目，並禁止公開 AI 猜測圖像內容",
+          "nonredundancy_reason": "若移除此段，讀者將無法確認「隔離三道未核對原始 ECG 胸片和眼底影像的題目，並禁止公開 AI 猜測」的來源或使用限制；其他列出的 PDF 原卷 URL 不能替代該項說明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原圖未核的 3 道題目不列入本次 46 題公開逐選項解題：111 年第二次醫學（四）Q30 的胸片、112 年第一次醫學（四）Q7 的 ECG，以及 111 年第一次醫學（四）Q78 的臨床照片。這三題僅保留題號定位、文字與答案來源，詳細逐選項解題暫未公開；不能宣稱已看過原圖細節。請由表格",
+          "line_for_editor": 35
+        },
+        "ca80555636412bd09f-1": {
+          "role": "navigation",
+          "reader_gain": "集中提供主文小麻原稿 IBCC ESC 瓣膜指南與 IE 指引的合法原始閱讀入口",
+          "nonredundancy_reason": "若移除此段，讀者將無法確認「集中提供主文小麻原稿 IBCC ESC 瓣膜指南與 IE 指引的合法原始」的來源或使用限制；其他列出的 PDF 原卷 URL 不能替代該項說明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "小麻心音與結構病主教材；其 Pocket Medicine／IBCC／指引來源頁；IBCC Valvular Heart Disease；2025 ESC/EACTS Valvular Heart Disease Guidelines；2023 ESC Infective Endocard",
+          "line_for_editor": 39
+        },
+        "b59b35dafe219810e3-1": {
+          "role": "source_context",
+          "reader_gain": "明示二千四百題檢索母群與僅四十六題深讀的選擇性證據界線，拒絕暗示題庫全面人工查核",
+          "nonredundancy_reason": "若移除此段，讀者將無法確認「明示二千四百題檢索母群與僅四十六題深讀的選擇性證據界線，拒絕暗示題庫全面」的來源或使用限制；其他列出的 PDF 原卷 URL 不能替代該項說明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "題庫涵蓋邊界：本次以心音、瓣膜病、先天性結構、心外與麻醉關聯題為檢索範圍，46 題是從 111–115 年醫學（四）至（六）挑選的教學集；不宣稱已完成人工逐題檢視所有 2,400 題，且醫學（三）由另篇選集處理。",
+          "line_for_editor": 41
+        },
+        "3ccae1f2bf0825136e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將機器抽取標準答案、附圖缺漏和歷史考題與新臨床指南適用條件各自明確限定",
+          "nonredundancy_reason": "若移除此段，讀者將無法確認「將機器抽取標準答案、附圖缺漏和歷史考題與新臨床指南適用條件各自明確限定」的來源或使用限制；其他列出的 PDF 原卷 URL 不能替代該項說明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原始試題文字經機器擷取，附圖非文字擷取物，不能把「有官方答案」誤當「已人工完整判圖」。年度考試作答與當代臨床處置可能不同；本文已分別標示兩者的條件與界線。",
+          "line_for_editor": 43
+        }
+      }
     }
   }
 }
