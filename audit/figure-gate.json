@@ -657,8 +657,8 @@
           "mode": "illustrated",
           "anchor": "cticu-measurement-layers",
           "caption_token": "Wardhana",
-          "teaching_role": "由同一真實 CABG 病人 T1 lactate 14.8 與 ScvO2 95% 的並存，視覺化兩個量測來源、待補的 Hb/SaO2/PaO2/CO 和氧輸送／氧利用中介，以及何種床邊證據能改變循環判斷；取代四組無互動關係的名詞卡片。",
-          "scope_limit": "本圖區分實測、缺測和生理推導，未替病人補造同時點完整 ABG、Hb、CO、CaO2、DO2、VO2 或器官氧萃取；高 ScvO2 不能排除局部缺血，高 lactate 不能單獨指示輸液。"
+          "teaching_role": "以已核對 Wardhana 與 Kurniawaty 2025 原文 Table 1 病人 3 的 T1 lactate 14.8 與 ScvO2 95% 雙訊號，明確區分各自可測、不可推論與缺少的 Hb/SaO2/PaO2/CO→CaO2/DO2 中介，讓讀者從矛盾感轉到床邊排查出血、壓迫及心功能；不是術後四組名詞分類卡。",
+          "scope_limit": "病例 T1 並無完整同步 Hb/PaO2/SaO2/CO，因此不補造個人 CaO2、DO2、VO2 或器官缺氧；ScvO2 是取樣處的剩餘靜脈氧飽和度而非總氧萃取，高乳酸不能自動指令補液；這裡引用的 Pocket Figure 4-1 只在來源頁定位，本站圖並非其重繪。"
         },
         {
           "locator": "Wardhana and Kurniawaty 2025 original publisher PDF print page 278 Table 1 and p279 Figure 1, CABG patient three lactate, base excess and ScvO2 T0 through T5",
