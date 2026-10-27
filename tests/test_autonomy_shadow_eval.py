@@ -84,6 +84,13 @@ class AutonomyShadowGateTests(unittest.TestCase):
                                     'cohort': 'pilot', 'tasks': []}, StubAPI({}))
         self.assertEqual('NOT_MEASURED_NO_PREREGISTERED_TASKS', report['status'])
 
+    def test_pending_cohort_cannot_claim_observed_autonomy(self):
+        report = evaluate_manifest({'schema_version': 1, 'repository': REPOSITORY,
+                                    'cohort': 'pilot', 'tasks': [{'id': 'U-pending', 'issue': 200}]},
+                                   StubAPI(snapshot()))
+        self.assertEqual('NO_VERIFIED_UNSUPERVISED_RUNS', report['status'])
+        self.assertEqual(0, report['verified'])
+
     def test_duplicate_tasks_rejected(self):
         with self.assertRaises(ValueError):
             evaluate_manifest({'schema_version': 1, 'repository': REPOSITORY, 'tasks': [TASK, TASK]}, StubAPI({}))
