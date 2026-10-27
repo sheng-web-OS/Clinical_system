@@ -9,7 +9,7 @@ import sys
 import mistune
 from catalog import load_pages
 from home import render_home
-from reading import render_today_updates, render_article_index
+from reading import render_today_updates, render_article_index, render_original_versions, primary_versions
 from math_render import compile_math
 from exam_archive import render_exam_archive, render_exam_year_teasers, question_anchor, connect_exam_reading
 
@@ -161,6 +161,10 @@ def render_reader(page, body, headings, related_questions=""):
     top_links = ''.join('<a'+(' aria-current="page"' if active == dest else '')+' href="'+html.escape(dest,quote=True)+'">'+label+'</a>' for dest, label in destinations)
     brand = '<a class="reader-brand" href="index.html"><span class="brand-mark" aria-hidden="true">小</span>小麻閱讀<span>MEDICAL READING</span></a>'
     original_note = ('<aside class="original-reading-end"><a href="xiaoma-reading.html">← 回到小麻閱讀</a><p>本文保留 '+html.escape(page.get("date", "").replace("-", "."))+' 原稿。臨床處置請一併核對所附來源與現行指引。</p></aside>') if page.get("kind") == "historical_original" else ''
+    primary = primary_versions(PAGES).get(active) if page.get("kind") == "historical_original" else None
+    original_primary_note = ('<p class="original-reading-primary">這是保存的原稿版本。主要閱讀請看 <a href="' +
+                             html.escape(primary["output"], quote=True) + '">' +
+                             html.escape(primary["title"]) + '</a>。</p>') if primary else ''
     return '''<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'''+html.escape(page["title"]+' · '+page["subtitle"],quote=True)+'''">
 <title>'''+title+' · '+site_name+'''</title><link rel="stylesheet" href="styles.css"></head><body class="reader-page '''+mode+'''">
@@ -169,7 +173,7 @@ def render_reader(page, body, headings, related_questions=""):
 <div class="reader-shell"><aside class="reader-rail"><a class="back-link" href="'''+home+'''">← 教材目錄</a><span class="rail-label">'''+('本篇脈絡' if is_lesson else '本頁導覽')+'''</span><nav class="reader-outline" aria-label="章節導覽">'''+outline+'''</nav><div class="rail-bottom"><a href="xiaoma-reading.html">以往小麻閱讀 ↗</a><a href="knowledge-atlas.html">臨床知識地圖 ↗</a><a href="index.html">其他臨床教材 ↗</a></div></aside>
 <main class="reader-main" id="reading-content"><div class="reader-hero"><p class="reader-kicker">'''+section+('　 /　 '+number if is_lesson else '')+'''</p><h1>'''+title+'''</h1><p class="reader-deck">'''+subtitle+'''</p>'''+exam_label+'''</div>
 <details class="mobile-outline"><summary>本篇章節</summary><nav aria-label="行動版章節導覽">'''+outline+'''</nav></details>
-<article class="article reading-prose">'''+body+'''</article>'''+original_note+related_questions+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
+<div class="article reading-prose">'''+original_primary_note+'''</div><article class="article reading-prose">'''+body+'''</article>'''+original_note+related_questions+'''<footer class="reader-footer"><a href="'''+home+'''">'''+site_name+'''</a><span>把問題想通，再往下一步。</span>'''+reference_link+'''</footer></main></div>
 <script src="site-index.js"></script><script src="app.js" defer></script></body></html>'''
 
 
@@ -205,10 +209,8 @@ def render(md_file, output, page_title, subtitle, rendered=None):
         if head.strip() == current["title"] and tail:
             raw = tail.lstrip("\n")
     if "<!-- XIAOMA_READING_ORIGINALS -->" in raw:
-        originals=sorted((row for row in PAGES if row.get("kind")=="historical_original" and row.get("collection")==current.get("collection")),key=lambda row:row["date"])
-        cards='<div class="original-list">'+''.join(
-            '<a class="original-card" href="'+html.escape(row["output"],quote=True)+'"><span class="original-date">'+html.escape(row["date"].replace("-","."))+' · 完整原稿</span><strong>'+html.escape(row["title"])+'</strong><span>'+html.escape(row["subtitle"])+'</span><span class="read-link">開始閱讀 <span aria-hidden="true">→</span></span></a>' for row in originals)+'</div>'
-        raw=raw.replace("<!-- XIAOMA_READING_ORIGINALS -->",cards)
+        raw=raw.replace("<!-- XIAOMA_READING_ORIGINALS -->",
+                        render_original_versions(PAGES, current.get("collection")))
     if "<!-- XIAOMA_EXAM_YEAR_TEASERS -->" in raw:
         raw = raw.replace("<!-- XIAOMA_EXAM_YEAR_TEASERS -->", render_exam_year_teasers(PAGES))
     if "<!-- XIAOMA_EXAM_ARCHIVE -->" in raw:
@@ -294,7 +296,10 @@ def main():
                       '</main></body></html>')
     (DIST/old_map).write_text(atlas_redirect, encoding="utf-8")
     (DIST/"index.html").write_text(render_home(PAGES), encoding="utf-8")
-    searchable=json.dumps(rows,ensure_ascii=False)
+    # Searching full source text remains possible, but current integrated lessons are presented first.
+    originals = {p["output"] for p in PAGES if p.get("kind") == "historical_original"}
+    search_rows = sorted(rows, key=lambda row: row["url"] in originals)
+    searchable=json.dumps(search_rows,ensure_ascii=False)
     (DIST/"site-index.json").write_text(searchable,encoding="utf-8")
     (DIST/"site-index.js").write_text("window.CLINICAL_INDEX = "+searchable+";",encoding="utf-8")
     (DIST/".nojekyll").touch()

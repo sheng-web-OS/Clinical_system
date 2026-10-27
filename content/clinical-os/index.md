@@ -139,7 +139,7 @@
 ## 全部文章索引
 <span id="article-index" class="atlas-target"></span>
 
-依主題展開可直接找到全部已公開文章；閱讀先後與跨篇關係見上方各臨床分支。[正式國考題也可按年度查找](../xiaoma-internal-medicine/exams/index.md)。歷史原稿與新版整合教材同樣按臨床主題排列；「原稿」僅標示版本身分，不是另一個知識分類。
+依主題展開可直接找到全部已公開文章；閱讀先後與跨篇關係見上方各臨床分支。[正式國考題也可按年度查找](../xiaoma-internal-medicine/exams/index.md)。完整整合版是主要閱讀入口，對應的歷史原稿附在該文章旁作版本對照；尚無整合版者仍可直接閱讀。圖表補充與完整改寫不等價，原稿與補充材料各保有其用途。
 
 <!-- XIAOMA_ATLAS_ARTICLES -->
 
