@@ -10,6 +10,9 @@ ACS（acute coronary syndrome，急性冠心症）不是一個「驗血陽性」
 
 冠狀動脈斑塊破裂或侵蝕後，血小板黏附、活化、聚集，凝血反應又使 fibrin 加固血栓。血流可能在數分鐘內嚴重下降，也可能因血栓形成與自發溶解而反覆改變。心肌的氧氣供應取決於冠狀灌流、血液氧含量與舒張期灌流壓；耗氧則受心率、收縮性、壁張力等影響。當需求超過供給，**缺血先改變細胞能量與舒張功能，再可能造成收縮與電位變化**。若缺血持續或嚴重到細胞受傷，才逐漸有可測的 cTn 釋出。這是常用的 ischemic cascade 模型，不表示每一位患者都遵守固定秒數。
 
+**為什麼 subendocardium 容易先受害？** 左室在收縮期產生很高的壁內壓力，心內膜下微血管受到壓迫，灌流特別仰賴舒張期。當心率升快，舒張期縮短；當主動脈舒張壓下降或 LVEDP 上升，冠狀灌流的有效壓力差更小。用簡化模型可想成 *coronary driving pressure* 近似主動脈舒張壓減去相關下游／心室壓力，但實際冠脈血流還受狹窄、微循環阻力、自動調節與壁內壓影響，不能用這個差值單獨診斷缺血。這解釋了為何貧血、低氧、休克或 tachycardia，即使沒有新的斑塊破裂，也可能使原已狹窄的冠脈無法滿足需求；反過來，冠脈急性完全堵塞即使當時 SBP 不低，局部心肌仍可能嚴重缺血。
+
+
 在這條病理路線上，**unstable angina（UA）**是臨床上高度懷疑急性冠脈缺血，卻尚不符合急性心肌梗塞的傷害標記條件；**NSTEMI**代表有符合 MI 定義的缺血性急性心肌傷害，但沒有持續的 ST elevation／相應的緊急再灌流 ECG 表現；**STEMI**則是急診最需要迅速辨識的 ECG 工作診斷，通常代表需立即再灌流的重大缺血。這不是依序從 UA「長成」NSTEMI 再「長成」STEMI 的固定嚴重度階梯；三者反映**不同的電生理、傷害證據與處置入口**，冠脈閉塞也可能藏在沒有典型 ST elevation 的 ECG 裡。
 
 2026 年第五版 Universal Definition of MI（UDMI5）進一步把「心肌受傷」與「梗塞病因」拆開：**acute myocardial injury**要求 cTn 至少一次超過 assay 對應的第 99 百分位上限，並呈現有意義的升降；**MI**還需要與急性缺血相符的症狀、ECG、心肌或冠脈影像等證據。確認 MI 後，再依病因分為 **primary MI**（急性原發冠脈病理）、**secondary MI**（其他急性狀態造成供需失衡）與 **procedure-related MI**（心臟程序相關併發症）。舊版 Type 1–5 數字分類是歷史考題語境，不能當作今日唯一分類。即使同是 troponin 上升，plaque rupture、肺炎造成的供需失衡與 myocarditis 所需的治療也不同。[第五版原文](https://www.jacc.org/doi/10.1016/j.jacc.2026.07.025)
@@ -28,11 +31,17 @@ ECG 的每一導程都是從特定方向觀看心臟電位差。局部缺血使�
 
 從定位開始：II、III、aVF 提醒 inferior territory；V1–V4 常涉及前中隔／前壁；I、aVL、V5–V6 可見側壁缺血。Inferior ST elevation 配合對側變化時，要進一步問右冠或迴旋支，以及**右室是否一同受累**；必要時加做 V3R/V4R。V1–V3 的水平 ST depression，尤其合併高 R 波與直立 T 波，在恰當情境下可能是**後壁急性阻塞的鏡像**，應考慮 V7–V9 並立即與心臟團隊討論。這些額外導程是在補足 12 導程的視角，不是「加一張圖才算看過病人」。
 
+再具體一點：假設下壁 STE 是從 II、III、aVF 讀到的病灶投影，I、aVL 的 reciprocal depression 能支持區域性缺血的整體圖像；若同時低血壓且懷疑右室受累，就加看 V4R 與 bedside echo，因為治療上的問題已從「哪個區域缺血」變成「是否存在 preload-sensitive 的 RV dysfunction」。另一位胸痛患者只有 V1–V3 horizontal STD，不能把它草率歸為一般 NSTEMI：若是後壁向量投影的 reciprocal sign，加做後壁導程可能揭露需要緊急再灌流的阻塞。**定位不是為了背 LAD／RCA／LCx 的一對一口訣，而是為了決定下一個必須取得的證據。**
+
+
 幾個特別容易在考試及值班被誤判的 ECG 情境：
 
 - **de Winter pattern**：前胸導程 J 點附近上斜型 ST depression 伴高聳、對稱 T 波，在持續缺血情境下須高度懷疑急性 LAD 阻塞；沒有典型 ST elevation 也不能讓導管決策停擺。
 - **Wellens pattern**：常在疼痛暫緩時見 V2–V3 的雙相或深倒 T 波，提示危險 LAD 病變。此時「不痛、troponin 不高」不等於安全；不應用運動負荷測試來賭它是否會再缺血。
 - **LBBB 或心室節律器**：原有 QRS 與 ST–T 方向耦合會使傳統 ST 門檻失效。Modified Sgarbossa 透過符合傳導背景的相應與不相應 ST 變化尋找異常，必要時結合舊圖、連續 ECG、echo 與臨床不穩定度；**新發 LBBB 本身不等於確定 STEMI**。
+
+  一個進階讀圖門檻是知道 modified Sgarbossa 為何使用**相對於 QRS 的 ST 偏移**：在 LBBB，與主要 QRS 相反方向的 ST 偏移有一部分是預期的 secondary repolarization，真正令人懷疑的是「方向不該同向卻同向」或「反向程度相對 S 波過大」。常用的判讀包括 ≥1 mm concordant STE、V1–V3 ≥1 mm concordant STD，以及 ≥1 mm discordant STE 且 ST/S 振幅比達約 25% 的不成比例變化。這不是單一準則陰性即可排除閉塞的測驗，仍必須與症狀、舊圖、動態 ECG、即時心超與心臟團隊共同判讀。
+
 - **廣泛 ST depression 合併 aVR elevation**：可能是廣泛 subendocardial ischemia 的訊號，見於左主幹／多支血管疾病，也可見於其他造成嚴重供需失衡的狀態；不能單憑 aVR 判定左主幹完全堵塞。
 
 「OMI（occlusion MI）／NOMI」是有助於提醒**急性阻塞可能不符合經典 STEMI 門檻**的臨床思考框架，不是 2025 ACC/AHA 正式取代 STEMI／NSTE-ACS 的二元診斷指引。若患者持續胸痛、ECG 動態惡化、出現心衰或電氣不穩，即使沒有典型 ST elevation，仍應按高度懷疑持續缺血的危險處理，而不是只等下一管 cTn。[IBCC：MI／OMI](https://emcrit.org/ibcc/mi/)
@@ -43,7 +52,10 @@ ECG 的每一導程都是從特定方向觀看心臟電位差。局部缺血使�
 
 理解結果時依序問：（1）是否高於當地試劑的 99th-percentile upper reference limit？（2）有沒有支持 acute injury 的 rise/fall？（3）是否有急性 ischemia 的獨立證據？（4）若有，是原發冠脈事件、另一急性疾病造成的供需失衡，還是心臟程序相關？這四步避免把**一個生物標記直接提升成病因診斷**。正常第一管 cTn 也不能推翻高危險持續缺血的 ECG 與病程。
 
-例如敗血症患者高燒、心率 145、血壓低，hs-cTn 上升：可能存在供需失衡相關 MI，但也可能是與冠脈急性缺血證據不足的 **non-ischemic myocardial injury**。不應因「有敗血症」便自動宣告 secondary MI，更不能因 troponin 陽性便不分原因給 DAPT、heparin、安排 PCI。要重新尋找局部缺血症狀／ECG／區域壁運動、先前 CAD 的可能性與其他心肌傷害來源。同樣地，冠狀動脈造影若無明顯阻塞，這仍是**診斷工作的起點**：考慮 plaque disruption、spasm、SCAD、microvascular pathology，並依情況以 CMR 排查 myocarditis、Takotsubo 等，而非說「冠脈沒塞，所以剛剛的胸痛是假的」。[IBCC：myocardial injury vs ischemia](https://emcrit.org/ibcc/troponin/)
+例如敗血症患者高燒、心率 145、血壓低，hs-cTn 上升：可能存在供需失衡相關 MI，但也可能是與冠脈急性缺血證據不足的 **non-ischemic myocardial injury**。不應因「有敗血症」便自動宣告 secondary MI，更不能因 troponin 陽性便不分原因給 DAPT、heparin、安排 PCI。要重新尋找局部缺血症狀／ECG／區域壁運動、先前 CAD 的可能性與其他心肌傷害來源。
+
+一個可檢驗的例子：假設同一個試劑（單位 ng/L）在三個時間點測得 12、68、145，這是清楚的**動態傷害訊號**，但沒有症狀、ECG 或影像就不能從數字推定原發冠脈血栓；另一位長期 CKD 患者三次測得 80、83、81，可能反映相對穩定的慢性傷害，也不能在急性臨床變化時只看比例而忽略其他證據。這些是假設數列，**不是任何品牌試劑的通用 rule-in/rule-out cutoffs**。若懷疑發病太早、復發梗塞、腎功能改變或採血時間不可靠，更須配合當地 assay 的時間演算法與臨床重估。
+同樣地，冠狀動脈造影若無明顯阻塞，這仍是**診斷工作的起點**：考慮 plaque disruption、spasm、SCAD、microvascular pathology，並依情況以 CMR 排查 myocarditis、Takotsubo 等，而非說「冠脈沒塞，所以剛剛的胸痛是假的」。[IBCC：myocardial injury vs ischemia](https://emcrit.org/ibcc/troponin/)
 
 ## 五、風險分層真正決定的是：哪一個人不能等到明天？
 
@@ -52,6 +64,9 @@ ECG 的每一導程都是從特定方向觀看心臟電位差。局部缺血使�
 其餘患者以 troponin 動態、連續 ECG、病史、腎功能及 GRACE 等風險資訊判別。**GRACE >140、確認 NSTEMI、動態 ST–T 變化或暫時性 STE**支持較高風險；ESC 建議高風險族群考慮 24 小時內早期侵入性策略，並在住院期間完成適當侵入性評估。2025 ACC/AHA 同樣強調中高危 NSTE-ACS 應於住院期間採用具再灌流意圖的侵入性策略，但不同指南對各細分類的語氣與時間門檻並不完全相同。
 
 **何時不用直接做導管？** 一個疼痛已消失、無缺血性 ECG 變化、依當地有效 hs-cTn 排除路徑及臨床風險評估為低危險的患者，可循選擇性非侵入性評估或出院追蹤路徑；但「低風險」是完成評估的結論，不是只看到正常首張 ECG 就給的標籤。這裡的 GRACE 分數是風險工具，而不是替代當下生命危險判斷的命令。
+
+GRACE 把年齡、心率、收縮壓、腎功能、心肌標記、ST 變化、心衰程度與到院時心跳停止等資訊組合成事件風險估計。這也說明為何同為 NSTEMI，65 歲、血壓穩、無 HF 的病人與 82 歲、肌酐升高、合併急性肺水腫者的處置緊迫性完全不同。但若患者**現在就在 refractory chest pain 或 shock**，不必為湊齊 GRACE 的每個欄位才啟動急救與侵入性評估；分數是對穩定化決策的補充，不是延遲危險處置的門檻。
+
 
 ## 六、STEMI 的再灌流時鐘：把血栓打開才是治療主軸
 
@@ -69,7 +84,10 @@ Plaque 相關血栓同時有 platelet-rich aggregation 與 coagulation／fibrin 
 
 程序性抗凝常使用 UFH 等依策略選擇的藥物；**fondaparinux 不可單獨作為 PCI 的程序性抗凝**，因為導管血栓風險。GP IIb/IIIa inhibitor 現今主要用於特定 large thrombus、slow-flow／no-reflow 等補救情境，並非所有 PCI 常規使用。這正是 114 年第二次國考考抗栓藥物類別時真正要理解的機轉，而不是背一個奇怪的藥名。
 
-無高出血風險 ACS 患者，**12 個月 DAPT 是預設策略**，但不是所有人不變的硬規則。曾 GI bleeding、接受 OAC、需手術、或符合縮短／去 aspirin 條件者，必須重新衡量出血與再發血栓：有 GI bleeding 風險者考慮 PPI；需長期 OAC 且 PCI 後符合條件者，通常盡早縮短 triple therapy，依指引在 1–4 週停止 aspirin，保留 OAC 加單一 P2Y12（一般偏向 clopidogrel）。**LV thrombus 的抗凝，是預防心室血栓栓塞；與預防 DES thrombosis 的 DAPT 並非同一適應症。**[2025 ACC/AHA ACS](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009)
+無高出血風險 ACS 患者，**12 個月 DAPT 是預設策略**，但不是所有人不變的硬規則。曾 GI bleeding、接受 OAC、需手術、或符合縮短／去 aspirin 條件者，必須重新衡量出血與再發血栓：有 GI bleeding 風險者考慮 PPI；需長期 OAC 且 PCI 後符合條件者，通常盡早縮短 triple therapy，依指引在 1–4 週停止 aspirin，保留 OAC 加單一 P2Y12（一般偏向 clopidogrel）。**LV thrombus 的抗凝，是預防心室血栓栓塞；與預防 DES thrombosis 的 DAPT 並非同一適應症。**
+
+用一位已因 AF 服 OAC、現在因 ACS 新置入 DES 的患者驗證這個概念：不加 P2Y12 可能讓支架早期血栓風險較高；長期維持 aspirin + P2Y12 + OAC 又提高出血風險。因此治療不能只問「抗栓強不強」，而應先確認**各個適應症、出血代價及風險最高的時間窗**，再決定 triple therapy 的短期需求、何時停 aspirin、如何繼續 OAC 與單一 P2Y12。若再出現影像證實的 LV thrombus，則新增另一項 systemic embolism 防治目標，必須整體重估，而不是把同一套 DAPT 無條件再延長。
+[2025 ACC/AHA ACS](https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009)
 
 ## 八、減少胸痛不是再灌流；改善數值也不代表改善預後
 
@@ -96,6 +114,9 @@ PCI 的直接成效是恢復 epicardial coronary flow，但**微血管 no-reflow
 **心室中隔破裂（ventricular septal rupture, VSR）**：高壓 LV 血液進入 RV，產生新的 left-to-right shunt；部分排出的血被送回肺循環而非全身，增加肺負荷且降低有效 systemic output。新雜音／震顫、急性 HF 或休克應以 color Doppler 尋找新分流，並迅速討論修補與支持方式。這不是「心肌收縮力差」就能說明的血流路徑。
 
 **自由壁破裂**使血進入心包、阻斷舒張充填，可快速形成 tamponade／PEA；部分被包覆形成 pseudoaneurysm 也不等於安全。遇到崩潰應立即以超音波及外科團隊評估，不可等待「典型 MI 後第幾天」才開始懷疑。機械性併發症雖比再灌流前時代少見，但它們是**少數一旦漏診就無法靠調整一般心衰藥物補救的狀態**。
+
+這三種急症可用**血流失去了哪個正常界面**快速回憶：MR 是 LV 射出的血逆流進 LA；VSR 是 LV 血透過新破口進 RV；自由壁破裂是血直接進入心包，造成充填限制。三者都可能低灌流，但真正可修正的病因不同。發生時間也不應僵硬背成單一「MI 後第 3–5 天」：再灌流、梗塞範圍、組織脆弱化和臨床辨認時間不同，破裂可更早或更晚出現。**新的惡化比教科書的日曆更值得相信。**
+
 
 **惡性心律不整**也有不同時間與機轉：急性 ischemia／reperfusion 相關 VT/VF 先按 ACLS、電擊／節律與灌流、電解質及 culprit perfusion 處理；恢復竇律後不應一律 prophylactic lidocaine。若之後持續或再發 ventricular arrhythmia，則重新評估缺血、電解質、LVEF、scar 與裝置治療條件，不能用「急性期曾發生」一句話決定長期 ICD。另需依前壁 akinesis／心尖部形態與影像檢查 **LV thrombus**：它引發的 systemic embolism 與支架血栓不是同一種事件，抗凝與 DAPT 須按出血風險協調。
 
