@@ -4,6 +4,7 @@ Only published entries from site/pages.json may appear. Editorial status and
 clinical-review records remain separate from the public reading surface.
 """
 from html import escape
+from reading import is_current_lesson
 
 
 def _card(page, collection, label, cue, featured=False):
@@ -20,7 +21,7 @@ def _card(page, collection, label, cue, featured=False):
 def render_home(pages):
     """Build the discovery view using the same explicit publication whitelist."""
     originals = [p for p in pages if p.get("kind") == "historical_original"]
-    lessons = [p for p in pages if p.get("collection") == "xiaoma-internal-medicine" and p.get("date") and not p.get("exam")]
+    lessons = [p for p in pages if is_current_lesson(p)]
     integrations = [p for p in pages if p.get("kind") == "ai_integrated"]
     cards = []
     # Current integrated publications lead; preserved historical originals are a
