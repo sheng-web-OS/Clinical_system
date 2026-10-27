@@ -900,23 +900,19 @@
 .reading-prose .osm-gap-case p{font-size:.9rem;line-height:1.7;margin:.35rem 0 0}
 @media(max-width:680px){.reading-prose .osm-gap-case{padding:.65rem .7rem}.reading-prose .osm-gap-case-head strong{font-size:.9rem}}
 
-
-
-/* The 114-II Q22 SAAG comparison is one semantic table, not two copies.
-   On phones, each A-D row becomes a four-value 2x2 card: no hidden last
-   column and no lateral scrolling to discover the calculated SAAG. */
-.reading-prose table.saag-exam-table{display:table;width:100%;table-layout:fixed;border-collapse:collapse;font-variant-numeric:tabular-nums}
-.reading-prose .saag-exam-table th,.reading-prose .saag-exam-table td{min-width:0;overflow-wrap:normal;padding:12px 9px}
-.reading-prose .saag-exam-table td{text-align:right}
-.reading-prose .saag-exam-table th:first-child{text-align:center;width:13%}
-.reading-prose .saag-mobile-label{display:none}
+/* 114-II Q22 SAAG: layout-only progressive enhancement. Source stays a
+   single official-question Markdown table with all 16 numeric values intact.
+   Scope via the unique adjacent source-page link so other tables are untouched. */
 @media(max-width:760px){
- .reading-prose table.saag-exam-table{display:block;overflow:visible;width:100%;max-width:100%;margin:22px 0 25px;font-size:15px;line-height:1.55}
- .reading-prose .saag-exam-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
- .reading-prose .saag-exam-table tbody{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
- .reading-prose .saag-exam-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 12px;padding:10px 14px 12px;border:1px solid var(--line);background:var(--surface)}
- .reading-prose .saag-exam-table tbody th[scope="row"]{grid-column:1/-1;display:block;width:auto;min-width:0;text-align:left;font-size:16px;font-weight:750;padding:0 0 7px;background:transparent;border-bottom:1px solid var(--line);color:var(--brand)}
- .reading-prose .saag-exam-table tbody td{display:flex;min-width:0;flex-direction:column;align-items:flex-start;gap:2px;padding:5px 0;border:0;text-align:left}
- .reading-prose .saag-mobile-label{display:block;min-width:0;font-size:12px;line-height:1.45;color:var(--muted);overflow-wrap:break-word}
- .reading-prose .saag-value{display:block;font-size:17px;font-weight:650;line-height:1.45}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table{display:block;width:100%;max-width:100%;overflow:visible;table-layout:auto;margin:24px 0;font-size:15px;line-height:1.5;font-variant-numeric:tabular-nums}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 15px;padding:12px 16px;border:1px solid var(--line);background:var(--surface)}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td{display:block;min-width:0;padding:3px 0;border:0;text-align:left;font-size:17px;line-height:1.5;font-weight:650;overflow-wrap:break-word}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:first-child{grid-column:1/-1;padding:0 0 8px;border-bottom:1px solid var(--line);font-size:16px;font-weight:750;color:var(--brand)}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:not(:first-child)::before{display:block;line-height:1.45;margin-bottom:3px;font-size:12px;font-weight:400;color:var(--muted)}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:nth-child(2)::before{content:"血清 albumin"}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:nth-child(3)::before{content:"腹水 albumin"}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:nth-child(4)::before{content:"腹水 total protein"}
+ article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:nth-child(5)::before{content:"SAAG（計算值）"}
 }
