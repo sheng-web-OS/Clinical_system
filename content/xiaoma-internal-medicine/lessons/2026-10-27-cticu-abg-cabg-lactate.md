@@ -33,20 +33,38 @@ ABG（arterial blood gas，動脈血氣）直接測量 **pH、PaCO₂、PaO₂**
 
 **ScvO₂**則是中心靜脈導管所採血液的氧飽和度，主要代表該回流範圍的剩餘氧合比例。它不是動脈血的 SaO₂；也不等於由肺動脈取得、混合更廣泛靜脈回流的 **SvO₂（mixed venous oxygen saturation）**。不同採樣位置或時間的數字，不能拼成同一張「完整 ABG」。
 
-把這個差別帶回剛才那位 **69 歲 CABG 病人**：術後四小時，**lactate 升至 14.8 mmol/L，ScvO₂ 卻達 95%**。如果把 lactate 當作「全身缺氧指數」，可能一看到升高就想大量補液；如果把 ScvO₂ 當作「全身氧氣充足的證明」，又可能太早放心。**其實兩項數字沒有互相否定**：lactate 是生成、利用與清除共同留下的濃度；ScvO₂ 是某處靜脈回流血液的剩餘氧飽和度。**回流血液還有很多氧，不代表每個器官都已取得並利用足夠的氧。**
+回到這位 **69 歲 CABG 病人**：術後四小時 lactate 升至 14.8 mmol/L，ScvO₂ 卻達 95%。如果只看 lactate，容易立刻把問題歸因於低灌流；如果只看 ScvO₂，又可能誤以為全身氧供充足。**這不是兩份檢驗互相衝突，而是它們回答不同的生理問題。**
 
-接下來真正要追問兩個環節：**血液每分鐘送出多少氧？送出的氧又有沒有抵達並被組織利用？** 第一個問題需要把 Hb、動脈氧合與心輸出連起來，才能理解 CaO₂ 與 DO₂；第二個問題不能只靠 ScvO₂ 作答，還要看胸管出血、循環支持與心律、尿量、肢端灌流及床邊 echo。尤其對一位仍需要多種循環藥物的術後病人，高 ScvO₂ 絕不能成為跳過出血、低心輸出或局部壓迫評估的理由。
+要理解這個現象，還缺了一座橋：**血液實際送出多少氧（CaO₂、DO₂），以及氧抵達後被哪些組織利用（VO₂、區域灌流與氧萃取）？** 下面的圖將病例「實測到的訊號」與「仍須補上的證據」分開；即使 ScvO₂ 很高，也不能跳過對術後出血、低心輸出或局部壓迫的床邊評估。
 
-下面先把我們能「直接量到什麼」、能「推算什麼」，以及仍須「從病人身上判斷什麼」拆開。這四層釐清後，才能理解為什麼 lactate 與 ScvO₂ 可以看似矛盾，卻同時為真。
-
-<figure id="cticu-measurement-layers" style="margin:1.6rem 0">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr));gap:0.65rem">
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>動脈血氣</strong><p style="margin:0.45rem 0 0">pH、PaCO₂、PaO₂：酸鹼、換氣、氧合</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>代謝與酸鹼</strong><p style="margin:0.45rem 0 0">Lactate、BE、Na/Cl/albumin：代謝狀態與候選原因</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>氧輸送</strong><p style="margin:0.45rem 0 0">Hb × SaO₂ → CaO₂；再結合 CO 推算 DO₂</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>組織的結果</strong><p style="margin:0.45rem 0 0">ScvO₂／SvO₂、灌流徵象與器官功能；皆有抽樣及推論限制</p></div>
+<figure id="cticu-measurement-layers" style="max-width:760px;margin:1.5rem auto">
+<div style="border:1px solid #ceded6;border-radius:14px;padding:clamp(0.85rem,3vw,1.4rem);background:#f8faf8">
+<p style="font-size:0.9rem;font-weight:700;color:#355d50;margin:0 0 0.35rem">同一位 CABG 術後病人｜ICU 第 4 小時（T1）</p>
+<h3 style="margin:0 0 0.85rem;font-size:1.15rem">乳酸很高，靜脈氧飽和度也很高，哪個數字錯了？</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:0.65rem">
+<div style="border-left:4px solid #b35f3d;background:#fff;padding:0.75rem 0.9rem;border-radius:6px">
+<div style="font-size:0.8rem;color:#644d43">血中的代謝訊號｜實測</div>
+<div style="font-size:1.55rem;font-weight:800;color:#873e26;margin:0.12rem 0">Lactate 14.8 <span style="font-size:0.75rem;font-weight:500">mmol/L</span></div>
+<p style="margin:0;font-size:0.93rem">濃度受<strong>生成與清除</strong>共同影響；低灌流、腎上腺素相關代謝等都需評估。</p>
 </div>
-<figcaption><strong>圖 1｜四個不能互換的觀察層次。</strong>本站原創因果整理，對照《Pocket Medicine》第九版 PDF 第 158–160 頁的 acid–base workup 與 Figure 4-1 <em>Acid–base nomogram</em>，<strong>不是</strong>原書圖表的轉描或完整診斷分區。只有在取得同期檢體與其他床邊證據後，才可連接這四個層次；<a href="../cticu-abg-cabg-sources.md#pocket">原書定位與核讀範圍</a>。</figcaption>
+<div style="border-left:4px solid #397a86;background:#fff;padding:0.75rem 0.9rem;border-radius:6px">
+<div style="font-size:0.8rem;color:#345e65">中心靜脈回流訊號｜實測</div>
+<div style="font-size:1.55rem;font-weight:800;color:#245c66;margin:0.12rem 0">ScvO₂ 95%</div>
+<p style="margin:0;font-size:0.93rem">取樣位置的血仍高度飽和；不等於每個器官都有足夠的供氧或氧萃取。</p>
+</div>
+</div>
+<div style="text-align:center;margin:0.55rem 0;font-size:0.88rem;font-weight:700;color:#7b4b37">兩個觀察可以同時成立，不能任選一個當成灌流答案</div>
+<div style="border:1px dashed #a7bdb5;background:#edf3ef;border-radius:9px;padding:0.8rem 0.9rem">
+<strong style="display:block;margin-bottom:0.35rem">真正缺少的生理橋樑：氧送出多少？組織又用了多少？</strong>
+<p style="margin:0 0 0.4rem;font-size:0.92rem"><strong>供應端：</strong>Hb、SaO₂、PaO₂ 決定動脈氧含量 CaO₂；再結合心輸出量 CO，才能估算氧輸送 DO₂。</p>
+<p style="margin:0;font-size:0.92rem"><strong>利用端：</strong>組織耗氧 VO₂、區域血流與微循環氧萃取會影響靜脈剩餘氧量；ScvO₂ 只反映特定採樣位置。</p>
+</div>
+<p style="margin:0.65rem 0 0;font-size:0.9rem"><strong>此例仍未知：</strong>T1 缺乏可配對的完整 ABG、Hb 與 CO，不能替病人算出當時 DO₂，也不能用 95% 排除局部缺血。</p>
+<div style="margin-top:0.7rem;padding:0.72rem 0.85rem;background:#fff;border-radius:8px;border:1px solid #d7e0dc">
+<strong>床邊下一步：</strong>優先查出血／胸管趨勢、血壓與升壓藥需求、心律、心超及器官灌流；再把同步 Hb、血氣與連續 lactate 變化接回來。<strong>不能直接以高 lactate 下令補液，也不能因 ScvO₂ 高就放心。</strong>
+</div>
+</div>
+<figcaption><strong>圖 1｜同時存在的兩個訊號，為何仍不能宣稱組織灌流足夠。</strong>數值為 Wardhana 與 Kurniawaty（2025）CABG 病例系列之病人 3、T1 實測；供應與耗氧段落是用來解釋「缺少什麼資料」的生理關係，非該病人已測得的 DO₂ 或 VO₂。<a href="https://macc.perdatin.org/index.php/my-journal/article/download/429/365/">原始 Table 1</a>。</figcaption>
 </figure>
 
 ## 第二問｜ScvO₂ 95%，為什麼仍不能宣稱 oxygen delivery 足夠？
@@ -198,7 +216,7 @@ Smyth 等人在 2021 年報告**另一名** 54 歲 CABG 病人，患有 type 2 d
 
 還有一個容易誤用的數字：2024 年 EACTS/EACTAIC/EBCP 指引提出**常溫 CPB 期間**特定的 goal-directed perfusion／DO₂ 門檻，這些門檻是針對手術中 CPB 的灌流管理，**不能不加區分地轉成離開 CPB 後所有 ICU 病人的固定輸液或升壓目標**。IBCC 的術後 hemodynamic rough targets 也只能和症狀、病程及具體原因一起使用。
 
-## 回到第一個病人
+## 回到這位 69 歲 CABG 病人
 
 第一例 lactate 14.8、ScvO₂ 95%，其實沒有任何一個數字「錯」。錯的是我們原本希望用單一數字，代替不同層次的生理判斷。
 
