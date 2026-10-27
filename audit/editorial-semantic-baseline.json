@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "note": "Frozen public teaching blobs before introducing incremental EPQC semantic review. This is a grandfathered baseline, not a retrospective quality certificate. Never refresh to bypass an editorial review.",
+  "legacy_blobs": {
+    "content/xiaoma-reading/integrated/2026-10-21-dcm.md": "f16eced854467e5c8e43a063ef5d34b93f0d1d15",
+    "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md": "be780f1ae3567c60f3a108c8fa489ca8005f39d3",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-hypercapnic-failure.md": "67bac856e6cc1ea7ded35c05f95d2f8677a4c320",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md": "8f10c78eb6c9df4b749b853f20baab235417c2ab",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md": "0bb914e54645574201265d57c77ec3bd01d19edb",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-respiratory-practice.md": "acde2c3149553358fc988570574c28dc5c663e11",
+    "content/xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md": "a97f04a0d73c7ff7d1cdaf60f8fa7705e8b94c8c",
+    "content/xiaoma-internal-medicine/lessons/2026-10-22-exam108-renal-foundations.md": "bd286c8d78c2e9a778784a741a1c272e8f33fd45"
+  }
+}
