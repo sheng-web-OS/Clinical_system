@@ -9,7 +9,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "site"))
 from catalog import load_pages
-from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers, question_records
+from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers, question_records, archive_anchor
 
 class ExamArchiveContract(unittest.TestCase):
     @classmethod
@@ -58,6 +58,37 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertEqual(index.count('class="exam-catalog-question"'), len(question_records(self.pages)))
         for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78):
             self.assertIn("#q-" + str(q) + '"', index)
+
+    def test_heart_sounds_29_plus_20_are_visible_in_correct_exam_years(self):
+        """A published article alone cannot stand in for canonical year-archive entries."""
+        canonical = next(p for p in self.pages if p["source"] ==
+                         "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md")
+        supplement = next(p for p in self.pages if p["source"] ==
+                          "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md")
+        first = canonical.get("exam_questions", [])
+        second = supplement.get("exam_questions", [])
+        self.assertEqual(len(first), 29, "Original 29 official questions must be year-indexed")
+        self.assertEqual(len(second), 20, "Supplement must contain 20 nonduplicating questions")
+        identity = lambda q: tuple(q[k] for k in
+                                   ("year_roc", "sitting", "stage", "subject", "question_number"))
+        original_keys = {identity(q) for q in first}
+        additional_keys = {identity(q) for q in second}
+        self.assertEqual(len(original_keys), 29)
+        self.assertEqual(len(additional_keys), 20)
+        self.assertTrue(original_keys.isdisjoint(additional_keys))
+        self.assertEqual({key[0] for key in original_keys | additional_keys},
+                         {111, 112, 113, 114, 115})
+
+        archive = render_exam_archive(self.pages, ROOT)
+        for page, entries in ((canonical, first), (supplement, second)):
+            for q in entries:
+                # Year archive must deep-link to the question itself, not just the article top.
+                record = next(r for r in question_records(self.pages)
+                              if r["page"]["source"] == page["source"] and identity(r["exam"]) == identity(q))
+                self.assertIn('id="' + archive_anchor(record) + '"', archive)
+                self.assertIn('href="' + page["output"] + '#' + record["anchor"] + '"', archive)
+        self.assertIn("ASD 與 Eisenmenger：官方更正 B 或 D", archive)
+        self.assertIn("原圖待核", archive, "Image-dependent questions cannot masquerade as verified figures")
 
     def test_future_year_sorts_above_108_automatically(self):
         pages = copy.deepcopy(self.pages)
