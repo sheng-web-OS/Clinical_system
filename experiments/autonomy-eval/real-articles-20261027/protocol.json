@@ -1,0 +1,49 @@
+{
+  "experiment_id": "real-articles-20261027",
+  "created_at": "2026-10-27T07:31:32.253872+00:00",
+  "source_sha": "c5898a22636b265da3bc99aec387c346e7f6c386",
+  "design": "3 current real full Markdown articles x 2 prompt conditions x 3 fresh-context replicates = 18 article reviews; no injected defects or defect-description prompts",
+  "scope": "internal consistency, reader reasoning continuity and public-reader context; no independent external medical or rendered-screen QA",
+  "same_source_and_output_constraints": true,
+  "model": "same inherited model/effort, no override; exact version and sampling controls not exposed",
+  "selection": "purposive existing-site articles; creator has seen prior incident history, workers get no prior discussion or issue locations",
+  "baseline": "審查提供的完整公開醫學教材，找出會實際妨礙理解、造成前後不一致或讀者語境不適合的問題，保留正確內容與必要證據限制。只以這份固定文章作內部一致性、敘事／概念／決策前提及公開閱讀語境檢查；外部醫學事實、圖片像素與正式頁面尚未查驗者只列pending，不憑記憶斷言醫學錯誤。不修改正式內容，不操作外部系統。",
+  "treatment_addition": "逐節確認讀者先知道什麼、新資料如何改判、下一段需要什麼前提，檢查真正相鄰轉折。每次指稱缺少前提，要先反查全文是否已建立，避免冗餘補寫。病例先呈現可見觀察與時序再解釋機轉，區分作者假說、實測與確定因果。核對病人指稱、數值、符號及圖說是否在文內一致。公開正文中與讀者理解無關的製作／流程紀錄應移往內部，但必須保留真正影響醫學判斷的限制與來源身分。對每個問題提出可直接套用的最小修訂，不為增加段落而改寫。",
+  "primary_metrics": [
+    "independently supported findings / all asserted findings",
+    "valid unique issues per article-condition",
+    "known predeclared anchor coverage, not exhaustive recall",
+    "adequacy of proposed edits"
+  ],
+  "known_anchor_count": 4,
+  "reference_anchors_sha256": "4155bbf37486609dc557d1c5e0258fec7369f4055a67f89b7faacf75b99f35c6",
+  "article_order": {
+    "1": [
+      "article1",
+      "article3",
+      "article2"
+    ],
+    "2": [
+      "article1",
+      "article2",
+      "article3"
+    ],
+    "3": [
+      "article2",
+      "article3",
+      "article1"
+    ]
+  },
+  "practical_cost": "text characters only; no API billing or owner-time claims",
+  "reviewer": "fresh context, explicit arm/trial labels removed; validate against complete source, allow justified no-defect results",
+  "authority": "private evaluation only; do not merge/publish or overwrite concurrent content fixes",
+  "corpus_sha256": "ba39b0a82f6966e98f4f5fe40926ba6158f9e60d6fb302da6f3d1767ad4c560d",
+  "task_sha256": {
+    "baseline-2-task.json": "fcc71780269295428e88df816c09b2ca72e26fc28e8786e4dc763fc2455d56a9",
+    "baseline-1-task.json": "06d4d2f9a8f375a5eeebfb0ac8c2077defb91123bae57cfbedd3f559cdc48f7a",
+    "baseline-3-task.json": "9dfe1eefa7bcedd53d47e208f2485ddf9818243a1b1784006c3f119915c659a1",
+    "rules-2-task.json": "6903b8c7532e11c3cb1c5638df34bf5889ace39cfbf3488f41916a25872d43c6",
+    "rules-1-task.json": "8e6e37203857a8d3b15f52a5a7dfc5bfda97ea132a27824cb326a8849fea7647",
+    "rules-3-task.json": "6900bc069eb1cacf7376c1844a81d598a386b85d8e3f6958fd41a0d8b04e7e08"
+  }
+}
