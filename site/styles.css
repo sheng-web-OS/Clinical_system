@@ -901,3 +901,22 @@
 @media(max-width:680px){.reading-prose .osm-gap-case{padding:.65rem .7rem}.reading-prose .osm-gap-case-head strong{font-size:.9rem}}
 
 
+
+/* The 114-II Q22 SAAG comparison is one semantic table, not two copies.
+   On phones, each A-D row becomes a four-value 2x2 card: no hidden last
+   column and no lateral scrolling to discover the calculated SAAG. */
+.reading-prose table.saag-exam-table{display:table;width:100%;table-layout:fixed;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.reading-prose .saag-exam-table th,.reading-prose .saag-exam-table td{min-width:0;overflow-wrap:normal;padding:12px 9px}
+.reading-prose .saag-exam-table td{text-align:right}
+.reading-prose .saag-exam-table th:first-child{text-align:center;width:13%}
+.reading-prose .saag-mobile-label{display:none}
+@media(max-width:760px){
+ .reading-prose table.saag-exam-table{display:block;overflow:visible;width:100%;max-width:100%;margin:22px 0 25px;font-size:15px;line-height:1.55}
+ .reading-prose .saag-exam-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .reading-prose .saag-exam-table tbody{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ .reading-prose .saag-exam-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 12px;padding:10px 14px 12px;border:1px solid var(--line);background:var(--surface)}
+ .reading-prose .saag-exam-table tbody th[scope="row"]{grid-column:1/-1;display:block;width:auto;min-width:0;text-align:left;font-size:16px;font-weight:750;padding:0 0 7px;background:transparent;border-bottom:1px solid var(--line);color:var(--brand)}
+ .reading-prose .saag-exam-table tbody td{display:flex;min-width:0;flex-direction:column;align-items:flex-start;gap:2px;padding:5px 0;border:0;text-align:left}
+ .reading-prose .saag-mobile-label{display:block;min-width:0;font-size:12px;line-height:1.45;color:var(--muted);overflow-wrap:break-word}
+ .reading-prose .saag-value{display:block;font-size:17px;font-weight:650;line-height:1.45}
+}
