@@ -1764,7 +1764,18 @@
     "navigation": false,
     "review": "ai_editorial_review",
     "layout": "reader",
-    "section": "肝膽"
+    "section": "肝膽",
+    "related_exams": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 1,
+        "focus": "相同 ALP 升高有不同病因：低 ceruloplasmin 改變前測機率，並非由 ALP 自行確診 amyloid；對照 SPEP 陰性不足以排除 AL 的另一層推理。",
+        "concept_heading": "Q1｜同一個 ALP，哪三種證據會改變診斷？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-reading/infiltrative-alp-sources-20261027.md",
@@ -1776,5 +1787,46 @@
     "section": "來源與版本",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-gi-liver-exam-trio.md",
+    "output": "xiaoma-20261027-gi-liver-national-exam-trio.html",
+    "title": "ALP、Child–Pugh、SAAG：三題跨年度國考，三個不同的肝病判斷軸",
+    "subtitle": "112（一）Q1 × 114（一）Q22 × 114（二）Q22，官方更正答案與臨床推理",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "肝膽與國考",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 1,
+        "question_heading": "112 年第一次・醫學（三）第 1 題｜ALP 升高，為什麼不能直接診斷 amyloidosis？",
+        "topic": "ALP、低 ceruloplasmin 與 Wilson disease"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 22,
+        "question_heading": "114 年第一次・醫學（三）第 22 題｜Child–Pugh 為什麼沒有 ALT？",
+        "topic": "Child–Pugh 不包含 ALT"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 22,
+        "question_heading": "114 年第二次・醫學（三）第 22 題｜SAAG 為何要與腹水總蛋白一起讀？",
+        "topic": "SAAG 與腹水蛋白區分肝硬化腹水"
+      }
+    ]
   }
 ]
