@@ -1828,5 +1828,17 @@
         "topic": "SAAG 與腹水蛋白區分肝硬化腹水"
       }
     ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exam-gi-liver-three-sources.md",
+    "output": "xiaoma-exam-gi-liver-three-sources.html",
+    "title": "肝膽國考三題｜原卷及官方更正答案證據",
+    "subtitle": "112（一）Q1、114（一）Q22、114（二）Q22 的考選部逐頁核讀",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "來源與版本",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
