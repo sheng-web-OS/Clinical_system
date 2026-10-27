@@ -35,7 +35,7 @@
 
 ## NICE 原始流程如何限定診斷分支？
 
-依據 NICE NG158 2023 [完整原始 DVT／PE 決策圖](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf)，第 1、2 頁）：
+依據 [NICE NG158 原始 DVT／PE 決策圖](https://thrombosisuk.org/wp-content/uploads/2024/12/WellsScore.pdf) 第 1、2 頁：
 
 - **DVT：NICE 兩層 Wells likely ≥2** → proximal CUS → positive 可確診 DVT；若 CUS negative，使用/補做 quantitative D-dimer；**negative D-dimer** 可依路徑不再追查並考慮替代診斷；**positive D-dimer** 則在 6–8 天後再做 proximal CUS。重複 CUS 陽性與陰性的停止／確診條件在圖中都有交代。這是特定 NICE 路徑；interim anticoagulation、COVID-19 等停藥例外須依原條文核對。
 - **DVT unlikely ≤1**：以 D-dimer 起始；若陽性進入 proximal CUS，並不是把書中 DVT 三層 low/moderate/high 版本改標成 NICE 的兩層。
@@ -49,8 +49,8 @@
 
 | 教學假設 | 陰性前機率 | pretest odds × 0.1 | 陰性後機率 |
 | --- | ---: | ---: | ---: |
-| A | 5% | (0.05 / 0.95) × 0.10 | 約 0.524% |
-| B | 50% | (0.50 / 0.50) × 0.10 | 約 9.09% |
+| A | 5% | (0.05 / 0.95) × 0.10 | 約 0.52356% |
+| B | 50% | (0.50 / 0.50) × 0.10 | 約 9.09091% |
 
 這些數字不提供通用停查門檻。停止條件仍需合併經驗證的 DVT／PE 分流方案、病人情境、檢驗方法與所採 cutoff；高前測機率或疑似血流動力學不穩定的 PE 不應機械使用陰性 D-dimer 排除。
 
