@@ -98,6 +98,15 @@ BUN 反映血中尿素氮；它受腎臟排泄、尿素生成、蛋白質攝取�
 
 整個腎臟 lab 推理的核心是：**AKI 定義回答「危險訊號出現了嗎」，病程與尿液回答「可能在哪裡、為什麼」，床邊血流動力和併發症回答「現在要做什麼」**。這三件事相連，但不能互相代替。
 
+## 國考真題定位：同樣的數字，考的是哪個判斷？
+
+從本系統 2022–2026 年二階國考結構化檔案，已找到兩題與本篇概念直接對應，但兩題目前皆標註**原始考卷 PDF 視覺／醫學複核未完成**，因此此處先提供題源定位與臨床解題線索，不把它們宣稱為正式完成的國考詳解。
+
+- **113 年第一次醫師二階，醫學（三）Q29**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)。比較 FeNa <1%、尿滲透壓 >500、BUN/Cr >20 與尿沉渣 granular casts；內部機器題庫答案欄記載 D。推理焦點不在「哪個數字跟 ATN 相關」的背誦，而是前三者受水鈉調控和灌流影響，顆粒圓柱體則能提供較直接的腎小管受累線索。**但 granular casts 也不是腎切片，不能憑單項沉渣永久確診所有 intrinsic AKI。**
+- **115 年第二次醫師二階，醫學（三）Q28**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)。問治療反應追蹤；內部機器題庫答案欄記載 A（連續 SCr 與尿量），可對照本文「不同時間尺度的動態功能訊號」。不因此推論所有病人每天都該接受腹部超音波或反覆培養。
+
+題目年度、梯次、科目、題號與內部擷取答案已對上檔案身分，**尚未核對官方答題更正 PDF 的原始圖像**；正式上線前需完成對題核驗，不能以這個段落替代原試題審核。
+
 ## 參考來源與邊界
 
 [1] NICE NG148, *Acute kidney injury: prevention, detection and management*, official Recommendations（已核對網頁關鍵條款；留意英國特定 6h／24h referral/ultrasound 建議在台灣仍須依實際資源與院內路徑執行）。https://www.nice.org.uk/guidance/ng148/chapter/Recommendations
