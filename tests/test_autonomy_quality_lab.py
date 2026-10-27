@@ -278,5 +278,36 @@ class ProviderResponseSafety(unittest.TestCase):
 
 
 
+class ModelFindingSourceChecks(unittest.TestCase):
+    def test_missing_original_span_never_auto_passes(self):
+        r = lab.audit_generated_finding_quotes(
+            "There is no quoted claim.", "1. 原文：「Invented quote」")
+        self.assertEqual(r["whitespace_matched_quotes"], 0)
+        self.assertEqual(r["findings"][0]["status"], "SOURCE_SPAN_NOT_LOCATED")
+        self.assertFalse(r["public_edit_allowed"])
+
+    def test_merged_paragraphs_are_not_fabricated_content(self):
+        r = lab.audit_generated_finding_quotes(
+            "DCM 的定義包含兩個層次。\\n\\n第一個是觀察。\\n\\n第二個是病因。",
+            "原文：「DCM 的定義包含兩個層次。第一個是觀察。第二個是病因。」")
+        self.assertEqual(r["exact_quotes"], 0)
+        self.assertEqual(r["whitespace_matched_quotes"], 1)
+        self.assertFalse(r["medical_quality_verified"])
+
+    def test_qualified_not_all_and_at_least_need_context_not_auto_edits(self):
+        article = "這不是所有 DCM 都必然遵循的單一病程。\\n\\n治療時至少考慮三個層次。"
+        answer = ("原文：「這不是所有 DCM 都必然遵循的單一病程。」\\n"
+                  "原文：「治療時至少考慮三個層次。」")
+        r = lab.audit_generated_finding_quotes(article, answer)
+        self.assertEqual(r["needs_qualification_review"], 2)
+        self.assertTrue(all(not x["auto_edit_allowed"] for x in r["findings"]))
+
+    def test_quote_present_never_proves_medical_correctness_or_authorizes_release(self):
+        r = lab.audit_generated_finding_quotes("明確說明EF。", "原文：「明確說明EF。」")
+        self.assertEqual(r["whitespace_matched_quotes"], 1)
+        self.assertFalse(r["medical_quality_verified"])
+        self.assertFalse(r["public_edit_allowed"])
+
+
 if __name__ == "__main__":
     unittest.main()
