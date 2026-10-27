@@ -291,6 +291,36 @@
   .article .exam-archive-entry{grid-template-columns:minmax(0,1fr)}
 }
 
+/* One official question can serve several readings without a second answer source. */
+.article .exam-catalog-question{padding:16px 0 0;margin-top:16px;border-top:1px solid var(--line);scroll-margin-top:100px;min-width:0}
+.article .exam-question-entry{display:inline-block;min-height:44px;line-height:1.65;font-size:.82em;font-weight:700;text-decoration:none;padding:8px 0}
+.article .exam-concept-links{font-size:.78em;line-height:1.7;min-width:0}
+.article .exam-concept-links>span{display:block;font-size:.88em;color:var(--muted);margin-bottom:5px}
+.article .exam-concept-links ul{list-style:none;margin:0;padding:0}
+.article .exam-concept-links li{margin:0 0 10px;padding:0;overflow-wrap:anywhere}
+.article .exam-concept-links li>a{display:block;padding:5px 0;line-height:1.7;text-decoration:none}
+.article .exam-concept-links small{display:block;font-size:.94em;color:var(--muted);line-height:1.7}
+.article .exam-question-return{border-left:3px solid var(--brand);padding:12px 16px;margin:24px 0 32px;background:var(--brand-light);border-radius:0 8px 8px 0}
+.article .exam-year-return{display:inline-block;font-size:.76em;line-height:1.7;min-height:44px;padding:10px 8px 6px 0}
+.related-exams{margin-top:52px;border-top:1px solid var(--line);padding-top:12px;scroll-margin-top:100px}
+.article .related-exam-card{min-width:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:20px;margin:20px 0;overflow-wrap:anywhere}
+.article .related-exam-label{margin:0;color:var(--brand);font-weight:700;font-size:.75em;line-height:1.8}
+.article .related-exam-focus{font-size:.9em;line-height:1.85;margin:10px 0 16px}
+.article details.related-exam-content{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:0;min-width:0}
+.article .related-exam-content>summary{padding:13px 15px;min-height:48px;box-sizing:border-box;font-size:.83em;line-height:1.7;cursor:pointer;font-weight:700}
+.article .embedded-exam-body{padding:4px 16px 16px;min-width:0}
+.article .embedded-exam-body>h3:first-child{font-size:1em;line-height:1.8;margin-top:16px}
+.article .related-exam-actions{display:flex;gap:0 18px;flex-wrap:wrap;margin-top:10px;font-size:.73em;line-height:1.7}
+.article .related-exam-actions>a{padding:10px 0;min-height:44px;box-sizing:border-box}
+.article .exam-source-notice{font-size:.72em;color:var(--muted);line-height:1.8;margin-top:24px}
+@media(max-width:650px){
+  .article .related-exam-card{padding:14px;margin:16px 0}
+  .article .embedded-exam-body{padding:2px 12px 12px}
+  .article .exam-concept-links{font-size:.84em}
+  .article .related-exam-actions{gap:0 12px;font-size:.8em}
+  .article .exam-question-return{padding:10px 12px}
+}
+
 /* Respiratory deep-dive visual layout: native portrait summaries on phones.
    The 760-850px research SVGs remain available in desktop layout but are not
    allowed to force miniaturized text or horizontal panning on a phone. */
