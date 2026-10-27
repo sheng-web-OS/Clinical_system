@@ -13,12 +13,27 @@ def articles(pages):
     return [p for p in pages if p.get("date")]
 
 
+def is_reference_page(row):
+    """Source/provenance pages are citations, not independent reading recommendations."""
+    return (row.get("review") == "source_audit"
+            or row.get("kind") == "source_reference"
+            or row.get("source", "").endswith("-sources.md"))
+
+
+def is_current_lesson(row):
+    """Discovery eligibility is editorial, not implied by a publication date."""
+    return (bool(row.get("date"))
+            and row.get("collection") == "xiaoma-internal-medicine"
+            and row.get("kind") not in ("historical_original", "exam_compilation")
+            and not row.get("exam")
+            and not is_reference_page(row)
+            and "練習" not in row.get("section", ""))
+
+
 def render_today_updates(pages, today=None):
     today = today or taipei_day()
     rows = [p for p in articles(pages)
-            if p.get("collection") == "xiaoma-internal-medicine"
-            and p.get("kind") != "historical_original" and not p.get("exam")
-            and p.get("updated", p["date"]) == today]
+            if is_current_lesson(p) and p.get("updated", p["date"]) == today]
     cards = []
     for row in sorted(rows, key=lambda p: (p.get("section", ""), p["title"])):
         cards.append('<a class="lesson-card" data-updated="' + today + '" href="' +
@@ -33,7 +48,7 @@ def render_today_updates(pages, today=None):
 
 
 def _group(row):
-    if row.get("exam") or "練習" in row.get("section", ""):
+    if row.get("exam") or row.get("kind") == "exam_compilation" or "練習" in row.get("section", ""):
         return "國考詳解與練習"
     section = row.get("section", "")
     if any(key in section for key in ("胸腔", "呼吸", "酸鹼", "重症")):
@@ -93,6 +108,8 @@ def render_article_index(pages):
     groups = defaultdict(list)
     primary = primary_versions(pages)
     for row in articles(pages):
+        if is_reference_page(row):
+            continue  # Provenance is reached from its lesson, never a standalone article.
         if row["output"] in primary:
             continue  # Archived source stays as a small link attached to its current reading.
         groups[_group(row)].append(row)
