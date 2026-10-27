@@ -21,11 +21,11 @@
 
 1. **真實病例全文**：Rouleau et al., *Case Reports in Critical Care* 2026, DOI 10.1155/crcc/4107549。實讀 Case Report、Discussion，核對 HR/BP/RR/HFNC/VBG、lactate、troponin/BNP、插管/ROSC/ECMO/取栓、重大出血與圖說；原 Figure 1 是 ECG、Figure 2 是取出血栓，**不是 CTPA**。原像素尚未目視。
 2. **P0：原始資料數值不一致**。原文初始 VBG pH 7.06、pCO₂ 15 mmHg，同段 chemistry bicarbonate 9 mEq/L；Henderson–Hasselbalch 若同時同樣本，推得 HCO₃ ≈ 4.1 mEq/L，與 9 明顯不符。原文未能核實採樣時間差或誤植。**不修改原病例數據，不以其計算 Winter 或混合障礙**；主文及來源頁明列疑義，正式發布前需釐清或進一步縮減數值推論。
-3. **Pocket 9E 原頁**：Library 找到原 PDF，使用 files.read p98–101 取得文字、表格標題與部分 footnote；圖像不可用，原 bytes materialization 被權限拒絕。本次**未完成 Figure 2-3 與 p100 初始抗凝表原像素／caption／footnote 的親自重核**。既有 VTE sources 曾有 p97–100 目視紀錄，可作定位但不能冒稱本次完成。p100 rivaroxaban `15 mg qd ×21d` 與 EINSTEIN-PE `15 mg BID ×21d` 不符，來源頁明確警示，不作處方。
-4. **2026 AHA/ACC**：查正式 guideline 及 AHA 要點、JACC at-a-glance，核對 A–E、診斷 vs 風險、A1–C2 不常規全身溶栓、D1–D2 可考慮、E1 合理；**2026-07-14 correction** 原文已核讀，更新 Table 4 RV echo assessment 與 §3.1.2 reference 44。原 Figure 1/2 像素尚未目視，D2 描述在正文與圖註有語義差異，未把真實病例硬貼精確 subcategory。
-5. **新試驗**：HI-PEITHO 544 人（4.0% vs 10.3%；major bleeding 4.1% vs 2.2%）核 ACC 2026 同步報告與後續評論；PRAGUE-26 558 人（0.7% vs 6.8%；ICH 2 vs 0）核 NEJM 摘要；PEITHO 原文摘要／歷史結論。未讀所有 supplementary appendix，不能宣稱跨試驗比較已完成。
-6. **圖像權利與品質**：第三方 Pocket、JACC、Wiley 原像素均未重製。沒有用 AI 卡片或未驗證外部圖片湊圖；原書 Figure/Table Gate **pending**。真實病例 ECG／取栓照片若將來嵌入，需先核對圖像像素、caption、授權、與正文實際認知角色，且 360/390px 可放大。
-7. **考題**：未實際核對官方 PE 真題原卷與更正，因此只保留 T1/T2 自編；不得將其記成國考題數。
+3. **公開原始流程補位**：實際開啟 NICE NG158 3 頁 visual summary，目視 PDF 第 2 頁 suspected PE 流程、分支與頁底 5 項 footnote；主文已附可點入的原 PDF，**清楚標明不是 Pocket Figure 2-3**，不以原創抽象圖冒充。\n4. **Pocket 9E 原頁**：Library 找到原 PDF，使用 files.read p98–101 取得文字、表格標題與部分 footnote；圖像不可用，原 bytes materialization 被權限拒絕。本次**未完成 Figure 2-3 與 p100 初始抗凝表原像素／caption／footnote 的親自重核**。既有 VTE sources 曾有 p97–100 目視紀錄，可作定位但不能冒稱本次完成。p100 rivaroxaban `15 mg qd ×21d` 與 EINSTEIN-PE `15 mg BID ×21d` 不符，來源頁明確警示，不作處方。
+5. **2026 AHA/ACC**：查正式 guideline 及 AHA 要點、JACC at-a-glance，核對 A–E、診斷 vs 風險、A1–C2 不常規全身溶栓、D1–D2 可考慮、E1 合理；**2026-07-14 correction** 原文已核讀，更新 Table 4 RV echo assessment 與 §3.1.2 reference 44。原 Figure 1/2 像素尚未目視，D2 描述在正文與圖註有語義差異，未把真實病例硬貼精確 subcategory。
+6. **新試驗**：HI-PEITHO 544 人（4.0% vs 10.3%；major bleeding 4.1% vs 2.2%）核 ACC 2026 同步報告與後續評論；PRAGUE-26 558 人（0.7% vs 6.8%；ICH 2 vs 0）核 NEJM 摘要；PEITHO 原文摘要／歷史結論。未讀所有 supplementary appendix，不能宣稱跨試驗比較已完成。
+7. **圖像權利與品質**：第三方 Pocket、JACC、Wiley 原像素均未重製。沒有用 AI 卡片或未驗證外部圖片湊圖；原書 Figure/Table Gate **pending**。真實病例 ECG／取栓照片若將來嵌入，需先核對圖像像素、caption、授權、與正文實際認知角色，且 360/390px 可放大。
+8. **考題**：找到高度相關的 **112 年第二次・醫學（三）第 51 題**（PE Wells、D-dimer、右心衰竭），第三方逐字題目與答案 D 可查，但**尚未實際核對考選部原卷、標準答案與更正**；因此只保留 T1/T2 自編，Q51 僅為下一步官方核題候選，不得將其記成已完成國考題數。
 
 ## EPQC 初稿篩選（同上下文自評，非獨立審查）
 
@@ -40,4 +40,4 @@ A 命題 3：一篇聚焦診斷／失代償／介入三個層次，後半試驗�
 
 ## 下一步與停止條件
 
-先修 P0（原病例血氣／chemistry 來源一致性，或撤除不能支持的精確酸鹼推論），取得可驗證 Pocket Figure 2-3 與 p100 原表像素／caption／footnote；再決定真正需要的原圖引用與手機閱讀方式。之後補一題可核實的官方 PE 真題與更正、按年份雙向連結，做獨立 V2 醫學複讀、圖像 QA、build/CI、main 與 Cloudflare 同 SHA 讀回。**上述完成前 HOLD，不自動合併或發布。**
+先修 P0（原病例血氣／chemistry 來源一致性，或撤除不能支持的精確酸鹼推論），取得可驗證 Pocket Figure 2-3 與 p100 原表像素／caption／footnote；NICE 原圖已目視並有可點入的 PDF，但不能代替 Pocket 原圖核對；再決定真正需要的原圖引用與手機閱讀方式。之後補一題可核實的官方 PE 真題與更正、按年份雙向連結，做獨立 V2 醫學複讀、圖像 QA、build/CI、main 與 Cloudflare 同 SHA 讀回。**上述完成前 HOLD，不自動合併或發布。**
