@@ -974,6 +974,34 @@
           "scope_limit": "這是原創概念文字三欄，不是官方 Figures 26–27 的圖像重製；當右心流量、呼吸與肺血管阻力不同時 fixed S2 與 flow rumble 不是所有 ASD 均出現的徵象。"
         }
       ]
+    },
+    "content/clinical-os/acs.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/acs-exam-sources.md",
+      "items": [
+        {
+          "locator": "Fifth Universal Definition of Myocardial Infarction (2026), Section 7.2.1, original Figure 2: Diagnostic pathway for possible primary MI; PMC Figure F2 original source page/caption located; image pixels not independently inspected",
+          "source_token": "Figure 2 — Diagnostic pathway",
+          "mode": "source_link",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F2/",
+          "why_link_instead": "出版圖像具原始著作權，為提供原有解析度、圖例註腳及原文脈絡，僅連到原始來源，不公開重製原像素。",
+          "teaching_role": "圖分開標示持續 ST elevation 的緊急 working STEMI 與後續造影／心肌影像之病因確認，防止把等候 cTn 錯當為每個急診案例的必要步驟。",
+          "scope_limit": "圖無法替個別病人決定溶栓禁忌、再灌流可近性，也不能單靠一幅流程圖判定所有非典型 ECG 的急性冠脈阻塞。",
+          "pixel_verified": false,
+          "verification_scope": "Published figure identity, caption and source URL were located; no reviewer in this gate has documented a pixel-level inspection of arrows, branches, labels or footnotes. The article links to the publisher and does not reproduce figure pixels."
+        },
+        {
+          "locator": "Fifth Universal Definition of Myocardial Infarction (2026), Section 7.2.2, original Figure 4: Diagnostic pathway for possible secondary MI; PMC Figure F4 original source page/caption located; image pixels not independently inspected",
+          "source_token": "Figure 4 — Diagnostic pathway",
+          "mode": "source_link",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13523810/figure/F4/",
+          "why_link_instead": "原始出版流程圖保留完整的影像判定箭頭及圖註；使用原作者官方原圖連結，避免在沒有重製授權時複製出版像素。",
+          "teaching_role": "顯示 acute injury 加供需失衡仍是 possible secondary MI，後續需依冠脈和心肌影像轉向 primary MI 或排除 MI，保留競爭病因。",
+          "scope_limit": "不能據此推論重症病人必須不顧風險立即作侵入性造影，也不能用敗血症加單一 troponin 數字推定已確認 secondary MI。",
+          "pixel_verified": false,
+          "verification_scope": "Published figure identity, caption and source URL were located; no reviewer in this gate has documented a pixel-level inspection of arrows, branches, labels or footnotes. The article links to the publisher and does not reproduce figure pixels."
+        }
+      ]
     }
   }
 }

@@ -1800,8 +1800,8 @@
   {
     "source": "content/clinical-os/acs.md",
     "output": "acs-reading.html",
-    "title": "ACS：從缺血的證據，讀到治療後留下的風險",
-    "subtitle": "ACS 四章閱讀入口：症狀與損傷、ECG 空間與時間、抗栓與再灌流、MI 後剩餘風險",
+    "title": "ACS：從胸痛到導管，再到心肌梗塞後的新危險",
+    "subtitle": "從急診 ECG、hs-cTn、再灌流與抗栓，推進至休克和 MI 後機械併發症",
     "collection": "clinical-os",
     "layout": "reader",
     "section": "心臟與胸痛",
@@ -1815,7 +1815,7 @@
         "subject": "醫學（三）",
         "question_number": 6,
         "focus": "以 MI 證據／病因區別舊 Type 5 和 2026 新程序性 MI 的診斷",
-        "concept_heading": "01｜診斷：缺血與心肌傷害，為什麼不能互相取代？"
+        "concept_heading": "四、Troponin 回答的是「傷害」，不是自動回答「是哪條血管、該不該 PCI」"
       },
       {
         "year_roc": 114,
@@ -1824,7 +1824,7 @@
         "subject": "醫學（三）",
         "question_number": 6,
         "focus": "把術前 P2Y12、PCI 中抗凝、GP IIb/IIIa 與 DAPT 療程分開",
-        "concept_heading": "03｜治療：藥物、導管與時間，各自要改變哪一段病程？"
+        "concept_heading": "七、藥物不是一串口訣：每一種藥要回答哪個血栓環節、又承擔什麼代價？"
       },
       {
         "year_roc": 114,
@@ -1833,7 +1833,7 @@
         "subject": "醫學（三）",
         "question_number": 9,
         "focus": "MI 後喘、倦怠和水腫是獨立的心室功能／鬱血／灌流問題",
-        "concept_heading": "04｜MI 之後：血管已通，為什麼還不能說病人恢復了？"
+        "concept_heading": "十、導管已經成功，病人突然喘、休克或心律不整，怎麼辦？"
       },
       {
         "year_roc": 108,
@@ -1842,7 +1842,7 @@
         "subject": "醫學（三）",
         "question_number": 76,
         "focus": "由古柯鹼誘發缺血釐清血管痙攣、心肌需氧與用藥限制",
-        "concept_heading": "01｜診斷：缺血與心肌傷害，為什麼不能互相取代？"
+        "concept_heading": "八、減少胸痛不是再灌流；改善數值也不代表改善預後"
       },
       {
         "year_roc": 115,
@@ -1851,7 +1851,7 @@
         "subject": "醫學（三）",
         "question_number": 11,
         "focus": "從持續胸痛、前壁 STE、SpO₂ 到仍需緊急再灌流的條件判斷",
-        "concept_heading": "03｜治療：藥物、導管與時間，各自要改變哪一段病程？"
+        "concept_heading": "六、STEMI 的再灌流時鐘：把血栓打開才是治療主軸"
       },
       {
         "year_roc": 115,
@@ -1860,7 +1860,7 @@
         "subject": "醫學（三）",
         "question_number": 12,
         "focus": "從 LAD 打通後的新風險辨別 LV thrombus、VT/VF 和長期次級預防",
-        "concept_heading": "04｜MI 之後：血管已通，為什麼還不能說病人恢復了？"
+        "concept_heading": "十、導管已經成功，病人突然喘、休克或心律不整，怎麼辦？"
       },
       {
         "year_roc": 115,
@@ -1869,14 +1869,15 @@
         "subject": "醫學（三）",
         "question_number": 13,
         "focus": "灌流下降、壁運動、ECG 電位和血中 troponin 訊號的不同時間尺度",
-        "concept_heading": "02｜ECG：心肌病灶與紙上的波形，隔著一個觀察方向"
+        "concept_heading": "三、ECG 要讀成「哪一區心肌正在求救」，不能只查 ST 有沒有超過門檻"
       }
-    ]
+    ],
+    "kind": "ai_integrated"
   },
   {
     "source": "content/xiaoma-internal-medicine/acs-exam-sources.md",
     "output": "xiaoma-acs-exam-sources.html",
-    "title": "ACS：113、114 年醫師二階原卷與 2026 MI 定義對讀",
+    "title": "ACS：113–115 年醫師二階原卷與 2026 MI 定義對讀",
     "subtitle": "考選部正式更正答案、2025 ACC/AHA ACS、2026 Fifth UDMI 與核讀範圍",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",

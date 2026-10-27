@@ -3196,6 +3196,586 @@
           "line_for_editor": 37
         }
       }
+    },
+    "content/clinical-os/acs.md": {
+      "content_blob": "039bf1a3d9dc9d037ac54c96d41724ad8a6a5799",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "clinical-os-hourly-automation:6adf8de52d4481918316f2e420c40b3b:turn10:2026-10-27T21:54+08:00",
+      "core_reader_question": "胸痛患者初次 ECG 和 hs-cTn 均未達典型門檻時，如何依缺血風險與新證據決定再灌流，又如何在導管後重新辨識低灌流、心律與結構併發症？",
+      "new_understanding": "本稿用缺血時鐘與心肌傷害時鐘分離的主線，串起原發、次發與程序相關 MI 的確認證據、非典型 ECG、再灌流、抗栓和 PCI 後新危險，最後以歷史國考與三個反事實驗證能否隨條件改判。",
+      "strongest_counterargument": "十二章範圍廣，GRACE 組成、post-PCI MR 時序和末段回顧可能被視為重複；逐段審核後，這三處分別負責風險工具的輸入、功能性 MR 與破裂的不同時間機轉、跨章模型回收，未找到必須刪除的無增量段落。此語義票據不代表已看過外部圖像像素、完成真實讀者測試或取得發布許可。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "source_review_scope": "Separate reviewer turn; read all 69 exact-blob units. Directly checked 2026 UDMI5 JACC original section 7.2.3/Box5 and 2025 ACC/AHA Table3 and AHA top things, AHA 2021 PMC mechanical complications. 2023 ESC timings and 113-115 official six exam page/answer checks rely on prior auditable source evidence audit/acs-adversarial-cases-20261027.md; not personally re-opened all PDF pixels in this turn.",
+      "release_limits": "Linked UDMI Figure2/F4 original pixels NOT visually inspected in this turn; no image reproduction on site. Figure/rights, real Chromium 360/375/390/1280 screenshots, exact-head full CI and L2 merge authorization remain separate gates.",
+      "paragraphs": {
+        "80fc35925796114a8d-1": {
+          "role": "case_evidence",
+          "reader_gain": "用四十分鐘胸痛、首張 ECG 與早期 hs-cTn 建立缺血和傷害的雙時鐘。",
+          "nonredundancy_reason": "後續重做 ECG 和 serial cTn 的意義必須有這個初始時間基準。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一位 55 歲男性在上班途中開始胸口緊縮、冒冷汗，四十分鐘後抵達急診。第一張 ECG 沒有典型 ST elevation，第一管 high-sensitivity troponin（hs-cTn）也尚未超過檢驗上限。他問：「這樣是不是就沒有心肌梗塞？」這個問題不能由任何一張紙單獨回答。若冠",
+          "line_for_editor": 3
+        },
+        "3944674ad2b3066385-1": {
+          "role": "orientation",
+          "reader_gain": "用血管事件、心肌傷害、立即風險和介入後遺留問題界定全文。",
+          "nonredundancy_reason": "病例疑問尚未形成文章任務，這段首次將四個判斷層次拆開。",
+          "verdict": "keep",
+          "excerpt_for_editor": "ACS（acute coronary syndrome，急性冠心症）不是一個「驗血陽性」的名字，而是一組疑似急性冠狀動脈缺血的臨床情境。本文沿著一位可能由胸痛進展到導管、再到心衰竭的患者，持續區分四個問題：冠狀動脈發生什麼事？心肌目前缺血或受損到什麼程度？哪一項風險不允許等待？處置成功後還",
+          "line_for_editor": 5
+        },
+        "296e8cbff12b914c0e-1": {
+          "role": "navigation",
+          "reader_gain": "明確區分舊四章互動課與可獨立閱讀的新十二章長文。",
+          "nonredundancy_reason": "沒有這個身分提示，讀者會以為須先離開本站才能開始學習。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原 ACS 四章完整互動課程仍保留；以下為本站可獨立閱讀的臨床整合正文，不要求先開啟另一個網站。",
+          "line_for_editor": 7
+        },
+        "0889039fdb817a6a7d-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明示三個可能時點為自編反事實，不是同一患者的真實病程。",
+          "nonredundancy_reason": "此界線防止 de Winter、PCI 與術後休克被誤認為觀察紀錄。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是教學假設病例，不是真實住院紀錄。 為了讓你看見「新證據如何改判」，下文以同一位病人的三個可能時間點建立主線：症狀開始後 40 分鐘，ECG 尚無典型 STE、第一管 hs-cTn 尚未超過參考上限；症狀持續，後續 ECG 若新出現 de Winter 樣變化，便轉向高度懷疑 LAD 急",
+          "line_for_editor": 9
+        },
+        "50763ceddda91c67ea-1": {
+          "role": "causal_bridge",
+          "reader_gain": "連結 plaque、血栓、供需失衡、ischemic cascade 與 cTn 延遲。",
+          "nonredundancy_reason": "第一段只提出時鐘不同步，這段才說明缺血先於傷害的機轉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "冠狀動脈斑塊破裂或侵蝕後，血小板黏附、活化、聚集，凝血反應又使 fibrin 加固血栓。血流可能在數分鐘內嚴重下降，也可能因血栓形成與自發溶解而反覆改變。心肌的氧氣供應取決於冠狀灌流、血液氧含量與舒張期灌流壓；耗氧則受心率、收縮性、壁張力等影響。當需求超過供給，缺血先改變細胞能量與舒張功能",
+          "line_for_editor": 13
+        },
+        "e88c5272f766eb983c-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋心內膜下舒張灌流與 LVEDP、心率如何改變供需平衡。",
+          "nonredundancy_reason": "斑塊機轉不能說明無新血栓時貧血、休克也會誘發缺血。",
+          "verdict": "keep",
+          "excerpt_for_editor": "為什麼 subendocardium 容易先受害？ 左室在收縮期產生很高的壁內壓力，心內膜下微血管受到壓迫，灌流特別仰賴舒張期。當心率升快，舒張期縮短；當主動脈舒張壓下降或 LVEDP 上升，冠狀灌流的有效壓力差更小。用簡化模型可想成 coronary driving pressure 近",
+          "line_for_editor": 15
+        },
+        "d14a0ff91c55f14ce2-1": {
+          "role": "definition",
+          "reader_gain": "區分 UA、NSTEMI、STEMI 的證據與處置入口，否定固定嚴重度階梯。",
+          "nonredundancy_reason": "若刪除，讀者容易把非 STE 冠脈閉塞誤認為低危險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在這條病理路線上，unstable angina（UA）是臨床上高度懷疑急性冠脈缺血，卻尚不符合急性心肌梗塞的傷害標記條件；NSTEMI代表有符合 MI 定義的缺血性急性心肌傷害，但沒有持續的 ST elevation／相應的緊急再灌流 ECG 表現；STEMI則是急診最需要迅速辨識的 E",
+          "line_for_editor": 17
+        },
+        "5347cc4f1aabd74c9c-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用 UDMI5 將 acute injury、MI 和三種病因分類拆開並限定確認條件。",
+          "nonredundancy_reason": "舊三個 ACS 標籤不足以解釋敗血症 troponin 或術後 MI。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2026 年第五版 Universal Definition of MI（UDMI5）進一步把「心肌受傷」與「梗塞病因」拆開：acute myocardial injury要求 cTn 有上升／下降，且至少一次超過該試劑對應的性別特異第 99 百分位上限；MI還需要與急性缺血相符的症狀、E",
+          "line_for_editor": 19
+        },
+        "e51bba82da23c76339-1": {
+          "role": "navigation",
+          "reader_gain": "讓 Figure 2 承接 primary MI 的急性工作診斷與病因確認。",
+          "nonredundancy_reason": "它處理無替代急症的原發冠脈路徑，不是下一段的供需失衡。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一條分岔：沒有感染等急性供需失衡背景，卻突然出現缺血症狀或急性缺血 ECG，該如何從工作診斷走向 primary MI 的病因確認？ 對讀 2026 UDMI5 原文 Figure 2（Primary MI 診斷流程）。圖中把 STEMI 的緊急工作決策，與後續冠脈／心肌影像確認病因的層",
+          "line_for_editor": 21
+        },
+        "faf150ee628fc913a6-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以 Figure 4 示範敗血症等急症下 secondary MI 不能僅靠 cTn 判定。",
+          "nonredundancy_reason": "原發冠脈圖沒有交代另一急症和非缺血 injury 的競爭解釋。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二條分岔：若患者同時有敗血症、嚴重貧血或快速心律等供需失衡原因，是否可以立刻稱為 secondary MI？ 對讀原文 Figure 4（Secondary MI 診斷流程）。圖中保留 alternative acute diagnosis，顯示動態 troponin 不會自動揭示血管病",
+          "line_for_editor": 23
+        },
+        "40d922fc0589c1935c-1": {
+          "role": "decision",
+          "reader_gain": "明確寫出程序相關 MI 的三十日、術前基線與術中 AND／後發 OR。",
+          "nonredundancy_reason": "前兩個病因分支沒有 PCI/CABG 的時點及客觀證據組合。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三條分岔：如果受傷發生在 PCI／CABG 等心臟程序附近，還要追問「何時、與哪個血管或程序是否相關」。 2026 UDMI5 的 procedure-related MI 以心臟程序後 30 日內的相關併發症為範圍。入口條件先於確認條件：先要有急性心肌傷害（連續 cTn 呈上升動態，至",
+          "line_for_editor": 25
+        },
+        "c415ffa8f727a2c3f4-1": {
+          "role": "decision",
+          "reader_gain": "把休克、心律、灌流與十分鐘 ECG 排入到院同步評估。",
+          "nonredundancy_reason": "分類定義不能替代急診即時監測與反覆 ECG 的優先序。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一個評估是生命徵象、意識、呼吸功、末梢灌流、持續疼痛與心律：正在休克、肺水腫、反覆 VT/VF 或持續缺血的患者，不可能與疼痛已解除且穩定的人共用同一套排程。同步建立監測、靜脈通路，取得並判讀 12 導程 ECG，目標在初次醫療接觸後 10 分鐘內完成；胸痛仍持續或症狀變動時重複 ECG",
+          "line_for_editor": 29
+        },
+        "49603cfdd5b13222d2-1": {
+          "role": "safety",
+          "reader_gain": "加入主動脈剝離、PE、張力性氣胸及誤溶栓的致命風險。",
+          "nonredundancy_reason": "上一段只講 ACS 急迫性，這段揭示相同胸痛的治療禁忌。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真正容易出錯的是先替胸痛貼上 ACS 標籤，再讓後續線索全部服務這個預設。突然撕裂性背痛、脈搏或血壓顯著不對稱、神經學缺損，會讓急性主動脈症候群成為重大競爭解釋；若誤將 aortic dissection 當成 STEMI 溶栓，可能造成致命出血。呼吸困難、低氧與血栓風險要考慮 PE；突發",
+          "line_for_editor": 31
+        },
+        "ec902a2cbbb3b835ca-1": {
+          "role": "case_evidence",
+          "reader_gain": "補足出血、中風、PDE5、發病時間及女性高齡非典型症狀。",
+          "nonredundancy_reason": "ECG 和生命徵象無法替代會改變溶栓與用藥的病史。",
+          "verdict": "keep",
+          "excerpt_for_editor": "病史上詢問症狀起始時間、持續或反覆、既往 PCI/CABG、抗血小板或抗凝用藥、出血／腦中風史、PDE5 inhibitor，以及可能影響再灌流選擇的因素。女性、高齡與糖尿病患者可能以呼吸困難、上腹不適、疲倦或暈厥為主，不能只因沒有典型壓迫胸痛便降低對缺血的警覺。",
+          "line_for_editor": 33
+        },
+        "671b29f13c3370ffa5-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以向量與 reciprocal change 說明 ECG 導程不是冠脈解剖圖。",
+          "nonredundancy_reason": "後壁鏡像和右側導程若缺空間前提就會變成背口訣。",
+          "verdict": "keep",
+          "excerpt_for_editor": "ECG 的每一導程都是從特定方向觀看心臟電位差。局部缺血使受影響區域的去極化與復極化特性改變，所以同一病灶在面向它的導程可見 ST elevation，在相反導程可出現 reciprocal ST depression。它不是一張直接標出血栓位置的解剖圖；梗塞區域、側枝循環、傳導阻滯、舊梗",
+          "line_for_editor": 37
+        },
+        "2496318f490371fbad-1": {
+          "role": "definition",
+          "reader_gain": "用 J-point、相鄰導程與年齡性別門檻界定典型 STE 的侷限。",
+          "nonredundancy_reason": "此段提供 de Winter 未達 STEMI 數字門檻仍需急評的比較基準。",
+          "verdict": "keep",
+          "excerpt_for_editor": "先把「典型 ST elevation」的量測界線說清楚。 依 2025 ACC/AHA ACS Table 3 與 2023 ESC ACS §3.2.1，在適當的急性缺血情境，J-point 的新 ST elevation 須出現在至少兩個相鄰導程：V2–V3 的門檻為男性 <40 歲 ",
+          "line_for_editor": 39
+        },
+        "d0f96f0f8cd47e03ec-1": {
+          "role": "decision",
+          "reader_gain": "從 inferior、posterior、right-sided leads 推出 V4R 和 V7–V9 的用途。",
+          "nonredundancy_reason": "上一段只有量測閾值，這段回答下一個應取得哪個視角。",
+          "verdict": "keep",
+          "excerpt_for_editor": "從定位開始：II、III、aVF 提醒 inferior territory；V1–V4 常涉及前中隔／前壁；I、aVL、V5–V6 可見側壁缺血。Inferior ST elevation 配合對側變化時，要進一步問右冠或迴旋支，以及右室是否一同受累；必要時加做 V3R/V4R。V1–V",
+          "line_for_editor": 41
+        },
+        "eb37a7a09fabdb02f8-1": {
+          "role": "counterfactual",
+          "reader_gain": "以低血壓下壁 STE 與 V1–V3 STD 示範定位改變檢查。",
+          "nonredundancy_reason": "導程列表尚未證明額外導程和 echo 如何改變床邊決策。",
+          "verdict": "keep",
+          "excerpt_for_editor": "再具體一點：假設下壁 STE 是從 II、III、aVF 讀到的病灶投影，I、aVL 的 reciprocal depression 能支持區域性缺血的整體圖像；若同時低血壓且懷疑右室受累，就加看 V4R 與 bedside echo，因為治療上的問題已從「哪個區域缺血」變成「是否存在 p",
+          "line_for_editor": 43
+        },
+        "aa463f3796919080e2-1": {
+          "role": "safety",
+          "reader_gain": "辨認 de Winter 的高危 LAD 閉塞風險且不等待典型 STE。",
+          "nonredundancy_reason": "它回應開頭患者的動態 ECG，與疼痛緩解的 Wellens 不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "de Winter pattern：前胸導程 J 點附近上斜型 ST depression 伴高聳、對稱 T 波，在持續缺血情境下須高度懷疑急性 LAD 阻塞；沒有典型 ST elevation 也不能讓導管決策停擺。",
+          "line_for_editor": 47
+        },
+        "9b5c1cfcae2dd6ac9d-1": {
+          "role": "safety",
+          "reader_gain": "說明 Wellens 疼痛暫緩仍危險且不宜做運動負荷測試。",
+          "nonredundancy_reason": "de Winter 的持續胸痛情境不能涵蓋此種無痛時的陷阱。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Wellens pattern：常在疼痛暫緩時見 V2–V3 的雙相或深倒 T 波，提示危險 LAD 病變。此時「不痛、troponin 不高」不等於安全；不應用運動負荷測試來賭它是否會再缺血。",
+          "line_for_editor": 48
+        },
+        "0e03e8d15946912607-1": {
+          "role": "definition",
+          "reader_gain": "指出 LBBB 或 paced rhythm 的次發 ST–T 會使一般 STE 門檻失效。",
+          "nonredundancy_reason": "若省略，後段 modified Sgarbossa 便缺少使用前提。",
+          "verdict": "keep",
+          "excerpt_for_editor": "LBBB 或心室節律器：原有 QRS 與 ST–T 方向耦合會使傳統 ST 門檻失效。Modified Sgarbossa 透過符合傳導背景的相應與不相應 ST 變化尋找異常，必要時結合舊圖、連續 ECG、echo 與臨床不穩定度；新發 LBBB 本身不等於確定 STEMI。",
+          "line_for_editor": 49
+        },
+        "15e49b2f1b2ba6280f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用 ST 與 QRS 相對方向解釋 modified Sgarbossa 比例判準。",
+          "nonredundancy_reason": "前段只有名稱，這段才交代 concordant 和 discordant 為何異常。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一個進階讀圖門檻是知道 modified Sgarbossa 為何使用相對於 QRS 的 ST 偏移：在 LBBB，與主要 QRS 相反方向的 ST 偏移有一部分是預期的 secondary repolarization，真正令人懷疑的是「方向不該同向卻同向」或「反向程度相對 S 波過大」",
+          "line_for_editor": 51
+        },
+        "ac372844d4091e5f55-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制 aVR 升高與廣泛 STD 為廣泛缺血訊號而非左主幹確診。",
+          "nonredundancy_reason": "其他局部 ECG 模式不能取代這個非特異性向量的推論界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "廣泛 ST depression 合併 aVR elevation：可能是廣泛 subendocardial ischemia 的訊號，見於左主幹／多支血管疾病，也可見於其他造成嚴重供需失衡的狀態；不能單憑 aVR 判定左主幹完全堵塞。",
+          "line_for_editor": 53
+        },
+        "7d029b63cf1a653cb2-1": {
+          "role": "safety",
+          "reader_gain": "將 OMI 的緊急導管評估與 fibrinolysis 適應症明確分開。",
+          "nonredundancy_reason": "沒有這段，讀者可能把非典型閉塞的危急性誤用為普遍溶栓許可。",
+          "verdict": "keep",
+          "excerpt_for_editor": "「OMI（occlusion MI）／NOMI」是有助於提醒急性阻塞可能不符合經典 STEMI 門檻的臨床思考框架，不是 2025 ACC/AHA 正式取代 STEMI／NSTE-ACS 的二元診斷指引。若患者持續胸痛、ECG 動態惡化、出現心衰或電氣不穩，即使沒有典型 ST elevat",
+          "line_for_editor": 55
+        },
+        "901d903fc12eb9f59d-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用早期陰性及 CKD 慢性高值說明 cTn 時點和 assay 依賴性。",
+          "nonredundancy_reason": "ECG 章無法解釋生物標記為何不能單值排除或確診。",
+          "verdict": "keep",
+          "excerpt_for_editor": "想像同一患者在發作後四十分鐘抽到第一管 hs-cTn：此時尚未明顯升高，可能是時間太早，也可能根本沒有發生心肌壞死。相反地，慢性腎病患者 cTn 長期高於第 99 百分位，也可能主要是慢性心肌傷害。因此，真正的資訊來自連續測量及其變化幅度、採血時點、assay 特性，加上缺血證據；不能用一",
+          "line_for_editor": 59
+        },
+        "22c4b4a3dc284b3a40-1": {
+          "role": "decision",
+          "reader_gain": "以 URL、rise/fall、缺血證據、病因四步建立 cTn 判讀程序。",
+          "nonredundancy_reason": "前段指出單值不足，這段提供具體且可重複的解讀順序。",
+          "verdict": "keep",
+          "excerpt_for_editor": "理解結果時依序問：（1）是否高於當地試劑的 99th-percentile upper reference limit？（2）有沒有支持 acute injury 的 rise/fall？（3）是否有急性 ischemia 的獨立證據？（4）若有，是原發冠脈事件、另一急性疾病造成的供需失衡",
+          "line_for_editor": 61
+        },
+        "0e24dac0ee38be0810-1": {
+          "role": "counterfactual",
+          "reader_gain": "以敗血症 cTn 上升保留 nonischemic injury 和 primary MI 競爭。",
+          "nonredundancy_reason": "四步規則若缺感染反例仍可能被誤用成陽性即給 DAPT。",
+          "verdict": "keep",
+          "excerpt_for_editor": "例如敗血症患者高燒、心率 145、血壓低，hs-cTn 上升：可能存在供需失衡相關 MI，但也可能是與冠脈急性缺血證據不足的 non-ischemic myocardial injury。不應因「有敗血症」便自動宣告 secondary MI，更不能因 troponin 陽性便不分原因給 ",
+          "line_for_editor": 63
+        },
+        "1f1c5a93e04383b7b5-1": {
+          "role": "case_evidence",
+          "reader_gain": "以明示假設的兩組 cTn 數列對照急性和慢性傷害。",
+          "nonredundancy_reason": "抽象 rise/fall 定義沒有提供數值和假設 URL 的限制示範。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一個可檢驗的例子：純教學假設同一種 hs-cTn 試劑對此患者的性別特異 99th-percentile URL 是 20 ng/L（這不是任何品牌的實際門檻），三次測值依序為 12、68、145 ng/L。此時至少一次高於假設上限，又有升高變化，可支持 acute myocardial ",
+          "line_for_editor": 65
+        },
+        "a5f7f507e052db2ec0-1": {
+          "role": "causal_bridge",
+          "reader_gain": "從 acute injury 轉向冠脈造影仍不能確定病因的資訊缺口。",
+          "nonredundancy_reason": "若無此橋段，MINOCA 會在 troponin 數列後突然出現。",
+          "verdict": "keep",
+          "excerpt_for_editor": "數列已回答有沒有急性傷害，卻仍沒回答病因。接下來該不該看冠狀動脈？ 對持續缺血的高危險患者，冠脈評估是為了尋找可處理的急性病灶；但即使造影未見明顯阻塞，也還有一個關鍵資訊缺口：這次 injury 到底是冠脈性缺血，還是心肌炎、壓力性心肌病變或其他非缺血病因？所以「有 injury → 去找",
+          "line_for_editor": 67
+        },
+        "0b67893e2c74f75afc-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "更新 MINOCA 工作診斷身分並說明 CMR、冠脈內影像等下一步。",
+          "nonredundancy_reason": "前段只問病因未明，這段才提出非阻塞冠脈的具體鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若冠狀動脈造影沒有 ≥50% 狹窄，這仍是診斷工作的起點。2026 UDMI5 把 MINOCA 的原本名稱由 myocardial infarction with non-obstructive coronary arteries 更新為 myocardial injury with n",
+          "line_for_editor": 69
+        },
+        "55d1140e417128121f-1": {
+          "role": "decision",
+          "reader_gain": "將 refractory pain、shock、危險心律與急性 HF 列為立即評估指標。",
+          "nonredundancy_reason": "injury 的病因分類不能決定哪個 NSTE 病人不能等到隔天。",
+          "verdict": "keep",
+          "excerpt_for_editor": "現在回到「ECG 沒有持續 ST elevation」的人。NSTE-ACS 不是單一低危險籃子。若有持續或反覆難治的缺血性胸痛、血流動力不穩或 cardiogenic shock、危及生命的心律不整、與缺血相關的急性 HF、反覆動態 ST–T 變化等極高危險特徵，需要立即啟動侵入性評估，",
+          "line_for_editor": 73
+        },
+        "2fc52ff23cf5017cf8-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "比較 ESC 高危早期侵入性與 ACC/AHA 住院策略的語氣差別。",
+          "nonredundancy_reason": "極高危急救以外，穩定高危患者仍需要另一層時間決策。",
+          "verdict": "keep",
+          "excerpt_for_editor": "其餘患者以 troponin 動態、連續 ECG、病史、腎功能及 GRACE 等風險資訊判別。GRACE >140、確認 NSTEMI、動態 ST–T 變化或暫時性 STE支持較高風險；ESC 建議高風險族群考慮 24 小時內早期侵入性策略，並在住院期間完成適當侵入性評估。2025 ACC",
+          "line_for_editor": 75
+        },
+        "9e3f045735a900f7d9-1": {
+          "role": "counterfactual",
+          "reader_gain": "界定序列排除且症狀緩解的低危患者可循選擇性評估。",
+          "nonredundancy_reason": "只有高危策略會錯誤導向所有胸痛都要立即導管。",
+          "verdict": "keep",
+          "excerpt_for_editor": "何時不用直接做導管？ 一個疼痛已消失、無缺血性 ECG 變化、依當地有效 hs-cTn 排除路徑及臨床風險評估為低危險的患者，可循選擇性非侵入性評估或出院追蹤路徑；但「低風險」是完成評估的結論，不是只看到正常首張 ECG 就給的標籤。這裡的 GRACE 分數是風險工具，而不是替代當下生命危",
+          "line_for_editor": 77
+        },
+        "2455ec1ec27126b07c-1": {
+          "role": "definition",
+          "reader_gain": "解釋 GRACE 變項並重申休克時不等待分數填滿。",
+          "nonredundancy_reason": "前段提到風險工具，尚未交代年齡、腎功能和 HF 為何重要。",
+          "verdict": "keep",
+          "excerpt_for_editor": "GRACE 把年齡、心率、收縮壓、腎功能、心肌標記、ST 變化、心衰程度與到院時心跳停止等資訊組合成事件風險估計。這也說明為何同為 NSTEMI，65 歲、血壓穩、無 HF 的病人與 82 歲、肌酐升高、合併急性肺水腫者的處置緊迫性完全不同。但若患者現在就在 refractory ches",
+          "line_for_editor": 79
+        },
+        "d7381f1fc71c60c5c5-1": {
+          "role": "decision",
+          "reader_gain": "將持續前壁 STE 的治療焦點從 troponin 轉到及時再灌流。",
+          "nonredundancy_reason": "NSTE 的風險分層時間表不適用這類立即處理 culprit 的病例。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若同一人持續胸痛，ECG 出現前壁持續 ST elevation，最重要的訊息不是 troponin 升了幾倍，而是需要立刻恢復冠狀血流。Primary PCI 能直接評估 culprit lesion、機械性恢復灌流並處理狹窄／血栓；適時的再灌流越早，通常越能保留可存活心肌。一般 STE",
+          "line_for_editor": 83
+        },
+        "da2fc9044c7620ea3c-1": {
+          "role": "safety",
+          "reader_gain": "限定 PCI 延遲時溶栓的十二小時、120 分鐘及出血禁忌。",
+          "nonredundancy_reason": "單講 PCI 優先無法處理非 PCI 中心的替代路徑。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當 PCI 無法在適當時限取得時，纖維蛋白溶解治療是有條件的替代方案，不是與 PCI 永遠等價：依 ESC 2023，若 STEMI 診斷後預估 120 分鐘內無法達成 PCI 再灌流，且發病 12 小時內、無溶栓禁忌，應評估及時 fibrinolysis 並立即轉送 PCI 中心。既往出",
+          "line_for_editor": 85
+        },
+        "6784159c926ab06282-1": {
+          "role": "decision",
+          "reader_gain": "以 60–90 分鐘 ST 變化與 2–24 小時造影規定溶栓後續。",
+          "nonredundancy_reason": "前段只說何時溶栓，這段補足失敗救援和成功後評估。",
+          "verdict": "keep",
+          "excerpt_for_editor": "溶栓後胸痛減輕也不是「治療結束」。若 60–90 分鐘後 ST resolution 不足 50%，或仍有缺血、休克、嚴重心律不整，須考慮 rescue PCI；即使溶栓看似成功，也應安排早期冠脈造影（一般 2–24 小時），因為短暫改善不等於病灶穩定。2023 ESC 再灌流原則",
+          "line_for_editor": 87
+        },
+        "155f61defe48bfc5e5-1": {
+          "role": "causal_bridge",
+          "reader_gain": "定位 aspirin、P2Y12 和程序性抗凝的不同血栓環節。",
+          "nonredundancy_reason": "血管開通不會自動解釋術中與支架術後抗栓需求。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Plaque 相關血栓同時有 platelet-rich aggregation 與 coagulation／fibrin 放大反應。Aspirin不可逆抑制 platelet COX-1／TXA₂；P2Y12 inhibitor阻斷 ADP-mediated platelet activ",
+          "line_for_editor": 91
+        },
+        "b5ee8e7ce18204e995-1": {
+          "role": "safety",
+          "reader_gain": "說明 aspirin loading、prasugrel 中風禁忌及造影前 P2Y12 取捨。",
+          "nonredundancy_reason": "機轉本身不能處理可能需 CABG 或既往 TIA 的安全條件。",
+          "verdict": "keep",
+          "excerpt_for_editor": "疑似 ACS 且無絕對禁忌時，2025 ACC/AHA 指引的 aspirin loading 為 162–325 mg；接受 PCI 的 ACS，P2Y12 通常優先考慮 ticagrelor 或 prasugrel（依適應症、禁忌與可近性）；既往 stroke／TIA 不可使用 pra",
+          "line_for_editor": 93
+        },
+        "9bec0343f38cd8abcd-1": {
+          "role": "decision",
+          "reader_gain": "界定 fondaparinux 不可單獨 PCI 抗凝及 GP IIb/IIIa 補救用途。",
+          "nonredundancy_reason": "此段處理程序性藥物類別，不是前段的 P2Y12 預處置。",
+          "verdict": "keep",
+          "excerpt_for_editor": "程序性抗凝常使用 UFH 等依策略選擇的藥物；fondaparinux 不可單獨作為 PCI 的程序性抗凝，因為導管血栓風險。GP IIb/IIIa inhibitor 現今主要用於特定 large thrombus、slow-flow／no-reflow 等補救情境，並非所有 PCI 常",
+          "line_for_editor": 95
+        },
+        "90f89cc8bc18606bdf-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "解釋十二月 DAPT 預設及 GI 出血、OAC、LV thrombus 例外。",
+          "nonredundancy_reason": "術中抗凝與出院後出血和栓塞風險屬不同決策層。",
+          "verdict": "keep",
+          "excerpt_for_editor": "無高出血風險 ACS 患者，12 個月 DAPT 是預設策略，但不是所有人不變的硬規則。曾 GI bleeding、接受 OAC、需手術、或符合縮短／去 aspirin 條件者，必須重新衡量出血與再發血栓：有 GI bleeding 風險者考慮 PPI；需長期 OAC 且 PCI 後符合條",
+          "line_for_editor": 97
+        },
+        "607488b73c8bc9adc3-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 AF 加 DES 再加 LV thrombus 演示 triple therapy 風險重估。",
+          "nonredundancy_reason": "上一段是原則，這段要求在新增栓塞適應症後重新選藥。",
+          "verdict": "keep",
+          "excerpt_for_editor": "用一位已因 AF 服 OAC、現在因 ACS 新置入 DES 的患者驗證這個概念：不加 P2Y12 可能讓支架早期血栓風險較高；長期維持 aspirin + P2Y12 + OAC 又提高出血風險。因此治療不能只問「抗栓強不強」，而應先確認各個適應症、出血代價及風險最高的時間窗，再決定 t",
+          "line_for_editor": 99
+        },
+        "ffe5d06a062f083e7e-1": {
+          "role": "safety",
+          "reader_gain": "以 NTG 降 preload 解釋 RVMI、低血壓和 PDE5 禁忌。",
+          "nonredundancy_reason": "抗栓藥物的出血代價不能說明止痛藥引起的血流動力風險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Nitroglycerin透過靜脈擴張降低 preload 與部分壁張力，可改善適合病人的缺血性胸痛與肺鬱血負荷，卻不能溶掉 culprit thrombus。SL nitroglycerin 通常 0.3–0.4 mg，可依症狀與血壓重複，前提是沒有低血壓、疑似顯著 RV infarct",
+          "line_for_editor": 104
+        },
+        "d31de329561727eb3c-1": {
+          "role": "safety",
+          "reader_gain": "限定常規補氧 SpO₂ 門檻與 beta-blocker 在休克的危害。",
+          "nonredundancy_reason": "NTG 禁忌不能替代氧氣和降低心率藥物各自的適用條件。",
+          "verdict": "keep",
+          "excerpt_for_editor": "氧氣也不是所有心肌梗塞的儀式：2025 ACC/AHA 不建議對 SpO₂ ≥90% 的 ACS 患者常規補氧；但低氧或呼吸衰竭需要適當氧合支持。Beta-blocker能降低心率與耗氧，但急性 HF、休克、顯著 bradycardia／AV block 時可能有害；沒有評估穩定度就給 I",
+          "line_for_editor": 106
+        },
+        "f4479c2e8626ba5d8a-1": {
+          "role": "decision",
+          "reader_gain": "將 statin、ACEi/ARB 和 HF 藥物連到長期風險及 EF 腎功能。",
+          "nonredundancy_reason": "前兩段談急性症狀支持，這段建立二級預防的獨立目標。",
+          "verdict": "keep",
+          "excerpt_for_editor": "高強度 statin則處理急性事件之後持續存在的動脈粥樣硬化風險，通常應在 ACS 期間儘早啟動；依 LDL-C 與風險再考慮 ezetimibe 或其他降脂治療。ACEi／ARB、心衰相關藥物與 beta-blocker 的長期預後價值，需要回到 EF、前壁 MI、HF、糖尿病、血壓、腎",
+          "line_for_editor": 108
+        },
+        "3e21e40de5d46b20b1-1": {
+          "role": "case_evidence",
+          "reader_gain": "以少尿、冷汗、乳酸上升引出尚未明顯低血壓的低灌流。",
+          "nonredundancy_reason": "藥物章未解釋低前向輸出與肺鬱血可以同時存在。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若前壁大面積 MI 患者開始冒冷汗、四肢冰冷、尿量減少、lactate 上升，即使 SBP 尚未跌到非常低，也應警覺 cardiogenic shock／器官低灌流。病理可能是 LV contractility 大幅下降，使 stroke volume 與 cardiac output 下",
+          "line_for_editor": 112
+        },
+        "b2a8dcae5f72877b1f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用右室梗塞的肺循環輸出限制解釋 JVP 高而肺清和補液風險。",
+          "nonredundancy_reason": "前段 LV pump failure 不能解釋相同休克表象下不同前負荷策略。",
+          "verdict": "keep",
+          "excerpt_for_editor": "但 inferior MI 合併右室梗塞是另一種危險：右室無法把足夠血送進肺循環，左室接不到血，最後同樣低血壓、低 cardiac output；若右室順應性受損與高右側充盈壓並存，典型的「JVP 高、肺部清晰」只是一個提示，並非每例都有。應以右側 ECG、bedside echo 評估 ",
+          "line_for_editor": 114
+        },
+        "bec0d00b90a525db6d-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限定 shock 的 culprit 優先與 microaxial pump 證據族群。",
+          "nonredundancy_reason": "生理機轉之外還需要 nonculprit PCI 和裝置風險的研究邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "對確定的 ACS-related shock，須在循環／呼吸支持與快速 revascularization 之間同步推進。2025 ACC/AHA 建議緊急處理 culprit artery；在休克患者常規同步 PCI 所有 nonculprit lesion 可能增加傷害，不應把「影像看",
+          "line_for_editor": 116
+        },
+        "4b2de183ffe4c67783-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把 PCI 後大血管 TIMI flow 與微血管 no-reflow 分開。",
+          "nonredundancy_reason": "若把支架成功視為治療終點，就無法引出再次 echo 和出血排查。",
+          "verdict": "keep",
+          "excerpt_for_editor": "PCI 的直接成效是恢復 epicardial coronary flow，但微血管 no-reflow、已壞死的心肌、stunning、出血與新發結構破壞都不會因一張「支架很漂亮」的造影而消失。即使 culprit artery 恢復接近正常的 epicardial TIMI flow，",
+          "line_for_editor": 120
+        },
+        "8cea1896886d7946ca-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "分清剛 PCI 後功能性 MR 與 MI 數日後乳突肌破裂。",
+          "nonredundancy_reason": "不區分時點會把立即肺水腫直接誤判成結構破裂。",
+          "verdict": "keep",
+          "excerpt_for_editor": "急性 MR 的時間與機轉要分開。 若剛完成 PCI就出現肺水腫，可能涉及持續缺血引起的乳突肌缺血性功能失調、局部壁運動異常／瓣葉牽拉（functional MR），也須同時排除再閉塞、no-reflow 等原因；乳突肌破裂通常是 MI 後數日出現的結構性併發症（典型約 3–5 天，但並非絕",
+          "line_for_editor": 122
+        },
+        "7f74797c7522c00e57-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以乳突肌單雙供血、低聲雜音和 echo 解釋 severe MR。",
+          "nonredundancy_reason": "前段只分辨 MR 時序，尚未提供下壁側壁典型破裂的解剖理由。",
+          "verdict": "keep",
+          "excerpt_for_editor": "乳突肌破裂造成急性 severe MR：收縮期血液大量回流至尚未適應高壓的左房，肺靜脈壓驟升而急性肺水腫，前向輸出下降造成休克。這一種機械性併發症最典型與下壁／側壁梗塞的 posteromedial papillary muscle rupture 有關：它多仰賴單一主導冠脈（RCA／LC",
+          "line_for_editor": 124
+        },
+        "c2b3b4b053f03d706e-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用 LV 到 RV 的新分流解釋 VSR 與全身前向輸出下降。",
+          "nonredundancy_reason": "MR 逆流左房，不能替代中隔破裂的 Doppler 和 shunt 機轉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "心室中隔破裂（ventricular septal rupture, VSR）：高壓 LV 血液進入 RV，產生新的 left-to-right shunt；部分排出的血被送回肺循環而非全身，增加肺負荷且降低有效 systemic output。新雜音／震顫、急性 HF 或休克應以 col",
+          "line_for_editor": 126
+        },
+        "df97598ade5e8aa49b-1": {
+          "role": "safety",
+          "reader_gain": "說明自由壁破裂形成 tamponade／PEA 並需立即超音波評估。",
+          "nonredundancy_reason": "MR 和 VSR 沒有涉及心包限制舒張充填的致命障礙。",
+          "verdict": "keep",
+          "excerpt_for_editor": "自由壁破裂使血進入心包、阻斷舒張充填，可快速形成 tamponade／PEA；部分被包覆形成 pseudoaneurysm 也不等於安全。遇到崩潰應立即以超音波及外科團隊評估，不可等待「典型 MI 後第幾天」才開始懷疑。機械性併發症雖比再灌流前時代少見，但它們是少數一旦漏診就無法靠調整一般",
+          "line_for_editor": 128
+        },
+        "474b21ee8731f72eea-1": {
+          "role": "orientation",
+          "reader_gain": "用 LV→LA、LV→RV、LV→心包整合三種機械性血流失路。",
+          "nonredundancy_reason": "這是跨機轉空間比較及時序界線，不是再列單一併發症。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這三種急症可用血流失去了哪個正常界面快速回憶：MR 是 LV 射出的血逆流進 LA；VSR 是 LV 血透過新破口進 RV；自由壁破裂是血直接進入心包，造成充填限制。三者都可能低灌流，但真正可修正的病因不同。發生時間也不應僵硬背成單一「MI 後第 3–5 天」：再灌流、梗塞範圍、組織脆弱化",
+          "line_for_editor": 130
+        },
+        "7d6e44968f7bb15fb7-1": {
+          "role": "decision",
+          "reader_gain": "區分急性 VT/VF、預防性 lidocaine 與晚期 ICD 和 LV thrombus。",
+          "nonredundancy_reason": "機械性併發症以外還有電氣不穩及栓塞風險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "惡性心律不整也有不同時間與機轉：急性 ischemia／reperfusion 相關 VT/VF 先按 ACLS、電擊／節律與灌流、電解質及 culprit perfusion 處理；恢復竇律後不應一律 prophylactic lidocaine。若之後持續或再發 ventricular",
+          "line_for_editor": 132
+        },
+        "04e6c1fe11036b3f42-1": {
+          "role": "orientation",
+          "reader_gain": "建立歷屆題目需依當年定義作答、再與現行指南對照。",
+          "nonredundancy_reason": "臨床正文尚未說明官方歷史答案不可被新定義覆寫。",
+          "verdict": "keep",
+          "excerpt_for_editor": "考題的價值不是能否記住答案字母，而是題幹改變一個條件後，能不能重新判斷。以下六道題均可連到考選部原卷與本站逐選項詳解；若題目依當年定義作答，正式答案與 2026 年現行醫學定義要分開保存。",
+          "line_for_editor": 136
+        },
+        "6a5db7710f129af38d-1": {
+          "role": "counterfactual",
+          "reader_gain": "用 113 CABG Type5 題區分舊倍數條件與新 UDMI5 AND／OR。",
+          "nonredundancy_reason": "此題處理術後 MI 定義，不是下一題的抗栓藥物機轉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "113 年第二次醫學（三）第 6 題｜CABG 後 troponin 高，是否就是 MI？ 原卷與逐選項詳解。這題的答案仍是當年考選部公告的 D；它要求辨認舊定義中 CABG-related Type 5 MI 的 biomarker 必要條件，而不是證明「大於 10 倍即可單獨確診」。以",
+          "line_for_editor": 138
+        },
+        "f4c463b0c32e2b0f36-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 114 PCI 藥物題檢驗抗凝、抗板和 DES 防栓不互換。",
+          "nonredundancy_reason": "它驗證血栓環節，不與 113 年 CABG 診斷題重複。",
+          "verdict": "keep",
+          "excerpt_for_editor": "114 年第二次醫學（三）第 6 題｜PCI 時抗凝與抗血小板能互換嗎？ 原卷與逐選項詳解。官方答案 C。答題首先分辨凝血酶／fibrin 相關的程序性 anticoagulation、ADP receptor P2Y12 inhibition、GP IIb/IIIa 的血小板末端聚集作用",
+          "line_for_editor": 140
+        },
+        "059de0e0d35a0f4802-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 115 STEMI 四選項說明 NTG 最佳選項不等於致因再灌流。",
+          "nonredundancy_reason": "這題揭示考試相對最佳與真實治療目標的差別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "115 年第二次醫學（三）第 11 題｜前壁 STEMI 的初始處置。 同一病例逐選項詳解。官方最佳答案 B：SL nitroglycerin 0.4 mg，是題目四個實際選項中的相對最佳：aspirin 600 mg 並非建議 loading dose；立即釋放型 nifedipine ",
+          "line_for_editor": 142
+        },
+        "41f177e44a8e046271-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 115 VT/VF 題區分急性復律和不適當預防性 lidocaine。",
+          "nonredundancy_reason": "同年 Q11 考初始胸痛處置，本題考成功後是否繼續用藥。",
+          "verdict": "keep",
+          "excerpt_for_editor": "115 年第二次醫學（三）第 12 題｜VT/VF 已恢復，能否預防性繼續 lidocaine？ 同病例後續詳解。官方答案 C 是不適當處置。急性期終止 VT/VF 要急救、電擊或其他合宜處理，但「曾經有效的急性藥」不等於「所有復律病人都應繼續」。若病人有新 LV thrombus，則是另",
+          "line_for_editor": 144
+        },
+        "83db1cfd1e87c83d88-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 115 ischemic cascade 題回收 ECG 與 cTn 不同時間軸。",
+          "nonredundancy_reason": "它考的是兩時鐘命題，不是前面 PCI 或抗栓處方。",
+          "verdict": "keep",
+          "excerpt_for_editor": "115 年第二次醫學（三）第 13 題｜心肌缺血先改變 ECG，troponin 就一定高？ 完整選項詳解。官方答案 D。供血下降後舒張、區域壁運動與電位表現可能先有變化，而 cTn 的釋出與循環血中測得的濃度另有時間延遲。請反向想像：首管尚低但胸痛持續、ECG 危險，就不能以未達 inj",
+          "line_for_editor": 146
+        },
+        "f51ee99b1f40af5310-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 114 HF 題區分大量飲水背景行為與主觀心衰症狀。",
+          "nonredundancy_reason": "本題將 ACS 後呼吸困難接回充血評估，不與心律題重疊。",
+          "verdict": "keep",
+          "excerpt_for_editor": "114 年第二次醫學（三）第 9 題｜MI 後哪個不是典型 HF 症狀？ 原卷與逐選項詳解。官方答案 A：大量飲水可以是可能加重鬱血的背景行為，但不是病人的主觀病徵。呼吸困難、端坐呼吸、夜間陣發性呼吸困難及疲乏，才要求回查灌流與充血；即使符合典型症狀，也不能只靠一項症狀完成 HF 及其病因",
+          "line_for_editor": 148
+        },
+        "f76981fd25fd929e11-1": {
+          "role": "navigation",
+          "reader_gain": "連回 115 冠脈供需與 108 古柯鹼題並限制題庫涵蓋宣稱。",
+          "nonredundancy_reason": "六題以外提供生理先備和跨年份驗證，不冒稱所有 ACS 題型。",
+          "verdict": "keep",
+          "excerpt_for_editor": "另外，115（二）冠脈供需與阻力可以回頭確認 coronary perfusion 與耗氧的基本物理；108（一）Q76 古柯鹼相關缺血則測試「處理心率／血管張力」與「治療原發冠狀血栓」不能混為一談。這些題目是已核對的特定國考身分，不能宣稱本站已涵蓋歷年所有 ACS 題型。答題時先辨題目所",
+          "line_for_editor": 150
+        },
+        "be10358868470a29f3-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 de Winter 和陰性首管 cTn 要求改變緊急冠脈評估。",
+          "nonredundancy_reason": "此練習整合 ECG、時鐘與低危排除路徑，不只是回背 ECG 圖形。",
+          "verdict": "keep",
+          "excerpt_for_editor": "情境 A，第一管 troponin 陰性。 同一位胸痛患者首張 ECG 沒有典型 STE，但反覆劇痛，第二張出現前胸導程新 de Winter 樣變化。若你仍以「尚未符合 NSTEMI 生物標記條件」為由等第二管才會診，就把診斷受傷的時鐘誤當成拯救仍在缺血心肌的時鐘。此時需要立刻進一步的冠",
+          "line_for_editor": 154
+        },
+        "aa868a2dad5ec4ce86-1": {
+          "role": "counterfactual",
+          "reader_gain": "在敗血症 cTn 上升但無缺血證據時拒絕盲目 ACS 抗栓。",
+          "nonredundancy_reason": "前題考冠脈閉塞，這題專門考 injury 與病因的分界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "情境 B，cTn 大幅升高。 病人以肺炎與敗血症住院，血壓偏低、心率 140、cTn 動態升高，卻沒有可支持局部急性缺血的 ECG／影像或其他證據。這足以高度重視 acute myocardial injury，卻不能光靠數值宣布 primary MI，也不應無條件給 full ACS a",
+          "line_for_editor": 156
+        },
+        "3b9831c7e0a2431195-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 PCI 後立即或數日後惡化決定 echo 尋找 MR/VSR。",
+          "nonredundancy_reason": "前兩題考 ECG 與 cTn，這題測試介入後新的結構證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "情境 C，PCI 打通 LAD 後突然肺水腫、低血壓。 若剛完成 PCI就惡化，須同步排查再阻塞、no-reflow、LV failure、arrhythmia 與出血，並以 bedside echo 檢查是否有急性缺血性 MR；若在梗塞數日後惡化，echo 新見 severe MR 合併",
+          "line_for_editor": 158
+        },
+        "a810f0267ba6832115-1": {
+          "role": "orientation",
+          "reader_gain": "以五組不等價關係收束缺血、影像、血流、抗栓和時間。",
+          "nonredundancy_reason": "此處跨章壓縮因果模型，讓讀者檢查是否混淆不同層級。",
+          "verdict": "keep",
+          "excerpt_for_editor": "ACS 的主線至此閉合：缺血不等於壞死；一張 ECG 不等於冠脈解剖；冠脈開通不等於心肌恢復；抗栓有效不等於沒有出血代價；高風險的當下決策不能被一次正常檢驗延遲。 每一次檢驗與介入都只回答病程中的一個問題，下一個問題必須用新證據重新判斷。",
+          "line_for_editor": 160
+        },
+        "b2e78d650118872f1e-1": {
+          "role": "source_context",
+          "reader_gain": "集中提供 ACC/AHA、ESC、UDMI5、IBCC 與官方考題回查入口。",
+          "nonredundancy_reason": "就地引用分散各章，集中來源有利於版本核對與追溯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "延伸閱讀與證據來源：2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS guideline；2023 ESC ACS guideline；2026 Fifth Universal Definition of MI；IBCC Type-1 MI / OMI / post-MI",
+          "line_for_editor": 164
+        },
+        "06ca9dc9b9fccc421e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限定文章為教學推理，實際醫囑仍依病況、禁忌和團隊。",
+          "nonredundancy_reason": "含溶栓與抗栓高風險處置，這個適用邊界不能由書目取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "本教材提供理解與考題推理，不是單一患者的固定醫囑。急性病人的 ECG、用藥、再灌流及侵入性策略須按最新院內流程、出血禁忌與心臟團隊共同評估。",
+          "line_for_editor": 166
+        }
+      }
     }
   }
 }
