@@ -652,13 +652,13 @@
       "source_review": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",
       "items": [
         {
-          "locator": "Pocket Medicine Ninth Edition reader PDF pages 158–160, Figure 4-1 Acid–base nomogram and Compensation for Acid–Base Disorders table with mixed disorders and associated adapted-from footnote",
-          "source_token": "Acid–base nomogram",
+          "locator": "Wardhana and Kurniawaty 2025 original publisher PDF print page 278 Table 1, CABG patient 3 T1 ICU 4 h lactate 14.8 mmol/L and ScvO2 95%",
+          "source_token": "Wardhana",
           "mode": "illustrated",
           "anchor": "cticu-measurement-layers",
-          "caption_token": "Figure 4-1",
-          "teaching_role": "對照原書原先混合障礙的血氣量測架構，增加不在原書 nomogram 的 Hb/CO 及靜脈萃取面向，防止以乳酸或正常 PaO2 作整體灌流宣告。",
-          "scope_limit": "本站圖一是原創四軸對照，並非原書 Figure 4-1 的重畫或原書代償分區的完整再現，不能藉圖診斷個別病例的酸鹼病因。"
+          "caption_token": "Wardhana",
+          "teaching_role": "使用真實 CABG 病人 3（T1）的乳酸 14.8 與 ScvO2 95% 互不排斥的平行觀測；視覺標示每項實測、不能推出的結論，以及缺少 Hb/SaO2/PaO2/CO 才能從 CaO2 推到 DO2 的中介，最後回到先排查出血、壓迫和心功能的床邊問題。",
+          "scope_limit": "T1 缺同步完整血氣、Hb、CO，圖不能替病例補算個人 CaO2、DO2、VO2，也不能從高 ScvO2 排除局部缺血或高 lactate 直接決定輸液。Pocket Figure 4-1 的原圖定位保留在來源頁，這張原創圖不是 nomogram 重製。"
         },
         {
           "locator": "Wardhana and Kurniawaty 2025 original publisher PDF print page 278 Table 1 and p279 Figure 1, CABG patient three lactate, base excess and ScvO2 T0 through T5",

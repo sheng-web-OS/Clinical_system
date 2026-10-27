@@ -3776,6 +3776,472 @@
           "line_for_editor": 166
         }
       }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md": {
+      "content_blob": "2d4fae8e2343d17cf9427aebaf8c0414fdb92552",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "Separate AI editorial context 2026-10-28; PR #146 article blob 2d4fae8; Smyth 2021 primary Oxford/PMC8691577 original case text verified; Wardhana 2025 primary PDF Table 1 prior direct audit PR #146 comment 6438740567; human review, pixels and mobile are separate gates",
+      "core_reader_question": "CABG 術後 lactate 14.8 與 ScvO₂ 95% 同時出現時，如何先排除可逆致命循環危險，再用不同檢驗分辨氧輸送、氧利用與酸鹼病因？",
+      "new_understanding": "高 ScvO₂ 不保證組織氧供充足，乳酸與 BE 反映不同過程；原始 T0–T5 的時間證據及 euDKA 反例共同阻止單一數值決策。",
+      "strongest_counterargument": "同一病例沒有同步 Hb/CO/ABG 與器官灌流數據，不能證實高 ScvO₂ 的微循環機轉或 epinephrine 單因果；圖表可讀性與實際讀者收益仍需獨立驗收。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 3,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "49c3c37187278e8d08-1": {
+          "role": "source_context",
+          "reader_gain": "交代教材日期及心外 ICU 血氣場景",
+          "nonredundancy_reason": "只負責讀者定向而不判斷患者病因；其對照段落為「2026.10.27｜Clinical OS・ABG ×」",
+          "verdict": "keep",
+          "excerpt_for_editor": "2026.10.27｜Clinical OS・ABG × Cardiothoracic ICU",
+          "line_for_editor": 3
+        },
+        "0fbb096a6f4ffacdc2-1": {
+          "role": "orientation",
+          "reader_gain": "呈現乳酸高必然缺氧的錯誤直線；本段具體指向「術後病人乳酸升高，我們很容易想像一條直線：組織缺氧，轉為」",
+          "nonredundancy_reason": "保留初始迷思以供後續案例反證；其對照段落為「術後病人乳酸升高，我們很容易想像一條直線：組織缺氧，轉為」",
+          "verdict": "keep",
+          "excerpt_for_editor": "術後病人乳酸升高，我們很容易想像一條直線：組織缺氧，轉為無氧代謝，lactate 上升，出現 metabolic acidosis；於是只要看乳酸濃度，就能知道病人的灌流是否足夠。",
+          "line_for_editor": 6
+        },
+        "00ad18c594ba7b0e63-1": {
+          "role": "definition",
+          "reader_gain": "將酸度乳酸氧輸送氧利用拆四問；本段具體指向「但這條直線把四個不同問題接成了一件事：血液現在有多酸？乳」",
+          "nonredundancy_reason": "提供全文骨架而非重述乳酸迷思；其對照段落為「但這條直線把四個不同問題接成了一件事：血液現在有多酸？乳」",
+          "verdict": "keep",
+          "excerpt_for_editor": "但這條直線把四個不同問題接成了一件事：血液現在有多酸？乳酸為什麼升高？循環送出去多少氧？各個組織實際取得與利用了多少氧？",
+          "line_for_editor": 8
+        },
+        "c7a5a2bd62d1405122-1": {
+          "role": "causal_bridge",
+          "reader_gain": "分配四種問題各自需要的資料；本段具體指向「第一個問題由酸鹼資料回答；第二個需要代謝與病程；第三個需」",
+          "nonredundancy_reason": "增加資料需求與前段單純提問不同；其對照段落為「第一個問題由酸鹼資料回答；第二個需要代謝與病程；第三個需」",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一個問題由酸鹼資料回答；第二個需要代謝與病程；第三個需要血紅素及心輸出；第四個則無法由單一全身指標完全確定。",
+          "line_for_editor": 10
+        },
+        "f1119753c43e31f5c7-1": {
+          "role": "case_evidence",
+          "reader_gain": "建立第三例年齡 EF CPB 支持背景",
+          "nonredundancy_reason": "提供後續時序的真實患者身分；其對照段落為「2025 年 Wardhana 與 Kurniawaty」",
+          "verdict": "keep",
+          "excerpt_for_editor": "2025 年 Wardhana 與 Kurniawaty 發表三名 CABG 病人的術後乳酸病例系列。其中第三名是 69 歲男性，術前 LVEF 45%，接受 108 分鐘 cardiopulmonary bypass（CPB，心肺繞道）、91 分鐘主動脈夾閉。離開 CPB 後需要 dob",
+          "line_for_editor": 16
+        },
+        "a7be3402d8c29fb913-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出低 SVR 只是 vasoplegia 假說",
+          "nonredundancy_reason": "增加藥物支持下測值的推論界線；其對照段落為「術後 echo 記錄 cardiac output（CO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "術後 echo 記錄 cardiac output（CO）5.1 L/min、cardiac index（CI）3.1 L/min/m²、systemic vascular resistance（SVR）580 dyn·s/cm⁵。低 SVR 使 vasodilatory physiolo",
+          "line_for_editor": 18
+        },
+        "fd768ca6752f6d4506-1": {
+          "role": "case_evidence",
+          "reader_gain": "首次報出四小時乳酸與 ScvO₂ 同升",
+          "nonredundancy_reason": "不同於前段的心輸出及血管阻力；其對照段落為「到 ICU 四小時，lactate 從 3.6 上升到 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "到 ICU 四小時，lactate 從 3.6 上升到 14.8 mmol/L，central venous oxygen saturation（ScvO₂）卻從 92.6% 上升到 95%。",
+          "line_for_editor": 20
+        },
+        "6c5e67782e2db48d25-1": {
+          "role": "counterfactual",
+          "reader_gain": "對比盲目補液與錯誤放心兩個極端；本段具體指向「有人可能因此要立刻輸液，因為 lactate 14.8 」",
+          "nonredundancy_reason": "把數值轉為處置風險而非重報數字；其對照段落為「有人可能因此要立刻輸液，因為 lactate 14.8 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "有人可能因此要立刻輸液，因為 lactate 14.8 看起來像嚴重低灌流；也有人可能放心，因為 CI 3.1、ScvO₂ 95% 似乎不支持全身氧供不足。但兩種判斷都跳過眼前更重要的一步。",
+          "line_for_editor": 22
+        },
+        "03e32541fbf0fa820b-1": {
+          "role": "safety",
+          "reader_gain": "優先辨認出血心包壓迫與低輸出；本段具體指向「CABG 術後需要多種循環藥物、臨床仍不穩定時，首先必須」",
+          "nonredundancy_reason": "急救時限不同於後面代謝機轉討論；其對照段落為「CABG 術後需要多種循環藥物、臨床仍不穩定時，首先必須」",
+          "verdict": "keep",
+          "excerpt_for_editor": "CABG 術後需要多種循環藥物、臨床仍不穩定時，首先必須尋找可立即處理的外科與循環危險。 胸管出血量及趨勢、血壓與 pressor 劑量、有效心律和 pacing、皮膚與四肢灌流、尿量、Hb／凝血及床邊心臟影像，能幫助我們辨認出血、低心輸出、右心衰竭、心包／縱膈壓迫、手術後心肌缺血與血管擴",
+          "line_for_editor": 24
+        },
+        "3a1fc8051f25b7e74b-1": {
+          "role": "source_context",
+          "reader_gain": "交代 IBCC 身分及急救歸因時限；本段具體指向「這是 IBCC（Internet Book of Cri」",
+          "nonredundancy_reason": "避免把前段危險清單當成診斷規則；其對照段落為「這是 IBCC（Internet Book of Cri」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是 IBCC（Internet Book of Critical Care）〈Postoperative cardiac surgical patients〉的臨床起點。它不是說不用解釋血氣，而是提醒我們：病人是否正在失去循環，與我們是否已完整解釋乳酸來源，是兩個不同時限的問題。",
+          "line_for_editor": 26
+        },
+        "ceb7d2c4a5302ffc08-1": {
+          "role": "definition",
+          "reader_gain": "定義 ABG 實測與計算項目；本段具體指向「ABG（arterial blood gas，動脈血氣）」",
+          "nonredundancy_reason": "此處處理血氣而非後段氧輸送公式；其對照段落為「ABG（arterial blood gas，動脈血氣）」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ABG（arterial blood gas，動脈血氣）直接測量 pH、PaCO₂、PaO₂，通常再依 pH 與 PaCO₂ 計算 HCO₃⁻；其他項目如 lactate、電解質與氧飽和度，須視儀器及採檢項目。pH 告訴我們酸鹼結果；PaCO₂ 反映 CO₂ 產生與肺泡換氣排除的平衡；Pa",
+          "line_for_editor": 30
+        },
+        "725e0cc42e251c9d28-1": {
+          "role": "definition",
+          "reader_gain": "分辨 BE 偏移與 lactate 濃度",
+          "nonredundancy_reason": "為 T1 T2 兩者走勢不同建立前提",
+          "verdict": "keep",
+          "excerpt_for_editor": "Base excess（BE）是血液在標準化條件下的代謝性酸鹼偏移指標。BE 越負，淨代謝性酸化效應越明顯；但 BE 不是 lactate 的另一種寫法，更不是一個可以代替 pH 的直接測量。Lactate 表示某一時刻血中乳酸根的濃度，是生成、利用與清除的共同結果。",
+          "line_for_editor": 32
+        },
+        "44f6e6ccf5ec7ce2cb-1": {
+          "role": "definition",
+          "reader_gain": "區分 ScvO₂ SaO₂ SvO₂ 的採樣",
+          "nonredundancy_reason": "採樣位置問題不同於前段 BE 定義；其對照段落為「ScvO₂則是中心靜脈導管所採血液的氧飽和度，主要代表該」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ScvO₂則是中心靜脈導管所採血液的氧飽和度，主要代表該回流範圍的剩餘氧合比例。它不是動脈血的 SaO₂；也不等於由肺動脈取得、混合更廣泛靜脈回流的 SvO₂（mixed venous oxygen saturation）。不同採樣位置或時間的數字，不能拼成同一張「完整 ABG」。",
+          "line_for_editor": 34
+        },
+        "31bbc5822b065956d4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把兩種測量套回 14.8 和 95%",
+          "nonredundancy_reason": "由術語轉為真實病例解釋；其對照段落為「回到這位 69 歲 CABG 病人：術後四小時 lact」",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到這位 69 歲 CABG 病人：術後四小時 lactate 升至 14.8 mmol/L，ScvO₂ 卻達 95%。如果只看 lactate，容易立刻把問題歸因於低灌流；如果只看 ScvO₂，又可能誤以為全身氧供充足。這不是兩份檢驗互相衝突，而是它們回答不同的生理問題。",
+          "line_for_editor": 36
+        },
+        "5204b85a9c7e589908-1": {
+          "role": "causal_bridge",
+          "reader_gain": "圖前點出 CaO₂ DO₂ VO₂ 未知橋樑",
+          "nonredundancy_reason": "後續才逐一提供公式與圖面；其對照段落為「要理解這個現象，還缺了一座橋：血液實際送出多少氧（CaO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "要理解這個現象，還缺了一座橋：血液實際送出多少氧（CaO₂、DO₂），以及氧抵達後被哪些組織利用（VO₂、區域灌流與氧萃取）？ 下面的圖將病例「實測到的訊號」與「仍須補上的證據」分開；即使 ScvO₂ 很高，也不能跳過對術後出血、低心輸出或局部壓迫的床邊評估。",
+          "line_for_editor": 38
+        },
+        "9ff98d09854a70f73b-1": {
+          "role": "orientation",
+          "reader_gain": "說明氧合良好未必氧輸送足夠；本段具體指向「「動脈血氧合良好」與「每分鐘送到身體的氧足夠」之間，還缺」",
+          "nonredundancy_reason": "建立下一段氧含量定義的問題；其對照段落為「「動脈血氧合良好」與「每分鐘送到身體的氧足夠」之間，還缺」",
+          "verdict": "keep",
+          "excerpt_for_editor": "「動脈血氧合良好」與「每分鐘送到身體的氧足夠」之間，還缺了兩個量。",
+          "line_for_editor": 71
+        },
+        "bd8ff950a2f1d6a1ee-1": {
+          "role": "definition",
+          "reader_gain": "定義 CaO₂ 每百毫升血液含氧量；本段具體指向「CaO₂（arterial oxygen content」",
+          "nonredundancy_reason": "此處提供量綱而下一段給公式；其對照段落為「CaO₂（arterial oxygen content」",
+          "verdict": "keep",
+          "excerpt_for_editor": "CaO₂（arterial oxygen content，動脈血氧含量）描述每 100 mL 動脈血攜帶多少氧。近似式：",
+          "line_for_editor": 73
+        },
+        "a703994a74bbdd59c1-1": {
+          "role": "definition",
+          "reader_gain": "列出 Hb SaO₂ PaO₂ 的 CaO₂ 公式",
+          "nonredundancy_reason": "量化氧含量而非重述前段定義；其對照段落為「CaO₂（mL O₂/dL）≈ 1.34 × Hb（g/」",
+          "verdict": "keep",
+          "excerpt_for_editor": "CaO₂（mL O₂/dL）≈ 1.34 × Hb（g/dL）× SaO₂（0–1）＋ 0.003 × PaO₂（mmHg）",
+          "line_for_editor": 75
+        },
+        "8e8871968a453d0670-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用 CPB 稀釋示範 SpO₂ 正常陷阱",
+          "nonredundancy_reason": "是公式的臨床反事實而非係數重複；其對照段落為「絕大部分氧由 hemoglobin 攜帶，而不是溶解在血」",
+          "verdict": "keep",
+          "excerpt_for_editor": "絕大部分氧由 hemoglobin 攜帶，而不是溶解在血漿裡。因此 SpO₂ 接近 100% 的術後病人，若因 CPB hemodilution 或出血而使 Hb 下降，每單位血液攜帶的氧仍可能減少。",
+          "line_for_editor": 77
+        },
+        "75b58ab8b92680d49c-1": {
+          "role": "definition",
+          "reader_gain": "引出 DO₂ 尚須乘心輸出 CO；本段具體指向「接著，DO₂（systemic oxygen deliv」",
+          "nonredundancy_reason": "切換到每分鐘血流量的新層級；其對照段落為「接著，DO₂（systemic oxygen deliv」",
+          "verdict": "keep",
+          "excerpt_for_editor": "接著，DO₂（systemic oxygen delivery，系統氧輸送）還要考慮心臟每分鐘送出多少血：",
+          "line_for_editor": 79
+        },
+        "ec415bcdf1c8da85d1-1": {
+          "role": "definition",
+          "reader_gain": "列出 CO 乘 CaO₂ 的氧輸送公式",
+          "nonredundancy_reason": "量化 DO₂ 而非 CaO₂ 的單位",
+          "verdict": "keep",
+          "excerpt_for_editor": "DO₂（mL O₂/min）≈ CO（L/min）× CaO₂（mL O₂/dL）× 10",
+          "line_for_editor": 81
+        },
+        "6d07d0a79b5bde58e1-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋乘十換算與藥物支持下 CI；本段具體指向「這裡的 10 只是把 L 轉成 dL。於是我們終於能明白」",
+          "nonredundancy_reason": "把列式轉為術後條件推理；其對照段落為「這裡的 10 只是把 L 轉成 dL。於是我們終於能明白」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這裡的 10 只是把 L 轉成 dL。於是我們終於能明白：SaO₂、Hb、CO 是三個不同的資訊。正常 SpO₂ 不能補償 Hb 太低；CI 尚可也不保證病人沒有缺血，尤其當測量是在強心藥和 pacing 支持下完成。",
+          "line_for_editor": 83
+        },
+        "04f41b0a06e7e05e01-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明 Fick 氧耗必須混合靜脈取樣",
+          "nonredundancy_reason": "避免將前段氧輸送直接當氧耗；其對照段落為「VO₂（oxygen consumption，氧耗）則是」",
+          "verdict": "keep",
+          "excerpt_for_editor": "VO₂（oxygen consumption，氧耗）則是組織真正消耗的氧。若要藉由動靜脈氧含量差理解全身氧耗，理想化 Fick 關係需使用真正代表混合靜脈回流的 CvO₂；不能直接把單一 ScvO₂ 當肺動脈混合靜脈數值代入，就宣布已算出全身 oxygen extraction。",
+          "line_for_editor": 85
+        },
+        "ad9cc00b9f135bcd47-1": {
+          "role": "safety",
+          "reader_gain": "列出高 ScvO₂ 競爭機轉與危險；本段具體指向「ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧」",
+          "nonredundancy_reason": "補足前段 Fick 理論的床邊邊界；其對照段落為「ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧下降、血流分配改變、某些微循環氧萃取不足或採樣位置有關。它不是「全身每個器官都足夠氧」的陰性檢驗。若臨床循環不穩，必須先從血壓與升壓藥需求、胸管出血、心律、床邊心超與 Hb 尋找可立即處理的原因，再合併尿量、器官灌流及乳酸趨勢；這些檢",
+          "line_for_editor": 87
+        },
+        "44bb410b2264f053eb-1": {
+          "role": "causal_bridge",
+          "reader_gain": "形成高乳酸高 ScvO₂ 可共存結論",
+          "nonredundancy_reason": "收束第一問並轉入 BE 時間序列；其對照段落為「所以這位 CABG 病人的 ScvO₂ 95% 不必和 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "所以這位 CABG 病人的 ScvO₂ 95% 不必和 lactate 14.8「選一個相信」。一個描述特定靜脈血的剩餘氧飽和度，另一個描述代謝產物的濃度；它們可以同時是真的，也可以同時沒有回答真正的病因。",
+          "line_for_editor": 89
+        },
+        "459bf99f4925ef7030-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現 T0 T1 T2 乳酸持平 BE 回升",
+          "nonredundancy_reason": "新增跨時間資料而非單點值；其對照段落為「回到前面那位 69 歲 CABG 術後患者。現在不急著替」",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到前面那位 69 歲 CABG 術後患者。現在不急著替高乳酸貼上「缺氧」或「藥物」標籤，而是先按時間讀他真正量到的數字：到 ICU 時（T0），lactate 為 3.6 mmol/L、BE 為 −7.69 mEq/L；四小時後（T1），lactate 上升至 14.8、BE 降至 −1",
+          "line_for_editor": 93
+        },
+        "5fd640221f026bc395-1": {
+          "role": "orientation",
+          "reader_gain": "由實測時序提出兩個代謝問題；本段具體指向「這段病程其實提出兩個不同問題：乳酸為何在前四小時快速累積」",
+          "nonredundancy_reason": "下一段才討論病因不預設答案；其對照段落為「這段病程其實提出兩個不同問題：乳酸為何在前四小時快速累積」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這段病程其實提出兩個不同問題：乳酸為何在前四小時快速累積？乳酸尚未下降時，整體代謝性酸鹼偏移又為何開始改善？ 要回答它們，不能把 lactate 和 BE 當作同一個數字的兩種寫法。先看同一患者的完整時序：",
+          "line_for_editor": 95
+        },
+        "4e6bae78afc0d6474d-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出原表 T0 至 T5 無 T6 定義",
+          "nonredundancy_reason": "圖註保護來源時點與不等距軸；其對照段落為「表與圖：選自原始 Table 1 第三名病人；T0–T5」",
+          "verdict": "keep",
+          "excerpt_for_editor": "表與圖：選自原始 Table 1 第三名病人；T0–T5 並非等間隔，圖為分類時點，不代表均勻的時間軸。原文 Figure 1 出現 Table 1 無定義的 T6，本文不補造 T6。",
+          "line_for_editor": 170
+        },
+        "9a909e390bb32f59f4-1": {
+          "role": "definition",
+          "reader_gain": "解釋乳酸生成利用清除的生化；本段具體指向「Lactate 並不是缺氧才會出現的代謝廢物。即使細胞氧」",
+          "nonredundancy_reason": "提供後續 epinephrine 假說前提",
+          "verdict": "keep",
+          "excerpt_for_editor": "Lactate 並不是缺氧才會出現的代謝廢物。即使細胞氧供充足，glycolysis 仍持續產生 pyruvate，而 lactate dehydrogenase 會讓 pyruvate 與 lactate 相互轉換。血中 lactate 的數字，是各組織生成、利用與清除共同作用的結果；低",
+          "line_for_editor": 174
+        },
+        "731ebba978aca1428d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用 β₂ 機轉和血糖同期上升提假說；本段具體指向「這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，」",
+          "nonredundancy_reason": "比一般乳酸機轉多了患者時序；其對照段落為「這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，其中包括 epinephrine。一般生理研究顯示，epinephrine 可透過 β₂-adrenergic receptor、cAMP 與 Na⁺/K⁺-ATPase 等機轉促進 glycolysis，增加有氧條件下的乳酸生成；但",
+          "line_for_editor": 176
+        },
+        "902d22855d56f2fac4-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制 epinephrine 為時間相關假說",
+          "nonredundancy_reason": "反駁上一段過度確診的可能；其對照段落為「因此，病例作者提出 epinephrine 相關代謝反應」",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，病例作者提出 epinephrine 相關代謝反應的假說，並不是憑空猜測：這位病人確實接受了 epinephrine，而乳酸與血糖在早期術後時段一起升高。但這只能提供生理合理性與時間相關性。原始病例沒有能隔離藥物效果的對照，也沒有完整的連續用藥劑量、同期器官灌流與 lactate/p",
+          "line_for_editor": 178
+        },
+        "9c3c0bf9c298158762-1": {
+          "role": "orientation",
+          "reader_gain": "指定 T1 到 T2 乳酸 BE 分離問題",
+          "nonredundancy_reason": "不同於 T0 到 T1 乳酸快速上升",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二層：為什麼 T1 → T2 的 lactate 不變，BE 卻改善？",
+          "line_for_editor": 180
+        },
+        "29138e94968cbeea7f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "列出 chloride albumin 等可能因素",
+          "nonredundancy_reason": "提供 BE 脫鉤機轉但未冒稱實測；其對照段落為「BE 描述的是血液整體代謝性酸鹼偏移，不只是乳酸的替代指」",
+          "verdict": "keep",
+          "excerpt_for_editor": "BE 描述的是血液整體代謝性酸鹼偏移，不只是乳酸的替代指標。Lactate 14.8 mmol/L 在兩次採血間持平，並不表示所有酸化與鹼化因素都沒有改變；chloride、其他強離子、albumin、未測陰離子與治療相關變化，都可能讓 BE 的走勢不同於 lactate。",
+          "line_for_editor": 182
+        },
+        "5b1ece4d5182c2a3dd-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "禁止倒推 bicarbonate 或輸液原因",
+          "nonredundancy_reason": "為前段機轉加上來源與安全界線；其對照段落為「但原始資料缺少足以重建這段酸鹼變化的同期電解質、albu」",
+          "verdict": "keep",
+          "excerpt_for_editor": "但原始資料缺少足以重建這段酸鹼變化的同期電解質、albumin、完整 ABG 與介入時間，因此不能反過來斷言 BE 的改善是 bicarbonate、某種輸液或特定離子變化造成。這裡最可靠的結論是：lactate 反映生成與清除的濃度結果，BE 反映淨代謝性酸鹼效應；兩者必須一起讀，卻不能",
+          "line_for_editor": 184
+        },
+        "56d83457eb52ea6d27-1": {
+          "role": "case_evidence",
+          "reader_gain": "建立另一名 SGLT2i 患者身分；本段具體指向「Smyth 等人在 2021 年報告另一名 54 歲 C」",
+          "nonredundancy_reason": "是獨立反例不能拼接第一例資料；其對照段落為「Smyth 等人在 2021 年報告另一名 54 歲 C」",
+          "verdict": "keep",
+          "excerpt_for_editor": "Smyth 等人在 2021 年報告另一名 54 歲 CABG 病人，患有 type 2 diabetes，使用 SGLT2 inhibitor dapagliflozin，術前約 24 小時停藥並禁食。",
+          "line_for_editor": 188
+        },
+        "c9b2a9af07f5fb7ae7-1": {
+          "role": "case_evidence",
+          "reader_gain": "分清誘導後 pH 和術後 base deficit",
+          "nonredundancy_reason": "保留原文負號而不假造同期 ABG；其對照段落為「麻醉誘導後 pH 是 7.45，但手術後出現逐漸惡化的代」",
+          "verdict": "keep",
+          "excerpt_for_editor": "麻醉誘導後 pH 是 7.45，但手術後出現逐漸惡化的代謝性酸血症，base deficit 達 −15.8 mmol/L。當時的資料包含：",
+          "line_for_editor": 190
+        },
+        "df249b080554f97b54-1": {
+          "role": "case_evidence",
+          "reader_gain": "提醒第二例 SvO₂ 不是 ScvO₂",
+          "nonredundancy_reason": "跨病例採樣身分警示不重複病因；其對照段落為「SvO₂ 68%（注意是 SvO₂，不是前例的 ScvO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "SvO₂ 68%（注意是 SvO₂，不是前例的 ScvO₂）；",
+          "line_for_editor": 193
+        },
+        "c5a367678fa2db7d66-1": {
+          "role": "orientation",
+          "reader_gain": "正常乳酸血糖卻酸化的反事實；本段具體指向「這些數值原本讓人困惑：如果沒有高 lactate、血糖也」",
+          "nonredundancy_reason": "與第一例高乳酸方向相反；其對照段落為「這些數值原本讓人困惑：如果沒有高 lactate、血糖也」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這些數值原本讓人困惑：如果沒有高 lactate、血糖也不高，為什麼會出現明顯的代謝性酸化？",
+          "line_for_editor": 198
+        },
+        "b09bf23d7c5458379d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以 ketones 和 SGLT2i 完成 euDKA 鏈",
+          "nonredundancy_reason": "提供診斷治療復發而非只提問；其對照段落為「答案來自病史與新的檢驗。禁食、SGLT2 inhibit」",
+          "verdict": "keep",
+          "excerpt_for_editor": "答案來自病史與新的檢驗。禁食、SGLT2 inhibitor 的作用及手術壓力共同促成 euglycemic diabetic ketoacidosis（euDKA，血糖未顯著升高的酮酸中毒）。這裡主要需要辨認的酸化來源是 ketones，而不是 lactate。病人經 insulin、d",
+          "line_for_editor": 200
+        },
+        "c7d7efbd4f6383d67a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "禁止跨病人 ABG 拼接與普遍外推；本段具體指向「我們不能把本文第二個案例（euDKA 病人）的完整代謝性」",
+          "nonredundancy_reason": "屬證據完整性邊界不重述 euDKA；其對照段落為「我們不能把本文第二個案例（euDKA 病人）的完整代謝性」",
+          "verdict": "keep",
+          "excerpt_for_editor": "我們不能把本文第二個案例（euDKA 病人）的完整代謝性酸血症，拿來替前一位 CABG 病人填上不存在的 ABG；也不能把這位 euDKA 病人的低 lactate 推論成「所有 CABG 術後酸中毒都不是低灌流」。",
+          "line_for_editor": 202
+        },
+        "18d350ec88512f8bb4-1": {
+          "role": "counterfactual",
+          "reader_gain": "反證酸血症等於乳酸的雙向迷思；本段具體指向「這個對照真正推翻的是：「酸血症＝乳酸過高」以及「乳酸不高」",
+          "nonredundancy_reason": "抽象化臨床遷移而非治療細節；其對照段落為「這個對照真正推翻的是：「酸血症＝乳酸過高」以及「乳酸不高」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個對照真正推翻的是：「酸血症＝乳酸過高」以及「乳酸不高＝沒有重要代謝性酸中毒」這兩個互為鏡像的錯誤。",
+          "line_for_editor": 204
+        },
+        "508ed6ce360314c02a-1": {
+          "role": "decision",
+          "reader_gain": "給出 AG albumin ketones 的檢驗路徑",
+          "nonredundancy_reason": "將反例轉為可執行的鑑別流程；其對照段落為「若 ABG 指出 HCO₃⁻ 下降或有顯著負 BE，臨床」",
+          "verdict": "keep",
+          "excerpt_for_editor": "若 ABG 指出 HCO₃⁻ 下降或有顯著負 BE，臨床還需要同期 serum Na⁺、Cl⁻、total CO₂／HCO₃⁻、albumin 與相應的 lactate／ketones／腎功能。Anion gap（AG＝Na⁺−Cl⁻−HCO₃⁻）能協助辨認未測陰離子；低 albumin ",
+          "line_for_editor": 206
+        },
+        "1f44ad23534f27c6af-1": {
+          "role": "case_evidence",
+          "reader_gain": "把原病例轉成值班電話情境；本段具體指向「想像電話報告：「CABG 術後四小時，lactate 1」",
+          "nonredundancy_reason": "由研究描述切換為臨床決策演練；其對照段落為「想像電話報告：「CABG 術後四小時，lactate 1」",
+          "verdict": "keep",
+          "excerpt_for_editor": "想像電話報告：「CABG 術後四小時，lactate 14.8，ScvO₂ 95%，仍在 norepinephrine 和 epinephrine。」",
+          "line_for_editor": 210
+        },
+        "f87252fc8221cbff19-1": {
+          "role": "counterfactual",
+          "reader_gain": "排除大量輸液與完全忽略兩極；本段具體指向「現在不應做的，是直接在「一定缺氧，要補大量液體」和「一定」",
+          "nonredundancy_reason": "先建立決策分叉再引入正確動作；其對照段落為「現在不應做的，是直接在「一定缺氧，要補大量液體」和「一定」",
+          "verdict": "keep",
+          "excerpt_for_editor": "現在不應做的，是直接在「一定缺氧，要補大量液體」和「一定是 epinephrine，先不用管」兩個答案中選一個。",
+          "line_for_editor": 212
+        },
+        "4f612e9d74f8d1a9e7-1": {
+          "role": "safety",
+          "reader_gain": "胸管血壓與局部壓迫改變處置；本段具體指向「更有價值的是先確認當下是不是循環危機。若胸管出血急增、血」",
+          "nonredundancy_reason": "特定急症分支不同於一般代謝分析；其對照段落為「更有價值的是先確認當下是不是循環危機。若胸管出血急增、血」",
+          "verdict": "keep",
+          "excerpt_for_editor": "更有價值的是先確認當下是不是循環危機。若胸管出血急增、血壓下降、升壓藥快速加量，這些新事實會把出血、局部血腫或心功能惡化提高為需立即評估的問題。即使 ScvO₂ 高，仍然不能跳過床邊檢查、回報和必要的外科／心臟超音波評估。術後局限性 tamponade 也可能沒有經典環狀積液表現，影像不典",
+          "line_for_editor": 214
+        },
+        "8b4603883845dfd2c3-1": {
+          "role": "decision",
+          "reader_gain": "無明顯出血時用心律 echo Hb 分層",
+          "nonredundancy_reason": "與上一段急性出血分支條件不同；其對照段落為「若沒有明顯出血，則應整合心律、pacing、ECG、ec」",
+          "verdict": "keep",
+          "excerpt_for_editor": "若沒有明顯出血，則應整合心律、pacing、ECG、echo 的 LV/RV 功能、Hb、各式循環支持劑量、尿量及灌流徵象，理解 CI 是在哪個支持條件下取得。若懷疑 vasoplegia，低 SVR 是一條線索，但不能只用單一術後數值確診或隨意改變藥物。",
+          "line_for_editor": 216
+        },
+        "6cad6bd6a2ec8c1d00-1": {
+          "role": "decision",
+          "reader_gain": "要求同時點 ABG 電解質乳酸資料；本段具體指向「最後再回到代謝：同一時間點取得 pH／PaCO₂／PaO」",
+          "nonredundancy_reason": "補上循環檢查外的代謝證據缺口；其對照段落為「最後再回到代謝：同一時間點取得 pH／PaCO₂／PaO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "最後再回到代謝：同一時間點取得 pH／PaCO₂／PaO₂／FiO₂、electrolytes、albumin、Hb、lactate，必要時 ketones。乳酸的變化必須與循環、呼吸及代謝資料共同追蹤，不能把 lactate 降低當作已證實處理了出血或 tamponade。",
+          "line_for_editor": 218
+        },
+        "57ea523c6c2c86aa6b-1": {
+          "role": "decision",
+          "reader_gain": "無 Swan-Ganz 時提供替代檢查",
+          "nonredundancy_reason": "新增 CVP PAWP 不代表輸液反應的界線",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個臨床整合不需要假設病房一定有 Swan-Ganz catheter。有 PA catheter 時，CI／SvO₂／PA 壓力可以增加判斷資訊；沒有時仍能從 A-line、胸管、心律、血液檢驗、尿量及 bedside echo 建立可用的臨床模型。CVP、PAWP 等靜態壓力也不是 f",
+          "line_for_editor": 220
+        },
+        "b25ff320525f9ee0af-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制 CPB DO₂ 門檻不可外推 ICU",
+          "nonredundancy_reason": "屬指引適用場域而非患者實測；其對照段落為「還有一個容易誤用的數字：2024 年 EACTS/EAC」",
+          "verdict": "keep",
+          "excerpt_for_editor": "還有一個容易誤用的數字：2024 年 EACTS/EACTAIC/EBCP 指引提出常溫 CPB 期間特定的 goal-directed perfusion／DO₂ 門檻，這些門檻是針對手術中 CPB 的灌流管理，不能不加區分地轉成離開 CPB 後所有 ICU 病人的固定輸液或升壓目標。I",
+          "line_for_editor": 222
+        },
+        "9dd56aaf9a30d915f3-1": {
+          "role": "orientation",
+          "reader_gain": "收束第一例兩個數字都真的意義；本段具體指向「本文第一個案例（原研究的第三名 CABG 病人），lac」",
+          "nonredundancy_reason": "提供可帶走的原則而非再述機轉；其對照段落為「本文第一個案例（原研究的第三名 CABG 病人），lac」",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文第一個案例（原研究的第三名 CABG 病人），lactate 14.8、ScvO₂ 95%，其實沒有任何一個數字「錯」。錯的是我們原本希望用單一數字，代替不同層次的生理判斷。",
+          "line_for_editor": 226
+        },
+        "5ffaac766cb9713ea9-1": {
+          "role": "causal_bridge",
+          "reader_gain": "統整 ABG BE 乳酸 ScvO₂ Hb CO",
+          "nonredundancy_reason": "結尾作測量層級索引不重推公式；其對照段落為「ABG 的 pH、PaCO₂、PaO₂ 描述的是酸鹼、有」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ABG 的 pH、PaCO₂、PaO₂ 描述的是酸鹼、有效換氣與動脈氧合；BE 摘要代謝性酸鹼影響；lactate 是一段生成與清除歷程的濃度結果；ScvO₂ 反映特定回流血液的氧飽和度；Hb 與 CO 則讓我們開始估計氧輸送。它們可以彼此關聯，卻不能相互取代。",
+          "line_for_editor": 228
+        },
+        "b35ec15d7f5605a09b-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 euDKA 保留非乳酸酸化反證；本段具體指向「本文第二個案例（euDKA 病人）lactate 正常、」",
+          "nonredundancy_reason": "與第一例高乳酸的結語相互補足；其對照段落為「本文第二個案例（euDKA 病人）lactate 正常、」",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文第二個案例（euDKA 病人）lactate 正常、卻有嚴重代謝性酸血症，進一步證明：辨認是哪一個過程造成血液酸化，不能只盯著 lactate，也不能只從一張 ABG 推定原因。",
+          "line_for_editor": 230
+        },
+        "dd01404fce83754d86-1": {
+          "role": "decision",
+          "reader_gain": "把血氣價值收斂為危險與證據；本段具體指向「到了心臟外科 ICU，血氣真正有價值的時刻，是我們知道眼」",
+          "nonredundancy_reason": "回到值班決策而非停留在公式；其對照段落為「到了心臟外科 ICU，血氣真正有價值的時刻，是我們知道眼」",
+          "verdict": "keep",
+          "excerpt_for_editor": "到了心臟外科 ICU，血氣真正有價值的時刻，是我們知道眼前哪個危險必須先處理、哪項新檢查能排除什麼、還有哪個關鍵生理環節尚未被測量。",
+          "line_for_editor": 232
+        },
+        "bd2d4bffe725115284-1": {
+          "role": "navigation",
+          "reader_gain": "銜接下一篇 SpO₂ 正常的氧輸送問題",
+          "nonredundancy_reason": "只負責閱讀導航不增添患者數值；其對照段落為「下一篇會從反方向繼續：SpO₂ 已經 100%，為什麼 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "下一篇會從反方向繼續：SpO₂ 已經 100%，為什麼 CABG 術後仍可能有氧輸送危機？ 這時 Hb、CO、CaO₂、DO₂、VO₂ 就不再只是公式，而是直接影響我們如何解釋出血、血液稀釋與低心輸出的臨床模型。",
+          "line_for_editor": 234
+        },
+        "d610ecdf50810b4ae8-1": {
+          "role": "source_context",
+          "reader_gain": "列出原始來源圖像權利及先備入口；本段具體指向「本文兩份 CABG 病例來自不同患者，血氣、靜脈血氧與心」",
+          "nonredundancy_reason": "來源與授權定位不冒充醫學新主張；其對照段落為「本文兩份 CABG 病例來自不同患者，血氣、靜脈血氧與心」",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文兩份 CABG 病例來自不同患者，血氣、靜脈血氧與心輸出測值不可拼接。原始研究 Table 1／Figure 1、Pocket Medicine 第九版 Figure 4-1、IBCC 與 CPB 指引的適用範圍、權利與查核方法，均列於本篇來源與原圖查核。既有酸鹼完整判讀、氧合與有效換",
+          "line_for_editor": 241
+        }
+      }
     }
   }
 }
