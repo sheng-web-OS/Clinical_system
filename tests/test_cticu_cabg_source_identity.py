@@ -11,6 +11,7 @@ class CTICUCABGSourceIdentityTests(unittest.TestCase):
     def test_ibcc_is_expanded_correctly_at_first_reader_mention(self):
         lesson = LESSON.read_text("utf-8")
         self.assertIn("IBCC（Internet Book of Critical Care）", lesson)
+        self.assertEqual(lesson.index("IBCC"), lesson.index("IBCC（Internet Book of Critical Care）"))
         self.assertNotIn("International Board of Cardiothoracic Critical care", lesson)
         self.assertIn("https://emcrit.org/ibcc/cts/", SOURCES.read_text("utf-8"))
 
