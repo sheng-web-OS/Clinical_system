@@ -141,5 +141,17 @@ class SepsisFigureSourceGate(unittest.TestCase):
             self.assertIn('<a id="' + key + '"></a>', exam)
 
 
+    def test_public_sepsis_readers_do_not_expose_editorial_audit_status(self):
+        # RED on the pre-fix PR: editorial provenance and deployment status are
+        # internal audit data, not part of a clinical teaching paragraph.
+        article = (ROOT / ARTICLE).read_text(encoding="utf-8")
+        exam = (ROOT / "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md").read_text(encoding="utf-8")
+        for source, body in ((ARTICLE, article), ("sepsis exam", exam)):
+            for forbidden in ("曾有錯誤審查", "尚處 Draft",
+                              "未完成正式公開網站與手機版發布 QA", "內部存檔"):
+                with self.subTest(source=source, forbidden=forbidden):
+                    self.assertNotIn(forbidden, body, "Editorial audit metadata leaked into reader text")
+
+
 if __name__ == "__main__":
     unittest.main()
