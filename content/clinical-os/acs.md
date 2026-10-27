@@ -32,19 +32,22 @@ PCI 之後出現新的低血壓、肺水腫或心律異常，要重新辨認是�
 
 **同一位患者，改變一項資訊：**胸痛仍持續、ECG 有動態變化而首管 cTn 未升高，代表你現在缺少的是損傷的時間證據，不是已得到安全等待的證明；若隨後 cTn 升高，下一步仍須判定傷害是否來自急性缺血及哪一種機轉。若已恢復冠狀血流，患者卻新出現休克，問題又從「是否有可救心肌」轉成「目前哪一種循環或機械失效正在發生」。
 
-## 國考驗證｜沿病程回讀三道新收錄真題
+## 國考驗證｜同一條病程上的六道新收錄真題
 
-本系列不是把國考題放在文末當附錄，而是讓每題承擔一個明確的理解檢驗。正式原卷題號、答案及更正結果保留在[考選部 ACS 題目來源對照](../xiaoma-internal-medicine/acs-exam-sources.md)；以下三題均已對讀原卷與更正答案，且在[年度題庫](../xiaoma-internal-medicine/exams/index.md)各佔唯一正式題號，從題庫亦可反向返回本教材對應章節。
+本系列不是把國考題放在文末當附錄，而是讓每題承擔一個明確的理解檢驗。正式原卷題號、答案及更正結果保留在[考選部 ACS 題目來源對照](../xiaoma-internal-medicine/acs-exam-sources.md)；以下六題均已對讀原卷與更正答案，且在[年度題庫](../xiaoma-internal-medicine/exams/index.md)各佔唯一正式題號，從題庫亦可反向返回本教材對應章節。
 
 | ACS 中的判斷位置 | 正式國考題 | 這題真正檢查的關係 |
 | --- | --- | --- |
-| **診斷／病因** | [113（二）醫學（三）Q6：術後 cTn 超過十倍，是否等於 MI？](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6) | cTn injury、MI 證據與 procedure-related coronary complication 的區別；保留當年答案 **D**，並解釋 2026 年定義如何改寫舊 Type 5 |
-| **抗凝與 PCI** | [114（二）醫學（三）Q6：抗凝、GP IIb/IIIa 與 DAPT](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-6) | PCI 前 P2Y12、術中抗凝、large thrombus 補救治療及術後療程不能互換；官方答案 **C** |
-| **MI 後殘餘問題** | [114（二）醫學（三）Q9：一年前 MI，現在喘與水腫](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-9) | 飲水行為不是 HF 症狀；下肢水腫、疲勞、夜間端坐呼吸須回到鬱血和灌流的不同軸線；官方答案 **A** |
+| **診斷／病因** | [113（二）醫學（三）Q6：術後 cTn 超過十倍，是否等於 MI？](../xiaoma-internal-medicine/exams/113-2-med3-acs-q6.md#q-6) | cTn injury、MI 證據與 procedure-related coronary complication 的區別；保留當年答案 **D**，對讀 2026 新定義 |
+| **ECG 與採血時序** | [115（二）醫學（三）Q13：ECG 已變，cTn 一定跟著升高？](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-13) | Perfusion／壁運動／電位／傷害標記不必同步；官方 **D** |
+| **STEMI 當下治療** | [115（二）醫學（三）Q11：前壁 STE，為何答案是 SL NTG？](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-11) | 最佳**選項**是緩解缺血症狀，不代表可以延誤 PCI；官方 **B** |
+| **抗凝與 PCI** | [114（二）醫學（三）Q6：抗凝、GP IIb/IIIa 與 DAPT](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-6) | PCI 前 P2Y12、術中抗凝、large thrombus 補救治療及術後療程不能互換；官方 **C** |
+| **PCI 後急性問題** | [115（二）醫學（三）Q12：PCI 後 VT/VF，為何不是預防性 lidocaine？](../xiaoma-internal-medicine/exams/115-2-med3-acs-q11-q13.md#q-12) | 恢復竇律、LV thrombus、電解質與殘餘心肌問題各有獨立決策；官方 **C** |
+| **MI 後長期殘餘問題** | [114（二）醫學（三）Q9：一年前 MI，現在喘與水腫](../xiaoma-internal-medicine/exams/114-2-med3-acs-q6-q9.md#q-9) | 飲水行為不是 HF 症狀；水腫、疲勞、夜間端坐呼吸回到鬱血和灌流的不同軸線；官方 **A** |
 
 **原已收錄的橋接題：**[108（一）醫學（三）Q76：古柯鹼相關缺血、冠痙攣與用藥](../xiaoma-internal-medicine/lessons/2026-10-22-108a-cardiac-reasoning.md)放回供氧需求、冠脈張力與抗缺血處置；[115（二）第 6 題所在的基礎生理練習](../xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md)則由冠脈灌流與阻力協助理解先備條件，**後者尚不是本次新建的獨立 ACS 官方題目**。
 
-ECG 章的診斷圖形需要原始心電圖；本次尚未找到同時完成官方題號、標準答案、必要原圖視讀與圖像權利定位的獨立真題，因此不以相近題目或自編 ECG 圖冒充已驗證官方國考題。
+本次 115（二）Q13 是**缺血與 ECG／cTn 時序的生理選擇題**，原卷沒有提供需要解讀的 12 導程 ECG 圖；它能驗證讀者是否理解訊號角色，**不能冒充已完成 12 導程實際圖形判讀訓練**。原 ACS 網站的 LBBB、posterior MI、de Winter 等真實波形及圖像權利稽核仍待回收，不以自編 ECG 代替原圖。
 
 **返回主線再回答：**當 cTn 已超過十倍，卻沒有足夠證據指認新的冠脈併發症時，為什麼舊 Type 5 門檻或新程序性 MI 都不能只靠這個數字完成診斷？同一位病人接受 PCI 後必須重新定義抗栓目標，而出院一年後即使冠脈通暢，為什麼仍可能需要獨立評估心衰竭？
 
