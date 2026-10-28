@@ -25,7 +25,7 @@ class LabInferenceConsistency(unittest.TestCase):
         for cue in ("66","2,440","1,576","864","597","95%","6%"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,self.sources)
-        self.assertIn("不是所有",self.article)
+        self.assertIn("不能拿這個比例估計所有急診高鉀患者", self.article)
         self.assertIn("不能搬到所有病房病人",self.article)
 
     def test_aki_creatinine_vs_cause_is_distinguished(self):
