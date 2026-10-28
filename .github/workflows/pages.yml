@@ -86,6 +86,14 @@ jobs:
               python tools/qa_lab_morning_draft.py --output visual-qa-artifacts/lab-morning-draft
             fi
           fi
+      - name: Render CTICU ABG 03/04 release candidate privately on phones and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f tools/qa_cticu_abg_candidate.py && test -f content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md; then
+            if ! git diff --quiet origin/main...HEAD -- tools/qa_cticu_abg_candidate.py content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md content/xiaoma-internal-medicine/lessons/cticu-abg-03-cpb-acidbase-group-trends.svg content/xiaoma-internal-medicine/lessons/cticu-abg-04-alpha-phstat-logic.svg site/styles.css site/build.py; then
+              python tools/qa_cticu_abg_candidate.py --output visual-qa-artifacts/cticu-abg-private
+            fi
+          fi
       - name: Verify private pleural source-first reader on phones and desktop
         if: github.event_name == 'pull_request'
         run: |
