@@ -66,6 +66,35 @@ class MobileVisualRegression(unittest.TestCase):
         self.assertIn("#af-two-exits .af-desktop-conduction{display:none}", css)
         self.assertIn("#af-two-exits .af-mobile-conduction{display:block", css)
 
+    def test_cticu_cabg_figure_reasons_from_observed_data_not_abstract_cards(self):
+        lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md").read_text("utf-8")
+        image = figure(lesson, "cticu-measurement-layers")
+        for visible_cue in ("CABG 病例 3", "14.8", "95%", "實測",
+                            "不能直接推出", "CaO₂", "DO₂", "不能", "床邊"):
+            self.assertIn(visible_cue, image)
+        self.assertIn("minmax(min(100%,235px),1fr)", image,
+                      "Phone-sized figure must be allowed to stack instead of overflowing")
+        self.assertNotIn("四個不能互換的觀察層次", image)
+        self.assertNotIn("所以第一名病人的 ScvO₂ 95%", lesson,
+                         "Wardhana Table 1 values are for the third CABG patient")
+        self.assertIn("Wardhana", image)
+        self.assertIn("CaO₂ × CO → DO₂", image)
+        self.assertIn("Hb × SaO₂", image)
+        self.assertNotIn("SaO₂ + Hb + PaO₂", image,
+                         "CaO2 requires hemoglobin-bound oxygen plus a dissolved component")
+
+    def test_cticu_figure_transition_has_one_directional_arrow(self):
+        """2026-10-27 reader report: two arrows made the figure's causal flow ambiguous."""
+        lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md").read_text("utf-8")
+        visual = figure(lesson, "cticu-measurement-layers")
+        transition = visual.split("共同缺的是因果證據", 1)[1].split(
+            "血液每分鐘能送出多少氧？", 1)[0]
+        self.assertEqual(transition.count("↓"), 1,
+                         "The transition between observed signals and missing evidence has exactly one arrow")
+        self.assertRegex(transition, r'<div aria-hidden="true"[^>]*>↓</div>')
+        self.assertNotIn("↓　兩個數字", visual)
+        self.assertNotIn("共同缺的是因果證據　↓", visual)
+
     def test_cticu_oxygen_caption_has_no_raw_markdown_and_stays_secondary_on_phone(self):
         lesson = (ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-oxygen-delivery.md").read_text("utf-8")
         image = figure(lesson, "cticu-do2-two-paths")

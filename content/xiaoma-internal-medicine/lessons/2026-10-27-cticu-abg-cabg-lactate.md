@@ -23,7 +23,7 @@
 
 **CABG 術後需要多種循環藥物、臨床仍不穩定時，首先必須尋找可立即處理的外科與循環危險。** 胸管出血量及趨勢、血壓與 pressor 劑量、有效心律和 pacing、皮膚與四肢灌流、尿量、Hb／凝血及床邊心臟影像，能幫助我們辨認出血、低心輸出、右心衰竭、心包／縱膈壓迫、手術後心肌缺血與血管擴張。不同原因可以共存，處置卻不能互換。尤其疑似持續出血或 tamponade 時，不必等待下一個 lactate 趨勢才開始外科團隊評估與復甦。
 
-這是 IBCC〈Postoperative cardiac surgical patients〉的臨床起點。它不是說不用解釋血氣，而是提醒我們：**病人是否正在失去循環，與我們是否已完整解釋乳酸來源，是兩個不同時限的問題。**
+這是 IBCC（Internet Book of Critical Care）〈Postoperative cardiac surgical patients〉的臨床起點。它不是說不用解釋血氣，而是提醒我們：**病人是否正在失去循環，與我們是否已完整解釋乳酸來源，是兩個不同時限的問題。**
 
 ## 第一問｜從 ABG 到 ScvO₂，我們到底量到了什麼？
 
@@ -33,18 +33,37 @@ ABG（arterial blood gas，動脈血氣）直接測量 **pH、PaCO₂、PaO₂**
 
 **ScvO₂**則是中心靜脈導管所採血液的氧飽和度，主要代表該回流範圍的剩餘氧合比例。它不是動脈血的 SaO₂；也不等於由肺動脈取得、混合更廣泛靜脈回流的 **SvO₂（mixed venous oxygen saturation）**。不同採樣位置或時間的數字，不能拼成同一張「完整 ABG」。
 
-第三名 CABG 患者的原文 Table 1 提供 **BE、lactate、ScvO₂、venous–arterial CO₂ gap、glucose** 等時序，卻沒有完整同步的 pH、PaCO₂、PaO₂、HCO₃⁻、Hb、chloride、albumin。這表示我們可以分析他的代謝與靜脈氧合趨勢，**不能替他補造 pH、計算 AG／P/F ratio，或推得他個人的 DO₂**。
+回到這位 **69 歲 CABG 病人**：術後四小時 lactate 升至 14.8 mmol/L，ScvO₂ 卻達 95%。如果只看 lactate，容易立刻把問題歸因於低灌流；如果只看 ScvO₂，又可能誤以為全身氧供充足。**這不是兩份檢驗互相衝突，而是它們回答不同的生理問題。**
 
-在 ICU 最容易犯的錯，往往不是忘記公式，而是把未量到的內容當成已經知道。
+要理解這個現象，還缺了一座橋：**血液實際送出多少氧（CaO₂、DO₂），以及氧抵達後被哪些組織利用（VO₂、區域灌流與氧萃取）？** 下面的圖將病例「實測到的訊號」與「仍須補上的證據」分開；即使 ScvO₂ 很高，也不能跳過對術後出血、低心輸出或局部壓迫的床邊評估。
 
-<figure id="cticu-measurement-layers" style="margin:1.6rem 0">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr));gap:0.65rem">
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>動脈血氣</strong><p style="margin:0.45rem 0 0">pH、PaCO₂、PaO₂：酸鹼、換氣、氧合</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>代謝與酸鹼</strong><p style="margin:0.45rem 0 0">Lactate、BE、Na/Cl/albumin：代謝狀態與候選原因</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>氧輸送</strong><p style="margin:0.45rem 0 0">Hb × SaO₂ → CaO₂；再結合 CO 推算 DO₂</p></div>
-<div style="border:1px solid #d9e3df;border-radius:12px;padding:1rem;background:#f3f8f5"><strong>組織的結果</strong><p style="margin:0.45rem 0 0">ScvO₂／SvO₂、灌流徵象與器官功能；皆有抽樣及推論限制</p></div>
+<figure id="cticu-measurement-layers" style="margin:1.6rem 0;max-width:760px">
+<div style="padding:clamp(0.85rem,3vw,1.35rem);background:#f4f8f6;color:#16382e">
+<p style="margin:0 0 0.2rem;font-size:0.85rem;font-weight:700;color:#35594d">CABG 病例 3｜ICU 第 4 小時｜原文 Table 1</p>
+<h3 style="margin:0 0 0.85rem;font-size:1.15rem;line-height:1.45;color:#183a31">同一個人，兩項實測；測的卻不是同一件事</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:0.8rem">
+<div style="border-top:4px solid #a65035;padding:0.7rem 0.85rem;background:#fff;border-radius:5px">
+<div style="color:#704734;font-size:0.86rem;font-weight:700">血中乳酸濃度｜實測</div>
+<div style="font-size:1.55rem;font-weight:800;line-height:1.4;color:#8a3829">14.8 <small style="font-size:0.73rem;font-weight:600">mmol/L</small></div>
+<p style="font-size:0.94rem;margin:0.25rem 0;color:#243c36"><strong>反映：</strong>生成、利用與清除的淨結果</p>
+<p style="font-size:0.91rem;margin:0.4rem 0 0;padding-top:0.4rem;border-top:1px solid #eaded6;color:#713b2e"><strong>不能直接推出：</strong>一定是組織缺氧、一定要輸液</p>
 </div>
-<figcaption><strong>圖 1｜四個不能互換的觀察層次。</strong>本站原創因果整理，對照《Pocket Medicine》第九版 PDF 第 158–160 頁的 acid–base workup 與 Figure 4-1 <em>Acid–base nomogram</em>，<strong>不是</strong>原書圖表的轉描或完整診斷分區。只有在取得同期檢體與其他床邊證據後，才可連接這四個層次；<a href="../cticu-abg-cabg-sources.md#pocket">原書定位與核讀範圍</a>。</figcaption>
+<div style="border-top:4px solid #287b83;padding:0.7rem 0.85rem;background:#fff;border-radius:5px">
+<div style="color:#2b5963;font-size:0.86rem;font-weight:700">中心靜脈血氧飽和度｜實測</div>
+<div style="font-size:1.55rem;font-weight:800;line-height:1.4;color:#22616b">95% <small style="font-size:0.73rem;font-weight:600">ScvO₂</small></div>
+<p style="font-size:0.94rem;margin:0.25rem 0;color:#243c36"><strong>反映：</strong>採樣位置回流血的剩餘氧飽和度</p>
+<p style="font-size:0.91rem;margin:0.4rem 0 0;padding-top:0.4rem;border-top:1px solid #d7e7e6;color:#245861"><strong>不能直接推出：</strong>全身氧輸送足夠、各器官沒有缺血</p>
+</div>
+</div>
+<div style="text-align:center;margin:0.65rem 0;font-size:0.94rem;line-height:1.5;font-weight:750;color:#305449">兩個數字不互相否定；共同缺的是因果證據<div aria-hidden="true" style="margin-top:0.2rem;font-size:1.2rem;line-height:1">↓</div></div>
+<div style="background:#e6f0eb;border:1px solid #a9c6b9;border-radius:8px;padding:0.8rem 1rem">
+<div style="font-size:0.95rem;font-weight:800;margin-bottom:0.35rem">血液每分鐘能送出多少氧？</div>
+<div style="font-size:0.96rem;line-height:1.7"><strong>Hb × SaO₂</strong>（主要攜氧）＋<strong>溶解氧</strong>（少量，與 PaO₂ 有關）<div style="margin:0.35rem 0 0.35rem 1rem">↓ 合計為 <strong>CaO₂</strong>：每單位血液所含的氧</div><strong>CaO₂ × CO → DO₂</strong>：全身每分鐘送出的氧<div style="margin-top:0.35rem">但 <strong>DO₂ ≠ 每個器官實際利用的氧</strong>；還需考慮血流分布及氧萃取。</div></div>
+<p style="margin:0.45rem 0 0;font-size:0.88rem;color:#405b51">本病例 T1 沒有同期完整 Hb、血氣及 CO，以上是生理關係，<strong>不是</strong>已算出的病人數值。</p>
+</div>
+<p style="margin:0.75rem 0 0;font-size:0.95rem;line-height:1.7"><strong>床邊真正改判的證據：</strong>先排查出血、心包／縱膈壓迫與心功能惡化；同步評估心律、血壓／藥物需求、胸管、床邊心超、Hb、尿量、器官灌流與乳酸趨勢。再判斷 catecholamine 相關生成或清除因素的貢獻。</p>
+</div>
+<figcaption><strong>圖 1｜高 lactate 與高 ScvO₂ 並存，為何不能據此斷言灌流足夠或不足。</strong>Wardhana &amp; Kurniawaty（2025）原文 Table 1 病人 3、T1 數值；生理橋樑是原創解釋，非病人實測 DO₂／VO₂。<a href="https://macc.perdatin.org/index.php/my-journal/article/download/429/365/">原始研究 Table 1</a>。</figcaption>
 </figure>
 
 ## 第二問｜ScvO₂ 95%，為什麼仍不能宣稱 oxygen delivery 足夠？
@@ -65,17 +84,15 @@ ABG（arterial blood gas，動脈血氣）直接測量 **pH、PaCO₂、PaO₂**
 
 **VO₂（oxygen consumption，氧耗）**則是組織真正消耗的氧。若要藉由動靜脈氧含量差理解**全身**氧耗，理想化 Fick 關係需使用真正代表混合靜脈回流的 **CvO₂**；不能直接把單一 ScvO₂ 當肺動脈混合靜脈數值代入，就宣布已算出全身 oxygen extraction。
 
-ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧下降、血流分配改變、某些微循環氧萃取不足或採樣位置有關。它**不是「全身每個器官都足夠氧」的陰性檢驗**。
+ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧下降、血流分配改變、某些微循環氧萃取不足或採樣位置有關。它**不是「全身每個器官都足夠氧」的陰性檢驗**。若臨床循環不穩，必須先從血壓與升壓藥需求、胸管出血、心律、床邊心超與 Hb 尋找可立即處理的原因，再合併尿量、器官灌流及乳酸趨勢；這些檢查協助辨認危險，卻也不能單憑其中一項確定高 ScvO₂ 的單一機轉。
 
-所以第一名病人的 ScvO₂ 95% 不必和 lactate 14.8「選一個相信」。一個描述特定靜脈血的剩餘氧飽和度，另一個描述代謝產物的濃度；它們**可以同時是真的，也可以同時沒有回答真正的病因**。
+所以這位 CABG 病人的 ScvO₂ 95% 不必和 lactate 14.8「選一個相信」。一個描述特定靜脈血的剩餘氧飽和度，另一個描述代謝產物的濃度；它們**可以同時是真的，也可以同時沒有回答真正的病因**。
 
 ## 第三問｜Lactate 與 BE 為什麼甚至可以朝不同方向變化？
 
-細胞即使處在有氧狀態，也持續經 glycolysis 形成 pyruvate，並可透過 lactate dehydrogenase 與 lactate 相互轉換。Lactate 不是缺氧後才突然出現的「廢物」。組織低灌流可能增加 lactate，但 epinephrine 的 β₂ 刺激、術後代謝壓力、CPB 與再灌流等因素也可能促進生成；肝臟等組織的利用及清除改變，則影響血中濃度。**這些不是互斥的 Type A／Type B 箱子。**
+回到前面那位 **69 歲 CABG 術後患者**。現在不急著替高乳酸貼上「缺氧」或「藥物」標籤，而是先按時間讀他真正量到的數字：到 ICU 時（T0），lactate 為 **3.6 mmol/L**、BE 為 **−7.69 mEq/L**；四小時後（T1），lactate 上升至 **14.8**、BE 降至 **−15.7**。然而到了 ICU 入住後第 8–10 小時（T2），**lactate 仍是 14.8，BE 卻已改善至 −7.90**。
 
-原作者認為第三名患者使用 epinephrine 後，乳酸和血糖升高的時間關係支持兒茶酚胺相關機轉。但這是一個**病例作者的可能解釋**，沒有對照實驗足以排除同時存在的缺氧、局部缺血或循環因素。
-
-值得讀的是同一患者的時序，而不是只記最高值。
+這段病程其實提出兩個不同問題：**乳酸為何在前四小時快速累積？乳酸尚未下降時，整體代謝性酸鹼偏移又為何開始改善？** 要回答它們，不能把 lactate 和 BE 當作同一個數字的兩種寫法。先看同一患者的完整時序：
 
 <figure id="cticu-cabg-timeline" style="max-width:100%;margin:1.6rem 0">
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="742" style="display:block;width:100%;max-width:380px;height:auto;margin:auto" viewBox="0 0 380 742" role="img" aria-labelledby="title desc">
@@ -152,11 +169,19 @@ ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧下降
 
 *表與圖：選自原始 Table 1 第三名病人；T0–T5 並非等間隔，圖為分類時點，不代表均勻的時間軸。原文 Figure 1 出現 Table 1 無定義的 T6，本文不補造 T6。*
 
-注意 **T1 → T2**。Lactate 仍是 **14.8**，但 BE 卻從 **−15.7 改善至 −7.90**。若把乳酸濃度當成整體「酸化程度」，就無法解釋這件事。
+**第一層：為什麼 lactate 在 T0 → T1 迅速上升？**
 
-BE 受血液中**所有**代謝性酸化與鹼化因素的共同影響，包括 chloride、其他強離子、albumin 及未測陰離子等，當然不必跟 lactate 逐步同步。但來源缺乏同期完整電解質和治療時序，因此**不能宣稱 BE 改善是 bicarbonate、某種液體或單一 chloride 變化造成**。
+Lactate 並不是缺氧才會出現的代謝廢物。即使細胞氧供充足，glycolysis 仍持續產生 pyruvate，而 lactate dehydrogenase 會讓 pyruvate 與 lactate 相互轉換。血中 lactate 的數字，是各組織**生成、利用與清除**共同作用的結果；低灌流可以增加乳酸，但不代表每一次升高都只有缺氧一個原因。
 
-這個時點的價值不是教我們猜出一個沒有被測量的答案，而是知道：**lactate 上升不等於完整的酸鹼診斷；BE 改善也不等於循環危險已解除。**
+這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，其中包括 **epinephrine**。一般生理研究顯示，epinephrine 可透過 β₂-adrenergic receptor、cAMP 與 Na⁺/K⁺-ATPase 等機轉促進 glycolysis，增加有氧條件下的乳酸生成；但這個機轉不能單獨證明本例乳酸升高是由 epinephrine 所致。同一份原始 Table 1 還記錄：患者血糖在 T0、T1、T2 分別為 **237、340、277**（原文 Glu 欄），與 T1 的乳酸高峰同時出現。
+
+**因此，病例作者提出 epinephrine 相關代謝反應的假說，並不是憑空猜測**：這位病人確實接受了 epinephrine，而乳酸與血糖在早期術後時段一起升高。但這只能提供**生理合理性與時間相關性**。原始病例沒有能隔離藥物效果的對照，也沒有完整的連續用藥劑量、同期器官灌流與 lactate/pyruvate ratio，不能據此宣稱乳酸一定是 epinephrine 造成，更不能排除出血、低心輸出或局部缺血。所謂 Type A／Type B 是協助思考機轉的分類，不是讓同一位危重病人只能二選一的箱子。
+
+**第二層：為什麼 T1 → T2 的 lactate 不變，BE 卻改善？**
+
+BE 描述的是血液**整體代謝性酸鹼偏移**，不只是乳酸的替代指標。Lactate 14.8 mmol/L 在兩次採血間持平，並不表示所有酸化與鹼化因素都沒有改變；chloride、其他強離子、albumin、未測陰離子與治療相關變化，都可能讓 BE 的走勢不同於 lactate。
+
+但原始資料缺少足以重建這段酸鹼變化的同期電解質、albumin、完整 ABG 與介入時間，因此**不能反過來斷言 BE 的改善是 bicarbonate、某種輸液或特定離子變化造成**。這裡最可靠的結論是：**lactate 反映生成與清除的濃度結果，BE 反映淨代謝性酸鹼效應；兩者必須一起讀，卻不能互相取代。** 更重要的是，BE 改善也不能證明術後的循環危險已解除。若在床邊遇到相同走勢，應先取得同期 pH／PaCO₂、電解質、albumin、lactate 及循環狀態，再依酸血症嚴重度與病因判斷處置；**單憑 BE 的好轉或惡化，不能決定是否給予 bicarbonate。**
 
 ## 反過來問｜Lactate 正常，為什麼仍可能出現嚴重代謝性酸血症？
 
@@ -174,7 +199,7 @@ Smyth 等人在 2021 年報告**另一名** 54 歲 CABG 病人，患有 type 2 d
 
 答案來自病史與新的檢驗。禁食、SGLT2 inhibitor 的作用及手術壓力共同促成 **euglycemic diabetic ketoacidosis（euDKA，血糖未顯著升高的酮酸中毒）**。這裡主要需要辨認的酸化來源是 ketones，而不是 lactate。病人經 insulin、dextrose 與電解質／體液管理治療，原文還記載過早撤除治療後再次出現酮酸中毒。
 
-我們不能把第二名病人的完整代謝性酸血症，拿來替第一名填上不存在的 ABG；也不能把第二個病例的低 lactate 推論成「所有 CABG 術後酸中毒都不是低灌流」。
+我們不能把本文第二個案例（euDKA 病人）的完整代謝性酸血症，拿來替前一位 CABG 病人填上不存在的 ABG；也不能把這位 euDKA 病人的低 lactate 推論成「所有 CABG 術後酸中毒都不是低灌流」。
 
 這個對照真正推翻的是：**「酸血症＝乳酸過高」以及「乳酸不高＝沒有重要代謝性酸中毒」這兩個互為鏡像的錯誤。**
 
@@ -194,15 +219,15 @@ Smyth 等人在 2021 年報告**另一名** 54 歲 CABG 病人，患有 type 2 d
 
 這個臨床整合不需要假設病房一定有 Swan-Ganz catheter。有 PA catheter 時，CI／SvO₂／PA 壓力可以增加判斷資訊；沒有時仍能從 A-line、胸管、心律、血液檢驗、尿量及 bedside echo 建立可用的臨床模型。**CVP、PAWP 等靜態壓力也不是 fluid responsiveness 的直接證明**，不能因高 lactate 就無目的地反覆輸液。
 
-還有一個容易誤用的數字：2024 年 EACTS/EACTAIC/EBCP 指引提出**常溫 CPB 期間**特定的 goal-directed perfusion／DO₂ 門檻，這些門檻是針對手術中 CPB 的灌流管理，**不能不加區分地轉成離開 CPB 後所有 ICU 病人的固定輸液或升壓目標**。IBCC 的術後 hemodynamic rough targets 也只能和症狀、病程及具體原因一起使用。
+還有一個容易誤用的數字：2024 年 EACTS/EACTAIC/EBCP 指引提出**常溫 CPB 期間**特定的 goal-directed perfusion／DO₂ 門檻，這些門檻是針對手術中 CPB 的灌流管理，**不能不加區分地轉成離開 CPB 後所有 ICU 病人的固定輸液或升壓目標**。ICU 仍需依個別患者的 Hb、心輸出、器官灌流與病程，決定是否調整氧輸送與循環支持。IBCC 的術後 hemodynamic rough targets 也只能和症狀、病程及具體原因一起使用。
 
-## 回到第一個病人
+## 回到這位 69 歲 CABG 病人
 
-第一例 lactate 14.8、ScvO₂ 95%，其實沒有任何一個數字「錯」。錯的是我們原本希望用單一數字，代替不同層次的生理判斷。
+本文第一個案例（原研究的第三名 CABG 病人），lactate 14.8、ScvO₂ 95%，其實沒有任何一個數字「錯」。錯的是我們原本希望用單一數字，代替不同層次的生理判斷。
 
 ABG 的 pH、PaCO₂、PaO₂ 描述的是酸鹼、有效換氣與動脈氧合；BE 摘要代謝性酸鹼影響；lactate 是一段生成與清除歷程的濃度結果；ScvO₂ 反映特定回流血液的氧飽和度；Hb 與 CO 則讓我們開始估計氧輸送。它們可以彼此關聯，卻不能相互取代。
 
-第二例正常 lactate、卻有嚴重 euDKA，進一步證明：**辨認是哪一個過程造成血液酸化，不能只盯著 lactate，也不能只從一張 ABG 推定原因。**
+本文第二個案例（euDKA 病人）lactate 正常、卻有嚴重代謝性酸血症，進一步證明：**辨認是哪一個過程造成血液酸化，不能只盯著 lactate，也不能只從一張 ABG 推定原因。**
 
 到了心臟外科 ICU，血氣真正有價值的時刻，是我們知道**眼前哪個危險必須先處理、哪項新檢查能排除什麼、還有哪個關鍵生理環節尚未被測量**。
 

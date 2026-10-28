@@ -1,0 +1,1106 @@
+{
+  "schema": "PRIVATE_INDEPENDENT_PLEURAL_REVIEW_V1",
+  "pr": 188,
+  "reviewer_role": "DISTINCT_READ_ONLY_AI_REVIEWER",
+  "reviewer_provenance": "New automation execution; not original writer context-correction/root/f72dc5216974; no human clinician/pharmacist claim.",
+  "observed_at": "2026-10-28T03:00Z (approximate; commit timestamp authoritative)",
+  "frozen": {
+    "head_sha": "06de86dcc136df696c2105a071d94ed069f9c22d",
+    "article_path": "archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md",
+    "article_blob": "6491bbb62b5e6283ce49a86e0fed524453c46cd5",
+    "packet_blob": "1f9c97038d7e61ee27d00d005d6e71ff37aa0820"
+  },
+  "state": "REQUEST_CHANGES",
+  "counts": {
+    "total": 50,
+    "KEEP": 46,
+    "REVISE": 4,
+    "REMOVE": 0
+  },
+  "epqc_scores": {
+    "A": 4,
+    "B": 4,
+    "C": 3,
+    "D": 2,
+    "E": 3,
+    "F": 4,
+    "G": 3
+  },
+  "hard_stop": "P1 evidence-to-decision gap: actual antibiotic exposure omitted before culture-negative interpretation; no final semantic PASS.",
+  "source_checks": {
+    "cureus": "Original PDF pp1–4, Table1 and Figure2 visually read; Table1 Day3/5, 56M, 260/150mL, LDH1254/607, glucose71/84, pH absent/7.42; source Figure2B says Day2 post tap.",
+    "bts": "2023 official published recommendation text checked; full-supplement original figure p37 retrieval timed out this execution; previous writer's figure audit not misrepresented as independent.",
+    "pocket": "Private source pages p94–96 prior evidence only, not reopened here.",
+    "exams": "Official Q/S/M previously checked; not independently re-fetched this run.",
+    "rights": "No third-party source pixels embedded in this audit; article original teaching SVG explicitly marked non-original."
+  },
+  "findings": [
+    {
+      "unit": 2,
+      "severity": "P1",
+      "source": "Cureus PDF pp1–3",
+      "issue": "Omitted cefdinir and pre-tap piperacillin/tazobactam exposure",
+      "fix": "Restore actual cefdinir→ceftriaxone/doxycycline→piperacillin/tazobactam before Day3 tap from Cureus pp1–3."
+    },
+    {
+      "unit": 15,
+      "severity": "P2",
+      "source": "Original Cureus Table1 lacks hypothetical serum/pleural albumin pair",
+      "issue": "Invented albumin example insufficiently explicit",
+      "fix": "Mark 3.6 and 2.1 g/dL as explicitly invented arithmetic example, not source-patient data."
+    },
+    {
+      "unit": 16,
+      "severity": "P1",
+      "source": "Cureus PDF Table1 cultures and antibiotic chronology",
+      "issue": "No-growth may be overread as infection excluded",
+      "fix": "Clarify negative pleural cultures after antibiotic exposure cannot exclude infection."
+    },
+    {
+      "unit": 22,
+      "severity": "P1",
+      "source": "Cureus PDF p4 Table1 and clinical text",
+      "issue": "Day5 pH/culture evidence interpretation needs limitation",
+      "fix": "Do not let Day5 normal pH/no-growth after antibiotics imply a sterile space; distinguish source authors' narrower no-empyema interpretation."
+    }
+  ],
+  "paragraphs": {
+    "5c1497b15f55ffdfcd-1": {
+      "line": 3,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Opening separates symptom improvement, exudate classification and pH inference.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "61aaa20ab964364e9f-1": {
+      "line": 7,
+      "verdict": "REVISE",
+      "severity": "P1",
+      "reader_gain": "Published 56M case correct, but actual pre-tap antibiotic sequence is incomplete.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Cureus 2024 original Figure2/Table1 and case text inspected",
+      "acceptance": "Restore actual cefdinir→ceftriaxone/doxycycline→piperacillin/tazobactam before Day3 tap from Cureus pp1–3."
+    },
+    "9879aec842999f43f9-1": {
+      "line": 9,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Clinical symptoms and pleural-space imaging cannot replace each other.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "ca9e37a902a4a203b5-1": {
+      "line": 11,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Explains fluid balance and why sampling must answer an information gap.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "f6ce2f878e9ba54069-1": {
+      "line": 13,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Heart-failure comparison is separate from the actual pneumonia case.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "45748f64c1bb466d49-1": {
+      "line": 15,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Figure explicitly represents parallel observations, not causality.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "f5b5766ba0ad8bb6b9-1": {
+      "line": 42,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Ultrasound changes procedural safety and local anatomy assessment.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "d8511c6e5236fc1479-1": {
+      "line": 44,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Septation is not a microbiological diagnosis; no blind puncture.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "1153a892dbd49d4aca-1": {
+      "line": 46,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Diagnostic tap, therapeutic tap and continuous drain have distinct goals.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "06de455e6b6851b489-1": {
+      "line": 50,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Light criteria identify exudative mechanism, not drainage need.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "49a188f0d1bba01f4a-1": {
+      "line": 52,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Three Light criteria thresholds correctly stated.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "bc3973b498cdf745cd-1": {
+      "line": 60,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Separates two actual source-table timepoints.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Cureus 2024 original Figure2/Table1 and case text inspected",
+      "acceptance": null
+    },
+    "ab786733143c5b3bc8-1": {
+      "line": 77,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Ratio calculation correct and does not fabricate Day3 pH.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Cureus 2024 original Figure2/Table1 and case text inspected",
+      "acceptance": null
+    },
+    "262315b6a2487a89a2-1": {
+      "line": 79,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Diuretic pseudoexudate is an explicitly separate scenario.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "f2f6617e2d66b055fa-1": {
+      "line": 81,
+      "verdict": "REVISE",
+      "severity": "P2",
+      "reader_gain": "3.6 and 2.1 albumin values need unmistakable hypothetical provenance.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": "Mark 3.6 and 2.1 g/dL as explicitly invented arithmetic example, not source-patient data."
+    },
+    "bbcd72a4549d2fd31c-1": {
+      "line": 85,
+      "verdict": "REVISE",
+      "severity": "P1",
+      "reader_gain": "Appropriate test selection, but culture-negative after antibiotics needs caveat.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": "Clarify negative pleural cultures after antibiotic exposure cannot exclude infection."
+    },
+    "592aced19416e9c9ed-1": {
+      "line": 87,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Cell differential, cytology, chylothorax and hemothorax are not single-test certainties.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "47940484f9aee64be3-1": {
+      "line": 89,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Pleural pH is not arterial pH; sampling biases acknowledged.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "b4755f1f6a2962e115-1": {
+      "line": 93,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Simple/complicated parapneumonic effusion not portrayed as inevitable steps.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "da5588cdd9647e34b7-1": {
+      "line": 95,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Frank pus triggers infection source-control discussion with safe-window constraint.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "c33d5008a951222a43-1": {
+      "line": 104,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "BTS thresholds and footnotes have correct conceptual framing; original figure not independently re-rendered in this run.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "BTS published guideline text checked; original p37 figure NOT visually re-opened",
+      "acceptance": null
+    },
+    "553683bc2459484f13-1": {
+      "line": 106,
+      "verdict": "REVISE",
+      "severity": "P1",
+      "reader_gain": "Day4/Day5 chronology matches Table1, but no-growth after antibiotics and normal pH must not imply sterilization.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Cureus 2024 original Figure2/Table1 and case text inspected",
+      "acceptance": "Do not let Day5 normal pH/no-growth after antibiotics imply a sterile space; distinguish source authors' narrower no-empyema interpretation."
+    },
+    "37a57313e36a62250e-1": {
+      "line": 108,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Structural reason for drainage distinguished from pH-alone rule.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "0b76287b3f2e8bd352-1": {
+      "line": 110,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Counterfactual pH/LDH/glucose cases are not blended into source patient.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "554b59390e56806bd3-1": {
+      "line": 114,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Post-tube failure requires assessment of tube, locules and competing infection sources.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "7df5ce83a1a86b1006-1": {
+      "line": 116,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Small-bore tube and combined tPA/DNase are qualified rescue recommendations.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Cureus 2024 original Figure2/Table1 and case text inspected",
+      "acceptance": null
+    },
+    "33394a274a484b3f0a-1": {
+      "line": 118,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Case Day6/14/16 sequence is not interpreted as causal efficacy proof.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "37065417ed573f97c0-1": {
+      "line": 120,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Counterfactual tracks symptoms, effusion volume and shock separately.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "1aa712929d8528be29-1": {
+      "line": 124,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Malignant, hepatic, PE and hemorrhagic etiologies are distinct pathways.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "b1df4abad602ce1b2b-1": {
+      "line": 126,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Three decision layers synthesized without conflation.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "2ee8fea69c1f90adc1-1": {
+      "line": 130,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Official exams introduced as reasoning probes rather than loose tags.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "191c6bc22b3cd5b2ae-1": {
+      "line": 134,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "112-1 Q45 stem/options cited to official prior source audit.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "19ffbacc896f3d2606-1": {
+      "line": 138,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Glucose38mg/dL is an important clue, not an automatic chest-tube order.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "a549fa18ac4d4ab961-1": {
+      "line": 142,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "114-1 Q48 distinguishes definitions across pleural etiologies.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "c7e6114a18506eef47-1": {
+      "line": 144,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "TB lymphocytes, malignant glucose, chylothorax TG and hemothorax Hct differentiated.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "209b4567d322eda990-1": {
+      "line": 148,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "115-2 Q49 relates amylase to differential diagnosis.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "aa53c6a7781bde734f-1": {
+      "line": 150,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Amylase and post-CABG discussion avoids absolute diagnostic inference.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "c75ea0acbb9cca3718-1": {
+      "line": 154,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "T1 hypothetical heart-failure patient clearly distinct.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "744fe8be3a5920f296-1": {
+      "line": 156,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "T1 answer uses albumin gradient plus pretest probability.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "5a22bb1d0b71779f4f-1": {
+      "line": 160,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "T2 hypothetical high-risk infection data clearly distinct.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "bae7dc461f5d4db438-1": {
+      "line": 162,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "T2 answer incorporates intermediate pH, imaging and safe window.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "0cf0a373ebb0dc78b2-1": {
+      "line": 166,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Conclusion restores etiology, source-control and intervention-failure boundaries.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "90cb92013c24678c77-1": {
+      "line": 168,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Reading sequence does not claim measured learning improvement.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "0bb15afae048b339df-1": {
+      "line": 174,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Case DOI, Table1, Figure2 and source's Day2/Day3 inconsistency documented.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Cureus 2024 original Figure2/Table1 and case text inspected",
+      "acceptance": null
+    },
+    "8a47a3724bff52c910-1": {
+      "line": 175,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "BTS original figure and formal text identified; this execution checked formal text but could not reopen original full-supplement image.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "BTS published guideline text checked; original p37 figure NOT visually re-opened",
+      "acceptance": null
+    },
+    "620d987ac150e62586-1": {
+      "line": 176,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Pleural procedures statement appropriately linked and not reproduced.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "f48ec79687f8cc3891-1": {
+      "line": 177,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Pocket Medicine private book source not re-opened this run; no pixels reproduced.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "b51d9a0d32adafb193-1": {
+      "line": 178,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Pseudoexudate review cited; primary paper not reopened this run.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "3be39ceaf8378e49b6-1": {
+      "line": 179,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Official Q/S/M identity carried from prior verified audit, not newly re-fetched.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    },
+    "9bb7261c3c15f1fc7e-1": {
+      "line": 181,
+      "verdict": "KEEP",
+      "severity": "none",
+      "reader_gain": "Education-only and non-order-ready boundary retained.",
+      "nonredundancy_reason": "This unit contributes its own mechanism, evidence boundary, source identity or transfer check.",
+      "evidence_scope": "Full article + source identities; inherited prior source checks not re-claimed as new",
+      "acceptance": null
+    }
+  },
+  "release_gate": "HOLD; archive path not in site/pages.json; no manifest/merge/deploy authority; writer revision and distinct re-review required.",
+  "independent_human_review": "NOT_PERFORMED",
+  "reader_learning_effect": "NOT_MEASURED",
+  "review_round_2": {
+    "reviewer_role": "DISTINCT_READ_ONLY_AI_REVIEWER",
+    "reviewer_provenance": "Clinical OS scheduled execution 2026-10-28 03:07 UTC; this execution did not author/edit article, source, or figures; no human clinical signoff",
+    "observed_at": "2026-10-28T03:09Z",
+    "frozen": {
+      "head_sha": "57792babad958c5bc107c85415575a09a5705a0b",
+      "article_path": "archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md",
+      "article_blob": "140b4d37431301218f70162a44e54d768590475e",
+      "packet_path": "audit/2026-10-28-pleural-review-packet.json",
+      "packet_blob": "9b254345a019e1eb2031dc3a302e31874289b219",
+      "source_fingerprint": "No separate source markdown changed in PR #188; source links embedded in draft",
+      "figure_fingerprint": "Original inline SVG in frozen article blob"
+    },
+    "state": "51_TEXT_UNITS_KEEP_BUT_SOURCE_FIGURE_HOLD",
+    "counts": {
+      "total": 51,
+      "KEEP": 51,
+      "REVISE": 0,
+      "REMOVE": 0
+    },
+    "core_reader_question": "Why can pneumonia symptoms improve while a loculated effusion enlarges, and which independent evidence warrants aspiration, exudate classification, or drainage?",
+    "new_understanding": "Real 56M Day3/Day5 observations + pre-sampling antibiotics; Light's classification vs BTS nonpurulent infection decision vs safe procedural window; case action not guideline or efficacy proof.",
+    "strongest_counterargument": "A long article risks conflating the published patient's normal Day5 pH with universal drain indication; explicitly retained author-specific timeline and BTS footnote boundaries counter this, but original BTS figure pixels are still a mandatory unverified source.",
+    "epqc_scores": {
+      "A": 4,
+      "B": 4,
+      "C": 4,
+      "D": 4,
+      "E": 3,
+      "F": 4,
+      "G": 3
+    },
+    "hard_stops": {
+      "unsafe_claim": false,
+      "fabricated_evidence": false,
+      "broken_causal_bridge": false,
+      "internal_metadata": false,
+      "unresolved_source_conflict": false,
+      "independent_original_bts_figure_visual": "NOT_VERIFIED",
+      "official_exam_original_this_execution": "INHERITED_PRIOR_VERIFIED",
+      "human_clinical_review": "NOT_PERFORMED"
+    },
+    "source_checks": {
+      "cureus": "Independently opened original 8-page Cureus PDF DOI10.7759/cureus.52986, inspected original p3 Figure2 and p4 Table1 images. Confirmed 56M, outpatient cefdinir, inpatient ceftriaxone+doxycycline then piperacillin/tazobactam BEFORE 260mL tap; Day3 LDH1254/plasma169, protein3.8/plasma5.6, glucose71, pH not reported; Day5 150mL, pH7.42, LDH607, glucose84, cultures no-growth; Figure2B Day2 vs Table1 Day3; Day4 improved, Day5 large loculated effusion, Day6 tPA/DNase, Day14 tube change, Day16 removal.",
+      "bts_guideline_text": "Read official BTS 2023 guideline public text and indexed primary PDF: pH ≤7.2 with safe window; >7.2 and <7.4 LDH >900 with clinical/US/CT context; ≥7.4 no immediate drainage by default; sample validity, reassessment, ≤14F, tPA+DNase.",
+      "bts_original_appendix_visual": "NOT_VERIFIED in this execution: official supplement/appendix PDF repeatedly timed out on retrieval. Search indexing reports diagram and footnotes but is not a visual original inspection. Prior writer's actual p37 inspection remains prior evidence, not newly performed by this reviewer.",
+      "pocket_9e": "INHERITED_PRIOR_VERIFIED p94–96; private copyrighted pixels not re-opened and never embedded.",
+      "official_exam_qsm": "INHERITED_PRIOR_VERIFIED 112-1 Q45 B, 114-1 Q48 B, 115-2 Q49 A and corrections; not re-opened in this execution.",
+      "rights": "Original teaching SVG in article; Cureus original Figure2/Table1 linked, not copied; BTS and Pocket source pages not embedded; independent rights/figure gate still pending."
+    },
+    "prior_findings_resolution": [
+      {
+        "unit": 2,
+        "old": "P1 omitted antibiotic sequence",
+        "current": "KEEP; verified source order and pre-tap piperacillin/tazobactam"
+      },
+      {
+        "unit": 15,
+        "old": "P2 invented albumin pair ambiguous",
+        "current": "KEEP; explicitly synthetic independent arithmetic example"
+      },
+      {
+        "unit": 16,
+        "old": "P1 no-growth interpreted without exposure",
+        "current": "KEEP; antibiotic timing and culture sensitivity limitations now explicit"
+      },
+      {
+        "unit": 22,
+        "old": "P1 Day5 normal pH/no-growth sterility inference",
+        "current": "KEEP; Day5 new sample, no empyema proof, and BTS reassessment are separated"
+      }
+    ],
+    "paragraphs": {
+      "5c1497b15f55ffdfcd-1": {
+        "line": 3,
+        "role": "problem framing",
+        "reader_gain": "Separates clinical recovery, Light classification and drain need.",
+        "nonredundancy_reason": "Defines the three competing questions before technical thresholds.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "2826611811eae9dc5a-1": {
+        "line": 7,
+        "role": "case provenance",
+        "reader_gain": "Anchors the 56M, cefdinir→ceftriaxone/doxycycline→piperacillin/tazobactam pre-tap sequence.",
+        "nonredundancy_reason": "Antibiotic timing is required to interpret both negative cultures.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Cureus original PDF pp1–4; antibiotics and sample timing independently checked"
+      },
+      "9879aec842999f43f9-1": {
+        "line": 9,
+        "role": "causal distinction",
+        "reader_gain": "Explains why symptom relief and pleural-space progression can coexist.",
+        "nonredundancy_reason": "Prevents a symptom-only dismissal or loculation-only empyema label.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "ca9e37a902a4a203b5-1": {
+        "line": 11,
+        "role": "mechanism",
+        "reader_gain": "Connects hydrostatic, oncotic, permeability and lymphatic balance to sampling utility.",
+        "nonredundancy_reason": "Supplies the physiological premise before Light criteria.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "f6ce2f878e9ba54069-1": {
+        "line": 13,
+        "role": "decision boundary",
+        "reader_gain": "Contrasts typical bilateral heart-failure effusion with unilateral atypical/infectious presentation.",
+        "nonredundancy_reason": "Shows when sampling has information value without inventing case comorbidity.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "45748f64c1bb466d49-1": {
+        "line": 15,
+        "role": "figure introduction",
+        "reader_gain": "States the two observational tracks and prohibits causal attribution.",
+        "nonredundancy_reason": "Makes the original SVG's arrows interpretable.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "f5b5766ba0ad8bb6b9-1": {
+        "line": 42,
+        "role": "procedural anatomy",
+        "reader_gain": "Explains live ultrasound window, depth, adjacent organs and safe needle placement.",
+        "nonredundancy_reason": "Distinguishes actionable procedural geography from static radiographs.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "d8511c6e5236fc1479-1": {
+        "line": 44,
+        "role": "counter-inference",
+        "reader_gain": "Loculation does not prove microbial infection and no safe window forbids blind tap.",
+        "nonredundancy_reason": "Provides safety counterexamples missing from the ultrasound introduction.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "1153a892dbd49d4aca-1": {
+        "line": 46,
+        "role": "procedure taxonomy",
+        "reader_gain": "Separates diagnostic aspiration, symptomatic removal and continuous source-control drainage.",
+        "nonredundancy_reason": "Prevents substituting three interventions and adds volume/stop safety.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "06de455e6b6851b489-1": {
+        "line": 50,
+        "role": "classification purpose",
+        "reader_gain": "Places Light criteria after deciding whether sampling is warranted.",
+        "nonredundancy_reason": "Prevents using an exudate label as a treatment order.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "49a188f0d1bba01f4a-1": {
+        "line": 52,
+        "role": "threshold definition",
+        "reader_gain": "States all three independent Light rules and any-one-positive logic.",
+        "nonredundancy_reason": "Needed for later numerical ratio calculation.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "bc3973b498cdf745cd-1": {
+        "line": 60,
+        "role": "source timing",
+        "reader_gain": "Separates Day3 and Day5 samples before arithmetic.",
+        "nonredundancy_reason": "Protects against transferring a later pH to an earlier tap.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "ab786733143c5b3bc8-1": {
+        "line": 77,
+        "role": "calculation",
+        "reader_gain": "Computes 3.8/5.6 and 1254/169 while distinguishing 7.42 LDH ratio from pH.",
+        "nonredundancy_reason": "Directly catches a plausible high-risk unit/identity confusion.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "262315b6a2487a89a2-1": {
+        "line": 79,
+        "role": "pseudoexudate counterfactual",
+        "reader_gain": "Explains diuretic concentration effect and heart-failure prior probability.",
+        "nonredundancy_reason": "Shows why Light positivity can misclassify systemic effusions.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "d894821da38b22664b-1": {
+        "line": 81,
+        "role": "explicit synthetic arithmetic",
+        "reader_gain": "Labels albumin 3.6/2.1 as invented arithmetic, not this published patient's lab.",
+        "nonredundancy_reason": "Repairs previous source-provenance P2 and bounds gradient inference.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "8bf2c89c0e9b0ceb1e-1": {
+        "line": 85,
+        "role": "culture chronology",
+        "reader_gain": "Explains antibiotic exposure before sampling and why no-growth cannot prove sterility.",
+        "nonredundancy_reason": "Repairs prior P1 at the exact evidence-to-decision transition.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Cureus original PDF pp1–4; antibiotics and sample timing independently checked"
+      },
+      "bbcd72a4549d2fd31c-1": {
+        "line": 88,
+        "role": "test selection",
+        "reader_gain": "Relates pH, microbiology, cells and special tests to discriminating clinical hypotheses.",
+        "nonredundancy_reason": "Avoids a universal indiscriminate lab order set.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "592aced19416e9c9ed-1": {
+        "line": 90,
+        "role": "test specificity",
+        "reader_gain": "Differentiates neutrophils, lymphocytes, cytology, chyle and blood definitions.",
+        "nonredundancy_reason": "Prevents morphology or wrong analyte becoming a diagnosis.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "47940484f9aee64be3-1": {
+        "line": 92,
+        "role": "sample validity",
+        "reader_gain": "Distinguishes pleural from arterial pH and effects of heparin, local anesthetic and delay.",
+        "nonredundancy_reason": "Adds preanalytic validity before pH-based decisions.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "b4755f1f6a2962e115-1": {
+        "line": 96,
+        "role": "infection continuum",
+        "reader_gain": "Distinguishes uncomplicated reactive PPE from CPPE/empyema without mandatory stages.",
+        "nonredundancy_reason": "Explains why source control is not a direct consequence of all PPE.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "da5588cdd9647e34b7-1": {
+        "line": 98,
+        "role": "frank pus branch",
+        "reader_gain": "Establishes visible pus as distinct from the nonpurulent BTS biochemical pathway.",
+        "nonredundancy_reason": "Avoids waiting for irrelevant Light/pH in obvious empyema.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "c33d5008a951222a43-1": {
+        "line": 107,
+        "role": "guideline caveats",
+        "reader_gain": "Explains safe ultrasound window, ≥900 vs >900 wording and reassessment footnotes.",
+        "nonredundancy_reason": "Necessary to prevent falsely absolute 900 and pH>7.4 interpretations.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "BTS guideline text independently checked; original appendix figure visual NOT_VERIFIED"
+      },
+      "553683bc2459484f13-1": {
+        "line": 109,
+        "role": "case decision chronology",
+        "reader_gain": "Separates Day4 clinical improvement from Day5 loculated CT, new pH 7.42 and tube.",
+        "nonredundancy_reason": "Keeps authors' intervention and no-empyema interpretation as observations.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Cureus original PDF pp1–4; antibiotics and sample timing independently checked"
+      },
+      "37a57313e36a62250e-1": {
+        "line": 111,
+        "role": "causal restraint",
+        "reader_gain": "States normal Day5 pH neither mandates nor forbids every drainage decision.",
+        "nonredundancy_reason": "Blocks case-report outcome being promoted into a universal rule.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "0b76287b3f2e8bd352-1": {
+        "line": 113,
+        "role": "independent counterfactual",
+        "reader_gain": "Tests intermediate-risk pH7.29 and low-risk pH7.45 with ultrasound and trajectory.",
+        "nonredundancy_reason": "Transfers guideline reasoning without inventing the source patient's data.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "554b59390e56806bd3-1": {
+        "line": 117,
+        "role": "post-drain assessment",
+        "reader_gain": "Explains persistent septated compartments and tube position despite output.",
+        "nonredundancy_reason": "Shows why drainage does not itself prove source control.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "7df5ce83a1a86b1006-1": {
+        "line": 119,
+        "role": "rescue evidence",
+        "reader_gain": "Separates small-bore initial drainage, combined tPA/DNase and surgical escalation.",
+        "nonredundancy_reason": "Avoids making rescue options a mandatory sequence or order-ready regimen.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "BTS guideline text independently checked; original appendix figure visual NOT_VERIFIED"
+      },
+      "33394a274a484b3f0a-1": {
+        "line": 121,
+        "role": "case follow-up",
+        "reader_gain": "Tracks Day6 fibrinolysis, Day14 larger tube and Day16 removal without causal overclaim.",
+        "nonredundancy_reason": "Protects temporal association versus treatment efficacy.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "37065417ed573f97c0-1": {
+        "line": 123,
+        "role": "failure counterfactual",
+        "reader_gain": "Tests improving fever with worsening imaging and shrinking effusion with shock.",
+        "nonredundancy_reason": "Teaches reassessment and competing causes after treatment.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "1aa712929d8528be29-1": {
+        "line": 127,
+        "role": "alternative pathways",
+        "reader_gain": "Contrasts malignant, hepatic, thromboembolic and hemorrhagic effusion priorities.",
+        "nonredundancy_reason": "Prevents Light classification from swallowing distinct clinical emergencies.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "b1df4abad602ce1b2b-1": {
+        "line": 129,
+        "role": "three-layer synthesis",
+        "reader_gain": "Unifies sampling/classification, infection drainage and physiological urgency.",
+        "nonredundancy_reason": "Provides a compact decision schema derived from preceding evidence.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "2ee8fea69c1f90adc1-1": {
+        "line": 133,
+        "role": "exam navigation",
+        "reader_gain": "Explains the three official questions as probes of distinct reasoning layers.",
+        "nonredundancy_reason": "Connects exam practice to article concepts rather than tag-only links.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "191c6bc22b3cd5b2ae-1": {
+        "line": 137,
+        "role": "official Q45 stem",
+        "reader_gain": "Preserves test's pH/glucose/LDH/WBC alternatives.",
+        "nonredundancy_reason": "Required to evaluate why glucose 38 is the strongest provided clue.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "19ffbacc896f3d2606-1": {
+        "line": 141,
+        "role": "official Q45 reasoning",
+        "reader_gain": "Interprets B while separating guideline thresholds and nonspecific WBC.",
+        "nonredundancy_reason": "Prevents a historical MCQ answer being treated as a stand-alone drain order.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "a549fa18ac4d4ab961-1": {
+        "line": 145,
+        "role": "official Q48 prompt",
+        "reader_gain": "Sets malignant/TB/chylous/hemothorax analyte contrasts.",
+        "nonredundancy_reason": "Introduces the next distinct measurement-identity test.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "c7e6114a18506eef47-1": {
+        "line": 147,
+        "role": "official Q48 reasoning",
+        "reader_gain": "Explains B and why cholesterol or absolute hemoglobin swaps fail.",
+        "nonredundancy_reason": "Prevents uncritical disease labels from substituting analytes.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "209b4567d322eda990-1": {
+        "line": 151,
+        "role": "official Q49 prompt",
+        "reader_gain": "Frames amylase, subphrenic infection, drug reaction and CABG contexts.",
+        "nonredundancy_reason": "Tests anatomical cause and timeline beyond exudate classification.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "aa53c6a7781bde734f-1": {
+        "line": 153,
+        "role": "official Q49 reasoning",
+        "reader_gain": "Rejects biliary inflammation as typical amylase cause, qualifies other etiologies.",
+        "nonredundancy_reason": "Protects against treating a single biomarker as universal localization.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "c75ea0acbb9cca3718-1": {
+        "line": 157,
+        "role": "synthetic transfer T1",
+        "reader_gain": "Explicitly authored heart-failure gradient 3.7/2.2 and four options.",
+        "nonredundancy_reason": "Tests whether readers can transfer pseudoexudate reasoning.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "744fe8be3a5920f296-1": {
+        "line": 159,
+        "role": "T1 adjudication",
+        "reader_gain": "Explains B and rejects immediate infection, malignancy and no follow-up.",
+        "nonredundancy_reason": "Separates conditional inference from categorical claims.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "5a22bb1d0b71779f4f-1": {
+        "line": 163,
+        "role": "synthetic transfer T2",
+        "reader_gain": "Explicitly authored pH7.29, LDH1200, glucose45 with fever and septation.",
+        "nonredundancy_reason": "Tests intermediate BTS branch without contaminating the 56M record.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "bae7dc461f5d4db438-1": {
+        "line": 165,
+        "role": "T2 adjudication",
+        "reader_gain": "Explains C with safe ultrasound window and clinical context.",
+        "nonredundancy_reason": "Avoids automatic chest-tube orders from one number.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "0cf0a373ebb0dc78b2-1": {
+        "line": 169,
+        "role": "final synthesis",
+        "reader_gain": "Restates three noninterchangeable decision boundaries and post-intervention recheck.",
+        "nonredundancy_reason": "Consolidates the case, mechanism and source-control reasoning.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "90cb92013c24678c77-1": {
+        "line": 171,
+        "role": "reading navigation",
+        "reader_gain": "Maps two reading sessions and delayed practice without claiming observed learning.",
+        "nonredundancy_reason": "Offers usable navigation without fictitious performance data.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "0bb15afae048b339df-1": {
+        "line": 177,
+        "role": "primary source",
+        "reader_gain": "Identifies original Cureus DOI, Figure2/Table1 and unresolved Day2/Day3 discrepancy.",
+        "nonredundancy_reason": "Makes patient observations and source uncertainty auditable.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "8a47a3724bff52c910-1": {
+        "line": 178,
+        "role": "guideline source",
+        "reader_gain": "Identifies BTS 2023 appendix p37, footnotes and threshold wording conflict.",
+        "nonredundancy_reason": "Needed to check clinical rule provenance separately from case report.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "620d987ac150e62586-1": {
+        "line": 179,
+        "role": "procedure source",
+        "reader_gain": "Cites BTS procedure statement for ultrasound and aspiration safeguards.",
+        "nonredundancy_reason": "Separates procedural guidance from infection-drainage guideline.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "f48ec79687f8cc3891-1": {
+        "line": 180,
+        "role": "private textbook provenance",
+        "reader_gain": "Identifies Pocket 9E pages 94–96 without copying protected table pixels.",
+        "nonredundancy_reason": "Preserves background source identity and rights boundary.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "b51d9a0d32adafb193-1": {
+        "line": 181,
+        "role": "pseudoexudate literature",
+        "reader_gain": "Provides specific PMID for albumin-gradient interpretation.",
+        "nonredundancy_reason": "Avoids leaving an alternative discriminator uncited.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "3be39ceaf8378e49b6-1": {
+        "line": 182,
+        "role": "official exam provenance",
+        "reader_gain": "Preserves three Q/S/M identities, final B/B/A and correction scope.",
+        "nonredundancy_reason": "Prevents wrong-year/answer mapping; prior original-image check inherited only.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      },
+      "9bb7261c3c15f1fc7e-1": {
+        "line": 184,
+        "role": "educational safety",
+        "reader_gain": "Explicitly disclaims patient-specific clinical/procedure authority.",
+        "nonredundancy_reason": "Protects education-only scope at the point of reader exit.",
+        "verdict": "KEEP",
+        "severity": "none",
+        "source_boundary": "Text and cited source identity checked; see source_checks for original-figure limitations"
+      }
+    },
+    "release_gate": "HOLD: original BTS appendix figure p37 independent visual/source-footnote gate NOT_VERIFIED; not an independent_ai_pass receipt. Private archive path is not in public site/pages.json; no auto-merge/deploy authorization.",
+    "independent_human_review": "NOT_PERFORMED",
+    "reader_learning_effect": "NOT_MEASURED",
+    "next_action": "Another legal source-reading execution obtains and visually checks official BTS 2023 original p37 decision tree and both footnotes, compares to current exact article and rights, then reviewer may update source gate on same blob if unchanged. Check exact-head CI/real 360/375/390/1280 private screenshots and require separate release authorization."
+  },
+  "source_figure_review_round_3": {
+    "reviewer_role": "DISTINCT_READ_ONLY_AI_SOURCE_FIGURE_REVIEWER",
+    "reviewer_provenance": "2026-10-28 new Clinical OS automation execution; did not author or edit candidate article, original figure, or source page; independent from writer and from text-review round 2; not a clinician or pharmacist.",
+    "observed_at": "2026-10-28T03:15Z",
+    "frozen_article_blob": "140b4d37431301218f70162a44e54d768590475e",
+    "frozen_packet_blob": "9b254345a019e1eb2031dc3a302e31874289b219",
+    "prior_text_review": "review_round_2: 51/51 KEEP on identical article blob; separate prior execution, not redone or falsely attributed to this source-only review",
+    "original_primary_source": "British Thoracic Society Guideline for Pleural Disease 2023, official Appendix 1 clinical pathways/decision trees, PDF 7 pages, printed p5 / PDF zero-index p4",
+    "original_url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/bts-guideline-for-pleural-disease-appendix-1-clinical-pathwaysdecision-trees/",
+    "direct_visual_reference": "Web original PDF rendered page 4 (zero indexed), screenshot reference turn1view0, directly inspected in this execution; original textual lines turn0view0 L210-L262",
+    "checks": [
+      {
+        "item": "non-purulent suspected pleural infection only; initial immediate pH",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "pH <=7.20 high-risk branch -> insert ICD only with ultrasound-accessible safe fluid volume (*)",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "pH 7.21–7.39 intermediate; check pleural LDH",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "diagram LDH <900 versus >=900; adjacent printed table recommends considering ICD if LDH >900",
+        "verdict": "MATCH_WITH_ORIGINAL_INTERNAL_DISCREPANCY_PRESERVED"
+      },
+      {
+        "item": "intermediate-risk modifiers large volume, glucose <=4.0 mmol/L/72 mg/dL, pleural contrast enhancement on CT, septations on ultrasound",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "pH >=7.40 very-low-risk/no immediate ICD default; dagger footnote states pH >7.4 plus septations also consider drainage",
+        "verdict": "MATCH_EXCEPTION_RETAINED"
+      },
+      {
+        "item": "dagger reassessment on persistent temperature/inflammatory markers, repeat aspiration if not improving",
+        "verdict": "MATCH"
+      }
+    ],
+    "article_correspondence": "Section 05 decision table and immediately following paragraph accurately preserve both pH decision branches, star/dagger footnotes, exact 900 threshold discrepancy and non-automatic drainage; no new P1 in this checked source-figure scope.",
+    "rights": "Official BTS pixels not copied into candidate article or public repository; article is an original text table and links to original. This is a source fidelity check, not legal opinion or image-reproduction authorization.",
+    "outcome": "SOURCE_FIGURE_VERIFIED; prior 51-unit textual review remains applicable ONLY to frozen article/packet; no new text revision requested. Final public semantic registry not applicable to unlisted archive draft. Publication remains AUTHORIZATION_REQUIRED and all release gates remain distinct.",
+    "unresolved": "No publication/manifest/main/Cloudflare authority; live public QA not applicable to private archive. Pocket Medicine and official exam original checks are inherited from prior source evidence, not independently re-opened this execution. Reader learning effect NOT_MEASURED.",
+    "paid_tinyfish": "NOT_USED"
+  }
+}

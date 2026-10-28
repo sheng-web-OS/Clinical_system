@@ -78,6 +78,22 @@ jobs:
           echo "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591  $FONT" | sha256sum --check
           fc-cache -f "$HOME/.local/share/fonts"
           fc-match -f '%{family}\\n' 'Noto Sans TC' | grep -F 'Noto Sans TC'
+      - name: Render Lab Morning unpublished reader on 360/375/390px and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md; then
+            if ! git diff --quiet origin/main...HEAD -- tools/qa_lab_morning_draft.py content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md site/styles.css site/build.py; then
+              python tools/qa_lab_morning_draft.py --output visual-qa-artifacts/lab-morning-draft
+            fi
+          fi
+      - name: Verify private pleural source-first reader on phones and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f tools/qa_pleural_effusion_draft.py && test -f archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md; then
+            if ! git diff --quiet origin/main...HEAD -- tools/qa_pleural_effusion_draft.py archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md site/styles.css site/build.py; then
+              python tools/qa_pleural_effusion_draft.py --output visual-qa-artifacts/pleural-draft
+            fi
+          fi
       - name: Verify unpublished Lab 02 and Lab 03 reader at 360/375/390/1280px
         if: github.event_name == 'pull_request'
         run: |
@@ -113,12 +129,41 @@ jobs:
           if ! git diff --quiet origin/main...HEAD -- content/clinical-os/acs.md site/pages.json site/styles.css site/build.py tools/qa_acs_mobile.py; then
             python tools/qa_acs_mobile.py --widths 360 375 390 1280 --output visual-qa-artifacts/acs
           fi
+      - name: Verify U01 first-dose registered reader on phones and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet origin/main...HEAD -- site/pages.json content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md content/xiaoma-internal-medicine/urosepsis-esbl-first-dose-sources.md tools/qa_u01_mobile.py site/styles.css site/build.py; then
+            python tools/qa_u01_mobile.py --widths 360 375 390 1280 --output visual-qa-artifacts/u01
+          fi
       - name: Audit full legacy visual debt when shared rendering changes
         if: github.event_name == 'pull_request'
         continue-on-error: true
         run: |
           if ! git diff --quiet origin/main...HEAD -- site/styles.css site/build.py tools/visual_qa_browser.py; then
             python tools/visual_qa_browser.py --all --widths 360 390 1280 --output visual-qa-artifacts/legacy
+          fi
+      - name: Preflight proposed pleural publication in a disposable private worktree
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          pleural_patch="$GITHUB_WORKSPACE/audit/2026-10-28-pleural-release-candidate.patch"
+          if test -f "$pleural_patch" && ! test -f content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md; then
+            pleural_preview=$(mktemp -d)
+            git worktree add --detach "$pleural_preview" HEAD
+            trap 'git worktree remove --force "$pleural_preview"' EXIT
+            git -C "$pleural_preview" apply --check "$pleural_patch"
+            git -C "$pleural_preview" apply "$pleural_patch"
+            if test -d .figure-cache; then cp -a .figure-cache "$pleural_preview/.figure-cache"; fi
+            mkdir -p "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
+            (cd "$pleural_preview" && bash tools/build_site.sh) | tee "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight/build.log"
+            python "$pleural_preview/tools/qa_pleural_release_preview.py" --site "$pleural_preview/dist" --output "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
+          fi
+      - name: Verify integrated pleural release on phone and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md; then
+            bash tools/build_site.sh
+            python tools/qa_pleural_release_preview.py --site dist --output visual-qa-artifacts/pleural-release-integrated
           fi
       - name: Retain browser visual QA screenshots and reports
         if: always()

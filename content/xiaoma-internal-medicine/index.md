@@ -10,6 +10,10 @@
 
 [查看完整歷屆國考目錄 →](exams/index.md)
 
+## 胸膜腔的兩種問題：空氣與液體如何改變呼吸？
+
+遇到胸痛與呼吸困難，不能只從「有沒有低血氧」開始；先辨認胸膜腔是否多了原本不應存在的空氣或液體，是否已影響肺的展開與循環。**[氣胸：從胸膜腔壓力、危急分流到復發預防](lessons/2026-10-28-pneumothorax-mechanism-decisions.md)**先區分張力性急症、穩定 PSP、需要介入及反覆發作的病因追查；接著閱讀**[胸水：何時抽、要回答什麼問題？](lessons/2026-10-28-pleural-effusion-decision.md)**，比較一種病是空氣破壞跨肺壓，另一種病則需要從液體如何形成與檢驗如何改判追查原因。兩篇都不能把「影像上看見異常」當成完成診斷。
+
 ## 深入三問｜Respiratory Failure
 
 [為什麼 A–a gradient 增大，還不能診斷 shunt？](lessons/2026-10-25-hypoxemia-mechanisms.md)　→　[為什麼 RR 40/min，PaCO₂ 還是上升？](lessons/2026-10-25-hypercapnia-physiology.md)

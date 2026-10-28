@@ -1,5 +1,5 @@
 """Regressions for the overflowing daily list and articles lost from discovery."""
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date, timedelta
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -77,7 +77,9 @@ class DailyReadingIndex(unittest.TestCase):
         self.assertFalse(is_current_lesson(exam_collection))
 
     def test_no_updates_does_not_fall_back_to_yesterdays_articles(self):
-        markup = render_today_updates(self.pages, "2026-10-28")
+        latest = max(date.fromisoformat(p.get("updated", p["date"])) for p in self.pages if p.get("date"))
+        empty_day = (latest + timedelta(days=1)).isoformat()
+        markup = render_today_updates(self.pages, empty_day)
         self.assertNotIn('class="lesson-card"', markup)
         self.assertIn('<p data-today-empty>今日尚無文章更新。</p>', markup)
         self.assertIn("knowledge-atlas.html#article-index", markup)

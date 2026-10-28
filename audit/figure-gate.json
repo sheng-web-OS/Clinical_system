@@ -652,13 +652,13 @@
       "source_review": "content/xiaoma-internal-medicine/cticu-abg-cabg-sources.md",
       "items": [
         {
-          "locator": "Pocket Medicine Ninth Edition reader PDF pages 158–160, Figure 4-1 Acid–base nomogram and Compensation for Acid–Base Disorders table with mixed disorders and associated adapted-from footnote",
-          "source_token": "Acid–base nomogram",
+          "locator": "Wardhana and Kurniawaty 2025 original publisher PDF print page 278 Table 1, CABG patient 3 T1 ICU 4 h lactate 14.8 mmol/L and ScvO2 95%",
+          "source_token": "Wardhana",
           "mode": "illustrated",
           "anchor": "cticu-measurement-layers",
-          "caption_token": "Figure 4-1",
-          "teaching_role": "對照原書原先混合障礙的血氣量測架構，增加不在原書 nomogram 的 Hb/CO 及靜脈萃取面向，防止以乳酸或正常 PaO2 作整體灌流宣告。",
-          "scope_limit": "本站圖一是原創四軸對照，並非原書 Figure 4-1 的重畫或原書代償分區的完整再現，不能藉圖診斷個別病例的酸鹼病因。"
+          "caption_token": "Wardhana",
+          "teaching_role": "使用真實 CABG 病人 3（T1）的乳酸 14.8 與 ScvO2 95% 互不排斥的平行觀測；視覺標示每項實測、不能推出的結論，以及缺少 Hb/SaO2/PaO2/CO 才能從 CaO2 推到 DO2 的中介，最後回到先排查出血、壓迫和心功能的床邊問題。",
+          "scope_limit": "T1 缺同步完整血氣、Hb、CO，圖不能替病例補算個人 CaO2、DO2、VO2，也不能從高 ScvO2 排除局部缺血或高 lactate 直接決定輸液。Pocket Figure 4-1 的原圖定位保留在來源頁，這張原創圖不是 nomogram 重製。"
         },
         {
           "locator": "Wardhana and Kurniawaty 2025 original publisher PDF print page 278 Table 1 and p279 Figure 1, CABG patient three lactate, base excess and ScvO2 T0 through T5",
@@ -1000,6 +1000,177 @@
           "scope_limit": "不能據此推論重症病人必須不顧風險立即作侵入性造影，也不能用敗血症加單一 troponin 數字推定已確認 secondary MI。",
           "pixel_verified": false,
           "verification_scope": "Published figure identity, caption and source URL were located; no reviewer in this gate has documented a pixel-level inspection of arrows, branches, labels or footnotes. The article links to the publisher and does not reproduce figure pixels."
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md",
+      "items": [
+        {
+          "locator": "UK Kidney Association July 2026 original Figure 4, five steps in treatment of hyperkalaemia, printed p.75 PDF page 75",
+          "source_token": "Figure 4",
+          "mode": "source_link",
+          "url": "https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75",
+          "why_link_instead": "五階段原圖有治療時間順序與後續排除復發要求，使用可直接定位官方原版的連結而不翻拍。",
+          "teaching_role": "呈現有危險心電變化者如何從心肌保護、鉀轉移到真正移除及監測，並阻止以K短期下降當療程終點。",
+          "scope_limit": "Figure 4 是處置框架而非所有中度K6.4/正常ECG患者必需IV calcium的統一處方。"
+        },
+        {
+          "locator": "UK Kidney Association July 2026 Table 22, insulin-glucose protocol, printed p.98 PDF page 98",
+          "source_token": "Table 22",
+          "mode": "source_link",
+          "url": "https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98",
+          "why_link_instead": "原表血糖基線、後續補糖、血鉀回測與液體負擔的註腳不可從作者摘要推測，改連官方完整表。",
+          "teaching_role": "顯示補糖輸液體積與低血糖、反彈高鉀的取捨，避免只記insulin令K入細胞而遺漏後續危險。",
+          "scope_limit": "原表是UKKA條件式方案，台灣各院formulary、濃度與患者個別劑量須依當地流程核對。"
+        },
+        {
+          "locator": "Original self-designed visualization: 2024 AML case report Table 1 sample A-D time/method/transport and post-treatment confounding; 2025 ED n=2440 split, plus separate low-risk n=66 study",
+          "source_token": "PMC11462689",
+          "mode": "illustrated",
+          "anchor": "lab-three-clocks",
+          "caption_token": "Cao，2024",
+          "teaching_role": "以 AML A-D 12:00,20:03,20:48,23:37 K3.0/6.7/7.8/3.6 的運送/分析/治療交叉時間軸呈現不同條件無法直接做因果比較；另外把2025所篩當日重抽 n=2440 →1576/864→597/267 明畫不同分母，讓讀者不誤稱35%為所有急診假高鉀盛行率，n66低風險研究不混入此分母。",
+          "scope_limit": "兩組自製視覺均為原始已出版資料的研究導讀，不重製原期刊 Figure2 或 Table1 版面；AML 的 post-treatment K3.6 不能當未治療對照，n2440 是 selection sample、n66 是另一項排除高風險研究；皆非 validated clinical decision rule。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/urosepsis-esbl-first-dose-sources.md",
+      "items": [
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 1, Figure 1.1, original 1-page PDF four-step empiric-therapy flowchart",
+          "source_token": "Figure 1.1",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf",
+          "teaching_role": "原流程先分 shock/sepsis/no-sepsis，再考量歷史抗藥性、患者限制與適用的當院 antibiogram。這張圖讓讀者理解舊 ESBL 不會取代重症程度與病人限制。",
+          "scope_limit": "圖中 90/80% 為有相似族群在地資料時的模型性參考閾值，不能當作本病例的當院實際敏感率或已完成 Sepsis-3 shock 診斷。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        },
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 1, Table 1.1, original 1-page PDF empirical antimicrobial candidate classes and footnotes",
+          "source_token": "Table 1.1",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf",
+          "teaching_role": "此表的 septic/no-sepsis、IV/PO 候選分類必須再以四步法與 prior ESBL 具體收斂，避免把 ceftriaxone 或 pip-tazo 一律當上泌尿道感染固定第一劑。",
+          "scope_limit": "表列候選不是單一病人的處方，也不確定當次 susceptibility、Pseudomonas 風險或實際體重及急性腎清除率。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        },
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 2, Figure 1.2, original 1-page PDF IV-to-oral clinical-response flowchart and caption",
+          "source_token": "Figure 1.2",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf",
+          "teaching_role": "原圖將 clinically improving 與 not clinically improving 分開，提醒先確認臨床好轉和未處理感染源，再由當次 AST、吸收與濃度決定口服轉換。",
+          "scope_limit": "流程中的好轉不是所有高風險病人都立刻可停 IV，仍有阻塞、灌流不穩、菌血症用藥暴露和腎功能限制。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        },
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 3, Figure 1.3, original 1-page PDF duration and IV-to-oral clinical response flowchart with abbreviation note",
+          "source_token": "Figure 1.3",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf",
+          "teaching_role": "原圖示臨床改善才評估口服和七天總療程；未改善先確認病原與用藥不合、未解除的 source 和是否診斷錯誤，從病例 T48 連到 T72。",
+          "scope_limit": "七天是適當有反應群的總體指引路徑而非所有感染阻塞、腎功能受損、休克、膿瘍與急性攝護腺炎病人的必然處方。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pleural-effusion-decision-sources.md",
+      "items": [
+        {
+          "locator": "Cureus2024 original Figure2 serial chest radiographs p3 and Table1 pleural fluid observations p4; exact56M and separateDay3/Day5 samples",
+          "source_token": "Cureus 2024 Table 1",
+          "mode": "illustrated",
+          "anchor": "pleural-case-evidence",
+          "caption_token": "Cureus 2024",
+          "teaching_role": "以兩條證據軌分開症狀改善與胸膜空間未解，並將Day3未知pH和Day5新樣本並排，避免把LDH比值、後期pH或時間關聯誤當單一治療證明。",
+          "scope_limit": "圖為原創比較示意而非原刊影像；case report沒有未介入對照，不能由後來改善證明胸管或tPA/DNase的單獨因果效果。"
+        },
+        {
+          "locator": "BTS2023 official full supplement printedp37 original nonpurulent pleural infection decision tree and adjacent table; Appendix1 PDFp5",
+          "source_token": "BTS 2023 Appendix 1",
+          "mode": "source_link",
+          "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
+          "teaching_role": "原始pH三支分流必須與安全超音波窗口及高pH分隔註腳一起讀，才能解釋正常pH、分隔與仍需重評的關係，不把Light分類直接等同胸管適應症。",
+          "scope_limit": "圖中LDH≥900而文字>900的差異不可抹平；原圖先行條件是非膿性疑似感染，不能代替膿液或無安全窗口等不同情境。",
+          "why_link_instead": "獨立來源審查已實際核讀官方原圖與兩項註腳；提供BTS原始入口，正文以原創文字表解釋，避免未授權重製原始像素或讓讀者誤認為已重製Pocket書頁。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-pneumothorax-mechanism-decisions.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pneumothorax-sources.md",
+      "items": [
+        {
+          "locator": "BTS Guideline for Pleural Disease (Thorax 2023), Spontaneous pneumothorax / acute management recommendation and post-first recurrence section; ERS/EACTS/ESTS 2024, guideline Figure 1 and PICO 1–4",
+          "source_token": "BTS Pleural",
+          "teaching_role": "原創三層並行決策圖，將生理急迫性、當次處置適用條件與未來復發預防拆開，避免以單一胸片大小代替不同決策目標。",
+          "scope_limit": "本圖不是兩部原指南的逐項複刻，不能指定個別病人的減壓位置、裝置、手術術式或替代當地急診與胸外流程。",
+          "mode": "illustrated",
+          "anchor": "pneumothorax-decision-map",
+          "caption_token": "BTS 2023"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-metabolic-acidosis-etiology.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/metabolic-acidosis-sources.md",
+      "items": [
+        {
+          "locator": "Al Barbandi et al, Front Pediatr 2021, PDF p2 Figure 1 (I/O timeline), p4 Figure 2 A–D (MRU), and p3 Table 1 (paired fluids)",
+          "source_token": "Figure 1",
+          "teaching_role": "原創三問圖拆解血中酸化、腸道排出物身分與腎尿路解剖三個必須用不同證據回答的臨床問題，避免事後確診替代當時差異診斷。",
+          "scope_limit": "並非將原 Figure 1 的每日數據或 Figure 2 的 MRU 重新繪製；也不代表所示三種檢驗的診斷準確性或檢查先後有群體驗證。",
+          "mode": "illustrated",
+          "anchor": "metabolic-acidosis-three-questions",
+          "caption_token": "Frontiers in Pediatrics 2021"
+        },
+        {
+          "locator": "Al Barbandi et al, Front Pediatr 2021, PDF p5 Figure 3: intestine CFTR/SLC26 and chloride/bicarbonate transport schematic",
+          "source_token": "Figure 3",
+          "teaching_role": "原創三段概念橋，從尿液移位到小腸黏膜接觸和可能的氯離子/碳酸氫根交換，再對應血中 NAGMA 表型；讓讀者從因果機轉連到病例。",
+          "scope_limit": "本圖為重新組織的生理假說而非原文圖像描摹或單一患者直接測得的離子轉運流率，不可作為 CFTR/SLC26 通量證明。",
+          "mode": "illustrated",
+          "anchor": "uroenteric-ion-exchange",
+          "caption_token": "Frontiers 2021"
+        },
+        {
+          "locator": "Al Barbandi et al, Front Pediatr 2021, original PDF p3 Table 1: paired bowel and bladder fluid, acidosis and normo-acidemia",
+          "source_token": "Table 1｜",
+          "teaching_role": "直接對讀原始血液 AG 及腸/尿出口液體組成，核對含鉀與不含鉀的 AG 以及源頭不同對檢驗解釋的限制。",
+          "scope_limit": "原表單位疑點與檢體時點保留；單病例不能由這些數字推導不同診斷測試的 LR 或定量腸道離子輸運。",
+          "mode": "source_link",
+          "url": "https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2021.687396/full",
+          "why_link_instead": "直接連到出版社原始 Table 1 供讀者逐數核對，避免複製第三方完整原表、影像或不清楚的出版授權；內文僅用必要數值回答病例問題。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pe-pesi-aha-acc-2026-sources.md",
+      "items": [
+        {
+          "locator": "Creager et al 2026 AHA/ACC acute PE official clinical categories Figure 2, A/B/C1–C3/D1–D2/E1–E2 and respiratory modifier R, society original PDF",
+          "source_token": "Figure 2",
+          "mode": "source_link",
+          "url": "https://professional.heart.org/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Categories-Figure-Inforgraphic.pdf?sc_lang=en",
+          "teaching_role": "分類圖讓讀者同時看到臨床嚴重度、右心受損、灌流失代償與呼吸修飾符的不同軸，避免把 A–E 解讀成單純連續數值或所有人必經病程。",
+          "scope_limit": "臨床分類圖不能單獨確診 PE、指定溶栓或將一次 lactate >2 等同 D2；D2 transient hypotension 的正文／圖例差異需一併對讀。",
+          "why_link_instead": "已對讀學會官方原圖的分類、圖例與適用邊界，公開頁以文字重建核心分支並外連學會原圖，避免未授權重製出版社原像素。"
+        },
+        {
+          "locator": "Creager et al Circulation 2026;153:e1012 Table 7, original Summary of Advanced Therapy Recommendations, four modalities by AHA/ACC A–E categories",
+          "source_token": "Table 7（Circulation",
+          "mode": "source_link",
+          "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005",
+          "teaching_role": "原表讓讀者核對 C2 3:Harm、C3 2b、D 2b、E1／E2 不同再灌流術式的 COR/LOE，尤其 E2 N/A 與 No Benefit 的區分直接改變介入風險判斷。",
+          "scope_limit": "Table 7 反映發布時的證據與分類，不能將 N/A 解讀為絕對禁忌、將 Class 3 No Benefit 等同 Harm，亦不能將後續 2026 導管試驗倒填到原指引。",
+          "why_link_instead": "原始推薦表與細節註腳已逐欄比對；只使用來源頁的精確文字定位及官方網頁連結，讀者可開啟全文查核，公開站不複製原表像素。"
         }
       ]
     }
