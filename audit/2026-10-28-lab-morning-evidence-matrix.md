@@ -14,6 +14,19 @@
 | 高鉀療法原始附錄表 | UKKA 同 PDF 印刷 p.162（PDF p.161）Appendix 1 insulin-glucose literature comparison **已目視** | 不把各小型研究觀察降鉀幅度套作本合成病例藥效，且未完成 Appendices 其他頁全部目視。公開只提供官方來源連結。 |
 | BMP 檢驗錯誤 | Takieddine & El-Khoury, *AJKD* 2025;85(1):104–114; PMID 39396361; DOI 10.1053/j.ajkd.2024.06.019；[PubMed](https://pubmed.ncbi.nlm.nih.gov/39396361/)、[期刊摘要與搜索可讀正文](https://www.sciencedirect.com/science/article/pii/S0272638624009211) | 作者、期頁、abstract、preanalytical/analytical/postanalytical 對照確認；個別全文讀取端點曾回 403，**未完成所有原 Figure／Table 影像目視**。不能自填 Figure Gate「全部 represented」，亦不冒稱其病例提供本稿合成數據。 |
 
+## 2026-10-28 第二輪逐圖回看：UKKA 五步驟與 insulin-glucose 原表
+
+已實際目視以下原始 PDF 畫面，並與正文增補互證。這是作者側 source-verification，**非獨立 Figure Gate PASS**。
+
+- **UKKA July 2026 Figure 4，印刷 p.75（PDF 索引 74）**：[官方 PDF 原圖](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75)，實際畫面含一組由心肌保護→shift→remove→K/glucose monitor→prevent recurrence 的五階段階梯。原圖註明必須完成適用的後續環節；**不是**「所有 K6.4、ECG 正常者都要給鈣」的醫囑算法。本文新反事實依其意涵說明真性高鉀不可只靠 insulin 的暫時 shift。
+- **UKKA July 2026 Table 22，印刷 p.98（PDF 索引 97）**：[官方 PDF 原表](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98)，逐項載明 treatment-before glucose、insulin-glucose、條件式後續葡萄糖、鉀與血糖重測；原表下方額外提醒腎衰竭患者的補液體積限制、重複胰島素易低血糖。正文以判斷與監測邊界而非固定處方劑量呈現，避免跨國 protocol 套用。
+- **KDIGO AKI Table 2 印刷 p.19 / Figure 4 印刷 p.25**：本次 web 原 PDF 畫面已再次目視，分別為 AKI stage based on measured creatinine/urine and stage-based management priority shading；正文不重製圖，避免將 shading 誤解為所有病人都需相同補液。
+- **AJKD 2025**：PubMed 與 ScienceDirect 可讀文本/figure caption 確認書目、TTP Figure1 描述；其 PDF 原畫面在此回合下載端點 403，故不能宣告 Figure1/2 等原像素已目視。正文不使用該圖；保留公開期刊網址作合法原站來源。
+
+## Mobile prepublication engineering QA（非發布）
+
+在 CI [#40608142986](https://github.com/sheng-web-OS/Clinical_system/actions/runs/40608142986) 已執行獨立 `tools/qa_lab_morning_draft.py` 私人 browser：它以 **`site/build.py:Renderer` 和 `render_reader`** 渲染未進 manifest 的文章，讀入網站真實 CSS，測 360/375/390/1280px。四種寬度均沒有整頁水平溢出，table 在容器內捲動，病例三證據格呈現直排或並排。Screenshot/artifact 已取回並目視 mobile 375、desktop 1280：375 版元素局部 screenshot 顯示一處「跳到正文」固定連結疊圖疑似 Chromium element screenshot clipping artifact；比對同次 viewport screenshot 不含這個疊字。QA 程序後續修改為先拍 true top viewport、另拍 figure viewport，並修正不恰當的 `missingZhGlyph` 欄名；修訂後仍需再次查 CI。這不是已發布站的 360/375/390 畫面驗證，也未產生獨立教學理解通過票。
+
 ## 新發現的兩個教學缺口及已修改（未由獨立 reviewer 驗收）
 
 1. 原文指出 serum CO₂20 不等於 pH，但缺同一張表的量化連結；已補入同時點 07:15 Na133−(Cl100+serum CO₂20)=13 mmol/L，明示這是 **uncorrected AG 的條件式近似計算**，albumin 未知且不能由此排除 lactic acidosis／混合障礙。
@@ -21,7 +34,7 @@
 
 ## 硬性 HOLD：下一個真正要做的事
 
-- **同名衝突**：PR #181 含同名 pneumonia 版本。提案 #186 保留 Lab Medicine 01 唯一總論；#181 內容保留為獨立「另一種情境」候選、正式入口只能擇一。不得由 CI PASS 取代 owner coordination。
+- **同名衝突，現已在草稿階段修復**：PR #181 已由其編輯脈絡將 pneumonia/hypotension/oliguria 另案更名，維持 Draft/HOLD，#186 保留唯一 Lab Medicine 01 總論候選。發布前仍須核對兩邊 HEAD／原檔 title 與 main manifest，禁止競爭性 overview。
 - **獨立來源＋教學審核**：下一次不同執行脈絡應重新讀取最終 blob 全文、這份 audit 和相關原始 PDF 並以盲式／對抗式逐段重新提出具體修改，修完再生成 exact-blob EPQC paragraph packet。不得由原寫稿脈絡直接發 `independent_ai_pass`。
 - **Figure Gate**：原創病例三證據線已具資訊增量，但 AJKD 不完整原圖、Pocket 原圖相關性與權利仍需決定 source_link 或明確 HOLD。對合法來源與表圖的精確位置按 figure-gate 要求填寫，不可自評充數。
 - **工程**：每次 source/blob 更新後需重跑完整測試及 site build；正式 manifest、來源頁與知識地圖、reader-specific 360／375／390px、CI head SHA、main merge、Cloudflare production 各自留紀錄。
