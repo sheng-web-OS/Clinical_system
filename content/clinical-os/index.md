@@ -61,9 +61,9 @@
 
 心雜音有「解剖結構」與「當下血流條件」兩個來源。固定瓣膜狹窄、動態流出道阻塞、容量負荷及冠脈缺血也不在同一個分類層。**同樣因站立減少 preload，AS 和 HOCM 雜音的變化可能相反**；不能拿一個聽診名稱代替血流機轉。
 
-**跨科實戰：** [原有 29 題主篇](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md)接[20 題無重複增補](../xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md)。20 題的[官方原卷、更正答案](../xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-sources.md)可回溯；先建構聲音時序與血流方向，再理解新出題條件。
+**先建立概念，不以題庫替代教材。** 從[心音與結構病概念導論](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md)學習 S1／S2 時序、壓力與流量如何產生雜音、AS／AR／MS／MR、先天分流及動態 LVOTO。這是既有的概念起點；瓣膜／先天性心臟病的疾病全貌、影像證據與縱向臨床判斷仍需專題深度補強，不能因為題數多就宣稱教學完整。
 
-**心音與歷年國考整合：** 先讀[從 S1／S2 到結構性心臟病：18 道內科國考辨識與改判](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md)，建立時序、呼吸與姿勢、AS／AR／MS／MR、先天性分流、HCM、IE 與結構介入的共同解題模型；接著做[醫學（四）至（六）29 題四選項詳解](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md)，跨小兒科、心臟外科與麻醉科驗證題目答案、官方更正和介入判斷；再把不熟的機轉返回下方深度文章。原卷附圖題若尚未完成逐像素核對，須依考選部原圖確認，不能把選項推理冒充圖像判讀。
+**再用國考檢驗理解。** [111–115 年醫學（四）至（六）29 題逐選項題解](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md)和[另外 20 題不重複增補](../xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md)是**題庫解析**，用來找出概念缺口，不是獨立的系統性教材。可從[官方原卷及更正答案](../xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-sources.md)查核題目身分；附圖未完成原圖核對者不可視為已驗證判圖。遇到答不出的題，回到相應機轉與疾病文章建立因果關係，而非只記住 A／B／C／D。
 
 **建議順序：** [HCM：Nonobstructive 不等於沒有其他功能障礙](../xiaoma-reading/originals/2026-07-14-hcm.md) → [AS／AR：EF、flow 與 gradient](../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md) → [DCM：形態與前向血流不相同](../xiaoma-reading/integrated/2026-10-21-dcm.md)。
 
