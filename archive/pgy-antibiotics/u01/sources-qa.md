@@ -22,6 +22,8 @@
 | 重症/低白蛋白下 meropenem vs ertapenem；菌血症可 PO 之限定 | [IDSA AMR 2026 Q1.3](https://www.idsociety.org/practice-guideline/amr-guidance/) | 鑑別危重和 hypoalbuminemia；注意 source stability、吸收及足夠血中暴露；病人非已確診 ESBL 菌血症 |
 | 避免用 cefepime 單方處理 ESBL cUTI | [IDSA AMR 2026 Q1.5](https://www.idsociety.org/practice-guideline/amr-guidance/) | 即使 cefepime-S 仍不建議 ESBL cUTI；不得把 cefepime/enmetazobactam 與 cefepime 單方混為一談 |
 | 2026 指南完整藥物表 | [IDSA 2026 AMR Table 1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/amr-guidance/5.0/table-1.pdf) | **已逐頁目視首頁標題與 meropenem 所在頁**；原題頭限定「Assuming Normal Renal and Hepatic Function」，此案例 AKI on CKD + 體重/RRT/CrCl 不明，**禁止用該表直接指定 mg / interval / infusion**，亦不可聲稱已核當院藥典 |
+| **AKI 不能用兩週前 Cr 直接診斷** | [KDIGO 2012 AKI guideline §2.1](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)；[2026 KDIGO AKI/AKD public-review *draft*](https://kdigo.org/wp-content/uploads/2026/03/KDIGO-2026-AKI-AKD-Guideline-Public-Review-Draft-Mar-2026.pdf) | **原版正式標準**：Cr ≥0.3 mg/dL /48h，≥1.5× baseline 已知或推定發生在前 7 天，或 UO <0.5 mL/kg/h ≥6h；本合成病例 1.3→2.0 相隔 14 天、無 7 天/48h UO，不能直接稱確診 AKI／stage。2026 PDF 為 public review 草案，**不得冒充已發布正式新版 guideline**；疑似 AKI 仍需要即時臨床與腎劑量安全核查。 |
+| **MAP ≈68 與 septic shock 定義的不同層次** | [SSC 2026 recommendations 13–14](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026) | BP 92/56 的粗估 MAP 68 並非 <65；不能用 MAP>65 反推灌流正常，也不能用 BP+lactate 自動確認 Sepsis-3 shock；SSC 一般初始 MAP target 65，≥65 歲者有 conditional 60–65 建議，屬治療目標而非診斷測試。 |
 | Sepsis 時效、血培、緊急源控制、β-lactam infusion | [SSC 2026](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)，Blood culture、Antimicrobial initiation、Source control、Beta-lactam antibiotics | 高度懷疑 sepsis/possible shock 不能等文化；blood cultures before first dose **if no material delay**；initial bolus then prolonged infusion maintenance 為方向，非指定病患數值；診斷 source control 目標理想 6h，非可安全延後 6h |
 | Hydronephrosis + infection 之源控制 | [EAU Urolithiasis §3.4.2](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines) | 強建議對 **sepsis with obstructing stones** urgent decompression（stent 或 PCN）；本合成病例只有疑似 obstruction，不能說石頭已確診。仍需 urgent urology/影像判斷 |
 | 有反應的 cUTI：降階/口服/療程 | [IDSA cUTI 2025，IV→PO、Duration](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)，[原 Figure 1.2](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf)，[原 Figure 1.3](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf) | **兩張原圖均已逐頁目視**。流程最重要的根分支是 *clinically improving vs not*；不改善先查 drug-bug mismatch / unresolved source / diagnosis，再考慮 long course。圖中 7 days 是概念總體分支，不可抹去嚴重 CKD、結構異常、完全阻塞、sepsis 等試驗 exclusion；prostatitis 疑慮可需延長 |
@@ -46,6 +48,7 @@
 | 2026 pip-tazo / cefepime / ertapenem 辨識 | 主文競爭表、order、test | **AI source cross-check PASS** |
 | Infected obstruction → 緊急 urology source control | T0/T6 和 OSCE hard-fail | **AI text check PASS** |
 | AKI / penicillin allergy / dosage / infusion / restricted approval | 所有實際 mg、interval 均 NOT_VERIFIED | **ORDER-READY BLOCKED** |
+| 病理定義之時間窗（AKI／shock） | 兩週前 Cr 不夠證實 AKI；MAP 68 不能排除灌流不良；三個應補的時間序列已寫入主文/處方/測驗 | **AI source cross-check，仍待獨立臨床審查** |
 | 重要解剖與影像前提 | Hydronephrosis ≠ stone confirmed | **AI text check PASS** |
 | 與撰稿者分離的獨立醫學/藥師處方 QA | **未取得可證實之另一審查者簽核** | **HOLD** |
 | 四種敘事斷裂的獨立對抗性審查 | 可做多角度自查，但由同一編輯流程生成不足視作「獨立」 | **PENDING independent review** |
@@ -54,6 +57,13 @@
 | 讀者使用成效 | case-test rubric 存在但無真實作答 | **NOT_TESTED** |
 
 **裁決：本輪已實際深化主要正文與三個配套，但只可維持 Private Draft/HOLD。** 不可只因有多份文稿、AI 語意審查或 CI 綠燈，默默修改 `site/pages.json`、合併 main 或宣稱正式發布。內容可候選為公開**教育型**文章，但實際患者首劑 order-ready 屬另一層級，必須有本院 local antibiogram、藥品仿單、renal dosing/infusion/approval 與藥師正式核對。
+
+## 3A｜2026-10-28 對抗性新缺陷修復（不冒充獨立醫師簽核）
+
+- **P1**：舊主文將「Cr 1.3（兩週前）→2.0」寫為已確認 AKI，而 KDIGO 的核心是近期 48h/7d 或尿量持續性；已改為「疑似 AKI／腎功能惡化」並明示不可分期，保留對動態用藥的高風險提醒。
+- **P1**：BP 92/56 粗算 MAP ≈68，原稿沒指出「未低於 65 仍可能灌流不足」，容易使讀者把 MAP 治療目標誤認為診斷截點；已加入 2026 SSC ≥65 歲條件性 60–65 範圍之適用邊界。
+- 醫囑演練與 case-test 均同步校正，增訂 code regression guard；此為來源核對 + 原作者脈絡之反向校正，**不是另一位有資格的醫師/藥師實際同儕審查**。
+- 原 KDIGO 2012 指南為正式 guideline；2026 KDIGO AKI/AKD PDF 目前標題為「Public Review Draft」，**不可當已正式生效之最新版**。
 
 ## 4｜明確下一輪可執行的最小修復
 
