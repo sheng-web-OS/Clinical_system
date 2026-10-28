@@ -28,7 +28,7 @@ class LabInferenceConsistency(unittest.TestCase):
     def test_aki_creatinine_change_is_stated_and_correct(self):
         self.assertGreaterEqual(1.68 - 1.16, 0.3)
         self.assertIn("48 小時內增加至少 0.3 mg/dL", self.article)
-        self.assertIn("尿量資料", self.sources)
+        self.assertIn("尿量 240 mL/8h", self.sources)
 
     def test_same_timepoint_ag_is_calculated_not_inferred_as_normal(self):
         self.assertIn("133 − (100 + 20) = 13 mmol/L", self.article)
