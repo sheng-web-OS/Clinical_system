@@ -20,7 +20,7 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
 
     def test_real_case_sample_identity_and_treatment_confounding(self):
         for cue in ("AML", "206.8", "90% blasts", "12:00", "20:03", "20:48",
-                    "23:37", "6.7", "7.8", "3.6", "Pneumatic tube",
+                    "23:37", "6.7", "7.8", "3.6", "氣送管",
                     "降鉀治療", "30 分鐘"):
             with self.subTest(cue=cue):
                 self.assertIn(cue, self.body)
@@ -46,7 +46,13 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertIn("https://pmc.ncbi.nlm.nih.gov/articles/PMC11908522/", self.body)
 
     def test_synthetic_case_no_longer_pretends_to_ground_treatment(self):
-        self.assertIn("不同研究拼成同一張虛構的病例", self.body)
+        self.assertIn("不提供選抽血項目或醫囑", self.body)
+        self.assertIn("運送方式與治療時序同時改變", self.body)
+        self.assertIn("病例報告", self.sources)
+        for leak in ("本篇不必自行捏造", "這是資料所允許的比較", "以下是從原表抽出",
+                     "這是作者記載的順序", "不同研究拼成同一張虛構的病例"):
+            with self.subTest(leak=leak):
+                self.assertNotIn(leak, self.body)
         self.assertNotIn("舊版用一名 AI 設計的", self.body)
         self.assertNotIn("前一版用", self.body)
         self.assertNotIn("## 後段合成練習", self.body)
@@ -56,12 +62,13 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         # This pilot has a valid measurement-trust scope; not a made-up full
         # multi-organ lab-order workflow or a vague original-study year.
         self.assertIn("第一篇", self.body.splitlines()[0])
-        self.assertIn("本篇的範圍是", self.body)
+        self.assertIn("先辨認數值是否可信", self.body)
+        self.assertIn("不提供選抽血項目或醫囑", self.body)
         self.assertIn("2020 年正式發表", self.body)
         self.assertNotIn("2019/2020 年發表", self.body)
         # The original Hb discrepancy is described once, not duplicated by
         # merging separate author branches.
-        self.assertEqual(self.body.count("居家抽血 Hb"), 1)
+        self.assertEqual(self.body.count("居家 Hb **4.5 g/dL**"), 1)
         self.assertIn("4.5 g/dL", self.body)
         self.assertIn("7.9 g/dL", self.body)
 
