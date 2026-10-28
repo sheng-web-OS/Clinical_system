@@ -1,6 +1,6 @@
 # Lab Medicine 01｜早晨一張 Lab sheet：真實病例、實驗室原理與證據界線
 
-本頁對應[〈早晨一張 Lab sheet：從真實病例與原始研究，判斷數字究竟能告訴我們什麼〉](lessons/2026-10-28-lab-morning-sheet.md)。**目前正文主幹是 2024 AML 真實病例、一篇有嚴格納排條件的 66 人急診研究，以及一篇 2,440 人同日重抽急診回溯研究**；後續 AKI 與 ADHF 為**不同文獻、不同人群**的說明，絕不能把它們拼成同一患者或把病例推論當成醫囑。舊稿的 70M 心衰竭完整四時點合成時間線已非主故事。原來源頁的 UKKA／KDIGO 原始圖表核對紀錄仍保留，但不代表新稿已通過獨立醫學或教學審查。
+本頁對應[〈早晨一張 Lab sheet：從真實病例與原始研究，判斷數字究竟能告訴我們什麼〉](lessons/2026-10-28-lab-morning-sheet.md)。這篇文章的核心，是依照 2024 年 AML 個案的原始採樣記錄，理解為什麼檢體處理會改變報告中的 K；再以 66 人和 2,440 人兩份不同納排條件的急診研究，判斷這種經驗可以外推到哪裡。後段 AKI 與心衰竭的說明則取自**另外的研究與指引**，並非替 AML 患者補寫心衰竭或新的抽血與處置。以下連結提供原文、表圖位置，以及每個推論不能跨越的界線。
 
 ## 0. 三份直接支持新版正文的真實來源（原始資料／分母／反事實）
 
@@ -12,7 +12,7 @@
 
 ## 0A. 補充案例（非目前文章主故事）
 
-- [Salvagno et al., *A paradigmatic case of haemolysis and pseudohyperkalemia in blood gas analysis*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366946/)：51M venous blood-gas syringe K5.2；不同試管 lithium-heparin plasma K4.6；原 syringe 餘血的 hemolysis index50，而另一管 index5；運送約15分鐘直接接觸冰塊。這是前分析干擾個案，**不是 AML 病人或原 HF 合成個案**。
+- [Salvagno et al., *A paradigmatic case of haemolysis and pseudohyperkalemia in blood gas analysis*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366946/)：51M venous blood-gas syringe K5.2；不同試管 lithium-heparin plasma K4.6；原 syringe 餘血的 hemolysis index50，而另一管 index5；運送約15分鐘直接接觸冰塊。這是另一名患者的前分析干擾個案，不能與 AML 病人的時序混寫。
 - [Šálek 2018, *Pseudohyperkalemia - Potassium released from cells due to clotting and centrifugation*](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/)：62F essential thrombocythemia，platelets1305 ×10⁹/L、WBC39.8 ×10⁹/L，serum K6.3、plasma4.6、whole blood3.4 mmol/L；CBC 解釋部分檢體差異，不可將不同患者的數值拼接。
 
 **證據界線**：真實病例只支持病例內觀察，單一研究的比例只適用其納排條件；HK 急救閾值、確認採檢與醫囑須回 UKKA 等當代指引、病人當下狀態及當地院內 SOP。以下原始來源與圖表的限定審查，不代表這個新版已獲獨立審稿 PASS。
