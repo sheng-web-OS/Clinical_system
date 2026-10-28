@@ -196,5 +196,3 @@ KDIGO 2012 原始 [Figure 4（印刷 p.25）](https://kdigo.org/wp-content/uploa
 [10] [van der Bilt & Alsma, *Hyponatraemia caused by transient syndrome of inappropriate antidiuresis to urinary retention*. Intern Med J. 2023](https://pubmed.ncbi.nlm.nih.gov/36822611/)：三例尿滯留相關低鈉血症，置入導尿管後有 brisk diuresis 和部分病例血鈉過快自動校正；是不同患者的病例系列，非 Chen 個案觀察。
 
 [11] [European Clinical Practice Guideline on Hyponatraemia（2014，原始正式文本）](https://academic.oup.com/ejendo/article/170/3/G1/6668028)：慢性／病程不明低鈉血症在校正過程中的安全限度與監測。適用條件取決於低鈉嚴重度、症狀和風險，不由 Chen 的矛盾端點反推治療。
-
-這篇文章用於理解檢驗的測量意義與臨床證據如何更新判斷。真正的採檢、影像、輸液、導尿和腎臟替代治療，仍須依患者即時風險、醫院流程及具資格團隊判斷。
