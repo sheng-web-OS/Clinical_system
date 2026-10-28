@@ -5275,6 +5275,368 @@
           "line_for_editor": 184
         }
       }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-pneumothorax-mechanism-decisions.md": {
+      "content_blob": "d74188ce68c575d56d4611f9b6c420c2f695e1c3",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/194#issuecomment-6462396558",
+      "core_reader_question": "為何相同的氣胸影像可能需要觀察、緊急減壓或病因追查，如何把當下生理危險、治療必要性與長期復發預防分成不同決策？",
+      "new_understanding": "透過Stiennon 43歲女性的真實經期性氣胸和胸腔鏡橫膈缺孔，讀者可用跨肺壓理解塌陷，辨識張力性急症，依BTS/ERS條件選觀察、抽氣與引流，讀懂Brown RCT失訪邊界，再追查BHD/LAM及經期時序並討論復發預防。",
+      "strongest_counterargument": "本篇涵蓋力學、急症、影像、治療、手術與特殊病因，可能使讀者覺得過廣；但各節由同一病例及危險、當次處置、病因、復發四軸連接，結尾三問各測不同遷移能力，未發現必須刪除的重複段落。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "a634c13a50863cfa2d-1": {
+          "role": "orientation",
+          "reader_gain": "先將氣胸存在、當下失代償和未來復發拆成三個不同臨床問題。",
+          "nonredundancy_reason": "沒有此段，讀者會把診斷陽性誤認為處置和病因都已決定。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一張胸片看到肺尖肋膜線，診斷氣胸似乎已完成。但對眼前的病人，接下來至少有三個不相等的問題：胸膜腔裡是不是有氣？這份氣體是否已使呼吸或循環失去代償？即使這次把氣排掉，為什麼下次可能還會再發生？前兩問決定今天的急迫性，第三問決定是否需要更深入找病因與預防復發。",
+          "line_for_editor": 3
+        },
+        "8f129d028fb935e19d-1": {
+          "role": "case_evidence",
+          "reader_gain": "以43歲女性真實右側復發病例和胸腔鏡橫膈缺孔建立病因線索。",
+          "nonredundancy_reason": "移除病例便無法說明後續為何追查經期時序與橫膈。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Stiennon 等人在 Acta Chirurgica Belgica 發表的病例中，一位 43 歲女性因右胸不適與呼吸困難就醫。她不是第一次發作，而且數次胸部症狀與月經時間有關。胸部 CT 確認部分右側氣胸。之後胸腔鏡檢查發現橫膈膜有數個小孔（diaphragmatic fenestr",
+          "line_for_editor": 7
+        },
+        "e935dae303332ffb97-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明CT確證積氣但不能確證來源，且單例不等於治療效果。",
+          "nonredundancy_reason": "避免把影像陽性和手術所見誤合成單一確定因果結論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "病例最值得學的不是「有月經就診斷子宮內膜異位」，而是同一張 CT 回答的範圍。它能證明當時右肋膜腔有空氣；卻沒有替醫師回答空氣從哪裡進入、是否曾反覆發作，以及手術時會不會看到橫膈膜病灶。胸腔鏡看到的缺口，將原本的時間關聯轉變為更具病理解釋力的線索。這仍是單一病例，能展示診斷推理，不能單獨證",
+          "line_for_editor": 9
+        },
+        "d8f1e95facddb0dc1f-1": {
+          "role": "counterfactual",
+          "reader_gain": "對比穩定初發成人與反覆經期病例，示範病史改變問題優先序。",
+          "nonredundancy_reason": "若刪去此條件替換，讀者無法練習從相同胸片走向不同處置。",
+          "verdict": "keep",
+          "excerpt_for_editor": "反過來設想：如果同樣是一位穩定、第一次出現右側氣胸的年輕成人，沒有反覆發作、沒有月經相關史，也沒有已知肺病，醫師的優先問題就會變成是否需要立即排氣，而不是先推定罕見的胸腔子宮內膜異位。兩個人胸片可以相似，問題分流卻不同。要理解這個差別，得先回到胸膜腔究竟在維持什麼。",
+          "line_for_editor": 11
+        },
+        "acc769248ec2a3eaee-1": {
+          "role": "definition",
+          "reader_gain": "界定臟壁胸膜、潛在腔隙及肺與胸壁相反彈性趨勢。",
+          "nonredundancy_reason": "下一段跨肺壓的物理意義需要這個胸膜腔基礎。",
+          "verdict": "keep",
+          "excerpt_for_editor": "臟層胸膜緊貼肺表面，壁層胸膜貼著胸壁與橫膈膜。兩層之間是只有少量潤滑液的潛在腔隙。肺彈性組織傾向往內回縮，胸壁在一般肺容量下則傾向往外；兩者透過胸膜液的黏附與胸膜腔壓力耦合。在正常安靜呼吸時，胸膜腔壓力通常低於大氣壓，使肺保持展開。",
+          "line_for_editor": 15
+        },
+        "e47d9e83ae596984a6-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以肺泡壓減胸膜壓推導跨肺壓和吸氣肺展開。",
+          "nonredundancy_reason": "沒有定量關係便只能背負壓讓肺展開的口號。",
+          "verdict": "keep",
+          "excerpt_for_editor": "更精確的量是跨肺壓（transpulmonary pressure）＝肺泡壓 − 胸膜腔壓。當肺泡壓接近大氣壓、胸膜腔壓更負時，跨肺壓為正，支撐肺泡與肺的展開；吸氣時胸壁擴張、胸膜腔壓下降，跨肺壓提高，肺容積增加。這不表示每一處肺泡壓力完全相同，也不能把單一跨肺壓值當作整個肺的彈性描述。",
+          "line_for_editor": 17
+        },
+        "1cf7ef1d44bbabaad4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將胸膜破口、壓力耦合消失和彈性回縮連成機轉。",
+          "nonredundancy_reason": "區分肺回縮與肺壞死，並為不同積氣量留下解釋。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若臟層胸膜破口使肺泡內的氣進入胸膜腔，或胸壁破口使外界空氣進入，胸膜腔原有的負壓耦合遭破壞，跨肺壓下降，肺就順著自身彈性向內回縮。所以「collapse」是呼吸力學的結果；不必先假定肺組織已壞死。破口是否仍通、漏氣速度、胸膜黏連與基礎肺順應性，則會影響影像上到底有多少空氣，以及能否重新展開",
+          "line_for_editor": 19
+        },
+        "4c3a7e5ba8f42be84a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分bleb影像所見、真正破裂事件及唯一病因的不同證據層次。",
+          "nonredundancy_reason": "此界線防止將CT結構異常當成已證實的單一病因。",
+          "verdict": "keep",
+          "excerpt_for_editor": "肺尖 bleb（緊貼肺表面的薄壁小含氣空間）和較大的 bulla 常與自發性氣胸相關；但CT 看見 bleb ≠ 已拍到它破裂的瞬間 ≠ 證明唯一病因。沒有明顯 bleb 也不代表沒有氣胸。這也是胸片、CT 和術中觀察各自只能回答部分問題的原因。",
+          "line_for_editor": 21
+        },
+        "4585969db12c7157b6-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將單向積氣造成胸壓升高連到靜脈回流減少與阻塞性休克。",
+          "nonredundancy_reason": "沒有循環機轉，急救分流只剩下影像大小或經典徵象背誦。",
+          "verdict": "keep",
+          "excerpt_for_editor": "有些漏氣情境中，空氣持續進入胸膜腔、難以有效排出。胸內壓逐步升高，受壓的肺換氣減少；更危險的是胸內壓可能妨礙靜脈回流、降低心臟前負荷與心輸出，形成阻塞性休克。臨床上關鍵不是胸片上「夠不夠大」或是否已有明顯縱膈偏移，而是出現進行性呼吸／循環失衡：低血壓、灌流不良、嚴重呼吸窘迫等。氣管偏移與頸",
+          "line_for_editor": 25
+        },
+        "c3b14820c960eb826d-1": {
+          "role": "safety",
+          "reader_gain": "明確指出不穩定且高度懷疑張力性氣胸應立即減壓而非等影像。",
+          "nonredundancy_reason": "防止將穩定PSP保守研究錯用於正在休克的患者。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當臨床高度懷疑張力性氣胸且已血流動力不穩定，立即依急救流程解除胸膜腔壓力，不應等待 CXR 或 CT 才處理。暫時減壓後仍需由受過訓練的團隊評估適當胸管或後續處置與再惡化風險。這個急救分支和下文「穩定、症狀少的 PSP 可考慮觀察」不在相同患者條件下，不能互相套用。",
+          "line_for_editor": 27
+        },
+        "39e568950e85187bcc-1": {
+          "role": "safety",
+          "reader_gain": "把插管正壓通氣的突發缺氧、低血壓和高氣道壓納入急救鑑別。",
+          "nonredundancy_reason": "前段沒有交代無法表達胸痛者的非特異呼吸器警訊。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個危險分流在插管與正壓通氣患者特別容易被忽略：患者無法告訴你胸痛，反而可能先表現為突然低血氧、血壓下降與呼吸器 peak airway pressure 上升。正壓通氣可能加速胸膜腔積氣與循環受阻，但這三個現象不是氣胸專屬診斷，仍須同時迅速排查氣管內管位移或阻塞、黏液栓、嚴重支氣管痙攣與",
+          "line_for_editor": 29
+        },
+        "d67d72dee5f6e8a04e-1": {
+          "role": "definition",
+          "reader_gain": "解釋站立與仰臥胸片不同積氣位置及肺尖線的診斷侷限。",
+          "nonredundancy_reason": "不建立投照條件就容易將陰性肺尖線錯當排除氣胸。",
+          "verdict": "keep",
+          "excerpt_for_editor": "對穩定患者，胸部 X 光的典型證據是可辨識的臟層胸膜線，其外側缺少正常肺血管紋理。若仰臥拍攝，氣可能偏聚前方與肺底，不能把「沒看到肺尖線」當成沒有氣胸。影像投照、吸氣程度、皮膚皺褶和胸膜黏連都可能影響判讀；有疑義時需要結合其他投照、超音波或 CT，而不是先算一個看似精密、卻沒有臨床決策前提",
+          "line_for_editor": 33
+        },
+        "12165c703fe5c10e8e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用sliding、B-lines、lung point與假陽性原因建立POCUS判讀界線。",
+          "nonredundancy_reason": "只說超音波可診斷氣胸會導致把單一無滑動徵象當確診。",
+          "verdict": "keep",
+          "excerpt_for_editor": "肺部超音波是在此處胸膜是否滑動這個尺度工作。正常 lung sliding、B-lines 及肺搏動能提供局部胸膜貼合的證據；在適當臨床情境下，缺乏滑動、見到 A-lines，若再辨識出 lung point，可強力支持氣胸。但沒有 lung sliding 不專屬氣胸：主支氣管插管、呼吸",
+          "line_for_editor": 35
+        },
+        "27fa4cd3e00dc4fe7d-1": {
+          "role": "decision",
+          "reader_gain": "指出CT對反覆及囊性肺病的增量，而非每例PSP必要檢查。",
+          "nonredundancy_reason": "此段補足從影像到是否需要VATS之間的病史與選擇條件。",
+          "verdict": "keep",
+          "excerpt_for_editor": "CT 在複雜、非典型、反覆、疑有囊性肺病或需要外科評估時尤其有價值：可釐清局部積氣、肺尖 bleb、胸膜黏連、其他肺實質與橫膈異常。但在已確診、情況穩定的單純第一例 PSP，不是人人都要先做 CT 才能決定是否介入。反過來，CT 發現肺尖 bleb 並不自動讓所有人進入 VATS；有沒有復",
+          "line_for_editor": 37
+        },
+        "b0fbbe7b4ea2c8d4b4-1": {
+          "role": "definition",
+          "reader_gain": "分開PSP無已知顯著肺病與SSP既有肺病、肺儲備不同。",
+          "nonredundancy_reason": "後續Brown研究和ERS推薦不能跨PSP與SSP的前提由此建立。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Primary spontaneous pneumothorax（PSP）是沒有已知臨床顯著基礎肺病的自發性氣胸，不等於顯微結構完美、影像保證沒有 bleb。Secondary spontaneous pneumothorax（SSP）發生於既有肺疾病背景（如 COPD、肺間質病變等），相",
+          "line_for_editor": 41
+        },
+        "a5ba0d475598fa2a2f-1": {
+          "role": "decision",
+          "reader_gain": "提出反覆、囊腫、家族史與經期史改變基礎病因調查的門檻。",
+          "nonredundancy_reason": "若省略，讀者不知何時該從首次PSP分類跳到特殊病因。",
+          "verdict": "keep",
+          "excerpt_for_editor": "年輕、反覆發作、雙側或多發肺囊腫、家族史、腎臟或皮膚表徵，應思考 LAM、Birt–Hogg–Dubé syndrome 等囊性肺病；育齡女性的反覆、尤其右側氣胸，則應詢問每一次胸痛／氣胸與月經的時間關係。此時重要的不是先背「哪種病比較罕見」，而是認知到「沒有已知肺病」這個分類的前提可能需",
+          "line_for_editor": 43
+        },
+        "c8019f4bf85727a666-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "比較BHD的FLCN及腎風險與LAM的VEGF-D及首次氣胸防復發策略。",
+          "nonredundancy_reason": "前段僅列疾病名稱，這段才指出確認診斷和預防時點差異。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這條病因分流也會改變復發預防時點。Birt–Hogg–Dubé syndrome（BHD）可見肺囊腫、反覆氣胸、皮膚纖維毛囊瘤與腎腫瘤風險；肺囊腫較常位於下肺區而不是只看肺尖。2024 ERN GENTURIS 指南建議對反覆或家族性 PSP、無其他原因的多發雙側肺囊腫評估是否需要 FLC",
+          "line_for_editor": 45
+        },
+        "eec6130c6070090509-1": {
+          "role": "decision",
+          "reader_gain": "將BTS低症狀穩定PSP保守選項與追蹤可行性綁在一起。",
+          "nonredundancy_reason": "沒有這些條件會把尺寸非唯一標準錯解成大氣胸皆可返家。",
+          "verdict": "keep",
+          "excerpt_for_editor": "過去常先用一個尺寸門檻決定抽氣或放管。較新的證據迫使我們區分兩個目標：讓這一次安全復張與降低未來復發。BTS 2023 對無顯著疼痛、無顯著喘及無生理受損的成人 PSP，即使影像上氣胸較大，也允許在適當條件下考慮保守觀察；這是有前提的條件性建議，不是「大氣胸可以一律回家」。急診仍須確認生命",
+          "line_for_editor": 58
+        },
+        "d6374a240fce85327b-1": {
+          "role": "safety",
+          "reader_gain": "區分介入適應症與安全穿刺空間，完整保留BTS六項高風險特徵。",
+          "nonredundancy_reason": "這是把原始指南圖轉成安全床邊決策所必需的分支。",
+          "verdict": "keep",
+          "excerpt_for_editor": "先分清楚介入的必要性與介入能否安全執行：氣胸大小不再單獨決定是否需要侵入性治療，但仍影響肺與胸壁之間是否有足夠可安全穿刺的空間；不能在只剩狹窄氣腔時照著「常規抽氣」操作。BTS 2023 原始 Pneumothorax Pathway 先詢問症狀與高風險特徵，再問穿刺是否安全，必要時以 C",
+          "line_for_editor": 60
+        },
+        "35dbea824294153e9d-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現Brown隨機試驗兩組八週分母及失訪敏感度的非劣性限制。",
+          "nonredundancy_reason": "缺少分母和失訪後果，保守觀察的證據會被誇大成普遍有效。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個改變有原始試驗背景。Brown 等人的 2020 年隨機研究納入 316 位 14–50 歲、首次已知單側、中至大型、臨床未併發 PSP，比較保守處置與立即介入。保守組 162 人中有 25 人（15.4%）因預設條件改接受介入。八週後，實際取得影像的患者中，保守組有 118/125（",
+          "line_for_editor": 62
+        },
+        "352abd04270f3cd032-1": {
+          "role": "decision",
+          "reader_gain": "區分PSP抽氣、胸管、ambulatory與SSP證據不足的推薦差異。",
+          "nonredundancy_reason": "若刪去會把不同病人和證據強度混為單一處置階梯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若不適合單純觀察，下一步也不是自動選擇胸管。Needle aspiration（經皮穿刺抽出胸膜腔空氣）嘗試在不留下持續引流裝置的條件下讓肺再展開；chest tube drainage 則提供持續引流路徑，在仍有漏氣、需持續觀察或抽氣不適當／未成功時更有意義。2024 ERS/EACTS",
+          "line_for_editor": 64
+        },
+        "8e40463c10f7067e9a-1": {
+          "role": "safety",
+          "reader_gain": "指出門診單向閥需要支援系統，補氧目的與高碳酸風險須分開。",
+          "nonredundancy_reason": "補足技術可行不等於安全返家或固定高濃度氧的條件。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Ambulatory device 不是「放著不管」，而是以設計適當的單向閥／小型引流裝置配合門診照護，減少不必要住院；沒有熟悉的團隊、回診管道或病人支持，就不能只因裝置小而假設安全。需氧時氧氣目的是矯正低氧與支援生理，不是所有氣胸都要一律給高濃度氧；若本來存在高碳酸風險，也須個別調整氧療",
+          "line_for_editor": 66
+        },
+        "a62ff4424f26dfed37-1": {
+          "role": "definition",
+          "reader_gain": "以漏氣時間和管路檢查區分持續氣泡、殘餘氣腔與PAL。",
+          "nonredundancy_reason": "沒有此段，讀者可能用單張胸片誤判持續漏氣。",
+          "verdict": "keep",
+          "excerpt_for_editor": "胸管把胸膜腔中的氣體導出；水封系統的方向設計可讓空氣排出而減少逆流。若見到持續氣泡，可能提示仍有空氣通過引流系統，但還要先確認連接、管路位置、是否人為操作造成與肺本身是否仍漏氣；單張胸片沒有完全復張也不等於 persistent air leak（PAL）已成立。PAL 是一段時間內反覆、",
+          "line_for_editor": 78
+        },
+        "387d3b27ad0e669a0c-1": {
+          "role": "decision",
+          "reader_gain": "說明suction、拔管與肺復張的判準分別，避免把醫囑時間當事件。",
+          "nonredundancy_reason": "前段只談漏氣定義，這段新增管路管理與移除的決策限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "胸管 suction 並不是所有自發性氣胸的常規預設；負壓可影響引流與復張，也可能產生其他風險。是否採用、設定及撤除要依肺復張、漏氣、系統、手術醫囑與團隊流程決定。拔管之前，臨床通常要同時評估呼吸狀態、漏氣控制、肺展開、引流與現有管路是否已無必要；不同手術或引流目的的判準並不相同。「拔管醫",
+          "line_for_editor": 80
+        },
+        "a8081ff99ec1432265-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "依BTS與ERS分辨PAL手術不可行時自體血液貼片和其他介入的證據等級。",
+          "nonredundancy_reason": "避免把所有支氣管介入或負壓技術說成同等推薦。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果經過初始處置仍漏氣或不能復張，需要重新檢查管路通暢與位置、肺病變、支氣管胸膜瘻、胸膜腔是否分隔及患者是否適合手術。BTS 2023 對不能手術的 PAL 提及 autologous blood pleurodesis 或 endobronchial therapy 可考慮；2024 E",
+          "line_for_editor": 82
+        },
+        "db72f73454933c13c2-1": {
+          "role": "decision",
+          "reader_gain": "用同側復發、對側首發與職業風險說明手術時點和偏好權衡。",
+          "nonredundancy_reason": "此段建立初次治療和長期復發預防之間的手術適應症橋樑。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當病人已有同側第二次或第一次對側自發性氣胸，BTS 建議考慮擇期手術評估；即使首次發作，如果患者高度重視防止復發（例如特定高風險職業、曾有張力性氣胸等），也可以在充分討論後考慮。2024 ERS/EACTS/ESTS 同樣對重視復發預防的 PSP 患者提出早期手術的條件性建議。有手術選項不",
+          "line_for_editor": 86
+        },
+        "fcf63514ef96bb79dc-1": {
+          "role": "definition",
+          "reader_gain": "拆解VATS途徑、楔切漏氣來源及胸膜沾黏防復發的不同功能。",
+          "nonredundancy_reason": "若只列VATS名稱便無法理解同一手術中兩類處置的目標。",
+          "verdict": "keep",
+          "excerpt_for_editor": "VATS（video-assisted thoracoscopic surgery）是一種經胸腔鏡進入胸膜腔的手術途徑，不是一個單一的「氣胸手術名稱」。術中可處理明顯 bleb／bulla，例如 wedge resection（楔狀切除：以吻合器切除一小部分含病灶的周邊肺組織），也可透過 ",
+          "line_for_editor": 88
+        },
+        "e836d3e3d6b379a4fd-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出肺尖bleb不能排除橫膈病灶，且VATS附加術式證據不一致。",
+          "nonredundancy_reason": "此段避免把一種術中組合外推成所有病人的唯一標準。",
+          "verdict": "keep",
+          "excerpt_for_editor": "「術中看到肺尖 bleb」與「手術選擇合理」並不等同證實 bleb 是唯一病因。反過來，若有橫膈膜病灶或經期關聯，僅做肺尖楔狀切除可能沒有完整處理另一條可能的致病路徑。BTS 認為 VATS 可作一般手術肋膜沾黏途徑；對極要求最低復發風險的高風險職業者，開胸術式可能另有位置，但它涉及更高侵",
+          "line_for_editor": 90
+        },
+        "14ccc6b2c1739ca1cc-1": {
+          "role": "causal_bridge",
+          "reader_gain": "重訪43歲女性，區分月經相關氣胸的時間描述與胸腔內膜異位病因。",
+          "nonredundancy_reason": "病例需要這個概念分離，才不會由右側或月經直接推定病理。",
+          "verdict": "keep",
+          "excerpt_for_editor": "再回到開頭那位 43 歲女性。她的病史多了一個對肺尖 bleb 假說沒有被解釋的訊號：症狀反覆跟月經同步。月經相關氣胸（catamenial pneumothorax）描述的是特定時間關聯下的反覆氣胸；thoracic endometriosis syndrome 則是可能的病因學範疇，還",
+          "line_for_editor": 94
+        },
+        "8fc9799b3b67ff3253-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "解釋ESHRE經期前後時間窗是提示線索而非確診cutoff。",
+          "nonredundancy_reason": "時間界線可幫助追查多次發作，但不可取代其他證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "ESHRE 2022 子宮內膜異位症指南指出，胸腔子宮內膜異位症的典型循環性症狀常在月經起始前約 24 小時至起始後 72 小時出現，catamenial pneumothorax 通常指至少兩次在相應時窗內發生的氣胸；不同研究對「月經前後 72 小時」的操作定義有所不同。這種時間窗是提高",
+          "line_for_editor": 96
+        },
+        "9af956ebd946c8545f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "比較橫膈通道、週期性病灶和其他肺源機制，避免線性必然推論。",
+          "nonredundancy_reason": "若刪去，右側優勢與bleb會被錯讀成排他病因。",
+          "verdict": "keep",
+          "excerpt_for_editor": "可能的機制包含橫膈膜缺損使空氣由腹腔進入胸腔、胸膜或橫膈膜異位病灶的週期性變化，以及肺部其他來源；各理論不必被當作同一患者必經的連續機制。右側較常見是線索，不是排他條件；影像看不到胸膜內膜異位病灶，也不等於可排除。相反地，見到肺尖 bleb 也不能排除同時存在橫膈膜病灶。",
+          "line_for_editor": 98
+        },
+        "aabd9d24b3e4f5725b-1": {
+          "role": "decision",
+          "reader_gain": "提出將影像確診日期對齊月經、跨科術中與病理整合的實際路徑。",
+          "nonredundancy_reason": "此段把前面的病因線索轉成下一個可執行的資訊收集動作。",
+          "verdict": "keep",
+          "excerpt_for_editor": "最有資訊價值的下一步是把每一次明確的胸痛／影像確診氣胸日期與月經起始日對齊，再問是否合併經痛、骨盆疼痛、不孕或既往子宮內膜異位症；必要時由胸腔外科和婦產科共同討論影像、術中橫膈膜及胸膜觀察、病理、荷爾蒙處置的角色與復發追蹤。診斷常須結合臨床時序與術中所見；病理未找到典型腺體／間質，也未必足",
+          "line_for_editor": 100
+        },
+        "8c4c839ee62213e099-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "分開橫膈修補與荷爾蒙抑制的治療目標及ESHRE弱建議。",
+          "nonredundancy_reason": "沒有治療證據界線會把單一病例或疑似診斷直接變成處方。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若確實高度懷疑或診斷胸腔子宮內膜異位，處理看得見的橫膈膜缺損與降低往後經期驅動的病灶活動也是不同的治療目標。胸腔鏡可以檢查並修補可辨識的橫膈膜病灶、處理肺與胸膜病變；荷爾蒙治療則藉由抑制週期性內膜刺激，嘗試降低後續症狀及復發，可能採用口服荷爾蒙或 GnRH 類藥物，由婦產科綜合生育計畫、副",
+          "line_for_editor": 102
+        },
+        "2025bc8293d11d3a5f-1": {
+          "role": "decision",
+          "reader_gain": "將出院建立在呼吸、漏氣、疼痛、回診和危險徵象而非單張影像。",
+          "nonredundancy_reason": "前面治療成功不自動保證可以返家，必須獨立判斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "穩定、症狀改善、肺展開合理、管路問題已解決且可安全回診，才開始有出院討論的基礎；也要處理疼痛、活動能力、術後傷口、是否需氧、急性惡化徵象與具體回診安排。正常 SpO₂ 不能獨立宣稱沒有殘餘氣胸，而一張肺已大致復張的 CXR 不能證明沒有日後復發。出院衛教應明確說明若出現新胸痛、惡化喘、暈厥",
+          "line_for_editor": 106
+        },
+        "57e0e5fa6031842c93-1": {
+          "role": "safety",
+          "reader_gain": "交代BTS追蹤影像、飛行七日與潛水限制及戒菸。",
+          "nonredundancy_reason": "這些出院後限制不能從胸管拔除或SpO2正常自行推得。",
+          "verdict": "keep",
+          "excerpt_for_editor": "BTS 2023 建議，保守觀察或單次抽氣患者一般在 2–4 週安排追蹤胸片，門診裝置則可能需要更密集追蹤。未在影像確認完全消失以前不應搭乘商業航空；確認完全復張的 CXR 後至少再等 7 天才能依一般建議考慮飛行。壓縮氣瓶潛水通常應長期避免，除非經專業評估已接受足以極大幅度降低再發風險的",
+          "line_for_editor": 108
+        },
+        "dda265d5775e038405-1": {
+          "role": "case_evidence",
+          "reader_gain": "以112年第二次醫學三Q47展示超音波聲窗與肺門淋巴結的界線。",
+          "nonredundancy_reason": "原題是診斷工具的考點，不能用一般氣胸處置知識替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原題問胸腔超音波在肋膜積水、氣胸、橫膈膜麻痺、雙側肺門淋巴腺腫中，何者診斷幫助最小；官方答案為 D（雙側肺門淋巴腺腫）。這題不應背「超音波可診斷氣胸」一句話，而應先想探頭能直接觀察的界面：胸壁下胸膜、含液腔隙、橫膈膜活動度；深部肺門因含氣肺組織遮蔽，不像上述結構那樣可可靠直視。",
+          "line_for_editor": 114
+        },
+        "4e129408d51852f03e-1": {
+          "role": "case_evidence",
+          "reader_gain": "以115年第一次醫學三Q49重驗縱膈淋巴結與胸膜超音波的不同可及性。",
+          "nonredundancy_reason": "第二題對照選項不同卻同一解剖原理，檢查跨年度遷移。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原題同樣問胸腔超音波對氣胸、肋膜腔積液、縱膈腔淋巴結腫大、膈神經麻痺何者價值最低；官方答案為 C（縱膈腔淋巴結腫大）。這兩題選項略有不同，但真正考的是影像聲窗、解剖可及性，以及超音波能不能從表層胸膜／橫膈資訊推到深部縱膈。它們是診斷方法題，不是自發性氣胸治療指南題；不能因連兩年問到 POC",
+          "line_for_editor": 118
+        },
+        "23588ccd6cd4f1388d-1": {
+          "role": "counterfactual",
+          "reader_gain": "透過穩定PSP與張力性休克對比測試是否掌握急迫性分流。",
+          "nonredundancy_reason": "把前文機轉轉成不被氣胸大小誤導的主動提取。",
+          "verdict": "keep",
+          "excerpt_for_editor": "問題一：為什麼同樣看到右側氣胸，一個人能觀察，另一個人必須立即減壓？ 因為決策首先看有沒有生理失代償、症狀及既有肺儲備；「氣胸大小」只是一部分資訊。張力性氣胸的阻塞性休克機制，不能被首次穩定 PSP 的保守治療研究掩蓋。",
+          "line_for_editor": 122
+        },
+        "95501f4fb9ebbf461a-1": {
+          "role": "counterfactual",
+          "reader_gain": "測試術後影像改善能否推論漏氣終止、病因解釋與永不復發。",
+          "nonredundancy_reason": "這道提問回收當次成功和長期風險不能互換的命題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "問題二：為什麼一張較好的術後胸片，不能直接證明病已治好？ 因為復張、漏氣停止、管路可以移除、病因已解釋與未來不再復發，分別是不同的證據命題。手術若同時做楔切與胸膜沾黏，是在對付不相同的風險來源。",
+          "line_for_editor": 124
+        },
+        "725d19fc2bd9298786-1": {
+          "role": "counterfactual",
+          "reader_gain": "以bleb存在仍追問經期及橫膈的反事實檢查病因競爭。",
+          "nonredundancy_reason": "此題要求把時間序列與解剖線索合併，不只是重複診斷名稱。",
+          "verdict": "keep",
+          "excerpt_for_editor": "問題三：為什麼肺尖有 bleb，仍可能必須追問月經與橫膈膜？ 因為可見的解剖異常不是唯一可能原因。只有把氣胸確診的時間序列、患者特徵、影像、術中發現與病理放在同一張因果圖裡，才能知道目前證據支持什麼，以及尚未排除什麼。",
+          "line_for_editor": 126
+        },
+        "c04b850f14cda899cb-1": {
+          "role": "orientation",
+          "reader_gain": "收束危險、處置、病因和復發四個相互獨立又互相制約的判斷軸。",
+          "nonredundancy_reason": "讓長篇各節回到同一臨床問題，避免僅留下零散處置選項。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個主題最重要的能力，不是背「氣胸→胸管→VATS」，而是持續區分危險性、當次處置目標、病因解釋力及長期復發管理。每當出現新的資訊，只改動那個真正被證據影響的決策分支。",
+          "line_for_editor": 128
+        },
+        "6efbc600f538a4b14d-1": {
+          "role": "navigation",
+          "reader_gain": "提供胸水與低血氧延伸入口並維持與氣胸不同的病理主題界線。",
+          "nonredundancy_reason": "讀者完成主題後可按新的資訊缺口選擇下一篇，而非重複正文。",
+          "verdict": "keep",
+          "excerpt_for_editor": "延伸：胸水檢查如何選擇；延伸：低血氧並不等於換氣失敗。",
+          "line_for_editor": 132
+        }
+      }
     }
   }
 }
