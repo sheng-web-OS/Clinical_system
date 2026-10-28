@@ -1002,6 +1002,57 @@
           "verification_scope": "Published figure identity, caption and source URL were located; no reviewer in this gate has documented a pixel-level inspection of arrows, branches, labels or footnotes. The article links to the publisher and does not reproduce figure pixels."
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md",
+      "items": [
+        {
+          "locator": "KDIGO 2012 AKI official full guideline Table 2 (Staging of AKI), printed p.19, PDF page 22",
+          "source_token": "Table 2",
+          "mode": "source_link",
+          "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22",
+          "why_link_instead": "原表有分期與尿量持續時間的必要註解；本站保留正版原頁連結，主文僅計算合成病例而不重製原表。",
+          "teaching_role": "對比肌酐在48小時內上升0.52與尿量紀錄不可信的界線，阻止用單一濃度直接解釋病因。",
+          "scope_limit": "Stage 1 是功能性分期，不表示確診特定腎小管病變、液體反應性或必須開始腎替代治療。"
+        },
+        {
+          "locator": "KDIGO 2012 AKI official full guideline Figure 4 (Stage-based management), printed p.25, PDF page 28",
+          "source_token": "Figure 4",
+          "mode": "source_link",
+          "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=28",
+          "why_link_instead": "原圖陰影有風險優先序意義，需連回正版原圖圖說核對；不複製出版社受保護原像素。",
+          "teaching_role": "讀者可辨認AKI分期與監測、灌流、避免腎毒性暴露等管理行動之間的關係，不把圖中優先度當成固定處方。",
+          "scope_limit": "陰影代表隨嚴重度提高的考量，不是每一分期都有相同補液、透析、住ICU等醫囑。"
+        },
+        {
+          "locator": "UK Kidney Association July 2026 original Figure 4, five steps in treatment of hyperkalaemia, printed p.75 PDF page 75",
+          "source_token": "Figure 4",
+          "mode": "source_link",
+          "url": "https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75",
+          "why_link_instead": "五階段原圖有治療時間順序與後續排除復發要求，使用可直接定位官方原版的連結而不翻拍。",
+          "teaching_role": "呈現有危險心電變化者如何從心肌保護、鉀轉移到真正移除及監測，並阻止以K短期下降當療程終點。",
+          "scope_limit": "Figure 4 是處置框架而非所有中度K6.4/正常ECG患者必需IV calcium的統一處方。"
+        },
+        {
+          "locator": "UK Kidney Association July 2026 Table 22, insulin-glucose protocol, printed p.98 PDF page 98",
+          "source_token": "Table 22",
+          "mode": "source_link",
+          "url": "https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98",
+          "why_link_instead": "原表血糖基線、後續補糖、血鉀回測與液體負擔的註腳不可從作者摘要推測，改連官方完整表。",
+          "teaching_role": "顯示補糖輸液體積與低血糖、反彈高鉀的取捨，避免只記insulin令K入細胞而遺漏後續危險。",
+          "scope_limit": "原表是UKKA條件式方案，台灣各院formulary、濃度與患者個別劑量須依當地流程核對。"
+        },
+        {
+          "locator": "KDIGO 2012 AKI Table 2 p.19 and UKKA July 2026 Figure 4 p.75 compared with original synthetic case lab timeline",
+          "source_token": "KDIGO",
+          "mode": "illustrated",
+          "anchor": "lab-three-clocks",
+          "caption_token": "KDIGO",
+          "teaching_role": "將06:00溶血K與07:15新樣本、10/27至28肌酐上升和尿量可信度三條證據並列，而非只在文中抽象寫並行。",
+          "scope_limit": "這是本站合成病例原創證據比較圖，不是KDIGO或UKKA官方Figure的重畫，不是驗證過的診療演算法。"
+        }
+      ]
     }
   }
 }
