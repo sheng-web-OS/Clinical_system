@@ -1056,5 +1056,51 @@
     "independent_human_review": "NOT_PERFORMED",
     "reader_learning_effect": "NOT_MEASURED",
     "next_action": "Another legal source-reading execution obtains and visually checks official BTS 2023 original p37 decision tree and both footnotes, compares to current exact article and rights, then reviewer may update source gate on same blob if unchanged. Check exact-head CI/real 360/375/390/1280 private screenshots and require separate release authorization."
+  },
+  "source_figure_review_round_3": {
+    "reviewer_role": "DISTINCT_READ_ONLY_AI_SOURCE_FIGURE_REVIEWER",
+    "reviewer_provenance": "2026-10-28 new Clinical OS automation execution; did not author or edit candidate article, original figure, or source page; independent from writer and from text-review round 2; not a clinician or pharmacist.",
+    "observed_at": "2026-10-28T03:15Z",
+    "frozen_article_blob": "140b4d37431301218f70162a44e54d768590475e",
+    "frozen_packet_blob": "9b254345a019e1eb2031dc3a302e31874289b219",
+    "prior_text_review": "review_round_2: 51/51 KEEP on identical article blob; separate prior execution, not redone or falsely attributed to this source-only review",
+    "original_primary_source": "British Thoracic Society Guideline for Pleural Disease 2023, official Appendix 1 clinical pathways/decision trees, PDF 7 pages, printed p5 / PDF zero-index p4",
+    "original_url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/bts-guideline-for-pleural-disease-appendix-1-clinical-pathwaysdecision-trees/",
+    "direct_visual_reference": "Web original PDF rendered page 4 (zero indexed), screenshot reference turn1view0, directly inspected in this execution; original textual lines turn0view0 L210-L262",
+    "checks": [
+      {
+        "item": "non-purulent suspected pleural infection only; initial immediate pH",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "pH <=7.20 high-risk branch -> insert ICD only with ultrasound-accessible safe fluid volume (*)",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "pH 7.21–7.39 intermediate; check pleural LDH",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "diagram LDH <900 versus >=900; adjacent printed table recommends considering ICD if LDH >900",
+        "verdict": "MATCH_WITH_ORIGINAL_INTERNAL_DISCREPANCY_PRESERVED"
+      },
+      {
+        "item": "intermediate-risk modifiers large volume, glucose <=4.0 mmol/L/72 mg/dL, pleural contrast enhancement on CT, septations on ultrasound",
+        "verdict": "MATCH"
+      },
+      {
+        "item": "pH >=7.40 very-low-risk/no immediate ICD default; dagger footnote states pH >7.4 plus septations also consider drainage",
+        "verdict": "MATCH_EXCEPTION_RETAINED"
+      },
+      {
+        "item": "dagger reassessment on persistent temperature/inflammatory markers, repeat aspiration if not improving",
+        "verdict": "MATCH"
+      }
+    ],
+    "article_correspondence": "Section 05 decision table and immediately following paragraph accurately preserve both pH decision branches, star/dagger footnotes, exact 900 threshold discrepancy and non-automatic drainage; no new P1 in this checked source-figure scope.",
+    "rights": "Official BTS pixels not copied into candidate article or public repository; article is an original text table and links to original. This is a source fidelity check, not legal opinion or image-reproduction authorization.",
+    "outcome": "SOURCE_FIGURE_VERIFIED; prior 51-unit textual review remains applicable ONLY to frozen article/packet; no new text revision requested. Final public semantic registry not applicable to unlisted archive draft. Publication remains AUTHORIZATION_REQUIRED and all release gates remain distinct.",
+    "unresolved": "No publication/manifest/main/Cloudflare authority; live public QA not applicable to private archive. Pocket Medicine and official exam original checks are inherited from prior source evidence, not independently re-opened this execution. Reader learning effect NOT_MEASURED.",
+    "paid_tinyfish": "NOT_USED"
   }
 }
