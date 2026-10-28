@@ -8,7 +8,6 @@
 
 2021 年《Antibiotics》報告一名 **28 歲女性**，沒有已知近期抗菌藥使用或醫療照護暴露，因發燒、左側腰痛和泌尿症狀就診。初次評估 HR **117/min**、BP **83/44 mmHg**；初始給予 ceftriaxone，病況不穩而進入 ICU。**住院第 3 天**尿培養與 AST 確認 ESBL、廣泛抗藥性的 *E. coli*，才將 ceftriaxone 改為 meropenem。作者報告**第 4 天**退燒且生命徵象改善，第 5 天出院後以靜脈治療銜接 ertapenem，總計約 10 天 carbapenem；追蹤未見復發。[原始病例與 susceptibility Table 1](https://www.mdpi.com/2079-6382/10/5/533)。
 
-<box></box>
 
 同一份**真正原始尿培養**可對照這幾個 MIC（依論文 Table 1 記錄的單位和判讀）：ceftriaxone **>64（R）**、meropenem **<0.25（S）**、TMP-SMX **>320（R）**、piperacillin/tazobactam **64（I）**。這不是「ESBL 通常如何」的 AI 推測；是當次分離株實測。拿到新 AST 後能確認當時 ceftriaxone 與病原不匹配，但**不能單憑換藥後改善，推算所有改善都由 meropenem 導致**：病程、復甦、器官支持同樣可能影響結果，且沒有對照組。
 
@@ -29,7 +28,7 @@
 
 **ESBL 的意義首先是機轉，並非完整處方。** β-lactam 需結合 PBP 干擾細胞壁；典型 ESBL 可水解 cefotaxime、ceftriaxone 等延伸型 cephalosporins 及 aztreonam，但不能據此斷言所有 carbapenem 必為 S，因為菌株仍可能同時存在其他抗藥機轉。TMP-SMX、fluoroquinolones 不受這個酵素直接水解，卻仍可能因其他機轉抗藥。故**舊 ESBL 降低某些經驗性方案的可信度，新 AST 才能進一步確認當次分離株**。
 
-[IDSA 2026 AMR 的 ESBL 指引](https://www.idsociety.org/practice-guideline/amr-guidance/) 對**已確認且有 susceptibility 的 ESBL-E cUTI**，在條件吻合時將 TMP-SMX、ciprofloxacin、levofloxacin 列作 preferred options；對危重或可能菌血症、藥敏未明的病人，應另外考慮可靠的 IV ESBL-active coverage，meropenem 等 carbapenem 在適當條件下有其角色。但這些都是**有條件的群體層次建議**，不等於任何見到 ESBL 三個字就固定開同一藥。
+[IDSA 2026 AMR 的 ESBL 指引](https://www.idsociety.org/practice-guideline/amr-guidance/) 在 General Management Suggestions 明確說明：**具體經驗性治療建議超出這份 AMR 指引的範圍**，其主要治療建議假設已辨識致病菌，並確認候選藥物的體外 susceptibility。對**已確認 ESBL-E cUTI 且當次 AST 顯示敏感**的病人，Q1.2 將 TMP-SMX、ciprofloxacin、levofloxacin 列為 preferred options；當抗藥、不耐受或毒性使這些藥物不適用時，另列 cefepime-enmetazobactam 或 carbapenems 等選項。**這是確定性治療的證據邊界，不是藥敏未明時的第一劑指令。** 尚未取得當次 AST、又懷疑 cUTI 合併 sepsis 時，經驗性選藥的四步風險評估應回到前述 [IDSA 2025 cUTI Figure 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf)；是否需更廣的初始涵蓋，仍取決於休克嚴重度、既往培養與用藥、過敏、腎功能、當地抗藥資料及即時照護團隊判斷，不能直接從 AMR Q1.2 或單一病例推成固定處方。
 
 Piperacillin/tazobactam 亦不能只憑「抗菌譜廣」或一次體外 S 和 carbapenem 畫上等號；IDSA 2026 特別區分非危重、無同時菌血症之 ESBL cUTI alternative 與不建議的危重／菌血症情況。這背後有體外 MIC 的限制、其他 β-lactamases 與血流感染比較性證據。既不應忽略風險，也不該推廣成「所有 ESBL 膀胱炎都必須 carbapenem」。
 
@@ -37,7 +36,7 @@ Piperacillin/tazobactam 亦不能只憑「抗菌譜廣」或一次體外 S 和 c
 
 Arai 等人在 2021 年 *Oxford Medical Case Reports* 發表的是**另一名 81 歲日本女性**，既往有反覆 UTI。就醫時 BP **68/36 mmHg**、creatinine **2.7 mg/dL**、lactate **3.3 mmol/L**，左側 CVA tenderness；CT 發現左輸尿管腎盂交界處阻塞性病變。原作者啟動抗菌藥與血流動力支持，因持續嚴重低血壓而延後經皮腎造瘻；在進一步循環支持後完成**percutaneous nephrostomy（PCN）**與引流。**第 4 天**血、尿培養報告 ESBL *E. coli*。病人後續改善，日後病理確認泌尿上皮癌。[原始病例及 CT/引流 Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)。
 
-**最能回答「第一劑怎麼想」的，其實是原作者 Discussion 保留的先驗資訊。** 這名 81 歲病人過去兩次 UTI，曾使用第三代 cephalosporin **cefcapene pivoxil**；作者懷疑既往治療相關抗藥風險，因此在當次培養尚未回報前，**經驗性選擇 carbapenem**。直到住院**第 4 天**，當次血液及尿液培養才報告 ESBL *E. coli*，團隊因而延續原本的 carbapenem。這段是真實醫師的「**既往用藥→推測抗藥可能→先行經驗性治療→當次培養回驗**」，但原文明確報告的是**先前使用 cefcapene**，**不是已掌握一張證實 ESBL 的舊 AST**。也不能僅憑單例證明經驗性 carbapenem 必然優於其他方案。([Arai 原始病例 PDF，印刷 p.434，Case Report 與 Discussion](https://academic.oup.com/omcr/article-pdf/2021/11-12/omab109/41940667/omab109.pdf))
+**最能回答「第一劑怎麼想」的，其實是原作者 Discussion 保留的先驗資訊。** 這名 81 歲病人過去兩次 UTI，曾使用第三代 cephalosporin **cefcapene pivoxil**；作者懷疑既往治療相關抗藥風險，因此在當次培養尚未回報前，**經驗性選擇 carbapenem**。直到住院**第 4 天**，當次血液及尿液培養才報告 ESBL *E. coli*，團隊因而延續原本的 carbapenem。這段是真實醫師的「**既往用藥→推測抗藥可能→先行經驗性治療→當次培養回驗**」，但原文明確報告的是**先前使用 cefcapene**，**不是已掌握一張證實 ESBL 的舊 AST**。也不能僅憑單例證明經驗性 carbapenem 必然優於其他方案。([Arai 原始病例 PDF，印刷 pp.434–435，Case Report 與 Discussion](https://academic.oup.com/omcr/article-pdf/2021/11-12/omab109/41940667/omab109.pdf))
 
 這是一個教學上真正重要的**資訊轉折**：即使先選了合理的抗菌藥，也不能讓被阻塞的集尿系統自動排空。阻塞的解剖原因、是否有感染性腎積水／膿瘍、引流是否可行，與「這個菌對藥是否 S」是不同問題。
 
