@@ -36,7 +36,7 @@ class U01RenalTemporalBoundaryTest(unittest.TestCase):
     def test_dosing_remains_unverified(self):
         order = ORDER.read_text(encoding="utf-8")
         self.assertIn("NOT_VERIFIED", order)
-        self.assertIn("不可貼到 EMR", order)
+        self.assertIn("本稿不是可貼到 EMR", order)
 
 if __name__ == "__main__":
     unittest.main()
