@@ -4310,7 +4310,7 @@
     "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md": {
       "content_blob": "c597090b3dee895df014197e10a546cfb803287d",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/204#independent-hourly-20261028T2309+0800; distinct read-only AI clinical/EPQC context; NOT human clinician/pharmacist signoff; source cross-check Cao 2024 Table1, Evins 2021 Table1, Arai 2021 Figure1/2 captions, IDSA 2025/2026, UKKA July 2026 Figure4/Table22; exact-blob 24/27 units",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/204#issuecomment-6472815183 ; distinct 2026-10-28 23:09 TST independent AI paragraph reviewer (not author, not clinician/pharmacist signoff)",
       "core_reader_question": "面對AML患者K3.0→6.7→7.8→3.6，如何在不延誤急症處置下區分真高鉀、離體裂解與治療/送檢混雜？",
       "new_understanding": "A/B的基質與儀器不同、B/C同走氣送管、D改步行又已治療30分鐘；四次血鉀無法作單因素因果估計，需同時處理危險與設計能區分干擾的新採檢。",
       "strongest_counterargument": "本篇標題稱Lab sheet但實證主要集中高鉀；若承諾整張BMP/CBC決策會超界。現以第一篇測量可信度為唯一主題，Hb/Cr僅作測量邊界而不拼入他例。",
@@ -4528,7 +4528,7 @@
     "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md": {
       "content_blob": "9a5fc533fdd2bf982a250ab4482a900f59a3ef24",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/204#independent-hourly-20261028T2309+0800; distinct read-only AI clinical/EPQC context; NOT human clinician/pharmacist signoff; source cross-check Cao 2024 Table1, Evins 2021 Table1, Arai 2021 Figure1/2 captions, IDSA 2025/2026, UKKA July 2026 Figure4/Table22; exact-blob 24/27 units",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/204#issuecomment-6472815183 ; distinct 2026-10-28 23:09 TST independent AI paragraph reviewer (not author, not clinician/pharmacist signoff)",
       "core_reader_question": "兩名尿路敗血症患者的首劑資訊、Day3/4藥敏與感染性阻塞如何各自改變判斷，為何不能用後見AST或單例PMX-DHP推導通則？",
       "new_understanding": "Evins病人的ceftriaxone失配直到Day3才確立，Arai病人的舊cefcapene暴露並非舊ESBL AST；抗菌涵蓋與UPJ引流是平行任務，2025經驗性選藥與2026定向建議須分時點使用。",
       "strongest_counterargument": "兩個case都沒有首劑前已知ESBL的原始培養，不能證明有舊ESBL時的處方優越性；目前將此疑問明示為另外患者的條件問題並依IDSA而非病例外推。",
