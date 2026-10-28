@@ -1,55 +1,57 @@
-"""Reader-facing conceptual bridges in the evidence-first Lab lesson.
-
-These are source-identity and narrative-regression probes, not independent
-medical review, blind reader transfer measurement or a publication waiver.
-"""
+"""Reader-level chronology, competing mechanisms, and source scope; not clinical signoff."""
 from pathlib import Path
 import re
 import unittest
-ROOT=Path(__file__).resolve().parents[1]
-ARTICLE=ROOT/"content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
-SOURCES=ROOT/"content/xiaoma-internal-medicine/lab-morning-sheet-sources.md"
+
+ROOT = Path(__file__).resolve().parents[1]
+ARTICLE = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
+SOURCES = ROOT / "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md"
+
 
 class LabMorningReaderInference(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.article=ARTICLE.read_text(encoding="utf-8")
-        cls.sources=SOURCES.read_text(encoding="utf-8")
+        cls.body = ARTICLE.read_text(encoding="utf-8")
+        cls.sources = SOURCES.read_text(encoding="utf-8")
 
-    def test_actual_sample_method_and_intervention_explained_before_study(self):
-        body=self.article
-        self.assertLess(body.index("## 第一問"),body.index("## 第二問"))
-        self.assertLess(body.index("20:03"),body.index("## 第二問"))
-        for cue in ("12:00","20:03","20:48","23:37","氣送管","步行",
-                    "whole blood","plasma","降鉀治療約 30 分鐘"):
+    def test_patient_problem_precedes_competing_mechanisms_and_timelines(self):
+        b = self.body
+        self.assertLess(b.index("為什麼來急診"), b.index("真實機轉") if "真實機轉" in b else b.index("高血鉀與假性高血鉀"))
+        self.assertLess(b.index("## 第二問"), b.index("## 第三問"))
+        for cue in ("Hb 4.5", "206.8", "40 mEq", "A，12:00", "B，20:03",
+                    "C，20:48", "D，23:37", "氣送管", "whole blood",
+                    "plasma", "降鉀治療約 30 分鐘"):
             with self.subTest(cue=cue):
-                self.assertIn(cue,body)
+                self.assertIn(cue, b)
+        self.assertIn("重抽是再取得一個數值", b)
 
-    def test_figure_separates_case_report_and_distinct_denominators(self):
-        figure=re.search(r'<figure id="lab-three-clocks".*?</figure>',
-                         self.article,re.S)
+    def test_distinct_mechanisms_need_different_discriminating_evidence(self):
+        b = self.body
+        for cue in ("體內", "離體", "機械", "紅血球", "白血球", "血小板",
+                    "真正能回答疑問的新證據", "運送改變", "治療作用",
+                    "ECG", "低血糖"):
+            with self.subTest(cue=cue):
+                self.assertIn(cue, b)
+        self.assertIn("高血鉀", b)
+        self.assertIn("假性高血鉀", b)
+
+    def test_dual_source_figure_separates_case_and_denominators(self):
+        figure = re.search(r'<figure id="lab-three-clocks".*?</figure>', self.body, re.S)
         self.assertIsNotNone(figure)
-        t=figure.group()
-        for cue in ("AML 病例","6.7","7.8","n=66","n=2,440","864",
-                    "第三項獨立研究"):
+        for cue in ("AML 病例", "6.7", "7.8", "n=66",
+                    "n=2,440", "864", "597", "第三項獨立研究"):
             with self.subTest(cue=cue):
-                self.assertIn(cue,t)
-        self.assertNotIn("09:00",t)
+                self.assertIn(cue, figure.group())
 
-    def test_study_selection_not_transferred_to_high_risk_patient(self):
-        body=self.article
-        for cue in ("eGFR <60","血液惡性疾病","不能搬到所有病房病人",
-                    "不能拿這個比例估計所有急診高鉀患者","ECG 正常","降鉀介入後"):
-            with self.subTest(cue=cue):
-                self.assertIn(cue,body)
-        self.assertIn("PMC7673871",self.sources)
-        self.assertIn("PMC11908522",self.sources)
+    def test_no_unrelated_aki_case_in_main_narrative(self):
+        b = self.body
+        self.assertIn("獨立教材", b)
+        self.assertIn("AKI", b)
+        self.assertNotIn("Cr 1.16", b)
+        self.assertNotIn("75 kg", b)
+        self.assertIn("PMC7673871", self.sources)
+        self.assertIn("PMC11908522", self.sources)
 
-    def test_non_potassium_panel_remains_differentiated_not_prescribed(self):
-        last=self.article.split("## 第三問",1)[1]
-        for cue in ("Serum total CO₂","Hb","platelet","Mg","BUN／Cr",
-                    "沒有對應臨床症候群","不能編造"):
-            with self.subTest(cue=cue):
-                self.assertIn(cue,last)
 
-if __name__=="__main__": unittest.main()
+if __name__ == "__main__":
+    unittest.main()
