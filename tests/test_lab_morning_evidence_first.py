@@ -39,7 +39,7 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertNotIn("舊版用一名 AI 設計的", self.body)
         self.assertNotIn("前一版用", self.body)
         self.assertNotIn("## 後段合成練習", self.body)
-        self.assertIn("不是醫囑", self.body)
+        self.assertIn("不提供選抽血項目或醫囑", self.body)
 
     def test_source_page_agrees_with_current_primary_evidence(self):
         for locator in ("PMC11462689", "PMC7673871", "PMC11908522"):
