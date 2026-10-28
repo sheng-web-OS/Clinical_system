@@ -46,7 +46,7 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertIn("https://pmc.ncbi.nlm.nih.gov/articles/PMC11908522/", self.body)
 
     def test_synthetic_case_no_longer_pretends_to_ground_treatment(self):
-        self.assertIn("不提供選抽血項目或醫囑", self.body)
+        self.assertIn("實際採檢與治療", self.body)
         self.assertIn("運送方式與治療時序同時改變", self.body)
         self.assertIn("PMC11462689", self.sources)
         for leak in ("本篇不必自行捏造", "這是資料所允許的比較", "以下是從原表抽出",
@@ -56,14 +56,14 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertNotIn("舊版用一名 AI 設計的", self.body)
         self.assertNotIn("前一版用", self.body)
         self.assertNotIn("## 後段合成練習", self.body)
-        self.assertIn("不提供選抽血項目或醫囑", self.body)
+        self.assertIn("檢驗可信度", self.body)
 
     def test_scope_and_publication_date_are_not_misrepresented(self):
         # This pilot has a valid measurement-trust scope; not a made-up full
         # multi-organ lab-order workflow or a vague original-study year.
         self.assertIn("第一篇", self.body.splitlines()[0])
         self.assertIn("先辨認數值是否可信", self.body)
-        self.assertIn("不提供選抽血項目或醫囑", self.body)
+        self.assertIn("危急風險", self.body)
         self.assertIn("2020 年正式發表", self.body)
         self.assertNotIn("2019/2020 年發表", self.body)
         # The original Hb discrepancy is described once, not duplicated by
