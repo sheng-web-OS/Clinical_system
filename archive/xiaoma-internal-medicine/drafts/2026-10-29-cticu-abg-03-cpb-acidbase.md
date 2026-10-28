@@ -82,9 +82,19 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 
 這項 2026 研究讓我們知道：除了 chloride 與 lactate，還可以存在其他非乳酸性酸化來源。**但它並沒有建立每位 CABG 病人都必須常規計算 SIG、或依 SIG 數字單獨治療的證據。** 對床邊照護而言，更實際的第一步仍是先取得同期 ABG、electrolytes、albumin、lactate，回顧 fluid input 和臨床循環狀況。
 
-## 六、回到 ICU：推理要從「哪個病因會改變處置」開始
+## 六、另一位 CABG 病人：HCO₃⁻ 很低，氯離子卻不高
 
-想像你是在接班時看見 HCO₃⁻、BE 下降的臨床醫師。**這一段是決策條件的教學推演，不是以上研究中某一名真實患者的病歷。** 即使我們已理解 Stewart，第一個判斷也不該是「要不要補 bicarbonate」，而是「是否有不能等的術後可逆危險」。
+前面的研究讓我們看到，CPB 後 bicarbonate 下降可以有非乳酸來源。但臨床不會因此把每一位心外術後患者都診斷成高氯性酸化。Protos 等人在 2024 年報告一位 **62 歲男性**，原有 Bartter syndrome，長期因腎小管鹽分再吸收障礙而反覆低血鉀、低血氯與代謝性鹼化；後來因 NSTEMI 與多條冠狀動脈病變接受 CABG，CPB 73 分鐘。原作者記載離開 CPB 時血流動力穩定，無須持續使用升壓或正性肌力藥物。
+
+然而，ICU 的第一組實際數字沒有延續他術前「偏鹼」的故事。原文 Table 2 的**術後立即**數據為 **pH 7.25、HCO₃⁻ 14.5 mmol/L、lactate 12.2 mmol/L**，同時 **Cl⁻ 94 mmol/L、K⁺ 2.7 mmol/L、cardiac index 4.3 L/min/m²**。這時真正能支持的判斷是：病人有明顯酸血症與高乳酸，且氯離子並未升高。**不應為了套入 CPB 的高氯機轉，把這份 ABG 說成單純 hyperchloremic acidosis。** CI 的單次數字較高，也不能獨立排除相對容量不足或區域氧供與氧耗失衡。
+
+為什麼這個人更值得追查鹽分和水分流失？原作者指出患者術中尿量高、術後第一天尿鈉及尿氯偏高，符合已知 salt-wasting tubulopathy 的脈絡；臨床團隊在監測下給予晶體液與電解質補充。到**隔天早上**，Table 2 記錄 lactate **2.7**、pH **7.37**、HCO₃⁻ **24**，此時 Cl⁻ 反而升至 **111**。這個反向變化讓我們知道：**血氯增加不必然伴隨更嚴重的淨酸血症；但病例在多項處置後改善，也不能證明低灌流、腎性鹽分流失與補液效果各占多少因果比例。**
+
+這是一位具有特殊腎小管疾病的真實患者，**不是一般 CABG 病人的代表樣本**。原文的討論段另引用不同的「術後立即」pH 與乳酸數字；本文只使用 Table 2 已標明時點的檢驗，不將兩段不同記載拼成自編時間序列。回到一般 CTICU 值班，這個對照提醒我們：**先看當下同一份血氣、電解質、乳酸與血流動力是否支持候選機轉，再決定要追哪一份證據。**
+
+## 七、回到 ICU：推理要從「哪個病因會改變處置」開始
+
+想像你是在接班時看見 HCO₃⁻、BE 下降的臨床醫師。**以下是從前述研究與病例延伸的條件式推理，不是任何一位患者的原始醫囑。** 即使我們已理解 Stewart，第一個判斷也不該是「要不要補 bicarbonate」，而是「是否有不能等的術後可逆危險」。
 
 若患者同時有血壓下降、升壓藥劑量增加、胸管持續大量出血、尿量減少、心律不穩、皮膚灌流惡化或 echo 出現新的心室功能／心包問題，必須立即與心外、麻醉及 ICU 團隊評估出血、低 cardiac output、RV failure、tamponade、心肌缺血和其他 shock 機轉。**即使 lactate 不高、AG 不高，也不能讓高氯性酸化這個解釋延誤床邊搶救。**
 
@@ -99,7 +109,7 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 
 還有一個處置的反事實：若 ABG 顯示的是嚴重酸血症合併高血鉀、循環崩解，或急性呼吸衰竭，立即處理的優先序會完全不同；不能拿前述「群體輕度高氯性變化」當作保守等待的理由。**Bicarbonate、補液、換液、調整通氣或 renal replacement therapy 都不是看到某個 HCO₃⁻ 數字就能自動啟動的選項**；須依臨床失代償、成因、pH／PaCO₂、容量狀態、腎功能與電解質後果評估。
 
-## 七、那是否應該改用 balanced prime？
+## 八、那是否應該改用 balanced prime？
 
 理解機轉後，才適合轉到治療證據。若較高 chloride exposure 可能促進代謝性酸化，改變 priming fluid 的組成是否能改善臨床結果？
 
@@ -109,7 +119,7 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 
 所以選 prime 是術中麻醉與 perfusion 團隊的整體決策；已經進入 ICU 的患者，更不能因為術中接受某一種液體就跳過當下血流動力與器官狀態評估。
 
-## 八、回到術後交班：把群體生理發現轉成個人鑑別
+## 九、回到術後交班：把群體生理發現轉成個人鑑別
 
 回頭看 Chuah 等人的**群體三個時點**：術後立即，chloride、SID、HCO₃⁻ 和 BE 已改變，但 [H⁺] 沒有同幅度上升；隔天 chloride 和 SID 回復，PaCO₂ 卻上升，最終酸鹼狀態再次改變。這是一個值得帶到臨床現場的生理假說，不是某位患者術後低血壓或乳酸升高的病因診斷。你現在應該能同時容納三件事：**酸化來源可以並存；它們可以互相抵銷；而 pH 是結果，不是來源標籤。**
 
@@ -125,6 +135,7 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 
 ### 參考與延伸
 
+- Protos AN, et al. *Coronary artery bypass surgery in a patient with Bartter’s syndrome—postoperative critical care management: a case report.* *Indian J Thorac Cardiovasc Surg.* 2024;40:357–360. **使用原文 Table 2 的 ICU 時序與正文臨床背景；單一病例不足以推論補液療效，且原文即刻術後敘述與 Table 2 不能直接配對。** [公開全文與 Table 1–3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11045673/)。
 - Chuah CS, Kirkbride R, Alston RP, Irons J. *Hydrogen ion concentration and coronary artery bypass graft surgery with and without cardiopulmonary bypass.* J Cardiothorac Surg. 2013;8:184. **主文依原始 Table 2–3 與 Figures 1–3，群體資料而非單人病例。** [原始全文](https://link.springer.com/article/10.1186/1749-8090-8-184)；[Table 3](https://link.springer.com/article/10.1186/1749-8090-8-184/tables/3)。
 - Hayhoe M, et al. *The aetiology and pathogenesis of cardiopulmonary bypass-associated metabolic acidosis using polygeline pump prime.* Intensive Care Med. 1999;25:680–685. **本次取得 PubMed 摘要，未取得可目視的全文 Table／Figure。** [摘要](https://pubmed.ncbi.nlm.nih.gov/10470571/)。
 - Guarnieri M, et al. *Acid-Base Disturbances After Cardiac Surgery: A Cohort Study Using the Physicochemical Approach.* J Cardiothorac Vasc Anesth. 2026;40:204–213. **本次取得 PubMed 摘要，非原始個體病歷。** [摘要](https://pubmed.ncbi.nlm.nih.gov/41130846/)。
