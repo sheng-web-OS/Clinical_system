@@ -91,6 +91,47 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertIn("原圖待核", archive, "Image-dependent questions cannot masquerade as verified figures")
 
 
+    def test_integrated_reading_replaces_original_as_one_exam_material(self):
+        """Q28 links one current teaching version, while the historical original survives."""
+        from exam_archive import question_connections, question_key, concept_url
+        original = next(p for p in self.pages if p["output"] ==
+                        "xiaoma-reading-20260720-diuretics.html")
+        current = next(p for p in self.pages if p["output"] ==
+                       "xiaoma-reading-diuretics-visual.html")
+        self.assertEqual(current["replaces_original"], original["output"])
+        linked_exam = current["related_exams"][0]
+        key = question_key(linked_exam)
+        self.assertEqual(key, (115, 2, 2, "醫學（三）", 28))
+        connections = question_connections(self.pages, ROOT)
+        self.assertEqual([link["page"]["output"] for link in connections[key]],
+                         [current["output"]])
+        self.assertEqual(connections[key][0]["href"], concept_url(current, linked_exam, ROOT))
+
+        record = next(r for r in question_records(self.pages) if
+                      tuple(r["exam"][field] for field in
+                            ("year_roc", "sitting", "stage", "subject", "question_number")) == key)
+        archive = render_exam_archive(self.pages, ROOT)
+        row = archive.split('id="' + archive_anchor(record) + '"', 1)[1].split("</div>", 1)[0]
+        self.assertIn('data-materials="1"', row)
+        self.assertIn('href="' + concept_url(current, linked_exam, ROOT) + '"', row)
+        self.assertNotIn('href="' + original["output"], row)
+        # Removing a redundant year-index link must never delete its archived source.
+        self.assertIn(original, self.pages)
+
+    def test_original_exam_link_remains_when_successor_lacks_that_question(self):
+        """Do not blanket-hide all historical metadata after a version replacement."""
+        from exam_archive import question_connections, question_key
+        pages = copy.deepcopy(self.pages)
+        original = next(p for p in pages if p["output"] ==
+                        "xiaoma-reading-20260720-diuretics.html")
+        current = next(p for p in pages if p["output"] ==
+                       "xiaoma-reading-diuretics-visual.html")
+        key = question_key(original["related_exams"][0])
+        current["related_exams"] = []
+        connections = question_connections(pages, ROOT)
+        self.assertIn(original["output"],
+                      [link["page"]["output"] for link in connections[key]])
+
     def test_exam_bank_answer_is_not_duplicated_as_a_material(self):
         """The Q link already opens its answer; only other concept articles are materials."""
         from exam_archive import question_connections, question_key, concept_url
