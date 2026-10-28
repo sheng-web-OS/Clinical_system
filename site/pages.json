@@ -2507,16 +2507,6 @@
         "embed": false
       },
       {
-        "year_roc": 115,
-        "sitting": 2,
-        "stage": 2,
-        "subject": "醫學（四）",
-        "question_number": 11,
-        "focus": "區分瓣口固定狹窄與流出道層級阻塞；特殊症候群仍須另核解剖。",
-        "concept_heading": "三、聲音是血流事件的投影；壓差和流量不是同一件事",
-        "embed": false
-      },
-      {
         "year_roc": 111,
         "sitting": 1,
         "stage": 2,
@@ -2704,16 +2694,6 @@
         "question_number": 5,
         "focus": "PDA 的管道壓差與開閉生理是先備概念；PGE₁ 作用與早產兒處置依原題。",
         "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
-        "embed": false
-      },
-      {
-        "year_roc": 114,
-        "sitting": 2,
-        "stage": 2,
-        "subject": "醫學（四）",
-        "question_number": 8,
-        "focus": "MVP 的 click 時相及前負荷反應不能替代猝死風險的完整評估。",
-        "concept_heading": "五、姿勢與手法：不是背增強／變弱，而是改變哪個血流參數",
         "embed": false
       },
       {
