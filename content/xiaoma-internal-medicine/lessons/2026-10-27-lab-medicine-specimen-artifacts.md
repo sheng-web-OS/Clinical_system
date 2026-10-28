@@ -116,6 +116,8 @@ ECG 的危險傳導變化與生理背景，使真性高血鉀或其他需立即�
 
 ---
 
+[本篇病例來源與原始圖表對照](../lab-02-specimen-sources.md)，可依原頁對讀數據、採檢條件與證據的適用範圍。
+
 ### 原始來源與延伸核對
 
 1. [AHRQ PSNet，Lehman，*Hemolysis Holdup*（2017）](https://psnet.ahrq.gov/web-mm/hemolysis-holdup)：72 歲男性、兩次 K、ECG／循環變化、急救與醫療安全評論，可讀完整正文。個別病例不能推估誤差發生率。
