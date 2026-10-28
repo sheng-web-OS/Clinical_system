@@ -1012,7 +1012,7 @@
           "source_token": "Staging of AKI",
           "mode": "source_link",
           "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22",
-          "why_link_instead": "原表有分期與尿量持續時間的必要註解；本站保留正版原頁連結，主文僅計算合成病例而不重製原表。",
+          "why_link_instead": "KDIGO 原表包含肌酐倍數、48小時/7天與尿量持續時間等精確診斷/分期條件；本文以原表連結解釋測量界線，不重製原表，也不以 AI 合成患者數字證明任何 AKI 病因或治療處方。",
           "teaching_role": "讓讀者將AKI診斷時序與病因推斷分開；本稿以原指引說明48小時肌酐、7天倍數及連續尿量門檻，不虛構不存在的真實心衰竭病例時序。",
           "scope_limit": "Stage 1 是功能性分期，不表示確診特定腎小管病變、液體反應性或必須開始腎替代治療。"
         },
