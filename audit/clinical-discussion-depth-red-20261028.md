@@ -1,7 +1,7 @@
 # BA aneurysm CBD｜原九頁 Discussion 退稿測試（RED baseline）
 
 - 日期：2026-10-28
-- 來源：2026-09《BA_aneurysm_discussion_9_slides_v2.pptx》（九頁含 Speaker Notes）、《BA_aneurysm_discussion_逐字稿.md》（完整 Slide 1–9）。兩份來自使用者歷史檔案；**尚未確認它們的 repository canonical path 與 Git blob SHA**，因此本檔是私有原稿內容核對與手動 RED 評估，**不是可執行的 blinded/automated regression，也不是獨立 reviewer receipt**。
+- 來源：2026-09《BA_aneurysm_discussion_9_slides_v2.pptx》（九頁含 Speaker Notes）、《BA_aneurysm_discussion_逐字稿.md》（完整 Slide 1–9）。兩份來自使用者歷史檔案；逐字稿已封存為私有 [frozen text fixture](fixtures/ba-aneurysm-discussion-202609-frozen.md)，Git blob SHA `afe6acddeb9d8ca5d677724635b7431100d07a68`，供後續 reviewer 在同版上比較。**這是原稿的封存副本，不等於取得原始 PPT 圖像的所有細節；本輪作者側 RED 評估不是 blinded/automated regression，也不是獨立 reviewer receipt**。
 - 回饋基準：使用者轉述當時主治醫師認為「整份報告缺乏臨床推理深度，任何一點都能深入，但沒有說到重點」。不虛構正式分數、教授問答逐字紀錄。
 - 關聯：[SOP](../docs/clinical-discussion-depth-sop.md)／[#203](https://github.com/sheng-web-OS/Clinical_system/issues/203)／[Draft PR #205](https://github.com/sheng-web-OS/Clinical_system/pull/205)。
 - **判定身分**：作者側 adversarial editorial baseline，**NOT_INDEPENDENT**。這個檔案雖列 RED，也**不能**勾選 #203 的「獨立 reviewer 盲審」完成。
@@ -68,7 +68,7 @@
 
 ## 7｜不能用表面數量代替的後續測試
 
-1. 保存同一版原稿與來源指紋；若無可存取原始檔，不冒稱盲審可重現。
+1. 以 frozen transcript blob SHA 固定文字來源；若要檢驗圖像與實際簡報表達，另讀回原始 PPT，不能以文字副本冒稱完整視覺重現。
 2. 對沒有看到上面預期裁決的另一個審稿脈絡，提供原九頁、用途與原始來源；先獨立寫「最重要臨床矛盾」再給 Q/D/E/R 裁決。
 3. 使用 [EVD 單題深修示範](../experiments/clinical-discussion-depth/evd-timing-deep-rewrite-20261028.md) 進行同等可用時長／同等來源之口試，使用**新的未知反事實題**，不能把本檔提供的考題直接拿來背。
 4. 正文資料沒有完整個案 CT/DSA/手術記錄 → Back-to-patient gate 只能 **CONDITIONAL/UNKNOWN**，不可藉 AI 造病例讓測試變綠。
