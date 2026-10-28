@@ -1,62 +1,55 @@
-"""Guard observed case→clinical inference bridges in the rewritten Lab lesson.
+"""Reader-facing conceptual bridges in the evidence-first Lab lesson.
 
-These static regression probes are not independent clinical review or reader
-comprehension testing, and cannot substitute for the semantic release gate.
+These are source-identity and narrative-regression probes, not independent
+medical review, blind reader transfer measurement or a publication waiver.
 """
 from pathlib import Path
 import re
 import unittest
-
-ROOT = Path(__file__).resolve().parents[1]
-ARTICLE = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
-SOURCE = ROOT / "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md"
-
+ROOT=Path(__file__).resolve().parents[1]
+ARTICLE=ROOT/"content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
+SOURCES=ROOT/"content/xiaoma-internal-medicine/lab-morning-sheet-sources.md"
 
 class LabMorningReaderInference(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.article = ARTICLE.read_text(encoding="utf-8")
-        cls.sources = SOURCE.read_text(encoding="utf-8")
+        cls.article=ARTICLE.read_text(encoding="utf-8")
+        cls.sources=SOURCES.read_text(encoding="utf-8")
 
-    def test_0900_observations_have_actual_decision_and_reversal(self):
-        section = self.article.split("### 09:00：", 1)[1].split("### 第四筆", 1)[0]
-        for cue in ("09:00 的新病例資料", "112/70", "75.6 kg", "75.0 kg",
-                    "殘尿約 65 mL", "反射性補 saline", "腎臟", "90/55", "四肢冰冷"):
+    def test_actual_sample_method_and_intervention_explained_before_study(self):
+        body=self.article
+        self.assertLess(body.index("## 第一問"),body.index("## 第二問"))
+        self.assertLess(body.index("20:03"),body.index("## 第二問"))
+        for cue in ("12:00","20:03","20:48","23:37","Pneumatic tube","步行",
+                    "whole blood","plasma","降鉀治療約 30 分鐘"):
             with self.subTest(cue=cue):
-                self.assertIn(cue, section)
-        self.assertNotIn("假設查房時發現", section)
+                self.assertIn(cue,body)
 
-    def test_figure_changes_clinical_state_not_just_time_labels(self):
-        figure = re.search(r'<figure id="lab-three-clocks".*?</figure>',
-                           self.article, re.S)
+    def test_figure_separates_case_report_and_distinct_denominators(self):
+        figure=re.search(r'<figure id="lab-three-clocks".*?</figure>',
+                         self.article,re.S)
         self.assertIsNotNone(figure)
-        figure = figure.group()
-        for cue in ("A｜09:00", "B｜", "112/70", "90/55", "殘餘鬱血",
-                    "低 forward perfusion", "立即升級", "並行", "待確認"):
+        t=figure.group()
+        for cue in ("AML 病例","6.7","7.8","n=66","n=2,440","864",
+                    "並非同一位病人"):
             with self.subTest(cue=cue):
-                self.assertIn(cue, figure)
-        self.assertNotIn("<h3>分鐘｜", figure)
-        self.assertNotIn("<h3>小時｜", figure)
-        self.assertNotIn("<h3>天｜", figure)
+                self.assertIn(cue,t)
+        self.assertNotIn("09:00",t)
 
-    def test_non_k_non_cr_signal_changes_management_but_not_overclaims(self):
-        section = self.article.split("### 第四筆", 1)[1].split("## 第三問", 1)[0]
-        for cue in ("08:40", "PVCs", "Mg 1.5", "Loop diuretic",
-                    "評估鎂補充", "AKI", "不能根據一個 Mg 1.5"):
+    def test_study_selection_not_transferred_to_high_risk_patient(self):
+        body=self.article
+        for cue in ("eGFR <60","血液惡性疾病","不能搬到所有病房病人",
+                    "不是所有送檢者","ECG 正常","降鉀介入後"):
             with self.subTest(cue=cue):
-                self.assertIn(cue, section)
-        self.assertIn("不等於已證明", section)
-        self.assertIn("NHS Specialist Pharmacy Service", self.sources)
-        self.assertIn("ESC ACVC/EHRA/HFA 2025", self.sources)
+                self.assertIn(cue,body)
+        self.assertIn("PMC7673871",self.sources)
+        self.assertIn("PMC11908522",self.sources)
 
-    def test_handoff_acknowledges_both_updated_decisions(self):
-        handoff = self.article.split("回到原病例，今天的交班", 1)[1].split(
-            "這樣的交班真正提供", 1
-        )[0]
-        for cue in ("09:00", "JVP", "08:40", "PVCs", "Mg 1.5"):
+    def test_non_potassium_panel_remains_differentiated_not_prescribed(self):
+        last=self.article.split("## 第三問",1)[1]
+        for cue in ("serum total CO₂","Hb","platelet","Mg","BUN／Cr",
+                    "沒有對應臨床症候群","不能編造"):
             with self.subTest(cue=cue):
-                self.assertIn(cue, handoff)
+                self.assertIn(cue,last)
 
-
-if __name__ == "__main__":
-    unittest.main()
+if __name__=="__main__": unittest.main()
