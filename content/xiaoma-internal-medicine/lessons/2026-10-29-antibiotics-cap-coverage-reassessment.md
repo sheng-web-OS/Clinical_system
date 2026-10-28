@@ -12,6 +12,11 @@
 
 檢驗顯示 **creatinine 3.3 mg/dL、Na 134 mEq/L、AST 141 U/L、ALT 117 U/L**。COVID-19、流感與 RSV 檢測陰性。原作者將他的 CURB-65 記為 **2 分**，安排一般病房收治並給予 **IV ceftriaxone 加 PO azithromycin**，同時送驗肺炎鏈球菌與 Legionella 尿液抗原。這些數字和藥物是這名真實病人的原文紀錄；報告沒有完整提供所有其他疾病的排除過程，不應替當時醫師補寫成他們已確診哪一種菌。[Spretz et al., Case Presentation 與 Table 1](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
 
+<figure class="diuretic-figure" id="u02-original-admission-cxr">
+<a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2"><img src="https://assets.cureus.com/uploads/figure/file/999808/article_river_58b323c0011911ef9a0fb3882f0846ad-Chest-Xray-1-.png" alt="原病例入院胸部 X 光：右肺多處斑片狀浸潤，左肺另有較少量浸潤，不能從影像直接判定 Legionella。" loading="lazy" style="display:block;max-width:100%;height:auto;margin:0 auto;"></a>
+<figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，**不是**直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；CC BY 4.0，原作者與來源已標明。後續 CT 原圖見 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=3">Figure 2／PDF 第 3 頁</a>。嵌入圖片之手機顯示與可達性仍待正式 QA。</figcaption>
+</figure>
+
 ### 二、在培養前，應該如何思考病原？
 
 發燒、呼吸症狀與新出現的浸潤，使感染性肺炎具有高度可能性；然而浸潤也可能來自肺水腫、肺泡出血、藥物傷害或其他非感染性病變，需與臨床脈絡相互檢驗。若當下以 CAP 為優先診斷，還是不能直接從「影像像肺炎」跳成「是肺炎鏈球菌」。
