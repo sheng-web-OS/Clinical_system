@@ -5645,6 +5645,848 @@
           "line_for_editor": 132
         }
       }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-metabolic-acidosis-etiology.md": {
+      "content_blob": "98d0faf119b5617e342432c05a55dc3348882c3d",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "clinical-os-hourly-automation:6adf8de52d4481918316f2e420c40b3b:turn11:2026-10-28T22:49+08:00:PR201:exact-blob-98d0faf",
+      "core_reader_question": "對重度高氯性代謝性酸血症且水樣排出異常的腎移植病童，如何由血液酸鹼型態提出競爭機轉、辨認排出液身分、取得解剖證據，並分清腎排酸與重症治療的決策邊界？",
+      "new_understanding": "原病例從Figure1酸化先於明顯水瀉，到配對腸道/膀胱溶質、MRU與手術確認尿腸瘻管，逐步將AG分類、尿液流向與腸上皮離子交換分開；讀者能區分個案觀察、機轉推論、診斷效度與成人RCT/指南外推，並以RTA、eDKA及通氣代償反事實更新判斷。",
+      "strongest_counterargument": "現有酸鹼基礎教材已說明AG、Winter、UAG與delta，另有DKA專文草稿；若本篇只是把同一套公式再講一次，便不值得新增長文。逐段審查後保留的是每個公式在這位病童真實病程中的證據角色、尿液進腸道的罕見解剖中介及不同病因的反證；後段成人治療證據僅作安全邊界，不取代專題。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "b786c9a05ef5e7cf7e-1": {
+          "role": "orientation",
+          "reader_gain": "以移植病童的異常排出物串起血液、腎排酸與解剖三個層次。",
+          "nonredundancy_reason": "開篇先建立單一病例的核心疑問，避免後續章節成為互不相關的酸鹼分類。",
+          "verdict": "keep",
+          "excerpt_for_editor": "> 代謝性酸中毒的完整病因推理。 從一名腎移植病童的異常排出物開始，理解 blood anion gap、混合代謝障礙、腎臟 NH₄⁺ 排泄、RTA 與重症代償。不是先背完分類再看案例，而是讓每項檢查回答當下真正還沒解決的問題。",
+          "line_for_editor": 3
+        },
+        "1d1cabbd39e4fb0056-1": {
+          "role": "case_evidence",
+          "reader_gain": "交代雙腎移植、兩條輸尿管、蛋白尿與早期術後腹部異常。",
+          "nonredundancy_reason": "後文尿液走錯出口的解剖可能性，依賴此處兩條移植輸尿管的先備事實。",
+          "verdict": "keep",
+          "excerpt_for_editor": "八歲女孩患有類固醇抗性腎病症候群與 focal segmental glomerulosclerosis（FSGS），因末期腎病接受 deceased-donor pediatric en-bloc kidney transplant——同時移植兩顆來自兒童捐贈者的腎臟，兩條移植輸尿管各自",
+          "line_for_editor": 5
+        },
+        "f762f6d5544b8e8cf3-1": {
+          "role": "case_evidence",
+          "reader_gain": "依原始Figure1保留酸化早於明顯水瀉的順序與排斥治療背景。",
+          "nonredundancy_reason": "若刪除這段，讀者會把水瀉誤當所有酸化的已知起點，且失去時序反證。",
+          "verdict": "keep",
+          "excerpt_for_editor": "腎臟切片顯示 borderline T-cell–mediated rejection，接受 methylprednisolone 治療後，發燒與腹痛有所改善。但酸鹼失衡的訊號已出現：原始病例的 Figure 1 將 acidosis 標在明顯 watery diarrhea 之前，因此不",
+          "line_for_editor": 7
+        },
+        "048648b16e99a8e60a-1": {
+          "role": "decision",
+          "reader_gain": "將嚴重酸血症即時支持與液體來源追查明確並行。",
+          "nonredundancy_reason": "前兩段只有病程，這段首次界定救命和查因不能互相等待的工作分工。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果只在交班時聽到「移植後腹瀉、嚴重酸中毒」，腸胃道 bicarbonate 流失的解釋確實很合理。但此刻有兩個不同的臨床任務：先保護可能因嚴重酸血症惡化的病人；再證明這些看似合理的液體流失，究竟是從哪個器官發生的。 病例之所以值得深入讀，是因為這兩條工作線後來指向了不同答案。",
+          "line_for_editor": 9
+        },
+        "5e3d0aa94da56d17b5-1": {
+          "role": "case_evidence",
+          "reader_gain": "以原Table1兩組血液數據建立酸化與非酸血症狀態的比較。",
+          "nonredundancy_reason": "病例的數值基準與非固定前後時序限制不能由後面的通用公式代替。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原病例 Table 1 提供兩組血液狀態。較嚴重酸血症時，pH 7.20、Na⁺ 137、K⁺ 4.4、Cl⁻ 116、HCO₃⁻ 7、creatinine 0.29 mg/dL；另一組在接受持續緩衝補充的臨床情境中，pH 7.36、Na⁺ 136、K⁺ 4.2、Cl⁻ 110、HCO₃⁻",
+          "line_for_editor": 13
+        },
+        "edde84a7f60c72bd69-1": {
+          "role": "definition",
+          "reader_gain": "區分acidemia、低bicarbonate與可能混合呼吸性障礙。",
+          "nonredundancy_reason": "避免把單份chemistry當完整血氣，並明示此例缺PaCO2無法實證Winter。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一個問題並不複雜：pH 7.20 是真正的 acidemia，不是單純在 chemistry 上看到低 bicarbonate。低 HCO₃⁻ 配上明顯的酸血症，支持重要的代謝性酸化。但只憑一個 HCO₃⁻ 數字，不一定能辨認所有原發酸鹼障礙——長期 respiratory alkalo",
+          "line_for_editor": 15
+        },
+        "c394adaf4abc4cb1f0-1": {
+          "role": "causal_bridge",
+          "reader_gain": "從低HCO3提出緩衝、流失、再生與通氣共同決定pH的必要模型。",
+          "nonredundancy_reason": "為下一個Henderson公式建立生理問題，而非突然丟出抽象計算式。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真正需要解釋的是：這位病童的 HCO₃⁻ 為什麼會低到 7？血中的 bicarbonate 不是一個孤立庫存，它參與 H⁺ 緩衝、隨胃腸或腎臟流失，並依賴腎臟重新產生；同時 PaCO₂ 的排除也會改變 pH。Henderson–Hasselbalch 將兩端聯繫起來：",
+          "line_for_editor": 17
+        },
+        "4348d6504d24962c61-1": {
+          "role": "definition",
+          "reader_gain": "用Henderson–Hasselbalch明確表示HCO3與PaCO2對pH的相對關係。",
+          "nonredundancy_reason": "缺公式將無法檢驗同一pH下代謝與呼吸成分如何彼此影響。",
+          "verdict": "keep",
+          "excerpt_for_editor": "pH ≈ 6.10 + log₁₀［HCO₃⁻／（0.03 × PaCO₂）］。",
+          "line_for_editor": 19
+        },
+        "0f7b1e7633ebf994e3-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明血氣計算HCO3與chemistry total CO2的測量身分及時點。",
+          "nonredundancy_reason": "避免把兩種來源或不同採檢時間的數值硬拼成同一患者血氣。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是描述當下酸鹼平衡關係的公式，還不是病因診斷。血氣儀的 bicarbonate 通常由測得的 pH 和 PCO₂ 計算；血清 chemistry 的 total CO₂ 主要代表 bicarbonate。若兩者與臨床情況矛盾，先核對檢體、時間與處理，不應把不同時點的數字拼成同一份血氣。",
+          "line_for_editor": 21
+        },
+        "5f444509645fc8c867-1": {
+          "role": "safety",
+          "reader_gain": "把有效換氣、灌流、ECG、血鉀和疲乏放回立即危險分流。",
+          "nonredundancy_reason": "在病因公式之後提醒處置並行，防止讀者因等待AG計算延誤支持。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在評估這份重度酸血症時，不能只想公式：必須立即關心有效通氣、循環灌流、心電圖、血鉀與患者是否正在疲乏。這些是和病因追查並行的臨床工作；並非先解出所有 gap，才有資格做危急處置。",
+          "line_for_editor": 23
+        },
+        "fb765c38eefc609b86-1": {
+          "role": "orientation",
+          "reader_gain": "以Cl升高引出NAGMA這個待確認的生化表型。",
+          "nonredundancy_reason": "承接本例數值才引入AG，避免分類與患者脫節。",
+          "verdict": "keep",
+          "excerpt_for_editor": "接著看 chloride：在 bicarbonate 大幅下降時，Cl⁻ 卻明顯偏高。這使 hyperchloremic／normal-anion-gap metabolic acidosis（NAGMA） 成為需要優先辨認的生化型態。",
+          "line_for_editor": 27
+        },
+        "adee2b1a9445c7680f-1": {
+          "role": "definition",
+          "reader_gain": "明定常用不含鉀AG公式及其計算身分。",
+          "nonredundancy_reason": "沒有這條定義就無法理解原作者AG18與本站AG14為何不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Blood anion gap（AG）= Na⁺ −（Cl⁻ + HCO₃⁻）（常用、不計 K⁺ 的版本）。",
+          "line_for_editor": 29
+        },
+        "5ab5fc4bfeaef6194c-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用電中性和未測陰離子解釋高AG與高氯性酸化的不同形成路徑。",
+          "nonredundancy_reason": "它將數學差值轉成病理生理，阻止把AG當酸血症嚴重度。",
+          "verdict": "keep",
+          "excerpt_for_editor": "它不是電荷突然消失的缺口。血漿仍遵守電中性，只是常規 chemistry 不會列出所有陰陽離子。新生成的乳酸或酮酸等酸性產物留下未測陰離子時，AG 常上升；若 bicarbonate 主要因腸道流失、腎臟排酸不足或相對 chloride 負荷增加而下降，血中 Cl⁻ 可以相對上升，AG 因",
+          "line_for_editor": 31
+        },
+        "92f50a9a33d87d128c-1": {
+          "role": "case_evidence",
+          "reader_gain": "指出原表AG18與6–22參考範圍，提出公式不一致的核查問題。",
+          "nonredundancy_reason": "為後續含鉀計算設立真實來源衝突，而非平白加入另一套公式。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這裡有一個病例原表本身就值得教的陷阱。原作者報告 AG 18，參考區間 6–22；但若照上面不含 K⁺ 的公式，這一組數據得到：",
+          "line_for_editor": 33
+        },
+        "6f5fd4bc7138c16d5d-1": {
+          "role": "case_evidence",
+          "reader_gain": "實算含鉀AG18.4，重現原Table1報告值。",
+          "nonredundancy_reason": "這是定位原作者公式的關鍵反證，不能只留下不含鉀14。",
+          "verdict": "keep",
+          "excerpt_for_editor": "含 K⁺：137 + 4.4 − 116 − 7 = 18.4 mmol/L。",
+          "line_for_editor": 36
+        },
+        "11795fd4d6aa3675b2-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以第二組AG10.2交叉核查並禁止跨公式套用參考區間。",
+          "nonredundancy_reason": "將單次巧合提升為兩組數值一致性，避免假性HAGMA診斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "含 K⁺ 的結果才與原表約 18 相符；另一組 Na 136、K 4.2、Cl 110、HCO₃⁻ 20 亦得到約 10.2，符合原表約 10。原表很可能採含 K⁺ 的算法。不能拿「18」套入另一間醫院、不含 K⁺ 的參考區間後宣布她得了 high-AG acidosis。數值、公式、參考",
+          "line_for_editor": 38
+        },
+        "a93221565bbcabb9ac-1": {
+          "role": "definition",
+          "reader_gain": "解釋低白蛋白如何降低AG基線而遮蔽未測陰離子。",
+          "nonredundancy_reason": "承接前段AG判讀後新增真正可能影響此病例分類的共變項。",
+          "verdict": "keep",
+          "excerpt_for_editor": "還有 albumin：它是血中主要的未測陰離子之一。低白蛋白會使原本的 AG 基線下降，因此可能掩蓋真正增加的未測陰離子；常見近似為：",
+          "line_for_editor": 40
+        },
+        "7cf22d3008f3b57d6e-1": {
+          "role": "definition",
+          "reader_gain": "給出albumin校正AG的近似公式與g/dL單位要求。",
+          "nonredundancy_reason": "若只說低白蛋白會影響AG，讀者無法知道何時及如何檢驗幅度。",
+          "verdict": "keep",
+          "excerpt_for_editor": "AG corrected ≈ AG measured + 2.5 ×（4 − albumin［g/dL］）。",
+          "line_for_editor": 42
+        },
+        "a656b379d6a07c4557-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用獨立數字示範校正並保留原Table1 albumin單位疑點。",
+          "nonredundancy_reason": "將示例與病童資料隔離，防止憑疑似錯誤單位製造精確病人校正值。",
+          "verdict": "keep",
+          "excerpt_for_editor": "例如另一位患者的 Na 140、Cl 110、HCO₃⁻ 18，實測 AG 12；albumin 若為 2 g/dL，校正約 17。這只是獨立計算示例，不是本病童的額外化驗結果。IBCC 採較務實的 AG 評估法，強調對每份 chemistry 注意較高或上升的 AG，並優先直接測量有危險",
+          "line_for_editor": 44
+        },
+        "164083040768db0e19-1": {
+          "role": "causal_bridge",
+          "reader_gain": "回收高氯NAGMA的可說與不可說，將問題轉向HCO3去向。",
+          "nonredundancy_reason": "分類不能指認流失器官，此段是從血液型態轉到病因機轉的橋。",
+          "verdict": "keep",
+          "excerpt_for_editor": "現在把這些檢驗放回女孩身上。她有重度酸血症、高氯性變化，且按原報告使用的 AG 定義屬於 NAGMA。這只能告訴我們 bicarbonate 減少時，沒有出現足以直接解釋全部失衡的 AG 上升；還不能告訴我們 bicarbonate 究竟去了哪裡。",
+          "line_for_editor": 46
+        },
+        "19e116b8817575c0e6-1": {
+          "role": "causal_bridge",
+          "reader_gain": "提出腸道鹼流失能解釋水瀉和高氯酸化，卻不能證實液體身分。",
+          "nonredundancy_reason": "後續糞便與禁食檢查需要這個初始合理假說及其限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一種是從身體流失了鹼。腸道有大量含 bicarbonate 的分泌液；若持續水瀉，HCO₃⁻ 隨液體流失，血氯相對上升。她每天排出 1–2 L 水樣液體，因此腸道來源自然要查，但「水樣液體從肛門出來」還不能證明內容物就是典型腸液。對這一類機轉，真正需要的是腸道病史、攝食和禁食的變化、感染",
+          "line_for_editor": 50
+        },
+        "01c06c91887edc5bf4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "提出腎小管排酸不足的競爭解釋及肌酐不能代表排酸能力。",
+          "nonredundancy_reason": "避免因creatinine回落就不當排除移植腎小管問題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二種是腎臟沒有充分保留或再生 bicarbonate。腎小管可因損傷、藥物、aldosterone 相關異常等原因，在血中已酸時仍不能提供適當的淨排酸。這位病童曾出現移植腎功能異常、接受排斥治療，因此這個方向不能因後來 serum creatinine 回到約 0.3 mg/dL 就被排",
+          "line_for_editor": 52
+        },
+        "65ef9413f340c959bc-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將氯負荷、營養支持及並存有機酸列為可能而未排除的過程。",
+          "nonredundancy_reason": "前兩條僅涵蓋鹼流失與腎臟，本段阻止把NAGMA硬變成二選一。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三種是相對 chloride 負荷增加，或有不只一個酸鹼過程。大量 saline、含 chloride 的輸液、營養支持配方，都可能影響酸鹼；乳酸或酮酸等高 AG 成分，也可能與高氯性酸化並存，尤其當 albumin 偏低使 AG 基線下降時。這裡需要的是輸液與藥物的實際時間線、albu",
+          "line_for_editor": 54
+        },
+        "819add1809c7589c82-1": {
+          "role": "decision",
+          "reader_gain": "把可並存的三機轉轉化為先查水樣排出而非否定腎病的行動。",
+          "nonredundancy_reason": "這是從鑑別架構到下一段真實檢查順序的必要轉場。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這三類機轉可以同時存在。它們目前都能解釋血中 bicarbonate 減少的一部分，卻還沒有回答病人的第二個異常——為何有如此大量、持續的水樣排出。因此，下一步先檢驗與症狀最直接相關的胃腸道候選原因，並不表示已經認定腎小管完全正常。這是兩個不同的問題，不能用一份診斷清單把它們混在一起。",
+          "line_for_editor": 56
+        },
+        "8321fa2d273c325569-1": {
+          "role": "orientation",
+          "reader_gain": "分開感染、藥物、滲透性和分泌性腹瀉的不同預測。",
+          "nonredundancy_reason": "讓後續陰性檢查有可比較的候選，而非只列名詞。",
+          "verdict": "keep",
+          "excerpt_for_editor": "大量水樣排出最先令人想到感染性腸炎、藥物相關腸道疾病、滲透性或分泌性腹瀉，以及其他高輸出腸液流失。這些候選不是同義詞，因為它們對檢查和病程的預測不同。",
+          "line_for_editor": 60
+        },
+        "4521ed85d972b0044d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋禁食反應與黏膜證據如何更新不同腹瀉假說。",
+          "nonredundancy_reason": "提供解讀後續TPN仍排出的前提，也限制陰性檢查的排除力。",
+          "verdict": "keep",
+          "excerpt_for_editor": "感染或明顯腸黏膜疾病可能在病原檢驗、糞便及內視鏡留下相應線索；純粹由攝入的滲透物驅動的腹瀉，減少經腸攝入後通常會減少；分泌性腹瀉則可能在禁食後仍持續。這些只是機轉所提供的方向，不是任何單次檢查都能「一票否決」整個疾病類別。",
+          "line_for_editor": 62
+        },
+        "fcb1b3eb473923976b-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現真實糞便、內視鏡、禁食與高量緩衝補充的時間性結果。",
+          "nonredundancy_reason": "這些失敗的腸道解釋是轉向排出液身分的具體理由，不能用摘要取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "實際上，團隊進行了糞便細菌與病毒檢查、寄生蟲、C. difficile、乳糜瀉血清學以及上下消化道內視鏡，未找到足以解釋病程的異常。[1] 這使所檢驗的感染與顯著黏膜病變欠缺支持，不等於所有腸道疾病都已排除。接著，女孩即使接受 bowel rest 與全靜脈營養，仍每日排出大量逐漸清澈的水",
+          "line_for_editor": 64
+        },
+        "b9648bd60da19b1d70-1": {
+          "role": "case_evidence",
+          "reader_gain": "將膀胱尿量低於500mL與creatinine約0.3及大量排出並置。",
+          "nonredundancy_reason": "這組出入量矛盾首次提出腎臟產尿與膀胱記錄不同的可能。",
+          "verdict": "keep",
+          "excerpt_for_editor": "此時，與「哪一種腸炎仍可能漏診？」同樣重要的，是一個被先前診斷框架忽略的出入量問題：女孩經膀胱記錄的尿量降到每日不足 500 mL，serum creatinine 卻在後續病程維持約 0.3 mg/dL；與此同時，她仍從腸道出口排出大量清澈液體。[1]",
+          "line_for_editor": 66
+        },
+        "6be34a118e52916801-1": {
+          "role": "counterfactual",
+          "reader_gain": "對比真正少尿與尿液未抵達膀胱，明示沒有已知LR。",
+          "nonredundancy_reason": "用移植輸尿管背景把罕見假說變成可檢驗的路徑，而非臆測盛行率。",
+          "verdict": "keep",
+          "excerpt_for_editor": "有一種解釋是腎臟真的產尿減少；它需要腎灌流、功能變化、腎後阻塞等證據來評估。另一種解釋是腎臟產出的尿不全都抵達膀胱。後者之所以值得提出，不是因為「少尿加正常 creatinine」對尿腸瘻管有已知的高 likelihood ratio，而是因為這名患者剛接受過兩條移植輸尿管的接合，且曾有腹",
+          "line_for_editor": 68
+        },
+        "9bc24650196f6eb066-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明單純urinoma無法解釋肛門排液，必須另有腸道交通。",
+          "nonredundancy_reason": "這條必要中介避免從尿液外漏直接跳到尿腸瘻管結論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "但要小心：尿液漏到腹部形成 urinoma，尚不能解釋為何從肛門排出大量液體；尿液必須真的與腸道相通，才有機會形成這一組現象。現在臨床邏輯把問題縮到比「腹瀉的所有病因」更小的一個範圍：",
+          "line_for_editor": 70
+        },
+        "0416dc56e404fbac6b-1": {
+          "role": "orientation",
+          "reader_gain": "把模糊腹瀉轉成液體是否含尿與是否異常交通的兩個問題。",
+          "nonredundancy_reason": "後續溶質採樣與MRU分別回答兩問，此段使檢查選擇有方向。",
+          "verdict": "keep",
+          "excerpt_for_editor": "> 這些看似水樣糞便的液體，有沒有可能包含尿液？如果有，尿液是否透過某條異常通路進入腸道？",
+          "line_for_editor": 72
+        },
+        "c0771ad88f9fa17214-1": {
+          "role": "decision",
+          "reader_gain": "交代假說尚未確診但已足以選擇液體測量與解剖影像。",
+          "nonredundancy_reason": "區分可測的臨床問題與無依據的罕病機率判斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個問題不需要在此刻宣告疾病已確診，也不需要先編出少見瘻管的盛行率。它的價值是讓我們第一次清楚知道應該去量什麼、之後需要哪種影像。被問到的是液體身分與流動路徑，而不是單純另一個腸道病原。[1]",
+          "line_for_editor": 74
+        },
+        "e3343b67f70ff399f6-1": {
+          "role": "case_evidence",
+          "reader_gain": "解釋為何同時取腸道排出物與膀胱尿液比較。",
+          "nonredundancy_reason": "沒有採樣時點與出口身分，後面的Table1濃度比較可能被錯誤拼接。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若想知道兩個出口是不是來自同一個系統，首先要辨認流出的液體究竟含有什麼。團隊因而同時比較腸道排出物與膀胱尿液，而不是把兩份不同時間、不同狀態的數據拼在一起。[1]",
+          "line_for_editor": 78
+        },
+        "cb13bcd6b398d1bee0-1": {
+          "role": "source_context",
+          "reader_gain": "標明配對溶質數據來自原Table1且濃度本身不能證明瘻道。",
+          "nonredundancy_reason": "作為數值表的閱讀限制與原始資料定位，非重複的病因結論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "下列數值取自 原始病例 Table 1。讀表時需要記住兩個出口的液體身分尚在檢驗中，不能單憑濃度證實交通路徑。",
+          "line_for_editor": 80
+        },
+        "fc4344338b703815ac-1": {
+          "role": "case_evidence",
+          "reader_gain": "解析pH9及腸道排出物高creatinine，並提出濃度差的混雜來源。",
+          "nonredundancy_reason": "讀表後需要知道哪些數值真正改變尿源假說、哪些不能直接推出流量。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一眼看最不尋常的是 pH 9.0：大量「水瀉」竟有極高的鹼性。第二個線索是腸道排出物含有高濃度 creatinine，比採自膀胱的尿液還高。這不代表腸道會製造 creatinine；也不能因為兩者濃度不同，就排除尿液來源。兩條輸尿管分別流到哪裡、液體在腸道接觸黏膜多久、水分和溶質如何交換",
+          "line_for_editor": 91
+        },
+        "9c86cfe0402769e90e-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用配對溶質和出入量逐一檢驗純腸液、RTA及單純urinoma。",
+          "nonredundancy_reason": "這是從異常數值到尿腸交通假說的反證過程，不是重述表格。",
+          "verdict": "keep",
+          "excerpt_for_editor": "現在讓仍在競爭的解釋再接受一次檢驗。若這只是單純高流量腸道分泌，必須另解釋腸道排出物為何有高濃度尿源性 creatinine、同時膀胱尿量下降；若只是腎小管排酸障礙，也不能單獨造成兩個排出出口的異常組合；若只是尿液漏在腹腔形成 urinoma，則不足以解釋從肛門持續大量排出液體。尿液經異常",
+          "line_for_editor": 93
+        },
+        "011c53f5bd9e963e7e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "禁止由濃度推定流率或把腸液UAG當腎臟NH4測量。",
+          "nonredundancy_reason": "為不同檢體和檢查目的設界，阻止看似相同的gap被誤用。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這組資料不能單獨確診瘻管：creatinine 濃度比較無法決定流量，也不能定量各離子跨膜轉運；原表把腸道液的某些 gap 與尿液指標並列，是在研究兩種排出物的差異，不表示「腸道液 UAG」可直接作為標準腎小管排酸檢驗。",
+          "line_for_editor": 95
+        },
+        "a3ddec6cb4af3563fb-1": {
+          "role": "decision",
+          "reader_gain": "由液體身分問題轉向交通位置問題，交代選MRU的臨床理由。",
+          "nonredundancy_reason": "前段化驗只能支持尿源成分，本段指出還缺解剖證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "接下來要用哪一項工具，必須由更窄的問題決定。 先前想知道的是「水樣排出物是否可能含有尿液？」；同時比較兩個出口的溶質，是針對液體來源所做的檢驗。如今的新問題是「漏尿發生在哪裡、是否真的與小腸相通？」；因此需要能顯示尿液流向與異常交通的影像。原團隊選擇了 contrast-enhanced ",
+          "line_for_editor": 97
+        },
+        "8221e11db272dab5a1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "界定CT與MRU比較時應搜尋的患者族群、影像任務及風險。",
+          "nonredundancy_reason": "防止從一例成功MRU不當推出普遍最佳檢查。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果團隊還要在 CT 尿路成像、MRU 或其他方法中選擇，這才是需要進一步找外部證據的具體問題：對術後懷疑尿路與腸道交通的病人，哪種成像方法能在現有腎功能、對比劑風險與醫院可用條件下，辨識尿液外漏的範圍，提供可供外科規劃的解剖資訊？此時搜尋應限於疑似尿路瘻管的病人與相應影像技術，而不是重新",
+          "line_for_editor": 99
+        },
+        "ec27ad14bf1e441401-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明示單例不能估計敏感度、特異度、LR或證明MRU優勢。",
+          "nonredundancy_reason": "它把臨床機轉推論與群體診斷效度研究徹底分離。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這份單一病例只告訴我們，原團隊使用 MRU 看到了異常交通，手術又確認了路徑。它沒有提供 paired stool/urine 檢驗、MRU、CT 之間的 sensitivity、specificity 或 likelihood ratio，也不足以證明 MRU 對任何疑似瘻管病人都是首選",
+          "line_for_editor": 101
+        },
+        "c97950c39abab3b50b-1": {
+          "role": "case_evidence",
+          "reader_gain": "依MRU顯示雙輸尿管外漏、urinoma與小腸瘻道重建實際解剖。",
+          "nonredundancy_reason": "此段首次提供超越溶質假說的直接影像交通證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在難解水樣排出持續約兩週後，團隊安排 contrast-enhanced magnetic resonance urogram（MRU）；整段未獲診斷的病程接近三週，不能將兩個時間描述視為精確相同。MRU 顯示：兩條移植輸尿管都有尿液外漏，先匯入右側 retroperitoneal 尿液積",
+          "line_for_editor": 114
+        },
+        "faf671c1f4da486a1f-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現術中雙輸尿管中段壞死、修補方式與術後恢復。",
+          "nonredundancy_reason": "影像診斷後仍需手術所見及處置結果，才能解釋病程如何結束。",
+          "verdict": "keep",
+          "excerpt_for_editor": "手術時發現兩條移植輸尿管的中段壞死；團隊引流 urinoma、切除與修補受影響的 mid-jejunum 瘻道，並將一條移植輸尿管接至原生輸尿管、另一條重新接回膀胱。修補後，水樣排出迅速恢復正常，代謝性酸中毒解除；九天後病人以穩定腎功能出院，長期追蹤亦保持良好的移植腎功能。[1]",
+          "line_for_editor": 116
+        },
+        "49aa3d2c39946168d2-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將解剖證實、酸化機轉相符及最初壞死原因未知分層。",
+          "nonredundancy_reason": "阻止把術後改善誤讀為每一條因果鏈都已實驗證實。",
+          "verdict": "keep",
+          "excerpt_for_editor": "手術的所見和術後變化，終於讓先前幾個互相競爭的解釋得到不同程度的回答：「尿液是否進入小腸」有了影像與手術的解剖證據；「尿液是否可造成血中高氯性酸化」與術後酸中毒消退相吻合；「瘻管最初為何形成」仍不能斷言只有一種機轉。 原作者討論輸尿管中段的缺血性損傷與腎臟切片可能的關聯，但沒有直接證實每個",
+          "line_for_editor": 118
+        },
+        "00646010889239e645-1": {
+          "role": "causal_bridge",
+          "reader_gain": "整合排出量、膀胱尿量與高氯酸化的單一主要機轉。",
+          "nonredundancy_reason": "前段分別說明手術與證據等級，本段才回收三個原先分離的臨床現象。",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，先前沒有檢驗證據的腎小管排酸問題、輸液成分與其他酸負荷，不應事後被寫成「都已經排除」。更確切地說，是這條已由影像、手術與病程變化支持的尿腸交通機轉，能連續解釋大量排出、膀胱尿量下降與高氯性酸化這三個原本分離的問題。它對此例已足夠解釋主要病程，卻不等於在其他病人也有相同的前測機率。",
+          "line_for_editor": 120
+        },
+        "ada3bc17210466e3a7-1": {
+          "role": "causal_bridge",
+          "reader_gain": "由尿液改道導入腸上皮並非被動導管的轉運前提。",
+          "nonredundancy_reason": "若省略上皮交換，尿液進小腸與血中酸化之間仍缺必要中介。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是整個病例最值得慢慢理解的部分。想像尿液原本由腎臟產生、進入輸尿管、最後流向膀胱排出；如今卻有一部分持續流進小腸。腸道上皮不是被動的水管，而是能進行主動、被動離子轉運的組織。",
+          "line_for_editor": 124
+        },
+        "80fccbfc6de015de88-1": {
+          "role": "causal_bridge",
+          "reader_gain": "分別推導Cl/HCO3交換與尿素衍生NH3/NH4可能的酸化負荷。",
+          "nonredundancy_reason": "它解釋高氯表型而不把排出物成分等同直接量到跨膜通量。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一方面，腸上皮具有 Cl⁻／HCO₃⁻ 相關交換與分泌機制。當尿液長期接觸腸黏膜，氯離子可被再吸收，而 bicarbonate 可向腸腔分泌；對循環而言，是相對 chloride 負荷增加、鹼當量喪失。另一方面，尿液中的 urea 在腸道細菌作用下可產生 ammonia（NH₃）與 CO₂",
+          "line_for_editor": 126
+        },
+        "57b188430ad85e3607-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分CFTR/SLC26生理模型與病童未測得的轉運蛋白流率。",
+          "nonredundancy_reason": "避免將出版社示意機轉誤寫成患者實測的唯一離子路線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在生理模型裡，CFTR／SLC26 系列等上皮運輸系統與 bicarbonate 分泌相關；然而，這位病童沒有逐條測定 CFTR、SLC26、NHE3 通量。因此應稱為「能解釋觀察的生理機轉」，而不是「已從這位患者直接測得的完整轉運路線」。小腸的段落、接觸面積、停留時間、尿液組成與腎功能，",
+          "line_for_editor": 128
+        },
+        "f582392c3ebbd107ce-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把腸上皮模型帶回禁食仍排液、少膀胱尿與尿源溶質三聯證據。",
+          "nonredundancy_reason": "機轉圖前需要重申何種跨器官證據才使診斷可信，不是單靠公式。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這也解釋為何一次性的輸液、單純高氯負荷或一般腸胃炎，雖然都能產生類似的血液表型，卻不一定能解釋她在空腹狀態仍持續大量排出、膀胱尿量減少、尿液樣溶質出現在腸道的組合。真正讓診斷從「相容」升級到「可信」的，始終是時間線與跨器官證據，而非只看化學公式。",
+          "line_for_editor": 130
+        },
+        "5efea8b86e0161a1d9-1": {
+          "role": "decision",
+          "reader_gain": "限制一般成人NAGMA使用MRU或尿電解質的條件與優先序。",
+          "nonredundancy_reason": "防止將本病例罕見解剖調查流程泛化為每位NAGMA病人的常規。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在常見的成人 NAGMA 病人中，不會每個人都需要 MRU，也不會每個人都需要尿液電解質。如果病史已明確指出高流量腸液流失、近期大量 saline 或藥物造成 bicarbonate 流失，當務之急常是處理原因並追蹤改善；IBCC 也主張先靠病史、用藥與時間趨勢找較常見且足以解釋的機轉。[",
+          "line_for_editor": 143
+        },
+        "d8f3cc9f9e97d988ed-1": {
+          "role": "orientation",
+          "reader_gain": "以腎臟是否能增加NH4排泄定義尿液檢查真正要回答的問題。",
+          "nonredundancy_reason": "接回先前未排除的腎小管假說，並強調可與解剖調查並行。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當腎臟是否適當排酸仍是關鍵的不確定性，尿液測試才有清楚角色；它可以與其他病因調查並行，而不是必須等所有腸道或解剖病因被排除後才能開始。 要問的是：血中已經酸了，腎臟能否增加 NH₄⁺ 的生成與排泄，以排出每日非揮發性酸並形成新的 bicarbonate？",
+          "line_for_editor": 145
+        },
+        "262fda130912294b4d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋近端ammoniagenesis、遠端捕捉H+與血鉀醛固酮關係。",
+          "nonredundancy_reason": "不先理解NH4生成排泄，UAG正負號就只是缺生理的記憶口訣。",
+          "verdict": "keep",
+          "excerpt_for_editor": "腎臟主要藉 proximal tubule 的 ammoniagenesis 生成 NH₄⁺／新 bicarbonate，再經腎單位各段運送與 distal collecting duct 的酸分泌使 NH₃ 捕捉 H⁺、以 NH₄⁺ 形式排出。這個過程同時依賴血鉀、aldosterone",
+          "line_for_editor": 147
+        },
+        "5755046c2f4f65889b-1": {
+          "role": "definition",
+          "reader_gain": "說明直接NH4測量不常見才引出傳統尿AG替代指標。",
+          "nonredundancy_reason": "避免未交代測量缺口便直接引入新的公式。",
+          "verdict": "keep",
+          "excerpt_for_editor": "常規尿液檢查不一定能直接測 NH₄⁺，傳統上以尿液陰離子間隙（urine anion gap, UAG）間接判讀：",
+          "line_for_editor": 149
+        },
+        "50c2547d27cb8b5fc2-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "推導UAG負值的NH4Cl前提與酮陰離子、CKD等失效情境。",
+          "nonredundancy_reason": "這是尿AG不能當RTA確診書的核心安全限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果 NH₄⁺ 主要以 NH₄Cl 形式被排出，尿 Cl⁻ 相對增加，UAG 更負，支持腎臟有增加酸排泄；若 NH₄⁺ 很少，UAG 可能偏正。然而，這套推理有嚴格前提：NH₄⁺ 必須主要伴隨 chloride，而不是 ketoanion、其他有機陰離子等物質。 當尿中大量排出 β-hyd",
+          "line_for_editor": 153
+        },
+        "0ccfc876e9fcc7b560-1": {
+          "role": "orientation",
+          "reader_gain": "說明何時改用尿滲透壓差估計未測尿液溶質。",
+          "nonredundancy_reason": "在UAG失效後提供另一類間接估計工具的臨床動機。",
+          "verdict": "keep",
+          "excerpt_for_editor": "必要時可利用 urine osmolal gap（UOG）從另一個角度估計未測溶質：",
+          "line_for_editor": 155
+        },
+        "89d1c8cb7101581960-1": {
+          "role": "definition",
+          "reader_gain": "明定UOG組成、單位換算與UOG/2估計NH4的假設。",
+          "nonredundancy_reason": "沒有公式及單位要求，下一段研究偏差無從理解。",
+          "verdict": "keep",
+          "excerpt_for_editor": "UOG ≈ urine measured osmolality −［2 ×（U-Na + U-K）+ U-glucose + U-urea］，其中所有溶質濃度先換算為 mmol/L；若 glucose、urea 以 mg/dL 報告，需分別依適用轉換係數換算。假設主要未測粒子為 NH₄⁺ ",
+          "line_for_editor": 157
+        },
+        "118a696e08d90c1993-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用CKD研究n36與高估4.7說明相關性不等於無偏測量。",
+          "nonredundancy_reason": "把尿NH4濃度、日排酸量與估計偏差分開，避免spot urine過度推論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是估計，不是直接測量，也不是每日淨排酸速率。若尿流量極低，濃度再高也未必代表每天排出了足夠 NH₄⁺；mannitol、異常溶質或 CKD 也可能造成偏差。Fujimaru 等人在 36 名未透析 CKD 患者的研究中發現，UOG/2 與直接測得的 urine NH₄⁺ 高度相關（r =",
+          "line_for_editor": 159
+        },
+        "6218d873443b9c2a59-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以尿pH與NH4不同的物理量解釋type4 RTA可有低尿pH。",
+          "nonredundancy_reason": "這是破解尿pH偏酸便排除RTA的必要反例。",
+          "verdict": "keep",
+          "excerpt_for_editor": "更不能因為一份尿液 pH 5.0，就宣稱腎臟排酸正常。pH 代表游離 H⁺ 的活性，NH₄⁺ 則使大量 H⁺ 能以緩衝的形式排出；兩者不是同一個量。尤其 type 4 RTA 可以因 aldosterone 缺乏／阻抗及高血鉀抑制 ammoniagenesis，而在尿 pH 已偏低時，仍不",
+          "line_for_editor": 161
+        },
+        "de7f7c06dccb532441-1": {
+          "role": "decision",
+          "reader_gain": "用血鉀、近端溶質與尿酸化能力組織三型RTA的鑑別問題。",
+          "nonredundancy_reason": "後接表格需要先建立其使用目的，避免把型別當自動診斷演算法。",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，在真正懷疑 RTA 的患者，可用 serum K⁺、其他 proximal tubule solute loss、尿 pH 和 NH₄⁺ 排泄證據，把病因繼續定位：",
+          "line_for_editor": 163
+        },
+        "3661bd25a1217b0e1d-1": {
+          "role": "case_evidence",
+          "reader_gain": "以2011低鉀麻痺呼吸衰竭病例呈現急救先於NH4Cl負荷試驗。",
+          "nonredundancy_reason": "不同於病童，這例提供真正腎小管病因與危急低鉀的可追溯反例。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這種分類的用途，是回答「到底哪個腎臟功能失常」；不是用 K⁺ 和尿 pH 自動列出疾病名稱。另一份 2011 年的病例，從完全不同的入口呈現了同一個問題：56 歲女性以急性低鉀性麻痺造成的呼吸衰竭就醫，必須機械通氣；血鉀只有 1.8 mmol/L。此時首先要處理的是呼吸與嚴重低鉀的危險，而",
+          "line_for_editor": 171
+        },
+        "b4fc341bcd7002ddb2-1": {
+          "role": "counterfactual",
+          "reader_gain": "對比尿液進腸道與遠端排酸障礙，限制不穩定時做acid loading。",
+          "nonredundancy_reason": "使同一NAGMA血液表型能導向不同病因處置，而非重複RTA分類。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個對照讓同一套腎臟生理連到兩種臨床場景：移植病童的 bicarbonate 下降，來自尿液走進腸道的異常流失與交換；這名成人的問題，則在腎臟本身無法適當酸化尿液。它們的 blood chemistry 可能相似，決定如何處理的卻是病程、鉀、尿液證據與器官風險的不同。酸負荷試驗在這份文獻中",
+          "line_for_editor": 173
+        },
+        "13a8c9eaf9c6f449a0-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現2016 empagliflozin真實病例低血糖表象與高AG酮酸數據。",
+          "nonredundancy_reason": "這是另一條酸化機轉的實際反例，數據未拼成移植病童。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2016 年 Diabetes Care 的病例，描述一名第二型糖尿病女性，使用 empagliflozin 後因呼吸不適就醫。初始 glucose 僅 161 mg/dL，serum total CO₂ 11 mmol/L，AG 21；後續 CO₂ 降到 6、AG 升至 24，β-hyd",
+          "line_for_editor": 177
+        },
+        "37a327b225ed6dc481-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明SGLT2排糖不等於停止脂解與ketogenesis，βOHB才支持酮酸。",
+          "nonredundancy_reason": "把血糖不高的誤解轉成機轉和有意義的測量。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果讀者只先入為主地想「血糖沒有很高，所以不像 DKA」，便會錯過真正的危險。SGLT2 inhibitor 使 glucose 經尿液排出，但不保證胰島素對脂解及 hepatic ketogenesis 的抑制足夠。此病例的 AG 增加和 bicarbonate 減少，使我們尋找未測的酸",
+          "line_for_editor": 179
+        },
+        "dada4801015f5f8825-1": {
+          "role": "decision",
+          "reader_gain": "區分尿腸交通需解剖修補與eDKA需抑制酮酸生成的治療目標。",
+          "nonredundancy_reason": "這段將兩種低HCO3病例的處置分歧說清，不是再教一遍完整DKA課。",
+          "verdict": "keep",
+          "excerpt_for_editor": "對照移植病童，兩人都可能有嚴重低 HCO₃⁻，卻不是因為同一件事：病童的主導型態是尿液錯誤進入腸道後的高氯性酸化，必須尋找異常液體路徑；這名 DKA 患者則是酮酸持續生成，治療核心在停止 ketogenesis，同時處理 volume、potassium 與 glucose，必要時在 in",
+          "line_for_editor": 181
+        },
+        "fae858e7e08ea9fac1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制高AG只提示未測陰離子，並說明osmolal gap晚期可正常。",
+          "nonredundancy_reason": "防止將AG或滲透壓差作乳酸或毒醇的單項確診排除工具。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣的病因分流也適用乳酸、腎功能不全與 toxic ingestion：高 AG 是找未測陰離子的起點，不是乳酸、缺氧或中毒的確診書。 依風險與病史直接測 lactate、β-hydroxybutyrate、腎功能與必要的毒物檢驗。Serum osmolal gap 可協助調查 toxic",
+          "line_for_editor": 183
+        },
+        "c3396fcdfd0a9bc7e2-1": {
+          "role": "definition",
+          "reader_gain": "說明delta ratio比較AG上升與HCO3下降並依基線而異。",
+          "nonredundancy_reason": "它回答兩種代謝過程並存的判斷，不是重述前面單一AG計算。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若 AG 增加與 HCO₃⁻ 減少的幅度明顯不相稱，就要追問是否還有第二種代謝性酸化或鹼化。台大手冊常用 （AG−12）／（24−HCO₃⁻） 作示範；IBCC 的範例則採另一 AG 基線 10。兩者都是依參考基線建立的粗略比較，不能跨公式、albumin 或時間點直接搬用。[2][7]",
+          "line_for_editor": 187
+        },
+        "149ce2a469a8823cea-1": {
+          "role": "counterfactual",
+          "reader_gain": "用兩組明示自編數字展示額外高氯酸化與鹼化的不同可能。",
+          "nonredundancy_reason": "這個可改判的對照不是原病例追加檢驗，並揭露比率的時間限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "假設一名獨立教學例子的基線 AG 12、HCO₃⁻ 24，現在 AG 20、HCO₃⁻ 8：AG 只升 8，HCO₃⁻ 卻降 16，提示除了高 AG 成分，還值得找高氯性酸化；若 AG 升至 28，HCO₃⁻ 卻仍為 24，則可能還有使 HCO₃⁻ 上升的過程。以上是兩種不同的反事實數值，",
+          "line_for_editor": 189
+        },
+        "6d3ebfa327316a065c-1": {
+          "role": "safety",
+          "reader_gain": "說明過度依賴高肺泡換氣代償時，通氣下降可迅速危及pH。",
+          "nonredundancy_reason": "將生化病因推理自然接到真正會惡化的呼吸生理。",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到任何一位有重度代謝性酸血症的病人。身體可以藉增加肺泡換氣降低 PaCO₂，暫時維持 pH；但如果代謝性酸負荷仍在，這份換氣能力就是病人的生命支持條件之一。",
+          "line_for_editor": 193
+        },
+        "cf352415e48888def7-1": {
+          "role": "definition",
+          "reader_gain": "交代Winter估算適用於單純代謝性酸中毒的呼吸反應。",
+          "nonredundancy_reason": "為下一個數值例子先限定公式使用情境。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Winter formula 常被用來估算單純代謝性酸中毒時的呼吸反應：",
+          "line_for_editor": 195
+        },
+        "99b6394f87fb5dbb00-1": {
+          "role": "definition",
+          "reader_gain": "提供Winter預期PaCO2公式與±2經驗範圍。",
+          "nonredundancy_reason": "沒有定量基準，下一段PaCO2為40或20的判斷失去參照。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Expected PaCO₂ ≈ 1.5 × HCO₃⁻ + 8 ± 2 mmHg。",
+          "line_for_editor": 197
+        },
+        "a579432911639a9341-1": {
+          "role": "counterfactual",
+          "reader_gain": "以自編HCO3=12示範PaCO2 40與20分別如何提示混合障礙。",
+          "nonredundancy_reason": "這是呼吸代償失敗的可遷移反例，且不冒充病童未測PaCO2。",
+          "verdict": "keep",
+          "excerpt_for_editor": "例如一名自編示例的 HCO₃⁻ 12，預期 PaCO₂ 約 26 ± 2；如果實測 40，雖在一般正常範圍，對當下的代謝負荷卻顯得相對不足。若同時呼吸幅度下降、意識惡化，不能把呼吸次數減少當成改善。反之，實測 20 則要查是否有額外 respiratory alkalosis。這是協助辨認",
+          "line_for_editor": 199
+        },
+        "44d2fe1e3a00628598-1": {
+          "role": "safety",
+          "reader_gain": "說明插管暫停換氣、鎮靜與呼吸器未維持清除CO2的危險。",
+          "nonredundancy_reason": "SpO2改善不等於通氣安全，這是危急處置不可省的因果中介。",
+          "verdict": "keep",
+          "excerpt_for_editor": "重症患者的危險在於：鎮靜、呼吸肌疲乏、誘導插管的暫停通氣，或呼吸器未能維持原本很高的 CO₂ 清除需求，都可能讓 pH 迅速惡化。SpO₂ 即使經補氧後好看，仍不能代替對有效通氣、意識、氣道保護與循環的評估。需要器官支持時不必等公式結算；但在肺損傷或 air trapping 風險下，也不",
+          "line_for_editor": 201
+        },
+        "96632112ae0958ef35-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將bicarbonate緩衝與未解除病因、CO2負荷及電解質代價分開。",
+          "nonredundancy_reason": "在討論RCT之前先定義介入能做與不能做的生理作用。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Sodium bicarbonate 是另一種容易讓「數值」取代「病因」的介入。它能提高血中緩衝能力，卻不會自動停止酮酸生成、改善感染源或封閉尿腸瘻道；其緩衝反應產生的 CO₂ 還需要被排出，且須評估 sodium／volume load、ionized calcium 與 potassi",
+          "line_for_editor": 203
+        },
+        "1c2979d8cea3798a93-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以BICARICU2死亡率與次要KRT結局界定成人RCT證據。",
+          "nonredundancy_reason": "避免將減少KRT直接宣稱存活或腎臟恢復效益。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2025 年 BICARICU-2 隨機試驗在重度代謝性酸血症合併中重度 AKI 的重症患者中，90 天死亡率 bicarbonate 組 62.1%、對照組 61.7%，未顯示存活效益；KRT 使用為 35% 與 50%，但那是次要結局，且 KRT 啟動條件與開放標籤治療會影響詮釋，不能",
+          "line_for_editor": 205
+        },
+        "47659d8e43f24b85d2-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分2026 SSC成人敗血性休克兩種不同bicarbonate推薦情境。",
+          "nonredundancy_reason": "兒童移植病例不能直接承接成人極低確定性條件建議。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2026 年 Surviving Sepsis Campaign 對成人敗血性休克伴低灌流性乳酸酸血症，不建議只為改善血流動力學或減少升壓劑而使用 bicarbonate；但對敗血性休克、pH ≤7.2 且 AKIN 2–3 的成人，仍有極低確定性的條件性建議。[10] 這是特定人群及治療",
+          "line_for_editor": 207
+        },
+        "6c689fa8ef18a35a0b-1": {
+          "role": "decision",
+          "reader_gain": "以流失停止、器官功能與病因解除作真正治療終點。",
+          "nonredundancy_reason": "收回病例手術結果，避免把單一pH改善誤當病程結束。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真正的病程終點不會只有 pH 變漂亮。 還要看感染或缺灌流是否改善、酮體是否停止生成、尿液或腸液流失是否停止、鉀與腎功能是否穩定、呼吸工作是否回到安全狀態。這正是當年病童需要手術解除瘻管，而不只是繼續滴注 acetate 的原因。手術後兩項異常同步改善，強烈支持尿腸異常交通是主要機轉；但治",
+          "line_for_editor": 209
+        },
+        "ff4e505a5e5fd648aa-1": {
+          "role": "orientation",
+          "reader_gain": "說明末段不是全面常規檢查單，而是依問題重建的分流路徑。",
+          "nonredundancy_reason": "讓總結的六問保留因果順序而非變成人人套用的固定醫囑。",
+          "verdict": "keep",
+          "excerpt_for_editor": "不需要先背完整張手冊圖，也不需要替每個病人開整套尿液檢驗。面對代謝性酸中毒，可以依序追問：",
+          "line_for_editor": 213
+        },
+        "04bb7c2e174a2dd714-1": {
+          "role": "safety",
+          "reader_gain": "優先確認意識、呼吸、灌流、血鉀與ECG危險。",
+          "nonredundancy_reason": "總結時保留病因未明也須即時支持的安全決策入口。",
+          "verdict": "keep",
+          "excerpt_for_editor": "病人此刻會因什麼惡化？ 意識、呼吸工作、灌流、K⁺、ECG 與危急病因先並行評估，不讓計算延誤支持。",
+          "line_for_editor": 215
+        },
+        "a4eb522a943e4afc82-1": {
+          "role": "definition",
+          "reader_gain": "要求同時點chemistry與血氣確認代謝性酸化及呼吸成分。",
+          "nonredundancy_reason": "避免把慢性呼吸性鹼中毒代償誤當獨立代謝病。",
+          "verdict": "keep",
+          "excerpt_for_editor": "是否真的存在代謝性酸化？ 用臨床情境、相近時點的 chemistry 與必要血氣確認 pH、HCO₃⁻ 和 PaCO₂；不把腎臟對呼吸性鹼中毒的代償誤當獨立代謝病。",
+          "line_for_editor": 216
+        },
+        "5f959b80932a2eac10-1": {
+          "role": "decision",
+          "reader_gain": "用AG、albumin、Cl與時間序列將高AG和NAGMA病因分開。",
+          "nonredundancy_reason": "這是前面公式推理的臨床決策摘要，不是新增一套無來源門檻。",
+          "verdict": "keep",
+          "excerpt_for_editor": "HCO₃⁻ 為何下降？ 將 AG、參考區間、albumin、Cl⁻、先前檢驗與時間趨勢放在一起；高 AG 著重找未測陰離子，NAGMA 著重辨識鹼流失、相對 chloride 負荷及腎臟排酸。",
+          "line_for_editor": 217
+        },
+        "d73edc89549e6b5675-1": {
+          "role": "decision",
+          "reader_gain": "先辨認未知是代謝物、排酸、液體來源或解剖，再選測試。",
+          "nonredundancy_reason": "回收本文最重要的從機轉到檢查選擇與診斷效度的界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "先靠臨床邏輯把未知縮小成能查證的問題，再選工具。 候選機轉可以並存；先說明每條機轉預期出現什麼、當下有哪些矛盾與缺口。只有知道要辨認的是代謝物、腎臟排酸功能、液體來源，還是解剖交通，才能選擇有意義的檢查或針對性搜尋；再依可靠的診斷效度研究、適用族群與風險效益評估結果，不因單一病例成功就宣稱",
+          "line_for_editor": 218
+        },
+        "b5e0d74c86d278a4fd-1": {
+          "role": "decision",
+          "reader_gain": "限定只有腎排酸仍有疑問時才使用UAG/UOG或直接NH4。",
+          "nonredundancy_reason": "避免將尿液代用指標泛化成所有酸中毒患者的常規。",
+          "verdict": "keep",
+          "excerpt_for_editor": "腎臟排酸是否真的需要額外驗證？ 只有此問題仍未解時，再選擇 K⁺、尿 pH、UAG、UOG 或直接 NH₄⁺ 測量，不能把 surrogate 的失效條件當成背景小字。",
+          "line_for_editor": 219
+        },
+        "f38697ee16133275fb-1": {
+          "role": "decision",
+          "reader_gain": "以連續追蹤酸負荷、流失和器官功能評估病因是否解除。",
+          "nonredundancy_reason": "對照初始單點pH，提供真正可驗收的病程終點。",
+          "verdict": "keep",
+          "excerpt_for_editor": "病因是否真的停止？ 追蹤流失、代謝物、血氣與病人功能，而不是用一個 AG 或 pH 的單點數字替代整段病程。",
+          "line_for_editor": 220
+        },
+        "e3694995f4e4dd5769-1": {
+          "role": "navigation",
+          "reader_gain": "以官方114-2醫三Q25驗證AG與Winter回答的是不同問題。",
+          "nonredundancy_reason": "這是有原卷身份的遷移練習，原詳解另有完整選項，未重刊一份題解。",
+          "verdict": "keep",
+          "excerpt_for_editor": "114 年第二次醫師二階・醫學（三）第 25 題：Na 136、Cl 100、HCO₃⁻ 16，AG = 20；pH 7.30、PaCO₂ 32，與 Winter 預期 32 ± 2 相符。尿 Na/K/Cl 雖可算 UAG，不會把血中的 high AG 改成 normal AG。這題的四",
+          "line_for_editor": 224
+        },
+        "6b41670520837e5236-1": {
+          "role": "navigation",
+          "reader_gain": "以官方113-1醫三Q48檢驗敗血症酸化時治療目的優先序。",
+          "nonredundancy_reason": "連到既有canonical逐選項詳解，防止新文章變成第二份重複題解。",
+          "verdict": "keep",
+          "excerpt_for_editor": "113 年第一次醫師二階・醫學（三）第 48 題：為什麼「敗血症有酸中毒，所以 bicarbonate 維持血中酸鹼是治療首要目標」最不適當？因為治療優先序應針對感染、循環與器官灌流的持續病因，不代表在特定 severe acidemia + AKI 人群中完全不能考慮 bicarbona",
+          "line_for_editor": 226
+        },
+        "7675479a4e8229055e-1": {
+          "role": "counterfactual",
+          "reader_gain": "改變肌酐、禁食反應與乳酸白蛋白，要求讀者更新瘻管假說。",
+          "nonredundancy_reason": "這些反事實真正測試是否理解證據角色，而非只記住罕見診斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "還有三個更重要的反事實：如果這名移植病童的 creatinine 隨尿量一起急升，我們對「尿液走錯出口」的懷疑是否仍然同樣強？如果水樣排出隨禁食明顯消退、也沒有異常腹部積液，MRU 的檢查優先序會不會下降？如果同時 lactate 很高、albumin 很低，單純稱為 NAGMA 是否還足",
+          "line_for_editor": 228
+        },
+        "d07f1b9ea5dbda1c48-1": {
+          "role": "causal_bridge",
+          "reader_gain": "收束從異常出入量到液體身分、交換機轉與解剖確證的全篇命題。",
+          "nonredundancy_reason": "最後把多個酸鹼指標還原成間接觀察，防止讀者只背疾病標籤。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個病例最深的提醒是：生理數據不是疾病貼紙，而是對病人身體正在發生什麼的間接觀察。 當測得的出入量與腎功能彼此矛盾、腹瀉治療與腸道檢查無法解釋病情，新的問題就不再是「這是哪一型酸中毒」，而是「我們究竟量到了哪種液體、它從哪裡來，又在途中經過什麼交換」。當這條因果路徑終於被影像與手術重建，原",
+          "line_for_editor": 230
+        },
+        "5e57592358e2652e2c-1": {
+          "role": "navigation",
+          "reader_gain": "提供原始Figure1至3、Table1、指引與試驗的來源頁入口。",
+          "nonredundancy_reason": "這是跨頁核圖的單一入口，不等於後續各筆文獻的inline引註。",
+          "verdict": "keep",
+          "excerpt_for_editor": "查看病例 Figure 1–3、Table 1、IBCC、原始試驗與指引的精確來源定位。",
+          "line_for_editor": 236
+        },
+        "2a6e69c66692e682a3-1": {
+          "role": "source_context",
+          "reader_gain": "定位Frontiers 2021兒童尿腸瘻管原病例與原圖表。",
+          "nonredundancy_reason": "為全文病例數值和手術病程提供可查的第一手來源身分。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[1] Al Barbandi MA, et al. Case Report: Uroenteric Fistula in a Pediatric-en-bloc Kidney Transplant Manifests as Deceptive Watery Diarrhea and No",
+          "line_for_editor": 238
+        },
+        "fc899b50a1b3d21ee4-1": {
+          "role": "source_context",
+          "reader_gain": "定位IBCC AGMA以支援血AG、delta及混合障礙推理。",
+          "nonredundancy_reason": "與下一筆NAGMA來源分工不同，支持未測陰離子那條分支。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[2] Farkas J. IBCC: Diagnosis of metabolic acid-base disorders & AGMA. 2024-06-29。",
+          "line_for_editor": 240
+        },
+        "660ea7e81419b0bb6d-1": {
+          "role": "source_context",
+          "reader_gain": "定位IBCC NAGMA對腸道鹼流失及UAG前提的解釋。",
+          "nonredundancy_reason": "此來源專門支撐非AG型病因與尿液代用指標的適用限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[3] Farkas J. IBCC: Non-anion-gap metabolic acidosis. 2024-07-01。",
+          "line_for_editor": 242
+        },
+        "0c05c55f06167f0159-1": {
+          "role": "source_context",
+          "reader_gain": "定位2019法國酸中毒專家指引對血氣與校正AG的條件建議。",
+          "nonredundancy_reason": "區別專家指引與病例或IBCC教學，防止把一種算法當唯一硬門檻。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[4] Jung B, et al. Diagnosis and management of metabolic acidosis: guidelines from a French expert panel. Ann Intensive Care. 2019;9:92. 全文。",
+          "line_for_editor": 244
+        },
+        "5f0163ea8c4a023ad1-1": {
+          "role": "source_context",
+          "reader_gain": "定位2016 empagliflozin相關eDKA的原始成人病例。",
+          "nonredundancy_reason": "它支撐第八節另一名患者的數值，避免被誤認為病童的額外檢驗。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[5] Roach P, Skierczynski P. Euglycemic Diabetic Ketoacidosis in a Patient With Type 2 Diabetes After Treatment With Empagliflozin. Diabetes Care",
+          "line_for_editor": 246
+        },
+        "b54172a960c0b7d7b5-1": {
+          "role": "source_context",
+          "reader_gain": "定位ADA 2026住院糖尿病指引作成人DKA治療邊界。",
+          "nonredundancy_reason": "此處是後續治療一般性原則來源，不是尿腸瘻管兒科處方。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[6] American Diabetes Association. Diabetes Care in the Hospital: Standards of Care in Diabetes—2026. Diabetes Care. 2026;49(Suppl 1). 指引。",
+          "line_for_editor": 248
+        },
+        "67c30dd73768f11415-1": {
+          "role": "source_context",
+          "reader_gain": "說明台大手冊僅供AG、UAG及delta概念，來源不明原圖不重製。",
+          "nonredundancy_reason": "必要的版權與來源界線可阻止將手冊原圖錯置或公開。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[7] 《臺大內科住院醫師醫療手冊》，腎臟疾病章，pp. 861–863：High AG、Normal AG、UAG、Δ ratio 的病因分流。本文引用其臨床判讀概念，未重製原書頁面；另有一張不同來源的「Figure 4-2 Approach to metabolic acidosis」",
+          "line_for_editor": 250
+        },
+        "4b3bdfaeb3a3d74a2e-1": {
+          "role": "source_context",
+          "reader_gain": "定位2011低鉀麻痺及遠端RTA病例原文。",
+          "nonredundancy_reason": "為尿腸病童以外的腎小管真實反例提供獨立病歷來源。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[8] Vendeloo M, et al. Life-threatening hypokalaemic paralysis associated with distal renal tubular acidosis. Neth J Med. 2011;69:35–38. 病例。",
+          "line_for_editor": 252
+        },
+        "1e1a09510f0011227f-1": {
+          "role": "source_context",
+          "reader_gain": "定位BICARICU2成人重度酸血症與AKI隨機試驗。",
+          "nonredundancy_reason": "第九節的死亡率與KRT數字需與一般機轉論述分開溯源。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[9] Jung B, et al. Sodium Bicarbonate for Severe Metabolic Acidemia and Acute Kidney Injury: BICARICU-2 Randomized Clinical Trial. JAMA. 2025;334",
+          "line_for_editor": 254
+        },
+        "5b84d4ce197e5e06ff-1": {
+          "role": "source_context",
+          "reader_gain": "定位2026 SSC成人敗血性休克與bicarbonate推薦。",
+          "nonredundancy_reason": "這一來源限定人群與推薦強度，不得用兒童病例外推。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[10] Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026。成人族群與推薦強度不可直接套用於兒童移植病例。",
+          "line_for_editor": 256
+        },
+        "b539755846d7cee344-1": {
+          "role": "source_context",
+          "reader_gain": "定位Berend 2017 NAGMA診斷綜述及RTA失效條件。",
+          "nonredundancy_reason": "為UAG和尿pH陷阱提供不同於個案的機轉性文獻。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[11] Berend K. Review of the Diagnostic Evaluation of Normal Anion Gap Metabolic Acidosis. Kidney Dis (Basel). 2017;3:149–159. 綜述。",
+          "line_for_editor": 258
+        },
+        "1907241a5245d3f772-1": {
+          "role": "source_context",
+          "reader_gain": "定位Fujimaru 2021 CKD尿NH4與UOG/2比較研究。",
+          "nonredundancy_reason": "支援n36與平均高估4.7的測量偏差，明確不冒稱全文圖表已核。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[12] Fujimaru T, et al. Assessing urine ammonium concentration by urine osmolal gap in chronic kidney disease. Nephrology (Carlton). 2021;26:809–",
+          "line_for_editor": 260
+        },
+        "28238eaaedbe4556b8-1": {
+          "role": "source_context",
+          "reader_gain": "定位Pauker與Kassirer決策閾值理論原文。",
+          "nonredundancy_reason": "為先縮小臨床問題再選擇工具提供決策框架來源。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[13] Pauker SG, Kassirer JP. The Threshold Approach to Clinical Decision Making. N Engl J Med. 1980;302:1109–1117. 診斷／處置閾值的決策理論。",
+          "line_for_editor": 262
+        },
+        "2dde87751b177fb30b-1": {
+          "role": "source_context",
+          "reader_gain": "定位BMJ診斷效度適用性文章並限制單病例LR推論。",
+          "nonredundancy_reason": "這筆來源與原始病例分工，說明為何不能宣稱MRU普遍較準。",
+          "verdict": "keep",
+          "excerpt_for_editor": "[14] Diagnostic test accuracy and clinical applicability: sensitivity、specificity、likelihood ratio 必須由可代表相近患者的研究估計，不能由單一 case report 推出。參見 Interp",
+          "line_for_editor": 264
+        },
+        "ce5a5beb46f4b436ba-1": {
+          "role": "safety",
+          "reader_gain": "提醒實際治療須按年齡、病因、氣道循環及院內專科判斷。",
+          "nonredundancy_reason": "結尾保留教育材料與可直接照抄處方之間的安全邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "臨床治療須依患者年齡、病因、氣道／循環／電解質風險、院內處置規範及即時專科判斷進行。",
+          "line_for_editor": 266
+        }
+      }
     }
   }
 }

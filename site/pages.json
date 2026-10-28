@@ -3463,5 +3463,48 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-metabolic-acidosis-etiology.md",
+    "output": "xiaoma-20261028-metabolic-acidosis-etiology.html",
+    "title": "水瀉三週，膀胱尿量卻越來越少：酸中毒如何揭露錯誤的液體路徑？",
+    "subtitle": "真實病例帶領從血中 AG、排出液身分到腎臟排酸及尿腸瘻管的臨床因果推理",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "酸鹼與腎臟",
+    "references": "xiaoma-metabolic-acidosis-sources.html",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "author_source_check",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 25,
+        "focus": "從 AG 公式與 Winter's formula 分離血液分類和病因分析",
+        "concept_heading": "二、AG 為什麼沒有明顯升高？分類縮小了方向，還沒有給答案"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "focus": "優先針對造成酸中毒的病因與灌流障礙，而非僅讓血中 pH 數字改善",
+        "concept_heading": "九、病因還沒處理完之前，怎麼判斷「看起來變好」其實是危險訊號？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/metabolic-acidosis-sources.md",
+    "output": "xiaoma-metabolic-acidosis-sources.html",
+    "title": "代謝性酸中毒｜病例與原始證據",
+    "subtitle": "尿腸瘻管原始圖表、IBCC、診斷效度與治療研究的來源定位",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "酸鹼與腎臟",
+    "navigation": false
   }
 ]
