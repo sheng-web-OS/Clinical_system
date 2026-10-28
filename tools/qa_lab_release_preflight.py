@@ -229,9 +229,21 @@ def main():
             subprocess.run([sys.executable,"site/build.py"],cwd=work,check=True)
             subprocess.run([sys.executable,"tools/check_output.py"],cwd=work,check=True)
             samples=check_pages(work/"dist",args.output,work)
+            # Generate UNREVIEWED exact-blob paragraph packets for a truly
+            # separate clinical/editorial reviewer. This script NEVER signs off.
+            sys.path.insert(0,str(ROOT/"site"))
+            from semantic_gate import packet as semantic_packet
+            reviewer_packets={}
+            for number,source in (("02",S02),("03",S03)):
+                review=semantic_packet(source,(ROOT/source).read_text(encoding="utf-8"))
+                reviewer_packets[number]={"content_blob":review["content_blob"],
+                    "paragraphs":len(review["paragraphs"]), "status":"UNREVIEWED"}
+                (args.output/f"lab-{number}-unreviewed-review-packet.json").write_text(
+                    json.dumps(review,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
             report={"status":"PRIVATE_CANDIDATE_ENGINEERING_PASS_NOT_RELEASE_AUTHORIZATION",
                 "samples":samples, "count":len(samples),
                 "candidate_sources":list(FILES),
+                "review_packets":reviewer_packets,
                 "manifest_unmodified_in_PR":True,
                 "independent_clinical_review":False,
                 "independent_epqc_review":False,
