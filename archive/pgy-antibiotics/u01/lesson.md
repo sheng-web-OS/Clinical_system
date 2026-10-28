@@ -118,6 +118,8 @@ ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 
 
 **C｜已證實本次為 ESBL cUTI，但不危重、無菌血症、藥敏支持。** 不再將所有病人的利益風險等同於本例；2026 IDSA AMR 對 piperacillin–tazobactam 才有特定 alternative 地位，且若有適當 susceptible oral agents，應評估更窄更方便方案。**起始 empiric、已知 pathogen 的 definitive treatment 與可以換 PO，是三次不同時點的決策。**
 
+**D｜改成另一位 38 歲患者：只有下泌尿道症狀，生命徵象穩定、沒有發燒或 flank pain、沒有近期 resistant isolate。** 這不再是原本危重 systemic UTI：先確認是 *localized UTI*、是否真的需要培養，以及能否使用適當窄譜口服治療；**不能把原本 meropenem 路線原封不動套上去**。若沒有任何感染症狀，只是 routine urine test 有 pyuria 或 positive culture，還要回到前述 ASB 非治療分支。兩個病例一樣可能有白血球尿，真正改變經驗性抗菌藥決策的，是**感染症候群、危重性、病原風險及可用證據**；不是把兩人的尿液檢驗結果排在同一表，就期待得到同一張處方。([IDSA 2025 cUTI severity-first selection](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections))
+
 ## 真正的二階國考對題｜111 年第二次・醫學（三）第 60 題
 
 **考點不是「有 ESBL 就開哪一支」；而是用機轉劃出抗菌藥**不能**與**仍可能**有效的邊界。**
