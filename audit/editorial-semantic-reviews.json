@@ -6431,6 +6431,488 @@
           "line_for_editor": 262
         }
       }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md": {
+      "content_blob": "b83f616c28da0155d42b9096b7116c7416a261ae",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "clinical-os-hourly-automation:turn11:2026-10-29T01:13+08:00:PR207:57unit-independent-review",
+      "core_reader_question": "確診肺栓塞後，如何不把PESI、RV損傷、正常血壓下的低灌流與呼吸衰竭混成單一嚴重度，並據此選擇安全的抗凝、監測和再灌流策略？",
+      "new_understanding": "從血栓造成V/Q失衡、RV後負荷與交感代償開始，讀者能區分診斷前Wells與確診後PESI、Hestia出院適用性、A–E/R生理分類，並以2026 Table 7的C2 Harm與E2 No Benefit/N/A邊界及Gutgold真實病例解釋證據如何改變檢查與處置。",
+      "strongest_counterargument": "本文在PESI/sPESI/Hestia、A–E/R、Bova及再灌流Table 7之間資訊密度高，可能使讀者記表多於理解；但每組分數均回答不同臨床問題，病例與三個反事實提供辨識誤用的連續推理。正式手機表格與索引仍須另外實測，語義通過不代表發布完成。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "bd9a5f7f4c4a9b5def-1": {
+          "role": "orientation",
+          "reader_gain": "先界定本篇只處理成人急性PE分級與決策，避免誤當個別處方。",
+          "nonredundancy_reason": "若刪除此適用範圍，讀者容易把指南通則誤認為可直接套用的醫囑。",
+          "verdict": "keep",
+          "excerpt_for_editor": "> 2026 AHA/ACC 急性肺栓塞指引（成人）｜2026-10-29。診斷與重症病例可循本文連結深入；具體治療仍須配合個別禁忌與院內流程。",
+          "line_for_editor": 3
+        },
+        "d9ec7a6411e4aac24c-1": {
+          "role": "case_evidence",
+          "reader_gain": "以真實難治低氧個案揭示正常血壓與嚴重右心病變可以並存。",
+          "nonredundancy_reason": "開頭的FiO₂與PaO₂矛盾引出後文分流機轉，不能由一般PE定義取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2025 年一篇真實病例記錄一名女性：胸痛、呼吸困難與嚴重缺氧，血壓卻仍正常。CTPA 顯示雙側肺動脈栓塞，心超顯示嚴重右心室擴大與功能下降。最初以為肺栓塞造成的通氣／灌流失衡足以解釋缺氧，但在 FiO₂ 1.0 下，PaO₂ 仍僅 58 mmHg。進一步的心臟超音波氣泡試驗終於揭露重要的",
+          "line_for_editor": 5
+        },
+        "4b630b89b3d6cf7bde-1": {
+          "role": "orientation",
+          "reader_gain": "區分確診、器官損害分層、抗凝與再灌流三個不同臨床決策。",
+          "nonredundancy_reason": "這段是全文PESI與A–E共同主線，刪除會讓各分數變成無關清單。",
+          "verdict": "keep",
+          "excerpt_for_editor": "肺栓塞的決策主線是：先判斷 PE 是否存在，再判斷它已造成的心肺損害與短期惡化可能，最後決定抗凝、監測層級與再灌流是否值得承擔出血風險。 2026 AHA/ACC 新分級並非把所有舊分數廢除；它試圖讓「病人基線預後」與「正在發生的器官衰竭」出現在同一個決策框架中。",
+          "line_for_editor": 7
+        },
+        "9f5d8aa69ca7c2370c-1": {
+          "role": "causal_bridge",
+          "reader_gain": "先以肺血管阻塞造成死腔與低VQ解釋呼吸症狀和氧合差異。",
+          "nonredundancy_reason": "沒有氣體交換這一環，病例中高FiO₂仍低PaO₂的反證失去基準。",
+          "verdict": "keep",
+          "excerpt_for_editor": "靜脈血栓進入肺動脈後，阻塞部分肺血管床。第一個結果發生在肺泡與肺血流的配對：有些肺泡仍持續通氣，卻缺乏相稱的灌流，形成增加的 alveolar dead space。血流重新分配及肺不張等機制亦可造成低 V/Q 區與低血氧。病人因此可能呼吸急促、胸膜性胸痛或低血氧；但氧合也可能仍不差。單一",
+          "line_for_editor": 11
+        },
+        "b9f4dc9edf85c5b464-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把PVR與右心後負荷增加連到室間隔位移及左心充盈下降。",
+          "nonredundancy_reason": "若只留肺動脈栓塞，後續RV指標與循環失代償缺少必要中介。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二個結果發生在右心室。肺血管床突然減少，加上肺血管收縮，令 pulmonary vascular resistance（PVR）與右心室 afterload 增加。健康右心室原本面對低阻力循環，不能迅速適應劇烈增高的後負荷。當 RV 擴大、收縮力下降、室間隔左移、LV 充盈減少，全身 c",
+          "line_for_editor": 13
+        },
+        "bc3163cb68672932f3-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明交感代償可維持血壓，阻塞量不直接等於器官低灌流。",
+          "nonredundancy_reason": "這是D2正常SBP仍可能休克的生理前提，與前段RV力學不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三個結果才是休克的可見表徵。即使 cardiac output 下降，交感代償仍可能暫時把血壓撐住；所以「BP 正常」不等於「末梢灌流正常」。同時，影像顯示大量血栓，不必然等於每名病人承受相同的 RV failure：原有心肺儲備、肺血管反應及血栓發生速度，都會改變後果。",
+          "line_for_editor": 15
+        },
+        "a081efc07a29c67922-1": {
+          "role": "decision",
+          "reader_gain": "將解剖阻塞、氧合、右心損傷、灌流及預後分成五個測量問題。",
+          "nonredundancy_reason": "沒有此分工，後續Wells、PESI與Bova容易被誤用為互相投票。",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此真正值得追問的是：一個檢查究竟在描述解剖阻塞、呼吸交換、右心室壓力／損傷、全身灌流，還是病人的整體短期預後？這是各種 score 得以並存的原因。",
+          "line_for_editor": 17
+        },
+        "6a3d2a0603ae409db2-1": {
+          "role": "definition",
+          "reader_gain": "明確將Wells與PERC定位為檢前機率及低機率排除策略。",
+          "nonredundancy_reason": "刪去PERC適用前提會造成對所有胸痛患者錯用陰性規則的風險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在尚未確診的呼吸困難患者，第一件事是建立臨床鑑別：PE、ACS、肺炎、氣胸、心衰、氣喘／COPD、主動脈急症等，依症狀、風險、生命徵象及體檢縮小範圍。若懷疑 PE，Wells 或 revised Geneva 是檢前機率工具。它們不是疾病嚴重度分數。PERC 只適用於已由臨床判定為低機率的",
+          "line_for_editor": 21
+        },
+        "fd4f7356b674222872-1": {
+          "role": "safety",
+          "reader_gain": "保留D-dimer檢前機率、FEU/DDU及YEARS門檻的適用限制。",
+          "nonredundancy_reason": "這些單位和高機率禁用條件不能由PESI或影像段落代替。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在低至中等檢前機率的適用情境，足夠敏感的 D-dimer 陰性可協助排除 PE；高檢前機率不能拿一般陰性 D-dimer 保證安全。2026 指引接受年齡調整 D-dimer：50 歲以上，可使用年齡 × 10 μg/L FEU 作為相應檢驗／演算法的閾值；注意 FEU 與 DDU 不能直",
+          "line_for_editor": 23
+        },
+        "27839edceb9e319086-1": {
+          "role": "decision",
+          "reader_gain": "區分CTPA確診與TTE評估RV，並指出高度懷疑時可並行處置。",
+          "nonredundancy_reason": "沒有影像延遲與抗凝前提，讀者可能誤以為CT前所有救援均須等待。",
+          "verdict": "keep",
+          "excerpt_for_editor": "需要影像時通常以 CTPA 為主要確診檢查；特定情況可採 V/Q scan。CTPA 直接定位肺動脈腔內 filling defect；TTE 主要用於辨認 RV 負荷與其他休克原因，不能單獨用來確診或排除 PE。若高度懷疑且影像延遲、又有升高的危急風險，應同時評估能否在出血風險可接受下先",
+          "line_for_editor": 25
+        },
+        "8290105bdcd9f79470-1": {
+          "role": "safety",
+          "reader_gain": "把正式分級時點與危急患者不等待影像的灌流急救分開。",
+          "nonredundancy_reason": "這正是已修正的安全邊界，避免確診程序阻擋循環支持。",
+          "verdict": "keep",
+          "excerpt_for_editor": "PESI／sPESI 與 A–E 是確診後的正式預後與臨床狀態分層工具，不能拿來替代尚未完成的 PE 確診。 然而，若高度懷疑 PE 的病人已出現呼吸或灌流惡化，循環評估、急救支持、適合的床邊檢查與確診安排必須同步進行，不得等待 CTPA 才評估休克。已確診患者也不需要重算 Wells 來",
+          "line_for_editor": 27
+        },
+        "c8e53e21c43be8e453-1": {
+          "role": "definition",
+          "reader_gain": "定義PESI預測含共病的短期整體死亡風險而非血栓負荷。",
+          "nonredundancy_reason": "若刪去共病對預後的影響，後面的高分不等於溶栓指標無從理解。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Pulmonary Embolism Severity Index（PESI）試圖以確診時的年齡、共病與生理失衡，識別短期不良預後可能較低或較高的人。這個問題極有價值，因為對部分患者而言，危險未必只來自血栓本身：癌症、慢性心肺病或年齡也會影響 30 天整體死亡風險。於是 PESI 的結果不",
+          "line_for_editor": 31
+        },
+        "860524aaf99c30af3f-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以歷史五級死亡率說明族群觀察值不能外推個別患者。",
+          "nonredundancy_reason": "不保留研究年代與族群限制，讀者會把比例誤當今日精確個體預測。",
+          "verdict": "keep",
+          "excerpt_for_editor": "PESI 原始衍生／驗證研究中，五個分級的 30 日死亡率依族群不同而變動；一組常引用的早期數字約為 I 1.1%、II 3.1%、III 6.5%、IV 10.4%、V 24.5%；這些是既有研究族群的觀察風險，不是今天個別病人的精確死亡機率，也不是 2026 新治療情境下每類的當代實測",
+          "line_for_editor": 57
+        },
+        "22199a618262a32167-1": {
+          "role": "counterfactual",
+          "reader_gain": "用70歲女性HR112與RR32計算PESI110並分離治療推論。",
+          "nonredundancy_reason": "實際計算展示年齡及生命徵象如何推高分數，與抽象定義不重複。",
+          "verdict": "keep",
+          "excerpt_for_editor": "例如一名純教學計算情境，並非真實病歷：70 歲女性、確診 PE、HR 112、RR 32、SBP 130、SpO₂ 95%，假設沒有其他表中因素。PESI = 70 + 20（HR）+ 20（RR）= 110，Class IV。這告訴我們她不是短期低風險的典型候選，應進一步查 RV／bio",
+          "line_for_editor": 59
+        },
+        "3ab194ce892a75dbdf-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "提醒低PESI仍可能突然RV失代償，須服從即時動態證據。",
+          "nonredundancy_reason": "此反向案例抵銷高分範例造成的單向錯覺，不可由計算表取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "反過來說，年輕、PESI 低的患者也可能發生突然的 RV dysfunction。當分數與眼前病人的生理惡化矛盾時，不能讓一個低基線預後分數壓過動態危險訊號。",
+          "line_for_editor": 61
+        },
+        "5317edcf3e524ab12a-1": {
+          "role": "definition",
+          "reader_gain": "引入sPESI六個二元條件，讓讀者理解為何要簡化床邊評估。",
+          "nonredundancy_reason": "這段建立簡化分數的使用目的，與完整PESI變項表有不同角色。",
+          "verdict": "keep",
+          "excerpt_for_editor": "簡化版 PESI（sPESI）以六個 0／1 條件縮短床邊計算：",
+          "line_for_editor": 65
+        },
+        "1d131d01c6925bb3ce-1": {
+          "role": "safety",
+          "reader_gain": "逐一辨明年齡、心跳、血壓的不等號及sPESI分層界線。",
+          "nonredundancy_reason": "刪除等號限制會造成80歲或HR110附近的實際計分錯誤。",
+          "verdict": "keep",
+          "excerpt_for_editor": "0 分為低短期風險；≥1 分則不屬低風險。 年齡是 >80，不是 ≥80；HR 是 ≥110；SBP 是 <100。前例 HR 112，sPESI = 1。這樣的低／非低風險劃分適合快速分流，但 1 分不代表「輕微心肺衰竭」，6 分也不是比 C3、D2 更高的一種 PE 專用休克分級。",
+          "line_for_editor": 76
+        },
+        "51e3092c157a4a3140-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出sPESI缺少RV與灌流資料，不能獨立決定出院或介入。",
+          "nonredundancy_reason": "若只有六項表格，讀者容易將短期預後分數誤當器官功能量測。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真正的限制是：sPESI 沒有直接測 troponin、BNP、RV/LV、TAPSE、lactate 或 cardiac index。它不直接衡量右心室是否正走向 failure。因此 sPESI 0 並不能獨立保證可出院，sPESI ≥1 也不能單獨指定 ICU、溶栓或導管介入。對於分",
+          "line_for_editor": 78
+        },
+        "118076947789e072e3-1": {
+          "role": "definition",
+          "reader_gain": "列出Hestia住院排除條件，補足出血、腎功能及照護支持面向。",
+          "nonredundancy_reason": "這些出院可行性條件不在PESI中，不能用短期死亡風險代替。",
+          "verdict": "keep",
+          "excerpt_for_editor": "PESI／sPESI 側重短期死亡風險；Hestia 是居家治療適用性排除條件。例如仍需氧氣維持氧合超過 24 小時、血流動力學不穩、需要溶栓／取栓、活動性出血或高出血風險、嚴重腎功能障礙（CrCl <30 mL/min）、嚴重肝病、需要持續靜脈止痛、抗凝治療期間仍發生 PE、懷孕、HIT",
+          "line_for_editor": 82
+        },
+        "d7e2dc53d333aef353-1": {
+          "role": "decision",
+          "reader_gain": "Hestia陰性仍須核實藥物可得、依從性、支持及回診安排。",
+          "nonredundancy_reason": "這一段把排除條件轉成實際出院決策，不是重複上一段條件列表。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Hestia 不是「分數愈低代表血栓愈少」；只要有一項陽性，就應仔細評估住院的必要性。即使 Hestia 全陰性，也還要確認藥物可取得、患者理解與依從性、家庭支援、回診及發生惡化時的求助路徑。",
+          "line_for_editor": 84
+        },
+        "39a4660cdf0ffded01-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以HOME-PE隨機策略試驗界定有臨床覆核的居家治療可行性。",
+          "nonredundancy_reason": "研究支持的是選擇與照護流程，不能刪去後宣稱sPESI零分自動返家。",
+          "verdict": "keep",
+          "excerpt_for_editor": "HOME-PE（2021） 隨機比較以 Hestia 或 sPESI 作為分流策略，兩者皆須醫師臨床覆核與妥善安排居家照護。1975 人納入研究；兩組大約三分之一以上患者於 24 小時內返家，而接受居家治療者的 30 日嚴重複合事件率相對低。這提供的證據是「經系統選擇、臨床覆核及照護安排的",
+          "line_for_editor": 86
+        },
+        "be3e6652d406d5cc90-1": {
+          "role": "definition",
+          "reader_gain": "說明2026 A–E是動態臨床狀態而非加總分數或固定病程。",
+          "nonredundancy_reason": "這段防止把分類表誤讀成必經階梯，是引入新架構的必要界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "新版分類保留早期預後 score，另外納入 RV、biomarker、灌流及呼吸需求。分類是一個臨床狀態描述，不是一個從 0 累加至 10 的分數，也不是每個人必然依序由 A 走向 E 的自然病程。",
+          "line_for_editor": 90
+        },
+        "97510f61843a963109-1": {
+          "role": "safety",
+          "reader_gain": "指出PESI與B1/B2位置不能獨立決定休克嚴重度或抗凝省略。",
+          "nonredundancy_reason": "沒有subsegmental的限制，讀者可能把B1當成不用評估DVT的許可。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在這裡，「臨床嚴重度低」的典型依據包括 PESI ≤85、sPESI 0；分數升高則會增加 Category C 的考量。A–E 並非單靠 PESI 自動換算，不應拿單一分數凌駕於明確休克或嚴重 RV 失代償。另一方面，B1 與 B2 的位置差異，主要為辨別 subsegmental PE",
+          "line_for_editor": 100
+        },
+        "de0d951f8cea6f2936-1": {
+          "role": "definition",
+          "reader_gain": "說明R修飾符依C/D/E呼吸需求而異，獨立於循環危險度。",
+          "nonredundancy_reason": "這是官方Figure的第二條分級軸，不能由單純C1至E2分類表推得。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方圖在 Category C、D、E 旁保留 R respiratory modifier：C 類可因低氧（O₂ saturation 6 L/min nasal cannula 或 nonrebreather mask）；E 類則強調 hypoxemic respiratory fai",
+          "line_for_editor": 104
+        },
+        "73dc0fd7685c4b6aa7-1": {
+          "role": "counterfactual",
+          "reader_gain": "用兩名C3患者不同氧氣需求展示R修飾符的額外資訊。",
+          "nonredundancy_reason": "此對照使呼吸惡化不被RV與troponin共同異常所遮蔽。",
+          "verdict": "keep",
+          "excerpt_for_editor": "請想像兩名都屬 C3 的病人：兩者都有 RV dysfunction + cardiac biomarker 異常，但其中一位室內空氣下 SpO₂ 96%、呼吸安穩，另一位 RR 34 且逐漸需要高流量氧氣。光靠「C3」無法捕捉呼吸支持的差別，這正是 R 的用意。但R 本身不是特定再灌流術",
+          "line_for_editor": 106
+        },
+        "ed8d694db047f0ebfb-1": {
+          "role": "causal_bridge",
+          "reader_gain": "由CO與SVR代償推導正常SBP仍可能低灌流，保留D2原文張力。",
+          "nonredundancy_reason": "若不揭露Figure與正文短暫低血壓措辭差異，分類會變成虛假確定。",
+          "verdict": "keep",
+          "excerpt_for_editor": "血壓約略取決於 cardiac output 與 systemic vascular resistance。當 RV forward flow 下降時，血管收縮可暫時維持 SBP；器官卻可能已開始缺乏灌流。2026 指引在 D2 納入 normotensive shock／hypoperf",
+          "line_for_editor": 110
+        },
+        "a0deaf3e491d418bb7-1": {
+          "role": "counterfactual",
+          "reader_gain": "用乳酸上升與少尿的假設病程要求核對PE與其他低灌流原因。",
+          "nonredundancy_reason": "此例將D2從單一乳酸閾值改為動態判斷，不與前段定義重複。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若 PE 已確診，病人 SBP 118，但 RV/LV 增大、lactate 持續由 2 升到 4、尿量下降，你應先將「PE 相關低心輸出」納入高度警覺，再用灌流檢查、床邊超音波、動態趨勢與替代病因逐一對照。這與「看到 lactate >2 就自動寫 D2，立即溶栓」完全不同。分類目的是提",
+          "line_for_editor": 112
+        },
+        "a22f72b3665155fb9e-1": {
+          "role": "definition",
+          "reader_gain": "分清CTPA的RV尺寸線索與TTE的功能和心室間隔資訊。",
+          "nonredundancy_reason": "缺少影像工具的不同資訊角色，後續biomarker不能合理整合。",
+          "verdict": "keep",
+          "excerpt_for_editor": "CTPA 報告應包含可量化的 RV/LV ratio；TTE 則提供 RV 大小／收縮能力、室間隔形態、TAPSE 等生理資料。CT 看到 RV 擴大，提示右心承受後負荷；TTE 進一步呈現心室動態，但它們不等於「PE 必然是唯一造成 RV 異常的疾病」。慢性肺高壓、心臟病與影像時間點，均",
+          "line_for_editor": 116
+        },
+        "f4cff746f14a5f3320-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明troponin與BNP的不同機轉及共病混雜，推導C3監測必要。",
+          "nonredundancy_reason": "這段防止把標記升高直接等同ACS或抗凝失敗，提供C3到D2的邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Troponin 代表心肌傷害，可來自 RV 壓力負荷和供需失衡，不能見到陽性便直接改診 ACS；BNP／NT-proBNP 反映壁張力，但受年齡、腎功能與原有心衰影響。當 RV 異常與心肌標記都存在時，早期惡化風險提高，卻不能從這兩個訊號直接推定抗凝一定失敗；因此 C3 通常需要住院、密",
+          "line_for_editor": 118
+        },
+        "26b3fba3d0a033590b-1": {
+          "role": "definition",
+          "reader_gain": "列出Bova四項權重與階段，限定於血壓穩定者早期併發症風險。",
+          "nonredundancy_reason": "Bova並不評估Hestia的居家支持，與sPESI的短期死亡預測不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "另一個工具 Bova score 更專注於血壓尚穩定的 PE 患者之早期併發症風險：SBP 90–100 mmHg +2、troponin 升高 +2、RV dysfunction +2、HR ≥110 +1；0–2 = Stage I，3–4 = Stage II，>4 = Stage ",
+          "line_for_editor": 120
+        },
+        "b1d2af9d5bc70664d1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "提醒Shock index與NEWS2等工具各有族群及預測終點。",
+          "nonredundancy_reason": "這是多分數並存後的解讀原則，避免以分數數量替代臨床問題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Shock index（HR/SBP）、NEWS2、lactate 和 CPES score 亦有其用途；工具愈多，越需要先問「我要辨識的是低死亡預後、早期崩潰，還是住院資源需求？」分數不是投票表決，每種分數都有原始研究的收案族群和預測終點。",
+          "line_for_editor": 122
+        },
+        "d416e310efb489645d-1": {
+          "role": "decision",
+          "reader_gain": "交代抗凝防新血栓與內源性纖溶作用，附DOAC及LMWH選擇限制。",
+          "nonredundancy_reason": "若刪去抗凝的作用與禁忌，後續再灌流會被誤讀為唯一有效治療。",
+          "verdict": "keep",
+          "excerpt_for_editor": "絕大多數可接受抗凝的急性 PE 患者，需要開始治療性抗凝，目的在避免新血栓及擴大，讓內源性纖溶作用發揮；抗凝不是瞬間打開已阻塞的肺動脈。2026 指引對適合口服抗凝者，優先推薦 DOAC 而非 VKA；需要初始注射抗凝時，一般優先 LMWH 而非 UFH。這個「一般優先」仍要受到腎功能、妊",
+          "line_for_editor": 126
+        },
+        "561e4a549bfa4c0359-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把立即降低RV後負荷的可能利益與出血及程序代價並列。",
+          "nonredundancy_reason": "這段說明為何從抗凝轉向不同再灌流策略，而不是單列術式名稱。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真正的治療分歧在於是否值得立刻降低血栓阻塞與 RV afterload。全身 thrombolysis、catheter-directed thrombolysis、mechanical thrombectomy 和 surgical embolectomy，均可能較快減少阻塞，卻增加不同",
+          "line_for_editor": 128
+        },
+        "6c1ad1f7ff926cc547-1": {
+          "role": "safety",
+          "reader_gain": "逐一分清Class 2a、2b、3 Harm及E2的N/A、No Benefit與VA-ECMO。",
+          "nonredundancy_reason": "此段避免把導管和外科推薦跨E1/E2複製，並說明ECMO並非血栓清除。",
+          "verdict": "keep",
+          "excerpt_for_editor": "推薦分級不是療效大小：Class 2a 表示在適用情境中採取介入是合理的；2b 是可考慮、仍需個別判斷；3: Harm 是已知傷害風險壓過預期利益。導管溶栓（CDL）以局部輸注纖溶藥為主，機械取栓（MT）嘗試以器械移除血栓，兩者的研究族群、主要終點與出血風險不能直接等同。若 E2 已經進入",
+          "line_for_editor": 139
+        },
+        "984a21d1f86bcb70b4-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以PEITHO複合終點降低與重大出血增加說明淨效益交換。",
+          "nonredundancy_reason": "沒有實際絕對事件率，讀者難理解為何C3不等於必須溶栓。",
+          "verdict": "keep",
+          "excerpt_for_editor": "介入治療的風險—效益，不能只從指南推薦等級看文字。PEITHO（2014）在中風險、同時有 RV dysfunction 與 troponin 陽性的 PE，tenecteplase + heparin 相較 heparin 將 7 日死亡或血流動力惡化複合終點從 5.6% 降到 2.6%",
+          "line_for_editor": 141
+        },
+        "bc17551be3e0a2c706-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將HI-PEITHO與PRAGUE-26新RCT結果和較早指南證據截止分開。",
+          "nonredundancy_reason": "這段阻止把導管局部溶栓結果錯認為死亡效益或純機械取栓證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "證據更新不能倒填到過去的指南。2026 年 2 月 AHA/ACC 指引發布後，兩項導管溶栓隨機試驗提供了新的臨床資訊。HI-PEITHO 在有額外惡化徵象的中風險 PE（n=544），超音波輔助導管局部纖溶加抗凝的七日複合終點為 4.0%，單純抗凝為 10.3%；七日重大出血 4.1% ",
+          "line_for_editor": 143
+        },
+        "d7e70a03d8c5aa3648-1": {
+          "role": "safety",
+          "reader_gain": "從RV前負荷與正壓通氣風險解釋休克PE支持治療需個別化。",
+          "nonredundancy_reason": "沒有循環支持段，表格會讓讀者誤以為只有溶栓選擇而無急救時序。",
+          "verdict": "keep",
+          "excerpt_for_editor": "對 shock PE 的支持療法也不可忽略 RV 生理：在等待解除阻塞時，可依情境使用 vasopressor／inotrope 維持灌流；低 preload 的患者可以審慎評估輸液，但無差別大量輸液可能進一步撐大 RV 並減少 LV filling。對已經極度依賴前負荷與交感代償的病人，",
+          "line_for_editor": 145
+        },
+        "7bf4d9f933f686f3b3-1": {
+          "role": "case_evidence",
+          "reader_gain": "以Gutgold病例真實CT、troponin、BNP、TTE與難治低氧建立時間線。",
+          "nonredundancy_reason": "此原始病程提供可追溯的競爭機轉證據，非自編分數案例能取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2025 年 Gutgold 等人在 Respirology Case Reports 報告一名實際收治的女性，因呼吸困難、胸痛、嚴重低血氧就醫，初始血壓正常。CTPA 顯示雙側 lobar 與 segmental PE；troponin 400 ng/L、pro-BNP 5008 pg/",
+          "line_for_editor": 149
+        },
+        "f34a9764836f0edca2-1": {
+          "role": "causal_bridge",
+          "reader_gain": "由高FiO₂仍低PaO₂推導須查右向左分流，氣泡與TEE逐步縮小原因。",
+          "nonredundancy_reason": "刪去CT肺實質陰性與氣泡時序，就無法解釋為何要找PFO。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這一組觀察讓兩種機轉競爭：PE 造成的 V/Q mismatch 可能導致低氧，但在極高吸入氧濃度下仍嚴重低氧，臨床上應進一步尋找 shunt。作者因 CT 上缺乏足以解釋缺氧的肺實質病變，安排 agitated-saline echo，見氣泡早期進入左心房；TEE 顯示較大的 paten",
+          "line_for_editor": 151
+        },
+        "5a00746e3fe0256674-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制將歷史病例直接貼2026分級，且不把溶栓後改善當普遍效益。",
+          "nonredundancy_reason": "原文未報完整休克判準，這段阻止臆造精確C3R或D2R身分。",
+          "verdict": "keep",
+          "excerpt_for_editor": "將病例放回 2026 分級時要保留證據邊界： 已有確診 PE、RV 異常及 biomarker 陽性，加上呼吸衰竭，顯然不是單純低風險 B 類；它具有 C3 及 R 所描述的生理特徵。但原文並未完整報告所有分級所需資料，特別是灌流與 shock 判準，不能因嚴重缺氧或有 PFO 就憑空認定",
+          "line_for_editor": 153
+        },
+        "ea13699e3c0839a641-1": {
+          "role": "decision",
+          "reader_gain": "把難治低氧病例轉成選擇下一項能區分競爭機轉的檢查問題。",
+          "nonredundancy_reason": "此結論使病例不只是珍奇PFO故事，而是可遷移的診斷決策。",
+          "verdict": "keep",
+          "excerpt_for_editor": "從這位患者學到的問題不是「看到 PE 就要找 PFO」，而是：當一個常見機轉不足以解釋觀察到的嚴重程度時，下一個檢查應該用來區分哪些有不同治療意義的 competing mechanisms？ 這也是 clinical reasoning 和按需 EBM 搜尋的關係。",
+          "line_for_editor": 155
+        },
+        "3e1d531cd6a7eb2044-1": {
+          "role": "counterfactual",
+          "reader_gain": "用活動性消化道出血推翻sPESI零分即可DOAC返家的推論。",
+          "nonredundancy_reason": "出血風險和出院適用性不在短期預後分數中，提供獨立反例。",
+          "verdict": "keep",
+          "excerpt_for_editor": "場景一（自編）： 45 歲、sPESI 0，確診 segmental PE，血壓穩定、室內空氣氧合良好，RV／biomarker 未見異常；但剛發生大量腸胃道出血。即使 PESI／sPESI 看起來低風險，也不能機械判成「可以拿 DOAC 回家」：活動性出血會改變抗凝可行性、住院與替代處置",
+          "line_for_editor": 159
+        },
+        "85a8da9b37efb068a9-1": {
+          "role": "counterfactual",
+          "reader_gain": "以PESI高分但RV及灌流正常示範預後與介入適應症分離。",
+          "nonredundancy_reason": "此例與低分出血情境相反，防止把高分當作溶栓觸發器。",
+          "verdict": "keep",
+          "excerpt_for_editor": "場景二（自編）： 70 歲、確診 PE、HR 112、RR 32；PESI 110（Class IV），troponin 正常、RV 正常、灌流正常。這說明年齡和快心跳／快呼吸使短期預後 score 升高；但不表示已發生 RV failure，更不足以支持系統性溶栓。若 oxygen su",
+          "line_for_editor": 161
+        },
+        "212d2dbecde54f50ce-1": {
+          "role": "counterfactual",
+          "reader_gain": "以正常SBP合併乳酸少尿示範PE低心輸出與敗血等鑑別。",
+          "nonredundancy_reason": "這段要求動態監測與替代原因比較，不與單純高PESI情境重複。",
+          "verdict": "keep",
+          "excerpt_for_editor": "場景三（自編）： 同樣 BP 118/75，卻有新發 RV dysfunction、troponin 陽性、lactate 3.8、少尿且四肢發冷。現在最重要的不是重算 PESI 得到更大數字，而是辨認 PE 相關低心輸出是否已成立，並與敗血、出血、藥物效應等競爭原因比較；持續惡化時應升級",
+          "line_for_editor": 163
+        },
+        "720bf15df9b91df49f-1": {
+          "role": "navigation",
+          "reader_gain": "回收PESI的原始預後構念與確診、負荷、處方的不同邊界。",
+          "nonredundancy_reason": "第一問讓讀者能自我測試是否混淆短期預後與介入決策。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一問，PESI 到底測什麼？ 它整合年齡、共病和生理指標來分層短期整體預後，不是 PE 的確診工具、血栓負荷或溶栓處方閾值。",
+          "line_for_editor": 167
+        },
+        "8e54b0b12522c39a8f-1": {
+          "role": "navigation",
+          "reader_gain": "回收A–E如何拆開RV損傷、灌流及呼吸需求的臨床用途。",
+          "nonredundancy_reason": "第二問檢驗分級是否轉成監測決策，而非僅記住表格字母。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二問，2026 A–E 讓什麼原本模糊的決策更明確？ 它把臨床基線風險、RV injury／dysfunction、組織灌流失代償與呼吸支持需求加以分離，幫助辨認監測與治療升級的必要。",
+          "line_for_editor": 169
+        },
+        "bee1e6531e8b9ec211-1": {
+          "role": "safety",
+          "reader_gain": "集中辨識正常血壓、SpO₂、C3及sPESI的典型過度推論。",
+          "nonredundancy_reason": "第三問是將跨章節常見誤用整合成床邊警示，不取代前文機轉。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三問，最容易犯什麼過度推論？ 正常血壓 ≠ 沒有 shock；正常 SpO₂ ≠ 心輸出量足夠；C3 ≠ 必須溶栓；sPESI 0 ≠ 不需評估出血和社會條件；saddle PE ≠ 一定 E 類；「已成功再灌流」≠ 不需要後續抗凝或長期症狀追蹤。",
+          "line_for_editor": 171
+        },
+        "3e8703a465a0ea7fdc-1": {
+          "role": "decision",
+          "reader_gain": "用復發風險與出血代價解釋3至6月抗凝及延長治療選擇。",
+          "nonredundancy_reason": "沒有此段，讀者可能以急性C3分類或CT血栓消失決定停藥。",
+          "verdict": "keep",
+          "excerpt_for_editor": "抗凝初始治療期通常為 3–6 個月。若首次 PE 由重大、已解除的可逆風險（如大型手術）造成，完成初始期後常可停止；如果找不到 major reversible risk factor 或有持續性風險，通常更需要考慮延長治療。決策核心是未來復發風險 × 繼續用藥的出血代價，不是「當初 C3",
+          "line_for_editor": 175
+        },
+        "59fd737777e24f8462-1": {
+          "role": "decision",
+          "reader_gain": "交代一年症狀追蹤與三個月後CTEPD/CTEPH再評估的資訊缺口。",
+          "nonredundancy_reason": "這是急性治療後剩餘問題，不能由初始再灌流成功推定已解決。",
+          "verdict": "keep",
+          "excerpt_for_editor": "PE 病人每次追蹤均應詢問呼吸困難、運動功能及生活受限，至少持續一年；若接受足夠抗凝三個月後仍喘、功能受限，應考慮慢性血栓栓塞性肺疾病（CTEPD／CTEPH）或其他肺心疾病的檢查。正常 resting echo 不必然結束全部診斷，需視情況結合 V/Q perfusion scan 和後",
+          "line_for_editor": 177
+        },
+        "830d204322011b1123-1": {
+          "role": "source_context",
+          "reader_gain": "提供2026正式指南的具體章節，使分類與治療主張可回查。",
+          "nonredundancy_reason": "核心推薦與Table7需指向原始全文，不可只依概要轉述。",
+          "verdict": "keep",
+          "excerpt_for_editor": "主指南：Creager MA, et al. 2026 AHA/ACC/Multisociety Guideline for the Evaluation and Management of Acute Pulmonary Embolism in Adults. JACC. 2026. h",
+          "line_for_editor": 183
+        },
+        "3bf8188544e2895310-1": {
+          "role": "source_context",
+          "reader_gain": "指出AHA官方分類圖及R註腳，並聲明本站未複製原圖像素。",
+          "nonredundancy_reason": "分類圖是臨床閾值來源，權利界線不同於自行整理文字表。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方 A–E 圖：AHA/ACC Acute PE Clinical Categories. https://professional.heart.org/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Catego",
+          "line_for_editor": 184
+        },
+        "8892a516fecb02bd27-1": {
+          "role": "source_context",
+          "reader_gain": "標明JACC指南概要為輔助對讀而非取代正式推薦文字。",
+          "nonredundancy_reason": "此來源幫讀者快速比較，但不能用來覆蓋原指南適用條件。",
+          "verdict": "keep",
+          "excerpt_for_editor": "官方概要：Dudzinski DM, et al. 2026 Acute Pulmonary Embolism Guideline-at-a-Glance. JACC. https://www.jacc.org/doi/10.1016/j.jacc.2025.12.023",
+          "line_for_editor": 185
+        },
+        "aca712cb3489fdfa73-1": {
+          "role": "source_context",
+          "reader_gain": "定位Gutgold真實病例的原始出處與不可外推治療效益限制。",
+          "nonredundancy_reason": "若沒有此來源身份，個案的數字可能被誤認為合成教學資料。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真實病例：Gutgold A, et al. Severe Hypoxemia in Acute Pulmonary Embolism. Respirology Case Reports. 2025;13:e70115. https://doi.org/10.1002/rcr2.70115",
+          "line_for_editor": 186
+        },
+        "f76e60d822025309a6-1": {
+          "role": "source_context",
+          "reader_gain": "提供HOME-PE隨機研究的原始索引以核對居家治療策略。",
+          "nonredundancy_reason": "此研究的證據問題是分流可行性，不是肺栓塞溶栓療效。",
+          "verdict": "keep",
+          "excerpt_for_editor": "分流試驗：Roy PM, et al. HOME-PE. European Heart Journal. 2021;42:3146–3157. https://pubmed.ncbi.nlm.nih.gov/34363386/",
+          "line_for_editor": 187
+        },
+        "7e04bcccbb2eb8b0d7-1": {
+          "role": "source_context",
+          "reader_gain": "提供PEITHO原始試驗以核對複合終點與出血傷害數據。",
+          "nonredundancy_reason": "此試驗支持C3的風險交換，不應與導管新試驗混用。",
+          "verdict": "keep",
+          "excerpt_for_editor": "溶栓利益與傷害：Meyer G, et al. Fibrinolysis for Patients with Intermediate-Risk Pulmonary Embolism. NEJM. 2014;370:1402–1411. https://pubmed.ncbi.nlm.ni",
+          "line_for_editor": 188
+        },
+        "582f9003aecda92657-1": {
+          "role": "source_context",
+          "reader_gain": "交代PESI歷史死亡率的文獻來源與年代限制。",
+          "nonredundancy_reason": "這避免將早期觀察百分比當成2026所有族群的精確預測。",
+          "verdict": "keep",
+          "excerpt_for_editor": "PESI 歷史風險估計：Outpatient treatment of pulmonary embolism, European Respiratory Review. https://publications.ersnet.org/highwiredisplay/entityview/n",
+          "line_for_editor": 189
+        },
+        "9f65f5a1fd2148b1e2-1": {
+          "role": "navigation",
+          "reader_gain": "引導至VTE診斷、正常血壓休克及官方PE國考的不同章節。",
+          "nonredundancy_reason": "這些連結各自回答不同問題，不將短題解冒充本篇深度教材。",
+          "verdict": "keep",
+          "excerpt_for_editor": "延伸閱讀：VTE 病理及診斷前機率；血壓正常的 PE：真實病例、右心失代償與再灌流；115 年 PE 官方國考題 Q8、Q9。這些材料回答不同問題，不把三篇重複貼在本篇。",
+          "line_for_editor": 190
+        }
+      }
     }
   }
 }
