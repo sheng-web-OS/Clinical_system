@@ -98,6 +98,15 @@
 
 這份單一病例只告訴我們，**原團隊使用 MRU 看到了異常交通，手術又確認了路徑**。它沒有提供 paired stool/urine 檢驗、MRU、CT 之間的 sensitivity、specificity 或 likelihood ratio，也不足以證明 MRU 對任何疑似瘻管病人都是首選。如果要比較檢查效能，就需要符合相近臨床族群、恰當參考標準與可核實的診斷準確性研究；如果找不到，便誠實保留不確定性，依可回答的問題、可近性、風險與可能改變的處置決定。[14]
 
+<figure id="metabolic-acidosis-three-questions">
+<div class="atlas-logic atlas-logic-three" role="group" aria-label="三個互不等同的臨床問題：血中酸中毒的機轉、排出液的來源、尿液的解剖路徑">
+<div><small>血中的問題</small><strong>HCO₃⁻ 為何降到 7？</strong><p>先比較腸道鹼流失、腎臟排酸、氯負荷與混合代謝異常；AG 只能縮小機轉，不能指出哪一個器官流出了液體。</p></div>
+<div><small>排出液的問題</small><strong>水樣排出物究竟是什麼？</strong><p>膀胱尿量下降而水樣排出持續時，同時比較腸道與膀胱排出物的 creatinine、pH 和溶質；結果支持尿源成分，仍非解剖確診。</p></div>
+<div><small>解剖上的問題</small><strong>尿液是否真的流進小腸？</strong><p>需要能描繪尿液外漏與交通位置的影像；本病例由 MRU 顯示 urinoma → 小腸瘻道，再經手術確認。</p></div>
+</div>
+<figcaption>原創臨床問題地圖，依據 Frontiers in Pediatrics 2021 病例的 Figure 1–2 及 Table 1 建立；三個問題可在臨床上並行處理，並非所有患者必須依序完成三種檢查。原始影像與表格可從<a href="../metabolic-acidosis-sources.md">病例圖表來源頁</a>定位。</figcaption>
+</figure>
+
 ## 五、影像與手術：真正被證實的是哪一段因果鏈？
 
 在難解水樣排出持續約兩週後，團隊安排 contrast-enhanced magnetic resonance urogram（MRU）；整段未獲診斷的病程接近三週，不能將兩個時間描述視為精確相同。MRU 顯示：**兩條移植輸尿管都有尿液外漏**，先匯入右側 retroperitoneal 尿液積聚（urinoma），再經由一條細小瘻管與小腸相通。影像能追到排泄出的對比劑逐漸充滿鄰近腸腔；這是「尿液進入腸道」比化驗推測更直接的解剖證據。[1]
@@ -117,6 +126,15 @@
 在生理模型裡，**CFTR／SLC26 系列**等上皮運輸系統與 bicarbonate 分泌相關；然而，這位病童沒有逐條測定 CFTR、SLC26、NHE3 通量。因此應稱為「能解釋觀察的生理機轉」，而不是「已從這位患者直接測得的完整轉運路線」。小腸的段落、接觸面積、停留時間、尿液組成與腎功能，也都會影響個別患者表現。
 
 這也解釋為何一次性的輸液、單純高氯負荷或一般腸胃炎，雖然都能產生類似的血液表型，卻不一定能解釋她**在空腹狀態仍持續大量排出、膀胱尿量減少、尿液樣溶質出現在腸道**的組合。真正讓診斷從「相容」升級到「可信」的，始終是時間線與跨器官證據，而非只看化學公式。
+
+<figure id="uroenteric-ion-exchange">
+<div class="atlas-logic atlas-logic-three" role="group" aria-label="尿液走錯出口與腸道酸鹼交換的可能因果關係">
+<div><small>尿液改道</small><strong>移植輸尿管外漏</strong><p>尿液經 urinoma 和瘻管進入小腸，增加與腸上皮接觸的時間與表面積；單純 urinoma 若未連到腸道，並不足以解釋大量肛門排出。</p></div>
+<div><small>腸黏膜轉運</small><strong>Cl⁻ 吸收／HCO₃⁻ 分泌</strong><p>尿液接觸腸道可促進相對 chloride 負荷、bicarbonate 向腸腔流失；尿素經細菌作用後，NH₃／NH₄⁺ 相關再吸收也可能參與。</p></div>
+<div><small>血液表型</small><strong>高氯性代謝性酸中毒</strong><p>血中 HCO₃⁻ 下降而 Cl⁻ 相對增加，AG 可以不升高；這是可解釋觀察的機轉，不代表已直接量測個別轉運蛋白的 flux。</p></div>
+</div>
+<figcaption>原創機轉示意，根據 Frontiers 2021 Figure 3 的生理假說與原病例血液及排出液數據重新組織，<strong>非原論文圖像重製</strong>。原研究未直接測量每個 transporter 的通量，故圖中是機轉可能性，不是唯一確定的離子流量模型。原始圖與限制見<a href="../metabolic-acidosis-sources.md">病例圖表來源頁</a>。</figcaption>
+</figure>
 
 ## 七、何時應轉向腎臟排酸檢查？UAG 只能回答特定問題
 
