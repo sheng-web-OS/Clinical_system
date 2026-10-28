@@ -37,6 +37,8 @@
 
 2026 [IDSA AMR guidance](https://www.idsociety.org/practice-guideline/amr-guidance/)則處理已知 ESBL-E 的病原學與治療選項：當次藥敏證實 susceptible，TMP-SMX 或 fluoroquinolones 可以具有治療 cUTI 的角色；當抗藥、禁忌、不耐受或感染狀態限制其使用時，carbapenem 等選項的地位才需要按條件比較。**尚無 AST 的 empiric 決策，與已知 AST 的 definitive 決策，不是同一個問題。**
 
+兩份官方文件的**證據方法亦不同**：[IDSA 2025 cUTI](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/)以系統性文獻回顧及 GRADE 衡量建議強度、確定性；[IDSA 2026 AMR](https://www.idsociety.org/practice-guideline/amr-guidance/)在 Introduction 明確指出**未使用 GRADE**，結合文獻與專家共識，通常**假設病原已鑑定且候選藥物有體外 susceptibility**，並在 General Management Suggestions 說明具體 empiric treatment recommendations 超出該文件主要範圍。這不是說 AMR 文件沒有價值，而是不能用它的 definitive preferred list 直接替代 cUTI 指引的經驗性選藥流程，也不能把「同屬 IDSA」誤認成相同的確定性等級。
+
 ESBL 是能水解部分延伸型 β-lactam 的酵素機轉；菌株往往還可帶有其他抗藥機轉。藥物是否適合，至少還取決於感染部位、藥物可達到的暴露、當次 MIC/AST、器官功能與疾病嚴重性。不要用「ESBL 陽性」取代整份微生物報告。
 
 為什麼要研究**療效的比較證據**，而不是相信病例中某個藥物使用後患者改善？因為單一病例的改善，同時受到抗生素、解除阻塞、循環支持、疾病自然病程及其他介入影響，無法分辨每一項的因果貢獻。像 MERINO 隨機試驗所研究的 ESBL相關菌血症抗菌藥比較，才直接涉及治療效果的對照；但其菌血症母群與適用限制，也不能不加區分地外推到所有非菌血症、低風險 UTI。以下保留原稿較深入的 ESBL 作用機轉、研究差異與指引適用條件，作為本節的延伸。
@@ -64,7 +66,7 @@ ESBL 是能水解部分延伸型 β-lactam 的酵素機轉；菌株往往還可�
 
 28 歲女性原作者於住院第 3 天根據 urine isolate AST 將 ceftriaxone 改為 meropenem，後續退燒；第 5 天出院後改為居家 IV ertapenem，總計 10 天 carbapenem 治療，後續追蹤無復發。這是**同一個病例**確實被報告的時間序列，不是適用所有 cUTI 的標準 10 天療程，也無法分離先前補液、自然病程和換藥各自的因果貢獻。[Evins 2021 原始病例與 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC8147929/)。
 
-要比較抗菌藥效益，應轉向真正有對照組的試驗。例如 [MERINO 隨機試驗（JAMA 2018）](https://pmc.ncbi.nlm.nih.gov/articles/PMC6143100/)研究的是 **ceftriaxone-resistant *E. coli*／*Klebsiella pneumoniae* 菌血症的 definitive therapy**，而不是一般門診膀胱炎，也不是每個 septic 病人的未知菌種首劑。主要分析中，30 天死亡率為 piperacillin–tazobactam **23/187（12.3%）**、meropenem **7/191（3.7%）**，風險差 **8.6 個百分點**，未達預設的非劣性判定。這是試驗的結果，不代表所有 ESBL cUTI 都需要 carbapenem；而且研究以 ceftriaxone resistance 選入，不能聲稱每株都已由基因檢測確認 ESBL。
+要比較抗菌藥效益，應轉向真正有對照組的試驗。例如 [MERINO 隨機試驗（JAMA 2018）](https://pmc.ncbi.nlm.nih.gov/articles/PMC6143100/)研究的是 **ceftriaxone-resistant *E. coli*／*Klebsiella pneumoniae* 菌血症的 definitive therapy**，而不是一般門診膀胱炎，也不是每個 septic 病人的未知菌種首劑。主要分析中，30 天死亡率為 piperacillin–tazobactam **23/187（12.3%）**、meropenem **7/191（3.7%）**，觀察到的絕對風險差 **8.6 個百分點**；試驗預先設定非劣性界限 **5 個百分點**，主要分析的**單側 97.5% 信賴區間上界 14.5 個百分點，非劣性檢定 P=.90**。因此是**未能證成 pip-tazo 非劣於 meropenem**，而不是只因兩組點估計不同就自行宣布已完成所有族群的優越性檢定。這是試驗的結果，不代表所有 ESBL cUTI 都需要 carbapenem；而且研究以 ceftriaxone resistance 選入，不能聲稱每株都已由基因檢測確認 ESBL。
 
 原試驗後續以 reference broth microdilution 重驗部分分離株，差距縮小；**事後次群分析並未推翻主要試驗的限制，亦不能單憑不顯著就宣稱兩藥等效**。IDSA 2026 AMR 因而區分：已知 susceptible 的 ESBL-E cUTI、侵襲性或合併菌血症感染，和危重但尚未知 AST 的 empiric 情境，並不適用同一條處方捷徑。[IDSA 2026 §1.2–1.4](https://www.idsociety.org/practice-guideline/amr-guidance/)。
 
