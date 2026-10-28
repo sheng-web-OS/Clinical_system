@@ -95,7 +95,7 @@ Chemistry panel 上的 **serum total CO₂** 以碳酸氫根為主要成分，�
 
 ### CBC/DC：量到了細胞，不等於診斷了感染或出血
 
-CBC 是循環血液中血球數量、Hb 和紅血球指標的快照。WBC 是總白血球量，不能代替 differential 裡各細胞的**absolute count**；嗜中性球百分比上升也可能只是其他族群下降。Platelet 下降須先排除 EDTA-dependent clumping 等偽性低下，再考慮破壞、消耗、生成不足與稀釋。Hb 濃度會受血容量改變影響，因此手術後、大量輸液或利尿的短期 Hb 趨勢，不能只讀作「又流失了多少血」。
+CBC 是循環血液中血球數量、Hb 和紅血球指標的快照。WBC 是總白血球量，不能代替 differential 裡各細胞的**absolute count**；嗜中性球百分比上升也可能只是其他族群下降。Platelet 驟降時，**檢體假象與真實危險應平行評估**：查看 analyzer flags／血片是否有 EDTA-dependent clumping，同時依出血、溶血、AKI、神經症狀等徵象評估 TMA、DIC、破壞與消耗；不可為了排除假性低下而延誤處置。Hb 濃度會受血容量改變影響，因此手術後、大量輸液或利尿的短期 Hb 趨勢，不能只讀作「又流失了多少血」。
 
 到這裡，我們尚無出血證據，也沒有用 WBC 自動升級抗生素；但若出現黑便、血壓下降、胸痛或血小板急跌，新的病人訊號會使同一組實驗室數值導向不同的立即檢查與處置。這就是臨床判讀與逐項背正常值的差別。
 
@@ -148,7 +148,7 @@ CBC 是循環血液中血球數量、Hb 和紅血球指標的快照。WBC 是總
 ## 專業深究｜這套框架從哪些證據來，在哪裡失效？
 
 1. **檢體可信度**：Takieddine & El-Khoury, *Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025*, AJKD 2025;85:104–114。文章討論 hemolysis、採檢與分析方法造成的假性異常；本篇的四時點患者數值是原創情境，**不是該文病例**。[PubMed 原文資訊](https://pubmed.ncbi.nlm.nih.gov/39396361/)；[期刊全文](https://www.sciencedirect.com/science/article/pii/S0272638624009211)。
-2. **AKI 門檻**：KDIGO 2012 AKI 定義，包括 serum Cr ≥0.3 mg/dL/48 h、≥1.5 倍基線/7 天，或 urine output <0.5 mL/kg/h ≥6 h；本篇的尿量分母是示例體重，**尿量資料真偽另需核對**。[KDIGO summary](https://pmc.ncbi.nlm.nih.gov/articles/PMC4057151/)；[ADLM/AACC 檢驗醫學指引](https://academic.oup.com/jalm/article/6/5/1316/6272705)。
+2. **AKI 門檻**：對照 [KDIGO 2012 原始 Table 2（印刷 p.19；分期與尿量）及 Figure 4（p.25；分期管理優先序）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)。KDIGO 2012 AKI 定義，包括 serum Cr ≥0.3 mg/dL/48 h、≥1.5 倍基線/7 天，或 urine output <0.5 mL/kg/h ≥6 h；本篇的尿量分母是示例體重，**尿量資料真偽另需核對**。[KDIGO summary](https://pmc.ncbi.nlm.nih.gov/articles/PMC4057151/)；[ADLM/AACC 檢驗醫學指引](https://academic.oup.com/jalm/article/6/5/1316/6272705)。
 3. **eGFR 邊界**：KDIGO 2024 CKD guideline 與相關臨床解讀指出非穩態 creatinine、肌肉量及藥物可使 eGFR 估計失準；不可拿 AKI 的即時 eGFR 當穩定腎功能的精確量測。[KDIGO 2024 CKD](https://kdigo.org/guidelines/ckd-evaluation-and-management/)；[臨床解讀](https://academic.oup.com/ajhp/article/82/12/660/8107680)。
 4. **危險高鉀**：UK Kidney Association *Treatment of Acute Hyperkalaemia in Adults* 指引（官網顯示 2026-07 更新版供下載），以臨床嚴重度、ECG、重驗、即時治療與追蹤分流；具體用藥劑量須按實際版本及本院急救流程核對，不可把本文情境當個別患者醫囑。[UKKA 官方指引頁](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。
 5. **輸血邊界**：Carson et al, *Red Blood Cell Transfusion: 2023 AABB International Guidelines*, JAMA 2023。一般**血流動力穩定**成人多採限制性策略，通常 Hb <7 g/dL 時才考慮輸血，但疾病亞群與臨床脈絡不同；急性心肌梗塞另有 2025 AABB 建議，不能把一般病房門檻照搬。[AABB 2023](https://pubmed.ncbi.nlm.nih.gov/37824153/)；[AABB 2025 AMI](https://www.aabb.org/news-resources/news/article/2025/08/20/expert-panel-recommends-liberal-transfusion-strategy-for-hospitalized-patients-with-ami)。
