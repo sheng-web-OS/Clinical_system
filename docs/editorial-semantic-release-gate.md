@@ -19,6 +19,8 @@
 
 另按 [EPQC 七軸](editorial-prose-quality-contract.md) 做文章層級 A–G 評分（每軸至少 3，平均至少 3.3），附核心讀者問題、本文新增的理解以及對「其實不需要此稿／此段」最有力的反對理由。**任一醫學安全、證據虛構、因果斷裂、metadata 混入正文或重大來源衝突尚未解決，直接 HOLD，不可用平均分數補償。**
 
+**全篇反向匹配（不得被段落 KEEP 補償）**：獨立審稿者在 A–G 與逐段審查之外，須直接對照**文章標題所承諾的臨床問題**、真正使用的病例在各時點已知／未知的資料、競爭機轉、所引研究的證據角色，以及正文**實際已回答**的問題。每段皆正確，卻用另一名病人的資料填上同題缺口，或用「新培養第 3 天才確認 ESBL」冒充「首劑前已有舊 ESBL AST」，仍屬**article-level topic–evidence mismatch**，先退回縮題／拆篇／重新研究；不可用七軸均分、真實病例標籤或 CI 綠燈解除。作者須先依 [EPQC §1A](editorial-prose-quality-contract.md) 完成開寫前可行性判斷；審稿者須**獨立重新檢驗**，不能僅採信作者自述。必要的判斷記入既有 PR／獨立審稿理由，**不變更 review JSON schema 或新增公開 metadata**。
+
 ## Agent 的最短交付流程
 
 1. 撰稿／修訂完成後執行 `python site/semantic_gate.py --packet content/.../article.md`，產出帶有段落 ID、來源位置、摘錄與當前 Git blob 的**未核准草稿封包**；它不會自動填通過。
