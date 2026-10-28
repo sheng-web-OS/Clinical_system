@@ -11,9 +11,9 @@
 
 ## 系統性證據與本地臨床責任
 
-- **IDSA 2025 cUTI**：經驗性選擇的四步評估與 GRADE；近期舊尿培能影響抗藥風險，卻不是當次病原確診。
-- **IDSA 2026 AMR**：已知 ESBL-E 與 susceptibility 後的確定性治療與限制；不要用 definitive preferred 倒推未知 AST 的 empiric first dose。
-- **MERINO 及後續再分析**：比較部分侵襲性 ESBL 相關菌血症用藥，不能直接概括所有非菌血症 cUTI。
+- **IDSA 2025 cUTI**：由系統性文獻回顧及 **GRADE** 區分建議強度／證據確定性；經驗性選擇有四步評估。近期舊尿培影響抗藥先驗機率，並非當次病原確診。來源：[官方 cUTI Introduction](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/)。
+- **IDSA 2026 AMR**：**未使用 GRADE**，作者在 Introduction 表明結合文獻與專家共識；通常假設已辨認致病菌及體外 susceptibility，具體 empiric therapy selection 超出文件主要範圍。不可用 definitive preferred list 倒推未知 AST 的 first dose。來源：[官方 AMR Introduction／General Management Suggestions](https://www.idsociety.org/practice-guideline/amr-guidance/)。
+- **MERINO 2018 JAMA 隨機試驗**：原始分析 30 天死亡率 pip-tazo 23/187（12.3%）對 meropenem 7/191（3.7%），差 8.6 percentage points，非劣性 margin 5 percentage points、one-sided 97.5% CI upper 14.5、P=.90 for noninferiority；比較的是 ceftriaxone-resistant *E. coli*／*K. pneumoniae* **菌血症 definitive therapy**，不能概括所有非菌血症 cUTI，也不可把 noninferiority failed 說成普遍 superiority 已證成。來源：[原始 JAMA／MERINO abstract and methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC6143100/)。
 - **當院醫師／藥師／感染管制規範**：病人級劑量、藥物相容性、腎功能動態、院內抗藥圖譜與用藥授權必須另行核對，這篇教材不提供已簽核醫囑。
 
 ## 感染嚴重度、抗菌藥與 source control
