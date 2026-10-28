@@ -41,3 +41,14 @@
 - **考古題**：不得宣稱本稿已對應 113-1／115-2 真題，直到原卷與更正答案**目視**核定年度／梯次／醫學科目／題號；不以 PR #181 的機器索引冒充完成。
 
 本輪工具未使用付費 TinyFish。病人/合成病例資訊全為教學。人工介入分鐘 NOT_MEASURED，未完成的獨立審查不算 0 次也不算成功。
+
+
+## 2026-10-28｜PR #187 已發布稿讀者品質否定後的重新編輯
+
+本文件上方記錄的是前版 PR #186 的來源與私人 QA，**不等於新稿 PR #187 的教學品質審查或手機驗收**。原稿曾通過 CI 和 EPQC 格式閘門，但正式讀者判為教學不合格；詳 Issue #133 與 Draft PR #187 的獨立審查紀錄。新稿仍為 HOLD。
+
+- **舊問題 P1① 圖沒有獨立學習價值**：PR #187 已將三張文字卡改為固定同一份 K/Cr/I-O、比較 09:00 warm-and-congested 與 cold-and-congested 的兩欄反事實。歷史 360/375/390px 三卡截圖不能充作新圖 QA，必須新建 viewport receipt。
+- **P1② 病例時間線缺證據**：新版增加明確標示合成的 09:00 BP 112/70、四肢溫暖、JVP/肺底仍鬱血、體重 75.6→75.0 kg、bladder scan 殘尿約 65 mL、尿量漏記可能；推理限制為不反射性補液、不憑 Cr 確診單一病因、不自動指定利尿劑量。依 [AHA/ACC/HFSA 2022 HF §9.1/9.3](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012) congestion/perfusion 同時評估。
+- **P1③ Mg 與其他 panel 仍為陪襯**：新版加入 08:40 合成 telemetry 的單發 PVCs 增多，並讓 Mg 1.5 在維持 AKI 風險下改變心律監測與補鎂安全評估。來源 [NHS SPS hypomagnesaemia](https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/) 與 [ESC 2025 急性心衰竭 ventricular arrhythmia consensus](https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.3645)。無資料可證明 PVCs 單由 Mg 異常造成；不是通用補鎂處方。
+- **回歸 fixture**：新增 tests/test_lab_morning_sheet_reader_transfer.py，僅證明段落錨點與案例資料未被刪除，**不是臨床正確性或讀者遷移能力測試**。
+- **下一道真實閘門**：另一審稿執行脈絡需在讀取最終正文 blob、原證據、舊版對照與新圖後逐段挑錯；作者本脈絡不得自簽 independent_ai_pass。CI 的 stale semantic receipt 硬性 HOLD 合理，不能因工程綠燈解除。真人盲測、理解增益及新生產頁手機 QA：NOT_VERIFIED。
