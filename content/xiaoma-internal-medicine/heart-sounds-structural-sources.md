@@ -50,3 +50,22 @@
 1. **試題答案身分**：表列考卷和答案來源精確到民國年／梯次／醫學（三）／題號；公開記事按原年度答案作答，當代指南差異在內文另述。附圖題有待額外圖片核驗。若使用更正答案 PDF 出現調整，應以最新正式更正為準。
 2. **來源權限**：Pocket Medicine 9E 原頁的核對證據來自先前保存的私人審核；本稿沒有直接出版 Pocket 原圖、題庫 PDF 或外部圖像。醫學三以外科目及更早年度不是本篇「近五年」檢索的完整樣本。
 3. **臨床安全**：聲音的長短、位置、呼吸與姿勢變化是**鑑別診斷線索**，不能單憑聽診決定是否換瓣／封堵／手術；須依 TTE/TEE、必要 CT、感染與灌流狀態判斷。新稿與內部 AI 校對不構成外部醫師同儕審查或實證學習成效。
+
+## 主教材重寫：真實病例與分層原始證據（2026-10-28 對照）
+
+**真實病例錨點 — Kameyama et al. 2021｜心雜音陰性不排除急性 MR**
+
+- Akiko Kameyama et al. *Diagnostic Pitfalls in Papillary Muscle Rupture-Associated Acute Mitral Regurgitation after Acute Myocardial Infarction.* Case Reports in Critical Care (2021), article 1396194, DOI [10.1155/2021/1396194](https://doi.org/10.1155/2021/1396194), [PubMed PMID 34970457](https://pubmed.ncbi.nlm.nih.gov/34970457/), [PMC8714394](https://pmc.ncbi.nlm.nih.gov/articles/PMC8714394/).
+- **本輪實際查核層級**：原始研究的公開摘要、作者／DOI 身分與搜尋顯示的原始病例段落；未取得可完整逐圖檢視的原始圖像。已明示的事實限於：88F、急性呼吸窘迫／休克／意識障礙、沒有收縮期雜音、TTE 無法下結論、RCA 後降支阻塞、住院第 5 天 TEE 發現乳突肌斷裂與 severe MR、家屬及本人未同意外科處置、其後因心衰死亡。正文沒有自編血壓、EF、瓣膜逆流數據或補寫原文未核實的確定時間點。
+- **證據角色**：用來說明真實診斷延誤與 TEE 對解剖資訊的增量；病例報告不提供「應在第幾日常規做 TEE」「某處置能降低死亡率」的效果證明。急性瓣膜破壞的介入建議須另由 2025 VHD guideline 支持。
+- **原圖處理**：研究提供可公開檢索圖像，但本輪沒有重新取得逐圖核對、圖說與權利評估，因此主文只採用有意義的**原創文字證據時間圖**，不冒充再製原研究影像，原圖保留合法來源連結。
+
+**當代指南精確定位**
+
+- [2025 ESC/EACTS VHD Guidelines](https://academic.oup.com/eurheartj/article/46/44/4635/8234488)：Sections 7.2–7.4（急慢性 AR、影像與介入）、8.2–8.4（AS：mean gradient、Vmax、AVA 與 low-flow/low-gradient）、9.1–9.2（primary/secondary MR、TTE/TOE 與 acute severe MR 急迫性）、10（rheumatic/degenerative MS）。本輪取得可檢索的正式指南文字與部分表格摘要，沒有宣稱已重新目視核對整部指南每一張原圖及 supplementary tables。關鍵數字：high-gradient severe AS 的 concordant 概念組合為 Vmax ≥4 m/s、mean gradient ≥40 mmHg、AVA ≤1 cm²；必須與臨床 flow 狀態整合，非任一條件單獨成立皆可直接指定介入。
+- [2024 Multisociety HCM Guideline](https://www.jacc.org/doi/10.1016/j.jacc.2024.02.014)：Pathophysiology／LVOTO 章；≥30 mmHg 作阻塞定義、≥50 mmHg 與症狀及治療失敗結合後支持進階治療考慮。正式全文可能有存取限制；上述門檻已由對應指南檢索段落核對。
+- [2025 ACC/AHA 成人先天性心臟病指南](https://www.jacc.org/doi/10.1016/j.jacc.2025.09.006)：ASD closure 的 PVR、Qp:Qs 與 RV dilation 適用條件，Eisenmenger physiology 下禁止關閉分流（Class III: Harm），不可把這個條件簡化成所有 ASD 不可關閉。
+- [2023 bedside physical examination for AS systematic review](https://pubmed.ncbi.nlm.nih.gov/37377515/)：理學檢查能提高或降低疾病機率，沒有聲音或頸動脈傳導並非在不穩定病人中排除所有結構病變的金標準。該研究對象與檢查效度不能無條件外推至急性休克／其他瓣膜病。
+- [Merck Manual: Cardiac Auscultation](https://www.merckmanuals.com/professional/cardiovascular-disorders/approach-to-the-cardiac-patient/cardiac-auscultation)：用來對照站立、Valsalva、蹲下、handgrip、吸氣等血流力學傾向；屬臨床參考而非取代原始比較研究或個別病人的操作反應。
+
+**未完成的獨立檢核**：需由不同於寫作者的審稿脈絡核對最新稿的病例文字、2025 VHD 原圖與註腳、Pocket Medicine 9E 既有原圖定位、原始國考附圖、引用連結與 360／375／390px 手機段落；完成前仍為 Draft／HOLD，不能宣稱已通過 EPQC、醫學或版權審查。
