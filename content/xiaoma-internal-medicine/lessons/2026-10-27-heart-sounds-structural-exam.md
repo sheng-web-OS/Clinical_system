@@ -87,6 +87,15 @@ MR 時，LV 收縮的 stroke volume 被分成**前向主動脈輸出**與**回�
 
 一個很好的對照是 AS 與 obstructive HCM。AS 是相對固定的瓣口阻力：LV 變小且前向流量下降時，射出性雜音通常較弱。obstructive HCM 則是 LV 流出道幾何**動態**改變；腔室縮小可加劇 mitral leaflet systolic anterior motion（SAM）、令 LVOT 更窄，反而使收縮雜音變強。同樣是「收縮期射出聲」，病變對 preload 變化的反應可以相反，因為**前者主要改變流量，後者同時改變阻塞的幾何形狀**。
 
+<figure id="as-hcm-preload-compare" role="group" aria-label="站立時前負荷下降：固定主動脈瓣狹窄和 HCM 動態流出道阻塞的相反血流反應">
+<div class="atlas-logic atlas-logic-three">
+<div><small>共同改變｜站立／Valsalva 用力期</small><strong>Preload 降低，左室充盈量下降</strong><p>操作者相同，先固定改變的生理條件；不能只看到「回心量下降」就替所有雜音指定同方向。</p></div>
+<div><small>固定瓣口｜Aortic stenosis</small><strong>瓣口未在數秒內放大，射出流量減少</strong><p>Forward flow ↓ → 穿瓣射流能量 ↓ → 收縮期雜音通常變弱。聲音變小不等於瓣膜狹窄改善。</p></div>
+<div><small>動態出口｜Obstructive HCM</small><strong>心室縮小，SAM 與 LVOTO 可加劇</strong><p>LV cavity ↓ → 動態阻塞加劇 → 收縮期雜音通常變強。聲音變大不等於 cardiac output 變好。</p></div>
+</div>
+<figcaption>原創雙機轉比較圖：左室充盈降低是共同起點，分歧點為「固定瓣口流量減少」與「動態出口幾何改變」。依既有 Pocket Medicine 第九版 HCM 第 41 頁與 AS 第 45 頁的原書核對定位重建，不是原書 Figure 截圖；實際反應仍受收縮力、血壓和合併 MR 影響。</figcaption>
+</figure>
+
 HCM 也不等於只有 obstruction。心肌肥厚表型、舒張充盈、心肌缺血、MR、惡性心律不整風險都需要各自評估。2024 AHA/ACC HCM 指南以靜息或誘發 LVOT peak gradient **≥30 mmHg** 作為 obstruction 的定義；對仍有症狀、考慮進階阻塞治療的情境，通常以 **≥50 mmHg** 作重要介入門檻之一，兩個值不能互換。減少 preload 的處置有時會加重阻塞，但如果病人真的有充血，也不能反過來宣稱所有 HCM 完全禁用利尿劑；必須先辨識症狀究竟由 underfilling/LVOTO、充盈壓過高、節律或其他病因主導。[2024 HCM Guideline](https://www.jacc.org/doi/10.1016/j.jacc.2024.02.014)。
 
 MVP 是另一個容易混淆的例子：LV 較小時，瓣葉較早到達 prolapse 的幾何狀態，因此 mid-systolic click 常提前、其後 late systolic murmur 可能延長。它與 HCM 同樣可隨站立改變，卻不是同一病因。TR 在吸氣時常因右心回流增加而增強（Carvallo sign），但在重度右心衰竭、複雜呼吸力學或合併病灶下也不應要求必須出現。
