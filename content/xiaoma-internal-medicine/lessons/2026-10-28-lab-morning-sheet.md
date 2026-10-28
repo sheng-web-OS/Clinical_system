@@ -65,7 +65,7 @@ Potassium 大部分位在細胞內。若採血後紅血球在試管內破裂，�
 <p><strong>Cr 1.16 → 1.69</strong> 符合肌酐 AKI；<strong>240 mL／8 h ≈ 0.4 mL/kg/h</strong> 僅是有漏記疑慮的平均值。腎功能變化、鬱血、灌流與用藥需<strong>並行</strong>檢查，尿量真偽<strong>待確認</strong>。</p>
 </section>
 </div>
-<figcaption>圖 1｜原創合成病例的三條並行判斷，不是固定先後通關的診療演算法。病例數字並列不表示 Cr 上升原因已證實；對照 KDIGO 2012 AKI 與 UKKA 2026 hyperkalaemia 原始來源與限制。</figcaption>
+<figcaption>圖 1｜原創合成病例的三條並行判斷，不是固定先後通關的診療演算法。病例數字並列不表示 Cr 上升原因已證實；對照 KDIGO AKI 2012 與 UKKA 2026 hyperkalaemia 原始來源及適用限制。</figcaption>
 </figure>
 
 ### 09:00：Cr 上升了，為什麼還不能決定停止利尿或直接補水？
