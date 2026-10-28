@@ -1,6 +1,6 @@
 {
   "schema": "PR191_INDEPENDENT_READ_ONLY_PARAGRAPH_AUDIT_V1",
-  "observed_at": "2026-10-28T04:38Z",
+  "observed_at": "2026-10-28T04:42Z",
   "pr": 191,
   "reviewer_context": "distinct scheduled patrol execution, not original article writer",
   "status": "TEXT_53_OF_53_REVIEWED_SOURCE_EXAM_IMAGE_HOLD_NO_FINAL_SEMANTIC_RECEIPT",
@@ -147,7 +147,7 @@
       "excerpt": "這段生理也能回到 Kameyama 的病人：MR 的病灶非常嚴重，但大量血液逆流到左房使病人發生肺水腫和低前向輸出，反而沒有典型響亮雜音。聲音是血流動力學的一個觀測窗，不是血行動力學本身。",
       "role": "causal_bridge",
       "reader_gain": "回扣真實急性MR病例以檢驗聲音與灌流分離",
-      "nonredundancy_reason": "刪去會失去機轉模型對開場反例的驗證",
+      "nonredundancy_reason": "刪去會失去機轉模型對開場無雜音但嚴重休克反例的完整驗證",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "602c020c9c4ec3ee8e-1": {
@@ -163,7 +163,7 @@
       "excerpt": "典型線索是右上胸骨緣的 systolic ejection murmur、向頸動脈傳導、在明顯病變時可能有較小或延遲的頸動脈上升波及減弱 A2。但音量、頸部傳導與 A2 只改變 AS 的可能性，不能替代 echo 的嚴重度分級。臨床若看到肺水腫與低血壓，還要同時問：此時是單純流出阻塞、合併",
       "role": "evidence_boundary",
       "reader_gain": "指出AS聽診與頸動脈線索不能取代Echo分級",
-      "nonredundancy_reason": "刪去會使低流量病人聲音偏弱時被低估",
+      "nonredundancy_reason": "刪去會使低流量病人聲音偏弱時被錯誤低估結構性病灶嚴重度",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "bc8492e364ecc1f04c-1": {
@@ -171,7 +171,7 @@
       "excerpt": "2025 指南對符合資格的有症狀重度 AS建議瓣膜介入評估；SAVR 與 TAVI 的選擇必須結合年齡、解剖、程序風險、合併主動脈病變及預期壽命，不是「過某個年紀一律 TAVI」或「有雜音就換瓣」。藥物能處理同時存在的高血壓或心衰症狀，卻不等於已逆轉機械性瓣口狹窄。",
       "role": "decision",
       "reader_gain": "區分有症狀重度AS介入評估與SAVR TAVI選擇",
-      "nonredundancy_reason": "刪去會讓年齡或雜音直接決定瓣膜處置",
+      "nonredundancy_reason": "刪去會讓年齡或雜音直接決定瓣膜介入方式與手術風險",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "be259fa1a309a3ce1a-1": {
@@ -251,7 +251,7 @@
       "excerpt": "聽診手法的真正價值，是對病灶作一個小型的生理擾動。站立或 Valsalva 持續用力期通常減少 venous return，LV 暫時較小；蹲下通常增加回心血量及體循環阻力；持續 handgrip 主要增加 systemic vascular resistance，即 afterload；",
       "role": "definition",
       "reader_gain": "把姿勢與手法定義成前負荷後負荷及右心回流擾動",
-      "nonredundancy_reason": "刪去會使各種聽診變化淪為孤立口訣",
+      "nonredundancy_reason": "刪去會使各種聽診變化淪為孤立口訣而缺少生理操控條件",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "983353053598b0880f-1": {
@@ -291,7 +291,7 @@
       "excerpt": "在正常吸氣時，右心靜脈回流增加，右室射血時間與 P2 可相對延後，A2–P2 間距較大。若 P2 延後與呼吸關聯較少而形成 fixed split S2，會想到 ASD；但我們必須追問：ASD 本身是否有大壓差、足以產生典型收縮期射流？ 通常不是。真正可聽見的 pulmonary area",
       "role": "causal_bridge",
       "reader_gain": "把ASD固定S2分裂與肺瓣流量雜音分開",
-      "nonredundancy_reason": "刪去會把房間隔洞本身誤認為高壓噴流",
+      "nonredundancy_reason": "刪去會把房間隔洞本身誤認為高壓噴流而非肺瓣流量增加",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "28ec2d0f2999026433-1": {
@@ -346,7 +346,7 @@
       "line": 134,
       "excerpt": "第三，代償與受害器官。 看 LV/RV 大小、LVEF、實際 forward stroke volume、LA 壓力後果、肺動脈壓和臨床充血。慢性 AR／MR 可先有心腔擴張，急性嚴重逆流卻可能在心腔仍未擴大時休克。HCM 則可能 EF 保留，卻已有 LVOT 阻塞與明顯舒張功能障礙。EF",
       "role": "causal_bridge",
-      "reader_gain": "用心腔反應與前向流量檢查EF的侷限",
+      "reader_gain": "用心腔結構反應與實際前向流量檢查EF作為比例指標的侷限",
       "nonredundancy_reason": "刪去會把保留EF誤當沒有充血或低灌流",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
@@ -379,7 +379,7 @@
       "excerpt": "如果第一時間就清楚聽見響亮的 holosystolic murmur，急性 MR 的懷疑會提高；但仍須以 echo 區分 MR、VSD 以及其他機械性併發症。有雜音不等於已有完整病因。",
       "role": "counterfactual",
       "reader_gain": "測試有雜音時仍需用影像區分MR與VSD",
-      "nonredundancy_reason": "刪去會讓陽性聽診被當成完整病因診斷",
+      "nonredundancy_reason": "刪去會讓陽性聽診被當成完整病因診斷而忽略影像鑑別",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "38c25c2ee22c167002-1": {
@@ -394,8 +394,8 @@
       "line": 146,
       "excerpt": "如果病人血壓暫時改善，但仍有嚴重逆流及急性肺鬱血，症狀改善不能證明結構病灶已消失；必須再看前向輸出與機械性失效是否受到根本處理。",
       "role": "counterfactual",
-      "reader_gain": "測試血壓改善但瓣膜結構問題仍未解決",
-      "nonredundancy_reason": "刪去會將短期循環改善錯當病灶已根治",
+      "reader_gain": "測試血壓短暫改善但瓣膜結構性失效仍未被根本解決",
+      "nonredundancy_reason": "刪去會將短期循環改善錯當瓣膜機械性病灶已獲根治",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "987767f30622592e4f-1": {
@@ -443,7 +443,7 @@
       "excerpt": "答題時應能逐步指出觀察→病理生理→還欠缺的證據→改判後的決策邊界。如果只能說出 S1、S2、AS、MR 的名稱，或只能記住某年的正確選項，還沒有達到這篇教材的教學目的。",
       "role": "decision",
       "reader_gain": "規定回答需涵蓋觀察機轉證據缺口與決策界線",
-      "nonredundancy_reason": "刪去會無法區分真正理解與只背熟名稱",
+      "nonredundancy_reason": "刪去會無法區分真正具備因果遷移理解與只背熟名詞的作答",
       "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
     },
     "2565908aed9d718f11-1": {
@@ -473,5 +473,14 @@
   },
   "clinical_hard_stop_observed": "No new proven P0/P1 in 53 text units against checked sources; source/figure/exam gate remains unresolved; not a physician/pharmacist signoff.",
   "release_authority": "NOT_GRANTED; PR remains Draft/HOLD",
-  "next_action": "Retain text-only 53-unit audit; independently inspect remaining original Pocket 9E, applicable VHD/ACHD figure footnotes, and remaining official Q/S/M illustrated items, verify exact frozen lesson/source/figure and rights, then decide final semantic receipt/CI/real reader. No auto merge/deploy."
+  "next_action": "Retain text-only 53-unit audit; independently inspect remaining original Pocket 9E, applicable VHD/ACHD figure footnotes, and remaining official Q/S/M illustrated items, verify exact frozen lesson/source/figure and rights, then decide final semantic receipt/CI/real reader. No auto merge/deploy.",
+  "validation": {
+    "units": 53,
+    "roles_valid": true,
+    "reader_gain_min_chars": 18,
+    "nonredundancy_min_chars": 18,
+    "distinct_gain": 53,
+    "distinct_nonredundancy": 53,
+    "scope": "Private text audit structural self-check only; not semantic or medical PASS"
+  }
 }
