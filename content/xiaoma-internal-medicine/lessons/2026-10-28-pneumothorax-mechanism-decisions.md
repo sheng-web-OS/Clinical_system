@@ -2,6 +2,8 @@
 
 一張胸片看到肺尖肋膜線，診斷氣胸似乎已完成。但對眼前的病人，接下來至少有三個**不相等**的問題：胸膜腔裡是不是有氣？這份氣體是否已使呼吸或循環失去代償？即使這次把氣排掉，為什麼下次可能還會再發生？**前兩問決定今天的急迫性，第三問決定是否需要更深入找病因與預防復發。**
 
+可對照[本篇指南、原始研究與真實病例來源](../pneumothorax-sources.md)，確認哪些研究能支持處置推薦，哪些只能支持診斷線索。
+
 ## 一、從一位真實患者開始：同樣是右側氣胸，為什麼病因不能只看肺尖？
 
 Stiennon 等人在 *Acta Chirurgica Belgica* 發表的病例中，一位 **43 歲女性**因右胸不適與呼吸困難就醫。她不是第一次發作，而且數次胸部症狀與月經時間有關。胸部 CT 確認部分右側氣胸。之後胸腔鏡檢查發現**橫膈膜有數個小孔（diaphragmatic fenestrations）**，臨床上因而診斷為月經相關氣胸（catamenial pneumothorax）。[原始 case report（PMID 34487484）](https://pubmed.ncbi.nlm.nih.gov/34487484/)。
@@ -39,6 +41,15 @@ CT 在複雜、非典型、反覆、疑有囊性肺病或需要外科評估時�
 **Primary spontaneous pneumothorax（PSP）**是沒有已知臨床顯著基礎肺病的自發性氣胸，不等於顯微結構完美、影像保證沒有 bleb。**Secondary spontaneous pneumothorax（SSP）**發生於既有肺疾病背景（如 COPD、肺間質病變等），相同氣胸量可能因原本肺儲備較差而更不耐受。創傷性、醫源性氣胸須另外按照成因和當時處置情境分流，不能套用 PSP 的觀察研究。
 
 年輕、反覆發作、雙側或多發肺囊腫、家族史、腎臟或皮膚表徵，應思考 LAM、Birt–Hogg–Dubé syndrome 等囊性肺病；育齡女性的反覆、尤其右側氣胸，則應**詢問每一次胸痛／氣胸與月經的時間關係**。此時重要的不是先背「哪種病比較罕見」，而是認知到「沒有已知肺病」這個分類的前提可能需要重新調查。
+
+<figure id="pneumothorax-decision-map">
+<div class="atlas-logic atlas-logic-three" role="group" aria-label="氣胸的三層決策示意：危險辨認、當次處置、復發預防">
+<div><small>現在是否危險？</small><strong>循環／呼吸失代償</strong><p>先辨識張力性急症與需要立即支持的病人。穩定才有時間比較處置方案。</p></div>
+<div><small>這一次要排氣嗎？</small><strong>症狀 × 生理 × 肺儲備</strong><p>穩定 PSP 的選項可包含觀察、抽氣或引流；不是把胸片大小當唯一指令。</p></div>
+<div><small>下次會不會再發？</small><strong>發作次數 × 病因 × 偏好</strong><p>bleb、既往復發、月經時序、基礎肺病與職業風險，決定是否追查病因與討論手術。</p></div>
+</div>
+<figcaption>原創教學示意，依據 BTS 2023 及 ERS/EACTS/ESTS 2024 的氣胸管理問題重新組織；不是任何指南的原圖或個別病人的診療流程。三層為同時辨認的決策維度，不是所有患者必須依序接受三種處置。</figcaption>
+</figure>
 
 ## 四、治療不是照 X 光大小排列，而是依生理狀態、症狀與處置目標分流
 
