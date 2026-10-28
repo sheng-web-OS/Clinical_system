@@ -20,7 +20,7 @@
 
 還有一個原稿與初版深修都沒有指出、但會立即改變醫療流程的**體系條件**：如果病人所在機構不能進行 aneurysm treatment，2023 AHA/ASA guideline §8.4 的 recommendation-specific supportive text 明確指出，應在轉送至 aSAH 專業中心前，先緊急穩定病人，必要時進行 CSF diversion／EVD placement。這與在具備立即 aneurysm securing 能力的神經血管中心討論『何者先做』，是不同決策情境。它不是要求所有患者都先 EVD，而是**治療可近性／轉院時間本身就是改變權重的證據**；也不能把尚未處置的 symptomatic hydrocephalus 只當成『等到轉院後再決定』。
 
-接著還有第三層風險：假如 coiling 因 wide neck／branch incorporation 而需要 stent，術後 DAPT 的血栓預防收益，會與 invasive ventricular catheter 的出血風險衝突。Tang 等人 2024 年回溯 83 位需 EVD 的 ruptured aneurysm 患者，DAPT 組 EVD-related hematoma 為 10/31（32.3%），無 DAPT 組 4/52（7.7%），P=0.01；但兩組的動脈瘤位置、大小及治療類型亦有差異，不能把差距全部歸因於 DAPT。比較 DAPT 前置／後置 EVD 的小樣本中，4/16 與 6/15 發生 hematoma，P=0.458，**不能用此非顯著結果斷言時序沒有影響，也不能反過來斷言『一定要先 EVD』**。在這個 DAPT 研究的兩組 EVD 先後順序比較中，**不只樣本小，兩組 posterior circulation aneurysm 也明顯不平衡（約 68.7% vs 15.0%），而且發病至 EVD 時間不同（19.2 ± 19.4 h vs 72.6 ± 33.9 h）**；即使 P=0.458，仍不能把『未達顯著』當作時序交換等效的證明。臨床上若高度預期需要 EVD、且不會延誤拯救性處置，於抗血小板暴露前取得 ventricular access 是可辯護的風險管理策略，但不是所有病人的規定。
+接著還有第三層風險：假如 coiling 因 wide neck／branch incorporation 而需要 stent，術後 DAPT 的血栓預防收益，會與 invasive ventricular catheter 的出血風險衝突。Tang 等人 2024 年回溯 83 位需 EVD 的 ruptured aneurysm 患者，DAPT 組 EVD-related hematoma 為 10/31（32.3%），無 DAPT 組 4/52（7.7%），P=0.01；但兩組的動脈瘤位置、大小及治療類型亦有差異，不能把差距全部歸因於 DAPT。**最重要的 endpoint 限制是：14 件 EVD-related hematoma 中只有 1 件為需要再次手術的 symptomatic hematoma，其餘 13 件依研究定義為 non-symptomatic、保守處理。** 因此這篇研究主要比較的是影像／處置周圍血腫事件，而不是 32.3% 病人都發生有症狀的重大出血；另一方面 1/83 也不足以可靠估計重度出血的差異。這直接影響我們如何理解 DAPT 的『臨床重要傷害』。另須注意 DAPT 組全數接受血管內治療，而非 DAPT 組多為 surgical clipping，兩組介入方式高度不均衡，無法把血腫差異獨立歸因於藥物。比較 DAPT 前置／後置 EVD 的小樣本中，4/16 與 6/15 發生 hematoma，P=0.458，**不能用此非顯著結果斷言時序沒有影響，也不能反過來斷言『一定要先 EVD』**。在這個 DAPT 研究的兩組 EVD 先後順序比較中，**不只樣本小，兩組 posterior circulation aneurysm 也明顯不平衡（約 68.7% vs 15.0%），而且發病至 EVD 時間不同（19.2 ± 19.4 h vs 72.6 ± 33.9 h）**；即使 P=0.458，仍不能把『未達顯著』當作時序交換等效的證明。臨床上若高度預期需要 EVD、且不會延誤拯救性處置，於抗血小板暴露前取得 ventricular access 是可辯護的風險管理策略，但不是所有病人的規定。
 
 現在可以把問題推進成真正會改變決策的三個反事實。**第一**，如果病人正因明顯 acute obstructive hydrocephalus 而意識惡化、動脈瘤又無法立即 securing，延遲 CSF diversion 的傷害權重上升，需緊急與神外／神經介入協調引流及 securing。**第二**，如果病人意識與影像穩定、並無急性 symptomatic hydrocephalus，而 securing 可立即進行，就沒有理由僅為了『怕將來水腦』而把 EVD 視為必須先做的介入。**第三**，如果正在考慮 SAC 或其他需抗血小板的裝置，則預期 EVD 需求與放置時機會回過頭影響 device planning；這是跨治療決策，而不只是 CSF drainage 的單獨技術細節。**第四**，若患者因急性 symptomatic hydrocephalus 需要引流，但所在機構沒有立即 aneurysm securing 的能力，依 2023 AHA/ASA guideline 應於專科轉診前完成緊急穩定與必要的 CSF diversion。這些情境不是現成醫囑，而是說明哪些資訊應讓判斷真正改變。
 
@@ -36,7 +36,7 @@
 | EVD 與 rebleeding 可能關聯 | Cagnazzo 2017，16 篇、6,804 人、OR 3.92 | 有 association；病例嚴重度差異與 indication confounding，不能直接推因果 |
 | preop EVD 是否增加 preop rebleeding | Yang 2023，14 篇、3,671 人、OR 1.60（95% CI 0.82–3.22） | 未證實增加；CI 不精確、非等效性證明 |
 | 術前或術後 EVD 是否較安全 | Lim 2019，67 vs 55；tract hemorrhage 8.9% vs 21.8%，P=0.065 | 非隨機且基線 HH 不平衡；不能據非顯著差異宣稱先放一定更安全 |
-| DAPT／EVD-related hematoma | Tang 2024，10/31 vs 4/52；P=0.01 | 有關聯，但治療類型與 anatomy 差異；EVD 相對 DAPT 時序的小樣本未確立普遍最佳順序 |
+| DAPT／EVD-related hematoma | Tang 2024，10/31 vs 4/52；P=0.01，總共 14 件血腫僅 1 件 symptomatic | 有影像血腫關聯，但 DAPT 組 100% endovascular、非 DAPT 組多 clipping，不能等同重大出血因果效益；時序小樣本亦未確立最佳順序 |
 
 ## 對應回原稿的實質增量（不是加字數）
 
