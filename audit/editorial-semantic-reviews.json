@@ -7639,7 +7639,7 @@
         "97b3317bb01c02c5b9-1": {
           "role": "orientation",
           "reader_gain": "區分酸鹼過程、病因來源及能改變處置的證據。",
-          "nonredundancy_reason": "為後文機轉和床邊決策建立不同層級。",
+          "nonredundancy_reason": "為後文生理機轉、病因歸屬和床邊處置建立互不混淆的三個推理層級。",
           "verdict": "keep"
         },
         "d91e64735fd8c0e233-1": {
@@ -7663,7 +7663,7 @@
         "fdb002ed264d187a4d-1": {
           "role": "case_evidence",
           "reader_gain": "以術後 Na、Cl、SID、BE 與氫離子比較提出酸化效應。",
-          "nonredundancy_reason": "將原表的不同方向轉成具體生理問題。",
+          "nonredundancy_reason": "將原表中不同變數的升降方向轉成需要解釋的具體術後生理問題。",
           "verdict": "keep"
         },
         "08033c4b7dc18cebf2-1": {
@@ -7675,7 +7675,7 @@
         "a74b6306d1548cb154-1": {
           "role": "evidence_boundary",
           "reader_gain": "指出研究未量 lactate、albumin 且手術方式未隨機。",
-          "nonredundancy_reason": "將生理假說與已測證據明確分開。",
+          "nonredundancy_reason": "將合理的稀釋生理假說與研究真正量到的變數明確分開，避免中介因果過推。",
           "verdict": "keep"
         },
         "f6f020000d2d38b704-1": {
@@ -7687,7 +7687,7 @@
         "5ea11c4f2c3ad2c129-1": {
           "role": "definition",
           "reader_gain": "解釋計算 HCO₃⁻ 與 BE 不能辨認特定酸的身分。",
-          "nonredundancy_reason": "為後文機轉鑑別提供量測上的限制。",
+          "nonredundancy_reason": "為後文追查 chloride、lactate 與未測陰離子提供必要的量測解釋邊界。",
           "verdict": "keep"
         },
         "96c3d2e7b2ea1917a4-1": {
@@ -7723,12 +7723,12 @@
         "843cca88970612489a-1": {
           "role": "causal_bridge",
           "reader_gain": "說明 albumin 弱酸稀釋可以帶來相對鹼化作用。",
-          "nonredundancy_reason": "補上與強離子酸化相反的另一股力量。",
+          "nonredundancy_reason": "補上與強離子酸化方向相反的弱酸濃度變化，使淨 pH 不變的現象可以理解。",
           "verdict": "keep"
         },
         "9557b32a80708c7bac-1": {
           "role": "causal_bridge",
-          "reader_gain": "把氯酸化與白蛋白稀釋鹼化並排對照。",
+          "reader_gain": "把氯離子增加造成酸化與白蛋白稀釋造成鹼化兩股力量並排對照。",
           "nonredundancy_reason": "讓讀者看到兩種方向如何在同一患者並存。",
           "verdict": "keep"
         },
@@ -7741,7 +7741,7 @@
         "fc12a007703ce5b08e-1": {
           "role": "evidence_boundary",
           "reader_gain": "核對 Chuah 未測白蛋白及 Hb 相關敘述矛盾。",
-          "nonredundancy_reason": "限制稀釋中介假說的因果強度。",
+          "nonredundancy_reason": "限制用 Hb 變化替代 albumin 實測而推論中介因果的證據強度。",
           "verdict": "keep"
         },
         "2d213d4c2cad9ead0b-1": {
@@ -7753,25 +7753,25 @@
         "8b74e6bae0b23b2b5a-1": {
           "role": "evidence_boundary",
           "reader_gain": "乳酸不升仍不能排除局部缺血或其他危險。",
-          "nonredundancy_reason": "將非乳酸酸化的機轉與灌流安全分開。",
+          "nonredundancy_reason": "將非乳酸酸化的機轉與病人局部缺血、全身灌流安全兩個不同問題分開。",
           "verdict": "keep"
         },
         "8c58f6d2234fd62b62-1": {
           "role": "orientation",
           "reader_gain": "從非乳酸酸化自然提出 AG 能否縮小病因。",
-          "nonredundancy_reason": "交代為何引入下一項計算工具。",
+          "nonredundancy_reason": "交代為何接著引入 AG 計算工具，以及這項計算預期縮小哪一類鑑別。",
           "verdict": "keep"
         },
         "31eb1175dea672d930-1": {
           "role": "orientation",
           "reader_gain": "預告 CPB 術後 AG 判讀的兩個主要盲點。",
-          "nonredundancy_reason": "先建立檢驗限制再討論數值用途。",
+          "nonredundancy_reason": "先建立 CPB 術後低白蛋白和 SIG 的檢驗限制，再討論 AG 數值的用途。",
           "verdict": "keep"
         },
         "789199f145e4f45f23-1": {
           "role": "evidence_boundary",
           "reader_gain": "低 albumin 可能掩蓋高 AG 陰離子訊號。",
-          "nonredundancy_reason": "這是公式之外必要的同期檢驗條件。",
+          "nonredundancy_reason": "這是一般 AG 公式之外必須同步核對的白蛋白檢驗條件，否則可能漏掉未測陰離子。",
           "verdict": "keep"
         },
         "97e0bad6bbe47b0f49-1": {
@@ -7789,7 +7789,7 @@
         "e45ab8b8b2aad3af7a-1": {
           "role": "case_evidence",
           "reader_gain": "介紹 Bartter syndrome CABG 病人作為不同機轉反例。",
-          "nonredundancy_reason": "區分特殊腎小管疾病個案與一般群體。",
+          "nonredundancy_reason": "區分特殊腎小管疾病個案與一般 CABG 群體，為後續反向 chloride 變化建立不同基線。",
           "verdict": "keep"
         },
         "37687e0c197ba51659-1": {
@@ -7807,7 +7807,7 @@
         "aca904362395fbd30e-1": {
           "role": "evidence_boundary",
           "reader_gain": "保留 Protos Table 2 與討論段數字不一致。",
-          "nonredundancy_reason": "拒絕將兩組不明時點數字拼成新病程。",
+          "nonredundancy_reason": "拒絕把作者討論文字與原表的不同數值拼接成一條不存在的術後採樣序列。",
           "verdict": "keep"
         },
         "3111ef4a49dfd8c7ec-1": {
@@ -7819,19 +7819,19 @@
         "a24deec0f2b4cbe5e8-1": {
           "role": "safety",
           "reader_gain": "用胸管出血、低輸出與 tamponade 建立急症分流。",
-          "nonredundancy_reason": "避免以高氯解釋延誤危險的可逆病因。",
+          "nonredundancy_reason": "避免因合理的高氯性酸化解釋而延誤出血、低輸出與心包壓迫等可逆危險。",
           "verdict": "keep"
         },
         "3c2480917983413020-1": {
           "role": "decision",
-          "reader_gain": "循環穩定才進入分層檢驗及時序重建。",
+          "reader_gain": "只有循環與器官灌流相對穩定時，才進入分層檢驗和病程時序重建。",
           "nonredundancy_reason": "明確限制後面四組資料蒐集的適用前提。",
           "verdict": "keep"
         },
         "cb06fbaa0027e1e99d-1": {
           "role": "decision",
           "reader_gain": "核對動靜脈採樣、CPB 時點與通氣溫度。",
-          "nonredundancy_reason": "先確認量測可信度而非直接計算病因。",
+          "nonredundancy_reason": "先確認血氣量測與採樣條件的可信度，才能進一步討論代謝病因及處置。",
           "verdict": "keep"
         },
         "8eb96c6b9e2bffe67d-1": {
@@ -7860,7 +7860,7 @@
         },
         "4f51f7c4c86d86c901-1": {
           "role": "counterfactual",
-          "reader_gain": "以高血鉀與循環崩解改寫處置優先序。",
+          "reader_gain": "以嚴重高血鉀、循環崩解和呼吸衰竭的反事實改寫處置優先序。",
           "nonredundancy_reason": "阻止用輕度群體酸化當作嚴重個案等待理由。",
           "verdict": "keep"
         },
@@ -7891,7 +7891,7 @@
         "f2b5b850a99b97783f-1": {
           "role": "causal_bridge",
           "reader_gain": "回到 Chuah 三時點的代謝與呼吸方向分離。",
-          "nonredundancy_reason": "以真實數據完成文章開頭的因果問題。",
+          "nonredundancy_reason": "以真實三時點數據完成文章開頭的因果問題，重新區分代謝酸化與呼吸效應。",
           "verdict": "keep"
         },
         "eb22c6a3567de82c43-1": {
@@ -7957,7 +7957,7 @@
         "4a85edd13d99999fc7-1": {
           "role": "source_context",
           "reader_gain": "定位較近期 colloid priming 研究的證據範圍。",
-          "nonredundancy_reason": "補充不同液體配方而非重述同一研究。",
+          "nonredundancy_reason": "補充另一種 colloid prime 的研究情境，防止只從單一舊式 prime 推廣所有液體配方。",
           "verdict": "keep"
         },
         "619e5b55b920a6be52-1": {
