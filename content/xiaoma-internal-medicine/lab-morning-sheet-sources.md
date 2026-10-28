@@ -1,6 +1,13 @@
-# Lab Medicine 01｜早晨一張 Lab sheet：來源導讀與適用界線
+# Lab Medicine 01｜早晨一張 Lab sheet：真實病例、實驗室原理與證據界線
 
-本頁對應[〈早晨一張 Lab sheet：真正要判斷的是什麼？〉](lessons/2026-10-28-lab-morning-sheet.md)。主文所有四時點數值、病程與交班均為**合成教學情境**，沒有取自任何一名真實患者、病例報告、醫院病歷或下列論文。本頁公開給讀者的是來源與適用界線；不包含私人審查紀錄、任務狀態或學習規劃。
+本頁對應[〈早晨一張 Lab sheet：真正要判斷的是什麼？〉](lessons/2026-10-28-lab-morning-sheet.md)。**正文開頭是具原始量測資料的兩篇真實假性高鉀案例；後段 70 歲心衰竭患者四時點 K/Cr/CBC/Mg 與 09:00 鬱血判斷仍為 AI 合成練習，並非實際病例或研究觀察。** 不得剪貼兩者數值、干擾來源與處置成一條假裝真實的時間序列。
+
+## 0. Case report 只證明實際觀察：兩種不同的假性高鉀機轉
+
+- [A paradigmatic case of haemolysis and pseudohyperkalemia in blood gas analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366946/)：51 歲男性血氣注射筒 K 5.2 mmol/L；另一管 lithium-heparin plasma K 4.6；原注射筒後續 K 5.5、haemolysis index 50，相對於新採 plasma index 5；作者追查原管直接碰觸冰塊運送約 15 分鐘。這是 **preanalytical transport / in-vitro haemolysis** 的真實量測範例，並非主文合成 HF/AKI 個案。
+- [Pseudohyperkalemia—Potassium released from cells due to clotting and centrifugation: a case report](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/)：62 歲女性 essential thrombocythemia、血小板 1305×10⁹/L，血清 K 6.3 mmol/L 與不同檢體的 plasma/whole-blood 結果不一致；是細胞/凝血與檢體處理的另一種來源，不是先前血氣冰接觸情境。
+
+**證據的角色必須分開**：上面 case reports 可支持「這名病人的檢驗觀察與如何追查干擾」；不能用來建立一般敏感度、特異度、高鉀急救閾值、醫囑或 AKI/心衰治療方案。以下 AJKD 實驗室綜述、KDIGO、UKKA 和 HF 指引各自處理一般性原理與臨床適用條件。原圖、表與註腳的完整權利/醫學查核仍以獨立審稿 gate 為準，不因增列兩篇病例即取得 PASS。
 
 ## 1. 為何一張 BMP 可能不完全可信？
 
