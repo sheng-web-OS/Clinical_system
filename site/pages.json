@@ -3021,5 +3021,41 @@
     "section": "檢驗醫學參考資料",
     "navigation": false,
     "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md",
+    "output": "xiaoma-20261028-urosepsis-esbl-first-dose.html",
+    "title": "半夜疑似尿路敗血症，舊培養有 ESBL：第一劑到底怎麼選？",
+    "subtitle": "從 T0 危急程度、舊藥敏與 AKI 疑慮，到感染性阻塞、降階與菌血症療程",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "感染與抗生素",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-urosepsis-esbl-first-dose-sources.html",
+    "exam_questions": [
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 60,
+        "question_heading": "真正的二階國考對題｜111 年第二次・醫學（三）第 60 題",
+        "concept_heading": "第一問｜舊培養 ESBL 究竟把「第一劑的推理」改變了哪一層？",
+        "topic": "ESBL 水解譜與 carbapenem 的機轉界線"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/urosepsis-esbl-first-dose-sources.md",
+    "output": "xiaoma-urosepsis-esbl-first-dose-sources.html",
+    "title": "ESBL 泌尿道敗血症：原始指南與官方國考來源",
+    "subtitle": "IDSA 2025 cUTI 原 Figure/Table、IDSA 2026 AMR、SSC 2026、KDIGO 與考選部 111-2 Q60",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_evidence_review"
   }
 ]

@@ -115,6 +115,12 @@ jobs:
           if ! git diff --quiet origin/main...HEAD -- content/clinical-os/acs.md site/pages.json site/styles.css site/build.py tools/qa_acs_mobile.py; then
             python tools/qa_acs_mobile.py --widths 360 375 390 1280 --output visual-qa-artifacts/acs
           fi
+      - name: Verify U01 first-dose registered reader on phones and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet origin/main...HEAD -- site/pages.json content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md content/xiaoma-internal-medicine/urosepsis-esbl-first-dose-sources.md tools/qa_u01_mobile.py site/styles.css site/build.py; then
+            python tools/qa_u01_mobile.py --widths 360 375 390 1280 --output visual-qa-artifacts/u01
+          fi
       - name: Audit full legacy visual debt when shared rendering changes
         if: github.event_name == 'pull_request'
         continue-on-error: true
