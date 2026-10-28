@@ -7,7 +7,7 @@
 - p.95：確認 **Transudative vs. Exudative Effusions** 原表為左右兩欄 **Light's Criteria / Three-Test Rule**，表格下方的 sensitive/specific 說明屬於各自欄位，不得錯配；並核對 pseudoexudate、parapneumonic/empyema 備註及 **Additional pleural fluid studies**。原表一個 Light 判準即屬陽性、兩項符合所附 Se/Sp 是特定敘述，勿將兩者混淆。
 - p.96：確認原表標題 **Characteristics of Pleural Fluid (not diagnostic criteria)**；各列 WBC differential、pH、glucose 僅為典型特徵，**不可寫成診斷門檻**。同頁 Treatment 的舊式 >½ hemithorax 與 tPA/DNase 敘述仍須以 BTS 2023 等當代來源判斷。p.96 chylothorax 行為 TG >100 mg/dL，與 p.94–95 >110 mg/dL 的摘要表述不一致；標記為原書內部用值差異，不可抹平為單一 universal cutoff。
 - **SOURCE ACCESS blocker = RESOLVED；POCKET IMAGE INSPECTION = VERIFIED；PUBLIC RIGHTS = NOT_VERIFIED（受版權保護，不公開重製）；MEDICAL APPROVAL = HOLD**。此為來源完整性驗證，**不是**獨立臨床醫師 peer review，也不是網站發布驗收。
-- **仍待**：BTS 2023 原始流程圖/附註與現行臨床分層的對照；112（一）醫三 Q45、114（一）醫三 Q48、115（二）醫三 Q49 官方原卷/更正答案核讀；獨立醫學與教學 QA、所有來源權利判定、原創 figure/semantic gate、同 HEAD CI、私人預覽與 360/375/390px 手機 QA。PR #188 繼續 Draft/HOLD，不更新公開 manifest、不部署。
+- **已解的來源項**：Pocket p.94–96 原圖、BTS 2023 第 37 頁原始分支與註腳、三題官方 Q/S/M 均已核讀（見下方證據）。**仍待**：獨立醫學與教學 QA、著作權與原創圖表的可公開判定、同 HEAD semantic gate/CI、私人預覽與 360/375/390px 手機 QA。PR #188 繼續 Draft/HOLD，不更新公開 manifest、不部署。
 - **恢復執行規則**：下一輪先讀本節，再檢查既有證據；同一來源同一階段已成功時禁止重試舊的 raw-byte 失敗路徑，直接處理尚未驗證的下一項。若來源又失效，須記錄新 failure 的「檔案版本/工具/時間/具體錯誤」，不能讓舊 failure 重新覆蓋成功狀態。來源可讀／醫學可採／版權可公開／工程已通過／正式已發布，必須分開記錄。
 
 
@@ -18,13 +18,13 @@
 - **114（一）醫學（三）Q48**：原卷 `code=114020&s=0103&t=Q`；S 答案 **B**，M 更正 Q23 一律給分、Q42 A/D/AD，**Q48 最終 B**。
 - **115（二）醫學（三）Q49**：原卷 `code=115070&s=0101&t=Q`；S 答案 **A**，M 更正 Q1/Q8/Q10/Q36/Q38/Q40，**Q49 最終 A**。
 - 官方 URL 的完整 Q/S/M 連結已寫入私人草稿的來源註腳，便於下一 reviewer 重查；官方題目文字/答案身份 gate = **VERIFIED**，但選項的 **臨床推理 / current guideline applicability = AUTHOR_CHECK_ONLY，獨立醫學／教學審查仍 HOLD**。
-- 下一個未通過來源項：**BTS 2023 原始 pleural infection decision tree 的圖像/腳註**，以及必要的臨床分流逐條反例審查。不得把「已核官方標準答案」推論為「整篇可發布」。
+- **後續已接續解決**：BTS 2023 原始 pleural infection decision tree 圖像與腳註也已核（見下一節）；剩下臨床分流逐條反例與獨立 QA。不得把「已核官方標準答案」推論為「整篇可發布」。
 
 ## BTS 官方流程圖已核證（2026-10-28；覆蓋 09:00 原圖 403 阻擋）
 
-- **BTS 2023 官方原始 PDF 已從 BTS 站直接取得並目視**：[full supplement](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/)，PDF **zero-index p.44**、期刊印刷頁 **37**，原圖標題 *Suspected pleural infection, non-purulent fluid – initial decision tree*；已同頁核對分流示意圖、下方表格及 ***/† footnotes**。此前 BMJ 限制導致的 403 不再是此原圖的有效 source blocker。
+- **BTS 2023 官方原始 PDF 已從 BTS 站直接取得並目視**：[full supplement](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/)，PDF **zero-index p.44**、期刊印刷頁 **37**，原圖標題 *Suspected pleural infection, non-purulent fluid – initial decision tree*；已同頁核對分流示意圖、下方表格及 原始 **星號／† 註腳**。此前 BMJ 限制導致的 403 不再是此原圖的有效 source blocker。
 - 流程本體：非膿性疑似感染 → 立即胸水 pH；pH ≤7.20 高風險；7.21–7.39 中間風險加查 LDH；pH ≥7.40 極低風險、通常不立即 ICD。中間分支原圖以 **LDH <900 / ≥900 IU/L** 畫出；同份指引敘述及表格寫 **>900 IU/L** 作考慮 ICD 的條件。稿件已避免誤稱剛好 900 IU/L 必然有單一正解。
-- *****：引流前需由 ultrasound 確認可安全接近的足夠積液。**†**：未立即 ICD 應重評 ongoing temperature、persisting inflammatory markers；**pH >7.4 且有 septations 也應考慮引流**。此註腳不能被表格中的「低風險」摘要遮蔽。
+- **星號註腳**：引流前需由 ultrasound 確認可安全接近的足夠積液。**†**：未立即 ICD 應重評 ongoing temperature、persisting inflammatory markers；**pH >7.4 且有 septations 也應考慮引流**。此註腳不能被表格中的「低風險」摘要遮蔽。
 - 本次只目視核讀原圖並原創文字重述；BTS PDF/footer 明示著作權，**不得未經授權直接嵌入圖像**。**BTS ORIGINAL FLOWCHART = VERIFIED；RIGHTS TO REPRODUCE = NOT_VERIFIED；CLINICAL/EDITORIAL INDEPENDENT QA = HOLD**。
 - **下一未通過的主要 gate**：由與寫作者不同的臨床／教學審查脈絡驗證整篇病例、BTS 反事實（尤其 pH ≥7.4 + septations；pH 7.3 + LDH 邊界；無安全引流窗；RA/惡性低 pH）、原圖/題目因果敘事、合法公開方式、同 HEAD semantic receipt/CI/mobile preview；仍保持 PR #188 Draft/HOLD。
 
@@ -35,7 +35,7 @@
 - 沒有個人讀書進度、病人識別資訊、原書 PDF 或原始影像公開。
 
 ## 原書 Pocket Medicine 9E｜已實際取得的證據與不可逾越界線
-- Library 檔：`內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten.pdf`，463 頁，**私人受版權保護資料**。
+- Library 檔：`內科_Pocket Medicine The Massachusetts General Hospital Handbook of Internal Medicine, 9th Edition_625A_Flatten.pdf`，**464 頁（本輪 pdfinfo 核實；取代前次誤記 463 頁）**，私人受版權保護資料。
 - **實際閱讀 PDF 頁 94–96 的完整可抽取文字**；第 94 頁 `PLEURAL EFFUSION`：Pathophysiology / Transudates / Exudates；第 95 頁 `Initial diagnostic studies`、`Transudative vs. Exudative Effusions`（左右 `Light’s Criteria` 與 `Three-Test Rule`）、`Additional pleural fluid studies`；第 96 頁 `Treatment`。
 - 第 95 頁表的文字門檻：Light 三條 >0.5、>0.6、>2/3 ULN；Three-Test Rule 胸水 cholesterol >55 mg/dL、LDH >200 U/L、cholesterol ratio >0.3；本次公開候選只採 Light 原理及**獨立教學整理**，沒有複製原表或將另一欄冒充 Light。
 - 文字核讀到原書：CHF 利尿後 pseudoexudate、胸水 glucose <60 mg/dL 可能感染／腫瘤／RA、Hct ratio >50% 血胸、TG >110 mg/dL 乳糜胸、pH <7.2／glucose <60 舊式 complicated effusion 概念。
