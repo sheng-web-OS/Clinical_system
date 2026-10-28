@@ -147,8 +147,9 @@ def check_pages(site, output, candidate_root):
                             response=page.goto(origin+name,wait_until="domcontentloaded")
                             if response.status!=200:raise AssertionError(f"{width}/{theme}: {name} {response.status}")
                             page.evaluate("document.fonts.ready")
-                            if theme=="dark" and name!= "xiaoma-exams.html":
-                                page.locator("#theme").click()
+                            if theme=="dark" and name!="xiaoma-exams.html":
+                                if not page.evaluate("document.body.classList.contains(\'dark\')"):
+                                    page.locator("#theme").click()
                             state=page.evaluate("""() => ({
                                 width:document.documentElement.clientWidth,
                                 scroll:document.documentElement.scrollWidth,
