@@ -48,3 +48,11 @@
 - Chuah 2013 fully open research text and original Table 3 were independently verified against source, but this audit is still SAME AUTHORING CONTEXT: https://link.springer.com/article/10.1186/1749-8090-8-184 . Physiological associations are not evidence of actual patient-specific hypoalbumin compensation. The source contradictory Hb claims remain flagged.
 - Static SVG structure / estimated text-width (390px viewBox) did not show likely overflow. This is NOT a browser render/screenshot or legibility pass.
 - Still HOLD: independent clinical/EPQC exact-blob review, browser 360/375/390/1280px verification, final figure provenance, publication CI and same-commit production readback.
+
+## 2026-10-29 real-case contrast expansion (source-grounded, NOT treatment proof)
+
+- Protos AN et al. 2024 CABG with Bartter syndrome https://pmc.ncbi.nlm.nih.gov/articles/PMC11045673/ ; full HTML source article and Tables 1–3 checked. Case n=1, 62M with longstanding salt wasting/hypokalemia/hypochloremia/metabolic alkalosis, CABG CPB 73min, stable CPB separation, initially no inotrope/pressor requirement.
+- Table 2 immediate postoperative pH 7.25, lactate 12.2 mmol/L, bicarbonate 14.5 mmol/L, Cl 94, K 2.7, CI 4.3 L/min/m²; next-morning pH 7.37, lactate 2.7, bicarbonate 24, Cl 111. These observations demonstrate that low bicarbonate need not reflect a high chloride phenotype. CI alone cannot establish all-organ adequate perfusion.
+- Critical **source inconsistency**: Discussion text calls immediate postoperative pH 7.29, lactate 7.9, vs Table 2 pH 7.25 and lactate 12.2. New draft explicitly chooses labeled ICU Table 2 and does NOT fabricate a reconciliation or peak timing. Since multiple IV fluids/electrolytes were administered, treatment response cannot establish cause or generalizable efficacy.
+- Study n=1 of uncommon renal tubulopathy intentionally contrasted with Chuah cohort (n=55), not pooled; no guideline treatment threshold imported from this one case.
+- Figure 1 still reflects ONLY Chuah cohort means, not this Bartter case. Must keep source identities distinct in any future redesign.
