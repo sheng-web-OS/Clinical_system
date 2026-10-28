@@ -1,130 +1,181 @@
-# Creatinine 上升：腎臟受傷了，還是暫時過濾得比較慢？
+# Lab Medicine 03｜Creatinine 一直上升：腎臟少過濾了多少，真正的病因又在哪裡？
 
-當我們看到 serum creatinine（SCr）由 1.0 升到 1.8 mg/dL，最容易出現兩種相反的過度推論：一種是「一定發生 acute tubular necrosis」，另一種是「只是 prerenal，補液就好」。兩者都從一個**腎臟過濾功能的訊號**，跳過了真正需要回答的病理與血流動力問題。
+79 歲男性，長期因攝護腺癌而使用導尿管，這次因導尿管阻塞到醫院；他之前也腹瀉，血壓只有約 90–100 mmHg。腎功能惡化，腎臟超音波卻沒有明顯水腎。若把這些線索濃縮成「腎前性 AKI，繼續補液」，聽起來相當合理。問題是：**腎臟功能持續惡化時，原先的解釋為什麼不能再維持不變？**
 
-AKI 的命名是安全警報與追蹤語言，卻不是組織病理診斷；FENa、FEUrea 和 BUN/Cr 是生理線索，卻不會自動把病人分成「補水」與「不用補水」兩組。本文將 SCr、eGFR、尿量、尿液沉渣與動態灌流放回同一個時間序列，建立 PGY 在病房值班真正可以操作的推理。
+Serum creatinine（SCr）告訴我們一個由生成、分布與清除共同決定的血中濃度；AKI 診斷捕捉的是功能改變及其風險；真正的病因，卻仍可能落在有效腎灌流、腎小管、腎絲球、間質或尿液排出路徑，而且幾種機轉可以同時存在。這篇以[Chen 等於 2025 年發表的病例](https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/)為主線，建立三個不同層次的問題：**測量發生什麼變化？什麼機轉能解釋？哪一項證據會讓我們改變判斷？**
 
-本篇可以接續[肺炎、低血壓、少尿的跨面板案例](2026-10-27-lab-medicine-morning-panel.md)作腎臟深究，但也可獨立閱讀。讀者可先掌握下面的模擬病例與問題表示，再回來補足各個檢驗背後的數理。
+## 01｜從真正的病人開始：有腹瀉、低血壓，也有阻塞風險
 
-## 01　同一個 creatinine 上升，三個患者可能需要不同下一步
+這名 79 歲男性有攝護腺癌，長期留置尿管，並使用治療高血壓、糖尿病及其他慢性疾病的藥物，其中包括 indapamide、lisinopril 和 alogliptin。入院前曾有水樣腹瀉；他的尿管曾在急診更換，表面上也持續有尿液流出。初始檢查清醒、沒有明顯頸靜脈怒張或下肢水腫，腹部柔軟，未觸及膀胱膨隆，血壓約 90–100 mmHg。[1]
 
-下表是**三個互不相干的自編情境**，不是一名病人的連續自然史，也不是已發表病例。所有體液、尿液與血液數值皆屬教學假設。
+當時至少有三條可以並存、但各自期待不同證據的機轉。
 
-| 病例 | 關鍵情境 | Scr 與尿量 | 立即需要分辨什麼 |
-| --- | --- | --- | --- |
-| A | 68 歲肺炎、低血壓、發燒；夜間補液後仍需監測 | 1.0 → 1.8 mg/dL／24 h，尿量 0.3 mL/kg/h × 8 h | 循環不穩、感染與腎小管功能失調是否並存？是否需要改變復甦／血管活性藥物與監測？ |
-| B | 74 歲急性失代償性心衰，呼吸困難、JVP↑、肺鬱血，loop diuretic 後尿量增加 | 1.6 → 1.9 mg/dL／48 h，尿量由 0.4 升到 1.5 mL/kg/h | 去充血是否有效？腎灌流、鬱血和其他腎毒性／低血壓風險如何變？ |
-| C | 77 歲原有排尿困難、下腹膨隆、尿量突然下降 | 1.1 → 2.0 mg/dL／36 h，尿量 0.1 mL/kg/h × 6 h | 尿路出口／輸尿管阻塞是否存在？解除阻塞及監測是否優先？ |
+**第一，腎臟灌流不足。** 腹瀉會損失水與鹽，利尿劑可能加重體液流失，較低的血壓會降低腎臟有效灌流；ACE inhibitor 亦會改變出球小動脈張力，使部分依賴 angiotensin II 維持濾過壓的病人更敏感。這些是病理生理上合理的可能性，但單憑腹瀉與低血壓，不能證明腎臟沒有其他損傷。
 
-A 的 AKI 可能與多重休克生理及炎症有關，不能因尿鈉很低就宣布無腎小管損傷。B 的 creatinine 上升與尿量改善可能發生在去充血過程中，不能因它有 AKI 就停止必要去充血，也不能反過來假設「利尿後的所有 creatinine 上升都無害」。C 如果有膀胱出口阻塞、感染性腎積水等線索，抽更多腎功能或計算 FENa 不應排在解決可能阻塞之前。[1]
+**第二，尿路排出受阻。** 攝護腺疾病、長期導尿與近期導尿管阻塞，使 bladder outlet／導尿管功能及上泌尿道阻塞一直值得追查。管內看得到尿，不代表引流充分，更不保證上泌尿道沒有受到壓力。膀胱掃描未見尿滯留、首次正式超音波沒有顯著水腎，會降低部分阻塞假說的支持度，卻不應被提升成「阻塞不可能」。檢查有時間點、視野和偵測限制。
 
-這三個患者可以有相似的 SCr，但**同一數字沒有給你相同的循環、組織損傷、處置與預後**。先辨認臨床險境，再判定 AKI 及其原因。
+**第三，腎實質及全身性疾病。** 若灌流不足持續，可能發生急性腎小管損傷（acute tubular injury, ATI）；感染、用藥、腎絲球疾病、間質性腎炎也可能造成 AKI。之後出現的血小板減少、貧血和 bilirubin 上升，進一步迫使醫師評估 TMA 等病因，但不能只憑這組化驗就作出確診。
 
-## 02　SCr 是血中的濃度；它不是直接量測腎臟「受傷百分比」
+### 數字怎樣改變了原本看似合理的解釋？
 
-Creatinine 由肌肉代謝產生，血中的濃度受生成量、腎臟排泄、分布體積，以及部分藥物與檢驗法的非 GFR 因素影響。腎功能急性下降時，creatinine 不會在那一刻立即跳到新的穩定濃度；它需要時間累積，因此**在快速變化的病人身上，當下 SCr 可能落後真正的過濾能力**。大量輸液亦可能透過分布體積與濃度改變干擾 SCr 的表面走勢。反之肌肉量低、營養不良等患者，在已經明顯受影響的腎功能下，SCr 也可能沒有想像中高。[2,3]
+原文 Table 1、2、3 提供以下可核對的紀錄；因原報告出現日期衝突，這裡先分別保留當時真正記載的數據，再討論衝突。
 
-要把 SCr 升高拆成四個互不等價的命題：
+| 病程節點 | 可確認的檢驗或觀察 | 對原先推理的影響 |
+| --- | --- | --- |
+| 2024/12/08，入院 | Creatinine **375 μmol/L**；urea **23 mmol/L**；Na **120 mmol/L**；K **4.0 mmol/L**；CRP **211 mg/L**；platelet **90 × 10⁹/L** | 已有明顯腎功能異常；腹瀉／低血壓與導尿管阻塞都須留在候選原因中 |
+| 12/10，持續住院 | Creatinine **558 μmol/L**；urea **30.3 mmol/L**；Na **130 mmol/L**；Hb **108 g/L**（入院 132）；platelet **91 × 10⁹/L**；total bilirubin **38 μmol/L** | 補液後仍惡化；不能只維持「灌流不足、繼續補水」的單線假說 |
+| 12/11，泌尿科調整導尿管後 | 原文當日 I/O：input **1,800 mL**，output **6,170 mL** | 大量排尿支持先前存在排尿障礙及解除後生理劇變，亦帶來後阻塞性多尿的監測風險 |
+| 12/12–12/13，後續 | 原文 Table 3：creatinine **122 → 85 μmol/L**；Na **141 → 141 mmol/L** | 腎功能在解除阻塞相關處置後顯著改善，支持阻塞為重要可逆因素，但不能排除腹瀉、血壓與其他介入同時作用 |
 
-1. 病人符合 AKI 的功能性偵測標準嗎？
-2. 此刻灌流、濾過和尿液形成的生理出了什麼問題？
-3. 是否存在腎小管、腎絲球、間質或阻塞等結構／功能障礙？
-4. 是否已出現必須立即介入的併發症，例如危險高鉀、酸鹼失衡、肺水腫、尿毒症症狀或不可逆的阻塞／感染？
+**有一項不能抹平的原始紀錄矛盾：**同一篇論文 Table 1 將 **2024/12/12** 的 creatinine 寫為 **618 μmol/L**，Table 3 卻將相同日期寫為 **122 μmol/L**；兩者差異很大，而且 Table 2 已把導尿管調整後的大量排尿記在 **12/11**。這可能牽涉採樣時刻、日期或表格製作錯誤，但原文不足以判定哪一種，因此不能把「618 → 122」斷言為可精確計時的單日治療反應。就目前能確定的病程而言，早期持續惡化、CT 找到雙側水腎、改善排尿後後續 creatinine 明顯降低，是合理且較穩健的推論。[1，原文 Table 1–3]
 
-這四問是臨床上不同的**問題類別**，並非要在公開文章硬套固定問答格式。只用 SCr 升高，最多能回答其中一部分。
+原作者把入院診斷稱為「stage 1 AKI」，但沒有提供可獨立重算的完整入院前 creatinine baseline 與尿量分級時序。尤其 **375 μmol/L 約等於 4.24 mg/dL**，已超過 KDIGO 2012 Table 2 列出的 stage 3 creatinine 絕對門檻 **4.0 mg/dL**。這一處同樣不能照抄作者標籤而不追問急性變化及分級前提；本篇**不將作者的 stage 1 敘述當成已核實的 KDIGO 分期**。[2]
 
-### AKI 的定義是偵測標準，不是病因確證
+## 02｜Creatinine 究竟量到什麼：功能訊號不是受傷百分比
 
-臨床現行常用的 KDIGO 2012 功能性偵測條件，包括 48 小時內 SCr 上升至少 0.3 mg/dL、七天內上升至基線至少 1.5 倍，或尿量 <0.5 mL/kg/h 至少六小時；尿量與 SCr 分級時取兩者中的**較嚴重階段**，並依各自持續時間及變化倍數判定。A 為 1.0→1.8、少尿 8h，依提供資訊屬 stage 1；C 在 36h 升到 2.0 近兩倍基線（2.0/1.1≈1.82），加上少尿也屬符合 AKI 的情境。B 由 1.6→1.9，即使相對增幅不達 1.5 倍，也在 48h 增加 0.3，符合 AKI 辨識條件，但其病理與治療意義需要另行判斷。[1,4]
+SCr 是血中 creatinine 的**濃度**。它主要來自肌肉肌酸／磷酸肌酸的代謝，經腎絲球濾過，也有一定的腎小管分泌。測得的濃度，概念上受三件事共同決定：
 
-請留意：**2026 KDIGO AKI/AKD 更新在本稿撰寫時仍是 public-review draft**，不能把新 biomarker 分層或 AKD 命名直接寫成已生效正式規定。[5]
+**生成速率 − 腎臟及其他清除 → 體內累積；而分布體積改變，又會改變測得的濃度。**
 
-### eGFR 為什麼不等於「此刻實測 GFR」
+如果 GFR 在某一分鐘突然降低，creatinine 並不會當場跳到新的平衡值。清除變少後，它在血中逐步累積；重新恢復濾過時，已累積的 creatinine 也需要時間排除。所以在快速變化的 AKI，**今天的 SCr 可能落後今天真正的 GFR**。大量輸液造成的稀釋、肌肉量低、肌肉受損、藥物抑制 creatinine tubular secretion 及不同分析方法，也會改變數值與真實濾過的對應關係。
 
-腎功能報告常自動給 eGFRcr。它來自 SCr 與人口學資訊、已驗證估算方程式，推論時依賴檢驗與生理條件；其中最重要的限制之一，是用 serum marker 的相對穩態關係來估算 GFR。因此在 SCr 正快速上升或下降時，eGFR 數字很可能無法真實代表該分鐘的濾過率，不能直接拿它當病人的即時藥物清除測量值。[2,3]
+這解釋了為什麼 AKI 的 *injury* 不是「SCr 增加了 80%，腎組織便壞死 80%」。SCr 可以在沒有可證明腎小管壞死的血流動力變化下升高，也可以在有腎小管傷害時因尚未累積到穩態而低估。**功能改變與組織受傷是互相關聯、但不能互換的測量構念**。
 
-這不等於 eGFR「完全沒用」。在穩定 CKD 評估中，KDIGO 2024 對 eGFRcr、cystatin C 與兩者合併 eGFRcr-cys 的用途有明確分工；當肌肉量、飲食、某些藥物或其他非 GFR 因素讓 SCr 解讀失真，且精準分類會改變決策時，可考慮 cystatin C 或更精確的 mGFR。**但 cystatin C 也有非 GFR 決定因子；更換 biomarker 不會讓急速變動自動變穩態**。[2]
+### eGFR 不是即時 GFR，更不是另一張獨立的腎臟檢驗
 
-## 03　尿量是立即的動態生理觀察，也不是「腎功能快篩」
+eGFRcr 通常由 SCr、年齡與其他方程式變數估算。當 SCr 快速上升時，同一公式的穩態前提被破壞；報告自動印出的 eGFR 不等於「此刻腎絲球每分鐘真的過濾幾毫升」。也因此，**SCr 與同份報告的 eGFRcr 不是兩項互相獨立的證據**。不能把 SCr 上升、eGFR 下降算成兩份證據互相證實有腎小管壞死。
 
-尿量以 mL/kg/h 紀錄，比「今天尿 500 mL」更容易對應病人體重與觀察時長。但尿量不等於 GFR：利尿劑可以提高尿量、卻未必解決腎損傷；也有 non-oliguric AKI 的患者，仍可能有嚴重腎功能變化。
+若病人肌肉量非常低，cystatin C 或合併 eGFRcr-cys 在適當、較穩定的情況下可能提升 GFR 分類準確性；但 cystatin C 也受發炎、類固醇等非 GFR 因素影響。**換用另一個 biomarker 不會自動讓急速變化的腎功能恢復穩態**。KDIGO 2024 CKD guideline 說明這些估算策略在慢性、較穩定功能評估的定位；不可把 CKD 的 G/A 分類直接當成 AKI 當下的病因診斷。[3]
 
-A 的尿量 0.3 mL/kg/h ×8h，不只是在表格中符合 AKI，更提示需要立即確認灌流、是否阻塞與尿量計量是否可靠。B 的尿量回升，說明增加了尿液輸出；是否真正去充血要另看臨床鬱血、體重、淨出入量、尿鈉／利尿反應、氧合和血流動力；不可把「尿量上升」直接改寫成「腎小管恢復」。C 要檢查膀胱或 Foley 阻塞，必要時按臨床安排床邊膀胱掃描／尿路評估。**尿排得少，不等於尿製得少；尿製得多，也不等於濾過已恢復。**
+### AKI 的診斷語言與病因語言應當分開
 
-## 04　尿液檢查改變的是「定位」，不能給全部病因答案
+現行臨床廣泛使用的 **KDIGO 2012** 功能性 AKI 定義為：48 小時內 SCr 上升至少 **0.3 mg/dL（26.5 μmol/L）**；或 7 日內上升到基線至少 **1.5 倍**；或尿量 **<0.5 mL/kg/h 持續至少 6 小時**。分期依 creatinine 與尿量中**較嚴重**的項目決定；stage 3 也包括 SCr 升至至少 **4.0 mg/dL** 或開始腎替代治療等情況。[2]
 
-若 AKI 來由不明，NICE 建議儘速尿液 dipstick 檢查 blood、protein、leukocytes、nitrites、glucose，視異常與病程追加尿沉渣、量化蛋白尿或其他檢驗。[1] 這些尿液資料和 CBC/BMP 一樣需要知道樣本品質、採檢時間、近期感染、導尿或介入。
+這組門檻回答「臨床有沒有出現需評估和追蹤的 AKI 功能訊號，以及嚴重度如何分層」，沒有替病人分出 prerenal、ATI、glomerulonephritis 或 postrenal。尤其基線不存在、檢體時序不明時，不可將個案的分期寫成比原始資料更確定。到 **2026/10**，KDIGO 官網仍將 AKI/AKD 2026 更新描述為 public-review draft 後準備正式出版；不能把草案的新定義或 biomarkers 冒稱已正式取代 2012 版。[4]
 
-若同時有明顯血尿及蛋白尿，尤其伴腎功能快速變化、RBC casts 或其他 nephritic syndrome 線索，思路應由純灌流問題擴展到 glomerular injury；應評估是否需要早期腎臟會診及適當血清免疫檢查，而非先預設所有血尿是導尿造成。相反，尿液 dipstick 的 blood 可偵測血紅素或肌紅素，未必一定看見大量完整紅血球；若試紙血陽性而鏡檢 RBC 很少，要再考慮 hemoglobinuria、myoglobinuria、檢體或分析干擾等不同可能。沒有 RBC casts 也**不能**排除腎絲球疾病。[1,6]
+## 03｜陰性超音波為何沒有結束這名病人的阻塞鑑別？
 
-Granular casts 或 renal tubular epithelial cells 可能支持腎小管受累；hyaline casts 則較不特異。沉渣的型態與解讀者技術、檢體新鮮度都有關。尿液發現是**支持某個機轉的證據**，不是 histologic gold standard。若尿液測到膿尿、菌尿，仍需和感染症狀、培養、影像及是否有 obstructed infected system 一起判讀。
+回到入院當天，原醫療團隊確實先考慮阻塞，也做過多次 bladder scan 與正式腎臟／尿路超音波。原論文 Figure 1、2 的雙腎長度約 **10.9**、**10.6 cm**，當時未顯示顯著 hydronephrosis。腹瀉與低血壓讓團隊轉向以腎前性因素為主，繼續補液。[1]
 
-急性 AKI 的尿液「結構線索」也不等於 CKD 長期風險分層：KDIGO 2024 的 UACR 和 eGFR G/A 分類，建立的是慢性腎臟病嚴重度與預後語言。通常要有超過三個月的慢性證據；一次感染期間的 albuminuria 不足以單獨宣稱 CKD。特定情境需追蹤確認與排除暫時因素。[2]
+這時最容易混用兩個邏輯問題：
 
-## 05　FENa、FEUrea：理想模型合理，實際病人卻很難只有一個機轉
+- **「這項檢查沒有看到水腎」**是該時間點影像的觀察。
+- **「這個病人沒有造成 AKI 的阻塞」**則是更大的臨床結論，還需要檢查對目標疾病的敏感度、採檢／影像時間、阻塞位置與完整病程。
 
-FENa 的公式是 (urine Na × plasma Cr)/(plasma Na × urine Cr) ×100%；它衡量過濾的鈉中最後被排入尿液的比例。經典想法是：有效循環血量不足時，腎小管保鈉、FENa 可能低；腎小管功能失調時，鈉再吸收可能受損，FENa 相對偏高。這是有用的生理模型，但它要求許多先決條件：尿液與血液樣本接近同一時點、近期沒有會明顯影響鈉排泄的介入、腎臟與全身生理相對能被此模型描述。[7]
+當 creatinine 持續惡化、補液未帶來原先預期的改善，而且病人仍有攝護腺疾病與反覆導尿管問題時，原本沒有被超音波看見的阻塞，需要重新被放回候選機轉，而不是被一個陰性檢查永久淘汰。
 
-在肺炎低血壓的 A，如果先給了 2 L saline、接著開始 diuretic，拿一個 FENa <1% 或 >1% 直接判定 prerenal 或 ATN，都很容易過度推論。因為 septic AKI 可同時存在低有效循環灌流與腎小管／微循環功能異常；CKD、顯影、藥物、輸液、醣尿、阻塞等都可能改變 Na handling。[7]
+原作者在重新評估後安排 CT KUB。**CT Figure 3 顯示嚴重雙側 hydronephrosis，並有中度雙側 hydroureter**。這項結果直接改變了臨床證據格局：它比「因為有腹瀉，所以可能腎前性」更具體地提供了尿流受阻的解剖線索；不過 CT 仍未明確顯示造成阻塞的精確病灶，不能把阻塞的某一個機械位置當成已直接看見。[1]
 
-FEUrea 嘗試利用尿素的分率排泄，減少部分 diuretic 對 FENa 的干擾，但不是可靠的「萬用替代品」。2024 年一項 1108 名住院患者的 meta-analysis 在其比較分析中發現 FEUrea 的分辨能力有限，也沒有證實使用利尿劑時 FEUrea 必然優於 FENa；2026 年另一項納入 1240 人的回顧則顯示中等診斷效能，但 study heterogeneity 高、證據確定性偏低。不同研究的病人選擇、病因定義、切點、利尿劑使用與檢驗時序相當不一，**不能把一個 pooled AUC 直接換成「病房每個人都能確診」**。[8,9]
+泌尿科會診後改用 Tiemann-tip 導尿管，之後的巨大尿量與腎功能改善，進一步增加「阻塞是這次 AKI 的重要可逆因素」的可信度。**影像、介入和後續變化在同一病人身上形成相互支持的因果鏈，但不等於已由隨機對照證明全部效果來自單一管別。**
 
-真正實用的判斷是問：今天取得 FENa/FEUrea，是否真的能在目前臨床、超音波、尿沉渣、血流動力與藥物資訊之外，改變處置？若答案是否，反覆抽尿電解質很可能只是製造更多難以解釋的數字。
+NICE NG148 對 AKI 原因不明或有泌尿道阻塞風險者，建議安排緊急尿路超音波（其規範為評估後 **24 小時內**）；如果懷疑 pyonephrosis，則建議 **6 小時內**超音波。雙側上尿路阻塞、感染性阻塞等情況需要緊急泌尿科處理。這些是對特定風險情境的建議，不是所有 SCr 異常都必須照相同時限做 CT，更不是說初次超音波陰性就不許進一步查。[5]
 
-## 06　BUN/Cr 是故事的一部分，不是「prerenal 診斷機」
+## 04｜當尿量突然變多，究竟是康復還是新的風險？
 
-BUN 反映血中尿素氮；它受腎臟排泄、尿素生成、蛋白質攝取、腸胃道出血、類固醇、分解代謝、肝臟尿素合成等影響。腎灌流與 tubular urea reabsorption 的變化，可能使 BUN/Cr 上升；然而同一種比值，未必由同一個機轉構成。對高分解代謝、感染、腸胃道出血、營養不良或肝硬化病人，把 BUN/Cr >20 寫成「已證實 prerenal」尤其危險。
+原病例在調整導尿管後的 12/11 紀錄了 **6,170 mL/day** 尿量、**1,800 mL/day** 輸入量，淨出入約 **−4,370 mL**。作者文字說大量尿液在導尿管處置後排出；Table 2 則是日 I/O，**不能由每日總量倒推 6 L 全部在幾分鐘內流出**。[1]
 
-同樣，臨床常說「pre-renal AKI」也不能理解成病人尚未受任何組織損傷。灌流因素與腎小管傷害可以同時存在，也可以隨時間相互轉變；而治療後 SCr 的短期變化，仍需要放進水分與灌流動態才知道代表什麼。
+為什麼解除阻塞後可能突然多尿？阻塞期間積累的尿素與其他溶質需要排出，腎髓質濃縮梯度及集合管對水分的反應也可能暫時受損，產生**後阻塞性利尿（post-obstructive diuresis, POD）**。在解除阻塞後，尿量 **>200 mL/h 持續兩小時**，或 **24 小時 >3 L**，是常見的 POD 辨認標準。這名患者的日輸出符合量級上的警訊，但缺少精確逐時尿量與後續連續監測，因此不能單憑一日報表證明他進入持續性、病理性的鹽分耗損。[6]
 
-讀到這裡可對照 KDIGO 2012 的兩張**用途不同的原始圖**：[Chapter 2.3 Figure 4（印刷 p.25）與 Figure 5（p.26）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)。Figure 4 依 AKI 風險／分期提示監測肌酐與尿量、確認 volume status 與 perfusion、檢視腎毒性藥物及適時考慮腎替代治療；圖說中的陰影代表隨風險上升的**處置優先程度**，不是「stage 2 一定要洗腎」。Figure 5 則從病史、理學檢查、灌流、阻塞及特定病因尋找原因。**前一張回答「嚴重度改變時先做什麼」，後一張回答「要靠什麼資訊辨認可能的原因」**；兩張不能互當確診工具，也不能用流程中的任何單一分支取代病人實際病程。
+原來的 AKI 可能因解除阻塞而改善，卻不是「尿變多就等於腎臟已恢復正常」；此時還要考慮低血容量、低血壓與 Na/K/Mg/磷的變化。觀察尿量曲線、生命徵象、體重和電解質，才能區分恢復性多尿與持續性損失。沒有可靠的即時容量與電解質資料，不該從本病例反推每個病人的固定補液比例。
 
-## 07　所以現在怎麼處理？從問題表示回到個別病人
+這個轉折也解釋為什麼 AKI 追蹤不能只用同一個 endpoint：**creatinine 變好、尿量變多、灌流安全、電解質穩定，分別回答不同的問題。**
 
-**A（肺炎、低血壓、少尿）**：先判生理不穩與灌流、器官衰竭及可逆感染源；確認採檢與尿量，評估容量及液體耐受、適當的抗感染／必要循環支持、危險高鉀／酸鹼變化。不能依 FENa 一個值決定追加補液。需要持續比較 SCr、尿量、血壓、體液狀態、drug dosing 與 complication burden。[1]
+## 05｜尿液檢查能把競爭機轉縮小到哪裡？
 
-**B（心衰、利尿後 Scr↑）**：分開記錄鬱血是否改善與灌流是否安全。利尿後 SCr 上升不能單獨要求停止治療；若低血壓、低灌流或過度去充血跡象出現，也不能因尿量增加就繼續強推。要回到對心衰的容量／灌流模型及既有[利尿劑正文](../../xiaoma-reading/integrated/2026-10-22-diuretics-visual.md)所建立的 natriuresis 與 decongestion 界限；本篇不重寫它。
+不是每一位 AKI 都會像上面的病人一樣，由 CT 找到上尿路異常。若原因仍不明，尿液能幫我們看見不同病理過程留下的線索：dipstick 的 blood、protein、leukocyte esterase、nitrite、glucose；鏡檢的 RBC、WBC、renal tubular epithelial cell、各類 casts；以及在適合情境下的 urine protein/albumin 定量。**這些檢查不是平行的待辦事項；必須先問是哪一種候選病因需要區分。**
 
-**C（疑似尿路阻塞）**：立即確認實際排尿問題、床邊膀胱評估及是否有感染危險線索。NICE 指出，若懷疑 pyonephrosis（感染性阻塞），超音波應儘速（該指引設 6 小時）完成；若原因不明或有阻塞風險，則需緊急尿路超音波（該指引設 24 小時）。這些是明確的受指引定義的臨床情境，不是「所有 creatinine 升高都在 6 小時做超音波」。[1]
+例如血尿合併蛋白尿，尤其有 dysmorphic RBC 或 RBC casts，會提高對腎絲球發炎的注意；此時病人的血壓、補體、感染史、免疫學檢查與腎臟會診可能比盲目重算 FENa 更有資訊價值。但 dipstick 的 blood 是偵測 heme 的反應，也可能由 hemoglobin 或 myoglobin 引起，不能自動翻譯成「尿中一定有大量完整 RBC」。
 
-至於「何時透析」，不從某個單一 creatinine 值開始；真正要問難治的高鉀、嚴重酸鹼失衡、難以處理的容量超負荷、臨床尿毒症併發症是否存在，以及保守處置能否安全維持，需緊急和腎臟／重症團隊決策。[1] AKI 的追蹤不以 SCr 開始下降為終點，還要顧及藥物安全、腎功能恢復與中期 CKD 風險。
+反之 granular／muddy-brown casts 與 renal tubular epithelial cells，較直接提示腎小管上皮脫落及損傷。這個概念可以由另一位**不同病人**的真實病例理解：2022 年發表的 69 歲 COVID-19 合併 rhabdomyolysis 女性，入院 SCr **4.8 mg/dL**、CK **4,415 U/L**；6/12 尿液 dipstick heme **2+**，鏡檢每 HPF 有 RBC **6 顆**，每 LPF 有 granular casts **6 個**。6/13 SCr 暫降至 **1.9 mg/dL**，6/16 又升到 **4.2 mg/dL**，此時尿沉渣出現大量 renal tubular epithelial cells 及 muddy-brown casts。病人後續病程嚴重，6/18 死亡。作者有提供尿沉渣 Figure 1 與 creatinine／CK 時序；這個病例支持「功能數值短期改善並沒有結束腎小管傷害的鑑別」，不證明某個治療方案導致死亡或一定有效。[7]
 
-## 08　四個常見誤解與反事實
+相反例也重要：2023 年一篇兒科病例，首次尿液沒有蛋白、血尿、細胞或 casts，卻已有 SCr **7.89 mg/dL**；後續腎切片顯示 tubulointerstitial nephritis，作者將其與先前 ceftriaxone 暴露聯繫。**初始 bland sediment 並沒有排除間質病變。** 這是另一位病人，不能拿來說 79 歲導尿者也有藥物性間質腎炎。[8]
 
-- 「**SCr 正常就沒有 AKI**」：肌肉量、時間落差以及尿量可能使早期或特殊病人的變化被低估。別忘了看 baseline 與病程。
-- 「**eGFR 顯示 40，所以腎功能就是今天的 40**」：在 SCr 快速變動時，eGFRcr 不應被當作此刻直接量得的 GFR；慢性與急性情境必須分開。
-- 「**FENa <1% 所以一定要多補液**」：低 FENa 不是液體反應性試驗，也不會判定肺水腫風險；若病人已高度鬱血，盲目補液可能造成傷害。
-- 「**利尿後尿很多，AKI 已康復**」：尿液輸出並不能取代 SCr 趨勢、電解質、灌流與腎臟結構／功能的綜合評估。
+尿沉渣強在提供**病理定位的線索**，不是每個疾病都有特異、每次檢驗都能捕捉到的形態學標籤。檢體新鮮度、處理方式和判讀經驗，同樣會影響是否看得見細胞與 casts。
 
-可用一個新的病人驗收理解：79 歲 CKD G3、有心衰與肺鬱血，肌酸酐 1.9→2.3、血鉀 5.0、正在 loop diuretic、尿鈉 55 mmol/L。若他的呼吸與 JVP 明顯改善、血壓及灌流尚可，是否該因尿鈉較高直接確診 ATN 並停止利尿？如果改成低血壓、四肢冰冷與尿量再次下降，你的監測與治療策略會如何分岔？這是**自編遷移題**，不是已驗證真題，也不提供單一數字作通用的加減藥命令。
+## 06｜FENa 與 FEUrea 為什麼不能取代上述推理？
 
-整個腎臟 lab 推理的核心是：**AKI 定義回答「危險訊號出現了嗎」，病程與尿液回答「可能在哪裡、為什麼」，床邊血流動力和併發症回答「現在要做什麼」**。這三件事相連，但不能互相代替。
+FENa（fractional excretion of sodium）比較的是**被腎絲球濾過的鈉，有多少比例最後進入尿液**，常用公式：
 
-## 國考真題定位：同樣的數字，考的是哪個判斷？
+\[
+FENa(\%)=\frac{U_{Na}\times P_{Cr}}{P_{Na}\times U_{Cr}}\times100
+\]
 
-這兩道考選部原題分別考驗尿液沉渣的證據權重，以及 AKI 治療後為何必須連續追蹤 creatinine 與尿量。除原卷外，可查[考選部 113 年第一次考畢試題平台](https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113020&y=2024)：醫學（三）科目目前列有**試題與標準答案**，未另列更正答案連結；因此下文 Q29 採其公開標準答案，不把其他科目的更正誤套到本題。
+有效循環灌流下降時，腎臟往往加強 Na 再吸收，FENa 因而可能下降；若腎小管無法有效重吸收 Na，FENa 可能上升。這是一個有解釋力的生理模型，但其預測建立在尿液與血液樣本時點可比較、藥物與輸液影響可辨識、沒有多個病理過程混合等前提之上。**FENa 是鈉處理的分率，並不是「腎小管傷害程度」的直接測量，更不是會不會對補液產生循環反應的測試。**
 
-- **113 年第一次醫師二階，醫學（三）Q29**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)。比較 FeNa <1%、尿滲透壓 >500、BUN/Cr >20 與尿沉渣 granular casts；考選部公開的**標準答案為 D**。推理焦點不在「哪個數字跟 ATN 相關」的背誦，而是前三者受水鈉調控和灌流影響，顆粒圓柱體則能提供較直接的腎小管受累線索。**但 granular casts 也不是腎切片，不能憑單項沉渣永久確診所有 intrinsic AKI。**
-- **115 年第二次醫師二階，醫學（三）Q28**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)。問治療反應追蹤；官方**標準與更正答案皆為 A**（連續 SCr 與尿量），可對照本文「不同時間尺度的動態功能訊號」。不因此推論所有病人每天都該接受腹部超音波或反覆培養。
+最有力的反例之一來自 2022 年前瞻性觀察研究：研究團隊在**腎臟科會診、KDIGO stage ≥2、疑似 intrinsic AKI** 的住院患者中取得尿沉渣與同期 FENa；270 位具可配對結果者中，133 位看見 muddy-brown granular casts，其中 **50/133（38%）的 FENa 仍 <1%**。這直接挑戰「FENa <1% 就不可能有 ATI」的命題。[9]
 
-## 參考來源與邊界
+為什麼會這樣？急性腎小管損傷可以與保鈉訊號同時存在，尤其在腎灌流受限、神經內分泌活化、慢性腎病或混合病因下；而尿鈉結果也可能因利尿、時間點及介入而改變。該研究的 270 位是**經選取的會診且疑似 intrinsic AKI 病人**，不是一般門診或所有 AKI 的隨機母群；研究中活檢確認 ATI 的亞組表現，也不能直接轉成全體患者「muddy-brown casts 的敏感度／特異度都是 100%」這種普遍定律。
 
-[1] NICE NG148, *Acute kidney injury: prevention, detection and management*, official Recommendations（已核對網頁關鍵條款；留意英國特定 6h／24h referral/ultrasound 建議在台灣仍須依實際資源與院內路徑執行）。https://www.nice.org.uk/guidance/ng148/chapter/Recommendations
+FEUrea 使用尿素的分率排泄，有時被用來減少 loop diuretic 對尿鈉的干擾；但尿素本身受再吸收、水分、ADH、蛋白代謝及疾病狀態影響，不能變成一個不受臨床條件影響的「替代金標」。解讀 FENa／FEUrea 時，應先問：**此刻到底在區分哪兩種機轉？這項數據會比病史、血流動力、尿沉渣與阻塞影像多回答什麼？**
 
-[2] KDIGO 2024, *Clinical Practice Guideline for the Evaluation and Management of CKD*: https://kdigo.org/guidelines/ckd--evaluation-and-management/ ; Ann Intern Med synopsis https://doi.org/10.7326/ANNALS-24-01926 ; Kidney Int executive summary https://doi.org/10.1016/j.kint.2023.10.016 。eGFRcr/cystatin-C、UACR 與 CKD 慢性性適用於慢性評估，不能直接把 CKD 分類套到急性 SCr 動態。
+BUN/Cr 也有相同界限。BUN 受蛋白攝取、分解代謝、腸胃道出血、肝臟尿素生成與腎小管尿素處理影響；BUN/Cr >20 可以形成一個假說，卻不是「已證明 prerenal，現在該補液」的指令。對於可能鬱血的心衰竭病人，這樣的跳躍尤其有風險。
 
-[3] Merck Manual Professional, *Acute Kidney Injury*（可見全文）：https://www.merckmanuals.com/professional/nephrology/acute-kidney-injury/acute-kidney-injury-aki
+## 07｜回到 79 歲患者：這一次究竟是哪項證據讓診斷改變？
 
-[4] KDIGO 2012 AKI Guideline official topic archive；2026 仍非正式更新：https://kdigo.org/guidelines/acute-kidney-injury/
+一開始，腹瀉、較低的血壓和陰性超音波讓腎前性原因合理。隨後持續惡化的 creatinine 告訴醫師：**原本的機轉解釋，尚不足以解釋整個病程**。貧血、血小板與 bilirubin 的變化又使醫師評估 TMA；但原文沒有報告血片顯示溶血的支持證據，入院時 platelet 原本已低至 **90 × 10⁹/L**，不能把 12/10 的 **91 × 10⁹/L** 錯講成「血小板突然從正常掉下來」。原文也有 direct antiglobulin test 陽性與 C4 偏低，不能把全套檢驗簡化成「免疫和溶血檢查全部正常」；單獨 DAT 陽性不等於當下已有活動性溶血。[1]
 
-[5] KDIGO 官網 2026 AKI/AKD guideline status；public review draft，非臨床生效準則：https://kdigo.org/guidelines/acute-kidney-injury/
+**真正的決策 pivot**是：阻塞前測風險一直很高，持續補液未產生預期改善，團隊因此在首次超音波陰性後仍重新選擇能看見解剖阻塞的 CT。之後 CT 找到雙側水腎／輸尿管擴張，泌尿科調整導尿方式，接著大量排尿與腎功能恢復。這些資料足以強烈支持這次有重要、可解除的阻塞性成分；它們不允許我們倒推「腹瀉從未影響灌流」或「CT 已證實每一個細節的機械病因」。
 
-[6] NICE NG148；尿試紙異常的評估與腎炎分流可參照此指引；對 granular casts、RBC casts 等形態學判讀，仍應參照實際尿沉渣影像、檢驗室人員與臨床病程，不能只憑文字確診。
+KDIGO 2012 原始 [Figure 4（印刷 p.25）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf) 與 Figure 5（印刷 p.26）正好回答兩個不同問題：前者依風險與嚴重度安排監測和支持措施，後者讓醫師從灌流、阻塞、特定腎病及非特異性 AKI 的候選機轉選擇檢查。這些流程圖不是互斥診斷樹，更不是「有低血壓就先忽略阻塞」的順序命令；多個機轉可能並存，急迫的高鉀、酸鹼異常、肺水腫或不穩定循環，應與追查原因平行處理。
 
-[7] *Fractional Excretion of Sodium and Urea are Useful Tools in the Evaluation of AKI: PRO*, Kidney360 2023（可見正文並明列適用時限與 confounders）：https://journals.lww.com/kidney360/Fulltext/2023/06000/Fractional_Excretion_of_Sodium_and_Urea_are_Useful.5.aspx
+對 AKI 後的追蹤，也不能只停在出院 creatinine 85 μmol/L。應考慮後續腎功能、尿路排出能力、藥物安全與 CKD 風險。KDIGO 2012 建議 AKI 後約 **3 個月**重新評估是否恢復、出現或惡化 CKD；實際較早的追蹤則依臨床風險安排。[2]
 
-[8] *Utility of fractional excretion of urea in AKI with comparison to FENa*, 2024 meta-analysis，PubMed abstract：https://pubmed.ncbi.nlm.nih.gov/38768779/
+## 08｜把一個重要條件改掉，原先的推理會不會跟著改？
 
-[9] *Assessing the utility of fractional excretion of urea in hospitalised patients*, BMJ Open 2026 systematic review，全文 HTML 與摘要：https://bmjopen.bmj.com/content/16/1/e100875
+**情境 A：** 假設另一名患者有 SCr 上升、肺鬱血、JVP 升高，利尿後尿量與呼吸都改善，SCr 卻稍微上升。能直接用「prerenal AKI」要求大量補液嗎？
 
-本文的三組臨床數值均為**自編情境而非真實患者**。所有 AKI 處置都需結合血流動力、檢體可信度與尿液資訊；原始圖表、藥物劑量及當院影像／採檢流程應以對應正式來源為準。
+<details><summary>查看推理</summary>
+
+不能。低有效動脈灌流、腎靜脈鬱血、去充血過程的血流動力變化及真正腎損傷可能並存。尿量增加代表排尿，不等於 GFR 已恢復；SCr 上升也不自動代表應停止去充血。關鍵是同一時序的體液／灌流、利尿反應、血壓、電解質及器官危險，而非用 FENa 或 BUN/Cr 單獨決策。這是自編反事實情境，不是 Chen 病例。
+
+</details>
+
+**情境 B：** 另一名病人接受利尿劑後 FENa 2.8%，尿沉渣沒有顆粒圓柱體；同時有巨量膀胱殘尿、雙側水腎。這時 FENa 能把病因判成 ATI 而忽略阻塞嗎？
+
+<details><summary>查看推理</summary>
+
+不能。FENa 反映當時的鈉排泄分率，會受利尿與其他因素影響；膀胱殘尿和雙側水腎則提供直接的阻塞性證據。應先辨認阻塞的緊急危險、在適用情境下取得泌尿科協作，並評估其他共存原因。這仍需看病人的穩定度與實際來源，不是用某一項尿液數值啟動固定醫囑。
+
+</details>
+
+**情境 C：** 如果患者第一次尿沉渣是 bland，腎功能卻繼續惡化，且近期開始新的藥物，是否可以宣告「沒有 intrinsic AKI」？
+
+<details><summary>查看推理</summary>
+
+不行。初期 bland sediment 不具備排除全部腎小管、間質或腎絲球病變的敏感度。應依藥物時序、系統性表現、後續尿液變化及必要時腎臟專科診斷重新聚焦；前面提及的活檢確診間質性腎炎兒科病例，就是一個真正的反例。
+
+</details>
+
+以上均為**刻意更改條件的教學練習**，並非已發表病例的新增病歷事實，亦不構成可直接照開的治療指令。
+
+## 國考：為什麼題目會選 granular casts，而不是 FENa？
+
+**考選部 113 年第一次醫師第二階段，醫學（三）Q29** 的臨床情境是 40 歲病人於 48 小時內 creatinine 上升至 2.5 mg/dL，詢問最有助於指向 intrinsic AKI 的線索；四選項為 FENa <1%、urine osmolality >500 mOsm/L、BUN/Cr >20，以及 granular casts。正式標準答案 **D**。[官方原題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)
+
+若只背「granular casts = ATN」，容易忽略前提。這題真正比較的是：前三項多反映某些水與鈉處理／濃縮狀態，常會出現在腎前性模型；顆粒性圓柱體則使我們更直接聯想到腎小管內部的細胞與蛋白質變化。但正如 270 人原始研究所見，**真性 ATI 可以同時有低 FENa**。選擇考題中最有辨識力的線索，不等於任何一項都可以單獨當作所有患者的金標。
+
+可延伸核對 **115 年第二次醫師第二階段，醫學（三）Q28**，考 AKI 後的功能追蹤及治療反應。第一份檢驗只告訴我們當時在哪裡；連續 SCr、尿量、灌流與併發症，才讓我們知道病程有沒有朝預期改變。[考選部 115 年第二次試題／答案平台](https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115070&y=2026)
+
+---
+
+## 主要來源與圖表原位
+
+[1] Chen ZT et al. *Acute Kidney Injury: A Blocked Diagnosis*. Cureus. 2025;17:e88144. [病例全文、原 Figure 1–3 與 Table 1–3](https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/)；[出版社原始 PDF](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf)。病例特有的 creatinine 12/12 同日衝突、stage 標籤及導尿前後時間差，已在相應段落保留；個案不能推算全部阻塞性 AKI 的診斷性能。
+
+[2] [KDIGO 2012 AKI 正式全文](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)：Chapter 2.1 Table 2（印刷 p.19）、Chapter 2.3 Figure 4（p.25）及 Figure 5（p.26），用於功能性定義、分級、風險優先序和病因評估；正文不重製原圖。
+
+[3] [KDIGO 2024 CKD 指南](https://kdigo.org/guidelines/ckd-evaluation-and-management/)：eGFRcr、eGFRcr-cys、cystatin C 與慢性評估界線。
+
+[4] [KDIGO AKI/AKD 2026 更新官方狀態](https://kdigo.org/guidelines/acute-kidney-injury/)：目前為 public-review draft 後準備出版，非已替代 KDIGO 2012 的正式版本。
+
+[5] [NICE NG148，AKI Identifying the cause(s)／Ultrasound／Relieving obstruction](https://www.nice.org.uk/guidance/ng148/chapter/Recommendations)：適應情境與 6h／24h 特定時限。
+
+[6] [Yaxley & Yaxley，*Obstructive uropathy – acute and chronic medical management*，2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC9846865/)：後阻塞性多尿定義、機轉與追蹤風險。
+
+[7] [Jahnke et al. *Acute kidney injury associated with rhabdomyolysis in a patient with COVID-19*. Braz J Nephrol. 2022](https://www.scielo.br/j/jbn/a/6K7JcmSpSgt3srPxR7WLRjv/?lang=en)：原始 creatinine／CK 時間表與尿沉渣 Figure 1。
+
+[8] [Kundavaram et al. *Bland Urine Sediment in a Child with Acute Kidney Injury*. J Lab Physicians. 2023](https://jlabphy.org/bland-urine-sediment-in-a-child-with-acute-kidney-injury/)：初期正常沉渣與後續腎切片確認病變的反例。
+
+[9] [Varghese et al. *Concomitant Identification of Muddy Brown Granular Casts and Low Fractional Excretion of Urinary Sodium in AKI*. Kidney360. 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9136894/)：270 人具同期 FENa／尿沉渣資料，特定選樣條件下有 50/133 的 MBGC 同時 FENa <1%。
+
+這篇文章用於理解檢驗的測量意義與臨床證據如何更新判斷。真正的採檢、影像、輸液、導尿和腎臟替代治療，仍須依患者即時風險、醫院流程及具資格團隊判斷。
