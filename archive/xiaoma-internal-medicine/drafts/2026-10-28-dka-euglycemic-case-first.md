@@ -100,7 +100,7 @@ Insulin 開始作用後，鉀會回到細胞內；酸中毒與腎灌流改善時
 
 我們治療的是**相對 insulin 不足所維持的產酮、酸血症及其造成的循環與電解質危險**。血糖只是一個必須監測的窗口，不能代表整個疾病已被控制。這也是為何酸鹼分析、尿液檢驗、β-hydroxybutyrate、鉀與治療後的時間序列必須被放在一起理解。
 
-讀到這裡，114 年第一次醫學（三）Q56 的「1 U/kg insulin 一次給」就不再只是速率單位的陷阱：它測的是能否區分**抑制持續產酮的治療目標、正確的 insulin delivery 形式、血鉀安全與輸液的循環目的**。原題與逐項解析可於既有[二十題跨系統練習](../lessons/2026-10-22-baseline-twenty.md)找到；這裡不重複抄題，以保留本篇的臨床主線。
+讀到這裡，114 年第一次醫學（三）Q56 的「1 U/kg insulin 一次給」就不再只是速率單位的陷阱：它測的是能否區分**抑制持續產酮的治療目標、正確的 insulin delivery 形式、血鉀安全與輸液的循環目的**。原題與逐項解析可於既有[二十題跨系統練習](https://github.com/sheng-web-OS/Clinical_system/blob/main/content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md)找到；這裡不重複抄題，以保留本篇的臨床主線。
 
 下次遇到噁心、嘔吐、呼吸深快而血糖並不顯著升高的糖尿病患者，真正值得及早回答的不是「她是不是糖太高」，而是：**有沒有正在累積的酮酸？身體還能不能代償？怎樣使產酮停止且不讓治療本身引起低血糖、低血鉀或循環惡化？**
 
@@ -112,4 +112,3 @@ Insulin 開始作用後，鉀會回到細胞內；酸中毒與腎灌流改善時
 - Umpierrez GE, et al. *Hyperglycemic Crises in Adults With Diabetes: A Consensus Report*. Diabetes Care. 2024;47:1257–1275. DOI: [10.2337/dci24-0032](https://doi.org/10.2337/dci24-0032)。用於 D/K/A 診斷、血中酮體、電解質、輸液與治療終點。
 - American Diabetes Association. *Diabetes Care in the Hospital: Standards of Care in Diabetes—2026*. Diabetes Care. 2026;49(Suppl 1). [官方 2026 住院照護章](https://diabetesjournals.org/care/article/49/Supplement_1/S339/163925/16-Diabetes-Care-in-the-Hospital-Standards-of-Care)。
 
-本文屬完整教材的**待獨立審查首稿**；在來源、醫學安全、原始圖表與語義審查完成以前，不作已發布臨床處置指引。
