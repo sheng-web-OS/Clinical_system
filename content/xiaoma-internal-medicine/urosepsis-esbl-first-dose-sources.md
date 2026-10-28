@@ -5,7 +5,7 @@
 ## 真實病例：觀察層證據（不是藥物療效證據）
 
 1. [Polymyxin B and low-dose hydrocortisone treatment in a patient with uroseptic shock in a rural health unit (2021; PMCID PMC8633641)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)：個案為 81 歲女性、因腫瘤阻塞上泌尿道，尿源性敗血性休克；報告涵蓋培養 ESBL-producing *E. coli*、血流動力變化與經皮腎造瘻引流。**個案使用 PMX-DHP／hydrocortisone 不代表這些措施已獲試驗確證或可常規照做**；須由 SSC 與原始比較研究另行評估。
-2. [Carbon dioxide-dependent ESBL-producing *E. coli* bacteremia associated with pyelonephritis: a case-report (2024)](https://www.sciencedirect.com/science/article/pii/S1341321X24002897)：個案 62 歲男性，多發腎膿瘍、ESBL-E 菌血症及特殊培養生長需求；記載 meropenem 與 nephrectomy。與一般 cUTI 以及主文人工合成 68 歲男性不是同一群病人。
+2. [Evins et al. Community-Acquired, ESBL-Producing and XDR *E. coli* in a 28-Year-Old Pyelonephritis Patient Lacking Risk Factors. *Antibiotics* 2021;10:533](https://www.mdpi.com/2079-6382/10/5/533)：病例有住院初期 ceftriaxone、後續尿培養 ESBL、換用 meropenem 的時間序列；原文 **Table 1** 明列 ceftriaxone >64 (R)、meropenem <0.25 (S)、TMP-SMX >320 (R)、piperacillin–tazobactam 64 (I)。這是**當次菌株的實測 MIC/AST**；並無可核對的兩個月前 ESBL 舊培養史，不能推為「舊培養決定首劑」的個案因果驗證。
 
 **原始 case report 的「作者觀察」只能供臨床時序及機轉的具體化；藥物/介入的比較效益須回到 RCT、綜合證據與現行 guideline。原文未報告的量測、劑量與時序一律 NOT_REPORTED；禁止 AI 補造。** 現階段的網頁檢索只能確證上述摘要／可見內文，仍須在審稿時逐段檢閱全文、核對原表及所有註腳，不能以此頁聲稱完整原始文獻審查已通過。
 
