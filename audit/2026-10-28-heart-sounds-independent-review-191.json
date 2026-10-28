@@ -1,6 +1,6 @@
 {
   "schema": "PR191_INDEPENDENT_READ_ONLY_PARAGRAPH_AUDIT_V1",
-  "observed_at": "2026-10-28T04:30Z",
+  "observed_at": "2026-10-28T04:38Z",
   "pr": 191,
   "reviewer_context": "distinct scheduled patrol execution, not original article writer",
   "status": "TEXT_53_OF_53_REVIEWED_SOURCE_EXAM_IMAGE_HOLD_NO_FINAL_SEMANTIC_RECEIPT",
@@ -460,10 +460,18 @@
     "hcm_2024": "AHA official 32-page slide deck page index6 directly visually inspected: LVOTO >=30mmHg and symptomatic refractory advanced therapy >=50mmHg.",
     "vhd_2025": "ESC/EACTS 2025 original guideline text section 9.1.4 independently retrieved: urgent treatment for acute severe primary MR, papillary rupture often requires surgical replacement; no original guideline figure pixel signoff.",
     "achd_2025": "2025 ACC/AHA full guideline text reviewed for irreversible pulmonary vascular disease/shunt closure contraindication; detailed ASD original figure pixels not checked.",
-    "exam": "Official Q/S/M images, diagrams and correction sheets NOT independently re-opened in this execution; source page itself flags several figures pending.",
-    "pocket": "Pocket Medicine 9E original private figure bytes not available to this execution; prior audit locator is inherited, not independent visual signoff."
+    "exam": "PARTIAL_DIRECT_ORIGINAL_Q_S_M_VISUAL_VERIFIED: 115-2 medical(III) Q14 D, official question PDF p4 (index3), original answer Q14 D, correction PDF Q14 unchanged; 115-2 medical(V) Q9 original answer D but correction PDF explicitly accepts B or D or BD; all other exam Q/S/M and illustrated questions still NOT_VERIFIED in this execution.",
+    "pocket": "Pocket Medicine 9E original private figure bytes not available to this execution; prior audit locator is inherited, not independent visual signoff.",
+    "exam_primary_urls": {
+      "med3_question": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q",
+      "med3_answer": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S",
+      "med3_correction": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M",
+      "med5_question": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=Q",
+      "med5_answer": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=S",
+      "med5_correction": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=M"
+    }
   },
   "clinical_hard_stop_observed": "No new proven P0/P1 in 53 text units against checked sources; source/figure/exam gate remains unresolved; not a physician/pharmacist signoff.",
   "release_authority": "NOT_GRANTED; PR remains Draft/HOLD",
-  "next_action": "Separate evidence verifier must inspect remaining original guideline/Pocket/official exam figures and Q/S/M corrected answers; then confirm current exact article/source/figure fingerprints, decide whether source/rights gates truly PASS, and only then promote this text audit to a valid independent exact-blob semantic receipt in existing registry; run exact-head CI and 360/375/390/1280 real reader. No merge/deploy without scope authorization."
+  "next_action": "Retain text-only 53-unit audit; independently inspect remaining original Pocket 9E, applicable VHD/ACHD figure footnotes, and remaining official Q/S/M illustrated items, verify exact frozen lesson/source/figure and rights, then decide final semantic receipt/CI/real reader. No auto merge/deploy."
 }
