@@ -69,7 +69,9 @@ ESBL 是能水解部分延伸型 β-lactam 的酵素機轉；菌株往往還可�
 
 **時鐘的意義。** 2026 SSC 對 possible/probable/definite septic shock，以及 probable/definite sepsis without shock，建議立即給抗菌藥，理想上辨認後 1 小時內；對 possible sepsis without shock 可容許快速限時調查、若仍疑感染則於懷疑後 3 小時內給藥。這個病例不能被降格成低風險「再觀察幾小時」：有血流動力與器官功能惡化訊號。指南對需要 source control 的確定解剖病灶，傾向儘早處置，理想上診斷後 6 小時內；這是協作目標，不是「可以安全等滿六小時」。([SSC 2026：Blood culture、Antibiotic initiation、Source control](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026))
 
-### 合成練習 B｜哪些資料在改變抗藥的先驗風險？
+## 合成練習 B｜哪些資料在改變抗藥的先驗風險？
+
+**反事實練習案例為人工合成，病例為人工合成而非真實報告**；本練習尚未由醫師或藥師驗證可下單。
 
 先把五種資訊分開：
 
