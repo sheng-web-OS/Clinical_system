@@ -24,6 +24,10 @@ Chuah 等人在 2013 年發表一項實際 CABG 觀察研究。81 名接受單�
 | [H⁺]（nmol/L） | 38.1 | 39.8 | 41.9 |
 | PaCO₂（kPa） | 5.23 | 4.93 | 5.60 |
 
+![圖 1：2013 年 55 名 on-pump CABG 病人的七項群體平均術前、術後、隔天早晨變化；每列獨立縱軸，不是單人病歷](figures/2026-10-29-cpb-acidbase-group-trends.svg)
+
+*圖 1｜以 Chuah 2013 原始 Table 3 數字重新設計的多變數時間對照。不同列各自縮放，線條陡緩不能跨指標比較；三個採樣類別也不是等距時間。重點是讀出 Na⁺/Cl⁻、SID、BE、[H⁺] 與 PaCO₂ 的不同方向，而不是從圖推算某名病人的 pH 或治療效果。*
+
 **先看術後立即的變化。** Na⁺ 降低、Cl⁻ 反而上升，SID 從 38.2 降至 29.7；HCO₃⁻ 與 BE 同步下降，符合淨代謝性酸化效應。但 [H⁺] 並沒有以同樣幅度顯著升高。研究比較 on-pump 與 off-pump 組，也發現前者在術後的 SID 下降更明顯（組間平均差 4.0 mmol/L，95% CI 2.8–5.3），卻沒有觀察到同樣顯著的 [H⁺] 組間差異。
 
 **再看隔天。** Cl⁻ 往原值回落，SID 也改善；HCO₃⁻、BE 逐漸回復，但 [H⁺] 卻進一步上升。研究同時看到 PaCO₂ 上升，而且隔天已拔管的患者平均 PaCO₂ 高於仍插管者。這提示我們：下一個時間點的酸血症方向，不必沿著前一個時間點的代謝性變化走。
@@ -124,5 +128,6 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 - Guarnieri M, et al. *Acid-Base Disturbances After Cardiac Surgery: A Cohort Study Using the Physicochemical Approach.* J Cardiothorac Vasc Anesth. 2026;40:204–213. **本次取得 PubMed 摘要，非原始個體病歷。** [摘要](https://pubmed.ncbi.nlm.nih.gov/41130846/)。
 - Wahba A, et al. *2024 EACTS/EACTAIC/EBCP Guidelines on cardiopulmonary bypass in adult cardiac surgery.* Eur J Cardiothorac Surg. 2025;67:ezae354. [指南全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/)。
 - *Acid-base effects of a bicarbonate-balanced priming fluid during cardiopulmonary bypass: comparison with Plasma-Lyte 148.* 2009 randomized study. [摘要](https://pubmed.ncbi.nlm.nih.gov/19115651/)。
+- van den Brom CE, et al. *Impact of Colloid Cardiopulmonary Bypass Priming Strategy on Perioperative Acid–Base Balance in Coronary Artery Bypass Surgery.* 2026. **本次只取得期刊摘要，研究群體結果不等於個體療效。** [研究摘要](https://pubmed.ncbi.nlm.nih.gov/42791111/)。
 
 延伸閱讀：本系列前篇《CABG lactate／ScvO₂》與《CPB oxygen delivery》分別處理**組織灌流訊號不等於病因**、以及**SaO₂ 不等於氧輸送**；一般酸鹼篇處理 Winter、AG 與混合障礙。本文專注於 CPB 液體、強離子、弱酸、通氣四種力量的臨床相互作用，並未將既有基礎章節重寫一次。
