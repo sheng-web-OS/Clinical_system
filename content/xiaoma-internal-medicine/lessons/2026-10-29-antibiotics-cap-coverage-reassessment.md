@@ -60,6 +60,8 @@ Legionella 是一種革蘭陰性、具有**細胞內生存能力**的細菌，�
 
 原團隊認為病人在先前 azithromycin 下改善有限，於是調整為 **levofloxacin**。之後氧氣需求逐漸減少、腎功能改善，出院前已超過 48 小時無發燒；出院時延續 levofloxacin，作者記載總療程約 **10 天**，一個月門診追蹤 creatinine 約 **1.20 mg/dL**。[原病例 Clinical Course](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
 
+這段病程還有另一個不能跳過的藥理問題：原作者記載出院時 creatinine 約 **1.80 mg/dL**，處方為 **levofloxacin 750 mg 每 48 小時**，並明註是腎功能調整後的給法。這是**病例實際使用的處方**，不是讀者應照抄的建議。Levofloxacin 主要經腎臟排除，腎清除能力下降時，同一劑量與間隔可能改變藥物暴露、毒性與治療效果；不應只因為「換藥後改善」便忽略這一層。單有 creatinine 1.80，缺少完整體重、基線腎功能與適用的腎清除率估計，**無法自行核定這個病人的給藥間隔是否合宜**。更無法由此推論另一名有 AKI 的患者也該用每 48 小時一次。原始醫囑數字之所以值得保留，是因為它揭示**選對病原活性的藥，與給對病人適合的實際暴露，是兩個需分別確認的臨床問題**。[原病例 Figure 2 後病程及出院醫囑](https://pmc.ncbi.nlm.nih.gov/articles/PMC11162253/)。
+
 **這不等於證明「azithromycin 無效，levofloxacin 才有效」。** 前者本來就有對 Legionella 的活性；原文沒有提供可以證實 macrolide 抗藥的菌株藥敏，也沒有一個只改變單一抗生素的對照實驗。病人也經歷了更多治療時間、呼吸支持及其他照護。病程上的「改藥後改善」，最多支持需要重新評估與可考慮替代藥物，不能據此對所有 Legionella 肺炎宣稱某一藥必然優越。
 
 ### 三、真正決定要不要升級，不能只看「有沒有退燒」
