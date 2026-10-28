@@ -56,3 +56,9 @@
 - [ATS/JRS LAM 診斷與 VEGF-D 指南](https://pmc.ncbi.nlm.nih.gov/articles/PMC5803656/)：對具有 LAM 特徵肺囊腫而缺其他確認線索的人，VEGF-D 在考慮肺活檢前的診斷角色。
 
 這些指南是**重新定義基礎疾病與再發風險**的依據，不支持對所有第一次 PSP 患者一律做 HRCT、遺傳檢測或 pleurodesis。
+
+## 09｜正壓通氣下的危急氣胸及經期性病灶處置
+
+- [NAEMSP 2024/2025 traumatic pneumothorax position statement](https://doi.org/10.1080/10903127.2024.2416978)：針對創傷與院前急救，包含 spontaneous versus positive-pressure-ventilated clinical signs、循環崩潰的減壓判斷；僅用來支撐高風險臨床訊號，**不可把創傷研究當成一般穩定 PSP 手術或觀察的指南**。
+- [ESHRE Endometriosis 2022 正式刊文](https://academic.oup.com/hropen/article/2022/2/hoac009/6537540) 與[正式 PDF](https://www.eshre.eu/-/media/sitecore-files/Guidelines/Endometriosis/ESHRE-GUIDELINE-ENDOMETRIOSIS-2022_1.pdf) 第 149–152 頁：catamenial 時窗 24h 前至 72h 後、至少兩次發作、推薦跨專科討論（GPP）；對 thoracic endometriosis **可提供荷爾蒙治療、手術需跨科合作**為弱建議，必須說明缺乏高確定性治療比較證據。
+- 本篇不把院前救護範圍的侵入性操作位置與方法改成一般 PGY 自行執行指令；程序依受訓團隊及當地規範。
