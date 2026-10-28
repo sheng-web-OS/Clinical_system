@@ -69,6 +69,8 @@ class ClinicalDiscussionReviewerIsolation(unittest.TestCase):
             "same original reviewer response",
             "unsupported_flip_rate", "supported_new_detection_rate",
             "valid_claim_reversal_rate", "COUNTERFACTUAL_BRANCHING_NOT_AVAILABLE",
+            "MEMORY_EXPOSURE_NOT_VERIFIED", "T2-E expert-attributed negative cue",
+            "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
         ):
             self.assertIn(requirement, self.protocol)
         self.assertIn("T1 and T2 answer different causal questions",
@@ -80,7 +82,6 @@ class ClinicalDiscussionReviewerIsolation(unittest.TestCase):
         self.assertIn("NOT_MEASURED", self.protocol)
         self.assertIn("NOT_EFFECTIVENESS_VALIDATED", self.protocol)
         self.assertIn("NOT_VERIFIABLE", self.protocol)
-        self.assertIn("not an executed experiment", self.protocol)
         self.assertIn("not an executed experiment", self.protocol)
 
 if __name__ == "__main__":
