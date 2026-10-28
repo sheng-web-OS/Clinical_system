@@ -7,7 +7,7 @@
 
 | 內容/用途 | 實際核對範圍與來源 | 結果與限制 |
 |---|---|---|
-| AKI 定義、尿量與分期 | [KDIGO AKI 2012 原 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)，印刷 p.19（PDF p.21，零起算）**Table 2**、正文 §2.1.1–2.1.3，實際畫面截圖核對 | Cr 1.16→1.68 的增量 0.52 mg/dL/約 24h 符合 Cr-AKI；若收集可信，240 mL/8h/75kg=0.4 mL/kg/h 且持續8h符合尿量條件。缺可信尿量則不能以尿量條件定案。Cr 已升不等於已知是 prerenal/overdiuresis。 |
+| AKI 定義、尿量與分期 | [KDIGO AKI 2012 原 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)，印刷 p.19（PDF p.21，零起算）**Table 2**、正文 §2.1.1–2.1.3，實際畫面截圖核對 | Cr 1.16→1.68 的增量 0.52 mg/dL/約 24h 符合 Cr-AKI；240 mL/8h/75kg 的平均值為 0.4 mL/kg/h，但**8 小時總量不足以單獨證明連續 6 小時**區間符合尿量條件；須核對分時紀錄、採集完整性，才可判斷 KDIGO 尿量條件。Cr 已升不等於已知是 prerenal/overdiuresis。 |
 | AKI 分期管理圖與處置限制 | 同 PDF 印刷 p.25（PDF p.27）**Figure 4: Stage-based management of AKI**；已目視框列、深淺色與 figcaption | Volume status/perfusion、藥物檢視、SCr/尿量監測是多階段管理；陰影是優先度，不是「每個病人都給 saline」或固定透析門檻。不在公開網站直接重製原圖。 |
 | 偽高鉀／配對檢體核對 | [UKKA July 2026 official guideline PDF](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf)，印刷 p.14（PDF p.13，零起算），Guideline 15.3；已目視 | 對疑似偽高鉀，推薦採用 paired lithium-heparin / clotted serum specimen；本篇因明顯 hemolysis＋快速全新樣本驗證臨床推論，並未聲稱該案例完成完整 paired protocol；若仍有不一致應向檢驗室討論配對驗證。 |
 | ECG、治療與風險 | UKKA 同 PDF 印刷 pp.14–15，Guidelines 14.1/14.2（p.13 與正式章節 p.64）、16.2a、16.3.1–.3、17.1–17.2；已目視 | 指引列 K 6.0–6.4 moderate，合併急性病、AKI 或快速升鉀需高警覺；16.2a 對有 ECG 變化的 calcium 建議於2026改 **2C**。Moderate insulin-glucose 為 suggested 2C；需要 glucose/K 適當監測；正常 ECG 非安全排除證據。 |
