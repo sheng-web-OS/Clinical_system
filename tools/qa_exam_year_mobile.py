@@ -26,6 +26,43 @@ EXPECTED = [
     (111, 1, 2, "醫學（四）", 33),
 ]
 
+# Exact year Q → published deep-lesson H2 → same year Q.
+# One representative identity per viewport; prevents a one-way-only false PASS.
+HEART_ROUNDTRIP = {
+    360: (111, 1, 2, "醫學（六）", 6),       # Doppler AS → flow/pressure
+    375: (115, 2, 2, "醫學（四）", 10),      # ASD → split S2/shunt
+    390: (114, 2, 2, "醫學（五）", 21),      # MS with AF → valve disease
+    1280: (114, 1, 2, "醫學（五）", 20),     # AMI complication → unstable patient
+}
+
+
+def navigate_with_visible_link(page, link, absolute_url, width):
+    """Check a genuine unoccluded touch target and wait for navigation to finish.
+
+    Normal scrolling is allowed; never use force=True, dispatch_event, or a
+    synthetic href navigation to mask an obstructed element.
+    """
+    link.scroll_into_view_if_needed(timeout=15000)
+    # Long year-archive hash jumps use smooth scrolling. Center the target
+    # before testing its real hit area instead of racing that animation.
+    link.evaluate("(el) => el.scrollIntoView({block:'center', behavior:'instant'})")
+    if width <= 390:
+        box = link.bounding_box()
+        visible = link.evaluate("""el => {
+            const r = el.getBoundingClientRect();
+            const x = r.left + r.width / 2, y = r.top + r.height / 2;
+            const top = document.elementFromPoint(x, y);
+            return r.width > 0 && r.height > 0 && x >= 0 && x < innerWidth &&
+                y >= 0 && y < innerHeight && (top === el || el.contains(top));
+        }""")
+        if not box or not visible:
+            raise AssertionError("Mobile material link is occluded or outside viewport: " + absolute_url)
+        page.touchscreen.tap(box["x"] + box["width"] / 2,
+                             box["y"] + box["height"] / 2)
+    else:
+        link.click(timeout=15000)
+    page.wait_for_url(absolute_url, timeout=20000)
+
 
 def run(dist: Path, out: Path) -> int:
     from playwright.sync_api import sync_playwright
@@ -95,6 +132,63 @@ def run(dist: Path, out: Path) -> int:
                                     problems.append("Target section missing: " + str(k))
                             finally:
                                 dest.close()
+                        # Reader action, not just an HTML string check: return to the same Q.
+                        heart_key = HEART_ROUNDTRIP[width]
+                        heart_record = records[heart_key]
+                        lesson = next(p for p in load_pages(ROOT) if p["output"] ==
+                                      "xiaoma-20261027-heart-sounds-structural-exam.html")
+                        heart_link = next((x for x in lesson["related_exams"] if
+                                           question_key(x) == heart_key), None)
+                        if heart_link is None:
+                            problems.append("No curated deep material for " + str(heart_key))
+                        else:
+                            expected = concept_url(lesson, heart_link, ROOT)
+                            catalog_hash = archive_anchor(heart_record)
+                            page.goto(origin + "xiaoma-exams.html#" + catalog_hash,
+                                      wait_until="domcontentloaded", timeout=30000)
+                            origin_row = page.locator('[id="' + catalog_hash + '"]')
+                            # Anchor navigation on the long year page may still be smoothly
+                            # scrolling; settle the real row before attempting a touch click.
+                            origin_row.scroll_into_view_if_needed(timeout=15000)
+                            controls = origin_row.locator("details.exam-catalog-materials")
+                            if controls.count() != 1:
+                                problems.append("Missing year→lesson materials: " + str(heart_key))
+                            else:
+                                # A previous Q-archive check may already have opened this
+                                # same details element: toggling it twice hides the link.
+                                if controls.get_attribute("open") is None:
+                                    controls.locator("summary").click()
+                                target = controls.locator('a[href="' + expected + '"]')
+                                if target.count() != 1:
+                                    problems.append("Deep H2 link absent: " + str(heart_key))
+                                else:
+                                    if width == 360:
+                                        page.screenshot(path=str(out / "heart-year-before-touch-360.png"))
+                                    navigate_with_visible_link(page, target, origin + expected, width)
+                                    section = expected.split("#", 1)[1]
+                                    if page.locator('[id="' + section + '"]').count() != 1:
+                                        problems.append("Arrived at wrong deep section: " + str(heart_key))
+                                    return_panel = page.locator(
+                                        'details.lesson-exam-backlinks[data-section="' + section + '"]'
+                                    )
+                                    if return_panel.count() != 1:
+                                        problems.append("Missing deep→year return panel: " + str(heart_key))
+                                    else:
+                                        if return_panel.get_attribute("open") is None:
+                                            return_panel.locator("summary").click()
+                                        return_href = "xiaoma-exams.html#" + catalog_hash
+                                        return_link = return_panel.locator('a[href="' + return_href + '"]')
+                                        if return_link.count() != 1:
+                                            problems.append("Wrong return-question identity: " + str(heart_key))
+                                        else:
+                                            if width <= 390:
+                                                page.screenshot(path=str(out / ("heart-deep-return-" + str(width) + ".png")))
+                                            navigate_with_visible_link(
+                                                page, return_link, origin + return_href, width
+                                            )
+                                            if page.url.split("#")[-1] != catalog_hash or origin_row.count() != 1:
+                                                problems.append("Round trip did not return to same year Q: " +
+                                                                str(heart_key))
                         overflow = page.evaluate("document.documentElement.scrollWidth > innerWidth + 2")
                         if overflow:
                             problems.append("Year catalog has horizontal viewport overflow")
