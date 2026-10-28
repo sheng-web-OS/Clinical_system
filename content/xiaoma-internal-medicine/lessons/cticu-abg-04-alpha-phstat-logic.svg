@@ -16,21 +16,21 @@
 <text x="195" y="428" text-anchor="middle" font-family="'Noto Sans TC',system-ui,sans-serif" font-size="20" font-weight="680" fill="#365b4a">以下是不同管理選擇</text>
 <rect x="18" y="444" width="354" height="237" rx="12" fill="#e7f4ed" stroke="#73a38e" stroke-width="1.5"/>
 <text x="31" y="479" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">A｜alpha-stat</text>
-<text x="31" y="511" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">依 37°C 未校正值管理</text>
-<text x="31" y="543" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">pH 典型目標 ≈ 7.40</text>
-<text x="31" y="575" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">PaCO₂ 典型目標 ≈ 40</text>
-<text x="31" y="607" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">低溫校正後 pH 可較高</text>
-<text x="31" y="639" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">不為此另外補入 CO₂</text>
-<text x="31" y="671" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">較能保留腦血流自調節</text>
+<text x="31" y="509" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">依 37°C 未校正值管理</text>
+<text x="31" y="539" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">pH 典型目標 ≈ 7.40</text>
+<text x="31" y="569" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">PaCO₂ 典型目標 ≈ 40</text>
+<text x="31" y="599" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">低溫校正後 pH 可較高</text>
+<text x="31" y="629" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">不為此另外補入 CO₂</text>
+<text x="31" y="659" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">較能保留腦血流自調節</text>
 <text x="195" y="706" text-anchor="middle" font-family="'Noto Sans TC',system-ui,sans-serif" font-size="18" font-weight="650" fill="#446276">A 與 B 並非先後處置</text>
 <rect x="18" y="716" width="354" height="227" rx="12" fill="#edf2f9" stroke="#8ba9ce" stroke-width="1.5"/>
 <text x="31" y="751" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">B｜pH-stat</text>
-<text x="31" y="782" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">依病人溫度校正值管理</text>
-<text x="31" y="813" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">pH 典型目標 ≈ 7.40</text>
-<text x="31" y="844" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">PaCO₂ 典型目標 ≈ 40</text>
-<text x="31" y="875" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">可能增加氧合器的 CO₂</text>
-<text x="31" y="906" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">腦血管擴張、腦血流 ↑</text>
-<text x="31" y="937" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">自動調節可能受到影響</text>
+<text x="31" y="780" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">依病人溫度校正值管理</text>
+<text x="31" y="809" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">pH 典型目標 ≈ 7.40</text>
+<text x="31" y="838" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">PaCO₂ 典型目標 ≈ 40</text>
+<text x="31" y="867" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">可能增加氧合器的 CO₂</text>
+<text x="31" y="896" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">腦血管擴張、腦血流 ↑</text>
+<text x="31" y="925" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">自動調節可能受到影響</text>
 <rect x="18" y="956" width="354" height="131" rx="12" fill="#fff" stroke="#b7c9ba"/>
 <text x="31" y="984" font-size="20" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="630" fill="#395347">選擇策略仍取決於術式：</text>
 <text x="31" y="1016" font-size="20" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="630" fill="#395347">成人中高度低溫：考慮 alpha</text>
