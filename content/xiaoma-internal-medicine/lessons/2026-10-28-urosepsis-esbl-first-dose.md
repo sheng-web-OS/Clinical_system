@@ -37,6 +37,8 @@ Piperacillin/tazobactam 亦不能只憑「抗菌譜廣」或一次體外 S 和 c
 
 Arai 等人在 2021 年 *Oxford Medical Case Reports* 發表的是**另一名 81 歲日本女性**，既往有反覆 UTI。就醫時 BP **68/36 mmHg**、creatinine **2.7 mg/dL**、lactate **3.3 mmol/L**，左側 CVA tenderness；CT 發現左輸尿管腎盂交界處阻塞性病變。原作者啟動抗菌藥與血流動力支持，因持續嚴重低血壓而延後經皮腎造瘻；在進一步循環支持後完成**percutaneous nephrostomy（PCN）**與引流。**第 4 天**血、尿培養報告 ESBL *E. coli*。病人後續改善，日後病理確認泌尿上皮癌。[原始病例及 CT/引流 Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)。
 
+**最能回答「第一劑怎麼想」的，其實是原作者 Discussion 保留的先驗資訊。** 這名 81 歲病人過去兩次 UTI，曾使用第三代 cephalosporin **cefcapene pivoxil**；作者懷疑既往治療相關抗藥風險，因此在當次培養尚未回報前，**經驗性選擇 carbapenem**。直到住院**第 4 天**，當次血液及尿液培養才報告 ESBL *E. coli*，團隊因而延續原本的 carbapenem。這段是真實醫師的「**既往用藥→推測抗藥可能→先行經驗性治療→當次培養回驗**」，但原文明確報告的是**先前使用 cefcapene**，**不是已掌握一張證實 ESBL 的舊 AST**。也不能僅憑單例證明經驗性 carbapenem 必然優於其他方案。([Arai 原始病例 PDF，印刷 p.434，Case Report 與 Discussion](https://academic.oup.com/omcr/article-pdf/2021/11-12/omab109/41940667/omab109.pdf))
+
 這是一個教學上真正重要的**資訊轉折**：即使先選了合理的抗菌藥，也不能讓被阻塞的集尿系統自動排空。阻塞的解剖原因、是否有感染性腎積水／膿瘍、引流是否可行，與「這個菌對藥是否 S」是不同問題。
 
 這篇病例曾使用 polymyxin B hemoperfusion 及 hydrocortisone。**那是該院在特定嚴重休克下採用的救援治療，不是證明 PMX-DHP 有標準存活效益的臨床試驗，亦非本教材鼓勵模仿的做法。** 原文的阻塞病因是腫瘤相關病變，不能偷換成「病人一定有阻塞性結石」。
