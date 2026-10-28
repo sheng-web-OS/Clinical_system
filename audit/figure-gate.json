@@ -1173,6 +1173,30 @@
           "why_link_instead": "原始推薦表與細節註腳已逐欄比對；只使用來源頁的精確文字定位及官方網頁連結，讀者可開啟全文查核，公開站不複製原表像素。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-antibiotics-cap-coverage-reassessment.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/antibiotics-cap-coverage-sources.md",
+      "items": [
+        {
+          "locator": "Spretz et al. Cureus 2024, original PDF p2, Table 1 (admission blood chemistry) and Figure 1 (admission chest X-ray), copyright CC BY 4.0",
+          "source_token": "Figure 1",
+          "teaching_role": "以確實存在的入院多發浸潤影像接上就醫時尚未知病原的經驗治療，避免事後 Legionella 確診倒灌到初診 CXR 解讀。",
+          "scope_limit": "胸部 X 光只能展示多灶肺實質病變，不證明特定細菌、藥物是否有效，也不能從這張單次影像判定之後的氧氣依賴。",
+          "mode": "illustrated",
+          "anchor": "u02-original-admission-cxr",
+          "caption_token": "Spretz et al."
+        },
+        {
+          "locator": "Spretz et al. Cureus 2024, original PDF p3, Figure 2 annotated contrast CT (multifocal opacities and parapneumonic effusion) and serial course",
+          "source_token": "Figure 2",
+          "teaching_role": "重新檢視第3天未改善時的胸部 CT，解釋它增加對肺部炎症及胸膜反應的資訊，卻無法由少量胸水本身診斷膿胸或指定抗綠膿桿菌藥。",
+          "scope_limit": "單一 CT 切片不等於影像完整病程，不提供胸水 pH/培養、膿胸或菌種確診，亦不能驗證後續用藥效果。",
+          "mode": "source_link",
+          "url": "https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=3",
+          "why_link_instead": "原始 CT 為作者單張軸向影像，直接連結出版 PDF 第3頁供放大、核對箭頭及圖說，避免另一張嵌圖在手機內文重複遮蔽時間軸；必要病程與不能推論之處已於正文解釋。"
+        }
+      ]
     }
   }
 }
