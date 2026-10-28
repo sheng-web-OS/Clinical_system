@@ -10,11 +10,11 @@
 
 這名 69 歲男性有高血壓、已治療的 C 型肝炎，以及曾接受手術的口腔鱗狀細胞癌病史。約十天前開始發燒與呼吸困難，先前在外院被當作上呼吸道感染；數日後又出現噁心、腹瀉，發燒與喘加劇，因而就診。到急診時，體溫 **101.8°F（約 38.8°C）**、脈搏 **79/min**、呼吸 **18/min**、血壓 **126/71 mmHg**、SpO₂ **91%**，雙肺可聽到 crackles；X 光可見右側較明顯的雙側肺泡浸潤。
 
-檢驗顯示 **creatinine 3.3 mg/dL、Na 134 mEq/L、AST 141 U/L、ALT 117 U/L**。COVID-19、流感與 RSV 檢測陰性。原作者將他的 CURB-65 記為 **2 分**，安排一般病房收治並給予 **IV ceftriaxone 加 PO azithromycin**，同時送驗肺炎鏈球菌與 Legionella 尿液抗原。這些數字和藥物是這名真實病人的原文紀錄；報告沒有完整提供所有其他疾病的排除過程，不應替當時醫師補寫成他們已確診哪一種菌。[Spretz et al., Case Presentation 與 Table 1](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
+檢驗顯示 **creatinine 3.3 mg/dL、Na 134 mEq/L、AST 141 U/L、ALT 117 U/L**。COVID-19、流感與 RSV 檢測陰性。原作者將他的 CURB-65 記為 **2 分**；但原文的入院實驗室表未列 BUN，讀者無法獨立重算第 2 分，不能把作者報告的數字當成此處已完整核對的量表。團隊安排一般病房收治並給予 **IV ceftriaxone 加 PO azithromycin**，同時送驗肺炎鏈球菌與 Legionella 尿液抗原。這些數字和藥物是這名真實病人的原文紀錄；報告沒有完整提供所有其他疾病的排除過程，不應替當時醫師補寫成他們已確診哪一種菌。[Spretz et al., Case Presentation 與 Table 1](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
 
 <figure class="diuretic-figure" id="u02-original-admission-cxr">
 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2"><img src="https://assets.cureus.com/uploads/figure/file/999808/article_river_58b323c0011911ef9a0fb3882f0846ad-Chest-Xray-1-.png" alt="原病例入院胸部 X 光：右肺多處斑片狀浸潤，左肺另有較少量浸潤，不能從影像直接判定 Legionella。" loading="lazy" style="display:block;max-width:100%;height:auto;margin:0 auto;"></a>
-<figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，**不是**直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；CC BY 4.0，原作者與來源已標明。後續 CT 原圖見 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=3">Figure 2／PDF 第 3 頁</a>。嵌入圖片之手機顯示與可達性仍待正式 QA。</figcaption>
+<figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，**不是**直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；依 CC BY 4.0 授權使用，原作者與來源已標明。後續 CT 原圖見 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=3">Figure 2／PDF 第 3 頁</a>。</figcaption>
 </figure>
 
 ### 二、在培養前，應該如何思考病原？
@@ -76,7 +76,7 @@ Jasper 等人在 2021 年發表的[系統性回顧與統合分析](https://pubme
 
 這種結果分歧真正提醒我們：**研究結果依賴病人嚴重度、治療選擇的先驗風險，以及是否能充分控制混雜；對重症族群的外推不確定性更高。** 因此可以理解醫師對持續未改善、已確認 Legionella 的患者考慮改用 levofloxacin，但本病例**沒有提供證實 azithromycin 抗藥的 MIC 或其他分離株證據**，也沒有對照組可以證明換藥本身的因果效果。這與「看到發燒就一律擴到抗 MRSA／抗 Pseudomonas」更是兩個不同問題。
 
-## 第三問｜為什麼「升得越廣越安全」與「有 S 就能立即降階」都可能錯？
+## 第三問｜病原證據增加後，為什麼仍不能一看到結果就擴藥或降階？
 
 ### 一、擴到 MRSA 或 Pseudomonas：需要另一套證據，不是看 CAP 有多可怕就全加
 
