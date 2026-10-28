@@ -2997,5 +2997,29 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md",
+    "output": "xiaoma-20261028-lab-morning-sheet.html",
+    "title": "早晨一張 Lab sheet：真正要判斷的是什麼？",
+    "subtitle": "心衰竭病房的假性高血鉀、真正 AKI 與跨面板臨床決策",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "腎臟與檢驗醫學",
+    "references": "xiaoma-20261028-lab-morning-sheet-sources.html",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md",
+    "output": "xiaoma-20261028-lab-morning-sheet-sources.html",
+    "title": "早晨一張 Lab sheet：原始來源、圖表與臨床適用界線",
+    "subtitle": "KDIGO、UKKA、AJKD 與 AABB 原始證據導讀",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "檢驗醫學參考資料",
+    "navigation": false,
+    "review": "author_source_check"
   }
 ]
