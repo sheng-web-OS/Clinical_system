@@ -31,7 +31,7 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         # Distinct 62F essential thrombocythemia source, not AML 55M.
         for cue in ("62 歲女性", "essential thrombocythemia",
                     "1305", "39.8", "serum K 6.3", "plasma K 4.6",
-                    "whole blood K 3.4", "0.09 g/L", "11 組"):
+                    "左股動脈 whole blood", "K 3.4", "靜脈 lithium-heparin plasma", "0.09 g/L", "11 組"):
             with self.subTest(cue=cue):
                 self.assertIn(cue, self.body)
         self.assertIn("PMC5806620", self.sources)
