@@ -1,0 +1,28 @@
+# E06｜無額外 API 費用的執行方案（2026-10-28）
+**Status: FREE-FIRST / EXECUTION NOT YET VERIFIED / no model result.** This note supersedes the paid-API-first assumption in the pilot runner but does not alter preregistered clinical endpoints or credit an invalid experiment.
+
+## User constraint
+No extra API spend. Use already included ChatGPT Work / ChatGPT / Codex capacity, within the user's entitlement and usage limits. Do not ask for API keys or grant permission for chargeable calls. Existing tools/e06_runner.py is an optional paid harness **disabled by default**; do not invoke --execute without separately explicit spending permission.
+
+## Strictest available zero-extra-charge route: separate ChatGPT/Work sessions
+1. Open the read-only PR #196 common packet and preregistration. Freeze the exact source versions and a neutral, identical case/task assignment for all arms. Use only three PUBLIC published cases, not the user's private pneumothorax patient.
+2. For each case, run A (native instruction), B (same neutral request + evidence audit protocol), C (same neutral request + locked Clinical OS Lite contracts), in **nine separate fresh model conversations** with the **same model selected** and the **same thinking effort**. Use non-project/clean contexts if possible. Do not reference E06, prior results, PR #195 or answer rubrics in any case/arm input; Clinical OS contract is the sole intentional treatment. Confirm model, effort, accessible files, sources, and source reading in each.
+3. Lock answer length and practical research time/effort as closely as product controls allow. Record actual limitations rather than pretending to have equal token expenditure. Use identical full source text or identical exact links with verified parity across arms.
+4. Export nine verbatim responses with date, model and effort, and assign opaque IDs; keep arm mappings private until review. No hallucinated run identifiers, no fabricated token counts. If Work/Chat cannot obtain true isolated contexts, **do not claim a controlled experiment**; report a quasi-experiment and the contamination risk.
+5. Use a tenth genuinely independent conversation/person as a blinded reviewer: reveal only anonymous outputs and case sources, not arm labels or previously generated answer. First evaluate medically dangerous errors, source fidelity, real incremental insights, decision-reversal validity, missing key concepts, EPQC narrative. Adjudication cannot be performed by the same conversation that authored all answers and claimed independence.
+6. Reveal labels only after review is locked. Record A→B, B→C, A→C paired deltas, source access parity, elapsed time, usage limits and human intervention time. Interpret three cases as **feasibility evidence**, not proven superiority or a statistically powered trial.
+7. If full nine sessions can't be run in Work, choose the minimal feasible fresh-chat subset (one full A/B/C triplet on a single case) to validate the orchestration, explicitly mark partial outcome; continue subsequent cases via separate clean conversations when supported. Avoid repeatedly running the same prompt in the scheduled chat's cumulative context.
+
+## One-shot handoff instruction for Work (if eligible on user's subscription)
+"Continue private GitHub sheng-web-OS/Clinical_system PR #196 E06 using ONLY already-included ChatGPT Work/ChatGPT/Codex allowances (no OpenAI paid API, no key setup, no GitHub Copilot premium overages, no new subscriptions). Read its preregistration, source manifest and free-first handoff. Attempt nine truly isolated identical-model/equal-effort clinical inference sessions A/B/C over three public cases, with full original-source parity; record each genuine output and source access. Use an independent blinded reviewer context. If the environment cannot create independent sessions, explain precisely what is unavailable, complete the smallest valid fresh-session comparison available, and leave honest HOLD/INCONCLUSIVE without inventing results. Do not deploy, publish a patient file, or rewrite the scoring thresholds. Save only the minimal auditable result to the private PR and report completion or exact blocker."
+
+## Free alternatives and their epistemic cost
+- ChatGPT Work / fresh chats: **no extra API bill** within subscription, but subject to account feature access, message budgets, and imperfect time/token control. This is the preferred path.
+- The existing scheduled hourly task may **coordinate** and inspect outputs; its own continued chat/history is not nine isolated trials. Its run is not a standalone new native baseline just because it is scheduled.
+- Existing responses from old GPT case discussions vs newly audited outputs: useful retrospective quality check, but known contamination and extra-source advantage; NOT an independent A/B.
+- GitHub Actions static CI, spell checks, deterministic provenance tests: zero new inference but cannot substitute for GPT clinical judgment.
+- GitHub Models free inference API is **not** an option: GitHub officially retired GitHub Models on July 30 2026 (https://docs.github.com/en/github-models).
+- ChatGPT's included Work may complete browser workflows but its ability to spawn nine mutually isolated inference contexts is **not verified** in this chat; cannot claim it already occurred.
+
+## Safety and stopping
+Keep source privacy and medical P0/P1 hard stops; no production release. Only report a performance verdict after real outputs and independent (or clearly labeled non-independent) scoring. If a fully fair model comparison cannot be performed for free, return an explicitly qualified feasibility finding rather than force charging the user or silently weakening design.
