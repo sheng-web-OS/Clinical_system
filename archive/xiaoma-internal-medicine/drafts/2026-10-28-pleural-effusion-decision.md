@@ -81,7 +81,7 @@ BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore ches
 
 以下題目身分、題幹與答案先依私人儲存庫的考選部原卷擷取檔對讀；**原始官方 PDF 與更正表本輪尚未成功重新逐頁開啟，故正式原卷／答案複核仍 HOLD**。不把擷取檔等同官方原像素已核對。先自行作答，再看逐項解析。
 
-### 真題 A｜112 年第一次・醫學（三）Q45（擷取答案 B；原卷重核待辦）
+### 真題 A｜112 年第一次・醫學（三）Q45（官方原卷、答案及更正表已核；B）
 
 肺炎治療一週仍發燒、胸痛，右側新胸水。題目問哪一項胸水檢驗最支持積極引流？四個選項分別為 A pH 7.3、B glucose 38 mg/dL、C LDH 700 U/L、D WBC 7,000/μL。
 
@@ -89,13 +89,13 @@ BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore ches
 
 **B** 最符合題目所要求的危險線索：glucose 38 mg/dL 約 2.1 mmol/L，提示高度代謝活躍或感染性胸膜腔，合併未改善肺炎與胸痛應積極評估引流。A 的 pH 7.3 屬 2023 BTS 中間風險，不能單獨當作「一定不用引流」或「一定引流」；C 的 LDH 700 U/L 不達 BTS 中間風險分支所舉的 >900 IU/L，但也不能獨立排除感染；D 的 WBC 數值不特異，不能把細胞多寡當成胸管的單一適應症。**這題的答案不是背 glucose 數字，而是辨識哪個數值最接近需要 source control 的病理狀態。**
 
-### 真題 B｜114 年第一次・醫學（三）Q48（擷取答案 B；原卷重核待辦）
+### 真題 B｜114 年第一次・醫學（三）Q48（官方原卷、答案及更正表已核；B）
 
 題目比較惡性胸水 glucose、結核胸水細胞分布、乳糜胸定義、血胸定義。**先作答：哪一項最適當？**
 
 **B**：結核性胸膜炎常呈 exudate 且以 lymphocytes 為主，但不是「淋巴球多＝確診 TB」。A 錯在把惡性胸水的 glucose 說成必然正常；惡性胸水可能 glucose 低。C 把乳糜胸的 triglyceride／chylomicron 判斷錯換成 cholesterol；D 把血胸的胸水／周邊血 hematocrit 比例錯換成胸水 hemoglobin 絕對值。這四個選項真正考的是**測量項目與疾病定義不可偷換**。
 
-### 真題 C｜115 年第二次・醫學（三）Q49（擷取答案 A；原卷重核待辦）
+### 真題 C｜115 年第二次・醫學（三）Q49（官方原卷、答案及更正表已核；A）
 
 題目問胸水診斷敘述何者錯誤：A 將胸水 amylase 升高連結膽道發炎；B 指向腹腔膿瘍；C 指向藥物性嗜酸性胸水；D 指向 CABG 術後胸水。**先作答，再檢驗每個病因是否與檢查相連。**
 
@@ -127,6 +127,6 @@ BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore ches
 2. British Thoracic Society, *Guideline for pleural disease*, Thorax 2023, doi:10.1136/thorax-2022-219784，**Pleural infection** 與 Appendix 1 *Suspected pleural infection, non-purulent fluid—initial decision tree*，含 ultrasound safe-access 與 follow-up 註腳。https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease-full-guideline/
 3. British Thoracic Society, *Clinical Statement on pleural procedures*, Thorax 2023;78(Suppl 3):s43–s68，胸腔超音波與抽液安全。https://thorax.bmj.com/content/78/Suppl_3/s43
 4. *A practical approach to pseudoexudative pleural effusions*, Respir Med 2023; PMID 37172787。https://pubmed.ncbi.nlm.nih.gov/37172787/
-5. 臺灣考選部官方原卷／標準答案連結與私人結構化擷取檔身分：112（一）醫學（三）Q45（112020）；114（一）醫學（三）Q48（114020）；115（二）醫學（三）Q49（115070）。原卷 PDF 及更正表本輪無法重新逐頁開啟，答案僅為 archive 擷取值，**不能標記官方重新核實完成**。
+5. **臺灣考選部官方原卷與更正表已逐頁核對（2026-10-28）**，試題代號均為 1302：112（一）醫學（三）Q45 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q)／[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M)，最終 B（更正僅涉及 Q47）；114（一）醫學（三）Q48 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M)，最終 B（更正僅涉及 Q23、Q42）；115（二）醫學（三）Q49 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)，最終 A（更正僅涉及 Q1、Q8、Q10、Q36、Q38、Q40）。以上僅確認官方題幹/四選項/最終計分身分，不取代完整醫學論證、圖表版權或公開編輯 QA。
 
 **編輯狀態：PRIVATE DRAFT / MEDICAL + FIGURE + EXAM HOLD；非正式發布，非院內操作 SOP。**
