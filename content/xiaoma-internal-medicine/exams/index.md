@@ -4,7 +4,7 @@
 
 <!-- XIAOMA_EXAM_ARCHIVE -->
 
-**心音與結構性心臟病題庫（非主教材）：** 若要從頭建立時序與血流機轉，先讀[心音與結構病概念導論](../lessons/2026-10-27-heart-sounds-structural-exam.md)；若要依年度檢驗理解，再讀[原有 29 題逐選項題解](../lessons/2026-10-27-heart-sounds-cross-discipline-exams.md)和[新增 20 題不重複題解](heart-sounds-cross-specialty-expanded-111-115.md)。題庫不能代替完整疾病教材；部分附圖題仍須核對考選部原卷。
+**心音與結構性心臟病題庫（非主教材）：** 若要從頭建立時序與血流機轉，先讀[心音與結構性心臟病主教材](../lessons/2026-10-27-heart-sounds-structural-exam.md)；若要依年度檢驗理解，再讀[原有 29 題逐選項題解](../lessons/2026-10-27-heart-sounds-cross-discipline-exams.md)和[新增 20 題不重複題解](heart-sounds-cross-specialty-expanded-111-115.md)。題庫不能代替完整疾病教材；部分附圖題仍須核對考選部原卷。
 
 ## 跨年度怎麼讀？
 
