@@ -4414,7 +4414,7 @@
         "3bb1a78c75ef256791-1": {
           "role": "evidence_boundary",
           "reader_gain": "指出A到B基質與分析儀皆變，不能單獨估計體內變化。",
-          "nonredundancy_reason": "避免把非配對檢體當成受控實驗。",
+          "nonredundancy_reason": "若把A與B當成單一受控實驗，讀者會誤以為能由兩個K值直接估計病人體內鉀的變化。",
           "verdict": "keep",
           "excerpt_for_editor": "從 A 到 B，不只運送方式改變，連 plasma／whole blood 和分析儀也不同。因此不能把兩者差距全部看成病人體內 K 上升。",
           "line_for_editor": 36
