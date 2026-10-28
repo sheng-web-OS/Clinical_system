@@ -1171,6 +1171,33 @@
           "teaching_role": "原表讓讀者核對 C2 3:Harm、C3 2b、D 2b、E1／E2 不同再灌流術式的 COR/LOE，尤其 E2 N/A 與 No Benefit 的區分直接改變介入風險判斷。",
           "scope_limit": "Table 7 反映發布時的證據與分類，不能將 N/A 解讀為絕對禁忌、將 Class 3 No Benefit 等同 Harm，亦不能將後續 2026 導管試驗倒填到原指引。",
           "why_link_instead": "原始推薦表與細節註腳已逐欄比對；只使用來源頁的精確文字定位及官方網頁連結，讀者可開啟全文查核，公開站不複製原表像素。"
+        },
+        {
+          "locator": "Creager et al, 2026 AHA/ACC acute PE full guideline, Figure 1 Clinical Evaluation of Patients With Suspected Acute PE, original JACC article §3.1",
+          "source_token": "Figure 1",
+          "mode": "illustrated",
+          "anchor": "pe-suspected-diagnosis",
+          "caption_token": "Figure 1",
+          "teaching_role": "以實際分叉而非數值分類描繪 PERC、D-dimer、影像各自的檢前機率適用條件，並獨立標出急危處置與確診同步的例外。",
+          "scope_limit": "原創圖不是原始完整 diagnostic algorithm，不能取代全部 YEARS、PERC 前提、妊娠或抗凝禁忌；不呈現單一固定醫囑。"
+        },
+        {
+          "locator": "AHA/ACC official 2026 PE clinical categories Figure 2, C1 C2 C3 RV/biomarker, D1 D2 hypoperfusion and respiratory modifier R",
+          "source_token": "Figure 2",
+          "mode": "illustrated",
+          "anchor": "pe-category-domains",
+          "caption_token": "Figure 2",
+          "teaching_role": "把 A/B 的基線分流、C 的 RV 生理／biomarker、D/E 灌流與 R 呼吸負擔分成平行觀察面向，讓讀者明確看到每項 evidence 改變的是哪一種風險。",
+          "scope_limit": "官方圖的 A–E 視覺嚴重度不是每人必經的時間階段，D2 不由乳酸或單次血壓決定；原創結構不是官方圖像複製。"
+        },
+        {
+          "locator": "Creager et al 2026 AHA/ACC guideline, Figure 3 Initial Assessment and Management by AHA/ACC Acute PE Clinical Categories; Table 7 advanced therapies",
+          "source_token": "Figure 3",
+          "mode": "illustrated",
+          "anchor": "pe-treatment-decision",
+          "caption_token": "Figure 3",
+          "teaching_role": "讓讀者看見抗凝作為共同基礎、出院安全、RV 觀察與 D/E 失代償的不同處置問題，再以 E2 N/A／No Benefit 和 C2 Harm 顯示分類不等於一律介入。",
+          "scope_limit": "本圖不能代替 Figure 3 所有 COR class 及 Table 7 的逐術式條件，也不能從模態類別給個別病人設置 thrombolysis 或 ECMO 醫囑。"
         }
       ]
     }
