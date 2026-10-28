@@ -13,7 +13,7 @@ class UrineOutputIntervalInference(unittest.TestCase):
         m=MATRIX.read_text(encoding="utf-8")
         self.assertIn("尿量 8 小時總計",t)
         self.assertIn("連續至少 6 小時",t)
-        self.assertIn("不能僅由 8 小時總量證實連續 6 小時",s)
+        self.assertIn("8 小時總量不足以單獨證明連續 6 小時",s)
         self.assertIn("8 小時總量不足以單獨證明連續 6 小時",m)
 
 if __name__=="__main__": unittest.main()
