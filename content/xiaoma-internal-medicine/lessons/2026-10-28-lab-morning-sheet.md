@@ -74,7 +74,7 @@
 
 [密西根大學住院心衰竭利尿指引 Q18](https://www.ncbi.nlm.nih.gov/books/NBK589894/) 也明確解釋：持續有鬱血時，適度 SCr 上升不一定需要自動停止利尿；但顯著低血壓、血管內容量耗竭與其他 AKI 病因仍要辨認。這是**有臨床評估條件的敘事與建議**，不是看到一個 Cr 便由 AI 遠端判定「繼續打利尿劑」或「立即補 saline」。
 
-AKI 的診斷本身另有時間維度：[KDIGO 2012 AKI Chapter 2.1 Table 2](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf) 要求核對 **48 小時內 SCr ≥0.3 mg/dL 增加、7 天內 ≥1.5 倍基線，或連續至少 6 小時尿量 <0.5 mL/kg/h**。光有「尿量 8 小時總計」不能保證每一個 6 小時區間都符合門檻；光有一張「Cr 1.69」不能推得出 CKD、AKI stage 或確切病因。更不能把用於穩態的 eGFR 當成急性變化期間即時的腎臟清除能力。
+AKI 的診斷本身另有時間維度：請核對 [KDIGO 2012 原始 Table 2（AKI 分期，PDF p.22）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22) 的定義，並閱讀 [Figure 4（Stage-based management，PDF p.28）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=28) 如何將風險分層與腎毒性藥物、容量／灌流、Cr／尿量監測連起來；這張圖不是固定補液或透析處方。KDIGO 要求核對 **48 小時內 SCr ≥0.3 mg/dL 增加、7 天內 ≥1.5 倍基線，或連續至少 6 小時尿量 <0.5 mL/kg/h**。光有「尿量 8 小時總計」不能保證每一個 6 小時區間都符合門檻；光有一張「Cr 1.69」不能推得出 CKD、AKI stage 或確切病因。更不能把用於穩態的 eGFR 當成急性變化期間即時的腎臟清除能力。
 
 如果臨床在看完整的 Lab sheet，要分辨的是：
 
@@ -91,6 +91,8 @@ AKI 的診斷本身另有時間維度：[KDIGO 2012 AKI Chapter 2.1 Table 2](htt
 ## 破除過度推論｜把原始研究與個人決策分開
 
 **誤解一：高 K 檢體有溶血，表示患者一定不需要急救。** 錯。溶血增加假性高鉀可能，危險症狀、ECG、快速複查與個體高危條件仍需並行評估；正常 ECG 不是排除真性高鉀的檢查。原始 66 人研究不涵蓋高齡、CKD 和 RAAS 用藥患者。
+
+**急救風險與檢體確認必須並行**，而不是「懷疑假的就一律等」或「看到紅字就無差別給藥」。[UKKA 2026 原始 Figure 4（PDF p.75）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75) 將有危險時的心肌保護、鉀轉移、實際排鉀、K／血糖監測及防復發分開；[Table 22（PDF p.98）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98) 則提醒 insulin-glucose 後低血糖與反彈監測。原始流程有其適應症與證據強度，不代表每名 K 6.4、ECG 正常者都需要相同 IV calcium、insulin 或補糖量，更不能以本站文章直接替代醫囑。
 
 **誤解二：K 7.8 重抽後 3.6，就等於從未真高鉀。** 不成立。AML 病例的後段樣本有**降鉀介入後**的時序污染，必須回查原始 Table 1 的檢體別及採血方式，不能假裝有無治療的成對試驗。
 
