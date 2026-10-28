@@ -26,14 +26,15 @@
 - Time labels post-CABG are **after protamine reversal**, NOT while on pump. Avoid mixing CPB-on periods with post-operative arrival.
 - Refrain from saying chloride-related acidification is benign or excludes hypoperfusion. The cohort never tests a lactate/shock exclusion rule.
 - Separate clinical logic mechanism generation from EBM evidence ranking. No claim that normal AG or lactate has validated negative likelihood ratio for surgical tamponade/bleeding.
-- No original figure copy; any public schematic must be original and non-misleading. In a figure derived from group data, label means and sampling times rather than pretending individual serial observations.
+- No original figure copy. **已新增私有原創 SVG**：`figures/2026-10-29-cpb-acidbase-group-trends.svg`，重繪 Table 3 的 7 組 on-pump cohort means，獨立每列尺度、清楚標明 3 類採樣與非單一患者。**數字與 source table 已逐項人工對照；尚未做真實手機 screenshot QA**。公開前需驗證 SVG 是否可完整顯示且文字實際可讀。
 
 ## Editorial rejection tests before any publication
 
 - [ ] **Full source expansion**: original 1999, 2026 Guarnieri, 2009 trial tables/figures if used for new strong claims; when inaccessible stay abstract-only and restrict claims.
 - [ ] **Independent medical adversarial review**: source-specific denominators, physicochemical explanatory neutrality, sample granularity, rate of albumin effect, false inference from normal lactate/AG, and hypotension management.
 - [ ] **Independent EPQC paragraph packet** on exact Git blob and coverage; reviewer must be distinct from authoring context, not this audit.
-- [ ] **Visual**: meaningful original chart for cohort Na/Cl/SID/H+/PaCO2 (separate axes/units) and competing mechanisms; verify source numbers; show screenshots at 360, 375, 390, 1280px. No copyright original reprint.
+- [x] **Visual draft**: original cohort trend chart for Na/Cl/SID/HCO3/BE/H+/PaCO2 created and source numbers cross-checked, using category time and independent scales. No original publisher art reused.
+- [ ] **Visual release check**: actual 360/375/390/1280 browser rendering, text legibility, competing-mechanism diagram if necessary, and Figure Gate before public copy.
 - [ ] **Technical**: if moved to public content, update source/figure gate and site registry only after gate; run validation, build, exact-head CI, production readback after explicit authorization.
 - [ ] **Curriculum exam mapping**: search verified official 111–115 year Taiwan second-stage ABG/acid-base questions, link only true relevant items, don't force surgical CPB-specific material into exam rationale.
 
