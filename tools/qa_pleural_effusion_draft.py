@@ -69,12 +69,35 @@ def main():
                         page.add_script_tag(content=app_script)
                         if theme == "dark":
                             page.locator("#theme").click()
+                        # Wait on the actual CSS state, not a guessed sleep. Color
+                        # transitions can otherwise make a valid theme look broken.
+                        page.wait_for_function("""() => {
+                          const brand = document.querySelector(".reader-brand");
+                          return brand && getComputedStyle(brand).color ===
+                            getComputedStyle(document.body).color;
+                        }""", timeout=3000)
                         observed = page.evaluate("""() => {
                           const article = document.querySelector('article.article');
                           const svg = document.querySelector('#pleural-case-evidence svg');
+                          const brand = document.querySelector('.reader-brand');
+                          const foreground = getComputedStyle(brand).color;
+                          const background = getComputedStyle(document.body).backgroundColor;
+                          const luminance = color => {
+                            const rgb = (color.match(/[0-9.]+/g) || []).slice(0, 3).map(Number);
+                            if (rgb.length !== 3) throw new Error('Unparseable screenshot color');
+                            const linear = rgb.map(v => {
+                              const x = v / 255;
+                              return x <= 0.04045 ? x / 12.92 : ((x + .055) / 1.055) ** 2.4;
+                            });
+                            return .2126 * linear[0] + .7152 * linear[1] + .0722 * linear[2];
+                          };
+                          const lights = [luminance(foreground), luminance(background)].sort((a,b) => a-b);
+                          const contrast = (lights[1] + .05) / (lights[0] + .05);
                           return {
                             viewport: document.documentElement.clientWidth,
                             darkThemeApplied: document.body.classList.contains('dark'),
+                            brandForeground: foreground, brandBackground: background,
+                            brandContrast: contrast,
                             pageWidth: document.documentElement.scrollWidth,
                             title: document.querySelector('h1')?.innerText,
                             headingCount: document.querySelectorAll('h1').length,
@@ -98,6 +121,8 @@ def main():
                         required = ("56 歲", "Day 3", "Day 5", "未報告", "7.42", "Figure 2B", "獨立假想反事實")
                         if any(token not in text for token in required):
                             failures.append(f"{width}/{theme}: source chronology missing")
+                        if observed["brandContrast"] < 4.5:
+                            failures.append(f"{width}/{theme}: header brand contrast below 4.5")
                         if observed["darkThemeApplied"] != (theme == "dark"):
                             failures.append(f"{width}/{theme}: actual site theme not applied")
                         if observed["pageWidth"] > observed["viewport"] + 2:
