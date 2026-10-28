@@ -77,9 +77,25 @@ def main():
                     figure = page.locator(FIGURE)
                     if figure.count() != 1:
                         raise AssertionError("Exactly one patient-specific evidence figure required")
+                    # The reader-first rewrite intentionally replaced the old
+                    # second (decision-boundary) table with an actual two-arm
+                    # bedside counterfactual. Do not require a stale table
+                    # count or silently skip the new figure's clinical content.
                     rows = page.locator("article.article table")
-                    if rows.count() < 2:
-                        raise AssertionError("Expected numeric lab table and decision boundary table")
+                    if rows.count() < 1:
+                        raise AssertionError("Missing four-timepoint numeric lab table")
+                    numeric_table = rows.first.inner_text()
+                    if not all(cue in numeric_table for cue in
+                               ("Creatinine", "Mg", "10/28 07:15")):
+                        raise AssertionError("Numeric lab table lacks core timepoints/analytes")
+                    arms = figure.locator("section")
+                    if arms.count() != 2:
+                        raise AssertionError("Expected two distinct bedside decision arms")
+                    figure_text = figure.inner_text()
+                    if not all(cue in figure_text for cue in
+                               ("A｜09:00", "B｜", "112/70", "90/55",
+                                "殘餘鬱血", "立即升級")):
+                        raise AssertionError("Counterfactual figure lacks evidence-to-action contrast")
                     observed = page.evaluate("""() => ({
                       viewport: document.documentElement.clientWidth,
                       pageWidth: document.documentElement.scrollWidth,
