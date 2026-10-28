@@ -1008,24 +1008,6 @@
       "source_review": "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md",
       "items": [
         {
-          "locator": "KDIGO 2012 AKI official full guideline Table 2 (Staging of AKI), printed p.19, PDF page 22",
-          "source_token": "Staging of AKI",
-          "mode": "source_link",
-          "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22",
-          "why_link_instead": "KDIGO 原表包含肌酐倍數、48小時/7天與尿量持續時間等精確診斷/分期條件；本文以原表連結解釋測量界線，不重製原表，也不以 AI 合成患者數字證明任何 AKI 病因或治療處方。",
-          "teaching_role": "讓讀者將AKI診斷時序與病因推斷分開；本稿以原指引說明48小時肌酐、7天倍數及連續尿量門檻，不虛構不存在的真實心衰竭病例時序。",
-          "scope_limit": "Stage 1 是功能性分期，不表示確診特定腎小管病變、液體反應性或必須開始腎替代治療。"
-        },
-        {
-          "locator": "KDIGO 2012 AKI official full guideline Figure 4 (Stage-based management), printed p.25, PDF page 28",
-          "source_token": "Figure 4",
-          "mode": "source_link",
-          "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=28",
-          "why_link_instead": "原圖陰影有風險優先序意義，需連回正版原圖圖說核對；不複製出版社受保護原像素。",
-          "teaching_role": "讀者可辨認AKI分期與監測、灌流、避免腎毒性暴露等管理行動之間的關係，不把圖中優先度當成固定處方。",
-          "scope_limit": "陰影代表隨嚴重度提高的考量，不是每一分期都有相同補液、透析、住ICU等醫囑。"
-        },
-        {
           "locator": "UK Kidney Association July 2026 original Figure 4, five steps in treatment of hyperkalaemia, printed p.75 PDF page 75",
           "source_token": "Figure 4",
           "mode": "source_link",
@@ -1132,6 +1114,39 @@
           "mode": "illustrated",
           "anchor": "pneumothorax-decision-map",
           "caption_token": "BTS 2023"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-metabolic-acidosis-etiology.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/metabolic-acidosis-sources.md",
+      "items": [
+        {
+          "locator": "Al Barbandi et al, Front Pediatr 2021, PDF p2 Figure 1 (I/O timeline), p4 Figure 2 A–D (MRU), and p3 Table 1 (paired fluids)",
+          "source_token": "Figure 1",
+          "teaching_role": "原創三問圖拆解血中酸化、腸道排出物身分與腎尿路解剖三個必須用不同證據回答的臨床問題，避免事後確診替代當時差異診斷。",
+          "scope_limit": "並非將原 Figure 1 的每日數據或 Figure 2 的 MRU 重新繪製；也不代表所示三種檢驗的診斷準確性或檢查先後有群體驗證。",
+          "mode": "illustrated",
+          "anchor": "metabolic-acidosis-three-questions",
+          "caption_token": "Frontiers in Pediatrics 2021"
+        },
+        {
+          "locator": "Al Barbandi et al, Front Pediatr 2021, PDF p5 Figure 3: intestine CFTR/SLC26 and chloride/bicarbonate transport schematic",
+          "source_token": "Figure 3",
+          "teaching_role": "原創三段概念橋，從尿液移位到小腸黏膜接觸和可能的氯離子/碳酸氫根交換，再對應血中 NAGMA 表型；讓讀者從因果機轉連到病例。",
+          "scope_limit": "本圖為重新組織的生理假說而非原文圖像描摹或單一患者直接測得的離子轉運流率，不可作為 CFTR/SLC26 通量證明。",
+          "mode": "illustrated",
+          "anchor": "uroenteric-ion-exchange",
+          "caption_token": "Frontiers 2021"
+        },
+        {
+          "locator": "Al Barbandi et al, Front Pediatr 2021, original PDF p3 Table 1: paired bowel and bladder fluid, acidosis and normo-acidemia",
+          "source_token": "Table 1｜",
+          "teaching_role": "直接對讀原始血液 AG 及腸/尿出口液體組成，核對含鉀與不含鉀的 AG 以及源頭不同對檢驗解釋的限制。",
+          "scope_limit": "原表單位疑點與檢體時點保留；單病例不能由這些數字推導不同診斷測試的 LR 或定量腸道離子輸運。",
+          "mode": "source_link",
+          "url": "https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2021.687396/full",
+          "why_link_instead": "直接連到出版社原始 Table 1 供讀者逐數核對，避免複製第三方完整原表、影像或不清楚的出版授權；內文僅用必要數值回答病例問題。"
         }
       ]
     },

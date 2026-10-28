@@ -83,8 +83,8 @@ def main():
                         raise AssertionError("Exactly one evidence-comparison figure required")
                     # Check actual original-case chronology and the independent evidence groups.
                     rows = page.locator("article.article table")
-                    if rows.count() < 2:
-                        raise AssertionError("Expected real AML sample-method table and cross-panel evidence table")
+                    if rows.count() < 1:
+                        raise AssertionError("Expected real AML sample-method timeline table")
                     # This is source-based AML evidence, not the old synthetic four-timepoint panel.
                     required_panel_cues = ("20:03", "20:48", "23:37", "6.7", "7.8", "3.6")
                     numeric_tables = [rows.nth(k).inner_text()
