@@ -1009,7 +1009,7 @@
       "items": [
         {
           "locator": "KDIGO 2012 AKI official full guideline Table 2 (Staging of AKI), printed p.19, PDF page 22",
-          "source_token": "Table 2",
+          "source_token": "Staging of AKI",
           "mode": "source_link",
           "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22",
           "why_link_instead": "原表有分期與尿量持續時間的必要註解；本站保留正版原頁連結，主文僅計算合成病例而不重製原表。",
@@ -1045,7 +1045,7 @@
         },
         {
           "locator": "KDIGO 2012 AKI Table 2 p.19 and UKKA July 2026 Figure 4 p.75 compared with original synthetic case lab timeline",
-          "source_token": "KDIGO",
+          "source_token": "KDIGO 2012",
           "mode": "illustrated",
           "anchor": "lab-three-clocks",
           "caption_token": "KDIGO",
