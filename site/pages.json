@@ -3594,5 +3594,53 @@
     "section": "參考資料",
     "navigation": false,
     "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md",
+    "output": "xiaoma-20261029-cticu-abg-03-cpb-acidbase.html",
+    "title": "離開 CPB 後 HCO₃⁻ 降低：為什麼不能直接診斷 lactic acidosis？",
+    "subtitle": "從真實 CABG 群體數據與 Bartter 病例，分辨 chloride、SID、未測陰離子與通氣的競爭機轉",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "references": "xiaoma-cticu-abg-03-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-abg-03-sources.md",
+    "output": "xiaoma-cticu-abg-03-sources.html",
+    "title": "CPB 術後酸鹼變化｜原始研究與圖表來源",
+    "subtitle": "Chuah 2013 群體 Table 3、Protos 2024 真實病例、指南與授權查核",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md",
+    "output": "xiaoma-20261029-cticu-abg-04-alphastat-phstat.html",
+    "title": "低溫 CPB 的同一份血氣：alpha-stat 與 pH-stat 為什麼導向不同 CO₂ 管理？",
+    "subtitle": "從量測溫度與真正的氧合器 CO₂ 介入，理解腦循環與成人指南證據界線",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "references": "xiaoma-cticu-abg-04-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-abg-04-sources.md",
+    "output": "xiaoma-cticu-abg-04-sources.html",
+    "title": "低溫 CPB 血氣管理｜指南與原始研究查核",
+    "subtitle": "Patel、Murkin 成人 CABG RCT，2024 CPB Recommendation Table 52 與原圖授權",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]
