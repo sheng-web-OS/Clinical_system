@@ -56,7 +56,7 @@ Differential count（DC）分為 neutrophil、lymphocyte、monocyte、eosinophil
 | B | 1.2 | 90% | **1.08** | 中性球比率很高，ANC 卻較低；不能用 90% 當作安全的證據 |
 | C | 3.0 | 10% | **0.30** | 嚴重 neutropenia 可能改變發燒與抗感染的急迫分流 |
 
-粗估 ANC = WBC × neutrophil fraction；有些實驗室的 manual DC 應計入 bands，須確認報告所採的定義。ANC 是全身循環中嗜中性球數量的資訊，不能完整代表組織功能，也不能單獨診斷細菌感染。發燒伴 ANC 很低是不同於一般感染的高風險臨床情境，尤其化療或免疫低下者應依 febrile neutropenia 急症路徑評估，不能因病人此刻沒有低血壓就延遲。
+粗估 ANC = WBC × neutrophil fraction；有些實驗室的 manual DC 應計入 bands，須確認報告所採的定義。ANC 是全身循環中嗜中性球數量的資訊，不能完整代表組織功能，也不能單獨診斷細菌感染。發燒伴 ANC 很低是不同於一般感染的高風險臨床情境，尤其化療或免疫低下者應依感染急症風險與當院 febrile neutropenia 路徑評估，不能因病人此刻沒有低血壓就延遲。**對化療後發燒者，ANC 500–999/µL 不自動等於已符合典型 febrile neutropenia 的嚴重嗜中性球低下條件**：傳統指引以 ANC <500/µL，或預期 48 小時內降至 <500/µL，作為高風險定義；臨床上即使不完全符合定義，仍可能因感染症狀、治療種類與預期下降而需要緊急處置。這是「分類門檻」與「病人是否安全」不能互相取代的另一個例子。[7]
 
 Neutrophilia 可與感染相關，但發炎、抽菸、組織損傷、急性壓力或 glucocorticoids 都可能造成增高。類固醇引起的 neutrophilia 很大一部分涉及 demargination 和循環分布改變，不能把白血球在類固醇後上升直接當作抗生素失效。**WBC 趨勢必須與體溫、器官灌流、感染源、微生物結果及介入時間一起讀。**[3,5]
 
@@ -112,5 +112,7 @@ Hb 低、WBC 低、platelet 低形成 pancytopenia 的觀察型態，但不會�
 [5] *Normal and Abnormal Complete Blood Count With Differential*, StatPearls；與 *Leukocytosis*, StatPearls 2026 更新。https://www.ncbi.nlm.nih.gov/books/NBK604207/ ; https://www.ncbi.nlm.nih.gov/books/NBK560882/
 
 [6] *Practical Considerations in the Implementation of Peripheral Smear Review in the Clinical Laboratory*, 2026 開放全文；用於理解 analyzer flag、smear trigger 與人工判讀邊界。https://pmc.ncbi.nlm.nih.gov/articles/PMC13555154/
+
+[7] IDSA, *Clinical Practice Guideline for the Use of Antimicrobial Agents in Neutropenic Patients with Cancer*, 2010 update / published 2011；及 *2024 Consensus Guidelines for the Management of Neutropenic Fever in Patients with Cancer*, 2025 publication。採用 ANC <500/µL 或預期 48 h 內跌到 <500/µL 的核心定義，並保留臨床判斷對定義之外危險病人的優先性。https://academic.oup.com/cid/article/52/4/e56/382256 ; https://onlinelibrary.wiley.com/doi/full/10.1111/imj.70237
 
 本篇含不同身份的真實病例與自編數學練習，皆已就地標示；正式發布前須獨立核查原始圖、臨床安全、血液學高風險情境、國考題目，以及逐段教學價值。**本稿仍為 Draft / HOLD，不能把本輪 AI 同一脈絡自查稱為獨立審查。**
