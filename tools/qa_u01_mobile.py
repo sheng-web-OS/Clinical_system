@@ -40,14 +40,21 @@ def verify(page, name, width):
     if dom["mainText"] < 350:
         issues.append("reader text unexpectedly empty")
     if name == LESSON:
-        if dom["mainText"] < 7000 or dom["headings"] < 6:
-            issues.append("full U01 clinical narrative not rendered")
-        if dom["tables"] < 2:
-            issues.append("risk/first-dose decision tables missing")
-        if "合成病例" not in page.locator("article").inner_text():
-            issues.append("synthetic-case disclosure missing")
-        if "NOT VERIFIED" not in page.locator("article").inner_text():
-            issues.append("order-ready dose boundary missing")
+        if dom["mainText"] < 4000 or dom["headings"] < 5:
+            issues.append("evidence-first U01 clinical narrative not fully rendered")
+        if dom["tables"] < 1:
+            issues.append("observation-versus-inference evidence table missing")
+        text = page.locator("article").inner_text()
+        if not all(cue in text for cue in ("28 歲女性", "81 歲日本女性", "第 3 天", "PCN")):
+            issues.append("authentic case identity / timing or source-control inference missing")
+        if "病例為人工合成" in text:
+            issues.append("obsolete synthetic-case narrative appears in evidence-first U01")
+        if not all(cue in text for cue in ("EMR", "不能", "當院")):
+            issues.append("clinical decision / non-prescription boundary missing")
+        if page.locator('a[href*="mdpi.com/2079-6382/10/5/533"]').count() < 1:
+            issues.append("original ESBL/AST case link missing")
+        if page.locator('a[href*="PMC8633641"]').count() < 1:
+            issues.append("original obstructed ESBL case link missing")
         if page.locator('a[href*="' + SOURCES + '"]').count() < 1:
             issues.append("lesson has no local source-review link")
         if page.locator('a[href*="' + EXAMS + '"]').count() < 1:

@@ -1,29 +1,42 @@
-# 泌尿道敗血症、舊 ESBL 與第一劑：來源與適用界線
+# 泌尿道敗血症與 ESBL：病例原文、研究層級及適用界線
 
-本頁列出《半夜遇到疑似泌尿道敗血症，舊培養有 ESBL：究竟該怎麼開第一劑？》所使用的權威指引、原始醫學證據及應用邊界。原案例是人工設計的教學情境，所有病人數值／培養是假設，不是個案報告、真實病人或臺灣醫院統計。
+本來源頁對應[〈半夜疑似泌尿道敗血症，舊培養有 ESBL：從真實病例理解第一劑〉](lessons/2026-10-28-urosepsis-esbl-first-dose.md)。2026-10-28 版本改用可追溯病例代替自行設計患者的血壓、肌酸酐、藥敏與醫囑。每項病例數據必須回到**其本人的原文**，不跨病例拼裝。
 
-## 感染嚴重度、抗菌藥與 source control
+## 原始真實病例一：ESBL 尿培養與 antibiotic mismatch
 
-**Surviving Sepsis Campaign（SSC）2026**｜[SCCM 官方指南](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)。對照：Antibiotic initiation、Blood culture、Source control、Fluid resuscitation、Vasopressor choice、Mean arterial pressure targets、Beta-lactam antibiotics。辨認高危病人要及時治療，但不能以「時限」替代感染機率／器官支持的床邊判斷。一般 septic shock MAP 初始目標約 65 mmHg，65 歲以上另有條件性 60–65 mmHg 選項；它們是治療目標，不是 sepsis 診斷截點。
+[Community-Acquired, Extended-Spectrum β-Lactamase-Producing and Extensively Drug-Resistant *E. coli* in a 28-Year-Old Pyelonephritis Patient Lacking Risk Factors. *Antibiotics*. 2021;10(5):533. 原始全文／Table 1](https://www.mdpi.com/2079-6382/10/5/533)。
 
-**EAU Urolithiasis**｜[Infected obstructed kidney：Guidelines §3.4.2](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)。對阻塞結石合併 sepsis 的病人，緊急解除阻塞（如 ureteral stent 或 PCN）與抗菌治療並行。本篇僅有「右側 hydronephrosis」，尚未證實是 stone；應由泌尿科與影像查明。
+**可核實**：28 歲女性、初評 BP 83/44、HR 117、初始 ceftriaxone、住院第 3 天尿培 ESBL *E. coli* 與新 AST 後改 meropenem、第 4 天好轉、之後出院 IV 療法再改 ertapenem、約 10 天 carbapenem；原文 MIC：ceftriaxone >64 R、meropenem <0.25 S、TMP-SMX >320 R、pip-tazo 64 I。
 
-## cUTI 與 ESBL 的來源
+**不能宣稱**：第 0 天已知兩個月前尿培 ESBL（原文未報告）；更不能宣稱病人有本稿虛構的腎功能、過敏、體重或特殊處方要求。原文第 3 天 AST 才是後驗資訊。個案不是比較性治療試驗；好轉與換藥的時間關聯不能獨立證明因果。
 
-**IDSA 2025 Complicated UTI**｜[全文](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)；[Empiric selection Figure 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf)；[Empiric options Table 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf)；[IV-to-oral Figure 1.2](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf)；[Duration Figure 1.3](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf)。讀圖重點：severity→prior resistance→contraindications→relevant local antibiogram；臨床改善且適合口服才能轉換；cUTI 合併 Gram-negative bacteremia 的有效治療 7 天相對 14 天屬條件性建議，須核對被排除的 CKD、重症、阻塞、膿瘍與攝護腺炎等條件。
+## 原始真實病例二：阻塞、休克與減壓
 
-**IDSA 2026 AMR Gram-negative Guidance（2026-07-30）**｜[全文：ESBL Section and Q1.2–1.5](https://www.idsociety.org/practice-guideline/amr-guidance/)；[Table 1 藥物用量原表](https://www.idsociety.org/globalassets/idsa/practice-guidelines/amr-guidance/5.0/table-1.pdf)。重點：ESBL cUTI 的 preferred drug 在有當次 AST 時與未知菌的 empiric decision 不同；piperacillin–tazobactam 是特定 **non-critically ill / no concomitant bacteremia** ESBL cUTI alternative，不應套用至此例危急感染或菌血症；MERINO 等 bloodstream trial 支持對侵襲性 ESBL-E 感染更謹慎。**Table 1 假定正常腎、肝功能**，不得把數字直接套入本文疑似急性腎功能惡化的個案。此美國指引亦不能代替臺灣單一院所的最新 antibiogram、formulary、限制用藥規則與腎劑量 SOP。
+[Arai T et al. Polymyxin B and low-dose hydrocortisone treatment in a patient with uroseptic shock in a rural health unit. *Oxford Medical Case Reports*. 2021;2021(11):omab109. DOI 10.1093/omcr/omab109](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)；[PubMed PMID 34858624](https://pubmed.ncbi.nlm.nih.gov/34858624/)。
 
-**IDSA Asymptomatic Bacteriuria 2019**｜[官方指南](https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/)。無症狀且沒有例外時，陽性尿培與 pyuria 不等於需要 ESBL 抗菌藥；懷孕及特定會造成黏膜創傷的泌尿道操作是不同適用情境。
+**可核實**：81 歲女性、BP 68/36、Cr 2.7、lactate 3.3、左側 UPJ 阻塞性病變、初期循環支持／抗菌治療、嚴重休克下處理後完成 PCN、血尿培第 4 天 ESBL *E. coli*，日後病理泌尿上皮癌。原文 Figure 1 是實際 CT／腎造瘻圖像；本站只連向作者原始頁面，**不複製病人影像**。
 
-## AKI 的定義，與一個必須保留的時間界線
+**實際經驗性用藥的先驗資料（不可漏讀）**：Arai 原文印刷 **p.434–435（Case Report 在 p.434；Discussion 的 cefcapene 推論在 p.435）** 記錄：先前 UTI 使用過 **cefcapene pivoxil**（第三代 cephalosporin），作者因此推測抗藥風險，最初即選擇 **carbapenem**，**Day 4** 的血與尿培養才證實 ESBL *E. coli*，因此繼續原方案。這是真實的 first-dose rationale，但原文**沒有報告一份在本次入院前已知 ESBL 的舊培養 AST**；不要把抗生素暴露當成既往 ESBL AST，也不要從原作者選藥推出一般處方優越性。[原作者全文 PDF（Case Report, Discussion）](https://academic.oup.com/omcr/article-pdf/2021/11-12/omab109/41940667/omab109.pdf)。
 
-**KDIGO 2012 AKI**｜[正式原版 §2.1](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)。確診必須考慮 SCr 在 48 小時內升高 ≥0.3 mg/dL、於 7 天內已知／推定上升 ≥1.5 倍，或符合持續性寡尿條件。本文「兩週前 1.3，現在 2.0 mg/dL」本身不足以宣稱完成 KDIGO AKI 診斷或分期；仍須急查最近數日 SCr 與尿量。KDIGO 2026 AKI/AKD 文件現可取得的版本標為 **public-review draft**，不可把未正式定稿版本稱為現行正式指引。
+**不能宣稱**：有證實 ureteral stone（其病因另有腫瘤）；不能由單次 Cr 推定 KDIGO stage，也不能把該院個案採用的 PMX-DHP／hydrocortisone 視為標準治療、普遍受益或推薦用量。原文不能證實藥物與引流每一項對最終結果的個別因果貢獻。
 
-## 官方國考題
+## 原始比較性證據：不是每種「廣譜」都可互換
 
-**考選部 111 年第二次醫師第二階段醫學（三）第 60 題**：典型 ESBL 酵素可以水解 cefotaxime 與 aztreonam，而不是 ertapenem（但不等於所有臨床分離株 carbapenem-S）。[官方試題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=Q)、[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=S)、[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=M)；官方答案 A，該題未更正。
+[Harris PNA et al. MERINO trial. *JAMA*. 2018;320:984–994. DOI 10.1001/jama.2018.12163](https://pmc.ncbi.nlm.nih.gov/articles/PMC6143100/)：ceftriaxone-resistant *E. coli*／*Klebsiella* bloodstream infection 的隨機非劣性研究，主要分析 30 天死亡率 pip-tazo 23/187（12.3%）、meropenem 7/191（3.7%），pip-tazo **未達非劣性**。這是侵襲性血流感染的比較性研究，**不是「任何無菌血症、輕症下泌尿道感染都要 meropenem」的證據**。具體推論仍須回到 2026 IDSA 的適用語義及 MIC 測試限制。
 
-## 處方使用範圍
+## 當前指南：以病例理解，不以病例代替
 
-這是可供進一步醫學審查的**教育材料**，不是可直接下單的院內 protocol：沒有實際病人體重、過敏反應、當次 AST、CrCl／尿量動態、RRT 狀態、處方時點、仿單或當院 infusion/renal dosing/ASP 核准程序。收費參考如 Sanford Guide／Pocket Medicine 的確切原表未在本版本逐頁核對，本文沒有假稱已由它們核實劑量。真正的病患治療，需與上級醫師和藥師共同依現場資料立即完成決策，不能從本教材複製固定 mg 或給藥間隔。
+- [IDSA 2025 complicated UTI 全文](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)、[原 Figure 1.1 四層 empiric selection](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf)、[原 Table 1.1 候選類別與註腳](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf)、[原 Figure 1.2 IV-to-oral](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf)、[原 Figure 1.3 duration](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf)。
+- [IDSA 2026 AMR Guidance ESBL](https://www.idsociety.org/practice-guideline/amr-guidance/)：其 General Management Suggestions 明確將具體經驗性治療建議列為範圍之外；Q1.2 是已知病原及 AST 後的 ESBL-E cUTI 治療選擇，與 IDSA 2025 cUTI Figure 1.1 的經驗性四步法分開；Q1.4 對 pip-tazo 作特定限定。其 [Table 1 劑量原表](https://www.idsociety.org/globalassets/idsa/practice-guidelines/amr-guidance/5.0/table-1.pdf) 預設**正常腎肝功能**，不得照搬至 AKI／RRT 病人。
+- [SSC 2026](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)：感染嚴重度、抗菌藥時效、培養、復甦及 source control。
+- [EAU Urolithiasis](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)：感染性阻塞**結石**緊急減壓；勿把任何 hydronephrosis 都當作結石。
+- [KDIGO 2012 AKI](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)：須查 48h/7d Cr 或連續至少 6h 尿量，不能自行補臨床數據。
+- [IDSA 2019 Asymptomatic Bacteriuria](https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/)：菌尿、白血球尿與實際感染需分離判斷。
+
+## 官方國考題（與正文雙向對應）
+
+考選部 **111 年第二次・醫學（三）第 60 題**：[官方試題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=Q)、[標準答案 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=S)、[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=M)。典型 ESBL 可水解 cefotaxime、aztreonam，非典型直接水解 ertapenem；官方答案 A，該題未更正。**國考機轉不等同臨床抗菌藥 susceptibility。**
+
+## 永久限制
+
+這些病例只代表其作者原始紀錄，來源不包含臺灣特定醫院當年的 antibiogram、個別病患的未報告用藥過敏、體重、CrCl、RRT 或院內核藥程序。Sanford Guide 付費完整處方表沒有取得經可追溯的逐項核對；私人 Pocket Medicine 的文字檢索不等於其所有圖像與註腳完整驗證。本文不提供任何可直接下單的抗菌藥劑量、間隔或輸注參數，也不冒充已由臨床醫師／藥師簽核。嚴重感染須由真正照護團隊即時處理，不能拿案例回顧替代床邊醫療。
