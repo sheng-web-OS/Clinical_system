@@ -90,7 +90,7 @@ def main():
                         ({scrollWidth:t.scrollWidth,clientWidth:t.clientWidth})),
                       footerSource: [...document.querySelectorAll('footer a')].some(a =>
                         a.innerText.includes('來源')),
-                      missingZhGlyph: document.fonts.check('16px "Noto Sans TC"', '臨床抽血腎臟鉀')
+                      fontCheckPassed: document.fonts.check('16px "Noto Sans TC"', '臨床抽血腎臟鉀')
                     })""")
                     observed["width"] = width
                     # Horizontal scrolling *inside* long lab tables is acceptable;
@@ -105,9 +105,17 @@ def main():
                         failures.append(f"{width}px missing full case or figure evidence")
                     if not observed["footerSource"]:
                         failures.append(f"{width}px missing source navigation")
-                    figure.screenshot(path=str(args.output / f"evidence-figure-{width}.png"))
+                    if not observed["fontCheckPassed"]:
+                        failures.append(f"{width}px browser font readiness check failed")
+                    # Capture true top-of-article BEFORE the figure locator scrolls.
                     if width == 375:
                         page.screenshot(path=str(args.output / "reading-top-375.png"))
+                    figure.screenshot(path=str(args.output / f"evidence-figure-{width}.png"))
+                    # A viewport capture is independently useful: Chromium can
+                    # include off-viewport fixed skip links in element screenshots.
+                    # Do not misdiagnose this as an actual in-viewport overlap.
+                    if width == 375:
+                        page.screenshot(path=str(args.output / "evidence-in-viewport-375.png"))
                     findings.append(observed)
                 finally:
                     page.close()
