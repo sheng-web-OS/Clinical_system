@@ -56,7 +56,7 @@ pH-stat 的生理效應與其風險，從 CO₂ 造成的腦血管擴張開始�
 
 如果患者換成 cyanotic infant 或接受先天性心臟病手術的嬰幼兒，腦血管反應、成熟度與術式完全不同。一些小兒研究與後續系統性整理討論 pH-stat 可能使腦部冷卻較快且較均勻。但**這不能反過來證明成人 DHCA 都應採 pH-stat**。年齡、心臟解剖與 perfusion strategy 是會改變 EBM 適用性的條件，而不是例外註腳。
 
-2025 年 Chatzopoulou 等人的系統性回顧納入 7 項研究，涵蓋成人與小兒，指出兒童中 pH-stat 對某些腦灌流與冷卻生理終點可能有優勢，臨床神經結果仍受研究異質性限制。這份回顧不能直接替每一類成人手術定出單一策略；原始研究設計與術式分層仍必須保留。
+這個議題尤其需要對文獻的「研究對象」保持敏感。Abdul Aziz 與 Meduoye 在 2010 年的最佳證據綜述整理了低溫停循環的既有研究，指出成人與小兒研究呈現不同方向的結果；**它是既有研究的評述，不是又一項新的隨機試驗**。近年的彙整若將綜述誤當 RCT，或將心跳停止後的治療性低溫研究誤歸為手術低溫停循環，就會錯估直接證據。這也是為什麼本文對成人 CABG 的結論仍以對題 RCT 與成人 CPB 指南為主；在主動脈弓與小兒情境，必須重新確認實際術式、降溫階段與臨床結局，不能用混合研究中的概括結論代替。
 
 ## 六、真正值班時，看到「pH 7.30」要先問什麼？
 
@@ -92,7 +92,7 @@ Patel 等人隨機比較的不是「同一份報告誰讀得比較準」，而�
 2. **Patel RL, et al.** Alpha-stat acid-base regulation during cardiopulmonary bypass improves neuropsychologic outcome in patients undergoing CABG. *J Thorac Cardiovasc Surg.* 1996;111:1267–1279. 70 人 RCT，六週 7/35 vs 17/35。[PubMed 摘要](https://pubmed.ncbi.nlm.nih.gov/8642829/)。
 3. **Murkin JM, et al.** A randomized study of the influence of perfusion technique and pH management strategy in 316 patients undergoing CABG surgery. II. Neurologic and cognitive outcomes. *J Thorac Cardiovasc Surg.* 1995;110:349–362. 2×2 RCT；超過 90 分鐘 CPB 的認知結果 27% vs 44%。[PubMed 摘要](https://pubmed.ncbi.nlm.nih.gov/7637352/)。
 4. **Goldstein C, Richter E.** pH Stat vs Alpha Stat. OpenAnesthesia，2026-08-31 更新。用於量測溫度、CO₂ 與 histidine imidazole 的生理說明，不取代 RCT／指南。[專題全文](https://www.openanesthesia.org/keywords/ph-stat-vs-alpha-stat/)。
-5. **Chatzopoulou G, et al.** Comparison of Clinical Outcomes Between Alpha-Stat and pH-Stat Strategies During Hypothermic Circulatory Arrest: A Systematic Review. 2025. 成人與兒童混合、七篇研究，應按族群分層解讀。[PubMed 摘要](https://pubmed.ncbi.nlm.nih.gov/40755621/)。
+5. **Abdul Aziz KA, Meduoye A.** *Is pH-stat or alpha-stat the best technique to follow in patients undergoing deep hypothermic circulatory arrest?* *Interact Cardiovasc Thorac Surg.* 2010;10:271–282. **最佳證據綜述，非 RCT；僅用於檢視成人與小兒／不同術式的適用性問題，不當作新的療效試驗。** [PubMed](https://pubmed.ncbi.nlm.nih.gov/19914925/)。
 6. **Hydrogen ion (pH) and gas behavior during deep hypothermic cardiopulmonary bypass: Physiology and clinical implications.** 2026. 近期生理回顧，作為溫度依賴性與臨床爭議的補充，不當作新療效 RCT。[PubMed 摘要](https://pubmed.ncbi.nlm.nih.gov/42332422/)。
 
 前一篇處理 CPB prime、chloride、SID、albumin 與 PaCO₂ 疊加的代謝性酸鹼機轉；這一篇專注**低溫時血氣測量基準與 CO₂ 管理策略的區別**，兩者互補但不可互相取代。
