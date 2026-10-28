@@ -100,12 +100,10 @@ BUN 反映血中尿素氮；它受腎臟排泄、尿素生成、蛋白質攝取�
 
 ## 國考真題定位：同樣的數字，考的是哪個判斷？
 
-目前已直接目視核對以下兩題的**官方考選部原始試題 PDF 與標準答案 PDF**；115 年第二次另核對官方更正答案表。113 年第一次的更正表連結本次未能讀取，因此仍須查核是否另有影響該題的正式更正。以下以已核實的題幹、選項、標準答案搭配本篇病理生理說明，不把這次 QA 擴張成對整份考卷的逐題確認。
+這兩道考選部原題分別考驗尿液沉渣的證據權重，以及 AKI 治療後為何必須連續追蹤 creatinine 與尿量。以下附原卷連結與答案來源；**113 年第一次 Q29 僅列已確認的原公布標準答案，若有正式更正，應以考選部最終公告為準**。
 
-- **113 年第一次醫師二階，醫學（三）Q29**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)。比較 FeNa <1%、尿滲透壓 >500、BUN/Cr >20 與尿沉渣 granular casts；官方**標準答案為 D**（已目視核對原始答案表第 29 題）；本次尚未核實該年度更正答案表。推理焦點不在「哪個數字跟 ATN 相關」的背誦，而是前三者受水鈉調控和灌流影響，顆粒圓柱體則能提供較直接的腎小管受累線索。**但 granular casts 也不是腎切片，不能憑單項沉渣永久確診所有 intrinsic AKI。**
-- **115 年第二次醫師二階，醫學（三）Q28**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)。問治療反應追蹤；官方**標準與更正答案皆為 A**（已目視核對試題與兩種答案表；連續 SCr 與尿量），可對照本文「不同時間尺度的動態功能訊號」。不因此推論所有病人每天都該接受腹部超音波或反覆培養。
-
-原始試題原圖及上述答案已核對。113 年第一次更正答案表目前無法開啟，故 Q29 仍保留最終更正版本待證；115 年第二次 Q28 可確認未變更答案。這項 QA 不代表整篇醫學教材已通過獨立審查。
+- **113 年第一次醫師二階，醫學（三）Q29**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)。比較 FeNa <1%、尿滲透壓 >500、BUN/Cr >20 與尿沉渣 granular casts；考選部原公布的**標準答案為 D**；如有後續更正，以官方最終公告為準。推理焦點不在「哪個數字跟 ATN 相關」的背誦，而是前三者受水鈉調控和灌流影響，顆粒圓柱體則能提供較直接的腎小管受累線索。**但 granular casts 也不是腎切片，不能憑單項沉渣永久確診所有 intrinsic AKI。**
+- **115 年第二次醫師二階，醫學（三）Q28**：[官方原題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)。問治療反應追蹤；官方**標準與更正答案皆為 A**（連續 SCr 與尿量），可對照本文「不同時間尺度的動態功能訊號」。不因此推論所有病人每天都該接受腹部超音波或反覆培養。
 
 ## 參考來源與邊界
 
@@ -119,7 +117,7 @@ BUN 反映血中尿素氮；它受腎臟排泄、尿素生成、蛋白質攝取�
 
 [5] KDIGO 官網 2026 AKI/AKD guideline status；public review draft，非臨床生效準則：https://kdigo.org/guidelines/acute-kidney-injury/
 
-[6] NICE NG148；尿試紙與腎炎分流已核對，尿沉渣形態學細節在正式發布前另查專業腎臟顯微鏡圖譜，不在此稿冒稱已核對原始照片。
+[6] NICE NG148；尿試紙異常的評估與腎炎分流可參照此指引；對 granular casts、RBC casts 等形態學判讀，仍應參照實際尿沉渣影像、檢驗室人員與臨床病程，不能只憑文字確診。
 
 [7] *Fractional Excretion of Sodium and Urea are Useful Tools in the Evaluation of AKI: PRO*, Kidney360 2023（可見正文並明列適用時限與 confounders）：https://journals.lww.com/kidney360/Fulltext/2023/06000/Fractional_Excretion_of_Sodium_and_Urea_are_Useful.5.aspx
 
@@ -127,4 +125,4 @@ BUN 反映血中尿素氮；它受腎臟排泄、尿素生成、蛋白質攝取�
 
 [9] *Assessing the utility of fractional excretion of urea in hospitalised patients*, BMJ Open 2026 systematic review，全文 HTML 與摘要：https://bmjopen.bmj.com/content/16/1/e100875
 
-本文數值與不同病例為原創模擬，不屬於任何真實病人；可見指南文字已核對，但完整原書圖、尿沉渣典型影像、院內藥物調整表與正式國考原圖另行審查，稿件仍為 Draft/HOLD，不代表已完成獨立臨床審閱。
+本文的三組臨床數值均為**自編情境而非真實患者**。所有 AKI 處置都需結合血流動力、檢體可信度與尿液資訊；原始圖表、藥物劑量及當院影像／採檢流程應以對應正式來源為準。
