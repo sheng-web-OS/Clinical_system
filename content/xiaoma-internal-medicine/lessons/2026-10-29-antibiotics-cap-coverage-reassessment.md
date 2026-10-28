@@ -2,7 +2,7 @@
 
 一名 69 歲男性因為持續十天的發燒和呼吸困難來到急診。胸部 X 光有雙側多處浸潤，血氧只有 91%。醫師還不知道是哪種病原造成肺炎，卻不能等所有培養和抗原報告回來才開始治療，因此先給予 ceftriaxone 與 azithromycin。這套組合原本就包含能對抗 Legionella 的藥物。
 
-然而，住院後他仍然發燒，鼻導管氧氣也減不下來。團隊進一步安排胸部 CT，將抗菌藥改為 cefepime；直到第 4 天，積水暴露史與 Legionella 尿液抗原陽性的結果才一起出現。之後改用 levofloxacin，病況逐漸恢復。<a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days">這段病程出自 Spretz 等人的 2024 年病例報告</a>。
+然而，住院後他仍然發燒，鼻導管氧氣也減不下來。團隊進一步安排胸部 CT，將抗菌藥改為 cefepime；直到第 4 天，積水暴露史與 Legionella 尿液抗原陽性的結果才一起出現。之後改用 levofloxacin，病況逐漸恢復。[Spretz 等人的 2024 年病例報告](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
 
 這個病例難在：**「藥物有涵蓋病原」不等於「病人此刻必定退燒」，而「換藥後改善」也不等於「原來的藥已被證明無效」。** 要知道何時應改藥，得先重建當時的病情，再問哪些可能的機轉能解釋持續缺氧，以及新取得的資料究竟排除了什麼、沒有排除什麼。
 
@@ -20,7 +20,7 @@
 
 <figure class="diuretic-figure" id="u02-original-admission-cxr">
 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2"><img src="https://assets.cureus.com/uploads/figure/file/999808/article_river_58b323c0011911ef9a0fb3882f0846ad-Chest-Xray-1-.png" alt="原病例入院胸部 X 光：右肺多處斑片狀浸潤，左肺另有較少量浸潤，不能從影像直接判定 Legionella。" loading="lazy" style="display:block;max-width:100%;height:auto;margin:0 auto;"></a>
-<figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，**不是**直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；依 CC BY 4.0 授權使用，原作者與來源已標明。後續 CT 原圖見 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=3">Figure 2／PDF 第 3 頁</a>。</figcaption>
+<figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，**不是**直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；依 CC BY 4.0 授權使用，原作者與來源已標明。</figcaption>
 </figure>
 
 ### 二、第一劑的理由：還沒辨認微生物，先處理最重要的治療缺口
@@ -103,7 +103,7 @@ Jasper 等人在 2021 年發表的[系統性回顧與統合分析](https://pubme
 
 2025 ATS 更新對部分**已達臨床穩定的非重症 CAP**提出短於五天、但至少三天的條件性療程建議；對 severe CAP 建議至少五天。這不是只用「退燒 48 小時」計算的計時器：呼吸與循環穩定、進食與意識、病原類別、菌血症、膿胸或其他未控制病灶，都會改變能否使用短療程。**Legionella 等特殊病原並不能不分病程直接套入最短療程**。[ATS 更新：療程建議及例外條件](https://academic.oup.com/ajrccm/article/212/1/24/8435770)
 
-這名病人最後完成約十天 levofloxacin 總療程，說明病例團隊如何處置，而不是所有 CAP 的固定療程。下一名患者即使使用相同藥物，若仍需氧氣、合併胸膜腔感染或無法吸收口服藥，治療終點就要重新建立，而不能複製這名患者的日數。
+這名病人出院時被安排以 levofloxacin 完成約十天總療程，說明病例團隊的治療計畫，而不是所有 CAP 的固定療程；報告並未提供在家完成全部劑量的逐次紀錄。下一名患者即使使用相同藥物，若仍需氧氣、合併胸膜腔感染或無法吸收口服藥，治療終點就要重新建立，而不能複製這名患者的日數。
 
 ## 回到這名患者｜把三個時點放回同一條判斷路徑
 
