@@ -48,6 +48,14 @@
 
 已查看以上指引的相關條文與頁面，但**未完整審閱 180 頁全部 Appendix、每一張 algorithm 或特定醫院 formulary**；不可宣稱全套圖表完整驗收。對任何實際用藥仍須回原頁與當地流程。
 
+## 3A. 低鎂與心律：為何新心電證據會改變處置？
+
+[NHS Specialist Pharmacy Service, *Treating acute hypomagnesaemia in adults* (2024, 現行臨床用藥安全指引)](https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/)
+
+[ESC ACVC/EHRA/HFA 2025 consensus, *Ventricular arrhythmias in acute heart failure*, Table 4 / reversible causes](https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.3645)
+
+主文額外設計 **08:40 telemetry 單發 PVCs 變多、Mg 1.5 mg/dL、09:00 循環仍穩定** 的合成觀察，目的是讓另一個原本只是紅字的檢驗值真正改變監測／可逆因素評估。Loop diuretic 為低鎂可能的藥因；低鎂可增加心律風險，但**不等於此病人的 PVCs 已被診斷由低鎂造成**。NHS SPS 提醒因 AKI、嚴重 CKD 或透析而補鎂者應先尋求適當專業評估，補充路徑及給藥量不能從單一 Mg 數字照抄；嚴重心律異常時必須先處理臨床急症。ESC 共識支持在急性心衰竭心律不整中找出並修正可逆因素，但沒有證實合成病例 PVC 的單一病因。這不是對 Mg 1.5 和 PVC 之間因果的實證研究，也不是台灣院內補鎂 order set。
+
 ## 4. Hb、輸血與族群差異
 
 [Carson JL et al. Red Blood Cell Transfusion: 2023 AABB International Guidelines. *JAMA*. 2023.](https://pubmed.ncbi.nlm.nih.gov/37824153/)
@@ -64,6 +72,7 @@
 
 ## 6. 圖表的身分
 
-[主文圖 1](lessons/2026-10-28-lab-morning-sheet.md#lab-three-clocks) 是本站原創的**合成病例證據比較圖**：以 06:00 溶血 K 6.3 → 07:15 無溶血 K 4.9、10/27 Cr 1.16 → 10/28 重抽 Cr 1.69，以及 240 mL／8 h 尿量紀錄待確認，呈現「病人安全、量測可信度、腎臟病程」三條**並行**決策線（圖面以分鐘／小時／天作為讀者辨識時序的輔助），而不是一條先後通關流程。箭頭只表示**採檢時間**的比較，**不是**治療造成 K 下降、AKI 病因已確定或病人實際尿量可靠的證據。此圖不是 KDIGO AKI staging Table、UKKA hyperkalaemia algorithm、AJKD 原始 Figure 或 validated clinical rule；不能取代原指引的臨床條件、原圖註腳及院內處置規範。
+[主文圖 1](lessons/2026-10-28-lab-morning-sheet.md#lab-three-clocks) 是本站原創的**合成病例「同一張 Lab、兩種灌流證據」反事實比較圖**。它固定 06:00 溶血 K 6.3 → 07:15 無溶血 K 4.9、10/27 Cr 1.16 → 10/28 重抽 Cr 1.69、I/O 負 1.4 L，以及 240 mL／8 h（平均約 0.4 mL/kg/h、採檢以外的尿量收集可靠性**待確認**），比較 A：09:00 BP 112/70、四肢溫暖、JVP 高，與 B：同樣 Lab 但 BP 90/55、四肢冰冷且仍鬱血的**反事實**。病人危險分流、採檢可信度、AKI 原因仍須**並行**評估，但新增的灌流資料會改變「沿用去鬱血評估」與「立即升級休克評估」的急迫性。
 
-若要查核臨床 cutoff、ECG 分支或尿量分級，應返回各指引原始圖表與其 caption／footnotes。
+這不是 KDIGO 2012 AKI staging Table／Figure 4、UKKA hyperkalaemia Figure 4／Table 22、AJKD Figure 的重製，也不是驗證過的「warm 就一定利尿、cold 就一定補液」處方圖。A 組是本篇**合成**病例明確宣告的新床邊觀察，B 組是刻意只改部分床邊資訊的反事實；相同 Cr 與 I/O 無法證實同一種 AKI 病因。若要查實際 cutoff 或心律／灌流分支，應返回原始指引與圖說、結合病人狀態與當地流程。
+
