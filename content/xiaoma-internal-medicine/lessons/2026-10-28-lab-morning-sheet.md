@@ -109,7 +109,7 @@ Potassium 大部分位在細胞內。若採血後紅血球在試管內破裂，�
 
 **情境 A：檢體仍標有溶血，但病人忽然心搏過緩，QRS 變寬。** 這時你不能說「等 K 重抽再決定」。危險電生理變化與循環風險已構成救治理由，應立刻按院內高鉀急救流程處理並同步重驗。IV calcium 是保護心肌電生理穩定，**本身不移除體內鉀**；insulin-glucose 只是把鉀暫時轉入細胞，還要考慮低血糖與反彈，以及真正的鉀移除。這正是 [UKKA 2026 Figure 4（原 PDF p.75）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75) 分開不同處置目標的理由。
 
-**情境 B：07:15 無溶血重抽的 K 不是 4.9，而是 6.4，ECG 暫時正常、Cr 持續升高。** 依 UKKA 2026，**K 6.0–6.4 mmol/L** 屬 *moderate hyperkalaemia*；正常 ECG 不足以宣告安全。現在已沒有原先最顯眼的體外溶血理由可依靠，需要及時監測和處理真正升鉀的原因及排鉀能力，並按本院流程評估合適治療。Insulin-glucose 用於中度高鉀是依條件與風險評估的建議；若使用，需依原指引 **Table 22（原 PDF p.98）**與本院流程注意補糖體積、治療後 K、血糖監測及**低血糖與反彈**。這**不是每名 K 6.4**、ECG 正常者都自動需要 IV calcium 或同一套固定藥物劑量。本文**不重製原圖**，讓讀者直接看原始流程與註腳。
+**情境 B：07:15 無溶血重抽的 K 不是 4.9，而是 6.4，ECG 暫時正常、Cr 持續升高。** 依 UKKA 2026，**K 6.0–6.4 mmol/L** 屬 *moderate hyperkalaemia*；正常 ECG 不足以宣告安全。現在已沒有原先最顯眼的體外溶血理由可依靠，需要及時監測和處理真正升鉀的原因及排鉀能力，並按本院流程評估合適治療。Insulin-glucose 用於中度高鉀是依條件與風險評估的建議；若使用，需依原指引 [**Table 22（原 PDF p.98）**](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98) 與本院流程注意補糖體積、治療後 K、血糖監測及**低血糖與反彈**。這**不是每名 K 6.4**、ECG 正常者都自動需要 IV calcium 或同一套固定藥物劑量。本文**不重製原圖**，讓讀者直接看原始流程與註腳。
 
 **情境 C：K 4.9 已經確認，但下午病人血壓下降、四肢冰冷、喘得更厲害。** 早上的假性高鉀「得到合理解釋」，不代表病人今天安全；也不能用早上還有 JVP 高，就反對任何對低灌流的緊急重新評估。你必須更新病程假說，重新判斷心輸出、鬱血、呼吸支持、感染及其他休克原因，必要時立即請資深醫師與重症團隊介入。**新病人訊號的權重，可以比已經解釋清楚的舊紅字更高。**
 
