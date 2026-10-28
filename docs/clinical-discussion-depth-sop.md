@@ -2,7 +2,7 @@
 
 **適用範圍**：Clinical_system／謝小生製作的 CBD、case discussion、正式醫學報告中的 Discussion，以及以臨床決策為核心的深度教材。此 SOP 是既有 [EPQC](editorial-prose-quality-contract.md) 與 [semantic release gate](editorial-semantic-release-gate.md) 的**專用增補**，不是新評分平台。個案簡報和 Discussion 不得混同；當前一位報告者已呈現病歷，Discussion 不需重複完整 case presentation，但須引用決策必要的已知個案條件。
 
-**失敗錨點**：[#203 神外 BA aneurysm CBD 教學失敗](https://github.com/sheng-web-OS/Clinical_system/issues/203)；治理總帳 [#133](https://github.com/sheng-web-OS/Clinical_system/issues/133)。2026-09 原九頁 Discussion 被現場主治醫師評為整體臨床論證非常不深入；2026-10 事後 AI 讀稿仍先自評 78/100，顯示生成與審稿共用的「架構漂亮＝深度足夠」假陰性。使用者提供的是口頭回饋，**並非可假設存在的正式教師評分單**。
+**適用原則**：本文只描述可泛化的臨床論證與審查要求，不包含任何特定歷史測試案例、預設 FAIL、作者自評或答案。歷史負面與正常對照、評估結果另留在私有評估端，不得混入 reviewer 可見的 SOP。
 
 ## 0. 不可替代的品質原則
 
@@ -19,7 +19,7 @@
 1. 由患者的決策轉折列出候選問題，不直接把 guideline 章節、術式目錄或併發症清單當作 Discussion 大綱。
 2. 每個候選問題內部寫明：「**哪兩種合理選項或機轉在競爭？**」「**何時會改變臨床行動？**」「**哪項病人證據或研究最能區辨？**」；若答不出，先研究問題本身而非設計投影片。
 3. 優先選 **1–2 個高臨床影響／高不確定性／可被證據有效處理**的主題。必要的背景可用一兩句建立，但不能因為要湊成三問、九頁或一個固定模板而分散深度。
-4. 先寫**主命題與最強反論點**。例如：「當 ruptured aneurysm 與急性 symptomatic hydrocephalus 並存，先 EVD 還是先 securing？」「我認為 X；但 Y 條件一改就可能不成立」。若沒有真正會讓判斷分岔的條件，需重新選題。
+4. 先寫**主命題與最強反論點**。例如：當同一位重症患者同時面臨兩種相衝突的立即風險，應先做哪一項介入？哪個條件改變會使決策翻轉？若沒有真正會讓判斷分岔的條件，需重新選題。
 
 **Gate Q（必過）**：每個保留的核心問題，都能指出它的決策後果、至少一個真正合理的競爭解釋／選項、至少一項可能改判的資訊。純「What is…／Overview of…」不能標示為深入的臨床 Discussion。
 
@@ -75,7 +75,7 @@
 - **最小充分提示**：比較原生中性審稿、單句「切換至對抗式專科審查視角」與完整 SOP；只有在未提示案例、正常對照、獨立審稿及實際成本上看到增益，才有理由長期載入較長 SOP。已知同專案合成試驗有整套 SOP 未呈增益且增加提示成本，不能因寫得更長自認更有用。
 - **分開衡量**：無提示自主發現（尤其首個最大問題）、重大漏判、錯誤旗標、修復後新錯、證據與個案適用性、使用者介入分鐘；缺實測寫 `NOT_MEASURED`。維持唯一事件 owner #203／總帳 #133／成長 #137，不另造看板或排程。
 
-校準設計與正常 claim-preservation 對照見私有 [unhinted review protocol](../audit/clinical-discussion-depth-unhinted-calibration.md)。真正給審稿者的是 [neutral review packet](../audit/clinical-discussion-neutral-reviewer-packet.md)，**不是**內含預期 RED 的 [coordinator handoff](../audit/clinical-discussion-depth-reviewer-handoff.md)。此規則不改變上述 Gate R 的獨立審查要求。
+與 reviewer 身分分離的評估端須保存測試設計、錯誤位置、正常對照與評分鑰匙；審稿者僅取得中性稿件、通用 SOP 和必要原始來源，不得讀預期結果或作者分析。此規則不改變上述 Gate R 的獨立審查要求。
 
 
 ## 6. 交付決策與最小追溯記錄
@@ -86,18 +86,13 @@
 - **NOT_VERIFIED**：未實際查核的來源、病例、口試、CI／部署一律寫未驗；不能以預計作業當已完成。不得默認使用者同意醫學高風險／公開發布。
 - 最小審查 receipt：稿件名稱／Git blob SHA、日期、選題與最強反論點、至少三個具體問答及失敗修訂點、關鍵證據核查邊界、writer/reviewer 身分與分離方法、Q/D/E/R 狀態、最終判定與 issue/PR 連結。**僅存既有私有 PR／issue 或既有 audit 管道**，不新增服務、儀表板或排程；改動稿件 SHA 即重審。審查語言不進讀者正文。
 
-## 7. 防再發回歸測試（RED fixture：舊版應被攔截）
+## 7. 防再發實驗（不洩漏答案的通用規格）
 
-使用 [#203](https://github.com/sheng-web-OS/Clinical_system/issues/203) 所指 2026-09《BA_aneurysm_discussion_9_slides_v2.pptx》《BA_aneurysm_discussion_逐字稿.md》作**歷史負面樣例**。已將當年逐字稿的私有副本固定於 [`audit/fixtures/ba-aneurysm-discussion-202609-frozen.md`](../audit/fixtures/ba-aneurysm-discussion-202609-frozen.md)，Git blob SHA `afe6acddeb9d8ca5d677724635b7431100d07a68`；可重跑**文字語義**對照，但不能冒稱已保存原始 PPT 所有影像或臨床資料。
-
-| 舊稿位置 | 必須追問、不得被空泛回答繞過 | 應有判定 |
-| --- | --- | --- |
-| Slide 2：why coiling | 不能只答 BA 深、guideline 偏好；要求比較解剖、branch、hematoma／decompression、device/DAPT 與研究適用條件，至少指出會改判的病人條件 | 舊稿 **RED** |
-| Slides 5–6：EVD timing | 除了 hydrocephalus／securing／DAPT 清單，要求兩端風險機轉、臨床研究可否確定時序及具體反事實 | 舊稿 **RED** |
-| Slide 8：post-coiling deterioration | 不能只列 DCI、seizure、hydrocephalus；應依症狀與時間、CT／血管與灌流證據比較，分清 vasospasm ≠ DCI | 舊稿 **RED** |
-| 審稿者自評 | 若「九頁架構好、引用指南、圖表清晰」便給高分或 PASS，視為 **reviewer false negative**；須保存失敗審查紀錄 | 舊式審查 **RED** |
-
-後續驗證步驟：**保留舊稿不修改** → 獨立 reviewer 確實判出 RED 並記錄問答 → 僅修訂一個高影響論點作最小示範 → 同來源／相近時長／不同審稿脈絡再問相同能力類型的未知題 → 記錄是否仍有未攔下的重大缺陷。未經過此驗證，SOP 的狀態是 **SPECIFIED／NOT_EFFECTIVENESS_VALIDATED**，不可稱「已解決」。
+- 從真實稿件擷取可追溯原文／必要圖表，鎖定版本與用途；先凍結評估指標，再交由分離的 reviewer 審查。**此 SOP 不含任何病例的預設失敗頁、目標分數或標準答案**，避免規範本身造成提示洩漏。
+- 同時包含**已知重大缺陷的稿件**與**經獨立來源確認且具有足夠臨床論證深度的正常稿件**；並在同一稿內檢查適當限定語／正確論點是否被保留。不能用全部 HOLD 假裝抓錯成功。
+- 比較無提示自主發現與收到具體改稿指示後的修復能力；兩者不可混算。追蹤真正的漏攔與誤攔、修復引入新錯誤、來源查核及人工負擔。
+- 以多個未見的專業領域與案例進行相同任務、來源及預算的對照；先有獨立審稿證據再評估完整 SOP 是否比一個簡短的視角切換更有效。若沒有增益，保留最低提示成本的路徑。
+- 缺獨立評閱或正常稿對照時標 `NOT_EFFECTIVENESS_VALIDATED`；即使已完成工程 CI 也不能宣稱臨床品質有效提升。
 
 ## 8. 責任界線與低維護實施
 
