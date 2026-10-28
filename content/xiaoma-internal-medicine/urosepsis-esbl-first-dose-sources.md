@@ -4,7 +4,7 @@
 
 ## 感染嚴重度、抗菌藥與 source control
 
-**Surviving Sepsis Campaign 2026**｜[SCCM 官方指南](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)。對照：Antibiotic initiation、Blood culture、Source control、Fluid resuscitation、Vasopressor choice、Mean arterial pressure targets、Beta-lactam antibiotics。辨認高危病人要及時治療，但不能以「時限」替代感染機率／器官支持的床邊判斷。一般 septic shock MAP 初始目標約 65 mmHg，65 歲以上另有條件性 60–65 mmHg 選項；它們是治療目標，不是 sepsis 診斷截點。
+**Surviving Sepsis Campaign（SSC）2026**｜[SCCM 官方指南](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)。對照：Antibiotic initiation、Blood culture、Source control、Fluid resuscitation、Vasopressor choice、Mean arterial pressure targets、Beta-lactam antibiotics。辨認高危病人要及時治療，但不能以「時限」替代感染機率／器官支持的床邊判斷。一般 septic shock MAP 初始目標約 65 mmHg，65 歲以上另有條件性 60–65 mmHg 選項；它們是治療目標，不是 sepsis 診斷截點。
 
 **EAU Urolithiasis**｜[Infected obstructed kidney：Guidelines §3.4.2](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)。對阻塞結石合併 sepsis 的病人，緊急解除阻塞（如 ureteral stent 或 PCN）與抗菌治療並行。本篇僅有「右側 hydronephrosis」，尚未證實是 stone；應由泌尿科與影像查明。
 
