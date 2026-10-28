@@ -14,13 +14,17 @@
 
 對這通電話，最合理的初步立場是：**高度懷疑 systemic UTI／可能菌血症，存在 sepsis 與灌流惡化的重大疑慮，必須立即同時啟動 resuscitation、cultures、合理涵蓋 ESBL 的 empiric IV therapy 評估，以及緊急 urology source-control 評估。** Meropenem 是本情境優先考慮的候選初始藥物；不是因為 ESBL 這三個字自動等於某一支藥，而是「近期相關抗藥菌＋危重程度＋可能侵襲性／菌血症＋疑似阻塞」共同改變了給錯第一劑的代價。
 
-**尚不可宣告：**由 BP 92/56、lactate 3.8 就已完整符合 Sepsis-3 septic shock 定義；也不能把超音波 hydronephrosis 當作已證實阻塞結石。診斷尚未完整，不影響此刻緊急評估及處置。
+**尚不可宣告：**由 BP 92/56、lactate 3.8 就已完整符合 Sepsis-3 septic shock 定義；也不能把超音波 hydronephrosis 當作已證實阻塞結石。**第三個尚未確診的項目是 AKI：兩週前 Cr 1.3、現在 2.0 mg/dL（約上升 54%），但尚無近 48 小時、近 7 天的 Cr 時序與 6 小時尿量資料，尚不足以單憑兩筆數值確認 KDIGO AKI 或分期。** 這不代表腎功能沒問題，而是 CKD G3 之上高度懷疑急性惡化，須立即回查過去一週檢驗、留置尿量、容量與阻塞情況。KDIGO 2012 的一般判準為 Cr 48 小時內增加 ≥0.3 mg/dL、已知或推定 7 天內上升 ≥1.5 倍，或尿量 <0.5 mL/kg/h 持續至少 6 小時；這裡目前**無法確認時間窗**。([KDIGO AKI guideline 2012 §2.1](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf))
+
+**同一個問題也出現在 MAP。** 依 BP 92/56 粗估 MAP 約 68 mmHg，並非已經小於 65；但一個 MAP 數字在 65 以上，**不代表灌流必定充分**，也無法排除病人正在惡化。意識變慢、乳酸升高、心搏過速及疑似感染性阻塞要求床邊連續評估。2026 SSC 一般 septic shock 的初始 MAP 目標約 65 mmHg；對 **65 歲以上**另提出 60–65 mmHg 的條件性起始範圍建議。這是治療已確認 shock 的循環支持目標，不是用來排除 sepsis 的單一診斷閾值。([SSC 2026，MAP recommendations 13–14](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026))
+
+**危急辨識與正式定義，應同時被尊重但不可互相替代。** 病人需要即時的上級、抗菌治療與源控制評估，並不要求 PGY 先把 AKI stage、septic shock 定義及結石診斷全部填完。
 
 ## 第零問｜前 5 分鐘做什麼？哪一件不能等？
 
 值班團隊同步分工，而非排成「等檢驗→讀藥敏→開藥→隔天找泌尿科」的序列：
 
-1. **立即親評及求援。** 再測血壓、意識、氧合、四肢灌流、體溫、尿量；確立 IV access、監測與容量評估，通知總醫師／主治與 sepsis/急重症團隊；依循環評估開始適當 crystalloid resuscitation，對持續低灌流者評估早期 vasopressor 和 ICU。既有 CKD 不代表一律不補液；也不代表機械給固定大量輸液、不回頭評估肺水腫與反應。2026 SSC 建議 septic shock 以 norepinephrine 為首選升壓劑、初始 MAP 目標約 65 mmHg；細節依床邊反應和院內流程。
+1. **立即親評及求援。** 再測血壓、意識、氧合、四肢灌流、體溫、尿量；確立 IV access、監測與容量評估，通知總醫師／主治與 sepsis/急重症團隊；依循環評估開始適當 crystalloid resuscitation，對持續低灌流者評估早期 vasopressor 和 ICU。既有 CKD 不代表一律不補液；也不代表機械給固定大量輸液、不回頭評估肺水腫與反應。2026 SSC 建議 septic shock 以 norepinephrine 為首選升壓劑，一般初始 MAP 目標約 65 mmHg（65 歲以上可條件性考慮 60–65 mmHg）；細節依床邊反應、基礎高血壓與院內流程。
 2. **立即採得來的血培與尿培。** 以標準無菌方式採適當血培（通常兩套）與 urine culture，標明採檢與首劑時間，並辨認尿液來源、留置導管及更換需求。理想是在第一劑前抽血培，但**採檢不能造成危急病人治療的顯著延誤**。CBC、electrolytes、K、renal trends、lactate、必要 blood gas 及相關影像同步取得；不等每一張檢驗回來才開始治療。
 3. **同時開啟 first-dose 核藥與泌尿科路線。** 讀最近可用的 prior isolate/AST；確認藥物過敏到底是噁心、皮疹、即時呼吸道反應還是嚴重延遲型反應；即刻聯絡藥師與上級依本院 policy 確認 ESBL-active IV 方案、首劑時點與劑量。超音波 hydronephrosis＋ systemic infection 應緊急聯繫泌尿科，確認是否為 obstructed infected collecting system、是否需 ureteral stent 或 percutaneous nephrostomy（PCN）。
 
@@ -32,11 +36,11 @@
 
 | 問題 | 此刻掌握 | 不能從中推論 |
 | --- | --- | --- |
-| **Syndrome／器官狀態** | 發燒、CVA tenderness、意識改變、低血壓、AKI、乳酸上升 | 不能用 pyuria 單獨確診感染；不能僅用血壓與 lactate 宣告 septic shock |
+| **Syndrome／器官狀態** | 發燒、CVA tenderness、意識改變、相對低血壓、CKD 下 Cr 上升（疑似 AKI）、乳酸上升 | 不能用 pyuria 單獨確診感染；MAP ≈68 不等於灌流正常；Cr 兩週比較尚未符合可核對 KDIGO 的時間窗；不能僅用血壓與 lactate 宣告 septic shock |
 | **Anatomic source** | 右 hydronephrosis，可能 obstructed pyelonephritis | 不等於已看見結石，也不等於一定要某一種引流方式 |
 | **Prior microbiology** | 兩個月前 ESBL *E. coli* | 不等於本次同一菌；不等於本次對 carbapenem 一定 S；完整 prior AST 尚需核對 |
 | **Empiric coverage** | 急重症＋舊 ESBL 增加 ceftriaxone inactive 的疑慮 | 不等於所有人見 ESBL 都要 carbapenem；也不是 meropenem 涵蓋一切病原 |
-| **Actual drug exposure** | CKD 上再有 AKI，給藥時容量、清除率在變 | 不可拿單次 eGFR 精確代表當下清除率；也不可把首劑與維持劑量混作一題 |
+| **Actual drug exposure** | CKD 合併疑似急性腎功能惡化，清除率可能變動 | 不可拿單次 eGFR 精確代表當下清除率；也不可把首劑與維持劑量混作一題 |
 
 2025 IDSA cUTI 提供四步：**① 病況嚴重度 → ② 既往抗藥菌與抗生素暴露 → ③ 過敏、腎功能、交互作用等病人限制 → ④ 有 sepsis 時參考該院適合族群的 antibiogram。** 指引明說近期既往尿培若有 ESBL，ceftriaxone 可能不再是適當的經驗性選擇。這仍是**機率決策**，不是把歷史培養複製成這次的新培養。([IDSA cUTI 2025：Selection of Antibiotic Therapy，Figure 1.1](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections))
 
@@ -56,7 +60,7 @@ ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 
 
 | 策略 | 在這位 68M 的意義 | 必須守住的界線 |
 | --- | --- | --- |
-| **Meropenem IV：此例優先討論的候選** | 危重 systemic UTI＋近期 ESBL＋可能菌血症／阻塞，初始需可靠 ESBL-active coverage；如同時有 Pseudomonas 風險，須再核其實際感受性 | 不是對所有 carbapenem-resistant 病原有效；首劑與後續劑量仍需嚴重過敏、AKI、藥師與本院制度核對 |
+| **Meropenem IV：此例優先討論的候選** | 危重 systemic UTI＋近期 ESBL＋可能菌血症／阻塞，初始需可靠 ESBL-active coverage；如同時有 Pseudomonas 風險，須再核其實際感受性 | 不是對所有 carbapenem-resistant 病原有效；首劑與後續劑量仍需嚴重過敏、疑似 AKI 的動態清除率、藥師與本院制度核對 |
 | **Ceftriaxone IV** | 適合部分無顯著 ESBL 風險、病況與在地敏感率允許的 cUTI | 此例最近 ESBL 史強烈削弱經驗性可靠性；不應當作預設值 |
 | **Piperacillin–tazobactam** | 在某些 ESBL cUTI 情境仍有角色 | **2026 IDSA AMR 明確將其 ESBL cUTI 替代定位限定於非危重且沒有 concomitant bacteremia 者；不建議用於危重或合併菌血症者。** 因此本例不應將可能「S」或一般廣譜印象視為與 meropenem 等價 |
 | **Ertapenem** | 可在更穩定、病原確認與適應症吻合時，作為 carbapenem 策略之一 | 對 Pseudomonas 無可靠覆蓋；危重或低白蛋白情境下不宜未經判斷直接與 meropenem 當作同等首選 |
@@ -71,7 +75,7 @@ ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 
 
 因為處方是**藥物種類 × 能否安全給入 × 在正確時間產生足夠的暴露**。
 
-β-lactam 多屬 time-dependent killing，重要 PK/PD 維度是游離藥物濃度高於病原 MIC 的時間（fT>MIC）。敗血症初期體液分布與腎清除率可急速改變；負荷暴露與維持清除是兩個不同問題。**在 AKI 下簡單用低 eGFR 把第一劑一律減很低，可能讓危急的首次暴露不足；但忽略腎衰竭累積也可能增加神經毒性。** 並不存在一條「所有敗血症／所有 meropenem 都固定用同一 loading」的無條件規則。2026 SSC 對 β-lactam 建議在 initial bolus 後採 prolonged infusion 維持方案的方向，但實際 bolus、infusion duration、輸注相容性、腎調整仍須以該藥品與當院 protocol 辦理。([SSC 2026：Beta-lactam antibiotics](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026))
+β-lactam 多屬 time-dependent killing，重要 PK/PD 維度是游離藥物濃度高於病原 MIC 的時間（fT>MIC）。敗血症初期體液分布與腎清除率可急速改變；負荷暴露與維持清除是兩個不同問題。**在疑似或已確認的 AKI 下簡單用低 eGFR 把第一劑一律減很低，可能讓危急的首次暴露不足；但忽略腎衰竭累積也可能增加神經毒性。** 並不存在一條「所有敗血症／所有 meropenem 都固定用同一 loading」的無條件規則。2026 SSC 對 β-lactam 建議在 initial bolus 後採 prolonged infusion 維持方案的方向，但實際 bolus、infusion duration、輸注相容性、腎調整仍須以該藥品與當院 protocol 辦理。([SSC 2026：Beta-lactam antibiotics](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026))
 
 在這份合成情境，「第一劑醫囑草案」應包含下列**待即時核對欄位**，而不是把未知資訊補成看似精確的數字：
 
@@ -102,7 +106,7 @@ ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 
 
 合成培養結果：血與尿均為 ESBL *E. coli*，**ceftriaxone-R、meropenem-S、TMP-SMX-S**。新資訊確認原先 ESBL 覆蓋思考合理，也讓較窄方案成為可能；然而培養報告的「S」只回答一定測試條件下的 susceptibility，不能回答血流動力、阻塞是否解除、是否能吸收口服藥、是否另有 abscess/prostatitis，或 TMP-SMX 的鉀離子與交互作用能否接受。
 
-**分支甲：**仍在使用 vasopressor、尿路尚未減壓、AKI 加重。**不因 TMP-SMX-S 就立即口服轉換。** 先處理源控制與器官支持，確認 IV regimen 與實際暴露；再動態調整。
+**分支甲：**仍在使用 vasopressor、尿路尚未減壓、Cr 進一步上升且尿量減少，現在高度懷疑正在發展或加重 AKI。**不因 TMP-SMX-S 就立即口服轉換。** 先處理源控制與器官支持，確認 IV regimen 與實際暴露；再動態調整。
 
 **分支乙：**T+24 已完成腎臟引流，T+48 血流動力穩、退燒、可吞與吸收，沒有未處理深層感染，已有 susceptibility，鉀離子與腎功能及交互作用評估許可。這時**可考慮改為有足夠血中／尿中／相關組織濃度的 susceptible oral agent**，例如 TMP-SMX（以個別禁忌和院內劑量為限）；菌血症**本身並非永遠不能口服**，但支持證據多來自穩定、已源控制者。([IDSA cUTI 2025：IV-to-oral Figure 1.2 與 bacteremia remarks](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections))
 
@@ -136,7 +140,7 @@ ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 
 
 ## 值班交班，用一段話而不是只交「我已開 meropenem」
 
-「68M DM/CKD，現在 suspected severe systemic UTI with right hydronephrosis、hypotension、altered mentation、AKI/lactate elevation；兩個月前 urine ESBL *E. coli*，本次血/尿培已於 __ 採送。經與 __ 核對過敏、腎功能及本院規範，__ 時已開始 __ IV（首劑與維持劑量分開審核），目前 BP/MAP、尿量與 vasopressor 趨勢 __。已於 __ 聯絡泌尿科，疑 infected obstruction 的影像／減壓計畫 __。**任何血壓、意識、尿量惡化立即重評；有培養/AST 結果再依 source control、敏感性、臨床穩定與腎功能決定降階與口服。**」
+「68M DM/CKD，現在 suspected severe systemic UTI with right hydronephrosis、hypotension、altered mentation、possible AKI（兩週前 Cr 1.3 → 現 2.0，需補近七天與尿量資料）/lactate elevation；兩個月前 urine ESBL *E. coli*，本次血/尿培已於 __ 採送。經與 __ 核對過敏、腎功能及本院規範，__ 時已開始 __ IV（首劑與維持劑量分開審核），目前 BP/MAP、尿量與 vasopressor 趨勢 __。已於 __ 聯絡泌尿科，疑 infected obstruction 的影像／減壓計畫 __。**任何血壓、意識、尿量惡化立即重評；有培養/AST 結果再依 source control、敏感性、臨床穩定與腎功能決定降階與口服。**」
 
 ### 自我檢驗：能不能在 90 秒答出這三問？
 
