@@ -73,3 +73,11 @@ Repair applied to AKI §04 and the public reader-facing source companion: explai
 Same reader-voice adversarial pass removed generic author-facing disclaimers at the endings of both Lab02 and Lab03, since limitations already appear at the actual risk and decision pivots; this is editorial cleanup, not a clinical-review signoff.
 
 **Exact lesson blobs at this check:** Lab02 `802912aa94b80545727da2c827ee78513c603ae8`; Lab03 `66a8055de0d3610aa783b9fdd9a47b3d6fec9732`. The previously generated 43/67 paragraph packets were bound to older blobs and **cannot be reused as actual latest-blob approval**; any subsequent preflight must regenerate UNREVIEWED packets. Independent reviewer required as before.
+
+## 2026-10-29｜Original Table 2 footnote: urgent source identity conflict, repaired in reader
+
+Source: [Chen original Cureus publisher PDF p4, Figure 3 and Table 2 with original footnote](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4), visually inspected. Main prose reports ~6L after **Tiemann-tip insertion**, but Table 2 footnote says ~6L was drained **immediately after exchanging Tiemann-tip with the usual urinary catheter**. Table 2 body reports 12/11 *daily* UO 6170mL/IO 1800mL. Earlier audit correctly warned the daily total does not itself demonstrate an instantaneous 6L drainage, but improperly omitted the **explicit immediate-drainage claim in the original footnote**, thereby understating an important source conflict.
+
+Repaired article §01 and §04 to accurately distinguish: (1) original report claims rapid copious drainage; (2) it contradicts itself about catheter direction; (3) the date/volume table alone cannot resolve exact moment-to-day mapping or timing; (4) evidence for significant post-obstructive urine output does not justify asserting which catheter step produced it. Reader-facing source page and private Figure/Table claim receipt updated. Source Figure 3 itself has no evident obstructing lesion. **This writer-side correction is NOT independent signoff** and invalidates older exact-blob semantic review packets.
+
+No clinical review approval or production release. Continue HOLD until genuinely separate paragraph/medical review of updated blobs.
