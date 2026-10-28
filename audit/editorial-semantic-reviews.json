@@ -4244,20 +4244,20 @@
       }
     },
     "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md": {
-      "content_blob": "7ec4cd51a1e7aef8006714fc90bd49da8c4f0e5f",
+      "content_blob": "6e31793fc64980d049ce000dd993c5a7343444a1",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "Distinct execution context from original PR #186 writer; 2026-10-28 ChatGPT GPT-6 adversarial full-article (46 reading units) review, PR #186 original source screenshots UKKA 2026 Figure4 p75/Table22 p98, KDIGO2012 Table2 p19/Figure4 p25, AJKD abstract boundary; reviewer made two narrow safety/source edits before reviewing final exact blob 7ec4cd51a1e7aef8006714fc90bd49da8c4f0e5f; no human medical peer review, no reader outcome claim",
-      "core_reader_question": "一張晨間檢驗表同時有溶血的K6.3、持續上升的creatinine、可疑少尿及心衰竭鬱血時，如何平行分流立即危險、樣本可靠性與今天的治療及重驗？",
-      "new_understanding": "檢驗可能錯誤與病人可能危險彼此不排斥；同一時間的不同檢驗有獨立可靠性。無降鉀介入的新樣本較支持假性高鉀，但不消除真AKI；去充血和腎灌流需床邊分辨，不能將Cr升高直接等同缺水。",
-      "strongest_counterargument": "全篇以合成病例推理而沒有真實病人結果，AJKD原圖尚未全面目視、Pocket Medicine對題圖尚未完整比較；本稿沒有院內實際處方及human bedside reader驗證，因此只適合作為有來源界線的教學架構，不是臨床order set或醫師同儕審查。",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/187#issuecomment-6459750586 (distinct AI reviewer, 2026-10-28; not human clinical signoff; 32 units and 5 adversarial transfers)",
+      "core_reader_question": "How can a morning lab value represent specimen handling rather than the patient, while preserving immediate hyperkalemia safety and distinguishing sample artifacts from disease mechanisms?",
+      "new_understanding": "The real AML A-D sample transport/treatment timeline and separate thrombocytosis case show specimen-method confounding; Wilson n66 and Stephan n2440 provide non-transferable denominators; Cr in HF is a measurement, not a cause or medication instruction.",
+      "strongest_counterargument": "The article's broad Lab-sheet title could overpromise a full panel and the single AML case cannot establish pneumatic transport causality because sample D follows therapy; the manuscript explicitly limits itself to measurement credibility, preserves mixed intervention, separates cohorts, and avoids order-ready extrapolation. Reader outcomes and actual pixel visual QA are still unmeasured.",
       "epqc_scores": {
         "A": 4,
         "B": 4,
-        "C": 3,
+        "C": 4,
         "D": 4,
         "E": 3,
         "F": 4,
-        "G": 3
+        "G": 4
       },
       "hard_stops": {
         "unsafe_claim": false,
@@ -4267,373 +4267,261 @@
         "unresolved_source_conflict": false
       },
       "paragraphs": {
-        "4429c55e305ca0d62f-1": {
+        "3fe8eabe07bae3d303-1": {
           "role": "orientation",
-          "reader_gain": "把交班只報四個異常數字的問題具體化，指出缺少症狀、採血與變化速度",
-          "nonredundancy_reason": "後段要拿這句無決策力的交班對照最後的30秒交班，保留初始比較基準",
+          "reader_gain": "建立樣本數字、體內狀態與急性危險三層問題。",
+          "nonredundancy_reason": "若直接開始病例，讀者容易把偽高鉀誤當成不需急救。",
           "verdict": "keep",
-          "excerpt_for_editor": "病房交班時，住院醫師經常這樣開口：「今天 sodium 132、potassium 6.3、creatinine 1.68、hemoglobin 10.2。」這句話傳遞了四個數字，卻還沒有傳遞任何可供團隊使用的臨床判斷。我們不知道哪個是真危險、哪個可能採錯、哪個在惡化、哪個需要改藥，甚至不",
+          "excerpt_for_editor": "早晨的報告上出現 K 7.8 mEq/L，第一個問題未必是「要配哪一項降鉀藥」，而是：這個值是病人體內的濃度，還是採血與檢體處理後才出現的數字？但檢體可能有問題，也不等於病人沒有立即危險。理解一張 Lab sheet，需要把量測的來源、病人當下的危險，以及能支持什麼臨床推論分開。",
           "line_for_editor": 3
         },
-        "7dfd9e233dc611330f-1": {
-          "role": "definition",
-          "reader_gain": "定義檢驗是特定時間及方法的生理訊號，建立量測不等於病人整體的核心命題",
-          "nonredundancy_reason": "和開頭列數字不同，提供全篇的測量／病人／決策三層分離",
+        "67092204066124f777-1": {
+          "role": "navigation",
+          "reader_gain": "預告單病例、兩個不同急診研究與腎心衰證據的分層。",
+          "nonredundancy_reason": "防止把病例與研究分母合成一個虛構病人。",
           "verdict": "keep",
-          "excerpt_for_editor": "一張 lab sheet 不是器官疾病的總結，更不是數值越偏離正常值就越優先。它是「某個時間、某種檢體、某套測量方法」留下的訊號。我們要把訊號放回病人、治療與時間序列，最後形成今天要做什麼、現在不能等什麼、什麼還不能推論的工作決策。",
+          "excerpt_for_editor": "我們先讀一份有完整檢體時間、方法和運輸紀錄的真實病例；再對照兩組經過不同納排篩選的急診研究；最後借助腎臟與心衰竭的臨床證據，釐清為何檢驗值即使可靠，也不等於病因與治療方向已確定。每一份資料都保留自己的病人、分母與適用界線，不會把不同研究拼成同一張虛構的病例。",
           "line_for_editor": 5
         },
-        "b3bb962d9e2a5708d4-1": {
-          "role": "source_context",
-          "reader_gain": "明確告知70歲心衰個案與數值是合成教材，而非來源論文患者",
-          "nonredundancy_reason": "避免後文人工時序與原研究證據被混淆，為計算與反例的推論邊界",
+        "453e08f47631dde8bd-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明定本篇僅處理量測可信度而非完整醫囑。",
+          "nonredundancy_reason": "限制從偽高鉀直接外推 Na、Cr 或全套處置的範圍。",
           "verdict": "keep",
-          "excerpt_for_editor": "本文的病例為明確標示的合成教學情境，全部數值為設計的示例，並非真實病人、病例報告或研究原始觀察。選擇合成病例，是因為本篇要把同一病人跨面板的相互矛盾、採檢錯誤與反事實變化放在可驗證的同一時間線；臨床門檻另按文末原始指引查核。",
+          "excerpt_for_editor": "本篇的範圍是「檢驗可信度」而非整張抽血單的完整醫囑教學。 先用有原始採檢時序的高鉀／CBC 真實病例拆開「樣本數字」、「病人體內狀態」與「危急風險」；Cr、Na、酸鹼與其他檢驗只引出下一層問題。要判斷實際檢驗選擇與處置，必須另有涵蓋相應器官及病程的真實病例、試驗與指引，不能把本篇的偽高鉀研",
           "line_for_editor": 7
         },
-        "0fb63c90b96e5cca40-1": {
-          "role": "orientation",
-          "reader_gain": "以逐項唸Na與K的錯誤閱讀順序引出三個並行時鐘",
-          "nonredundancy_reason": "不重複初始四數字交班，而是改變讀者閱讀整張報告的操作順序",
+        "1d0276e66434808f3c-1": {
+          "role": "case_evidence",
+          "reader_gain": "引入有可追原始 Table 1 的55歲AML真實病例。",
+          "nonredundancy_reason": "建立後面四次檢體比較的來源與病例身分。",
           "verdict": "keep",
-          "excerpt_for_editor": "拿到異常報告時，你不應照「鈉、鉀、氯、二氧化碳、BUN、Cr、WBC、Hb」從上讀到下。臨床需要三個時鐘同時走：",
+          "excerpt_for_editor": "2024 年 International Journal of Emergency Medicine 刊登一名55 歲男性、急性骨髓性白血病（AML）患者的病例報告：Manual flagging failed to identify pseudohyperkalemia in acute",
           "line_for_editor": 11
         },
-        "3b1e468d6b9e8f8ba0-1": {
-          "role": "causal_bridge",
-          "reader_gain": "將分鐘急症、小時採檢與天的灌流趨勢並列，並說明不可序列等待",
-          "nonredundancy_reason": "這是將抽象時序轉成可以並行啟動的具體模型，圖1接下來驗證",
+        "8a2543af0cfab24aa3-1": {
+          "role": "case_evidence",
+          "reader_gain": "說明四筆檢體按時間、基質、儀器和運輸重排。",
+          "nonredundancy_reason": "讓讀者在比較 K 數值之前先辨識時間、檢體基質、分析儀器與運輸的條件差異。",
           "verdict": "keep",
-          "excerpt_for_editor": "分鐘先判斷生命徵象、心律與急救風險；小時查採檢可信度與重驗；天將趨勢接回藥物、灌流、鬱血和重測決策。這三條路徑同時運作，不是先把第一個問題答完，才有資格處理第二個。下面先看病例與完整檢驗表，再用圖 1 對照同一張報告為何需要不同的行動。",
+          "excerpt_for_editor": "原文 Table 1 的採檢時間與運送方式，比單純比較 K 的大小更值得先看。以下是從原表抽出、重新整理的四筆同一名 AML 患者資料，並沒有把不同檢體視為同條件重測：",
           "line_for_editor": 13
         },
-        "0c4867ee7f964c697f-1": {
-          "role": "decision",
-          "reader_gain": "將交班轉成危險、可信度、生理機轉與下一次醫囑四個可檢查問題",
-          "nonredundancy_reason": "它把三時鐘從框架轉成床邊工作輸出，供最後交班逐項驗收",
+        "8e64735239dde861aa-1": {
+          "role": "causal_bridge",
+          "reader_gain": "加入先前補鉀暴露並辨識 C→D 治療混雜。",
+          "nonredundancy_reason": "沒有這段會把 K 下降誤認為氣送管的純因果效應。",
           "verdict": "keep",
-          "excerpt_for_editor": "交班不是背一張數字表，而是先回覆四個問題：①現在有沒有不能等的危險？②今天的異常是真是假、變化有多快？③哪個生理過程正在變、哪些尚不能確認？④今天要下什麼指令、多久再看哪項證據？下面讓一位心衰竭病人的抽血報告逼我們實際作答。",
-          "line_for_editor": 15
+          "excerpt_for_editor": "原病例還有一個不容易從「6.7→7.8→3.6」的簡短摘要看出的前提：前一天曾因 K 2.8 mEq/L 接受靜脈補鉀 40 mEq，且有長期口服補鉀及相關慢性病用藥史。因此，判讀必須同時保留真的高鉀風險與檢體失真風險，不能看極端 WBC 便從事後結局反推臨床當下必然安全。這是資料所允許的",
+          "line_for_editor": 22
         },
-        "4be6bf001bee5007ed-1": {
+        "3a0a2c082b46e1dbb9-1": {
           "role": "case_evidence",
-          "reader_gain": "提供心衰、75公斤、負平衡、JVP與生命徵象及用藥背景",
-          "nonredundancy_reason": "此處建立可反駁單純缺水處置的鬱血前提，數值表本身不含臨床查體",
+          "reader_gain": "用同患者 Hb 4.5 與7.9的矛盾延伸到CBC可信度。",
+          "nonredundancy_reason": "保留Hb錯誤原因未知，避免將K干擾硬套到Hb。",
           "verdict": "keep",
-          "excerpt_for_editor": "一位 70 歲、75 kg 男性因急性心衰竭鬱血住院，接受靜脈 loop diuretic。過去兩天呼吸困難逐漸改善，但頸靜脈仍偏高，仍有下肢水腫與少量濕囉音。昨夜到今早收支約負 1.4 L；這是輸入輸出紀錄，不等於已測得有效循環血量或腎灌流。早上血壓 118/74 mmHg、心跳 88/",
-          "line_for_editor": 19
+          "excerpt_for_editor": "同一名真實病人，也有另一項不能直接相信的檢驗值。 4 月 3 日居家抽血 Hb 4.5 g/dL（兩天前 7.5 g/dL）而被轉送急診評估輸血；急診 Hb 卻是 7.9 g/dL。原作者認為居家的 4.5 是檢驗錯誤，而不是幾小時內真正造血恢復的證據。後續 packed RBC 輸血是在",
+          "line_for_editor": 34
         },
-        "544c6fcb075e8bac3d-1": {
-          "role": "case_evidence",
-          "reader_gain": "加入溶血K6.3和可能漏記尿量，讓真危險與量測錯誤同時成立",
-          "nonredundancy_reason": "這是全篇兩個互相競爭的臨床假說起點，前一段只有背景",
-          "verdict": "keep",
-          "excerpt_for_editor": "清晨檢驗室通報 K 6.3 mmol/L，卻註明此管檢體有顯著 hemolysis（溶血）。護理記錄還顯示最近 8 小時尿量只有 240 mL，但尿壺可能漏記。病人目前看來並未崩潰。此刻你要立刻拿著 6.3 去開降鉀藥？把它當作偽高鉀不理？還是先說「腎功能不好，今天補水」？",
-          "line_for_editor": 21
-        },
-        "3fd7c21970a73de8e9-1": {
+        "237ade08445d266f59-1": {
           "role": "safety",
-          "reader_gain": "說清危險ECG或不穩定不得等重驗，卻要檢體確認及救治並行",
-          "nonredundancy_reason": "排除極端的全不治與全直接治，保護不穩定病人的急救優先權",
+          "reader_gain": "區分正常ECG、先治療、腎科懷疑與作者事後診斷。",
+          "nonredundancy_reason": "避免將事後假性高鉀當作當下可安全等待的證明。",
           "verdict": "keep",
-          "excerpt_for_editor": "三個答案都有風險。臨床穩定與溶血使假性高鉀值得懷疑，但無法證明它是假的；腎功能惡化與少尿則使真正高鉀的前測風險同時上升。正確的第一步是立即親自評估病人、查看 12-lead ECG 並依嚴重度與機構流程安排監測，通知團隊與實驗室，迅速從適當部位重抽無溶血檢體；若有危險心電圖變化、循環不穩或",
-          "line_for_editor": 23
+          "excerpt_for_editor": "該病人沒有典型高鉀症狀，ECG 也沒有相應變化；但臨床團隊仍先給了抗高鉀治療，之後由腎臟科懷疑 pseudohyperkalaemia，與檢驗室重新核對檢體類型、採樣和處理過程。原文也特別提到：這不是一般「抽血管有紅血球溶血警語」的簡單個案；當時有極端白血球增多，而且醫囑介入與檢體時間互相",
+          "line_for_editor": 36
         },
-        "476d23ec5d1e4a10d1-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "對比06:00溶血與07:15乾淨重抽且說明無溶血不等於全數可信",
-          "nonredundancy_reason": "表格缺少這項檢體註腳便無法解釋為何K與Cr可信度不同",
-          "verdict": "keep",
-          "excerpt_for_editor": "10/28 06:00 檢體有顯著溶血註記；07:15 為不同採血點、無溶血的新檢體。所有數值都是合成教學資料；「無溶血」不是對其他每項分析物絕對準確的保證。各院 critical value 與單位依檢驗室規範為準。",
-          "line_for_editor": 41
-        },
-        "b1b9ffd73c74e6f984-1": {
-          "role": "case_evidence",
-          "reader_gain": "補足ECG觀察及重抽前未給insulin-glucose的實際合成時序",
-          "nonredundancy_reason": "使K下降推論不再偷偷假設治療資訊，也保留ECG不排除高鉀的例外",
-          "verdict": "keep",
-          "excerpt_for_editor": "把安全評估的結果放回時間線（本合成病例）：06:00 通報後，團隊立即評估病人並取得 12-lead ECG，未見新的高鉀危險心電圖變化；病人當時循環暫穩、原管有顯著溶血，因此安排迅速重抽及監測，在 07:15 結果前沒有給予 insulin-glucose。07:15 無溶血 K 4.9",
-          "line_for_editor": 43
-        },
-        "8bae2a82b1faee1630-1": {
-          "role": "orientation",
-          "reader_gain": "提醒先分三種證據角色而非立刻做十二種鑑別",
-          "nonredundancy_reason": "承接有多個面板與病例圖後的閱讀方向轉換，降低認知負擔",
-          "verdict": "keep",
-          "excerpt_for_editor": "先不要做十二個疾病的鑑別。這張時間序列其實先給了三個彼此不同的訊息。",
-          "line_for_editor": 64
-        },
-        "b810ee8a78b77f2688-1": {
-          "role": "causal_bridge",
-          "reader_gain": "以未降鉀且原管溶血的K6.3→4.9支持干擾，同時不排除後續真高鉀",
-          "nonredundancy_reason": "必須說明體外紅血球釋鉀的中介，才不會誤以為重抽已治好病人",
-          "verdict": "keep",
-          "excerpt_for_editor": "第一，K 6.3→4.9 的差異，發生在短時間重新採血、尚未降鉀治療的前提下；加上原樣本顯著溶血，較支持第一次結果遭檢體干擾。溶血是紅血球在體外破裂、細胞內鉀釋出到血清或血漿，而不是病人體內突然把大量鉀從細胞移出。這項重驗可以阻止我們用 insulin-glucose 治療一個不實的數字，",
-          "line_for_editor": 66
-        },
-        "5dc2d89ec6c636edf6-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "把Cr24小時增加0.52與KDIGO AKI對照，區分功能診斷與病因未明",
-          "nonredundancy_reason": "和K的樣本疑義形成關鍵對照，指出同一張報告各欄不是同步失真",
-          "verdict": "keep",
-          "excerpt_for_editor": "第二，Cr 1.16→1.68 mg/dL 約 24 小時增加 0.52，重抽仍為 1.69。依 KDIGO 定義，血清 creatinine 在 48 小時內增加至少 0.3 mg/dL，即符合 AKI 的肌酐診斷條件；不能用「化驗也許有問題」來把同步存在的真實 AKI 一筆勾銷。由於 ",
-          "line_for_editor": 68
-        },
-        "c9ae7963679708864f-1": {
-          "role": "decision",
-          "reader_gain": "分別指出Hb/WBC/Mg的新增問題與各自下一步，而非機械輸血或抗生素",
-          "nonredundancy_reason": "讓讀者看到非首要紅字仍需可行的分流條件，不只是抽象提醒",
-          "verdict": "keep",
-          "excerpt_for_editor": "第三，Hb 從 11.3 變成 10.2、WBC 緩升、Mg 下降，提供的是新的追問而不是自動的處方。Hb 下降可能牽涉血液稀釋、採血、出血、溶血或既存貧血變化；要問血便、黑便、生命徵象、輸液與體重、網狀紅血球或必要的出血證據。Hb 10.2 並非一般穩定成人依 AABB 2023 建議即",
-          "line_for_editor": 70
-        },
-        "dfdbc44419a357adbe-1": {
-          "role": "causal_bridge",
-          "reader_gain": "抽象化同一檢體一個分析物失真卻不代表全假，真異常亦非病因",
-          "nonredundancy_reason": "將前三個項目差異濃縮為可遷移的測量與病理分離模型",
-          "verdict": "keep",
-          "excerpt_for_editor": "這裡有第一個重要區分：一個樣本的某項分析物是假的，不代表同一張報告其他項目都假；某項異常是真的，也不代表你已知道造成它的病理機轉。",
-          "line_for_editor": 72
-        },
-        "48e0da610187803692-1": {
+        "e6b00153d880fdf65d-1": {
           "role": "definition",
-          "reader_gain": "解釋SCr生成、排除與時間滯後，BUN額外受代謝及血容量影響",
-          "nonredundancy_reason": "為心衰AKI的錯誤補液推論補上先備量測生理",
+          "reader_gain": "列出採樣位置、檢體、運輸、治療前後的核對維度。",
+          "nonredundancy_reason": "把病例轉成可遷移的測量判讀，而非藥物清單。",
           "verdict": "keep",
-          "excerpt_for_editor": "Creatinine 是肌肉代謝產物，血液濃度取決於生成、腎清除、分布容積與時間。它升高可提示過濾功能下降，但不是腎臟切片，也不是即時血流計。BUN 更受蛋白質代謝、腸胃道出血、類固醇、肝臟功能與水分狀態影響。尿量則反映產尿和收集量，可能比 creatinine 更早出現警訊；但漏接尿、利",
-          "line_for_editor": 76
+          "excerpt_for_editor": "這段讀法，和照抄一張「高鉀就打什麼藥」的表不同。要問的是：K 這個數字來自哪種檢體、在哪個時間採集、怎麼送達與處理、在治療前還是後、其他資料是否支持真性高鉀？ 試管外破壞細胞與病人體內溶血是兩件不同的事，前者不能自動拿來解釋患者的 Hb 下降。",
+          "line_for_editor": 38
         },
-        "fc4a1c099cc3cb2879-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "驗算75公斤8小時240mL平均0.4，強調均值不能證明逐小時連續6小時",
-          "nonredundancy_reason": "解決尿壺漏記及分時資訊缺口，避免單靠平均值錯誤確認尿量KDIGO條件",
-          "verdict": "keep",
-          "excerpt_for_editor": "本病例最近 8 小時若確實只有 240 mL，以 75 kg 計，8 小時平均約 0.4 mL/kg/h，提示少尿風險；但8 小時平均值不能單獨證實連續 6 小時的尿量門檻，必須核對分時尿量，才能判斷是否符合 KDIGO 尿量 AKI 條件（<0.5 mL/kg/h 持續至少 6 小時）。",
-          "line_for_editor": 78
-        },
-        "4c42c86ed6889e6057-1": {
-          "role": "counterfactual",
-          "reader_gain": "指出負平衡1.4L和Cr上升不能等同血管內缺水，擁血與低灌流可共存",
-          "nonredundancy_reason": "直接反駁病房常見停利尿加saline的單向反射，必須保留",
-          "verdict": "keep",
-          "excerpt_for_editor": "最容易犯錯的地方，是看見前一天利尿 1.4 L、今天 Cr 上升，就自動停止利尿、再補 500 mL saline。負平衡不等於 intravascular depletion；頸靜脈鬱血也不等於腎臟一定能承受持續無限量的利尿。心衰竭可能因靜脈鬱血使腎灌流壓梯度下降；也可能在降壓、過度去充",
-          "line_for_editor": 80
-        },
-        "6d5a690dc3d3cb77b8-1": {
-          "role": "decision",
-          "reader_gain": "列出病人查體與藥物、沉渣及必要阻塞評估，辨識繼續去充血或調整治療",
-          "nonredundancy_reason": "是把前段多機轉解釋轉成當日床邊收集何種證據的必要橋梁",
-          "verdict": "keep",
-          "excerpt_for_editor": "因此，接下來要回到床邊：比較症狀與體重、orthostatic symptoms、血壓與灌流、JVP、肺部鬱血、皮膚灌流、I/O 的可信度，回顧藥物／新顯影劑、尿液分析與沉渣，必要時評估阻塞或心臟血流動力學。這些證據有些支持「仍鬱血，可能需要更精確地繼續去充血」，有些支持「低灌流或腎毒性，",
-          "line_for_editor": 82
-        },
-        "f2724da5022e3bfb09-1": {
-          "role": "safety",
-          "reader_gain": "把AKI接到RAAS藥物暫停或調整與難治併發症才考慮RRT的決策界線",
-          "nonredundancy_reason": "後段的K案例需要這個安全框架，否則只有診斷而沒有藥物及器官支持",
-          "verdict": "keep",
-          "excerpt_for_editor": "AKI 也會立即改變藥物安全：重估 ACEi/ARB/MRA、NSAID、含鉀藥與經腎排除藥物的給藥風險，依實際循環、鉀、腎功能變化與適應症個別決定暫停或調整；不要把「AKI＝永久停用所有 RAAS 抑制劑」當作規則。若真有持續性嚴重高鉀、肺水腫難控、嚴重酸中毒或尿毒症臨床併發症，才會把腎",
-          "line_for_editor": 84
-        },
-        "8889e3b9f0b83e4c78-1": {
-          "role": "definition",
-          "reader_gain": "區分K濃度與總鉀、Na與有效滲透質及高血糖背景",
-          "nonredundancy_reason": "避免見Na132便補鹽、見K變化便推全身鉀總量，與腎功能段不同層級",
-          "verdict": "keep",
-          "excerpt_for_editor": "K 是血液濃度，同時受腎排除、細胞內外移動、酸鹼、胰島素與檢體溶血影響；高 K 不一定等於全身鉀總量過多，低 K 也不保證總量一定減少。Na 主要是水與有效滲透質平衡的訊號；不能看到 Na 132 就推論缺鹽，還需先問血糖、tonicity 與臨床容量訊號。此例 glucose 151 對",
-          "line_for_editor": 88
-        },
-        "24ce47a60f9524b7e4-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "說明serum total CO2和血氣計算HCO3並不等同，也不能推pH與代償",
-          "nonredundancy_reason": "為下一段選擇何時算AG與驗blood gas建立物理量前提",
-          "verdict": "keep",
-          "excerpt_for_editor": "Chemistry panel 上的 serum total CO₂ 以碳酸氫根為主要成分，近似卻不完全等同於由 ABG pH/PaCO₂ 計算的 bicarbonate。CO₂ 20 只能說可能存在代謝性酸鹼異常或相關檢體差異，不能單憑它宣告酸中毒的 pH、呼吸代償是否正確或有無混合障礙",
-          "line_for_editor": 90
-        },
-        "eee58c5381f2bf748a-1": {
+        "a1d9179ef42fab4c7c-1": {
           "role": "causal_bridge",
-          "reader_gain": "以同時點Na133-Cl100-totalCO2 20估未校正AG13並留下albumin未知",
-          "nonredundancy_reason": "是一個可驗算的案例計算，明確限制不能據AG13排除乳酸或混合酸鹼病因",
+          "reader_gain": "以細胞內外鉀差及前分析因素解釋檢體干擾。",
+          "nonredundancy_reason": "補上前面觀察為何可能發生的生理與實驗室機轉。",
           "verdict": "keep",
-          "excerpt_for_editor": "這張表其實可以再做一個有條件的交叉檢查：若暫把 07:15 的 serum total CO₂ 20 當成近似 HCO₃⁻，Na 133、Cl 100，則未校正 anion gap ≈ 133 − (100 + 20) = 13 mmol/L。這是由同一時點化學檢驗計算出的示例，不是另一項",
-          "line_for_editor": 92
+          "excerpt_for_editor": "AJKD Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025 進一步指出，採檢、運送、保存、分析方法乃至檢驗後報告都會影響結果。細胞內鉀遠高於細胞外；抽血後溶血或特殊血球狀態可能改變樣本的 K，這是",
+          "line_for_editor": 40
         },
-        "f919d91c2291d60150-1": {
-          "role": "safety",
-          "reader_gain": "將WBC/DC絕對數與急跌platelet的clumping、TMA、DIC危險改為平行核查",
-          "nonredundancy_reason": "這段補CBC解釋獨立性，避免排除採檢假象時延誤真正消耗或微血管病",
+        "f41c2a98b19ddf2d85-1": {
+          "role": "case_evidence",
+          "reader_gain": "另列62歲血小板增多女性的serum/plasma/whole-blood差異。",
+          "nonredundancy_reason": "阻止將AML氣送管機轉當成全部偽高鉀成因。",
           "verdict": "keep",
-          "excerpt_for_editor": "CBC 是循環血液中血球數量、Hb 和紅血球指標的快照。WBC 是總白血球量，不能代替 differential 裡各細胞的absolute count；嗜中性球百分比上升也可能只是其他族群下降。Platelet 驟降時，檢體假象與真實危險應平行評估：查看 analyzer flags／血",
-          "line_for_editor": 96
+          "excerpt_for_editor": "不要把 AML 個案的「氣送管＋脆弱白血球」當成唯一一種偽高血鉀。2018 年 Šálek 報告的是另一位 62 歲女性，她有 essential thrombocythemia，因胃潰瘍出血接受手術後暫停原本的血液疾病用藥。原始病例與 Table 1 當次抽血顯示 platelets 1",
+          "line_for_editor": 44
         },
-        "617cac7faf9d6450a7-1": {
-          "role": "counterfactual",
-          "reader_gain": "以新黑便、低壓或血小板急跌展示相同CBC會導向不同急迫處置",
-          "nonredundancy_reason": "比前段CBC物理量更進一步，提供資料變更使行動轉向的證據",
+        "cbfab75bed49446e12-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明凝血時血小板釋鉀與11組相關資料的限制。",
+          "nonredundancy_reason": "使血清與血漿差異有機轉，也不把相關當普遍校正公式。",
           "verdict": "keep",
-          "excerpt_for_editor": "到這裡，我們尚無出血證據，也沒有用 WBC 自動升級抗生素；但若出現黑便、血壓下降、胸痛或血小板急跌，新的病人訊號會使同一組實驗室數值導向不同的立即檢查與處置。這就是臨床判讀與逐項背正常值的差別。",
-          "line_for_editor": 98
+          "excerpt_for_editor": "為什麼 platelet 會影響 K？Serum 需要凝血，血小板在此過程可能釋出細胞內的 K；抗凝的 plasma 不經相同凝固過程，而 whole blood 的前處理又不同。作者認為血小板與白血球增加、檢體離心時細胞可能受損，均有助於解釋結果。原文還有11 組血清 K 與 plate",
+          "line_for_editor": 46
         },
-        "7a2a17013a7d0fc051-1": {
-          "role": "counterfactual",
-          "reader_gain": "新增K6.3合併新QRS寬與心搏過緩，要求calcium及轉移／排除分工",
-          "nonredundancy_reason": "展示ECG證據提高急迫度後，即使溶血也不可等第二管的真正改判",
+        "d967662cca96db2330-1": {
+          "role": "case_evidence",
+          "reader_gain": "精確交代Wilson低風險66例的鉀分布與信賴區間。",
+          "nonredundancy_reason": "為後續外推限制提供實際研究分母與不確定度。",
           "verdict": "keep",
-          "excerpt_for_editor": "反事實 A：原來 K 6.3 的病人突然心搏過緩，ECG 出現 QRS 變寬。 即使檢體標有溶血，也不能靠重新抽血拖延急救。要立即依院內成人高鉀急救流程、請資深醫師到場，優先處理心肌膜不穩定（IV calcium）並同時安排使鉀移入細胞及移除體內鉀、心電監測與治療後血糖／鉀重測。IV ca",
-          "line_for_editor": 102
+          "excerpt_for_editor": "2020 年正式發表的前瞻性急診研究 Accuracy of Hemolyzed Potassium Levels in the Emergency Department 從有溶血高血鉀且曾在 12 小時內重抽的個案中，最後留下66 個低風險遭遇；初次溶血 K 中位數 5.8 mmol/L",
+          "line_for_editor": 50
         },
-        "acc1bdd0ce8aa47218-1": {
-          "role": "counterfactual",
-          "reader_gain": "確認乾淨重抽K6.4及AKI仍需追蹤處理，區分moderate條件式療法",
-          "nonredundancy_reason": "反駁ECG陰性等於可不治療，避免中度高鉀全面給固定處方",
+        "fc1274a8dc9ec7d988-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將65歲上下、CKD、ACEi與血液惡性病排除條件轉成反例。",
+          "nonredundancy_reason": "阻止把66人觀察套用至高危病房病人。",
           "verdict": "keep",
-          "excerpt_for_editor": "反事實 B：重抽後 K 仍是 6.4，且 Cr 上升、尿量可靠地持續下降，ECG 暫無顯著變化。 重抽排除了最顯眼的採檢干擾，卻沒有把病人變安全。按照 UKKA 2026，K 6.0–6.4 mmol/L 屬 moderate hyperkalaemia；當合併 AKI、臨床不穩或可能快速",
-          "line_for_editor": 104
+          "excerpt_for_editor": "這結論不能搬到所有病房病人。原研究刻意排除 65 歲以上、eGFR <60、使用可能影響 K 的藥物、血液惡性疾病等情況，也排除重抽前已接受降鉀治療者。例如一名 70 歲、使用 ACEi 且懷疑 AKI 的心衰竭病人，不在這 66 人的驗證族群內；不能以這項研究保證「檢體有溶血，就不需評估",
+          "line_for_editor": 52
         },
-        "284cec435ba556bc89-1": {
+        "aca84aec82aa711f43-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分399候選、333排除、66納入與35未重抽的選擇機制。",
+          "nonredundancy_reason": "沒有這段容易把0/66錯誤當成不重抽的安全試驗。",
+          "verdict": "keep",
+          "excerpt_for_editor": "研究設計還有一個更根本的限制： Wilson 等人從 EHR 找到有「初次溶血高 K、後續重抽」紀錄的 399 次就診，再依事先條件排除 333 次，才得到 66 次。原文 Limitations 另記載 35 例未重抽就已離院而排除在分析外。換言之，這項前瞻性觀察研究檢驗的是「符合條件、",
+          "line_for_editor": 54
+        },
+        "91318e82a14bb1af62-1": {
+          "role": "case_evidence",
+          "reader_gain": "建立Stephan 2440、1576、864及597的分母關係。",
+          "nonredundancy_reason": "提供後續圖1巢狀分母的真實研究數據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "接著讀 2025 年 West J Emerg Med 回溯性研究 Hyperkalemia or Not? A Diagnostic Pitfall in the Emergency Department：研究的是初次 K ≥5.0 且當日有重抽的 2,440 名急診患者，其中 1,57",
+          "line_for_editor": 56
+        },
+        "046ef13ff6577f7b9e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制35%和69%僅適用當日重抽的選擇樣本。",
+          "nonredundancy_reason": "防止把操作性分類當成所有急診患者盛行率。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這些數字不能簡寫成「急診高血鉀有 35% 都是假」，因為研究事先選了有當日重抽的人，不是所有送檢者或所有病房患者的盛行率。也不能用「69% 有溶血」推論溶血是所有異常唯一原因：研究分類建立的是抽樣與重測之間的關係，仍要辨別治療時序、患者危急風險和其他機轉。",
+          "line_for_editor": 58
+        },
+        "ea09bdf69adf4a54c5-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "標示CO2、Na、BUN/Cr為原理類比而非病例結果。",
+          "nonredundancy_reason": "保留跨檢驗項目的測量問題而不虛造其他病因。",
+          "verdict": "keep",
+          "excerpt_for_editor": "以下是測量原理的類比，不是上述 AML、血小板或急診 K 研究直接驗證的其他電解質結論。 Serum total CO₂ 主要與 bicarbonate 相關，卻不是動脈 pH 和 PaCO₂；Na 需連同水與滲透質的背景解讀，部分測定方法（例如間接 ISE）還可能受樣本組成干擾；BUN／",
+          "line_for_editor": 101
+        },
+        "8da25ba9403e670b76-1": {
           "role": "source_context",
-          "reader_gain": "把UKKA2026 Figure4與Table22的保心、shift、remove與葡萄糖風險回到病例",
-          "nonredundancy_reason": "原圖是五環節和表格條件，這段解釋為何不能停在一次insulin後K下降",
+          "reader_gain": "明確切換到不同心衰研究群體而非延伸AML病史。",
+          "nonredundancy_reason": "明確保護跨病人來源身分，避免將心衰竭研究的病程拼裝進原 AML 病例。",
           "verdict": "keep",
-          "excerpt_for_editor": "這個分岔也解釋 UKKA 高鉀指引的原始 Figure 4（印刷 p.75） 為何不把「打完 insulin，K 暫時降了」畫成終點。若確有需要治療的高鉀，處置包含依心電與臨床危險保護心臟、促使鉀轉入細胞、實際移除體內鉀、重新測量 K 與血糖，以及追查病因避免再升；五者的臨床適用條件不同，",
-          "line_for_editor": 106
+          "excerpt_for_editor": "這裡切換到另一批不同病人與不同證據，不是在前述 AML 病人身上加寫心衰竭。",
+          "line_for_editor": 105
         },
-        "0c849f714ba69101ab-1": {
-          "role": "counterfactual",
-          "reader_gain": "改成下午休克、B-lines多及尿量更少後，優先轉向灌流／呼吸危險",
-          "nonredundancy_reason": "反例讓早上假性高鉀解決不會被當成整日病情安全結案",
+        "58f69f1f6229aa5d83-1": {
+          "role": "causal_bridge",
+          "reader_gain": "分解Cr上升可能來自灌流、鬱血與實質傷害。",
+          "nonredundancy_reason": "解釋同一檢驗趨勢為何不能單獨識別腎病因。",
           "verdict": "keep",
-          "excerpt_for_editor": "反事實 C：K 重驗已正常，但病人下午血壓下降、呼吸更喘、肺部 B-lines 增多、尿量更少。 早晨的假性高鉀不再是首要問題；需要重新評估肺水腫與灌流、氧氣／呼吸支持、床邊心臟功能、感染或其他休克來源，並按狀況升級照護。不能因為早晨已排除假性高鉀就把一整天視作檢驗問題結案。此時連「繼續利",
-          "line_for_editor": 108
+          "excerpt_for_editor": "在急性失代償心衰竭，serum creatinine 可能因多種機轉上升：動脈灌流下降、靜脈鬱血、治療中的血流動力改變、真正腎實質受傷、合併感染或藥物傷害等。Acute kidney injury in acute heart failure—when to worry and when ",
+          "line_for_editor": 107
         },
-        "efaf814b5561f40920-1": {
+        "ad2359c956eb6053bf-1": {
+          "role": "decision",
+          "reader_gain": "以密西根指引限定持續利尿或補液需要臨床條件。",
+          "nonredundancy_reason": "阻止從單一Cr濃度直接產生遠端處方。",
+          "verdict": "keep",
+          "excerpt_for_editor": "密西根大學住院心衰竭利尿指引 Q18 也明確解釋：持續有鬱血時，適度 SCr 上升不一定需要自動停止利尿；但顯著低血壓、血管內容量耗竭與其他 AKI 病因仍要辨認。這是有臨床評估條件的敘事與建議，不是看到一個 Cr 便由 AI 遠端判定「繼續打利尿劑」或「立即補 saline」。",
+          "line_for_editor": 109
+        },
+        "4a8bc9290d8521be86-1": {
+          "role": "definition",
+          "reader_gain": "把KDIGO 48h、7d、6h時間條件與尿量窗口並列。",
+          "nonredundancy_reason": "防止孤立Cr或8小時總尿量被錯當完整AKI診斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "AKI 的診斷本身另有時間維度：請核對 KDIGO 2012 原始 Table 2（AKI 分期，PDF p.22） 的定義，並閱讀 Figure 4（Stage-based management，PDF p.28） 如何將風險分層與腎毒性藥物、容量／灌流、Cr／尿量監測連起來；這張圖不是",
+          "line_for_editor": 111
+        },
+        "bdf03ce29b9a9e4ba3-1": {
           "role": "evidence_boundary",
-          "reader_gain": "總結重新採樣只改變量測確定性，不能治好動態病人",
-          "nonredundancy_reason": "收束三個反事實共同結論，回到入門量測與臨床兩條因果線",
+          "reader_gain": "將表格中的未知ECG、尿量與影像保留為未知。",
+          "nonredundancy_reason": "確保讀者不把虛構的09:00檢驗或治療當作真實病例。",
           "verdict": "keep",
-          "excerpt_for_editor": "最深的一條界線是：重新抽血可以修正「測量」層級的不確定性，不能自動修復正在演變的「病人」；一套漂亮的鑑別診斷也不應阻止急症處置。",
-          "line_for_editor": 110
+          "excerpt_for_editor": "這裡的空格就是應該承認的未知數，而不是由教材為了好看把 ECG、尿量、影像或「09:00 新證據」自己補出來。讀者要學的是如何發現資訊不足以支持結論，不是記住一位從不存在的病人在 09:00 做了哪種醫囑。",
+          "line_for_editor": 123
         },
-        "123ab11e01c2b030a2-1": {
+        "7669adfff7d17f210d-1": {
+          "role": "safety",
+          "reader_gain": "直接反駁溶血等於無需急救並保留正常ECG限制。",
+          "nonredundancy_reason": "把危急安全硬停點從前文病例重新提取。",
+          "verdict": "keep",
+          "excerpt_for_editor": "誤解一：高 K 檢體有溶血，表示患者一定不需要急救。 錯。溶血增加假性高鉀可能，危險症狀、ECG、快速複查與個體高危條件仍需並行評估；正常 ECG 不是排除真性高鉀的檢查。原始 66 人研究不涵蓋高齡、CKD 和 RAAS 用藥患者。",
+          "line_for_editor": 127
+        },
+        "8d7f3f6260d8e7c4a3-1": {
           "role": "decision",
-          "reader_gain": "從可靠K4.9、AKI及Mg1.5重組今日監測、補充和上級回報的工作計畫",
-          "nonredundancy_reason": "將數學與病例分支轉換成床邊下一步，不讓理論停在疾病鑑別",
+          "reader_gain": "以UKKA Figure4和Table22補齊治療後低血糖與反彈風險。",
+          "nonredundancy_reason": "避免只記暫時移鉀而遺漏安全監測和本地處方邊界。",
           "verdict": "keep",
-          "excerpt_for_editor": "回到原始模擬病例，07:15 無溶血 K 4.9、ECG 無新危險變化、生命徵象暫穩定，不應只因第一管 K 6.3 就直接給 insulin-glucose；但需維持對 AKI 與再度升鉀的合理監測。Cr 明確持續升高且疑似尿量下降，要實際確認尿量、用藥、血流動力與鬱血，安排針對 AKI ",
-          "line_for_editor": 114
+          "excerpt_for_editor": "急救風險與檢體確認必須並行，而不是「懷疑假的就一律等」或「看到紅字就無差別給藥」。UKKA 2026 原始 Figure 4（PDF p.75） 將有危險時的心肌保護、鉀轉移、實際排鉀、K／血糖監測及防復發分開；Table 22（PDF p.98） 則提醒 insulin-glucose ",
+          "line_for_editor": 129
         },
-        "4753111db33f640c69-1": {
-          "role": "decision",
-          "reader_gain": "示範可供下一班核對的30秒交班，同時報真K、Cr和尿量不確定性",
-          "nonredundancy_reason": "這是全文核心教學產品，讓讀者比較開頭只是念紅字的交班方式",
-          "verdict": "keep",
-          "excerpt_for_editor": "> 「這位心衰竭病人早上通報 K 6.3，但原管有顯著溶血，已即時評估 ECG 與生命徵象，07:15 無溶血重抽是 4.9，目前沒有高鉀急救的直接依據。不過 Cr 從昨天 1.16 升到 1.69、符合 KDIGO AKI，近 8 小時尿量紀錄偏少但可能漏記。病人症狀改善、仍有鬱血體徵，",
-          "line_for_editor": 118
-        },
-        "3df282b409635b728c-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "要求交班每項敘述都有下一班可驗的改判條件",
-          "nonredundancy_reason": "用具體可驗證性的後設檢核收束口頭交班，而非重述異常",
-          "verdict": "keep",
-          "excerpt_for_editor": "交班裡的每句話都可被下一班驗證。與「昨天和今天相比有十個紅字」相比，這樣的交班明確區分了已確認的異常、仍待查的機轉、急迫性及下一個改判條件。",
-          "line_for_editor": 120
-        },
-        "fbcb725eb87b76c19b-1": {
-          "role": "decision",
-          "reader_gain": "把何時停止每日routine抽血加入對檢驗必要性的臨床決策",
-          "nonredundancy_reason": "和不穩定期間必須追K/Cr形成時間前提差異，防止過度抽血",
-          "verdict": "keep",
-          "excerpt_for_editor": "同樣重要的是，明天是否還要抽同樣一整套？ 對這名仍有 AKI、藥物與電解質風險的病人，追蹤有明確目的；但是當風險解除、生命徵象與檢驗持續穩定，天天抽 CBC/chemistry 不會自動帶來更好照護，還可能增加醫源性貧血。每個 repeat test 都應該能說出「想知道什麼、何時會改變處",
-          "line_for_editor": 122
-        },
-        "961d7543cf79a74397-1": {
+        "8854c9a79b02ed53d8-1": {
           "role": "counterfactual",
-          "reader_gain": "未溶血K6.1且ECG正常的轉移題測試急迫監測與複驗決策",
-          "nonredundancy_reason": "不同於主案例重抽變正常，檢驗可靠時依然需要正確處理真高鉀",
+          "reader_gain": "否定AML 7.8至3.6可證明從未真高鉀。",
+          "nonredundancy_reason": "測試讀者是否真正保留D樣本的治療時序混雜。",
           "verdict": "keep",
-          "excerpt_for_editor": "題 1（新情境）：穩定住院者 K 6.1，檢體沒有溶血註記，ECG 正常，Cr 當天快速上升。最佳下一步是「完全排除高鉀」還是「及時確認數值、依嚴重度監測、查藥因並安排治療策略」？ 解析：後者。ECG 正常不能排除高鉀的風險，且沒有溶血註記也不是樣本絕對可靠；兩條風險線必須並行，不能把原病",
+          "excerpt_for_editor": "誤解二：K 7.8 重抽後 3.6，就等於從未真高鉀。 不成立。AML 病例的後段樣本有降鉀介入後的時序污染，必須回查原始 Table 1 的檢體別及採血方式，不能假裝有無治療的成對試驗。",
+          "line_for_editor": 131
+        },
+        "aec5e312b219131226-1": {
+          "role": "counterfactual",
+          "reader_gain": "反駁將 AKI 定義直接當作利尿過量、血容量不足的病因診斷。",
+          "nonredundancy_reason": "要求由病因證據而非定義直接跳到補液或停藥。",
+          "verdict": "keep",
+          "excerpt_for_editor": "誤解三：發現 AKI 就代表利尿藥造成缺水。 AKI 的定義不直接提供病因。血流動力、鬱血程度及治療反應是另一組必須解釋的證據；來源是心衰竭研究與專業指引；不應藉虛構的 Hb、Mg 或 Cr 數據替病人補寫未曾觀察的病程。",
+          "line_for_editor": 133
+        },
+        "2076be6ea5f081110d-1": {
+          "role": "counterfactual",
+          "reader_gain": "反駁每個CBC/Mg/Na紅字都要對應一條醫囑。",
+          "nonredundancy_reason": "讓缺乏症候群證據的處方衝動有明確界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "誤解四：CBC、Mg 或 Na 出現紅字，總要配上一條明確醫囑。 沒有對應臨床症候群、病程、症狀、危險性與測量品質的支持，教材只能呈現可能機轉與需要查證的訊息，不能編造使用某藥後的好轉來合理化處置。",
           "line_for_editor": 135
         },
-        "8543f1c64e64d92108-1": {
-          "role": "counterfactual",
-          "reader_gain": "寒冷四肢與下降血壓改變剩餘鬱血下的利尿策略",
-          "nonredundancy_reason": "測試讀者是否理解仍水腫不等於低灌流可被忽略，與前題電解質不同",
+        "e7b51150ed4adc7933-1": {
+          "role": "navigation",
+          "reader_gain": "提問AML Table1中體內濃度與試管釋鉀的分別。",
+          "nonredundancy_reason": "這是要求讀者回到原始 Table 1 主動辨認測量對象，而非再次閱讀已給的答案。",
           "verdict": "keep",
-          "excerpt_for_editor": "題 2（時間改變）：心衰竭病人昨天 Cr 1.2、今天 1.6，腿腫改善，但現在四肢濕冷、血壓持續下降。若只憑「仍有水腫」而加大利尿是否正確？ 解析：不能。當下已出現灌流危險，需緊急重新分層與升級；殘餘水腫不能提供足以忽略休克／低心輸出的理由，也不能單一數值反向推導必須大量補液。",
-          "line_for_editor": 138
+          "excerpt_for_editor": "構念：實驗室的 K 是病人體內濃度，還是也可能包含檢體外釋放的鉀？AML 原始 Table 1 哪些資訊證明這個問題很重要？",
+          "line_for_editor": 139
         },
-        "bb163059ccaf17966f-1": {
-          "role": "counterfactual",
-          "reader_gain": "穩定數日且無決策目的時追問是否還要抽CBC/BMP",
-          "nonredundancy_reason": "將少抽血視為正向臨床選擇，測試非急症情境的知識遷移",
+        "6a33692ca1620afe10-1": {
+          "role": "navigation",
+          "reader_gain": "提問66人外推與2440人分母的競爭限制。",
+          "nonredundancy_reason": "檢驗讀者能否在兩份納排不同的研究間維持獨立母體與正確分母，不混合估計。",
           "verdict": "keep",
-          "excerpt_for_editor": "題 3（停止檢驗）：住院者症狀改善、輸液與相關藥物無近期變動，過去幾天血球及腎功能均穩定，明天的 CBC/chemistry 沒有預先說明會改變什麼決策。最合理的是加抽更多 biomarkers，還是重新討論檢查必要性？ 解析：後者。好的檢驗策略包含「選擇不抽」，不是用資料量取代臨床問題。",
+          "excerpt_for_editor": "臨床推理：66 人的低風險研究，為什麼不能幫 70 歲 CKD 心衰竭患者做完整治療決策？2,440 人研究的分母又是誰？",
+          "line_for_editor": 140
+        },
+        "5b1f30bd959995cd1d-1": {
+          "role": "navigation",
+          "reader_gain": "提問Cr上升在不同去鬱血條件下的改判。",
+          "nonredundancy_reason": "要求補齊灌流、鬱血、尿量與治療反應等床邊證據，才可進入治療方向的討論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "破除推論：為何「Cr 上升」同時可能見於有效去鬱血和病況惡化？還要補哪些床邊證據，才有資格從生理假說進入治療討論？",
           "line_for_editor": 141
         },
-        "5f4fb8bdcf9f35bbb2-1": {
-          "role": "source_context",
-          "reader_gain": "說明三題為自編並拒絕偽造官方國考題身分",
-          "nonredundancy_reason": "避免後續重複練習與正式考題被混淆，不是讀者進度管理",
+        "fbb5989661c565afd4-1": {
+          "role": "safety",
+          "reader_gain": "提供原始來源入口並聲明非AI醫囑或合成面板。",
+          "nonredundancy_reason": "最後明示讀者不可將教學材料當作醫囑驗收。",
           "verdict": "keep",
-          "excerpt_for_editor": "這三題都是本站自編，不是考選部官方國考題；尚未核對到能直接對應整張 morning lab sheet 決策鏈的官方題目，不虛列年度、梯次、題號或標準答案。各個專題後續仍須接回可核對的國考原卷。",
-          "line_for_editor": 144
-        },
-        "c2edd2b8d90228528d-1": {
-          "role": "source_context",
-          "reader_gain": "AJKD BMP檢驗異常綜述提供干擾分類，並排除合成病例來源誤認",
-          "nonredundancy_reason": "必須保留來源及證據限度以免把K6.3的人工數值冒充研究觀察",
-          "verdict": "keep",
-          "excerpt_for_editor": "檢體可信度：Takieddine & El-Khoury, Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025, AJKD 2025;85:104–114。文章討論 hemolysis、採檢與分析方",
-          "line_for_editor": 148
-        },
-        "9c5a5a4a86d0602908-1": {
-          "role": "source_context",
-          "reader_gain": "KDIGO原Table2及Figure4給AKI門檻與管理優先而不代替病因評估",
-          "nonredundancy_reason": "提供源圖直接定位，支撐前述0.52和尿量判讀而不重製原圖",
-          "verdict": "keep",
-          "excerpt_for_editor": "AKI 門檻：對照 KDIGO 2012 Table 2（印刷 p.19；PDF p.22） 與 Figure 4（印刷 p.25；PDF p.28）。KDIGO 2012 AKI 定義，包括 serum Cr ≥0.3 mg/dL/48 h、≥1.5 倍基線/7 天，或 urine ou",
-          "line_for_editor": 149
-        },
-        "0bc99e9178d1323b60-1": {
-          "role": "source_context",
-          "reader_gain": "KDIGO CKD/eGFR解釋不同於AKI下的即時GFR",
-          "nonredundancy_reason": "補足讀者對自動eGFR可能失真的來源回查",
-          "verdict": "keep",
-          "excerpt_for_editor": "eGFR 邊界：KDIGO 2024 CKD guideline 與相關臨床解讀指出非穩態 creatinine、肌肉量及藥物可使 eGFR 估計失準；不可拿 AKI 的即時 eGFR 當穩定腎功能的精確量測。KDIGO 2024 CKD；臨床解讀。",
-          "line_for_editor": 150
-        },
-        "c9ae6f5bdedd737430-1": {
-          "role": "source_context",
-          "reader_gain": "UKKA2026官方版本讓危險高鉀的ECG分流和葡萄糖監測可回查",
-          "nonredundancy_reason": "本行屬急症處置源邊界，不由AJKD或KDIGO單獨支持",
-          "verdict": "keep",
-          "excerpt_for_editor": "危險高鉀：UK Kidney Association Treatment of Acute Hyperkalaemia in Adults 指引（官網顯示 2026-07 更新版供下載），以臨床嚴重度、ECG、重驗、即時治療與追蹤分流；具體用藥劑量須按實際版本及本院急救流程核對，不可把本文",
-          "line_for_editor": 151
-        },
-        "81572eaa3a28709210-1": {
-          "role": "source_context",
-          "reader_gain": "AABB穩定成人與AMI族群門檻不同，支持Hb10.2不能單獨下輸血醫囑",
-          "nonredundancy_reason": "提供獨立的血品適應性依據，不與樣本干擾研究混用",
-          "verdict": "keep",
-          "excerpt_for_editor": "輸血邊界：Carson et al, Red Blood Cell Transfusion: 2023 AABB International Guidelines, JAMA 2023。一般血流動力穩定成人多採限制性策略，通常 Hb <7 g/dL 時才考慮輸血，但疾病亞群與臨床脈絡不同；",
-          "line_for_editor": 152
-        },
-        "c5af34b1512cb99081-1": {
-          "role": "source_context",
-          "reader_gain": "Choosing Wisely僅在臨床穩定時反對無目的例行重驗",
-          "nonredundancy_reason": "將避免過度抽血的建議限定族群，不誤導正在AKI病人的監測",
-          "verdict": "keep",
-          "excerpt_for_editor": "檢驗選擇：Society of Hospital Medicine / Choosing Wisely 主張臨床與檢驗穩定時避免無目的重複 CBC/chemistry，屬對過度抽血的 stewardship 提醒，不適用正在急變或有明確藥物監測需求的病人。原始共識；Choosing Wis",
-          "line_for_editor": 153
-        },
-        "96c5a44920e4857ee9-1": {
-          "role": "navigation",
-          "reader_gain": "指出後續需要採血假象與AKI尿沉渣專文，避免一篇重複全部學科",
-          "nonredundancy_reason": "保留主文教學邊界與適當延伸方向，不含內部排程或PR狀態",
-          "verdict": "keep",
-          "excerpt_for_editor": "下一篇要補上的缺口：本篇證明「檢體可不可靠」與「病人是否危險」必須分開；但還沒教會你看到溶血、EDTA contamination、從輸液管採血、platelet clumping 時如何設計最小且不延誤救治的確認流程。那是《假性異常與採檢干擾》的獨立主題。腎功能機轉與尿沉渣另交給 AKI",
-          "line_for_editor": 155
+          "excerpt_for_editor": "全部原始病例、研究納排、指引 Figure／Table 與來源界線。本篇不提供選抽血項目或醫囑的 AI 範本；實際檢驗與治療需由照護團隊按病況及機構規範判斷。所列數字不是本站設計或合成的 Lab panel；原作者的觀察、分析性研究與指引共識並不被混寫成同一病人的時間線。",
+          "line_for_editor": 143
         }
       }
     },

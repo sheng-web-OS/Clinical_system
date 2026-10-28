@@ -1012,8 +1012,8 @@
           "source_token": "Staging of AKI",
           "mode": "source_link",
           "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22",
-          "why_link_instead": "原表有分期與尿量持續時間的必要註解；本站保留正版原頁連結，主文僅計算合成病例而不重製原表。",
-          "teaching_role": "對比肌酐在48小時內上升0.52與尿量紀錄不可信的界線，阻止用單一濃度直接解釋病因。",
+          "why_link_instead": "KDIGO 原表包含肌酐倍數、48小時/7天與尿量持續時間等精確診斷/分期條件；本文以原表連結解釋測量界線，不重製原表，也不以 AI 合成患者數字證明任何 AKI 病因或治療處方。",
+          "teaching_role": "讓讀者將AKI診斷時序與病因推斷分開；本稿以原指引說明48小時肌酐、7天倍數及連續尿量門檻，不虛構不存在的真實心衰竭病例時序。",
           "scope_limit": "Stage 1 是功能性分期，不表示確診特定腎小管病變、液體反應性或必須開始腎替代治療。"
         },
         {
@@ -1044,13 +1044,13 @@
           "scope_limit": "原表是UKKA條件式方案，台灣各院formulary、濃度與患者個別劑量須依當地流程核對。"
         },
         {
-          "locator": "KDIGO 2012 AKI Table 2 p.19 and UKKA July 2026 Figure 4 p.75 compared with original synthetic case lab timeline",
-          "source_token": "KDIGO 2012",
+          "locator": "Original self-designed visualization: 2024 AML case report Table 1 sample A-D time/method/transport and post-treatment confounding; 2025 ED n=2440 split, plus separate low-risk n=66 study",
+          "source_token": "PMC11462689",
           "mode": "illustrated",
           "anchor": "lab-three-clocks",
-          "caption_token": "KDIGO AKI",
-          "teaching_role": "將06:00溶血K與07:15新樣本、10/27至28肌酐上升和尿量可信度三條證據並列，而非只在文中抽象寫並行。",
-          "scope_limit": "這是本站合成病例原創證據比較圖，不是KDIGO或UKKA官方Figure的重畫，不是驗證過的診療演算法。"
+          "caption_token": "三條不混同的證據線",
+          "teaching_role": "以 AML A-D 12:00,20:03,20:48,23:37 K3.0/6.7/7.8/3.6 的運送/分析/治療交叉時間軸呈現不同條件無法直接做因果比較；另外把2025所篩當日重抽 n=2440 →1576/864→597/267 明畫不同分母，讓讀者不誤稱35%為所有急診假高鉀盛行率，n66低風險研究不混入此分母。",
+          "scope_limit": "兩組自製視覺均為原始已出版資料的研究導讀，不重製原期刊 Figure2 或 Table1 版面；AML 的 post-treatment K3.6 不能當未治療對照，n2440 是 selection sample、n66 是另一項排除高風險研究；皆非 validated clinical decision rule。"
         }
       ]
     },

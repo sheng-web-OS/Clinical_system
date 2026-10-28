@@ -1,64 +1,46 @@
-"""Guard the synthetic case's calculations and key clinical inference boundaries.
+"""Evidence-first Lab Medicine 01 regression: sample identity, cohorts, AKI limits.
 
-These content fixtures detect regression; they do NOT certify medical safety,
-guideline conformance, source rights or independent paragraph review.
+These assertions detect drift from original-source facts, not independent
+medical sign-off or proof that a reader learned clinical reasoning.
 """
-import pathlib
-import re
+from pathlib import Path
 import unittest
-
-ROOT = pathlib.Path(__file__).resolve().parents[1]
-ARTICLE = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
-SOURCES = ROOT / "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md"
-
+ROOT=Path(__file__).resolve().parents[1]
+ARTICLE=ROOT/"content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
+SOURCES=ROOT/"content/xiaoma-internal-medicine/lab-morning-sheet-sources.md"
 
 class LabInferenceConsistency(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.article = ARTICLE.read_text(encoding="utf-8")
-        cls.sources = SOURCES.read_text(encoding="utf-8")
+        cls.article=ARTICLE.read_text(encoding="utf-8")
+        cls.sources=SOURCES.read_text(encoding="utf-8")
 
-    def test_four_timepoints_and_units(self):
-        row = next(line for line in self.article.splitlines()
-                   if line.startswith("| Creatinine（mg/dL）"))
-        self.assertEqual(re.findall(r"(?<!\d)1\.\d{2}(?!\d)", row),
-                         ["1.05", "1.16", "1.68", "1.69"])
-        self.assertIn("10/28 07:15 重新採檢", self.article)
+    def test_real_aml_sample_sequence_and_intervention(self):
+        for cue in ("AML","Sample","12:00","20:03","20:48","23:37","6.7","7.8","3.6","Pneumatic tube","降鉀治療","30 分鐘"):
+            with self.subTest(cue=cue):
+                self.assertIn(cue,self.article)
+        self.assertIn("PMC11462689",self.sources)
 
-    def test_aki_creatinine_change_is_stated_and_correct(self):
-        self.assertGreaterEqual(1.68 - 1.16, 0.3)
-        self.assertIn("48 小時內增加至少 0.3 mg/dL", self.article)
-        self.assertIn("尿量 240 mL/8h", self.sources)
+    def test_selection_denominators_not_treated_as_all_patients(self):
+        for cue in ("66","2,440","1,576","864","597","95%","6%"):
+            with self.subTest(cue=cue):
+                self.assertIn(cue,self.sources)
+        self.assertIn("不是所有",self.article)
+        self.assertIn("不能搬到所有病房病人",self.article)
 
-    def test_same_timepoint_ag_is_calculated_not_inferred_as_normal(self):
-        self.assertIn("133 − (100 + 20) = 13 mmol/L", self.article)
-        self.assertIn("沒有 albumin", self.article)
-        self.assertIn("不是另一項實測", self.article)
-        self.assertIn("不能由 AG 13", self.article)
+    def test_aki_creatinine_vs_cause_is_distinguished(self):
+        for cue in ("KDIGO 2012","48 小時內","0.3 mg/dL","6 小時","病因"):
+            with self.subTest(cue=cue):
+                self.assertIn(cue,self.article)
+        self.assertIn("8 小時總量不足以單獨證明連續 6 小時",self.sources)
 
-    def test_moderate_hyperkalemia_safety(self):
-        self.assertIn("moderate hyperkalaemia", self.article)
-        self.assertIn("K 6.0–6.4 mmol/L", self.article)
-        self.assertIn("正常", self.article)
-        self.assertIn("低血糖與反彈", self.article)
-        self.assertIn("2C", self.sources)
-        self.assertIn("UKKA", self.sources)
+    def test_high_potassium_source_rights_and_safety_limits(self):
+        for cue in ("Figure 4","Table 22","低血糖","心電","UKKA"):
+            with self.subTest(cue=cue):
+                self.assertIn(cue,self.sources)
+        self.assertIn("原圖不在本站翻印",self.sources)
+        self.assertIn("不是",self.sources)
+        self.assertNotIn("原始圖表已完整目視驗收",self.sources)
+        self.assertIn("正常 ECG",self.article)
 
-    def test_original_hyperkalemia_figure_table_used_without_overclaim(self):
-        self.assertIn("Figure 4", self.article)
-        self.assertIn("Table 22", self.article)
-        self.assertIn("不是每名 K 6.4", self.article)
-        self.assertIn("不重製原圖", self.article)
-        self.assertIn("印刷 p.75", self.sources)
-        self.assertIn("印刷 p.98", self.sources)
-        self.assertIn("不提供固定劑量", self.sources)
-
-    def test_staged_evidence_and_rights_not_falsely_certified(self):
-        self.assertIn("KDIGO 2012 原表／原圖", self.sources)
-        self.assertIn("未完整審閱 180 頁", self.sources)
-        self.assertIn("原始圖表已完整目視驗收", self.sources)
-        self.assertIn("合成教學情境", self.article)
-
-
-if __name__ == "__main__":
-    unittest.main()
+if __name__=="__main__": unittest.main()

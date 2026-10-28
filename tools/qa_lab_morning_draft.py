@@ -20,8 +20,22 @@ sys.path.insert(0, str(ROOT / "site"))
 import build  # noqa: E402
 
 SOURCE = "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
-TITLE = "早晨一張 Lab sheet：真正要判斷的是什麼？"
 FIGURE = "#lab-three-clocks"
+
+
+def canonical_row():
+    """Use published metadata, and independently compare it to article H1."""
+    pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
+    matches = [page for page in pages if page.get("source") == SOURCE]
+    if len(matches) != 1:
+        raise AssertionError("Expected one canonical Lab reader registration")
+    row = dict(matches[0])
+    heading = (ROOT / SOURCE).read_text(encoding="utf-8").splitlines()[0]
+    if heading != "# " + row["title"]:
+        raise AssertionError("Article H1 differs from site/pages.json title")
+    if row.get("layout") != "reader" or not row.get("references"):
+        raise AssertionError("Published Lab reader lacks canonical source navigation")
+    return row
 
 
 def render_private_draft():
@@ -32,18 +46,7 @@ def render_private_draft():
     body = parser(source)
     body = re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)
     body = build.rewrite_internal_links(body, SOURCE)
-    row = {
-        "source": SOURCE,
-        "output": "xiaoma-20261028-lab-morning-sheet.html",
-        "title": TITLE,
-        "subtitle": "抽血檢驗的生命危險、採檢干擾、AKI 與可執行交班",
-        "collection": "xiaoma-internal-medicine",
-        "layout": "reader",
-        "section": "Lab Medicine｜值班與病房",
-        "date": "2026-10-28",
-        "navigation": False,
-        "references": "xiaoma-lab-morning-sheet-sources.html",
-    }
+    row = canonical_row()
     html = build.render_reader(row, body, rr.headings)
     style = (ROOT / "site/styles.css").read_text(encoding="utf-8")
     key = '<link rel="stylesheet" href="styles.css">'
@@ -60,6 +63,7 @@ def main():
     args = arg.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
 
+    expected_title = canonical_row()["title"]
     document = render_private_draft()
     findings = []
     failures = []
@@ -76,10 +80,35 @@ def main():
                     page.locator("article.article").wait_for()
                     figure = page.locator(FIGURE)
                     if figure.count() != 1:
-                        raise AssertionError("Exactly one patient-specific evidence figure required")
+                        raise AssertionError("Exactly one evidence-comparison figure required")
+                    # Check actual original-case chronology and the independent evidence groups.
                     rows = page.locator("article.article table")
                     if rows.count() < 2:
-                        raise AssertionError("Expected numeric lab table and decision boundary table")
+                        raise AssertionError("Expected real AML sample-method table and cross-panel evidence table")
+                    # This is source-based AML evidence, not the old synthetic four-timepoint panel.
+                    required_panel_cues = ("20:03", "20:48", "23:37", "6.7", "7.8", "3.6")
+                    numeric_tables = [rows.nth(k).inner_text()
+                                      for k in range(rows.count())]
+                    if not any(all(cue in table for cue in required_panel_cues)
+                               for table in numeric_tables):
+                        raise AssertionError("Missing published AML Table 1 method-and-treatment chronology")
+                    samples = figure.locator('[data-evidence-node="case-sample"]')
+                    if samples.count() != 4:
+                        raise AssertionError("Missing four observed AML sample nodes")
+                    cohorts = figure.locator('[data-evidence-node="cohort-subgroup"]')
+                    if cohorts.count() != 4:
+                        raise AssertionError("Missing 1576/864 to 597/267 cohort denominator branches")
+                    lowrisk = figure.locator('[data-evidence-node="lowrisk-cohort"]')
+                    if lowrisk.count() != 1:
+                        raise AssertionError("Low-risk n=66 sample must remain a separate study")
+                    figure_text = figure.inner_text()
+                    if not all(cue in figure_text for cue in
+                               ("AML 病例", "12:00", "20:03", "20:48", "23:37",
+                                "K 6.7", "K 7.8", "降鉀治療約 30 分鐘",
+                                "n=66", "n=2,440", "1,576", "864", "597", "267",
+                                "並非同一位病人")):
+                        raise AssertionError("Published samples or study denominators missing")
+
                     observed = page.evaluate("""() => ({
                       viewport: document.documentElement.clientWidth,
                       pageWidth: document.documentElement.scrollWidth,
@@ -89,7 +118,7 @@ def main():
                       tableOverflows: [...document.querySelectorAll('article.article table')].map(t =>
                         ({scrollWidth:t.scrollWidth,clientWidth:t.clientWidth})),
                       footerSource: [...document.querySelectorAll('footer a')].some(a =>
-                        a.innerText.includes('來源')),
+                        a.innerText.includes('來源') && a.getAttribute('href')?.includes('xiaoma-20261028-lab-morning-sheet-sources.html')),
                       fontCheckPassed: document.fonts.check('16px "Noto Sans TC"', '臨床抽血腎臟鉀')
                     })""")
                     observed["width"] = width
@@ -98,10 +127,11 @@ def main():
                     if observed["pageWidth"] > observed["viewport"] + 2:
                         failures.append(f"{width}px global overflow: "
                                         f"{observed['pageWidth']}>{observed['viewport']}")
-                    if observed["title"] != TITLE:
+                    if observed["title"] != expected_title:
                         failures.append(f"{width}px incorrect public-facing title")
-                    if (observed["articleText"] < 4000 or "K 6.3" not in observed["evidence"]
-                            or "Cr 1.16" not in observed["evidence"]):
+                    if (observed["articleText"] < 4000 or "K 6.7" not in observed["evidence"]
+                            or "n=66" not in observed["evidence"]
+                            or "n=2,440" not in observed["evidence"]):
                         failures.append(f"{width}px missing full case or figure evidence")
                     if not observed["footerSource"]:
                         failures.append(f"{width}px missing source navigation")
@@ -122,6 +152,7 @@ def main():
         finally:
             browser.close()
     report = {"mode": "PRIVATE_DRAFT_RENDER_NOT_PUBLICATION",
+              "canonical_title": expected_title,
               "source": SOURCE, "findings": findings, "failures": failures,
               "note": "Real reader renderer/CSS, not live Cloudflare, no medical or EPQC approval."}
     (args.output / "report.json").write_text(
