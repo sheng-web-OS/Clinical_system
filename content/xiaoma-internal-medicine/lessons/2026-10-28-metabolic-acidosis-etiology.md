@@ -213,6 +213,8 @@ Sodium bicarbonate 是另一種容易讓「數值」取代「病因」的介入�
 
 ### 原始病例、判讀與治療證據
 
+[查看病例 Figure 1–3、Table 1、IBCC、原始試驗與指引的精確來源定位](../metabolic-acidosis-sources.md)。
+
 [1] Al Barbandi MA, et al. Case Report: Uroenteric Fistula in a Pediatric-en-bloc Kidney Transplant Manifests as Deceptive Watery Diarrhea and Normal Anion Gap Acidosis. *Front Pediatr*. 2021;9:687396. [全文含 Figure 1–3 與 Table 1](https://doi.org/10.3389/fped.2021.687396)。本篇病童的個別數值、時間順序、影像及處置均以此原始報告為依據；作者的機轉假說與直接觀察分開。
 
 [2] Farkas J. [IBCC: Diagnosis of metabolic acid-base disorders & AGMA](https://emcrit.org/ibcc/agma/). 2024-06-29。
