@@ -50,14 +50,14 @@
 | 與撰稿者分離的獨立醫學/藥師處方 QA | **未取得可證實之另一審查者簽核** | **HOLD** |
 | 四種敘事斷裂的獨立對抗性審查 | 可做多角度自查，但由同一編輯流程生成不足視作「獨立」 | **PENDING independent review** |
 | 近五年官方對題與原書圖表實證 | IDSA Figures 已目視；官方 111-2 醫學（三）Q60 題幹及答案/更正已目視；Pocket/Sanford 仍缺、其餘題待查 | **PARTIAL / HOLD** |
-| 網站 CI/build、實際 360/375/390px、production | 尚未執行／未取得 head-specific results | **NOT_VERIFIED** |
+| 網站 CI/build、實際 360/375/390px、production | 本 PR 先前版本曾有 exact-head CI 成功；每次新提交後仍須重新核對**最新 HEAD** 的 required CI。尚無 U01 公開 reader 的 360/375/390px 實測及 production SHA | **CI 依版本重驗；公開手機／production HOLD** |
 | 讀者使用成效 | case-test rubric 存在但無真實作答 | **NOT_TESTED** |
 
 **裁決：本輪已實際深化主要正文與三個配套，但只可維持 Private Draft/HOLD。** 不可只因有多份文稿、AI 語意審查或 CI 綠燈，默默修改 `site/pages.json`、合併 main 或宣稱正式發布。內容可候選為公開**教育型**文章，但實際患者首劑 order-ready 屬另一層級，必須有本院 local antibiogram、藥品仿單、renal dosing/infusion/approval 與藥師正式核對。
 
 ## 4｜明確下一輪可執行的最小修復
 
-1. 對照 [IDSA 2025 Figure 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf) 的 90/80% 適用限制；針對「低重症或沒 ESBL 過往」加第二個 full counterfactual，避免教成一律 meropenem。
+1. **已完成的反例，不重做**：主文 D 與 `case-test.md` 的 T5 已有「無 resistant isolate、穩定局限性下泌尿道症狀」的獨立決策分支（D／T5）。下一次只需對照 [IDSA 2025 Figure 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf) 與 Table 1.1 的 90/80% 適用限制，檢查既有分支的準確性；不要再生成重複反例。
 2. 以**未參與撰寫**的醫學／藥師審核者，對第一劑危急性、過敏、AKI 暴露、decompression 與菌血症口服降階逐項查驗並留可稽核結果；如無法取得者明確 HOLD，不得由 AI 自評替代。
 3. 111-2 醫學（三）Q60 已完成官方三份原 PDF 目視核查並寫入主文；繼續搜尋 2022–2026 其餘 ESBL／尿路感染關聯二階題，逐題核年度、梯次、科目、號、原圖與更正，未核實不加入。
 4. 只有通過醫學硬閘，才開放教育版 publication candidate 註冊、CI/build、360/375/390px、HTTP production read-back、Cloudflare SHA，並依現行合併／發布授權審核。
