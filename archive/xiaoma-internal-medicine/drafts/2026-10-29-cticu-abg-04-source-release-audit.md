@@ -28,3 +28,13 @@ ABG 03 covers fluid-related metabolic acid-base forces. ABG 04 covers low-temper
 - [ ] External clinician peer review not performed.
 
 Current state: PRIVATE EDITORIAL DRAFT / HOLD. No merge/deploy or review pass claimed.
+
+## 2026-10-29 cross-source adversarial audit (author-side, not independent review)
+
+**P1 secondary-evidence classification failure found and corrected in reader text:**
+- Chatzopoulou 2025 https://pmc.ncbi.nlm.nih.gov/articles/PMC12318452/ incorrectly classifies Abdul Aziz & Meduoye 2010 as a prospective n160 RCT. Actual https://pubmed.ncbi.nlm.nih.gov/19914925/ is a BEST EVIDENCE REVIEW of 206 located and 16 selected articles, not a clinical trial.
+- Same review labels Voicu 2014 as an n88 prospective RCT in post-arrest hypothermia. Actual https://pubmed.ncbi.nlm.nih.gov/24717455/ is an observational crossover study of therapeutic hypothermia after out-of-hospital cardiac arrest, NOT surgical DHCA. Both study-design and target-population mismatches materially bias clinical synthesis.
+- Consequently, removed 2025 review as evidence supporting clinical strategy; reader's source list instead explicitly labels 2010 BEST EVIDENCE review as historical commentary, NOT new RCT data. Preserve direct adult RCT Patel 1996 https://pubmed.ncbi.nlm.nih.gov/8642829/ and Murkin 1995 https://pubmed.ncbi.nlm.nih.gov/7637352/ plus guideline https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/ . Patel/Murkin underlying tables remain inaccessible; abstract-grounded numeric claims only.
+- Original conceptual SVG saved under archive/xiaoma-internal-medicine/drafts/figures/2026-10-29-cpb-alpha-phstat-logic.svg: mobile-first 390x1040, distinguishes specimen measurement/display from actual CO2 addition and target choice; text-bound static estimation found no overflow. Not an actual browser/mobile screenshot check.
+- Verify in future independent pass: rewarming or post-CPB ABG must not be excused by a previous intraoperative pH-stat strategy; adult high-moderate hypothermia guidance is not direct evidence for all DHCA/pediatric cases.
+- Current release gate: HOLD, no independent reviewer approval, no actual phone/browser screenshot, no production deployment.
