@@ -48,3 +48,11 @@
 - **112 年第二次・醫學（三）第 47 題**：胸腔超音波診斷價值最低，官方更正答案資料庫顯示 **D（雙側肺門淋巴腺腫）**。
 - **115 年第一次・醫學（三）第 49 題**：胸腔超音波診斷價值最低，官方更正答案資料庫顯示 **C（縱膈腔淋巴結腫大）**。
 - 原卷與更正資料收於私有儲存庫逐年結構化原始資料，讀者應由網站正式國考年度入口回查題幹、選項與官方答案。兩題回答的是聲窗與解剖，不替代氣胸治療指南。
+
+## 08｜特定囊性肺病：BHD 與 LAM 並非一般 PSP 的同義詞
+
+- [Birt–Hogg–Dubé ERN GENTURIS 2024](https://doi.org/10.1038/s41431-024-01671-2)：recurrent／familial pneumothorax、多發雙側肺囊腫、FLCN 評估與腎腫瘤長期監測；下肺區囊腫是重要但非單獨確診徵象。
+- [ATS/JRS LAM HRCT、胸膜處置指南 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5694834/)：單靠 HRCT 特徵不足以直接確診；已確認 LAM 患者首次氣胸後可討論 ipsilateral pleurodesis（conditional，very low certainty）。
+- [ATS/JRS LAM 診斷與 VEGF-D 指南](https://pmc.ncbi.nlm.nih.gov/articles/PMC5803656/)：對具有 LAM 特徵肺囊腫而缺其他確認線索的人，VEGF-D 在考慮肺活檢前的診斷角色。
+
+這些指南是**重新定義基礎疾病與再發風險**的依據，不支持對所有第一次 PSP 患者一律做 HRCT、遺傳檢測或 pleurodesis。
