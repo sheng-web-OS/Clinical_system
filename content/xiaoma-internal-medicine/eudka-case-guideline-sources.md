@@ -20,7 +20,7 @@ Umpierrez GE, et al. *Hyperglycemic Crises in Adults With Diabetes: A Consensus 
 
 **Figure 2（DKA/HHS Diagnostic Criteria）**：[出版社原始圖像](https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00125-024-06183-8/MediaObjects/125_2024_6183_Fig2_HTML.png)。D（既往糖尿病或 glucose ≥200 mg/dL）、K（β-OHB ≥3 mmol/L 或尿酮 ≥2+）、A（pH <7.3 或 HCO₃⁻ <18）是診斷的三組必要條件。不能只看 D 的數值就排除已知糖尿病患者的 euglycemic DKA。
 
-**Table 2（DKA severity and suggested level of care）**：[原始 PDF 第 8 頁](https://iglo-leiden.nl/wp-content/uploads/2024/12/2024-hyperglycemic-crises-Diabetologia.pdf#page=8)。pH 7.0–7.25 與 bicarbonate <10 mmol/L 可同時出現在同一患者；註腳明確寫不是所有欄位必須一致，也不是用單欄決定 ICU。病例實際收治場域與指引的建議層級須分開閱讀。
+**Table 2（DKA severity and suggested level of care）**：[Springer／Diabetologia 正式論文 Table 2](https://link.springer.com/article/10.1007/s00125-024-06183-8#Tab2)。pH 7.0–7.25 與 bicarbonate <10 mmol/L 可同時出現在同一患者；註腳明確寫不是所有欄位必須一致，也不是用單欄決定 ICU。病例實際收治場域與指引的建議層級須分開閱讀。
 
 **Figure 4（Treatment pathways for DKA/HHS）**：[原始流程圖](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/fe91/11343900/51ab9730ac27/125_2024_6183_Fig4_HTML.jpg)。依輸液、insulin、potassium 三條互相制約的支線處理：鉀 <3.5 mmol/L 時先補鉀並暫緩 insulin；血糖下降時加入 dextrose 是為了讓抑制產酮的 insulin 能繼續；解決 DKA 使用 β-OHB <0.6 且 venous pH ≥7.3 或 HCO₃⁻ ≥18，不能只用 AG 或尿酮。圖中的建議還受心腎功能、循環狀態、監測及院內流程限制，不構成可直接照抄的處方。
 

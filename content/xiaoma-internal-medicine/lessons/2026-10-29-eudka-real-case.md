@@ -127,7 +127,7 @@ Anion gap 下降可支持改善，但不應單靠 AG 關閉作為終止治療的
 
 我們治療的是**相對 insulin 不足所維持的產酮、酸血症及其造成的循環與電解質危險**。血糖只是一個必須監測的窗口，不能代表整個疾病已被控制。這也是為何酸鹼分析、尿液檢驗、β-hydroxybutyrate、鉀與治療後的時間序列必須被放在一起理解。
 
-讀到這裡，114 年第一次醫學（三）Q56 的「1 U/kg insulin 一次給」就不再只是速率單位的陷阱：它測的是能否區分**抑制持續產酮的治療目標、正確的 insulin delivery 形式、血鉀安全與輸液的循環目的**。原題與逐項解析可於既有[二十題跨系統練習](https://github.com/sheng-web-OS/Clinical_system/blob/main/content/xiaoma-internal-medicine/lessons/2026-10-22-baseline-twenty.md)找到；這裡不重複抄題，以保留本篇的臨床主線。
+讀到這裡，114 年第一次醫學（三）Q56 的「1 U/kg insulin 一次給」就不再只是速率單位的陷阱：它測的是能否區分**抑制持續產酮的治療目標、正確的 insulin delivery 形式、血鉀安全與輸液的循環目的**。原題與逐項解析可於既有[二十題跨系統練習](/xiaoma-baseline-twenty.html#baseline-q15)找到；這裡不重複抄題，以保留本篇的臨床主線。
 
 下次遇到噁心、嘔吐、呼吸深快而血糖並不顯著升高的糖尿病患者，真正值得及早回答的不是「她是不是糖太高」，而是：**有沒有正在累積的酮酸？身體還能不能代償？怎樣使產酮停止且不讓治療本身引起低血糖、低血鉀或循環惡化？**
 
@@ -135,7 +135,7 @@ Anion gap 下降可支持改善，但不應單靠 AG 關閉作為終止治療的
 
 這個病例的原始[疾病與治療時間軸（Figure 1）](https://www.frontiersin.org/files/Articles/1882272/xml-images/fendo-17-1882272-g001.webp)把開始三藥、嘔吐、入院、住院治療到四週追蹤串在同一條時間線；若要確認數值，仍應回讀同文 Table 1，而不是從圖上的顏色或時間軸位置猜測未呈現的檢驗結果。
 
-診斷分支可以回看 [2024 跨學會原始 Figure 2](https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00125-024-06183-8/MediaObjects/125_2024_6183_Fig2_HTML.png)；治療時則對照 [Figure 4 的輸液／insulin／鉀分流](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/fe91/11343900/51ab9730ac27/125_2024_6183_Fig4_HTML.jpg)，其安全先決條件不是固定的「每個人先給同樣劑量」。原始 [Table 2（PDF 第 8 頁）](https://iglo-leiden.nl/wp-content/uploads/2024/12/2024-hyperglycemic-crises-Diabetologia.pdf#page=8) 的分層也顯示 bicarbonate 與 pH 可能落在不同欄，需連同意識狀態判斷。這些連結指向原出版圖表，本文未將圖像複製到本站。
+診斷分支可以回看 [2024 跨學會原始 Figure 2](https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00125-024-06183-8/MediaObjects/125_2024_6183_Fig2_HTML.png)；治療時則對照 [Figure 4 的輸液／insulin／鉀分流](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/fe91/11343900/51ab9730ac27/125_2024_6183_Fig4_HTML.jpg)，其安全先決條件不是固定的「每個人先給同樣劑量」。原始 [Table 2（DKA 嚴重度與建議照護層級）](https://link.springer.com/article/10.1007/s00125-024-06183-8#Tab2) 的分層也顯示 bicarbonate 與 pH 可能落在不同欄，需連同意識狀態判斷。這些連結指向原出版圖表，本文未將圖像複製到本站。
 
 [原始病例、共識圖表與官方國考來源對照](../eudka-case-guideline-sources.md)。
 

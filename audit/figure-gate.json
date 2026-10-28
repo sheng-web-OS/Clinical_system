@@ -1197,13 +1197,13 @@
           "why_link_instead": "公開網站使用摘要及病例論證，原版配色和整張診斷圖保留於出版社，不在本網站任意轉載。"
         },
         {
-          "locator": "Umpierrez et al 2024 Diabetologia 67:1462, original Table 2 severity, mental status and site of care; PDF page 8",
+          "locator": "Umpierrez et al 2024 Diabetologia 67:1462, publisher Table 2 DKA severity, mental status and suggested level of care, official HTML table",
           "source_token": "Table 2（DKA severity and suggested level of care）",
           "mode": "source_link",
-          "url": "https://iglo-leiden.nl/wp-content/uploads/2024/12/2024-hyperglycemic-crises-Diabetologia.pdf#page=8",
+          "url": "https://link.springer.com/article/10.1007/s00125-024-06183-8#Tab2",
           "teaching_role": "辨認 pH、bicarbonate、血酮與意識狀態不同步時不應由單個欄位決定重症程度或照護地點。",
           "scope_limit": "原表分級為參考，不能取代每個病人的循環、精神狀態、監測能力與臨床團隊決定。",
-          "why_link_instead": "以期刊 PDF 原頁連結供讀者自行查看完整註腳與欄位，避免未授權重製具體格式與表格。"
+          "why_link_instead": "優先指向 Springer／Diabetologia 官方 HTML Table 2 原表及註腳，提供可核對原文，不重製第三方 PDF 或出版社表格像素。"
         },
         {
           "locator": "Umpierrez et al 2024 Diabetologia 67:1464, Figure 4 Treatment pathways for DKA and HHS; PDF page 10",
