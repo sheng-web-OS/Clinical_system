@@ -68,10 +68,8 @@ def main():
                     for width in WIDTHS:
                         page = browser.new_page(viewport={"width": width, "height": 900},
                                                 device_scale_factor=1)
-                        page.goto(doc.as_uri(), wait_until="load")
-                        page.locator("img").evaluate_all(
-                            "nodes => Promise.all(nodes.map(img => img.decode()))"
-                        )
+                        page.goto(doc.as_uri(), wait_until="load", timeout=20000)
+                        page.wait_for_function("() => Array.from(document.images).every(i => i.complete)", timeout=10000)
                         measurements = page.evaluate("""() => ({
                             scrollWidth: document.documentElement.scrollWidth,
                             clientWidth: document.documentElement.clientWidth,
@@ -86,13 +84,14 @@ def main():
                               and len(expected) == len(measurements["images"])
                               and len(expected) > 0
                               and all(x["width"] <= width for x in expected))
-                        page.screenshot(path=str(out / f"abg-{label}-{width}.png"), full_page=True)
+                        page.screenshot(path=str(out / f"abg-{label}-{width}.png"), full_page=False, timeout=15000)
+                        page.locator("figure").first.screenshot(path=str(out / f"abg-{label}-{width}-figure.png"), timeout=15000)
                         results.append({"article": label, "viewport": width,
                                         "status": "PASS" if ok else "FAIL",
                                         **measurements})
                         page.close()
                     image_page = browser.new_page(viewport={"width": 390, "height": 1100})
-                    image_page.goto(svg.as_uri(), wait_until="load")
+                    image_page.goto(svg.as_uri(), wait_until="load", timeout=20000)
                     image_bounds = image_page.evaluate("""() => {
                         const svg = document.querySelector('svg');
                         const vb = svg.viewBox.baseVal;
