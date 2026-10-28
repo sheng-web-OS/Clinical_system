@@ -136,6 +136,22 @@ jobs:
           if ! git diff --quiet origin/main...HEAD -- site/styles.css site/build.py tools/visual_qa_browser.py; then
             python tools/visual_qa_browser.py --all --widths 360 390 1280 --output visual-qa-artifacts/legacy
           fi
+      - name: Preflight proposed pleural publication in a disposable private worktree
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          pleural_patch="$GITHUB_WORKSPACE/audit/2026-10-28-pleural-release-candidate.patch"
+          if test -f "$pleural_patch"; then
+            pleural_preview=$(mktemp -d)
+            git worktree add --detach "$pleural_preview" HEAD
+            trap 'git worktree remove --force "$pleural_preview"' EXIT
+            git -C "$pleural_preview" apply --check "$pleural_patch"
+            git -C "$pleural_preview" apply "$pleural_patch"
+            if test -d .figure-cache; then cp -a .figure-cache "$pleural_preview/.figure-cache"; fi
+            mkdir -p "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
+            (cd "$pleural_preview" && bash tools/build_site.sh) | tee "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight/build.log"
+            python "$pleural_preview/tools/qa_pleural_release_preview.py" --site "$pleural_preview/dist" --output "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
+          fi
       - name: Retain browser visual QA screenshots and reports
         if: always()
         uses: actions/upload-artifact@v4
