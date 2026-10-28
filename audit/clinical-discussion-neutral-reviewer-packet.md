@@ -6,7 +6,7 @@
 
 **Evidence access:** You may check original medical studies or guidelines as needed. Do not invent patient anatomy, neurological course, treatment rationale or outcomes absent from the manuscript. If evidence is unavailable, say what cannot be verified.
 
-**Your task and review style** are supplied in one separate short instruction by the evaluation coordinator. They are not contained in this shared source packet. Treat the text without a presumption of pass or fail; do not infer a verdict from the manuscript's file path, author identity or test context.
+**Your task and review style** are supplied in one separate short instruction by the evaluation coordinator. They are not contained in this shared source packet. Do not infer a verdict from the manuscript's file path, author identity or test context.
 
 **Common output fields (identical across experimental arms):**
 - Material strengths, supported by source location and evidence where necessary.
