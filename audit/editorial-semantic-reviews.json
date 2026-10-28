@@ -6433,12 +6433,12 @@
       }
     },
     "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md": {
-      "content_blob": "6e4102de66c0c0debcce21900bfc8606d9f32d78",
+      "content_blob": "d98fac13a3ccfda337438db25b857250d77b11e0",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "clinical-os-hourly-automation:2026-10-29T01:23+08:00:PR207:58unit-delta-reviewed-source-navigation",
-      "core_reader_question": "確診肺栓塞後，如何不把PESI、RV損傷、正常血壓下的低灌流與呼吸衰竭混成單一嚴重度，並據此選擇安全的抗凝、監測和再灌流策略？",
-      "new_understanding": "從血栓造成V/Q失衡、RV後負荷與交感代償開始，讀者能區分診斷前Wells與確診後PESI、Hestia出院適用性、A–E/R生理分類，並以2026 Table 7的C2 Harm與E2 No Benefit/N/A邊界及Gutgold真實病例解釋證據如何改變檢查與處置。 新增專屬來源頁導覽，使讀者能逐圖回查Figure 2與Table 7的原始定位、推薦等級及權利邊界。",
-      "strongest_counterargument": "本次新增的是一段來源導航而非新的臨床證據，可能與後方參考文獻重疊；逐段核對後，新增頁補足原圖與原表精確定位，且未更動原57段病程、評分或治療主張。完整CI與手機四寬仍需分開驗收。",
+      "reviewer_reference": "clinical-os-hourly-independent-review:2026-10-29T02:20+08:00:PR212:58-unchanged-units-plus-3-figures",
+      "core_reader_question": "在尚未確診或已確診肺栓塞時，如何讓讀者直接看見檢前機率診斷分支、A–E與R的不同臨床軸，以及抗凝、監測、PERT與再灌流風險如何依灌流證據改變？",
+      "new_understanding": "本次獨立對照原58段與新稿：移除新增三個原創figure後正文與已審舊blob完全一致，58段既有角色／讀者收益／非冗餘理由逐項維持成立。新Figure01使低機率PERC全陰性停止、任一陽性或不適用轉D-dimer／適當影像、高機率直接影像與危急同步支持可視；Figure02固定C3的RV與biomarker而改變R，另以可信PE相關低灌流重新評估D2，不把A–E當必經病程；Figure03顯示C–E PERT共同節點、灌流穩定與惡化的處置分叉，保留C2溶栓Harm、E2導管/MT N/A及E2未用機械支持者外科相對其他進階治療短期死亡率No Benefit的不同範圍。官方Figure2 PDF已目視，Figure1/3與Table7以官方全文文字/註腳和原圖公開轉載畫面交叉核對；本站僅原創HTML/CSS與官方連結，不重製原像素。",
+      "strongest_counterargument": "三圖新增後可能只是把既有分類表變成較長的卡片、增加手機閱讀負擔；逐圖不看figcaption檢驗顯示PERC陽性分叉、C3對C3R與D2反事實、C類穩定與D/E低灌流升級均具原文字表難以一眼看見的關係，且未製造必然進展箭頭。限制：官方Figure1/3完整出版像素未由官方下載逐頁核驗，已以指南原始文字/圖註及公開原圖影像交叉查對；375px CI圖截含鍵盤聚焦skip-link疊層（CSS僅focus顯示），後續正式讀者QA仍須補無焦點正常畫面、深色模式及公網實讀，不能以本semantic票據替代。",
       "epqc_scores": {
         "A": 4,
         "B": 4,

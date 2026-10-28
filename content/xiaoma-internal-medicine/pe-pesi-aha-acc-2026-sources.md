@@ -12,6 +12,17 @@ Creager MA, et al. *2026 AHA/ACC/ACCP/ACEP/CHEST/SCAI/SHM/SIR/SVM/SVN Guideline 
 
 **§4.2.4**：PE 造成 E2 refractory cardiogenic shock，具備資源時 VA-ECMO 為合理支持選擇（**2a／B-NR**）；接受 ECMO 後再加 advanced therapies 的效益尚不確定（**2b／C-LD**）。ECMO 支持灌流，不等於清除血栓。
 
+## 三張核心原圖與 JACC Central Illustration 的教學定位
+
+本文的 FIGURE 01–03 是**重新設計的原創推理圖**，不是官方 Figure 1–3 的翻拍、翻譯或描摹。真正的官方原圖仍由原出版頁開啟：
+
+1. **Figure 1 — Clinical Evaluation of Patients With Suspected Acute PE**：<https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005>。對應本文 FIGURE 01（診斷前機率、PERC／D-dimer／影像；救命處置不能等待流程結束）。本圖只保留教學必要的決策層次，不宣稱忠實重現原圖的每個 node、所有例外或 footnote。
+2. **Figure 2 — AHA/ACC Acute PE Clinical Categories**：[AHA 官方原始分類圖 PDF](https://professional.heart.org/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Categories-Figure-Inforgraphic.pdf?sc_lang=en)。對應本文 FIGURE 02，以症狀／整體預後、RV／biomarker、低灌流、R 呼吸負擔來分離不同維度。官方圖中 D2 與正文對 transient hypotension 的細節須一併對讀，不能單憑乳酸診斷 PE shock。
+3. **Figure 3 — Initial Assessment and Management by AHA/ACC Acute PE Clinical Categories**：<https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005>。對應本文 FIGURE 03，原創地分開抗凝、出院適用性、右心及灌流監測、PERT 與再灌流風險。不同術式的正式 COR／LOE 以同篇 **Table 7** 為最終查核依據，摘要圖不是完整處方。
+4. **Central Illustration — Selected Management for Acute PE Patients by AHA/ACC Clinical Categories**：[JACC 2026 Guideline-at-a-Glance 原始出版頁](https://www.jacc.org/doi/10.1016/j.jacc.2025.12.023)。這是課堂照片中的同一張分類—處置環形摘要圖；正文 FIGURE 03 對應其教學問題，但刻意使用不同拓樸，避免將原圖完整重新繪製或誤認為已獲得原像素重製授權。
+
+**權利與呈現決策（2026-10-29）**：AHA 的 [copyright permission guidelines](https://www.heart.org/en/about-us/statements-and-policies/copyright-permission-guidelines) 說明圖、表與影像通常需要重製授權；[guideline material licensing](https://www.heart.org/en/about-us/statements-and-policies/guidelines-for-use-of-guidelines-and-statements-material) 另外列有指南原圖再利用規定。本站尚未取得逐圖公開重製許可，故選擇 **link_or_original_only**：官方圖保持原站查看，正文直接提供讀者可見的原創臨床推理圖，而不是留白或僅保留腳註。**這不等於官圖已收錄原像素。** 原圖若未完成逐頁目視核對，不得將摘要文字冒稱完整看過所有圖例及註腳；圖中的每個 clinical claim 仍需另依正文與 Table 7 審查。
+
 ## PESI、sPESI、Bova 與 Hestia 的界限
 
 PESI／sPESI 用於已確診 PE 的整體短期預後，而不是肺動脈阻塞比例或溶栓處方門檻；歷史風險估計可對讀 [European Respiratory Review：Outpatient treatment of pulmonary embolism](https://publications.ersnet.org/highwire_display/entity_view/node/480203/full)，不能當個別病人當代死亡率。
