@@ -141,7 +141,7 @@ jobs:
         run: |
           set -euo pipefail
           pleural_patch="$GITHUB_WORKSPACE/audit/2026-10-28-pleural-release-candidate.patch"
-          if test -f "$pleural_patch"; then
+          if test -f "$pleural_patch" && ! test -f content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md; then
             pleural_preview=$(mktemp -d)
             git worktree add --detach "$pleural_preview" HEAD
             trap 'git worktree remove --force "$pleural_preview"' EXIT
@@ -151,6 +151,13 @@ jobs:
             mkdir -p "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
             (cd "$pleural_preview" && bash tools/build_site.sh) | tee "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight/build.log"
             python "$pleural_preview/tools/qa_pleural_release_preview.py" --site "$pleural_preview/dist" --output "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
+          fi
+      - name: Verify integrated pleural release on phone and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md; then
+            bash tools/build_site.sh
+            python tools/qa_pleural_release_preview.py --site dist --output visual-qa-artifacts/pleural-release-integrated
           fi
       - name: Retain browser visual QA screenshots and reports
         if: always()
