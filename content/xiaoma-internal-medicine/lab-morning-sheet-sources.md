@@ -20,7 +20,7 @@
 
 [ADLM/AACC Guidance Document on Laboratory Investigation of Acute Kidney Injury, JALM 2021](https://academic.oup.com/jalm/article/6/5/1316/6272705)。
 
-血清 creatinine 若 48 小時內增加 ≥0.3 mg/dL、7 日內增加至 ≥1.5 倍基線，或尿量低於 0.5 mL/kg/h 達至少 6 小時，即符合 KDIGO AKI 定義。主文以兩次獨立重抽的 Cr 1.68、1.69 及昨天 1.16 判斷 AKI；尿量 240 mL/8h 在 75 kg 情境中需先確定紀錄可信，才可作為可靠的尿量依據。AKI 定義不會回答病因；為確認腎前、鬱血、內因性傷害或阻塞，需要另外的病人與尿液證據。
+血清 creatinine 若 48 小時內增加 ≥0.3 mg/dL、7 日內增加至 ≥1.5 倍基線，或尿量低於 0.5 mL/kg/h 達至少 6 小時，即符合 KDIGO AKI 定義。主文以兩次獨立重抽的 Cr 1.68、1.69 及昨天 1.16 判斷 AKI；尿量 240 mL/8h 在 75 kg 情境中只有 8 小時平均約 0.4 mL/kg/h；**不能僅由 8 小時總量證實連續 6 小時的門檻**，仍須核對分時紀錄與漏記，才能判斷尿量診斷條件。AKI 定義不會回答病因；為確認腎前、鬱血、內因性傷害或阻塞，需要另外的病人與尿液證據。
 
 [KDIGO 2024 CKD guideline](https://kdigo.org/guidelines/ckd-evaluation-and-management/)與[非穩態 eGFR 限制的臨床導讀](https://academic.oup.com/ajhp/article/82/12/660/8107680)。CKD 的穩態估算架構不可直接視為 AKI 當下瞬間真實 GFR。
 
