@@ -6433,12 +6433,12 @@
       }
     },
     "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md": {
-      "content_blob": "b83f616c28da0155d42b9096b7116c7416a261ae",
+      "content_blob": "6e4102de66c0c0debcce21900bfc8606d9f32d78",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "clinical-os-hourly-automation:turn11:2026-10-29T01:13+08:00:PR207:57unit-independent-review",
+      "reviewer_reference": "clinical-os-hourly-automation:2026-10-29T01:23+08:00:PR207:58unit-delta-reviewed-source-navigation",
       "core_reader_question": "確診肺栓塞後，如何不把PESI、RV損傷、正常血壓下的低灌流與呼吸衰竭混成單一嚴重度，並據此選擇安全的抗凝、監測和再灌流策略？",
-      "new_understanding": "從血栓造成V/Q失衡、RV後負荷與交感代償開始，讀者能區分診斷前Wells與確診後PESI、Hestia出院適用性、A–E/R生理分類，並以2026 Table 7的C2 Harm與E2 No Benefit/N/A邊界及Gutgold真實病例解釋證據如何改變檢查與處置。",
-      "strongest_counterargument": "本文在PESI/sPESI/Hestia、A–E/R、Bova及再灌流Table 7之間資訊密度高，可能使讀者記表多於理解；但每組分數均回答不同臨床問題，病例與三個反事實提供辨識誤用的連續推理。正式手機表格與索引仍須另外實測，語義通過不代表發布完成。",
+      "new_understanding": "從血栓造成V/Q失衡、RV後負荷與交感代償開始，讀者能區分診斷前Wells與確診後PESI、Hestia出院適用性、A–E/R生理分類，並以2026 Table 7的C2 Harm與E2 No Benefit/N/A邊界及Gutgold真實病例解釋證據如何改變檢查與處置。 新增專屬來源頁導覽，使讀者能逐圖回查Figure 2與Table 7的原始定位、推薦等級及權利邊界。",
+      "strongest_counterargument": "本次新增的是一段來源導航而非新的臨床證據，可能與後方參考文獻重疊；逐段核對後，新增頁補足原圖與原表精確定位，且未更動原57段病程、評分或治療主張。完整CI與手機四寬仍需分開驗收。",
       "epqc_scores": {
         "A": 4,
         "B": 4,
@@ -6911,6 +6911,14 @@
           "verdict": "keep",
           "excerpt_for_editor": "延伸閱讀：VTE 病理及診斷前機率；血壓正常的 PE：真實病例、右心失代償與再灌流；115 年 PE 官方國考題 Q8、Q9。這些材料回答不同問題，不把三篇重複貼在本篇。",
           "line_for_editor": 190
+        },
+        "3aadf4982c5a89356f-1": {
+          "role": "navigation",
+          "reader_gain": "將指南原始分類圖、再灌流Table 7及研究來源連至可核對的專屬來源頁，讀者能查證正文的臨床分類與治療適用界線。",
+          "nonredundancy_reason": "這是新增的具體查證入口；原文雖列主要參考文獻，卻未將Figure 2與Table 7的原始定位及權利界線集中連到來源頁。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原始圖表與研究的詳細來源對讀 提供 2026 官方 Figure 2／Table 7 的精確定位及治療推薦的適用邊界；原圖由學會原始入口閱讀，本站不重製受保護圖像。",
+          "line_for_editor": 183
         }
       }
     }
