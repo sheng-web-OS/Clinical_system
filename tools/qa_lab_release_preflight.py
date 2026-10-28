@@ -80,6 +80,31 @@ def add_candidates(worktree):
             "concept_heading":H2,"question_heading":H28}
          ]}
     ])
+    # Release requires a reader-facing source page and a real Figure/Table
+    # cross-reference. Apply both only in this disposable worktree.
+    pages.extend([
+        {"source":"content/xiaoma-internal-medicine/lab-02-specimen-sources.md",
+         "output":"xiaoma-lab-02-specimen-sources.html",
+         "title":"Lab Medicine 02｜原始病例、圖表與檢驗方法",
+         "subtitle":"原始患者數值、抗凝管 Figure 1 與採樣干擾條件",
+         "collection":"xiaoma-internal-medicine","layout":"reader",
+         "section":"Lab Medicine","date":"2026-10-29","navigation":False,
+         "review":"author_source_check"},
+        {"source":"content/xiaoma-internal-medicine/lab-03-aki-sources.md",
+         "output":"xiaoma-lab-03-aki-sources.html",
+         "title":"Lab Medicine 03｜AKI 真實病例、原始影像與國考來源",
+         "subtitle":"Chen 原始 CT/US/Table、KDIGO 分期與正式國考來源",
+         "collection":"xiaoma-internal-medicine","layout":"reader",
+         "section":"Lab Medicine","date":"2026-10-29","navigation":False,
+         "review":"author_source_check"}
+    ])
+    target=worktree/"audit/figure-gate.json"
+    figures=json.loads(target.read_text(encoding="utf-8"))
+    receipts=json.loads((worktree/"audit/lab-02-03-source-figure-candidate.json").read_text(encoding="utf-8"))
+    if set(receipts)!={S02,S03} or any(s in figures["legacy_frozen"] or s in figures["reviews"] for s in receipts):
+        raise AssertionError("Candidate Figure/Table receipts overlap existing reviews")
+    figures["reviews"].update(receipts)
+    target.write_text(json.dumps(figures,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     manifest.write_text(json.dumps(pages,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     return pages
 
