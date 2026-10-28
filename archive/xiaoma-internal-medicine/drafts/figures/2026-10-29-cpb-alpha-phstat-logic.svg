@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1040" viewBox="0 0 390 1040" role="img" aria-labelledby="figTitle figDesc">
+<title id="figTitle">同一管低溫 CPB 動脈血，alpha-stat 和 pH-stat 在血氣顯示與真正 CO₂ 管理上的分岔</title>
+<desc id="figDesc">同一管血可有37度測量與依患者體溫校正的顯示數值；顯示切換本身不改變病人。alpha-stat以37度未校正值作管理基準，pH-stat以實際溫度校正值為目標並可能主動增加CO₂。腦血流效果與成人低溫適用範圍另須依循證據。</desc>
+<rect width="390" height="1040" fill="#f7faf8" rx="18"/><rect x="8" y="8" width="374" height="1024" fill="none" stroke="#b9d3c5" rx="12"/>
+<text x="20" y="44" text-anchor="start" font-family="system-ui,sans-serif" font-size="22" font-weight="750" fill="#153e33">同一管血，兩種目標</text>
+<text x="20" y="73" text-anchor="start" font-family="system-ui,sans-serif" font-size="22" font-weight="750" fill="#153e33">不是兩份互相衝突的 ABG</text>
+<rect x="20" y="112" width="350" height="106" rx="10" fill="#e5eee9" stroke="#a8c5b5"/>
+<text x="34" y="143" text-anchor="start" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#244639">低溫 CPB：患者實際體溫如 28°C</text>
+<text x="34" y="170" text-anchor="start" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#244639">A-line 採血 → 儀器約在 37°C 量測</text>
+<text x="34" y="197" text-anchor="start" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#244639">可另列實際體溫校正後讀值</text>
+<path d="M195 218 L195 241" stroke="#477464" stroke-width="3"/><path d="M188 234 L195 242 L202 234" stroke="#477464" stroke-width="3" fill="none"/>
+<rect x="20" y="244" width="350" height="95" rx="10" fill="#fff" stroke="#bbcfc4"/>
+<text x="34" y="274" text-anchor="start" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#245145">量測基準 ≠ 治療策略</text>
+<text x="34" y="300" text-anchor="start" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#245145">只切換 37°C／溫度校正顯示，不會</text>
+<text x="34" y="326" text-anchor="start" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#245145">讓血液得到更多 CO₂ 或改變腦血流</text>
+<text x="195" y="369" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="650" fill="#456155">選擇不同 CO₂ 目標，才會改變處置</text>
+<path d="M195 378 L195 398" stroke="#477464" stroke-width="3"/><path d="M188 391 L195 399 L202 391" stroke="#477464" stroke-width="3" fill="none"/>
+<rect x="20" y="404" width="350" height="187" rx="12" fill="#e8f3ef" stroke="#7fae9b" stroke-width="2"/>
+<text x="33" y="439" text-anchor="start" font-family="system-ui,sans-serif" font-size="18" font-weight="750" fill="#155c46">A　alpha-stat｜37°C 未校正基準</text>
+<text x="34" y="468" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#234d3e">典型管理目標：37°C pH 約 7.40，</text>
+<text x="34" y="490" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#234d3e">PaCO₂ 約 40 mmHg（不隨降溫校正）。</text>
+<text x="34" y="512" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#234d3e">低溫校正後 pH 較高、PaCO₂ 較低</text>
+<text x="34" y="534" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#234d3e">是可預期的方向，不須為此補入 CO₂。</text>
+<text x="34" y="556" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#234d3e">相關臨床考量：較能保留腦血流</text>
+<text x="34" y="578" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#234d3e">自動調節；不能據此保證腦部安全。</text>
+<rect x="20" y="604" width="350" height="187" rx="12" fill="#edf1f9" stroke="#9aaecb" stroke-width="2"/>
+<text x="33" y="639" text-anchor="start" font-family="system-ui,sans-serif" font-size="18" font-weight="750" fill="#334d7a">B　pH-stat｜患者實際體溫基準</text>
+<text x="34" y="668" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#324762">典型管理目標：校正後 pH 約 7.40，</text>
+<text x="34" y="690" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#324762">PaCO₂ 約 40 mmHg。</text>
+<text x="34" y="712" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#324762">降溫時可能主動增加氧合器 CO₂</text>
+<text x="34" y="734" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#324762">（或調整掃氣），而不只是切換顯示。</text>
+<text x="34" y="756" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#324762">CO₂ ↑ → 腦血管擴張、腦血流 ↑；</text>
+<text x="34" y="778" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#324762">冷卻可能更均勻，調節亦可能受損。</text>
+<rect x="20" y="804" width="350" height="179" rx="12" fill="#fff" stroke="#c9d1c5"/>
+<text x="34" y="838" text-anchor="start" font-family="system-ui,sans-serif" font-size="18" font-weight="750" fill="#334a39">選擇策略前，必須回到手術條件</text>
+<text x="34" y="869" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#3d5344">成人 high-moderate hypothermia：</text>
+<text x="34" y="890" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#3d5344">2024 CPB 指南建議考慮 alpha-stat</text>
+<text x="34" y="911" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#3d5344">（Class IIa，Level B）。</text>
+<text x="34" y="932" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#3d5344">不可直接外推至深低溫停循環、</text>
+<text x="34" y="953" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#3d5344">主動脈弓不同灌流法或嬰幼兒。</text>
+<text x="34" y="974" text-anchor="start" font-family="system-ui,sans-serif" font-size="15.5" font-weight="520" fill="#3d5344">ABG 達標 ≠ 腦灌流安全已獲證實。</text>
+<text x="20" y="1009" text-anchor="start" font-family="system-ui,sans-serif" font-size="12.2" font-weight="450" fill="#5b7165">原創圖｜參照 2024 成人 CPB 指南 §10.3</text>
+</svg>
