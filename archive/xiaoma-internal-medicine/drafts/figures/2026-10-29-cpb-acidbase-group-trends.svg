@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1130" width="600" height="1130" role="img" aria-labelledby="title description">
+<title id="title">CABG 術前、手術後、隔日的七組群體平均血液數值對照</title>
+<desc id="description">2013 Chuah 等人的 on-pump CABG 55 人群體平均，各列分別標明鈉、氯、SID、HCO3、BE、氫離子及 PaCO2 在術前、術後、隔日的數字。各列採獨立縱向尺度，不代表個人血氣；數據不能直接建立因果。</desc>
+<rect x="0" y="0" width="600" height="1130" rx="18" fill="#f8faf9"/>
+<rect x="8" y="8" width="584" height="1114" rx="14" fill="none" stroke="#c7d7cf"/>
+<text x="22" y="43" font-size="23" font-weight="750" fill="#143e34" font-family="system-ui,sans-serif">CPB 改變的，不只一個數字</text>
+<text x="22" y="72" font-size="17" fill="#39554c" font-family="system-ui,sans-serif">On-pump CABG · n = 55 · 群體平均</text>
+<text x="205" y="113" font-size="18" fill="#41564e" text-anchor="middle" font-family="system-ui,sans-serif">術前</text>
+<text x="366" y="113" font-size="18" fill="#41564e" text-anchor="middle" font-family="system-ui,sans-serif">CABG 後</text>
+<text x="528" y="113" font-size="18" fill="#41564e" text-anchor="middle" font-family="system-ui,sans-serif">隔天早晨</text><rect x="18" y="136" width="565" height="108" rx="8" fill="#ffffff"/>
+ <text x="25" y="176" font-size="23" font-weight="750" fill="#243f38" font-family="system-ui,sans-serif">Na⁺</text>
+ <text x="25" y="202" font-size="14" fill="#567067" font-family="system-ui,sans-serif">mmol/L</text>
+ <text x="25" y="227" font-size="13" fill="#597268" font-family="system-ui,sans-serif">下降 → 部分回升</text>
+ <path d="M 205 169 L 366 227 L 528 205.05405405405435" fill="none" stroke="#536c78" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="205" cy="169" r="6" fill="#536c78" stroke="#ffffff" stroke-width="2"/>
+ <text x="205" y="158" font-size="20" font-weight="750" fill="#536c78" text-anchor="middle" font-family="system-ui,sans-serif">139.5</text><circle cx="366" cy="227" r="6" fill="#536c78" stroke="#ffffff" stroke-width="2"/>
+ <text x="366" y="216" font-size="20" font-weight="750" fill="#536c78" text-anchor="middle" font-family="system-ui,sans-serif">135.8</text><circle cx="528" cy="205.05405405405435" r="6" fill="#536c78" stroke="#ffffff" stroke-width="2"/>
+ <text x="528" y="194.05405405405435" font-size="20" font-weight="750" fill="#536c78" text-anchor="middle" font-family="system-ui,sans-serif">137.2</text><rect x="18" y="259" width="565" height="108" rx="8" fill="#f0f4f1"/>
+ <text x="25" y="299" font-size="23" font-weight="750" fill="#243f38" font-family="system-ui,sans-serif">Cl⁻</text>
+ <text x="25" y="325" font-size="14" fill="#567067" font-family="system-ui,sans-serif">mmol/L</text>
+ <text x="25" y="350" font-size="13" fill="#597268" font-family="system-ui,sans-serif">升高 → 回落</text>
+ <path d="M 205 350 L 366 292 L 528 334.7368421052632" fill="none" stroke="#b15437" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="205" cy="350" r="6" fill="#b15437" stroke="#ffffff" stroke-width="2"/>
+ <text x="205" y="339" font-size="20" font-weight="750" fill="#b15437" text-anchor="middle" font-family="system-ui,sans-serif">105.3</text><circle cx="366" cy="292" r="6" fill="#b15437" stroke="#ffffff" stroke-width="2"/>
+ <text x="366" y="281" font-size="20" font-weight="750" fill="#b15437" text-anchor="middle" font-family="system-ui,sans-serif">111.0</text><circle cx="528" cy="334.7368421052632" r="6" fill="#b15437" stroke="#ffffff" stroke-width="2"/>
+ <text x="528" y="323.7368421052632" font-size="20" font-weight="750" fill="#b15437" text-anchor="middle" font-family="system-ui,sans-serif">106.8</text><rect x="18" y="382" width="565" height="108" rx="8" fill="#ffffff"/>
+ <text x="25" y="422" font-size="23" font-weight="750" fill="#243f38" font-family="system-ui,sans-serif">SID</text>
+ <text x="25" y="448" font-size="14" fill="#567067" font-family="system-ui,sans-serif">mEq/L</text>
+ <text x="25" y="473" font-size="13" fill="#597268" font-family="system-ui,sans-serif">下降 → 回升</text>
+ <path d="M 205 415 L 366 473 L 528 436.15294117647056" fill="none" stroke="#267066" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="205" cy="415" r="6" fill="#267066" stroke="#ffffff" stroke-width="2"/>
+ <text x="205" y="404" font-size="20" font-weight="750" fill="#267066" text-anchor="middle" font-family="system-ui,sans-serif">38.2</text><circle cx="366" cy="473" r="6" fill="#267066" stroke="#ffffff" stroke-width="2"/>
+ <text x="366" y="462" font-size="20" font-weight="750" fill="#267066" text-anchor="middle" font-family="system-ui,sans-serif">29.7</text><circle cx="528" cy="436.15294117647056" r="6" fill="#267066" stroke="#ffffff" stroke-width="2"/>
+ <text x="528" y="425.15294117647056" font-size="20" font-weight="750" fill="#267066" text-anchor="middle" font-family="system-ui,sans-serif">35.1</text><rect x="18" y="505" width="565" height="108" rx="8" fill="#f0f4f1"/>
+ <text x="25" y="545" font-size="23" font-weight="750" fill="#243f38" font-family="system-ui,sans-serif">HCO₃⁻</text>
+ <text x="25" y="571" font-size="14" fill="#567067" font-family="system-ui,sans-serif">mmol/L</text>
+ <text x="25" y="596" font-size="13" fill="#597268" font-family="system-ui,sans-serif">下降 → 改善</text>
+ <path d="M 205 538 L 366 596 L 528 563.2173913043479" fill="none" stroke="#735d8a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="205" cy="538" r="6" fill="#735d8a" stroke="#ffffff" stroke-width="2"/>
+ <text x="205" y="527" font-size="20" font-weight="750" fill="#735d8a" text-anchor="middle" font-family="system-ui,sans-serif">24.9</text><circle cx="366" cy="596" r="6" fill="#735d8a" stroke="#ffffff" stroke-width="2"/>
+ <text x="366" y="585" font-size="20" font-weight="750" fill="#735d8a" text-anchor="middle" font-family="system-ui,sans-serif">22.6</text><circle cx="528" cy="563.2173913043479" r="6" fill="#735d8a" stroke="#ffffff" stroke-width="2"/>
+ <text x="528" y="552.2173913043479" font-size="20" font-weight="750" fill="#735d8a" text-anchor="middle" font-family="system-ui,sans-serif">23.9</text><rect x="18" y="628" width="565" height="108" rx="8" fill="#ffffff"/>
+ <text x="25" y="668" font-size="23" font-weight="750" fill="#243f38" font-family="system-ui,sans-serif">BE</text>
+ <text x="25" y="694" font-size="14" fill="#567067" font-family="system-ui,sans-serif">mEq/L</text>
+ <text x="25" y="719" font-size="13" fill="#597268" font-family="system-ui,sans-serif">變負 → 改善</text>
+ <path d="M 205 661 L 366 719 L 528 689.008547008547" fill="none" stroke="#a25141" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="205" cy="661" r="6" fill="#a25141" stroke="#ffffff" stroke-width="2"/>
+ <text x="205" y="650" font-size="20" font-weight="750" fill="#a25141" text-anchor="middle" font-family="system-ui,sans-serif">0.38</text><circle cx="366" cy="719" r="6" fill="#a25141" stroke="#ffffff" stroke-width="2"/>
+ <text x="366" y="708" font-size="20" font-weight="750" fill="#a25141" text-anchor="middle" font-family="system-ui,sans-serif">-1.96</text><circle cx="528" cy="689.008547008547" r="6" fill="#a25141" stroke="#ffffff" stroke-width="2"/>
+ <text x="528" y="678.008547008547" font-size="20" font-weight="750" fill="#a25141" text-anchor="middle" font-family="system-ui,sans-serif">-0.75</text><rect x="18" y="751" width="565" height="108" rx="8" fill="#f0f4f1"/>
+ <text x="25" y="791" font-size="23" font-weight="750" fill="#243f38" font-family="system-ui,sans-serif">[H⁺]</text>
+ <text x="25" y="817" font-size="14" fill="#567067" font-family="system-ui,sans-serif">nmol/L</text>
+ <text x="25" y="842" font-size="13" fill="#597268" font-family="system-ui,sans-serif">術後未同幅度變動</text>
+ <path d="M 205 842 L 366 816.0526315789474 L 528 784" fill="none" stroke="#6b698e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="205" cy="842" r="6" fill="#6b698e" stroke="#ffffff" stroke-width="2"/>
+ <text x="205" y="831" font-size="20" font-weight="750" fill="#6b698e" text-anchor="middle" font-family="system-ui,sans-serif">38.1</text><circle cx="366" cy="816.0526315789474" r="6" fill="#6b698e" stroke="#ffffff" stroke-width="2"/>
+ <text x="366" y="805.0526315789474" font-size="20" font-weight="750" fill="#6b698e" text-anchor="middle" font-family="system-ui,sans-serif">39.8</text><circle cx="528" cy="784" r="6" fill="#6b698e" stroke="#ffffff" stroke-width="2"/>
+ <text x="528" y="773" font-size="20" font-weight="750" fill="#6b698e" text-anchor="middle" font-family="system-ui,sans-serif">41.9</text><rect x="18" y="874" width="565" height="108" rx="8" fill="#ffffff"/>
+ <text x="25" y="914" font-size="23" font-weight="750" fill="#243f38" font-family="system-ui,sans-serif">PaCO₂</text>
+ <text x="25" y="940" font-size="14" fill="#567067" font-family="system-ui,sans-serif">kPa</text>
+ <text x="25" y="965" font-size="13" fill="#597268" font-family="system-ui,sans-serif">術後降低 → 隔日上升</text>
+ <path d="M 205 939.0298507462686 L 366 965 L 528 907" fill="none" stroke="#346b9a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="205" cy="939.0298507462686" r="6" fill="#346b9a" stroke="#ffffff" stroke-width="2"/>
+ <text x="205" y="928.0298507462686" font-size="20" font-weight="750" fill="#346b9a" text-anchor="middle" font-family="system-ui,sans-serif">5.23</text><circle cx="366" cy="965" r="6" fill="#346b9a" stroke="#ffffff" stroke-width="2"/>
+ <text x="366" y="954" font-size="20" font-weight="750" fill="#346b9a" text-anchor="middle" font-family="system-ui,sans-serif">4.93</text><circle cx="528" cy="907" r="6" fill="#346b9a" stroke="#ffffff" stroke-width="2"/>
+ <text x="528" y="896" font-size="20" font-weight="750" fill="#346b9a" text-anchor="middle" font-family="system-ui,sans-serif">5.60</text><text x="22" y="1042" font-size="15" font-weight="650" fill="#233c33" font-family="system-ui,sans-serif">讀法：各列縱軸分別縮放，不能跨列比較斜率。</text>
+<text x="22" y="1067" font-size="14" fill="#52685e" font-family="system-ui,sans-serif">三次是採樣類別，不是等距時間；不是單一患者病程。</text>
+<text x="22" y="1094" font-size="14" fill="#52685e" font-family="system-ui,sans-serif">資料：Chuah et al. 2013, 原論文 Table 3（原創重繪）</text>
+</svg>
