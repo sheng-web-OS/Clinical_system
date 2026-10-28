@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
 """Inspect an unpublished, temporary compiled pleural release candidate."""
 import argparse
+import functools
 import hashlib
+import http.server
 import json
 from pathlib import Path
+import subprocess
+import sys
+import threading
 from playwright.sync_api import sync_playwright
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "site"))
+from catalog import load_pages
+from exam_archive import archive_anchor, concept_url, question_key, question_records
 
 PAGES = {
     "xiaoma-20261028-pleural-effusion-decision.html": ("56 歲", "piperacillin/tazobactam", "未報告", "7.42"),
@@ -12,6 +22,9 @@ PAGES = {
     "xiaoma-exams.html": ("112", "114", "115"),
 }
 ARTICLE = "xiaoma-20261028-pleural-effusion-decision.html"
+EXPECTED = {(112, 1, 2, "醫學（三）", 45),
+            (114, 1, 2, "醫學（三）", 48),
+            (115, 2, 2, "醫學（三）", 49)}
 
 
 def main():
@@ -20,27 +33,35 @@ def main():
     ap.add_argument("--output", type=Path, required=True)
     args = ap.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
-    css = (args.site / "styles.css").read_text()
-    app = (args.site / "app.js").read_text()
+    font = subprocess.check_output(["fc-match", "-f", "%{family}", "Noto Sans TC"], text=True)
+    if "Noto Sans TC" not in font:
+        raise AssertionError("Traditional Chinese font is unavailable")
+    records = {question_key(r["exam"]): r for r in question_records(load_pages(ROOT))
+               if r["page"]["output"] == ARTICLE}
+    if set(records) != EXPECTED:
+        raise AssertionError("Candidate must contain all three exact official question identities")
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0),
+        functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(args.site.resolve())))
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    origin = "http://127.0.0.1:" + str(server.server_port) + "/"
     reports = []
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         try:
             for name, tokens in PAGES.items():
-                document = (args.site / name).read_text()
-                tag = '<link rel="stylesheet" href="styles.css">'
-                if document.count(tag) != 1:
-                    raise AssertionError("Candidate stylesheet missing " + name)
-                document = document.replace(tag, "<style>" + css + "</style>", 1)
                 for width in (360, 375, 390, 1280):
                     for theme in ("light", "dark"):
                         page = browser.new_page(viewport={"width": width, "height": 860},
                                                 color_scheme=theme,
                                                 is_mobile=width < 400, has_touch=width < 400)
                         try:
-                            page.route("**/*", lambda route: route.abort())
-                            page.set_content(document, wait_until="domcontentloaded")
-                            page.add_script_tag(content=app)
+                            page.route("**/*", lambda route: route.continue_()
+                                       if route.request.url.startswith(origin) else route.abort())
+                            response = page.goto(origin + name, wait_until="domcontentloaded")
+                            if response.status != 200:
+                                raise AssertionError("Candidate page is unavailable " + name)
+                            page.evaluate("document.fonts.ready")
                             if theme == "dark":
                                 page.locator("#theme").click()
                             # The exam hub uses a different layout; only reader
@@ -66,19 +87,47 @@ def main():
                                 raise AssertionError(f"{name} theme/font state invalid")
                             if name == ARTICLE and "xiaoma-pleural-effusion-decision-sources.html" not in state["links"]:
                                 raise AssertionError("Compiled article cannot navigate to its source page")
-                            if name == "xiaoma-exams.html" and not any(
-                                x and ARTICLE in x for x in state["links"]):
-                                raise AssertionError("Exam archive has no backlink to candidate")
+                            if name == ARTICLE and not all("xiaoma-exams.html#" + archive_anchor(r)
+                                    in state["links"] for r in records.values()):
+                                raise AssertionError("Article is missing an exact official exam return link")
+                            if name == "xiaoma-pleural-effusion-decision-sources.html" and ARTICLE not in state["links"]:
+                                raise AssertionError("Source page has no article return link")
                             if width == 375:
                                 page.screenshot(path=str(args.output / f"{name}-{theme}-375.png"))
+                            if name == "xiaoma-exams.html":
+                                for key in sorted(EXPECTED):
+                                    r = records[key]
+                                    row = page.locator('[id="' + archive_anchor(r) + '"]')
+                                    if row.count() != 1:
+                                        raise AssertionError("Official question row missing or duplicated " + str(key))
+                                    row.locator("details.exam-catalog-materials summary").click()
+                                    href = concept_url(r["page"], r["embedded"], ROOT)
+                                    link = row.locator('nav.exam-concept-links a[href="' + href + '"]')
+                                    if link.count() != 1:
+                                        raise AssertionError("Official question has no exact concept link " + str(key))
+                                    bounds = row.bounding_box()
+                                    if bounds["x"] < -2 or bounds["x"] + bounds["width"] > width + 2:
+                                        raise AssertionError("Official question row is clipped " + str(key))
+                                    if width == 375:
+                                        page.screenshot(path=str(args.output / f"exam-{key[0]}-{key[1]}-q{key[4]}-{theme}-375.png"))
+                                    link.click()
+                                    page.wait_for_url(origin + href)
+                                    fragment = href.split("#", 1)[1]
+                                    if page.locator('[id="' + fragment + '"]').count() != 1:
+                                        raise AssertionError("Official exam concept target missing " + str(key))
+                                    page.goto(origin + name, wait_until="domcontentloaded")
                             reports.append({"page":name,"width":width,"theme":theme,
                                             "page_width":state["scroll"],"source_and_links":True})
                         finally:
                             page.close()
         finally:
             browser.close()
+            server.shutdown()
+            server.server_close()
     report = {"mode":"PRIVATE_TEMPORARY_RELEASE_PREFLIGHT_NOT_DEPLOYMENT",
               "checks":reports,"failures":[],
+              "official_exam_links":{"identities":[list(k) for k in sorted(EXPECTED)],
+                  "bidirectional":True,"browser_clicks":24},
               "article_html_sha256":hashlib.sha256((args.site/ARTICLE).read_bytes()).hexdigest()}
     (args.output/"report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
     print(json.dumps({"checks":len(reports),"failures":[]}))
@@ -86,3 +135,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
