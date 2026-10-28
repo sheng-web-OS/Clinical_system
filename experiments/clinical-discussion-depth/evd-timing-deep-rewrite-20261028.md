@@ -18,9 +18,11 @@
 
 所以 2023 AHA/ASA guideline 的實際可依賴結論是：**aSAH + acute symptomatic hydrocephalus 應緊急 CSF diversion（Class I, B-NR）**；它沒有證據足以規定所有人都在 securing 之前或之後放置 EVD。這不是 guideline 沒想好，而是『治療是否需要』的證據與『兩種急迫處置最佳先後順序』的證據是兩個不同問題。對正快速因水腦惡化的患者，不能拿一個尚未被證實的通用時序去無理由地延誤引流；但也不能因 EVD 已完成就不儘速封閉 rupture source。若涉及 obstructed CSF pathway，應依影像與專科判斷選擇合適的 CSF diversion route；**EVD 與 lumbar drainage 並非所有病人可以互換**。
 
-接著還有第三層風險：假如 coiling 因 wide neck／branch incorporation 而需要 stent，術後 DAPT 的血栓預防收益，會與 invasive ventricular catheter 的出血風險衝突。Tang 等人 2024 年回溯 83 位需 EVD 的 ruptured aneurysm 患者，DAPT 組 EVD-related hematoma 為 10/31（32.3%），無 DAPT 組 4/52（7.7%），P=0.01；但兩組的動脈瘤位置、大小及治療類型亦有差異，不能把差距全部歸因於 DAPT。比較 DAPT 前置／後置 EVD 的小樣本中，4/16 與 6/15 發生 hematoma，P=0.458，**不能用此非顯著結果斷言時序沒有影響，也不能反過來斷言『一定要先 EVD』**。臨床上若高度預期需要 EVD、且不會延誤拯救性處置，於抗血小板暴露前取得 ventricular access 是可辯護的風險管理策略，但不是所有病人的規定。
+還有一個原稿與初版深修都沒有指出、但會立即改變醫療流程的**體系條件**：如果病人所在機構不能進行 aneurysm treatment，2023 AHA/ASA guideline §8.4 的 recommendation-specific supportive text 明確指出，應在轉送至 aSAH 專業中心前，先緊急穩定病人，必要時進行 CSF diversion／EVD placement。這與在具備立即 aneurysm securing 能力的神經血管中心討論『何者先做』，是不同決策情境。它不是要求所有患者都先 EVD，而是**治療可近性／轉院時間本身就是改變權重的證據**；也不能把尚未處置的 symptomatic hydrocephalus 只當成『等到轉院後再決定』。
 
-現在可以把問題推進成真正會改變決策的三個反事實。**第一**，如果病人正因明顯 acute obstructive hydrocephalus 而意識惡化、動脈瘤又無法立即 securing，延遲 CSF diversion 的傷害權重上升，需緊急與神外／神經介入協調引流及 securing。**第二**，如果病人意識與影像穩定、並無急性 symptomatic hydrocephalus，而 securing 可立即進行，就沒有理由僅為了『怕將來水腦』而把 EVD 視為必須先做的介入。**第三**，如果正在考慮 SAC 或其他需抗血小板的裝置，則預期 EVD 需求與放置時機會回過頭影響 device planning；這是跨治療決策，而不只是 CSF drainage 的單獨技術細節。三種情境不是三個現成醫囑，而是說明哪些資訊應讓判斷真正改變。
+接著還有第三層風險：假如 coiling 因 wide neck／branch incorporation 而需要 stent，術後 DAPT 的血栓預防收益，會與 invasive ventricular catheter 的出血風險衝突。Tang 等人 2024 年回溯 83 位需 EVD 的 ruptured aneurysm 患者，DAPT 組 EVD-related hematoma 為 10/31（32.3%），無 DAPT 組 4/52（7.7%），P=0.01；但兩組的動脈瘤位置、大小及治療類型亦有差異，不能把差距全部歸因於 DAPT。比較 DAPT 前置／後置 EVD 的小樣本中，4/16 與 6/15 發生 hematoma，P=0.458，**不能用此非顯著結果斷言時序沒有影響，也不能反過來斷言『一定要先 EVD』**。在這個 DAPT 研究的兩組 EVD 先後順序比較中，**不只樣本小，兩組 posterior circulation aneurysm 也明顯不平衡（約 68.7% vs 15.0%），而且發病至 EVD 時間不同（19.2 ± 19.4 h vs 72.6 ± 33.9 h）**；即使 P=0.458，仍不能把『未達顯著』當作時序交換等效的證明。臨床上若高度預期需要 EVD、且不會延誤拯救性處置，於抗血小板暴露前取得 ventricular access 是可辯護的風險管理策略，但不是所有病人的規定。
+
+現在可以把問題推進成真正會改變決策的三個反事實。**第一**，如果病人正因明顯 acute obstructive hydrocephalus 而意識惡化、動脈瘤又無法立即 securing，延遲 CSF diversion 的傷害權重上升，需緊急與神外／神經介入協調引流及 securing。**第二**，如果病人意識與影像穩定、並無急性 symptomatic hydrocephalus，而 securing 可立即進行，就沒有理由僅為了『怕將來水腦』而把 EVD 視為必須先做的介入。**第三**，如果正在考慮 SAC 或其他需抗血小板的裝置，則預期 EVD 需求與放置時機會回過頭影響 device planning；這是跨治療決策，而不只是 CSF drainage 的單獨技術細節。**第四**，若患者因急性 symptomatic hydrocephalus 需要引流，但所在機構沒有立即 aneurysm securing 的能力，依 2023 AHA/ASA guideline 應於專科轉診前完成緊急穩定與必要的 CSF diversion。這些情境不是現成醫囑，而是說明哪些資訊應讓判斷真正改變。
 
 **Back to our patient。** 當時 BA aneurysm 的 Discussion 由前一位同學先報病例，但我們保存的九頁稿與逐字稿並沒有提供可核查的實際 CT／IVH distribution、Hunt–Hess/WFNS、意識時間趨勢、EVD placement 是否真有進行及其時序、final DSA morphology、是否需 stent/DAPT。因此，現在能說的是『哪些資料會決定本案 EVD 與 coiling 的相對緊急性』，**不能說本案當年應該或實際因為上述某原因選了哪個順序**。這些原始記錄拿不到，報告最後就應如實停在條件式結論。
 
@@ -45,7 +47,7 @@
 3. **原文**：文獻 CT 是 tract bleed 的視覺案例，但沒有觀察研究的分母與適用性。
    **新文**：加入 2017、2023 meta-analysis 的不同問題定義和 2019、2024 cohort 的實際比較，展示為什麼不能選單一結論。
 4. **原文**：未明確給出決策翻轉。
-   **新文**：三個反事實：立即 symptomatic decline、穩定無症狀／即可 securing、需支架/DAPT。
+   **新文**：四個反事實：立即 symptomatic decline、穩定無症狀／即可 securing、需支架/DAPT、無 aneurysm securing 能力且需轉診。
 5. **仍未解**：沒有真實患者急診 CT 與決策時序，不宣稱個案適用已驗收。
 
 ## 現階段的必答口試範圍（範例；不算獨立 reviewer 題庫）
@@ -58,17 +60,17 @@
 
 ## 原始文獻與查證邊界
 
-1. Hoh BL, et al. 2023 AHA/ASA Guideline for aSAH. *Stroke* 2023;54:e314–e370, §8.4。已核對 official guideline 檢索段落與 recommendation，官方 PDF web open 受 403 限制；**未完成此輪全文 PDF 逐頁視覺對讀**，不聲稱已看過該 PDF 原始排版。https://www.ahajournals.org/doi/10.1161/STR.0000000000000436；可讀同文字摘要：https://www.guidelinecentral.com/guideline/4445401/
+1. Hoh BL, et al. 2023 AHA/ASA Guideline for aSAH. *Stroke* 2023;54:e314–e370, §8.4，**PDF printed p. e343 / PDF page 30 (zero-based index 29)**。已於本輪從非官方鏡像取得原始指南 PDF，同時以**實際頁面截圖**核對 recommendation table (Class I, B-NR)、supportive text 的『no data exist on EVD timing』與『無 aneurysm treatment 能力的中心可先穩定、必要時 CSF diversion/EVD 再轉診』；不是完整 57 頁 PDF 或全部附錄查核，醫學文件仍以出版者正式來源為準。Original DOI: https://www.ahajournals.org/doi/10.1161/STR.0000000000000436 ; viewable PDF mirror: https://emergencymed.org.il/wp-content/uploads/2023/06/2023-Guideline-for-the-Management-of-Patients-With-Aneurysmal-Subarachnoid-Hemorrhage-A-Guideline-From-the-American-Heart-AssociationAmerican-Stroke-Association.pdf
 2. Cagnazzo F, et al. *Acta Neurochir* 2017;159:695–704；已核對 PubMed abstract 數值，非全文深度 Cochrane 級偏倚評估。https://pubmed.ncbi.nlm.nih.gov/28243810/
 3. Yang C, et al. *Clin Neurol Neurosurg* 2023;224:107563；已核對 PubMed abstract 數值，非全文 subgroup / forest plot 核查。https://pubmed.ncbi.nlm.nih.gov/36580739/
 4. Lim YC, et al. *Neurointervention* 2019;14:35–42；已核對 PMC 檢索可得研究 methods / results 文字、PubMed abstract，**未逐頁核對 Figure 1 與所有表格註腳**。https://pmc.ncbi.nlm.nih.gov/articles/PMC6433188/；https://pubmed.ncbi.nlm.nih.gov/30636388/
-5. Tang Y, et al. *Front Surg* 2024;11:1403668；已核對 open full HTML 的 methods、results、discussion、limitations 與可見 table 摘錄；未聲稱完整原表所有註腳逐欄驗證。https://www.frontiersin.org/journals/surgery/articles/10.3389/fsurg.2024.1403668/full
+5. Tang Y, et al. *Front Surg* 2024;11:1403668；已核對 open full HTML 的 methods、results、discussion、limitations，及原文 Table 5–6 的群組、分母、posterior circulation 分布與 EVD 時間；未聲稱已完成完整風險偏差評估或原始資料重分析。https://www.frontiersin.org/journals/surgery/articles/10.3389/fsurg.2024.1403668/full
 6. German-speaking DIVI consensus, 2025：作為可讀交叉參照，強調 lack of definitive EVD timing evidence；**非 AHA/ASA 的 RCT 證據替代品**。https://pmc.ncbi.nlm.nih.gov/articles/PMC12312491/
 
 ## 驗收狀態
 
 - Gate Q：**provisional**—以一個高張力問題取代原本九頁泛覆蓋，但未有本案 CT/DSA、無法證明是該病例最重要的唯一問題。
 - Gate D：**author-side strengthened**—已實際比較機轉、替代方案、研究差異與 decision pivots。
-- Gate E：**partial**—可核對的 guideline recommendation / abstracts / accessible original full text；未取全數來源的原圖表與完整偏倚分析。
+- Gate E：**partial**—已視覺核對 AHA/ASA 2023 §8.4 原始 PDF p. e343，並核對 Tang 2024 Tables 5–6；Cagnazzo、Yang 的完整 forest plot／bias assessment 與 Lim 的逐圖核對仍未完成；不能據此宣稱所有來源已審畢。
 - Gate R：**INDEPENDENT_REVIEW_NOT_DONE**—沒有第二個獨立審稿脈絡，也沒有 truly unseen challenge；不得給 PASS。
 - **總裁決：DRAFT / HOLD / NOT_EFFECTIVENESS_VALIDATED**。此示範不能視為原 CBD 已修好，更不能自動合併或公開。
