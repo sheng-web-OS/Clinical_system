@@ -4,7 +4,9 @@
 
 ## 第一問｜真實病人發生了什麼？先看病程，而不是先選藥
 
-一篇已發表的[尿源性敗血性休克病例報告（81 歲女性）](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)描述：病人有**左側輸尿管被泌尿上皮癌阻塞**的情境，發生上泌尿道感染與難治的循環衰竭；之後接受緊急**經皮腎造瘻（percutaneous nephrostomy）**，引流感染相關阻塞。報告記載，住院第 4 天回報的血液與尿液培養均為 **ESBL-producing *Escherichia coli***，團隊維持初始使用的 carbapenem 治療，病人在後續約兩週逐漸恢復，並於較後期接受腫瘤處置。
+一篇已發表的[尿源性敗血性休克病例報告（81 歲女性）](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)將「實驗室數據、循環惡化、解剖感染源」放在同一位真實患者的時序中。患者因發燒、食慾不振和無法活動就醫；初診 **BP 68/36 mmHg、HR 84/min（不規則）、RR 24/min**。原作者記錄 **WBC 27.1 ×10³/μL（neutrophils 93.8%）、Cr 2.7 mg/dL、lactate 3.3 mmol/L、CRP 26.7 mg/dL**；CT 發現左側 ureteropelvic junction（UPJ）阻塞及膿瘍。這些是**原文實測**，不是依「典型敗血症」自行配出的 labs；原文沒有提供這些值對應的完整個人基線，因此不能單憑 Cr 2.7 重新推算精確的 AKI 分期。
+
+**處置的先後順序也是可核對的病例觀察。** 醫療團隊先使用輸液、norepinephrine 與 carbapenem，但持續嚴重低血壓，使原計畫的經皮腎造瘻（percutaneous nephrostomy）暫時無法進行；作者接著記載使用 polymyxin B hemoperfusion（PMX-DHP）及 hydrocortisone。約八小時後血壓改善，才完成腎造瘻引流阻塞的集尿系統。**第 4 天回報的血液與尿液培養均有 ESBL-producing *Escherichia coli***，團隊繼續原本的 carbapenem；作者描述約兩週後病情恢復，最終第 65 天接受左側腎輸尿管切除，病理顯示 urothelial carcinoma。以上來自[原始 Case report／CT Figure 1 圖說](https://academic.oup.com/omcr/article/2021/11-12/omab109/6439717)，但**「PMX-DHP、hydrocortisone 後血壓改善」只是先後發生的個案觀察**；同時存在輸液、升壓、抗菌治療與疾病演變，不能將改善歸因於兩種輔助療法或推廣為標準處置。
 
 這裡先不要把病例整理成「遇到 ESBL 就開 carbapenem」的速查表。病程至少有三條不同但互相牽連的線：
 
