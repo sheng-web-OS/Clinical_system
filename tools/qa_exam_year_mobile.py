@@ -154,7 +154,10 @@ def run(dist: Path, out: Path) -> int:
                             if controls.count() != 1:
                                 problems.append("Missing year→lesson materials: " + str(heart_key))
                             else:
-                                controls.locator("summary").click()
+                                # A previous Q-archive check may already have opened this
+                                # same details element: toggling it twice hides the link.
+                                if controls.get_attribute("open") is None:
+                                    controls.locator("summary").click()
                                 target = controls.locator('a[href="' + expected + '"]')
                                 if target.count() != 1:
                                     problems.append("Deep H2 link absent: " + str(heart_key))
@@ -171,7 +174,8 @@ def run(dist: Path, out: Path) -> int:
                                     if return_panel.count() != 1:
                                         problems.append("Missing deep→year return panel: " + str(heart_key))
                                     else:
-                                        return_panel.locator("summary").click()
+                                        if return_panel.get_attribute("open") is None:
+                                            return_panel.locator("summary").click()
                                         return_href = "xiaoma-exams.html#" + catalog_hash
                                         return_link = return_panel.locator('a[href="' + return_href + '"]')
                                         if return_link.count() != 1:
