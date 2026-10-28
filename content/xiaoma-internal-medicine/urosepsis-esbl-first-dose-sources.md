@@ -16,6 +16,8 @@
 
 **可核實**：81 歲女性、BP 68/36、Cr 2.7、lactate 3.3、左側 UPJ 阻塞性病變、初期循環支持／抗菌治療、嚴重休克下處理後完成 PCN、血尿培第 4 天 ESBL *E. coli*，日後病理泌尿上皮癌。原文 Figure 1 是實際 CT／腎造瘻圖像；本站只連向作者原始頁面，**不複製病人影像**。
 
+**實際經驗性用藥的先驗資料（不可漏讀）**：Arai 原文印刷 **p.434 Case Report 與 Discussion** 記錄：先前 UTI 使用過 **cefcapene pivoxil**（第三代 cephalosporin），作者因此推測抗藥風險，最初即選擇 **carbapenem**，**Day 4** 的血與尿培養才證實 ESBL *E. coli*，因此繼續原方案。這是真實的 first-dose rationale，但原文**沒有報告一份在本次入院前已知 ESBL 的舊培養 AST**；不要把抗生素暴露當成既往 ESBL AST，也不要從原作者選藥推出一般處方優越性。[原作者全文 PDF（Case Report, Discussion）](https://academic.oup.com/omcr/article-pdf/2021/11-12/omab109/41940667/omab109.pdf)。
+
 **不能宣稱**：有證實 ureteral stone（其病因另有腫瘤）；不能由單次 Cr 推定 KDIGO stage，也不能把該院個案採用的 PMX-DHP／hydrocortisone 視為標準治療、普遍受益或推薦用量。原文不能證實藥物與引流每一項對最終結果的個別因果貢獻。
 
 ## 原始比較性證據：不是每種「廣譜」都可互換
