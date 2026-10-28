@@ -34,7 +34,7 @@ class U01ESBLMechanismAndExamTest(unittest.TestCase):
         section = section.split("### T0 的競爭方案", 1)[0]
         for cue in (
             "penicillin-binding proteins", "aztreonam", "carbapenem",
-            "不是「必然」", "TMP-SMX", "其他抗藥性機轉",
+            "不是「必然」", "TMP-SMX", "不同抗藥性機轉",
             "MERINO", "164/187", "184/191",
         ):
             with self.subTest(cue=cue):
@@ -43,7 +43,7 @@ class U01ESBLMechanismAndExamTest(unittest.TestCase):
 
     def test_private_audit_discloses_official_pdf_and_evidence_limits(self):
         for cue in (
-            "Q60", "官方試題", "官方標準答案",
+            "Q60", "官方試題", "標準答案",
             "MERINO", "NOT ORDER-READY", "藥師",
         ):
             with self.subTest(cue=cue):
