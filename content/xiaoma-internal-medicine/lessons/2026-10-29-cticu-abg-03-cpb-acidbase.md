@@ -28,7 +28,7 @@ Chuah 等人在 2013 年發表一項實際 CABG 觀察研究。81 名接受單�
 
 <figure id="cticu-abg-03-cohort-trends" style="margin:1.6rem auto;max-width:390px">
 <img src="cticu-abg-03-cpb-acidbase-group-trends.svg" width="390" height="1100" alt="圖 1：2013 年 55 名 on-pump CABG 病人的七項群體平均術前、術後、隔天早晨變化；每列獨立縱軸，不是單人病歷" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy">
-<figcaption>圖 1｜以 Chuah 2013 原始 Table 3 數字重新設計的多變數時間對照。不同列各自縮放，線條陡緩不能跨指標比較；三個採樣類別也不是等距時間。重點是讀出 Na⁺/Cl⁻、SID、BE、[H⁺] 與 PaCO₂ 的不同方向，而不是從圖推算某名病人的 pH 或治療效果。</figcaption>
+<figcaption>圖 1｜以 Chuah 2013 原始 Table 3 數字重新設計的多變數時間對照。各列單位不同，箭頭只表示相鄰群體平均值的升降方向，不代表變化幅度；三個採樣類別也不是等距時間。重點是讀出 Na⁺/Cl⁻、SID、BE、[H⁺] 與 PaCO₂ 的不同方向，而不是從圖推算某名病人的 pH 或治療效果。</figcaption>
 </figure>
 
 **先看術後立即的變化。** Na⁺ 降低、Cl⁻ 反而上升，SID 從 38.2 降至 29.7；HCO₃⁻ 與 BE 同步下降，符合淨代謝性酸化效應。比較 off-pump 組，術後平均 Cl⁻ 是 108.2 mmol/L、SID 是 33.7 mEq/L；兩組的方向相近，但 on-pump 的強離子構成改變更大。但 [H⁺] 並沒有以同樣幅度顯著升高。研究比較 on-pump 與 off-pump 組，也發現前者在術後的 SID 下降更明顯（組間平均差 4.0 mmol/L，95% CI 2.8–5.3），卻沒有觀察到同樣顯著的 [H⁺] 組間差異。
@@ -79,7 +79,7 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 
 第一，**albumin 本身是 AG 的主要未測陰離子來源**。若 albumin 因稀釋而下降，即使 lactate 或其他未測陰離子增加，未校正 AG 也可能不高。臨床需把同期 albumin 和當地實驗室參考區間納入解釋；低白蛋白時可採 albumin-corrected AG 作為篩查輔助，但校正值並不能證明陰離子的確切身分。若 albumin 未測、採血時間不一致，不應把「AG 正常」寫成排除高 AG 過程。
 
-第二，**AG 不是 strong ion gap（SIG）**。AG 是由有限電解質計算的差額；SIG 是較完整的 physicochemical 模型中，表面強離子差與由 bicarbonate、albumin、phosphate 推得的有效強離子差之差。SIG 的意義建立在不同測量組件與方程式上，不能直接用 AG 或 BE 替代。2026 年 Guarnieri 等人對 50 名選擇性 CPB 心臟手術成人的觀察顯示，ICU 到院時平均 pH 7.33 ± 0.05、BE −3.87 ± 3.3 mmol/L、lactate 2.52 mmol/L，SIG 中位數由基線 6.0 升至 9.8 mmol/L。這項研究顯示，術後到院時增加的 SIG 可以和乳酸之外的酸化力量並存；不過出版社公開的後續結果指出，**SIG 偏移至術後第一天已消退**。因此，不能從「pH 已正常」直接推得每種代謝過程都恢復，也不能反過來宣稱這組病人的 SIG 持續升高。研究另提及 alactic BE 的持續變化，但它不等於 SIG 本身仍持續異常。
+第二，**AG 不是 strong ion gap（SIG）**。AG 是由有限電解質計算的差額；SIG 是較完整的 physicochemical 模型中，表面強離子差與由 bicarbonate、albumin、phosphate 推得的有效強離子差之差。SIG 的意義建立在不同測量組件與方程式上，不能直接用 AG 或 BE 替代。2026 年 Guarnieri 等人對 50 名選擇性 CPB 心臟手術成人的觀察顯示，ICU 到院時平均 pH 7.33 ± 0.05、BE −3.87 ± 3.3 mmol/L、lactate 2.52 mmol/L，SIG 中位數由基線 6.0 升至 9.8 mmol/L。這項研究顯示，術後到院時增加的 SIG 可以和乳酸之外的酸化力量並存；公開摘要只提供基線與 ICU 到院的 SIG 比較，並指出術後第一天 pH 已正常化；**摘要沒有提供術後第一天 SIG 的實際數值與統計比較**。因此，不能從「pH 已正常」推定 SIG 已恢復，也不能把 ICU 到院時的 SIG 升高直接延伸成隔天仍持續升高。研究另提及 alactic BE 的變化，但它不能替代 SIG 的同時點測量。
 
 這項 2026 研究讓我們知道：除了 chloride 與 lactate，還可以存在其他非乳酸性酸化來源。**但它並沒有建立每位 CABG 病人都必須常規計算 SIG、或依 SIG 數字單獨治療的證據。** 對床邊照護而言，更實際的第一步仍是先取得同期 ABG、electrolytes、albumin、lactate，回顧 fluid input 和臨床循環狀況。
 
@@ -116,7 +116,7 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 
 2024 EACTS/EACTAIC/EBCP 成人 CPB 指南（2025 年刊出）指出，normal saline 或不平衡的膠體 prime 可能造成 hyperchloremic acidosis。少數小型隨機試驗比較不同 balanced prime，發現某些配方可降低酸鹼擾動，但指南也明說：**仍缺乏足夠大型、以重要臨床結局為終點的 RCT**，不能由「BE 較漂亮」直接跳到死亡率、AKI 或神經結果更好。
 
-同樣值得保留的反例是，液體不只有 chloride 一種特性。2009 年一項 20 人隨機試驗中，Plasma-Lyte 148 相對於含 bicarbonate 的 prime，CPB 啟動後出現較大的 transient SIG 增加，研究者推測與 acetate／gluconate 等外源陰離子有關；**這不是證明 balanced solution 有害，而是說明「氯較低」不能自動等同於「所有未測陰離子都較少」**。更晚近的研究也顯示 priming strategy、額外液體負荷與不同弱酸／未測陰離子之間仍有交互關係。
+同樣值得保留的反例是，液體不只有 chloride 一種特性。2008 年一項 20 人隨機試驗中，Plasma-Lyte 148 相對於含 bicarbonate 的 prime，CPB 啟動後出現較大的 transient SIG 增加，研究者推測與 acetate／gluconate 等外源陰離子有關；**這不是證明 balanced solution 有害，而是說明「氯較低」不能自動等同於「所有未測陰離子都較少」**。更晚近的研究也顯示 priming strategy、額外液體負荷與不同弱酸／未測陰離子之間仍有交互關係。
 
 所以選 prime 是術中麻醉與 perfusion 團隊的整體決策；已經進入 ICU 的患者，更不能因為術中接受某一種液體就跳過當下血流動力與器官狀態評估。
 
@@ -141,7 +141,7 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 - Hayhoe M, et al. *The aetiology and pathogenesis of cardiopulmonary bypass-associated metabolic acidosis using polygeline pump prime.* Intensive Care Med. 1999;25:680–685. **本次取得 PubMed 摘要，未取得可目視的全文 Table／Figure。** [摘要](https://pubmed.ncbi.nlm.nih.gov/10470571/)。
 - Guarnieri M, et al. *Acid-Base Disturbances After Cardiac Surgery: A Cohort Study Using the Physicochemical Approach.* J Cardiothorac Vasc Anesth. 2026;40:204–213. **本次取得 PubMed 摘要，非原始個體病歷。** [摘要](https://pubmed.ncbi.nlm.nih.gov/41130846/)。
 - Wahba A, et al. *2024 EACTS/EACTAIC/EBCP Guidelines on cardiopulmonary bypass in adult cardiac surgery.* Eur J Cardiothorac Surg. 2025;67:ezae354. [指南全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/)。
-- *Acid-base effects of a bicarbonate-balanced priming fluid during cardiopulmonary bypass: comparison with Plasma-Lyte 148.* 2009 randomized study. [摘要](https://pubmed.ncbi.nlm.nih.gov/19115651/)。
+- *Acid-base effects of a bicarbonate-balanced priming fluid during cardiopulmonary bypass: comparison with Plasma-Lyte 148.* *Anaesth Intensive Care.* 2008;36(6):822–829. Randomized study. [摘要](https://pubmed.ncbi.nlm.nih.gov/19115651/)。
 - van den Brom CE, et al. *Impact of Colloid Cardiopulmonary Bypass Priming Strategy on Perioperative Acid–Base Balance in Coronary Artery Bypass Surgery.* 2026. **本次只取得期刊摘要，研究群體結果不等於個體療效。** [研究摘要](https://pubmed.ncbi.nlm.nih.gov/42791111/)。
 
 延伸閱讀：本系列前篇《CABG lactate／ScvO₂》與《CPB oxygen delivery》分別處理**組織灌流訊號不等於病因**、以及**SaO₂ 不等於氧輸送**；一般酸鹼篇處理 Winter、AG 與混合障礙。本文專注於 CPB 液體、強離子、弱酸、通氣四種力量的臨床相互作用，並未將既有基礎章節重寫一次。
