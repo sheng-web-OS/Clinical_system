@@ -163,7 +163,7 @@ TOF 的經典收縮雜音多來自 RV outflow obstruction 而非大 VSD 噴流�
 | 112-1（2023） | Q13 | A | Wide pulse pressure 為何不支持典型 AS |
 | 112-2（2023） | Q8 | D | ECG／Echo 原圖已核：HCM、ICD 與加重利尿可能惡化 LVOTO 的條件 |
 | 113-1（2024） | Q6 | C | 動態 LVOTO 的 PVC 後脈搏壓反常；不要選錯正誤 |
-| 113-1（2024） | Q9 | D | 雙時相 Echo 原圖已核：左房黏液瘤、栓塞與姿勢性流入阻塞；更正檔待取得 |
+| 113-1（2024） | Q9 | D | 雙時相 Echo 原圖已核：左房黏液瘤、栓塞與姿勢性流入阻塞；官方清單僅有 Q/S |
 | 113-1（2024） | Q11 | B | Carvallo sign 與手法變化 |
 | 113-1（2024） | Q12 | A | HCM 表型、治療陷阱 |
 | 113-2（2024） | Q7 | A | ASD／Ebstein／PAPVR／VSD |
