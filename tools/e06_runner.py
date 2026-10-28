@@ -119,11 +119,11 @@ def main():
     contract_bundle=[]
     for filename,expected_blob in contracts.items():
         b=(root/filename).read_bytes()
-        blob=hashlib.sha1(b"blob "+str(len(b)).encode()+b"\\x00"+b).hexdigest()
+        blob=hashlib.sha1(b"blob "+str(len(b)).encode()+b"\x00"+b).hexdigest()
         if blob!=expected_blob:
             raise RuntimeError(f"Contract drift: {filename}. No model calls made.")
-        contract_bundle.append(f"# {filename}\\n"+b.decode())
-    clinos_contracts="\\n\\n".join(contract_bundle)
+        contract_bundle.append(f"# {filename}\n"+b.decode())
+    clinos_contracts="\n\n".join(contract_bundle)
     folder=args.home/"outputs"
     folder.mkdir(parents=True,exist_ok=True)
     mapfile=args.home/"PRIVATE_unblind_map.json"
@@ -138,7 +138,7 @@ def main():
         if count >= args.max_calls:
             break
         dev=({"A":"Write a high-quality clinical CBD as you normally would.",
-              "B":EVIDENCE,"C":CLINOS+"\\n\\n"+clinos_contracts}[arm])
+              "B":EVIDENCE,"C":CLINOS+"\n\n"+clinos_contracts}[arm])
         question=f"{case} original full text {index[case]['pmcid']}:\n"+source[case]+"\n\n"+COMMON
         started=time.time()
         raw=response(args.model,args.effort,dev,question,args.max_output_tokens)
