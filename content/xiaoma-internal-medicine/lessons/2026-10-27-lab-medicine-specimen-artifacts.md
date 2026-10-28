@@ -127,4 +127,3 @@ ECG 的危險傳導變化與生理背景，使真性高血鉀或其他需立即�
 5. [2013 年 K-EDTA 交叉污染病例](https://pmc.ncbi.nlm.nih.gov/articles/PMC3900060/)；[IV fluid contamination 綜述（2025）](https://jlpm.amegroups.org/article/view/10562/html)。
 6. [ICSH 2021 凝血檢體採樣](https://onlinelibrary.wiley.com/doi/10.1111/ijlh.13584)、[處理](https://onlinelibrary.wiley.com/doi/10.1111/ijlh.13702)建議；[UKKA 成人高血鉀指南，官網提供 July 2026 更新](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。
 
-這篇教材用來建立測量與臨床判讀的因果模型，不提供可不經臨床審核直接執行的個人處方或檢驗醫囑。
