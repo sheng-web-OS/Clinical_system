@@ -46,6 +46,30 @@ class ExamRenderedAnchorTargetRegression(unittest.TestCase):
                             total += 1
         self.assertEqual(total, 49)
 
+    def test_cross_page_canonical_question_identities_are_unique(self):
+        """The old 29+46 combination duplicated 26 official exam identities.
+
+        This guards the actual canonical metadata on both reader pages, not
+        merely whether their URLs render. Historical 29+46 is a documented
+        regression example, not a completed blinded clinical replay.
+        """
+        pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
+        selected = [page for page in pages if page["source"] in SOURCES]
+        self.assertEqual(len(selected), 2)
+        identities = [
+            (question["year_roc"], question["sitting"],
+             question["subject"], question["question_number"])
+            for page in selected for question in page["exam_questions"]
+        ]
+        self.assertEqual(len(identities), 49)
+        self.assertEqual(len(identities), len(set(identities)),
+                         "Two reader pages repeat the same official exam identity")
+
+        # Negative control: inserting one repeated question must be detectable.
+        # This is a fixture-sensitivity check, not a real old-head CI RED.
+        duplicated = identities + [identities[0]]
+        self.assertLess(len(set(duplicated)), len(duplicated))
+
     def test_corrected_answer_emphasis_is_not_a_broken_target(self):
         pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
         original = next(page for page in pages if page["source"] in SOURCES and
