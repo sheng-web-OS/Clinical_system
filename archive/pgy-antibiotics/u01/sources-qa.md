@@ -18,6 +18,7 @@
 | 兩個月舊 ESBL 對 empiric ceftriaxone 之風險 | [IDSA cUTI 2025 Step 2](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections) | 先前 resistant urine isolates 應影響選藥；近的比遠的有用，但本次不一定相同菌。完整舊 AST 未取得，不能斷言本次 meropenem-S |
 | ESBL cUTI 的本次 AST 下 preferred / alternative、口服選項 | [IDSA AMR 2026 §ESBL Q1.2](https://www.idsociety.org/practice-guideline/amr-guidance/) | TMP-SMX/FQ 在 in vitro S 時 preferred；不能把確定性感受性導回未知菌 T0；cefepime-enmetazobactam 與 cefepime 不同 |
 | Piperacillin–tazobactam 適用限制與高菌量／菌血症 | [IDSA AMR 2026 Q1.4](https://www.idsociety.org/practice-guideline/amr-guidance/) | 僅非危重、無 concomitant bacteremia 的 ESBL cUTI 為 alternative；critically ill／concomitant bacteremia **不建議**；不是說所有 cUTI／非 ESBL 均禁 |
+| **ESBL 酵素機轉與雙重抗藥性、MERINO 證據鏈** | [IDSA AMR 2026 §1 Overview, Q1.3–1.4](https://www.idsociety.org/practice-guideline/amr-guidance/) | ESBL 水解多數 cephalosporins、aztreonam，但本酵素通常不水解 carbapenems；可合併不同抗藥機轉而對 carbapenem 不敏感。MERINO 391 patients，30 天存活 pip-tazo **164/187 (88%)** vs meropenem **184/191 (96%)**；重新限定 MIC 標準方法者方向一致但不再達統計顯著；不得混為「所有 ESBL UTI 用 carbapenem」。 |
 | 重症/低白蛋白下 meropenem vs ertapenem；菌血症可 PO 之限定 | [IDSA AMR 2026 Q1.3](https://www.idsociety.org/practice-guideline/amr-guidance/) | 鑑別危重和 hypoalbuminemia；注意 source stability、吸收及足夠血中暴露；病人非已確診 ESBL 菌血症 |
 | 避免用 cefepime 單方處理 ESBL cUTI | [IDSA AMR 2026 Q1.5](https://www.idsociety.org/practice-guideline/amr-guidance/) | 即使 cefepime-S 仍不建議 ESBL cUTI；不得把 cefepime/enmetazobactam 與 cefepime 單方混為一談 |
 | 2026 指南完整藥物表 | [IDSA 2026 AMR Table 1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/amr-guidance/5.0/table-1.pdf) | **已逐頁目視首頁標題與 meropenem 所在頁**；原題頭限定「Assuming Normal Renal and Hepatic Function」，此案例 AKI on CKD + 體重/RRT/CrCl 不明，**禁止用該表直接指定 mg / interval / infusion**，亦不可聲稱已核當院藥典 |
@@ -33,7 +34,7 @@
 2. **Figure 1.2 / 1.3**：「改善→口服候選→轉換→相應療程；不改善→檢查藥菌 mismatch、感染源與診斷→是否需延長」已目視。需在敘事中先讓讀者看到 T48 血流動力與尿路減壓事實再引用原圖；不能先貼七天結論。
 3. **AMR 2026 Table 1**：經逐頁目視，題頭明示 normal renal/hepatic function；本例劑量不能直抄。原圖均採官方深連結，**不擅自搬運未確認公開重製權利的 PDF 截圖**。
 4. **Pocket Medicine 9E、Sanford Guide《熱病》付費來源**：**NOT_ACCESSED / NOT_VERIFIED**；不聲稱已對讀原書表、caption、footnote。此缺口須保持 publication gate，不假造頁碼或劑量。
-5. **國考真題**：本版**尚未逐題核對考選部年度／梯次／科目／題號與更正答案**，不能憑模糊 OCR 硬插「官方真題」。若加入須回到官方 PDF 及答案更正。
+5. **國考真題**：已獨立目視考選部 **111 年第二次醫師二階醫學（三）Q60** 原試題 PDF **p13（PDF p12–13）**、標準答案與更正答案清冊；問的是 cefotaxime、aztreonam、ertapenem 哪些會被 ESBL 水解；答案 **A（僅前兩者）**，更正清冊只有 Q6、Q29 修正，**Q60 不變**。機器解析原先符號亂碼，**由官方頁面可見的①②③取代**。這一題可確實放入正文；其他近五年對題仍須逐題核對，不能一概標完整。參考：[官方試題](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=Q)、[官方標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=S)、[官方更正](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=M)。
 6. **真實 case report**：目前是合成教學示例；真實案例的逐時病程、原圖和引文尚未補，不可誤稱 PubMed 連續真實病例。
 
 ## 3｜臨床風險 Hard Gate（分別判定，不能以文字品質平均分抵銷）
@@ -48,7 +49,7 @@
 | 重要解剖與影像前提 | Hydronephrosis ≠ stone confirmed | **AI text check PASS** |
 | 與撰稿者分離的獨立醫學/藥師處方 QA | **未取得可證實之另一審查者簽核** | **HOLD** |
 | 四種敘事斷裂的獨立對抗性審查 | 可做多角度自查，但由同一編輯流程生成不足視作「獨立」 | **PENDING independent review** |
-| 近五年官方對題與原書圖表實證 | IDSA Figures 已目視；Pocket/Sanford/官方國考題仍缺 | **PARTIAL / HOLD** |
+| 近五年官方對題與原書圖表實證 | IDSA Figures 已目視；官方 111-2 醫學（三）Q60 題幹及答案/更正已目視；Pocket/Sanford 仍缺、其餘題待查 | **PARTIAL / HOLD** |
 | 網站 CI/build、實際 360/375/390px、production | 尚未執行／未取得 head-specific results | **NOT_VERIFIED** |
 | 讀者使用成效 | case-test rubric 存在但無真實作答 | **NOT_TESTED** |
 
@@ -58,7 +59,7 @@
 
 1. 對照 [IDSA 2025 Figure 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf) 的 90/80% 適用限制；針對「低重症或沒 ESBL 過往」加第二個 full counterfactual，避免教成一律 meropenem。
 2. 以**未參與撰寫**的醫學／藥師審核者，對第一劑危急性、過敏、AKI 暴露、decompression 與菌血症口服降階逐項查驗並留可稽核結果；如無法取得者明確 HOLD，不得由 AI 自評替代。
-3. 尋找並驗證 2022–2026 臺灣醫師二階近五年與 ESBL／尿路感染相關的官方真題；原圖不可讀時直接保留未證實。
+3. 111-2 醫學（三）Q60 已完成官方三份原 PDF 目視核查並寫入主文；繼續搜尋 2022–2026 其餘 ESBL／尿路感染關聯二階題，逐題核年度、梯次、科目、號、原圖與更正，未核實不加入。
 4. 只有通過醫學硬閘，才開放教育版 publication candidate 註冊、CI/build、360/375/390px、HTTP production read-back、Cloudflare SHA，並依現行合併／發布授權審核。
 
 **影響主線**：不變更每日 09:00 小麻／雙考期排程，不建立與 Issue #179 重複的週三／週日自動化。不將本稿的私人研究 metadata 放到面向讀者的文章中。
