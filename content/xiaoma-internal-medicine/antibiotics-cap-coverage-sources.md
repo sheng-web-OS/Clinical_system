@@ -9,6 +9,7 @@ Spretz MW, Orrukem MM, Khwaja B, Karnath B. *Legionella Pneumonia: A Case of Fev
 - **Table 1、PDF 第 2 頁**：69 歲男性入院 creatinine 3.3 mg/dL、Na 134 mEq/L、AST 141 U/L、ALT 117 U/L；沒有列出入院 BUN，無法自行重算作者報告的 CURB-65 第 2 分。
 - **Figure 1、PDF 第 2 頁**：入院雙肺浸潤，右側較重；影像顯示肺部疾病範圍，但不能僅憑影像確認 Legionella。
 - **Figure 2、PDF 第 3 頁**：顯影 CT 多發性肺泡病變及小量胸水；胸水的病原、pH、glucose、培養和是否需引流，原病例沒有提供足以確定的資料。
+- **出院用藥、PDF 第 3 頁**：原作者記載 levofloxacin 750 mg 每 48 小時（renally dosed），creatinine 出院約 1.80 mg/dL。這只描述此患者醫囑與當時腎功能，缺少可審核 Cockcroft–Gault 或其他院內處方規則的全部條件，不能當成其他 AKI 患者照抄的處方。
 - **病程、PDF 第 2–3 頁**：開始 IV ceftriaxone、PO azithromycin；持續發燒、氧氣 3 L/min，減氧時 SpO₂ 降到 89%；第 3 天血培無生長，顯影 CT 後使用 cefepime；第 4 天補得積水暴露史、Legionella 尿抗原陽性，調整 levofloxacin 後逐漸恢復。此為實際發生的次序，不是可藉結果回填的當時推理。
 
 這篇案例的 CXR 為 Spretz 等人 CC BY 4.0 開放授權的原始 Figure 1，圖片在主文置於入院判斷段落；**病原鑑別必須依臨床和微生物檢驗，不能因後來確診便宣稱早期影像具有特異性**。
