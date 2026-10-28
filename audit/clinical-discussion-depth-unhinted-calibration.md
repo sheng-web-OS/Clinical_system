@@ -111,3 +111,16 @@ One trial may be used to debug packet integrity, **not** to claim validity. Repe
 - [Zhang et al., Findings EMNLP 2026, SciSycEval](https://aclanthology.org/2026.findings-emnlp.1501/) reports authority/task/framing-dependent scientific sycophancy and that critique prompts mitigate but do not erase it; current site access returned cache miss on a direct open, so use this only as an abstract-level background pointer, not original PDF-verified results. These papers do not provide a direct effect estimate for this user/project.
 
 **Unresolved blocker**: no qualifying whole GREEN neurosurgical Discussion and no separately executed blind model trials or real patient chart; T2 has no verifiable model continuation forks. Status stays `PRE-REGISTERED DESIGN / NOT_EFFECTIVENESS_VALIDATED`. This document does not start background agents or approve publication.
+
+
+## 7. External control search and why none is accepted as whole GREEN
+
+Three sourced candidates have identifiable clinical reasoning to preserve and may support **claim-level normal controls**, but neither peer review nor appearing in an AI benchmark establishes a complete, matched expert-level Discussion:
+
+- Emami et al., *Neurology* 2011, [Clinical Reasoning: A rare cause of subarachnoid hemorrhage](https://pmc.ncbi.nlm.nih.gov/articles/PMC3059140/): genuine source-anchored competing diagnoses and clinical investigations. **Mismatch**: rare SAH etiology diagnostic reasoning, not BA aneurysm coiling/EVD treatment; older treatment evidence.
+- [Subarachnoid Hemorrhage Causing a Seizure: An Assessment Simulation for Medical Students](https://pmc.ncbi.nlm.nih.gov/articles/PMC11312874/), *MedEdPORTAL* 2024: faculty-developed SAH contingency planning. **Mismatch**: emergency medicine student assessment, not specialist neurosurgery discussion.
+- [MedR-Bench](https://www.nature.com/articles/s41467-025-64769-1), *Nature Communications* 2025: real-case-derived structured reasoning across diagnostic and treatment stages, **but some reference reasoning was assembled with model assistance**. Benchmark inclusion does not equal independent full-text specialist adjudication.
+
+**Whole GREEN entry requirements**: source-verified entire clinical Discussion, comparable educational purpose and audience, correct historical case evidence, and a *prior* separate domain-expert appraisal of critical competing mechanisms, EBM applicability, decision pivots and case relevance. Freeze before any model reviewer sees it. Until then, whole-report specificity is **NOT_MEASURED**; do not select a convenient article and relabel it GREEN after reading AI criticism. Within-manuscript preserved correct passages and explicitly synthetic fault injections are narrower *development-only* controls.
+
+**Privacy / cost**: Historical Clinical_system transcript is private; no uploads to unapproved public LLM services, no credentials or patient data in test packets. Cloudflare Workers AI publishes a free daily allowance, but this experiment has not confirmed the connected account's remaining free quota or whether paid overage applies; **no inference calls have been made and no spending is authorized**. Trial execution remains unverified.
