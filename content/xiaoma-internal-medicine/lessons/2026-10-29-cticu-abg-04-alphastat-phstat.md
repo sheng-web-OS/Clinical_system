@@ -39,7 +39,7 @@ pH-stat 採取另一個基準：**把病人實際體溫下校正後的 pH、PaCO
 pH-stat 的生理效應與其風險，從 CO₂ 造成的腦血管擴張開始理解：較高 PaCO₂ 可增加 cerebral blood flow，可能使腦部降溫更均勻，對腦血流自動調節尚未成熟的嬰幼兒或某些極低溫情境特別有討論價值。但同一條 CO₂ → cerebral vasodilation 的路徑，也可能造成腦血流自動調節受損、腦部充血，以及增加微栓子抵達腦循環的機會。這些路徑構成可檢驗的競爭機轉，不是足以靠生理學就裁決所有術式的結論。
 
 <figure id="cticu-abg-04-measurement-decision" style="margin:1.6rem auto;max-width:390px">
-<a href="cticu-abg-04-alpha-phstat-logic.svg" target="_blank" rel="noopener noreferrer" aria-label="在新分頁開啟 alpha-stat 與 pH-stat 原創圖，可雙指放大閱讀"><img src="cticu-abg-04-alpha-phstat-logic.svg" width="390" height="1040" alt="原創示意圖：同一管低溫血液在37°C與溫度校正顯示的差別、alpha-stat和pH-stat會如何影響實際CO₂管理，以及腦灌流決策邊界" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy"></a>
+<a href="cticu-abg-04-alpha-phstat-logic.svg" target="_blank" rel="noopener noreferrer" aria-label="在新分頁開啟 alpha-stat 與 pH-stat 原創圖，可雙指放大閱讀"><img src="cticu-abg-04-alpha-phstat-logic.svg" width="390" height="1130" alt="原創示意圖：同一管低溫血液在37°C與溫度校正顯示的差別、alpha-stat和pH-stat會如何影響實際CO₂管理，以及腦灌流決策邊界" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy"></a>
 <figcaption>圖 1｜先區分「血氣的溫度基準」與「臨床真正調整 CO₂」，再分辨兩種策略可能影響的腦循環。此圖為原創概念模型，不是病人的兩份實測血氣；成人 high-moderate hypothermia 的建議有特定適用範圍。 **手機可點圖開啟原尺寸 SVG，雙指放大閱讀細節。**</figcaption>
 </figure>
 
