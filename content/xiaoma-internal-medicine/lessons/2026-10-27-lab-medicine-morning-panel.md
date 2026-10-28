@@ -127,7 +127,7 @@ Platelet 154 ×10³/µL 可能落在某些實驗室參考範圍內，但從 232 
 
 ### 延伸國考練習（不複製既有題目）
 
-已收錄的 **115 年第二次醫師二階醫學（三）第 26 題**，以急性腸胃炎與 Na 132 mmol/L，考驗「水分流失造成非滲透性 ADH 刺激，為何會伴隨低血鈉」，其逐選項詳解已在[二十題跨科基線教材](2026-10-22-baseline-twenty.md#baseline-q07)。本篇要再多走一步：即使血鈉低，也不能僅由濃度推論全身鈉總量；若病人又有高血糖、少尿、輸液或腎臟功能變化，應先拆開量測與真正的水分平衡。**本次已額外目視核對官方原始試題及標準／更正答案 PDF**：115 年第二次醫學（三）Q26 的選項 B vasopressin，標準與更正答案均維持 B。此前結構化題庫的機器擷取狀態仍須與這份人工對題紀錄區分；個別題已核實，不代表全部年度題庫完成驗證。
+已收錄的 **115 年第二次醫師二階醫學（三）第 26 題**，以急性腸胃炎與 Na 132 mmol/L，考驗「水分流失造成非滲透性 ADH 刺激，為何會伴隨低血鈉」，其逐選項詳解已在[二十題跨科基線教材](2026-10-22-baseline-twenty.md#baseline-q07)。本篇要再多走一步：即使血鈉低，也不能僅由濃度推論全身鈉總量；若病人又有高血糖、少尿、輸液或腎臟功能變化，應先拆開量測與真正的水分平衡。在考選部公布的 115 年第二次醫學（三）Q26 中，標準與更正答案均為 **B（vasopressin）**；這個答案指出水分調節的生理機轉，並不代表對所有低鈉病人都可以忽略血糖、容量及腎臟因素。
 
 ## 09　病房值班的簡明判讀提醒
 
@@ -147,11 +147,11 @@ Platelet 154 ×10³/µL 可能落在某些實驗室參考範圍內，但從 232 
 
 1. NICE, *Acute kidney injury: prevention, detection and management*, NG148, recommendations 1.1–1.5。用於 AKI 評估、尿檢、尿路阻塞、監測及腎臟替代治療的決策界線。https://www.nice.org.uk/guidance/ng148/chapter/Recommendations
 2. AHRQ PSNet, *Hemolysis Holdup*. 用於溶血檢體與 K/LDH 受干擾、假異常不排除真異常的病例警示。https://psnet.ahrq.gov/web-mm/hemolysis-holdup
-3. UK Kidney Association, *Treatment of Acute Hyperkalaemia in Adults*, 2023 guideline with July 2026 update listed on official page。本文引用網站的更新狀態及一般風險分流，不宣稱已目視核對新版 PDF 的每一算法分支；實際劑量與治療細節必須另做逐頁正式審查。https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0
+3. UK Kidney Association, *Treatment of Acute Hyperkalaemia in Adults*, 成人急性高血鉀治療指引（July 2026 更新）。危險分流、ECG、重新採檢與藥物治療需依其個別適應條件及院內流程，本文不提供可直接照抄的固定劑量。https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0
 4. *Laboratory Artifacts in Clinical Medicine: A Review*, Mayo Clinic Proceedings, 2026. https://doi.org/10.1016/j.mayocp.2026.04.009
 5. KDIGO, *Acute Kidney Injury Clinical Practice Guideline*, 2012，經官方主題頁定位；本篇以 NICE 的 HTML 正文核對現行標準判準。https://kdigo.org/guidelines/acute-kidney-injury/
 6. KDIGO 官方 AKI/AKD 頁記載 2026 **draft for public review / preparing for publication**，此時不可當成已生效新指引。https://kdigo.org/guidelines/acute-kidney-injury/
-7. Clinical_system 已有《pH 正常，為什麼仍可能有兩個酸鹼障礙？》與 Pocket Medicine 9E 對照來源，作為酸鹼延伸的先備教材；本篇只使用同時點生化、AG 與 Winter 檢查，不宣稱直接查核原圖。相應臨床正文：2026-10-23-acid-base.md
+7. 酸鹼延伸閱讀：《pH 正常，為什麼仍可能有兩個酸鹼障礙？》。本篇的 AG 與 Winter 判讀只是同時點檢驗的入門交叉驗證，不能取代完整血氣與混合障礙評估。相應正文：2026-10-23-acid-base.md
 8. European Clinical Practice Guideline on Hyponatraemia, 2014，核對 6.2.1 hyperglycaemia 校正以 2.4 mmol/L per 100 mg/dL 為指引例示，並核對其 2014 correction 對公式單位的勘誤；Katz 1.6 僅作常見不同估算法比較。https://academic.oup.com/ejendo/article/170/3/G1/6668028 ; https://academic.oup.com/ejendo/article/171/1/X1/6661472
 9. MedlinePlus, *Complete Blood Count* 與 *Blood Differential*，用於測量定義及 DC 的臨床非特異性，不作為嗜中性球低下療法門檻來源。https://medlineplus.gov/lab-tests/complete-blood-count-cbc/ ; https://medlineplus.gov/lab-tests/blood-differential/
 10. Choosing Wisely Canada, *Using Labs Wisely*；Washington University Laboratory Utilization CBC/BMP 指引。適用於**臨床與檢驗穩定、缺乏新問題的住院患者**，不是對急重症少抽血的絕對規則。https://choosingwiselycanada.org/hospitals/labs-test/ ; https://sites.wustl.edu/laboratoryutilization/items/complete-blood-count-cbc-without-differential-blood-lab294-basic-metabolic-panel-bmp-lab15-comprehensive-metabolic-panel-cmp-lab17/
