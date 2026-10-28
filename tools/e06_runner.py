@@ -109,6 +109,21 @@ def main():
         raise RuntimeError("OPENAI_API_KEY missing. No API invoked.")
     if not 1 <= args.max_calls <= 9:
         raise ValueError("--max-calls must be 1..9")
+    # Verify and load the real Clinical OS contracts, not an abbreviated proxy.
+    root=Path(__file__).resolve().parent.parent
+    contracts={
+      "docs/clinical-os-integration-20261021.md": "7680efef607ffe5dc14d984b639e4552312c02a8",
+      "docs/editorial-prose-quality-contract.md": "be2fb5ff3e503e9a818ffd6db3606a5997fa4573",
+      "docs/editorial-semantic-release-gate.md": "683797914e918078d2b81938f1d25956808aa6fd",
+    }
+    contract_bundle=[]
+    for filename,expected_blob in contracts.items():
+        b=(root/filename).read_bytes()
+        blob=hashlib.sha1(b"blob "+str(len(b)).encode()+b"\\x00"+b).hexdigest()
+        if blob!=expected_blob:
+            raise RuntimeError(f"Contract drift: {filename}. No model calls made.")
+        contract_bundle.append(f"# {filename}\\n"+b.decode())
+    clinos_contracts="\\n\\n".join(contract_bundle)
     folder=args.home/"outputs"
     folder.mkdir(parents=True,exist_ok=True)
     mapfile=args.home/"PRIVATE_unblind_map.json"
@@ -123,7 +138,7 @@ def main():
         if count >= args.max_calls:
             break
         dev=({"A":"Write a high-quality clinical CBD as you normally would.",
-              "B":EVIDENCE,"C":CLINOS}[arm])
+              "B":EVIDENCE,"C":CLINOS+"\\n\\n"+clinos_contracts}[arm])
         question=f"{case} original full text {index[case]['pmcid']}:\n"+source[case]+"\n\n"+COMMON
         started=time.time()
         raw=response(args.model,args.effort,dev,question,args.max_output_tokens)
