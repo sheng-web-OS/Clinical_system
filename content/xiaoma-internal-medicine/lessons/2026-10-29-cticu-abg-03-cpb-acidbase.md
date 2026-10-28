@@ -27,8 +27,8 @@ Chuah 等人在 2013 年發表一項實際 CABG 觀察研究。81 名接受單�
 | PaCO₂（kPa） | 5.23 | 4.93 | 5.60 |
 
 <figure id="cticu-abg-03-cohort-trends" style="margin:1.6rem auto;max-width:390px">
-<img src="cticu-abg-03-cpb-acidbase-group-trends.svg" width="390" height="1100" alt="圖 1：2013 年 55 名 on-pump CABG 病人，七項數值分別列出術前、術後、隔日早晨的群體平均；各列用箭頭表示平均值升降，不是單一患者病歷，也沒有連續曲線或縱軸" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy">
-<figcaption>圖 1｜以 Chuah 2013 原始 Table 3 數字重新設計的多變數時間對照。各列單位不同，箭頭只表示相鄰群體平均值的升降方向，不代表變化幅度；三個採樣類別也不是等距時間。重點是讀出 Na⁺/Cl⁻、SID、BE、[H⁺] 與 PaCO₂ 的不同方向，而不是從圖推算某名病人的 pH 或治療效果。</figcaption>
+<a href="cticu-abg-03-cpb-acidbase-group-trends.svg" target="_blank" rel="noopener noreferrer" aria-label="在新分頁開啟 CABG 55 人群體平均原創圖，可雙指放大閱讀"><img src="cticu-abg-03-cpb-acidbase-group-trends.svg" width="390" height="1100" alt="圖 1：2013 年 55 名 on-pump CABG 病人，七項數值分別列出術前、術後、隔日早晨的群體平均；各列用箭頭表示平均值升降，不是單一患者病歷，也沒有連續曲線或縱軸" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy"></a>
+<figcaption>圖 1｜以 Chuah 2013 原始 Table 3 數字重新設計的多變數時間對照。各列單位不同，箭頭只表示相鄰群體平均值的升降方向，不代表變化幅度；三個採樣類別也不是等距時間。重點是讀出 Na⁺/Cl⁻、SID、BE、[H⁺] 與 PaCO₂ 的不同方向，而不是從圖推算某名病人的 pH 或治療效果。**手機可點圖開啟原尺寸 SVG，雙指放大閱讀細節；上方表格提供相同數值的文字版本。**</figcaption>
 </figure>
 
 **先看術後立即的變化。** Na⁺ 降低、Cl⁻ 反而上升，SID 從 38.2 降至 29.7；HCO₃⁻ 與 BE 同步下降，符合淨代謝性酸化效應。比較 off-pump 組，術後平均 Cl⁻ 是 108.2 mmol/L、SID 是 33.7 mEq/L；兩組的方向相近，但 on-pump 的強離子構成改變更大。但 [H⁺] 並沒有以同樣幅度顯著升高。研究比較 on-pump 與 off-pump 組，也發現前者在術後的 SID 下降更明顯（組間平均差 4.0 mmol/L，95% CI 2.8–5.3），卻沒有觀察到同樣顯著的 [H⁺] 組間差異。
