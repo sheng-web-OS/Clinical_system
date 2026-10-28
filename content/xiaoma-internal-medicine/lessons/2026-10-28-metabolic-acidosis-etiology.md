@@ -211,7 +211,7 @@ Sodium bicarbonate 是另一種容易讓「數值」取代「病因」的介入�
 
 [6] American Diabetes Association. Diabetes Care in the Hospital: Standards of Care in Diabetes—2026. *Diabetes Care*. 2026;49(Suppl 1). [指引](https://doi.org/10.2337/dc26-s016)。
 
-[7] 《臺大內科住院醫師醫療手冊》，腎臟疾病章，pp. 861–863，High AG、Normal AG、UAG 與 Δ ratio；以及代謝性酸中毒相關流程圖。以其診斷架構作為研究比對起點，不公開複製原書頁面或原圖。
+[7] 《臺大內科住院醫師醫療手冊》，腎臟疾病章，pp. 861–863：High AG、Normal AG、UAG、Δ ratio 的病因分流。本文引用其臨床判讀概念，未重製原書頁面；另有一張不同來源的「Figure 4-2 Approach to metabolic acidosis」供診斷概念對照，該圖出版來源未確立，故不歸屬於本手冊、不公開重製。
 
 [8] Vendeloo M, et al. Life-threatening hypokalaemic paralysis associated with distal renal tubular acidosis. *Neth J Med*. 2011;69:35–38. [病例](https://pubmed.ncbi.nlm.nih.gov/21325700/)。
 
