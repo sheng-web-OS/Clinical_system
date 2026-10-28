@@ -95,3 +95,16 @@
 - pH ≥7.40：初步低風險，無立即 ICD 適應症；† 註腳要求持續發燒、發炎指標不退等時重評及考慮再抽液，且 pH >7.4 合併 septations 者仍應考慮引流。不能教成 pH≥7.4 永遠不引流。
 - 與 Pocket p.96「Characteristics of Pleural Fluid (not diagnostic criteria)」交叉核對：病因典型值不能替代 BTS 決策圖；尤其感染性胸水引流是時間序列判斷，不是只讀一次 pH。
 - 狀態：BTS decision-tree 本體及 footnotes 已核對；不公開翻印 BTS 原圖。下一個硬阻擋為三道官方真題的原卷與更正答案、獨立醫學/敘事 QA、發布後回歸驗證；仍維持 Draft/HOLD。
+
+
+## 2026-10-28 獨立反例審查第一輪（與原作者稿分開的批判性審讀；非專科醫師簽核）
+- 來源狀態校正：Pocket p.94–96 原頁、BTS 官方圖、112（一）Q45／114（一）Q48／115（二）Q49 官方 Q/S/M，依本 QA 前文最新核證均已 VERIFIED；前文歷史 HOLD 段落不可再當作現況。獨立醫師簽核、公開工程 gate 仍 HOLD。
+- 反例 A：pH 7.29 + LDH 1200 + glucose 45 + septations + fever：原文採 BTS 中風險多因素決策，並要求安全窗口，PASS；不可由 exudate 自動推論 ICD。
+- 反例 B：pH 7.45 + septations：原文表格有 BTS 註腳，PASS；但案例對照段 pH 7.45 的不引流情境必須同時明示「沒有分隔、退燒、縮小」才成立，原文已具備。
+- 反例 C：pH ≤7.2 但沒有超音波安全窗口：原文已限制安全可及液體並要求專科替代策略，PASS。
+- 反例 D：RA／malignancy 造成低 pH：原文已警示低 pH 非感染專屬，PASS。
+- 反例 E：CHF 利尿後 pseudoexudate：原文 serum–pleural albumin gradient 1.5 >1.2，且明示不能排除雙重病因，PASS。
+- 反例 F：Pleural fluid pH 採檢污染：原文已述 local anaesthetic/heparin、延遲及多 locules 差異，PASS。
+- 新發現的教學風險：原文第 08 節前言仍寫『原始官方 PDF ... 尚未成功重新逐頁開啟，故 ... HOLD』，但下方三道題標題、引用段及 QA 新證據已標示核證完成，**同篇自相矛盾**。需修正文稿這一行，避免讀者誤解；不能以此宣稱已完成獨立臨床簽核。
+- 原文臨床案例為明確標示的合成教學案例，不可冒稱真實 case report 或可直接照開醫囑；現有文字已標示此限制。抗生素／Lab Medicine 的 evidence-first 規則不可因本篇示例而放寬。
+- 本輪屬可追溯的反例 QA，不是獨立醫師正式審查，故 gate 仍 HOLD。
