@@ -86,6 +86,14 @@ jobs:
               python tools/qa_lab_morning_draft.py --output visual-qa-artifacts/lab-morning-draft
             fi
           fi
+      - name: Verify private pleural source-first reader on phones and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f tools/qa_pleural_effusion_draft.py && test -f archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md; then
+            if ! git diff --quiet origin/main...HEAD -- tools/qa_pleural_effusion_draft.py archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md site/styles.css site/build.py; then
+              python tools/qa_pleural_effusion_draft.py --output visual-qa-artifacts/pleural-draft
+            fi
+          fi
       - name: Verify official exam study links on 360/375/390px phones
         if: github.event_name == 'pull_request'
         run: |
@@ -127,6 +135,29 @@ jobs:
         run: |
           if ! git diff --quiet origin/main...HEAD -- site/styles.css site/build.py tools/visual_qa_browser.py; then
             python tools/visual_qa_browser.py --all --widths 360 390 1280 --output visual-qa-artifacts/legacy
+          fi
+      - name: Preflight proposed pleural publication in a disposable private worktree
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          pleural_patch="$GITHUB_WORKSPACE/audit/2026-10-28-pleural-release-candidate.patch"
+          if test -f "$pleural_patch" && ! test -f content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md; then
+            pleural_preview=$(mktemp -d)
+            git worktree add --detach "$pleural_preview" HEAD
+            trap 'git worktree remove --force "$pleural_preview"' EXIT
+            git -C "$pleural_preview" apply --check "$pleural_patch"
+            git -C "$pleural_preview" apply "$pleural_patch"
+            if test -d .figure-cache; then cp -a .figure-cache "$pleural_preview/.figure-cache"; fi
+            mkdir -p "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
+            (cd "$pleural_preview" && bash tools/build_site.sh) | tee "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight/build.log"
+            python "$pleural_preview/tools/qa_pleural_release_preview.py" --site "$pleural_preview/dist" --output "$GITHUB_WORKSPACE/visual-qa-artifacts/pleural-release-preflight"
+          fi
+      - name: Verify integrated pleural release on phone and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md; then
+            bash tools/build_site.sh
+            python tools/qa_pleural_release_preview.py --site dist --output visual-qa-artifacts/pleural-release-integrated
           fi
       - name: Retain browser visual QA screenshots and reports
         if: always()

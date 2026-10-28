@@ -1095,6 +1095,30 @@
           "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pleural-effusion-decision-sources.md",
+      "items": [
+        {
+          "locator": "Cureus2024 original Figure2 serial chest radiographs p3 and Table1 pleural fluid observations p4; exact56M and separateDay3/Day5 samples",
+          "source_token": "Cureus 2024 Table 1",
+          "mode": "illustrated",
+          "anchor": "pleural-case-evidence",
+          "caption_token": "Cureus 2024",
+          "teaching_role": "以兩條證據軌分開症狀改善與胸膜空間未解，並將Day3未知pH和Day5新樣本並排，避免把LDH比值、後期pH或時間關聯誤當單一治療證明。",
+          "scope_limit": "圖為原創比較示意而非原刊影像；case report沒有未介入對照，不能由後來改善證明胸管或tPA/DNase的單獨因果效果。"
+        },
+        {
+          "locator": "BTS2023 official full supplement printedp37 original nonpurulent pleural infection decision tree and adjacent table; Appendix1 PDFp5",
+          "source_token": "BTS 2023 Appendix 1",
+          "mode": "source_link",
+          "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
+          "teaching_role": "原始pH三支分流必須與安全超音波窗口及高pH分隔註腳一起讀，才能解釋正常pH、分隔與仍需重評的關係，不把Light分類直接等同胸管適應症。",
+          "scope_limit": "圖中LDH≥900而文字>900的差異不可抹平；原圖先行條件是非膿性疑似感染，不能代替膿液或無安全窗口等不同情境。",
+          "why_link_instead": "獨立來源審查已實際核讀官方原圖與兩項註腳；提供BTS原始入口，正文以原創文字表解釋，避免未授權重製原始像素或讓讀者誤認為已重製Pocket書頁。"
+        }
+      ]
     }
   }
 }

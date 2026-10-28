@@ -3057,5 +3057,61 @@
     "section": "參考資料",
     "navigation": false,
     "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md",
+    "output": "xiaoma-20261028-pleural-effusion-decision.html",
+    "title": "胸水不是診斷：什麼時候該抽、抽出來又何時必須放胸管？",
+    "subtitle": "真實病例的症狀、胸膜空間與兩次取樣：Light分類、感染判斷與安全引流",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔內科",
+    "references": "xiaoma-pleural-effusion-decision-sources.html",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "independent_ai_review",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 45,
+        "question_heading": "真題 A｜112 年第一次・醫學（三）Q45（官方原卷、答案及更正表已核；B）",
+        "concept_heading": "05｜真正需要胸管的分界，不是「exudate」而是「感染性胸膜腔必須被排空」",
+        "topic": "感染性胸水的引流線索與BTS分流"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "question_heading": "真題 B｜114 年第一次・醫學（三）Q48（官方原卷、答案及更正表已核；B）",
+        "concept_heading": "04｜抽到 exudate 後，真正會改變今晚處置的，是哪幾項檢查？",
+        "topic": "胸水細胞與glucose、乳糜胸和血胸的量測定義"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "question_heading": "真題 C｜115 年第二次・醫學（三）Q49（官方原卷、答案及更正表已核；A）",
+        "concept_heading": "07｜把相似的液體重新拆開：四種不該被 Light criteria 吞沒的問題",
+        "topic": "胸水病因、amylase與解剖時間線"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pleural-effusion-decision-sources.md",
+    "output": "xiaoma-pleural-effusion-decision-sources.html",
+    "title": "胸水：原始病例、圖表與指南來源",
+    "subtitle": "Cureus真實時序、BTS原圖註腳、Pocket定位與官方Q/S/M",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_evidence_review"
   }
 ]
