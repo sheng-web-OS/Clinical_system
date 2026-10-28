@@ -2385,15 +2385,16 @@
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md",
     "output": "xiaoma-20261027-heart-sounds-structural-exam.html",
-    "title": "心音與結構性心臟病：從心動週期到血流機轉的概念導論",
-    "subtitle": "S1/S2、動態雜音、瓣膜、先天分流、HCM 與結構介入",
+    "title": "心音與結構性心臟病：從心動週期到臨床判斷",
+    "subtitle": "真實急性 MR 病例、壓力與流量、四大瓣膜病、HCM、分流與 Echo 證據",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "section": "心臟與循環",
     "date": "2026-10-27",
     "navigation": false,
     "review": "ai_editorial_review",
-    "references": "xiaoma-heart-sounds-structural-sources.html"
+    "references": "xiaoma-heart-sounds-structural-sources.html",
+    "updated": "2026-10-28"
   },
   {
     "source": "content/xiaoma-internal-medicine/heart-sounds-structural-sources.md",
