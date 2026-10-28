@@ -2385,7 +2385,7 @@
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md",
     "output": "xiaoma-20261027-heart-sounds-structural-exam.html",
-    "title": "從第一聲心音到結構性心臟病：歷屆國考完整解題",
+    "title": "心音與結構性心臟病：從心動週期到血流機轉的概念導論",
     "subtitle": "S1/S2、動態雜音、瓣膜、先天分流、HCM 與結構介入",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
@@ -2409,8 +2409,8 @@
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md",
     "output": "xiaoma-20261027-heart-sounds-cross-discipline-exams.html",
-    "title": "心音與結構性心臟病：111–115 年跨科 29 題四選項詳解",
-    "subtitle": "醫學（四）至（六）：先天性心臟病、瓣膜手術、麻醉壓差與正式更正答案",
+    "title": "國考題庫｜心音與結構病 111–115 年跨科 29 題解析",
+    "subtitle": "逐題選項推理與正式更正答案；屬題庫解析，非系統性教材",
     "collection": "xiaoma-internal-medicine",
     "kind": "exam_compilation",
     "layout": "reader",
@@ -2755,8 +2755,8 @@
   {
     "source": "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md",
     "output": "xiaoma-exam-heart-sounds-structural-cross-specialty-111-115.html",
-    "title": "心音與結構性心臟病：既有 29 題以外的 20 道跨科增補",
-    "subtitle": "對照已發表 29 題，專補其餘小兒、心外、麻醉國考：TEE、AVSD、Eisenmenger、PDA 等",
+    "title": "國考題庫｜心音與結構病另 20 道跨科補充題",
+    "subtitle": "對照 29 題無重複的跨科選項詳解；題庫解析，非系統性教材",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "section": "心臟與循環・官方真題",
