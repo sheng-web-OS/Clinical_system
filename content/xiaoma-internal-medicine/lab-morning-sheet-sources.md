@@ -26,6 +26,14 @@
 
 **已目視的 KDIGO 2012 原表／原圖**：Chapter 2.1，印刷 p.19 **Table 2 (Staging of AKI)**，明列 Cr ≥0.3 mg/dL 的 stage 1 分期條件與 <0.5 mL/kg/h 持續 6–12 小時的尿量門檻；Chapter 2.3，印刷 p.25 **Figure 4 (Stage-based management of AKI)**，將 volume status/perfusion、nephrotoxic exposure、Cr/urine monitoring 與必要時的 RRT 評估列為隨風險階段處理的項目。Figure 4 圖說還指出陰影強度代表措施隨嚴重度增加而提高優先度，**不是已知病因、絕對給液量或透析 cutoff**。[KDIGO AKI 原始完整 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)。
 
+## 2A. 心衰竭合併 AKI：為何 Cr 上升不等於缺水？
+
+[2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure：住院 ADHF 的初始 assessment 需要同時評估 congestion 與 perfusion](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012)。
+
+[Michigan Medicine Inpatient Diuretic Guideline for Patients with Acute Decompensated Heart Failure：Q18，creatinine rise during effective decongestion](https://www.ncbi.nlm.nih.gov/books/NBK589894/)。
+
+原文章由「既有鬱血、靜脈利尿、Cr 升高」推進至心衰竭的血流動力不確定性時，有必要先區分**殘餘鬱血、有效灌流、腎臟實質損傷與阻塞**，而不是單看 I/O 負 1.4 L 便補液或一律停藥。AHA/ACC/HFSA 指引支持同時看 congestion/perfusion；Michigan Medicine 住院利尿實務規範提醒 modest Cr increase 在仍有鬱血時不一定是必須停止利尿的獨立理由。但兩項參考**不能證明本文合成病例的 Cr 上升為 benign、也不能直接決定實際病人的利尿劑量**。新的逐段病例寫法把床邊灌流／鬱血資訊放在醫囑抉擇之前，而非直接由 Cr 得出單一治療。
+
 ## 3. 高鉀救治需要 ECG、病人風險和分層流程
 
 [UK Kidney Association，Treatment of Acute Hyperkalaemia in Adults（官方頁，載有 2026 年 7 月更新版下載入口）](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。
@@ -56,6 +64,6 @@
 
 ## 6. 圖表的身分
 
-[主文圖 1](lessons/2026-10-28-lab-morning-sheet.md#lab-three-clocks) 是本站原創的**合成病例證據比較圖**：以 06:00 溶血 K 6.3 → 07:15 無溶血 K 4.9、10/27 Cr 1.16 → 10/28 重抽 Cr 1.69，以及 240 mL／8 h 尿量紀錄待確認，呈現「分鐘／小時／天」三條**並行**決策線。箭頭只表示**採檢時間**的比較，**不是**治療造成 K 下降、AKI 病因已確定或病人實際尿量可靠的證據。此圖不是 KDIGO AKI staging Table、UKKA hyperkalaemia algorithm、AJKD 原始 Figure 或 validated clinical rule；不能取代原指引的臨床條件、原圖註腳及院內處置規範。
+[主文圖 1](lessons/2026-10-28-lab-morning-sheet.md#lab-three-clocks) 是本站原創的**合成病例證據比較圖**：以 06:00 溶血 K 6.3 → 07:15 無溶血 K 4.9、10/27 Cr 1.16 → 10/28 重抽 Cr 1.69，以及 240 mL／8 h 尿量紀錄待確認，呈現「病人安全、量測可信度、腎臟病程」三條**並行**決策線（圖面以分鐘／小時／天作為讀者辨識時序的輔助），而不是一條先後通關流程。箭頭只表示**採檢時間**的比較，**不是**治療造成 K 下降、AKI 病因已確定或病人實際尿量可靠的證據。此圖不是 KDIGO AKI staging Table、UKKA hyperkalaemia algorithm、AJKD 原始 Figure 或 validated clinical rule；不能取代原指引的臨床條件、原圖註腳及院內處置規範。
 
 若要查核臨床 cutoff、ECG 分支或尿量分級，應返回各指引原始圖表與其 caption／footnotes。
