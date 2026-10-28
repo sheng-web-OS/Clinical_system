@@ -3463,5 +3463,29 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-eudka-real-case.md",
+    "output": "xiaoma-20261029-eudka-real-case.html",
+    "title": "血糖只有 153 mg/dL，為什麼酮酸中毒已經危及生命？",
+    "subtitle": "一位真實 euDKA 病人，從競爭機轉、β-OHB 與 Winter 代償，到 insulin、葡萄糖、鉀與危機解除",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "內分泌與急重症",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-eudka-case-guideline-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/eudka-case-guideline-sources.md",
+    "output": "xiaoma-eudka-case-guideline-sources.html",
+    "title": "正常血糖酮酸中毒｜原始病例與指引圖表",
+    "subtitle": "Cai 2026 病例時間軸、2024/2026 共識與 114-1 醫學（三）Q56 官方原卷",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_evidence_review"
   }
 ]
