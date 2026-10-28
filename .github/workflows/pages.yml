@@ -100,6 +100,12 @@ jobs:
           if test -f tools/qa_lab_companion_drafts.py; then
             python tools/qa_lab_companion_drafts.py --output visual-qa-artifacts/lab-companion-drafts
           fi
+      - name: Preflight Lab 02 and Lab 03 temporary publication with deduplicated Moex links
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f tools/qa_lab_release_preflight.py; then
+            python tools/qa_lab_release_preflight.py --output visual-qa-artifacts/lab-release-preflight
+          fi
       - name: Verify official exam study links on 360/375/390px phones
         if: github.event_name == 'pull_request'
         run: |
