@@ -5,6 +5,7 @@ Static checks do not establish medical safety or reader comprehension.
 """
 from pathlib import Path
 import unittest
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLE = ROOT / "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
@@ -63,6 +64,17 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertEqual(self.body.count("居家抽血 Hb"), 1)
         self.assertIn("4.5 g/dL", self.body)
         self.assertIn("7.9 g/dL", self.body)
+
+    def test_public_reader_registry_title_matches_article_and_private_browser(self):
+        pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
+        rows = [r for r in pages if r.get("source") == str(ARTICLE.relative_to(ROOT))]
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(self.body.splitlines()[0], "# " + rows[0]["title"])
+        self.assertTrue(rows[0].get("references"))
+        qa = (ROOT / "tools/qa_lab_morning_draft.py").read_text(encoding="utf-8")
+        self.assertIn("canonical_row()", qa)
+        self.assertIn("Article H1 differs from site/pages.json title", qa)
+        self.assertNotIn("TITLE = ", qa)
 
     def test_source_page_agrees_with_current_primary_evidence(self):
         for locator in ("PMC11462689", "PMC7673871", "PMC11908522"):
