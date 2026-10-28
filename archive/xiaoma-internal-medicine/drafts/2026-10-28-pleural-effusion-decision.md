@@ -1,16 +1,41 @@
 # 胸水不是診斷：什麼時候該抽、抽出來又何時必須放胸管？
 
-> **讀者入口**：一位有肺炎與單側胸水的病人，抗生素已經開始，卻仍持續發燒。真正要回答的不是「Light criteria 算出 exudate 了嗎」，而是胸膜腔裡是否出現**必須引流的感染空間**。本文以合成連續病例講清楚「是否抽液 → 液體代表哪種機轉 → 是否需要 source control → 治療後還剩什麼問題」。所有數字均為教學構造，非真實病歷與個別醫囑。
+> 一位肺炎病人的胸痛與呼吸症狀改善了，胸水卻繼續增大。此時「病人好轉」「Light criteria 是 exudate」「pH 沒有降低」各能回答什麼，又不能替代哪個判斷？本文先讀一份已發表病例的原始病程與兩次胸水檢驗，再以 BTS 指引及獨立反事實釐清取樣、分類與引流的不同目的。病例未報告的數據保留未知，不把病例作者的行動寫成可直接照抄的醫囑。
 
-## 01｜同樣看到白色的肋膈角，為什麼處置不一樣？
+## 01｜症狀改善，為什麼胸膜腔的問題卻可能還在？
 
-值班時接到兩位病人的胸部 X 光。第一位 74 歲女性有已知心衰竭，雙側肋膈角鈍化、下肢水腫、頸靜脈壓升高，近期體重增加；無發燒、胸痛或感染線索。第二位 61 歲男性因右下葉肺炎住院，已接受抗菌藥三天，仍發燒 38.8°C、右側胸膜性疼痛，超音波看到右側新出現的中等量胸水與局部分隔。
+El Zibaoui、Odeyemi 與 El Labban 在 2024 年發表一位 **56 歲男性**的肺炎旁胸水病例（[原始病例，DOI 10.7759/cureus.52986](https://assets.cureus.com/uploads/case_report/pdf/222237/20240126-32324-1eaex2m.pdf)）。初始 CT 的左下葉肺炎只伴少量胸水；再次入院後接受 ceftriaxone 與 doxycycline，胸痛與呼吸症狀逐漸改善。然而後續影像顯示左側胸水增大，超音波看見分隔。這些是作者報告的觀察，不是我們替一個假想病人設計的檢驗面板。
 
-兩人都有「胸水」，但胸水只是在**胸膜腔內的液體淨累積**，不是一個完整的病因診斷。正常胸膜腔持續有液體生成與淋巴回收；當全身性靜水壓上升、膠體滲透壓下降，或局部微血管／胸膜通透性、淋巴引流、胸腹交通出現問題，淨流入量便可超過回收量。第一位可能主要是全身容量與壓力問題，處理原病因後可回收；第二位則可能有肺炎旁的局部發炎，甚至已演變成受分隔的感染性空間。**影像上的「有多少液體」無法直接告訴我們其內是否感染，也無法由 X 光單獨決定需不需要胸管。**
+這個矛盾不是「症狀不重要」，而是它們取樣的問題不同。胸痛、呼吸困難與發炎反應反映整體病程的一部分；胸膜腔液體的體積、是否分隔與肺受壓，則是另一個空間裡的資訊。肺炎改善不會自動證明積液已能回收，也不能從分隔單獨證明細菌仍在繁殖。因此下一步應是釐清積液的性質、分布和安全取樣條件，而不是在「已改善所以不管」與「看到分隔就確診膿胸」之間二選一。
 
-因此第一個決策並非先算 Light criteria，而是先問：**若今天不抽，會漏掉什麼會改變治療的診斷？** 如果臨床高度符合典型雙側心衰竭積液，且沒有單側顯著不對稱、發燒、胸膜痛、異常影像或治療後不改善，可以先治療心衰竭並密切重新評估。反過來，新的單側、原因不明、感染疑慮、惡性腫瘤疑慮、或典型心衰治療後不退的積液，若超音波證實有安全可及的液體，診斷性胸腔穿刺的價值便提高。這是**在不確定性與穿刺風險間作選擇**，不是「胸水超過某一公分就一律抽」的機械規則。
+胸水本身只是胸膜腔內液體淨累積的結果。全身靜水壓、膠體滲透壓、局部通透性、淋巴回收與胸腹交通都可改變液體平衡。**有多少液體、液體為何形成、是否感染，以及今天能否安全介入，是相關但不同的問題。** 第一個決策因此不是先算 Light criteria，而是問：取得樣本會改變哪個尚未確定的診斷或處置？
 
-回到肺炎男性：即使抗生素已涵蓋疑似病原，仍持續發燒與胸膜痛，不能把「正在治療肺炎」當成不必查胸水的理由。肺實質感染與胸膜腔感染是兩個相連但不同的空間；抗菌藥可能處理血流與肺組織的病原，卻未必能排空充滿纖維蛋白分隔與膿性液體的胸膜腔。下一步是床邊評估呼吸／循環是否不穩定，並用胸腔超音波確認可穿刺區域與積液形態；若疑似嚴重感染或器官灌流惡化，復甦、抗菌藥與呼叫有引流能力的團隊同步推進，不因等待完整化驗而放任惡化。
+作為與本病例分開的比較：典型雙側心衰竭積液、沒有不對稱、發燒、胸膜痛或治療後不改善時，可以先處理原病因並重評；新的單側或原因不明積液、感染或腫瘤疑慮，則提高取樣的資訊價值。這是指南支持的情境比較，並非替上述 56 歲男性補寫心衰竭病史。若呼吸或循環惡化，床邊評估、抗菌治療與有能力的程序團隊應同步介入，不能等一套完整分類才處理危險。
+
+下面把同一位病人的兩條證據放在一起。圖中連線只表示前後觀察，不是介入療效的因果證明。
+
+<figure id="pleural-case-evidence" style="max-width:370px;margin:1.5rem auto">
+<svg viewBox="0 0 340 570" role="img" aria-labelledby="pleural-evidence-title pleural-evidence-desc" style="display:block;width:100%;height:auto;background:#f6f8fc;border-radius:16px">
+<title id="pleural-evidence-title">同一位病人的症狀改善與胸水增大並存</title>
+<desc id="pleural-evidence-desc">左欄是症狀，右欄是胸膜空間；接著分開第三與第五天的兩次檢體，第三天pH未知，第五天7.42不能倒填為第三天數值。末端保留臨床判斷與因果不確定性。</desc>
+<text x="170" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#14243a">全身好轉 ≠ 空間問題已解</text>
+<text x="82" y="65" text-anchor="middle" font-size="17" fill="#235a7d">症狀軌</text>
+<text x="258" y="65" text-anchor="middle" font-size="17" fill="#9b451e">胸膜空間軌</text>
+<rect x="10" y="80" width="150" height="106" rx="10" fill="#dfedf7"/>
+<rect x="180" y="80" width="150" height="106" rx="10" fill="#fbe5d8"/>
+<text x="85" y="110" text-anchor="middle" font-size="17" fill="#17334b"><tspan x="85">胸痛、呼吸症狀</tspan><tspan x="85" dy="28">逐漸改善</tspan></text>
+<text x="255" y="110" text-anchor="middle" font-size="17" fill="#62321e"><tspan x="255">胸水增大</tspan><tspan x="255" dy="28">多重分隔</tspan></text>
+<path d="M85 194V220H255V194 M170 220V242" fill="none" stroke="#596c86" stroke-width="2"/>
+<text x="170" y="269" text-anchor="middle" font-size="18" font-weight="700" fill="#14243a">兩次取樣要分開讀</text>
+<rect x="10" y="290" width="150" height="135" rx="10" fill="#e6eaf2"/>
+<rect x="180" y="290" width="150" height="135" rx="10" fill="#e6eaf2"/>
+<text x="85" y="319" text-anchor="middle" font-size="17" fill="#14243a"><tspan x="85">Table 1：Day 3</tspan><tspan x="85" dy="30">pH 未報告</tspan><tspan x="85" dy="27">LDH 1254</tspan><tspan x="85" dy="27">glucose 71</tspan></text>
+<text x="255" y="319" text-anchor="middle" font-size="17" fill="#14243a"><tspan x="255">Table 1：Day 5</tspan><tspan x="255" dy="30">pH 7.42</tspan><tspan x="255" dy="27">LDH 607</tspan><tspan x="255" dy="27">glucose 84</tspan></text>
+<path d="M85 435V453H255V435 M170 453V472" fill="none" stroke="#596c86" stroke-width="2"/>
+<text x="170" y="502" text-anchor="middle" font-size="17" fill="#14243a"><tspan x="170">不能倒填數值或由 pH 單獨結案</tspan><tspan x="170" dy="27">回到殘留積液、分隔與安全窗口</tspan><tspan x="170" dy="27">單一病例不能證明治療因果</tspan></text>
+</svg>
+<figcaption>原創證據比較圖，非原刊影像；資料來自 El Zibaoui 等，Cureus 2024，Table 1 與 Figure 2。LDH 單位 U/L，glucose 單位 mg/dL。原文 Figure 2B 寫 Day 2，Table 1 卻以 Day 3 標記首次取樣，這項原文內部日序差異保留；檢驗欄位依 Table 1，不自行統一原文標記。<a href="https://assets.cureus.com/uploads/case_report/pdf/222237/20240126-32324-1eaex2m.pdf">查看原始病程、影像與表格</a>。</figcaption>
+</figure>
 
 ## 02｜超音波真正增加的是「空間資訊」，不是把每一片分隔都診斷成膿胸
 
@@ -32,15 +57,32 @@
 | 胸水 LDH／血清 LDH | > 0.6 | 胸膜腔相對血液的細胞損傷／發炎訊號 |
 | 胸水 LDH | > 血清 LDH 正常上限的 2/3 | 胸膜腔 LDH 的絕對升高 |
 
-例如同日血清蛋白 6.4 g/dL、胸水蛋白 3.6 g/dL，比例 0.5625，已達 exudate；血清 LDH 200 U/L、胸水 LDH 320 U/L，比例 1.6，也符合。這表示局部病變值得追查，**不表示「一定感染」「一定惡性」或「一定放胸管」**。肺炎、腫瘤、結核、肺栓塞、自體免疫病、胰臟或食道疾病都可呈 exudate；也有多重病因同時存在。
+回到真實病例，原文 Table 1 把兩次胸水取樣分成 Day 3 與 Day 5。先把能確定與不知道的資料完整分開，才計算比值：
 
-現在把病例改成第一位心衰竭女性：利尿前後她的積液減少、呼吸改善，但抽液時胸水蛋白相對升高，Light criteria 其中一項呈陽性。利尿會改變胸膜液體與血漿的水分比例，形成 **pseudoexudate**：本質仍可能由心衰竭主導，卻在以高敏感度辨識 exudate 的分類器中被標為陽性。這時應回到前測機率、治療反應、胸水與血清 albumin 同步檢測，以及必要時 NT-proBNP，而不是因一個 exudate 標籤直接安排腫瘤侵入性檢查。
+<!-- PLEURAL_CASE_TABLE:START -->
+| 原文 Table 1 的檢驗 | Day 3 | Day 5 |
+| --- | --- | --- |
+| 胸水取樣量（mL） | 260 | 150 |
+| 胸水 pH | 未報告 | 7.42 |
+| 胸水 LDH（U/L） | 1254 | 607 |
+| 血漿 LDH（U/L） | 169 | 未報告 |
+| 胸水 total protein（g/dL） | 3.8 | 4.0 |
+| 血漿 total protein（g/dL） | 5.6 | 5.4 |
+| 胸水 glucose（mg/dL） | 71 | 84 |
+| 有核細胞（/µL） | 5901 | 450 |
+| neutrophils（%） | 94 | 65 |
+| 細菌培養 | 無生長 | 無生長 |
+<!-- PLEURAL_CASE_TABLE:END -->
+
+Day 3 的蛋白比值約 **3.8/5.6 = 0.68**，LDH 比值約 **1254/169 = 7.42**，已分別超過前兩項 Light 門檻，不必猜血漿 LDH 正常上限才能判為 exudate。注意第二個比值碰巧也是 7.42，**它是無單位的 LDH 比值，不是 Day 3 的 pH**；Day 3 的 pH 原文沒有報告。分類只支持追查局部病變，不能單憑它確診感染、膿胸或決定胸管；肺炎、腫瘤、結核、肺栓塞與自體免疫病都可能形成 exudate。
+
+另設一個與這位男性分開的心衰竭反事實：利尿前後她的積液減少、呼吸改善，但抽液時胸水蛋白相對升高，Light criteria 其中一項呈陽性。利尿會改變胸膜液體與血漿的水分比例，形成 **pseudoexudate**：本質仍可能由心衰竭主導，卻在以高敏感度辨識 exudate 的分類器中被標為陽性。這時應回到前測機率、治療反應、胸水與血清 albumin 同步檢測，以及必要時 NT-proBNP，而不是因一個 exudate 標籤直接安排腫瘤侵入性檢查。
 
 例如同日 serum albumin 3.6 g/dL、pleural albumin 2.1 g/dL，**serum–pleural albumin gradient = 1.5 g/dL**，大於常用的 1.2 g/dL 支持 transudative physiology 的替代指標；但這個梯度也不能排除同時存在的感染、腫瘤或肺栓塞。臨床懷疑與影像不一致時仍須追查。把 Light criteria 與 albumin gradient 當成兩個回答不同問題的工具，比把它們當成互斥診斷更安全。
 
 ## 04｜抽到 exudate 後，真正會改變今晚處置的，是哪幾項檢查？
 
-回到肺炎男性。送檢的基礎組合通常包括同日血清／胸水 total protein 與 LDH、胸水 cell count/differential、glucose、pH、Gram stain／culture；若懷疑腫瘤、結核、乳糜胸、血胸或胰臟／食道病因，才依問題加入 cytology、ADA、triglyceride、hematocrit、amylase 等。**不是所有胸水一律加驗所有特殊檢查**；檢查的價值在於能否把目前的鑑別改成不同的下一步。
+回到這位真實病例：原始 Table 1 提供了蛋白、LDH、glucose、細胞及微生物資訊，卻沒有 Day 3 的 pH；不能為了讓流程完整而替作者填入一個數字。一般疑似感染性胸水的基礎送檢組合通常包括同日血清／胸水 total protein 與 LDH、胸水 cell count/differential、glucose、pH、Gram stain／culture；若懷疑腫瘤、結核、乳糜胸、血胸或胰臟／食道病因，才依問題加入 cytology、ADA、triglyceride、hematocrit、amylase 等。**不是所有胸水一律加驗所有特殊檢查**；檢查的價值在於能否把目前的鑑別改成不同的下一步。
 
 白血球以 neutrophil 為主常見於急性胸膜炎症或肺炎旁積液，但肺栓塞等也可如此；lymphocyte predominance 使結核、惡性腫瘤與慢性病因值得考慮，卻不是 TB 確診。Cytology 陰性也不能單獨排除胸膜惡性腫瘤，仍要看癌種、檢體量與影像；持續原因不明可需影像導引胸膜切片或 thoracoscopy。若胸水呈乳白，不能僅以外觀或膽固醇診斷 chylothorax：典型檢驗重點是胸水 triglyceride，必要時 chylomicrons。若疑似 hemothorax，判準是**胸水 hematocrit 相對周邊血 hematocrit**，不是胸水 hemoglobin 任一絕對值。
 
@@ -61,7 +103,11 @@
 
 這張表是**依 BTS 2023 官方原始流程圖（完整補充 PDF 第 37 頁；PDF index 44）目視後自行整理**，非原圖翻拍。兩個註腳不可省略：**星號註腳：**引流必須有超音波確認的安全可及積液；**†** 沒有立即引流時需以持續發燒、發炎指標未降及病程重新評估，**pH >7.4 而有分隔仍應考慮引流**。此外，原圖分支把 LDH 畫為「<900／≥900」，同份指引的文字建議卻寫「>900 IU/L」；教材不應將剛好 900 的情境偽裝成完全確定的臨床處方界線。pH 受採樣位置與污染影響；多個 locule 之間的 pH 可能不同。類風濕性胸水與進展期惡性腫瘤也可能低 pH，**低 pH 不是感染專屬標記**。
 
-現在給男性病人新的結果：胸水 pH 7.29、LDH 1,200 U/L、glucose 45 mg/dL，超音波見分隔，仍持續高燒。單看 pH 7.29，不能機械說「大於 7.2 所以不用胸管」；它落在中間風險區，LDH >900、低 glucose、持續發燒與分隔共同把決策推向引流。應即時與胸腔科／相關程序團隊討論可安全引流的位置，並持續適當抗菌治療。反過來，若 pH 7.45、glucose 正常、沒有分隔、臨床逐日退燒且積液變小，當下不必因 exudate 身分強迫放管，但仍須回診／住院再評估。
+再讀原病例的下一個轉折：Day 4 症狀與發炎指標改善，影像仍有較大的局部分隔積液；Day 5 CT 顯示持續大型分隔積液及壓迫性肺不張，作者才在超音波導引下置入胸管。當天的新樣本 pH 7.42、LDH 607、glucose 84，培養無生長。**不能把 Day 5 的 pH 倒填到 Day 3，也不能宣稱這份病例已由低 pH 證明膿胸。** 原作者也指出 Day 5 的檢驗不支持 empyema 診斷。
+
+這並不構成「pH 7.42 所以一律需要引流」的新規則。它顯示的是：低感染風險的化驗分層不能單獨回答大型殘留積液、分隔及肺受壓的全部問題。BTS 的低風險分支與重新評估註腳需一起讀；原病例中的持續空間問題，是理解作者決策的另一條證據。至於在完全相同條件下不引流會如何，單一病例沒有提供對照，不能由後來改善證明唯一正確處置。
+
+現在才另設**獨立假想反事實**：pH 7.29、LDH 1,200、glucose 45 且持續發燒、有分隔。這**不是這位 56 歲男性**任何時點的原始數值，而是用來檢查 BTS 中間風險分支的條件題。這組條件會提高引流考量，但仍需安全超音波窗口與團隊評估；反之 pH 7.45、沒有分隔、逐日退燒且積液變小的假想情境，也不能只因 exudate 就強迫置管。
 
 ## 06｜胸管放了，為什麼病人仍可能沒有改善？
 
@@ -69,7 +115,9 @@
 
 BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore chest tube**。若初次胸管引流已停止但仍有殘留感染性積液，可由專科團隊考慮 **intrapleural tPA + DNase 合併治療**，而非把單用 tPA 或單用 DNase 視為等效。出血風險、抗凝狀態、劑量與給藥程序需個別審核；仍失敗時考慮 VATS 等外科處置。這些是**引流失敗後的救援分支**，不是每位初診胸水病人都要依序接受的固定流程。
 
-一個常見的反事實：假如男性病人抗菌藥後體溫下降，但影像顯示胸水擴大、氧氣需求增加，仍不能因「退燒」就推論 source control 已成功；反之胸水量減少但仍休克，也不能認定所有休克都由胸膜腔造成。治療後重新問的是：**原本要解決的危險是否真的解除，還有哪些競爭解釋？**
+原病例後續仍需多次處理：Day 6 開始胸膜腔內 tPA/DNase，Day 14 改用較大管徑胸管，Day 16 影像改善並移除管路。這條先後順序不能分離抗菌藥、引流、時間及其他因素各自的效果，更不能把作者使用的個案藥量移植成本院處方；它真正保留的問題是「初次引流後是否仍有未解的空間」。原始 Figure 2 可對照前後影像；本文不重製其原始像素。
+
+再作一個與原患者分開的反事實：假如另一位病人抗菌藥後體溫下降，但影像顯示胸水擴大、氧氣需求增加，仍不能因「退燒」就推論 source control 已成功；反之胸水量減少但仍休克，也不能認定所有休克都由胸膜腔造成。治療後重新問的是：**原本要解決的危險是否真的解除，還有哪些競爭解釋？**
 
 ## 07｜把相似的液體重新拆開：四種不該被 Light criteria 吞沒的問題
 
@@ -79,7 +127,7 @@ BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore ches
 
 ## 08｜國考把哪一段推理拆成選項？
 
-以下三題已依考選部官方原卷（Q）、標準答案（S）與更正表（M）重新核對年度、梯次、科別、題號與最終計分答案；核對入口列於文末。**題目身分與答案核實不等於醫學推論已經獨立審查，也不代表文章已正式發布。**先自行作答，再看逐項解析。
+三題分別測試引流線索、液體定義與病因連結。年度、題號、官方答案及更正入口列於文末；先自行作答，再看每個選項在哪一步改變了判斷。
 
 ### 真題 A｜112 年第一次・醫學（三）Q45（官方原卷、答案及更正表已核；B）
 
@@ -107,7 +155,7 @@ BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore ches
 
 **答案 B。** A 混淆分類與引流適應症；C 把高敏感分類器當病因確診；D 忽略臨床再評估與不典型表現。
 
-### 自編遷移題 T2（非國考）
+### 自編遷移題 T2（獨立假想反事實，非國考、非原病例）
 
 肺炎病人抽出非膿性胸水，pH 7.29、LDH 1,200 U/L、glucose 45 mg/dL；持續發燒，超音波有分隔。A 因 pH >7.2 絕對不放胸管；B 因 exudate 身分一律胸管；C 結合 BTS 中間風險分支、超音波安全窗口及臨床惡化，與團隊討論引流；D 只加強利尿。
 
@@ -121,12 +169,13 @@ BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore ches
 
 ---
 
-### 本稿引用與查核入口（公開時須移至專屬來源頁）
+### 原始病例、指南與考題
 
-1. 《Pocket Medicine》第九版，使用者持有之私人 PDF **PDF 實頁 94–96（全檔 464 頁）**，章名 **PLEURAL EFFUSION**；p95 原表標題 **Transudative vs. Exudative Effusions**，左欄 **Light’s Criteria**、右欄 **Three-Test Rule**；p95 下段 **Additional pleural fluid studies**；p96 表題 **Characteristics of Pleural Fluid (not diagnostic criteria)** 與 **Treatment**。2026-10-28 已從私人來源合法取得原始 bytes，私人工作環境 180 dpi 渲染、逐頁目視及對讀文字；**原書影像不得嵌入公開網站，原圖核讀不等於醫學與重製權審查合格**。
-2. British Thoracic Society, *Guideline for pleural disease*, Thorax 2023, doi:10.1136/thorax-2022-219784；已目視 BTS 官方 [完整 Supplement PDF](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/) 第 37 頁（PDF index 44）之 *Suspected pleural infection, non-purulent fluid—initial decision tree*、下方摘要表與 ***/† 安全註腳**，並與正文建議核對。原圖僅連結，不在此重製；LDH ≥900（圖）和 >900（文字）差異已交代。
-3. British Thoracic Society, *Clinical Statement on pleural procedures*, Thorax 2023;78(Suppl 3):s43–s68，胸腔超音波與抽液安全。https://thorax.bmj.com/content/78/Suppl_3/s43
-4. *A practical approach to pseudoexudative pleural effusions*, Respir Med 2023; PMID 37172787。https://pubmed.ncbi.nlm.nih.gov/37172787/
-5. **臺灣考選部官方原卷與更正表已逐頁核對（2026-10-28）**，試題代號均為 1302：112（一）醫學（三）Q45 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q)／[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M)，最終 B（更正僅涉及 Q47）；114（一）醫學（三）Q48 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M)，最終 B（更正僅涉及 Q23、Q42）；115（二）醫學（三）Q49 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)，最終 A（更正僅涉及 Q1、Q8、Q10、Q36、Q38、Q40）。以上僅確認官方題幹/四選項/最終計分身分，不取代完整醫學論證、圖表版權或公開編輯 QA。
+1. El Zibaoui R, Odeyemi YE, El Labban M. *A Rapidly Enlarging Asymptomatic Parapneumonic Effusion: A Case Report*. Cureus 2024;16(1):e52986，DOI 10.7759/cureus.52986。[原始 PDF](https://assets.cureus.com/uploads/case_report/pdf/222237/20240126-32324-1eaex2m.pdf)：Figure 1/2 為序列影像，Table 1 為同一病人的兩次檢驗。病例敘事與 Table 1／Figure 2B 的首次取樣日序存在原文內部差異；本文檢驗欄位依 Table 1 標記，不推定精確介入間隔。原刊採 CC BY 4.0；本文以原創解析與原圖連結呈現。
+2. British Thoracic Society, *Guideline for pleural disease*, 2023。[官方完整 Supplement](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/)，印刷 p.37（PDF index 44）的感染性胸水初始分流圖與安全註腳；引流與 tPA/DNase 依正式建議的適用情境判讀，並保留圖中 LDH ≥900 與文字 >900 的差異。
+3. BTS, *Clinical Statement on pleural procedures*, Thorax 2023;78(Suppl 3):s43–s68。[程序安全原文](https://thorax.bmj.com/content/78/Suppl_3/s43)。
+4. *Pocket Medicine*, 9th ed., PLEURAL EFFUSION，PDF p.94–96；p.95 為 Light／Three-Test 對照，p.96 的液體特徵表明註不是診斷門檻。此處不重製書頁。
+5. *A practical approach to pseudoexudative pleural effusions*, Respir Med 2023，[PMID 37172787](https://pubmed.ncbi.nlm.nih.gov/37172787/)。
+6. 臺灣考選部官方原卷、標準答案與更正表（試題代號 1302）：112（一）醫學（三）Q45 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q)／[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M)，最終 B（更正僅涉及 Q47）；114（一）醫學（三）Q48 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M)，最終 B（更正僅涉及 Q23、Q42）；115（二）醫學（三）Q49 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)，最終 A（更正僅涉及 Q1、Q8、Q10、Q36、Q38、Q40）。以上僅確認官方題幹/四選項/最終計分身分，不取代完整醫學論證、圖表版權或公開編輯 QA。
 
-**編輯狀態：PRIVATE DRAFT／Pocket 原表與 BTS 原圖已核／三題官方 Q/S/M 已核／獨立臨床教學 QA、公開權利、同 HEAD CI 與手機正式閱讀驗收仍 HOLD；非正式發布，非院內操作 SOP。**
+本篇用於醫學學習與證據判讀，不能代替病人當下的臨床與程序評估。

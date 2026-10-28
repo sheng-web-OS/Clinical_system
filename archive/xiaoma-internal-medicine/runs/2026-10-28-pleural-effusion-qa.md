@@ -1,5 +1,18 @@
 # 2026-10-28 09:00｜胸水主線：來源、圖表、真題與發布稽核（PRIVATE）
 
+## 2026-10-28 使用者指出「commit 後即停止」：實際 source-first 修訂，繼續驗收
+
+- 起點：PR #188 head 93bf00ebefc3d3103dc864185fe34f36b4f52b3c；原 writer 的逐步停止由使用者截圖直接指出。本執行依使用者修正要求在**原 PR/原路徑**接手 writer 角色，未另建競爭稿。後續本執行不得自簽 independent_ai_pass。
+- 原獨立退修：comment 6458991939；來源提案：comment 6459173189。已修的官方題 HOLD 句不重修；私人 Pocket 94–96/BTS/三組 Q/S/M 原頁成功證據沿用，不重跑舊失敗。
+- 原始病例：El Zibaoui / Odeyemi / El Labban, Cureus 2024;16:e52986，DOI 10.7759/cureus.52986；出版社 8 頁原 PDF https://assets.cureus.com/uploads/case_report/pdf/222237/20240126-32324-1eaex2m.pdf 。本執行讀完整病例／Table 1 原文，並目視 p.3 Figure 2、p.4 Table 1；BTS supplement p.37 原流程圖亦重新查看。本次沒有重新取得私人 Pocket 原像素，不能冒稱本輪重新看過。
+- **D 必要安全/來源更正**：主線移除合成74F/61M侵入性決策鏈，改56M肺炎症狀改善但積液分隔/增大的原始觀察。Day3 Table1 pH未報告；Day5 7.42為新樣本，不能倒填，也不能寫成已確診empyema。Day3 protein3.8/5.6≈0.68、LDH1254/169≈7.42是Light兩項比值，後者不是pH。pH7.29只保留為明示的獨立假想反事實；不把case report行動升格指南或EMR處方。
+- **本輪另發現原文內部不一致**：Figure2B caption標Day2 post-thoracentesis，Table1標DayThree；後期換管/移管圖說也與敘事有一天標記差。本稿檢驗欄位依Table1，不自行修原文或推算精確介入間隔；不依賴這項差異建立療效因果。
+- **A/B/C/D分類**：A 保留原已正確BTS pH/安全窗口/惡性及RA/pseudoexudate邊界；B 連接症狀軌與胸膜空間軌；C 真實Table1兩時點與原始樣本未知欄位是本稿新來源錨；D 移除混合合成主線、分開指南/反事實、刪公開讀者頁內部進度註記；X 不採納原病例綜述Table3的簡化Light/LDH200等作指南，不補未知數字。
+- **圖像/權利**：新圖pleural-case-evidence是自行編碼的證據比較圖，非原刊/教科書圖像臨摹；原像素僅外連。Cureus原PDF載CC BY4.0；本稿以作者/刊名/DOI/原文連結署名。不公開Pocket/BTS原頁，沒有以版權不明阻止所有原創文字的自動結論。必要獨立figure語義/權利判斷仍未由writer簽PASS。
+- **RED/GREEN**：新增6項來源身分/樣本時間/缺值/反事實隔離/原文差異/原有安全與官方身分回歸。原稿5FAIL+1PASS，本地修訂後6/6PASS。RED test-first commit edbc2be18429f1267058aec154fc148a3939d639；GitHub run須看真實結果，不用本地測試冒充整體CI。
+- **實際接續工程**：同PR加入私人reader QA，經canonical Renderer/render_reader/CSS，用360/375/390/1280、light/dark、原病例表圖與官方連結做檢查並保留私人Actions screenshots/report。未改site/pages.json、不把archive/或dist公開；這不是正式手機或醫學審查。
+- **現在尚未完成**：最新候選blob的不同脈絡逐段EPQC/臨床源證據/圖像判斷、完整CI與實際私人截圖核讀。通過後才進權限/正式部署門檻；原#188不自動改公開manifest/合併main/部署的邊界保留。任何自評、單一commit、CI綠燈、run_now都不是任務終點。
+
 ## 最新來源恢復狀態（2026-10-28；覆蓋下方 09:00 歷史阻擋判定）
 
 - **Pocket 9E PDF p.94–96 ORIGINAL SOURCE IMAGE = VERIFIED（私人來源核讀）**。本輪從私人 ChatGPT Library 已授權原始檔成功取得原始 PDF bytes（PDF 共 **464 頁**），在私人環境以 180 dpi 實際渲染 PDF 第 94、95、96 頁並分頁目視；之前 "raw-byte materialization denied / images unavailable" 只代表先前工作階段的一次工具失敗，**不再是當下有效的 Pocket 來源阻擋**。不得把這個暫存位置、PDF bytes 或頁面影像加入 GitHub/公開網站。

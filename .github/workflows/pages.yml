@@ -86,6 +86,14 @@ jobs:
               python tools/qa_lab_morning_draft.py --output visual-qa-artifacts/lab-morning-draft
             fi
           fi
+      - name: Verify private pleural source-first reader on phones and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f tools/qa_pleural_effusion_draft.py && test -f archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md; then
+            if ! git diff --quiet origin/main...HEAD -- tools/qa_pleural_effusion_draft.py archive/xiaoma-internal-medicine/drafts/2026-10-28-pleural-effusion-decision.md site/styles.css site/build.py; then
+              python tools/qa_pleural_effusion_draft.py --output visual-qa-artifacts/pleural-draft
+            fi
+          fi
       - name: Verify official exam study links on 360/375/390px phones
         if: github.event_name == 'pull_request'
         run: |
