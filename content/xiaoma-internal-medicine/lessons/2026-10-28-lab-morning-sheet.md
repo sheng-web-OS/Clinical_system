@@ -6,7 +6,7 @@
 
 ## 第一問｜這個人為什麼來急診？在 K 7.8 出現前，哪些事已經發生？
 
-Cao 於 *International Journal of Emergency Medicine*（2024）記錄一位 **55 歲男性**。他先前罹患多發性骨髓瘤，經骨髓增生不良症候群演變為 AML；病況惡化，周邊血液充滿 blasts。4 月 2 日，他曾因血鉀 **2.8 mEq/L** 在門診接受 **40 mEq 靜脈補鉀**；平時也有口服鉀補充及治療腎上腺功能不足的藥物。[Cao 原始病例、Case presentation 與 Table 1](https://link.springer.com/article/10.1186/s12245-024-00734-x)。
+Cao 於 *International Journal of Emergency Medicine*（2024）記錄一位 **55 歲男性**。他先前罹患多發性骨髓瘤，經骨髓增生不良症候群演變為 AML；病況惡化，周邊血液充滿 blasts。4 月 2 日，他曾因血鉀 **2.8 mEq/L** 在門診接受 **40 mEq 靜脈補鉀**；平時也有口服鉀補充及治療腎上腺功能不足的藥物。[Cao 原始病例、Case presentation 與 Table 1](https://link.springer.com/article/10.1186/s12245-024-00734-x)（[PMC 開放全文與原表](https://pmc.ncbi.nlm.nih.gov/articles/PMC11462689/)）。
 
 4 月 3 日中午，居家護理採血測得 **Hb 4.5 g/dL**（兩天前 7.5）及 **K 3.0 mEq/L**。原本讓他被送到急診的理由是**疑似嚴重貧血，需要輸血**，不是高血鉀。到急診時，原文描述生命徵象穩定，沒有急性不適；但院內 CBC 顯示 **WBC 206.8 × 10³/µL，90% blasts，Hb 7.9 g/dL，platelets 38 × 10³/µL**。
 
@@ -45,7 +45,7 @@ D 結果回到 3.6，是支持假性高血鉀的重要線索，卻仍有一個�
 
 原報告記載急診給予 **IV calcium gluconate、insulin/dextrose、sodium bicarbonate 與吸入 albuterol**，並會診腎臟科評估是否需要透析。這裡必須把「**團隊實際做了什麼**」與「**今天應給每個類似患者什麼處方**」分開。這份病例無法證明所有藥物在當時均屬必要，也不能因最後判斷是假性高鉀，就用後見之明斷言初始防範致命心律不整完全不合理。
 
-在病人真正有立即心臟危險時，查核假性高鉀與急症評估／處理須**並行**，不能為了證明檢體有錯而放棄救治。當臨床狀態與數值高度矛盾、又有極高白血球時，應盡快與檢驗部門合作，使用合適、避免機械損傷的送檢與分析方法取得**真正能回答疑問的新證據**；同時監測血鉀及治療相關低血糖、反彈等風險。具體治療與監測應依個別病人和當地流程參照 [UK Kidney Association 2026 急性高血鉀指引](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)，不能由這個病例的處方原樣複製。
+在病人真正有立即心臟危險時，查核假性高鉀與急症評估／處理須**並行**，不能為了證明檢體有錯而放棄救治。當臨床狀態與數值高度矛盾、又有極高白血球時，應盡快與檢驗部門合作，使用合適、避免機械損傷的送檢與分析方法取得**真正能回答疑問的新證據**；同時監測血鉀及治療相關低血糖、反彈等風險。具體治療與監測應依個別病人和當地流程參照 [UK Kidney Association 2026 急性高血鉀指引](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。當需要比較心肌保護、暫時移鉀、真正移除與監測這些不同目標時，應直接閱讀其[原 Figure 4（PDF p.75）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75)及[原 Table 22（PDF p.98）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98)。它們是按臨床情境使用的原指引，不是由這個病例推得、可以原樣複製的個人處方。
 
 腎臟科醫師曾建議以 heparinized plasma 重新確認；作者事後查明，院內的急診檢體本來就用了 lithium-heparin 管。**再次指定抗凝方式不等於已經排除氣送管的機械傷害**，這正是問題定位必須精確到「採樣—運送—處理—測定」各環節的原因。
 
