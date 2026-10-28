@@ -22,7 +22,7 @@ class U01PublicReaderCandidateTest(unittest.TestCase):
                 self.assertIn(cue, self.text)
 
     def test_history_not_falsely_imputed_to_published_cases(self):
-        for cue in ("原報告並無", "不能把它說成", "不是把兩個不同病人的紀錄拼在一起",
+        for cue in ("原報告並無", "不能把它說成", "並非把兩個不同病人的紀錄拼在一起",
                     "不能單憑換藥後改善", "沒有對照組", "不提供"):
             with self.subTest(cue=cue):
                 self.assertIn(cue, self.text)
