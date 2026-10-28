@@ -1,24 +1,19 @@
-# Clinical Discussion Review｜Blind source-only reviewer packet
+# Clinical Discussion｜Common source-only review packet (no arm-specific method)
 
-**Task**: Assess the depth, clinical defensibility, evidence use, and scope of a neurosurgery clerkship **Discussion-only** presentation. Another student already presented the patient's clinical course; do not penalize this speaker merely for not repeating it. The supplied material is a nine-slide transcript with speaker notes, **not** the original patient chart or complete slide artwork.
+**Assignment:** Review the quality of a neurosurgery clerkship **Discussion-only** presentation. Another student presented the patient case; repeating the full clinical history is not part of this speaker's assigned task. This source contains nine slides of text/speaker notes, but no independently verifiable original patient chart or complete visual slide artwork.
 
-**Primary reading (only manuscript in this phase):**
-[`audit/fixtures/ba-aneurysm-discussion-202609-frozen.md`](fixtures/ba-aneurysm-discussion-202609-frozen.md), Git blob SHA `afe6acddeb9d8ca5d677724635b7431100d07a68`.
+**Source manuscript:** [`audit/fixtures/ba-aneurysm-discussion-202609-frozen.md`](fixtures/ba-aneurysm-discussion-202609-frozen.md), fixed Git blob `afe6acddeb9d8ca5d677724635b7431100d07a68`.
 
-**Evidence access:** You may independently verify original publications or guidelines relevant to a specific claim. If these cannot be obtained, explicitly grade the claim as unverified. Do not presume any patient-specific anatomy, dates, management rationale or outcome missing from the source.
+**Evidence access:** You may check original medical studies or guidelines as needed. Do not invent patient anatomy, neurological course, treatment rationale or outcomes absent from the manuscript. If evidence is unavailable, say what cannot be verified.
 
-## Perform the review without author feedback
+**Your task and review style** are supplied in one separate short instruction by the evaluation coordinator. They are not contained in this shared source packet. Treat the text without a presumption of pass or fail; do not infer a verdict from the manuscript's file path, author identity or test context.
 
-1. Before praising/criticizing the outline, identify the **one or two highest-consequence clinical disagreements, competing mechanisms or treatment choices** that the talk should resolve, and why these matter to a specialist audience.
-2. Identify **up to three strongest defensible claims** and **up to three highest-impact possible weaknesses**; do not force a quota of faults. You may conclude that a passage has no clinically consequential flaw. For each statement cite its exact location, explain what the text actually supports, and separate missing content from mere stylistic preferences.
-3. Challenge the most consequential claim with **Why?** (mechanism/strongest competitor), **How do you know?** (patient or research discriminator and applicability), and **What if?** (a change in patient conditions that would change the choice). Note a conditionally correct statement as such; do not manufacture an error merely to fill a quota.
-4. Provide a verdict for **question choice, depth of clinical reasoning, evidence/application, reader/oral coherence, and case applicability**. Each verdict can be **PASS, REVISE, HOLD, or NOT_VERIFIABLE**, based on the provided evidence. An unverified case detail should be marked unknown, not automatically treated as a proven error.
-5. Preserve explicitly valid caveats, qualifications, and limitations; overcalling such text as a defect counts against the review. List any claim that **must not be rewritten** without new evidence.
+**Common output fields (identical across experimental arms):**
+- Material strengths, supported by source location and evidence where necessary.
+- Material weaknesses *if any*, quoting the exact passage, clinical consequence, and what additional evidence would be decisive.
+- Claims that are appropriately qualified and should be preserved; do not manufacture errors to reach an arbitrary count.
+- Clinical reasoning / evidence support / case applicability verdicts: `PASS`, `REVISE`, `HOLD`, or `NOT_VERIFIABLE`, with concrete justification. Record missing source information as unknown rather than making up a case-specific error.
+- Whether this context has previously seen an author-side critique, expected outcome, candidate revision or the adjudication key (`NOT_EXPOSED`, `POSSIBLY_EXPOSED`, `EXPOSED`). If exposed, the review may be helpful editing feedback but cannot count as blind evaluation.
+- Actual inspected source links and work effort if observable; otherwise `NOT_MEASURED`.
 
-**Review record to seal before seeing any response from the author:**
-- Review context and date; manuscript path + blob SHA; whether you previously encountered the author’s critique, suggested revisions, expected verdict or evaluation key.
-- Your independently selected clinical issue(s), exact quoted passages, distinguishing evidence, three challenge questions, reasoned verdicts, and at least two correct/caveated passages to preserve.
-- `CONFIDENTIALITY_OF_REVIEW`: `NOT_EXPOSED`, `POSSIBLY_EXPOSED`, or `EXPOSED`. If exposed, produce useful editing suggestions but **do not present the result as blind evidence**.
-- Record actual source access and work cost if observable; otherwise use `NOT_MEASURED`.
-
-**Important:** Do not infer that a manuscript is flawed or sound from its source folder, title, test context, or any external summary. Judge the text. Return this review before requesting any author notes or comparative versions.
+**Isolation rule:** Complete and freeze your own first-pass review before reading other reviewer outputs or author feedback. The evaluator—not the reviewer—will compare your result with held-out adjudication.
