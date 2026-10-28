@@ -77,3 +77,12 @@
 4. 原圖與真題過關後才移入 `content/xiaoma-internal-medicine/lessons/`、建立公開來源頁與 figure gate、更新 manifest，完整 CI + Cloudflare production SHA + HTTPS body + 360/375/390px 驗收。
 
 **本次付費 TinyFish：未使用；事前成本估算 US$0；實際費用 NOT_MEASURED（無付費呼叫）。**
+
+
+## 後續核讀｜Pocket Medicine 9E 原頁影像驗證
+- 使用者重新上傳原始 464 頁 PDF，工作容器實際取得並目視第 94–96 頁原始影像。先前 Library raw-byte 權限阻擋已解除；本段更新並取代先前『原圖不可用』狀態。
+- p.94：PLEURAL EFFUSION 標題、pathophysiology、transudates/exudates 病因列表，以及 parapneumonic effusion 的 uncomplicated → fibropurulent → organization 時序已目視。
+- p.95：原表 Transudative vs. Exudative Effusions（JAMA 2014;311:2422）含 Light’s Criteria 和 Three-Test Rule 兩欄。Light 任一條符合即分類為 exudate；Three-Test 為不同規則。表底分別註明 more sensitive / more specific 與各自效能，不能混為同一規則。相鄰 pseudoexudate、感染性胸水、additional pleural studies 文字已目視。
+- p.96：另有 Characteristics of Pleural Fluid 表，標題明寫 not diagnostic criteria；含 WBC Diff、pH、Glc、Comments 及多種病因，不能把單一特徵當成確診或放胸管門檻。下方 Treatment 段落已目視。
+- 原書表格與頁面不得直接公開重製；須原創教學表、來源註記並以現行 BTS 2023 指引判定臨床分層，不能照抄舊式 pH/glucose 或抽液門檻。
+- 狀態：Pocket p.94–96 原頁視覺核讀 PASS；整體發布仍 HOLD，因 BTS 原始 decision-tree、官方原卷/更正答案、獨立醫學審查、手機與 production 驗收尚未完成。此處不冒稱完成這些關卡。
