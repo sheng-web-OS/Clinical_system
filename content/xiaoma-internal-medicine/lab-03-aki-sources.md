@@ -23,6 +23,12 @@ AKI 的 creatinine、尿量與 eGFR 是不同時間尺度的功能訊號。確�
 
 [2026 AKI/AKD 指引狀態](https://kdigo.org/guidelines/acute-kidney-injury/)需以 KDIGO 當下正式發表頁為準；若仍為 public-review draft，不可冒充已正式取代 2012 版。[KDIGO 2024 CKD Guideline](https://kdigo.org/guidelines/ckd-evaluation-and-management/)則供穩態 eGFR 及 CKD 慢性性判讀，非急性創造病因結論。
 
+## 導尿解除阻塞後，低鈉病人不能只看尿量回升
+
+Chen 患者入院 Na **120 mmol/L**、導尿調整後出現大量尿量，但原病例 [Table 1／3](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=3) 對 **2024/12/12** 的 Na 分別記 **130** 和 **141 mmol/L**；沒有精確逐時血鈉時序。由這組資料能產生**需要注意自動校正速度**的臨床問題，卻不能判定患者真的發生 osmotic demyelination 或已超過安全矯正速度。
+
+[van der Bilt & Alsma，*Hyponatraemia caused by transient syndrome of inappropriate antidiuresis to urinary retention*（2023，三例）](https://pubmed.ncbi.nlm.nih.gov/36822611/) 記述尿滯留後由抗利尿訊號驅動的低鈉與解除阻塞後 brisk water diuresis／部分患者血鈉自動過快校正。這些**不是 Chen 的個案紀錄**，而是說明他的 Na 120 與大量尿量組合為何值得額外監測。[European Hyponatraemia Clinical Practice Guideline（2014）](https://academic.oup.com/ejendo/article/170/3/G1/6668028) 對慢性或病程不明低鈉的校正速率與後續監測提供建議；不得由單一跨日 Na 差額反推是否實際超標。
+
 ## 尿沉渣與 FENa：其他患者和研究，不能接成 Chen 的病歷
 
 [Varghese et al. Kidney360 2022 原始研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC9136894/)：270 位特定住院 AKI 患者有可配對 sediment/FENa，133 位有 muddy-brown granular casts，其中 **50/133** 仍 FENa<1%。這是選定族群的同時測量結果，支持「低 FENa 不排除 tubular injury」，不能直接外推為所有 AKI 的 LR、敏感度或特異度。
