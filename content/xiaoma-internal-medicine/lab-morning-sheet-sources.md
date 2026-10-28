@@ -1,13 +1,21 @@
 # Lab Medicine 01｜早晨一張 Lab sheet：真實病例、實驗室原理與證據界線
 
-本頁對應[〈早晨一張 Lab sheet：真正要判斷的是什麼？〉](lessons/2026-10-28-lab-morning-sheet.md)。**正文開頭是具原始量測資料的兩篇真實假性高鉀案例；後段 70 歲心衰竭患者四時點 K/Cr/CBC/Mg 與 09:00 鬱血判斷仍為 AI 合成練習，並非實際病例或研究觀察。** 不得剪貼兩者數值、干擾來源與處置成一條假裝真實的時間序列。
+本頁對應[〈早晨一張 Lab sheet：從真實病例與原始研究，判斷數字究竟能告訴我們什麼〉](lessons/2026-10-28-lab-morning-sheet.md)。**目前正文主幹是 2024 AML 真實病例、一篇有嚴格納排條件的 66 人急診研究，以及一篇 2,440 人同日重抽急診回溯研究**；後續 AKI 與 ADHF 為**不同文獻、不同人群**的說明，絕不能把它們拼成同一患者或把病例推論當成醫囑。舊稿的 70M 心衰竭完整四時點合成時間線已非主故事。原來源頁的 UKKA／KDIGO 原始圖表核對紀錄仍保留，但不代表新稿已通過獨立醫學或教學審查。
 
-## 0. Case report 只證明實際觀察：兩種不同的假性高鉀機轉
+## 0. 三份直接支持新版正文的真實來源（原始資料／分母／反事實）
 
-- [A paradigmatic case of haemolysis and pseudohyperkalemia in blood gas analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366946/)：51 歲男性血氣注射筒 K 5.2 mmol/L；另一管 lithium-heparin plasma K 4.6；原注射筒後續 K 5.5、haemolysis index 50，相對於新採 plasma index 5；作者追查原管直接碰觸冰塊運送約 15 分鐘。這是 **preanalytical transport / in-vitro haemolysis** 的真實量測範例，並非主文合成 HF/AKI 個案。
-- [Pseudohyperkalemia—Potassium released from cells due to clotting and centrifugation: a case report](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/)：62 歲女性 essential thrombocythemia、血小板 1305×10⁹/L，血清 K 6.3 mmol/L 與不同檢體的 plasma/whole-blood 結果不一致；是細胞/凝血與檢體處理的另一種來源，不是先前血氣冰接觸情境。
+**A. 2024 AML 案例：介入與重驗混在一起，不能聲稱無治療的 K 7.8→3.6。** [Manual flagging failed to identify pseudohyperkalemia in acute myeloid leukemia: case report, *International Journal of Emergency Medicine*](https://pmc.ncbi.nlm.nih.gov/articles/PMC11462689/)；[原出版社](https://link.springer.com/article/10.1186/s12245-024-00734-x)。原文 Table 1 明確列 2024-04-03 四個 samples：A 12:00 K3.0、B 20:03 K6.7、C 20:48 K7.8、D 23:37 K3.6 mEq/L。B/C 用 pneumatic tube、D 走路送檢；原患者 WBC 206.8 ×10³/µL（90% blasts）、Hb 7.9 g/dL、platelet 38 ×10³/µL、creatinine 1.2 mg/dL。**原作者明示 D 於降鉀治療開始約 30 分鐘後取得**，因此不能把後續 3.6 當「無介入的乾淨重驗」；不同採檢/運輸方式亦不能單獨分出每一因素的因果效應。這篇 case report 支持對該患者檢體失真的調查，不構成普遍 ECG/AKI/治療決策規則。
 
-**證據的角色必須分開**：上面 case reports 可支持「這名病人的檢驗觀察與如何追查干擾」；不能用來建立一般敏感度、特異度、高鉀急救閾值、醫囑或 AKI/心衰治療方案。以下 AJKD 實驗室綜述、KDIGO、UKKA 和 HF 指引各自處理一般性原理與臨床適用條件。原圖、表與註腳的完整權利/醫學查核仍以獨立審稿 gate 為準，不因增列兩篇病例即取得 PASS。
+**B. 低風險急診 66 人研究：只有符合納排條件才有外推可能。** [Accuracy of Hemolyzed Potassium Levels in the Emergency Department, *Western Journal of Emergency Medicine*](https://pmc.ncbi.nlm.nih.gov/articles/PMC7673871/)；[PubMed](https://pubmed.ncbi.nlm.nih.gov/33207176/)。原始 399 encounter 先篩出符合年齡、腎功能與重抽條件者，排除高風險或樣本重抽超時後只留下 66。初次有溶血 K 中位數 5.8 mmol/L、重抽中位 3.9、重抽未持續高鉀 0/66；**95% CI 0–6%** 並不等於全病人群的 0% 真風險。原文排除 ≥65 歲、eGFR<60、調鉀藥物、血液惡性疾病、重抽前降鉀治療及其他條件。此研究不足以支持病房 AKI／ACEi／老年患者延後危急處理，且未直接測量不重抽之決策的因果安全性。
+
+**C. 同日重抽 2,440 人研究：不可用分母錯置宣稱急診高鉀有 35% 一定是假的。** [Hyperkalemia or Not? A Diagnostic Pitfall in the Emergency Department, *West J Emerg Med* 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11908522/)；[PubMed](https://pubmed.ncbi.nlm.nih.gov/39918159/)。在有**首次 whole blood/plasma K≥5.0、當日又完成重抽**的急診病人中，1,576（65%）再次高鉀，864（35%）重抽正常；後者之中 597（69%）第一次檢體有溶血。**這不是所有抽血者、所有初次高鉀者或所有住院者的母體發生率**；研究用「當日重抽結果」操作性定義 factitious，不能自動排除選擇偏差、治療時序與其他樣本差異。2019/2020 小樣本與 2025 大樣本研究的分母及適用對象不同，不能拿兩個百分比直比或合併成單一「重抽安全規則」。
+
+## 0A. 補充案例（非目前文章主故事）
+
+- [Salvagno et al., *A paradigmatic case of haemolysis and pseudohyperkalemia in blood gas analysis*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366946/)：51M venous blood-gas syringe K5.2；不同試管 lithium-heparin plasma K4.6；原 syringe 餘血的 hemolysis index50，而另一管 index5；運送約15分鐘直接接觸冰塊。這是前分析干擾個案，**不是 AML 病人或原 HF 合成個案**。
+- [Šálek 2018, *Pseudohyperkalemia - Potassium released from cells due to clotting and centrifugation*](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/)：62F essential thrombocythemia，platelets1305 ×10⁹/L、WBC39.8 ×10⁹/L，serum K6.3、plasma4.6、whole blood3.4 mmol/L；CBC 解釋部分檢體差異，不可將不同患者的數值拼接。
+
+**證據界線**：真實病例只支持病例內觀察，單一研究的比例只適用其納排條件；HK 急救閾值、確認採檢與醫囑須回 UKKA 等當代指引、病人當下狀態及當地院內 SOP。以下原始來源與圖表的限定審查，不代表這個新版已獲獨立審稿 PASS。
 
 ## 1. 為何一張 BMP 可能不完全可信？
 
