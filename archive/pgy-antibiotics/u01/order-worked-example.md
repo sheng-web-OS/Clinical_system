@@ -4,15 +4,15 @@
 
 ## A. 第一步：先確認這個病人有沒有必要立刻給 IV 抗菌藥
 
-68 歲男性，發燒、低血壓、意識變慢、AKI、lactate 3.8，右 hydronephrosis、CVA tenderness，兩個月前尿培 ESBL *E. coli*。要當作 **probable severe systemic UTI / possible bacteremia and infected obstruction** 危急處理；同步上級求援、血/尿培（理想在給藥前而不延誤）、復甦、urgent urology。並非只因 pyuria 或舊 ESBL 就給藥。不要根據單一 BP、lactate 宣稱已滿足 septic shock 定義。
+68 歲男性，發燒、相對低血壓、意識變慢、CKD 下 Cr 兩週內上升（疑似 AKI）、lactate 3.8，右 hydronephrosis、CVA tenderness，兩個月前尿培 ESBL *E. coli*。要當作 **probable severe systemic UTI / possible bacteremia and infected obstruction** 危急處理；同步上級求援、血/尿培（理想在給藥前而不延誤）、復甦、urgent urology。並非只因 pyuria 或舊 ESBL 就給藥。不要根據單一 BP、lactate 宣稱已滿足 septic shock 定義。**MAP 以 92/56 估算約 68 mmHg，不能由「未低於 65」推斷灌流足夠。Cr 1.3→2.0 的參考值相隔兩週，AKI 尚未證實符合 KDIGO 48 小時／7 天或尿量時間窗；此時需立即查近一週 Cr、6 小時尿量，按不穩定腎功能審核用藥。**
 
 ## B. 第二步：用四層證據選候選 first agent
 
 | 層次 | 本例證據 | 如何改變初始處置 |
 | --- | --- | --- |
-| 危重程度 | 血壓/意識/尿量與 AKI 警訊 | 優先可靠 active empiric IV 而非等待 AST |
+| 危重程度 | 血壓/意識與疑似 AKI（需補尿量時序）警訊 | 優先可靠 active empiric IV 而非等待 AST |
 | Resistance prior | 2 個月前 ESBL E. coli | 常規 ceftriaxone 不宜被當作可靠預設 |
-| 病人禁忌與藥動 | penicillin allergy 不明、AKI on CKD | 立即查真實反應、體重、腎功能動態與藥品給藥策略 |
+| 病人禁忌與藥動 | penicillin allergy 不明、CKD + 疑似 AKI | 立即查真實反應、體重、腎功能動態與藥品給藥策略 |
 | 在地資料 | 當院 antibiogram 與 restricted agent 未核 | 不可將全臺監測率代替病房族群的本院資料 |
 
 **此例初始優先討論 meropenem IV**，並依 ID/藥師、已知舊 AST 和院內規則確認是否可實施。此例未確認對本次病原必有活性，且本次 AST 尚未回來。
@@ -24,7 +24,7 @@
 - **Ertapenem**：非危重、適合情境可用，但缺乏 Pseudomonas 覆蓋；2026 AMR 對危重／hypoalbuminemia 的侵襲性 ESBL 情境偏向 meropenem/imipenem，勿等價替換。
 - **Cefepime 單方**：不要把它與 cefepime–enmetazobactam 視為同藥；2026 AMR 建議避免 cefepime 單方治療 ESBL cUTI，即使 susceptibility 測為 S。
 - **TMP-SMX / ciprofloxacin / levofloxacin**：若已知本次 susceptible，可作 definitive cUTI 甚至適條件的 PO；不能拿預想藥敏替代此例第一劑的必要覆蓋。
-- **Aminoglycoside**：可以是部分 ESBL cUTI alternative，但本例 AKI/CKD 使腎毒性、給藥暴露和監測代價格外重要，不應無條件加一支。
+- **Aminoglycoside**：可以是部分 ESBL cUTI alternative，但本例 CKD／疑似 AKI 使腎毒性、給藥暴露和監測代價格外重要，不應無條件加一支。
 
 原始依據：[IDSA cUTI 2025 §Selection，Fig 1.1](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)、[IDSA AMR 2026 §ESBL Q1.2–1.6](https://www.idsociety.org/practice-guideline/amr-guidance/)。
 
@@ -39,7 +39,7 @@
 | Actual first-dose time | 調劑/執行時間 PENDING，需記錄給入時間 |
 | **Actual dose / infusion / interval** | **NOT_VERIFIED – 不得直接複製到 EMR** |
 | **First loading vs maintenance** | 分開評估，依實際藥品、renal trend、本院 infusion SOP |
-| Current renal info | Cr 2.0 vs 1.3 mg/dL 兩週前；尿量、CrCl method、RRT status PENDING |
+| Current renal info | Cr 2.0 vs 1.3 mg/dL 兩週前；KDIGO 時間窗不足，AKI 尚未證實；近 48 小時／7 天 Cr、6 小時尿量、CrCl method、RRT status PENDING |
 | Actual weight | PENDING；不可用未知 eGFR 補成虛構 CrCl |
 | β-lactam allergy | 反應型態/時間/是否耐受 carbapenems PENDING |
 | Interactions and toxicity | 藥物清單、神經毒性與 K/Cr 風險 PENDING |
@@ -47,7 +47,7 @@
 | Resuscitation & source control | BP/MAP、尿量、urology call、影像/引流時程 PENDING |
 | Review trigger | 病人惡化當下重評；新培養/AST 回報；定時抗生素 time-out |
 
-**關鍵 PK/PD**：β-lactam 重視 fT>MIC。2026 SSC 建議 sepsis/shock 於 initial loading 後採 prolonged-infusion maintenance；但並不提供本個案體重/AKI/院內流程所需的可複製數值。首劑不足暴露與後續腎功能惡化下累積毒性可以同時需要防範，必須動態複核。([SSC 2026：Beta-lactam antibiotics](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026))
+**關鍵 PK/PD**：β-lactam 重視 fT>MIC。2026 SSC 建議 sepsis/shock 於 initial loading 後採 prolonged-infusion maintenance；但並不提供本個案體重/疑似 AKI／院內流程所需的可複製數值。首劑不足暴露與後續腎功能惡化下累積毒性可以同時需要防範，必須動態複核。([SSC 2026：Beta-lactam antibiotics](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026))
 
 ## D. T48：有 S 仍不一定能馬上 PO
 
