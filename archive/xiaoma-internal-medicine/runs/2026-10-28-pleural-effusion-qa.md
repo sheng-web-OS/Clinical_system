@@ -86,3 +86,12 @@
 - p.96：另有 Characteristics of Pleural Fluid 表，標題明寫 not diagnostic criteria；含 WBC Diff、pH、Glc、Comments 及多種病因，不能把單一特徵當成確診或放胸管門檻。下方 Treatment 段落已目視。
 - 原書表格與頁面不得直接公開重製；須原創教學表、來源註記並以現行 BTS 2023 指引判定臨床分層，不能照抄舊式 pH/glucose 或抽液門檻。
 - 狀態：Pocket p.94–96 原頁視覺核讀 PASS；整體發布仍 HOLD，因 BTS 原始 decision-tree、官方原卷/更正答案、獨立醫學審查、手機與 production 驗收尚未完成。此處不冒稱完成這些關卡。
+
+
+## BTS 2023 原始決策圖及註腳核證（追加）
+- 已開啟 BTS 官方 full supplement: https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/；官方頁面含「Suspected pleural infection, non-purulent fluid – initial decision tree」可視化流程及兩條註腳；核對 BTS guideline 正文：https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease-full-guideline/。
+- pH ≤7.20：高風險，建議 ICD，但 * 註腳限定 ultrasound 有可安全進入的液體量；非任何情況一律置管。
+- pH 7.21–7.39：中風險，先查 LDH；≥900 IU/L 時依積液量、glucose ≤4 mmol/L（72 mg/dL）、CT pleural enhancement、超音波 septations 等考慮 ICD；不是 LDH 單獨自動置管。
+- pH ≥7.40：初步低風險，無立即 ICD 適應症；† 註腳要求持續發燒、發炎指標不退等時重評及考慮再抽液，且 pH >7.4 合併 septations 者仍應考慮引流。不能教成 pH≥7.4 永遠不引流。
+- 與 Pocket p.96「Characteristics of Pleural Fluid (not diagnostic criteria)」交叉核對：病因典型值不能替代 BTS 決策圖；尤其感染性胸水引流是時間序列判斷，不是只讀一次 pH。
+- 狀態：BTS decision-tree 本體及 footnotes 已核對；不公開翻印 BTS 原圖。下一個硬阻擋為三道官方真題的原卷與更正答案、獨立醫學/敘事 QA、發布後回歸驗證；仍維持 Draft/HOLD。
