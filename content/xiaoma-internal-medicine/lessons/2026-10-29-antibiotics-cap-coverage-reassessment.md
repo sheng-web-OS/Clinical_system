@@ -154,6 +154,8 @@ D. 一旦尿液抗原陽性，就證明先前 azithromycin 必然完全無效。
 
 ---
 
+[對讀本病例入院 CXR、Day 3 CT、指南原表及比較研究的完整來源頁](../antibiotics-cap-coverage-sources.md)。
+
 **主要可追溯依據**：[Spretz et al. 2024 真實病例、原 Table 1、Figure 1–2](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)；[ATS／IDSA 2019 CAP 全文與初始抗菌策略](https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/)；[ATS 2025 CAP 更新（2026 卷）](https://academic.oup.com/ajrccm/article/212/1/24/8435770)；[IDSA 不予背書的 2025 立場](https://academic.oup.com/cid/article/82/4/622/8364653)。
 
 本文用於學習診斷與抗菌治療的證據邊界，**不是已依台灣特定醫院 antibiogram、formulary、腎功能／藥物交互作用規則驗證的可直接開立處方**。實際病人處置仍須由照護團隊依現場狀況確認。
