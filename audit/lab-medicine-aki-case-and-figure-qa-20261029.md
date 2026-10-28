@@ -1,6 +1,6 @@
 # Lab Medicine 03｜2026-10-29 case / source / visual evidence audit (PRIVATE)
 
-**Scope**: `content/xiaoma-internal-medicine/lessons/2026-10-27-lab-medicine-aki-creatinine-urine.md`. Historical writer audit article SHA `c599ff19f7beb4f75a229fb9106e017690e24f0d` was updated for official exam links and the full Table 1–3 chronology conflict; latest article SHA at this check: `ba173b0e0440e229d7e9c34ba7560550deba6e2f`. Any later content edit requires its own exact-blob reviewer receipt. This is a writer-side fact check, **NOT independent clinical or EPQC approval, human peer review, publication permission, or evidence of reader learning**.
+**Scope**: `content/xiaoma-internal-medicine/lessons/2026-10-27-lab-medicine-aki-creatinine-urine.md`, current article Git blob `f1ab531334a89e2f31455e97b7bba33545c373e6` at this review. This is a **writer-side** source and narrative audit, NOT an independent clinical reviewer, independent EPQC paragraph approval, or permission to publish. Older checks below record historical statuses at earlier blobs; only the dated addendum is the current evidence state.
 
 ## Question–evidence fit before writing
 
@@ -53,3 +53,13 @@ Writer self-review: initial simulated A/B/C main case and treatment-direction la
 - **Editorial warning**: article long, separate case transitions need independent reader-voice and paragraph review. All original figure pixels stay on external source; no figure assets incorporated in article.
 
 **Release verdict remains HOLD**: no independent exact article blob EPQC, no human physician signoff, no linked official exam catalog backlinks, no production publication.
+
+## Addendum 2026-10-29｜original figures at reader decision point and current release scope
+
+- **AKI revised exact blob:** `f1ab531334a89e2f31455e97b7bba33545c373e6`. Original Chen [publisher PDF](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf) page 2 Figures 1/2 were visually inspected: preserved corticomedullary differentiation arrow, no significant hydronephrosis described at early ultrasound. Original PDF page 4 Figure 3 was visually inspected: bilateral severe hydronephrosis and moderate bilateral hydroureter; no definite obstruction lesion identified. New reader hyperlinks are placed at the relevant ultrasound/CT reasoning steps. **Both are source links, not pixel copies nor images claiming to show unavailable anatomy.**
+- **Lab 02 companion revised exact blob:** `49f811e20178830783958edbcf1b41b630497568`. Original Lim [Cureus PDF](https://assets.cureus.com/uploads/case_report/pdf/353350/20250326-193380-s0wvov.pdf) page 2 Figure 1 is a *platelet count comparison graphic*, not a peripheral smear. EDTA 103 initial, EDTA 77 at 20-day recheck, citrate 218 were read against source. Article now labels Figure 1's actual form and does not claim microscopy can be seen in Figure 1; platelet clumping is separately described in the publication text.
+- Both Cureus papers display CC BY 4.0; these versions currently **link to original publisher PDFs without embedding original pixels**. Attribution, footnotes, and figure rights still need a separately executed release rights review.
+- **Official exam correction status supersedes old historical paragraph:** 113-1 med3 Q29 D in Moex official standard, no subject-specific answer correction file displayed; 115-2 med3 Q28 A in BOTH standard and corrected answer files. Direct PDF links appear in AKI article. No public bidirectional exam registry is possible before article registration.
+- **Latest private Chromium release preflight before these figure/exam edits**: PR #181 run `40738621890` (16 phone/desktop×theme combinations on two drafts, technical PASS and manually inspected screenshots). Its passing result does **not** automatically apply to edited blobs. The newest GitHub Actions run must be checked against exact branch head independently.
+
+**PENDING GATES remain:** independent clinician evidence adjudication, independent exact-blob paragraph and document-level EPQC review, then an isolated release candidate manifest/official exam reverse-navigation browser test. No production or automatic release approval; other two unrelated Lab #181 drafts must remain unpublished until separately qualified.
