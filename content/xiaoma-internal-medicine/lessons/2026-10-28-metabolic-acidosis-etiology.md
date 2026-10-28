@@ -106,7 +106,7 @@ HCO₃⁻ 低到 7 的同時，必須立即關心有效通氣、循環灌流、�
 <div><small>排出液的問題</small><strong>水樣排出物究竟是什麼？</strong><p>膀胱尿量下降而水樣排出持續時，同時比較腸道與膀胱排出物的 creatinine、pH 和溶質；結果支持尿源成分，仍非解剖確診。</p></div>
 <div><small>解剖上的問題</small><strong>尿液是否真的流進小腸？</strong><p>需要能描繪尿液外漏與交通位置的影像；本病例由 MRU 顯示 urinoma → 小腸瘻道，再經手術確認。</p></div>
 </div>
-<figcaption>血液酸化、液體身分、尿路交通需要不同證據回答；臨床上可依危急程度並行調查。本圖整理自 2021 年病例的觀察與檢驗，<a href="../metabolic-acidosis-sources.md">原始圖表與出處</a>另列。</figcaption>
+<figcaption>血液酸化、液體身分、尿路交通需要不同證據回答；臨床上可依危急程度並行調查。本圖整理自 Frontiers in Pediatrics 2021 病例的觀察與檢驗，<a href="../metabolic-acidosis-sources.md">原始圖表與出處</a>另列。</figcaption>
 </figure>
 
 ## 五、影像與手術：真正被證實的是哪一段因果鏈？
@@ -135,7 +135,7 @@ HCO₃⁻ 低到 7 的同時，必須立即關心有效通氣、循環灌流、�
 <div><small>腸黏膜轉運</small><strong>Cl⁻ 吸收／HCO₃⁻ 分泌</strong><p>尿液接觸腸道可促進相對 chloride 負荷、bicarbonate 向腸腔流失；尿素經細菌作用後，NH₃／NH₄⁺ 相關再吸收也可能參與。</p></div>
 <div><small>血液表型</small><strong>高氯性代謝性酸中毒</strong><p>血中 HCO₃⁻ 下降而 Cl⁻ 相對增加，AG 可以不升高；這是可解釋觀察的機轉，不代表已直接量測個別轉運蛋白的 flux。</p></div>
 </div>
-<figcaption>尿液進入小腸後，可能透過 Cl⁻／HCO₃⁻ 交換及尿素代謝增加全身酸化。圖示為機轉解釋，並非本病人實測的離子通量；<a href="../metabolic-acidosis-sources.md">原始圖表與研究出處</a>另列。</figcaption>
+<figcaption>尿液進入小腸後，可能透過 Cl⁻／HCO₃⁻ 交換及尿素代謝增加全身酸化。圖示依 Frontiers 2021 提出的機轉解釋，並非本病人實測的離子通量；<a href="../metabolic-acidosis-sources.md">原始圖表與研究出處</a>另列。</figcaption>
 </figure>
 
 ## 七、何時應轉向腎臟排酸檢查？UAG 只能回答特定問題
