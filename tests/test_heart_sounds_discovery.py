@@ -35,10 +35,19 @@ class HeartSoundsDiscoveryRegression(unittest.TestCase):
                 self.assertFalse(is_current_lesson(page))
 
     def test_daily_cards_only_promote_the_main_lesson(self):
-        html = render_today_updates(self.pages, today="2026-10-27")
-        self.assertIn('href="' + MAIN + '"', html)
-        self.assertNotIn('href="' + EXAM_29 + '"', html)
-        self.assertNotIn('href="' + EXAM_20 + '"', html)
+        # Substantive revision moves the main lesson to its actual updated
+        # date; official exam compilations must never be treated as daily lessons.
+        main = self.by_output[MAIN]
+        effective_date = main.get("updated", main["date"])
+        for on_date in {main["date"], effective_date}:
+            with self.subTest(on_date=on_date):
+                html = render_today_updates(self.pages, today=on_date)
+                if on_date == effective_date:
+                    self.assertIn('href="' + MAIN + '"', html)
+                else:
+                    self.assertNotIn('href="' + MAIN + '"', html)
+                self.assertNotIn('href="' + EXAM_29 + '"', html)
+                self.assertNotIn('href="' + EXAM_20 + '"', html)
 
     def test_question_compilations_stay_in_exam_article_index(self):
         html = render_article_index(self.pages)
