@@ -27,7 +27,7 @@ Chuah 等人在 2013 年發表一項實際 CABG 觀察研究。81 名接受單�
 | PaCO₂（kPa） | 5.23 | 4.93 | 5.60 |
 
 <figure id="cticu-abg-03-cohort-trends" style="margin:1.6rem auto;max-width:390px">
-<img src="cticu-abg-03-cpb-acidbase-group-trends.svg" width="390" height="1100" alt="圖 1：2013 年 55 名 on-pump CABG 病人的七項群體平均術前、術後、隔天早晨變化；每列獨立縱軸，不是單人病歷" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy">
+<img src="cticu-abg-03-cpb-acidbase-group-trends.svg" width="390" height="1100" alt="圖 1：2013 年 55 名 on-pump CABG 病人，七項數值分別列出術前、術後、隔日早晨的群體平均；各列用箭頭表示平均值升降，不是單一患者病歷，也沒有連續曲線或縱軸" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy">
 <figcaption>圖 1｜以 Chuah 2013 原始 Table 3 數字重新設計的多變數時間對照。各列單位不同，箭頭只表示相鄰群體平均值的升降方向，不代表變化幅度；三個採樣類別也不是等距時間。重點是讀出 Na⁺/Cl⁻、SID、BE、[H⁺] 與 PaCO₂ 的不同方向，而不是從圖推算某名病人的 pH 或治療效果。</figcaption>
 </figure>
 
