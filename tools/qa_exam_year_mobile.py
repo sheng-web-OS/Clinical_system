@@ -26,6 +26,15 @@ EXPECTED = [
     (111, 1, 2, "醫學（四）", 33),
 ]
 
+# Exact year Q → published deep-lesson H2 → same year Q.
+# One representative identity per viewport; prevents a one-way-only false PASS.
+HEART_ROUNDTRIP = {
+    360: (111, 1, 2, "醫學（六）", 6),       # Doppler AS → flow/pressure
+    375: (115, 2, 2, "醫學（四）", 10),      # ASD → split S2/shunt
+    390: (114, 2, 2, "醫學（五）", 21),      # MS with AF → valve disease
+    1280: (114, 1, 2, "醫學（五）", 20),     # AMI complication → unstable patient
+}
+
 
 def run(dist: Path, out: Path) -> int:
     from playwright.sync_api import sync_playwright
@@ -95,6 +104,52 @@ def run(dist: Path, out: Path) -> int:
                                     problems.append("Target section missing: " + str(k))
                             finally:
                                 dest.close()
+                        # Reader action, not just an HTML string check: return to the same Q.
+                        heart_key = HEART_ROUNDTRIP[width]
+                        heart_record = records[heart_key]
+                        lesson = next(p for p in load_pages(ROOT) if p["output"] ==
+                                      "xiaoma-20261027-heart-sounds-structural-exam.html")
+                        heart_link = next((x for x in lesson["related_exams"] if
+                                           question_key(x) == heart_key), None)
+                        if heart_link is None:
+                            problems.append("No curated deep material for " + str(heart_key))
+                        else:
+                            expected = concept_url(lesson, heart_link, ROOT)
+                            catalog_hash = archive_anchor(heart_record)
+                            page.goto(origin + "xiaoma-exams.html#" + catalog_hash,
+                                      wait_until="domcontentloaded", timeout=30000)
+                            origin_row = page.locator('[id="' + catalog_hash + '"]')
+                            controls = origin_row.locator("details.exam-catalog-materials")
+                            if controls.count() != 1:
+                                problems.append("Missing year→lesson materials: " + str(heart_key))
+                            else:
+                                controls.locator("summary").click()
+                                target = controls.locator('a[href="' + expected + '"]')
+                                if target.count() != 1:
+                                    problems.append("Deep H2 link absent: " + str(heart_key))
+                                else:
+                                    target.click()
+                                    section = expected.split("#", 1)[1]
+                                    if page.locator('[id="' + section + '"]').count() != 1:
+                                        problems.append("Arrived at wrong deep section: " + str(heart_key))
+                                    return_panel = page.locator(
+                                        'details.lesson-exam-backlinks[data-section="' + section + '"]'
+                                    )
+                                    if return_panel.count() != 1:
+                                        problems.append("Missing deep→year return panel: " + str(heart_key))
+                                    else:
+                                        return_panel.locator("summary").click()
+                                        return_href = "xiaoma-exams.html#" + catalog_hash
+                                        return_link = return_panel.locator('a[href="' + return_href + '"]')
+                                        if return_link.count() != 1:
+                                            problems.append("Wrong return-question identity: " + str(heart_key))
+                                        else:
+                                            if width <= 390:
+                                                page.screenshot(path=str(out / ("heart-deep-return-" + str(width) + ".png")))
+                                            return_link.click()
+                                            if page.url.split("#")[-1] != catalog_hash or origin_row.count() != 1:
+                                                problems.append("Round trip did not return to same year Q: " +
+                                                                str(heart_key))
                         overflow = page.evaluate("document.documentElement.scrollWidth > innerWidth + 2")
                         if overflow:
                             problems.append("Year catalog has horizontal viewport overflow")
