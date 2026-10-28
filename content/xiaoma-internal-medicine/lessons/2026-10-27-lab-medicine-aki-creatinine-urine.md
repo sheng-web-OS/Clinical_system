@@ -154,9 +154,13 @@ KDIGO 2012 原始 [Figure 4（印刷 p.25）](https://kdigo.org/wp-content/uploa
 
 ## 國考｜兩題其實在考兩個不同層次：定位病因，還是追蹤恢復？
 
+### 113 年第一次・醫學（三）Q29｜尿沉渣如何支持 intrinsic AKI？
+
 **113 年第一次醫師第二階段，醫學（三）Q29**：40 歲病人原本腎功能正常，48 小時內 creatinine 升至 2.5 mg/dL，哪一個結果最能支持 *intrinsic AKI*？官方原題將 **FENa <1%**、**尿液滲透壓 >500 mOsm/L**、**BUN/Cr >20** 與**尿沉渣 granular casts** 放在同一個比較。考選部公布的標準答案是 **D（granular casts）**，該科於本梯次沒有另外列出更正答案。[考選部原題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)；[官方標準答案 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=S)。
 
 為什麼不是前三項？FENa 偏低、尿液濃縮和 BUN/Cr 升高都可能反映某些低有效灌流時的保鈉、保水與尿素處理；它們不是腎小管是否受傷的直接證據。顆粒性圓柱體提供更接近腎小管內容物與細胞損傷的形態線索，**所以在這四個選項中最能推進 intrinsic AKI 的判斷**。但這不是「只要看到 granular cast 就能證明某一種特定病理」；而且真性 ATI 可以同時有 FENa <1%。這正是前面 270 人研究與考題應當一起讀的地方。
+
+### 115 年第二次・醫學（三）Q28｜治療後如何辨認恢復？
 
 **115 年第二次醫師第二階段，醫學（三）Q28** 問的是另一件事：已知病人發生 AKI，哪一個方法最能反映**治療後腎功能是否正在恢復**？選項包括連續監測 SCr 與尿量、每天腹部超音波、連續血尿／蛋白尿及反覆尿液培養。官方標準答案 **A（連續 SCr 與尿量）**；此科雖另有更正答案文件，**Q28 更正後仍為 A**。[考選部原題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)；[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S)；[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)。
 
