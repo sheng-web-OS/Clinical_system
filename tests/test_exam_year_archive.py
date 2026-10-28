@@ -158,7 +158,8 @@ class ExamArchiveContract(unittest.TestCase):
         stub = "".join('<h2 id="part-' + str(i) + '">' + title + '</h2><p>Content</p>'
                        for i, title in enumerate(headings, 1))
         decorated = add_lesson_exam_backlinks(lesson, records, stub, ROOT)
-        self.assertEqual(decorated.count('class="lesson-exam-backlinks"'), 8)
+        self.assertEqual(decorated.count('class="lesson-exam-backlinks"'),
+                         len({x["concept_heading"] for x in materials}))
         self.assertEqual(decorated.count('href="xiaoma-exams.html#catalog-'), 33)
         for link in materials:
             record = records[question_key(link)]
