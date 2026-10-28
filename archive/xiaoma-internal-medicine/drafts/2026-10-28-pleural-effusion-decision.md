@@ -55,11 +55,11 @@
 | 當下資料（疑似 pleural infection、非明顯膿液） | 如何解讀與行動 |
 | --- | --- |
 | pH ≤ 7.20 | 高風險 complicated effusion／infection；**若超音波證實可安全引流**，建議置入胸管 |
-| pH > 7.20 且 < 7.40 | 中間風險；檢視胸水 LDH，**>900 IU/L** 時結合持續發燒、積液量、glucose ≤4.0 mmol/L（72 mg/dL）、CT pleural enhancement 或超音波分隔考慮胸管 |
-| pH ≥ 7.40 | 低風險，通常無立即胸管適應症；但仍須依病程監測，不能因單一樣本忽略分隔與持續惡化 |
+| pH > 7.20 且 < 7.40 | 中間風險；檢視胸水 LDH，約 **900 IU/L** 為需進一步考慮引流的分流點，並結合持續發燒、積液量、glucose ≤4.0 mmol/L（72 mg/dL）、CT pleural enhancement 或超音波分隔；**不是單一 LDH 數值決定胸管** |
+| pH ≥ 7.40 | 低風險，通常無立即胸管適應症；**BTS 原圖註腳特別提醒：若 pH >7.4 且有分隔，仍應考慮引流**，並依體溫、發炎指標及病程持續重評 |
 | 無法立即可靠取得 pH | glucose <3.3 mmol/L（約 59 mg/dL）可作為高風險輔助線索，仍須結合臨床與影像 |
 
-這張表是**依 BTS 2023 原始決策分支自行整理**，非原圖翻拍。尤其要保留原始 flowchart 的兩個安全註腳：一是必須有**超音波可安全接近的積液量**；二是即使初次不放胸管，也需持續追蹤體溫、發炎指標與病況，對持續惡化或分隔的積液重新評估。pH 受採樣位置與污染影響；多個 locule 之間的 pH 可能不同。類風濕性胸水與進展期惡性腫瘤也可能低 pH，**低 pH 不是感染專屬標記**。
+這張表是**依 BTS 2023 官方原始流程圖（完整補充 PDF 第 37 頁；PDF index 44）目視後自行整理**，非原圖翻拍。兩個註腳不可省略：***** 引流必須有超音波確認的安全可及積液；**†** 沒有立即引流時需以持續發燒、發炎指標未降及病程重新評估，**pH >7.4 而有分隔仍應考慮引流**。此外，原圖分支把 LDH 畫為「<900／≥900」，同份指引的文字建議卻寫「>900 IU/L」；教材不應將剛好 900 的情境偽裝成完全確定的臨床處方界線。pH 受採樣位置與污染影響；多個 locule 之間的 pH 可能不同。類風濕性胸水與進展期惡性腫瘤也可能低 pH，**低 pH 不是感染專屬標記**。
 
 現在給男性病人新的結果：胸水 pH 7.29、LDH 1,200 U/L、glucose 45 mg/dL，超音波見分隔，仍持續高燒。單看 pH 7.29，不能機械說「大於 7.2 所以不用胸管」；它落在中間風險區，LDH >900、低 glucose、持續發燒與分隔共同把決策推向引流。應即時與胸腔科／相關程序團隊討論可安全引流的位置，並持續適當抗菌治療。反過來，若 pH 7.45、glucose 正常、沒有分隔、臨床逐日退燒且積液變小，當下不必因 exudate 身分強迫放管，但仍須回診／住院再評估。
 
@@ -123,10 +123,10 @@ BTS 2023 建議 pleural infection 初始引流可使用 **≤14F small-bore ches
 
 ### 本稿引用與查核入口（公開時須移至專屬來源頁）
 
-1. 《Pocket Medicine》第九版，使用者持有之私人 PDF **實頁 94–96**，章名 **PLEURAL EFFUSION**；p95 原表標題 **Transudative vs. Exudative Effusions**，左欄 **Light’s Criteria**、右欄 **Three-Test Rule**；p95 下段 **Additional pleural fluid studies**；p96 **Treatment**。本輪已取得逐頁可讀文字，**原表像素／caption／footnote 尚未成功視覺核讀，整篇 HOLD**。書檔及截圖不進公開站。
-2. British Thoracic Society, *Guideline for pleural disease*, Thorax 2023, doi:10.1136/thorax-2022-219784，**Pleural infection** 與 Appendix 1 *Suspected pleural infection, non-purulent fluid—initial decision tree*，含 ultrasound safe-access 與 follow-up 註腳。https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease-full-guideline/
+1. 《Pocket Medicine》第九版，使用者持有之私人 PDF **PDF 實頁 94–96（全檔 464 頁）**，章名 **PLEURAL EFFUSION**；p95 原表標題 **Transudative vs. Exudative Effusions**，左欄 **Light’s Criteria**、右欄 **Three-Test Rule**；p95 下段 **Additional pleural fluid studies**；p96 表題 **Characteristics of Pleural Fluid (not diagnostic criteria)** 與 **Treatment**。2026-10-28 已從私人來源合法取得原始 bytes，私人工作環境 180 dpi 渲染、逐頁目視及對讀文字；**原書影像不得嵌入公開網站，原圖核讀不等於醫學與重製權審查合格**。
+2. British Thoracic Society, *Guideline for pleural disease*, Thorax 2023, doi:10.1136/thorax-2022-219784；已目視 BTS 官方 [完整 Supplement PDF](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/) 第 37 頁（PDF index 44）之 *Suspected pleural infection, non-purulent fluid—initial decision tree*、下方摘要表與 ***/† 安全註腳**，並與正文建議核對。原圖僅連結，不在此重製；LDH ≥900（圖）和 >900（文字）差異已交代。
 3. British Thoracic Society, *Clinical Statement on pleural procedures*, Thorax 2023;78(Suppl 3):s43–s68，胸腔超音波與抽液安全。https://thorax.bmj.com/content/78/Suppl_3/s43
 4. *A practical approach to pseudoexudative pleural effusions*, Respir Med 2023; PMID 37172787。https://pubmed.ncbi.nlm.nih.gov/37172787/
 5. **臺灣考選部官方原卷與更正表已逐頁核對（2026-10-28）**，試題代號均為 1302：112（一）醫學（三）Q45 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=Q)／[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=112020&q=1&s=11&t=M)，最終 B（更正僅涉及 Q47）；114（一）醫學（三）Q48 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=114020&q=1&s=0103&t=M)，最終 B（更正僅涉及 Q23、Q42）；115（二）醫學（三）Q49 [原卷](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)／[答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S)／[更正表](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)，最終 A（更正僅涉及 Q1、Q8、Q10、Q36、Q38、Q40）。以上僅確認官方題幹/四選項/最終計分身分，不取代完整醫學論證、圖表版權或公開編輯 QA。
 
-**編輯狀態：PRIVATE DRAFT / MEDICAL + FIGURE + EXAM HOLD；非正式發布，非院內操作 SOP。**
+**編輯狀態：PRIVATE DRAFT／Pocket 原表與 BTS 原圖已核／三題官方 Q/S/M 已核／獨立臨床教學 QA、公開權利、同 HEAD CI 與手機正式閱讀驗收仍 HOLD；非正式發布，非院內操作 SOP。**
