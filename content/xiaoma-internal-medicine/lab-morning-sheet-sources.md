@@ -36,6 +36,8 @@
 
 **已逐頁目視的原文範圍**：UKKA *July 2026* 官方完整 PDF 的印刷 **p.14–15（PDF 第 14、15 張，從零起算索引 13、14）**。原文 Guideline 15.3 建議疑似假性高鉀時以不同容器的配對 lithium-heparin 與 clotted serum 採樣核實；Guideline 16.2a 指出 ECG 改變時 IV calcium 建議強度為 **2C**（2026 已降級，不可拿它當高等級確定療效證據）；16.3.1 與 16.3.2 區分嚴重和中度高鉀使用 insulin-glucose 的建議強度。17.1–17.2 要求注意血鉀反彈與 insulin 後低血糖。這些是**原文建議與適用限制**，主文合成案例並未使用其固定處方劑量。[開啟 UKKA 2026 原始 PDF](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf)。
 
+**與本文最相關的 UKKA 原始圖／表已補做目視核對**：[Figure 4，印刷 p.75／PDF 索引 74](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75)，描繪心肌保護、細胞轉位、移除鉀、血鉀與血糖監測、避免復發五個處置面向；此圖不代表每位中度高鉀患者都要給 IV calcium。[Table 22，印刷 p.98／PDF 索引 97](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98) 是原指引的 insulin-glucose protocol，包含治療前血糖、後續補糖條件及血糖與 K 監測，且原表下方特別指出腎衰竭病人的輸液體積負擔。主文不提供固定劑量，避免把此原圖誤當台灣各院通用 order set。原圖只提供合法原站連結，不重製像素。
+
 已查看以上指引的相關條文與頁面，但**未完整審閱 180 頁全部 Appendix、每一張 algorithm 或特定醫院 formulary**；不可宣稱全套圖表完整驗收。對任何實際用藥仍須回原頁與當地流程。
 
 ## 4. Hb、輸血與族群差異
