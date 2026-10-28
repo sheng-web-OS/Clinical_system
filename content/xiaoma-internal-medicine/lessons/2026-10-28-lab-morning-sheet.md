@@ -40,6 +40,12 @@
 
 [AJKD *Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025*](https://pubmed.ncbi.nlm.nih.gov/39396361/) 進一步指出，採檢、運送、保存、分析方法乃至檢驗後報告都會影響結果。細胞內鉀遠高於細胞外；抽血後溶血或特殊血球狀態可能改變樣本的 K，這是**檢體層面的機轉**。臨床上必須將分析干擾與真正急症的安全評估**並行**，不能拿一項去否定另一項。
 
+### 另一個真實病人：這次是 platelet，而不只是極端 WBC
+
+不要把 AML 個案的「氣送管＋脆弱白血球」當成唯一一種偽高血鉀。2018 年 Šálek 報告的是**另一位 62 歲女性**，她有 essential thrombocythemia，因胃潰瘍出血接受手術後暫停原本的血液疾病用藥。[原始病例與 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/) 當次抽血顯示 **platelets 1305×10⁹/L、WBC 39.8×10⁹/L、serum K 6.3 mmol/L**。改看不同檢體，**lithium-heparin plasma K 4.6、whole blood K 3.4 mmol/L**。即使原文 serum free haemoglobin **0.09 g/L**，仍可見血清和其他檢體之間明顯矛盾；這說明**沒有明顯紅血球溶血警訊，也不能單憑它排除偽高血鉀**。
+
+為什麼 platelet 會影響 K？**Serum 需要凝血，血小板在此過程可能釋出細胞內的 K**；抗凝的 plasma 不經相同凝固過程，而 whole blood 的前處理又不同。作者認為血小板與白血球增加、檢體離心時細胞可能受損，均有助於解釋結果。原文還有**11 組**血清 K 與 platelet 配對（Spearman ρ **0.64**）；這是同一位病人的時間序列相關，**不是**證實每個血小板高的病人都可直接把 serum K 扣掉固定數值，也不是敏感度／特異度。這段不同病人的真實資料，讓你看到 **CBC 可以成為 chemistry panel 的解釋前提**；然而臨床危險是否須立即處理，仍不能由個案報告單獨批准。
+
 ## 第二問｜醫師取得新證據後，為什麼可能改變判斷？先看研究真正包含哪些病人
 
 2019/2020 年發表的前瞻性急診研究 [Accuracy of Hemolyzed Potassium Levels in the Emergency Department](https://pmc.ncbi.nlm.nih.gov/articles/PMC7673871/) 從有溶血高血鉀且曾在 12 小時內重抽的個案中，最後留下**66 個低風險遭遇**；初次溶血 K 中位數 **5.8 mmol/L**，重抽後中位數 **3.9 mmol/L**，這 66 人沒有持續性真高鉀（該小樣本真高鉀比例的 95% 信賴區間上界約 **6%**）。
