@@ -17,9 +17,9 @@
 ## 其他機轉與治療證據
 
 - [Hayhoe 等人 1999 年生理研究摘要](https://pubmed.ncbi.nlm.nih.gov/10470571/)：10 名 CABG 患者，使用特定 polygeline prime，Cl⁻ 上升但 lactate 平均趨勢未隨之上升；本次未取得可目視的原始全文圖表，不把它視為所有現代 CPB prime 的代表。
-- [Guarnieri 等人 2026 年觀察研究摘要](https://pubmed.ncbi.nlm.nih.gov/41130846/)：50 名成人 CPB 患者的 SIG 與 alactic BE；術後未測陰離子的貢獻不等於每名病人的致酸種類已確診。**第一天 SIG 訊號消退**與部分其他代謝量仍有變化必須區分。
+- [Guarnieri 等人 2026 年觀察研究摘要](https://pubmed.ncbi.nlm.nih.gov/41130846/)：50 名成人 CPB 患者的 SIG 與 alactic BE；術後未測陰離子的貢獻不等於每名病人的致酸種類已確診。**公開摘要沒有術後第一天 SIG 的數值與統計比較**；不能從 pH 正常化推定 SIG 已消退，也不能把 ICU 到院時的 SIG 升高外推為持續到隔天。
 - [2024 EACTS/EACTAIC/EBCP 成人 CPB 指引](https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/)§10.3：不同 priming fluid 的生理影響與小型試驗，不足以推論特定 prime 可改善所有主要臨床結局。
-- [2009 年 balanced priming fluid 隨機研究摘要](https://pubmed.ncbi.nlm.nih.gov/19115651/)：電解質與 strong ion gap 效應不能僅以 chloride 含量預測；摘要證據不等於已核對所有原圖。
+- [2008 年 balanced priming fluid 隨機研究摘要](https://pubmed.ncbi.nlm.nih.gov/19115651/)：電解質與 strong ion gap 效應不能僅以 chloride 含量預測；摘要證據不等於已核對所有原圖。
 - [既有酸鹼教材的 Pocket Medicine 第九版來源與原圖定位](acid-base-sources.md)：Figure 4-1 的 nomogram、AG 與代償表是必要先備，但本文原創群體圖並非 nomogram 原像素的重製。
 
 **權利與圖表界線：**公開版只呈現本站原創、按原表數值自行設計的三時點比較圖，並提供出版社合法原表入口；不公開重製研究 Figure 或 Pocket Medicine 原書頁面。研究中的可辨別限制、分母及採檢時間，必須與實際臨床處置推論分開。
