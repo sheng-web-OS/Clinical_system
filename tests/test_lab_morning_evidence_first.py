@@ -51,6 +51,19 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertNotIn("## 後段合成練習", self.body)
         self.assertIn("不提供選抽血項目或醫囑", self.body)
 
+    def test_scope_and_publication_date_are_not_misrepresented(self):
+        # This pilot has a valid measurement-trust scope; not a made-up full
+        # multi-organ lab-order workflow or a vague original-study year.
+        self.assertIn("第一篇", self.body.splitlines()[0])
+        self.assertIn("本篇的範圍是", self.body)
+        self.assertIn("2020 年正式發表", self.body)
+        self.assertNotIn("2019/2020 年發表", self.body)
+        # The original Hb discrepancy is described once, not duplicated by
+        # merging separate author branches.
+        self.assertEqual(self.body.count("居家抽血 Hb"), 1)
+        self.assertIn("4.5 g/dL", self.body)
+        self.assertIn("7.9 g/dL", self.body)
+
     def test_source_page_agrees_with_current_primary_evidence(self):
         for locator in ("PMC11462689", "PMC7673871", "PMC11908522"):
             with self.subTest(locator=locator):
