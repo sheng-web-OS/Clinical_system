@@ -158,18 +158,18 @@ TOF 的經典收縮雜音多來自 RV outflow obstruction 而非大 VSD 噴流�
 | 111-1（2022） | Q8 | C | 無症狀 AS 與負荷試驗禁忌的條件 |
 | 111-2（2022） | Q4 | C | Duroziez—AR；Kussmaul sign 不等於代謝性酸中毒 |
 | 111-2（2022） | Q12 | C | HOCM 的 bifid pulse；pulsus paradoxus 定義 |
-| 111-2（2022） | Q75 | A | PDA／CT 附圖，圖待人工核對 |
+| 111-2（2022） | Q75 | A | PDA／CT 原圖已核：跨主動脈與肺動脈的連結；更正未涉及 Q75 |
 | 112-1（2023） | Q8 | B | Graham Steell／Austin Flint／opening snap／MR |
 | 112-1（2023） | Q13 | A | Wide pulse pressure 為何不支持典型 AS |
-| 112-2（2023） | Q8 | D | HCM 惡性心律、ICD、利尿的風險；附圖待核 |
+| 112-2（2023） | Q8 | D | ECG／Echo 原圖已核：HCM、ICD 與加重利尿可能惡化 LVOTO 的條件 |
 | 113-1（2024） | Q6 | C | 動態 LVOTO 的 PVC 後脈搏壓反常；不要選錯正誤 |
-| 113-1（2024） | Q9 | D | 左房黏液瘤與栓塞、姿勢性流入阻塞；附圖待核 |
+| 113-1（2024） | Q9 | D | 雙時相 Echo 原圖已核：左房黏液瘤、栓塞與姿勢性流入阻塞；更正檔待取得 |
 | 113-1（2024） | Q11 | B | Carvallo sign 與手法變化 |
 | 113-1（2024） | Q12 | A | HCM 表型、治療陷阱 |
 | 113-2（2024） | Q7 | A | ASD／Ebstein／PAPVR／VSD |
 | 113-2（2024） | Q11 | A | Bicuspid aortic valve 與升主動脈病變 |
 | 114-1（2025） | Q6 | D | 結構介入：ASD、PFO、PDA、MS、TAVR、TEER |
-| 114-2（2025） | Q14 | A | MVP、myxomatous valve、結締組織；附圖待核 |
+| 114-2（2025） | Q14 | A | MVP、myxomatous valve、結締組織；官方原題為純文字，非附圖題 |
 | 114-2（2025） | Q61 | D | IE 外科指徵 vs 單純發燒 |
 | 115-1（2026） | Q65 | D | IE 血培持續陽性：重新評估 ≠ 單憑第三天立即手術 |
 | 115-2（2026） | Q14 | D | 二葉主動脈瓣的狹窄與性別誤述 |
