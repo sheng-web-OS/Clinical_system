@@ -91,37 +91,69 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertIn("原圖待核", archive, "Image-dependent questions cannot masquerade as verified figures")
 
 
-    def test_all_heart_sounds_cross_specialty_questions_have_readable_material_links(self):
-        """Both cross-specialty question collections must expose a real topic section from each year-list row."""
-        from exam_archive import question_connections, concept_url, question_key
-
+    def test_exam_bank_answer_is_not_duplicated_as_a_material(self):
+        """The Q link already opens its answer; only other concept articles are materials."""
+        from exam_archive import question_connections, question_key, concept_url
         sources = {
             "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md",
             "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md",
         }
         connections = question_connections(self.pages, ROOT)
         archive = render_exam_archive(self.pages, ROOT)
-        records = {question_key(record["exam"]): record for record in question_records(self.pages)}
+        records = {question_key(r["exam"]): r for r in question_records(self.pages)}
+        deep = next(p for p in self.pages if p["output"] ==
+                    "xiaoma-20261027-heart-sounds-structural-exam.html")
+        curated = {question_key(x) for x in deep["related_exams"]}
+        self.assertEqual(len(curated), 30)
         checked = 0
+        without_other_material = 0
         for page in self.pages:
             if page["source"] not in sources:
                 continue
-            for question in page["exam_questions"]:
-                with self.subTest(source=page["source"], question=question["question_heading"]):
-                    self.assertIn("concept_heading", question, "This question has no linked learning context")
-                    self.assertNotEqual(question["concept_heading"], question["question_heading"])
-                    key = question_key(question)
-                    expected = concept_url(page, question, ROOT)
-                    self.assertTrue(any(link["href"] == expected for link in connections[key]))
-                    marker = '<div class="exam-catalog-question" id="' + archive_anchor(records[key]) + '"'
+            for q in page["exam_questions"]:
+                key = question_key(q)
+                record = records[key]
+                with self.subTest(question=key):
+                    marker = '<div class="exam-catalog-question" id="' + archive_anchor(record) + '"'
                     self.assertIn(marker, archive)
+                    # A Q always opens its original official answer, not a fabricated second source.
                     row = archive.split(marker, 1)[1].split("</div>", 1)[0]
-                    self.assertIn('data-materials="', row)
-                    self.assertIn('class="exam-catalog-materials"', row)
-                    self.assertIn('href="' + expected + '"', row)
-                    self.assertNotEqual(expected, page["output"] + "#" + records[key]["anchor"])
+                    self.assertIn('href="' + page["output"] + '#' + record["anchor"] + '"', row)
+                    self.assertNotIn('href="' + page["output"] + '#part-', row)
+                    self.assertTrue(all(link["page"]["output"] != page["output"]
+                                        for link in connections.get(key, [])))
+                    self.assertTrue(all(link["page"].get("kind") != "exam_compilation"
+                                        for link in connections.get(key, [])))
+                    if key in curated:
+                        self.assertIn('class="exam-catalog-materials"', row)
+                        self.assertIn('href="' + concept_url(deep, next(x for x in
+                            deep["related_exams"] if question_key(x) == key), ROOT) + '"', row)
+                        self.assertIn('data-materials="1"', row)
+                    else:
+                        self.assertNotIn('class="exam-catalog-materials"', row)
+                        self.assertNotIn('data-materials=', row)
+                        without_other_material += 1
                     checked += 1
         self.assertEqual(checked, 49)
+        self.assertEqual(without_other_material, 19)
+
+    def test_all_year_questions_hide_self_materials_even_inside_real_lessons(self):
+        """No self-article section is a second material, regardless of its article kind."""
+        from exam_archive import question_connections, question_key
+        archive = render_exam_archive(self.pages, ROOT)
+        connections = question_connections(self.pages, ROOT)
+        for record in question_records(self.pages):
+            key = question_key(record["exam"])
+            with self.subTest(question=key):
+                self.assertFalse(any(x["page"]["output"] == record["page"]["output"]
+                                     for x in connections.get(key, [])))
+                marker = '<div class="exam-catalog-question" id="' + archive_anchor(record) + '"'
+                row = archive.split(marker, 1)[1].split("</div>", 1)[0]
+                self.assertIn('href="' + record["page"]["output"] + '#' + record["anchor"] + '"', row)
+                if not connections.get(key):
+                    self.assertNotIn('exam-catalog-materials', row)
+                else:
+                    self.assertIn('exam-catalog-materials', row)
 
     def test_heart_sounds_deep_material_links_are_per_question_and_not_embedded(self):
         """Previously missed release requirement: year-page '教材' resolves to real deep sections."""
