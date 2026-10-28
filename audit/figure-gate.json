@@ -1013,7 +1013,7 @@
           "mode": "source_link",
           "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22",
           "why_link_instead": "原表有分期與尿量持續時間的必要註解；本站保留正版原頁連結，主文僅計算合成病例而不重製原表。",
-          "teaching_role": "對比肌酐在48小時內上升0.52與尿量紀錄不可信的界線，阻止用單一濃度直接解釋病因。",
+          "teaching_role": "讓讀者將AKI診斷時序與病因推斷分開；本稿以原指引說明48小時肌酐、7天倍數及連續尿量門檻，不虛構不存在的真實心衰竭病例時序。",
           "scope_limit": "Stage 1 是功能性分期，不表示確診特定腎小管病變、液體反應性或必須開始腎替代治療。"
         },
         {
@@ -1044,13 +1044,13 @@
           "scope_limit": "原表是UKKA條件式方案，台灣各院formulary、濃度與患者個別劑量須依當地流程核對。"
         },
         {
-          "locator": "KDIGO 2012 AKI staging and 2022 AHA/ACC/HFSA HF congestion-perfusion assessment interpreted in original synthetic 09:00 counterfactual",
-          "source_token": "KDIGO 2012",
+          "locator": "Cao 2024 AML original Table 1; ED cohort n=66 (2020) and n=2440 (2025), distinct source identity and study eligibility visual comparison",
+          "source_token": "PMC11462689",
           "mode": "illustrated",
           "anchor": "lab-three-clocks",
-          "caption_token": "KDIGO AKI",
-          "teaching_role": "固定 K 6.3→4.9、Cr 1.16→1.69 與 I/O -1.4 L，只改 09:00 灌流／鬱血證據，讓讀者辨認正常血壓仍鬱血與低血壓四肢冰冷且仍鬱血會產生不同的立即工作，不是三張文字摘要卡。",
-          "scope_limit": "圖為合成病例的反事實比較，非 KDIGO/UKKA/AHA 官方原圖重製；未提供輸液、利尿或透析之經驗證處方，也不能據一組床邊徵象斷言 AKI 單一病因。"
+          "caption_token": "三條不混同的證據線",
+          "teaching_role": "辨認AML病人的K6.7/7.8/3.6含降鉀介入後重驗，與排除高風險之66人研究及有同日重抽之2440人研究在樣本與分母上完全不同，不得把三者畫成同一病人的時間序列或普遍臨床決策流程。",
+          "scope_limit": "原創文字證據分層示意而非原研究官方Table/Figure的翻拍；case report及受選擇偏差影響的研究不能單獨證實治療效果、個人高鉀安全或全急診盛行率。"
         }
       ]
     },
