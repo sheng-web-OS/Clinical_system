@@ -3777,6 +3777,866 @@
         }
       }
     },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-cticu-abg-cabg-lactate.md": {
+      "content_blob": "2d4fae8e2343d17cf9427aebaf8c0414fdb92552",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "Separate AI editorial context 2026-10-28; PR #146 article blob 2d4fae8; Smyth 2021 primary Oxford/PMC8691577 original case text verified; Wardhana 2025 primary PDF Table 1 prior direct audit PR #146 comment 6438740567; human review, pixels and mobile are separate gates",
+      "core_reader_question": "CABG 術後 lactate 14.8 與 ScvO₂ 95% 同時出現時，如何先排除可逆致命循環危險，再用不同檢驗分辨氧輸送、氧利用與酸鹼病因？",
+      "new_understanding": "高 ScvO₂ 不保證組織氧供充足，乳酸與 BE 反映不同過程；原始 T0–T5 的時間證據及 euDKA 反例共同阻止單一數值決策。",
+      "strongest_counterargument": "同一病例沒有同步 Hb/CO/ABG 與器官灌流數據，不能證實高 ScvO₂ 的微循環機轉或 epinephrine 單因果；圖表可讀性與實際讀者收益仍需獨立驗收。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 3,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "49c3c37187278e8d08-1": {
+          "role": "source_context",
+          "reader_gain": "交代教材日期及心外 ICU 血氣場景",
+          "nonredundancy_reason": "只負責讀者定向而不判斷患者病因；其對照段落為「2026.10.27｜Clinical OS・ABG ×」",
+          "verdict": "keep",
+          "excerpt_for_editor": "2026.10.27｜Clinical OS・ABG × Cardiothoracic ICU",
+          "line_for_editor": 3
+        },
+        "0fbb096a6f4ffacdc2-1": {
+          "role": "orientation",
+          "reader_gain": "呈現乳酸高必然缺氧的錯誤直線；本段具體指向「術後病人乳酸升高，我們很容易想像一條直線：組織缺氧，轉為」",
+          "nonredundancy_reason": "保留初始迷思以供後續案例反證；其對照段落為「術後病人乳酸升高，我們很容易想像一條直線：組織缺氧，轉為」",
+          "verdict": "keep",
+          "excerpt_for_editor": "術後病人乳酸升高，我們很容易想像一條直線：組織缺氧，轉為無氧代謝，lactate 上升，出現 metabolic acidosis；於是只要看乳酸濃度，就能知道病人的灌流是否足夠。",
+          "line_for_editor": 6
+        },
+        "00ad18c594ba7b0e63-1": {
+          "role": "definition",
+          "reader_gain": "將酸度乳酸氧輸送氧利用拆四問；本段具體指向「但這條直線把四個不同問題接成了一件事：血液現在有多酸？乳」",
+          "nonredundancy_reason": "提供全文骨架而非重述乳酸迷思；其對照段落為「但這條直線把四個不同問題接成了一件事：血液現在有多酸？乳」",
+          "verdict": "keep",
+          "excerpt_for_editor": "但這條直線把四個不同問題接成了一件事：血液現在有多酸？乳酸為什麼升高？循環送出去多少氧？各個組織實際取得與利用了多少氧？",
+          "line_for_editor": 8
+        },
+        "c7a5a2bd62d1405122-1": {
+          "role": "causal_bridge",
+          "reader_gain": "分配四種問題各自需要的資料；本段具體指向「第一個問題由酸鹼資料回答；第二個需要代謝與病程；第三個需」",
+          "nonredundancy_reason": "增加資料需求與前段單純提問不同；其對照段落為「第一個問題由酸鹼資料回答；第二個需要代謝與病程；第三個需」",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一個問題由酸鹼資料回答；第二個需要代謝與病程；第三個需要血紅素及心輸出；第四個則無法由單一全身指標完全確定。",
+          "line_for_editor": 10
+        },
+        "f1119753c43e31f5c7-1": {
+          "role": "case_evidence",
+          "reader_gain": "建立第三例年齡 EF CPB 支持背景",
+          "nonredundancy_reason": "提供後續時序的真實患者身分；其對照段落為「2025 年 Wardhana 與 Kurniawaty」",
+          "verdict": "keep",
+          "excerpt_for_editor": "2025 年 Wardhana 與 Kurniawaty 發表三名 CABG 病人的術後乳酸病例系列。其中第三名是 69 歲男性，術前 LVEF 45%，接受 108 分鐘 cardiopulmonary bypass（CPB，心肺繞道）、91 分鐘主動脈夾閉。離開 CPB 後需要 dob",
+          "line_for_editor": 16
+        },
+        "a7be3402d8c29fb913-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出低 SVR 只是 vasoplegia 假說",
+          "nonredundancy_reason": "增加藥物支持下測值的推論界線；其對照段落為「術後 echo 記錄 cardiac output（CO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "術後 echo 記錄 cardiac output（CO）5.1 L/min、cardiac index（CI）3.1 L/min/m²、systemic vascular resistance（SVR）580 dyn·s/cm⁵。低 SVR 使 vasodilatory physiolo",
+          "line_for_editor": 18
+        },
+        "fd768ca6752f6d4506-1": {
+          "role": "case_evidence",
+          "reader_gain": "首次報出四小時乳酸與 ScvO₂ 同升",
+          "nonredundancy_reason": "不同於前段的心輸出及血管阻力；其對照段落為「到 ICU 四小時，lactate 從 3.6 上升到 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "到 ICU 四小時，lactate 從 3.6 上升到 14.8 mmol/L，central venous oxygen saturation（ScvO₂）卻從 92.6% 上升到 95%。",
+          "line_for_editor": 20
+        },
+        "6c5e67782e2db48d25-1": {
+          "role": "counterfactual",
+          "reader_gain": "對比盲目補液與錯誤放心兩個極端；本段具體指向「有人可能因此要立刻輸液，因為 lactate 14.8 」",
+          "nonredundancy_reason": "把數值轉為處置風險而非重報數字；其對照段落為「有人可能因此要立刻輸液，因為 lactate 14.8 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "有人可能因此要立刻輸液，因為 lactate 14.8 看起來像嚴重低灌流；也有人可能放心，因為 CI 3.1、ScvO₂ 95% 似乎不支持全身氧供不足。但兩種判斷都跳過眼前更重要的一步。",
+          "line_for_editor": 22
+        },
+        "03e32541fbf0fa820b-1": {
+          "role": "safety",
+          "reader_gain": "優先辨認出血心包壓迫與低輸出；本段具體指向「CABG 術後需要多種循環藥物、臨床仍不穩定時，首先必須」",
+          "nonredundancy_reason": "急救時限不同於後面代謝機轉討論；其對照段落為「CABG 術後需要多種循環藥物、臨床仍不穩定時，首先必須」",
+          "verdict": "keep",
+          "excerpt_for_editor": "CABG 術後需要多種循環藥物、臨床仍不穩定時，首先必須尋找可立即處理的外科與循環危險。 胸管出血量及趨勢、血壓與 pressor 劑量、有效心律和 pacing、皮膚與四肢灌流、尿量、Hb／凝血及床邊心臟影像，能幫助我們辨認出血、低心輸出、右心衰竭、心包／縱膈壓迫、手術後心肌缺血與血管擴",
+          "line_for_editor": 24
+        },
+        "3a1fc8051f25b7e74b-1": {
+          "role": "source_context",
+          "reader_gain": "交代 IBCC 身分及急救歸因時限；本段具體指向「這是 IBCC（Internet Book of Cri」",
+          "nonredundancy_reason": "避免把前段危險清單當成診斷規則；其對照段落為「這是 IBCC（Internet Book of Cri」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是 IBCC（Internet Book of Critical Care）〈Postoperative cardiac surgical patients〉的臨床起點。它不是說不用解釋血氣，而是提醒我們：病人是否正在失去循環，與我們是否已完整解釋乳酸來源，是兩個不同時限的問題。",
+          "line_for_editor": 26
+        },
+        "ceb7d2c4a5302ffc08-1": {
+          "role": "definition",
+          "reader_gain": "定義 ABG 實測與計算項目；本段具體指向「ABG（arterial blood gas，動脈血氣）」",
+          "nonredundancy_reason": "此處處理血氣而非後段氧輸送公式；其對照段落為「ABG（arterial blood gas，動脈血氣）」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ABG（arterial blood gas，動脈血氣）直接測量 pH、PaCO₂、PaO₂，通常再依 pH 與 PaCO₂ 計算 HCO₃⁻；其他項目如 lactate、電解質與氧飽和度，須視儀器及採檢項目。pH 告訴我們酸鹼結果；PaCO₂ 反映 CO₂ 產生與肺泡換氣排除的平衡；Pa",
+          "line_for_editor": 30
+        },
+        "725e0cc42e251c9d28-1": {
+          "role": "definition",
+          "reader_gain": "分辨 BE 偏移與 lactate 濃度",
+          "nonredundancy_reason": "為 T1 T2 兩者走勢不同建立前提",
+          "verdict": "keep",
+          "excerpt_for_editor": "Base excess（BE）是血液在標準化條件下的代謝性酸鹼偏移指標。BE 越負，淨代謝性酸化效應越明顯；但 BE 不是 lactate 的另一種寫法，更不是一個可以代替 pH 的直接測量。Lactate 表示某一時刻血中乳酸根的濃度，是生成、利用與清除的共同結果。",
+          "line_for_editor": 32
+        },
+        "44f6e6ccf5ec7ce2cb-1": {
+          "role": "definition",
+          "reader_gain": "區分 ScvO₂ SaO₂ SvO₂ 的採樣",
+          "nonredundancy_reason": "採樣位置問題不同於前段 BE 定義；其對照段落為「ScvO₂則是中心靜脈導管所採血液的氧飽和度，主要代表該」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ScvO₂則是中心靜脈導管所採血液的氧飽和度，主要代表該回流範圍的剩餘氧合比例。它不是動脈血的 SaO₂；也不等於由肺動脈取得、混合更廣泛靜脈回流的 SvO₂（mixed venous oxygen saturation）。不同採樣位置或時間的數字，不能拼成同一張「完整 ABG」。",
+          "line_for_editor": 34
+        },
+        "31bbc5822b065956d4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把兩種測量套回 14.8 和 95%",
+          "nonredundancy_reason": "由術語轉為真實病例解釋；其對照段落為「回到這位 69 歲 CABG 病人：術後四小時 lact」",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到這位 69 歲 CABG 病人：術後四小時 lactate 升至 14.8 mmol/L，ScvO₂ 卻達 95%。如果只看 lactate，容易立刻把問題歸因於低灌流；如果只看 ScvO₂，又可能誤以為全身氧供充足。這不是兩份檢驗互相衝突，而是它們回答不同的生理問題。",
+          "line_for_editor": 36
+        },
+        "5204b85a9c7e589908-1": {
+          "role": "causal_bridge",
+          "reader_gain": "圖前點出 CaO₂ DO₂ VO₂ 未知橋樑",
+          "nonredundancy_reason": "後續才逐一提供公式與圖面；其對照段落為「要理解這個現象，還缺了一座橋：血液實際送出多少氧（CaO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "要理解這個現象，還缺了一座橋：血液實際送出多少氧（CaO₂、DO₂），以及氧抵達後被哪些組織利用（VO₂、區域灌流與氧萃取）？ 下面的圖將病例「實測到的訊號」與「仍須補上的證據」分開；即使 ScvO₂ 很高，也不能跳過對術後出血、低心輸出或局部壓迫的床邊評估。",
+          "line_for_editor": 38
+        },
+        "9ff98d09854a70f73b-1": {
+          "role": "orientation",
+          "reader_gain": "說明氧合良好未必氧輸送足夠；本段具體指向「「動脈血氧合良好」與「每分鐘送到身體的氧足夠」之間，還缺」",
+          "nonredundancy_reason": "建立下一段氧含量定義的問題；其對照段落為「「動脈血氧合良好」與「每分鐘送到身體的氧足夠」之間，還缺」",
+          "verdict": "keep",
+          "excerpt_for_editor": "「動脈血氧合良好」與「每分鐘送到身體的氧足夠」之間，還缺了兩個量。",
+          "line_for_editor": 71
+        },
+        "bd8ff950a2f1d6a1ee-1": {
+          "role": "definition",
+          "reader_gain": "定義 CaO₂ 每百毫升血液含氧量；本段具體指向「CaO₂（arterial oxygen content」",
+          "nonredundancy_reason": "此處提供量綱而下一段給公式；其對照段落為「CaO₂（arterial oxygen content」",
+          "verdict": "keep",
+          "excerpt_for_editor": "CaO₂（arterial oxygen content，動脈血氧含量）描述每 100 mL 動脈血攜帶多少氧。近似式：",
+          "line_for_editor": 73
+        },
+        "a703994a74bbdd59c1-1": {
+          "role": "definition",
+          "reader_gain": "列出 Hb SaO₂ PaO₂ 的 CaO₂ 公式",
+          "nonredundancy_reason": "量化氧含量而非重述前段定義；其對照段落為「CaO₂（mL O₂/dL）≈ 1.34 × Hb（g/」",
+          "verdict": "keep",
+          "excerpt_for_editor": "CaO₂（mL O₂/dL）≈ 1.34 × Hb（g/dL）× SaO₂（0–1）＋ 0.003 × PaO₂（mmHg）",
+          "line_for_editor": 75
+        },
+        "8e8871968a453d0670-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用 CPB 稀釋示範 SpO₂ 正常陷阱",
+          "nonredundancy_reason": "是公式的臨床反事實而非係數重複；其對照段落為「絕大部分氧由 hemoglobin 攜帶，而不是溶解在血」",
+          "verdict": "keep",
+          "excerpt_for_editor": "絕大部分氧由 hemoglobin 攜帶，而不是溶解在血漿裡。因此 SpO₂ 接近 100% 的術後病人，若因 CPB hemodilution 或出血而使 Hb 下降，每單位血液攜帶的氧仍可能減少。",
+          "line_for_editor": 77
+        },
+        "75b58ab8b92680d49c-1": {
+          "role": "definition",
+          "reader_gain": "引出 DO₂ 尚須乘心輸出 CO；本段具體指向「接著，DO₂（systemic oxygen deliv」",
+          "nonredundancy_reason": "切換到每分鐘血流量的新層級；其對照段落為「接著，DO₂（systemic oxygen deliv」",
+          "verdict": "keep",
+          "excerpt_for_editor": "接著，DO₂（systemic oxygen delivery，系統氧輸送）還要考慮心臟每分鐘送出多少血：",
+          "line_for_editor": 79
+        },
+        "ec415bcdf1c8da85d1-1": {
+          "role": "definition",
+          "reader_gain": "列出 CO 乘 CaO₂ 的氧輸送公式",
+          "nonredundancy_reason": "量化 DO₂ 而非 CaO₂ 的單位",
+          "verdict": "keep",
+          "excerpt_for_editor": "DO₂（mL O₂/min）≈ CO（L/min）× CaO₂（mL O₂/dL）× 10",
+          "line_for_editor": 81
+        },
+        "6d07d0a79b5bde58e1-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋乘十換算與藥物支持下 CI；本段具體指向「這裡的 10 只是把 L 轉成 dL。於是我們終於能明白」",
+          "nonredundancy_reason": "把列式轉為術後條件推理；其對照段落為「這裡的 10 只是把 L 轉成 dL。於是我們終於能明白」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這裡的 10 只是把 L 轉成 dL。於是我們終於能明白：SaO₂、Hb、CO 是三個不同的資訊。正常 SpO₂ 不能補償 Hb 太低；CI 尚可也不保證病人沒有缺血，尤其當測量是在強心藥和 pacing 支持下完成。",
+          "line_for_editor": 83
+        },
+        "04f41b0a06e7e05e01-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明 Fick 氧耗必須混合靜脈取樣",
+          "nonredundancy_reason": "避免將前段氧輸送直接當氧耗；其對照段落為「VO₂（oxygen consumption，氧耗）則是」",
+          "verdict": "keep",
+          "excerpt_for_editor": "VO₂（oxygen consumption，氧耗）則是組織真正消耗的氧。若要藉由動靜脈氧含量差理解全身氧耗，理想化 Fick 關係需使用真正代表混合靜脈回流的 CvO₂；不能直接把單一 ScvO₂ 當肺動脈混合靜脈數值代入，就宣布已算出全身 oxygen extraction。",
+          "line_for_editor": 85
+        },
+        "ad9cc00b9f135bcd47-1": {
+          "role": "safety",
+          "reader_gain": "列出高 ScvO₂ 競爭機轉與危險；本段具體指向「ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧」",
+          "nonredundancy_reason": "補足前段 Fick 理論的床邊邊界；其對照段落為「ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ScvO₂ 很高，只表示取樣血液仍高度飽和。它可能與耗氧下降、血流分配改變、某些微循環氧萃取不足或採樣位置有關。它不是「全身每個器官都足夠氧」的陰性檢驗。若臨床循環不穩，必須先從血壓與升壓藥需求、胸管出血、心律、床邊心超與 Hb 尋找可立即處理的原因，再合併尿量、器官灌流及乳酸趨勢；這些檢",
+          "line_for_editor": 87
+        },
+        "44bb410b2264f053eb-1": {
+          "role": "causal_bridge",
+          "reader_gain": "形成高乳酸高 ScvO₂ 可共存結論",
+          "nonredundancy_reason": "收束第一問並轉入 BE 時間序列；其對照段落為「所以這位 CABG 病人的 ScvO₂ 95% 不必和 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "所以這位 CABG 病人的 ScvO₂ 95% 不必和 lactate 14.8「選一個相信」。一個描述特定靜脈血的剩餘氧飽和度，另一個描述代謝產物的濃度；它們可以同時是真的，也可以同時沒有回答真正的病因。",
+          "line_for_editor": 89
+        },
+        "459bf99f4925ef7030-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現 T0 T1 T2 乳酸持平 BE 回升",
+          "nonredundancy_reason": "新增跨時間資料而非單點值；其對照段落為「回到前面那位 69 歲 CABG 術後患者。現在不急著替」",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到前面那位 69 歲 CABG 術後患者。現在不急著替高乳酸貼上「缺氧」或「藥物」標籤，而是先按時間讀他真正量到的數字：到 ICU 時（T0），lactate 為 3.6 mmol/L、BE 為 −7.69 mEq/L；四小時後（T1），lactate 上升至 14.8、BE 降至 −1",
+          "line_for_editor": 93
+        },
+        "5fd640221f026bc395-1": {
+          "role": "orientation",
+          "reader_gain": "由實測時序提出兩個代謝問題；本段具體指向「這段病程其實提出兩個不同問題：乳酸為何在前四小時快速累積」",
+          "nonredundancy_reason": "下一段才討論病因不預設答案；其對照段落為「這段病程其實提出兩個不同問題：乳酸為何在前四小時快速累積」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這段病程其實提出兩個不同問題：乳酸為何在前四小時快速累積？乳酸尚未下降時，整體代謝性酸鹼偏移又為何開始改善？ 要回答它們，不能把 lactate 和 BE 當作同一個數字的兩種寫法。先看同一患者的完整時序：",
+          "line_for_editor": 95
+        },
+        "4e6bae78afc0d6474d-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出原表 T0 至 T5 無 T6 定義",
+          "nonredundancy_reason": "圖註保護來源時點與不等距軸；其對照段落為「表與圖：選自原始 Table 1 第三名病人；T0–T5」",
+          "verdict": "keep",
+          "excerpt_for_editor": "表與圖：選自原始 Table 1 第三名病人；T0–T5 並非等間隔，圖為分類時點，不代表均勻的時間軸。原文 Figure 1 出現 Table 1 無定義的 T6，本文不補造 T6。",
+          "line_for_editor": 170
+        },
+        "9a909e390bb32f59f4-1": {
+          "role": "definition",
+          "reader_gain": "解釋乳酸生成利用清除的生化；本段具體指向「Lactate 並不是缺氧才會出現的代謝廢物。即使細胞氧」",
+          "nonredundancy_reason": "提供後續 epinephrine 假說前提",
+          "verdict": "keep",
+          "excerpt_for_editor": "Lactate 並不是缺氧才會出現的代謝廢物。即使細胞氧供充足，glycolysis 仍持續產生 pyruvate，而 lactate dehydrogenase 會讓 pyruvate 與 lactate 相互轉換。血中 lactate 的數字，是各組織生成、利用與清除共同作用的結果；低",
+          "line_for_editor": 174
+        },
+        "731ebba978aca1428d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用 β₂ 機轉和血糖同期上升提假說；本段具體指向「這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，」",
+          "nonredundancy_reason": "比一般乳酸機轉多了患者時序；其對照段落為「這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這位病人離開 CPB 後，因循環不穩而接受多種支持藥物，其中包括 epinephrine。一般生理研究顯示，epinephrine 可透過 β₂-adrenergic receptor、cAMP 與 Na⁺/K⁺-ATPase 等機轉促進 glycolysis，增加有氧條件下的乳酸生成；但",
+          "line_for_editor": 176
+        },
+        "902d22855d56f2fac4-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制 epinephrine 為時間相關假說",
+          "nonredundancy_reason": "反駁上一段過度確診的可能；其對照段落為「因此，病例作者提出 epinephrine 相關代謝反應」",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，病例作者提出 epinephrine 相關代謝反應的假說，並不是憑空猜測：這位病人確實接受了 epinephrine，而乳酸與血糖在早期術後時段一起升高。但這只能提供生理合理性與時間相關性。原始病例沒有能隔離藥物效果的對照，也沒有完整的連續用藥劑量、同期器官灌流與 lactate/p",
+          "line_for_editor": 178
+        },
+        "9c3c0bf9c298158762-1": {
+          "role": "orientation",
+          "reader_gain": "指定 T1 到 T2 乳酸 BE 分離問題",
+          "nonredundancy_reason": "不同於 T0 到 T1 乳酸快速上升",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二層：為什麼 T1 → T2 的 lactate 不變，BE 卻改善？",
+          "line_for_editor": 180
+        },
+        "29138e94968cbeea7f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "列出 chloride albumin 等可能因素",
+          "nonredundancy_reason": "提供 BE 脫鉤機轉但未冒稱實測；其對照段落為「BE 描述的是血液整體代謝性酸鹼偏移，不只是乳酸的替代指」",
+          "verdict": "keep",
+          "excerpt_for_editor": "BE 描述的是血液整體代謝性酸鹼偏移，不只是乳酸的替代指標。Lactate 14.8 mmol/L 在兩次採血間持平，並不表示所有酸化與鹼化因素都沒有改變；chloride、其他強離子、albumin、未測陰離子與治療相關變化，都可能讓 BE 的走勢不同於 lactate。",
+          "line_for_editor": 182
+        },
+        "5b1ece4d5182c2a3dd-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "禁止倒推 bicarbonate 或輸液原因",
+          "nonredundancy_reason": "為前段機轉加上來源與安全界線；其對照段落為「但原始資料缺少足以重建這段酸鹼變化的同期電解質、albu」",
+          "verdict": "keep",
+          "excerpt_for_editor": "但原始資料缺少足以重建這段酸鹼變化的同期電解質、albumin、完整 ABG 與介入時間，因此不能反過來斷言 BE 的改善是 bicarbonate、某種輸液或特定離子變化造成。這裡最可靠的結論是：lactate 反映生成與清除的濃度結果，BE 反映淨代謝性酸鹼效應；兩者必須一起讀，卻不能",
+          "line_for_editor": 184
+        },
+        "56d83457eb52ea6d27-1": {
+          "role": "case_evidence",
+          "reader_gain": "建立另一名 SGLT2i 患者身分；本段具體指向「Smyth 等人在 2021 年報告另一名 54 歲 C」",
+          "nonredundancy_reason": "是獨立反例不能拼接第一例資料；其對照段落為「Smyth 等人在 2021 年報告另一名 54 歲 C」",
+          "verdict": "keep",
+          "excerpt_for_editor": "Smyth 等人在 2021 年報告另一名 54 歲 CABG 病人，患有 type 2 diabetes，使用 SGLT2 inhibitor dapagliflozin，術前約 24 小時停藥並禁食。",
+          "line_for_editor": 188
+        },
+        "c9b2a9af07f5fb7ae7-1": {
+          "role": "case_evidence",
+          "reader_gain": "分清誘導後 pH 和術後 base deficit",
+          "nonredundancy_reason": "保留原文負號而不假造同期 ABG；其對照段落為「麻醉誘導後 pH 是 7.45，但手術後出現逐漸惡化的代」",
+          "verdict": "keep",
+          "excerpt_for_editor": "麻醉誘導後 pH 是 7.45，但手術後出現逐漸惡化的代謝性酸血症，base deficit 達 −15.8 mmol/L。當時的資料包含：",
+          "line_for_editor": 190
+        },
+        "df249b080554f97b54-1": {
+          "role": "case_evidence",
+          "reader_gain": "提醒第二例 SvO₂ 不是 ScvO₂",
+          "nonredundancy_reason": "跨病例採樣身分警示不重複病因；其對照段落為「SvO₂ 68%（注意是 SvO₂，不是前例的 ScvO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "SvO₂ 68%（注意是 SvO₂，不是前例的 ScvO₂）；",
+          "line_for_editor": 193
+        },
+        "c5a367678fa2db7d66-1": {
+          "role": "orientation",
+          "reader_gain": "正常乳酸血糖卻酸化的反事實；本段具體指向「這些數值原本讓人困惑：如果沒有高 lactate、血糖也」",
+          "nonredundancy_reason": "與第一例高乳酸方向相反；其對照段落為「這些數值原本讓人困惑：如果沒有高 lactate、血糖也」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這些數值原本讓人困惑：如果沒有高 lactate、血糖也不高，為什麼會出現明顯的代謝性酸化？",
+          "line_for_editor": 198
+        },
+        "b09bf23d7c5458379d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以 ketones 和 SGLT2i 完成 euDKA 鏈",
+          "nonredundancy_reason": "提供診斷治療復發而非只提問；其對照段落為「答案來自病史與新的檢驗。禁食、SGLT2 inhibit」",
+          "verdict": "keep",
+          "excerpt_for_editor": "答案來自病史與新的檢驗。禁食、SGLT2 inhibitor 的作用及手術壓力共同促成 euglycemic diabetic ketoacidosis（euDKA，血糖未顯著升高的酮酸中毒）。這裡主要需要辨認的酸化來源是 ketones，而不是 lactate。病人經 insulin、d",
+          "line_for_editor": 200
+        },
+        "c7d7efbd4f6383d67a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "禁止跨病人 ABG 拼接與普遍外推；本段具體指向「我們不能把本文第二個案例（euDKA 病人）的完整代謝性」",
+          "nonredundancy_reason": "屬證據完整性邊界不重述 euDKA；其對照段落為「我們不能把本文第二個案例（euDKA 病人）的完整代謝性」",
+          "verdict": "keep",
+          "excerpt_for_editor": "我們不能把本文第二個案例（euDKA 病人）的完整代謝性酸血症，拿來替前一位 CABG 病人填上不存在的 ABG；也不能把這位 euDKA 病人的低 lactate 推論成「所有 CABG 術後酸中毒都不是低灌流」。",
+          "line_for_editor": 202
+        },
+        "18d350ec88512f8bb4-1": {
+          "role": "counterfactual",
+          "reader_gain": "反證酸血症等於乳酸的雙向迷思；本段具體指向「這個對照真正推翻的是：「酸血症＝乳酸過高」以及「乳酸不高」",
+          "nonredundancy_reason": "抽象化臨床遷移而非治療細節；其對照段落為「這個對照真正推翻的是：「酸血症＝乳酸過高」以及「乳酸不高」",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個對照真正推翻的是：「酸血症＝乳酸過高」以及「乳酸不高＝沒有重要代謝性酸中毒」這兩個互為鏡像的錯誤。",
+          "line_for_editor": 204
+        },
+        "508ed6ce360314c02a-1": {
+          "role": "decision",
+          "reader_gain": "給出 AG albumin ketones 的檢驗路徑",
+          "nonredundancy_reason": "將反例轉為可執行的鑑別流程；其對照段落為「若 ABG 指出 HCO₃⁻ 下降或有顯著負 BE，臨床」",
+          "verdict": "keep",
+          "excerpt_for_editor": "若 ABG 指出 HCO₃⁻ 下降或有顯著負 BE，臨床還需要同期 serum Na⁺、Cl⁻、total CO₂／HCO₃⁻、albumin 與相應的 lactate／ketones／腎功能。Anion gap（AG＝Na⁺−Cl⁻−HCO₃⁻）能協助辨認未測陰離子；低 albumin ",
+          "line_for_editor": 206
+        },
+        "1f44ad23534f27c6af-1": {
+          "role": "case_evidence",
+          "reader_gain": "把原病例轉成值班電話情境；本段具體指向「想像電話報告：「CABG 術後四小時，lactate 1」",
+          "nonredundancy_reason": "由研究描述切換為臨床決策演練；其對照段落為「想像電話報告：「CABG 術後四小時，lactate 1」",
+          "verdict": "keep",
+          "excerpt_for_editor": "想像電話報告：「CABG 術後四小時，lactate 14.8，ScvO₂ 95%，仍在 norepinephrine 和 epinephrine。」",
+          "line_for_editor": 210
+        },
+        "f87252fc8221cbff19-1": {
+          "role": "counterfactual",
+          "reader_gain": "排除大量輸液與完全忽略兩極；本段具體指向「現在不應做的，是直接在「一定缺氧，要補大量液體」和「一定」",
+          "nonredundancy_reason": "先建立決策分叉再引入正確動作；其對照段落為「現在不應做的，是直接在「一定缺氧，要補大量液體」和「一定」",
+          "verdict": "keep",
+          "excerpt_for_editor": "現在不應做的，是直接在「一定缺氧，要補大量液體」和「一定是 epinephrine，先不用管」兩個答案中選一個。",
+          "line_for_editor": 212
+        },
+        "4f612e9d74f8d1a9e7-1": {
+          "role": "safety",
+          "reader_gain": "胸管血壓與局部壓迫改變處置；本段具體指向「更有價值的是先確認當下是不是循環危機。若胸管出血急增、血」",
+          "nonredundancy_reason": "特定急症分支不同於一般代謝分析；其對照段落為「更有價值的是先確認當下是不是循環危機。若胸管出血急增、血」",
+          "verdict": "keep",
+          "excerpt_for_editor": "更有價值的是先確認當下是不是循環危機。若胸管出血急增、血壓下降、升壓藥快速加量，這些新事實會把出血、局部血腫或心功能惡化提高為需立即評估的問題。即使 ScvO₂ 高，仍然不能跳過床邊檢查、回報和必要的外科／心臟超音波評估。術後局限性 tamponade 也可能沒有經典環狀積液表現，影像不典",
+          "line_for_editor": 214
+        },
+        "8b4603883845dfd2c3-1": {
+          "role": "decision",
+          "reader_gain": "無明顯出血時用心律 echo Hb 分層",
+          "nonredundancy_reason": "與上一段急性出血分支條件不同；其對照段落為「若沒有明顯出血，則應整合心律、pacing、ECG、ec」",
+          "verdict": "keep",
+          "excerpt_for_editor": "若沒有明顯出血，則應整合心律、pacing、ECG、echo 的 LV/RV 功能、Hb、各式循環支持劑量、尿量及灌流徵象，理解 CI 是在哪個支持條件下取得。若懷疑 vasoplegia，低 SVR 是一條線索，但不能只用單一術後數值確診或隨意改變藥物。",
+          "line_for_editor": 216
+        },
+        "6cad6bd6a2ec8c1d00-1": {
+          "role": "decision",
+          "reader_gain": "要求同時點 ABG 電解質乳酸資料；本段具體指向「最後再回到代謝：同一時間點取得 pH／PaCO₂／PaO」",
+          "nonredundancy_reason": "補上循環檢查外的代謝證據缺口；其對照段落為「最後再回到代謝：同一時間點取得 pH／PaCO₂／PaO」",
+          "verdict": "keep",
+          "excerpt_for_editor": "最後再回到代謝：同一時間點取得 pH／PaCO₂／PaO₂／FiO₂、electrolytes、albumin、Hb、lactate，必要時 ketones。乳酸的變化必須與循環、呼吸及代謝資料共同追蹤，不能把 lactate 降低當作已證實處理了出血或 tamponade。",
+          "line_for_editor": 218
+        },
+        "57ea523c6c2c86aa6b-1": {
+          "role": "decision",
+          "reader_gain": "無 Swan-Ganz 時提供替代檢查",
+          "nonredundancy_reason": "新增 CVP PAWP 不代表輸液反應的界線",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個臨床整合不需要假設病房一定有 Swan-Ganz catheter。有 PA catheter 時，CI／SvO₂／PA 壓力可以增加判斷資訊；沒有時仍能從 A-line、胸管、心律、血液檢驗、尿量及 bedside echo 建立可用的臨床模型。CVP、PAWP 等靜態壓力也不是 f",
+          "line_for_editor": 220
+        },
+        "b25ff320525f9ee0af-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制 CPB DO₂ 門檻不可外推 ICU",
+          "nonredundancy_reason": "屬指引適用場域而非患者實測；其對照段落為「還有一個容易誤用的數字：2024 年 EACTS/EAC」",
+          "verdict": "keep",
+          "excerpt_for_editor": "還有一個容易誤用的數字：2024 年 EACTS/EACTAIC/EBCP 指引提出常溫 CPB 期間特定的 goal-directed perfusion／DO₂ 門檻，這些門檻是針對手術中 CPB 的灌流管理，不能不加區分地轉成離開 CPB 後所有 ICU 病人的固定輸液或升壓目標。I",
+          "line_for_editor": 222
+        },
+        "9dd56aaf9a30d915f3-1": {
+          "role": "orientation",
+          "reader_gain": "收束第一例兩個數字都真的意義；本段具體指向「本文第一個案例（原研究的第三名 CABG 病人），lac」",
+          "nonredundancy_reason": "提供可帶走的原則而非再述機轉；其對照段落為「本文第一個案例（原研究的第三名 CABG 病人），lac」",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文第一個案例（原研究的第三名 CABG 病人），lactate 14.8、ScvO₂ 95%，其實沒有任何一個數字「錯」。錯的是我們原本希望用單一數字，代替不同層次的生理判斷。",
+          "line_for_editor": 226
+        },
+        "5ffaac766cb9713ea9-1": {
+          "role": "causal_bridge",
+          "reader_gain": "統整 ABG BE 乳酸 ScvO₂ Hb CO",
+          "nonredundancy_reason": "結尾作測量層級索引不重推公式；其對照段落為「ABG 的 pH、PaCO₂、PaO₂ 描述的是酸鹼、有」",
+          "verdict": "keep",
+          "excerpt_for_editor": "ABG 的 pH、PaCO₂、PaO₂ 描述的是酸鹼、有效換氣與動脈氧合；BE 摘要代謝性酸鹼影響；lactate 是一段生成與清除歷程的濃度結果；ScvO₂ 反映特定回流血液的氧飽和度；Hb 與 CO 則讓我們開始估計氧輸送。它們可以彼此關聯，卻不能相互取代。",
+          "line_for_editor": 228
+        },
+        "b35ec15d7f5605a09b-1": {
+          "role": "counterfactual",
+          "reader_gain": "以 euDKA 保留非乳酸酸化反證；本段具體指向「本文第二個案例（euDKA 病人）lactate 正常、」",
+          "nonredundancy_reason": "與第一例高乳酸的結語相互補足；其對照段落為「本文第二個案例（euDKA 病人）lactate 正常、」",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文第二個案例（euDKA 病人）lactate 正常、卻有嚴重代謝性酸血症，進一步證明：辨認是哪一個過程造成血液酸化，不能只盯著 lactate，也不能只從一張 ABG 推定原因。",
+          "line_for_editor": 230
+        },
+        "dd01404fce83754d86-1": {
+          "role": "decision",
+          "reader_gain": "把血氣價值收斂為危險與證據；本段具體指向「到了心臟外科 ICU，血氣真正有價值的時刻，是我們知道眼」",
+          "nonredundancy_reason": "回到值班決策而非停留在公式；其對照段落為「到了心臟外科 ICU，血氣真正有價值的時刻，是我們知道眼」",
+          "verdict": "keep",
+          "excerpt_for_editor": "到了心臟外科 ICU，血氣真正有價值的時刻，是我們知道眼前哪個危險必須先處理、哪項新檢查能排除什麼、還有哪個關鍵生理環節尚未被測量。",
+          "line_for_editor": 232
+        },
+        "bd2d4bffe725115284-1": {
+          "role": "navigation",
+          "reader_gain": "銜接下一篇 SpO₂ 正常的氧輸送問題",
+          "nonredundancy_reason": "只負責閱讀導航不增添患者數值；其對照段落為「下一篇會從反方向繼續：SpO₂ 已經 100%，為什麼 」",
+          "verdict": "keep",
+          "excerpt_for_editor": "下一篇會從反方向繼續：SpO₂ 已經 100%，為什麼 CABG 術後仍可能有氧輸送危機？ 這時 Hb、CO、CaO₂、DO₂、VO₂ 就不再只是公式，而是直接影響我們如何解釋出血、血液稀釋與低心輸出的臨床模型。",
+          "line_for_editor": 234
+        },
+        "d610ecdf50810b4ae8-1": {
+          "role": "source_context",
+          "reader_gain": "列出原始來源圖像權利及先備入口；本段具體指向「本文兩份 CABG 病例來自不同患者，血氣、靜脈血氧與心」",
+          "nonredundancy_reason": "來源與授權定位不冒充醫學新主張；其對照段落為「本文兩份 CABG 病例來自不同患者，血氣、靜脈血氧與心」",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文兩份 CABG 病例來自不同患者，血氣、靜脈血氧與心輸出測值不可拼接。原始研究 Table 1／Figure 1、Pocket Medicine 第九版 Figure 4-1、IBCC 與 CPB 指引的適用範圍、權利與查核方法，均列於本篇來源與原圖查核。既有酸鹼完整判讀、氧合與有效換",
+          "line_for_editor": 241
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md": {
+      "content_blob": "7ec4cd51a1e7aef8006714fc90bd49da8c4f0e5f",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "Distinct execution context from original PR #186 writer; 2026-10-28 ChatGPT GPT-6 adversarial full-article (46 reading units) review, PR #186 original source screenshots UKKA 2026 Figure4 p75/Table22 p98, KDIGO2012 Table2 p19/Figure4 p25, AJKD abstract boundary; reviewer made two narrow safety/source edits before reviewing final exact blob 7ec4cd51a1e7aef8006714fc90bd49da8c4f0e5f; no human medical peer review, no reader outcome claim",
+      "core_reader_question": "一張晨間檢驗表同時有溶血的K6.3、持續上升的creatinine、可疑少尿及心衰竭鬱血時，如何平行分流立即危險、樣本可靠性與今天的治療及重驗？",
+      "new_understanding": "檢驗可能錯誤與病人可能危險彼此不排斥；同一時間的不同檢驗有獨立可靠性。無降鉀介入的新樣本較支持假性高鉀，但不消除真AKI；去充血和腎灌流需床邊分辨，不能將Cr升高直接等同缺水。",
+      "strongest_counterargument": "全篇以合成病例推理而沒有真實病人結果，AJKD原圖尚未全面目視、Pocket Medicine對題圖尚未完整比較；本稿沒有院內實際處方及human bedside reader驗證，因此只適合作為有來源界線的教學架構，不是臨床order set或醫師同儕審查。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 3,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "4429c55e305ca0d62f-1": {
+          "role": "orientation",
+          "reader_gain": "把交班只報四個異常數字的問題具體化，指出缺少症狀、採血與變化速度",
+          "nonredundancy_reason": "後段要拿這句無決策力的交班對照最後的30秒交班，保留初始比較基準",
+          "verdict": "keep",
+          "excerpt_for_editor": "病房交班時，住院醫師經常這樣開口：「今天 sodium 132、potassium 6.3、creatinine 1.68、hemoglobin 10.2。」這句話傳遞了四個數字，卻還沒有傳遞任何可供團隊使用的臨床判斷。我們不知道哪個是真危險、哪個可能採錯、哪個在惡化、哪個需要改藥，甚至不",
+          "line_for_editor": 3
+        },
+        "7dfd9e233dc611330f-1": {
+          "role": "definition",
+          "reader_gain": "定義檢驗是特定時間及方法的生理訊號，建立量測不等於病人整體的核心命題",
+          "nonredundancy_reason": "和開頭列數字不同，提供全篇的測量／病人／決策三層分離",
+          "verdict": "keep",
+          "excerpt_for_editor": "一張 lab sheet 不是器官疾病的總結，更不是數值越偏離正常值就越優先。它是「某個時間、某種檢體、某套測量方法」留下的訊號。我們要把訊號放回病人、治療與時間序列，最後形成今天要做什麼、現在不能等什麼、什麼還不能推論的工作決策。",
+          "line_for_editor": 5
+        },
+        "b3bb962d9e2a5708d4-1": {
+          "role": "source_context",
+          "reader_gain": "明確告知70歲心衰個案與數值是合成教材，而非來源論文患者",
+          "nonredundancy_reason": "避免後文人工時序與原研究證據被混淆，為計算與反例的推論邊界",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文的病例為明確標示的合成教學情境，全部數值為設計的示例，並非真實病人、病例報告或研究原始觀察。選擇合成病例，是因為本篇要把同一病人跨面板的相互矛盾、採檢錯誤與反事實變化放在可驗證的同一時間線；臨床門檻另按文末原始指引查核。",
+          "line_for_editor": 7
+        },
+        "0fb63c90b96e5cca40-1": {
+          "role": "orientation",
+          "reader_gain": "以逐項唸Na與K的錯誤閱讀順序引出三個並行時鐘",
+          "nonredundancy_reason": "不重複初始四數字交班，而是改變讀者閱讀整張報告的操作順序",
+          "verdict": "keep",
+          "excerpt_for_editor": "拿到異常報告時，你不應照「鈉、鉀、氯、二氧化碳、BUN、Cr、WBC、Hb」從上讀到下。臨床需要三個時鐘同時走：",
+          "line_for_editor": 11
+        },
+        "3b1e468d6b9e8f8ba0-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將分鐘急症、小時採檢與天的灌流趨勢並列，並說明不可序列等待",
+          "nonredundancy_reason": "這是將抽象時序轉成可以並行啟動的具體模型，圖1接下來驗證",
+          "verdict": "keep",
+          "excerpt_for_editor": "分鐘先判斷生命徵象、心律與急救風險；小時查採檢可信度與重驗；天將趨勢接回藥物、灌流、鬱血和重測決策。這三條路徑同時運作，不是先把第一個問題答完，才有資格處理第二個。下面先看病例與完整檢驗表，再用圖 1 對照同一張報告為何需要不同的行動。",
+          "line_for_editor": 13
+        },
+        "0c4867ee7f964c697f-1": {
+          "role": "decision",
+          "reader_gain": "將交班轉成危險、可信度、生理機轉與下一次醫囑四個可檢查問題",
+          "nonredundancy_reason": "它把三時鐘從框架轉成床邊工作輸出，供最後交班逐項驗收",
+          "verdict": "keep",
+          "excerpt_for_editor": "交班不是背一張數字表，而是先回覆四個問題：①現在有沒有不能等的危險？②今天的異常是真是假、變化有多快？③哪個生理過程正在變、哪些尚不能確認？④今天要下什麼指令、多久再看哪項證據？下面讓一位心衰竭病人的抽血報告逼我們實際作答。",
+          "line_for_editor": 15
+        },
+        "4be6bf001bee5007ed-1": {
+          "role": "case_evidence",
+          "reader_gain": "提供心衰、75公斤、負平衡、JVP與生命徵象及用藥背景",
+          "nonredundancy_reason": "此處建立可反駁單純缺水處置的鬱血前提，數值表本身不含臨床查體",
+          "verdict": "keep",
+          "excerpt_for_editor": "一位 70 歲、75 kg 男性因急性心衰竭鬱血住院，接受靜脈 loop diuretic。過去兩天呼吸困難逐漸改善，但頸靜脈仍偏高，仍有下肢水腫與少量濕囉音。昨夜到今早收支約負 1.4 L；這是輸入輸出紀錄，不等於已測得有效循環血量或腎灌流。早上血壓 118/74 mmHg、心跳 88/",
+          "line_for_editor": 19
+        },
+        "544c6fcb075e8bac3d-1": {
+          "role": "case_evidence",
+          "reader_gain": "加入溶血K6.3和可能漏記尿量，讓真危險與量測錯誤同時成立",
+          "nonredundancy_reason": "這是全篇兩個互相競爭的臨床假說起點，前一段只有背景",
+          "verdict": "keep",
+          "excerpt_for_editor": "清晨檢驗室通報 K 6.3 mmol/L，卻註明此管檢體有顯著 hemolysis（溶血）。護理記錄還顯示最近 8 小時尿量只有 240 mL，但尿壺可能漏記。病人目前看來並未崩潰。此刻你要立刻拿著 6.3 去開降鉀藥？把它當作偽高鉀不理？還是先說「腎功能不好，今天補水」？",
+          "line_for_editor": 21
+        },
+        "3fd7c21970a73de8e9-1": {
+          "role": "safety",
+          "reader_gain": "說清危險ECG或不穩定不得等重驗，卻要檢體確認及救治並行",
+          "nonredundancy_reason": "排除極端的全不治與全直接治，保護不穩定病人的急救優先權",
+          "verdict": "keep",
+          "excerpt_for_editor": "三個答案都有風險。臨床穩定與溶血使假性高鉀值得懷疑，但無法證明它是假的；腎功能惡化與少尿則使真正高鉀的前測風險同時上升。正確的第一步是立即親自評估病人、查看 12-lead ECG 並依嚴重度與機構流程安排監測，通知團隊與實驗室，迅速從適當部位重抽無溶血檢體；若有危險心電圖變化、循環不穩或",
+          "line_for_editor": 23
+        },
+        "476d23ec5d1e4a10d1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "對比06:00溶血與07:15乾淨重抽且說明無溶血不等於全數可信",
+          "nonredundancy_reason": "表格缺少這項檢體註腳便無法解釋為何K與Cr可信度不同",
+          "verdict": "keep",
+          "excerpt_for_editor": "10/28 06:00 檢體有顯著溶血註記；07:15 為不同採血點、無溶血的新檢體。所有數值都是合成教學資料；「無溶血」不是對其他每項分析物絕對準確的保證。各院 critical value 與單位依檢驗室規範為準。",
+          "line_for_editor": 41
+        },
+        "b1b9ffd73c74e6f984-1": {
+          "role": "case_evidence",
+          "reader_gain": "補足ECG觀察及重抽前未給insulin-glucose的實際合成時序",
+          "nonredundancy_reason": "使K下降推論不再偷偷假設治療資訊，也保留ECG不排除高鉀的例外",
+          "verdict": "keep",
+          "excerpt_for_editor": "把安全評估的結果放回時間線（本合成病例）：06:00 通報後，團隊立即評估病人並取得 12-lead ECG，未見新的高鉀危險心電圖變化；病人當時循環暫穩、原管有顯著溶血，因此安排迅速重抽及監測，在 07:15 結果前沒有給予 insulin-glucose。07:15 無溶血 K 4.9",
+          "line_for_editor": 43
+        },
+        "8bae2a82b1faee1630-1": {
+          "role": "orientation",
+          "reader_gain": "提醒先分三種證據角色而非立刻做十二種鑑別",
+          "nonredundancy_reason": "承接有多個面板與病例圖後的閱讀方向轉換，降低認知負擔",
+          "verdict": "keep",
+          "excerpt_for_editor": "先不要做十二個疾病的鑑別。這張時間序列其實先給了三個彼此不同的訊息。",
+          "line_for_editor": 64
+        },
+        "b810ee8a78b77f2688-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以未降鉀且原管溶血的K6.3→4.9支持干擾，同時不排除後續真高鉀",
+          "nonredundancy_reason": "必須說明體外紅血球釋鉀的中介，才不會誤以為重抽已治好病人",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一，K 6.3→4.9 的差異，發生在短時間重新採血、尚未降鉀治療的前提下；加上原樣本顯著溶血，較支持第一次結果遭檢體干擾。溶血是紅血球在體外破裂、細胞內鉀釋出到血清或血漿，而不是病人體內突然把大量鉀從細胞移出。這項重驗可以阻止我們用 insulin-glucose 治療一個不實的數字，",
+          "line_for_editor": 66
+        },
+        "5dc2d89ec6c636edf6-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "把Cr24小時增加0.52與KDIGO AKI對照，區分功能診斷與病因未明",
+          "nonredundancy_reason": "和K的樣本疑義形成關鍵對照，指出同一張報告各欄不是同步失真",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二，Cr 1.16→1.68 mg/dL 約 24 小時增加 0.52，重抽仍為 1.69。依 KDIGO 定義，血清 creatinine 在 48 小時內增加至少 0.3 mg/dL，即符合 AKI 的肌酐診斷條件；不能用「化驗也許有問題」來把同步存在的真實 AKI 一筆勾銷。由於 ",
+          "line_for_editor": 68
+        },
+        "c9ae7963679708864f-1": {
+          "role": "decision",
+          "reader_gain": "分別指出Hb/WBC/Mg的新增問題與各自下一步，而非機械輸血或抗生素",
+          "nonredundancy_reason": "讓讀者看到非首要紅字仍需可行的分流條件，不只是抽象提醒",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三，Hb 從 11.3 變成 10.2、WBC 緩升、Mg 下降，提供的是新的追問而不是自動的處方。Hb 下降可能牽涉血液稀釋、採血、出血、溶血或既存貧血變化；要問血便、黑便、生命徵象、輸液與體重、網狀紅血球或必要的出血證據。Hb 10.2 並非一般穩定成人依 AABB 2023 建議即",
+          "line_for_editor": 70
+        },
+        "dfdbc44419a357adbe-1": {
+          "role": "causal_bridge",
+          "reader_gain": "抽象化同一檢體一個分析物失真卻不代表全假，真異常亦非病因",
+          "nonredundancy_reason": "將前三個項目差異濃縮為可遷移的測量與病理分離模型",
+          "verdict": "keep",
+          "excerpt_for_editor": "這裡有第一個重要區分：一個樣本的某項分析物是假的，不代表同一張報告其他項目都假；某項異常是真的，也不代表你已知道造成它的病理機轉。",
+          "line_for_editor": 72
+        },
+        "48e0da610187803692-1": {
+          "role": "definition",
+          "reader_gain": "解釋SCr生成、排除與時間滯後，BUN額外受代謝及血容量影響",
+          "nonredundancy_reason": "為心衰AKI的錯誤補液推論補上先備量測生理",
+          "verdict": "keep",
+          "excerpt_for_editor": "Creatinine 是肌肉代謝產物，血液濃度取決於生成、腎清除、分布容積與時間。它升高可提示過濾功能下降，但不是腎臟切片，也不是即時血流計。BUN 更受蛋白質代謝、腸胃道出血、類固醇、肝臟功能與水分狀態影響。尿量則反映產尿和收集量，可能比 creatinine 更早出現警訊；但漏接尿、利",
+          "line_for_editor": 76
+        },
+        "fc4a1c099cc3cb2879-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "驗算75公斤8小時240mL平均0.4，強調均值不能證明逐小時連續6小時",
+          "nonredundancy_reason": "解決尿壺漏記及分時資訊缺口，避免單靠平均值錯誤確認尿量KDIGO條件",
+          "verdict": "keep",
+          "excerpt_for_editor": "本病例最近 8 小時若確實只有 240 mL，以 75 kg 計，8 小時平均約 0.4 mL/kg/h，提示少尿風險；但8 小時平均值不能單獨證實連續 6 小時的尿量門檻，必須核對分時尿量，才能判斷是否符合 KDIGO 尿量 AKI 條件（<0.5 mL/kg/h 持續至少 6 小時）。",
+          "line_for_editor": 78
+        },
+        "4c42c86ed6889e6057-1": {
+          "role": "counterfactual",
+          "reader_gain": "指出負平衡1.4L和Cr上升不能等同血管內缺水，擁血與低灌流可共存",
+          "nonredundancy_reason": "直接反駁病房常見停利尿加saline的單向反射，必須保留",
+          "verdict": "keep",
+          "excerpt_for_editor": "最容易犯錯的地方，是看見前一天利尿 1.4 L、今天 Cr 上升，就自動停止利尿、再補 500 mL saline。負平衡不等於 intravascular depletion；頸靜脈鬱血也不等於腎臟一定能承受持續無限量的利尿。心衰竭可能因靜脈鬱血使腎灌流壓梯度下降；也可能在降壓、過度去充",
+          "line_for_editor": 80
+        },
+        "6d5a690dc3d3cb77b8-1": {
+          "role": "decision",
+          "reader_gain": "列出病人查體與藥物、沉渣及必要阻塞評估，辨識繼續去充血或調整治療",
+          "nonredundancy_reason": "是把前段多機轉解釋轉成當日床邊收集何種證據的必要橋梁",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，接下來要回到床邊：比較症狀與體重、orthostatic symptoms、血壓與灌流、JVP、肺部鬱血、皮膚灌流、I/O 的可信度，回顧藥物／新顯影劑、尿液分析與沉渣，必要時評估阻塞或心臟血流動力學。這些證據有些支持「仍鬱血，可能需要更精確地繼續去充血」，有些支持「低灌流或腎毒性，",
+          "line_for_editor": 82
+        },
+        "f2724da5022e3bfb09-1": {
+          "role": "safety",
+          "reader_gain": "把AKI接到RAAS藥物暫停或調整與難治併發症才考慮RRT的決策界線",
+          "nonredundancy_reason": "後段的K案例需要這個安全框架，否則只有診斷而沒有藥物及器官支持",
+          "verdict": "keep",
+          "excerpt_for_editor": "AKI 也會立即改變藥物安全：重估 ACEi/ARB/MRA、NSAID、含鉀藥與經腎排除藥物的給藥風險，依實際循環、鉀、腎功能變化與適應症個別決定暫停或調整；不要把「AKI＝永久停用所有 RAAS 抑制劑」當作規則。若真有持續性嚴重高鉀、肺水腫難控、嚴重酸中毒或尿毒症臨床併發症，才會把腎",
+          "line_for_editor": 84
+        },
+        "8889e3b9f0b83e4c78-1": {
+          "role": "definition",
+          "reader_gain": "區分K濃度與總鉀、Na與有效滲透質及高血糖背景",
+          "nonredundancy_reason": "避免見Na132便補鹽、見K變化便推全身鉀總量，與腎功能段不同層級",
+          "verdict": "keep",
+          "excerpt_for_editor": "K 是血液濃度，同時受腎排除、細胞內外移動、酸鹼、胰島素與檢體溶血影響；高 K 不一定等於全身鉀總量過多，低 K 也不保證總量一定減少。Na 主要是水與有效滲透質平衡的訊號；不能看到 Na 132 就推論缺鹽，還需先問血糖、tonicity 與臨床容量訊號。此例 glucose 151 對",
+          "line_for_editor": 88
+        },
+        "24ce47a60f9524b7e4-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明serum total CO2和血氣計算HCO3並不等同，也不能推pH與代償",
+          "nonredundancy_reason": "為下一段選擇何時算AG與驗blood gas建立物理量前提",
+          "verdict": "keep",
+          "excerpt_for_editor": "Chemistry panel 上的 serum total CO₂ 以碳酸氫根為主要成分，近似卻不完全等同於由 ABG pH/PaCO₂ 計算的 bicarbonate。CO₂ 20 只能說可能存在代謝性酸鹼異常或相關檢體差異，不能單憑它宣告酸中毒的 pH、呼吸代償是否正確或有無混合障礙",
+          "line_for_editor": 90
+        },
+        "eee58c5381f2bf748a-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以同時點Na133-Cl100-totalCO2 20估未校正AG13並留下albumin未知",
+          "nonredundancy_reason": "是一個可驗算的案例計算，明確限制不能據AG13排除乳酸或混合酸鹼病因",
+          "verdict": "keep",
+          "excerpt_for_editor": "這張表其實可以再做一個有條件的交叉檢查：若暫把 07:15 的 serum total CO₂ 20 當成近似 HCO₃⁻，Na 133、Cl 100，則未校正 anion gap ≈ 133 − (100 + 20) = 13 mmol/L。這是由同一時點化學檢驗計算出的示例，不是另一項",
+          "line_for_editor": 92
+        },
+        "f919d91c2291d60150-1": {
+          "role": "safety",
+          "reader_gain": "將WBC/DC絕對數與急跌platelet的clumping、TMA、DIC危險改為平行核查",
+          "nonredundancy_reason": "這段補CBC解釋獨立性，避免排除採檢假象時延誤真正消耗或微血管病",
+          "verdict": "keep",
+          "excerpt_for_editor": "CBC 是循環血液中血球數量、Hb 和紅血球指標的快照。WBC 是總白血球量，不能代替 differential 裡各細胞的absolute count；嗜中性球百分比上升也可能只是其他族群下降。Platelet 驟降時，檢體假象與真實危險應平行評估：查看 analyzer flags／血",
+          "line_for_editor": 96
+        },
+        "617cac7faf9d6450a7-1": {
+          "role": "counterfactual",
+          "reader_gain": "以新黑便、低壓或血小板急跌展示相同CBC會導向不同急迫處置",
+          "nonredundancy_reason": "比前段CBC物理量更進一步，提供資料變更使行動轉向的證據",
+          "verdict": "keep",
+          "excerpt_for_editor": "到這裡，我們尚無出血證據，也沒有用 WBC 自動升級抗生素；但若出現黑便、血壓下降、胸痛或血小板急跌，新的病人訊號會使同一組實驗室數值導向不同的立即檢查與處置。這就是臨床判讀與逐項背正常值的差別。",
+          "line_for_editor": 98
+        },
+        "7a2a17013a7d0fc051-1": {
+          "role": "counterfactual",
+          "reader_gain": "新增K6.3合併新QRS寬與心搏過緩，要求calcium及轉移／排除分工",
+          "nonredundancy_reason": "展示ECG證據提高急迫度後，即使溶血也不可等第二管的真正改判",
+          "verdict": "keep",
+          "excerpt_for_editor": "反事實 A：原來 K 6.3 的病人突然心搏過緩，ECG 出現 QRS 變寬。 即使檢體標有溶血，也不能靠重新抽血拖延急救。要立即依院內成人高鉀急救流程、請資深醫師到場，優先處理心肌膜不穩定（IV calcium）並同時安排使鉀移入細胞及移除體內鉀、心電監測與治療後血糖／鉀重測。IV ca",
+          "line_for_editor": 102
+        },
+        "acc1bdd0ce8aa47218-1": {
+          "role": "counterfactual",
+          "reader_gain": "確認乾淨重抽K6.4及AKI仍需追蹤處理，區分moderate條件式療法",
+          "nonredundancy_reason": "反駁ECG陰性等於可不治療，避免中度高鉀全面給固定處方",
+          "verdict": "keep",
+          "excerpt_for_editor": "反事實 B：重抽後 K 仍是 6.4，且 Cr 上升、尿量可靠地持續下降，ECG 暫無顯著變化。 重抽排除了最顯眼的採檢干擾，卻沒有把病人變安全。按照 UKKA 2026，K 6.0–6.4 mmol/L 屬 moderate hyperkalaemia；當合併 AKI、臨床不穩或可能快速",
+          "line_for_editor": 104
+        },
+        "284cec435ba556bc89-1": {
+          "role": "source_context",
+          "reader_gain": "把UKKA2026 Figure4與Table22的保心、shift、remove與葡萄糖風險回到病例",
+          "nonredundancy_reason": "原圖是五環節和表格條件，這段解釋為何不能停在一次insulin後K下降",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個分岔也解釋 UKKA 高鉀指引的原始 Figure 4（印刷 p.75） 為何不把「打完 insulin，K 暫時降了」畫成終點。若確有需要治療的高鉀，處置包含依心電與臨床危險保護心臟、促使鉀轉入細胞、實際移除體內鉀、重新測量 K 與血糖，以及追查病因避免再升；五者的臨床適用條件不同，",
+          "line_for_editor": 106
+        },
+        "0c849f714ba69101ab-1": {
+          "role": "counterfactual",
+          "reader_gain": "改成下午休克、B-lines多及尿量更少後，優先轉向灌流／呼吸危險",
+          "nonredundancy_reason": "反例讓早上假性高鉀解決不會被當成整日病情安全結案",
+          "verdict": "keep",
+          "excerpt_for_editor": "反事實 C：K 重驗已正常，但病人下午血壓下降、呼吸更喘、肺部 B-lines 增多、尿量更少。 早晨的假性高鉀不再是首要問題；需要重新評估肺水腫與灌流、氧氣／呼吸支持、床邊心臟功能、感染或其他休克來源，並按狀況升級照護。不能因為早晨已排除假性高鉀就把一整天視作檢驗問題結案。此時連「繼續利",
+          "line_for_editor": 108
+        },
+        "efaf814b5561f40920-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "總結重新採樣只改變量測確定性，不能治好動態病人",
+          "nonredundancy_reason": "收束三個反事實共同結論，回到入門量測與臨床兩條因果線",
+          "verdict": "keep",
+          "excerpt_for_editor": "最深的一條界線是：重新抽血可以修正「測量」層級的不確定性，不能自動修復正在演變的「病人」；一套漂亮的鑑別診斷也不應阻止急症處置。",
+          "line_for_editor": 110
+        },
+        "123ab11e01c2b030a2-1": {
+          "role": "decision",
+          "reader_gain": "從可靠K4.9、AKI及Mg1.5重組今日監測、補充和上級回報的工作計畫",
+          "nonredundancy_reason": "將數學與病例分支轉換成床邊下一步，不讓理論停在疾病鑑別",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到原始模擬病例，07:15 無溶血 K 4.9、ECG 無新危險變化、生命徵象暫穩定，不應只因第一管 K 6.3 就直接給 insulin-glucose；但需維持對 AKI 與再度升鉀的合理監測。Cr 明確持續升高且疑似尿量下降，要實際確認尿量、用藥、血流動力與鬱血，安排針對 AKI ",
+          "line_for_editor": 114
+        },
+        "4753111db33f640c69-1": {
+          "role": "decision",
+          "reader_gain": "示範可供下一班核對的30秒交班，同時報真K、Cr和尿量不確定性",
+          "nonredundancy_reason": "這是全文核心教學產品，讓讀者比較開頭只是念紅字的交班方式",
+          "verdict": "keep",
+          "excerpt_for_editor": "> 「這位心衰竭病人早上通報 K 6.3，但原管有顯著溶血，已即時評估 ECG 與生命徵象，07:15 無溶血重抽是 4.9，目前沒有高鉀急救的直接依據。不過 Cr 從昨天 1.16 升到 1.69、符合 KDIGO AKI，近 8 小時尿量紀錄偏少但可能漏記。病人症狀改善、仍有鬱血體徵，",
+          "line_for_editor": 118
+        },
+        "3df282b409635b728c-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "要求交班每項敘述都有下一班可驗的改判條件",
+          "nonredundancy_reason": "用具體可驗證性的後設檢核收束口頭交班，而非重述異常",
+          "verdict": "keep",
+          "excerpt_for_editor": "交班裡的每句話都可被下一班驗證。與「昨天和今天相比有十個紅字」相比，這樣的交班明確區分了已確認的異常、仍待查的機轉、急迫性及下一個改判條件。",
+          "line_for_editor": 120
+        },
+        "fbcb725eb87b76c19b-1": {
+          "role": "decision",
+          "reader_gain": "把何時停止每日routine抽血加入對檢驗必要性的臨床決策",
+          "nonredundancy_reason": "和不穩定期間必須追K/Cr形成時間前提差異，防止過度抽血",
+          "verdict": "keep",
+          "excerpt_for_editor": "同樣重要的是，明天是否還要抽同樣一整套？ 對這名仍有 AKI、藥物與電解質風險的病人，追蹤有明確目的；但是當風險解除、生命徵象與檢驗持續穩定，天天抽 CBC/chemistry 不會自動帶來更好照護，還可能增加醫源性貧血。每個 repeat test 都應該能說出「想知道什麼、何時會改變處",
+          "line_for_editor": 122
+        },
+        "961d7543cf79a74397-1": {
+          "role": "counterfactual",
+          "reader_gain": "未溶血K6.1且ECG正常的轉移題測試急迫監測與複驗決策",
+          "nonredundancy_reason": "不同於主案例重抽變正常，檢驗可靠時依然需要正確處理真高鉀",
+          "verdict": "keep",
+          "excerpt_for_editor": "題 1（新情境）：穩定住院者 K 6.1，檢體沒有溶血註記，ECG 正常，Cr 當天快速上升。最佳下一步是「完全排除高鉀」還是「及時確認數值、依嚴重度監測、查藥因並安排治療策略」？ 解析：後者。ECG 正常不能排除高鉀的風險，且沒有溶血註記也不是樣本絕對可靠；兩條風險線必須並行，不能把原病",
+          "line_for_editor": 135
+        },
+        "8543f1c64e64d92108-1": {
+          "role": "counterfactual",
+          "reader_gain": "寒冷四肢與下降血壓改變剩餘鬱血下的利尿策略",
+          "nonredundancy_reason": "測試讀者是否理解仍水腫不等於低灌流可被忽略，與前題電解質不同",
+          "verdict": "keep",
+          "excerpt_for_editor": "題 2（時間改變）：心衰竭病人昨天 Cr 1.2、今天 1.6，腿腫改善，但現在四肢濕冷、血壓持續下降。若只憑「仍有水腫」而加大利尿是否正確？ 解析：不能。當下已出現灌流危險，需緊急重新分層與升級；殘餘水腫不能提供足以忽略休克／低心輸出的理由，也不能單一數值反向推導必須大量補液。",
+          "line_for_editor": 138
+        },
+        "bb163059ccaf17966f-1": {
+          "role": "counterfactual",
+          "reader_gain": "穩定數日且無決策目的時追問是否還要抽CBC/BMP",
+          "nonredundancy_reason": "將少抽血視為正向臨床選擇，測試非急症情境的知識遷移",
+          "verdict": "keep",
+          "excerpt_for_editor": "題 3（停止檢驗）：住院者症狀改善、輸液與相關藥物無近期變動，過去幾天血球及腎功能均穩定，明天的 CBC/chemistry 沒有預先說明會改變什麼決策。最合理的是加抽更多 biomarkers，還是重新討論檢查必要性？ 解析：後者。好的檢驗策略包含「選擇不抽」，不是用資料量取代臨床問題。",
+          "line_for_editor": 141
+        },
+        "5f4fb8bdcf9f35bbb2-1": {
+          "role": "source_context",
+          "reader_gain": "說明三題為自編並拒絕偽造官方國考題身分",
+          "nonredundancy_reason": "避免後續重複練習與正式考題被混淆，不是讀者進度管理",
+          "verdict": "keep",
+          "excerpt_for_editor": "這三題都是本站自編，不是考選部官方國考題；尚未核對到能直接對應整張 morning lab sheet 決策鏈的官方題目，不虛列年度、梯次、題號或標準答案。各個專題後續仍須接回可核對的國考原卷。",
+          "line_for_editor": 144
+        },
+        "c2edd2b8d90228528d-1": {
+          "role": "source_context",
+          "reader_gain": "AJKD BMP檢驗異常綜述提供干擾分類，並排除合成病例來源誤認",
+          "nonredundancy_reason": "必須保留來源及證據限度以免把K6.3的人工數值冒充研究觀察",
+          "verdict": "keep",
+          "excerpt_for_editor": "檢體可信度：Takieddine & El-Khoury, Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025, AJKD 2025;85:104–114。文章討論 hemolysis、採檢與分析方",
+          "line_for_editor": 148
+        },
+        "9c5a5a4a86d0602908-1": {
+          "role": "source_context",
+          "reader_gain": "KDIGO原Table2及Figure4給AKI門檻與管理優先而不代替病因評估",
+          "nonredundancy_reason": "提供源圖直接定位，支撐前述0.52和尿量判讀而不重製原圖",
+          "verdict": "keep",
+          "excerpt_for_editor": "AKI 門檻：對照 KDIGO 2012 Table 2（印刷 p.19；PDF p.22） 與 Figure 4（印刷 p.25；PDF p.28）。KDIGO 2012 AKI 定義，包括 serum Cr ≥0.3 mg/dL/48 h、≥1.5 倍基線/7 天，或 urine ou",
+          "line_for_editor": 149
+        },
+        "0bc99e9178d1323b60-1": {
+          "role": "source_context",
+          "reader_gain": "KDIGO CKD/eGFR解釋不同於AKI下的即時GFR",
+          "nonredundancy_reason": "補足讀者對自動eGFR可能失真的來源回查",
+          "verdict": "keep",
+          "excerpt_for_editor": "eGFR 邊界：KDIGO 2024 CKD guideline 與相關臨床解讀指出非穩態 creatinine、肌肉量及藥物可使 eGFR 估計失準；不可拿 AKI 的即時 eGFR 當穩定腎功能的精確量測。KDIGO 2024 CKD；臨床解讀。",
+          "line_for_editor": 150
+        },
+        "c9ae6f5bdedd737430-1": {
+          "role": "source_context",
+          "reader_gain": "UKKA2026官方版本讓危險高鉀的ECG分流和葡萄糖監測可回查",
+          "nonredundancy_reason": "本行屬急症處置源邊界，不由AJKD或KDIGO單獨支持",
+          "verdict": "keep",
+          "excerpt_for_editor": "危險高鉀：UK Kidney Association Treatment of Acute Hyperkalaemia in Adults 指引（官網顯示 2026-07 更新版供下載），以臨床嚴重度、ECG、重驗、即時治療與追蹤分流；具體用藥劑量須按實際版本及本院急救流程核對，不可把本文",
+          "line_for_editor": 151
+        },
+        "81572eaa3a28709210-1": {
+          "role": "source_context",
+          "reader_gain": "AABB穩定成人與AMI族群門檻不同，支持Hb10.2不能單獨下輸血醫囑",
+          "nonredundancy_reason": "提供獨立的血品適應性依據，不與樣本干擾研究混用",
+          "verdict": "keep",
+          "excerpt_for_editor": "輸血邊界：Carson et al, Red Blood Cell Transfusion: 2023 AABB International Guidelines, JAMA 2023。一般血流動力穩定成人多採限制性策略，通常 Hb <7 g/dL 時才考慮輸血，但疾病亞群與臨床脈絡不同；",
+          "line_for_editor": 152
+        },
+        "c5af34b1512cb99081-1": {
+          "role": "source_context",
+          "reader_gain": "Choosing Wisely僅在臨床穩定時反對無目的例行重驗",
+          "nonredundancy_reason": "將避免過度抽血的建議限定族群，不誤導正在AKI病人的監測",
+          "verdict": "keep",
+          "excerpt_for_editor": "檢驗選擇：Society of Hospital Medicine / Choosing Wisely 主張臨床與檢驗穩定時避免無目的重複 CBC/chemistry，屬對過度抽血的 stewardship 提醒，不適用正在急變或有明確藥物監測需求的病人。原始共識；Choosing Wis",
+          "line_for_editor": 153
+        },
+        "96c5a44920e4857ee9-1": {
+          "role": "navigation",
+          "reader_gain": "指出後續需要採血假象與AKI尿沉渣專文，避免一篇重複全部學科",
+          "nonredundancy_reason": "保留主文教學邊界與適當延伸方向，不含內部排程或PR狀態",
+          "verdict": "keep",
+          "excerpt_for_editor": "下一篇要補上的缺口：本篇證明「檢體可不可靠」與「病人是否危險」必須分開；但還沒教會你看到溶血、EDTA contamination、從輸液管採血、platelet clumping 時如何設計最小且不延誤救治的確認流程。那是《假性異常與採檢干擾》的獨立主題。腎功能機轉與尿沉渣另交給 AKI",
+          "line_for_editor": 155
+        }
+      }
+    },
     "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md": {
       "content_blob": "b4643c4d5fbcb549c34918221df54e922cd39689",
       "reviewer_context": "independent_ai_pass",

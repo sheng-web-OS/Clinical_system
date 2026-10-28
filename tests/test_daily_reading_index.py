@@ -1,5 +1,5 @@
 """Regressions for the overflowing daily list and articles lost from discovery."""
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, date, timedelta
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -77,16 +77,8 @@ class DailyReadingIndex(unittest.TestCase):
         self.assertFalse(is_current_lesson(exam_collection))
 
     def test_no_updates_does_not_fall_back_to_yesterdays_articles(self):
-        # Test a truly empty date; a real 2026-10-28 article must appear today.
-        # Choose one day beyond the latest content date to preserve the
-        # no-yesterday-fallback invariant as the catalog continues to grow.
-        last = max(
-            p.get("updated", p["date"])
-            for p in self.pages if is_current_lesson(p)
-        )
-        empty_day = (datetime.strptime(last, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
-        self.assertFalse(any(is_current_lesson(p) and p.get("updated", p["date"]) == empty_day
-                             for p in self.pages))
+        latest = max(date.fromisoformat(p.get("updated", p["date"])) for p in self.pages if p.get("date"))
+        empty_day = (latest + timedelta(days=1)).isoformat()
         markup = render_today_updates(self.pages, empty_day)
         self.assertNotIn('class="lesson-card"', markup)
         self.assertIn('<p data-today-empty>今日尚無文章更新。</p>', markup)
