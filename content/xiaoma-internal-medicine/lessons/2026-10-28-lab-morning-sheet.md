@@ -108,7 +108,7 @@
 
 [密西根大學住院心衰竭利尿指引 Q18](https://www.ncbi.nlm.nih.gov/books/NBK589894/) 也明確解釋：持續有鬱血時，適度 SCr 上升不一定需要自動停止利尿；但顯著低血壓、血管內容量耗竭與其他 AKI 病因仍要辨認。這是**有臨床評估條件的敘事與建議**，不是看到一個 Cr 便由 AI 遠端判定「繼續打利尿劑」或「立即補 saline」。
 
-AKI 的診斷本身另有時間維度：請核對 [KDIGO 2012 原始 Table 2（AKI 分期，PDF p.22）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22) 的定義，並閱讀 [Figure 4（Stage-based management，PDF p.28）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=28) 如何將風險分層與腎毒性藥物、容量／灌流、Cr／尿量監測連起來；這張圖不是固定補液或透析處方。KDIGO 要求核對 **48 小時內 SCr ≥0.3 mg/dL 增加、7 天內 ≥1.5 倍基線，或連續至少 6 小時尿量 <0.5 mL/kg/h**。光有「尿量 8 小時總計」不能保證每一個 6 小時區間都符合門檻；光有一張「Cr 1.69」不能推得出 CKD、AKI stage 或確切病因。更不能把用於穩態的 eGFR 當成急性變化期間即時的腎臟清除能力。
+AKI 的診斷本身另有時間維度：請核對 [KDIGO 2012 原始 Table 2（AKI 分期，PDF p.22）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22) 的定義，並閱讀 [Figure 4（Stage-based management，PDF p.28）](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=28) 如何將風險分層與腎毒性藥物、容量／灌流、Cr／尿量監測連起來；這張圖不是固定補液或透析處方。KDIGO 要求核對 **48 小時內 SCr ≥0.3 mg/dL 增加、7 天內 ≥1.5 倍基線，或連續至少 6 小時尿量 <0.5 mL/kg/h**。光有「尿量 8 小時總計」不能保證每一個 6 小時區間都符合門檻；光有一筆孤立的 Cr 數值，沒有基線、變化時間與尿量，就不能推得出 CKD、AKI stage 或確切病因。更不能把用於穩態的 eGFR 當成急性變化期間即時的腎臟清除能力。
 
 如果臨床在看完整的 Lab sheet，要分辨的是：
 
