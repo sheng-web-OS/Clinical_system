@@ -20,6 +20,14 @@
 - 官方 URL 的完整 Q/S/M 連結已寫入私人草稿的來源註腳，便於下一 reviewer 重查；官方題目文字/答案身份 gate = **VERIFIED**，但選項的 **臨床推理 / current guideline applicability = AUTHOR_CHECK_ONLY，獨立醫學／教學審查仍 HOLD**。
 - 下一個未通過來源項：**BTS 2023 原始 pleural infection decision tree 的圖像/腳註**，以及必要的臨床分流逐條反例審查。不得把「已核官方標準答案」推論為「整篇可發布」。
 
+## BTS 官方流程圖已核證（2026-10-28；覆蓋 09:00 原圖 403 阻擋）
+
+- **BTS 2023 官方原始 PDF 已從 BTS 站直接取得並目視**：[full supplement](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/)，PDF **zero-index p.44**、期刊印刷頁 **37**，原圖標題 *Suspected pleural infection, non-purulent fluid – initial decision tree*；已同頁核對分流示意圖、下方表格及 ***/† footnotes**。此前 BMJ 限制導致的 403 不再是此原圖的有效 source blocker。
+- 流程本體：非膿性疑似感染 → 立即胸水 pH；pH ≤7.20 高風險；7.21–7.39 中間風險加查 LDH；pH ≥7.40 極低風險、通常不立即 ICD。中間分支原圖以 **LDH <900 / ≥900 IU/L** 畫出；同份指引敘述及表格寫 **>900 IU/L** 作考慮 ICD 的條件。稿件已避免誤稱剛好 900 IU/L 必然有單一正解。
+- *****：引流前需由 ultrasound 確認可安全接近的足夠積液。**†**：未立即 ICD 應重評 ongoing temperature、persisting inflammatory markers；**pH >7.4 且有 septations 也應考慮引流**。此註腳不能被表格中的「低風險」摘要遮蔽。
+- 本次只目視核讀原圖並原創文字重述；BTS PDF/footer 明示著作權，**不得未經授權直接嵌入圖像**。**BTS ORIGINAL FLOWCHART = VERIFIED；RIGHTS TO REPRODUCE = NOT_VERIFIED；CLINICAL/EDITORIAL INDEPENDENT QA = HOLD**。
+- **下一未通過的主要 gate**：由與寫作者不同的臨床／教學審查脈絡驗證整篇病例、BTS 反事實（尤其 pH ≥7.4 + septations；pH 7.3 + LDH 邊界；無安全引流窗；RA/惡性低 pH）、原圖/題目因果敘事、合法公開方式、同 HEAD semantic receipt/CI/mobile preview；仍保持 PR #188 Draft/HOLD。
+
 ## 事實基線
 - 核對當次起點 main SHA：`c6225ec59127b623b0801ffc2868dd5268715473`；本次僅在獨立 draft 分支寫入新稿，不改 main、manifest 或公開目錄。
 - 依 `archive/xiaoma-internal-medicine/current-plan.md` 第 10–12 節選擇 A 級胸水。main `site/pages.json` 106 項中**沒有同等深度的獨立胸水主文**；肺炎主文與 113（二）醫學（三）Q49 只觸及感染性胸水。沒有將舊文改名重發。
@@ -59,11 +67,11 @@
 ## 獨立 QA／工程／發布決策
 - 自我臨床檢查：Light 分類≠病因；pH ≠ 動脈 pH；中間風險 pH 不可忽略 LDH/glucose/septation；膿液先引流；低 pH 需鑑別 RA/malignancy；胸管失敗需重評；原書過時抽液門檻不照抄。已完成作者側核查，**不是獨立醫師審查**。
 - 因果與敘事：病例從兩人對照→抽液價值→超音波→Light→pseudoexudate→感染性積液引流→引流失敗→反事實；避免把作者 metadata 寫入正文。尚未完成獨立 EPQC 七軸盲審。
-- Figure gate：**HOLD**（Pocket p.94–96 本輪已核讀，但 BTS decision tree 原像素仍未核對，原圖公開重製權未確認）；考題身分/答案：**VERIFIED**（官方 Q/S/M 已核，詳頁首；逐選項醫學推論仍待獨立 QA）；獨立醫學審稿：**NOT_VERIFIED**；手機/深色模式：**NOT_VERIFIED**；CI：提交 PR 後另讀 workflow，未驗證不得填 PASS；production：**NOT_PUBLISHED**。
+- Figure/source verification：**Pocket p.94–96 與 BTS decision tree 原圖皆 VERIFIED**；公開重製授權仍 NOT_VERIFIED，任何正式文章的新圖／表需另外做 figure/semantic release gate；考題身分/答案：**VERIFIED**（官方 Q/S/M 已核，詳頁首；逐選項醫學推論仍待獨立 QA）；獨立醫學審稿：**NOT_VERIFIED**；手機/深色模式：**NOT_VERIFIED**；CI：提交 PR 後另讀 workflow，未驗證不得填 PASS；production：**NOT_PUBLISHED**。
 - 不更新 `site/pages.json` 或 `audit/figure-gate.json`，不冒用 `represented`。權利不明的原書圖不公開。
 
 ## 下一輪最小可行修復
-1. **Pocket p.94–96 圖像核讀已在本輪完成**（詳頁首），不再重試失效工具。下一個來源缺口是 BTS 2023 原始 flowchart/footer 及正式國考原卷/更正，不可拿 Pocket 的已讀取成功冒充其他來源已通過。
+1. **Pocket p.94–96、BTS 2023 原始 flowchart/footer、三道國考官方 Q/S/M 均已完成來源核讀**（見頁首三節）；停止重試已成功來源。聚焦獨立醫學/教學與法律權利審查，來源通過不自動解鎖發行。
 2. **官方 112（一）Q45、114（一）Q48、115（二）Q49 原卷／答案／更正表已核**（詳頁首）；下一輪只需對已核選項作獨立現行臨床論證審核，113（二）Q49 保持跨頁引用、不新增重複題身分。
 3. 獨立臨床/教學審稿，特別反測 pH 7.3 + LDH 高、pH ≥7.4 + septations、心衰 pseudoexudate、無安全窗口與抗凝/出血風險；視審查結果修正文稿。
 4. 原圖與真題過關後才移入 `content/xiaoma-internal-medicine/lessons/`、建立公開來源頁與 figure gate、更新 manifest，完整 CI + Cloudflare production SHA + HTTPS body + 360/375/390px 驗收。
