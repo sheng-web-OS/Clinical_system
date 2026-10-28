@@ -88,13 +88,23 @@ def main():
                     if not any(all(cue in table for cue in required_panel_cues)
                                for table in numeric_tables):
                         raise AssertionError("Missing published AML Table 1 method-and-treatment chronology")
-                    arms = figure.locator("div[style*='border:1px']")
-                    if arms.count() != 3:
-                        raise AssertionError("Expected three distinct published evidence-source units")
+                    samples = figure.locator('[data-evidence-node="case-sample"]')
+                    if samples.count() != 4:
+                        raise AssertionError("Missing four observed AML sample nodes")
+                    cohorts = figure.locator('[data-evidence-node="cohort-subgroup"]')
+                    if cohorts.count() != 4:
+                        raise AssertionError("Missing 1576/864 to 597/267 cohort denominator branches")
+                    lowrisk = figure.locator('[data-evidence-node="lowrisk-cohort"]')
+                    if lowrisk.count() != 1:
+                        raise AssertionError("Low-risk n=66 sample must remain a separate study")
                     figure_text = figure.inner_text()
                     if not all(cue in figure_text for cue in
-                               ("AML 病例", "6.7", "7.8", "n=66", "3.9", "n=2,440", "864", "並非同一位病人")):
-                        raise AssertionError("Evidence figure conflates case report and study denominators")
+                               ("AML 病例", "12:00", "20:03", "20:48", "23:37",
+                                "K 6.7", "K 7.8", "降鉀治療約 30 分鐘",
+                                "n=66", "n=2,440", "1,576", "864", "597", "267",
+                                "並非同一位病人")):
+                        raise AssertionError("Published samples or study denominators missing")
+
                     observed = page.evaluate("""() => ({
                       viewport: document.documentElement.clientWidth,
                       pageWidth: document.documentElement.scrollWidth,
