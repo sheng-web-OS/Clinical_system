@@ -44,6 +44,14 @@
 
 ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 等 β-lactam 抗生素失效的酵素機轉。關鍵不是背「ESBL＝抗所有藥」，而是辨識：**ceftriaxone 這類原本常用於 UTI 的抗生素，在這位病人的先驗抗藥風險下，可能成為沒有足夠活性的第一劑。** 抗生素的譜必須對上病原及感染位置，不是藥名聽起來更廣就必然安全。
 
+### 從酵素、抗生素靶點到臨床選藥：為什麼「ESBL」不是完整 AST？
+
+先建立最基本的藥物作用路徑：**β-lactam 要接近並結合細菌的 penicillin-binding proteins（PBP），干擾細胞壁交聯，才有機會發揮殺菌作用。** 某些革蘭陰性菌的 β-lactamase 可先在周質空間水解 β-lactam ring，使藥物尚未有效到達 PBP 就失去活性。ESBL 是此類酵素中能擴大水解譜的一群，典型涵蓋 cefotaxime／ceftriaxone 等延伸型 cephalosporins 與 aztreonam；**傳統 ESBL 酵素本身一般不會水解 carbapenem，故菌株往往仍對 carbapenem 敏感。** 但「往往」不是「必然」：同一細菌可同時有其他 β-lactamases、porin 變化、efflux 等不同抗藥性機轉，導致其他抗生素失效，甚至減弱 carbapenem 活性。
+
+同理，**TMP-SMX 或 fluoroquinolone 的作用靶點不是 β-lactam ring**，所以 ESBL 酵素本身不能直接水解它們；但攜帶 ESBL 的菌株常伴有其他抗藥基因。因此既不能看見 ESBL 就宣稱 TMP-SMX 必定 R，也不能反過來宣稱必定 S。這也解釋 **T0 先依既往菌和重症風險選能合理涵蓋的藥，T48 再以當次 AST 改變治療**，而不是把「ESBL」當成一張完整且永遠有效的 susceptibility panel。([IDSA 2026 AMR §1 開頭：酵素、co-resistance 與 susceptibility boundary](https://www.idsociety.org/practice-guideline/amr-guidance/))
+
+**一個常被省略的機轉：為什麼 pip-tazo 體外測得 S，也不等於此例第一劑安全？** Tazobactam 透過抑制部分 β-lactamases 保護 piperacillin，但效果會受 ESBL 表現量、其他酵素（例如 OXA-1）、菌量（inoculum）、β-lactamase inhibitor 暴露與 MIC 測試重現性影響。在 ESBL 菌血症的 MERINO 隨機試驗中，piperacillin–tazobactam 組的 **30 天存活約 88%（164/187）**，meropenem 組 **96%（184/191）**；事後限制為參考方法驗證的 pip-tazo MIC 範圍，差距縮小且不再達統計顯著，但方向並未反轉。**這項結果直接支持對侵襲性 ESBL 菌血症的謹慎，不能機械推成「每一位輕症、無菌血症的 ESBL UTI 都必須使用 carbapenem」。** 2026 IDSA 對這兩群情況給出不同定位，正是臨床決策要區分的內容。([IDSA 2026 AMR §1.3–1.4：MERINO trial and susceptibility limitations](https://www.idsociety.org/practice-guideline/amr-guidance/))
+
 ### T0 的競爭方案：為什麼此例偏向 meropenem，而不是其他常見選項？
 
 | 策略 | 在這位 68M 的意義 | 必須守住的界線 |
@@ -109,6 +117,20 @@ ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 
 **B｜舊菌株其實不是 ESBL *E. coli*，而是 carbapenem-resistant *Klebsiella*。** 先前路線即失去可靠性；meropenem 不是萬能。要立刻讀完整歷史 AST／MIC，依感染風險、本院 formularies、2026 IDSA CRE 機轉分類與專家意見改選，不能硬把 ESBL 治療清單移植過去。
 
 **C｜已證實本次為 ESBL cUTI，但不危重、無菌血症、藥敏支持。** 不再將所有病人的利益風險等同於本例；2026 IDSA AMR 對 piperacillin–tazobactam 才有特定 alternative 地位，且若有適當 susceptible oral agents，應評估更窄更方便方案。**起始 empiric、已知 pathogen 的 definitive treatment 與可以換 PO，是三次不同時點的決策。**
+
+## 真正的二階國考對題｜111 年第二次・醫學（三）第 60 題
+
+**考點不是「有 ESBL 就開哪一支」；而是用機轉劃出抗菌藥**不能**與**仍可能**有效的邊界。**
+
+> 考選部 111 年第二次醫師第二階段考試，醫學（三）第 60 題（代號 1302）：ESBL 能水解哪些 β-lactam 抗生素，導致它們失效？選項是 ① cefotaxime、② aztreonam、③ ertapenem；A 僅①②、B 僅①③、C 僅②③、D ①②③。**官方標準答案 A**，核對原始更正清冊後，本題**沒有更正**。
+
+**逐選項解析：** ① **Cefotaxime 正確**——它是第三代 cephalosporin，屬典型 ESBL 可水解的延伸型 β-lactam，和本例為何不直接以 ceftriaxone 當可靠經驗性第一劑相連。② **Aztreonam 正確**——雖屬 monobactam，但「單環」不代表可逃過 ESBL 水解；不能把對某些其他 β-lactamases 的穩定性外推至 ESBL。③ **Ertapenem 錯誤**——它是 carbapenem，**典型 ESBL 酵素本身**通常不能有效水解 carbapenem；不過若同時具其他抗藥機轉，真實分離株仍可能對 ertapenem 不敏感，所以「③ 錯」不是臨床上保證 ertapenem-S。
+
+**選項辨識：** A（①②）正確；B（①③）錯在把 carbapenem 納入典型 ESBL 水解譜、卻漏掉 aztreonam；C（②③）錯在漏掉 cefotaxime、且多選 ertapenem；D（①②③）錯在把 ESBL 與 carbapenemase 混為一談。
+
+這題再向臨床推一步：**正確知道「ESBL 不直接水解 ertapenem」，仍不足以在本案例選 ertapenem 當第一劑。** 本例不穩定、疑似菌血症、未知 Pseudomonas 風險與 albumin/藥動狀態，和酵素能不能水解是**不同層級的問題**；這就是國考辨識題到 PGY 用藥決策之間的中介。
+
+考選部原始來源：[111-2 醫學（三）正式試題 PDF（第 60 題，紙本第 13 頁／PDF index 12–13）](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=Q)｜[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=S)｜[答案更正清冊](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=111080&q=1&s=11&t=M)。已實際目視原 PDF 的題幹與答案行，不依賴有亂碼的機器匯入題庫。
 
 ## 值班交班，用一段話而不是只交「我已開 meropenem」
 
