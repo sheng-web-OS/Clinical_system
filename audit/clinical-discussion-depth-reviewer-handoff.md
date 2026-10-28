@@ -1,5 +1,7 @@
 # Blind Clinical Discussion Depth Review｜Reviewer-only handoff（未執行）
 
+> **COORDINATOR / EVALUATOR ONLY — DO NOT PROVIDE THIS DOCUMENT TO THE REVIEWER.** This file discloses the expected failing case and names author-side revision artifacts. Using it as the actual reviewer prompt contaminates the blind test. Send only the [neutral reviewer packet](clinical-discussion-neutral-reviewer-packet.md), the frozen transcript, and permissible primary evidence. The new [unhinted calibration preregistration](clinical-discussion-depth-unhinted-calibration.md) includes matched valid-claim preservation controls, clean-case requirement and A/B/C comparison of native review versus a minimal reviewer-perspective switch versus full SOP. **No independent run has been performed.**
+
 **Purpose**：驗證 Clinical Discussion Depth SOP 能否在不洩漏作者預設答案的前提，將 2026-09 九頁神外 BA aneurysm Discussion 判為不夠深入，並挑戰後續的單題 EVD 深修稿。這是供**另外一個真正分離的審稿脈絡**使用的工作說明；**建立此檔本身不是審查完成**。
 
 ## Review conditions / contamination firewall
