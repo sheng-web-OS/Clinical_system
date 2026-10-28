@@ -1002,6 +1002,48 @@
           "verification_scope": "Published figure identity, caption and source URL were located; no reviewer in this gate has documented a pixel-level inspection of arrows, branches, labels or footnotes. The article links to the publisher and does not reproduce figure pixels."
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/urosepsis-esbl-first-dose-sources.md",
+      "items": [
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 1, Figure 1.1, original 1-page PDF four-step empiric-therapy flowchart",
+          "source_token": "Figure 1.1",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf",
+          "teaching_role": "原流程先分 shock/sepsis/no-sepsis，再考量歷史抗藥性、患者限制與適用的當院 antibiogram。這張圖讓讀者理解舊 ESBL 不會取代重症程度與病人限制。",
+          "scope_limit": "圖中 90/80% 為有相似族群在地資料時的模型性參考閾值，不能當作本病例的當院實際敏感率或已完成 Sepsis-3 shock 診斷。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        },
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 1, Table 1.1, original 1-page PDF empirical antimicrobial candidate classes and footnotes",
+          "source_token": "Table 1.1",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf",
+          "teaching_role": "此表的 septic/no-sepsis、IV/PO 候選分類必須再以四步法與 prior ESBL 具體收斂，避免把 ceftriaxone 或 pip-tazo 一律當上泌尿道感染固定第一劑。",
+          "scope_limit": "表列候選不是單一病人的處方，也不確定當次 susceptibility、Pseudomonas 風險或實際體重及急性腎清除率。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        },
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 2, Figure 1.2, original 1-page PDF IV-to-oral clinical-response flowchart and caption",
+          "source_token": "Figure 1.2",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf",
+          "teaching_role": "原圖將 clinically improving 與 not clinically improving 分開，提醒先確認臨床好轉和未處理感染源，再由當次 AST、吸收與濃度決定口服轉換。",
+          "scope_limit": "流程中的好轉不是所有高風險病人都立刻可停 IV，仍有阻塞、灌流不穩、菌血症用藥暴露和腎功能限制。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        },
+        {
+          "locator": "IDSA 2025 cUTI Clinical Question 3, Figure 1.3, original 1-page PDF duration and IV-to-oral clinical response flowchart with abbreviation note",
+          "source_token": "Figure 1.3",
+          "mode": "source_link",
+          "url": "https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf",
+          "teaching_role": "原圖示臨床改善才評估口服和七天總療程；未改善先確認病原與用藥不合、未解除的 source 和是否診斷錯誤，從病例 T48 連到 T72。",
+          "scope_limit": "七天是適當有反應群的總體指引路徑而非所有感染阻塞、腎功能受損、休克、膿瘍與急性攝護腺炎病人的必然處方。",
+          "why_link_instead": "原始表圖已逐頁核對；直接連結出版者原始 PDF，可讓讀者查看完整註腳且避免未授權重製原像素，正文以病例解釋其不同適用條件。"
+        }
+      ]
     }
   }
 }
