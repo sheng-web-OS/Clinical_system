@@ -31,7 +31,7 @@ class LabMorningReaderInference(unittest.TestCase):
         self.assertIsNotNone(figure)
         t=figure.group()
         for cue in ("AML 病例","6.7","7.8","n=66","n=2,440","864",
-                    "並非同一位病人"):
+                    "第三項獨立研究"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,t)
         self.assertNotIn("09:00",t)
