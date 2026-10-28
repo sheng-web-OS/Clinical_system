@@ -4308,308 +4308,18 @@
       }
     },
     "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md": {
-      "content_blob": "7cfddc60e35292456485f850ce9edcaa47ec5713",
+      "content_blob": "c597090b3dee895df014197e10a546cfb803287d",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/193#issuecomment-6462146774 (distinct read-only reviewer execution hourly_2026-10-28_14:13TST_independent_lab193; 33 units, original sources, adversarial controls; not human clinician signoff)",
-      "core_reader_question": "When a morning lab result changes sharply, how do specimen handling, therapy timing, study selection and organ physiology separately change what can safely be inferred?",
-      "new_understanding": "Cao's actual A-D transport and therapy chronology, Salek's serum/plasma/arterial-whole-blood differences, Wilson's selected 66 and Stephan's nested 2440 denominator show why neither repeated potassium nor one creatinine value alone dictates diagnosis or treatment.",
-      "strongest_counterargument": "The title suggests a broad Lab sheet but the detailed case centers on potassium, and the ADHF/Cr segment may feel like a topic shift. The explicit transition at L93/L97 links specimen validity to the distinct question of cause, keeps AKI/diuretic claims conditional, and does not fabricate a heart-failure history for the AML patient. Salek original PDF Table 1/2 text checked; independent PDF visual screenshot was unavailable, and separate figure/pixel/rights gates remain mandatory.",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/204#issuecomment-6472815183 ; distinct 2026-10-28 23:09 TST independent AI paragraph reviewer (not author, not clinician/pharmacist signoff)",
+      "core_reader_question": "面對AML患者K3.0→6.7→7.8→3.6，如何在不延誤急症處置下區分真高鉀、離體裂解與治療/送檢混雜？",
+      "new_understanding": "A/B的基質與儀器不同、B/C同走氣送管、D改步行又已治療30分鐘；四次血鉀無法作單因素因果估計，需同時處理危險與設計能區分干擾的新採檢。",
+      "strongest_counterargument": "本篇標題稱Lab sheet但實證主要集中高鉀；若承諾整張BMP/CBC決策會超界。現以第一篇測量可信度為唯一主題，Hb/Cr僅作測量邊界而不拼入他例。",
       "epqc_scores": {
         "A": 4,
         "B": 4,
         "C": 4,
         "D": 4,
-        "E": 3,
-        "F": 4,
-        "G": 4
-      },
-      "hard_stops": {
-        "unsafe_claim": false,
-        "fabricated_evidence": false,
-        "broken_causal_bridge": false,
-        "internal_metadata": false,
-        "unresolved_source_conflict": false
-      },
-      "paragraphs": {
-        "3fe8eabe07bae3d303-1": {
-          "role": "orientation",
-          "reader_gain": "把檢驗數字、體內鉀濃度與即刻生命危險分成三個不同問題。",
-          "nonredundancy_reason": "沒有此區分，讀者容易把疑似偽高鉀誤認為可以忽略急救風險。",
-          "verdict": "keep",
-          "excerpt_for_editor": "早晨的報告上出現 K 7.8 mEq/L，第一個問題未必是「要配哪一項降鉀藥」，而是：這個值是病人體內的濃度，還是採血與檢體處理後才出現的數字？但檢體可能有問題，也不等於病人沒有立即危險。理解一張 Lab sheet，需要把量測的來源、病人當下的危險，以及能支持什麼臨床推論分開。",
-          "line_for_editor": 3
-        },
-        "4a532f9c0d063839f4-1": {
-          "role": "orientation",
-          "reader_gain": "預告採檢條件和治療前後時間兩種能改變檢驗值的原因。",
-          "nonredundancy_reason": "這是從單一高鉀數字進入病例時間軸及後續 Cr 判讀的共同前提。",
-          "verdict": "keep",
-          "excerpt_for_editor": "同一個人、同一天，血鉀可能因為採樣與運送條件而得到完全不同的數字。 數值差異也可能出現在治療前後；若沒有看清時間線，就會把檢體變化誤讀成病情變化。這不只影響 K：Hb、Cr、Na 和酸鹼檢驗都有各自的測量前提。先辨認數值是否可信，才能進一步討論病因與處置；而即使數值可靠，也未必已經知道該如",
-          "line_for_editor": 5
-        },
-        "96cc4ff0257aff740a-1": {
-          "role": "case_evidence",
-          "reader_gain": "交代真實 AML 患者因居家 Hb 異常就醫，急診 K 連續升高的臨床衝突。",
-          "nonredundancy_reason": "刪去轉診原因和先後時間，四次採血比較會失去病人為何接受檢查的背景。",
-          "verdict": "keep",
-          "excerpt_for_editor": "2024 年 International Journal of Emergency Medicine 報告一名 55 歲急性骨髓性白血病（AML）男性的經歷。4 月 3 日，他原本因居家抽血顯示 Hb 4.5 g/dL、疑似需要輸血而被轉送急診；同一份居家檢體的 K 是 3.0 mEq/L",
-          "line_for_editor": 9
-        },
-        "66a76b853e835b6edd-1": {
-          "role": "case_evidence",
-          "reader_gain": "保留前日補鉀與極端白血球增多，使真性與檢體性高鉀同時成為合理假說。",
-          "nonredundancy_reason": "只有白血球異常而沒有補鉀史，會過早將初次急診高鉀判為純假象。",
-          "verdict": "keep",
-          "excerpt_for_editor": "不能只因為數字起伏大，就認定其中一筆是錯的。這名患者前一天才因 K 2.8 mEq/L 接受靜脈補鉀 40 mEq，平時也使用口服鉀及其他慢性病藥物；真正的鉀變化仍有可能發生。另一方面，急診 CBC 顯示 WBC 206.8 × 10³/µL、90% blasts，Hb 7.9 g/dL、",
-          "line_for_editor": 11
-        },
-        "75fc767a42bc0242ae-1": {
-          "role": "causal_bridge",
-          "reader_gain": "在四次檢驗表前先提醒採樣與處理條件不同，避免直接比較 K 的大小。",
-          "nonredundancy_reason": "若直接呈現表格，讀者會把不同檢體基質與運輸當成同條件的連續抽血。",
-          "verdict": "keep",
-          "excerpt_for_editor": "要理解血鉀為何變化，還得知道四次血並不是以相同方式處理的：",
-          "line_for_editor": 13
-        },
-        "096569437f2f2c0db3-1": {
-          "role": "causal_bridge",
-          "reader_gain": "指出 A 是 plasma 而 B/C 是 whole blood，且重抽仍走相同氣送管。",
-          "nonredundancy_reason": "這段建立為何重抽仍高不能排除前分析誤差，並解釋表格中的方法差異。",
-          "verdict": "keep",
-          "excerpt_for_editor": "第一筆是居家的 plasma，後三筆則是急診的 whole blood，兩者連分析儀都不同，所以不能把 A 到 B 的差距直接當作體內鉀的上升幅度。更關鍵的是 B 到 C：醫師雖然重抽了一次，檢體卻再次經過相同的氣送管路徑。若機械運送對脆弱血球造成傷害，重抽而不改變運送條件，仍可能得到偏高",
-          "line_for_editor": 22
-        },
-        "9cbf4c1c0d5634ebc9-1": {
-          "role": "safety",
-          "reader_gain": "保留正常 ECG 仍須評估危險、D 已治療約三十分鐘的混雜與診斷轉向。",
-          "nonredundancy_reason": "刪除治療時序會錯把步行送檢當成造成 K 下降的唯一因果因素。",
-          "verdict": "keep",
-          "excerpt_for_editor": "當時患者沒有典型高鉀症狀，ECG 也沒有相應變化；但這些陰性發現不足以保證他沒有危急高血鉀，臨床團隊仍先給予降鉀治療並會診腎臟科。後來因懷疑 pseudohyperkalemia（假性高血鉀），重新檢視檢體運送程序，改由人員步行將血送到實驗室，得到 K 3.6 mEq/L。這是診斷方向轉變",
-          "line_for_editor": 24
-        },
-        "87d33c6b2476971eb8-1": {
-          "role": "case_evidence",
-          "reader_gain": "將 Hb4.5 與7.9 的獨立矛盾帶回最初轉診原因，限制機轉推論。",
-          "nonredundancy_reason": "若省略此段，讀者會以為同一種白血球干擾已解釋全部 CBC 異常。",
-          "verdict": "keep",
-          "excerpt_for_editor": "還有一個容易被血鉀搶走注意力的問題：這名患者為什麼會被送到急診？居家 Hb 4.5 g/dL（兩天前 7.5 g/dL），看起來像是嚴重貧血急遽惡化；然而急診 Hb 卻是 7.9 g/dL。如此大的差距不能用短短幾小時內的正常造血恢復解釋；原作者判斷居家 Hb 4.5 是錯誤讀值。這個 H",
-          "line_for_editor": 26
-        },
-        "874b661a7578b69f1d-1": {
-          "role": "safety",
-          "reader_gain": "並列過度治療偽高鉀與漏治真正危急高鉀，且不從孤立 Cr 排除 AKI。",
-          "nonredundancy_reason": "這段使讀者不會因知道檢體誤差而忘記仍需同步評估病人的危急程度。",
-          "verdict": "keep",
-          "excerpt_for_editor": "這起病例揭露的是兩個必須同時處理、但不能互相抵銷的風險：一方面，把檢體假高鉀當作真高鉀治療，可能帶來醫源性低血鉀；另一方面，只憑白血球極高或 ECG 正常就宣布高鉀是假的，也可能錯過真正的危急狀態。原病例報告的一次 creatinine 1.2 mg/dL，沒有完整基線與尿量，也不能單憑它",
-          "line_for_editor": 28
-        },
-        "df3724514d9a174387-1": {
-          "role": "definition",
-          "reader_gain": "用細胞內外鉀差與檢體外細胞破裂機轉，解釋測得 K 為何可失真。",
-          "nonredundancy_reason": "只有病例對照沒有生理機轉，無法遷移到不同抽血與運送情境。",
-          "verdict": "keep",
-          "excerpt_for_editor": "AJKD Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025 將採血、運送、保存、分析與報告等環節放在同一條檢驗鏈中。細胞內鉀遠高於細胞外；若細胞在身體外的檢體中破裂，量得的 K 就可能高於病人體內",
-          "line_for_editor": 30
-        },
-        "48c22024c7c40508ae-1": {
-          "role": "case_evidence",
-          "reader_gain": "引入另一名血小板增多患者的 serum、plasma 與動脈全血三種實測值。",
-          "nonredundancy_reason": "沒有獨立血小板病例，會讓讀者把氣送管視為偽高鉀的唯一來源。",
-          "verdict": "keep",
-          "excerpt_for_editor": "AML 患者的問題可能出現在運送途中，但另一種情況是在試管凝血的過程才使血鉀升高。2018 年 Šálek 報告一位 62 歲 essential thrombocythemia 女性，因胃潰瘍出血接受手術並暫停原本的血液疾病治療。她的 platelets 1305×10⁹/L、WBC 3",
-          "line_for_editor": 34
-        },
-        "00898ac7b862dd9f5e-1": {
-          "role": "causal_bridge",
-          "reader_gain": "解釋凝血釋鉀並承認部位和儀器差異，避免把全部數值差當單一機轉。",
-          "nonredundancy_reason": "這個中介使三種檢體值不只是數字清單，也避免誤算固定校正量。",
-          "verdict": "keep",
-          "excerpt_for_editor": "為什麼同一名病人的三份檢體會相差這麼多？Serum 採檢須經凝血，當血小板數量極高，凝血過程可能使血小板釋出更多細胞內的鉀；抗凝 plasma 避開了相同的凝固程序。因此，血小板增加可能讓 serum K 高於病人當下的體內血鉀。不過，這三次採血連部位與分析方法也不相同，還不能把 6.3 ",
-          "line_for_editor": 36
-        },
-        "d7fd0d9796053b9665-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "用十一組相關係數補強觀察，同時拒絕由相關推導個人血鉀扣除公式。",
-          "nonredundancy_reason": "少了這個限制，血小板數量與 K 的相關容易被誤作可直接使用的治療閾值。",
-          "verdict": "keep",
-          "excerpt_for_editor": "這個病例也追蹤了 11 組血清 K 與 platelet 的變化，兩者呈正相關（Spearman ρ 0.64）。它強化了「血球數量會影響某些檢體血鉀」的懷疑，卻不能據此為每位血小板偏高的患者訂出固定的 K 扣除值。讀 chemistry panel 時，CBC 有時不是另一張獨立的報告，",
-          "line_for_editor": 38
-        },
-        "d967662cca96db2330-1": {
-          "role": "case_evidence",
-          "reader_gain": "提供低風險溶血高鉀六十六人的重抽結果、中位數與不確定區間。",
-          "nonredundancy_reason": "後續討論外推限制需要真實分母及信賴區間，不能只寫都正常。",
-          "verdict": "keep",
-          "excerpt_for_editor": "2020 年正式發表的前瞻性急診研究 Accuracy of Hemolyzed Potassium Levels in the Emergency Department 從有溶血高血鉀且曾在 12 小時內重抽的個案中，最後留下66 個低風險遭遇；初次溶血 K 中位數 5.8 mmol/L",
-          "line_for_editor": 42
-        },
-        "fc1274a8dc9ec7d988-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "把高齡、腎功能下降、調鉀藥物與血液惡性疾病的排除條件轉成反例。",
-          "nonredundancy_reason": "若刪去這段，六十六人的零事件會被錯用到高危心衰竭患者。",
-          "verdict": "keep",
-          "excerpt_for_editor": "這結論不能搬到所有病房病人。原研究刻意排除 65 歲以上、eGFR <60、使用可能影響 K 的藥物、血液惡性疾病等情況，也排除重抽前已接受降鉀治療者。例如一名 70 歲、使用 ACEi 且懷疑 AKI 的心衰竭病人，不在這 66 人的驗證族群內；不能以這項研究保證「檢體有溶血，就不需評估",
-          "line_for_editor": 44
-        },
-        "ee3d1eaab84b8ddafe-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "說明三百九十九例篩選至六十六例及另三十五例未重抽者未入研究。",
-          "nonredundancy_reason": "這是證明研究沒有比較不重抽與重抽安全性的關鍵選擇機制。",
-          "verdict": "keep",
-          "excerpt_for_editor": "如果進一步問：「既然這 66 人重抽都正常，遇到下一名檢體溶血的病人，是否可以省去重抽？」答案仍然是否定的。Wilson 等人起初找到 399 次已經有重抽紀錄的急診就診，排除 333 次不符合條件者，才留下 66 次；研究另外提到 35 例未重抽即離院，並未納入這個分析。也就是說，研究只",
-          "line_for_editor": 46
-        },
-        "91318e82a14bb1af62-1": {
-          "role": "case_evidence",
-          "reader_gain": "交代二千四百四十例當日重抽研究與持續升高、恢復正常及溶血子群。",
-          "nonredundancy_reason": "圖中的巢狀分母需要獨立研究的真實計數，不能和六十六人合併。",
-          "verdict": "keep",
-          "excerpt_for_editor": "接著讀 2025 年 West J Emerg Med 回溯性研究 Hyperkalemia or Not? A Diagnostic Pitfall in the Emergency Department：研究的是初次 K ≥5.0 且當日有重抽的 2,440 名急診患者，其中 1,57",
-          "line_for_editor": 48
-        },
-        "15efe766815b131790-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "明確限定百分之三十五僅在當日重抽者，並保留治療和檢體差異。",
-          "nonredundancy_reason": "刪去分母限制會把選擇樣本誤推成所有急診高鉀的盛行率。",
-          "verdict": "keep",
-          "excerpt_for_editor": "這些數字不能簡寫成「急診高血鉀有 35% 都是假」，因為 2,440 人全都是當天完成重抽的患者，不能拿這個比例估計所有急診高鉀患者。即使 864 人重抽後恢復正常，也不能將其中 597 人首次檢體的溶血，當成每一例異常的唯一原因。遇到下一名 K 升高的患者，還需要知道兩次血如何採集、重抽",
-          "line_for_editor": 50
-        },
-        "0e64a0098d37102d24-1": {
-          "role": "causal_bridge",
-          "reader_gain": "從血鉀量測失真延伸到 total CO2、Na、Cr 的不同測量前提。",
-          "nonredundancy_reason": "沒有這段跨項目橋接，第三問的腎功能討論會像另一篇無關文章。",
-          "verdict": "keep",
-          "excerpt_for_editor": "血鉀不是唯一受檢體與測量方法影響的項目。 Serum total CO₂ 主要與 bicarbonate 相關，卻不是動脈 pH 和 PaCO₂；Na 需連同水與滲透質的背景解讀，部分測定方法（例如間接 ISE）還可能受樣本組成干擾；BUN／Cr 各有生成與清除機轉，單憑比值不能確定 AK",
-          "line_for_editor": 93
-        },
-        "36c913f8320aa2165f-1": {
-          "role": "orientation",
-          "reader_gain": "先提出檢驗可信後仍須解釋病理生理，再選擇心衰竭 Cr 為反例。",
-          "nonredundancy_reason": "這個轉折清楚分開第一問的樣本錯誤與第三問的病因推理。",
-          "verdict": "keep",
-          "excerpt_for_editor": "當檢驗值本身可信時，另一個問題才真正開始：數字改變代表什麼病理生理？ 急性心衰竭病人的 creatinine 上升，就很適合檢驗這個問題。",
-          "line_for_editor": 97
-        },
-        "58f69f1f6229aa5d83-1": {
-          "role": "causal_bridge",
-          "reader_gain": "列出灌流、靜脈鬱血、治療血流動力與腎實質傷害的競爭解釋。",
-          "nonredundancy_reason": "只說 Cr 上升而沒有這些機轉，無法理解相同趨勢的不同臨床意義。",
-          "verdict": "keep",
-          "excerpt_for_editor": "在急性失代償心衰竭，serum creatinine 可能因多種機轉上升：動脈灌流下降、靜脈鬱血、治療中的血流動力改變、真正腎實質受傷、合併感染或藥物傷害等。Acute kidney injury in acute heart failure—when to worry and when ",
-          "line_for_editor": 99
-        },
-        "28e3f5fdbb6e5c8aba-1": {
-          "role": "decision",
-          "reader_gain": "用鬱血與灌流及尿量證據限定利尿判斷，避免單點 Cr 導出固定醫囑。",
-          "nonredundancy_reason": "若省略這個條件式決策，讀者可能把輕度 Cr 上升誤認為必須停藥或補液。",
-          "verdict": "keep",
-          "excerpt_for_editor": "密西根大學住院心衰竭利尿指引 Q18 指出：若鬱血尚未解除，治療中 SCr 輕度上升不一定表示應停止利尿；但若同時出現明顯低血壓、血管內容量不足、尿量惡化或其他 AKI 線索，便必須重新評估循環狀態與治療反應。這些資訊回答的是不同問題：Cr 告訴我們腎功能指標變了，鬱血與灌流的證據才能幫助",
-          "line_for_editor": 101
-        },
-        "4a8bc9290d8521be86-1": {
-          "role": "definition",
-          "reader_gain": "把 KDIGO 的四十八小時、七天與六小時尿量窗口接回診斷條件。",
-          "nonredundancy_reason": "沒有時間維度會把單一 Cr 或八小時總尿量錯當完整 AKI 診斷。",
-          "verdict": "keep",
-          "excerpt_for_editor": "AKI 的診斷本身另有時間維度：請核對 KDIGO 2012 原始 Table 2（AKI 分期，PDF p.22） 的定義，並閱讀 Figure 4（Stage-based management，PDF p.28） 如何將風險分層與腎毒性藥物、容量／灌流、Cr／尿量監測連起來；這張圖不是",
-          "line_for_editor": 103
-        },
-        "ea4bf2693b72aeae24-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "強調 ECG、尿量和影像等缺失不能由推測補成已取得的臨床結果。",
-          "nonredundancy_reason": "此處防止整張 Lab sheet 的表格被誤讀為某個真實患者完整病歷。",
-          "verdict": "keep",
-          "excerpt_for_editor": "尚未取得的證據不能由推測補齊。 若沒有 ECG、尿量、影像或連續檢驗，就只能根據現有資料辨認危急風險與下一個必須釐清的問題，不能替病人假定正常結果或推導出已完成的醫囑。",
-          "line_for_editor": 115
-        },
-        "7669adfff7d17f210d-1": {
-          "role": "counterfactual",
-          "reader_gain": "直接否定溶血等於無需急救，保留正常 ECG 與高危族群限制。",
-          "nonredundancy_reason": "這是最重要的臨床安全反例，避免假性高鉀教材反而鼓勵延誤急症。",
-          "verdict": "keep",
-          "excerpt_for_editor": "誤解一：高 K 檢體有溶血，表示患者一定不需要急救。 錯。溶血增加假性高鉀可能，危險症狀、ECG、快速複查與個體高危條件仍需並行評估；正常 ECG 不是排除真性高鉀的檢查。原始 66 人研究不涵蓋高齡、CKD 和 RAAS 用藥患者。",
-          "line_for_editor": 119
-        },
-        "8d7f3f6260d8e7c4a3-1": {
-          "role": "safety",
-          "reader_gain": "補上危急高鉀處置與檢體確認並行、治療後血糖和反彈鉀監測。",
-          "nonredundancy_reason": "若只講移鉀而不講後續監測，讀者會忽略治療本身的風險。",
-          "verdict": "keep",
-          "excerpt_for_editor": "急救風險與檢體確認必須並行，而不是「懷疑假的就一律等」或「看到紅字就無差別給藥」。UKKA 2026 原始 Figure 4（PDF p.75） 將有危險時的心肌保護、鉀轉移、實際排鉀、K／血糖監測及防復發分開；Table 22（PDF p.98） 則提醒 insulin-glucose ",
-          "line_for_editor": 121
-        },
-        "8854c9a79b02ed53d8-1": {
-          "role": "counterfactual",
-          "reader_gain": "反駁從 K7.8 降到3.6就斷言此前從未真高鉀，回扣治療混雜。",
-          "nonredundancy_reason": "這個反事實題測試是否真正理解 D 樣本不是無介入對照。",
-          "verdict": "keep",
-          "excerpt_for_editor": "誤解二：K 7.8 重抽後 3.6，就等於從未真高鉀。 不成立。AML 病例的後段樣本有降鉀介入後的時序污染，必須回查原始 Table 1 的檢體別及採血方式，不能假裝有無治療的成對試驗。",
-          "line_for_editor": 123
-        },
-        "4ab2ef1debd4d8d1e6-1": {
-          "role": "counterfactual",
-          "reader_gain": "將 AKI 定義與腎損傷病因分開，要求鬱血及灌流資料才能改變治療。",
-          "nonredundancy_reason": "省略會讓讀者從一個 Cr 變化直接跳到缺水或停利尿的錯誤結論。",
-          "verdict": "keep",
-          "excerpt_for_editor": "誤解三：發現 AKI 就代表利尿藥造成缺水。 AKI 的定義不直接提供病因。如果患者仍有鬱血、灌流改變或其他腎損傷風險，就必須繼續依血流動力、尿量與治療反應判斷，而不是單憑 Cr 變化停止利尿或給予補液。",
-          "line_for_editor": 125
-        },
-        "2076be6ea5f081110d-1": {
-          "role": "counterfactual",
-          "reader_gain": "否定 CBC、Mg 或 Na 每個異常值都必須配套一條藥物醫囑。",
-          "nonredundancy_reason": "這段將測量品質和臨床症候群的前提擴展到整張報告的其他欄位。",
-          "verdict": "keep",
-          "excerpt_for_editor": "誤解四：CBC、Mg 或 Na 出現紅字，總要配上一條明確醫囑。 沒有對應臨床症候群、病程、症狀、危險性與測量品質的支持，教材只能呈現可能機轉與需要查證的訊息，不能編造使用某藥後的好轉來合理化處置。",
-          "line_for_editor": 127
-        },
-        "e7b51150ed4adc7933-1": {
-          "role": "navigation",
-          "reader_gain": "要求回到 AML 原始四次樣本辨認體內濃度與檢體外釋鉀的差別。",
-          "nonredundancy_reason": "作為第一題自測，可驗證讀者是否從病例取得可遷移的測量概念。",
-          "verdict": "keep",
-          "excerpt_for_editor": "構念：實驗室的 K 是病人體內濃度，還是也可能包含檢體外釋放的鉀？AML 原始 Table 1 哪些資訊證明這個問題很重要？",
-          "line_for_editor": 131
-        },
-        "6a33692ca1620afe10-1": {
-          "role": "counterfactual",
-          "reader_gain": "用高齡 CKD 心衰反例檢驗六十六人納排及二千四百四十人分母。",
-          "nonredundancy_reason": "這題測試研究族群選擇，不是重複記憶百分比或單一答案。",
-          "verdict": "keep",
-          "excerpt_for_editor": "臨床推理：66 人的低風險研究，為什麼不能幫 70 歲 CKD 心衰竭患者做完整治療決策？2,440 人研究的分母又是誰？",
-          "line_for_editor": 132
-        },
-        "5b1f30bd959995cd1d-1": {
-          "role": "counterfactual",
-          "reader_gain": "要求比較去鬱血與病況惡化兩種 Cr 變化，列出缺失的床邊證據。",
-          "nonredundancy_reason": "這題檢驗第三問的病因判讀是否能轉為條件式臨床推理。",
-          "verdict": "keep",
-          "excerpt_for_editor": "破除推論：為何「Cr 上升」同時可能見於有效去鬱血和病況惡化？還要補哪些床邊證據，才有資格從生理假說進入治療討論？",
-          "line_for_editor": 133
-        },
-        "e3f026c84b8891c708-1": {
-          "role": "safety",
-          "reader_gain": "最後回到真實患者的症狀、急迫風險與機構規範，限制教材取代醫囑。",
-          "nonredundancy_reason": "結尾保留臨床邊界而不談 AI 作者工作流，使全文收束於病人決策。",
-          "verdict": "keep",
-          "excerpt_for_editor": "原始病例、研究條件與相關臨床指引。實際採檢與治療仍須依患者當下的症狀、危急風險、檢驗可信度及醫療機構規範決定；不同患者的數字和研究結果，不能直接代替眼前患者的臨床評估。",
-          "line_for_editor": 135
-        }
-      }
-    },
-    "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md": {
-      "content_blob": "9c56a638341847db0f074788200ec9cc6280f1d8",
-      "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/190#issuecomment-6458794270 ; 2026-10-28 independent AI reviewer execution, distinct from U01 article writer; source/EPQC only, no clinician or pharmacist signoff",
-      "core_reader_question": "夜班懷疑尿源性敗血症時，如何由真正病例的既往暴露、當次培養時間與感染源控制推導首劑的證據界線，而不把後驗 AST 或別人病例變成可照抄醫囑？",
-      "new_understanding": "Evins 28F 以第 3 天原始 AST 揭露 ceftriaxone 失配，Arai 81F 以既往 cefcapene 推測抗藥並在第 4 天由血尿培回驗；兩例不拼接。IDSA 2025 Figure1.1 是 pre-AST empiric 四步法，IDSA 2026 AMR Q1.2/Q1.4 是已知病原後的適用邊界，並以源控制、MERINO 和官方 Q60 反證過度推論。",
-      "strongest_counterargument": "文章沒有任何一位『舊 ESBL AST 已知且當次第一劑已核』的真實病例；該情境僅是清楚標示的反事實，不能當直接療效證明。Evins 摘要稱居家 meropenem 而 Case Report 明載居家 ertapenem，本稿依較具體病程段落；原始 Arai Figure1 僅查原文 caption、未於本輪取得 PDF 像素畫面。缺當院 antibiogram、腎劑量、過敏與藥師核藥，無法作臨床 order-ready 核准。",
-      "epqc_scores": {
-        "A": 4,
-        "B": 4,
-        "C": 4,
-        "D": 4,
-        "E": 3,
+        "E": 4,
         "F": 4,
         "G": 3
       },
@@ -4621,181 +4331,439 @@
         "unresolved_source_conflict": false
       },
       "paragraphs": {
-        "a39e737cca5887acf4-1": {
+        "7ad02aaeea5ca909cb-1": {
           "role": "orientation",
-          "reader_gain": "把本文定位為真實病例與現行證據的教學，而不是可直接下單的病患處方。",
-          "nonredundancy_reason": "若刪掉，讀者無法知道全篇數值與建議的證據身分及 EMR 安全界線。",
+          "reader_gain": "區分試管濃度與體內危險，設定雙向安全張力。",
+          "nonredundancy_reason": "若省略，讀者可能以疑似假性高鉀為由忽略立即風險。",
           "verdict": "keep",
-          "excerpt_for_editor": "這篇改用已發表的真實病例、原始藥敏及現行指南追問：醫師在不同時間點知道什麼、憑什麼改變治療、還不能宣稱什麼。它不再以 AI 自行設計的夜班病人、體重、腎功能、過敏與「第一劑醫囑表」作為主要依據。本文不是可以複製到 EMR 的醫囑或特定醫院處方建議。",
+          "excerpt_for_editor": "一張化驗單最危險的錯誤，有時不是不知道高血鉀怎麼治療，而是把試管裡發生的變化誤認成病人體內發生的變化。然而反過來，只因懷疑檢體失真就延後必要的急症處置，也同樣危險。",
           "line_for_editor": 3
         },
-        "2c68d8a073271aab71-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "明確拆開病例觀察、指南族群與舊 ESBL 反事實，保留未報告資料。",
-          "nonredundancy_reason": "這是兩名不同患者不被拼裝的共同前提，後面的病例不能取代。",
+        "d2672c7715da2fc1a2-1": {
+          "role": "orientation",
+          "reader_gain": "用同日四次血鉀和已施治的時點提出待解因果問題。",
+          "nonredundancy_reason": "它把後續表格導入可檢驗的時間序列，而非單純列值。",
           "verdict": "keep",
-          "excerpt_for_editor": "先區分：病例觀察有作者、原始病程和可追溯數值，但單例不能證明因果；指南建議適用於特定族群，需核對條件；「若夜班遇到舊 ESBL」是問題設定，並非把兩個不同病人的紀錄拼在一起。任何原文沒報告的過敏、體重、舊 AST、腎功能時序和院內 antibiogram，都明確保留未知，不讓 AI 補寫。",
+          "excerpt_for_editor": "這個難題在 2024 年一名急性骨髓性白血病（AML）患者的急診病程中，並非抽象考題：同一天，他的 K 從 3.0、6.7、7.8 變成 3.6 mEq/L；而最後一次抽血前，團隊已經開始治療高血鉀。要理解這四個數字，必須先還原病人為何到急診、每次檢體怎麼取得、醫師當時知道什麼，以及哪些證",
           "line_for_editor": 5
         },
-        "06921346adcf835bc0-1": {
+        "e99202bb8df7ad1951-1": {
           "role": "case_evidence",
-          "reader_gain": "建立 Evins 28 歲女性從初始 ceftriaxone 到第 3 天 AST、第 4 天改善的真實順序。",
-          "nonredundancy_reason": "刪除會讓藥物失配只剩抽象原則，失去可回查的患者時序。",
+          "reader_gain": "交代AML病史、前一天補鉀與採樣前的先驗因素。",
+          "nonredundancy_reason": "沒有這段就無法合理考慮真性高鉀的競爭機轉。",
           "verdict": "keep",
-          "excerpt_for_editor": "2021 年《Antibiotics》報告一名 28 歲女性，沒有已知近期抗菌藥使用或醫療照護暴露，因發燒、左側腰痛和泌尿症狀就診。初次評估 HR 117/min、BP 83/44 mmHg；初始給予 ceftriaxone，病況不穩而進入 ICU。住院第 3 天尿培養與 AST 確認 E",
+          "excerpt_for_editor": "Cao 於 International Journal of Emergency Medicine（2024）記錄一位 55 歲男性。他先前罹患多發性骨髓瘤，經骨髓增生不良症候群演變為 AML；病況惡化，周邊血液充滿 blasts。4 月 2 日，他曾因血鉀 2.8 mEq/L 在門診接受",
           "line_for_editor": 9
         },
-        "63e5787ca51a27a55c-1": {
+        "63d0e760a8db620917-1": {
           "role": "case_evidence",
-          "reader_gain": "直接以 Evins 原始 Table 1 的四個 MIC 與 R/S/I 說明實測與治療反應的差別。",
-          "nonredundancy_reason": "這些菌株特有數值無法由 ESBL 一般機轉推導，也不能由另一患者補足。",
+          "reader_gain": "還原真正急診轉送理由、CBC與白血球負荷。",
+          "nonredundancy_reason": "它解釋為何初始問題是貧血而不是高血鉀。",
           "verdict": "keep",
-          "excerpt_for_editor": "同一份真正原始尿培養可對照這幾個 MIC（依論文 Table 1 記錄的單位和判讀）：ceftriaxone >64（R）、meropenem 320（R）、piperacillin/tazobactam 64（I）。這不是「ESBL 通常如何」的 AI 推測；是當次分離株實測。拿到新 A",
-          "line_for_editor": 12
+          "excerpt_for_editor": "4 月 3 日中午，居家護理採血測得 Hb 4.5 g/dL（兩天前 7.5）及 K 3.0 mEq/L。原本讓他被送到急診的理由是疑似嚴重貧血，需要輸血，不是高血鉀。到急診時，原文描述生命徵象穩定，沒有急性不適；但院內 CBC 顯示 WBC 206.8 × 10³/µL，90% blas",
+          "line_for_editor": 11
         },
-        "e9bcca6efcc7ffae05-1": {
+        "92f896ea307693c5f1-1": {
           "role": "evidence_boundary",
-          "reader_gain": "阻止將 Evins 的未知舊 AST 與十天療程錯誤投射到夜班反事實。",
-          "nonredundancy_reason": "沒有這段會把後驗病例與假設的既往 ESBL 病史混淆。",
+          "reader_gain": "拆分Hb不一致與血鉀假性升高的不同待證機轉。",
+          "nonredundancy_reason": "防止把一個錯誤檢體值推論成所有CBC結果失效。",
           "verdict": "keep",
-          "excerpt_for_editor": "最容易被錯誤移植的兩點：原報告並無「兩個月前尿培 ESBL」的前提，因此不能把它說成「依舊培養選第一劑」的直接實證；作者用了 10 天療程，也不能變成所有 ESBL cUTI 的通用療程。病例應教會讀者的是病原—藥物失配如何由後來的培養揭露。",
-          "line_for_editor": 14
+          "excerpt_for_editor": "第一個資訊衝突其實是 Hb：幾小時內從 4.5 變 7.9，沒有記錄能解釋這種幅度的生理恢復。作者認定居家 4.5 為錯誤結果；但原文沒有交代其確切干擾機轉，因此不能因為它和 K 發生在同一人，就推說兩者都是白血球裂解造成。病人確實有 AML 與貧血；其中一個 Hb 數字不可靠，不等於整張",
+          "line_for_editor": 13
         },
-        "33eebe5082ec74e1b5-1": {
-          "role": "counterfactual",
-          "reader_gain": "把題目的既往 ESBL 變成獨立反事實，區分先驗抗藥風險與當次 AST。",
-          "nonredundancy_reason": "這是讀者回答首劑問題的轉折，不能由第 3 天培養倒推。",
+        "d8cc1d530357360a5f-1": {
+          "role": "safety",
+          "reader_gain": "建立兩次極端K結果出現時不得先驗排除急症的邊界。",
+          "nonredundancy_reason": "把事後假性診斷與當時需處理的危險分開。",
           "verdict": "keep",
-          "excerpt_for_editor": "現在才切換到題目的反事實情境：若另一名危重病人在初次治療前就有近期相關尿培養 ESBL E. coli 的紀錄，這項歷史證據會增加某些經驗性 cephalosporins 無法涵蓋本次病原的可能；但不代表本次已證實是同一株菌，更不代表已知道本次 AST。",
-          "line_for_editor": 18
+          "excerpt_for_editor": "真正改變急診優先問題的，是隨後出現的 K 6.7，再次採血甚至達 7.8 mEq/L。在尚未知道最後一筆結果前，醫師不能直接宣布這是「檢驗誤差」。",
+          "line_for_editor": 15
         },
-        "7d82acf4f4248206f0-1": {
-          "role": "decision",
-          "reader_gain": "依原 Figure 1.1 四步法和 Table 1.1 註腳連接嚴重度、舊菌、病人限制與在地資料。",
-          "nonredundancy_reason": "若只留藥物名稱，讀者無法重建為何候選抗生素會因條件而改變。",
-          "verdict": "keep",
-          "excerpt_for_editor": "IDSA 2025 cUTI 的原 Figure 1.1 應該從四個層次讀：感染與器官嚴重度 → 既往抗藥菌／抗菌藥暴露 → 病人限制（例如過敏、腎功能）→ 相似病人族群的當院 antibiogram。閱讀原 Table 1.1 也要看候選類別與註腳，不能直接從表格抄成某病人的處方。",
-          "line_for_editor": 20
-        },
-        "edda8ce661973b712b-1": {
+        "8d89b5f335065117f9-1": {
           "role": "definition",
-          "reader_gain": "由 PBP 與 β-lactam 水解機轉推導 ESBL 與當次 susceptibility 不可畫等號。",
-          "nonredundancy_reason": "國考酵素題需要這段機轉橋接，否則易誤認 carbapenem 永遠敏感。",
+          "reader_gain": "定義測得的檢體鉀與循環鉀可能因離體裂解不同。",
+          "nonredundancy_reason": "這是後續採檢差異解釋所需的物理前提。",
           "verdict": "keep",
-          "excerpt_for_editor": "ESBL 的意義首先是機轉，並非完整處方。 β-lactam 需結合 PBP 干擾細胞壁；典型 ESBL 可水解 cefotaxime、ceftriaxone 等延伸型 cephalosporins 及 aztreonam，但不能據此斷言所有 carbapenem 必為 S，因為菌株仍可能",
-          "line_for_editor": 29
+          "excerpt_for_editor": "血鉀檢驗量的是送到分析儀時檢體中的鉀濃度。這個值常可反映體內血鉀，前提卻是採樣後的細胞完整性、採血管、運送與分析步驟沒有造成足以影響結果的偏差。細胞內鉀濃度遠高於細胞外；如果細胞離開人體後才破裂，分析儀照樣會量到被釋出的鉀。這是 in-vitro 假性升高，不等於病人體內已經高血鉀。",
+          "line_for_editor": 19
         },
-        "a1308cd6663fe6eb83-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "清楚將 IDSA 2026 已知病原的 definitive 建議與 IDSA 2025 pre-AST empiric 選擇分離。",
-          "nonredundancy_reason": "前一輪 P1 就是來源歸屬混淆；此段是防止再犯的必要判準。",
-          "verdict": "keep",
-          "excerpt_for_editor": "IDSA 2026 AMR 的 ESBL 指引 在 General Management Suggestions 明確說明：具體經驗性治療建議超出這份 AMR 指引的範圍，其主要治療建議假設已辨識致病菌，並確認候選藥物的體外 susceptibility。對已確認 ESBL-E cUTI ",
-          "line_for_editor": 31
-        },
-        "352324f54dc6d7844a-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "用 Q1.4 限定 pip-tazo 的非危重且無菌血症適用範圍與 MIC 不確定性。",
-          "nonredundancy_reason": "缺此段會把廣譜或體外 S 誤讀成與 carbapenem 臨床等效。",
-          "verdict": "keep",
-          "excerpt_for_editor": "Piperacillin/tazobactam 亦不能只憑「抗菌譜廣」或一次體外 S 和 carbapenem 畫上等號；IDSA 2026 特別區分非危重、無同時菌血症之 ESBL cUTI alternative 與不建議的危重／菌血症情況。這背後有體外 MIC 的限制、其他 β-la",
-          "line_for_editor": 33
-        },
-        "be401903797ca34309-1": {
-          "role": "case_evidence",
-          "reader_gain": "呈現 Arai 81 歲阻塞性休克的獨立病程、PCN 時點與第 4 天血尿培。",
-          "nonredundancy_reason": "此病例提供 Evins 沒有的感染源控制問題，不能把兩例合成。",
-          "verdict": "keep",
-          "excerpt_for_editor": "Arai 等人在 2021 年 Oxford Medical Case Reports 發表的是另一名 81 歲日本女性，既往有反覆 UTI。就醫時 BP 68/36 mmHg、creatinine 2.7 mg/dL、lactate 3.3 mmol/L，左側 CVA tendernes",
-          "line_for_editor": 37
-        },
-        "d73dd72d13a26ed102-1": {
+        "d04a35aacb06874a24-1": {
           "role": "causal_bridge",
-          "reader_gain": "以 Arai 既往 cefcapene 暴露到經驗性 carbapenem 的作者推理解釋首劑先驗。",
-          "nonredundancy_reason": "是全篇唯一真實 first-dose rationale，刪除將只剩第 3 天後驗 AST。",
+          "reader_gain": "把前一天補鉀、排泄與細胞破壞列為體內升高的競爭假說。",
+          "nonredundancy_reason": "不以AML或單次腎功能數字推定TLS或排除真性高鉀。",
           "verdict": "keep",
-          "excerpt_for_editor": "最能回答「第一劑怎麼想」的，其實是原作者 Discussion 保留的先驗資訊。 這名 81 歲病人過去兩次 UTI，曾使用第三代 cephalosporin cefcapene pivoxil；作者懷疑既往治療相關抗藥風險，因此在當次培養尚未回報前，經驗性選擇 carbapenem。直到",
-          "line_for_editor": 39
+          "excerpt_for_editor": "先考慮真實的體內升高。 此人前一天剛接受補鉀；若有體內細胞破壞、鉀排泄能力改變或其他電解質移動，也可能造成血鉀真的增加。AML 的極高腫瘤負荷使細胞破壞相關問題需要被想到，但「有 AML」本身並不證明發生 tumor lysis syndrome。原病例報告 BUN 9 mg/dL、Cr ",
+          "line_for_editor": 21
         },
-        "5ecde7c8f5048bde20-1": {
+        "20f6924affc432f142-1": {
           "role": "causal_bridge",
-          "reader_gain": "解釋抗菌藥的微生物活性與阻塞集尿系統的引流是兩個不同瓶頸。",
-          "nonredundancy_reason": "讓讀者理解為何已選藥仍需辨認解剖感染灶，非單純重述病例。",
+          "reader_gain": "區分白血球機械裂解、紅血球溶血及血小板凝血釋鉀。",
+          "nonredundancy_reason": "三種檢驗干擾需要不同的檢體確認方法。",
           "verdict": "keep",
-          "excerpt_for_editor": "這是一個教學上真正重要的資訊轉折：即使先選了合理的抗菌藥，也不能讓被阻塞的集尿系統自動排空。阻塞的解剖原因、是否有感染性腎積水／膿瘍、引流是否可行，與「這個菌對藥是否 S」是不同問題。",
-          "line_for_editor": 41
+          "excerpt_for_editor": "再考慮離體造成的假性升高。 紅血球溶血、脆弱白血球受機械運送破壞、血小板在 serum 凝血過程釋鉀，都可能讓測得的 K 高於循環中的濃度。機轉並不相同：白血病細胞在氣送管運送時受損，未必會呈現典型的紅血球溶血訊號；血小板相關問題則要注意 serum 與 anticoagulated pl",
+          "line_for_editor": 23
         },
-        "bc317a68da416aba7a-1": {
-          "role": "safety",
-          "reader_gain": "隔離 PMX-DHP 與 hydrocortisone 個案救援及腫瘤病因，禁止當作標準處方或結石。",
-          "nonredundancy_reason": "沒有這個邊界會將低層級病例行動外推為治療有效性。",
-          "verdict": "keep",
-          "excerpt_for_editor": "這篇病例曾使用 polymyxin B hemoperfusion 及 hydrocortisone。那是該院在特定嚴重休克下採用的救援治療，不是證明 PMX-DHP 有標準存活效益的臨床試驗，亦非本教材鼓勵模仿的做法。 原文的阻塞病因是腫瘤相關病變，不能偷換成「病人一定有阻塞性結石」。",
-          "line_for_editor": 43
-        },
-        "3f0a71f76cb1e0eb72-1": {
-          "role": "source_context",
-          "reader_gain": "把 EAU 阻塞結石與 SSC source control 的指南範圍接回 Arai 的腫瘤阻塞。",
-          "nonredundancy_reason": "讀者需要知道兩份指南的共同方向與不能直接指定 PCN 的限制。",
-          "verdict": "keep",
-          "excerpt_for_editor": "EAU 尿路結石指引 對合併 sepsis 的阻塞結石強調緊急減壓、再處理結石；SSC 2026 強調辨識需 source control 的感染灶並迅速處理。兩份指南提供比個別成功病例更可靠的處理方向，但也不能變成 AI 在不了解病人影像與手術風險時直接指定支架或 PCN 的醫囑。",
-          "line_for_editor": 45
-        },
-        "cac6cd5712a15675d1-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "用兩例介入後改善指出時間關聯不等於介入單獨造成療效。",
-          "nonredundancy_reason": "阻止案例成功被錯當比較試驗，維持臨床因果判斷的證據階層。",
-          "verdict": "keep",
-          "excerpt_for_editor": "不能把相關性當因果。 第一例換藥後退燒，不證明改善完全由 meropenem 造成；第二例引流後改善，也不能把所有病程變化完全歸給引流或某項救援輔助治療。Case report 用來辨識真實問題與推理節點，不能取代隨機試驗和指引。",
-          "line_for_editor": 49
-        },
-        "ac9c528244af6294cd-1": {
-          "role": "evidence_boundary",
-          "reader_gain": "區分 Evins 十天觀察與 IDSA 2025 Figure 1.2/1.3 的改善後轉口服和短療程條件。",
-          "nonredundancy_reason": "此段提供療程外推的實際反例，不能以病例第 5 天出院替代。",
-          "verdict": "keep",
-          "excerpt_for_editor": "不能把個案療程變成通則。 第一例約 10 天 carbapenem 是作者的實際治療經過；IDSA 2025 cUTI 原 Figure 1.2 討論臨床改善時的 IV-to-oral 邊界，Figure 1.3 與正文則針對合適病人提供較短療程的條件性建議。重症、未引流阻塞、膿瘍、腎功能",
-          "line_for_editor": 51
-        },
-        "4a0072e6920fb8ce46-1": {
-          "role": "safety",
-          "reader_gain": "以 KDIGO 48 小時七天與尿量資料需求阻止從 Arai 單次 Cr 虛構 AKI 分期。",
-          "nonredundancy_reason": "若刪除，單一異常值容易被誤作完整腎功能與休克診斷。",
-          "verdict": "keep",
-          "excerpt_for_editor": "不能從兩筆 Cr 自動宣告 AKI stage。 KDIGO 2012 需核對 48 小時／7 天血清 creatinine 或連續尿量資料；第二例的單次 Cr 2.7 不足以供我們虛構完整基線與腎功能時間線。也不能用單次血壓或 lactate 代替 Sepsis-3 的完整休克定義。",
-          "line_for_editor": 53
-        },
-        "996cdbba37802418fc-1": {
+        "e4792c65a3bdfb4863-1": {
           "role": "counterfactual",
-          "reader_gain": "用 ESBL 陽性但無症狀菌尿作負對照，說明培養陽性不等於感染。",
-          "nonredundancy_reason": "這是防止把抗藥標籤本身當作治療適應症的獨立反證。",
+          "reader_gain": "把真與假二分改為尋找可區分機轉的新證據。",
+          "nonredundancy_reason": "承接競爭機轉並提出下一節比較採樣條件的理由。",
           "verdict": "keep",
-          "excerpt_for_editor": "不能把陽性尿培當作一定需要治療。 IDSA 2019 ASB 指出：沒有可歸因感染症狀的菌尿，即使 ESBL，也不能單憑檢驗結果推動 carbapenem；懷孕與特定侵入性泌尿手術是不同情況。",
-          "line_for_editor": 55
+          "excerpt_for_editor": "關鍵不是把「真」與「假」視為二選一的最終標籤，而是問：下一筆什麼證據，能把體內變化與運送造成的變化區分開？",
+          "line_for_editor": 25
         },
-        "cee1ef613160794419-1": {
-          "role": "source_context",
-          "reader_gain": "將考選部 111-2 醫學三 Q60 官方 A 答案連到 ESBL 水解譜與 AST 限制。",
-          "nonredundancy_reason": "讀者需要區分國考機轉正確答案與床邊藥敏及首劑處方。",
+        "3bb1a78c75ef256791-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出A到B基質與分析儀皆變，不能單獨估計體內變化。",
+          "nonredundancy_reason": "若把A與B當成單一受控實驗，讀者會誤以為能由兩個K值直接估計病人體內鉀的變化。",
           "verdict": "keep",
-          "excerpt_for_editor": "考選部原題、答案與更正清冊：典型 ESBL 能水解 cefotaxime（①）和 aztreonam（②），但不以直接水解 ertapenem（③）為其典型機轉；官方標準答案 A（①②），該題未更正。這只回答酵素可水解什麼，不保證臨床分離株一定 ertapenem-S；也不能從國考答案推出",
-          "line_for_editor": 59
+          "excerpt_for_editor": "從 A 到 B，不只運送方式改變，連 plasma／whole blood 和分析儀也不同。因此不能把兩者差距全部看成病人體內 K 上升。",
+          "line_for_editor": 36
         },
-        "05a7c77033f674664f-1": {
-          "role": "navigation",
-          "reader_gain": "總結 Evins 的藥敏時間性、Arai 的源控制與指南族群三條推理路徑。",
-          "nonredundancy_reason": "使三問整合成可重走的臨床閱讀策略，而非零散結論。",
+        "afbf0f90a6d4eb506b-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明重抽但仍用氣送管不能檢驗運送損傷假說。",
+          "nonredundancy_reason": "這是選擇真正改變干擾條件之重驗的核心。",
           "verdict": "keep",
-          "excerpt_for_editor": "第一個病例把當次藥敏出現前後分清楚；第二個病例揭示用藥與感染源控制不是二選一。接著才用 IDSA、SSC、EAU、KDIGO 把兩例無法解決的普遍性問題放回其研究適用族群。真正要練習的是：這句判斷來自哪篇原文、是哪個時間點取得的資料、哪一項仍然未知，以及什麼反證會推翻它。",
-          "line_for_editor": 63
+          "excerpt_for_editor": "B 到 C 的問題更有教學意義：重抽確實可以排除某些偶發採樣錯誤，但如果第二次檢體仍走過相同的氣送管，它並沒有驗證「氣送管會不會破壞脆弱血球」這個假說。重抽是再取得一個數值；改變可能的干擾條件，才是在測試機轉。",
+          "line_for_editor": 38
         },
-        "0b4801879ca3af1c64-1": {
+        "c6ce298dbc58c00bf7-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明確指出D同時更改運送且已治療30分鐘的混雜。",
+          "nonredundancy_reason": "防止把7.8到3.6全部歸因於步行送檢。",
+          "verdict": "keep",
+          "excerpt_for_editor": "D 結果回到 3.6，是支持假性高血鉀的重要線索，卻仍有一個不可忽略的混雜：團隊已經治療。從 C 到 D 同時發生運送改變與治療作用，不能把 7.8 → 3.6 的全幅下降歸功於改成步行送檢。原作者結合極高 WBC、不同送檢程序與後續調查，認為氣送管造成假性高血鉀；這是合理的病例判讀，但不",
+          "line_for_editor": 40
+        },
+        "a616eb94c9ef69a44d-1": {
           "role": "safety",
-          "reader_gain": "將來源頁與未知劑量、間隔及院內規範的實際限制接回文章結尾。",
-          "nonredundancy_reason": "提供查證入口並避免教學候選被當成真實可複製醫囑。",
+          "reader_gain": "區分正常ECG的有限資訊與假性高鉀誤治的反向危害。",
+          "nonredundancy_reason": "這是危險分流和測量查核並行的必要前提。",
           "verdict": "keep",
-          "excerpt_for_editor": "兩例來源、可核對的數據、未報告的欄位、證據層級與臨床限制，請閱讀原始資料與證據界線。本教材不提供 EMR 可直接抄寫的 mg、間隔或輸注條件；真實急重症病人仍需當下醫療團隊依實際病情、抗藥資料及院內規範迅速處理。",
-          "line_for_editor": 65
+          "excerpt_for_editor": "當團隊看到 K 6.7、接著 7.8 時，病人沒有典型高血鉀症狀，ECG 也沒有相應改變。這些是降低某些當下危險線索的資訊，並不是能排除危急高血鉀的陰性檢查。高血鉀可能在沒有典型 ECG 改變時仍有嚴重後果；反之，對假性高血鉀給予移鉀治療，可能使真實血鉀降得過低。",
+          "line_for_editor": 44
+        },
+        "e8b9cab482c5bb6d6e-1": {
+          "role": "case_evidence",
+          "reader_gain": "完整還原原醫師採取的急救措施但不將其升格為處方。",
+          "nonredundancy_reason": "提供實際治療時序，讓讀者看見後續K的混雜來源。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原報告記載急診給予 IV calcium gluconate、insulin/dextrose、sodium bicarbonate 與吸入 albuterol，並會診腎臟科評估是否需要透析。這裡必須把「團隊實際做了什麼」與「今天應給每個類似患者什麼處方」分開。這份病例無法證明所有藥物在當",
+          "line_for_editor": 46
+        },
+        "4252f13469f2969bb1-1": {
+          "role": "decision",
+          "reader_gain": "將檢體確認與急症處理並行，且核對UKKA監測與圖表。",
+          "nonredundancy_reason": "首次轉為可實行的採檢和監測策略，非重述風險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在病人真正有立即心臟危險時，查核假性高鉀與急症評估／處理須並行，不能為了證明檢體有錯而放棄救治。當臨床狀態與數值高度矛盾、又有極高白血球時，應盡快與檢驗部門合作，使用合適、避免機械損傷的送檢與分析方法取得真正能回答疑問的新證據；同時監測血鉀及治療相關低血糖、反彈等風險。具體治療與監測應依個",
+          "line_for_editor": 48
+        },
+        "5ba6c6ae85cac58fef-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明已用heparin不等於已避免氣送管機械傷害。",
+          "nonredundancy_reason": "具體指出腎科建議為何未解決真正的前分析因素。",
+          "verdict": "keep",
+          "excerpt_for_editor": "腎臟科醫師曾建議以 heparinized plasma 重新確認；作者事後查明，院內的急診檢體本來就用了 lithium-heparin 管。再次指定抗凝方式不等於已經排除氣送管的機械傷害，這正是問題定位必須精確到「採樣—運送—處理—測定」各環節的原因。",
+          "line_for_editor": 50
+        },
+        "009c10b8f99ec0d6b9-1": {
+          "role": "case_evidence",
+          "reader_gain": "補足輸血、舒適照護與人工警示失效的後續事實。",
+          "nonredundancy_reason": "讓臨床教訓延伸至系統故障而不推測死亡因果。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原文接著記載：團隊確認 K 正常後輸注一單位 packed RBC，患者選擇舒適照護，翌日生命徵象穩定出院，一週後過世。後續死亡不能從這份報告歸因於假性高血鉀或降鉀治療。真正值得追問的系統問題，是醫院原有「WBC 過高需警示 Chemistry 並避免氣送管」的人工提醒那晚未能傳遞成功；作",
+          "line_for_editor": 52
+        },
+        "81549ba81dd32e43a1-1": {
+          "role": "counterfactual",
+          "reader_gain": "用血小板增多病例比較凝血釋鉀與AML氣送管裂解。",
+          "nonredundancy_reason": "在不同病因下不能直接套用同一送檢解法。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若病人不是白血球極高，而是血小板極高，可能出現不同的 pseudohyperkalemia。Šálek（2018）記載一位 62 歲 essential thrombocythemia 患者，platelets 1305 × 10⁹/L，serum K 6.3，plasma K 4.6，動",
+          "line_for_editor": 56
+        },
+        "910a2f4002d6bd9c2d-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分2440重抽樣本與66低風險樣本的選擇偏差。",
+          "nonredundancy_reason": "阻止將35%與0/66誤讀為所有急診病人的安全規則。",
+          "verdict": "keep",
+          "excerpt_for_editor": "再把視野移到一般急診：Stephan 等人（2025）分析 2,440 位初次 K ≥5.0 且當天確實重測的病人，864 位（35%）重測正常，而其中 597 位（597/864，69%）的第一次檢體有溶血證據。這不是「所有急診高鉀都有 35% 是假的」，因為只選進當天有重測的患者；也不",
+          "line_for_editor": 58
+        },
+        "6bd12f2aa6203ba62b-1": {
+          "role": "navigation",
+          "reader_gain": "說明原創圖的兩個目的：檢體時序混雜與研究分母。",
+          "nonredundancy_reason": "讓圖不是裝飾，而是直接承接前述因果限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這些研究沒有取代先前病例的推理，而是幫忙界定何種病人、何種重抽程序和何種推論才有研究支持。以下圖表把病例檢體時序與研究的分母並排；上圖回答「為何這幾次 K 不可直接比」，下圖回答「研究中究竟觀察了哪些病人」。",
+          "line_for_editor": 60
+        },
+        "2c65aae2f713168a69-1": {
+          "role": "decision",
+          "reader_gain": "將危險分流、雙機轉與具辨識力的採檢條件整合。",
+          "nonredundancy_reason": "提供可遷移的床邊流程而非重複單一病例結論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一次看到極端 K 值時，先辨認病人是否可能立即有危險；危險評估不能因為數字看似不合常理而停止。接著把至少兩條競爭路徑分開：體內鉀真的變了，還是採血後的檢體變了；兩者可同時存在，不能靠單次 ECG 或一次重抽定論。最後選擇能區分路徑的證據：不是無目的重複抽血，而是檢查標本類型、極端 CBC",
+          "line_for_editor": 105
+        },
+        "ae20b62e4f1f306b1a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以Hb與Cr示範測量可信度的跨檢驗適用與範圍。",
+          "nonredundancy_reason": "明確阻止把另一名心衰病人的AKI拼成AML病程。",
+          "verdict": "keep",
+          "excerpt_for_editor": "晨間 Lab 的其他項目也同樣要先確認「測到什麼」；例如 Hb 可能有檢驗矛盾，Cr 需要基線與尿量才能討論腎功能趨勢。但它們各有不同的病理生理和臨床問題，不能因為出現在同張化驗單，就把另一個心衰竭病人的 AKI 敘事拼進 AML 病程。Cr 上升與去鬱血的競爭機轉應在有相應真實病例及循環",
+          "line_for_editor": 107
+        },
+        "d27640db466bbf7281-1": {
+          "role": "navigation",
+          "reader_gain": "回收本篇測量可信度主題並導向獨立來源頁。",
+          "nonredundancy_reason": "界定系列第一篇的終點，避免假裝已教完所有Lab。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這是本系列第一篇只解決的問題：臨床推理從確認資料是否真的描述病人開始；而資料可疑，也不能成為忽略病人安全的理由。 其他檢驗領域的延伸資料和原始圖表來源可從原始來源與適用界線繼續查閱。",
+          "line_for_editor": 109
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md": {
+      "content_blob": "9a5fc533fdd2bf982a250ab4482a900f59a3ef24",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/204#issuecomment-6472815183 ; distinct 2026-10-28 23:09 TST independent AI paragraph reviewer (not author, not clinician/pharmacist signoff)",
+      "core_reader_question": "兩名尿路敗血症患者的首劑資訊、Day3/4藥敏與感染性阻塞如何各自改變判斷，為何不能用後見AST或單例PMX-DHP推導通則？",
+      "new_understanding": "Evins病人的ceftriaxone失配直到Day3才確立，Arai病人的舊cefcapene暴露並非舊ESBL AST；抗菌涵蓋與UPJ引流是平行任務，2025經驗性選藥與2026定向建議須分時點使用。",
+      "strongest_counterargument": "兩個case都沒有首劑前已知ESBL的原始培養，不能證明有舊ESBL時的處方優越性；目前將此疑問明示為另外患者的條件問題並依IDSA而非病例外推。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 4,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "9d864c39b58e4c1b27-1": {
+          "role": "orientation",
+          "reader_gain": "用兩種真實病程設定抗藥與阻塞的不同時間問題。",
+          "nonredundancy_reason": "若無此對照，讀者易把兩名病人的處置合成一條病程。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一位患者因發燒、腰痛與低血壓來急診。醫師在尚無當次培養與藥敏時必須處理嚴重感染；幾天後，培養可能證明原本抗菌藥不涵蓋致病菌。另一位患者即使一開始已接受廣效抗菌治療，卻因阻塞的感染源尚未排空而持續休克。",
+          "line_for_editor": 3
+        },
+        "6c3ebbf4e6717f5fbf-1": {
+          "role": "orientation",
+          "reader_gain": "提出感染源、藥敏涵蓋、引流三條不可互代的判斷軸。",
+          "nonredundancy_reason": "先建立整篇問題與當時資訊邊界，防止回填AST。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這不是同一個病人的兩段病程，也不是「ESBL 一律開 carbapenem」的處方教學。兩個有原始紀錄的病例，剛好讓我們分開思考三件事：感染源有多可信、抗菌藥有多可能涵蓋本次病原，以及是否存在藥物無法代替的感染源控制問題。第一劑必須在答案未知時作決定；後續藥敏只能幫忙檢驗和調整先前的假設，",
+          "line_for_editor": 5
+        },
+        "3d4282a57a2a4ce823-1": {
+          "role": "case_evidence",
+          "reader_gain": "還原28歲患者首診症狀、休克線索與缺少典型危險因子。",
+          "nonredundancy_reason": "提供初始診斷的真實資料，不依後來ESBL回報倒推。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2021 年 Antibiotics 報告一位 28 歲女性，過去沒有已知慢性病、反覆 UTI、近期抗生素或醫療照護暴露。她因一週腹痛、噁心、嘔吐、主觀發燒到急診，幾天內疼痛逐漸集中於左腰，伴隨頻尿，卻否認排尿疼痛。初評 T 101.6°F（約 38.7°C）、HR 117/min、BP ",
+          "line_for_editor": 9
+        },
+        "5dc0e8f2137ae0547b-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用CVA、尿液、婦科檢查及CT區分競爭感染源。",
+          "nonredundancy_reason": "說明尿液WBC和腰痛不能直接鑑定菌種。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這時不應先跳到「ESBL」；當下真正的問題是感染從哪裡來，以及病人是否已失去循環代償。左腰定位、頻尿、CVA tenderness 與發燒讓腎盂腎炎成為優先可能，但腹痛、嘔吐與低血壓並不只見於尿路感染；腹腔病變、婦科感染及其他感染源仍須按當時病史、PE 與必要檢查評估。原病例的骨盆檢查未見",
+          "line_for_editor": 11
+        },
+        "d476473b2575c5e4c5-1": {
+          "role": "case_evidence",
+          "reader_gain": "記錄初始ceftriaxone、補液、持續不穩與ICU的先後。",
+          "nonredundancy_reason": "這是判斷當時為何需要升級照護的時間主幹。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當時沒有既往 ESBL 培養可供選藥。團隊給予 1 L normal saline、acetaminophen、ceftriaxone，原先計畫若生命徵象改善可考慮出院。之後仍有心搏過速與低血壓（原文報告血壓範圍約 77–109/39–84 mmHg），因此改為 ICU 收治，並以 pye",
+          "line_for_editor": 13
+        },
+        "7977447be3f3f7fa32-1": {
+          "role": "counterfactual",
+          "reader_gain": "列出持續發燒的多種競爭機轉而不冒充醫師當時想法。",
+          "nonredundancy_reason": "防止用Day3結果把Day0持續發燒寫成確證用藥錯誤。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在此時間點，持續發燒不能單獨證明「抗菌藥選錯」：發炎反應需要時間消退，還可能存在嚴重菌血症、感染性阻塞／膿瘍、不同感染源，或本次病原不受目前抗菌藥涵蓋。這些是機轉上需要競爭評估的可能性；原文沒有交代醫師當時逐項考慮的完整過程，不能寫成團隊確實逐項排除了它們。重點是把「現有處置後仍不穩」轉成",
+          "line_for_editor": 15
+        },
+        "4c13191ad4a1130dfc-1": {
+          "role": "case_evidence",
+          "reader_gain": "標定第三天尿培與AST首次提供病原及抗藥證據。",
+          "nonredundancy_reason": "它讓緊接MIC表具有確切檢驗時間與對象。",
+          "verdict": "keep",
+          "excerpt_for_editor": "住院第 3 天，尿培養鑑定與抗菌藥敏感性試驗（AST）顯示 ESBL-producing、廣泛抗藥的 E. coli。同一分離株的原始藥敏表列出：",
+          "line_for_editor": 19
+        },
+        "033a569200c856ac5f-1": {
+          "role": "case_evidence",
+          "reader_gain": "連結ceftriaxone R、換meropenem、Day4/5病程及門診療程。",
+          "nonredundancy_reason": "建立抗菌涵蓋失配與處置改變的可核時間順序。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這才是「本次菌與已使用的 ceftriaxone 不匹配」的直接證據。團隊停用 ceftriaxone，改用 meropenem；原作者記錄第 4 天退燒、生命徵象與症狀改善，第 5 天出院後以 PICC 接續靜脈治療，轉用 ertapenem，carbapenem 療程總計約 10 天；",
+          "line_for_editor": 28
+        },
+        "615f70680204e79ac0-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分體外不敏感的直接證據與治療好轉的因果不確定。",
+          "nonredundancy_reason": "避免把單例改善當成所有初診患者需用carbapenem的證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "臨床推論到此可以收斂：初次推定的感染部位與後來分離出的病原相符；AST 解釋了 ceftriaxone 缺乏體外活性的原因。 但不能再多跨一步，宣稱「第 4 天改善的全部原因必然是 meropenem」。病程同時包含大量輸液、器官支持與自然恢復時間，單一病例沒有對照組；後驗 AST 也不能",
+          "line_for_editor": 30
+        },
+        "0d7517cc1e55bd034f-1": {
+          "role": "case_evidence",
+          "reader_gain": "建立81歲患者休克、腎功能與尿液感染線索。",
+          "nonredundancy_reason": "另一名患者的不同宿主與灌流風險不能被首例代替。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Arai 等人（2021）記載一位 81 歲日本女性，曾有兩次 UTI；她因約三天發燒、食慾不振與活動能力下降就醫。初評 BP 68/36 mmHg、RR 24/min，左側 CVA tenderness；尿液混濁、leukocyte esterase 陽性、尿 WBC >50/HPF。血",
+          "line_for_editor": 34
+        },
+        "f65d44e673567cf6a1-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把UPJ阻塞CT結果轉成抗菌藥無法替代的源頭控制問題。",
+          "nonredundancy_reason": "說明影像為何真正改變介入目標而非增加標籤。",
+          "verdict": "keep",
+          "excerpt_for_editor": "和前一位女性相似，她有支持上泌尿道感染的病史與 PE，也有令人必須立即處理的循環不穩。不同之處來自解剖影像：無顯影 CT 顯示左側 ureteropelvic junction（UPJ）阻塞性病變與含液腔隙，放射科當時判為 abscess。這項影像不是多一個診斷標籤，而是改變了治療問題：倘",
+          "line_for_editor": 36
+        },
+        "04b4ce8d4cf832ed60-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分舊cefcapene暴露與並不存在的舊ESBL AST。",
+          "nonredundancy_reason": "阻止把抗藥風險提示寫成確定已知病原。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這名患者以前曾因 UTI 接受第三代 cephalosporin cefcapene pivoxil。作者在 Discussion 說明：既往用藥使他們懷疑細菌可能對這類藥物抗藥，因此在當次培養尚未出來時先使用 carbapenem。請留意這個理由的實際強度：「以前用過 cephalosp",
+          "line_for_editor": 38
+        },
+        "3d9e8e6fe2cd1b2d41-1": {
+          "role": "decision",
+          "reader_gain": "還原輸液升壓與PCN因休克延後的相互衝突。",
+          "nonredundancy_reason": "凸顯必須同時考慮感染源控制與操作耐受性。",
+          "verdict": "keep",
+          "excerpt_for_editor": "入院後她接受原報告所述 2 L 輸液、norepinephrine 及 carbapenem，但休克持續。團隊希望經皮腎造瘻（PCN）引流，卻因嚴重低血壓、預期臥姿／處置帶來的血流動力風險而暫緩。這是病例最關鍵的兩難：感染源需要排空，但病人也必須能承受完成引流所需的處置。",
+          "line_for_editor": 40
+        },
+        "504cb82c90d3df7347-1": {
+          "role": "case_evidence",
+          "reader_gain": "記錄PMX-DHP與類固醇後PCN、Day4培養及Day65病理。",
+          "nonredundancy_reason": "把介入時間與最終腫瘤診斷分離，不假定是結石。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原作者其後使用 polymyxin B 纖維吸附治療（PMX-DHP）及 hydrocortisone，記錄約 8 小時後血壓恢復，隨即完成 PCN 引流。第 4 天血、尿培養回報 ESBL E. coli，因而延續原先 carbapenem；約兩週後恢復。第 65 天施行左腎輸尿管切除術",
+          "line_for_editor": 42
+        },
+        "ae36528abbc2b819ac-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "否定以單例推定PMX-DHP普遍有效或PCN必要前置。",
+          "nonredundancy_reason": "保留真正可遷移的感染性阻塞需處理原則。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這段病程支持的論證相當清楚：有合理的經驗性抗菌涵蓋，仍不保證受阻塞的感染源已經被控制。 但它不能證明 PMX-DHP 對敗血性休克有普遍存活效益，更不能由這名患者的恢復倒推「PMX-DHP 是進行 PCN 前的必要標準治療」。那些是該院在當時資源及病況下採用的介入，療效與適用性必須由不同層",
+          "line_for_editor": 44
+        },
+        "b3402de6cedb442e56-1": {
+          "role": "counterfactual",
+          "reader_gain": "直接對比兩例CT與AST分別在哪一時點改變決策。",
+          "nonredundancy_reason": "避免將兩例拼成已知舊ESBL且有阻塞的虛構患者。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一例的 CT 未發現急性病變，主要轉折是第 3 天 AST 改變抗菌藥涵蓋判斷；第二例在一開始已發現 UPJ 阻塞，主要轉折是如何在休克下實現解剖性引流。第一例沒有已知既往抗藥暴露，第二例有既往 cephalosporin 治療，但兩例都沒有提供首劑前已知 ESBL 舊培養 AST 的證",
+          "line_for_editor": 48
+        },
+        "be8b26b466abdc1670-1": {
+          "role": "causal_bridge",
+          "reader_gain": "明示抗菌涵蓋與解剖引流是相互相關但不等價的目標。",
+          "nonredundancy_reason": "它把兩個病例的比較提煉成單一臨床推論。",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此第一例不能用來證明「舊 ESBL 如何選首劑」，第二例也不能被寫成「carbapenem 已涵蓋，所以只剩等藥效」。兩例真正能共同建立的是：菌種與藥敏是否對、解剖感染源是否受控，是彼此相關但不能互相替代的問題。",
+          "line_for_editor": 50
+        },
+        "a95129c2d32389f26b-1": {
+          "role": "navigation",
+          "reader_gain": "將病例不能回答的舊ESBL問題轉交經驗性指南。",
+          "nonredundancy_reason": "這是從病例證據層切換至指南層的必要路標。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個問題可以回答，但目前兩個病例都不是它的直接病例證明。需要另外使用針對經驗性用藥的研究與指南，而不是把第二例的既往 cefcapene 暴露偷換成舊 ESBL 檢驗結果。",
+          "line_for_editor": 54
+        },
+        "8119bf4322fb6016ad-1": {
+          "role": "decision",
+          "reader_gain": "核對IDSA 2025嚴重度、舊培養、病人限制與院內菌譜四步。",
+          "nonredundancy_reason": "提供未知AST時的選藥方法，而非用事後藥敏回填。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在高度懷疑 cUTI／腎盂腎炎、當次 AST 未知的情境，選藥是風險下的決策。按照 IDSA 2025 cUTI 指引 的原 Figure 1.1與候選藥物 Table 1.1 四步邏輯，先評估疾病嚴重度，再問最近有沒有本人先前的尿培菌種、抗藥紀錄及抗生素暴露，接著納入過敏、交互作用、器官",
+          "line_for_editor": 56
+        },
+        "5cf599605424160f2e-1": {
+          "role": "counterfactual",
+          "reader_gain": "用明示不同患者的舊ESBL尿培測試經驗選藥更新。",
+          "nonredundancy_reason": "防止將過去抗藥等同本次MIC或不問感染症狀就治療。",
+          "verdict": "keep",
+          "excerpt_for_editor": "假設一名另外的患者在此次就醫前幾個月曾分離出 ceftriaxone-resistant ESBL E. coli，這是合理且重要的先驗證據：相較於沒有這項紀錄，當次同一類抗藥菌造成 cUTI 的可能性提高，該藥作為經驗性涵蓋選項的可信度降低。IDSA 2025 也建議避免使用患者先前尿培",
+          "line_for_editor": 58
+        },
+        "0149c24e79429595c4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以PBP與ESBL水解範圍解釋抗藥但不外推完整AST。",
+          "nonredundancy_reason": "把國考酵素機轉與臨床藥敏不確定性分開。",
+          "verdict": "keep",
+          "excerpt_for_editor": "ESBL 的分子機轉幫助理解這項風險：β-lactam 抗菌藥主要結合細菌 PBP，抑制細胞壁合成；典型 ESBL 能水解 cefotaxime、ceftriaxone 與 aztreonam 等藥物，因此藥物即使到達感染部位，也可能在作用前失去活性。然而 ESBL 並不會直接告訴我們本次",
+          "line_for_editor": 60
+        },
+        "9fbc1bb7d55cc18703-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "分清2025經驗性cUTI與2026已知AST後AMR建議。",
+          "nonredundancy_reason": "阻止Day3定向治療或單例十天療程被誤用為首劑規則。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這也解釋為什麼不能用同一份指南解答所有時間點：IDSA 2026 AMR Guidance 的 ESBL-E 確定性治療建議，主要假設病原已辨識、候選藥物的當次體外感受性已確認；它明言具體經驗性治療超出該文件的主要範圍。第 0 天要回答的是「在結果未知時如何選較可能有效且安全的起始方案」；",
+          "line_for_editor": 62
+        },
+        "40c8d7f668555d71da-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以MERINO血流感染族群限制pip-tazo推論並回到source control。",
+          "nonredundancy_reason": "區分比較性證據與兩個病例所能支持的決策。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果已確認是侵襲性 ESBL 相關感染，則須進一步核對適用的比較性研究。例如 MERINO 隨機試驗 對 ceftriaxone-resistant E. coli／Klebsiella 菌血症比較 piperacillin/tazobactam 與 meropenem，結果未支持前者的非",
+          "line_for_editor": 64
+        },
+        "c21efeccfeb6a909e0-1": {
+          "role": "decision",
+          "reader_gain": "用阻塞、藥敏R或診斷改判三種情境選下一個行動。",
+          "nonredundancy_reason": "這是病例推理轉成值班再評估的分歧點。",
+          "verdict": "keep",
+          "excerpt_for_editor": "若病人最初被懷疑為上泌尿道感染，後來發現血壓持續惡化、尿路影像有阻塞，優先要問的是是否有需緊急 source control 的病灶，不能只想「再換更廣的抗生素」。若影像沒有阻塞，但當次尿培與 AST 顯示目前用藥 R，則抗菌涵蓋假設必須修正，同時繼續追蹤全身感染與器官功能。若後續培養提示",
+          "line_for_editor": 68
+        },
+        "2c1af471eed0e12e4d-1": {
+          "role": "safety",
+          "reader_gain": "列出循環、引流、降階、療程與當院核藥的安全邊界。",
+          "nonredundancy_reason": "防止把真實外國病例轉成可複製的EMR醫囑。",
+          "verdict": "keep",
+          "excerpt_for_editor": "反過來，病人改善也不能只留下「抗生素有效」四個字。應該追問：循環支持是否仍需要？是否已確認沒有待引流的感染源？培養是否能合理解釋病情？能否安全縮窄抗菌藥或改口服？療程的起點、感染源控制時間與仍未解決的器官功能問題是什麼？這些決策須看臨床狀態、當院抗藥與藥品資料、藥物過敏／腎功能，以及個別病",
+          "line_for_editor": 70
+        },
+        "bdf76c206f56863d28-1": {
+          "role": "source_context",
+          "reader_gain": "核對111-2 Q60的典型ESBL水解題與處方外推界線。",
+          "nonredundancy_reason": "把正式國考機轉與床邊AST判斷明確分離。",
+          "verdict": "keep",
+          "excerpt_for_editor": "考選部原題、答案及更正資料中，這題考的是典型 ESBL 的酵素水解範圍：cefotaxime（①）與 aztreonam（②）屬典型可水解目標，ertapenem（③）不是典型直接水解目標；官方答案為 A（①②）。這個答案建立的是機轉知識，而不是「ESBL 感染者的 ertapenem 一",
+          "line_for_editor": 74
+        },
+        "5784d1427dbb54ffef-1": {
+          "role": "navigation",
+          "reader_gain": "整合臨床邏輯、時序檢查與研究指南三層證據。",
+          "nonredundancy_reason": "為讀者建立回查來源的終點，不再引入第三個病例。",
+          "verdict": "keep",
+          "excerpt_for_editor": "讀完兩個真實病例，可以分清三層：臨床邏輯先產生並排列感染源、抗藥與阻塞等可能性；當時取得的檢查逐步改變這些可能性的權重；guideline／比較研究則在適用條件下約束治療選擇與效果推論。病例原始數據、圖像、研究與國考出處列於原始來源與證據界線。",
+          "line_for_editor": 76
         }
       }
     },
