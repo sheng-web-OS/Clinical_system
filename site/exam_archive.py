@@ -160,6 +160,8 @@ def validate_exam_catalog(pages, root=None):
             _validate_identity(link)
             if "embed" in link and not isinstance(link["embed"], bool):
                 raise ValueError("Related exam embed flag must be a boolean")
+            if link.get("embed") is False and not link.get("concept_heading"):
+                raise ValueError("Link-only related exam requires an exact H2 teaching section")
             key = question_key(link)
             if key not in records:
                 raise ValueError("Related exam is not a published official question: " + repr(key))
@@ -334,6 +336,49 @@ def render_related_questions(page, records, rendered):
     return '<section class="article reading-prose related-exams" id="related-exams" aria-labelledby="related-exams-title"><h2 id="related-exams-title">相關國考題</h2>' + ''.join(cards) + '</section>'
 
 
+def add_lesson_exam_backlinks(page, catalog, body, root):
+    """Give every link-only concept section a small exact return to its official year/Q.
+
+    No question stem, answer, options or internal metadata are copied into the
+    clinical article. Reader-facing links remain attached to the teaching H2.
+    """
+    links = [link for link in page.get("related_exams", []) if link.get("embed") is False]
+    if not links:
+        return body
+    headings = _headings(root, page, 2)
+    grouped = defaultdict(list)
+    for link in links:
+        section = headings.index(link["concept_heading"]) + 1
+        record = catalog[question_key(link)]
+        e = record["exam"]
+        label = f'{e["year_roc"]} 年第{"一二三四"[e["sitting"] - 1]}次 · {e["subject"]} Q{e["question_number"]}'
+        href = "xiaoma-exams.html#" + archive_anchor(record)
+        grouped[section].append(
+            '<li><a href="' + escape(href, quote=True) + '">' +
+            escape(label) + '</a><small>' + escape(record["topic"]) + '</small></li>'
+        )
+    marks = list(re.finditer(r'<h2 id="part-(\\d+)">', body))
+    available = {int(m.group(1)) for m in marks}
+    if not set(grouped) <= available:
+        raise ValueError("Missing rendered section for link-only year/question backlinks: " + page["source"])
+    inserts = []
+    for i, heading in enumerate(marks):
+        section = int(heading.group(1))
+        if section not in grouped:
+            continue
+        end = marks[i + 1].start() if i + 1 < len(marks) else len(body)
+        questions = grouped[section]
+        label = f'用 {len(questions)} 道歷屆國考題檢驗本節'
+        markup = ('<details class="lesson-exam-backlinks" data-section="part-' + str(section) +
+                  '"><summary>' + escape(label) +
+                  '</summary><nav aria-label="回到對應年度與題號"><ul>' +
+                  ''.join(questions) + '</ul></nav></details>')
+        inserts.append((end, markup))
+    for end, markup in sorted(inserts, reverse=True):
+        body = body[:end] + markup + body[end:]
+    return body
+
+
 def connect_exam_reading(pages, rendered, root):
     """Return decorated bodies and supplements; original Markdown stays intact."""
     records = question_records(pages)
@@ -361,7 +406,8 @@ def connect_exam_reading(pages, rendered, root):
             inserts.append((end, '<aside class="exam-question-return">' + links + year + '</aside>'))
         for end, markup in sorted(inserts, reverse=True):
             body = body[:end] + markup + body[end:]
+        body_with_returns = add_lesson_exam_backlinks(page, catalog, body, root)
         supplement = render_related_questions(page, catalog, rendered)
-        if inserts or supplement:
-            results[page["output"]] = (body, supplement)
+        if inserts or supplement or body_with_returns != body:
+            results[page["output"]] = (body_with_returns, supplement)
     return results
