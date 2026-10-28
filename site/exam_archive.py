@@ -207,11 +207,30 @@ def question_connections(pages, root):
     concept heading within that same page. Do not relabel that destination or
     another question bank as a second "教材" entry.
     """
+    # A preserved original and its explicitly approved integrated successor are
+    # two versions of one reading, not two separate study materials. Suppress the
+    # original only for exam questions also linked by the successor, so unrelated
+    # historical exam connections remain discoverable.
+    originals = {
+        page["output"]: page for page in pages
+        if page.get("kind") == "historical_original"
+    }
+    replaced_question_links = {
+        (primary["replaces_original"], question_key(link))
+        for primary in pages
+        if primary.get("kind") == "ai_integrated"
+        and primary.get("replaces_original") in originals
+        and primary.get("collection") ==
+            originals[primary["replaces_original"]].get("collection")
+        for link in primary.get("related_exams", [])
+    }
     links = defaultdict(list)
     for page in pages:
         if page.get("kind") == "exam_compilation" or page.get("exam"):
             continue  # Exam-answer collections remain reachable by the Q entry itself.
         for link in page.get("related_exams", []):
+            if (page["output"], question_key(link)) in replaced_question_links:
+                continue
             links[question_key(link)].append({"page": page, "href": concept_url(page, link, root), "focus": link["focus"]})
     return links
 
