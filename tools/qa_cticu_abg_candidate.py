@@ -95,6 +95,25 @@ def main():
                               and all(x["width"] <= width for x in expected))
                         page.screenshot(path=str(out / f"abg-{label}-{width}-chart-viewport.png"), full_page=False, timeout=15000)
                         page.locator("figure").first.screenshot(path=str(out / f"abg-{label}-{width}-figure.png"), timeout=15000)
+                        if label == "04":
+                            # The small-font concept graphic must offer a functioning
+                            # reader-initiated, independently zoomable native SVG.
+                            zoom_link = page.locator('figure a[href$=".svg"]')
+                            zoom_ok = zoom_link.count() == 1
+                            if zoom_ok:
+                                with page.expect_popup(timeout=10000) as opened:
+                                    zoom_link.click(timeout=10000)
+                                zoom_page = opened.value
+                                zoom_page.wait_for_load_state("load", timeout=10000)
+                                zoom_ok = (zoom_page.url.endswith(svg.name)
+                                           and zoom_page.locator("svg").count() == 1)
+                                if zoom_ok:
+                                    zoom_page.screenshot(
+                                        path=str(out / f"abg-{label}-{width}-zoom-opened.png"),
+                                        full_page=False, timeout=15000)
+                                zoom_page.close()
+                            ok = ok and zoom_ok
+                            measurements["native_svg_zoom_link"] = "PASS" if zoom_ok else "FAIL"
                         results.append({"article": label, "viewport": width,
                                         "status": "PASS" if ok else "FAIL",
                                         **measurements})
