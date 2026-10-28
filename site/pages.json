@@ -3114,5 +3114,28 @@
     "section": "參考資料",
     "navigation": false,
     "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-pneumothorax-mechanism-decisions.md",
+    "output": "xiaoma-20261028-pneumothorax.html",
+    "title": "氣胸：肺為什麼會回縮？為什麼不是每一個氣胸都要放胸管？",
+    "subtitle": "從胸膜腔壓力、危急分流、觀察與抽氣，到 VATS 與月經相關氣胸",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "pending_independent_review",
+    "references": "xiaoma-pneumothorax-sources.html"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pneumothorax-sources.md",
+    "output": "xiaoma-pneumothorax-sources.html",
+    "title": "氣胸教材｜指南、研究與病例來源",
+    "subtitle": "BTS／ERS 指南、原始 RCT、真實病例與正式國考核對",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
