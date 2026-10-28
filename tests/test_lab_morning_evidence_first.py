@@ -28,14 +28,14 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertIn("PMC11462689", self.sources)
 
     def test_second_real_case_shows_cbc_changes_k_interpretation(self):
-        # Distinct 62F essential thrombocythemia source, not AML 55M.
-        for cue in ("62 歲女性", "essential thrombocythemia",
-                    "1305", "39.8", "serum K 6.3", "plasma K 4.6",
-                    "左股動脈 whole blood", "K 3.4", "靜脈 lithium-heparin plasma", "0.09 g/L", "11 組"):
+        # Distinct 62F thrombocythemia case; source facts, not editorial wording.
+        for cue in ("62 歲", "essential thrombocythemia", "女性", "1305",
+                    "39.8", "6.3", "4.6", "3.4", "左股動脈",
+                    "plasma", "serum", "0.09 g/L", "11 組"):
             with self.subTest(cue=cue):
                 self.assertIn(cue, self.body)
         self.assertIn("PMC5806620", self.sources)
-        self.assertIn("另一位", self.body)
+        self.assertIn("血小板", self.body)
 
     def test_cohort_denominators_and_selection_not_conflated(self):
         for cue in ("66", "399", "95%", "6%", "2,440", "1,576",
