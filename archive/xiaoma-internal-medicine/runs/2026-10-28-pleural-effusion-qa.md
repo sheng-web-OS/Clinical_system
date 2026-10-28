@@ -1,5 +1,16 @@
 # 2026-10-28 09:00｜胸水主線：來源、圖表、真題與發布稽核（PRIVATE）
 
+## 最新來源恢復狀態（2026-10-28；覆蓋下方 09:00 歷史阻擋判定）
+
+- **Pocket 9E PDF p.94–96 ORIGINAL SOURCE IMAGE = VERIFIED（私人來源核讀）**。本輪從私人 ChatGPT Library 已授權原始檔成功取得原始 PDF bytes（PDF 共 **464 頁**），在私人環境以 180 dpi 實際渲染 PDF 第 94、95、96 頁並分頁目視；之前 "raw-byte materialization denied / images unavailable" 只代表先前工作階段的一次工具失敗，**不再是當下有效的 Pocket 來源阻擋**。不得把這個暫存位置、PDF bytes 或頁面影像加入 GitHub/公開網站。
+- p.94：確認 PLEURAL EFFUSION 章節起點、systemic/local factors、transudates/exudates 病因列表和段落脈絡；不是獨立的決策流程圖。
+- p.95：確認 **Transudative vs. Exudative Effusions** 原表為左右兩欄 **Light's Criteria / Three-Test Rule**，表格下方的 sensitive/specific 說明屬於各自欄位，不得錯配；並核對 pseudoexudate、parapneumonic/empyema 備註及 **Additional pleural fluid studies**。原表一個 Light 判準即屬陽性、兩項符合所附 Se/Sp 是特定敘述，勿將兩者混淆。
+- p.96：確認原表標題 **Characteristics of Pleural Fluid (not diagnostic criteria)**；各列 WBC differential、pH、glucose 僅為典型特徵，**不可寫成診斷門檻**。同頁 Treatment 的舊式 >½ hemithorax 與 tPA/DNase 敘述仍須以 BTS 2023 等當代來源判斷。p.96 chylothorax 行為 TG >100 mg/dL，與 p.94–95 >110 mg/dL 的摘要表述不一致；標記為原書內部用值差異，不可抹平為單一 universal cutoff。
+- **SOURCE ACCESS blocker = RESOLVED；POCKET IMAGE INSPECTION = VERIFIED；PUBLIC RIGHTS = NOT_VERIFIED（受版權保護，不公開重製）；MEDICAL APPROVAL = HOLD**。此為來源完整性驗證，**不是**獨立臨床醫師 peer review，也不是網站發布驗收。
+- **仍待**：BTS 2023 原始流程圖/附註與現行臨床分層的對照；112（一）醫三 Q45、114（一）醫三 Q48、115（二）醫三 Q49 官方原卷/更正答案核讀；獨立醫學與教學 QA、所有來源權利判定、原創 figure/semantic gate、同 HEAD CI、私人預覽與 360/375/390px 手機 QA。PR #188 繼續 Draft/HOLD，不更新公開 manifest、不部署。
+- **恢復執行規則**：下一輪先讀本節，再檢查既有證據；同一來源同一階段已成功時禁止重試舊的 raw-byte 失敗路徑，直接處理尚未驗證的下一項。若來源又失效，須記錄新 failure 的「檔案版本/工具/時間/具體錯誤」，不能讓舊 failure 重新覆蓋成功狀態。來源可讀／醫學可採／版權可公開／工程已通過／正式已發布，必須分開記錄。
+
+
 ## 事實基線
 - 核對當次起點 main SHA：`c6225ec59127b623b0801ffc2868dd5268715473`；本次僅在獨立 draft 分支寫入新稿，不改 main、manifest 或公開目錄。
 - 依 `archive/xiaoma-internal-medicine/current-plan.md` 第 10–12 節選擇 A 級胸水。main `site/pages.json` 106 項中**沒有同等深度的獨立胸水主文**；肺炎主文與 113（二）醫學（三）Q49 只觸及感染性胸水。沒有將舊文改名重發。
@@ -11,7 +22,7 @@
 - **實際閱讀 PDF 頁 94–96 的完整可抽取文字**；第 94 頁 `PLEURAL EFFUSION`：Pathophysiology / Transudates / Exudates；第 95 頁 `Initial diagnostic studies`、`Transudative vs. Exudative Effusions`（左右 `Light’s Criteria` 與 `Three-Test Rule`）、`Additional pleural fluid studies`；第 96 頁 `Treatment`。
 - 第 95 頁表的文字門檻：Light 三條 >0.5、>0.6、>2/3 ULN；Three-Test Rule 胸水 cholesterol >55 mg/dL、LDH >200 U/L、cholesterol ratio >0.3；本次公開候選只採 Light 原理及**獨立教學整理**，沒有複製原表或將另一欄冒充 Light。
 - 文字核讀到原書：CHF 利尿後 pseudoexudate、胸水 glucose <60 mg/dL 可能感染／腫瘤／RA、Hct ratio >50% 血胸、TG >110 mg/dL 乳糜胸、pH <7.2／glucose <60 舊式 complicated effusion 概念。
-- **圖像硬門檻：未通過。** Files pages 模式曾回傳第 95、96 頁 image pointer，但像素渲染為 `Image unavailable`；嘗試合法 Library raw-byte materialization 被拒絕（無 authorized raw-byte path）。因此**沒有逐像素確認表框、caption、footnote、相鄰圖表與版面**；不把文字提取冒稱目視原表。原書圖像的合法公開引用／授權也未評估完成。不可將 PDF、擷取圖片或私有書檔加入網站。
+- **歷史圖像阻擋（09:00，現已解除；見頁首最新狀態）。** Files pages 模式曾回傳第 95、96 頁 image pointer，但像素渲染為 `Image unavailable`；嘗試合法 Library raw-byte materialization 被拒絕（無 authorized raw-byte path）。當時**尚未逐像素確認表框、caption、footnote、相鄰圖表與版面**；該歷史判定已被頁首本輪 180 dpi 核讀取代。原書圖像的合法公開引用／授權也未評估完成。不可將 PDF、擷取圖片或私有書檔加入網站。
 - 舊書「>1 cm 一律抽」及 5–10% PTX 風險數字不可直接當現行程序規範；以 BTS 2023 的超音波安全評估與具體情境判斷為準。原書 glucose <60 與 BTS 2023 中間風險 glucose ≤4.0 mmol/L（72 mg/dL）及無 pH 時 <3.3 mmol/L 的**用途不同**，正文已分開，不能誤寫成互相矛盾或同一個通用胸管 cutoff。
 
 ## 2023 BTS 來源核查
@@ -39,11 +50,11 @@
 ## 獨立 QA／工程／發布決策
 - 自我臨床檢查：Light 分類≠病因；pH ≠ 動脈 pH；中間風險 pH 不可忽略 LDH/glucose/septation；膿液先引流；低 pH 需鑑別 RA/malignancy；胸管失敗需重評；原書過時抽液門檻不照抄。已完成作者側核查，**不是獨立醫師審查**。
 - 因果與敘事：病例從兩人對照→抽液價值→超音波→Light→pseudoexudate→感染性積液引流→引流失敗→反事實；避免把作者 metadata 寫入正文。尚未完成獨立 EPQC 七軸盲審。
-- Figure gate：**HOLD**（Pocket 原表視覺與 caption/footnote 未完成；BTS decision tree 原像素未核對）；考題：**HOLD**（官方原卷/更正本輪未核實）；獨立醫學審稿：**NOT_VERIFIED**；手機/深色模式：**NOT_VERIFIED**；CI：提交 PR 後另讀 workflow，未驗證不得填 PASS；production：**NOT_PUBLISHED**。
+- Figure gate：**HOLD**（Pocket p.94–96 本輪已核讀，但 BTS decision tree 原像素仍未核對，原圖公開重製權未確認）；考題：**HOLD**（官方原卷/更正本輪未核實）；獨立醫學審稿：**NOT_VERIFIED**；手機/深色模式：**NOT_VERIFIED**；CI：提交 PR 後另讀 workflow，未驗證不得填 PASS；production：**NOT_PUBLISHED**。
 - 不更新 `site/pages.json` 或 `audit/figure-gate.json`，不冒用 `represented`。權利不明的原書圖不公開。
 
 ## 下一輪最小可行修復
-1. 以有授權、能真正顯示像素的 PDF 讀取方式目視第 94–96 頁，逐欄核 Light/Three-Test/Additional studies/Treatment，寫明 footnote 與原表引用邊界；若權限持續阻擋則保持 HOLD，不能換成裝飾圖湊數。
+1. **Pocket p.94–96 圖像核讀已在本輪完成**（詳頁首），不再重試失效工具。下一個來源缺口是 BTS 2023 原始 flowchart/footer 及正式國考原卷/更正，不可拿 Pocket 的已讀取成功冒充其他來源已通過。
 2. 取得官方 112（一）Q45、114（一）Q48、115（二）Q49 的原卷及正式更正表影像，逐題確認身分、答案、選項與頁次；對已存在 113（二）Q49 只做跨頁引用。
 3. 獨立臨床/教學審稿，特別反測 pH 7.3 + LDH 高、pH ≥7.4 + septations、心衰 pseudoexudate、無安全窗口與抗凝/出血風險；視審查結果修正文稿。
 4. 原圖與真題過關後才移入 `content/xiaoma-internal-medicine/lessons/`、建立公開來源頁與 figure gate、更新 manifest，完整 CI + Cloudflare production SHA + HTTPS body + 360/375/390px 驗收。
