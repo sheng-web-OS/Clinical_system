@@ -4302,7 +4302,7 @@
         "8a2543af0cfab24aa3-1": {
           "role": "case_evidence",
           "reader_gain": "說明四筆檢體按時間、基質、儀器和運輸重排。",
-          "nonredundancy_reason": "讓讀者先看見條件差異再解讀鉀濃度。",
+          "nonredundancy_reason": "讓讀者在比較 K 數值之前先辨識時間、檢體基質、分析儀器與運輸的條件差異。",
           "verdict": "keep",
           "excerpt_for_editor": "原文 Table 1 的採檢時間與運送方式，比單純比較 K 的大小更值得先看。以下是從原表抽出、重新整理的四筆同一名 AML 患者資料，並沒有把不同檢體視為同條件重測：",
           "line_for_editor": 13
@@ -4414,7 +4414,7 @@
         "8da25ba9403e670b76-1": {
           "role": "source_context",
           "reader_gain": "明確切換到不同心衰研究群體而非延伸AML病史。",
-          "nonredundancy_reason": "保護跨病人來源身分，避免病例拼裝。",
+          "nonredundancy_reason": "明確保護跨病人來源身分，避免將心衰竭研究的病程拼裝進原 AML 病例。",
           "verdict": "keep",
           "excerpt_for_editor": "這裡切換到另一批不同病人與不同證據，不是在前述 AML 病人身上加寫心衰竭。",
           "line_for_editor": 105
@@ -4477,7 +4477,7 @@
         },
         "aec5e312b219131226-1": {
           "role": "counterfactual",
-          "reader_gain": "反駁AKI等於利尿過量造成缺水。",
+          "reader_gain": "反駁將 AKI 定義直接當作利尿過量、血容量不足的病因診斷。",
           "nonredundancy_reason": "要求由病因證據而非定義直接跳到補液或停藥。",
           "verdict": "keep",
           "excerpt_for_editor": "誤解三：發現 AKI 就代表利尿藥造成缺水。 AKI 的定義不直接提供病因。血流動力、鬱血程度及治療反應是另一組必須解釋的證據；來源是心衰竭研究與專業指引；不應藉虛構的 Hb、Mg 或 Cr 數據替病人補寫未曾觀察的病程。",
@@ -4494,7 +4494,7 @@
         "e7b51150ed4adc7933-1": {
           "role": "navigation",
           "reader_gain": "提問AML Table1中體內濃度與試管釋鉀的分別。",
-          "nonredundancy_reason": "提供主動提取而非再次重述答案。",
+          "nonredundancy_reason": "這是要求讀者回到原始 Table 1 主動辨認測量對象，而非再次閱讀已給的答案。",
           "verdict": "keep",
           "excerpt_for_editor": "構念：實驗室的 K 是病人體內濃度，還是也可能包含檢體外釋放的鉀？AML 原始 Table 1 哪些資訊證明這個問題很重要？",
           "line_for_editor": 139
@@ -4502,7 +4502,7 @@
         "6a33692ca1620afe10-1": {
           "role": "navigation",
           "reader_gain": "提問66人外推與2440人分母的競爭限制。",
-          "nonredundancy_reason": "檢驗能否在兩份研究間維持獨立母體。",
+          "nonredundancy_reason": "檢驗讀者能否在兩份納排不同的研究間維持獨立母體與正確分母，不混合估計。",
           "verdict": "keep",
           "excerpt_for_editor": "臨床推理：66 人的低風險研究，為什麼不能幫 70 歲 CKD 心衰竭患者做完整治療決策？2,440 人研究的分母又是誰？",
           "line_for_editor": 140
@@ -4510,7 +4510,7 @@
         "5b1f30bd959995cd1d-1": {
           "role": "navigation",
           "reader_gain": "提問Cr上升在不同去鬱血條件下的改判。",
-          "nonredundancy_reason": "要求補床邊證據才進入治療討論。",
+          "nonredundancy_reason": "要求補齊灌流、鬱血、尿量與治療反應等床邊證據，才可進入治療方向的討論。",
           "verdict": "keep",
           "excerpt_for_editor": "破除推論：為何「Cr 上升」同時可能見於有效去鬱血和病況惡化？還要補哪些床邊證據，才有資格從生理假說進入治療討論？",
           "line_for_editor": 141
