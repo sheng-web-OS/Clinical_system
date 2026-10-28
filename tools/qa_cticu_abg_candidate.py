@@ -69,11 +69,13 @@ def main():
                         page = browser.new_page(viewport={"width": width, "height": 900},
                                                 device_scale_factor=1)
                         page.goto(doc.as_uri(), wait_until="load", timeout=20000)
-                        page.wait_for_function("() => Array.from(document.images).every(i => i.complete)", timeout=10000)
+                        page.wait_for_timeout(750)  # bounded; broken images must be reported, not awaited indefinitely
                         measurements = page.evaluate("""() => ({
                             scrollWidth: document.documentElement.scrollWidth,
                             clientWidth: document.documentElement.clientWidth,
                             images: [...document.querySelectorAll('img')].map(x => ({
+                                src: x.getAttribute("src"),
+                                complete: x.complete,
                                 naturalWidth: x.naturalWidth,
                                 naturalHeight: x.naturalHeight,
                                 width: x.getBoundingClientRect().width
