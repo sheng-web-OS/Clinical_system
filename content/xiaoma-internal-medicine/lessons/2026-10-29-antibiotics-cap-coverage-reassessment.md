@@ -2,7 +2,7 @@
 
 一名 69 歲男性因為持續十天的發燒和呼吸困難來到急診。胸部 X 光有雙側多處浸潤，血氧只有 91%。醫師還不知道是哪種病原造成肺炎，卻不能等所有培養和抗原報告回來才開始治療，因此先給予 ceftriaxone 與 azithromycin。這套組合原本就包含能對抗 Legionella 的藥物。
 
-然而，住院後他仍然發燒，鼻導管氧氣也減不下來。團隊進一步安排胸部 CT，將抗菌藥改為 cefepime；直到第 4 天，積水暴露史與 Legionella 尿液抗原陽性的結果才一起出現。之後改用 levofloxacin，病況逐漸恢復。[Spretz 等人的 2024 年病例報告](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
+然而，住院後他仍然發燒，鼻導管氧氣也減不下來。團隊進一步安排胸部 CT，並將經驗性抗菌涵蓋擴大至 cefepime；原報告沒有記載當時其他抗菌藥是否停用。直到第 4 天，積水暴露史與 Legionella 尿液抗原陽性的結果才一起出現。之後改用 levofloxacin，病況逐漸恢復。[Spretz 等人的 2024 年病例報告](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
 
 這個病例難在：**「藥物有涵蓋病原」不等於「病人此刻必定退燒」，而「換藥後改善」也不等於「原來的藥已被證明無效」。** 要知道何時應改藥，得先重建當時的病情，再問哪些可能的機轉能解釋持續缺氧，以及新取得的資料究竟排除了什麼、沒有排除什麼。
 
