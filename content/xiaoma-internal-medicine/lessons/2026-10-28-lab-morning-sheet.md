@@ -29,11 +29,13 @@
 
 [AJKD *Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025*](https://pubmed.ncbi.nlm.nih.gov/39396361/) 將採血、運送、保存、分析與報告等環節放在同一條檢驗鏈中。細胞內鉀遠高於細胞外；若細胞在**身體外**的檢體中破裂，量得的 K 就可能高於病人體內的濃度。這與病人體內真正發生溶血或高血鉀不是同一件事。**先釐清測量值如何形成，再判斷它是否反映病人體內的變化**，才不會把檢驗誤差誤認為疾病，也不會用「可能是誤差」排除急症。
 
-### 另一個真實病人：這次是 platelet，而不只是極端 WBC
+### 如果不是白血球，而是血小板特別高？
 
-不要把 AML 個案的「氣送管＋脆弱白血球」當成唯一一種偽高血鉀。2018 年 Šálek 報告的是**另一位 62 歲女性**，她有 essential thrombocythemia，因胃潰瘍出血接受手術後暫停原本的血液疾病用藥。[原始病例與 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/) 當次抽血顯示 **platelets 1305×10⁹/L、WBC 39.8×10⁹/L、serum K 6.3 mmol/L**。改看不同採樣位置與方法的檢體，**靜脈 lithium-heparin plasma K 4.6、左股動脈 whole blood（blood-gas analyzer）K 3.4 mmol/L**。這並非只改變試管基質、其他條件完全相同的配對實驗；採血位置及分析方法也不同，不能把數值落差全歸因於凝血時血小板釋鉀。即使原文 serum free haemoglobin **0.09 g/L**，仍可見血清和其他檢體之間明顯矛盾；這說明**沒有明顯紅血球溶血警訊，也不能單憑它排除偽高血鉀**。
+AML 患者的問題可能出現在運送途中，但另一種情況是在**試管凝血的過程**才使血鉀升高。2018 年 Šálek 報告一位 **62 歲 essential thrombocythemia 女性**，因胃潰瘍出血接受手術並暫停原本的血液疾病治療。她的 **platelets 1305×10⁹/L、WBC 39.8×10⁹/L**，血清（serum）K **6.3 mmol/L**；改採抗凝的靜脈 plasma，K 是 **4.6 mmol/L**，左股動脈全血的血氣分析則是 **3.4 mmol/L**。[原始病例與 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/)
 
-為什麼 platelet 會影響 K？**Serum 需要凝血，血小板在此過程可能釋出細胞內的 K**；抗凝的 plasma 不經相同凝固過程，而 whole blood 的前處理又不同。作者認為血小板與白血球增加、檢體離心時細胞可能受損，均有助於解釋結果。原文還有**11 組**血清 K 與 platelet 配對（Spearman ρ **0.64**）；這是同一位病人的時間序列相關，**不是**證實每個血小板高的病人都可直接把 serum K 扣掉固定數值，也不是敏感度／特異度。這段不同病人的真實資料，讓你看到 **CBC 可以成為 chemistry panel 的解釋前提**；然而臨床危險是否須立即處理，仍不能由個案報告單獨批准。
+為什麼同一名病人的三份檢體會相差這麼多？Serum 採檢須經凝血，當血小板數量極高，凝血過程可能使血小板釋出更多細胞內的鉀；抗凝 plasma 避開了相同的凝固程序。因此，**血小板增加可能讓 serum K 高於病人當下的體內血鉀**。不過，這三次採血連部位與分析方法也不相同，還不能把 6.3 與 3.4 的全部差距都算在血小板釋鉀上。即使 serum free haemoglobin 只有 **0.09 g/L**，也不能只憑沒有明顯紅血球溶血訊號，就排除這種檢體失真。
+
+這個病例也追蹤了 **11 組**血清 K 與 platelet 的變化，兩者呈正相關（Spearman ρ **0.64**）。它強化了「血球數量會影響某些檢體血鉀」的懷疑，卻不能據此為每位血小板偏高的患者訂出固定的 K 扣除值。**讀 chemistry panel 時，CBC 有時不是另一張獨立的報告，而是解釋化學數值可信度所必需的資訊。** 但這並不能取代患者當下的急症評估。
 
 ## 第二問｜醫師取得新證據後，為什麼可能改變判斷？先看研究真正包含哪些病人
 
@@ -41,7 +43,7 @@
 
 這結論**不能搬到所有病房病人**。原研究刻意排除 **65 歲以上、eGFR <60、使用可能影響 K 的藥物、血液惡性疾病**等情況，也排除重抽前已接受降鉀治療者。例如一名 70 歲、使用 ACEi 且懷疑 AKI 的心衰竭病人，**不在這 66 人的驗證族群內**；不能以這項研究保證「檢體有溶血，就不需評估或處理危急高鉀」。
 
-**研究設計還有一個更根本的限制：** Wilson 等人從 EHR 找到有「初次溶血高 K、後續重抽」紀錄的 399 次就診，再依事先條件排除 333 次，才得到 66 次。原文 Limitations 另記載 **35 例未重抽就已離院**而排除在分析外。換言之，這項前瞻性觀察研究檢驗的是「符合條件、且實際有重抽者」的結果；**它並沒有把『不重抽』與『重抽』隨機比較，也未直接驗證省略重抽後的安全結局**。因此 0/66 不是醫囑層級的『可放心不追查』保證，尤其不能推給 AML、CKD、心電異常或循環不穩者。[原研究 Methods／Limitations](https://westjem.com/articles/accuracy-of-hemolyzed-potassium-levels-in-the-emergency-department.html)。
+如果進一步問：「既然這 66 人重抽都正常，遇到下一名檢體溶血的病人，是否可以省去重抽？」答案仍然是否定的。Wilson 等人起初找到 **399 次**已經有重抽紀錄的急診就診，排除 **333 次**不符合條件者，才留下 66 次；研究另外提到 **35 例未重抽即離院**，並未納入這個分析。也就是說，**研究只觀察了符合條件而且實際重抽的人，沒有比較『不重抽』和『重抽』兩組病人的臨床結局**。66 人中未觀察到持續性高鉀，不能轉換成對 AML、CKD、心電異常或循環不穩患者「不必追查」的保證。[研究方法與限制](https://westjem.com/articles/accuracy-of-hemolyzed-potassium-levels-in-the-emergency-department.html)。
 
 接著讀 2025 年 *West J Emerg Med* 回溯性研究 [Hyperkalemia or Not? A Diagnostic Pitfall in the Emergency Department](https://pmc.ncbi.nlm.nih.gov/articles/PMC11908522/)：研究的是**初次 K ≥5.0 且當日有重抽的 2,440 名急診患者**，其中 **1,576（65%）**重抽仍高、**864（35%）**重抽恢復正常；在 864 名「初次高、重抽正常」者中，**597（69%）**初次檢體還有溶血證據。
 
@@ -50,7 +52,7 @@
 <figure id="lab-three-clocks" style="max-width:950px;margin:1.5rem auto">
 <div style="border:1px solid #80909b;border-radius:10px;padding:1rem;margin-bottom:0.9rem">
 <h3 style="margin-top:0">① 真實 AML 病例：同一天，採樣條件和治療同時改變</h3>
-<p>作者的 2024-04-03 Table 1；以下為原始採血時間、K（mEq/L）與方法的教學重排，並非另造病例。</p>
+<p>2024 年 4 月 3 日，從居家採血到急診重驗，四筆 K 值的採檢與送檢方式並不相同。</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr));gap:0.65rem" role="group" aria-label="AML 病例四次檢體時序">
 <div data-evidence-node="case-sample" style="border:1px solid #8999a1;border-radius:8px;padding:0.7rem"><strong>A　12:00</strong><p style="font-size:1.4em;margin:0.2rem 0">K 3.0</p><p>家中抽血 → courier＋步行；plasma／另一種分析儀。</p></div>
 <div data-evidence-node="case-sample" style="border:1px solid #8999a1;border-radius:8px;padding:0.7rem"><strong>B　20:03</strong><p style="font-size:1.4em;margin:0.2rem 0">K 6.7</p><p>急診 whole blood → 氣送管；與 A 的基質、儀器不同。</p></div>
@@ -85,7 +87,7 @@
 <div data-evidence-node="lowrisk-cohort" style="border-left:4px solid #6d7f98;padding:0.6rem 0.8rem;margin-top:0.85rem">
 <strong>另一份獨立研究：n=66</strong> 嚴格篩選的低風險溶血高鉀患者，重抽 K 中位數 <strong>3.9 mmol/L</strong>，無持續性真高鉀，但 95% CI 上界約 6%；排除高齡、eGFR &lt;60、相關藥物與血液惡性疾病等。<strong>不能把 n=66 合併進 n=2,440 的分母，也不能推及 AML 病人。</strong>
 </div>
-<figcaption>圖 1｜兩種原創證據可視化：上半部依 2024 AML 病例 Table 1 重排採樣時序、運送與治療混雜；下半部依 2025 急診同日重抽研究整理 2,440→1,576／864→597／267 的不同分母。n=66 為另一獨立研究。三條不混同的證據線，並非同一位病人的三個時點，亦非 validated clinical decision rule；不是出版社原圖重製。</figcaption>
+<figcaption>圖 1｜上：55 歲 AML 患者同日四次血鉀結果，特別注意 D 的治療時序（Cao，2024，Table 1）。下：另項急診研究中，同日重抽者的結果分布（Stephan 等，2025）；66 人資料來自第三項獨立研究（Wilson 等，2020），不能與 2,440 人合併計算，也不能直接當成不重抽的處置規則。</figcaption>
 </figure>
 
 **血鉀不是唯一受檢體與測量方法影響的項目。** Serum total CO₂ 主要與 bicarbonate 相關，卻**不是動脈 pH 和 PaCO₂**；Na 需連同水與滲透質的背景解讀，部分測定方法（例如間接 ISE）還可能受樣本組成干擾；BUN／Cr 各有生成與清除機轉，單憑比值不能確定 AKI 病因。但這些機轉本身並沒有出現在前述兩名病人的原始檢驗紀錄中，不能因此替他們加上酸鹼障礙、低鈉或 AKI 的診斷。面對新的異常值，仍須先找出相應的檢體方法、採檢時間與尚未測到的生理資訊。
@@ -120,7 +122,7 @@ AKI 的診斷本身另有時間維度：請核對 [KDIGO 2012 原始 Table 2（A
 
 **誤解二：K 7.8 重抽後 3.6，就等於從未真高鉀。** 不成立。AML 病例的後段樣本有**降鉀介入後**的時序污染，必須回查原始 Table 1 的檢體別及採血方式，不能假裝有無治療的成對試驗。
 
-**誤解三：發現 AKI 就代表利尿藥造成缺水。** AKI 的**定義**不直接提供**病因**。血流動力、鬱血程度及治療反應是另一組必須解釋的證據；來源是心衰竭研究與專業指引；**不應藉虛構的 Hb、Mg 或 Cr 數據**替病人補寫未曾觀察的病程。
+**誤解三：發現 AKI 就代表利尿藥造成缺水。** AKI 的**定義**不直接提供**病因**。如果患者仍有鬱血、灌流改變或其他腎損傷風險，就必須繼續依血流動力、尿量與治療反應判斷，而不是單憑 Cr 變化停止利尿或給予補液。
 
 **誤解四：CBC、Mg 或 Na 出現紅字，總要配上一條明確醫囑。** 沒有對應臨床症候群、病程、症狀、危險性與測量品質的支持，教材只能呈現**可能機轉與需要查證的訊息**，不能編造使用某藥後的好轉來合理化處置。
 
@@ -130,4 +132,4 @@ AKI 的診斷本身另有時間維度：請核對 [KDIGO 2012 原始 Table 2（A
 2. **臨床推理**：66 人的低風險研究，為什麼不能幫 70 歲 CKD 心衰竭患者做完整治療決策？2,440 人研究的分母又是誰？
 3. **破除推論**：為何「Cr 上升」同時可能見於有效去鬱血和病況惡化？還要補哪些床邊證據，才有資格從生理假說進入治療討論？
 
-[全部原始病例、研究納排、指引 Figure／Table 與來源界線](../lab-morning-sheet-sources.md)。本篇**不提供選抽血項目或醫囑的 AI 範本**；實際檢驗與治療需由照護團隊按病況及機構規範判斷。所列數字不是本站設計或合成的 Lab panel；原作者的觀察、分析性研究與指引共識並不被混寫成同一病人的時間線。
+[全部原始病例、研究納排、指引 Figure／Table 與來源界線](../lab-morning-sheet-sources.md)。本篇**不提供選抽血項目或醫囑的 AI 範本**；實際檢驗與治療需由照護團隊按病況及機構規範判斷。不同病人的檢驗值、急診研究的統計結果與臨床指引，應依各自的適用情境理解。
