@@ -52,6 +52,20 @@ class U01PublicReaderCandidateTest(unittest.TestCase):
                 self.assertIn(cue, self.sources)
         self.assertTrue(SOURCE.exists())
 
+    def test_amr_definitive_vs_cuti_empiric_attribution(self):
+        # AMR 2026 explicitly puts empiric suggestions outside its scope.
+        # The 2025 cUTI Figure 1.1 is the empiric four-step source.
+        amr_section = self.text.split("[IDSA 2026 AMR 的 ESBL 指引]", 1)[1].split("\n\n", 1)[0]
+        self.assertIn("經驗性", amr_section)
+        self.assertTrue(any(cue in amr_section for cue in ("不提供", "超出", "範圍之外")))
+        self.assertNotIn("藥敏未明的病人，應另外考慮可靠的 IV ESBL-active coverage", amr_section)
+        self.assertIn("IDSA 2025 cUTI", self.text)
+
+    def test_reader_has_no_empty_html_box_or_false_arai_page_locator(self):
+        self.assertNotIn("<box></box>", self.text)
+        self.assertIn("p.434–435", self.sources)
+        self.assertIn("印刷 pp.434–435", self.text)
+
     def test_no_order_ready_or_internal_editorial_metadata(self):
         for bad in ("Draft/HOLD", "PR #", "Issue #", "site/pages.json",
                     "meropenem 1 g q8h", "insulin-glucose", "500 mL bolus"):
