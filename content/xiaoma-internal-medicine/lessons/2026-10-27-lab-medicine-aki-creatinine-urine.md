@@ -148,14 +148,15 @@ KDIGO 2012 原始 [Figure 4（印刷 p.25）](https://kdigo.org/wp-content/uploa
 
 以上均為**刻意更改條件的教學練習**，並非已發表病例的新增病歷事實，亦不構成可直接照開的治療指令。
 
-## 國考：為什麼題目會選 granular casts，而不是 FENa？
+## 國考｜兩題其實在考兩個不同層次：定位病因，還是追蹤恢復？
 
-**考選部 113 年第一次醫師第二階段，醫學（三）Q29** 的臨床情境是 40 歲病人於 48 小時內 creatinine 上升至 2.5 mg/dL，詢問最有助於指向 intrinsic AKI 的線索；四選項為 FENa <1%、urine osmolality >500 mOsm/L、BUN/Cr >20，以及 granular casts。正式標準答案 **D**。[官方原題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)
+**113 年第一次醫師第二階段，醫學（三）Q29**：40 歲病人原本腎功能正常，48 小時內 creatinine 升至 2.5 mg/dL，哪一個結果最能支持 *intrinsic AKI*？官方原題將 **FENa <1%**、**尿液滲透壓 >500 mOsm/L**、**BUN/Cr >20** 與**尿沉渣 granular casts** 放在同一個比較。考選部公布的標準答案是 **D（granular casts）**，該科於本梯次沒有另外列出更正答案。[考選部原題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=Q)；[官方標準答案 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=113020&q=1&s=11&t=S)。
 
-若只背「granular casts = ATN」，容易忽略前提。這題真正比較的是：前三項多反映某些水與鈉處理／濃縮狀態，常會出現在腎前性模型；顆粒性圓柱體則使我們更直接聯想到腎小管內部的細胞與蛋白質變化。但正如 270 人原始研究所見，**真性 ATI 可以同時有低 FENa**。選擇考題中最有辨識力的線索，不等於任何一項都可以單獨當作所有患者的金標。
+為什麼不是前三項？FENa 偏低、尿液濃縮和 BUN/Cr 升高都可能反映某些低有效灌流時的保鈉、保水與尿素處理；它們不是腎小管是否受傷的直接證據。顆粒性圓柱體提供更接近腎小管內容物與細胞損傷的形態線索，**所以在這四個選項中最能推進 intrinsic AKI 的判斷**。但這不是「只要看到 granular cast 就能證明某一種特定病理」；而且真性 ATI 可以同時有 FENa <1%。這正是前面 270 人研究與考題應當一起讀的地方。
 
-可延伸核對 **115 年第二次醫師第二階段，醫學（三）Q28**，考 AKI 後的功能追蹤及治療反應。第一份檢驗只告訴我們當時在哪裡；連續 SCr、尿量、灌流與併發症，才讓我們知道病程有沒有朝預期改變。[考選部 115 年第二次試題／答案平台](https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=115070&y=2026)
+**115 年第二次醫師第二階段，醫學（三）Q28** 問的是另一件事：已知病人發生 AKI，哪一個方法最能反映**治療後腎功能是否正在恢復**？選項包括連續監測 SCr 與尿量、每天腹部超音波、連續血尿／蛋白尿及反覆尿液培養。官方標準答案 **A（連續 SCr 與尿量）**；此科雖另有更正答案文件，**Q28 更正後仍為 A**。[考選部原題 PDF](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q)；[標準答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S)；[更正答案](https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M)。
 
+兩題不應混用。**第一題比較不同證據對病因定位的資訊量；第二題問動態功能的監測。** Serial SCr 和尿量仍會受非穩態、利尿、輸液及阻塞解除後的多尿影響，因此即使是第二題的最佳選項，也不能單憑它們確認造成 AKI 的機轉已完全解除。
 ---
 
 ## 主要來源與圖表原位
