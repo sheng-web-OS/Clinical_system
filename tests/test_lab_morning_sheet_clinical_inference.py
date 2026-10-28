@@ -16,7 +16,7 @@ class LabInferenceConsistency(unittest.TestCase):
         cls.sources=SOURCES.read_text(encoding="utf-8")
 
     def test_real_aml_sample_sequence_and_intervention(self):
-        for cue in ("AML","Sample","12:00","20:03","20:48","23:37","6.7","7.8","3.6","Pneumatic tube","降鉀治療","30 分鐘"):
+        for cue in ("AML","A／12:00","B／20:03","C／20:48","D／23:37","12:00","20:03","20:48","23:37","6.7","7.8","3.6","氣送管","降鉀治療","30 分鐘"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,self.article)
         self.assertIn("PMC11462689",self.sources)
