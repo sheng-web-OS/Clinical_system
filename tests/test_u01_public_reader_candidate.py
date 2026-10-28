@@ -29,6 +29,19 @@ class U01PublicReaderCandidateTest(unittest.TestCase):
         self.assertNotIn("病例為人工合成", self.text)
         self.assertNotIn("10/28 07:15", self.text)
 
+    def test_a_true_empiric_reason_is_attributed_to_its_author_and_time(self):
+        # Arai et al. 2021: previous cefcapene, empiric carbapenem,
+        # day-4 ESBL culture. Prior exposure is NOT a documented prior ESBL AST.
+        section = self.text.split("## 第二問｜", 1)[1].split("## 第三問｜", 1)[0]
+        for cue in ("cefcapene pivoxil", "經驗性選擇 carbapenem",
+                    "第 4 天", "不是已掌握一張證實 ESBL 的舊 AST",
+                    "academic.oup.com/omcr/article-pdf"):
+            with self.subTest(cue=cue):
+                self.assertIn(cue, section)
+        for cue in ("cefcapene pivoxil", "Day 4", "沒有報告一份在本次入院前已知 ESBL"):
+            with self.subTest(source_cue=cue):
+                self.assertIn(cue, self.sources)
+
     def test_source_nav_exam_and_authoritative_guidelines(self):
         self.assertIn("../urosepsis-esbl-first-dose-sources.md", self.text)
         self.assertIn("111 年第二次", self.text)
