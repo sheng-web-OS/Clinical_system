@@ -58,8 +58,8 @@
 <text x="317" y="903" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">5.60</text>
 <text x="131" y="901" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↓</text>
 <text x="255" y="901" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text><text x="20" y="962" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#20473c">讀圖重點</text>
-<text x="20" y="989" font-family="system-ui,sans-serif" font-size="15.5" fill="#36594d">術後 SID ↓，但 [H⁺] 並未同步顯著升高。</text>
-<text x="20" y="1017" font-family="system-ui,sans-serif" font-size="15.5" fill="#36594d">隔天 SID 回升，PaCO₂ 和 [H⁺] 卻升高。</text>
+<text x="20" y="989" font-family="system-ui,sans-serif" font-size="15.5" fill="#36594d">術後 SID↓，H⁺ 未顯著變化。</text>
+<text x="20" y="1017" font-family="system-ui,sans-serif" font-size="15.5" fill="#36594d">隔天 SID↑，PaCO₂ 與 H⁺ 升高。</text>
 <text x="20" y="1048" font-family="system-ui,sans-serif" font-size="14" fill="#597167">箭頭僅比較群體均值；非單人病程。</text>
 <text x="20" y="1072" font-family="system-ui,sans-serif" font-size="14" fill="#597167">來源：Chuah 2013 Table 3（自行重繪）</text>
 </svg>
