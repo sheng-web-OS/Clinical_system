@@ -2462,7 +2462,7 @@
         "stage": 2,
         "subject": "醫學（四）",
         "question_number": 12,
-        "focus": "小型 VSD 的高壓差雜音可很響，不能以響度替代分流量及心衰評估。",
+        "focus": "VSD 分流量與肺循環容量負荷可造成心衰，但不能只由雜音響度推定缺損大小；成長及餵食病史仍看原題。",
         "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
         "embed": false
       },
@@ -2620,16 +2620,6 @@
         "year_roc": 111,
         "sitting": 2,
         "stage": 2,
-        "subject": "醫學（四）",
-        "question_number": 30,
-        "focus": "先由分流負荷理解嬰兒心音及臨床惡化；胸片仍須看官方原圖，尚未全核。",
-        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
-        "embed": false
-      },
-      {
-        "year_roc": 111,
-        "sitting": 2,
-        "stage": 2,
         "subject": "醫學（五）",
         "question_number": 2,
         "focus": "休克時心音不典型不能排除心包填塞；本篇提供急症分流，詳細氣胸鑑別見原題。",
@@ -2703,26 +2693,6 @@
         "subject": "醫學（五）",
         "question_number": 23,
         "focus": "BAV 造成 AS 的解剖病因與合併主動脈病變，須分開評估術式。",
-        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
-        "embed": false
-      },
-      {
-        "year_roc": 113,
-        "sitting": 2,
-        "stage": 2,
-        "subject": "醫學（四）",
-        "question_number": 5,
-        "focus": "HCM 不只是肥厚或雜音，必須區分動態 LVOTO 與其他肥厚表型。",
-        "concept_heading": "五、姿勢與手法：不是背增強／變弱，而是改變哪個血流參數",
-        "embed": false
-      },
-      {
-        "year_roc": 114,
-        "sitting": 1,
-        "stage": 2,
-        "subject": "醫學（四）",
-        "question_number": 8,
-        "focus": "瓣膜逆流要依收縮或舒張時相、容量負荷與心室適應時間評估；胎兒處置另論。",
         "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
         "embed": false
       },
