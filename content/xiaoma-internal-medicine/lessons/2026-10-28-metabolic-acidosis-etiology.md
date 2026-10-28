@@ -177,7 +177,7 @@ Sodium bicarbonate 確實能影響緩衝系統與 pH，但加入 HCO₃⁻ 不�
 
 [6] American Diabetes Association. Diabetes Care in the Hospital: Standards of Care in Diabetes—2026. *Diabetes Care*. 2026;49(Suppl 1). https://doi.org/10.2337/dc26-s016
 
-[7] 《臺大內科住院醫師醫療手冊》，使用者 2026-08-07 提供腎臟疾病章第 861–863 頁照片（High AG、Normal AG、UAG）及另張 Figure 4-2 流程圖。僅以內部合法引用供研究比較，**不在公開文章重製實體書頁或原圖**；實際判讀數值與近代限制均與其他來源交叉核對。
+[7] 《臺大內科住院醫師醫療手冊》，腎臟疾病章，第 861–863 頁（High AG 與 Normal AG 代謝性酸中毒的病因與檢查路徑）。本文以自主整理與臨床證據更新的方式解釋相關診斷概念。
 
 [8] Vendeloo M, et al. Life-threatening hypokalaemic paralysis associated with distal renal tubular acidosis. *Neth J Med*. 2011;69:35–38. https://pubmed.ncbi.nlm.nih.gov/21325700/
 
