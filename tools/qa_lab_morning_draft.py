@@ -20,8 +20,22 @@ sys.path.insert(0, str(ROOT / "site"))
 import build  # noqa: E402
 
 SOURCE = "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
-TITLE = "早晨一張 Lab sheet：從真實病例與原始研究，判斷數字究竟能告訴我們什麼"
 FIGURE = "#lab-three-clocks"
+
+
+def canonical_row():
+    """Use published metadata, and independently compare it to article H1."""
+    pages = json.loads((ROOT / "site/pages.json").read_text(encoding="utf-8"))
+    matches = [page for page in pages if page.get("source") == SOURCE]
+    if len(matches) != 1:
+        raise AssertionError("Expected one canonical Lab reader registration")
+    row = dict(matches[0])
+    heading = (ROOT / SOURCE).read_text(encoding="utf-8").splitlines()[0]
+    if heading != "# " + row["title"]:
+        raise AssertionError("Article H1 differs from site/pages.json title")
+    if row.get("layout") != "reader" or not row.get("references"):
+        raise AssertionError("Published Lab reader lacks canonical source navigation")
+    return row
 
 
 def render_private_draft():
@@ -32,18 +46,7 @@ def render_private_draft():
     body = parser(source)
     body = re.sub(r"^<h1>[^<]*</h1>", "", body, count=1)
     body = build.rewrite_internal_links(body, SOURCE)
-    row = {
-        "source": SOURCE,
-        "output": "xiaoma-20261028-lab-morning-sheet.html",
-        "title": TITLE,
-        "subtitle": "真實 AML 檢體時序、急診重抽研究與腎功能推論的證據界線",
-        "collection": "xiaoma-internal-medicine",
-        "layout": "reader",
-        "section": "Lab Medicine｜值班與病房",
-        "date": "2026-10-28",
-        "navigation": False,
-        "references": "xiaoma-20261028-lab-morning-sheet-sources.html",
-    }
+    row = canonical_row()
     html = build.render_reader(row, body, rr.headings)
     style = (ROOT / "site/styles.css").read_text(encoding="utf-8")
     key = '<link rel="stylesheet" href="styles.css">'
@@ -60,6 +63,7 @@ def main():
     args = arg.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
 
+    expected_title = canonical_row()["title"]
     document = render_private_draft()
     findings = []
     failures = []
@@ -123,7 +127,7 @@ def main():
                     if observed["pageWidth"] > observed["viewport"] + 2:
                         failures.append(f"{width}px global overflow: "
                                         f"{observed['pageWidth']}>{observed['viewport']}")
-                    if observed["title"] != TITLE:
+                    if observed["title"] != expected_title:
                         failures.append(f"{width}px incorrect public-facing title")
                     if (observed["articleText"] < 4000 or "K 6.7" not in observed["evidence"]
                             or "n=66" not in observed["evidence"]
@@ -148,6 +152,7 @@ def main():
         finally:
             browser.close()
     report = {"mode": "PRIVATE_DRAFT_RENDER_NOT_PUBLICATION",
+              "canonical_title": expected_title,
               "source": SOURCE, "findings": findings, "failures": failures,
               "note": "Real reader renderer/CSS, not live Cloudflare, no medical or EPQC approval."}
     (args.output / "report.json").write_text(
