@@ -4,7 +4,7 @@
 
 臨床上要從三個不同的問題前進：首先，數字是否可信、患者是否有立即危險？其次，哪些細胞族群異常，變化是濃度、數量、生成、流失、破壞還是分布？最後，現在多做一個檢驗會讓病因推論或治療真正改變嗎？用這三個問題辨別資料的角色，可以避免「Hb 低就輸血、白血球高就加抗生素、platelet 低就輸血小板」的連續誤判。
 
-本文承接[早晨整張 Lab sheet](2026-10-27-lab-medicine-morning-panel.md)與[檢驗假象篇](2026-10-27-lab-medicine-specimen-artifacts.md)，是 CBC/DC 的獨立深入入門。完整的 anemia / leukocyte disorders / coagulation 另以疾病層級撰寫，不把全文切碎成眾多互不連續的縮寫表格。
+本文可接續[肺炎與少尿的 Lab sheet 案例](2026-10-27-lab-medicine-morning-panel.md)與[檢驗假象篇](2026-10-27-lab-medicine-specimen-artifacts.md)，是 CBC/DC 的獨立深入入門。完整的 anemia / leukocyte disorders / coagulation 另以疾病層級撰寫，不把全文切碎成眾多互不連續的縮寫表格。
 
 ## 01　真實病例：血小板 17K、55K、175K——哪一個才代表病人的狀態？
 
