@@ -12,6 +12,8 @@
 
 **本文並未聲稱**原研究提供了本篇 70 歲合成病例、K 6.3→4.9 數值或一套固定高鉀急救規則；這些只是教學情境。公開網站不重製該論文受版權保護的原圖。
 
+**原始圖表核對邊界**：AJKD 原文（85 卷 1 期，104–114 頁）可查得電解質異常與採樣、測量干擾的論述，並有 Figure 1 檢驗流程相關說明；本次僅核實書目、可讀的期刊正文與已顯示的內容，未逐張取得 Figure/Table 全部原畫面和圖說。因此不把本文的病例圖說成 AJKD Figure 1 的翻拍，亦不把該來源列作「原始圖表已完整目視驗收」。若欲深入查溶血 index、不同樣本型態與假性異常的定量限制，應回看期刊全文及各院實驗室條件。
+
 ## 2. AKI 是時間定義，不是 Cr 的單次絕對值
 
 [KDIGO 2012 AKI work group 綜述：Diagnosis, evaluation, and management of acute kidney injury: a KDIGO summary (Part 1).](https://pmc.ncbi.nlm.nih.gov/articles/PMC4057151/)
@@ -22,13 +24,19 @@
 
 [KDIGO 2024 CKD guideline](https://kdigo.org/guidelines/ckd-evaluation-and-management/)與[非穩態 eGFR 限制的臨床導讀](https://academic.oup.com/ajhp/article/82/12/660/8107680)。CKD 的穩態估算架構不可直接視為 AKI 當下瞬間真實 GFR。
 
+**已目視的 KDIGO 2012 原表／原圖**：Chapter 2.1，印刷 p.19 **Table 2 (Staging of AKI)**，明列 Cr ≥0.3 mg/dL 的 stage 1 分期條件與 <0.5 mL/kg/h 持續 6–12 小時的尿量門檻；Chapter 2.3，印刷 p.25 **Figure 4 (Stage-based management of AKI)**，將 volume status/perfusion、nephrotoxic exposure、Cr/urine monitoring 與必要時的 RRT 評估列為隨風險階段處理的項目。Figure 4 圖說還指出陰影強度代表措施隨嚴重度增加而提高優先度，**不是已知病因、絕對給液量或透析 cutoff**。[KDIGO AKI 原始完整 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)。
+
 ## 3. 高鉀救治需要 ECG、病人風險和分層流程
 
 [UK Kidney Association，Treatment of Acute Hyperkalaemia in Adults（官方頁，載有 2026 年 7 月更新版下載入口）](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。
 
 [醫院臨床操作頁：GGC Medicines，Management of Hyperkalaemia](https://handbook.ggcmedicines.org.uk/guidelines/electrolyte-disturbances/management-of-hyperkalaemia-plasma-k-5-5mmol-l/)。
 
-臨床依據是血鉀數值、檢體品質、ECG、循環狀態、renal function、治療後回測與 glucose monitoring 共同決定。主文沒有提供可脫離當地 protocol 使用的 calcium/insulin 劑量。IV calcium 是穩定心肌膜而非實際排除鉀；insulin 促進 K 從細胞外轉入細胞內，必須防低血糖；持續高鉀需另外解決鉀移除、原因與復發。**若官方 2026 更新版的正文或圖表細節尚未逐頁核對，不能宣稱已完整完成原圖視覺審查；以官方連結供讀者查閱。**
+臨床依據是血鉀數值、檢體品質、ECG、循環狀態、renal function、治療後回測與 glucose monitoring 共同決定。主文沒有提供可脫離當地 protocol 使用的 calcium/insulin 劑量。IV calcium 是穩定心肌膜而非實際排除鉀；insulin 促進 K 從細胞外轉入細胞內，必須防低血糖；持續高鉀需另外解決鉀移除、原因與復發。
+
+**已逐頁目視的原文範圍**：UKKA *July 2026* 官方完整 PDF 的印刷 **p.14–15（PDF 第 14、15 張，從零起算索引 13、14）**。原文 Guideline 15.3 建議疑似假性高鉀時以不同容器的配對 lithium-heparin 與 clotted serum 採樣核實；Guideline 16.2a 指出 ECG 改變時 IV calcium 建議強度為 **2C**（2026 已降級，不可拿它當高等級確定療效證據）；16.3.1 與 16.3.2 區分嚴重和中度高鉀使用 insulin-glucose 的建議強度。17.1–17.2 要求注意血鉀反彈與 insulin 後低血糖。這些是**原文建議與適用限制**，主文合成案例並未使用其固定處方劑量。[開啟 UKKA 2026 原始 PDF](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf)。
+
+已查看以上指引的相關條文與頁面，但**未完整審閱 180 頁全部 Appendix、每一張 algorithm 或特定醫院 formulary**；不可宣稱全套圖表完整驗收。對任何實際用藥仍須回原頁與當地流程。
 
 ## 4. Hb、輸血與族群差異
 
