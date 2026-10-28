@@ -6433,12 +6433,12 @@
       }
     },
     "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md": {
-      "content_blob": "6e4102de66c0c0debcce21900bfc8606d9f32d78",
+      "content_blob": "d98fac13a3ccfda337438db25b857250d77b11e0",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "clinical-os-hourly-automation:2026-10-29T01:23+08:00:PR207:58unit-delta-reviewed-source-navigation",
-      "core_reader_question": "確診肺栓塞後，如何不把PESI、RV損傷、正常血壓下的低灌流與呼吸衰竭混成單一嚴重度，並據此選擇安全的抗凝、監測和再灌流策略？",
-      "new_understanding": "從血栓造成V/Q失衡、RV後負荷與交感代償開始，讀者能區分診斷前Wells與確診後PESI、Hestia出院適用性、A–E/R生理分類，並以2026 Table 7的C2 Harm與E2 No Benefit/N/A邊界及Gutgold真實病例解釋證據如何改變檢查與處置。 新增專屬來源頁導覽，使讀者能逐圖回查Figure 2與Table 7的原始定位、推薦等級及權利邊界。",
-      "strongest_counterargument": "本次新增的是一段來源導航而非新的臨床證據，可能與後方參考文獻重疊；逐段核對後，新增頁補足原圖與原表精確定位，且未更動原57段病程、評分或治療主張。完整CI與手機四寬仍需分開驗收。",
+      "reviewer_reference": "clinical-os-hourly-independent-review:2026-10-29T02:20+08:00:PR212:58-unchanged-units-plus-3-figures",
+      "core_reader_question": "在尚未確診或已確診肺栓塞時，如何讓讀者直接看見檢前機率診斷分支、A–E與R的不同臨床軸，以及抗凝、監測、PERT與再灌流風險如何依灌流證據改變？",
+      "new_understanding": "本次獨立對照原58段與新稿：移除新增三個原創figure後正文與已審舊blob完全一致，58段既有角色／讀者收益／非冗餘理由逐項維持成立。新Figure01使低機率PERC全陰性停止、任一陽性或不適用轉D-dimer／適當影像、高機率直接影像與危急同步支持可視；Figure02固定C3的RV與biomarker而改變R，另以可信PE相關低灌流重新評估D2，不把A–E當必經病程；Figure03顯示C–E PERT共同節點、灌流穩定與惡化的處置分叉，保留C2溶栓Harm、E2導管/MT N/A及E2未用機械支持者外科相對其他進階治療短期死亡率No Benefit的不同範圍。官方Figure2 PDF已目視，Figure1/3與Table7以官方全文文字/註腳和原圖公開轉載畫面交叉核對；本站僅原創HTML/CSS與官方連結，不重製原像素。",
+      "strongest_counterargument": "三圖新增後可能只是把既有分類表變成較長的卡片、增加手機閱讀負擔；逐圖不看figcaption檢驗顯示PERC陽性分叉、C3對C3R與D2反事實、C類穩定與D/E低灌流升級均具原文字表難以一眼看見的關係，且未製造必然進展箭頭。限制：官方Figure1/3完整出版像素未由官方下載逐頁核驗，已以指南原始文字/圖註及公開原圖影像交叉查對；375px CI圖截含鍵盤聚焦skip-link疊層（CSS僅focus顯示），後續正式讀者QA仍須補無焦點正常畫面、深色模式及公網實讀，不能以本semantic票據替代。",
       "epqc_scores": {
         "A": 4,
         "B": 4,
@@ -7313,6 +7313,658 @@
           "verdict": "keep",
           "excerpt_for_editor": "American Diabetes Association. Diabetes Care in the Hospital: Standards of Care in Diabetes—2026. Diabetes Care. 2026;49(Suppl 1). 官方 2026 住院照護章。",
           "line_for_editor": 146
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md": {
+      "content_blob": "fad3ac49374289f1f12805b40b05a420ec7b64eb",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "CTICU-ABG-PR211-independent-source-figure-20261029T0215+0800; GitHub review #5687583024",
+      "core_reader_question": "低溫 CPB 同一份血氣為何會出現兩種溫度基準，且 alpha-stat 與 pH-stat 的真正介入如何影響腦灌流與神經認知結局？",
+      "new_understanding": "讀者能分開 37°C 儀器測量、體溫校正報告、實際掃氣與 CO₂ 調整；再用 Patel 與 Murkin 的分母及亞組、Table 52 IIa/B，限制對成人 CABG、主動脈弓及小兒的外推。",
+      "strongest_counterargument": "原創 SVG 在 360px 內嵌縮至 282px，部分文字不適合直接閱讀；已核對真實 Chromium 截圖及原生 SVG 新分頁開啟，保留可放大閱讀，且文章完整文字敘述不依賴圖中文字。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "d2260b3d01793f062a-1": {
+          "role": "orientation",
+          "reader_gain": "標明第四篇是低溫 CPB 的獨立讀者單元。",
+          "nonredundancy_reason": "與前篇代謝性酸化主題分開，避免誤把溫度校正當成同一病因。",
+          "verdict": "keep"
+        },
+        "3c536acd86b949e4a4-1": {
+          "role": "orientation",
+          "reader_gain": "建立血氣量測基準與真正 CO₂ 介入的核心區別。",
+          "nonredundancy_reason": "若刪掉此段，讀者容易把兩種報告值當成兩次病情改變。",
+          "verdict": "keep"
+        },
+        "0c390eb2e8e1bff860-1": {
+          "role": "case_evidence",
+          "reader_gain": "用 Patel 的七十人隨機試驗建立策略選擇的臨床後果。",
+          "nonredundancy_reason": "它先給出六週神經心理結局，避免全篇只靠理論推演。",
+          "verdict": "keep"
+        },
+        "d853d460770fe02497-1": {
+          "role": "orientation",
+          "reader_gain": "提出儀器溫度、體內狀態與操作介入三層問題。",
+          "nonredundancy_reason": "前段只有研究結果，此段轉為可循序回答的教學問題。",
+          "verdict": "keep"
+        },
+        "a39401f5323031a18e-1": {
+          "role": "definition",
+          "reader_gain": "說明血氣分析儀與體溫校正輸出的測量來源。",
+          "nonredundancy_reason": "這是後續兩種策略共同的先備條件，不等於任一治療決策。",
+          "verdict": "keep"
+        },
+        "0f57cc2bcda1b8f1ef-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以溶解度和緩衝溫度依賴性推導低溫分壓與 pH 方向。",
+          "nonredundancy_reason": "沒有這段，後文校正值高低只能死記，無法理解機轉。",
+          "verdict": "keep"
+        },
+        "3dc4702dd4bc2d79d8-1": {
+          "role": "decision",
+          "reader_gain": "將溫度和報告基準轉成讀到血氣時的第一個查核問題。",
+          "nonredundancy_reason": "前段是物理原理，此段第一次明確要求臨床配對資訊。",
+          "verdict": "keep"
+        },
+        "2415f6e65d71ae3f59-1": {
+          "role": "safety",
+          "reader_gain": "防止混用不同溫度的 pH 與 PaCO₂ 進行錯誤代償判讀。",
+          "nonredundancy_reason": "這是獨立的資料一致性風險，不能由單純認識溫度替代。",
+          "verdict": "keep"
+        },
+        "93e458a92aa2fd876b-1": {
+          "role": "causal_bridge",
+          "reader_gain": "釐清切換顯示本身不會改變體內 CO₂ 或腦灌流。",
+          "nonredundancy_reason": "此處分離測量與介入，阻止後文策略圖被讀成儀器操作效果。",
+          "verdict": "keep"
+        },
+        "1ddce4c65ecc87c715-1": {
+          "role": "definition",
+          "reader_gain": "界定 alpha-stat 使用未校正三十七度血氣目標。",
+          "nonredundancy_reason": "它定義第一種策略的控制變數，不可與低溫校正後目標混同。",
+          "verdict": "keep"
+        },
+        "dbf93912bfce0540b7-1": {
+          "role": "causal_bridge",
+          "reader_gain": "從低溫校正變化連到 histidine imidazole 的理論理由。",
+          "nonredundancy_reason": "補足選擇保留原基準的生理動機，並區分理論與臨床效益。",
+          "verdict": "keep"
+        },
+        "2df80603ce2251055e-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明 CO₂ 對腦血流及自動調節的雙面效應。",
+          "nonredundancy_reason": "此前只談酸鹼基準，此段開始建立腦保護結果的中介機轉。",
+          "verdict": "keep"
+        },
+        "ec906c65742022bfb5-1": {
+          "role": "decision",
+          "reader_gain": "把 alpha-stat 的本質定位為不額外追逐低溫校正目標。",
+          "nonredundancy_reason": "避免把臨床管理策略錯當成單純關閉報告欄位。",
+          "verdict": "keep"
+        },
+        "45bdccf9072e5045b4-1": {
+          "role": "definition",
+          "reader_gain": "定義 pH-stat 以病人體溫校正值調整掃氣或加 CO₂。",
+          "nonredundancy_reason": "與 alpha-stat 形成真正的替代策略比較，而非時間先後步驟。",
+          "verdict": "keep"
+        },
+        "3e04f286ebe410b040-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋 pH-stat 下未校正值較酸不必然是新的呼吸衰竭。",
+          "nonredundancy_reason": "將術中預期表型和離機後新發異常分開，防止錯誤診斷。",
+          "verdict": "keep"
+        },
+        "b2578f6a3b4749c7e5-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "平衡增加腦血流、均勻降溫與栓塞及自調節風險。",
+          "nonredundancy_reason": "避免從 CO₂ 血管擴張直接推論所有術式有益或有害。",
+          "verdict": "keep"
+        },
+        "47a8c89f8dc11c515a-1": {
+          "role": "orientation",
+          "reader_gain": "指出必須用適用族群的比較試驗裁決策略效益。",
+          "nonredundancy_reason": "把前段生理推論切換到臨床結果證據，不偷換證據層級。",
+          "verdict": "keep"
+        },
+        "abc073ca3f0c0da5d1-1": {
+          "role": "case_evidence",
+          "reader_gain": "逐組列出 Patel 六週認知測驗的分母與事件數。",
+          "nonredundancy_reason": "精確分母與終點使讀者不會將其誤稱死亡率或中風效益。",
+          "verdict": "keep"
+        },
+        "147bfde26af6ffe4f5-1": {
+          "role": "case_evidence",
+          "reader_gain": "限制 Murkin 的二十七對四十四百分比為長時間 CPB 分層。",
+          "nonredundancy_reason": "防止將特定亞組結果擴寫成全部三百一十六人的風險。",
+          "verdict": "keep"
+        },
+        "d908f8b630a49a8eca-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "把腦血流自調節的機轉支持與當代外推條件分開。",
+          "nonredundancy_reason": "它指出歷史試驗的解釋不等於已證明所有裝置和術式有效。",
+          "verdict": "keep"
+        },
+        "cf00cce11fa742a9b1-1": {
+          "role": "decision",
+          "reader_gain": "定位成人高至中度低溫 IIa/B 建議及適用界線。",
+          "nonredundancy_reason": "指南的建議強度與範圍不同於前兩項 RCT 的原始終點。",
+          "verdict": "keep"
+        },
+        "a6373f902ea4b54421-1": {
+          "role": "counterfactual",
+          "reader_gain": "以主動脈弓停循環改變腦部冷卻與灌流的權衡。",
+          "nonredundancy_reason": "這個反事實揭示不能把常規 CABG 的結論直接搬到 DHCA。",
+          "verdict": "keep"
+        },
+        "b86678ec44c3bce1d8-1": {
+          "role": "counterfactual",
+          "reader_gain": "以嬰幼兒腦血管成熟度及先天心臟病提出不同適用性。",
+          "nonredundancy_reason": "與成人弓手術不同，年齡及先天解剖本身會改變比較前提。",
+          "verdict": "keep"
+        },
+        "7a7dce6d827f17fe7f-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分最佳證據綜述、手術低溫研究與其他低溫情境。",
+          "nonredundancy_reason": "阻止把二級文獻或心跳停止後低溫研究算成直接 RCT。",
+          "verdict": "keep"
+        },
+        "178ca4eae883c34e40-1": {
+          "role": "orientation",
+          "reader_gain": "明示交班血氣七點三零為教學情境而非試驗患者病程。",
+          "nonredundancy_reason": "將反事實演練與真實病例來源隔離，避免捏造個案醫囑。",
+          "verdict": "keep"
+        },
+        "769842b078ec516b5b-1": {
+          "role": "decision",
+          "reader_gain": "要求先核對 CPB 時段、溫度和採樣報告基準。",
+          "nonredundancy_reason": "先辨認測量條件才能避免錯誤啟動碳酸氫鹽處置。",
+          "verdict": "keep"
+        },
+        "202287309247c06aa1-1": {
+          "role": "decision",
+          "reader_gain": "離機回溫後重新按當下通氣灌流和酸鹼狀態判讀。",
+          "nonredundancy_reason": "防止以術中 pH-stat 理由掩蓋數小時後的新休克或呼吸異常。",
+          "verdict": "keep"
+        },
+        "e1fd898bae5a478b8f-1": {
+          "role": "counterfactual",
+          "reader_gain": "以正常血氣但腦氧惡化說明 CO₂ 目標不等於腦灌流。",
+          "nonredundancy_reason": "這個反例使讀者理解數字達標仍須評估灌流及解剖。",
+          "verdict": "keep"
+        },
+        "99007e951ebf172ad0-1": {
+          "role": "safety",
+          "reader_gain": "界定 CPB CO₂ 與腦保護調整屬跨專業團隊決策。",
+          "nonredundancy_reason": "避免把機轉教材誤當成可自行操作氧合器的醫囑。",
+          "verdict": "keep"
+        },
+        "cd30769536951d9f59-1": {
+          "role": "causal_bridge",
+          "reader_gain": "回到 Patel 的實際介入是兩種 CO₂ 管理而非兩種報告格式。",
+          "nonredundancy_reason": "與開頭的研究結果形成因果閉環，回收文章核心命題。",
+          "verdict": "keep"
+        },
+        "57a298afc727bc3d45-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以溫度、策略和病人三層條件整合臨床推理。",
+          "nonredundancy_reason": "這句總結重新連接物理量測、可改變的介入與外推界線。",
+          "verdict": "keep"
+        },
+        "cf3de672d5732aa1ae-1": {
+          "role": "orientation",
+          "reader_gain": "說明三層分辨比死背策略優缺點更可轉用。",
+          "nonredundancy_reason": "把整篇機轉轉為臨床閱讀原則，並非重述單一試驗數字。",
+          "verdict": "keep"
+        },
+        "ee825c1903db2a6d32-1": {
+          "role": "definition",
+          "reader_gain": "檢驗能否從氣體溶解度說明校正值與真實介入差別。",
+          "nonredundancy_reason": "第一問測量機轉理解，不與後續決策題重複。",
+          "verdict": "keep"
+        },
+        "c45d67a0416f8fe073-1": {
+          "role": "decision",
+          "reader_gain": "檢驗低溫校正 pH 目標如何轉成氧合器 CO₂ 調整。",
+          "nonredundancy_reason": "第二問要求連結操作與腦血流，不能只答出兩個定義。",
+          "verdict": "keep"
+        },
+        "963b4f7231dca9ce80-1": {
+          "role": "counterfactual",
+          "reader_gain": "檢驗 CABG 證據不能跨越術式及年齡的外推邊界。",
+          "nonredundancy_reason": "第三問專門攔截以單一歷史試驗推出普遍治療的誤解。",
+          "verdict": "keep"
+        },
+        "11d037aecd92a3203c-1": {
+          "role": "source_context",
+          "reader_gain": "提供成人 CPB 指引原文與 Table 52 的可追溯入口。",
+          "nonredundancy_reason": "指南的推薦強度需要獨立來源，不能由教學解說代替。",
+          "verdict": "keep"
+        },
+        "903f6342bf230bda67-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Patel 原始 RCT 的樣本及六週測驗結果。",
+          "nonredundancy_reason": "此研究支撐主要對比，與其他成人研究的分層結局不同。",
+          "verdict": "keep"
+        },
+        "cd78eb2621aca568f7-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Murkin 二乘二 RCT 及超過九十分鐘亞組。",
+          "nonredundancy_reason": "避免兩篇 RCT 被混成同一試驗或同一時間終點。",
+          "verdict": "keep"
+        },
+        "ad8aa803e720e56488-1": {
+          "role": "source_context",
+          "reader_gain": "標明 OpenAnesthesia 僅為生理學二級教學來源。",
+          "nonredundancy_reason": "保留原理輔助但不讓其取代指南與試驗的決策權重。",
+          "verdict": "keep"
+        },
+        "6e62c2d16b5476da23-1": {
+          "role": "source_context",
+          "reader_gain": "標明 Abdul Aziz 2010 是綜述而不是新 RCT。",
+          "nonredundancy_reason": "讀者能追查 DHCA 的研究脈絡且不重複計算試驗證據。",
+          "verdict": "keep"
+        },
+        "7805c21d71adead9f7-1": {
+          "role": "source_context",
+          "reader_gain": "將近期生理回顧限縮為補充而非療效證據。",
+          "nonredundancy_reason": "不同於原始 RCT，此來源只協助理解物理化學爭議。",
+          "verdict": "keep"
+        },
+        "edb6f8223976814eed-1": {
+          "role": "navigation",
+          "reader_gain": "明確區分第三篇代謝性酸化與第四篇溫度 CO₂ 策略。",
+          "nonredundancy_reason": "跨篇導覽指向不同問題，避免讀者把 SID 與 pH-stat 混用。",
+          "verdict": "keep"
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md": {
+      "content_blob": "e6646dc23271c97c27e8efdc5278ffc5b9880adf",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "CTICU-ABG-PR211-independent-source-figure-20261029T0215+0800; GitHub review #5687583024",
+      "core_reader_question": "CPB 術後 HCO₃⁻ 與 BE 下降時，如何在未直接測到乳酸來源前，以 chloride、albumin、PaCO₂、未測陰離子及循環證據分辨危險與病因？",
+      "new_understanding": "以 Chuah 55 人群體三時點與 Protos Bartter 真實患者對照，讀者能分開 acidemia 與 acidosis、簡化 SID 與 SIG、群體均值與個體因果，並在出血或低輸出時優先處理危險。",
+      "strongest_counterargument": "群體 Na/Cl/SID 和未測白蛋白可能被誤當作個人因果；本文反覆揭露非隨機混雜及未測乳酸、albumin，另以真實 Bartter 反例和反事實安全分流限制外推。圖在 360px 內嵌過小，已核對可開原生 SVG 並有完整 HTML 表格。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "48b7fb604f633fb84d-1": {
+          "role": "orientation",
+          "reader_gain": "第三篇限定 CPB 術後代謝酸鹼問題的閱讀範圍。",
+          "nonredundancy_reason": "先區隔第四篇的溫度與 CO₂ 策略問題。",
+          "verdict": "keep"
+        },
+        "31363622df204871ec-1": {
+          "role": "orientation",
+          "reader_gain": "以 HCO₃⁻ 與 BE 下降提出尚未確診乳酸來源的疑問。",
+          "nonredundancy_reason": "開頭防止把血氣結果直接等同灌流不足。",
+          "verdict": "keep"
+        },
+        "2c0697dfb2180fe6af-1": {
+          "role": "causal_bridge",
+          "reader_gain": "引入 chloride、albumin、陰離子與 PaCO₂ 競爭解釋。",
+          "nonredundancy_reason": "從單一乳酸假說擴展到可區辨的多條路徑。",
+          "verdict": "keep"
+        },
+        "97b3317bb01c02c5b9-1": {
+          "role": "orientation",
+          "reader_gain": "區分酸鹼過程、病因來源及能改變處置的證據。",
+          "nonredundancy_reason": "為後文生理機轉、病因歸屬和床邊處置建立互不混淆的三個推理層級。",
+          "verdict": "keep"
+        },
+        "d91e64735fd8c0e233-1": {
+          "role": "case_evidence",
+          "reader_gain": "交代 Chuah 八十一名分析個案及三個採樣時點。",
+          "nonredundancy_reason": "群體時序必須先建立才能解讀後面的平均值。",
+          "verdict": "keep"
+        },
+        "8dbc0e1db3af4557b1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用混合 prime 配方與兩組輸液量揭露非隨機混雜。",
+          "nonredundancy_reason": "限制把 on-pump 差異全歸給 normal saline。",
+          "verdict": "keep"
+        },
+        "fbe8bf99f7364cd6bd-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明示五十五名患者的群體均值不是個人 ABG。",
+          "nonredundancy_reason": "阻止用不同平均值製造不存在的個人 AG。",
+          "verdict": "keep"
+        },
+        "fdb002ed264d187a4d-1": {
+          "role": "case_evidence",
+          "reader_gain": "以術後 Na、Cl、SID、BE 與氫離子比較提出酸化效應。",
+          "nonredundancy_reason": "將原表中不同變數的升降方向轉成需要解釋的具體術後生理問題。",
+          "verdict": "keep"
+        },
+        "08033c4b7dc18cebf2-1": {
+          "role": "case_evidence",
+          "reader_gain": "隔天 PaCO₂ 上升使代謝回復不等於 pH 回升。",
+          "nonredundancy_reason": "加入呼吸時間序列，不能只追 chloride。",
+          "verdict": "keep"
+        },
+        "a74b6306d1548cb154-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出研究未量 lactate、albumin 且手術方式未隨機。",
+          "nonredundancy_reason": "將合理的稀釋生理假說與研究真正量到的變數明確分開，避免中介因果過推。",
+          "verdict": "keep"
+        },
+        "f6f020000d2d38b704-1": {
+          "role": "definition",
+          "reader_gain": "辨認 acidemia 是結果而 acidosis 是生理過程。",
+          "nonredundancy_reason": "避免從 pH 正常倒推沒有代謝酸化。",
+          "verdict": "keep"
+        },
+        "5ea11c4f2c3ad2c129-1": {
+          "role": "definition",
+          "reader_gain": "解釋計算 HCO₃⁻ 與 BE 不能辨認特定酸的身分。",
+          "nonredundancy_reason": "為後文追查 chloride、lactate 與未測陰離子提供必要的量測解釋邊界。",
+          "verdict": "keep"
+        },
+        "96c3d2e7b2ea1917a4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "連結 bicarbonate 下降與 CPB 液體造成的離子平衡變化。",
+          "nonredundancy_reason": "取代單純把 HCO₃⁻ 描述為被酸消耗的誤解。",
+          "verdict": "keep"
+        },
+        "b67ee1c285d411c6ca-1": {
+          "role": "definition",
+          "reader_gain": "辨別 CPB prime、心肌保護液、輸血與 ICU 液體來源。",
+          "nonredundancy_reason": "為追查真正 chloride exposure 提供時序前提。",
+          "verdict": "keep"
+        },
+        "7cf682f86bef4bc646-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明相對 Cl⁻ 增加令強離子差下降的酸化機轉。",
+          "nonredundancy_reason": "提供物理化學原因而不是把氯當成直接耗鹼反應。",
+          "verdict": "keep"
+        },
+        "9bd6e03aee9db8c3a3-1": {
+          "role": "case_evidence",
+          "reader_gain": "以 Chuah 的 Na 和 Cl 反向變化實際計算簡化 SID。",
+          "nonredundancy_reason": "把抽象強離子理論與原始研究數字連接。",
+          "verdict": "keep"
+        },
+        "c25dcbe56505f839bc-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分 Na+K-Cl 的研究 SID 與完整 SIDa。",
+          "nonredundancy_reason": "防止將未測 lactate 等變數混入同一指標。",
+          "verdict": "keep"
+        },
+        "843cca88970612489a-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明 albumin 弱酸稀釋可以帶來相對鹼化作用。",
+          "nonredundancy_reason": "補上與強離子酸化方向相反的弱酸濃度變化，使淨 pH 不變的現象可以理解。",
+          "verdict": "keep"
+        },
+        "9557b32a80708c7bac-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把氯離子增加造成酸化與白蛋白稀釋造成鹼化兩股力量並排對照。",
+          "nonredundancy_reason": "讓讀者看到兩種方向如何在同一患者並存。",
+          "verdict": "keep"
+        },
+        "b4314d1ae4813ebfe8-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋 pH 穩定不代表血液離子和弱酸成分不變。",
+          "nonredundancy_reason": "阻止以終點正常推論所有中介過程正常。",
+          "verdict": "keep"
+        },
+        "fc12a007703ce5b08e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "核對 Chuah 未測白蛋白及 Hb 相關敘述矛盾。",
+          "nonredundancy_reason": "限制用 Hb 變化替代 albumin 實測而推論中介因果的證據強度。",
+          "verdict": "keep"
+        },
+        "2d213d4c2cad9ead0b-1": {
+          "role": "case_evidence",
+          "reader_gain": "以 Hayhoe 十人資料呈現 chloride 升而乳酸未升。",
+          "nonredundancy_reason": "提供不同 prime 的獨立生理觀察。",
+          "verdict": "keep"
+        },
+        "8b74e6bae0b23b2b5a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "乳酸不升仍不能排除局部缺血或其他危險。",
+          "nonredundancy_reason": "將非乳酸酸化的機轉與病人局部缺血、全身灌流安全兩個不同問題分開。",
+          "verdict": "keep"
+        },
+        "8c58f6d2234fd62b62-1": {
+          "role": "orientation",
+          "reader_gain": "從非乳酸酸化自然提出 AG 能否縮小病因。",
+          "nonredundancy_reason": "交代為何接著引入 AG 計算工具，以及這項計算預期縮小哪一類鑑別。",
+          "verdict": "keep"
+        },
+        "31eb1175dea672d930-1": {
+          "role": "orientation",
+          "reader_gain": "預告 CPB 術後 AG 判讀的兩個主要盲點。",
+          "nonredundancy_reason": "先建立 CPB 術後低白蛋白和 SIG 的檢驗限制，再討論 AG 數值的用途。",
+          "verdict": "keep"
+        },
+        "789199f145e4f45f23-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "低 albumin 可能掩蓋高 AG 陰離子訊號。",
+          "nonredundancy_reason": "這是一般 AG 公式之外必須同步核對的白蛋白檢驗條件，否則可能漏掉未測陰離子。",
+          "verdict": "keep"
+        },
+        "97e0bad6bbe47b0f49-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分 AG 與 SIG 並保留 Guarnieri POD1 未報數據。",
+          "nonredundancy_reason": "防止從 pH 正常化捏造隔天 SIG 已回復。",
+          "verdict": "keep"
+        },
+        "38238fb115e1d5b338-1": {
+          "role": "decision",
+          "reader_gain": "說明 SIG 研究不足以單獨決定常規檢查或治療。",
+          "nonredundancy_reason": "把觀察結果轉回實際可取得的床邊證據。",
+          "verdict": "keep"
+        },
+        "e45ab8b8b2aad3af7a-1": {
+          "role": "case_evidence",
+          "reader_gain": "介紹 Bartter syndrome CABG 病人作為不同機轉反例。",
+          "nonredundancy_reason": "區分特殊腎小管疾病個案與一般 CABG 群體，為後續反向 chloride 變化建立不同基線。",
+          "verdict": "keep"
+        },
+        "37687e0c197ba51659-1": {
+          "role": "case_evidence",
+          "reader_gain": "立即術後高乳酸但 Cl⁻ 九十四反駁單純高氯酸化。",
+          "nonredundancy_reason": "同時點數據直接改變候選病因的相對合理性。",
+          "verdict": "keep"
+        },
+        "8337a942ec0a4f7fb6-1": {
+          "role": "case_evidence",
+          "reader_gain": "隔天乳酸下降而氯升高呈現多機轉時間變化。",
+          "nonredundancy_reason": "使讀者看見處置後結果不等於單一治療效果。",
+          "verdict": "keep"
+        },
+        "aca904362395fbd30e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "保留 Protos Table 2 與討論段數字不一致。",
+          "nonredundancy_reason": "拒絕把作者討論文字與原表的不同數值拼接成一條不存在的術後採樣序列。",
+          "verdict": "keep"
+        },
+        "3111ef4a49dfd8c7ec-1": {
+          "role": "orientation",
+          "reader_gain": "轉向 CTICU 接班的條件式推理並標明非原病例醫囑。",
+          "nonredundancy_reason": "分離真實病歷與教學假設避免虛構決策動機。",
+          "verdict": "keep"
+        },
+        "a24deec0f2b4cbe5e8-1": {
+          "role": "safety",
+          "reader_gain": "用胸管出血、低輸出與 tamponade 建立急症分流。",
+          "nonredundancy_reason": "避免因合理的高氯性酸化解釋而延誤出血、低輸出與心包壓迫等可逆危險。",
+          "verdict": "keep"
+        },
+        "3c2480917983413020-1": {
+          "role": "decision",
+          "reader_gain": "只有循環與器官灌流相對穩定時，才進入分層檢驗和病程時序重建。",
+          "nonredundancy_reason": "明確限制後面四組資料蒐集的適用前提。",
+          "verdict": "keep"
+        },
+        "cb06fbaa0027e1e99d-1": {
+          "role": "decision",
+          "reader_gain": "核對動靜脈採樣、CPB 時點與通氣溫度。",
+          "nonredundancy_reason": "先確認血氣量測與採樣條件的可信度，才能進一步討論代謝病因及處置。",
+          "verdict": "keep"
+        },
+        "8eb96c6b9e2bffe67d-1": {
+          "role": "decision",
+          "reader_gain": "同期量乳酸、電解質、albumin 與必要 ketones。",
+          "nonredundancy_reason": "這組辨認代謝來源而非前段的採樣條件。",
+          "verdict": "keep"
+        },
+        "495f6ca1bcb1993ac9-1": {
+          "role": "decision",
+          "reader_gain": "追查 prime、cardioplegia、輸血及尿量腎功能。",
+          "nonredundancy_reason": "把血液結果連到暴露來源與腎臟時間序列。",
+          "verdict": "keep"
+        },
+        "3ce77a4df84fe96462-1": {
+          "role": "decision",
+          "reader_gain": "重測 chloride、BE、PaCO₂ 和乳酸判斷趨勢。",
+          "nonredundancy_reason": "避免單張血氣把病因固定而忽略後續惡化。",
+          "verdict": "keep"
+        },
+        "51aca01dcba043ba0f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將四組資料整合成可區辨機轉的證據路徑。",
+          "nonredundancy_reason": "前面是採集資料，此處才解釋如何更新診斷。",
+          "verdict": "keep"
+        },
+        "4f51f7c4c86d86c901-1": {
+          "role": "counterfactual",
+          "reader_gain": "以嚴重高血鉀、循環崩解和呼吸衰竭的反事實改寫處置優先序。",
+          "nonredundancy_reason": "阻止用輕度群體酸化當作嚴重個案等待理由。",
+          "verdict": "keep"
+        },
+        "ad953685ae5a8c2c67-1": {
+          "role": "orientation",
+          "reader_gain": "從生理機轉提出 balanced prime 是否改善結局的問題。",
+          "nonredundancy_reason": "這是從解釋病因轉入介入療效證據的橋樑。",
+          "verdict": "keep"
+        },
+        "fb4d3edebafb05c203-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指南小型試驗不能證明死亡率或 AKI 獲益。",
+          "nonredundancy_reason": "區分 BE 代理終點與患者重要結局。",
+          "verdict": "keep"
+        },
+        "03231137139da673d5-1": {
+          "role": "case_evidence",
+          "reader_gain": "以 Morgan 二十人試驗示範低氯 prime 仍可提高 SIG。",
+          "nonredundancy_reason": "提供反例防止把 chloride 當成唯一液體特性。",
+          "verdict": "keep"
+        },
+        "115a9b6e472ef107bd-1": {
+          "role": "decision",
+          "reader_gain": "prime 選擇屬術中團隊決策且 ICU 須重新評估。",
+          "nonredundancy_reason": "阻止從既有輸液配方直接推導當下醫囑。",
+          "verdict": "keep"
+        },
+        "f2b5b850a99b97783f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "回到 Chuah 三時點的代謝與呼吸方向分離。",
+          "nonredundancy_reason": "以真實三時點數據完成文章開頭的因果問題，重新區分代謝酸化與呼吸效應。",
+          "verdict": "keep"
+        },
+        "eb22c6a3567de82c43-1": {
+          "role": "decision",
+          "reader_gain": "整合危險分流、採樣、機轉與決策證據。",
+          "nonredundancy_reason": "將知識整理成可遷移的 CTICU 推理方法。",
+          "verdict": "keep"
+        },
+        "6c3364dccba6517fd1-1": {
+          "role": "definition",
+          "reader_gain": "檢驗 lactate 不升仍可有代謝酸化的機轉。",
+          "nonredundancy_reason": "第一問測基本生理而非直接問治療選項。",
+          "verdict": "keep"
+        },
+        "92715f3db47fc7c652-1": {
+          "role": "decision",
+          "reader_gain": "檢驗 chloride 回復而 pH 下降時的呼吸辨別線索。",
+          "nonredundancy_reason": "第二問測重新採樣與 PaCO₂ 的臨床應用。",
+          "verdict": "keep"
+        },
+        "8ed6fa08330f2d6076-1": {
+          "role": "counterfactual",
+          "reader_gain": "以正常乳酸及 AG 但持續出血測試危險分流。",
+          "nonredundancy_reason": "第三問攔截用漂亮檢驗值排除休克的誤推論。",
+          "verdict": "keep"
+        },
+        "951d94e66072afb4bc-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Protos Bartter 真實病例與原始 Table 2。",
+          "nonredundancy_reason": "病例來源必須與 Chuah 群體證據獨立追查。",
+          "verdict": "keep"
+        },
+        "37dcf727493638c177-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Chuah 2013 群體及 Table 3 原始數據。",
+          "nonredundancy_reason": "這是圖表與時序主要依據而非治療試驗。",
+          "verdict": "keep"
+        },
+        "6cc3a11cc57ce44f82-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Hayhoe 十人特定 prime 的生理研究。",
+          "nonredundancy_reason": "防止把舊式小樣本機轉當作所有現代 CPB。",
+          "verdict": "keep"
+        },
+        "0fbdd85bd5370d1ec6-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Guarnieri 2026 SIG 與 POD1 報告邊界。",
+          "nonredundancy_reason": "提供公開摘要可核對範圍而非虛構隔日數據。",
+          "verdict": "keep"
+        },
+        "146fb518491bf41b75-1": {
+          "role": "source_context",
+          "reader_gain": "定位成人 CPB 指南對 priming fluid 的證據。",
+          "nonredundancy_reason": "與觀察研究不同，此來源界定建議與試驗不足。",
+          "verdict": "keep"
+        },
+        "a29b37884d7cddc23c-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Morgan 2008 隨機 prime 研究的樣本和終點。",
+          "nonredundancy_reason": "精確年份和比較組避免與 2009 其他試驗混淆。",
+          "verdict": "keep"
+        },
+        "4a85edd13d99999fc7-1": {
+          "role": "source_context",
+          "reader_gain": "定位較近期 colloid priming 研究的證據範圍。",
+          "nonredundancy_reason": "補充另一種 colloid prime 的研究情境，防止只從單一舊式 prime 推廣所有液體配方。",
+          "verdict": "keep"
+        },
+        "619e5b55b920a6be52-1": {
+          "role": "navigation",
+          "reader_gain": "連接 lactate、氧輸送與一般酸鹼教材的不同問題。",
+          "nonredundancy_reason": "跨篇連結讓讀者回查必要先備而不在本文重寫。",
+          "verdict": "keep"
         }
       }
     }
