@@ -201,13 +201,18 @@ def by_year(pages):
 
 
 def question_connections(pages, root):
+    """Only *additional* concept lessons count as year-page study materials.
+
+    The question-row link already opens its canonical answer, including any
+    concept heading within that same page. Do not relabel that destination or
+    another question bank as a second "教材" entry.
+    """
     links = defaultdict(list)
     for page in pages:
+        if page.get("kind") == "exam_compilation" or page.get("exam"):
+            continue  # Exam-answer collections remain reachable by the Q entry itself.
         for link in page.get("related_exams", []):
             links[question_key(link)].append({"page": page, "href": concept_url(page, link, root), "focus": link["focus"]})
-        for question in page.get("exam_questions", []):
-            if question.get("concept_heading"):
-                links[question_key(question)].append({"page": page, "href": concept_url(page, question, root), "focus": question.get("focus", question["concept_heading"])})
     return links
 
 
