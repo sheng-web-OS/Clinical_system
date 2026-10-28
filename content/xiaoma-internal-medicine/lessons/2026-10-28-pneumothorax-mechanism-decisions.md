@@ -42,6 +42,8 @@ CT 在複雜、非典型、反覆、疑有囊性肺病或需要外科評估時�
 
 年輕、反覆發作、雙側或多發肺囊腫、家族史、腎臟或皮膚表徵，應思考 LAM、Birt–Hogg–Dubé syndrome 等囊性肺病；育齡女性的反覆、尤其右側氣胸，則應**詢問每一次胸痛／氣胸與月經的時間關係**。此時重要的不是先背「哪種病比較罕見」，而是認知到「沒有已知肺病」這個分類的前提可能需要重新調查。
 
+這條病因分流也會改變復發預防時點。**Birt–Hogg–Dubé syndrome（BHD）**可見肺囊腫、反覆氣胸、皮膚纖維毛囊瘤與腎腫瘤風險；肺囊腫較常位於下肺區而不是只看肺尖。2024 ERN GENTURIS 指南建議對反覆或家族性 PSP、無其他原因的多發雙側肺囊腫評估是否需要 FLCN 遺傳檢測；**評估 BHD 並不等於為所有第一例氣胸立即安排基因檢查**。[BHD 2024](https://doi.org/10.1038/s41431-024-01671-2)。**Lymphangioleiomyomatosis（LAM）**的多發薄壁肺囊腫則可結合 HRCT、臨床特徵與 VEGF-D 等證據；HRCT 有典型囊腫但沒有其他確認特徵時，不能單憑 CT 診斷。與一般首次 PSP 不同，ATS/JRS 對已診斷 LAM 的**首次氣胸後**即提出同側 pleurodesis 的條件性建議，因其再發風險特別高。[LAM 胸膜管理指南](https://pmc.ncbi.nlm.nih.gov/articles/PMC5694834/)。
+
 <figure id="pneumothorax-decision-map">
 <div class="atlas-logic atlas-logic-three" role="group" aria-label="氣胸的三層決策示意：危險辨認、當次處置、復發預防">
 <div><small>現在是否危險？</small><strong>循環／呼吸失代償</strong><p>先辨識張力性急症與需要立即支持的病人。穩定才有時間比較處置方案。</p></div>
