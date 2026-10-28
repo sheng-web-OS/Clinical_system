@@ -1,7 +1,7 @@
 # Lab Medicine Pilot｜初稿來源稽核與發布閘門（2026-10-27）
 
 ## 狀態
-Issue #180。兩篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD**；本紀錄是撰稿脈絡內的初步自我校核，**不等於獨立審查或正式 release receipt**。不修改 site/pages.json、不更動現有 09:00 任務。
+Issue #180。四篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD**；本紀錄是撰稿脈絡內的初步自我校核，**不等於獨立審查或正式 release receipt**。不修改 site/pages.json、不更動現有 09:00 任務。
 
 ## 已核對來源與存取層級
 - NICE AKI NG148（直接讀取建議文字）：https://www.nice.org.uk/guidance/ng148/chapter/Recommendations 。成人 SCr 48h +26 µmol/L、7d +50%、尿量 <0.5 mL/kg/h >6h；尿液 dipstick；超音波不是所有 AKI 都需例行安排。
@@ -31,8 +31,8 @@ Issue #180。兩篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD*
 4. 所有新公開教材必須先過 site/pages.json allowlist 的編輯發布流程；目前不提交出版 manifest。
 5. Pilot 後以未見病例驗證理解遷移、重大安全錯誤、編輯返工次數與使用者投入；AI 自評不是教學效果。
 
-## 下一篇候選
-SCr/BUN/eGFR、尿量、UA/urine sediment、時間滯後：AKI 功能訊號不等於腎小管損傷，對照 CKD 病程與藥物/灌流/阻塞。避免與已存在 acid-base、diuretics 重複。
+## 歷史候選（已完成初稿）
+原先規劃的 SCr/BUN/eGFR、尿量與 urine sediment 單元已在同分支成稿；後續應審稿和驗證，不應再依這段歷史安排重複寫作。
 
 **最終狀態：HOLD。早期文章版本已有 GitHub Actions build success，但最新版文章／來源審查仍需依 exact SHA 讀回，且無獨立醫學與逐段語義審查、正式發布或讀者學習成效的合格證據。**
 
@@ -53,3 +53,12 @@ SCr/BUN/eGFR、尿量、UA/urine sediment、時間滯後：AKI 功能訊號不�
 - 111 年第二次醫學（三）Q46，考選部官方原題第 11 頁、標準答案與更正表**已目視核對**：答案 D（BAL），該題未更正；112 年第一次醫學（三）Q28，官方原題第 6 頁、標準答案與更正表**已目視核對**：答案 C（eculizumab），該題未更正。兩題涉及鑑別與高風險用藥，**本稿僅連結生理判讀，不把舊考題推論為現行治療指南或完整逐項詳解**。
 - 所有四篇的相對內部連結（包含先備教材、利尿舊文及 national-exam anchor）均以 GitHub API 逐一核對存在；這不是網站建置或行動版驗證。
 - **HOLD 持續**：缺獨立醫學／逐段敘事 semantic reviewer、content-specific evidence-to-claim safety review、實際 360/375/390px 手機 screenshot；還未經正式發布授權。要先驗證四篇是否真正提升新情境推理，若沒有增量不應為 26 篇額外擴充架構。
+
+## 2026-10-28 修復｜跨 PR 主教材重疊與 ECG 時序斷裂
+
+- 在 PR #181 和 PR #186 對照發現：兩個 private branch 的早晨 Lab 主文原先**標題完全相同**「早晨一張 Lab sheet：真正要判斷的是什麼？」；但 #181 是 pneumonia / hypotension / oliguria，#186 是 HF / diuresis / congestion。現有 main 沒有這兩篇正式發布的同名副本，屬 prospective duplication，並非 production 事故。
+- **Canonical 決議（限候選規劃）：** PR #186 保留為唯一公開總論候選；PR #181 的第一篇已實際更名為《肺炎、低血壓與少尿：同一張 Lab sheet 為何可能導向四種判斷？》，重新定位為感染／低灌流的延伸病例。另三篇 specimen-artifacts、AKI/urine、CBC/DC 為各自獨立深讀，不納入第二篇「同名總論」。此決議不表示 #186 已獲醫學審查通過、也不表示 #181 獲准發布；**不得在 site/pages.json 出現第二個同名總論**。
+- 反向追查 #181 的原有病例：05:40 K 5.7 的 hemolysis flag → 07:00 K 5.2 之間，未交代 ECG 結果或是否使用 insulin/dextrose 等降鉀藥，導致後文以 K 變化討論溶血假象時缺少時序／介入前提。已對**明示的完全自編病例**加上 05:55 ECG（竇性心搏過速、無新高風險傳導變化）、未施降鉀介入、同時持續評估休克灌流以及 ECG 正常不能排除危險 K 的界線。讀者能確定這是未治療前的新樣本，但**仍不能**把兩管的 0.5 mmol/L 差額全部歸於溶血。
+- 三篇 sibling 的連結已調整為「肺炎與少尿延伸病例」而非「總論第一篇」，避免為讀者製造不存在的發布層級；第二篇 [3] 後的斷句修復。
+- 同輪來源覆核：NICE NG148 官方現行 recommendations、UKKA July 2026 指引官網、ESE 2014 高血糖校正 +2.4 /100 mg/dL、2024 兒童 EDTA PTCP PubMed 摘要（PMID39582446）、JMA J 2026 CBC framework 官方全文與 AHRQ 2017 溶血高血鉀病例。可追查，但這次仍為**同輪作者針對缺陷修復**，不是 independent semantic PASS。
+- Release hard stop 未解除：完整逐段不同審稿脈絡與 P0/P1、source figure/footnote、藥物路徑、本稿頁面實際 360/375/390px、正式 site registry 與 production sha，均不得從 passing CI 推論。
