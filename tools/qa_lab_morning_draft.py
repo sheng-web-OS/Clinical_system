@@ -106,7 +106,7 @@ def main():
                                ("AML 病例", "12:00", "20:03", "20:48", "23:37",
                                 "K 6.7", "K 7.8", "降鉀治療約 30 分鐘",
                                 "n=66", "n=2,440", "1,576", "864", "597", "267",
-                                "並非同一位病人")):
+                                "第三項獨立研究")):
                         raise AssertionError("Published samples or study denominators missing")
 
                     observed = page.evaluate("""() => ({
