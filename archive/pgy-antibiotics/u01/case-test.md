@@ -27,12 +27,13 @@
 
 **Rubric 10 分**：正確詮釋 AST 2；臨床穩定/source control 2；適當降階/口服與毒性 2；有效治療起算與療程納排 2；ASB 反例與例外 2。**Critical errors**：未 source control 就因 S 換 PO；不分有效/無效藥物起算；無症狀菌尿一律治療。
 
-## Adversarial transfer test（未見過情境）
+## Adversarial transfer test（五種不同決策邊界）
 
 - **T1：**把先前菌種換成 CRE Klebsiella 並增加 carbapenem-R，meropenem 還能當可預期 active 的預設嗎？請指出需要機轉/MIC/AST 與哪些專家。
 - **T2：**完全沒有休克、無菌血症、這次確認 ESBL cUTI 對 piperacillin–tazobactam 為 S；怎樣處理 2026 AMR 的替代方案定位與 susceptible oral 選項？
 - **T3：**尿液培養 ESBL，但新血培卻是 S. aureus，病人尿路無阻塞，改找什麼 source，不能有什麼 anchoring error？
 - **T4：**病人昏沉且 allergy 記錄為「penicillin」，查到過去疑似 SJS/TEN；能否以「carbapenem 交叉率低」直接開立？應急診如何共同決策？
+- **T5：**一位沒有 resistant isolate 病史、生命徵象正常、只有頻尿與排尿疼痛的 38 歲患者，沒有發燒、CVA tenderness、低灌流或 hydronephrosis。請說明為何不應照搬本例 meropenem IV、應先確認哪個 localized syndrome、是否需要培養與適當窄譜選擇；若連感染症狀都沒有會如何改變？
 
 ## 參考答案（限評分後閱讀）
 
@@ -40,6 +41,6 @@ A：立即床邊 resuscitation／求援＋適當培養（不因抽不到而顯�
 
 B1：先確認灌流、持續有效 IV 曝露及必要引流，不以 S 代替 source control。B2：實際 susceptibility、血/尿/組織濃度、可靠 PO absorption、穩定、source control、K/renal/interaction、專科疑似 prostatitis，才能個別化。2025 cUTI 有反應者對 FQ 5–7 天、非 FQ 7 天支持，但 CKD、重症、阻塞、男性攝護腺炎疑慮是外推限制；從第一個有效抗生素日算。B3：無症狀菌尿通常不治；懷孕與特定黏膜損傷的泌尿處置前等例外需另評估。
 
-T1：不可假定活性，先看 CRE phenotype/mechanism、AST、local options 與 ID consult。T2：可以討論 alternative 但不等於最佳，依病人情境/口服有效選項縮窄。T3：重定位來源與 S. aureus bacteremia 完整流程，勿用初始尿源假說掩蓋。T4：嚴重遲發過敏高風險，絕不可簡化為一般 penicillin rash，需上級/ID/藥師即刻制定安全 active regimen。
+T1：不可假定活性，先看 CRE phenotype/mechanism、AST、local options 與 ID consult。T2：可以討論 alternative 但不等於最佳，依病人情境/口服有效選項縮窄。T3：重定位來源與 S. aureus bacteremia 完整流程，勿用初始尿源假說掩蓋。T4：嚴重遲發過敏高風險，絕不可簡化為一般 penicillin rash，需上級/ID/藥師即刻制定安全 active regimen。T5：依局限症狀診斷與本地窄譜方案判斷，無危急程度或 prior resistant isolate 不應反射性用 carbapenem；若完全無症狀則優先考慮 ASB 非治療原則及例外。
 
 來源：[SSC 2026](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)、[IDSA 2025 cUTI](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)、[IDSA 2026 AMR](https://www.idsociety.org/practice-guideline/amr-guidance/)、[EAU Urolithiasis](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)、[IDSA 2019 ASB](https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/)。
