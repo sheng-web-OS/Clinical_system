@@ -254,6 +254,18 @@ def main():
         if not oxygen_figure.is_file():
             raise FileNotFoundError("CTICU oxygen delivery figure missing: " + str(oxygen_figure))
         shutil.copyfile(oxygen_figure, DIST / oxygen_figure.name)
+    # New CTICU ABG artwork is shipped only with a fully approved catalog entry.
+    # Unapproved source files on a draft PR must not leak into the public dist.
+    cticu_figures = {
+        "xiaoma-20261029-cticu-abg-03-cpb-acidbase.html": "cticu-abg-03-cpb-acidbase-group-trends.svg",
+        "xiaoma-20261029-cticu-abg-04-alphastat-phstat.html": "cticu-abg-04-alpha-phstat-logic.svg",
+    }
+    for page_output, image_name in cticu_figures.items():
+        if any(page["output"] == page_output for page in PAGES):
+            candidate_image = BASE / "content/xiaoma-internal-medicine/lessons" / image_name
+            if not candidate_image.is_file():
+                raise FileNotFoundError("CTICU release figure missing: " + str(candidate_image))
+            shutil.copyfile(candidate_image, DIST / image_name)
     rendered = {}
     rows=[render(*entry, rendered=rendered) for entry in FILES]
     connected = connect_exam_reading(PAGES, rendered, BASE)

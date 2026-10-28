@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1130" viewBox="0 0 390 1130" role="img" aria-labelledby="chartTitle chartDesc">
+<title id="chartTitle">低溫 CPB 的 alpha-stat 與 pH-stat：同一份血氣，量測基準不同，CO₂ 管理也不同</title>
+<desc id="chartDesc">先分開病人28°C低溫、儀器37°C量測與體溫校正顯示。alpha-stat依37°C未校正值管理，通常不為追逐體溫校正值補入CO2。pH-stat依實際體溫校正值管理，可能調整掃氣或加入CO2以達目標；後者可能增加腦血流，也影響自動調節。成人高至中度低溫應考慮alpha-stat，IIa B；不能外推至所有DHCA與兒科手術。</desc>
+<rect width="390" height="1130" rx="16" fill="#f7faf8"/>
+<rect x="8" y="8" width="374" height="1114" rx="12" fill="none" stroke="#abc9b9"/>
+<text x="23" y="48" font-size="25" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="770" fill="#193d31">同一管低溫血氣，</text>
+<text x="23" y="85" font-size="25" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="770" fill="#193d31">為何有兩種 CO₂ 目標？</text>
+<rect x="18" y="132" width="354" height="183" rx="12" fill="#e3efe9" stroke="#96baaa"/>
+<text x="30" y="169" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="610" fill="#1a4a39">第一步：先認清讀值</text>
+<text x="30" y="208" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="610" fill="#1a4a39">病人在低溫 CPB（如 28°C）</text>
+<text x="30" y="247" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="610" fill="#1a4a39">血氣儀通常在 37°C 測量</text>
+<text x="30" y="286" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="610" fill="#1a4a39">可另列體溫校正的 pH／CO₂</text>
+<rect x="18" y="327" width="354" height="75" rx="12" fill="#fff" stroke="#bdcebf"/>
+<text x="32" y="357" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="690" fill="#315749">只切換顯示，不會改變</text>
+<text x="32" y="388" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="690" fill="#315749">體內 CO₂ 或腦血流。</text>
+<text x="195" y="428" text-anchor="middle" font-family="'Noto Sans TC',system-ui,sans-serif" font-size="20" font-weight="680" fill="#365b4a">以下是不同管理選擇</text>
+<rect x="18" y="444" width="354" height="237" rx="12" fill="#e7f4ed" stroke="#73a38e" stroke-width="1.5"/>
+<text x="31" y="479" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">A｜alpha-stat</text>
+<text x="31" y="509" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">依 37°C 未校正值管理</text>
+<text x="31" y="539" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">pH 典型目標 ≈ 7.40</text>
+<text x="31" y="569" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">PaCO₂ 典型目標 ≈ 40</text>
+<text x="31" y="599" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">低溫校正後 pH 可較高</text>
+<text x="31" y="629" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">不為此另外補入 CO₂</text>
+<text x="31" y="659" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">較能保留腦血流自調節</text>
+<text x="195" y="706" text-anchor="middle" font-family="'Noto Sans TC',system-ui,sans-serif" font-size="18" font-weight="650" fill="#446276">A 與 B 並非先後處置</text>
+<rect x="18" y="716" width="354" height="227" rx="12" fill="#edf2f9" stroke="#8ba9ce" stroke-width="1.5"/>
+<text x="31" y="751" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">B｜pH-stat</text>
+<text x="31" y="780" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">依病人溫度校正值管理</text>
+<text x="31" y="809" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">pH 典型目標 ≈ 7.40</text>
+<text x="31" y="838" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">PaCO₂ 典型目標 ≈ 40</text>
+<text x="31" y="867" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">可能增加氧合器的 CO₂</text>
+<text x="31" y="896" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">腦血管擴張、腦血流 ↑</text>
+<text x="31" y="925" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">自動調節可能受到影響</text>
+<rect x="18" y="956" width="354" height="131" rx="12" fill="#fff" stroke="#b7c9ba"/>
+<text x="31" y="984" font-size="20" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="630" fill="#395347">選擇策略仍取決於術式：</text>
+<text x="31" y="1016" font-size="20" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="630" fill="#395347">成人中高度低溫：考慮 alpha</text>
+<text x="31" y="1048" font-size="20" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="630" fill="#395347">（IIa B）；非所有 DHCA／兒科。</text>
+<text x="20" y="1110" font-size="15" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="470" fill="#63766b">原創機轉圖｜成人 CPB 指南 2024 §10.3</text>
+</svg>
