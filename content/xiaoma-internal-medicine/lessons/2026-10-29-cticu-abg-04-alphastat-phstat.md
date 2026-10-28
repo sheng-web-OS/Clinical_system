@@ -40,7 +40,7 @@ pH-stat 的生理效應與其風險，從 CO₂ 造成的腦血管擴張開始�
 
 <figure id="cticu-abg-04-measurement-decision" style="margin:1.6rem auto;max-width:390px">
 <a href="cticu-abg-04-alpha-phstat-logic.svg" target="_blank" rel="noopener noreferrer" aria-label="在新分頁開啟 alpha-stat 與 pH-stat 原創圖，可雙指放大閱讀"><img src="cticu-abg-04-alpha-phstat-logic.svg" width="390" height="1130" alt="原創示意圖：同一管低溫血液在37°C與溫度校正顯示的差別、alpha-stat和pH-stat會如何影響實際CO₂管理，以及腦灌流決策邊界" style="display:block;width:100%;height:auto;border-radius:14px" loading="lazy"></a>
-<figcaption>圖 1｜先區分「血氣的溫度基準」與「臨床真正調整 CO₂」，再分辨兩種策略可能影響的腦循環。此圖為原創概念模型，不是病人的兩份實測血氣；成人 high-moderate hypothermia 的建議有特定適用範圍。 **手機可點圖開啟原尺寸 SVG，雙指放大閱讀細節。**</figcaption>
+<figcaption>圖 1｜先區分「血氣的溫度基準」與「臨床真正調整 CO₂」，再分辨兩種策略可能影響的腦循環。此圖為原創概念模型，不是病人的兩份實測血氣；成人 high-moderate hypothermia 的建議有特定適用範圍。 手機可點圖開啟 SVG 獨立檢視，並視需要放大。</figcaption>
 </figure>
 
 ## 四、臨床證據：為什麼成人 CABG 常偏向 alpha-stat，卻不能一概而論？
