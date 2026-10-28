@@ -16,7 +16,7 @@
 
 **可核實**：81 歲女性、BP 68/36、Cr 2.7、lactate 3.3、左側 UPJ 阻塞性病變、初期循環支持／抗菌治療、嚴重休克下處理後完成 PCN、血尿培第 4 天 ESBL *E. coli*，日後病理泌尿上皮癌。原文 Figure 1 是實際 CT／腎造瘻圖像；本站只連向作者原始頁面，**不複製病人影像**。
 
-**實際經驗性用藥的先驗資料（不可漏讀）**：Arai 原文印刷 **p.434 Case Report 與 Discussion** 記錄：先前 UTI 使用過 **cefcapene pivoxil**（第三代 cephalosporin），作者因此推測抗藥風險，最初即選擇 **carbapenem**，**Day 4** 的血與尿培養才證實 ESBL *E. coli*，因此繼續原方案。這是真實的 first-dose rationale，但原文**沒有報告一份在本次入院前已知 ESBL 的舊培養 AST**；不要把抗生素暴露當成既往 ESBL AST，也不要從原作者選藥推出一般處方優越性。[原作者全文 PDF（Case Report, Discussion）](https://academic.oup.com/omcr/article-pdf/2021/11-12/omab109/41940667/omab109.pdf)。
+**實際經驗性用藥的先驗資料（不可漏讀）**：Arai 原文印刷 **p.434–435（Case Report 在 p.434；Discussion 的 cefcapene 推論在 p.435）** 記錄：先前 UTI 使用過 **cefcapene pivoxil**（第三代 cephalosporin），作者因此推測抗藥風險，最初即選擇 **carbapenem**，**Day 4** 的血與尿培養才證實 ESBL *E. coli*，因此繼續原方案。這是真實的 first-dose rationale，但原文**沒有報告一份在本次入院前已知 ESBL 的舊培養 AST**；不要把抗生素暴露當成既往 ESBL AST，也不要從原作者選藥推出一般處方優越性。[原作者全文 PDF（Case Report, Discussion）](https://academic.oup.com/omcr/article-pdf/2021/11-12/omab109/41940667/omab109.pdf)。
 
 **不能宣稱**：有證實 ureteral stone（其病因另有腫瘤）；不能由單次 Cr 推定 KDIGO stage，也不能把該院個案採用的 PMX-DHP／hydrocortisone 視為標準治療、普遍受益或推薦用量。原文不能證實藥物與引流每一項對最終結果的個別因果貢獻。
 
@@ -27,7 +27,7 @@
 ## 當前指南：以病例理解，不以病例代替
 
 - [IDSA 2025 complicated UTI 全文](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)、[原 Figure 1.1 四層 empiric selection](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf)、[原 Table 1.1 候選類別與註腳](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf)、[原 Figure 1.2 IV-to-oral](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf)、[原 Figure 1.3 duration](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf)。
-- [IDSA 2026 AMR Guidance ESBL](https://www.idsociety.org/practice-guideline/amr-guidance/)：經驗性選擇和已有 AST 的 definitive treatment 應分開；Q1.4 對 pip-tazo 作特定限定。其 [Table 1 劑量原表](https://www.idsociety.org/globalassets/idsa/practice-guidelines/amr-guidance/5.0/table-1.pdf) 預設**正常腎肝功能**，不得照搬至 AKI／RRT 病人。
+- [IDSA 2026 AMR Guidance ESBL](https://www.idsociety.org/practice-guideline/amr-guidance/)：其 General Management Suggestions 明確將具體經驗性治療建議列為範圍之外；Q1.2 是已知病原及 AST 後的 ESBL-E cUTI 治療選擇，與 IDSA 2025 cUTI Figure 1.1 的經驗性四步法分開；Q1.4 對 pip-tazo 作特定限定。其 [Table 1 劑量原表](https://www.idsociety.org/globalassets/idsa/practice-guidelines/amr-guidance/5.0/table-1.pdf) 預設**正常腎肝功能**，不得照搬至 AKI／RRT 病人。
 - [SSC 2026](https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026)：感染嚴重度、抗菌藥時效、培養、復甦及 source control。
 - [EAU Urolithiasis](https://uroweb.org/guidelines/urolithiasis/chapter/guidelines)：感染性阻塞**結石**緊急減壓；勿把任何 hydronephrosis 都當作結石。
 - [KDIGO 2012 AKI](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)：須查 48h/7d Cr 或連續至少 6h 尿量，不能自行補臨床數據。
