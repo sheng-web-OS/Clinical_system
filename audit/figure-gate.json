@@ -1159,7 +1159,7 @@
         },
         {
           "locator": "Al Barbandi et al, Front Pediatr 2021, original PDF p3 Table 1: paired bowel and bladder fluid, acidosis and normo-acidemia",
-          "source_token": "Table 1",
+          "source_token": "Table 1｜",
           "teaching_role": "直接對讀原始血液 AG 及腸/尿出口液體組成，核對含鉀與不含鉀的 AG 以及源頭不同對檢驗解釋的限制。",
           "scope_limit": "原表單位疑點與檢體時點保留；單病例不能由這些數字推導不同診斷測試的 LR 或定量腸道離子輸運。",
           "mode": "source_link",
