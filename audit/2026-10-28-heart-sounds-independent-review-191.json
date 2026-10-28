@@ -1,0 +1,486 @@
+{
+  "schema": "PR191_INDEPENDENT_READ_ONLY_PARAGRAPH_AUDIT_V1",
+  "observed_at": "2026-10-28T04:42Z",
+  "pr": 191,
+  "reviewer_context": "distinct scheduled patrol execution, not original article writer",
+  "status": "TEXT_53_OF_53_REVIEWED_SOURCE_EXAM_IMAGE_HOLD_NO_FINAL_SEMANTIC_RECEIPT",
+  "frozen": {
+    "head": "8090a93a3318db39abd937fa97e458ceca46216f",
+    "article": {
+      "path": "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md",
+      "blob": "8ba87478c7daeb44c1cdeed829a9d860034f141a"
+    },
+    "source": {
+      "path": "content/xiaoma-internal-medicine/heart-sounds-structural-sources.md",
+      "blob": "d20d12ba6e20cecb847dee276c5cb916e23b96e2"
+    },
+    "figure": "original HTML conceptual figure; no original pixel reproduced"
+  },
+  "core_reader_question": "How do murmur timing, blood flow and lesion anatomy relate to severity and emergency decision-making when no murmur is audible?",
+  "new_understanding": "Case-grounded AMI-to-PMR chronology, Doppler/flow distinctions, valve load adaptation, dynamic HCM and shunt contraindication are causally integrated rather than exam-list fragments.",
+  "strongest_counterargument": "The lesson's exam answers and some cited original figure footnotes have not all been independently pixel-verified, so this text review cannot certify exam identity, rights, clinical human signoff or public release.",
+  "epqc_provisional": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "D": 3,
+    "E": 4,
+    "F": 4,
+    "G": 3,
+    "meaning": "Text-only qualitative editorial scores; not a formal release receipt or learning-outcome measurement"
+  },
+  "units": {
+    "056c79b791c65bc2c4-1": {
+      "line": 3,
+      "excerpt": "心雜音不是疾病名稱，而是心臟在某個時間點、沿某個方向流動的血液產生了可聽見的振動。 要理解它，至少有三件事不能混為一談：聽到了什麼、是哪種血流力學使聲音出現、這種血流異常已對心臟和病人造成什麼後果。同樣的病灶，在流量、壓差或代償狀態改變後，聲音可能完全不同。因此，聽診既不能只靠聲音背病名，",
+      "role": "orientation",
+      "reader_gain": "將可聽聲音、血流力學與病人後果拆成三個層級",
+      "nonredundancy_reason": "刪去會使全篇回到用音量直接判病灶的錯誤前提",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "c17ded0f1a5bfc1e0d-1": {
+      "line": 5,
+      "excerpt": "這篇從一個有原始文獻可追溯的真實病例出發，建立 S1／S2、雜音時相、瓣膜狹窄與逆流、動態流出道阻塞、先天性分流、影像判讀及臨床失代償之間的完整推理鏈。國考題是最後的驗證，不是正文的骨架。相關真題與更正答案由來源頁另行對照。",
+      "role": "navigation",
+      "reader_gain": "先聲明病例推理為正文主軸、國考為後續檢驗",
+      "nonredundancy_reason": "刪去會讓題庫取代主教材的角色界線消失",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "02cbfb5b6967224f94-1": {
+      "line": 9,
+      "excerpt": "Kameyama 等人在 2021 年發表一位 88 歲女性的真實病例。病人有糖尿病與高血壓，入院前先後出現咳嗽、間歇背痛、已緩解的胸痛，接著急性呼吸困難與躁動，最後因休克、呼吸窘迫及意識不清送醫。入院胸部聽診有雙側濕囉音，卻沒有聽到心雜音；心電圖呈下壁 ST elevation，胸片已有",
+      "role": "case_evidence",
+      "reader_gain": "還原入院無雜音、初次TTE已有輕中度MR的實際紀錄",
+      "nonredundancy_reason": "刪去會誤把初次影像不足寫成完全沒有逆流",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "ae7ede66da67070123-1": {
+      "line": 11,
+      "excerpt": "緊急冠狀動脈攝影找到右冠狀動脈 posterior descending branch 的完全阻塞；球囊擴張使血流恢復後，病人卻仍在休克中，氧合也持續惡化。病人接受 intra-aortic balloon pump（IABP，主動脈內氣球反搏：在舒張期充氣、收縮前放氣，以輔助冠狀灌流並降",
+      "role": "case_evidence",
+      "reader_gain": "分開再灌流、IABP暫時支持與第三日敗血症工作假說",
+      "nonredundancy_reason": "刪去會把血管打通誤當成休克病因已全部解決",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "44c501a442de3f8242-1": {
+      "line": 13,
+      "excerpt": "到了住院第 5 天，氧合進一步惡化。重新取得的 TTE 先顯示左室內活動性腫塊，懷疑乳突肌斷裂；其後 transesophageal echocardiography（TEE，經食道心臟超音波）才確認 posterior papillary muscle rupture 與急性重度 MR。",
+      "role": "case_evidence",
+      "reader_gain": "確立第五日TTE先提示、TEE再確認與第十五日死亡時序",
+      "nonredundancy_reason": "刪去會失去影像資訊改變機械性診斷的時間證據",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "b9b9028b7ffad38b17-1": {
+      "line": 15,
+      "excerpt": "這個時間序列的關鍵不只是 TEE 比 TTE 看得清楚，而是：已確診心肌梗塞，不表示休克原因已經完整解釋；hyperkinetic LV 與發炎反應也不足以排除急性機械性瓣膜失效。 下一項影像有價值，是因為它回答了「原先病因解釋不了的休克與肺鬱血，是否另有結構原因」，而不只是增加一項檢查。",
+      "role": "causal_bridge",
+      "reader_gain": "說明新影像是在回答持續休克的未解釋病因",
+      "nonredundancy_reason": "刪去會把TEE當作無理由增加的檢查項目",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "1e4b16b0f79a2a53cc-1": {
+      "line": 26,
+      "excerpt": "這個病例迫使我們先回答：什麼條件會決定雜音是否能被聽見？ 血液從左心室逆流到左心房時，驅動聲音的不只是二尖瓣有沒有破裂，還包含每一時刻左室與左房之間的壓力差、逆流孔的形態、血流速率、胸壁傳聲與現場噪音。急性大量逆流讓尚未擴大的左房壓迅速上升，收縮期 LV–LA 壓差可能更早縮小；同時低前向",
+      "role": "evidence_boundary",
+      "reader_gain": "區分急性MR壓差機轉推論與未直接量測的病人數據",
+      "nonredundancy_reason": "刪去會讓無雜音被誤當排除急性重度逆流的證據",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "77b7d1e4784b6b8cad-1": {
+      "line": 30,
+      "excerpt": "正常狀態下，左房與左室之間的二尖瓣、左室與主動脈之間的主動脈瓣，按照壓差方向被動開合。舒張初期主動脈壓高於左室壓，主動脈瓣應維持關閉；左室壓低於左房壓時，二尖瓣開啟供心室充盈。當心室開始收縮、左室壓超過左房壓，二尖瓣關閉而形成 S1 相關振動；之後左室壓超過主動脈壓，主動脈瓣才打開射血。心",
+      "role": "definition",
+      "reader_gain": "從跨瓣壓差依序建立S1與S2及瓣膜開合事件",
+      "nonredundancy_reason": "刪去會迫使讀者背誦聲音而不知心動週期前提",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "8f756287942716329d-1": {
+      "line": 32,
+      "excerpt": "這也解釋為何同一個瓣膜的狹窄與逆流，不會理所當然發出同一時相的聲音。主動脈瓣狹窄（AS）是在應該打開射出時形成阻礙，因而主要是收縮期；主動脈瓣逆流（AR）則是在應該關閉的舒張期漏血。二尖瓣恰好相反：狹窄（MS）阻礙舒張期的 LA→LV 流入；逆流（MR）發生在收縮期 LV→LA。左右心的其",
+      "role": "causal_bridge",
+      "reader_gain": "用瓣膜應開與應關的時相統一四種狹窄逆流",
+      "nonredundancy_reason": "刪去會失去AS AR MS MR聲音時相的共同生成規則",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "e5d41600364e143230-1": {
+      "line": 40,
+      "excerpt": "「收縮期」仍不足以定位。例如 AS 常在 S1 之後有射出開始，音量先增後減，可能向頸動脈傳導；MR 是心室在整個收縮期持續向左房逆流，典型為心尖部吹風樣全收縮聲，可向腋下傳導。可是 VSD 也可產生胸骨左下緣的全收縮聲，HCM 的動態流出道阻塞也可有收縮期射出聲。時間、位置、傳導只是逐步",
+      "role": "evidence_boundary",
+      "reader_gain": "把時相位置傳導作為鑑別線索而非直接確診",
+      "nonredundancy_reason": "刪去會把多種收縮期雜音錯誤壓成單一病名",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "db4d509a0235e893d8-1": {
+      "line": 42,
+      "excerpt": "低頻的 S3 與 S4 位於另外一個維度。S3 發生在 S2 後快速充盈期，年輕人可為生理現象；在老年人或心衰竭情境則支持充盈負荷異常。S4 出現在 S1 前有效心房收縮、血液推向順應性不佳的心室時；因此 AF 沒有協調有效的 atrial kick，不能期待典型 S4。這些聲音可以提供負",
+      "role": "definition",
+      "reader_gain": "建立S3 S4與充盈及有效心房收縮的機轉",
+      "nonredundancy_reason": "刪去會使AF缺S4與EF無法由心音推算缺少理由",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "3fd183c89fab9a6091-1": {
+      "line": 46,
+      "excerpt": "一個收窄的孔口為何會有雜音？血液通過截面較小的地方，局部速度和能量轉換方式改變，射流、剪應力及下游紊流可引發可聽振動。但這至少牽涉三個互相作用的變量：有效孔口面積、實際流過的量、以及不同位置間的瞬間壓力差。同樣嚴重的解剖狹窄，若 cardiac output 下降，流速和聲音不必同樣強烈。",
+      "role": "causal_bridge",
+      "reader_gain": "區分孔口面積實際流量與壓差對聲音的共同影響",
+      "nonredundancy_reason": "刪去會重新導致雜音大就等於病灶重的錯誤",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "5008cd7855202e1f8e-1": {
+      "line": 48,
+      "excerpt": "Doppler 心超量到的是速度，再在適當前提下以簡化 Bernoulli 近似 瞬時峰值壓差 ΔP ≈ 4v²（mmHg；v 為 m/s）。這個公式不是聽診音量公式，也不能把單一瞬時峰值直接當成整個射血期的平均壓差（mean gradient）。當局部 LVOT 速度偏高、連續性與多處狹",
+      "role": "evidence_boundary",
+      "reader_gain": "限定Bernoulli瞬時峰值與平均梯度不可互換",
+      "nonredundancy_reason": "刪去會使單一速度數值被誤用為整段射血期負荷",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "a72db4e5410d77c5ae-1": {
+      "line": 50,
+      "excerpt": "以 AS 為例，2025 ESC/EACTS 指南將 Vmax ≥4.0 m/s、平均壓差 ≥40 mmHg、AVA ≤1.0 cm² 這組一致的 high-gradient 條件視為重度的典型組合；但臨床會遇到 AVA 看似很小、平均壓差卻不高的病人。這不是其中一個數字必然「錯了」，而是",
+      "role": "decision",
+      "reader_gain": "對AS指標不一致引入流量EF與其他影像重評",
+      "nonredundancy_reason": "刪去會讓低流量重度AS因梯度不足被排除",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "9b4b2b11d5bee1cc22-1": {
+      "line": 52,
+      "excerpt": "這段生理也能回到 Kameyama 的病人：MR 的病灶非常嚴重，但大量血液逆流到左房使病人發生肺水腫和低前向輸出，反而沒有典型響亮雜音。聲音是血流動力學的一個觀測窗，不是血行動力學本身。",
+      "role": "causal_bridge",
+      "reader_gain": "回扣真實急性MR病例以檢驗聲音與灌流分離",
+      "nonredundancy_reason": "刪去會失去機轉模型對開場無雜音但嚴重休克反例的完整驗證",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "602c020c9c4ec3ee8e-1": {
+      "line": 58,
+      "excerpt": "AS 的第一個改變不是心衰竭，而是左室必須在收縮時建立更高壓力才能把血射過變窄的主動脈瓣。長期壓力負荷促進向心性肥厚，初期有助降低單位心肌壁應力；然而更厚的心室可能更僵硬、舒張充盈壓較高，冠脈供需關係也會惡化。EF 仍正常，只表示射出比例尚可，沒有回答充盈代價、真實前向 stroke vo",
+      "role": "causal_bridge",
+      "reader_gain": "由AS壓力負荷推導肥厚僵硬及EF的限制",
+      "nonredundancy_reason": "刪去會把代償肥厚與心衰竭寫成無中介的結論",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "88c2318e06a7657840-1": {
+      "line": 60,
+      "excerpt": "典型線索是右上胸骨緣的 systolic ejection murmur、向頸動脈傳導、在明顯病變時可能有較小或延遲的頸動脈上升波及減弱 A2。但音量、頸部傳導與 A2 只改變 AS 的可能性，不能替代 echo 的嚴重度分級。臨床若看到肺水腫與低血壓，還要同時問：此時是單純流出阻塞、合併",
+      "role": "evidence_boundary",
+      "reader_gain": "指出AS聽診與頸動脈線索不能取代Echo分級",
+      "nonredundancy_reason": "刪去會使低流量病人聲音偏弱時被錯誤低估結構性病灶嚴重度",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "bc8492e364ecc1f04c-1": {
+      "line": 62,
+      "excerpt": "2025 指南對符合資格的有症狀重度 AS建議瓣膜介入評估；SAVR 與 TAVI 的選擇必須結合年齡、解剖、程序風險、合併主動脈病變及預期壽命，不是「過某個年紀一律 TAVI」或「有雜音就換瓣」。藥物能處理同時存在的高血壓或心衰症狀，卻不等於已逆轉機械性瓣口狹窄。",
+      "role": "decision",
+      "reader_gain": "區分有症狀重度AS介入評估與SAVR TAVI選擇",
+      "nonredundancy_reason": "刪去會讓年齡或雜音直接決定瓣膜介入方式與手術風險",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "be259fa1a309a3ce1a-1": {
+      "line": 66,
+      "excerpt": "AR 發生在 A2 後，因主動脈壓仍高於左室舒張壓，血液沿著無法完全閉合的主動脈瓣回到左室。慢性 AR 每次舒張都多了一份 regurgitant volume，左室長期接受「正常左房流入＋主動脈回流」，逐漸形成容量負荷與腔室擴大；一定程度的重塑能在較長時間內維持前向輸出，所以病人可以在結",
+      "role": "causal_bridge",
+      "reader_gain": "比較慢性AR容量重塑與Austin Flint假性MS",
+      "nonredundancy_reason": "刪去會使同類舒張雜音的不同解剖來源混淆",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "8aa8724a1e355f459c-1": {
+      "line": 68,
+      "excerpt": "急性 AR 則完全不同。若心內膜炎破壞瓣葉，或 Type A 主動脈剝離波及根部，原本沒有適應大量容量的 LV 會在短時間內承受回流，LV 舒張壓迅速上升，影響左房與肺靜脈回流，可能在沒有長期 LV 擴大、沒有典型寬脈壓、甚至沒有長而響的舒張雜音時出現肺水腫和休克。病變越急，越不能拿「長期",
+      "role": "safety",
+      "reader_gain": "建立急性AR無時間代償及急診病因處置必要性",
+      "nonredundancy_reason": "刪去會以慢性寬脈壓或大心室錯誤排除急症",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "2db9fed026c267539f-1": {
+      "line": 70,
+      "excerpt": "這也解釋為何同樣聽到舒張期低頻聲，必須同時問 MS、Austin Flint、心房腫瘤造成的流入阻塞；聲音相似，不代表狹窄的解剖位置相同。",
+      "role": "counterfactual",
+      "reader_gain": "指出同樣舒張低頻聲不等於同一狹窄病灶",
+      "nonredundancy_reason": "刪去會喪失MS與Austin Flint及腫瘤的反例",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "8d52ab860b95a0f8ed-1": {
+      "line": 74,
+      "excerpt": "MS 不是 LV 出口問題，而是左房的血在舒張期難以通過二尖瓣進入左室。為了維持充盈，LA 壓上升；壓力往肺靜脈傳遞，會造成運動喘、肺鬱血，慢性情況可繼發肺高壓及右心負擔。不能把高 LA 壓直接等同高 LVEDP：在有跨二尖瓣阻力時，兩側壓力本來就可能不同，這恰是 MS 的核心病理。",
+      "role": "causal_bridge",
+      "reader_gain": "明確拆開MS左房壓上升與LVEDP不必同步",
+      "nonredundancy_reason": "刪去會讓跨二尖瓣壓差這個病理核心消失",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "6b2eabc798d40381c2-1": {
+      "line": 76,
+      "excerpt": "典型尚具活動度的風濕性二尖瓣可出現 accentuated S1、S2 後 opening snap，以及心尖部低頻舒張期 rumble。A2 到 opening snap 的距離在典型狀態與 LA 壓相關，但嚴重鈣化或瓣葉不動時 snap 可以消失。因此，「沒有 opening snap",
+      "role": "causal_bridge",
+      "reader_gain": "連結opening snap瓣葉活動與AF後充盈失代償",
+      "nonredundancy_reason": "刪去會把節律變化和瓣膜壓差當成無關考點",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "ad402797b66ab83839-1": {
+      "line": 78,
+      "excerpt": "Echo 要確認形態、面積、mean transmitral gradient、心率與流量、LA 血栓與肺壓。平均壓差高不必然單獨代表解剖狹窄最重，因為心率加快、血流量增加也會拉高梯度。2025 ESC/EACTS 對符合條件的症狀性風濕性 MS，推薦在適當瓣膜解剖及風險條件下評估 per",
+      "role": "decision",
+      "reader_gain": "限定MS梯度須合併心率流量形態與介入條件",
+      "nonredundancy_reason": "刪去會以單一平均梯度錯估嚴重度與手術適應症",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "1cd9ea0e95e3843c6a-1": {
+      "line": 82,
+      "excerpt": "MR 時，LV 收縮的 stroke volume 被分成前向主動脈輸出與回流左房的部分。慢性 MR 在左房、左室都逐漸承受額外容量時，可能發生 LA/LV 擴張；心室的總射出比例可保持看似不錯，但其中部分已經逆流，EF 保留不保證有效系統循環輸出充足。慢性原發性 MR 的瓣膜本身或腱索結",
+      "role": "causal_bridge",
+      "reader_gain": "拆分MR總射出與前向輸出及原發次發病因",
+      "nonredundancy_reason": "刪去會把保留EF錯當有效循環輸出充足",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "b6d224476b40af0db2-1": {
+      "line": 84,
+      "excerpt": "急性乳突肌或腱索斷裂則沒有時間讓 LA 提高順應性。每一搏突增的逆流量能讓 LA 壓快速攀升、造成急性肺水腫；即使 LV 尚未擴張或 EF 看似保留，病人也可能低灌流、休克。收縮期逆流聲可能因 LV–LA 壓差快速變小而縮短；所以典型「心尖全收縮期向腋下」是認識慢性 MR 的好起點，卻不是",
+      "role": "safety",
+      "reader_gain": "說明急性MR左房未適應時休克可先於心腔擴大",
+      "nonredundancy_reason": "刪去會把慢性典型全收縮雜音當急性MR必要條件",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "7404bfdf406c24ba85-1": {
+      "line": 86,
+      "excerpt": "回到真實病人：入院 TTE 雖顯示輕至中度 MR，但影像品質不足以確認乳突肌病變；第 3 天的 hyperkinetic LV 和暫時找不到瓣膜異常，也未能解釋持續的休克。直到第 5 天重做 TTE 發現活動性乳突肌結構，TEE 再確認斷裂，才將單純梗塞或感染假說不足以解釋的情況，改判為需",
+      "role": "decision",
+      "reader_gain": "以原病例連結第五日解剖確認與急性MR救援",
+      "nonredundancy_reason": "刪去會混淆乳突肌斷裂與慢性TEER擇期決策",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "a3e0931f58e22fbfbf-1": {
+      "line": 90,
+      "excerpt": "聽診手法的真正價值，是對病灶作一個小型的生理擾動。站立或 Valsalva 持續用力期通常減少 venous return，LV 暫時較小；蹲下通常增加回心血量及體循環阻力；持續 handgrip 主要增加 systemic vascular resistance，即 afterload；",
+      "role": "definition",
+      "reader_gain": "把姿勢與手法定義成前負荷後負荷及右心回流擾動",
+      "nonredundancy_reason": "刪去會使各種聽診變化淪為孤立口訣而缺少生理操控條件",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "983353053598b0880f-1": {
+      "line": 92,
+      "excerpt": "一個很好的對照是 AS 與 obstructive HCM。AS 是相對固定的瓣口阻力：LV 變小且前向流量下降時，射出性雜音通常較弱。obstructive HCM 則是 LV 流出道幾何動態改變；腔室縮小可加劇 mitral leaflet systolic anterior moti",
+      "role": "causal_bridge",
+      "reader_gain": "比較固定AS與動態HCM在前負荷下降後的相反反應",
+      "nonredundancy_reason": "刪去會失去同一操作導致不同病理結果的核心解釋",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "30fa95d7f534f95c3b-1": {
+      "line": 103,
+      "excerpt": "HCM 也不等於只有 obstruction。心肌肥厚表型、舒張充盈、心肌缺血、MR、惡性心律不整風險都需要各自評估。2024 AHA/ACC HCM 指南以靜息或誘發 LVOT peak gradient ≥30 mmHg 作為 obstruction 的定義；對仍有症狀、考慮進階阻塞治",
+      "role": "evidence_boundary",
+      "reader_gain": "分開HCM阻塞定義與進階治療梯度門檻",
+      "nonredundancy_reason": "刪去會誤把30和50毫米汞柱當成同一決策值",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "7bbe6c27560694d8e1-1": {
+      "line": 105,
+      "excerpt": "MVP 是另一個容易混淆的例子：LV 較小時，瓣葉較早到達 prolapse 的幾何狀態，因此 mid-systolic click 常提前、其後 late systolic murmur 可能延長。它與 HCM 同樣可隨站立改變，卻不是同一病因。TR 在吸氣時常因右心回流增加而增強（Ca",
+      "role": "counterfactual",
+      "reader_gain": "以MVP click及TR吸氣反應限制HCM特異性",
+      "nonredundancy_reason": "刪去會把同方向姿勢反應錯認為HCM確診",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "ff633872bdfed43155-1": {
+      "line": 114,
+      "excerpt": "這些方向有經典理學檢查基礎，但其適用性是特定血行動力學條件下的傾向，不是可以機械套用在休克病人的診斷公式。Merck Manual：Cardiac auscultation。",
+      "role": "safety",
+      "reader_gain": "明說理學手法反應不是休克病人的確診公式",
+      "nonredundancy_reason": "刪去會使傾向性訊號被當成高風險治療依據",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "8be8afd8d13bfc8b3f-1": {
+      "line": 118,
+      "excerpt": "在正常吸氣時，右心靜脈回流增加，右室射血時間與 P2 可相對延後，A2–P2 間距較大。若 P2 延後與呼吸關聯較少而形成 fixed split S2，會想到 ASD；但我們必須追問：ASD 本身是否有大壓差、足以產生典型收縮期射流？ 通常不是。真正可聽見的 pulmonary area",
+      "role": "causal_bridge",
+      "reader_gain": "把ASD固定S2分裂與肺瓣流量雜音分開",
+      "nonredundancy_reason": "刪去會把房間隔洞本身誤認為高壓噴流而非肺瓣流量增加",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "28ec2d0f2999026433-1": {
+      "line": 120,
+      "excerpt": "VSD 的高壓 LV→RV 射流則不同。小型限制性 VSD可因壓差高，在胸骨左下緣形成相當響亮的 holosystolic murmur；當 VSD 很大、兩側壓力較接近，雜音未必更大。晚期若肺血管阻力上升甚至分流反轉，原本用來辨識左向右噴流的聲音也可能變小，但此時臨床風險反而升高。PDA",
+      "role": "causal_bridge",
+      "reader_gain": "比較限制性VSD與PDA及肺阻力升高後雜音改變",
+      "nonredundancy_reason": "刪去會使聲音大小與分流嚴重度錯誤等同",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "c08fca1a1be2d7bada-1": {
+      "line": 122,
+      "excerpt": "結構病變不能直接推出「一定可以關閉」。成人 ASD 有長期 RV 容量負荷時，通常要以 TTE 等證據評估解剖、Qp:Qs、右心擴大、肺壓及 PVR，必要時以侵入性血流動力學進一步釐清。對已成立 Eisenmenger physiology 的病人，關閉分流可能取消重要的壓力釋放路徑，20",
+      "role": "safety",
+      "reader_gain": "以PVR與Eisenmenger限定ASD封堵的禁忌邊界",
+      "nonredundancy_reason": "刪去可能誘導對不可逆肺血管病人直接封堵",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "26fdb2c8de1c6c6c79-1": {
+      "line": 124,
+      "excerpt": "TOF 的經典收縮雜音多來自 RV outflow obstruction 而非大 VSD 噴流；嚴重 hypoxic spell 時，肺血流若急減，雜音甚至可能變小，與 SpO₂ 惡化同時發生。這與急性 MR 的教材核心形成有意義的對照：病灶或臨床危險程度提高時，可聽聲音未必同步提高，但",
+      "role": "counterfactual",
+      "reader_gain": "以TOF缺氧發作時雜音變小反證聲音等於安全",
+      "nonredundancy_reason": "刪去會失去不同機轉支持同一聽診界線的例子",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "d00e33936f35f83d49-1": {
+      "line": 128,
+      "excerpt": "聽診得到的是產生假說的線索，下一步心超首先要問「病灶在哪裡、為何發生」，其次問「嚴重到什麼程度」，最後問「造成哪些心腔與肺循環後果」。這三個問題缺任何一個，都可能讓同一份 Echo 報告被過度解讀。",
+      "role": "orientation",
+      "reader_gain": "把心超診斷拆成解剖嚴重度與受害器官三問",
+      "nonredundancy_reason": "刪去會讓後續影像參數缺少共同的判讀目的",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "b2282904c424e9b353-1": {
+      "line": 130,
+      "excerpt": "第一，病灶解剖與機轉。 TTE 應辨識瓣葉厚度與活動、鈣化、腱索斷裂與 flail leaflet、SAM、瓣環擴大或心室重塑；若懷疑 IE，還要找 vegetation 或瓣周問題。MR 的 primary lesion 與 secondary leaflet tethering，不能只",
+      "role": "decision",
+      "reader_gain": "限定TTE與TEE的資訊增量及不應一律升級的條件",
+      "nonredundancy_reason": "刪去會把一次影像不足直接推成所有人都須TEE",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "2943565f7bb017931b-1": {
+      "line": 132,
+      "excerpt": "第二，量化與不一致。 AS 要整合 Vmax、mean gradient、AVA 及 flow。MR／AR 要整合 vena contracta、逆流孔和逆流量、Doppler 及心腔反應，而不是只看彩色 jet 面積：偏心貼壁 jet（Coandă effect）、血壓和超音波設定可能使",
+      "role": "evidence_boundary",
+      "reader_gain": "說明MR AR彩色jet與AS MS單點梯度的誤差來源",
+      "nonredundancy_reason": "刪去會讓讀者挑單一符合直覺數字作嚴重度判定",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "c5852520dc316b354f-1": {
+      "line": 134,
+      "excerpt": "第三，代償與受害器官。 看 LV/RV 大小、LVEF、實際 forward stroke volume、LA 壓力後果、肺動脈壓和臨床充血。慢性 AR／MR 可先有心腔擴張，急性嚴重逆流卻可能在心腔仍未擴大時休克。HCM 則可能 EF 保留，卻已有 LVOT 阻塞與明顯舒張功能障礙。EF",
+      "role": "causal_bridge",
+      "reader_gain": "用心腔結構反應與實際前向流量檢查EF作為比例指標的侷限",
+      "nonredundancy_reason": "刪去會把保留EF誤當沒有充血或低灌流",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "e2cc648ca3ae11b379-1": {
+      "line": 136,
+      "excerpt": "重回原病例，休克和肺水腫是已觀察的臨床事實，無雜音是理學檢查的陰性結果，初次 TTE 記錄的輕至中度 MR 受到視窗品質限制；第 3 天仍未見明確斷裂，而第 5 天重新檢查先有 TTE 活動性結構線索，TEE 再確認乳突肌斷裂。冠脈病灶、當時的感染假說與這個結構性機轉分屬不同證據層級。把這",
+      "role": "case_evidence",
+      "reader_gain": "整合首次TTE第三日競爭假說與第五日確診",
+      "nonredundancy_reason": "刪去會失去真實病例如何隨新證據改判的總結",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "f99198deea79f0330b-1": {
+      "line": 140,
+      "excerpt": "若病人穩定、雜音和體徵指向慢性疾病，通常可依 TTE 的結構與分級規劃追蹤與 Heart Team 評估；若已有突發肺水腫、休克、低灌流、心肌梗塞後不成比例惡化、菌血症合併新心衰或剝離疑慮，就不再是「把雜音分類完」的情境。需要同步支持呼吸／循環並盡快尋找能緊急逆轉的機械性原因：急性 MR、",
+      "role": "safety",
+      "reader_gain": "列出休克肺水腫等應立即轉入機械性病因評估的線索",
+      "nonredundancy_reason": "刪去會讓讀者在急性失代償時仍等待典型雜音",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "e0e651c55237f8c5c2-1": {
+      "line": 142,
+      "excerpt": "想像原病例有三項資訊可能被改變（以下都是反事實教學問題，不是已發表病例的觀察值）：",
+      "role": "orientation",
+      "reader_gain": "明示三個反事實是教學假設而非真實病例資料",
+      "nonredundancy_reason": "刪去會讓假設的檢查與臨床數值被誤認原病歷",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "9e68d799d1fd3f2e3a-1": {
+      "line": 144,
+      "excerpt": "如果第一時間就清楚聽見響亮的 holosystolic murmur，急性 MR 的懷疑會提高；但仍須以 echo 區分 MR、VSD 以及其他機械性併發症。有雜音不等於已有完整病因。",
+      "role": "counterfactual",
+      "reader_gain": "測試有雜音時仍需用影像區分MR與VSD",
+      "nonredundancy_reason": "刪去會讓陽性聽診被當成完整病因診斷而忽略影像鑑別",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "38c25c2ee22c167002-1": {
+      "line": 145,
+      "excerpt": "如果第一次 TTE 的影像品質充分，並直接看見 flail leaflet／乳突肌斷裂，便不需要等到第 5 天才知道同一件事；關鍵是可見的解剖證據，不是 TEE 這個檢查名稱本身。",
+      "role": "counterfactual",
+      "reader_gain": "測試高品質初次TTE提前揭露機械病灶的條件",
+      "nonredundancy_reason": "刪去會錯把TEE名稱當成必要的時間先後程序",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "f21aa98daed52a4ac6-1": {
+      "line": 146,
+      "excerpt": "如果病人血壓暫時改善，但仍有嚴重逆流及急性肺鬱血，症狀改善不能證明結構病灶已消失；必須再看前向輸出與機械性失效是否受到根本處理。",
+      "role": "counterfactual",
+      "reader_gain": "測試血壓短暫改善但瓣膜結構性失效仍未被根本解決",
+      "nonredundancy_reason": "刪去會將短期循環改善錯當瓣膜機械性病灶已獲根治",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "987767f30622592e4f-1": {
+      "line": 148,
+      "excerpt": "三問最終回到同一個臨床邏輯：第一問，這個聲音／無聲究竟反映哪個生理事件？第二問，哪項新證據真正改變病因和處置？第三問，哪個直覺上的推論（聲音大＝嚴重、EF 正常＝安全、TTE 不清＝沒病）超過證據允許的邊界？",
+      "role": "navigation",
+      "reader_gain": "將三問收束回聲音證據與過度推論的共同模型",
+      "nonredundancy_reason": "刪去會讓各瓣膜段落失去一致的判斷邊界",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "1cf9343c5b9f6e1a3a-1": {
+      "line": 150,
+      "excerpt": "閱讀完這篇才進入後續國考題庫。要練習 AS／AR／MS／MR 與 HCM 的醫學（三）試題，可從下方跨年度索引開始；醫學（四）至（六）的 29 題四選項解析和另外 20 題不重複補充是答案檢驗材料，不是用來代替上述病理生理和臨床推理的正文。",
+      "role": "navigation",
+      "reader_gain": "把29加20題庫定位為遷移驗證而非教材正文",
+      "nonredundancy_reason": "刪去會重回以題庫堆砌取代機轉教學的問題",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "ce7bfc31c67954b629-1": {
+      "line": 154,
+      "excerpt": "以下是已從私有官方題庫檔案核對題號與標準答案、且與本篇高度相關的題目。它是高相關考題選集，不是已人工逐圖審完醫學（三）至（六）全部試卷的完整覆蓋聲明。附圖題以「圖待人工核對」標示，不能用機器文字替代影像。",
+      "role": "source_context",
+      "reader_gain": "限定官方題目表為高相關選集且附圖未完成審核",
+      "nonredundancy_reason": "刪去會讓文字擷取與正式原圖核驗被混同",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "800effdd54c22655e3-1": {
+      "line": 177,
+      "excerpt": "2026 年兩份原卷尚只有機器擷取的逐頁文字／標準答案；本表相應題目須以原卷頁圖及更正答案再做出版前終審。其餘 2022–2025 年結構化題目也標示機器擷取，不可把文字對答案當成影像逐圖核驗。完整原卷、答案與資料狀態都在考題與文獻證據頁，不得把本篇的題目整理重新冒充考選部官方詳解。",
+      "role": "evidence_boundary",
+      "reader_gain": "明示2026及歷年題目原卷影像和更正仍待複核",
+      "nonredundancy_reason": "刪去會把尚未目視核實的官方題目當成已完整審核",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "0c4a0713768772a3da-1": {
+      "line": 182,
+      "excerpt": "讀完之後，請先暫時遮住國考答案，再自行回答三個不同問題：（一）若一位病人於心肌梗塞後突然休克與肺水腫，卻沒有清楚的新雜音，什麼資訊會使你提高急性 MR、VSD rupture 與其他機械性併發症的優先序？（二）如果 Echo 說 AS 的 AVA 偏小、Vmax 和平均壓差偏低，你為何不能",
+      "role": "counterfactual",
+      "reader_gain": "要求以三個新情境自行重建急性MR AS與ASD判斷",
+      "nonredundancy_reason": "刪去會使閱讀停在記憶病名與選項而無遷移驗證",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "5f7f6d5b2c6a55cc54-1": {
+      "line": 184,
+      "excerpt": "答題時應能逐步指出觀察→病理生理→還欠缺的證據→改判後的決策邊界。如果只能說出 S1、S2、AS、MR 的名稱，或只能記住某年的正確選項，還沒有達到這篇教材的教學目的。",
+      "role": "decision",
+      "reader_gain": "規定回答需涵蓋觀察機轉證據缺口與決策界線",
+      "nonredundancy_reason": "刪去會無法區分真正具備因果遷移理解與只背熟名詞的作答",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    },
+    "2565908aed9d718f11-1": {
+      "line": 186,
+      "excerpt": "回到小麻內科學習入口 · 29 題跨科選項題庫 · 20 題跨科補題",
+      "role": "navigation",
+      "reader_gain": "提供回主入口與兩組題庫的最小讀者導航",
+      "nonredundancy_reason": "刪去會讓完成主教材後難以進入對應練習",
+      "verdict": "KEEP_TEXT_ONLY_NOT_RELEASE_PASS"
+    }
+  },
+  "source_checks": {
+    "kameyama_original": "Wiley original PDF https://onlinelibrary.wiley.com/doi/pdf/10.1155/2021/1396194; directly read 5-page full text and visually inspected original PDF page index2 Figure1(b,c)/Figure2(a,b) and page index3 Figure3(a-d), including caption arrows; initial mild-moderate MR, day3 competing septic shock hypothesis, day5 TTE then TEE, day15 death consistent.",
+    "hcm_2024": "AHA official 32-page slide deck page index6 directly visually inspected: LVOTO >=30mmHg and symptomatic refractory advanced therapy >=50mmHg.",
+    "vhd_2025": "ESC/EACTS 2025 original guideline text section 9.1.4 independently retrieved: urgent treatment for acute severe primary MR, papillary rupture often requires surgical replacement; no original guideline figure pixel signoff.",
+    "achd_2025": "2025 ACC/AHA full guideline text reviewed for irreversible pulmonary vascular disease/shunt closure contraindication; detailed ASD original figure pixels not checked.",
+    "exam": "PARTIAL_DIRECT_ORIGINAL_Q_S_M_VISUAL_VERIFIED: 115-2 medical(III) Q14 D, official question PDF p4 (index3), original answer Q14 D, correction PDF Q14 unchanged; 115-2 medical(V) Q9 original answer D but correction PDF explicitly accepts B or D or BD; all other exam Q/S/M and illustrated questions still NOT_VERIFIED in this execution.",
+    "pocket": "Pocket Medicine 9E original private figure bytes not available to this execution; prior audit locator is inherited, not independent visual signoff.",
+    "exam_primary_urls": {
+      "med3_question": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=Q",
+      "med3_answer": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=S",
+      "med3_correction": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0101&t=M",
+      "med5_question": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=Q",
+      "med5_answer": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=S",
+      "med5_correction": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=302&code=115070&q=1&s=0103&t=M"
+    }
+  },
+  "clinical_hard_stop_observed": "No new proven P0/P1 in 53 text units against checked sources; source/figure/exam gate remains unresolved; not a physician/pharmacist signoff.",
+  "release_authority": "NOT_GRANTED; PR remains Draft/HOLD",
+  "next_action": "Retain text-only 53-unit audit; independently inspect remaining original Pocket 9E, applicable VHD/ACHD figure footnotes, and remaining official Q/S/M illustrated items, verify exact frozen lesson/source/figure and rights, then decide final semantic receipt/CI/real reader. No auto merge/deploy.",
+  "validation": {
+    "units": 53,
+    "roles_valid": true,
+    "reader_gain_min_chars": 18,
+    "nonredundancy_min_chars": 18,
+    "distinct_gain": 53,
+    "distinct_nonredundancy": 53,
+    "scope": "Private text audit structural self-check only; not semantic or medical PASS"
+  }
+}
