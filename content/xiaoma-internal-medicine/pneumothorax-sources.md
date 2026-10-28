@@ -7,6 +7,7 @@
 - [官方指南及附錄](https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease/)
 - [Thorax 正式全文，DOI: 10.1136/thorax-2022-219784](https://doi.org/10.1136/thorax-2022-219784)
 - 本教材對應：PSP 生理穩定且症狀輕微可考慮保守處置；ambulatory 或 NA／tube 取決於條件；復發與手術選項；隨訪、飛行與潛水衛教；PAL 的進一步治療。
+- **原圖核對：Appendix 1, Pneumothorax Pathway（BTS PDF 實體第 33 頁）**。[官方原圖所在 PDF](https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/bts-guideline-for-pleural-disease/)；此流程先詢問症狀與 high risk，再分 safe to intervene、患者偏好與可用路徑；紅框 high risk 列 hemodynamic compromise、significant hypoxia、bilateral pneumothorax、underlying lung disease、≥50歲且顯著吸菸史、haemopneumothorax。特別是 *size* 不再是單獨侵入指徵，卻仍決定穿刺是否可安全施行。本文的三軸圖是原創因果整理，不冒充原圖重繪或公開原像素。
 - 限制：BTS 對保守 PSP 是 conditional recommendation by consensus，不能當成「大氣胸一律不需處理」；專門急救狀態須另按緊急流程。
 
 ## 02｜ERS / EACTS / ESTS spontaneous pneumothorax guideline（2024）
@@ -14,6 +15,7 @@
 - [European Respiratory Journal 正式版本](https://doi.org/10.1183/13993003.00797-2023)
 - [PubMed abstract, PMID 38806203](https://pubmed.ncbi.nlm.nih.gov/38806203/)
 - 本教材對應：needle aspiration 優先於 chest drain 的強建議針對需要初始介入的 PSP；穩定輕症 PSP 之保守方案、ambulatory、重視復發預防時的早期手術建議，以及 SSP + PAL 自體血液貼片的條件建議。
+- [Figure 1 官方原圖／圖說](https://publications.ersnet.org/index.php/ers-lookup/tab-link/F1/674705)與[原文內 Figure 2 初次 PSP 決策輔助](https://publications.ersnet.org/content/erj/63/5/2300797)：Figure 1 caption 明示**部分處置為 panel usual practice，並不是 evidence-graded recommendation**，不能將 SSP chest drain 步驟宣稱 2024 指南的強建議。PICO 2 對 PSP 是 strong / low certainty；對 SSP 是 no recommendation / very low certainty。
 - 限制：無法推薦某一 suction／支氣管瓣膜／手術附加 pleurodesis 組合，不等於各方法無效或等效。
 
 ## 03｜Brown SG et al. NEJM 2020 隨機研究
