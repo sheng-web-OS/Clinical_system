@@ -4,7 +4,7 @@
 
 ## 01｜症狀改善，為什麼胸膜腔的問題卻可能還在？
 
-El Zibaoui、Odeyemi 與 El Labban 在 2024 年發表一位 **56 歲男性**的肺炎旁胸水病例（[原始病例，DOI 10.7759/cureus.52986](https://assets.cureus.com/uploads/case_report/pdf/222237/20240126-32324-1eaex2m.pdf)）。初始 CT 的左下葉肺炎只伴少量胸水；再次入院後接受 ceftriaxone 與 doxycycline，胸痛與呼吸症狀逐漸改善。然而後續影像顯示左側胸水增大，超音波看見分隔。這些是作者報告的觀察，不是我們替一個假想病人設計的檢驗面板。
+El Zibaoui、Odeyemi 與 El Labban 在 2024 年發表一位 **56 歲男性**的肺炎旁胸水病例（[原始病例，DOI 10.7759/cureus.52986](https://assets.cureus.com/uploads/case_report/pdf/222237/20240126-32324-1eaex2m.pdf)）。初始 CT 的左下葉肺炎只伴少量胸水；病人曾於門診接受 cefdinir，再次入院後先接受 ceftriaxone 與 doxycycline，且**第一次胸腔穿刺前已升階使用 piperacillin/tazobactam**，胸痛與呼吸症狀逐漸改善。這段先於取樣的抗菌藥暴露，是解讀後續培養陰性時不可省略的時間前提。然而後續影像顯示左側胸水增大，超音波看見分隔。這些是作者報告的觀察，不是我們替一個假想病人設計的檢驗面板。
 
 這個矛盾不是「症狀不重要」，而是它們取樣的問題不同。胸痛、呼吸困難與發炎反應反映整體病程的一部分；胸膜腔液體的體積、是否分隔與肺受壓，則是另一個空間裡的資訊。肺炎改善不會自動證明積液已能回收，也不能從分隔單獨證明細菌仍在繁殖。因此下一步應是釐清積液的性質、分布和安全取樣條件，而不是在「已改善所以不管」與「看到分隔就確診膿胸」之間二選一。
 
@@ -78,9 +78,12 @@ Day 3 的蛋白比值約 **3.8/5.6 = 0.68**，LDH 比值約 **1254/169 = 7.42**�
 
 另設一個與這位男性分開的心衰竭反事實：利尿前後她的積液減少、呼吸改善，但抽液時胸水蛋白相對升高，Light criteria 其中一項呈陽性。利尿會改變胸膜液體與血漿的水分比例，形成 **pseudoexudate**：本質仍可能由心衰竭主導，卻在以高敏感度辨識 exudate 的分類器中被標為陽性。這時應回到前測機率、治療反應、胸水與血清 albumin 同步檢測，以及必要時 NT-proBNP，而不是因一個 exudate 標籤直接安排腫瘤侵入性檢查。
 
-例如同日 serum albumin 3.6 g/dL、pleural albumin 2.1 g/dL，**serum–pleural albumin gradient = 1.5 g/dL**，大於常用的 1.2 g/dL 支持 transudative physiology 的替代指標；但這個梯度也不能排除同時存在的感染、腫瘤或肺栓塞。臨床懷疑與影像不一致時仍須追查。把 Light criteria 與 albumin gradient 當成兩個回答不同問題的工具，比把它們當成互斥診斷更安全。
+**以下數值是獨立自編的計算示例，並非原始 56 歲男性病例的檢驗結果**：假設同日 serum albumin 3.6 g/dL、pleural albumin 2.1 g/dL，**serum–pleural albumin gradient = 1.5 g/dL**，大於常用的 1.2 g/dL 支持 transudative physiology 的替代指標；但這個梯度也不能排除同時存在的感染、腫瘤或肺栓塞。臨床懷疑與影像不一致時仍須追查。把 Light criteria 與 albumin gradient 當成兩個回答不同問題的工具，比把它們當成互斥診斷更安全。
 
 ## 04｜抽到 exudate 後，真正會改變今晚處置的，是哪幾項檢查？
+
+**先讀培養陰性的時間前提。** 這份真實病例的抗菌藥療程從門診 cefdinir、住院 ceftriaxone/doxycycline，到首次胸水採檢前的 piperacillin/tazobactam。兩次胸水培養未長菌，**不等於已證實胸膜腔無菌，也不能排除先前感染**；既有抗菌藥暴露、採樣時間、菌量及培養敏感度都限制陰性結果的排除力。反過來，影像分隔與抗菌藥後培養陰性也不足以自行宣布已確診 empyema。應分開記錄作者觀察、檢驗限制與 BTS 指引的介入判準。
+
 
 回到這位真實病例：原始 Table 1 提供了蛋白、LDH、glucose、細胞及微生物資訊，卻沒有 Day 3 的 pH；不能為了讓流程完整而替作者填入一個數字。一般疑似感染性胸水的基礎送檢組合通常包括同日血清／胸水 total protein 與 LDH、胸水 cell count/differential、glucose、pH、Gram stain／culture；若懷疑腫瘤、結核、乳糜胸、血胸或胰臟／食道病因，才依問題加入 cytology、ADA、triglyceride、hematocrit、amylase 等。**不是所有胸水一律加驗所有特殊檢查**；檢查的價值在於能否把目前的鑑別改成不同的下一步。
 
