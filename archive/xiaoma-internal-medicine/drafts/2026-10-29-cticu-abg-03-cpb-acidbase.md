@@ -78,7 +78,7 @@ Albumin 除了維持膠體滲透壓，也是血漿中最重要的 nonvolatile we
 
 第一，**albumin 本身是 AG 的主要未測陰離子來源**。若 albumin 因稀釋而下降，即使 lactate 或其他未測陰離子增加，未校正 AG 也可能不高。臨床需把同期 albumin 和當地實驗室參考區間納入解釋；低白蛋白時可採 albumin-corrected AG 作為篩查輔助，但校正值並不能證明陰離子的確切身分。若 albumin 未測、採血時間不一致，不應把「AG 正常」寫成排除高 AG 過程。
 
-第二，**AG 不是 strong ion gap（SIG）**。AG 是由有限電解質計算的差額；SIG 是較完整的 physicochemical 模型中，表面強離子差與由 bicarbonate、albumin、phosphate 推得的有效強離子差之差。SIG 的意義建立在不同測量組件與方程式上，不能直接用 AG 或 BE 替代。2026 年 Guarnieri 等人對 50 名選擇性 CPB 心臟手術成人的觀察顯示，ICU 到院時平均 pH 7.33 ± 0.05、BE −3.87 ± 3.3 mmol/L、lactate 2.52 mmol/L，SIG 中位數由基線 6.0 升至 9.8 mmol/L。隔天 pH 回復，也不表示這類非乳酸未測陰離子訊號立即消失。
+第二，**AG 不是 strong ion gap（SIG）**。AG 是由有限電解質計算的差額；SIG 是較完整的 physicochemical 模型中，表面強離子差與由 bicarbonate、albumin、phosphate 推得的有效強離子差之差。SIG 的意義建立在不同測量組件與方程式上，不能直接用 AG 或 BE 替代。2026 年 Guarnieri 等人對 50 名選擇性 CPB 心臟手術成人的觀察顯示，ICU 到院時平均 pH 7.33 ± 0.05、BE −3.87 ± 3.3 mmol/L、lactate 2.52 mmol/L，SIG 中位數由基線 6.0 升至 9.8 mmol/L。這項研究顯示，術後到院時增加的 SIG 可以和乳酸之外的酸化力量並存；不過出版社公開的後續結果指出，**SIG 偏移至術後第一天已消退**。因此，不能從「pH 已正常」直接推得每種代謝過程都恢復，也不能反過來宣稱這組病人的 SIG 持續升高。研究另提及 alactic BE 的持續變化，但它不等於 SIG 本身仍持續異常。
 
 這項 2026 研究讓我們知道：除了 chloride 與 lactate，還可以存在其他非乳酸性酸化來源。**但它並沒有建立每位 CABG 病人都必須常規計算 SIG、或依 SIG 數字單獨治療的證據。** 對床邊照護而言，更實際的第一步仍是先取得同期 ABG、electrolytes、albumin、lactate，回顧 fluid input 和臨床循環狀況。
 
