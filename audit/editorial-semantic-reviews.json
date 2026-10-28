@@ -7967,6 +7967,432 @@
           "verdict": "keep"
         }
       }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-antibiotics-cap-coverage-reassessment.md": {
+      "content_blob": "23e8740c90c598195ac70af2e710d62eb9d2762f",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/210#issuecomment-6483171330",
+      "core_reader_question": "CAP患者已接受具Legionella活性的經驗性治療卻持續發燒低氧，如何根據病程、病原檢查與藥物暴露區分原因，再決定調整、降階及療程？",
+      "new_understanding": "以Spretz真實69歲病例連接入院雙藥、Day3未改善的四類競爭解釋、Day4 UAT與暴露史、換藥因果限制及Jasper/Kato/Ruiz-Spinelli比較研究，最後回到患者的可驗證醫囑與病程。",
+      "strongest_counterargument": "血培與尿抗原的差異以及十天療程計畫在不同段落重現，可能造成冗餘；逐段核對後，前者分別服務於Day4病原推定與後續檢體品質/降階，後者分別服務於實際病歷身分與外推限制，因此暫保留。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 4,
+        "F": 3,
+        "G": 4
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "231dac2cf2306f58c0-1": {
+          "role": "case_evidence",
+          "reader_gain": "以69歲患者低氧、雙側浸潤與首劑雙藥建立經驗治療與未確診的張力。",
+          "nonredundancy_reason": "若沒有入院基準，後續換藥與持續發燒便缺少比較起點。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一名 69 歲男性因為持續十天的發燒和呼吸困難來到急診。胸部 X 光有雙側多處浸潤，血氧只有 91%。醫師還不知道是哪種病原造成肺炎，卻不能等所有培養和抗原報告回來才開始治療，因此先給予 ceftriaxone 與 azithromycin。這套組合原本就包含能對抗 Legionella ",
+          "line_for_editor": 3
+        },
+        "67935542ed8a68992b-1": {
+          "role": "case_evidence",
+          "reader_gain": "預告Day3擴譜與Day4病原確認的真實先後，定位全篇需要解釋的反常反應。",
+          "nonredundancy_reason": "前段只呈現初診，這段才顯示治療後仍未改善的問題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "然而，住院後他仍然發燒，鼻導管氧氣也減不下來。團隊進一步安排胸部 CT，將抗菌藥改為 cefepime；直到第 4 天，積水暴露史與 Legionella 尿液抗原陽性的結果才一起出現。之後改用 levofloxacin，病況逐漸恢復。Spretz 等人的 2024 年病例報告。",
+          "line_for_editor": 5
+        },
+        "cfb3b9b4ea9384be96-1": {
+          "role": "orientation",
+          "reader_gain": "將涵蓋病原與立即退燒、換藥與療效因果拆成兩個不能等同的命題。",
+          "nonredundancy_reason": "刪除會讓讀者誤以為文章只是比較四種藥的清單。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個病例難在：「藥物有涵蓋病原」不等於「病人此刻必定退燒」，而「換藥後改善」也不等於「原來的藥已被證明無效」。 要知道何時應改藥，得先重建當時的病情，再問哪些可能的機轉能解釋持續缺氧，以及新取得的資料究竟排除了什麼、沒有排除什麼。",
+          "line_for_editor": 7
+        },
+        "bdd35b2e6bc016b76c-1": {
+          "role": "case_evidence",
+          "reader_gain": "用既往病史、外院誤認URI及胃腸症狀重建為何重新判斷肺炎。",
+          "nonredundancy_reason": "生命徵象段沒有交代從URI轉向全身性疾病的病程。",
+          "verdict": "keep",
+          "excerpt_for_editor": "他有高血壓、已治療的 C 型肝炎及口腔鱗狀細胞癌術後病史。起初在外院被認為是上呼吸道感染，休息與退燒後並未好轉；接著出現噁心、腹瀉，呼吸困難也愈來愈嚴重。這時不能只把問題當成長時間的感冒，因為症狀已跨越呼吸道與全身器官。",
+          "line_for_editor": 13
+        },
+        "14761e8ac024d5e6eb-1": {
+          "role": "case_evidence",
+          "reader_gain": "以實際生命徵象與影像建立肺實質病變，並保留非感染性鑑別。",
+          "nonredundancy_reason": "刪去會讓抗生素起始失去症狀與PE的病人證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "急診體溫 38.8°C，脈搏 79/min、呼吸 18/min、血壓 126/71 mmHg、SpO₂ 91%，雙肺聽診有 crackles。X 光呈現右側較明顯的雙側肺泡浸潤。這些資料讓肺實質受到感染或發炎比單純上呼吸道感染更值得優先處理；血壓尚可卻不代表肺泡氣體交換沒有受損。另一方面，",
+          "line_for_editor": 15
+        },
+        "89bf6720c70685d09b-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將腎肝數值與病毒陰性放在鑑別限制內，不以低鈉或腹瀉確診Legionella。",
+          "nonredundancy_reason": "前段僅有肺部表現，此段才說明肺外異常不能當病原指紋。",
+          "verdict": "keep",
+          "excerpt_for_editor": "同時，creatinine 3.3 mg/dL、Na 134 mEq/L、AST 141 U/L、ALT 117 U/L。腎功能與肝酵素異常提示疾病可能不只局限於肺，卻不能單靠低血鈉或腹瀉便確診 Legionella；其他感染與非感染性疾病也可能有這些表現。COVID-19、流感及 RSV",
+          "line_for_editor": 17
+        },
+        "16d234f9be9afed1b5-1": {
+          "role": "case_evidence",
+          "reader_gain": "核對入院IV ceftriaxone與PO azithromycin、UAT送驗時點及CURB-65缺BUN。",
+          "nonredundancy_reason": "避免以Day4資訊回填首劑動機，亦阻止假重算量表。",
+          "verdict": "keep",
+          "excerpt_for_editor": "團隊將患者收治一般病房、開始 IV ceftriaxone + PO azithromycin，並送出肺炎鏈球菌及 Legionella 尿液抗原。值得注意的是，當時尚未得知閣樓積水暴露史。初始治療與檢驗是在病原尚未確定的情況下進行，而不是收到第 4 天檢查結果後倒過來設計的決策。原病例報",
+          "line_for_editor": 19
+        },
+        "4eb5cfdea50c46be8a-1": {
+          "role": "decision",
+          "reader_gain": "解釋CAP疑似且低氧時需先治療，同時指出無目的擴譜的毒性成本。",
+          "nonredundancy_reason": "機轉段只說藥物如何作用，沒有回答何時必須先給。",
+          "verdict": "keep",
+          "excerpt_for_editor": "面對有症狀、低血氧與新的多處肺浸潤的住院患者，若當下臨床上最可能是 community-acquired pneumonia（CAP），抗菌藥的選擇就有時間壓力：培養要等，部分病原甚至不能靠一般培養找出；延誤有效治療可能讓肺實質傷害及器官功能持續惡化。但這不代表「涵蓋越多菌越安全」，因為廣",
+          "line_for_editor": 28
+        },
+        "fff9ed9e33c6519d09-1": {
+          "role": "definition",
+          "reader_gain": "以PBP細胞壁作用和巨噬細胞內Legionella定位兩類藥的必要互補。",
+          "nonredundancy_reason": "沒有這層生物機轉，cefepime不能取代macrolide的結論會成口號。",
+          "verdict": "keep",
+          "excerpt_for_editor": "先看藥物真正作用的位置。肺炎鏈球菌、流感嗜血桿菌等常見 CAP 細菌，可以在合適藥物作用下受到細胞壁合成抑制；ceftriaxone 是與 penicillin-binding proteins（PBP）結合的 β-lactam，主要負責此部分常見細菌的涵蓋。Legionella 卻能在肺",
+          "line_for_editor": 30
+        },
+        "a29a55d0945d13c8d7-1": {
+          "role": "decision",
+          "reader_gain": "把β-lactam加macrolide連到住院CAP指南及QT過敏器官功能限制。",
+          "nonredundancy_reason": "前段只有機轉，這段把機轉落到實際選藥邊界。",
+          "verdict": "keep",
+          "excerpt_for_editor": "因此，ceftriaxone 加 azithromycin 的邏輯，不是兩把武器不分方向一起灑，而是先用不同機轉涵蓋當下有臨床價值的常見細菌和非典型病原。2019 ATS／IDSA 對無特殊 MRSA／Pseudomonas 風險的住院非重症 CAP，建議 β-lactam 加 macro",
+          "line_for_editor": 32
+        },
+        "a764b7b35e86e132f5-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "分開病毒檢測、細菌確診與MRSA/Pseudomonas風險，不以嚴重度直接擴譜。",
+          "nonredundancy_reason": "若刪除，讀者容易把雙肺陰影當作耐藥菌證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這裡也有兩件事不能混淆。其一，感染性肺炎是否成立，仍靠整體臨床資料，不是病毒陰性就能直接證實細菌感染；病毒陽性也不必然排除共感染。其二，是否需要 MRSA 或 Pseudomonas 的特殊涵蓋，並不是由「很喘」或「肺部陰影很多」單獨決定，而要考慮過去分離株、近期住院和 IV 抗菌藥暴露等",
+          "line_for_editor": 34
+        },
+        "9904169da0ccaec287-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現3L氧氣與減氧後89%並揭示缺少連續資料，限制治療失敗判定。",
+          "nonredundancy_reason": "開頭只說未改善，此段才提供可核的呼吸支持證據。",
+          "verdict": "keep",
+          "excerpt_for_editor": "治療開始後，他仍然發燒、喘，需要鼻導管 3 L/min 的氧氣；嘗試減氧，SpO₂ 會降到 89%。這與單純某次體溫偏高不同：肺部氣體交換仍未恢復到可離開氧氣支持的程度。但是，臨床紀錄沒有提供每一天的氧氣流量、呼吸功、完整發炎指標與連續胸部影像，不能只依這兩個數字斷言肺炎持續惡化或已發生治",
+          "line_for_editor": 40
+        },
+        "7187c90303f45d99a5-1": {
+          "role": "causal_bridge",
+          "reader_gain": "用肺泡發炎滯後於微生物控制解釋有活性抗生素後仍發燒。",
+          "nonredundancy_reason": "若沒有此機轉，讀者會自動把持續發燒當成抗藥。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一種解釋是抗生素已有活性，但微生物負荷下降與肺泡炎症、滲出液消退的速度不同。抗生素作用於細菌，不會在同一時間把肺泡內的發炎細胞、滲出物及 V/Q 失衡全部清掉。若病人血壓、意識、呼吸速率與氧氣需求持續朝穩定方向走，短期仍發燒未必表示應換藥。反過來，如果氧氣需求增加、呼吸功惡化或出現新的器",
+          "line_for_editor": 42
+        },
+        "d65461620a2197091e-1": {
+          "role": "causal_bridge",
+          "reader_gain": "提出漏病原與藥物暴露不足的競爭機轉，指向分離菌及給藥資料。",
+          "nonredundancy_reason": "與炎症滯後不同，這一段說明何時需要重新檢查抗菌活性。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二種解釋是治療沒有達到需要的抗菌活性：可能漏掉不同的病原，也可能是藥物雖有體外活性，卻因暴露不足、吸收或器官清除差異而沒達到適當效果。這時需要重新查既往分離菌及住院／抗生素暴露史、藥物劑量與給藥途徑，並取得對懷疑病原有辨識力的檢體。但這名患者的已知初始方案含 azithromycin，因",
+          "line_for_editor": 44
+        },
+        "1cd37f1c81e470db01-1": {
+          "role": "causal_bridge",
+          "reader_gain": "提出膿瘍胸水與非感染性共病，將影像需求接到source control。",
+          "nonredundancy_reason": "前兩種解釋均屬藥物與炎症，不能取代解剖性病灶鑑別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三種解釋是抗生素不能單獨解決的肺部問題。例如肺膿瘍、複雜性胸水或膿胸，即使微生物對藥物敏感，未處理的感染空間仍可能持續造成炎症；也可能是原診斷不完整，還合併肺栓塞、心因性肺水腫或其他病變。這些不是要在每位患者身上無差別做完全部檢查，而是要回到病史、體徵、呼吸與循環狀態，選出此刻最可能改變",
+          "line_for_editor": 46
+        },
+        "e78d32ef62cda67d2e-1": {
+          "role": "case_evidence",
+          "reader_gain": "核Day3血培陰性、Cr1.94與顯影前補液，指出CT效益風險需個案衡量。",
+          "nonredundancy_reason": "沒有這段，CT突然出現而缺少當時決策脈絡。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在這個時間點，第 3 天血液培養未長菌。它沒有證明肺部沒有細菌；常規血培的陰性結果既不能排除局部肺炎，也不能像 Legionella 尿液抗原那樣直接偵測特定病原。於是團隊選擇追查胸部影像。顯影 CT 前 creatinine 已由 3.3 降至 1.94 mg/dL，團隊在顯影前給予 I",
+          "line_for_editor": 48
+        },
+        "9edd8d785678cd8e71-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "解讀CT浸潤與胸水，拒絕將其等同膿胸或Pseudomonas確診。",
+          "nonredundancy_reason": "若刪去，cefepime擴譜可能被誤認為已由影像證實。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原始 Figure 2（CT，PDF 第 3 頁） 顯示多處 consolidation、ground-glass opacities，並出現較先前增加的少量胸水。這使持續存在的肺病灶和胸膜反應更可見，卻不等於發現了膿胸：報告沒有提供胸水的 pH、glucose、培養或複雜分隔等可決定是否",
+          "line_for_editor": 50
+        },
+        "5a1cc48eea795b59a6-1": {
+          "role": "causal_bridge",
+          "reader_gain": "總結Day3仍並存的四種解釋並引導Day4真正有辨識力的新線索。",
+          "nonredundancy_reason": "這是兩日之間的推論橋，不是重複四種原因清單。",
+          "verdict": "keep",
+          "excerpt_for_editor": "到第 3 天為止，原本的四種競爭解釋仍有可能：發炎尚未消退、病原或藥物暴露不符、局部感染併發症、或非感染性／併存病變。CT 與血培提供資訊，卻還沒有把它們縮到唯一答案；下一個真正改變病原推定的線索出現在隔天。",
+          "line_for_editor": 52
+        },
+        "66247a6ed177a67743-1": {
+          "role": "case_evidence",
+          "reader_gain": "區分Day4才取得的積水暴露史與Legionella UAT陽性，避免後見之明。",
+          "nonredundancy_reason": "沒有時間標記，會錯認入院時已知道病原。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第 4 天，家人告知患者約兩週前曾在暴風雨後清理閣樓積水；送到外院檢驗的 Legionella 尿液抗原也在這一天回報陽性。積水接觸史讓水源相關病原更值得懷疑，但若沒有微生物證據，它只是提高可信度的暴露線索；尿液抗原陽性才直接把「可能的非典型病原」收斂到 Legionella。尤其重要的是",
+          "line_for_editor": 56
+        },
+        "dfa8d7ad8fcf0bb945-1": {
+          "role": "definition",
+          "reader_gain": "以血培和UAT不同檢驗標的說明結果不矛盾及Lp1陰性限制。",
+          "nonredundancy_reason": "前段是陽性事實，這段才教會何以不能用血培陰性反駁。",
+          "verdict": "keep",
+          "excerpt_for_editor": "此刻反而更能看懂第 3 天血培陰性的意義。一般血液培養問的是血液檢體能否在既定培養條件下長出微生物，不是在否定所有肺部細菌感染；針對 Legionella 的尿液抗原問的是病人是否有可檢出的病原特異抗原。兩項結果可以並存，沒有互相推翻。也要注意尿液抗原主要偵測 L. pneumophila",
+          "line_for_editor": 58
+        },
+        "e841b0ce23c346c910-1": {
+          "role": "case_evidence",
+          "reader_gain": "確認出院是levofloxacin q48h完成十天的醫囑計畫而非門診已完成療程。",
+          "nonredundancy_reason": "這是前次P1修復核心；刪去會混淆實際服藥與處方意圖。",
+          "verdict": "keep",
+          "excerpt_for_editor": "得到病原線索後，醫師認為在先前 azithromycin 下臨床改善有限，改用 levofloxacin。之後住院期間的氧氣需求逐漸減少，腎功能改善，出院前已超過 48 小時無發燒。出院時 creatinine 約 1.80 mg/dL；醫囑安排 levofloxacin 750 mg 每",
+          "line_for_editor": 60
+        },
+        "98b46d17eca1536c51-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分治療調整後改善與新藥優效，且不以Cr單值代替CrCl。",
+          "nonredundancy_reason": "前段只述時間線，這段阻止把相關性推成抗藥證明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "現在可以確定兩件事：患者有支持 Legionella 肺炎的病原特異檢查，也確實在治療調整後好轉。但還不能說 levofloxacin 取代 azithromycin 才造成改善。他已接受一段時間的有活性治療，肺部發炎也可能在之後才逐步消退，並有其他支持性治療；病例沒有提供 Legione",
+          "line_for_editor": 62
+        },
+        "c08663078564c0b91d-1": {
+          "role": "orientation",
+          "reader_gain": "提出需比較新藥效果與原治療延遲起效的反事實，導入比較研究。",
+          "nonredundancy_reason": "沒有此段，統合分析會突然出現而缺乏臨床問題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "從這名病人的時間線看，醫師將 azithromycin 改成 levofloxacin，之後病人逐漸恢復。這在臨床上值得重視，卻還不能分辨：病人是因為新藥較有效而恢復，還是既有抗菌治療經過數日後終於控制病菌、肺部發炎逐步消退，或其他支持治療同時發揮作用？要比較兩類藥物，必須離開單一病例，回",
+          "line_for_editor": 66
+        },
+        "1622dcb9bfc64147ad-1": {
+          "role": "source_context",
+          "reader_gain": "核對Jasper總樣本與死亡率分母、合併OR及ICU寬CI的解釋。",
+          "nonredundancy_reason": "單病例無法判定藥物優劣，此段首次提供比較組的量化界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Jasper 等人在 2021 年發表的系統性回顧與統合分析納入 21 篇研究、3,525 位 Legionella 肺炎患者。Fluoroquinolone 組死亡率 6.9%（104/1,512），macrolide 組 7.4%（133/1,790），合併 OR 0.94（95% C",
+          "line_for_editor": 68
+        },
+        "67cdce15335f64eeeb-1": {
+          "role": "source_context",
+          "reader_gain": "以Kato不同研究設計與藥物子群呈現與Jasper不一致的理由。",
+          "nonredundancy_reason": "若只保留Jasper，會錯誤暗示比較證據沒有爭議。",
+          "verdict": "keep",
+          "excerpt_for_editor": "另一篇 Kato 等人 2021 年的統合分析整合 5 項隨機試驗與 12 項回溯研究，反而報告 fluoroquinolone 與較低整體死亡率相關（OR 0.59，95% CI 0.35–0.98），並有較短住院時間的訊號；但當分析限縮為 levofloxacin 與 azithrom",
+          "line_for_editor": 70
+        },
+        "922c292cac034c0024-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "隔離Ruiz-Spinelli重症死亡率方向矛盾，拒絕從摘要推導FQ優勢。",
+          "nonredundancy_reason": "沒有這項反證，選擇性引用會使重症處置結論過度確定。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Ruiz-Spinelli 等人 2024 年回顧再納入 10 項觀察性研究、4,271 人；整體未見兩類抗生素的死亡率明確差異；摘要另外提到三項重症研究合併結果具有組間差異，但其「較佳」的文字結論與列出的死亡率百分比方向互相矛盾。在未能逐欄核實原始分組與 Table／Figure 前，不",
+          "line_for_editor": 72
+        },
+        "75ae5427625822b1c6-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將研究分歧連到族群與混雜，回到本患者缺MIC與對照組的限制。",
+          "nonredundancy_reason": "前面分別呈現研究，這段才把研究不確定性帶回病人。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這種結果分歧真正提醒我們：研究結果依賴病人嚴重度、治療選擇的先驗風險，以及是否能充分控制混雜；尤其當原研究的分組數字尚無法核對時，對重症族群的推論必須暫停。 因此可以理解醫師對持續未改善、已確認 Legionella 的患者考慮改用 levofloxacin，但本病例沒有提供證實 azit",
+          "line_for_editor": 74
+        },
+        "e4e6b952810abc573b-1": {
+          "role": "decision",
+          "reader_gain": "說明UAT確認病原後應重新檢查cefepime涵蓋前提，而非自動保留。",
+          "nonredundancy_reason": "病原診斷和去擴譜是不同決策，此段建立後者入口。",
+          "verdict": "keep",
+          "excerpt_for_editor": "尿液抗原陽性之後，原本只是群體機率的一個候選病原，終於有了特異性線索。這使針對 Legionella 的有效治療更加重要，也應重新檢視前一日為了持續未改善而擴至 cefepime 的理由。Cefepime 的抗綠膿桿菌活性，不能代替 azithromycin 或 levofloxacin ",
+          "line_for_editor": 80
+        },
+        "9e14f0aa41d48e1a9c-1": {
+          "role": "decision",
+          "reader_gain": "用既往菌株、IV抗生素暴露與併發症判斷是否續用抗MRSA/綠膿藥。",
+          "nonredundancy_reason": "單一陽性UAT無法決定其他抗菌藥停用，本段補足競爭感染風險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "不過，尿液抗原陽性也不能排除另一種細菌同時造成肺炎。要不要繼續抗 Pseudomonas 或抗 MRSA 藥，取決於另一組問題：先前呼吸道是否分離過該菌？近期是否住院並接受 IV 抗菌藥？是否有可信的呼吸道培養、菌血症、膿胸或持續惡化的病程，使合併感染風險升高？倘若沒有這些證據、患者又逐漸",
+          "line_for_editor": 82
+        },
+        "1795c4de37b6aae8f8-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明確拒絕HCAP標籤自動擴譜，並解釋MRSA鼻PCR陰性預測值依風險變化。",
+          "nonredundancy_reason": "上一段是患者風險問題，這段補指南歷史誤用及檢驗限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2019 指南已不接受過去的 HCAP 標籤自動等同廣效抗菌藥適應症。住院嚴重度告訴我們病人需要怎樣的支持與監測，特定抗藥菌的先驗機率則是另一個問題；兩者有關，卻不能直接互換。對過去曾分離 MRSA／Pseudomonas 與近期住院合併 IV 抗菌藥暴露的人，起始治療及採檢策略應連同個別",
+          "line_for_editor": 84
+        },
+        "a2afa2fc61848facce-1": {
+          "role": "case_evidence",
+          "reader_gain": "回到病例缺少呼吸道培養與停藥時間，拒絕補造cefepime停藥醫囑。",
+          "nonredundancy_reason": "若省略，指南討論會被誤用成原病例實際處置紀錄。",
+          "verdict": "keep",
+          "excerpt_for_editor": "回到這名患者，我們能說的是：第 3 天沒有血培支持其他菌，第 4 天取得 Legionella 病原線索，後續病人確實好轉。但沒有完整的呼吸道培養、各藥停用時間或當時抗藥菌風險評估，便不能從病例推論醫師應在第幾小時停 cefepime。 合理的讀法是重新檢視擴藥的前提，而非替原病歷補上一張",
+          "line_for_editor": 86
+        },
+        "b5ade304786b952ead-1": {
+          "role": "definition",
+          "reader_gain": "再次從後續痰培品質與定殖角度區分檢驗標的及致病歸因。",
+          "nonredundancy_reason": "Day4段只比較血培與UAT，此段新增定殖和檢體品質判斷。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第 3 天血培陰性，並未否定第 4 天 Legionella 尿液抗原陽性，因為前者檢驗血液檢體是否培養得出菌，後者偵測特定病原抗原。即使之後的痰培養長出細菌，也得先考慮檢體品質、氣道定殖與肺部感染是否吻合；不能只看檢驗報告的菌名就推導它是造成所有病變的主因。",
+          "line_for_editor": 90
+        },
+        "e4ea4605122e3bf3fa-1": {
+          "role": "counterfactual",
+          "reader_gain": "以另一名患者的S藥敏反事實區分體外活性、組織暴露與感染灶控制。",
+          "nonredundancy_reason": "這是未有分離株的本例無法直接示範的決策界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "假設另一名患者有適當取得的分離株，藥敏標示 susceptible（S），那也只是在特定測試標準及藥物暴露條件下，體外顯示可能有效，不是證明藥物一定抵達感染部位、更不是證明膿胸已經排空。這與本病例恰好相反：他沒有 Legionella 分離株及 MIC，只有病原抗原與治療經過；因此不能由「",
+          "line_for_editor": 92
+        },
+        "130bcd37988613e8eb-1": {
+          "role": "decision",
+          "reader_gain": "列出48至72小時再評估必問的氧氣、循環、腎功能與感染灶問題。",
+          "nonredundancy_reason": "前文按病例回顧，此段轉成可遷移的重新評估流程。",
+          "verdict": "keep",
+          "excerpt_for_editor": "起始治療時，醫師不知道病原是什麼、能否穩定病人的呼吸交換，也不知道是否會出現局部併發症。幾天後資訊已增加：氧氣需求是在下降或上升？血壓、意識、呼吸速率、飲食能力及腎功能是否恢復？原本為何加上某個抗菌藥的理由，現在是否仍成立？是否有需要抽取、引流或處理的感染空間？",
+          "line_for_editor": 96
+        },
+        "13f11894cec8148549-1": {
+          "role": "safety",
+          "reader_gain": "區分穩定可降階與休克須即時處置，強調膿胸需source control。",
+          "nonredundancy_reason": "若只談48至72小時，會誤導讀者等時間到才處理惡化。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這些問題各有不同後果。患者若逐步達到臨床穩定，且新的病原資料不支持特別的廣效涵蓋，就可以討論降階；如果氧氣需求驟升、血流動力惡化或發生意識改變，則要立即處理呼吸循環衰竭並重新找原因，不能等滿 72 小時才啟動處置。如果影像與胸水檢查支持膿胸，真正改變結局的可能是引流／感染灶控制，而不是不斷",
+          "line_for_editor": 98
+        },
+        "a41448113a70b57799-1": {
+          "role": "decision",
+          "reader_gain": "把IV轉PO條件連到吸收、腎清除、QT與本例無CrCl的限制。",
+          "nonredundancy_reason": "降階不等於可口服，此段新增途徑與安全審查。",
+          "verdict": "keep",
+          "excerpt_for_editor": "準備改口服時，再問不同的問題：病人是否已穩定、腸胃道能否吸收、口服藥對病原是否有活性，以及腎功能、QT 及交互作用是否安全。這名患者曾有噁心、腹瀉與腎功能異常；出院使用的是腎功能調整的 levofloxacin，但病例沒有完整可重算的 CrCl、各次給藥濃度或吸收評估，所以不能拿出院處方直",
+          "line_for_editor": 100
+        },
+        "0936404649c785cd33-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "界定ATS短療程只適用特定已穩定CAP，Legionella不能直接套最短天數。",
+          "nonredundancy_reason": "前文處理是否換藥，這段首次回答何時能停藥。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2025 ATS 更新對部分已達臨床穩定的非重症 CAP提出短於五天、但至少三天的條件性療程建議；對 severe CAP 建議至少五天。這不是只用「退燒 48 小時」計算的計時器：呼吸與循環穩定、進食與意識、病原類別、菌血症、膿胸或其他未控制病灶，都會改變能否使用短療程。Legionel",
+          "line_for_editor": 104
+        },
+        "e6995aa674cc47c1f7-1": {
+          "role": "case_evidence",
+          "reader_gain": "以出院十天計畫回收療程問題，避免用單病例複製處方日數。",
+          "nonredundancy_reason": "與unit21的實際醫囑紀錄不同，此段說明外推的終點限制。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這名病人出院時被安排以 levofloxacin 完成約十天總療程，說明病例團隊的治療計畫，而不是所有 CAP 的固定療程；報告並未提供在家完成全部劑量的逐次紀錄。下一名患者即使使用相同藥物，若仍需氧氣、合併胸膜腔感染或無法吸收口服藥，治療終點就要重新建立，而不能複製這名患者的日數。",
+          "line_for_editor": 106
+        },
+        "8cb61298552705ac34-1": {
+          "role": "causal_bridge",
+          "reader_gain": "按入院、Day3、Day4重組病程與各時點能作的判斷。",
+          "nonredundancy_reason": "全文分散於三問，此段把知識串成可口述的臨床決策路徑。",
+          "verdict": "keep",
+          "excerpt_for_editor": "到院時，發燒、喘與雙側浸潤支持 CAP；細菌種類未知，因此先以常見細菌及非典型病原的合理經驗性涵蓋處理。第 3 天，無法減氧、仍發燒，要求的不是自動推論「藥不夠強」，而是重新查核病原、器官功能與肺部併發症；CT 新見較多胸水，但沒有證明膿胸。第 4 天，積水暴露史與 Legionella ",
+          "line_for_editor": 110
+        },
+        "b3935cd87a2727c55a-1": {
+          "role": "decision",
+          "reader_gain": "提煉改藥前的診斷、暴露、灶控制、宿主與替代病變問題。",
+          "nonredundancy_reason": "前段是病例回顧，此段轉化成下一位患者可用的辨識策略。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這裡能帶去下一名病人的，不是背下 ceftriaxone、cefepime、azithromycin、levofloxacin 的先後次序，而是每次考慮改藥前先問：當前的問題是感染的診斷可信度、病原涵蓋、足量暴露、感染灶控制、宿主反應，還是根本有其他病變？接下來哪一項資訊真能把它們區分？",
+          "line_for_editor": 112
+        },
+        "97f0ef6afebf63aee0-1": {
+          "role": "counterfactual",
+          "reader_gain": "設定已用雙藥且持續發燒但氧氣改善的反事實以測試誤判。",
+          "nonredundancy_reason": "讀者不能只被動理解病例，此題檢驗是否會自動擴譜。",
+          "verdict": "keep",
+          "excerpt_for_editor": "題一。一名住院 CAP 患者已使用 β-lactam 加 macrolide，持續發燒但氧氣需求減少、血壓穩定，且尚無新器官衰竭或膿胸證據。哪個論證最有問題？",
+          "line_for_editor": 116
+        },
+        "899990d8a1bcb43e8f-1": {
+          "role": "counterfactual",
+          "reader_gain": "提供A到D不同論證選項，逼讀者區分趨勢與單點發燒。",
+          "nonredundancy_reason": "題幹沒有可選決策，此段提供互斥選項供辨別。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A. 重新評估體溫之外的整體臨床趨勢。 B. 因為已經用了兩天藥仍有發燒，所以一定對原菌無效，應直接改最廣的抗生素。 C. 評估檢體品質、病原檢查與是否需要影像追蹤。 D. 若後續更有證據支持非感染性病因，應重新考慮抗菌藥必要性。",
+          "line_for_editor": 118
+        },
+        "ecc7ded6021992e3fb-1": {
+          "role": "safety",
+          "reader_gain": "解釋為何B錯且休克時不能消極等待，回收題一安全邊界。",
+          "nonredundancy_reason": "沒有答案因果說明，選擇題只會變成背答案。",
+          "verdict": "keep",
+          "excerpt_for_editor": "B。發燒滯後不能單獨區辨藥物失活、併發症與炎症恢復時間；A、C、D 分別在評估病人狀態、取得區辨資訊與修正最初感染假設。但如果病人轉為休克、氧氣需求急升或其他重大惡化，則必須立即升級處置而不能消極等待。",
+          "line_for_editor": 125
+        },
+        "f6c4c380c3fb5b5693-1": {
+          "role": "counterfactual",
+          "reader_gain": "以血培陰性仍疑Legionella的情境測試檢驗標的辨識。",
+          "nonredundancy_reason": "第一題測治療反應，這題測微生物檢驗邏輯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "題二。第 3 天一般血培陰性、臨床仍懷疑 Legionella，哪一個敘述最合理？",
+          "line_for_editor": 129
+        },
+        "ddf6934f4a3045d5e7-1": {
+          "role": "counterfactual",
+          "reader_gain": "提供血培、cefepime、UAT與macrolide因果的四種競爭說法。",
+          "nonredundancy_reason": "題幹沒有檢驗與治療的錯誤推論對照，無法測試辨識。",
+          "verdict": "keep",
+          "excerpt_for_editor": "A. 血培陰性排除所有細菌性肺炎。 B. Cefepime 有抗綠膿桿菌活性，因此已必然涵蓋 Legionella。 C. 需要針對 Legionella 的檢查；尿液抗原陰性仍不能完全排除其他血清群或物種。 D. 一旦尿液抗原陽性，就證明先前 azithromycin 必然完全無效。",
+          "line_for_editor": 131
+        },
+        "2fcf94159c885f5ead-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋C正確及A/B/D混淆的不同病理與證據錯誤。",
+          "nonredundancy_reason": "如果只給正解，讀者不能辨識為何其他選項錯。",
+          "verdict": "keep",
+          "excerpt_for_editor": "C。A 混淆血液培養與肺部病原；B 混淆革蘭陰性菌廣效涵蓋與胞內病原活性；D 是從治療時間序列錯推藥物比較效果。",
+          "line_for_editor": 138
+        },
+        "1515c3f150edcd3bbb-1": {
+          "role": "navigation",
+          "reader_gain": "標示既有CURB-65與正式題解入口，且自編題不冒充國考。",
+          "nonredundancy_reason": "避免把本篇抗菌藥主線擴寫成嚴重度考題拼盤。",
+          "verdict": "keep",
+          "excerpt_for_editor": "延伸閱讀：既有 CURB-65 與 ICU 分流深讀、既有 114 年第二次醫學（三）Q45：CURB-65、113 年第二次醫學（三）Q49：肺炎病原與胸水。兩道題目是本篇自編練習，非考選部正式試題。",
+          "line_for_editor": 142
+        },
+        "a3ffeae90ff3010725-1": {
+          "role": "navigation",
+          "reader_gain": "提供原CXR、Day3 CT與比較研究的完整可查來源入口。",
+          "nonredundancy_reason": "正文影像只能說明病程，來源頁負責核對原圖與表格。",
+          "verdict": "keep",
+          "excerpt_for_editor": "對讀本病例入院 CXR、Day 3 CT、指南原表及比較研究的完整來源頁。",
+          "line_for_editor": 146
+        },
+        "84b138c47d97e8c411-1": {
+          "role": "source_context",
+          "reader_gain": "彙整病例與2019、2025指南及IDSA異議的可追溯原始連結。",
+          "nonredundancy_reason": "來源頁是詳細說明，此段給讀者直接回查核心證據的最短入口。",
+          "verdict": "keep",
+          "excerpt_for_editor": "主要可追溯依據：Spretz et al. 2024 真實病例、原 Table 1、Figure 1–2；ATS／IDSA 2019 CAP 全文與初始抗菌策略；ATS 2025 CAP 更新（2026 卷）；IDSA 不予背書的 2025 立場。",
+          "line_for_editor": 148
+        },
+        "67af13a771e8219a35-1": {
+          "role": "safety",
+          "reader_gain": "明確聲明缺台灣院內抗藥圖譜與個人劑量驗證，不是可照抄醫囑。",
+          "nonredundancy_reason": "若省略，讀者可能把病例的q48h處方當作一般院內order set。",
+          "verdict": "keep",
+          "excerpt_for_editor": "本文用於學習診斷與抗菌治療的證據邊界，不是已依台灣特定醫院 antibiogram、formulary、腎功能／藥物交互作用規則驗證的可直接開立處方。實際病人處置仍須由照護團隊依現場狀況確認。",
+          "line_for_editor": 150
+        }
+      }
     }
   }
 }
