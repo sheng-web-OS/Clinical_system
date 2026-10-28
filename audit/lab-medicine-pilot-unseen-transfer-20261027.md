@@ -26,7 +26,7 @@
 ## 未見病例 4｜DC 百分比的分母陷阱
 急診病人發燒 38.7°C、WBC 1.0 ×10³/µL、neutrophil 78%、bands 2%、chemotherapy day 9。另一位穩定患者 WBC 17.0 ×10³/µL、neutrophil 78%，剛使用 systemic steroid。請算第一名 ANC、比較風險和決策；第二名的 leukocytosis 能否獨立判定細菌感染？如果檢驗室把 bands 已算入 neutrophil 百分比呢？
 
-**評分關鍵：** 若分開 78% seg + 2% bands，ANC≈0.80 ×10³/µL；若已合併就不可重覆計算。化療後發燒和低 ANC 是立即需要處置的 infection risk，鑑別評估與處置依風險與院內 neutropenic fever protocol；不得用「中性球 78%」斷定安全。
+**評分關鍵：** 若分開 78% seg + 2% bands，ANC≈0.80 ×10³/µL；若已合併就不可重覆計算。ANC 約 800/µL **尚未單憑數值符合傳統 febrile neutropenia 的 ANC <500/µL 條件**；須確認在 48 小時內是否預期降到 <500/µL。化療 day 9 + 發燒仍要求即刻臨床評估與依風險處理感染，不能以「78% neutrophil」延誤。若無預期下降的證據，不可硬標診斷為既已成立的 neutropenic fever。參照 IDSA 2010/2011 與 2024 共識（2025 發表）定義：https://academic.oup.com/cid/article/52/4/e56/382256 ; https://onlinelibrary.wiley.com/doi/full/10.1111/imj.70237 。
 
 ## 未見病例 5｜Hb／platelet 與 CBC 假異常並存
 70F 住院第五天，使用抗凝藥，出現黑便與頭暈，BP 88/52；CBC Hb 10.0→7.8 g/dL，platelet 28 ×10³/µL（前日 210），分析儀提示 platelet clumps。請排列第一批決策與檢查、討論是否需要直接大量輸血小板；如果 smear 看到 schistocytes、腎功能快速惡化，診療軸線如何改變？
