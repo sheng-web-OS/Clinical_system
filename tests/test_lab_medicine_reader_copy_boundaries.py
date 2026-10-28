@@ -15,7 +15,7 @@ from validate import public_copy_leak_errors
 # Beyond the existing public-page gate, catch known worklog phrases that
 # escaped because the four private drafts were not in site/pages.json.
 WORKLOG = re.compile(
-    r"(?:\\bDraft\\s*/\\s*HOLD\\b|本輪\\s*AI|"
+    r"(?:\bDraft\s*/\s*HOLD\b|本輪\s*AI|"
     r"本次.{0,40}(?:目視核對|QA|尚未核實|尚未讀取)|"
     r"本庫五年二階國考結構化資料|"
     r"正式發布前須獨立核查)",
