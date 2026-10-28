@@ -119,6 +119,9 @@ def run(dist: Path, out: Path) -> int:
                             page.goto(origin + "xiaoma-exams.html#" + catalog_hash,
                                       wait_until="domcontentloaded", timeout=30000)
                             origin_row = page.locator('[id="' + catalog_hash + '"]')
+                            # Anchor navigation on the long year page may still be smoothly
+                            # scrolling; settle the real row before attempting a touch click.
+                            origin_row.scroll_into_view_if_needed(timeout=15000)
                             controls = origin_row.locator("details.exam-catalog-materials")
                             if controls.count() != 1:
                                 problems.append("Missing year→lesson materials: " + str(heart_key))
@@ -128,7 +131,10 @@ def run(dist: Path, out: Path) -> int:
                                 if target.count() != 1:
                                     problems.append("Deep H2 link absent: " + str(heart_key))
                                 else:
-                                    target.click()
+                                    # Real, non-forced click: allow the expanded mobile
+                                    # material link to finish scrolling into a tappable spot.
+                                    target.scroll_into_view_if_needed(timeout=15000)
+                                    target.click(timeout=15000)
                                     section = expected.split("#", 1)[1]
                                     if page.locator('[id="' + section + '"]').count() != 1:
                                         problems.append("Arrived at wrong deep section: " + str(heart_key))
