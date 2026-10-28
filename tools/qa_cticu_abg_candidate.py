@@ -95,9 +95,9 @@ def main():
                               and all(x["width"] <= width for x in expected))
                         page.screenshot(path=str(out / f"abg-{label}-{width}-chart-viewport.png"), full_page=False, timeout=15000)
                         page.locator("figure").first.screenshot(path=str(out / f"abg-{label}-{width}-figure.png"), timeout=15000)
-                        if label == "04":
-                            # The small-font concept graphic must offer a functioning
-                            # reader-initiated, independently zoomable native SVG.
+                        if label in {"03", "04"}:
+                            # Both long figures must offer a functioning, reader-initiated
+                            # independently zoomable native SVG on narrow screens.
                             zoom_link = page.locator('figure a[href$=".svg"]')
                             zoom_ok = zoom_link.count() == 1
                             if zoom_ok:
