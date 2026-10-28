@@ -1165,7 +1165,7 @@
         },
         {
           "locator": "Creager et al Circulation 2026;153:e1012 Table 7, original Summary of Advanced Therapy Recommendations, four modalities by AHA/ACC A–E categories",
-          "source_token": "Table 7",
+          "source_token": "Table 7（Circulation",
           "mode": "source_link",
           "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005",
           "teaching_role": "原表讓讀者核對 C2 3:Harm、C3 2b、D 2b、E1／E2 不同再灌流術式的 COR/LOE，尤其 E2 N/A 與 No Benefit 的區分直接改變介入風險判斷。",
