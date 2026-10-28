@@ -20,7 +20,7 @@ class LabMorningReaderInference(unittest.TestCase):
         body=self.article
         self.assertLess(body.index("## 第一問"),body.index("## 第二問"))
         self.assertLess(body.index("20:03"),body.index("## 第二問"))
-        for cue in ("12:00","20:03","20:48","23:37","Pneumatic tube","步行",
+        for cue in ("12:00","20:03","20:48","23:37","氣送管","步行",
                     "whole blood","plasma","降鉀治療約 30 分鐘"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,body)
