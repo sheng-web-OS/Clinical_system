@@ -92,20 +92,20 @@ Hb 低、WBC 低、platelet 低形成 pancytopenia 的觀察型態，但不會�
 
 ## 10　考古題如何把 CBC/DC 的推理接回整個內科？
 
-本庫五年二階國考結構化資料先定位了下列兩題；本次已**逐題目視查核考選部原試題 PDF、標準答案 PDF，以及更正答案 PDF**，但醫學上的完整治療推薦仍須依現行對題指南，不得只拿歷史國考答案當作現行臨床指令：
+以下兩道考選部原題分別要求用絕對嗜酸性球數量判斷肺部病程，以及辨認 MAHA＋AKI 的 TMA 線索。題目的標準答案不能直接當作現行病人處方；必要的鑑別與處置仍應回到臨床證據：
 
-- **111 年第二次醫學（三）Q46**：WBC 14,200/µL、neutrophil 70%、eosinophil 25%，合併 NSAID 暴露與肺部浸潤。核心先算出 AEC **3,550/µL**，再從藥物、影像、肺部採檢與排除其他病因推理。官方標準答案及更正答案均為 **D（bronchoalveolar lavage）**，已核對 111 年第二次醫學（三）原試題 PDF 第 11 頁及兩版答案表；本題未被更正。這題不能因血片嗜酸性球高就獨立宣布特定肺部疾病。
-- **112 年第一次醫學（三）Q28**：AKI 伴 Hb 與 platelet 下降、MAHA、ADAMTS13 >15%；核心是**跨 CBC 三條系統 + 腎臟的 TMA 辨識**，不是把它當普通 iron deficiency 或 isolated thrombocytopenia。官方標準答案及更正答案均為 **C（eculizumab）**，已核對 112 年第一次醫學（三）原試題 PDF 第 6 頁及兩版答案表；本題未被更正。此題的特定補體抑制治療涉及 aHUS 等鑑別和高風險醫學決策，須另以正式腎臟／血液原始指南與專科審查才能補足完整逐選項分析。
+- **111 年第二次醫學（三）Q46**：WBC 14,200/µL、neutrophil 70%、eosinophil 25%，合併 NSAID 暴露與肺部浸潤。核心先算出 AEC **3,550/µL**，再從藥物、影像、肺部採檢與排除其他病因推理。官方標準答案及更正答案均為 **D（bronchoalveolar lavage）**；考選部未對此題更正答案。這題不能因血片嗜酸性球高就獨立宣布特定肺部疾病。
+- **112 年第一次醫學（三）Q28**：AKI 伴 Hb 與 platelet 下降、MAHA、ADAMTS13 >15%；核心是**跨 CBC 三條系統 + 腎臟的 TMA 辨識**，不是把它當普通 iron deficiency 或 isolated thrombocytopenia。官方標準答案及更正答案均為 **C（eculizumab）**；考選部未對此題更正答案。此題的特定補體抑制治療涉及 aHUS 等鑑別和高風險醫學決策，須另以正式腎臟／血液原始指南與專科審查才能補足完整逐選項分析。
 
-不能把這些候選題目直接當作廣泛 CBC 規則的證據。上述兩題的來源與原始答案身分現已查核；下一個品質問題是能否在現行血液／腎臟專科證據支持下做出**可獨立使用的逐選項詳解**。尤其 112 年 TMA 題的 eculizumab，不能讓讀者誤認在臨床上看見 MAHA＋AKI 就可以直接給藥，應先評估 TTP、STEC-HUS、secondary TMA、感染與器官危險並依專科流程處理。
+考題中的檢驗組合只能作為鑑別推理的練習，不是廣泛 CBC 治療規則。尤其 112 年 TMA 題的 eculizumab，**不能**讓讀者誤認只要 MAHA＋AKI 就應直接給藥：先辨識 TTP 的急迫處置可能性、STEC-HUS、complement-mediated TMA、secondary TMA 等鑑別，並依專科流程確認病因與治療適應症。
 
-## 來源、版本與驗收界線
+## 原始來源與臨床適用界線
 
 [1] *Interpretation of pseudothrombocytopenia using platelet histograms and flags in a hematology autoanalyzer in a healthy child: a case report*, 2024，PubMed PMID 39582446（原始摘要含 EDTA 17K / citrate 55K / heparin 175K 的完整數字；未宣稱閱讀訂閱全文）。https://pubmed.ncbi.nlm.nih.gov/39582446/
 
 [2] *Decision-Making Error in Platelet Transfusion Caused by EDTA-Dependent Pseudothrombocytopenia: a Case Report and Literature Review*, Clin Lab 2024，PMID 38213226；來源摘要，非臨床試驗。https://pubmed.ncbi.nlm.nih.gov/38213226/
 
-[3] *How to Interpret the Complete Blood Count in Daily Practice: A Practical Framework for Clinical Decision-making*, JMA J 2026，開放全文與 figure 已核對文字，可支援三細胞族群、reticulocyte、RDW、絕對 DC、異常聯合判讀；本文並未翻印原 Figure 2。https://pmc.ncbi.nlm.nih.gov/articles/PMC13639491/
+[3] *How to Interpret the Complete Blood Count in Daily Practice: A Practical Framework for Clinical Decision-making*, JMA J 2026，開放全文提供三細胞族群、reticulocyte、RDW、絕對 DC 與異常聯合判讀的實用架構；本篇沒有重製原始圖像。https://pmc.ncbi.nlm.nih.gov/articles/PMC13639491/
 
 [4] *Anemia*, StatPearls 2026 更新，全文可見的 anemia / reticulocyte / indices 結構，計算示例為作者自編。https://www.ncbi.nlm.nih.gov/books/NBK499994/
 
@@ -115,4 +115,4 @@ Hb 低、WBC 低、platelet 低形成 pancytopenia 的觀察型態，但不會�
 
 [7] IDSA, *Clinical Practice Guideline for the Use of Antimicrobial Agents in Neutropenic Patients with Cancer*, 2010 update / published 2011；及 *2024 Consensus Guidelines for the Management of Neutropenic Fever in Patients with Cancer*, 2025 publication。採用 ANC <500/µL 或預期 48 h 內跌到 <500/µL 的核心定義，並保留臨床判斷對定義之外危險病人的優先性。https://academic.oup.com/cid/article/52/4/e56/382256 ; https://onlinelibrary.wiley.com/doi/full/10.1111/imj.70237
 
-本篇含不同身份的真實病例與自編數學練習，皆已就地標示；正式發布前須獨立核查原始圖、臨床安全、血液學高風險情境、國考題目，以及逐段教學價值。**本稿仍為 Draft / HOLD，不能把本輪 AI 同一脈絡自查稱為獨立審查。**
+本篇的真實病例與自編數學練習已分別標示來源。對於不明原因的血球快速變化或疑似 TMA，應先依病人危險程度評估並與檢驗室／相關專科合作；不能把單一計數、血片或考題答案當成確定病因的全部證據。
