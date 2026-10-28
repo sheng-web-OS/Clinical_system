@@ -8,7 +8,7 @@
 
 ### 一張真正不尋常的檢驗單：血鉀很高，血小板也非常高
 
-先讀 2018 年 Šálek 發表的原始病例。患者是 **62 歲女性**，有 JAK2 V617F 相關的 essential thrombocythemia，因胃潰瘍出血性休克接受手術；原有的 hydroxycarbamide 治療因出血暫停。術後第 12 天的實驗室檢驗顯示 **serum K 6.3 mmol/L、platelets 1305 ×10⁹/L、WBC 39.8 ×10⁹/L**，另有 serum Na 131 mmol/L、creatinine 114 µmol/L。這是研究者實際報告的數據，不是 AI 編出的完整晨間 Lab panel。<cite>Šálek, Biochem Med 2018, Table 1；[原始全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/)。</cite>
+先讀 2018 年 Šálek 發表的原始病例。患者是 **62 歲女性**，有 JAK2 V617F 相關的 essential thrombocythemia，因胃潰瘍出血性休克接受手術；原有的 hydroxycarbamide 治療因出血暫停。術後第 12 天的實驗室檢驗顯示 **serum K 6.3 mmol/L、platelets 1305 ×10⁹/L、WBC 39.8 ×10⁹/L**，另有 serum Na 131 mmol/L、creatinine 114 µmol/L。這是研究者實際報告的數據，不是 AI 編出的完整晨間 Lab panel。來源：[Šálek, Biochem Med 2018，原文 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC5806620/)。
 
 你可能直覺把它說成：「血鉀 6.3，病人非常危險；先降鉀。」但在確認這個數字代表什麼以前，另一個紅字——**platelet 1305 ×10⁹/L**——已經提示一個完全不同的問題：這管血在形成 serum 的過程中，可能有大量鉀從**試管裡的細胞**釋出。
 
@@ -40,13 +40,13 @@
 
 ### 另一份真實報告：血氣的 K 5.2，為什麼重抽成 4.6？
 
-2019 年 Salvagno、Demonte、Lippi 報告的是**另一名患者**：51 歲男性，長期氣喘，因喘、喘鳴與呼吸症狀惡化就醫。這次初始採的是**靜脈血氣**，放在 3.0 mL heparinized syringe，GEM Premier 4000 測得 whole-blood **K 5.2 mmol/L**（當地此種檢體參考區間 3.5–4.5）。檢驗室當時沒有收到血氣儀器對檢體溶血的自動警示。<cite>[Salvagno et al., Biochem Med 2019，全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366946/)。</cite>
+2019 年 Salvagno、Demonte、Lippi 報告的是**另一名患者**：51 歲男性，長期氣喘，因喘、喘鳴與呼吸症狀惡化就醫。這次初始採的是**靜脈血氣**，放在 3.0 mL heparinized syringe，GEM Premier 4000 測得 whole-blood **K 5.2 mmol/L**（當地此種檢體參考區間 3.5–4.5）。檢驗室當時沒有收到血氣儀器對檢體溶血的自動警示。來源：[Salvagno et al., Biochem Med 2019，全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC6366946/)。
 
 臨床對這個結果感到意外，另一次直接靜脈採血裝入 3.5 mL lithium-heparin tube，Cobas 8000 測得 plasma **K 4.6 mmol/L**，且 hemolysis index **5（約 0.05 g/L）**。若故事停在 5.2→4.6，你依然不能完全肯定這 0.6 mmol/L 是哪個環節造成的：血液檢體、儀器與時間都有差異。
 
 作者真正有力的下一個證據，是把**第一次 syringe 裡剩下的血液**另外轉入塑膠管離心，得到 **K 5.5 mmol/L、hemolysis index 50（約 0.5 g/L）**。原來的檢體本身確實顯示明顯的體外溶血。追查運送流程後，確認 syringe 曾**直接接觸冰塊約 15 分鐘**；作者把這個不適當的運送條件視為本案偽高血鉀的重要原因。
 
-<box-note>在這裡，真正推動判讀的不是「重抽變正常」一句話，而是三個互相補強的證據：**另一管的 K 較低；原 syringe 的 hemolysis index 高；運送時存在可辨認的傷害樣本條件。**</box-note>
+在這裡，真正推動判讀的不是「重抽變正常」一句話，而是三個互相補強的證據：**另一管的 K 較低；原 syringe 的 hemolysis index 高；運送時存在可辨認的傷害樣本條件。**
 
 這仍不等於說：「以後任何 K 5.2 都不用處理。」這名病人的血鉀、檢體傷害與運送歷史，是原始研究的觀察；**病人是否有心律危險、什麼時候該監測或治療，必須由臨床狀態、ECG 與現行高鉀處置指引另外決定**。單一 case report 不能驗證標準急救的治療效果，也不能批准另一名病人等待重抽的安全性。
 
@@ -60,7 +60,7 @@
 
 真正的高鉀會危及心肌電生理，因此不能因「可能是假性高鉀」就忽略不穩定病人的處置；另一方面，沒有臨床急症證據時，也不應僅憑單一受干擾樣本就自動給可能造成低血糖及低血鉀的療法。這個安全邊界來自 [UK Kidney Association 2026 高鉀指引](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0) 與臨床風險評估，**不是兩篇病例各自證明了何時可以等待**。
 
-以指引的分層語言來說，**K 6.0–6.4 mmol/L 屬 moderate hyperkalaemia**；若合併 AKI、快速升鉀、不穩定或危險 ECG，急迫性及處置與穩定病人不同。ECG 正常也不是排除真性高鉀的測試。若已有危險心電變化，需要按機構流程立即救治並平行確認檢體。指引 [Figure 4（原 PDF p.75）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75) 區分心肌保護、把 K 暫時轉進細胞、實際移除 K、持續監測與預防再發；[Table 22（原 PDF p.98）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98) 提醒 insulin-glucose 後血糖與鉀的追蹤。**不是每名 K 6.4、ECG 正常者都自動需要同一套 IV calcium／insulin 處方**；這些原始表圖不在本站重製，實際決策仍須核對本院規範和病人狀態。
+以指引的分層語言來說，**K 6.0–6.4 mmol/L 屬 moderate hyperkalaemia**；若合併 AKI、快速升鉀、不穩定或危險 ECG，急迫性及處置與穩定病人不同。ECG 正常也不是排除真性高鉀的測試。若已有危險心電變化，需要按機構流程立即救治並平行確認檢體。若選用 insulin-glucose，還必須注意**低血糖與反彈**性升鉀的監測風險。指引 [Figure 4（原 PDF p.75）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75) 區分心肌保護、把 K 暫時轉進細胞、實際移除 K、持續監測與預防再發；[Table 22（原 PDF p.98）](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98) 提醒 insulin-glucose 後血糖與鉀的追蹤。**不是每名 K 6.4、ECG 正常者都自動需要同一套 IV calcium／insulin 處方**；本站不重製原圖；這些原始表圖，實際決策仍須核對本院規範和病人狀態。
 
 ## 第三問｜把兩個真實案例改一個條件，哪些過度推論會立即失效？
 
