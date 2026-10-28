@@ -3571,7 +3571,18 @@
     "date": "2026-10-29",
     "navigation": false,
     "review": "author_source_check",
-    "references": "xiaoma-eudka-case-guideline-sources.html"
+    "references": "xiaoma-eudka-case-guideline-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 56,
+        "focus": "辨認 DKA 治療 insulin 的持續輸注與高危單次 1 U/kg bolus 之差，串起補液、dextrose、血鉀安全與終止產酮。",
+        "concept_heading": "為何要同時補液、給 insulin，甚至在血糖不高時補 glucose？"
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/eudka-case-guideline-sources.md",
