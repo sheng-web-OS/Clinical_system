@@ -32,14 +32,15 @@ class LabInferenceConsistency(unittest.TestCase):
         for cue in ("KDIGO 2012","48 小時內","0.3 mg/dL","6 小時","病因"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,self.article)
-        self.assertIn("不能僅由 8 小時總量證實連續 6 小時",self.sources)
+        self.assertIn("8 小時總量不足以單獨證明連續 6 小時",self.sources)
 
     def test_high_potassium_source_rights_and_safety_limits(self):
         for cue in ("Figure 4","Table 22","低血糖","心電","UKKA"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,self.sources)
-        self.assertIn("未完整審閱 180 頁",self.sources)
-        self.assertIn("原始圖表已完整目視驗收",self.sources)
+        self.assertIn("原圖不在本站翻印",self.sources)
+        self.assertIn("不是",self.sources)
+        self.assertNotIn("原始圖表已完整目視驗收",self.sources)
         self.assertIn("正常 ECG",self.article)
 
 if __name__=="__main__": unittest.main()
