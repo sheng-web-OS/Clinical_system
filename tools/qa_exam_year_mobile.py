@@ -36,6 +36,34 @@ HEART_ROUNDTRIP = {
 }
 
 
+def navigate_with_visible_link(page, link, absolute_url, width):
+    """Check a genuine unoccluded touch target and wait for navigation to finish.
+
+    Normal scrolling is allowed; never use force=True, dispatch_event, or a
+    synthetic href navigation to mask an obstructed element.
+    """
+    link.scroll_into_view_if_needed(timeout=15000)
+    # Long year-archive hash jumps use smooth scrolling. Center the target
+    # before testing its real hit area instead of racing that animation.
+    link.evaluate("(el) => el.scrollIntoView({block:'center', behavior:'instant'})")
+    if width <= 390:
+        box = link.bounding_box()
+        visible = link.evaluate("""el => {
+            const r = el.getBoundingClientRect();
+            const x = r.left + r.width / 2, y = r.top + r.height / 2;
+            const top = document.elementFromPoint(x, y);
+            return r.width > 0 && r.height > 0 && x >= 0 && x < innerWidth &&
+                y >= 0 && y < innerHeight && (top === el || el.contains(top));
+        }""")
+        if not box or not visible:
+            raise AssertionError("Mobile material link is occluded or outside viewport: " + absolute_url)
+        page.touchscreen.tap(box["x"] + box["width"] / 2,
+                             box["y"] + box["height"] / 2)
+    else:
+        link.click(timeout=15000)
+    page.wait_for_url(absolute_url, timeout=20000)
+
+
 def run(dist: Path, out: Path) -> int:
     from playwright.sync_api import sync_playwright
 
@@ -131,10 +159,9 @@ def run(dist: Path, out: Path) -> int:
                                 if target.count() != 1:
                                     problems.append("Deep H2 link absent: " + str(heart_key))
                                 else:
-                                    # Real, non-forced click: allow the expanded mobile
-                                    # material link to finish scrolling into a tappable spot.
-                                    target.scroll_into_view_if_needed(timeout=15000)
-                                    target.click(timeout=15000)
+                                    if width == 360:
+                                        page.screenshot(path=str(out / "heart-year-before-touch-360.png"))
+                                    navigate_with_visible_link(page, target, origin + expected, width)
                                     section = expected.split("#", 1)[1]
                                     if page.locator('[id="' + section + '"]').count() != 1:
                                         problems.append("Arrived at wrong deep section: " + str(heart_key))
@@ -152,7 +179,9 @@ def run(dist: Path, out: Path) -> int:
                                         else:
                                             if width <= 390:
                                                 page.screenshot(path=str(out / ("heart-deep-return-" + str(width) + ".png")))
-                                            return_link.click()
+                                            navigate_with_visible_link(
+                                                page, return_link, origin + return_href, width
+                                            )
                                             if page.url.split("#")[-1] != catalog_hash or origin_row.count() != 1:
                                                 problems.append("Round trip did not return to same year Q: " +
                                                                 str(heart_key))
