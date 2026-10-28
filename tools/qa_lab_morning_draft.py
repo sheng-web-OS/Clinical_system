@@ -115,7 +115,7 @@ def main():
                                         f"{observed['pageWidth']}>{observed['viewport']}")
                     if observed["title"] != TITLE:
                         failures.append(f"{width}px incorrect public-facing title")
-                    if (observed["articleText"] < 4000 or "K 6.3" not in observed["evidence"]
+                    if (observed["articleText"] < 4000 or "K 6.7" not in observed["evidence"]
                             or "n=66" not in observed["evidence"]
                             or "n=2,440" not in observed["evidence"]):
                         failures.append(f"{width}px missing full case or figure evidence")
