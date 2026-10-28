@@ -76,15 +76,15 @@ CBC 通常用 EDTA 抗凝血。部分患者血小板在 EDTA 管中發生**體�
 
 **題二｜病房 CBC platelet 25 ×10³/µL，前一日 260，報告有 platelet clump flag；病人此時新發血便與低血壓。** 你會怎麼平行處理？（預期核心：不能因旗標忽略正在進行的可能大出血，也不能不驗證就把 25 當唯一真實值；採樣、血片、凝血與臨床危險須並行。）
 
-這兩題為**原創自編練習，不是官方國考題**。應用在延遲練習時，不得把已看過的情境當作未見過的新題來驗收學習成效。此主題後續將針對考選部正式題目進行年份、梯次、科目、題號與答案版本核查；如沒有同型原題，不得偽造「歷屆考點」。
+這兩題是**自編臨床練習，不是考選部國考原題**。練習時最重要的是能說出「先處理哪個立即危險、如何重新採樣、哪一種結論目前仍缺證據」，而不是背下原病例的固定答案。
 
 ## 主要可核查來源
 
-[1] Lehman CM. *Hemolysis Holdup*. AHRQ Patient Safety Network, 2017；公開病例及其專家評論全文已核對（事件是高危險 K 被溶血註記掩蓋、重驗前未啟動處置；不可外推為頻率或因果療效研究）。https://psnet.ahrq.gov/web-mm/hemolysis-holdup
+[1] Lehman CM. *Hemolysis Holdup*. AHRQ Patient Safety Network, 2017；公開病人安全案例及專家評論，呈現檢體溶血註記與危險高鉀同時存在的延誤風險；不能從單一案例推論發生率或一般療效。https://psnet.ahrq.gov/web-mm/hemolysis-holdup
 
-[2] Kanjee Z, Lippi G, Freed JA. *Laboratory Artifacts in Clinical Medicine: A Review*. Mayo Clin Proc. 2026;101(10):1818–1836. PMID: 42134749. 本篇檢視 PubMed abstract 與可見的出版商重點，**未宣稱逐頁閱讀訂閱全文**。https://pubmed.ncbi.nlm.nih.gov/42134749/
+[2] Kanjee Z, Lippi G, Freed JA. *Laboratory Artifacts in Clinical Medicine: A Review*. Mayo Clin Proc. 2026;101(10):1818–1836. PMID: 42134749. 本篇僅以可公開取得的摘要支持干擾類型的背景，**不以摘要代替完整研究的分析細節**。https://pubmed.ncbi.nlm.nih.gov/42134749/
 
-[3] *Diagnosis and management of acute hyperkalaemia*. BMJ, 2026；以及 UK Kidney Association 成人急性高血鉀處理（官方網頁提供 July 2026 updated PDF）。已目視核對 2026 July 原始 PDF 的第 7、14、15 頁（PDF zero-index 6、13、14），包括 15.3 偽性高血鉀 paired samples、16.2 ECG changes 時 calcium 的情境分流、16.3 insulin–glucose、17.1 與 17.2 重驗/血糖監測；**完整 Appendix 治療流程圖、院內適用藥物劑量仍未逐項驗收**，故本文不給固定劑量。https://www.bmj.com/content/394/bmj-2026-100287 ; https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0
+[3] *Diagnosis and management of acute hyperkalaemia*. BMJ, 2026；以及 UK Kidney Association 成人急性高血鉀處理（官方網頁提供 July 2026 updated PDF）。UKKA 2026 正文 Guideline 15.3 規定疑似假性高鉀的 paired samples，16.2–16.3 區分心肌保護與鉀離子暫時轉移，17.1–17.2 強調回測和低血糖監測；具體藥物選擇、用量與監測頻率須查正式完整流程及當院規範。https://www.bmj.com/content/394/bmj-2026-100287 ; https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0
 
 [4] Lippi et al. *Erroneous potassium results: preanalytical causes, detection, and corrective actions*. 2023，PubMed 摘要。https://pubmed.ncbi.nlm.nih.gov/37042478/
 
