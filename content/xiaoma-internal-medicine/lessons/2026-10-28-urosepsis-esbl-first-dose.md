@@ -53,13 +53,13 @@ Arai 等人（2021）記載一位 **81 歲日本女性**，曾有兩次 UTI；�
 
 這個問題可以回答，但目前兩個病例都不是它的直接病例證明。需要另外使用針對**經驗性用藥**的研究與指南，而不是把第二例的既往 cefcapene 暴露偷換成舊 ESBL 檢驗結果。
 
-在**高度懷疑 cUTI／腎盂腎炎、當次 AST 未知**的情境，選藥是風險下的決策。按照 [IDSA 2025 cUTI 指引](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/) 的四步邏輯，先評估疾病嚴重度，再問最近有沒有**本人先前的尿培菌種、抗藥紀錄及抗生素暴露**，接著納入過敏、交互作用、器官功能與其他限制；對疑似 sepsis 的患者，再參考**近期、當院、對這類病人有代表性**的 antibiogram。這四個步驟不是把病人推入固定藥名的公式，而是逐層降低「首劑根本沒涵蓋」及「用藥造成可避免傷害」的風險。
+在**高度懷疑 cUTI／腎盂腎炎、當次 AST 未知**的情境，選藥是風險下的決策。按照 [IDSA 2025 cUTI 指引](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/) 的[原 Figure 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf)與[候選藥物 Table 1.1](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf) 四步邏輯，先評估疾病嚴重度，再問最近有沒有**本人先前的尿培菌種、抗藥紀錄及抗生素暴露**，接著納入過敏、交互作用、器官功能與其他限制；對疑似 sepsis 的患者，再參考**近期、當院、對這類病人有代表性**的 antibiogram。這四個步驟不是把病人推入固定藥名的公式，而是逐層降低「首劑根本沒涵蓋」及「用藥造成可避免傷害」的風險。
 
 假設一名**另外的患者**在此次就醫前幾個月曾分離出 ceftriaxone-resistant ESBL *E. coli*，這是合理且重要的**先驗證據**：相較於沒有這項紀錄，當次同一類抗藥菌造成 cUTI 的可能性提高，該藥作為經驗性涵蓋選項的可信度降低。IDSA 2025 也建議避免使用患者先前尿培曾檢出抗藥菌不敏感的藥物，**越近期的培養通常越有參考性**；但這是條件性、證據確定性有限的建議，不表示**本次菌必然相同、每個人都必須 carbapenem，或已知道本次 MIC**。若患者的症狀根本不能支持真正尿路感染，舊的 ESBL 菌尿紀錄更不應自動觸發抗菌治療。
 
 **ESBL 的分子機轉**幫助理解這項風險：β-lactam 抗菌藥主要結合細菌 PBP，抑制細胞壁合成；典型 ESBL 能水解 cefotaxime、ceftriaxone 與 aztreonam 等藥物，因此藥物即使到達感染部位，也可能在作用前失去活性。然而 ESBL 並不會直接告訴我們本次分離株對 **TMP-SMX、fluoroquinolones、piperacillin/tazobactam 或 carbapenems** 的完整 AST。其他抗藥機轉、MIC 的檢驗侷限與感染部位都可能影響選擇。
 
-這也解釋為什麼不能用同一份指南解答所有時間點：[IDSA 2026 AMR Guidance](https://www.idsociety.org/practice-guideline/amr-guidance/) 的 ESBL-E 確定性治療建議，主要假設**病原已辨識、候選藥物的當次體外感受性已確認**；它明言具體經驗性治療超出該文件的主要範圍。**第 0 天**要回答的是「在結果未知時如何選較可能有效且安全的起始方案」；**第 3–4 天**才可能根據 AST、病況與感染源控制決定繼續、調整、降階、IV-to-oral 或重新找未控制病灶。把第二階段的答案提前搬到第一階段，就是後見之明。
+這也解釋為什麼不能用同一份指南解答所有時間點：[IDSA 2026 AMR Guidance](https://www.idsociety.org/practice-guideline/amr-guidance/) 的 ESBL-E 確定性治療建議，主要假設**病原已辨識、候選藥物的當次體外感受性已確認**；它明言具體經驗性治療超出該文件的主要範圍。**第 0 天**要回答的是「在結果未知時如何選較可能有效且安全的起始方案」；**第 3–4 天**才可能根據 AST、病況與感染源控制決定繼續、調整、降階、IV-to-oral 或重新找未控制病灶；對真正改善且適合轉換者，需另讀 IDSA cUTI [原 Figure 1.2（IV-to-oral）](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf)及[Figure 1.3（療程）](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf)的條件，不能將個案的 10 天療程套成所有人的固定答案。把第二階段的答案提前搬到第一階段，就是後見之明。
 
 如果已確認是侵襲性 ESBL 相關感染，則須進一步核對適用的比較性研究。例如 [MERINO 隨機試驗](https://pmc.ncbi.nlm.nih.gov/articles/PMC6143100/) 對 **ceftriaxone-resistant *E. coli*／*Klebsiella* 菌血症**比較 piperacillin/tazobactam 與 meropenem，結果未支持前者的非劣性；它不直接代表每名無菌血症的輕症膀胱炎，也不能代替此次尿液與血液培養及實際 MIC。無論一開始選得多廣，對**感染性阻塞、膿瘍、未解除的引流障礙**，抗菌藥也不能取代感染源控制。
 
