@@ -38,3 +38,16 @@
 1. 獨立reviewer先核本篇最敏感的四項：初始ABG / Winter、guideline 2024 DKA resolution、K<3.5 暫緩insulin、2026 official Table16.1/原Figure。
 2. 修正文中 0–1 項可驗證 P1（例如原始 source 數值誤寫）後用完整 EPQC 逐段檢查病例時間線；確認不需要再增加不服務主題的表格。
 3. 上述全過再升為新的正式 `content/.../lessons` 文章及來源頁；#112 Work owner 才會在同一國考/atlas邏輯加適當導航，不能另寫平行 mapping 程式。
+
+
+## 2026-10-29｜病例證據重新核讀與正文修訂（本輪編輯者複核；非獨立醫師審查）
+
+- 正文 blob SHA：`39697f89731bdfcb7ffbb7fc195e8d319f16ca6b`，commit `ac8f5e435962be7f6edcd89c83af20202a244a52`。從原稿的單一路徑敘述，增補「初始病況 → 競爭病因（飢餓、乳酸、腎/毒物、DKA）→ 實際檢驗的鑑別作用 → 治療與連續重評」。保留真實 case 與 guideline 不同證據角色，不使用合成量測或取代已發行考題。
+- 本次重新讀取原始 publisher HTML Case presentation、Treatment、Table 1、Table 2 和參考說明。**已直接顯示並目視 Cai 2026 Figure 1 原圖影像**（官方檔案 `https://www.frontiersin.org/files/Articles/1882272/xml-images/fendo-17-1882272-g001.webp`）：內容是糖尿病診斷、首次症狀、入院、住院治療與追蹤的時間線；不是檢驗值圖表。讀者稿只連結官方圖，不重製。Figure 1 caption「Timeline of the disease course」，Table 1 caption「Patient characteristics across different treatment phases」。**此範圍是本輪作者源查，不等於所有原圖/註腳、版權與醫師 QA 完成。**
+- **新增原文→解釋界線**：原病例 CT 胸/腹/腦未見急性異常，妊娠檢驗陰性、無酒精/毒物暴露病史，僅可描述該病患實際排除步驟；不推廣所有 DKA 患者須做多部位 CT。原病例治療記載 0.9% saline、10% dextrose、0.1 U/kg/h insulin、確認尿量後鉀補充及頻繁測試；這是當例處置紀錄，不是台灣院內可照抄 order。
+- 2024 Umpierrez 共識 HTML Fig 2 caption、Table 2 重症度欄與附註、Fig 4 caption 及正文鉀、補 bicarbonate 與 resolution 再讀。Table 2 不能機械以單欄定級：本例 pH 7.043 落 moderate pH 範圍，但 bicarbonate 6.5 落 severe 警訊且嗜睡；收治需求依全人評估。原病例 Table 2 的 Moderate (No ICU) 與極低 bicarbonate 並存，已於正文揭露，不替原始作者作事後更正。
+- Winter 公式 1.5×6.5+8=17.75±2，實測 PaCO₂ 24.4。以 Henderson–Hasselbalch 粗算 pH≈7.05，與報告 7.043 相容；公式異常不當作已證實混合呼吸衰竭。仍須醫學獨立 QA，檢查是否應更明確定位呼吸性酸化成分。
+- **2024 guideline pH<7.0** 為可考慮 bicarbonate 的嚴重 DKA 情境；原病例使用 pH>6.9 的表述，不能冒稱與新版字面一致。正文未宣稱此例需要 bicarbonate。
+- DKA resolution 使用血酮<0.6 且**venous pH**≥7.3 或 bicarbonate≥18。病例 72h 是**arterial pH** 7.356 和 bicarbonate 16.8，β-OHB 0.3；應寫「個案作者記載已緩解，生化數據支持大幅改善」而非補造 venous pH 證成逐字吻合。Basal–IV overlap 在原文未載精確時間，不可反推有確切 1–2h 重疊。
+- 原始 Table 1 的 creatinine 單位疑點仍存在，該列未用於正文推論；2026 ADA publisher Table 16.1 有可搜尋之官方頁面文字摘錄，但非完整原圖視覺核實。2024 共識 Figure 2/4 原圖連結在本次 browser 受存取挑戰阻擋；**不標示獨立視覺查核通過**。
+- 本輪只做一個作者脈絡下的事實與論證複讀。尚缺異作者/醫學獨立審查、EPQC 全段落與 continuity gate、正式考選部原題與更正表目視、重要 Figure/Table 權利確認、讀者手機 preview/CI/正式站驗證。因此 `MEDICAL_REVIEW_HOLD`、`FIGURE_REVIEW_PENDING`、`NOT_PUBLISHED` 不變。沒有修改 `site/pages.json`。
