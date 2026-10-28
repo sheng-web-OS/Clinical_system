@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / "site"))
 import build  # noqa: E402
 
 SOURCE = "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md"
-TITLE = "早晨一張 Lab sheet：真正要判斷的是什麼？"
+TITLE = "早晨一張 Lab sheet：從真實病例與原始研究，判斷數字究竟能告訴我們什麼"
 FIGURE = "#lab-three-clocks"
 
 
@@ -36,13 +36,13 @@ def render_private_draft():
         "source": SOURCE,
         "output": "xiaoma-20261028-lab-morning-sheet.html",
         "title": TITLE,
-        "subtitle": "真實假性高鉀病例的量測證據、檢驗機轉與後段合成 AKI 練習",
+        "subtitle": "真實 AML 檢體時序、急診重抽研究與腎功能推論的證據界線",
         "collection": "xiaoma-internal-medicine",
         "layout": "reader",
         "section": "Lab Medicine｜值班與病房",
         "date": "2026-10-28",
         "navigation": False,
-        "references": "xiaoma-lab-morning-sheet-sources.html",
+        "references": "xiaoma-20261028-lab-morning-sheet-sources.html",
     }
     html = build.render_reader(row, body, rr.headings)
     style = (ROOT / "site/styles.css").read_text(encoding="utf-8")
@@ -76,31 +76,25 @@ def main():
                     page.locator("article.article").wait_for()
                     figure = page.locator(FIGURE)
                     if figure.count() != 1:
-                        raise AssertionError("Exactly one patient-specific evidence figure required")
-                    # The reader-first rewrite intentionally replaced the old
-                    # second (decision-boundary) table with an actual two-arm
-                    # bedside counterfactual. Do not require a stale table
-                    # count or silently skip the new figure's clinical content.
+                        raise AssertionError("Exactly one evidence-comparison figure required")
+                    # Check actual original-case chronology and the independent evidence groups.
                     rows = page.locator("article.article table")
-                    if rows.count() < 1:
-                        raise AssertionError("Missing four-timepoint numeric lab table")
-                    # The evidence-first lesson now leads with published case-report
-                    # tables. The four-timepoint *synthetic practice* panel comes
-                    # later; identify it by analytes/timepoints, not row position.
-                    required_panel_cues = ("Creatinine", "Mg", "10/28 07:15")
+                    if rows.count() < 2:
+                        raise AssertionError("Expected real AML sample-method table and cross-panel evidence table")
+                    # This is source-based AML evidence, not the old synthetic four-timepoint panel.
+                    required_panel_cues = ("20:03", "20:48", "23:37", "6.7", "7.8", "3.6")
                     numeric_tables = [rows.nth(k).inner_text()
                                       for k in range(rows.count())]
                     if not any(all(cue in table for cue in required_panel_cues)
                                for table in numeric_tables):
-                        raise AssertionError("Missing synthetic four-timepoint panel with core analytes")
-                    arms = figure.locator("section")
-                    if arms.count() != 2:
-                        raise AssertionError("Expected two distinct bedside decision arms")
+                        raise AssertionError("Missing published AML Table 1 method-and-treatment chronology")
+                    arms = figure.locator("div[style*='border:1px']")
+                    if arms.count() != 3:
+                        raise AssertionError("Expected three distinct published evidence-source units")
                     figure_text = figure.inner_text()
                     if not all(cue in figure_text for cue in
-                               ("A｜09:00", "B｜", "112/70", "90/55",
-                                "殘餘鬱血", "立即升級")):
-                        raise AssertionError("Counterfactual figure lacks evidence-to-action contrast")
+                               ("AML 病例", "6.7", "7.8", "n=66", "3.9", "n=2,440", "864", "並非同一位病人")):
+                        raise AssertionError("Evidence figure conflates case report and study denominators")
                     observed = page.evaluate("""() => ({
                       viewport: document.documentElement.clientWidth,
                       pageWidth: document.documentElement.scrollWidth,
@@ -110,7 +104,7 @@ def main():
                       tableOverflows: [...document.querySelectorAll('article.article table')].map(t =>
                         ({scrollWidth:t.scrollWidth,clientWidth:t.clientWidth})),
                       footerSource: [...document.querySelectorAll('footer a')].some(a =>
-                        a.innerText.includes('來源')),
+                        a.innerText.includes('來源') && a.getAttribute('href')?.includes('xiaoma-20261028-lab-morning-sheet-sources.html')),
                       fontCheckPassed: document.fonts.check('16px "Noto Sans TC"', '臨床抽血腎臟鉀')
                     })""")
                     observed["width"] = width
@@ -122,7 +116,8 @@ def main():
                     if observed["title"] != TITLE:
                         failures.append(f"{width}px incorrect public-facing title")
                     if (observed["articleText"] < 4000 or "K 6.3" not in observed["evidence"]
-                            or "Cr 1.16" not in observed["evidence"]):
+                            or "n=66" not in observed["evidence"]
+                            or "n=2,440" not in observed["evidence"]):
                         failures.append(f"{width}px missing full case or figure evidence")
                     if not observed["footerSource"]:
                         failures.append(f"{width}px missing source navigation")
