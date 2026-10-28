@@ -26,7 +26,7 @@ Spretz MW, Orrukem MM, Khwaja B, Karnath B. *Legionella Pneumonia: A Case of Fev
 
 | 研究 | 原始樣本及結果 | 能告訴我們的範圍 |
 |---|---|---|
-| [Jasper et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8315122/) | 系統性回顧 21 篇、3,525 人；死亡率 FQ 104/1,512（6.9%）與 macrolide 133/1,790（7.4%），合併 OR 0.94（95% CI 0.71–1.25） | 未確認死亡率有差異，但未證實藥物等效；各結局分母不可用總樣本 3,525 代替 |
+| [Jasper et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8315122/) | 系統性回顧 21 篇、3,525 人；死亡率 FQ 104/1,512（6.9%）與 macrolide 133/1,790（7.4%），合併 OR 0.94（95% CI 0.71–1.25） | 未確認死亡率有差異，但未證實藥物等效；各結局分母不可用總樣本 3,525 代替。另三項純 ICU 研究合併 OR 1.27（95% CI 0.18–9.01），不支持確定某類藥在重症族群較佳 |
 | [Kato et al., 2021](https://www.sciencedirect.com/science/article/pii/S1341321X20303615) | 5 項隨機試驗及 12 項回溯研究；整體 FQ 的死亡率關聯較佳，OR 0.59（95% CI 0.35–0.98）；限縮直接比較 levofloxacin vs azithromycin／clarithromycin 時死亡率差異不顯著 | 研究設計混雜、納入族群與藥物不同；不能以整體結果確定這名患者改藥後的因果效果 |
 | [Ruiz-Spinelli et al., 2024](https://pubmed.ncbi.nlm.nih.gov/37730517/) | 10 項觀察性研究、4,271 人，整體死亡率未見差異；公開摘要的重症亞群「較佳」方向與所列死亡率數值相互矛盾，不以此推導 FQ 優勢 | 重症資料有限、缺少專門 RCT；原摘要的 severe subgroup 比較出現 72.8% 與 30.8% 的數值方向疑點，在核對 full text 分組原表前，不使用此比較推斷 FQ 的相對效果 |
 
