@@ -22,4 +22,10 @@
 - [2008 年 balanced priming fluid 隨機研究摘要](https://pubmed.ncbi.nlm.nih.gov/19115651/)：電解質與 strong ion gap 效應不能僅以 chloride 含量預測；摘要證據不等於已核對所有原圖。
 - [既有酸鹼教材的 Pocket Medicine 第九版來源與原圖定位](acid-base-sources.md)：Figure 4-1 的 nomogram、AG 與代償表是必要先備，但本文原創群體圖並非 nomogram 原像素的重製。
 
-**權利與圖表界線：**公開版只呈現本站原創、按原表數值自行設計的三時點比較圖，並提供出版社合法原表入口；不公開重製研究 Figure 或 Pocket Medicine 原書頁面。研究中的可辨別限制、分母及採檢時間，必須與實際臨床處置推論分開。
+**圖表使用現況：**公開候選版目前仍只呈現本站原創圖與原始研究連結；Chuah 2013 的 CC BY 2.0 原始圖表可在遵守授權條件後納入，Pocket Medicine 原書頁面不因被引用就取得重製權。研究中的可辨別限制、分母及採檢時間，必須與實際臨床處置推論分開。
+
+## 原始圖表的公開使用與授權（2026-10-29 核對）
+
+**Chuah 2013 原始 Table 3 與 Figures 1–3 可優先直接閱讀與引用。**出版社 Rights and permissions 明示本文採用 [Creative Commons Attribution 2.0（CC BY 2.0）](https://creativecommons.org/licenses/by/2.0/)；在標明作者、文章、DOI、授權連結及有無修改的條件下，得依授權重製原始研究圖表。官方入口：[原文與原始圖表](https://link.springer.com/article/10.1186/1749-8090-8-184)、[原始 Table 3](https://link.springer.com/article/10.1186/1749-8090-8-184/tables/3)。圖表重製前仍須確認各圖是否另標第三方素材權利；本次只新增授權核查與官方原圖入口，**尚未將任何外部圖片嵌入網站**。
+
+**讀圖方式：**先核對 Table 3 的 on-pump n=55 與 off-pump n=26、pre-operative/post-CABG/next-morning 三時點及 95% CI，再對照本文的原創三欄箭頭圖；後者僅用於閱讀方向，不可當成原始曲線、個體時序或效應大小。上述授權核對不替代醫學、手機可讀性及發布閘門。
