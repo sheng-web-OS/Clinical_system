@@ -13,7 +13,7 @@
 <rect x="18" y="327" width="354" height="75" rx="12" fill="#fff" stroke="#bdcebf"/>
 <text x="32" y="357" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="690" fill="#315749">只切換顯示，不會改變</text>
 <text x="32" y="388" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="690" fill="#315749">體內 CO₂ 或腦血流。</text>
-<path d="M195 404 V431 M185 420 L195 431 L205 420" fill="none" stroke="#356955" stroke-width="3"/>
+<text x="195" y="428" text-anchor="middle" font-family="'Noto Sans TC',system-ui,sans-serif" font-size="20" font-weight="680" fill="#365b4a">以下是不同管理選擇</text>
 <rect x="18" y="444" width="354" height="237" rx="12" fill="#e7f4ed" stroke="#73a38e" stroke-width="1.5"/>
 <text x="31" y="479" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">A｜alpha-stat</text>
 <text x="31" y="511" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">依 37°C 未校正值管理</text>
@@ -22,7 +22,7 @@
 <text x="31" y="607" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">低溫校正後 pH 可較高</text>
 <text x="31" y="639" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">不為此另外補入 CO₂</text>
 <text x="31" y="671" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#17533d">較能保留腦血流自調節</text>
-<path d="M195 686 V704 M185 695 L195 706 L205 695" fill="none" stroke="#597d80" stroke-width="3"/>
+<text x="195" y="706" text-anchor="middle" font-family="'Noto Sans TC',system-ui,sans-serif" font-size="18" font-weight="650" fill="#446276">A 與 B 並非先後處置</text>
 <rect x="18" y="716" width="354" height="227" rx="12" fill="#edf2f9" stroke="#8ba9ce" stroke-width="1.5"/>
 <text x="31" y="751" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">B｜pH-stat</text>
 <text x="31" y="782" font-size="22" font-family="'Noto Sans TC',system-ui,sans-serif" font-weight="650" fill="#304c7c">依病人溫度校正值管理</text>
