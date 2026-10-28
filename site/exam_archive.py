@@ -8,7 +8,6 @@ from html import escape, unescape
 import hashlib
 from pathlib import Path
 import re
-from reading import primary_versions
 
 
 IDENTITY_FIELDS = ("year_roc", "sitting", "stage", "subject", "question_number")
@@ -212,9 +211,17 @@ def question_connections(pages, root):
     # two versions of one reading, not two separate study materials. Suppress the
     # original only for exam questions also linked by the successor, so unrelated
     # historical exam connections remain discoverable.
+    originals = {
+        page["output"]: page for page in pages
+        if page.get("kind") == "historical_original"
+    }
     replaced_question_links = {
-        (original_output, question_key(link))
-        for original_output, primary in primary_versions(pages).items()
+        (primary["replaces_original"], question_key(link))
+        for primary in pages
+        if primary.get("kind") == "ai_integrated"
+        and primary.get("replaces_original") in originals
+        and primary.get("collection") ==
+            originals[primary["replaces_original"]].get("collection")
         for link in primary.get("related_exams", [])
     }
     links = defaultdict(list)
