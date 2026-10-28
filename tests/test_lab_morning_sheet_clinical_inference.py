@@ -21,7 +21,7 @@ class LabInferenceConsistency(unittest.TestCase):
     def test_four_timepoints_and_units(self):
         row = next(line for line in self.article.splitlines()
                    if line.startswith("| Creatinine（mg/dL）"))
-        self.assertEqual(re.findall(r"(?<!\\d)1\\.\\d{2}(?!\\d)", row),
+        self.assertEqual(re.findall(r"(?<!\d)1\.\d{2}(?!\d)", row),
                          ["1.05", "1.16", "1.68", "1.69"])
         self.assertIn("10/28 07:15 重新採檢", self.article)
 
