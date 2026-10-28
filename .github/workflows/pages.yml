@@ -78,6 +78,14 @@ jobs:
           echo "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591  $FONT" | sha256sum --check
           fc-cache -f "$HOME/.local/share/fonts"
           fc-match -f '%{family}\\n' 'Noto Sans TC' | grep -F 'Noto Sans TC'
+      - name: Render Lab Morning unpublished reader on 360/375/390px and desktop
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md; then
+            if ! git diff --quiet origin/main...HEAD -- tools/qa_lab_morning_draft.py content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md site/styles.css site/build.py; then
+              python tools/qa_lab_morning_draft.py --output visual-qa-artifacts/lab-morning-draft
+            fi
+          fi
       - name: Verify official exam study links on 360/375/390px phones
         if: github.event_name == 'pull_request'
         run: |
