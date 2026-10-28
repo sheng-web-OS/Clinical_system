@@ -46,22 +46,45 @@
 
 這些數字不能簡寫成「急診高血鉀有 35% 都是假」，因為研究**事先選了有當日重抽的人**，不是所有送檢者或所有病房患者的盛行率。也不能用「69% 有溶血」推論溶血是所有異常唯一原因：研究分類建立的是抽樣與重測之間的關係，仍要辨別治療時序、患者危急風險和其他機轉。
 
-<figure id="lab-three-clocks" style="max-width:900px;margin:1.5rem auto">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0.8rem" role="group" aria-label="三種實際證據各自回答不同臨床問題">
-<div style="border:1px solid #ac8075;border-radius:9px;padding:1rem">
-<h3>病人安全｜當下</h3>
-<p><strong>AML 病例：K 6.7／7.8，ECG 無典型異常。</strong>不能僅用無 ECG 改變就宣告高鉀不會危及生命，也不能把處置後的 3.6 當作未治療對照。</p>
+<figure id="lab-three-clocks" style="max-width:950px;margin:1.5rem auto">
+<div style="border:1px solid #80909b;border-radius:10px;padding:1rem;margin-bottom:0.9rem">
+<h3 style="margin-top:0">① 真實 AML 病例：同一天，採樣條件和治療同時改變</h3>
+<p>作者的 2024-04-03 Table 1；以下為原始採血時間、K（mEq/L）與方法的教學重排，並非另造病例。</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr));gap:0.65rem" role="group" aria-label="AML 病例四次檢體時序">
+<div data-evidence-node="case-sample" style="border:1px solid #8999a1;border-radius:8px;padding:0.7rem"><strong>A　12:00</strong><p style="font-size:1.4em;margin:0.2rem 0">K 3.0</p><p>家中抽血 → courier＋步行；plasma／另一種分析儀。</p></div>
+<div data-evidence-node="case-sample" style="border:1px solid #8999a1;border-radius:8px;padding:0.7rem"><strong>B　20:03</strong><p style="font-size:1.4em;margin:0.2rem 0">K 6.7</p><p>急診 whole blood → 氣送管；與 A 的基質、儀器不同。</p></div>
+<div data-evidence-node="case-sample" style="border:1px solid #8999a1;border-radius:8px;padding:0.7rem"><strong>C　20:48</strong><p style="font-size:1.4em;margin:0.2rem 0">K 7.8</p><p>再次 whole blood → <strong>仍經氣送管</strong>。</p></div>
+<div data-evidence-node="case-sample" style="border:2px solid #9c7a4b;border-radius:8px;padding:0.7rem"><strong>D　23:37</strong><p style="font-size:1.4em;margin:0.2rem 0">K 3.6</p><p>whole blood → <strong>改步行</strong>；也已開始降鉀治療約 30 分鐘。</p></div>
 </div>
-<div style="border:1px solid #a2a07d;border-radius:9px;padding:1rem">
-<h3>檢體證據｜重測</h3>
-<p><strong>低風險研究 n=66，重抽 K 中位數 3.9。</strong>這代表被嚴格篩選的族群，非 70 歲 CKD／ACEi 病人的通行證。</p>
+<p style="margin-top:0.8rem"><strong>不能分離的兩個改變：</strong>C→D 不只換了運送方式，也經過治療。這組觀察支持作者追查偽高鉀，<strong>不能</strong>把 K 下降全歸因於改成步行送檢。正常 ECG 也不代表當時沒有急症風險。</p>
 </div>
-<div style="border:1px solid #83a2a6;border-radius:9px;padding:1rem">
-<h3>研究外推｜族群</h3>
-<p><strong>全納入重抽族群 n=2,440，864 人初次高、重抽正常。</strong>分析對象是「當日有重測」的人，不是所有住院或急診送檢者。</p>
+<div style="border:1px solid #80909b;border-radius:10px;padding:1rem">
+<h3 style="margin-top:0">② 研究分母樹：35% 到底是哪些人的 35%？</h3>
+<div data-evidence-node="cohort-root" style="border:2px solid #6b8797;border-radius:9px;padding:0.8rem;text-align:center;max-width:590px;margin:0 auto 0.7rem">
+<strong>n=2,440</strong>　初次 K ≥5.0 且<strong>當日確有重抽</strong>的急診患者
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0.7rem">
+<div data-evidence-node="cohort-subgroup" style="border:1px solid #80909b;border-radius:9px;padding:0.75rem">
+<strong>1,576／2,440（65%）</strong>
+<div style="height:0.6rem;background:#dce4e6;border-radius:5px;margin:0.5rem 0"><div style="width:65%;height:100%;background:#57788b;border-radius:5px"></div></div>
+同日重抽仍升高（研究定義的持續高鉀）。
+</div>
+<div data-evidence-node="cohort-subgroup" style="border:1px solid #80909b;border-radius:9px;padding:0.75rem">
+<strong>864／2,440（35%）</strong>
+<div style="height:0.6rem;background:#dce4e6;border-radius:5px;margin:0.5rem 0"><div style="width:35%;height:100%;background:#a68154;border-radius:5px"></div></div>
+同日重抽正常；接著<strong>只在這 864 人內</strong>分層。
+<div style="border-top:1px dashed #8999a1;margin-top:0.7rem;padding-top:0.65rem">
+<div data-evidence-node="cohort-subgroup"><strong>597／864（69%）</strong> 初次檢體有溶血</div>
+<div data-evidence-node="cohort-subgroup"><strong>267／864（31%）</strong> 未見溶血證據；原因尚不明</div>
 </div>
 </div>
-<figcaption>圖 1｜三條不混同的證據線。每個框來自不同的已發表病例／研究，並非同一位病人的三個時點，亦非 validated clinical decision rule。來源與納排條件在文末及來源頁。</figcaption>
+</div>
+<p style="margin-top:0.75rem"><strong>分母限制：</strong>864／2,440 是在「當日被選擇重抽」者中的比例，並非所有急診或病房抽血者的假性高鉀盛行率。597／864 的 69% 也<strong>不是</strong> 597／2,440 的百分比。</p>
+</div>
+<div data-evidence-node="lowrisk-cohort" style="border-left:4px solid #6d7f98;padding:0.6rem 0.8rem;margin-top:0.85rem">
+<strong>另一份獨立研究：n=66</strong> 嚴格篩選的低風險溶血高鉀患者，重抽 K 中位數 <strong>3.9 mmol/L</strong>，無持續性真高鉀，但 95% CI 上界約 6%；排除高齡、eGFR &lt;60、相關藥物與血液惡性疾病等。<strong>不能把 n=66 合併進 n=2,440 的分母，也不能推及 AML 病人。</strong>
+</div>
+<figcaption>圖 1｜兩種原創證據可視化：上半部依 2024 AML 病例 Table 1 重排採樣時序、運送與治療混雜；下半部依 2025 急診同日重抽研究整理 2,440→1,576／864→597／267 的不同分母。n=66 為另一獨立研究。三條不混同的證據線，並非同一位病人的三個時點，亦非 validated clinical decision rule；不是出版社原圖重製。</figcaption>
 </figure>
 
 同一套推理也適用其他電解質：serum total CO₂ 主要反映血清 bicarbonate 相關資訊，卻**不是動脈 pH 和 PaCO₂**；Na 的異常可能是體水與滲透狀態變化，也可能受測定方法（例如間接 ISE 的 pseudohyponatraemia）干擾；BUN／Cr 是不同生成與清除機轉的血中濃度，不能單憑二者比值就確認病因。初見結果時最需要知道的不是「該加抽幾管」，而是**哪些未測量的病人生理量、檢體品質和時間點會讓解釋翻轉**。
