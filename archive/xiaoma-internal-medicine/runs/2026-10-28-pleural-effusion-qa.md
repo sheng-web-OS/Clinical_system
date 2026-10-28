@@ -13,6 +13,10 @@
 - **實際接續工程**：同PR加入私人reader QA，經canonical Renderer/render_reader/CSS，用360/375/390/1280、light/dark、原病例表圖與官方連結做檢查並保留私人Actions screenshots/report。未改site/pages.json、不把archive/或dist公開；這不是正式手機或醫學審查。
 - **現在尚未完成**：最新候選blob的不同脈絡逐段EPQC/臨床源證據/圖像判斷、完整CI與實際私人截圖核讀。通過後才進權限/正式部署門檻；原#188不自動改公開manifest/合併main/部署的邊界保留。任何自評、單一commit、CI綠燈、run_now都不是任務終點。
 
+- **首輪 exact-head 工程證據**：521a4a63，Actions #40623295895 SUCCESS，235 tests；原病例source/official links、360/375/390/1280 private reader均執行。實際目視375px頁首、360px證據圖，無裁切、主文18px、最窄圖字15.7px。但首輪標dark的圖只是OS color_scheme偏好，網站實用body.dark並未套用，**不得將4張該圖當真正暗色PASS**。已由本執行主動發現並修為載入canonical app.js、點實際#theme按鈕、assert body.dark，再跑新HEAD完整CI；不以第一次綠燈結案。
+- **精確未核准封包**：audit/2026-10-28-pleural-review-packet.json由現行semantic_gate.packet建立，50 reading units，來源blob6491bbb62b5e6283ce49a86e0fed524453c46cd5；reviewer_context=UNREVIEWED、所有verdict=review，沒有改global semantic reviews/baseline。生成時曾核出本地尾端換行與GitHub blob不符，已以GitHub精確bytes重建並驗相符；這不是獨立審稿receipt。
+- **main整合邊界**：以最新main 1a146202為base tree，僅覆蓋本PR六個明列path並保留原branch為parent；保留U01新正文/語義receipt/site entries，不改main ref。最終CI須查整合後HEAD，不能借舊PASS。
+
 ## 最新來源恢復狀態（2026-10-28；覆蓋下方 09:00 歷史阻擋判定）
 
 - **Pocket 9E PDF p.94–96 ORIGINAL SOURCE IMAGE = VERIFIED（私人來源核讀）**。本輪從私人 ChatGPT Library 已授權原始檔成功取得原始 PDF bytes（PDF 共 **464 頁**），在私人環境以 180 dpi 實際渲染 PDF 第 94、95、96 頁並分頁目視；之前 "raw-byte materialization denied / images unavailable" 只代表先前工作階段的一次工具失敗，**不再是當下有效的 Pocket 來源阻擋**。不得把這個暫存位置、PDF bytes 或頁面影像加入 GitHub/公開網站。

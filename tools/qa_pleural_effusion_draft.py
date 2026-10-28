@@ -50,6 +50,7 @@ def main():
     args = ap.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     raw, document = render_private()
+    app_script = (ROOT / "site/app.js").read_text(encoding="utf-8")
     (args.output / "private-reader.html").write_text(document, encoding="utf-8")
     failures, findings = [], []
     with sync_playwright() as driver:
@@ -65,11 +66,15 @@ def main():
                         page.route("**/*", lambda route: route.abort())
                         page.set_content(document, wait_until="domcontentloaded")
                         page.locator("article.article").wait_for()
+                        page.add_script_tag(content=app_script)
+                        if theme == "dark":
+                            page.locator("#theme").click()
                         observed = page.evaluate("""() => {
                           const article = document.querySelector('article.article');
                           const svg = document.querySelector('#pleural-case-evidence svg');
                           return {
                             viewport: document.documentElement.clientWidth,
+                            darkThemeApplied: document.body.classList.contains('dark'),
                             pageWidth: document.documentElement.scrollWidth,
                             title: document.querySelector('h1')?.innerText,
                             headingCount: document.querySelectorAll('h1').length,
@@ -93,6 +98,8 @@ def main():
                         required = ("56 歲", "Day 3", "Day 5", "未報告", "7.42", "Figure 2B", "獨立假想反事實")
                         if any(token not in text for token in required):
                             failures.append(f"{width}/{theme}: source chronology missing")
+                        if observed["darkThemeApplied"] != (theme == "dark"):
+                            failures.append(f"{width}/{theme}: actual site theme not applied")
                         if observed["pageWidth"] > observed["viewport"] + 2:
                             failures.append(f"{width}/{theme}: global overflow")
                         if observed["title"] != TITLE or observed["headingCount"] != 1:
