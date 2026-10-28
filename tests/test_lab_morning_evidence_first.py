@@ -48,7 +48,7 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
     def test_synthetic_case_no_longer_pretends_to_ground_treatment(self):
         self.assertIn("不提供選抽血項目或醫囑", self.body)
         self.assertIn("運送方式與治療時序同時改變", self.body)
-        self.assertIn("病例報告", self.sources)
+        self.assertIn("PMC11462689", self.sources)
         for leak in ("本篇不必自行捏造", "這是資料所允許的比較", "以下是從原表抽出",
                      "這是作者記載的順序", "不同研究拼成同一張虛構的病例"):
             with self.subTest(leak=leak):
