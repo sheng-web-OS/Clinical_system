@@ -7315,6 +7315,284 @@
           "line_for_editor": 146
         }
       }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md": {
+      "content_blob": "fad3ac49374289f1f12805b40b05a420ec7b64eb",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "CTICU-ABG-PR211-independent-source-figure-20261029T0215+0800; GitHub review #5687583024",
+      "core_reader_question": "低溫 CPB 同一份血氣為何會出現兩種溫度基準，且 alpha-stat 與 pH-stat 的真正介入如何影響腦灌流與神經認知結局？",
+      "new_understanding": "讀者能分開 37°C 儀器測量、體溫校正報告、實際掃氣與 CO₂ 調整；再用 Patel 與 Murkin 的分母及亞組、Table 52 IIa/B，限制對成人 CABG、主動脈弓及小兒的外推。",
+      "strongest_counterargument": "原創 SVG 在 360px 內嵌縮至 282px，部分文字不適合直接閱讀；已核對真實 Chromium 截圖及原生 SVG 新分頁開啟，保留可放大閱讀，且文章完整文字敘述不依賴圖中文字。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "d2260b3d01793f062a-1": {
+          "role": "orientation",
+          "reader_gain": "標明第四篇是低溫 CPB 的獨立讀者單元。",
+          "nonredundancy_reason": "與前篇代謝性酸化主題分開，避免誤把溫度校正當成同一病因。",
+          "verdict": "keep"
+        },
+        "3c536acd86b949e4a4-1": {
+          "role": "orientation",
+          "reader_gain": "建立血氣量測基準與真正 CO₂ 介入的核心區別。",
+          "nonredundancy_reason": "若刪掉此段，讀者容易把兩種報告值當成兩次病情改變。",
+          "verdict": "keep"
+        },
+        "0c390eb2e8e1bff860-1": {
+          "role": "case_evidence",
+          "reader_gain": "用 Patel 的七十人隨機試驗建立策略選擇的臨床後果。",
+          "nonredundancy_reason": "它先給出六週神經心理結局，避免全篇只靠理論推演。",
+          "verdict": "keep"
+        },
+        "d853d460770fe02497-1": {
+          "role": "orientation",
+          "reader_gain": "提出儀器溫度、體內狀態與操作介入三層問題。",
+          "nonredundancy_reason": "前段只有研究結果，此段轉為可循序回答的教學問題。",
+          "verdict": "keep"
+        },
+        "a39401f5323031a18e-1": {
+          "role": "definition",
+          "reader_gain": "說明血氣分析儀與體溫校正輸出的測量來源。",
+          "nonredundancy_reason": "這是後續兩種策略共同的先備條件，不等於任一治療決策。",
+          "verdict": "keep"
+        },
+        "0f57cc2bcda1b8f1ef-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以溶解度和緩衝溫度依賴性推導低溫分壓與 pH 方向。",
+          "nonredundancy_reason": "沒有這段，後文校正值高低只能死記，無法理解機轉。",
+          "verdict": "keep"
+        },
+        "3dc4702dd4bc2d79d8-1": {
+          "role": "decision",
+          "reader_gain": "將溫度和報告基準轉成讀到血氣時的第一個查核問題。",
+          "nonredundancy_reason": "前段是物理原理，此段第一次明確要求臨床配對資訊。",
+          "verdict": "keep"
+        },
+        "2415f6e65d71ae3f59-1": {
+          "role": "safety",
+          "reader_gain": "防止混用不同溫度的 pH 與 PaCO₂ 進行錯誤代償判讀。",
+          "nonredundancy_reason": "這是獨立的資料一致性風險，不能由單純認識溫度替代。",
+          "verdict": "keep"
+        },
+        "93e458a92aa2fd876b-1": {
+          "role": "causal_bridge",
+          "reader_gain": "釐清切換顯示本身不會改變體內 CO₂ 或腦灌流。",
+          "nonredundancy_reason": "此處分離測量與介入，阻止後文策略圖被讀成儀器操作效果。",
+          "verdict": "keep"
+        },
+        "1ddce4c65ecc87c715-1": {
+          "role": "definition",
+          "reader_gain": "界定 alpha-stat 使用未校正三十七度血氣目標。",
+          "nonredundancy_reason": "它定義第一種策略的控制變數，不可與低溫校正後目標混同。",
+          "verdict": "keep"
+        },
+        "dbf93912bfce0540b7-1": {
+          "role": "causal_bridge",
+          "reader_gain": "從低溫校正變化連到 histidine imidazole 的理論理由。",
+          "nonredundancy_reason": "補足選擇保留原基準的生理動機，並區分理論與臨床效益。",
+          "verdict": "keep"
+        },
+        "2df80603ce2251055e-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明 CO₂ 對腦血流及自動調節的雙面效應。",
+          "nonredundancy_reason": "此前只談酸鹼基準，此段開始建立腦保護結果的中介機轉。",
+          "verdict": "keep"
+        },
+        "ec906c65742022bfb5-1": {
+          "role": "decision",
+          "reader_gain": "把 alpha-stat 的本質定位為不額外追逐低溫校正目標。",
+          "nonredundancy_reason": "避免把臨床管理策略錯當成單純關閉報告欄位。",
+          "verdict": "keep"
+        },
+        "45bdccf9072e5045b4-1": {
+          "role": "definition",
+          "reader_gain": "定義 pH-stat 以病人體溫校正值調整掃氣或加 CO₂。",
+          "nonredundancy_reason": "與 alpha-stat 形成真正的替代策略比較，而非時間先後步驟。",
+          "verdict": "keep"
+        },
+        "3e04f286ebe410b040-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋 pH-stat 下未校正值較酸不必然是新的呼吸衰竭。",
+          "nonredundancy_reason": "將術中預期表型和離機後新發異常分開，防止錯誤診斷。",
+          "verdict": "keep"
+        },
+        "b2578f6a3b4749c7e5-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "平衡增加腦血流、均勻降溫與栓塞及自調節風險。",
+          "nonredundancy_reason": "避免從 CO₂ 血管擴張直接推論所有術式有益或有害。",
+          "verdict": "keep"
+        },
+        "47a8c89f8dc11c515a-1": {
+          "role": "orientation",
+          "reader_gain": "指出必須用適用族群的比較試驗裁決策略效益。",
+          "nonredundancy_reason": "把前段生理推論切換到臨床結果證據，不偷換證據層級。",
+          "verdict": "keep"
+        },
+        "abc073ca3f0c0da5d1-1": {
+          "role": "case_evidence",
+          "reader_gain": "逐組列出 Patel 六週認知測驗的分母與事件數。",
+          "nonredundancy_reason": "精確分母與終點使讀者不會將其誤稱死亡率或中風效益。",
+          "verdict": "keep"
+        },
+        "147bfde26af6ffe4f5-1": {
+          "role": "case_evidence",
+          "reader_gain": "限制 Murkin 的二十七對四十四百分比為長時間 CPB 分層。",
+          "nonredundancy_reason": "防止將特定亞組結果擴寫成全部三百一十六人的風險。",
+          "verdict": "keep"
+        },
+        "d908f8b630a49a8eca-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "把腦血流自調節的機轉支持與當代外推條件分開。",
+          "nonredundancy_reason": "它指出歷史試驗的解釋不等於已證明所有裝置和術式有效。",
+          "verdict": "keep"
+        },
+        "cf00cce11fa742a9b1-1": {
+          "role": "decision",
+          "reader_gain": "定位成人高至中度低溫 IIa/B 建議及適用界線。",
+          "nonredundancy_reason": "指南的建議強度與範圍不同於前兩項 RCT 的原始終點。",
+          "verdict": "keep"
+        },
+        "a6373f902ea4b54421-1": {
+          "role": "counterfactual",
+          "reader_gain": "以主動脈弓停循環改變腦部冷卻與灌流的權衡。",
+          "nonredundancy_reason": "這個反事實揭示不能把常規 CABG 的結論直接搬到 DHCA。",
+          "verdict": "keep"
+        },
+        "b86678ec44c3bce1d8-1": {
+          "role": "counterfactual",
+          "reader_gain": "以嬰幼兒腦血管成熟度及先天心臟病提出不同適用性。",
+          "nonredundancy_reason": "與成人弓手術不同，年齡及先天解剖本身會改變比較前提。",
+          "verdict": "keep"
+        },
+        "7a7dce6d827f17fe7f-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分最佳證據綜述、手術低溫研究與其他低溫情境。",
+          "nonredundancy_reason": "阻止把二級文獻或心跳停止後低溫研究算成直接 RCT。",
+          "verdict": "keep"
+        },
+        "178ca4eae883c34e40-1": {
+          "role": "orientation",
+          "reader_gain": "明示交班血氣七點三零為教學情境而非試驗患者病程。",
+          "nonredundancy_reason": "將反事實演練與真實病例來源隔離，避免捏造個案醫囑。",
+          "verdict": "keep"
+        },
+        "769842b078ec516b5b-1": {
+          "role": "decision",
+          "reader_gain": "要求先核對 CPB 時段、溫度和採樣報告基準。",
+          "nonredundancy_reason": "先辨認測量條件才能避免錯誤啟動碳酸氫鹽處置。",
+          "verdict": "keep"
+        },
+        "202287309247c06aa1-1": {
+          "role": "decision",
+          "reader_gain": "離機回溫後重新按當下通氣灌流和酸鹼狀態判讀。",
+          "nonredundancy_reason": "防止以術中 pH-stat 理由掩蓋數小時後的新休克或呼吸異常。",
+          "verdict": "keep"
+        },
+        "e1fd898bae5a478b8f-1": {
+          "role": "counterfactual",
+          "reader_gain": "以正常血氣但腦氧惡化說明 CO₂ 目標不等於腦灌流。",
+          "nonredundancy_reason": "這個反例使讀者理解數字達標仍須評估灌流及解剖。",
+          "verdict": "keep"
+        },
+        "99007e951ebf172ad0-1": {
+          "role": "safety",
+          "reader_gain": "界定 CPB CO₂ 與腦保護調整屬跨專業團隊決策。",
+          "nonredundancy_reason": "避免把機轉教材誤當成可自行操作氧合器的醫囑。",
+          "verdict": "keep"
+        },
+        "cd30769536951d9f59-1": {
+          "role": "causal_bridge",
+          "reader_gain": "回到 Patel 的實際介入是兩種 CO₂ 管理而非兩種報告格式。",
+          "nonredundancy_reason": "與開頭的研究結果形成因果閉環，回收文章核心命題。",
+          "verdict": "keep"
+        },
+        "57a298afc727bc3d45-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以溫度、策略和病人三層條件整合臨床推理。",
+          "nonredundancy_reason": "這句總結重新連接物理量測、可改變的介入與外推界線。",
+          "verdict": "keep"
+        },
+        "cf3de672d5732aa1ae-1": {
+          "role": "orientation",
+          "reader_gain": "說明三層分辨比死背策略優缺點更可轉用。",
+          "nonredundancy_reason": "把整篇機轉轉為臨床閱讀原則，並非重述單一試驗數字。",
+          "verdict": "keep"
+        },
+        "ee825c1903db2a6d32-1": {
+          "role": "definition",
+          "reader_gain": "檢驗能否從氣體溶解度說明校正值與真實介入差別。",
+          "nonredundancy_reason": "第一問測量機轉理解，不與後續決策題重複。",
+          "verdict": "keep"
+        },
+        "c45d67a0416f8fe073-1": {
+          "role": "decision",
+          "reader_gain": "檢驗低溫校正 pH 目標如何轉成氧合器 CO₂ 調整。",
+          "nonredundancy_reason": "第二問要求連結操作與腦血流，不能只答出兩個定義。",
+          "verdict": "keep"
+        },
+        "963b4f7231dca9ce80-1": {
+          "role": "counterfactual",
+          "reader_gain": "檢驗 CABG 證據不能跨越術式及年齡的外推邊界。",
+          "nonredundancy_reason": "第三問專門攔截以單一歷史試驗推出普遍治療的誤解。",
+          "verdict": "keep"
+        },
+        "11d037aecd92a3203c-1": {
+          "role": "source_context",
+          "reader_gain": "提供成人 CPB 指引原文與 Table 52 的可追溯入口。",
+          "nonredundancy_reason": "指南的推薦強度需要獨立來源，不能由教學解說代替。",
+          "verdict": "keep"
+        },
+        "903f6342bf230bda67-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Patel 原始 RCT 的樣本及六週測驗結果。",
+          "nonredundancy_reason": "此研究支撐主要對比，與其他成人研究的分層結局不同。",
+          "verdict": "keep"
+        },
+        "cd78eb2621aca568f7-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Murkin 二乘二 RCT 及超過九十分鐘亞組。",
+          "nonredundancy_reason": "避免兩篇 RCT 被混成同一試驗或同一時間終點。",
+          "verdict": "keep"
+        },
+        "ad8aa803e720e56488-1": {
+          "role": "source_context",
+          "reader_gain": "標明 OpenAnesthesia 僅為生理學二級教學來源。",
+          "nonredundancy_reason": "保留原理輔助但不讓其取代指南與試驗的決策權重。",
+          "verdict": "keep"
+        },
+        "6e62c2d16b5476da23-1": {
+          "role": "source_context",
+          "reader_gain": "標明 Abdul Aziz 2010 是綜述而不是新 RCT。",
+          "nonredundancy_reason": "讀者能追查 DHCA 的研究脈絡且不重複計算試驗證據。",
+          "verdict": "keep"
+        },
+        "7805c21d71adead9f7-1": {
+          "role": "source_context",
+          "reader_gain": "將近期生理回顧限縮為補充而非療效證據。",
+          "nonredundancy_reason": "不同於原始 RCT，此來源只協助理解物理化學爭議。",
+          "verdict": "keep"
+        },
+        "edb6f8223976814eed-1": {
+          "role": "navigation",
+          "reader_gain": "明確區分第三篇代謝性酸化與第四篇溫度 CO₂ 策略。",
+          "nonredundancy_reason": "跨篇導覽指向不同問題，避免讀者把 SID 與 pH-stat 混用。",
+          "verdict": "keep"
+        }
+      }
     }
   }
 }
