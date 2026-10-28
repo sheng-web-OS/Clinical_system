@@ -39,7 +39,7 @@ class LabMorningReaderInference(unittest.TestCase):
     def test_study_selection_not_transferred_to_high_risk_patient(self):
         body=self.article
         for cue in ("eGFR <60","血液惡性疾病","不能搬到所有病房病人",
-                    "不是所有送檢者","ECG 正常","降鉀介入後"):
+                    "不能拿這個比例估計所有急診高鉀患者","ECG 正常","降鉀介入後"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,body)
         self.assertIn("PMC7673871",self.sources)
