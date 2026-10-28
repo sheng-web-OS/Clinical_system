@@ -100,11 +100,14 @@ def main():
                                     row = page.locator('[id="' + archive_anchor(r) + '"]')
                                     if row.count() != 1:
                                         raise AssertionError("Official question row missing or duplicated " + str(key))
-                                    row.locator("details.exam-catalog-materials summary").click()
-                                    href = concept_url(r["page"], r["embedded"], ROOT)
-                                    link = row.locator('nav.exam-concept-links a[href="' + href + '"]')
+                                    # The Q entry itself opens the canonical clinical
+                                    # explanation. Its own article is not an extra "教材".
+                                    href = r["page"]["output"] + "#" + r["anchor"]
+                                    link = row.locator('a.exam-question-entry[href="' + href + '"]')
                                     if link.count() != 1:
-                                        raise AssertionError("Official question has no exact concept link " + str(key))
+                                        raise AssertionError("Official Q does not open its exact answer " + str(key))
+                                    if row.locator("details.exam-catalog-materials").count():
+                                        raise AssertionError("Own answer incorrectly repeated as 教材 " + str(key))
                                     bounds = row.bounding_box()
                                     if bounds["x"] < -2 or bounds["x"] + bounds["width"] > width + 2:
                                         raise AssertionError("Official question row is clipped " + str(key))
@@ -114,7 +117,7 @@ def main():
                                     page.wait_for_url(origin + href)
                                     fragment = href.split("#", 1)[1]
                                     if page.locator('[id="' + fragment + '"]').count() != 1:
-                                        raise AssertionError("Official exam concept target missing " + str(key))
+                                        raise AssertionError("Official question answer target missing " + str(key))
                                     page.goto(origin + name, wait_until="domcontentloaded")
                             reports.append({"page":name,"width":width,"theme":theme,
                                             "page_width":state["scroll"],"source_and_links":True})
