@@ -41,3 +41,10 @@
 - [ ] **Curriculum exam mapping**: search verified official 111–115 year Taiwan second-stage ABG/acid-base questions, link only true relevant items, don't force surgical CPB-specific material into exam rationale.
 
 **Current status: PRIVATE DRAFT / EDITORIAL HOLD.** No independent approval, tests, mobile QA, merge or production publish is claimed.
+
+## 2026-10-29 additional source-adversarial pass (author-side, NOT independent approval)
+
+- Guarnieri 2026 ICU SIG median 9.8 vs baseline 6.0, but publisher Key Findings expressly says this SIG perturbation resolved by first postoperative day. Persistent alactic BE is a distinct derived variable. P1 corrected: no longer suggests SIG remained elevated on POD1. Sources: https://pubmed.ncbi.nlm.nih.gov/41130846/ and https://www.sciencedirect.com/science/article/abs/pii/S1053077025007864
+- Chuah 2013 fully open research text and original Table 3 were independently verified against source, but this audit is still SAME AUTHORING CONTEXT: https://link.springer.com/article/10.1186/1749-8090-8-184 . Physiological associations are not evidence of actual patient-specific hypoalbumin compensation. The source contradictory Hb claims remain flagged.
+- Static SVG structure / estimated text-width (390px viewBox) did not show likely overflow. This is NOT a browser render/screenshot or legibility pass.
+- Still HOLD: independent clinical/EPQC exact-blob review, browser 360/375/390/1280px verification, final figure provenance, publication CI and same-commit production readback.
