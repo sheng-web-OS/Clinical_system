@@ -47,7 +47,7 @@ class LabMorningReaderInference(unittest.TestCase):
 
     def test_non_potassium_panel_remains_differentiated_not_prescribed(self):
         last=self.article.split("## 第三問",1)[1]
-        for cue in ("serum total CO₂","Hb","platelet","Mg","BUN／Cr",
+        for cue in ("Serum total CO₂","Hb","platelet","Mg","BUN／Cr",
                     "沒有對應臨床症候群","不能編造"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,last)
