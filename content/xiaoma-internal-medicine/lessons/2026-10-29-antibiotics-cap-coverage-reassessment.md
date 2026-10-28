@@ -20,7 +20,7 @@
 
 <figure class="diuretic-figure" id="u02-original-admission-cxr">
 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2"><img src="https://assets.cureus.com/uploads/figure/file/999808/article_river_58b323c0011911ef9a0fb3882f0846ad-Chest-Xray-1-.png" alt="原病例入院胸部 X 光：右肺多處斑片狀浸潤，左肺另有較少量浸潤，不能從影像直接判定 Legionella。" loading="lazy" style="display:block;max-width:100%;height:auto;margin:0 auto;"></a>
-<figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，**不是**直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；依 CC BY 4.0 授權使用，原作者與來源已標明。</figcaption>
+<figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，<strong>不是</strong>直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；依 CC BY 4.0 授權使用，原作者與來源已標明。</figcaption>
 </figure>
 
 ### 二、第一劑的理由：還沒辨認微生物，先處理最重要的治療缺口
