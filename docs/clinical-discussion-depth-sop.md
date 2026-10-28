@@ -66,6 +66,18 @@
 
 **Gate R（必過）**：獨立審稿者須判斷核心選題、論證與反事實均足以承受實質追問；不能用數字、排版或 CI 通過補償任何核心缺陷。
 
+### Reviewer perspective shift：先不提示、再比較（2026-10-28）
+
+**審稿不是先告知失敗答案的修稿輔助**。將作者視角轉為首次接觸稿件的神外主治／臨床讀者視角，應先**獨立選出最重要的臨床矛盾**，再找最有決策後果的缺陷；檢視完整前後段、已存在的限定語與研究註腳，不能因文章很長或使用正確概念就直接 PASS，也不能因任務叫「找錯」便強行 HOLD。
+
+- **Blind first**：審稿者只能看到未暗示預期結果的中性來源包；預設失敗位置、作者 RED、修稿範例與分數均由評估端保管，不能同時提供。另一個角色名稱不是獨立上下文；已有答案曝光則記 `CONTAMINATED_REVIEW`。
+- **Normal controls**：至少檢查已正確呈現的重要前提與限定語有否遭到誤擋。適當保留的正確內容不需要為符合 SOP 而硬改；完整正常稿的誤判率須在真正多案例盲審才可測得。
+- **最小充分提示**：比較原生中性審稿、單句「切換至對抗式專科審查視角」與完整 SOP；只有在未提示案例、正常對照、獨立審稿及實際成本上看到增益，才有理由長期載入較長 SOP。已知同專案合成試驗有整套 SOP 未呈增益且增加提示成本，不能因寫得更長自認更有用。
+- **分開衡量**：無提示自主發現（尤其首個最大問題）、重大漏判、錯誤旗標、修復後新錯、證據與個案適用性、使用者介入分鐘；缺實測寫 `NOT_MEASURED`。維持唯一事件 owner #203／總帳 #133／成長 #137，不另造看板或排程。
+
+校準設計與正常 claim-preservation 對照見私有 [unhinted review protocol](../audit/clinical-discussion-depth-unhinted-calibration.md)。真正給審稿者的是 [neutral review packet](../audit/clinical-discussion-neutral-reviewer-packet.md)，**不是**內含預期 RED 的 [coordinator handoff](../audit/clinical-discussion-depth-reviewer-handoff.md)。此規則不改變上述 Gate R 的獨立審查要求。
+
+
 ## 6. 交付決策與最小追溯記錄
 
 - **PASS（深度 Discussion 候選）**：Q、D、E、R 都有具體審查證據且未有醫學安全阻擋；只是可交付的編輯候選，不冒稱專科醫師評核或已正式發表。
