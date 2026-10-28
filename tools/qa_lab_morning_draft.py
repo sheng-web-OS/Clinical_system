@@ -36,7 +36,7 @@ def render_private_draft():
         "source": SOURCE,
         "output": "xiaoma-20261028-lab-morning-sheet.html",
         "title": TITLE,
-        "subtitle": "抽血檢驗的生命危險、採檢干擾、AKI 與可執行交班",
+        "subtitle": "真實假性高鉀病例的量測證據、檢驗機轉與後段合成 AKI 練習",
         "collection": "xiaoma-internal-medicine",
         "layout": "reader",
         "section": "Lab Medicine｜值班與病房",
@@ -84,10 +84,15 @@ def main():
                     rows = page.locator("article.article table")
                     if rows.count() < 1:
                         raise AssertionError("Missing four-timepoint numeric lab table")
-                    numeric_table = rows.first.inner_text()
-                    if not all(cue in numeric_table for cue in
-                               ("Creatinine", "Mg", "10/28 07:15")):
-                        raise AssertionError("Numeric lab table lacks core timepoints/analytes")
+                    # The evidence-first lesson now leads with published case-report
+                    # tables. The four-timepoint *synthetic practice* panel comes
+                    # later; identify it by analytes/timepoints, not row position.
+                    required_panel_cues = ("Creatinine", "Mg", "10/28 07:15")
+                    numeric_tables = [rows.nth(k).inner_text()
+                                      for k in range(rows.count())]
+                    if not any(all(cue in table for cue in required_panel_cues)
+                               for table in numeric_tables):
+                        raise AssertionError("Missing synthetic four-timepoint panel with core analytes")
                     arms = figure.locator("section")
                     if arms.count() != 2:
                         raise AssertionError("Expected two distinct bedside decision arms")
