@@ -78,6 +78,12 @@ jobs:
           echo "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591  $FONT" | sha256sum --check
           fc-cache -f "$HOME/.local/share/fonts"
           fc-match -f '%{family}\\n' 'Noto Sans TC' | grep -F 'Noto Sans TC'
+      - name: Verify unpublished Lab 02 and Lab 03 reader at 360/375/390/1280px
+        if: github.event_name == 'pull_request'
+        run: |
+          if test -f tools/qa_lab_companion_drafts.py; then
+            python tools/qa_lab_companion_drafts.py --output visual-qa-artifacts/lab-companion-drafts
+          fi
       - name: Verify official exam study links on 360/375/390px phones
         if: github.event_name == 'pull_request'
         run: |
