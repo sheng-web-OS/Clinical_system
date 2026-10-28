@@ -1119,6 +1119,21 @@
           "why_link_instead": "獨立來源審查已實際核讀官方原圖與兩項註腳；提供BTS原始入口，正文以原創文字表解釋，避免未授權重製原始像素或讓讀者誤認為已重製Pocket書頁。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-28-pneumothorax-mechanism-decisions.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pneumothorax-sources.md",
+      "items": [
+        {
+          "locator": "BTS Guideline for Pleural Disease (Thorax 2023), Spontaneous pneumothorax / acute management recommendation and post-first recurrence section; ERS/EACTS/ESTS 2024, guideline Figure 1 and PICO 1–4",
+          "source_token": "BTS 2023",
+          "teaching_role": "原創三層並行決策圖，將生理急迫性、當次處置適用條件與未來復發預防拆開，避免以單一胸片大小代替不同決策目標。",
+          "scope_limit": "本圖不是兩部原指南的逐項複刻，不能指定個別病人的減壓位置、裝置、手術術式或替代當地急診與胸外流程。",
+          "mode": "illustrated",
+          "anchor": "pneumothorax-decision-map",
+          "caption_token": "BTS 2023"
+        }
+      ]
     }
   }
 }
