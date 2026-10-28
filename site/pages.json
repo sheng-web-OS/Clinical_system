@@ -2394,7 +2394,369 @@
     "navigation": false,
     "review": "ai_editorial_review",
     "references": "xiaoma-heart-sounds-structural-sources.html",
-    "updated": "2026-10-28"
+    "updated": "2026-10-28",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 10,
+        "focus": "ASD 固定分裂 S2：先解釋肺血流增加，而不是把缺損孔當成雜音來源。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "focus": "先辨認時相與血流產生的心雜音，不能只靠是否響亮判定病理。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "focus": "心音的時相與脈絡只能形成初步假說；兒童 innocent murmur 的個別鑑別仍看原題。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 33,
+        "focus": "PAPVR 與 ASD 都可能增加右心容量負荷；重點是分流造成的肺血流變化。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "focus": "由左向右分流與肺血流負荷理解心雜音及心衰線索；嬰兒病因仍需原題鑑別。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "focus": "PDA 的連續性雜音來自主動脈和肺動脈間的持續壓差；用藥則回到原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 12,
+        "focus": "小型 VSD 的高壓差雜音可很響，不能以響度替代分流量及心衰評估。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "focus": "先從收縮、舒張及跨期壓差理解何謂真正的連續性雜音。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 31,
+        "focus": "TOF 發紺與流出道阻塞的動態關係，不能僅用 VSD 雜音大小解釋。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "TOF hypoxic spell 的肺血流下降可讓雜音變弱；急救措施仍依原題完整判讀。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 22,
+        "focus": "TOF 的肺血流受 RVOTO 影響，改善通氣不保證立即解除分流與低氧。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 11,
+        "focus": "區分瓣口固定狹窄與流出道層級阻塞；特殊症候群仍須另核解剖。",
+        "concept_heading": "三、聲音是血流事件的投影；壓差和流量不是同一件事",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "focus": "Doppler 峰值速度與瞬時壓差的 Bernoulli 換算，不等於平均壓差。",
+        "concept_heading": "三、聲音是血流事件的投影；壓差和流量不是同一件事",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "focus": "術前 TTE 應區分病灶解剖、血流嚴重度及對心腔的後果。",
+        "concept_heading": "七、從懷疑到證據：超音波要回答三種不能互換的問題",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "focus": "AS 嚴重度、症狀與瓣膜介入條件不能只靠年齡或雜音決定。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "focus": "AS 與 MS 的機械阻礙發生在不同時相，介入策略不能照搬。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "focus": "理解嚴重 AS 的固定出口阻力；嬰兒的手術技術選擇仍需看原題專論。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 19,
+        "focus": "MR 是 LV 收縮時的 LV→LA 逆流；以跨瓣時相判定雜音。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "focus": "心肌梗塞後休克與肺水腫若不成比例惡化，要警覺乳突肌或室間隔破裂。",
+        "concept_heading": "八、病人惡化時，什麼時候不能再等聲音變典型？",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "focus": "VSD 的高壓差與雜音強弱不等於缺損大小；瓣葉脫垂的細節仍看原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "focus": "心房黏液瘤可造成二尖瓣流入阻礙，低頻舒張音不代表風濕性 MS。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 9,
+        "focus": "ASD 是否能封堵要整合 PVR、分流方向與 Eisenmenger 生理。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 30,
+        "focus": "先由分流負荷理解嬰兒心音及臨床惡化；胸片仍須看官方原圖，尚未全核。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 2,
+        "focus": "休克時心音不典型不能排除心包填塞；本篇提供急症分流，詳細氣胸鑑別見原題。",
+        "concept_heading": "八、病人惡化時，什麼時候不能再等聲音變典型？",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 7,
+        "focus": "TEE 補充病灶解剖資訊，但不能把瓣膜影像推成全段冠脈狹窄比例。",
+        "concept_heading": "七、從懷疑到證據：超音波要回答三種不能互換的問題",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "focus": "ASD 關閉前先看右心容量負荷、肺血管阻力與 Eisenmenger 禁忌。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "先辨認分流方向與血氧的生理意義；上下肢差異的解剖定位仍依原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "肺血流與分流機制決定發紺表現；各新生兒疾病的細節由原題區分。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 32,
+        "focus": "先區分瓣膜、瓣下及瓣上阻塞的位置；Noonan/Williams 具體表型仍看原題。",
+        "concept_heading": "三、聲音是血流事件的投影；壓差和流量不是同一件事",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 4,
+        "focus": "腱索斷裂屬原發性 MR 的結構病變，瓣葉運動型態才是下一步分類依據。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "focus": "BAV 造成 AS 的解剖病因與合併主動脈病變，須分開評估術式。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 5,
+        "focus": "HCM 不只是肥厚或雜音，必須區分動態 LVOTO 與其他肥厚表型。",
+        "concept_heading": "五、姿勢與手法：不是背增強／變弱，而是改變哪個血流參數",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "瓣膜逆流要依收縮或舒張時相、容量負荷與心室適應時間評估；胎兒處置另論。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 5,
+        "focus": "PDA 的管道壓差與開閉生理是先備概念；PGE₁ 作用與早產兒處置依原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "MVP 的 click 時相及前負荷反應不能替代猝死風險的完整評估。",
+        "concept_heading": "五、姿勢與手法：不是背增強／變弱，而是改變哪個血流參數",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 21,
+        "focus": "MS 導致 LA 壓上升並增加 AF/栓塞風險；心率變化可加速失代償。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      }
+    ]
   },
   {
     "source": "content/xiaoma-internal-medicine/heart-sounds-structural-sources.md",
