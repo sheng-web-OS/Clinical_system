@@ -34,7 +34,7 @@
 - **決策分岔／反事實**：指出至少一個會使結論改變的患者條件、解剖或風險，清楚說明 why。臨床資料不足以選邊時，呈現條件式結論，不硬湊唯一答案。
 - **Back to our patient**：用本案已核實、真正影響論證的條件回扣；若本案影像／手術紀錄缺失，保留未知並提出需要確認的資料，不聲稱原團隊必然依此決策。
 
-**Gate D（必過）**：至少一個關鍵論證不能僅靠「因為指南建議」「因為位置深」「要看病人情況」「治療後要追蹤」等正確但無區辨力的句子成立。若無 competing options、discriminating evidence 或 decision pivot，標示 **HOLD／非深入版**。
+**Gate D（必過）**：每個主要臨床結論都不得僅靠「因為指南建議」「因為位置深」「要看病人情況」「治療後要追蹤」等正確但無區辨力的句子成立。若無 competing options、discriminating evidence 或 decision pivot，標示 **HOLD／非深入版**。
 
 ## 3. 原始證據核對（Evidence, not decoration）
 
@@ -73,7 +73,7 @@
 
 ## 7. 防再發回歸測試（RED fixture：舊版應被攔截）
 
-使用 [#203](https://github.com/sheng-web-OS/Clinical_system/issues/203) 所指 2026-09《BA_aneurysm_discussion_9_slides_v2.pptx》《BA_aneurysm_discussion_逐字稿.md》作**歷史負面樣例**；未確認其 canonical Git 路徑前不得臆造 blob SHA 或宣稱測試可機器重現。
+使用 [#203](https://github.com/sheng-web-OS/Clinical_system/issues/203) 所指 2026-09《BA_aneurysm_discussion_9_slides_v2.pptx》《BA_aneurysm_discussion_逐字稿.md》作**歷史負面樣例**。已將當年逐字稿的私有副本固定於 [`audit/fixtures/ba-aneurysm-discussion-202609-frozen.md`](../audit/fixtures/ba-aneurysm-discussion-202609-frozen.md)，Git blob SHA `afe6acddeb9d8ca5d677724635b7431100d07a68`；可重跑**文字語義**對照，但不能冒稱已保存原始 PPT 所有影像或臨床資料。
 
 | 舊稿位置 | 必須追問、不得被空泛回答繞過 | 應有判定 |
 | --- | --- | --- |
