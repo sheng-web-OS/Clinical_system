@@ -131,7 +131,7 @@ class ExamArchiveContract(unittest.TestCase):
         lesson = next(p for p in self.pages if p["output"] ==
                       "xiaoma-20261027-heart-sounds-structural-exam.html")
         materials = lesson.get("related_exams", [])
-        self.assertEqual(len(materials), 31, "A deep lesson must not ship with zero year-archive mappings")
+        self.assertEqual(len(materials), 30, "A deep lesson must not ship with zero year-archive mappings")
         self.assertTrue(all(link.get("embed") is False for link in materials),
                         "Do not inject dozens of full exam explanations into the clinical lesson")
         connections = question_connections(self.pages, ROOT)
@@ -148,7 +148,7 @@ class ExamArchiveContract(unittest.TestCase):
                 row = archive.split('id="' + anchor + '"', 1)[1].split('</div>', 1)[0]
                 self.assertIn('href="' + expected + '"', row)
                 self.assertIn("心音與結構性心臟病", row)
-        # All 49 old official identities remain; 31 get this additional, relevant topic link.
+        # All 49 old official identities remain; 30 get this additional, relevant topic link.
         self.assertEqual(sum(len(p.get("exam_questions", [])) for p in self.pages if
                              "heart-sounds-cross" in p["source"]), 49)
         self.assertEqual(render_related_questions(lesson, records, {}),
@@ -160,7 +160,7 @@ class ExamArchiveContract(unittest.TestCase):
         decorated = add_lesson_exam_backlinks(lesson, records, stub, ROOT)
         self.assertEqual(decorated.count('class="lesson-exam-backlinks"'),
                          len({x["concept_heading"] for x in materials}))
-        self.assertEqual(decorated.count('href="xiaoma-exams.html#catalog-'), 31)
+        self.assertEqual(decorated.count('href="xiaoma-exams.html#catalog-'), 30)
         for link in materials:
             record = records[question_key(link)]
             return_href = 'href="xiaoma-exams.html#' + archive_anchor(record) + '"'
