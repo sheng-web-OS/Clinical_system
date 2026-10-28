@@ -1215,6 +1215,58 @@
           "why_link_instead": "引導讀者合法進入已公開的原始專家共識流程圖，不把第三方治療算法截圖重新出版。"
         }
       ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/cticu-abg-03-sources.md",
+      "reviewed_on": "2026-10-29",
+      "review_type": "independent_ai_source_figure_review_not_physician_or_production",
+      "items": [
+        {
+          "locator": "Chuah CS et al. 2013 J Cardiothorac Surg 8:184, original Table 3 and Figures 1–3; CABG n55 on-pump group means before, after CABG, next morning",
+          "source_token": "Table 3",
+          "mode": "illustrated",
+          "anchor": "cticu-abg-03-cohort-trends",
+          "caption_token": "Chuah 2013",
+          "teaching_role": "並排呈現七個原研究群體平均的三時點數值與升降方向；讀者辨識 Cl、SID、BE 的酸化訊號可與 PaCO2、H+ 的結果不同步，而不能把一項血氣當作病因標籤。",
+          "scope_limit": "原創數值卡不是原作者的連續折線或個體病程，也不提供各時點配對分布、albumin/lactate 實測或治療有效性；箭頭不表示幅度，須開啟表格或原尺寸 SVG 閱讀精確數值。"
+        },
+        {
+          "locator": "Chuah CS et al. 2013 original publisher Table 3, pre/post/next-morning group results and study-specific SID = Na + K - Cl",
+          "source_token": "Table 3",
+          "mode": "source_link",
+          "url": "https://link.springer.com/article/10.1186/1749-8090-8-184/tables/3",
+          "teaching_role": "讓讀者直接核對每一群體採樣時間、單位與統計註腳，避免把作者原表的組平均當成一名患者的連續 paired ABG 或自行補算 AG。",
+          "scope_limit": "原 Table 3 的研究設計並非 prime 隨機介入比較，且沒有患者乳酸與白蛋白資料；原表不能提供個別治療處方。",
+          "why_link_instead": "原表具有原始統計資訊和註腳，本站提供出版社官方連結並以原創指標方向圖補足教學，不必複製原研究的全部圖像像素。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/cticu-abg-04-sources.md",
+      "reviewed_on": "2026-10-29",
+      "review_type": "independent_ai_source_figure_review_not_physician_or_production",
+      "items": [
+        {
+          "locator": "2024 EACTS/EACTAIC/EBCP guideline adult CPB, §10.3 Recommendation Table 52, official printed pp58–59, alpha-stat class IIa level B in high-moderate hypothermia",
+          "source_token": "Recommendation Table 52",
+          "mode": "illustrated",
+          "anchor": "cticu-abg-04-measurement-decision",
+          "caption_token": "high-moderate hypothermia",
+          "teaching_role": "把同一管血的 37°C 量測、病人溫度校正、兩種互相替代 CO₂ 調整策略及腦循環後果分層呈現，幫讀者避開『切換顯示等於治療』及『alpha→pH 順序』的重大混淆。",
+          "scope_limit": "原創因果圖不是原官方 Table 52 或兩份實測 ABG，也未證實每位 DHCA、兒童或主動脈弓患者的最佳策略；腦血流改變不等於臨床神經預後必然改善。"
+        },
+        {
+          "locator": "Wahba et al. 2024 EACTS/EACTAIC/EBCP adult CPB guideline §10.3 Recommendation Table 52, recommendation grade and source references",
+          "source_token": "Recommendation Table 52",
+          "mode": "source_link",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/",
+          "teaching_role": "可直接核對成人 high-moderate hypothermia 的 alpha-stat IIa/B 原始建議、Recommendation Table 52 的 footnotes 和文獻，避免把 guideline 當成適用所有 DHCA/pediatric 的一級命令。",
+          "scope_limit": "Table 52 規範成人特定低溫範圍，不能由此替代個別患者、術式及腦灌流監測；原始 RCT 全文表圖未於本輪全面取得。",
+          "why_link_instead": "出版商的 CC BY-NC-ND 條件和網站公開使用情境尚未完成第三方原圖重製權利認定，故以官方全文及原表連結保留可核查性，站內只使用自行設計的機轉圖。"
+        }
+      ]
     }
   }
 }
