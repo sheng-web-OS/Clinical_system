@@ -10,7 +10,7 @@ Kameyama 等人在 2021 年發表一位 **88 歲女性**的真實病例。病人
 
 冠狀動脈攝影發現右冠狀動脈的 posterior descending branch 阻塞，支持心肌梗塞；但相對局限的梗塞範圍，仍不足以讓團隊安心解釋持續的肺水腫和休克。**直到住院第 5 天的 transesophageal echocardiography（TEE，經食道心臟超音波），才證實乳突肌斷裂造成嚴重急性 mitral regurgitation（MR，二尖瓣逆流）。** 病人與家屬未同意手術，最終因進展性心衰竭死亡。[原始病例與摘要](https://doi.org/10.1155/2021/1396194)；[PubMed 定位](https://pubmed.ncbi.nlm.nih.gov/34970457/)。
 
-<figure role="group" aria-label="乳突肌斷裂病例由觀察走到診斷的時間與證據鏈">
+<figure id="acute-mr-case-evidence-timeline" role="group" aria-label="乳突肌斷裂病例由觀察走到診斷的時間與證據鏈">
 <div class="atlas-logic atlas-logic-three">
 <div><small>臨床起點</small><strong>呼吸窘迫、肺水腫、休克</strong><p>沒有典型收縮期雜音；此時只能確立重大循環與呼吸失常，不能說沒有 MR。</p></div>
 <div><small>初步證據</small><strong>冠狀動脈分支阻塞；TTE 未釐清</strong><p>心肌梗塞是真的，但梗塞範圍與休克不相稱，要求重新檢查可能的機械性併發症。</p></div>
