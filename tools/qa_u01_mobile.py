@@ -40,14 +40,21 @@ def verify(page, name, width):
     if dom["mainText"] < 350:
         issues.append("reader text unexpectedly empty")
     if name == LESSON:
-        if dom["mainText"] < 7000 or dom["headings"] < 6:
-            issues.append("full U01 clinical narrative not rendered")
+        # Evidence-first U01: verify real-case data and trial evidence, not
+        # the removed, synthetic first-dose order sheet. These are browser-level
+        # assertions, NOT independent medical, pharmacy, or source sign-off.
+        article_text = page.locator("article").inner_text()
+        if dom["mainText"] < 4500 or dom["headings"] < 5:
+            issues.append("full evidence-first U01 clinical reading not rendered")
         if dom["tables"] < 2:
-            issues.append("risk/first-dose decision tables missing")
-        if "合成病例" not in page.locator("article").inner_text():
-            issues.append("synthetic-case disclosure missing")
-        if "NOT VERIFIED" not in page.locator("article").inner_text():
-            issues.append("order-ready dose boundary missing")
+            issues.append("original AST/evidence comparison tables missing")
+        for cue in ("81 歲", "28 歲", "MERINO", "23/187", "7/191"):
+            if cue not in article_text:
+                issues.append("real-case / RCT evidence text missing: " + cue)
+        if "反事實練習" not in article_text or "人工合成" not in article_text:
+            issues.append("synthetic exercise provenance disclosure missing")
+        if "不提供可直接開立" not in article_text or "當院" not in article_text:
+            issues.append("not-order-ready / local clinical boundary missing")
         if page.locator('a[href*="' + SOURCES + '"]').count() < 1:
             issues.append("lesson has no local source-review link")
         if page.locator('a[href*="' + EXAMS + '"]').count() < 1:

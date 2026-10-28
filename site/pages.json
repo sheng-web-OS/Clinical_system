@@ -3025,8 +3025,8 @@
   {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md",
     "output": "xiaoma-20261028-urosepsis-esbl-first-dose.html",
-    "title": "半夜疑似尿路敗血症，舊培養有 ESBL：第一劑到底怎麼選？",
-    "subtitle": "從 T0 危急程度、舊藥敏與 AKI 疑慮，到感染性阻塞、降階與菌血症療程",
+    "title": "為何這樣選抗生素？從真實 ESBL 尿源性感染理解證據與決策",
+    "subtitle": "真實病例的菌血症、感染源控制與微生物推理；指引證據優先，合成病例僅作反事實練習",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "section": "感染與抗生素",
@@ -3042,7 +3042,7 @@
         "subject": "醫學（三）",
         "question_number": 60,
         "question_heading": "真正的二階國考對題｜111 年第二次・醫學（三）第 60 題",
-        "concept_heading": "第一問｜舊培養 ESBL 究竟把「第一劑的推理」改變了哪一層？",
+        "concept_heading": "從酵素到真實藥敏：ESBL 不是一張可直接開立的處方",
         "topic": "ESBL 水解譜與 carbapenem 的機轉界線"
       }
     ]
@@ -3050,8 +3050,8 @@
   {
     "source": "content/xiaoma-internal-medicine/urosepsis-esbl-first-dose-sources.md",
     "output": "xiaoma-urosepsis-esbl-first-dose-sources.html",
-    "title": "ESBL 泌尿道敗血症：原始指南與官方國考來源",
-    "subtitle": "IDSA 2025 cUTI 原 Figure/Table、IDSA 2026 AMR、SSC 2026、KDIGO 與考選部 111-2 Q60",
+    "title": "ESBL 尿源性感染：真實病例、原始研究與指引來源",
+    "subtitle": "可核對的 case report、IDSA 2025/2026、SSC 2026、KDIGO 與官方試題",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
     "section": "參考資料",

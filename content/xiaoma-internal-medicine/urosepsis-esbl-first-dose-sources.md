@@ -1,6 +1,20 @@
-# 泌尿道敗血症、舊 ESBL 與第一劑：來源與適用界線
+# ESBL 尿源性感染：真實病例、原始研究與適用界線
 
-本頁列出《半夜遇到疑似泌尿道敗血症，舊培養有 ESBL：究竟該怎麼開第一劑？》所使用的權威指引、原始醫學證據及應用邊界。原案例是人工設計的教學情境，所有病人數值／培養是假設，不是個案報告、真實病人或臺灣醫院統計。
+本頁對應《為何這樣選抗生素？從真實 ESBL 尿源性感染理解證據與決策》。**主文開頭的兩篇病例報告是可核對的真實出版案例；之後 02:10 的 68 歲男性與全套 T0/T48 值班資料則為不同的、完全合成的反事實練習。絕不可合併病人身分、檢驗數字與醫療處置，也不可把合成資料當成 case report。**
+
+## 真實病例：觀察層證據（不是藥物療效證據）
+
+1. [Polymyxin B and low-dose hydrocortisone treatment in a patient with uroseptic shock in a rural health unit (2021; PMCID PMC8633641)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)：個案為 81 歲女性、因腫瘤阻塞上泌尿道，尿源性敗血性休克；報告涵蓋培養 ESBL-producing *E. coli*、血流動力變化與經皮腎造瘻引流。**個案使用 PMX-DHP／hydrocortisone 不代表這些措施已獲試驗確證或可常規照做**；須由 SSC 與原始比較研究另行評估。
+2. [Evins et al. Community-Acquired, ESBL-Producing and XDR *E. coli* in a 28-Year-Old Pyelonephritis Patient Lacking Risk Factors. *Antibiotics* 2021;10:533](https://www.mdpi.com/2079-6382/10/5/533)：病例有住院初期 ceftriaxone、後續尿培養 ESBL、換用 meropenem 的時間序列；原文 **Table 1** 明列 ceftriaxone >64 (R)、meropenem <0.25 (S)、TMP-SMX >320 (R)、piperacillin–tazobactam 64 (I)。這是**當次菌株的實測 MIC/AST**；並無可核對的兩個月前 ESBL 舊培養史，不能推為「舊培養決定首劑」的個案因果驗證。
+
+**原始 case report 的「作者觀察」只能供臨床時序及機轉的具體化；藥物/介入的比較效益須回到 RCT、綜合證據與現行 guideline。原文未報告的量測、劑量與時序一律 NOT_REPORTED；禁止 AI 補造。** 現階段的網頁檢索只能確證上述摘要／可見內文，仍須在審稿時逐段檢閱全文、核對原表及所有註腳，不能以此頁聲稱完整原始文獻審查已通過。
+
+## 系統性證據與本地臨床責任
+
+- **IDSA 2025 cUTI**：經驗性選擇的四步評估與 GRADE；近期舊尿培能影響抗藥風險，卻不是當次病原確診。
+- **IDSA 2026 AMR**：已知 ESBL-E 與 susceptibility 後的確定性治療與限制；不要用 definitive preferred 倒推未知 AST 的 empiric first dose。
+- **MERINO 及後續再分析**：比較部分侵襲性 ESBL 相關菌血症用藥，不能直接概括所有非菌血症 cUTI。
+- **當院醫師／藥師／感染管制規範**：病人級劑量、藥物相容性、腎功能動態、院內抗藥圖譜與用藥授權必須另行核對，這篇教材不提供已簽核醫囑。
 
 ## 感染嚴重度、抗菌藥與 source control
 
