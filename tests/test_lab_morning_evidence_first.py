@@ -35,7 +35,7 @@ class LabEvidenceFirstIdentity(unittest.TestCase):
         self.assertIn("https://pmc.ncbi.nlm.nih.gov/articles/PMC11908522/", self.body)
 
     def test_synthetic_case_no_longer_pretends_to_ground_treatment(self):
-        self.assertIn("不同研究、不同病人", self.body)
+        self.assertIn("不同研究拼成同一張虛構的病例", self.body)
         self.assertNotIn("舊版用一名 AI 設計的", self.body)
         self.assertNotIn("前一版用", self.body)
         self.assertNotIn("## 後段合成練習", self.body)
