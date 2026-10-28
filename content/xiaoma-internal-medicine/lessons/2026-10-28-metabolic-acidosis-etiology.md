@@ -206,6 +206,6 @@ Sodium bicarbonate 確實能影響緩衝系統與 pH，但加入 HCO₃⁻ 不�
 
 [11] Berend K. Review of the Diagnostic Evaluation of Normal Anion Gap Metabolic Acidosis. *Kidney Dis (Basel)*. 2017;3:149–159. https://doi.org/10.1159/000479279
 
-[12] Assessing urine ammonium concentration by urine osmolal gap in chronic kidney disease. *Nephrology*. 2021. https://pubmed.ncbi.nlm.nih.gov/34288275/ 
+[12] Fujimaru T, et al. Assessing urine ammonium concentration by urine osmolal gap in chronic kidney disease. *Nephrology (Carlton)*. 2021;26:809–813. https://doi.org/10.1111/nep.13937
 
 本文是供臨床學習的完整推理教材；真實病人之治療仍以其臨床狀態、院內處置規範及專科判斷為準。
