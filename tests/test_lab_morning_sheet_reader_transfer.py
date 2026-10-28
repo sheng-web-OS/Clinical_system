@@ -21,7 +21,7 @@ class LabMorningReaderInference(unittest.TestCase):
     def test_0900_observations_have_actual_decision_and_reversal(self):
         section = self.article.split("### 09:00：", 1)[1].split("### 第四筆", 1)[0]
         for cue in ("09:00 的新病例資料", "112/70", "75.6 kg", "75.0 kg",
-                    "殘尿約 65 mL", "不反射性", "腎臟", "90/55", "四肢冰冷"):
+                    "殘尿約 65 mL", "反射性補 saline", "腎臟", "90/55", "四肢冰冷"):
             with self.subTest(cue=cue):
                 self.assertIn(cue, section)
         self.assertNotIn("假設查房時發現", section)
