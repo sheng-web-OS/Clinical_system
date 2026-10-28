@@ -219,7 +219,7 @@ new file mode 100644
 +
 +**Pocket Medicine 9E**，PLEURAL EFFUSION，PDF p94–96：p95的Light/Three-Test並列、p96液體特徵表明註not diagnostic criteria。原頁作來源對讀，公網不重製書頁；臨床分流以具體指南適用條件判讀。
 +
-+* A practical approach to pseudoexudative pleural effusions*, Respir Med 2023，[PMID37172787](https://pubmed.ncbi.nlm.nih.gov/37172787/)。Albumin梯度需結合前測機率、治療反應及其他病因，不是排除感染或腫瘤的保證。
++*A practical approach to pseudoexudative pleural effusions*, Respir Med 2023，[PMID37172787](https://pubmed.ncbi.nlm.nih.gov/37172787/)。Albumin梯度需結合前測機率、治療反應及其他病因，不是排除感染或腫瘤的保證。
 +
 +## 官方真題與最終計分
 +
@@ -339,11 +339,11 @@ diff --git a/audit/editorial-semantic-reviews.json b/audit/editorial-semantic-re
 +    },
 +    "content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md": {
 +      "content_blob": "eb5b2bfd6eb9bf7f732b52db9800de646c017bde",
-+      "reviewer_context": "UNREVIEWED",
-+      "reviewer_reference": "",
++      "reviewer_context": "independent_ai_pass",
++      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/188#issuecomment-6460028638",
 +      "core_reader_question": "Why can pneumonia symptoms improve while a loculated effusion enlarges, and which independent evidence warrants aspiration, exudate classification, or drainage?",
 +      "new_understanding": "Real 56M Day3/Day5 observations + pre-sampling antibiotics; Light's classification vs BTS nonpurulent infection decision vs safe procedural window; case action not guideline or efficacy proof.",
-+      "strongest_counterargument": "A long article risks conflating the published patient's normal Day5 pH with universal drain indication; explicitly retained author-specific timeline and BTS footnote boundaries counter this, but original BTS figure pixels are still a mandatory unverified source.",
++      "strongest_counterargument": "A single Cureus case cannot establish drainage or tPA/DNase efficacy; Day5 pH7.42 and culture negativity after antibiotics do not yield a universal drainage rule. The BTS 2023 original Appendix1 p5 has been independently visually checked, including high-pH septation footnote and LDH >=900 flowchart versus >900 table. This educational candidate is not a clinical order set; no human clinical signoff or measured learning outcomes.",
 +      "epqc_scores": {
 +        "A": 4,
 +        "B": 4,

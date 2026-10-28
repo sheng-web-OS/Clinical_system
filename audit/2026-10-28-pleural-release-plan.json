@@ -1,7 +1,7 @@
 {
   "schema": "PLEURAL_PRIVATE_PUBLICATION_PROPOSAL_V1",
   "pr": 188,
-  "state": "UNAPPROVED_FINAL_NAVIGATION_AND_SOURCE_PAGE_REVIEW",
+  "state": "INDEPENDENT_REVIEW_SIGNED_PRIVATE_PREFLIGHT_REQUIRED",
   "base_article_blob": "140b4d37431301218f70162a44e54d768590475e",
   "proposed_article_blob": "eb5b2bfd6eb9bf7f732b52db9800de646c017bde",
   "proposed_article_path": "content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md",
@@ -12,6 +12,9 @@
   "previous_review": "audit/2026-10-28-pleural-independent-review-188.json#review_round_2 AND #source_figure_review_round_3",
   "requested_distinct_review": "Extract proposed new article and source Markdown from unified patch; independently verify proposed Git blob eb5b2bfd6eb9bf7f732b52db9800de646c017bde, compare all51 paragraph IDs and existing KEEP judgments, assess the short new source navigation and source page/3 exam mappings. Semantic role labels are an explicit enum normalization of existing reviewer_original_role; verdict, gain, and nonredundancy were preserved, not newly fabricated.",
   "receipt_action": "If genuinely acceptable, write audit/2026-10-28-pleural-publication-receipt.json as the proposed PUBLIC-path semantic receipt with content_blob eb5b..., reviewer_context independent_ai_pass, your real execution/reference, all51 real judgments and allowed roles. You may reuse same-ID prior independent notes only after confirming unchanged context. Update strongest_counterargument to acknowledge separately resolved BTS visual gap, without claiming human review or reader outcomes. Do not put it into the global registry yet.",
-  "fail_closed": "Current patch receipt is UNREVIEWED with empty reference and must fail release eligibility. Writer cannot turn this into PASS. Root will insert only the actual distinct-reviewer's signed metadata into this same patch then rerun whole preflight.",
-  "gates": "No main merge/deploy or real publication catalog write. Temporary CI must build candidate, check figure/semantic/source links and 24 real compiled reader/source/exam views. Final #188 release authorization remains required."
+  "fail_closed": "Actual distinct review signed exact proposed article eb5b and all51 units. It is inserted in this patch only; global registry/catalog unchanged. Full disposable private preflight still mandatory.",
+  "gates": "No main merge/deploy or real publication catalog write. Temporary CI must build candidate, check figure/semantic/source links and 24 real compiled reader/source/exam views. Final #188 release authorization remains required.",
+  "independent_receipt": "audit/2026-10-28-pleural-publication-receipt.json",
+  "independent_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/188#issuecomment-6460028638",
+  "source_only_cleanup": "Reviewer nonblocking P2: remove erroneous space following opening emphasis marker in pseudoexudate bibliography; all URLs, words and clinical article unchanged."
 }
