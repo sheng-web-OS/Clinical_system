@@ -1171,6 +1171,33 @@
           "teaching_role": "原表讓讀者核對 C2 3:Harm、C3 2b、D 2b、E1／E2 不同再灌流術式的 COR/LOE，尤其 E2 N/A 與 No Benefit 的區分直接改變介入風險判斷。",
           "scope_limit": "Table 7 反映發布時的證據與分類，不能將 N/A 解讀為絕對禁忌、將 Class 3 No Benefit 等同 Harm，亦不能將後續 2026 導管試驗倒填到原指引。",
           "why_link_instead": "原始推薦表與細節註腳已逐欄比對；只使用來源頁的精確文字定位及官方網頁連結，讀者可開啟全文查核，公開站不複製原表像素。"
+        },
+        {
+          "locator": "Creager et al, 2026 AHA/ACC acute PE full guideline, Figure 1 Clinical Evaluation of Patients With Suspected Acute PE, original JACC article §3.1",
+          "source_token": "Figure 1",
+          "mode": "illustrated",
+          "anchor": "pe-suspected-diagnosis",
+          "caption_token": "Figure 1",
+          "teaching_role": "以實際分叉而非數值分類描繪 PERC、D-dimer、影像各自的檢前機率適用條件，並獨立標出急危處置與確診同步的例外。",
+          "scope_limit": "原創圖不是原始完整 diagnostic algorithm，不能取代全部 YEARS、PERC 前提、妊娠或抗凝禁忌；不呈現單一固定醫囑。"
+        },
+        {
+          "locator": "AHA/ACC official 2026 PE clinical categories Figure 2, C1 C2 C3 RV/biomarker, D1 D2 hypoperfusion and respiratory modifier R",
+          "source_token": "Figure 2",
+          "mode": "illustrated",
+          "anchor": "pe-category-domains",
+          "caption_token": "Figure 2",
+          "teaching_role": "把 A/B 的基線分流、C 的 RV 生理／biomarker、D/E 灌流與 R 呼吸負擔分成平行觀察面向，讓讀者明確看到每項 evidence 改變的是哪一種風險。",
+          "scope_limit": "官方圖的 A–E 視覺嚴重度不是每人必經的時間階段，D2 不由乳酸或單次血壓決定；原創結構不是官方圖像複製。"
+        },
+        {
+          "locator": "Creager et al 2026 AHA/ACC guideline, Figure 3 Initial Assessment and Management by AHA/ACC Acute PE Clinical Categories; Table 7 advanced therapies",
+          "source_token": "Figure 3",
+          "mode": "illustrated",
+          "anchor": "pe-treatment-decision",
+          "caption_token": "Figure 3",
+          "teaching_role": "讓讀者看見抗凝作為共同基礎、出院安全、RV 觀察與 D/E 失代償的不同處置問題，再以 E2 N/A／No Benefit 和 C2 Harm 顯示分類不等於一律介入。",
+          "scope_limit": "本圖不能代替 Figure 3 所有 COR class 及 Table 7 的逐術式條件，也不能從模態類別給個別病人設置 thrombolysis 或 ECMO 醫囑。"
         }
       ]
     },
@@ -1213,6 +1240,58 @@
           "teaching_role": "原圖用三條並行支線說明 fluid、insulin、potassium 的條件關係，補糖不是治癒，補鉀時機會改變安全用藥。",
           "scope_limit": "原流程圖依腎功能、血鉀、循環與當地 protocol 調整；不能把任何劑量當作所有病人的醫囑。",
           "why_link_instead": "引導讀者合法進入已公開的原始專家共識流程圖，不把第三方治療算法截圖重新出版。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/cticu-abg-03-sources.md",
+      "reviewed_on": "2026-10-29",
+      "review_type": "independent_ai_source_figure_review_not_physician_or_production",
+      "items": [
+        {
+          "locator": "Chuah CS et al. 2013 J Cardiothorac Surg 8:184, original Table 3 and Figures 1–3; CABG n55 on-pump group means before, after CABG, next morning",
+          "source_token": "Table 3 原始表格",
+          "mode": "illustrated",
+          "anchor": "cticu-abg-03-cohort-trends",
+          "caption_token": "Chuah 2013",
+          "teaching_role": "並排呈現七個原研究群體平均的三時點數值與升降方向；讀者辨識 Cl、SID、BE 的酸化訊號可與 PaCO2、H+ 的結果不同步，而不能把一項血氣當作病因標籤。",
+          "scope_limit": "原創數值卡不是原作者的連續折線或個體病程，也不提供各時點配對分布、albumin/lactate 實測或治療有效性；箭頭不表示幅度，須開啟表格或原尺寸 SVG 閱讀精確數值。"
+        },
+        {
+          "locator": "Chuah CS et al. 2013 original publisher Table 3, pre/post/next-morning group results and study-specific SID = Na + K - Cl",
+          "source_token": "Table 3 原始表格",
+          "mode": "source_link",
+          "url": "https://link.springer.com/article/10.1186/1749-8090-8-184/tables/3",
+          "teaching_role": "讓讀者直接核對每一群體採樣時間、單位與統計註腳，避免把作者原表的組平均當成一名患者的連續 paired ABG 或自行補算 AG。",
+          "scope_limit": "原 Table 3 的研究設計並非 prime 隨機介入比較，且沒有患者乳酸與白蛋白資料；原表不能提供個別治療處方。",
+          "why_link_instead": "原表具有原始統計資訊和註腳，本站提供出版社官方連結並以原創指標方向圖補足教學，不必複製原研究的全部圖像像素。"
+        }
+      ]
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/cticu-abg-04-sources.md",
+      "reviewed_on": "2026-10-29",
+      "review_type": "independent_ai_source_figure_review_not_physician_or_production",
+      "items": [
+        {
+          "locator": "2024 EACTS/EACTAIC/EBCP guideline adult CPB, §10.3 Recommendation Table 52, official printed pp58–59, alpha-stat class IIa level B in high-moderate hypothermia",
+          "source_token": "Recommendation Table 52",
+          "mode": "illustrated",
+          "anchor": "cticu-abg-04-measurement-decision",
+          "caption_token": "high-moderate hypothermia",
+          "teaching_role": "把同一管血的 37°C 量測、病人溫度校正、兩種互相替代 CO₂ 調整策略及腦循環後果分層呈現，幫讀者避開『切換顯示等於治療』及『alpha→pH 順序』的重大混淆。",
+          "scope_limit": "原創因果圖不是原官方 Table 52 或兩份實測 ABG，也未證實每位 DHCA、兒童或主動脈弓患者的最佳策略；腦血流改變不等於臨床神經預後必然改善。"
+        },
+        {
+          "locator": "Wahba et al. 2024 EACTS/EACTAIC/EBCP adult CPB guideline §10.3 Recommendation Table 52, recommendation grade and source references",
+          "source_token": "Recommendation Table 52",
+          "mode": "source_link",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11826095/",
+          "teaching_role": "可直接核對成人 high-moderate hypothermia 的 alpha-stat IIa/B 原始建議、Recommendation Table 52 的 footnotes 和文獻，避免把 guideline 當成適用所有 DHCA/pediatric 的一級命令。",
+          "scope_limit": "Table 52 規範成人特定低溫範圍，不能由此替代個別患者、術式及腦灌流監測；原始 RCT 全文表圖未於本輪全面取得。",
+          "why_link_instead": "出版商的 CC BY-NC-ND 條件和網站公開使用情境尚未完成第三方原圖重製權利認定，故以官方全文及原表連結保留可核查性，站內只使用自行設計的機轉圖。"
         }
       ]
     },
