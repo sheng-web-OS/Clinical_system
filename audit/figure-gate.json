@@ -1224,7 +1224,7 @@
       "items": [
         {
           "locator": "Chuah CS et al. 2013 J Cardiothorac Surg 8:184, original Table 3 and Figures 1–3; CABG n55 on-pump group means before, after CABG, next morning",
-          "source_token": "Table 3",
+          "source_token": "Table 3 原始表格",
           "mode": "illustrated",
           "anchor": "cticu-abg-03-cohort-trends",
           "caption_token": "Chuah 2013",
@@ -1233,7 +1233,7 @@
         },
         {
           "locator": "Chuah CS et al. 2013 original publisher Table 3, pre/post/next-morning group results and study-specific SID = Na + K - Cl",
-          "source_token": "Table 3",
+          "source_token": "Table 3 原始表格",
           "mode": "source_link",
           "url": "https://link.springer.com/article/10.1186/1749-8090-8-184/tables/3",
           "teaching_role": "讓讀者直接核對每一群體採樣時間、單位與統計註腳，避免把作者原表的組平均當成一名患者的連續 paired ABG 或自行補算 AG。",
