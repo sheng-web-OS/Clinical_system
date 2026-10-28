@@ -18,4 +18,4 @@ Figure 1 比較首次 EDTA platelet **103 × 10⁹/L**、約 20 日後 EDTA **77
 
 [2013 年 K-EDTA 交叉污染病例全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3900060/)：對照未污染與受污染檢體，後者 K **8.5 mmol/L**、總 Ca **1.48 mmol/L**、游離 Ca **0.15 mmol/L**；同位患者其他標本 K **4.8 mmol/L**、總 Ca **2.36 mmol/L**。此病例能揭示 EDTA 攜帶 K 與螯合 Ca 的機轉；不能單憑「K 高 Ca 低」就宣稱每個患者都受 EDTA 污染。其他採檢干擾可參閱 [Shean 等，IV fluid contamination 綜述](https://jlpm.amegroups.org/article/view/10562/html)、[ICSH 凝血管採樣建議](https://onlinelibrary.wiley.com/doi/10.1111/ijlh.13584)與[凝血檢體處理建議](https://onlinelibrary.wiley.com/doi/10.1111/ijlh.13702)。
 
-[回到 Lab 02 主文](2026-10-27-lab-medicine-specimen-artifacts.md)。
+[回到 Lab 02 主文](lessons/2026-10-27-lab-medicine-specimen-artifacts.md)。
