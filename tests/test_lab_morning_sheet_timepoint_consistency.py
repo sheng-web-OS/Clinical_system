@@ -8,7 +8,7 @@ SOURCES=ROOT/"content/xiaoma-internal-medicine/lab-morning-sheet-sources.md"
 class LabMorningSheetTimepointContract(unittest.TestCase):
     def test_real_case_a_to_d_are_reported_with_method_not_conflated(self):
         t=ARTICLE.read_text(encoding="utf-8")
-        for cue in ("Sample","12:00","20:03","20:48","23:37","plasma","Pneumatic tube","步行","30 分鐘"):
+        for cue in ("A／12:00","B／20:03","C／20:48","D／23:37","12:00","20:03","20:48","23:37","plasma","氣送管","步行","30 分鐘"):
             with self.subTest(cue=cue):
                 self.assertIn(cue,t)
         self.assertNotIn("| 項目（單位） |",t)

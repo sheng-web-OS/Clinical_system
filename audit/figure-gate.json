@@ -1048,7 +1048,7 @@
           "source_token": "PMC11462689",
           "mode": "illustrated",
           "anchor": "lab-three-clocks",
-          "caption_token": "三條不混同的證據線",
+          "caption_token": "Cao，2024",
           "teaching_role": "以 AML A-D 12:00,20:03,20:48,23:37 K3.0/6.7/7.8/3.6 的運送/分析/治療交叉時間軸呈現不同條件無法直接做因果比較；另外把2025所篩當日重抽 n=2440 →1576/864→597/267 明畫不同分母，讓讀者不誤稱35%為所有急診假高鉀盛行率，n66低風險研究不混入此分母。",
           "scope_limit": "兩組自製視覺均為原始已出版資料的研究導讀，不重製原期刊 Figure2 或 Table1 版面；AML 的 post-treatment K3.6 不能當未治療對照，n2440 是 selection sample、n66 是另一項排除高風險研究；皆非 validated clinical decision rule。"
         }
