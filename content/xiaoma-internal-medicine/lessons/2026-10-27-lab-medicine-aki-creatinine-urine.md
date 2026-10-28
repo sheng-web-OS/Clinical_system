@@ -82,6 +82,10 @@ NICE NG148 對 AKI 原因不明或有泌尿道阻塞風險者，建議安排緊�
 
 原來的 AKI 可能因解除阻塞而改善，卻不是「尿變多就等於腎臟已恢復正常」；此時還要考慮低血容量、低血壓與 Na/K/Mg/磷的變化。觀察尿量曲線、生命徵象、體重和電解質，才能區分恢復性多尿與持續性損失。沒有可靠的即時容量與電解質資料，不該從本病例反推每個病人的固定補液比例。
 
+更值得在這名病人身上追問的是**血鈉**：入院時 Na 僅 **120 mmol/L**，而阻塞解除後的日尿量達 **6,170 mL**。如果其中有大量低張尿液流失，體內水分相對鈉減少，血鈉可能迅速上升；這與腎功能是否改善是兩條不同的觀察軸。過去已有尿滯留患者在導尿後出現明顯水利尿及血鈉自動快速校正的病例報告。[10] 所以此處不能只說「尿多代表成功引流」，還必須把**連續血鈉測量、尿量及流失液性質**放進當下安全評估。若低鈉屬慢性或病程不明，快速上升尤其涉及滲透性脫髓鞘的風險；介入及監測應依個別危險因子與現行低血鈉處理指引判斷。[11]
+
+然而，**此患者有沒有真的發生血鈉過度校正，目前不能確認**：原病例 Table 1 對 12/12 記載 Na 130 mmol/L，Table 3 同日卻是 141 mmol/L，也沒有足以重建逐 24 小時校正幅度的連續檢驗時間戳。不能用「120 到 141」的跨日期端點直接宣稱校正太快，更不能捏造曾使用 desmopressin 或低張輸液。病例提示我們該監測什麼，而不是證明所有風險都在此人身上發生。
+
 這個轉折也解釋為什麼 AKI 追蹤不能只用同一個 endpoint：**creatinine 變好、尿量變多、灌流安全、電解質穩定，分別回答不同的問題。**
 
 ## 05｜尿液檢查能把競爭機轉縮小到哪裡？
@@ -188,5 +192,9 @@ KDIGO 2012 原始 [Figure 4（印刷 p.25）](https://kdigo.org/wp-content/uploa
 [8] [Kundavaram et al. *Bland Urine Sediment in a Child with Acute Kidney Injury*. J Lab Physicians. 2023](https://jlabphy.org/bland-urine-sediment-in-a-child-with-acute-kidney-injury/)：初期正常沉渣與後續腎切片確認病變的反例。
 
 [9] [Varghese et al. *Concomitant Identification of Muddy Brown Granular Casts and Low Fractional Excretion of Urinary Sodium in AKI*. Kidney360. 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9136894/)：270 人具同期 FENa／尿沉渣資料，特定選樣條件下有 50/133 的 MBGC 同時 FENa <1%。
+
+[10] [van der Bilt & Alsma, *Hyponatraemia caused by transient syndrome of inappropriate antidiuresis to urinary retention*. Intern Med J. 2023](https://pubmed.ncbi.nlm.nih.gov/36822611/)：三例尿滯留相關低鈉血症，置入導尿管後有 brisk diuresis 和部分病例血鈉過快自動校正；是不同患者的病例系列，非 Chen 個案觀察。
+
+[11] [European Clinical Practice Guideline on Hyponatraemia（2014，原始正式文本）](https://academic.oup.com/ejendo/article/170/3/G1/6668028)：慢性／病程不明低鈉血症在校正過程中的安全限度與監測。適用條件取決於低鈉嚴重度、症狀和風險，不由 Chen 的矛盾端點反推治療。
 
 這篇文章用於理解檢驗的測量意義與臨床證據如何更新判斷。真正的採檢、影像、輸液、導尿和腎臟替代治療，仍須依患者即時風險、醫院流程及具資格團隊判斷。
