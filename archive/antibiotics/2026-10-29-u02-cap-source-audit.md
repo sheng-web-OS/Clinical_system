@@ -2,7 +2,7 @@
 
 **Reader-facing manuscript:** `content/xiaoma-internal-medicine/lessons/2026-10-29-antibiotics-cap-coverage-reassessment.md`
 
-**Status:** author-produced draft and source cross-check only. NOT independently medically reviewed, NOT in `site/pages.json`, NOT deployed, NOT_ORDER_READY. This record is not an AI self-issued release certificate.
+**Status:** author-revised release candidate; listed in the PR branch `site/pages.json` for private build/QA, **NOT in main or production**. No independent full-article medical or EPQC semantic review, NOT_ORDER_READY. This record is not an AI self-issued release certificate.
 
 ## Prewrite question–evidence feasibility
 
@@ -84,3 +84,17 @@ Release gate, latest CI: workflow `40739769104` (exact PR head `11cd6f69e71e3341
 - Directly rechecked Spretz 2024 official case PDF p3: original discharge text reports levofloxacin **750 mg every 48 hours (renally dosed)** and discharge creatinine ~**1.80 mg/dL**. The article now uses these *documented facts only* to bridge pathogen activity vs drug exposure and the need to examine renal elimination; no claim that the regimen is verified for all patients or that serum creatinine alone validates a dosing interval. Weight, CrCl and the relevant local formulary remain unverified. **NOT_ORDER_READY**.
 - Jasper 21-study systematic review has total 3,525 patients while the mortality groups reported 104/1,512 and 133/1,790; the article now explicitly tells readers that total enrollment is not the denominator for that outcome. Evidence source: https://pmc.ncbi.nlm.nih.gov/articles/PMC8315122/ .
 - PR #210 moved from Draft to **Ready for review**, only as a request for a distinct reviewer; **not a release approval**. Tried GitHub REST Copilot reviewer names `copilot-pull-request-reviewer[bot]` and `copilot`, but live requested_reviewers and completed reviews remained empty. No independent AI/human reviewer result exists. Semantic gate continues HOLD. No merge performed; main and Cloudflare production untouched. Do not turn authored prose or GH reviewer request into a fabricated review receipt.
+
+## 2026-10-29 context-first narrative rework — author-side record, HOLD
+
+At article blob `6b4386551461cd2d82219d3a9f0b66b167eaf30b` (check current HEAD before review), the entire public **three questions** and narrative were rewritten in place, without moving U01 or claiming any new case facts. New sequence: **admission symptoms/PE/labs → why empiric ceftriaxone + azithromycin before organism identification → day 1–3 failure to wean O2 and competing mechanisms with their distinct discriminating observations → CT and its non-diagnostic limits → day 4 household standing water history and Legionella UAT → pharmacology, host exposure/renal function, alternative-drug comparison studies → post-identification de-escalation and clinical stability → exact patient return**.
+
+Key author-side defects specifically corrected:
+- Replaced original tabular list of four possibilities with a *continuous, evidence-driven* account of unresolved inflammation, antimicrobial activity/exposure, source-control complications, and competing diagnoses. No assumption that all were formally investigated in the original record.
+- **Case note did not specify which contemporaneous antibiotic was stopped when cefepime broadened coverage**. The new text says broadened *to cefepime*, never claims cefepime monotherapy or known Pseudomonas infection.
+- Original CXR Fig 1 remains in arrival evidence position, with HTML-native figcaption; original CT Fig 2 is now linked from the **day 3 decision** paragraph instead of only from initial image caption.
+- CURB-65=2 remains attributed to actual case; original admission Table 1 lacked urea/BUN so no independent score reconstruction. The discharge 10-day total levofloxacin was an instruction/plan, not independently proven completed course; terminology fixed.
+- Jasper comparative meta-analysis total N 3,525 is distinct from 3,302 with mortality reporting; added **ICU-specific** OR 1.27 [95% CI 0.18–9.01] with wide uncertainty (original Figure 3). Kato and Ruiz-Spinelli differences retain inclusion/design and unresolved direction caveats. References: https://academic.oup.com/cid/article/72/11/1979/5820714 and https://pubmed.ncbi.nlm.nih.gov/37730517/.
+- CDC 2026 paired UAT + lower respiratory culture/molecular, source: https://www.cdc.gov/legionella/php/laboratories/index.html; treatment guideline short-course Legionella caveat: https://academic.oup.com/ajrccm/article/212/1/24/8435770.
+
+**No independent author-separated reviewer verdict or semantic receipt is implied**. Outstanding: true independent A–G full paragraph EPQC, medical safety review (particularly severe subgroup evidence interpretation, renal dosing boundaries, alternative infectious source), exact-blob private receipt, exact-head CI + four-width U02 visual, merge & Cloudflare production SHA + HTTPS. If current article changes, any old review packet becomes stale. Avoid redrafting every time; first complete the single reviewer gate.
