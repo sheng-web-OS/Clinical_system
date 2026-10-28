@@ -76,6 +76,12 @@ ESBL 是能水解部分延伸型 β-lactam 的酵素機轉；菌株往往還可�
 
 依 [IDSA 2025 cUTI](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections)，經驗性治療的四個考量是嚴重度、既往抗藥菌或抗菌藥暴露、個人禁忌與交互作用，以及有 sepsis 時適用的**當院、近期、相近人群** antibiogram。這些是有條件的建議，**不是允許把美國指南或本站教材當成臺灣院內可直接複製的第一劑醫囑**。
 
+### 回到原始指引圖表：這不是四張醫囑表
+
+想追查「哪個證據出現後才足以改變討論」，請由出版者的原圖閱讀而不是只抄結論：[IDSA 2025 cUTI **Figure 1.1**：經驗性選藥四步流程](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf)；[**Table 1.1**：尚未套用個人條件前的候選藥物類別](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf)。兩者分工不同：表格列出**可能的選項**，流程則要求先核對嚴重程度、舊菌株及患者限制；缺少本院 antibiogram 就不能把模型中 90%／80% 的參考值寫成院內真實敏感率。
+
+另外，[**Figure 1.2**：臨床改善與未改善時，是否可討論 IV-to-oral](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-2-figure-1.2.pdf)，以及 [**Figure 1.3**：療程與臨床反應的條件分支](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-3-figure-1.3..pdf)，處理的是**之後已有新資訊的另一個時點**。它們不能回頭證明初始 ceftriaxone 在 28F 病例有效，更不代表感染性阻塞尚未解除、休克未穩定者都可以直接改口服或套固定短療程。以上只提供原圖入口與適用界線，不翻印原圖，也不宣稱已完成本輪圖表註腳的獨立核驗。
+
 ### 反事實練習｜辨認證據缺口，不模擬簽核醫囑
 
 **以下病例為人工合成，並非發表病例；只測試辨認資訊不足的能力。** 想像一名 68 歲男性有 CKD、既往 ESBL 尿培養、發燒與疑似阻塞，BP 92/56（粗估 **MAP 約 68 mmHg**），兩週前 Cr 1.3、現在 2.0 mg/dL。這兩筆 Cr **尚不足以單憑兩筆數值確認 KDIGO AKI** 的時間窗；既往尿培亦不等於本次 AST。真正臨床上若病人不穩，不能因等待教育題目的完整定義而延遲求援、急症評估及源控制。此練習不提出 meropenem 或其他藥的可執行處方，也不要求讀者判斷劑量；需要額外資訊的是既往 AST、當次培養、過敏反應、腎功能動態、解剖影像與當院處方規範。
