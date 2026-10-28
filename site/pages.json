@@ -3416,5 +3416,52 @@
     "section": "參考資料",
     "navigation": false,
     "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-pneumothorax-mechanism-decisions.md",
+    "output": "xiaoma-20261028-pneumothorax.html",
+    "title": "氣胸：肺為什麼會回縮？為什麼不是每一個氣胸都要放胸管？",
+    "subtitle": "從胸膜腔壓力、危急分流、觀察與抽氣，到 VATS 與月經相關氣胸",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-pneumothorax-sources.html",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 47,
+        "question_heading": "112 年第二次・醫學（三）第 47 題｜胸腔超音波能看見什麼？",
+        "concept_heading": "三、影像證明氣胸；臨床決定有多急；病史決定下一步找什麼",
+        "topic": "胸腔超音波診斷氣胸的能力與侷限",
+        "focus": "超音波先看胸膜與橫膈運動，不能把深部肺門當作同樣可及。"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "question_heading": "115 年第一次・醫學（三）第 49 題｜縱膈影像的盲點",
+        "concept_heading": "三、影像證明氣胸；臨床決定有多急；病史決定下一步找什麼",
+        "topic": "POCUS 胸膜與縱膈病灶判斷",
+        "focus": "胸膜滑動的肺表層徵象不能推論能可靠診斷縱膈淋巴結。"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pneumothorax-sources.md",
+    "output": "xiaoma-pneumothorax-sources.html",
+    "title": "氣胸教材｜指南、研究與病例來源",
+    "subtitle": "BTS／ERS 指南、原始 RCT、真實病例與正式國考核對",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
   }
 ]
