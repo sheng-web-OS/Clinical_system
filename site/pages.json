@@ -3559,5 +3559,88 @@
     "section": "參考資料",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-eudka-real-case.md",
+    "output": "xiaoma-20261029-eudka-real-case.html",
+    "title": "血糖只有 153 mg/dL，為什麼酮酸中毒已經危及生命？",
+    "subtitle": "一位真實 euDKA 病人，從競爭機轉、β-OHB 與 Winter 代償，到 insulin、葡萄糖、鉀與危機解除",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "內分泌與急重症",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-eudka-case-guideline-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 56,
+        "focus": "辨認 DKA 治療 insulin 的持續輸注與高危單次 1 U/kg bolus 之差，串起補液、dextrose、血鉀安全與終止產酮。",
+        "concept_heading": "為何要同時補液、給 insulin，甚至在血糖不高時補 glucose？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/eudka-case-guideline-sources.md",
+    "output": "xiaoma-eudka-case-guideline-sources.html",
+    "title": "正常血糖酮酸中毒｜原始病例與指引圖表",
+    "subtitle": "Cai 2026 病例時間軸、2024/2026 共識與 114-1 醫學（三）Q56 官方原卷",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md",
+    "output": "xiaoma-20261029-cticu-abg-03-cpb-acidbase.html",
+    "title": "離開 CPB 後 HCO₃⁻ 降低：為什麼不能直接診斷 lactic acidosis？",
+    "subtitle": "從真實 CABG 群體數據與 Bartter 病例，分辨 chloride、SID、未測陰離子與通氣的競爭機轉",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "references": "xiaoma-cticu-abg-03-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-abg-03-sources.md",
+    "output": "xiaoma-cticu-abg-03-sources.html",
+    "title": "CPB 術後酸鹼變化｜原始研究與圖表來源",
+    "subtitle": "Chuah 2013 群體 Table 3、Protos 2024 真實病例、指南與授權查核",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md",
+    "output": "xiaoma-20261029-cticu-abg-04-alphastat-phstat.html",
+    "title": "低溫 CPB 的同一份血氣：alpha-stat 與 pH-stat 為什麼導向不同 CO₂ 管理？",
+    "subtitle": "從量測溫度與真正的氧合器 CO₂ 介入，理解腦循環與成人指南證據界線",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "references": "xiaoma-cticu-abg-04-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-abg-04-sources.md",
+    "output": "xiaoma-cticu-abg-04-sources.html",
+    "title": "低溫 CPB 血氣管理｜指南與原始研究查核",
+    "subtitle": "Patel、Murkin 成人 CABG RCT，2024 CPB Recommendation Table 52 與原圖授權",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false,
+    "review": "source_audit"
   }
 ]

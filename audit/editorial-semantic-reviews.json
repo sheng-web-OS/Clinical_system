@@ -6433,12 +6433,12 @@
       }
     },
     "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md": {
-      "content_blob": "6e4102de66c0c0debcce21900bfc8606d9f32d78",
+      "content_blob": "d98fac13a3ccfda337438db25b857250d77b11e0",
       "reviewer_context": "independent_ai_pass",
-      "reviewer_reference": "clinical-os-hourly-automation:2026-10-29T01:23+08:00:PR207:58unit-delta-reviewed-source-navigation",
-      "core_reader_question": "確診肺栓塞後，如何不把PESI、RV損傷、正常血壓下的低灌流與呼吸衰竭混成單一嚴重度，並據此選擇安全的抗凝、監測和再灌流策略？",
-      "new_understanding": "從血栓造成V/Q失衡、RV後負荷與交感代償開始，讀者能區分診斷前Wells與確診後PESI、Hestia出院適用性、A–E/R生理分類，並以2026 Table 7的C2 Harm與E2 No Benefit/N/A邊界及Gutgold真實病例解釋證據如何改變檢查與處置。 新增專屬來源頁導覽，使讀者能逐圖回查Figure 2與Table 7的原始定位、推薦等級及權利邊界。",
-      "strongest_counterargument": "本次新增的是一段來源導航而非新的臨床證據，可能與後方參考文獻重疊；逐段核對後，新增頁補足原圖與原表精確定位，且未更動原57段病程、評分或治療主張。完整CI與手機四寬仍需分開驗收。",
+      "reviewer_reference": "clinical-os-hourly-independent-review:2026-10-29T02:20+08:00:PR212:58-unchanged-units-plus-3-figures",
+      "core_reader_question": "在尚未確診或已確診肺栓塞時，如何讓讀者直接看見檢前機率診斷分支、A–E與R的不同臨床軸，以及抗凝、監測、PERT與再灌流風險如何依灌流證據改變？",
+      "new_understanding": "本次獨立對照原58段與新稿：移除新增三個原創figure後正文與已審舊blob完全一致，58段既有角色／讀者收益／非冗餘理由逐項維持成立。新Figure01使低機率PERC全陰性停止、任一陽性或不適用轉D-dimer／適當影像、高機率直接影像與危急同步支持可視；Figure02固定C3的RV與biomarker而改變R，另以可信PE相關低灌流重新評估D2，不把A–E當必經病程；Figure03顯示C–E PERT共同節點、灌流穩定與惡化的處置分叉，保留C2溶栓Harm、E2導管/MT N/A及E2未用機械支持者外科相對其他進階治療短期死亡率No Benefit的不同範圍。官方Figure2 PDF已目視，Figure1/3與Table7以官方全文文字/註腳和原圖公開轉載畫面交叉核對；本站僅原創HTML/CSS與官方連結，不重製原像素。",
+      "strongest_counterargument": "三圖新增後可能只是把既有分類表變成較長的卡片、增加手機閱讀負擔；逐圖不看figcaption檢驗顯示PERC陽性分叉、C3對C3R與D2反事實、C類穩定與D/E低灌流升級均具原文字表難以一眼看見的關係，且未製造必然進展箭頭。限制：官方Figure1/3完整出版像素未由官方下載逐頁核驗，已以指南原始文字/圖註及公開原圖影像交叉查對；375px CI圖截含鍵盤聚焦skip-link疊層（CSS僅focus顯示），後續正式讀者QA仍須補無焦點正常畫面、深色模式及公網實讀，不能以本semantic票據替代。",
       "epqc_scores": {
         "A": 4,
         "B": 4,
@@ -6919,6 +6919,1052 @@
           "verdict": "keep",
           "excerpt_for_editor": "原始圖表與研究的詳細來源對讀 提供 2026 官方 Figure 2／Table 7 的精確定位及治療推薦的適用邊界；原圖由學會原始入口閱讀，本站不重製受保護圖像。",
           "line_for_editor": 183
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-eudka-real-case.md": {
+      "content_blob": "9dc747c029d2a0654da956838ab44a79d66cf7ad",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "independent-hourly-review:2026-10-29T01:47+08:00:PR199:46unit:primary-case-2024-2026-MOEX",
+      "core_reader_question": "40歲糖尿病患者血糖只有153 mg/dL，如何由嘔吐、嗜睡、血氣與β-OHB辨認危險euDKA，確認呼吸代償，並以輸液、insulin、dextrose及鉀的時間趨勢安全解除危機？",
+      "new_understanding": "同一真實病例的入院、24與72小時數據證明血糖下降與產酮停止不是同一件事；以D/K/A與Winter判讀連結診斷、混合呼吸性酸化風險、補鉀先決條件、含糖輸液支持胰島素及靜脈與動脈pH不同的終止證據身分，並用四個反事實測試遷移。",
+      "strongest_counterargument": "文章可能只是把既有酸鹼、利尿與DKA指引重述，且原病例單一藥物歸因過強、Table2 moderate標籤與HCO3矛盾。逐段核對後，本篇獨特價值在同一患者的連續生化證據和三個互相制約的治療瓶頸；明確保留作者因果限制、creatinine單位疑點、Winter混合酸鹼風險及venous/arterial差異，沒有重製原圖。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "d7122fdfe45cee22c5-1": {
+          "role": "case_evidence",
+          "reader_gain": "以153血糖對照pH7.043與酮體5.6，立刻顯出血糖不能反映酸中毒危險。",
+          "nonredundancy_reason": "沒有這個同時點的數值反差，後續正常血糖DKA診斷問題就缺乏具體病人起點。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一位剛開始使用糖尿病藥物的女性，四天後因為嘔吐、進食困難和嗜睡被送到急診。血糖只有 153 mg/dL，與常見「血糖四、五百」的 DKA 印象完全不同。但她的 pH 已降至 7.043、碳酸氫根只有 6.5 mmol/L，血中 β-hydroxybutyrate 升至 5.6 mmol/L",
+          "line_for_editor": 3
+        },
+        "29bfd7550611355462-1": {
+          "role": "safety",
+          "reader_gain": "指出只依血糖分流可能延誤血酮與血氣檢查，連結症狀與危險漏診。",
+          "nonredundancy_reason": "這段把開場的數字反差轉成急診漏診後果，不能由單純病例數值代替。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果急診只把血糖視為是否需要查酮體的開關，這個病人可能先被當作腸胃炎或藥物引起的噁心；等到呼吸、循環或意識惡化，才發現真正持續產生酸的機轉還沒停止。",
+          "line_for_editor": 5
+        },
+        "37672b1d06745d899c-1": {
+          "role": "orientation",
+          "reader_gain": "分清血糖、相對胰島素作用與酮酸負荷三軸，確立後續治療和重評問題。",
+          "nonredundancy_reason": "刪掉三軸框架會讓葡萄糖、胰島素及酮體各節看似互不相干的處置。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個病例讓我們先分開三件看似同一個問題、其實不相等的事：血糖有多高，細胞是否處於相對胰島素不足的狀態，以及有多少酮酸正累積在血液裡。 治療也必須依這三條軸線分別驗證。以下沿 2026 年發表的 Cai、Fu、Tan 病例與 2024 年跨學會共識，重建診斷到危機解除的因果路徑。",
+          "line_for_editor": 7
+        },
+        "f618ff52e656467120-1": {
+          "role": "case_evidence",
+          "reader_gain": "交代新發糖尿病、三藥起始、嘔吐禁食與就醫生命徵象的實際時間順序。",
+          "nonredundancy_reason": "病史是推定誘因及判讀藥物歸因的前提，後面的檢驗數字無法補回暴露時序。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這位 40 歲女性新診斷第二型糖尿病，HbA1c 約 12.9%。開始服用 metformin、henagliflozin（一種 SGLT2 inhibitor）及 chiglitazar 後，約 24 小時內出現噁心、反覆嘔吐。接下來約三天，她的食物攝取很少，卻仍持續服藥；第四天因明顯倦",
+          "line_for_editor": 11
+        },
+        "b70fa13910071df8bb-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將腸胃不適與脫水的初步解釋推進到尚待回答的嚴重酸負荷來源。",
+          "nonredundancy_reason": "它標明初始診斷假說的不足，避免讀者把新藥噁心直接當作完整病因。",
+          "verdict": "keep",
+          "excerpt_for_editor": "一開始的直覺很容易聚焦在兩件事：新藥讓她噁心，吐了三天所以缺水。這些解釋並沒有錯，但它們還沒有回答為何血液中的酸會累積到如此嚴重。",
+          "line_for_editor": 13
+        },
+        "960b4e8433a02b702d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "串起攝食不足、反調節訊號、脂解、肝臟產酮及碳酸氫根消耗的機轉。",
+          "nonredundancy_reason": "這是從症狀通往高陰離子隙酸中毒的必要生化橋梁，不能以藥名清單替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "進食大幅減少，使外源性碳水化合物供給下降；反覆嘔吐及可能的尿液流失使有效循環容積減少，增加壓力荷爾蒙。此時若抑制脂解與肝臟產酮所需的胰島素作用相對不足，脂肪組織釋出的游離脂肪酸會進入肝臟，轉成 acetoacetate 與 β-hydroxybutyrate。兩者累積並釋放氫離子，消耗緩衝",
+          "line_for_editor": 15
+        },
+        "1697f4e5202b9a01b4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明SGLT2造成尿糖流失而不保證產酮停止，解開血糖不高仍酸中毒的矛盾。",
+          "nonredundancy_reason": "少了近曲小管排糖與肝臟產酮的分離，正常血糖的診斷陷阱便無法理解。",
+          "verdict": "keep",
+          "excerpt_for_editor": "SGLT2 inhibitor 又使這個故事更容易被血糖掩蓋：藥物阻止腎近曲小管回收一部分已濾出的葡萄糖，讓葡萄糖隨尿液排出；在特定條件下，也可能改變胰島素／升糖素的相對訊號，讓脂解與酮體形成更容易持續。尿糖增加與停止產酮是兩條不同的生理路徑。 藥物可以讓測得的血糖不高，但不能因此保證肝臟",
+          "line_for_editor": 17
+        },
+        "c6ec747b5171ffa8b6-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制三藥、嘔吐及攝食不足同時存在時的單一藥物因果歸因。",
+          "nonredundancy_reason": "原病例作者的強歸因不能作比較性證據，這段防止將時間關聯誤作單藥證明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這並不等於能從一名患者確定各藥物的獨立因果比例。原報告同時有新發糖尿病、三種新藥、嘔吐及攝食不足，沒有藥物單獨暴露的對照；較合理的閱讀是：這些條件形成了可信的共同促發機轉，而不是「metformin 單獨造成 DKA」或「所有 SGLT2 使用者都必然發生」。",
+          "line_for_editor": 19
+        },
+        "f9aa79484866ee82fc-1": {
+          "role": "safety",
+          "reader_gain": "以嗜睡與脫水徵象指出血氧98%和血壓保留仍需評估氣道與代謝危機。",
+          "nonredundancy_reason": "若刪除氧合不等於通氣代償的提醒，臨床讀者可能在最危險的早期被正常SpO2誤導。",
+          "verdict": "keep",
+          "excerpt_for_editor": "到了急診，患者不只是噁心和吃不下。她已嗜睡、心跳 108/min、呼吸 22/min，室內空氣 SpO₂ 98%，口腔黏膜乾燥且皮膚張力下降。嗜睡本身就要求評估意識與保護氣道的能力，不能因血壓及血氧暫時保留正常就降低警覺。SpO₂ 正常只能回答血紅素氧合的部分問題，不能證明酸鹼平衡正常，也",
+          "line_for_editor": 23
+        },
+        "110301f8b20fcd449c-1": {
+          "role": "decision",
+          "reader_gain": "並列飢餓、DKA、乳酸、腎毒物與嘔吐鹼中毒，指出需要有鑑別力的量測。",
+          "nonredundancy_reason": "這段在揭示檢驗結果前保留真實競爭診斷，避免事後只用已知DKA倒推急診。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這時至少有幾條互相競爭的路徑：嘔吐與禁食可造成飢餓性酮症；胰島素作用相對不足可造成 DKA；脫水、感染或低灌流可能造成乳酸升高；腎功能障礙或特定藥物、毒物可能造成其他高陰離子隙酸中毒。甚至嘔吐本身可能同時形成代謝性鹼中毒，部分抵消血液中的酸化表現。判斷不能靠一個「看起來像」的症狀，而要找到",
+          "line_for_editor": 25
+        },
+        "6d43c87a14c9a8f7f1-1": {
+          "role": "decision",
+          "reader_gain": "將高AG的非特異性與糖尿病、酸血症、顯著血酮三項合併證據區分。",
+          "nonredundancy_reason": "沒有這段，表格容易讓人把AG28.4當作足以單獨確診DKA的指標。",
+          "verdict": "keep",
+          "excerpt_for_editor": "此例的關鍵不是「AG 高所以一定是 DKA」。高 AG 可能由乳酸、酮酸、腎衰竭相關陰離子或某些毒物造成。真正把診斷往 DKA 推進的，是糖尿病與相關誘因、明確代謝性酸中毒、血中顯著 β-hydroxybutyrate三組證據合在一起。低至中等的 glucose 濃度，只證明當下不顯著高血",
+          "line_for_editor": 42
+        },
+        "ce5dc42dfcf8c54ec9-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "說明陰性妊娠與三處CT是個案已做檢查，不可推成每名euDKA病人的常規。",
+          "nonredundancy_reason": "這個界線避免真實病例的檢查清單被誤當適應症，具有直接減少過度檢查的價值。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原報告也記載妊娠試驗陰性，胸部、腹部及頭部 CT 未見急性異常。這些是實際進行的檢查，不代表所有 euDKA 患者都應比照接受三部位 CT。 檢查的價值取決於當時需要排除哪一項病因，以及先前的病史、理學檢查與風險。",
+          "line_for_editor": 53
+        },
+        "7251b7692ed5af3fc7-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分病理機轉與鑑別性觀察的臨床收斂，和量化檢驗效能的不同證據問題。",
+          "nonredundancy_reason": "刪去這個界線會使上方鑑別表被誤讀成已量得各項檢驗的似然比或診斷效能。",
+          "verdict": "keep",
+          "excerpt_for_editor": "真正的臨床邏輯不是由一個數字直接跳到診斷，而是先用生理機轉形成候選原因，再使用有鑑別力的證據收斂；至於單項檢驗能把機率改變多少，才是診斷研究與 EBM 所回答的另一層問題。",
+          "line_for_editor": 55
+        },
+        "d0a87d3ffcec359319-1": {
+          "role": "definition",
+          "reader_gain": "提供2024及2026 D/K/A診斷條件，解釋已知糖尿病可在血糖低於200時仍確診。",
+          "nonredundancy_reason": "這組正式門檻將個案證據連回跨病人的診斷準則，不能只靠病例印象替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "2024 年 ADA／EASD／JBDS／AACE／DTS 聯合共識把成人 DKA 的診斷拆為三個條件：D＝已有糖尿病史或血糖 ≥200 mg/dL；K＝血中 β-hydroxybutyrate ≥3.0 mmol/L，或尿酮體 ≥2+；A＝pH <7.3 和／或 bicarbonate ",
+          "line_for_editor": 57
+        },
+        "6e15043e9bfa217a84-1": {
+          "role": "safety",
+          "reader_gain": "對照pH中度、碳酸氫根重度與嗜睡，說明嚴重度和ICU需求不可單欄決定。",
+          "nonredundancy_reason": "沒有這段會沿用原報告Moderate No ICU標籤而低估意識與通氣代償危險。",
+          "verdict": "keep",
+          "excerpt_for_editor": "嚴重度不是另一道簡單的三選一。 2024 共識 Table 2 把 pH 7.0–7.25 列為中度範圍，但 bicarbonate <10 mmol/L 屬重度的生化警訊；本例 pH 7.043、HCO₃⁻ 6.5，還合併嗜睡，因此不同指標並不整齊落入單一欄位。共識明言各欄不必全部符合，",
+          "line_for_editor": 59
+        },
+        "eb6754d676e1b26c7b-1": {
+          "role": "definition",
+          "reader_gain": "解釋尿酮試紙測acetoacetate而非β-OHB，指出治療前後可能相反的偏差。",
+          "nonredundancy_reason": "這個檢驗原理決定應追蹤哪一種酮體，與前面的診斷閾值不屬同義重述。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果還只有尿酮陽性，為什麼仍值得爭取血中 β-hydroxybutyrate？常見 nitroprusside 尿酮試紙主要偵測 acetoacetate 而非 β-hydroxybutyrate。DKA 初期 β-hydroxybutyrate 可佔優勢，尿酮反而可能低估；治療中 β-h",
+          "line_for_editor": 61
+        },
+        "d18fc2e0a6520bb773-1": {
+          "role": "causal_bridge",
+          "reader_gain": "建立降低PaCO2屬酸中毒呼吸代償而非清除酮酸的根本治療。",
+          "nonredundancy_reason": "若沒有先說代償的方向與目的，接下來Winter預期值的比較就沒有生理意義。",
+          "verdict": "keep",
+          "excerpt_for_editor": "血中 HCO₃⁻ 只有 6.5 mmol/L，身體可經化學受器反應增加呼吸，降低 PaCO₂，使同樣的酸負荷不至於進一步拉低 pH。這是對代謝性酸中毒的代償，不是另一種把酮酸排出的根本治療。",
+          "line_for_editor": 65
+        },
+        "289fcc49f8a452f6db-1": {
+          "role": "safety",
+          "reader_gain": "計算Winter預期17.75±2與實測24.4的差距，辨識混合呼吸性酸化風險但不武斷插管。",
+          "nonredundancy_reason": "此段是具體危險訊號與診斷邊界，不能由呼吸速率22或一般代償定義取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "依 Winter 公式，預期 PaCO₂ 約為 1.5 × 6.5 + 8 = 17.75 ± 2 mmHg。原病例同次報告的動脈 PaCO₂ 是 24.4 mmHg，高於此簡化預期。實測值高於預期中心約 6.65 mmHg，甚至超過公式上緣約 4.65 mmHg。按常規酸鹼判讀，這是疑有",
+          "line_for_editor": 67
+        },
+        "4ef57f28909feb107e-1": {
+          "role": "decision",
+          "reader_gain": "說明呼吸快不保證肺泡通氣足夠，且插管鎮靜可能使代償分鐘通氣量驟降。",
+          "nonredundancy_reason": "這是將酸鹼異常轉成氣道處置風險的關鍵橋梁，與單純Winter計算不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這正是低血氧與 NIV／插管教材已經教過的另一面：呼吸快並不保證有效肺泡換氣足以滿足極端的代償需求。若病人失去維持通氣的能力，既有代謝性酸中毒之上會再增加 CO₂ 的酸化負荷。對需要氣道支持的重症患者，團隊也必須考慮插管及鎮靜後原有高分鐘通氣量可能突然下降的風險，而非把這份血氣視為單純「把",
+          "line_for_editor": 69
+        },
+        "e3184e5804a07d243f-1": {
+          "role": "orientation",
+          "reader_gain": "把DKA治療分成循環、產酮與血糖安全三個瓶頸，預告各處置的目標。",
+          "nonredundancy_reason": "此轉場防止讀者把輸液胰島素葡萄糖視為強度排名，而忽略彼此不可替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "診斷之後，治療不是三項藥物的強度排行榜，而是三個不同生理瓶頸。",
+          "line_for_editor": 73
+        },
+        "99153e041ecdbe1f79-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明補液恢復有效循環與腎灌流，但不能單靠液體停止脂解和產酮。",
+          "nonredundancy_reason": "這是補液獨立目的及個別化速度的根據，不能與後面胰島素作用合併。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第一個瓶頸是循環與腎臟灌流。 嘔吐、攝食不足、糖尿與利尿作用可能降低有效循環容量，讓心跳加快、腎灌流變差，也讓反調節荷爾蒙持續刺激產酮。合適的 isotonic saline 或 balanced crystalloid 能恢復灌流，卻不會憑空補回胰島素抑制脂解的作用。輸液量和速度取決於血",
+          "line_for_editor": 75
+        },
+        "372dced9ebef7673c2-1": {
+          "role": "decision",
+          "reader_gain": "說明持續輸注胰島素的抗產酮目的，辨別每小時0.1U/kg與危險1U/kg bolus。",
+          "nonredundancy_reason": "這段同時處理國考錯項和低血糖低鉀危害，缺少會讓治療速率失去安全界線。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第二個瓶頸是肝臟仍在製造酮酸。 胰島素抑制脂肪組織脂解與肝臟酮體生成，目標是停止酸的持續供應。這也是為何國考把「先給 1 U/kg regular insulin 靜脈 bolus」當成錯項：它不只是混淆劑量與速率，還是可能造成嚴重低血糖、低血鉀的高危險給藥方式。成人 DKA 常以每小時約",
+          "line_for_editor": 77
+        },
+        "03a3ced68655191989-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明正常血糖下仍須以葡萄糖支持持續胰島素治療，避免酮酸未清便停藥。",
+          "nonredundancy_reason": "此段處理胰島素與dextrose的表面矛盾，前兩個瓶頸不能解釋低血糖預防。",
+          "verdict": "keep",
+          "excerpt_for_editor": "第三個瓶頸是：血糖先下降，酮酸卻未必已清除。 如果看到 glucose 153 mg/dL 就拒絕 insulin，產酮可能繼續；如果有 insulin 卻不補足可以安全利用的 glucose，病人反而容易低血糖，導致不能持續給予抑制產酮所需的 insulin。因此 euDKA 常需早期搭",
+          "line_for_editor": 79
+        },
+        "c60edf9e6c0fa932b9-1": {
+          "role": "case_evidence",
+          "reader_gain": "核對病例實際saline、10% dextrose、0.1U/kg/h insulin及確認尿量後補鉀的序列。",
+          "nonredundancy_reason": "將指南機轉和真實處置分開，避免讀者把一般建議當成作者實際記載的每一步。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原病例實際採取的治療，也能反過來檢查這個機轉模型：作者記載先使用 0.9% saline 補充循環量，並同時給予 10% dextrose，使 regular insulin infusion 可以持續；原文記錄 insulin 以 0.1 U/kg/h 開始、依血糖調整。待確認尿量後給予",
+          "line_for_editor": 81
+        },
+        "2a11a772572fe87909-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出不應只因HCO3低而常規補鹼，且病例6.9與2024共識7.0門檻不同。",
+          "nonredundancy_reason": "若不保留版本差異，讀者可能誤把原病例未補鹼的理由視為最新共識原句。",
+          "verdict": "keep",
+          "excerpt_for_editor": "此外，是否要用 sodium bicarbonate 不能只因 HCO₃⁻ 低就直接決定。2024 共識不建議 DKA 常規補 bicarbonate，只有 pH 6.9 解釋不使用，屬另一門檻表述，不能不加說明就當成 2024 共識的原話。",
+          "line_for_editor": 83
+        },
+        "f992da6656060949aa-1": {
+          "role": "causal_bridge",
+          "reader_gain": "總結補液、正常血糖及酮體下降各自不足以證明其他生理危機已解除。",
+          "nonredundancy_reason": "這是三瓶頸的相互限制與監測過渡，不是重複任一單項治療說明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這三件事互相影響，但不能互相取代：體液恢復不代表酮酸生成已停止；葡萄糖正常不代表 ketoacidosis 已緩解；酮酸正在下降，也不表示電解質與循環風險已解除。",
+          "line_for_editor": 85
+        },
+        "daed4680631f6a5bbc-1": {
+          "role": "definition",
+          "reader_gain": "區分血清鉀濃度與全身鉀存量，連結酸中毒細胞外移與尿液嘔吐流失。",
+          "nonredundancy_reason": "沒有分布和總量的差異，入院K4.66會被誤認成不需追蹤鉀的安全證明。",
+          "verdict": "keep",
+          "excerpt_for_editor": "在酸中毒與相對胰島素不足的背景下，鉀可向細胞外重新分布；同時，糖尿、嘔吐與容量流失又可能使全身鉀存量下降。因此，血中 potassium 正常甚至偏高，和體內總鉀足夠，是兩個不同命題。",
+          "line_for_editor": 89
+        },
+        "d9542d96dee6f91414-1": {
+          "role": "safety",
+          "reader_gain": "用病例鉀4.66到3.82變化與2024共識3.5門檻說明先補鉀後胰島素的必要性。",
+          "nonredundancy_reason": "這段有具體時序及心律呼吸肌風險，不能由上一段靜態鉀分布原理替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Insulin 開始作用後，鉀會回到細胞內；酸中毒與腎灌流改善時，血鉀也可能迅速下降。此病例入院 4.66、24 小時後約 3.82、72 小時後約 3.95 mmol/L，提醒我們不能只留第一張電解質。若病人本來 K <3.5 mmol/L，2024 共識建議先補鉀，待高於 3.5 才開",
+          "line_for_editor": 91
+        },
+        "5a76b6e39d81efcdf3-1": {
+          "role": "decision",
+          "reader_gain": "釐清高鉀、腎衰竭與透析患者不可套用固定補鉀量，須依尿量心電圖重測。",
+          "nonredundancy_reason": "此反向限制補足低鉀閾值未涵蓋的情境，避免將補鉀寫成無條件處方。",
+          "verdict": "keep",
+          "excerpt_for_editor": "反過來，K >5.0 mmol/L 時也不能機械性照固定補鉀量輸注。依腎功能、心電圖、尿量與重測結果，決定何時補、補多少；嚴重腎功能不全或透析者的體液與鉀處置更需要專業化。重點並非背一個唯一適用的滴注速率，而是理解 insulin 停止產酮的同時，也正在改變血鉀分布。",
+          "line_for_editor": 93
+        },
+        "36eaec8d5e18f170ca-1": {
+          "role": "case_evidence",
+          "reader_gain": "引入同一病例入院與24、72小時血糖和酮體的並列追蹤，讓治療成敗可比較。",
+          "nonredundancy_reason": "時間序列表是後面判斷能否停胰島素的必要實測基礎，不能只報單次血糖。",
+          "verdict": "keep",
+          "excerpt_for_editor": "原病例 Table 1 把真正值得追蹤的兩條軌跡放在同一時間軸：",
+          "line_for_editor": 97
+        },
+        "2bdac234909aea6563-1": {
+          "role": "decision",
+          "reader_gain": "以24小時血糖121但β-OHB4.8和pH7.223指出仍不可因血糖正常停抗產酮治療。",
+          "nonredundancy_reason": "這是治療中最容易犯的提前停止錯誤，與初始診斷時血糖不高的情境不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "二十四小時後 glucose 只有約 121 mg/dL，乍看非常漂亮；但 β-hydroxybutyrate 仍為 4.8 mmol/L，pH 仍只有 7.223。若此時因「血糖正常」撤去所有抑制產酮治療，便把我們真正要解決的問題忘掉。",
+          "line_for_editor": 108
+        },
+        "d12ac031fa3c4b3632-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以72小時酮體0.3和動脈pH7.356對照靜脈pH或HCO3的正式解除條件。",
+          "nonredundancy_reason": "保留arterial與venous測量身分，避免把個案改善冒充逐項滿足未測的共識終點。",
+          "verdict": "keep",
+          "excerpt_for_editor": "再看七十二小時：β-hydroxybutyrate 已下降至 0.3 mmol/L，pH 上升到 7.356；即使 HCO₃⁻ 還只有 16.8，2024 共識的解析仍較接近危機解除，因為它要求的是 β-hydroxybutyrate <0.6 mmol/L 且 pH ≥7.3 或 bic",
+          "line_for_editor": 110
+        },
+        "d6783e3f5473df80b6-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "解釋大量生理食鹽水後高氯性酸中毒使AG與HCO3不能單獨當解除指標。",
+          "nonredundancy_reason": "若刪除，讀者可能因AG下降或碳酸氫根恢復較慢而誤判治療是否成功。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Anion gap 下降可支持改善，但不應單靠 AG 關閉作為終止治療的唯一標準：大量 0.9% saline 後可能出現高氯性正常 AG 代謝性酸中毒，讓 bicarbonate 恢復落後於酮酸清除。",
+          "line_for_editor": 112
+        },
+        "3382ff1efb0e969296-1": {
+          "role": "decision",
+          "reader_gain": "交代進食恢復、皮下basal與IV insulin重疊、出院及四週追蹤的決策邊界。",
+          "nonredundancy_reason": "這段提供危機解除後的連續照護，並避免倒推病例未記載的轉換時程。",
+          "verdict": "keep",
+          "excerpt_for_editor": "當危機確實解除、進食可恢復且後續 insulin 計畫已建立，才討論由 IV 轉為皮下注射。新的 basal insulin 必須與 IV infusion 預留適當重疊時間（共識通常至少 1–2 小時），避免血中 insulin 覆蓋突然中斷使酮酸再起；是否改為 basal-bolus、",
+          "line_for_editor": 114
+        },
+        "2129f8c05ba3d7c6ca-1": {
+          "role": "counterfactual",
+          "reader_gain": "在高血糖420但同樣酮酸負荷時保持DKA診斷，增加滲透壓和鈉的監測。",
+          "nonredundancy_reason": "此反例測試血糖改變不應篡改疾病本質，與真實正常血糖個案形成必要對照。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果 glucose 換成 420 mg/dL，但 β-hydroxybutyrate 與酸鹼異常相同： 診斷仍是 DKA，不會因為血糖高才變成「更真實」的 DKA；額外要監測的是滲透性利尿、鈉與滲透壓變化，但治療終點仍不能只有血糖。",
+          "line_for_editor": 118
+        },
+        "b64110169c38432eb3-1": {
+          "role": "counterfactual",
+          "reader_gain": "保留血糖153與低HCO3但移除酮血症，要求重新尋找乳酸腎毒物等原因。",
+          "nonredundancy_reason": "這個反例測試K條件的必要性，防止所有低血糖酸中毒被錯誤標成euDKA。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果 glucose 同樣是 153 mg/dL，HCO₃⁻ 也低，但 β-hydroxybutyrate 未升高： 就不能把所有酸中毒都推成 euDKA。必須回到 lactate、腎功能、藥物／毒物、腹瀉與混合酸鹼異常等競爭原因，並重新核對原本的糖尿病藥史。血糖不高只是排除了「明顯高血糖",
+          "line_for_editor": 120
+        },
+        "18c25f3226417ed36a-1": {
+          "role": "counterfactual",
+          "reader_gain": "以高酮體加禁食卻無糖尿病史，要求重新區分飢餓酒精妊娠與隱性糖尿病。",
+          "nonredundancy_reason": "這段測試糖尿病背景資訊的缺口，不能由前段酮體陰性反例取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果 β-hydroxybutyrate 升高、病人長時間未吃東西，但沒有已知糖尿病： 仍須區分 starvation ketosis、alcoholic ketoacidosis、妊娠相關酮酸中毒與尚未診斷的糖尿病。必要時追病史、HbA1c、胰島素背景及其他證據；一個高酮體數值不是全部病",
+          "line_for_editor": 122
+        },
+        "b70f3b43aa50544b68-1": {
+          "role": "counterfactual",
+          "reader_gain": "將鉀改為2.9時先處理危險低鉀並延後胰島素，驗證治療順序會改變。",
+          "nonredundancy_reason": "此反例直接檢驗安全閾值能否支配第一步，與前三段診斷反例功能不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "如果 K⁺ 只有 2.9 mmol/L，而酸中毒程度一樣： 危機依然急迫，但「立刻提高 insulin」會成為危險推論。此時需優先處理低鉀、監測心電圖及呼吸肌危險，依團隊 protocol 確保鉀可安全上升後再給 insulin。知道正確診斷不代表已知道最安全的第一步。",
+          "line_for_editor": 124
+        },
+        "5a2e85d1b3727c8ef4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "回收相對胰島素不足、產酮、酸血症、循環和電解質危險作為真正治療標的。",
+          "nonredundancy_reason": "這是從病例時間序列收斂成可轉移的臨床命題，避免結尾只留下血糖數值。",
+          "verdict": "keep",
+          "excerpt_for_editor": "我們治療的是相對 insulin 不足所維持的產酮、酸血症及其造成的循環與電解質危險。血糖只是一個必須監測的窗口，不能代表整個疾病已被控制。這也是為何酸鹼分析、尿液檢驗、β-hydroxybutyrate、鉀與治療後的時間序列必須被放在一起理解。",
+          "line_for_editor": 128
+        },
+        "47a7febd55bc4493d7-1": {
+          "role": "navigation",
+          "reader_gain": "把114-1醫學三Q56的bolus錯項連回原題詳解和本文胰島素安全章節。",
+          "nonredundancy_reason": "這段保留原題不重印，提供正式國考和完整病程之間的可核對雙向入口。",
+          "verdict": "keep",
+          "excerpt_for_editor": "讀到這裡，114 年第一次醫學（三）Q56 的「1 U/kg insulin 一次給」就不再只是速率單位的陷阱：它測的是能否區分抑制持續產酮的治療目標、正確的 insulin delivery 形式、血鉀安全與輸液的循環目的。原題與逐項解析可於既有二十題跨系統練習找到；這裡不重複抄題，以保",
+          "line_for_editor": 130
+        },
+        "f112c320a2e47817f5-1": {
+          "role": "decision",
+          "reader_gain": "用三個臨床提問整理下次遇到正常血糖嘔吐患者時的酮體代償和治療風險。",
+          "nonredundancy_reason": "此結尾將本文原理轉成臨床再次辨認的行動問題，而非只重複病例結局。",
+          "verdict": "keep",
+          "excerpt_for_editor": "下次遇到噁心、嘔吐、呼吸深快而血糖並不顯著升高的糖尿病患者，真正值得及早回答的不是「她是不是糖太高」，而是：有沒有正在累積的酮酸？身體還能不能代償？怎樣使產酮停止且不讓治療本身引起低血糖、低血鉀或循環惡化？",
+          "line_for_editor": 132
+        },
+        "20645ecc0814ba0138-1": {
+          "role": "source_context",
+          "reader_gain": "指向原病例Figure1確認藥物到出院的時間軸，並要求數值仍回查Table1。",
+          "nonredundancy_reason": "這段區分圖的時序與表的定量功能，避免讀者從圖像推造未報告的檢驗數字。",
+          "verdict": "keep",
+          "excerpt_for_editor": "這個病例的原始疾病與治療時間軸（Figure 1）把開始三藥、嘔吐、入院、住院治療到四週追蹤串在同一條時間線；若要確認數值，仍應回讀同文 Table 1，而不是從圖上的顏色或時間軸位置猜測未呈現的檢驗結果。",
+          "line_for_editor": 136
+        },
+        "9d6541b56e88292f6e-1": {
+          "role": "source_context",
+          "reader_gain": "提供共識Figure2診斷、Figure4治療與Table2嚴重度的精確原始入口。",
+          "nonredundancy_reason": "這是可直接驗證各決策節點的原圖表導航，不能由泛用文獻DOI清單替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "診斷分支可以回看 2024 跨學會原始 Figure 2；治療時則對照 Figure 4 的輸液／insulin／鉀分流，其安全先決條件不是固定的「每個人先給同樣劑量」。原始 Table 2（DKA 嚴重度與建議照護層級） 的分層也顯示 bicarbonate 與 pH 可能落在不同欄，需",
+          "line_for_editor": 138
+        },
+        "78c2c6cfc83ff39256-1": {
+          "role": "source_context",
+          "reader_gain": "定位Cai 2026原始病例及Table1，讓個案時序與數值可回到出版原文。",
+          "nonredundancy_reason": "此條明確區分觀察性病例的證據來源，不可由共識指引引用取代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Cai J, Fu T, Tan C. Case Report: Early-onset euglycemic diabetic ketoacidosis following henagliflozin initiation in a treatment-naive patient. Fr",
+          "line_for_editor": 144
+        },
+        "d1365a2db5cfc323a6-1": {
+          "role": "source_context",
+          "reader_gain": "定位2024五學會共識的診斷門檻與治療終點，支撐跨病人的規則。",
+          "nonredundancy_reason": "此條將臨床共識與單一病例的觀察層級分開，是安全追溯必要來源。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Umpierrez GE, et al. Hyperglycemic Crises in Adults With Diabetes: A Consensus Report. Diabetes Care. 2024;47:1257–1275. DOI: 10.2337/dci24-0032。",
+          "line_for_editor": 145
+        },
+        "213ca6c3df46e57a61-1": {
+          "role": "source_context",
+          "reader_gain": "定位ADA 2026住院章的當代更新，避免只依2024共識判斷是否仍適用。",
+          "nonredundancy_reason": "此條提供現行年度核查入口，與2024原始共識有不同的版本驗證功能。",
+          "verdict": "keep",
+          "excerpt_for_editor": "American Diabetes Association. Diabetes Care in the Hospital: Standards of Care in Diabetes—2026. Diabetes Care. 2026;49(Suppl 1). 官方 2026 住院照護章。",
+          "line_for_editor": 146
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md": {
+      "content_blob": "fad3ac49374289f1f12805b40b05a420ec7b64eb",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "CTICU-ABG-PR211-independent-source-figure-20261029T0215+0800; GitHub review #5687583024",
+      "core_reader_question": "低溫 CPB 同一份血氣為何會出現兩種溫度基準，且 alpha-stat 與 pH-stat 的真正介入如何影響腦灌流與神經認知結局？",
+      "new_understanding": "讀者能分開 37°C 儀器測量、體溫校正報告、實際掃氣與 CO₂ 調整；再用 Patel 與 Murkin 的分母及亞組、Table 52 IIa/B，限制對成人 CABG、主動脈弓及小兒的外推。",
+      "strongest_counterargument": "原創 SVG 在 360px 內嵌縮至 282px，部分文字不適合直接閱讀；已核對真實 Chromium 截圖及原生 SVG 新分頁開啟，保留可放大閱讀，且文章完整文字敘述不依賴圖中文字。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "d2260b3d01793f062a-1": {
+          "role": "orientation",
+          "reader_gain": "標明第四篇是低溫 CPB 的獨立讀者單元。",
+          "nonredundancy_reason": "與前篇代謝性酸化主題分開，避免誤把溫度校正當成同一病因。",
+          "verdict": "keep"
+        },
+        "3c536acd86b949e4a4-1": {
+          "role": "orientation",
+          "reader_gain": "建立血氣量測基準與真正 CO₂ 介入的核心區別。",
+          "nonredundancy_reason": "若刪掉此段，讀者容易把兩種報告值當成兩次病情改變。",
+          "verdict": "keep"
+        },
+        "0c390eb2e8e1bff860-1": {
+          "role": "case_evidence",
+          "reader_gain": "用 Patel 的七十人隨機試驗建立策略選擇的臨床後果。",
+          "nonredundancy_reason": "它先給出六週神經心理結局，避免全篇只靠理論推演。",
+          "verdict": "keep"
+        },
+        "d853d460770fe02497-1": {
+          "role": "orientation",
+          "reader_gain": "提出儀器溫度、體內狀態與操作介入三層問題。",
+          "nonredundancy_reason": "前段只有研究結果，此段轉為可循序回答的教學問題。",
+          "verdict": "keep"
+        },
+        "a39401f5323031a18e-1": {
+          "role": "definition",
+          "reader_gain": "說明血氣分析儀與體溫校正輸出的測量來源。",
+          "nonredundancy_reason": "這是後續兩種策略共同的先備條件，不等於任一治療決策。",
+          "verdict": "keep"
+        },
+        "0f57cc2bcda1b8f1ef-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以溶解度和緩衝溫度依賴性推導低溫分壓與 pH 方向。",
+          "nonredundancy_reason": "沒有這段，後文校正值高低只能死記，無法理解機轉。",
+          "verdict": "keep"
+        },
+        "3dc4702dd4bc2d79d8-1": {
+          "role": "decision",
+          "reader_gain": "將溫度和報告基準轉成讀到血氣時的第一個查核問題。",
+          "nonredundancy_reason": "前段是物理原理，此段第一次明確要求臨床配對資訊。",
+          "verdict": "keep"
+        },
+        "2415f6e65d71ae3f59-1": {
+          "role": "safety",
+          "reader_gain": "防止混用不同溫度的 pH 與 PaCO₂ 進行錯誤代償判讀。",
+          "nonredundancy_reason": "這是獨立的資料一致性風險，不能由單純認識溫度替代。",
+          "verdict": "keep"
+        },
+        "93e458a92aa2fd876b-1": {
+          "role": "causal_bridge",
+          "reader_gain": "釐清切換顯示本身不會改變體內 CO₂ 或腦灌流。",
+          "nonredundancy_reason": "此處分離測量與介入，阻止後文策略圖被讀成儀器操作效果。",
+          "verdict": "keep"
+        },
+        "1ddce4c65ecc87c715-1": {
+          "role": "definition",
+          "reader_gain": "界定 alpha-stat 使用未校正三十七度血氣目標。",
+          "nonredundancy_reason": "它定義第一種策略的控制變數，不可與低溫校正後目標混同。",
+          "verdict": "keep"
+        },
+        "dbf93912bfce0540b7-1": {
+          "role": "causal_bridge",
+          "reader_gain": "從低溫校正變化連到 histidine imidazole 的理論理由。",
+          "nonredundancy_reason": "補足選擇保留原基準的生理動機，並區分理論與臨床效益。",
+          "verdict": "keep"
+        },
+        "2df80603ce2251055e-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明 CO₂ 對腦血流及自動調節的雙面效應。",
+          "nonredundancy_reason": "此前只談酸鹼基準，此段開始建立腦保護結果的中介機轉。",
+          "verdict": "keep"
+        },
+        "ec906c65742022bfb5-1": {
+          "role": "decision",
+          "reader_gain": "把 alpha-stat 的本質定位為不額外追逐低溫校正目標。",
+          "nonredundancy_reason": "避免把臨床管理策略錯當成單純關閉報告欄位。",
+          "verdict": "keep"
+        },
+        "45bdccf9072e5045b4-1": {
+          "role": "definition",
+          "reader_gain": "定義 pH-stat 以病人體溫校正值調整掃氣或加 CO₂。",
+          "nonredundancy_reason": "與 alpha-stat 形成真正的替代策略比較，而非時間先後步驟。",
+          "verdict": "keep"
+        },
+        "3e04f286ebe410b040-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋 pH-stat 下未校正值較酸不必然是新的呼吸衰竭。",
+          "nonredundancy_reason": "將術中預期表型和離機後新發異常分開，防止錯誤診斷。",
+          "verdict": "keep"
+        },
+        "b2578f6a3b4749c7e5-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "平衡增加腦血流、均勻降溫與栓塞及自調節風險。",
+          "nonredundancy_reason": "避免從 CO₂ 血管擴張直接推論所有術式有益或有害。",
+          "verdict": "keep"
+        },
+        "47a8c89f8dc11c515a-1": {
+          "role": "orientation",
+          "reader_gain": "指出必須用適用族群的比較試驗裁決策略效益。",
+          "nonredundancy_reason": "把前段生理推論切換到臨床結果證據，不偷換證據層級。",
+          "verdict": "keep"
+        },
+        "abc073ca3f0c0da5d1-1": {
+          "role": "case_evidence",
+          "reader_gain": "逐組列出 Patel 六週認知測驗的分母與事件數。",
+          "nonredundancy_reason": "精確分母與終點使讀者不會將其誤稱死亡率或中風效益。",
+          "verdict": "keep"
+        },
+        "147bfde26af6ffe4f5-1": {
+          "role": "case_evidence",
+          "reader_gain": "限制 Murkin 的二十七對四十四百分比為長時間 CPB 分層。",
+          "nonredundancy_reason": "防止將特定亞組結果擴寫成全部三百一十六人的風險。",
+          "verdict": "keep"
+        },
+        "d908f8b630a49a8eca-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "把腦血流自調節的機轉支持與當代外推條件分開。",
+          "nonredundancy_reason": "它指出歷史試驗的解釋不等於已證明所有裝置和術式有效。",
+          "verdict": "keep"
+        },
+        "cf00cce11fa742a9b1-1": {
+          "role": "decision",
+          "reader_gain": "定位成人高至中度低溫 IIa/B 建議及適用界線。",
+          "nonredundancy_reason": "指南的建議強度與範圍不同於前兩項 RCT 的原始終點。",
+          "verdict": "keep"
+        },
+        "a6373f902ea4b54421-1": {
+          "role": "counterfactual",
+          "reader_gain": "以主動脈弓停循環改變腦部冷卻與灌流的權衡。",
+          "nonredundancy_reason": "這個反事實揭示不能把常規 CABG 的結論直接搬到 DHCA。",
+          "verdict": "keep"
+        },
+        "b86678ec44c3bce1d8-1": {
+          "role": "counterfactual",
+          "reader_gain": "以嬰幼兒腦血管成熟度及先天心臟病提出不同適用性。",
+          "nonredundancy_reason": "與成人弓手術不同，年齡及先天解剖本身會改變比較前提。",
+          "verdict": "keep"
+        },
+        "7a7dce6d827f17fe7f-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分最佳證據綜述、手術低溫研究與其他低溫情境。",
+          "nonredundancy_reason": "阻止把二級文獻或心跳停止後低溫研究算成直接 RCT。",
+          "verdict": "keep"
+        },
+        "178ca4eae883c34e40-1": {
+          "role": "orientation",
+          "reader_gain": "明示交班血氣七點三零為教學情境而非試驗患者病程。",
+          "nonredundancy_reason": "將反事實演練與真實病例來源隔離，避免捏造個案醫囑。",
+          "verdict": "keep"
+        },
+        "769842b078ec516b5b-1": {
+          "role": "decision",
+          "reader_gain": "要求先核對 CPB 時段、溫度和採樣報告基準。",
+          "nonredundancy_reason": "先辨認測量條件才能避免錯誤啟動碳酸氫鹽處置。",
+          "verdict": "keep"
+        },
+        "202287309247c06aa1-1": {
+          "role": "decision",
+          "reader_gain": "離機回溫後重新按當下通氣灌流和酸鹼狀態判讀。",
+          "nonredundancy_reason": "防止以術中 pH-stat 理由掩蓋數小時後的新休克或呼吸異常。",
+          "verdict": "keep"
+        },
+        "e1fd898bae5a478b8f-1": {
+          "role": "counterfactual",
+          "reader_gain": "以正常血氣但腦氧惡化說明 CO₂ 目標不等於腦灌流。",
+          "nonredundancy_reason": "這個反例使讀者理解數字達標仍須評估灌流及解剖。",
+          "verdict": "keep"
+        },
+        "99007e951ebf172ad0-1": {
+          "role": "safety",
+          "reader_gain": "界定 CPB CO₂ 與腦保護調整屬跨專業團隊決策。",
+          "nonredundancy_reason": "避免把機轉教材誤當成可自行操作氧合器的醫囑。",
+          "verdict": "keep"
+        },
+        "cd30769536951d9f59-1": {
+          "role": "causal_bridge",
+          "reader_gain": "回到 Patel 的實際介入是兩種 CO₂ 管理而非兩種報告格式。",
+          "nonredundancy_reason": "與開頭的研究結果形成因果閉環，回收文章核心命題。",
+          "verdict": "keep"
+        },
+        "57a298afc727bc3d45-1": {
+          "role": "causal_bridge",
+          "reader_gain": "以溫度、策略和病人三層條件整合臨床推理。",
+          "nonredundancy_reason": "這句總結重新連接物理量測、可改變的介入與外推界線。",
+          "verdict": "keep"
+        },
+        "cf3de672d5732aa1ae-1": {
+          "role": "orientation",
+          "reader_gain": "說明三層分辨比死背策略優缺點更可轉用。",
+          "nonredundancy_reason": "把整篇機轉轉為臨床閱讀原則，並非重述單一試驗數字。",
+          "verdict": "keep"
+        },
+        "ee825c1903db2a6d32-1": {
+          "role": "definition",
+          "reader_gain": "檢驗能否從氣體溶解度說明校正值與真實介入差別。",
+          "nonredundancy_reason": "第一問測量機轉理解，不與後續決策題重複。",
+          "verdict": "keep"
+        },
+        "c45d67a0416f8fe073-1": {
+          "role": "decision",
+          "reader_gain": "檢驗低溫校正 pH 目標如何轉成氧合器 CO₂ 調整。",
+          "nonredundancy_reason": "第二問要求連結操作與腦血流，不能只答出兩個定義。",
+          "verdict": "keep"
+        },
+        "963b4f7231dca9ce80-1": {
+          "role": "counterfactual",
+          "reader_gain": "檢驗 CABG 證據不能跨越術式及年齡的外推邊界。",
+          "nonredundancy_reason": "第三問專門攔截以單一歷史試驗推出普遍治療的誤解。",
+          "verdict": "keep"
+        },
+        "11d037aecd92a3203c-1": {
+          "role": "source_context",
+          "reader_gain": "提供成人 CPB 指引原文與 Table 52 的可追溯入口。",
+          "nonredundancy_reason": "指南的推薦強度需要獨立來源，不能由教學解說代替。",
+          "verdict": "keep"
+        },
+        "903f6342bf230bda67-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Patel 原始 RCT 的樣本及六週測驗結果。",
+          "nonredundancy_reason": "此研究支撐主要對比，與其他成人研究的分層結局不同。",
+          "verdict": "keep"
+        },
+        "cd78eb2621aca568f7-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Murkin 二乘二 RCT 及超過九十分鐘亞組。",
+          "nonredundancy_reason": "避免兩篇 RCT 被混成同一試驗或同一時間終點。",
+          "verdict": "keep"
+        },
+        "ad8aa803e720e56488-1": {
+          "role": "source_context",
+          "reader_gain": "標明 OpenAnesthesia 僅為生理學二級教學來源。",
+          "nonredundancy_reason": "保留原理輔助但不讓其取代指南與試驗的決策權重。",
+          "verdict": "keep"
+        },
+        "6e62c2d16b5476da23-1": {
+          "role": "source_context",
+          "reader_gain": "標明 Abdul Aziz 2010 是綜述而不是新 RCT。",
+          "nonredundancy_reason": "讀者能追查 DHCA 的研究脈絡且不重複計算試驗證據。",
+          "verdict": "keep"
+        },
+        "7805c21d71adead9f7-1": {
+          "role": "source_context",
+          "reader_gain": "將近期生理回顧限縮為補充而非療效證據。",
+          "nonredundancy_reason": "不同於原始 RCT，此來源只協助理解物理化學爭議。",
+          "verdict": "keep"
+        },
+        "edb6f8223976814eed-1": {
+          "role": "navigation",
+          "reader_gain": "明確區分第三篇代謝性酸化與第四篇溫度 CO₂ 策略。",
+          "nonredundancy_reason": "跨篇導覽指向不同問題，避免讀者把 SID 與 pH-stat 混用。",
+          "verdict": "keep"
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md": {
+      "content_blob": "e6646dc23271c97c27e8efdc5278ffc5b9880adf",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "CTICU-ABG-PR211-independent-source-figure-20261029T0215+0800; GitHub review #5687583024",
+      "core_reader_question": "CPB 術後 HCO₃⁻ 與 BE 下降時，如何在未直接測到乳酸來源前，以 chloride、albumin、PaCO₂、未測陰離子及循環證據分辨危險與病因？",
+      "new_understanding": "以 Chuah 55 人群體三時點與 Protos Bartter 真實患者對照，讀者能分開 acidemia 與 acidosis、簡化 SID 與 SIG、群體均值與個體因果，並在出血或低輸出時優先處理危險。",
+      "strongest_counterargument": "群體 Na/Cl/SID 和未測白蛋白可能被誤當作個人因果；本文反覆揭露非隨機混雜及未測乳酸、albumin，另以真實 Bartter 反例和反事實安全分流限制外推。圖在 360px 內嵌過小，已核對可開原生 SVG 並有完整 HTML 表格。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "48b7fb604f633fb84d-1": {
+          "role": "orientation",
+          "reader_gain": "第三篇限定 CPB 術後代謝酸鹼問題的閱讀範圍。",
+          "nonredundancy_reason": "先區隔第四篇的溫度與 CO₂ 策略問題。",
+          "verdict": "keep"
+        },
+        "31363622df204871ec-1": {
+          "role": "orientation",
+          "reader_gain": "以 HCO₃⁻ 與 BE 下降提出尚未確診乳酸來源的疑問。",
+          "nonredundancy_reason": "開頭防止把血氣結果直接等同灌流不足。",
+          "verdict": "keep"
+        },
+        "2c0697dfb2180fe6af-1": {
+          "role": "causal_bridge",
+          "reader_gain": "引入 chloride、albumin、陰離子與 PaCO₂ 競爭解釋。",
+          "nonredundancy_reason": "從單一乳酸假說擴展到可區辨的多條路徑。",
+          "verdict": "keep"
+        },
+        "97b3317bb01c02c5b9-1": {
+          "role": "orientation",
+          "reader_gain": "區分酸鹼過程、病因來源及能改變處置的證據。",
+          "nonredundancy_reason": "為後文生理機轉、病因歸屬和床邊處置建立互不混淆的三個推理層級。",
+          "verdict": "keep"
+        },
+        "d91e64735fd8c0e233-1": {
+          "role": "case_evidence",
+          "reader_gain": "交代 Chuah 八十一名分析個案及三個採樣時點。",
+          "nonredundancy_reason": "群體時序必須先建立才能解讀後面的平均值。",
+          "verdict": "keep"
+        },
+        "8dbc0e1db3af4557b1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用混合 prime 配方與兩組輸液量揭露非隨機混雜。",
+          "nonredundancy_reason": "限制把 on-pump 差異全歸給 normal saline。",
+          "verdict": "keep"
+        },
+        "fbe8bf99f7364cd6bd-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "明示五十五名患者的群體均值不是個人 ABG。",
+          "nonredundancy_reason": "阻止用不同平均值製造不存在的個人 AG。",
+          "verdict": "keep"
+        },
+        "fdb002ed264d187a4d-1": {
+          "role": "case_evidence",
+          "reader_gain": "以術後 Na、Cl、SID、BE 與氫離子比較提出酸化效應。",
+          "nonredundancy_reason": "將原表中不同變數的升降方向轉成需要解釋的具體術後生理問題。",
+          "verdict": "keep"
+        },
+        "08033c4b7dc18cebf2-1": {
+          "role": "case_evidence",
+          "reader_gain": "隔天 PaCO₂ 上升使代謝回復不等於 pH 回升。",
+          "nonredundancy_reason": "加入呼吸時間序列，不能只追 chloride。",
+          "verdict": "keep"
+        },
+        "a74b6306d1548cb154-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出研究未量 lactate、albumin 且手術方式未隨機。",
+          "nonredundancy_reason": "將合理的稀釋生理假說與研究真正量到的變數明確分開，避免中介因果過推。",
+          "verdict": "keep"
+        },
+        "f6f020000d2d38b704-1": {
+          "role": "definition",
+          "reader_gain": "辨認 acidemia 是結果而 acidosis 是生理過程。",
+          "nonredundancy_reason": "避免從 pH 正常倒推沒有代謝酸化。",
+          "verdict": "keep"
+        },
+        "5ea11c4f2c3ad2c129-1": {
+          "role": "definition",
+          "reader_gain": "解釋計算 HCO₃⁻ 與 BE 不能辨認特定酸的身分。",
+          "nonredundancy_reason": "為後文追查 chloride、lactate 與未測陰離子提供必要的量測解釋邊界。",
+          "verdict": "keep"
+        },
+        "96c3d2e7b2ea1917a4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "連結 bicarbonate 下降與 CPB 液體造成的離子平衡變化。",
+          "nonredundancy_reason": "取代單純把 HCO₃⁻ 描述為被酸消耗的誤解。",
+          "verdict": "keep"
+        },
+        "b67ee1c285d411c6ca-1": {
+          "role": "definition",
+          "reader_gain": "辨別 CPB prime、心肌保護液、輸血與 ICU 液體來源。",
+          "nonredundancy_reason": "為追查真正 chloride exposure 提供時序前提。",
+          "verdict": "keep"
+        },
+        "7cf682f86bef4bc646-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明相對 Cl⁻ 增加令強離子差下降的酸化機轉。",
+          "nonredundancy_reason": "提供物理化學原因而不是把氯當成直接耗鹼反應。",
+          "verdict": "keep"
+        },
+        "9bd6e03aee9db8c3a3-1": {
+          "role": "case_evidence",
+          "reader_gain": "以 Chuah 的 Na 和 Cl 反向變化實際計算簡化 SID。",
+          "nonredundancy_reason": "把抽象強離子理論與原始研究數字連接。",
+          "verdict": "keep"
+        },
+        "c25dcbe56505f839bc-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分 Na+K-Cl 的研究 SID 與完整 SIDa。",
+          "nonredundancy_reason": "防止將未測 lactate 等變數混入同一指標。",
+          "verdict": "keep"
+        },
+        "843cca88970612489a-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明 albumin 弱酸稀釋可以帶來相對鹼化作用。",
+          "nonredundancy_reason": "補上與強離子酸化方向相反的弱酸濃度變化，使淨 pH 不變的現象可以理解。",
+          "verdict": "keep"
+        },
+        "9557b32a80708c7bac-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把氯離子增加造成酸化與白蛋白稀釋造成鹼化兩股力量並排對照。",
+          "nonredundancy_reason": "讓讀者看到兩種方向如何在同一患者並存。",
+          "verdict": "keep"
+        },
+        "b4314d1ae4813ebfe8-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋 pH 穩定不代表血液離子和弱酸成分不變。",
+          "nonredundancy_reason": "阻止以終點正常推論所有中介過程正常。",
+          "verdict": "keep"
+        },
+        "fc12a007703ce5b08e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "核對 Chuah 未測白蛋白及 Hb 相關敘述矛盾。",
+          "nonredundancy_reason": "限制用 Hb 變化替代 albumin 實測而推論中介因果的證據強度。",
+          "verdict": "keep"
+        },
+        "2d213d4c2cad9ead0b-1": {
+          "role": "case_evidence",
+          "reader_gain": "以 Hayhoe 十人資料呈現 chloride 升而乳酸未升。",
+          "nonredundancy_reason": "提供不同 prime 的獨立生理觀察。",
+          "verdict": "keep"
+        },
+        "8b74e6bae0b23b2b5a-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "乳酸不升仍不能排除局部缺血或其他危險。",
+          "nonredundancy_reason": "將非乳酸酸化的機轉與病人局部缺血、全身灌流安全兩個不同問題分開。",
+          "verdict": "keep"
+        },
+        "8c58f6d2234fd62b62-1": {
+          "role": "orientation",
+          "reader_gain": "從非乳酸酸化自然提出 AG 能否縮小病因。",
+          "nonredundancy_reason": "交代為何接著引入 AG 計算工具，以及這項計算預期縮小哪一類鑑別。",
+          "verdict": "keep"
+        },
+        "31eb1175dea672d930-1": {
+          "role": "orientation",
+          "reader_gain": "預告 CPB 術後 AG 判讀的兩個主要盲點。",
+          "nonredundancy_reason": "先建立 CPB 術後低白蛋白和 SIG 的檢驗限制，再討論 AG 數值的用途。",
+          "verdict": "keep"
+        },
+        "789199f145e4f45f23-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "低 albumin 可能掩蓋高 AG 陰離子訊號。",
+          "nonredundancy_reason": "這是一般 AG 公式之外必須同步核對的白蛋白檢驗條件，否則可能漏掉未測陰離子。",
+          "verdict": "keep"
+        },
+        "97e0bad6bbe47b0f49-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分 AG 與 SIG 並保留 Guarnieri POD1 未報數據。",
+          "nonredundancy_reason": "防止從 pH 正常化捏造隔天 SIG 已回復。",
+          "verdict": "keep"
+        },
+        "38238fb115e1d5b338-1": {
+          "role": "decision",
+          "reader_gain": "說明 SIG 研究不足以單獨決定常規檢查或治療。",
+          "nonredundancy_reason": "把觀察結果轉回實際可取得的床邊證據。",
+          "verdict": "keep"
+        },
+        "e45ab8b8b2aad3af7a-1": {
+          "role": "case_evidence",
+          "reader_gain": "介紹 Bartter syndrome CABG 病人作為不同機轉反例。",
+          "nonredundancy_reason": "區分特殊腎小管疾病個案與一般 CABG 群體，為後續反向 chloride 變化建立不同基線。",
+          "verdict": "keep"
+        },
+        "37687e0c197ba51659-1": {
+          "role": "case_evidence",
+          "reader_gain": "立即術後高乳酸但 Cl⁻ 九十四反駁單純高氯酸化。",
+          "nonredundancy_reason": "同時點數據直接改變候選病因的相對合理性。",
+          "verdict": "keep"
+        },
+        "8337a942ec0a4f7fb6-1": {
+          "role": "case_evidence",
+          "reader_gain": "隔天乳酸下降而氯升高呈現多機轉時間變化。",
+          "nonredundancy_reason": "使讀者看見處置後結果不等於單一治療效果。",
+          "verdict": "keep"
+        },
+        "aca904362395fbd30e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "保留 Protos Table 2 與討論段數字不一致。",
+          "nonredundancy_reason": "拒絕把作者討論文字與原表的不同數值拼接成一條不存在的術後採樣序列。",
+          "verdict": "keep"
+        },
+        "3111ef4a49dfd8c7ec-1": {
+          "role": "orientation",
+          "reader_gain": "轉向 CTICU 接班的條件式推理並標明非原病例醫囑。",
+          "nonredundancy_reason": "分離真實病歷與教學假設避免虛構決策動機。",
+          "verdict": "keep"
+        },
+        "a24deec0f2b4cbe5e8-1": {
+          "role": "safety",
+          "reader_gain": "用胸管出血、低輸出與 tamponade 建立急症分流。",
+          "nonredundancy_reason": "避免因合理的高氯性酸化解釋而延誤出血、低輸出與心包壓迫等可逆危險。",
+          "verdict": "keep"
+        },
+        "3c2480917983413020-1": {
+          "role": "decision",
+          "reader_gain": "只有循環與器官灌流相對穩定時，才進入分層檢驗和病程時序重建。",
+          "nonredundancy_reason": "明確限制後面四組資料蒐集的適用前提。",
+          "verdict": "keep"
+        },
+        "cb06fbaa0027e1e99d-1": {
+          "role": "decision",
+          "reader_gain": "核對動靜脈採樣、CPB 時點與通氣溫度。",
+          "nonredundancy_reason": "先確認血氣量測與採樣條件的可信度，才能進一步討論代謝病因及處置。",
+          "verdict": "keep"
+        },
+        "8eb96c6b9e2bffe67d-1": {
+          "role": "decision",
+          "reader_gain": "同期量乳酸、電解質、albumin 與必要 ketones。",
+          "nonredundancy_reason": "這組辨認代謝來源而非前段的採樣條件。",
+          "verdict": "keep"
+        },
+        "495f6ca1bcb1993ac9-1": {
+          "role": "decision",
+          "reader_gain": "追查 prime、cardioplegia、輸血及尿量腎功能。",
+          "nonredundancy_reason": "把血液結果連到暴露來源與腎臟時間序列。",
+          "verdict": "keep"
+        },
+        "3ce77a4df84fe96462-1": {
+          "role": "decision",
+          "reader_gain": "重測 chloride、BE、PaCO₂ 和乳酸判斷趨勢。",
+          "nonredundancy_reason": "避免單張血氣把病因固定而忽略後續惡化。",
+          "verdict": "keep"
+        },
+        "51aca01dcba043ba0f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "將四組資料整合成可區辨機轉的證據路徑。",
+          "nonredundancy_reason": "前面是採集資料，此處才解釋如何更新診斷。",
+          "verdict": "keep"
+        },
+        "4f51f7c4c86d86c901-1": {
+          "role": "counterfactual",
+          "reader_gain": "以嚴重高血鉀、循環崩解和呼吸衰竭的反事實改寫處置優先序。",
+          "nonredundancy_reason": "阻止用輕度群體酸化當作嚴重個案等待理由。",
+          "verdict": "keep"
+        },
+        "ad953685ae5a8c2c67-1": {
+          "role": "orientation",
+          "reader_gain": "從生理機轉提出 balanced prime 是否改善結局的問題。",
+          "nonredundancy_reason": "這是從解釋病因轉入介入療效證據的橋樑。",
+          "verdict": "keep"
+        },
+        "fb4d3edebafb05c203-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指南小型試驗不能證明死亡率或 AKI 獲益。",
+          "nonredundancy_reason": "區分 BE 代理終點與患者重要結局。",
+          "verdict": "keep"
+        },
+        "03231137139da673d5-1": {
+          "role": "case_evidence",
+          "reader_gain": "以 Morgan 二十人試驗示範低氯 prime 仍可提高 SIG。",
+          "nonredundancy_reason": "提供反例防止把 chloride 當成唯一液體特性。",
+          "verdict": "keep"
+        },
+        "115a9b6e472ef107bd-1": {
+          "role": "decision",
+          "reader_gain": "prime 選擇屬術中團隊決策且 ICU 須重新評估。",
+          "nonredundancy_reason": "阻止從既有輸液配方直接推導當下醫囑。",
+          "verdict": "keep"
+        },
+        "f2b5b850a99b97783f-1": {
+          "role": "causal_bridge",
+          "reader_gain": "回到 Chuah 三時點的代謝與呼吸方向分離。",
+          "nonredundancy_reason": "以真實三時點數據完成文章開頭的因果問題，重新區分代謝酸化與呼吸效應。",
+          "verdict": "keep"
+        },
+        "eb22c6a3567de82c43-1": {
+          "role": "decision",
+          "reader_gain": "整合危險分流、採樣、機轉與決策證據。",
+          "nonredundancy_reason": "將知識整理成可遷移的 CTICU 推理方法。",
+          "verdict": "keep"
+        },
+        "6c3364dccba6517fd1-1": {
+          "role": "definition",
+          "reader_gain": "檢驗 lactate 不升仍可有代謝酸化的機轉。",
+          "nonredundancy_reason": "第一問測基本生理而非直接問治療選項。",
+          "verdict": "keep"
+        },
+        "92715f3db47fc7c652-1": {
+          "role": "decision",
+          "reader_gain": "檢驗 chloride 回復而 pH 下降時的呼吸辨別線索。",
+          "nonredundancy_reason": "第二問測重新採樣與 PaCO₂ 的臨床應用。",
+          "verdict": "keep"
+        },
+        "8ed6fa08330f2d6076-1": {
+          "role": "counterfactual",
+          "reader_gain": "以正常乳酸及 AG 但持續出血測試危險分流。",
+          "nonredundancy_reason": "第三問攔截用漂亮檢驗值排除休克的誤推論。",
+          "verdict": "keep"
+        },
+        "951d94e66072afb4bc-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Protos Bartter 真實病例與原始 Table 2。",
+          "nonredundancy_reason": "病例來源必須與 Chuah 群體證據獨立追查。",
+          "verdict": "keep"
+        },
+        "37dcf727493638c177-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Chuah 2013 群體及 Table 3 原始數據。",
+          "nonredundancy_reason": "這是圖表與時序主要依據而非治療試驗。",
+          "verdict": "keep"
+        },
+        "6cc3a11cc57ce44f82-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Hayhoe 十人特定 prime 的生理研究。",
+          "nonredundancy_reason": "防止把舊式小樣本機轉當作所有現代 CPB。",
+          "verdict": "keep"
+        },
+        "0fbdd85bd5370d1ec6-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Guarnieri 2026 SIG 與 POD1 報告邊界。",
+          "nonredundancy_reason": "提供公開摘要可核對範圍而非虛構隔日數據。",
+          "verdict": "keep"
+        },
+        "146fb518491bf41b75-1": {
+          "role": "source_context",
+          "reader_gain": "定位成人 CPB 指南對 priming fluid 的證據。",
+          "nonredundancy_reason": "與觀察研究不同，此來源界定建議與試驗不足。",
+          "verdict": "keep"
+        },
+        "a29b37884d7cddc23c-1": {
+          "role": "source_context",
+          "reader_gain": "定位 Morgan 2008 隨機 prime 研究的樣本和終點。",
+          "nonredundancy_reason": "精確年份和比較組避免與 2009 其他試驗混淆。",
+          "verdict": "keep"
+        },
+        "4a85edd13d99999fc7-1": {
+          "role": "source_context",
+          "reader_gain": "定位較近期 colloid priming 研究的證據範圍。",
+          "nonredundancy_reason": "補充另一種 colloid prime 的研究情境，防止只從單一舊式 prime 推廣所有液體配方。",
+          "verdict": "keep"
+        },
+        "619e5b55b920a6be52-1": {
+          "role": "navigation",
+          "reader_gain": "連接 lactate、氧輸送與一般酸鹼教材的不同問題。",
+          "nonredundancy_reason": "跨篇連結讓讀者回查必要先備而不在本文重寫。",
+          "verdict": "keep"
         }
       }
     }
