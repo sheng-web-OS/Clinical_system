@@ -3804,7 +3804,7 @@
         "e2bafc872677b70390-1": {
           "role": "orientation",
           "reader_gain": "說明合成病例及PGY定位，避免數值被認作真實病人",
-          "nonredundancy_reason": "這是正文所有臨床推理的身分前提",
+          "nonredundancy_reason": "這是正文所有臨床推理的身分前提；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "2026.10.28｜PGY 抗生素臨床決策｜合成病例教學；非院內可直接執行的用藥醫囑",
           "line_for_editor": 3
@@ -3812,7 +3812,7 @@
         "ac5bedf02668aebe6a-1": {
           "role": "safety",
           "reader_gain": "揭露體重過敏AST及院內制度未知，明確禁止照抄處方",
-          "nonredundancy_reason": "開篇安全界線不能只靠結尾重述",
+          "nonredundancy_reason": "開篇安全界線不能只靠結尾重述；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "> 病例為人工合成，並非真實病例報告。 文中處置思路用於臨床推理及在上級醫師、藥師、當院抗菌藥管理制度下的決策訓練。合成病例缺乏體重、確切過敏史、當院 antibiogram、完整舊 AST、腎功能動態與輸注 SOP，因此不提供可複製至 EMR 的藥物劑量、間隔或輸注設定。不能以這項限制為",
           "line_for_editor": 5
@@ -3820,7 +3820,7 @@
         "ae04c8865785c0dce1-1": {
           "role": "case_evidence",
           "reader_gain": "由發燒意識變慢低血壓與腰痛建立夜班危急場景",
-          "nonredundancy_reason": "刪除將失去啟動立即評估的病人觸發點",
+          "nonredundancy_reason": "刪除將失去啟動立即評估的病人觸發點；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "護理師來電：「68 歲男性，糖尿病、CKD G3、BPH。發燒 39.1°C，HR 124，RR 26，BP 92/56 mmHg；平常會對答，現在反應變慢，右腰痛。能不能先開 ceftriaxone？」",
           "line_for_editor": 9
@@ -3836,7 +3836,7 @@
         "bb6cd06ba65da6b0c5-1": {
           "role": "causal_bridge",
           "reader_gain": "區分感染灌流障礙與未引流阻塞兩個失敗機轉",
-          "nonredundancy_reason": "抗菌藥與引流並行的理由在此建立",
+          "nonredundancy_reason": "抗菌藥與引流並行的理由在此建立；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "此刻如果你只查「ESBL 治療首選」，你會漏掉兩個更先發生的危險：（一）病人可能正在經歷感染相關器官功能障礙與灌流不足；（二）如果是感染性阻塞，任何抗菌藥都不能直接讓受阻的集尿系統排空。",
           "line_for_editor": 13
@@ -3844,7 +3844,7 @@
         "b87940f669724e61eb-1": {
           "role": "decision",
           "reader_gain": "以危重與舊ESBL共同支持meropenem為候選而非自動處方",
-          "nonredundancy_reason": "是首劑方向由病例風險導出的核心轉折",
+          "nonredundancy_reason": "是首劑方向由病例風險導出的核心轉折；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "對這通電話，最合理的初步立場是：高度懷疑 systemic UTI／可能菌血症，存在 sepsis 與灌流惡化的重大疑慮，必須立即同時啟動 resuscitation、cultures、合理涵蓋 ESBL 的 empiric IV therapy 評估，以及緊急 urology sourc",
           "line_for_editor": 15
@@ -3852,7 +3852,7 @@
         "943c19e0b28e850292-1": {
           "role": "evidence_boundary",
           "reader_gain": "以KDIGO 48小時及7天條件限制兩週肌酐比較",
-          "nonredundancy_reason": "防止把疑似AKI冒充已確診分期",
+          "nonredundancy_reason": "防止把疑似AKI冒充已確診分期；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "尚不可宣告：由 BP 92/56、lactate 3.8 就已完整符合 Sepsis-3 septic shock 定義；也不能把超音波 hydronephrosis 當作已證實阻塞結石。第三個尚未確診的項目是 AKI：兩週前 Cr 1.3、現在 2.0 mg/dL（約上升 54%），但尚",
           "line_for_editor": 17
@@ -3868,15 +3868,15 @@
         "adddda4768c311f291-1": {
           "role": "causal_bridge",
           "reader_gain": "解釋尚未確診shock AKI結石仍應立即啟動救治",
-          "nonredundancy_reason": "阻止診斷不確定性變成延誤藉口",
+          "nonredundancy_reason": "阻止診斷不確定性變成延誤藉口；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "危急辨識與正式定義，應同時被尊重但不可互相替代。 病人需要即時的上級、抗菌治療與源控制評估，並不要求 PGY 先把 AKI stage、septic shock 定義及結石診斷全部填完。",
           "line_for_editor": 21
         },
         "3a63cd96d3f3fdd6b9-1": {
           "role": "orientation",
-          "reader_gain": "把採檢核藥及泌尿源控制組成同步分工",
-          "nonredundancy_reason": "提供三個步驟的共同時間原則",
+          "reader_gain": "把採檢核藥及泌尿源控制組成同步分工，使後續臨床推理可追溯。",
+          "nonredundancy_reason": "提供三個步驟的共同時間原則；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "值班團隊同步分工，而非排成「等檢驗→讀藥敏→開藥→隔天找泌尿科」的序列：",
           "line_for_editor": 25
@@ -3884,15 +3884,15 @@
         "762e77a32346904f07-1": {
           "role": "decision",
           "reader_gain": "以器官灌流風險導向親評復甦及必要升壓",
-          "nonredundancy_reason": "不能讓抗菌藥討論取代循環支持",
+          "nonredundancy_reason": "不能讓抗菌藥討論取代循環支持；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "立即親評及求援。 再測血壓、意識、氧合、四肢灌流、體溫、尿量；確立 IV access、監測與容量評估，通知總醫師／主治與 sepsis/急重症團隊；依循環評估開始適當 crystalloid resuscitation，對持續低灌流者評估早期 vasopressor 和 ICU。既有 C",
           "line_for_editor": 27
         },
         "afddb319cbd307e119-1": {
           "role": "decision",
-          "reader_gain": "安排血尿培且不因採檢顯著延誤首劑",
-          "nonredundancy_reason": "在取得證據與即時治療間建立平衡",
+          "reader_gain": "安排血尿培且不因採檢顯著延誤首劑，使後續臨床推理可追溯。",
+          "nonredundancy_reason": "在取得證據與即時治療間建立平衡；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "立即採得來的血培與尿培。 以標準無菌方式採適當血培（通常兩套）與 urine culture，標明採檢與首劑時間，並辨認尿液來源、留置導管及更換需求。理想是在第一劑前抽血培，但採檢不能造成危急病人治療的顯著延誤。CBC、electrolytes、K、renal trends、lactate",
           "line_for_editor": 28
@@ -3900,7 +3900,7 @@
         "08d69beee3d801bb48-1": {
           "role": "decision",
           "reader_gain": "同步核舊AST過敏與泌尿引流及藥師決策",
-          "nonredundancy_reason": "補足實際值班聯絡與核藥的操作路徑",
+          "nonredundancy_reason": "補足實際值班聯絡與核藥的操作路徑；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "同時開啟 first-dose 核藥與泌尿科路線。 讀最近可用的 prior isolate/AST；確認藥物過敏到底是噁心、皮疹、即時呼吸道反應還是嚴重延遲型反應；即刻聯絡藥師與上級依本院 policy 確認 ESBL-active IV 方案、首劑時點與劑量。超音波 hydroneph",
           "line_for_editor": 29
@@ -3908,7 +3908,7 @@
         "883cae77ecee0008d9-1": {
           "role": "evidence_boundary",
           "reader_gain": "區分SSC一小時三小時與六小時源控制適用條件",
-          "nonredundancy_reason": "避免把時間目標解讀為可安全等候",
+          "nonredundancy_reason": "避免把時間目標解讀為可安全等候；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "時鐘的意義。 2026 SSC 對 possible/probable/definite septic shock，以及 probable/definite sepsis without shock，建議立即給抗菌藥，理想上辨認後 1 小時內；對 possible sepsis witho",
           "line_for_editor": 31
@@ -3916,7 +3916,7 @@
         "9db9166f14c32d9c2e-1": {
           "role": "causal_bridge",
           "reader_gain": "以IDSA四步串接危重抗藥個體限制與本院資料",
-          "nonredundancy_reason": "是病例走向經驗性候選藥的決策算法",
+          "nonredundancy_reason": "是病例走向經驗性候選藥的決策算法；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "2025 IDSA cUTI 提供四步：① 病況嚴重度 → ② 既往抗藥菌與抗生素暴露 → ③ 過敏、腎功能、交互作用等病人限制 → ④ 有 sepsis 時參考該院適合族群的 antibiogram。 指引明說近期既往尿培若有 ESBL，ceftriaxone 可能不再是適當的經驗性選擇",
           "line_for_editor": 45
@@ -3924,7 +3924,7 @@
         "4adec9cb528ea9cee1-1": {
           "role": "source_context",
           "reader_gain": "指出Table1.1僅為候選藥物集合並需四步再篩選",
-          "nonredundancy_reason": "防止把原表當成已核准個別處方",
+          "nonredundancy_reason": "防止把原表當成已核准個別處方；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "IDSA 2025 cUTI 原 Table 1.1（不同嚴重度下的候選類別及註腳） 提供的是進入四步篩選前的候選藥物集合，並非每一個 septic 病人都要使用列出的所有藥物；若既往 ESBL、當地抗藥率或個體禁忌不允許，應回到四步選擇，而不是照抄表格。",
           "line_for_editor": 47
@@ -3932,7 +3932,7 @@
         "f27211a1364ce3fc0f-1": {
           "role": "evidence_boundary",
           "reader_gain": "以原Figure1.1註腳核對shock九成與非shock八成",
-          "nonredundancy_reason": "外部參考門檻不能冒充本院實際敏感率",
+          "nonredundancy_reason": "外部參考門檻不能冒充本院實際敏感率；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "原始 Figure 1.1 有兩個容易被誤解的數字。 在有符合條件的當院、最近 12 個月、相似病人族群 antibiogram 時，IDSA 提出可考慮讓最相關菌種對經驗性藥物的敏感性，在 septic shock 達 ≥90%、sepsis without shock 達 ≥80%；這",
           "line_for_editor": 49
@@ -3948,7 +3948,7 @@
         "181dfcc36f2f3eab7b-1": {
           "role": "causal_bridge",
           "reader_gain": "以PBP周質水解與其他抗藥機轉解釋carbapenem不保證S",
-          "nonredundancy_reason": "國考酵素題與當次AST之間的中介",
+          "nonredundancy_reason": "國考酵素題與當次AST之間的中介；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "先建立最基本的藥物作用路徑：β-lactam 要接近並結合細菌的 penicillin-binding proteins（PBP），干擾細胞壁交聯，才有機會發揮殺菌作用。 某些革蘭陰性菌的 β-lactamase 可先在周質空間水解 β-lactam ring，使藥物尚未有效到達 PBP ",
           "line_for_editor": 55
@@ -3956,7 +3956,7 @@
         "eedd1bd77104b75098-1": {
           "role": "evidence_boundary",
           "reader_gain": "區分ESBL不直接作用TMP-SMX與可能共抗藥",
-          "nonredundancy_reason": "防止錯誤宣稱非β內醯胺必然S或R",
+          "nonredundancy_reason": "防止錯誤宣稱非β內醯胺必然S或R；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "同理，TMP-SMX 或 fluoroquinolone 的作用靶點不是 β-lactam ring，所以 ESBL 酵素本身不能直接水解它們；但攜帶 ESBL 的菌株常伴有其他抗藥基因。因此既不能看見 ESBL 就宣稱 TMP-SMX 必定 R，也不能反過來宣稱必定 S。這也解釋 T0 ",
           "line_for_editor": 57
@@ -3980,7 +3980,7 @@
         "61569848091e87777e-1": {
           "role": "safety",
           "reader_gain": "限制無依據加vancomycin雙重GN與抗黴菌",
-          "nonredundancy_reason": "提供避免盲目廣譜的反向決策",
+          "nonredundancy_reason": "提供避免盲目廣譜的反向決策；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "同樣不應機械加入 vancomycin、雙重 gram-negative 或抗黴菌藥：「多蓋一點」只有在來源不確定、MRSA/Enterococcus/Pseudomonas 等特定風險或嚴重不穩定而需要不同病原譜時才有可辯護的理由；盲目堆疊會增加毒性及不必要暴露。當院 antibiogr",
           "line_for_editor": 74
@@ -3988,7 +3988,7 @@
         "3b4d401f3707333720-1": {
           "role": "definition",
           "reader_gain": "把首劑拆為藥物選擇安全給入與有效暴露",
-          "nonredundancy_reason": "是後續PK及醫囑欄位的共同骨架",
+          "nonredundancy_reason": "是後續PK及醫囑欄位的共同骨架；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "因為處方是藥物種類 × 能否安全給入 × 在正確時間產生足夠的暴露。",
           "line_for_editor": 78
@@ -3996,7 +3996,7 @@
         "af782ff77d315a7527-1": {
           "role": "causal_bridge",
           "reader_gain": "用fT大於MIC及非穩態腎清除分開首劑與維持劑量",
-          "nonredundancy_reason": "同時避免首劑不足及腎衰竭累積毒性",
+          "nonredundancy_reason": "同時避免首劑不足及腎衰竭累積毒性；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "β-lactam 多屬 time-dependent killing，重要 PK/PD 維度是游離藥物濃度高於病原 MIC 的時間（fT>MIC）。敗血症初期體液分布與腎清除率可急速改變；負荷暴露與維持清除是兩個不同問題。在疑似或已確認的 AKI 下簡單用低 eGFR 把第一劑一律減很低，",
           "line_for_editor": 80
@@ -4004,7 +4004,7 @@
         "7a165e0e738526ae73-1": {
           "role": "orientation",
           "reader_gain": "明示表格是待核欄位而非已完成的EMR醫囑",
-          "nonredundancy_reason": "防止未知數值被當作精確處方",
+          "nonredundancy_reason": "防止未知數值被當作精確處方；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "在這份合成情境，「第一劑醫囑草案」應包含下列待即時核對欄位，而不是把未知資訊補成看似精確的數字：",
           "line_for_editor": 82
@@ -4020,7 +4020,7 @@
         "b62f20496270f5a809-1": {
           "role": "case_evidence",
           "reader_gain": "T6升壓少尿惡化顯示有活性抗菌藥仍不能解除阻塞",
-          "nonredundancy_reason": "源控制不是再加藥的替代選項",
+          "nonredundancy_reason": "源控制不是再加藥的替代選項；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "假設病人接受初始 IV 治療後 BP 持續下降，開始需升壓劑、尿量減少，右側 hydronephrosis 仍在。即使抗菌藥對病原有活性，感染性阻塞腎盂仍可能是一個未排空、持續帶來病原與炎症刺激的感染灶。你不應把「再加一種藥」當成解除阻塞的替代品。",
           "line_for_editor": 101
@@ -4028,7 +4028,7 @@
         "59685134a1adbfa908-1": {
           "role": "decision",
           "reader_gain": "依EAU區分緊急stent或PCN及延後根本結石處理",
-          "nonredundancy_reason": "保留水腎尚非已確診結石的邊界",
+          "nonredundancy_reason": "保留水腎尚非已確診結石的邊界；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "這時要追問：影像是否已確認 obstructed infected system？泌尿科能否盡快以輸尿管支架或 PCN 引流？若是阻塞結石，感染控制前是否應延後 definitive stone surgery？ EAU Urolithiasis 對「sepsis with obstruc",
           "line_for_editor": 103
@@ -4036,7 +4036,7 @@
         "93312ad2152b010156-1": {
           "role": "safety",
           "reader_gain": "強調T6惡化需立即重評而非等48小時time-out",
-          "nonredundancy_reason": "防止行政檢討時點取代危急判斷",
+          "nonredundancy_reason": "防止行政檢討時點取代危急判斷；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "此刻同時檢查休克支持、抗菌藥是否實際給入、有沒有另個感染源、腎功能與 drug exposure 是否快速變動。不能等待行政性的 48–72 小時 antibiotic time-out 才處理正在惡化的病人。",
           "line_for_editor": 105
@@ -4044,7 +4044,7 @@
         "76a0de0fddd41f14cd-1": {
           "role": "case_evidence",
           "reader_gain": "以T48血尿培及AST建立降階可用的新證據",
-          "nonredundancy_reason": "是後面兩種臨床分支的共同前提",
+          "nonredundancy_reason": "是後面兩種臨床分支的共同前提；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "合成培養結果：血與尿均為 ESBL E. coli，ceftriaxone-R、meropenem-S、TMP-SMX-S。新資訊確認原先 ESBL 覆蓋思考合理，也讓較窄方案成為可能；然而培養報告的「S」只回答一定測試條件下的 susceptibility，不能回答血流動力、阻塞是否解除",
           "line_for_editor": 109
@@ -4052,7 +4052,7 @@
         "4db04481b09f1e9f0a-1": {
           "role": "counterfactual",
           "reader_gain": "未引流升壓少尿者即使TMP-SMX-S也不應立即PO",
-          "nonredundancy_reason": "與下一段穩定病人形成控制對照",
+          "nonredundancy_reason": "與下一段穩定病人形成控制對照；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "分支甲：仍在使用 vasopressor、尿路尚未減壓、Cr 進一步上升且尿量減少，現在高度懷疑正在發展或加重 AKI。不因 TMP-SMX-S 就立即口服轉換。 先處理源控制與器官支持，確認 IV regimen 與實際暴露；再動態調整。",
           "line_for_editor": 111
@@ -4068,7 +4068,7 @@
         "2b81b60cac98c5acf3-1": {
           "role": "evidence_boundary",
           "reader_gain": "區分有效治療起算及7對14天與重症阻塞例外",
-          "nonredundancy_reason": "防止把短療程機械套在所有菌血症",
+          "nonredundancy_reason": "防止把短療程機械套在所有菌血症；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "2025 IDSA 對有臨床反應的 cUTI、尤其有效治療後，傾向較短療程：部分 fluoroquinolone 情境約 5–7 天，非 fluoroquinolone 約 7 天；療程以第一天 effective therapy 起算，而非任何曾給過但對病原無效的藥。若當次確定合併 Gr",
           "line_for_editor": 117
@@ -4076,7 +4076,7 @@
         "83a4b3aed0ef7375f0-1": {
           "role": "counterfactual",
           "reader_gain": "用Foley無症狀菌尿反駁ESBL陽性就治療",
-          "nonredundancy_reason": "此例改變的是感染症候群而非藥敏",
+          "nonredundancy_reason": "此例改變的是感染症候群而非藥敏；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "A｜只有舊 ESBL＋本次尿液白血球、但沒有感染症狀。 一位長期 Foley 患者尿培 ESBL、pyuria 卻穩定、沒有可歸因感染的症狀或全身訊號。不是「既然 ESBL 就打 meropenem」；通常是無症狀菌尿（ASB），不需抗菌治療。懷孕或特定會造成黏膜創傷的泌尿手術前是不同適用",
           "line_for_editor": 121
@@ -4084,7 +4084,7 @@
         "948a8c50563fc6ce03-1": {
           "role": "counterfactual",
           "reader_gain": "以舊菌改成CRE Klebsiella反駁meropenem萬能",
-          "nonredundancy_reason": "這是抗藥機轉變動的獨立測試",
+          "nonredundancy_reason": "這是抗藥機轉變動的獨立測試；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "B｜舊菌株其實不是 ESBL E. coli，而是 carbapenem-resistant Klebsiella。 先前路線即失去可靠性；meropenem 不是萬能。要立刻讀完整歷史 AST／MIC，依感染風險、本院 formularies、2026 IDSA CRE 機轉分類與專家意",
           "line_for_editor": 123
@@ -4092,7 +4092,7 @@
         "f742f9f693157b1785-1": {
           "role": "counterfactual",
           "reader_gain": "以穩定無菌血症已知藥敏呈現pip-tazo替代定位",
-          "nonredundancy_reason": "隔離危重程度與AST時點兩個變數",
+          "nonredundancy_reason": "隔離危重程度與AST時點兩個變數；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "C｜已證實本次為 ESBL cUTI，但不危重、無菌血症、藥敏支持。 不再將所有病人的利益風險等同於本例；2026 IDSA AMR 對 piperacillin–tazobactam 才有特定 alternative 地位，且若有適當 susceptible oral agents，應評",
           "line_for_editor": 125
@@ -4100,7 +4100,7 @@
         "08e41c65e93aac3927-1": {
           "role": "counterfactual",
           "reader_gain": "以穩定下泌尿道症狀及無舊抗藥史改回窄譜評估",
-          "nonredundancy_reason": "提供防止危重處方外推的負對照",
+          "nonredundancy_reason": "提供防止危重處方外推的負對照；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "D｜改成另一位 38 歲患者：只有下泌尿道症狀，生命徵象穩定、沒有發燒或 flank pain、沒有近期 resistant isolate。 這不再是原本危重 systemic UTI：先確認是 localized UTI、是否真的需要培養，以及能否使用適當窄譜口服治療；不能把原本 me",
           "line_for_editor": 127
@@ -4108,7 +4108,7 @@
         "cda1a0c2b2f7d18e51-1": {
           "role": "orientation",
           "reader_gain": "國考目標定位於酵素水解譜而非臨床直接下單",
-          "nonredundancy_reason": "讓考題與前面PBP機轉自然銜接",
+          "nonredundancy_reason": "讓考題與前面PBP機轉自然銜接；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "考點不是「有 ESBL 就開哪一支」；而是用機轉劃出抗菌藥不能與仍可能有效的邊界。",
           "line_for_editor": 131
@@ -4116,7 +4116,7 @@
         "592d3eaba036d6b881-1": {
           "role": "source_context",
           "reader_gain": "列出考選部111二次醫學三Q60與四選項及答案A",
-          "nonredundancy_reason": "沒有題號身分就無法核對逐項解答",
+          "nonredundancy_reason": "沒有題號身分就無法核對逐項解答；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "> 考選部 111 年第二次醫師第二階段考試，醫學（三）第 60 題（代號 1302）：ESBL 能水解哪些 β-lactam 抗生素，導致它們失效？選項是 ① cefotaxime、② aztreonam、③ ertapenem；A 僅①②、B 僅①③、C 僅②③、D ①②③。官方標準答",
           "line_for_editor": 133
@@ -4124,15 +4124,15 @@
         "f46cbd20a3ce978e58-1": {
           "role": "causal_bridge",
           "reader_gain": "逐項比較cefotaxime aztreonam ertapenem水解機轉",
-          "nonredundancy_reason": "把酵素知識實際轉成題目判斷",
+          "nonredundancy_reason": "把酵素知識實際轉成題目判斷；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "逐選項解析： ① Cefotaxime 正確——它是第三代 cephalosporin，屬典型 ESBL 可水解的延伸型 β-lactam，和本例為何不直接以 ceftriaxone 當可靠經驗性第一劑相連。② Aztreonam 正確——雖屬 monobactam，但「單環」不代表可逃過",
           "line_for_editor": 135
         },
         "f77fd4933ea02941db-1": {
           "role": "decision",
-          "reader_gain": "逐一指出B C D漏選或誤選的理由",
-          "nonredundancy_reason": "提供考場排除法而非重述三個藥物定義",
+          "reader_gain": "逐一指出B C D漏選或誤選的理由，使後續臨床推理可追溯。",
+          "nonredundancy_reason": "提供考場排除法而非重述三個藥物定義；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "選項辨識： A（①②）正確；B（①③）錯在把 carbapenem 納入典型 ESBL 水解譜、卻漏掉 aztreonam；C（②③）錯在漏掉 cefotaxime、且多選 ertapenem；D（①②③）錯在把 ESBL 與 carbapenemase 混為一談。",
           "line_for_editor": 137
@@ -4140,7 +4140,7 @@
         "293fc3d90e3d34dd5c-1": {
           "role": "evidence_boundary",
           "reader_gain": "說明ertapenem不受典型ESBL水解仍不等於危重首選",
-          "nonredundancy_reason": "限制國考正確答案的臨床外推",
+          "nonredundancy_reason": "限制國考正確答案的臨床外推；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "這題再向臨床推一步：正確知道「ESBL 不直接水解 ertapenem」，仍不足以在本案例選 ertapenem 當第一劑。 本例不穩定、疑似菌血症、未知 Pseudomonas 風險與 albumin/藥動狀態，和酵素能不能水解是不同層級的問題；這就是國考辨識題到 PGY 用藥決策之間的",
           "line_for_editor": 139
@@ -4148,7 +4148,7 @@
         "5aaee560fa79d6e223-1": {
           "role": "source_context",
           "reader_gain": "給出官方題本標準答案及更正清冊三種連結",
-          "nonredundancy_reason": "讓讀者可以追溯答案而非相信作者",
+          "nonredundancy_reason": "讓讀者可以追溯答案而非相信作者；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "考選部原始來源：111-2 醫學（三）正式試題 PDF（第 60 題，紙本第 13 頁／PDF index 12–13）｜標準答案｜答案更正清冊。已實際目視原 PDF 的題幹與答案行，不依賴有亂碼的機器匯入題庫。",
           "line_for_editor": 141
@@ -4156,7 +4156,7 @@
         "245efebfcb71ffb6b4-1": {
           "role": "navigation",
           "reader_gain": "把T0採檢核藥灌流與引流整合為可填時間交班",
-          "nonredundancy_reason": "把長文轉成下一班可核驗的資訊",
+          "nonredundancy_reason": "把長文轉成下一班可核驗的資訊；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "「68M DM/CKD，現在 suspected severe systemic UTI with right hydronephrosis、hypotension、altered mentation、possible AKI（兩週前 Cr 1.3 → 現 2.0，需補近七天與尿量資料）/",
           "line_for_editor": 145
@@ -4164,7 +4164,7 @@
         "e7aa36c6f065891189-1": {
           "role": "counterfactual",
           "reader_gain": "第一道提取題檢查危險辨識與不能單值確診",
-          "nonredundancy_reason": "與後兩道首劑及再評估能力不同",
+          "nonredundancy_reason": "與後兩道首劑及再評估能力不同；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "危險與時序：哪些證據讓你現在不能等？又有哪幾個診斷不能從單一數字斷言？",
           "line_for_editor": 149
@@ -4172,7 +4172,7 @@
         "58c8c4aa814f545057-1": {
           "role": "counterfactual",
           "reader_gain": "第二道提取題比較首劑候選及缺失安全欄位",
-          "nonredundancy_reason": "檢查是否能把機轉轉成實際核藥",
+          "nonredundancy_reason": "檢查是否能把機轉轉成實際核藥；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "First-dose decision：為何此例偏向 meropenem IV，而不是照 UTI 慣例先用 ceftriaxone、piperacillin–tazobactam 或 ertapenem？你仍欠哪些處方安全欄位？",
           "line_for_editor": 150
@@ -4180,7 +4180,7 @@
         "f2dce80e247ec96169-1": {
           "role": "counterfactual",
           "reader_gain": "第三道提取題測試T6惡化與T48藥敏的改判",
-          "nonredundancy_reason": "檢驗源控制與器官狀態的優先性",
+          "nonredundancy_reason": "檢驗源控制與器官狀態的優先性；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "破除過度推論：如果已給合適藥仍低血壓、或 T48 TMP-SMX-S，為何「再加藥」與「立即改口服」都不必然是正確反應？",
           "line_for_editor": 151
@@ -4188,7 +4188,7 @@
         "178a961a35ec9eeccb-1": {
           "role": "navigation",
           "reader_gain": "集中導向原始指南圖表與考選部官方來源頁",
-          "nonredundancy_reason": "正文散落引文無法完全取代集中查證",
+          "nonredundancy_reason": "正文散落引文無法完全取代集中查證；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "本文引用的指引、原始流程圖與考題官方 PDF，整理於 證據來源與適用界線。值班時必須以實際病況、當院 antibiogram、藥師及上級核對結果決策；本教學無法替代實際的核藥與源控制。",
           "line_for_editor": 153
@@ -4196,7 +4196,7 @@
         "8855b0790d57147837-1": {
           "role": "safety",
           "reader_gain": "結尾再次明示非院內order-ready且須即時核藥",
-          "nonredundancy_reason": "防止讀完候選藥名後忽略安全邊界",
+          "nonredundancy_reason": "防止讀完候選藥名後忽略安全邊界；刪除後會失去本段特有的理解中介。",
           "verdict": "keep",
           "excerpt_for_editor": "> 臨床使用界線：本篇是合成病例的醫學推理教材，不是任何臺灣院所已核准的 order-ready 處方。實際第一劑須由照護團隊即時核對病人過敏史、腎功能、體重、既往培養與本院 antibiogram／藥典／限制用藥規範，並同步進行復甦與感染源控制；不可直接將候選藥名複製成 EMR 醫囑。",
           "line_for_editor": 155
