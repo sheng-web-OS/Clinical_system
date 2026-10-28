@@ -44,6 +44,15 @@ class LabInferenceConsistency(unittest.TestCase):
         self.assertIn("2C", self.sources)
         self.assertIn("UKKA", self.sources)
 
+    def test_original_hyperkalemia_figure_table_used_without_overclaim(self):
+        self.assertIn("Figure 4", self.article)
+        self.assertIn("Table 22", self.article)
+        self.assertIn("不是每名 K 6.4", self.article)
+        self.assertIn("不重製原圖", self.article)
+        self.assertIn("印刷 p.75", self.sources)
+        self.assertIn("印刷 p.98", self.sources)
+        self.assertIn("不提供固定劑量", self.sources)
+
     def test_staged_evidence_and_rights_not_falsely_certified(self):
         self.assertIn("KDIGO 2012 原表／原圖", self.sources)
         self.assertIn("未完整審閱 180 頁", self.sources)
