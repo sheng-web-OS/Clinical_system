@@ -44,6 +44,8 @@
 
 2025 IDSA cUTI 提供四步：**① 病況嚴重度 → ② 既往抗藥菌與抗生素暴露 → ③ 過敏、腎功能、交互作用等病人限制 → ④ 有 sepsis 時參考該院適合族群的 antibiogram。** 指引明說近期既往尿培若有 ESBL，ceftriaxone 可能不再是適當的經驗性選擇。這仍是**機率決策**，不是把歷史培養複製成這次的新培養。([IDSA cUTI 2025：Selection of Antibiotic Therapy，Figure 1.1](https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections))
 
+[IDSA 2025 cUTI 原 Table 1.1（不同嚴重度下的候選類別及註腳）](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-table-1.1.pdf) 提供的是進入四步篩選前的候選藥物集合，並非每一個 septic 病人都要使用列出的所有藥物；若既往 ESBL、當地抗藥率或個體禁忌不允許，應回到四步選擇，而不是照抄表格。
+
 **原始 Figure 1.1 有兩個容易被誤解的數字。** 在有符合條件的**當院、最近 12 個月、相似病人族群** antibiogram 時，IDSA 提出可考慮讓最相關菌種對經驗性藥物的敏感性，在 septic shock 達 **≥90%**、sepsis without shock 達 **≥80%**；這是來自「經驗性處置不適當的風險」模型的參考閾值，**不是**每個病人必須機械套用的單一政策，更不代表目前這間醫院的實際 ESBL 敏感率。這位病人尚無當院資料，又有兩個月前具體的 resistant isolate，所以「以前的 AST 是否仍有預測力」及「現在對錯誤涵蓋能容忍多少風險」都必須拿出來與上級／藥師討論，而不是憑一個百分比自動給藥。([IDSA 2025 cUTI：原 Figure 1.1、Table 1.1 註腳](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cuti/clinical-question-1-figure-1.1.pdf))
 
 ESBL（extended-spectrum β-lactamase）是可使多種延伸型 cephalosporins 等 β-lactam 抗生素失效的酵素機轉。關鍵不是背「ESBL＝抗所有藥」，而是辨識：**ceftriaxone 這類原本常用於 UTI 的抗生素，在這位病人的先驗抗藥風險下，可能成為沒有足夠活性的第一劑。** 抗生素的譜必須對上病原及感染位置，不是藥名聽起來更廣就必然安全。
