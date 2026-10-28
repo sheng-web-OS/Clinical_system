@@ -1008,24 +1008,6 @@
       "source_review": "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md",
       "items": [
         {
-          "locator": "KDIGO 2012 AKI official full guideline Table 2 (Staging of AKI), printed p.19, PDF page 22",
-          "source_token": "Staging of AKI",
-          "mode": "source_link",
-          "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22",
-          "why_link_instead": "KDIGO 原表包含肌酐倍數、48小時/7天與尿量持續時間等精確診斷/分期條件；本文以原表連結解釋測量界線，不重製原表，也不以 AI 合成患者數字證明任何 AKI 病因或治療處方。",
-          "teaching_role": "讓讀者將AKI診斷時序與病因推斷分開；本稿以原指引說明48小時肌酐、7天倍數及連續尿量門檻，不虛構不存在的真實心衰竭病例時序。",
-          "scope_limit": "Stage 1 是功能性分期，不表示確診特定腎小管病變、液體反應性或必須開始腎替代治療。"
-        },
-        {
-          "locator": "KDIGO 2012 AKI official full guideline Figure 4 (Stage-based management), printed p.25, PDF page 28",
-          "source_token": "Figure 4",
-          "mode": "source_link",
-          "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=28",
-          "why_link_instead": "原圖陰影有風險優先序意義，需連回正版原圖圖說核對；不複製出版社受保護原像素。",
-          "teaching_role": "讀者可辨認AKI分期與監測、灌流、避免腎毒性暴露等管理行動之間的關係，不把圖中優先度當成固定處方。",
-          "scope_limit": "陰影代表隨嚴重度提高的考量，不是每一分期都有相同補液、透析、住ICU等醫囑。"
-        },
-        {
           "locator": "UK Kidney Association July 2026 original Figure 4, five steps in treatment of hyperkalaemia, printed p.75 PDF page 75",
           "source_token": "Figure 4",
           "mode": "source_link",
