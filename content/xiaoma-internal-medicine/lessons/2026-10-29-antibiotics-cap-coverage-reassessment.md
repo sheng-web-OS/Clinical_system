@@ -1,37 +1,37 @@
 # 肺炎的抗生素已經涵蓋病原，為什麼病人還是不退燒？
 
-肺炎的經驗性治療有個容易被忽略的矛盾：**第一劑必須在還不知道病原時給；但治療後沒有改善，並不能單憑這個結果判定第一劑選錯。** 如果把「病人還在發燒」直接等同「抗生素不夠廣」，可能不斷升級藥物，卻沒有釐清真正的原因。反過來，若因為已經開了符合指南的組合就不再重新評估，也可能錯過一個正在惡化的病人。
+一名 69 歲男性因為持續十天的發燒和呼吸困難來到急診。胸部 X 光有雙側多處浸潤，血氧只有 91%。醫師還不知道是哪種病原造成肺炎，卻不能等所有培養和抗原報告回來才開始治療，因此先給予 ceftriaxone 與 azithromycin。這套組合原本就包含能對抗 Legionella 的藥物。
 
-這篇以 Spretz 等人於 2024 年發表的 **69 歲男性 Legionella 肺炎**為主線。當時醫師其實已經開出可對 Legionella 發揮作用的 azithromycin；之後病人仍持續需要氧氣，團隊擴大抗生素、重新做影像，直到第 4 天得到新的病原證據才重新聚焦。完整原始病程、Table 1 與影像見[原病例全文](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。我們要理解的是：**何時懷疑感染源、病原涵蓋、治療反應或併發症出了問題，以及什麼證據才足以改變原先的判斷。**
+然而，住院後他仍然發燒，鼻導管氧氣也減不下來。團隊進一步安排胸部 CT，將抗菌藥改為 cefepime；直到第 4 天，積水暴露史與 Legionella 尿液抗原陽性的結果才一起出現。之後改用 levofloxacin，病況逐漸恢復。<a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days">這段病程出自 Spretz 等人的 2024 年病例報告</a>。
+
+這個病例難在：**「藥物有涵蓋病原」不等於「病人此刻必定退燒」，而「換藥後改善」也不等於「原來的藥已被證明無效」。** 要知道何時應改藥，得先重建當時的病情，再問哪些可能的機轉能解釋持續缺氧，以及新取得的資料究竟排除了什麼、沒有排除什麼。
 
 ## 第一問｜還不知道是哪一種菌，為什麼需要先給抗生素？又該涵蓋誰？
 
-### 一、病人真正發生了什麼？
+### 一、到急診時：足夠像肺炎，卻還不足以指定病原
 
-這名 69 歲男性有高血壓、已治療的 C 型肝炎，以及曾接受手術的口腔鱗狀細胞癌病史。約十天前開始發燒與呼吸困難，先前在外院被當作上呼吸道感染；數日後又出現噁心、腹瀉，發燒與喘加劇，因而就診。到急診時，體溫 **101.8°F（約 38.8°C）**、脈搏 **79/min**、呼吸 **18/min**、血壓 **126/71 mmHg**、SpO₂ **91%**，雙肺可聽到 crackles；X 光可見右側較明顯的雙側肺泡浸潤。
+他有高血壓、已治療的 C 型肝炎及口腔鱗狀細胞癌術後病史。起初在外院被認為是上呼吸道感染，休息與退燒後並未好轉；接著出現噁心、腹瀉，呼吸困難也愈來愈嚴重。這時不能只把問題當成長時間的感冒，因為症狀已跨越呼吸道與全身器官。
 
-檢驗顯示 **creatinine 3.3 mg/dL、Na 134 mEq/L、AST 141 U/L、ALT 117 U/L**。COVID-19、流感與 RSV 檢測陰性。原作者將他的 CURB-65 記為 **2 分**；但原文的入院實驗室表未列 BUN，讀者無法獨立重算第 2 分，不能把作者報告的數字當成此處已完整核對的量表。團隊安排一般病房收治並給予 **IV ceftriaxone 加 PO azithromycin**，同時送驗肺炎鏈球菌與 Legionella 尿液抗原。這些數字和藥物是這名真實病人的原文紀錄；報告沒有完整提供所有其他疾病的排除過程，不應替當時醫師補寫成他們已確診哪一種菌。[Spretz et al., Case Presentation 與 Table 1](https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days)。
+急診體溫 38.8°C，脈搏 79/min、呼吸 18/min、血壓 126/71 mmHg、SpO₂ 91%，雙肺聽診有 crackles。X 光呈現右側較明顯的雙側肺泡浸潤。這些資料讓**肺實質受到感染或發炎**比單純上呼吸道感染更值得優先處理；血壓尚可卻不代表肺泡氣體交換沒有受損。另一方面，僅憑浸潤也不能排除肺水腫、肺泡出血或其他非感染性病變。
+
+同時，creatinine 3.3 mg/dL、Na 134 mEq/L、AST 141 U/L、ALT 117 U/L。腎功能與肝酵素異常提示疾病可能不只局限於肺，卻不能單靠低血鈉或腹瀉便確診 Legionella；其他感染與非感染性疾病也可能有這些表現。COVID-19、流感及 RSV 檢測陰性，只能說那些被檢測的病毒未檢出。
+
+團隊將患者收治一般病房、開始 **IV ceftriaxone + PO azithromycin**，並送出肺炎鏈球菌及 Legionella 尿液抗原。值得注意的是，當時**尚未得知閣樓積水暴露史**。初始治療與檢驗是在病原尚未確定的情況下進行，而不是收到第 4 天檢查結果後倒過來設計的決策。原病例報告 CURB-65 為 2 分，但入院表格未列 BUN，無法從公開數據完整重算，量表細節留待[原始 Table 1](../antibiotics-cap-coverage-sources.md)對讀。
 
 <figure class="diuretic-figure" id="u02-original-admission-cxr">
 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2"><img src="https://assets.cureus.com/uploads/figure/file/999808/article_river_58b323c0011911ef9a0fb3882f0846ad-Chest-Xray-1-.png" alt="原病例入院胸部 X 光：右肺多處斑片狀浸潤，左肺另有較少量浸潤，不能從影像直接判定 Legionella。" loading="lazy" style="display:block;max-width:100%;height:auto;margin:0 auto;"></a>
 <figcaption>原始病例 Figure 1（入院 CXR）。此刻能從影像確立的是多處肺實質浸潤，**不是**直接辨認 Legionella。Spretz et al., Cureus 2024, Figure 1，原圖 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=2">PDF 第 2 頁</a>；依 CC BY 4.0 授權使用，原作者與來源已標明。後續 CT 原圖見 <a href="https://www.cureus.com/articles/251787-legionella-pneumonia-a-case-of-fever-prolonged-for-10-days.pdf#page=3">Figure 2／PDF 第 3 頁</a>。</figcaption>
 </figure>
 
-### 二、在培養前，應該如何思考病原？
+### 二、第一劑的理由：還沒辨認微生物，先處理最重要的治療缺口
 
-發燒、呼吸症狀與新出現的浸潤，使感染性肺炎具有高度可能性；然而浸潤也可能來自肺水腫、肺泡出血、藥物傷害或其他非感染性病變，需與臨床脈絡相互檢驗。若當下以 CAP 為優先診斷，還是不能直接從「影像像肺炎」跳成「是肺炎鏈球菌」。
+面對有症狀、低血氧與新的多處肺浸潤的住院患者，若當下臨床上最可能是 community-acquired pneumonia（CAP），抗菌藥的選擇就有時間壓力：培養要等，部分病原甚至不能靠一般培養找出；延誤有效治療可能讓肺實質傷害及器官功能持續惡化。但這不代表「涵蓋越多菌越安全」，因為廣效藥物也帶來副作用、菌相破壞與抗藥性選汰。
 
-我們首先需要覆蓋的是**常見且在當下不處理可能造成重大傷害的病原類別**，而不是把所有抗藥菌的藥都開齊。一般住院 CAP 的重要候選包括肺炎鏈球菌、流感嗜血桿菌等常見細菌，以及無法單靠一般 β-lactam 妥善涵蓋的非典型病原，例如 Legionella。病毒也可能單獨造成肺炎，或與細菌同時存在。真正的涵蓋策略，必須同時問三件事：當下是否有需要立即治療的細菌感染、嚴重程度如何、病人身上有沒有支持特殊抗藥菌的可信線索。
+先看藥物真正作用的位置。肺炎鏈球菌、流感嗜血桿菌等常見 CAP 細菌，可以在合適藥物作用下受到細胞壁合成抑制；ceftriaxone 是與 penicillin-binding proteins（PBP）結合的 β-lactam，主要負責此部分常見細菌的涵蓋。Legionella 卻能在肺泡巨噬細胞內繁殖，需要具有適當細胞內活性的藥物；azithromycin 是作用於 50S 核糖體的 macrolide，可以處理這個差異。單靠把 ceftriaxone 換成「對更多一般革蘭陰性菌有效」的 cephalosporin，並不會自動補上胞內病原的治療。
 
-這名患者起初的病毒檢測陰性，只表示所測的幾種病毒未檢出，並非細菌感染已獲證實；若另一位患者病毒檢測陽性，也不能不經臨床判斷就宣布不可能合併細菌感染。2025 年 ATS 更新與 IDSA 對其中兩類非重症患者是否常規使用經驗性抗菌藥仍有不同判斷，這是另一個值得獨立研究的問題（[來源及爭議範圍](../antibiotics-cap-coverage-sources.md)）。此處先聚焦於眼前已支持 CAP、病原未明時如何合理選擇涵蓋。
+因此，ceftriaxone 加 azithromycin 的邏輯，不是兩把武器不分方向一起灑，而是**先用不同機轉涵蓋當下有臨床價值的常見細菌和非典型病原**。2019 ATS／IDSA 對無特殊 MRSA／Pseudomonas 風險的住院非重症 CAP，建議 β-lactam 加 macrolide 或 respiratory fluoroquinolone 等合適方案；真正選擇時仍要查 QT、藥物交互作用、過敏與器官功能。[2019 ATS／IDSA 原始指南](https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/)
 
-**Ceftriaxone 與 azithromycin 不是兩種「越廣越好」的重疊藥物。** Ceftriaxone 屬 β-lactam，藉由結合 penicillin-binding proteins（PBP）阻礙細胞壁合成，可處理許多典型 CAP 細菌；azithromycin 是 macrolide，作用於細菌 50S 核糖體，抑制蛋白質合成，提供包括 Legionella 在內的非典型病原涵蓋。這是依病原生物學互補，而不等同「兩種藥一定比一種更有效」。2019 年 [ATS／IDSA 成人 CAP 指引](https://www.idsociety.org/practice-guideline/community-acquired-pneumonia-cap-in-adults) 對無 MRSA／Pseudomonas 特殊風險的住院非重症患者，提出 **β-lactam 加 macrolide** 或 **呼吸道 fluoroquinolone 單藥**等建議選項；不同方案的效益、禁忌與副作用須個別評估。這是族群層級的起始方案，不能取代每名病人的過敏史、QT 風險、交互作用與器官功能查核。
-
-### 三、為什麼 Legionella 不能靠換成「更強的 cephalosporin」解決？
-
-Legionella 是一種革蘭陰性、具有**細胞內生存能力**的細菌，能在肺泡巨噬細胞內增殖。單憑抗生素在血中可以殺一般細菌，不代表它能在感染位置達到足夠的有效暴露。β-lactam 即使對某些細胞外細菌有良好活性，也**不是 Legionella 肺炎的適切治療主軸**；macrolide 與呼吸道 fluoroquinolone 可在細胞內發揮作用，分別藉由抑制蛋白質合成與 DNA 複製相關酵素來治療。
-
-因此要分開兩個「廣」：一個藥涵蓋**更多常見革蘭陰性菌**，不代表它涵蓋**胞內病原**。後來這名患者被換成 cefepime，增加了對包括 Pseudomonas 在內部分革蘭陰性菌的涵蓋，但**cefepime 本身不因此變成 Legionella 的有效治療藥**。若前面已用 azithromycin，新增 cefepime 也不能被解讀成「因為 Legionella 沒被涵蓋所以擴藥成功」。
+這裡也有兩件事不能混淆。其一，**感染性肺炎是否成立**，仍靠整體臨床資料，不是病毒陰性就能直接證實細菌感染；病毒陽性也不必然排除共感染。其二，**是否需要 MRSA 或 Pseudomonas 的特殊涵蓋**，並不是由「很喘」或「肺部陰影很多」單獨決定，而要考慮過去分離株、近期住院和 IV 抗菌藥暴露等個別風險。患者起始用藥時尚無確定的 Legionella 病原證據，但 azithromycin 的治療光譜本來就能涵蓋它。這正是後來持續發燒時，不能直接宣告「一定是原先選錯抗菌藥」的原因。
 
 ## 第二問｜治療幾天仍發燒、需要氧氣，哪些機轉真正值得競爭？
 
