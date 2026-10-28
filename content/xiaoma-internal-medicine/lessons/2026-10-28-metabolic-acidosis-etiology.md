@@ -97,7 +97,7 @@
 
 **UOG ≈ measured urine osmolality −［2 ×（U-Na + U-K）+ U-glucose + U-urea］。**
 
-UOG 高時，在其他未測滲透物影響有限的前提下，支持較多尿 NH₄⁺；低時則提示排酸反應不足。**它同樣不是 NH₄⁺ 的直接量測**，遇到 mannitol、特別的尿液溶質或滲透利尿等情境也會失效。葡萄糖／尿素若以 mg/dL 報告，必須先換算單位，不得直接放入上式。各地可用的尿液量測不同；若診斷會改變重大處置，必要時應直接測 NH₄⁺ 或請腎臟科評估，而不是在兩個不可靠的 surrogate 中任選其一。[3]
+UOG 高時，在其他未測滲透物影響有限的前提下，支持較多尿 NH₄⁺；低時則提示排酸反應不足。若主要未測溶質來自 NH₄⁺ 與伴隨陰離子，有時用 **UOG/2** 粗估尿 NH₄⁺ 濃度，但這個除以 2 的估計依賴前述組成假設。更重要的是，**濃度不是排泄速率**：同樣的尿 NH₄⁺ 濃度，在寡尿與多尿時對每日淨排酸的意義不同，必須一併考慮尿量、creatinine 或實際排泄率。**UOG 也不是 NH₄⁺ 的直接量測**，遇到 mannitol、特別的尿液溶質或滲透利尿等情境可能失效；在 CKD 中，其對 NH₄⁺ 的估計也可能有系統性偏差。葡萄糖／尿素若以 mg/dL 報告，必須先換算單位，不得直接放入上式。各地可用的尿液量測不同；若診斷會改變重大處置，必要時應直接測 NH₄⁺ 或請腎臟科評估，而不是在兩個不可靠的 surrogate 中任選其一。[3][11][12]
 
 這裡還要拆開常被混為一談的 **urine pH 與 NH₄⁺ 排泄量**。尿 pH 告訴你游離 H⁺ 的活性，並不等於每天排出多少酸。即使尿 pH 已很低，若 NH₄⁺ 生成不足，總淨排酸仍可能不足；反過來，尿液酸性程度也受 bicarbonaturia、細菌與採樣時點影響。
 
@@ -203,5 +203,9 @@ Sodium bicarbonate 確實能影響緩衝系統與 pH，但加入 HCO₃⁻ 不�
 [9] Jung B, et al. Sodium Bicarbonate for Severe Metabolic Acidemia and Acute Kidney Injury: BICARICU-2. *JAMA*. 2025;334:2000–2010. https://doi.org/10.1001/jama.2025.20231
 
 [10] Surviving Sepsis Campaign. International Guidelines for Management of Sepsis and Septic Shock 2026. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
+
+[11] Berend K. Review of the Diagnostic Evaluation of Normal Anion Gap Metabolic Acidosis. *Kidney Dis (Basel)*. 2017;3:149–159. https://doi.org/10.1159/000479279
+
+[12] Assessing urine ammonium concentration by urine osmolal gap in chronic kidney disease. *Nephrology*. 2021. https://pubmed.ncbi.nlm.nih.gov/34288275/ 
 
 本文是供臨床學習的完整推理教材；真實病人之治療仍以其臨床狀態、院內處置規範及專科判斷為準。
