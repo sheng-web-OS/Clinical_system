@@ -62,3 +62,21 @@ Issue #180。四篇新 AI 教材目前在私有 feature branch，**DRAFT / HOLD*
 - 三篇 sibling 的連結已調整為「肺炎與少尿延伸病例」而非「總論第一篇」，避免為讀者製造不存在的發布層級；第二篇 [3] 後的斷句修復。
 - 同輪來源覆核：NICE NG148 官方現行 recommendations、UKKA July 2026 指引官網、ESE 2014 高血糖校正 +2.4 /100 mg/dL、2024 兒童 EDTA PTCP PubMed 摘要（PMID39582446）、JMA J 2026 CBC framework 官方全文與 AHRQ 2017 溶血高血鉀病例。可追查，但這次仍為**同輪作者針對缺陷修復**，不是 independent semantic PASS。
 - Release hard stop 未解除：完整逐段不同審稿脈絡與 P0/P1、source figure/footnote、藥物路徑、本稿頁面實際 360/375/390px、正式 site registry 與 production sha，均不得從 passing CI 推論。
+
+## 2026-10-28 審稿／來源原圖回查：公開教材混入 QA metadata（新發現；已修，仍 HOLD）
+
+### Defect -> minimal repair
+- 本次對 #181 四篇所有正文作獨立於既有 CI 的逐段掃描，發現讀者可見段落把「本次目視核對」「QA」「原卷尚待確認」「Draft/HOLD」「本輪 AI 審查」「未曾讀全文」等內部進度直接印成文章段落／參考文獻註記。這種**作者研究狀態污染讀者敘事**與「來源有醫學適用界線」不同，違反 EPQC 的 `internal_metadata` 與使用者明確要求。CI 之所以沒有在既有綠燈擋下，是四篇仍不在 `site/pages.json`，既有公開頁面 copy-leak gate 不保證覆蓋 unpublished draft；綠燈不能回推正文合格。
+- 對四個原檔進行最小替換：主文留下適用對象與可核實來源、臨床不確定性（例如未查 113-1 Q29 的更正答案，不當成最終版本），把「何時讀了原 PDF／AI 自查了什麼／完成哪些 QA／出版 HOLD」全保留在本私人 audit、PR、Issue，不再出現在公開面向的正文。未動原始歷史完稿、不做 public registry。
+- **沒有**假裝出版社付費全文、原始圖像、正式答案更正表已讀；避免用自然語氣包裝未驗證醫學主張。四稿仍 Draft/HOLD，不能因移除警示文字就降低審查責任。
+
+### 原始 Figure / Table 直接目視回核（本輪擴充）
+- [KDIGO 2012 AKI 完整原 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)：目視 PDF 零起算索引 **21、27、28**（印刷 p.19、25、26）。p.19 Chapter 2.1 **Table 2**：Stage 1 SCr 1.5–1.9× 或 +0.3 mg/dL，以及 UO <0.5 mL/kg/h 6–12h；p.25 Chapter 2.3 **Figure 4**：stage-based management 的 shading 在 caption 說明為措施的 priority，並非固定透析或輸液指令；p.26 **Figure 5**：依病史與檢查區分灌流、阻塞、腎小球／間質／血栓微血管等病因的評估路徑。已在 AKI 正文第 06→07 節間新增原圖**連結與教學解混**，**沒有複製圖片**，也沒有說這些圖可以直接確診病因。
+- [UKKA July 2026 官方 180 頁 PDF](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf)：目視 PDF 索引 **13、14**（印刷 p.14–15）。15.3 為疑似 pseudohyperkalemia 的成對 lithium-heparin 與 clotted serum；16.2a ECG changes 下 IV calcium **2C**；16.3.1 severe K≥6.5 的 insulin-glucose **1B**，16.3.2 moderate 6.0–6.4 **2C suggestion**；17.1/17.2 potassium rebound 與 glucose monitoring。第 14 頁亦包含對高 K 6.0–6.4 的高風險病人心律監測條件。**未**通讀 180 頁或所有附錄；不以已核對的兩頁冒稱整套 algorithm figure gate 已過。
+- FEUrea 2024 原研究 PMID [38768779](https://pubmed.ncbi.nlm.nih.gov/38768779/) 摘要確認 11 studies／1,108 patients、subset 的 sensitivity/specificity 差異；BMJ Open 2026 [e100875](https://bmjopen.bmj.com/content/16/1/e100875) 全文結果確認 12 studies／1,240 patients、sensitivity 0.74、specificity 0.78、I² >90%、certainty low。兩篇方向不同與異質性均已在正文保留，未偽稱 FEUrea 是確診工具。
+- 2024 真實 pseudothrombocytopenia 案例 PMID [39582446](https://pubmed.ncbi.nlm.nih.gov/39582446/) 摘要直接核對 13F、EDTA 17K、citrate 55K、heparin 175K；這三筆不可作為獨立連續病例或通則。
+- KDIGO [AKI/AKD 官方狀態頁](https://kdigo.org/guidelines/acute-kidney-injury/) 截至本輪仍明示 2026 為 public-review draft、Work Group 正整理正式發布，不以草案取代 2012 現行分期。
+
+### 再驗收（執行中）
+- 以 exact branch Git blobs 重新掃描四篇讀者正文中的高信心 metadata leakage、檢查標題／跨篇連結／原圖 URL、跑本 HEAD 的 GitHub Actions；這些僅是**結構與來源防退化**，不是另造同一脈絡的 independent_ai_pass。
+- **真正 Release HOLD**：四篇及 #186 的 exact-blob 分離醫學／EPQC 審稿、來源圖表與權利的全項必要檢查、各稿實際 360/375/390px 讀者畫面；尚無真實學習遷移數據。絕不直接從 code CI 成功推論已發布或病人安全。
