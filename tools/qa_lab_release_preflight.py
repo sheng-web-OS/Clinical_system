@@ -193,6 +193,9 @@ def check_pages(site, output, candidate_root):
                             raise AssertionError("Q29 anchor absent at destination")
                         page.goto(origin+path28,wait_until="domcontentloaded")
                         row=page.locator('[id="'+archive_anchor(r28)+'"]')
+                        # The catalog intentionally hides additional study materials
+                        # inside a native <details>. Follow the actual reader UI.
+                        row.locator("details.exam-catalog-materials > summary").click()
                         link=row.locator('a[href^="'+U03+'#part-"]').first
                         link.click()
                         if not page.url.startswith(origin+U03+"#part-"):
