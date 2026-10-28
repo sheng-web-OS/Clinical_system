@@ -1126,7 +1126,7 @@
       "items": [
         {
           "locator": "BTS Guideline for Pleural Disease (Thorax 2023), Spontaneous pneumothorax / acute management recommendation and post-first recurrence section; ERS/EACTS/ESTS 2024, guideline Figure 1 and PICO 1–4",
-          "source_token": "BTS 2023",
+          "source_token": "BTS Pleural",
           "teaching_role": "原創三層並行決策圖，將生理急迫性、當次處置適用條件與未來復發預防拆開，避免以單一胸片大小代替不同決策目標。",
           "scope_limit": "本圖不是兩部原指南的逐項複刻，不能指定個別病人的減壓位置、裝置、手術術式或替代當地急診與胸外流程。",
           "mode": "illustrated",
