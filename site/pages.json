@@ -3463,5 +3463,15 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/metabolic-acidosis-sources.md",
+    "output": "xiaoma-metabolic-acidosis-sources.html",
+    "title": "代謝性酸中毒｜病例與原始證據",
+    "subtitle": "尿腸瘻管原始圖表、IBCC、診斷效度與治療研究的來源定位",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "酸鹼與腎臟",
+    "navigation": false
   }
 ]
