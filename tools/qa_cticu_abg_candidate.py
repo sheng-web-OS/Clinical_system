@@ -32,7 +32,7 @@ def build_private_preview(folder: Path, label: str, mdname: str, svgname: str):
     assert svg.strip().startswith("<svg ") and "<desc" in svg and "</svg>" in svg
     assert f'src="{svgname}"' in article
     assert "figcaption" in article
-    parser = mistune.create_markdown(plugins=["table", "strikethrough", "url"])
+    parser = mistune.create_markdown(escape=False, plugins=["table", "strikethrough", "url"])
     body = parser(article)
     (folder / svgname).write_text(svg, encoding="utf-8")
     css = (ROOT / "site/styles.css").read_text(encoding="utf-8")
@@ -118,6 +118,20 @@ def main():
     failures = [x for x in results if x["status"] != "PASS"]
     for x in results:
         print(f"CTICU ABG {x['article']} {x.get('viewport', x.get('scope'))}: {x['status']}")
+    # Build UNREVIEWED exact-source-blob packets for a genuinely distinct reviewer.
+    # These are prerequisites for approval, never AI-written approval receipts.
+    import subprocess
+    import sys
+    for label, mdname, _ in ASSETS:
+        relative = f"content/xiaoma-internal-medicine/lessons/{mdname}"
+        packet_process = subprocess.run(
+            [sys.executable, "site/semantic_gate.py", "--packet", relative],
+            cwd=ROOT, check=True, capture_output=True, text=True)
+        packet = json.loads(packet_process.stdout)
+        assert packet["reviewer_context"] == "UNREVIEWED"
+        (out / f"abg-{label}-UNREVIEWED-epqc-packet.json").write_text(
+            json.dumps(packet, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"CTICU ABG {label}: UNREVIEWED packet {len(packet['paragraphs'])} reading units")
     if failures:
         raise SystemExit(f"{len(failures)} CTICU visual preflight failures: {failures!r}")
     print("PASS: PRIVATE CSS-backed preflight only; NOT production or independent medical review")
