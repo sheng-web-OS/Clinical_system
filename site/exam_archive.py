@@ -357,7 +357,7 @@ def add_lesson_exam_backlinks(page, catalog, body, root):
             '<li><a href="' + escape(href, quote=True) + '">' +
             escape(label) + '</a><small>' + escape(record["topic"]) + '</small></li>'
         )
-    marks = list(re.finditer(r'<h2 id="part-(\\d+)">', body))
+    marks = list(re.finditer(r'<h2 id="part-(\d+)">', body))
     available = {int(m.group(1)) for m in marks}
     if not set(grouped) <= available:
         raise ValueError("Missing rendered section for link-only year/question backlinks: " + page["source"])
