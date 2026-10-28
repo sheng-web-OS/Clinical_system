@@ -1,13 +1,13 @@
 # ESBL 尿源性感染：真實病例、原始研究與適用界線
 
-本頁對應《為何這樣選抗生素？從真實 ESBL 尿源性感染理解證據與決策》。**主文開頭的兩篇病例報告是可核對的真實出版案例；之後 02:10 的 68 歲男性與全套 T0/T48 值班資料則為不同的、完全合成的反事實練習。絕不可合併病人身分、檢驗數字與醫療處置，也不可把合成資料當成 case report。**
+本頁對應《為何這樣選抗生素？從真實 ESBL 尿源性感染理解證據與決策》。**主文以兩篇原始病例、微生物學、MERINO 隨機試驗及具適用條件的 IDSA 指引為證據主幹；只保留一小段明示 AI 合成的資訊缺口練習，並非原來完整 02:10／T48/T72 處方模擬。兩份真實病例的身分、MIC/AST、lab、時間和處置不可與合成練習或其他病人混用。**
 
 ## 真實病例：觀察層證據（不是藥物療效證據）
 
-1. [Polymyxin B and low-dose hydrocortisone treatment in a patient with uroseptic shock in a rural health unit (2021; PMCID PMC8633641)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)：個案為 81 歲女性、因腫瘤阻塞上泌尿道，尿源性敗血性休克；報告涵蓋培養 ESBL-producing *E. coli*、血流動力變化與經皮腎造瘻引流。**個案使用 PMX-DHP／hydrocortisone 不代表這些措施已獲試驗確證或可常規照做**；須由 SSC 與原始比較研究另行評估。
+1. [Arai et al., 81F 尿源性敗血性休克原始全文／圖 1](https://academic.oup.com/omcr/article/2021/11-12/omab109/6439717)（[PMCID PMC8633641](https://pmc.ncbi.nlm.nih.gov/articles/PMC8633641/)）：病例段落報告入院 BP **68/36 mmHg**、WBC **27.1 ×10³/μL**、Cr **2.7 mg/dL**、lactate **3.3 mmol/L**；CT 顯示左側 UPJ 阻塞和膿瘍。初始輸液、升壓和 carbapenem 後，因持續低血壓而暫緩腎造瘻；作者報告 PMX-DHP 與 hydrocortisone 後約 8 小時循環改善，之後完成 percutaneous nephrostomy；第 4 天血／尿培養皆 ESBL-producing *E. coli*。**這是原文觀察到的先後順序，沒有對照試驗證明 PMX-DHP 或 hydrocortisone 的獨立療效，也不代表一般病人必須等待八小時才作 source control。** 原圖、註腳及全部研究方法的獨立核讀尚待完成。
 2. [Evins et al. Community-Acquired, ESBL-Producing and XDR *E. coli* in a 28-Year-Old Pyelonephritis Patient Lacking Risk Factors. *Antibiotics* 2021;10:533](https://www.mdpi.com/2079-6382/10/5/533)：病例有住院初期 ceftriaxone、後續尿培養 ESBL、換用 meropenem 的時間序列；原文 **Table 1** 明列 ceftriaxone >64 (R)、meropenem <0.25 (S)、TMP-SMX >320 (R)、piperacillin–tazobactam 64 (I)。這是**當次菌株的實測 MIC/AST**；並無可核對的兩個月前 ESBL 舊培養史，不能推為「舊培養決定首劑」的個案因果驗證。
 
-**原始 case report 的「作者觀察」只能供臨床時序及機轉的具體化；藥物/介入的比較效益須回到 RCT、綜合證據與現行 guideline。原文未報告的量測、劑量與時序一律 NOT_REPORTED；禁止 AI 補造。** 現階段的網頁檢索只能確證上述摘要／可見內文，仍須在審稿時逐段檢閱全文、核對原表及所有註腳，不能以此頁聲稱完整原始文獻審查已通過。
+**病例觀察與療效證據必須分開。** 81F 的主要病例段落文字和實測時序已核到原始全文可讀內容；28F 的原始 Table 1 MIC/AST 已核對。這不等於圖 1／2 原像、所有方法與 guideline footnotes 已完成獨立查驗，更不等於醫師／藥師簽核。原文沒報告的 lab、病人基線、實際劑量不可補造；藥物療效只能以適合母群的原始比較研究和現行指南支持。
 
 ## 系統性證據與本地臨床責任
 
