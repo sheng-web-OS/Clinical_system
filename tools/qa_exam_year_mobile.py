@@ -15,7 +15,7 @@ import threading
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "site"))
 from catalog import load_pages
-from exam_archive import archive_anchor, concept_url, question_key, question_records
+from exam_archive import archive_anchor, concept_url, question_connections, question_key, question_records
 
 EXPECTED = [
     (111, 1, 2, "醫學（五）", 26),
@@ -75,7 +75,9 @@ def run(dist: Path, out: Path) -> int:
         raise RuntimeError("HOLD: no readable Traditional Chinese font installed for phone screenshots")
 
     out.mkdir(parents=True, exist_ok=True)
-    records = {question_key(record["exam"]): record for record in question_records(load_pages(ROOT))}
+    pages = load_pages(ROOT)
+    records = {question_key(record["exam"]): record for record in question_records(pages)}
+    connections = question_connections(pages, ROOT)
     missing = set(EXPECTED) - records.keys()
     if missing:
         raise ValueError("Missing published official questions: " + repr(missing))
@@ -103,33 +105,56 @@ def run(dist: Path, out: Path) -> int:
                             if row.count() != 1:
                                 problems.append("Question missing or duplicated: " + str(k))
                                 continue
-                            expected_href = concept_url(record["page"], record["embedded"], ROOT)
+                            # Clicking Q is the canonical answer, including its own
+                            # concept heading; that same article is NOT a second 教材.
+                            direct_href = record["page"]["output"] + "#" + record["anchor"]
+                            entry = row.locator("a.exam-question-entry")
+                            if entry.count() != 1 or entry.get_attribute("href") != direct_href:
+                                problems.append("Original question answer link missing: " + str(k))
+                                continue
+                            expected_materials = connections.get(k, [])
                             detail = row.locator("details.exam-catalog-materials")
-                            if detail.count() != 1 or not detail.locator("summary").is_visible():
-                                problems.append("Study-materials control missing: " + str(k))
-                                continue
-                            detail.locator("summary").click()
-                            links = detail.locator("nav.exam-concept-links a")
-                            hrefs = links.evaluate_all("(nodes) => nodes.map(n => n.getAttribute('href'))")
-                            if expected_href not in hrefs:
-                                problems.append("Wrong material link: " + str(k))
-                                continue
+                            if not expected_materials:
+                                if detail.count() or row.get_attribute("data-materials"):
+                                    problems.append("Redundant self-material shown for Q-only row: " + str(k))
+                            else:
+                                if detail.count() != 1 or not detail.locator("summary").is_visible():
+                                    problems.append("Genuine material control missing: " + str(k))
+                                    continue
+                                if detail.get_attribute("open") is None:
+                                    detail.locator("summary").click()
+                                links = detail.locator("nav.exam-concept-links a")
+                                hrefs = links.evaluate_all("(nodes) => nodes.map(n => n.getAttribute('href'))")
+                                expected_hrefs = [x["href"] for x in expected_materials]
+                                if sorted(hrefs) != sorted(expected_hrefs):
+                                    problems.append("Materials should only contain distinct concept lessons: " + str(k))
+                                    continue
+                                if any(href.startswith(record["page"]["output"] + "#")
+                                       for href in hrefs):
+                                    problems.append("Redundant own-answer material link: " + str(k))
+                                for expected_href in expected_hrefs:
+                                    dest = browser.new_page(viewport={"width": width, "height": 844},
+                                                            is_mobile=width <= 390)
+                                    try:
+                                        dest.goto(origin + expected_href, wait_until="domcontentloaded", timeout=30000)
+                                        fragment = expected_href.split("#", 1)[1]
+                                        if dest.locator('[id="' + fragment + '"]').count() != 1:
+                                            problems.append("Real concept section missing: " + str(k))
+                                    finally:
+                                        dest.close()
                             bounds = row.evaluate("""el => {
                                 const rect = el.getBoundingClientRect();
-                                return {left:rect.left,right:rect.right,
-                                    summaryText:el.querySelector('summary').innerText};
+                                return {left:rect.left,right:rect.right};
                             }""")
                             if bounds["left"] < -2 or bounds["right"] > width + 2:
                                 problems.append("Clipped question row: " + str(k))
-                            if "教材" not in bounds["summaryText"]:
-                                problems.append("Materials label not visible: " + str(k))
+                            # Validate the same Q always opens the preserved answer page.
                             dest = browser.new_page(viewport={"width": width, "height": 844},
                                                     is_mobile=width <= 390)
                             try:
-                                dest.goto(origin + expected_href, wait_until="domcontentloaded", timeout=30000)
-                                fragment = expected_href.split("#", 1)[1]
-                                if dest.locator('[id="' + fragment + '"]').count() != 1:
-                                    problems.append("Target section missing: " + str(k))
+                                dest.goto(origin + direct_href, wait_until="domcontentloaded", timeout=30000)
+                                if dest.locator('[id="' + record["anchor"] + '"]').count() != 1:
+                                    problems.append("Canonical answer anchor missing: " + str(k))
                             finally:
                                 dest.close()
                         # Reader action, not just an HTML string check: return to the same Q.
