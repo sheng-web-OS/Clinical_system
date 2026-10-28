@@ -155,9 +155,11 @@ def validate_exam_catalog(pages, root=None):
         used = set()
         for link in links:
             required = set(IDENTITY_FIELDS) | {"focus"}
-            if not isinstance(link, dict) or not required <= set(link) or set(link) - required - {"concept_heading", "question_heading"}:
+            if not isinstance(link, dict) or not required <= set(link) or set(link) - required - {"concept_heading", "question_heading", "embed"}:
                 raise ValueError("Invalid related exam metadata")
             _validate_identity(link)
+            if "embed" in link and not isinstance(link["embed"], bool):
+                raise ValueError("Related exam embed flag must be a boolean")
             key = question_key(link)
             if key not in records:
                 raise ValueError("Related exam is not a published official question: " + repr(key))
@@ -310,8 +312,8 @@ EXAM_NOTICE = "資料來源：考選部。本官方網站資料歡迎連結使�
 def render_related_questions(page, records, rendered):
     cards = []
     for link in page.get("related_exams", []):
-        if link.get("question_heading"):
-            continue  # This article already contains the question; link it in place.
+        if link.get("question_heading") or link.get("embed", True) is False:
+            continue  # Link exam to the lesson without duplicating the full question bank.
         record = records[question_key(link)]
         origin = record["page"]
         body = rendered[origin["output"]]["body"]
