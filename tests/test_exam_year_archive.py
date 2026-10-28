@@ -123,6 +123,45 @@ class ExamArchiveContract(unittest.TestCase):
                     checked += 1
         self.assertEqual(checked, 49)
 
+    def test_heart_sounds_deep_material_links_are_per_question_and_not_embedded(self):
+        """Previously missed release requirement: year-page '教材' resolves to real deep sections."""
+        from exam_archive import (
+            question_connections, question_key, concept_url, render_related_questions
+        )
+        lesson = next(p for p in self.pages if p["output"] ==
+                      "xiaoma-20261027-heart-sounds-structural-exam.html")
+        materials = lesson.get("related_exams", [])
+        self.assertEqual(len(materials), 36, "A deep lesson must not ship with zero year-archive mappings")
+        self.assertTrue(all(link.get("embed") is False for link in materials),
+                        "Do not inject dozens of full exam explanations into the clinical lesson")
+        connections = question_connections(self.pages, ROOT)
+        archive = render_exam_archive(self.pages, ROOT)
+        records = {question_key(r["exam"]): r for r in question_records(self.pages)}
+        for link in materials:
+            key = question_key(link)
+            with self.subTest(identity=key):
+                self.assertIn(key, records, "Cannot link nonexistent exam IDs")
+                expected = concept_url(lesson, link, ROOT)
+                self.assertRegex(expected, r"#part-[1-8]$")
+                self.assertEqual(sum(row["href"] == expected for row in connections[key]), 1)
+                anchor = archive_anchor(records[key])
+                row = archive.split('id="' + anchor + '"', 1)[1].split('</div>', 1)[0]
+                self.assertIn('href="' + expected + '"', row)
+                self.assertIn("心音與結構性心臟病", row)
+        # All 49 old official identities remain; 36 get this additional, relevant topic link.
+        self.assertEqual(sum(len(p.get("exam_questions", [])) for p in self.pages if
+                             "heart-sounds-cross" in p["source"]), 49)
+        self.assertEqual(render_related_questions(lesson, records, {}),
+                         "", "Metadata links must not turn the main lesson back into an exam bank")
+
+    def test_related_exam_embed_flag_requires_boolean(self):
+        pages = copy.deepcopy(self.pages)
+        article = next(p for p in pages if p["output"] ==
+                       "xiaoma-20261027-heart-sounds-structural-exam.html")
+        article["related_exams"][0]["embed"] = "false"
+        with self.assertRaisesRegex(ValueError, "embed flag must be a boolean"):
+            validate_exam_catalog(pages)
+
     def test_future_year_sorts_above_108_automatically(self):
         pages = copy.deepcopy(self.pages)
         newer = copy.deepcopy(next(p for p in pages if p.get("exam")))
