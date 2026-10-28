@@ -1150,6 +1150,30 @@
         }
       ]
     },
+    "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md": {
+      "status": "represented",
+      "source_review": "content/xiaoma-internal-medicine/pe-pesi-aha-acc-2026-sources.md",
+      "items": [
+        {
+          "locator": "Creager et al 2026 AHA/ACC acute PE official clinical categories Figure 2, A/B/C1–C3/D1–D2/E1–E2 and respiratory modifier R, society original PDF",
+          "source_token": "Figure 2",
+          "mode": "source_link",
+          "url": "https://professional.heart.org/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Categories-Figure-Inforgraphic.pdf?sc_lang=en",
+          "teaching_role": "分類圖讓讀者同時看到臨床嚴重度、右心受損、灌流失代償與呼吸修飾符的不同軸，避免把 A–E 解讀成單純連續數值或所有人必經病程。",
+          "scope_limit": "臨床分類圖不能單獨確診 PE、指定溶栓或將一次 lactate >2 等同 D2；D2 transient hypotension 的正文／圖例差異需一併對讀。",
+          "why_link_instead": "已對讀學會官方原圖的分類、圖例與適用邊界，公開頁以文字重建核心分支並外連學會原圖，避免未授權重製出版社原像素。"
+        },
+        {
+          "locator": "Creager et al Circulation 2026;153:e1012 Table 7, original Summary of Advanced Therapy Recommendations, four modalities by AHA/ACC A–E categories",
+          "source_token": "Table 7（Circulation",
+          "mode": "source_link",
+          "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005",
+          "teaching_role": "原表讓讀者核對 C2 3:Harm、C3 2b、D 2b、E1／E2 不同再灌流術式的 COR/LOE，尤其 E2 N/A 與 No Benefit 的區分直接改變介入風險判斷。",
+          "scope_limit": "Table 7 反映發布時的證據與分類，不能將 N/A 解讀為絕對禁忌、將 Class 3 No Benefit 等同 Harm，亦不能將後續 2026 導管試驗倒填到原指引。",
+          "why_link_instead": "原始推薦表與細節註腳已逐欄比對；只使用來源頁的精確文字定位及官方網頁連結，讀者可開啟全文查核，公開站不複製原表像素。"
+        }
+      ]
+    },
     "content/xiaoma-internal-medicine/lessons/2026-10-29-eudka-real-case.md": {
       "status": "represented",
       "source_review": "content/xiaoma-internal-medicine/eudka-case-guideline-sources.md",

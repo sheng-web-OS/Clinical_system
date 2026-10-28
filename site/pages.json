@@ -3508,6 +3508,59 @@
     "navigation": false
   },
   {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md",
+    "output": "xiaoma-20261029-pe-pesi-aha-acc-2026.html",
+    "title": "肺栓塞的分數不是診斷書：從 PESI、右心室到 2026 AHA/ACC A–E 分級",
+    "subtitle": "從真實病例建立 PESI／sPESI、Bova、Hestia 與 A–E／R 分級，再回到右心衰竭、組織灌流及再灌流治療的風險",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-pe-pesi-aha-acc-2026-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 9,
+        "focus": "PE 診斷的 CTPA、D-dimer 與心臟受損評估分開；確診後才進入 PESI/A–E 風險分層。",
+        "concept_heading": "二、診斷前與診斷後：Wells 和 PESI 根本不在回答同一題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 8,
+        "focus": "以可逆或持續危險因子與出血風險評估停藥，不將急性 PESI／A–E 直接當作抗凝療程長短。",
+        "concept_heading": "十一、急性期之外：停藥不是根據當初哪一類 PE"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "focus": "Wells 不是 PE 嚴重度，右心室 afterload、灌流與血流動力學決定急性風險。",
+        "concept_heading": "七、RV 與 biomarker：為什麼同時異常比各自一項更值得注意？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pe-pesi-aha-acc-2026-sources.md",
+    "output": "xiaoma-pe-pesi-aha-acc-2026-sources.html",
+    "title": "2026 肺栓塞 PESI／A–E｜指南、原始病例與治療研究",
+    "subtitle": "官方分類原圖、Table 7、PESI/Hestia、真實病例和三項再灌流試驗",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
     "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-eudka-real-case.md",
     "output": "xiaoma-20261029-eudka-real-case.html",
     "title": "血糖只有 153 mg/dL，為什麼酮酸中毒已經危及生命？",
