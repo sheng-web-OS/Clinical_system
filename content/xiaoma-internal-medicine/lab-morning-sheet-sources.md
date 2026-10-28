@@ -1,4 +1,4 @@
-# Lab Medicine 01｜早晨一張 Lab sheet：真實病例、實驗室原理與證據界線
+# Lab Medicine 01｜檢體可信度：真實病例、實驗室原理與證據界線
 
 本頁對應[〈早晨一張 Lab sheet：從真實病例與原始研究，判斷數字究竟能告訴我們什麼〉](lessons/2026-10-28-lab-morning-sheet.md)。這篇文章的核心，是依照 2024 年 AML 個案的原始採樣記錄，理解為什麼檢體處理會改變報告中的 K；再以 66 人和 2,440 人兩份不同納排條件的急診研究，判斷這種經驗可以外推到哪裡。後段 AKI 與心衰竭的說明則取自**另外的研究與指引**，並非替 AML 患者補寫心衰竭或新的抽血與處置。以下連結提供原文、表圖位置，以及每個推論不能跨越的界線。
 
@@ -6,7 +6,7 @@
 
 **A. 2024 AML 案例：介入與重驗混在一起，不能聲稱無治療的 K 7.8→3.6。** [Manual flagging failed to identify pseudohyperkalemia in acute myeloid leukemia: case report, *International Journal of Emergency Medicine*](https://pmc.ncbi.nlm.nih.gov/articles/PMC11462689/)；[原出版社](https://link.springer.com/article/10.1186/s12245-024-00734-x)。原文 Table 1 明確列 2024-04-03 四個 samples：A 12:00 K3.0、B 20:03 K6.7、C 20:48 K7.8、D 23:37 K3.6 mEq/L。B/C 用 pneumatic tube、D 走路送檢；原患者 WBC 206.8 ×10³/µL（90% blasts）、Hb 7.9 g/dL、platelet 38 ×10³/µL、creatinine 1.2 mg/dL。**同病例的另一項 analyte 也曾造成困擾：**居家採樣 Hb 4.5 g/dL（兩天前 7.5）觸發急診轉診，急診 Hb 7.9 g/dL；作者稱居家 Hb 4.5 為錯誤讀值，卻沒有證據可把 Hb 差異歸因於造成 K 假高的同一個確定機轉。這些是原文 Case presentation 的觀察，不是 AI 補造的 CBC 數據。 **原作者明示 D 於降鉀治療開始約 30 分鐘後取得**，因此不能把後續 3.6 當「無介入的乾淨重驗」；不同採檢/運輸方式亦不能單獨分出每一因素的因果效應。這篇 case report 支持對該患者檢體失真的調查，不構成普遍 ECG/AKI/治療決策規則。
 
-**B. 低風險急診 66 人研究：只有符合納排條件才有外推可能。** [Accuracy of Hemolyzed Potassium Levels in the Emergency Department, *Western Journal of Emergency Medicine*](https://pmc.ncbi.nlm.nih.gov/articles/PMC7673871/)；[PubMed](https://pubmed.ncbi.nlm.nih.gov/33207176/)。原始 399 encounter 先篩出符合年齡、腎功能與重抽條件者，排除高風險或樣本重抽超時後只留下 66。初次有溶血 K 中位數 5.8 mmol/L、重抽中位 3.9、重抽未持續高鉀 0/66；**95% CI 0–6%** 並不等於全病人群的 0% 真風險。原文排除 ≥65 歲、eGFR<60、調鉀藥物、血液惡性疾病、重抽前降鉀治療及其他條件。此研究不足以支持病房 AKI／ACEi／老年患者延後危急處理，且未直接測量不重抽之決策的因果安全性。
+**B. Wilson et al. 2020（正式發表於 2020-10-20）的低風險急診 66 人研究：只有符合納排條件才有外推可能。** [Accuracy of Hemolyzed Potassium Levels in the Emergency Department, *Western Journal of Emergency Medicine*](https://pmc.ncbi.nlm.nih.gov/articles/PMC7673871/)；[PubMed](https://pubmed.ncbi.nlm.nih.gov/33207176/)。原始 399 encounter 先篩出符合年齡、腎功能與重抽條件者，排除高風險或樣本重抽超時後只留下 66。初次有溶血 K 中位數 5.8 mmol/L、重抽中位 3.9、重抽未持續高鉀 0/66；**95% CI 0–6%** 並不等於全病人群的 0% 真風險。原文排除 ≥65 歲、eGFR<60、調鉀藥物、血液惡性疾病、重抽前降鉀治療及其他條件。此研究不足以支持病房 AKI／ACEi／老年患者延後危急處理，且未直接測量不重抽之決策的因果安全性。
 
 **C. 同日重抽 2,440 人研究：不可用分母錯置宣稱急診高鉀有 35% 一定是假的。** [Hyperkalemia or Not? A Diagnostic Pitfall in the Emergency Department, *West J Emerg Med* 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11908522/)；[PubMed](https://pubmed.ncbi.nlm.nih.gov/39918159/)。在有**首次 whole blood/plasma K≥5.0、當日又完成重抽**的急診病人中，1,576（65%）再次高鉀，864（35%）重抽正常；後者之中 597（69%）第一次檢體有溶血。**這不是所有抽血者、所有初次高鉀者或所有住院者的母體發生率**；研究用「當日重抽結果」操作性定義 factitious，不能自動排除選擇偏差、治療時序與其他樣本差異。2019/2020 小樣本與 2025 大樣本研究的分母及適用對象不同，不能拿兩個百分比直比或合併成單一「重抽安全規則」。
 
