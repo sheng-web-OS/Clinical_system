@@ -17,67 +17,35 @@
 
 **證據界線**：真實病例只支持病例內觀察，單一研究的比例只適用其納排條件；HK 急救閾值、確認採檢與醫囑須回 UKKA 等當代指引、病人當下狀態及當地院內 SOP。以下原始來源與圖表的限定審查，不代表這個新版已獲獨立審稿 PASS。
 
-## 1. 為何一張 BMP 可能不完全可信？
+## 1. 為什麼同一張 BMP／CBC 的數字會彼此矛盾？
 
-[Takieddine LT, El-Khoury JM. Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025. *American Journal of Kidney Diseases*. 2025;85(1):104–114. DOI: 10.1053/j.ajkd.2024.06.019.](https://www.sciencedirect.com/science/article/pii/S0272638624009211)
+[Takieddine & El-Khoury, *Laboratory Anomalies in the Basic Metabolic Panel: Core Curriculum 2025*, AJKD 85:104–114](https://pubmed.ncbi.nlm.nih.gov/39396361/) 討論檢驗的前分析（採血、試管、運送、儲存）、分析（方法與儀器）和報告後詮釋的誤差來源；[期刊全文入口](https://www.ajkd.org/article/S0272-6386(24)00921-1/fulltext)。這些途徑說明 **K 的試管濃度**與**病人體內即時濃度**為何有時不同，卻不能僅因數據不合就宣告病人無危險。
 
-[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/39396361/)與 [AJKD 期刊來源頁](https://www.ajkd.org/article/S0272-6386(24)00921-1/fulltext)。
+[2024 AML 原始病例 Table 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC11462689/) 真正有用的不是最後一個 K 3.6，而是四筆樣本的不同來源：A 從家中採、plasma，B/C 在急診使用 whole blood 與氣送管，D 雖仍是 whole blood、改成步行送檢，卻已處在降鉀治療之後。若要研究「單獨是氣送管造成多少 K 升高」，必須保留其他條件不變；原病例沒有達到這個反事實條件。
 
-**臨床關聯**：preanalytical（採檢／運輸／儲存）、analytical（測定方法）與 postanalytical（報告詮釋）可造成與實際病況不符的異常；hemolysis 影響 K 的例子是本篇判讀鏈起點。無明顯 ECG 變化、標註溶血、與既往差距大，會提高重驗的重要性，但**無法單獨排除真正高鉀**。
+此病例的 **Hb 4.5 g/dL（家中檢體）與 7.9 g/dL（急診複測）** 也不一致；作者認為前者是檢驗錯誤。這不等於讀者有足夠資訊定量還原錯誤原因；它提醒我們**CBC 的採樣可信度與 chemistry 的干擾須分別查證**。而 AML 患者 WBC 206.8×10³/µL、90% blasts、platelet 38×10³/µL，不能被套用一般低風險急診重抽研究。
 
-**本文並未聲稱**原研究提供了本篇 70 歲合成病例、K 6.3→4.9 數值或一套固定高鉀急救規則；這些只是教學情境。公開網站不重製該論文受版權保護的原圖。
+## 2. Cr 是濃度及時間的訊號，不是 AKI 病因的直接測量
 
-**原始圖表核對邊界**：AJKD 原文（85 卷 1 期，104–114 頁）可查得電解質異常與採樣、測量干擾的論述，並有 Figure 1 檢驗流程相關說明；本次僅核實書目、可讀的期刊正文與已顯示的內容，未逐張取得 Figure/Table 全部原畫面和圖說。因此不把本文的病例圖說成 AJKD Figure 1 的翻拍，亦不把該來源列作「原始圖表已完整目視驗收」。若欲深入查溶血 index、不同樣本型態與假性異常的定量限制，應回看期刊全文及各院實驗室條件。
+[KDIGO 2012 AKI 官方原始完整 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf) 中 **Table 2 — Staging of AKI（印刷 p.19，[PDF p.22](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=22)）** 規定肌酐與尿量分期；在 48 小時內 SCr 增加 ≥0.3 mg/dL，或 7 天內 ≥1.5 倍基線，或尿量 <0.5 mL/kg/h 持續至少 6 小時，均須按定義的時間條件判讀。**Figure 4 — Stage-based management（印刷 p.25，[PDF p.28](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf#page=28)）** 將容量與灌流、避免腎毒性暴露、Cr/尿量監測與依病情處理的優先度連起來，**不是**「每個 AKI 病人補一定量 saline」或任何單一的透析 cutoff。
 
-## 2. AKI 是時間定義，不是 Cr 的單次絕對值
+例如 *假想*「75 kg 病人最近 8 小時尿量總計 240 mL」只能得到平均 0.4 mL/kg/h；**8 小時總量不足以單獨證明連續 6 小時的尿量門檻，還要核對分時及收集完整性**。此處是單純的測量限制示例，**不是** 2024 AML 病人的病歷，也不是合成患者的治療方案。
 
-[KDIGO 2012 AKI work group 綜述：Diagnosis, evaluation, and management of acute kidney injury: a KDIGO summary (Part 1).](https://pmc.ncbi.nlm.nih.gov/articles/PMC4057151/)
+[ADLM/AACC *Guidance Document on Laboratory Investigation of AKI*, 2021](https://academic.oup.com/jalm/article/6/5/1316/6272705) 補足採檢時間、檢驗準確度及動態變化的背景；[KDIGO CKD 2024](https://kdigo.org/guidelines/ckd-evaluation-and-management/) 的穩態 eGFR 用法不可直接當作 AKI 的即時腎清除能力。
 
-[ADLM/AACC Guidance Document on Laboratory Investigation of Acute Kidney Injury, JALM 2021](https://academic.oup.com/jalm/article/6/5/1316/6272705)。
+## 3. 心衰竭的 Cr 上升：需要的是病因證據，而不是從 Lab 直接開藥
 
-血清 creatinine 若 48 小時內增加 ≥0.3 mg/dL、7 日內增加至 ≥1.5 倍基線，或尿量低於 0.5 mL/kg/h 達至少 6 小時，即符合 KDIGO AKI 定義。主文以兩次獨立重抽的 Cr 1.68、1.69 及昨天 1.16 判斷 AKI；尿量 240 mL/8h 在 75 kg 情境中只有 8 小時平均約 0.4 mL/kg/h；**不能僅由 8 小時總量證實連續 6 小時的門檻**，仍須核對分時紀錄與漏記，才能判斷尿量診斷條件。AKI 定義不會回答病因；為確認腎前、鬱血、內因性傷害或阻塞，需要另外的病人與尿液證據。
+[2022 AHA/ACC/HFSA Heart Failure Guideline](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012) 與 [Michigan Medicine Inpatient Diuretic Guideline，Q18](https://www.ncbi.nlm.nih.gov/books/NBK589894/) 說明住院失代償心衰竭須整合 **congestion、perfusion、治療中的腎功能變化與安全風險**。有些病人在有效去鬱血時會有暫時性的 Cr 升高，也有病人可能存在低灌流、持續腎靜脈鬱血、藥物或腎實質傷害；兩種情況不能只靠 Cr 濃度區分。
 
-[KDIGO 2024 CKD guideline](https://kdigo.org/guidelines/ckd-evaluation-and-management/)與[非穩態 eGFR 限制的臨床導讀](https://academic.oup.com/ajhp/article/82/12/660/8107680)。CKD 的穩態估算架構不可直接視為 AKI 當下瞬間真實 GFR。
+正文談的是**這些原始研究與指引所容許的機轉和決策界線**，不是把 2024 AML 患者突然寫成有心衰竭，或讓虛構 70 歲病人的 Cr/I-O 替另一人決定停止利尿或補液。
 
-**已目視的 KDIGO 2012 原表／原圖**：Chapter 2.1，印刷 p.19 **Table 2 (Staging of AKI)**，明列 Cr ≥0.3 mg/dL 的 stage 1 分期條件與 <0.5 mL/kg/h 持續 6–12 小時的尿量門檻；Chapter 2.3，印刷 p.25 **Figure 4 (Stage-based management of AKI)**，將 volume status/perfusion、nephrotoxic exposure、Cr/urine monitoring 與必要時的 RRT 評估列為隨風險階段處理的項目。Figure 4 圖說還指出陰影強度代表措施隨嚴重度增加而提高優先度，**不是已知病因、絕對給液量或透析 cutoff**。[KDIGO AKI 原始完整 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf)。
+## 4. 真正高鉀的危急界線，以及其他 Lab 項目的用藥前提
 
-## 2A. 心衰竭合併 AKI：為何 Cr 上升不等於缺水？
+[UK Kidney Association, *Treatment of Acute Hyperkalaemia in Adults*, July 2026](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)：**Figure 4（原印刷 p.75，[PDF p.75](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75)）** 區分心肌保護、暫時移鉀、實際移鉀、血鉀/血糖監測及預防復發；**Table 22（原印刷 p.98，[PDF p.98](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98)）** 說明 insulin-glucose 與後續監測細節。指引推薦強度和適用條件不可由單一病例外推，特別是**ECG 無變化不能保證沒有真高鉀**、危急風險評估與檢體查核須並行；原圖不在本站翻印，也不能拿其他國家的固定處方劑量直接套進台灣醫院。
 
-[2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure：住院 ADHF 的初始 assessment 需要同時評估 congestion 與 perfusion](https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012)。
+血氣與生化 total CO₂、serum/plasma 不同採檢介面、Na 與滲透質、CBC 的 in-vitro vs in-vivo 溶血，都要先確認**究竟測量哪個對象**；沒有真病例時不必為了列舉每個 Lab 項目而編造病人、抽血或治療結果。
 
-[Michigan Medicine Inpatient Diuretic Guideline for Patients with Acute Decompensated Heart Failure：Q18，creatinine rise during effective decongestion](https://www.ncbi.nlm.nih.gov/books/NBK589894/)。
-
-原文章由「既有鬱血、靜脈利尿、Cr 升高」推進至心衰竭的血流動力不確定性時，有必要先區分**殘餘鬱血、有效灌流、腎臟實質損傷與阻塞**，而不是單看 I/O 負 1.4 L 便補液或一律停藥。AHA/ACC/HFSA 指引支持同時看 congestion/perfusion；Michigan Medicine 住院利尿實務規範提醒 modest Cr increase 在仍有鬱血時不一定是必須停止利尿的獨立理由。但兩項參考**不能證明本文合成病例的 Cr 上升為 benign、也不能直接決定實際病人的利尿劑量**。新的逐段病例寫法把床邊灌流／鬱血資訊放在醫囑抉擇之前，而非直接由 Cr 得出單一治療。
-
-## 3. 高鉀救治需要 ECG、病人風險和分層流程
-
-[UK Kidney Association，Treatment of Acute Hyperkalaemia in Adults（官方頁，載有 2026 年 7 月更新版下載入口）](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。
-
-[醫院臨床操作頁：GGC Medicines，Management of Hyperkalaemia](https://handbook.ggcmedicines.org.uk/guidelines/electrolyte-disturbances/management-of-hyperkalaemia-plasma-k-5-5mmol-l/)。
-
-臨床依據是血鉀數值、檢體品質、ECG、循環狀態、renal function、治療後回測與 glucose monitoring 共同決定。主文沒有提供可脫離當地 protocol 使用的 calcium/insulin 劑量。IV calcium 是穩定心肌膜而非實際排除鉀；insulin 促進 K 從細胞外轉入細胞內，必須防低血糖；持續高鉀需另外解決鉀移除、原因與復發。
-
-**已逐頁目視的原文範圍**：UKKA *July 2026* 官方完整 PDF 的印刷 **p.14–15（PDF 第 14、15 張，從零起算索引 13、14）**。原文 Guideline 15.3 建議疑似假性高鉀時以不同容器的配對 lithium-heparin 與 clotted serum 採樣核實；Guideline 16.2a 指出 ECG 改變時 IV calcium 建議強度為 **2C**（2026 已降級，不可拿它當高等級確定療效證據）；16.3.1 與 16.3.2 區分嚴重和中度高鉀使用 insulin-glucose 的建議強度。17.1–17.2 要求注意血鉀反彈與 insulin 後低血糖。這些是**原文建議與適用限制**，主文合成案例並未使用其固定處方劑量。[開啟 UKKA 2026 原始 PDF](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf)。
-
-**與本文最相關的 UKKA 原始圖／表已補做目視核對**：[Figure 4，印刷 p.75／PDF 索引 74](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=75)，描繪心肌保護、細胞轉位、移除鉀、血鉀與血糖監測、避免復發五個處置面向；此圖不代表每位中度高鉀患者都要給 IV calcium。[Table 22，印刷 p.98／PDF 索引 97](https://www.ukkidney.org/sites/default/files/documents/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20UPDATED%20JULY%202026_0.pdf#page=98) 是原指引的 insulin-glucose protocol，包含治療前血糖、後續補糖條件及血糖與 K 監測，且原表下方特別指出腎衰竭病人的輸液體積負擔。主文不提供固定劑量，避免把此原圖誤當台灣各院通用 order set。原圖只提供合法原站連結，不重製像素。
-
-已查看以上指引的相關條文與頁面，但**未完整審閱 180 頁全部 Appendix、每一張 algorithm 或特定醫院 formulary**；不可宣稱全套圖表完整驗收。對任何實際用藥仍須回原頁與當地流程。
-
-## 3A. 低鎂與心律：為何新心電證據會改變處置？
-
-[NHS Specialist Pharmacy Service, *Treating acute hypomagnesaemia in adults* (2024, 現行臨床用藥安全指引)](https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/)
-
-[ESC ACVC/EHRA/HFA 2025 consensus, *Ventricular arrhythmias in acute heart failure*, Table 4 / reversible causes](https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.3645)
-
-主文額外設計 **08:40 telemetry 單發 PVCs 變多、Mg 1.5 mg/dL、09:00 循環仍穩定** 的合成觀察，目的是讓另一個原本只是紅字的檢驗值真正改變監測／可逆因素評估。Loop diuretic 為低鎂可能的藥因；低鎂可增加心律風險，但**不等於此病人的 PVCs 已被診斷由低鎂造成**。NHS SPS 提醒因 AKI、嚴重 CKD 或透析而補鎂者應先尋求適當專業評估，補充路徑及給藥量不能從單一 Mg 數字照抄；嚴重心律異常時必須先處理臨床急症。ESC 共識支持在急性心衰竭心律不整中找出並修正可逆因素，但沒有證實合成病例 PVC 的單一病因。這不是對 Mg 1.5 和 PVC 之間因果的實證研究，也不是台灣院內補鎂 order set。
-
-## 4. Hb、輸血與族群差異
-
-[Carson JL et al. Red Blood Cell Transfusion: 2023 AABB International Guidelines. *JAMA*. 2023.](https://pubmed.ncbi.nlm.nih.gov/37824153/)
-
-[AABB 2025 AMI transfusion 建議說明](https://www.aabb.org/news-resources/news/article/2025/08/20/expert-panel-recommends-liberal-transfusion-strategy-for-hospitalized-patients-with-ami)。
-
-一般 hemodynamically stable inpatient 與 cardiac surgery、既存 cardiovascular disease、active bleeding、acute MI 等族群的血品策略不可互換；本篇 Hb 10.2 不能孤立地觸發一般成人紅血球輸血，但**這不是說 Hb 10.2 的所有臨床狀態均不需介入**。
+另可參考 [NHS SPS 急性低鎂用藥評估](https://sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/) 和 [ESC 2025 心衰竭心室心律不整共識](https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.3645/)，但本篇真實病例**沒有**報告低鎂導致 PVC 的確定因果，也沒有依這些來源核准任何鎂製劑醫囑。[AABB 2023 輸血指引](https://pubmed.ncbi.nlm.nih.gov/37824153/) 則有穩定住院患者與不同心血管族群的限定；不能由 AML 病例一個 Hb 數字推成所有病人的輸血準則。
 
 ## 5. 檢驗是臨床問題的工具，不是每天必填的欄位
 
