@@ -302,7 +302,11 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
         "publication_authorized": False,
     }
     report["transport_kind"] = transport_kind
-    report["api_model_execution_observed"] = transport_kind == "RESPONSES_API"
+    report["api_transport_claimed"] = transport_kind == "RESPONSES_API"
+    # Local JSON is user-editable. A shape-consistent receipt does not prove
+    # that the provider processed the request; independent API/billing evidence
+    # is required to authenticate execution.
+    report["actual_model_execution_verified"] = False
     report["provider_receipt_authentication"] = "DECLARED_RESPONSE_SHAPE_ONLY"
     report["observed_token_usage"] = {
         arm: (token_totals[arm] if usage_complete[arm] else None)
