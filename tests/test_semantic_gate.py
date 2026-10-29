@@ -132,5 +132,19 @@ clinical_script = "internal"
         self.assertFalse(any("clinical_script" in p["excerpt"] for p in units))
 
 
+    def test_reader_units_preserve_numeric_less_than_threshold(self):
+        # Clinical decision thresholds must survive HTML cleanup in review packets.
+        # The old /<[^>]*>/ pattern swallowed everything from <2,000 to >ULN.
+        text = (
+            "若 HBV DNA <2,000 IU/mL 且 ALT >ULN，應先排查其他肝損傷原因，"
+            "再評估是否符合抗病毒治療條件。<strong>不能只靠一次檢驗。</strong>"
+        )
+        excerpt = reading_units(text)[0]["excerpt"]
+        self.assertIn("<2,000 IU/mL", excerpt)
+        self.assertIn(">ULN", excerpt)
+        self.assertIn("不能只靠一次檢驗", excerpt)
+        self.assertNotIn("<strong>", excerpt)
+
+
 if __name__ == "__main__":
     unittest.main()
