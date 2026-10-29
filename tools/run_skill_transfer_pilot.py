@@ -184,7 +184,7 @@ def write_private(path, obj):
 
 
 def append_event(path, event):
-    data = (json.dumps(event, ensure_ascii=False, sort_keys=True) + "\\n").encode("utf-8")
+    data = (json.dumps(event, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8")
     fd = os.open(str(path), os.O_WRONLY | os.O_CREAT | os.O_APPEND, 0o600)
     with os.fdopen(fd, "ab") as file:
         file.write(data)
