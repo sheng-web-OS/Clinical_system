@@ -47,7 +47,7 @@ CBC 使用 EDTA 的主要目的，是藉由螯合鈣避免試管內凝血，使�
 
 另一個 2024 年發表的術前病例說明其臨床後果：一位預計接受脊椎手術的患者，EDTA 管 platelet 為 **27 × 10⁹/L**，外科原擬先輸注血小板；檢驗人員發現聚集，改用 citrate 與 heparin 管均得到正常計數，血小板輸注申請因而取消。這是作者報告的個別決策，不表示所有手術病人都可以僅憑沒有出血就取消輸血評估。[Yan 等，2024，摘要可核對](https://pubmed.ncbi.nlm.nih.gov/38213226/)
 
-還有一個更進一步的陷阱：**citrate 並非保證正確的「黃金管」。** 一項納入 151 位研究對象的回溯性研究，在其樣本與處理條件下，citrate 只為其中 47 位（31.1%）排除 EDTA 相關假性低血小板；也有已發表的病例出現 citrate 管特有的 platelet clumping。若與血片仍矛盾，應由檢驗室選擇其他抗凝劑、快速分析或適當計數方法，而不是自行挑最高的一個 platelet 當作「真值」。[2024 研究摘要](https://pubmed.ncbi.nlm.nih.gov/38406932/)；[citrate-dependent 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)
+還有一個更進一步的陷阱：**citrate 並非保證正確的「黃金管」。** 一項發表於 **2023 年第 4 期**（PubMed PMID 38406932，2024 年完成索引）、納入 151 位研究對象的回溯性研究，在其樣本與處理條件下，citrate 只為其中 47 位（31.1%）排除 EDTA 相關假性低血小板；也有已發表的病例出現 citrate 管特有的 platelet clumping。若與血片仍矛盾，應由檢驗室選擇其他抗凝劑、快速分析或適當計數方法，而不是自行挑最高的一個 platelet 當作「真值」。[2024 研究摘要](https://pubmed.ncbi.nlm.nih.gov/38406932/)；[citrate-dependent 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)
 
 ## 03　同樣是「假異常」，錯誤其實可以在四個不同環節發生
 
@@ -123,7 +123,7 @@ ECG 的危險傳導變化與生理背景，使真性高血鉀或其他需立即�
 1. [AHRQ PSNet，Lehman，*Hemolysis Holdup*（2017）](https://psnet.ahrq.gov/web-mm/hemolysis-holdup)：72 歲男性、兩次 K、ECG／循環變化、急救與醫療安全評論，可讀完整正文。個別病例不能推估誤差發生率。
 2. [Lim 等，*The Phantom Platelet Problem*（2025）](https://pmc.ncbi.nlm.nih.gov/articles/PMC11947505/)：50 歲出頭男性 platelet 103、EDTA 77、citrate 218、Figure 1 與血片敘述；原文可核對，沒有在本站重製圖像。
 3. [Yan 等，脊椎手術術前 EDTA-PTCP（2024）](https://pubmed.ncbi.nlm.nih.gov/38213226/)：術前 platelet 27 及取消輸注之公開摘要；全文及原表未在此版確認，故只引用摘要可見事實。
-4. [151 人 citrate 替代管研究（2024）](https://pubmed.ncbi.nlm.nih.gov/38406932/)及[citrate-dependent 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)：說明替代抗凝劑仍有失效條件，不把 31.1% 外推為全部患者成功率。
+4. [151 人 citrate 替代管研究（2023 期刊出版，2024 PubMed 收錄）](https://pubmed.ncbi.nlm.nih.gov/38406932/)及[citrate-dependent 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)：說明替代抗凝劑仍有失效條件，不把 31.1% 外推為全部患者成功率。
 5. [2013 年 K-EDTA 交叉污染病例](https://pmc.ncbi.nlm.nih.gov/articles/PMC3900060/)；[IV fluid contamination 綜述（2025）](https://jlpm.amegroups.org/article/view/10562/html)。
 6. [ICSH 2021 凝血檢體採樣](https://onlinelibrary.wiley.com/doi/10.1111/ijlh.13584)、[處理](https://onlinelibrary.wiley.com/doi/10.1111/ijlh.13702)建議；[UKKA 成人高血鉀指南，官網提供 July 2026 更新](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)。
 
