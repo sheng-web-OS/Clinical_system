@@ -7,7 +7,7 @@ from pathlib import Path
 
 from tools.run_skill_transfer_pilot import (
     PilotError, build_plan, clean_cases, digest, extract_output,
-    make_request, run,
+    make_request, run, verify_live_checkout,
 )
 
 COMMIT = "a" * 40
@@ -221,6 +221,21 @@ class RunnerTest(unittest.TestCase):
         obj["cases"][2] = dict(obj["cases"][2], role="transfer")
         with self.assertRaisesRegex(PilotError, "REQUIRE_TRANSFER_NORMAL_BOUNDARY"):
             clean_cases(obj)
+
+    def test_live_commit_claim_must_match_actual_checkout(self):
+        with self.assertRaisesRegex(PilotError, "LIVE_CHECKOUT_HEAD_MISMATCH"):
+            verify_live_checkout(Path(__file__).resolve().parents[1], "a" * 40)
+
+    def test_changed_tracked_source_blocks_paid_pilot(self):
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        def fake_git(command, **_):
+            if "rev-parse" in command:
+                return SimpleNamespace(returncode=0, stdout="c" * 40)
+            return SimpleNamespace(returncode=0, stdout=" M content/xiaoma-reading/originals/2026-07-14-hcm.md")
+        with patch("tools.run_skill_transfer_pilot.subprocess.run", side_effect=fake_git):
+            with self.assertRaisesRegex(PilotError, "LIVE_CHECKOUT_DIRTY"):
+                verify_live_checkout(Path(__file__).resolve().parents[1], "c" * 40)
 
     def test_bad_commit_and_invalid_model_rejected(self):
         with self.assertRaisesRegex(PilotError, "EXACT_CANDIDATE_COMMIT_REQUIRED"):
