@@ -443,6 +443,7 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
     case_id = None
     outputs = []
     transport = {}
+    provider_usage = {}  # adapter-reported telemetry, not independently audited billing
     # An empty working directory reduces incidental access to the source
     # packet set. It is NOT a security sandbox for an untrusted adapter.
     with tempfile.TemporaryDirectory(prefix="probe-adapter-cwd-") as workdir:
@@ -474,6 +475,18 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
                 raise InvalidProbe(f"{pid}: adapter timeout") from None
             require(finished.returncode == 0, f"{pid}: adapter exited nonzero")
             require(len(finished.stdout) <= 100_000, f"{pid}: adapter stdout too large")
+            # Optional provider token telemetry must be strictly numeric and
+            # contain no prompt, response, token or account identifier.
+            if finished.stderr.startswith("PROBE_USAGE "):
+                try:
+                    usage = json.loads(finished.stderr.removeprefix("PROBE_USAGE ").strip())
+                    require(isinstance(usage, dict) and set(usage) <=
+                            {"input_tokens", "output_tokens", "total_tokens"} and
+                            all(type(v) is int and 0 <= v <= 1_000_000 for v in usage.values()),
+                            "invalid adapter usage telemetry")
+                except (ValueError, TypeError):
+                    raise InvalidProbe(f"{pid}: invalid adapter usage telemetry") from None
+                provider_usage[pid] = usage
             try:
                 reply = json.loads(finished.stdout)
             except (json.JSONDecodeError, TypeError):
@@ -534,12 +547,15 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
     # exclusive create; failed runs do not create an incomplete file
     with responses_path.open("x", encoding="utf-8") as stream:
         stream.write(json.dumps({"case_id": case_id, "responses": outputs,
-                                 "transport_audit": transport},
+                                 "transport_audit": transport,
+                                 "provider_usage": provider_usage,
+                                 "usage_source": "ADAPTER_REPORTED_NOT_BILLING_VERIFIED"},
                                 ensure_ascii=False, indent=2) + "\n")
     return {"case_id": case_id, "executed": len(outputs),
             "status": "ADAPTER_EXECUTED_ACCESS_NOT_VERIFIED", "isolation": "NOT_VERIFIED",
             "opaque_ids": True, "relabelled": relabel,
-            "adapter_sha256": hashlib.sha256(adapter.read_bytes()).hexdigest()}
+            "adapter_sha256": hashlib.sha256(adapter.read_bytes()).hexdigest(),
+            "usage_rows": len(provider_usage)}
 
 
 def compare_rescue(key_root: Path, response_root: Path) -> dict:
