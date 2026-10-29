@@ -82,7 +82,9 @@ class ReviewAssemblyTest(unittest.TestCase):
     def test_complete_observations_still_do_not_claim_learning(self):
         run_data, report = self.assemble()
         self.assertEqual(9, len(run_data["records"]))
-        self.assertEqual("NO_PROMOTABLE_INCREMENT", report["verdict"])
+        self.assertEqual("DEVELOPMENT_GAIN_UNCOSTED_NEEDS_INDEPENDENT_HOLDOUT",
+                         report["verdict"])
+        self.assertEqual("NOT_MEASURED", report["owner_cost_comparison"]["status"])
         self.assertFalse(report["promotion_authorized"])
         self.assertFalse(report["skill_invocation_verified"])
         self.assertFalse(report["owner_attention_measured"])
