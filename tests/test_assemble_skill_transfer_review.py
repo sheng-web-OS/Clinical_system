@@ -49,12 +49,12 @@ class ReviewAssemblyTest(unittest.TestCase):
         mapping = self.load("private_arm_mapping.json")
         judgments = []
         for slot, info in mapping["answer_slots"].items():
-            correct = info["case_id"] != "synthetic-renal-decision" or info["arm"] == "skill"
+            correct = info["case_id"] != "synthetic-hcm-decision" or info["arm"] == "skill"
             judgments.append({
                 "slot": slot, "decision_correct": correct,
                 "unsafe": False, "false_alarm": False,
                 "question_triage_observed": (
-                    info["case_id"] == "synthetic-renal-decision"
+                    info["case_id"] == "synthetic-hcm-decision"
                     and info["arm"] == "skill"
                 ),
                 "reason": "Independent simulated rubric verdict for test fixture only.",
