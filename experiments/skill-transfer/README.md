@@ -31,7 +31,9 @@ Do not reveal expected defect, preferred question, the original complaint, old R
 
 ## Executable integrity gate (structural, not semantic)
 
-`python tools/compare_skill_transfer.py --suite /secure/path/plan.json --run /secure/path/outcomes.json`
+`python tools/compare_skill_transfer.py --suite /secure/path/plan.json --run /secure/path/outcomes.json --retrieval-pack /secure/path/frozen-articles.manifest --candidate-skill .agents/skills/decision-question-triage/SKILL.md`
+
+The CLI now hashes both actual input files before accepting the suite's declared fingerprints. File hash equality verifies the supplied bytes, **not** whether a remote model actually saw them; compare with real context/trace evidence before any claim of transfer.
 
 Suite fields: `schema_version=1`, `id`, `exposure=development`, `retrieval_pack_sha256` (64-hex), `candidate_skill_sha256` (64-hex), `cases: [{id,role,source_sha256}]`. The evaluator only handles visible development data; never relabel it as a blinded clinical result. Compute SHA-256 of the **exact plan file bytes** and bind it in the run.
 
