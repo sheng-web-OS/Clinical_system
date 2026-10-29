@@ -19,6 +19,14 @@ class WorkloadIdentityScriptTests(unittest.TestCase):
         self.assertIn("assertion.workflow_ref", script)
         self.assertIn("assertion.ref=='refs/heads/main'", script)
 
+    def test_unattended_schedule_requires_separate_authorization(self):
+        workflow = Path(".github/workflows/drive-source-agent.yml").read_text(encoding="utf-8")
+        self.assertIn("CLINICAL_OS_AGENT_SCHEDULE_ENABLED", workflow)
+        self.assertIn("CLINICAL_OS_AGENT_ENABLED", workflow)
+        self.assertIn("CLINICAL_OS_DRAFT_WRITES_ENABLED", workflow)
+        self.assertIn("github.event_name == 'workflow_dispatch'", workflow)
+
+
 
 if __name__ == "__main__":
     unittest.main()
