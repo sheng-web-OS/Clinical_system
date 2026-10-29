@@ -146,5 +146,27 @@ clinical_script = "internal"
         self.assertNotIn("<strong>", excerpt)
 
 
+    def test_reader_units_preserve_symbolic_threshold_and_next_comparator(self):
+        # A letter-prefixed less-than comparator is not an HTML element.
+        text = (
+            "若 Hb <LLN 且 K >ULN，不能因為這段比較出現英文字母，就把"
+            "不同檢驗條件在審查封包中一同抹掉。<strong>必須保留分界。</strong>"
+        )
+        excerpt = reading_units(text)[0]["excerpt"]
+        self.assertIn("Hb <LLN 且 K >ULN", excerpt)
+        self.assertIn("必須保留分界", excerpt)
+        self.assertNotIn("<strong>", excerpt)
+
+    def test_reader_units_do_not_strip_comparison_until_next_real_tag(self):
+        text = (
+            "如果 ALT <ULN 且 HBV DNA >2,000，就仍需要依臨床情境"
+            "尋找其他解釋，不能把比較式刪到只剩一個數值。<em>重新評估。</em>"
+        )
+        excerpt = reading_units(text)[0]["excerpt"]
+        self.assertIn("ALT <ULN 且 HBV DNA >2,000", excerpt)
+        self.assertIn("重新評估", excerpt)
+        self.assertNotIn("<em>", excerpt)
+
+
 if __name__ == "__main__":
     unittest.main()
