@@ -39,8 +39,8 @@
       {
         "locator": "Chen Cureus 2025 PDF pages 3 to 5 original Tables 1, 2, 3 and chronological contradictions",
         "source_token": "Table 1–3",
-        "teaching_role": "將 Table1/3 同日檢驗值衝突、Table2 單日尿量及註腳對換管方向的矛盾共同呈現，辨認可回推與不可回推的事件順序",
-        "scope_limit": "12/12 Table1 vs Table3 的 Cr/Na/urea 互相矛盾；Table2 註腳聲稱換回一般導尿管後立即約6L，正文卻說置入 Tiemann-tip 後約6L，不能自行認定換管順序或精確速率",
+        "teaching_role": "比較 12/09→12/10→12/11 尿量 2000→476→6170 mL，以及 Table1/3 同日檢驗衝突、Table2 導尿管方向相反的敘述；以時間資訊保留 competing mechanisms，而非補造臨床決策",
+        "scope_limit": "12/10 476mL 不單獨確診阻塞、原文未指它是醫師選 CT 的理由；12/12 Table1/3 Cr/Na/urea 互相矛盾；Table2 註腳與正文對換管方向矛盾，不能推定即時流量或精確順序",
         "mode": "source_link",
         "url": "https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=3",
         "why_link_instead": "原論文三張 Table 分散於多頁，直接連原始 PDF 可逐頁對照單位與時序，避免抄成一張貌似無矛盾的合併表"
