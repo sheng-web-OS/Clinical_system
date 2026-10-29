@@ -173,6 +173,13 @@ def run_case(case, arm, docs, skill, model, caller):
     return record
 
 
+def paired_order(cases):
+    """Balance arm position across the three fixed development cases."""
+    return [(case, ARMS[(position + offset) % len(ARMS)])
+            for position, case in enumerate(cases)
+            for offset in range(len(ARMS))]
+
+
 def build_plan(data, skill, model, commit):
     if not isinstance(commit, str) or len(commit) != 40 or any(c not in "0123456789abcdef" for c in commit):
         raise PilotError("CANDIDATE_COMMIT_REQUIRED")
@@ -184,6 +191,8 @@ def build_plan(data, skill, model, commit):
         "cases": [{"id": c["id"], "task_sha256": digest(c["task"])} for c in cases],
         "sources": [{"id": d["id"], "sha256": digest(d["text"])} for d in docs],
         "arms": list(ARMS),
+        "paired_execution_order": [{"case_id": case["id"], "arm": arm}
+                                   for case, arm in paired_order(cases)],
         "phase_order": "freeze_triage_before_source; conditional_source; frozen_first_answer",
         "planned_first_decisions": 9, "possible_model_calls_max": 18,
         "model_calls_made": 0, "clinical_validated": False,
@@ -278,16 +287,15 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
         append_event(events, dict(stamp, event="COMPLETED",
                                   response_id=result.get("response_id")))
         return result
-    for case in cases:
-        for arm in ARMS:
-            try:
-                results.append(run_case(case, arm, docs, skill, model, traced_transport))
-            except (ValueError, KeyError, TypeError, PilotError):
-                # Every attempted pair counts, including errors. Never replace
-                # a failed first attempt with a retry or post-feedback answer.
-                results.append({"case_id": case["id"], "arm": arm,
-                                "status": "FAILED_INCOMPLETE", "first_pass_unscored": True,
-                                "answer": None})
+    for case, arm in paired_order(cases):
+        try:
+            results.append(run_case(case, arm, docs, skill, model, traced_transport))
+        except (ValueError, KeyError, TypeError, PilotError):
+            # Every attempted pair counts, including errors. Never replace
+            # a failed first attempt with a retry or post-feedback answer.
+            results.append({"case_id": case["id"], "arm": arm,
+                            "status": "FAILED_INCOMPLETE", "first_pass_unscored": True,
+                            "answer": None})
     write_private(output_dir / "first_pass_unscored.json", results)
     suite_sha = digest(json.dumps(meta, ensure_ascii=False, sort_keys=True))
     packet, mapping = build_blind_packet(cases, results, suite_sha)
