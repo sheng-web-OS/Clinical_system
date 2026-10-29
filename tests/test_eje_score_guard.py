@@ -55,6 +55,57 @@ class TestSafetyGate(unittest.TestCase):
         result = evaluate(contaminated=True)
         self.assertEqual(result["status"], "NO_INDEPENDENT_EVIDENCE")
 
+    def test_negative_control_cannot_be_awarded_true_positive(self):
+        # A clean document cannot yield a legitimate detected defect.
+        for counts in ({"tp_major": 1, "tp_material": 1},
+                       {"fn_major": 1, "fn_material": 1},
+                       {"tp_material": 1}, {"fn_material": 1}):
+            with self.subTest(counts=counts):
+                with self.assertRaisesRegex(ValueError, "negative.control"):
+                    evaluate(**counts)
+
+    def test_fractional_detection_counts_are_rejected(self):
+        for field in ("tp_major", "fn_major", "tp_material", "fn_material",
+                      "false_positives", "source_claims", "supported_source_claims",
+                      "human_turns"):
+            with self.subTest(field=field):
+                with self.assertRaisesRegex(ValueError, "integer"):
+                    evaluate(**{field: 0.5})
+
+    def test_missing_case_and_contaminated_case_stay_in_denominator(self):
+        two = {"cases": [
+            {"id": "J01", "status": "replayable", "type": "negative-control"},
+            {"id": "J02", "status": "replayable", "type": "reader-value"},
+        ]}
+        first = copy.deepcopy(BASE)
+        result = score(two, {"judgments": [first]})["Native"]
+        self.assertEqual(result["status"], "PILOT_INCOMPLETE")
+        self.assertEqual(result["eligible_replayable_cases"], 2)
+        self.assertEqual(result["cases"], 1)
+        self.assertEqual(result["case_coverage"], 0.5)
+        second = copy.deepcopy(first)
+        second["id"] = "J02"
+        second["contaminated"] = True
+        result = score(two, {"judgments": [first, second]})["Native"]
+        self.assertEqual(result["status"], "PILOT_INCOMPLETE")
+        self.assertEqual(result["contaminated_excluded"], 1)
+        self.assertEqual(result["case_coverage"], 0.5)
+
+    def test_self_reported_minutes_not_misrepresented_as_verified(self):
+        result = evaluate(human_minutes=7, human_turns=2)
+        self.assertIsNone(result["human_correction_minutes"])
+        self.assertEqual(result["human_time_evidence"], "NOT_VERIFIED")
+        self.assertEqual(result["unverified_reported_minutes"], 7)
+        self.assertEqual(result["unverified_reported_turns"], 2)
+
+    def test_duplicate_cases_in_manifest_are_rejected(self):
+        duplicates = {"cases": [
+            {"id": "J01", "status": "replayable", "type": "negative-control"},
+            {"id": "J01", "status": "replayable", "type": "negative-control"},
+        ]}
+        with self.assertRaisesRegex(ValueError, "Duplicate case"):
+            score(duplicates, {"judgments": [copy.deepcopy(BASE)]})
+
 
 if __name__ == "__main__":
     unittest.main()
