@@ -30,7 +30,8 @@ In OpenAI Platform, create a **dedicated project** for Clinical OS Drive Agent. 
 
 The synthetic model is pinned to `gpt-5-mini` in the workflow for this test. Only the following repository Variables are required after owner approval:
 - CLINICAL_OS_AGENT_ENABLED = true **only after all controls verified** (leave absent/false meanwhile)
-- CLINICAL_OS_DRAFT_WRITES_ENABLED = true **only if the Draft PR scope remains approved** (leave absent/false meanwhile)
+- CLINICAL_OS_DRAFT_WRITES_ENABLED = true **only after read-only model/Drive test succeeds** (leave absent/false meanwhile)
+- CLINICAL_OS_AGENT_SCHEDULE_ENABLED = true **only after manual end-to-end testing and owner release decision** (leave absent/false meanwhile)
 
 The existing ChatGPT Drive connector and ChatGPT subscription do not provide GitHub Actions with Google or model API credentials.
 
@@ -75,4 +76,7 @@ Pinned the owner-verified non-sensitive Google Cloud project number/provider, de
 - User reports the dedicated OpenAI project key has been saved to GitHub Actions Secret `CLINICAL_OS_OPENAI_API_KEY` with spending controls. Secret value, existence and API functionality cannot be read through this GitHub integration and remain runtime-NOT_TESTED.
 - Owner Cloud Shell created OIDC provider/SA. Google Drive metadata readback verifies service account **reader** role on synthetic sandbox folder and child Doc. Actual GitHub Actions Google OIDC token exchange/Drive export remains NOT_TESTED.
 - PR #227 was merged in main, replacing direct stage-II exam archive pushes with Draft PR and separate public-redistribution authorization gate. Its exact-main commit and check results were verified; agent #222 remains Draft and unmerged.
-- To test, independently review this exact PR head; owner manually merges #222, then adds action variables `CLINICAL_OS_AGENT_ENABLED=true` and (after test and approval) `CLINICAL_OS_DRAFT_WRITES_ENABLED=true`. Run manual `shadow` first to test model without Drive; then `synthetic-read` to test Google OIDC + Drive and a Draft-only branch. Scheduled wake-up and any generated PR must remain bounded by synthetic-only allowlist, main protection, evidence check, and no auto merge/deploy.
+- To test, independently review this exact PR head; owner manually merges #222, then adds Actions variable `CLINICAL_OS_AGENT_ENABLED=true` while leaving `CLINICAL_OS_DRAFT_WRITES_ENABLED` and `CLINICAL_OS_AGENT_SCHEDULE_ENABLED` unset/false. Run manual `shadow` first to test model without Drive; then `synthetic-read` to test Google OIDC + Drive and a Draft-only branch. Scheduled wake-up and any generated PR must remain bounded by synthetic-only allowlist, main protection, evidence check, and no auto merge/deploy.
+
+## Manual verification before unattended execution
+Do NOT activate daily scheduled API use by merely enabling `CLINICAL_OS_AGENT_ENABLED`. First test `workflow_dispatch` with `shadow` (actual model, no Drive read), then `synthetic-read` (actual WIF and synthetic Drive read), both with Draft writes disabled. Once exact-run evidence succeeds, explicitly set `CLINICAL_OS_DRAFT_WRITES_ENABLED=true` and run `synthetic-read` again to test an isolated bot Draft PR. Only after owner has inspected this PR and the open bot PR, activate `CLINICAL_OS_AGENT_SCHEDULE_ENABLED=true` for daily unattended wake-up. All credentials remain synthetic-only. GitHub provider workflow/branch conditions and actual main protection must remain as configured. Source metadata and secret values must never appear in logs.
