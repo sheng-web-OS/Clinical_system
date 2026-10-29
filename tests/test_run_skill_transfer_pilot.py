@@ -138,8 +138,12 @@ class RunnerTest(unittest.TestCase):
         self.assertNotIn('"arm"', serialized)
         self.assertNotIn(SKILL, serialized)
         self.assertFalse(report["publication_approved"])
-        self.assertEqual(9, len(json.loads(
-            (self.root / "out/private_arm_mapping.json").read_text())))
+        for original in [c["id"] for c in CASES]:
+            self.assertNotIn(original, serialized)
+        mapping = json.loads(
+            (self.root / "out/private_arm_mapping.json").read_text())
+        self.assertEqual(9, len(mapping["answer_slots"]))
+        self.assertEqual(3, len(mapping["case_aliases"]))
 
     def test_failed_calls_are_retained_not_dropped(self):
         count = [0]
