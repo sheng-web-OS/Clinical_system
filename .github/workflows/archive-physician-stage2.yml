@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: archive-physician-stage2
@@ -19,33 +20,80 @@ concurrency:
 
 jobs:
   archive-official-sources:
+    # A Draft PR branch is PUBLIC in this repository; do not upload raw exam
+    # source files without explicit, scope-specific permission to redistribute.
+    if: vars.CLINICAL_OS_ARCHIVE_PUBLIC_SOURCE_APPROVED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - name: Checkout private repository
+      - name: Check for an already-open archive Draft PR
+        id: preflight
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --head bot/physician-stage2-archive --json number --jq 'length')"
+          if [ "$existing" != "0" ]; then
+            echo "SKIP: an archive PR already awaits human review"
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Checkout repository
+        if: steps.preflight.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
       - name: Setup Python
+        if: steps.preflight.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install minimal PDF text extractor
+        if: steps.preflight.outputs.run == 'true'
         run: python -m pip install pypdf
       - name: Download unchanged official PDFs and record source integrity
+        if: steps.preflight.outputs.run == 'true'
         run: python tools/import_physician_stage2.py --extract --workers 4
       - name: Structure medical three questions and run quality audit
+        if: steps.preflight.outputs.run == 'true'
         run: python tools/prepare_med3_exam_bank.py
-      - name: Commit verified private archive and status report
+      - name: Stage only verified archive outputs and check for changes
+        if: steps.preflight.outputs.run == 'true'
+        id: changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add archive/national-exam/physician-stage2-2022-2026/raw \
                   archive/national-exam/physician-stage2-2022-2026/extracted \
                   archive/national-exam/physician-stage2-2022-2026/ingestion-report.json \
                   archive/national-exam/physician-stage2-2022-2026/INGESTION_STATUS.md \
                   archive/national-exam/physician-stage2-2022-2026/structured
-          if ! git diff --cached --quiet; then
-            git commit -m "Archive official 2022-2026 physician stage-II PDFs and verification report"
-            git push origin HEAD:main
+          if git diff --cached --quiet; then
+            echo "SKIP: no new archive output"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+      - name: Create isolated archive branch and Draft PR (never push main)
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          branch="bot/physician-stage2-archive"
+          if git ls-remote --heads origin "refs/heads/$branch" | grep -q .; then
+            echo "HOLD: archive branch already exists without an open PR; manual reconciliation required" >&2
+            exit 2
+          fi
+          git fetch origin main --quiet
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo "HOLD: main advanced while archiving; do not push a stale source snapshot" >&2
+            exit 2
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git commit -m "Archive official physician stage-II source integrity and status"
+          git push origin "HEAD:refs/heads/$branch"
+          gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$branch" \
+            --draft --title "[Archive][HOLD] Physician Stage-II verified source update" \
+            --body "Generated archive update from verified public exam sources. Draft only: review exact-source provenance, rights, test results and changed paths. No auto-merge or direct push to main. Do not treat a bot-created PR as independent approval."
