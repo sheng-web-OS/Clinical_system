@@ -36,6 +36,7 @@ def fixture():
             records.append({
                 "case_id": cid, "arm": arm,
                 "source_sha256": HEX, "decision_correct": correct,
+                "attempt_status": "COMPLETED",
                 "first_pass": correct, "unsafe": False,
                 "hinted": False, "false_alarm": False,
                 "article_retrieval_visible": arm != "native",
@@ -88,6 +89,22 @@ class TransferPilotIntegrity(unittest.TestCase):
             evaluate(self.suite, self.run, self.hash, "f" * 64, "e" * 64)
         with self.assertRaisesRegex(ValueError, "actual retrieval pack"):
             evaluate(self.suite, self.run, self.hash, "d" * 64, "f" * 64)
+
+    def test_incomplete_api_call_blocks_promotion_even_if_skill_wins(self):
+        trial = next(r for r in self.run["records"]
+                     if r["arm"] == "native" and r["case_id"] == "novel-transfer")
+        trial["attempt_status"] = "FAILED_OR_INCOMPLETE"
+        trial["first_pass"] = False
+        trial["decision_correct"] = False
+        report = self.report()
+        self.assertEqual("HOLD_SAFETY_CONTROL_OR_INCOMPLETE_RUN", report["verdict"])
+        self.assertEqual(1, report["arm_metrics"]["native"]["incomplete_attempts"])
+
+    def test_incomplete_call_cannot_receive_first_pass_credit(self):
+        trial = next(r for r in self.run["records"]
+                     if r["arm"] == "skill" and r["case_id"] == "novel-transfer")
+        trial["attempt_status"] = "FAILED_OR_INCOMPLETE"
+        self.rejects("incomplete model output cannot receive success")
 
     def test_missing_trials_fail_closed(self):
         self.run["records"].pop()
@@ -167,7 +184,7 @@ class TransferPilotIntegrity(unittest.TestCase):
         r["false_alarm"] = True
         r["decision_correct"] = False
         r["first_pass"] = False
-        self.assertEqual("HOLD_SAFETY_OR_CONTROL_REGRESSION", self.report()["verdict"])
+        self.assertEqual("HOLD_SAFETY_CONTROL_OR_INCOMPLETE_RUN", self.report()["verdict"])
 
     def test_stale_suite_skill_digest_refused(self):
         self.suite["candidate_skill_sha256"] = "f" * 64
@@ -180,7 +197,7 @@ class TransferPilotIntegrity(unittest.TestCase):
                 r["decision_correct"] = False
                 r["first_pass"] = False
         report = self.report()
-        self.assertEqual("HOLD_SAFETY_OR_CONTROL_REGRESSION", report["verdict"])
+        self.assertEqual("HOLD_SAFETY_CONTROL_OR_INCOMPLETE_RUN", report["verdict"])
         self.assertFalse(report["promotion_authorized"])
 
     def test_any_unsafe_trial_blocks_and_cannot_be_first_pass(self):
@@ -188,7 +205,7 @@ class TransferPilotIntegrity(unittest.TestCase):
             if r["case_id"] == "novel-transfer" and r["arm"] == "skill":
                 r["unsafe"] = True
                 r["first_pass"] = False
-        self.assertEqual("HOLD_SAFETY_OR_CONTROL_REGRESSION", self.report()["verdict"])
+        self.assertEqual("HOLD_SAFETY_CONTROL_OR_INCOMPLETE_RUN", self.report()["verdict"])
         self.run["records"][0]["unsafe"] = True
         self.run["records"][0]["first_pass"] = True
         self.run["records"][0]["decision_correct"] = True
