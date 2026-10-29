@@ -17,26 +17,20 @@ Create or select a **dedicated** Google Cloud project. Download the reviewed rep
 
 This URL pins the reviewed shell script to a specific commit rather than mutable branch HEAD. Review the script before running. It enables Google IAM/STS/Drive APIs and creates a dedicated SA and OIDC provider. It scopes trust to GitHub immutable numeric repository ID 1427690253, main branch and exact workflow_ref, then binds Workload Identity User to that narrow principalSet. It does not create downloadable SA keys or assign generic project Viewer/Editor roles to the Service Account.
 
-Copy the two output values into GitHub Actions Variables:
-- CLINICAL_OS_WIF_PROVIDER
-- CLINICAL_OS_GCP_SERVICE_ACCOUNT
-
-DO NOT configure long-lived Google keys.
+The verified WIF provider path and Service Account email from the successful owner Cloud Shell output are now pinned in the synthetic-only workflow file in PR #222. No GitHub variables are needed for those non-secret identifiers. Do not configure long-lived Google keys.
 
 ## Phase 2: restrict the Drive source
-Open the existing synthetic-only sandbox folder in Google Drive. Share that folder with the output Service Account email as **Viewer**; do not share the rest of My Drive. In GitHub Repo Settings → Secrets and variables → Actions add the secret:
-- CLINICAL_OS_DRIVE_FIXTURE_FOLDER_ID = the synthetic-only folder ID from the verified folder URL.
+Open the existing synthetic-only sandbox folder in Google Drive. Share ONLY that folder with the Service Account email as **Viewer**, and remove/downgrade any direct Writer access to the child document. Do not share the rest of My Drive. The non-secret synthetic folder ID is pinned inside the branch workflow so a GitHub Secret is not required for it; folder ACL is the access boundary. Never apply this pattern to private/clinical source identifiers. Do not add patient or restricted sources to this test folder.
 
-The folder ID is not a password, but put it in an Actions Secret to minimize unnecessary identifier exposure. Do not add any patient or restricted sources to this test folder.
+**Actual Drive metadata check on 2026-10-29:** folder still showed only its owner (not shared), while its single synthetic Doc showed a directly granted Service Account **writer** permission. This is NOT the selected Viewer-only folder scope. Owner must fix both in Drive UI; no external Google API read has been independently demonstrated.
 
 ## Phase 3: model key and spend
 In OpenAI Platform, create a **dedicated project** for Clinical OS Drive Agent. In its Limits settings, enable a **monthly hard spend limit** and alerts (suggest $5 USD/month hard limit and $2 alert initially), and restrict model/rate as needed. Hard spend enforcement is not instantaneous and can exceed the configured threshold slightly. Create a project API key with only required Responses API access. In GitHub Actions Secrets set:
 - CLINICAL_OS_OPENAI_API_KEY (paste the new key only into GitHub's secret UI, never chat or PR)
 
-In Actions Variables set:
-- CLINICAL_OS_AGENT_MODEL = gpt-5-mini (change only after checking currently allowed model and rate)
-- CLINICAL_OS_AGENT_ENABLED = true **only after all controls verified**
-- CLINICAL_OS_DRAFT_WRITES_ENABLED = true **only if the selected Draft PR scope remains approved**
+The synthetic model is pinned to `gpt-5-mini` in the workflow for this test. Only the following repository Variables are required after owner approval:
+- CLINICAL_OS_AGENT_ENABLED = true **only after all controls verified** (leave absent/false meanwhile)
+- CLINICAL_OS_DRAFT_WRITES_ENABLED = true **only if the Draft PR scope remains approved** (leave absent/false meanwhile)
 
 The existing ChatGPT Drive connector and ChatGPT subscription do not provide GitHub Actions with Google or model API credentials.
 
@@ -73,3 +67,6 @@ A real Cloud Shell run found that the Google Workload Identity Pool display name
 
 ## Owner-reported Cloud Shell result (2026-10-29)
 Owner pasted successful output for Google project `instant-land-430112-t2`: pool `clinical-os-pool`, OIDC provider `github-drive-agent`, service account `clinical-os-drive-agent@instant-land-430112-t2.iam.gserviceaccount.com`, and IAM policy updated. This is a user-supplied execution log, not an independently authenticated Google Cloud IAM readback. GitHub Actions still has no verified WIF/Drive access. Sandbox Drive sharing remains owner-only; do not enable any credentialed workflow or merge until explicit main protection and correct secrets/variables are confirmed.
+
+## 2026-10-29 reduction of manual account configuration
+Pinned the owner-verified non-sensitive Google Cloud project number/provider, dedicated service account email, chosen synthetic sandbox folder ID and model name directly in the Draft PR workflow. Remaining manual GitHub setup is confined to branch protection, separate OpenAI API secret, and two explicit post-verification enable flags. These public synthetic IDs are not authentication material: no real source names or confidential file IDs may be substituted into the public repo. Verification must include a Google Drive folder-level Viewer ACL with no direct Writer override on its child document.
