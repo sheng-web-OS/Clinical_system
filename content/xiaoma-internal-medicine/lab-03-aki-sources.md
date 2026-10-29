@@ -17,6 +17,10 @@ AKI 的 creatinine、尿量與 eGFR 是不同時間尺度的功能訊號。確�
 
 這些是**來源自身的日期／檢驗值矛盾**。不能在沒有原始檢驗時間戳的情況下自行修正某一張表，也不能據此計算一天內的精確 Cr 改善速率。病例更可守的結論是：持續 AKI 促使重新檢查阻塞風險，CT 顯示上尿路擴張，導尿調整後大量尿量與後續改善支持重要的可逆性阻塞成分。
 
+原報告另記載**代謝性酸中毒持續惡化、住院第 3 天有不易由輸液復甦扭轉的低血壓**（[出版社 PDF 第 2–3 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=2)），但沒有完整血氣、逐時血壓或升壓藥與酸鹼治療紀錄。這些確實使急症監測和病因追查需要並行，卻**不能替作者補出 pH、乳酸、升壓藥、透析醫囑或當時的處置選擇**。入院 **CRP 211 mg/L、WBC 15.3 × 10⁹/L** 加上低血壓使感染列入競爭機轉；作者 Discussion 使用 *urosepsis* 一詞，卻沒有提供支持已確診泌尿道感染的培養證據，因此不能把它和 CT 已觀察到的雙側水腎視為同一等級的已證實事實。
+
+另有兩處不宜被直接拿來教臨床：原文 Case Presentation 指 **79 歲**，Discussion 改稱 **75 歲**（本篇沿用前者，見[原始第 6 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=6)）；原文 Discussion 談到應考慮 CT 時引用 **[8]**，但其參考文獻 [8] 實為 **2024 年 atypical HUS 命名共識**，並不是 CT 對尿路阻塞的診斷效能研究。故本站關於阻塞風險、緊急超音波及泌尿科會診的建議，獨立採用 [NICE NG148（1.4.5–1.4.6、1.5.1）](https://www.nice.org.uk/guidance/ng148/chapter/Recommendations)；原病例僅作個案臨床時序的證據，**不以其錯位引文支撐影像指南**。
+
 ## KDIGO：先分辨功能性 AKI 診斷與病因搜尋
 
 [KDIGO 2012 AKI Guideline 原始 PDF](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf) 的 **Chapter 2.1 Table 2（印刷 p.19）**為 creatinine／尿量的 AKI stage 判定；**Chapter 2.3 Figure 4（p.25）**是風險／分期下的處理優先程度，**Figure 5（p.26）**是病因評估。這三者不能混為相同目的：分級不是病因，原因調查也不等於單一檢驗即可確診。Chen 病例的原始入院基線資訊不足，不能自行替作者修正 stage 標籤。
