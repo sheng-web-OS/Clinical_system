@@ -10,7 +10,7 @@ import json
 import os
 from pathlib import Path
 
-from run_skill_transfer_pilot import api_call, PilotError, write_private
+from run_skill_transfer_pilot import api_call, PilotError, write_private, append_event
 
 ARMS = ("native", "retrieval", "skill")
 DECISIONS = ("RETRIEVE", "SKIP", "HOLD")
@@ -207,22 +207,40 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
         output_dir.mkdir(mode=0o700)
         write_private(output_dir / "manifest.json", meta)
         return {"status": "PLAN_ONLY_NO_MODEL_CALLS", "planned_triage": 9}
-    # Real network is restricted to the exact already-reviewed public synthetic
-    # fixture and candidate Skill; no arbitrary private uploaded text can pass.
-    if live:
-        raise PilotError("LIVE_EXECUTION_NOT_AUTHORIZED_IN_THIS_PROBE")
     results = []
+    meta["transport_kind"] = "RESPONSES_API" if live else "INJECTED_TEST_DOUBLE"
+    meta["provider_receipt_authenticated"] = False
+    meta["model_calls_made"] = None
     output_dir.mkdir(mode=0o700)
     write_private(output_dir / "manifest.json", meta)
+    events = output_dir / "attempt_events.jsonl"
+    attempts = [0]
+    def traced_transport(request):
+        attempts[0] += 1
+        if attempts[0] > 18:
+            raise PilotError("MODEL_CALL_BUDGET_EXCEEDED")
+        stage = "TRIAGE" if "text" in request else "POST_RETRIEVAL_ANSWER"
+        req_hash = digest(json.dumps(request, sort_keys=True, ensure_ascii=False))
+        stamp = {"attempt": attempts[0], "stage": stage, "request_sha256": req_hash}
+        append_event(events, dict(stamp, event="STARTED"))
+        try:
+            result = transport(request)
+        except Exception:
+            append_event(events, dict(stamp, event="FAILED"))
+            raise
+        append_event(events, dict(stamp, event="COMPLETED",
+                                  response_id=result.get("response_id")))
+        return result
     for case in cases:
         for arm in ARMS:
             try:
-                results.append(run_case(case, arm, docs, skill, model, transport))
+                results.append(run_case(case, arm, docs, skill, model, traced_transport))
             except (ValueError, KeyError, TypeError, PilotError):
                 results.append({"case_id": case["id"], "arm": arm,
                                 "status": "FAILED_INCOMPLETE", "first_pass_unscored": True})
     write_private(output_dir / "first_pass_unscored.json", results)
-    return {"status": "DEVELOPMENT_TEST_DOUBLE_ONLY", "rows": len(results),
+    return {"status": "UNSCORED_API_EXECUTION" if live else "DEVELOPMENT_TEST_DOUBLE_ONLY",
+            "rows": len(results), "calls_attempted": attempts[0],
             "clinical_validated": False, "transfer_validated": False}
 
 
@@ -237,10 +255,6 @@ def main():
     args = parser.parse_args()
     try:
         root = Path(__file__).resolve().parents[1]
-        if args.execute_api:
-            # Do not silently turn a public development fixture into a paid
-            # test or assume GitHub credentials available in this session.
-            raise PilotError("LIVE_EXECUTION_REQUIRES_SEPARATE_REVIEWED_AUTHORIZATION")
         fixture_path = Path(args.fixture).resolve()
         skill_path = Path(args.skill).resolve()
         if fixture_path != root / "experiments/skill-transfer/fixtures/selective-retrieval-synthetic.json":
@@ -249,7 +263,9 @@ def main():
             raise PilotError("CANDIDATE_SKILL_PATH_REQUIRED")
         data = json.loads(fixture_path.read_text(encoding="utf-8"))
         skill = skill_path.read_text(encoding="utf-8")
-        result = execute(data, skill, args.model, args.candidate_commit, args.output_dir)
+        result = execute(data, skill, args.model, args.candidate_commit, args.output_dir,
+                         key=os.getenv("OPENAI_API_KEY") if args.execute_api else None,
+                         live=args.execute_api)
         print(json.dumps(result, sort_keys=True))
     except (PilotError, ValueError, OSError, UnicodeError):
         print(json.dumps({"status": "HOLD", "reason": "INVALID_OR_UNAUTHORIZED_INPUT"}))
