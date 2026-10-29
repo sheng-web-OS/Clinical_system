@@ -25,13 +25,13 @@ MAX_CASES = 3
 MAX_INPUT_BYTES = 60000
 MAX_OUTPUT_TOKENS = 1100
 # One development-only subtrial; NOT an OpenAI project billing/spend limiter.
-# 2026-10-29 standard text rates for gpt-5-mini: input $0.25/M, output $2/M.
-# Ref: https://developers.openai.com/api/docs/models/gpt-5-mini
-LIVE_MODEL = "gpt-5-mini"
+# 2026-10-29 standard short-context text rates for gpt-5.6-terra: input $2/M, output $12/M.
+# Ref: https://developers.openai.com/api/docs/models/gpt-5.6-terra
+LIVE_MODEL = "gpt-5.6-terra"
 MAX_PAID_CALLS = 9
 MAX_ESTIMATED_SUBTRIAL_USD = 0.50
-MODEL_INPUT_USD_PER_M = 0.25
-MODEL_OUTPUT_USD_PER_M = 2.00
+MODEL_INPUT_USD_PER_M = 2.00
+MODEL_OUTPUT_USD_PER_M = 12.00
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
 
 
@@ -426,7 +426,7 @@ def main():
     p.add_argument("--candidate-skill", required=True, type=Path)
     p.add_argument("--output-dir", required=True, type=Path)
     p.add_argument("--candidate-commit", required=True)
-    p.add_argument("--model", default="gpt-5-mini")
+    p.add_argument("--model", default=LIVE_MODEL)
     p.add_argument("--execute-api", action="store_true",
                    help="Opt in to at most nine paid calls; default is offline")
     a = p.parse_args()
