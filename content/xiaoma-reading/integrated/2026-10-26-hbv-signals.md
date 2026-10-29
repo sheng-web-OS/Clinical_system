@@ -2,45 +2,15 @@
 
 原文 2026.07.19｜2026.10.27 圖文修訂版
 
-從 [HBV phase 與 stage](2026-10-26-hbv-phase-state-vs-stage.md) 接續閱讀：這篇追問的，是我們如何從抽血推論尚未直接看見的病毒—宿主互動。
+上一篇[〈HBV phase，不是在替慢性肝炎分期〉](2026-10-26-hbv-phase-state-vs-stage.md)，已經說明 HBV DNA 反映病毒複製，ALT 反映肝細胞受傷的間接訊號；兩者可能不同步，fibrosis 更不等同當下活動。病人卻不是直接呈現自己的「phase」給我們看：醫師只能從採血當下的 HBeAg、HBV DNA、ALT，以及後續的變化，推論背後的病毒—宿主互動。
 
-上一篇將 HBV phase 與 fibrosis stage 分開。Phase 用來描述目前的病毒—宿主互動，stage 記錄過去已經累積的結構結果。
+問題因此往前一步：**同一個 ALT 數值，能否證明兩名病人的病毒狀態相同？跨過治療閾值的那一天，又是不是疾病開始惡化的那一天？**
 
-但還有一層沒有拆開：
+## ALT 正常，為什麼仍不能說病程沒有變？
 
-Phase 也不是我們直接看見的病程。
+ALT 落在正常範圍，表示這次檢測未見超過採用上限的酵素活性；它不能保證兩次抽血之間沒有肝炎活動，也不能排除慢性纖維化。即使 ALT 數值相同，HBV DNA 極高的 HBeAg-positive chronic infection，與病毒量低的 HBeAg-negative chronic infection，背後仍可能是不同的病毒—宿主狀態。這些是**典型對比**，不能憑單次抽血就替個別患者確定 phase。
 
-臨床看見的是 HBeAg、HBV DNA 與 ALT，再根據它們的組合與時間變化，推論病人目前較接近哪一種 phase。
-
-這個差異，在 HBV DNA 極高、ALT 卻正常時變得特別明顯。
-
-## 病毒明明大量複製，ALT 為什麼可以正常？
-
-最直覺的病程模型是：病毒越多，hepatocyte destruction 越嚴重，ALT 也應該越高。
-
-但 HBV replication 並不會依照 viral load 高低，等比例直接破壞 hepatocyte。Chronic HBV 中可見的 necroinflammatory activity，很大一部分來自宿主免疫系統辨識並攻擊 infected hepatocytes 後產生的 injury。
-
-HBV DNA 比較接近病毒複製；ALT 則必須等到病毒—宿主互動造成 hepatocyte injury，使細胞內酵素釋放進入血液後，才會升高。
-
-因此，高 HBV DNA、正常 ALT，表示 virological activity 很高，卻沒有同步出現明顯的 biochemical injury。反過來，宿主免疫反應增強時，ALT 可以升高，HBV DNA 卻未必以相同比例增加，甚至可能隨病毒受到控制而逐漸下降。
-
-所以「HBV 很 active」並不是一個完整的描述。
-
-它可能指病毒正在大量複製，也可能指宿主正在產生 active hepatitis。前者由 HBV DNA 接近，後者才由 ALT、histology 與其他證據共同推論。
-
-病毒活動與肝炎活動彼此相關，卻不是同一件事。
-
-## ALT 正常，究竟沒有看見什麼？
-
-ALT 正常表示這次量到的血清酵素活性沒有超過採用的正常上限。它同時受酵素釋放、清除、檢驗方法與採血時點影響，不能反推 hepatocyte injury 完全不存在。正常範圍內的差異也不等於生物學上完全相同。
-
-但這句話不能反向延伸成病毒沒有複製、宿主沒有與病毒互動，或病程沒有繼續。
-
-相同的正常 ALT，可以出現在 HBV DNA 極高的 HBeAg-positive chronic infection，也可以出現在 HBV DNA 很低的 HBeAg-negative chronic infection。兩者表面上都沒有明顯 aminotransferase elevation，上游狀態卻完全不同。
-
-因此，正常 ALT 不能單獨替病人命名 phase。
-
-它也可能漏掉抽血之間的波動，或尚未形成明顯 enzyme release 的低度變化。即使 ALT 持續正常，也只是降低目前存在明顯 necroinflammatory activity 的可能性，不能擴張成完整的安全證明。
+更難觀察的是時間。ALT 受到肝細胞受傷程度、酵素釋放與清除、其他肝病和採血時點影響；抽血結果沒有跨過上限，不表示病程沒有改變，只表示這個變化未必已經以這項檢驗可辨識的形式出現。也正因如此，追蹤應合併連續病毒量與 ALT、HBeAg、fibrosis／cirrhosis 和個別風險，而不是等待一次「異常」才開始思考。
 
 <figure id="hbv-observation-inference-action" class="hbv-figure hbv-inference-figure">
   <div class="hbv-figure-head"><span>觀察 ≠ 病程 · 圖 01</span><strong>同樣 ALT 正常，為什麼不能推定相同的 HBV 狀態？</strong><p>先辨認 DNA 與 ALT 的生理來源，再比較兩組典型檢驗組合。</p></div>
@@ -60,13 +30,9 @@ ALT 正常表示這次量到的血清酵素活性沒有超過採用的正常上�
   <figcaption>原創概念圖，非 Pocket Medicine 原表或診療演算法。兩組為典型檢驗組合，非真實病例；正常 ALT 不能排除組織發炎或既有 fibrosis，也不表示可停治療／監測。對讀 Pocket Medicine 9E 私人 PDF 第 140–141 頁及 AASLD／IDSA 2025 phase 定義；公開原表重製授權尚未確認。</figcaption>
 </figure>
 
-這正是 phase table 最容易被忽略的限制。
+圖中兩名患者的 ALT 都正常，但 HBV DNA 與 HBeAg 組合不同。這不是要重新背兩種 phase，而是提醒：**Marker 是間接觀察，phase 是對多個觀察及其時間序列的推論。** HBeAg、HBV DNA 與 ALT 未形成典型組合時，也可能落在 indeterminate／grey-zone state；分類標籤不是量到的免疫狀態。
 
-Phase 名稱不是直接量到的免疫狀態，而是根據有限 markers 對病毒—宿主互動所建立的臨床分類。當 HBeAg、HBV DNA 與 ALT 沒有形成典型組合，病人便落入 indeterminate phase。這不只是多出一個分類，也暴露出連續而變動的生物學，無法永遠被幾個 thresholds 完整切開。
-
-因此，檢驗沒有變化，不代表病人沒有移動。
-
-它只能表示，病程尚未以這項檢驗能辨識的方式改變。
+只靠一次正常 ALT，既不能判斷目前完全沒有肝炎活動，也不能保證未來的疾病軌跡。下一個問題是：臨床指引為何仍需要設置 ALT、HBV DNA 等治療門檻，而這些門檻又不能被當成疾病真正的起點？
 
 ## 觀察門檻，為什麼不是疾病開始的時點？
 
