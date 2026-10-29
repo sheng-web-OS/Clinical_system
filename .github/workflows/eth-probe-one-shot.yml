@@ -1,0 +1,41 @@
+name: ETH Probe synthetic model smoke (manual, eight calls maximum)
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type SYNTHETIC_ONLY to authorize one bounded API smoke'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.ref == 'refs/heads/main' &&
+      inputs.confirm == 'SYNTHETIC_ONLY' &&
+      vars.CLINICAL_OS_AGENT_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify main is protected
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(gh api "repos/$GITHUB_REPOSITORY/branches/main" --jq '.protected')" = 'true'
+      - name: Dry-run bounded synthetic plan (no credentials)
+        run: python tools/run_eth_synthetic_smoke.py --plan
+      - name: Run one synthetic Native vs Lite API smoke (no artifacts, no publication)
+        env:
+          OPENAI_API_KEY: ${{ secrets.CLINICAL_OS_OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5-mini
+        run: python tools/run_eth_synthetic_smoke.py --execute

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "case_id": "synthetic_route_01",
+  "task": "Choose the most important routing question and the appropriate routing action for a fictional submission. Cite the fact IDs used. This is not a medical case.",
+  "case_text": "The fictional submission is {{F1}}. Its cover is {{F2}}.",
+  "facts": {
+    "F1": "signed by its submitter",
+    "F2": "blue"
+  },
+  "candidate_questions": {
+    "q_signature": "Does the submission have a signature?",
+    "q_cover": "Which cover color is most attractive?"
+  },
+  "candidate_decisions": {
+    "accept": "Accept for routing",
+    "hold": "Hold pending a signature"
+  },
+  "review_flag_ids": ["unsupported_completion"],
+  "baseline_gold": {
+    "question_id": "q_signature",
+    "evidence_ids": ["F1"],
+    "decision_id": "accept",
+    "review_flags": []
+  },
+  "probes": [
+    {
+      "id": "p01",
+      "fact_id": "F1",
+      "new_value": "missing a signature",
+      "relation": "flip",
+      "gold": {
+        "question_id": "q_signature",
+        "evidence_ids": ["F1"],
+        "decision_id": "hold",
+        "review_flags": []
+      }
+    },
+    {
+      "id": "p02",
+      "fact_id": "F2",
+      "new_value": "green",
+      "relation": "stable",
+      "gold": {
+        "question_id": "q_signature",
+        "evidence_ids": ["F1"],
+        "decision_id": "accept",
+        "review_flags": []
+      }
+    }
+  ]
+}
