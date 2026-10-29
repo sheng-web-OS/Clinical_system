@@ -27,13 +27,13 @@
 
 可採三類編輯決定：**保留獨立**（讀者問題或證據／決策增量確實不同，必要先備精簡銜接）；**建立精確導航／縮減重述**（相同前提已在前篇完整建立，但新稿仍有可保留的新決策）；**退回整合／HOLD**（相同核心問題、病例及決策主線已充分解答，新稿沒有可辨識的獨立增量）。不得因相似詞或文章標題自動刪除、合併或替代歷史作者原稿。不能確認時保留草稿與不確定性，不擅自覆寫公開文章。
 
-這是**按需的人類／模型語義判斷要求**，不是 CI 可自行判定語義相同的機器規則；現有 CI 仍只驗證版本與 review receipt 的結構，不聲稱醫學或讀者成效驗證。相關正反例與限制存於私人 [2026-10-29 跨篇相似性先導稽核](../audit/semantic-overlap-pilot-20261029.md)。是否要增加自動化候選排序／永久規則，須先用新文章盲測其 false positive、漏檢、節省的人工作業時間與維護成本。
+這是**按需的人類／模型語義判斷要求**，不是 CI 可自行判定語義相同的機器規則；現有 CI 仍只驗證版本與 review receipt 的結構，不聲稱醫學或讀者成效驗證。相關正反例與限制目前位於**公開 Repository 中可讀取的** [2026-10-29 跨篇相似性先導稽核](../audit/semantic-overlap-pilot-20261029.md)；此文件只能使用適合公開的教學內容，不能當作私人稽核儲存區。是否要增加自動化候選排序／永久規則，須先用新文章盲測其 false positive、漏檢、節省的人工作業時間與維護成本。
 
 ## Agent 的最短交付流程
 
 1. 撰稿／修訂完成後執行 `python site/semantic_gate.py --packet content/.../article.md`，產出帶有段落 ID、來源位置、摘錄與當前 Git blob 的**未核准草稿封包**；它不會自動填通過。
 2. **與撰稿分開的獨立審稿脈絡**閱讀完整文章和必要原始來源，逐段辨認關係／冗餘，填寫每段 `role`、`reader_gain`、`nonredundancy_reason`、`verdict`；如有缺口，先退回修改正文，再生成新版封包。只允許全部 `keep` 及已解除硬性阻塞的版本發布。
-3. 在私有 `audit/editorial-semantic-reviews.json` 的 `reviews[path]` 記錄已審完的封包、A–G 與 `reviewer_context`（`independent_ai_pass` 或 `human_editor`）及可追溯 `reviewer_reference`。**產生內容的 agent 不得把自己的同一輪自評偽裝成獨立審查。**
+3. **本 GitHub Repository 目前為 PUBLIC**：只有當待發布教材、審稿依據及逐段理由均已確認適合公開，才可將無敏感內容的 `reviews[path]` 核准票據、A–G、精確 Git blob、`reviewer_context`（`independent_ai_pass` 或 `human_editor`）與可追溯的非機密 `reviewer_reference` 寫入公開的 `audit/editorial-semantic-reviews.json`。**含私人病歷、未核准來源影像、受限研究素材或非公開審稿細節的完整版封包須保存在獨立存取受控的位置；不可藉公開 PR、Git history、Issues 或 Actions artifacts 上傳。**產生內容的 agent 不得把自己的同一輪自評偽裝成獨立審查。
 4. `python tools/validate.py` 加上正常 `bash tools/build_site.sh`，逐一確認版本一致、涵蓋全部段落、無空泛／重複的審查理由與七軸／hard-stop 通過。CI 任一失敗不得合併發布。修改任一正文後，先前 receipt 自動失效。
 
 ## 不能被誇大的部分
