@@ -115,6 +115,54 @@ The GitHub read-only smoke executes this path on four real public MedEinst vigne
 
 At the moment, this is an **engineering-compatible candidate handoff**. The referenced PR #225 remains Draft/HOLD and its model execution requires its own isolated, authorized environment; no public GitHub PR workflow should receive API secrets or protected patient cases. The published MedEinst split is only a *development* corpus, never a fresh secret holdout.
 
+## Published-label pair scorer — implementation and falsification boundaries
+
+MedEinst's published evaluation measures **baseline/control accuracy**, **robust pair accuracy**, and **Bias Trap Rate**. These are separate from #225's question-triage/appropriate retrieval behavior; a correct RETRIEVE/SKIP/HOLD decision does **not** equal a correct diagnosis. The source of the metric definitions is [MedEinst, ACL 2026](https://aclanthology.org/2026.acl-long.1847/) and the [official dataset card](https://huggingface.co/datasets/zhui711/MedEinst). Attribute original DDXPlus as required by the benchmark's CC BY 4.0 card.
+
+For a frozen paired dataset with original control labels `y_control` and flipped trap labels `y_trap`, and pre-frozen first-pass model predictions `p_control` and `p_trap`:
+
+- **Baseline Accuracy** = number of correct controls / all included pairs.
+- **Robust Accuracy** = number of pairs with both diagnoses correct / all included pairs.
+- **Bias Trap Rate** = among pairs with **correct control diagnosis**, fraction where the trap's model prediction is **the ORIGINAL control diagnosis**, *not* simply any wrong diagnosis. When no control was correct, report BTR as `null`, not 0.
+- Retain trap-only accuracy as a secondary descriptive outcome; it is **not** identical to the primary Bias Trap Rate.
+
+The offline scorer `tools/score_medeinst_firstpass.py` requires a SHA-256-frozen `answer_key.json` (facilitator only), `private_crosswalk.json` (maps anonymized Stage1 M-slots to gold-free worker slots), and an already frozen **complete** three-arm `predictions.json`. It enforces every M-slot × native/retrieval/skill, one control and one trap per original patient pair, exact source/packet hash bindings, distinct worker contexts, completed first-pass claims, nonempty diagnoses, and exact published-label matching (whitespace/case normalized; **no speculative synonym matching**). It refuses incomplete/truncated attempts rather than silently scoring them as failures or successes.
+
+Example **after a separately authorized model run in private storage, NOT as a GitHub PR/Actions model execution**:
+
+~~~sh
+python tools/score_medeinst_firstpass.py \
+  --gold /secure/facilitator/answer_key.json \
+  --gold-sha256 <frozen-sha256> \
+  --crosswalk /secure/stage1/private_crosswalk.json \
+  --crosswalk-sha256 <frozen-sha256> \
+  --frozen-predictions /secure/model-runs/predictions.json \
+  --predictions-sha256 <frozen-sha256>
+~~~
+
+The frozen predictions schema is:
+
+~~~json
+{
+  "schema_version": 1,
+  "exposure": "development",
+  "records": [
+    {
+      "case_id": "M01",
+      "arm": "native",
+      "attempt_status": "COMPLETED",
+      "diagnosis": "A diagnosis label assessed from frozen first-pass output",
+      "first_pass_sha256": "<sha256-of-original-first-pass-output>",
+      "worker_context": "distinct-runtime-context-token"
+    }
+  ]
+}
+~~~
+
+This is **illustrative only**; the complete real input requires all three arms for every anonymous case, and the diagnosis label must be frozen **before** the facilitator opens the key. Each worker must have an independently logged source/skill exposure and model/budget; context labels and response hashes alone cannot authenticate an actual model invocation. The scorer never authenticates provider response IDs, clinical assessors, patient validity, model identity, matched resource permissions, cost, or safety; it *always* returns `promotion_authorized=false` and `skill_transfer_validated=false`. Synthetic tests use invented disease labels only. Do not publish case-level answer outputs or key/response content in the public repo.
+
+**Essential comparability warning:** the four MedEinst Stage1 inputs currently represent **two control/trap pairs** selected for technical verification. They are **NOT** the three study roles (novel transfer, normal and non-applicable boundary) required by PR #225's decision-question-triage hypothesis. PR #225's existing HCM reading material cannot simply be attached to unrelated MedEinst cases and called an evidence-matched B/C comparison. For an actual marginal Skill effect, first choose a task-relevant, source-verified article pack and include negative controls; do not manufacture performance gain through mismatched retrieval, label leakage or extra worker instructions. The published MedEinst test split has possible pretraining exposure, so it is development-only even if the runtime is genuine. Meaningful clinical skill transfer still requires separately expert-vetted, unfamiliar cases with reliable first-pass and human-cost comparison.
+
 ## Actual clinical experiment — NOT RUN
 
 1. Freeze dataset SHA and chosen IDs before outcomes; review case validity, contamination and data rights. For actual transfer, create separately protected *expert-reviewed unseen cases*.
