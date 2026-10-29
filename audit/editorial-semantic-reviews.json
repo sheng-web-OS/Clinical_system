@@ -8393,6 +8393,144 @@
           "line_for_editor": 150
         }
       }
+    },
+    "content/xiaoma-reading/integrated/2026-10-26-hbv-signals.md": {
+      "content_blob": "257ca549c0f4516a657de4311d1242c39b287588",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/219#issuecomment-6486338930",
+      "core_reader_question": "同一組 HBV DNA 與 ALT 的測量，為什麼不能直接判定 phase 或治療，而 EASL 與 AASLD/IDSA 又可能做出不同建議？",
+      "new_understanding": "本篇相較已發布 phase/stage 主文新增對 ALT ULN 測量定義、HBV 病因歸因與不同指南行動閾值的控制式比較；以兩類 HBeAg-negative 灰區和肝硬化例外，展示同一 marker 不等於同一 action。",
+      "strongest_counterargument": "第一節與既有 phase/stage 主文共享 ALT/DNA 不同步的基礎，若沒有第二節固定 ALT45/DNA3000 的跨指南行動反事實便應合併；但目前新增的 EASL 與 AASLD 決策差異確實無法由前篇直接取代。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 3,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "9dd07d917729c55ab4-1": {
+          "role": "orientation",
+          "reader_gain": "先把 DNA 複製、ALT 傷害及 fibrosis 結構三個觀察層次分開，讀者即使未讀前篇也能理解為何需要推論 phase。",
+          "nonredundancy_reason": "刪除這段會使下一段的『同一 ALT 不等於同一狀態』缺乏檢驗對象與病理層次的共同定義。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 5",
+          "line_for_editor": 5
+        },
+        "4237fa8ed198d48e80-1": {
+          "role": "orientation",
+          "reader_gain": "提出兩個可檢驗的問題：相同 ALT 是否代表相同狀態，以及跨過門檻是否代表病程剛開始。",
+          "nonredundancy_reason": "這不是前段的術語重述，而是限定全文要以時間和行動閾值回答的推理任務。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 7",
+          "line_for_editor": 7
+        },
+        "32e4e8702cca0d2556-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用高 DNA／HBeAg 陽性與低 DNA／HBeAg 陰性的典型對照，揭露單次正常 ALT 對病毒狀態的不可識別性。",
+          "nonredundancy_reason": "若刪掉具體反例，讀者只會記住 ALT 不可靠的口號，無法看到哪一組測量造成分類歧義。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 11",
+          "line_for_editor": 11
+        },
+        "9fd458608dafb693b3-1": {
+          "role": "causal_bridge",
+          "reader_gain": "補足 ALT 受細胞受傷、酵素動力學、其他病因和採樣時間影響，連到必須使用連續 DNA／ALT 與結構風險。",
+          "nonredundancy_reason": "這段提供時間軸及採檢限制，不能由前一段的兩組橫斷面 marker 對照替代。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 13",
+          "line_for_editor": 13
+        },
+        "baf89f909bd7ec63c0-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "將原創圖的兩欄明確限定為典型組合而非真實病例，並引出未能符合四格時的灰區分類限制。",
+          "nonredundancy_reason": "若只保留圖表而沒有這段，容易把示意圖誤讀為病例證據或把 phase 名稱當成直接量到的狀態。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 33",
+          "line_for_editor": 33
+        },
+        "ce37a8a178adb46ce2-1": {
+          "role": "decision",
+          "reader_gain": "將 6–12 個月內至少兩次 ALT/DNA 的規則限定於灰區長期 phase 判定，明確排除對已有治療適應症的等待。",
+          "nonredundancy_reason": "刪去會使追蹤時程與治療時機混為一談，也無法從分類問題自然轉到不同灰區的行動選擇。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 35",
+          "line_for_editor": 35
+        },
+        "6f24d622b074cf9e2a-1": {
+          "role": "navigation",
+          "reader_gain": "從正常 ALT 無法證明安全的限制，轉問為何臨床仍需建立治療門檻及門檻與疾病起點的區別。",
+          "nonredundancy_reason": "這段不是單純再講 ALT 不敏感；它是把第一節的測量問題移交第二節的介入決策問題。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 37",
+          "line_for_editor": 37
+        },
+        "34d469e04c023817ba-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "把病毒複製與肝細胞受傷的共同訊號同治療效果證據分開，避免從相關檢驗值直接推得抗病毒獲益。",
+          "nonredundancy_reason": "若省略，後面的指南比較會被誤讀成 ALT/DNA 本身已測量治療效果，而非整合風險與結局研究。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 41",
+          "line_for_editor": 41
+        },
+        "f2d9a30af765f33eff-1": {
+          "role": "counterfactual",
+          "reader_gain": "固定非真實成年男性 ALT 45、DNA 3000、HBeAg 陰性與無肝硬化，先校準兩份指南的 ALT ULN 才比較行動。",
+          "nonredundancy_reason": "具體數值和性別是隔離測量定義混雜的必要條件，不能只說兩份指南門檻不同。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 43",
+          "line_for_editor": 43
+        },
+        "bb89e2af96a2a49ba2-1": {
+          "role": "decision",
+          "reader_gain": "在 HBV 歸因已確認的前提下展示 EASL 對 DNA ≥2000 且 ALT 升高的建議治療，對比 AASLD 灰區共享決策。",
+          "nonredundancy_reason": "這是相對前篇新增的核心政策反事實，若刪除便只剩 phase 介紹而無法回答相同觀察為何可能不同處置。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 45",
+          "line_for_editor": 45
+        },
+        "6ae554d8e55d73b9f0-1": {
+          "role": "counterfactual",
+          "reader_gain": "改成持續低 DNA 而 ALT 持續升高，指出需查其他肝損傷原因且 EASL LoE5 弱建議仍可考慮治療。",
+          "nonredundancy_reason": "這一反例排除把前一組高 DNA 的 HBV 歸因套用到所有 ALT 異常，也避免低 DNA 被誤作永不治療。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 47",
+          "line_for_editor": 47
+        },
+        "eb4104addbad66ce45-1": {
+          "role": "causal_bridge",
+          "reader_gain": "把兩組指南比較提升為可遷移模型：量測訊號、病程分類及治療規則分屬不同推論層級。",
+          "nonredundancy_reason": "這段總結前述反事實的共同原理，並非再背前篇 phase 表；刪除會讓例子停留在兩組孤立數字。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 49",
+          "line_for_editor": 49
+        },
+        "58cc69fe6d523502cd-1": {
+          "role": "safety",
+          "reader_gain": "把肝硬化合併可測 HBV DNA 作為不能等待 ALT 或 phase 追蹤的安全例外，並提醒急性失代償另需處理。",
+          "nonredundancy_reason": "若刪掉，前文灰區需連續追蹤的敘事可能被錯套到高風險肝硬化，造成臨床延誤。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 51",
+          "line_for_editor": 51
+        },
+        "d5047eb7b6b6123713-1": {
+          "role": "navigation",
+          "reader_gain": "提供前篇 phase/stage、肝檢驗三軸和來源頁的明確延伸路徑，讓讀者能回查不同問題的證據。",
+          "nonredundancy_reason": "這組導覽不是文章內容的重述；它將兩篇不同臨床問題及原始來源分開供讀者選擇。",
+          "verdict": "keep",
+          "excerpt_for_editor": "Reviewed in full source at line 55",
+          "line_for_editor": 55
+        }
+      }
     }
   }
 }
