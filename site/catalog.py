@@ -2,8 +2,59 @@
 import json
 import hashlib
 import re
+import unicodedata
 from datetime import date
 from pathlib import PurePosixPath
+
+
+
+def _reading_title_key(title):
+    """A high-confidence visual-title collision key; never a semantic merge."""
+    normalized = unicodedata.normalize("NFKC", title).casefold()
+    return "".join(char for char in normalized
+                   if not char.isspace() and not unicodedata.category(char).startswith("P"))
+
+
+def validate_reading_version_collisions(pages):
+    """Fail closed on undeclared original/current twins before public discovery.
+
+    The manifest remains authoritative: matching titles only flag a missing
+    relationship, and the explicit replaces_original pointer decides lineage.
+    Different titles or shared exam questions alone never imply replacement.
+    """
+    by_output = {page["output"]: page for page in pages}
+    successors = {}
+    original_titles = {}
+    for page in pages:
+        if page.get("kind") == "historical_original":
+            key = (page.get("collection"), _reading_title_key(page["title"]))
+            original_titles.setdefault(key, []).append(page)
+    for page in pages:
+        original_output = page.get("replaces_original")
+        if original_output is None:
+            continue
+        if not isinstance(original_output, str) or not original_output.strip():
+            raise ValueError("Invalid replaces_original value: " + page["output"])
+        original = by_output.get(original_output)
+        if (page.get("kind") != "ai_integrated"
+                or original is None or original.get("kind") != "historical_original"
+                or original.get("collection") != page.get("collection")):
+            raise ValueError("Invalid replaces_original relationship: " + page["output"])
+        if original_output in successors:
+            raise ValueError("Multiple integrated successors for original: " + original_output)
+        successors[original_output] = page["output"]
+
+    for page in pages:
+        if page.get("kind") != "ai_integrated":
+            continue
+        key = (page.get("collection"), _reading_title_key(page["title"]))
+        for original in original_titles.get(key, []):
+            if successors.get(original["output"]) != page["output"]:
+                raise ValueError(
+                    "Undeclared original/integrated title collision: "
+                    + original["output"] + " / " + page["output"]
+                    + "; set the correct replaces_original or distinguish independent titles"
+                )
 
 
 def load_pages(root):
@@ -52,6 +103,7 @@ def load_pages(root):
                 raise ValueError("Recovered original requires its source fingerprint")
             if hashlib.sha256(path.read_bytes()).hexdigest() != fingerprint:
                 raise ValueError("Recovered original changed: " + row["source"])
+    validate_reading_version_collisions(pages)
     # Essential source algorithms are part of the visible reader experience, not a buried citation.
     for row in pages:
         contract = row.get("required_primary_visual")
