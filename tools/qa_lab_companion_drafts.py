@@ -117,7 +117,7 @@ def main():
                                 for index, url in enumerate(cfg["images"], 1):
                                     response = page.request.get(url, timeout=18000)
                                     payload = response.body()
-                                    if response.status != 200 or not payload.startswith(b"\\xff\\xd8\\xff"):
+                                    if response.status != 200 or not payload[:3] == bytes((255, 216, 255)):
                                         raise AssertionError(f"{slug}: original JPEG source bytes unavailable ({response.status})")
                                     (args.output / f"{slug}-source-original-{index}.jpg").write_bytes(payload)
                                 for index, img in enumerate(page.locator("article.article figure img").all(), 1):
