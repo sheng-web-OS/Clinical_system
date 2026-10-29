@@ -34,6 +34,7 @@ Ghany MG, et al. *AASLD/IDSA Practice Guideline on treatment of chronic hepatiti
 - 為區分波動與持續的病程模式，原文建議判定灰區 phase 時，參考 **6–12 個月內至少兩次 ALT 與 HBV DNA 結果**。這是診斷分類的時間證據，**不是**已符合治療適應症者必須等待半年。
 - HBeAg-negative、無 cirrhosis 且 HBV DNA ≥2,000 IU/mL、ALT 未達典型活動性肝炎門檻者，需評估 fibrosis／HCC risk；反之，ALT 升高、HBV DNA <2,000 IU/mL 者，需查其他肝損傷原因。相似的「灰區」分類不代表下一項檢查或處置相同。
 - **Recommendation 4**：對無 cirrhosis 的 HBeAg-negative indeterminate 成人，*suggest* 以共同評估利益與風險的共享決策方式考慮抗病毒治療，為 conditional recommendation、very low certainty；若暫不治療，應在每次追蹤重新評估。這不是把所有正常 ALT 者都視為同一治療群。
+- **EASL 與 AASLD 的行動分歧**：以 HBeAg-negative、無 cirrhosis、HBV DNA ≥2,000 IU/mL、ALT >ULN 但 <2×ULN 為條件（非真實病例）：AASLD/IDSA 尚不符合其典型 HBeAg-negative immune-active 的 ALT ≥2×ULN 定義，因此可進入 indeterminate 的 Recommendation 4 路徑；EASL 則在確定是 HBV 相關 chronic hepatitis 且排除其他 ALT 升高病因後，依其較低 ALT 閾值可落入建議治療的分支。不同的是 treatment decision rule 與適用證據，不能把任一門檻當作病程起始的生理事件。
 - 原文件將 functional cure 定義為停藥後至少六個月 HBsAg-negative、HBV DNA undetectable（anti-HBs 可有可無）；HCC surveillance 仍須依原本風險考量，特別包括 cirrhosis、HCC 家族史、較高年齡才發生 HBsAg loss 者（男性 >40、女性 >50 歲；詳見 Recommendation 6）。
 
 ## 回到兩篇文章的不同問題
