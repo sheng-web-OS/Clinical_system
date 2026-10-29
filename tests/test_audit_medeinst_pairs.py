@@ -120,5 +120,21 @@ class AggregateAuditContract(unittest.TestCase):
             self.call()
 
 
+    def test_one_long_official_style_narrative_is_a_worker_exclusion_not_malformed_data(self):
+        self.records[0]["narrative"] += ("A" * 12500)
+        self.save()
+        report = self.call()
+        self.assertEqual(1, report["narratives_above_worker_limit"])
+        self.assertEqual(1, report["pairs_above_worker_limit"])
+        self.assertEqual("STRUCTURAL_AUDIT_WITH_WORKER_EXCLUSIONS", report["verdict"])
+        self.assertFalse(report["one_fact_intervention_verified"])
+
+    def test_invalid_extremely_short_narrative_stays_rejected(self):
+        self.records[0]["narrative"] = "too short"
+        self.save()
+        with self.assertRaisesRegex(HoldoutError, "INVALID_AUDIT_RECORD"):
+            self.call()
+
+
 if __name__ == "__main__":
     unittest.main()
