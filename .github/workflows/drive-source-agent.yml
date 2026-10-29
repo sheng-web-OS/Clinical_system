@@ -1,0 +1,84 @@
+name: Selective Drive source agent (unapproved setup)
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/drive-source-agent.yml"
+      - "tools/drive_source_agent.py"
+      - "tests/test_drive_source_agent.py"
+      - "experiments/autonomy-shadow/fixtures/drive-source-gap.json"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "fixture = no external calls; shadow = model only; synthetic-read = approved synthetic Drive only"
+        type: choice
+        required: true
+        default: fixture
+        options: [fixture, shadow, synthetic-read]
+
+permissions:
+  contents: read
+
+jobs:
+  fixture:
+    if: github.event_name == 'pull_request' || inputs.mode == 'fixture'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fail-closed decision regression tests, no secrets
+        run: python -m unittest discover -s tests -p test_drive_source_agent.py
+      - name: Synthetic simulation, not AI
+        run: python tools/drive_source_agent.py --mode fixture --context experiments/autonomy-shadow/fixtures/drive-source-gap.json
+
+  agent:
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      inputs.mode != 'fixture' &&
+      vars.CLINICAL_OS_AGENT_ENABLED == 'true' &&
+      github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify Google authorization configuration
+        if: inputs.mode == 'synthetic-read'
+        env:
+          PROVIDER: ${{ vars.CLINICAL_OS_WIF_PROVIDER }}
+          SERVICE_ACCOUNT: ${{ vars.CLINICAL_OS_GCP_SERVICE_ACCOUNT }}
+          FOLDER_ID: ${{ secrets.CLINICAL_OS_DRIVE_FIXTURE_FOLDER_ID }}
+        run: |
+          if [ -z "$PROVIDER" ] || [ -z "$SERVICE_ACCOUNT" ] || [ -z "$FOLDER_ID" ]; then
+            echo "NOT_CONFIGURED: WIF or synthetic Drive scope is missing"
+            exit 2
+          fi
+      - name: Authenticate with Google OIDC, synthetic folder only
+        if: inputs.mode == 'synthetic-read'
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ vars.CLINICAL_OS_WIF_PROVIDER }}
+          service_account: ${{ vars.CLINICAL_OS_GCP_SERVICE_ACCOUNT }}
+          create_credentials_file: true
+          export_environment_variables: true
+      - name: Install Google auth for synthetic Drive only
+        if: inputs.mode == 'synthetic-read'
+        run: python -m pip install --disable-pip-version-check google-auth requests
+      - name: Decide before fetching; no document bytes in logs
+        env:
+          OPENAI_API_KEY: ${{ secrets.CLINICAL_OS_OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.CLINICAL_OS_AGENT_MODEL }}
+          DRIVE_FIXTURE_FOLDER_ID: ${{ secrets.CLINICAL_OS_DRIVE_FIXTURE_FOLDER_ID }}
+          AGENT_MODE: ${{ inputs.mode }}
+        run: |
+          python tools/drive_source_agent.py \
+            --mode "$AGENT_MODE" \
+            --context experiments/autonomy-shadow/fixtures/drive-source-gap.json
