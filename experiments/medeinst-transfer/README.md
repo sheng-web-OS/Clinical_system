@@ -15,7 +15,7 @@ Missing: a small adapter from the [MedEinst dataset](https://github.com/zhui711/
 
 ## Research provenance and limitations
 
-MedEinst (arXiv:2601.06636) offers control/trap pairs, with JSONL schema documented in [dataset_interface.md](https://github.com/zhui711/MedEinst/blob/main/docs/dataset_interface.md). The released ECR-Agent includes causal reasoning and memory modules. The dataset uses simulated cases derived from DDXPlus; review upstream provenance and rights before redistribution.
+MedEinst (arXiv:2601.06636) offers control/trap pairs, with JSONL schema documented in [dataset_interface.md](https://github.com/zhui711/MedEinst/blob/main/docs/dataset_interface.md). The released ECR-Agent includes causal reasoning and memory modules. The dataset uses simulated cases derived from DDXPlus; review upstream provenance and rights before redistribution. **Verified upstream dataset card:** [zhui711/MedEinst](https://huggingface.co/datasets/zhui711/MedEinst/tree/main) lists CC BY 4.0, but this does not supersede upstream DDXPlus terms. The [published `test.jsonl` file](https://huggingface.co/datasets/zhui711/MedEinst/blob/main/test.jsonl), approximately 11.7 MB, advertises SHA-256 `b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57` (verified 2026-10-29). Source blob identity is pinned; actual clinical contents were not downloaded or reviewed in this PR.
 
 [MedR-Bench](https://github.com/MAGIC-AI4Med/MedRBench) evaluates reasoning quality, while [SDBench](https://github.com/microsoft/sdbench) evaluates sequential information acquisition. [FUTURE-AI](https://www.bmj.com/content/388/bmj-2024-081554.long) motivates provenance, robustness and oversight.
 
@@ -25,8 +25,8 @@ Published benchmark diagnoses are **not** independent medical adjudications; pub
 
 The new tool, tools/prepare_medeinst_holdout.py:
 
-1. Requires the actual input file SHA-256 and 1–12 explicitly preselected pair IDs.
-2. Validates bounded JSONL size, unique complete control/trap pairs, and differing published labels before writing.
+1. **Official mode (default):** requires the published `test.jsonl` SHA-256 above as well as the actual input bytes' matching digest; arbitrary self-hashed JSONL cannot masquerade as MedEinst. Synthetic development tests must explicitly pass `--source-mode synthetic-fixture`, and their output is labeled non-MedEinst. Requires 1–12 explicitly preselected pair IDs.
+2. Validates bounded JSONL size, unique complete control/trap pairs, differing published labels, distinct narratives, and string IDs before writing. These are mechanical validity gates, not expert causal review.
 3. Creates each narrative in its **own anonymous worker directory**, excluding IDs, variant type and label fields. Cases are randomly permuted.
 4. Saves a separate **facilitator-only** key with pair identity, labels and exact packet SHA. Both output roots must be new, disjoint and outside the public repository, with private creation permissions.
 5. Sets NOT_RUN, model_calls=0, medical_validated=false and skill_transfer_validated=false. There are no external calls, model judgments or publications.
@@ -45,7 +45,7 @@ python tools/prepare_medeinst_holdout.py \
   --facilitator-root /secure/new-facilitator-only
 ~~~
 
-This command is illustrative, not an executed clinical benchmark. Both output roots must be new under existing trusted directories. Do not process clinical or identifiable data through public Actions.
+This command uses default `--source-mode official-medeinst`; the pinned SHA must match exactly. `--source-mode synthetic-fixture` is ONLY for fictional local testing and cannot certify the benchmark. This command is illustrative, not an executed clinical benchmark. Both output roots must be new under existing trusted directories. Do not process clinical or identifiable data through public Actions.
 
 ### Mechanical tests
 
@@ -53,7 +53,7 @@ This command is illustrative, not an executed clinical benchmark. Both output ro
 python -m unittest discover -s tests -p 'test_prepare_medeinst_holdout.py' -v
 ~~~
 
-2026-10-29 local result: **12/12 PASS** after correcting one failing negative-test expectation. Tests use fictional Diagnosis X/Y/P/Q placeholders; no MedEinst clinical vignette was downloaded or evaluated. Exact-head GitHub CI and independent review are still required.
+2026-10-29 V1 local result: **12/12 PASS**; source-identity hardening V2 local result: **17/17 PASS**, adding official-blob pinning, identical-narrative rejection, malformed ID rejection, and synthetic-mode labeling. Tests use fictional Diagnosis X/Y/P/Q placeholders; no MedEinst clinical vignette was downloaded or evaluated. Exact-head CI on the updated commit and independent review remain separately required.
 
 ## Actual clinical experiment — NOT RUN
 
