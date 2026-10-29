@@ -157,6 +157,17 @@ clinical_script = "internal"
         self.assertIn("必須保留分界", excerpt)
         self.assertNotIn("<strong>", excerpt)
 
+    def test_reader_units_strip_actual_inline_tag_with_attributes(self):
+        text = (
+            "若 serum Na <LLN，<span class='important'>應重新檢查</span>；"
+            "另外 ECG 與真實電解質的方向可能不一致，不能機械套用單一數值。"
+        )
+        excerpt = reading_units(text)[0]["excerpt"]
+        self.assertIn("serum Na <LLN", excerpt)
+        self.assertIn("應重新檢查", excerpt)
+        self.assertNotIn("<span", excerpt)
+        self.assertNotIn("</span>", excerpt)
+
     def test_reader_units_do_not_strip_comparison_until_next_real_tag(self):
         text = (
             "如果 ALT <ULN 且 HBV DNA >2,000，就仍需要依臨床情境"
