@@ -184,7 +184,7 @@ def build_plan(data, skill, model, commit):
     if not isinstance(commit, str) or len(commit) != 40 or any(c not in "0123456789abcdef" for c in commit):
         raise PilotError("CANDIDATE_COMMIT_REQUIRED")
     cases, docs = validate_fixture(data)
-    return {
+    plan = {
         "status": "NOT_RUN", "source_class": data["source_class"],
         "candidate_commit": commit, "model": model,
         "candidate_skill_sha256": digest(skill),
@@ -297,7 +297,7 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
                             "status": "FAILED_INCOMPLETE", "first_pass_unscored": True,
                             "answer": None})
     write_private(output_dir / "first_pass_unscored.json", results)
-    suite_sha = digest(json.dumps(meta, ensure_ascii=False, sort_keys=True))
+    suite_sha = meta["suite_sha256"]
     packet, mapping = build_blind_packet(cases, results, suite_sha)
     write_private(output_dir / "blind_reviewer_packet.json", packet)
     write_private(output_dir / "private_arm_mapping.json", mapping)
