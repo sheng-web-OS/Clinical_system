@@ -263,3 +263,58 @@ independently adjudicated, evidence sources access-controlled, and a fresh
 model trial conducted in an isolated environment with RED+GREEN controls.
 No patient data, private answer keys, automatic publication, network model
 calls, new scheduled actions or deployment changes belong in this PR.
+
+## V6 optional selective-claim update probe (2026-10-29; engineering only)
+
+A single final decision can be correct while its accompanying clinical-like
+claims are wrong or needlessly changed. An **optional** `candidate_claims`
+mapping adds predeclared, individually checkable statements to a fictional
+case. Each frozen gold record must cover all claim IDs with one of
+`supported`, `refuted`, or `undetermined`. Unlike the answer labels, candidate
+claim *texts* are visible to the adapter; their truth-status key is not.
+An updated fact may change some claims while leaving unrelated claims valid.
+
+`score` now records `incorrect_claim_states`, `missed_claim_updates` and
+`stable_claim_damage` for each variant. A stable main decision does *not*
+exempt an incorrect updated claim, and a newly wrong unrelated claim fails
+rather than receiving credit for a superficially improved main conclusion.
+The claim-state mismatch is reported in `S3_decision` for compatibility with
+the fixed four-stage contract; this **does not imply a temporal root cause**.
+`compare-rescue` reports damaged/missed-claim counts per arm when available.
+
+Local **synthetic only** reproduction (no model or network):
+
+```bash
+python tools/falsification_probe.py prepare \
+  --spec experiments/eth-falsification-probe/synthetic-claim-update.json \
+  --reviewer-dir /tmp/claim-probe/packets \
+  --key /tmp/claim-probe/keys/gold.json
+python tools/falsification_probe.py run \
+  --reviewer-dir /tmp/claim-probe/packets \
+  --adapter experiments/eth-falsification-probe/claim_update_toy_adapter.py \
+  --responses /tmp/claim-probe/responses.json --relabel
+python tools/falsification_probe.py score \
+  --key /tmp/claim-probe/keys/gold.json \
+  --responses /tmp/claim-probe/responses.json
+python -m unittest discover -s tests -p 'test_claim_update_probe.py'
+```
+
+The vignette is entirely fictional: a documented signature, an explicitly
+missing signature, or unknown status; changing cover color is irrelevant to
+the routing action but correctly changes the separate `cover is blue` claim.
+The toy adapter is deterministic and the **fictional gold fixture is public**.
+The framework cannot establish a protected blind test of a model that might
+have accessed this repository or user memory, and it cannot judge whether a
+claim is actually true in medicine. It only validates preadjudicated label
+transitions. A real pilot requires isolated new cases, source-backed independent
+clinical adjudication, negative and positive controls, non-published keys,
+prospective frozen inputs, and owner effort/cost measurement. Therefore the
+status remains **ARTIFACT / NOT_VALIDATED / HOLD**, with no release action.
+
+References for methodological motivation (not software effectiveness claims):
+- Matton et al., ICLR 2025, *Walk the Talk? Measuring the Faithfulness of Large
+  Language Model Explanations*: https://proceedings.iclr.cc/paper_files/paper/2025/hash/b5ec50eb177908f21f78ed0d76ed525c-Abstract-Conference.html
+- Afolabi et al., ML4H 2026, *Faithful or Just Plausible?*:
+  https://proceedings.mlr.press/v297/afolabi26a.html
+- Mo et al., Findings ACL 2026, *Faithfulness vs. Safety*:
+  https://pubmed.ncbi.nlm.nih.gov/42466064/

@@ -21,6 +21,7 @@ import tempfile
 FACT_TOKEN = re.compile(r"\{\{([A-Za-z][A-Za-z0-9_]*)\}\}")
 ID = re.compile(r"^[A-Za-z][A-Za-z0-9_-]{0,63}$")
 STAGES = ("S1_question", "S2_evidence", "S3_decision", "S4_review")
+CLAIM_STATES = ("supported", "refuted", "undetermined")
 
 
 class InvalidProbe(ValueError):
@@ -50,11 +51,20 @@ def nonempty_mapping(value: object, name: str) -> dict:
 
 
 def gold_check(gold: object, questions: dict, choices: dict,
-               fact_ids: set[str], review_ids: set[str], name: str) -> dict:
+               fact_ids: set[str], review_ids: set[str], name: str,
+               claims: dict | None = None) -> dict:
     require(isinstance(gold, dict), f"{name}: missing gold")
     base_fields = {"question_id", "evidence_ids", "decision_id", "review_flags"}
-    require(set(gold) in (base_fields, base_fields | {"support_status"}),
-            f"{name}: gold fields must match the fixed schema (optionally support_status)")
+    optional_fields = {"support_status"}
+    if claims is not None:
+        optional_fields.add("claim_statuses")
+        require("claim_statuses" in gold, f"{name}: requires claim_statuses")
+        statuses = gold.get("claim_statuses")
+        require(isinstance(statuses, dict) and set(statuses) == set(claims) and
+                all(v in CLAIM_STATES for v in statuses.values()),
+                f"{name}: claim_statuses must cover every claim with valid states")
+    require(base_fields <= set(gold) <= base_fields | optional_fields,
+            f"{name}: gold fields must match the fixed schema")
     if "support_status" in gold:
         require(gold["support_status"] in ("sufficient", "insufficient"),
                 f"{name}: invalid support_status")
@@ -78,6 +88,8 @@ def validated(spec: dict) -> dict:
     facts = nonempty_mapping(spec.get("facts"), "facts")
     questions = nonempty_mapping(spec.get("candidate_questions"), "candidate_questions")
     choices = nonempty_mapping(spec.get("candidate_decisions"), "candidate_decisions")
+    claims = (nonempty_mapping(spec["candidate_claims"], "candidate_claims")
+              if "candidate_claims" in spec else None)
     review_ids = set(spec.get("review_flag_ids", []))
     require(isinstance(spec.get("review_flag_ids", []), list) and
             all(isinstance(s, str) and ID.fullmatch(s) for s in review_ids) and
@@ -88,7 +100,7 @@ def validated(spec: dict) -> dict:
             "each declared fact must have exactly one {{FACT_ID}} slot")
     require("{{" not in FACT_TOKEN.sub("", template) and "}}" not in FACT_TOKEN.sub("", template),
             "malformed placeholder in template")
-    gold_check(spec.get("baseline_gold"), questions, choices, set(facts), review_ids, "baseline")
+    gold_check(spec.get("baseline_gold"), questions, choices, set(facts), review_ids, "baseline", claims)
     probes = spec.get("probes")
     require(isinstance(probes, list) and bool(probes), "requires at least one probe")
     probe_ids = set()
@@ -106,7 +118,7 @@ def validated(spec: dict) -> dict:
         require("{{" not in probe["new_value"] and "}}" not in probe["new_value"],
                 f"{pid}: nested placeholders prohibited")
         require(probe["relation"] in ("stable", "flip"), f"{pid}: invalid relation")
-        gold_check(probe["gold"], questions, choices, set(facts), review_ids, pid)
+        gold_check(probe["gold"], questions, choices, set(facts), review_ids, pid, claims)
         require(("support_status" in probe["gold"]) ==
                 ("support_status" in spec["baseline_gold"]),
                 f"{pid}: support_status must be present in all gold records or none")
@@ -141,6 +153,10 @@ def build_packets(spec: dict) -> tuple[list[dict], dict]:
         }
         if "support_status" in spec["baseline_gold"]:
             packet["available_support_statuses"] = ["sufficient", "insufficient"]
+        if "candidate_claims" in spec:
+            # Candidate statements are visible; claim truth labels remain in key.
+            packet["candidate_claims"] = spec["candidate_claims"]
+            packet["available_claim_states"] = list(CLAIM_STATES)
         packet["packet_sha256"] = digest(packet)
         packets.append(packet)
         answers[pid] = {
@@ -199,6 +215,11 @@ def score(key: dict, responses: dict) -> dict:
         if "support_status" in gold:
             require(reply.get("support_status") in ("sufficient", "insufficient"),
                     f"{pid}: missing or invalid support_status")
+        if "claim_statuses" in gold:
+            actual_claims = reply.get("claim_statuses")
+            require(isinstance(actual_claims, dict) and set(actual_claims) == set(gold["claim_statuses"])
+                    and all(v in CLAIM_STATES for v in actual_claims.values()),
+                    f"{pid}: missing, extra or invalid claim_statuses")
         for stage, field in zip(STAGES, ("question_id", "evidence_ids", "decision_id", "review_flags")):
             actual = reply.get(field)
             expected = gold[field]
@@ -212,6 +233,9 @@ def score(key: dict, responses: dict) -> dict:
         if "support_status" in gold and reply["support_status"] != gold["support_status"]:
             if "S2_evidence" not in problems:
                 problems.append("S2_evidence")
+        if "claim_statuses" in gold and reply["claim_statuses"] != gold["claim_statuses"]:
+            if "S3_decision" not in problems:
+                problems.append("S3_decision")
         # Stage order is a reporting convention, not an inferred causal trace.
         problems.sort(key=STAGES.index)
         results.append({"probe_id": pid, "passed": not problems,
@@ -226,6 +250,28 @@ def score(key: dict, responses: dict) -> dict:
         by_id[pid]["relation_passed"] = actual_relation == answer["relation"]
         by_id[pid]["observed_relation"] = actual_relation
         by_id[pid]["expected_relation"] = answer["relation"]
+    # A changed fact may require updating one claim while preserving others.
+    # Compare each variant against the *actual* baseline and the frozen gold.
+    # These are statement-level behavioral checks, not proof of causal reasoning.
+    base_claims = indexed["baseline"].get("claim_statuses")
+    base_gold_claims = key["answers"]["baseline"]["gold"].get("claim_statuses")
+    for pid, answer in key["answers"].items():
+        if pid == "baseline" or base_gold_claims is None:
+            continue
+        expected = answer["gold"]["claim_statuses"]
+        actual = indexed[pid]["claim_statuses"]
+        unchanged = {k for k in expected if expected[k] == base_gold_claims[k]}
+        changed = set(expected) - unchanged
+        row = by_id[pid]
+        row["claims_expected_stable"] = len(unchanged)
+        row["claims_expected_update"] = len(changed)
+        row["stable_claim_damage"] = sorted(k for k in unchanged
+                                            if base_claims[k] == base_gold_claims[k]
+                                            and actual[k] != expected[k])
+        row["missed_claim_updates"] = sorted(k for k in changed
+                                             if actual[k] == base_claims[k])
+        row["incorrect_claim_states"] = sorted(k for k in expected
+                                                if actual[k] != expected[k])
     passed = all(r["passed"] and r.get("relation_passed", True) for r in results)
     return {"case_id": key["case_id"], "passed": passed,
             "trial_count": len(results), "results": results,
@@ -234,6 +280,7 @@ def score(key: dict, responses: dict) -> dict:
                 "First observed mismatch is not a proven causal root or an execution-time trace.",
                 "Packet fingerprints check input identity, not true model-context isolation.",
                 "Machine grading does not validate explanation quality, cited-source sufficiency or actual reader benefit.",
+                "Claim-status transitions test evidence sensitivity, not whether source attribution is a true causal explanation.",
             ]}
 
 
@@ -309,6 +356,7 @@ def relabel_packet(wire: dict) -> tuple[dict, dict[str, dict[str, str]]]:
     namespaces = (
         ("candidate_questions", "Q"),
         ("candidate_decisions", "D"),
+        *(((("candidate_claims", "C"),) if "candidate_claims" in wire else ())),
         ("available_evidence_ids", "E"),
         ("available_review_flag_ids", "R"),
     )
@@ -343,8 +391,8 @@ def relabel_packet(wire: dict) -> tuple[dict, dict[str, dict[str, str]]]:
     if "research_aids" in wire:
         rewrite = {}
         for field in ("candidate_questions", "candidate_decisions",
-                      "available_evidence_ids", "available_review_flag_ids"):
-            rewrite.update(aliases[field])
+                      "candidate_claims", "available_evidence_ids", "available_review_flag_ids"):
+            rewrite.update(aliases.get(field, {}))
         pattern = re.compile(r"(?<![A-Za-z0-9_-])(?:" +
                              "|".join(re.escape(x) for x in sorted(rewrite, key=len, reverse=True)) +
                              r")(?![A-Za-z0-9_-])") if rewrite else None
@@ -434,6 +482,13 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
                                "evidence_ids", "decision_id", "review_flags"}
             if "available_support_statuses" in wire:
                 required_fields.add("support_status")
+            if "candidate_claims" in wire:
+                required_fields.add("claim_statuses")
+                claim_states = reply.get("claim_statuses")
+                require(isinstance(claim_states, dict) and
+                        set(claim_states) == set(wire["candidate_claims"]) and
+                        all(v in CLAIM_STATES for v in claim_states.values()),
+                        f"{pid}: invalid claim_statuses")
             require(isinstance(reply, dict) and set(reply) == required_fields,
                     f"{pid}: unexpected response fields")
             if "available_support_statuses" in wire:
@@ -465,6 +520,10 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
                 for field, names in (("evidence_ids", "available_evidence_ids"),
                                      ("review_flags", "available_review_flag_ids")):
                     reply[field] = [reverse_labels[names][v] for v in reply[field]]
+                if "candidate_claims" in wire:
+                    reply["claim_statuses"] = {
+                        reverse_labels["candidate_claims"][k]: v
+                        for k, v in reply["claim_statuses"].items()}
             # Freeze canonical original IDs only *after* the adapter responds.
             # The evaluator has the original frozen key; the adapter does not.
             reply["probe_id"] = pid
@@ -495,6 +554,10 @@ def compare_rescue(key_root: Path, response_root: Path) -> dict:
                                             for s in STAGES},
                     "bad_relation_count": sum(not r.get("relation_passed", True)
                                               for r in report["results"]),
+                    "stable_claim_damage_count": sum(len(r.get("stable_claim_damage", []))
+                                                     for r in report["results"]),
+                    "missed_claim_update_count": sum(len(r.get("missed_claim_updates", []))
+                                                     for r in report["results"]),
                     "trial_count": report["trial_count"]}
     return {"arms": out, "status": "DIAGNOSTIC_RESCUE_NOT_A_CAUSAL_ROOT",
             "limitations": [
