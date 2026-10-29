@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "disclosure": "SEALED LABELS—adjudication only. Do not include in input pack for first-pass agents. Written from observed user corrections; their scientific validity still requires source review.",
+  "labels": [
+    {
+      "id": "J01",
+      "origin": "explicit_user_correction",
+      "expected_decision": "exclude_public",
+      "severity": "P1",
+      "expected_signals": [
+        "Tamponade is a Clinical OS experimental test case, not an automatically approved original XiaoMa essay",
+        "Public selection must follow publication intent and evidence rather than experiment maturity"
+      ],
+      "minimum_repair": "Remove from XiaoMa publication candidates, homepage and public knowledge routes; preserve private experiment files unchanged.",
+      "bad_overrepair": "Delete Tamponade research or rewrite the clinical experiment."
+    },
+    {
+      "id": "J02",
+      "origin": "explicit_user_correction",
+      "expected_decision": "local_fix",
+      "severity": "P2",
+      "expected_signals": [
+        "Remove internal audit/receipt/recovery tracking from readers' home and article chrome",
+        "Navigation must lead directly to reading and clinician-level reasoning",
+        "Do not treat product UI as a debugging board"
+      ],
+      "minimum_repair": "Keep internal records private; revise public navigation/copy and audit publication paths.",
+      "bad_overrepair": "Delete traceability from private project or drop necessary medical-source footnotes."
+    },
+    {
+      "id": "J03",
+      "origin": "original_text_as_positive_control",
+      "expected_decision": "keep",
+      "severity": "P1",
+      "expected_signals": [
+        "HCM already separates etiology/morphology, LVOTO, filling and systolic function",
+        "Original develops consequences, diagnostics, therapy and counterfactuals",
+        "No demonstrated need to replace its central causal model"
+      ],
+      "minimum_repair": "Keep core argument and provide targeted evidence or original Figure/Table supplementation only if specific defects are independently demonstrated.",
+      "bad_overrepair": "Replace with generic cardiomyopathy classification or force textbook headings; invent major source defects to justify total rewrite."
+    },
+    {
+      "id": "J04",
+      "origin": "explicit_user_correction",
+      "expected_decision": "hold",
+      "severity": "P1",
+      "expected_signals": [
+        "The requested wet/dry × warm/cold quadrants must match the ninth-edition Pocket Medicine original figure",
+        "A similar diagram or text summary does not count as extracted original"
+      ],
+      "minimum_repair": "Open exact PDF page, verify figure geometry/legend and cite location; use a legal link or appropriately sourced adapted drawing.",
+      "bad_overrepair": "Claim an arbitrary similar chart is the original figure."
+    },
+    {
+      "id": "J05",
+      "origin": "explicit_user_correction",
+      "expected_decision": "bridge",
+      "severity": "P2",
+      "expected_signals": [
+        "DCM must have professional-grade pathophysiology and diagnostic reasoning, not flat definitions",
+        "Compare cognitive progression rather than copying HCM voice",
+        "Choose figures only when they support the reasoning and verify provenance"
+      ],
+      "minimum_repair": "Add the clinically decisive mechanistic and diagnostic bridges, with accurate figure placement; preserve strong portions of the original.",
+      "bad_overrepair": "Expand indiscriminately, switch voice to promotional AI rhetoric or pad with off-theme images."
+    },
+    {
+      "id": "J06",
+      "origin": "explicit_user_correction",
+      "expected_decision": "local_fix",
+      "severity": "P1",
+      "expected_signals": [
+        "Do not claim author- or Pocket-explained pressure/congestion mechanisms as new AI discoveries",
+        "Distinguish already in source (A), cross-article bridge (B), truly missing (C), evidenced correction (D)",
+        "Actual figure/footnote verification may change the need for revision"
+      ],
+      "minimum_repair": "Reclassify claims, preserve good originals, write separate evidenced C/D teaching only where warranted.",
+      "bad_overrepair": "Major rewrite of original pieces solely to create an illusion of novelty."
+    },
+    {
+      "id": "J07",
+      "origin": "recorded_source_audit",
+      "expected_decision": "hold",
+      "severity": "P1",
+      "expected_signals": [
+        "Do not confuse two original venous congestion figure sources",
+        "Confirm author, DOI, original Figure and full caption on exact published figure"
+      ],
+      "minimum_repair": "Mark figure verification pending and exclude incorrect figure until its origin is visually verified.",
+      "bad_overrepair": "Invent a corrected figure and label it as the original."
+    },
+    {
+      "id": "J08",
+      "origin": "explicit_user_feedback",
+      "expected_decision": "hold",
+      "severity": "P2",
+      "expected_signals": [
+        "Interactivity is not self-evident learning value",
+        "Compare time, correctness, cognitive load and clinical transfer under comparable static baselines"
+      ],
+      "minimum_repair": "Run a paired learning evaluation before introducing interactive site complexity.",
+      "bad_overrepair": "Keep adding interactive screens because they seem polished or count clicks as learning outcomes."
+    },
+    {
+      "id": "J09",
+      "origin": "explicit_user_correction",
+      "expected_decision": "bridge",
+      "severity": "P2",
+      "expected_signals": [
+        "High-acuity implications belong inside the continuous mechanism/action narrative",
+        "Treatment urgency can precede completed severity classification",
+        "Clinical coverage, evidence reliability and reader comprehension are separate"
+      ],
+      "minimum_repair": "Add danger/physiology-triggered action at the relevant decision transition only.",
+      "bad_overrepair": "Append a separate ICU list or force critical care into cases with no substantive link."
+    },
+    {
+      "id": "J10",
+      "origin": "explicit_user_correction",
+      "expected_decision": "local_fix",
+      "severity": "P2",
+      "expected_signals": [
+        "Public website speaks directly as the author's reading product rather than describing an external author's archive",
+        "Clinical arguments should remain natural, evidence-bound, not forced first-person every sentence"
+      ],
+      "minimum_repair": "Fix product copy and author-positioning; leave objective medical exposition intact.",
+      "bad_overrepair": "Insert '我' into every paragraph or recast medical facts as personal opinions."
+    }
+  ]
+}
