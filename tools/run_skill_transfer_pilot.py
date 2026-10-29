@@ -241,20 +241,25 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     write_private(target / "first_pass_results.json", results)
     # The review packet excludes arm names, request texts, skill and version labels.
     # Revealing the manifest or results to a reviewer would break blinding.
-    mapping = {}
+    mapping = {"case_aliases": {}, "answer_slots": {}}
     packet = []
-    for c in cases:
+    shuffled_cases = list(cases)
+    random.Random(int(case_sha[16:32], 16)).shuffle(shuffled_cases)
+    for ci, c in enumerate(shuffled_cases, 1):
+        alias = "scenario-" + str(ci)
+        mapping["case_aliases"][alias] = c["id"]
         candidates = [v for v in results if v["case_id"] == c["id"]]
         random.Random(int(digest(c["id"].encode())[:16], 16)).shuffle(candidates)
         local = []
         for i, v in enumerate(candidates, 1):
-            slot = c["id"] + "-answer-" + str(i)
-            mapping[slot] = v["arm"]
+            slot = alias + "-answer-" + str(i)
+            mapping["answer_slots"][slot] = {
+                "case_id": c["id"], "arm": v["arm"]}
             local.append({"slot": slot,
                           "answer": v["response"]["answer"]
                                     if v["response"] else None,
                           "run_status": v["status"]})
-        packet.append({"case_id": c["id"], "task": c["task"],
+        packet.append({"scenario": alias, "task": c["task"],
                        "candidate_answers": local})
     write_private(target / "blind_reviewer_packet.json", packet)
     write_private(target / "private_arm_mapping.json", mapping)
