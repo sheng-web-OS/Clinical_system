@@ -18,7 +18,7 @@ PROJECT_NUMBER="$(gcloud projects describe "$PROJECT_ID" --format='value(project
 test -n "$PROJECT_NUMBER"
 gcloud services enable iam.googleapis.com iamcredentials.googleapis.com sts.googleapis.com drive.googleapis.com --project "$PROJECT_ID"
 if ! gcloud iam workload-identity-pools describe "$POOL" --location=global --project="$PROJECT_ID" >/dev/null 2>&1; then
-  gcloud iam workload-identity-pools create "$POOL" --location=global --project="$PROJECT_ID" --display-name="Clinical OS GitHub synthetic agent"
+  gcloud iam workload-identity-pools create "$POOL" --location=global --project="$PROJECT_ID" --display-name="Clinical OS GitHub agent"
 fi
 if gcloud iam workload-identity-pools providers describe "$PROVIDER" \
   --workload-identity-pool="$POOL" --location=global --project="$PROJECT_ID" >/dev/null 2>&1; then
@@ -27,7 +27,7 @@ if gcloud iam workload-identity-pools providers describe "$PROVIDER" \
 fi
 gcloud iam workload-identity-pools providers create-oidc "$PROVIDER" \
   --project="$PROJECT_ID" --location=global --workload-identity-pool="$POOL" \
-  --display-name="GitHub Actions synthetic Drive agent" \
+  --display-name="GitHub Drive agent" \
   --issuer-uri="https://token.actions.githubusercontent.com" \
   --attribute-mapping="google.subject=assertion.sub,attribute.repository_id=assertion.repository_id,attribute.ref=assertion.ref,attribute.workflow_ref=assertion.workflow_ref" \
   --attribute-condition="assertion.repository_id=='${REPO_ID}' && assertion.ref=='refs/heads/main' && assertion.workflow_ref=='${WORKFLOW}'"
