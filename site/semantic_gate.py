@@ -39,7 +39,7 @@ def reading_units(markdown):
             return
         raw = " ".join(x.strip() for x in buffer)
         buffer = []
-        visible = re.sub(r"<[^>]*>", " ", raw)
+        visible = re.sub(r"</?[A-Za-z][^>]*>", " ", raw)
         visible = re.sub(r"!?\[([^\]]+)\]\([^)]+\)", r"\1", visible)
         visible = re.sub(r"[\x60*_~]", "", visible)
         visible = re.sub(r"\s+", " ", visible).strip()
