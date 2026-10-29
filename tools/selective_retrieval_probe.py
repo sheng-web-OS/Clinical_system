@@ -314,6 +314,29 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
         "output_tokens": sum(u["output_tokens"] for u in usages),
         "total_tokens": sum(u["total_tokens"] for u in usages),
     } if live and failed == 0 else None
+    per_arm = {}
+    if live and failed == 0:
+        for arm in ARMS:
+            arm_rows = [row for row in results if row["arm"] == arm]
+            stage_usages = []
+            valid = True
+            for row in arm_rows:
+                required = ("first_call_receipt",) if row["triage"]["decision"] == "HOLD" else (
+                    "first_call_receipt", "answer_call_receipt")
+                for name in required:
+                    usage = (row.get(name) or {}).get("usage")
+                    if not isinstance(usage, dict) or any(
+                            type(usage.get(key)) is not int for key in (
+                                "input_tokens", "output_tokens", "total_tokens")):
+                        valid = False
+                        break
+                    stage_usages.append(usage)
+            per_arm[arm] = ({
+                key: sum(u[key] for u in stage_usages)
+                for key in ("input_tokens", "output_tokens", "total_tokens")
+            } if valid else None)
+    else:
+        per_arm = {arm: None for arm in ARMS}
     status = ("HOLD_INCOMPLETE" if failed else
               "UNSCORED_API_EXECUTION" if live else "DEVELOPMENT_TEST_DOUBLE_ONLY")
     receipt = {
@@ -323,6 +346,7 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
         "transport_kind": meta["transport_kind"],
         "provider_receipt_authenticated": False,
         "tokens_observed_for_completed_calls": totals,
+        "per_arm_token_usage": per_arm,
         "cost_usd": None, "owner_minutes": None,
         "independent_review": "NOT_DONE",
         "clinical_validated": False, "transfer_validated": False,
