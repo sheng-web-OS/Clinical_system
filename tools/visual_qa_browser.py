@@ -95,10 +95,11 @@ RESPONSIVE_SENTINELS = {
 
 
 def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> dict:
-    """Run blocking render tests on newly published or changed figure markup.
+    """Run blocking render tests on modified PUBLIC pages containing figures.
 
-    Global layout/CSS regressions go to a separate, non-blocking full-site
-    legacy-debt report; known historic failures must not make unrelated PRs red.
+    A prose/navigation edit can shift figure layout even if figure HTML stays
+    byte-identical. Check all figures in that changed reader at phone/desktop
+    widths; unrelated legacy pages remain outside this blocking subset.
     """
     selected = discover_pages(root) if page_map is None else page_map
     changed_names = set(subprocess.run(
@@ -132,12 +133,10 @@ def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> 
             for fid, html in current.items():
                 if any(name in html for name in assets):
                     selected_ids.add(fid)
-        if slug in visible_pages and selected_ids != set(current):
-            old = subprocess.run(["git", "show", base_ref + ":" + source],
-                                 cwd=root, capture_output=True, text=True)
-            previous = figure_versions(old.stdout) if old.returncode == 0 else {}
-            selected_ids.update(fid for fid, html in current.items()
-                                if previous.get(fid) != html)
+        # A Markdown-only edit can add a long link/paragraph near a figure.
+        # Rendering the changed page is needed even without figure markup diffs.
+        if slug in visible_pages:
+            selected_ids.update(current)
         if selected_ids:
             result[slug] = (page_path, [fid for fid in current if fid in selected_ids])
     return result
