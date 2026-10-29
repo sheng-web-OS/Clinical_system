@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "repository": "sheng-web-OS/Clinical_system",
+  "cohort": "2026-10-27-shadow-v1",
+  "tasks": [
+    {
+      "id": "AUT-U001",
+      "issue": 157
+    }
+  ]
+}

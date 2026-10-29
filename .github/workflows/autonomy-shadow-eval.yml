@@ -1,0 +1,34 @@
+name: Shadow audit of unsupervised agent evidence
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'tools/autonomy_shadow_eval.py'
+      - 'tests/test_autonomy_shadow_eval.py'
+      - 'experiments/autonomy-shadow/**'
+      - '.github/workflows/autonomy-shadow-eval.yml'
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+  issues: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test adversarial verifier cases
+        run: python -m unittest discover -s tests -p 'test_autonomy_shadow_eval.py'
+      - name: Evaluate actual preregistered traces (read-only)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/autonomy_shadow_eval.py --out autonomy-shadow-report.json
+      - name: Save strictly labelled shadow evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: autonomy-shadow-evaluation
+          path: autonomy-shadow-report.json
+          retention-days: 30
