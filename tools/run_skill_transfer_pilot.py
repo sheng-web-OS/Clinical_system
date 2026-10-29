@@ -209,6 +209,8 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     require(not target.exists(), "OUTPUT_EXISTS_REFUSE_TO_REWRITE")
     meta, calls = build_plan(cases, case_sha, pack, pack_sha,
                              skill, skill_sha, model, commit)
+    if execute:
+        meta["results_status"] = "EXECUTION_STARTED_UNSCORED"
     target.mkdir(mode=0o700, parents=False)
     write_private(target / "manifest.json", meta)
     # Private full requests are retained locally; never in public Actions artifacts.
