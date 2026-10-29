@@ -20,6 +20,9 @@ concurrency:
 
 jobs:
   archive-official-sources:
+    # A Draft PR branch is PUBLIC in this repository; do not upload raw exam
+    # source files without explicit, scope-specific permission to redistribute.
+    if: vars.CLINICAL_OS_ARCHIVE_PUBLIC_SOURCE_APPROVED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
