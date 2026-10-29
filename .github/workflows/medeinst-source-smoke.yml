@@ -147,6 +147,46 @@ jobs:
           assert len(crosswalk['cases']) == 4
           print('MEDEINST_STAGE1_PR225_FORMAT_PASS: four official anonymous cases; 0 model calls; not medically judged')
           PY
+          # End-to-end no-model handoff into the REAL PR #225 B/C packet helper.
+          # Pin both exact Git blobs; do not execute unpinned upstream code.
+          curl --fail --location --silent --show-error --connect-timeout 15 --max-time 45 \
+            'https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0/tools/prepare_staged_bc_packets.py' \
+            -o "$scratch/pr225_prepare_staged_bc_packets.py"
+          test "$(git hash-object "$scratch/pr225_prepare_staged_bc_packets.py")" = 'b2cf98b6396334ad4708c50c37a404bbe173537b'
+          curl --fail --location --silent --show-error --connect-timeout 15 --max-time 45 \
+            'https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0/.agents/skills/decision-question-triage/SKILL.md' \
+            -o "$scratch/decision-question-triage.md"
+          test "$(git hash-object "$scratch/decision-question-triage.md")" = '9e2115bbdb55697741da6263be53df1bee6504fe'
+          stage_sha="$(sha256sum "$scratch/pr225-stage1/manifest.json" | cut -d' ' -f1)"
+          skill_sha="$(sha256sum "$scratch/decision-question-triage.md" | cut -d' ' -f1)"
+          python "$scratch/pr225_prepare_staged_bc_packets.py" \
+            --stage1-zip "$scratch/pr225-stage1/stage1.zip" \
+            --manifest "$scratch/pr225-stage1/manifest.json" \
+            --skill "$scratch/decision-question-triage.md" \
+            --output-dir "$scratch/pr225-bc-packets" \
+            --manifest-sha256 "$stage_sha" \
+            --skill-sha256 "$skill_sha" \
+            --candidate-commit 22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0 \
+            --cases M01 M02 M03 M04
+          python - "$scratch/pr225-bc-packets" <<'PY'
+          import json, pathlib, sys, zipfile
+          root=pathlib.Path(sys.argv[1])
+          meta=json.loads((root/'facilitator_manifest.json').read_text())
+          assert meta['status']=='PACKETS_PREPARED_NO_MODEL_RUN'
+          assert meta['provider_model_calls']==0
+          assert not meta['clinical_transfer_validated']
+          assert len(meta['workers'])==8
+          for n in range(1,5):
+              cid=f'M{n:02d}'
+              with zipfile.ZipFile(root/f'{cid}_B_stage1.zip') as b, \
+                   zipfile.ZipFile(root/f'{cid}_C_stage1.zip') as c:
+                  assert set(b.namelist())=={'task.md','instructions.txt'}
+                  assert set(c.namelist())=={'task.md','instructions.txt','candidate_skill.md'}
+                  assert b.read('task.md')==c.read('task.md')
+                  assert b.read('instructions.txt')==c.read('instructions.txt')
+                  assert b'ground_truth' not in b.read('task.md')
+          print('PR225_ACTUAL_BUILDER_INTEGRATION_PASS: 4 case tasks x B/C; 8 isolated ZIP inputs; no gold; 0 inference calls')
+          PY
           python - "$scratch" <<'PY'
           import json, pathlib, sys
           root=pathlib.Path(sys.argv[1])
