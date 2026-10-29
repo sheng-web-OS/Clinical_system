@@ -36,6 +36,8 @@ def fixture():
                 "source_sha256": HEX, "decision_correct": correct,
                 "first_pass": correct, "unsafe": False,
                 "hinted": False, "false_alarm": False,
+                "article_retrieval_visible": arm != "native",
+                "candidate_skill_visible": arm == "skill",
                 "worker_context": "writer-" + cid + "-" + arm,
                 "reviewer_context": "independent-judge-context",
                 "trace_ref": "synthetic-only-" + cid + "-" + arm,
@@ -108,6 +110,17 @@ class TransferPilotIntegrity(unittest.TestCase):
     def test_model_effort_and_budget_must_match(self):
         self.run["records"][0]["token_budget"] = "more-budget"
         self.rejects("unequal model")
+
+    def test_skill_metadata_leak_to_baselines_rejected(self):
+        next(r for r in self.run["records"] if r["arm"] == "retrieval")["candidate_skill_visible"] = True
+        self.rejects("arm contamination")
+        self.suite, self.run = fixture()
+        next(r for r in self.run["records"] if r["arm"] == "native")["candidate_skill_visible"] = True
+        self.rejects("arm contamination")
+
+    def test_article_exposure_mismatch_rejected(self):
+        next(r for r in self.run["records"] if r["arm"] == "native")["article_retrieval_visible"] = True
+        self.rejects("arm contamination")
 
     def test_normal_false_alarm_blocks_and_never_promotes(self):
         for r in self.run["records"]:
