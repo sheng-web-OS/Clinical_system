@@ -144,6 +144,14 @@ def prepare(dataset, expected_sha256, case_ids, worker_root, facilitator_root,
         packet_sha = write_private(path / "packet.json", packet)
         answer_key[slot] = {"case_id": cid, "variant": variant,
                             "ground_truth": label, "packet_sha256": packet_sha}
+    # Independent case-byte integrity receipt, with no disease labels or raw text.
+    # A downstream packet exporter must validate this trusted private receipt.
+    write_private(private / "packet_hashes.json", {
+        "schema_version": 1, "dataset_sha256": expected_sha256,
+        "source_mode": source_mode,
+        "slots": {slot: entry["packet_sha256"]
+                  for slot, entry in sorted(answer_key.items())},
+    })
     write_private(private / "answer_key.json", {
         "schema_version": 1, "dataset_sha256": expected_sha256,
         "source": ("MedEinst test.jsonl; official hash pinned; independent medical adjudication NOT_DONE"
