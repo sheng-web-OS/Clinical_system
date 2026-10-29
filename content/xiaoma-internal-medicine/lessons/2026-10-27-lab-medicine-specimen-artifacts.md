@@ -43,6 +43,15 @@ Lim 等人在 2025 年報告另一種不同的檢驗矛盾：一名 **五十歲�
 
 從[原作者 Figure 1（Cureus 原始 PDF 第 2 頁）](https://assets.cureus.com/uploads/case_report/pdf/353350/20250326-193380-s0wvov.pdf#page=2)，可以直接對照第一次 EDTA 的 **103**、第二次 EDTA 的 **77**，以及第二次 citrate 的 **218 × 10⁹/L**。這張圖呈現的是三種檢體條件下的**計數比較**，不是血小板聚集的顯微照片；真正的 platelet clumping 是原文另行記載的血片觀察。不能把圖中柱狀差異當作直接看見血小板形成 clump，也不能把三管當作同一時刻取樣。
 
+
+<figure id="lab02-lim-figure1" style="margin:1.35rem auto;max-width:680px">
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11947505/figure/FIG1/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Lim 2025 的原始 Figure 1 及完整圖說">
+<img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/835d/11947505/3ba234534955/cureus-0017-00000081211-i01.jpg" loading="lazy" decoding="async" width="680" alt="Lim 2025 原始 Figure 1：第一次 EDTA 103、相隔約20日再次 EDTA 77、同次 citrate 218，皆為血小板計數乘十的九次方每公升；不是血片或同日連續追蹤。" style="display:block;width:100%;height:auto;max-width:680px;border-radius:12px">
+</a>
+<figcaption>原始 Figure 1｜第一次 EDTA 103；約 20 日後 EDTA 77、citrate 218（×10⁹/L）。**僅是不同採血時點／抗凝管的計數示意，不是 platelet clumping 的血片證據。**出處：Lim E、Lim C，<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11947505/">Cureus 2025，doi:10.7759/cureus.81211</a>，<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>；以原圖連結呈現，未重新繪製或修改。圖片點選可開啟出版社收錄原圖。</figcaption>
+</figure>
+
+
 這裡最有辨識力的不是「病人沒有出血」，而是**相近臨床狀態下，改變抗凝劑後計數出現明顯差異，而且顯微鏡真的看見血小板在 EDTA 檢體內成團**。原作者亦提出採檢至送達實驗室時間不同（初次約三小時、後續約五小時）可能影響聚集程度，但沒有實驗能將時間效應單獨量化。因此，103 到 77 的下降不能直接讀成體內血小板在二十天內持續消耗。
 
 ### EDTA 為什麼讓數字變低？
