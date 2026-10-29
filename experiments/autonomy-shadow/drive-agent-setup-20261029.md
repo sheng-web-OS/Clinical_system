@@ -35,7 +35,7 @@ The synthetic model is pinned to `gpt-5-mini` in the workflow for this test. Onl
 The existing ChatGPT Drive connector and ChatGPT subscription do not provide GitHub Actions with Google or model API credentials.
 
 ## Phase 4: enforce GitHub branch safety before enabling
-As of configuration date, GitHub API reports repo visibility PUBLIC, main protected=false, and no rulesets. The runtime's preflight **will refuse to use model or Drive credentials** until main is protected.
+As of the latest verification on 2026-10-29, GitHub API reports repository visibility PUBLIC and `main.protected=true`, after owner-side configuration. However, the Rulesets collection is empty and the connected GitHub integration receives HTTP 403 on branch-protection detail endpoints, so the exact PR requirements, `build` required-check designation, bypass identities, force-push and deletion prohibitions are **NOT_VERIFIED**. The runtime's preflight checks protected=true, which is necessary but not a substitute for auditing rule details.
 
 GitHub Repo → Settings → Branches → Add branch protection rule (or Rulesets) for main:
 - Require a Pull Request before merging; enforce review by another authorized account where feasible.
@@ -70,3 +70,9 @@ Owner pasted successful output for Google project `instant-land-430112-t2`: pool
 
 ## 2026-10-29 reduction of manual account configuration
 Pinned the owner-verified non-sensitive Google Cloud project number/provider, dedicated service account email, chosen synthetic sandbox folder ID and model name directly in the Draft PR workflow. Remaining manual GitHub setup is confined to branch protection, separate OpenAI API secret, and two explicit post-verification enable flags. These public synthetic IDs are not authentication material: no real source names or confidential file IDs may be substituted into the public repo. Verification must include a Google Drive folder-level Viewer ACL with no direct Writer override on its child document.
+
+## 2026-10-29 branch and API-key checkpoint
+- User reports the dedicated OpenAI project key has been saved to GitHub Actions Secret `CLINICAL_OS_OPENAI_API_KEY` with spending controls. Secret value, existence and API functionality cannot be read through this GitHub integration and remain runtime-NOT_TESTED.
+- Owner Cloud Shell created OIDC provider/SA. Google Drive metadata readback verifies service account **reader** role on synthetic sandbox folder and child Doc. Actual GitHub Actions Google OIDC token exchange/Drive export remains NOT_TESTED.
+- PR #227 was merged in main, replacing direct stage-II exam archive pushes with Draft PR and separate public-redistribution authorization gate. Its exact-main commit and check results were verified; agent #222 remains Draft and unmerged.
+- To test, independently review this exact PR head; owner manually merges #222, then adds action variables `CLINICAL_OS_AGENT_ENABLED=true` and (after test and approval) `CLINICAL_OS_DRAFT_WRITES_ENABLED=true`. Run manual `shadow` first to test model without Drive; then `synthetic-read` to test Google OIDC + Drive and a Draft-only branch. Scheduled wake-up and any generated PR must remain bounded by synthetic-only allowlist, main protection, evidence check, and no auto merge/deploy.
