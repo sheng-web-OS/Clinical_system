@@ -11,6 +11,7 @@ import hashlib
 import json
 import os
 import random
+import secrets
 import subprocess
 import re
 import urllib.error
@@ -380,18 +381,29 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     write_private(target / "first_pass_results.json", results)
     # The review packet excludes arm names, request texts, skill and version labels.
     # Revealing the manifest or results to a reviewer would break blinding.
-    mapping = {"case_aliases": {}, "answer_slots": {}}
+    # Critical blinding: do NOT seed review allocation from public case IDs
+    # or the public case-file SHA. Anyone who can read the repository could
+    # reconstruct the arm mapping if the permutation were deterministic.
+    # This CSPRNG allocation is separate from the preregistered model-call
+    # order (which remains reproducible and exposure-balanced).
+    reviewer_rng = secrets.SystemRandom()
+    mapping = {"case_aliases": {}, "answer_slots": {},
+               "allocation": "PRIVATE_CSPRNG_REVIEWER_ALLOCATION_V1"}
     packet = []
     shuffled_cases = list(cases)
-    random.Random(int(case_sha[16:32], 16)).shuffle(shuffled_cases)
+    reviewer_rng.shuffle(shuffled_cases)
     for ci, c in enumerate(shuffled_cases, 1):
         alias = "scenario-" + str(ci)
         mapping["case_aliases"][alias] = c["id"]
         candidates = [v for v in results if v["case_id"] == c["id"]]
-        random.Random(int(digest(c["id"].encode())[:16], 16)).shuffle(candidates)
+        reviewer_rng.shuffle(candidates)
         local = []
-        for i, v in enumerate(candidates, 1):
-            slot = alias + "-answer-" + str(i)
+        for v in candidates:
+            # Unpredictable opaque IDs additionally prevent position-to-arm
+            # inference by knowledge of the original deterministic slot names.
+            slot = "answer-" + secrets.token_hex(16)
+            require(slot not in mapping["answer_slots"],
+                    "BLIND_SLOT_RANDOM_COLLISION")
             mapping["answer_slots"][slot] = {
                 "case_id": c["id"], "arm": v["arm"]}
             local.append({"slot": slot,
