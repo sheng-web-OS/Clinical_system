@@ -89,7 +89,8 @@ class TransferPilotIntegrity(unittest.TestCase):
         self.assertFalse(report["promotion_authorized"])
 
     def test_partial_owner_time_is_unknown_not_zero(self):
-        self.run["records"][0]["owner_minutes"] = None
+        next(r for r in self.run["records"] if r["arm"] == "retrieval")[
+            "owner_minutes"] = None
         report = self.report()
         self.assertEqual("NOT_MEASURED", report["owner_cost_comparison"]["status"])
         self.assertEqual("DEVELOPMENT_GAIN_UNCOSTED_NEEDS_INDEPENDENT_HOLDOUT",
@@ -272,7 +273,11 @@ class TransferPilotIntegrity(unittest.TestCase):
 
     def test_missing_cost_is_not_free_and_no_gain_cannot_pass(self):
         next(r for r in self.run["records"] if r["arm"] == "skill")["owner_minutes"] = None
-        self.assertEqual("NO_PROMOTABLE_INCREMENT", self.report()["verdict"])
+        report = self.report()
+        self.assertEqual("DEVELOPMENT_GAIN_UNCOSTED_NEEDS_INDEPENDENT_HOLDOUT",
+                         report["verdict"])
+        self.assertFalse(report["promotion_authorized"])
+        self.assertEqual("NOT_MEASURED", report["owner_cost_comparison"]["status"])
         self.suite, self.run = fixture()
         for r in self.run["records"]:
             if r["case_id"] == "novel-transfer" and r["arm"] == "skill":
