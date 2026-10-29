@@ -11,7 +11,7 @@ spec.loader.exec_module(mod)
 CASES = {"cases": [
     {"id": "a", "status": "replayable", "type": "reader-value"},
     {"id": "b", "status": "needs_freeze", "type": "clinical"},
-    {"id": "c", "status": "replayable", "type": "negative-control"
+    {"id": "c", "status": "replayable", "type": "negative-control"}
 ]}
 
 
