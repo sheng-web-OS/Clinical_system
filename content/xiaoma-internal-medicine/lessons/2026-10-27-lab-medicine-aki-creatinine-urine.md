@@ -68,9 +68,30 @@ eGFRcr 通常由 SCr、年齡與其他方程式變數估算。當 SCr 快速上�
 
 可以直接對照[作者原始超音波 Figure 1／2（PDF 第 2 頁）](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=2)：兩張影像的圖說都標示當時沒有顯著 hydronephrosis，紅箭頭指的是仍保存的 corticomedullary differentiation，**不是影像已排除所有阻塞的證據**。
 
+
+<figure id="lab03-chen-ultrasound-originals" style="margin:1.5rem auto;max-width:700px">
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/figure/FIG1/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Chen 2025 原始 Figure 1 左腎超音波">
+<img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/fd38f5d2ea9a/cureus-0017-00000088144-i01.jpg" loading="lazy" decoding="async" width="700" alt="Chen 2025 原圖 Figure 1 左腎超音波，長度約 10.9 cm，當時未見顯著水腎；紅箭頭指出尚存的皮髓質分界，而非阻塞病灶。" style="display:block;width:100%;height:auto;max-width:700px;border-radius:12px;margin-bottom:.6rem">
+</a>
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/figure/FIG2/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Chen 2025 原始 Figure 2 右腎超音波">
+<img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/323897deafa2/cureus-0017-00000088144-i02.jpg" loading="lazy" decoding="async" width="700" alt="Chen 2025 原圖 Figure 2 右腎超音波，長度約 10.6 cm，當時未見顯著水腎；紅箭頭指出尚存的皮髓質分界。" style="display:block;width:100%;height:auto;max-width:700px;border-radius:12px">
+</a>
+<figcaption>原始 Figure 1、2｜不同側腎臟的**初次超音波**，原文均記錄未見顯著水腎；紅箭頭為 corticomedullary differentiation，**不是已排除所有尿路阻塞**。出處：Chen Z 等，<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/">Cureus 2025，doi:10.7759/cureus.88144</a>，<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>；原像素未修改，點圖可開啟各自原圖。</figcaption>
+</figure>
+
+
 當 creatinine 持續惡化、補液未帶來原先預期的改善，而且病人仍有攝護腺疾病與反覆導尿管問題時，原本沒有被超音波看見的阻塞，需要重新被放回候選機轉，而不是被一個陰性檢查永久淘汰。
 
 原作者在重新評估後安排 CT KUB。[原始 CT Figure 3（出版社 PDF 第 4 頁）](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4)的紅箭頭標示**嚴重雙側 hydronephrosis**，圖說另記載中度雙側 hydroureter，卻**沒有辨識出確切的阻塞病灶**。這項影像讓「尿液排出路徑受阻」比單靠腹瀉、低血壓推論腎前性因素，多了一項直接的解剖證據；但它仍不能告訴我們哪一段導尿管曾在什麼時間失效。[1]
+
+
+<figure id="lab03-chen-ct-original" style="margin:1.5rem auto;max-width:700px">
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/figure/FIG3/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Chen 2025 原始 Figure 3 CT 與圖說">
+<img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/cc356ef900af/cureus-0017-00000088144-i03.jpg" loading="lazy" decoding="async" width="700" alt="Chen 2025 原圖 Figure 3，冠狀位 CT 顯示雙側嚴重水腎及中度輸尿管擴張；紅箭頭標示雙側腎盂擴張，原作者未看到確切致阻塞病灶。" style="display:block;width:100%;height:auto;max-width:700px;border-radius:12px">
+</a>
+<figcaption>原始 Figure 3｜後續 CT 顯示**雙側嚴重水腎、雙側中度 hydroureter**，未看見明確致阻塞病灶。與上方超音波**不是同時拍攝**，無法單憑兩圖證明第一次超音波漏診或推算影像敏感度。出處：Chen Z 等，<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/">Cureus 2025，doi:10.7759/cureus.88144</a>，<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>；原像素未修改。</figcaption>
+</figure>
+
 
 **初次超音波與後續 CT 是不同時間點的影像**。現在看到水腎，無法判定初次超音波是因早期或非擴張性阻塞、低灌流等情境而未看見擴張，還是兩次檢查之間阻塞實際加重。因此這個案例不能用來計算超音波的敏感度，也不能直接判定第一次影像「漏診」；真正合理的重新檢查理由，是**原有阻塞風險加上治療後持續惡化，讓新的解剖證據足以影響後續處置**。[12]
 
