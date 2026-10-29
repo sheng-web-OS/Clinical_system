@@ -354,3 +354,57 @@ python tools/falsification_probe.py score \
 This makes exactly **8 calls at most** if both variants complete (4 packets × 2 prompts; each call has a 950-token output cap and a 55-second provider timeout). These are public synthetic samples, so any score is **MODEL_CONNECTIVITY_PILOT / CONTAMINATED_FIXTURE** — **not** a blinded clinical gain or trustworthy model improvement. The adapter emits numerical token usage only as `PROBE_USAGE` on stderr; the parent runner saves it in a separate coordinator-only response JSON under `provider_usage`, marked `ADAPTER_REPORTED_NOT_BILLING_VERIFIED`. Never compute a zero-dollar estimate when usage/pricing is unknown, and do not treat this metadata as a verified invoice. No automatic retry (protects spend), no scheduling, no PR auto-merge, no medical release or new persistent evaluation infrastructure.
 
 **Next experiment after connectivity:** The real A/B between a native model and Clinical OS must use *different, previously unexposed* independently adjudicated source cases and the actual Clinical OS scaffold, not these published fixtures or `clinical_lite` as a proxy. Freeze new-case answers before inference in secure storage; compare P0/P1, evidence-to-claim consistency, valid-claim damage and owner-minutes. Keep prompt/time/source/model parity, forbid gold access or open-ended web retrieval to the public key, and separately document any exposure/isolation uncertainty. If cases, budget, or adjudication are unavailable: `NOT_VALIDATED`, not a guessed improvement.
+
+
+## V8 — trusted-main, opt-in, bounded synthetic API smoke (not a transfer trial)
+
+This is an **execution bridge** to answer a very narrow operational question:
+can the existing GitHub Secret run the same public synthetic probe through a real
+OpenAI model, once, with two controlled instruction variants? The public fixture
+and its answers are already visible in the repository; **no pass rate here
+measures unseen-case competence, clinical quality, memory-to-skill, or independent
+reviewer performance.** Both variants see identical synthetic packets and
+differ only by the native/clinical_lite instruction. Do not treat four matched
+probe rows as four independent cases.
+
+The workflow `.github/workflows/eth-probe-one-shot.yml` deliberately has **no
+PR, push or scheduled trigger**. It becomes manually dispatchable only **after
+a separate security review and owner-authorized merge to protected `main`**.
+It requires (1) the existing `CLINICAL_OS_AGENT_ENABLED=true` repository
+variable, (2) protected `main`, and (3) the manual input `SYNTHETIC_ONLY`.
+A feature-branch or PR job cannot consume the API key through this workflow.
+It reads the existing `CLINICAL_OS_OPENAI_API_KEY` repository secret, with
+`contents: read` only; it has no Drive/OIDC, PR-write, publish or artifact-upload
+capability. Do not set up an additional secret, new schedule or new agent.
+
+After review and merge, the owner can choose GitHub Actions →
+**ETH Probe synthetic model smoke (manual, eight calls maximum)** →
+**Run workflow** on `main`, entering exactly `SYNTHETIC_ONLY`. This is an
+optional manual smoke, never an authorization to merge PR #224 automatically.
+Do not run it repeatedly just to improve a displayed score.
+
+`python tools/run_eth_synthetic_smoke.py --plan` is free and secretless.
+`--execute` is guarded to trusted `workflow_dispatch` on `main`, the exact repo,
+the pinned `gpt-5-mini` model and an existing nonempty key. It prepares one
+fictional document test with four matched packets, then makes **at most
+8 single-request Responses API calls** (4 native, 4 Clinical Lite). The model
+adapter has `max_output_tokens=950`, so the theoretical **output-token** budget
+is at most 7,600; input tokens, API pricing and account spending are separately
+bounded/controlled by the dedicated OpenAI project configuration, **not an
+actual hard USD guarantee by this script**. There are no automatic retries.
+The evaluator key and raw outputs exist only on the ephemeral job filesystem,
+which is deleted at exit. CI logs receive only aggregated packet scores,
+stage-mismatch counts and reported token counts. No sample text, response,
+key, prompt, or case-specific answer key is printed or uploaded.
+
+`tests/test_eth_one_shot_smoke.py` proves the manual main-only
+contract, absence of automatic triggers, bounded request count, secretless
+plan, preflight failure before inference, and credential-free complete
+two-arm dry run with a deterministic toy. They **do not** call the provider.
+If model calls or provider token accounting fail, the workflow fails closed.
+An execution success means only `SYNTHETIC_API_SMOKE_ONLY`. A genuine
+Native vs Clinical OS ability comparison still requires **new private holdout
+cases, separately adjudicated gold, documented source access and context
+isolation, patient privacy, and measured reviewer/owner cost** (see E06 and
+PR #225). No automatic merge, release, website change or scheduled call
+is permitted by this work.
