@@ -133,6 +133,40 @@ class ReviewAssemblyTest(unittest.TestCase):
             report["next_iteration"]["action"])
         self.assertFalse(report["publication_approved"])
 
+    def test_journal_equals_frozen_snapshot_before_blind_review(self):
+        manifest = self.load("manifest.json")
+        manifest["first_pass_journal_v1"] = True
+        self.store("manifest.json", manifest)
+        _, report = self.assemble()
+        self.assertTrue(report["first_pass_journal_verified"])
+        self.assertTrue(report["first_pass_journal_not_provider_authentication"])
+        self.assertFalse(report["actual_model_execution_verified"])
+
+    def test_journal_detects_changed_response_after_run(self):
+        manifest = self.load("manifest.json")
+        manifest["first_pass_journal_v1"] = True
+        self.store("manifest.json", manifest)
+        data = self.load("first_pass_results.json")
+        data[0]["response"]["answer"] = "post-hoc fake improved answer"
+        self.store("first_pass_results.json", data)
+        self.assert_reject("FIRST_PASS_JOURNAL_SNAPSHOT_MISMATCH")
+
+    def test_journal_cannot_drop_failed_attempt(self):
+        manifest = self.load("manifest.json")
+        manifest["first_pass_journal_v1"] = True
+        self.store("manifest.json", manifest)
+        path = self.run_dir / "first_pass_journal.jsonl"
+        lines = path.read_text().splitlines()
+        path.write_text("\\n".join(lines[:-1]) + "\\n")
+        self.assert_reject("INCOMPLETE_FIRST_PASS_JOURNAL")
+
+    def test_journal_missing_on_claimed_checkpoint_is_hold(self):
+        manifest = self.load("manifest.json")
+        manifest["first_pass_journal_v1"] = True
+        self.store("manifest.json", manifest)
+        (self.run_dir / "first_pass_journal.jsonl").unlink()
+        self.assert_reject("FIRST_PASS_JOURNAL_MISSING_OR_OVERSIZED")
+
     def test_mock_model_is_explicitly_not_api_attestation(self):
         _, report = self.assemble()
         self.assertEqual("INJECTED_TEST_DOUBLE", report["transport_kind"])
