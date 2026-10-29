@@ -12,7 +12,7 @@ Date: 2026-10-29. Status: DRAFT/HOLD. Public repository; only synthetic fixtures
 Create or select a **dedicated** Google Cloud project. Download the reviewed repository script once, or open its contents and run in Cloud Shell:
 
     curl -fsSLo /tmp/setup-clinical-os-wif.sh \
-      https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/12a0f531ac82045c0c6fa1beb104b7c46d819660/tools/setup_drive_agent_wif.sh
+      https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/e65063cc4820239c9fbf7e049ae5222565f069e4/tools/setup_drive_agent_wif.sh
     bash /tmp/setup-clinical-os-wif.sh YOUR_GOOGLE_CLOUD_PROJECT_ID
 
 This URL pins the reviewed shell script to a specific commit rather than mutable branch HEAD. Review the script before running. It enables Google IAM/STS/Drive APIs and creates a dedicated SA and OIDC provider. It scopes trust to GitHub immutable numeric repository ID 1427690253, main branch and exact workflow_ref, then binds Workload Identity User to that narrow principalSet. It does not create downloadable SA keys or assign generic project Viewer/Editor roles to the Service Account.
@@ -67,3 +67,6 @@ Once branch protections, Google SA sharing, WIF, and spending limits are verifie
 6. This only validates technical orchestration. Blind/unknown-source reasoning, user intervention minutes, clinical quality and autonomy-transfer criteria remain governed by PR #159 and existing independent medical, privacy, copyright and publication gates.
 
 NO restricted materials, patient data, confidential titles/IDs or copyrighted full sources should ever enter GitHub, public CI logs or the published site.
+
+## 2026-10-29 WIF pool-name regression
+A real Cloud Shell run found that the Google Workload Identity Pool display name (34 characters) violated the 32-character maximum; the provider display name was also 36 characters. The script was fixed to use 24/18-character names. The already-downloaded old version can be repaired locally by sed replacements. No claim is made that Cloud Shell creation succeeded until actual Google output is inspected.
