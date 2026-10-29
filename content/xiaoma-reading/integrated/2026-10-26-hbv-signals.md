@@ -32,7 +32,7 @@ ALT 落在正常範圍，表示這次檢測未見超過採用上限的酵素活�
 
 圖中兩組典型檢驗組合的 ALT 都正常，但 HBV DNA 與 HBeAg 組合不同。這不是要重新背兩種 phase，而是提醒：**Marker 是間接觀察，phase 是對多個觀察及其時間序列的推論。** HBeAg、HBV DNA 與 ALT 未形成典型組合時，也可能落在 indeterminate／grey-zone state；分類標籤不是量到的免疫狀態。
 
-對 **HBeAg-negative、檢驗組合落在 indeterminate／grey zone、需要確認長期模式** 的患者，AASLD/IDSA 提醒：ALT 與 HBV DNA 會波動，判讀 phase 應比較 **6–12 個月內至少兩次**檢驗，而不是憑單次抽血貼上永久標籤。這是提高分類可靠度的時間證據，不是所有 HBV 病人必須等待半年才能治療；若已存在 cirrhosis 等明確治療適應症，應直接依目前的風險處置。對無 cirrhosis 的 HBeAg-negative 患者，DNA ≥2,000 IU/mL、但 ALT 尚未達典型 immune-active 條件，要評估 fibrosis 和 HCC 風險；ALT 升高而 DNA <2,000 IU/mL，則還須找其他肝傷害原因。**同樣被稱為灰區，最有用的下一項證據未必相同。**[AASLD/IDSA 的定義與建議](../hbv-phase-sources.md#ref-aasld)
+對 **HBeAg-negative、檢驗組合落在 indeterminate／grey zone、需要確認長期模式** 的患者，AASLD/IDSA 提醒：ALT 與 HBV DNA 會波動，判讀 phase 應比較 **6–12 個月內至少兩次**檢驗，而不是憑單次抽血貼上永久標籤。這是提高分類可靠度的時間證據，不是所有 HBV 病人必須等待半年才能治療；若已存在 cirrhosis 等明確治療適應症，應直接依目前的風險處置。但這個追蹤規則只能使 phase 推論更可靠，尚未回答**同樣被稱為灰區的病人，下一步為何可能不同**：還必須看哪些檢驗改變 HBV 病因的可信度，哪些條件才真正跨過各份指引的行動門檻。[AASLD/IDSA 的定義與建議](../hbv-phase-sources.md#ref-aasld)
 
 只靠一次正常 ALT，既不能判斷目前完全沒有肝炎活動，也不能保證未來的疾病軌跡。下一個問題是：臨床指引為何仍需要設置 ALT、HBV DNA 等治療門檻，而這些門檻又不能被當成疾病真正的起點？
 
