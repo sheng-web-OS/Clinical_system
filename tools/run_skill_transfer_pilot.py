@@ -183,6 +183,15 @@ def write_private(path, obj):
         file.write(data)
 
 
+def append_event(path, event):
+    data = (json.dumps(event, ensure_ascii=False, sort_keys=True) + "\\n").encode("utf-8")
+    fd = os.open(str(path), os.O_WRONLY | os.O_CREAT | os.O_APPEND, 0o600)
+    with os.fdopen(fd, "ab") as file:
+        file.write(data)
+        file.flush()
+        os.fsync(file.fileno())
+
+
 def run(cases_path, pack_path, skill_path, target, model, commit,
         execute=False, key=None, caller=None):
     case_text, case_sha = read_text(cases_path)
@@ -193,7 +202,10 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
             "WRONG_SKILL_SELECTED")
     if execute:
         require(bool(key), "MODEL_SECRET_NOT_CONFIGURED")
-    target = Path(target)
+    target = Path(target).resolve()
+    repo_root = Path(__file__).resolve().parents[1]
+    require(not target.is_relative_to(repo_root),
+            "PRIVATE_OUTPUT_MUST_BE_OUTSIDE_PUBLIC_REPOSITORY")
     require(not target.exists(), "OUTPUT_EXISTS_REFUSE_TO_REWRITE")
     meta, calls = build_plan(cases, case_sha, pack, pack_sha,
                              skill, skill_sha, model, commit)
@@ -206,6 +218,9 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
                 "output": str(target), "model": model}
     results = []
     for call in calls:
+        append_event(target / "attempt_events.jsonl", {
+            "case_id": call["case_id"], "arm": call["arm"],
+            "request_sha256": call["request_sha256"], "event": "STARTED"})
         try:
             answer = (caller or api_call)(call["request"], key)
             status = "COMPLETED"
@@ -218,6 +233,9 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
             "status": status, "response": answer,
             "adjudication": "NOT_DONE", "first_pass": "NOT_SCORED",
         })
+        append_event(target / "attempt_events.jsonl", {
+            "case_id": call["case_id"], "arm": call["arm"],
+            "request_sha256": call["request_sha256"], "event": status})
     write_private(target / "first_pass_results.json", results)
     # The review packet excludes arm names, request texts, skill and version labels.
     # Revealing the manifest or results to a reviewer would break blinding.
