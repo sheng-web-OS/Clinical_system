@@ -25,6 +25,12 @@ Hemolysis index 可以幫檢驗室辨認溶血程度及評估部分分析干擾�
 
 英國腎臟協會（UK Kidney Association）網站目前提供 **2026 年 7 月更新**的成人高血鉀指南，對疑似 pseudohyperkalemia 的採樣比較及急症流程有正式指引。指南是處理策略的依據；AHRQ 的單一安全事件則說明這種權衡可能如何失敗，兩者的證據角色不能倒置。[UKKA 原始指引入口](https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults-0)
 
+### 反過來看：如果把溶血造成的假高鉀當成真高鉀，會怎樣？
+
+另一份[AHRQ PSNet 2024 病例〈A Fatal Twist in Pseudohyperkalemia〉](https://psnet.ahrq.gov/web-mm/fatal-twist-pseudohyperkalemia)提供了**與前一位 72 歲男性不同的患者，也剛好相反的危險**。一名 **54 歲男性**因胸痛至急診，K **5.9 mEq/L** 的檢體已標示溶血，但這項警示未被治療團隊注意。ECG 上的 **T 波扁平、U 波與 QT 延長**反而更應讓人懷疑低鉀或其他再極化異常，而不是由單一 K 數值直接確定高鉀。他後來接受 albuterol、insulin／dextrose、bicarbonate、furosemide 等降鉀處置；同一段病程又因心房顫動使用 amiodarone。隨後出現 torsades de pointes（TdP）與致命性心搏停止。原評論認為**未察覺的假高鉀、可能被降鉀治療加重的低鉀，以及 QT 延長藥物**共同構成危險；但未提供足以直接證明各項因素貢獻的可靠連續血鉀數據，因此不能宣稱「已量到治療後 K 降到某值」，也不能把死亡完全歸因於單一藥物。
+
+兩位 AHRQ 患者教的不是互相否定的規則。第一位 K 7.4 且可能有相符 ECG 改變時，**僅因溶血而等待重抽**會延誤急症評估；第二位 K 5.9 卻有與高鉀不相稱、反而提示低鉀風險的 ECG 時，**未核對數據與 ECG 就疊加降鉀介入**也可能傷害患者。真正應同步做的是辨認病人當下是否不穩定、判斷 ECG 與整體生理是否支持該數值、盡快取得合適新檢體，並按風險決定處置時點與治療後再評估。**「溶血」不是取消急救的理由，也不是把報告當作已證實真值的理由。**
+
 ## 02　第二位患者：血小板 103 → 77，為什麼沒有出血？
 
 Lim 等人在 2025 年報告另一種不同的檢驗矛盾：一名 **五十歲出頭的男性**，因一般健檢抽 CBC，身體沒有不適、容易瘀青或出血表現，理學檢查也未見異常，卻被報出 **platelet 103 × 10⁹/L**。醫師懷疑檢驗前因素，安排約 **20 天後**再抽 CBC，並用不同抗凝管比較。[Lim 2025 原病例及 Figure 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC11947505/)
