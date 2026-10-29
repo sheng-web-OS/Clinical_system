@@ -36,6 +36,8 @@ jobs:
           python-version: '3.12'
       - name: All synthetic fail-closed tests, no credentials
         run: python -m unittest discover -s tests -p 'test_drive_*.py'
+      - name: Validate Cloud Shell WIF setup script syntax (no gcloud access)
+        run: bash -n tools/setup_drive_agent_wif.sh
       - name: No-AI simulation with explicit simulation flag
         run: python tools/drive_source_agent.py --mode fixture --context experiments/autonomy-shadow/fixtures/drive-source-gap.json
 
