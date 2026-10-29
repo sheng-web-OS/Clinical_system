@@ -70,6 +70,34 @@ class SelectiveDriveTests(unittest.TestCase):
                       drive_call=lambda _: (_ for _ in ()).throw(AssertionError()))
         self.assertEqual(out["decision"], "HOLD")
 
+    def test_resolved_metadata_skips_paid_model_and_drive(self):
+        # These cases are determined before model invocation; no API billing.
+        cases = (
+            (dict(BASE, source_state="present"), "SKIP"),
+            (dict(BASE, source_state="unknown"), "HOLD"),
+            (dict(BASE, requires_original=False), "HOLD"),
+        )
+        def forbidden(*_):
+            raise AssertionError("unnecessary external call")
+        for raw, expected in cases:
+            for mode in ("shadow", "synthetic-read"):
+                with self.subTest(source=raw, mode=mode):
+                    out = execute(raw, mode, model_call=forbidden,
+                                  drive_call=forbidden)
+                    self.assertEqual(out["decision"], expected)
+                    self.assertFalse(out["ai_decision"])
+                    self.assertFalse(out["drive_read_verified"])
+
+    def test_missing_essential_source_still_calls_model(self):
+        calls = []
+        def model(*_):
+            calls.append("model")
+            return "SKIP"
+        out = execute(BASE, "shadow", model_call=model)
+        self.assertEqual(calls, ["model"])
+        self.assertEqual(out["decision"], "SKIP")
+        self.assertTrue(out["ai_decision"])
+
     def test_private_source_class_rejected(self):
         with self.assertRaises(ValueError):
             execute(dict(BASE, source_class="patient_record"), "fixture")
