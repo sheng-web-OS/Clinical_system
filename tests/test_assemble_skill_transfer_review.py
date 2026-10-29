@@ -131,6 +131,58 @@ class ReviewAssemblyTest(unittest.TestCase):
             report["next_iteration"]["action"])
         self.assertFalse(report["publication_approved"])
 
+    def test_mock_model_is_explicitly_not_api_attestation(self):
+        _, report = self.assemble()
+        self.assertEqual("INJECTED_TEST_DOUBLE", report["transport_kind"])
+        self.assertFalse(report["api_model_execution_observed"])
+        self.assertEqual("DECLARED_RESPONSE_SHAPE_ONLY",
+                         report["provider_receipt_authentication"])
+        self.assertIsNone(report["observed_token_usage"]["retrieval"])
+
+    def test_mock_relabelled_as_live_is_rejected(self):
+        manifest = self.load("manifest.json")
+        manifest["transport_kind"] = "RESPONSES_API"
+        self.store("manifest.json", manifest)
+        self.assert_reject("API_PROVIDER_RESPONSE_ID_MISSING_OR_REUSED")
+
+    def test_fake_live_receipt_duplicate_ids_and_costs_fail_closed(self):
+        # These are forged local fixtures to test the parser, NOT proof of a live provider.
+        manifest = self.load("manifest.json")
+        manifest["transport_kind"] = "RESPONSES_API"
+        self.store("manifest.json", manifest)
+        first = self.load("first_pass_results.json")
+        for i, row in enumerate(first):
+            row["response"]["response_id"] = "resp_synthetic_local_" + str(i)
+            row["response"]["usage"] = {
+                "input_tokens": 100, "output_tokens": 15, "total_tokens": 115
+            }
+        self.store("first_pass_results.json", first)
+        _, report = self.assemble()
+        self.assertTrue(report["api_model_execution_observed"])
+        self.assertEqual(0, report["skill_minus_retrieval_total_tokens"])
+        self.assertFalse(report["independent_review_authenticated"])
+        first[1]["response"]["response_id"] = first[0]["response"]["response_id"]
+        self.store("first_pass_results.json", first)
+        self.assert_reject("API_PROVIDER_RESPONSE_ID_MISSING_OR_REUSED")
+        first[1]["response"]["response_id"] = "resp_synthetic_local_1"
+        first[1]["response"]["usage"]["total_tokens"] = 12
+        self.store("first_pass_results.json", first)
+        self.assert_reject("API_TOKEN_USAGE_MISSING_OR_INVALID")
+
+    def test_live_model_mismatch_blocked(self):
+        manifest = self.load("manifest.json")
+        manifest["transport_kind"] = "RESPONSES_API"
+        self.store("manifest.json", manifest)
+        rows = self.load("first_pass_results.json")
+        for i, row in enumerate(rows):
+            row["response"]["response_id"] = "resp_synthetic_local_" + str(i)
+            row["response"]["usage"] = {
+                "input_tokens": 100, "output_tokens": 15, "total_tokens": 115
+            }
+        rows[0]["response"]["returned_model"] = "different-provider-model"
+        self.store("first_pass_results.json", rows)
+        self.assert_reject("API_MODEL_ID_DIFFERS_BETWEEN_ARMS")
+
     def test_missing_judgment_rejected_instead_of_reweighting_denominator(self):
         self.review["judgments"].pop()
         self.review_path.write_text(json.dumps(self.review))
