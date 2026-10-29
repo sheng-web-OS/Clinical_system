@@ -227,7 +227,9 @@ def build_blind_packet(cases, results, suite_sha):
             answers.append({
                 "slot": slot, "run_status": row.get("status", "COMPLETED"),
                 "initial_triage": row.get("triage"),
-                "retrieval_gate": row.get("retrieval_gate"),
+                # Reviewer sees exposure, never an internal gate code that
+                # uniquely identifies one arm (e.g. ARM_NO_SOURCE_ACCESS).
+                "source_exposed": row.get("retrieved_source_id") is not None,
                 "answer": row.get("answer"),
             })
         items.append({"scenario": alias, "task": cases_by_id[case_id]["task"],
