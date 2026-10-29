@@ -7,6 +7,8 @@ on:
       - tools/prepare_medeinst_holdout.py
       - tests/test_prepare_medeinst_holdout.py
       - experiments/medeinst-transfer/README.md
+      - tools/audit_medeinst_pairs.py
+      - tests/test_audit_medeinst_pairs.py
       - .github/workflows/medeinst-source-smoke.yml
 
 permissions:
@@ -38,6 +40,10 @@ jobs:
             -o "$scratch/test.jsonl"
           echo "b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57  $scratch/test.jsonl" | sha256sum --check --status
           export DATASET_PATH="$scratch/test.jsonl"
+          # Aggregate diagnostics only: never log case text, ID, gold labels or individual pair results.
+          python tools/audit_medeinst_pairs.py \
+            --dataset "$scratch/test.jsonl" \
+            --expected-sha256 b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57
           python - <<'PY' > "$scratch/selected-ids"
           import hashlib, json, os
           from collections import defaultdict
