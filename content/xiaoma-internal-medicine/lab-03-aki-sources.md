@@ -31,7 +31,7 @@ AKI 的 creatinine、尿量與 eGFR 是不同時間尺度的功能訊號。確�
 
 Chen 患者入院 Na **120 mmol/L**、導尿調整後出現大量尿量，但原病例 [Table 1／3](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=3) 對 **2024/12/12** 的 Na 分別記 **130** 和 **141 mmol/L**；沒有精確逐時血鈉時序。由這組資料能產生**需要注意自動校正速度**的臨床問題，卻不能判定患者真的發生 osmotic demyelination 或已超過安全矯正速度。
 
-[van der Bilt & Alsma，*Hyponatraemia caused by transient syndrome of inappropriate antidiuresis to urinary retention*（2023，三例）](https://pubmed.ncbi.nlm.nih.gov/36822611/) 記述尿滯留後由抗利尿訊號驅動的低鈉與解除阻塞後 brisk water diuresis／部分患者血鈉自動過快校正。這些**不是 Chen 的個案紀錄**，而是說明他的 Na 120 與大量尿量組合為何值得額外監測。[European Hyponatraemia Clinical Practice Guideline（2014）](https://academic.oup.com/ejendo/article/170/3/G1/6668028) 對慢性或病程不明低鈉的校正速率與後續監測提供建議；不得由單一跨日 Na 差額反推是否實際超標。
+[van der Bilt & Alsma，*Hyponatraemia caused by transient syndrome of inappropriate antidiuresis to urinary retention*（2023，三例）](https://pubmed.ncbi.nlm.nih.gov/36822611/) 記述尿滯留後由抗利尿訊號驅動的低鈉與解除阻塞後 brisk water diuresis／部分患者血鈉自動過快校正。這些**不是 Chen 的個案紀錄**，而是說明他的 Na 120 與大量尿量組合為何值得額外監測。[European Hyponatraemia Clinical Practice Guideline（2014）](https://academic.oup.com/ejendo/article/170/3/G1/6668028) 對慢性或病程不明低鈉的校正速率與後續監測提供建議；其中 Advice for clinical practice 特別指出**尿量突然超過 100 mL/h**可能預示自發性快速升鈉，建議**每 2 小時複測 serum Na 直至穩定**。同一指引 7.4.4.3 也提醒，**血流動力不穩定時必要的復甦優先於過速校正的顧慮，但需在密集監測環境下執行**。此處只是將緊急循環風險與電解質風險放回同一個臨床決策；不得由 Chen 單一跨日 Na 差額反推是否實際超標或捏造曾執行的復甦方案。
 
 ## 尿沉渣與 FENa：其他患者和研究，不能接成 Chen 的病歷
 
