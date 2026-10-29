@@ -21,6 +21,7 @@ European Association for the Study of the Liver. *EASL Clinical Practice Guideli
 
 - 對 HBeAg-positive 或 negative chronic hepatitis B，HBV DNA ≥2,000 IU/mL 且 ALT >ULN 和／或有 significant fibrosis 時，建議抗病毒治療（LoE 1，strong recommendation）；這不是用單一 ALT 判定活動性肝炎。
 - **已存在 cirrhosis 且 HBV DNA 可測得**，無論病毒量高低與 ALT 是否升高均建議治療（LoE 3，strong recommendation）；不能等待分類完成或 ALT 達到兩倍上限。
+- **HBV DNA 持續 <2,000 IU/mL、ALT 持續 >ULN** 時，EASL 亦允許考慮抗病毒治療，但屬 **LoE 5／weak recommendation**，且應檢視其他肝病是否解釋 ALT 異常；不能把一次檢驗的低病毒量或 ALT 升高當作絕對的給藥或不給藥條件。
 - Advanced fibrosis、HCC／肝癌風險、免疫抑制、肝外表現和預防傳播等情境可能改變治療條件。原指南另依證據強度區分這些情境，不能把它們概括為所有 HBsAg-positive 者都必須立即用藥。
 
 EASL Figure 1 提供可不先硬套傳統四個 phase 的治療分流；它不是用「ALT 正常→觀察、異常→治療」的單一二分法。
