@@ -146,12 +146,23 @@ def evaluate(suite, run, suite_digest, retrieval_pack_digest, candidate_skill_di
                           or c["false_alarms_normal"] > b["false_alarms_normal"]
                           or c["false_alarms_boundary"] > b["false_alarms_boundary"])
     transfer_gain = c["transfer_first_pass"] > b["transfer_first_pass"]
-    cost_worse = (b["owner_minutes"] is None or c["owner_minutes"] is None
-                  or c["owner_minutes"] > b["owner_minutes"])
+    # A semantic improvement and its cost are two separate observations.
+    # The review assembler deliberately leaves owner_minutes=None until
+    # independently measured: unknown costs must never be imputed as 0,
+    # nor silently misreported as evidence that the Skill added no value.
+    skill_observed = c["skill_applied_transfer"] > 0
+    cost_measured = (b["owner_minutes"] is not None
+                     and c["owner_minutes"] is not None)
+    cost_delta = (c["owner_minutes"] - b["owner_minutes"]
+                  if cost_measured else None)
     if unsafe or control_regression or incomplete:
         verdict = "HOLD_SAFETY_CONTROL_OR_INCOMPLETE_RUN"
-    elif transfer_gain and c["skill_applied_transfer"] > 0 and not cost_worse:
+    elif transfer_gain and skill_observed and not cost_measured:
+        verdict = "DEVELOPMENT_GAIN_UNCOSTED_NEEDS_INDEPENDENT_HOLDOUT"
+    elif transfer_gain and skill_observed and cost_delta <= 0:
         verdict = "DEVELOPMENT_GAIN_ONLY_NEEDS_INDEPENDENT_HOLDOUT"
+    elif transfer_gain and skill_observed:
+        verdict = "DEVELOPMENT_GAIN_COST_REGRESSION_NO_PROMOTION"
     else:
         verdict = "NO_PROMOTABLE_INCREMENT"
     return {
@@ -159,6 +170,17 @@ def evaluate(suite, run, suite_digest, retrieval_pack_digest, candidate_skill_di
         "candidate_commit": run["candidate_commit"],
         "evidence_level": "VISIBLE_DEVELOPMENT_PILOT_ONLY",
         "arm_metrics": metrics,
+        "semantic_comparison": {
+            "skill_minus_retrieval_transfer_first_pass":
+                c["transfer_first_pass"] - b["transfer_first_pass"],
+            "skill_usage_observed_proxy": skill_observed,
+            "control_regression": control_regression,
+            "unsafe_or_incomplete": unsafe or incomplete,
+        },
+        "owner_cost_comparison": {
+            "status": "MEASURED" if cost_measured else "NOT_MEASURED",
+            "skill_minus_retrieval_minutes": cost_delta,
+        },
         "frozen_retrieval_pack_sha256": suite["retrieval_pack_sha256"],
         "frozen_candidate_skill_sha256": suite["candidate_skill_sha256"],
         "role_denominators": {role: sum(c["role"] == role for c in cases)
