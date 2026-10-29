@@ -171,7 +171,7 @@ class TransferPilotIntegrity(unittest.TestCase):
 
     def test_stale_suite_skill_digest_refused(self):
         self.suite["candidate_skill_sha256"] = "f" * 64
-        self.rejects("candidate skill version mismatch")
+        self.rejects("suite fingerprints do not match actual")
 
     def test_normal_false_alarm_blocks_and_never_promotes(self):
         for r in self.run["records"]:
