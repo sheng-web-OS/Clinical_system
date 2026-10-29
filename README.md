@@ -1,6 +1,8 @@
 # Clinical System — Agentic Medical Knowledge & Editorial System
 
-**GitHub 保持私人；醫學教材網站可免費公開閱讀。**
+**GitHub 儲存庫目前為 PUBLIC（2026-10-30 實查）；醫學教材網站另由 Cloudflare Pages 公開。**
+
+**安全邊界：**`site/pages.json` 只限制網站建置輸出，**不限制公開 GitHub 的 `archive/`、草稿分支、PR、Issues、Actions artifacts 與 Git 歷史**。不得在此存放病人資訊、私人閱讀／考試紀錄、未取得公開重製依據的原始圖表、秘密或受限 Drive 來源；這些必須留在真正受存取控制的位置。現有歷史內容的權利／隱私審查仍待獨立處理，不能因本文勘誤視為已完成。
 
 此儲存庫是 Master Prompt v5.1 的版本化知識來源；Cardiac Tamponade 是第一個端到端教材驗證案例，不是系統的終點。
 
@@ -19,14 +21,14 @@
 
 2026-10-21 主分支已收錄 HCM，以及由當日 21 篇對話接收中轉存的 HF、LVEDP、利尿劑、DCM、胰臟炎、癲癇重積六篇，另十五篇仍待逐篇轉存。此數量是**原文 Git 存檔狀態**，並非作者最終發表版本、全篇 Figure／Table 或臨床醫學審查已核實。後續請以[實際原稿目錄](content/xiaoma-reading/index.md)和[接收紀錄](archive/xiaoma-reading/intake/2026-10-21-chat-manuscripts.md)判斷，不從過時的工作清單自動生成進度。跨篇知識脈絡頁僅是編輯導航，不冒充因果依賴已驗證。
 
-小麻內科國考的個人時程原檔保留在私人 `archive/xiaoma-internal-medicine/`，公開入口只發布教材與去除個人行程的學習路線。後續新增方式見 [小麻教材發布](docs/xiaoma-publishing.md)；出版目錄為 `site/pages.json`。
+小麻內科國考的歷史時程檔曾留存在 `archive/xiaoma-internal-medicine/`；**該路徑在 PUBLIC repository 不是私人儲存空間**，既有內容須另行審查，未來個人時程不可繼續放入公開 Git。網站入口僅應發布教材與去除個人行程的學習路線。後續新增方式見 [小麻教材發布](docs/xiaoma-publishing.md)；出版目錄為 `site/pages.json`。
 
 ## 目標工作循環
 
 ```text
 ChatGPT 對話 / Work / Codex：研究、修訂教材、審查
                  ↓
-GitHub private / main：Markdown 與版本歷史
+GitHub PUBLIC / main：僅放可公開的 Markdown 與版本歷史
                  ↓
 Cloudflare Pages：驗證 → 編譯 → 免費公開網站
                  ↕
@@ -35,7 +37,7 @@ GitHub Actions：相同驗證器，獨立 CI 與預覽成品
 
 Cloudflare 先執行 `bash tools/build_site.sh`。若來源檔案檢查、網站編譯或發行白名單檢查失敗，就阻擋當次部署；避免 CI 通過但 Cloudflare 使用不相同的建置邏輯。
 
-**目前交接狀態（2026-10-21）**：Cloudflare Pages 正式部署已成功，公開 HTTPS、首頁、ESC 審查頁、審查紀錄、章節導航與全文搜尋已實際驗證。正式網站：[sheng-clinical-system.pages.dev](https://sheng-clinical-system.pages.dev/)。GitHub repository 維持 private；main 自動部署已開啟，預覽分支部署已停用。完整證據與限制見 [發行審查紀錄](audit/audit-log.md)。
+**2026-10-21 歷史交接狀態（不可當作當前安全設定）**：Cloudflare Pages 正式部署已成功，公開 HTTPS、首頁、ESC 審查頁、審查紀錄、章節導航與全文搜尋已實際驗證。正式網站：[sheng-clinical-system.pages.dev](https://sheng-clinical-system.pages.dev/)。當時紀錄 GitHub repository 為 private，**但 2026-10-30 實查已為 PUBLIC**；main 自動部署與預覽分支設定需以平台即時狀態核對，不由此歷史紀錄推定。完整證據與限制見 [發行審查紀錄](audit/audit-log.md)。
 
 ## 一次性部署設定
 
@@ -45,7 +47,7 @@ Cloudflare 先執行 `bash tools/build_site.sh`。若來源檔案檢查、網站
 |---|---|
 | 產品 | Cloudflare Pages（靜態網站） |
 | Project name | `sheng-clinical-system` |
-| GitHub repository | `sheng-web-OS/Clinical_system`（private） |
+| GitHub repository | `sheng-web-OS/Clinical_system`（目前 PUBLIC） |
 | Production branch | `main` |
 | Framework preset | None |
 | Root directory | 專案根目錄（留空） |
@@ -63,7 +65,7 @@ bash tools/build_site.sh
 python -m http.server --directory dist 8000
 ```
 
-網站只會發布 `dist/` 白名單中的教材 HTML、審查頁、CSS、JavaScript 與搜尋索引；私人 `archive/`、Markdown 來源、編輯狀態 JSON 與 Git 歷史不會被上傳。
+網站建置只選取 `dist/` 白名單中的教材 HTML、審查頁、CSS、JavaScript 與搜尋索引；`archive/`、Markdown 來源、編輯狀態 JSON 與 Git 歷史不會因此上傳至 Cloudflare Pages，**但在目前 PUBLIC GitHub repository 仍可被公開取得**。
 
 本教材供醫學教育；未經真人專科同儕審查。修改核心機轉時按需重建依賴、驗證影響，不強制永久維護全域 Claim Graph。
 
