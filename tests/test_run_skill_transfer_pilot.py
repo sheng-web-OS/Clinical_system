@@ -94,6 +94,7 @@ class RunnerTest(unittest.TestCase):
         meta = json.loads((self.root / "out/manifest.json").read_text())
         self.assertEqual("NOT_RUN", meta["results_status"])
         self.assertFalse(meta["learning_effect_validated"])
+        self.assertEqual("NO_MODEL_CALLS", meta["transport_kind"])
 
     def test_request_isolation_and_same_evidence_pack(self):
         self.go()
@@ -129,6 +130,10 @@ class RunnerTest(unittest.TestCase):
                          ["results_status"])
         self.assertEqual(9, report["completed"])
         self.assertEqual(9, len(captured))
+        self.assertEqual(
+            "INJECTED_TEST_DOUBLE",
+            json.loads((self.root / "out/manifest.json").read_text())
+            ["transport_kind"])
         entries = json.loads((self.root / "out/first_pass_results.json").read_text())
         self.assertEqual(9, len(entries))
         self.assertTrue(all(e["first_pass"] == "NOT_SCORED" for e in entries))
@@ -234,6 +239,38 @@ class RunnerTest(unittest.TestCase):
             extract_output({"status": "completed", "output": [
                 {"type": "message", "content": [
                     {"type": "output_text", "text": "message"}]}]})
+
+    def test_provider_receipt_requires_model_id_and_token_accounting(self):
+        response = {
+            "status": "completed", "id": "resp_unit_positive_1",
+            "model": MODEL,
+            "usage": {"input_tokens": 100, "output_tokens": 50,
+                      "total_tokens": 150},
+            "output": [{"type": "message", "content": [
+                {"type": "output_text", "text": "synthetic independent answer"}
+            ]}],
+        }
+        parsed = extract_output(response)
+        self.assertEqual(150, parsed["usage"]["total_tokens"])
+        self.assertEqual("resp_unit_positive_1", parsed["response_id"])
+        response["id"] = "a-non-provider-token"
+        with self.assertRaisesRegex(PilotError, "MODEL_PROVIDER_RESPONSE_ID_MISSING"):
+            extract_output(response)
+
+    def test_missing_or_inconsistent_provider_token_usage_is_hold(self):
+        response = {
+            "status": "completed", "id": "resp_unit_good_1",
+            "model": MODEL,
+            "usage": {"input_tokens": 100, "output_tokens": 50,
+                      "total_tokens": 140},
+            "output": [{"type": "message", "content": [
+                {"type": "output_text", "text": "synthetic answer"}]}],
+        }
+        with self.assertRaisesRegex(PilotError, "MODEL_TOKEN_USAGE_INVALID"):
+            extract_output(response)
+        response["usage"] = None
+        with self.assertRaisesRegex(PilotError, "MODEL_TOKEN_USAGE_INVALID"):
+            extract_output(response)
 
     def test_output_file_permissions_restrict_group_and_world(self):
         self.go()
