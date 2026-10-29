@@ -19,7 +19,7 @@ def require(ok, reason):
         raise ValueError(reason)
 
 
-def evaluate(suite, run, suite_digest):
+def evaluate(suite, run, suite_digest, retrieval_pack_digest, candidate_skill_digest):
     require(suite.get("schema_version") == 1
             and run.get("schema_version") == 1
             and suite.get("exposure") == "development",
@@ -34,6 +34,9 @@ def evaluate(suite, run, suite_digest):
     require(DIGEST.fullmatch(str(suite.get("retrieval_pack_sha256", "")))
             and DIGEST.fullmatch(str(suite.get("candidate_skill_sha256", ""))),
             "frozen retrieval pack and candidate skill fingerprints required")
+    require(suite["retrieval_pack_sha256"] == retrieval_pack_digest
+            and suite["candidate_skill_sha256"] == candidate_skill_digest,
+            "suite fingerprints do not match actual retrieval pack and Skill file bytes")
     cases = suite.get("cases")
     require(isinstance(cases, list) and len(cases) >= 3, "need at least three cases")
     index = {}
@@ -170,11 +173,15 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite", required=True, type=Path)
     p.add_argument("--run", required=True, type=Path)
+    p.add_argument("--retrieval-pack", required=True, type=Path)
+    p.add_argument("--candidate-skill", required=True, type=Path)
     a = p.parse_args()
     try:
         raw = a.suite.read_bytes()
         report = evaluate(json.loads(raw), json.loads(a.run.read_text(encoding="utf-8")),
-                          hashlib.sha256(raw).hexdigest())
+                          hashlib.sha256(raw).hexdigest(),
+                          hashlib.sha256(a.retrieval_pack.read_bytes()).hexdigest(),
+                          hashlib.sha256(a.candidate_skill.read_bytes()).hexdigest())
     except (OSError, ValueError, TypeError, KeyError) as error:
         print(json.dumps({"evidence_level": "INVALID", "error": str(error)},
                          ensure_ascii=False))
