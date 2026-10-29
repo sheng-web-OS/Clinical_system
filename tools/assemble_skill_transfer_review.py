@@ -52,6 +52,9 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
     require(manifest.get("results_status") == "EXECUTION_STARTED_UNSCORED"
             and manifest.get("independent_review") == "NOT_DONE",
             "RESULTS_NOT_FROZEN_OR_ALREADY_REVIEWED")
+    transport_kind = manifest.get("transport_kind")
+    require(transport_kind in {"RESPONSES_API", "INJECTED_TEST_DOUBLE"},
+            "TRANSPORT_NOT_A_RECORDED_MODEL_EXECUTION")
     require(suite.get("exposure") == "development"
             and manifest.get("suite_sha256") == suite_sha
             and manifest.get("suite_id") == suite.get("id"),
@@ -92,6 +95,12 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
             "INCOMPLETE_OR_EXTRA_ATTEMPT_EVENTS")
     events = [json.loads(line) for line in lines]
     results_by_pair = {}
+    provider_ids = set()
+    token_totals = {
+        arm: {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}
+        for arm in ARMS
+    }
+    usage_complete = {arm: True for arm in ARMS}
     for i, (call, output) in enumerate(zip(requests, outputs)):
         key = (call["case_id"], call["arm"])
         require(key not in results_by_pair
@@ -115,9 +124,35 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
                     and type(response.get("returned_model")) is str
                     and response["returned_model"].strip(),
                     "COMPLETED_ANSWER_MISSING")
+            provider_id = response.get("response_id")
+            usage = response.get("usage")
+            if transport_kind == "RESPONSES_API":
+                require(type(provider_id) is str and provider_id.startswith("resp_")
+                        and provider_id not in provider_ids,
+                        "API_PROVIDER_RESPONSE_ID_MISSING_OR_REUSED")
+                returned = response["returned_model"]
+                requested = call["request"]["model"]
+                require(returned == requested or returned.startswith(requested + "-"),
+                        "API_MODEL_ID_DIFFERS_BETWEEN_ARMS")
+                require(type(usage) is dict
+                        and all(type(usage.get(k)) is int and usage[k] >= 0
+                                for k in ("input_tokens", "output_tokens", "total_tokens"))
+                        and usage["input_tokens"] > 0 and usage["output_tokens"] > 0
+                        and usage["total_tokens"] == usage["input_tokens"] + usage["output_tokens"],
+                        "API_TOKEN_USAGE_MISSING_OR_INVALID")
+                provider_ids.add(provider_id)
+            if (type(usage) is dict
+                    and all(type(usage.get(k)) is int and usage[k] >= 0
+                            for k in ("input_tokens", "output_tokens", "total_tokens"))
+                    and usage["total_tokens"] == usage["input_tokens"] + usage["output_tokens"]):
+                for k in token_totals[call["arm"]]:
+                    token_totals[call["arm"]][k] += usage[k]
+            else:
+                usage_complete[call["arm"]] = False
         else:
             require(output.get("response") is None,
                     "FAILED_TRIAL_CANNOT_CONTAIN_CREDITED_ANSWER")
+            usage_complete[call["arm"]] = False
         require(output.get("adjudication") == "NOT_DONE"
                 and output.get("first_pass") == "NOT_SCORED",
                 "PREPOPULATED_SELF_GRADING_DETECTED")
@@ -266,6 +301,19 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
         "holdout_reuse_authorized": False,
         "publication_authorized": False,
     }
+    report["transport_kind"] = transport_kind
+    report["api_model_execution_observed"] = transport_kind == "RESPONSES_API"
+    report["provider_receipt_authentication"] = "DECLARED_RESPONSE_SHAPE_ONLY"
+    report["observed_token_usage"] = {
+        arm: (token_totals[arm] if usage_complete[arm] else None)
+        for arm in ARMS
+    }
+    if usage_complete["retrieval"] and usage_complete["skill"]:
+        report["skill_minus_retrieval_total_tokens"] = (
+            token_totals["skill"]["total_tokens"]
+            - token_totals["retrieval"]["total_tokens"])
+    else:
+        report["skill_minus_retrieval_total_tokens"] = None
     report["review_packet_sha256"] = packet_sha
     report["reviewer_context_declared_not_authenticated"] = reviewer
     report["first_pass_trace_integrity_checked"] = True
