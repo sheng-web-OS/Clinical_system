@@ -152,6 +152,20 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
             self.assertFalse(state["clinical_validated"])
             self.assertFalse(state["transfer_validated"])
 
+    def test_offline_and_injected_run_bind_same_frozen_suite(self):
+        caller, _ = fake(response("SKIP", "none", ""))
+        with tempfile.TemporaryDirectory() as folder:
+            plan_dir, run_dir = Path(folder) / "plan", Path(folder) / "run"
+            execute(DATA, SKILL, "gpt-5-mini", "e" * 40, plan_dir)
+            execute(DATA, SKILL, "gpt-5-mini", "e" * 40, run_dir, caller=caller)
+            plan = json.loads((plan_dir / "manifest.json").read_text())
+            run_plan = json.loads((run_dir / "manifest.json").read_text())
+            receipt = json.loads((run_dir / "run_receipt.json").read_text())
+            self.assertEqual(plan["suite_sha256"], run_plan["suite_sha256"])
+            self.assertEqual(plan["suite_sha256"], receipt["suite_sha256"])
+            self.assertNotEqual(plan["results_status"], "EXECUTION_COMPLETE")
+            self.assertEqual(receipt["status"], "DEVELOPMENT_TEST_DOUBLE_ONLY")
+
     def test_mock_9_case_arm_records_are_not_mislabeled_real(self):
         caller, _ = fake(response("SKIP", "none", ""))
         with tempfile.TemporaryDirectory() as folder:
