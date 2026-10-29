@@ -69,6 +69,23 @@ class RunnerTest(unittest.TestCase):
                    key="test-placeholder-not-a-real-key" if mode else None,
                    caller=caller)
 
+    def test_checked_in_synthetic_scenarios_use_real_authored_article_offline(self):
+        root = Path(__file__).resolve().parents[1]
+        result = run(
+            root / "experiments/skill-transfer/fixtures/synthetic-questions.json",
+            root / "content/xiaoma-reading/originals/2026-07-14-hcm.md",
+            root / ".agents/skills/decision-question-triage/SKILL.md",
+            self.root / "checked-in-plan", MODEL, COMMIT)
+        self.assertEqual("PLAN_ONLY_NO_MODEL_CALLS", result["status"])
+        requests = json.loads((self.root / "checked-in-plan/requests.json").read_text())
+        self.assertEqual(9, len(requests))
+        self.assertEqual(
+            0, sum("Nonobstructive 只回答了一個問題" in x["request"]["instructions"]
+                   for x in requests if x["arm"] == "native"))
+        self.assertEqual(
+            6, sum("Nonobstructive 只回答了一個問題" in x["request"]["instructions"]
+                   for x in requests if x["arm"] != "native"))
+
     def test_plan_only_does_not_touch_model_or_grader(self):
         result = self.go()
         self.assertEqual("PLAN_ONLY_NO_MODEL_CALLS", result["status"])
