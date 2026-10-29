@@ -127,7 +127,7 @@ def retrieve_after_triage(arm, triage, docs):
 def answer_request(case, triage, document, model):
     instructions = (
         "Give the best first-pass educational reasoning in Traditional Chinese. "
-        "Respect the provisional conclusion and explain if and WHY verified "
+        "Reassess the provisional conclusion critically; explain if and WHY verified "
         "evidence changes it; evidence absence is not evidence of exclusion. "
         "No patient-specific orders. Do not claim independent review."
     )
