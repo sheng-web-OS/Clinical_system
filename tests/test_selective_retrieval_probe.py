@@ -159,6 +159,28 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
             execute(DATA, SKILL, "gpt-5-mini", "a" * 40,
                     ROOT / "experiments/skill-transfer/tmp-unsafe")
                     
+    def test_live_path_rejects_arbitrary_in_memory_material_even_if_labeled_synthetic(self):
+        mutated = json.loads(json.dumps(DATA))
+        mutated["cases"][0]["task"] += " Added invisible private source."
+        with tempfile.TemporaryDirectory() as folder:
+            with self.assertRaisesRegex(PilotError, "LIVE_CONTENT_NOT_ALLOWLISTED"):
+                execute(mutated, SKILL, "gpt-5-mini", "a" * 40,
+                        Path(folder) / "blocked", key="fake_test_key", live=True)
+
+    def test_live_rejects_nonallowlisted_model_before_any_call(self):
+        with tempfile.TemporaryDirectory() as folder:
+            with self.assertRaisesRegex(PilotError, "LIVE_KEY_MODEL_AND_TRANSPORT_REQUIRED"):
+                execute(DATA, SKILL, "expensive-unapproved-model", "a" * 40,
+                        Path(folder) / "blocked", key="fake_test_key", live=True)
+
+    def test_live_refuses_injected_callable_transport(self):
+        caller, _ = fake(response())
+        with tempfile.TemporaryDirectory() as folder:
+            with self.assertRaises(PilotError):
+                execute(DATA, SKILL, "gpt-5-mini", "a" * 40,
+                        Path(folder) / "blocked", key="fake_test_key",
+                        live=True, caller=caller)
+
     def test_requires_sha_and_correct_fixture(self):
         with self.assertRaises(PilotError):
             build_plan(DATA, SKILL, "gpt-5-mini", "not-a-sha")
