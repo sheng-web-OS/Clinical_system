@@ -10,6 +10,8 @@ AKI 的 creatinine、尿量與 eGFR 是不同時間尺度的功能訊號。確�
 
 [原始 CT Figure 3，PDF 第 4 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4)：影像與圖說顯示 bilateral severe hydronephrosis、moderate bilateral hydroureter，但沒有在該張圖確認精確的 obstructing lesion。它補足了先前負向超音波未解決的解剖證據；單憑影像仍不能替患者推測未記錄的處置理由。**兩項影像不同日**，所以不能把「先陰性、後陽性」直接讀成同一時間點的假陰性、同一病變的靈敏度比較，或一定是超音波技術錯誤。[Shahzad 等 2022 nondilated obstructive uropathy 病例](https://journals.sagepub.com/doi/10.1177/20543581221086683)指出早期阻塞或低血容量時可能未見擴張；那是機轉上的反例，不是 Chen 本人究竟何時出現水腎的證據。
 
+**本站原圖呈現與授權：** [初次雙側超音波 Figure 1–2](lessons/2026-10-27-lab-medicine-aki-creatinine-urine.md#lab03-chen-ultrasound-originals) 與 [後續 CT Figure 3](lessons/2026-10-27-lab-medicine-aki-creatinine-urine.md#lab03-chen-ct-original) 已按各自的臨床時間點放入 Lab03 主文，直接引用 NCBI PMC 上 Chen 等人原始 JPEG（未重繪或修改）；論文為 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，每張圖說均附作者、DOI、原圖入口與不能過度推論的限制。外部 CDN 不可讀時，仍可用上面的出版社原 PDF 圖頁對照；不能因圖片同時呈現在教材內，就抹掉兩次影像間的時間差。
+
 [原始 Table 1–3，PDF 第 3–5 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=3)：
 - Table 1 記 2024/12/08 Cr **375 μmol/L**、12/10 Cr **558 μmol/L**，並把 12/12 Cr **618 μmol/L**、Na **130 mmol/L**、urea **32.4 mmol/L** 列為導尿管介入前資料。
 - Table 2 還有一條重要的尿量時間線：**12/09 2,000 mL/day → 12/10 476 mL/day（輸入 1,575 mL）→ 12/11 6,170 mL/day（輸入 1,800 mL、淨 −4,370 mL）**。注意 12/10 的分項相減應為 **+1,099 mL**，原文 Table 2 的 **Total** 卻填 **+1,039 mL**，相差 60 mL；這不能被默默寫成原表本來就記 +1,099。尿量下降本身並非阻塞確診，低血壓及紀錄完整度也是競爭解釋；同一篇原文雖說期間尿量仍「satisfactory」，表內的 **476 mL/day** 卻提醒讀者不能把有尿流出等同於引流充分，亦不能在未知體重與完整逐時尿量時推算尿量 AKI stage。原文沒有將 476 mL 明確記為 CT 的當時決策理由。**正文說置入 Tiemann-tip 後排出約 6 L；Table 2 註腳卻說換回一般導尿管後「立即」排出約 6 L。**兩處均描述大量排尿，卻不能確定哪一步換管導致瞬間排尿；日總量也不能獨立驗證即時流量。
