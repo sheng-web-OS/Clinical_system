@@ -154,6 +154,64 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
             self.assertTrue(all(row["first_call_receipt"]["response_id"] == "MOCK_NOT_PROVIDER" for row in rows))
             self.assertFalse(got["clinical_validated"])
 
+    def test_blind_reviewer_packet_and_mapping_separated(self):
+        caller, _ = fake(response("SKIP", "none", ""))
+        with tempfile.TemporaryDirectory() as folder:
+            output = Path(folder) / "test"
+            got = execute(DATA, SKILL, "gpt-5-mini", "c" * 40, output, caller=caller)
+            packet = json.loads((output / "blind_reviewer_packet.json").read_text())
+            mapping = json.loads((output / "private_arm_mapping.json").read_text())
+            receipt = json.loads((output / "run_receipt.json").read_text())
+            self.assertEqual(len(packet), 3)
+            self.assertEqual(len(mapping), 9)
+            self.assertEqual(receipt["model_calls_attempted"], 18)
+            self.assertEqual(receipt["completed_pairs"], 9)
+            self.assertIsNone(receipt["cost_usd"])
+            self.assertIsNone(receipt["owner_minutes"])
+            self.assertFalse(receipt["provider_receipt_authenticated"])
+            self.assertEqual(receipt["independent_review"], "NOT_DONE")
+            self.assertTrue(all("arm" not in str(answer) and "case_id" not in str(answer)
+                                for case in packet for answer in case["candidate_answers"]))
+            self.assertEqual(got["status"], "DEVELOPMENT_TEST_DOUBLE_ONLY")
+
+    def test_failed_first_stage_remains_incomplete_not_fabricated_review(self):
+        def fail_all(request):
+            raise PilotError("SYNTHETIC_FAILURE")
+        with tempfile.TemporaryDirectory() as folder:
+            output = Path(folder) / "failed"
+            got = execute(DATA, SKILL, "gpt-5-mini", "c" * 40, output, caller=fail_all)
+            receipt = json.loads((output / "run_receipt.json").read_text())
+            packet = json.loads((output / "blind_reviewer_packet.json").read_text())
+            self.assertEqual(got["status"], "HOLD_INCOMPLETE")
+            self.assertEqual(receipt["failed_pairs"], 9)
+            self.assertEqual(receipt["completed_pairs"], 0)
+            self.assertEqual(receipt["model_calls_attempted"], 9)
+            self.assertTrue(all(answer["run_status"] == "FAILED_INCOMPLETE"
+                                for case in packet for answer in case["candidate_answers"]))
+            self.assertTrue(all(answer["answer"] is None
+                                for case in packet for answer in case["candidate_answers"]))
+
+    def test_real_api_path_receipt_reuse_fails_closed_using_mock_not_network(self):
+        # Uniqueness enforcement is tested by replacing the network transport:
+        # no model or provider actually runs, and this MUST NOT be clinical evidence.
+        from unittest.mock import patch
+        approved = (ROOT / ".agents/skills/decision-question-triage/SKILL.md").read_text()
+        def duplicate_provider_receipt(request, key):
+            return {"answer": json.dumps(response(), ensure_ascii=False),
+                    "response_id": "resp_synthetic_duplicate",
+                    "returned_model": "gpt-5-mini",
+                    "usage": {"input_tokens": 1, "output_tokens": 2, "total_tokens": 3}}
+        with tempfile.TemporaryDirectory() as folder:
+            with patch("selective_retrieval_probe.api_call", side_effect=duplicate_provider_receipt):
+                output = Path(folder) / "mock_provider"
+                got = execute(DATA, approved, "gpt-5-mini", "c" * 40,
+                              output, key="synthetic_test_only", live=True)
+            self.assertEqual(got["status"], "HOLD_INCOMPLETE")
+            receipt = json.loads((output / "run_receipt.json").read_text())
+            self.assertGreater(receipt["failed_pairs"], 0)
+            self.assertIsNone(receipt["tokens_observed_for_completed_calls"])
+            self.assertFalse(receipt["provider_receipt_authenticated"])
+
     def test_no_write_inside_public_repository(self):
         with self.assertRaises(PilotError):
             execute(DATA, SKILL, "gpt-5-mini", "a" * 40,
