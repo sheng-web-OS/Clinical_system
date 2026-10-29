@@ -73,6 +73,17 @@ class ReadingVersionCollisionContract(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Multiple integrated successors"):
             validate_reading_version_collisions(pages)
 
+    def test_two_integrated_articles_with_same_title_are_blocked(self):
+        pages = copy.deepcopy(self.pages)
+        _, current = self._pair(pages)
+        new_article = copy.deepcopy(current)
+        new_article["output"] = "another-diuretics-integration.html"
+        new_article["title"] = "利尿效果不夠 為什麼下一步不一定是加量!"
+        new_article.pop("replaces_original")
+        pages.append(new_article)
+        with self.assertRaisesRegex(ValueError, "Duplicate integrated reading title"):
+            validate_reading_version_collisions(pages)
+
     def test_related_exam_overlap_is_not_automatic_replacement(self):
         pages = copy.deepcopy(self.pages)
         _, current = self._pair(pages)
