@@ -133,11 +133,16 @@ def main():
     parser.add_argument("--mode", choices=["fixture", "shadow", "synthetic-read"],
                         default="fixture")
     parser.add_argument("--context", required=True)
+    parser.add_argument("--github-output", default=None)
     args = parser.parse_args()
     try:
         with open(args.context, encoding="utf-8") as fh:
             raw = json.load(fh)
-        print(json.dumps(execute(raw, args.mode), sort_keys=True))
+        result = execute(raw, args.mode)
+        print(json.dumps(result, sort_keys=True))
+        if args.github_output:
+            with open(args.github_output, "a", encoding="utf-8") as output:
+                output.write("read_verified=" + ("true" if result["drive_read_verified"] else "false") + "\n")
         return 0
     except (RuntimeError, ValueError, KeyError, OSError) as exc:
         known = {"NOT_CONFIGURED_MODEL", "MODEL_REQUEST_FAILED", "MODEL_RESPONSE_INVALID",
