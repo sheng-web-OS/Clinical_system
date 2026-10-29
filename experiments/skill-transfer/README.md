@@ -159,3 +159,22 @@ A denied `RETRIEVE` is retained as the model's **observed wrong triage**, not si
 ### 2026-10-29 EVAL-003 cost-missingness correction
 
 The prior review assembler sets `owner_minutes=null` when no validated owner-time receipt exists. The comparator formerly folded that unknown into a negative cost signal, making a positive development gain verdict impossible even if reviewer scores favored C over B. The revised report exposes `semantic_comparison` and `owner_cost_comparison` separately: **uncosted observed development gain**, **measured cost regression**, **measured non-worse gain**, and **no observed gain** are distinguishable. Safety, control and incomplete-run HOLDs retain priority. No output promotes a skill, authenticates reviewers or proves clinical autonomy. Absent owner time is still unknown, **not zero**; prospective independent owner-time measurement remains required.
+
+### 2026-10-29: archived Stage1 B/C package generator (no inference)
+
+`tools/prepare_staged_bc_packets.py` prepares only **worker input ZIP files** from an externally stored, pre-frozen, version-2 staging manifest and Stage1 ZIP. It verifies the SHA-256 of the complete private facilitator manifest, every Stage1 file (byte count and digest), and exact `.agents/skills/decision-question-triage/SKILL.md` bytes. It never reads Stage2, reviewer-only, or original case outcomes. For each selected case it creates a B ZIP containing `task.md` and `instructions.txt`, and an otherwise identical C ZIP that additionally contains `candidate_skill.md`; a separate facilitator-only manifest records hashes and **NOT_RUN**. Default small pilot selection is H01 and S01. Outputs must be outside this public repository, directories and ZIPs use restrictive permissions, existing outputs cannot be overwritten, and malformed/tampered archives fail closed.
+
+Example in a **trusted local environment**, using copies of the previously frozen *private* material (not checked into GitHub):
+
+```sh
+python tools/prepare_staged_bc_packets.py \
+  --stage1-zip /private/worker_stage1_only.zip \
+  --manifest /private/facilitator/manifest.json \
+  --skill .agents/skills/decision-question-triage/SKILL.md \
+  --manifest-sha256 <approved-64-character-hex-manifest-digest> \
+  --skill-sha256 <actual-64-character-hex-skill-digest> \
+  --candidate-commit "$(git rev-parse HEAD)" \
+  --output-dir /private/new-staged-bc-packets --cases H01 S01
+```
+
+**Critical boundaries:** preparing separate ZIPs does **not** establish separate model worker contexts; the entire shared output directory must never be mounted to either worker. Each ZIP must be supplied **individually** to a separately instantiated worker with equal model/version/effort/tool limits. B must have no access to C's Skill or reviewer material. This generator performs no API calls, enforces no OpenAI billing cap, never authenticates the claimed Git SHA, and cannot certify that workers read the provided source or skill. Subsequent Stage2 release still requires the existing private `stage_gate.py` to freeze an actual independent V1 decision, and blinded medical review remains mandatory. No public case text, reviewer rubric, or raw model output is committed with this code.
