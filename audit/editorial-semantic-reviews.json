@@ -8423,7 +8423,7 @@
           "reader_gain": "先把 DNA 複製、ALT 傷害及 fibrosis 結構三個觀察層次分開，讀者即使未讀前篇也能理解為何需要推論 phase。",
           "nonredundancy_reason": "刪除這段會使下一段的『同一 ALT 不等於同一狀態』缺乏檢驗對象與病理層次的共同定義。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 5",
+          "excerpt_for_editor": "上一篇〈HBV phase，不是在替慢性肝炎分期〉，已經說明 HBV DNA 反映病毒複製，ALT 反映肝細胞受傷的間接訊號；兩者可能不同步，fibrosis 更不等同當下活動。病人卻不是直接呈現自己的「phase」給我們看：醫師只能從採血當下的 HBeAg、HBV DNA、ALT，以及後",
           "line_for_editor": 5
         },
         "4237fa8ed198d48e80-1": {
@@ -8431,7 +8431,7 @@
           "reader_gain": "提出兩個可檢驗的問題：相同 ALT 是否代表相同狀態，以及跨過門檻是否代表病程剛開始。",
           "nonredundancy_reason": "這不是前段的術語重述，而是限定全文要以時間和行動閾值回答的推理任務。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 7",
+          "excerpt_for_editor": "問題因此往前一步：同一個 ALT 數值，能否證明兩名病人的病毒狀態相同？跨過治療閾值的那一天，又是不是疾病開始惡化的那一天？",
           "line_for_editor": 7
         },
         "32e4e8702cca0d2556-1": {
@@ -8439,7 +8439,7 @@
           "reader_gain": "用高 DNA／HBeAg 陽性與低 DNA／HBeAg 陰性的典型對照，揭露單次正常 ALT 對病毒狀態的不可識別性。",
           "nonredundancy_reason": "若刪掉具體反例，讀者只會記住 ALT 不可靠的口號，無法看到哪一組測量造成分類歧義。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 11",
+          "excerpt_for_editor": "ALT 落在正常範圍，表示這次檢測未見超過採用上限的酵素活性；它不能保證兩次抽血之間沒有肝炎活動，也不能排除慢性纖維化。即使 ALT 數值相同，HBV DNA 極高的 HBeAg-positive chronic infection，與病毒量低的 HBeAg-negative chroni",
           "line_for_editor": 11
         },
         "9fd458608dafb693b3-1": {
@@ -8447,7 +8447,7 @@
           "reader_gain": "補足 ALT 受細胞受傷、酵素動力學、其他病因和採樣時間影響，連到必須使用連續 DNA／ALT 與結構風險。",
           "nonredundancy_reason": "這段提供時間軸及採檢限制，不能由前一段的兩組橫斷面 marker 對照替代。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 13",
+          "excerpt_for_editor": "更難觀察的是時間。ALT 受到肝細胞受傷程度、酵素釋放與清除、其他肝病和採血時點影響；抽血結果沒有跨過上限，不表示病程沒有改變，只表示這個變化未必已經以這項檢驗可辨識的形式出現。也正因如此，追蹤應合併連續病毒量與 ALT、HBeAg、fibrosis／cirrhosis 和個別風險，而不是",
           "line_for_editor": 13
         },
         "baf89f909bd7ec63c0-1": {
@@ -8455,7 +8455,7 @@
           "reader_gain": "將原創圖的兩欄明確限定為典型組合而非真實病例，並引出未能符合四格時的灰區分類限制。",
           "nonredundancy_reason": "若只保留圖表而沒有這段，容易把示意圖誤讀為病例證據或把 phase 名稱當成直接量到的狀態。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 33",
+          "excerpt_for_editor": "圖中兩組典型檢驗組合的 ALT 都正常，但 HBV DNA 與 HBeAg 組合不同。這不是要重新背兩種 phase，而是提醒：Marker 是間接觀察，phase 是對多個觀察及其時間序列的推論。 HBeAg、HBV DNA 與 ALT 未形成典型組合時，也可能落在 indetermin",
           "line_for_editor": 33
         },
         "ce37a8a178adb46ce2-1": {
@@ -8463,7 +8463,7 @@
           "reader_gain": "將 6–12 個月內至少兩次 ALT/DNA 的規則限定於灰區長期 phase 判定，明確排除對已有治療適應症的等待。",
           "nonredundancy_reason": "刪去會使追蹤時程與治療時機混為一談，也無法從分類問題自然轉到不同灰區的行動選擇。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 35",
+          "excerpt_for_editor": "對 HBeAg-negative、檢驗組合落在 indeterminate／grey zone、需要確認長期模式 的患者，AASLD/IDSA 提醒：ALT 與 HBV DNA 會波動，判讀 phase 應比較 6–12 個月內至少兩次檢驗，而不是憑單次抽血貼上永久標籤。這是提高分類可靠度",
           "line_for_editor": 35
         },
         "6f24d622b074cf9e2a-1": {
@@ -8471,7 +8471,7 @@
           "reader_gain": "從正常 ALT 無法證明安全的限制，轉問為何臨床仍需建立治療門檻及門檻與疾病起點的區別。",
           "nonredundancy_reason": "這段不是單純再講 ALT 不敏感；它是把第一節的測量問題移交第二節的介入決策問題。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 37",
+          "excerpt_for_editor": "只靠一次正常 ALT，既不能判斷目前完全沒有肝炎活動，也不能保證未來的疾病軌跡。下一個問題是：臨床指引為何仍需要設置 ALT、HBV DNA 等治療門檻，而這些門檻又不能被當成疾病真正的起點？",
           "line_for_editor": 37
         },
         "34d469e04c023817ba-1": {
@@ -8479,7 +8479,7 @@
           "reader_gain": "把病毒複製與肝細胞受傷的共同訊號同治療效果證據分開，避免從相關檢驗值直接推得抗病毒獲益。",
           "nonredundancy_reason": "若省略，後面的指南比較會被誤讀成 ALT/DNA 本身已測量治療效果，而非整合風險與結局研究。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 41",
+          "excerpt_for_editor": "HBV DNA 反覆偏高且 ALT 持續升高，可以增加 HBV-related hepatitis 的病因可信度，前提是同時評估其他肝損傷原因。但這兩項檢驗只提供病毒複製與肝細胞受傷的線索，不能由數值本身推得抗病毒藥有多大的治療效益；療效與治療適應症還需另看指引所整合的結局研究、fibro",
           "line_for_editor": 41
         },
         "f2d9a30af765f33eff-1": {
@@ -8487,7 +8487,7 @@
           "reader_gain": "固定非真實成年男性 ALT 45、DNA 3000、HBeAg 陰性與無肝硬化，先校準兩份指南的 ALT ULN 才比較行動。",
           "nonredundancy_reason": "具體數值和性別是隔離測量定義混雜的必要條件，不能只說兩份指南門檻不同。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 43",
+          "excerpt_for_editor": "先固定一組非真實病例的測量條件：成年男性、HBeAg 陰性、無 cirrhosis，HBV DNA 3,000 IU/mL、ALT 45 U/L。不能只寫「ALT 超過 ULN」就假設兩份指引量到同一件事：AASLD/IDSA 採男性正常 ALT 上限 35 U/L（女性 25 U/L）；",
           "line_for_editor": 43
         },
         "bb89e2af96a2a49ba2-1": {
@@ -8495,7 +8495,7 @@
           "reader_gain": "在 HBV 歸因已確認的前提下展示 EASL 對 DNA ≥2000 且 ALT 升高的建議治療，對比 AASLD 灰區共享決策。",
           "nonredundancy_reason": "這是相對前篇新增的核心政策反事實，若刪除便只剩 phase 介紹而無法回答相同觀察為何可能不同處置。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 45",
+          "excerpt_for_editor": "EASL 2025 的行動閾值不同：在已確認屬 HBV 相關慢性肝炎，而非其他原因造成 ALT 上升的前提下，HBV DNA ≥2,000 IU/mL 且 ALT >ULN，就已符合其建議治療的分支，並不必等待 ALT 達兩倍上限。同一組觀察值，不能因某份指引稱之為 grey zone，就",
           "line_for_editor": 45
         },
         "6ae554d8e55d73b9f0-1": {
@@ -8503,7 +8503,7 @@
           "reader_gain": "改成持續低 DNA 而 ALT 持續升高，指出需查其他肝損傷原因且 EASL LoE5 弱建議仍可考慮治療。",
           "nonredundancy_reason": "這一反例排除把前一組高 DNA 的 HBV 歸因套用到所有 ALT 異常，也避免低 DNA 被誤作永不治療。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 47",
+          "excerpt_for_editor": "再把條件改成 ALT 升高，但 HBV DNA <2,000 IU/mL。這時不能沿用前一組的歸因：必須重新考慮代謝相關脂肪性肝病、酒精、藥物與其他肝損傷原因，而不是看到 ALT 異常就將受傷都算在 HBV 身上。若 DNA 持續 <2,000 IU/mL、ALT 持續 >ULN，EASL",
           "line_for_editor": 47
         },
         "eb4104addbad66ce45-1": {
@@ -8511,7 +8511,7 @@
           "reader_gain": "把兩組指南比較提升為可遷移模型：量測訊號、病程分類及治療規則分屬不同推論層級。",
           "nonredundancy_reason": "這段總結前述反事實的共同原理，並非再背前篇 phase 表；刪除會讓例子停留在兩組孤立數字。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 49",
+          "excerpt_for_editor": "這也說明為什麼治療門檻不是疾病開始的時間點。ALT 從正常跨過 ULN，只代表可量到的 injury 訊號改變；HBV DNA 達到某個分界，也不證明肝炎就在當天開始。Marker 是觀察，phase 是對連續觀察的工作推論，treatment threshold 是將證據與風險轉成臨床行",
           "line_for_editor": 49
         },
         "58cc69fe6d523502cd-1": {
@@ -8519,7 +8519,7 @@
           "reader_gain": "把肝硬化合併可測 HBV DNA 作為不能等待 ALT 或 phase 追蹤的安全例外，並提醒急性失代償另需處理。",
           "nonredundancy_reason": "若刪掉，前文灰區需連續追蹤的敘事可能被錯套到高風險肝硬化，造成臨床延誤。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 51",
+          "excerpt_for_editor": "還有一個不能被灰區討論延誤的例外：若病人已存在 cirrhosis 且 HBV DNA 可測得，EASL 2025 建議抗病毒治療，無須等待 ALT 升高或等齊 6–12 個月的 phase 分類資料。急性意識改變、凝血異常或肝功能失代償也必須按當下急症處理。回到最初的問題，我們不只是問「",
           "line_for_editor": 51
         },
         "d5047eb7b6b6123713-1": {
@@ -8527,7 +8527,7 @@
           "reader_gain": "提供前篇 phase/stage、肝檢驗三軸和來源頁的明確延伸路徑，讓讀者能回查不同問題的證據。",
           "nonredundancy_reason": "這組導覽不是文章內容的重述；它將兩篇不同臨床問題及原始來源分開供讀者選擇。",
           "verdict": "keep",
-          "excerpt_for_editor": "Reviewed in full source at line 55",
+          "excerpt_for_editor": "前篇：HBV phase 不是 fibrosis stage · 回看肝臟檢驗的三條軸 · 來源與原表定位。",
           "line_for_editor": 55
         }
       }
