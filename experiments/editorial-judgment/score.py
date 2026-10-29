@@ -11,6 +11,10 @@ def ratio(a, b):
 
 
 def score(cases, evaluations):
+    # Never silently overwrite duplicated labels or shrink the denominator.
+    case_ids = [c["id"] for c in cases["cases"]]
+    if len(case_ids) != len(set(case_ids)):
+        raise ValueError("Duplicate case ID in manifest")
     allowed = {c["id"]: c for c in cases["cases"] if c["status"] == "replayable"}
     seen = set()
     by_arm = defaultdict(list)
@@ -22,10 +26,18 @@ def score(cases, evaluations):
         if r["id"] not in allowed:
             raise ValueError("Only frozen replayable cases may enter scores: " + r["id"])
         for f in ("tp_major", "fn_major", "tp_material", "fn_material", "false_positives",
-                  "source_claims", "supported_source_claims", "human_minutes", "human_turns"):
+                  "source_claims", "supported_source_claims", "human_turns"):
             v = r[f]
-            if type(v) not in (int, float) or v < 0:
-                raise ValueError("Expected non-negative number: " + f)
+            if type(v) is not int or v < 0:
+                raise ValueError("Expected non-negative integer: " + f)
+        v = r["human_minutes"]
+        if type(v) not in (int, float) or v < 0:
+            raise ValueError("Expected non-negative number: human_minutes")
+        # Adjudicated clean controls cannot have true-positive major/material findings.
+        # A model's invented criticisms belong in false_positives, not true positives.
+        if allowed[r["id"]]["type"] == "negative-control" and any(
+                r[f] for f in ("tp_major", "fn_major", "tp_material", "fn_material")):
+            raise ValueError("Contradictory negative-control defect counts")
         for f in ("correct_decision_and_scope", "over_revision", "new_p0_p1",
                   "contaminated"):
             if type(r[f]) is not bool:
@@ -58,8 +70,14 @@ def score(cases, evaluations):
         # Aggregates must not conceal major omissions or newly introduced harm.
         # This is a conservative test gate, not a clinical safety certificate.
         on_hold = bool(m_fn or new_major)
+        # Missing, contaminated or excluded cases never vanish from the fixed denominator.
+        incomplete = total < len(allowed)
         report[arm] = {
-            "status": "PILOT_HOLD" if on_hold else "PILOT_ONLY",
+            "status": ("PILOT_HOLD" if on_hold else
+                       "PILOT_INCOMPLETE" if incomplete else "PILOT_ONLY"),
+            "contaminated_excluded": len(rows) - total,
+            "missing_or_excluded_cases": len(allowed) - total,
+            "adjudication_independence": "NOT_VERIFIED_EXTERNALLY",
             "safety_gate": "HOLD" if on_hold else "NOT_VALIDATED",
             "hold_reasons": {"missed_major": m_fn, "introduced_p0_p1": new_major},
             "generalization": "NOT_TESTED_RETROSPECTIVE_SEEDS",
@@ -74,8 +92,13 @@ def score(cases, evaluations):
             "all_case_overrevision": ratio(sum(r["over_revision"] for r in independent), total),
             "evidence_claim_support": ratio(supported, claims),
             "new_p0_p1_cases": new_major,
-            "human_correction_minutes": summation("human_minutes"),
-            "human_intervention_turns": summation("human_turns"),
+            # Incoming row numbers have no separately verified time provenance.
+            # Return them for audit, never present them as independently observed savings.
+            "human_correction_minutes": None,
+            "human_intervention_turns": None,
+            "human_time_evidence": "NOT_VERIFIED",
+            "unverified_reported_minutes": summation("human_minutes"),
+            "unverified_reported_turns": summation("human_turns"),
             "stage_means": {k: ratio(sum(r["stages"][k] for r in independent), total)
                             for k in ("N", "X", "C", "V")},
             "denominators": {
@@ -83,7 +106,8 @@ def score(cases, evaluations):
                 "substantive_findings": all_tp + fp, "source_claims": claims,
                 "negative_controls": len(control)
             },
-            "note": "Human adjudication supplied TP/FP; this script does not check clinical truth."
+            "note": ("Input rows supply TP/FP; neither clinical truth, reviewer "
+                     "independence nor actual owner time is authenticated." )
         }
     return report
 
