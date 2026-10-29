@@ -282,9 +282,9 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
         from unittest.mock import patch
         def fake_git(cmd, **_):
             if "rev-parse" in cmd:
-                return SimpleNamespace(returncode=0, stdout="c" * 40 + "\\n")
+                return SimpleNamespace(returncode=0, stdout="c" * 40)
             return SimpleNamespace(returncode=0,
-                                   stdout=" M tools/selective_retrieval_probe.py\\n")
+                                   stdout=" M tools/selective_retrieval_probe.py")
         with patch("selective_retrieval_probe.subprocess.run", side_effect=fake_git):
             with self.assertRaisesRegex(PilotError, "LIVE_CHECKOUT_DIRTY"):
                 verify_live_checkout(ROOT, "c" * 40)
@@ -294,7 +294,7 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
         from unittest.mock import patch
         def fake_git(cmd, **_):
             if "rev-parse" in cmd:
-                return SimpleNamespace(returncode=0, stdout="e" * 40 + "\\n")
+                return SimpleNamespace(returncode=0, stdout="e" * 40)
             return SimpleNamespace(returncode=0, stdout="")
         with patch("selective_retrieval_probe.subprocess.run", side_effect=fake_git):
             self.assertTrue(verify_live_checkout(ROOT, "e" * 40))
