@@ -1,4 +1,6 @@
-# Cloudflare Pages 一次性設定｜私人 GitHub → 免費公開網站
+# Cloudflare Pages 一次性設定｜歷史私人 GitHub 設計與現行公開邊界
+
+> **現況安全勘誤（2026-10-30，GitHub 實查）：`sheng-web-OS/Clinical_system` 目前為 PUBLIC，不是私人來源庫。** 下方「私人 GitHub」為 2026-10-21 的歷史部署設計／紀錄，不代表目前的權限。`site/pages.json`、`dist/` 白名單及 Cloudflare Preview branches=None 只控制網站輸出，無法隱藏公開 GitHub 的 `archive/`、原始碼、分支、PR、Issues、Actions artifacts 或歷史 commits。請勿將病人資料、個人時程、受限來源或未清權的原圖存放於此；既有內容的權利／隱私清查尚未因此完成。
 
 依 Cloudflare [Git integration 官方說明](https://developers.cloudflare.com/pages/get-started/git-integration/)，Cloudflare Pages 可連接私人 GitHub 儲存庫。原始碼不需轉公開；**發布的 HTML 網站會公開**。
 
