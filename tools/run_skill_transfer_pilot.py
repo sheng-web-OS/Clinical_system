@@ -209,9 +209,28 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     require(not target.exists(), "OUTPUT_EXISTS_REFUSE_TO_REWRITE")
     meta, calls = build_plan(cases, case_sha, pack, pack_sha,
                              skill, skill_sha, model, commit)
+    frozen_suite = {
+        "schema_version": 1,
+        "id": "synthetic-decision-triage-" + case_sha[:16],
+        "exposure": "development",
+        "retrieval_pack_sha256": pack_sha,
+        "candidate_skill_sha256": skill_sha,
+        "cases": [
+            {"id": c["id"], "role": c["role"],
+             "source_sha256": digest(c["task"].encode("utf-8"))}
+            for c in cases
+        ],
+    }
+    frozen_suite_bytes = (
+        json.dumps(frozen_suite, sort_keys=True, ensure_ascii=False, indent=2)
+        + "\n"
+    ).encode("utf-8")
+    meta["suite_id"] = frozen_suite["id"]
+    meta["suite_sha256"] = digest(frozen_suite_bytes)
     if execute:
         meta["results_status"] = "EXECUTION_STARTED_UNSCORED"
     target.mkdir(mode=0o700, parents=False)
+    write_private(target / "frozen_suite.json", frozen_suite)
     write_private(target / "manifest.json", meta)
     # Private full requests are retained locally; never in public Actions artifacts.
     write_private(target / "requests.json", calls)
