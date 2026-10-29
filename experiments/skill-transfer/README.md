@@ -31,7 +31,7 @@ Do not reveal expected defect, preferred question, the original complaint, old R
 
 ## Actual first-pass runner (new in PR #225)
 
-`tools/run_skill_transfer_pilot.py` is a **synthetic-only development executor**, not a reviewer, clinical AI, skill registry or self-editing agent. It has no credentials in code and **makes zero API calls by default**. The small public development fixture `fixtures/synthetic-questions.json` contains three entirely fictional, pre-exposed prompts: transfer, normal, boundary. Use a real existing authored **public** long-form article as B/C retrieval content (example: `content/xiaoma-reading/originals/2026-07-14-hcm.md`); the renal synthetic case tests whether it avoids copying HCM conclusions into an unrelated domain. This is NOT a hidden benchmark.
+`tools/run_skill_transfer_pilot.py` is a **synthetic-only development executor**, not a reviewer, clinical AI, skill registry or self-editing agent. It has no credentials in code and **makes zero API calls by default**. The small public development fixture `fixtures/synthetic-questions.json` contains three entirely fictional, pre-exposed prompts: transfer, normal, boundary. Use a real existing authored **public** long-form article as B/C retrieval content (example: `content/xiaoma-reading/originals/2026-07-14-hcm.md`); the HCM transfer case tests whether adding the Skill improves upon an already relevant HCM article, instead of handicapping retrieval with an unrelated source. This is NOT a hidden benchmark.
 
 Offline plan in an existing authorized checkout of **this exact PR head**:
 
