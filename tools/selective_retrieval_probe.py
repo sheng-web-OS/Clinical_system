@@ -9,6 +9,7 @@ import hashlib
 import json
 import os
 import random
+import subprocess
 from pathlib import Path
 
 from run_skill_transfer_pilot import api_call, PilotError, write_private, append_event
@@ -203,6 +204,34 @@ def build_plan(data, skill, model, commit):
     return plan
 
 
+def verify_live_checkout(repo, expected_commit):
+    """Fail closed if a paid experiment is not bound to its actual Git tree.
+
+    Only this checked-in public fixture, skill and runner may be sent to the
+    provider. A well-formed 40-hex string alone is NOT provenance.
+    """
+    paths = (
+        "experiments/skill-transfer/fixtures/selective-retrieval-synthetic.json",
+        ".agents/skills/decision-question-triage/SKILL.md",
+        "tools/selective_retrieval_probe.py",
+    )
+    try:
+        head = subprocess.run(
+            ["git", "-C", str(repo), "rev-parse", "--verify", "HEAD"],
+            capture_output=True, text=True, timeout=5, check=False)
+        status = subprocess.run(
+            ["git", "-C", str(repo), "status", "--porcelain",
+             "--untracked-files=no", "--", *paths],
+            capture_output=True, text=True, timeout=5, check=False)
+    except (OSError, subprocess.TimeoutExpired):
+        raise PilotError("LIVE_CHECKOUT_UNVERIFIED") from None
+    if head.returncode != 0 or head.stdout.strip() != expected_commit:
+        raise PilotError("LIVE_CHECKOUT_HEAD_MISMATCH")
+    if status.returncode != 0 or status.stdout.strip():
+        raise PilotError("LIVE_CHECKOUT_DIRTY_OR_UNVERIFIED")
+    return True
+
+
 def build_blind_packet(cases, results, suite_sha):
     """Create a private arm-blind reviewer packet; no judgments or answer keys.
 
@@ -254,6 +283,7 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
         approved_skill = (repo / ".agents/skills/decision-question-triage/SKILL.md").read_text(encoding="utf-8")
         if data != approved_data or skill != approved_skill:
             raise PilotError("LIVE_CONTENT_NOT_ALLOWLISTED")
+        verify_live_checkout(repo, commit)
         transport = lambda request: api_call(request, key)
     else:
         transport = caller
@@ -349,6 +379,7 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
         "completed_pairs": len(results) - failed, "failed_pairs": failed,
         "model_calls_attempted": attempts[0],
         "transport_kind": meta["transport_kind"],
+        "candidate_commit_git_verified": bool(live),
         "provider_receipt_authenticated": False,
         "tokens_observed_for_completed_calls": totals,
         "per_arm_token_usage": per_arm,
