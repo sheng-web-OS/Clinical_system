@@ -102,6 +102,55 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
         self.assertIsNone(doc)
         self.assertEqual(reason, "NON_RETRIEVABLE_GAP")
 
+    def test_missing_reasoning_bridge_never_triggers_external_source(self):
+        # Failure type is internal reasoning, not an evidence availability gap.
+        doc, reason = retrieve_after_triage(
+            "skill", response(gap="missing_reasoning_bridge"), DOCS)
+        self.assertIsNone(doc)
+        self.assertEqual(reason, "NON_RETRIEVABLE_GAP")
+        caller, calls = fake(response(gap="missing_reasoning_bridge"))
+        record = run_case(CASES[0], "skill", DOCS, SKILL, "gpt-5-mini", caller)
+        self.assertIsNone(record["retrieved_source_id"])
+        self.assertEqual(len(calls), 2)
+        self.assertNotIn(DOCS[0]["text"], json.dumps(calls, ensure_ascii=False))
+
+    def test_untargeted_research_is_denied_without_calling_source(self):
+        for field, value in (("evidence_question", "  "),
+                             ("decision_pivot", "unknown")):
+            item = response()
+            item[field] = value
+            with self.subTest(field=field):
+                # A structurally valid but vacuous first-stage choice remains
+                # visible for the reviewer, yet never gets rewarded with a read.
+                parsed = validate_triage(item)
+                doc, reason = retrieve_after_triage("skill", parsed, DOCS)
+                self.assertIsNone(doc)
+                self.assertEqual(reason, "UNTARGETED_RESEARCH_REQUEST")
+
+    def test_duplicate_source_request_is_blocked_within_task(self):
+        seen = set()
+        first, reason = retrieve_after_triage(
+            "skill", response(), DOCS, retrieved_hashes=seen)
+        self.assertEqual(reason, "SOURCE_RETURNED")
+        self.assertEqual(seen, {digest(DOCS[0]["text"])})
+        second, reason = retrieve_after_triage(
+            "skill", response(), DOCS, retrieved_hashes=seen)
+        self.assertIsNone(second)
+        self.assertEqual(reason, "DUPLICATE_SOURCE_REQUEST")
+        self.assertEqual(first["id"], DOCS[0]["id"])
+
+    def test_source_body_already_in_task_is_not_fetched_again(self):
+        already_provided = "Known full source: " + DOCS[0]["text"]
+        doc, reason = retrieve_after_triage(
+            "skill", response(), DOCS, prior_text=already_provided)
+        self.assertIsNone(doc)
+        self.assertEqual(reason, "SOURCE_ALREADY_PRESENT")
+        # A keyword overlap is insufficient to claim source-body access.
+        selected, reason = retrieve_after_triage(
+            "skill", response(), DOCS, prior_text=DOCS[0]["title"])
+        self.assertEqual(reason, "SOURCE_RETURNED")
+        self.assertEqual(selected["id"], DOCS[0]["id"])
+
     def test_none_gap_also_blocks_retrieve(self):
         doc, reason = retrieve_after_triage("skill", response(gap="none"), DOCS)
         self.assertIsNone(doc)
