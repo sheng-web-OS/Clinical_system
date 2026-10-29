@@ -41,6 +41,24 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
     suite, suite_sha = load_obj(run_dir / "frozen_suite.json")
     requests, _ = load_obj(run_dir / "requests.json")
     outputs, _ = load_obj(run_dir / "first_pass_results.json")
+    # For the paid runner, the append+fsync checkpoint is the primary
+    # crash-forensics trace. It must agree byte-for-byte in JSON semantics
+    # with the eventual all-calls snapshot before independent scoring.
+    checkpoint = None
+    if manifest.get("first_pass_journal_v1") is True:
+        journal_path = run_dir / "first_pass_journal.jsonl"
+        require(journal_path.is_file() and not journal_path.is_symlink()
+                and 0 < journal_path.stat().st_size <= 2500000,
+                "FIRST_PASS_JOURNAL_MISSING_OR_OVERSIZED")
+        require(journal_path.stat().st_mode & 0o077 == 0,
+                "FIRST_PASS_JOURNAL_PERMISSION_INVALID")
+        try:
+            journal_lines = journal_path.read_text(encoding="utf-8").splitlines()
+            checkpoint = [json.loads(line) for line in journal_lines]
+        except (UnicodeError, ValueError, TypeError):
+            raise PilotError("FIRST_PASS_JOURNAL_MALFORMED") from None
+        require(len(checkpoint) == 9, "INCOMPLETE_FIRST_PASS_JOURNAL")
+        require(checkpoint == outputs, "FIRST_PASS_JOURNAL_SNAPSHOT_MISMATCH")
     packet, packet_sha = load_obj(run_dir / "blind_reviewer_packet.json")
     mapping, _ = load_obj(run_dir / "private_arm_mapping.json")
     review, _ = load_obj(review_path)
@@ -321,6 +339,8 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
     report["review_packet_sha256"] = packet_sha
     report["reviewer_context_declared_not_authenticated"] = reviewer
     report["first_pass_trace_integrity_checked"] = True
+    report["first_pass_journal_verified"] = checkpoint is not None
+    report["first_pass_journal_not_provider_authentication"] = True
     report["skill_invocation_verified"] = False
     report["owner_attention_measured"] = False
     return assembled, report
