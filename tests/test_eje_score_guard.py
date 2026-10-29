@@ -37,7 +37,12 @@ class TestSafetyGate(unittest.TestCase):
         self.assertEqual(result["generalization"], "NOT_TESTED_RETROSPECTIVE_SEEDS")
 
     def test_major_miss_forces_hold(self):
-        result = evaluate(fn_major=1, fn_material=1)
+        # A genuine missed defect requires an error-bearing control, not a clean one.
+        row = copy.deepcopy(BASE)
+        row.update(fn_major=1, fn_material=1)
+        error_cases = {"cases": [{"id": "J01", "status": "replayable",
+                                   "type": "reader-value"}]}
+        result = score(error_cases, {"judgments": [row]})["Native"]
         self.assertEqual(result["status"], "PILOT_HOLD")
         self.assertEqual(result["safety_gate"], "HOLD")
         self.assertEqual(result["hold_reasons"]["missed_major"], 1)
