@@ -55,6 +55,30 @@ python -m unittest discover -s tests -p 'test_prepare_medeinst_holdout.py' -v
 
 2026-10-29 V1 local result: **12/12 PASS**; source-identity hardening V2 local result: **17/17 PASS**, adding official-blob pinning, identical-narrative rejection, malformed ID rejection, and synthetic-mode labeling. Tests use fictional Diagnosis X/Y/P/Q placeholders; no MedEinst clinical vignette was downloaded or evaluated. Exact-head CI on the updated commit and independent review remain separately required.
 
+## All-pairs research quality audit (development only)
+
+Before interpreting MedEinst as a counterfactual reasoning test, run the standalone
+`tools/audit_medeinst_pairs.py` over the **entire pinned official test.jsonl**. The PR workflow downloads the actual upstream file, verifies the SHA-256 and runs the audit before creating its four ephemeral anonymous smoke-test packets.
+
+The audit reports only aggregated quantities: number of complete control/trap pairs, same-label pairs, identical-narrative pairs and quartile-like lexical similarity quantiles (p10/median/p90, plus below 0.50 and below 0.80). It never emits clinical narratives, IDs, diagnoses or per-pair information. Unit tests use only synthetic examples and reject malformed input, missing/duplicate variants, duplicate labels, identical narratives, and wrong source digests.
+
+**Interpretation is strictly descriptive.** Text overlap is not a measure of true medical similarity or whether one critical clinical variable changed; a valid pivot can be a one-word difference with high lexical overlap, and long similar boilerplate can hide multiple altered clinical facts. Therefore:
+
+- This audit may detect structural dataset defects and flag the size of the remaining clinical content-review task.
+- It **cannot certify** intervention isolation, pathophysiologic plausibility, or guideline-relevant decision pivots.
+- The full official dataset is public. Even a successful external-model score cannot establish contamination-free unseen transfer.
+- A genuine medical blind trial must involve separately protected, expert-validated counterfactual and stable pairs, with frozen A/B/C exposures and blinded reviewers. Use existing #225/#224 rather than adding a second experimental runtime.
+- Printed aggregate statistics and CI logs are engineering/research observations, **not model quality or clinical safety scores**.
+- The audit is a read-only process (no model calls) and can be retired if it does not inform sampling/clinical reviewer priorities.
+
+To run the aggregate audit in a trusted environment:
+
+~~~sh
+python tools/audit_medeinst_pairs.py \
+  --dataset /secure/datasets/medeinst/test.jsonl \
+  --expected-sha256 b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57
+~~~
+
 ## Actual clinical experiment — NOT RUN
 
 1. Freeze dataset SHA and chosen IDs before outcomes; review case validity, contamination and data rights. For actual transfer, create separately protected *expert-reviewed unseen cases*.
