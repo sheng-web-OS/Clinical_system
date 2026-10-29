@@ -85,6 +85,36 @@ python tools/audit_medeinst_pairs.py \
   --expected-sha256 b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57
 ~~~
 
+## Exact PR #225 Stage1 handoff — IMPLEMENTED, NOT AN EXECUTED MODEL ARM
+
+The upstream decision-question-triage experiment in [Draft PR #225](https://github.com/sheng-web-OS/Clinical_system/pull/225) already owns the candidate Skill and its `tools/prepare_staged_bc_packets.py` B/C preparation. It expects a private `stage1.zip` with `M01.md`-style case entries, plus a pinned version-2 `manifest.json` of exact file sizes and SHA-256 hashes. Do not build a competing second evaluator.
+
+This PR's new `tools/export_medeinst_stage1.py` receives ONLY `worker-packets/s_.../packet.json` and a **gold-free** integrity receipt saved separately by `prepare_medeinst_holdout.py`. It checks the exact SHA of that trusted private receipt, verifies all packet digests, refuses missing/extra/changed worker slots, and emits:
+
+- `stage1.zip`: anonymous `M01.md`... research tasks (NOT individual worker executions; never mount entire ZIP into one worker context).
+- `manifest.json`: byte hashes, `version=2`, `status=PREPARED_NOT_RUN`, `actual_model_calls=0`. Compatible with the existing PR #225 **Stage1 input format**, but direct execution of PR #225's separate builder has not been attested in this PR.
+- `private_crosswalk.json`: maps anonymous M-IDs to the original opaque worker slots, without diagnosis labels. Keep this away from model workers and medical reviewers.
+- No diagnoses, raw gold key, old model outputs or case pair identities are copied to any worker-facing ZIP. The original official-data answer key remains outside this ZIP and outside public GitHub.
+
+Example **trusted, non-public** read-only staging, after the SHA-pinned `prepare_medeinst_holdout.py` command completed:
+
+~~~sh
+PACKET_MANIFEST=/secure/new-facilitator-only/packet_hashes.json
+PACKET_SHA=$(sha256sum "$PACKET_MANIFEST" | cut -d' ' -f1)
+python tools/export_medeinst_stage1.py \
+  --worker-root /secure/new-workers-only \
+  --packet-manifest "$PACKET_MANIFEST" \
+  --expected-packet-manifest-sha256 "$PACKET_SHA" \
+  --expected-source-class MedEinst_DDXPlus_simulated_research_case \
+  --output-dir /secure/new-pr225-stage1
+~~~
+
+The GitHub read-only smoke executes this path on four real public MedEinst vignettes inside an ephemeral sandbox; all resulting files are deleted and no model or cost-bearing inference runs.
+
+**Scientific estimand boundary:** PR #225's current Skill, `decision-question-triage`, teaches *which question to investigate, when to retrieve, and when not to invent uncertainty*. It does NOT promise higher MedEinst diagnostic accuracy by itself. A first Stage1 comparison may legitimately measure appropriate choice of discriminating evidence, calibrated uncertainty, missed critical questions and false retrievals. **MedEinst diagnosis flip sensitivity, specificity, clinical treatment choice and genuine experience transfer require separate preregistered later-stage decisions, appropriate relevant sources, and independent expert adjudication**. Do not count a RETRIEVE/SKIP/HOLD answer as a correct diagnosis; a ZIP format pass is not a Stage1 worker run, and Stage1 behavior is not end-to-end clinical reasoning improvement.
+
+At the moment, this is an **engineering-compatible candidate handoff**. The referenced PR #225 remains Draft/HOLD and its model execution requires its own isolated, authorized environment; no public GitHub PR workflow should receive API secrets or protected patient cases. The published MedEinst split is only a *development* corpus, never a fresh secret holdout.
+
 ## Actual clinical experiment — NOT RUN
 
 1. Freeze dataset SHA and chosen IDs before outcomes; review case validity, contamination and data rights. For actual transfer, create separately protected *expert-reviewed unseen cases*.
