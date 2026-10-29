@@ -163,7 +163,7 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
             receipt = json.loads((run_dir / "run_receipt.json").read_text())
             self.assertEqual(plan["suite_sha256"], run_plan["suite_sha256"])
             self.assertEqual(plan["suite_sha256"], receipt["suite_sha256"])
-            self.assertNotEqual(plan["results_status"], "EXECUTION_COMPLETE")
+            self.assertEqual(plan["status"], "NOT_RUN")
             self.assertEqual(receipt["status"], "DEVELOPMENT_TEST_DOUBLE_ONLY")
 
     def test_mock_9_case_arm_records_are_not_mislabeled_real(self):
