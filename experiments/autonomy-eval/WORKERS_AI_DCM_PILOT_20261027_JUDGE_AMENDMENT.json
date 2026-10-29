@@ -1,0 +1,17 @@
+{
+  "study": "workers-ai-dcm-20261027-blind-judge-v1-amendment",
+  "reason": "The preregistered Gemma 4 first-arm model completed 2450 output tokens but supplied no visible content. Full 16-case pair assessment impossible; original judge attempt retained unmodified in JUDGE_RAW.json.",
+  "amended_before_alternative_calls": true,
+  "status": "POST_HOC_EXPLORATORY_ADAPTER_SUBSTITUTION",
+  "new_requested_judge_model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+  "calls": 2,
+  "orders": [
+    "forward",
+    "reverse"
+  ],
+  "max_tokens": 2400,
+  "temperature": 0,
+  "source_and_candidate_set": "same anonymous C01..C16 frozen in original JUDGE_RAW.json",
+  "outcomes": "AI judge diagnostic only, not blinded human medical acceptance; original judge missing is a failure and no claims of preregistered success.",
+  "stop": "No more provider attempts if alternative fails structure or content."
+}

@@ -32,6 +32,7 @@
 ## Agent 的最短交付流程
 
 1. 撰稿／修訂完成後執行 `python site/semantic_gate.py --packet content/.../article.md`，產出帶有段落 ID、來源位置、摘錄與當前 Git blob 的**未核准草稿封包**；它不會自動填通過。
+   **AI 修改建議的前置自我反證（與獨立票據分開）**：若已有 AI 審稿意見且擬改正文，先保留原文版本與建議，執行 `python tools/autonomy_quality_lab.py context --article <source.md> --response <review.txt>`，回查其全文原句、相鄰段落及限定語；可能反向解讀者先請 Agent 以原文反證再決定是否修改。無 AI 建議時不新增形式工作。輸出只屬私人自查，不是獨立 reviewer、醫學 PASS 或 receipt，也不得拿其「未標記」放行。僅在原本需要的獨立審稿後才有語義出版資格。
 2. **與撰稿分開的獨立審稿脈絡**閱讀完整文章和必要原始來源，逐段辨認關係／冗餘，填寫每段 `role`、`reader_gain`、`nonredundancy_reason`、`verdict`；如有缺口，先退回修改正文，再生成新版封包。只允許全部 `keep` 及已解除硬性阻塞的版本發布。
 3. **本 GitHub Repository 目前為 PUBLIC**：只有當待發布教材、審稿依據及逐段理由均已確認適合公開，才可將無敏感內容的 `reviews[path]` 核准票據、A–G、精確 Git blob、`reviewer_context`（`independent_ai_pass` 或 `human_editor`）與可追溯的非機密 `reviewer_reference` 寫入公開的 `audit/editorial-semantic-reviews.json`。**含私人病歷、未核准來源影像、受限研究素材或非公開審稿細節的完整版封包須保存在獨立存取受控的位置；不可藉公開 PR、Git history、Issues 或 Actions artifacts 上傳。**產生內容的 agent 不得把自己的同一輪自評偽裝成獨立審查。
 4. `python tools/validate.py` 加上正常 `bash tools/build_site.sh`，逐一確認版本一致、涵蓋全部段落、無空泛／重複的審查理由與七軸／hard-stop 通過。CI 任一失敗不得合併發布。修改任一正文後，先前 receipt 自動失效。

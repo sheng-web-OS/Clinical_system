@@ -1,0 +1,82 @@
+{
+  "run_id": "ab-rules-20261027",
+  "candidate_sha": "141958a3eca91995d6fa9fd7048a85e2035c37f4",
+  "suite_id": "ab-development-20261027-24cases",
+  "suite_sha256": "31d6b74cb27b9f5dcb8414dd0b36c77c684c7ae2075766e32c59fef39ab8361f",
+  "arm": "rules",
+  "model": "same inherited model configuration; exact version not returned",
+  "evidence_level": "DEVELOPMENT_ONLY",
+  "autonomy_validated": false,
+  "learning_effect_validated": false,
+  "release_approval": false,
+  "review_independence": "DECLARED_NOT_AUTHENTICATED",
+  "planned_trials": 72,
+  "trials_per_case": 3,
+  "autonomous_discovery": {
+    "numerator": 36,
+    "denominator": 36,
+    "rate": 1.0
+  },
+  "false_positive": {
+    "numerator": 0,
+    "denominator": 36,
+    "rate": 0.0
+  },
+  "repair_including_discovery_failures": {
+    "numerator": 36,
+    "denominator": 36,
+    "rate": 1.0
+  },
+  "repair_given_correct_discovery": {
+    "numerator": 36,
+    "denominator": 36,
+    "rate": 1.0
+  },
+  "first_pass": {
+    "numerator": 72,
+    "denominator": 72,
+    "rate": 1.0
+  },
+  "end_to_end_success": {
+    "numerator": 72,
+    "denominator": 72,
+    "rate": 1.0
+  },
+  "cases_with_any_success": {
+    "numerator": 24,
+    "denominator": 24,
+    "rate": 1.0
+  },
+  "cases_with_all_trials_successful": {
+    "numerator": 24,
+    "denominator": 24,
+    "rate": 1.0
+  },
+  "hard_failures": 0,
+  "quality_guard": "NO_HARD_FAILURE_OBSERVED",
+  "owner_attention": {
+    "minutes_status": "NOT_MEASURED",
+    "minutes_coverage": {
+      "numerator": 0,
+      "denominator": 72,
+      "rate": 0.0
+    },
+    "observed_minutes_total": null,
+    "minutes_per_successful_trial": null,
+    "interruptions_status": "NOT_MEASURED",
+    "interruptions_coverage": {
+      "numerator": 0,
+      "denominator": 72,
+      "rate": 0.0
+    },
+    "observed_interruptions_total": null
+  },
+  "limitations": [
+    "Verdicts and trace references are supplied by the evaluator, not authenticated by this tool.",
+    "Visible cases and repeated trials are regression evidence, not hidden-case generalization or rare-risk bounds.",
+    "No comparison, improvement percentage, clinical truth or human learning effect is inferred."
+  ],
+  "correction_measurement": "independent AI assessment of proposed correction; no actual article edit performed",
+  "human_learning": "NOT_MEASURED",
+  "task_cueing": "Several seed case descriptions explicitly name the failure; autonomous-discovery fields are development task classification only."
+}

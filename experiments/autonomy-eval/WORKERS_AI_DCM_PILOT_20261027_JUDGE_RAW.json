@@ -1,0 +1,128 @@
+{
+  "study": "workers-ai-dcm-20261027-blind-judge-v1",
+  "source_blob": "f16eced854467e5c8e43a063ef5d34b93f0d1d15",
+  "candidates": [
+    {
+      "anonymous_id": "C01",
+      "origin_run": "lite-1",
+      "origin_index": 1,
+      "body": "1. 原文：「DCM 的定義其實包含兩個不同層次。第一個是觀察到的現象：左心室擴張，而且 systolic function 不正常。第二個則是病因判斷：有沒有其他已知疾病，足以造成目前看到的心肌異常？」\n   問題機制：這段文字可能會誤導讀者，以為DCM的定義只包含兩個層次，然而事實上，DCM的定義可能更加複雜，涉及多個層次和因素。\n   最小改法：增加更多的解釋和例子，以闡明DCM的定義和複雜性。\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C02",
+      "origin_run": "baseline-1",
+      "origin_index": 1,
+      "body": "1. 原文：「DCM 的定義其實包含兩個不同層次。第一個是觀察到的現象：左心室擴張，而且 systolic function 不正常。第二個則是病因判斷：有沒有其他已知疾病，足以造成目前看到的心肌異常？」\n   問題機制：這段文字可能導致讀者誤解 DCM 的定義，認為它只包含兩個層次。\n   最小改法：在定義 DCM 時，應該強調它是一種複雜的疾病，涉及多個層次，包括觀察到的現象、病因判斷和其他相關因素。\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C03",
+      "origin_run": "lite-2",
+      "origin_index": 1,
+      "body": "1. 原文：「DCM 強調心室擴張與收縮功能下降；HCM 強調無法由負荷充分解釋的心肌肥厚；RCM 則強調心室的限制性舒張生理。」 \n   問題機制：這段文字可能會讓讀者誤解為這三種分類是完全獨立的，沒有重疊或交集。\n   最小改法：添加一句話來澄清這些分類之間的關係，例如「這三種分類看似並列，但在臨床上可能會有重疊或交集」。\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C04",
+      "origin_run": "baseline-2",
+      "origin_index": 1,
+      "body": "1. 原文：「DCM 的定義其實包含兩個不同層次。第一個是觀察到的現象：左心室擴張，而且 systolic function 不正常。第二個則是病因判斷：有沒有其他已知疾病，足以造成目前看到的心肌異常？」\n   問題機制：文中提到DCM的定義包含兩個層次，但沒有明確解釋這兩個層次如何相關聯。\n   最小改法：增加一句解釋，例如「這兩個層次是相互關聯的，因為觀察到的現象需要通過病因判斷來解釋，否則可能導致誤診或漏診。」\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C05",
+      "origin_run": "lite-1",
+      "origin_index": 2,
+      "body": "2. 原文：「這不是所有 DCM 都必然遵循的單一病程，卻能解釋許多病人為什麼逐漸形成惡性循環。」\n   問題機制：這段文字可能會讓讀者誤解，以為所有DCM病人都會形成惡性循環，然而事實上，並不是所有DCM病人都會形成惡性循環。\n   最小改法：增加更多的解釋和例子，以闡明DCM的病程和個體差異。\n   信心：70%\n"
+    },
+    {
+      "anonymous_id": "C06",
+      "origin_run": "baseline-1",
+      "origin_index": 2,
+      "body": "2. 原文：「這不是所有 DCM 都必然遵循的單一病程，卻能解釋許多病人為什麼逐漸形成惡性循環。」\n   問題機制：這段文字可能導致讀者誤解 DCM 的病程，認為所有 DCM 患者都會形成惡性循環。\n   最小改法：在描述 DCM 的病程時，應該強調它是一種個體化的疾病，病程可能因人而異。\n   信心：70%\n"
+    },
+    {
+      "anonymous_id": "C07",
+      "origin_run": "lite-2",
+      "origin_index": 2,
+      "body": "2. 原文：「EF 下降，不代表每一次心跳送出去的血液必然立刻大幅減少。」\n   問題機制：這段文字可能會讓讀者誤解為EF下降與心輸出量之間沒有直接關係。\n   最小改法：添加一句話來澄清EF下降與心輸出量之間的關係，例如「雖然EF下降不代表心輸出量立刻大幅減少，但長期的EF下降可能會導致心輸出量的減少」。\n   信心：85%\n"
+    },
+    {
+      "anonymous_id": "C08",
+      "origin_run": "baseline-2",
+      "origin_index": 2,
+      "body": "2. 原文：「這個區別看似細微，卻是後續病因追查的起點。」\n   問題機制：文中提到一個重要的區別，但沒有明確解釋這個區別的具體內容和意義。\n   最小改法：增加一句解釋，例如「這個區別在於，目前已知的缺血或hemodynamic load是否足以解釋心室的異常，如果不能，則需要進一步追查其他病因。」\n   信心：85%\n"
+    },
+    {
+      "anonymous_id": "C09",
+      "origin_run": "lite-1",
+      "origin_index": 3,
+      "body": "3. 原文：「EF 下降，不代表每一次心跳送出去的血液必然立刻大幅減少。」\n   問題機制：這段文字可能會誤導讀者，以為EF下降不會影響心臟功能，然而事實上，EF下降可能會影響心臟功能和病人的健康。\n   最小改法：增加更多的解釋和例子，以闡明EF下降的影響和心臟功能的複雜性。\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C10",
+      "origin_run": "baseline-1",
+      "origin_index": 3,
+      "body": "3. 原文：「EF 下降，不代表每一次心跳送出去的血液必然立刻大幅減少。」\n   問題機制：這段文字可能導致讀者誤解 EF 的意義，認為它與心跳送出的血液量沒有關係。\n   最小改法：在描述 EF 時，應該強調它是心室收縮功能的一個指標，與心跳送出的血液量有關，但不是唯一的決定因素。\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C11",
+      "origin_run": "lite-2",
+      "origin_index": 3,
+      "body": "3. 原文：「圖 1｜ESPVR 與 EDPVR 回答不同問題。」\n   問題機制：這段文字可能會讓讀者誤解為ESPVR和EDPVR是完全獨立的兩個概念。\n   最小改法：添加一句話來澄清ESPVR和EDPVR之間的關係，例如「ESPVR和EDPVR是兩個相關但不同的概念，ESPVR描述心室的收縮機械特性，而EDPVR描述心室的舒張特性」。\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C12",
+      "origin_run": "baseline-2",
+      "origin_index": 3,
+      "body": "3. 原文：「EF 下降，不代表每一次心跳送出去的血液必然立刻大幅減少。」\n   問題機制：文中提到EF下降不代表心跳送出去的血液立刻大幅減少，但沒有明確解釋這個現象的原因和機制。\n   最小改法：增加一句解釋，例如「這是因為心室可以通過增加filling volume來維持stroke volume，即使EF下降。」\n   信心：80%\n"
+    },
+    {
+      "anonymous_id": "C13",
+      "origin_run": "lite-1",
+      "origin_index": 4,
+      "body": "4. 原文：「因此，病因追查真正需要確認的是三件事：因果方向是否成立、異常的嚴重度與範圍是否相稱，以及疾病發展的時間軸是否合理。」\n   問題機制：這段文字可能會讓讀者誤解，以為病因追查只需要確認三件事，然而事實上，病因追查可能需要確認更多的因素和層次。\n   最小改法：增加更多的解釋和例子，以闡明病因追查的複雜性和多個層次。\n   信心：70%"
+    },
+    {
+      "anonymous_id": "C14",
+      "origin_run": "baseline-1",
+      "origin_index": 4,
+      "body": "4. 原文：「這些影像特徵通常只是增加或降低特定病因的可能性，並不是單憑一種 LGE pattern 就能完成病因診斷。」\n   問題機制：這段文字可能導致讀者誤解影像特徵的作用，認為它們可以單獨完成病因診斷。\n   最小改法：在描述影像特徵時，應該強調它們是輔助診斷工具，需要與其他臨床信息結合使用。\n   信心：80%"
+    },
+    {
+      "anonymous_id": "C15",
+      "origin_run": "lite-2",
+      "origin_index": 4,
+      "body": "4. 原文：「治療 DCM 時，至少要同時處理三個層次。」\n   問題機制：這段文字可能會讓讀者誤解為治療DCM只需要處理三個層次。\n   最小改法：添加一句話來澄清治療DCM的複雜性，例如「治療DCM需要綜合考慮多個層次，包括心臟生理、病因和心律風險」。\n   信心：85%"
+    },
+    {
+      "anonymous_id": "C16",
+      "origin_run": "baseline-2",
+      "origin_index": 4,
+      "body": "4. 原文：「圖 1｜ESPVR 與 EDPVR 回答不同問題。」\n   問題機制：文中提到ESPVR和EDPVR回答不同問題，但沒有明確解釋這兩個曲線的具體意義和區別。\n   最小改法：增加一句解釋，例如「ESPVR描述心室的收縮機械特性，而EDPVR則描述在不同容積下的被動舒張壓力。」\n   信心：85%"
+    }
+  ],
+  "grade_model_call_order": [
+    "forward",
+    "reverse"
+  ],
+  "arm_map_censored_during_calls": true,
+  "grades": [
+    {
+      "pass": "forward",
+      "valid": false,
+      "model": "@cf/google/gemma-4-26b-a4b-it-external",
+      "usage": {
+        "prompt_tokens": 7484,
+        "completion_tokens": 2450,
+        "total_tokens": 9934,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "neurons": 134.85455322265625
+      },
+      "response_id": "b99f4b35b666476d9f5d1b0e29d900b4",
+      "answer": null,
+      "error": []
+    }
+  ],
+  "independent_medical_validation": false,
+  "scope": "EXPLORATORY_AI_JUDGE_ONLY"
+}

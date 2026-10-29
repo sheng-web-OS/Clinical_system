@@ -1,0 +1,175 @@
+{
+  "kind": "deterministic_synthetic_data_integrity_comparison",
+  "baseline_commit": "0fff0879b0dd98c5a2bd31406053d21e434eb0f5",
+  "script_sha256": {
+    "baseline": "28be13485af10459623f717387805ff4f3a62c8853f688a90dea87905e4c6227",
+    "revised": "0d5eb013b0f5088ee9efea6189b1bdee46d27ea90a68f28232b952eb0c102a75"
+  },
+  "ai_model_trials_run": 0,
+  "autonomy_improvement_validated": false,
+  "owner_time_savings_measured": false,
+  "probes": [
+    {
+      "id": "reused_worker",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "accept",
+          "correct": false
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "independent trials for one case cannot reuse a worker context"
+        }
+      }
+    },
+    {
+      "id": "reused_trace",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "accept",
+          "correct": false
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "independent trials for one case cannot reuse a trace reference"
+        }
+      }
+    },
+    {
+      "id": "whitespace_self_review",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "accept",
+          "correct": false
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "author and adjudicating reviewer contexts must be declared separately"
+        }
+      }
+    },
+    {
+      "id": "boolean_schema",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "accept",
+          "correct": false
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "unsupported schema version"
+        }
+      }
+    },
+    {
+      "id": "empty_suite_id",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "accept",
+          "correct": false
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "suite_id must be a nonempty identifier"
+        }
+      }
+    },
+    {
+      "id": "whitespace_trial_id",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "accept",
+          "correct": false
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "at least three distinct planned trial ids are required"
+        }
+      }
+    },
+    {
+      "id": "missing_trial",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "incomplete planned trials; include failed/crashed trials, never drop them"
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "incomplete planned trials; include failed/crashed trials, never drop them"
+        }
+      }
+    },
+    {
+      "id": "hinted",
+      "expected": "reject",
+      "results": {
+        "baseline": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "location-hinted trials cannot estimate autonomous discovery"
+        },
+        "revised": {
+          "observed": "reject",
+          "correct": true,
+          "reason": "location-hinted trials cannot estimate autonomous discovery"
+        }
+      }
+    },
+    {
+      "id": "unmeasured_cost_control",
+      "expected": "accept_unknown",
+      "results": {
+        "baseline": {
+          "observed": "accept_unknown",
+          "correct": true
+        },
+        "revised": {
+          "observed": "accept_unknown",
+          "correct": true
+        }
+      }
+    },
+    {
+      "id": "distinct_trace_fragments_control",
+      "expected": "accept",
+      "results": {
+        "baseline": {
+          "observed": "accept",
+          "correct": true
+        },
+        "revised": {
+          "observed": "accept",
+          "correct": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "correct": 4,
+      "total": 10,
+      "invalid_inputs_accepted": 6
+    },
+    "revised": {
+      "correct": 10,
+      "total": 10,
+      "invalid_inputs_accepted": 0
+    }
+  }
+}

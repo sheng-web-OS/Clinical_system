@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "case_responses": 72,
+    "flags_matching_reference": 72,
+    "false_flags": 0,
+    "missed_defects": 0,
+    "input_packet_characters": 11376,
+    "response_field_characters": 5893,
+    "field_length_breaches": [],
+    "mismatches": []
+  },
+  "rules": {
+    "case_responses": 72,
+    "flags_matching_reference": 72,
+    "false_flags": 0,
+    "missed_defects": 0,
+    "input_packet_characters": 48756,
+    "response_field_characters": 6086,
+    "field_length_breaches": [],
+    "mismatches": []
+  }
+}

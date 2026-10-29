@@ -1,0 +1,44 @@
+{
+  "experiment_id": "ab-development-20261027",
+  "preregistration_commit": "8e35b59e2bb26d00a7191ccb6f715f73977126f3",
+  "candidate_sha": "141958a3eca91995d6fa9fd7048a85e2035c37f4",
+  "worker_contexts": 6,
+  "adjudication_contexts": 1,
+  "case_responses": 144,
+  "results": {
+    "baseline": {
+      "unique_cases": 24,
+      "case_responses": 72,
+      "defective_case_responses": 36,
+      "normal_case_responses": 36,
+      "flag_correct": 72,
+      "correction_proposals_acceptable": 72,
+      "all_three_acceptable_cases": 24,
+      "task_json_characters": 11376,
+      "response_field_characters": 5893
+    },
+    "rules": {
+      "unique_cases": 24,
+      "case_responses": 72,
+      "defective_case_responses": 36,
+      "normal_case_responses": 36,
+      "flag_correct": 72,
+      "correction_proposals_acceptable": 72,
+      "all_three_acceptable_cases": 24,
+      "task_json_characters": 48756,
+      "response_field_characters": 6086
+    }
+  },
+  "inference": {
+    "additional_discovery_gain_observed": false,
+    "additional_correction_gain_observed": false,
+    "equivalence_established": false,
+    "human_time_savings_established": false,
+    "actual_operational_autonomy_established": false,
+    "interpretation": "Both prompt conditions saturated this small descriptive synthetic test set. No observed benefit from appending the entire SOP; cannot infer rules are unnecessary in harder real tasks."
+  },
+  "input_packet_character_ratio_rules_over_baseline": 4.2858649789029535,
+  "response_field_character_ratio_rules_over_baseline": 1.0327507211946376,
+  "cost_limit": "characters only; not API tokens, money, inference latency or owner minutes",
+  "test_set_limitation": "Ceiling and explicit failure cueing; not an unhinted original-article review benchmark."
+}

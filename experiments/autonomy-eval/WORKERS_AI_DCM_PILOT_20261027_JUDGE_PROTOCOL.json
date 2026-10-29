@@ -1,0 +1,20 @@
+{
+  "study": "workers-ai-dcm-20261027-blind-judge-v1",
+  "preregistered_prior_to_judge_calls": true,
+  "source": "source SHA and 16 outputs from WORKERS_AI_DCM_PILOT_20261027_PROTOCOL.json and RAW.json",
+  "status": "EXPLORATORY_UNBLINDED_SOURCE / ARM_BLINDED_MACHINE_REVIEW",
+  "grader_model_requested": "@cf/google/gemma-4-26b-a4b-it",
+  "grader_calls": 2,
+  "ordering": "16 candidate findings anonymized and presented in first order then exact reverse; no origin/arm supplied",
+  "candidate_unit": "one of the 16 numbered findings from four worker runs; repeated claims counted separately for reliability and de-duplicated for content benefit",
+  "primary_rule": "A finding is actionable only when exact original quote is present or whitespace-only variation, identified misconception/omission persists after checking full original and adjacent paragraphs, and proposed edit adds warranted information rather than repeats existing facts.",
+  "labels": [
+    "VALID_ACTIONABLE",
+    "REDUNDANT_OR_ALREADY_EXPLAINED",
+    "CONTRADICTS_ORIGINAL",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "strict_rule": "Any grader missing case judgments or changing its model is not comparable; contradictory order grades go to manual independent medical review; a model judge is not a clinician",
+  "outcome": "No published article edit; no PROMOTE LITE without higher supported unique actionable findings, noninferior false positives on independently reviewed heldout articles and owner time evidence",
+  "limitations": "Study uses one article, same base inference model, prompt order not perfectly balanced, authored failure context known to evaluator, artificial reviewer and no external clinical certification."
+}

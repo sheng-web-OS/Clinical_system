@@ -1,0 +1,866 @@
+{
+  "R0001": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D05",
+    "worker_response_id": "Q2009"
+  },
+  "R0002": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D05",
+    "worker_response_id": "Q3010"
+  },
+  "R0003": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "T04",
+    "worker_response_id": "Q2008"
+  },
+  "R0004": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D05",
+    "worker_response_id": "Q1023"
+  },
+  "R0005": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N02",
+    "worker_response_id": "Q1017"
+  },
+  "R0006": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "T02",
+    "worker_response_id": "Q2005"
+  },
+  "R0007": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N09",
+    "worker_response_id": "Q2017"
+  },
+  "R0008": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "T04",
+    "worker_response_id": "Q2008"
+  },
+  "R0009": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D10",
+    "worker_response_id": "Q3024"
+  },
+  "R0010": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N06",
+    "worker_response_id": "Q2007"
+  },
+  "R0011": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "T01",
+    "worker_response_id": "Q2020"
+  },
+  "R0012": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D08",
+    "worker_response_id": "Q3001"
+  },
+  "R0013": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N01",
+    "worker_response_id": "Q3012"
+  },
+  "R0014": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N04",
+    "worker_response_id": "Q3019"
+  },
+  "R0015": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "T02",
+    "worker_response_id": "Q2005"
+  },
+  "R0016": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N04",
+    "worker_response_id": "Q3019"
+  },
+  "R0017": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D04",
+    "worker_response_id": "Q2023"
+  },
+  "R0018": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N07",
+    "worker_response_id": "Q3018"
+  },
+  "R0019": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D01",
+    "worker_response_id": "Q3016"
+  },
+  "R0020": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D06",
+    "worker_response_id": "Q3006"
+  },
+  "R0021": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N06",
+    "worker_response_id": "Q2007"
+  },
+  "R0022": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D10",
+    "worker_response_id": "Q1016"
+  },
+  "R0023": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D01",
+    "worker_response_id": "Q1009"
+  },
+  "R0024": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N01",
+    "worker_response_id": "Q3012"
+  },
+  "R0025": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "T01",
+    "worker_response_id": "Q3004"
+  },
+  "R0026": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N05",
+    "worker_response_id": "Q3020"
+  },
+  "R0027": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D08",
+    "worker_response_id": "Q2019"
+  },
+  "R0028": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N02",
+    "worker_response_id": "Q2015"
+  },
+  "R0029": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D08",
+    "worker_response_id": "Q2019"
+  },
+  "R0030": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N04",
+    "worker_response_id": "Q2024"
+  },
+  "R0031": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D06",
+    "worker_response_id": "Q1024"
+  },
+  "R0032": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N10",
+    "worker_response_id": "Q3007"
+  },
+  "R0033": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "T02",
+    "worker_response_id": "Q3014"
+  },
+  "R0034": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "T02",
+    "worker_response_id": "Q1022"
+  },
+  "R0035": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N10",
+    "worker_response_id": "Q1007"
+  },
+  "R0036": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N05",
+    "worker_response_id": "Q1006"
+  },
+  "R0037": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D04",
+    "worker_response_id": "Q2023"
+  },
+  "R0038": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N06",
+    "worker_response_id": "Q1013"
+  },
+  "R0039": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N02",
+    "worker_response_id": "Q3002"
+  },
+  "R0040": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N08",
+    "worker_response_id": "Q2010"
+  },
+  "R0041": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D07",
+    "worker_response_id": "Q2002"
+  },
+  "R0042": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D08",
+    "worker_response_id": "Q1012"
+  },
+  "R0043": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D08",
+    "worker_response_id": "Q1012"
+  },
+  "R0044": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D02",
+    "worker_response_id": "Q3011"
+  },
+  "R0045": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N07",
+    "worker_response_id": "Q2013"
+  },
+  "R0046": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N07",
+    "worker_response_id": "Q1002"
+  },
+  "R0047": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D03",
+    "worker_response_id": "Q1015"
+  },
+  "R0048": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N08",
+    "worker_response_id": "Q1003"
+  },
+  "R0049": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N05",
+    "worker_response_id": "Q2012"
+  },
+  "R0050": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "T01",
+    "worker_response_id": "Q3004"
+  },
+  "R0051": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D02",
+    "worker_response_id": "Q2003"
+  },
+  "R0052": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N08",
+    "worker_response_id": "Q2010"
+  },
+  "R0053": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N10",
+    "worker_response_id": "Q2016"
+  },
+  "R0054": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N03",
+    "worker_response_id": "Q1019"
+  },
+  "R0055": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "T03",
+    "worker_response_id": "Q2014"
+  },
+  "R0056": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D04",
+    "worker_response_id": "Q1020"
+  },
+  "R0057": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N06",
+    "worker_response_id": "Q3013"
+  },
+  "R0058": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D07",
+    "worker_response_id": "Q1004"
+  },
+  "R0059": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D10",
+    "worker_response_id": "Q2011"
+  },
+  "R0060": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D02",
+    "worker_response_id": "Q1001"
+  },
+  "R0061": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "T03",
+    "worker_response_id": "Q2014"
+  },
+  "R0062": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D04",
+    "worker_response_id": "Q3008"
+  },
+  "R0063": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N05",
+    "worker_response_id": "Q1006"
+  },
+  "R0064": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D09",
+    "worker_response_id": "Q2001"
+  },
+  "R0065": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N04",
+    "worker_response_id": "Q1021"
+  },
+  "R0066": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N03",
+    "worker_response_id": "Q3003"
+  },
+  "R0067": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D02",
+    "worker_response_id": "Q2003"
+  },
+  "R0068": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D02",
+    "worker_response_id": "Q1001"
+  },
+  "R0069": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N05",
+    "worker_response_id": "Q3020"
+  },
+  "R0070": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N06",
+    "worker_response_id": "Q3013"
+  },
+  "R0071": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "T04",
+    "worker_response_id": "Q3009"
+  },
+  "R0072": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N07",
+    "worker_response_id": "Q2013"
+  },
+  "R0073": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N09",
+    "worker_response_id": "Q3005"
+  },
+  "R0074": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "T03",
+    "worker_response_id": "Q3022"
+  },
+  "R0075": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N03",
+    "worker_response_id": "Q2004"
+  },
+  "R0076": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D03",
+    "worker_response_id": "Q1015"
+  },
+  "R0077": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "T04",
+    "worker_response_id": "Q1018"
+  },
+  "R0078": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D09",
+    "worker_response_id": "Q1014"
+  },
+  "R0079": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N01",
+    "worker_response_id": "Q2018"
+  },
+  "R0080": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N08",
+    "worker_response_id": "Q3023"
+  },
+  "R0081": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D06",
+    "worker_response_id": "Q3006"
+  },
+  "R0082": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "T02",
+    "worker_response_id": "Q3014"
+  },
+  "R0083": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D09",
+    "worker_response_id": "Q3017"
+  },
+  "R0084": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D03",
+    "worker_response_id": "Q3015"
+  },
+  "R0085": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "T02",
+    "worker_response_id": "Q1022"
+  },
+  "R0086": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D10",
+    "worker_response_id": "Q1016"
+  },
+  "R0087": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N05",
+    "worker_response_id": "Q2012"
+  },
+  "R0088": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N10",
+    "worker_response_id": "Q3007"
+  },
+  "R0089": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "T04",
+    "worker_response_id": "Q1018"
+  },
+  "R0090": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N01",
+    "worker_response_id": "Q1010"
+  },
+  "R0091": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "T03",
+    "worker_response_id": "Q3022"
+  },
+  "R0092": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N10",
+    "worker_response_id": "Q1007"
+  },
+  "R0093": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D06",
+    "worker_response_id": "Q2022"
+  },
+  "R0094": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N09",
+    "worker_response_id": "Q1011"
+  },
+  "R0095": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D03",
+    "worker_response_id": "Q2006"
+  },
+  "R0096": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N08",
+    "worker_response_id": "Q3023"
+  },
+  "R0097": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N08",
+    "worker_response_id": "Q1003"
+  },
+  "R0098": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "T04",
+    "worker_response_id": "Q3009"
+  },
+  "R0099": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D06",
+    "worker_response_id": "Q2022"
+  },
+  "R0100": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D06",
+    "worker_response_id": "Q1024"
+  },
+  "R0101": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D09",
+    "worker_response_id": "Q2001"
+  },
+  "R0102": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D05",
+    "worker_response_id": "Q3010"
+  },
+  "R0103": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D07",
+    "worker_response_id": "Q3021"
+  },
+  "R0104": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D07",
+    "worker_response_id": "Q2002"
+  },
+  "R0105": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N04",
+    "worker_response_id": "Q1021"
+  },
+  "R0106": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N03",
+    "worker_response_id": "Q1019"
+  },
+  "R0107": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "T03",
+    "worker_response_id": "Q1005"
+  },
+  "R0108": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D03",
+    "worker_response_id": "Q3015"
+  },
+  "R0109": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N04",
+    "worker_response_id": "Q2024"
+  },
+  "R0110": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N03",
+    "worker_response_id": "Q3003"
+  },
+  "R0111": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D04",
+    "worker_response_id": "Q3008"
+  },
+  "R0112": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D01",
+    "worker_response_id": "Q3016"
+  },
+  "R0113": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N02",
+    "worker_response_id": "Q3002"
+  },
+  "R0114": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N03",
+    "worker_response_id": "Q2004"
+  },
+  "R0115": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D02",
+    "worker_response_id": "Q3011"
+  },
+  "R0116": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N06",
+    "worker_response_id": "Q1013"
+  },
+  "R0117": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D01",
+    "worker_response_id": "Q2021"
+  },
+  "R0118": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D08",
+    "worker_response_id": "Q3001"
+  },
+  "R0119": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N10",
+    "worker_response_id": "Q2016"
+  },
+  "R0120": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N02",
+    "worker_response_id": "Q2015"
+  },
+  "R0121": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "D05",
+    "worker_response_id": "Q2009"
+  },
+  "R0122": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "N07",
+    "worker_response_id": "Q3018"
+  },
+  "R0123": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N01",
+    "worker_response_id": "Q1010"
+  },
+  "R0124": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D09",
+    "worker_response_id": "Q3017"
+  },
+  "R0125": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "D07",
+    "worker_response_id": "Q3021"
+  },
+  "R0126": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "T01",
+    "worker_response_id": "Q1008"
+  },
+  "R0127": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D01",
+    "worker_response_id": "Q1009"
+  },
+  "R0128": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "T01",
+    "worker_response_id": "Q1008"
+  },
+  "R0129": {
+    "arm": "rules",
+    "trial": 3,
+    "case_id": "D10",
+    "worker_response_id": "Q3024"
+  },
+  "R0130": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "N01",
+    "worker_response_id": "Q2018"
+  },
+  "R0131": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D01",
+    "worker_response_id": "Q2021"
+  },
+  "R0132": {
+    "arm": "baseline",
+    "trial": 2,
+    "case_id": "T01",
+    "worker_response_id": "Q2020"
+  },
+  "R0133": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D03",
+    "worker_response_id": "Q2006"
+  },
+  "R0134": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N09",
+    "worker_response_id": "Q1011"
+  },
+  "R0135": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D07",
+    "worker_response_id": "Q1004"
+  },
+  "R0136": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "T03",
+    "worker_response_id": "Q1005"
+  },
+  "R0137": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D09",
+    "worker_response_id": "Q1014"
+  },
+  "R0138": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "D05",
+    "worker_response_id": "Q1023"
+  },
+  "R0139": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "D04",
+    "worker_response_id": "Q1020"
+  },
+  "R0140": {
+    "arm": "baseline",
+    "trial": 3,
+    "case_id": "N09",
+    "worker_response_id": "Q3005"
+  },
+  "R0141": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "N09",
+    "worker_response_id": "Q2017"
+  },
+  "R0142": {
+    "arm": "baseline",
+    "trial": 1,
+    "case_id": "N02",
+    "worker_response_id": "Q1017"
+  },
+  "R0143": {
+    "arm": "rules",
+    "trial": 2,
+    "case_id": "D10",
+    "worker_response_id": "Q2011"
+  },
+  "R0144": {
+    "arm": "rules",
+    "trial": 1,
+    "case_id": "N07",
+    "worker_response_id": "Q1002"
+  }
+}
