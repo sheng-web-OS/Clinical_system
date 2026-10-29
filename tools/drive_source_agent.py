@@ -35,6 +35,42 @@ def gate(ctx, decision):
     return decision
 
 
+
+# Security: these are invariant provider error identifiers, never dynamic text.
+_OPENAI_SAFE_CODES = {
+    "invalid_api_key": "INVALID_API_KEY",
+    "insufficient_quota": "INSUFFICIENT_QUOTA",
+    "billing_hard_limit_reached": "BILLING_LIMIT",
+    "rate_limit_exceeded": "RATE_LIMIT",
+    "model_not_found": "MODEL_NOT_FOUND",
+    "unsupported_parameter": "UNSUPPORTED_PARAMETER",
+    "organization_verification_required": "ORGANIZATION_VERIFICATION",
+    "invalid_request_error": "INVALID_REQUEST",
+}
+
+
+def classify_openai_http_error(exc):
+    """Classify a provider HTTP error without logging response text or tokens.
+
+    Only the numeric HTTP status and recognized fixed error.code are visible.
+    The raw body may include echoed inputs or account-specific information.
+    """
+    status = exc.code if exc.code in {400, 401, 402, 403, 404, 408, 409,
+                                     422, 429, 500, 502, 503, 504} else 0
+    label = "MODEL_HTTP_" + str(status)
+    try:
+        body = exc.read(4096)
+        parsed = json.loads(body)
+        if isinstance(parsed, dict) and isinstance(parsed.get("error"), dict):
+            raw_code = parsed["error"].get("code")
+            if isinstance(raw_code, str) and raw_code in _OPENAI_SAFE_CODES:
+                label += "_" + _OPENAI_SAFE_CODES[raw_code]
+    except (ValueError, TypeError, OSError):
+        pass
+    return label
+
+
+
 def model_decision(ctx, key, model):
     if not key:
         raise RuntimeError("NOT_CONFIGURED_MODEL")
@@ -67,8 +103,16 @@ def model_decision(ctx, key, model):
     try:
         with urllib.request.urlopen(request, timeout=55) as response:
             data = json.loads(response.read(200000))
-    except (urllib.error.URLError, ValueError, TimeoutError):
-        raise RuntimeError("MODEL_REQUEST_FAILED") from None
+    except urllib.error.HTTPError as exc:
+        # HTTPError extends URLError. Diagnose from a fixed allowlist; never
+        # print provider messages, request headers, input or full error body.
+        raise RuntimeError(classify_openai_http_error(exc)) from None
+    except TimeoutError:
+        raise RuntimeError("MODEL_TIMEOUT") from None
+    except urllib.error.URLError:
+        raise RuntimeError("MODEL_NETWORK_FAILED") from None
+    except ValueError:
+        raise RuntimeError("MODEL_RESPONSE_NOT_JSON") from None
     chunks = [entry["text"] for item in data.get("output", [])
               if item.get("type") == "message"
               for entry in item.get("content", []) if entry.get("type") == "output_text"]
@@ -146,10 +190,12 @@ def main():
         return 0
     except (RuntimeError, ValueError, KeyError, OSError) as exc:
         known = {"NOT_CONFIGURED_MODEL", "MODEL_REQUEST_FAILED", "MODEL_RESPONSE_INVALID",
+                 "MODEL_TIMEOUT", "MODEL_NETWORK_FAILED", "MODEL_RESPONSE_NOT_JSON",
                  "DRIVE_SCOPE_MISSING", "FIXTURE_NOT_FOUND", "FIXTURE_MISMATCH",
                  "DRIVE_READ_FAILED", "SOURCE_CLASS_REJECTED", "TASK_NOT_ALLOWLISTED",
                  "BAD_SOURCE_STATE", "BAD_MODE"}
-        code = str(exc) if str(exc) in known else "FAIL_CLOSED"
+        detail = str(exc)
+        code = detail if detail in known or detail.startswith("MODEL_HTTP_") else "FAIL_CLOSED"
         print(json.dumps({"status": "HOLD", "error": code}), file=sys.stderr)
         return 2
 
