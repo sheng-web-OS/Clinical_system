@@ -1,6 +1,6 @@
 # GitHub-driven ChatGPT task dispatcher — v0.1 SHADOW (2026-10-29)
 
-**Status: Draft / HOLD. No automation has been reconfigured or activated.**
+**Status: Draft / HOLD. Existing 09:00 Writer automation now includes read-only shadow observation; active GitHub task dispatch remains disabled.**
 **Goal:** use ONE existing ChatGPT automation as a wake-up/worker entrypoint, with GitHub as the continuously editable task control plane. Keep the original 72-hour autonomy-protocol automation separate until its observation window ends. No new agent service, database, model API, scheduler or paid token call is introduced by this PR.
 
 ## Architecture / source of authority
