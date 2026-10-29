@@ -157,7 +157,7 @@ class ReviewAssemblyTest(unittest.TestCase):
         self.store("manifest.json", manifest)
         path = self.run_dir / "first_pass_journal.jsonl"
         lines = path.read_text().splitlines()
-        path.write_text("\\n".join(lines[:-1]) + "\\n")
+        path.write_text("\n".join(lines[:-1]) + "\n")
         self.assert_reject("INCOMPLETE_FIRST_PASS_JOURNAL")
 
     def test_journal_missing_on_claimed_checkpoint_is_hold(self):
