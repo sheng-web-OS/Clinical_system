@@ -40,6 +40,10 @@ def gate(ctx, decision):
 _OPENAI_SAFE_CODES = {
     "invalid_api_key": "INVALID_API_KEY",
     "insufficient_quota": "INSUFFICIENT_QUOTA",
+    "credit_balance_exhausted": "CREDIT_BALANCE_EXHAUSTED",
+    "organization_usage_limit_exceeded": "ORG_USAGE_LIMIT_EXCEEDED",
+    "organization_spend_limit_exceeded": "ORG_SPEND_LIMIT_EXCEEDED",
+    "project_spend_limit_exceeded": "PROJECT_SPEND_LIMIT_EXCEEDED",
     "billing_hard_limit_reached": "BILLING_LIMIT",
     "rate_limit_exceeded": "RATE_LIMIT",
     "model_not_found": "MODEL_NOT_FOUND",
@@ -50,10 +54,11 @@ _OPENAI_SAFE_CODES = {
 
 
 def classify_openai_http_error(exc):
-    """Classify a provider HTTP error without logging response text or tokens.
+    """Safely classify provider HTTP failures from an invariant allowlist.
 
-    Only the numeric HTTP status and recognized fixed error.code are visible.
-    The raw body may include echoed inputs or account-specific information.
+    OpenAI sometimes returns 429 quota errors with error.type populated
+    but error.code = null. Never print raw error bodies, unknown codes,
+    response headers, echoed prompts, account metadata or credentials.
     """
     status = exc.code if exc.code in {400, 401, 402, 403, 404, 408, 409,
                                      422, 429, 500, 502, 503, 504} else 0
@@ -62,9 +67,14 @@ def classify_openai_http_error(exc):
         body = exc.read(4096)
         parsed = json.loads(body)
         if isinstance(parsed, dict) and isinstance(parsed.get("error"), dict):
-            raw_code = parsed["error"].get("code")
-            if isinstance(raw_code, str) and raw_code in _OPENAI_SAFE_CODES:
-                label += "_" + _OPENAI_SAFE_CODES[raw_code]
+            error = parsed["error"]
+            # Stable official error.code takes priority. error.type is the
+            # fallback where code is null, never an arbitrary log string.
+            for field in ("code", "type"):
+                name = error.get(field)
+                if isinstance(name, str) and name in _OPENAI_SAFE_CODES:
+                    label += "_" + _OPENAI_SAFE_CODES[name]
+                    break
     except (ValueError, TypeError, OSError):
         pass
     return label
@@ -123,6 +133,25 @@ def model_decision(ctx, key, model):
     return decision if decision in DECISIONS else "HOLD"
 
 
+
+def verify_synthetic_export_bytes(content):
+    """Check UTF-8 Drive text export strictly without printing document content.
+
+    Google Drive's text/plain export may omit a charset. requests.Response.text
+    can then interpret UTF-8 em dash as Latin-1, falsely rejecting the fixture.
+    Always decode .content explicitly. Keep both exact marker checks required.
+    """
+    if not isinstance(content, bytes):
+        raise RuntimeError("FIXTURE_ENCODING_INVALID")
+    try:
+        document = content.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        raise RuntimeError("FIXTURE_ENCODING_INVALID") from None
+    if MARKER not in document or CAPTION not in document:
+        raise RuntimeError("FIXTURE_MISMATCH")
+    return True
+
+
 def read_synthetic_drive(folder_id):
     if not folder_id or not folder_id.replace("-", "").replace("_", "").isalnum():
         raise RuntimeError("DRIVE_SCOPE_MISSING")
@@ -146,9 +175,7 @@ def read_synthetic_drive(folder_id):
             "https://www.googleapis.com/drive/v3/files/" + files[0]["id"] + "/export",
             params={"mimeType": "text/plain"}, timeout=30)
         exported.raise_for_status()
-        if MARKER not in exported.text or CAPTION not in exported.text:
-            raise RuntimeError("FIXTURE_MISMATCH")
-        return True
+        return verify_synthetic_export_bytes(exported.content)
     except RuntimeError:
         raise
     except Exception:
@@ -192,6 +219,7 @@ def main():
         known = {"NOT_CONFIGURED_MODEL", "MODEL_REQUEST_FAILED", "MODEL_RESPONSE_INVALID",
                  "MODEL_TIMEOUT", "MODEL_NETWORK_FAILED", "MODEL_RESPONSE_NOT_JSON",
                  "DRIVE_SCOPE_MISSING", "FIXTURE_NOT_FOUND", "FIXTURE_MISMATCH",
+                 "FIXTURE_ENCODING_INVALID",
                  "DRIVE_READ_FAILED", "SOURCE_CLASS_REJECTED", "TASK_NOT_ALLOWLISTED",
                  "BAD_SOURCE_STATE", "BAD_MODE"}
         detail = str(exc)

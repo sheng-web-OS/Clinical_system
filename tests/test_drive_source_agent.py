@@ -1,5 +1,6 @@
 import unittest
-from tools.drive_source_agent import execute, gate, validated_context
+from tools.drive_source_agent import (CAPTION, MARKER, execute, gate, validated_context,
+                                      verify_synthetic_export_bytes)
 
 BASE = {"task_id": "DEMO-2026-10-29-A",
         "source_class": "synthetic_public_fixture",
@@ -7,6 +8,26 @@ BASE = {"task_id": "DEMO-2026-10-29-A",
 
 
 class SelectiveDriveTests(unittest.TestCase):
+    def test_utf8_drive_text_export_with_non_ascii_marker(self):
+        # Drive text/plain may omit charset, so requests .text can misdecode
+        # the em dash. The actual UTF-8 bytes must still match exactly.
+        payload = ("Title\n" + MARKER + "\n" + CAPTION + "\n").encode("utf-8")
+        self.assertTrue(verify_synthetic_export_bytes(payload))
+        self.assertTrue(verify_synthetic_export_bytes(b"\xef\xbb\xbf" + payload))
+        self.assertNotEqual(MARKER, MARKER.encode("utf-8").decode("latin-1"))
+
+    def test_invalid_encoding_fails_closed(self):
+        with self.assertRaisesRegex(RuntimeError, "^FIXTURE_ENCODING_INVALID$"):
+            verify_synthetic_export_bytes(b"\xff\x80")
+
+    def test_missing_caption_still_fails_closed(self):
+        with self.assertRaisesRegex(RuntimeError, "^FIXTURE_MISMATCH$"):
+            verify_synthetic_export_bytes(MARKER.encode("utf-8"))
+
+    def test_missing_marker_still_fails_closed(self):
+        with self.assertRaisesRegex(RuntimeError, "^FIXTURE_MISMATCH$"):
+            verify_synthetic_export_bytes(CAPTION.encode("utf-8"))
+
     def test_fixture_simulation_not_autonomy(self):
         out = execute(BASE, "fixture")
         self.assertEqual(out["decision"], "READ")

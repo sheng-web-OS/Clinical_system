@@ -20,7 +20,7 @@ FIGURE_OPEN = re.compile(r"<figure\b([^>]*)>", re.IGNORECASE)
 FIGURE_ID = re.compile(r"""\bid\s*=\s*["']([^"']+)["']""", re.IGNORECASE)
 
 
-def discover_pages(root: Path) -> dict:
+def discover_pages(root: Path, *, include_figureless=False) -> dict:
     """Read the public allowlist, finding figure ids without a hand-maintained page map.
 
     A figure lacking an id is not silently skipped: fix the figure source first.
@@ -40,7 +40,7 @@ def discover_pages(root: Path) -> dict:
             if name in ids:
                 raise ValueError("Visual QA duplicate figure id: " + source + "#" + name)
             ids.append(name)
-        if ids:
+        if ids or include_figureless:
             slug = Path(entry["output"]).stem
             if slug in pages:
                 raise ValueError("Visual QA duplicate output slug: " + slug)
@@ -95,12 +95,13 @@ RESPONSIVE_SENTINELS = {
 
 
 def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> dict:
-    """Run blocking render tests on newly published or changed figure markup.
+    """Run blocking render tests on modified PUBLIC pages containing figures.
 
-    Global layout/CSS regressions go to a separate, non-blocking full-site
-    legacy-debt report; known historic failures must not make unrelated PRs red.
+    A prose/navigation edit can shift figure layout even if figure HTML stays
+    byte-identical. Check all figures in that changed reader at phone/desktop
+    widths; unrelated legacy pages remain outside this blocking subset.
     """
-    selected = discover_pages(root) if page_map is None else page_map
+    selected = discover_pages(root, include_figureless=True) if page_map is None else page_map
     changed_names = set(subprocess.run(
         ["git", "diff", "--name-only", "--diff-filter=ACMR",
          base_ref + "...HEAD", "--"], cwd=root, capture_output=True,
@@ -132,14 +133,16 @@ def changed_figures(root: Path, base_ref: str, page_map: dict | None = None) -> 
             for fid, html in current.items():
                 if any(name in html for name in assets):
                     selected_ids.add(fid)
-        if slug in visible_pages and selected_ids != set(current):
-            old = subprocess.run(["git", "show", base_ref + ":" + source],
-                                 cwd=root, capture_output=True, text=True)
-            previous = figure_versions(old.stdout) if old.returncode == 0 else {}
-            selected_ids.update(fid for fid, html in current.items()
-                                if previous.get(fid) != html)
+        # A Markdown-only edit can add a long link/paragraph near a figure.
+        # Rendering the changed page is needed even without figure markup diffs.
+        if slug in visible_pages and source in changed_names:
+            selected_ids.update(current)
         if selected_ids:
             result[slug] = (page_path, [fid for fid in current if fid in selected_ids])
+        elif not current and slug in visible_pages and source in changed_names:
+            # New prose/navigation can break mobile layout on a figureless page.
+            # Render the article itself, without fabricating a figure gate.
+            result[slug] = (page_path, [])
     return result
 
 
@@ -296,6 +299,9 @@ def run(dist, output, slugs, widths, page_map=None):
                             if dims["doc"] > dims["viewport"] + 3:
                                 problems.append("page overflows viewport: " + str(dims))
                             results = [inspect(page, fig, output, slug, width) for fig in figures]
+                            if not figures:
+                                # Viewport capture complements full-document overflow check.
+                                page.screenshot(path=str(output / f"{slug}-{width}-reader.png"))
                             reports.append({"page": path, "viewport": width,
                                             "passed": not problems and all(f["passed"] for f in results),
                                             "problems": problems, "figures": results})
@@ -334,7 +340,7 @@ if __name__ == "__main__":
                       help="Git base ref to auto-render only modified published articles")
     ap.add_argument("--widths", nargs="+", type=int, default=[360, 390, 768, 1280])
     a = ap.parse_args()
-    page_map = discover_pages(ROOT)
+    page_map = discover_pages(ROOT, include_figureless=bool(a.changed_from))
     if a.pages is not None:
         slugs = a.pages
     elif a.changed_from:

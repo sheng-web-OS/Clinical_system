@@ -81,23 +81,38 @@ class VisualQADiscoveryTest(unittest.TestCase):
             changed_pages(self.root, "main..evil")
 
     @patch("visual_qa_browser.subprocess.run")
-    def test_prose_only_edit_does_not_recheck_unchanged_figures(self, git):
+    def test_prose_only_edit_rechecks_changed_reader_layout(self, git):
         original = (self.root / "content/lesson.md").read_text(encoding="utf-8")
         (self.root / "content/lesson.md").write_text("New introduction\n" + original, encoding="utf-8")
         diff = subprocess.CompletedProcess([], 0, "content/lesson.md\n", "")
-        git.side_effect = [diff, diff, subprocess.CompletedProcess([], 0, original, "")]
+        git.side_effect = [diff, diff]
+        self.assertEqual(changed_figures(self.root, "origin/main"),
+                         {"reader-lesson": ("reader-lesson.html", ["decision", "source-ecg"])})
+
+    @patch("visual_qa_browser.subprocess.run")
+    def test_changed_figureless_public_lesson_is_checked_on_all_viewports(self, git):
+        diff = subprocess.CompletedProcess([], 0, "content/plain.md\n", "")
+        git.side_effect = [diff, diff]
+        self.assertEqual(
+            changed_figures(self.root, "origin/main"),
+            {"reader-plain": ("reader-plain.html", [])})
+
+    @patch("visual_qa_browser.subprocess.run")
+    def test_private_figureless_page_is_not_checked(self, git):
+        diff = subprocess.CompletedProcess([], 0, "content/private.md\n", "")
+        git.side_effect = [diff, diff]
         self.assertEqual(changed_figures(self.root, "origin/main"), {})
 
     @patch("visual_qa_browser.subprocess.run")
-    def test_one_modified_figure_only_rechecks_that_figure(self, git):
+    def test_one_modified_figure_rechecks_entire_changed_reader(self, git):
         original = (self.root / "content/lesson.md").read_text(encoding="utf-8")
         (self.root / "content/lesson.md").write_text(
             original.replace("<svg></svg>", "<svg><title>changed</title></svg>"),
             encoding="utf-8")
         diff = subprocess.CompletedProcess([], 0, "content/lesson.md\n", "")
-        git.side_effect = [diff, diff, subprocess.CompletedProcess([], 0, original, "")]
+        git.side_effect = [diff, diff]
         self.assertEqual(changed_figures(self.root, "origin/main"),
-                         {"reader-lesson": ("reader-lesson.html", ["decision"])})
+                         {"reader-lesson": ("reader-lesson.html", ["decision", "source-ecg"])})
 
     @patch("visual_qa_browser.subprocess.run")
     def test_new_article_figures_cannot_skip_when_base_version_missing(self, git):
