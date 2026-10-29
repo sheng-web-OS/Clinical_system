@@ -92,10 +92,22 @@ class DispatcherShadowTest(unittest.TestCase):
     def test_no_execution_upgrade_or_expanded_batch(self):
         cfg = copy.deepcopy(self.base)
         cfg["mode"] = "execute"
-        self.expect_invalid(cfg, "SHADOW_ONLY_ONE_TASK_PER_TICK")
+        self.expect_invalid(cfg, "UNAPPROVED_MODE_OR_TASK_BATCH")
         cfg = copy.deepcopy(self.base)
         cfg["max_tasks_per_run"] = 30
-        self.expect_invalid(cfg, "SHADOW_ONLY_ONE_TASK_PER_TICK")
+        self.expect_invalid(cfg, "UNAPPROVED_MODE_OR_TASK_BATCH")
+
+    def test_future_active_mode_remains_read_only_selector(self):
+        cfg = copy.deepcopy(self.base)
+        cfg["mode"] = "active"
+        self.write(cfg)
+        config = load_manifest(self.manifest_path)
+        result = select_tasks(config, self.snapshot)
+        self.assertEqual("ACTIVE_PLAN_ONLY", result["status"])
+        self.assertEqual(0, result["model_calls"])
+        self.assertEqual(0, result["write_actions"])
+        self.assertFalse(result["execution_authorized"])
+        self.assertTrue(result["selection_requires_live_gate_check"])
 
     def test_no_arbitrary_prompt_action_or_credential_field(self):
         cfg = copy.deepcopy(self.base)
@@ -119,7 +131,7 @@ class DispatcherShadowTest(unittest.TestCase):
         self.expect_invalid(cfg, "INVALID_REPOSITORY_OR_VERSION")
         cfg = copy.deepcopy(self.base)
         cfg["max_tasks_per_run"] = True
-        self.expect_invalid(cfg, "SHADOW_ONLY_ONE_TASK_PER_TICK")
+        self.expect_invalid(cfg, "UNAPPROVED_MODE_OR_TASK_BATCH")
         cfg = copy.deepcopy(self.base)
         cfg["frozen_eval"]["excluded_targets"].append({"invalid": 1})
         self.expect_invalid(cfg, "PROTECTED_EXPERIMENT_SCOPE")
