@@ -150,6 +150,45 @@ class RunnerTest(unittest.TestCase):
         self.assertEqual(9, len(mapping["answer_slots"]))
         self.assertEqual(3, len(mapping["case_aliases"]))
 
+    def test_blinded_allocation_cannot_be_reconstructed_from_public_case_id(self):
+        import re
+        # Same frozen suite, same model call order, independent private
+        # reviewer allocations. This previously reused a public deterministic
+        # SHA(case_id) seed and always exposed the same arm-slot permutation.
+        def fake(request, key):
+            return {"answer": "Uniform synthetic mock answer with no arm cues",
+                    "returned_model": MODEL,
+                    "response_id": "mock-placeholder",
+                    "usage": {"input_tokens": 10, "output_tokens": 20}}
+        first = self.go(mode=True, caller=fake)
+        self.assertEqual(9, first["completed"])
+        first_packet = json.loads((self.root / "out/blind_reviewer_packet.json").read_text())
+        first_mapping = json.loads((self.root / "out/private_arm_mapping.json").read_text())
+        other_target = self.root / "out-second"
+        second = run(self.cases, self.pack, self.skill, other_target, MODEL, COMMIT,
+                     execute=True, key="mock-only", caller=fake)
+        self.assertEqual(9, second["completed"])
+        second_packet = json.loads((other_target / "blind_reviewer_packet.json").read_text())
+        second_mapping = json.loads((other_target / "private_arm_mapping.json").read_text())
+        self.assertEqual(
+            json.loads((self.root / "out/requests.json").read_text()),
+            json.loads((other_target / "requests.json").read_text()))
+        self.assertEqual("PRIVATE_CSPRNG_REVIEWER_ALLOCATION_V1",
+                         first_mapping["allocation"])
+        a, b = set(first_mapping["answer_slots"]), set(second_mapping["answer_slots"])
+        self.assertEqual(9, len(a))
+        self.assertEqual(9, len(b))
+        self.assertFalse(a & b, "Unpredictable 128-bit private slot IDs must not repeat")
+        self.assertTrue(all(re.fullmatch(r"answer-[a-f0-9]{32}", token)
+                            for token in a | b))
+        for pkt in (first_packet, second_packet):
+            serialized = json.dumps(pkt)
+            self.assertNotIn('"arm"', serialized)
+            self.assertNotIn('"candidate_skill"', serialized)
+            self.assertNotIn("PRIVATE_CSPRNG_REVIEWER_ALLOCATION_V1", serialized)
+        self.assertEqual(0o600,
+                         (self.root / "out/private_arm_mapping.json").stat().st_mode & 0o777)
+
     def test_paid_or_mock_execution_checkpoints_first_pass_after_each_attempt(self):
         calls = [0]
         def fake(request, key):
