@@ -1,0 +1,77 @@
+name: MedEinst public dataset adapter smoke (read-only)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - tools/prepare_medeinst_holdout.py
+      - tests/test_prepare_medeinst_holdout.py
+      - experiments/medeinst-transfer/README.md
+      - .github/workflows/medeinst-source-smoke.yml
+
+permissions:
+  contents: read
+
+jobs:
+  official-source-compatibility:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check pinned public source and prepare only an ephemeral public-data packet set
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          scratch="$(mktemp -d)"
+          trap 'rm -rf "$scratch"' EXIT
+          # MedEinst is public, CC BY 4.0, DDXPlus-derived; no actual patient record.
+          # Never emit clinical narratives or labels to logs or save artifacts.
+          curl --fail --location --silent --show-error --retry 2 \
+            --connect-timeout 15 --max-time 240 \
+            'https://huggingface.co/datasets/zhui711/MedEinst/resolve/main/test.jsonl' \
+            -o "$scratch/test.jsonl"
+          echo "b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57  $scratch/test.jsonl" | sha256sum --check --status
+          export DATASET_PATH="$scratch/test.jsonl"
+          python - <<'PY' > "$scratch/selected-ids"
+          import hashlib, json, os
+          from collections import defaultdict
+          by_id = defaultdict(set)
+          with open(os.environ['DATASET_PATH'], encoding='utf-8') as handle:
+              for line in handle:
+                  if line.strip():
+                      row=json.loads(line)
+                      assert isinstance(row['case_id'], str)
+                      by_id[row['case_id']].add(row['case_type'].removesuffix('_case'))
+          eligible = [key for key, variants in by_id.items() if variants == {'control','trap'}]
+          assert len(eligible) >= 2, 'Official paired dataset is incomplete'
+          # Predeclared selection, no manual outcome-driven choice.
+          picked=sorted(eligible, key=lambda x: hashlib.sha256(('med-pilot-v1:'+x).encode()).hexdigest())[:2]
+          print(','.join(picked))
+          PY
+          python tools/prepare_medeinst_holdout.py \
+            --dataset "$scratch/test.jsonl" \
+            --expected-sha256 b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57 \
+            --case-ids "$(cat "$scratch/selected-ids")" \
+            --worker-root "$scratch/worker-packets" \
+            --facilitator-root "$scratch/facilitator-key"
+          python - "$scratch" <<'PY'
+          import json, pathlib, sys
+          root=pathlib.Path(sys.argv[1])
+          workers=list((root/'worker-packets').glob('*/packet.json'))
+          assert len(workers)==4, 'Expected two pair variants each'
+          for path in workers:
+              data=json.loads(path.read_text())
+              assert data['source_class']=='MedEinst_DDXPlus_simulated_research_case'
+              assert 'ground_truth' not in data
+              assert 'case_id' not in data
+          receipt=json.loads((root/'facilitator-key'/'run_manifest.json').read_text())
+          assert receipt['model_calls']==0 and receipt['status']=='NOT_RUN'
+          assert receipt['medical_validated'] is False
+          print('OFFICIAL_MEDEINST_COMPATIBILITY_PASS; 2 public pairs; 4 isolated packets; 0 model calls; no case text or labels logged')
+          PY
