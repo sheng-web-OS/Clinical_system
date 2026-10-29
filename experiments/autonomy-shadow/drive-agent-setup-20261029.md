@@ -12,10 +12,10 @@ Date: 2026-10-29. Status: DRAFT/HOLD. Public repository; only synthetic fixtures
 Create or select a **dedicated** Google Cloud project. Download the reviewed repository script once, or open its contents and run in Cloud Shell:
 
     curl -fsSLo /tmp/setup-clinical-os-wif.sh \
-      https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/experiment/drive-agent-wif-setup-20261029/tools/setup_drive_agent_wif.sh
+      https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/12a0f531ac82045c0c6fa1beb104b7c46d819660/tools/setup_drive_agent_wif.sh
     bash /tmp/setup-clinical-os-wif.sh YOUR_GOOGLE_CLOUD_PROJECT_ID
 
-Review the script before running. It enables Google IAM/STS/Drive APIs and creates a dedicated SA and OIDC provider. It scopes trust to GitHub immutable numeric repository ID 1427690253, main branch and exact workflow_ref, then binds Workload Identity User to that narrow principalSet. It does not create downloadable SA keys or assign generic project Viewer/Editor roles to the Service Account.
+This URL pins the reviewed shell script to a specific commit rather than mutable branch HEAD. Review the script before running. It enables Google IAM/STS/Drive APIs and creates a dedicated SA and OIDC provider. It scopes trust to GitHub immutable numeric repository ID 1427690253, main branch and exact workflow_ref, then binds Workload Identity User to that narrow principalSet. It does not create downloadable SA keys or assign generic project Viewer/Editor roles to the Service Account.
 
 Copy the two output values into GitHub Actions Variables:
 - CLINICAL_OS_WIF_PROVIDER
