@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from prepare_medeinst_holdout import HoldoutError, prepare
+from prepare_medeinst_holdout import HoldoutError, prepare, MEDEINST_TEST_SHA256
 
 
 class MedEinstHoldoutContract(unittest.TestCase):
@@ -37,7 +37,7 @@ class MedEinstHoldoutContract(unittest.TestCase):
         return prepare(self.dataset, digest or self.digest,
                        ids or ["demo-1", "demo-2"],
                        worker or self.worker, private or self.private,
-                       repo_root=self.repo)
+                       repo_root=self.repo, source_mode="synthetic-fixture")
 
     def test_offline_blinding_and_secret_separation(self):
         result = self.run_pilot()
@@ -111,6 +111,41 @@ class MedEinstHoldoutContract(unittest.TestCase):
     def test_reject_duplicate_pair_selection(self):
         with self.assertRaisesRegex(HoldoutError, "PRESELECT"):
             self.run_pilot(ids=["demo-1", "demo-1"])
+
+    def test_official_mode_rejects_self_pinned_arbitrary_file(self):
+        with self.assertRaisesRegex(HoldoutError, "UNTRUSTED_BENCHMARK_SHA256"):
+            prepare(self.dataset, self.digest, ["demo-1"],
+                    self.worker, self.private, repo_root=self.repo)
+        self.assertFalse(self.worker.exists())
+
+    def test_official_source_hash_constant_matches_published_xet_digest(self):
+        self.assertEqual(64, len(MEDEINST_TEST_SHA256))
+        self.assertEqual("b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57",
+                         MEDEINST_TEST_SHA256)
+        with self.assertRaisesRegex(HoldoutError, "DATASET_DIGEST_MISMATCH"):
+            prepare(self.dataset, MEDEINST_TEST_SHA256, ["demo-1"],
+                    self.worker, self.private, repo_root=self.repo)
+
+    def test_identical_narratives_with_different_diagnoses_rejected(self):
+        self.rows[1]["narrative"] = self.rows[0]["narrative"]
+        self.save()
+        with self.assertRaisesRegex(HoldoutError, "IDENTICAL_NARRATIVES_WITH_CONFLICTING_LABELS"):
+            self.run_pilot()
+
+    def test_invalid_case_id_type_rejected(self):
+        self.rows[0]["case_id"] = ["demo-1"]
+        self.save()
+        with self.assertRaisesRegex(HoldoutError, "INVALID_CASE_ID_TYPE"):
+            self.run_pilot()
+
+    def test_synthetic_mode_cannot_claim_official_medeinst(self):
+        self.run_pilot(ids=["demo-1"])
+        packet = next(self.worker.glob("*/packet.json"))
+        self.assertEqual("synthetic_fixture_not_medeinst",
+                         json.loads(packet.read_text())["source_class"])
+        metadata = json.loads((self.private / "run_manifest.json").read_text())
+        self.assertEqual("synthetic-fixture", metadata["source_mode"])
+        self.assertFalse(metadata["medical_validated"])
 
 
 if __name__ == "__main__":
