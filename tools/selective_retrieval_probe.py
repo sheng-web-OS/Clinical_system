@@ -8,6 +8,7 @@ import argparse
 import hashlib
 import json
 import os
+import random
 from pathlib import Path
 
 from run_skill_transfer_pilot import api_call, PilotError, write_private, append_event
@@ -190,6 +191,38 @@ def build_plan(data, skill, model, commit):
     }
 
 
+def build_blind_packet(cases, results, suite_sha):
+    """Create a private arm-blind reviewer packet; no judgments or answer keys.
+
+    The mapping MUST NOT be shown to the independent reviewer. Development
+    cases and the review packet are not an unseen clinical holdout.
+    """
+    items = []
+    mapping = {}
+    cases_by_id = {case["id"]: case for case in cases}
+    shuffled_ids = list(cases_by_id)
+    random.Random(int(suite_sha[:16], 16)).shuffle(shuffled_ids)
+    for ci, case_id in enumerate(shuffled_ids, 1):
+        alias = "scenario-" + str(ci)
+        candidate_rows = [row for row in results if row["case_id"] == case_id]
+        random.Random(int(digest(suite_sha + case_id)[:16], 16)).shuffle(candidate_rows)
+        if len(candidate_rows) != len(ARMS):
+            raise PilotError("REVIEW_ROWS_INCOMPLETE")
+        answers = []
+        for ri, row in enumerate(candidate_rows, 1):
+            slot = alias + "-response-" + str(ri)
+            mapping[slot] = {"case_id": case_id, "arm": row["arm"]}
+            answers.append({
+                "slot": slot, "run_status": row.get("status", "COMPLETED"),
+                "initial_triage": row.get("triage"),
+                "retrieval_gate": row.get("retrieval_gate"),
+                "answer": row.get("answer"),
+            })
+        items.append({"scenario": alias, "task": cases_by_id[case_id]["task"],
+                      "candidate_answers": answers})
+    return items, mapping
+
+
 def execute(data, skill, model, commit, output_dir, key=None, live=False, caller=None):
     meta = build_plan(data, skill, model, commit)
     cases, docs = validate_fixture(data)
@@ -219,9 +252,11 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
     meta["provider_receipt_authenticated"] = False
     meta["model_calls_made"] = None
     output_dir.mkdir(mode=0o700)
+    # manifest is a frozen PRE-RUN plan. Never overwrite it to fake completion.
     write_private(output_dir / "manifest.json", meta)
     events = output_dir / "attempt_events.jsonl"
     attempts = [0]
+    seen_provider_ids = set()
     def traced_transport(request):
         attempts[0] += 1
         if attempts[0] > 18:
@@ -232,6 +267,11 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
         append_event(events, dict(stamp, event="STARTED"))
         try:
             result = transport(request)
+            if live:
+                rid = result.get("response_id")
+                if not isinstance(rid, str) or rid in seen_provider_ids:
+                    raise PilotError("PROVIDER_RECEIPT_DUPLICATED_OR_MISSING")
+                seen_provider_ids.add(rid)
         except Exception:
             append_event(events, dict(stamp, event="FAILED"))
             raise
@@ -243,12 +283,47 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
             try:
                 results.append(run_case(case, arm, docs, skill, model, traced_transport))
             except (ValueError, KeyError, TypeError, PilotError):
+                # Every attempted pair counts, including errors. Never replace
+                # a failed first attempt with a retry or post-feedback answer.
                 results.append({"case_id": case["id"], "arm": arm,
-                                "status": "FAILED_INCOMPLETE", "first_pass_unscored": True})
+                                "status": "FAILED_INCOMPLETE", "first_pass_unscored": True,
+                                "answer": None})
     write_private(output_dir / "first_pass_unscored.json", results)
-    return {"status": "UNSCORED_API_EXECUTION" if live else "DEVELOPMENT_TEST_DOUBLE_ONLY",
-            "rows": len(results), "calls_attempted": attempts[0],
-            "clinical_validated": False, "transfer_validated": False}
+    suite_sha = digest(json.dumps(meta, ensure_ascii=False, sort_keys=True))
+    packet, mapping = build_blind_packet(cases, results, suite_sha)
+    write_private(output_dir / "blind_reviewer_packet.json", packet)
+    write_private(output_dir / "private_arm_mapping.json", mapping)
+    failed = sum(row.get("status") == "FAILED_INCOMPLETE" for row in results)
+    usages = []
+    for row in results:
+        for name in ("first_call_receipt", "answer_call_receipt"):
+            u = (row.get(name) or {}).get("usage")
+            if isinstance(u, dict) and all(type(u.get(key)) is int for key in
+                                          ("input_tokens", "output_tokens", "total_tokens")):
+                usages.append(u)
+    totals = {
+        "input_tokens": sum(u["input_tokens"] for u in usages),
+        "output_tokens": sum(u["output_tokens"] for u in usages),
+        "total_tokens": sum(u["total_tokens"] for u in usages),
+    } if live and failed == 0 else None
+    status = ("HOLD_INCOMPLETE" if failed else
+              "UNSCORED_API_EXECUTION" if live else "DEVELOPMENT_TEST_DOUBLE_ONLY")
+    receipt = {
+        "status": status, "suite_sha256": suite_sha,
+        "completed_pairs": len(results) - failed, "failed_pairs": failed,
+        "model_calls_attempted": attempts[0],
+        "transport_kind": meta["transport_kind"],
+        "provider_receipt_authenticated": False,
+        "tokens_observed_for_completed_calls": totals,
+        "cost_usd": None, "owner_minutes": None,
+        "independent_review": "NOT_DONE",
+        "clinical_validated": False, "transfer_validated": False,
+        "publication_approved": False,
+    }
+    write_private(output_dir / "run_receipt.json", receipt)
+    return {"status": status, "rows": len(results), "calls_attempted": attempts[0],
+            "failed_pairs": failed, "clinical_validated": False,
+            "transfer_validated": False}
 
 
 def main():
