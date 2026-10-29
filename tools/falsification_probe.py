@@ -281,8 +281,69 @@ def prepare_rescue(spec_path: Path, hints_path: Path,
     return manifest
 
 
+
+def relabel_packet(wire: dict) -> tuple[dict, dict[str, dict[str, str]]]:
+    """Make a semantics-preserving label/option-order control, not a privacy sandbox.
+
+    The coordinator reverses this mapping *after* the subprocess finishes.
+    Do not use this as a model-context isolation or clinical-truth claim.
+    """
+    aliases = {}
+    namespaces = (
+        ("candidate_questions", "Q"),
+        ("candidate_decisions", "D"),
+        ("available_evidence_ids", "E"),
+        ("available_review_flag_ids", "R"),
+    )
+    for field, prefix in namespaces:
+        original = wire[field]
+        ids = list(original) if isinstance(original, dict) else list(original)
+        replacements = {old: prefix + secrets.token_hex(12) for old in ids}
+        require(len(set(replacements.values())) == len(replacements),
+                "transport label collision")
+        aliases[field] = replacements
+        secrets.SystemRandom().shuffle(ids)
+        if isinstance(original, dict):
+            wire[field] = {replacements[old]: original[old] for old in ids}
+        else:
+            wire[field] = [replacements[old] for old in ids]
+
+    # Only the explicit [FACT_ID] markers in case_text are rewritten.
+    evidence = aliases["available_evidence_ids"]
+    seen = set()
+    def replace_fact(match):
+        old = match.group(1)
+        if old not in evidence:
+            return match.group(0)
+        seen.add(old)
+        return "[" + evidence[old] + "]"
+    wire["case_text"] = re.sub(r"\[([A-Za-z][A-Za-z0-9_-]{0,63})\]",
+                               replace_fact, wire["case_text"])
+    require(seen == set(evidence), "transport fact labels not all present")
+
+    # Research hints may refer to machine-readable labels. Change only their
+    # exact isolated identifiers, never clinical prose or gold labels.
+    if "research_aids" in wire:
+        rewrite = {}
+        for field in ("candidate_questions", "candidate_decisions",
+                      "available_evidence_ids", "available_review_flag_ids"):
+            rewrite.update(aliases[field])
+        pattern = re.compile(r"(?<![A-Za-z0-9_-])(?:" +
+                             "|".join(re.escape(x) for x in sorted(rewrite, key=len, reverse=True)) +
+                             r")(?![A-Za-z0-9_-])") if rewrite else None
+        if pattern:
+            wire["research_aids"] = {
+                k: pattern.sub(lambda m: rewrite[m.group(0)], val)
+                for k, val in wire["research_aids"].items()
+            }
+    reverse = {field: {new: old for old, new in replacements.items()}
+               for field, replacements in aliases.items()}
+    return wire, reverse
+
+
 def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
-                timeout: int = 30, allowed_env: tuple[str, ...] = ()) -> dict:
+                timeout: int = 30, allowed_env: tuple[str, ...] = (),
+                relabel: bool = False) -> dict:
     """Run a trusted local adapter on each packet with fresh opaque variant IDs.
 
     No provider/network security boundary is supplied: local adapter code is
@@ -336,6 +397,9 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
             require(case_id == packet.get("case_id"), "mixed case IDs")
             wire = {k: v for k, v in packet.items() if k != "packet_sha256"}
             wire["probe_id"] = wire_ids[pid]
+            reverse_labels = {}
+            if relabel:
+                wire, reverse_labels = relabel_packet(wire)
             wire["packet_sha256"] = digest(wire)
             try:
                 finished = subprocess.run(command, input=json.dumps(wire, ensure_ascii=False),
@@ -356,19 +420,28 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
                     reply["packet_sha256"] == wire["packet_sha256"],
                     f"{pid}: response does not match packet")
             require(isinstance(reply["question_id"], str) and
-                    reply["question_id"] in packet["candidate_questions"],
+                    reply["question_id"] in wire["candidate_questions"],
                     f"{pid}: invalid question label")
             require(isinstance(reply["decision_id"], str) and
-                    reply["decision_id"] in packet["candidate_decisions"],
+                    reply["decision_id"] in wire["candidate_decisions"],
                     f"{pid}: invalid decision label")
-            for field, available in (("evidence_ids", packet["available_evidence_ids"]),
-                                     ("review_flags", packet["available_review_flag_ids"])):
+            for field, available in (("evidence_ids", wire["available_evidence_ids"]),
+                                     ("review_flags", wire["available_review_flag_ids"])):
                 values = reply[field]
                 require(isinstance(values, list) and all(isinstance(v, str) and v in available
                         for v in values) and len(set(values)) == len(values),
                         f"{pid}: invalid {field}")
             transport[pid] = {"opaque_probe_id": wire["probe_id"],
-                              "wire_packet_sha256": wire["packet_sha256"]}
+                              "wire_packet_sha256": wire["packet_sha256"],
+                              "relabelled": relabel,
+                              "reverse_labels": reverse_labels if relabel else {}}
+            if relabel:
+                for field, names in (("question_id", "candidate_questions"),
+                                     ("decision_id", "candidate_decisions")):
+                    reply[field] = reverse_labels[names][reply[field]]
+                for field, names in (("evidence_ids", "available_evidence_ids"),
+                                     ("review_flags", "available_review_flag_ids")):
+                    reply[field] = [reverse_labels[names][v] for v in reply[field]]
             # Freeze canonical original IDs only *after* the adapter responds.
             # The evaluator has the original frozen key; the adapter does not.
             reply["probe_id"] = pid
@@ -383,7 +456,8 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
                                 ensure_ascii=False, indent=2) + "\n")
     return {"case_id": case_id, "executed": len(outputs),
             "status": "ADAPTER_EXECUTED_ACCESS_NOT_VERIFIED", "isolation": "NOT_VERIFIED",
-            "opaque_ids": True, "adapter_sha256": hashlib.sha256(adapter.read_bytes()).hexdigest()}
+            "opaque_ids": True, "relabelled": relabel,
+            "adapter_sha256": hashlib.sha256(adapter.read_bytes()).hexdigest()}
 
 
 def compare_rescue(key_root: Path, response_root: Path) -> dict:
@@ -422,6 +496,8 @@ def main(argv: list[str] | None = None) -> int:
     c.add_argument("--adapter", type=Path, required=True)
     c.add_argument("--timeout", type=int, default=30)
     c.add_argument("--allow-env", action="append", default=[])
+    c.add_argument("--relabel", action="store_true",
+                   help="randomize question, decision, evidence and review labels")
     d = sub.add_parser("prepare-rescue", help="prepare intentionally assisted N/Q/E/QE arms")
     d.add_argument("--spec", type=Path, required=True)
     d.add_argument("--hints", type=Path, required=True)
@@ -439,7 +515,7 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         if args.command == "run":
             print(json.dumps(run_adapter(args.reviewer_dir, args.responses, args.adapter,
-                                         args.timeout, tuple(args.allow_env))))
+                                         args.timeout, tuple(args.allow_env), args.relabel)))
             return 0
         if args.command == "prepare-rescue":
             manifest = prepare_rescue(args.spec, args.hints, args.reviewer_root, args.key_root)

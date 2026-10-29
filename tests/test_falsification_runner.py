@@ -139,6 +139,66 @@ print(json.dumps({'probe_id':p['probe_id'],'packet_sha256':p['packet_sha256'],
         with self.assertRaisesRegex(InvalidProbe, 'invalid allow-env'):
             run_adapter(self.reviewer, self.responses, self.adapter, allowed_env=('INVALID=HELLO',))
 
+    def test_relabelled_labels_and_order_preserve_fact_reading_result(self):
+        """A source-reading adapter generalizes to unseen option/evidence IDs."""
+        adapter = BASE / 'experiments/eth-falsification-probe/toy_adapter.py'
+        before_path = self.root / 'normal_answers.json'
+        normal = run_adapter(self.reviewer, before_path, adapter)
+        altered = run_adapter(self.reviewer, self.responses, adapter, relabel=True)
+        self.assertFalse(normal['relabelled'])
+        self.assertTrue(altered['relabelled'])
+        key = json.loads(self.key_path.read_text())
+        a = json.loads(before_path.read_text())
+        b = json.loads(self.responses.read_text())
+        self.assertTrue(score(key, a)['passed'])
+        self.assertTrue(score(key, b)['passed'])
+        self.assertEqual({row['probe_id']: row['decision_id'] for row in a['responses']},
+                         {row['probe_id']: row['decision_id'] for row in b['responses']})
+        audit = b['transport_audit']
+        for pid, record in audit.items():
+            self.assertTrue(record['relabelled'])
+            self.assertEqual(set(record['reverse_labels']), {
+                'candidate_questions', 'candidate_decisions',
+                'available_evidence_ids', 'available_review_flag_ids'})
+            self.assertNotIn('F1', record['reverse_labels']['available_evidence_ids'])
+            self.assertNotIn('q_signature', record['reverse_labels']['candidate_questions'])
+            self.assertNotEqual(record['wire_packet_sha256'],
+                                key['answers'][pid]['packet_sha256'])
+
+    def test_fixed_option_label_adapter_is_rejected_under_relabel(self):
+        """A memorized answer label is not evidence of reasoning."""
+        # Unlike the prior probe-ID cheat, this adapter checks case text but
+        # treats option/evidence IDs as fixed constants.
+        self.adapter.write_text(TOY, encoding='utf-8')
+        run_adapter(self.reviewer, self.responses, self.adapter)
+        self.assertTrue(score(json.loads(self.key_path.read_text()),
+                              json.loads(self.responses.read_text()))['passed'])
+        relabel_out = self.root / 'relabelled.json'
+        with self.assertRaisesRegex(InvalidProbe, 'invalid question label'):
+            run_adapter(self.reviewer, relabel_out, self.adapter, relabel=True)
+        self.assertFalse(relabel_out.exists())
+
+    def test_relabelled_rescue_hints_reference_new_labels(self):
+        hints = self.root / 'hints.json'
+        hints.write_text(json.dumps({'question_hint':'Signature question q_signature',
+                                      'evidence_hint':'Use F1 and not F2.'}))
+        packet_root, key_root, output_root = (self.root / x for x in ('arms', 'keys', 'out'))
+        prepare_rescue(SPEC, hints, packet_root, key_root)
+        adapter = BASE / 'experiments/eth-falsification-probe/toy_adapter.py'
+        output_root.mkdir()
+        for arm in ('N','Q','E','QE'):
+            status = run_adapter(packet_root / arm, output_root / (arm+'.json'),
+                                 adapter, relabel=True)
+            self.assertTrue(status['relabelled'])
+        result = compare_rescue(key_root, output_root)
+        self.assertTrue(all(a['passed'] for a in result['arms'].values()))
+        # The evaluator stores only the relabel map; the live adapter sees
+        # changed evidence/question IDs in its one wire packet.
+        for arm in ('Q', 'E', 'QE'):
+            data = json.loads((output_root / (arm+'.json')).read_text())
+            self.assertTrue(all(v['relabelled']
+                                for v in data['transport_audit'].values()))
+
     def test_rescue_gold_separated_and_only_hints_vary(self):
         hints = self.root / 'hints.json'
         hints.write_text(json.dumps({'question_hint':'Focus on signature validity.',

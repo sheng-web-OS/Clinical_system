@@ -169,3 +169,46 @@ The first controlled LLM experiment should therefore use a **fresh withheld
 benchmark**, independent clinical adjudication, different contexts without
 injected historical memory, and matched native/evidence/OS conditions. There
 must be no automatic promotion to semantic publication approval.
+
+
+## V4 — semantic-preserving transport relabel (synthetic only)
+
+V3 rotated the variant ID; however the public toy still used predictable
+`q_signature` / `accept` / `F1` labels. A fixed-label adapter could therefore
+appear correct even if it was fragile to option-label changes. V4 adds an
+**opt-in** `--relabel` flag for the existing `run` operation:
+
+```bash
+python tools/falsification_probe.py run \
+  --reviewer-dir /tmp/demo-eth/packets \
+  --adapter experiments/eth-falsification-probe/toy_adapter.py \
+  --responses /tmp/demo-eth/relabelled-answers.json \
+  --relabel
+python tools/falsification_probe.py score \
+  --key /tmp/demo-eth/gold/key.json \
+  --responses /tmp/demo-eth/relabelled-answers.json
+```
+
+The transport layer generates a fresh random bijection for all question,
+decision, evidence and review-flag IDs, randomizes option order, rewrites
+`[EVIDENCE_ID]` markers and exact ID references in research hints, and
+**maps model answers back** to the original frozen case key *after* execution.
+The research question, patient-relevant facts (if used in an approved private
+evaluation), and answer semantics are unchanged; only machine labels change.
+
+The tests demonstrate that a toy which selects based on actual evidence
+text and choice descriptions still passes, whereas a toy which reads the
+signature fact but hardcodes `q_signature` and `F1` is rejected before scoring.
+This is *a regression against label/position shortcuts*, not demonstrated
+clinical model improvement, clinical semantic correctness, or provider memory
+isolation. For credible real-case analysis, adjudicators must verify that
+rewording/relabeling never changes the clinical meaning and must compare
+both normal and relabelled execution on a truly held-out case. The adapter is
+still trusted local code with general file/network capabilities; it is **not
+OS-sandboxed** and cannot certify that a hidden key was inaccessible.
+
+Reference: Chen et al., *Explanation-Guided Metamorphic Testing of
+Specialized Language Models* (ESEM 2026),
+https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.5 .
+Their empirical results concern specialized language-model testing; they
+**do not** establish effectiveness for clinical inference in this repo.
