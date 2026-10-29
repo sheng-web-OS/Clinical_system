@@ -40,7 +40,7 @@ ALT 落在正常範圍，表示這次檢測未見超過採用上限的酵素活�
 
 HBV DNA 反覆偏高且 ALT 持續升高，可以增加 HBV-related hepatitis 的病因可信度，前提是同時評估其他肝損傷原因。但這兩項檢驗只提供病毒複製與肝細胞受傷的線索，**不能由數值本身推得抗病毒藥有多大的治療效益**；療效與治療適應症還需另看指引所整合的結局研究、fibrosis 與個別風險。最能暴露差異的，不是再背一次 phase 名稱，而是把檢驗結果保持不變，看看不同指引會要求我們如何行動。
 
-先考慮 **HBeAg 陰性、無 cirrhosis、HBV DNA ≥2,000 IU/mL、ALT 高於正常上限但未達兩倍上限** 這組條件；這是用來測試門檻的假設性組合，不是一位真實患者。AASLD/IDSA 2025 的 HBeAg-negative immune-active 定義要求 ALT 至少達兩倍 ULN，未達到者可能落在 indeterminate phase。對這類無 cirrhosis 的灰區成人，Recommendation 4 是**條件式、證據確定性非常低**的抗病毒治療建議：評估 fibrosis、HCC 風險、治療負擔與患者偏好，透過共享決策選擇治療或密切追蹤；若暫不治療，之後仍要重新評估。
+先固定一組**非真實病例的測量條件**：成年男性、HBeAg 陰性、無 cirrhosis，HBV DNA **3,000 IU/mL**、ALT **45 U/L**。不能只寫「ALT 超過 ULN」就假設兩份指引量到同一件事：AASLD/IDSA 採男性正常 ALT 上限 **35 U/L**（女性 25 U/L）；EASL 一般將 **≥40 U/L** 視為升高，但仍須參照當地檢驗與性別特定界線。在這組明示條件下，ALT 高於兩者用來比較的上限，但尚未達 AASLD 男性上限的兩倍；**ALT 升高是否真由 HBV 造成，仍需另外評估**。AASLD/IDSA 2025 的 HBeAg-negative immune-active 定義要求 ALT 至少達兩倍 ULN，未達到者可能落在 indeterminate phase。對這類無 cirrhosis 的灰區成人，Recommendation 4 是**條件式、證據確定性非常低**的抗病毒治療建議：評估 fibrosis、HCC 風險、治療負擔與患者偏好，透過共享決策選擇治療或密切追蹤；若暫不治療，之後仍要重新評估。
 
 EASL 2025 的行動閾值不同：在已確認屬 **HBV 相關慢性肝炎**，而非其他原因造成 ALT 上升的前提下，HBV DNA ≥2,000 IU/mL 且 ALT >ULN，就已符合其建議治療的分支，並不必等待 ALT 達兩倍上限。**同一組觀察值，不能因某份指引稱之為 grey zone，就直接推成另一份指引也建議等待。** 差異在於兩套指引如何從不完全的病因證據與長期風險決定介入閾值，不是肝細胞在 ALT 跨過某個數字的那一刻突然改變本質。[EASL 治療適應症](../hbv-phase-sources.md#ref-easl)・[AASLD/IDSA Recommendation 4](../hbv-phase-sources.md#ref-aasld)
 
