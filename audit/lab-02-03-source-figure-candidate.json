@@ -8,9 +8,12 @@
         "source_token": "Figure 1",
         "teaching_role": "讓讀者對照 EDTA 首管 103、EDTA 後續 77 與 citrate 218，分清計數圖和血片聚集的證據角色",
         "scope_limit": "不能以不同採血時間及不同抗凝管的計數圖，推論體內血小板減少或直接看見 platelet clumping",
-        "mode": "source_link",
+        "mode": "illustrated",
         "url": "https://assets.cureus.com/uploads/case_report/pdf/353350/20250326-193380-s0wvov.pdf#page=2",
-        "why_link_instead": "讀者可直接開啟出版社原版 Fig 1 保留完整圖說與時點；本站不以重新截圖或錯誤顯微圖代替作者原圖"
+        "anchor": "lab02-lim-figure1",
+        "caption_token": "Lim E",
+        "inline_original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/835d/11947505/3ba234534955/cureus-0017-00000081211-i01.jpg",
+        "license": "CC BY 4.0, original authors credited in reader-facing caption; remote NCBI-hosted exact original Figure"
       }
     ]
   },
@@ -23,18 +26,24 @@
         "source_token": "Figure 1–2",
         "teaching_role": "在初始陰性超音波處呈現真正的影像觀察，解釋當時未見顯著水腎與排除阻塞不是同一命題",
         "scope_limit": "圖示無顯著 hydronephrosis 不足以排除延遲出現或當時未偵測到的尿路阻塞",
-        "mode": "source_link",
+        "mode": "illustrated",
         "url": "https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=2",
-        "why_link_instead": "維持原始放射影像與原作者箭頭、圖說一致；直接開啟來源避免在手機縮圖喪失訊息或暗示被重新解讀"
+        "anchor": "lab03-chen-ultrasound-originals",
+        "caption_token": "Chen Z",
+        "inline_original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/fd38f5d2ea9a/cureus-0017-00000088144-i01.jpg",
+        "license": "CC BY 4.0, original authors credited in reader-facing caption; remote NCBI-hosted exact original Figure"
       },
       {
         "locator": "Chen Cureus 2025 PDF page 4 Figure 3 CT bilateral hydronephrosis and hydroureter",
         "source_token": "CT Figure 3",
         "teaching_role": "顯示 CT 新出現的上尿路擴張證據為何能推翻原先低灌流的單線解釋並促成阻塞性病因重新評估",
         "scope_limit": "CT 原圖不能確定精確造成阻塞的病灶，也不能將介入後腎功能改善完全歸功於某種導尿管",
-        "mode": "source_link",
+        "mode": "illustrated",
         "url": "https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4",
-        "why_link_instead": "保留原作者完整 CT 圖像、箭頭、caption 與未見明確 obstructing lesion 的資訊，不使用未經驗證的自行重畫"
+        "anchor": "lab03-chen-ct-original",
+        "caption_token": "Chen Z",
+        "inline_original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/cc356ef900af/cureus-0017-00000088144-i03.jpg",
+        "license": "CC BY 4.0, original authors credited in reader-facing caption; remote NCBI-hosted exact original Figure"
       },
       {
         "locator": "Chen Cureus 2025 PDF pages 3 to 5 original Tables 1, 2, 3 and chronological contradictions",
