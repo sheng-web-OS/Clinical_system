@@ -66,7 +66,8 @@ class TransferPilotIntegrity(unittest.TestCase):
         self.hash = self.run["suite_sha256"]
 
     def report(self):
-        return evaluate(self.suite, self.run, self.hash)
+        return evaluate(self.suite, self.run, self.hash,
+                        "d" * 64, "e" * 64)
 
     def rejects(self, expected):
         with self.assertRaisesRegex(ValueError, expected):
@@ -81,6 +82,12 @@ class TransferPilotIntegrity(unittest.TestCase):
         self.assertFalse(report["independent_review_authenticated"])
         self.assertEqual(1, report["arm_metrics"]["skill"]["transfer_first_pass"])
         self.assertEqual(0, report["arm_metrics"]["retrieval"]["transfer_first_pass"])
+
+    def test_real_input_file_digest_mismatch_cannot_be_self_reported(self):
+        with self.assertRaisesRegex(ValueError, "actual retrieval pack"):
+            evaluate(self.suite, self.run, self.hash, "f" * 64, "e" * 64)
+        with self.assertRaisesRegex(ValueError, "actual retrieval pack"):
+            evaluate(self.suite, self.run, self.hash, "d" * 64, "f" * 64)
 
     def test_missing_trials_fail_closed(self):
         self.run["records"].pop()
