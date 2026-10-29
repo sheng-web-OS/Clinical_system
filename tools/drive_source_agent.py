@@ -35,6 +35,15 @@ def gate(ctx, decision):
     return decision
 
 
+def preflight_decision(ctx):
+    """Avoid paid inference when supplied metadata already settles retrieval."""
+    if ctx["source_state"] == "present":
+        return "SKIP"
+    if ctx["source_state"] != "missing" or not ctx["requires_original"]:
+        return "HOLD"
+    return None
+
+
 
 # Security: these are invariant provider error identifiers, never dynamic text.
 _OPENAI_SAFE_CODES = {
@@ -184,18 +193,22 @@ def read_synthetic_drive(folder_id):
 
 def execute(raw, mode, model_call=None, drive_call=None):
     ctx = validated_context(raw)
+    predecision = preflight_decision(ctx)
     if mode == "fixture":
-        decision = "READ" if ctx["source_state"] == "missing" and ctx["requires_original"] else "SKIP"
+        decision = predecision if predecision is not None else "READ"
     elif mode in {"shadow", "synthetic-read"}:
-        decision = (model_call or model_decision)(
-            ctx, os.getenv("OPENAI_API_KEY"), os.getenv("OPENAI_MODEL") or "gpt-5-mini")
+        decision = (predecision if predecision is not None else
+                    (model_call or model_decision)(
+                        ctx, os.getenv("OPENAI_API_KEY"),
+                        os.getenv("OPENAI_MODEL") or "gpt-5-mini"))
     else:
         raise ValueError("BAD_MODE")
     decision = gate(ctx, decision)
     read = False
     if decision == "READ" and mode == "synthetic-read":
         read = bool((drive_call or read_synthetic_drive)(os.getenv("DRIVE_FIXTURE_FOLDER_ID")))
-    return {"decision": decision, "mode": mode, "ai_decision": mode != "fixture",
+    return {"decision": decision, "mode": mode,
+            "ai_decision": mode != "fixture" and predecision is None,
             "drive_read_verified": read, "autonomy_certified": False}
 
 
