@@ -212,3 +212,54 @@ Specialized Language Models* (ESEM 2026),
 https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.5 .
 Their empirical results concern specialized language-model testing; they
 **do not** establish effectiveness for clinical inference in this repo.
+
+## V5 — evidence sufficiency / unknown is not negative (synthetic)
+
+**Why this is different from a flip/stable benchmark:** Earlier packets always had
+sufficient information for one of two fixed choices. In real research, a source
+can be relevant yet fail to establish the answer. V5 tests this missing-evidence
+state *separately* from an explicit negative fact, before any clinical content
+is involved. Inspired by Chen et al. (2026), *Relevance Is Not Sufficient
+Evidence*, https://arxiv.org/abs/2609.37469 (preprint): their results concern
+RAG evidence sufficiency and **cannot be treated as a validated clinical gate**.
+
+V5 adds an **optional**, backward-compatible `support_status` field to the
+frozen gold and agent reply (`sufficient` or `insufficient`). It is required
+for *all* variants of a case family if enabled in the baseline and does not
+appear as a correct answer in the reviewer packet (only both possible statuses
+are advertised). A wrong sufficiency judgment is scored as `S2_evidence`, even
+if the decision label happens to match. Unknown status is not a synonym for a
+confirmed negative finding. An adapter omitting the required field is rejected
+rather than scored as a successful old-schema answer.
+
+A public, **fictional nonmedical** demonstration uses a submitter signature:
+verified signed ⇒ transfer / sufficient; verified unsigned ⇒ reject / sufficient;
+no reliable record ⇒ request verification / insufficient; an unrelated cover
+color change ⇒ stable. An additional test starts from *unknown* as baseline and
+changes only the cover color, ensuring that insufficient evidence need not be
+identical to a particular original probe index.
+
+```bash
+python tools/falsification_probe.py prepare \
+  --spec experiments/eth-falsification-probe/synthetic-evidence-sufficiency.json \
+  --reviewer-dir /tmp/eth-v5-packets \
+  --key /tmp/eth-v5-keys/gold.json
+python tools/falsification_probe.py run \
+  --reviewer-dir /tmp/eth-v5-packets \
+  --adapter experiments/eth-falsification-probe/sufficiency_toy_adapter.py \
+  --responses /tmp/eth-v5-answers.json --relabel
+python tools/falsification_probe.py score \
+  --key /tmp/eth-v5-keys/gold.json --responses /tmp/eth-v5-answers.json
+```
+
+**Important validity limits:** The synthetic adapter is a hard-coded rule for
+this *public* fictional fixture, **not a model, discovery algorithm, or proof of
+learning**. The `support_status` gold remains human-authored. The runner cannot
+independently decide if actual guideline/source evidence suffices for medical
+action; correct selected evidence IDs do not certify that the Agent actually
+read or reasoned through them. Nor does an `S2_evidence` mismatch prove a causal
+root. For clinical evaluation, the missingness/confirmation statuses must be
+independently adjudicated, evidence sources access-controlled, and a fresh
+model trial conducted in an isolated environment with RED+GREEN controls.
+No patient data, private answer keys, automatic publication, network model
+calls, new scheduled actions or deployment changes belong in this PR.

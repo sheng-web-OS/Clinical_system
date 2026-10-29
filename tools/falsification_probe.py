@@ -52,8 +52,12 @@ def nonempty_mapping(value: object, name: str) -> dict:
 def gold_check(gold: object, questions: dict, choices: dict,
                fact_ids: set[str], review_ids: set[str], name: str) -> dict:
     require(isinstance(gold, dict), f"{name}: missing gold")
-    require(set(gold) == {"question_id", "evidence_ids", "decision_id", "review_flags"},
-            f"{name}: gold fields must match the fixed schema")
+    base_fields = {"question_id", "evidence_ids", "decision_id", "review_flags"}
+    require(set(gold) in (base_fields, base_fields | {"support_status"}),
+            f"{name}: gold fields must match the fixed schema (optionally support_status)")
+    if "support_status" in gold:
+        require(gold["support_status"] in ("sufficient", "insufficient"),
+                f"{name}: invalid support_status")
     require(gold["question_id"] in questions, f"{name}: invalid question")
     require(gold["decision_id"] in choices, f"{name}: invalid decision")
     for key, domain in (("evidence_ids", fact_ids), ("review_flags", review_ids)):
@@ -103,6 +107,9 @@ def validated(spec: dict) -> dict:
                 f"{pid}: nested placeholders prohibited")
         require(probe["relation"] in ("stable", "flip"), f"{pid}: invalid relation")
         gold_check(probe["gold"], questions, choices, set(facts), review_ids, pid)
+        require(("support_status" in probe["gold"]) ==
+                ("support_status" in spec["baseline_gold"]),
+                f"{pid}: support_status must be present in all gold records or none")
         baseline_choice = spec["baseline_gold"]["decision_id"]
         expected_choice = probe["gold"]["decision_id"]
         require((baseline_choice == expected_choice) == (probe["relation"] == "stable"),
@@ -132,6 +139,8 @@ def build_packets(spec: dict) -> tuple[list[dict], dict]:
             "available_evidence_ids": sorted(facts),
             "available_review_flag_ids": sorted(spec.get("review_flag_ids", [])),
         }
+        if "support_status" in spec["baseline_gold"]:
+            packet["available_support_statuses"] = ["sufficient", "insufficient"]
         packet["packet_sha256"] = digest(packet)
         packets.append(packet)
         answers[pid] = {
@@ -187,6 +196,9 @@ def score(key: dict, responses: dict) -> dict:
         require(isinstance(reply.get("evidence_ids"), list) and
                 isinstance(reply.get("review_flags"), list), f"{pid}: missing evidence/review lists")
         problems = []
+        if "support_status" in gold:
+            require(reply.get("support_status") in ("sufficient", "insufficient"),
+                    f"{pid}: missing or invalid support_status")
         for stage, field in zip(STAGES, ("question_id", "evidence_ids", "decision_id", "review_flags")):
             actual = reply.get(field)
             expected = gold[field]
@@ -197,6 +209,11 @@ def score(key: dict, responses: dict) -> dict:
                     problems.append(stage)
             elif actual != expected:
                 problems.append(stage)
+        if "support_status" in gold and reply["support_status"] != gold["support_status"]:
+            if "S2_evidence" not in problems:
+                problems.append("S2_evidence")
+        # Stage order is a reporting convention, not an inferred causal trace.
+        problems.sort(key=STAGES.index)
         results.append({"probe_id": pid, "passed": not problems,
                         "failed_stages": problems,
                         "first_observed_mismatch": problems[0] if problems else None})
@@ -413,9 +430,15 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
                 reply = json.loads(finished.stdout)
             except (json.JSONDecodeError, TypeError):
                 raise InvalidProbe(f"{pid}: adapter did not emit exactly one JSON object") from None
-            require(isinstance(reply, dict) and set(reply) == {
-                "probe_id", "packet_sha256", "question_id", "evidence_ids",
-                "decision_id", "review_flags"}, f"{pid}: unexpected response fields")
+            required_fields = {"probe_id", "packet_sha256", "question_id",
+                               "evidence_ids", "decision_id", "review_flags"}
+            if "available_support_statuses" in wire:
+                required_fields.add("support_status")
+            require(isinstance(reply, dict) and set(reply) == required_fields,
+                    f"{pid}: unexpected response fields")
+            if "available_support_statuses" in wire:
+                require(reply["support_status"] in wire["available_support_statuses"],
+                        f"{pid}: invalid support_status")
             require(reply["probe_id"] == wire["probe_id"] and
                     reply["packet_sha256"] == wire["packet_sha256"],
                     f"{pid}: response does not match packet")

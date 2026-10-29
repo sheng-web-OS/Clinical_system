@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "case_id": "synthetic_evidence_support_01",
+  "task": "A fictional document is eligible for transfer only when its submitter's signature is verified. Select the appropriate action and separately decide whether the available record is sufficient to establish signature status. Unknown is not equivalent to unsigned. This is not medical advice.",
+  "case_text": "The submitter-signature record reads {{F1}}. The document's cover color is {{F2}}.",
+  "facts": {
+    "F1": "verified: signed by the submitter",
+    "F2": "blue"
+  },
+  "candidate_questions": {
+    "signature_status": "Can the available record establish the submitter's signature status?",
+    "cover_color": "Which cover color looks better?"
+  },
+  "candidate_decisions": {
+    "transfer": "Transfer because a verified signature is documented",
+    "reject": "Hold because an unsigned document is confirmed",
+    "verify": "Request signature-status verification because existing evidence is insufficient"
+  },
+  "review_flag_ids": ["claimed_unsigned_without_evidence"],
+  "baseline_gold": {
+    "question_id": "signature_status",
+    "evidence_ids": ["F1"],
+    "decision_id": "transfer",
+    "review_flags": [],
+    "support_status": "sufficient"
+  },
+  "probes": [
+    {
+      "id": "document_unsigned",
+      "fact_id": "F1",
+      "new_value": "verified: the document is not signed by the submitter",
+      "relation": "flip",
+      "gold": {
+        "question_id": "signature_status",
+        "evidence_ids": ["F1"],
+        "decision_id": "reject",
+        "review_flags": [],
+        "support_status": "sufficient"
+      }
+    },
+    {
+      "id": "document_unknown",
+      "fact_id": "F1",
+      "new_value": "status unknown: no reliable signature entry is available",
+      "relation": "flip",
+      "gold": {
+        "question_id": "signature_status",
+        "evidence_ids": ["F1"],
+        "decision_id": "verify",
+        "review_flags": [],
+        "support_status": "insufficient"
+      }
+    },
+    {
+      "id": "irrelevant_cover_color",
+      "fact_id": "F2",
+      "new_value": "green",
+      "relation": "stable",
+      "gold": {
+        "question_id": "signature_status",
+        "evidence_ids": ["F1"],
+        "decision_id": "transfer",
+        "review_flags": [],
+        "support_status": "sufficient"
+      }
+    }
+  ]
+}
