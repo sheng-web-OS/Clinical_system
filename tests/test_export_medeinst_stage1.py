@@ -37,12 +37,16 @@ class Stage1ExportTests(unittest.TestCase):
         prepare(self.dataset, digest, ["fixture-pair"], self.worker, self.gold,
                 repo_root=self.repo, source_mode="synthetic-fixture")
         self.out = self.root / "stage"
+        self.packet_manifest = self.gold / "packet_hashes.json"
+        self.packet_manifest_sha = sha(self.packet_manifest.read_bytes())
     
     def go(self, **kw):
         opts = {
             "worker_root": self.worker, "output_dir": self.out,
             "expected_source_class": "synthetic_fixture_not_medeinst",
             "repo_root": self.repo,
+            "packet_manifest": self.packet_manifest,
+            "expected_packet_manifest_sha256": self.packet_manifest_sha,
         }
         opts.update(kw)
         return export_stage1(**opts)
@@ -126,6 +130,42 @@ class Stage1ExportTests(unittest.TestCase):
         slot.rename(self.worker / "unvalidated-name")
         with self.assertRaisesRegex(HoldoutError, "UNSAFE_OR_UNEXPECTED_WORKER_SLOT"):
             self.go()
+
+
+    def test_manifests_never_expose_gold_labels(self):
+        raw = self.packet_manifest.read_text()
+        self.assertNotIn("Fictitious Gold", raw)
+        self.assertNotIn("ground_truth", raw)
+        self.assertNotIn("case_id", raw)
+        self.assertEqual(2, len(json.loads(raw)["slots"]))
+
+    def test_replaced_worker_case_cannot_pass_frozen_digest(self):
+        packet = next(self.worker.glob("*/packet.json"))
+        obj = json.loads(packet.read_text())
+        obj["case_text"] += " Appended after approved packet snapshot."
+        packet.write_text(json.dumps(obj))
+        with self.assertRaisesRegex(HoldoutError, "PACKET_CHANGED_SINCE_PREPARATION"):
+            self.go()
+        self.assertFalse(self.out.exists())
+
+    def test_tampered_manifest_refused(self):
+        self.packet_manifest.write_text(self.packet_manifest.read_text() + " ")
+        with self.assertRaisesRegex(HoldoutError, "PACKET_MANIFEST_HASH_MISMATCH"):
+            self.go()
+
+    def test_missing_manifest_slot_refused(self):
+        raw = json.loads(self.packet_manifest.read_text())
+        raw["slots"].pop(next(iter(raw["slots"])))
+        self.packet_manifest.write_text(json.dumps(raw))
+        digest = sha(self.packet_manifest.read_bytes())
+        with self.assertRaisesRegex(HoldoutError, "PACKET_MANIFEST_SLOT_MISMATCH"):
+            self.go(expected_packet_manifest_sha256=digest)
+
+    def test_manifests_cannot_be_sourced_from_worker_root(self):
+        fake = self.worker / "packet_hashes.json"
+        fake.write_bytes(self.packet_manifest.read_bytes())
+        with self.assertRaisesRegex(HoldoutError, "MANIFEST_NOT_TRUSTED_SEPARATE"):
+            self.go(packet_manifest=fake)
 
     def test_does_not_accept_public_repo_inputs(self):
         with self.assertRaisesRegex(HoldoutError, "WORKER_INPUT_MUST_BE_OUTSIDE_PUBLIC_REPO"):
