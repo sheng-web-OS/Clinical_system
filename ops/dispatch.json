@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "repo": "sheng-web-OS/Clinical_system",
+  "mode": "shadow",
+  "max_tasks_per_run": 1,
+  "frozen_eval": {
+    "issue": 137,
+    "until_utc": "2026-11-01T06:20:15Z",
+    "excluded_targets": [
+      "issue:137",
+      "issue:159",
+      "pr:224",
+      "pr:225",
+      "pr:234",
+      "pr:235"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "ecg-original-evidence",
+      "target": "issue:76",
+      "priority": 100,
+      "enabled": true,
+      "kind": "quality_review",
+      "trigger": "issue_open"
+    },
+    {
+      "id": "mobile-figure-p0",
+      "target": "issue:79",
+      "priority": 100,
+      "enabled": true,
+      "kind": "quality_review",
+      "trigger": "issue_open"
+    },
+    {
+      "id": "public-narrative-audit",
+      "target": "issue:152",
+      "priority": 80,
+      "enabled": true,
+      "kind": "quality_review",
+      "trigger": "issue_open"
+    },
+    {
+      "id": "lab-medicine",
+      "target": "issue:180",
+      "priority": 65,
+      "enabled": true,
+      "kind": "continue_editorial",
+      "trigger": "issue_open"
+    },
+    {
+      "id": "antibiotic-deep-reading",
+      "target": "issue:179",
+      "priority": 60,
+      "enabled": true,
+      "kind": "continue_editorial",
+      "trigger": "issue_open"
+    },
+    {
+      "id": "critical-criteria",
+      "target": "issue:183",
+      "priority": 55,
+      "enabled": true,
+      "kind": "continue_editorial",
+      "trigger": "issue_open"
+    },
+    {
+      "id": "curriculum-dka-gap",
+      "target": "issue:198",
+      "priority": 50,
+      "enabled": true,
+      "kind": "continue_editorial",
+      "trigger": "issue_open"
+    }
+  ]
+}
