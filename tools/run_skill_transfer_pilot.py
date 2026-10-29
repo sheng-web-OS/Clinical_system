@@ -335,6 +335,9 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     meta["suite_sha256"] = digest(frozen_suite_bytes)
     meta["candidate_commit_git_verified"] = bool(execute and caller is None)
     meta["paid_cost_preflight"] = paid_preflight
+    # Paid calls must be durably journaled before the next request.
+    # Mock/test runs also emit the journal, but it is never an API attestation.
+    meta["first_pass_journal_v1"] = bool(execute and caller is None)
     meta["transport_kind"] = (
         "RESPONSES_API" if execute and caller is None
         else "INJECTED_TEST_DOUBLE" if execute else "NO_MODEL_CALLS"
@@ -360,12 +363,17 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
         except (PilotError, ValueError, KeyError):
             answer = None
             status = "FAILED_OR_INCOMPLETE"
-        results.append({
+        frozen_row = {
             "case_id": call["case_id"], "arm": call["arm"],
             "request_sha256": call["request_sha256"],
             "status": status, "response": answer,
             "adjudication": "NOT_DONE", "first_pass": "NOT_SCORED",
-        })
+        }
+        results.append(frozen_row)
+        # fsync per completed/failed attempt: if call N crashes or the runner
+        # terminates, attempts 1..N-1 are retained in this PRIVATE directory.
+        # Never resume or resend automatically; inspect the partial journal.
+        append_event(target / "first_pass_journal.jsonl", frozen_row)
         append_event(target / "attempt_events.jsonl", {
             "case_id": call["case_id"], "arm": call["arm"],
             "request_sha256": call["request_sha256"], "event": status})
