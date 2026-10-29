@@ -39,7 +39,10 @@ COMMON = (
     "Missing individual patient measurements cannot be filled by a general "
     "article. Be cautious about evidence-to-decision inference and uncertainty. "
     "An explanation requiring no new evidence should SKIP. A genuinely "
-    "unresolvable or unsafe issue may HOLD. Do not invent patient observations "
+    "unresolvable or unsafe issue may HOLD. Distinguish a missing reasoning "
+    "bridge (reconsider the existing evidence without fetching) from missing "
+    "primary source evidence (retrieve only for a specific evidence question "
+    "whose answer could change a conclusion). Do not invent patient observations "
     "or clinician intentions. Use Traditional Chinese."
 )
 
@@ -112,18 +115,43 @@ def validate_triage(parsed):
     return parsed
 
 
-def retrieve_after_triage(arm, triage, docs):
-    """Never access source bytes if first-stage gate did not permit retrieval."""
+def retrieve_after_triage(arm, triage, docs, *, prior_text="",
+                          retrieved_hashes=None):
+    """Bounded, targeted source access after the frozen first-stage choice.
+
+    Inspired by OpenSkill's failure-driven research triage, without importing
+    its network clients or a second agent framework. The existing experiment
+    allows at most one source per case; the optional per-task ledger also
+    prevents the same source being fetched twice by future multi-step callers.
+    """
     if triage["decision"] != "RETRIEVE":
         return None, "MODEL_" + triage["decision"]
-    if triage["gap_type"] in ("missing_patient_fact", "none"):
+    # Missing clinical observations and an unperformed reasoning step cannot
+    # be supplied by reading an unrelated general reference.
+    if triage["gap_type"] != "missing_primary_evidence":
         return None, "NON_RETRIEVABLE_GAP"
     if arm == "native":
         return None, "ARM_NO_SOURCE_ACCESS"
+    # Searching without a concrete falsifiable question is not knowledge
+    # acquisition. Leave the model's mistaken first decision in the trace.
+    if (len(triage["evidence_question"].strip()) < 8
+            or len(triage["decision_pivot"].strip()) < 8):
+        return None, "UNTARGETED_RESEARCH_REQUEST"
     matches = [doc for doc in docs if doc["id"] == triage["source_id"]]
     if len(matches) != 1:
         return None, "SOURCE_NOT_ALLOWLISTED"
-    return matches[0], "SOURCE_RETURNED"
+    selected = matches[0]
+    source_hash = digest(selected["text"])
+    if retrieved_hashes is not None and source_hash in retrieved_hashes:
+        return None, "DUPLICATE_SOURCE_REQUEST"
+    # Only an exact previously provided source body is sufficient for this
+    # deterministic SKIP; semantic similarity alone is not evidence of access.
+    if selected["text"].strip() and (
+            " ".join(selected["text"].split()) in " ".join(prior_text.split())):
+        return None, "SOURCE_ALREADY_PRESENT"
+    if retrieved_hashes is not None:
+        retrieved_hashes.add(source_hash)
+    return selected, "SOURCE_RETURNED"
 
 
 def answer_request(case, triage, document, model):
@@ -154,7 +182,9 @@ def run_case(case, arm, docs, skill, model, caller):
     first = triage_request(case, arm, docs, skill, model)
     first_response = caller(first)
     triage = validate_triage(json.loads(first_response["answer"]))
-    document, outcome = retrieve_after_triage(arm, triage, docs)
+    # One case has an isolated per-task retrieval ledger and a one-source cap.
+    document, outcome = retrieve_after_triage(
+        arm, triage, docs, prior_text=case["task"], retrieved_hashes=set())
     record = {
         "case_id": case["id"], "arm": arm, "triage": triage,
         "triage_request_sha256": digest(json.dumps(first, ensure_ascii=False, sort_keys=True)),
