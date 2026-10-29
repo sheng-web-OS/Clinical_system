@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from selective_retrieval_probe import (validate_fixture, triage_request, validate_triage,
     retrieve_after_triage, answer_request, run_case, execute, digest, build_plan,
-    paired_order, PilotError)
+    paired_order, build_blind_packet, PilotError)
 
 FIXTURE = ROOT / "experiments/skill-transfer/fixtures/selective-retrieval-synthetic.json"
 DATA = json.loads(FIXTURE.read_text(encoding="utf-8"))
@@ -199,6 +199,34 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
             self.assertTrue(all("arm" not in str(answer) and "case_id" not in str(answer)
                                 for case in packet for answer in case["candidate_answers"]))
             self.assertEqual(got["status"], "DEVELOPMENT_TEST_DOUBLE_ONLY")
+
+    def test_native_arm_gate_code_never_leaks_to_reviewer(self):
+        # This is the exact arm-identity escape found in the prior packet:
+        # native RETRIEVE -> ARM_NO_SOURCE_ACCESS was copied unchanged.
+        rows = []
+        for arm in ("native", "retrieval", "skill"):
+            rows.append({
+                "case_id": CASES[0]["id"], "arm": arm,
+                "status": "COMPLETED",
+                "triage": response(),
+                "retrieval_gate": ("ARM_NO_SOURCE_ACCESS" if arm == "native"
+                                   else "SOURCE_RETURNED"),
+                "retrieved_source_id": (None if arm == "native"
+                                        else "synthetic-assay-brief"),
+                "answer": "A synthetic educational explanation",
+            })
+        packet, mapping = build_blind_packet([CASES[0]], rows, "a" * 64)
+        serialized = json.dumps(packet, ensure_ascii=False)
+        self.assertNotIn("ARM_NO_SOURCE_ACCESS", serialized)
+        self.assertNotIn("SOURCE_RETURNED", serialized)
+        self.assertNotIn("retrieval_gate", serialized)
+        self.assertEqual(len(mapping), 3)
+        self.assertEqual(sorted(item["source_exposed"] for item in
+                                packet[0]["candidate_answers"]),
+                         [False, True, True])
+        # Exact internal reason codes remain available in original private
+        # result rows, not the blind packet.
+        self.assertEqual(rows[0]["retrieval_gate"], "ARM_NO_SOURCE_ACCESS")
 
     def test_failed_first_stage_remains_incomplete_not_fabricated_review(self):
         def fail_all(request):
