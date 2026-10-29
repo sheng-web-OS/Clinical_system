@@ -31,10 +31,10 @@ def load_manifest(path):
     require(type(config["schema_version"]) is int and
             config["schema_version"] == 1 and config["repo"] == REPO,
             "INVALID_REPOSITORY_OR_VERSION")
-    require(config["mode"] == "shadow" and
+    require(config["mode"] in {"shadow", "active"} and
             type(config["max_tasks_per_run"]) is int and
             config["max_tasks_per_run"] == 1,
-            "SHADOW_ONLY_ONE_TASK_PER_TICK")
+            "UNAPPROVED_MODE_OR_TASK_BATCH")
     freeze = config["frozen_eval"]
     require(type(freeze) is dict and set(freeze) == {
         "issue", "until_utc", "excluded_targets"}, "INVALID_EVAL_LOCK")
@@ -103,8 +103,10 @@ def select_tasks(config, snapshot):
     # open. Return the ordered queue so the ChatGPT worker can check every
     # candidate's live PR/owner/last gate and skip it without starving others.
     # Issue-open status alone is NEVER an execution authorization.
-    return {"status": "SHADOW_NO_ACTION", "model_calls": 0,
-            "write_actions": 0, "execution_authorized": False,
+    return {"status": ("SHADOW_NO_ACTION" if config["mode"] == "shadow"
+                       else "ACTIVE_PLAN_ONLY"),
+            "model_calls": 0, "write_actions": 0,
+            "execution_authorized": False,
             "selected": eligible[:1],
             "candidates": eligible,
             "selection_requires_live_gate_check": True,
