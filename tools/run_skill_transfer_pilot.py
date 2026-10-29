@@ -28,7 +28,7 @@ MAX_OUTPUT_TOKENS = 1100
 # Ref: https://developers.openai.com/api/docs/models/gpt-5-mini
 LIVE_MODEL = "gpt-5-mini"
 MAX_PAID_CALLS = 9
-MAX_ESTIMATED_SUBTRIAL_USD = 1.00
+MAX_ESTIMATED_SUBTRIAL_USD = 0.50
 MODEL_INPUT_USD_PER_M = 0.25
 MODEL_OUTPUT_USD_PER_M = 2.00
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
