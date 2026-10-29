@@ -140,3 +140,32 @@ This remains a **Draft research instrument, not a new mandatory editorial gate**
 If no meaningful clinical error reduction or time saving is demonstrated over
 the native model, delete/retire the extra tool rather than making every article
 pay its complexity cost.
+
+## 2026-10-29: verified benchmark shortcut and limited mitigation
+
+An intentionally incorrect *ID-only* Python adapter, which never inspected
+`case_text`, obtained **3/3 passing** on the original public synthetic fixture:
+`baseline -> accept`, `p01 -> hold`, `p02 -> accept`. This is an observed
+benchmark-artifact counterexample, NOT a model failure or clinical observation.
+
+The adapter runner now replaces each predictable original `probe_id` with a
+fresh unpredictable `trial_...` identifier **at subprocess transport time**, and
+recomputes that wire packet's SHA-256. It shuffles variant execution order and
+runs subprocesses from an empty temporary working directory. Once the adapter
+returns its wire ID/hash, the evaluator freezes an original-ID response and
+keeps a coordinator-side `transport_audit` mapping. A fixed-ID memorization
+shortcut now scores **FAIL** while the fact-reading toy still scores PASS.
+
+**Critical limits:** This does not prevent recognizing publicly posted cases,
+training-data memorization, exploiting answer-bearing option descriptions, or
+untrusted code from accessing files/network by other means. An empty cwd is
+**not** a sandbox; the adapter must be trusted and isolated by the actual
+provider/container for credible clinical evaluation. Wire aliases are not
+cryptographic attestations of who performed the inference. The status is
+`ADAPTER_EXECUTED_ACCESS_NOT_VERIFIED` and `isolation=NOT_VERIFIED` for that
+reason. This tool's gold is public and cannot itself measure clinical gain.
+
+The first controlled LLM experiment should therefore use a **fresh withheld
+benchmark**, independent clinical adjudication, different contexts without
+injected historical memory, and matched native/evidence/OS conditions. There
+must be no automatic promotion to semantic publication approval.

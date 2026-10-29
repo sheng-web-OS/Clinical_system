@@ -14,7 +14,9 @@ import os
 import subprocess
 from pathlib import Path
 import re
+import secrets
 import sys
+import tempfile
 
 FACT_TOKEN = re.compile(r"\{\{([A-Za-z][A-Za-z0-9_]*)\}\}")
 ID = re.compile(r"^[A-Za-z][A-Za-z0-9_-]{0,63}$")
@@ -281,9 +283,10 @@ def prepare_rescue(spec_path: Path, hints_path: Path,
 
 def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
                 timeout: int = 30, allowed_env: tuple[str, ...] = ()) -> dict:
-    """Execute a provided local executable once per frozen packet, without gold.
+    """Run a trusted local adapter on each packet with fresh opaque variant IDs.
 
-    No provider/network safety promise: the adapter itself is trusted software.
+    No provider/network security boundary is supplied: local adapter code is
+    trusted, and filesystem/model-memory access cannot be attested here.
     """
     reviewer_dir = reviewer_dir.resolve()
     responses_path = responses_path.resolve()
@@ -304,62 +307,83 @@ def run_adapter(reviewer_dir: Path, responses_path: Path, adapter: Path,
     command = [sys.executable, str(adapter)] if adapter.suffix == ".py" else [str(adapter)]
     files = sorted(reviewer_dir.glob("*.json"))
     require(bool(files), "no reviewer packets")
+    # Do not expose the fixed fixture IDs (baseline/p01/p02) to the adapter.
+    # These predictable IDs previously let a no-reading adapter score 3/3.
+    # This is a shortcut mitigation, NOT a proof of model/context isolation.
+    secrets.SystemRandom().shuffle(files)
+    wire_ids = {path.stem: "trial_" + secrets.token_hex(16) for path in files}
+    require(len(set(wire_ids.values())) == len(files), "opaque probe ID collision")
     seen = set()
     case_id = None
     outputs = []
-    for path in files:
-        packet = json.loads(path.read_text(encoding="utf-8"))
-        require(isinstance(packet, dict) and packet.get("schema_version") == 1,
-                f"{path.name}: bad packet schema")
-        pid = packet.get("probe_id")
-        require(isinstance(pid, str) and ID.fullmatch(pid) and pid == path.stem and pid not in seen,
-                f"{path.name}: invalid/duplicate probe ID")
-        seen.add(pid)
-        require(packet.get("packet_sha256") == digest({k: v for k, v in packet.items()
-                                                        if k != "packet_sha256"}),
-                f"{pid}: altered packet or SHA")
-        if case_id is None:
-            case_id = packet.get("case_id")
-        require(case_id == packet.get("case_id"), "mixed case IDs")
-        try:
-            finished = subprocess.run(command, input=json.dumps(packet, ensure_ascii=False),
-                                      text=True, capture_output=True, timeout=timeout,
-                                      env=env, cwd=reviewer_dir, check=False)
-        except subprocess.TimeoutExpired:
-            raise InvalidProbe(f"{pid}: adapter timeout") from None
-        require(finished.returncode == 0, f"{pid}: adapter exited nonzero")
-        require(len(finished.stdout) <= 100_000, f"{pid}: adapter stdout too large")
-        try:
-            reply = json.loads(finished.stdout)
-        except (json.JSONDecodeError, TypeError):
-            raise InvalidProbe(f"{pid}: adapter did not emit exactly one JSON object") from None
-        require(isinstance(reply, dict) and set(reply) == {
-            "probe_id", "packet_sha256", "question_id", "evidence_ids",
-            "decision_id", "review_flags"}, f"{pid}: unexpected response fields")
-        require(reply["probe_id"] == pid and
-                reply["packet_sha256"] == packet["packet_sha256"],
-                f"{pid}: response does not match packet")
-        require(isinstance(reply["question_id"], str) and
-                reply["question_id"] in packet["candidate_questions"],
-                f"{pid}: invalid question label")
-        require(isinstance(reply["decision_id"], str) and
-                reply["decision_id"] in packet["candidate_decisions"],
-                f"{pid}: invalid decision label")
-        for field, available in (("evidence_ids", packet["available_evidence_ids"]),
-                                 ("review_flags", packet["available_review_flag_ids"])):
-            values = reply[field]
-            require(isinstance(values, list) and all(isinstance(v, str) and v in available
-                    for v in values) and len(set(values)) == len(values),
-                    f"{pid}: invalid {field}")
-        outputs.append(reply)
+    transport = {}
+    # An empty working directory reduces incidental access to the source
+    # packet set. It is NOT a security sandbox for an untrusted adapter.
+    with tempfile.TemporaryDirectory(prefix="probe-adapter-cwd-") as workdir:
+        for path in files:
+            packet = json.loads(path.read_text(encoding="utf-8"))
+            require(isinstance(packet, dict) and packet.get("schema_version") == 1,
+                    f"{path.name}: bad packet schema")
+            pid = packet.get("probe_id")
+            require(isinstance(pid, str) and ID.fullmatch(pid) and pid == path.stem and pid not in seen,
+                    f"{path.name}: invalid/duplicate probe ID")
+            seen.add(pid)
+            require(packet.get("packet_sha256") == digest({k: v for k, v in packet.items()
+                                                            if k != "packet_sha256"}),
+                    f"{pid}: altered packet or SHA")
+            if case_id is None:
+                case_id = packet.get("case_id")
+            require(case_id == packet.get("case_id"), "mixed case IDs")
+            wire = {k: v for k, v in packet.items() if k != "packet_sha256"}
+            wire["probe_id"] = wire_ids[pid]
+            wire["packet_sha256"] = digest(wire)
+            try:
+                finished = subprocess.run(command, input=json.dumps(wire, ensure_ascii=False),
+                                          text=True, capture_output=True, timeout=timeout,
+                                          env=env, cwd=workdir, check=False)
+            except subprocess.TimeoutExpired:
+                raise InvalidProbe(f"{pid}: adapter timeout") from None
+            require(finished.returncode == 0, f"{pid}: adapter exited nonzero")
+            require(len(finished.stdout) <= 100_000, f"{pid}: adapter stdout too large")
+            try:
+                reply = json.loads(finished.stdout)
+            except (json.JSONDecodeError, TypeError):
+                raise InvalidProbe(f"{pid}: adapter did not emit exactly one JSON object") from None
+            require(isinstance(reply, dict) and set(reply) == {
+                "probe_id", "packet_sha256", "question_id", "evidence_ids",
+                "decision_id", "review_flags"}, f"{pid}: unexpected response fields")
+            require(reply["probe_id"] == wire["probe_id"] and
+                    reply["packet_sha256"] == wire["packet_sha256"],
+                    f"{pid}: response does not match packet")
+            require(isinstance(reply["question_id"], str) and
+                    reply["question_id"] in packet["candidate_questions"],
+                    f"{pid}: invalid question label")
+            require(isinstance(reply["decision_id"], str) and
+                    reply["decision_id"] in packet["candidate_decisions"],
+                    f"{pid}: invalid decision label")
+            for field, available in (("evidence_ids", packet["available_evidence_ids"]),
+                                     ("review_flags", packet["available_review_flag_ids"])):
+                values = reply[field]
+                require(isinstance(values, list) and all(isinstance(v, str) and v in available
+                        for v in values) and len(set(values)) == len(values),
+                        f"{pid}: invalid {field}")
+            transport[pid] = {"opaque_probe_id": wire["probe_id"],
+                              "wire_packet_sha256": wire["packet_sha256"]}
+            # Freeze canonical original IDs only *after* the adapter responds.
+            # The evaluator has the original frozen key; the adapter does not.
+            reply["probe_id"] = pid
+            reply["packet_sha256"] = packet["packet_sha256"]
+            outputs.append(reply)
     require("baseline" in seen, "missing baseline packet")
     responses_path.parent.mkdir(parents=True, exist_ok=True)
     # exclusive create; failed runs do not create an incomplete file
     with responses_path.open("x", encoding="utf-8") as stream:
-        stream.write(json.dumps({"case_id": case_id, "responses": outputs},
+        stream.write(json.dumps({"case_id": case_id, "responses": outputs,
+                                 "transport_audit": transport},
                                 ensure_ascii=False, indent=2) + "\n")
     return {"case_id": case_id, "executed": len(outputs),
-            "status": "ADAPTER_EXECUTED_GOLD_NOT_ACCESSED", "isolation": "NOT_VERIFIED"}
+            "status": "ADAPTER_EXECUTED_ACCESS_NOT_VERIFIED", "isolation": "NOT_VERIFIED",
+            "opaque_ids": True, "adapter_sha256": hashlib.sha256(adapter.read_bytes()).hexdigest()}
 
 
 def compare_rescue(key_root: Path, response_root: Path) -> dict:

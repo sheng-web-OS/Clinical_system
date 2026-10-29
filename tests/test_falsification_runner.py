@@ -49,6 +49,63 @@ class ExecutableProbeTests(unittest.TestCase):
         responses = json.loads(self.responses.read_text())
         self.assertTrue(score(key, responses)['passed'])
 
+    def test_known_probe_id_shortcut_was_real_but_is_now_blocked(self):
+        # The pre-fix runner scored this 3/3 although it NEVER read case_text.
+        # This regression checks the actual subprocess, not just the rubric.
+        shortcut = '''#!/usr/bin/env python3
+import json,sys
+p=json.load(sys.stdin)
+choice={'baseline':'accept','p01':'hold','p02':'accept'}.get(p['probe_id'],'hold')
+print(json.dumps({'probe_id':p['probe_id'],'packet_sha256':p['packet_sha256'],
+  'question_id':'q_signature','evidence_ids':['F1'],'decision_id':choice,
+  'review_flags':[]}))
+'''
+        self.adapter.write_text(shortcut, encoding='utf-8')
+        status = run_adapter(self.reviewer, self.responses, self.adapter)
+        self.assertTrue(status['opaque_ids'])
+        self.assertEqual(status['status'], 'ADAPTER_EXECUTED_ACCESS_NOT_VERIFIED')
+        frozen = json.loads(self.responses.read_text())
+        self.assertEqual(len(frozen['transport_audit']), 3)
+        self.assertTrue(all(item['opaque_probe_id'].startswith('trial_')
+                            for item in frozen['transport_audit'].values()))
+        result = score(json.loads(self.key_path.read_text()), frozen)
+        self.assertFalse(result['passed'])
+        self.assertTrue(any('S3_decision' in row['failed_stages']
+                            for row in result['results']))
+
+    def test_transport_ids_rotate_across_reruns_and_do_not_change_gold(self):
+        one = run_adapter(self.reviewer, self.responses, self.adapter)
+        second_path = self.root / 'responses_second.json'
+        two = run_adapter(self.reviewer, second_path, self.adapter)
+        self.assertEqual(one['adapter_sha256'], two['adapter_sha256'])
+        raw_one = json.loads(self.responses.read_text())
+        raw_two = json.loads(second_path.read_text())
+        a = {v['opaque_probe_id'] for v in raw_one['transport_audit'].values()}
+        b = {v['opaque_probe_id'] for v in raw_two['transport_audit'].values()}
+        self.assertFalse(a & b)
+        self.assertEqual(len(a), 3)
+        self.assertTrue(all('baseline' not in alias and 'p01' not in alias
+                            and 'p02' not in alias for alias in a | b))
+        key = json.loads(self.key_path.read_text())
+        self.assertTrue(score(key, raw_one)['passed'])
+        self.assertTrue(score(key, raw_two)['passed'])
+
+    def test_adapter_cannot_inspect_original_packet_filenames_via_cwd(self):
+        adapter = '''#!/usr/bin/env python3
+import json,sys,os
+p=json.load(sys.stdin)
+if os.listdir('.') or p['probe_id'] in ('baseline','p01','p02'):
+    sys.exit(4)
+signed='[F1] signed by its submitter' in p['case_text']
+print(json.dumps({'probe_id':p['probe_id'],'packet_sha256':p['packet_sha256'],
+ 'question_id':'q_signature','evidence_ids':['F1'],
+ 'decision_id':'accept' if signed else 'hold','review_flags':[]}))
+'''
+        self.adapter.write_text(adapter, encoding='utf-8')
+        run_adapter(self.reviewer, self.responses, self.adapter)
+        self.assertTrue(score(json.loads(self.key_path.read_text()),
+                              json.loads(self.responses.read_text()))['passed'])
+
     def test_run_fails_closed_without_overwriting(self):
         run_adapter(self.reviewer, self.responses, self.adapter)
         with self.assertRaisesRegex(InvalidProbe, 'overwrite'):
