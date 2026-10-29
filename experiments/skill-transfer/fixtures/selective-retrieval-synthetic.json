@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_class": "synthetic_public_fixture",
+  "exposure": "development_only_public_exposed",
+  "cases": [
+    {
+      "id": "k-preanalytic-discrepancy",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 虛構的教學檢驗報告顯示血清鉀 6.4 mmol/L，該檢體具有 hemolysis 註記；同日較晚的一次非溶血檢體鉀為 4.2 mmol/L。兩次採檢的確切時間、臨床狀態與 ECG 均未提供。請討論這兩個結果所能與不能支持的檢體及病人層級推論，如何界定不確定性，及哪些資訊會實質改變結論；不要替病人開立處置或假設檢體一定是偽高血鉀。"
+    },
+    {
+      "id": "missing-timepoint",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 虛構病歷摘要記載曾有一次血鉀 6.2 mmol/L，但並未記錄採血時間、溶血狀態、同時的 ECG、腎功能或臨床處置，也沒有當時完整病歷。有人希望根據這個單一數值推斷當時醫師『必然已判斷其機轉與立即治療必要性』。請評估推論的證據界線，選擇是否需要外部資料，以及哪些個案資料才有可能澄清原事件。"
+    },
+    {
+      "id": "abg-concept-only",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 這是虛構的醫學生教學提問，沒有個別病人資料。學生想理解血液氣體中的 PaCO2、alveolar ventilation 與 total minute ventilation 的關係，並知道為什麼呼吸次數增加不一定會讓 PaCO2 等比例下降。請以連續的生理機轉解釋，沒有診療行動需要決策，也不要自行捏造個案數值。"
+    }
+  ],
+  "documents": [
+    {
+      "id": "synthetic-assay-brief",
+      "title": "Synthetic laboratory assay reliability note",
+      "text": "This entirely fictional teaching reference describes common specimen integrity limitations, not a patient's findings. In vitro hemolysis may increase measured potassium through cell disruption; the size of interference depends on method and degree of hemolysis. A repeat specimen with a different result can change confidence in the initial value but does not, by itself, recover the true physiological potassium at the original time. Timestamp, concurrent physiology, specimen type and clinical findings remain necessary for case-level inferences. It supplies no diagnosis or orders."
+    },
+    {
+      "id": "synthetic-ventilation-brief",
+      "title": "Synthetic physiology reference on ventilation",
+      "text": "This entirely fictional educational reference summarizes a general physiological relationship for teaching. Alveolar ventilation depends on tidal volume minus physiological dead space, multiplied by respiratory frequency; minute ventilation also includes dead-space ventilation. Carbon dioxide production, steady state assumptions and dead space affect observed PaCO2. This abstract note contains no patient records, arterial blood gas measurements, timestamps or clinical treatment recommendations. It cannot fill missing individual observations."
+    }
+  ]
+}
