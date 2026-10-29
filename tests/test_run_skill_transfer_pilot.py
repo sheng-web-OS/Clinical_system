@@ -167,7 +167,7 @@ class RunnerTest(unittest.TestCase):
         obj["cases"].pop()
         with self.assertRaisesRegex(PilotError, "EXACTLY_THREE_SYNTHETIC_CASES_REQUIRED"):
             clean_cases(obj)
-        obj["cases"] = CASES
+        obj["cases"] = [dict(c) for c in CASES]
         obj["cases"][2] = dict(obj["cases"][2], role="transfer")
         with self.assertRaisesRegex(PilotError, "REQUIRE_TRANSFER_NORMAL_BOUNDARY"):
             clean_cases(obj)
