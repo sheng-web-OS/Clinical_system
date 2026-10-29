@@ -149,17 +149,21 @@ jobs:
           PY
           # End-to-end no-model handoff into the REAL PR #225 B/C packet helper.
           # Pin both exact Git blobs; do not execute unpinned upstream code.
+          # Preserve PR225's __file__-relative repo-root safety policy.
+          # The source code lives under a dedicated temporary checkout-like tree;
+          # output packages live in a sibling directory, not inside that tree.
+          mkdir -p "$scratch/pr225-reviewed-code/tools"
           curl --fail --location --silent --show-error --connect-timeout 15 --max-time 45 \
             'https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0/tools/prepare_staged_bc_packets.py' \
-            -o "$scratch/pr225_prepare_staged_bc_packets.py"
-          test "$(git hash-object "$scratch/pr225_prepare_staged_bc_packets.py")" = 'b2cf98b6396334ad4708c50c37a404bbe173537b'
+            -o "$scratch/pr225-reviewed-code/tools/prepare_staged_bc_packets.py"
+          test "$(git hash-object "$scratch/pr225-reviewed-code/tools/prepare_staged_bc_packets.py")" = 'b2cf98b6396334ad4708c50c37a404bbe173537b'
           curl --fail --location --silent --show-error --connect-timeout 15 --max-time 45 \
             'https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0/.agents/skills/decision-question-triage/SKILL.md' \
             -o "$scratch/decision-question-triage.md"
           test "$(git hash-object "$scratch/decision-question-triage.md")" = '9e2115bbdb55697741da6263be53df1bee6504fe'
           stage_sha="$(sha256sum "$scratch/pr225-stage1/manifest.json" | cut -d' ' -f1)"
           skill_sha="$(sha256sum "$scratch/decision-question-triage.md" | cut -d' ' -f1)"
-          python "$scratch/pr225_prepare_staged_bc_packets.py" \
+          python "$scratch/pr225-reviewed-code/tools/prepare_staged_bc_packets.py" \
             --stage1-zip "$scratch/pr225-stage1/stage1.zip" \
             --manifest "$scratch/pr225-stage1/manifest.json" \
             --skill "$scratch/decision-question-triage.md" \
