@@ -46,6 +46,8 @@ class AggregateAuditContract(unittest.TestCase):
         self.assertEqual("STRUCTURAL_AUDIT_ONLY", result["verdict"])
         self.assertFalse(result["one_fact_intervention_verified"])
         self.assertFalse(result["clinical_counterfactual_validated"])
+        self.assertFalse(result["model_execution_authorized"])
+        self.assertEqual(0, result["structurally_excluded_pairs"])
         self.assertEqual(0, result["model_calls"])
         dumped = json.dumps(result)
         for forbidden in ("SIMULATED CASE", "Gold X", '"case_id"', '"narrative"'):
@@ -74,7 +76,9 @@ class AggregateAuditContract(unittest.TestCase):
         self.save()
         report = self.call()
         self.assertEqual(1, report["same_diagnosis_label_pairs"])
-        self.assertEqual("HOLD_DATASET_PAIR_SEMANTICS", report["verdict"])
+        self.assertEqual("STRUCTURAL_AUDIT_WITH_EXCLUSIONS", report["verdict"])
+        self.assertEqual(1, report["structurally_excluded_pairs"])
+        self.assertEqual(1, report["remaining_structurally_eligible_pairs"])
         self.assertNotIn("Gold X", json.dumps(report))
 
     def test_identical_case_text_is_detected(self):
@@ -82,7 +86,8 @@ class AggregateAuditContract(unittest.TestCase):
         self.save()
         report = self.call()
         self.assertEqual(1, report["identical_narrative_pairs"])
-        self.assertEqual("HOLD_DATASET_PAIR_SEMANTICS", report["verdict"])
+        self.assertEqual(1, report["structurally_excluded_pairs"])
+        self.assertEqual("STRUCTURAL_AUDIT_WITH_EXCLUSIONS", report["verdict"])
 
     def test_digest_refuses_changed_dataset(self):
         self.path.write_text(self.path.read_text() + "\n", encoding="utf-8")
@@ -126,7 +131,8 @@ class AggregateAuditContract(unittest.TestCase):
         report = self.call()
         self.assertEqual(1, report["narratives_above_worker_limit"])
         self.assertEqual(1, report["pairs_above_worker_limit"])
-        self.assertEqual("STRUCTURAL_AUDIT_WITH_WORKER_EXCLUSIONS", report["verdict"])
+        self.assertEqual(1, report["structurally_excluded_pairs"])
+        self.assertEqual("STRUCTURAL_AUDIT_WITH_EXCLUSIONS", report["verdict"])
         self.assertFalse(report["one_fact_intervention_verified"])
 
     def test_invalid_extremely_short_narrative_stays_rejected(self):
