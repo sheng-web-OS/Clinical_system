@@ -60,6 +60,11 @@ def evaluate(suite, run, suite_digest, retrieval_pack_digest, candidate_skill_di
         key = item.get("case_id"), item.get("arm")
         require(key in expected and key not in found, "unknown or duplicate paired trial")
         found[key] = item
+        require(item.get("attempt_status") in {"COMPLETED", "FAILED_OR_INCOMPLETE"},
+                "missing or invalid actual model attempt status")
+        if item["attempt_status"] != "COMPLETED":
+            require(not item.get("first_pass") and not item.get("decision_correct"),
+                    "incomplete model output cannot receive success credit")
         for field in ("decision_correct", "first_pass", "unsafe", "hinted", "false_alarm",
                       "article_retrieval_visible", "candidate_skill_visible",
                       "skill_applied"):
@@ -129,10 +134,13 @@ def evaluate(suite, run, suite_digest, retrieval_pack_digest, candidate_skill_di
             "skill_applied_transfer": sum(t["skill_applied"] for t in by_role["transfer"]),
             "skill_applied_boundary": sum(t["skill_applied"] for t in by_role["boundary"]),
             "unsafe": sum(t["unsafe"] for t in arm_trials),
+            "incomplete_attempts": sum(
+                t["attempt_status"] != "COMPLETED" for t in arm_trials),
             "owner_minutes": sum(measured) if len(measured) == len(arm_trials) else None,
         }
     b, c = metrics["retrieval"], metrics["skill"]
     unsafe = any(m["unsafe"] for m in metrics.values())
+    incomplete = any(m["incomplete_attempts"] for m in metrics.values())
     control_regression = (c["normal_first_pass"] < b["normal_first_pass"]
                           or c["boundary_first_pass"] < b["boundary_first_pass"]
                           or c["false_alarms_normal"] > b["false_alarms_normal"]
@@ -140,8 +148,8 @@ def evaluate(suite, run, suite_digest, retrieval_pack_digest, candidate_skill_di
     transfer_gain = c["transfer_first_pass"] > b["transfer_first_pass"]
     cost_worse = (b["owner_minutes"] is None or c["owner_minutes"] is None
                   or c["owner_minutes"] > b["owner_minutes"])
-    if unsafe or control_regression:
-        verdict = "HOLD_SAFETY_OR_CONTROL_REGRESSION"
+    if unsafe or control_regression or incomplete:
+        verdict = "HOLD_SAFETY_CONTROL_OR_INCOMPLETE_RUN"
     elif transfer_gain and c["skill_applied_transfer"] > 0 and not cost_worse:
         verdict = "DEVELOPMENT_GAIN_ONLY_NEEDS_INDEPENDENT_HOLDOUT"
     else:
@@ -163,7 +171,7 @@ def evaluate(suite, run, suite_digest, retrieval_pack_digest, candidate_skill_di
         "publication_approved": False,
         "limitations": (
             "This checks declared paired outputs and mechanical completeness, not "
-            "real model calls, source retrieval, skill invocation traces, blinded reviewer identity, clinical accuracy or skill transfer. "
+            "live model provider identity, source retrieval, skill invocation traces, blinded reviewer identity, clinical accuracy or skill transfer. "
             "Private unseen-case keys and human review are required for validation."
         ),
     }
