@@ -131,7 +131,7 @@ class TransferPilotIntegrity(unittest.TestCase):
         self.rejects("first-pass credit contradicts")
 
     def test_missing_cost_is_not_free_and_no_gain_cannot_pass(self):
-        self.run["records"][0]["owner_minutes"] = None
+        next(r for r in self.run["records"] if r["arm"] == "skill")["owner_minutes"] = None
         self.assertEqual("NO_PROMOTABLE_INCREMENT", self.report()["verdict"])
         self.suite, self.run = fixture()
         for r in self.run["records"]:
