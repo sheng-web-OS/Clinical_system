@@ -1,0 +1,208 @@
+name: MedEinst public dataset adapter smoke (read-only)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - tools/prepare_medeinst_holdout.py
+      - tests/test_prepare_medeinst_holdout.py
+      - experiments/medeinst-transfer/README.md
+      - tools/audit_medeinst_pairs.py
+      - tests/test_audit_medeinst_pairs.py
+      - tools/export_medeinst_stage1.py
+      - tests/test_export_medeinst_stage1.py
+      - .github/workflows/medeinst-source-smoke.yml
+
+permissions:
+  contents: read
+
+jobs:
+  official-source-compatibility:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check pinned public source and prepare only an ephemeral public-data packet set
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          scratch="$(mktemp -d)"
+          trap 'rm -rf "$scratch"' EXIT
+          # MedEinst is public, CC BY 4.0, DDXPlus-derived; no actual patient record.
+          # Never emit clinical narratives or labels to logs or save artifacts.
+          curl --fail --location --silent --show-error --retry 2 \
+            --connect-timeout 15 --max-time 240 \
+            'https://huggingface.co/datasets/zhui711/MedEinst/resolve/main/test.jsonl' \
+            -o "$scratch/test.jsonl"
+          echo "b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57  $scratch/test.jsonl" | sha256sum --check --status
+          export DATASET_PATH="$scratch/test.jsonl"
+          # Diagnostic-only cohort profile; never prints texts, IDs or labels.
+          # This helps distinguish upstream schema from an overly strict local threshold.
+          python - <<'PY'
+          from collections import Counter
+          import json, os
+          stats=Counter()
+          with open(os.environ['DATASET_PATH'],encoding='utf-8') as source:
+              for line in source:
+                  if not line.strip():
+                      continue
+                  stats['records']+=1
+                  try:
+                      row=json.loads(line)
+                  except ValueError:
+                      stats['invalid_json']+=1
+                      continue
+                  if not isinstance(row,dict):
+                      stats['not_object']+=1
+                      continue
+                  key=row.get('case_id')
+                  variant=row.get('case_type')
+                  narrative=row.get('narrative')
+                  label=row.get('ground_truth')
+                  if not isinstance(key,str) or not key:
+                      stats['bad_id_type_or_empty']+=1
+                  if variant not in ('control','trap','control_case','trap_case'):
+                      stats['bad_variant_type_or_value']+=1
+                  if not isinstance(narrative,str):
+                      stats['bad_narrative_type']+=1
+                  else:
+                      if len(narrative)<30:stats['narrative_short']+=1
+                      if len(narrative)>12000:stats['narrative_long']+=1
+                  if not isinstance(label,str) or not label:
+                      stats['bad_label_type_or_empty']+=1
+                  elif len(label)>180:
+                      stats['label_long']+=1
+          print('MEDEINST_SOURCE_AGGREGATES_ONLY: '+json.dumps(dict(sorted(stats.items()))))
+          PY
+          # Aggregate diagnostics only: never log case text, ID, gold labels or individual pair results.
+          python tools/audit_medeinst_pairs.py \
+            --dataset "$scratch/test.jsonl" \
+            --expected-sha256 b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57
+          python - <<'PY' > "$scratch/selected-ids"
+          import hashlib, json, os
+          from collections import defaultdict
+          by_id = defaultdict(dict)
+          with open(os.environ['DATASET_PATH'], encoding='utf-8') as handle:
+              for line in handle:
+                  if not line.strip():
+                      continue
+                  row=json.loads(line)
+                  cid=row['case_id']
+                  variant=row['case_type'].removesuffix('_case')
+                  assert variant in ('control','trap')
+                  assert variant not in by_id[cid]
+                  by_id[cid][variant]=(row['narrative'],row['ground_truth'])
+          eligible=[]
+          for cid, variants in by_id.items():
+              if set(variants) != {'control','trap'}:
+                  continue
+              control,trap=variants['control'],variants['trap']
+              if not (30<=len(control[0])<=12000 and 30<=len(trap[0])<=12000):
+                  continue
+              if control[0].strip()==trap[0].strip():
+                  continue
+              if control[1].strip().casefold()==trap[1].strip().casefold():
+                  continue
+              eligible.append(cid)
+          assert len(eligible)>=2, 'No eligible structural candidate pairs'
+          # Deterministic, outcome-blind sampling AFTER predeclared exclusions.
+          picked=sorted(eligible, key=lambda x: hashlib.sha256(('med-pilot-v1:'+x).encode()).hexdigest())[:2]
+          print(','.join(picked))
+          PY
+          python tools/prepare_medeinst_holdout.py \
+            --dataset "$scratch/test.jsonl" \
+            --expected-sha256 b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57 \
+            --case-ids "$(cat "$scratch/selected-ids")" \
+            --worker-root "$scratch/worker-packets" \
+            --facilitator-root "$scratch/facilitator-key"
+          # Freeze worker-byte hashes from the trusted preparing step.
+          # This CSV-free sidecar has no diagnosis labels or case narratives.
+          manifest_sha="$(sha256sum "$scratch/facilitator-key/packet_hashes.json" | cut -d' ' -f1)"
+          python tools/export_medeinst_stage1.py \
+            --worker-root "$scratch/worker-packets" \
+            --packet-manifest "$scratch/facilitator-key/packet_hashes.json" \
+            --expected-packet-manifest-sha256 "$manifest_sha" \
+            --expected-source-class MedEinst_DDXPlus_simulated_research_case \
+            --output-dir "$scratch/pr225-stage1"
+          python - "$scratch/pr225-stage1" <<'PY'
+          import hashlib, json, pathlib, sys, zipfile
+          root=pathlib.Path(sys.argv[1])
+          manifest=json.loads((root/'manifest.json').read_text())
+          assert (manifest['version'],manifest['status'],manifest['actual_model_calls']) == (2,'PREPARED_NOT_RUN',0)
+          assert len(manifest['files']) == 4
+          with zipfile.ZipFile(root/'stage1.zip') as zipf:
+              assert sorted(zipf.namelist()) == ['M01.md','M02.md','M03.md','M04.md']
+              for entry in manifest['files']:
+                  raw=zipf.read(entry['path'].removeprefix('stage1/'))
+                  assert hashlib.sha256(raw).hexdigest()==entry['sha256']
+                  assert len(raw)==entry['bytes']
+          crosswalk=json.loads((root/'private_crosswalk.json').read_text())
+          assert crosswalk['medical_gold_loaded'] is False
+          assert len(crosswalk['cases']) == 4
+          print('MEDEINST_STAGE1_PR225_FORMAT_PASS: four official anonymous cases; 0 model calls; not medically judged')
+          PY
+          # End-to-end no-model handoff into the REAL PR #225 B/C packet helper.
+          # Pin both exact Git blobs; do not execute unpinned upstream code.
+          # Preserve PR225's __file__-relative repo-root safety policy.
+          # The source code lives under a dedicated temporary checkout-like tree;
+          # output packages live in a sibling directory, not inside that tree.
+          mkdir -p "$scratch/pr225-reviewed-code/tools"
+          curl --fail --location --silent --show-error --connect-timeout 15 --max-time 45 \
+            'https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0/tools/prepare_staged_bc_packets.py' \
+            -o "$scratch/pr225-reviewed-code/tools/prepare_staged_bc_packets.py"
+          test "$(git hash-object "$scratch/pr225-reviewed-code/tools/prepare_staged_bc_packets.py")" = 'b2cf98b6396334ad4708c50c37a404bbe173537b'
+          curl --fail --location --silent --show-error --connect-timeout 15 --max-time 45 \
+            'https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0/.agents/skills/decision-question-triage/SKILL.md' \
+            -o "$scratch/decision-question-triage.md"
+          test "$(git hash-object "$scratch/decision-question-triage.md")" = '9e2115bbdb55697741da6263be53df1bee6504fe'
+          stage_sha="$(sha256sum "$scratch/pr225-stage1/manifest.json" | cut -d' ' -f1)"
+          skill_sha="$(sha256sum "$scratch/decision-question-triage.md" | cut -d' ' -f1)"
+          python "$scratch/pr225-reviewed-code/tools/prepare_staged_bc_packets.py" \
+            --stage1-zip "$scratch/pr225-stage1/stage1.zip" \
+            --manifest "$scratch/pr225-stage1/manifest.json" \
+            --skill "$scratch/decision-question-triage.md" \
+            --output-dir "$scratch/pr225-bc-packets" \
+            --manifest-sha256 "$stage_sha" \
+            --skill-sha256 "$skill_sha" \
+            --candidate-commit 22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0 \
+            --cases M01 M02 M03 M04
+          python - "$scratch/pr225-bc-packets" <<'PY'
+          import json, pathlib, sys, zipfile
+          root=pathlib.Path(sys.argv[1])
+          meta=json.loads((root/'facilitator_manifest.json').read_text())
+          assert meta['status']=='PACKETS_PREPARED_NO_MODEL_RUN'
+          assert meta['provider_model_calls']==0
+          assert not meta['clinical_transfer_validated']
+          assert len(meta['workers'])==8
+          for n in range(1,5):
+              cid=f'M{n:02d}'
+              with zipfile.ZipFile(root/f'{cid}_B_stage1.zip') as b, \
+                   zipfile.ZipFile(root/f'{cid}_C_stage1.zip') as c:
+                  assert set(b.namelist())=={'task.md','instructions.txt'}
+                  assert set(c.namelist())=={'task.md','instructions.txt','candidate_skill.md'}
+                  assert b.read('task.md')==c.read('task.md')
+                  assert b.read('instructions.txt')==c.read('instructions.txt')
+                  assert b'ground_truth' not in b.read('task.md')
+          print('PR225_ACTUAL_BUILDER_INTEGRATION_PASS: 4 case tasks x B/C; 8 isolated ZIP inputs; no gold; 0 inference calls')
+          PY
+          python - "$scratch" <<'PY'
+          import json, pathlib, sys
+          root=pathlib.Path(sys.argv[1])
+          workers=list((root/'worker-packets').glob('*/packet.json'))
+          assert len(workers)==4, 'Expected two pair variants each'
+          for path in workers:
+              data=json.loads(path.read_text())
+              assert data['source_class']=='MedEinst_DDXPlus_simulated_research_case'
+              assert 'ground_truth' not in data
+              assert 'case_id' not in data
+          receipt=json.loads((root/'facilitator-key'/'run_manifest.json').read_text())
+          assert receipt['model_calls']==0 and receipt['status']=='NOT_RUN'
+          assert receipt['medical_validated'] is False
+          print('OFFICIAL_MEDEINST_COMPATIBILITY_PASS; 2 public pairs; 4 isolated packets; 0 model calls; no case text or labels logged')
+          PY
