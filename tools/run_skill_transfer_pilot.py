@@ -23,6 +23,14 @@ SYNTHETIC_MARKER = "SYNTHETIC EDUCATIONAL SCENARIO"
 MAX_CASES = 3
 MAX_INPUT_BYTES = 60000
 MAX_OUTPUT_TOKENS = 1100
+# One development-only subtrial; NOT an OpenAI project billing/spend limiter.
+# 2026-10-29 standard text rates for gpt-5-mini: input $0.25/M, output $2/M.
+# Ref: https://developers.openai.com/api/docs/models/gpt-5-mini
+LIVE_MODEL = "gpt-5-mini"
+MAX_PAID_CALLS = 9
+MAX_ESTIMATED_SUBTRIAL_USD = 1.00
+MODEL_INPUT_USD_PER_M = 0.25
+MODEL_OUTPUT_USD_PER_M = 2.00
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
 
 
@@ -139,6 +147,48 @@ def build_plan(cases, case_sha, pack, pack_sha, skill, skill_sha, model, commit)
         "publication_approved": False,
     }
     return meta, calls
+
+
+def preflight_paid_budget(calls, model):
+    """Conservative static expense estimate BEFORE any external request.
+
+    This protects one pinned synthetic subtrial against accidental costly
+    models, tool use or runaway output. The estimated bound is not an actual
+    account billing guarantee: independent project spend controls remain
+    mandatory and provider pricing can change.
+    """
+    require(model == LIVE_MODEL, "UNAPPROVED_PAID_MODEL_OR_PRICE_UNKNOWN")
+    require(type(calls) is list and len(calls) == MAX_PAID_CALLS,
+            "PAID_CALL_COUNT_NOT_BOUNDED")
+    total_input_proxy_tokens = 0
+    total_output_tokens = 0
+    for item in calls:
+        req = item.get("request") if type(item) is dict else None
+        require(type(req) is dict
+                and set(req) == {"model", "store", "max_output_tokens",
+                                 "instructions", "input"}
+                and req["model"] == LIVE_MODEL
+                and req["store"] is False
+                and req["max_output_tokens"] == MAX_OUTPUT_TOKENS
+                and type(req["instructions"]) is str
+                and type(req["input"]) is str,
+                "UNBOUNDED_PAID_REQUEST")
+        raw = json.dumps(req, ensure_ascii=False, sort_keys=True).encode("utf-8")
+        require(len(raw) <= 200000, "PAID_PROMPT_TOO_LARGE")
+        # Overestimate tokenization: 2 tokens per raw UTF-8 byte + fixed
+        # 4096 token envelope per call. No tools, image/audio or extra requests.
+        total_input_proxy_tokens += 2 * len(raw) + 4096
+        total_output_tokens += req["max_output_tokens"]
+    upper = (total_input_proxy_tokens * MODEL_INPUT_USD_PER_M
+             + total_output_tokens * MODEL_OUTPUT_USD_PER_M) / 1_000_000
+    require(upper <= MAX_ESTIMATED_SUBTRIAL_USD,
+            "SUBTRIAL_COST_BOUND_EXCEEDED")
+    return {"model": LIVE_MODEL, "max_paid_calls": MAX_PAID_CALLS,
+            "estimated_upper_usd": round(upper, 6),
+            "planning_ceiling_usd": MAX_ESTIMATED_SUBTRIAL_USD,
+            "external_project_budget_verified": False,
+            "provider_invoice_verified": False,
+            "price_date": "2026-10-29"}
 
 
 def extract_output(obj):
@@ -263,6 +313,8 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     require(not target.exists(), "OUTPUT_EXISTS_REFUSE_TO_REWRITE")
     meta, calls = build_plan(cases, case_sha, pack, pack_sha,
                              skill, skill_sha, model, commit)
+    paid_preflight = (preflight_paid_budget(calls, model)
+                      if execute and caller is None else None)
     frozen_suite = {
         "schema_version": 1,
         "id": "synthetic-decision-triage-" + case_sha[:16],
@@ -282,6 +334,7 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     meta["suite_id"] = frozen_suite["id"]
     meta["suite_sha256"] = digest(frozen_suite_bytes)
     meta["candidate_commit_git_verified"] = bool(execute and caller is None)
+    meta["paid_cost_preflight"] = paid_preflight
     meta["transport_kind"] = (
         "RESPONSES_API" if execute and caller is None
         else "INJECTED_TEST_DOUBLE" if execute else "NO_MODEL_CALLS"
