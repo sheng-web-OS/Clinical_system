@@ -9,6 +9,8 @@ on:
       - experiments/medeinst-transfer/README.md
       - tools/audit_medeinst_pairs.py
       - tests/test_audit_medeinst_pairs.py
+      - tools/export_medeinst_stage1.py
+      - tests/test_export_medeinst_stage1.py
       - .github/workflows/medeinst-source-smoke.yml
 
 permissions:
@@ -119,6 +121,32 @@ jobs:
             --case-ids "$(cat "$scratch/selected-ids")" \
             --worker-root "$scratch/worker-packets" \
             --facilitator-root "$scratch/facilitator-key"
+          # Freeze worker-byte hashes from the trusted preparing step.
+          # This CSV-free sidecar has no diagnosis labels or case narratives.
+          manifest_sha="$(sha256sum "$scratch/facilitator-key/packet_hashes.json" | cut -d' ' -f1)"
+          python tools/export_medeinst_stage1.py \
+            --worker-root "$scratch/worker-packets" \
+            --packet-manifest "$scratch/facilitator-key/packet_hashes.json" \
+            --expected-packet-manifest-sha256 "$manifest_sha" \
+            --expected-source-class MedEinst_DDXPlus_simulated_research_case \
+            --output-dir "$scratch/pr225-stage1"
+          python - "$scratch/pr225-stage1" <<'PY'
+          import hashlib, json, pathlib, sys, zipfile
+          root=pathlib.Path(sys.argv[1])
+          manifest=json.loads((root/'manifest.json').read_text())
+          assert (manifest['version'],manifest['status'],manifest['actual_model_calls']) == (2,'PREPARED_NOT_RUN',0)
+          assert len(manifest['files']) == 4
+          with zipfile.ZipFile(root/'stage1.zip') as zipf:
+              assert sorted(zipf.namelist()) == ['M01.md','M02.md','M03.md','M04.md']
+              for entry in manifest['files']:
+                  raw=zipf.read(entry['path'].removeprefix('stage1/'))
+                  assert hashlib.sha256(raw).hexdigest()==entry['sha256']
+                  assert len(raw)==entry['bytes']
+          crosswalk=json.loads((root/'private_crosswalk.json').read_text())
+          assert crosswalk['medical_gold_loaded'] is False
+          assert len(crosswalk['cases']) == 4
+          print('MEDEINST_STAGE1_PR225_FORMAT_PASS: four official anonymous cases; 0 model calls; not medically judged')
+          PY
           python - "$scratch" <<'PY'
           import json, pathlib, sys
           root=pathlib.Path(sys.argv[1])
