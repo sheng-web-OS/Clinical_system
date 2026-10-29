@@ -112,7 +112,19 @@ def main():
                                     "els => els.filter(i => i.naturalWidth < 100 || i.naturalHeight < 100).map(i => i.src)")
                                 if broken:
                                     raise AssertionError(f"{slug}: original source image did not decode: {broken}")
-                                page.locator("article.article figure img").first.scroll_into_view_if_needed()
+                                # Persist exact CC BY image responses for pixel-level review;
+                                # naturalWidth alone previously produced false-green blank screenshots.
+                                for index, url in enumerate(cfg["images"], 1):
+                                    response = page.request.get(url, timeout=18000)
+                                    payload = response.body()
+                                    if response.status != 200 or not payload.startswith(b"\\xff\\xd8\\xff"):
+                                        raise AssertionError(f"{slug}: original JPEG source bytes unavailable ({response.status})")
+                                    (args.output / f"{slug}-source-original-{index}.jpg").write_bytes(payload)
+                                for index, img in enumerate(page.locator("article.article figure img").all(), 1):
+                                    img.evaluate("el => el.decode()")
+                                    img.scroll_into_view_if_needed()
+                                    page.evaluate("() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
+                                    img.screenshot(path=str(args.output / f"{slug}-rendered-image-{index}-375.png"))
                                 page.screenshot(path=str(args.output / f"{slug}-original-figure-mobile-375.png"))
                             page.add_script_tag(content=app_js)
                             page.locator("article.article").wait_for()
