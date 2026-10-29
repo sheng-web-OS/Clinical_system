@@ -49,6 +49,40 @@ class HttpDiagnosticsTests(unittest.TestCase):
         self.assertEqual(classify_openai_http_error(rate),
                          "MODEL_HTTP_429_RATE_LIMIT")
 
+    def test_http_429_quota_may_use_type_when_code_is_null(self):
+        quota = provider_error(429, {
+            "error": {"type": "insufficient_quota", "code": None,
+                      "message": SECRET_MARKER + SENSITIVE_BODY}})
+        label = classify_openai_http_error(quota)
+        self.assertEqual(label, "MODEL_HTTP_429_INSUFFICIENT_QUOTA")
+        self.assertNotIn(SECRET_MARKER, label)
+
+    def test_http_429_billing_codes_are_specific(self):
+        cases = (
+            ("credit_balance_exhausted", "CREDIT_BALANCE_EXHAUSTED"),
+            ("organization_usage_limit_exceeded", "ORG_USAGE_LIMIT_EXCEEDED"),
+            ("organization_spend_limit_exceeded", "ORG_SPEND_LIMIT_EXCEEDED"),
+            ("project_spend_limit_exceeded", "PROJECT_SPEND_LIMIT_EXCEEDED"),
+        )
+        for code, expected in cases:
+            with self.subTest(code=code):
+                error = provider_error(429, {"error": {
+                    "code": code, "type": "insufficient_quota",
+                    "message": SECRET_MARKER}})
+                self.assertEqual(classify_openai_http_error(error),
+                                 "MODEL_HTTP_429_" + expected)
+
+    def test_code_takes_precedence_over_generic_type(self):
+        error = provider_error(429, {"error": {
+            "code": "rate_limit_exceeded", "type": "insufficient_quota"}})
+        self.assertEqual(classify_openai_http_error(error),
+                         "MODEL_HTTP_429_RATE_LIMIT")
+
+    def test_nonallowlisted_type_not_logged(self):
+        error = provider_error(429, {"error": {
+            "code": None, "type": SECRET_MARKER, "message": SENSITIVE_BODY}})
+        self.assertEqual(classify_openai_http_error(error), "MODEL_HTTP_429")
+
     def test_unrecognized_provider_error_code_never_exposed(self):
         malicious = "inject_" + SENSITIVE_BODY
         error = provider_error(403, {"error": {"code": malicious,
