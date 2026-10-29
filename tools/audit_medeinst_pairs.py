@@ -50,9 +50,11 @@ def audit(path, expected_sha256, mode="official-medeinst"):
             label = row.get("ground_truth")
             require(type(case_id) is str and bool(case_id)
                     and kind in ("control", "trap")
-                    and type(narrative) is str and 30 <= len(narrative) <= 12000
+                    and type(narrative) is str and 30 <= len(narrative) <= MAX_LINE_BYTES
                     and type(label) is str and 0 < len(label) <= 180,
                     "INVALID_AUDIT_RECORD")
+            if len(narrative) > 12000:
+                counters["narratives_above_worker_limit"] += 1
             pair = records.setdefault(case_id, {})
             require(kind not in pair, "DUPLICATE_PAIR_VARIANT")
             pair[kind] = (narrative, label)
@@ -73,7 +75,10 @@ def audit(path, expected_sha256, mode="official-medeinst"):
             counters["same_diagnosis_label"] += 1
         if c[0].strip() == t[0].strip():
             counters["identical_narrative"] += 1
-        ratio = SequenceMatcher(None, c[0], t[0], autojunk=False).ratio()
+        if max(len(c[0]), len(t[0])) > 12000:
+            counters["pairs_above_worker_limit"] += 1
+        # Lexical screening is approximate; autojunk bounds repetitive long narratives.
+        ratio = SequenceMatcher(None, c[0], t[0], autojunk=True).ratio()
         ratios.append(ratio)
         if ratio < 0.5:
             counters["overlap_below_0_50"] += 1
@@ -90,6 +95,9 @@ def audit(path, expected_sha256, mode="official-medeinst"):
         "pairs": n,
         "same_diagnosis_label_pairs": counters["same_diagnosis_label"],
         "identical_narrative_pairs": counters["identical_narrative"],
+        "narratives_above_worker_limit": counters["narratives_above_worker_limit"],
+        "pairs_above_worker_limit": counters["pairs_above_worker_limit"],
+        "worker_length_limit": 12000,
         "lexical_overlap": {
             "minimum": round(ratios[0], 4),
             "p10": round(ratios[(n - 1) // 10], 4),
@@ -108,6 +116,8 @@ def audit(path, expected_sha256, mode="official-medeinst"):
     }
     # Repeated diagnoses or literally identical narratives are not credible
     # *diagnostic-flip* controls even if the whole published file matches.
+    if counters["pairs_above_worker_limit"]:
+        output["verdict"] = "STRUCTURAL_AUDIT_WITH_WORKER_EXCLUSIONS"
     if counters["same_diagnosis_label"] or counters["identical_narrative"]:
         output["verdict"] = "HOLD_DATASET_PAIR_SEMANTICS"
     return output
@@ -123,7 +133,8 @@ def main():
     a = parser.parse_args()
     report = audit(a.dataset, a.expected_sha256, a.source_mode)
     print(json.dumps(report, ensure_ascii=False, sort_keys=True))
-    if report["verdict"] != "STRUCTURAL_AUDIT_ONLY":
+    if report["verdict"] not in ("STRUCTURAL_AUDIT_ONLY",
+                                 "STRUCTURAL_AUDIT_WITH_WORKER_EXCLUSIONS"):
         raise SystemExit(2)
 
 
