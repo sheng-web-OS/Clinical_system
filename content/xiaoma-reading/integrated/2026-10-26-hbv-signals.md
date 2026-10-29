@@ -32,6 +32,8 @@ ALT 落在正常範圍，表示這次檢測未見超過採用上限的酵素活�
 
 圖中兩組典型檢驗組合的 ALT 都正常，但 HBV DNA 與 HBeAg 組合不同。這不是要重新背兩種 phase，而是提醒：**Marker 是間接觀察，phase 是對多個觀察及其時間序列的推論。** HBeAg、HBV DNA 與 ALT 未形成典型組合時，也可能落在 indeterminate／grey-zone state；分類標籤不是量到的免疫狀態。
 
+把「需要時間」落到臨床操作上，AASLD/IDSA 指引建議判斷 phase 時，依據 **6–12 個月內至少兩次 ALT 與 HBV DNA 檢驗**，而不是用一次抽血替病人永久命名。這也不是要求所有人先等滿半年才治療：若已存在 cirrhosis 等明確適應症，當下的處置應由已知風險決定，不必等待 phase 完成分類。對沒有 cirrhosis 的 HBeAg-negative 病人，DNA ≥2,000 IU/mL 但 ALT 尚未達明確活動性肝炎條件，與 ALT 升高但 DNA <2,000 IU/mL，雖都可能屬於灰區，前者要評估肝癌／纖維化等風險，後者還須尋找其他肝細胞受傷原因。**同樣是 indeterminate，下一個需要的證據並不相同**。[AASLD/IDSA 原始建議與適用範圍](../hbv-phase-sources.md#ref-aasld)
+
 只靠一次正常 ALT，既不能判斷目前完全沒有肝炎活動，也不能保證未來的疾病軌跡。下一個問題是：臨床指引為何仍需要設置 ALT、HBV DNA 等治療門檻，而這些門檻又不能被當成疾病真正的起點？
 
 ## 觀察門檻，為什麼不是疾病開始的時點？
