@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source_class": "synthetic_public_fixture",
+  "exposure": "development",
+  "cases": [
+    {
+      "id": "synthetic-hcm-decision",
+      "role": "transfer",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 這是完全虛構的 HCM 教學案例，並非真實病歷。一位 52 歲成人先前被記載有 hypertrophic cardiomyopathy，近期出現運動時呼吸困難。休息時心臟超音波記載 LVEF 72%、LVOT gradient 12 mmHg，但缺乏運動或誘發狀態下的 gradient、舒張功能完整指標、節律監測及其他造成呼吸困難的評估。討論者認為『沒有 resting obstruction，而且 EF 很好，所以心臟不可能是症狀主因』。請為醫學生選擇一個真正值得深入探討的 Discussion 問題：有哪些不同生理機轉可能造成症狀？現有證據能排除什麼、不能排除什麼？哪些新的證據會使推論方向改變？不要替虛構醫療團隊補寫未記載的決策理由，亦不要開立實際醫囑。"
+    },
+    {
+      "id": "synthetic-hcm-explanation",
+      "role": "normal",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 虛構教學情境。課堂正在教 hypertrophic cardiomyopathy 的 obstructive 與 nonobstructive 分類，一名學習者想知道：沒有 LV outflow tract obstruction 是否能推出 filling 與 systolic function 正常？請用清楚、連續的概念敘述回答，指出定義與臨床推論的邊界。講義中沒有病人需要決定手術或用藥，也沒有提供兩種真實競爭治療方案的比較。"
+    },
+    {
+      "id": "synthetic-physiology-glossary",
+      "role": "boundary",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 這是一份虛構課堂詞彙解釋，不是一位病人的病例。新生問：在討論心臟生理時，preload、end-diastolic volume 與 end-diastolic pressure 有哪些不同？各數值可能受到哪些因素影響？請用短篇推導說明概念之間不能完全互換的原因；教材未提出診斷或治療決策，也沒有實際量測數值。"
+    }
+  ]
+}
