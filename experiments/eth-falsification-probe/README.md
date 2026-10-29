@@ -408,3 +408,5 @@ cases, separately adjudicated gold, documented source access and context
 isolation, patient privacy, and measured reviewer/owner cost** (see E06 and
 PR #225). No automatic merge, release, website change or scheduled call
 is permitted by this work.
+
+**Exact-byte send allowlist:** the manual smoke pins SHA-256 of both the public synthetic fixture and reviewed model Adapter. Even a same-ID, same-count fixture whose text has changed is rejected *before any API request*. A legitimate future update requires separate code review and a deliberate hash update; do not automatically refresh hashes to suppress the gate.
