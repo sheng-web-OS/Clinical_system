@@ -198,6 +198,9 @@ def build_plan(data, skill, model, commit):
         "model_calls_made": 0, "clinical_validated": False,
         "transfer_validated": False, "publication_approved": False,
     }
+    # Commit a stable preregistered input/design hash before any inference.
+    plan["suite_sha256"] = digest(json.dumps(plan, ensure_ascii=False, sort_keys=True))
+    return plan
 
 
 def build_blind_packet(cases, results, suite_sha):
