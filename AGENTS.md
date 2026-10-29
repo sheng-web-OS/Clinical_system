@@ -1,6 +1,8 @@
 # AGENTS.md — Clinical OS repository instructions
 
-This is the PRIVATE source-of-truth repository for the Clinical OS / Xiaoma medical editorial system. Public reading is produced from an explicit allowlist, not from arbitrary repository files.
+**Access boundary (verified 2026-10-29): this GitHub repository is PUBLIC.** It is the versioned code/editorial source for approved public-facing materials, **not a private record vault**. The public website is produced from an explicit `site/pages.json` allowlist, but that allowlist does **not** restrict public access to repository sources, unpublished branches, draft PRs, issues, audit notes, Actions logs or artifacts. Never infer GitHub privacy from this file; query the repository's actual visibility before handling protected material.
+
+**Hard privacy stop:** Do not commit or attach identifiable clinical records, non-public patient screenshots, raw restricted articles/figures, credentials, private research packs or confidential reviewer data to this public repository or its workflows. Keep such material in an explicitly access-controlled external source; send only authorized, appropriately de-identified, rights-cleared educational output and non-sensitive verification metadata to public GitHub. No long-lived token or restricted payload may be printed in public CI logs/artifacts. If an action needs private materials, treat secure retrieval and sanitized export as separate approved work; a public Actions runner is not by itself a private-data boundary. Repository visibility, account permissions and historical exposure remediation are owner-controlled decisions; do not silently change them.
 
 ## Read the minimum needed
 
