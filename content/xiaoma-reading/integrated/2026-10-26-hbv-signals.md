@@ -30,7 +30,7 @@ ALT 落在正常範圍，表示這次檢測未見超過採用上限的酵素活�
   <figcaption>原創概念圖，非 Pocket Medicine 原表或診療演算法。兩組為典型檢驗組合，非真實病例；正常 ALT 不能排除組織發炎或既有 fibrosis，也不表示可停治療／監測。對讀 Pocket Medicine 9E 私人 PDF 第 140–141 頁及 AASLD／IDSA 2025 phase 定義；公開原表重製授權尚未確認。</figcaption>
 </figure>
 
-圖中兩名患者的 ALT 都正常，但 HBV DNA 與 HBeAg 組合不同。這不是要重新背兩種 phase，而是提醒：**Marker 是間接觀察，phase 是對多個觀察及其時間序列的推論。** HBeAg、HBV DNA 與 ALT 未形成典型組合時，也可能落在 indeterminate／grey-zone state；分類標籤不是量到的免疫狀態。
+圖中兩組典型檢驗組合的 ALT 都正常，但 HBV DNA 與 HBeAg 組合不同。這不是要重新背兩種 phase，而是提醒：**Marker 是間接觀察，phase 是對多個觀察及其時間序列的推論。** HBeAg、HBV DNA 與 ALT 未形成典型組合時，也可能落在 indeterminate／grey-zone state；分類標籤不是量到的免疫狀態。
 
 只靠一次正常 ALT，既不能判斷目前完全沒有肝炎活動，也不能保證未來的疾病軌跡。下一個問題是：臨床指引為何仍需要設置 ALT、HBV DNA 等治療門檻，而這些門檻又不能被當成疾病真正的起點？
 
