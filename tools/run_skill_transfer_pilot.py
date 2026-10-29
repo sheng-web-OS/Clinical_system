@@ -200,10 +200,22 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     cases = clean_cases(json.loads(case_text))
     require("name: decision-question-triage" in skill,
             "WRONG_SKILL_SELECTED")
+    repo_root = Path(__file__).resolve().parents[1]
     if execute:
         require(bool(key), "MODEL_SECRET_NOT_CONFIGURED")
+        # Source-class labels are not privacy controls: the actual network
+        # transport may ONLY use this reviewed, public, in-repo fixture and
+        # article. Local injected mock transports are for unit tests only.
+        if caller is None:
+            allowed = (
+                repo_root / "experiments/skill-transfer/fixtures/synthetic-questions.json",
+                repo_root / "content/xiaoma-reading/originals/2026-07-14-hcm.md",
+                repo_root / ".agents/skills/decision-question-triage/SKILL.md",
+            )
+            require(tuple(Path(p).resolve() for p in
+                          (cases_path, pack_path, skill_path)) == allowed,
+                    "LIVE_API_REQUIRES_EXACT_PUBLIC_ALLOWLISTED_INPUT_FILES")
     target = Path(target).resolve()
-    repo_root = Path(__file__).resolve().parents[1]
     require(not target.is_relative_to(repo_root),
             "PRIVATE_OUTPUT_MUST_BE_OUTSIDE_PUBLIC_REPOSITORY")
     require(not target.exists(), "OUTPUT_EXISTS_REFUSE_TO_REWRITE")
