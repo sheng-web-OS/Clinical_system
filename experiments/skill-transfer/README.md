@@ -109,3 +109,32 @@ Related methods:
 [MSCE](https://aclanthology.org/2026.findings-emnlp.1637/);
 [ProactAgent](https://aclanthology.org/2026.findings-emnlp.775/);
 [GEPA](https://arxiv.org/abs/2507.19457).
+
+
+## 2026-10-29: conditional source-access probe (new, still Draft/HOLD)
+
+**Why separate from the original A/B/C pilot:** `run_skill_transfer_pilot.py` preloads the long-form article into B/C. That tests assisted reading, **not** the agent's ability to determine if, when and what to retrieve. The new `tools/selective_retrieval_probe.py` is a small supplementary development fixture within this same PR, not a new autonomy registry or a replacement of the existing comparator.
+
+**Two-phase intervention:**
+1. Freeze and record an initial `RETRIEVE|SKIP|HOLD` choice, gap type, specific source ID, evidence question, prospective decision pivot, provisional answer and confidence (0–100). The model sees the task and, in B/C only, identical candidate source **titles/IDs**. It never sees document bodies before this decision. C additionally sees the frozen candidate Skill. There is no gold answer or expected label in the model prompt.
+2. After the first decision, a deterministic gate blocks retrieval for `missing_patient_fact` and `none` gap types, unallowlisted source IDs, SKIP/HOLD and the native arm (no extra corpus). Only an eligible B/C request receives its one approved public synthetic source body. Final first-pass explanation follows; no retries, hints, source substitution or automatic grading.
+
+**Interpretation:** Native A has no additional retrieval corpus, B and C have identical candidate catalog and source access; the controlled estimate of the *candidate Skill's marginal effect* is C versus B. A is a no-extra-corpus contextual baseline, **not** an equal-tool-access causal comparison of retrieval choice. Candidate source titles may prime the worker; count false-positive reads and no-retrieval controls. A separate future experiment would be needed to isolate tool-discovery friction. A pre-retrieval provisional answer is not an equivalent-length clinical Discussion; independent raters must assess whether post-retrieval reasoning changed **appropriately** and distinguish additional explanation from better decisions.
+
+**Visible development fixtures:** `fixtures/selective-retrieval-synthetic.json` contains three completely fictional, already exposed teaching scenarios and two fictional references. They include a potentially helpful laboratory method source, a missing individual-record case that articles cannot repair, and a self-contained physiology explanation. These are mechanical and model-development controls, **never blinded/unseen clinical transfer cases**. Fail-closed unit tests assert no source-body leakage to the first decision, conditional read, inappropriate retrieval denial, white-listed source identity, stage audit, no clinical-validity certification, and rejection of non-public payload substitution. Separate actual calls or human judgments are not implied by CI.
+
+**Safe offline plan**, in a checkout of the exact PR head:
+
+```bash
+RUN_PARENT="$(mktemp -d)"
+chmod 700 "$RUN_PARENT"
+python tools/selective_retrieval_probe.py \
+  --fixture experiments/skill-transfer/fixtures/selective-retrieval-synthetic.json \
+  --skill .agents/skills/decision-question-triage/SKILL.md \
+  --candidate-commit "$(git rev-parse HEAD)" \
+  --output-dir "$RUN_PARENT/plan"
+```
+
+This produces `manifest.json` with `model_calls_made=0` and `NOT_RUN`, outside the public Git checkout. **A separately authorized real development execution**, if the dedicated budgeted `OPENAI_API_KEY` is already configured in a trusted local/isolated environment, uses the same allowlisted command with `--execute-api` and a *different fresh* output directory. Only `gpt-5-mini`, precisely these checked-in public fixture bytes and the candidate Skill bytes, and at most 18 sequential Responses calls are accepted. A request event log is written under a private directory; calls are not made by PR CI, no retries or background schedule are activated, and the code never handles patient materials. Interrupted/incomplete requests remain incomplete, not silently successful.
+
+**Required audit before any result claim:** trust-but-verify actual provider billing receipts rather than treating local response IDs as authenticated; preserve first-stage choices, real source exposures, case-arm answer records, attempt failures, first-pass errors, raw token use and owner time. Independently blinded expert review, with held-out source conditions external to public GitHub, must score decision-relevant gap selection, retrieval precision/recall and false reads, source-grounded reasoning improvement, unjustified confidence, normal/boundary regressions, clinical P0/P1, and second-case transfer without reminders. Do not import the synthetic candidate labels as an answer key. Prefer no extra Skill if C does not beat B safely and consistently. No merge, production deploy, recurrence or self-certification authorized.
