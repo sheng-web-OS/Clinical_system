@@ -40,6 +40,44 @@ jobs:
             -o "$scratch/test.jsonl"
           echo "b6b688fa41f788c17cdbf5076b5215782c9eb00efec1a3d3384c002836550a57  $scratch/test.jsonl" | sha256sum --check --status
           export DATASET_PATH="$scratch/test.jsonl"
+          # Diagnostic-only cohort profile; never prints texts, IDs or labels.
+          # This helps distinguish upstream schema from an overly strict local threshold.
+          python - <<'PY'
+          from collections import Counter
+          import json, os
+          stats=Counter()
+          with open(os.environ['DATASET_PATH'],encoding='utf-8') as source:
+              for line in source:
+                  if not line.strip():
+                      continue
+                  stats['records']+=1
+                  try:
+                      row=json.loads(line)
+                  except ValueError:
+                      stats['invalid_json']+=1
+                      continue
+                  if not isinstance(row,dict):
+                      stats['not_object']+=1
+                      continue
+                  key=row.get('case_id')
+                  variant=row.get('case_type')
+                  narrative=row.get('narrative')
+                  label=row.get('ground_truth')
+                  if not isinstance(key,str) or not key:
+                      stats['bad_id_type_or_empty']+=1
+                  if variant not in ('control','trap','control_case','trap_case'):
+                      stats['bad_variant_type_or_value']+=1
+                  if not isinstance(narrative,str):
+                      stats['bad_narrative_type']+=1
+                  else:
+                      if len(narrative)<30:stats['narrative_short']+=1
+                      if len(narrative)>12000:stats['narrative_long']+=1
+                  if not isinstance(label,str) or not label:
+                      stats['bad_label_type_or_empty']+=1
+                  elif len(label)>180:
+                      stats['label_long']+=1
+          print('MEDEINST_SOURCE_AGGREGATES_ONLY: '+json.dumps(dict(sorted(stats.items()))))
+          PY
           # Aggregate diagnostics only: never log case text, ID, gold labels or individual pair results.
           python tools/audit_medeinst_pairs.py \
             --dataset "$scratch/test.jsonl" \
