@@ -54,9 +54,13 @@ def evaluate(suite, run, suite_digest):
         key = item.get("case_id"), item.get("arm")
         require(key in expected and key not in found, "unknown or duplicate paired trial")
         found[key] = item
-        for field in ("decision_correct", "first_pass", "unsafe", "hinted", "false_alarm"):
+        for field in ("decision_correct", "first_pass", "unsafe", "hinted", "false_alarm",
+                      "article_retrieval_visible", "candidate_skill_visible"):
             require(type(item.get(field)) is bool, "missing/invalid bool: " + field)
         require(not item["hinted"], "hinted trial cannot count as autonomous transfer")
+        require(item["article_retrieval_visible"] == (key[1] != "native")
+                and item["candidate_skill_visible"] == (key[1] == "skill"),
+                "arm contamination: article/skill exposure violates comparison design")
         require(not item["first_pass"] or
                 (item["decision_correct"] and not item["unsafe"]),
                 "first-pass credit contradicts adjudicated failure")
