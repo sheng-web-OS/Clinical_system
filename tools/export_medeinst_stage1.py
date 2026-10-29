@@ -13,7 +13,7 @@ from pathlib import Path
 import re
 from zipfile import ZipFile, ZIP_DEFLATED
 
-from prepare_medeinst_holdout import HoldoutError, require
+from prepare_medeinst_holdout import HoldoutError, require, MEDEINST_TEST_SHA256
 
 ALLOWED_SOURCE_CLASS = (
     "MedEinst_DDXPlus_simulated_research_case",
@@ -61,12 +61,45 @@ def read_packet(path):
     return task, sha(raw), obj["source_class"]
 
 
-def export_stage1(worker_root, output_dir, *, expected_source_class, repo_root=None):
+def export_stage1(worker_root, output_dir, *, expected_source_class,
+                  packet_manifest, expected_packet_manifest_sha256, repo_root=None):
     root = Path(worker_root).expanduser().absolute()
+    manifest_path = Path(packet_manifest).expanduser().absolute()
+    require(not manifest_path.is_symlink() and manifest_path.is_file(),
+            "PACKET_MANIFEST_REQUIRED")
+    manifest_bytes = manifest_path.read_bytes()
+    require(type(expected_packet_manifest_sha256) is str
+            and SHA.fullmatch(expected_packet_manifest_sha256)
+            and sha(manifest_bytes) == expected_packet_manifest_sha256,
+            "PACKET_MANIFEST_HASH_MISMATCH")
+    try:
+        trusted = json.loads(manifest_bytes)
+    except (UnicodeError, ValueError):
+        raise HoldoutError("PACKET_MANIFEST_INVALID") from None
+    require(type(trusted) is dict
+            and set(trusted) == {"schema_version", "dataset_sha256", "source_mode", "slots"}
+            and trusted["schema_version"] == 1
+            and type(trusted["slots"]) is dict
+            and 1 <= len(trusted["slots"]) <= MAX_CASES
+            and all(type(k) is str and SLOT.fullmatch(k)
+                    and type(v) is str and SHA.fullmatch(v)
+                    for k,v in trusted["slots"].items()),
+            "PACKET_MANIFEST_INVALID")
+    mode = ("official-medeinst" if expected_source_class
+            == "MedEinst_DDXPlus_simulated_research_case" else "synthetic-fixture")
+    require(trusted["source_mode"] == mode, "PACKET_MANIFEST_SOURCE_MISMATCH")
+    require(type(trusted["dataset_sha256"]) is str
+            and SHA.fullmatch(trusted["dataset_sha256"]), "SOURCE_SHA_INVALID")
+    if mode == "official-medeinst":
+        require(trusted["dataset_sha256"] == MEDEINST_TEST_SHA256,
+                "OFFICIAL_SOURCE_SHA_MISMATCH")
     repo = Path(repo_root or Path(__file__).resolve().parents[1]).resolve()
     require(expected_source_class in ALLOWED_SOURCE_CLASS, "UNRECOGNIZED_SOURCE_CLASS")
     require(root.is_dir() and not root.is_symlink(), "WORKER_ROOT_REQUIRED")
     require(not root.is_relative_to(repo), "WORKER_INPUT_MUST_BE_OUTSIDE_PUBLIC_REPO")
+    require(not manifest_path.is_relative_to(repo)
+            and not manifest_path.is_relative_to(root), "MANIFEST_NOT_TRUSTED_SEPARATE")
+
     require(not any(part.is_symlink() for part in (root.parent, *root.parent.parents)),
             "WORKER_ROOT_SYMLINK_ANCESTOR")
     output = Path(output_dir).expanduser().absolute()
@@ -81,6 +114,8 @@ def export_stage1(worker_root, output_dir, *, expected_source_class, repo_root=N
 
     children = sorted(root.iterdir())
     require(1 <= len(children) <= MAX_CASES, "INVALID_PACKET_COUNT")
+    require({child.name for child in children} == set(trusted["slots"]),
+            "PACKET_MANIFEST_SLOT_MISMATCH")
     tasks = []
     for child in children:
         require(child.is_dir() and not child.is_symlink()
@@ -88,6 +123,7 @@ def export_stage1(worker_root, output_dir, *, expected_source_class, repo_root=N
                 and set(p.name for p in child.iterdir()) == {"packet.json"},
                 "UNSAFE_OR_UNEXPECTED_WORKER_SLOT")
         task, raw_digest, source_class = read_packet(child / "packet.json")
+        require(raw_digest == trusted["slots"][child.name], "PACKET_CHANGED_SINCE_PREPARATION")
         require(source_class == expected_source_class, "SOURCE_CLASS_MISMATCH")
         tasks.append((child.name, task, raw_digest))
 
@@ -117,6 +153,8 @@ def export_stage1(worker_root, output_dir, *, expected_source_class, repo_root=N
         "source_class": expected_source_class,
         "private_crosswalk_only": True,
         "medical_gold_loaded": False,
+        "packet_manifest_sha256": expected_packet_manifest_sha256,
+        "source_sha256": trusted["dataset_sha256"],
         "cases": [{"case_id": x["case_id"], "worker_slot": x["slot"],
                    "packet_sha256": x["packet_sha256"]}
                   for x in files],
@@ -144,9 +182,13 @@ def main():
     p.add_argument("--output-dir", type=Path, required=True)
     p.add_argument("--expected-source-class", choices=ALLOWED_SOURCE_CLASS,
                    required=True)
+    p.add_argument("--packet-manifest", required=True, type=Path)
+    p.add_argument("--expected-packet-manifest-sha256", required=True)
     a = p.parse_args()
     print(json.dumps(export_stage1(a.worker_root, a.output_dir,
-                                  expected_source_class=a.expected_source_class),
+                                  expected_source_class=a.expected_source_class,
+                                  packet_manifest=a.packet_manifest,
+                                  expected_packet_manifest_sha256=a.expected_packet_manifest_sha256),
                      sort_keys=True))
 
 
