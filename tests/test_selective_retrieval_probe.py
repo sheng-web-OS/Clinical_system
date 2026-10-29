@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from selective_retrieval_probe import (validate_fixture, triage_request, validate_triage,
     retrieve_after_triage, answer_request, run_case, execute, digest, build_plan,
-    paired_order, build_blind_packet, PilotError)
+    paired_order, build_blind_packet, verify_live_checkout, PilotError)
 
 FIXTURE = ROOT / "experiments/skill-transfer/fixtures/selective-retrieval-synthetic.json"
 DATA = json.loads(FIXTURE.read_text(encoding="utf-8"))
@@ -256,10 +256,11 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
                     "returned_model": "gpt-5-mini",
                     "usage": {"input_tokens": 1, "output_tokens": 2, "total_tokens": 3}}
         with tempfile.TemporaryDirectory() as folder:
-            with patch("selective_retrieval_probe.api_call", side_effect=duplicate_provider_receipt):
-                output = Path(folder) / "mock_provider"
-                got = execute(DATA, approved, "gpt-5-mini", "c" * 40,
-                              output, key="synthetic_test_only", live=True)
+            with patch("selective_retrieval_probe.verify_live_checkout", return_value=True):
+                with patch("selective_retrieval_probe.api_call", side_effect=duplicate_provider_receipt):
+                    output = Path(folder) / "mock_provider"
+                    got = execute(DATA, approved, "gpt-5-mini", "c" * 40,
+                                  output, key="synthetic_test_only", live=True)
             self.assertEqual(got["status"], "HOLD_INCOMPLETE")
             receipt = json.loads((output / "run_receipt.json").read_text())
             self.assertGreater(receipt["failed_pairs"], 0)
@@ -271,6 +272,33 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
             execute(DATA, SKILL, "gpt-5-mini", "a" * 40,
                     ROOT / "experiments/skill-transfer/tmp-unsafe")
                     
+    def test_plausible_but_false_commit_is_not_accepted_for_live_execution(self):
+        # A valid-looking SHA does not prove the checkout was that commit.
+        with self.assertRaisesRegex(PilotError, "LIVE_CHECKOUT_HEAD_MISMATCH"):
+            verify_live_checkout(ROOT, "a" * 40)
+
+    def test_dirty_tracked_input_blocks_paid_inference(self):
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        def fake_git(cmd, **_):
+            if "rev-parse" in cmd:
+                return SimpleNamespace(returncode=0, stdout="c" * 40 + "\\n")
+            return SimpleNamespace(returncode=0,
+                                   stdout=" M tools/selective_retrieval_probe.py\\n")
+        with patch("selective_retrieval_probe.subprocess.run", side_effect=fake_git):
+            with self.assertRaisesRegex(PilotError, "LIVE_CHECKOUT_DIRTY"):
+                verify_live_checkout(ROOT, "c" * 40)
+
+    def test_clean_exact_head_check_is_distinct_from_fake_sha_format(self):
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        def fake_git(cmd, **_):
+            if "rev-parse" in cmd:
+                return SimpleNamespace(returncode=0, stdout="e" * 40 + "\\n")
+            return SimpleNamespace(returncode=0, stdout="")
+        with patch("selective_retrieval_probe.subprocess.run", side_effect=fake_git):
+            self.assertTrue(verify_live_checkout(ROOT, "e" * 40))
+
     def test_live_path_rejects_arbitrary_in_memory_material_even_if_labeled_synthetic(self):
         mutated = json.loads(json.dumps(DATA))
         mutated["cases"][0]["task"] += " Added invisible private source."
