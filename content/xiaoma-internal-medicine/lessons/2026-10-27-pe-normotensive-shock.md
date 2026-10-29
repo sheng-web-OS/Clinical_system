@@ -52,6 +52,8 @@ PE 造成的呼吸問題，不能只用「肺泡缺氧」理解。被阻塞的�
 
 2026 AHA/ACC 的 acute PE clinical categories 區分 **A（無症狀）、B（低臨床嚴重度）、C（臨床嚴重度提高）、D（即將發生心肺失代償）與 E（已出現心肺循環衰竭）**；C 再納入心肌損傷與 RV dysfunction 分層，部分類別另有呼吸衰竭修飾碼。指引也提醒應在特定高風險、血壓未下降的 PE 病人評估 *normotensive shock*，但**單一 lactate、腎功能或心超結果仍須放回臨床因果與替代病因判斷**。AHA/ACC 的[2026 Acute PE Clinical Categories 官方原始圖（PDF，可放大）](https://professional.heart.org/en/-/media/PHD-Files-2/Science-News/a/AHA-ACC-Acute-PE-Clinical-Categories-Figure-Inforgraphic.pdf?sc_lang=en)明確把 **D1 的 transient hypotension** 與 **D2 的 normotensive shock** 分開，並以 **R（respiratory modifier）**補充呼吸負擔；這張圖說明的是臨床風險與照護需求，不替代原書 Figure 2-3 的疑似 PE 診斷流程。其細節與 footnotes 仍須配合[2026 正式指引](https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005)判讀；**這是風險與照護分類，不是 PE 的確診工具，更不是「D 類就一律溶栓」的處方。**
 
+**接著讀完整分級，而不是從本例倒推分類：**[PESI／sPESI、Hestia 與 2026 AHA/ACC A–E 分級專題](2026-10-29-pe-pesi-aha-acc-2026.md)以**已確診 PE** 的分流為主；本病例在當時 CTPA 無法完成，重點仍是高度懷疑下的灌流惡化、診斷替代方案與救援時序。兩篇的判斷起點不同，不應把「懷疑 PE 的急救」誤寫成「分級已確定後的常規處置」。
+
 原病例的 troponin T **27 ng/L** 略升、NT-proBNP **74 pg/mL** 正常，床邊心超又無法判讀。不能把正常 BNP 當作排除急性 RV failure，也不能把 ECG 的 S1Q3T3 當作確診；它們只能和臨床時間序列一起改變懷疑程度。
 
 ## 05｜為什麼插管後血氧變成 100%，病人反而心跳停止？
