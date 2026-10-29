@@ -155,8 +155,18 @@ def extract_output(obj):
     returned_model = obj.get("model")
     require(type(returned_model) is str and returned_model,
             "MODEL_ID_MISSING")
+    response_id = obj.get("id")
+    require(type(response_id) is str
+            and re.fullmatch(r"resp_[A-Za-z0-9_-]+", response_id) is not None,
+            "MODEL_PROVIDER_RESPONSE_ID_MISSING")
+    usage = obj.get("usage")
+    require(type(usage) is dict
+            and all(type(usage.get(k)) is int and usage[k] >= (1 if k != "total_tokens" else 2)
+                    for k in ("input_tokens", "output_tokens", "total_tokens"))
+            and usage["total_tokens"] == usage["input_tokens"] + usage["output_tokens"],
+            "MODEL_TOKEN_USAGE_INVALID")
     return {"answer": answer, "returned_model": returned_model,
-            "response_id": obj.get("id"), "usage": obj.get("usage")}
+            "response_id": response_id, "usage": usage}
 
 
 def api_call(request, key):
@@ -172,7 +182,12 @@ def api_call(request, key):
             data = json.loads(resp.read(750000))
     except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
         raise PilotError("MODEL_CALL_FAILED") from None
-    return extract_output(data)
+    result = extract_output(data)
+    expected_model = request["model"]
+    require(result["returned_model"] == expected_model
+            or result["returned_model"].startswith(expected_model + "-"),
+            "RETURNED_MODEL_DIFFERS_FROM_REQUEST")
+    return result
 
 
 def write_private(path, obj):
@@ -239,6 +254,10 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     ).encode("utf-8")
     meta["suite_id"] = frozen_suite["id"]
     meta["suite_sha256"] = digest(frozen_suite_bytes)
+    meta["transport_kind"] = (
+        "RESPONSES_API" if execute and caller is None
+        else "INJECTED_TEST_DOUBLE" if execute else "NO_MODEL_CALLS"
+    )
     if execute:
         meta["results_status"] = "EXECUTION_STARTED_UNSCORED"
     target.mkdir(mode=0o700, parents=False)
