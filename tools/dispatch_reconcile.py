@@ -23,8 +23,8 @@ RECEIPT_STATES = {
 GATE_FIELDS = {"issue_number", "gate_id", "evidence_revision",
                "gate_state", "owner", "last_receipt"}
 RECEIPT_FIELDS = {"gate_id", "fingerprint", "status", "next_gate_id"}
-GATE_ID = re.compile(r"[a-z][a-z0-9-]{2,100}\\Z")
-REVISION = re.compile(r"(?:sha:[a-f0-9]{40}|comment:[1-9][0-9]*|ci:[1-9][0-9]*:[a-f0-9]{40})\\Z")
+GATE_ID = re.compile(r"[a-z][a-z0-9-]{2,100}")
+REVISION = re.compile(r"(?:sha:[a-f0-9]{40}|comment:[1-9][0-9]*|ci:[1-9][0-9]*:[a-f0-9]{40})")
 
 
 def require(condition, code):
