@@ -318,3 +318,39 @@ References for methodological motivation (not software effectiveness claims):
   https://proceedings.mlr.press/v297/afolabi26a.html
 - Mo et al., Findings ACL 2026, *Faithfulness vs. Safety*:
   https://pubmed.ncbi.nlm.nih.gov/42466064/
+
+## V7 — opt-in real-model adapter (provider integration; not clinical validation)
+
+`openai_model_adapter.py` now implements the *same* OpenAI Responses API (`/v1/responses`) already used by the project's selective Drive agent. It takes **one** randomized blinded packet from standard input, makes **one** provider call with `store=false` and no tools or conversation state, and returns the existing ETH Probe JSON schema. It has two fixed prompt variants (`native` and a minimal `clinical_lite` evidence/problem-first instruction) while keeping the same model and output-token cap. This is only an instruction ablation, **not** a faithful whole-system Clinical OS comparison. The adapter is opt-in, does **not** execute during `unittest`, PR CI, or normal site builds, and does not need a second service or OpenAI credential.
+
+**Privacy/data gate:** the executable only permits `case_id` beginning with `synthetic_` by default. External or clinical material requires `PROBE_APPROVED_EXTERNAL_DATA=true`, which is *not set in CI* and is not blanket permission to send patient data: an actual secure environment, independent de-identification, rights, and source permission are separately required. This public repository and its draft PRs are not a protected medical record system. JSON outputs and provider token usage belong in a permissioned execution record, **not in this public Git repo or Actions logs**. Failures expose only sanitized invariant status codes. `OPENAI_API_KEY` must already be provided by a trusted local/CI secret manager; never paste it into commands, commits or chat.
+
+A small **nonclinical smoke** can reuse the already committed synthetic claim-update fixture. Prepare once and keep the gold outside the model working directory:
+
+```bash
+python tools/falsification_probe.py prepare \
+  --spec experiments/eth-falsification-probe/synthetic-claim-update.json \
+  --reviewer-dir /tmp/eth-v7-packets --key /tmp/eth-v7-private/key.json
+# Set OPENAI_API_KEY using an authorized secret manager, not inline in shell history.
+export OPENAI_MODEL=gpt-5-mini
+export PROBE_VARIANT=native
+python tools/falsification_probe.py run \
+  --reviewer-dir /tmp/eth-v7-packets --responses /tmp/eth-v7-private/native.json \
+  --adapter experiments/eth-falsification-probe/openai_model_adapter.py \
+  --timeout 90 --allow-env OPENAI_API_KEY --allow-env OPENAI_MODEL \
+  --allow-env PROBE_VARIANT --relabel
+export PROBE_VARIANT=clinical_lite
+python tools/falsification_probe.py run \
+  --reviewer-dir /tmp/eth-v7-packets --responses /tmp/eth-v7-private/lite.json \
+  --adapter experiments/eth-falsification-probe/openai_model_adapter.py \
+  --timeout 90 --allow-env OPENAI_API_KEY --allow-env OPENAI_MODEL \
+  --allow-env PROBE_VARIANT --relabel
+python tools/falsification_probe.py score \
+  --key /tmp/eth-v7-private/key.json --responses /tmp/eth-v7-private/native.json
+python tools/falsification_probe.py score \
+  --key /tmp/eth-v7-private/key.json --responses /tmp/eth-v7-private/lite.json
+```
+
+This makes exactly **8 calls at most** if both variants complete (4 packets × 2 prompts; each call has a 950-token output cap and a 55-second provider timeout). These are public synthetic samples, so any score is **MODEL_CONNECTIVITY_PILOT / CONTAMINATED_FIXTURE** — **not** a blinded clinical gain or trustworthy model improvement. The adapter emits numerical token usage only as `PROBE_USAGE` on stderr; the parent runner saves it in a separate coordinator-only response JSON under `provider_usage`, marked `ADAPTER_REPORTED_NOT_BILLING_VERIFIED`. Never compute a zero-dollar estimate when usage/pricing is unknown, and do not treat this metadata as a verified invoice. No automatic retry (protects spend), no scheduling, no PR auto-merge, no medical release or new persistent evaluation infrastructure.
+
+**Next experiment after connectivity:** The real A/B between a native model and Clinical OS must use *different, previously unexposed* independently adjudicated source cases and the actual Clinical OS scaffold, not these published fixtures or `clinical_lite` as a proxy. Freeze new-case answers before inference in secure storage; compare P0/P1, evidence-to-claim consistency, valid-claim damage and owner-minutes. Keep prompt/time/source/model parity, forbid gold access or open-ended web retrieval to the public key, and separately document any exposure/isolation uncertainty. If cases, budget, or adjudication are unavailable: `NOT_VALIDATED`, not a guessed improvement.
