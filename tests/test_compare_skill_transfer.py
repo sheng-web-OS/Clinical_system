@@ -74,6 +74,65 @@ class TransferPilotIntegrity(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, expected):
             self.report()
 
+    def test_observed_gain_with_unmeasured_owner_cost_is_not_misclassified(self):
+        # Matches the real review assembler, which has no owner-time receipt.
+        for item in self.run["records"]:
+            item["owner_minutes"] = None
+        report = self.report()
+        self.assertEqual("DEVELOPMENT_GAIN_UNCOSTED_NEEDS_INDEPENDENT_HOLDOUT",
+                         report["verdict"])
+        self.assertEqual(1, report["semantic_comparison"]
+                         ["skill_minus_retrieval_transfer_first_pass"])
+        self.assertEqual("NOT_MEASURED", report["owner_cost_comparison"]["status"])
+        self.assertIsNone(report["owner_cost_comparison"]
+                          ["skill_minus_retrieval_minutes"])
+        self.assertFalse(report["promotion_authorized"])
+
+    def test_partial_owner_time_is_unknown_not_zero(self):
+        self.run["records"][0]["owner_minutes"] = None
+        report = self.report()
+        self.assertEqual("NOT_MEASURED", report["owner_cost_comparison"]["status"])
+        self.assertEqual("DEVELOPMENT_GAIN_UNCOSTED_NEEDS_INDEPENDENT_HOLDOUT",
+                         report["verdict"])
+
+    def test_observed_gain_with_measured_cost_regression_is_not_promoted(self):
+        for item in self.run["records"]:
+            if item["arm"] == "skill":
+                item["owner_minutes"] = 3.0
+        report = self.report()
+        self.assertEqual("DEVELOPMENT_GAIN_COST_REGRESSION_NO_PROMOTION",
+                         report["verdict"])
+        self.assertEqual("MEASURED", report["owner_cost_comparison"]["status"])
+        self.assertEqual(3.0, report["owner_cost_comparison"]
+                         ["skill_minus_retrieval_minutes"])
+        self.assertFalse(report["promotion_authorized"])
+
+    def test_unknown_cost_cannot_bypass_safety_hold(self):
+        for item in self.run["records"]:
+            item["owner_minutes"] = None
+        target = next(item for item in self.run["records"]
+                      if item["arm"] == "skill"
+                      and item["case_id"] == "novel-transfer")
+        target["unsafe"] = True
+        target["first_pass"] = False
+        report = self.report()
+        self.assertEqual("HOLD_SAFETY_CONTROL_OR_INCOMPLETE_RUN",
+                         report["verdict"])
+        self.assertFalse(report["promotion_authorized"])
+
+    def test_no_transfer_gain_stays_negative_even_when_cost_unknown(self):
+        for item in self.run["records"]:
+            item["owner_minutes"] = None
+        target = next(item for item in self.run["records"]
+                      if item["arm"] == "skill"
+                      and item["case_id"] == "novel-transfer")
+        target["first_pass"] = False
+        target["decision_correct"] = False
+        report = self.report()
+        self.assertEqual("NO_PROMOTABLE_INCREMENT", report["verdict"])
+        self.assertEqual(0, report["semantic_comparison"]
+                         ["skill_minus_retrieval_transfer_first_pass"])
+
     def test_complete_fixture_is_only_development_not_validated(self):
         report = self.report()
         self.assertEqual("DEVELOPMENT_GAIN_ONLY_NEEDS_INDEPENDENT_HOLDOUT",
