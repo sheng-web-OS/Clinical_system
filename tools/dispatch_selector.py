@@ -94,9 +94,15 @@ def select_tasks(config, snapshot):
         eligible.append({"id": task["id"], "target": target,
                          "kind": task["kind"], "priority": task["priority"]})
     eligible.sort(key=lambda t: (-t["priority"], t["id"]))
+    # The top issue may have an active writer or a pending reviewer even while
+    # open. Return the ordered queue so the ChatGPT worker can check every
+    # candidate's live PR/owner/last gate and skip it without starving others.
+    # Issue-open status alone is NEVER an execution authorization.
     return {"status": "SHADOW_NO_ACTION", "model_calls": 0,
             "write_actions": 0, "execution_authorized": False,
             "selected": eligible[:1],
+            "candidates": eligible,
+            "selection_requires_live_gate_check": True,
             "other_eligible_count": max(0, len(eligible) - 1),
             "skipped": skipped}
 
