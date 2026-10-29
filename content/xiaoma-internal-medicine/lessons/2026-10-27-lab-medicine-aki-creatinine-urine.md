@@ -72,7 +72,7 @@ eGFRcr 通常由 SCr、年齡與其他方程式變數估算。當 SCr 快速上�
 
 原作者在重新評估後安排 CT KUB。**CT Figure 3 顯示嚴重雙側 hydronephrosis，並有中度雙側 hydroureter**。這項結果直接改變了臨床證據格局：它比「因為有腹瀉，所以可能腎前性」更具體地提供了尿流受阻的解剖線索；不過 CT 仍未明確顯示造成阻塞的精確病灶，不能把阻塞的某一個機械位置當成已直接看見。[1]
 
-回頭看[原始 CT Figure 3（PDF 第 4 頁）](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4)，紅箭頭標示的是雙側嚴重 hydronephrosis；圖說同時提到雙側中度 hydroureter，並明言**沒有看到明確的造成阻塞病灶**。影像提供了先前缺少的解剖學資訊，卻沒有把機械性阻塞的精確位置也一併解答。
+回頭看[原始 CT Figure 3（PDF 第 4 頁）](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4)，紅箭頭標示的是雙側嚴重 hydronephrosis；圖說同時提到雙側中度 hydroureter，並明言**沒有看到明確的造成阻塞病灶**。影像提供了先前缺少的解剖學資訊，卻沒有把機械性阻塞的精確位置也一併解答。更重要的是，**超音波與 CT 並非同時進行**：晚幾天 CT 看見嚴重水腎，無法區分最初超音波是因早期阻塞、灌流或視野條件而未見擴張，還是兩次檢查間阻塞與腎盂擴張實際加重。這不是拿一名患者的前後兩張影像便能計算超音波敏感度，或直接宣告第一次檢查「技術失誤」；真正改變決策的是**病況與阻塞前測風險持續存在，使後續影像有新的資訊價值**。[12]
 
 泌尿科會診後改用 Tiemann-tip 導尿管，之後的巨大尿量與腎功能改善，進一步增加「阻塞是這次 AKI 的重要可逆因素」的可信度。**影像、介入和後續變化在同一病人身上形成相互支持的因果鏈，但不等於已由隨機對照證明全部效果來自單一管別。**
 
@@ -200,3 +200,5 @@ KDIGO 2012 原始 [Figure 4（印刷 p.25）](https://kdigo.org/wp-content/uploa
 [10] [van der Bilt & Alsma, *Hyponatraemia caused by transient syndrome of inappropriate antidiuresis to urinary retention*. Intern Med J. 2023](https://pubmed.ncbi.nlm.nih.gov/36822611/)：三例尿滯留相關低鈉血症，置入導尿管後有 brisk diuresis 和部分病例血鈉過快自動校正；是不同患者的病例系列，非 Chen 個案觀察。
 
 [11] [European Clinical Practice Guideline on Hyponatraemia（2014，原始正式文本）](https://academic.oup.com/ejendo/article/170/3/G1/6668028)：慢性／病程不明低鈉血症在校正過程中的安全限度與監測。適用條件取決於低鈉嚴重度、症狀和風險，不由 Chen 的矛盾端點反推治療。
+
+[12] [Shahzad et al. *The Challenges of Diagnosing Nondilated Obstructive Uropathy: A Case Report*. Can J Kidney Health Dis. 2022](https://journals.sagepub.com/doi/10.1177/20543581221086683)：早期阻塞與低血容量時影像可能未見擴張的反例。這是另一位病例，不能視為 Chen 在兩次檢查間究竟發生什麼的直接證據。
