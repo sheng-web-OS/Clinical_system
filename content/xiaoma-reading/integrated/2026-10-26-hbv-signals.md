@@ -1,6 +1,6 @@
 # 我們看見的是病程，還是病程留下的訊號？
 
-原文 2026.07.19｜2026.10.27 圖文修訂版
+2026.07.19 初稿｜2026.10.29 修訂
 
 上一篇[〈HBV phase，不是在替慢性肝炎分期〉](2026-10-26-hbv-phase-state-vs-stage.md)，已經說明 HBV DNA 反映病毒複製，ALT 反映肝細胞受傷的間接訊號；兩者可能不同步，fibrosis 更不等同當下活動。病人卻不是直接呈現自己的「phase」給我們看：醫師只能從採血當下的 HBeAg、HBV DNA、ALT，以及後續的變化，推論背後的病毒—宿主互動。
 
@@ -27,18 +27,18 @@ ALT 落在正常範圍，表示這次檢測未見超過採用上限的酵素活�
     <div class="hbv-contrast-result"><strong>ALT 相同 ≠ 上游病毒—宿主狀態相同</strong><span>兩個名稱是典型參考組合，不是憑單次檢驗完成的診斷。</span></div>
   </div>
   <div class="hbv-inference-step"><span>③ 從觀察走到臨床行動，仍需補足證據</span><strong>Markers → 推論 phase → 另評估結構風險與處置</strong><p>結合 HBeAg、連續 HBV DNA／ALT 及其他病因；另看 fibrosis、cirrhosis 與個別風險，才能決定治療或監測。</p></div>
-  <figcaption>原創概念圖，非 Pocket Medicine 原表或診療演算法。兩組為典型檢驗組合，非真實病例；正常 ALT 不能排除組織發炎或既有 fibrosis，也不表示可停治療／監測。對讀 Pocket Medicine 9E 私人 PDF 第 140–141 頁及 AASLD／IDSA 2025 phase 定義；公開原表重製授權尚未確認。</figcaption>
+  <figcaption>原創概念圖，非 Pocket Medicine 原表或診療演算法。兩組為典型檢驗組合，非真實病例；正常 ALT 不能排除組織發炎或既有 fibrosis，也不表示可停治療／監測。對照 Pocket Medicine 9E HBV phase 表及 AASLD／IDSA 2025 phase 定義；[原書與指引出處](../hbv-phase-sources.md#ref-pocket)。</figcaption>
 </figure>
 
 圖中兩組典型檢驗組合的 ALT 都正常，但 HBV DNA 與 HBeAg 組合不同。這不是要重新背兩種 phase，而是提醒：**Marker 是間接觀察，phase 是對多個觀察及其時間序列的推論。** HBeAg、HBV DNA 與 ALT 未形成典型組合時，也可能落在 indeterminate／grey-zone state；分類標籤不是量到的免疫狀態。
 
-把「需要時間」落到臨床操作上，AASLD/IDSA 指引建議判斷 phase 時，依據 **6–12 個月內至少兩次 ALT 與 HBV DNA 檢驗**，而不是用一次抽血替病人永久命名。這也不是要求所有人先等滿半年才治療：若已存在 cirrhosis 等明確適應症，當下的處置應由已知風險決定，不必等待 phase 完成分類。對沒有 cirrhosis 的 HBeAg-negative 病人，DNA ≥2,000 IU/mL 但 ALT 尚未達明確活動性肝炎條件，與 ALT 升高但 DNA <2,000 IU/mL，雖都可能屬於灰區，前者要評估肝癌／纖維化等風險，後者還須尋找其他肝細胞受傷原因。**同樣是 indeterminate，下一個需要的證據並不相同**。[AASLD/IDSA 原始建議與適用範圍](../hbv-phase-sources.md#ref-aasld)
+對 **HBeAg-negative、檢驗組合落在 indeterminate／grey zone、需要確認長期模式** 的患者，AASLD/IDSA 提醒：ALT 與 HBV DNA 會波動，判讀 phase 應比較 **6–12 個月內至少兩次**檢驗，而不是憑單次抽血貼上永久標籤。這是提高分類可靠度的時間證據，不是所有 HBV 病人必須等待半年才能治療；若已存在 cirrhosis 等明確治療適應症，應直接依目前的風險處置。對無 cirrhosis 的 HBeAg-negative 患者，DNA ≥2,000 IU/mL、但 ALT 尚未達典型 immune-active 條件，要評估 fibrosis 和 HCC 風險；ALT 升高而 DNA <2,000 IU/mL，則還須找其他肝傷害原因。**同樣被稱為灰區，最有用的下一項證據未必相同。**[AASLD/IDSA 的定義與建議](../hbv-phase-sources.md#ref-aasld)
 
 只靠一次正常 ALT，既不能判斷目前完全沒有肝炎活動，也不能保證未來的疾病軌跡。下一個問題是：臨床指引為何仍需要設置 ALT、HBV DNA 等治療門檻，而這些門檻又不能被當成疾病真正的起點？
 
 ## 觀察門檻，為什麼不是疾病開始的時點？
 
-當 HBV DNA 持續高於具有臨床意義的範圍，ALT 也反覆或持續升高時，在排除其他 liver injury causes 後，病毒複製與 hepatocyte injury 兩項證據開始匯合。此時，眼前的 injury 由 HBV-related hepatitis 所造成的可能性更高，抗病毒治療的獲益也更容易確認。
+當 HBV DNA 和 ALT 反覆呈現符合活動性 HBV 肝炎的組合，且沒有其他更能解釋肝細胞受傷的病因時，HBV-related hepatitis 才更能解釋這些所見。**這一步是在推論傷害的病因，不是由兩項檢驗直接證明抗病毒藥的治療效益。**是否開始治療、預期能降低多少疾病進展風險，還須分開依照適用的治療研究、指引建議、fibrosis 與病人風險決定。
 
 因此，ALT 是重要的治療證據。
 
@@ -56,15 +56,11 @@ ALT 從正常跨過 ULN，不表示病毒與宿主直到那一刻才開始互動
 
 但正常 ALT 也不能否定其他證據。當年齡、fibrosis stage、family history 或其他進展風險改變時，繼續等待 injury signal 升高的代價也會改變。不同指引以不同方式將這些因素放回治療判斷，正是在補上 ALT 無法單獨回答的部分。
 
-ALT 的限制，不只是它不專一，也不只是它不能反映 fibrosis 或 liver function。
+能否只以 ALT 正常決定先等待？把同一個病人的 ALT 維持正常、HBV DNA 仍可測得，只將結構評估從「未見顯著 fibrosis」換成「已有 cirrhosis」，處置便不能維持原樣；反過來，若 ALT 升高但 HBV DNA 很低，也不能直接把所有肝傷害歸因於 HBV，而要評估其他病因。這些反事實所改變的是**治療適應症與病因可信度**，不是讓 ALT 成為更準確的疾病時鐘。
 
-更根本的限制是，它必須等到病程轉化為 hepatocyte injury，才有機會在血液中被看見。
+因此，marker 是當下可量到的間接訊號，phase 是結合時間序列形成的臨床推論；treatment threshold 則是把已知傷害、累積風險及治療證據轉成下一步行動的規則，不能從單一正常或異常 ALT 自動推出。
 
-HBeAg、HBV DNA 與 ALT，讓病毒—宿主互動的不同面向得以被觀察；phase 再將這些 markers 的組合與時間變化，壓縮成可使用的臨床模型。Marker 是觀察，phase 是推論，treatment threshold 則把推論轉化成行動。三者都不是病程本身。
 
-因此，正常 ALT 既不是治療的自動否決，也不是提早治療的充分理由。
-
-真正需要判斷的，是在 injury 尚未明顯浮出血液以前，我們已有的其他證據，是否足以使繼續等待的風險，超過現在行動的代價。
 
 
 其中一個足以改變等待策略的條件，是已經存在 cirrhosis。2025 EASL 對 cirrhosis 且 HBV DNA 可測得者建議抗病毒治療，不能因 ALT 正常而套回一般低活動監測路徑。對無 cirrhosis 的 HBeAg-negative indeterminate 成人，2025 AASLD/IDSA 則採共享決策的條件式建議，證據確定性很低；這不是對所有正常 ALT 病人一致給藥。若有急性意識改變、凝血異常或肝功能失代償，應先依當下危急狀況處理，不等長期 phase 歸類完成。[指引原文、適用人群及限制](../hbv-phase-sources.md)
