@@ -88,6 +88,48 @@ class ReviewAssemblyTest(unittest.TestCase):
         self.assertFalse(report["owner_attention_measured"])
         self.assertEqual(1, report["arm_metrics"]["skill"]["transfer_first_pass"])
         self.assertEqual(0, report["arm_metrics"]["retrieval"]["transfer_first_pass"])
+        self.assertEqual(
+            "PREREGISTER_NEW_UNSEEN_TASKS_AND_MEASURE_COST",
+            report["next_iteration"]["action"])
+        self.assertFalse(report["next_iteration"]["candidate_skill_edited"])
+        self.assertFalse(report["next_iteration"]["holdout_reuse_authorized"])
+
+    def test_negative_transfer_recommends_narrowing_not_blind_rewriting(self):
+        mapping = self.load("private_arm_mapping.json")["answer_slots"]
+        for row in self.review["judgments"]:
+            if mapping[row["slot"]]["case_id"] != "synthetic-hcm-decision":
+                continue
+            row["decision_correct"] = mapping[row["slot"]]["arm"] != "skill"
+        self.review_path.write_text(json.dumps(self.review))
+        _, report = self.assemble()
+        self.assertEqual(
+            "PROPOSE_NARROWER_SKILL_OR_REMOVE_IT",
+            report["next_iteration"]["action"])
+        self.assertFalse(report["promotion_authorized"])
+
+    def test_shared_failure_targets_source_gap_before_skill_change(self):
+        mapping = self.load("private_arm_mapping.json")["answer_slots"]
+        for row in self.review["judgments"]:
+            if mapping[row["slot"]]["case_id"] == "synthetic-hcm-decision":
+                row["decision_correct"] = False
+        self.review_path.write_text(json.dumps(self.review))
+        _, report = self.assemble()
+        self.assertEqual(
+            "REASSESS_SOURCE_GAP_BEFORE_ANY_SKILL_CHANGE",
+            report["next_iteration"]["action"])
+
+    def test_observed_safety_failure_forces_hold_not_self_improvement(self):
+        mapping = self.load("private_arm_mapping.json")["answer_slots"]
+        for row in self.review["judgments"]:
+            if (mapping[row["slot"]]["case_id"] == "synthetic-hcm-decision"
+                    and mapping[row["slot"]]["arm"] == "skill"):
+                row["unsafe"] = True
+        self.review_path.write_text(json.dumps(self.review))
+        _, report = self.assemble()
+        self.assertEqual(
+            "HOLD_INVESTIGATE_SAFETY_OR_RUN_FAILURE",
+            report["next_iteration"]["action"])
+        self.assertFalse(report["publication_approved"])
 
     def test_missing_judgment_rejected_instead_of_reweighting_denominator(self):
         self.review["judgments"].pop()
