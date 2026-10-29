@@ -40,6 +40,10 @@ def gate(ctx, decision):
 _OPENAI_SAFE_CODES = {
     "invalid_api_key": "INVALID_API_KEY",
     "insufficient_quota": "INSUFFICIENT_QUOTA",
+    "credit_balance_exhausted": "CREDIT_BALANCE_EXHAUSTED",
+    "organization_usage_limit_exceeded": "ORG_USAGE_LIMIT_EXCEEDED",
+    "organization_spend_limit_exceeded": "ORG_SPEND_LIMIT_EXCEEDED",
+    "project_spend_limit_exceeded": "PROJECT_SPEND_LIMIT_EXCEEDED",
     "billing_hard_limit_reached": "BILLING_LIMIT",
     "rate_limit_exceeded": "RATE_LIMIT",
     "model_not_found": "MODEL_NOT_FOUND",
@@ -50,10 +54,11 @@ _OPENAI_SAFE_CODES = {
 
 
 def classify_openai_http_error(exc):
-    """Classify a provider HTTP error without logging response text or tokens.
+    """Safely classify provider HTTP failures from an invariant allowlist.
 
-    Only the numeric HTTP status and recognized fixed error.code are visible.
-    The raw body may include echoed inputs or account-specific information.
+    OpenAI sometimes returns 429 quota errors with error.type populated
+    but error.code = null. Never print raw error bodies, unknown codes,
+    response headers, echoed prompts, account metadata or credentials.
     """
     status = exc.code if exc.code in {400, 401, 402, 403, 404, 408, 409,
                                      422, 429, 500, 502, 503, 504} else 0
@@ -62,9 +67,14 @@ def classify_openai_http_error(exc):
         body = exc.read(4096)
         parsed = json.loads(body)
         if isinstance(parsed, dict) and isinstance(parsed.get("error"), dict):
-            raw_code = parsed["error"].get("code")
-            if isinstance(raw_code, str) and raw_code in _OPENAI_SAFE_CODES:
-                label += "_" + _OPENAI_SAFE_CODES[raw_code]
+            error = parsed["error"]
+            # Stable official error.code takes priority. error.type is the
+            # fallback where code is null, never an arbitrary log string.
+            for field in ("code", "type"):
+                name = error.get(field)
+                if isinstance(name, str) and name in _OPENAI_SAFE_CODES:
+                    label += "_" + _OPENAI_SAFE_CODES[name]
+                    break
     except (ValueError, TypeError, OSError):
         pass
     return label
