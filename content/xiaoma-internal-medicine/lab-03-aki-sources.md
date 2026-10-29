@@ -8,7 +8,7 @@ AKI 的 creatinine、尿量與 eGFR 是不同時間尺度的功能訊號。確�
 
 [原始超音波 Figure 1–2，PDF 第 2 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=2)：分別為雙側腎臟，原圖說在當時沒有顯著 hydronephrosis；箭頭標示腎皮髓質分界保存，並不構成排除所有尿路阻塞的檢驗。
 
-[原始 CT Figure 3，PDF 第 4 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4)：影像與圖說顯示 bilateral severe hydronephrosis、moderate bilateral hydroureter，但沒有在該張圖確認精確的 obstructing lesion。它補足了先前負向超音波未解決的解剖證據；單憑影像仍不能替患者推測未記錄的處置理由。
+[原始 CT Figure 3，PDF 第 4 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4)：影像與圖說顯示 bilateral severe hydronephrosis、moderate bilateral hydroureter，但沒有在該張圖確認精確的 obstructing lesion。它補足了先前負向超音波未解決的解剖證據；單憑影像仍不能替患者推測未記錄的處置理由。**兩項影像不同日**，所以不能把「先陰性、後陽性」直接讀成同一時間點的假陰性、同一病變的靈敏度比較，或一定是超音波技術錯誤。[Shahzad 等 2022 nondilated obstructive uropathy 病例](https://journals.sagepub.com/doi/10.1177/20543581221086683)指出早期阻塞或低血容量時可能未見擴張；那是機轉上的反例，不是 Chen 本人究竟何時出現水腎的證據。
 
 [原始 Table 1–3，PDF 第 3–5 頁](https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=3)：
 - Table 1 記 2024/12/08 Cr **375 μmol/L**、12/10 Cr **558 μmol/L**，並把 12/12 Cr **618 μmol/L**、Na **130 mmol/L**、urea **32.4 mmol/L** 列為導尿管介入前資料。
