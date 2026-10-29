@@ -150,6 +150,52 @@ class RunnerTest(unittest.TestCase):
         self.assertEqual(9, len(mapping["answer_slots"]))
         self.assertEqual(3, len(mapping["case_aliases"]))
 
+    def test_paid_or_mock_execution_checkpoints_first_pass_after_each_attempt(self):
+        calls = [0]
+        def fake(request, key):
+            calls[0] += 1
+            return {"answer": f"Frozen first pass {calls[0]}",
+                    "returned_model": MODEL,
+                    "response_id": f"mock-{calls[0]}",
+                    "usage": {"input_tokens": 10, "output_tokens": 10}}
+        result = self.go(mode=True, caller=fake)
+        self.assertEqual(9, result["completed"])
+        file = self.root / "out/first_pass_journal.jsonl"
+        self.assertEqual(0o600, file.stat().st_mode & 0o777)
+        lines = [json.loads(t) for t in file.read_text().splitlines()]
+        self.assertEqual(9, len(lines))
+        self.assertEqual(json.loads((self.root / "out/first_pass_results.json").read_text()),
+                         lines)
+        self.assertFalse(json.loads((self.root / "out/manifest.json").read_text())
+                         ["first_pass_journal_v1"])
+
+    def test_crash_preserves_paid_work_no_automatic_retry_or_blind_claim(self):
+        count = [0]
+        def crash_on_third(request, key):
+            count[0] += 1
+            if count[0] == 3:
+                raise KeyboardInterrupt("simulated process crash; NOT actual API")
+            return {"answer": "Stored pre-crash response",
+                    "returned_model": MODEL,
+                    "response_id": f"mock-{count[0]}",
+                    "usage": {"input_tokens": 10, "output_tokens": 8}}
+        with self.assertRaises(KeyboardInterrupt):
+            self.go(mode=True, caller=crash_on_third)
+        base = self.root / "out"
+        journal = [json.loads(line) for line in
+                   (base / "first_pass_journal.jsonl").read_text().splitlines()]
+        events = [json.loads(line) for line in
+                  (base / "attempt_events.jsonl").read_text().splitlines()]
+        self.assertEqual(2, len(journal))
+        self.assertEqual(["STARTED", "COMPLETED", "STARTED", "COMPLETED", "STARTED"],
+                         [e["event"] for e in events])
+        self.assertFalse((base / "first_pass_results.json").exists())
+        self.assertFalse((base / "blind_reviewer_packet.json").exists())
+        self.assertEqual(3, count[0])
+        with self.assertRaisesRegex(PilotError, "OUTPUT_EXISTS"):
+            self.go(mode=True, caller=crash_on_third)
+        self.assertEqual(3, count[0])  # No second round of paid calls.
+
     def test_failed_calls_are_retained_not_dropped(self):
         count = [0]
         def flaky(request, key):
