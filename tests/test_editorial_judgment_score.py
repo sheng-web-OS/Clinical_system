@@ -9,8 +9,9 @@ mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 
 CASES = {"cases": [
-    {"id": "a", "status": "replayable", "type": "negative-control"},
-    {"id": "b", "status": "needs_freeze", "type": "clinical"}
+    {"id": "a", "status": "replayable", "type": "reader-value"},
+    {"id": "b", "status": "needs_freeze", "type": "clinical"},
+    {"id": "c", "status": "replayable", "type": "negative-control"
 ]}
 
 
@@ -28,12 +29,17 @@ def one_case():
 
 class TestEJEScore(unittest.TestCase):
     def test_counts_and_noncompensating_controls(self):
-        x = mod.score(CASES, {"judgments": [one_case()]})["lite"]
+        correct_control = one_case()
+        correct_control.update(id="c", tp_material=0, fn_material=0,
+                               human_minutes=0, human_turns=0)
+        x = mod.score(CASES, {"judgments": [one_case(), correct_control]})["lite"]
         self.assertEqual(x["material_recall"], .5)
-        self.assertEqual(x["finding_precision"], .5)
+        self.assertEqual(x["finding_precision"], .333)
         self.assertEqual(x["major_recall"], None)
         self.assertEqual(x["negative_control_overrevision"], 1.0)
-        self.assertEqual(x["human_correction_minutes"], 4)
+        self.assertIsNone(x["human_correction_minutes"])
+        self.assertEqual(x["human_time_evidence"], "NOT_VERIFIED")
+        self.assertEqual(x["unverified_reported_minutes"], 4)
         self.assertEqual(x["stage_means"]["C"], 0)
 
     def test_contaminated_does_not_count_as_autonomous(self):
