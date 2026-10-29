@@ -7,7 +7,6 @@ from datetime import date
 from pathlib import PurePosixPath
 
 
-
 def _reading_title_key(title):
     """A high-confidence visual-title collision key; never a semantic merge."""
     normalized = unicodedata.normalize("NFKC", title).casefold()
@@ -44,10 +43,18 @@ def validate_reading_version_collisions(pages):
             raise ValueError("Multiple integrated successors for original: " + original_output)
         successors[original_output] = page["output"]
 
+    integrated_titles = {}
     for page in pages:
         if page.get("kind") != "ai_integrated":
             continue
         key = (page.get("collection"), _reading_title_key(page["title"]))
+        earlier = integrated_titles.get(key)
+        if earlier is not None:
+            raise ValueError(
+                "Duplicate integrated reading title: "
+                + earlier["output"] + " / " + page["output"]
+            )
+        integrated_titles[key] = page
         for original in original_titles.get(key, []):
             if successors.get(original["output"]) != page["output"]:
                 raise ValueError(
