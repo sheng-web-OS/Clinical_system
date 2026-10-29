@@ -78,6 +78,10 @@ def audit(path, expected_sha256, mode="official-medeinst"):
         if max(len(c[0]), len(t[0])) > 12000:
             counters["pairs_above_worker_limit"] += 1
         # Lexical screening is approximate; autojunk bounds repetitive long narratives.
+        if (c[1].casefold().strip() == t[1].casefold().strip()
+                or c[0].strip() == t[0].strip()
+                or max(len(c[0]), len(t[0])) > 12000):
+            counters["structurally_excluded_pairs"] += 1
         ratio = SequenceMatcher(None, c[0], t[0], autojunk=True).ratio()
         ratios.append(ratio)
         if ratio < 0.5:
@@ -98,6 +102,8 @@ def audit(path, expected_sha256, mode="official-medeinst"):
         "narratives_above_worker_limit": counters["narratives_above_worker_limit"],
         "pairs_above_worker_limit": counters["pairs_above_worker_limit"],
         "worker_length_limit": 12000,
+        "structurally_excluded_pairs": counters["structurally_excluded_pairs"],
+        "remaining_structurally_eligible_pairs": n - counters["structurally_excluded_pairs"],
         "lexical_overlap": {
             "minimum": round(ratios[0], 4),
             "p10": round(ratios[(n - 1) // 10], 4),
@@ -116,10 +122,10 @@ def audit(path, expected_sha256, mode="official-medeinst"):
     }
     # Repeated diagnoses or literally identical narratives are not credible
     # *diagnostic-flip* controls even if the whole published file matches.
-    if counters["pairs_above_worker_limit"]:
-        output["verdict"] = "STRUCTURAL_AUDIT_WITH_WORKER_EXCLUSIONS"
-    if counters["same_diagnosis_label"] or counters["identical_narrative"]:
-        output["verdict"] = "HOLD_DATASET_PAIR_SEMANTICS"
+    if counters["structurally_excluded_pairs"]:
+        output["verdict"] = "STRUCTURAL_AUDIT_WITH_EXCLUSIONS"
+    # An audited source is NOT automatically safe for a model to use.
+    output["model_execution_authorized"] = False
     return output
 
 
@@ -134,7 +140,7 @@ def main():
     report = audit(a.dataset, a.expected_sha256, a.source_mode)
     print(json.dumps(report, ensure_ascii=False, sort_keys=True))
     if report["verdict"] not in ("STRUCTURAL_AUDIT_ONLY",
-                                 "STRUCTURAL_AUDIT_WITH_WORKER_EXCLUSIONS"):
+                                 "STRUCTURAL_AUDIT_WITH_EXCLUSIONS"):
         raise SystemExit(2)
 
 
