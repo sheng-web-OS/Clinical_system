@@ -166,6 +166,13 @@ class RunnerTest(unittest.TestCase):
         self.assertEqual(4, sum(e["event"] == "FAILED_OR_INCOMPLETE" for e in events))
         self.assertTrue(all(x["adjudication"] == "NOT_DONE" for x in rows))
 
+    def test_live_api_cannot_send_arbitrary_text_merely_marked_synthetic(self):
+        with self.assertRaisesRegex(PilotError, "EXACT_PUBLIC_ALLOWLISTED_INPUT_FILES"):
+            run(self.cases, self.pack, self.skill, self.root / "untrusted-live",
+                MODEL, COMMIT, execute=True, key="synthetic-not-a-real-key",
+                caller=None)
+        self.assertFalse((self.root / "untrusted-live").exists())
+
     def test_api_missing_key_fails_before_making_private_directory(self):
         with self.assertRaisesRegex(PilotError, "MODEL_SECRET_NOT_CONFIGURED"):
             run(self.cases, self.pack, self.skill, self.root / "out",
