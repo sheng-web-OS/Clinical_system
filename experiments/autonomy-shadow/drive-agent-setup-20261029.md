@@ -12,7 +12,7 @@ Date: 2026-10-29. Status: DRAFT/HOLD. Public repository; only synthetic fixtures
 Create or select a **dedicated** Google Cloud project. Download the reviewed repository script once, or open its contents and run in Cloud Shell:
 
     curl -fsSLo /tmp/setup-clinical-os-wif.sh \
-      https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/e65063cc4820239c9fbf7e049ae5222565f069e4/tools/setup_drive_agent_wif.sh
+      https://raw.githubusercontent.com/sheng-web-OS/Clinical_system/cc0ec4f8218b3bdb8038084590d8072e4ff553ae/tools/setup_drive_agent_wif.sh
     bash /tmp/setup-clinical-os-wif.sh YOUR_GOOGLE_CLOUD_PROJECT_ID
 
 This URL pins the reviewed shell script to a specific commit rather than mutable branch HEAD. Review the script before running. It enables Google IAM/STS/Drive APIs and creates a dedicated SA and OIDC provider. It scopes trust to GitHub immutable numeric repository ID 1427690253, main branch and exact workflow_ref, then binds Workload Identity User to that narrow principalSet. It does not create downloadable SA keys or assign generic project Viewer/Editor roles to the Service Account.
@@ -70,3 +70,6 @@ NO restricted materials, patient data, confidential titles/IDs or copyrighted fu
 
 ## 2026-10-29 WIF pool-name regression
 A real Cloud Shell run found that the Google Workload Identity Pool display name (34 characters) violated the 32-character maximum; the provider display name was also 36 characters. The script was fixed to use 24/18-character names. The already-downloaded old version can be repaired locally by sed replacements. No claim is made that Cloud Shell creation succeeded until actual Google output is inspected.
+
+## Owner-reported Cloud Shell result (2026-10-29)
+Owner pasted successful output for Google project `instant-land-430112-t2`: pool `clinical-os-pool`, OIDC provider `github-drive-agent`, service account `clinical-os-drive-agent@instant-land-430112-t2.iam.gserviceaccount.com`, and IAM policy updated. This is a user-supplied execution log, not an independently authenticated Google Cloud IAM readback. GitHub Actions still has no verified WIF/Drive access. Sandbox Drive sharing remains owner-only; do not enable any credentialed workflow or merge until explicit main protection and correct secrets/variables are confirmed.
