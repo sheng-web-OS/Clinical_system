@@ -81,7 +81,7 @@ class Stage1ExportTests(unittest.TestCase):
         self.assertEqual(0o600, (self.out / "stage1.zip").stat().st_mode & 0o777)
 
     def test_source_mode_mismatch_fails_closed(self):
-        with self.assertRaisesRegex(HoldoutError, "SOURCE_CLASS_MISMATCH"):
+        with self.assertRaisesRegex(HoldoutError, "PACKET_MANIFEST_SOURCE_MISMATCH"):
             self.go(expected_source_class="MedEinst_DDXPlus_simulated_research_case")
         self.assertFalse(self.out.exists())
 
@@ -113,7 +113,7 @@ class Stage1ExportTests(unittest.TestCase):
         slot = next(self.worker.iterdir())
         alias = self.worker / ("s_" + "e"*24)
         alias.symlink_to(slot, target_is_directory=True)
-        with self.assertRaisesRegex(HoldoutError, "UNSAFE_OR_UNEXPECTED_WORKER_SLOT"):
+        with self.assertRaisesRegex(HoldoutError, "PACKET_MANIFEST_SLOT_MISMATCH"):
             self.go()
 
     def test_reject_oversize_case_text(self):
@@ -128,7 +128,7 @@ class Stage1ExportTests(unittest.TestCase):
     def test_reject_unsafe_slot_name(self):
         slot = next(self.worker.iterdir())
         slot.rename(self.worker / "unvalidated-name")
-        with self.assertRaisesRegex(HoldoutError, "UNSAFE_OR_UNEXPECTED_WORKER_SLOT"):
+        with self.assertRaisesRegex(HoldoutError, "PACKET_MANIFEST_SLOT_MISMATCH"):
             self.go()
 
 
