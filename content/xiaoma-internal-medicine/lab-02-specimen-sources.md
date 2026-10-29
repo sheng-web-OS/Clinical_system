@@ -8,7 +8,7 @@
 
 ### 對照：同樣的溶血標記，反向的治療風險（非同一患者）
 
-[AHRQ PSNet，Devera、Barnes 與 Lewis，*A Fatal Twist in Pseudohyperkalemia*（2024-12-31）](https://psnet.ahrq.gov/web-mm/fatal-twist-pseudohyperkalemia)：這是**另一名 54 歲男性**，因胸痛就醫，初次 K **5.9 mEq/L** 且標記溶血；原始 ECG 記錄 flattened T waves、small U waves、QT prolongation 與 RBBB，提示**報告上高 K 與臨床再極化表現不一致**。之後病人接受多種降鉀介入，心房顫動治療另使用 amiodarone，隨後發生 TdP 與致命性心搏停止。作者評論研判低鉀與藥物／心臟病況可能疊加，卻沒有提供可把最初真實 K、治療後 K 或致命機轉量化分拆的連續血鉀證據。**不能把評論者的 plausible explanation 寫成已實測的低鉀濃度，也不能把這位 54 歲患者與 2017 年 72 歲的延誤處置病例拼接成同一病程。**
+[AHRQ PSNet，Devera、Barnes 與 Lewis，*A Fatal Twist in Pseudohyperkalemia*（2024-12-31）](https://psnet.ahrq.gov/web-mm/fatal-twist-pseudohyperkalemia)：這是**另一名 54 歲男性**，因胸痛就醫，初次 K **5.9 mEq/L** 且標記溶血；原始 ECG 記錄 flattened T waves、small U waves、QT prolongation 與 RBBB，提示**報告上高 K 與臨床再極化表現不一致**。之後病人接受多種降鉀介入，心房顫動治療另使用 amiodarone，隨後發生 TdP 與致命性心搏停止。作者評論研判低鉀與藥物／心臟病況可能疊加，卻沒有提供可把最初真實 K、治療後 K 或致命機轉量化分拆的連續血鉀證據。**不能把評論者的 plausible explanation 寫成已實測的低鉀濃度，也不能把這位 54 歲患者與 2017 年 72 歲的延誤處置病例拼接成同一病程。** **PSNet 該頁 Figure 1、Figure 2 的 ECG 圖係改編自 Wikimedia 的教學圖像，並非這名 54 歲患者的原始 ECG。** 避免把示意 U 波或 T 波尖高圖上的形態冒稱為已目視核對該患者實際心電圖。
 
 這篇原始反向病例與 2017 年安全事件共同提出一個可檢驗的問題：**何時等待確認比治療危險，何時先依不一致的數據治療比盡快獲得新檢體危險？** 決策需把即時生命徵象、ECG、K 的採樣可信度與處置後反應並列，而不是預先把溶血旗標解釋為「一定是假」或「一定是真的」。
 
