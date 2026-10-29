@@ -45,7 +45,7 @@ CASES = [
 ]
 SKILL = "---\nname: decision-question-triage\n---\nFollow causal evidence only when applicable."
 PACK = "Original authored lesson: distinguish measurement from mechanism."
-MODEL = "gpt-5-mini"
+MODEL = "gpt-5.6-terra"
 
 
 class RunnerTest(unittest.TestCase):
@@ -265,6 +265,24 @@ class RunnerTest(unittest.TestCase):
         self.assertLessEqual(costs["estimated_upper_usd"], 0.50)
         self.assertFalse(costs["external_project_budget_verified"])
         self.assertFalse(costs["provider_invoice_verified"])
+
+    def test_terra_only_pilot_rejects_legacy_mini_even_with_complete_plan(self):
+        calls = build_plan(CASES, "a"*64, PACK, "b"*64, SKILL,
+                           "c"*64, "gpt-5-mini", COMMIT)[1]
+        with self.assertRaisesRegex(PilotError, "UNAPPROVED_PAID_MODEL"):
+            preflight_paid_budget(calls, "gpt-5-mini")
+
+    def test_fixed_public_hcm_suite_is_over_current_terra_50_cent_ceiling(self):
+        root = Path(__file__).resolve().parents[1]
+        raw = (root / "experiments/skill-transfer/fixtures/synthetic-questions.json").read_bytes()
+        pack_raw = (root / "content/xiaoma-reading/originals/2026-07-14-hcm.md").read_bytes()
+        skill_raw = (root / ".agents/skills/decision-question-triage/SKILL.md").read_bytes()
+        cases = clean_cases(json.loads(raw))
+        calls = build_plan(cases, digest(raw), pack_raw.decode("utf-8"),
+                           digest(pack_raw), skill_raw.decode("utf-8"),
+                           digest(skill_raw), MODEL, COMMIT)[1]
+        with self.assertRaisesRegex(PilotError, "SUBTRIAL_COST_BOUND_EXCEEDED"):
+            preflight_paid_budget(calls, MODEL)
 
     def test_live_preflight_denies_unknown_or_price_changed_models(self):
         calls = build_plan(CASES, "a"*64, PACK, "b"*64, SKILL,
