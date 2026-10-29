@@ -39,7 +39,12 @@ def reading_units(markdown):
             return
         raw = " ".join(x.strip() for x in buffer)
         buffer = []
-        visible = re.sub(r"</?[A-Za-z][^>]*>", " ", raw)
+        # Strip known inline HTML elements, not clinical comparisons such as
+        # '<LLN and >ULN': a generic /<letter...>/ matcher deletes thresholds.
+        # Also disallow crossing another '<' while looking for a closing '>'.
+        visible = re.sub(
+            r"</?(?:a|abbr|b|br|code|del|div|em|i|ins|kbd|mark|p|s|samp|small|span|strong|sub|summary|sup|time|u)(?=[\\s/>])[^<>]*>",
+            " ", raw, flags=re.I)
         visible = re.sub(r"!?\[([^\]]+)\]\([^)]+\)", r"\1", visible)
         visible = re.sub(r"[\x60*_~]", "", visible)
         visible = re.sub(r"\s+", " ", visible).strip()
