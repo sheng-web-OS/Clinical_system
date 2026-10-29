@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source_class": "synthetic_public_fixture",
+  "exposure": "development",
+  "cases": [
+    {
+      "id": "synthetic-renal-decision",
+      "role": "transfer",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 虛構教學病例，並非真實病歷。一名住院成人原先血壓穩定，現在肌酸酐由 1.0 上升至 2.1 mg/dL，伴隨新出現的下肢水腫、頸靜脈充盈與尿量下降。住院紀錄只寫有靜脈輸液，但沒有檢查結果可證明病人一定缺乏有效循環血量；腎臟超音波沒有明顯水腎，利尿劑使用紀錄未能確認。請為醫學學習者選擇一個最值得深入的 Discussion 問題，說明它對推理的價值，以及哪些已知與未知條件會改變結論。不要替虛構醫療團隊補寫其決策動機，也不需開立藥物醫囑。"
+    },
+    {
+      "id": "synthetic-hcm-explanation",
+      "role": "normal",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 虛構教學情境。課堂正在教 hypertrophic cardiomyopathy 的 obstructive 與 nonobstructive 分類，一名學習者想知道：沒有 LV outflow tract obstruction 是否能推出 filling 與 systolic function 正常？請用清楚、連續的概念敘述回答，指出定義與臨床推論的邊界。講義中沒有病人需要決定手術或用藥，也沒有提供兩種真實競爭治療方案的比較。"
+    },
+    {
+      "id": "synthetic-physiology-glossary",
+      "role": "boundary",
+      "task": "SYNTHETIC EDUCATIONAL SCENARIO — 這是一份虛構課堂詞彙解釋，不是一位病人的病例。新生問：在討論心臟生理時，preload、end-diastolic volume 與 end-diastolic pressure 有哪些不同？各數值可能受到哪些因素影響？請用短篇推導說明概念之間不能完全互換的原因；教材未提出診斷或治療決策，也沒有實際量測數值。"
+    }
+  ]
+}
