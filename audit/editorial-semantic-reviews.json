@@ -8531,6 +8531,436 @@
           "line_for_editor": 55
         }
       }
+    },
+    "content/xiaoma-reading/integrated/2026-10-23-hf-lvedp-figures.md": {
+      "content_blob": "24b1e45bded62fce4c3ba45530ae0e68d6c5f2f3",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/233#issuecomment-6487470733",
+      "core_reader_question": "兩張原創 HF/LVEDP 圖各回答哪個臨床問題，如何回到現行主教材而不混淆壓力、容量與灌流？",
+      "new_understanding": "圖一先辨認 wet/dry 與 warm/cold；圖二只在確認左側壓力問題後拆解 LVEDP/EDV。新增兩條現行 HF 與 LVEDP 主文精確導航，與歷史原稿來源入口分工。",
+      "strongest_counterargument": "兩張圖已有完整 HF 與 LVEDP 主文回鏈，新增文字可能只是重複；但原圖頁先前僅連歷史原稿，新段提供到現行兩篇完整臨床推理的直接入口且明確區隔身分。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "48e9d0556c2f0827fa-1": {
+          "role": "source_context",
+          "reader_gain": "定位為兩張圖的閱讀補充，明確區隔歷史原稿與新整合主文。",
+          "nonredundancy_reason": "不交代版本身分會把新重繪內容誤認為作者歷史原稿。",
+          "verdict": "keep"
+        },
+        "24087c25cc6bc23a0e-1": {
+          "role": "orientation",
+          "reader_gain": "以肺鬱血與低灌流可能分離，建立四象限的兩條獨立軸。",
+          "nonredundancy_reason": "若無臨床矛盾，圖一容易被當成靜態嚴重度標籤。",
+          "verdict": "keep"
+        },
+        "8dfcc6d26fa4c718a0-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分冷與低血壓、濕與總體液量，提出床邊判讀限制。",
+          "nonredundancy_reason": "圖像自身不足以防止用血壓或體重替代灌流與鬱血。",
+          "verdict": "keep"
+        },
+        "5397b8a3789f301a0e-1": {
+          "role": "causal_bridge",
+          "reader_gain": "由 wet-warm 尚未回答左側壓力來源，合理引入第二張圖。",
+          "nonredundancy_reason": "少了這段，兩張圖的推理層級與先後關係會斷裂。",
+          "verdict": "keep"
+        },
+        "46cf0bc12c64af842a-1": {
+          "role": "definition",
+          "reader_gain": "分辨左房壓、PCWP 與 LVEDP，加入二尖瓣及 v wave 例外。",
+          "nonredundancy_reason": "不先確立壓力測量位置，LVEDV 分支會被誤套到肺水腫。",
+          "verdict": "keep"
+        },
+        "63b43815309d6102a1-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "限制從肺水腫、EF 與 LVEDV 推定容量和有效前向輸出的過度推論。",
+          "nonredundancy_reason": "這段補足圖二無法單獨交代的 total SV 與 forward SV 差異。",
+          "verdict": "keep"
+        },
+        "d00204282f03e22fdf-1": {
+          "role": "decision",
+          "reader_gain": "回到灌流、症狀與治療反應，拒絕由 LVEDP 單一數值開藥。",
+          "nonredundancy_reason": "是圖一與圖二共同回到臨床決策的必要閉環。",
+          "verdict": "keep"
+        },
+        "198479df2872f24ce7-1": {
+          "role": "navigation",
+          "reader_gain": "精確連結現行 HF 與 LVEDP 主文，分別通往急性處置和壓力機轉。",
+          "nonredundancy_reason": "原頁僅有歷史原稿入口，這段補足讀者通往最新主文的路徑。",
+          "verdict": "keep"
+        },
+        "28d35a940b2e3633bc-1": {
+          "role": "source_context",
+          "reader_gain": "保留兩份作者原稿及圖像來源查核的版本和權利定位。",
+          "nonredundancy_reason": "歷史來源的追溯功能不同於新增的臨床主文導航。",
+          "verdict": "keep"
+        }
+      }
+    },
+    "content/xiaoma-internal-medicine/lessons/2026-10-27-pe-normotensive-shock.md": {
+      "content_blob": "01d08b970a0a49adbb7174a4f34fa837b347e752",
+      "reviewer_context": "independent_ai_pass",
+      "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/233#issuecomment-6487470733",
+      "core_reader_question": "尚未確診 PE 卻有灌流惡化時，如何區分急救時序、確診後 PESI/A–E 分級及再灌流出血門檻？",
+      "new_understanding": "本例因無法平躺做 CTPA，診斷仍為疑似；乳酸與血氣有採樣限制，不能機械指定 D2。新增確診後 PESI/Hestia/A–E 主文入口，並與病例原有急救和再灌流討論形成反向對讀。",
+      "strongest_counterargument": "本篇已有 A–E 介紹及再灌流試驗，新增分級連結可能顯得冗餘；但 PESI/Hestia/確診後分流是另一主文的完整決策問題，新增段明示本例當時仍疑似，避免倒推類別。",
+      "epqc_scores": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4,
+        "E": 3,
+        "F": 4,
+        "G": 3
+      },
+      "hard_stops": {
+        "unsafe_claim": false,
+        "fabricated_evidence": false,
+        "broken_causal_bridge": false,
+        "internal_metadata": false,
+        "unresolved_source_conflict": false
+      },
+      "paragraphs": {
+        "6a7a78763da31550cf-1": {
+          "role": "case_evidence",
+          "reader_gain": "以真實病例初始正常血壓與補氧後高 SpO₂ 建立危險錯覺。",
+          "nonredundancy_reason": "缺少初始生命徵象，後續失代償反事實便失去起點。",
+          "verdict": "keep"
+        },
+        "c8b13737172b0e79ad-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "保留乳酸及血氣疑義，說明 CTPA 與 echo 受限的當時證據。",
+          "nonredundancy_reason": "不可把不同檢體硬組成一套精確酸鹼計算。",
+          "verdict": "keep"
+        },
+        "0a8445d0b278c3018e-1": {
+          "role": "orientation",
+          "reader_gain": "提出尚未確診且血壓正常時為何不能等待的核心臨床問題。",
+          "nonredundancy_reason": "不同於一般 PE 症狀介紹，這句確立本文的時間壓力。",
+          "verdict": "keep"
+        },
+        "b32e7616b926a87935-1": {
+          "role": "orientation",
+          "reader_gain": "把診斷、生理傷害、再灌流風險拆成三個不同問題。",
+          "nonredundancy_reason": "三者若混合就會從高度懷疑直接跳到確診後治療。",
+          "verdict": "keep"
+        },
+        "5abbafc5dfa395e3b4-1": {
+          "role": "causal_bridge",
+          "reader_gain": "承接 VTE 前篇，限定本篇處理不能安全等待時的平行決策。",
+          "nonredundancy_reason": "避免重抄 Wells，讓讀者知道此篇的新決策增量。",
+          "verdict": "keep"
+        },
+        "9381b99b07f02411a7-1": {
+          "role": "definition",
+          "reader_gain": "界定診斷需要前測機率與檢驗，RV strain 不能單獨確診。",
+          "nonredundancy_reason": "維持生理危險訊號與疾病身分的清楚分界。",
+          "verdict": "keep"
+        },
+        "0fe43405494523adc7-1": {
+          "role": "definition",
+          "reader_gain": "區分血栓解剖範圍與 RV 生理後果及個體心肺儲備。",
+          "nonredundancy_reason": "避免把 CTPA 阻塞程度直接當成休克程度。",
+          "verdict": "keep"
+        },
+        "466285aee09aae697a-1": {
+          "role": "decision",
+          "reader_gain": "對比抗凝與快速再灌流的效益、出血和程序門檻。",
+          "nonredundancy_reason": "診斷陽性或單一 RV/LV 比值不能自動選擇溶栓。",
+          "verdict": "keep"
+        },
+        "a181e2f809fc14434d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "提醒三項評估可同步更新而非固定依序完成。",
+          "nonredundancy_reason": "這是三問從概念分類進入急診實作的橋接。",
+          "verdict": "keep"
+        },
+        "b25cbf81b37816b024-1": {
+          "role": "decision",
+          "reader_gain": "說明可等待的疑似 PE 才依 PERC、D-dimer 與影像路徑。",
+          "nonredundancy_reason": "與即將失代償的病例對照，保留正常診斷演算法的位置。",
+          "verdict": "keep"
+        },
+        "78baa4eb07049684a9-1": {
+          "role": "decision",
+          "reader_gain": "CTPA 不能完成時讓確診與循環支持並行，保留替代病因。",
+          "nonredundancy_reason": "此段承擔本病例診斷受限下的真正決策轉折。",
+          "verdict": "keep"
+        },
+        "6f834427131673e2ff-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "分辨 V/Q、腿部超音波與 echo 各能支持的不同命題。",
+          "nonredundancy_reason": "不能把 DVT 或 RV strain 冒稱直接看見肺動脈血栓。",
+          "verdict": "keep"
+        },
+        "e21ab073acd600cc24-1": {
+          "role": "case_evidence",
+          "reader_gain": "記錄高懷疑下先給 LMWH，並以出血禁忌提出反事實。",
+          "nonredundancy_reason": "區分醫師當時實做與事後影像證實的不同時間點。",
+          "verdict": "keep"
+        },
+        "14dcb8a8ea91bfee8d-1": {
+          "role": "causal_bridge",
+          "reader_gain": "由血管阻塞、死腔與 V/Q 失衡連到呼吸功與血氣。",
+          "nonredundancy_reason": "只說低血氧不足以理解後續換氣代償危機。",
+          "verdict": "keep"
+        },
+        "f61e8893fd64f6ec1b-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "指出 98% SpO₂ 是 HFNC 高 FiO₂ 下，並非全身氧輸送。",
+          "nonredundancy_reason": "這是正常血氧不保證組織灌流的關鍵反證。",
+          "verdict": "keep"
+        },
+        "35118df3d24dbd4ba5-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "辨識 AG 酸中毒並保留 VBG 與 chemistry 不相容的來源限制。",
+          "nonredundancy_reason": "避免錯用靜脈 pCO₂ 與 Winter 公式製造假精確診斷。",
+          "verdict": "keep"
+        },
+        "9d49391f17b56c645c-1": {
+          "role": "case_evidence",
+          "reader_gain": "以高血糖、白血球與低 ketone 保留乳酸其他來源。",
+          "nonredundancy_reason": "若刪去競爭解釋會把乳酸 13 誤當 PE 專屬證據。",
+          "verdict": "keep"
+        },
+        "5c67f03eee430d282a-1": {
+          "role": "causal_bridge",
+          "reader_gain": "從肺血管床減少與收縮推導 RV afterload 急升。",
+          "nonredundancy_reason": "這是血栓事件連到右心失能的第一個必要中介。",
+          "verdict": "keep"
+        },
+        "218e9bdf6e19235266-1": {
+          "role": "causal_bridge",
+          "reader_gain": "解釋 RV 擴張、室間隔偏移、LV filling 與 CO 下降。",
+          "nonredundancy_reason": "否則血壓尚正常但灌流下降會缺乏心肺生理基礎。",
+          "verdict": "keep"
+        },
+        "cae01c3b94843156d5-1": {
+          "role": "causal_bridge",
+          "reader_gain": "補上 RV 缺血與冠灌流惡化的回饋及改善時的反向訊號。",
+          "nonredundancy_reason": "不同於單向阻塞圖，說明失代償可能自我加速。",
+          "verdict": "keep"
+        },
+        "e404c2ef3e42412d1e-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "用 MAP/CO/SVR 代償說明 normotensive hypoperfusion 的侷限。",
+          "nonredundancy_reason": "血壓或單次乳酸都不能獨立替代器官灌流判斷。",
+          "verdict": "keep"
+        },
+        "4c01075fbf778303a0-1": {
+          "role": "source_context",
+          "reader_gain": "對照 2026 A–E、D1/D2 與 R 修飾符及官方來源。",
+          "nonredundancy_reason": "這段是風險分類定位，不是另一套 PE 確診工具。",
+          "verdict": "keep"
+        },
+        "f89f8d73a269bc7f30-1": {
+          "role": "navigation",
+          "reader_gain": "新連 PESI/sPESI/Hestia 主文，明確區分疑似救援與確診後分層。",
+          "nonredundancy_reason": "原病例缺正式分級入口；新增連結不把分類倒套在未確診時點。",
+          "verdict": "keep"
+        },
+        "6ac9194811c1a72446-1": {
+          "role": "case_evidence",
+          "reader_gain": "以 troponin、BNP 和不可判讀 echo 保存本例證據缺口。",
+          "nonredundancy_reason": "防止單項 biomarker 或 ECG 變成不當確診和分類。",
+          "verdict": "keep"
+        },
+        "25e099c916a2898dd9-1": {
+          "role": "case_evidence",
+          "reader_gain": "依病程排列氧合惡化、意識、VBG、NE 和插管。",
+          "nonredundancy_reason": "這些是插管前可知資訊，不以後來停搏倒填醫師理由。",
+          "verdict": "keep"
+        },
+        "2fc8db213c2cce59a7-1": {
+          "role": "causal_bridge",
+          "reader_gain": "說明鎮靜與正壓可能影響 RV preload/PVR 及 CO。",
+          "nonredundancy_reason": "SpO₂ 改善不等於右心輸出恢復，必須交代介入代價。",
+          "verdict": "keep"
+        },
+        "d8ac5134adaeb29a5b-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "保留插管十分鐘後停搏的時間關聯但拒絕單因果。",
+          "nonredundancy_reason": "避免忽略 PE、酸中毒、循環衰竭與介入負荷的競爭機轉。",
+          "verdict": "keep"
+        },
+        "20701014c510cfb9c9-1": {
+          "role": "case_evidence",
+          "reader_gain": "呈現 CPR 期溶栓、ECMO、CT/取栓及出血性休克後果。",
+          "nonredundancy_reason": "真實病例同時有救援和傷害，不能只報存活當療效證明。",
+          "verdict": "keep"
+        },
+        "a8cfc2304615f8c23a-1": {
+          "role": "definition",
+          "reader_gain": "區分抗凝抑制擴栓與再灌流快速解除阻塞的作用機轉。",
+          "nonredundancy_reason": "這是後續不同治療門檻的藥理與程序前提。",
+          "verdict": "keep"
+        },
+        "cbd405479996f2c543-1": {
+          "role": "causal_bridge",
+          "reader_gain": "指出疑似、確診穩定與失代償是重估分支非治療三階段。",
+          "nonredundancy_reason": "避免讀者把三種行動當固定依序升級的處方。",
+          "verdict": "keep"
+        },
+        "ec5ab1491bfd0234f9-1": {
+          "role": "decision",
+          "reader_gain": "疑似影像延遲時依前測機率與出血風險考慮早期抗凝。",
+          "nonredundancy_reason": "保留診斷不確定下的行動空間，與確診分級不同。",
+          "verdict": "keep"
+        },
+        "0c312a8e170cbd68c6-1": {
+          "role": "decision",
+          "reader_gain": "確診但穩定者以抗凝、RV/biomarker 與照護地點為主。",
+          "nonredundancy_reason": "避免 RV 擴大或 troponin 陽性即被解讀成溶栓指令。",
+          "verdict": "keep"
+        },
+        "0cf1dc1262e1a4834e-1": {
+          "role": "decision",
+          "reader_gain": "失代償時升級循環支持與再灌流評估但不預設技術優劣。",
+          "nonredundancy_reason": "此分支改變的是急迫性和淨效益，不是固定取栓優先。",
+          "verdict": "keep"
+        },
+        "a68b36927bb70e64b5-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "以指南類別與出血禁忌限制進階治療並提醒 RV 大量輸液風險。",
+          "nonredundancy_reason": "否則 A–E 字母容易被當成無條件治療對照表。",
+          "verdict": "keep"
+        },
+        "fe03b7dea20b14f7d6-1": {
+          "role": "source_context",
+          "reader_gain": "對比 PEITHO、HI-PEITHO、PRAGUE-26 終點、出血與時間軸。",
+          "nonredundancy_reason": "不能把複合終點說成死亡率改善或把導管試驗當機械取栓。",
+          "verdict": "keep"
+        },
+        "fb1bae8dfccdefe43f-1": {
+          "role": "safety",
+          "reader_gain": "界定 VA-ECMO 是灌流橋接而非血栓移除。",
+          "nonredundancy_reason": "個案接受 ECMO 不代表它能替代抗凝或再灌流。",
+          "verdict": "keep"
+        },
+        "2daaa94b9cacec3185-1": {
+          "role": "counterfactual",
+          "reader_gain": "確診穩定者示範 PE 陽性並不等於需立即再灌流。",
+          "nonredundancy_reason": "提供與真實危急病例不同的低風險治療閾值。",
+          "verdict": "keep"
+        },
+        "272d29bb3346b1128b-1": {
+          "role": "counterfactual",
+          "reader_gain": "血壓正常但少尿乳酸升高者要求辨別 PE 與其他低灌流病因。",
+          "nonredundancy_reason": "測試是否能在收縮壓下降前改變監測和團隊支援。",
+          "verdict": "keep"
+        },
+        "2cfd6895be129a9208-1": {
+          "role": "counterfactual",
+          "reader_gain": "疑似 PE 加近期顱內出血反轉抗凝與溶栓淨效益。",
+          "nonredundancy_reason": "出血禁忌可改變行動順序，不能複製前兩個確診病例。",
+          "verdict": "keep"
+        },
+        "f6210d186da12bc61e-1": {
+          "role": "decision",
+          "reader_gain": "收束診斷、灌流與淨效益的動態更新及長期追蹤。",
+          "nonredundancy_reason": "避免將成功取栓誤當病人所有問題的終點。",
+          "verdict": "keep"
+        },
+        "1ed7276ba07e856465-1": {
+          "role": "source_context",
+          "reader_gain": "明示 T1/T2 是自編遷移題而非官方試題。",
+          "nonredundancy_reason": "保護題目來源身分，避免讀者誤認考選部出題。",
+          "verdict": "keep"
+        },
+        "eb731963b11179f632-1": {
+          "role": "counterfactual",
+          "reader_gain": "T1 固定已確診 PE，讓氧合與灌流訊號產生決策矛盾。",
+          "nonredundancy_reason": "把診斷問題固定才能測試升級照護的真正門檻。",
+          "verdict": "keep"
+        },
+        "91f47509310d9f86e7-1": {
+          "role": "counterfactual",
+          "reader_gain": "T1 選項分別測試血壓、血氧、乳酸與不當溶栓捷徑。",
+          "nonredundancy_reason": "各干擾選項對應一項正文已解釋的錯誤推論。",
+          "verdict": "keep"
+        },
+        "dc4913630441570dd3-1": {
+          "role": "decision",
+          "reader_gain": "T1 解析保留感染性休克反事實及乳酸非特異性。",
+          "nonredundancy_reason": "不只報 C 答案，還示範如何因新證據改變介入。",
+          "verdict": "keep"
+        },
+        "444a7013c71ea3393c-1": {
+          "role": "counterfactual",
+          "reader_gain": "T2 在高度懷疑且 CT 不可得時加入活動性顱內出血。",
+          "nonredundancy_reason": "不同於 T1 的確診分層，這題測試禁忌下的診斷與急救。",
+          "verdict": "keep"
+        },
+        "fb734bcb22c835dbb8-1": {
+          "role": "counterfactual",
+          "reader_gain": "T2 選項分別測試無法判讀 echo、Wells、D-dimer 與出血禁忌。",
+          "nonredundancy_reason": "干擾選項揭露證據身分與治療許可的混淆。",
+          "verdict": "keep"
+        },
+        "cd39009c961840832b-1": {
+          "role": "decision",
+          "reader_gain": "T2 解析主張並行救援、可行確診和出血禁忌評估。",
+          "nonredundancy_reason": "保留臨床不確定下的實際行動，不只是重述 D。",
+          "verdict": "keep"
+        },
+        "4df36e7a0c014b0832-1": {
+          "role": "source_context",
+          "reader_gain": "標明 112-2 醫學三 Q51 官方試卷、答案及更正身分。",
+          "nonredundancy_reason": "這是與前面自編題不同的官方來源核查入口。",
+          "verdict": "keep"
+        },
+        "6a53280a9fe31ab608-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "解釋胸痛雖常見但不是 Wells PE 計分項。",
+          "nonredundancy_reason": "分開疾病症狀與預測規則變數，是 A 選項的關鍵。",
+          "verdict": "keep"
+        },
+        "3756116c1e8f55f6c6-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "釐清 D-dimer 陰性排除價值依前測機率，陽性特異度不足。",
+          "nonredundancy_reason": "與 Wells 計分不同，這段處理檢驗特性與停止條件。",
+          "verdict": "keep"
+        },
+        "6dd1e94c33c2496e15-1": {
+          "role": "evidence_boundary",
+          "reader_gain": "區分 VKA 重疊療程、INR 與 DOAC 起始策略。",
+          "nonredundancy_reason": "避免把 warfarin 特定橋接規則當作所有 PE 處方。",
+          "verdict": "keep"
+        },
+        "0450706a64ec002074-1": {
+          "role": "causal_bridge",
+          "reader_gain": "由 RV afterload 到 LV filling/CO 下降解釋嚴重 PE 死因。",
+          "nonredundancy_reason": "這是 D 選項成立的生理鏈，不只是公布正解。",
+          "verdict": "keep"
+        },
+        "f306ecd57bd2a5179a-1": {
+          "role": "decision",
+          "reader_gain": "把官方題的診斷、處方與休克機轉重新分層並回到臨床追問。",
+          "nonredundancy_reason": "將考題導回本文三個決策問題，而非只記答案字母。",
+          "verdict": "keep"
+        },
+        "eef78d27b521b24c8b-1": {
+          "role": "navigation",
+          "reader_gain": "連到 VTE、氧合、通氣與原始來源供讀者依缺口回查。",
+          "nonredundancy_reason": "這些補不同生理前提，不能由新分級主文連結取代。",
+          "verdict": "keep"
+        }
+      }
     }
   }
 }
