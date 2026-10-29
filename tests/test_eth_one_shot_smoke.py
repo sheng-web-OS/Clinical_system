@@ -27,6 +27,25 @@ class OneShotTests(unittest.TestCase):
         self.assertEqual(plan["max_api_calls"], 8)
         self.assertEqual(plan["mode"], "SYNTHETIC_ONLY_NOT_BLIND")
 
+    def test_rejects_changed_case_bytes_even_with_same_case_id(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            spoof = Path(d) / "synthetic-claim-update.json"
+            original = mod.SPEC.read_bytes()
+            spoof.write_bytes(original.replace(b"fictional", b"Fictional", 1))
+            with patch.object(mod, "SPEC", spoof):
+                with self.assertRaisesRegex(mod.SmokeHold, "TRUSTED_SYNTHETIC_BYTES_CHANGED"):
+                    mod.plan()
+
+    def test_rejects_changed_adapter_bytes(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            spoof = Path(d) / "openai_model_adapter.py"
+            spoof.write_bytes(mod.ADAPTER.read_bytes() + b"\n# modified\n")
+            with patch.object(mod, "ADAPTER", spoof):
+                with self.assertRaisesRegex(mod.SmokeHold, "TRUSTED_MODEL_ADAPTER_CHANGED"):
+                    mod.plan()
+
     def test_only_manual_trusted_main_with_key(self):
         mod.authorize(GOOD)
         for name, replacement in (
