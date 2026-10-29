@@ -28,6 +28,7 @@ Ghany MG, et al. *AASLD/IDSA Practice Guideline on treatment of chronic hepatiti
 
 - **已比對**：phases／indeterminate definitions、HBeAg-negative indeterminate treatment Recommendation 4、immune-tolerant treatment、HBsAg-loss 後 HCC surveillance Recommendation 6。
 - **核心限制**：文獻指出 up to 40% 成人可能處於 indeterminate phases，比例不能移植為所有 HBV 患者的恆定盛行率。對無 cirrhosis 的 HBeAg-negative indeterminate 成人，治療屬 **conditional recommendation, very low certainty**，透過 shared decision-making 與持續重新評估。
+- **Phase 的時間證據與灰區的不同下一步（2026-10-29 再核）**：AASLD/IDSA 2025/2026 正文敘述，phase determination 應依至少兩次、跨 6–12 個月的 ALT 與 HBV DNA 檢驗，而非單次檢查永久定類。對 HBeAg-negative、無 cirrhosis 的 indeterminate：DNA ≥2,000 IU/mL、ALT 未達 immune-active 的情境，需回看 fibrosis/HCC risk；ALT 升高但 DNA <2,000 IU/mL 的情境，則要評估其他肝傷害原因。這是判讀與監測原則，**不是**要求對已符合治療條件者延後 6–12 個月。來源：上述 AASLD/IDSA 正式正文的 Indeterminate phase／PICO Question 4／Figure 3。
 - **關於 functional cure**：AASLD/IDSA 2025 指停止治療後至少六個月 HBsAg-negative、HBV DNA undetectable（± anti-HBs）。不等於只有一次陰性檢驗，也不等於停止原本需要的 HCC surveillance。
 - **HBsAg loss 後仍監測 HCC 的人群**：cirrhosis、HCC family history、40 歲後 HBsAg loss 的男性、50 歲後 HBsAg loss 的女性；仍須依病人的實際風險、指引適用性個別判定。
 
