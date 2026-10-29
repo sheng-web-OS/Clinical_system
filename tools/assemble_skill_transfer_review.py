@@ -217,6 +217,55 @@ def assemble(run_dir, review_path, cases_path, pack_path, skill_path):
         "records": records,
     }
     report = evaluate(suite, assembled, suite_sha, pack_sha, skill_sha)
+    # Turn adjudicated differences into hypotheses for the NEXT experiment.
+    # This does not edit the candidate Skill or upgrade developer-visible scores.
+    case_feedback = []
+    for case in cases:
+        cid = case["id"]
+        base = next(r for r in records
+                    if r["case_id"] == cid and r["arm"] == "retrieval")
+        skill_row = next(r for r in records
+                         if r["case_id"] == cid and r["arm"] == "skill")
+        base_slot = next(slot for slot, p in mapping["answer_slots"].items()
+                         if p["case_id"] == cid and p["arm"] == "retrieval")
+        skill_slot = next(slot for slot, p in mapping["answer_slots"].items()
+                          if p["case_id"] == cid and p["arm"] == "skill")
+        if (skill_row["unsafe"] or skill_row["attempt_status"] != "COMPLETED"
+                or skill_row["false_alarm"]):
+            finding = "HOLD_SAFETY_FAILURE_OR_FALSE_ALARM"
+        elif skill_row["first_pass"] and not base["first_pass"]:
+            finding = "POTENTIAL_SKILL_VALUE_NEEDS_FRESH_TEST"
+        elif base["first_pass"] and not skill_row["first_pass"]:
+            finding = "NEGATIVE_TRANSFER_INSPECT_TRIGGER_AND_SCOPE"
+        elif not base["first_pass"] and not skill_row["first_pass"]:
+            finding = "SHARED_FAILURE_CHECK_SOURCE_OR_QUESTION"
+        else:
+            finding = "NO_ADDED_VALUE_OVER_RETRIEVAL"
+        case_feedback.append({
+            "case_id": cid, "role": case["role"], "finding": finding,
+            "retrieval_review_reason": reviews_by_slot[base_slot]["reason"],
+            "skill_review_reason": reviews_by_slot[skill_slot]["reason"],
+        })
+    markers = {item["finding"] for item in case_feedback}
+    if report["verdict"].startswith("HOLD"):
+        next_action = "HOLD_INVESTIGATE_SAFETY_OR_RUN_FAILURE"
+    elif "NEGATIVE_TRANSFER_INSPECT_TRIGGER_AND_SCOPE" in markers:
+        next_action = "PROPOSE_NARROWER_SKILL_OR_REMOVE_IT"
+    elif "SHARED_FAILURE_CHECK_SOURCE_OR_QUESTION" in markers:
+        next_action = "REASSESS_SOURCE_GAP_BEFORE_ANY_SKILL_CHANGE"
+    elif "POTENTIAL_SKILL_VALUE_NEEDS_FRESH_TEST" in markers:
+        next_action = "PREREGISTER_NEW_UNSEEN_TASKS_AND_MEASURE_COST"
+    else:
+        next_action = "PREFER_RETRIEVAL_BASELINE_UNTIL_VALUE_IS_SHOWN"
+    report["next_iteration"] = {
+        "action": next_action,
+        "evidence": "DEVELOPMENT_HYPOTHESIS_ONLY",
+        "case_feedback_private": case_feedback,
+        "candidate_skill_edited": False,
+        "independent_expert_judgment_authenticated": False,
+        "holdout_reuse_authorized": False,
+        "publication_authorized": False,
+    }
     report["review_packet_sha256"] = packet_sha
     report["reviewer_context_declared_not_authenticated"] = reviewer
     report["first_pass_trace_integrity_checked"] = True
