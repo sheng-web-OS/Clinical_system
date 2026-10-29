@@ -20,12 +20,14 @@ import build  # noqa: E402
 
 LESSONS = {
     "specimen": {
+        "images": ["https://cdn.ncbi.nlm.nih.gov/pmc/blobs/835d/11947505/3ba234534955/cureus-0017-00000081211-i01.jpg"],
         "path": "content/xiaoma-internal-medicine/lessons/2026-10-27-lab-medicine-specimen-artifacts.md",
         "tokens": ("7.4", "8.4", "103", "77", "218", "血片", "競爭"),
         "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11947505/",
         "tables": 2,
     },
     "aki": {
+        "images": ["https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/fd38f5d2ea9a/cureus-0017-00000088144-i01.jpg","https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/323897deafa2/cureus-0017-00000088144-i02.jpg","https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/cc356ef900af/cureus-0017-00000088144-i03.jpg"],
         "path": "content/xiaoma-internal-medicine/lessons/2026-10-27-lab-medicine-aki-creatinine-urine.md",
         "tokens": ("375", "558", "618", "122", "6,170", "FENa", "hydronephrosis"),
         "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12358086/",
@@ -87,8 +89,31 @@ def main():
                             device_scale_factor=1, is_mobile=width <= 390,
                             has_touch=width <= 390, color_scheme=theme)
                         try:
-                            page.route("**/*", lambda route: route.abort())
+                            # One real-network image proof per lesson: do not claim
+                            # CC BY originals loaded from their source just because
+                            # HTML, links or viewport dimensions exist.
+                            verify_original_pixels = width == 375 and theme == "light"
+                            allowed_images = set(cfg["images"]) if verify_original_pixels else set()
+                            page.route("**/*", lambda route: (
+                                route.continue_() if route.request.url in allowed_images
+                                else route.abort()))
                             page.set_content(document, wait_until="domcontentloaded")
+                            image_urls = page.locator("article.article figure img").evaluate_all(
+                                "els => els.map(i => i.src)")
+                            if image_urls != cfg["images"]:
+                                raise AssertionError(f"{slug}: missing/reordered CC BY originals or wrong image URL")
+                            if verify_original_pixels:
+                                page.locator("article.article figure img").evaluate_all(
+                                    "els => els.forEach(i => { i.loading = 'eager'; i.fetchPriority = 'high' })")
+                                page.wait_for_function("""() =>
+                                  [...document.querySelectorAll('article.article figure img')]
+                                    .every(i => i.complete)""", timeout=30000)
+                                broken = page.locator("article.article figure img").evaluate_all(
+                                    "els => els.filter(i => i.naturalWidth < 100 || i.naturalHeight < 100).map(i => i.src)")
+                                if broken:
+                                    raise AssertionError(f"{slug}: original source image did not decode: {broken}")
+                                page.locator("article.article figure img").first.scroll_into_view_if_needed()
+                                page.screenshot(path=str(args.output / f"{slug}-original-figure-mobile-375.png"))
                             page.add_script_tag(content=app_js)
                             page.locator("article.article").wait_for()
                             if theme == "dark":
@@ -150,6 +175,7 @@ def main():
         "mode": "PRIVATE_DRAFT_VISUAL_QA_NOT_PRODUCTION_OR_MEDICAL_APPROVAL",
         "tested": results, "failures": errors,
         "scope": "Real reader renderer/CSS, two unregistered Lab lesson drafts, responsive/typographic evidence only.",
+        "original_images_tested": "real CDN source JPEG decode at 375px light; other layout modes block remote network",
         "independent_medical_review": False,
         "independent_semantic_review": False,
         "human_screenshot_review": False,
