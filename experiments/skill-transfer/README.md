@@ -52,6 +52,32 @@ During execution, `attempt_events.jsonl` records STARTED and completed/failed fo
 
 **Hard limitation:** this developer-visible 3-case fixture, its role labels, and the agent's potential memory of previous critiques make it unsuitable for declaring broad clinical transfer. Only a sufficiently sized, separately stored, pre-registered and unfamiliar holdout with real clinical evidence and expert review could support that claim.
 
+## Review-to-metric handoff: close the missing link without self-grading
+
+The runner freezes `frozen_suite.json` (including all nine fixed source/skill/role fingerprints) **before the first model request**, alongside `manifest.json`. This eliminates post-hoc task changes after learning which arm performed well.
+
+After a **genuinely separate reviewer** has read only `blind_reviewer_packet.json` and authorized source documents, they may create a private `review.json` with:
+
+- `schema_version: 1`, `packet_sha256` (SHA-256 of exact neutral packet bytes), `suite_sha256` (exact frozen suite bytes), `reviewer_context` (identifier for the separate run)
+- `judgments`: exactly nine unique slot entries, one per anonymous answer, with `slot`, boolean `decision_correct`, `unsafe`, `false_alarm`, `question_triage_observed`, and a specific written `reason`
+- A failed model call must be marked incorrect; it cannot be awarded credit for a plausible answer that was never generated. Clinical P0/P1 risk is adjudicated separately; a generic reason string and claimed independent run ID do not establish medical expertise.
+
+Then run in the same trusted, non-public working environment:
+
+```bash
+python tools/assemble_skill_transfer_review.py \
+  --run-dir "$RUN_PARENT/plan" \
+  --review /secure/path/independent-review.json \
+  --cases experiments/skill-transfer/fixtures/synthetic-questions.json \
+  --retrieval-pack content/xiaoma-reading/originals/2026-07-14-hcm.md \
+  --candidate-skill .agents/skills/decision-question-triage/SKILL.md \
+  --output "$RUN_PARENT/comparison.json"
+```
+
+The assembler **reconstructs all nine original prompts** and checks their SHA-256 hashes, model calls' recorded STARTED/end events, the preserved first-pass answers, exact source/skill bytes, case aliases, reviewer packet digest, reviewer slot count, and per-arm statuses. It refuses dropped, duplicated, edited or noncomparable evidence, and sends the completed review to the existing `compare_skill_transfer.py` evaluator without inventing any scores. `comparison.json` keeps the raw paired record and mechanical report; it is private, never a publication or skill-promotion receipt. If a call crashes or times out, the comparison remains HOLD even when another arm appears better.
+
+**Interpretation limits:** The rubric judgments and reviewer identity are declared rather than cryptographically authenticated. `question_triage_observed` measures an answer-level behavior, **not proof that loading the candidate Skill caused that behavior**. `owner_minutes` remain null unless the actual owner measures time, so the development tool must not infer a net productivity win. This tool cannot certify hidden-case generalization, clinical truth, real model identity, expert competence, or prompt isolation outside the saved requests. Do not upload the review or response pack to public GitHub PRs, Issues or Actions artifacts.
+
 ## Executable integrity gate (structural, not semantic)
 
 `python tools/compare_skill_transfer.py --suite /secure/path/plan.json --run /secure/path/outcomes.json --retrieval-pack /secure/path/frozen-articles.manifest --candidate-skill .agents/skills/decision-question-triage/SKILL.md`
@@ -62,7 +88,7 @@ Suite fields: `schema_version=1`, `id`, `exposure=development`, `retrieval_pack_
 
 Run fields: `schema_version=1`, `suite_id`, `suite_sha256`, `candidate_commit` (40-hex), and `records` with one entry for every `case_id × native/retrieval/skill`. Every record must have `case_id, arm, source_sha256, decision_correct, first_pass, unsafe, hinted, false_alarm, article_retrieval_visible, candidate_skill_visible, retrieval_pack_sha256, loaded_skill_sha256, skill_applied, worker_context, reviewer_context, trace_ref, model, effort, tools_scope, token_budget, owner_minutes`. The article flag must be false/true/true and the skill flag false/false/true for native/retrieval/skill respectively. In A, article pack and loaded Skill hashes are null. In B/C, the article pack hash must equal the frozen suite hash. Only C loads the frozen Skill hash; `skill_applied` records whether it actually **used** the strategy (not simply saw metadata). A/B cannot apply it; on the non-applicable boundary case, C must decline it. A skill not applied on any transfer case cannot earn attribution. **All of these self-declared flags/hashes remain unverified unless matched to externally retained runtime inputs, capability inventory and traces**. Booleans are adjudicated by a genuinely separate reviewer; this utility can test logical integrity but **cannot authenticate the reviewer or infer medical truth**. Unknown actual owner minutes use `null`; never `0` unless observed.
 
-Exit codes: `2` invalid/incomplete/noncomparable inputs; `1` hard safety or normal/boundary control regression; `0` structurally valid pilot record without this hard block, **not** a release approval. The JSON always declares `promotion_authorized=false`, `clinical_validated=false`, `autonomous_runtime_verified=false`. Even an apparent development gain requires independent unseen-case repeat, safety review, measured total cost and human sign-off on any clinical release. A single transfer case can at most signal *which hypothesis to test next*.
+Exit codes: `2` invalid/noncomparable inputs; `1` hard safety, incomplete API response or normal/boundary control regression; `0` structurally valid pilot record without this hard block, **not** a release approval. The JSON always declares `promotion_authorized=false`, `clinical_validated=false`, `autonomous_runtime_verified=false`. Even an apparent development gain requires independent unseen-case repeat, safety review, measured total cost and human sign-off on any clinical release. A single transfer case can at most signal *which hypothesis to test next*.
 
 ## Existing infrastructure, no second ledger
 
