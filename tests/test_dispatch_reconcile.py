@@ -76,6 +76,11 @@ class ReconciliationTest(unittest.TestCase):
         self.assertEqual("ecg-original-evidence", r["selected"][0]["id"])
         self.assertEqual("NEW_GATE", r["selected"][0]["decision"])
 
+    def test_task_local_artifact_revision_avoids_unrelated_head_rework(self):
+        self.gates["issue:76"]["evidence_revision"] = "artifacts:" + "a" * 64
+        self.gates["issue:76"]["last_receipt"] = self.receipt()
+        self.assertEqual("mobile-figure-p0", self.plan()["selected"][0]["id"])
+
     def test_resume_requires_distinct_next_gate_from_receipt(self):
         self.gates["issue:76"]["last_receipt"] = self.receipt(
             next_gate_id="write-next-gate")
@@ -110,33 +115,54 @@ class ReconciliationTest(unittest.TestCase):
         self.assertEqual(0, r["eligible_count"])
         self.assertEqual("SHADOW_RECONCILED_NO_ACTION", r["status"])
 
-    def test_missing_gate_snapshot_fails_closed(self):
+    def test_missing_gate_holds_only_affected_task(self):
         del self.gates["issue:76"]
-        with self.assertRaisesRegex(DispatchError,
-                                    "GATE_SNAPSHOT_INCOMPLETE"):
+        r = self.plan()
+        self.assertEqual("mobile-figure-p0", r["selected"][0]["id"])
+        self.assertEqual([{"id": "ecg-original-evidence",
+                           "reason": "GATE_SNAPSHOT_MISSING"}], r["blocked"])
+        self.assertFalse(r["all_tasks_observed"])
+        self.assertFalse(r["execution_authorized"])
+
+    def test_missing_issue_does_not_starve_other_tasks(self):
+        del self.issues["issue:76"]
+        r = self.plan()
+        self.assertEqual("mobile-figure-p0", r["selected"][0]["id"])
+        self.assertEqual("SOURCE_METADATA_MISSING_OR_INVALID", r["blocked"][0]["reason"])
+
+    def test_all_unavailable_is_hold_not_empty_success(self):
+        self.gates.clear()
+        r = self.plan()
+        self.assertEqual("HOLD_TASKS_BLOCKED", r["status"])
+        self.assertEqual([], r["selected"])
+        self.assertEqual(7, len(r["blocked"]))
+
+    def test_global_shape_and_foreign_target_stop_whole_plan(self):
+        with self.assertRaisesRegex(DispatchError, "INVALID_ISSUE_SNAPSHOT"):
+            reconcile(self.config, None, self.gates)
+        with self.assertRaisesRegex(DispatchError, "GATE_SNAPSHOT_MISSING"):
+            reconcile(self.config, self.issues, None)
+        self.gates["issue:137"] = copy.deepcopy(self.gates["issue:76"])
+        with self.assertRaisesRegex(DispatchError, "UNEXPECTED_GATE_TARGET"):
             self.plan()
 
     def test_bad_receipt_cannot_fake_history(self):
         self.gates["issue:76"]["last_receipt"] = self.receipt()
         self.gates["issue:76"]["last_receipt"]["status"] = "AUTO_APPROVED"
-        with self.assertRaisesRegex(DispatchError,
-                                    "INVALID_RECEIPT_VALUES"):
-            self.plan()
+        r = self.plan()
+        self.assertEqual("INVALID_RECEIPT_VALUES", r["blocked"][0]["reason"])
+        self.assertEqual("mobile-figure-p0", r["selected"][0]["id"])
 
     def test_mismatched_issue_gate_fails_closed(self):
         self.gates["issue:76"]["issue_number"] = 137
-        with self.assertRaisesRegex(DispatchError, "GATE_TARGET_MISMATCH"):
-            self.plan()
+        self.assertEqual("GATE_TARGET_MISMATCH", self.plan()["blocked"][0]["reason"])
 
     def test_unverified_evidence_and_arbitrary_field_rejected(self):
         self.gates["issue:76"]["evidence_revision"] = "I said so"
-        with self.assertRaisesRegex(DispatchError,
-                                    "INVALID_EVIDENCE_REVISION"):
-            self.plan()
+        self.assertEqual("INVALID_EVIDENCE_REVISION", self.plan()["blocked"][0]["reason"])
         self.gates["issue:76"]["evidence_revision"] = "sha:" + "a" * 40
         self.gates["issue:76"]["shell"] = "run arbitrary code"
-        with self.assertRaisesRegex(DispatchError, "INVALID_GATE_SCHEMA"):
-            self.plan()
+        self.assertEqual("INVALID_GATE_SCHEMA", self.plan()["blocked"][0]["reason"])
 
     def test_closed_issue_not_reactivated_by_gate(self):
         self.issues["issue:76"]["state"] = "closed"

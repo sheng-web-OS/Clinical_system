@@ -1,4 +1,4 @@
-# GitHub-driven ChatGPT task dispatcher — v0.1 SHADOW (2026-10-29)
+# GitHub-driven ChatGPT task dispatcher — v0.3 SHADOW (2026-10-29)
 
 **Status: Draft / HOLD. Existing 09:00 Writer automation now includes read-only shadow observation; active GitHub task dispatch remains disabled.**
 **Goal:** use ONE existing ChatGPT automation as a wake-up/worker entrypoint, with GitHub as the continuously editable task control plane. Keep the original 72-hour autonomy-protocol automation separate until its observation window ends. No new agent service, database, model API, scheduler or paid token call is introduced by this PR.
@@ -93,12 +93,13 @@ At each scheduled wake-up, after reading `main` AGENTS.md and the **reviewed** d
 
 The priority queue is not an execution authorization. Issue-open means
 discovery only. A second read-only evaluator, tools/dispatch_reconcile.py,
-requires current Issue metadata and verified next-gate observations for every
-enabled candidate. Each gate observation has exactly these fields:
+uses current Issue metadata and verified next-gate observations. In v0.3,
+missing/malformed observations HOLD only their own task; a malformed global
+manifest or unexpected target still stops the plan. Each gate observation has exactly these fields:
 
 - issue_number: must match the Issue task target.
 - gate_id: identifier of the NEXT unfinished step (not the overall Issue).
-- evidence_revision: sha:<40-char commit>, comment:<id>, or ci:<run-id>:<head-sha>.
+- evidence_revision: artifacts:<64-char digest>, sha:<40-char commit>, comment:<id>, or ci:<run-id>:<head-sha>.
   An updated comment or timestamp alone is NOT necessarily new evidence.
 - gate_state: actionable / waiting / complete / approval_needed.
 - owner: unclaimed / dispatcher / other_worker.
@@ -119,7 +120,8 @@ Decision table:
 - New, independently verified decision-relevant evidence: NEW_GATE.
 - Active different writer: ACTIVE_OTHER_OWNER, never take over their PR.
 - Waiting / complete / needs approval: skip while retaining the gate.
-- Missing or malformed gate snapshot: HOLD (fail closed).
+- Missing or malformed single-task metadata: task HOLD, continue independent candidates.
+- Invalid global snapshot/configuration or unexpected task target: global HOLD.
 
 Usage (trusted checkout, read-only):
   python -m unittest discover -s tests -p 'test_dispatch_*.py' -v
@@ -134,6 +136,26 @@ receipts; model-written snapshot claims cannot by themselves unlock execution.
 This evaluator has no API/model calls, GitHub writes, background process or
 new schedule. Output always states execution_authorized=false.
 Offline tests DO NOT establish that a scheduled GPT-6 worker has independently
-validated real gate evidence. Live owner/CI/receipt linkage, stale observation
-checks, concurrency/lease protection and actual schedule-run proof remain
-HOLD before active dispatch.
+validated real gate evidence. Live owner/CI/receipt linkage and actual schedule-run
+proof remain HOLD before active dispatch.
+
+## Runtime v0.3 — implementation and current limits
+
+See [RUNTIME.md](RUNTIME.md) for the canonical checkpoint, bounded source reads,
+execution claims, independent review routing and staged operational migration.
+`tools/dispatch_observe.py` collects real public Issue/PR/tree/CI/checkpoint facts,
+re-reading PR and main metadata to reject an incoherent observation. A connected
+GitHub tool can supply the same raw responses when direct CLI networking is
+unavailable; supplied snapshots are explicitly not a live CLI or scheduled run.
+`tools/dispatch_runtime.py` validates task-local artifact revisions, review
+handoffs and finite lease proposals. Proposals do not acquire a lease: an
+active caller still needs a successful Git ref compare-and-swap and readback.
+Expiry never grants an automatic takeover. Neither module has model calls,
+GitHub mutations, merge/deployment authority or a background runner.
+
+The seven-item manifest, shadow mode and existing automation topology remain
+the current entrypoint. This version does not mark every operational category
+as implemented or enable them by adding unrecognized task kinds. Real scheduled
+resumption, runtime model/effort evidence and active lease integration remain
+explicit activation gates. Engineering work here is OWNER-DIRECTED and cannot
+be credited to the frozen 72-hour autonomy study.

@@ -24,7 +24,7 @@ GATE_FIELDS = {"issue_number", "gate_id", "evidence_revision",
                "gate_state", "owner", "last_receipt"}
 RECEIPT_FIELDS = {"gate_id", "fingerprint", "status", "next_gate_id"}
 GATE_ID = re.compile(r"[a-z][a-z0-9-]{2,100}")
-REVISION = re.compile(r"(?:sha:[a-f0-9]{40}|comment:[1-9][0-9]*|ci:[1-9][0-9]*:[a-f0-9]{40})")
+REVISION = re.compile(r"(?:sha:[a-f0-9]{40}|artifacts:[a-f0-9]{64}|comment:[1-9][0-9]*|ci:[1-9][0-9]*:[a-f0-9]{40})")
 
 
 def require(condition, code):
@@ -75,15 +75,28 @@ def validate_gate(target, gate):
 
 def reconcile(config, issue_snapshot, gate_snapshot):
     """Plan ONLY. Never turns a GitHub observation into an authorization."""
-    preliminary = select_tasks(config, issue_snapshot)
+    # Global configuration/source-shape failures stop the plan. An unavailable
+    # single Issue/gate must not starve unrelated, independently verified work.
+    require(type(issue_snapshot) is dict, "INVALID_ISSUE_SNAPSHOT")
     require(type(gate_snapshot) is dict, "GATE_SNAPSHOT_MISSING")
     expected = {t["target"] for t in config["tasks"] if t["enabled"]}
-    require(set(gate_snapshot) == expected, "GATE_SNAPSHOT_INCOMPLETE")
-    eligible, skipped = [], list(preliminary["skipped"])
-    for task in preliminary["candidates"]:
+    require(set(gate_snapshot).issubset(expected), "UNEXPECTED_GATE_TARGET")
+    eligible, skipped, blocked = [], [], []
+    tasks = sorted(config["tasks"], key=lambda t: (-t["priority"], t["id"]))
+    for task in tasks:
+        try:
+            single = dict(config, tasks=[task])
+            preliminary = select_tasks(single, issue_snapshot)
+            skipped.extend(preliminary["skipped"])
+            if not preliminary["candidates"]:
+                continue
+            require(task["target"] in gate_snapshot, "GATE_SNAPSHOT_MISSING")
+            gate = gate_snapshot[task["target"]]
+            fingerprint = validate_gate(task["target"], gate)
+        except DispatchError as exc:
+            blocked.append({"id": task["id"], "reason": str(exc)})
+            continue
         target = task["target"]
-        gate = gate_snapshot[target]
-        fingerprint = validate_gate(target, gate)
         why = None
         if gate["owner"] == "other_worker":
             why = "ACTIVE_OTHER_OWNER"
@@ -113,10 +126,12 @@ def reconcile(config, issue_snapshot, gate_snapshot):
             "decision": "RESUME_NEXT_GATE" if resumed else "NEW_GATE",
         })
     # The issue selector already imposes a stable priority + task-id order.
-    return {"status": "SHADOW_RECONCILED_NO_ACTION",
+    return {"status": ("HOLD_TASKS_BLOCKED" if blocked and not eligible
+                       else "SHADOW_RECONCILED_NO_ACTION"),
             "execution_authorized": False, "model_calls": 0,
             "write_actions": 0, "selected": eligible[:1],
             "eligible_count": len(eligible), "skipped": skipped,
+            "blocked": blocked, "all_tasks_observed": not blocked,
             "requires_live_source_verification": True}
 
 
