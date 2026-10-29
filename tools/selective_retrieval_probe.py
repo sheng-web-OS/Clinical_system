@@ -198,8 +198,15 @@ def execute(data, skill, model, commit, output_dir, key=None, live=False, caller
     if output_dir.is_relative_to(repo) or output_dir.exists() or output_dir.parent == Path("/"):
         raise PilotError("PRIVATE_OUTPUT_REQUIRED")
     if live:
-        if not key or caller is not None:
-            raise PilotError("LIVE_KEY_AND_TRANSPORT_REQUIRED")
+        if not key or caller is not None or model != "gpt-5-mini":
+            raise PilotError("LIVE_KEY_MODEL_AND_TRANSPORT_REQUIRED")
+        # IMPORTANT: calling execute() directly must NOT bypass the CLI's
+        # public-fixture allowlist. Never send private case data using a
+        # caller-supplied source_class or arbitrary in-memory fixture.
+        approved_data = json.loads((repo / "experiments/skill-transfer/fixtures/selective-retrieval-synthetic.json").read_text(encoding="utf-8"))
+        approved_skill = (repo / ".agents/skills/decision-question-triage/SKILL.md").read_text(encoding="utf-8")
+        if data != approved_data or skill != approved_skill:
+            raise PilotError("LIVE_CONTENT_NOT_ALLOWLISTED")
         transport = lambda request: api_call(request, key)
     else:
         transport = caller
