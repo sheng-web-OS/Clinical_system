@@ -8,7 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from selective_retrieval_probe import (validate_fixture, triage_request, validate_triage,
-    retrieve_after_triage, answer_request, run_case, execute, digest, build_plan, PilotError)
+    retrieve_after_triage, answer_request, run_case, execute, digest, build_plan,
+    paired_order, PilotError)
 
 FIXTURE = ROOT / "experiments/skill-transfer/fixtures/selective-retrieval-synthetic.json"
 DATA = json.loads(FIXTURE.read_text(encoding="utf-8"))
@@ -41,6 +42,15 @@ def fake(values):
 
 
 class SelectiveRetrievalProbeTests(unittest.TestCase):
+    def test_fixed_balanced_arm_order_is_frozen_before_execution(self):
+        plan = build_plan(DATA, SKILL, "gpt-5-mini", "d" * 40)
+        order = plan["paired_execution_order"]
+        self.assertEqual(len(order), 9)
+        self.assertEqual({row["arm"] for row in order[:1] +
+                          order[3:4] + order[6:7]}, set(("native", "retrieval", "skill")))
+        self.assertEqual([(case["id"], arm) for case, arm in paired_order(CASES)],
+                         [(row["case_id"], row["arm"]) for row in order])
+
     def test_fixture_is_public_development_only(self):
         self.assertEqual(len(CASES), 3)
         self.assertEqual(len(DOCS), 2)
@@ -169,6 +179,8 @@ class SelectiveRetrievalProbeTests(unittest.TestCase):
             self.assertIsNone(receipt["cost_usd"])
             self.assertIsNone(receipt["owner_minutes"])
             self.assertFalse(receipt["provider_receipt_authenticated"])
+            self.assertTrue(all(receipt["per_arm_token_usage"][arm] is None
+                                for arm in ("native", "retrieval", "skill")))
             self.assertEqual(receipt["independent_review"], "NOT_DONE")
             self.assertTrue(all("arm" not in str(answer) and "case_id" not in str(answer)
                                 for case in packet for answer in case["candidate_answers"]))
