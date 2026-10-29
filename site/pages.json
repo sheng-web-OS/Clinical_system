@@ -3642,5 +3642,51 @@
     "section": "原始來源",
     "navigation": false,
     "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-antibiotics-cap-coverage-reassessment.md",
+    "output": "xiaoma-20261029-antibiotics-cap-coverage-reassessment.html",
+    "title": "肺炎的抗生素已經涵蓋病原，為什麼病人還是不退燒？",
+    "subtitle": "真實 Legionella 病程：經驗性涵蓋、治療不佳、微生物證據與抗菌調整",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "感染與抗生素",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-antibiotics-cap-coverage-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 45,
+        "focus": "背景對讀：CURB-65 的變項與氧合是不同問題；本篇只說明此病例原表缺 BUN，不能代替 Q45 的完整分數教學。",
+        "concept_heading": "第一問｜還不知道是哪一種菌，為什麼需要先給抗生素？又該涵蓋誰？",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "focus": "補充對讀：痰染色病原線索與胸水評估須分開；本篇借 Legionella 病程辨析擴藥和併發症，不是 Q49 四選項的完整解答。",
+        "concept_heading": "第二問｜治療幾天仍發燒、需要氧氣，哪些機轉真正值得競爭？",
+        "embed": false
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/antibiotics-cap-coverage-sources.md",
+    "output": "xiaoma-antibiotics-cap-coverage-sources.html",
+    "title": "肺炎抗生素：原始病例、指南與比較研究來源",
+    "subtitle": "Legionella CXR/CT、抗菌效果比較及 ATS／IDSA 適用邊界",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "author_source_check"
   }
 ]
