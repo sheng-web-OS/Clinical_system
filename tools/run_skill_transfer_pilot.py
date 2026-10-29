@@ -11,6 +11,7 @@ import hashlib
 import json
 import os
 import random
+import subprocess
 import re
 import urllib.error
 import urllib.request
@@ -190,6 +191,31 @@ def api_call(request, key):
     return result
 
 
+def verify_live_checkout(repo, expected_commit):
+    """Confirm exact Git HEAD and clean tracked API input paths before spending."""
+    paths = (
+        "experiments/skill-transfer/fixtures/synthetic-questions.json",
+        "content/xiaoma-reading/originals/2026-07-14-hcm.md",
+        ".agents/skills/decision-question-triage/SKILL.md",
+        "tools/run_skill_transfer_pilot.py",
+    )
+    try:
+        head = subprocess.run(
+            ["git", "-C", str(repo), "rev-parse", "--verify", "HEAD"],
+            capture_output=True, text=True, timeout=5, check=False)
+        status = subprocess.run(
+            ["git", "-C", str(repo), "status", "--porcelain",
+             "--untracked-files=no", "--", *paths],
+            capture_output=True, text=True, timeout=5, check=False)
+    except (OSError, subprocess.TimeoutExpired):
+        raise PilotError("LIVE_CHECKOUT_UNVERIFIED") from None
+    if head.returncode != 0 or head.stdout.strip() != expected_commit:
+        raise PilotError("LIVE_CHECKOUT_HEAD_MISMATCH")
+    if status.returncode != 0 or status.stdout.strip():
+        raise PilotError("LIVE_CHECKOUT_DIRTY_OR_UNVERIFIED")
+    return True
+
+
 def write_private(path, obj):
     data = (json.dumps(obj, ensure_ascii=False, sort_keys=True,
                        indent=2) + "\n").encode("utf-8")
@@ -230,6 +256,7 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
             require(tuple(Path(p).resolve() for p in
                           (cases_path, pack_path, skill_path)) == allowed,
                     "LIVE_API_REQUIRES_EXACT_PUBLIC_ALLOWLISTED_INPUT_FILES")
+            verify_live_checkout(repo_root, commit)
     target = Path(target).resolve()
     require(not target.is_relative_to(repo_root),
             "PRIVATE_OUTPUT_MUST_BE_OUTSIDE_PUBLIC_REPOSITORY")
@@ -254,6 +281,7 @@ def run(cases_path, pack_path, skill_path, target, model, commit,
     ).encode("utf-8")
     meta["suite_id"] = frozen_suite["id"]
     meta["suite_sha256"] = digest(frozen_suite_bytes)
+    meta["candidate_commit_git_verified"] = bool(execute and caller is None)
     meta["transport_kind"] = (
         "RESPONSES_API" if execute and caller is None
         else "INJECTED_TEST_DOUBLE" if execute else "NO_MODEL_CALLS"
