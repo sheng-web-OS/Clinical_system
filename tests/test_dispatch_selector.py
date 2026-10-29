@@ -113,6 +113,20 @@ class DispatcherShadowTest(unittest.TestCase):
         cfg["tasks"][0]["priority"] = True
         self.expect_invalid(cfg, "INVALID_TASK_POLICY")
 
+    def test_bad_json_types_fail_closed(self):
+        cfg = copy.deepcopy(self.base)
+        cfg["schema_version"] = True
+        self.expect_invalid(cfg, "INVALID_REPOSITORY_OR_VERSION")
+        cfg = copy.deepcopy(self.base)
+        cfg["max_tasks_per_run"] = True
+        self.expect_invalid(cfg, "SHADOW_ONLY_ONE_TASK_PER_TICK")
+        cfg = copy.deepcopy(self.base)
+        cfg["frozen_eval"]["excluded_targets"].append({"invalid": 1})
+        self.expect_invalid(cfg, "PROTECTED_EXPERIMENT_SCOPE")
+        cfg = copy.deepcopy(self.base)
+        cfg["tasks"][0]["kind"] = ["quality_review"]
+        self.expect_invalid(cfg, "INVALID_TASK_POLICY")
+
     def test_disabled_tasks_are_not_scheduled(self):
         cfg = copy.deepcopy(self.config)
         cfg["tasks"][0]["enabled"] = False
