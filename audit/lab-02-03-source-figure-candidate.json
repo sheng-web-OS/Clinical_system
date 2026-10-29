@@ -11,7 +11,7 @@
         "mode": "illustrated",
         "url": "https://assets.cureus.com/uploads/case_report/pdf/353350/20250326-193380-s0wvov.pdf#page=2",
         "anchor": "lab02-lim-figure1",
-        "caption_token": "Lim E",
+        "caption_token": "doi:10.7759/cureus.81211",
         "inline_original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/835d/11947505/3ba234534955/cureus-0017-00000081211-i01.jpg",
         "license": "CC BY 4.0, original authors credited in reader-facing caption; remote NCBI-hosted exact original Figure"
       }
@@ -29,7 +29,7 @@
         "mode": "illustrated",
         "url": "https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=2",
         "anchor": "lab03-chen-ultrasound-originals",
-        "caption_token": "Chen Z",
+        "caption_token": "doi:10.7759/cureus.88144",
         "inline_original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/fd38f5d2ea9a/cureus-0017-00000088144-i01.jpg",
         "license": "CC BY 4.0, original authors credited in reader-facing caption; remote NCBI-hosted exact original Figure"
       },
@@ -41,7 +41,7 @@
         "mode": "illustrated",
         "url": "https://assets.cureus.com/uploads/case_report/pdf/378818/20250817-408465-h29q8a.pdf#page=4",
         "anchor": "lab03-chen-ct-original",
-        "caption_token": "Chen Z",
+        "caption_token": "doi:10.7759/cureus.88144",
         "inline_original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/b3ab/12358086/cc356ef900af/cureus-0017-00000088144-i03.jpg",
         "license": "CC BY 4.0, original authors credited in reader-facing caption; remote NCBI-hosted exact original Figure"
       },
