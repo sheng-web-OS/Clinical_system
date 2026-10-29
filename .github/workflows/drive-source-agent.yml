@@ -45,8 +45,9 @@ jobs:
 
   preflight:
     if: >-
-      (github.event_name == 'schedule' ||
-      (github.event_name == 'workflow_dispatch' && inputs.mode != 'fixture')) &&
+      ((github.event_name == 'schedule' &&
+        vars.CLINICAL_OS_AGENT_SCHEDULE_ENABLED == 'true') ||
+       (github.event_name == 'workflow_dispatch' && inputs.mode != 'fixture')) &&
       vars.CLINICAL_OS_AGENT_ENABLED == 'true' &&
       github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
