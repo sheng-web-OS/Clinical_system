@@ -134,7 +134,7 @@ class ReviewAssemblyTest(unittest.TestCase):
     def test_mock_model_is_explicitly_not_api_attestation(self):
         _, report = self.assemble()
         self.assertEqual("INJECTED_TEST_DOUBLE", report["transport_kind"])
-        self.assertFalse(report["api_model_execution_observed"])
+        self.assertFalse(report["api_transport_claimed"])
         self.assertEqual("DECLARED_RESPONSE_SHAPE_ONLY",
                          report["provider_receipt_authentication"])
         self.assertIsNone(report["observed_token_usage"]["retrieval"])
@@ -158,7 +158,8 @@ class ReviewAssemblyTest(unittest.TestCase):
             }
         self.store("first_pass_results.json", first)
         _, report = self.assemble()
-        self.assertTrue(report["api_model_execution_observed"])
+        self.assertTrue(report["api_transport_claimed"])
+        self.assertFalse(report["actual_model_execution_verified"])
         self.assertEqual(0, report["skill_minus_retrieval_total_tokens"])
         self.assertFalse(report["independent_review_authenticated"])
         first[1]["response"]["response_id"] = first[0]["response"]["response_id"]
