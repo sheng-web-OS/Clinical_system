@@ -29,6 +29,29 @@ At minimum the experimental corpus needs:
 
 Do not reveal expected defect, preferred question, the original complaint, old RED, or reviewer answer to the worker. Freeze and score the **first output before feedback**, not the corrected V2. Record not only errors missed but false alarms, newly introduced P0/P1 medical risks, context leakage, tool failures, owner interrupts/minutes and true costs; do not treat missing cost as zero.
 
+## Actual first-pass runner (new in PR #225)
+
+`tools/run_skill_transfer_pilot.py` is a **synthetic-only development executor**, not a reviewer, clinical AI, skill registry or self-editing agent. It has no credentials in code and **makes zero API calls by default**. The small public development fixture `fixtures/synthetic-questions.json` contains three entirely fictional, pre-exposed prompts: transfer, normal, boundary. Use a real existing authored **public** long-form article as B/C retrieval content (example: `content/xiaoma-reading/originals/2026-07-14-hcm.md`); the renal synthetic case tests whether it avoids copying HCM conclusions into an unrelated domain. This is NOT a hidden benchmark.
+
+Offline plan in an existing authorized checkout of **this exact PR head**:
+
+```bash
+RUN_PARENT="$(mktemp -d)"
+chmod 700 "$RUN_PARENT"
+python tools/run_skill_transfer_pilot.py \
+  --cases experiments/skill-transfer/fixtures/synthetic-questions.json \
+  --retrieval-pack content/xiaoma-reading/originals/2026-07-14-hcm.md \
+  --candidate-skill .agents/skills/decision-question-triage/SKILL.md \
+  --candidate-commit "$(git rev-parse HEAD)" \
+  --output-dir "$RUN_PARENT/plan"
+```
+
+The default command saves the exact nine matched model request packets, SHA-256 identifiers, and an explicit `NOT_RUN` manifest **outside the public repository**, with private file permissions. A dry run is evidence of prompt construction only. Run the same command with `--execute-api` **only in an owner-authorized separate environment** where a budgeted `OPENAI_API_KEY` has already been securely configured; the key must never be pasted in chat, GitHub PRs, source, stdout or Actions artifacts. It performs at most **9 separate Responses API calls** with `store=false`, matched output token limit, no tools/history or prior-response linking, and no automatic retries or grades. This PR intentionally does not expose credentials in PR CI or authorize a `pull_request_target` workflow. Main is currently public/unprotected, and #222 has its own independent credential activation hold.
+
+During execution, `attempt_events.jsonl` records STARTED and completed/failed for every attempted pair, `first_pass_results.json` freezes original outputs (including failed and incomplete attempts), `blind_reviewer_packet.json` hides arm labels, and `private_arm_mapping.json` remains separate. An interrupted run is **incomplete/HOLD** and must not be represented as a fully observed nine-call trial. These local files may include source content and model responses; do not commit or upload them to this public GitHub repo. A truly separate reviewer must read only the neutral packet and authentic source conditions, then record its adjudication independently; the runner will never fill `decision_correct`, `unsafe`, `first_pass` or `owner_minutes` on the user's behalf. The later comparator is a structural consistency audit, not a substitute for this reviewer or a real runtime attestation.
+
+**Hard limitation:** this developer-visible 3-case fixture, its role labels, and the agent's potential memory of previous critiques make it unsuitable for declaring broad clinical transfer. Only a sufficiently sized, separately stored, pre-registered and unfamiliar holdout with real clinical evidence and expert review could support that claim.
+
 ## Executable integrity gate (structural, not semantic)
 
 `python tools/compare_skill_transfer.py --suite /secure/path/plan.json --run /secure/path/outcomes.json --retrieval-pack /secure/path/frozen-articles.manifest --candidate-skill .agents/skills/decision-question-triage/SKILL.md`
