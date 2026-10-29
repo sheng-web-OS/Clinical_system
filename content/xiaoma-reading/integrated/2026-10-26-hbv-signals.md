@@ -44,7 +44,7 @@ HBV DNA 反覆偏高且 ALT 持續升高，可以增加 HBV-related hepatitis �
 
 EASL 2025 的行動閾值不同：在已確認屬 **HBV 相關慢性肝炎**，而非其他原因造成 ALT 上升的前提下，HBV DNA ≥2,000 IU/mL 且 ALT >ULN，就已符合其建議治療的分支，並不必等待 ALT 達兩倍上限。**同一組觀察值，不能因某份指引稱之為 grey zone，就直接推成另一份指引也建議等待。** 差異在於兩套指引如何從不完全的病因證據與長期風險決定介入閾值，不是肝細胞在 ALT 跨過某個數字的那一刻突然改變本質。[EASL 治療適應症](../hbv-phase-sources.md#ref-easl)・[AASLD/IDSA Recommendation 4](../hbv-phase-sources.md#ref-aasld)
 
-再把條件改成 **ALT 升高，但 HBV DNA <2,000 IU/mL**。這時不能沿用前一組的歸因：必須重新考慮代謝相關脂肪性肝病、酒精、藥物與其他肝損傷原因，而不是看到 ALT 異常就將受傷都算在 HBV 身上。這兩組 HBeAg-negative 灰區，雖都可能尚無穩定的 phase 分類，真正能改變下一步的證據卻不同：前一組尤其需要確認 fibrosis／長期風險及 HBV 歸因，後一組需要先釐清 ALT 由什麼造成；再依適用指引與病人情況決定治療或追蹤。
+再把條件改成 **ALT 升高，但 HBV DNA <2,000 IU/mL**。這時不能沿用前一組的歸因：必須重新考慮代謝相關脂肪性肝病、酒精、藥物與其他肝損傷原因，而不是看到 ALT 異常就將受傷都算在 HBV 身上。若 DNA **持續** <2,000 IU/mL、ALT **持續** >ULN，EASL 2025 仍允許在評估其他肝病後**考慮抗病毒治療**，但這是 LoE 5 的**弱建議**；AASLD/IDSA Recommendation 4 的實作提醒，則特別要求評估並處理其他造成 ALT 上升的病因。這既不是一次 ALT 異常就必須給藥，也不是 HBV DNA 低量就永不考慮治療。兩組 HBeAg-negative 灰區真正需要補的證據並不相同：前一組要釐清 HBV 歸因、fibrosis 與長期風險，後一組則先辨認 ALT 的其他來源，再結合反覆檢驗及個別風險決定治療或監測。
 
 這也說明為什麼治療門檻不是疾病開始的時間點。ALT 從正常跨過 ULN，只代表可量到的 injury 訊號改變；HBV DNA 達到某個分界，也不證明肝炎就在當天開始。**Marker 是觀察，phase 是對連續觀察的工作推論，treatment threshold 是將證據與風險轉成臨床行動的規則。** 三者彼此相連，卻不能互相替代。
 
