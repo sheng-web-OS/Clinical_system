@@ -12,7 +12,7 @@
 
 Figure 1 比較首次 EDTA platelet **103 × 10⁹/L**、約 20 日後 EDTA **77 × 10⁹/L**、citrate **218 × 10⁹/L**。這張圖的角色是讓讀者看見**抗凝管條件、採血時點與測量結果**之間的關係。EDTA 血片可見 clumping，是原文另記錄的顯微觀察；Figure 1 本身並不是血片圖像，不能把圖上的計數差直接稱為「顯微鏡看到血小板逐漸減少」。不同管別也不是同一時間內完全可交換的測試。
 
-[Yan 等，2024 年術前 EDTA-dependent 偽性血小板低下病例（PubMed 摘要）](https://pubmed.ncbi.nlm.nih.gov/38213226/)描述 platelet **27 × 10⁹/L** 並曾考慮輸注；與檢驗室核對後取消輸注申請。這是個案內實際發生的判斷，不是普遍取消輸注的證據。[2023 年第 4 期出版、2024 年 PubMed 收錄的 151 人替代管研究](https://pubmed.ncbi.nlm.nih.gov/38406932/)與[citrate-dependent platelet clumping 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)提醒：citrate 不一定能完全解除分析干擾。
+[Yan 等，2024 年術前 EDTA-dependent 偽性血小板低下病例（PubMed 摘要）](https://pubmed.ncbi.nlm.nih.gov/38213226/)描述 platelet **27 × 10⁹/L** 並曾考慮輸注；與檢驗室核對後取消輸注申請。這是個案內實際發生的判斷，不是普遍取消輸注的證據。[Sharif 等 2023 年第 4 期（PMID 38406932）之 151 人替代管研究](https://pubmed.ncbi.nlm.nih.gov/38406932/)使用 **48 小時內 EDTA／citrate 成對檢體**（不是保證同一時間採血），只在 **47/151（31.1%）** 排除假性低下；作者並報告整體 citrate 計數較 EDTA 低。這組意外結果不能推成 citrate 在每個人身上一定降低血小板，也不能將兩次採檢的時間效應完全排除。[期刊原始摘要](https://www.ayubmed.edu.pk/jamc/index.php/jamc/article/view/12300)。與[citrate-dependent platelet clumping 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)提醒：citrate 不一定能完全解除分析干擾。
 
 ## K-EDTA 與輸液污染：從兩個方向相反的假異常回查採樣過程
 
