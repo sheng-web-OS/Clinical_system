@@ -133,6 +133,13 @@ class RunnerTest(unittest.TestCase):
         self.assertEqual(5, result["completed"])
         rows = json.loads((self.root / "out/first_pass_results.json").read_text())
         self.assertEqual(4, sum(x["status"] == "FAILED_OR_INCOMPLETE" for x in rows))
+        events = [
+            json.loads(line)
+            for line in (self.root / "out/attempt_events.jsonl").read_text().splitlines()
+        ]
+        self.assertEqual(18, len(events))
+        self.assertEqual(9, sum(e["event"] == "STARTED" for e in events))
+        self.assertEqual(4, sum(e["event"] == "FAILED_OR_INCOMPLETE" for e in events))
         self.assertTrue(all(x["adjudication"] == "NOT_DONE" for x in rows))
 
     def test_api_missing_key_fails_before_making_private_directory(self):
@@ -147,6 +154,13 @@ class RunnerTest(unittest.TestCase):
         with self.assertRaisesRegex(PilotError, "OUTPUT_EXISTS"):
             self.go()
         self.assertEqual(before, (self.root / "out/manifest.json").read_bytes())
+
+    def test_public_repository_output_path_is_denied(self):
+        public_output = Path(__file__).resolve().parents[1] / "test-output-should-not-exist"
+        with self.assertRaisesRegex(PilotError, "PRIVATE_OUTPUT_MUST_BE_OUTSIDE"):
+            run(self.cases, self.pack, self.skill, public_output,
+                MODEL, COMMIT)
+        self.assertFalse(public_output.exists())
 
     def test_not_a_patient_or_nonallowlisted_source(self):
         obj = json.loads(self.cases.read_text())
