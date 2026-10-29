@@ -60,7 +60,7 @@ def add_candidates(worktree):
         raise AssertionError("Exam anchor / concept not unique")
     pages.extend([
         {"source":S02,"output":U02,"title":title2,
-         "subtitle":"兩位真實患者，從溶血鉀與抗凝管差異辨認樣本失真及危急風險",
+         "subtitle":"三名真實患者：由兩種相反的溶血高鉀風險，走向抗凝管造成的計數失真",
          "collection":"xiaoma-internal-medicine","layout":"reader","section":"Lab Medicine",
          "date":"2026-10-29","navigation":False,"review":"author_source_check"},
         {"source":S03,"output":U03,"title":title3,
