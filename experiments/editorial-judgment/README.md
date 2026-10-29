@@ -1,7 +1,7 @@
 # EJE v0.1｜可重現的編輯判斷力評鑑
 
 **Status: protocol + retrospective seeds; independent blinded validation NOT YET DONE.**
-**Owner:** Clinical OS private evaluation. **Not public content** and **not a new Master Prompt**.
+**Owner:** Clinical OS evaluation. The GitHub repository and this PR are **PUBLIC**. This directory contains only exposed, retrospective development fixtures; it is **not** a private holdout or a new Master Prompt. Never commit confidential reviewer keys, patient records or genuine unseen assessments here.
 
 ## Why this exists
 
@@ -23,7 +23,7 @@ EPQC and medical P0/P1 hard stops remain binding. An EJE grade **cannot** overri
 ## Benchmark construction
 
 - **cases.json:** task and *pre-correction* artifact/available evidence only. Do NOT reveal the expected failures, fixes or user response in a candidate evaluation.
-- **labels.json:** separate adjudication file. Do not mount, search or feed it to the candidate agent. Same repository storage is convenient, **not inherently blinded**: an independent executor must provide the candidate only an exported input pack. Candidate models previously exposed to these cases are contaminated; historical cases are regression tests, never evidence of out-of-sample generalization.
+- **labels.json:** public historical development labels, **not an access-controlled secret**. Do not mount, search or feed it to the candidate agent; an isolated executor must provide only a sealed input pack. Genuine unseen clinical holdout labels and independent reviewer records must be kept in a separately access-controlled environment, never this public GitHub repo. Exposure of these retrospective cases means they are regression tests only, not evidence of out-of-sample generalization.
 - Case status `replayable`: actual pre-feedback commit exists and task can be executed from it. `needs_freeze`: genuine feedback exists, but a faithful baseline or PDF view is not yet available. These can guide dataset construction but **must not be included in metrics**.
 - Freeze a source manifest (sha/ref, file path, original-source scope, available figures and permissions), user task, model & effort, tool permissions, prompt, time budget, random assignment, and scorer rubric **before** generation.
 - Include positive controls (real mistakes), negative controls (sound material: no rewrite), near misses (same theme, different source), and a future holdout with topics not used to write this rubric.
@@ -84,7 +84,7 @@ Several seeds are marked `needs_freeze` until actual earlier drafts, Pocket 9E o
 
 - Reuse EPQC's A–G *quality of final prose* and existing medical checks; EJE only grades the **editorial decision-making above the prose**. No new agent fleet, persistent global Claim Graph or separate site.
 - Store high-impact accepted/falsified decisions and one regression case per recurring failure family. A new permanent rule is justified only if a failure recurs or an automated test protects a high-cost edge.
-- `score.py` validates and summarizes adjudicated results; it **cannot** automatically decide whether a medical claim is true or whether prose is cognitively effective.
+- `score.py` rejects impossible negative-control true-positive counts, fractional issue counts, duplicated case IDs, and incomplete replayable cohorts; user-supplied human-time numbers are reported only as **unverified** and never promoted to verified minutes. It summarizes **supplied** adjudications; it **cannot** authenticate reviewer identity, source truth, medical correctness, prospective calibration, or learning effectiveness. A green CI only proves the integrity checks run.
 - Publication release receipts, private source integrity and website QA continue independently. Passing EJE does **not** authorize publication.
 
 ## 2026-10-22 integrity correction (no new capability claim)
