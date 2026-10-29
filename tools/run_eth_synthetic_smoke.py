@@ -7,6 +7,7 @@ benchmark or evidence of autonomy. Credentials and model answers are never logge
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -22,6 +23,9 @@ VARIANTS = ("native", "clinical_lite")
 EXPECTED_PROBES = 4
 MAX_REQUESTS = EXPECTED_PROBES * len(VARIANTS)
 MODEL = "gpt-5-mini"
+# Only reviewed PUBLIC synthetic bytes may be sent to the model.
+SPEC_SHA256 = "86ad7072a3355c78a5caa426b863b7f8d42aa9e1115d15bfd405eafabb055c60"
+ADAPTER_SHA256 = "ac03b50b86b8b888c4e81846d700c33e4c9f60677f806abb41436a839a74e3d4"
 
 
 class SmokeHold(Exception):
@@ -30,14 +34,16 @@ class SmokeHold(Exception):
 
 def plan() -> dict:
     """Fail closed on modified public fixture; no secret or network required."""
+    if hashlib.sha256(SPEC.read_bytes()).hexdigest() != SPEC_SHA256:
+        raise SmokeHold("TRUSTED_SYNTHETIC_BYTES_CHANGED")
+    if not ADAPTER.is_file() or hashlib.sha256(ADAPTER.read_bytes()).hexdigest() != ADAPTER_SHA256:
+        raise SmokeHold("TRUSTED_MODEL_ADAPTER_CHANGED")
     spec = json.loads(SPEC.read_text(encoding="utf-8"))
     ids = ["baseline"] + [p["id"] for p in spec["probes"]]
     if (spec.get("case_id") != "synthetic_claim_update_01" or
             len(ids) != EXPECTED_PROBES or len(set(ids)) != EXPECTED_PROBES or
             len(VARIANTS) * len(ids) != MAX_REQUESTS):
         raise SmokeHold("FIXTURE_OR_REQUEST_LIMIT_CHANGED")
-    if not ADAPTER.is_file():
-        raise SmokeHold("ADAPTER_MISSING")
     return {
         "mode": "SYNTHETIC_ONLY_NOT_BLIND", "model": MODEL,
         "variants": list(VARIANTS), "packets_per_arm": len(ids),
