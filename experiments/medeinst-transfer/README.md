@@ -92,7 +92,7 @@ The upstream decision-question-triage experiment in [Draft PR #225](https://gith
 This PR's new `tools/export_medeinst_stage1.py` receives ONLY `worker-packets/s_.../packet.json` and a **gold-free** integrity receipt saved separately by `prepare_medeinst_holdout.py`. It checks the exact SHA of that trusted private receipt, verifies all packet digests, refuses missing/extra/changed worker slots, and emits:
 
 - `stage1.zip`: anonymous `M01.md`... research tasks (NOT individual worker executions; never mount entire ZIP into one worker context).
-- `manifest.json`: byte hashes, `version=2`, `status=PREPARED_NOT_RUN`, `actual_model_calls=0`. Compatible with the existing PR #225 **Stage1 input format**, but direct execution of PR #225's separate builder has not been attested in this PR.
+- `manifest.json`: byte hashes, `version=2`, `status=PREPARED_NOT_RUN`, `actual_model_calls=0`. Compatible with the existing PR #225 **Stage1 input format**. **Actual integration verified:** read-only [Actions #40842406029](https://github.com/sheng-web-OS/Clinical_system/actions/runs/40842406029) fetched the exact reviewed PR #225 source at commit `22d3831d2ab4c973a0d7e3d9322ae2506ecab1c0`, verified Git blob identities for its original builder and Skill, and executed its real B/C builder on four official anonymous MedEinst tasks. The integration generated eight B/C ZIP inputs, with identical B/C tasks and instructions and the experimental Skill in C only; no gold, API key, or model call was present. The exact upstream builder SHA and Skill SHA are pinned in the smoke workflow; this does NOT attest to model-context isolation or first-pass judgment.
 - `private_crosswalk.json`: maps anonymous M-IDs to the original opaque worker slots, without diagnosis labels. Keep this away from model workers and medical reviewers.
 - No diagnoses, raw gold key, old model outputs or case pair identities are copied to any worker-facing ZIP. The original official-data answer key remains outside this ZIP and outside public GitHub.
 
@@ -109,7 +109,7 @@ python tools/export_medeinst_stage1.py \
   --output-dir /secure/new-pr225-stage1
 ~~~
 
-The GitHub read-only smoke executes this path on four real public MedEinst vignettes inside an ephemeral sandbox; all resulting files are deleted and no model or cost-bearing inference runs.
+The GitHub read-only smoke executes this path on four real public MedEinst vignettes inside an ephemeral sandbox, then calls the actual PR #225 B/C ZIP builder with source-code hash checks. All resulting files are deleted; no model, paid inference, independent reviewer or clinical correctness scoring runs.
 
 **Scientific estimand boundary:** PR #225's current Skill, `decision-question-triage`, teaches *which question to investigate, when to retrieve, and when not to invent uncertainty*. It does NOT promise higher MedEinst diagnostic accuracy by itself. A first Stage1 comparison may legitimately measure appropriate choice of discriminating evidence, calibrated uncertainty, missed critical questions and false retrievals. **MedEinst diagnosis flip sensitivity, specificity, clinical treatment choice and genuine experience transfer require separate preregistered later-stage decisions, appropriate relevant sources, and independent expert adjudication**. Do not count a RETRIEVE/SKIP/HOLD answer as a correct diagnosis; a ZIP format pass is not a Stage1 worker run, and Stage1 behavior is not end-to-end clinical reasoning improvement.
 
