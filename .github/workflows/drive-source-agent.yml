@@ -8,6 +8,8 @@ on:
       - "tools/drive_agent_pr.py"
       - "tests/test_drive_source_agent.py"
       - "tests/test_drive_agent_pr.py"
+      - "tests/test_drive_wif_script.py"
+      - "tools/setup_drive_agent_wif.sh"
       - "experiments/autonomy-shadow/fixtures/drive-source-gap.json"
   schedule:
     # Daily wake-up only. The agent decides if a source is actually needed.
