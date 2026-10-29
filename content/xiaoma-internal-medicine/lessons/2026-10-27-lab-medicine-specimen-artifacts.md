@@ -47,7 +47,7 @@ CBC 使用 EDTA 的主要目的，是藉由螯合鈣避免試管內凝血，使�
 
 另一個 2024 年發表的術前病例說明其臨床後果：一位預計接受脊椎手術的患者，EDTA 管 platelet 為 **27 × 10⁹/L**，外科原擬先輸注血小板；檢驗人員發現聚集，改用 citrate 與 heparin 管均得到正常計數，血小板輸注申請因而取消。這是作者報告的個別決策，不表示所有手術病人都可以僅憑沒有出血就取消輸血評估。[Yan 等，2024，摘要可核對](https://pubmed.ncbi.nlm.nih.gov/38213226/)
 
-還有一個更進一步的陷阱：**citrate 並非保證正確的「黃金管」。** 一項發表於 **2023 年第 4 期**（PubMed PMID 38406932，2024 年完成索引）、納入 151 位研究對象的回溯性研究，在其樣本與處理條件下，citrate 只為其中 47 位（31.1%）排除 EDTA 相關假性低血小板；也有已發表的病例出現 citrate 管特有的 platelet clumping。若與血片仍矛盾，應由檢驗室選擇其他抗凝劑、快速分析或適當計數方法，而不是自行挑最高的一個 platelet 當作「真值」。[2024 研究摘要](https://pubmed.ncbi.nlm.nih.gov/38406932/)；[citrate-dependent 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)
+還有一個更進一步的陷阱：**citrate 並非保證正確的「黃金管」。** 一項發表於 **2023 年第 4 期**、納入 151 位已見血小板聚集患者的回溯性研究，要求 EDTA 與 citrate 兩管在 **48 小時內**採集；結果 citrate 只為其中 **47 位（31.1%）**解除假性低值，甚至**整體而言 citrate 管計數比 EDTA 管更低**。這並不是「citrate 造成體內血小板減少」，而是提醒我們：在這個經選取且兩管未必同時採集的族群，換管並不保證得到可認定的真值。另有病例出現 citrate 管特有的 platelet clumping。若與血片仍矛盾，應由檢驗室選擇其他抗凝劑、快速分析或適當計數方法，而不是自行挑最高的一個 platelet 當作「真值」。[2024 研究摘要](https://pubmed.ncbi.nlm.nih.gov/38406932/)；[citrate-dependent 反例](https://pmc.ncbi.nlm.nih.gov/articles/PMC9467333/)
 
 ## 03　同樣是「假異常」，錯誤其實可以在四個不同環節發生
 
