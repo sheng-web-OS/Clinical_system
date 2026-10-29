@@ -24,6 +24,8 @@ def fixture():
         "schema_version": 1,
         "id": "synthetic-integrity-fixture",
         "exposure": "development",
+        "retrieval_pack_sha256": "d" * 64,
+        "candidate_skill_sha256": "e" * 64,
         "cases": [{"id": cid, "role": role, "source_sha256": HEX}
                   for cid, role in CASES],
     }
@@ -38,6 +40,9 @@ def fixture():
                 "hinted": False, "false_alarm": False,
                 "article_retrieval_visible": arm != "native",
                 "candidate_skill_visible": arm == "skill",
+                "retrieval_pack_sha256": None if arm == "native" else "d" * 64,
+                "loaded_skill_sha256": "e" * 64 if arm == "skill" else None,
+                "skill_applied": role == "transfer" and arm == "skill",
                 "worker_context": "writer-" + cid + "-" + arm,
                 "reviewer_context": "independent-judge-context",
                 "trace_ref": "synthetic-only-" + cid + "-" + arm,
@@ -121,6 +126,45 @@ class TransferPilotIntegrity(unittest.TestCase):
     def test_article_exposure_mismatch_rejected(self):
         next(r for r in self.run["records"] if r["arm"] == "native")["article_retrieval_visible"] = True
         self.rejects("arm contamination")
+
+    def test_retrieval_pack_mismatch_refused(self):
+        next(r for r in self.run["records"] if r["arm"] == "skill")[
+            "retrieval_pack_sha256"] = "f" * 64
+        self.rejects("article retrieval pack mismatch")
+
+    def test_retrieval_control_cannot_load_candidate_skill(self):
+        next(r for r in self.run["records"] if r["arm"] == "retrieval")[
+            "loaded_skill_sha256"] = self.suite["candidate_skill_sha256"]
+        self.rejects("candidate skill version mismatch")
+
+    def test_wrong_candidate_skill_digest_refused(self):
+        next(r for r in self.run["records"] if r["arm"] == "skill")[
+            "loaded_skill_sha256"] = "f" * 64
+        self.rejects("candidate skill version mismatch")
+
+    def test_boundary_misfire_refused_even_if_output_correct(self):
+        next(r for r in self.run["records"] if
+             r["arm"] == "skill" and r["case_id"] == "out-of-scope")[
+                 "skill_applied"] = True
+        self.rejects("non-applicable boundary wrongly activated skill")
+
+    def test_skill_not_used_cannot_claim_incremental_skill_gain(self):
+        next(r for r in self.run["records"] if
+             r["arm"] == "skill" and r["case_id"] == "novel-transfer")[
+                 "skill_applied"] = False
+        self.assertEqual("NO_PROMOTABLE_INCREMENT", self.report()["verdict"])
+
+    def test_boundary_false_alarm_is_a_control_failure(self):
+        r = next(r for r in self.run["records"] if
+                 r["arm"] == "skill" and r["case_id"] == "out-of-scope")
+        r["false_alarm"] = True
+        r["decision_correct"] = False
+        r["first_pass"] = False
+        self.assertEqual("HOLD_SAFETY_OR_CONTROL_REGRESSION", self.report()["verdict"])
+
+    def test_stale_suite_skill_digest_refused(self):
+        self.suite["candidate_skill_sha256"] = "f" * 64
+        self.rejects("candidate skill version mismatch")
 
     def test_normal_false_alarm_blocks_and_never_promotes(self):
         for r in self.run["records"]:
