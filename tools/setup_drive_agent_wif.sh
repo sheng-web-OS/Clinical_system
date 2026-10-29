@@ -33,7 +33,7 @@ gcloud iam workload-identity-pools providers create-oidc "$PROVIDER" \
   --attribute-condition="assertion.repository_id=='${REPO_ID}' && assertion.ref=='refs/heads/main' && assertion.workflow_ref=='${WORKFLOW}'"
 SA_EMAIL="${SA_NAME}@${PROJECT_ID}.iam.gserviceaccount.com"
 if ! gcloud iam service-accounts describe "$SA_EMAIL" --project "$PROJECT_ID" >/dev/null 2>&1; then
-  gcloud iam service-accounts create "$SA_NAME" --project "$PROJECT_ID" --display-name="Clinical OS synthetic Drive Viewer"
+  gcloud iam service-accounts create "$SA_NAME" --project "$PROJECT_ID" --display-name="Clinical OS Drive viewer"
 fi
 MEMBER="principalSet://iam.googleapis.com/projects/${PROJECT_NUMBER}/locations/global/workloadIdentityPools/${POOL}/attribute.repository_id/${REPO_ID}"
 gcloud iam service-accounts add-iam-policy-binding "$SA_EMAIL" --project="$PROJECT_ID" \
