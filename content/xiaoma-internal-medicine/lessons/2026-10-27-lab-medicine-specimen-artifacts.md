@@ -27,7 +27,7 @@ Hemolysis index 可以幫檢驗室辨認溶血程度及評估部分分析干擾�
 
 ### 反過來看：如果把溶血造成的假高鉀當成真高鉀，會怎樣？
 
-另一份[AHRQ PSNet 2024 病例〈A Fatal Twist in Pseudohyperkalemia〉](https://psnet.ahrq.gov/web-mm/fatal-twist-pseudohyperkalemia)提供了**與前一位 72 歲男性不同的患者，也剛好相反的危險**。一名 **54 歲男性**因胸痛至急診，K **5.9 mEq/L** 的檢體已標示溶血，但這項警示未被治療團隊注意。ECG 上的 **T 波扁平、U 波與 QT 延長**反而更應讓人懷疑低鉀或其他再極化異常，而不是由單一 K 數值直接確定高鉀。他後來接受 albuterol、insulin／dextrose、bicarbonate、furosemide 等降鉀處置；同一段病程又因心房顫動使用 amiodarone。隨後出現 torsades de pointes（TdP）與致命性心搏停止。原評論認為**未察覺的假高鉀、可能被降鉀治療加重的低鉀，以及 QT 延長藥物**共同構成危險；但未提供足以直接證明各項因素貢獻的可靠連續血鉀數據，因此不能宣稱「已量到治療後 K 降到某值」，也不能把死亡完全歸因於單一藥物。
+另一份[AHRQ PSNet 2024 病例〈A Fatal Twist in Pseudohyperkalemia〉](https://psnet.ahrq.gov/web-mm/fatal-twist-pseudohyperkalemia)提供了**與前一位 72 歲男性不同的患者，也剛好相反的危險**。一名 **54 歲男性**因胸痛至急診，K **5.9 mEq/L** 的檢體已標示溶血，但這項警示未被治療團隊注意。原文記載 ECG 同時有 **RBBB、T 波扁平、小 U 波與 QT 延長**。T／U 波的形態與報告的高 K 並不相稱，應讓醫師重新追查電解質與檢體；但 **RBBB 使 QRS 變寬，傳統 QT 測量可能因此高估真正的再極化延長**，不能只憑原作者所寫的「QT 延長」就定量推論低鉀或 TdP 風險。原始病例沒有提供可獨立核算的 QT、QRS 或 JT 數據；這也是需要核對原始 ECG、既往 ECG 與重複電解質，而非依單一描述直接確診低鉀的原因。[QT 在 BBB 時的判讀綜述](https://pmc.ncbi.nlm.nih.gov/articles/PMC7509006/)。他後來接受 albuterol、insulin／dextrose、bicarbonate、furosemide 等降鉀處置；同一段病程又因心房顫動使用 amiodarone。隨後出現 torsades de pointes（TdP）與致命性心搏停止。原評論認為**未察覺的假高鉀、可能被降鉀治療加重的低鉀，以及 QT 延長藥物**共同構成危險；但未提供足以直接證明各項因素貢獻的可靠連續血鉀數據，因此不能宣稱「已量到治療後 K 降到某值」，也不能把死亡完全歸因於單一藥物。
 
 兩位 AHRQ 患者教的不是互相否定的規則。第一位 K 7.4 且可能有相符 ECG 改變時，**僅因溶血而等待重抽**會延誤急症評估；第二位 K 5.9 卻有與高鉀不相稱、反而提示低鉀風險的 ECG 時，**未核對數據與 ECG 就疊加降鉀介入**也可能傷害患者。真正應同步做的是辨認病人當下是否不穩定、判斷 ECG 與整體生理是否支持該數值、盡快取得合適新檢體，並按風險決定處置時點與治療後再評估。**「溶血」不是取消急救的理由，也不是把報告當作已證實真值的理由。**
 
