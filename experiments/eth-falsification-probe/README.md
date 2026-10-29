@@ -64,3 +64,79 @@ Exit status is `0` for all preregistered label checks passed, `1` for mismatches
 4. Compare gains in actual unseen clinical error interception, correct-case preservation and user intervention minutes against a native-model baseline. If absent, **delete or retire this extra tool** rather than installing it as another mandatory approval layer.
 
 Scope: `DESIGN + EXECUTABLE STRUCTURAL FIXTURE / MEDICAL EFFECTIVENESS NOT VALIDATED`. Linked to Issues #203/#133, PR #205, and experiment E08; no deployment or auto-merge.
+
+## V2 — executable adapter and stage-rescue trials
+
+The `run` operation **actually starts a supplied local adapter process** for each packet,
+passes one packet as stdin JSON and validates exactly one stdout JSON object.
+It does not pretend the included toy adapter is an AI: `toy_adapter.py` is a
+fixed fictional signature-routing rule and is used to prove the harness runs.
+The same protocol can be implemented by a trusted local model executable or
+approved model-provider adapter *outside this public repo*. No vendor API key,
+provider, token budget, isolation or paid inference is preconfigured.
+
+```bash
+# Toy end-to-end run (change /tmp/demo-eth to a fresh path for another run)
+python tools/falsification_probe.py prepare \
+  --spec experiments/eth-falsification-probe/synthetic-routing.json \
+  --reviewer-dir /tmp/demo-eth/packets \
+  --key /tmp/demo-eth/gold/key.json
+python tools/falsification_probe.py run \
+  --reviewer-dir /tmp/demo-eth/packets \
+  --adapter experiments/eth-falsification-probe/toy_adapter.py \
+  --responses /tmp/demo-eth/answers.json
+python tools/falsification_probe.py score \
+  --key /tmp/demo-eth/gold/key.json --responses /tmp/demo-eth/answers.json
+```
+
+The adapter sees the **packet only** on stdin; the gold key is not supplied to it.
+`run` strips most inherited environment variables, executes without a shell,
+enforces a per-packet timeout, checks response schema and packet SHA, and
+refuses to overwrite any responses. A Python `.py` file is invoked through
+the running Python interpreter; other adapter types must be executable.
+Use `--allow-env NAME` only for an explicitly approved variable and never print
+its value. An adapter can still access other files or make network requests;
+**subprocess execution is NOT a security sandbox, privacy boundary or proof of
+memory isolation**. Do not run an untrusted adapter on a machine that can read
+private patient data or evaluator keys. For a controlled clinical trial, use
+separate restricted execution environments (or appropriately scoped remote
+workers), not merely adjacent folders.
+
+### Diagnostic rescue conditions (N / Q / E / QE)
+
+A second command creates four matched test arms that differ only by supplied
+research guidance. The hints are supplied **by a researcher/adjudicator**, not
+invented or independently discovered by the agent. Q gives the candidate
+question; E gives evidence-finding guidance; QE gives both. This is a
+**deliberately unequal-information diagnostic manipulation**, not a fair
+A/B benchmark or proof of causal root.
+
+```bash
+python tools/falsification_probe.py prepare-rescue \
+  --spec experiments/eth-falsification-probe/synthetic-routing.json \
+  --hints experiments/eth-falsification-probe/synthetic-rescue-hints.json \
+  --reviewer-root /tmp/demo-rescue/packets \
+  --key-root /tmp/demo-rescue/gold
+for ARM in N Q E QE; do
+  python tools/falsification_probe.py run \
+    --reviewer-dir "/tmp/demo-rescue/packets/$ARM" \
+    --adapter experiments/eth-falsification-probe/toy_adapter.py \
+    --responses "/tmp/demo-rescue/results/$ARM.json"
+done
+python tools/falsification_probe.py compare-rescue \
+  --key-root /tmp/demo-rescue/gold \
+  --response-root /tmp/demo-rescue/results
+```
+
+**Important interpretation:** The synthetic toy is expected to get all four
+arms correct, so it cannot establish that rescue helps a real model. The
+`compare-rescue` command reports each arm's failed-stage counts and bad
+flip/stable relations; it cannot discover *why* a model failed. A clinical
+follow-up requires a prospectively adjudicated RED/GREEN holdout set, verified
+provider/context isolation, independent review and owner-time measurement.
+No label printed by these commands is a clinical publication approval.
+
+This remains a **Draft research instrument, not a new mandatory editorial gate**.
+If no meaningful clinical error reduction or time saving is demonstrated over
+the native model, delete/retire the extra tool rather than making every article
+pay its complexity cost.
