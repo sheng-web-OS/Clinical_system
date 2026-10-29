@@ -124,6 +124,9 @@ class RunnerTest(unittest.TestCase):
                     "usage": {"input_tokens": 10, "output_tokens": 20}}
         report = self.go(mode=True, caller=fake_transport)
         self.assertEqual("UNSCORED_EXECUTION", report["status"])
+        self.assertEqual("EXECUTION_STARTED_UNSCORED",
+                         json.loads((self.root / "out/manifest.json").read_text())
+                         ["results_status"])
         self.assertEqual(9, report["completed"])
         self.assertEqual(9, len(captured))
         entries = json.loads((self.root / "out/first_pass_results.json").read_text())
