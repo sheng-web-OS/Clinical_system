@@ -41,6 +41,25 @@ class DispatcherShadowTest(unittest.TestCase):
         self.assertEqual(0, result["write_actions"])
         self.assertFalse(result["execution_authorized"])
 
+    def test_ranked_queue_has_fallback_when_first_task_has_active_owner(self):
+        # Read-only selector MUST return more than the top open Issue: the
+        # high-priority P0 can already have an active writer or a gated PR.
+        result = select_tasks(self.config, self.snapshot)
+        self.assertTrue(result["selection_requires_live_gate_check"])
+        self.assertFalse(result["execution_authorized"])
+        self.assertEqual(len(self.config["tasks"]), len(result["candidates"]))
+        self.assertEqual("ecg-original-evidence", result["candidates"][0]["id"])
+        self.assertEqual("mobile-figure-p0", result["candidates"][1]["id"])
+        self.assertEqual("issue:79", result["candidates"][1]["target"])
+
+    def test_only_open_issues_become_candidates(self):
+        self.snapshot["issue:76"]["state"] = "closed"
+        self.snapshot["issue:79"]["state"] = "closed"
+        result = select_tasks(self.config, self.snapshot)
+        self.assertEqual("public-narrative-audit", result["candidates"][0]["id"])
+        self.assertFalse(any(c["target"] in {"issue:76", "issue:79"}
+                             for c in result["candidates"]))
+
     def test_closed_task_advances_to_other_open_issue(self):
         self.snapshot["issue:76"]["state"] = "closed"
         result = select_tasks(self.config, self.snapshot)
