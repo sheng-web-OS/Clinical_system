@@ -28,9 +28,12 @@ def load_manifest(path):
     require(type(config) is dict and set(config) == {
         "schema_version", "repo", "mode", "max_tasks_per_run",
         "frozen_eval", "tasks"}, "INVALID_MANIFEST_SCHEMA")
-    require(config["schema_version"] == 1 and config["repo"] == REPO,
+    require(type(config["schema_version"]) is int and
+            config["schema_version"] == 1 and config["repo"] == REPO,
             "INVALID_REPOSITORY_OR_VERSION")
-    require(config["mode"] == "shadow" and config["max_tasks_per_run"] == 1,
+    require(config["mode"] == "shadow" and
+            type(config["max_tasks_per_run"]) is int and
+            config["max_tasks_per_run"] == 1,
             "SHADOW_ONLY_ONE_TASK_PER_TICK")
     freeze = config["frozen_eval"]
     require(type(freeze) is dict and set(freeze) == {
@@ -39,7 +42,9 @@ def load_manifest(path):
             freeze["until_utc"] == "2026-11-01T06:20:15Z",
             "PREREGISTERED_WINDOW_MUST_NOT_CHANGE")
     excluded = freeze["excluded_targets"]
-    require(type(excluded) is list and len(excluded) == len(set(excluded))
+    require(type(excluded) is list and
+            all(type(x) is str for x in excluded) and
+            len(excluded) == len(set(excluded))
             and {"issue:137", "issue:159", "pr:224", "pr:225",
                  "pr:234", "pr:235"}.issubset(set(excluded)),
             "PROTECTED_EXPERIMENT_SCOPE")
@@ -61,7 +66,7 @@ def load_manifest(path):
                 "DISALLOWED_OR_DUPLICATE_TARGET")
         require(type(task["enabled"]) is bool and
                 type(task["priority"]) is int and 1 <= task["priority"] <= 100
-                and task["kind"] in ALLOWED_KINDS
+                and type(task["kind"]) is str and task["kind"] in ALLOWED_KINDS
                 and task["trigger"] == "issue_open",
                 "INVALID_TASK_POLICY")
         seen_ids.add(task_id)
