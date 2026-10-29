@@ -28,6 +28,11 @@ class ArchiveWorkflowSafetyTests(unittest.TestCase):
         self.assertIn("archive/national-exam/physician-stage2-2022-2026", text)
         self.assertNotIn("gh pr merge", text)
 
+    def test_public_raw_archive_opt_in_required(self):
+        text = WORKFLOW.read_text(encoding="utf-8")
+        self.assertIn("CLINICAL_OS_ARCHIVE_PUBLIC_SOURCE_APPROVED", text)
+        self.assertIn("if: vars.CLINICAL_OS_ARCHIVE_PUBLIC_SOURCE_APPROVED == 'true'", text)
+
 
 if __name__ == "__main__":
     unittest.main()
