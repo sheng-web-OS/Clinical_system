@@ -31,6 +31,7 @@ def protected_repo_roots(repo_root):
 
 def reject_public_source(source, repo_root):
     path = Path(source).absolute()
+    check(not path.is_symlink(), "PRIVATE_SOURCE_INVALID")
     # Resolve the *complete* path, not just the final filename: otherwise
     # private/alias -> public_repo defeats lexical path containment.
     resolved = path.resolve(strict=True)
