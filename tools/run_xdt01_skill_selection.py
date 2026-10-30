@@ -236,9 +236,9 @@ def main(argv=None):
     target.mkdir(mode=0o700, parents=False)
     meta = {"schema_version": 1, "arm": args.arm, "task_sha256": digest,
             "candidate_commit": args.candidate_commit,
-            "status": "NOT_RUN", "independent_review": "NOT_DONE",
+            "status": "PREFLIGHT_ONLY_NO_MODEL_OUTCOME", "independent_review": "NOT_DONE",
             "provider_billing_verified": False}
-    write_once(target / "status.json", meta)
+    write_once(target / "preflight.json", meta)
     if not args.execute_api:
         print("PLAN_ONLY_NO_MODEL_CALLS")
         return 0
