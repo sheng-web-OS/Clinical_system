@@ -81,6 +81,24 @@ class SelectionRunnerTests(unittest.TestCase):
             self.assertNotIn(x.SKILL_PREFIX, calls[0]["instructions"])
             self.assertEqual(x.EVIDENCE in calls[0]["instructions"], arm == "B")
 
+    def test_selection_receipt_precedes_answer_and_survives_answer_failure(self):
+        received = []
+        requests = []
+
+        def model(req):
+            requests.append(req)
+            if len(requests) == 1:
+                return provider("USE", 1)
+            raise x.TrialError("SYNTHETIC_SECOND_CALL_FAILED")
+
+        with self.assertRaisesRegex(x.TrialError, "SYNTHETIC_SECOND_CALL_FAILED"):
+            x.run_arm("task", "C", lambda: "skill", model,
+                      on_event=received.append)
+        self.assertEqual(len(received), 1)
+        self.assertEqual(received[0]["kind"], "selection")
+        self.assertEqual(received[0]["text"], "USE")
+        self.assertEqual(received[0]["usage"]["total_tokens"], 15)
+
     def test_invalid_selection_fails_without_answer_call(self):
         calls = []
         def model(req):
