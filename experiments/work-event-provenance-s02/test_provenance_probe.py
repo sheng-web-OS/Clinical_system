@@ -140,6 +140,26 @@ class EventProvenanceTests(unittest.TestCase):
                 self.verify(lambda e: e["platform_run"].update(recorded_status=status),
                             "INVALID_EVIDENCE", "INVALID_PLATFORM_RUN_STATUS")
 
+    def test_partial_run_malformed_fields_are_invalid(self):
+        # Identity gaps do not exempt supplied untrusted metadata from validation.
+        bad_fields = (
+            ("recorded_status", []),
+            ("recorded_status", "SUCCESS"),
+            ("latest_result", "not-an-object"),
+            ("chat_ref", ["not-a-chat-reference"]),
+        )
+        for field, value in bad_fields:
+            with self.subTest(field=field, value=value):
+                def mutate(e):
+                    e["platform_run"] = {"id": None, "task_id": None, field: value}
+                self.verify(mutate, "INVALID_EVIDENCE")
+
+    def test_partial_run_with_valid_shape_is_not_proven(self):
+        self.verify(
+            lambda e: e.update(platform_run={"id": None, "task_id": None, "recorded_status": "no_update"}),
+            "GITHUB_EVENT_ONLY", "PLATFORM_RUN_NOT_OBSERVED"
+        )
+
     def test_572_malformed_field_mutations_never_raise(self):
         values = (None, False, True, 0, 1, 1.0, "", [], {}, ["a"], {"x": 1}, "NOT_EXPOSED", "abc")
         fields = ("recorded_status", "id", "task_id", "chat_ref", "latest_result",
