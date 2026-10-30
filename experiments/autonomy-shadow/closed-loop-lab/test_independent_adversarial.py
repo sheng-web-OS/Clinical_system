@@ -102,4 +102,24 @@ class IndependentAdversarialTests(unittest.TestCase):
         self.assertEqual('GLOBAL_OR_SHADOW_HOLD', result.reason)
         self.assertEqual(before, db.__dict__)
 
+
+    def test_08_qa_checkpoint_ack_lost_after_write_is_reconciled(self):
+        # A real reviewer verdict persisted but the checkpoint response was lost.
+        # Writer path already reconciles this; QA must do the same without double-signing.
+        db, a, b, w, q = fixture()
+        db.tasks = {a.id: a}
+        db.heads = {a.pr: a.start_head}
+        self._advance_to_qa(db, a, w, 100)
+        before = a.checkpoint_version
+        db.failpoints.add('CHECKPOINT_ACK_LOST_ONCE')
+        result = qa_wake(db, q, 102)
+        self.assertEqual(('QA_ACCEPTED', a.id, 'VERIFIED_COMPLETE'),
+                         (result.verdict, result.task, result.reason))
+        self.assertEqual(before + 1, a.checkpoint_version)
+        self.assertEqual(1, db.write_count)
+        self.assertEqual('VERIFIED_COMPLETE', a.stage)
+        self.assertEqual(q.run, a.qa_run)
+        self.assertEqual(0, len(db.failpoints))
+        self.assertEqual('NO_ACTION', qa_wake(db, q, 103).verdict)
+
 if __name__=='__main__': unittest.main()
