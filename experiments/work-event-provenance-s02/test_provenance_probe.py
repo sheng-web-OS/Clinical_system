@@ -134,5 +134,26 @@ class EventProvenanceTests(unittest.TestCase):
         self.verify(mutate, "INCONCLUSIVE")
 
 
+    def test_status_container_is_invalid_not_exception(self):
+        for status in ([], {}, ["a"], {"x": 1}):
+            with self.subTest(status=status):
+                self.verify(lambda e: e["platform_run"].update(recorded_status=status),
+                            "INVALID_EVIDENCE", "INVALID_PLATFORM_RUN_STATUS")
+
+    def test_572_malformed_field_mutations_never_raise(self):
+        values = (None, False, True, 0, 1, 1.0, "", [], {}, ["a"], {"x": 1}, "NOT_EXPOSED", "abc")
+        fields = ("recorded_status", "id", "task_id", "chat_ref", "latest_result",
+                  "repository", "pr_number", "event_id", "head_sha", "event_action", "run_id")
+        for section in ("github", "platform_run", "processing_receipt", "platform_event_binding"):
+            for field in fields:
+                for value in values:
+                    with self.subTest(section=section, field=field, value=str(value)):
+                        e = copy.deepcopy(self.case)
+                        e.setdefault(section, {})[field] = value
+                        result = assess(e)
+                        self.assertNotEqual(result.verdict, "VERIFIED")
+                        self.assertNotEqual(result.verdict, "PASS")
+
+
 if __name__ == "__main__":
     unittest.main()
