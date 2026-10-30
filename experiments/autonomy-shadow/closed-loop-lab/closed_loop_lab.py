@@ -380,7 +380,9 @@ def qa_wake(db: FakeGitHub, who: Identity, now: int) -> Result:
         if task.stage != 'AWAITING_QA':
             continue
         reason = None
-        if who.context == task.writer_context or who.run == task.writer_run:
+        if task.writer_context is None or task.writer_run is None:
+            reason = 'WRITER_PROVENANCE_MISSING'
+        elif who.context == task.writer_context or who.run == task.writer_run:
             reason = 'REVIEW_NOT_INDEPENDENT'
         elif task.committed_head != db.heads[task.pr]:
             reason = 'REVIEW_STALE_HEAD'
