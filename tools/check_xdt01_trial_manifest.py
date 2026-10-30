@@ -35,7 +35,7 @@ def check(obj):
     if obj.get("experiment_id") != "XDT-01":
         errors.append("Wrong experiment ID")
     phase = obj.get("phase")
-    if phase not in DENOMINATORS:
+    if not isinstance(phase, str) or phase not in DENOMINATORS:
         errors.append("Invalid phase")
     if not HEX40.fullmatch(str(obj.get("protocol_commit", ""))):
         errors.append("Missing or malformed exact protocol commit")
@@ -62,8 +62,10 @@ def check(obj):
         for key in ("model", "effort"):
             if not isinstance(t.get(key), str) or not ATOM.fullmatch(t[key]):
                 errors.append(f"Trial {idx}: invalid bounded {key}")
-        if arm not in ARMS or domain not in DOMAINS:
+        if (not isinstance(arm, str) or arm not in ARMS or
+                not isinstance(domain, str) or domain not in DOMAINS):
             errors.append(f"Trial {idx}: invalid arm/domain")
+            continue
         if (task_id, arm) in seen:
             errors.append(f"Trial {idx}: duplicate task/arm")
         seen.add((task_id, arm))
@@ -74,7 +76,7 @@ def check(obj):
             if type(t.get(key)) is not int or t[key] <= 0:
                 errors.append(f"Trial {idx}: invalid {key}")
         tasks[task_id].append(t)
-    if phase in DENOMINATORS:
+    if isinstance(phase, str) and phase in DENOMINATORS:
         expected_per_domain = DENOMINATORS[phase]
         task_counts = Counter(v[0].get("domain") for v in tasks.values() if v)
         if set(task_counts) != DOMAINS or any(task_counts[d] != expected_per_domain for d in DOMAINS):
