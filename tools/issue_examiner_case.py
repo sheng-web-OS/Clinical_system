@@ -19,7 +19,7 @@ from seal_private_case_exam import (
     check, ensure_safe_output, reject_public_source,
 )
 
-SLOT = re.compile(r"H[0-9]{2}\\.md\\Z")
+SLOT = re.compile(r"H[0-9]{2}\.md\Z")
 MAX_MANIFEST = 50000
 MAX_ARCHIVE = 1000000
 
