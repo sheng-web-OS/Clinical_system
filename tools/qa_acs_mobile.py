@@ -4,8 +4,7 @@
 Render the actual generated ACS lesson at 360/375/390 px and desktop,
 check that the long-form main reading and six exam links remain available,
 that no page-level horizontal scroll is required, and that core text is legible.
-Screenshots saved as GitHub Actions artifacts in this PUBLIC repository are
-not private. Use only public-safe, rights-cleared content.
+Store screenshots only in private GitHub Actions artifacts.
 """
 import argparse
 import functools
