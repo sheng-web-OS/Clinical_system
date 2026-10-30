@@ -52,7 +52,7 @@ CTA 的價值不只是看到哪一葉有血。它能同時看支氣管與肺實�
 
 這位病人的外科決策也不是「BAE 失敗就一定肺葉切除」。原作者原擬左下肺葉解剖性切除；進入胸腔後發現廣泛沾黏、肺葉界線不清，而且左肺嚴重實變使 fissure 與肺動脈難以辨識。**術者同時看見腫大、迂曲的支氣管動脈，並以縫線結紮這些血管**；這是病歷確實記載的另一項止血介入，不能在講述「特殊術式如何止血」時省略。手術團隊考量全肺切除的高風險，也無法安全完成原擬解剖，最後切斷左下肺靜脈與左下葉支氣管而保留肺動脈。這個順序說明的是手術中**解剖限制如何迫使方案改變**，不是 BAE、結紮支氣管動脈、靜脈與支氣管切斷等介入各自有多少療效。
 
-手術後不再咳血，第 18 天拔除胸管、第 24 天出院；三個月後 CT 與通氣／灌流檢查仍有肺實質異常及缺損。**多項止血操作在同一台手術中完成，單一個案無法拆分效果，也不能因最終止血成功便認定保留肺動脈的切斷方式優於常規肺葉切除。** 這個困難救援案例最能教會我們的是「當既定解剖切除在當下不可安全完成，團隊如何面對剩餘選項及其代價」，而不是複製一項非常規處置作為標準治療。
+這個轉折不能縮成「栓塞失敗，所以改做特殊手術」。**血管端的限制**是本次栓塞後仍有近端側枝未能處理、咳血未止；但原文沒有記載第二次血管介入的可行性評估，不能據此宣稱再次栓塞必定無效。**外科端的限制**則在進入胸腔後才具體顯現：沾黏、實變及肺葉界線不清，使原擬左下葉解剖性切除難以安全完成；若改全肺切除，作者明言擔心其死亡風險，且希望保留左上葉功能。於是，真正改變策略的是**出血尚未受控與可安全執行的解剖手術範圍同時受限**，而不是某一項工具天生優於另一項。反事實地說，若栓塞已控制出血，緊急救援手術的必要性便不同；若殘存側枝在再次介入時可安全到達，團隊便須重新比較血管介入與手術的風險。這兩個「若」是檢驗決策的條件，不是原作者記載曾實際評估或施行的方案。\n\n手術後不再咳血，第 18 天拔除胸管、第 24 天出院；三個月後 CT 與通氣／灌流檢查仍有肺實質異常及缺損。**多項止血操作在同一台手術中完成，單一個案無法拆分效果，也不能因最終止血成功便認定保留肺動脈的切斷方式優於常規肺葉切除。** 這個困難救援案例最能教會我們的是「當既定解剖切除在當下不可安全完成，團隊如何面對剩餘選項及其代價」，而不是複製一項非常規處置作為標準治療。
 
 ## 06｜出血停止之後，什麼還沒有被回答？
 
@@ -107,14 +107,14 @@ D. 因手術後沒有再咳血，已證明切斷肺靜脈與支氣管優於標�
 
 ## 08｜來源與圖表定位（私人研究備註；公開前須移至獨立來源頁）
 
-**真實病例**：Ho HJ, Cheng CY, Wang BY. *Massive hemoptysis controlled with transection of a pulmonary vein and bronchus—a case report*. J Cardiothorac Surg. 2013;8:209. DOI 10.1186/1749-8090-8-209；全文 https://pmc.ncbi.nlm.nih.gov/articles/PMC3829103/ 。Case presentation 與 Discussion 已逐段對讀；Figure 1A–D caption、Figure 2 V/Q caption、Figure 3 follow-up caption 可讀；**原圖像素本輪尚未成功取得或目視驗證**。病例正文「brachial」與 Figure 1C「bronchial」用語差異保留，不暗改。原文標 CC BY 2.0；未據此直接將任何圖複製至公開站。
+**真實病例**：Ho HJ, Cheng CY, Wang BY. *Massive hemoptysis controlled with transection of a pulmonary vein and bronchus—a case report*. J Cardiothorac Surg. 2013;8:209. DOI 10.1186/1749-8090-8-209；全文 https://pmc.ncbi.nlm.nih.gov/articles/PMC3829103/ 。Case presentation 與 Discussion 已逐段對讀；Figure 1A–D caption、Figure 2 V/Q caption、Figure 3 follow-up caption 可讀；**Figure 2 的原始網頁圖像已於本輪目視，確認左右兩幅分別為 perfusion／ventilation deficits；Figure 1/3 的原像素及三幅完整標註仍待核，不把單張目視冒充全部通過**。病例正文「brachial」與 Figure 1C「bronchial」用語差異保留，不暗改。原文標 CC BY 2.0；未據此直接將任何圖複製至公開站。
 
 **影像判準**：ACR Appropriateness Criteria Hemoptysis, JACR 2020;17:S148–S159，DOI 10.1016/j.jacr.2020.01.043；官方情境與適當性表 https://acsearch.acr.org/docs/69449/Narrative 。已讀公開文字表的 massive/nonmassive 初始影像分類；**官方表格完整原始像素未目視**。不得將「usually appropriate」誤讀為所有病人必做或檢查順序硬規則。
 
-**介入程序**：Kettenbach et al. *CIRSE Standards of Practice on Bronchial Artery Embolisation*. Cardiovasc Intervent Radiol. 2022;45:721–732，DOI 10.1007/s00270-022-03127-w；開放全文 https://link.springer.com/article/10.1007/s00270-022-03127-w 。已讀 Table 1（CTA 與氣道例外）、Table 3（BAE 適應症）、Table 4（非目標供血風險）、Fig 1 caption（診療流程）、血管解剖與咳血分級正文；**圖像與完整表格原始版面仍需逐像素核對**。該文自稱專家 Standards of Practice，非系統性臨床指南；不可把文中舊資料的發生率當成病人個人風險。
+**介入程序**：Kettenbach et al. *CIRSE Standards of Practice on Bronchial Artery Embolisation*. Cardiovasc Intervent Radiol. 2022;45:721–732，DOI 10.1007/s00270-022-03127-w；開放全文 https://link.springer.com/article/10.1007/s00270-022-03127-w 。已讀 Table 1（CTA 與氣道例外）、Table 3（BAE 適應症）、Table 4（非目標供血風險）、Fig 1 caption（診療流程）、血管解剖與咳血分級正文；**Fig 1 及 Table 1/3/4 的完整原始版面與 footnotes 仍待獨立逐項核對**。該文自稱專家 Standards of Practice，非系統性臨床指南；不可把文中舊資料的發生率當成病人個人風險。
 
-**Pocket Medicine 第九版**：HEMOPTYSIS，使用者持有 PDF **p.89/463**，已透過 Library 逐頁取得文字（定義／病因／診斷／治療），包括 >100 mL/h、>500 mL/24h 的歷史 massive 數字、asphyxiation 的重點、出血側朝下與血管介入。**頁面影像回傳 Image unavailable，原始像素、欄位與註腳視覺核對未完成；不能稱原圖 gate 通過**。公開版僅能合法定位，不上傳教科書 PDF。
+**Pocket Medicine 第九版**：HEMOPTYSIS，使用者持有 PDF **p.89/464**，已透過 Library 逐頁取得文字（定義／病因／診斷／治療），包括 >100 mL/h、>500 mL/24h 的歷史 massive 數字、asphyxiation 的重點、出血側朝下與血管介入。**2026-10-29 分離 QA 已在受控工作區目視 p89/464 的 HEMOPTYSIS 原頁及相鄰表格；本次 writer 未重新取得該受限原圖，其他文獻的 Figure Gate 與公開重製權利仍未完成，不能宣稱整體圖表驗收通過**。公開版僅能合法定位，不上傳教科書 PDF。
 
 **圖的認知角色（待製作）**：最有價值的原創圖應把「相同估計血量，因有效肺容量與清除能力不同，氣道優先序改變」畫成兩個固定出血量、只變一個臨床條件的比較；另以 ACR 與 CIRSE 原圖對讀「穩定可轉送→CT/CTA」對「氣道已失守→床邊保護／支氣管鏡」的條件分叉。原圖核對前不畫成普遍必經流程。
 
-**出版狀態**：私人可閱讀完整 V1，未加入 site/pages.json；本次作者不自簽獨立醫學／教學審查。需凍結 blob，交不同執行脈絡對病例數字／來源身分／Q1–Q3 與醫學 P0/P1 盲審；Pocket p89、CIRSE Fig1／Table1/3/4、ACR 原表及病例 Figure1/2 原像素、授權、官方國考題、手機版與 exact-head CI 均須另核。未滿足前 **Draft/HOLD，不發布**。
+**出版狀態**：GitHub 公開儲存庫中的可閱讀 Draft V3（不是私人保密空間），未加入 site/pages.json；本次作者不自簽獨立醫學／教學審查。需凍結本次 V3 blob，交不同執行脈絡對病例數字／來源身分／Q1–Q3 與醫學 P0/P1 全量審查；Pocket p89 原頁已由前次分離 QA 目視，但 CIRSE Fig1／Table1/3/4、ACR 原表及病例 Figure1/3 原像素、授權、官方國考題、手機版與本次 exact-head CI 仍須另核。未滿足前 **Draft/HOLD，不發布**。
