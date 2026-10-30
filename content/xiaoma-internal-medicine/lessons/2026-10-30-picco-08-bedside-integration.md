@@ -44,6 +44,16 @@ Sugimura 等人 2011 年報告一名 **72 歲女性**，因肺炎進展為重度
 
 這個病例有比單次量測更多的**時間序列**，因此可以討論肺水變化與氧合改善的關係。但它同時接受多項治療，也沒有對照組，且原始病例報告較早，不能從這段改善就推出 sivelestat、特定輸液策略或 PiCCO 監測本身的因果效果。案例的價值在於展示**應如何並列流量、肺水、氣體交換與治療時序**；不能將一例改善誤當成已驗證的通用處方。
 
+## 重返 2011 年 ARDS 真實病例：PiCCO 數值和治療時序如何互相限制？
+
+這篇日本病例現已取得**原始全文與 Figure 1–3**，因此不必只依摘要推論，也不需要自行創造血液檢驗、設備數值或逐時醫囑。原作者在轉入 ICU 初期報告：**CI 2.69 L/min/m²、GEDI 650 mL/m²、PVPI 4.9、EVLWI 26 mL/kg、P/F ratio 73**，同時有雙側肺浸潤。這五項數字回答不同的問題：CI 是血流量的近似、GEDI 是全心充盈的模型指標、PVPI 提供肺血管通透性機轉的證據、EVLWI 顯示顯著肺水負擔，P/F 則描述氧合障礙。**GEDI 相對偏低與 EVLWI 明顯升高可以同時存在**；不能因 GEDI 低就忽略肺水，也不能因肺水高就假設血管內完全不需要灌流支持。[6]
+
+原文的 **Figure 3（day 1–6）**把幾條曲線畫在同一時間軸：GEDI 大致維持在約 650–700 mL/m² 的範圍；EVLWI 自入院顯著升高的狀態持續下降；PVPI 在初期下降；P/F ratio 隨後改善，而 day 2–5 記錄到負的每日液體平衡。到 day 6，原文記錄 P/F 超過 300 並脫離呼吸器。**這些是原研究的一名病人實際記錄的時序**；圖上未標註的細點不應用像素內插冒充精確化驗數值，亦不能把趨勢相關視為干預的單獨因果效果。[6]
+
+這幅圖真正值得用來做決策訓練的是：當負液體平衡與 EVLWI 下降並行，GEDI 並沒有沿著「總水量下降＝所有心腔容量也等比例下降」的直覺路徑變動；臨床團隊因此仍需同時注意血流與肺水。可是，同一段時間病人接受了抗生素、呼吸器治療、sivelestat、白蛋白與輸血等多項干預，且肺炎本身可能逐漸改善；**從這例不能認定 PiCCO、某種輸液成分、sivelestat 或單一負平衡策略造成改善**。尤其這是 2011 年發表的病例，當年的 ARDS 診斷與通氣處置背景不能不加檢驗地移植到今日指南。[6]
+
+原文圖像可以從期刊直接閱讀：[Sugimura 2011 原文 PDF，Fig. 1–3](https://www.jstage.jst.go.jp/article/jsicm/18/3/18_3_381/_pdf/-char/en)。此處僅引用自己重新組織的數值與判讀，不將出版社的原圖直接複製到網站。讀者可自行核對 day 1、3、6 的胸片及圖 3 中肺水、氧合與液體平衡的時序。
+
 ## 醫師與護理師如何接起同一個決策？
 
 以已發表的復張性肺水腫病例為例：PiCCO 被用來補充傳統循環監測，使團隊嘗試在「不能使肺水腫惡化」與「仍要維持灌流」之間取得資訊。現有公開摘要並未完整報告各次熱稀釋的注射品質或每次用藥／輸液與 CI、EVLWI 的時序，因此不能回頭替該例補出實際交班紀錄。以下描述的是 **ICU 團隊應如何使用這類監測結果**，不是原病例的逐字重演。
@@ -138,5 +148,5 @@ Sugimura 等人 2011 年報告一名 **72 歲女性**，因肺炎進展為重度
 3. Monnet X, et al. *Prediction of fluid responsiveness: an update.* https://pmc.ncbi.nlm.nih.gov/articles/PMC5114218/
 4. Chaves RCF, et al. *Assessment of fluid responsiveness.* Crit Care. 2024. https://doi.org/10.1186/s13054-024-05078-9
 5. ANDROMEDA-SHOCK-2 Investigators. *JAMA.* 2025. https://doi.org/10.1001/jama.2025.20402
-6. Sugimura T, et al. *A case of ARDS treated by fluid management used PiCCO system.* J Jpn Soc Intensive Care Med. 2011;18:381–385. https://doi.org/10.3918/jsicm.18.381 （本篇以期刊公開摘要交代時序，未取得逐日完整量測表）
+6. Sugimura T, et al. *A case of ARDS treated by fluid management used PiCCO system.* J Jpn Soc Intensive Care Med. 2011;18:381–385. https://doi.org/10.3918/jsicm.18.381 （已核對期刊公開全文與 Figure 1–3；引用的 day 1 指標及逐日趨勢來自原文；不推造缺失的精確序列數值）
 7. Saugel B, et al. *How to measure blood pressure using an arterial catheter: a systematic 5-step approach.* Crit Care. 2020. https://doi.org/10.1186/s13054-020-02859-w （動脈壓波形品質及管路系統的量測前提）
