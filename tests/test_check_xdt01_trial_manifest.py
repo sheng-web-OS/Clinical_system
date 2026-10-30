@@ -51,5 +51,29 @@ class TestXDT01Manifest(unittest.TestCase):
         self.assertEqual(check(manifest()), [])
 
 
+    def test_hidden_case_bundle_at_top_level_fails_closed(self):
+        x = manifest()
+        x["private_cases"] = [{"text": "unseen hidden source from examiner"}]
+        self.assertTrue(check(x))
+
+    def test_unknown_trial_payload_field_fails_closed(self):
+        x = manifest()
+        x["trials"][0]["unseen_task_text"] = "secret case payload"
+        self.assertTrue(check(x))
+
+    def test_unbounded_task_id_fails_closed(self):
+        x = manifest()
+        for t in x["trials"][:3]:
+            t["task_id"] = "a" * 4096
+        self.assertTrue(check(x))
+
+    def test_unbounded_model_id_fails_closed(self):
+        x = manifest()
+        for t in x["trials"][:3]:
+            t["model"] = "unknown model " * 900
+        self.assertTrue(check(x))
+
+
+
 if __name__ == "__main__":
     unittest.main()
