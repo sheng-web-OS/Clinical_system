@@ -50,7 +50,7 @@ EVLWI 可以追蹤肺水，但不直接測量血管內容量、腎臟靜脈鬱�
 這篇最重要的結論不是背下「EVLWI 大於多少、PVPI 大於多少」，而是辨認三個不同命題：**水是否變多？可能是哪一條機轉？現在改變水分平衡會讓循環與肺功能付出什麼代價？** 每個命題都需要不同證據。
 
 ### 延伸來源
-1. Messina A, et al. *Transpulmonary thermodilution.* Curr Opin Crit Care. 2023. https://doi.org/10.1097/MCC.0000000000001047
+1. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
 2. Getinge. *Advanced Monitoring Parameters*（設備參數來源，非處置指引）. https://www.getinge.com/no/insights/articles/intensive-care/advanced-monitoring-parameters/
 3. Kushimoto S, et al. *The clinical usefulness of extravascular lung water and pulmonary vascular permeability index.* Crit Care. 2012;16:R232. https://doi.org/10.1186/cc11898
 4. Monnet X, et al. *Assessing pulmonary permeability by transpulmonary thermodilution allows differentiation of hydrostatic pulmonary edema from ALI/ARDS.* Intensive Care Med. 2007. https://pubmed.ncbi.nlm.nih.gov/17221189/
