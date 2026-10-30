@@ -48,4 +48,4 @@ Echo 比較適合回答解剖／運動機轉：右心室是否擴大、是否有
 1. Monnet X, et al. *ESICM guidelines on circulatory shock and hemodynamic monitoring 2025.* https://doi.org/10.1007/s00134-025-08137-z
 2. ANDROMEDA-SHOCK-2 Investigators. *Personalized hemodynamic resuscitation targeting capillary refill time in early septic shock.* JAMA. 2025. https://doi.org/10.1001/jama.2025.20402
 3. SCCM. *Surviving Sepsis Campaign 2026.* https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
-4. Messina A, et al. *Transpulmonary thermodilution.* https://doi.org/10.1097/MCC.0000000000001047
+4. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
