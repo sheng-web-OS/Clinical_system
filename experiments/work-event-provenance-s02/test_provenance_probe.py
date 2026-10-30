@@ -160,6 +160,28 @@ class EventProvenanceTests(unittest.TestCase):
             "GITHUB_EVENT_ONLY", "PLATFORM_RUN_NOT_OBSERVED"
         )
 
+    def test_source_conflicts_detected_without_platform_run(self):
+        mismatches = (
+            ("repository", "other-owner/other-repo"),
+            ("pr_number", 238),
+            ("head_sha", "a" * 40),
+            ("event_action", "closed"),
+        )
+        for target in ("processing_receipt", "platform_event_binding"):
+            for field, value in mismatches:
+                with self.subTest(target=target, field=field):
+                    def mutate(e):
+                        e["platform_run"] = {}
+                        e[target] = {field: value}
+                    self.verify(mutate, "CONFLICT", target.upper() + "_" + field.upper() + "_MISMATCH")
+
+    def test_source_delivery_conflict_without_run(self):
+        def mutate(e):
+            e["platform_run"] = {}
+            e["github"]["event_id"] = EVENT_A
+            e["platform_event_binding"] = {"event_id": EVENT_B}
+        self.verify(mutate, "CONFLICT", "PLATFORM_EVENT_BINDING_DELIVERY_ID_MISMATCH")
+
     def test_572_malformed_field_mutations_never_raise(self):
         values = (None, False, True, 0, 1, 1.0, "", [], {}, ["a"], {"x": 1}, "NOT_EXPOSED", "abc")
         fields = ("recorded_status", "id", "task_id", "chat_ref", "latest_result",
