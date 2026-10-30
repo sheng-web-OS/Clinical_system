@@ -397,8 +397,19 @@ def qa_wake(db: FakeGitHub, who: Identity, now: int) -> Result:
         verdict = db.qa_probes[task.id]
         next_stage = 'VERIFIED_COMPLETE' if verdict else 'CHANGES_REQUESTED'
         before = task.checkpoint_version
-        db.checkpoint(task, version=before, next_stage=next_stage,
-                      head=task.committed_head, qa=who)
+        try:
+            db.checkpoint(task, version=before, next_stage=next_stage,
+                          head=task.committed_head, qa=who)
+        except LostAcknowledgement:
+            # A completed QA checkpoint can outlive a lost transport ACK.
+            # Re-read the exact persisted transition before reporting success;
+            # never retry the signing mutation or treat uncertainty as PASS.
+            if (task.checkpoint_version != before + 1
+                    or task.stage != next_stage
+                    or task.last_verified_head != task.committed_head
+                    or task.qa_context != who.context
+                    or task.qa_run != who.run):
+                return Result('HOLD', task.id, 'QA_CHECKPOINT_ACK_UNKNOWN')
         return Result('QA_ACCEPTED' if verdict else 'QA_REJECTED',task.id,next_stage)
     return first_block or Result('NO_ACTION',reason='NO_FROZEN_ARTIFACT_AWAITING_QA')
 
