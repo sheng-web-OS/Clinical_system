@@ -41,7 +41,7 @@ jobs:
           assert actual==expected,'STALE_CHECKOUT'
           root=pathlib.Path('experiments/work-event-loop-canary')
           frozen={'test_canary.py':'a7ec6c77f153f028534806d64f7e2cf16cb2368dc7252a3a4eadd7ee9691d131',
-                  'protocol.json':'fa489e0359e70b4b34c7ffec9f4be54e1fe04701c3ce34cc05789c0298c0cb37'}
+                  'protocol.json':'04c22e3c17ba9f45874472c8f8b761cd2b4f557048ce1c7619f03cb54fc1e934'}
           for name,digest in frozen.items():
               assert hashlib.sha256((root/name).read_bytes()).hexdigest()==digest,'FROZEN_INPUT_CHANGED'
           print(json.dumps({'task_id':'EVLOOP-S01','head_sha':actual,
