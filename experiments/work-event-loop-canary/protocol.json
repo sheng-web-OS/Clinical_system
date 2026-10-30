@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "task_id": "EVLOOP-S01",
+  "attribution": "OWNER_DIRECTED_PARALLEL",
+  "purpose": "One synthetic engineering repair through real event wake-up, durable GitHub handoff and separate-context acceptance.",
+  "activation": "PREPARATION_ONLY_NOT_ARMED",
+  "repo": "sheng-web-OS/Clinical_system",
+  "base_branch": "experiment/work-event-loop-base-20261030",
+  "head_branch": "experiment/work-event-loop-seed-20261030",
+  "base_commit": "aa2bf44697d8132313fc130e05d22f43453b68a7",
+  "worker_edit_allowlist": [
+    "experiments/work-event-loop-canary/canary.py"
+  ],
+  "setup_only_path": "experiments/work-event-loop-canary/wake.json",
+  "frozen_paths": [
+    "experiments/work-event-loop-canary/test_canary.py",
+    "experiments/work-event-loop-canary/protocol.json",
+    ".github/workflows/work-event-loop-canary.yml"
+  ],
+  "test_command": "python3 -m unittest discover -s experiments/work-event-loop-canary -p test_canary.py -v",
+  "work_identity_fields": [
+    "repository",
+    "pr_number",
+    "head_sha",
+    "next_gate",
+    "evidence_revision"
+  ],
+  "writer_task_id": null,
+  "reviewer_candidate_task_id": "6ad8529f4b1c8191863f913cfdde9c26",
+  "reviewer_binding": "PREPARED_NOT_INSTALLED",
+  "canonical_state": "Original trial PR checkpoint and evidence comments; no second task ledger.",
+  "allowed_repair_commits": 1,
+  "event_gate": "Actual supported PR event and platform run record; run_now/manual interactive repair does not satisfy.",
+  "cas_gate": "Fixed exclusive writer and non-forced expected-HEAD ref update; shared multi-task lease integration is not claimed.",
+  "acceptance": [
+    "Real event wake-up verified before code mutation",
+    "Only allowlisted code file changes after ARM head",
+    "Frozen tests pass on repaired exact HEAD in the dedicated canary workflow",
+    "Different authenticated execution context independently inspects code and tests",
+    "Reviewer leaves exact-HEAD acceptance in original PR; no merge or deployment"
+  ],
+  "failure_terminal": "FAIL or INCONCLUSIVE with exact missing gate; review rejection is not successful repair closure.",
+  "not_measured": [
+    "clinical reasoning",
+    "medical quality",
+    "unseen-case transfer",
+    "general dispatcher safety",
+    "owner minutes",
+    "actual cost"
+  ],
+  "protected_targets": [
+    "issue:137",
+    "pr:159",
+    "pr:224",
+    "pr:225",
+    "pr:234",
+    "pr:235"
+  ],
+  "prohibitions": [
+    "No main updates",
+    "No retarget to main",
+    "No medical/site/source/archive edits",
+    "No existing workflow edits",
+    "No secrets, Drive or paid model calls",
+    "No auto-merge or publication",
+    "No original schedule changes or task disabling",
+    "No original 72h-study credit"
+  ],
+  "stop_rules": [
+    "Missing platform event or execution identity: HOLD without repair",
+    "Owner, HEAD, immutable inputs or branch scope changed: HOLD",
+    "CAS conflict: stop, do not force or retry blindly",
+    "At most one repair commit; failed acceptance remains FAIL/CHANGES_REQUESTED, no uncontrolled repair loop"
+  ],
+  "review_identity_limit": "Separate platform task/run contexts, not human peer review or proof of independent model errors."
+}

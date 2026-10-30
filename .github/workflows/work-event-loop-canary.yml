@@ -1,0 +1,54 @@
+name: Work event-loop canary (synthetic only)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [experiment/work-event-loop-base-20261030]
+    paths:
+      - experiments/work-event-loop-canary/**
+      - .github/workflows/work-event-loop-canary.yml
+permissions:
+  contents: read
+concurrency:
+  group: work-event-loop-canary-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  canary-tests:
+    if: >-
+      github.repository == 'sheng-web-OS/Clinical_system' &&
+      github.event.pull_request.head.repo.full_name == 'sheng-web-OS/Clinical_system' &&
+      github.event.pull_request.head.ref == 'experiment/work-event-loop-seed-20261030' &&
+      github.event.pull_request.base.ref == 'experiment/work-event-loop-base-20261030'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - name: Checkout exact canary HEAD
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # verified v4 commit
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Verify exact revision and frozen contract
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EVENT_ACTION: ${{ github.event.action }}
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,os,pathlib,re,subprocess
+          expected=os.environ['EXPECTED_HEAD']
+          assert re.fullmatch(r'[0-9a-f]{40}',expected)
+          actual=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          assert actual==expected,'STALE_CHECKOUT'
+          root=pathlib.Path('experiments/work-event-loop-canary')
+          frozen={'test_canary.py':'a7ec6c77f153f028534806d64f7e2cf16cb2368dc7252a3a4eadd7ee9691d131',
+                  'protocol.json':'fa489e0359e70b4b34c7ffec9f4be54e1fe04701c3ce34cc05789c0298c0cb37'}
+          for name,digest in frozen.items():
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest()==digest,'FROZEN_INPUT_CHANGED'
+          print(json.dumps({'task_id':'EVLOOP-S01','head_sha':actual,
+                            'pr_number':int(os.environ['PR_NUMBER']),
+                            'run_id':os.environ['GITHUB_RUN_ID'],
+                            'action':os.environ['EVENT_ACTION'],
+                            'evidence':'ENGINEERING_ONLY_NO_WORK_WAKE_PROOF'}))
+          PY
+      - name: Run only the public synthetic canary contract
+        run: python3 -m unittest discover -s experiments/work-event-loop-canary -p test_canary.py -v
