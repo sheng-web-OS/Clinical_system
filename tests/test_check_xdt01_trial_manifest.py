@@ -75,5 +75,22 @@ class TestXDT01Manifest(unittest.TestCase):
 
 
 
+    def test_non_scalar_phase_fails_without_exception(self):
+        x = manifest()
+        x["phase"] = {"private_text": "hidden"}
+        self.assertTrue(check(x))
+
+    def test_non_scalar_arm_fails_without_exception(self):
+        x = manifest()
+        x["trials"][0]["arm"] = {"hidden": "case"}
+        self.assertTrue(check(x))
+
+    def test_non_scalar_domain_fails_without_exception(self):
+        x = manifest()
+        x["trials"][0]["domain"] = ["hidden"]
+        self.assertTrue(check(x))
+
+
+
 if __name__ == "__main__":
     unittest.main()
