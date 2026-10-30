@@ -43,5 +43,5 @@ PiCCO 的 GEF 與 CFI 是全心流量—容積關係的衍生估計，不能獨�
 ### 延伸來源
 1. Monnet X, et al. *Using the ventilator to predict fluid responsiveness.* Intensive Care Med. 2024. https://doi.org/10.1007/s00134-024-07708-w
 2. *Fluid responsiveness in ARDS: current evidence, knowledge gaps, and future directions.* 2026. https://pubmed.ncbi.nlm.nih.gov/42143226/
-3. Messina A, et al. *Transpulmonary thermodilution.* Curr Opin Crit Care. 2023. https://doi.org/10.1097/MCC.0000000000001047
+3. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
 4. ESICM. *Guidelines on circulatory shock and hemodynamic monitoring 2025.* https://doi.org/10.1007/s00134-025-08137-z
