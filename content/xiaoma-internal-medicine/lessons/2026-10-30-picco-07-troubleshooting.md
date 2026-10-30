@@ -70,7 +70,7 @@ Getinge 的 PiCCO 故障排除資料將波形問題、熱稀釋溫度訊號、�
 **PiCCO 最危險的錯誤不是顯示一個異常值，而是異常值失去來源與適用條件後，仍被當成確定的醫囑理由。**
 
 ### 延伸來源
-1. Messina A, et al. *Transpulmonary thermodilution.* Curr Opin Crit Care. 2023. https://doi.org/10.1097/MCC.0000000000001047
+1. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
 2. Getinge. *How to optimize PiCCO thermodilution measurements*（限特定裝置工作流程）. https://www.getinge.com/assets/content/PiCCO_TSG-US/How_to_optimize_PiCCO_thermodilution_measurements_part03.html
 3. Monnet X, et al. *Using the ventilator to predict fluid responsiveness.* Intensive Care Med. 2024. https://doi.org/10.1007/s00134-024-07708-w
 4. Monnet X, et al. *ESICM guidelines on circulatory shock 2025.* https://doi.org/10.1007/s00134-025-08137-z
