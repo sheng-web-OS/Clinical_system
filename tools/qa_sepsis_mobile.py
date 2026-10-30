@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Visual smoke gate for the Sepsis release reader; not a medical QA verdict.
 
-Serves locally built dist/ in private CI, captures three mobile widths, verifies
+Serves locally built dist/ in CI, captures three mobile widths, verifies
 no page-level horizontal overflow, six exam anchors, and causal-map presence.
-All screenshots remain in private GitHub Actions artifacts.
+Screenshots in GitHub Actions artifacts of this PUBLIC repository are not
+private; do not include restricted or patient-identifying material.
 """
 import argparse
 import functools
