@@ -35,8 +35,8 @@ class LiteratureValueOfInformationShadowTest(unittest.TestCase):
         r = voi.decide(fixture())
         self.assertEqual("SHADOW_SUGGEST_RESEARCH", r["decision"])
         self.assertEqual("5.0", r["evpi_upper_bound"])
-        self.assertEqual("5.00", r["hypothetical_evsi"])
-        self.assertEqual("4.00", r["hypothetical_net_information_value"])
+        self.assertEqual(5, float(r["hypothetical_evsi"]))
+        self.assertEqual(4, float(r["hypothetical_net_information_value"]))
         self.assertFalse(r["execution_authorized"])
         self.assertFalse(r["information_model_verified"])
         self.assertEqual(0, r["external_calls"])
@@ -47,7 +47,7 @@ class LiteratureValueOfInformationShadowTest(unittest.TestCase):
             signal["likelihood_by_state"] = {"state-a": 0.5, "state-b": 0.5}
         r = voi.decide(p)
         self.assertEqual("SHADOW_CONTINUE_DIRECT", r["decision"])
-        self.assertEqual("0.0000", r["hypothetical_evsi"])
+        self.assertEqual(0, float(r["hypothetical_evsi"]))
 
     def test_evpi_without_signal_does_not_recommend_search(self):
         p = fixture()
@@ -67,7 +67,7 @@ class LiteratureValueOfInformationShadowTest(unittest.TestCase):
         p["research_signals"][1]["likelihood_by_state"] = {"state-a": 0.4, "state-b": 0.6}
         r = voi.decide(p)
         self.assertEqual("SHADOW_SUGGEST_RESEARCH", r["decision"])
-        self.assertEqual("1.0000", r["hypothetical_evsi"])
+        self.assertEqual(1, float(r["hypothetical_evsi"]))
 
     def test_imperfect_signal_not_worth_large_cost(self):
         p = fixture(2)
