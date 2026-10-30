@@ -117,21 +117,25 @@ def assess(e):
     findings = []
     if not present(g.get("event_id")):
         findings.append("GITHUB_DELIVERY_ID_NOT_EXPOSED")
-    if not present(r.get("id")) or not present(r.get("task_id")):
-        return Assessment("GITHUB_EVENT_ONLY", tuple(findings + ["PLATFORM_RUN_NOT_OBSERVED"]),
-                          "Read authenticated platform run")
-
+    # Source-side contradictions remain contradictions even if Work has no run.
+    # A missing platform record must not mask a wrong PR/HEAD/repository claim.
     for name, data in (("PROCESSING_RECEIPT", receipt), ("PLATFORM_EVENT_BINDING", binding)):
         for field in ("repository", "pr_number", "head_sha", "event_action"):
             if present(data.get(field)) and data[field] != g[field]:
                 return Assessment("CONFLICT", (name + "_" + field.upper() + "_MISMATCH",),
                                   "Stop: conflicting repository/PR/ref evidence")
+        if present(data.get("event_id")) and present(g.get("event_id")) and data["event_id"] != g["event_id"]:
+            return Assessment("CONFLICT", (name + "_DELIVERY_ID_MISMATCH",), "Stop: delivery mismatch")
+
+    if not present(r.get("id")) or not present(r.get("task_id")):
+        return Assessment("GITHUB_EVENT_ONLY", tuple(findings + ["PLATFORM_RUN_NOT_OBSERVED"]),
+                          "Read authenticated platform run")
+
+    for name, data in (("PROCESSING_RECEIPT", receipt), ("PLATFORM_EVENT_BINDING", binding)):
         for field, ref in (("run_id", "id"), ("task_id", "task_id")):
             if present(data.get(field)) and data[field] != r[ref]:
                 return Assessment("CONFLICT", (name + "_" + field.upper() + "_MISMATCH",),
                                   "Stop: wrong task/run")
-        if present(data.get("event_id")) and present(g.get("event_id")) and data["event_id"] != g["event_id"]:
-            return Assessment("CONFLICT", (name + "_DELIVERY_ID_MISMATCH",), "Stop: delivery mismatch")
 
     result = r.get("latest_result")
     if result is not None and result["run_id"] != r["id"]:
