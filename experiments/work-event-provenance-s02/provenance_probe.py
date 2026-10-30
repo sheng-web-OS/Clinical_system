@@ -58,10 +58,13 @@ def validate_github(g):
 def validate_run(r):
     if not isinstance(r, dict):
         return "PLATFORM_RUN_NOT_OBJECT"
-    if not r or not present(r.get("id")) or not present(r.get("task_id")):
+    if not r:
         return None
-    if not provider_id(r["id"]) or not provider_id(r["task_id"]):
-        return "INVALID_PLATFORM_ID"
+    # Validate supplied fields even when the run identity is incomplete.
+    # Otherwise malformed metadata is silently classified as an absent run.
+    for key in ("id", "task_id"):
+        if present(r.get(key)) and not provider_id(r[key]):
+            return "INVALID_PLATFORM_ID"
     if "recorded_status" in r and (not isinstance(r["recorded_status"], str) or r["recorded_status"] not in STATUSES):
         return "INVALID_PLATFORM_RUN_STATUS"
     chat = r.get("chat_ref")
