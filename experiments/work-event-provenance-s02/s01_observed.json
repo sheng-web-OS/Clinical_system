@@ -1,0 +1,16 @@
+{
+  "github": {
+    "repository": "sheng-web-OS/Clinical_system",
+    "pr_number": 240,
+    "head_sha": "76bb875d23bcccc517c3894d305f728a6919d77b",
+    "event_action": "synchronize",
+    "event_id": null
+  },
+  "platform_run": {
+    "id": "a7264387-e8ac-8330-882c-3837b5b69807",
+    "task_id": "6ae414b458488191a9b14acf2bb3bfdb",
+    "recorded_status": "no_update",
+    "chat_ref": null,
+    "latest_result": null
+  }
+}
