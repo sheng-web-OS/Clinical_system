@@ -30,8 +30,18 @@ class RuntimeTest(unittest.TestCase):
 
     def claim(self, state=None, task="lab-medicine", run="writer-run-001", resources=None):
         state = self.state if state is None else state
+        resources = resources or self.resources
         return propose_claim(state, self.config, task, run,
-                             resources or self.resources, state["generation"], self.now)
+                             resources, state["generation"], self.now,
+                             binding=self.binding(task, resources), expected_head="a" * 40)
+
+    def binding(self, task="lab-medicine", resources=None):
+        resources = resources or self.resources
+        return {"task_id": task,
+                "target": next((t["target"] for t in self.config["tasks"] if t["id"] == task), "issue:180"),
+                "pr_number": int(next(r[3:] for r in resources if r.startswith("pr:"))),
+                "head_sha": "a" * 40,
+                "changed_paths": [r[5:] for r in resources if r.startswith("path:")]}
 
     def route(self, worker="qa-automation", run="qa-run-001", blobs=None):
         return route_checkpoint(self.checkpoint, self.config,
@@ -77,7 +87,8 @@ class RuntimeTest(unittest.TestCase):
         state = self.claim()["proposed_state"]
         with self.assertRaisesRegex(DispatchError, "EXPIRED_OWNER_REQUIRES_RECONCILIATION"):
             propose_claim(state, self.config, "lab-medicine", "writer-run-002",
-                          self.resources, 1, "2026-10-29T12:20:00Z")
+                          self.resources, 1, "2026-10-29T12:20:00Z",
+                          binding=self.binding(), expected_head="a" * 40)
         with self.assertRaisesRegex(DispatchError, "LEASE_EXPIRED_OR_CLOCK_UNVERIFIED"):
             check_lease(state, "lab-medicine", "writer-run-001", 1, "2026-10-29T12:20:00Z")
 
@@ -105,7 +116,8 @@ class RuntimeTest(unittest.TestCase):
                               resources, 0, self.now, ttl)
         with self.assertRaisesRegex(DispatchError, "INVALID_LEASE_TIME"):
             propose_claim(self.state, self.config, "lab-medicine", "writer-run-001",
-                          self.resources, 0, "2026-02-30T00:00:00Z")
+                          self.resources, 0, "2026-02-30T00:00:00Z",
+                          binding=self.binding(), expected_head="a" * 40)
 
     def test_forged_overlapping_table_rejected(self):
         state = self.claim()["proposed_state"]

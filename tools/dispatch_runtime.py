@@ -47,7 +47,7 @@ def task_for(config, task_id):
 
 
 def valid_path(value):
-    return (type(value) is str and 0 < len(value) <= 300
+    return (type(value) is str and 0 < len(value) <= 300 and value != "."
             and re.fullmatch(r"[A-Za-z0-9_./-]+", value) is not None
             and not value.startswith("/")
             and ".." not in value.split("/")
@@ -144,6 +144,41 @@ def valid_resource(value):
              (value.startswith("path:") and valid_path(value[5:]))))
 
 
+def resource_conflict(left, right):
+    """Conservatively lock path ancestors as well as identical resources."""
+    if left == right:
+        return True
+    if left.startswith("path:") and right.startswith("path:"):
+        a, b = left[5:], right[5:]
+        return a.startswith(b + "/") or b.startswith(a + "/")
+    return False
+
+
+def validate_claim_binding(binding, task, resources, expected_head):
+    """Validate a supplied scope; the caller must authenticate its live origin.
+
+    This does not fetch Issue/PR associations or confer execution permission.
+    All changed paths, including rename sources, must be covered by the claim.
+    """
+    require(type(binding) is dict and set(binding) == {
+        "task_id", "target", "pr_number", "head_sha", "changed_paths"},
+        "CLAIM_BINDING_REQUIRED")
+    require(binding["task_id"] == task["id"] and binding["target"] == task["target"]
+            and type(binding["pr_number"]) is int and binding["pr_number"] > 0,
+            "CLAIM_TASK_PR_MISMATCH")
+    require(type(expected_head) is str and SHA.fullmatch(expected_head)
+            and binding["head_sha"] == expected_head,
+            "CLAIM_HEAD_STALE_OR_UNVERIFIED")
+    paths = binding["changed_paths"]
+    require(type(paths) is list and 0 < len(paths) <= 40
+            and all(valid_path(p) for p in paths) and paths == sorted(set(paths)),
+            "CLAIM_CHANGED_PATHS_UNVERIFIED")
+    require([r for r in resources if r.startswith("pr:")] ==
+            ["pr:" + str(binding["pr_number"])], "CLAIM_TASK_PR_MISMATCH")
+    require([r[5:] for r in resources if r.startswith("path:")] == paths,
+            "CLAIM_CHANGED_PATHS_MISMATCH")
+
+
 def validate_leases(state):
     require(type(state) is dict and set(state) == {
         "schema_version", "generation", "leases"}
@@ -164,7 +199,8 @@ def validate_leases(state):
                 and type(lease["fence"]) is int
                 and 1 <= lease["fence"] <= state["generation"],
                 "INVALID_LEASE_VALUES")
-        require(not resources_seen.intersection(resources),
+        require(not any(resource_conflict(a, b)
+                        for a in resources_seen for b in resources),
                 "OVERLAPPING_LEASE_RESOURCES")
         resources_seen.update(resources)
         lifetime = (utc(lease["expires_at"]) - utc(lease["issued_at"])).total_seconds()
@@ -173,10 +209,11 @@ def validate_leases(state):
 
 
 def propose_claim(state, config, task_id, execution_id, resources,
-                  expected_generation, now, ttl_seconds=1200):
+                  expected_generation, now, ttl_seconds=1200, *,
+                  binding=None, expected_head=None):
     """Return a CAS proposal. Even active manifests cannot perform writes here."""
     validate_leases(state)
-    task_for(config, task_id)
+    task = task_for(config, task_id)
     require(type(expected_generation) is int
             and expected_generation == state["generation"], "STALE_LEASE_GENERATION")
     require(identity(execution_id) and type(ttl_seconds) is int
@@ -186,9 +223,11 @@ def propose_claim(state, config, task_id, execution_id, resources,
     require(any(r.startswith("pr:") for r in resources), "PR_RESOURCE_REQUIRED")
     require(not set(resources).intersection(config["frozen_eval"]["excluded_targets"]),
             "PROTECTED_EXPERIMENT_SCOPE")
+    validate_claim_binding(binding, task, resources, expected_head)
     clock = utc(now)
     for held_task, lease in state["leases"].items():
-        if held_task == task_id or set(resources).intersection(lease["resources"]):
+        if held_task == task_id or any(resource_conflict(a, b)
+                                     for a in resources for b in lease["resources"]):
             require(clock >= utc(lease["issued_at"]), "LEASE_CLOCK_UNVERIFIED")
             reason = ("EXPIRED_OWNER_REQUIRES_RECONCILIATION"
                       if clock >= utc(lease["expires_at"]) else "ACTIVE_OWNER")

@@ -37,7 +37,8 @@ def checkpoint_from_comments(comments, config, task_id, pr_number, owner):
     require(all(type(c.get("id")) is int for c in marked), "INVALID_COMMENT_ID")
     latest = max(marked, key=lambda c: c["id"])
     body = latest["body"]
-    require(body.count(START) == 1 and body.count(END) == 1,
+    require(body.count(START) == 1 and body.count(END) == 1
+            and body.index(START) < body.index(END),
             "AMBIGUOUS_CHECKPOINT_MARKER")
     encoded = body.split(START, 1)[1].split(END, 1)[0].strip()
     require(len(encoded) <= 20000, "CHECKPOINT_TOO_LARGE")

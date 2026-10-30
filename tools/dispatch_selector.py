@@ -31,7 +31,8 @@ def load_manifest(path):
     require(type(config["schema_version"]) is int and
             config["schema_version"] == 1 and config["repo"] == REPO,
             "INVALID_REPOSITORY_OR_VERSION")
-    require(config["mode"] in {"shadow", "active"} and
+    require(type(config["mode"]) is str and
+            config["mode"] in {"shadow", "active"} and
             type(config["max_tasks_per_run"]) is int and
             config["max_tasks_per_run"] == 1,
             "UNAPPROVED_MODE_OR_TASK_BATCH")
@@ -89,6 +90,7 @@ def select_tasks(config, snapshot):
                 type(item["number"]) is int and
                 item["number"] == int(target.split(":")[1]) and
                 type(item["is_pr"]) is bool and
+                type(item["state"]) is str and
                 item["state"] in {"open", "closed"},
                 "SOURCE_METADATA_MISSING_OR_INVALID")
         if item["is_pr"]:
@@ -137,7 +139,8 @@ def fetch_open_issue_snapshot(config):
             raise DispatchError("GITHUB_READ_FAILED") from None
         require(type(item) is dict and
                 item.get("number") == number
-                and item.get("state") in {"open", "closed"},
+                and type(item.get("state")) is str and
+                item.get("state") in {"open", "closed"},
                 "GITHUB_METADATA_UNVERIFIED")
         result[target] = {"number": number, "state": item["state"],
                           "is_pr": "pull_request" in item}
