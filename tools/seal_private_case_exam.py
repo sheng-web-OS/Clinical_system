@@ -111,9 +111,19 @@ def validate(cases, gold, suite_id):
     check({r["role"] for r in records} == ROLES,
           "TRANSFER_NORMAL_BOUNDARY_CONTROLS_REQUIRED")
     keymap = {}
+    old_fields = {"id", "expected_decision", "clinical_rationale"}
+    skill_fields = {"expected_skill_action", "skill_action_rationale"}
+    labelled = []
     for a in answers:
-        check(isinstance(a, dict) and set(a) == {"id", "expected_decision", "clinical_rationale"},
+        check(isinstance(a, dict) and set(a) in (old_fields, old_fields | skill_fields),
               "KEY_SCHEMA_INVALID")
+        is_labelled = set(a) == old_fields | skill_fields
+        labelled.append(is_labelled)
+        if is_labelled:
+            check(a["expected_skill_action"] in {"USE", "SKIP", "HOLD"}
+                  and isinstance(a["skill_action_rationale"], str)
+                  and a["skill_action_rationale"].strip(),
+                  "SKILL_ACTION_GOLD_INVALID")
         ident = a["id"]
         check(isinstance(ident, str) and ident not in keymap, "DUPLICATE_KEY")
         check(isinstance(a["expected_decision"], str) and a["expected_decision"].strip()
@@ -121,6 +131,11 @@ def validate(cases, gold, suite_id):
               "KEY_CONTENT_MISSING")
         keymap[ident] = a
     check(set(keymap) == set(by_id), "ANSWER_KEY_COVERAGE_MISMATCH")
+    check(all(labelled) or not any(labelled), "PARTIAL_SKILL_ACTION_GOLD_FORBIDDEN")
+    if all(labelled):
+        check({"USE", "SKIP", "HOLD"}.issubset(
+              {a["expected_skill_action"] for a in answers}),
+              "SKILL_ACTION_CONTROLS_REQUIRED")
     return records, keymap
 
 
@@ -185,6 +200,8 @@ def seal(cases_file, gold_file, stage1_root, key_root, *,
             "provider_model_calls": 0,
             "worker_context_isolation": "NOT_VERIFIED",
             "clinical_gold_validated": False,
+            "skill_selection_gold_predeclared": all(
+                "expected_skill_action" in a for a in keymap.values()),
             "independent_reviewer_authenticated": False,
             "clinical_transfer_validated": False,
         }
