@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Private prepublication mobile QA of the actual Clinical_system reader renderer.
+"""Prepublication mobile QA of the actual Clinical_system reader renderer.
 
 This script deliberately does NOT add a page to site/pages.json and does NOT
 claim editorial/medical approval. It renders the unapproved Markdown through
 site/build.py:Renderer and render_reader, using the actual site stylesheet,
-then saves screenshots in a private GitHub Actions artifact.
+then saves screenshots in a GitHub Actions artifact. This repository is PUBLIC;
+artifacts are not confidential reviewer storage. Never include restricted
+source material, patient information, or unapproved rights-controlled images.
 """
 import argparse
 import json
