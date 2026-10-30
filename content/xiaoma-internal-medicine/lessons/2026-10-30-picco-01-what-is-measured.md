@@ -51,6 +51,6 @@ GEF（global ejection fraction）與 CFI（cardiac function index）會受到右
 
 ### 延伸來源
 1. Monnet X, et al. *ESICM guidelines on circulatory shock and hemodynamic monitoring 2025.* Intensive Care Med. 2025. https://doi.org/10.1007/s00134-025-08137-z
-2. Messina A, Alicino V, Cecconi M. *Transpulmonary thermodilution.* Curr Opin Crit Care. 2023. https://doi.org/10.1097/MCC.0000000000001047
+2. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
 3. Getinge. *Advanced Monitoring Parameters*（設備技術說明及參數類別，非個別患者的治療指南）. https://www.getinge.com/no/insights/articles/intensive-care/advanced-monitoring-parameters/
 4. Prescott H, et al. *Surviving Sepsis Campaign 2026.* https://doi.org/10.1007/s00134-026-08361-1
