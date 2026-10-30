@@ -82,7 +82,8 @@ def decision(manifest, receipt=None, today=None):
     if manifest["risk_tier"] != "low" or not manifest["reversible"]:
         return result("HOLD_RISK", "not_low_risk_reversible")
     if receipt is None:
-        return result("READY_FOR_ISOLATED_EVALUATION", "independent_receipt_missing")
+        return result("PAUSE_SHADOW" if manifest.get("current_state") == "SHADOW_ADOPTED"
+                      else "READY_FOR_ISOLATED_EVALUATION", "independent_receipt_missing")
     if not isinstance(receipt, dict):
         return result("HOLD_INVALID", "receipt_not_object")
     for key in ("candidate_id", "artifact_sha256", "prereg_sha256", "review_sha256",
@@ -101,7 +102,8 @@ def decision(manifest, receipt=None, today=None):
         or receipt["evaluator_id"] == receipt["reviewer_id"]):
         return result("HOLD_EVIDENCE", "reviewer_not_distinct")
     if receipt["security_review"] != "PASS" or receipt["rights_review"] != "PASS":
-        return result("QUARANTINE", "review_gate_failed_or_pending")
+        return result("PAUSE_SHADOW" if manifest.get("current_state") == "SHADOW_ADOPTED"
+                      else "QUARANTINE", "review_gate_failed_or_pending")
     try:
         expiry = dt.date.fromisoformat(receipt["expires_on"])
         min_cases = receipt["minimum_cases"]
