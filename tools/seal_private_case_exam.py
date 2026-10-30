@@ -19,6 +19,27 @@ SUITE_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{3,80}\Z")
 ROLES = {"transfer", "normal", "boundary"}
 MAX_CASES = 12
 MAX_TASK_BYTES = 12000
+# Bound every public-repository exclusion to the checkout containing this code.
+# Caller-provided repo_root is only an *additional* test/worktree exclusion,
+# never the authority for deciding where private material may be written.
+TRUSTED_CODE_ROOT = Path(__file__).resolve().parents[1]
+
+
+def protected_repo_roots(repo_root):
+    return {TRUSTED_CODE_ROOT, Path(repo_root).resolve(strict=True)}
+
+
+def reject_public_source(source, repo_root):
+    path = Path(source).absolute()
+    # Resolve the *complete* path, not just the final filename: otherwise
+    # private/alias -> public_repo defeats lexical path containment.
+    resolved = path.resolve(strict=True)
+    for repo in protected_repo_roots(repo_root):
+        check(not resolved.is_relative_to(repo), "PUBLIC_REPO_INPUT_FORBIDDEN")
+    # Reject ancestor symlinks also when they point elsewhere: path checking
+    # alone cannot protect from alias races in a shared writable directory.
+    check(not any(node.is_symlink() for node in (path, *path.parents)),
+          "SYMLINK_ANCESTOR_FORBIDDEN")
 
 
 class SealError(ValueError):
@@ -52,16 +73,16 @@ def read_pinned_json(path, digest):
 
 def ensure_safe_output(path, repo_root):
     path = Path(path).absolute()
-    repo = Path(repo_root).resolve(strict=True)
-    check(path != repo and not path.is_relative_to(repo) and
-          not repo.is_relative_to(path), "PUBLIC_REPO_PATH_FORBIDDEN")
     check(not path.exists() and not path.is_symlink(), "OUTPUT_ALREADY_EXISTS")
     for item in (path.parent, *path.parent.parents):
         check(not item.is_symlink(), "SYMLINK_ANCESTOR_FORBIDDEN")
     check(path.parent.is_dir(), "PRIVATE_PARENT_REQUIRED")
-    check(not path.parent.resolve().is_relative_to(repo), "PUBLIC_REPO_PARENT_FORBIDDEN")
-    check((path.parent.stat().st_mode & 0o002) == 0,
-          "WORLD_WRITABLE_PARENT_FORBIDDEN")
+    canonical = path.parent.resolve(strict=True) / path.name
+    for repo in protected_repo_roots(repo_root):
+        check(canonical != repo and not canonical.is_relative_to(repo) and
+              not repo.is_relative_to(canonical), "PUBLIC_REPO_PATH_FORBIDDEN")
+    check((path.parent.stat().st_mode & 0o022) == 0,
+          "GROUP_OR_WORLD_WRITABLE_PARENT_FORBIDDEN")
     return path
 
 
@@ -109,9 +130,8 @@ def seal(cases_file, gold_file, stage1_root, key_root, *,
     These are NOT worker contexts. A trusted operator must hand individual
     packets to isolated runners and separately enforce their access controls.
     """
-    repo = Path(repo_root).resolve(strict=True)
     for source in (cases_file, gold_file):
-        check(not Path(source).absolute().is_relative_to(repo), "PUBLIC_REPO_INPUT_FORBIDDEN")
+        reject_public_source(source, repo_root)
     cases = read_pinned_json(cases_file, expected_cases_sha256)
     gold = read_pinned_json(gold_file, expected_gold_sha256)
     records, keymap = validate(cases, gold, suite_id)
@@ -195,6 +215,10 @@ def main():
     ap.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[1])
     a = ap.parse_args()
     try:
+        # A misleading --repo-root must never disable the actual checkout
+        # boundary. Preserve the flag only for backwards-compatible failure.
+        check(a.repo_root.resolve(strict=True) == TRUSTED_CODE_ROOT,
+              "REPO_ROOT_OVERRIDE_FORBIDDEN")
         print(json.dumps(seal(a.cases_file, a.gold_file, a.stage1_root, a.key_root,
                               expected_cases_sha256=a.cases_sha256,
                               expected_gold_sha256=a.gold_sha256,
