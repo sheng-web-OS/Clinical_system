@@ -1,5 +1,8 @@
 {
   "task_id": "EVLOOP-S01",
-  "state": "UNARMED",
-  "nonce": null
+  "state": "ARMED",
+  "nonce": "EVLOOP-S01-20261030035541967",
+  "armed_at": "2026-10-30T03:55:41.967Z",
+  "predecessor_head": "e4ed2e875737354ebd148f97788a54b37e59793f",
+  "attribution": "OWNER_DIRECTED_PARALLEL"
 }
