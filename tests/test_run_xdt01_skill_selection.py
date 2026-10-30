@@ -164,8 +164,8 @@ class SelectionRunnerTests(unittest.TestCase):
             with patch.object(x, "verify_commit") as check:
                 self.assertEqual(x.main(args), 0)
             check.assert_called_once()
-            state = json.loads((output / "status.json").read_text())
-            self.assertEqual(state["status"], "NOT_RUN")
+            state = json.loads((output / "preflight.json").read_text())
+            self.assertEqual(state["status"], "PREFLIGHT_ONLY_NO_MODEL_OUTCOME")
             self.assertFalse((output / "first_pass.json").exists())
 
     def test_unauthorized_execution_rejected_before_api(self):
