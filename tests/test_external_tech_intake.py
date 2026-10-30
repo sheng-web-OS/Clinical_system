@@ -46,6 +46,10 @@ class DecisionTests(unittest.TestCase):
     def test_provenance_only_not_automatically_adopted(self):
         self.assertEqual(gate.decision(self.m)["decision"], "READY_FOR_ISOLATED_EVALUATION")
 
+    def test_missing_receipt_pauses_existing_shadow(self):
+        self.m["current_state"] = "SHADOW_ADOPTED"
+        self.assertEqual(gate.decision(self.m)["decision"], "PAUSE_SHADOW")
+
     def test_shadow_adopt_is_advisory(self):
         self.assertEqual(self.d(), "ADOPT_SHADOW_CANDIDATE")
 
