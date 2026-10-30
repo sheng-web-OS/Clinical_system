@@ -101,6 +101,6 @@ A remains active/expired and un-reconciled, B independent and actionable,
 Fail if blocked A starves B, if the old owner is overwritten, if missing
 reviewer identity is accepted, or if checkpoint cannot be read back. Do not
 activate the dispatcher or merge/publish to get a green demonstration.
-## GitHub source transport
+## GitHub source status
 
-Source files and test traces are staged under this isolated experiment. Until every file is uploaded and SHA-verified, this Draft remains INCOMPLETE. No source in this directory is an active Dispatcher. The repo's existing global CI does not by itself attest to this isolated lab's 31 local tests.
+All four original Python code and test files have been uploaded individually and verified byte-for-byte against the original Git blobs. The isolated 31-test suite is also registered through `tests/test_closed_loop_lab_bridge.py`, so the existing `python -m unittest discover -s tests` GitHub CI can run it. Original local transcript JSON traces and the prior local result log are **not** committed, because they can be reproduced using the commands above; they are available in the user-provided research package. This remains a synthetic **Artifact / HOLD**, not an active Dispatcher or real cross-run proof.
