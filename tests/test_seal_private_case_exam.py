@@ -146,6 +146,47 @@ class SealTests(unittest.TestCase):
         with self.assertRaisesRegex(m.SealError, "SOURCE_CLASS_REQUIRED"):
             self.call()
 
+    def test_private_skill_selection_gold_stays_out_of_stage1(self):
+        for item, action in zip(self.gold["keys"], ("USE", "SKIP", "HOLD")):
+            item["expected_skill_action"] = action
+            item["skill_action_rationale"] = "Fictional private policy only"
+        self.save()
+        self.call()
+        private = json.loads((self.key / "facilitator_key.json").read_text())
+        self.assertTrue(private["skill_selection_gold_predeclared"])
+        with ZipFile(self.st / "stage1.zip") as archive:
+            tasks = b"".join(archive.read(n) for n in archive.namelist())
+            self.assertNotIn(b"Fictional private policy only", tasks)
+            self.assertNotIn(b"expected_skill_action", tasks)
+        self.assertNotIn("expected_skill_action", (self.st / "manifest.json").read_text())
+
+    def test_private_skill_selection_gold_must_cover_all(self):
+        self.gold["keys"][0]["expected_skill_action"] = "USE"
+        self.gold["keys"][0]["skill_action_rationale"] = "A fictional choice"
+        self.save()
+        with self.assertRaisesRegex(m.SealError, "PARTIAL_SKILL_ACTION_GOLD_FORBIDDEN"):
+            self.call()
+        self.assertFalse(self.st.exists())
+
+    def test_private_skill_selection_gold_requires_negative_controls(self):
+        for item in self.gold["keys"]:
+            item["expected_skill_action"] = "USE"
+            item["skill_action_rationale"] = "A fictional label"
+        self.save()
+        with self.assertRaisesRegex(m.SealError, "SKILL_ACTION_CONTROLS_REQUIRED"):
+            self.call()
+        self.assertFalse(self.st.exists())
+
+    def test_invalid_skill_label_is_refused(self):
+        for item, action in zip(self.gold["keys"], ("USE", "SKIP", "HOLD")):
+            item["expected_skill_action"] = action
+            item["skill_action_rationale"] = "A fictional label"
+        self.gold["keys"][1]["expected_skill_action"] = "ALWAYS_USE"
+        self.save()
+        with self.assertRaisesRegex(m.SealError, "SKILL_ACTION_GOLD_INVALID"):
+            self.call()
+        self.assertFalse(self.st.exists())
+
     def test_cli_rejects_misleading_repo_root_before_writing(self):
         # Reproduces the reported full-CLI public-checkout bypass safely.
         public_output = P.parent.parent / "__case_examiner_must_not_create__"
