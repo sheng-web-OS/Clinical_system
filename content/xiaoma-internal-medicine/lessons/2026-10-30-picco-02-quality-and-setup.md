@@ -10,6 +10,12 @@ PiCCO 能提供大量衍生參數，但這些參數的可信度共享一個起�
 
 術前或 ICU 評估應先問：**這名病人是否真的需要進階侵入性監測？** 與放置及保留動脈、中心靜脈導管相關的感染、出血、血栓與肢體缺血風險不可略過。若手邊 Echo、動脈壓、乳酸／CRT 趨勢及床邊測試已能回答問題，就沒有理由只為取得更多參數而增加侵入性處置。2026 SSC 對 septic shock 常規加用微侵入／非侵入 CO 監測未作正向推薦，正反映臨床結局證據仍有限。[1]
 
+## ICU 床邊的角色不是「誰操作／誰看數字」這麼簡單
+
+需要連續血流動力學判斷的病人，醫師與護理師必須共享一個判讀前提：**先知道資料是否有效，才能據此判斷病人是否改變。**護理師依專業能力、設備 IFU 與單位 SOP 執行設備連接、壓力訊號核對、符合資格的熱稀釋量測與日常管路照護；醫師負責說明監測目的、釐清數值分歧的可能機轉、選擇下一個診斷／復甦策略，並與護理師共同辨識何時應暫停使用失真的數值。真正遇到病人低血壓或灌流惡化，兩者都不能把「這是儀器問題」當作延誤病情升級的理由。
+
+這個分工有一個常被忽略的效果：護理師提供的並不只是 **CI 2.1 L/min/m²**，還包括「動脈波形有無改變、何時零點校正、最近一次熱稀釋品質如何、測量期間患者是否改變體位或藥物」。這些資料決定醫師能不能安全地把 CI 放進因果推理。
+
 ## 品質控制不是最後檢查，而是讀值的前提
 
 動脈波形必須先零點校正、確認換能器參考高度及傳壓系統完整。波形過度阻尼（overdamping）可讓脈壓振幅變小，欠阻尼（underdamping）可使收縮壓與振幅被誇大；抽血、管路氣泡、血栓、長而順應性過大的延長管，或 transducer 高度錯誤都可能產生數字異常。**錯誤波形不只影響血壓，也會污染 pulse-contour CI、PPV、SVV 的解釋。**
@@ -17,6 +23,14 @@ PiCCO 能提供大量衍生參數，但這些參數的可信度共享一個起�
 在符合設備設定及單位 SOP 前提下，Getinge 的 PiCCO 熱稀釋品質流程以**三次有效冷指示劑注入**為基礎，並特別要求檢查壓力訊號、觀察每條 thermodilution curve、核對足夠的溫差及三次結果的離散程度。其教學清單舉例採用 3 × 15 mL 冷鹽水、溫差至少 0.2°C，並要求個別結果與平均值的偏離小於 15%；這些是**特定產品的操作參考，不是可不看裝置與病況直接套用的全院醫囑**。[2]
 
 若連續三次數值離散甚大，先找注射速度不一、指示劑溫度／體積設定錯誤、管路死腔、注射端錯誤、意外混入輸液、溫度變化不夠，以及病人在注射期間真的發生了循環變動。選擇「看起來最正常的一次」不是解決方法；同樣，將離群值平均起來也可能掩蓋技術缺陷。
+
+### 在看監測螢幕之前，共同確認哪些資訊？
+
+**訊號與管路**：核對動脈壓波形是否清楚、轉換器參考高度是否正確、零點是否有效、壓力沖洗系統與管路是否完整、是否有氣泡、阻塞或折曲的疑點。臨床與設備資料均指出 over-／underdamping 可能明顯改變收縮壓、脈壓及波形衍生量，且需要實際觀察波形、依單位 SOP 進行動態反應（fast-flush／square-wave）評估。這不是只在設備初始化時做一次、之後完全不用重看。[5,6]
+
+**曲線與量測**：記下本次是否為熱稀釋（CI-TD）或校正後的連續估計（CI-PC），最後有效 TPTD 時間、有效注射次數、原始曲線是否一致、注射前後有無劇烈血流動力學變化。Getinge 公開故障排除資訊指出：熱稀釋結果若偏差超過其指定限度，須先識別不合格量測、評估曲線並視情況重測，不是挑選最順眼的數字湊平均。[2,7]
+
+**病人的時間脈絡**：確認目前心律、呼吸器模式及 PEEP、體位、升壓／強心藥的變動、輸液與出血的時序；任何顯著病況或血管張力變化都可能改變 pulse-contour 可靠性。醫師不能只要最新一個數字，護理師也不該被要求把「無法確認品質」寫成「量測正常」。
 
 ### 讀曲線時要追問的三件事
 
@@ -40,6 +54,10 @@ PiCCO 能提供大量衍生參數，但這些參數的可信度共享一個起�
 
 再把條件換成「動脈波形品質良好，CI-PC 持續下降，但此時剛大幅調整血管收縮藥」。與其立刻補液，應判斷演算法是否受血管張力改變影響、是否需 TPTD 重新定標，以及 Echo、CRT 與臨床灌流是否也支持血流下降。技術稽核與醫學判斷不是先後互斥，而是在真正危急時並行。
 
+## 導管與病人安全：監測數值以外的警訊
+
+在取得數據之外，應持續關注動脈端出血、血腫、肢體遠端灌流變化、導管鬆脫、局部感染徵象與中心靜脈管路併發症的可能性。這些可能與設備數值完全無關，卻更需要即時升級處理。導管處置、開閉管路、血液抽取與沖洗，應嚴格遵循訓練、感染控制規範及當地 SOP；**如果懷疑血栓或管路阻塞，不可為了讓波形恢復而盲目強力沖洗。**監測是為了幫助照顧病人，不是讓病人承擔無意義的量測風險。
+
 ## ICU 操作者應能完成的交班
 
 交班不能只說「CI 2.1、GEDI 650」。應能交代：**何時熱稀釋、幾次有效注射、曲線與結果一致性、最近一次校正後有無大幅改變血管張力、目前連續 CI 的趨勢、波形是否可信、患者本身的灌流端點**。沒有上述品質資訊，漂亮的數字表格只會讓後一班誤以為測量不確定性不存在。
@@ -51,3 +69,6 @@ PiCCO 能提供大量衍生參數，但這些參數的可信度共享一個起�
 2. Getinge. *How to optimize PiCCO thermodilution measurements*（廠商操作清單，非替代當地 IFU／SOP）. https://www.getinge.com/assets/content/PiCCO_TSG-US/How_to_optimize_PiCCO_thermodilution_measurements_part03.html
 3. Messina A, Alicino V, Cecconi M. *Transpulmonary thermodilution.* Curr Opin Crit Care. 2023. https://doi.org/10.1097/MCC.0000000000001047
 4. Getinge. *Advanced Monitoring Parameters.* https://www.getinge.com/no/insights/articles/intensive-care/advanced-monitoring-parameters/
+5. Saugel B, et al. *How to measure blood pressure using an arterial catheter: a systematic 5-step approach.* Crit Care. 2020. https://doi.org/10.1186/s13054-020-02859-w
+6. Getinge. *Arterial blood pressure signal troubleshooting*（特定 PiCCO 模組之廠商說明；不取代 IFU）. https://www.getinge.com/assets/content/PiCCO_TSG-US/Arterial_blood_pressure_signal_content.html
+7. Getinge. *Thermodilution results troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Thermodilution_results.html
