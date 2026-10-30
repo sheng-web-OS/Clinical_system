@@ -1,0 +1,12 @@
+{
+  "candidate_id": "example-candidate",
+  "artifact_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "source_url": "https://example.org/replace-with-source",
+  "source_commit": "0000000000000000000000000000000000000000",
+  "license_status": "PENDING",
+  "privacy_status": "UNKNOWN",
+  "risk_tier": "medium",
+  "reversible": false,
+  "current_state": "NEW",
+  "example_only": "Default values intentionally fail closed. Replace only with verified facts."
+}
