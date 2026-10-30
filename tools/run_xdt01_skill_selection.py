@@ -136,7 +136,7 @@ def api_call(request):
         raise TrialError("PROVIDER_CALL_FAILED") from None
     return result
 
-def run_arm(task, arm, skill_loader=None, caller=api_call):
+def run_arm(task, arm, skill_loader=None, caller=api_call, on_event=None):
     """One context per arm; C asks for selection before seeing Skill bytes."""
     require(arm in {"A", "B", "C"}, "INVALID_ARM")
     common = BASE + ("\n\n" + EVIDENCE if arm != "A" else "")
@@ -150,6 +150,13 @@ def run_arm(task, arm, skill_loader=None, caller=api_call):
                 {v["response_id"] for v in calls},
                 "REUSED_PROVIDER_RESPONSE")
         calls.append(value)
+        if on_event is not None:
+            on_event({
+                "call_index": len(calls),
+                "kind": "selection" if arm == "C" and len(calls) == 1 else "answer",
+                "text": value["text"], "response_id": value["response_id"],
+                "model": value["model"], "usage": value["usage"],
+            })
         return value
 
     if arm == "C":
@@ -219,6 +226,10 @@ def main(argv=None):
         require(args.skill_file is not None and
                 HEX.fullmatch(args.skill_sha256 or "") is not None,
                 "C_REQUIRES_FROZEN_SKILL")
+    if args.arm == "C":
+        # Pin and check bytes before any paid call; the MODEL still sees only
+        # the inventory until its own USE selection is frozen.
+        get_skill(args.skill_file, args.skill_sha256, root)
     target = args.output_dir.resolve()
     require(not target.is_relative_to(root) and not target.exists(),
             "PRIVATE_FRESH_OUTPUT_REQUIRED")
@@ -236,8 +247,11 @@ def main(argv=None):
     require(bool(os.environ.get("OPENAI_API_KEY")), "PRIVATE_API_KEY_MISSING")
     loader = (lambda: get_skill(args.skill_file, args.skill_sha256, root)
               if args.arm == "C" else None)
+    def retain_receipt(event):
+        write_once(target / ("call-%02d.json" % event["call_index"]), event)
     try:
-        result = run_arm(task, args.arm, skill_loader=loader, caller=api_call)
+        result = run_arm(task, args.arm, skill_loader=loader,
+                         caller=api_call, on_event=retain_receipt)
         result.update({"task_sha256": digest,
                        "candidate_commit": args.candidate_commit,
                        "skill_sha256": args.skill_sha256 if args.arm == "C" else None,
