@@ -62,7 +62,7 @@ def validate_run(r):
         return None
     if not provider_id(r["id"]) or not provider_id(r["task_id"]):
         return "INVALID_PLATFORM_ID"
-    if "recorded_status" in r and r["recorded_status"] not in STATUSES:
+    if "recorded_status" in r and (not isinstance(r["recorded_status"], str) or r["recorded_status"] not in STATUSES):
         return "INVALID_PLATFORM_RUN_STATUS"
     chat = r.get("chat_ref")
     if chat is not None and (not isinstance(chat, dict)
