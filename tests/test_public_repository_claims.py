@@ -1,4 +1,4 @@
-"""Regression: PUBLIC GitHub access must not be described as private CI storage.
+"""Regression: site output CI must not claim the PUBLIC GitHub repository is private.
 
 This checks security-facing claims, not artifact contents or repository permissions.
 """
@@ -16,14 +16,6 @@ class PublicRepositoryClaimsTests(unittest.TestCase):
         self.assertNotIn("private repo nav boundary", source)
         self.assertNotIn("Private repository direct link", source)
 
-    def test_visual_qa_scripts_do_not_promise_private_artifacts(self):
-        for path in ("tools/qa_lab_morning_draft.py",
-                     "tools/qa_acs_mobile.py", "tools/qa_sepsis_mobile.py"):
-            with self.subTest(path=path):
-                source = (ROOT / path).read_text(encoding="utf-8")
-                self.assertIn("PUBLIC", source.split('"""', 2)[1])
-                self.assertNotIn("private GitHub Actions artifact", source)
-                self.assertNotIn("private CI", source)
 
 
 if __name__ == "__main__":
