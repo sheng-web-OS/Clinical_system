@@ -150,6 +150,8 @@ class FakeGitHub:
 
     def claim(self, task: Task, who: Identity, now: int, *, observed_generation: int) -> Lease:
         self._assert_actor(who)
+        if who.role != 'writer':
+            raise Hold('WRITER_ROLE_REQUIRED')
         self._assert_scope(task)
         if self.mode != 'active':
             raise Hold('SHADOW_NO_ACTION')
@@ -193,6 +195,10 @@ class FakeGitHub:
 
     def submit_fix(self, task: Task, claim: Lease, now: int) -> Receipt:
         self.assert_fence(claim, now)
+        # Authorize the ACTUAL target at the final mutation boundary.
+        if (claim.task != task.id or self.tasks.get(task.id) is not task
+                or not set(task.resources).issubset(set(claim.resources))):
+            raise Hold('CLAIM_TASK_SCOPE_MISMATCH')
         if 'RATE_LIMITED' in self.failpoints:
             self.delay_until = now + 30
             raise Hold('RATE_LIMITED')
@@ -223,6 +229,33 @@ class FakeGitHub:
             raise Hold('STALE_CHECKPOINT_CAS')
         if head != self.heads[task.pr]:
             raise Hold('CHECKPOINT_HEAD_MISMATCH')
+        # Simulated persistent checkpoint MUST enforce transitions itself;
+        # a caller must never bypass QA through direct checkpoint invocation.
+        if self.tasks.get(task.id) is not task:
+            raise Hold('INVALID_CHECKPOINT_TRANSITION')
+        transition = (task.stage, next_stage)
+        if transition == ('READY', 'AWAITING_CI'):
+            permitted = (writer is not None and qa is None
+                         and writer.new_head == head)
+        elif transition == ('AWAITING_CI', 'AWAITING_QA'):
+            permitted = (writer is None and qa is None
+                         and task.committed_head == head
+                         and self.ci.get((task.pr, head)) == 'SUCCESS')
+        elif transition in {('AWAITING_QA','VERIFIED_COMPLETE'),
+                            ('AWAITING_QA','CHANGES_REQUESTED')}:
+            permitted = (writer is None and qa is not None
+                         and qa in self.known_runs and qa.role == 'qa'
+                         and task.writer_context is not None
+                         and task.writer_run is not None
+                         and qa.context != task.writer_context
+                         and qa.run != task.writer_run
+                         and task.committed_head == head
+                         and self.ci.get((task.pr, head)) == 'SUCCESS'
+                         and self.qa_probes.get(task.id) is (next_stage == 'VERIFIED_COMPLETE'))
+        else:
+            permitted = False
+        if not permitted:
+            raise Hold('INVALID_CHECKPOINT_TRANSITION')
         if writer:
             if self.receipts.get(task.operation_id) != writer:
                 raise Hold('UNVERIFIED_COMMIT_RECEIPT')
@@ -336,30 +369,36 @@ def writer_wake(db: FakeGitHub, who: Identity, now: int, *, max_scan=7) -> Resul
 
 
 def qa_wake(db: FakeGitHub, who: Identity, now: int) -> Result:
-    """Independent QA fixture; distinct *attested* context required."""
+    """Synthetic QA; skip task-local HOLD while preserving independent review."""
     db._assert_actor(who)
     if who.role != 'qa':
         return Result('HOLD', reason='QA_ROLE_REQUIRED')
     if not db.trusted_control_plane or db.mode != 'active':
-        return Result('HOLD',reason='GLOBAL_OR_SHADOW_HOLD')
-    for task in sorted(db.tasks.values(),key=lambda x:(-x.priority,x.id)):
+        return Result('HOLD', reason='GLOBAL_OR_SHADOW_HOLD')
+    first_block = None
+    for task in sorted(db.tasks.values(), key=lambda x:(-x.priority,x.id)):
         if task.stage != 'AWAITING_QA':
             continue
+        reason = None
         if who.context == task.writer_context or who.run == task.writer_run:
-            return Result('HOLD',task.id,'REVIEW_NOT_INDEPENDENT')
-        if task.committed_head != db.heads[task.pr]:
-            return Result('HOLD',task.id,'REVIEW_STALE_HEAD')
-        if db.ci.get((task.pr, task.committed_head)) != 'SUCCESS':
-            return Result('HOLD',task.id,'CI_NOT_SUCCESS')
-        verdict = db.qa_probes.get(task.id)
-        if verdict is None:
-            return Result('HOLD',task.id,'QA_EVIDENCE_MISSING')
-        target_stage = 'VERIFIED_COMPLETE' if verdict else 'CHANGES_REQUESTED'
+            reason = 'REVIEW_NOT_INDEPENDENT'
+        elif task.committed_head != db.heads[task.pr]:
+            reason = 'REVIEW_STALE_HEAD'
+        elif db.ci.get((task.pr, task.committed_head)) != 'SUCCESS':
+            reason = 'CI_NOT_SUCCESS'
+        elif db.qa_probes.get(task.id) is None:
+            reason = 'QA_EVIDENCE_MISSING'
+        if reason is not None:
+            if first_block is None:
+                first_block = Result('HOLD', task.id, reason)
+            continue
+        verdict = db.qa_probes[task.id]
+        next_stage = 'VERIFIED_COMPLETE' if verdict else 'CHANGES_REQUESTED'
         before = task.checkpoint_version
-        db.checkpoint(task,version=before,next_stage=target_stage,
-                      head=task.committed_head,qa=who)
-        return Result('QA_ACCEPTED' if verdict else 'QA_REJECTED',task.id,target_stage)
-    return Result('NO_ACTION',reason='NO_FROZEN_ARTIFACT_AWAITING_QA')
+        db.checkpoint(task, version=before, next_stage=next_stage,
+                      head=task.committed_head, qa=who)
+        return Result('QA_ACCEPTED' if verdict else 'QA_REJECTED',task.id,next_stage)
+    return first_block or Result('NO_ACTION',reason='NO_FROZEN_ARTIFACT_AWAITING_QA')
 
 
 def example() -> dict:
