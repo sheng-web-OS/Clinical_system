@@ -18,14 +18,20 @@ DENOMINATORS = {"pilot": 1, "exploratory": 4}
 REQUIRED = ("task_id", "domain", "arm", "input_sha256", "model",
             "effort", "tool_policy_sha256", "token_cap", "time_cap_s",
             "first_pass_sha256")
-BLOCKED_KEYS = {"gold", "answer", "prompt", "case_text", "api_key",
-                "secret", "private_arm_mapping", "patient", "first_pass_text"}
+# A strict exact-key contract is safer than a list of suspicious field names.
+# The manifest is metadata ONLY; new fields need independent privacy review.
+MANIFEST_KEYS = {"experiment_id", "phase", "protocol_commit",
+                 "skill_sha256", "trials"}
+TASK_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{2,63}\Z")
+ATOM = re.compile(r"[A-Za-z0-9][A-Za-z0-9._:-]{0,99}\Z")
 
 
 def check(obj):
     errors = []
     if not isinstance(obj, dict):
         return ["Manifest must be an object"]
+    if set(obj) != MANIFEST_KEYS:
+        errors.append("Unexpected top-level key: manifest must not include any payload")
     if obj.get("experiment_id") != "XDT-01":
         errors.append("Wrong experiment ID")
     phase = obj.get("phase")
@@ -44,15 +50,18 @@ def check(obj):
         if not isinstance(t, dict):
             errors.append(f"Trial {idx}: must be object")
             continue
-        if BLOCKED_KEYS.intersection(t):
-            errors.append(f"Trial {idx}: forbidden potentially sensitive field")
+        if set(t) != set(REQUIRED):
+            errors.append(f"Trial {idx}: unexpected or missing field; payload forbidden")
         for k in REQUIRED:
             if k not in t:
                 errors.append(f"Trial {idx}: missing {k}")
         task_id, arm, domain = t.get("task_id"), t.get("arm"), t.get("domain")
-        if not isinstance(task_id, str) or not task_id:
-            errors.append(f"Trial {idx}: invalid task ID")
+        if not isinstance(task_id, str) or not TASK_ID.fullmatch(task_id):
+            errors.append(f"Trial {idx}: invalid bounded task ID")
             continue
+        for key in ("model", "effort"):
+            if not isinstance(t.get(key), str) or not ATOM.fullmatch(t[key]):
+                errors.append(f"Trial {idx}: invalid bounded {key}")
         if arm not in ARMS or domain not in DOMAINS:
             errors.append(f"Trial {idx}: invalid arm/domain")
         if (task_id, arm) in seen:
