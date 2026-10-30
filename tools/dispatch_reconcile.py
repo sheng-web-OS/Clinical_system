@@ -125,7 +125,14 @@ def reconcile(config, issue_snapshot, gate_snapshot):
             "fingerprint": fingerprint,
             "decision": "RESUME_NEXT_GATE" if resumed else "NEW_GATE",
         })
-    # The issue selector already imposes a stable priority + task-id order.
+    # Delivery-first tie-break for independently observed next steps: keep
+    # priority-100 P0 gates ahead of all lower-severity work, then prefer a
+    # genuine RESUME_NEXT_GATE over starting another non-P0 workstream.
+    # This remains a shadow plan, not evidence of completion or permission.
+    eligible.sort(key=lambda item: (
+        0 if item["priority"] == 100 else 1,
+        0 if item["decision"] == "RESUME_NEXT_GATE" else 1,
+        -item["priority"], item["id"]))
     return {"status": ("HOLD_TASKS_BLOCKED" if blocked and not eligible
                        else "SHADOW_RECONCILED_NO_ACTION"),
             "execution_authorized": False, "model_calls": 0,
