@@ -177,5 +177,36 @@ class ReconciliationTest(unittest.TestCase):
         self.assertNotEqual("RESUME_NEXT_GATE", r["selected"][0]["decision"])
 
 
+    def test_resumes_non_p0_before_starting_another_non_p0(self):
+        # P0 gates are waiting; a verified next step on a real article should
+        # outrank a newly-started high-priority non-P0 audit.
+        for target in ("issue:76", "issue:79"):
+            self.gates[target]["gate_state"] = "waiting"
+        self.gates["issue:180"]["last_receipt"] = self.receipt("issue:180")
+        self.gates["issue:180"]["gate_id"] = "write-next-gate"
+        result = self.plan()
+        self.assertEqual("lab-medicine", result["selected"][0]["id"])
+        self.assertEqual("RESUME_NEXT_GATE", result["selected"][0]["decision"])
+        self.assertNotIn("public-narrative-audit",
+                         [i["id"] for i in result["skipped"]])
+        self.assertFalse(result["execution_authorized"])
+
+    def test_resumed_non_p0_never_preempts_actionable_p0(self):
+        self.gates["issue:180"]["last_receipt"] = self.receipt("issue:180")
+        self.gates["issue:180"]["gate_id"] = "write-next-gate"
+        result = self.plan()
+        self.assertEqual("ecg-original-evidence", result["selected"][0]["id"])
+
+    def test_two_continuations_keep_original_relative_priority(self):
+        for target in ("issue:76", "issue:79"):
+            self.gates[target]["gate_state"] = "waiting"
+        for target in ("issue:152", "issue:180"):
+            self.gates[target]["last_receipt"] = self.receipt(target)
+            self.gates[target]["gate_id"] = "write-next-gate"
+        result = self.plan()
+        self.assertEqual("public-narrative-audit", result["selected"][0]["id"])
+        self.assertEqual("RESUME_NEXT_GATE", result["selected"][0]["decision"])
+
+
 if __name__ == "__main__":
     unittest.main()
