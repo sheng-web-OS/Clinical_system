@@ -48,7 +48,7 @@ python tools/seal_xdt01_private_cases.py \
   --suite-id xdt01-prospective-001 \
   --phase pilot \
   --candidate-commit <exact-frozen-40-character-commit> \
-  --skill-sha256 <exact-frozen-skill-blob-sha256> \
+  --skill-sha256 <sha256-of-frozen-skill-file-bytes> \
   --stage-root /trusted/stage1/new-run \
   --facilitator-root /trusted/keys/new-run \
   --repo-root /workspace/Clinical_system
