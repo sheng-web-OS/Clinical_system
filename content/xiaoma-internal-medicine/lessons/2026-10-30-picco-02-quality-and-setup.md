@@ -67,7 +67,7 @@ PiCCO 能提供大量衍生參數，但這些參數的可信度共享一個起�
 ### 延伸來源
 1. SCCM. *Surviving Sepsis Campaign Adult Guidelines, 2026.* https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines
 2. Getinge. *How to optimize PiCCO thermodilution measurements*（廠商操作清單，非替代當地 IFU／SOP）. https://www.getinge.com/assets/content/PiCCO_TSG-US/How_to_optimize_PiCCO_thermodilution_measurements_part03.html
-3. Messina A, Alicino V, Cecconi M. *Transpulmonary thermodilution.* Curr Opin Crit Care. 2023. https://doi.org/10.1097/MCC.0000000000001047
+3. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
 4. Getinge. *Advanced Monitoring Parameters.* https://www.getinge.com/no/insights/articles/intensive-care/advanced-monitoring-parameters/
 5. Saugel B, et al. *How to measure blood pressure using an arterial catheter: a systematic 5-step approach.* Crit Care. 2020. https://doi.org/10.1186/s13054-020-02859-w
 6. Getinge. *Arterial blood pressure signal troubleshooting*（特定 PiCCO 模組之廠商說明；不取代 IFU）. https://www.getinge.com/assets/content/PiCCO_TSG-US/Arterial_blood_pressure_signal_content.html
