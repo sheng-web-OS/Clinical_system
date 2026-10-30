@@ -28,6 +28,14 @@ EVLWI 常按 PBW 索引；GEDI／CI 則涉及體表面積。若病人資料輸�
 
 若 CFI、GEF 與 Echo LVEF 不吻合，先確定比較的是不是相同概念：PiCCO 的 CFI／GEF 是全心容量—流量的估計，Echo 的 LVEF 是左心排出比例。不同概念本來就可能不同，不必然表示其中之一量錯。
 
+## 品質不確定時的共同處理：不是先找一個人負責，而是先分清兩條危險
+
+**第一條是病人可能正在惡化。** 新的低血壓、意識變化、明顯肢端灌流惡化、快速增加的血管活性藥需求或管路相關的出血／缺血疑點，都應立即依 ICU 的升級通報與急救程序評估。即使剛好出現儀器警報，也不能假設病況全由感測器造成；必要支持與資料檢查必須並行。
+
+**第二條是監測可能已失去解釋力。** 護理師及醫師都須能指出原始動脈波形是否充分、transducer 參考位置與歸零是否適當、熱稀釋曲線是否一致，及最近的導管／體位／呼吸器／血管活性藥變動；具資格的操作人員依 SOP 排查。醫師若無法確認 CI-PC 與波形相容，不能把該 CI-PC 作為單獨的輸液或用藥調整理由。修復訊號後也需重新問：**病人是否真的出現與先前相同的臨床變化？**
+
+Getinge 的 PiCCO 故障排除資料將波形問題、熱稀釋溫度訊號、注射偵測與不可重現結果分為不同模組；這是避免混淆錯誤來源的好方法，但**裝置說明只是技術證據，不能替代病人的休克鑑別與當地 IFU**。[2,6,7]
+
 ## 把最常見異常改寫成「先確認什麼？」
 
 | 異常 | 可同時考慮的機轉 | 立刻需要核對 |
@@ -49,6 +57,12 @@ EVLWI 常按 PBW 索引；GEDI／CI 則涉及體表面積。若病人資料輸�
 
 **反例三：CI 和 MAP 都恢復，所以治療成功。** 大循環改善不等於組織灌流全面改善。CRT、皮膚灌流、意識、尿量、乳酸變化及臟器功能，才讓團隊知道是否仍有未解決的問題；其中任何單一指標也無法作為全身灌流的充分保證。[4,5]
 
+## 把資料可信度交接給下一班，而不只是交付數值
+
+監測交班最容易遺失的資訊是**限制條件**。護理師若發現本次熱稀釋曲線無法重現，應明確說明「此組數值尚不宜據以作臨床處置」，以及已排查的可見問題；醫師則應整合病人灌流與 Echo 等其他證據，重新決定是否需要修復後再測、換一個檢查、或立即處理危急病況。任何角色都不應擅自宣稱「儀器無法校正，所以病人一定安全」或「儀器警報，所以一定要加液體」。
+
+如果設備顯示 PPV／SVV，醫師還需回問**心律是否規則、通氣是否受控、潮氣容積與肺順應性是否使數字有解釋力**。這些條件若缺少，即使讀值沒有警報也可能不能用來預測 fluid responsiveness；監測器沒有警告，不等於生理假設成立。[3,6]
+
 ## 交班時最值得留下的不是一排數字
 
 可靠的交班應記錄：出現臨床變化的**確切時點**，當時心律／通氣模式／血管活性藥變動，最近一次合格 TPTD 的時間與品質，CI-TD 與 CI-PC 是否同向，動脈波形品質，當下 Echo 及組織灌流的支持或反證，以及哪些參數已因技術限制被標記為不可解讀。沒有必要為每個疑問再增一套監測系統；關鍵是把不可用的數字從決策中排除，並且清楚說明下一項有效資訊要回答哪個問題。
@@ -61,3 +75,5 @@ EVLWI 常按 PBW 索引；GEDI／CI 則涉及體表面積。若病人資料輸�
 3. Monnet X, et al. *Using the ventilator to predict fluid responsiveness.* Intensive Care Med. 2024. https://doi.org/10.1007/s00134-024-07708-w
 4. Monnet X, et al. *ESICM guidelines on circulatory shock 2025.* https://doi.org/10.1007/s00134-025-08137-z
 5. SCCM. *Surviving Sepsis Campaign 2026.* https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines
+6. Getinge. *Arterial blood pressure signal troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Arterial_blood_pressure_signal_content.html
+7. Getinge. *Thermodilution measurement troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Thermodilution_measurement.html
