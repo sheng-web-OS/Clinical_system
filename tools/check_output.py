@@ -131,7 +131,7 @@ if not errors:
     except (ValueError, TypeError) as exc:
         errors.append("Invalid search index: " + str(exc))
     if 'href="https://github.com/sheng-web-OS/Clinical_system"' in front:
-        errors.append("Private repository direct link should not appear in public nav")
+        errors.append("Repository source link must not appear in site navigation (output policy, not GitHub privacy)")
 
     if "knowledge-atlas.html" in {p["output"] for p in PAGES}:
         legacy_map = (DIST / "xiaoma-plan.html").read_text("utf8")
@@ -211,5 +211,5 @@ if not errors:
 if errors:
     print("\n".join("FAIL: "+e for e in errors))
     sys.exit(1)
-print("PASS: static site whitelist, single H1, unique DOM IDs, local assets, matching search indexes, private repo nav boundary.")
-print("NOTE: this is structural QA, not full clinical validation or live HTTPS verification.")
+print("PASS: static site whitelist, single H1, unique DOM IDs, local assets, matching search indexes, no repository source link in site navigation (GitHub repository PUBLIC).")
+print("NOTE: output-only structural QA; public GitHub sources, PRs, Actions logs/artifacts are NOT private. Clinical/rights review and production verification are separate.")
