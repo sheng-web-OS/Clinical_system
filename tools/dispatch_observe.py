@@ -30,7 +30,8 @@ def checkpoint_from_comments(comments, config, task_id, pr_number, owner):
     """Latest operator-authored marker wins; malformed latest never falls back."""
     require(type(comments) is list, "INVALID_COMMENT_METADATA")
     marked = [c for c in comments if type(c) is dict
-              and c.get("user", {}).get("login") == owner
+              and type(c.get("user")) is dict
+              and c["user"].get("login") == owner
               and type(c.get("body")) is str and START in c["body"]]
     if not marked:
         return None
@@ -80,12 +81,14 @@ def observe_task(config, task_id, pr_number, paths, read_json, worker_id, run_id
     issue_number = int(task["target"].split(":")[1])
     issue = read_json(ROOT + "/issues/" + str(issue_number))
     require(type(issue) is dict and issue.get("number") == issue_number
-            and issue.get("state") in {"open", "closed"} and "pull_request" not in issue,
+            and type(issue.get("state")) is str
+            and issue["state"] in {"open", "closed"} and "pull_request" not in issue,
             "ISSUE_METADATA_UNVERIFIED")
     pr_path = ROOT + "/pulls/" + str(pr_number)
     pr = read_json(pr_path)
     require(type(pr) is dict and pr.get("number") == pr_number
-            and pr.get("state") in {"open", "closed"}
+            and type(pr.get("state")) is str
+            and pr["state"] in {"open", "closed"}
             and type(pr.get("merged")) is bool
             and pr.get("base", {}).get("repo", {}).get("full_name") == REPO
             and pr.get("head", {}).get("repo", {}).get("full_name") == REPO,

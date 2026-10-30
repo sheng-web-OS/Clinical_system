@@ -167,6 +167,33 @@ class ObserverTest(unittest.TestCase):
         self.snapshot[key]["workflow_runs"][0]["pull_requests"] = [{"number": 215}]
         self.assertEqual([], self.observe()["ci_runs"])
 
+    def test_unhashable_issue_state_rejected_with_fixed_code(self):
+        for malformed in (["open"], {"value": "open"}):
+            with self.subTest(malformed=malformed):
+                self.snapshot[ROOT + "/issues/180"]["state"] = malformed
+                with self.assertRaisesRegex(
+                        DispatchError, "^ISSUE_METADATA_UNVERIFIED$"):
+                    self.observe()
+                self.snapshot[ROOT + "/issues/180"]["state"] = "open"
+
+    def test_unhashable_pr_state_rejected_with_fixed_code(self):
+        for malformed in (["open"], {"value": "open"}):
+            with self.subTest(malformed=malformed):
+                self.pr["state"] = malformed
+                with self.assertRaisesRegex(
+                        DispatchError, "^PR_REPOSITORY_UNVERIFIED$"):
+                    self.observe()
+                self.pr["state"] = "open"
+
+    def test_deleted_comment_user_cannot_crash_operator_checkpoint_read(self):
+        self.add_checkpoint()
+        self.snapshot[self.comments_path].insert(0, {
+            "id": 111, "user": None, "body": START + "not trusted" + END,
+        })
+        result = self.observe()
+        self.assertEqual(321, result["checkpoint_comment_id"])
+        self.assertEqual("REVIEW_EXACT_BLOBS", result["next_action"])
+
     def test_protected_experiment_is_rejected_before_any_read(self):
         with self.assertRaisesRegex(DispatchError, "PROTECTED_OR_INVALID_PR"):
             observe_task(self.config, "lab-medicine", 225, ["content/example.md"],
