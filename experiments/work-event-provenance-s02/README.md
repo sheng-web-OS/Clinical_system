@@ -23,7 +23,7 @@ From this directory:
     python3 -m unittest discover -s . -p 'test_provenance_probe.py' -v
     python3 provenance_probe.py s01_observed.json
 
-The tests exercise 26 named scenarios, including 572 malformed-field mutation subcases: real S01 inconclusive, forged bindings, time coincidence, wrong run/task/PR/head/delivery, stale latest_result, booleans masquerading as PR IDs, fake event IDs, and self-reported receipts. Engineering test success is **not** Work event provenance.
+The tests exercise 28 named scenarios, including 572 deterministic malformed-field mutation subcases and four missing-identity malformed-metadata regressions: real S01 inconclusive, forged bindings, time coincidence, wrong run/task/PR/head/delivery, stale latest_result, booleans masquerading as PR IDs, fake event IDs, and self-reported receipts. Engineering test success is **not** Work event provenance.
 
 ## Isolation and next gate
 
