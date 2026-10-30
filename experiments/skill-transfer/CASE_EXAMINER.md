@@ -51,6 +51,26 @@ python tools/seal_private_case_exam.py \
 
 Both parent directories must exist and have an appropriate non-world-writable parent. Target directories must not exist. Files are created 0600 / directories 0700. This is only one filesystem safeguard, not proof of different-user isolation; actual runtime and ACL verification remain a HARD HOLD. Command does not print contents, just a status receipt. Never mount /trusted/stage1 into the model runner; copy out individual case/arm envelopes through the existing #225 packet preparation process. The #225 Stage1 builder currently selects at most five case IDs per invocation; larger suites must be processed in predeclared batches without exposing sibling cases to a worker.
 
+## Minimum runnable one-case handoff — examiner-side only
+
+The original Stage1 archive bundles **all** cases and must never be a worker attachment. After an independent examiner identity has sealed and retained the case suite, the examiner may issue **one** neutral task into an ACL-protected worker inbox using `tools/issue_examiner_case.py`. This performs zero inference and grants no cloud permission.
+
+~~~sh
+# Run only under E in its private, non-connected runtime.
+python tools/issue_examiner_case.py \
+  --stage-root /private/examiner/stage1/run-001 \
+  --slot H01 \
+  --output-root /private/worker-inbox/unique-delivery-001 \
+  --manifest-sha256 <sha256-of-private-stage1-manifest> \
+  --archive-sha256 <sha256-of-private-stage1-zip>
+~~~
+
+The output contains **exactly one** `task.md`, rather than a suite ZIP, facilitator mapping or reviewer receipt. The issuer reads a pinned Stage1 manifest/ZIP; validates schema, every entry, bounded sizes and digests; refuses stale/tampered input, unlisted slot, preexisting output, checkout output, examiner-output overlap and symlinked source ancestors. Its result is `ONE_CASE_EXPORTED_NOT_DELIVERED`; only an independent operator/provider can attest that W actually received just that file. Never mount the entire Stage1 or facilitator mapping inside W.
+
+**Practical external setup (operator responsibility, not completed by this PR):** provision a separate private account/project or comparably isolated environment **not connected to ChatGPT, GitHub or the existing shared Drive**. Create E, W, R and F as separately scoped service identities. Keep cases and gold inaccessible to W/R, give W one-object task read and scoped answer write but no object-list access, give R only anonymized answers and permitted evidence, and give F sole case/arm mapping and unblinding permission. The administrator must be outside the worker/tool/connected-account trust boundary. Include cloud audit logs, backups, serverless invoker rights, artifact registries, snapshots, search indexes and impersonation in the denial probes. Do not copy service-account credentials into public GitHub or this conversation. Prove every protected read DENIED through identity-specific, independently audited calls and retain evidence privately. Prefer short-lived credentials and narrow network/tool allowlists for W.
+
+**No-run release gate:** operator-owned authenticated negative-access probes must pass, and E's private preregistration must predate W's first request. #225's separate reviewer-blind packet leak and paid-execution HOLD must be resolved before its endpoint is used. Synthetic tests or clean CI do not establish real IAM separation. Otherwise retain `ISOLATION_NOT_VERIFIED / FIRST_ATTEMPT_NOT_RUN`. No implementation can guarantee complete absence of model-pretraining contamination; the claim is verifiable prospective access isolation under a documented threat model.
+
 ## Validity before promotion
 
 1. **Pre-registration:** seal clinical sources, selection, candidate Skill commit, retrieval pack SHA, matched model/effort/tool budgets and the reviewer protocol before starting inference. Digest alone does not certify the date of sealing or absence from model pretraining.
