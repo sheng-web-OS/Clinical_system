@@ -3,6 +3,8 @@ import hashlib
 import importlib.util
 import json
 import os
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -143,6 +145,55 @@ class SealTests(unittest.TestCase):
         self.save()
         with self.assertRaisesRegex(m.SealError, "SOURCE_CLASS_REQUIRED"):
             self.call()
+
+    def test_cli_rejects_misleading_repo_root_before_writing(self):
+        # Reproduces the reported full-CLI public-checkout bypass safely.
+        public_output = P.parent.parent / "__case_examiner_must_not_create__"
+        self.assertFalse(public_output.exists())
+        args = [sys.executable, str(P), "--cases-file", str(self.case_file),
+                "--gold-file", str(self.gold_file), "--stage1-root", str(public_output),
+                "--key-root", str(self.key), "--cases-sha256",
+                hashlib.sha256(self.case_file.read_bytes()).hexdigest(),
+                "--gold-sha256", hashlib.sha256(self.gold_file.read_bytes()).hexdigest(),
+                "--suite-id", "holdout-2026-01", "--repo-root", str(self.repo)]
+        result = subprocess.run(args, capture_output=True, text=True, check=False)
+        self.assertEqual(result.returncode, 2)
+        self.assertEqual(json.loads(result.stdout)["error"], "REPO_ROOT_OVERRIDE_FORBIDDEN")
+        self.assertFalse(public_output.exists())
+        self.assertFalse(self.key.exists())
+
+    def test_library_guard_rejects_real_checkout_even_with_fake_root(self):
+        public_output = P.parent.parent / "__case_examiner_must_not_create__"
+        self.assertFalse(public_output.exists())
+        with self.assertRaisesRegex(m.SealError, "PUBLIC_REPO_PATH_FORBIDDEN"):
+            self.call(repo_root=self.repo, stage1_root=public_output)
+        self.assertFalse(public_output.exists())
+
+    def test_rejects_symlinked_input_ancestor_into_public_repo(self):
+        (self.repo / "cases.json").write_bytes(self.case_file.read_bytes())
+        alias = self.root / "hidden_alias"
+        alias.symlink_to(self.repo, target_is_directory=True)
+        with self.assertRaisesRegex(m.SealError, "PUBLIC_REPO_INPUT_FORBIDDEN"):
+            self.call(cases_file=alias / "cases.json")
+        self.assertFalse(self.st.exists())
+        self.assertFalse(self.key.exists())
+
+    def test_rejects_symlinked_gold_ancestor_into_public_repo(self):
+        (self.repo / "gold.json").write_bytes(self.gold_file.read_bytes())
+        alias = self.root / "hidden_gold_alias"
+        alias.symlink_to(self.repo, target_is_directory=True)
+        with self.assertRaisesRegex(m.SealError, "PUBLIC_REPO_INPUT_FORBIDDEN"):
+            self.call(gold_file=alias / "gold.json")
+        self.assertFalse(self.st.exists())
+        self.assertFalse(self.key.exists())
+
+    def test_excludes_private_inputs_in_real_code_checkout(self):
+        source = P.parent.parent / "AGENTS.md"
+        if not source.exists():
+            self.skipTest("no code-checkout sentinel in isolated runner")
+        with self.assertRaisesRegex(m.SealError, "PUBLIC_REPO_INPUT_FORBIDDEN"):
+            self.call(cases_file=source)
+        self.assertFalse(self.st.exists())
 
     def test_refuse_paths_with_symlinked_ancestor(self):
         sym = self.root / "alias"
