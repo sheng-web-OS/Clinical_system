@@ -67,3 +67,20 @@ Caution: the example was formulated by ChatGPT from public source material. Inpu
 Validation: python -m unittest discover -s tests -p 'test_ale_candidate_discovery.py' -v
 
 Privacy, autonomy and publication: no owner-private answer events, no Anki writes, no new paid model API, no new schedule, no public-site changes and no changes to the frozen #137 trial.
+
+
+## Stage 3: Q3 counterexamples recursively produce a revised Q0 (2026-10-31)
+
+New function: `scoped_refinements` in `tools/ale_candidate_discovery.py`. The original general parent hypothesis **remains HOLD** if an adversarial counterexample exists. The engine can now generate a second, narrower **candidate for questioning**, without treating the counterexample as disproven or silently promoting knowledge:
+
+1. Collect *explicit public-safe role tokens* in `context_features` for the supporting examples and known counterexamples (e.g., `target_criterion_not_established` versus `target_criterion_established`). These tokens are ChatGPT-authored hypotheses that still need source checking, not ground truth.
+2. Identify conditions common to positive examples across at least two different families.
+3. Search for the smallest conjunction of at most three such conditions absent from **every** known counterexample. No suitable guard => do not invent a refined candidate.
+4. Emit `recursive_scope_refinements`: proposed scoped concept, lineage to original higher-order candidate, excluded *known* counterexample IDs, and four Q0–Q3 research questions. Specifically, Q3 demands a **new counterexample that shares all guard conditions**.
+5. Keep `promotion_authorized=false` for both original and refined proposals. No edits to canonical Concept Families, published medical pages, user Anki, FSRS or private Drive.
+
+This is the previously missing reverse direction of recursive three-question reasoning: **failed overgeneralization → changed problem boundary → new question for independent verification**. It does not demonstrate that the proposed guard is scientifically valid, nor infer the guard from raw source text without role annotation. The GitHub synthetic tests cover matching/contradicting conditions, two-challenge conjunctions, absent evidence and a public guideline illustration.
+
+Re-run: `python -m unittest discover -s tests -p 'test_ale_candidate_discovery.py' -v`.
+
+**Success to pursue next:** separate, source-verified ChatGPT semantic interpretation of genuinely held-out material and a differential evaluation of single-level / evidence-only / bounded recursive proposals, counting false merges, useful scope repairs and actual intervention time. Do not replace learner study time or the #137 frozen experiment with more speculative orchestration.
