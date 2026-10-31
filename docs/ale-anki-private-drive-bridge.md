@@ -80,3 +80,25 @@ References:
 - https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets.values/append
 - https://googleapis.dev/python/google-auth-oauthlib/latest/reference/google_auth_oauthlib.flow.html
 - https://developers.google.com/identity/protocols/oauth2
+
+
+## Read-only private integrity audit (2026-10-31)
+
+After any normal iPhone → AnkiWeb → Mac → owner-private Sheets sync, update your existing Mac checkout without deleting local OAuth:
+
+    cd "$HOME/ClinicalOS-ALE-bridge"
+    git status --short
+    git pull --ff-only origin experiment/ale01-anki-mobile-readonly-probe-20261031
+
+If git reports local modifications or branch mismatch, stop (do not hard reset); private local tokens are outside this checkout.
+
+Run the new **Google-Sheets-only audit** (Anki need not be open):
+
+    "$HOME/Library/Application Support/ClinicalOS-ALE/venv/bin/python3" tools/ale_anki_drive_sync.py audit
+
+Expected on a single real unmapped review:
+
+    OWNER_PRIVATE_AUDIT_PASS | events=1 | duplicates=0 | missing_family_links=1
+
+The audit independently checks source-event/card identity consistency, uniqueness, review button validity, note ID shape, valid timestamp ordering, and read-only sync status. It prints only aggregate counts, never private event/card/note IDs or card text. An integrity PASS **does not** establish Concept Family mastery, explain a wrong answer, prove iPhone provenance on its own, or verify that a ChatGPT **scheduled** run can read the Sheet. The current user's ChatGPT interactive private-record read/write already produced a **proposal-only, zero-card-mutation** decision; scheduled unattended access is a separate pending gate.
+
