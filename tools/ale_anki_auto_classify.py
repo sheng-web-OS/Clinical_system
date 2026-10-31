@@ -50,21 +50,32 @@ def run(base: Path) -> tuple[int,str]:
     # Known mapping includes *proposals*; never duplicate a provisional entry.
     seen = {card.strip() for row in mappings if len(row) >= 3
             for card in str(row[2]).split(',') if card.strip()}
-    check_version()
-    candidates = []
-    for event in events[-100:]:
-        if len(event) < 14 or not str(event[2]).isdigit():
+    # Bounded one-shot read: never repeatedly inspect the same old untagged
+    # cards, or make N individual local API calls per 30-minute wake.
+    pending = {}
+    for event in reversed(events[-100:]):
+        if len(event) < 14 or not str(event[2]).isdigit() or not str(event[3]).isdigit():
             continue
         cid = str(event[2])
-        if cid in skipped or cid in seen:
+        if cid in skipped or cid in seen or cid in pending:
             continue
-        info = invoke('cardsInfo', cards=[int(cid)])
-        if not isinstance(info,list) or len(info) != 1:
-            continue
-        proposed = exact_tag_candidate(event, info[0], allowed, skipped, seen)
-        if proposed:
-            candidates.append(proposed)
-            seen.add(cid)
+        pending[cid] = event
+        if len(pending) >= 20:
+            break
+    candidates = []
+    if pending:
+        check_version()
+        info = invoke('cardsInfo', cards=[int(cid) for cid in pending])
+        if not isinstance(info, list):
+            raise RuntimeError('Anki card batch not available')
+        cards = {str(c.get('cardId')): c for c in info if isinstance(c, dict)}
+        for cid, event in pending.items():
+            if cid not in cards:
+                continue
+            proposed = exact_tag_candidate(event, cards[cid], allowed, skipped, seen)
+            if proposed:
+                candidates.append(proposed)
+                seen.add(cid)
     # One exclusive lock covers refreshing the remote map and verified append.
     fd = os.open(str(base / LOCK_NAME), os.O_CREAT | os.O_RDWR, 0o600)
     count = 0
