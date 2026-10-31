@@ -1,0 +1,7 @@
+# Google Desktop OAuth dependencies for Mac ALE (read-only Anki bridge)
+google-auth>=2.28,<3
+google-auth-oauthlib>=1.2,<2
+requests>=2.31,<3
+# cryptography 49+ dropped prebuilt Intel macOS wheels; Python 3.9 x86_64 under Rosetta otherwise tries Rust/Xcode source compilation.
+# 48.0.1 has verified CPython 3.9 macOS universal2 wheel (arm64 + x86_64).
+cryptography>=48.0.1,<49
