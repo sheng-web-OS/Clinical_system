@@ -54,6 +54,12 @@ class EvidenceJoinTests(unittest.TestCase):
                                           mapping(concept="synthetic-concept-2")],
                              ["synthetic-concept-1", "synthetic-concept-2"])
 
+
+    def test_identical_confirmed_duplicate_is_not_two_independent_observations(self):
+        with self.assertRaisesRegex(RuntimeError, "Duplicate confirmed"):
+            inspect_evidence([event()], [mapping(), mapping()],
+                             ["synthetic-concept-1"])
+
     def test_different_directions_cannot_be_assumed(self):
         second = event(card="812002")
         second[0] = "anki-revlog:2000000000001:812002"
