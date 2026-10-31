@@ -119,6 +119,7 @@ class TestQueue(unittest.TestCase):
         def api(action, **params):
             called.append(action)
             if action == "version": return 6
+            if action == "modelNames": return ["Basic", "Cloze"]
             if action == "deckNames": return [a["deck"]]
             if action == "findNotes": return []
             if action == "addNote": return 123
@@ -141,6 +142,7 @@ class TestQueue(unittest.TestCase):
         def api(action, **params):
             called.append(action)
             if action == "version": return 6
+            if action == "modelNames": return ["Basic", "Cloze"]
             if action == "deckNames": return [a["deck"]]
             if action == "findNotes": return [456]
             if action == "notesInfo":
@@ -159,6 +161,7 @@ class TestQueue(unittest.TestCase):
         s = Sheet(a)
         def api(action, **params):
             if action == "version": return 6
+            if action == "modelNames": return ["Basic", "Cloze"]
             if action == "deckNames": return [a["deck"]]
             if action == "findNotes": return [111, 222]
             raise AssertionError("No writes expected")
@@ -182,6 +185,115 @@ class TestQueue(unittest.TestCase):
         with patch.object(q, "local_anki", side_effect=api):
             self.assertEqual(q.existing_note(a, q.note_tag(a["card_key"])), 777)
         self.assertNotIn("addNote", events)
+
+    def test_cloze_payload_same_and_distinct_groups_with_hint(self):
+        text = ("In this comparison, {{c1::alpha::first}} and "
+                "{{c1::beta::second}} are grouped; "
+                "{{c2::gamma::third}} tests another relation.")
+        model, fields = q.note_payload(text, "Reasoning and source follow-up.")
+        self.assertEqual(model, "Cloze")
+        self.assertEqual(fields, {"Text": text, "Extra": "Reasoning and source follow-up."})
+        self.assertEqual(set(q.CLOZE_RE.findall(text)[0][0]), {"1"})
+
+    def test_cloze_malformed_or_unanswerable_rejected(self):
+        examples = [
+            "{{c1::alpha}}",  # all retrieval context hidden
+            "In this clinical context, {{c0::alpha}} is not valid.",
+            "In this clinical context, {{c1::}} has an empty answer.",
+            "In this clinical context, {{c1::alpha::alpha}} leaks its answer.",
+            "In this clinical context, {{c1::alpha::}} has an empty hint.",
+            "In this clinical context, {{c1::alpha::hint::extra}} is malformed.",
+            "In this clinical context, {{c1::outer {{c2::inner}}}} is nested.",
+            "In this clinical context, {{c1,2::alpha}} is unsupported.",
+            "In this clinical context, {{c1::alpha} is unmatched.",
+        ]
+        for text in examples:
+            with self.subTest(text=text), self.assertRaises(ValueError):
+                q.note_payload(text, "Why this relation applies.")
+        with self.assertRaises(ValueError):
+            q.note_payload("In this clinical context, {{c1::alpha}} applies.",
+                           "Extra contains {{c2::an unexpected deletion}}")
+
+    def test_cloze_note_created_and_verified(self):
+        a = sample("CARD-CLOZE-01")
+        a["front_html"] = ("The test asks for a causal distinction between "
+                           "{{c1::alpha::first}} and {{c1::beta::second}}, "
+                           "then {{c2::gamma::third}} is a separate check.")
+        a["back_html"] = "Source-backed explanation with scope and counterexample."
+        a["content_sha256"] = q.digest(a["front_html"], a["back_html"])
+        s = Sheet(a)
+        called = []
+        def api(action, **params):
+            called.append((action, params))
+            if action == "version": return 6
+            if action == "modelNames": return ["Basic", "Cloze"]
+            if action == "deckNames": return [a["deck"]]
+            if action == "findNotes": return []
+            if action == "addNote":
+                note = params["note"]
+                self.assertEqual(note["modelName"], "Cloze")
+                self.assertEqual(note["fields"],
+                                 {"Text": a["front_html"], "Extra": a["back_html"]})
+                return 900
+            if action == "notesInfo":
+                return [{"noteId": 900, "modelName": "Cloze",
+                         "tags": ["ale::card::CARD-CLOZE-01"],
+                         "fields": {"Text": {"value": a["front_html"]},
+                                    "Extra": {"value": a["back_html"]}}}]
+            raise AssertionError(action)
+        with patch.object(q, "local_anki", side_effect=api):
+            self.assertEqual(q.process(s), (1, 0))
+        self.assertEqual(s.entry["import_status"], "IMPORTED")
+        self.assertEqual(s.entry["anki_note_id"], "900")
+        self.assertEqual(sum(name == "addNote" for name, _ in called), 1)
+
+    def test_cloze_receipt_recovery_never_adds_again(self):
+        a = sample("CARD-CLOZE-02")
+        a["front_html"] = "In this case, {{c1::alpha}} follows an explicit comparison."
+        a["content_sha256"] = q.digest(a["front_html"], a["back_html"])
+        s = Sheet(a)
+        def api(action, **params):
+            if action == "version": return 6
+            if action == "modelNames": return ["Basic", "Cloze"]
+            if action == "deckNames": return [a["deck"]]
+            if action == "findNotes": return [901]
+            if action == "notesInfo":
+                return [{"noteId": 901, "modelName": "Cloze",
+                         "tags": ["ale::card::CARD-CLOZE-02"],
+                         "fields": {"Text": {"value": a["front_html"]},
+                                    "Extra": {"value": a["back_html"]}}}]
+            raise AssertionError("No writes expected")
+        with patch.object(q, "local_anki", side_effect=api):
+            self.assertEqual(q.process(s), (0, 1))
+        self.assertEqual(s.entry["anki_note_id"], "901")
+
+    def test_unavailable_cloze_model_preflight_blocks_all_adds(self):
+        a = sample("CARD-CLOZE-03")
+        a["front_html"] = "In this comparison, {{c1::alpha}} provides a missing relation."
+        a["content_sha256"] = q.digest(a["front_html"], a["back_html"])
+        s = Sheet(a)
+        def api(action, **params):
+            if action == "version": return 6
+            if action == "modelNames": return ["Basic"]
+            raise AssertionError("Deck creation or addNotes must not be reached")
+        with patch.object(q, "local_anki", side_effect=api):
+            with self.assertRaises(RuntimeError):
+                q.process(s)
+        self.assertEqual(s.entry["import_status"], "PENDING")
+
+    def test_cloze_wrong_note_type_must_not_overwrite(self):
+        a = sample("CARD-CLOZE-04")
+        a["front_html"] = "In this comparison, {{c1::alpha}} provides a missing relation."
+        a["content_sha256"] = q.digest(a["front_html"], a["back_html"])
+        def api(action, **params):
+            if action == "notesInfo":
+                return [{"noteId": 44, "modelName": "Basic",
+                         "fields": {"Front": {"value": a["front_html"]},
+                                    "Back": {"value": a["back_html"]}}}]
+            raise AssertionError("No local modifications allowed")
+        with patch.object(q, "local_anki", side_effect=api):
+            with self.assertRaises(RuntimeError):
+                q.verify_note(44, a)
 
     def test_status_defaults_disabled(self):
         with TemporaryDirectory() as tmp:
