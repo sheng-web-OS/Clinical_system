@@ -16,7 +16,7 @@ import urllib.request
 
 ENDPOINT = "http://127.0.0.1:8765"
 API_VERSION = 6
-READ_ONLY_ACTIONS = frozenset({"version", "deckNames", "cardReviews", "cardsInfo"})
+READ_ONLY_ACTIONS = frozenset({"version", "deckNames", "cardReviews", "cardsInfo", "findCards"})
 DEFAULT_STATE = pathlib.Path.home() / "Library" / "Application Support" / "ClinicalOS-ALE" / "iphone_anki_probe.json"
 
 
