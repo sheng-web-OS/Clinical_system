@@ -17,6 +17,19 @@ ALLOWED_TRIGGERS = {"owner_directed", "scheduled_unprompted", "unknown"}
 STATUSES = {"VERIFIED", "NOT_VERIFIED"}
 
 
+MISSING_EVIDENCE_MARKERS = {
+    "UNKNOWN", "NOT_VERIFIED", "NOT_MEASURED", "NOT_OBSERVED",
+    "NOT_COMPUTABLE", "NOT_AVAILABLE", "NOT_EXPOSED", "PENDING",
+    "HOLD", "INCONCLUSIVE", "NONE", "NULL", "FALSE",
+}
+
+
+def has_evidence_reference(value: Any) -> bool:
+    """Validate a caller-supplied reference, not the truth of its source."""
+    return (isinstance(value, str) and bool(value.strip())
+            and value.strip().upper() not in MISSING_EVIDENCE_MARKERS)
+
+
 def analyze(snapshot: dict[str, Any]) -> dict[str, Any]:
     if snapshot.get("scope") != "SELECTED_PUBLIC_PR_SHADOW":
         raise ValueError("Only selected public PR shadow snapshots are supported")
@@ -62,9 +75,9 @@ def analyze(snapshot: dict[str, Any]) -> dict[str, Any]:
                 raise ValueError(f"{task_id}: cannot skip an unverified prerequisite")
             if not str(cell.get("source_url", "")).startswith("https://"):
                 raise ValueError(f"{task_id}: verified stage requires source_url")
-            if stage in STAGES[2:] and not cell.get("independent_acceptance"):
+            if stage in STAGES[2:] and not has_evidence_reference(cell.get("independent_acceptance")):
                 raise ValueError(f"{task_id}: independent acceptance is a hard requirement")
-            if stage == STAGES[-1] and not cell.get("outcome_evidence"):
+            if stage == STAGES[-1] and not has_evidence_reference(cell.get("outcome_evidence")):
                 raise ValueError(f"{task_id}: downstream outcome evidence is required")
             last_verified = stage
             counts[stage] += 1

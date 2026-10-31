@@ -90,5 +90,45 @@ class TestGrowthSnapshot(unittest.TestCase):
             analyze(p)
 
 
+    def accepted_fixture(self):
+        p = deepcopy(FIXTURE)
+        cell = p["tasks"][0]["stage_evidence"]
+        cell["independently_accepted"] = {
+            "status": "VERIFIED", "source_url": "https://example.org/review",
+            "independent_acceptance": "review-receipt/accepted-1"}
+        cell["downstream_value_verified"] = {
+            "status": "VERIFIED", "source_url": "https://example.org/outcome",
+            "independent_acceptance": "review-receipt/accepted-1",
+            "outcome_evidence": "outcome-receipt/measured-1"}
+        return p
+
+    def test_explicit_missing_evidence_markers_rejected(self):
+        for marker in ("NOT_VERIFIED", " not_measured ", "UNKNOWN", "PENDING",
+                       "NOT_OBSERVED", "INCONCLUSIVE", "HOLD", "false"):
+            for stage, field in (
+                ("independently_accepted", "independent_acceptance"),
+                ("downstream_value_verified", "independent_acceptance"),
+                ("downstream_value_verified", "outcome_evidence")):
+                with self.subTest(marker=marker, stage=stage, field=field):
+                    p = self.accepted_fixture()
+                    p["tasks"][0]["stage_evidence"][stage][field] = marker
+                    with self.assertRaises(ValueError):
+                        analyze(p)
+
+    def test_evidence_reference_must_be_nonempty_text(self):
+        for value in (True, 1, ["receipt"], {"receipt": "present"}, "   "):
+            with self.subTest(value=value):
+                p = self.accepted_fixture()
+                p["tasks"][0]["stage_evidence"]["independently_accepted"][
+                    "independent_acceptance"] = value
+                with self.assertRaises(ValueError):
+                    analyze(p)
+
+    def test_supported_reference_contract_remains_accepted(self):
+        r = analyze(self.accepted_fixture())
+        self.assertEqual(r["verified_milestone_counts"]["independently_accepted"], 1)
+        self.assertEqual(r["verified_milestone_counts"]["downstream_value_verified"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()
