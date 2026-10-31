@@ -44,7 +44,7 @@ class RawQ0Tests(unittest.TestCase):
         x=extract(packet("Despite the page count, the report was published online without the supplementary index."))
         self.assertEqual(x["decision"],"ABSTAIN_NO_BOUNDARY_CUE")
 
-    def test_no_label_or_private_data():
+    def test_no_label_or_private_data(self):
         p=packet("Despite variable observations, the laboratory result may not map directly to the diagnostic concept.")
         p["importance"]="CRITICAL"
         with self.assertRaisesRegex(ValueError,"packet"):
