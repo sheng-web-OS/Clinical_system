@@ -1,0 +1,112 @@
+{
+  "schema": "ale.source_linked_cloze_pilot.v0",
+  "purpose": "source-linked model-authored draft cards, not owner-private cards or validated teaching product",
+  "graph_path": "experiments/ale-eudka-problem-family-bridge-20261031.json",
+  "source_provenance_note": "S_KDIGO24: KDIGO 2024 CKD Executive Summary Table 1 1.1.3, page 687; S_MI18: Fourth Universal Definition 2018 injury/MI criteria. Read by authoring model; no independent clinical review.",
+  "owner_private_data": false,
+  "ankiconnect_write": false,
+  "proposals": [
+    {
+      "id": "P_CKD_E4_C1",
+      "edge_id": "E4",
+      "concept_family_id": "CF_CKD_CHRONICITY_V0",
+      "concept_node_id": "C_CKD_CHRONICITY_CRITERION",
+      "tested_relation": "insufficient_without",
+      "retrieval_role": "missing_condition_or_evidence",
+      "learning_goal": "判斷單次低 eGFR 為何不足以確診 CKD，以及缺少的證據類型。",
+      "context": "成人初次檢驗 eGFR 52 mL/min/1.73m²；沒有既往檢驗、影像或病史能判斷持續時間。",
+      "template": "此時[[conclusion]]，因為尚缺乏[[chronicity]]。",
+      "slots": [
+        {
+          "key": "conclusion",
+          "group": 1,
+          "answer": "不能僅憑這次檢驗確診 CKD",
+          "hint": "能否下 CKD 診斷"
+        },
+        {
+          "key": "chronicity",
+          "group": 1,
+          "answer": "腎臟異常持續至少 3 個月的證據",
+          "hint": "診斷所需的時間面證據"
+        }
+      ],
+      "why_together": "診斷結論與缺失的必要慢性證據是同一個關係 E4 的兩面；同時回想比兩張孤立名詞卡更完整。",
+      "scope_boundary": "既往檢驗、影像、病理或病史若已證明慢性，不需要一定等三個月後再重測才可判定。",
+      "reason_this_tests_edge": "E4 links an isolated low eGFR observation to absent chronicity proof for a CKD diagnosis.",
+      "source_refs": [
+        "S_KDIGO24"
+      ],
+      "authoring_status": "MODEL_PROPOSED_NOT_INDEPENDENTLY_CLINICALLY_REVIEWED"
+    },
+    {
+      "id": "P_MI_E7_C1",
+      "edge_id": "E7",
+      "concept_family_id": "CF_TROPONIN_MI_V0",
+      "concept_node_id": "C_MI_CLASSIFICATION",
+      "tested_relation": "insufficient_without",
+      "retrieval_role": "missing_condition_or_evidence",
+      "learning_goal": "區分已證實的 acute myocardial injury 與尚未能下的 acute MI 診斷。",
+      "context": "cTn 序列有明確 rise/fall，且至少一次高於檢驗法的 99th-percentile URL；目前沒有足以支持急性心肌缺血的臨床證據。",
+      "template": "這些證據支持[[injury]]，但尚不足以判定[[mi]]。",
+      "slots": [
+        {
+          "key": "injury",
+          "group": 1,
+          "answer": "acute myocardial injury",
+          "hint": "由 troponin 門檻及動態變化確立的分類"
+        },
+        {
+          "key": "mi",
+          "group": 1,
+          "answer": "acute myocardial infarction（MI）",
+          "hint": "仍需缺血證據才能成立的診斷"
+        }
+      ],
+      "why_together": "一組提取必須同時辨別 observation 所能支持的狹義分類和證據不足的廣義診斷。",
+      "scope_boundary": "本卡限可進行 biomarkers 評估的 spontaneous MI（尤其 type 1/2）；type 3 fatal MI 有例外，不推論缺血已完全排除。",
+      "reason_this_tests_edge": "E7: acute cTn injury is insufficient without acute ischemic evidence for biomarker-assessable spontaneous MI.",
+      "source_refs": [
+        "S_MI18"
+      ],
+      "authoring_status": "MODEL_PROPOSED_NOT_INDEPENDENTLY_CLINICALLY_REVIEWED"
+    },
+    {
+      "id": "P_MI_E12_C1_C2",
+      "edge_id": "E12",
+      "concept_family_id": "CF_TROPONIN_MI_V0",
+      "concept_node_id": "C_TROPONIN_ACUITY",
+      "tested_relation": "insufficient_without",
+      "retrieval_role": "missing_condition_or_evidence",
+      "learning_goal": "區分 myocardial injury 的閾值判定與 acute/chronic 的時間序列判定。",
+      "context": "單次 cTn 超過 assay-specific 99th-percentile URL，尚無第二次數值。",
+      "template": "此時可判定[[injury]]；但尚無法判定為[[acute]]，仍須觀察[[serial]]。",
+      "slots": [
+        {
+          "key": "injury",
+          "group": 1,
+          "answer": "myocardial injury",
+          "hint": "單次高於 99th URL 已符合的分類"
+        },
+        {
+          "key": "acute",
+          "group": 2,
+          "answer": "acute myocardial injury",
+          "hint": "是否為急性的時間分類"
+        },
+        {
+          "key": "serial",
+          "group": 2,
+          "answer": "具有臨床意義的 serial rise/fall",
+          "hint": "需補足的 cTn 時間變化"
+        }
+      ],
+      "why_together": "c2 兩個空格共同提取 acute 需動態 cTn 的條件；c1 獨立測試門檻定義，避免把兩種判定混成一次背誦。",
+      "scope_boundary": "rise/fall 需依 assay 與抽血時間正確解讀；僅有兩個數值或變化但全低於 99th URL 不能自動成立 myocardial injury。",
+      "reason_this_tests_edge": "E12 links isolated cTn injury to absent serial evidence for acuity; two linked c2 blanks test this scope.",
+      "source_refs": [
+        "S_MI18"
+      ],
+      "authoring_status": "MODEL_PROPOSED_NOT_INDEPENDENTLY_CLINICALLY_REVIEWED"
+    }
+  ]
+}
