@@ -79,5 +79,55 @@ class CandidateDiscoveryTests(unittest.TestCase):
                          ["renal-persistent-egfr-exception"])
         self.assertEqual(result["promotions_performed"], 0)
 
+    def test_q3_scope_guard_generates_new_q0_without_promoting(self):
+        positives = [case("a", "cardio"), case("b", "renal")]
+        for item in positives:
+            item["context_features"] = ["single_measurement", "missing_clinical_context"]
+        negative = case("challenge", "other")
+        negative["context_features"] = ["longitudinal_confirmed"]
+        out = discover({"examples": positives, "challenges": [negative]})
+        self.assertEqual(out["gate"]["results"][0]["status"], "HOLD_REVISION_REQUIRED")
+        self.assertEqual(len(out["recursive_scope_refinements"]), 1)
+        refined = out["recursive_scope_refinements"][0]
+        self.assertEqual(refined["stage"], "Q3_TO_Q0_SCOPE_HYPOTHESIS")
+        self.assertEqual(refined["required_context_features"], ["missing_clinical_context"])
+        self.assertFalse(refined["promotion_authorized"])
+        self.assertIn("unseen counterexample", refined["question_q3"])
+
+    def test_refinement_rejected_when_counterexample_satisfies_all_conditions(self):
+        positives = [case("a", "cardio"), case("b", "renal")]
+        for item in positives:
+            item["context_features"] = ["single_measurement"]
+        negative = case("challenge", "other")
+        negative["context_features"] = ["single_measurement"]
+        out = discover({"examples": positives, "challenges": [negative]})
+        self.assertEqual(out["recursive_scope_refinements"], [])
+
+    def test_refinement_requires_conditions_not_plausible_wording(self):
+        out = discover({"examples": [case("a", "cardio"), case("b", "renal")],
+                        "challenges": [case("challenge", "other")]})
+        self.assertEqual(out["recursive_scope_refinements"], [])
+
+    def test_multi_feature_guard_can_exclude_two_different_challenges(self):
+        positives = [case("a", "f1"), case("b", "f2")]
+        for item in positives:
+            item["context_features"] = ["absent_corroboration", "single_timepoint"]
+        c1, c2 = case("c1", "f3"), case("c2", "f4")
+        c1["context_features"] = ["absent_corroboration"]
+        c2["context_features"] = ["single_timepoint"]
+        out = discover({"examples": positives, "challenges": [c1, c2]})
+        self.assertEqual(out["recursive_scope_refinements"][0]["required_context_features"],
+                         ["absent_corroboration", "single_timepoint"])
+
+    def test_refinement_requires_bounded_machine_safe_features(self):
+        a, b, c = case("a", "f1"), case("b", "f2"), case("c", "f3")
+        for record in (a, b):
+            record["context_features"] = ["invalid natural language with patient details"]
+        c["context_features"] = []
+        with self.assertRaisesRegex(ValueError, "role tokens"):
+            discover({"examples": [a, b], "challenges": [c]})
+
+
+
 if __name__ == "__main__":
     unittest.main()
