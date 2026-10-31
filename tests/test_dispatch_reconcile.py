@@ -153,6 +153,30 @@ class ReconciliationTest(unittest.TestCase):
         self.assertEqual("INVALID_RECEIPT_VALUES", r["blocked"][0]["reason"])
         self.assertEqual("mobile-figure-p0", r["selected"][0]["id"])
 
+    def test_current_gate_receipt_cannot_claim_another_gate(self):
+        # Even if a fingerprint matches the active gate, the receipt must
+        # actually name that gate before it can suppress any scheduled work.
+        # A historical CONTINUING receipt for a *different* fingerprint
+        # remains valid for legitimate next-gate resumes (tested above).
+        for status, next_gate_id in (
+                ("VERIFIED_COMPLETE", None),
+                ("CONTINUING", "write-next-gate")):
+            with self.subTest(status=status):
+                self.setUp()
+                receipt = self.receipt(status=status,
+                                       next_gate_id=next_gate_id)
+                receipt["gate_id"] = "unrelated-gate"
+                self.gates["issue:76"]["last_receipt"] = receipt
+                r = self.plan()
+                self.assertIn(
+                    {"id": "ecg-original-evidence",
+                     "reason": "INVALID_RECEIPT_VALUES"}, r["blocked"])
+                self.assertEqual("mobile-figure-p0",
+                                 r["selected"][0]["id"])
+                self.assertNotIn("ALREADY_VERIFIED",
+                                 [i["reason"] for i in r["skipped"]])
+                self.assertFalse(r["execution_authorized"])
+
     def test_mismatched_issue_gate_fails_closed(self):
         self.gates["issue:76"]["issue_number"] = 137
         self.assertEqual("GATE_TARGET_MISMATCH", self.plan()["blocked"][0]["reason"])
