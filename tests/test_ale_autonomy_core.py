@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 from ale_autonomy_core import persistent_skipped_ids, exact_tag_candidate, choose_next_lesson
 
-EVENT = ['anki-revlog:1793431937000:123', '', '123', '456'] + [''] * 10
+EVENT = ['anki-revlog:1700000000000:123', '', '123', '456'] + [''] * 10
 CARD = {'cardId': 123, 'note': 456, 'tags': ['ale::concept::renal-mechanism']}
 
 class AutonomyPolicyTests(unittest.TestCase):
