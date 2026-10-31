@@ -67,8 +67,24 @@ def compare_updates(before: dict, after: dict) -> dict:
                             "proposed_guard": current["required_context_features"]})
 
     before_sha, after_sha = _sha256(before), _sha256(after)
+    # A source/observation change may be semantically important even when the
+    # pre-annotated reasoning signature and structural gate output are unchanged.
+    # Prevent that silent false negative without overreacting to metadata edits.
+    evidence_keys = ("examples", "challenges", "dependencies")
+    def evidence_digest(packet: dict) -> str:
+        normalized = {key: sorted(packet.get(key, []),
+                           key=lambda item: json.dumps(item, ensure_ascii=False,
+                                                       sort_keys=True))
+                      for key in evidence_keys}
+        return _sha256(normalized)
+
+    if evidence_digest(before) != evidence_digest(after) and not actions:
+        actions.append({
+            "action": "RECHECK_UNCLASSIFIED_EVIDENCE_CHANGE",
+            "reason": "Observation/source changed without a structural concept update."
+        })
     state = ("NO_EVIDENCE_CHANGE" if before_sha == after_sha else
-             "EVIDENCE_CHANGED_NO_DECISION_DELTA" if not actions else
+             "METADATA_CHANGED_NO_DECISION_DELTA" if not actions else
              "REVIEW_CANDIDATE_UPDATES")
     return {
         "schema": "ale-learning-delta-v0",
