@@ -24,6 +24,7 @@ from ale_anki_flag_feedback import read_flagged_cards
 
 DECISION_PATH = BASE / "quality_quarantine_decisions.json"
 AUDIT_PATH = BASE / "quality_quarantine_receipts.json"
+BASELINE_PATH = BASE / "quality_red_flags_seen.json"
 VALID_REASONS = frozenset({
     "BROKEN_PROMPT", "EMPTY_ANSWER", "AMBIGUOUS_PROMPT",
     "MULTIPLE_INFERENCES", "QUESTION_ANSWER_MISMATCH", "VERIFIED_FACT_ERROR",
@@ -107,9 +108,21 @@ def apply(base: Path, *, dry_run=True) -> dict:
     # First run a single-card-only plan; red flags are explicit owner signals
     # even if no review buttons have been pressed.
     flagged = read_flagged_cards()
+    # One-time baseline prevents mass suspension of historic non-quality flags.
+    # Subsequent newly observed red flags are explicit owner quality gestures.
+    seen_path = base / BASELINE_PATH.name
+    had_snapshot = seen_path.exists()
+    seen = load_json(seen_path)
+    if seen and (seen.get("schema") != 1 or not isinstance(seen.get("flagged_ids"), list)
+                 or any(not str(x).isdigit() for x in seen["flagged_ids"])):
+        raise RuntimeError("Invalid private red-flag baseline")
+    previously_flagged = set(str(x) for x in seen.get("flagged_ids", []))
+    new_owner_flags = flagged if had_snapshot else {}
+    new_owner_flags = {cid: note for cid, note in new_owner_flags.items()
+                       if cid not in previously_flagged}
     decisions = approved_decisions(load_json(base / DECISION_PATH))
     candidates: dict[int, dict] = {int(cid): {"note": note, "owner_red_flag": True}
-                                  for cid, note in flagged.items()}
+                                  for cid, note in new_owner_flags.items()}
     for d in decisions:
         cid = d["anki_card_id"]
         if cid in candidates and candidates[cid]["note"] != d["anki_note_id"]:
@@ -156,6 +169,9 @@ def apply(base: Path, *, dry_run=True) -> dict:
                         "action": "SUSPENDED_PENDING_REVIEW"})
         private_write(base / AUDIT_PATH, {"schema": 1, "actions": actions})
         applied += 1
+    # Commit seen-flag snapshot only after all proposed actions were verified.
+    # On failure, the idempotent next run safely repeats rechecks.
+    private_write(seen_path, {"schema": 1, "flagged_ids": sorted(flagged)})
     return {"eligible_to_quarantine": len(actionable),
             "already_suspended": already_suspended, "applied": applied}
 
