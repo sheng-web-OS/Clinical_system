@@ -1,5 +1,4 @@
 """Offline adversarial tests for bounded public-safe gap prioritization."""
-import copy
 import sys
 import unittest
 from pathlib import Path
@@ -31,8 +30,8 @@ class GapTriageTests(unittest.TestCase):
         self.assertFalse(result["decisions"][0]["source_verified_independently"])
 
     def test_multiple_critical_not_silently_downgraded(self):
-        result = run(gap("a", impact="CRITICAL"),
-                     gap("b", impact="CRITICAL"), capacity=1)
+        result = run(gap("alpha", impact="CRITICAL"),
+                     gap("beta", impact="CRITICAL"), capacity=1)
         self.assertEqual([d["decision"] for d in result["decisions"]],
                          ["RESEARCH_NOW", "CRITICAL_UNRESOLVED_HOLD"])
         self.assertEqual(result["critical_unresolved"], 1)
@@ -71,8 +70,8 @@ class GapTriageTests(unittest.TestCase):
                          ["RESEARCH_NOW", "QUEUE_RESEARCH"])
 
     def test_order_independent(self):
-        gaps = [gap("b", impact="BLOCKING"), gap("a", impact="CRITICAL"),
-                gap("c", families=5)]
+        gaps = [gap("beta", impact="BLOCKING"), gap("alpha", impact="CRITICAL"),
+                gap("gamma", families=5)]
         self.assertEqual(run(*gaps), run(*reversed(gaps)))
 
     def test_rejects_private_data_or_free_text_fields(self):
@@ -87,9 +86,9 @@ class GapTriageTests(unittest.TestCase):
 
     def test_rejects_invalid_or_ambiguous_ids_and_counts(self):
         for variant in (
-            [gap("a"), gap("a")],
+            [gap("alpha"), gap("alpha")],
             [gap("unsafe person name")],
-            [dict(gap("a"), linked_family_count=True)],
+            [dict(gap("alpha"), linked_family_count=True)],
         ):
             with self.assertRaises(ValueError):
                 run(*variant)
