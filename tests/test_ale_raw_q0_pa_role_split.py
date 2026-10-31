@@ -23,6 +23,22 @@ def source_packet(excerpt):
 
 
 class AldosteronismUnlabelledRoleQuestions(unittest.TestCase):
+    def test_actual_public_source_fixture_runs_without_semantic_labels(self):
+        import json
+        fixture = Path(__file__).resolve().parents[1] / (
+            "experiments/ale-pa-2025-raw-role-contrast-20261031.json"
+        )
+        packet = json.loads(fixture.read_text(encoding="utf-8"))
+        self.assertEqual(set(packet),
+                         {"source_classification", "source_ref", "excerpt"})
+        self.assertEqual(packet["source_ref"], SOURCE)
+        self.assertEqual(packet["excerpt"], ROLE_EXCERPT)
+        result = extract(packet)
+        self.assertEqual(result["decision"], "ASK_ONE_Q0_PENDING_Q2_Q3")
+        self.assertEqual(result["top_candidate"]["cue"], "MEASUREMENT_ROLE_SPLIT")
+        self.assertFalse(result["medical_semantics_verified"])
+        self.assertEqual(result["concept_promotions"], 0)
+
     def test_unlabelled_guideline_role_contrast_proposes_question(self):
         result = extract(source_packet(ROLE_EXCERPT))
         self.assertEqual(result["decision"], "ASK_ONE_Q0_PENDING_Q2_Q3")
