@@ -39,7 +39,10 @@ SOURCE = re.compile(r"^https://(?:www\.)?(?:pubmed\.ncbi\.nlm\.nih\.gov|"
 REVIEW = re.compile(r"^https://github\.com/sheng-web-OS/Clinical_system/(?:issues|pull)/\d+(?:#issuecomment-\d+)?$")
 BAD_HTML = re.compile(r"(?is)<\s*/?\s*(?:script|iframe|object|embed|form|input|audio|video|link|style)\b|"
                       r"\bon[a-z]+\s*=|javascript\s*:|data\s*:|<\s*img\b")
-ALLOWED_ACTIONS = {"version", "findNotes", "notesInfo", "deckNames", "createDeck", "addNote"}
+ALLOWED_ACTIONS = {"version", "findNotes", "notesInfo", "deckNames", "modelNames", "createDeck", "addNote"}
+# Deliberately bounded to non-nested native Cloze syntax. Do not silently flatten
+# malformed/nested clozes into a Basic note: that would test the wrong skill.
+CLOZE_RE = re.compile(r"\{\{c([1-9][0-9]*)::([^{}]+?)\}\}", re.DOTALL)
 MAX_PER_RUN = 10
 MAX_QUEUE_ROWS = 300
 MAX_HTML = 12000
@@ -54,6 +57,43 @@ def note_tag(key):
     if not KEY_RE.fullmatch(key):
         raise ValueError("Invalid card key")
     return "ale::card::" + key
+
+
+def note_payload(front, back):
+    """Determine native Anki note type from immutable, QA-reviewed text.
+
+    Private queue schema A:L remains unchanged: for Cloze, front_html is Text
+    and back_html is Extra. Existing non-cloze Basic rows remain compatible.
+    Nested and multi-index syntaxes are deliberately held for review rather
+    than being interpreted incorrectly by an older Mac Anki installation.
+    """
+    if "{{" in back or "}}" in back:
+        raise ValueError("Template tokens in answer/Extra are not supported")
+    matches = list(CLOZE_RE.finditer(front))
+    remaining = CLOZE_RE.sub("", front)
+    if "{{" in remaining or "}}" in remaining:
+        raise ValueError("Malformed/unsupported Anki cloze expression")
+    if not matches:
+        return "Basic", {"Front": front, "Back": back}
+    for match in matches:
+        segments = match.group(2).split("::")
+        if len(segments) > 2 or not segments[0].strip():
+            raise ValueError("Empty or malformed cloze answer")
+        if len(segments) == 2:
+            hint = segments[1].strip()
+            if not hint:
+                raise ValueError("Empty cloze hint")
+            # Structural anti-leak check only; independent semantic review is
+            # still required to reject indirect or overly specific hints.
+            normalize = lambda value: re.sub(r"\\s+", "", value).casefold()
+            if normalize(hint) == normalize(segments[0]):
+                raise ValueError("Cloze hint reveals the exact answer")
+    # A naked deletion is not a self-contained retrieval problem. Require at
+    # least a small amount of visible context after every target is masked.
+    visible = re.sub(r"(?s)<!--.*?-->|<[^>]*>", " ", remaining)
+    if len(re.findall(r"\\w", visible)) < 8:
+        raise ValueError("Cloze prompt lacks visible contextual information")
+    return "Cloze", {"Text": front, "Extra": back}
 
 
 def local_anki(action, **params):
@@ -116,7 +156,8 @@ def validate_ready(row):
     tags = row["tags"].split()
     if len(tags) > 20 or any(not SAFE_TAG.fullmatch(t) for t in tags):
         raise ValueError("Invalid card tags")
-    return tag, list(dict.fromkeys(tags + [tag]))
+    model, fields = note_payload(front, back)
+    return tag, list(dict.fromkeys(tags + [tag])), model, fields
 
 
 def verify_note(note_id, row):
@@ -124,13 +165,14 @@ def verify_note(note_id, row):
     if not isinstance(notes, list) or len(notes) != 1 or not isinstance(notes[0], dict):
         raise RuntimeError("Anki note readback missing")
     note = notes[0]
+    model, expected = note_payload(row["front_html"], row["back_html"])
+    if note.get("modelName") != model:
+        raise RuntimeError("Anki note type differs; no overwrite or migration")
     fields = note.get("fields", {})
-    actual_front = fields.get("Front", {}).get("value")
-    actual_back = fields.get("Back", {}).get("value")
-    if actual_front != row["front_html"] or actual_back != row["back_html"]:
+    if any(not isinstance(fields.get(key), dict) or
+           fields[key].get("value") != value
+           for key, value in expected.items()):
         raise RuntimeError("Anki note exists but content differs; no overwrite")
-    if note.get("modelName") != "Basic":
-        raise RuntimeError("Unexpected Anki note model")
     return note
 
 
@@ -220,11 +262,15 @@ def process(sheet, max_cards=MAX_PER_RUN):
     version = local_anki("version")
     if not isinstance(version, int) or version < 6:
         raise RuntimeError("AnkiConnect v6 unavailable")
+    models = local_anki("modelNames")
+    if not isinstance(models, list) or any(
+            model not in models for _, _, _, model, _ in approved):
+        raise RuntimeError("Required Anki Basic/Cloze note type unavailable")
     decks = local_anki("deckNames")
     if not isinstance(decks, list):
         raise RuntimeError("Local Anki decks unavailable")
     imported, recovered = 0, 0
-    for row, stable_tag, tags in approved:
+    for row, stable_tag, tags, model, fields in approved:
         current_row(sheet, row["_row"], row)
         old = existing_note(row, stable_tag)
         if old is not None:
@@ -235,8 +281,8 @@ def process(sheet, max_cards=MAX_PER_RUN):
                 local_anki("createDeck", deck=row["deck"])
                 decks.append(row["deck"])
             note_id = local_anki("addNote", note={
-                "deckName": row["deck"], "modelName": "Basic",
-                "fields": {"Front": row["front_html"], "Back": row["back_html"]},
+                "deckName": row["deck"], "modelName": model,
+                "fields": fields,
                 "tags": tags, "options": {"allowDuplicate": False},
             })
             if not isinstance(note_id, int) or note_id <= 0:
