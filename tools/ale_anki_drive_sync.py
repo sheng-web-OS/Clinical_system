@@ -295,7 +295,9 @@ def synchronize(base: Path, sheet: Sheets, lookback_days=7) -> dict:
 
     if fresh:
         for i in range(0, len(fresh), 200):
-            sheet.append(fresh[i:i + 200])
+            # Keep the local expected payload independent of transport/storage
+            # adapters; a test double or mutable client must not rewrite truth.
+            sheet.append([list(row) for row in fresh[i:i + 200]])
         after = _remote_event_index(sheet.existing_rows())
         # Every pre-existing key must survive and each newly appended event must
         # agree with its revlog identity/content (not just its event_key).
