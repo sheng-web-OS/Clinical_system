@@ -1,5 +1,5 @@
 #!/bin/bash
-# Read-only AnkiConnect -> owner-only Google Sheets. No Anki card/FSRS writes.
+# Owner-local read-only capture, then optional opt-in add-only Anki import.
 set -euo pipefail
 umask 077
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
@@ -27,3 +27,6 @@ fi
 # Tag-driven proposals are unconfirmed; prior owner skips remain excluded.
 # No question text, credential, private card ID or concept ID enters public logs.
 "$PY" "$HERE/ale_anki_auto_classify.py"
+# Importer is disabled by default. Only owner-private QA-released queue rows
+# can trigger an add-only Anki write; no old note or FSRS modification.
+"$PY" "$HERE/ale_anki_import_queue.py" run
