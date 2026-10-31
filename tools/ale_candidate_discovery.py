@@ -37,6 +37,76 @@ def _key(signature: tuple[str, str, str]) -> str:
     return "inference-" + hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:16]
 
 
+
+def _feature_set(record: dict) -> frozenset[str] | None:
+    """Return annotated conditions, or None when scope evidence is absent.
+
+    A feature is an author-provided *hypothesis*, not a source-verified fact.
+    Restrict names to stable public-safe role tokens to discourage prose/PHI.
+    """
+    features = record.get("context_features")
+    if features is None:
+        return None
+    if not isinstance(features, list) or len(features) > 16:
+        raise ValueError("context_features must be a list of at most 16 tokens")
+    import re
+    if any(not isinstance(x, str) or
+           not re.fullmatch(r"[a-z][a-z0-9_]{1,63}", x) for x in features):
+        raise ValueError("context_features must contain only role tokens")
+    if len(set(features)) != len(features):
+        raise ValueError("duplicate context feature")
+    return frozenset(features)
+
+
+def scoped_refinements(groups: dict, contrary: dict) -> list[dict]:
+    """Q3 counterexample -> next Q0: propose a minimal *conditional* repair.
+
+    The refined candidate stays UNVERIFIED, even when a guard separates all
+    known examples. A new unseen counterexample sharing the guard is mandatory.
+    """
+    from itertools import combinations
+    revised: list[dict] = []
+    for signature, supports in sorted(groups.items()):
+        challenges = contrary.get(signature, [])
+        if len({x["family_id"] for x in supports}) < 2 or not challenges:
+            continue
+        positive = [_feature_set(x) for x in supports]
+        negative = [_feature_set(x) for x in challenges]
+        if any(x is None for x in positive + negative):
+            continue
+        shared = sorted(set.intersection(*(set(x) for x in positive)))
+        if not shared:
+            continue
+        guard = None
+        # Bounded hitting set: all supports have every guard condition, while
+        # every known counterexample is missing at least one guard condition.
+        for count in range(1, min(3, len(shared)) + 1):
+            options = (part for part in combinations(shared, count)
+                       if all(not set(part).issubset(neg) for neg in negative))
+            guard = next(options, None)
+            if guard is not None:
+                break
+        if guard is None:
+            continue
+        original_id = _key(signature)
+        revised.append({
+            "parent_candidate": original_id,
+            "candidate_id": original_id + "-scoped",
+            "stage": "Q3_TO_Q0_SCOPE_HYPOTHESIS",
+            "required_context_features": list(guard),
+            "support_ids": sorted(x["id"] for x in supports),
+            "known_excluded_counterexamples": sorted(x["id"] for x in challenges),
+            "question_q0": "Does the proposed condition change the original inference?",
+            "question_q1": "Is the contradiction genuine or a scope mismatch?",
+            "question_q2": "Which primary evidence supports the proposed conditional bridge?",
+            "question_q3": "Find an unseen counterexample sharing EVERY proposed condition.",
+            "verdict": "SCOPED_CANDIDATE_NEEDS_SEMANTIC_REVIEW",
+            "promotion_authorized": False,
+            "reason": "Role features are proposer assertions; matching them is not clinical or logical proof."
+        })
+    return revised
+
+
 def discover(data: dict) -> dict:
     """Discover cross-family clusters; run skeptical gate, never promote.
 
@@ -99,10 +169,12 @@ def discover(data: dict) -> dict:
 
     checked = evaluate({"observations": observations, "proposals": proposals,
                         "dependencies": dependencies})
+    refinements = scoped_refinements(groups, contrary)
     return {"schema": "ale-recursive-discovery-v0",
             "origin": "STRUCTURED_PUBLIC_EVIDENCE_PROPOSAL",
             "proposal_count": len(proposals),
             "candidate_preflight": preflight,
+            "recursive_scope_refinements": refinements,
             "gate": checked,
             "next_step": "independent semantic and source verification; resolve adversarial cases",
             "external_model_calls": 0,
