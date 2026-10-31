@@ -3,6 +3,7 @@ import importlib.util
 from pathlib import Path
 import sys
 import types
+import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -164,6 +165,78 @@ class TestRedFlagFeedback(unittest.TestCase):
         _, rows = mod.plan_events({}, {"42": 9}, NOW)
         with self.assertRaisesRegex(RuntimeError, "readback"):
             mod.sync_event_rows(sheet, rows)
+
+    def test_later_retry_recovers_remote_observation_without_overwriting_diagnosis(self):
+        sheet = FakeSheet()
+        _, original = mod.plan_events({}, {"42": 9}, NOW)
+        sheet.rows = [list(original[0])]
+        sheet.rows[0][5] = "DIAGNOSIS_REVIEW_PENDING"
+        _, retry = mod.plan_events({}, {"42": 9}, "2026-10-31T14:05:00+00:00")
+        self.assertEqual(mod.sync_event_rows(sheet, retry), (0, 1))
+        self.assertEqual(retry[0][1], NOW)
+        self.assertEqual(sheet.rows[0][5], "DIAGNOSIS_REVIEW_PENDING")
+        self.assertEqual(sheet.session.posts, [])
+
+    def test_recovery_rejects_changed_note_even_with_valid_old_timestamp(self):
+        sheet = FakeSheet()
+        _, original = mod.plan_events({}, {"42": 9}, NOW)
+        sheet.rows = [list(original[0])]
+        sheet.rows[0][3] = "10"
+        _, retry = mod.plan_events({}, {"42": 9}, "2026-10-31T14:05:00+00:00")
+        with self.assertRaisesRegex(RuntimeError, "mismatch"):
+            mod.sync_event_rows(sheet, retry)
+        self.assertEqual(sheet.session.posts, [])
+
+    def test_recovery_rejects_invalid_naive_or_future_observation_time(self):
+        for invalid in ("NOT_VERIFIED", "2026-10-31T14:00:00", "2026-10-31T14:10:00+00:00"):
+            with self.subTest(timestamp=invalid):
+                sheet = FakeSheet()
+                _, rows = mod.plan_events({}, {"42": 9}, NOW)
+                sheet.rows = [list(rows[0])]
+                sheet.rows[0][1] = invalid
+                _, retry = mod.plan_events({}, {"42": 9}, "2026-10-31T14:05:00+00:00")
+                with self.assertRaisesRegex(RuntimeError, "timestamp"):
+                    mod.sync_event_rows(sheet, retry)
+                self.assertEqual(sheet.session.posts, [])
+
+    def test_run_persists_recovered_time_after_checkpoint_write_failure(self):
+        sheet = FakeSheet()
+        _, original = mod.plan_events({}, {"42": 9}, NOW)
+        sheet.rows = [list(original[0])]
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.object(mod, "load_json", side_effect=lambda p, required=False:
+                    {"tab": "Error_Events", "spreadsheet_id": "dummy"} if required else {}), \
+                    patch.object(mod, "read_flagged_cards", return_value={"42": 9}), \
+                    patch.object(mod, "utc_now", return_value="2026-10-31T14:05:00+00:00"), \
+                    patch.object(mod, "Sheets", return_value=sheet), \
+                    patch.object(mod, "ensure_feedback_tab"), \
+                    patch.object(mod, "private_write", side_effect=[OSError("synthetic failure"), None]) as save:
+                with self.assertRaises(OSError):
+                    mod.run(Path(tmp))
+                self.assertEqual(mod.run(Path(tmp)), (1, 0, 1))
+        self.assertEqual(save.call_args.args[1]["cards"]["42"]["first_detected_utc"], NOW)
+        self.assertEqual(len(sheet.rows), 1)
+        self.assertEqual(sheet.session.posts, [])
+
+    def test_partial_batch_append_lost_ack_recovers_without_duplicate_rows(self):
+        sheet = FakeSheet()
+        _, rows = mod.plan_events({}, {"42": 9, "43": 10}, NOW)
+        sheet.rows = [list(rows[0])]
+
+        def append_then_lose_ack(url, json=None, **kwargs):
+            sheet.session.posts.append((url, json))
+            sheet.rows.extend([list(row) for row in json["values"]])
+            raise OSError("synthetic ACK loss after append")
+
+        with patch.object(sheet.session, "post", side_effect=append_then_lose_ack):
+            _, retry = mod.plan_events({}, {"42": 9, "43": 10}, "2026-10-31T14:05:00+00:00")
+            with self.assertRaises(OSError):
+                mod.sync_event_rows(sheet, retry)
+        _, final_retry = mod.plan_events({}, {"42": 9, "43": 10}, "2026-10-31T14:10:00+00:00")
+        self.assertEqual(mod.sync_event_rows(sheet, final_retry), (0, 2))
+        self.assertEqual([row[1] for row in final_retry], [NOW, "2026-10-31T14:05:00+00:00"])
+        self.assertEqual(len(sheet.rows), 2)
+        self.assertEqual(len(sheet.session.posts), 1)
 
 if __name__ == "__main__":
     unittest.main()
