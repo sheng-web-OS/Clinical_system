@@ -26,7 +26,7 @@ def preview_masked_fronts(rendered: str, groups) -> dict:
     two or more simultaneous omissions destroy the causal context. It does NOT
     claim to judge clinical correctness or semantic answerability.
     """
-    pattern = re.compile(r"\\{\\{c([1-9][0-9]*)::([^{}]*?)(?:::([^{}]*?))?\\}\\}")
+    pattern = re.compile(r"\{\{c([1-9][0-9]*)::([^{}]*?)(?:::([^{}]*?))?\}\}")
     def front(group):
         def replacement(match):
             if int(match.group(1)) == group:
