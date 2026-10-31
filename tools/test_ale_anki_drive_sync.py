@@ -24,6 +24,9 @@ class FakeSheet:
     def existing_ids(self):
         return list(self.keys)
 
+    def existing_rows(self):
+        return [list(row) for row in self.rows]
+
     def append(self, rows):
         self.append_calls += 1
         self.rows += rows
@@ -122,6 +125,71 @@ class PrivateBridgeTests(unittest.TestCase):
             result = self.run_sync(Path(d)/"local", sh, events=[])
             self.assertEqual(result["new_events_uploaded"], 0)
             self.assertEqual(sh.append_calls, 0)
+
+
+class ContentReadbackTests(PrivateBridgeTests):
+    """Same synthetic fixture; extra cases reject key-only false positives."""
+
+    def test_rating_corruption_halts_cursor_and_retry(self):
+        class AlteredSheet(FakeSheet):
+            def append(self, rows):
+                super().append(rows)
+                self.rows[-1][5] = "4"
+        with tempfile.TemporaryDirectory() as d:
+            sh, base = AlteredSheet(), Path(d)/"private"
+            with self.assertRaisesRegex(RuntimeError, "immutable review content"):
+                self.run_sync(base, sh)
+            self.assertFalse((base/p.STATE_NAME).exists())
+            with self.assertRaisesRegex(RuntimeError, "immutable review content"):
+                self.run_sync(base, sh)
+            self.assertEqual(sh.append_calls, 1)
+
+    def test_note_id_corruption_halts_cursor(self):
+        class AlteredSheet(FakeSheet):
+            def append(self, rows):
+                super().append(rows)
+                self.rows[0][3] = "999999"
+        with tempfile.TemporaryDirectory() as d:
+            sh, base = AlteredSheet(), Path(d)/"private"
+            with self.assertRaisesRegex(RuntimeError, "note identity"):
+                self.run_sync(base, sh)
+            self.assertFalse((base/p.STATE_NAME).exists())
+
+    def test_existing_wrong_rating_rejected_even_when_key_present(self):
+        with tempfile.TemporaryDirectory() as d:
+            base, sh = Path(d)/"private", FakeSheet()
+            self.run_sync(base, sh)
+            sh.rows[0][5] = "4"
+            with self.assertRaisesRegex(RuntimeError, "immutable review content"):
+                self.run_sync(base, sh)
+            self.assertEqual(sh.append_calls, 1)
+
+    def test_diagnostic_fields_are_mutable_without_duplication(self):
+        with tempfile.TemporaryDirectory() as d:
+            base, sh = Path(d)/"private", FakeSheet()
+            self.run_sync(base, sh)
+            sh.rows[0][6] = "OWNER_VERIFIED_CAUSE"
+            sh.rows[0][9] = "DIAGNOSED"
+            result = self.run_sync(base, sh)
+            self.assertEqual(result["already_present"], 2)
+            self.assertEqual(sh.append_calls, 1)
+
+    def test_lost_ack_corruption_stops_recovery(self):
+        class CorruptAmbiguous(FakeSheet):
+            def append(self, rows):
+                self.append_calls += 1
+                self.rows.extend(rows)
+                self.keys.extend(r[0] for r in rows)
+                self.rows[0][2] = "123456"
+                raise RuntimeError("connection lost")
+        with tempfile.TemporaryDirectory() as d:
+            sh, base = CorruptAmbiguous(), Path(d)/"private"
+            with self.assertRaisesRegex(RuntimeError, "connection lost"):
+                self.run_sync(base, sh)
+            with self.assertRaisesRegex(RuntimeError, "immutable review content"):
+                self.run_sync(base, sh)
+            self.assertEqual(sh.append_calls, 1)
+
 
 
 class FakeAuditSheet:
