@@ -230,6 +230,8 @@ class GitHubReader:
             raise failure from None
         except OSError:
             raise GitHubReadFailure("TRANSIENT_TOOL_ERROR") from None
+        except DispatchError:
+            raise
         except ValueError:
             raise GitHubReadFailure("GITHUB_INVALID_RESPONSE") from None
 

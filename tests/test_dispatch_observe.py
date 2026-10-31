@@ -273,6 +273,21 @@ class GitHubReaderFailureTest(unittest.TestCase):
         self.assertEqual(1, call.call_count)
         self.assertEqual("GITHUB_HTTP_ERROR", str(self.failure(404)))
 
+    def test_success_and_response_size_guard_keep_existing_contract(self):
+        for payload, expected in ((b'{"ok": true}', None),
+                                  (b"x" * 2000001, "GITHUB_RESPONSE_TOO_LARGE")):
+            with self.subTest(expected=expected):
+                response = mock.MagicMock()
+                response.__enter__.return_value.read.return_value = payload
+                with mock.patch("urllib.request.urlopen", return_value=response) as call:
+                    if expected:
+                        with self.assertRaisesRegex(DispatchError, "^" + expected + "$"):
+                            GitHubReader()(ROOT)
+                    else:
+                        self.assertEqual({"ok": True}, GitHubReader()(ROOT))
+                response.__enter__.return_value.read.assert_called_once_with(2000001)
+                self.assertEqual(1, call.call_count)
+
     def test_cli_exposes_sanitized_evidence_and_no_execution_authority(self):
         headers = Message()
         headers["Retry-After"] = "60"
