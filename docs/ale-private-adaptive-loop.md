@@ -36,9 +36,9 @@ included or needed to run the offline tests.
 The locally-installed Mac checkout will continue running its old checked-out
 script until a safe, normal local code update. Committing this GitHub PR does
 **not** remotely modify the owner's Mac, Google credentials or LaunchAgent.
-No new Anki review has been supplied: the single existing review was skipped,
-so the expected pilot output is **zero new concept mappings**, not a fabricated
-success. No automatic background 30-minute wake nor scheduled cloud private
+No actual owner-private review data has been committed or analyzed by
+public CI. No claimed new concept mapping or learner gain is made here.
+No automatic background 30-minute wake nor scheduled cloud private
 read has been independently demonstrated as fully unattended. A successful
 GitHub test is not an owner-Mac, cloud-learning, or learner-gain acceptance.
 
