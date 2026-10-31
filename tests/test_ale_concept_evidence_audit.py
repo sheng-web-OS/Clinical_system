@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from ale_concept_evidence_audit import inspect_evidence
+from ale_concept_evidence_audit import inspect_evidence, inspect_remote, MAP_HEADER
 
 KEY = "anki-revlog:2000000000000:812001"
 
@@ -89,6 +89,29 @@ class EvidenceJoinTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "unrecognized concept"):
             inspect_evidence([event()], [mapping(concept="unknown")],
                              ["synthetic-concept-1"])
+
+
+    def test_owner_local_sheet_adapter_is_read_only(self):
+        class FakePrivateSheet:
+            def __init__(self):
+                self.calls = []
+            def verify_schema(self):
+                self.calls.append("verify_schema")
+            def get(self, a1):
+                self.calls.append(a1)
+                return {
+                    "Error_Events!A2:N": [event()],
+                    "Card_Concept_Map!A1:K1": [MAP_HEADER],
+                    "Card_Concept_Map!A2:K": [mapping()],
+                    "Concepts!A1:J1": [["concept_id", "domain"]],
+                    "Concepts!A2:J": [["synthetic-concept-1", "clinical"]],
+                }[a1]
+        sh = FakePrivateSheet()
+        r = inspect_remote(sh)
+        self.assertEqual(r["mapped_recall_only"], 1)
+        self.assertEqual(r["anki_mutations"], 0)
+        self.assertEqual(sh.calls.count("Error_Events!A2:N"), 2)
+        self.assertFalse(any("append" in c.lower() for c in sh.calls))
 
     def test_all_identity_ids_stay_out_of_report(self):
         r = inspect_evidence([event()], [mapping()], ["synthetic-concept-1"])
