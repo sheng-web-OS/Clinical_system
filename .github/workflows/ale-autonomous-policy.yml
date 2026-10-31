@@ -1,0 +1,25 @@
+name: ALE offline autonomous policy tests
+on:
+  pull_request:
+    paths:
+      - 'tools/ale_autonomy_core.py'
+      - 'tests/test_ale_autonomy_core.py'
+      - '.github/workflows/ale-autonomous-policy.yml'
+  push:
+    branches:
+      - 'feature/ale-private-autonomy-loop-*'
+jobs:
+  offline-policy:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run offline synthetic unit tests
+        run: python -m unittest discover -s tests -p 'test_ale_autonomy_core.py' -v

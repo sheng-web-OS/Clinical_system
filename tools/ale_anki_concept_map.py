@@ -43,13 +43,15 @@ def latest_unlinked_review(reviews: list, mappings: list, skipped: set[str] | No
 
 
 def catalog_signature(ids: list[str]) -> str:
-    """A catalog revision changes the owner's previously skipped candidates."""
+    """Catalog fingerprint is metadata; explicit skips persist across catalog changes."""
     return hashlib.sha256("\n".join(sorted(ids)).encode("utf-8")).hexdigest()
 
 
 def skipped_for_catalog(base: Path, ids: list[str]) -> set[str]:
     data = load_json(base / SKIP_NAME)
-    if not data or data.get("signature") != catalog_signature(ids):
+    # Owner chose to preserve skipped cards across catalog versions.
+    # Catalog changes must not silently revoke a prior explicit skip.
+    if not data:
         return set()
     raw = data.get("skipped_cards", [])
     if not isinstance(raw, list) or not all(isinstance(x, str) and x.isdigit() for x in raw):

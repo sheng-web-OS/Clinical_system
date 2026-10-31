@@ -48,7 +48,7 @@ class ConceptMapTests(unittest.TestCase):
         row = m.mapping_row(E, "c", "2026-10-31")
         self.assertEqual(row[5], "TESTS_THIS_CARD_DIRECTION_ONLY")
 
-    def test_skip_prevents_repeat_until_catalog_change(self):
+    def test_skip_persists_across_catalog_change(self):
         from pathlib import Path
         import tempfile
         with tempfile.TemporaryDirectory() as directory:
@@ -58,7 +58,7 @@ class ConceptMapTests(unittest.TestCase):
             m.remember_skip(base, catalog, 222)
             self.assertEqual(m.skipped_for_catalog(base, catalog), {"222"})
             self.assertIsNone(m.latest_unlinked_review([E], [], m.skipped_for_catalog(base, catalog)))
-            self.assertEqual(m.latest_unlinked_review([E], [], m.skipped_for_catalog(base, catalog + ["new-concept"])), E)
+            self.assertIsNone(m.latest_unlinked_review([E], [], m.skipped_for_catalog(base, catalog + ["new-concept"])))
 
     def test_skip_files_are_private(self):
         from pathlib import Path
