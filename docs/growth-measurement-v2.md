@@ -6,7 +6,7 @@
 
 [Issue #137](https://github.com/sheng-web-OS/Clinical_system/issues/137) 的固定 1–5 成熟度錨點只適合低頻、長期、跨任務驗證；在一天多次工程與教學修改下，離散階段會產生「能力正在形成但評分不動」的解析度不足。相反，產生更多 PR、CI success、提示詞或報告也不能自動增加能力評分。
 
-**核心改動：保留成熟度階段，新增可核實的逐事件成長訊號與跨時間窗的結果比較。** 成長的最高驗收是：獨立的新題／新任務表現改善、品質未下降、真正交付增加，且 owner 介入下降；不是事件數變多。所有分母、證據等級、未測量欄位必須可追溯。**沒有充分事件資料，禁止生成人工精細的 1.2/5、83.6 分或能力增益百分比。**
+**核心改動：保留成熟度階段，新增可核實的逐事件成長訊號與跨時間窗的結果比較。** **最高優先結果是 Agent 自身從新證據形成可追溯的知識／決策修正，並在獨立、未見任務中證明真正改善及跨輪保留。** 讀者或 owner 的學習收益、實際交付與較少人工介入是彼此獨立的結果與護欄；不是事件數變多。所有分母、證據等級、未測量欄位必須可追溯。**沒有充分事件資料，禁止生成人工精細的 1.2/5、83.6 分或能力增益百分比。**
 
 既有來源仍為 #137（成長基準）、#133（唯一失敗事件源）、#254（跨工作槽交付路線）、原始 PR/CI/QA/正式站驗收、`experiments/README.md`（證據等級）及私人 ALE/Anki 合規聚合；**不新增服務、資料庫、排程、公開網站儀表板或第二事件台帳**。
 
@@ -38,7 +38,22 @@
 
 **注意：**私人 Anki 卡面、作答紀錄、學習者識別及任何臨床私有資料不得寫入公開 GitHub；僅在適用授權下使用最小化且無法回推出個人的聚合。保留先前跳過的 Anki 卡片，不以刪卡製造學習改善。
 
-## 3. 三個最高優先的結果指標
+## 3. 成長結果的優先序：Agent 學會 → 使用者受益 → 自主交付（效率為護欄）
+
+依 [#254 owner strategic correction](https://github.com/sheng-web-OS/Clinical_system/issues/254#issuecomment-6541025279)，後列原 P1/P2/P3 指標保留、各自獨立，但**不可把「使用者學會」直接當作「Agent 學會」**。評估上位結構為三條曲線 A. agent evidence-backed learning（首要）／B. 使用者或產品被獨立驗證的實際增益／C. 自主交付與可靠性；人工時間、成本為 C 的條件式護欄。
+
+### A｜可反證的 Agent 自身學習（首要，不能由提交或 CI 代替）
+
+最小可檢驗事件：`source identity → frozen before-claim/prediction → new independent observation → competing explanations & counterexample → versioned concept/policy/skill revision → independent agent-unseen fresh challenge → baseline/after comparison → negative control & regression → next-run retained/recovered state`。必須區分：
+- 新增有效知識（new justified knowledge）：以前沒有支持、現在經新證據與反例檢驗而成立。
+- 糾正錯誤（error correction）：先前結論有可重現的錯誤，修改後未見反例改善。
+- 重新檢索或分類（retrieval/relabeling only）：資訊量增加但尚未證明決策品質改善，**不得領取已驗證學習增益**。
+- 若 skill、memory 或 Concept Family 只是外部可逆狀態而非模型權重改變，須如實寫 versioned external state learning；不可宣稱模型權重已自我訓練。
+- **保留與遷移**：不同排程輪次可復原修正，並在未曝光的另一題族使用；來源/題目/答案不得提前洩漏。題族重合、同模型自評或樣本不足 → `INCONCLUSIVE`。
+
+有可信分母時分別報 `independently_validated_learning_events / eligible_learning_hypotheses`、`corrected_misgeneralizations / independently_challenged_cases`、`retained_after_restart / eligible_retention_probes`，附原始樣本、對照組及成本；**樣本不存在就 NOT_MEASURED，不湊比例**。
+
+### B｜下游實際效益（包含原本的 P1 讀者／owner 學習）
 
 ### P1｜未見題／延遲題的實際學習增益（Outcome）
 
@@ -50,7 +65,7 @@
 
 **必須切開**：owner 的私人學習成效 vs 網站讀者的受控教學試驗 vs Agent 自身的能力評估。三者不得混為同一學習曲線。初期沒有真人實驗、未見題或後測時標記 `NOT_MEASURED`。
 
-### P2｜真正被接受的自主交付（Outcome）
+### C｜原 P2：真正被接受的自主交付（Enabler / outcome）
 
 `unprompted_independently_accepted_tasks / preregistered_eligible_tasks`：分子須有當輪之前已定義的完成條件、無額外 owner 催促、真實交付，以及不同執行角色或客觀 gate 接受；分母**同時包含尚未完成、明確失敗以及合法 BLOCKED 的已承諾 eligible 任務**，需另列阻塞率，避免只挑容易成功者。明確不合法、不在授權範圍的任務不列 eligible，需記排除理由。
 
@@ -58,7 +73,7 @@
 
 分欄記 `owner-initiated`（使用者要求開始）、`owner-nudged`（中途催促／修正）、`scheduled-unprompted`、`agent-proposed` 與 `mandatory-approval`；合法醫學審批不視為 Agent 缺陷，卻仍如實記 owner 負擔。
 
-### P3｜品質約束下的 owner 注意力成本（Outcome）
+### C 的護欄｜原 P3：品質約束下的 owner 注意力成本
 
 `owner_measured_minutes / independently_accepted_task_count`；另列 `owner_interruptions` 件數與分布，以及 `verified_net_teaching_units`（沿用 #137 嚴格品質定義）。
 
@@ -109,6 +124,15 @@ metric_numerator, metric_denominator, sample_coverage, missingness
 例（**純示意，非觀測結果**）：
 `1/5 unchanged | identified 6 → executed 4 → independent accepted 1 | no-nudge accepted 1/5 | owner minutes NOT_MEASURED | unseen transfer NOT_MEASURED`
 表示有新的短期證據，但尚未證明跨題穩定自主，更沒有證明教學成效。
+
+## 6.1 自動研發決策回路（現有工程工作槽，不新建平台）
+
+- 既有排程「Clinical OS｜GitHub 工程工作槽」是主動實作端；#244 GDC/ADPC 是研究選題與停損唯一源，#254 為後 72h 跨槽索引，本 PR 只提供診斷工具與證據契約。不能修改原 #137 72h 成績。
+- 每個**自然排程機會**先從已授權且未完成的 P0/P1、PiCCO #243 窄授權門檻、#241/交付依賴與作者衝突中辨識可完成的下一步；每輪最多一個主要實質交付。只有當新的不確定性會改變下一步時，採「近期領域研究 → 原研究方法/反例 → 可遷移性 → 低成本可否證試驗」；不存在文獻不是無人研究的證明。
+- 候選處置為 `CONTINUE/PIVOT/CHEAP_PROBE/PARK/STOP_L0/REQUEST_AUTHORIZATION`。停選只對原工程槽自己、可逆且無 owner 承諾的 L0 工作有效，沿用 #244 已授權的精確 receipt、rollback、7 日內重審；絕不停止正式 QA、醫學發布 gate、原 Writer 或原 72h 守護。
+- 每次有新 outcome 才更新既有 Issue/PR，附 source/SHA、frozen before 版本、追加觀察、獨立驗證、否定案例、下一 gate；沒有新證據 `NO_CHANGE`。**不需要定期生成長篇研究報告或持續搜尋**。
+- 在 2026-11-01 14:20:15 Asia/Taipei 原試驗時窗結束前，只允許原授權的隔離、非敏感 Shadow 與本 PR 工程，不碰原 cohort/保護路徑；之後也需先核對 #137 真實結案與原 tasks 的條件。
+- 本決策更新由 owner-directed 啟用，不能計入以前或未來對照中未提示自主修正的成功分子；要在**後續真正未提示、事前凍結的新任務**中驗證增益。
 
 ## 7. 導入與接受條件
 
