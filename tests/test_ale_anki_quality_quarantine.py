@@ -57,9 +57,22 @@ class TestQuarantine(unittest.TestCase):
         with self.assertRaises(ValueError):
             mod.write_action("setFlag", cards=[42], flag=3)
 
+    def test_first_scan_baselines_existing_flags_no_mutation(self):
+        card,_=decision()
+        with patch.object(mod.Path,"exists",return_value=True), \
+             patch.object(mod,"read_flagged_cards",return_value={"42":9}), \
+             patch.object(mod,"check_card",return_value=card), \
+             patch.object(mod,"is_suspended",return_value=False), \
+             patch.object(mod,"write_action") as writer, \
+             patch.object(mod,"private_write") as state:
+            self.assertEqual(mod.apply(Path("/unused"),dry_run=False)["applied"],0)
+            writer.assert_not_called()
+            self.assertEqual(state.call_args.args[1]["flagged_ids"], ["42"])
+
     def test_owner_flag_eligible_dry_run_zero_writes(self):
         card, _ = decision()
-        with patch.object(mod, "read_flagged_cards", return_value={"42":9}), \
+        with patch.object(mod.Path, "exists", return_value=True), \
+             patch.object(mod, "read_flagged_cards", return_value={"42":9}), \
              patch.object(mod, "check_card", return_value=card), \
              patch.object(mod, "is_suspended", return_value=False), \
              patch.object(mod, "write_action") as writer:
@@ -80,8 +93,8 @@ class TestQuarantine(unittest.TestCase):
              patch.object(mod, "write_action", side_effect=do_write), \
              patch.object(mod, "private_write") as audit:
             self.assertEqual(mod.apply(Path("/unused"), dry_run=False)["applied"],1)
-            audit.assert_called_once()
-            self.assertEqual(audit.call_args.args[1]["actions"][0]["reason"],"OWNER_RED_FLAG")
+            self.assertGreaterEqual(audit.call_count, 2)
+            self.assertEqual(audit.call_args_list[0].args[1]["actions"][0]["reason"],"OWNER_RED_FLAG")
 
     def test_existing_suspend_not_repeated(self):
         card,_=decision()
@@ -131,7 +144,7 @@ class TestQuarantine(unittest.TestCase):
             self.assertEqual(mod.apply(Path("/unused"),dry_run=False)["applied"],1)
             self.assertEqual(current_flag,1)
             self.assertTrue(suspended)
-            self.assertEqual(audit.call_args.args[1]["actions"][0]["reason"],"AMBIGUOUS_PROMPT")
+            self.assertEqual(audit.call_args_list[0].args[1]["actions"][0]["reason"],"AMBIGUOUS_PROMPT")
 
     def test_identity_mismatch_cannot_apply(self):
         card, d=decision()
