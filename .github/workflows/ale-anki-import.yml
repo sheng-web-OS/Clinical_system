@@ -7,6 +7,8 @@ on:
     paths:
       - 'tools/ale_anki_import_queue.py'
       - 'tests/test_ale_anki_import_queue.py'
+      - 'tools/ale_anki_cloze_handoff.py'
+      - 'tests/test_ale_anki_cloze_handoff.py'
       - '.github/workflows/ale-anki-import.yml'
 jobs:
   import-offline:
@@ -23,4 +25,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Run synthetic-only importer tests (no credentials or Anki access)
-        run: python -m unittest discover -s tests -p 'test_ale_anki_import_queue.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_ale_anki_import_queue.py' -v
+          python -m unittest discover -s tests -p 'test_ale_anki_cloze_handoff.py' -v
