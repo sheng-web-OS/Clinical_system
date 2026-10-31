@@ -14,9 +14,9 @@ Use the existing #260 raw-text Q0 module, not a new taxonomy or agent pipeline. 
 
 The machine-readable entry is [a single source-linked short (20-word) exact excerpt](./ale-pa-2025-raw-role-contrast-20261031.json), `source_ref=pmid_40658480`, **without** any family ID, severity rank or relation labels. It explicitly contrasts why potassium is measured alongside renin/aldosterone with what potassium is **not** itself used for. Do not supply a full copyrighted guideline page as input.
 
-**RED baseline:** `tools/ale_raw_q0_probe.py` previously keyed mostly on `despite / cannot / unless`, missing `not for ... but to ...` in the guideline sentence. The 8 newly introduced regression tests exposed this false negative; GitHub Actions commit `ba7a034` failed as expected (additional existing bad unittest method signature was also exposed).
+**RED baseline:** `tools/ale_raw_q0_probe.py` previously keyed mostly on `despite / cannot / unless`, missing `not for ... but to ...` in the guideline sentence. The 8 initial new regression tests exposed this false negative; GitHub Actions commit `ba7a034` failed as expected (additional existing bad unittest method signature was also exposed).
 
-**Repair:** add generic `MEASUREMENT_ROLE_SPLIT` and `MEASUREMENT_VALIDITY_RISK` text cues, suppress editorial `not for publication` lookalikes, retain exact spans, source type and non-private constraints. Also repair existing `test_no_label_or_private_data(self)` signature. **No medical edge is inferred** by the lexical rule. Evidence quality, mechanistic direction and classification still require a separate semantic pass and independent clinical review.
+**Repair:** add generic `MEASUREMENT_ROLE_SPLIT` and `MEASUREMENT_VALIDITY_RISK` text cues, suppress editorial `not for publication` lookalikes, retain exact spans, source type and non-private constraints. Also repair existing `test_no_label_or_private_data(self)` signature. **No medical edge is inferred** by the lexical rule. Post-repair commit `712fffae` GitHub Actions `41208787527` succeeded, 443 unittest cases/OK. The later fixture roundtrip increment awaits its own exact-head CI. Evidence quality, mechanistic direction and classification still require a separate semantic pass and independent clinical review.
 
 ## Candidate problem-centered Family (authoring-model interpretation, NOT code-discovered)
 
@@ -54,7 +54,7 @@ Candidate cross-family **`one-observation-multiple-decision-roles`**: one observ
 
 ## Technical falsification and honest milestones
 
-- `tests/test_ale_raw_q0_pa_role_split.py`: 8 new cases assert finding the evidence phrase with zero supplied clinical label, generic false-signal cues, provenance spans, negative/metadata controls and no forced concept creation.
+- `tests/test_ale_raw_q0_pa_role_split.py`: **9** regression cases (8 initial + 1 actual-fixture roundtrip) assert the evidence phrase with zero supplied clinical labels, generic false-signal cues, provenance spans, negative/metadata controls and no forced concept creation.
 - `experiments/ale-pa-2025-raw-role-contrast-20261031.json`: tiny attributable source excerpt. 
 - `tools/ale_raw_q0_probe.py`: improved Q0 *attention* only. Formal semantic induction, accepted ontology edge, independent clinician QA, cross-run memory and unseen learner benefit remain **NOT_MEASURED / NOT_IMPLEMENTED**.
 - Comparison outcome needed: hold the same source and time budget; compare *tag-first*, original Q0, revised Q0 plus independent Q2/Q3 analysis. Measure exact-span recall, useful questions per source, false triggers, wrong edge targets, overlooked applicability exceptions and owner prompts. **Do not inflate a hand-written 8-test regression to scientific generalization.**
