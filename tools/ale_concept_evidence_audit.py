@@ -124,6 +124,10 @@ def inspect_evidence(events: list[list], mappings: list[list],
             counts["other_review_without_versioned_context"] += 1
             continue
         event_at = _datetime(row[1])
+        from datetime import datetime, timezone
+        recorded_at = datetime.fromtimestamp(int(match.group(1)) / 1000, tz=timezone.utc)
+        if abs((event_at - recorded_at).total_seconds()) > 0.001:
+            raise RuntimeError("Review timestamp does not match its revlog identity")
         if event_at > linked["confirmed_at"]:
             raise RuntimeError("Concept mapping confirmed before its anchor review")
         if _str(row[4]):
