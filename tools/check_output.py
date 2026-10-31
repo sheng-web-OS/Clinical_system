@@ -20,6 +20,14 @@ EXPECTED = {
 } | POCKET_SOURCE_ASSETS | {row["output"] for row in PAGES}
 if any(page["output"] == "xiaoma-20261027-cticu-oxygen-delivery.html" for page in PAGES):
     EXPECTED.add("cticu-oxygen-delivery-two-paths.svg")
+# Only release-registered CTICU ABG lessons may ship their reviewed SVG assets.
+for article_output, svg_name in (
+    ("xiaoma-20261029-cticu-abg-03-cpb-acidbase.html", "cticu-abg-03-cpb-acidbase-group-trends.svg"),
+    ("xiaoma-20261029-cticu-abg-04-alphastat-phstat.html", "cticu-abg-04-alpha-phstat-logic.svg"),
+):
+    if any(page["output"] == article_output for page in PAGES):
+        EXPECTED.add(svg_name)
+
 HAS_DCM_RELEASE = (
     any(p["output"] == "xiaoma-reading-dcm-integrated.html" for p in PAGES)
     and any(p["output"] == "xiaoma-reading-20260710-dcm-original.html" for p in PAGES)

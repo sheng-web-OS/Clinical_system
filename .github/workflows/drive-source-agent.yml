@@ -1,0 +1,154 @@
+name: Selective Drive source agent (authorization gated)
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/drive-source-agent.yml"
+      - "tools/drive_source_agent.py"
+      - "tools/drive_agent_pr.py"
+      - "tests/test_drive_source_agent.py"
+      - "tests/test_drive_agent_pr.py"
+      - "tests/test_drive_wif_script.py"
+      - "tools/setup_drive_agent_wif.sh"
+      - "experiments/autonomy-shadow/fixtures/drive-source-gap.json"
+  schedule:
+    # Daily wake-up only. The agent decides if a source is actually needed.
+    - cron: "17 1 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "fixture=no external calls; shadow=model only; synthetic-read=approved Drive"
+        type: choice
+        required: true
+        default: fixture
+        options: [fixture, shadow, synthetic-read]
+
+permissions:
+  contents: read
+
+jobs:
+  fixture:
+    if: github.event_name == 'pull_request' || inputs.mode == 'fixture'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: All synthetic fail-closed tests, no credentials
+        run: python -m unittest discover -s tests -p 'test_drive_*.py'
+      - name: Validate Cloud Shell WIF setup script syntax (no gcloud access)
+        run: bash -n tools/setup_drive_agent_wif.sh
+      - name: No-AI simulation with explicit simulation flag
+        run: python tools/drive_source_agent.py --mode fixture --context experiments/autonomy-shadow/fixtures/drive-source-gap.json
+
+  preflight:
+    if: >-
+      ((github.event_name == 'schedule' &&
+        vars.CLINICAL_OS_AGENT_SCHEDULE_ENABLED == 'true') ||
+       (github.event_name == 'workflow_dispatch' && inputs.mode != 'fixture')) &&
+      vars.CLINICAL_OS_AGENT_ENABLED == 'true' &&
+      github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      pending: ${{ steps.scope.outputs.pending }}
+    steps:
+      - name: Fail closed unless main is protected; do not call model needlessly
+        id: scope
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PROTECTED="$(gh api "repos/$GITHUB_REPOSITORY/branches/main" --jq '.protected')"
+          if [ "$PROTECTED" != "true" ]; then
+            echo "HOLD: protect main before activating external credentials"
+            echo "pending=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if gh api "repos/$GITHUB_REPOSITORY/contents/experiments/autonomy-shadow/results/synthetic-drive-read-proof.md" >/dev/null 2>&1; then
+            echo "SKIP: synthetic proof already exists on main"
+            echo "pending=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          EXISTING="$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --head bot/synthetic-drive-source-proof --json number --jq 'length')"
+          if [ "$EXISTING" != "0" ]; then
+            echo "SKIP: one draft is already pending review"
+            echo "pending=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "pending=true" >> "$GITHUB_OUTPUT"
+
+  agent:
+    needs: preflight
+    if: needs.preflight.outputs.pending == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    permissions:
+      contents: read
+      id-token: write
+    outputs:
+      read_verified: ${{ steps.decision.outputs.read_verified }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify Google configuration before requesting a token
+        if: github.event_name == 'schedule' || inputs.mode == 'synthetic-read'
+        env:
+          PROVIDER: projects/803288170965/locations/global/workloadIdentityPools/clinical-os-pool/providers/github-drive-agent
+          SERVICE_ACCOUNT: clinical-os-drive-agent@instant-land-430112-t2.iam.gserviceaccount.com
+          FOLDER_ID: 1hk0HkOk8QLs3SVFsTi5O5enBQXgiJgJ1
+        run: |
+          if [ -z "$PROVIDER" ] || [ -z "$SERVICE_ACCOUNT" ] || [ -z "$FOLDER_ID" ]; then
+            echo "NOT_CONFIGURED: missing Google WIF or sandbox folder scope"
+            exit 2
+          fi
+      - name: Authenticate using short-lived Google OIDC (no SA key)
+        if: github.event_name == 'schedule' || inputs.mode == 'synthetic-read'
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/803288170965/locations/global/workloadIdentityPools/clinical-os-pool/providers/github-drive-agent
+          service_account: clinical-os-drive-agent@instant-land-430112-t2.iam.gserviceaccount.com
+          create_credentials_file: true
+          export_environment_variables: true
+      - name: Install Google auth only for authorized synthetic Drive read
+        if: github.event_name == 'schedule' || inputs.mode == 'synthetic-read'
+        run: python -m pip install --disable-pip-version-check google-auth requests
+      - name: Decide READ/SKIP/HOLD before any Drive download
+        id: decision
+        env:
+          OPENAI_API_KEY: ${{ secrets.CLINICAL_OS_OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5-mini
+          DRIVE_FIXTURE_FOLDER_ID: 1hk0HkOk8QLs3SVFsTi5O5enBQXgiJgJ1
+          AGENT_MODE: ${{ github.event_name == 'schedule' && 'synthetic-read' || inputs.mode }}
+        run: |
+          python tools/drive_source_agent.py \
+            --mode "$AGENT_MODE" --github-output "$GITHUB_OUTPUT" \
+            --context experiments/autonomy-shadow/fixtures/drive-source-gap.json
+
+  draft:
+    needs: agent
+    if: >-
+      needs.agent.outputs.read_verified == 'true' &&
+      vars.CLINICAL_OS_DRAFT_WRITES_ENABLED == 'true' &&
+      github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Open only one synthetic Draft PR; no Drive or model credentials
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          VERIFIED_SYNTHETIC_READ: ${{ needs.agent.outputs.read_verified }}
+        run: python tools/drive_agent_pr.py

@@ -21,7 +21,7 @@ def _card(page, collection, label, cue, featured=False):
 def render_home(pages):
     """Build the discovery view using the same explicit publication whitelist."""
     originals = [p for p in pages if p.get("kind") == "historical_original"]
-    lessons = [p for p in pages if is_current_lesson(p)]
+    lessons = [p for p in pages if is_current_lesson(p) and p.get("kind") != "ai_integrated"]
     integrations = [p for p in pages if p.get("kind") == "ai_integrated"]
     cards = []
     # Current integrated publications lead; preserved historical originals are a
@@ -74,18 +74,6 @@ def render_home(pages):
       <div class="results library-search-results" id="results" aria-live="polite"></div>
     </div>
     <a class="library-resume" href="xiaoma-reading.html" id="resume-reading" hidden><span><small>繼續上次閱讀</small><strong id="resume-title"></strong></span><span aria-hidden="true">→</span></a>
-  </section>
-  <section class="library-atlas" aria-labelledby="atlas-heading">
-    <div class="library-atlas-copy"><p class="library-overline">CONNECT THE REASONING</p>
-      <h2 id="atlas-heading">看見文章之間，<br>真正相連的問題。</h2>
-      <p>例如，呼吸困難可能涉及肺泡換氣、心臟充盈、前向血流或組織供氧。先從症狀選擇一條生理分支，再依先備知識、病例推理與國考驗證找到下一篇；不用在兩份閱讀清單間來回。</p>
-      <a class="library-atlas-cta" href="knowledge-atlas.html">探索臨床知識地圖 <span aria-hidden="true">↗</span></a>
-    </div>
-    <div class="library-atlas-steps" aria-label="知識建構路徑">
-      <div><span>01 / OBSERVE</span><strong>現在看到了什麼？</strong><small>症狀、檢驗與影像各自提供哪些證據</small></div>
-      <div><span>02 / EXPLAIN</span><strong>背後的機轉是什麼？</strong><small>從共同生理前提區分不同疾病</small></div>
-      <div><span>03 / DECIDE</span><strong>何時必須改變處置？</strong><small>讓臨床風險與證據決定下一步</small></div>
-    </div>
   </section>
   <section class="library-section" id="articles" aria-labelledby="articles-heading">
     <div class="library-section-heading"><div><p class="library-overline">READ THE IDEAS</p><h2 id="articles-heading">開始閱讀</h2></div><p>已公開的完整教材與文章</p></div>

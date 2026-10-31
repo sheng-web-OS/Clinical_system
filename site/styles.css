@@ -916,3 +916,112 @@
  article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:nth-child(4)::before{content:"腹水 total protein"}
  article.reading-prose:has(a[href="xiaoma-exam-gi-liver-three-sources.html"]) > table tbody td:nth-child(5)::before{content:"SAAG（計算值）"}
 }
+
+/* Exam H2 return-link touch targets: generated from verified related_exams. */
+.reading-prose .lesson-exam-backlinks{margin:28px 0 38px;padding:13px 19px;border:1px solid var(--line);border-radius:12px;background:var(--surface);min-width:0}
+.reading-prose .lesson-exam-backlinks>summary{display:flex;align-items:center;min-height:44px;font-size:.78em;font-weight:700;line-height:1.6;cursor:pointer}
+.reading-prose .lesson-exam-backlinks nav ul{list-style:none;margin:12px 0 2px;padding:0}
+.reading-prose .lesson-exam-backlinks nav li{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.reading-prose .lesson-exam-backlinks nav li>a{display:block;min-height:48px;padding:12px 0 5px;line-height:1.65;overflow-wrap:anywhere;text-decoration:none}
+.reading-prose .lesson-exam-backlinks nav li>a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.reading-prose .lesson-exam-backlinks nav li>small{display:block;color:var(--muted);font-size:.74em;line-height:1.6;padding:0 0 12px}
+@media(max-width:390px){.reading-prose .lesson-exam-backlinks{padding:11px 14px}}
+
+
+/* 2026 PE: original teaching figures. Distinct from third-party guideline artwork. */
+.article .pe-visual{border:1px solid var(--line);border-radius:15px;margin:2em 0;padding:21px;background:var(--surface);overflow-wrap:anywhere;min-width:0;box-shadow:0 6px 22px rgba(0,0,0,.035)}
+.article .pe-visual-header{margin:0 0 18px}
+.article .pe-visual-header>span{display:block;color:var(--muted);font-size:.74em;letter-spacing:.06em;font-weight:600}
+.article .pe-visual-header>strong{display:block;font-size:1.04em;line-height:1.55;margin-top:6px}
+.article .pe-visual p{margin:8px 0 0;font-size:.77em;line-height:1.7;color:var(--muted)}
+.article .pe-visual figcaption{border-top:1px solid var(--line);padding-top:14px;margin:18px 0 0;font-size:.72em;line-height:1.8;color:var(--muted)}
+.article .pe-visual figcaption a{font-weight:650;text-underline-offset:3px}
+.article .pe-start,.article .pe-therapy-base{border-radius:11px;background:var(--bg);border:1px solid var(--line);text-align:center;font-weight:650;line-height:1.6;padding:12px 14px;font-size:.85em}
+.article .pe-therapy-base{border-left:4px solid var(--brand);text-align:left}
+.article .pe-visual-arrow{text-align:center;font-size:.75em;color:var(--muted);padding:10px 0}
+.article .pe-dx-grid,.article .pe-treatment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.article .pe-dx-grid>section,.article .pe-treatment-grid>section{border:1px solid var(--line);border-top:4px solid var(--brand);border-radius:9px;min-width:0;padding:13px;background:var(--bg)}
+.article .pe-dx-grid>section:nth-child(2),.article .pe-treatment-grid>section:nth-child(2){border-top-color:var(--accent)}
+.article .pe-dx-grid>section:nth-child(3),.article .pe-treatment-grid>section:nth-child(3){border-top-color:#c47a59}
+.article .pe-dx-grid strong,.article .pe-treatment-grid strong{display:block;margin-top:8px;font-size:.88em;line-height:1.45}
+.article .pe-visual-tag,.article .pe-treatment-grid section>span{font-size:.7em;color:var(--muted);font-weight:650}
+.article .pe-dx-converge{margin-top:12px;padding:13px 14px;border:1px solid var(--line);border-radius:9px;background:var(--bg)}
+.article .pe-dx-converge strong,.article .pe-dx-converge span{display:block;line-height:1.7}
+.article .pe-dx-converge strong{font-size:.82em}
+.article .pe-dx-converge span{font-size:.72em;color:var(--muted);margin-top:3px}
+.article .pe-visual-critical{border:1px solid #b98565;border-left:4px solid #b98565;border-radius:8px;padding:11px 13px;margin-top:13px;background:var(--bg)}
+.article .pe-visual-critical strong,.article .pe-visual-critical span{display:block;line-height:1.7}
+.article .pe-visual-critical strong{font-size:.8em}.article .pe-visual-critical span{font-size:.76em;color:var(--muted);margin-top:4px}
+.article .pe-category-domains{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.article .pe-category-cell{padding:15px 16px;border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:9px;background:var(--bg);min-width:0}
+.article .pe-category-cell:nth-child(2){border-left-color:var(--accent)}
+.article .pe-category-cell:nth-child(3){border-left-color:#b98565}
+.article .pe-category-cell:nth-child(4){border-left-color:#b26464}
+.article .pe-category-cell>span{display:block;font-size:.71em;color:var(--muted)}
+.article .pe-category-cell>strong{display:block;font-size:1.15em;line-height:1.45;margin:5px 0}
+.article .pe-category-cell p{margin:3px 0;line-height:1.65}
+.article .pe-r-lane{border:1px dashed var(--brand);border-radius:9px;padding:13px;margin-top:11px;background:var(--bg)}
+.article .pe-r-lane strong,.article .pe-r-lane span{display:block;line-height:1.65}
+.article .pe-r-lane strong{font-size:.83em}
+.article .pe-r-lane span{font-size:.76em;color:var(--muted);margin-top:4px}
+.article .pe-visual-bottomline{font-size:.78em;font-weight:650;line-height:1.7;margin-top:13px}
+.article .pe-treatment-grid{margin-top:14px}
+.article .pe-decision-fork{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:12px}
+.article .pe-decision-fork>div{border:1px solid var(--line);border-radius:9px;background:var(--bg);padding:12px 14px}
+.article .pe-decision-fork b{display:block;font-size:.87em}
+.article .pe-decision-fork span{display:block;color:var(--muted);line-height:1.7;font-size:.76em;margin-top:5px}
+@media(max-width:700px){
+.article .pe-visual{margin:1.45em 0;padding:14px;border-radius:10px}
+.article .pe-dx-grid,.article .pe-treatment-grid,.article .pe-category-domains,.article .pe-decision-fork{grid-template-columns:minmax(0,1fr)}
+.article .pe-dx-grid>section,.article .pe-treatment-grid>section{padding:12px 13px}
+.article .pe-visual-header>strong{font-size:.98em}
+}
+
+
+/* PE 2026 visual correction: explicit clinical branches and independent axes (PR #212) */
+.article .pe-dx-grid>section{position:relative}
+.article .pe-branch-pair{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin-top:12px}
+.article .pe-branch-pair>div{padding:9px 10px;border-radius:8px;border:1px solid var(--line);min-width:0}
+.article .pe-branch-stop{border-left:4px solid #3d8a75!important}
+.article .pe-branch-go{border-left:4px solid #c47a59!important}
+.article .pe-branch-pair b,.article .pe-branch-pair span{display:block;font-size:.73em;line-height:1.55}
+.article .pe-branch-pair span{color:var(--muted);margin-top:4px}
+.article .pe-dx-link{margin-top:11px;border-top:1px dashed var(--line);padding-top:10px;color:var(--brand);font-weight:700;font-size:.71em;line-height:1.6}
+.article .pe-dx-link span{font-size:1.4em;white-space:nowrap}
+.article .pe-dx-high-route{border:1px dashed var(--brand);border-radius:7px;padding:10px;margin-top:12px;font-size:.72em;font-weight:700;line-height:1.6}
+.article .pe-axis-examples{display:grid;gap:9px;margin-top:12px}
+.article .pe-axis-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(50px,.45fr) minmax(0,1.25fr) minmax(60px,.65fr);align-items:center;gap:7px;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--bg);min-width:0}
+.article .pe-axis-label{font-size:.72em;font-weight:650;line-height:1.55}
+.article .pe-axis-state{border:2px solid var(--brand);border-radius:7px;padding:8px 5px;text-align:center;font-size:.85em;line-height:1.45}
+.article .pe-axis-state-r{border-color:var(--accent)}
+.article .pe-axis-state-d{border-color:#b98565}
+.article .pe-axis-change{font-size:.72em;color:var(--muted);line-height:1.55;text-align:center}
+.article .pe-axis-change span{font-weight:750;color:var(--brand);font-size:1.3em}
+.article .pe-axis-row small{grid-column:1/-1;font-size:.69em;color:var(--muted);line-height:1.65;border-top:1px dashed var(--line);padding-top:6px}
+.article .pe-pert-bridge{margin-top:12px;padding:12px 14px;border:2px solid var(--brand);border-radius:9px;background:var(--bg)}
+.article .pe-pert-bridge strong,.article .pe-pert-bridge span{display:block;line-height:1.65}
+.article .pe-pert-bridge strong{font-size:.84em}
+.article .pe-pert-bridge span{font-size:.74em;color:var(--muted);margin-top:4px}
+.article .pe-perfusion-start{margin-top:12px;text-align:center;padding:11px;border:1px solid var(--line);border-radius:8px;font-size:.78em;font-weight:650;line-height:1.65}
+.article .pe-perfusion-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:8px 0 3px;text-align:center;color:var(--brand);font-size:.72em;font-weight:700;line-height:1.6}
+.article .pe-perfusion-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.article .pe-perfusion-branches>div{border:1px solid var(--line);border-top:4px solid var(--brand);border-radius:9px;padding:12px 14px;background:var(--bg);min-width:0}
+.article .pe-perfusion-branches>.pe-perfusion-worse{border-top-color:#b98565}
+.article .pe-perfusion-branches b,.article .pe-perfusion-branches span{display:block;line-height:1.65}
+.article .pe-perfusion-branches b{font-size:.82em}
+.article .pe-perfusion-branches span{font-size:.74em;color:var(--muted);margin-top:5px}
+@media(max-width:700px){
+.article .pe-dx-link span{display:inline}
+.article .pe-axis-row{grid-template-columns:minmax(0,1fr) 65px;gap:8px}
+.article .pe-axis-label{grid-column:1/-1}
+.article .pe-axis-change{grid-column:1;grid-row:3;text-align:left}
+.article .pe-axis-state-r,.article .pe-axis-state-d{grid-column:2;grid-row:3}
+.article .pe-axis-row small{grid-column:1/-1}
+.article .pe-perfusion-branches{grid-template-columns:minmax(0,1fr)}
+.article .pe-perfusion-split{grid-template-columns:minmax(0,1fr);text-align:left;padding-left:9px}
+.article .pe-perfusion-split span{display:block}
+}
+@media(max-width:390px){
+.article .pe-axis-row{padding:9px}
+.article .pe-perfusion-branches>div{padding:11px}
+}

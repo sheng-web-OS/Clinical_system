@@ -9,7 +9,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "site"))
 from catalog import load_pages
-from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers, question_records
+from exam_archive import validate_exam_catalog, render_exam_archive, render_exam_year_teasers, question_records, archive_anchor
 
 class ExamArchiveContract(unittest.TestCase):
     @classmethod
@@ -58,6 +58,197 @@ class ExamArchiveContract(unittest.TestCase):
         self.assertEqual(index.count('class="exam-catalog-question"'), len(question_records(self.pages)))
         for q in (2, 8, 11, 12, 17, 22, 23, 25, 26, 27, 28, 61, 63, 75, 76, 78):
             self.assertIn("#q-" + str(q) + '"', index)
+
+    def test_heart_sounds_29_plus_20_are_visible_in_correct_exam_years(self):
+        """A published article alone cannot stand in for canonical year-archive entries."""
+        canonical = next(p for p in self.pages if p["source"] ==
+                         "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md")
+        supplement = next(p for p in self.pages if p["source"] ==
+                          "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md")
+        first = canonical.get("exam_questions", [])
+        second = supplement.get("exam_questions", [])
+        self.assertEqual(len(first), 29, "Original 29 official questions must be year-indexed")
+        self.assertEqual(len(second), 20, "Supplement must contain 20 nonduplicating questions")
+        identity = lambda q: tuple(q[k] for k in
+                                   ("year_roc", "sitting", "stage", "subject", "question_number"))
+        original_keys = {identity(q) for q in first}
+        additional_keys = {identity(q) for q in second}
+        self.assertEqual(len(original_keys), 29)
+        self.assertEqual(len(additional_keys), 20)
+        self.assertTrue(original_keys.isdisjoint(additional_keys))
+        self.assertEqual({key[0] for key in original_keys | additional_keys},
+                         {111, 112, 113, 114, 115})
+
+        archive = render_exam_archive(self.pages, ROOT)
+        for page, entries in ((canonical, first), (supplement, second)):
+            for q in entries:
+                # Year archive must deep-link to the question itself, not just the article top.
+                record = next(r for r in question_records(self.pages)
+                              if r["page"]["source"] == page["source"] and identity(r["exam"]) == identity(q))
+                self.assertIn('id="' + archive_anchor(record) + '"', archive)
+                self.assertIn('href="' + page["output"] + '#' + record["anchor"] + '"', archive)
+        self.assertIn("ASD 與 Eisenmenger：官方更正 B 或 D", archive)
+        self.assertIn("原圖待核", archive, "Image-dependent questions cannot masquerade as verified figures")
+
+
+    def test_integrated_reading_replaces_original_as_one_exam_material(self):
+        """Q28 links one current teaching version, while the historical original survives."""
+        from exam_archive import question_connections, question_key, concept_url
+        original = next(p for p in self.pages if p["output"] ==
+                        "xiaoma-reading-20260720-diuretics.html")
+        current = next(p for p in self.pages if p["output"] ==
+                       "xiaoma-reading-diuretics-visual.html")
+        self.assertEqual(current["replaces_original"], original["output"])
+        linked_exam = current["related_exams"][0]
+        key = question_key(linked_exam)
+        self.assertEqual(key, (115, 2, 2, "醫學（三）", 28))
+        connections = question_connections(self.pages, ROOT)
+        self.assertEqual([link["page"]["output"] for link in connections[key]],
+                         [current["output"]])
+        self.assertEqual(connections[key][0]["href"], concept_url(current, linked_exam, ROOT))
+
+        record = next(r for r in question_records(self.pages) if
+                      tuple(r["exam"][field] for field in
+                            ("year_roc", "sitting", "stage", "subject", "question_number")) == key)
+        archive = render_exam_archive(self.pages, ROOT)
+        row = archive.split('id="' + archive_anchor(record) + '"', 1)[1].split("</div>", 1)[0]
+        self.assertIn('data-materials="1"', row)
+        self.assertIn('href="' + concept_url(current, linked_exam, ROOT) + '"', row)
+        self.assertNotIn('href="' + original["output"], row)
+        # Removing a redundant year-index link must never delete its archived source.
+        self.assertIn(original, self.pages)
+
+    def test_original_exam_link_remains_when_successor_lacks_that_question(self):
+        """Do not blanket-hide all historical metadata after a version replacement."""
+        from exam_archive import question_connections, question_key
+        pages = copy.deepcopy(self.pages)
+        original = next(p for p in pages if p["output"] ==
+                        "xiaoma-reading-20260720-diuretics.html")
+        current = next(p for p in pages if p["output"] ==
+                       "xiaoma-reading-diuretics-visual.html")
+        key = question_key(original["related_exams"][0])
+        current["related_exams"] = []
+        connections = question_connections(pages, ROOT)
+        self.assertIn(original["output"],
+                      [link["page"]["output"] for link in connections[key]])
+
+    def test_exam_bank_answer_is_not_duplicated_as_a_material(self):
+        """The Q link already opens its answer; only other concept articles are materials."""
+        from exam_archive import question_connections, question_key, concept_url
+        sources = {
+            "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md",
+            "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md",
+        }
+        connections = question_connections(self.pages, ROOT)
+        archive = render_exam_archive(self.pages, ROOT)
+        records = {question_key(r["exam"]): r for r in question_records(self.pages)}
+        deep = next(p for p in self.pages if p["output"] ==
+                    "xiaoma-20261027-heart-sounds-structural-exam.html")
+        curated = {question_key(x) for x in deep["related_exams"]}
+        self.assertEqual(len(curated), 30)
+        checked = 0
+        without_other_material = 0
+        for page in self.pages:
+            if page["source"] not in sources:
+                continue
+            for q in page["exam_questions"]:
+                key = question_key(q)
+                record = records[key]
+                with self.subTest(question=key):
+                    marker = '<div class="exam-catalog-question" id="' + archive_anchor(record) + '"'
+                    self.assertIn(marker, archive)
+                    # A Q always opens its original official answer, not a fabricated second source.
+                    row = archive.split(marker, 1)[1].split("</div>", 1)[0]
+                    self.assertIn('href="' + page["output"] + '#' + record["anchor"] + '"', row)
+                    self.assertNotIn('href="' + page["output"] + '#part-', row)
+                    self.assertTrue(all(link["page"]["output"] != page["output"]
+                                        for link in connections.get(key, [])))
+                    self.assertTrue(all(link["page"].get("kind") != "exam_compilation"
+                                        for link in connections.get(key, [])))
+                    if key in curated:
+                        self.assertIn('class="exam-catalog-materials"', row)
+                        self.assertIn('href="' + concept_url(deep, next(x for x in
+                            deep["related_exams"] if question_key(x) == key), ROOT) + '"', row)
+                        self.assertIn('data-materials="1"', row)
+                    else:
+                        self.assertNotIn('class="exam-catalog-materials"', row)
+                        self.assertNotIn('data-materials=', row)
+                        without_other_material += 1
+                    checked += 1
+        self.assertEqual(checked, 49)
+        self.assertEqual(without_other_material, 19)
+
+    def test_all_year_questions_hide_self_materials_even_inside_real_lessons(self):
+        """No self-article section is a second material, regardless of its article kind."""
+        from exam_archive import question_connections, question_key
+        archive = render_exam_archive(self.pages, ROOT)
+        connections = question_connections(self.pages, ROOT)
+        for record in question_records(self.pages):
+            key = question_key(record["exam"])
+            with self.subTest(question=key):
+                self.assertFalse(any(x["page"]["output"] == record["page"]["output"]
+                                     for x in connections.get(key, [])))
+                marker = '<div class="exam-catalog-question" id="' + archive_anchor(record) + '"'
+                row = archive.split(marker, 1)[1].split("</div>", 1)[0]
+                self.assertIn('href="' + record["page"]["output"] + '#' + record["anchor"] + '"', row)
+                if not connections.get(key):
+                    self.assertNotIn('exam-catalog-materials', row)
+                else:
+                    self.assertIn('exam-catalog-materials', row)
+
+    def test_heart_sounds_deep_material_links_are_per_question_and_not_embedded(self):
+        """Previously missed release requirement: year-page '教材' resolves to real deep sections."""
+        from exam_archive import (
+            question_connections, question_key, concept_url, render_related_questions
+        )
+        lesson = next(p for p in self.pages if p["output"] ==
+                      "xiaoma-20261027-heart-sounds-structural-exam.html")
+        materials = lesson.get("related_exams", [])
+        self.assertEqual(len(materials), 30, "A deep lesson must not ship with zero year-archive mappings")
+        self.assertTrue(all(link.get("embed") is False for link in materials),
+                        "Do not inject dozens of full exam explanations into the clinical lesson")
+        connections = question_connections(self.pages, ROOT)
+        archive = render_exam_archive(self.pages, ROOT)
+        records = {question_key(r["exam"]): r for r in question_records(self.pages)}
+        for link in materials:
+            key = question_key(link)
+            with self.subTest(identity=key):
+                self.assertIn(key, records, "Cannot link nonexistent exam IDs")
+                expected = concept_url(lesson, link, ROOT)
+                self.assertRegex(expected, r"#part-[1-8]$")
+                self.assertEqual(sum(row["href"] == expected for row in connections[key]), 1)
+                anchor = archive_anchor(records[key])
+                row = archive.split('id="' + anchor + '"', 1)[1].split('</div>', 1)[0]
+                self.assertIn('href="' + expected + '"', row)
+                self.assertIn("心音與結構性心臟病", row)
+        # All 49 old official identities remain; 30 get this additional, relevant topic link.
+        self.assertEqual(sum(len(p.get("exam_questions", [])) for p in self.pages if
+                             "heart-sounds-cross" in p["source"]), 49)
+        self.assertEqual(render_related_questions(lesson, records, {}),
+                         "", "Metadata links must not turn the main lesson back into an exam bank")
+        from exam_archive import add_lesson_exam_backlinks
+        headings = re.findall(r"(?m)^## (.+)$", (ROOT / lesson["source"]).read_text("utf8"))
+        stub = "".join('<h2 id="part-' + str(i) + '">' + title + '</h2><p>Content</p>'
+                       for i, title in enumerate(headings, 1))
+        decorated = add_lesson_exam_backlinks(lesson, records, stub, ROOT)
+        self.assertEqual(decorated.count('class="lesson-exam-backlinks"'),
+                         len({x["concept_heading"] for x in materials}))
+        self.assertEqual(decorated.count('href="xiaoma-exams.html#catalog-'), 30)
+        for link in materials:
+            record = records[question_key(link)]
+            return_href = 'href="xiaoma-exams.html#' + archive_anchor(record) + '"'
+            section = concept_url(lesson, link, ROOT).split("#part-", 1)[1]
+            part = decorated.split('data-section="part-' + section + '"', 1)[1].split("</details>", 1)[0]
+            self.assertIn(return_href, part)
+
+
+    def test_related_exam_embed_flag_requires_boolean(self):
+        pages = copy.deepcopy(self.pages)
+        article = next(p for p in pages if p["output"] ==
+                       "xiaoma-20261027-heart-sounds-structural-exam.html")
+        article["related_exams"][0]["embed"] = "false"
+        with self.assertRaisesRegex(ValueError, "embed flag must be a boolean"):
+            validate_exam_catalog(pages)
 
     def test_future_year_sorts_above_108_automatically(self):
         pages = copy.deepcopy(self.pages)

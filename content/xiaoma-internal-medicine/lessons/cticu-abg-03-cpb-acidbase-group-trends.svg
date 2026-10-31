@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1100" viewBox="0 0 390 1100" role="img" aria-labelledby="charttitle chartdesc">
+<title id="charttitle">CABG 55 名 on-pump 病人的血液酸鹼群體平均七項指標比較</title>
+<desc id="chartdesc">2013 Chuah 研究，55 人群體平均。數據依原論文 Table 3，時間為術前、完成 CABG 並給予 protamine 後、隔日早晨；各數值按原文單位呈現，箭頭代表相鄰時間平均值方向，並非個人數據。無乳酸或 albumin 實測。</desc>
+<rect width="390" height="1100" rx="16" fill="#f6f9f7"/>
+<rect x="8" y="8" width="374" height="1084" rx="12" fill="none" stroke="#c7d8d0"/>
+<text x="20" y="42" font-family="system-ui,sans-serif" font-size="23" font-weight="750" fill="#163e34">CPB 前後，七項變化</text>
+<text x="20" y="71" font-family="system-ui,sans-serif" font-size="17" font-weight="600" fill="#31584b">不會朝同一方向走</text>
+<text x="20" y="98" font-family="system-ui,sans-serif" font-size="14.5" fill="#49645a">On-pump CABG · n = 55 · 群體平均</text>
+<text x="73" y="132" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15.5" font-weight="650" fill="#426052">術前</text>
+<text x="196" y="132" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15.5" font-weight="650" fill="#426052">CABG 後</text>
+<text x="317" y="132" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15.5" font-weight="650" fill="#426052">隔天早晨</text><rect x="16" y="149" width="358" height="104" rx="9" fill="#fff" stroke="#e4ece6"/>
+<text x="27" y="178" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#1e4135">Na⁺</text>
+<text x="116" y="178" font-family="system-ui,sans-serif" font-size="15.5" fill="#587063">mmol/L</text>
+<text x="73" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">139.5</text>
+<text x="196" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#2c5d51">135.8</text>
+<text x="317" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">137.2</text>
+<text x="131" y="223" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↓</text>
+<text x="255" y="223" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text><rect x="16" y="262" width="358" height="104" rx="9" fill="#f1f5f2" stroke="#e4ece6"/>
+<text x="27" y="291" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#1e4135">Cl⁻</text>
+<text x="116" y="291" font-family="system-ui,sans-serif" font-size="15.5" fill="#587063">mmol/L</text>
+<text x="73" y="338" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">105.3</text>
+<text x="196" y="338" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#2c5d51">111.0</text>
+<text x="317" y="338" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">106.8</text>
+<text x="131" y="336" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text>
+<text x="255" y="336" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↓</text><rect x="16" y="375" width="358" height="104" rx="9" fill="#e8f1eb" stroke="#adc6b8"/>
+<text x="27" y="404" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#1e4135">SID</text>
+<text x="116" y="404" font-family="system-ui,sans-serif" font-size="15.5" fill="#587063">mEq/L</text>
+<text x="73" y="451" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">38.2</text>
+<text x="196" y="451" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#2c5d51">29.7</text>
+<text x="317" y="451" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">35.1</text>
+<text x="131" y="449" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↓</text>
+<text x="255" y="449" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text><rect x="16" y="488" width="358" height="104" rx="9" fill="#f1f5f2" stroke="#e4ece6"/>
+<text x="27" y="517" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#1e4135">HCO₃⁻</text>
+<text x="116" y="517" font-family="system-ui,sans-serif" font-size="15.5" fill="#587063">mmol/L</text>
+<text x="73" y="564" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">24.9</text>
+<text x="196" y="564" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#2c5d51">22.6</text>
+<text x="317" y="564" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">23.9</text>
+<text x="131" y="562" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↓</text>
+<text x="255" y="562" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text><rect x="16" y="601" width="358" height="104" rx="9" fill="#fff" stroke="#e4ece6"/>
+<text x="27" y="630" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#1e4135">BE</text>
+<text x="116" y="630" font-family="system-ui,sans-serif" font-size="15.5" fill="#587063">mEq/L</text>
+<text x="73" y="677" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">+0.38</text>
+<text x="196" y="677" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#2c5d51">−1.96</text>
+<text x="317" y="677" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">−0.75</text>
+<text x="131" y="675" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↓</text>
+<text x="255" y="675" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text><rect x="16" y="714" width="358" height="104" rx="9" fill="#e8f1eb" stroke="#adc6b8"/>
+<text x="27" y="743" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#1e4135">[H⁺]</text>
+<text x="116" y="743" font-family="system-ui,sans-serif" font-size="15.5" fill="#587063">nmol/L</text>
+<text x="73" y="790" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">38.1</text>
+<text x="196" y="790" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#2c5d51">39.8</text>
+<text x="317" y="790" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">41.9</text>
+<text x="131" y="788" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text>
+<text x="255" y="788" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text><rect x="16" y="827" width="358" height="104" rx="9" fill="#e8f1eb" stroke="#adc6b8"/>
+<text x="27" y="856" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#1e4135">PaCO₂</text>
+<text x="116" y="856" font-family="system-ui,sans-serif" font-size="15.5" fill="#587063">kPa</text>
+<text x="73" y="903" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">5.23</text>
+<text x="196" y="903" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="750" fill="#2c5d51">4.93</text>
+<text x="317" y="903" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#243f36">5.60</text>
+<text x="131" y="901" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↓</text>
+<text x="255" y="901" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#8b6030">↑</text><text x="20" y="962" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#20473c">讀圖重點</text>
+<text x="20" y="989" font-family="system-ui,sans-serif" font-size="15.5" fill="#36594d">術後 SID↓，H⁺ 未顯著變化。</text>
+<text x="20" y="1017" font-family="system-ui,sans-serif" font-size="15.5" fill="#36594d">隔天 SID↑，PaCO₂ 與 H⁺ 升高。</text>
+<text x="20" y="1048" font-family="system-ui,sans-serif" font-size="14" fill="#597167">箭頭僅比較群體均值；非單人病程。</text>
+<text x="20" y="1072" font-family="system-ui,sans-serif" font-size="14" fill="#597167">來源：Chuah 2013 Table 3（自行重繪）</text>
+</svg>

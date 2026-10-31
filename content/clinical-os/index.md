@@ -61,6 +61,10 @@
 
 心雜音有「解剖結構」與「當下血流條件」兩個來源。固定瓣膜狹窄、動態流出道阻塞、容量負荷及冠脈缺血也不在同一個分類層。**同樣因站立減少 preload，AS 和 HOCM 雜音的變化可能相反**；不能拿一個聽診名稱代替血流機轉。
 
+**先建立臨床模型，不以題庫替代教材。** 從[心音與結構性心臟病主教材](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md)的真實急性 MR 病例切入，建立 S1／S2、壓差與流量、四種主要瓣膜病、動態 LVOTO、先天分流、TTE／TEE 證據與急症決策的連續推理。後續可按病灶再讀 HCM、AS／AR 或更深入的專題；題數不能替代獨立理解。
+
+**再用國考檢驗理解。** [111–115 年醫學（四）至（六）29 題逐選項題解](../xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md)和[另外 20 題不重複增補](../xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md)是**題庫解析**，用來找出概念缺口，不是獨立的系統性教材。可從[官方原卷及更正答案](../xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-sources.md)查核題目身分；附圖未完成原圖核對者不可視為已驗證判圖。遇到答不出的題，回到相應機轉與疾病文章建立因果關係，而非只記住 A／B／C／D。
+
 **建議順序：** [HCM：Nonobstructive 不等於沒有其他功能障礙](../xiaoma-reading/originals/2026-07-14-hcm.md) → [AS／AR：EF、flow 與 gradient](../xiaoma-reading/integrated/2026-10-22-as-ar-hemodynamics.md) → [DCM：形態與前向血流不相同](../xiaoma-reading/integrated/2026-10-21-dcm.md)。
 
 **冠狀缺血閱讀路線：** [ACS：從缺血的證據到治療後剩餘風險](acs.md)接回另一種胸痛：症狀、ECG、cTn 是不同層次的證據，不能把「沒有典型 STE」直接解讀為「沒有需要緊急處理的缺血」。沿該入口進入原 ACS 四章課程（診斷 → ECG → 抗栓／再灌流 → MI 後風險），並以 **113（二）Q6、114（二）Q6／Q9、115（二）Q11–13** 六道正式國考題逐段檢驗推理，接回本地圖的[灌流分支](#perfusion)理解 post-MI 低血壓、EF、LVEDP 與前向流量的不同意義。這是缺血到心室功能的概念橋，不代表所有缺血都必然造成低 EF。

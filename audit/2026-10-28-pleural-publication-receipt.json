@@ -1,0 +1,534 @@
+{
+  "schema": "PLEURAL_PRIVATE_PUBLICATION_REVIEW_V1",
+  "pr": 188,
+  "observed_at": "2026-10-28T03:38Z",
+  "state": "PASS_PRIVATE_PUBLICATION_PROPOSAL_ONLY",
+  "reviewer_role": "DISTINCT_READ_ONLY_AI_PUBLICATION_REVIEWER",
+  "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/188#issuecomment-6460028638",
+  "independence": "Different execution from original article writer and publication patch writer. No article, source, candidate.patch, actual site/pages.json or global semantic registry edited by reviewer.",
+  "frozen": {
+    "pr_head_sha": "df41d0b6ce5630309745128c245ff0bd1436beb4",
+    "proposal_patch_blob": "4180e44d8a744301105c2785697b6ccaf3b2f041",
+    "archive_article_blob": "140b4d37431301218f70162a44e54d768590475e",
+    "proposed_article_blob": "eb5b2bfd6eb9bf7f732b52db9800de646c017bde",
+    "proposed_article_path": "content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md",
+    "proposed_source_path": "content/xiaoma-internal-medicine/pleural-effusion-decision-sources.md",
+    "prior_independent_review_blob": "493d263e7de75a77f709988e928c888f61cf62f6"
+  },
+  "verified": {
+    "prose_delta": "Existing 184 archive lines identical; only one reciprocal source-navigation link added, with intervening blank line.",
+    "paragraphs": "51/51 identical IDs, reader_gain, nonredundancy and keep verdicts from independent round2; role labels mapped to allowed enum with original role preserved.",
+    "cureus": "Independently visually inspected original Cureus 2024 8-page PDF p3 Figure2 and p4 Table1: 56M, Day3 260mL LDH1254 glucose71 pH unknown; Day5 150mL LDH607 glucose84 pH7.42; Figure2B Day2 vs Table1 Day3 discrepancy retained; pre-tap antibiotic exposure remains in prose.",
+    "bts": "Independently visually inspected official BTS 2023 Appendix1 printed p5 / PDF index4: pH <=7.2, 7.21-7.39, >=7.4, LDH diagram >=900 vs table >900, ultrasound safe-access star, pH>7.4 septation dagger. No third-party original pixels in public candidate.",
+    "pocket": "Pocket Medicine 9E p94-96 previously privately inspected by another context; not newly inspected here; original pixels not included.",
+    "exam_qsm": "Independently opened official 112-1 medical(III) Q45 Q/S/M final B (only Q47 correction); 114-1 medical(III) Q48 final B (Q23/42 corrections); 115-2 medical(III) Q49 final A (Q1/8/10/36/38/40 corrections). Exact three question_heading values match article headings; identities absent from current main catalog.",
+    "navigation": "Article -> source ../pleural-effusion-decision-sources.md and source -> lessons/2026-10-28-pleural-effusion-decision.md; candidate-only catalog contains main article/source and three canonical exam mappings.",
+    "rights": "Cureus/BTS original externally linked, Pocket not reproduced, original teaching SVG explicitly labeled non-original."
+  },
+  "semantic_review": {
+    "content_blob": "eb5b2bfd6eb9bf7f732b52db9800de646c017bde",
+    "reviewer_context": "independent_ai_pass",
+    "reviewer_reference": "https://github.com/sheng-web-OS/Clinical_system/pull/188#issuecomment-6460028638",
+    "core_reader_question": "Why can pneumonia symptoms improve while a loculated effusion enlarges, and which independent evidence warrants aspiration, exudate classification, or drainage?",
+    "new_understanding": "Real 56M Day3/Day5 observations + pre-sampling antibiotics; Light's classification vs BTS nonpurulent infection decision vs safe procedural window; case action not guideline or efficacy proof.",
+    "strongest_counterargument": "A single Cureus case cannot establish drainage or tPA/DNase efficacy; Day5 pH7.42 and culture negativity after antibiotics do not yield a universal drainage rule. The BTS 2023 original Appendix1 p5 has been independently visually checked, including high-pH septation footnote and LDH >=900 flowchart versus >900 table. This educational candidate is not a clinical order set; no human clinical signoff or measured learning outcomes.",
+    "epqc_scores": {
+      "A": 4,
+      "B": 4,
+      "C": 4,
+      "D": 4,
+      "E": 3,
+      "F": 4,
+      "G": 3
+    },
+    "hard_stops": {
+      "unsafe_claim": false,
+      "fabricated_evidence": false,
+      "broken_causal_bridge": false,
+      "internal_metadata": false,
+      "unresolved_source_conflict": false
+    },
+    "paragraphs": {
+      "5c1497b15f55ffdfcd-1": {
+        "role": "orientation",
+        "reviewer_original_role": "problem framing",
+        "reader_gain": "Separates clinical recovery, Light classification and drain need.",
+        "nonredundancy_reason": "Defines the three competing questions before technical thresholds.",
+        "verdict": "keep",
+        "excerpt_for_editor": "> 一位肺炎病人的胸痛與呼吸症狀改善了，胸水卻繼續增大。此時「病人好轉」「Light criteria 是 exudate」「pH 沒有降低」各能回答什麼，又不能替代哪個判斷？本文先讀一份已發表病例的原始病程與兩次胸水檢驗，再以 BTS 指引及獨立反事實釐清取樣、分類與引流的不同目的。病例",
+        "line_for_editor": 3
+      },
+      "2826611811eae9dc5a-1": {
+        "role": "case_evidence",
+        "reviewer_original_role": "case provenance",
+        "reader_gain": "Anchors the 56M, cefdinir→ceftriaxone/doxycycline→piperacillin/tazobactam pre-tap sequence.",
+        "nonredundancy_reason": "Antibiotic timing is required to interpret both negative cultures.",
+        "verdict": "keep",
+        "excerpt_for_editor": "El Zibaoui、Odeyemi 與 El Labban 在 2024 年發表一位 56 歲男性的肺炎旁胸水病例（原始病例，DOI 10.7759/cureus.52986）。初始 CT 的左下葉肺炎只伴少量胸水；病人曾於門診接受 cefdinir，再次入院後先接受 ceftriaxo",
+        "line_for_editor": 7
+      },
+      "9879aec842999f43f9-1": {
+        "role": "causal_bridge",
+        "reviewer_original_role": "causal distinction",
+        "reader_gain": "Explains why symptom relief and pleural-space progression can coexist.",
+        "nonredundancy_reason": "Prevents a symptom-only dismissal or loculation-only empyema label.",
+        "verdict": "keep",
+        "excerpt_for_editor": "這個矛盾不是「症狀不重要」，而是它們取樣的問題不同。胸痛、呼吸困難與發炎反應反映整體病程的一部分；胸膜腔液體的體積、是否分隔與肺受壓，則是另一個空間裡的資訊。肺炎改善不會自動證明積液已能回收，也不能從分隔單獨證明細菌仍在繁殖。因此下一步應是釐清積液的性質、分布和安全取樣條件，而不是在「已改",
+        "line_for_editor": 9
+      },
+      "ca9e37a902a4a203b5-1": {
+        "role": "causal_bridge",
+        "reviewer_original_role": "mechanism",
+        "reader_gain": "Connects hydrostatic, oncotic, permeability and lymphatic balance to sampling utility.",
+        "nonredundancy_reason": "Supplies the physiological premise before Light criteria.",
+        "verdict": "keep",
+        "excerpt_for_editor": "胸水本身只是胸膜腔內液體淨累積的結果。全身靜水壓、膠體滲透壓、局部通透性、淋巴回收與胸腹交通都可改變液體平衡。有多少液體、液體為何形成、是否感染，以及今天能否安全介入，是相關但不同的問題。 第一個決策因此不是先算 Light criteria，而是問：取得樣本會改變哪個尚未確定的診斷或處置",
+        "line_for_editor": 11
+      },
+      "f6ce2f878e9ba54069-1": {
+        "role": "decision",
+        "reviewer_original_role": "decision boundary",
+        "reader_gain": "Contrasts typical bilateral heart-failure effusion with unilateral atypical/infectious presentation.",
+        "nonredundancy_reason": "Shows when sampling has information value without inventing case comorbidity.",
+        "verdict": "keep",
+        "excerpt_for_editor": "作為與本病例分開的比較：典型雙側心衰竭積液、沒有不對稱、發燒、胸膜痛或治療後不改善時，可以先處理原病因並重評；新的單側或原因不明積液、感染或腫瘤疑慮，則提高取樣的資訊價值。這是指南支持的情境比較，並非替上述 56 歲男性補寫心衰竭病史。若呼吸或循環惡化，床邊評估、抗菌治療與有能力的程序團隊",
+        "line_for_editor": 13
+      },
+      "45748f64c1bb466d49-1": {
+        "role": "orientation",
+        "reviewer_original_role": "figure introduction",
+        "reader_gain": "States the two observational tracks and prohibits causal attribution.",
+        "nonredundancy_reason": "Makes the original SVG's arrows interpretable.",
+        "verdict": "keep",
+        "excerpt_for_editor": "下面把同一位病人的兩條證據放在一起。圖中連線只表示前後觀察，不是介入療效的因果證明。",
+        "line_for_editor": 15
+      },
+      "f5b5766ba0ad8bb6b9-1": {
+        "role": "safety",
+        "reviewer_original_role": "procedural anatomy",
+        "reader_gain": "Explains live ultrasound window, depth, adjacent organs and safe needle placement.",
+        "nonredundancy_reason": "Distinguishes actionable procedural geography from static radiographs.",
+        "verdict": "keep",
+        "excerpt_for_editor": "胸腔超音波能區分積液、肺實質與橫膈，顯示是否有可安全進入的液體口袋、其深度、鄰近肺與臟器，以及游離或分隔的外觀。它不只回答「有沒有胸水」，還直接改變能否安全取樣與引流。臨床應由受訓操作者以即時、依當次體位的超音波選定部位，注意穿刺點與肋間神經血管、橫膈及肝脾位置；不把先前 X 光或 CT ",
+        "line_for_editor": 42
+      },
+      "d8511c6e5236fc1479-1": {
+        "role": "counterfactual",
+        "reviewer_original_role": "counter-inference",
+        "reader_gain": "Loculation does not prove microbial infection and no safe window forbids blind tap.",
+        "nonredundancy_reason": "Provides safety counterexamples missing from the ultrasound introduction.",
+        "verdict": "keep",
+        "excerpt_for_editor": "但分隔、複雜回音、胸膜增厚只是提高局部病變疑慮，並非微生物診斷。惡性腫瘤、血液、慢性炎症也可能造成複雜外觀；超音波不能取代液體化驗與病程。反過來，少量、無安全穿刺窗口的積液，也不能為了取得一個 pH 數字而盲目穿刺。若高度懷疑感染而無安全窗口，應與胸腔科、介入放射科或外科討論替代影像／引流",
+        "line_for_editor": 44
+      },
+      "1153a892dbd49d4aca-1": {
+        "role": "definition",
+        "reviewer_original_role": "procedure taxonomy",
+        "reader_gain": "Separates diagnostic aspiration, symptomatic removal and continuous source-control drainage.",
+        "nonredundancy_reason": "Prevents substituting three interventions and adds volume/stop safety.",
+        "verdict": "keep",
+        "excerpt_for_editor": "抽液前還須分清診斷性穿刺、治療性抽液與胸管持續引流。診斷性穿刺是為了取得分類、微生物或細胞學證據；治療性抽液是為了改善症狀與判斷肺能否再擴張；胸管則是要持續排出必須 source control 的胸膜腔液體。三者的目標、適應症與風險不同，不能因為都用針進胸膜腔就互換。大量治療性抽液通常緩",
+        "line_for_editor": 46
+      },
+      "06de455e6b6851b489-1": {
+        "role": "definition",
+        "reviewer_original_role": "classification purpose",
+        "reader_gain": "Places Light criteria after deciding whether sampling is warranted.",
+        "nonredundancy_reason": "Prevents using an exudate label as a treatment order.",
+        "verdict": "keep",
+        "excerpt_for_editor": "穿刺後，若不知道液體主要來自全身性壓力／蛋白平衡，還是局部胸膜病變，下一步常以 Light criteria 分成 transudative 與 exudative。它的功能是提高對局部疾病的偵測敏感度，而不是直接找出致病菌或決定要不要胸管。",
+        "line_for_editor": 50
+      },
+      "49a188f0d1bba01f4a-1": {
+        "role": "definition",
+        "reviewer_original_role": "threshold definition",
+        "reader_gain": "States all three independent Light rules and any-one-positive logic.",
+        "nonredundancy_reason": "Needed for later numerical ratio calculation.",
+        "verdict": "keep",
+        "excerpt_for_editor": "只要符合下列三項任一項，依 Light criteria 分類為 exudate：",
+        "line_for_editor": 52
+      },
+      "bc3973b498cdf745cd-1": {
+        "role": "evidence_boundary",
+        "reviewer_original_role": "source timing",
+        "reader_gain": "Separates Day3 and Day5 samples before arithmetic.",
+        "nonredundancy_reason": "Protects against transferring a later pH to an earlier tap.",
+        "verdict": "keep",
+        "excerpt_for_editor": "回到真實病例，原文 Table 1 把兩次胸水取樣分成 Day 3 與 Day 5。先把能確定與不知道的資料完整分開，才計算比值：",
+        "line_for_editor": 60
+      },
+      "ab786733143c5b3bc8-1": {
+        "role": "case_evidence",
+        "reviewer_original_role": "calculation",
+        "reader_gain": "Computes 3.8/5.6 and 1254/169 while distinguishing 7.42 LDH ratio from pH.",
+        "nonredundancy_reason": "Directly catches a plausible high-risk unit/identity confusion.",
+        "verdict": "keep",
+        "excerpt_for_editor": "Day 3 的蛋白比值約 3.8/5.6 = 0.68，LDH 比值約 1254/169 = 7.42，已分別超過前兩項 Light 門檻，不必猜血漿 LDH 正常上限才能判為 exudate。注意第二個比值碰巧也是 7.42，它是無單位的 LDH 比值，不是 Day 3 的 pH；Day",
+        "line_for_editor": 77
+      },
+      "262315b6a2487a89a2-1": {
+        "role": "counterfactual",
+        "reviewer_original_role": "pseudoexudate counterfactual",
+        "reader_gain": "Explains diuretic concentration effect and heart-failure prior probability.",
+        "nonredundancy_reason": "Shows why Light positivity can misclassify systemic effusions.",
+        "verdict": "keep",
+        "excerpt_for_editor": "另設一個與這位男性分開的心衰竭反事實：利尿前後她的積液減少、呼吸改善，但抽液時胸水蛋白相對升高，Light criteria 其中一項呈陽性。利尿會改變胸膜液體與血漿的水分比例，形成 pseudoexudate：本質仍可能由心衰竭主導，卻在以高敏感度辨識 exudate 的分類器中被標為陽",
+        "line_for_editor": 79
+      },
+      "d894821da38b22664b-1": {
+        "role": "evidence_boundary",
+        "reviewer_original_role": "explicit synthetic arithmetic",
+        "reader_gain": "Labels albumin 3.6/2.1 as invented arithmetic, not this published patient's lab.",
+        "nonredundancy_reason": "Repairs previous source-provenance P2 and bounds gradient inference.",
+        "verdict": "keep",
+        "excerpt_for_editor": "以下數值是獨立自編的計算示例，並非原始 56 歲男性病例的檢驗結果：假設同日 serum albumin 3.6 g/dL、pleural albumin 2.1 g/dL，serum–pleural albumin gradient = 1.5 g/dL，大於常用的 1.2 g/dL 支",
+        "line_for_editor": 81
+      },
+      "8bf2c89c0e9b0ceb1e-1": {
+        "role": "evidence_boundary",
+        "reviewer_original_role": "culture chronology",
+        "reader_gain": "Explains antibiotic exposure before sampling and why no-growth cannot prove sterility.",
+        "nonredundancy_reason": "Repairs prior P1 at the exact evidence-to-decision transition.",
+        "verdict": "keep",
+        "excerpt_for_editor": "先讀培養陰性的時間前提。 這份真實病例的抗菌藥療程從門診 cefdinir、住院 ceftriaxone/doxycycline，到首次胸水採檢前的 piperacillin/tazobactam。兩次胸水培養未長菌，不等於已證實胸膜腔無菌，也不能排除先前感染；既有抗菌藥暴露、採樣時間、菌",
+        "line_for_editor": 85
+      },
+      "bbcd72a4549d2fd31c-1": {
+        "role": "decision",
+        "reviewer_original_role": "test selection",
+        "reader_gain": "Relates pH, microbiology, cells and special tests to discriminating clinical hypotheses.",
+        "nonredundancy_reason": "Avoids a universal indiscriminate lab order set.",
+        "verdict": "keep",
+        "excerpt_for_editor": "回到這位真實病例：原始 Table 1 提供了蛋白、LDH、glucose、細胞及微生物資訊，卻沒有 Day 3 的 pH；不能為了讓流程完整而替作者填入一個數字。一般疑似感染性胸水的基礎送檢組合通常包括同日血清／胸水 total protein 與 LDH、胸水 cell count/d",
+        "line_for_editor": 88
+      },
+      "592aced19416e9c9ed-1": {
+        "role": "definition",
+        "reviewer_original_role": "test specificity",
+        "reader_gain": "Differentiates neutrophils, lymphocytes, cytology, chyle and blood definitions.",
+        "nonredundancy_reason": "Prevents morphology or wrong analyte becoming a diagnosis.",
+        "verdict": "keep",
+        "excerpt_for_editor": "白血球以 neutrophil 為主常見於急性胸膜炎症或肺炎旁積液，但肺栓塞等也可如此；lymphocyte predominance 使結核、惡性腫瘤與慢性病因值得考慮，卻不是 TB 確診。Cytology 陰性也不能單獨排除胸膜惡性腫瘤，仍要看癌種、檢體量與影像；持續原因不明可需影像導",
+        "line_for_editor": 90
+      },
+      "47940484f9aee64be3-1": {
+        "role": "safety",
+        "reviewer_original_role": "sample validity",
+        "reader_gain": "Distinguishes pleural from arterial pH and effects of heparin, local anesthetic and delay.",
+        "nonredundancy_reason": "Adds preanalytic validity before pH-based decisions.",
+        "verdict": "keep",
+        "excerpt_for_editor": "尤其要區分兩種「酸」：胸水 pH 是胸膜腔局部代謝與離子環境的結果，並非動脈血 pH，也不能直接推算病人全身酸鹼狀態。對疑似 pleural infection 而非明顯膿液的樣本，BTS 建議立即測 pH；應避免局部麻醉藥或肝素污染並快速送到適當儀器，因採檢與延遲會造成方向不同的偏差。數",
+        "line_for_editor": 92
+      },
+      "b4755f1f6a2962e115-1": {
+        "role": "definition",
+        "reviewer_original_role": "infection continuum",
+        "reader_gain": "Distinguishes uncomplicated reactive PPE from CPPE/empyema without mandatory stages.",
+        "nonredundancy_reason": "Explains why source control is not a direct consequence of all PPE.",
+        "verdict": "keep",
+        "excerpt_for_editor": "肺炎旁胸水可只有無菌的反應性液體，也可能發展為細菌侵入、纖維蛋白分隔、膿液形成與胸膜增厚。這不是每位病人都必經的四階段時間表，而是不同程度的局部感染與引流困難。早期單純 parapneumonic effusion 可能隨抗菌藥與肺炎控制而退；一旦成為 complicated parapn",
+        "line_for_editor": 96
+      },
+      "da5588cdd9647e34b7-1": {
+        "role": "decision",
+        "reviewer_original_role": "frank pus branch",
+        "reader_gain": "Establishes visible pus as distinct from the nonpurulent BTS biochemical pathway.",
+        "nonredundancy_reason": "Avoids waiting for irrelevant Light/pH in obvious empyema.",
+        "verdict": "keep",
+        "excerpt_for_editor": "假設第一次診斷性抽液是明顯膿液（frank pus）：這本身已指向 empyema，若有安全可及液體應與團隊儘速安排引流，無須等 Light criteria 或 pH 再「證明」要不要放胸管。若液體並非明顯膿性，2023 BTS 指引把 pH 與其他證據組合，而不是單看一個數值：",
+        "line_for_editor": 98
+      },
+      "c33d5008a951222a43-1": {
+        "role": "evidence_boundary",
+        "reviewer_original_role": "guideline caveats",
+        "reader_gain": "Explains safe ultrasound window, ≥900 vs >900 wording and reassessment footnotes.",
+        "nonredundancy_reason": "Necessary to prevent falsely absolute 900 and pH>7.4 interpretations.",
+        "verdict": "keep",
+        "excerpt_for_editor": "這張表是依 BTS 2023 官方原始流程圖（完整補充 PDF 第 37 頁；PDF index 44）目視後自行整理，非原圖翻拍。兩個註腳不可省略：星號註腳：引流必須有超音波確認的安全可及積液；† 沒有立即引流時需以持續發燒、發炎指標未降及病程重新評估，pH >7.4 而有分隔仍應考慮引",
+        "line_for_editor": 107
+      },
+      "553683bc2459484f13-1": {
+        "role": "case_evidence",
+        "reviewer_original_role": "case decision chronology",
+        "reader_gain": "Separates Day4 clinical improvement from Day5 loculated CT, new pH 7.42 and tube.",
+        "nonredundancy_reason": "Keeps authors' intervention and no-empyema interpretation as observations.",
+        "verdict": "keep",
+        "excerpt_for_editor": "再讀原病例的下一個轉折：Day 4 症狀與發炎指標改善，影像仍有較大的局部分隔積液；Day 5 CT 顯示持續大型分隔積液及壓迫性肺不張，作者才在超音波導引下置入胸管。當天的新樣本 pH 7.42、LDH 607、glucose 84，培養無生長。不能把 Day 5 的 pH 倒填到 Da",
+        "line_for_editor": 109
+      },
+      "37a57313e36a62250e-1": {
+        "role": "evidence_boundary",
+        "reviewer_original_role": "causal restraint",
+        "reader_gain": "States normal Day5 pH neither mandates nor forbids every drainage decision.",
+        "nonredundancy_reason": "Blocks case-report outcome being promoted into a universal rule.",
+        "verdict": "keep",
+        "excerpt_for_editor": "這並不構成「pH 7.42 所以一律需要引流」的新規則。它顯示的是：低感染風險的化驗分層不能單獨回答大型殘留積液、分隔及肺受壓的全部問題。BTS 的低風險分支與重新評估註腳需一起讀；原病例中的持續空間問題，是理解作者決策的另一條證據。至於在完全相同條件下不引流會如何，單一病例沒有提供對照，",
+        "line_for_editor": 111
+      },
+      "0b76287b3f2e8bd352-1": {
+        "role": "counterfactual",
+        "reviewer_original_role": "independent counterfactual",
+        "reader_gain": "Tests intermediate-risk pH7.29 and low-risk pH7.45 with ultrasound and trajectory.",
+        "nonredundancy_reason": "Transfers guideline reasoning without inventing the source patient's data.",
+        "verdict": "keep",
+        "excerpt_for_editor": "現在才另設獨立假想反事實：pH 7.29、LDH 1,200、glucose 45 且持續發燒、有分隔。這不是這位 56 歲男性任何時點的原始數值，而是用來檢查 BTS 中間風險分支的條件題。這組條件會提高引流考量，但仍需安全超音波窗口與團隊評估；反之 pH 7.45、沒有分隔、逐日退燒且",
+        "line_for_editor": 113
+      },
+      "554b59390e56806bd3-1": {
+        "role": "decision",
+        "reviewer_original_role": "post-drain assessment",
+        "reader_gain": "Explains persistent septated compartments and tube position despite output.",
+        "nonredundancy_reason": "Shows why drainage does not itself prove source control.",
+        "verdict": "keep",
+        "excerpt_for_editor": "胸管是引流工具，不是「已完成感染源控制」的保證。感染液體可能被多個 fibrin septa 分隔；一支管路雖有排出量，仍留有未連通的積液。若置管後持續發燒、發炎指標不降、氧氣需求上升，應重新確認管路是否通暢、位置是否在主要感染口袋、是否有殘留分隔，以及抗菌藥是否涵蓋病原與有無其他感染源。",
+        "line_for_editor": 117
+      },
+      "7df5ce83a1a86b1006-1": {
+        "role": "decision",
+        "reviewer_original_role": "rescue evidence",
+        "reader_gain": "Separates small-bore initial drainage, combined tPA/DNase and surgical escalation.",
+        "nonredundancy_reason": "Avoids making rescue options a mandatory sequence or order-ready regimen.",
+        "verdict": "keep",
+        "excerpt_for_editor": "BTS 2023 建議 pleural infection 初始引流可使用 ≤14F small-bore chest tube。若初次胸管引流已停止但仍有殘留感染性積液，可由專科團隊考慮 intrapleural tPA + DNase 合併治療，而非把單用 tPA 或單用 DNase ",
+        "line_for_editor": 119
+      },
+      "33394a274a484b3f0a-1": {
+        "role": "case_evidence",
+        "reviewer_original_role": "case follow-up",
+        "reader_gain": "Tracks Day6 fibrinolysis, Day14 larger tube and Day16 removal without causal overclaim.",
+        "nonredundancy_reason": "Protects temporal association versus treatment efficacy.",
+        "verdict": "keep",
+        "excerpt_for_editor": "原病例後續仍需多次處理：Day 6 開始胸膜腔內 tPA/DNase，Day 14 改用較大管徑胸管，Day 16 影像改善並移除管路。這條先後順序不能分離抗菌藥、引流、時間及其他因素各自的效果，更不能把作者使用的個案藥量移植成本院處方；它真正保留的問題是「初次引流後是否仍有未解的空間」。",
+        "line_for_editor": 121
+      },
+      "37065417ed573f97c0-1": {
+        "role": "counterfactual",
+        "reviewer_original_role": "failure counterfactual",
+        "reader_gain": "Tests improving fever with worsening imaging and shrinking effusion with shock.",
+        "nonredundancy_reason": "Teaches reassessment and competing causes after treatment.",
+        "verdict": "keep",
+        "excerpt_for_editor": "再作一個與原患者分開的反事實：假如另一位病人抗菌藥後體溫下降，但影像顯示胸水擴大、氧氣需求增加，仍不能因「退燒」就推論 source control 已成功；反之胸水量減少但仍休克，也不能認定所有休克都由胸膜腔造成。治療後重新問的是：原本要解決的危險是否真的解除，還有哪些競爭解釋？",
+        "line_for_editor": 123
+      },
+      "1aa712929d8528be29-1": {
+        "role": "decision",
+        "reviewer_original_role": "alternative pathways",
+        "reader_gain": "Contrasts malignant, hepatic, thromboembolic and hemorrhagic effusion priorities.",
+        "nonredundancy_reason": "Prevents Light classification from swallowing distinct clinical emergencies.",
+        "verdict": "keep",
+        "excerpt_for_editor": "若胸水屬於惡性病變，最終決策可能是 cytology、胸膜切片與控制反覆症狀的 indwelling pleural catheter 或 pleurodesis；這是「病因與反覆累積」問題，不是「感染液體需緊急引流」的同一條路。若胸水因肝硬化與腹胸交通而形成，處置主軸是 portal h",
+        "line_for_editor": 127
+      },
+      "b1df4abad602ce1b2b-1": {
+        "role": "causal_bridge",
+        "reviewer_original_role": "three-layer synthesis",
+        "reader_gain": "Unifies sampling/classification, infection drainage and physiological urgency.",
+        "nonredundancy_reason": "Provides a compact decision schema derived from preceding evidence.",
+        "verdict": "keep",
+        "excerpt_for_editor": "因此，Light criteria 是第一層病因分類工具；pH／glucose／微生物與影像是感染源控制決策工具；病人的呼吸與循環狀態則決定處置時效與安全邊界。 三層訊息互相補充，但任何一層都不能代替另外兩層。",
+        "line_for_editor": 129
+      },
+      "2ee8fea69c1f90adc1-1": {
+        "role": "navigation",
+        "reviewer_original_role": "exam navigation",
+        "reader_gain": "Explains the three official questions as probes of distinct reasoning layers.",
+        "nonredundancy_reason": "Connects exam practice to article concepts rather than tag-only links.",
+        "verdict": "keep",
+        "excerpt_for_editor": "三題分別測試引流線索、液體定義與病因連結。年度、題號、官方答案及更正入口列於文末；先自行作答，再看每個選項在哪一步改變了判斷。",
+        "line_for_editor": 133
+      },
+      "191c6bc22b3cd5b2ae-1": {
+        "role": "case_evidence",
+        "reviewer_original_role": "official Q45 stem",
+        "reader_gain": "Preserves test's pH/glucose/LDH/WBC alternatives.",
+        "nonredundancy_reason": "Required to evaluate why glucose 38 is the strongest provided clue.",
+        "verdict": "keep",
+        "excerpt_for_editor": "肺炎治療一週仍發燒、胸痛，右側新胸水。題目問哪一項胸水檢驗最支持積極引流？四個選項分別為 A pH 7.3、B glucose 38 mg/dL、C LDH 700 U/L、D WBC 7,000/μL。",
+        "line_for_editor": 137
+      },
+      "19ffbacc896f3d2606-1": {
+        "role": "decision",
+        "reviewer_original_role": "official Q45 reasoning",
+        "reader_gain": "Interprets B while separating guideline thresholds and nonspecific WBC.",
+        "nonredundancy_reason": "Prevents a historical MCQ answer being treated as a stand-alone drain order.",
+        "verdict": "keep",
+        "excerpt_for_editor": "B 最符合題目所要求的危險線索：glucose 38 mg/dL 約 2.1 mmol/L，提示高度代謝活躍或感染性胸膜腔，合併未改善肺炎與胸痛應積極評估引流。A 的 pH 7.3 屬 2023 BTS 中間風險，不能單獨當作「一定不用引流」或「一定引流」；C 的 LDH 700 U/L ",
+        "line_for_editor": 141
+      },
+      "a549fa18ac4d4ab961-1": {
+        "role": "case_evidence",
+        "reviewer_original_role": "official Q48 prompt",
+        "reader_gain": "Sets malignant/TB/chylous/hemothorax analyte contrasts.",
+        "nonredundancy_reason": "Introduces the next distinct measurement-identity test.",
+        "verdict": "keep",
+        "excerpt_for_editor": "題目比較惡性胸水 glucose、結核胸水細胞分布、乳糜胸定義、血胸定義。先作答：哪一項最適當？",
+        "line_for_editor": 145
+      },
+      "c7e6114a18506eef47-1": {
+        "role": "definition",
+        "reviewer_original_role": "official Q48 reasoning",
+        "reader_gain": "Explains B and why cholesterol or absolute hemoglobin swaps fail.",
+        "nonredundancy_reason": "Prevents uncritical disease labels from substituting analytes.",
+        "verdict": "keep",
+        "excerpt_for_editor": "B：結核性胸膜炎常呈 exudate 且以 lymphocytes 為主，但不是「淋巴球多＝確診 TB」。A 錯在把惡性胸水的 glucose 說成必然正常；惡性胸水可能 glucose 低。C 把乳糜胸的 triglyceride／chylomicron 判斷錯換成 cholestero",
+        "line_for_editor": 147
+      },
+      "209b4567d322eda990-1": {
+        "role": "case_evidence",
+        "reviewer_original_role": "official Q49 prompt",
+        "reader_gain": "Frames amylase, subphrenic infection, drug reaction and CABG contexts.",
+        "nonredundancy_reason": "Tests anatomical cause and timeline beyond exudate classification.",
+        "verdict": "keep",
+        "excerpt_for_editor": "題目問胸水診斷敘述何者錯誤：A 將胸水 amylase 升高連結膽道發炎；B 指向腹腔膿瘍；C 指向藥物性嗜酸性胸水；D 指向 CABG 術後胸水。先作答，再檢驗每個病因是否與檢查相連。",
+        "line_for_editor": 151
+      },
+      "aa53c6a7781bde734f-1": {
+        "role": "causal_bridge",
+        "reviewer_original_role": "official Q49 reasoning",
+        "reader_gain": "Rejects biliary inflammation as typical amylase cause, qualifies other etiologies.",
+        "nonredundancy_reason": "Protects against treating a single biomarker as universal localization.",
+        "verdict": "keep",
+        "excerpt_for_editor": "A 的推論最不恰當：胸水 amylase 升高典型應考慮胰臟病變、食道破裂及部分惡性腫瘤，而非將膽道發炎列為典型第一線解釋。B 的「發燒、neutrophil-rich 胸水但肺實質未見感染」使橫膈下／腹腔感染值得追查，卻不構成確診；C 的藥物性胸膜反應可伴 eosinophils，仍需排",
+        "line_for_editor": 153
+      },
+      "c75ea0acbb9cca3718-1": {
+        "role": "counterfactual",
+        "reviewer_original_role": "synthetic transfer T1",
+        "reader_gain": "Explicitly authored heart-failure gradient 3.7/2.2 and four options.",
+        "nonredundancy_reason": "Tests whether readers can transfer pseudoexudate reasoning.",
+        "verdict": "keep",
+        "excerpt_for_editor": "病人心衰竭利尿後雙側胸水減少，但 Light criteria 陽性，serum albumin 3.7、pleural albumin 2.2 g/dL；無發燒、胸痛。下列何者較合理？A 立刻視為感染性胸水放管；B serum–pleural albumin gradient 1.5 g",
+        "line_for_editor": 157
+      },
+      "744fe8be3a5920f296-1": {
+        "role": "decision",
+        "reviewer_original_role": "T1 adjudication",
+        "reader_gain": "Explains B and rejects immediate infection, malignancy and no follow-up.",
+        "nonredundancy_reason": "Separates conditional inference from categorical claims.",
+        "verdict": "keep",
+        "excerpt_for_editor": "答案 B。 A 混淆分類與引流適應症；C 把高敏感分類器當病因確診；D 忽略臨床再評估與不典型表現。",
+        "line_for_editor": 159
+      },
+      "5a22bb1d0b71779f4f-1": {
+        "role": "counterfactual",
+        "reviewer_original_role": "synthetic transfer T2",
+        "reader_gain": "Explicitly authored pH7.29, LDH1200, glucose45 with fever and septation.",
+        "nonredundancy_reason": "Tests intermediate BTS branch without contaminating the 56M record.",
+        "verdict": "keep",
+        "excerpt_for_editor": "肺炎病人抽出非膿性胸水，pH 7.29、LDH 1,200 U/L、glucose 45 mg/dL；持續發燒，超音波有分隔。A 因 pH >7.2 絕對不放胸管；B 因 exudate 身分一律胸管；C 結合 BTS 中間風險分支、超音波安全窗口及臨床惡化，與團隊討論引流；D 只加強利尿",
+        "line_for_editor": 163
+      },
+      "bae7dc461f5d4db438-1": {
+        "role": "decision",
+        "reviewer_original_role": "T2 adjudication",
+        "reader_gain": "Explains C with safe ultrasound window and clinical context.",
+        "nonredundancy_reason": "Avoids automatic chest-tube orders from one number.",
+        "verdict": "keep",
+        "excerpt_for_editor": "答案 C。 A 忽略中間風險的第二層判斷；B 把 Light criteria 當 source-control 指標；D 忽略局部感染的空間問題。",
+        "line_for_editor": 165
+      },
+      "0cf0a373ebb0dc78b2-1": {
+        "role": "causal_bridge",
+        "reviewer_original_role": "final synthesis",
+        "reader_gain": "Restates three noninterchangeable decision boundaries and post-intervention recheck.",
+        "nonredundancy_reason": "Consolidates the case, mechanism and source-control reasoning.",
+        "verdict": "keep",
+        "excerpt_for_editor": "當病人有胸水，你要同時守住三條邊界。第一，有液體不等於知道病因：臨床前測機率與是否需取樣先於 Light criteria。第二，exudate 不等於需要胸管：pH、glucose、LDH、微生物、超音波及病程決定感染性積液是否需引流。第三，放了胸管不等於 source control ",
+        "line_for_editor": 169
+      },
+      "90cb92013c24678c77-1": {
+        "role": "navigation",
+        "reviewer_original_role": "reading navigation",
+        "reader_gain": "Maps two reading sessions and delayed practice without claiming observed learning.",
+        "nonredundancy_reason": "Offers usable navigation without fictitious performance data.",
+        "verdict": "keep",
+        "excerpt_for_editor": "建議分次閱讀：第一次讀 01–05，先作 112（一）Q45 與 T2；第二次讀 06–09，作 114（一）Q48、115（二）Q49 與 T1。延遲回想從實際作答日期起算；沒有讀者作答資料，不標記已掌握。",
+        "line_for_editor": 171
+      },
+      "0bb15afae048b339df-1": {
+        "role": "source_context",
+        "reviewer_original_role": "primary source",
+        "reader_gain": "Identifies original Cureus DOI, Figure2/Table1 and unresolved Day2/Day3 discrepancy.",
+        "nonredundancy_reason": "Makes patient observations and source uncertainty auditable.",
+        "verdict": "keep",
+        "excerpt_for_editor": "El Zibaoui R, Odeyemi YE, El Labban M. A Rapidly Enlarging Asymptomatic Parapneumonic Effusion: A Case Report. Cureus 2024;16(1):e52986，DOI 10.77",
+        "line_for_editor": 177
+      },
+      "8a47a3724bff52c910-1": {
+        "role": "source_context",
+        "reviewer_original_role": "guideline source",
+        "reader_gain": "Identifies BTS 2023 appendix p37, footnotes and threshold wording conflict.",
+        "nonredundancy_reason": "Needed to check clinical rule provenance separately from case report.",
+        "verdict": "keep",
+        "excerpt_for_editor": "British Thoracic Society, Guideline for pleural disease, 2023。官方完整 Supplement，印刷 p.37（PDF index 44）的感染性胸水初始分流圖與安全註腳；引流與 tPA/DNase 依正式建議的適用情境判讀，並保",
+        "line_for_editor": 178
+      },
+      "620d987ac150e62586-1": {
+        "role": "source_context",
+        "reviewer_original_role": "procedure source",
+        "reader_gain": "Cites BTS procedure statement for ultrasound and aspiration safeguards.",
+        "nonredundancy_reason": "Separates procedural guidance from infection-drainage guideline.",
+        "verdict": "keep",
+        "excerpt_for_editor": "BTS, Clinical Statement on pleural procedures, Thorax 2023;78(Suppl 3):s43–s68。程序安全原文。",
+        "line_for_editor": 179
+      },
+      "f48ec79687f8cc3891-1": {
+        "role": "source_context",
+        "reviewer_original_role": "private textbook provenance",
+        "reader_gain": "Identifies Pocket 9E pages 94–96 without copying protected table pixels.",
+        "nonredundancy_reason": "Preserves background source identity and rights boundary.",
+        "verdict": "keep",
+        "excerpt_for_editor": "Pocket Medicine, 9th ed., PLEURAL EFFUSION，PDF p.94–96；p.95 為 Light／Three-Test 對照，p.96 的液體特徵表明註不是診斷門檻。此處不重製書頁。",
+        "line_for_editor": 180
+      },
+      "b51d9a0d32adafb193-1": {
+        "role": "source_context",
+        "reviewer_original_role": "pseudoexudate literature",
+        "reader_gain": "Provides specific PMID for albumin-gradient interpretation.",
+        "nonredundancy_reason": "Avoids leaving an alternative discriminator uncited.",
+        "verdict": "keep",
+        "excerpt_for_editor": "A practical approach to pseudoexudative pleural effusions, Respir Med 2023，PMID 37172787。",
+        "line_for_editor": 181
+      },
+      "3be39ceaf8378e49b6-1": {
+        "role": "source_context",
+        "reviewer_original_role": "official exam provenance",
+        "reader_gain": "Preserves three Q/S/M identities, final B/B/A and correction scope.",
+        "nonredundancy_reason": "Prevents wrong-year/answer mapping; prior original-image check inherited only.",
+        "verdict": "keep",
+        "excerpt_for_editor": "臺灣考選部官方原卷、標準答案與更正表（試題代號 1302）：112（一）醫學（三）Q45 原卷／標準答案／更正表，最終 B（更正僅涉及 Q47）；114（一）醫學（三）Q48 原卷／答案／更正表，最終 B（更正僅涉及 Q23、Q42）；115（二）醫學（三）Q49 原卷／答案／更正表，最終",
+        "line_for_editor": 182
+      },
+      "9bb7261c3c15f1fc7e-1": {
+        "role": "safety",
+        "reviewer_original_role": "educational safety",
+        "reader_gain": "Explicitly disclaims patient-specific clinical/procedure authority.",
+        "nonredundancy_reason": "Protects education-only scope at the point of reader exit.",
+        "verdict": "keep",
+        "excerpt_for_editor": "本篇用於醫學學習與證據判讀，不能代替病人當下的臨床與程序評估。",
+        "line_for_editor": 184
+      }
+    }
+  },
+  "nonblocking_findings": [
+    {
+      "severity": "P2",
+      "location": "source bibliography pseudoexudate citation",
+      "detail": "Leading '* ' may render as a list marker with stray trailing emphasis; publication writer may normalize typography, then recheck source-only fingerprint/links."
+    }
+  ],
+  "gates": {
+    "private_publication_semantic": "PASS_ON_EXACT_PROPOSED_BLOB",
+    "source_original_figures": "BTS_AND_CUREUS_VISUALLY_VERIFIED",
+    "official_exam": "THREE_QSM_VERIFIED",
+    "exact_head_candidate_preflight": "NOT_RUN",
+    "public_mobile": "NOT_VERIFIED",
+    "global_semantic_registry": "NOT_WRITTEN",
+    "actual_site_catalog": "NOT_CHANGED",
+    "main_merge": "NOT_AUTHORIZED",
+    "cloudflare_production": "NOT_PUBLISHED",
+    "human_medical_review": "NOT_PERFORMED",
+    "reader_learning_effect": "NOT_MEASURED"
+  },
+  "next_action": "Original publication writer integrates actual independent receipt into the candidate.patch only, runs disposable private preflight including source/figure/semantic and 360/375/390/1280 compiled reader/exam/source checks, rechecks fingerprint, retains Draft; PR188 merge/deploy requires explicit scope-specific L2 authorization."
+}

@@ -1407,6 +1407,7 @@
     "collection": "xiaoma-reading",
     "kind": "ai_integrated",
     "date": "2026-10-26",
+    "updated": "2026-10-29",
     "navigation": false,
     "review": "ai_editorial_review",
     "layout": "reader",
@@ -1800,8 +1801,8 @@
   {
     "source": "content/clinical-os/acs.md",
     "output": "acs-reading.html",
-    "title": "ACS：從缺血的證據，讀到治療後留下的風險",
-    "subtitle": "ACS 四章閱讀入口：症狀與損傷、ECG 空間與時間、抗栓與再灌流、MI 後剩餘風險",
+    "title": "ACS：從胸痛到導管，再到心肌梗塞後的新危險",
+    "subtitle": "從急診 ECG、hs-cTn、再灌流與抗栓，推進至休克和 MI 後機械併發症",
     "collection": "clinical-os",
     "layout": "reader",
     "section": "心臟與胸痛",
@@ -1815,7 +1816,7 @@
         "subject": "醫學（三）",
         "question_number": 6,
         "focus": "以 MI 證據／病因區別舊 Type 5 和 2026 新程序性 MI 的診斷",
-        "concept_heading": "01｜診斷：缺血與心肌傷害，為什麼不能互相取代？"
+        "concept_heading": "四、Troponin 回答的是「傷害」，不是自動回答「是哪條血管、該不該 PCI」"
       },
       {
         "year_roc": 114,
@@ -1824,7 +1825,7 @@
         "subject": "醫學（三）",
         "question_number": 6,
         "focus": "把術前 P2Y12、PCI 中抗凝、GP IIb/IIIa 與 DAPT 療程分開",
-        "concept_heading": "03｜治療：藥物、導管與時間，各自要改變哪一段病程？"
+        "concept_heading": "七、藥物不是一串口訣：每一種藥要回答哪個血栓環節、又承擔什麼代價？"
       },
       {
         "year_roc": 114,
@@ -1833,7 +1834,7 @@
         "subject": "醫學（三）",
         "question_number": 9,
         "focus": "MI 後喘、倦怠和水腫是獨立的心室功能／鬱血／灌流問題",
-        "concept_heading": "04｜MI 之後：血管已通，為什麼還不能說病人恢復了？"
+        "concept_heading": "十、導管已經成功，病人突然喘、休克或心律不整，怎麼辦？"
       },
       {
         "year_roc": 108,
@@ -1842,7 +1843,7 @@
         "subject": "醫學（三）",
         "question_number": 76,
         "focus": "由古柯鹼誘發缺血釐清血管痙攣、心肌需氧與用藥限制",
-        "concept_heading": "01｜診斷：缺血與心肌傷害，為什麼不能互相取代？"
+        "concept_heading": "八、減少胸痛不是再灌流；改善數值也不代表改善預後"
       },
       {
         "year_roc": 115,
@@ -1851,7 +1852,7 @@
         "subject": "醫學（三）",
         "question_number": 11,
         "focus": "從持續胸痛、前壁 STE、SpO₂ 到仍需緊急再灌流的條件判斷",
-        "concept_heading": "03｜治療：藥物、導管與時間，各自要改變哪一段病程？"
+        "concept_heading": "六、STEMI 的再灌流時鐘：把血栓打開才是治療主軸"
       },
       {
         "year_roc": 115,
@@ -1860,7 +1861,7 @@
         "subject": "醫學（三）",
         "question_number": 12,
         "focus": "從 LAD 打通後的新風險辨別 LV thrombus、VT/VF 和長期次級預防",
-        "concept_heading": "04｜MI 之後：血管已通，為什麼還不能說病人恢復了？"
+        "concept_heading": "十、導管已經成功，病人突然喘、休克或心律不整，怎麼辦？"
       },
       {
         "year_roc": 115,
@@ -1869,14 +1870,15 @@
         "subject": "醫學（三）",
         "question_number": 13,
         "focus": "灌流下降、壁運動、ECG 電位和血中 troponin 訊號的不同時間尺度",
-        "concept_heading": "02｜ECG：心肌病灶與紙上的波形，隔著一個觀察方向"
+        "concept_heading": "三、ECG 要讀成「哪一區心肌正在求救」，不能只查 ST 有沒有超過門檻"
       }
-    ]
+    ],
+    "kind": "ai_integrated"
   },
   {
     "source": "content/xiaoma-internal-medicine/acs-exam-sources.md",
     "output": "xiaoma-acs-exam-sources.html",
-    "title": "ACS：113、114 年醫師二階原卷與 2026 MI 定義對讀",
+    "title": "ACS：113–115 年醫師二階原卷與 2026 MI 定義對讀",
     "subtitle": "考選部正式更正答案、2025 ACC/AHA ACS、2026 Fifth UDMI 與核讀範圍",
     "collection": "xiaoma-internal-medicine",
     "layout": "reader",
@@ -2200,5 +2202,1492 @@
     "layout": "reader",
     "section": "參考資料",
     "navigation": false
+  },
+  {
+    "source": "content/clinical-os/2026-10-27-sepsis-from-infection-to-resuscitation.md",
+    "output": "clinical-sepsis-infection-to-shock.html",
+    "title": "Sepsis：感染如何變成器官衰竭？",
+    "subtitle": "以真實阻塞性泌尿道感染病例，理解微循環、源頭控制與個別化休克復甦",
+    "collection": "clinical-os",
+    "kind": "ai_integrated",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "感染與休克",
+    "related_exams": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 33,
+        "concept_heading": "四、病原體如何使全身失去控制：從免疫啟動到內皮、凝血與細胞代謝",
+        "focus": "IL-5 與 IL-1／IL-6／TNF-α 的機轉分別"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 64,
+        "concept_heading": "六、感染在哪裡？診斷與 source control 是「治療」，不是附屬檢查",
+        "focus": "海水、肝硬化、Vibrio vulnificus 與緊急感染來源處置"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 65,
+        "concept_heading": "七、抗生素與源頭控制，為什麼必須和循環復甦一起開始？",
+        "focus": "創傷弧菌感染的抗菌藥選擇與緊急源頭控制"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "concept_heading": "八、現在為什麼血壓低？把「血管張力、回心血量、心肌功能」真正分開",
+        "focus": "分布性與心因性休克之 SVR／CO 反應"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 57,
+        "concept_heading": "十五、持續危險時：酸中毒、類固醇與頑固性休克",
+        "focus": "感染合併 adrenal crisis 的優先診療"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "concept_heading": "十五、持續危險時：酸中毒、類固醇與頑固性休克",
+        "focus": "官方 113-1 Q48：酸中毒矯正不取代感染源與灌流復甦，保留 2026 指南限定例外"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/sepsis-core-112-114-med3.md",
+    "output": "xiaoma-exam-sepsis-112-114-five-questions.html",
+    "title": "Sepsis：從六題國考看循環、感染來源與治療優先序",
+    "subtitle": "112–114 年醫師二階：IL-5、創傷弧菌與抗菌藥、SVR、bicarbonate、adrenal crisis",
+    "collection": "xiaoma-internal-medicine",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "layout": "reader",
+    "section": "感染與重症・官方真題",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 33,
+        "question_heading": "112-1 醫學（三）第 33 題｜為什麼 IL-5 不是 Sepsis 主要促發炎訊號？",
+        "focus": "IL-5 與 IL-1／IL-6／TNF-α 的機轉分別",
+        "topic": "IL-5 與 IL-1／IL-6／TNF-α 的機轉分別"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 64,
+        "question_heading": "112-1 醫學（三）第 64 題｜海水傷口、紫紅水泡與休克：感染來源的證據不能忽略",
+        "focus": "海水、肝硬化、Vibrio vulnificus 與緊急感染來源處置",
+        "topic": "海水、肝硬化、Vibrio vulnificus 與緊急感染來源處置"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "question_heading": "114-1 醫學（三）第 51 題｜哪一種休克的 SVR 方向不同？",
+        "focus": "分布性與心因性休克之 SVR／CO 反應",
+        "topic": "分布性與心因性休克之 SVR／CO 反應"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 65,
+        "question_heading": "112-1 醫學（三）第 65 題｜已懷疑創傷弧菌，如何把病原辨識轉成抗菌藥選擇？",
+        "focus": "創傷弧菌的抗菌藥組合與必要清創",
+        "topic": "Vibrio vulnificus 抗菌藥選擇"
+      }
+    ],
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 57,
+        "concept_heading": "114-1 醫學（三）第 57 題｜感染合併持續休克，什麼時候不要再等檢驗？",
+        "focus": "同一官方 Q57 的 adrenal crisis 休克鑑別：以既有正規題號連回 Sepsis 詳解，不重複登錄官方真題。"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "concept_heading": "113-1 醫學（三）第 48 題｜Sepsis 合併酸中毒，第一個目標是把 pH 調正常嗎？",
+        "focus": "官方第 48 題確實為 Sepsis／bicarbonate；與現有 acid-base 原題共用 canonical identity"
+      }
+    ],
+    "kind": "exam_compilation"
+  },
+  {
+    "source": "content/clinical-os/sepsis-visual-evidence-and-sources.md",
+    "output": "clinical-sepsis-evidence.html",
+    "title": "Sepsis 原始病例影像與證據來源",
+    "subtitle": "以原始 POCUS／CT 的資訊增量理解源頭控制，不把原圖當成萬能診斷",
+    "collection": "clinical-os",
+    "layout": "reader",
+    "date": "2026-10-27",
+    "navigation": false,
+    "section": "參考資料",
+    "kind": "source_reference"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-pericardial-tamponade.md",
+    "output": "xiaoma-20261027-pericardial-tamponade.html",
+    "title": "Pericardial Tamponade：為什麼 CVP 高，心臟卻充不進血？",
+    "subtitle": "真實休克病例 × 心包跨壁壓 × Echo 改判 × 引流時機與三種反例",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環急症",
+    "references": "xiaoma-pericardial-tamponade-sources.html",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pericardial-tamponade-sources.md",
+    "output": "xiaoma-pericardial-tamponade-sources.html",
+    "title": "Pericardial Tamponade：病例、IBCC 與 ESC 原始來源",
+    "subtitle": "原始病例證據、ESC Table 17／ACC Figure 10 及引流與術後超音波限制",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-structural-exam.md",
+    "output": "xiaoma-20261027-heart-sounds-structural-exam.html",
+    "title": "心音與結構性心臟病：從心動週期到臨床判斷",
+    "subtitle": "真實急性 MR 病例、壓力與流量、四大瓣膜病、HCM、分流與 Echo 證據",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-heart-sounds-structural-sources.html",
+    "updated": "2026-10-28",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 10,
+        "focus": "ASD 固定分裂 S2：先解釋肺血流增加，而不是把缺損孔當成雜音來源。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "focus": "先辨認時相與血流產生的心雜音，不能只靠是否響亮判定病理。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "focus": "心音的時相與脈絡只能形成初步假說；兒童 innocent murmur 的個別鑑別仍看原題。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 33,
+        "focus": "PAPVR 與 ASD 都可能增加右心容量負荷；重點是分流造成的肺血流變化。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "focus": "由左向右分流與肺血流負荷理解心雜音及心衰線索；嬰兒病因仍需原題鑑別。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "focus": "PDA 的連續性雜音來自主動脈和肺動脈間的持續壓差；用藥則回到原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 12,
+        "focus": "VSD 分流量與肺循環容量負荷可造成心衰，但不能只由雜音響度推定缺損大小；成長及餵食病史仍看原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "focus": "先從收縮、舒張及跨期壓差理解何謂真正的連續性雜音。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 31,
+        "focus": "TOF 發紺與流出道阻塞的動態關係，不能僅用 VSD 雜音大小解釋。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "TOF hypoxic spell 的肺血流下降可讓雜音變弱；急救措施仍依原題完整判讀。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 22,
+        "focus": "TOF 的肺血流受 RVOTO 影響，改善通氣不保證立即解除分流與低氧。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "focus": "Doppler 峰值速度與瞬時壓差的 Bernoulli 換算，不等於平均壓差。",
+        "concept_heading": "三、聲音是血流事件的投影；壓差和流量不是同一件事",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "focus": "術前 TTE 應區分病灶解剖、血流嚴重度及對心腔的後果。",
+        "concept_heading": "七、從懷疑到證據：超音波要回答三種不能互換的問題",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "focus": "AS 嚴重度、症狀與瓣膜介入條件不能只靠年齡或雜音決定。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "focus": "AS 與 MS 的機械阻礙發生在不同時相，介入策略不能照搬。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "focus": "理解嚴重 AS 的固定出口阻力；嬰兒的手術技術選擇仍需看原題專論。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 19,
+        "focus": "MR 是 LV 收縮時的 LV→LA 逆流；以跨瓣時相判定雜音。",
+        "concept_heading": "二、先畫心動週期，而不是先背 AS、MR、VSD",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "focus": "心肌梗塞後休克與肺水腫若不成比例惡化，要警覺乳突肌或室間隔破裂。",
+        "concept_heading": "八、病人惡化時，什麼時候不能再等聲音變典型？",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "focus": "VSD 的高壓差與雜音強弱不等於缺損大小；瓣葉脫垂的細節仍看原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "focus": "心房黏液瘤可造成二尖瓣流入阻礙，低頻舒張音不代表風濕性 MS。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 9,
+        "focus": "ASD 是否能封堵要整合 PVR、分流方向與 Eisenmenger 生理。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 2,
+        "focus": "休克時心音不典型不能排除心包填塞；本篇提供急症分流，詳細氣胸鑑別見原題。",
+        "concept_heading": "八、病人惡化時，什麼時候不能再等聲音變典型？",
+        "embed": false
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 7,
+        "focus": "TEE 補充病灶解剖資訊，但不能把瓣膜影像推成全段冠脈狹窄比例。",
+        "concept_heading": "七、從懷疑到證據：超音波要回答三種不能互換的問題",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "focus": "ASD 關閉前先看右心容量負荷、肺血管阻力與 Eisenmenger 禁忌。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "先辨認分流方向與血氧的生理意義；上下肢差異的解剖定位仍依原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "focus": "肺血流與分流機制決定發紺表現；各新生兒疾病的細節由原題區分。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 4,
+        "focus": "腱索斷裂屬原發性 MR 的結構病變，瓣葉運動型態才是下一步分類依據。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "focus": "BAV 造成 AS 的解剖病因與合併主動脈病變，須分開評估術式。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 5,
+        "focus": "PDA 的管道壓差與開閉生理是先備概念；PGE₁ 作用與早產兒處置依原題。",
+        "concept_heading": "六、第二心音與先天性分流：不要把「洞」當成雜音來源",
+        "embed": false
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 21,
+        "focus": "MS 導致 LA 壓上升並增加 AF/栓塞風險；心率變化可加速失代償。",
+        "concept_heading": "四、四種左心瓣膜病：同一套壓力—容量模型，四條不同失代償路徑",
+        "embed": false
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/heart-sounds-structural-sources.md",
+    "output": "xiaoma-heart-sounds-structural-sources.html",
+    "title": "心音與結構性心臟病：真題與證據來源",
+    "subtitle": "111–115 年醫師二階考題、Pocket Medicine、IBCC 與現行指南",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-27-heart-sounds-cross-discipline-exams.md",
+    "output": "xiaoma-20261027-heart-sounds-cross-discipline-exams.html",
+    "title": "國考題庫｜心音與結構病 111–115 年跨科 29 題解析",
+    "subtitle": "逐題選項推理與正式更正答案；屬題庫解析，非系統性教材",
+    "collection": "xiaoma-internal-medicine",
+    "kind": "exam_compilation",
+    "layout": "reader",
+    "section": "心臟與循環・官方真題",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "references": "xiaoma-heart-sounds-cross-discipline-sources.html",
+    "exam_questions": [
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 10,
+        "question_heading": "115（二）醫學（四）Q10｜ASD 四種聲音機轉｜官方 A",
+        "focus": "ASD 四種聲音機轉",
+        "topic": "ASD 四種聲音機轉",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "question_heading": "114（二）醫學（四）Q7｜兒童心雜音的真與假｜官方 B",
+        "focus": "兒童心雜音的真與假",
+        "topic": "兒童心雜音的真與假",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "112（二）醫學（四）Q6｜innocent murmur 的排除特徵｜官方 B",
+        "focus": "innocent murmur 的排除特徵",
+        "topic": "innocent murmur 的排除特徵",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 33,
+        "question_heading": "111（一）醫學（四）Q33｜PAPVR 的血流動力學像誰？｜官方 B",
+        "focus": "PAPVR 的血流動力學像誰？",
+        "topic": "PAPVR 的血流動力學像誰？",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "113（二）醫學（四）Q6｜三個月嬰兒體重不增與心雜音｜官方 A",
+        "focus": "三個月嬰兒體重不增與心雜音",
+        "topic": "三個月嬰兒體重不增與心雜音",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "question_heading": "113（二）醫學（四）Q7｜PDA：維持開放還是促進關閉？｜官方 C",
+        "focus": "PDA：維持開放還是促進關閉？",
+        "topic": "PDA：維持開放還是促進關閉？",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 12,
+        "question_heading": "115（二）醫學（四）Q12｜VSD 的 HF 線索｜官方 A",
+        "focus": "VSD 的 HF 線索",
+        "topic": "VSD 的 HF 線索",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "115（一）醫學（四）Q6｜哪一個最不像連續性雜音？｜官方 D",
+        "focus": "哪一個最不像連續性雜音？",
+        "topic": "哪一個最不像連續性雜音？",
+        "concept_heading": "第一組：心音、分流與兒童病況，從聽診走到實際病因"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 31,
+        "question_heading": "111（一）醫學（四）Q31｜TOF 何以九個月才顯著發紺？｜官方 D",
+        "focus": "TOF 何以九個月才顯著發紺？",
+        "topic": "TOF 何以九個月才顯著發紺？",
+        "concept_heading": "第二組：發紺不是同一種生理現象"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "112（一）醫學（四）Q8｜TOF hypoxic spell 處置｜官方 D",
+        "focus": "TOF hypoxic spell 處置",
+        "topic": "TOF hypoxic spell 處置",
+        "concept_heading": "第二組：發紺不是同一種生理現象"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 22,
+        "question_heading": "114（二）醫學（五）Q22｜插管後 TOF 仍 SpO₂ 65%｜官方 C",
+        "focus": "插管後 TOF 仍 SpO₂ 65%",
+        "topic": "插管後 TOF 仍 SpO₂ 65%",
+        "concept_heading": "第二組：發紺不是同一種生理現象"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "question_heading": "113（一）醫學（四）Q7｜PGE1 為何不能救阻塞的 TAPVR？｜官方 D",
+        "focus": "PGE1 為何不能救阻塞的 TAPVR？",
+        "topic": "PGE1 為何不能救阻塞的 TAPVR？",
+        "concept_heading": "第二組：發紺不是同一種生理現象"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 30,
+        "question_heading": "111（一）醫學（五）Q30｜哪一種不能用 PGE1 橋接？｜官方 C",
+        "focus": "哪一種不能用 PGE1 橋接？",
+        "topic": "哪一種不能用 PGE1 橋接？",
+        "concept_heading": "第二組：發紺不是同一種生理現象"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 11,
+        "question_heading": "115（一）醫學（四）Q11｜上肢高血壓＋股動脈弱＋肩胛間雜音｜官方 A",
+        "focus": "上肢高血壓＋股動脈弱＋肩胛間雜音",
+        "topic": "上肢高血壓＋股動脈弱＋肩胛間雜音",
+        "concept_heading": "第二組：發紺不是同一種生理現象"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 11,
+        "question_heading": "115（二）醫學（四）Q11｜Supravalvular AS 加 peripheral PS｜官方 B",
+        "focus": "Supravalvular AS 加 peripheral PS",
+        "topic": "Supravalvular AS 加 peripheral PS",
+        "concept_heading": "第二組：發紺不是同一種生理現象"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "question_heading": "111（一）醫學（六）Q6｜Vmax 3.5 m/s 的壓差｜官方 D",
+        "focus": "Vmax 3.5 m/s 的壓差",
+        "topic": "Vmax 3.5 m/s 的壓差",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 6,
+        "question_heading": "114（二）醫學（六）Q6｜術前超音波哪項更需暫緩評估？｜官方 C",
+        "focus": "術前超音波哪項更需暫緩評估？",
+        "topic": "術前超音波哪項更需暫緩評估？",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "question_heading": "111（二）醫學（五）Q20｜AVR 適應症何者最不適當？｜官方 D",
+        "focus": "AVR 適應症何者最不適當？",
+        "topic": "AVR 適應症何者最不適當？",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "111（二）醫學（五）Q23｜AS 和 MS 的經導管技術不是同一回事｜官方 C",
+        "focus": "AS 和 MS 的經導管技術不是同一回事",
+        "topic": "AS 和 MS 的經導管技術不是同一回事",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 26,
+        "question_heading": "111（一）醫學（五）Q26｜機械瓣、組織瓣與免疫抑制｜官方 D",
+        "focus": "機械瓣、組織瓣與免疫抑制",
+        "topic": "機械瓣、組織瓣與免疫抑制",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "113（一）醫學（五）Q23｜Ross、年齡與 DOAC｜官方 C",
+        "focus": "Ross、年齡與 DOAC",
+        "topic": "Ross、年齡與 DOAC",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "112（二）醫學（五）Q24｜八個月大重度 AS，最不適合的瓣膜策略｜官方 C",
+        "focus": "八個月大重度 AS，最不適合的瓣膜策略",
+        "topic": "八個月大重度 AS，最不適合的瓣膜策略",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 19,
+        "question_heading": "113（二）醫學（五）Q19｜MR 是收縮還是舒張？｜官方 B",
+        "focus": "MR 是收縮還是舒張？",
+        "topic": "MR 是收縮還是舒張？",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "question_heading": "114（一）醫學（五）Q20｜AMI 的機械性併發症｜官方 A",
+        "focus": "AMI 的機械性併發症",
+        "topic": "AMI 的機械性併發症",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "112（一）醫學（五）Q24｜最容易使主動脈瓣葉脫垂的 VSD｜官方 C",
+        "focus": "最容易使主動脈瓣葉脫垂的 VSD",
+        "topic": "最容易使主動脈瓣葉脫垂的 VSD",
+        "concept_heading": "第三組：瓣膜病與外科——流量、年齡、材料和手術途徑不能互相替代"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 20,
+        "question_heading": "113（一）醫學（五）Q20｜心房黏液瘤的病灶在哪裡？｜官方 C",
+        "focus": "心房黏液瘤的病灶在哪裡？",
+        "topic": "心房黏液瘤的病灶在哪裡？",
+        "concept_heading": "第四組：腫瘤、成人先天病與「聲音無法替代危險度」"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 9,
+        "question_heading": "115（二）醫學（五）Q9｜ASD＋Eisenmenger：**標準答案更正為 B 或 D**",
+        "focus": "ASD 與 Eisenmenger：官方更正 B 或 D",
+        "topic": "ASD 與 Eisenmenger：官方更正 B 或 D",
+        "concept_heading": "第四組：腫瘤、成人先天病與「聲音無法替代危險度」"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 30,
+        "question_heading": "111（二）醫學（四）Q30｜六個月嬰兒、to-and-fro murmur 與胸片｜官方 B",
+        "focus": "六個月嬰兒、to-and-fro murmur 與胸片（原圖待核）",
+        "topic": "六個月嬰兒、to-and-fro murmur 與胸片（原圖待核）",
+        "concept_heading": "第五組：附圖題，先校對「圖是否真正看過」"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 7,
+        "question_heading": "112（一）醫學（四）Q7｜ECG 附圖的先天性心臟病｜官方 C",
+        "focus": "ECG 附圖的先天性心臟病（原圖待核）",
+        "topic": "ECG 附圖的先天性心臟病（原圖待核）",
+        "concept_heading": "第五組：附圖題，先校對「圖是否真正看過」"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/heart-sounds-cross-discipline-sources.md",
+    "output": "xiaoma-heart-sounds-cross-discipline-sources.html",
+    "title": "跨科心音國考 29 題：官方原卷、標準與更正來源",
+    "subtitle": "111–115 年考選部醫學（四）至（六）逐題定位與附圖審核界線",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-expanded-111-115.md",
+    "output": "xiaoma-exam-heart-sounds-structural-cross-specialty-111-115.html",
+    "title": "國考題庫｜心音與結構病另 20 道跨科補充題",
+    "subtitle": "對照 29 題無重複的跨科選項詳解；題庫解析，非系統性教材",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟與循環・官方真題",
+    "date": "2026-10-27",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "kind": "exam_compilation",
+    "references": "xiaoma-exam-heart-sounds-cross-specialty-sources.html",
+    "exam_questions": [
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 2,
+        "question_heading": "111 年第二次・醫學（五）Q2｜心音低沉能不能區分張力性氣胸與心包膜積血？",
+        "focus": "心音低沉能不能區分張力性氣胸與心包膜積血？",
+        "topic": "心音低沉能不能區分張力性氣胸與心包膜積血？",
+        "concept_heading": "一、理學檢查：心包填塞與氣胸如何鑑別"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（六）",
+        "question_number": 7,
+        "question_heading": "111 年第二次・醫學（六）Q7｜TEE 能看見什麼，不能看見什麼？",
+        "focus": "TEE 能看見什麼，不能看見什麼？",
+        "topic": "TEE 能看見什麼，不能看見什麼？",
+        "concept_heading": "二、TEE：能直接看到瓣膜，不等於能判斷所有冠狀動脈狹窄"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "112 年第二次・醫學（五）Q23｜ASD 的介入何時反而危險？",
+        "focus": "ASD 的介入何時反而危險？",
+        "topic": "ASD 的介入何時反而危險？",
+        "concept_heading": "三、ASD：肺血管阻力改變關閉決策"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 32,
+        "question_heading": "111 年第一次・醫學（四）Q32｜出生第二天無明顯症狀卻血氧偏低，何時想到 TGA？",
+        "focus": "出生第二天無明顯症狀卻血氧偏低，何時想到 TGA？",
+        "topic": "出生第二天無明顯症狀卻血氧偏低，何時想到 TGA？",
+        "concept_heading": "四、新生兒發紺：血液混合、導管與上下肢氧合"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "113 年第一次・醫學（四）Q8｜上下肢血氧差 10%：先判斷導管與主動脈位置",
+        "focus": "上下肢血氧差 10%：先判斷導管與主動脈位置",
+        "topic": "上下肢血氧差 10%：先判斷導管與主動脈位置",
+        "concept_heading": "四、新生兒發紺：血液混合、導管與上下肢氧合"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "112 年第二次・醫學（四）Q8｜發紺合併肺充血：更正答案優先於原始答案欄",
+        "focus": "發紺合併肺充血：更正答案優先於原始答案欄",
+        "topic": "發紺合併肺充血：更正答案優先於原始答案欄",
+        "concept_heading": "四、新生兒發紺：血液混合、導管與上下肢氧合"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 32,
+        "question_heading": "111 年第二次・醫學（四）Q32｜Noonan 與 Williams 的狹窄位置有何差別？",
+        "focus": "Noonan 與 Williams 的狹窄位置有何差別？",
+        "topic": "Noonan 與 Williams 的狹窄位置有何差別？",
+        "concept_heading": "五、先天性結構：狹窄位置、症候群與主動脈瓣關係"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "113 年第一次・醫學（五）Q24｜一日齡 simple TGA，為何不能停 PGE₁ 等兩週？",
+        "focus": "一日齡 simple TGA，為何不能停 PGE₁ 等兩週？",
+        "topic": "一日齡 simple TGA，為何不能停 PGE₁ 等兩週？",
+        "concept_heading": "六、心臟外科：瓣葉活動、瓣膜處置與心肺機體外循環"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "113 年第二次・醫學（五）Q23｜Complete AVSD：手術後也可能留瓣膜問題",
+        "focus": "Complete AVSD：手術後也可能留瓣膜問題",
+        "topic": "Complete AVSD：手術後也可能留瓣膜問題",
+        "concept_heading": "六、心臟外科：瓣葉活動、瓣膜處置與心肺機體外循環"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 4,
+        "question_heading": "115 年第一次・醫學（五）Q4｜腱索斷裂算哪一型 Carpentier dysfunction？",
+        "focus": "腱索斷裂算哪一型 Carpentier dysfunction？",
+        "topic": "腱索斷裂算哪一型 Carpentier dysfunction？",
+        "concept_heading": "六、心臟外科：瓣葉活動、瓣膜處置與心肺機體外循環"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 23,
+        "question_heading": "114 年第二次・醫學（五）Q23｜BAV 與升主動脈瘤：不要套下降主動脈支架邏輯",
+        "focus": "BAV 與升主動脈瘤：不要套下降主動脈支架邏輯",
+        "topic": "BAV 與升主動脈瘤：不要套下降主動脈支架邏輯",
+        "concept_heading": "六、心臟外科：瓣葉活動、瓣膜處置與心肺機體外循環"
+      },
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 46,
+        "question_heading": "111 年第二次・醫學（四）Q46｜IE 的栓塞與 AF／機械瓣血栓不同",
+        "focus": "IE 的栓塞與 AF／機械瓣血栓不同",
+        "topic": "IE 的栓塞與 AF／機械瓣血栓不同",
+        "concept_heading": "七、心內膜炎：感染性栓塞與預防性抗生素"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "113 年第一次・醫學（四）Q6｜先天心臟病＝所有牙科操作都要 IE prophylaxis？",
+        "focus": "先天心臟病＝所有牙科操作都要 IE prophylaxis？",
+        "topic": "先天心臟病＝所有牙科操作都要 IE prophylaxis？",
+        "concept_heading": "七、心內膜炎：感染性栓塞與預防性抗生素"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 6,
+        "question_heading": "112 年第一次・醫學（四）Q6｜先天心臟病是否 90% 出生一月內都會診斷？",
+        "focus": "先天心臟病是否 90% 出生一月內都會診斷？",
+        "topic": "先天心臟病是否 90% 出生一月內都會診斷？",
+        "concept_heading": "八、新生兒時間軸：心室肥厚、瓣膜逆流與血栓栓塞"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 5,
+        "question_heading": "113 年第二次・醫學（四）Q5｜母體糖尿病與新生兒中隔肥厚：不一定是 HCM 遺傳病",
+        "focus": "母體糖尿病與新生兒中隔肥厚：不一定是 HCM 遺傳病",
+        "topic": "母體糖尿病與新生兒中隔肥厚：不一定是 HCM 遺傳病",
+        "concept_heading": "八、新生兒時間軸：心室肥厚、瓣膜逆流與血栓栓塞"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "114 年第一次・醫學（四）Q8｜出生前就可能心衰的瓣膜逆流",
+        "focus": "出生前就可能心衰的瓣膜逆流",
+        "topic": "出生前就可能心衰的瓣膜逆流",
+        "concept_heading": "八、新生兒時間軸：心室肥厚、瓣膜逆流與血栓栓塞"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 5,
+        "question_heading": "114 年第二次・醫學（四）Q5｜早產兒 PDA：PGE₁ 不是閉合藥",
+        "focus": "早產兒 PDA：PGE₁ 不是閉合藥",
+        "topic": "早產兒 PDA：PGE₁ 不是閉合藥",
+        "concept_heading": "八、新生兒時間軸：心室肥厚、瓣膜逆流與血栓栓塞"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（四）",
+        "question_number": 8,
+        "question_heading": "114 年第二次・醫學（四）Q8｜MVP 是否是兒童猝死主要原因？",
+        "focus": "MVP 是否是兒童猝死主要原因？",
+        "topic": "MVP 是否是兒童猝死主要原因？",
+        "concept_heading": "八、新生兒時間軸：心室肥厚、瓣膜逆流與血栓栓塞"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 21,
+        "question_heading": "114 年第二次・醫學（五）Q21｜MS + AF 為何造成急性下肢缺血？",
+        "focus": "MS + AF 為何造成急性下肢缺血？",
+        "topic": "MS + AF 為何造成急性下肢缺血？",
+        "concept_heading": "八、新生兒時間軸：心室肥厚、瓣膜逆流與血栓栓塞"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（五）",
+        "question_number": 24,
+        "question_heading": "113 年第二次・醫學（五）Q24｜建立心肺機體外循環時，哪條血管不是常規引流位置？",
+        "focus": "建立心肺機體外循環時，哪條血管不是常規引流位置？",
+        "topic": "建立心肺機體外循環時，哪條血管不是常規引流位置？",
+        "concept_heading": "八、新生兒時間軸：心室肥厚、瓣膜逆流與血栓栓塞"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/exams/heart-sounds-cross-specialty-sources.md",
+    "output": "xiaoma-exam-heart-sounds-cross-specialty-sources.html",
+    "title": "心音跨科 20 道新增考題：官方原卷及更正答案",
+    "subtitle": "29 題原有詳解以外的 20 題、112-2 更正給分與圖像驗證範圍",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-lab-morning-sheet.md",
+    "output": "xiaoma-20261028-lab-morning-sheet.html",
+    "title": "早晨一張 Lab sheet（第一篇）：先確認數字是否真的代表病人",
+    "subtitle": "AML 假性高血鉀：檢體運送、競爭機轉、急症處置與研究外推界線",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "腎臟與檢驗醫學",
+    "references": "xiaoma-20261028-lab-morning-sheet-sources.html",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lab-morning-sheet-sources.md",
+    "output": "xiaoma-20261028-lab-morning-sheet-sources.html",
+    "title": "早晨一張 Lab sheet：原始來源、圖表與臨床適用界線",
+    "subtitle": "KDIGO、UKKA、AJKD 與 AABB 原始證據導讀",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "檢驗醫學參考資料",
+    "navigation": false,
+    "review": "author_source_check"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-urosepsis-esbl-first-dose.md",
+    "output": "xiaoma-20261028-urosepsis-esbl-first-dose.html",
+    "title": "泌尿道敗血症：首劑經驗治療如何遇上 ESBL 與感染性阻塞？",
+    "subtitle": "兩例真實病程：急診鑑別、抗菌藥失配、UPJ 阻塞與檢驗時間序列",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "感染與抗生素",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-urosepsis-esbl-first-dose-sources.html",
+    "exam_questions": [
+      {
+        "year_roc": 111,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 60,
+        "question_heading": "真正的二階國考對題｜111 年第二次・醫學（三）第 60 題",
+        "concept_heading": "第三問｜那麼，真正遇到「舊培養有 ESBL」時，哪個推理會改變？",
+        "topic": "ESBL 水解譜與 carbapenem 的機轉界線"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/urosepsis-esbl-first-dose-sources.md",
+    "output": "xiaoma-urosepsis-esbl-first-dose-sources.html",
+    "title": "ESBL 泌尿道敗血症：原始指南與官方國考來源",
+    "subtitle": "IDSA 2025 cUTI 原 Figure/Table、IDSA 2026 AMR、SSC 2026、KDIGO 與考選部 111-2 Q60",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-pleural-effusion-decision.md",
+    "output": "xiaoma-20261028-pleural-effusion-decision.html",
+    "title": "胸水不是診斷：什麼時候該抽、抽出來又何時必須放胸管？",
+    "subtitle": "真實病例的症狀、胸膜空間與兩次取樣：Light分類、感染判斷與安全引流",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔內科",
+    "references": "xiaoma-pleural-effusion-decision-sources.html",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "independent_ai_review",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 45,
+        "question_heading": "真題 A｜112 年第一次・醫學（三）Q45（官方原卷、答案及更正表已核；B）",
+        "concept_heading": "05｜真正需要胸管的分界，不是「exudate」而是「感染性胸膜腔必須被排空」",
+        "topic": "感染性胸水的引流線索與BTS分流"
+      },
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "question_heading": "真題 B｜114 年第一次・醫學（三）Q48（官方原卷、答案及更正表已核；B）",
+        "concept_heading": "04｜抽到 exudate 後，真正會改變今晚處置的，是哪幾項檢查？",
+        "topic": "胸水細胞與glucose、乳糜胸和血胸的量測定義"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "question_heading": "真題 C｜115 年第二次・醫學（三）Q49（官方原卷、答案及更正表已核；A）",
+        "concept_heading": "07｜把相似的液體重新拆開：四種不該被 Light criteria 吞沒的問題",
+        "topic": "胸水病因、amylase與解剖時間線"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pleural-effusion-decision-sources.md",
+    "output": "xiaoma-pleural-effusion-decision-sources.html",
+    "title": "胸水：原始病例、圖表與指南來源",
+    "subtitle": "Cureus真實時序、BTS原圖註腳、Pocket定位與官方Q/S/M",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-pneumothorax-mechanism-decisions.md",
+    "output": "xiaoma-20261028-pneumothorax.html",
+    "title": "氣胸：肺為什麼會回縮？為什麼不是每一個氣胸都要放胸管？",
+    "subtitle": "從胸膜腔壓力、危急分流、觀察與抽氣，到 VATS 與月經相關氣胸",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-pneumothorax-sources.html",
+    "exam_questions": [
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 47,
+        "question_heading": "112 年第二次・醫學（三）第 47 題｜胸腔超音波能看見什麼？",
+        "concept_heading": "三、影像證明氣胸；臨床決定有多急；病史決定下一步找什麼",
+        "topic": "胸腔超音波診斷氣胸的能力與侷限",
+        "focus": "超音波先看胸膜與橫膈運動，不能把深部肺門當作同樣可及。"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "question_heading": "115 年第一次・醫學（三）第 49 題｜縱膈影像的盲點",
+        "concept_heading": "三、影像證明氣胸；臨床決定有多急；病史決定下一步找什麼",
+        "topic": "POCUS 胸膜與縱膈病灶判斷",
+        "focus": "胸膜滑動的肺表層徵象不能推論能可靠診斷縱膈淋巴結。"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pneumothorax-sources.md",
+    "output": "xiaoma-pneumothorax-sources.html",
+    "title": "氣胸教材｜指南、研究與病例來源",
+    "subtitle": "BTS／ERS 指南、原始 RCT、真實病例與正式國考核對",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-28-metabolic-acidosis-etiology.md",
+    "output": "xiaoma-20261028-metabolic-acidosis-etiology.html",
+    "title": "水瀉三週，膀胱尿量卻越來越少：酸中毒如何揭露錯誤的液體路徑？",
+    "subtitle": "真實病例帶領從血中 AG、排出液身分到腎臟排酸及尿腸瘻管的臨床因果推理",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "酸鹼與腎臟",
+    "references": "xiaoma-metabolic-acidosis-sources.html",
+    "date": "2026-10-28",
+    "navigation": false,
+    "review": "author_source_check",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 25,
+        "focus": "從 AG 公式與 Winter's formula 分離血液分類和病因分析",
+        "concept_heading": "二、AG 為什麼沒有明顯升高？分類縮小了方向，還沒有給答案"
+      },
+      {
+        "year_roc": 113,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 48,
+        "focus": "優先針對造成酸中毒的病因與灌流障礙，而非僅讓血中 pH 數字改善",
+        "concept_heading": "九、病因還沒處理完之前，怎麼判斷「看起來變好」其實是危險訊號？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/metabolic-acidosis-sources.md",
+    "output": "xiaoma-metabolic-acidosis-sources.html",
+    "title": "代謝性酸中毒｜病例與原始證據",
+    "subtitle": "尿腸瘻管原始圖表、IBCC、診斷效度與治療研究的來源定位",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "酸鹼與腎臟",
+    "navigation": false
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-pe-pesi-aha-acc-2026.md",
+    "output": "xiaoma-20261029-pe-pesi-aha-acc-2026.html",
+    "title": "肺栓塞的分數不是診斷書：從 PESI、右心室到 2026 AHA/ACC A–E 分級",
+    "subtitle": "從真實病例建立 PESI／sPESI、Bova、Hestia 與 A–E／R 分級，再回到右心衰竭、組織灌流及再灌流治療的風險",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "胸腔與重症",
+    "references": "xiaoma-pe-pesi-aha-acc-2026-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "ai_editorial_review",
+    "related_exams": [
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 9,
+        "focus": "PE 診斷的 CTPA、D-dimer 與心臟受損評估分開；確診後才進入 PESI/A–E 風險分層。",
+        "concept_heading": "二、診斷前與診斷後：Wells 和 PESI 根本不在回答同一題"
+      },
+      {
+        "year_roc": 115,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 8,
+        "focus": "以可逆或持續危險因子與出血風險評估停藥，不將急性 PESI／A–E 直接當作抗凝療程長短。",
+        "concept_heading": "十一、急性期之外：停藥不是根據當初哪一類 PE"
+      },
+      {
+        "year_roc": 112,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 51,
+        "focus": "Wells 不是 PE 嚴重度，右心室 afterload、灌流與血流動力學決定急性風險。",
+        "concept_heading": "七、RV 與 biomarker：為什麼同時異常比各自一項更值得注意？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/pe-pesi-aha-acc-2026-sources.md",
+    "output": "xiaoma-pe-pesi-aha-acc-2026-sources.html",
+    "title": "2026 肺栓塞 PESI／A–E｜指南、原始病例與治療研究",
+    "subtitle": "官方分類原圖、Table 7、PESI/Hestia、真實病例和三項再灌流試驗",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-eudka-real-case.md",
+    "output": "xiaoma-20261029-eudka-real-case.html",
+    "title": "血糖只有 153 mg/dL，為什麼酮酸中毒已經危及生命？",
+    "subtitle": "一位真實 euDKA 病人，從競爭機轉、β-OHB 與 Winter 代償，到 insulin、葡萄糖、鉀與危機解除",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "內分泌與急重症",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-eudka-case-guideline-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 1,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 56,
+        "focus": "辨認 DKA 治療 insulin 的持續輸注與高危單次 1 U/kg bolus 之差，串起補液、dextrose、血鉀安全與終止產酮。",
+        "concept_heading": "為何要同時補液、給 insulin，甚至在血糖不高時補 glucose？"
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/eudka-case-guideline-sources.md",
+    "output": "xiaoma-eudka-case-guideline-sources.html",
+    "title": "正常血糖酮酸中毒｜原始病例與指引圖表",
+    "subtitle": "Cai 2026 病例時間軸、2024/2026 共識與 114-1 醫學（三）Q56 官方原卷",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "source_evidence_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-03-cpb-acidbase.md",
+    "output": "xiaoma-20261029-cticu-abg-03-cpb-acidbase.html",
+    "title": "離開 CPB 後 HCO₃⁻ 降低：為什麼不能直接診斷 lactic acidosis？",
+    "subtitle": "從真實 CABG 群體數據與 Bartter 病例，分辨 chloride、SID、未測陰離子與通氣的競爭機轉",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "references": "xiaoma-cticu-abg-03-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-abg-03-sources.md",
+    "output": "xiaoma-cticu-abg-03-sources.html",
+    "title": "CPB 術後酸鹼變化｜原始研究與圖表來源",
+    "subtitle": "Chuah 2013 群體 Table 3、Protos 2024 真實病例、指南與授權查核",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-cticu-abg-04-alphastat-phstat.md",
+    "output": "xiaoma-20261029-cticu-abg-04-alphastat-phstat.html",
+    "title": "低溫 CPB 的同一份血氣：alpha-stat 與 pH-stat 為什麼導向不同 CO₂ 管理？",
+    "subtitle": "從量測溫度與真正的氧合器 CO₂ 介入，理解腦循環與成人指南證據界線",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "心臟外科與重症",
+    "references": "xiaoma-cticu-abg-04-sources.html",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "independent_ai_review"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/cticu-abg-04-sources.md",
+    "output": "xiaoma-cticu-abg-04-sources.html",
+    "title": "低溫 CPB 血氣管理｜指南與原始研究查核",
+    "subtitle": "Patel、Murkin 成人 CABG RCT，2024 CPB Recommendation Table 52 與原圖授權",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "原始來源",
+    "navigation": false,
+    "review": "source_audit"
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/lessons/2026-10-29-antibiotics-cap-coverage-reassessment.md",
+    "output": "xiaoma-20261029-antibiotics-cap-coverage-reassessment.html",
+    "title": "肺炎的抗生素已經涵蓋病原，為什麼病人還是不退燒？",
+    "subtitle": "真實 Legionella 病程：經驗性涵蓋、治療不佳、微生物證據與抗菌調整",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "感染與抗生素",
+    "date": "2026-10-29",
+    "navigation": false,
+    "review": "author_source_check",
+    "references": "xiaoma-antibiotics-cap-coverage-sources.html",
+    "related_exams": [
+      {
+        "year_roc": 114,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 45,
+        "focus": "背景對讀：CURB-65 的變項與氧合是不同問題；本篇只說明此病例原表缺 BUN，不能代替 Q45 的完整分數教學。",
+        "concept_heading": "第一問｜還不知道是哪一種菌，為什麼需要先給抗生素？又該涵蓋誰？",
+        "embed": false
+      },
+      {
+        "year_roc": 113,
+        "sitting": 2,
+        "stage": 2,
+        "subject": "醫學（三）",
+        "question_number": 49,
+        "focus": "補充對讀：痰染色病原線索與胸水評估須分開；本篇借 Legionella 病程辨析擴藥和併發症，不是 Q49 四選項的完整解答。",
+        "concept_heading": "第二問｜治療幾天仍發燒、需要氧氣，哪些機轉真正值得競爭？",
+        "embed": false
+      }
+    ]
+  },
+  {
+    "source": "content/xiaoma-internal-medicine/antibiotics-cap-coverage-sources.md",
+    "output": "xiaoma-antibiotics-cap-coverage-sources.html",
+    "title": "肺炎抗生素：原始病例、指南與比較研究來源",
+    "subtitle": "Legionella CXR/CT、抗菌效果比較及 ATS／IDSA 適用邊界",
+    "collection": "xiaoma-internal-medicine",
+    "layout": "reader",
+    "section": "參考資料",
+    "navigation": false,
+    "review": "author_source_check"
   }
 ]
