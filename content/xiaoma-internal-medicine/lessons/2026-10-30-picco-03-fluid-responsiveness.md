@@ -30,7 +30,7 @@ Passive leg raising（PLR）能暫時將下肢及腹腔靜脈血往胸腔重新�
 
 PLR 的價值在於不依賴必然規則的心律或傳統 PPV 適用條件，但它也不是完美。腹內壓過高、測試姿勢不當、疼痛與交感刺激、CO 監測更新太慢、患者無法安全移動，都可能使結果失去意義。PiCCO 的連續 pulse-contour CO 可追蹤短期變化，但若波形品質差或校正無效，也可能無法可靠量測 PLR；必要時可考慮其他可快速測得血流變化的手段，如 Echo LVOT VTI，前提是操作者與影像可重現。[3,5]
 
-End-expiratory occlusion test（EEOT）及特定呼吸器條件下的其他動態測試，提供不同路徑；它們有各自的限制。**選測試的順序應由病人的實際呼吸、節律、右心與安全條件決定，不是看監測器上哪個數字最方便。**
+End-expiratory occlusion test（EEOT）利用短暫停止呼吸器吸氣週期，**暫時解除正壓吸氣對靜脈回流的反覆抑制**；若心室具前負荷反應性，可信且足夠快速的 CO／SV 監測可能捕捉到短暫上升。這並不是注入液體。EEOT 通常需要沒有明顯自主呼吸干擾、病人能安全耐受短暫呼吸暫停，且監測系統能辨識小而快速的流量變化；肺復張風險與訊號精度也要考慮，不能當成所有 ARDS 患者都適用的操作。[3,5] **選測試應由呼吸、節律、右心及安全條件決定，而非選監測器上最方便的數字。**
 
 ## 現在將「反應性」與「耐受性」分開
 
@@ -56,7 +56,7 @@ End-expiratory occlusion test（EEOT）及特定呼吸器條件下的其他動�
 1. Monnet X, et al. ESICM circulatory shock guideline 2025. https://doi.org/10.1007/s00134-025-08137-z
 2. Prescott H, et al. SSC 2026. https://doi.org/10.1007/s00134-026-08361-1
 3. Monnet X, et al. Prediction of fluid responsiveness: an update. *Ann Intensive Care.* 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC5114218/
-4. Chaves RCF, et al. Dynamic predictors under mechanical ventilation: systematic review. *Crit Care.* 2024. https://doi.org/10.1186/s13054-024-05078-9
-5. Monnet X, Teboul J-L. Using the ventilator to predict fluid responsiveness. *Intensive Care Med.* 2024. https://doi.org/10.1007/s00134-024-07708-w
+4. Chaves RCF, et al. *Assessment of fluid responsiveness in mechanically ventilated patients: a systematic review and meta-analysis.* *Crit Care.* 2024. https://doi.org/10.1186/s13054-024-05078-9
+5. Monnet X, De Backer D, Pinsky MR. Using the ventilator to predict fluid responsiveness. *Intensive Care Med.* 2025;51:150–153 (online 2024). https://doi.org/10.1007/s00134-024-07708-w
 6. ANDROMEDA-SHOCK-2 Investigators. *JAMA.* 2025. https://doi.org/10.1001/jama.2025.20402
 7. Monnet X, et al. Precision of the transpulmonary thermodilution measurements. *Crit Care.* 2011;15:R204. https://doi.org/10.1186/cc10421
