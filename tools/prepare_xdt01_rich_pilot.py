@@ -19,6 +19,10 @@ HEX64 = re.compile(r"[0-9a-f]{64}\Z")
 SAFE_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{3,64}\Z")
 EVID_ID = re.compile(r"[A-Za-z][A-Za-z0-9_-]{0,31}\Z")
 DOMAINS = {"inventory", "it-incident", "provenance"}
+CASES_ONLY_V3_METADATA = {"artifact_version", "exposure_status",
+                          "formal_freeze_at_creation", "human_review_at_creation",
+                          "study_classification"}
+MAX_CASES_METADATA_BYTES = 256
 MAX_SOURCE_BYTES = 250_000
 MAX_PACKET_BYTES = 12_000  # <= frozen #252 sealer and runner task caps
 FROZEN_CANDIDATE = "03f29b980ba326ac0509299b9c94292d6a1a5d5a"
@@ -102,15 +106,27 @@ def valid_text(x, maxbytes):
         return False
 
 
-def validate_cases(cases):
-    exact_keys(cases, {"schema_version", "package_id", "source_class", "phase",
-                       "instructions", "cases"}, "CASES")
+def validate_cases(cases, *, cases_only=False):
+    required = {"schema_version", "package_id", "source_class", "phase",
+                "instructions", "cases"}
+    v3 = (cases_only and type(cases) is dict and
+          set(cases) == required | CASES_ONLY_V3_METADATA)
+    exact_keys(cases, required | CASES_ONLY_V3_METADATA if v3 else required,
+               "CASES")
+    if v3:
+        # Non-forwarded provenance labels only; they never authorize live use.
+        require(all(valid_text(cases[field], MAX_CASES_METADATA_BYTES)
+                    for field in CASES_ONLY_V3_METADATA),
+                "CASES_ONLY_METADATA_INVALID")
+        require(cases["study_classification"] == "INTERNAL_EXPLORATORY",
+                "CASES_ONLY_STUDY_CLASSIFICATION_INVALID")
     require(type(cases["schema_version"]) is int and
             cases["schema_version"] == 1, "SCHEMA_VERSION")
     package_id = cases["package_id"]
     require(type(package_id) is str and SAFE_ID.fullmatch(package_id),
             "PACKAGE_ID_MISMATCH")
-    require(cases["phase"] == "pilot" and cases["source_class"] == "synthetic",
+    require(cases["phase"] == ("internal_exploratory" if v3 else "pilot") and
+            cases["source_class"] == "synthetic",
             "ONLY_SYNTHETIC_PILOT")
     require(valid_text(cases["instructions"], 3000), "INSTRUCTIONS_INVALID")
     records = cases["cases"]
@@ -311,7 +327,7 @@ def stage_cases_only(*, cases_file, cases_sha256, repo_root, stage_root,
     require(type(skill_sha256) is str and bool(HEX64.fullmatch(skill_sha256)),
             "SKILL_SHA256_REQUIRED")
     cases = read_pinned(cases_file, cases_sha256, repo)
-    packets = validate_cases(cases)
+    packets = validate_cases(cases, cases_only=True)
     stage_dir = require_private_target(stage_root, repo)
     case_by_id = {case["id"]: case for case in cases["cases"]}
     order = list(packets)
