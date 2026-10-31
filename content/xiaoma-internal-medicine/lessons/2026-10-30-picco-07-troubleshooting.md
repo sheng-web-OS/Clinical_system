@@ -1,0 +1,85 @@
+# PiCCO 07｜數字突然變差，先相信病人還是相信監測器？
+
+凌晨交班前，PiCCO 的連續 CI 快速下降，PPV 同時上升。這可能是出血、心功能惡化、血管張力改變，也可能只是動脈波形的傳導出了問題。如果患者此時真正循環崩潰，延誤復甦去「修好儀器」會造成傷害；但如果病況沒有相應改變，立即根據一個失真的數字增加輸液或藥物，同樣可能造成傷害。
+
+這個矛盾的答案不是排出固定的「先病人、後機器」兩段式流程，而是**立即評估危急病況，同時判斷訊號是否仍能代表生理**。前者決定是否必須立刻介入，後者決定 PiCCO 是否能協助選擇介入方向。
+
+## 先辨識訊號屬於哪一個量測鏈
+
+PiCCO 至少有三條彼此連結的訊號鏈：**動脈壓波形 → pulse-contour CI／SVV／PPV；冷指示劑注入與動脈溫度曲線 → CI-TD／GEDI／EVLWI／PVPI；病人資料及 CVP → 各種索引與計算值。**
+
+當連續 CI 異常，未必代表前一次熱稀釋得到的 GEDI 或 EVLWI 已同步改變；反之，某次熱稀釋結果差異很大，也不必然意味連續波形突然失效。要先指出**哪一個原始訊號發生問題**，才能避免把所有數字一起宣告可靠或一起丟棄。
+
+### 動脈壓波形失真：連續值最常見的脆弱點
+
+動脈波形過度阻尼，會削弱脈壓、改變壓力波形輪廓，影響 waveform-derived stroke volume 估計。欠阻尼則可能誇大 systolic pressure 與振幅。系統的氣泡、血塊、管路順應性、敷料或體位造成導管受壓、transducer 高度與零點設定，都需要與實際波形共同檢查。此時應比對患者臨床徵象、其他可用血壓來源與波形品質，依院內 SOP 進行必要的壓力管路測試；**不可把數字顯示正常當作訊號品質已合格。**
+
+顯著動脈張力改變是另一種情況：即使 waveform 形狀可見，pulse-contour 模型可能需要重新校正，才能可靠反映新的壓力—流量關係。若近期大幅調整升壓藥、發生急性 vasoplegia、明顯出血或其他重大循環轉折，應重新核對熱稀釋 CI 及校正時序。[1,2]
+
+### 熱稀釋曲線失真：間歇值的脆弱點
+
+需要注意的不是只有平均值，而是每次冷液注射的溫度—時間曲線是否與注射動作一致、溫差是否充分、結果是否可重現。Getinge 的教學清單建議在相應設備流程中取得三次有效結果，核對溫差與偏離平均值的幅度；若不符合，不要把失敗量測的參數視為可供決策的「新數據」。[2]
+
+異常來源包括注射體積／溫度設定錯誤、注入不夠一致、注射端位置錯誤、管路死腔、指示劑混合與溫度分布改變，以及測試期間病人真的發生循環狀態變化。特殊血流通路、心內分流、體外裝置及加溫／冷卻來源也可能使既有驗證前提失效。是否可用及偏差方向取決於**設備型號、導管與具體生理條件**，不能照一張籠統禁忌清單猜測。
+
+**看似可重複的曲線仍可能有系統偏差。**股靜脈注入冷指示劑時，額外下腔靜脈分布容積可使未校正的 GEDVI 偏高。請先確認實際導管注射端、設備選用的注射位置及該版本是否具有合適校正；研究中的校正公式不能自行跨設備套用。[8,9]
+
+### 指數與衍生公式失真：資料看似穩定，意思卻變了
+
+EVLWI 常按 PBW 索引；GEDI／CI 則涉及體表面積。若病人資料輸入不正確或不同報告使用不同 indexing 方式，兩個時點可能出現「指數改變、原始量沒變」的假趨勢。同樣地，SVRI 依賴 MAP、CVP 與 CI 的聯立計算；**CVP 輸入不可靠時，SVRI 絕不能被當作獨立證據重複計分**。
+
+若 CFI、GEF 與 Echo LVEF 不吻合，先確定比較的是不是相同概念：PiCCO 的 CFI／GEF 是全心容量—流量的估計，Echo 的 LVEF 是左心排出比例。不同概念本來就可能不同，不必然表示其中之一量錯。
+
+## 品質不確定時的共同處理：不是先找一個人負責，而是先分清兩條危險
+
+**第一條是病人可能正在惡化。** 新的低血壓、意識變化、明顯肢端灌流惡化、快速增加的血管活性藥需求或管路相關的出血／缺血疑點，都應立即依 ICU 的升級通報與急救程序評估。即使剛好出現儀器警報，也不能假設病況全由感測器造成；必要支持與資料檢查必須並行。
+
+**第二條是監測可能已失去解釋力。** 護理師及醫師都須能指出原始動脈波形是否充分、transducer 參考位置與歸零是否適當、熱稀釋曲線是否一致，及最近的導管／體位／呼吸器／血管活性藥變動；具資格的操作人員依 SOP 排查。醫師若無法確認 CI-PC 與波形相容，不能把該 CI-PC 作為單獨的輸液或用藥調整理由。修復訊號後也需重新問：**病人是否真的出現與先前相同的臨床變化？**
+
+Getinge 的 PiCCO 故障排除資料將波形問題、熱稀釋溫度訊號、注射偵測與不可重現結果分為不同模組；這是避免混淆錯誤來源的好方法，但**裝置說明只是技術證據，不能替代病人的休克鑑別與當地 IFU**。[2,6,7]
+
+## 把最常見異常改寫成「先確認什麼？」
+
+| 異常 | 可同時考慮的機轉 | 立刻需要核對 |
+|---|---|---|
+| CI-PC 突降、波形變平 | 真的低流量；overdamping | 病人灌流、原始波形、管路與壓力訊號 |
+| CI-PC 改變，但 CI-TD 與 Echo 方向不同 | 校正漂移；不同量測時間；循環快速變化 | 校正時間、血管活性藥及呼吸器變動、重複的可信 flow 量測 |
+| 三次 CI-TD 差異很大 | 注射／溫差／指示劑混合問題；生理不穩定 | 熱稀釋曲線、注射步驟、溫度及當時病況 |
+| SVV 偏高、病人卻有 AF 或自主呼吸 | RR 間隔或呼吸型態造成的假訊號 | 動態指標適用條件；另選可量 flow 的測試 |
+| GEDI 高、CI 低 | RV 擴張、收縮問題、瓣膜／心包等限制 | Echo 分辨左／右心與機械性原因 |
+| EVLWI 異常變化而影像不符 | 時點、PBW、肺灌流，或 PEEP／VV-ECMO 迴路流量變化 | 熱稀釋品質、通氣與體外支持設定、影像與病程 |
+
+這張表不是讓讀者把第一欄直接配對成唯一診斷，而是防止監測資料失去**測量來源、時間、適用前提**後仍被過度解讀。尤其 VV-ECMO 迴路流量改變時，EVLWI 趨勢不必然等於肺水量同步改變；這項證據來自僅七人的撤機前比較，不能變成跨設備校正式或調整 ECMO 流量的處置指令。[10]
+
+## 三個極容易造成臨床誤判的反例
+
+**反例一：PPV 變高就補液。** 如果患者新出現心房顫動、強烈自主呼吸或 RV afterload 急變，高 PPV 可能失去預測效度。這時應回到可量化 CO／SV 的適當動態測試、Echo 與 fluid tolerance，而不是把 PPV 的數字當作輸液命令。[3]
+
+**反例二：EVLWI 沒增加，所以肺沒有惡化。** EVLWI 不直接量測肺血管阻力、死腔或所有局部肺灌流病灶。低氧加重或 RV 突然擴張，需要考慮栓塞、肺不張、呼吸器條件與其他機轉，即使 EVLWI 大致不變也不能排除。
+
+**反例三：CI 和 MAP 都恢復，所以治療成功。** 大循環改善不等於組織灌流全面改善。CRT、皮膚灌流、意識、尿量、乳酸變化及臟器功能，才讓團隊知道是否仍有未解決的問題；其中任何單一指標也無法作為全身灌流的充分保證。[4,5]
+
+## 把資料可信度交接給下一班，而不只是交付數值
+
+監測交班最容易遺失的資訊是**限制條件**。護理師若發現本次熱稀釋曲線無法重現，應明確說明「此組數值尚不宜據以作臨床處置」，以及已排查的可見問題；醫師則應整合病人灌流與 Echo 等其他證據，重新決定是否需要修復後再測、換一個檢查、或立即處理危急病況。任何角色都不應擅自宣稱「儀器無法校正，所以病人一定安全」或「儀器警報，所以一定要加液體」。
+
+如果設備顯示 PPV／SVV，醫師還需回問**心律是否規則、通氣是否受控、潮氣容積與肺順應性是否使數字有解釋力**。這些條件若缺少，即使讀值沒有警報也可能不能用來預測 fluid responsiveness；監測器沒有警告，不等於生理假設成立。[3,6]
+
+## 交班時最值得留下的不是一排數字
+
+可靠的交班應記錄：出現臨床變化的**確切時點**，當時心律／通氣模式／血管活性藥變動，最近一次合格 TPTD 的時間與品質，CI-TD 與 CI-PC 是否同向，動脈波形品質，當下 Echo 及組織灌流的支持或反證，以及哪些參數已因技術限制被標記為不可解讀。沒有必要為每個疑問再增一套監測系統；關鍵是把不可用的數字從決策中排除，並且清楚說明下一項有效資訊要回答哪個問題。
+
+**PiCCO 最危險的錯誤不是顯示一個異常值，而是異常值失去來源與適用條件後，仍被當成確定的醫囑理由。**
+
+### 延伸來源
+1. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
+2. Getinge. *How to optimize PiCCO thermodilution measurements*（限特定裝置工作流程）. https://www.getinge.com/assets/content/PiCCO_TSG-US/How_to_optimize_PiCCO_thermodilution_measurements_part03.html
+3. Monnet X, et al. *Using the ventilator to predict fluid responsiveness.* Intensive Care Med. 2024. https://doi.org/10.1007/s00134-024-07708-w
+4. Monnet X, et al. *ESICM guidelines on circulatory shock 2025.* https://doi.org/10.1007/s00134-025-08137-z
+5. SCCM. *Surviving Sepsis Campaign 2026.* https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines
+6. Getinge. *Arterial blood pressure signal troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Arterial_blood_pressure_signal_content.html
+7. Getinge. *Thermodilution measurement troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Thermodilution_measurement.html
+
+8. Saugel B, et al. *Transpulmonary thermodilution using femoral indicator injection.* Crit Care. 2010;14:R95. https://doi.org/10.1186/cc9030
+9. Herner A, et al. *Comparison of GEDVI derived from jugular and femoral injection.* Sci Rep. 2020;10:20773. https://doi.org/10.1038/s41598-020-76286-w
+10. Loosen G, et al. *Transpulmonary thermodilution in patients treated with VV-ECMO.* Ann Intensive Care. 2021;11:101. https://doi.org/10.1186/s13613-021-00890-w
