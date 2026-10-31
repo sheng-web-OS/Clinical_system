@@ -70,6 +70,14 @@ def candidate_memory(packet: dict) -> dict:
                     not re.fullmatch(r'[a-z][a-z0-9_]{1,63}', value)
                     for value in signature.values())):
             return {'state': 'NOT_RETAINED_UNSAFE_ROLES', 'candidates': []}
+        features = record.get('context_features')
+        if features is not None:
+            if (not isinstance(features, list) or len(features) > 16 or
+                    any(not isinstance(value, str) or
+                        not re.fullmatch(r'[a-z][a-z0-9_]{1,63}', value)
+                        for value in features) or
+                    len(set(features)) != len(features)):
+                return {'state': 'NOT_RETAINED_UNSAFE_FEATURES', 'candidates': []}
     result = discover(packet)
     scopes = {x['parent_candidate']: x for x in
               result['recursive_scope_refinements']}
