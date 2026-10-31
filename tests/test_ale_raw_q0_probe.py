@@ -63,7 +63,7 @@ class RawQ0Tests(unittest.TestCase):
 
     def test_input_exact_span_and_stable_priority(self):
         text=("The team measured red cell indices. "
-              "Limited availability despite adequate total stores. "
+              "Limited circulating iron availability despite adequate total storage reserves. "
               "Evaluation depends on the clinical population.")
         a=extract(packet(text))
         b=extract(packet(text))
