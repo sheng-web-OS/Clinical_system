@@ -43,6 +43,7 @@ def inspect_evidence(events: list[list], mappings: list[list],
     if not valid:
         raise RuntimeError("No recognized concepts; cannot confirm a family")
     all_mappings: dict[str, set[tuple[str, str]]] = {}
+    seen_confirmed: set[tuple[str, str, str]] = set()
     for row in _filled(mappings):
         if len(row) != len(MAP_HEADER):
             raise RuntimeError("Invalid private mapping row width")
@@ -56,6 +57,10 @@ def inspect_evidence(events: list[list], mappings: list[list],
             raise RuntimeError("Confirmed card mapping to unrecognized concept")
         if _str(row[5]) != "TESTS_THIS_CARD_DIRECTION_ONLY":
             raise RuntimeError("Confirmed map lacks single-card direction restriction")
+        record_id = (card, note, concept)
+        if record_id in seen_confirmed:
+            raise RuntimeError("Duplicate confirmed private card mapping")
+        seen_confirmed.add(record_id)
         all_mappings.setdefault(card, set()).add((note, concept))
     if any(len(values) > 1 for values in all_mappings.values()):
         raise RuntimeError("Conflicting private mapping for the same card")
