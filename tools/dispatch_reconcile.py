@@ -70,7 +70,15 @@ def validate_gate(target, gate):
                  (type(receipt["next_gate_id"]) is str and
                   GATE_ID.fullmatch(receipt["next_gate_id"]) is not None)),
                 "INVALID_RECEIPT_VALUES")
-    return gate_fingerprint(target, gate["gate_id"], gate["evidence_revision"])
+    current_fingerprint = gate_fingerprint(
+        target, gate["gate_id"], gate["evidence_revision"])
+    # A receipt claiming completion of *this* gate must identify this gate.
+    # Do not reject a historical receipt for an earlier fingerprint: it may
+    # legitimately name the previous gate of a CONTINUING handoff.
+    if receipt is not None and receipt["fingerprint"] == current_fingerprint:
+        require(receipt["gate_id"] == gate["gate_id"],
+                "INVALID_RECEIPT_VALUES")
+    return current_fingerprint
 
 
 def reconcile(config, issue_snapshot, gate_snapshot):
