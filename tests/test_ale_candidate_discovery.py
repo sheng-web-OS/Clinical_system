@@ -66,5 +66,18 @@ class CandidateDiscoveryTests(unittest.TestCase):
             discover({"examples": [case("a", "f1"), case("a", "f2")]})
 
 
+    def test_public_guideline_probe_is_challenged_not_promoted(self):
+        import json
+        fixture = (Path(__file__).resolve().parents[1] / "experiments" /
+                   "ale-recursive-concept-probe-20261031.json")
+        packet = json.loads(fixture.read_text(encoding="utf-8"))
+        result = discover(packet)
+        self.assertEqual(result["proposal_count"], 1)
+        self.assertEqual(len(result["candidate_preflight"][0]["families"]), 3)
+        self.assertEqual(result["gate"]["results"][0]["status"], "HOLD_REVISION_REQUIRED")
+        self.assertEqual(result["gate"]["results"][0]["unaddressed_counterexamples"],
+                         ["renal-persistent-egfr-exception"])
+        self.assertEqual(result["promotions_performed"], 0)
+
 if __name__ == "__main__":
     unittest.main()
