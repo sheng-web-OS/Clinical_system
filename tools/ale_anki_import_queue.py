@@ -173,6 +173,15 @@ def verify_note(note_id, row):
            fields[key].get("value") != value
            for key, value in expected.items()):
         raise RuntimeError("Anki note exists but content differs; no overwrite")
+    if model == "Cloze":
+        # AnkiConnect notesInfo exposes the sibling card IDs. One c-number
+        # equals one card even when that number hides multiple deletions.
+        ids = note.get("cards")
+        groups = {int(m.group(1)) for m in CLOZE_RE.finditer(row["front_html"])}
+        if (not isinstance(ids, list) or len(ids) != len(groups) or
+                any(type(x) is not int or x <= 0 for x in ids) or
+                len(set(ids)) != len(ids)):
+            raise RuntimeError("Cloze sibling cards missing or count mismatch")
     return note
 
 
