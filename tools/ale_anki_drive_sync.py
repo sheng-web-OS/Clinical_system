@@ -183,6 +183,10 @@ class Sheets:
     def existing_ids(self) -> list[str]:
         return [str(row[0]) for row in self.get(f"{TAB}!A2:A") if row and row[0]]
 
+    def existing_rows(self) -> list[list]:
+        """Read full persisted records: key-only reconciliation is not integrity validation."""
+        return self.get(f"{TAB}!A2:N")
+
 
 def event_key(row: list) -> str:
     if len(row) != 9 or not isinstance(row[0], int) or not isinstance(row[1], int):
@@ -222,6 +226,41 @@ def note_mapping(events: list[list]) -> dict[int, int | None]:
     return mapping
 
 
+def _remote_event_index(rows: list[list]) -> dict[str, list[str]]:
+    """Fail closed on duplicate, truncated or missing-key rows; never print private IDs."""
+    found: dict[str, list[str]] = {}
+    for raw in rows:
+        if not isinstance(raw, list):
+            raise RuntimeError("Invalid private event row type; cursor NOT advanced")
+        if not raw or not any(str(value) for value in raw):
+            continue  # empty allocated sheet rows are not records
+        if len(raw) != len(HEADER) or not str(raw[0]):
+            raise RuntimeError("Incomplete private event row; cursor NOT advanced")
+        key = str(raw[0])
+        if key in found:
+            raise RuntimeError("Private sheet contains duplicate event keys; cursor NOT advanced")
+        found[key] = [str(value) for value in raw]
+    return found
+
+
+def _verify_persisted_events(expected: list[list[str]],
+                             remote: dict[str, list[str]]) -> None:
+    """Reconcile immutable revlog fields, preserving independently editable diagnoses.
+
+    A missing current Anki note does not erase a historical note ID in Sheets;
+    when currently available, however, the note identity must agree.
+    """
+    immutable = (0, 1, 2, 5, 11, 12)
+    for row in expected:
+        saved = remote.get(row[0])
+        if saved is None:
+            raise RuntimeError("Remote review event is missing; cursor NOT advanced")
+        if any(saved[i] != str(row[i]) for i in immutable):
+            raise RuntimeError("Remote immutable review content differs; cursor NOT advanced")
+        if row[3] and saved[3] != str(row[3]):
+            raise RuntimeError("Remote Anki note identity differs; cursor NOT advanced")
+
+
 def synchronize(base: Path, sheet: Sheets, lookback_days=7) -> dict:
     private_dir(base)
     state_path = base / STATE_NAME
@@ -237,22 +276,33 @@ def synchronize(base: Path, sheet: Sheets, lookback_days=7) -> dict:
     if len(events) > 12000:
         raise RuntimeError("Too many review events; reduce initial lookback")
     sheet.verify_schema()
+
     old_ids = sheet.existing_ids()
     if len(old_ids) != len(set(old_ids)):
-        raise RuntimeError("Private sheet contains duplicate event keys; stop and reconcile")
-    old_set = set(old_ids)
-    fresh = [e for e in events if event_key(e) not in old_set]
-    linked = 0
+        raise RuntimeError("Private sheet contains duplicate event keys; cursor NOT advanced")
+    before = _remote_event_index(sheet.existing_rows())
+    if set(old_ids) != set(before):
+        raise RuntimeError("Remote event key and full-row reads disagree; cursor NOT advanced")
+
+    mapping = note_mapping(events) if events else {}
+    expected = event_rows(events, mapping, datetime.now(timezone.utc).isoformat())
+    previously_stored = [row for row in expected if row[0] in before]
+    _verify_persisted_events(previously_stored, before)
+
+    fresh = [row for row in expected if row[0] not in before]
+    fresh_cards = {ev[1] for ev in events if event_key(ev) not in before}
+    linked = sum(mapping.get(cid) is not None for cid in fresh_cards)
+
     if fresh:
-        mapping = note_mapping(fresh)
-        linked = sum(note is not None for note in mapping.values())
-        now_iso = datetime.now(timezone.utc).isoformat()
-        rows = event_rows(fresh, mapping, now_iso)
-        for i in range(0, len(rows), 200):
-            sheet.append(rows[i:i+200])
-        after = sheet.existing_ids()
-        if len(after) != len(set(after)) or not {r[0] for r in rows}.issubset(set(after)):
-            raise RuntimeError("Google Sheets readback mismatch; cursor NOT advanced")
+        for i in range(0, len(fresh), 200):
+            sheet.append(fresh[i:i + 200])
+        after = _remote_event_index(sheet.existing_rows())
+        # Every pre-existing key must survive and each newly appended event must
+        # agree with its revlog identity/content (not just its event_key).
+        if not set(before).issubset(after):
+            raise RuntimeError("Remote event rows disappeared; cursor NOT advanced")
+        _verify_persisted_events(expected, after)
+    # The cursor is committed ONLY after complete readback verification.
     if events:
         previous = max(previous, max(ev[0] for ev in events))
     private_write(state_path, {"schema": 1, "last_verified_review_ms": previous,
