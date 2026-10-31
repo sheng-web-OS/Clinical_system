@@ -1,0 +1,97 @@
+{
+  "provenance": "Owner-directed public source-grounded, cross-domain reasoning probe 2026-10-31. Source URLs manually checked by current ChatGPT context; not independent source reviewer attestation or model-blinded evaluation.",
+  "claim_under_challenge": "A machine-generated score or automated check should not be equated with a broader decision outcome when that outcome requires additional independent context. The universal version ('no metric ever directly establishes anything') is deliberately false.",
+  "source_check_caveat": "Each source_check=checked is only the author/researcher's reported read of official materials. The current deterministic gate cannot authenticate this assertion or establish semantic truth.",
+  "examples": [
+    {
+      "id": "first-cvss-base-is-not-deployment-risk",
+      "family_id": "software-vulnerability-prioritization",
+      "observation": "FIRST CVSS v4.0 Base metrics quantify intrinsic vulnerability severity; prioritizing actual remediation requires threat and deployment/environment context and potentially organizational factors.",
+      "reasoning_signature": {
+        "from_role": "proxy_or_automated_signal",
+        "to_role": "decision_claim",
+        "missing_bridge_role": "target_specific_validation"
+      },
+      "source_ref": "https://www.first.org/cvss/user-guide.html",
+      "source_check": "checked",
+      "context_features": [
+        "proxy_only",
+        "decision_target_requires_context"
+      ]
+    },
+    {
+      "id": "w3c-automation-cannot-certify-site-accessibility",
+      "family_id": "web-accessibility-compliance",
+      "observation": "W3C WAI states evaluation tools cannot determine whole-site accessibility by themselves; some requirements require knowledgeable human evaluation and automated outputs can mislead.",
+      "reasoning_signature": {
+        "from_role": "proxy_or_automated_signal",
+        "to_role": "decision_claim",
+        "missing_bridge_role": "target_specific_validation"
+      },
+      "source_ref": "https://www.w3.org/WAI/test-evaluate/tools/selecting/",
+      "source_check": "checked",
+      "context_features": [
+        "proxy_only",
+        "decision_target_requires_context"
+      ]
+    }
+  ],
+  "challenges": [
+    {
+      "id": "first-base-severity-definition-is-narrow-valid-target",
+      "family_id": "vulnerability-intrinsic-severity",
+      "observation": "The CVSS-B score is an intentionally defined representation of vulnerability base severity; the limited claim 'this is its standardized technical severity score' is not equivalent to patch priority or enterprise risk.",
+      "reasoning_signature": {
+        "from_role": "proxy_or_automated_signal",
+        "to_role": "decision_claim",
+        "missing_bridge_role": "target_specific_validation"
+      },
+      "source_ref": "https://www.first.org/cvss/v4.0/specification-document",
+      "source_check": "checked",
+      "context_features": [
+        "target_is_defined_by_measurement"
+      ]
+    },
+    {
+      "id": "w3c-tools-can-check-some-accessibility-properties",
+      "family_id": "accessibility-rule-checking",
+      "observation": "W3C WAI recognizes that automated tools can identify certain potential accessibility issues, even though no tool alone can certify website accessibility as a whole; a narrowly scoped automated check is not automatically meaningless.",
+      "reasoning_signature": {
+        "from_role": "proxy_or_automated_signal",
+        "to_role": "decision_claim",
+        "missing_bridge_role": "target_specific_validation"
+      },
+      "source_ref": "https://www.w3.org/WAI/test-evaluate/",
+      "source_check": "checked",
+      "context_features": [
+        "target_is_defined_by_measurement"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "patch-priority-policy",
+      "depends_on": [
+        "first-cvss-base-is-not-deployment-risk"
+      ]
+    },
+    {
+      "id": "deployment-vuln-queue",
+      "depends_on": [
+        "patch-priority-policy"
+      ]
+    },
+    {
+      "id": "site-accessibility-verdict",
+      "depends_on": [
+        "w3c-automation-cannot-certify-site-accessibility"
+      ]
+    },
+    {
+      "id": "reader-impact-claim",
+      "depends_on": [
+        "site-accessibility-verdict"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "source_classification": "PUBLIC_SOURCE_LINKED",
+  "max_active_research": 1,
+  "gaps": [
+    {
+      "id": "hypernatremia_causal_rate",
+      "origin": "SOURCE_CONTRADICTION",
+      "impact": "CRITICAL",
+      "scope": "CURRENT",
+      "source_state": "SOURCE_ATTESTED",
+      "linked_family_count": 3,
+      "research_effort": "LARGE",
+      "source_ids": [
+        "pmid_37768662",
+        "pmid_40152929",
+        "pmid_39765195",
+        "pmid_41240509"
+      ]
+    },
+    {
+      "id": "aki_upcr_target_validity",
+      "origin": "MISSING_PREREQUISITE",
+      "impact": "BLOCKING",
+      "scope": "CURRENT",
+      "source_state": "PENDING",
+      "linked_family_count": 2,
+      "research_effort": "SMALL",
+      "source_ids": [
+        "pmid_39698350",
+        "pmid_42901297"
+      ]
+    },
+    {
+      "id": "renal_urine_chloride_context",
+      "origin": "COVERAGE_GAP",
+      "impact": "TRANSFER",
+      "scope": "NEARBY",
+      "source_state": "PENDING",
+      "linked_family_count": 2,
+      "research_effort": "SMALL",
+      "source_ids": [
+        "pmid_30626576"
+      ]
+    },
+    {
+      "id": "kinetic_gfr_context",
+      "origin": "COVERAGE_GAP",
+      "impact": "TRANSFER",
+      "scope": "NEARBY",
+      "source_state": "PENDING",
+      "linked_family_count": 2,
+      "research_effort": "LARGE",
+      "source_ids": [
+        "pmid_32734201"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "provenance": "ChatGPT-authored public guideline reasoning example, 2026-10-31; candidate is not independently medically accepted",
+  "examples": [
+    {
+      "id": "esc-troponin-to-mi",
+      "family_id": "cardio-myocardial-injury",
+      "observation": "Elevated hs-cTn indicates myocardial injury but does not by itself establish ischemic myocardial infarction.",
+      "reasoning_signature": {
+        "from_role": "clinical_measurement",
+        "to_role": "disease_classification",
+        "missing_bridge_role": "domain_specific_context"
+      },
+      "source_ref": "https://academic.oup.com/ehjacc/article/13/1/55/7280662",
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_not_established"
+      ]
+    },
+    {
+      "id": "n-kidney-low-egfr",
+      "family_id": "renal-ckd",
+      "observation": "A single low eGFR does not alone establish chronicity; CKD criteria require chronic structural or functional abnormalities.",
+      "reasoning_signature": {
+        "from_role": "clinical_measurement",
+        "to_role": "disease_classification",
+        "missing_bridge_role": "domain_specific_context"
+      },
+      "source_ref": "https://www.kidney.org/what-criteria-ckd",
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_not_established"
+      ]
+    },
+    {
+      "id": "aasld-alt-hbv-dna-to-stage",
+      "family_id": "hepatology-hbv",
+      "observation": "ALT and HBV DNA contribute to hepatitis B phase/treatment assessment but do not, without further evidence, identify the stage of fibrosis.",
+      "reasoning_signature": {
+        "from_role": "clinical_measurement",
+        "to_role": "disease_classification",
+        "missing_bridge_role": "domain_specific_context"
+      },
+      "source_ref": "https://doi.org/10.1097/hep.0000000000001549",
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_not_established"
+      ]
+    }
+  ],
+  "challenges": [
+    {
+      "id": "renal-persistent-egfr-exception",
+      "family_id": "renal-ckd",
+      "observation": "Persistently reduced GFR below 60 mL/min/1.73m2 for more than three months meets a CKD criterion; a universal rule that biomarkers cannot establish disease would be too broad.",
+      "reasoning_signature": {
+        "from_role": "clinical_measurement",
+        "to_role": "disease_classification",
+        "missing_bridge_role": "domain_specific_context"
+      },
+      "source_ref": "https://www.kidney.org/what-criteria-ckd",
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_established"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "mi-etiology-decision",
+      "depends_on": [
+        "esc-troponin-to-mi"
+      ]
+    },
+    {
+      "id": "mi-treatment-inference",
+      "depends_on": [
+        "mi-etiology-decision"
+      ]
+    },
+    {
+      "id": "ckd-classification",
+      "depends_on": [
+        "n-kidney-low-egfr"
+      ]
+    },
+    {
+      "id": "hbv-fibrosis-decision",
+      "depends_on": [
+        "aasld-alt-hbv-dna-to-stage"
+      ]
+    }
+  ]
+}

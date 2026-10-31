@@ -1,0 +1,89 @@
+{
+  "source_classification": "PUBLIC_SOURCE_LINKED",
+  "focus": "diabetes-diagnosis",
+  "nodes": [
+    {
+      "id": "diabetes-diagnosis",
+      "kind": "DECISION",
+      "status": "EXTERNAL_ONLY"
+    },
+    {
+      "id": "a1c-interpretation",
+      "kind": "INTERPRETATION",
+      "status": "CANDIDATE_CONTEXT"
+    },
+    {
+      "id": "rbc-turnover",
+      "kind": "CONTEXT",
+      "status": "EXTERNAL_ONLY"
+    },
+    {
+      "id": "hba1c-assay",
+      "kind": "MEASUREMENT",
+      "status": "EXTERNAL_ONLY"
+    },
+    {
+      "id": "hb-variant",
+      "kind": "CONTEXT",
+      "status": "EXTERNAL_ONLY"
+    },
+    {
+      "id": "diagnostic-confirmation",
+      "kind": "CONTEXT",
+      "status": "EXTERNAL_ONLY"
+    },
+    {
+      "id": "diabetes-treatment-guideline",
+      "kind": "DECISION",
+      "status": "EXTERNAL_ONLY"
+    }
+  ],
+  "established_edges": [
+    {
+      "from": "a1c-interpretation",
+      "to": "diabetes-diagnosis",
+      "role": "ASSOCIATION"
+    },
+    {
+      "from": "hba1c-assay",
+      "to": "a1c-interpretation",
+      "role": "ASSOCIATION"
+    }
+  ],
+  "candidate_edges": [
+    {
+      "from": "rbc-turnover",
+      "to": "a1c-interpretation",
+      "role": "VALIDITY_PREREQUISITE",
+      "source_ids": [
+        "ada_2026",
+        "ngsp_2026"
+      ]
+    },
+    {
+      "from": "hb-variant",
+      "to": "hba1c-assay",
+      "role": "MEASUREMENT_INTERFERENCE",
+      "source_ids": [
+        "ngsp_methods_2026",
+        "niddk_a1c"
+      ]
+    },
+    {
+      "from": "diagnostic-confirmation",
+      "to": "diabetes-diagnosis",
+      "role": "DIAGNOSTIC_CONFIRMATION",
+      "source_ids": [
+        "ada_2026"
+      ]
+    },
+    {
+      "from": "diabetes-treatment-guideline",
+      "to": "hb-variant",
+      "role": "ASSOCIATION",
+      "source_ids": [
+        "ada_2026"
+      ]
+    }
+  ]
+}

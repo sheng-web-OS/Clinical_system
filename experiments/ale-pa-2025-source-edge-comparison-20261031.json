@@ -1,0 +1,35 @@
+{
+  "source_classification": "PUBLIC_SYNTHETIC_ONLY",
+  "edges": [
+    {
+      "id": "pa_false_direct_screen",
+      "subject_anchor": "Potassium",
+      "target_anchor": "screening itself",
+      "relation": "DIRECT_SCREENING_TEST"
+    },
+    {
+      "id": "pa_source_interpretation",
+      "subject_anchor": "Potassium",
+      "target_anchor": "interpretation of aldosterone",
+      "relation": "AIDS_INTERPRETATION"
+    },
+    {
+      "id": "pa_false_stronger_necessary",
+      "subject_anchor": "Potassium",
+      "target_anchor": "screening itself",
+      "relation": "REQUIRED_PRECONDITION"
+    },
+    {
+      "id": "pa_false_shared_subject",
+      "subject_anchor": "renin",
+      "target_anchor": "screening itself",
+      "relation": "DIRECT_SCREENING_TEST"
+    },
+    {
+      "id": "pa_false_diagnosis_claim",
+      "subject_anchor": "Potassium",
+      "target_anchor": "screening itself",
+      "relation": "EXCLUDES_DIAGNOSIS_IF_NORMAL"
+    }
+  ]
+}
