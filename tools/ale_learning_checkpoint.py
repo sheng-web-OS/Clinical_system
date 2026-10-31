@@ -50,6 +50,7 @@ def validate(state: dict) -> None:
         raise ValueError('invalid evidence reference')
 
 
+
 def candidate_memory(packet: dict) -> dict:
     """Retain only bounded, synthetic/public-safe *hypotheses*, never raw evidence.
 
@@ -125,7 +126,6 @@ def recall_candidate(state: dict, query: dict) -> dict:
                 'verified': False, 'promotion_authorized': False,
                 'checkpoint_sha256': state['checkpoint_sha256']}
     return {'decision': 'NO_MATCHING_CONCEPT', 'verified': False}
-
 
 def initialize(before: dict) -> dict:
     # Validate structure at the first observation, without promoting concepts.
