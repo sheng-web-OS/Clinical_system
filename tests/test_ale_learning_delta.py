@@ -74,10 +74,29 @@ class LearningDeltaTests(unittest.TestCase):
         after = copy.deepcopy(before)
         after["examples"][0]["observation"] = "Novel author wording, not new evidence attestation"
         result = compare_updates(before, after)
-        self.assertEqual(result["state"], "EVIDENCE_CHANGED_NO_DECISION_DELTA")
-        self.assertEqual(result["action_count"], 0)
+        self.assertEqual(result["state"], "REVIEW_CANDIDATE_UPDATES")
+        self.assertEqual(result["action_count"], 1)
+        self.assertEqual(result["actions"][0]["action"],
+                         "RECHECK_UNCLASSIFIED_EVIDENCE_CHANGE")
         self.assertEqual(result["learning_gain"], "NOT_MEASURED")
         self.assertFalse(result["independent_semantic_verification"])
+
+    def test_metadata_only_update_does_not_trigger_semantic_recheck(self):
+        before = starting_packet()
+        after = copy.deepcopy(before)
+        after["provenance"] = "Public test metadata correction only"
+        result = compare_updates(before, after)
+        self.assertEqual(result["state"], "METADATA_CHANGED_NO_DECISION_DELTA")
+        self.assertEqual(result["action_count"], 0)
+
+    def test_identical_evidence_in_different_order_is_not_a_new_change(self):
+        before = starting_packet()
+        after = copy.deepcopy(before)
+        after["examples"].reverse()
+        result = compare_updates(before, after)
+        # Outer packet ordering changed, but the source observations did not.
+        self.assertEqual(result["state"], "METADATA_CHANGED_NO_DECISION_DELTA")
+        self.assertEqual(result["action_count"], 0)
 
     def test_retract_invalidated_parent_when_support_removed(self):
         before = starting_packet()
