@@ -1,0 +1,467 @@
+{
+  "schema": "ale.problem_family_bridge.candidate.v0",
+  "created_at": "2026-10-31",
+  "authoring_mode": "owner_directed_source_research",
+  "canonical_knowledge_mutation": false,
+  "independent_medical_qa": false,
+  "autonomous_semantic_induction": false,
+  "learner_gain_measured": false,
+  "visibility": "PUBLIC_SOURCED_CANDIDATE_NO_PRIVATE_DATA",
+  "source_refs": [
+    {
+      "id": "S_DKA24",
+      "url": "https://doi.org/10.2337/dci24-0032",
+      "kind": "multisociety_consensus",
+      "locator": "Section 3, Fig 2A; mixed acid-base discussion; DKA resolution",
+      "verified_by": "chatgpt_primary_text_review_2026-10-31",
+      "independent_qa": false
+    },
+    {
+      "id": "S_MASK24",
+      "url": "https://doi.org/10.1093/omcr/omae071",
+      "kind": "published_case_report",
+      "locator": "Case presentation and Table 1 (discrepant glucose 186 prose vs 283/266 table)",
+      "verified_by": "chatgpt_primary_text_review_2026-10-31",
+      "independent_qa": false
+    },
+    {
+      "id": "S_IBCC25",
+      "url": "https://emcrit.org/ibcc/dka/",
+      "kind": "expert_review_not_formal_consensus",
+      "locator": "DKA diagnosis and masked acidemia",
+      "verified_by": "chatgpt_primary_text_review_2026-10-31",
+      "independent_qa": false
+    },
+    {
+      "id": "S_KDIGO24",
+      "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+      "kind": "clinical_guideline",
+      "locator": "Page S137 Table 1 and chronicity section 1.1.3",
+      "verified_by": "chatgpt_primary_text_and_table_image_review_2026-10-31",
+      "independent_qa": false
+    },
+    {
+      "id": "S_MI18",
+      "url": "https://doi.org/10.1093/eurheartj/ehy462",
+      "kind": "international_definition",
+      "locator": "Criteria for myocardial injury and clinical criteria for MI",
+      "verified_by": "chatgpt_primary_text_review_2026-10-31",
+      "independent_qa": false
+    },
+    {
+      "id": "S_EUDKA_SITE",
+      "url": "https://github.com/sheng-web-OS/Clinical_system/blob/main/content/xiaoma-internal-medicine/lessons/2026-10-29-eudka-real-case.md",
+      "kind": "already_published_secondary_material",
+      "locator": "2026 Cai/Fu/Tan real-case interpretation, NOT 2024 masked case",
+      "verified_by": "repository_read_2026-10-31",
+      "independent_qa": false
+    }
+  ],
+  "families": [
+    {
+      "id": "CF_EUDKA_DECISION_V0",
+      "kind": "problem_centered",
+      "status": "SOURCE_LINKED_CANDIDATE",
+      "question": "With glucose not markedly elevated, how can ketone-acid pathology, formal DKA classification, and competing explanations be distinguished?",
+      "concept_ids": [
+        "C_EUDKA_GLUCOSE_AXIS",
+        "C_DKA24_THREE_COMPONENTS",
+        "C_EUDKA_MASKED_PH",
+        "C_EUDKA_KETONE_NOT_ETIOLOGY"
+      ],
+      "boundary": "Low glucose does not exclude DKA; high BHB and AG do not, by themselves, prove the full formal D/K/A definition or unique etiology.",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24",
+        "S_IBCC25",
+        "S_EUDKA_SITE"
+      ]
+    },
+    {
+      "id": "CF_CKD_CHRONICITY_V0",
+      "kind": "problem_centered",
+      "status": "SOURCE_LINKED_CANDIDATE",
+      "question": "When an abnormal eGFR is found, is it acute change, chronic kidney disease, or another kidney-related finding?",
+      "concept_ids": [
+        "C_CKD_SINGLE_EGFR",
+        "C_CKD_CHRONICITY_CRITERION",
+        "C_CKD_PERSISTENCE_SUFFICIENT"
+      ],
+      "boundary": "A single decreased eGFR cannot establish chronicity, but sufficiently documented persistence of GFR <60 for >=3 months does satisfy a CKD criterion; etiology still requires separate work.",
+      "source_ids": [
+        "S_KDIGO24"
+      ]
+    },
+    {
+      "id": "CF_TROPONIN_MI_V0",
+      "kind": "problem_centered",
+      "status": "SOURCE_LINKED_CANDIDATE",
+      "question": "When cardiac troponin is elevated, what is established: myocardial injury, acute injury, ischemic MI, or etiology?",
+      "concept_ids": [
+        "C_TROPONIN_INJURY",
+        "C_TROPONIN_ACUITY",
+        "C_MI_ISCHEMIC_EVIDENCE"
+      ],
+      "boundary": "A troponin >99th percentile establishes injury, not automatically an acute infarction; rise/fall establishes acuity, and MI additionally requires evidence of ischemia.",
+      "source_ids": [
+        "S_MI18"
+      ]
+    },
+    {
+      "id": "CF_EVIDENCE_SCOPE_BRIDGE_V0",
+      "kind": "higher_order_bridge",
+      "status": "CHALLENGED_SCOPE_CANDIDATE",
+      "question": "For which exact target proposition is a given observation sufficient, and which additional context/criterion is required for the next-level claim?",
+      "component_family_ids": [
+        "CF_EUDKA_DECISION_V0",
+        "CF_CKD_CHRONICITY_V0",
+        "CF_TROPONIN_MI_V0"
+      ],
+      "concept_ids": [
+        "C_BRIDGE_TARGET_RELATIVE_SUFFICIENCY"
+      ],
+      "boundary": "Never claim biomarkers are universally insufficient. A measured variable may directly establish a narrower criterion; distinguish classification, mechanism and etiology. Analogy is not same mechanism.",
+      "source_ids": [
+        "S_DKA24",
+        "S_KDIGO24",
+        "S_MI18",
+        "S_MASK24"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "C_EUDKA_GLUCOSE_AXIS",
+      "family_ids": [
+        "CF_EUDKA_DECISION_V0"
+      ],
+      "claim": "Presenting glucose is not a reliable surrogate for whether clinically important ketogenesis is occurring, including under SGLT2 exposure.",
+      "inference_role": "measurement_vs_process",
+      "scope": "adult diabetes with compatible presentation",
+      "source_ids": [
+        "S_DKA24",
+        "S_EUDKA_SITE"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "C_DKA24_THREE_COMPONENTS",
+      "family_ids": [
+        "CF_EUDKA_DECISION_V0"
+      ],
+      "claim": "The 2024 adult DKA operational definition requires D and K and A; A is measured pH <7.3 or bicarbonate <18 mmol/L.",
+      "inference_role": "operational_definition",
+      "scope": "2024 multinational adult DKA consensus",
+      "source_ids": [
+        "S_DKA24"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_EUDKA_MASKED_PH",
+      "family_ids": [
+        "CF_EUDKA_DECISION_V0"
+      ],
+      "claim": "Concomitant metabolic alkalosis can offset ketoacid-driven acidification so a near-normal measured pH and bicarbonate do not rule out a ketone-acid generating process.",
+      "inference_role": "competing_mechanism_masks_observation",
+      "scope": "mixed acid-base presentations; does not auto-establish DKA per formal definition",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24",
+        "S_IBCC25"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_EUDKA_KETONE_NOT_ETIOLOGY",
+      "family_ids": [
+        "CF_EUDKA_DECISION_V0"
+      ],
+      "claim": "Elevated beta-hydroxybutyrate establishes ketonemia but does not alone settle diabetic vs starvation vs other ketoacid etiologies.",
+      "inference_role": "finding_vs_causal_attribution",
+      "scope": "adult ketosis differential",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_CKD_SINGLE_EGFR",
+      "family_ids": [
+        "CF_CKD_CHRONICITY_V0"
+      ],
+      "claim": "A single low eGFR cannot by itself establish the chronicity required by CKD, because AKI/AKD may explain it.",
+      "inference_role": "snapshot_vs_duration",
+      "scope": "CKD evaluation",
+      "source_ids": [
+        "S_KDIGO24"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_CKD_CHRONICITY_CRITERION",
+      "family_ids": [
+        "CF_CKD_CHRONICITY_V0"
+      ],
+      "claim": "CKD requires kidney structure or function abnormalities with health implications documented for at least 3 months; chronicity can be established from several evidence types.",
+      "inference_role": "diagnostic_time_bridge",
+      "scope": "KDIGO 2024 CKD definition",
+      "source_ids": [
+        "S_KDIGO24"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_CKD_PERSISTENCE_SUFFICIENT",
+      "family_ids": [
+        "CF_CKD_CHRONICITY_V0"
+      ],
+      "claim": "GFR <60 mL/min/1.73m2 maintained for at least 3 months satisfies a CKD criterion, independent of a separate albuminuria requirement.",
+      "inference_role": "narrow_criterion_sufficiency",
+      "scope": "KDIGO 2024, appropriately supported persistence",
+      "source_ids": [
+        "S_KDIGO24"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_TROPONIN_INJURY",
+      "family_ids": [
+        "CF_TROPONIN_MI_V0"
+      ],
+      "claim": "Cardiac troponin >99th-percentile upper reference limit meets the definition of myocardial injury.",
+      "inference_role": "narrow_criterion_sufficiency",
+      "scope": "Fourth Universal Definition 2018",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_TROPONIN_ACUITY",
+      "family_ids": [
+        "CF_TROPONIN_MI_V0"
+      ],
+      "claim": "A rise or fall of troponin supports classification as acute myocardial injury rather than stable chronic elevation.",
+      "inference_role": "serial_measurement_context",
+      "scope": "Fourth Universal Definition 2018",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_MI_ISCHEMIC_EVIDENCE",
+      "family_ids": [
+        "CF_TROPONIN_MI_V0"
+      ],
+      "claim": "Acute MI classification requires acute myocardial injury together with clinical evidence of acute ischemia; injury alone is insufficient.",
+      "inference_role": "additional_etiologic_criterion",
+      "scope": "Fourth Universal Definition 2018",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_BRIDGE_TARGET_RELATIVE_SUFFICIENCY",
+      "family_ids": [
+        "CF_EVIDENCE_SCOPE_BRIDGE_V0"
+      ],
+      "claim": "The sufficiency of an observed signal is target-proposition-relative: a biomarker can satisfy one narrower criterion but fail to justify a broader etiologic or operational conclusion without its distinct bridge evidence.",
+      "inference_role": "cross_family_reasoning_hypothesis",
+      "scope": "candidate epistemic analogy, not a medical guideline or disease mechanism",
+      "source_ids": [
+        "S_DKA24",
+        "S_KDIGO24",
+        "S_MI18",
+        "S_MASK24"
+      ],
+      "status": "HOLD_ADVERSARIAL_SEMANTIC_REVIEW"
+    }
+  ],
+  "typed_edges": [
+    {
+      "id": "E1",
+      "from": "C_EUDKA_GLUCOSE_AXIS",
+      "to": "C_DKA24_THREE_COMPONENTS",
+      "type": "does_not_exclude",
+      "source_ids": [
+        "S_DKA24"
+      ],
+      "condition": "history of diabetes and actual K/A measurements still required"
+    },
+    {
+      "id": "E2",
+      "from": "C_EUDKA_MASKED_PH",
+      "to": "C_DKA24_THREE_COMPONENTS",
+      "type": "challenges_equivalence",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24"
+      ],
+      "condition": "clinically important masked acid burden is not automatically identical to literally meeting the measured A component"
+    },
+    {
+      "id": "E3",
+      "from": "C_EUDKA_MASKED_PH",
+      "to": "C_EUDKA_KETONE_NOT_ETIOLOGY",
+      "type": "requires_discriminating_evidence",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24"
+      ],
+      "condition": "direct ketones, clinical diabetic context and alternative acid sources need consideration"
+    },
+    {
+      "id": "E4",
+      "from": "C_CKD_SINGLE_EGFR",
+      "to": "C_CKD_CHRONICITY_CRITERION",
+      "type": "insufficient_without",
+      "source_ids": [
+        "S_KDIGO24"
+      ],
+      "condition": "chronicity evidence"
+    },
+    {
+      "id": "E5",
+      "from": "C_CKD_PERSISTENCE_SUFFICIENT",
+      "to": "C_CKD_CHRONICITY_CRITERION",
+      "type": "satisfies_criterion",
+      "source_ids": [
+        "S_KDIGO24"
+      ],
+      "condition": "GFR <60 maintained at least 3 months, not one reading"
+    },
+    {
+      "id": "E6",
+      "from": "C_TROPONIN_INJURY",
+      "to": "C_MI_ISCHEMIC_EVIDENCE",
+      "type": "insufficient_without",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "condition": "dynamic injury plus evidence of acute ischemia"
+    },
+    {
+      "id": "E7",
+      "from": "C_TROPONIN_ACUITY",
+      "to": "C_MI_ISCHEMIC_EVIDENCE",
+      "type": "insufficient_without",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "condition": "acute injury still requires ischemic evidence for MI"
+    },
+    {
+      "id": "E8",
+      "from": "CF_EUDKA_DECISION_V0",
+      "to": "CF_EVIDENCE_SCOPE_BRIDGE_V0",
+      "type": "illustrates_shared_reasoning_pattern",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24"
+      ],
+      "condition": "formal DKA criteria vs masked causal process"
+    },
+    {
+      "id": "E9",
+      "from": "CF_CKD_CHRONICITY_V0",
+      "to": "CF_EVIDENCE_SCOPE_BRIDGE_V0",
+      "type": "illustrates_shared_reasoning_pattern",
+      "source_ids": [
+        "S_KDIGO24"
+      ],
+      "condition": "snapshot vs chronicity; persistent GFR exception to universal insufficiency"
+    },
+    {
+      "id": "E10",
+      "from": "CF_TROPONIN_MI_V0",
+      "to": "CF_EVIDENCE_SCOPE_BRIDGE_V0",
+      "type": "illustrates_shared_reasoning_pattern",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "condition": "injury vs infarction classification"
+    }
+  ],
+  "q3_challenges": [
+    {
+      "id": "Q3_A",
+      "targets": [
+        "C_BRIDGE_TARGET_RELATIVE_SUFFICIENCY"
+      ],
+      "kind": "known_counterexample_to_overbroad_rule",
+      "observation": "Troponin >99th-percentile alone DOES establish myocardial injury. Do not infer that every biomarker requires other evidence for every possible claim.",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "disposition": "scope_restricted_not_disproved"
+    },
+    {
+      "id": "Q3_B",
+      "targets": [
+        "C_BRIDGE_TARGET_RELATIVE_SUFFICIENCY"
+      ],
+      "kind": "known_counterexample_to_overbroad_rule",
+      "observation": "Persistently low GFR <60 for >=3 months meets a CKD criterion, even without added albuminuria; chronicity is the relevant guard.",
+      "source_ids": [
+        "S_KDIGO24"
+      ],
+      "disposition": "scope_restricted_not_disproved"
+    },
+    {
+      "id": "Q3_C",
+      "targets": [
+        "C_EUDKA_MASKED_PH",
+        "C_DKA24_THREE_COMPONENTS"
+      ],
+      "kind": "boundary_conflict",
+      "observation": "The 2024 published masked case's pH 7.37 and bicarbonate 26 do not satisfy the formal A criterion, while beta-OHB 7.1 and AG 23 support the presence of important ketone-associated acid burden.",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24"
+      ],
+      "disposition": "preserve_formal_vs_clinical_distinction"
+    },
+    {
+      "id": "Q3_D",
+      "targets": [
+        "C_EUDKA_KETONE_NOT_ETIOLOGY"
+      ],
+      "kind": "differential",
+      "observation": "Other causes of ketonemia / high AG remain possible, and the 2024 case authors acknowledge starvation ketosis was not completely excluded.",
+      "source_ids": [
+        "S_DKA24",
+        "S_MASK24"
+      ],
+      "disposition": "etiology_not_closed"
+    },
+    {
+      "id": "Q3_E",
+      "targets": [
+        "C_EUDKA_MASKED_PH"
+      ],
+      "kind": "data_provenance",
+      "observation": "The 2024 masked case lists glucose 186 in the narrative but 283/266 in Table 1 without confirmed simultaneous timing; no fabricated glucose series or stable-euglycemia inference.",
+      "source_ids": [
+        "S_MASK24"
+      ],
+      "disposition": "TIMELINE_UNKNOWN"
+    }
+  ],
+  "accepted_boundaries": [
+    "Family means a clinical problem-centered reasoning network; higher-order families bridge, never replace, disease-specific mechanisms.",
+    "Tag or card mapping never proves a canonical concept identity.",
+    "The bridge concerns inferential sufficiency relative to the target proposition; no universal biomarker-insufficiency claim.",
+    "Candidate nodes and edges cannot modify existing canonical ontology, clinical website or private ALE ledger."
+  ],
+  "next_acceptance": {
+    "medical": "Independent reviewer confirms or rejects EACH proposed edge and scope, including Q3_C.",
+    "semantic": "Compare against tag-first grouping and nonrecursive inference on false merges and missed required bridges.",
+    "learner": "Private owner-unseen sourced reasoning discrimination and delayed retrieval versus NO_CARD under measured study minutes.",
+    "agent": "Record owner nudges separately; cannot claim autonomous tool discovery.",
+    "publication": "No automatic publishing or merge."
+  }
+}
