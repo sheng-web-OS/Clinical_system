@@ -21,5 +21,9 @@ if ! printf '%s' "$PROBE" | "$PY" -c 'import json,sys; x=json.load(sys.stdin); s
   echo "ALE_ANKICONNECT_PROBE_FAILED"
   exit 0
 fi
-# The original uploader owns its local lock, remote reconciliation and cursor.
-exec "$PY" "$HERE/ale_anki_drive_sync.py" sync
+# Review capture is always first; failed synchronization stops classification.
+# Each script uses the existing owner-private OAuth and the uploader lock.
+"$PY" "$HERE/ale_anki_drive_sync.py" sync
+# Tag-driven proposals are unconfirmed; prior owner skips remain excluded.
+# No question text, credential, private card ID or concept ID enters public logs.
+"$PY" "$HERE/ale_anki_auto_classify.py"
