@@ -101,6 +101,26 @@ class TestClozePreview(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "visible"):
             render_cloze_proposal(p)
 
+    def test_preview_hides_all_same_group_blanks(self):
+        result = render_cloze_proposal(proposal())
+        f = result["masked_fronts_for_review"]["1"]
+        self.assertIn("[controller action]", f)
+        self.assertIn("[valve response]", f)
+        self.assertNotIn("activates", f)
+        self.assertNotIn("opens", f)
+        self.assertIn("fictional machine in mode A", f)
+
+    def test_other_group_remains_readable_in_front(self):
+        p = proposal()
+        p["slots"][1]["group"] = 2
+        result = render_cloze_proposal(p)
+        front1 = result["masked_fronts_for_review"]["1"]
+        front2 = result["masked_fronts_for_review"]["2"]
+        self.assertIn("[controller action]", front1)
+        self.assertIn("opens", front1)
+        self.assertIn("activates", front2)
+        self.assertIn("[valve response]", front2)
+
     def test_no_hidden_anki_mutation_or_semantic_approval(self):
         r = render_cloze_proposal(proposal())
         self.assertIn("PENDING_SEMANTIC", r["status"])
