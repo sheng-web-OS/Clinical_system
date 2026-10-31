@@ -1,0 +1,101 @@
+{
+  "scope": "SELECTED_PUBLIC_PR_SHADOW",
+  "observed_on_utc": "2026-10-31",
+  "sampling_note": "Selected four nonrepresentative public PRs. Source-file existence was verified via GitHub changed-filename listing; PR-238 exact SHA workflow success was also fetched via GitHub. Absence of independent acceptance evidence in this check does not assert actual failure.",
+  "tasks": [
+    {
+      "task_id": "PR-238",
+      "trigger": "owner_directed",
+      "in_frozen_137": false,
+      "owner_minutes": "NOT_MEASURED",
+      "source_pr": "https://github.com/sheng-web-OS/Clinical_system/pull/238",
+      "stage_evidence": {
+        "artifact_observed": {
+          "status": "VERIFIED",
+          "source_url": "https://github.com/sheng-web-OS/Clinical_system/pull/238/files"
+        },
+        "engineering_verified": {
+          "status": "VERIFIED",
+          "source_url": "https://github.com/sheng-web-OS/Clinical_system/actions/runs/40866217133",
+          "exact_head_sha_in_pr_report": "8779f0abb1314eddb23cae6895479d0df4d3fac3",
+          "workflow_success_observed": true
+        },
+        "independently_accepted": {
+          "status": "NOT_VERIFIED"
+        },
+        "downstream_value_verified": {
+          "status": "NOT_VERIFIED"
+        }
+      }
+    },
+    {
+      "task_id": "PR-257",
+      "trigger": "owner_directed",
+      "in_frozen_137": false,
+      "owner_minutes": "NOT_MEASURED",
+      "source_pr": "https://github.com/sheng-web-OS/Clinical_system/pull/257",
+      "stage_evidence": {
+        "artifact_observed": {
+          "status": "VERIFIED",
+          "source_url": "https://github.com/sheng-web-OS/Clinical_system/pull/257/files"
+        },
+        "engineering_verified": {
+          "status": "NOT_VERIFIED",
+          "reported_offline_ready": true
+        },
+        "independently_accepted": {
+          "status": "NOT_VERIFIED"
+        },
+        "downstream_value_verified": {
+          "status": "NOT_VERIFIED"
+        }
+      }
+    },
+    {
+      "task_id": "PR-260",
+      "trigger": "owner_directed",
+      "in_frozen_137": false,
+      "owner_minutes": "NOT_MEASURED",
+      "source_pr": "https://github.com/sheng-web-OS/Clinical_system/pull/260",
+      "stage_evidence": {
+        "artifact_observed": {
+          "status": "VERIFIED",
+          "source_url": "https://github.com/sheng-web-OS/Clinical_system/pull/260/files"
+        },
+        "engineering_verified": {
+          "status": "NOT_VERIFIED",
+          "reported_synthetic_tests": true
+        },
+        "independently_accepted": {
+          "status": "NOT_VERIFIED"
+        },
+        "downstream_value_verified": {
+          "status": "NOT_VERIFIED"
+        }
+      }
+    },
+    {
+      "task_id": "PR-243",
+      "trigger": "owner_directed",
+      "in_frozen_137": false,
+      "owner_minutes": "NOT_MEASURED",
+      "source_pr": "https://github.com/sheng-web-OS/Clinical_system/pull/243",
+      "stage_evidence": {
+        "artifact_observed": {
+          "status": "VERIFIED",
+          "source_url": "https://github.com/sheng-web-OS/Clinical_system/pull/243/files"
+        },
+        "engineering_verified": {
+          "status": "NOT_VERIFIED",
+          "clinical_rights_qa_is_separate": true
+        },
+        "independently_accepted": {
+          "status": "NOT_VERIFIED"
+        },
+        "downstream_value_verified": {
+          "status": "NOT_VERIFIED"
+        }
+      }
+    }
+  ]
+}
