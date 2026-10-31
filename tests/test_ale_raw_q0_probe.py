@@ -1,5 +1,4 @@
 """Negative controls for unlabelled public-source Q0 extraction."""
-import copy
 import sys
 import unittest
 from pathlib import Path
