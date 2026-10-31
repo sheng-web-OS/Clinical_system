@@ -40,6 +40,12 @@ Call the package helper q.digest(front, back) to construct the digest inside an 
 
 The six previously delivered pilot cards are **not automatically queued**: their independent medical QA and prior Anki imports have not been verified. If already manually imported with ALE::pilot tag, exact Front/Back matching and ALE26 HTML marker can reconcile rather than duplicate; content disagreement halts.
 
+## Graph-first candidate → private HOLD queue (not automatic approval)
+
+PR #271 also supplies `tools/ale_anki_cloze_handoff.py`. Its pure `candidate_hold_row(proposal, card_key=..., deck=..., tags=..., source_url=...)` function consumes the JSON-like, graph-anchored Cloze preview returned by PR #260's `check_graph_anchored_cloze`. It verifies that the source-preview groups and each masked sibling front match the native Cloze text, then prepares the unchanged A:L private queue schema. It **forces** `PENDING_INDEPENDENT_MEDICAL_QA / HOLD / HOLD`, with an empty reviewer receipt, and never contacts Anki or Google. It does not promote a model's approval, fabricate a second reviewer, choose the owner-specific concept, or write a candidate to the private Sheet. The owner-private authoring workflow must handle identity, permissions, deduplication, and actual writing; no public fixture may contain private card text or learning status.
+
+The missing path is **actual second-context medical/source reviewer acceptance and independently authorized private release**. No generative output, synthetic CI PASS, or this HOLD adapter can fill those gates. A future approved writer may append idempotent HOLD rows to the existing private Sheet, then separate QA can release *only* a reviewed, unmodified SHA256 payload. Revisions require returning to HOLD and a new review rather than silently changing a released row. Until the owner Mac is enabled and real source review, queue and Anki readbacks are performed, **zero actual automatic Anki additions are verified**.
+
 ## One-time owner-Mac setup
 
 Only on the checkout including the ALE integration and this reviewed feature, after existing local OAuth and AnkiConnect setup:
