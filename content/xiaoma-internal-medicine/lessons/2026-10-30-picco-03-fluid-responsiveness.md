@@ -10,6 +10,8 @@
 
 實務上，fluid responsiveness 常以短暫試驗後 SV 或 CO 相對增加約 10–15% 作為代表性判準，但**閾值依方法、設備精度及研究人群而不同**；靠近閾值的結果必須同時考慮測量變異，不能將 9.9% 與 10.1% 解讀成臨床上的完全相反狀態。[2,3]
 
+這裡必須再分開**生理反應的判準**與**儀器足以辨識的變化**。Monnet 等人在 91 名血流動力相對穩定、使用 PiCCO2 的病人，將三次經肺熱稀釋測量取平均後，CI 的 least significant change 中位數仍約為 12%（四分位距 8–17%）。因此，一次檢查顯示 CI 增加接近 10%，未必足以單憑間歇式熱稀釋確認真實流量上升；這個精度估計不能直接當成快速連續 pulse-contour CO、Echo VTI 或 PPV／SVV 的通用判讀門檻。[7]
+
 PiCCO 的 GEDI 是由熱稀釋推導的 global end-diastolic volume index。它告訴我們一個近似的整體充盈量，卻不知道心臟落在 Frank–Starling 曲線哪個斜率，也不直接測量心室跨壁壓或順應性。心肌功能、右心室擴張、心包限制與胸腔內壓變化，都會改變「同樣的容量」對輸出的效果。**GEDI 不應用固定門檻決定是否輸液。**
 
 ## SVV、PPV 為什麼有時有效，卻在醫療 ICU 常常失效？
@@ -46,6 +48,8 @@ End-expiratory occlusion test（EEOT）及特定呼吸器條件下的其他動�
 
 2025 年 ANDROMEDA-SHOCK-2 在 86 個 ICU 納入 1,467 名早期 septic shock 患者，研究組採取以 CRT 為灌流目標的個人化策略，結合 pulse pressure、diastolic arterial pressure、輸液反應性及床邊 Echo 來調整液體、血管收縮藥與強心藥；對照為 usual care。階層式複合終點 win ratio 為 1.16（95% CI 1.02–1.33），主要收益來自器官支持時間縮短；**28 天死亡率本身未證明顯著下降**。研究支持的是「整合式個人化灌流復甦」，不是 PiCCO 的任何單一閾值，也不是證明所有病人都需要這台設備。[6]
 
+還要區分**使用動態方法評估輸液**與**選用哪一種監測設備**：SSC 2026 第 49 項對動態指標的建議是低確定性、條件式推薦；第 50 項則認為，對 septic shock 在一般照護外加用需要動脈導管的微創 cardiac output 監測設備，目前證據不足以作出推薦。因此，不能從 PLR 或流量反應性測試的臨床價值，推導出所有 septic shock 病人都應常規置入 PiCCO。[2]
+
 因此，病房真正需要記住的是：**「有沒有需要改善的灌流」決定治療動機；「是否 fluid responsive」決定輸液可能的流量效益；「fluid tolerance」決定這個效益是否值得冒險。** 三者缺一不可。
 
 ### 延伸來源
@@ -55,3 +59,4 @@ End-expiratory occlusion test（EEOT）及特定呼吸器條件下的其他動�
 4. Chaves RCF, et al. Dynamic predictors under mechanical ventilation: systematic review. *Crit Care.* 2024. https://doi.org/10.1186/s13054-024-05078-9
 5. Monnet X, Teboul J-L. Using the ventilator to predict fluid responsiveness. *Intensive Care Med.* 2024. https://doi.org/10.1007/s00134-024-07708-w
 6. ANDROMEDA-SHOCK-2 Investigators. *JAMA.* 2025. https://doi.org/10.1001/jama.2025.20402
+7. Monnet X, et al. Precision of the transpulmonary thermodilution measurements. *Crit Care.* 2011;15:R204. https://doi.org/10.1186/cc10421
