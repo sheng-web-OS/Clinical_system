@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 from datetime import datetime, timezone
 import html
+import hashlib
 import re
 from pathlib import Path
 import sys
@@ -16,26 +17,53 @@ from urllib.parse import quote
 
 from ale_anki_readonly import invoke, check_version
 from ale_anki_drive_sync import (BASE, CONFIG_NAME, LOCK_NAME, Sheets,
-                                authorized_session, checked_json, load_json, private_dir)
+                                authorized_session, checked_json, load_json, private_dir, private_write)
 import fcntl
 import os
 
+SKIP_NAME = "concept_map_skips.json"
 MAP_TAB = "Card_Concept_Map"
 MAP_HEADER = ["stable_note_id", "anki_note_id", "anki_card_ids", "concept_id",
               "claim_type", "relation", "card_state", "source_ref",
               "last_review_event_id", "last_observed", "confirmed_mapping"]
 
 
-def latest_unlinked_review(reviews: list, mappings: list) -> tuple | None:
+def latest_unlinked_review(reviews: list, mappings: list, skipped: set[str] | None = None) -> tuple | None:
+    skipped = skipped or set()
     linked_cards = set()
     for m in mappings:
         if len(m) >= 11 and str(m[10]).startswith("OWNER_CONFIRMED"):
             linked_cards.update(s.strip() for s in str(m[2]).split(",") if s.strip())
     for row in reversed(reviews):
         if len(row) >= 14 and str(row[2]).isdigit() and str(row[3]).isdigit():
-            if str(row[2]) not in linked_cards and re.fullmatch(r"anki-revlog:\d+:\d+", str(row[0])):
+            if (str(row[2]) not in linked_cards and str(row[2]) not in skipped
+                    and re.fullmatch(r"anki-revlog:\d+:\d+", str(row[0]))):
                 return row
     return None
+
+
+def catalog_signature(ids: list[str]) -> str:
+    """A catalog revision changes the owner's previously skipped candidates."""
+    return hashlib.sha256("\n".join(sorted(ids)).encode("utf-8")).hexdigest()
+
+
+def skipped_for_catalog(base: Path, ids: list[str]) -> set[str]:
+    data = load_json(base / SKIP_NAME)
+    if not data or data.get("signature") != catalog_signature(ids):
+        return set()
+    raw = data.get("skipped_cards", [])
+    if not isinstance(raw, list) or not all(isinstance(x, str) and x.isdigit() for x in raw):
+        raise RuntimeError("Invalid local concept skip state")
+    return set(raw)
+
+
+def remember_skip(base: Path, ids: list[str], card_id: int) -> None:
+    skipped = skipped_for_catalog(base, ids)
+    skipped.add(str(card_id))
+    private_write(base / SKIP_NAME, {
+        "schema": 1, "signature": catalog_signature(ids),
+        "skipped_cards": sorted(skipped),
+    })
 
 
 def local_question_preview(card: dict) -> str:
@@ -98,9 +126,14 @@ def execute(base: Path) -> str:
     validate_map_header(sheet)
     events = sheet.get("Error_Events!A2:N")
     existing = sheet.get(f"{MAP_TAB}!A2:K")
-    eligible = latest_unlinked_review(events, existing)
+    concepts = sheet.get("Concepts!A2:J")
+    ids = sorted({str(r[0]) for r in concepts if r and str(r[0]).strip()})
+    if not ids:
+        return "NO_VERIFIED_CONCEPT_OPTIONS | Private Concepts has no options"
+    skipped = skipped_for_catalog(base, ids)
+    eligible = latest_unlinked_review(events, existing, skipped)
     if eligible is None:
-        return "NO_UNLINKED_REVIEW | No missing live note/card concept link"
+        return "NO_ELIGIBLE_REVIEW | No unskipped card for current concept catalog"
     card_id, note_id = int(eligible[2]), int(eligible[3])
     check_version()
     cards = invoke("cardsInfo", cards=[card_id])
@@ -109,10 +142,6 @@ def execute(base: Path) -> str:
     card = cards[0]
     if card.get("cardId") != card_id or card.get("note") != note_id:
         raise RuntimeError("Anki local card/note mismatch; no mapping")
-    concepts = sheet.get("Concepts!A2:J")
-    ids = sorted({str(r[0]) for r in concepts if r and str(r[0]).strip()})
-    if not ids:
-        return "NO_VERIFIED_CONCEPT_OPTIONS | Private Concepts has no options"
     suggestions = suggested_concepts(card, ids)
     print("This Anki question is displayed only on your Mac (never uploaded):")
     print(local_question_preview(card))
@@ -123,7 +152,8 @@ def execute(base: Path) -> str:
         print(f"{i}: {cid}" + (" [tag suggestion]" if cid in suggestions else ""))
     selected = input("Concept number (0 to skip): ").strip()
     if selected in ("", "0"):
-        return "OWNER_SKIPPED | No mapping written"
+        remember_skip(base, ids, card_id)
+        return "OWNER_SKIPPED | No mapping written; local skip recorded for this catalog"
     if not selected.isdigit() or not (1 <= int(selected) <= len(ids)):
         raise ValueError("Invalid concept choice")
     concept_id = ids[int(selected) - 1]
