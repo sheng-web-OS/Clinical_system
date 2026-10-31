@@ -262,6 +262,54 @@ def synchronize(base: Path, sheet: Sheets, lookback_days=7) -> dict:
             "unique_cards_linked_to_notes": linked}
 
 
+
+def audit_private_sheet(sheet: Sheets) -> dict:
+    """Read-only integrity gate; emits aggregate counts only, no private IDs."""
+    sheet.verify_schema()
+    rows = sheet.get(f"{TAB}!A2:N")
+    seen = set()
+    unmapped = 0
+    for row in rows:
+        if not isinstance(row, list) or len(row) != len(HEADER):
+            raise RuntimeError("Invalid private review row width")
+        key, review_at, card_id, note_id, family_id, rating = row[:6]
+        if not isinstance(key, str):
+            raise RuntimeError("Invalid private review event key")
+        match = re.fullmatch(r"anki-revlog:(\d+):(\d+)", key)
+        if not match or str(row[11]) != match.group(1) or str(card_id) != match.group(2):
+            raise RuntimeError("Private review event identity mismatch")
+        if key in seen:
+            raise RuntimeError("Duplicate private review event detected")
+        seen.add(key)
+        if not str(card_id).isdigit() or (str(note_id) and not str(note_id).isdigit()):
+            raise RuntimeError("Invalid private Anki identifiers")
+        if str(rating) not in ("1", "2", "3", "4"):
+            raise RuntimeError("Invalid private review rating")
+        if str(row[12]) != "SYNCED_READ_ONLY":
+            raise RuntimeError("Unverified private sync status")
+        try:
+            review_dt = datetime.fromisoformat(str(review_at).replace("Z", "+00:00"))
+            written_dt = datetime.fromisoformat(str(row[13]).replace("Z", "+00:00"))
+        except ValueError as exc:
+            raise RuntimeError("Invalid private review timestamps") from exc
+        if review_dt.tzinfo is None or written_dt.tzinfo is None or written_dt < review_dt:
+            raise RuntimeError("Private review timestamps out of order")
+        if not str(family_id):
+            unmapped += 1
+    return {"events": len(rows), "unique_events": len(seen), "unmapped_family": unmapped}
+
+
+def command_audit(base: Path) -> None:
+    config = load_json(base / CONFIG_NAME, required=True)
+    if config.get("tab") != TAB:
+        raise RuntimeError("Config target tab mismatch")
+    sheet = Sheets(authorized_session(base), config["spreadsheet_id"])
+    result = audit_private_sheet(sheet)
+    print("OWNER_PRIVATE_AUDIT_PASS | events=" + str(result["events"])
+          + " | duplicates=0 | missing_family_links=" + str(result["unmapped_family"]))
+    print("Private event/card IDs and record contents are not displayed.")
+
+
 def command_sync(base: Path, lookback_days: int) -> None:
     config = load_json(base / CONFIG_NAME, required=True)
     if config.get("tab") != TAB:
@@ -283,7 +331,7 @@ def command_sync(base: Path, lookback_days: int) -> None:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Mac-only Anki -> owner-private Google Sheet sync")
-    parser.add_argument("command", choices=("configure", "authorize", "sync", "status"))
+    parser.add_argument("command", choices=("configure", "authorize", "sync", "audit", "status"))
     parser.add_argument("--oauth-json", help="Google Desktop OAuth JSON; configure only")
     parser.add_argument("--sheet", help="Existing owner-only Google Sheet URL; configure only")
     parser.add_argument("--lookback-days", type=int, default=7)
@@ -297,6 +345,8 @@ def main(argv=None) -> int:
             load_json(base / CONFIG_NAME, required=True)
             credentials(base, interactive=True)
             print("LOCAL_GOOGLE_OAUTH_OK | Token stored only on owner Mac")
+        elif args.command == "audit":
+            command_audit(base)
         elif args.command == "sync":
             if not 1 <= args.lookback_days <= 90:
                 raise ValueError("lookback-days must be 1 to 90")
