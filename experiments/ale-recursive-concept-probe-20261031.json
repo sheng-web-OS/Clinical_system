@@ -11,7 +11,10 @@
         "missing_bridge_role": "domain_specific_context"
       },
       "source_ref": "https://academic.oup.com/ehjacc/article/13/1/55/7280662",
-      "source_check": "checked"
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_not_established"
+      ]
     },
     {
       "id": "n-kidney-low-egfr",
@@ -23,7 +26,10 @@
         "missing_bridge_role": "domain_specific_context"
       },
       "source_ref": "https://www.kidney.org/what-criteria-ckd",
-      "source_check": "checked"
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_not_established"
+      ]
     },
     {
       "id": "aasld-alt-hbv-dna-to-stage",
@@ -35,7 +41,10 @@
         "missing_bridge_role": "domain_specific_context"
       },
       "source_ref": "https://doi.org/10.1097/hep.0000000000001549",
-      "source_check": "checked"
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_not_established"
+      ]
     }
   ],
   "challenges": [
@@ -49,7 +58,10 @@
         "missing_bridge_role": "domain_specific_context"
       },
       "source_ref": "https://www.kidney.org/what-criteria-ckd",
-      "source_check": "checked"
+      "source_check": "checked",
+      "context_features": [
+        "target_criterion_established"
+      ]
     }
   ],
   "dependencies": [
