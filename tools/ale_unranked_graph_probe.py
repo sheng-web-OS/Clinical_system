@@ -14,7 +14,6 @@ import re
 from pathlib import Path
 from typing import Any
 
-from ale_gap_triage import triage
 
 TOKEN = re.compile(r"[a-z][a-z0-9_-]{2,63}\Z")
 REF = re.compile(r"(?:ada_2026|ngsp_2026|ngsp_methods_2026|niddk_a1c|existing_dka_article|"
@@ -128,10 +127,12 @@ def probe(packet: dict) -> dict:
             status = "QUEUE_RELATION_REVIEW"
             reason = "Potential mechanism or measurement modifier; review separately"
         # This is structural attention order, not a clinical risk truth score.
-        rank = (0 if status == "PRIORITY_RELATION_REVIEW" else
-                1 if status == "QUEUE_RELATION_REVIEW" else
-                2 if status == "ABSTAIN_RELATION" else
-                3 if status == "PRESERVE_UNKNOWN" else 4)
+        rank = (0 if status == "PRIORITY_RELATION_REVIEW"
+                and e["role"] == "VALIDITY_PREREQUISITE" else
+                1 if status == "PRIORITY_RELATION_REVIEW" else
+                2 if status == "QUEUE_RELATION_REVIEW" else
+                3 if status == "ABSTAIN_RELATION" else
+                4 if status == "PRESERVE_UNKNOWN" else 5)
         relation_kind = (
             "LINK_EXISTING_CONTEXT" if nodes[e["from"]]["status"] == "EXISTING_CONTEXT"
             and nodes[e["to"]]["status"] == "EXISTING_CONTEXT"
