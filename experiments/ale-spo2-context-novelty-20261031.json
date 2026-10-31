@@ -1,0 +1,40 @@
+{
+  "source_classification": "PUBLIC_SOURCE_LINKED",
+  "article_path": "content/xiaoma-internal-medicine/lessons/2026-10-21-hypoxemia.md",
+  "candidates": [
+    {
+      "id": "cohb-optical-validity-bridge",
+      "source_ids": [
+        "agency_cdc_co_poisoning_2026",
+        "pmid_19615844"
+      ],
+      "markers": [
+        "COHb",
+        "co-oximetry"
+      ],
+      "hypothesis_status": "UNVERIFIED_CANDIDATE"
+    },
+    {
+      "id": "skin-device-bias-bounds",
+      "source_ids": [
+        "agency_fda_pulseox_2025",
+        "pmid_33326721"
+      ],
+      "markers": [
+        "skin pigmentation"
+      ],
+      "hypothesis_status": "UNVERIFIED_CANDIDATE"
+    },
+    {
+      "id": "already-existing-spo2-vs-cao2",
+      "source_ids": [
+        "agency_fda_pulseox_2025"
+      ],
+      "markers": [
+        "SpO₂",
+        "CaO₂"
+      ],
+      "hypothesis_status": "UNVERIFIED_CANDIDATE"
+    }
+  ]
+}
