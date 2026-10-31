@@ -10,7 +10,7 @@
     {
       "id": "a1c-interpretation",
       "kind": "INTERPRETATION",
-      "status": "EXISTING_CONTEXT"
+      "status": "CANDIDATE_CONTEXT"
     },
     {
       "id": "rbc-turnover",
@@ -42,6 +42,11 @@
     {
       "from": "a1c-interpretation",
       "to": "diabetes-diagnosis",
+      "role": "ASSOCIATION"
+    },
+    {
+      "from": "hba1c-assay",
+      "to": "a1c-interpretation",
       "role": "ASSOCIATION"
     }
   ],
