@@ -15,7 +15,7 @@ from urllib.request import Request, build_opener, HTTPRedirectHandler
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
-from ale_raw_q0_probe import extract
+from ale_raw_q0_probe import extract, SENTENCES
 
 PMC = re.compile(r"PMC[1-9][0-9]{4,9}\Z")
 PMID = re.compile(r"[1-9][0-9]{6,8}\Z")
@@ -147,7 +147,21 @@ def scan_fulltext(xml: bytes, pmcid: str, existing_public_context: str = "") -> 
                 # A source paragraph may contain URLs, emails or raw citations.
                 # Reject this chunk rather than drop safety validation.
                 continue
-            for raw in output["candidates"]:
+            # Coexistence is a candidate reasoning contrast even without the
+            # literal markers ('despite', 'however') in the short-excerpt gate.
+            # Its generic cue must never be interpreted as semantic proof.
+            pool = list(output["candidates"])
+            for sent in SENTENCES.finditer(segment):
+                sentence = sent.group().strip()
+                if (len(sentence.split()) >= 8 and COEXIST.search(sentence)
+                        and not any(x["exact_evidence"] == sentence for x in pool)):
+                    pool.append({
+                        "exact_evidence": sentence, "lexical_attention": 5,
+                        "start_char": sent.start() + len(sent.group()) - len(sent.group().lstrip()),
+                        "cue": "COEXISTENCE_HYPOTHESIS",
+                        "proposed_q0": "Can these mechanisms coexist?",
+                    })
+            for raw in pool:
                 sentence = raw["exact_evidence"]
                 key = hashlib.sha256(re.sub(r"\s+"," ",sentence.casefold())
                                      .encode("utf8")).hexdigest()[:16]
