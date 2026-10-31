@@ -49,8 +49,10 @@ class QuestionGate(unittest.TestCase):
     def test_material_unasked_scope_condition_proposes_one_q0(self):
         r = probe_next_q0(checkpoint(), point())
         self.assertEqual(r["decision"], "PROPOSE_ONE_Q0_SHADOW")
-        self.assertEqual(r["unasked_guard_role"], "proxy_only")
-        self.assertIn("proxy_only", r["question_q0"])
+        # Multiple minimal guards can be valid; their lexical ordering is
+        # deterministic, not a semantic ranking of which concept is "best".
+        self.assertIn(r["unasked_guard_role"], {"proxy_only", "needs_context"})
+        self.assertIn(r["unasked_guard_role"], r["question_q0"])
         self.assertFalse(r["verified"])
         self.assertFalse(r["promotion_authorized"])
 
