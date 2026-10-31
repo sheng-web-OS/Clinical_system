@@ -2,6 +2,22 @@
 
 **Status:** new code plus synthetic tests only. Real Mac Anki, iPhone, OAuth consent and Google readback are NOT yet validated. This is an opt-in extension of the strictly read-only Anki probe in the same PR: **Anki remains read-only; only the explicitly configured owner-private Google Sheet receives appended rows.** Do not run in public GitHub Actions, Codex Cloud or another public runner.
 
+## Troubleshooting: unexpected Xcode / Rust download on Mac
+
+If the terminal mentions `cryptography-50.x.tar.gz`, `maturin`, `rustc`, `xcode-select: No developer tools were found`, or requests a large Apple Command Line Tools install, **cancel the developer-tool installation**. The older Mac Python can be x86_64 (including Rosetta on Apple Silicon); `cryptography` 49+ no longer ships macOS Intel wheels, so unrestricted pip tries to build from source. This does NOT mean Google Sheets or Anki needs Xcode.
+
+Fix delivered in this PR: `tools/requirements-ale.txt` constrains `cryptography>=48.0.1,<49` (48.0.1 provides macOS universal2 wheel usable on CPython 3.9 x86_64) and `tools/ale_anki_drive_setup.sh` uses `pip --only-binary=:all:` so it cannot silently compile Rust/native dependencies.
+
+With an existing checkout on the Mac, do **not** clone over it or delete it. From its root:
+
+    git status --short
+    git pull --ff-only
+    bash tools/ale_anki_drive_setup.sh
+
+If `git pull --ff-only` fails due to modified files or branch mismatch, stop and report the **redacted** message rather than using `git reset --hard`. The private OAuth JSON and local state live outside Git and must never be committed. The failed dependency installation is safe to re-run with updated requirements; it did not establish Google OAuth.
+
+PyPI source: https://pypi.org/project/cryptography/48.0.1/ and upstream release note: https://cryptography.io/en/49.0.0/changelog/ .
+
 ## First-run setup
 
 1. Confirm Mac Anki Desktop is open, AnkiConnect installed and bound to 127.0.0.1:8765. Sync iPhone AnkiMobile **first**, then sync Mac Anki.
