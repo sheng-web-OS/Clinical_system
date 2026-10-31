@@ -91,7 +91,7 @@
           "key": "acute",
           "group": 2,
           "answer": "acute myocardial injury",
-          "hint": "是否為急性的時間分類"
+          "hint": "需要時間序列支持的損傷分類"
         },
         {
           "key": "serial",
