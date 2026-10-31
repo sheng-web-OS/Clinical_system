@@ -1,0 +1,25 @@
+#!/bin/bash
+# Read-only AnkiConnect -> owner-only Google Sheets. No Anki card/FSRS writes.
+set -euo pipefail
+umask 077
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+VAULT="$HOME/Library/Application Support/ClinicalOS-ALE"
+PY="$VAULT/venv/bin/python3"
+if [[ ! -x "$PY" ]]; then
+  echo "ALE_SETUP_MISSING"
+  exit 0
+fi
+# Anki Desktop/AnkiConnect may not be running: skip without cloud access.
+PROBE=$(/usr/bin/curl --silent --show-error --fail --max-time 3 \
+  --header 'Content-Type: application/json' \
+  --data '{"action":"version","version":6}' \
+  'http://127.0.0.1:8765' 2>/dev/null) || {
+  echo "ALE_LOCAL_ANKI_NOT_READY"
+  exit 0
+}
+if ! printf '%s' "$PROBE" | "$PY" -c 'import json,sys; x=json.load(sys.stdin); sys.exit(0 if isinstance(x.get("result"),int) and x.get("error") is None else 1)'; then
+  echo "ALE_ANKICONNECT_PROBE_FAILED"
+  exit 0
+fi
+# The original uploader owns its local lock, remote reconciliation and cursor.
+exec "$PY" "$HERE/ale_anki_drive_sync.py" sync
