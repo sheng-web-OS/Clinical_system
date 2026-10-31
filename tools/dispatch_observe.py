@@ -173,6 +173,29 @@ def observe_task(config, task_id, pr_number, paths, read_json, worker_id, run_id
     }
 
 
+class GitHubReadFailure(DispatchError):
+    """Fixed reason plus numeric, allowlisted evidence; never a response body."""
+    def __init__(self, reason, status="NOT_EXPOSED", headers=None):
+        super().__init__(reason)
+
+        def numeric_header(name):
+            value = headers.get(name) if headers is not None else None
+            if value is None:
+                return "NOT_EXPOSED"
+            if (type(value) is str and 0 < len(value) <= 20
+                    and value.isascii() and value.isdecimal()):
+                return int(value)
+            return "NOT_VERIFIED"
+
+        self.evidence = {
+            "http_status": status,
+            "retry_after_seconds": numeric_header("retry-after"),
+            "rate_limit_remaining": numeric_header("x-ratelimit-remaining"),
+            "rate_limit_reset_epoch": numeric_header("x-ratelimit-reset"),
+            "automatic_retries": 0,
+        }
+
+
 class GitHubReader:
     """Fixed host, bounded GETs; never log token, URL payloads or API responses."""
     def __call__(self, path):
@@ -187,8 +210,28 @@ class GitHubReader:
                 payload = response.read(2000001)
             require(len(payload) <= 2000000, "GITHUB_RESPONSE_TOO_LARGE")
             return json.loads(payload)
-        except (OSError, ValueError, urllib.error.HTTPError):
-            raise DispatchError("GITHUB_READ_FAILED") from None
+        except urllib.error.HTTPError as error:
+            failure = GitHubReadFailure("GITHUB_HTTP_ERROR", error.code, error.headers)
+            evidence = failure.evidence
+            # A 403 alone cannot distinguish permission denial from throttling.
+            # Never inspect/echo the body to guess. Missing headers stay unknown.
+            if error.code == 429 or (error.code == 403 and (
+                    evidence["rate_limit_remaining"] == 0
+                    or type(evidence["retry_after_seconds"]) is int)):
+                reason = "RATE_LIMITED"
+            elif error.code in (401, 403):
+                reason = "AUTH_BLOCKED"
+            elif 500 <= error.code <= 599:
+                reason = "TRANSIENT_TOOL_ERROR"
+            else:
+                reason = "GITHUB_HTTP_ERROR"
+            failure.args = (reason,)
+            error.close()
+            raise failure from None
+        except OSError:
+            raise GitHubReadFailure("TRANSIENT_TOOL_ERROR") from None
+        except ValueError:
+            raise GitHubReadFailure("GITHUB_INVALID_RESPONSE") from None
 
 
 def main():
@@ -221,8 +264,10 @@ def main():
         import sys
         error = sys.exc_info()[1]
         reason = str(error) if isinstance(error, DispatchError) else "INVALID_INPUT"
-        print(json.dumps({"status": "HOLD", "reason": reason,
-                          "execution_authorized": False}))
+        result = {"status": "HOLD", "reason": reason, "execution_authorized": False}
+        if isinstance(error, GitHubReadFailure):
+            result["read_failure"] = error.evidence
+        print(json.dumps(result))
         return 2
     print(json.dumps(result, sort_keys=True, ensure_ascii=False))
     return 0

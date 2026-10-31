@@ -1,11 +1,15 @@
 """Observed GitHub facts, moved HEADs and hostile receipts; no network calls."""
 import copy
 import json
+import io
 import unittest
+import urllib.error
+from email.message import Message
 from pathlib import Path
+from unittest import mock
 
 from tools.dispatch_selector import DispatchError, load_manifest
-from tools.dispatch_observe import END, ROOT, START, observe_task
+from tools.dispatch_observe import END, ROOT, START, GitHubReader, main, observe_task
 
 
 class ObserverTest(unittest.TestCase):
@@ -199,6 +203,93 @@ class ObserverTest(unittest.TestCase):
             observe_task(self.config, "lab-medicine", 225, ["content/example.md"],
                          self.read, "qa-automation", "qa-run-001")
         self.assertEqual([], self.calls)
+
+
+class GitHubReaderFailureTest(unittest.TestCase):
+    def failure(self, status, headers=None):
+        metadata = Message()
+        for key, value in (headers or {}).items():
+            metadata[key] = value
+        body = mock.Mock(wraps=io.BytesIO(b"secret-body"))
+        error = urllib.error.HTTPError(
+            "https://api.github.com/private-secret", status, "secret-message",
+            metadata, body)
+        with mock.patch("urllib.request.urlopen", side_effect=error) as call:
+            with self.assertRaises(DispatchError) as caught:
+                GitHubReader()(ROOT)
+        self.assertEqual(1, call.call_count)
+        self.assertEqual(15, call.call_args.kwargs["timeout"])
+        body.read.assert_not_called()
+        body.close.assert_called_once()
+        return caught.exception
+
+    def test_primary_limit_preserves_only_numeric_wait_evidence(self):
+        for status in (403, 429):
+            with self.subTest(status=status):
+                error = self.failure(status, {"x-ratelimit-remaining": "0",
+                    "x-ratelimit-reset": "1793448000", "Retry-After": "120"})
+                self.assertEqual("RATE_LIMITED", str(error))
+                self.assertEqual(0, error.evidence["rate_limit_remaining"])
+                self.assertEqual(1793448000, error.evidence["rate_limit_reset_epoch"])
+                self.assertEqual(120, error.evidence["retry_after_seconds"])
+                self.assertEqual(0, error.evidence["automatic_retries"])
+
+    def test_secondary_limit_does_not_require_exhausted_primary_budget(self):
+        error = self.failure(403, {"Retry-After": "60", "x-ratelimit-remaining": "100"})
+        self.assertEqual("RATE_LIMITED", str(error))
+        self.assertEqual(60, error.evidence["retry_after_seconds"])
+
+    def test_missing_headers_do_not_invent_quota_or_retry_time(self):
+        error = self.failure(429)
+        self.assertEqual("RATE_LIMITED", str(error))
+        for key in ("rate_limit_remaining", "rate_limit_reset_epoch", "retry_after_seconds"):
+            self.assertEqual("NOT_EXPOSED", error.evidence[key])
+
+    def test_access_denial_without_limit_evidence_is_not_rate_limit(self):
+        for status in (401, 403):
+            self.assertEqual("AUTH_BLOCKED", str(self.failure(status)))
+
+    def test_invalid_or_hostile_headers_are_not_echoed_or_trusted(self):
+        error = self.failure(403, {"Retry-After": "secret-header",
+            "x-ratelimit-remaining": "-1", "x-ratelimit-reset": "9" * 100})
+        self.assertEqual("AUTH_BLOCKED", str(error))
+        for key in ("rate_limit_remaining", "rate_limit_reset_epoch", "retry_after_seconds"):
+            self.assertEqual("NOT_VERIFIED", error.evidence[key])
+        self.assertNotIn("secret", json.dumps(error.evidence))
+
+    def test_server_error_and_timeout_are_single_attempt_transient_failures(self):
+        self.assertEqual("TRANSIENT_TOOL_ERROR", str(self.failure(503)))
+        with mock.patch("urllib.request.urlopen", side_effect=TimeoutError("secret")) as call:
+            with self.assertRaisesRegex(DispatchError, "^TRANSIENT_TOOL_ERROR$"):
+                GitHubReader()(ROOT)
+        self.assertEqual(1, call.call_count)
+
+    def test_bad_json_and_other_http_status_remain_non_retrying_failures(self):
+        response = mock.MagicMock()
+        response.__enter__.return_value.read.return_value = b"secret-not-json"
+        with mock.patch("urllib.request.urlopen", return_value=response) as call:
+            with self.assertRaisesRegex(DispatchError, "^GITHUB_INVALID_RESPONSE$"):
+                GitHubReader()(ROOT)
+        self.assertEqual(1, call.call_count)
+        self.assertEqual("GITHUB_HTTP_ERROR", str(self.failure(404)))
+
+    def test_cli_exposes_sanitized_evidence_and_no_execution_authority(self):
+        headers = Message()
+        headers["Retry-After"] = "60"
+        error = urllib.error.HTTPError("secret-url", 429, "secret-message",
+                                       headers, io.BytesIO(b"secret-body"))
+        args = ["observe", "--live", "--task", "lab-medicine", "--pr", "214",
+                "--paths", "content/example.md", "--worker-id", "worker-001",
+                "--run-id", "run-001"]
+        with mock.patch("sys.argv", args), mock.patch("urllib.request.urlopen", side_effect=error), \
+                mock.patch("sys.stdout", new_callable=io.StringIO) as output:
+            self.assertEqual(2, main())
+        result = json.loads(output.getvalue())
+        self.assertEqual("RATE_LIMITED", result["reason"])
+        self.assertEqual(60, result["read_failure"]["retry_after_seconds"])
+        self.assertFalse(result["execution_authorized"])
+        self.assertNotIn("secret", output.getvalue())
+        error.close()
 
 
 if __name__ == "__main__":
