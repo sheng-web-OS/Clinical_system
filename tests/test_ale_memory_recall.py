@@ -78,6 +78,20 @@ class TransferRecall(unittest.TestCase):
         p['examples'][0]['reasoning_signature']['from_role'] = 'Unsafe personal narrative'
         self.assertEqual(candidate_memory(p)['state'], 'NOT_RETAINED_UNSAFE_ROLES')
 
+    def test_unvalidated_features_do_not_enter_candidate_memory(self):
+        bad_cases = [
+            ['owner personal details'],
+            ['valid_token', 'valid_token'],
+            ['valid_token'] * 17,
+            ['valid_token', 12],
+        ]
+        for features in bad_cases:
+            with self.subTest(features=features):
+                p = packet()
+                p['examples'][0]['context_features'] = features
+                self.assertEqual(initialize(p)['candidate_memory']['state'],
+                                 'NOT_RETAINED_UNSAFE_FEATURES')
+
     def test_mismatched_signature_no_claim(self):
         state = initialize(packet())
         self.assertEqual(recall_candidate(state, {'reasoning_signature': {
