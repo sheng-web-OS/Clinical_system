@@ -18,6 +18,23 @@ def _nonempty(value):
     return isinstance(value, str) and bool(value.strip())
 
 
+
+def preview_masked_fronts(rendered: str, groups) -> dict:
+    """Expose the actual all-blanks-hidden reading task for each generated card.
+
+    Other cloze groups remain readable as in Anki. This reveals cases where
+    two or more simultaneous omissions destroy the causal context. It does NOT
+    claim to judge clinical correctness or semantic answerability.
+    """
+    pattern = re.compile(r"\\{\\{c([1-9][0-9]*)::([^{}]*?)(?:::([^{}]*?))?\\}\\}")
+    def front(group):
+        def replacement(match):
+            if int(match.group(1)) == group:
+                return "[" + (match.group(3) or "...") + "]"
+            return match.group(2)
+        return pattern.sub(replacement, rendered)
+    return {str(group): front(group) for group in sorted(groups)}
+
 def render_cloze_proposal(p: dict) -> dict:
     """Return one Anki Cloze note preview; same group means same review card.
 
@@ -76,6 +93,7 @@ def render_cloze_proposal(p: dict) -> dict:
         "note_type": "Cloze",
         "text": p["context"].strip() + "\n" + text,
         "card_groups": sorted(groups),
+        "masked_fronts_for_review": preview_masked_fronts(text, groups),
         "card_count": len(groups),
         "cloze_count": len(slots),
         "single_card_multi_cloze": any(n > 1 for n in groups.values()),
