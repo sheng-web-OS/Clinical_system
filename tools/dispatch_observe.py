@@ -79,7 +79,8 @@ def observe_task(config, task_id, pr_number, paths, read_json, worker_id, run_id
     main_sha = control.get("commit", {}).get("sha")
     require(type(main_sha) is str and SHA.fullmatch(main_sha), "INVALID_MAIN_SHA")
     issue_number = int(task["target"].split(":")[1])
-    issue = read_json(ROOT + "/issues/" + str(issue_number))
+    issue_path = ROOT + "/issues/" + str(issue_number)
+    issue = read_json(issue_path)
     require(type(issue) is dict and issue.get("number") == issue_number
             and type(issue.get("state")) is str
             and issue["state"] in {"open", "closed"} and "pull_request" not in issue,
@@ -151,6 +152,14 @@ def observe_task(config, task_id, pr_number, paths, read_json, worker_id, run_id
             and after.get("comments") == count
             and after.get("updated_at") == pr.get("updated_at"),
             "PR_CHANGED_DURING_OBSERVATION")
+    final_issue = read_json(issue_path)
+    require(type(final_issue) is dict
+            and final_issue.get("number") == issue_number
+            and "pull_request" not in final_issue
+            and type(final_issue.get("state")) is str
+            and final_issue["state"] == issue["state"]
+            and final_issue.get("updated_at") == issue.get("updated_at"),
+            "ISSUE_CHANGED_DURING_OBSERVATION")
     final_control = read_json(ROOT + "/branches/main")
     require(final_control.get("commit", {}).get("sha") == main_sha
             and final_control.get("protected") is True,

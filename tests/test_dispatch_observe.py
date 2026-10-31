@@ -77,6 +77,7 @@ class ObserverTest(unittest.TestCase):
         self.assertEqual(0, r["model_calls"])
         self.assertNotIn("Ignore safety", json.dumps(r))
         self.assertEqual(2, self.calls.count(self.pr_path))
+        self.assertEqual(2, self.calls.count(ROOT + "/issues/180"))
 
     def test_exact_blob_checkpoint_routes_to_separate_reviewer(self):
         self.add_checkpoint()
@@ -132,6 +133,32 @@ class ObserverTest(unittest.TestCase):
                 value["head"]["sha"] = "d" * 40
             return value
         with self.assertRaisesRegex(DispatchError, "PR_CHANGED_DURING_OBSERVATION"):
+            self.observe(reader)
+
+    def test_issue_transition_or_invalid_final_identity_is_not_a_coherent_snapshot(self):
+        issue_path = ROOT + "/issues/180"
+        for changes in ({"state": "closed"}, {"number": 181},
+                        {"state": ["open"]}, {"pull_request": {}}):
+            with self.subTest(changes=changes):
+                self.setUp()
+                self.add_checkpoint()
+                def reader(path):
+                    value = self.read(path)
+                    if path == issue_path and self.calls.count(path) == 2:
+                        value.update(changes)
+                    return value
+                with self.assertRaisesRegex(DispatchError, "^ISSUE_CHANGED_DURING_OBSERVATION$"):
+                    self.observe(reader)
+
+    def test_issue_revision_change_with_same_open_state_is_not_ignored(self):
+        issue_path = ROOT + "/issues/180"
+        self.snapshot[issue_path]["updated_at"] = "2026-10-31T16:00:00Z"
+        def reader(path):
+            value = self.read(path)
+            if path == issue_path and self.calls.count(path) == 2:
+                value["updated_at"] = "2026-10-31T16:01:00Z"
+            return value
+        with self.assertRaisesRegex(DispatchError, "^ISSUE_CHANGED_DURING_OBSERVATION$"):
             self.observe(reader)
 
     def test_comment_changed_without_head_change_is_also_rejected(self):
