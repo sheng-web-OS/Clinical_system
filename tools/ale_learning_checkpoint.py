@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from ale_learning_delta import compare_updates
+from ale_candidate_discovery import discover
 
 SCHEMA = 'ale-learning-checkpoint-v0'
 
@@ -49,6 +50,83 @@ def validate(state: dict) -> None:
         raise ValueError('invalid evidence reference')
 
 
+def candidate_memory(packet: dict) -> dict:
+    """Retain only bounded, synthetic/public-safe *hypotheses*, never raw evidence.
+
+    Explicit classification is mandatory. No learner answers, observations,
+    prompts, source URLs or original case identifiers are persisted here.
+    """
+    if packet.get('classification') not in ('PUBLIC_SYNTHETIC_ONLY',
+                                            'PUBLIC_SOURCE_LINKED'):
+        return {'state': 'NOT_RETAINED_UNCLASSIFIED', 'candidates': []}
+    import re
+    # Validate *all* role annotations, not only those that form a cluster.
+    # A malformed singleton must not silently disappear from the audit boundary.
+    for record in packet.get('examples', []) + packet.get('challenges', []):
+        signature = record.get('reasoning_signature', {})
+        if (not isinstance(signature, dict) or
+                any(not isinstance(value, str) or
+                    not re.fullmatch(r'[a-z][a-z0-9_]{1,63}', value)
+                    for value in signature.values())):
+            return {'state': 'NOT_RETAINED_UNSAFE_ROLES', 'candidates': []}
+    result = discover(packet)
+    scopes = {x['parent_candidate']: x for x in
+              result['recursive_scope_refinements']}
+    checks = {x['id']: x for x in result['gate']['results']}
+    candidates = []
+    for record in result['candidate_preflight']:
+        sig = record['signature']
+        if any(not re.fullmatch(r'[a-z][a-z0-9_]{1,63}', str(x))
+               for x in sig.values()):
+            # If source annotations are not machine-safe roles, retain nothing.
+            return {'state': 'NOT_RETAINED_UNSAFE_ROLES', 'candidates': []}
+        scope = scopes.get(record['id'])
+        guard = scope['required_context_features'] if scope else []
+        candidates.append({
+            'candidate_id': record['id'], 'reasoning_signature': sig,
+            'status': checks[record['id']]['status'],
+            'blockers': checks[record['id']]['blockers'],
+            'scope_guard': guard,
+            'support_family_count': len(record['families']),
+            'scope_verified': False,
+            'promotion_authorized': False,
+        })
+    return {'state': 'PUBLIC_CANDIDATE_SNAPSHOT_UNVERIFIED',
+            'candidates': candidates}
+
+
+def recall_candidate(state: dict, query: dict) -> dict:
+    """A distinct process can retrieve an *unverified* decision boundary.
+
+    This answers only an annotated role-token lookup, never semantic inference.
+    """
+    validate(state)
+    saved = state.get('candidate_memory', {})
+    if saved.get('state') != 'PUBLIC_CANDIDATE_SNAPSHOT_UNVERIFIED':
+        return {'decision': 'NO_RETAINED_PUBLIC_CONCEPT', 'verified': False}
+    roles = query.get('reasoning_signature')
+    features = query.get('context_features')
+    if not isinstance(roles, dict) or not isinstance(features, list):
+        raise ValueError('query requires reasoning_signature and context_features')
+    import re
+    if (any(not isinstance(x, str) or not re.fullmatch(r'[a-z][a-z0-9_]{1,63}', x)
+            for x in features) or len(features) > 16):
+        raise ValueError('query features must be bounded role tokens')
+    for item in saved['candidates']:
+        if roles != item['reasoning_signature']:
+            continue
+        guard = item['scope_guard']
+        if (guard and set(guard).issubset(set(features))):
+            decision = 'SCOPED_HYPOTHESIS_FOR_INDEPENDENT_CHALLENGE'
+        else:
+            decision = 'UNVERIFIED_PARENT_ABSTAIN'
+        return {'decision': decision, 'candidate_id': item['candidate_id'],
+                'scope_guard': guard, 'parent_status': item['status'],
+                'verified': False, 'promotion_authorized': False,
+                'checkpoint_sha256': state['checkpoint_sha256']}
+    return {'decision': 'NO_MATCHING_CONCEPT', 'verified': False}
+
+
 def initialize(before: dict) -> dict:
     # Validate structure at the first observation, without promoting concepts.
     compare_updates(before, before)
@@ -59,6 +137,7 @@ def initialize(before: dict) -> dict:
         'previous_checkpoint_sha256': None,
         'stage': 'CANDIDATE_ONLY_PENDING_SEMANTIC_QA',
         'last_delta': None,
+        'candidate_memory': candidate_memory(before),
         'independent_semantic_verification': False,
         'learning_gain': 'NOT_MEASURED',
         'memory_promotions_performed': 0,
@@ -82,6 +161,7 @@ def advance(state: dict, before: dict, after: dict, expected_sha256: str) -> dic
         'evidence_sha256': diff['after_sha256'],
         'previous_checkpoint_sha256': state['checkpoint_sha256'],
         'stage': 'CANDIDATE_ONLY_PENDING_SEMANTIC_QA',
+        'candidate_memory': candidate_memory(after),
         'last_delta': {
             'state': diff['state'],
             'actions': diff['actions'],
@@ -154,13 +234,23 @@ def persist(path: Path, candidate: dict, expected_sha256: str | None) -> None:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--checkpoint', type=Path, required=True)
-    p.add_argument('--before', type=Path, required=True)
+    p.add_argument('--before', type=Path)
+    p.add_argument('--recall-query', type=Path)
     p.add_argument('--after', type=Path)
     p.add_argument('--expected-sha256', type=str)
     p.add_argument('--initialize', action='store_true')
     p.add_argument('--write', action='store_true',
                    help='Explicitly save proposal-only state to the local path')
     args = p.parse_args()
+    if args.recall_query is not None:
+        if args.before is not None or args.after is not None or args.write:
+            p.error('--recall-query is read-only and does not accept before/after/write')
+        query = json.loads(args.recall_query.read_text(encoding='utf-8'))
+        print(json.dumps(recall_candidate(load(args.checkpoint), query),
+                         ensure_ascii=False, indent=2))
+        return
+    if args.before is None:
+        p.error('--before is required for initialize/update')
     before = json.loads(args.before.read_text(encoding='utf-8'))
     if args.initialize:
         if args.after is not None or args.expected_sha256 is not None:
