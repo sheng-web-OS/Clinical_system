@@ -52,7 +52,8 @@ class RichPilotTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
-        self.root = pathlib.Path(self.tmp.name)
+        # macOS temp paths may use /var -> /private/var; use the canonical fixture root.
+        self.root = pathlib.Path(self.tmp.name).resolve()
         self.repo = self.root / "public-repo"
         self.repo.mkdir()
         self.inputs = self.root / "examiner"

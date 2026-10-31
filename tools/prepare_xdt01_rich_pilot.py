@@ -8,6 +8,7 @@ The multi-case stage is FACILITATOR-ONLY: mount one Hxx.txt in a worker.
 import argparse
 import hashlib
 import json
+import math
 import os
 import re
 import secrets
@@ -46,7 +47,8 @@ def unique_pairs(pairs):
 
 def read_pinned(filename, expected, repo):
     p = Path(filename)
-    require(bool(HEX64.fullmatch(expected or "")), "SHA256_PIN_REQUIRED")
+    require(type(expected) is str and bool(HEX64.fullmatch(expected)),
+            "SHA256_PIN_REQUIRED")
     require(p.is_file() and not p.is_symlink(), "INPUT_NOT_REGULAR_FILE")
     resolved = p.resolve(strict=True)
     require(not resolved.is_relative_to(repo), "PUBLIC_REPO_INPUT_FORBIDDEN")
@@ -54,20 +56,34 @@ def read_pinned(filename, expected, repo):
     require(0 < len(raw) <= MAX_SOURCE_BYTES and sha(raw) == expected,
             "INPUT_DIGEST_MISMATCH_OR_SIZE")
     try:
-        return json.loads(raw.decode("utf-8-sig"), object_pairs_hook=unique_pairs)
+        return json.loads(raw.decode("utf-8-sig"), object_pairs_hook=unique_pairs,
+                          parse_constant=reject_json_constant,
+                          parse_float=finite_json_float)
     except (UnicodeError, ValueError) as exc:
         raise Hold("INVALID_UTF8_JSON") from exc
+
+
+def reject_json_constant(value):
+    raise Hold("NON_FINITE_JSON_NUMBER")
+
+
+def finite_json_float(value):
+    number = float(value)
+    require(math.isfinite(number), "NON_FINITE_JSON_NUMBER")
+    return number
 
 
 def require_private_target(path, repo):
     p = Path(path).absolute()
     require(not p.exists() and not p.is_symlink(), "TARGET_ALREADY_EXISTS")
+    for ancestor in (p.parent, *p.parent.parents):
+        require(not ancestor.is_symlink(), "SYMLINK_ANCESTOR_FORBIDDEN")
+    p = p.resolve(strict=False)
+    require(not p.exists() and not p.is_symlink(), "TARGET_ALREADY_EXISTS")
     require(not p.is_relative_to(repo) and not repo.is_relative_to(p),
             "PUBLIC_REPO_OUTPUT_FORBIDDEN")
     require(p.parent.is_dir() and not p.parent.is_symlink(),
             "PRIVATE_PARENT_REQUIRED")
-    for ancestor in (p.parent, *p.parent.parents):
-        require(not ancestor.is_symlink(), "SYMLINK_ANCESTOR_FORBIDDEN")
     require(p.parent.stat().st_mode & 0o002 == 0,
             "WORLD_WRITABLE_PARENT_FORBIDDEN")
     return p
@@ -78,21 +94,22 @@ def exact_keys(obj, required, label):
 
 
 def valid_text(x, maxbytes):
-    return type(x) is str and 0 < len(x.encode("utf-8")) <= maxbytes
+    if type(x) is not str or not x.strip():
+        return False
+    try:
+        return len(x.encode("utf-8")) <= maxbytes
+    except UnicodeError:
+        return False
 
 
-def validate(cases, gold, scoring):
+def validate_cases(cases):
     exact_keys(cases, {"schema_version", "package_id", "source_class", "phase",
                        "instructions", "cases"}, "CASES")
-    exact_keys(gold, {"schema_version", "package_id", "keys"}, "GOLD")
-    exact_keys(scoring, {"schema_version", "package_id", "status",
-                         "method_record", "general_rules", "cases"}, "SCORING")
-    require(all(type(x.get("schema_version")) is int and x["schema_version"] == 1
-                for x in (cases, gold, scoring)), "SCHEMA_VERSION")
+    require(type(cases["schema_version"]) is int and
+            cases["schema_version"] == 1, "SCHEMA_VERSION")
     package_id = cases["package_id"]
-    require(type(package_id) is str and SAFE_ID.fullmatch(package_id) and
-            gold["package_id"] == package_id and
-            scoring["package_id"] == package_id, "PACKAGE_ID_MISMATCH")
+    require(type(package_id) is str and SAFE_ID.fullmatch(package_id),
+            "PACKAGE_ID_MISMATCH")
     require(cases["phase"] == "pilot" and cases["source_class"] == "synthetic",
             "ONLY_SYNTHETIC_PILOT")
     require(valid_text(cases["instructions"], 3000), "INSTRUCTIONS_INVALID")
@@ -106,7 +123,7 @@ def validate(cases, gold, scoring):
         cid, domain = case["id"], case["domain"]
         require(type(cid) is str and bool(SAFE_ID.fullmatch(cid)) and
                 cid not in case_by_id, "CASE_ID_INVALID_OR_DUPLICATE")
-        require(domain in DOMAINS and domain not in domains,
+        require(type(domain) is str and domain in DOMAINS and domain not in domains,
                 "DOMAIN_DISTRIBUTION_INVALID")
         require(valid_text(case["task"], 10_000), "TASK_TEXT_INVALID")
         evidence = case["evidence"]
@@ -125,7 +142,8 @@ def validate(cases, gold, scoring):
                 require(valid_text(entry["text"], 10_000), "EVIDENCE_TEXT_INVALID")
             else:
                 require(valid_text(entry["object_path"], 500) and
-                        type(entry["utf8_text"]) is str and
+                        valid_text(entry["utf8_text"], MAX_PACKET_BYTES) and
+                        type(entry["sha256"]) is str and
                         bool(HEX64.fullmatch(entry["sha256"])) and
                         sha(entry["utf8_text"].encode("utf-8")) == entry["sha256"],
                         "EVIDENCE_OBJECT_HASH_MISMATCH")
@@ -134,7 +152,7 @@ def validate(cases, gold, scoring):
                          "instructions": cases["instructions"],
                          "case": case}
         task = (json.dumps(worker_object, ensure_ascii=False, sort_keys=True,
-                           separators=(",", ":")) + "\n").encode("utf-8")
+                           separators=(",", ":"), allow_nan=False) + "\n").encode("utf-8")
         require(len(task) <= MAX_PACKET_BYTES, "ONE_CASE_TASK_TOO_LARGE")
         require(json.loads(task)["case"] == case and
                 json.loads(task)["instructions"] == cases["instructions"],
@@ -143,6 +161,19 @@ def validate(cases, gold, scoring):
         case_by_id[cid] = case
         domains.add(domain)
     require(domains == DOMAINS, "MISSING_DOMAIN")
+    return packets
+
+
+def validate(cases, gold, scoring):
+    packets = validate_cases(cases)
+    exact_keys(gold, {"schema_version", "package_id", "keys"}, "GOLD")
+    exact_keys(scoring, {"schema_version", "package_id", "status",
+                         "method_record", "general_rules", "cases"}, "SCORING")
+    require(all(type(x.get("schema_version")) is int and x["schema_version"] == 1
+                for x in (gold, scoring)), "SCHEMA_VERSION")
+    require(gold["package_id"] == cases["package_id"] and
+            scoring["package_id"] == cases["package_id"], "PACKAGE_ID_MISMATCH")
+    case_by_id = {case["id"]: case for case in cases["cases"]}
     keys = gold["keys"]
     scored = scoring["cases"]
     require(type(keys) is list and len(keys) == 3 and type(scored) is list
@@ -169,7 +200,8 @@ def validate(cases, gold, scoring):
         require(type(rubric.get("task_items")) is list and
                 len(rubric["task_items"]) == 10,
                 "TEN_SCORING_ITEMS_REQUIRED")
-        require(rubric.get("expected_skill") in {"USE", "SKIP", "EITHER"},
+        require(type(rubric.get("expected_skill")) is str and
+                rubric["expected_skill"] in {"USE", "SKIP", "EITHER"},
                 "EXPECTED_SKILL_INVALID")
         route = rubric.get("routing_items")
         require(type(route) is list and
@@ -184,7 +216,8 @@ def validate(cases, gold, scoring):
 def exclusive_json(path, obj):
     fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
     with os.fdopen(fd, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, sort_keys=True, indent=2)
+        json.dump(obj, f, ensure_ascii=False, sort_keys=True, indent=2,
+                  allow_nan=False)
         f.write("\n")
         f.flush()
         os.fsync(f.fileno())
@@ -196,7 +229,8 @@ def stage(*, cases_file, gold_file, scoring_file, cases_sha256, gold_sha256,
     repo = Path(repo_root).resolve(strict=True)
     require(repo.is_dir(), "REPO_ROOT_INVALID")
     require(candidate_commit == FROZEN_CANDIDATE, "FROZEN_COMMIT_MISMATCH")
-    require(bool(HEX64.fullmatch(skill_sha256 or "")), "SKILL_SHA256_REQUIRED")
+    require(type(skill_sha256) is str and bool(HEX64.fullmatch(skill_sha256)),
+            "SKILL_SHA256_REQUIRED")
     cases = read_pinned(cases_file, cases_sha256, repo)
     gold = read_pinned(gold_file, gold_sha256, repo)
     scoring = read_pinned(scoring_file, scoring_sha256, repo)
@@ -268,17 +302,77 @@ def stage(*, cases_file, gold_file, scoring_file, cases_sha256, gold_sha256,
         raise
 
 
+def stage_cases_only(*, cases_file, cases_sha256, repo_root, stage_root,
+                     candidate_commit, skill_sha256):
+    """Stage only pinned case inputs; no gold/rubric/facilitator access."""
+    repo = Path(repo_root).resolve(strict=True)
+    require(repo.is_dir(), "REPO_ROOT_INVALID")
+    require(candidate_commit == FROZEN_CANDIDATE, "FROZEN_COMMIT_MISMATCH")
+    require(type(skill_sha256) is str and bool(HEX64.fullmatch(skill_sha256)),
+            "SKILL_SHA256_REQUIRED")
+    cases = read_pinned(cases_file, cases_sha256, repo)
+    packets = validate_cases(cases)
+    stage_dir = require_private_target(stage_root, repo)
+    case_by_id = {case["id"]: case for case in cases["cases"]}
+    order = list(packets)
+    secrets.SystemRandom().shuffle(order)
+    created = False
+    try:
+        stage_dir.mkdir(mode=0o700)
+        created = True
+        stage_entries = []
+        for idx, cid in enumerate(order, 1):
+            slot = f"H{idx:02d}"
+            task = packets[cid]
+            fd = os.open(stage_dir / (slot + ".txt"),
+                         os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+            with os.fdopen(fd, "wb") as stream:
+                stream.write(task)
+                stream.flush()
+                os.fsync(stream.fileno())
+            stage_entries.append({"slot": slot, "sha256": sha(task),
+                                  "bytes": len(task),
+                                  "evidence_count": len(case_by_id[cid]["evidence"])})
+        exclusive_json(stage_dir / "stage_manifest.json", {
+            "status": "OFFLINE_CASES_ONLY_REVIEW_HOLD", "schema_version": 1,
+            "phase": "pilot", "source_class_claim": "synthetic",
+            "candidate_commit": candidate_commit, "skill_sha256": skill_sha256,
+            "source_sha256": {"cases": cases_sha256},
+            "case_count": 3, "cases": stage_entries, "model_calls": 0})
+        return {"status": "OFFLINE_CASES_ONLY_REVIEW_HOLD", "case_count": 3,
+                "source_sha256_match": True, "model_calls": 0,
+                "independent_access_denial_verified": False}
+    except Exception:
+        if created:
+            shutil.rmtree(stage_dir)
+        raise
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
-    for arg in ("cases-file", "gold-file", "scoring-file", "repo-root",
-                "stage-root", "facilitator-root", "candidate-commit",
-                "skill-sha256"):
+    p.add_argument("--cases-only", action="store_true")
+    for arg in ("cases-file", "repo-root", "stage-root", "candidate-commit",
+                "skill-sha256", "cases-sha256"):
         p.add_argument("--" + arg, required=True)
-    for arg in ("cases-sha256", "gold-sha256", "scoring-sha256"):
-        p.add_argument("--" + arg, required=True)
+    for arg in ("gold-file", "scoring-file", "facilitator-root",
+                "gold-sha256", "scoring-sha256"):
+        p.add_argument("--" + arg)
     a = {k.replace("-", "_"): v for k, v in vars(p.parse_args(argv)).items()}
     try:
-        print(json.dumps(stage(**a), ensure_ascii=False))
+        cases_only = a.pop("cases_only")
+        private_fields = ("gold_file", "scoring_file", "facilitator_root",
+                          "gold_sha256", "scoring_sha256")
+        if cases_only:
+            require(all(a[field] is None for field in private_fields),
+                    "CASES_ONLY_FORBIDS_GOLD_SCORING_FACILITATOR_ARGS")
+            for field in private_fields:
+                del a[field]
+            result = stage_cases_only(**a)
+        else:
+            require(all(a[field] is not None for field in private_fields),
+                    "GOLD_SCORING_FACILITATOR_ARGS_REQUIRED")
+            result = stage(**a)
+        print(json.dumps(result, ensure_ascii=False))
         return 0
     except (Hold, ValueError, TypeError, OSError, KeyError) as exc:
         code = str(exc) if isinstance(exc, Hold) else type(exc).__name__
