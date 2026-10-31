@@ -89,11 +89,12 @@ def render_cloze_proposal(p: dict) -> dict:
     text = SLOT.sub(lambda m: seen[m.group(1)], p["template"])
     if "{{c" in p["context"] or "[[" in p["context"]:
         raise ValueError("context must stay visible with all groups hidden")
+    rendered_text = p["context"].strip() + "\n" + text
     return {
         "note_type": "Cloze",
-        "text": p["context"].strip() + "\n" + text,
+        "text": rendered_text,
         "card_groups": sorted(groups),
-        "masked_fronts_for_review": preview_masked_fronts(text, groups),
+        "masked_fronts_for_review": preview_masked_fronts(rendered_text, groups),
         "card_count": len(groups),
         "cloze_count": len(slots),
         "single_card_multi_cloze": any(n > 1 for n in groups.values()),
