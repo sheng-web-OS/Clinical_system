@@ -236,7 +236,7 @@ class TestQueue(unittest.TestCase):
                                  {"Text": a["front_html"], "Extra": a["back_html"]})
                 return 900
             if action == "notesInfo":
-                return [{"noteId": 900, "modelName": "Cloze",
+                return [{"noteId": 900, "modelName": "Cloze", "cards": [301, 302],
                          "tags": ["ale::card::CARD-CLOZE-01"],
                          "fields": {"Text": {"value": a["front_html"]},
                                     "Extra": {"value": a["back_html"]}}}]
@@ -258,7 +258,7 @@ class TestQueue(unittest.TestCase):
             if action == "deckNames": return [a["deck"]]
             if action == "findNotes": return [901]
             if action == "notesInfo":
-                return [{"noteId": 901, "modelName": "Cloze",
+                return [{"noteId": 901, "modelName": "Cloze", "cards": [303],
                          "tags": ["ale::card::CARD-CLOZE-02"],
                          "fields": {"Text": {"value": a["front_html"]},
                                     "Extra": {"value": a["back_html"]}}}]
@@ -280,6 +280,23 @@ class TestQueue(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 q.process(s)
         self.assertEqual(s.entry["import_status"], "PENDING")
+
+    def test_cloze_sibling_ids_required_before_receipt(self):
+        a = sample("CARD-CLOZE-05")
+        a["front_html"] = ("In this comparison, {{c1::alpha}} and "
+                           "{{c2::beta}} are different retrieval groups.")
+        a["content_sha256"] = q.digest(a["front_html"], a["back_html"])
+        for card_ids in ([], [300], [300, 300], ["300", 301], None):
+            def api(action, **params):
+                if action == "notesInfo":
+                    return [{"noteId": 88, "modelName": "Cloze",
+                             "cards": card_ids,
+                             "fields": {"Text": {"value": a["front_html"]},
+                                        "Extra": {"value": a["back_html"]}}}]
+                raise AssertionError("No mutation allowed")
+            with self.subTest(ids=card_ids), patch.object(q, "local_anki", side_effect=api):
+                with self.assertRaises(RuntimeError):
+                    q.verify_note(88, a)
 
     def test_cloze_wrong_note_type_must_not_overwrite(self):
         a = sample("CARD-CLOZE-04")
