@@ -48,6 +48,36 @@ class ConceptMapTests(unittest.TestCase):
         row = m.mapping_row(E, "c", "2026-10-31")
         self.assertEqual(row[5], "TESTS_THIS_CARD_DIRECTION_ONLY")
 
+    def test_skip_prevents_repeat_until_catalog_change(self):
+        from pathlib import Path
+        import tempfile
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            catalog = ["concept-one", "concept-two"]
+            self.assertEqual(m.skipped_for_catalog(base, catalog), set())
+            m.remember_skip(base, catalog, 222)
+            self.assertEqual(m.skipped_for_catalog(base, catalog), {"222"})
+            self.assertIsNone(m.latest_unlinked_review([E], [], m.skipped_for_catalog(base, catalog)))
+            self.assertEqual(m.latest_unlinked_review([E], [], m.skipped_for_catalog(base, catalog + ["new-concept"])), E)
+
+    def test_skip_files_are_private(self):
+        from pathlib import Path
+        import tempfile
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            m.remember_skip(base, ["concept-one"], 222)
+            self.assertEqual((base / m.SKIP_NAME).stat().st_mode & 0o777, 0o600)
+            self.assertEqual(base.stat().st_mode & 0o777, 0o700)
+
+    def test_skip_duplicate_is_idempotent(self):
+        from pathlib import Path
+        import tempfile
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            m.remember_skip(base, ["c"], 222)
+            m.remember_skip(base, ["c"], 222)
+            self.assertEqual(m.skipped_for_catalog(base, ["c"]), {"222"})
+
     def test_no_concept_selected_rejected(self):
         with self.assertRaises(ValueError):
             m.mapping_row(E, "", "2026-10-31")
