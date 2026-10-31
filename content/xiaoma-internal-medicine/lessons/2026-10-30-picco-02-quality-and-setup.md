@@ -46,6 +46,8 @@ PiCCO 能提供大量衍生參數，但這些參數的可信度共享一個起�
 
 特別要避免兩個直觀卻不可靠的想法。其一是「熱稀釋測到的 EVLW 就是肺所有的水」：指示劑必須經肺血流分布，局部灌流不均、肺血管閉塞或特別的肺部病變可能使量測不能代表全部肺區域。其二是「連續 CI 和熱稀釋 CI 方向不同，必定有一個壞了」：它們利用不同模型、不同更新頻率，也可能捕捉到不同時段，必須先核對時間與校正條件。
 
+**注射位置可能讓三次測量一致，GEDI 卻系統性偏高。**Saugel 等人於 24 名同時有頸靜脈與股靜脈途徑的病人，觀察到未校正的股靜脈注射 GEDVI 比頸靜脈平均高 241 mL/m²。Herner 等人後來在 10 名病人、14 組配對測量中發現，特定 PiCCO 版本是否正確選擇股靜脈注射部位校正，會影響 GEDVI 的偏差與分類。這是**系統性路徑偏差**，不是重複三次就能排除的隨機誤差；應核對實際注射端位置、螢幕設定與該型號 IFU，不能把研究平均偏差當作通用扣除公式。[8,9]
+
 有些特殊情境——如重大心內分流、體外循環管路、體外溫度交換、嚴重瓣膜逆流、特殊中心靜脈注入位置——會影響指示劑分布或波形校正適用性。這些不是不分型號一律宣告「絕對禁止」，而是必須查相應設備與研究對該條件的驗證限制；若不確定，應將讀值降級為待確認，而非用它作單獨的高風險處置依據。[3]
 
 ## 從錯誤資料回到病人
@@ -72,3 +74,6 @@ PiCCO 能提供大量衍生參數，但這些參數的可信度共享一個起�
 5. Saugel B, et al. *How to measure blood pressure using an arterial catheter: a systematic 5-step approach.* Crit Care. 2020. https://doi.org/10.1186/s13054-020-02859-w
 6. Getinge. *Arterial blood pressure signal troubleshooting*（特定 PiCCO 模組之廠商說明；不取代 IFU）. https://www.getinge.com/assets/content/PiCCO_TSG-US/Arterial_blood_pressure_signal_content.html
 7. Getinge. *Thermodilution results troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Thermodilution_results.html
+
+8. Saugel B, et al. *Transpulmonary thermodilution using femoral indicator injection.* Crit Care. 2010;14:R95. https://doi.org/10.1186/cc9030
+9. Herner A, et al. *Comparison of GEDVI derived from jugular and femoral injection.* Sci Rep. 2020;10:20773. https://doi.org/10.1038/s41598-020-76286-w

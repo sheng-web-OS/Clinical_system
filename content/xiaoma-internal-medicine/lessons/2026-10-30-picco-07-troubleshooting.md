@@ -22,6 +22,8 @@ PiCCO 至少有三條彼此連結的訊號鏈：**動脈壓波形 → pulse-cont
 
 異常來源包括注射體積／溫度設定錯誤、注入不夠一致、注射端位置錯誤、管路死腔、指示劑混合與溫度分布改變，以及測試期間病人真的發生循環狀態變化。特殊血流通路、心內分流、體外裝置及加溫／冷卻來源也可能使既有驗證前提失效。是否可用及偏差方向取決於**設備型號、導管與具體生理條件**，不能照一張籠統禁忌清單猜測。
 
+**看似可重複的曲線仍可能有系統偏差。**股靜脈注入冷指示劑時，額外下腔靜脈分布容積可使未校正的 GEDVI 偏高。請先確認實際導管注射端、設備選用的注射位置及該版本是否具有合適校正；研究中的校正公式不能自行跨設備套用。[8,9]
+
 ### 指數與衍生公式失真：資料看似穩定，意思卻變了
 
 EVLWI 常按 PBW 索引；GEDI／CI 則涉及體表面積。若病人資料輸入不正確或不同報告使用不同 indexing 方式，兩個時點可能出現「指數改變、原始量沒變」的假趨勢。同樣地，SVRI 依賴 MAP、CVP 與 CI 的聯立計算；**CVP 輸入不可靠時，SVRI 絕不能被當作獨立證據重複計分**。
@@ -45,9 +47,9 @@ Getinge 的 PiCCO 故障排除資料將波形問題、熱稀釋溫度訊號、�
 | 三次 CI-TD 差異很大 | 注射／溫差／指示劑混合問題；生理不穩定 | 熱稀釋曲線、注射步驟、溫度及當時病況 |
 | SVV 偏高、病人卻有 AF 或自主呼吸 | RR 間隔或呼吸型態造成的假訊號 | 動態指標適用條件；另選可量 flow 的測試 |
 | GEDI 高、CI 低 | RV 擴張、收縮問題、瓣膜／心包等限制 | Echo 分辨左／右心與機械性原因 |
-| EVLWI 異常變化而影像不符 | 不同量測時點；體重索引；肺灌流分布偏差 | 熱稀釋品質、PBW、肺超音波／影像與病程 |
+| EVLWI 異常變化而影像不符 | 時點、PBW、肺灌流，或 PEEP／VV-ECMO 迴路流量變化 | 熱稀釋品質、通氣與體外支持設定、影像與病程 |
 
-這張表不是讓讀者把第一欄直接配對成唯一診斷，而是防止監測資料失去**測量來源、時間、適用前提**後仍被過度解讀。
+這張表不是讓讀者把第一欄直接配對成唯一診斷，而是防止監測資料失去**測量來源、時間、適用前提**後仍被過度解讀。尤其 VV-ECMO 迴路流量改變時，EVLWI 趨勢不必然等於肺水量同步改變；這項證據來自僅七人的撤機前比較，不能變成跨設備校正式或調整 ECMO 流量的處置指令。[10]
 
 ## 三個極容易造成臨床誤判的反例
 
@@ -77,3 +79,7 @@ Getinge 的 PiCCO 故障排除資料將波形問題、熱稀釋溫度訊號、�
 5. SCCM. *Surviving Sepsis Campaign 2026.* https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines
 6. Getinge. *Arterial blood pressure signal troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Arterial_blood_pressure_signal_content.html
 7. Getinge. *Thermodilution measurement troubleshooting.* https://www.getinge.com/assets/content/PiCCO_TSG-US/Thermodilution_measurement.html
+
+8. Saugel B, et al. *Transpulmonary thermodilution using femoral indicator injection.* Crit Care. 2010;14:R95. https://doi.org/10.1186/cc9030
+9. Herner A, et al. *Comparison of GEDVI derived from jugular and femoral injection.* Sci Rep. 2020;10:20773. https://doi.org/10.1038/s41598-020-76286-w
+10. Loosen G, et al. *Transpulmonary thermodilution in patients treated with VV-ECMO.* Ann Intensive Care. 2021;11:101. https://doi.org/10.1186/s13613-021-00890-w

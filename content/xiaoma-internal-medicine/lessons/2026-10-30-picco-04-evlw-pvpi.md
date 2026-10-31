@@ -22,7 +22,7 @@
 
 Kushimoto 等人在 2012 年發表 23 家 ICU、266 名有低氧與雙側肺浸潤病人的前瞻性觀察研究。臨床專家回顧病史、CT／X-ray、Echo、BNP 與治療後時序後，分為 ALI/ARDS 207 人、心源性肺水腫 26 人、胸水合併肺不張 33 人。[3]
 
-研究中的 EVLWI 平均值，三組分別為 **18.5 ± 6.8、14.4 ± 4.0、8.3 ± 2.1 mL/kg**；PVPI 平均值分別為 **3.2 ± 1.4、2.0 ± 0.8、1.6 ± 0.5**。也就是說，**EVLWI 在 ARDS 與心源性肺水腫都可能升高，但 PVPI 在此研究族群更能提供通透性機轉的區辨資訊**。研究報告 PVPI 約 2.6–2.85 可獲得約 90–95% specificity；小於 1.7 的數值在該研究族群中較不支持 ARDS。然而研究分組依賴回顧性專家判讀，且 ARDS 組大幅多於心源性肺水腫組。這些是選定族群的觀察性診斷效度，**不能直接當成所有 ICU 病人的普遍診斷切點**，也不能用它排除混合性肺水腫。
+研究中的 EVLWI 平均值，三組分別為 **18.5 ± 6.8、14.4 ± 4.0、8.3 ± 2.1 mL/kg**；PVPI 平均值分別為 **3.2 ± 1.4、2.0 ± 0.8、1.6 ± 0.5**。也就是說，**EVLWI 在 ARDS 與心源性肺水腫都可能升高，但 PVPI 在此研究族群更能提供通透性機轉的區辨資訊**。原研究以 PVPI **2.6** 辨識 ALI/ARDS 時，敏感度 **0.64**、特異度 **0.90**；將門檻提高至 **2.85**，敏感度降為 **0.54**、特異度升為 **0.95**。因此高 PVPI 可強化特定條件下的推論，卻不是敏感的 ARDS 篩檢工具；原文的 PVPI <1.7 是辨識非 ALI/ARDS 的特異度，不是任何族群都適用的 95% 陰性預測值。原先收案 301 人，僅 266 人進入分析；35 名排除者中，**14 名**被懷疑有敗血症相關通透性損傷，卻因 EVLWI <10 mL/kg 而未納入。最終診斷專家雖不知道 PVPI，仍可取得 EVLWI 等熱稀釋資訊。選樣、參考判準與病因比例均限制了診斷效度，**不能直接把研究切點套用於所有 ICU 病人，或以低 EVLWI 排除早期／混合性肺損傷**。[3]
 
 早期 Monnet 等人的研究也指出，ARDS 的 PVPI 常較 hydrostatic edema 為高，但各研究門檻並非完全相同。因此，教材若提供 PVPI 3 的常用經驗界值，必須同時交代它不是 ARDS 定義本身，亦不涵蓋所有混合病因。[4]
 
@@ -30,8 +30,10 @@ Kushimoto 等人在 2012 年發表 23 家 ICU、266 名有低氧與雙側肺浸�
 |---|---|---|
 | EVLWI 高、PVPI 也高 | 肺水增加，permeability injury 可能參與 | 肺炎／敗血症／吸入性傷害？有無同時充盈壓升高？ |
 | EVLWI 高、PVPI 相對低 | 肺水增加，但相對較符合 hydrostatic 機轉 | Echo 左心與瓣膜、輸液／靜脈鬱血、肺循環情況如何？ |
-| EVLWI 不高，氧合卻差 | 低氧不能直接歸因於廣泛肺水增加 | 肺栓塞、低通氣／V/Q 異常、肺不張、分流或局部病灶？ |
-| EVLWI 趨勢下降，氧合仍差 | 肺水可能減少，但氧合尚未同步恢復 | PEEP、肺不張、分流、肺泡病變、肺循環與影像變化？ |
+| EVLWI 不高，氧合卻差 | 不能只歸因於廣泛肺水，也不能排除進展中的通透性損傷 | 肺栓塞、V/Q 異常、肺不張、分流或病情演變？ |
+| EVLWI 趨勢下降，氧合仍差 | 肺水或量測條件可能改變，不足以宣告病情恢復 | PEEP／VV-ECMO 流量是否改變？影像、分流與肺循環如何？ |
+
+Gavelli 等人研究 60 名 ARDS 病人，PEEP 降低後 15 分鐘，平均 EVLWI 由 20 降至 18 mL/kg，但氧合指標 PaO₂/FiO₂ 由 184 降至 150；不能把這視為利尿或肺病緩解。[6] 另一項僅七名準備撤除 VV-ECMO 的流量比較顯示，迴路流量不同時 EVLWI 讀值顯著不同，卻未證實真實肺水在短時間內等比例變化。[7] 所以趨勢必須同時記錄 PEEP、體外流量及量測品質，**不可為追求漂亮的 EVLWI 數字而改變維生支持**。
 
 **EVLWI 與 PaO₂/FiO₂ 並非一一對應。** 同一項研究報告兩者的相關性很弱；氧合取決於分流、V/Q 分布、通氣設定及肺泡結構等多種因素，而不只是液體重量。[3]
 
@@ -55,3 +57,6 @@ EVLWI 可以追蹤肺水，但不直接測量血管內容量、腎臟靜脈鬱�
 3. Kushimoto S, et al. *The clinical usefulness of extravascular lung water and pulmonary vascular permeability index.* Crit Care. 2012;16:R232. https://doi.org/10.1186/cc11898
 4. Monnet X, et al. *Assessing pulmonary permeability by transpulmonary thermodilution allows differentiation of hydrostatic pulmonary edema from ALI/ARDS.* Intensive Care Med. 2007. https://pubmed.ncbi.nlm.nih.gov/17221189/
 5. ESICM 2025 fluid therapy guidelines Part 3—fluid removal at de-escalation phase. https://www.esicm.org/resources/guidelines-consensus-statements/
+
+6. Gavelli F, et al. *Transpulmonary thermodilution detects rapid and reversible increases in lung water induced by PEEP in ARDS.* Ann Intensive Care. 2020;10:28. https://doi.org/10.1186/s13613-020-0644-2
+7. Loosen G, et al. *Transpulmonary thermodilution in patients treated with VV-ECMO.* Ann Intensive Care. 2021;11:101. https://doi.org/10.1186/s13613-021-00890-w

@@ -26,6 +26,8 @@ PiCCO 的 GEF 與 CFI 是全心流量—容積關係的衍生估計，不能獨�
 
 同時，EVLWI 是肺水負擔訊號，並不直接測量肺血管阻力、肺泡死腔或肺栓塞。PEEP 增加後的低氧、CO 下降不一定伴隨 EVLWI 增加；若忽略這點，就可能錯把肺循環與右心危機當成單純肺水腫。
 
+**PEEP 也可能改變 EVLWI 數字的解釋條件。**一項 60 名 ARDS 病人的短期生理研究中，PEEP 平均從 14 降至 5 cmH₂O 後，15 分鐘的 EVLWI 由 20 降至 18 mL/kg，PaO₂/FiO₂ 反而由 184 降至 150；原研究未進行淨液體移除。[5] 這個短時間變化不能自動歸因於真正肺水排除或測量假象，亦非降低 PEEP 的治療建議。前後比較 EVLWI 時，須保留通氣、CVP、氧合及熱稀釋品質等共同條件。
+
 ## 反事實：同一個 CI 下降，兩種完全不同的因果鏈
 
 第一種條件：提高 PEEP 後，肺泡獲得復張，氧合改善，但回心血量下降，CI 可能輕微下降。是否需要改變通氣策略，應看有效氧合、灌流壓與組織灌流的總體效益，不能只以單一 CI 判定 PEEP 有害。
@@ -45,3 +47,5 @@ PiCCO 的 GEF 與 CFI 是全心流量—容積關係的衍生估計，不能獨�
 2. *Fluid responsiveness in ARDS: current evidence, knowledge gaps, and future directions.* 2026. https://pubmed.ncbi.nlm.nih.gov/42143226/
 3. Monnet X, Teboul J-L. *Transpulmonary thermodilution: advantages and limits.* Crit Care. 2017;21:147. https://doi.org/10.1186/s13054-017-1739-5
 4. ESICM. *Guidelines on circulatory shock and hemodynamic monitoring 2025.* https://doi.org/10.1007/s00134-025-08137-z
+
+5. Gavelli F, et al. *Transpulmonary thermodilution detects rapid and reversible increases in lung water induced by PEEP in ARDS.* Ann Intensive Care. 2020;10:28. https://doi.org/10.1186/s13613-020-0644-2
