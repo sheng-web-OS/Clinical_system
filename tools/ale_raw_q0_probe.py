@@ -18,6 +18,16 @@ PUBLIC_SOURCE = re.compile(r"pmid_[1-9][0-9]{6,8}\Z")
 # to send private material to a public GitHub Action.
 SENTENCES = re.compile(r"[^.!?\n]+(?:[.!?]+|$)")
 CUES = (
+    # Clinical role contrast can omit ordinary 'cannot/despite' wording.
+    # This is a QUESTION CUE only; no causal relation or diagnostic rule is inferred.
+    ("MEASUREMENT_ROLE_SPLIT", re.compile(
+        r"\bnot\s+(?:primarily\s+)?for\b.{0,110}?\bbut\s+(?:to|for)\b",
+        re.IGNORECASE), 5),
+    # A measurement can be biased even when it is not a screening criterion.
+    ("MEASUREMENT_VALIDITY_RISK", re.compile(
+        r"\b(?:may|can|could)\s+(?:lead\s+to|cause|yield|produce|result\s+in)"
+        r"\s+(?:(?:an?|the)\s+)?(?:falsely\s+(?:low|high)|"
+        r"false[- ](?:positive|negative))\b", re.IGNORECASE), 4),
     ("APPARENT_CONTRAST", re.compile(
         r"\b(?:despite|although|even though|whereas|nevertheless|however)\b",
         re.IGNORECASE), 4),
@@ -33,7 +43,8 @@ CUES = (
 )
 EDITORIAL_ONLY = re.compile(
     r"\b(?:copyright|downloaded|page count|author list|"
-    r"website layout|publication date|published online)\b", re.IGNORECASE
+    r"website layout|publication date|published online|"
+    r"not for publication|editorial approval)\b", re.IGNORECASE
 )
 PRIVATE_HINT = re.compile(
     r"\b(?:anki|card[_ -]?id|note[_ -]?id|patient[_ -]?id|"
@@ -42,6 +53,10 @@ PRIVATE_HINT = re.compile(
 )
 URL_OR_EMAIL = re.compile(r"https?://|www\.|\S+@\S+", re.IGNORECASE)
 QUESTIONS = {
+    "MEASUREMENT_ROLE_SPLIT":
+        "Which decision is this observation NOT intended to make, and which separate interpretation does it support?",
+    "MEASUREMENT_VALIDITY_RISK":
+        "What threatens measurement validity, and which condition might require a repeat or alternative measurement?",
     "APPARENT_CONTRAST":
         "What unspoken premise makes both apparently conflicting states possible?",
     "INFERENCE_BOUNDARY":
