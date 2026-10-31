@@ -44,7 +44,7 @@
       "id": "S_MI18",
       "url": "https://doi.org/10.1093/eurheartj/ehy462",
       "kind": "international_definition",
-      "locator": "Criteria for myocardial injury and clinical criteria for MI",
+      "locator": "Section 2 universal injury and MI criteria; §7.4 type 3 MI fatal-presentation exception; assay-specific 99th percentile and rise/fall",
       "verified_by": "chatgpt_primary_text_review_2026-10-31",
       "independent_qa": false
     },
@@ -100,9 +100,10 @@
       "concept_ids": [
         "C_TROPONIN_INJURY",
         "C_TROPONIN_ACUITY",
-        "C_MI_ISCHEMIC_EVIDENCE"
+        "C_MI_ISCHEMIC_EVIDENCE",
+        "C_MI_CLASSIFICATION"
       ],
-      "boundary": "A troponin >99th percentile establishes injury, not automatically an acute infarction; rise/fall establishes acuity, and MI additionally requires evidence of ischemia.",
+      "boundary": "Elevated cTn establishes injury, not infarction. Serial rise/fall with a value >99th URL identifies acute injury, while ischemic evidence is needed for biomarker-assessable spontaneous acute MI (types 1/2). Type 3 fatal presentations may lack sampled biomarker evidence; procedural MI has different criteria.",
       "source_ids": [
         "S_MI18"
       ]
@@ -243,9 +244,9 @@
       "family_ids": [
         "CF_TROPONIN_MI_V0"
       ],
-      "claim": "A rise or fall of troponin supports classification as acute myocardial injury rather than stable chronic elevation.",
+      "claim": "For troponin values meeting myocardial-injury criteria (at least one cTn >99th-percentile URL), a genuine rise/fall on serial testing establishes acute rather than stable chronic injury, subject to assay and timing interpretation.",
       "inference_role": "serial_measurement_context",
-      "scope": "Fourth Universal Definition 2018",
+      "scope": "Fourth Universal Definition 2018; injury threshold met and dynamic change assessed against assay/timing",
       "source_ids": [
         "S_MI18"
       ],
@@ -256,9 +257,22 @@
       "family_ids": [
         "CF_TROPONIN_MI_V0"
       ],
-      "claim": "Acute MI classification requires acute myocardial injury together with clinical evidence of acute ischemia; injury alone is insufficient.",
-      "inference_role": "additional_etiologic_criterion",
-      "scope": "Fourth Universal Definition 2018",
+      "claim": "Evidence supporting acute myocardial ischemia includes appropriate ischemic symptoms, new ischemic ECG changes, pathological Q waves, imaging showing new ischemic-pattern loss of viable myocardium or regional wall-motion abnormality, and subtype-specific coronary thrombus evidence; this is a different evidentiary requirement from troponin release.",
+      "inference_role": "ischemia_evidence_criterion",
+      "scope": "Fourth Universal Definition 2018; subtype-specific evidence requirements",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "status": "SOURCE_LINKED_CANDIDATE"
+    },
+    {
+      "id": "C_MI_CLASSIFICATION",
+      "family_ids": [
+        "CF_TROPONIN_MI_V0"
+      ],
+      "claim": "For biomarker-assessable spontaneous acute MI (especially types 1/2), diagnostic classification requires acute myocardial injury together with clinical evidence of acute myocardial ischemia; type 3 MI has an explicitly defined fatal-presentation exception when biomarker evidence is unavailable.",
+      "inference_role": "diagnostic_classification_target",
+      "scope": "Fourth Universal Definition 2018, spontaneous MI types 1/2 with separately scoped type 3 exception; procedural MI criteria are distinct",
       "source_ids": [
         "S_MI18"
       ],
@@ -305,14 +319,14 @@
     },
     {
       "id": "E3",
-      "from": "C_EUDKA_MASKED_PH",
-      "to": "C_EUDKA_KETONE_NOT_ETIOLOGY",
-      "type": "requires_discriminating_evidence",
+      "from": "C_EUDKA_KETONE_NOT_ETIOLOGY",
+      "to": "C_DKA24_THREE_COMPONENTS",
+      "type": "does_not_alone_satisfy",
       "source_ids": [
         "S_DKA24",
         "S_MASK24"
       ],
-      "condition": "direct ketones, clinical diabetic context and alternative acid sources need consideration"
+      "condition": "Beta-hydroxybutyrate ≥3 mmol/L satisfies the K component, not independently the D and measured A components or diabetic rather than another etiology"
     },
     {
       "id": "E4",
@@ -337,22 +351,22 @@
     {
       "id": "E6",
       "from": "C_TROPONIN_INJURY",
-      "to": "C_MI_ISCHEMIC_EVIDENCE",
+      "to": "C_MI_CLASSIFICATION",
       "type": "insufficient_without",
       "source_ids": [
         "S_MI18"
       ],
-      "condition": "dynamic injury plus evidence of acute ischemia"
+      "condition": "For biomarker-assessable spontaneous acute MI, static elevation alone does not establish acute injury plus ischemic evidence; type 3 is a separately defined exception"
     },
     {
       "id": "E7",
       "from": "C_TROPONIN_ACUITY",
-      "to": "C_MI_ISCHEMIC_EVIDENCE",
+      "to": "C_MI_CLASSIFICATION",
       "type": "insufficient_without",
       "source_ids": [
         "S_MI18"
       ],
-      "condition": "acute injury still requires ischemic evidence for MI"
+      "condition": "In spontaneous biomarker-assessable MI, acute injury alone is insufficient without clinical ischemic evidence; fatal type 3 exception is separately scoped"
     },
     {
       "id": "E8",
@@ -384,6 +398,26 @@
         "S_MI18"
       ],
       "condition": "injury vs infarction classification"
+    },
+    {
+      "id": "E11",
+      "from": "C_MI_ISCHEMIC_EVIDENCE",
+      "to": "C_MI_CLASSIFICATION",
+      "type": "required_for",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "condition": "Clinical ischemic evidence accompanies acute myocardial injury in biomarker-assessable spontaneous MI; type 3 fatal cases and procedural MI have distinct criteria"
+    },
+    {
+      "id": "E12",
+      "from": "C_TROPONIN_INJURY",
+      "to": "C_TROPONIN_ACUITY",
+      "type": "insufficient_without",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "condition": "An elevated cTn value establishes injury but does not distinguish acute from stable chronic injury without serial rise/fall and proper assay/timing assessment"
     }
   ],
   "q3_challenges": [
@@ -449,6 +483,32 @@
         "S_MASK24"
       ],
       "disposition": "TIMELINE_UNKNOWN"
+    },
+    {
+      "id": "Q3_F",
+      "targets": [
+        "C_MI_CLASSIFICATION",
+        "C_BRIDGE_TARGET_RELATIVE_SUFFICIENCY"
+      ],
+      "kind": "counterexample_to_universal_MI_biomarker_rule",
+      "observation": "Fourth Universal Definition type 3 MI may be classified after cardiac death with strongly suggestive ischemic presentation when biomarker samples or rise/fall are unavailable. Therefore 'all MI diagnoses require observed troponin dynamics' is false.",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "disposition": "scope_biomarker_based_rule_to_types_1_2_and_separate_type_3"
+    },
+    {
+      "id": "Q3_G",
+      "targets": [
+        "C_TROPONIN_ACUITY",
+        "C_TROPONIN_INJURY"
+      ],
+      "kind": "measurement_threshold_guard",
+      "observation": "A rise/fall wholly below the cTn assay 99th-percentile URL does not by itself satisfy the myocardial-injury definition; serial changes need the threshold and clinical/assay context.",
+      "source_ids": [
+        "S_MI18"
+      ],
+      "disposition": "reject_delta_only_acute_injury_inference"
     }
   ],
   "accepted_boundaries": [
@@ -463,5 +523,26 @@
     "learner": "Private owner-unseen sourced reasoning discrimination and delayed retrieval versus NO_CARD under measured study minutes.",
     "agent": "Record owner nudges separately; cannot claim autonomous tool discovery.",
     "publication": "No automatic publishing or merge."
-  }
+  },
+  "version": "0.1.1-proposal",
+  "revision_log": [
+    {
+      "date": "2026-10-31",
+      "trigger": "SOURCED_Q3_COUNTEREXAMPLE_AND_WRONG_EDGE_TARGET",
+      "changed": [
+        "C_TROPONIN_ACUITY",
+        "C_MI_ISCHEMIC_EVIDENCE",
+        "C_MI_CLASSIFICATION",
+        "E3",
+        "E6",
+        "E7",
+        "E11",
+        "E12",
+        "Q3_F",
+        "Q3_G"
+      ],
+      "reason": "Distinct ischemia evidence from MI classification target; preserve formal K-only from full D/K/A; add type3 and assay-threshold adversarial boundaries; original graph retained in Git history",
+      "review_type": "AUTHORING_MODEL_SOURCE_CHALLENGE_NOT_INDEPENDENT_QA"
+    }
+  ]
 }
