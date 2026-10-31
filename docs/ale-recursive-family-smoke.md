@@ -46,3 +46,24 @@ Test: `python -m unittest discover -s tests -p 'test_ale_recursive_family.py' -v
 Give a ChatGPT reasoning run a bounded, non-private set of verified concept statements; have it **generate novel pattern keys, candidate abstract rules and scope conditions**, plus independently sourced adversarial examples. Run this gate, then send qualified proposals to a distinct reviewer/known-unseen task before any promotion. Compare to non-recursive three-question and generic evidence-only baselines on false family merges, source fidelity, downstream missed rechecks and cost. The current deterministic gate is **not** autonomous semantic discovery.
 
 Do not copy private Drive learner state, Anki review identifiers, credentials, hidden question material or medical/patient records into public GitHub or Actions. No public-site changes, no Anki/FSRS modifications, no new schedule, no #137 cohort changes. Integration belongs to #258; prioritization stays with #254. This owner-directed code contribution is outside the frozen 72h measurement.
+
+
+## Stage 2 — generate parent candidates from cross-family reasoning signatures (2026-10-31)
+
+New program: tools/ale_candidate_discovery.py. It creates candidate parent IDs, proposed links and explicit adversarial holds from **source-linked, structured reasoning roles**, instead of requiring an author-supplied pattern name. It is deterministic and does not read raw medical prose to infer semantic truth.
+
+Run: python tools/ale_candidate_discovery.py --input experiments/ale-recursive-concept-probe-20261031.json
+
+The first ChatGPT-authored public-source probe identifies a possible cross-domain distinction: measured signals are not automatically equivalent to every disease classification. Three independent family examples: cardiac troponin / MI, eGFR / CKD chronicity, and ALT or HBV DNA / fibrosis stage. Source references, for later separate review:
+
+- ESC 2023 ACS guideline: https://academic.oup.com/ehjacc/article/13/1/55/7280662
+- National Kidney Foundation CKD criteria: https://www.kidney.org/what-criteria-ckd
+- AASLD/IDSA chronic HBV guidance: https://doi.org/10.1097/hep.0000000000001549
+
+A deliberately hostile scope case asks whether persistent low GFR itself satisfies a CKD criterion. This **challenges an overbroad claim**, not necessarily the properly scoped epistemic principle. Expected output: one proposed new parent spanning three families, explicit unresolved counterexample, HOLD_REVISION_REQUIRED, downstream-only recheck suggestions, zero automatic promotions.
+
+Caution: the example was formulated by ChatGPT from public source material. Input source_check=checked is not an independent medical truth attestation. Stage 2 **clusters model-annotated causal roles**, not independent text-to-semantic role discovery. Do not claim autonomous discovery of genuinely new causal knowledge, independent QA, or improved learning transfer. Do not publish the candidate as a medical rule without external verification.
+
+Validation: python -m unittest discover -s tests -p 'test_ale_candidate_discovery.py' -v
+
+Privacy, autonomy and publication: no owner-private answer events, no Anki writes, no new paid model API, no new schedule, no public-site changes and no changes to the frozen #137 trial.
