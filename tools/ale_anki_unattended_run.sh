@@ -27,3 +27,6 @@ fi
 # Tag-driven proposals are unconfirmed; prior owner skips remain excluded.
 # No question text, credential, private card ID or concept ID enters public logs.
 "$PY" "$HERE/ale_anki_auto_classify.py"
+# Owner quality signals are independent of review ratings; read only red flags.
+# Persist to existing owner-private spreadsheet; fail closed on unverified sync.
+"$PY" "$HERE/ale_anki_flag_feedback.py"
