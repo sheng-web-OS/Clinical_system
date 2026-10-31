@@ -30,3 +30,8 @@ fi
 # Owner quality signals are independent of review ratings; read only red flags.
 # Persist to existing owner-private spreadsheet; fail closed on unverified sync.
 "$PY" "$HERE/ale_anki_flag_feedback.py"
+# Scoped reversible quality quarantine. First run baselines legacy red flags;
+# subsequent newly flagged cards are held from review, after private event capture.
+# Independent private quality decisions may also initiate red-flag + suspension.
+# Never modifies note text, FSRS, answer history or siblings.
+"$PY" "$HERE/ale_anki_quality_quarantine.py" --apply
