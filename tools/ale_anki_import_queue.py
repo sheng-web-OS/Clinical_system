@@ -85,13 +85,13 @@ def note_payload(front, back):
                 raise ValueError("Empty cloze hint")
             # Structural anti-leak check only; independent semantic review is
             # still required to reject indirect or overly specific hints.
-            normalize = lambda value: re.sub(r"\\s+", "", value).casefold()
+            normalize = lambda value: re.sub(r"\s+", "", value).casefold()
             if normalize(hint) == normalize(segments[0]):
                 raise ValueError("Cloze hint reveals the exact answer")
     # A naked deletion is not a self-contained retrieval problem. Require at
     # least a small amount of visible context after every target is masked.
     visible = re.sub(r"(?s)<!--.*?-->|<[^>]*>", " ", remaining)
-    if len(re.findall(r"\\w", visible)) < 8:
+    if len(re.findall(r"\w", visible)) < 8:
         raise ValueError("Cloze prompt lacks visible contextual information")
     return "Cloze", {"Text": front, "Extra": back}
 
