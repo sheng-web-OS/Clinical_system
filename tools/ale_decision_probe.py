@@ -50,7 +50,7 @@ def probe_next_q0(state: dict, point: dict) -> dict:
             "source_classification", "phase", "materiality",
             "reasoning_signature", "original_question_roles"}:
         raise ValueError("invalid decision-point schema")
-    if point["source_classification"] not in PUBLIC_INPUTS:
+    if type(point["source_classification"]) is not str or point["source_classification"] not in PUBLIC_INPUTS:
         raise ValueError("private or unclassified decision input is prohibited")
     if point["phase"] not in ("PRE_ACTION", "POST_ACTION"):
         raise ValueError("invalid decision phase")
@@ -66,7 +66,7 @@ def probe_next_q0(state: dict, point: dict) -> dict:
     if point["phase"] != "PRE_ACTION" or point["materiality"] != "MATERIAL":
         return dict(abstain, reason="NOT_A_MATERIAL_PRE_ACTION_BOUNDARY")
     saved = state.get("candidate_memory", {})
-    if saved.get("state") != "PUBLIC_CANDIDATE_SNAPSHOT_UNVERIFIED":
+    if type(saved) is not dict or saved.get("state") != "PUBLIC_CANDIDATE_SNAPSHOT_UNVERIFIED":
         return dict(abstain, reason="NO_PUBLIC_CANDIDATE_MEMORY")
     candidates = saved.get("candidates")
     if type(candidates) is not list:
