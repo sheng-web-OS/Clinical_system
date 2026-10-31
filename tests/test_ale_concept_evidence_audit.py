@@ -40,10 +40,10 @@ class EvidenceJoinTests(unittest.TestCase):
         self.assertEqual(r["unmapped"], 1)
         self.assertEqual(r["mapped_recall_only"], 0)
 
-    def test_unmatched_card_refuses_inference(self):
-        r = inspect_evidence([event()], [mapping(card="999999")],
+    def test_confirmed_wrong_card_anchor_is_a_blocking_integrity_error(self):
+        with self.assertRaisesRegex(RuntimeError, "wrong source-review anchor"):
+            inspect_evidence([event()], [mapping(card="999999")],
                              ["synthetic-concept-1"])
-        self.assertEqual(r["recommendation"], "MAPPING_REQUIRED")
 
     def test_current_note_mismatch_blocks(self):
         with self.assertRaisesRegex(RuntimeError, "conflicts"):
