@@ -1,0 +1,26 @@
+name: ALE private Anki import synthetic CI
+on:
+  push:
+    branches:
+      - 'feature/ale-anki-autoimport-private-queue-20261031'
+  pull_request:
+    paths:
+      - 'tools/ale_anki_import_queue.py'
+      - 'tests/test_ale_anki_import_queue.py'
+      - '.github/workflows/ale-anki-import.yml'
+jobs:
+  import-offline:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.9', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run synthetic-only importer tests (no credentials or Anki access)
+        run: python -m unittest discover -s tests -p 'test_ale_anki_import_queue.py' -v
