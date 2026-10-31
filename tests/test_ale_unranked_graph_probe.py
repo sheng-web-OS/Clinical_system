@@ -107,5 +107,44 @@ class UnrankedGapTests(unittest.TestCase):
                              for d in x["candidates"]),2)
         self.assertEqual(x["concept_promotions"],0)
 
+
+    def test_cross_domain_spo2_analogy_not_semantic_merge(self):
+        # A different family reuses the inference-validity ROLE without
+        # asserting HbA1c equals SpO2 or sharing a biomedical mechanism.
+        analogy = {
+            "source_classification": "PUBLIC_SOURCE_LINKED",
+            "focus": "oxygen-delivery",
+            "nodes": [
+                node("oxygen-delivery", "DECISION"),
+                node("spo2-interpretation", "INTERPRETATION"),
+                node("device-reliability", "CONTEXT", "EXTERNAL_ONLY"),
+                node("cohb", "CONTEXT", "EXTERNAL_ONLY"),
+                node("spo2-measurement", "MEASUREMENT"),
+            ],
+            "established_edges": [
+                {"from":"spo2-measurement","to":"spo2-interpretation","role":"ASSOCIATION"},
+                {"from":"spo2-interpretation","to":"oxygen-delivery","role":"ASSOCIATION"},
+            ],
+            "candidate_edges": [
+                edge("device-reliability","spo2-interpretation",
+                     "VALIDITY_PREREQUISITE", ["cdc_co_guidance_2026","fda_pulseox"]),
+                edge("cohb","spo2-measurement","MEASUREMENT_INTERFERENCE",
+                     ["pmid_19615844"]),
+            ],
+        }
+        spo2 = probe(analogy)
+        hba1c = probe(packet())
+        self.assertEqual(spo2["most_urgent_candidate"]["role"],
+                         hba1c["most_urgent_candidate"]["role"])
+        self.assertNotEqual(spo2["most_urgent_candidate"]["from"],
+                            hba1c["most_urgent_candidate"]["from"])
+        self.assertEqual(spo2["concept_promotions"],0)
+        self.assertFalse(spo2["medical_semantics_inferred_from_raw_prose"])
+
+    def test_validity_priority_beats_unrelated_diagnosis_completion(self):
+        q=packet([edge("hba1c-assay","diabetes-diagnosis","DIAGNOSTIC_CONFIRMATION"),
+                  edge("rbc-turnover","a1c-interpretation","VALIDITY_PREREQUISITE")])
+        self.assertEqual(probe(q)["most_urgent_candidate"]["from"],"rbc-turnover")
+
 if __name__ == "__main__":
     unittest.main()
