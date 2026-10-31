@@ -146,8 +146,33 @@ def remote_index(sheet: Sheets) -> dict[str, list]:
     return seen
 
 def sync_event_rows(sheet: Sheets, events: list[list[str]]) -> tuple[int, int]:
+    """Readback rows and normalize events to their durable first-observed time.
+
+    A prior append may have succeeded before ACK/local checkpoint loss. Only
+    the timestamp can be reconciled; identity, signal and provenance must match.
+    The caller persists the normalized observation after successful readback.
+    """
     existing = remote_index(sheet)
     immutable = (0, 1, 2, 3, 4, 9)
+    for expected in events:
+        saved = existing.get(expected[0])
+        if saved is None:
+            continue
+        if any(str(saved[i]) != expected[i] for i in immutable if i != 1):
+            raise RuntimeError("Private red-flag readback mismatch; no checkpoint")
+        try:
+            def observation_time(value):
+                if type(value) is not str or len(value) > 40:
+                    raise ValueError
+                parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+                if parsed.tzinfo is None or parsed.utcoffset() is None:
+                    raise ValueError
+                return parsed
+            if observation_time(saved[1]) > observation_time(expected[1]):
+                raise ValueError
+        except (ValueError, TypeError, OverflowError):
+            raise RuntimeError("Invalid or future feedback timestamp; no checkpoint") from None
+        expected[1] = saved[1]
     def verify(rows):
         for expected in events:
             saved = rows.get(expected[0])
@@ -182,6 +207,8 @@ def run(base: Path) -> tuple[int, int, int]:
         sheet = Sheets(authorized_session(base), conf["spreadsheet_id"])
         ensure_feedback_tab(sheet)
         added, duplicates = sync_event_rows(sheet, events)
+        for event in events:
+            next_state["cards"][event[2]]["first_detected_utc"] = event[1]
         # Commit local observation only after remote readback.
         private_write(base / STATE_FILE, next_state)
     finally:
