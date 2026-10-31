@@ -29,3 +29,22 @@ This file and its tests are public-safe, with no owner-specific identifiers or d
 Anki revlog does not provide the rendered question content at its historical review timestamp. The owner may confirm what a card **currently** tests, but the card could have been edited in between. The auditor therefore requires exact source-review anchoring, current note/card and concept identity, local owner-attestation fields and a valid chronological timestamp; it **does not** apply that mapping to unrelated earlier or later reviews. Even the anchored review is graded as a retrospective association, not historically version-proven understanding.
 
 Before ever upgrading this evidence, a separate trustworthy content/version lineage would be needed; a model-provided claim or hash calculated only today is not evidence that the old question was identical. No new owner intervention, card mutation or private data exposure is required by this patch.
+
+
+## Answer-key provenance audit (supplemental read-only Mac command)
+
+Run `tools/ale_attempt_evidence_audit.py` against the existing private OAuth configuration. It inspects only the owner-private `Attempts` and `Concepts` sheets and prints **aggregate counts**. It never reads Anki card content, modifies answers, grades questions, accesses hidden exams, writes new rows or publishes raw answer/weakness data.
+
+- One `Attempts` row represents an *attempt record*, not necessarily an independently graded question.
+- `official_exam_identity_verified=YES` is just a **sheet declaration**; the present schema has no independently authenticated examiner/key receipt. Therefore `independently_verified_item_grades=0` deliberately remains the conservative ceiling, not a claim that an independently validated question is impossible.
+- A group-level score cannot prove which individual question was incorrect. An assistant-generated answer key remains provisional; a correct post-remediation response does not become learner-unseen transfer.
+- All concept mastery upgrades remain **zero** until source-specific evidence and a genuinely unseen/delayed assessment are linked independently. The auditor refuses duplicate attempt or concept IDs and malformed schema; Sheets' omitted trailing blank cells are permitted.
+- The program does not log private concept names, question IDs, answer strings or underlying event IDs to GitHub. `tests/test_ale_attempt_evidence_audit.py` uses only synthetic fixtures.
+
+Exact runnable command on a Mac with its existing authenticated virtualenv after safely incorporating this PR:
+
+```bash
+"$HOME/Library/Application Support/ClinicalOS-ALE/venv/bin/python3" tools/ale_attempt_evidence_audit.py
+```
+
+The **next substantive validation** is to obtain a source-verified *individual* unseen question response with a reviewable key and time/exposure provenance. A numerical increase in candidate cards or marked-correct rows without that evidence does not satisfy ALE learning success.
