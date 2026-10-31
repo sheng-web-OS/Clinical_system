@@ -59,8 +59,7 @@ class TestQuarantine(unittest.TestCase):
 
     def test_first_scan_baselines_existing_flags_no_mutation(self):
         card,_=decision()
-        with patch.object(mod.Path,"exists",return_value=True), \
-             patch.object(mod,"read_flagged_cards",return_value={"42":9}), \
+        with patch.object(mod,"read_flagged_cards",return_value={"42":9}), \
              patch.object(mod,"check_card",return_value=card), \
              patch.object(mod,"is_suspended",return_value=False), \
              patch.object(mod,"write_action") as writer, \
@@ -87,7 +86,8 @@ class TestQuarantine(unittest.TestCase):
             self.assertEqual(action, "suspend")
             self.assertEqual(params["cards"], [42])
             suspended["value"] = True
-        with patch.object(mod, "read_flagged_cards", return_value={"42":9}), \
+        with patch.object(mod.Path, "exists", return_value=True), \
+             patch.object(mod, "read_flagged_cards", return_value={"42":9}), \
              patch.object(mod, "check_card", return_value=card), \
              patch.object(mod, "is_suspended", side_effect=flag_is_suspended), \
              patch.object(mod, "write_action", side_effect=do_write), \
@@ -98,7 +98,8 @@ class TestQuarantine(unittest.TestCase):
 
     def test_existing_suspend_not_repeated(self):
         card,_=decision()
-        with patch.object(mod,"read_flagged_cards",return_value={"42":9}), \
+        with patch.object(mod.Path, "exists", return_value=True), \
+             patch.object(mod,"read_flagged_cards",return_value={"42":9}), \
              patch.object(mod,"check_card",return_value=card), \
              patch.object(mod,"is_suspended",return_value=True), \
              patch.object(mod,"write_action") as writer:
@@ -109,7 +110,7 @@ class TestQuarantine(unittest.TestCase):
         card,d=decision()
         d["content_sha256"]="0"*64
         with patch.object(mod,"read_flagged_cards",return_value={}), \
-             patch.object(mod,"load_json",side_effect=lambda p: {"schema":1,"decisions":[d]}), \
+             patch.object(mod,"load_json",side_effect=lambda p: {"schema":1,"decisions":[d]} if p.name.endswith("decisions.json") else {}), \
              patch.object(mod,"check_card",return_value=card), \
              patch.object(mod,"write_action") as writer:
             with self.assertRaisesRegex(RuntimeError,"Stale"):
@@ -148,8 +149,9 @@ class TestQuarantine(unittest.TestCase):
 
     def test_identity_mismatch_cannot_apply(self):
         card, d=decision()
-        with patch.object(mod,"read_flagged_cards",return_value={"42":123}), \
-             patch.object(mod,"load_json",side_effect=lambda p: {"schema":1,"decisions":[d]}):
+        with patch.object(mod.Path, "exists", return_value=True), \
+             patch.object(mod,"read_flagged_cards",return_value={"42":123}), \
+             patch.object(mod,"load_json",side_effect=lambda p: {"schema":1,"decisions":[d]} if p.name.endswith("decisions.json") else {"schema":1,"flagged_ids":[]}):
             with self.assertRaisesRegex(RuntimeError,"collision"):
                 mod.apply(Path("/unused"), dry_run=False)
 
