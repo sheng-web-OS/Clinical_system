@@ -56,7 +56,7 @@ End-expiratory occlusion test（EEOT）利用短暫停止呼吸器吸氣週期�
 1. Monnet X, et al. ESICM circulatory shock guideline 2025. https://doi.org/10.1007/s00134-025-08137-z
 2. Prescott H, et al. SSC 2026. https://doi.org/10.1007/s00134-026-08361-1
 3. Monnet X, et al. Prediction of fluid responsiveness: an update. *Ann Intensive Care.* 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC5114218/
-4. Chaves RCF, et al. *Assessment of fluid responsiveness in mechanically ventilated patients: a systematic review and meta-analysis.* *Crit Care.* 2024. https://doi.org/10.1186/s13054-024-05078-9
+4. Chaves RCF, et al. *Assessment of fluid responsiveness using pulse pressure variation, stroke volume variation, plethysmographic variability index, central venous pressure, and inferior vena cava variation in patients undergoing mechanical ventilation: a systematic review and meta-analysis.* *Crit Care.* 2024. https://doi.org/10.1186/s13054-024-05078-9
 5. Monnet X, De Backer D, Pinsky MR. Using the ventilator to predict fluid responsiveness. *Intensive Care Med.* 2025;51:150–153 (online 2024). https://doi.org/10.1007/s00134-024-07708-w
 6. ANDROMEDA-SHOCK-2 Investigators. *JAMA.* 2025. https://doi.org/10.1001/jama.2025.20402
 7. Monnet X, et al. Precision of the transpulmonary thermodilution measurements. *Crit Care.* 2011;15:R204. https://doi.org/10.1186/cc10421
