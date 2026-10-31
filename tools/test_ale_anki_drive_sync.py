@@ -123,5 +123,64 @@ class PrivateBridgeTests(unittest.TestCase):
             self.assertEqual(result["new_events_uploaded"], 0)
             self.assertEqual(sh.append_calls, 0)
 
+
+class FakeAuditSheet:
+    def __init__(self, rows):
+        self.rows = rows
+    def verify_schema(self):
+        return None
+    def get(self, a1):
+        if a1 != "Error_Events!A2:N":
+            raise AssertionError("Unexpected range")
+        return self.rows
+
+class PrivateAuditTests(unittest.TestCase):
+    def row(self):
+        now_iso = p.datetime.fromtimestamp((REV1[0]+10000)/1000, tz=p.timezone.utc).isoformat()
+        return p.event_rows([REV1], {700101: 313}, now_iso)[0]
+
+    def test_audit_accepts_valid_unmapped_event(self):
+        result = p.audit_private_sheet(FakeAuditSheet([self.row()]))
+        self.assertEqual(result, {"events": 1, "unique_events": 1, "unmapped_family": 1})
+
+    def test_audit_rejects_duplicate(self):
+        row = self.row()
+        with self.assertRaisesRegex(RuntimeError, "Duplicate"):
+            p.audit_private_sheet(FakeAuditSheet([row, row]))
+
+    def test_audit_rejects_wrong_card_identity(self):
+        row = self.row()
+        row[2] = "98765"
+        with self.assertRaisesRegex(RuntimeError, "identity mismatch"):
+            p.audit_private_sheet(FakeAuditSheet([row]))
+
+    def test_audit_rejects_invalid_rating(self):
+        row = self.row()
+        row[5] = "5"
+        with self.assertRaisesRegex(RuntimeError, "rating"):
+            p.audit_private_sheet(FakeAuditSheet([row]))
+
+    def test_audit_rejects_unverified_status(self):
+        row = self.row()
+        row[12] = "SIMULATED"
+        with self.assertRaisesRegex(RuntimeError, "sync status"):
+            p.audit_private_sheet(FakeAuditSheet([row]))
+
+    def test_audit_rejects_future_event_before_upload(self):
+        row = self.row()
+        row[13] = "2026-10-31T00:00:00+00:00"
+        with self.assertRaisesRegex(RuntimeError, "out of order"):
+            p.audit_private_sheet(FakeAuditSheet([row]))
+
+    def test_audit_rejects_wrong_row_width(self):
+        row = self.row()[:13]
+        with self.assertRaisesRegex(RuntimeError, "row width"):
+            p.audit_private_sheet(FakeAuditSheet([row]))
+
+    def test_audit_empty_sheet_is_valid_but_not_evidence(self):
+        result = p.audit_private_sheet(FakeAuditSheet([]))
+        self.assertEqual(result["events"], 0)
+        self.assertEqual(result["unique_events"], 0)
+
 if __name__ == "__main__":
     unittest.main()
