@@ -68,7 +68,16 @@ def scoped_refinements(groups: dict, contrary: dict) -> list[dict]:
     revised: list[dict] = []
     for signature, supports in sorted(groups.items()):
         challenges = contrary.get(signature, [])
-        if len({x["family_id"] for x in supports}) < 2 or not challenges:
+        # Candidate scope repairs require the same canonical family identity as
+        # parent discovery; whitespace cannot manufacture an extra family.
+        if len({x["family_id"].strip() for x in supports}) < 2 or not challenges:
+            continue
+        # Input flags are NOT independent source truth; nevertheless, missing or
+        # explicitly unchecked references must not produce a scope proposal.
+        if any(not isinstance(x.get("source_ref"), str)
+               or not x["source_ref"].strip()
+               or x.get("source_check") != "checked"
+               for x in supports + challenges):
             continue
         positive = [_feature_set(x) for x in supports]
         negative = [_feature_set(x) for x in challenges]
@@ -169,7 +178,11 @@ def discover(data: dict) -> dict:
 
     checked = evaluate({"observations": observations, "proposals": proposals,
                         "dependencies": dependencies})
-    refinements = scoped_refinements(groups, contrary)
+    # No scoped descendant without a proposed parent. Keep the original
+    # skeptical parent gate in place; this does not authorize promotion.
+    valid_parent_ids = {proposal["id"] for proposal in proposals}
+    refinements = [item for item in scoped_refinements(groups, contrary)
+                   if item["parent_candidate"] in valid_parent_ids]
     return {"schema": "ale-recursive-discovery-v0",
             "origin": "STRUCTURED_PUBLIC_EVIDENCE_PROPOSAL",
             "proposal_count": len(proposals),
